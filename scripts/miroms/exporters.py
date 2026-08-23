@@ -6,6 +6,10 @@ from typing import Set, List, Tuple, Dict, Any
 from miroms.database import DatabaseManager
 from miroms.constants import branches
 from miroms.data import unreleased, DEVICE_NAME_ALIASES
+from miroms.utils import FileUtils
+
+# 导出目录基准路径（使用绝对路径，避免 cwd 依赖）
+_EXPORT_BASE = Path(FileUtils.get_base_path()) / "data" / "api"
 
 
 def exportV1(device: str) -> Dict[str, Any]:
@@ -203,7 +207,7 @@ def exportV1(device: str) -> Dict[str, Any]:
 												logger.info(f"设备 {device} 无 MIUI 分支数据，跳过生成 JSON")
 												return None
 
-										device_dir = Path('data/api/v1/devices/')
+										device_dir = _EXPORT_BASE / 'v1' / 'devices'
 										device_dir.mkdir(parents=True, exist_ok=True)
 
 										file_path = device_dir / f'{device}.json'
@@ -440,7 +444,7 @@ def exportV2(device: str) -> Dict[str, Any]:
 									device_struct["branches"].append(new_branch)
 
 					# ==================== 阶段7: 安全写入文件 ====================
-					device_dir = Path('data/api/v2/devices/')
+					device_dir = _EXPORT_BASE / 'v2' / 'devices'
 					device_dir.mkdir(parents=True, exist_ok=True)
 
 					file_path = device_dir / f'{device}.json'
@@ -743,7 +747,7 @@ def exportV3(device: str) -> Dict[str, Any]:
 								device_struct["branches"].append(new_branch)
 
 				# ==================== 阶段7: 安全写入文件 ====================
-				device_dir = Path('data/api/v3/devices/')
+				device_dir = _EXPORT_BASE / 'v3' / 'devices'
 				device_dir.mkdir(parents=True, exist_ok=True)
 
 				file_path = device_dir / f'{device}.json'
@@ -763,7 +767,7 @@ def exportV3(device: str) -> Dict[str, Any]:
 
 				# ==================== 阶段8: 导出日志到独立文件 ====================
 				if rom_logs:
-						logs_base = Path('data/api/v3/logs') / device
+						logs_base = _EXPORT_BASE / 'v3' / 'logs' / device
 						logs_saved = 0
 						for log_key, log_data in rom_logs.items():
 								if '/' in log_key:

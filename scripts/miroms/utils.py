@@ -98,27 +98,22 @@ class FileUtils:
 
 		@staticmethod
 		def get_base_path() -> str:
-				"""根据平台获取基础路径"""
-				if platform == "win32":
-						return "public/data/"
-				elif platform == "darwin":
-						return "public/data/"
-				else:
-						return "/sdcard/Codes/HyperOS.fans/public/data/"
+				"""获取项目根目录的绝对路径（miroms.com 项目）"""
+				return str(Path(__file__).resolve().parent.parent.parent.parent)
 
 		@classmethod
 		def load_device_data(cls, codename: str) -> Dict:
 				"""加载设备JSON数据 (原: localData)"""
-				base = cls.get_base_path()
-				path = Path(base) / "devices" / f"{codename}.json"
+				base = Path(cls.get_base_path()) / "data" / "devices"
+				path = base / f"{codename}.json"
 				with open(path, 'r', encoding='utf-8') as f:
 						return json.load(f)
 
 		@classmethod
 		def append_to_file(cls, filename: str, content: str, subdir: str = "scripts/"):
 				"""追加内容到文件"""
-				base = cls.get_base_path()
-				path = Path(base) / subdir / filename
+				base = Path(cls.get_base_path()) / "data"
+				path = base / subdir / filename
 				path.parent.mkdir(parents=True, exist_ok=True)
 				with open(path, 'a', encoding='utf-8') as f:
 						f.write(content + "\n")
