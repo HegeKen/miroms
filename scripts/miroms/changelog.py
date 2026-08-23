@@ -32,23 +32,34 @@ class ChangelogManager:
 
 		@classmethod
 		def fetch_for_db(cls, encrypted_data: str, device: str,
-										 version: str) -> Optional[str]:
-				"""获取更新日志用于数据库存储 (原: getChangelog2DB)"""
+										 version: str) -> Optional[Dict]:
+				"""获取更新日志 + 卡刷包信息用于数据库存储"""
 				result = NetworkClient.call_api(encrypted_data)
 				if not result:
 						return None
 
 				log = None
-				if "CurrentRom" in result and result["CurrentRom"].get("version") == version:
-						log = result["CurrentRom"].get("changelog")
-				elif "LatestRom" in result and result["LatestRom"].get("version") == version:
-						log = result["LatestRom"].get("changelog")
+				recovery = None
 
+				# 优先匹配 CurrentRom，其次 LatestRom
+				for key in ["CurrentRom", "LatestRom"]:
+						if key in result and result[key].get("version") == version:
+								rom = result[key]
+								log = rom.get("changelog")
+								recovery = rom.get("filename", "")
+								break
+
+				# 兜底：取 LatestRom 的 recovery（即使版本不完全匹配）
+				if not recovery and "LatestRom" in result:
+						recovery = result["LatestRom"].get("filename", "")
+
+				cleaned_log = None
 				if log:
 						cleaned = cls._clean_log(log)
 						stripped = cls._strip_log(cleaned)
-						return json.dumps(stripped, ensure_ascii=False)
-				return None
+						cleaned_log = json.dumps(stripped, ensure_ascii=False)
+
+				return {"changelog": cleaned_log, "recovery": recovery or ""}
 
 		@staticmethod
 		def _strip_log(data: Dict) -> Dict:
@@ -83,7 +94,7 @@ class ChangelogManager:
 
 		@staticmethod
 		def print_log(log: Dict):
-				"""打印日志内容 (原: print_log)"""
+				"""打印日志内容"""
 				for module, entries in log.items():
 						print(module)
 						for entry in (entries if isinstance(entries, list) else [entries]):

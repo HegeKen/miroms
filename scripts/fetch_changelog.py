@@ -1,6 +1,7 @@
 """
 批量获取 ROM 的更新日志（changelog），分别处理中文和英文。
 对 cn 区域的记录同时写入 release_date。
+同时从 API 响应中提取卡刷包（recovery）文件名写入数据库。
 来源: HyperOS.fans test2.py (Changelog)
 """
 import sys
@@ -40,12 +41,11 @@ def get_changelog_for_device(info: dict, lang: str) -> str | None:
 	form['l'] = lang
 
 	encrypted_form = common.CryptoManager.encrypt(json.dumps(form))
-	log = common.ChangelogManager.fetch_for_db(encrypted_form, info['device'], info['version'])
-	return log
+	return common.ChangelogManager.fetch_for_db(encrypted_form, info['device'], info['version'])
 
 
 def fetch_changelogs(lang: str, label: str):
-	"""获取指定语言的 changelog"""
+	"""获取指定语言的 changelog + 卡刷包"""
 	lang_code = 'zh_CN' if lang == 'zh' else 'en_US'
 
 	# 查询缺失 changelog 的记录
@@ -89,20 +89,32 @@ def fetch_changelogs(lang: str, label: str):
 
 		print(f"\r{rom_id} {info['version']} {info['device']} {idx}/{total} {label}", end="", flush=True)
 
-		log = get_changelog_for_device(info, lang_code)
-		if not log:
+		api_result = get_changelog_for_device(info, lang_code)
+		if not api_result:
 			continue
 
+		log = api_result.get("changelog")
+		recovery = api_result.get("recovery", "")
+
+		# 更新 changelog
 		log_column = f'logs_{lang}'
-		if info['region'] == 'cn':
+		if log:
+			if info['region'] == 'cn':
+				common.DatabaseManager.execute(
+					f"UPDATE roms SET {log_column} = %s, release_date = %s WHERE id = %s",
+					params=(log, date.today().strftime('%Y-%m-%d'), rom_id)
+				)
+			else:
+				common.DatabaseManager.execute(
+					f"UPDATE roms SET {log_column} = %s WHERE id = %s",
+					params=(log, rom_id)
+				)
+
+		# 更新 recovery 卡刷包（仅当数据库中为空时）
+		if recovery:
 			common.DatabaseManager.execute(
-				f"UPDATE roms SET {log_column} = %s, release_date = %s WHERE id = %s",
-				params=(log, date.today().strftime('%Y-%m-%d'), rom_id)
-			)
-		else:
-			common.DatabaseManager.execute(
-				f"UPDATE roms SET {log_column} = %s WHERE id = %s",
-				params=(log, rom_id)
+				"UPDATE roms SET recovery = %s WHERE id = %s AND (recovery IS NULL OR recovery = '')",
+				params=(recovery, rom_id)
 			)
 
 	print(f"\n{label} changelog 处理完成")

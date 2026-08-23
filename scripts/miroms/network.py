@@ -84,9 +84,15 @@ class NetworkClient:
 						if response.status_code == 200:
 								data = json.loads(response.content.decode('utf8'))
 								roms = data.get('LatestFullRom', [])
-								if roms:
-										DataRecorder.check_exists(roms[0]['filename'])
-				except (requests.exceptions.RequestException, json.JSONDecodeError):
+								if isinstance(roms, dict):
+										# 单个包：直接是字典
+										if 'filename' in roms:
+												DataRecorder.check_exists(roms['filename'])
+								elif isinstance(roms, list) and roms:
+										# 包列表：取第一个
+										if 'filename' in roms[0]:
+												DataRecorder.check_exists(roms[0]['filename'])
+				except (requests.exceptions.RequestException, json.JSONDecodeError, KeyError, IndexError):
 						pass
 				finally:
 						session.close()

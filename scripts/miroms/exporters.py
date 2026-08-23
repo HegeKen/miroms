@@ -176,6 +176,12 @@ def exportV1(device: str) -> Dict[str, Any]:
 																		if not version_str or version_str in added_versions:
 																						continue
 
+																		# EP（企业版）ROM 不应出现在非 EP 分支
+																		is_ep_rom = ".EP." in version_str or "_ep_" in (str(recovery) + str(fastboot))
+																		is_ep_branch = branch.get("ep", 0) == 1
+																		if is_ep_rom and not is_ep_branch:
+																						continue
+
 																		added_versions.add(version_str)
 
 																		rom_meta: Dict[str, Any] = {
@@ -422,6 +428,12 @@ def exportV2(device: str) -> Dict[str, Any]:
 									if not version_str:
 											continue
 
+									# EP（企业版）ROM 不应出现在非 EP 分支
+									is_ep_rom = ".EP." in version_str or "_ep_" in (str(recovery) + str(fastboot))
+									is_ep_branch = branch.get("ep", 0) == 1
+									if is_ep_rom and not is_ep_branch:
+											continue
+
 									# V2: 版本号作为 key，值为详细信息对象
 									rom_entry: Dict[str, Any] = {
 											"os": version_str,	# V2: os 而非 miui
@@ -572,14 +584,18 @@ def exportV3(device: str) -> Dict[str, Any]:
 										roms_by_tag[tag].append(rom)
 
 				# ==================== 阶段4.5: 从 ROM 数据中收集版本统计 ====================
-				# 收集 android 版本列表（从 index 2=android 字段）
+				# 收集 android 版本列表（归一化到 major.minor）
 				android_set: Set[str] = set()
 				for rom in all_roms or []:
 						if len(rom) > 2 and rom[2]:
-								android_set.add(str(rom[2]))
+								parts = str(rom[2]).split('.')
+								android_set.add('.'.join(parts[:2]))
 				android_versions = sorted(
 						android_set,
-						key=lambda x: int(x.split('.')[0]) if x.split('.')[0].isdigit() else 0,
+						key=lambda x: tuple(
+								int(p) if p.isdigit() else 0
+								for p in x.split('.')[:2]
+						),
 						reverse=True
 				)
 
@@ -702,6 +718,12 @@ def exportV3(device: str) -> Dict[str, Any]:
 
 								version_str = str(version) if version is not None else ""
 								if not version_str or version_str in added_versions:
+										continue
+
+								# EP（企业版）ROM 不应出现在非 EP 分支
+								is_ep_rom = ".EP." in version_str or "_ep_" in (str(recovery) + str(fastboot))
+								is_ep_branch = branch.get("ep", 0) == 1
+								if is_ep_rom and not is_ep_branch:
 										continue
 
 								added_versions.add(version_str)

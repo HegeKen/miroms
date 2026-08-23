@@ -1,7 +1,9 @@
 """
-通过国际版全量 ROM 接口获取 Fastboot 包，并用增量号探测 OTA 更新。
+核查本地 xmfirmwareupdater.github.io 项目中的 HTML 页面，
+提取固件文件名并检查是否已收录到数据库。
 来源: HyperOS.fans XfuFull.py
 """
+import os
 import sys
 from pathlib import Path
 from datetime import datetime
@@ -9,98 +11,77 @@ from datetime import datetime
 sys.path.insert(0, str(Path(__file__).parent))
 
 import common
-from miroms.constants import branches
+
+EXCLUDED_FILES = {
+	'OS1.0.4.0.UNKCNXMmiui_VERMEER_OS1.0.4.0.UNKCNXM_c3235c755f_14.0.zip'
+}
+
+# HTML 页面目录（按需修改为本地路径）
+TARGET_DIRECTORY = "../Sources/xmfirmwareupdater.github.io/pages/hyperos"
+FILENAME_SPAN_ID = 'filename'
 
 
-INCREMENT = ["1", "100", "200"]
-ONE_DEVICES = ['warm']
-BASE_URL = "https://update.intl.miui.com/updates/miota-fullrom.php?d="
+def detect_file_encoding(file_path: str) -> str | None:
+	"""检测文件编码"""
+	try:
+		with open(file_path, 'rb') as f:
+			raw_content = f.read()
+		import chardet
+		result = chardet.detect(raw_content)
+		return result.get('encoding')
+	except (IOError, OSError) as e:
+		print(f"警告: 无法读取文件 {file_path}: {e}")
+		return None
 
 
-def get_xfu_branches():
-	"""从 constants.py 的 branches 定义中提取 F 分支"""
-	xfu_branches = []
-	for br in branches:
-		if br['branch'] == 'F':
-			xfu_branches.append(br)
-	return xfu_branches
+def extract_filenames_from_html(file_path: str, encoding: str) -> list[str]:
+	"""从HTML文件中提取文件名"""
+	try:
+		with open(file_path, 'r', encoding=encoding, errors='replace') as f:
+			content = f.read()
+		from bs4 import BeautifulSoup
+		soup = BeautifulSoup(content, 'lxml')
+		span_tags = soup.find_all('span', {'id': FILENAME_SPAN_ID})
+		return [tag.text for tag in span_tags if tag.text not in EXCLUDED_FILES]
+	except Exception as e:
+		print(f"警告: 解析文件 {file_path} 时出错: {e}")
+		return []
+
+
+def process_directory(directory: str) -> None:
+	"""处理目录中的所有HTML文件"""
+	if not os.path.exists(directory):
+		print(f"错误: 目录 {directory} 不存在")
+		return
+	if not os.path.isdir(directory):
+		print(f"错误: {directory} 不是一个目录")
+		return
+
+	for root, dirs, files in os.walk(directory):
+		for file in files:
+			if file.endswith('.DS_Store'):
+				continue
+			file_path = os.path.join(root, file)
+			real_path = os.path.realpath(file_path)
+			real_dir = os.path.realpath(directory)
+			if not real_path.startswith(real_dir):
+				print(f"警告: 跳过目录外的文件: {file_path}")
+				continue
+
+			encoding = detect_file_encoding(file_path)
+			if encoding is None:
+				print(f"警告: 无法检测文件编码，跳过: {file_path}")
+				continue
+
+			filenames = extract_filenames_from_html(file_path, encoding)
+			for filename in filenames:
+				common.DataRecorder.check_exists(filename)
 
 
 def main() -> None:
-	print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 开始 XFU 全量检测...")
-
-	# 合并稳定版和未发布设备
-	devices = list(dict.fromkeys(common.currentStable + common.unreleased))
-	xfu_branches = get_xfu_branches()
-
-	for device in devices:
-		# 从数据库获取设备信息
-		info = common.DatabaseManager.query_one(
-			"SELECT code, region FROM devices WHERE device = %s LIMIT 1",
-			params=(device,)
-		)
-		if not info:
-			continue
-
-		dev_code = info[0] or device
-		android_versions = common.DatabaseManager.query_all(
-			"SELECT DISTINCT android FROM roms WHERE device = %s AND android IS NOT NULL AND android != ''",
-			params=(device,)
-		)
-		android_list = [row[0] for row in android_versions if row[0]]
-		if not android_list:
-			android_list = ['14.0']
-
-		os_versions = common.DatabaseManager.query_all(
-			"SELECT DISTINCT version FROM roms WHERE device = %s AND version IS NOT NULL AND version != '' "
-			"ORDER BY id DESC LIMIT 5",
-			params=(device,)
-		)
-		os_list = [row[0] for row in os_versions if row[0]]
-
-		for br in xfu_branches:
-			for os_ver in os_list:
-				for andv in android_list:
-					devcode = dev_code + br['code']
-
-					for carrier in br['carrier']:
-						if device in ONE_DEVICES:
-							url = BASE_URL + devcode + "&b=F&r=&n=" + carrier
-						else:
-							url = BASE_URL + devcode + "&b=F&r=" + br['region'] + "&n=" + carrier
-						print(f"\r{datetime.now().strftime('%Y-%m-%d %H:%M:%S')} {url}", end="", flush=True)
-						common.NetworkClient.get_fastboot_info(url)
-
-					for inc in INCREMENT:
-						code_suffix = br['tag']
-						if code_suffix:
-							code_val = common.DatabaseManager.query_one(
-								"SELECT code FROM devices WHERE device = %s AND tag = %s",
-								params=(device, code_suffix)
-							)
-							code_str = code_val[0].split('_')[0] if code_val and code_val[0] else ''
-						else:
-							code_str = dev_code
-
-						if code_str:
-							android_code = common.VersionUtils.android_code(andv)
-							version = os_ver + "." + inc + ".0." + android_code + code_str + br['tag']
-
-							# 检查是否已存在
-							existing = common.DatabaseManager.query_one(
-								"SELECT id FROM roms WHERE device = %s AND version = %s",
-								params=(device, version)
-							)
-							if existing:
-								continue
-
-							print(f"\r{datetime.now().strftime('%Y-%m-%d %H:%M:%S')} 正在检测 {device} {devcode} {version}", end="", flush=True)
-							region = '' if device in ONE_DEVICES else br['region']
-							form_json = common.FirmwareParser.build_ota_form(device, devcode, region, 'F', br['zone'], andv, version)
-							encrypted = common.CryptoManager.encrypt(form_json)
-							common.NetworkClient.fetch_and_check(encrypted)
-
-	print(f"\n[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] XFU 全量检测完成")
+	print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 开始扫描 XFU HTML 页面...")
+	process_directory(TARGET_DIRECTORY)
+	print(f"\n[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 扫描完成")
 
 
 if __name__ == '__main__':

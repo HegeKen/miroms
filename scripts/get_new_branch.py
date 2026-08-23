@@ -1,83 +1,126 @@
 """
-从本地 HTML 页面中提取固件文件名，检查是否已收录到数据库。
-来源: HyperOS.fans getNewBranch.py
+遍历所有设备和分支，通过 Fastboot API 和 OTA API 检测未收录的 ROM。
+合并自 HyperOS.fans getNewBranch.py + NuxtMR findNewBranches.py
 """
-import os
 import sys
 from pathlib import Path
+from datetime import datetime
 
 sys.path.insert(0, str(Path(__file__).parent))
 
 import common
-from datetime import datetime
 
-EXCLUDED_FILES = {
-	'OS1.0.4.0.UNKCNXMmiui_VERMEER_OS1.0.4.0.UNKCNXM_c3235c755f_14.0.zip'
-}
-
-# HTML 页面目录（HyperOS.fans 项目的本地路径，按需修改）
-TARGET_DIRECTORY = "../Sources/xmfirmwareupdater.github.io/pages/hyperos"
-FILENAME_SPAN_ID = 'filename'
+INCREMENT = ["1", "100", "200", "300"]
+ONE_DEVICES = ['warm']
+BASE_URL = "https://update.intl.miui.com/updates/miota-fullrom.php?d="
 
 
-def detect_file_encoding(file_path: str) -> str | None:
-	try:
-		with open(file_path, 'rb') as f:
-			raw_content = f.read()
-		import chardet
-		result = chardet.detect(raw_content)
-		return result.get('encoding')
-	except (IOError, OSError) as e:
-		print(f"警告: 无法读取文件 {file_path}: {e}")
+def get_device_info(device: str) -> dict | None:
+	"""从数据库获取设备信息"""
+	info = common.DatabaseManager.query_one(
+		"SELECT code FROM devices WHERE device = %s LIMIT 1",
+		params=(device,)
+	)
+	if not info:
 		return None
 
+	code = info[0] or device
 
-def extract_filenames_from_html(file_path: str, encoding: str) -> list[str]:
-	try:
-		with open(file_path, 'r', encoding=encoding, errors='replace') as f:
-			content = f.read()
-		from bs4 import BeautifulSoup
-		soup = BeautifulSoup(content, 'lxml')
-		span_tags = soup.find_all('span', {'id': FILENAME_SPAN_ID})
-		return [tag.text for tag in span_tags if tag.text not in EXCLUDED_FILES]
-	except Exception as e:
-		print(f"警告: 解析文件 {file_path} 时出错: {e}")
-		return []
+	# Android 版本列表
+	android_rows = common.DatabaseManager.query_all(
+		"SELECT DISTINCT android FROM roms WHERE device = %s AND android IS NOT NULL AND android != ''",
+		params=(device,)
+	)
+	andvs = [row[0] for row in android_rows if row[0]]
+	if not andvs:
+		andvs = ['14.0']
+
+	# OS 大版本列表
+	os_rows = common.DatabaseManager.query_all(
+		"SELECT DISTINCT bigver FROM roms WHERE device = %s AND bigver IS NOT NULL AND bigver != ''",
+		params=(device,)
+	)
+	oss = [row[0] for row in os_rows if row[0]]
+	if not oss:
+		oss = ['OS2.0']
+
+	# 已知版本号集合
+	ver_rows = common.DatabaseManager.query_all(
+		"SELECT version FROM roms WHERE device = %s AND version IS NOT NULL",
+		params=(device,)
+	)
+	known_versions = {row[0] for row in ver_rows if row[0]}
+
+	return {
+		'device': device,
+		'code': code,
+		'android': andvs,
+		'supports': oss,
+		'known': known_versions,
+	}
 
 
-def process_directory(directory: str) -> None:
-	if not os.path.exists(directory):
-		print(f"错误: 目录 {directory} 不存在")
-		return
-	if not os.path.isdir(directory):
-		print(f"错误: {directory} 不是一个目录")
-		return
-
-	for root, dirs, files in os.walk(directory):
-		for file in files:
-			if file.endswith('.DS_Store'):
-				continue
-			file_path = os.path.join(root, file)
-			real_path = os.path.realpath(file_path)
-			real_dir = os.path.realpath(directory)
-			if not real_path.startswith(real_dir):
-				print(f"警告: 跳过目录外的文件: {file_path}")
-				continue
-
-			encoding = detect_file_encoding(file_path)
-			if encoding is None:
-				print(f"警告: 无法检测文件编码，跳过: {file_path}")
-				continue
-
-			filenames = extract_filenames_from_html(file_path, encoding)
-			for filename in filenames:
-				common.DataRecorder.check_exists(filename)
+def get_known_branch_codes() -> set:
+	"""获取数据库中已知的 device+code 组合"""
+	known = set()
+	rows = common.DatabaseManager.query_all(
+		"SELECT device, code FROM devices WHERE code IS NOT NULL AND code != ''"
+	)
+	for row in rows:
+		known.add((row[0], row[1]))
+	return known
 
 
 def main() -> None:
-	print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 开始扫描 HTML 页面...")
-	process_directory(TARGET_DIRECTORY)
-	print(f"\n[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 扫描完成")
+	print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 开始新分支检测...")
+
+	devices = list(dict.fromkeys(common.currentStable + common.unreleased))
+	known_codes = get_known_branch_codes()
+
+	for device in devices:
+		devdata = get_device_info(device)
+		if not devdata:
+			continue
+
+		code = devdata['code']
+
+		for br in common.branches:
+			devcode = device + br['code']
+
+			# === 阶段1: Fastboot 查询 ===
+			for carrier in br['carrier']:
+				if device in ONE_DEVICES:
+					url = BASE_URL + devcode + "&b=F&r=&n=" + carrier
+				else:
+					url = BASE_URL + devcode + "&b=F&r=" + br['region'] + "&n=" + carrier
+				print(f"\r{datetime.now().strftime('%Y-%m-%d %H:%M:%S')} {url}", end="", flush=True)
+				common.NetworkClient.get_fastboot_info(url)
+
+			# === 阶段2: OTA 增量号探测（已知设备） ===
+			if code:
+				for os_ver in devdata['supports']:
+					for andv in devdata['android']:
+						for inc in INCREMENT:
+							android_code = common.VersionUtils.android_code(andv)
+							version = os_ver + "." + inc + ".0." + android_code + code + br['tag']
+							if version in devdata['known']:
+								continue
+							print(f"\r{datetime.now().strftime('%Y-%m-%d %H:%M:%S')} 正在检测 {device} {devcode} {version}", end="", flush=True)
+							region = '' if device in ONE_DEVICES else br['region']
+							form_json = common.FirmwareParser.build_ota_form(device, devcode, region, 'F', br['zone'], andv, version)
+							encrypted = common.CryptoManager.encrypt(form_json)
+							common.NetworkClient.fetch_and_check(encrypted)
+
+			# === 阶段3: 未知 device+code 组合的 OTA 探测 ===
+			elif (device, devcode) not in known_codes:
+				if device not in ONE_DEVICES:
+					form_json = common.FirmwareParser.build_ota_form(
+						device, devcode, br['region'], 'F', br['zone'], '14.0', ''
+					)
+					encrypted = common.CryptoManager.encrypt(form_json)
+					common.NetworkClient.fetch_and_check(encrypted)
+
+	print(f"\n[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 新分支检测完成")
 
 
 if __name__ == '__main__':
