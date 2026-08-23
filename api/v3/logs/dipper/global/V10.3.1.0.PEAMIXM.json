@@ -1,0 +1,64 @@
+{
+  "logs_zh": {
+    "锁屏、状态栏、通知栏": [
+      "优化 将状态栏高度设置为等于刘海高度",
+      "修复 媒体音播放过程中来通知，声音变小后不恢复的问题",
+      "修复 低电量时呼吸灯不闪烁的bug"
+    ],
+    "时钟": [
+      "修复 计时器页面按钮点击闪烁的问题",
+      "修复 时钟在特殊日期出现闪退的问题"
+    ],
+    "相机": [
+      "新增 AI相机场景：月亮模式、塔、合影",
+      "修复 录像下退出重新进入必现相机闪退",
+      "修复 短信调用相机拍照时点击取消，再次选择相机出现相机故障"
+    ],
+    "设置": [
+      "优化 大字体界面的显示效果"
+    ],
+    "最近任务": [
+      "优化 应用名称的显示长度，优化大字体的显示效果"
+    ],
+    "游戏加速": [
+      "新增 电话悬浮窗功能，支持游戏中接通的电话使用悬浮窗显示接通状态"
+    ],
+    "小米云服务": [
+      "优化 云服务首页重新设计，可用空间显示更加直观"
+    ],
+    "其他": [
+      "修复 息屏显示不能定时关闭的问题"
+    ]
+  },
+  "logs_en": {
+    "Lockscreen, status bar, Notification shade": [
+      "Optimization: The height of status bar is equal to the height of the notch now",
+      "Fix: Media playback volume couldn^t be restored after it was lowered by an incoming notification",
+      "Fix: LED light didn^t blink when battery was low"
+    ],
+    "Clock": [
+      "Fix: Timer button started flashing after being tapped",
+      "Fix: Clock force closed on some specific dates"
+    ],
+    "Camera": [
+      "New: New modes for AI camera",
+      "Fix: Camera force closed when the app was closed and opened again in the Video mode",
+      "Fix: When the user canceled making a photo using a shortcut in Messaging and then tapped the Camera shortcut again, Camera crashed"
+    ],
+    "Settings": [
+      "Optimization: Big fonts are displayed better now"
+    ],
+    "Recents": [
+      "Optimization: App names were truncated when texts size was set to large"
+    ],
+    "Game speed booster": [
+      "New: Floating windows for incoming calls during games"
+    ],
+    "Mi Cloud": [
+      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    ],
+    "Other": [
+      "Fix: Displaying items on the turned off screen couldn^t be turned off on time in some cases"
+    ]
+  }
+}

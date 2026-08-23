@@ -1,0 +1,28 @@
+{
+  "logs_zh": {
+    "系统": [
+      "优化 更新谷歌安全补丁（2021#08），提升系统安全性"
+    ],
+    "锁屏": [
+      "修复 指纹动画导致的崩溃问题",
+      "修复 横屏界面灭屏后指纹图标消失或错位的问题",
+      "修复 指纹解锁后自动黑屏跳转到锁屏，且锁屏壁纸为桌面壁纸的问题",
+      "修复 个别应用在使用指纹验证时，跳回到锁屏界面的问题",
+      "修复 指纹解锁时闪现桌面壁纸，且未成功解锁的问题",
+      "修复 亮屏指纹解锁成功后又跳转到锁屏界面的问题"
+    ]
+  },
+  "logs_en": {
+    "System": [
+      "Optimization: Updated Android Security Patch to August 2021. Increased system security."
+    ],
+    "Lock screen": [
+      "Fix: Fingerprint unlock animation led to crashes",
+      "Fix: Fingerprint icon didn^t appear or was displayed incorrectly when the screen was turned off in landscape mode",
+      "Fix: The screen went black, device was locked, and Lock screen wallpaper was replaced with Home screen wallpaper after Fingerprint unlock was used",
+      "Fix: Using fingerprints in some apps locked the device",
+      "Fix: Wallpapers flashed when Fingerprint unlock was being used which didn^t allow to unlock the device",
+      "Fix: Device was locked again after successful Fingerprint unlock attempts"
+    ]
+  }
+}

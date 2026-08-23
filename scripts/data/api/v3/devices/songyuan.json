@@ -1,0 +1,122 @@
+{
+  "device": "songyuan",
+  "name": {
+    "zh": "REDMI K100 Pro Max",
+    "en": "REDMI K100 Pro Max"
+  },
+  "code": "GN",
+  "brand": [
+    "REDMI"
+  ],
+  "android": [
+    "16.0"
+  ],
+  "supports": [
+    "OS3"
+  ],
+  "branches": [
+    {
+      "id": "songyuan",
+      "brand": [
+        "REDMI"
+      ],
+      "device": {
+        "zh": "REDMI K100 Pro Max",
+        "en": "REDMI K100 Pro Max"
+      },
+      "name": {
+        "zh": "中国大陆正式版",
+        "en": "China Mainland Stable"
+      },
+      "region": "cn",
+      "carrier": [
+        "",
+        "chinatelecom",
+        "chinamobile",
+        "chinaunicom"
+      ],
+      "tags": {
+        "branch": "CnOO",
+        "tag": "CNXM",
+        "branchtag": "F",
+        "btag": "F"
+      },
+      "zone": "1",
+      "show": "1",
+      "ep": "0",
+      "roms": [
+        {
+          "miui": "OS3.0.301.0.WGNCNXM",
+          "android": "16.0",
+          "release": "2026-08-12",
+          "aspatch": "2026-06-01",
+          "recovery": "songyuan-ota_full-OS3.0.301.0.WGNCNXM-user-16.0-355f85a1fd.zip",
+          "fastboot": "",
+          "cmobile": "songyuan_images_OS3.0.301.0.WGNCNXM_20260711.0000.00_16.0_cn_chinamobile_41cb245f2e.tgz"
+        },
+        {
+          "miui": "OS3.0.306.0.WGNCNXM",
+          "android": "16.0",
+          "release": "2026-08-12",
+          "aspatch": "2026-07-01",
+          "recovery": "songyuan-ota_full-OS3.0.306.0.WGNCNXM-user-16.0-114ed50527.zip",
+          "fastboot": "songyuan_images_OS3.0.306.0.WGNCNXM_20260805.0000.00_16.0_cn_1701e5a4bf.tgz",
+          "ctelecom": "songyuan_images_OS3.0.306.0.WGNCNXM_20260805.0000.00_16.0_cn_chinatelecom_11ff9d1cdd.tgz",
+          "cmobile": "songyuan_images_OS3.0.306.0.WGNCNXM_20260805.0000.00_16.0_cn_chinamobile_bd850f2407.tgz",
+          "cunicom": "songyuan_images_OS3.0.306.0.WGNCNXM_20260805.0000.00_16.0_cn_chinaunicom_0369bf2772.tgz"
+        }
+      ]
+    },
+    {
+      "id": "songyuan_demo",
+      "brand": [
+        "REDMI"
+      ],
+      "device": {
+        "zh": "REDMI K100 Pro Max",
+        "en": "REDMI K100 Pro Max"
+      },
+      "name": {
+        "zh": "中国大陆演示机系统",
+        "en": "China Mainland MiStore Demo"
+      },
+      "region": "cn",
+      "carrier": [
+        "",
+        "chinatelecom",
+        "chinamobile",
+        "chinaunicom"
+      ],
+      "tags": {
+        "branch": "CnOD",
+        "tag": "CNDM",
+        "branchtag": "F",
+        "btag": "F"
+      },
+      "zone": "1",
+      "show": "0",
+      "ep": "0",
+      "roms": [
+        {
+          "miui": "OS3.0.303.0.WGNCNDM",
+          "android": "16.0",
+          "release": "2026-08-13",
+          "aspatch": "2026-06-01",
+          "recovery": "songyuan_demo-ota_full-OS3.0.303.0.WGNCNDM-user-16.0-c1b579dcb2.zip",
+          "fastboot": ""
+        },
+        {
+          "miui": "OS3.0.302.0.WGNCNDM",
+          "android": "16.0",
+          "release": "2026-08-10",
+          "aspatch": "",
+          "recovery": "songyuan_demo-ota_full-OS3.0.302.0.WGNCNDM-user-16.0-c809bd292d.zip",
+          "fastboot": "songyuan_demo_images_OS3.0.302.0.WGNCNDM_20260803.0000.00_16.0_cn_56e4dab52d.tgz",
+          "ctelecom": "songyuan_demo_images_OS3.0.302.0.WGNCNDM_20260803.0000.00_16.0_cn_chinatelecom_6b97ff4276.tgz",
+          "cmobile": "songyuan_demo_images_OS3.0.302.0.WGNCNDM_20260803.0000.00_16.0_cn_chinamobile_ffdc4a77d3.tgz",
+          "cunicom": "songyuan_demo_images_OS3.0.302.0.WGNCNDM_20260803.0000.00_16.0_cn_chinaunicom_f430a7b5ee.tgz"
+        }
+      ]
+    }
+  ]
+}

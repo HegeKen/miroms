@@ -1,0 +1,74 @@
+{
+  "logs_zh": {
+    "锁屏": [
+      "新增 指纹是否应用于锁屏开关的功能",
+      "修复 “指纹应用于锁屏”开关默认关闭，导致部分用户无法使用指纹解锁的问题",
+      "修复 充电动画显示时有概率内存异常的问题",
+      "修复 进入密码输入页面，人脸与指纹同时检测解锁时有概率出现崩溃的问题",
+      "修复 挂断电话亮屏后锁屏信息全部消失的问题",
+      "修复 使用主题后开启超级壁纸，锁屏页面内容不显示的偶现问题"
+    ],
+    "状态栏、通知栏": [
+      "优化 通知中心与三方主题的适配",
+      "优化 通知消息与深色模式的适配",
+      "修复 应用锁导致通知大小背景不一致的异常",
+      "修复 一键清理动画掉帧的问题",
+      "修复 锁屏时无法下拉通知栏的问题",
+      "修复 未接来电悬浮权限开启失败的异常",
+      "修复 播放音乐时，通知栏偶现不显示媒体控制面板的异常",
+      "修复 抬起亮屏时偶现锁屏通知抖动的异常",
+      "修复 深色模式下，通知按钮偶现显示异常的问题"
+    ],
+    "主题": [
+      "修复 部分场景下解锁时壁纸闪烁的问题",
+      "修复 某些场景下的壁纸服务崩溃的问题",
+      "修复 部分壁纸预览页显示异常的问题",
+      "修复 锁屏界面指纹解锁屏幕闪烁的问题",
+      "修复 部分场景下关闭深色模式后，壁纸仍为深色效果的问题",
+      "修复 退出超级省电模式后，桌面壁纸变黑的问题",
+      "修复 无障碍模式下，超级壁纸点击下载时播报错误的问题",
+      "修复 地球超级壁纸文字显示不完整的问题",
+      "修复 设置-超级壁纸卡片文案与按钮重叠的问题",
+      "修复 设置页超级壁纸底部导航栏显示不清楚的问题",
+      "修复 省电模式下，分身空间桌面壁纸与主空间相同的问题",
+      "修复 分身空间中设置桌面壁纸异常显示的问题",
+      "修复 大字体时，超级壁纸落地点选择页文字重叠的问题"
+    ]
+  },
+  "logs_en": {
+    "Lock screen": [
+      "New: New fingerprint options",
+      "Fix: Issues in the Settings deactivated Fingerprint unlock in some cases",
+      "Fix: Memory usage issues when charging animation was displayed",
+      "Fix: Using Face unlock and Fingerprint unlock simultaneously led to crashes in some cases",
+      "Fix: Lock screen notifications disappeared after an ended call",
+      "Fix: Lock screen items weren^t displayed when super wallpapers and themes were combined"
+    ],
+    "Status bar, Notification shade": [
+      "Optimization: Third party theme compatibility for Notification shade",
+      "Optimization: Dark mode adjustments for notifications",
+      "Fix: Notifications weren^t displayed correctly when App lock was used",
+      "Fix: Cleaner animations weren^t displayed correctly",
+      "Fix: Notification shade couldn^t be opened in some cases",
+      "Fix: Issues with permissions after missed calls",
+      "Fix: Player controls weren^t always displayed in the Notification shade",
+      "Fix: Notifications weren^t always displayed correctly when ^Raise to wake^ was used",
+      "Fix: Buttons weren^t always displayed correctly on the notifications when Dark mode was on"
+    ],
+    "Themes": [
+      "Fix: Wallpapers flashed while device was being unlocked in some cases",
+      "Fix: Wallpaper services crashed in some cases",
+      "Fix: Some wallpaper previews weren^t displayed correctly",
+      "Fix: The screen flashed while Fingerprint unlock was being used",
+      "Fix: Wallpapers stayed dark after Dark mode was turned off in some cases",
+      "Fix: Home screen background went black after Ultra battery saver was turned off",
+      "Fix: Incorrect voice prompts for downloading super wallpapers in Accessibility mode",
+      "Fix: Text truncation issues for super wallpapers",
+      "Fix: UI elements overlapped in the super wallpaper settings",
+      "Fix: Navigation buttons weren^t displayed correctly in the super wallpaper settings",
+      "Fix: Wallpapers from First space were also applied in Second space when Battery saver was on",
+      "Fix: Wallpapers weren^t displayed correctly in Second space",
+      "Fix: When system font size was set to large, super wallpaper descriptions overlapped during the setup process"
+    ]
+  }
+}

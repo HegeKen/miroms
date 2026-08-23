@@ -1,0 +1,48 @@
+{
+  "logs_zh": {
+    "锁屏": [
+      "新增 指纹是否应用于锁屏开关的功能",
+      "优化 锁屏负一屏功能的内存占用",
+      "修复 使用超级壁纸，锁屏界面灭屏偶现闪黑的问题",
+      "修复 个别界面灭屏指纹解锁时出现壁纸闪现的问题",
+      "修复 在游戏页面时，指纹解锁有概率屏幕出现花屏的问题",
+      "修复 指纹解锁时，个别界面灭屏后快速指纹解锁出现动画不对问题",
+      "修复 在插入SIM卡后有概率出现指纹和人脸功能失效问题",
+      "修复 使用超级壁纸时，灭屏指纹解锁进入个别界面闪黑问题",
+      "修复 抬起亮屏功能失效的问题",
+      "修复 个别界面人脸或是指纹解锁时，解锁过程中锁屏信息消失慢的问题",
+      "修复 修复灭屏后立即进行指纹解锁有概率闪黑问题",
+      "修复 指纹解锁之后一直黑屏，只显示状态栏问题",
+      "修复 锁屏使用三方主题后，开启超级壁纸功能，锁屏时间信息不显示的问题",
+      "修复 充电动画显示时有概率内存异常的问题",
+      "修复 进入密码输入页面，人脸与指纹同时检测解锁时有概率出现崩溃的问题"
+    ],
+    "状态栏、通知栏": [
+      "优化 来电的悬浮通知屏蔽逻辑",
+      "修复 透明背景下，悬浮通知显示重叠的问题"
+    ]
+  },
+  "logs_en": {
+    "Lock screen": [
+      "New: New fingerprint options",
+      "Optimization: App vault memory usage when device is locked",
+      "Fix: Screen flashed after locking when Super wallpapers were used",
+      "Fix: Wallpapers flashed when Fingerprint unlock was used in some cases",
+      "Fix: Display abnormalities occurred when Fingerprint unlock was used with games",
+      "Fix: Issues with the fingerprint animation in several scenes",
+      "Fix: Fingerprint and Face unlock were turned off after a SIM card was installed",
+      "Fix: The screen flashed when Fingerprint unlock was used with Super wallpapers in some cases",
+      "Fix: ^Raise to wake^ turned off unexpectedly in some cases",
+      "Fix: Lock screen notifications didn^t disappear on time when Fingerprint or Face unlock was used in some cases",
+      "Fix: Screen flashed when Fingerprint unlock was used in some cases",
+      "Fix: No items except for the status bar were shown on the screen after using Fingerprint unlock",
+      "Fix: Issues with the Lock screen clock when third party themes and super wallpapers were used",
+      "Fix: Memory usage issues when charging animation was displayed",
+      "Fix: Using Face unlock and Fingerprint unlock simultaneously led to crashes in some cases"
+    ],
+    "Status bar, Notification shade": [
+      "Optimization: Algorithms for displaying incoming call notifications",
+      "Fix: Floating notifications overlapped when the transparent background was used"
+    ]
+  }
+}

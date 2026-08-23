@@ -1,0 +1,38 @@
+DROP TABLE IF EXISTS `roms`;
+CREATE TABLE `roms` (
+  `id` bigint NOT NULL AUTO_INCREMENT COMMENT '自增主键',
+  `device` varchar(255) COLLATE utf8mb4_bin DEFAULT NULL COMMENT '设备代号，如 taiko、leedsa',
+  `code` varchar(255) COLLATE utf8mb4_bin DEFAULT NULL COMMENT '设备代码，如 taiko_global',
+  `type` varchar(255) COLLATE utf8mb4_bin DEFAULT NULL COMMENT '系统类型：MIUI / HyperOS',
+  `bigver` varchar(255) COLLATE utf8mb4_bin DEFAULT NULL COMMENT '大版本号，如 HyperOS 3、MIUI 14',
+  `region` varchar(255) COLLATE utf8mb4_bin DEFAULT NULL COMMENT '区域代号：cn/global/in/eea 等',
+  `tag` varchar(255) COLLATE utf8mb4_bin DEFAULT NULL COMMENT 'ROM 标签，如 CnOO、MIXM',
+  `branch` varchar(255) COLLATE utf8mb4_bin DEFAULT NULL COMMENT '分支类型：F=正式版、X=开发版',
+  `zone` int DEFAULT NULL COMMENT '区域分区：1=中国、2=国际',
+  `version` varchar(255) COLLATE utf8mb4_bin DEFAULT NULL COMMENT '完整版本号，如 OS3.0.303.0.WOVCNXM',
+  `android` varchar(255) COLLATE utf8mb4_bin DEFAULT NULL COMMENT 'Android 版本号，如 16.0、14.0',
+  `beta_date` date DEFAULT NULL COMMENT 'Beta/内测发布日期',
+  `release_date` date DEFAULT NULL COMMENT '正式发布日期',
+  `public_date` date DEFAULT NULL COMMENT '公开发布日期',
+  `recovery` varchar(255) COLLATE utf8mb4_bin DEFAULT NULL COMMENT 'Recovery 包文件名',
+  `fastboot` varchar(255) COLLATE utf8mb4_bin DEFAULT NULL COMMENT 'Fastboot 包文件名',
+  `ctelecom` varchar(255) COLLATE utf8mb4_bin DEFAULT NULL COMMENT '中国电信定制包文件名',
+  `cmobile` varchar(255) COLLATE utf8mb4_bin DEFAULT NULL COMMENT '中国移动定制包文件名',
+  `cunicom` varchar(255) COLLATE utf8mb4_bin DEFAULT NULL COMMENT '中国联通定制包文件名',
+  `others` varchar(255) COLLATE utf8mb4_bin DEFAULT NULL COMMENT '其他渠道包文件名',
+  `insdate` date DEFAULT NULL COMMENT '记录录入日期',
+  `update_date` bigint DEFAULT NULL COMMENT '记录更新时间戳',
+  `logs_zh` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin COMMENT '中文更新日志，JSON 格式',
+  `logs_en` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin COMMENT '英文更新日志，JSON 格式',
+  `aspatch` date DEFAULT NULL COMMENT '安卓安全补丁日期',
+  PRIMARY KEY (`id`) USING BTREE,
+  KEY `idx_roms_device` (`device`),
+  KEY `idx_roms_code` (`code`),
+  KEY `idx_roms_device_type` (`device`,`type`),
+  KEY `idx_roms_beta_date` (`beta_date`),
+  KEY `idx_roms_release_date` (`release_date`),
+  CONSTRAINT `roms_chk_1` CHECK (json_valid(`logs_zh`)),
+  CONSTRAINT `roms_chk_2` CHECK (json_valid(`logs_en`))
+) ENGINE=InnoDB AUTO_INCREMENT=53771 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin ROW_FORMAT=DYNAMIC;
+
+-- 数据示例：52119,'taiko','taiko','HyperOS','HyperOS 3','cn','CnOO','F',1,'OS3.0.303.0.WOVCNXM','16.0','2026-04-22','2026-04-22','2026-04-27','taiko-ota_full-OS3.0.303.0.WOVCNXM-user-16.0-cafd2ead7a.zip','taiko_images_OS3.0.303.0.WOVCNXM_20260416.0000.00_16.0_cn_343def42ff.tgz','taiko_images_OS3.0.303.0.WOVCNXM_20260416.0000.00_16.0_cn_chinatelecom_251b6f1689.tgz',NULL,NULL,NULL,'2026-04-22',NULL,'{\"小米超级岛\": [\"新增 小米超级岛，信息触达更高效\", \"新增 支持下拉展开小窗，多任务场景高效处理\"]}','{\"Xiaomi HyperIsland\": [\"New: View all the important info at a glance with Xiaomi HyperIsland\"]}','2026-03-01'

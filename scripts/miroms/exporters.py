@@ -1,0 +1,794 @@
+import json
+import logging
+from pathlib import Path
+from typing import Set, List, Tuple, Dict, Any
+
+from miroms.database import DatabaseManager
+from miroms.constants import branches
+from miroms.data import unreleased, DEVICE_NAME_ALIASES
+
+
+def exportV1(device: str) -> Dict[str, Any]:
+		if device in unreleased:
+				return None
+		else:
+				type_sql = "SELECT type FROM roms WHERE device = %s"
+				types = DatabaseManager.execute(type_sql, params=(device,), fetch_one=False)
+				if "MIUI" not in str(types):
+						return None
+				else:
+						logger = logging.getLogger(__name__)
+
+						# 输入验证
+						if not device or not isinstance(device, str):
+										raise ValueError("设备代号必须是有效的非空字符串")
+
+						# 清理输入，防止路径遍历
+						device = device.strip().replace("/", "").replace("\\", "")
+						device = DEVICE_NAME_ALIASES.get(device, device)
+
+						try:
+										# ==================== 阶段1: 批量获取设备基础信息 ====================
+										logger.info(f"开始导出设备数据: {device}")
+
+										# 使用参数化查询（%s占位符）防止SQL注入
+										device_sql = "SELECT code, full_names, devtag FROM devices WHERE device = %s"
+										device_data = DatabaseManager.execute(device_sql, params=(device,), fetch_one=True)
+
+										if not device_data:
+														raise ValueError(f"设备 '{device}' 在数据库中不存在")
+
+										# 安全解析设备名称JSON
+										device_code = device_data[0] if len(device_data) > 1 else device
+										name_json_str = device_data[1] if len(device_data) > 2 else '{}'
+										dev_code = device_data[2] if len(device_data) > 2 else '""'
+
+										try:
+														device_names = json.loads(name_json_str) if isinstance(name_json_str, str) else {}
+														if not isinstance(device_names, dict):
+																		device_names = {}
+										except json.JSONDecodeError as e:
+														logger.warning(f"设备 {device} 的名称JSON解析失败: {e}, 使用默认值")
+														device_names = {}
+
+										# ==================== 阶段2: 批量获取版本信息（单次查询） ====================
+										ver_sql = """
+														SELECT DISTINCT android, bigver
+														FROM roms
+														WHERE device = %s AND type = 'MIUI'
+														ORDER BY
+																		CAST(SUBSTRING_INDEX(android, '.', 1) AS UNSIGNED) DESC,
+																		CAST(SUBSTRING_INDEX(SUBSTRING_INDEX(android, '.', 2), '.', -1) AS UNSIGNED) DESC
+										"""
+										ver_data = DatabaseManager.execute(ver_sql, params=(device,), fetch_one=False)
+
+										android_versions: List[str] = []
+										miui_versions: List[str] = []
+
+										for row in ver_data or []:
+														android_ver = row[0] if row else None
+														bigver = row[1] if len(row) > 1 else None
+
+														if android_ver and android_ver not in android_versions:
+																		android_versions.append(android_ver)
+
+														if bigver:
+																		miui_ver = bigver.replace("MIUI ", "V").replace("VV", "V")
+																		if "." not in miui_ver:
+																						miui_ver = f"{miui_ver}.0"
+																		if miui_ver not in miui_versions:
+																						miui_versions.append(miui_ver)
+
+										android_versions.reverse()
+										miui_versions.reverse()
+
+										# ==================== 阶段3: 批量获取分支代码映射（单次查询） ====================
+										branch_codes_sql = """
+														SELECT tag, code, region
+														FROM devices
+														WHERE device = %s AND tag IS NOT NULL AND tag != ''
+										"""
+										branch_codes_data = DatabaseManager.execute(branch_codes_sql, params=(device,), fetch_one=False)
+
+										branch_code_map: Dict[str, Dict[str, str]] = {}
+										for row in branch_codes_data or []:
+														if row and len(row) >= 3:
+																		tag, code, region = row[0], row[1], row[2]
+																		if tag:
+																						branch_code_map[tag] = {"code": code or "", "region": region or ""}
+
+										# ==================== 阶段4: 批量获取所有ROM数据（带运营商字段） ====================
+										roms_sql = """SELECT id, version, android, beta_date, recovery, fastboot, tag, code, ctelecom, cmobile, cunicom, aspatch FROM roms WHERE device = %s AND type = 'MIUI' ORDER BY id DESC"""
+										all_roms = DatabaseManager.execute(roms_sql, params=(device,), fetch_one=False)
+
+										roms_by_tag: Dict[str, List[Tuple]] = {}
+										for rom in all_roms or []:
+														if len(rom) > 6:
+																		tag = rom[6]
+																		if tag:
+																						roms_by_tag.setdefault(tag, []).append(rom)
+
+										# ==================== 阶段5: 构建输出结构 ====================
+										device_struct: Dict[str, Any] = {
+														"codename": device,
+														"zh-cn": device_names.get("zh") or device_names.get("zh-cn") or device,
+														"en-us": device_names.get("en") or device_names.get("en-us") or device,
+														"ismiui": "",
+														"code": dev_code,
+														"android": android_versions,
+														"miui": miui_versions,
+														"branches": []
+										}
+
+										# ==================== 阶段6: 处理每个分支 ====================
+										processed_branches = 0
+										total_roms = 0
+
+										for branch in branches:
+														btag = branch.get("btag")
+														if not btag:
+																		continue
+
+														branch_info = branch_code_map.get(btag)
+														if not branch_info or not branch_info.get("code"):
+																		continue
+
+														branch_code = branch_info["code"]
+														branch_roms = roms_by_tag.get(btag, [])
+														if not branch_roms:
+																		continue
+
+														new_branch: Dict[str, Any] = {
+																		"code": branch_code,
+																		"btag": branch.get("branch", "F"),
+																		"region": branch_info.get("region") or branch.get("region", ""),
+																		"carrier": branch.get("carrier", []),
+																		"branch": btag,
+																		"tag": branch.get("tag", ""),
+																		"zone": branch.get("zone", 1),
+																		"show": branch.get("visibility", 1),
+																		"ep": branch.get("ep", 0),
+																		"zh-cn": branch.get("name_zh", ""),
+																		"en-us": branch.get("name_en", ""),
+																		"links": []
+														}
+
+														# 检查是否需要添加运营商字段到 links
+														has_ctelecom = any(len(rom) > 8 and rom[8] for rom in branch_roms)
+														has_cmobile = any(len(rom) > 9 and rom[9] for rom in branch_roms)
+														has_cunicom = any(len(rom) > 10 and rom[10] for rom in branch_roms)
+
+														# 修复原逻辑错误：使用Set追踪已添加的版本
+														added_versions: Set[str] = set()
+
+														for rom in branch_roms:
+																		if len(rom) < 6:
+																						continue
+
+																		(rom_id, version, android, beta_date, recovery, fastboot,
+														 tag, code, ctelecom, cmobile, cunicom, aspatch) = rom[:12] if len(rom) >= 12 else (*rom[:8], None, None, None, None)
+
+																		version_str = str(version) if version is not None else ""
+																		if not version_str or version_str in added_versions:
+																						continue
+
+																		added_versions.add(version_str)
+
+																		rom_meta: Dict[str, Any] = {
+																						"miui": version_str,
+																						"android": str(android) if android is not None else "",
+																						"release": str(beta_date) if beta_date is not None else "",
+																						"aspatch": str(aspatch) if aspatch is not None else "",
+																						"recovery": str(recovery) if recovery is not None else "",
+																						"fastboot": str(fastboot) if fastboot is not None else ""
+																		}
+
+																		# 添加运营商定制包（如果有）
+																		if has_ctelecom and ctelecom:
+																						rom_meta["ctelecom"] = str(ctelecom)
+																		if has_cmobile and cmobile:
+																						rom_meta["cmobile"] = str(cmobile)
+																		if has_cunicom and cunicom:
+																						rom_meta["cunicom"] = str(cunicom)
+
+																		new_branch["links"].append(rom_meta)
+																		total_roms += 1
+
+														if new_branch["links"]:
+																		device_struct["branches"].append(new_branch)
+																		processed_branches += 1
+
+										# ==================== 阶段7: 安全写入文件 ====================
+										if processed_branches == 0:
+												logger.info(f"设备 {device} 无 MIUI 分支数据，跳过生成 JSON")
+												return None
+
+										device_dir = Path('data/api/v1/devices/')
+										device_dir.mkdir(parents=True, exist_ok=True)
+
+										file_path = device_dir / f'{device}.json'
+										temp_path = file_path.with_suffix('.tmp')
+
+										try:
+														with open(temp_path, 'w', encoding='utf-8') as f:
+																		json.dump(device_struct, f, ensure_ascii=False, indent=2)
+
+														temp_path.replace(file_path)		# 原子重命名
+
+										except (IOError, OSError) as e:
+														logger.error(f"文件写入失败 {file_path}: {e}")
+														if temp_path.exists():
+																		temp_path.unlink(missing_ok=True)
+														raise IOError(f"无法写入设备文件 {file_path}: {e}")
+
+										logger.info(f"成功导出设备 {device}: {processed_branches} 分支, {total_roms} ROMs")
+										return device_struct
+
+						except ValueError:
+										raise
+						except Exception as e:
+										logger.error(f"导出设备 {device} 失败: {e}", exc_info=True)
+										raise RuntimeError(f"导出设备 {device} 失败: {str(e)}") from e
+
+
+def exportV2(device: str) -> Dict[str, Any]:
+		if device in unreleased:
+				return None
+		# 检查是否为 MIUI/HyperOS 设备
+		type_sql = "SELECT type FROM roms WHERE device = %s AND type='HyperOS'"
+		types = DatabaseManager.execute(type_sql, params=(device,), fetch_one=False)
+		if "HyperOS" not in str(types):
+			return None
+		else:
+			logger = logging.getLogger(__name__)
+
+			# 输入验证
+			if not device or not isinstance(device, str):
+					raise ValueError("设备代号必须是有效的非空字符串")
+
+			# 清理输入，防止路径遍历
+			device = device.strip().replace("/", "").replace("\\", "")
+			device = DEVICE_NAME_ALIASES.get(device, device)
+
+			try:
+					# ==================== 阶段1: 获取设备基础信息 ====================
+					logger.info(f"开始导出设备数据(V2): {device}")
+
+					device_sql = """SELECT code, full_names, devtag, brands, full_brands FROM devices WHERE device = %s"""
+					device_data = DatabaseManager.execute(device_sql, params=(device,), fetch_one=True)
+					if not device_data:
+							raise ValueError(f"设备 '{device}' 在数据库中不存在")
+
+					device_code = device_data[0] if len(device_data) > 0 else ""
+					name_json_str = device_data[1] if len(device_data) > 1 else '{}'
+					dev_tag = device_data[2] if len(device_data) > 2 else '""'
+					# brands: "\"REDMI, POCO\"" -> ["REDMI", "POCO"]
+					raw_brand = device_data[3] if len(device_data) > 3 else ""
+					device_brand = [b.strip().strip('"') for b in raw_brand.strip().strip('"').split(',')] if raw_brand else []
+					# full_brands: "[\"REDMI\", \"POCO\"]" -> ["REDMI", "POCO"]
+					raw_full_brand = device_data[4] if len(device_data) > 4 else ""
+					try:
+						device_full_brand = json.loads(raw_full_brand) if raw_full_brand else []
+					except (json.JSONDecodeError, TypeError):
+						device_full_brand = [b.strip().strip('"') for b in raw_full_brand.strip().strip('"').split(',')] if raw_full_brand else []
+
+					# 解析设备名称
+					try:
+							device_names = json.loads(name_json_str) if isinstance(name_json_str, str) else {}
+							if not isinstance(device_names, dict):
+									device_names = {}
+					except json.JSONDecodeError:
+							device_names = {}
+
+					# ==================== 阶段2: 获取支持的版本信息 ====================
+					# 获取 Android 版本列表
+					android_sql = """
+							SELECT DISTINCT android
+							FROM roms
+							WHERE device = %s
+							ORDER BY CAST(SUBSTRING_INDEX(android, '.', 1) AS UNSIGNED) DESC,
+											CAST(SUBSTRING_INDEX(SUBSTRING_INDEX(android, '.', 2), '.', -1) AS UNSIGNED) DESC
+					"""
+					android_rows = DatabaseManager.execute(android_sql, params=(device,), fetch_one=False)
+					android_versions = [row[0] for row in android_rows if row] if android_rows else []
+
+					# 获取 HyperOS/MIUI 大版本支持列表（如 OS1.0, OS2.0, V14.0）
+					supports_sql = """
+							SELECT DISTINCT bigver
+							FROM roms
+							WHERE device = %s AND bigver IS NOT NULL
+							ORDER BY bigver DESC
+					"""
+					supports_rows = DatabaseManager.execute(supports_sql, params=(device,), fetch_one=False)
+					supports_versions = []
+					for row in supports_rows or []:
+							if row and row[0]:
+									# 标准化为大版本格式
+									bigver = row[0].replace("MIUI ", "V").replace("HyperOS ", "OS").replace("VV", "V")
+									if bigver not in supports_versions:
+											supports_versions.append(bigver)
+
+					# ==================== 阶段3: 获取分支代码映射 ====================
+					branch_codes_sql = """
+							SELECT tag, code, region, devtag
+							FROM devices
+							WHERE device = %s AND tag IS NOT NULL AND tag != ''
+					"""
+					branch_codes_data = DatabaseManager.execute(branch_codes_sql, params=(device,), fetch_one=False)
+
+					branch_code_map: Dict[str, Dict[str, str]] = {}
+					for row in branch_codes_data or []:
+							if row and len(row) >= 3:
+									tag, code, region = row[0], row[1], row[2]
+									devtag = row[3] if len(row) > 3 else ""
+									if tag:
+											branch_code_map[tag] = {
+													"code": code or "",
+													"region": region or "",
+													"devtag": devtag
+											}
+
+					# ==================== 阶段4: 批量获取所有ROM数据 ====================
+					roms_sql = """
+							SELECT id, version, android, beta_date, recovery, fastboot,
+										tag, code, ctelecom, cmobile, cunicom, aspatch
+							FROM roms
+							WHERE device = %s
+							ORDER BY id DESC
+					"""
+					all_roms = DatabaseManager.execute(roms_sql, params=(device,), fetch_one=False)
+
+					# 按 tag 分组 ROM
+					roms_by_tag: Dict[str, List[Tuple]] = {}
+					for rom in all_roms or []:
+							if len(rom) > 6:
+									tag = rom[6]
+									if tag:
+											roms_by_tag.setdefault(tag, []).append(rom)
+
+					# ==================== 阶段5: 构建 V2 输出结构 ====================
+					device_struct: Dict[str, Any] = {
+							"device": device,
+							"name": {
+									"zh": device_names.get("zh") or device_names.get("zh-cn") or device,
+									"en": device_names.get("en") or device_names.get("en-us") or device
+							},
+							"code": dev_tag,
+							"brand": device_full_brand or "",
+							"miui": "yes" if types and types[0] in ['MIUI', 'HyperOS'] else "no",
+							"merged": "no",	# V2 新增字段，默认no
+							"android": android_versions,
+							"supports": supports_versions,	# V2 使用 supports 而非 miui
+							"branches": []
+					}
+
+					# ==================== 阶段6: 处理每个分支 ====================
+					for branch in branches:
+							btag = branch.get("btag")
+							if not btag:
+									continue
+
+							branch_info = branch_code_map.get(btag)
+							if not branch_info or not branch_info.get("code"):
+									continue
+
+							branch_code = branch_info["code"]
+							branch_roms = roms_by_tag.get(btag, [])
+							if not branch_roms:
+									continue
+
+							# 构建 V2 风格的分支结构
+							new_branch: Dict[str, Any] = {
+									"branchCode": branch_code,	# V2: branchCode 而非 code
+									"brand": device_brand or "",
+									"device": {
+											"zh": device_names.get("zh") or device_names.get("zh-cn") or device,
+											"en": device_names.get("en") or device_names.get("en-us") or device
+									},
+									"idtag": btag,	# V2: idtag 对应 btag
+									"tag": branch.get("tag", ""),
+									"branchtag": branch.get("branch", "F"),	# V2: branchtag 对应 branch
+									"name": {
+											"zh": branch.get("name_zh", ""),
+											"en": branch.get("name_en", "")
+									},
+									"table": ["os", "android", "release", "recovery", "fastboot"],	# V2 基础表头
+									"show": str(branch.get("visibility", 1)),
+									"carrier": branch.get("carrier", []),
+									"region": branch_info.get("region") or branch.get("region", ""),
+									"zone": str(branch.get("zone", 1)),
+									"ep": str(branch.get("ep", 0)),
+									"roms": {}	# V2: roms 字典而非 links 数组
+							}
+
+							# 检查是否需要添加运营商字段到 table
+							has_ctelecom = any(len(rom) > 8 and rom[8] for rom in branch_roms)
+							if has_ctelecom:
+									new_branch["table"].append("ctelecom")
+
+							# 处理每个 ROM，构建 V2 格式的 roms 字典
+							for rom in branch_roms:
+									if len(rom) < 7:
+											continue
+
+									(rom_id, version, android, beta_date, recovery,
+								fastboot, tag, code, ctelecom, cmobile, cunicom, aspatch) = rom[:12]
+
+									version_str = str(version) if version is not None else ""
+									if not version_str:
+											continue
+
+									# V2: 版本号作为 key，值为详细信息对象
+									rom_entry: Dict[str, Any] = {
+											"os": version_str,	# V2: os 而非 miui
+											"android": str(android) if android is not None else "",
+											"release": str(beta_date) if beta_date is not None else "",
+											"aspatch": str(aspatch) if aspatch is not None else "",
+											"recovery": str(recovery) if recovery is not None else "",
+											"fastboot": str(fastboot) if fastboot is not None else ""
+									}
+
+									# 添加运营商定制包（如果有）
+									if ctelecom:
+											rom_entry["ctelecom"] = str(ctelecom)
+									# 可扩展其他运营商字段 cmobile, cunicom 等
+
+									# 使用版本号作为 key 存入 roms 字典
+									new_branch["roms"][version_str] = rom_entry
+
+							if new_branch["roms"]:
+									device_struct["branches"].append(new_branch)
+
+					# ==================== 阶段7: 安全写入文件 ====================
+					device_dir = Path('data/api/v2/devices/')
+					device_dir.mkdir(parents=True, exist_ok=True)
+
+					file_path = device_dir / f'{device}.json'
+					temp_path = file_path.with_suffix('.tmp')
+
+					try:
+							with open(temp_path, 'w', encoding='utf-8') as f:
+									json.dump(device_struct, f, ensure_ascii=False, indent=2)
+
+							temp_path.replace(file_path)	# 原子重命名
+
+					except (IOError, OSError) as e:
+							logger.error(f"文件写入失败 {file_path}: {e}")
+							if temp_path.exists():
+									temp_path.unlink(missing_ok=True)
+							raise IOError(f"无法写入设备文件 {file_path}: {e}")
+
+					logger.info(f"成功导出设备 {device} (V2): {len(device_struct['branches'])} 分支")
+					return device_struct
+
+			except ValueError:
+					raise
+			except Exception as e:
+					logger.error(f"导出设备 {device} 失败(V2): {e}", exc_info=True)
+					raise RuntimeError(f"导出设备 {device} 失败(V2): {str(e)}") from e
+
+
+def exportV3(device: str) -> Dict[str, Any]:
+		if device in unreleased:
+				return None
+
+		logger = logging.getLogger(__name__)
+
+		# 输入验证
+		if not device or not isinstance(device, str):
+				raise ValueError("设备代号必须是有效的非空字符串")
+
+		# 清理输入，防止路径遍历
+		device = device.strip().replace("/", "").replace("\\", "")
+		device = DEVICE_NAME_ALIASES.get(device, device)
+
+		try:
+				# ==================== 阶段1: 批量获取设备基础信息 ====================
+				logger.info(f"开始导出设备数据(V3): {device}")
+
+				device_sql = """SELECT code, full_names, devtag, brands, full_brands FROM devices WHERE device = %s"""
+				device_data = DatabaseManager.execute(device_sql, params=(device,), fetch_one=True)
+
+				if not device_data:
+						raise ValueError(f"设备 '{device}' 在数据库中不存在")
+
+				device_code = device_data[0] if len(device_data) > 0 else ""
+				name_json_str = device_data[1] if len(device_data) > 1 else '{}'
+				dev_tag = device_data[2] if len(device_data) > 2 else '""'
+				# brands: "\"REDMI, POCO\"" -> ["REDMI", "POCO"]
+				raw_brand = device_data[3] if len(device_data) > 3 else ""
+				device_brand = [b.strip().strip('"') for b in raw_brand.strip().strip('"').split(',')] if raw_brand else []
+				# full_brands: "[\"REDMI\", \"POCO\"]" -> ["REDMI", "POCO"]
+				raw_full_brand = device_data[4] if len(device_data) > 4 else ""
+				try:
+					device_full_brand = json.loads(raw_full_brand) if raw_full_brand else []
+				except (json.JSONDecodeError, TypeError):
+					device_full_brand = [b.strip().strip('"') for b in raw_full_brand.strip().strip('"').split(',')] if raw_full_brand else []
+
+				# 安全解析设备名称JSON（只解析一次，后续复用）
+				try:
+						device_names = json.loads(name_json_str) if isinstance(name_json_str, str) else {}
+						if not isinstance(device_names, dict):
+								device_names = {}
+				except json.JSONDecodeError:
+						device_names = {}
+
+				# 预计算设备名称（避免重复计算）
+				device_name_zh = device_names.get("zh") or device_names.get("zh-cn") or device
+				device_name_en = device_names.get("en") or device_names.get("en-us") or device
+
+				# ==================== 阶段2: 检查是否为 MIUI/HyperOS 设备 ====================
+				type_sql = "SELECT DISTINCT type FROM roms WHERE device = %s"
+				types_result = DatabaseManager.execute(type_sql, params=(device,), fetch_one=False)
+				device_types = [row[0] for row in types_result if row] if types_result else []
+
+				has_miui = 'MIUI' in device_types or 'HyperOS' in device_types
+				if not has_miui:
+						return None
+
+				# ==================== 阶段3: 批量获取所有分支代码映射 ====================
+				branch_codes_sql = """
+						SELECT tag, code, region, devtag
+						FROM devices
+						WHERE device = %s AND tag IS NOT NULL AND tag != ''
+				"""
+				branch_codes_data = DatabaseManager.execute(branch_codes_sql, params=(device,), fetch_one=False)
+
+				branch_code_map: Dict[str, Dict[str, str]] = {}
+				for row in branch_codes_data or []:
+						if row and len(row) >= 3:
+								tag, code, region = row[0], row[1], row[2]
+								devtag_val = row[3] if len(row) > 3 else ""
+								if tag:
+										branch_code_map[tag] = {
+												"code": code or "",
+												"region": region or "",
+												"devtag": devtag_val
+										}
+
+				# ==================== 阶段4: 批量获取所有 ROM 数据（带运营商字段）====================
+				roms_sql = """
+						SELECT id, version, android, beta_date, recovery, fastboot,
+									 tag, code, type, bigver, ctelecom, cmobile, cunicom, aspatch,
+									 logs_zh, logs_en, region
+						FROM roms
+						WHERE device = %s
+						ORDER BY id DESC
+				"""
+				all_roms = DatabaseManager.execute(roms_sql, params=(device,), fetch_one=False)
+
+				# 按 tag 分组 ROM（使用字典setdefault，效率更高）
+				roms_by_tag: Dict[str, List[Tuple]] = {}
+				for rom in all_roms or []:
+						if len(rom) > 6:
+								tag = rom[6]
+								if tag:
+										if tag not in roms_by_tag:
+												roms_by_tag[tag] = []
+										roms_by_tag[tag].append(rom)
+
+				# ==================== 阶段4.5: 从 ROM 数据中收集版本统计 ====================
+				# 收集 android 版本列表（从 index 2=android 字段）
+				android_set: Set[str] = set()
+				for rom in all_roms or []:
+						if len(rom) > 2 and rom[2]:
+								android_set.add(str(rom[2]))
+				android_versions = sorted(
+						android_set,
+						key=lambda x: int(x.split('.')[0]) if x.split('.')[0].isdigit() else 0,
+						reverse=True
+				)
+
+				# 收集 UI/OS 大版本支持列表（从 index 9=bigver 字段）
+				bigver_set: Set[str] = set()
+				for rom in all_roms or []:
+						if len(rom) > 9 and rom[9]:
+								bigver_set.add(str(rom[9]))
+				os_versions = []
+				ui_versions = []
+				for bigver in bigver_set:
+						# 标准化为大版本格式（与 V2 一致）
+						normalized = bigver.replace("MIUI ", "V").replace("HyperOS ", "OS").replace("VV", "V")
+						if normalized.startswith("OS"):
+								if normalized not in os_versions:
+										os_versions.append(normalized)
+						else:
+								if normalized not in ui_versions:
+										ui_versions.append(normalized)
+				os_versions.sort(reverse=True)
+				ui_versions.sort(reverse=True)
+				supports_versions = os_versions + ui_versions
+
+				# ==================== 阶段5: 构建 V3 输出结构 ====================
+				device_struct: Dict[str, Any] = {
+						"device": device,
+						"name": {
+								"zh": device_name_zh,
+								"en": device_name_en
+						},
+						"code": dev_tag,
+						"brand": device_full_brand or "",
+						"android": android_versions,
+						"supports": supports_versions,
+						"branches": []
+				}
+
+				# ==================== 阶段6: 处理每个分支（添加 device 字段）====================
+				rom_logs: Dict[str, Dict[str, str]] = {}  # key: "{region}/{version}" -> {logs_zh, logs_en}
+				for branch in branches:
+						btag = branch.get("btag")
+						if not btag:
+								continue
+
+						branch_info = branch_code_map.get(btag)
+						if not branch_info or not branch_info.get("code"):
+								continue
+
+						branch_code = branch_info["code"]
+						branch_roms = roms_by_tag.get(btag, [])
+						if not branch_roms:
+								continue
+
+						# 使用 devices 表中的 code 字段作为分支 ID
+						branch_id = branch_code
+
+						# V3 风格的分支结构（添加 device 字段）
+						new_branch: Dict[str, Any] = {
+								"id": branch_id,
+								"brand": device_brand,
+								"device": {
+										"zh": device_name_zh,
+										"en": device_name_en
+								},
+								"name": {
+										"zh": branch.get("name_zh", ""),
+										"en": branch.get("name_en", "")
+								},
+								"region": branch_info.get("region") or branch.get("region", ""),
+								"carrier": branch.get("carrier", []),
+								"tags": {
+										"branch": btag,
+										"tag": branch.get("tag", ""),
+										"branchtag": branch.get("branch", "F"),
+										"btag": branch.get("branch", "F")
+								},
+								"zone": str(branch.get("zone", 1)),
+								"show": str(branch.get("visibility", 1)),
+								"ep": str(branch.get("ep", 0)),
+								"roms": []
+						}
+
+						# 检查该分支是否有运营商定制包（使用any提前计算，避免重复检查）
+						has_ctelecom = has_cmobile = has_cunicom = False
+						for rom in branch_roms:
+								if len(rom) > 10 and rom[10]:
+										has_ctelecom = True
+								if len(rom) > 11 and rom[11]:
+										has_cmobile = True
+								if len(rom) > 12 and rom[12]:
+										has_cunicom = True
+								if has_ctelecom and has_cmobile and has_cunicom:
+										break
+
+						# 处理每个 ROM，构建 roms 数组（使用 Set 去重）
+						added_versions: Set[str] = set()
+
+						for rom in branch_roms:
+								if len(rom) < 7:
+										continue
+
+								# 安全解包（处理不同长度的rom数据）
+								rom_id = rom[0]
+								version = rom[1]
+								android = rom[2]
+								beta_date = rom[3]
+								recovery = rom[4]
+								fastboot = rom[5]
+								tag = rom[6] if len(rom) > 6 else None
+								code = rom[7] if len(rom) > 7 else None
+								rom_type = rom[8] if len(rom) > 8 else None
+								bigver = rom[9] if len(rom) > 9 else None
+								ctelecom = rom[10] if len(rom) > 10 else None
+								cmobile = rom[11] if len(rom) > 11 else None
+								cunicom = rom[12] if len(rom) > 12 else None
+								aspatch = rom[13] if len(rom) > 13 else None
+								logs_zh = rom[14] if len(rom) > 14 else None
+								logs_en = rom[15] if len(rom) > 15 else None
+								rom_region = rom[16] if len(rom) > 16 else None
+
+								version_str = str(version) if version is not None else ""
+								if not version_str or version_str in added_versions:
+										continue
+
+								added_versions.add(version_str)
+
+								# 构建 roms 条目（与 V1 links 结构一致）
+								roms_entry: Dict[str, Any] = {
+										"miui": version_str,
+										"android": str(android) if android is not None else "",
+										"release": str(beta_date) if beta_date is not None else "",
+										"aspatch": str(aspatch) if aspatch is not None else "",
+										"recovery": str(recovery) if recovery is not None else "",
+										"fastboot": str(fastboot) if fastboot is not None else ""
+								}
+
+								# 条件添加运营商定制包（只在存在时添加，减少输出体积）
+								if has_ctelecom and ctelecom:
+										roms_entry["ctelecom"] = str(ctelecom)
+								if has_cmobile and cmobile:
+										roms_entry["cmobile"] = str(cmobile)
+								if has_cunicom and cunicom:
+										roms_entry["cunicom"] = str(cunicom)
+
+								new_branch["roms"].append(roms_entry)
+
+								# 收集日志数据（按 ROM 自身 region/version 去重）
+								if (logs_zh or logs_en) and version_str:
+										log_key = f"{rom_region}/{version_str}" if rom_region else version_str
+										if log_key not in rom_logs:
+												try:
+														parsed_zh = json.loads(logs_zh) if isinstance(logs_zh, str) else logs_zh
+												except (json.JSONDecodeError, TypeError):
+														parsed_zh = logs_zh
+												try:
+														parsed_en = json.loads(logs_en) if isinstance(logs_en, str) else logs_en
+												except (json.JSONDecodeError, TypeError):
+														parsed_en = logs_en
+												rom_logs[log_key] = {
+														"logs_zh": parsed_zh,
+														"logs_en": parsed_en
+												}
+
+						if new_branch["roms"]:
+								device_struct["branches"].append(new_branch)
+
+				# ==================== 阶段7: 安全写入文件 ====================
+				device_dir = Path('data/api/v3/devices/')
+				device_dir.mkdir(parents=True, exist_ok=True)
+
+				file_path = device_dir / f'{device}.json'
+				temp_path = file_path.with_suffix('.tmp')
+
+				try:
+						with open(temp_path, 'w', encoding='utf-8') as f:
+								json.dump(device_struct, f, ensure_ascii=False, indent=2)
+
+						temp_path.replace(file_path)
+
+				except (IOError, OSError) as e:
+						logger.error(f"文件写入失败 {file_path}: {e}")
+						if temp_path.exists():
+								temp_path.unlink(missing_ok=True)
+						raise IOError(f"无法写入设备文件 {file_path}: {e}")
+
+				# ==================== 阶段8: 导出日志到独立文件 ====================
+				if rom_logs:
+						logs_base = Path('data/api/v3/logs') / device
+						logs_saved = 0
+						for log_key, log_data in rom_logs.items():
+								if '/' in log_key:
+										# 有 region: logs/device/region/version.json
+										log_region, log_version = log_key.split('/', 1)
+										log_dir = logs_base / log_region
+								else:
+										# 无 region: logs/device/version.json
+										log_version = log_key
+										log_dir = logs_base
+								log_dir.mkdir(parents=True, exist_ok=True)
+								log_file = log_dir / f'{log_version}.json'
+								try:
+										with open(log_file, 'w', encoding='utf-8') as f:
+												json.dump(log_data, f, ensure_ascii=False, indent=2)
+										logs_saved += 1
+								except (IOError, OSError) as e:
+										logger.warning(f"日志文件写入失败 {log_file}: {e}")
+						logger.info(f"  日志导出: {logs_saved}/{len(rom_logs)} 条")
+
+				logger.info(f"成功导出设备 {device} (V3): {len(device_struct['branches'])} 分支")
+				return device_struct
+
+		except ValueError:
+				raise
+		except Exception as e:
+				logger.error(f"导出设备 {device} 失败(V3): {e}", exc_info=True)
+				raise RuntimeError(f"导出设备 {device} 失败(V3): {str(e)}") from e

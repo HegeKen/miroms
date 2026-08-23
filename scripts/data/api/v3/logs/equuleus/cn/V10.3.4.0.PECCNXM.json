@@ -1,0 +1,97 @@
+{
+  "logs_zh": {
+    "系统": [
+      "优化 锁屏误触问题，避免手机在口袋中发生屏幕误操作",
+      "优化 更新谷歌安全补丁（2019#6），提升系统安全性",
+      "修复 可能导致远程执行代码的安全漏洞"
+    ],
+    "应用锁": [
+      "新增 支持通过人脸解锁应用"
+    ],
+    "联系人": [
+      "修复 SIM联系人无法删除问题"
+    ],
+    "锁屏、状态栏、通知栏": [
+      "新增 NFC 通知栏快捷开关",
+      "新增 系统主题下，锁屏时钟支持三种自定义样式，可在锁屏高级设置中修改",
+      "新增 多种彩色息屏时钟与24小时息屏时钟",
+      "新增 人脸解锁成功并停留在锁屏上时，可通过指纹进入桌面的功能",
+      "修复 息屏设置页面，双时钟预览图数字折行的问题",
+      "修复 锁屏上来电时偶现屏幕无法亮起的问题",
+      "修复 收到通知后媒体音量没有恢复的问题"
+    ],
+    "时钟": [
+      "修复 计时器页面按钮点击闪烁的问题",
+      "修复 时钟在特殊日期出现闪退的问题"
+    ],
+    "计算器": [
+      "修复 未开启小爱同学情况下，计算器偶现崩溃的问题"
+    ],
+    "相册": [
+      "新增 故事相册开关，一键控制是否展示你的相册故事卡片"
+    ],
+    "天气": [
+      "新增 阴天和雾霾动画",
+      "优化 15天趋势界面适配"
+    ],
+    "设置": [
+      "优化 设置页的系统应用与更多应用的文案和图标",
+      "优化 WiFi列表排序策略，以信号强度排序"
+    ],
+    "游戏加速": [
+      "新增 电话悬浮窗功能，支持游戏中接通的电话使用悬浮窗显示接通状态"
+    ],
+    "小米钱包": [
+      "新增 Mi Pay支持“银联碰一碰”支付功能",
+      "新增 小米公交京津冀互联互通卡支持自定义金额充值",
+      "新增 小米公交支持重庆畅通卡",
+      "优化 Mi Pay 在线有卡支付过程断网页面使用流程         "
+    ]
+  },
+  "logs_en": {
+    "System": [
+      "Optimization: Lock screen pocket mode",
+      "Optimization: Updated Android Security Patch to June 2019. Increased system security.",
+      "Fix: A security leak allowed to run the code remotely"
+    ],
+    "App lock": [
+      "New: Face unlock support"
+    ],
+    "Contacts": [
+      "Fix: Contacts couldn^t be deleted from SIM cards in some cases"
+    ],
+    "Lockscreen, status bar, Notification shade": [
+      "New: NFC shortcut in the Notification shade",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+      "New: More clock formats for Ambient display",
+      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
+      "Fix: Issues with overlapping in Dual Clock settings",
+      "Fix: Screen didn^t always light up for notifications",
+      "Fix: Media volume couldn^t be restored after receiving a notification"
+    ],
+    "Clock": [
+      "Fix: Timer button started flashing after being tapped",
+      "Fix: Clock force closed on some specific dates"
+    ],
+    "Calculator": [
+      "Fix: When Mi AI was off, Calculator crashed in some cases"
+    ],
+    "Weather": [
+      "New: Animations for cloudy and smoggy weather",
+      "Optimization: Adjustments for 15-day forecast curves"
+    ],
+    "Settings": [
+      "Optimization: The Apps section of the Settings got a structural revamp",
+      "Optimization: Sorting principles for Wi-Fi networks"
+    ],
+    "Game speed booster": [
+      "New: Floating windows for incoming calls during games"
+    ],
+    "MI Wallet": [
+      "New: Mi Pay supports UnionPay quick NFC payments now",
+      "New: Custopm top-up amounts for Beijing, Tianjin, and Hebei transport card",
+      "New: Transport cards for Chongqing",
+      "Optimization: Solutions for network errors during payments"
+    ]
+  }
+}

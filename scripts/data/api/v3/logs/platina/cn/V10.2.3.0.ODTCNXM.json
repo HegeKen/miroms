@@ -1,0 +1,39 @@
+{
+  "logs_zh": {
+    "系统": [
+      "修复 截长屏不能下拉到底的问题"
+    ],
+    "电话": [
+      "优化 双卡场景下掉卡后的处理策略"
+    ],
+    "锁屏、状态栏、通知栏": [
+      "修复 偶现关闭悬浮通知，悬浮通知依然显示的问题",
+      "修复 锁屏时充电球与预计充电时间显示重叠的问题"
+    ],
+    "设置": [
+      "修复 同步页面点击立即同步无效的问题",
+      "修复 设置手机名称为最大长度，热点无法打开的问题"
+    ],
+    "文件管理器": [
+      "修复 私密文件夹中剪切图片视频后打开文件异常的问题"
+    ]
+  },
+  "logs_en": {
+    "System": [
+      "Fix: Scrolling screenshots didn^t always work properly"
+    ],
+    "Phone": [
+      "Optimization: Algorithm for restoring connection after signal was lost in Dual SIM mode"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Fix: Lock screen UI elements overlapped when the device was charging"
+    ],
+    "Settings": [
+      "Fix: The ^Sync now^ button didn^t always work",
+      "Fix: Couldn^t turn on portable hotspot when device name was set to maximum length"
+    ],
+    "File Explorer": [
+      "Fix: Errors occured after videos from the folder with hidden files were edited"
+    ]
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "device": "athens",
+  "name": {
+    "zh": "REDMI K100 Pro",
+    "en": "REDMI K100 Pro"
+  },
+  "code": "PI",
+  "brand": [
+    "REDMI"
+  ],
+  "miui": "no",
+  "merged": "no",
+  "android": [
+    "16.0"
+  ],
+  "supports": [
+    "OS3"
+  ],
+  "branches": [
+    {
+      "branchCode": "athens",
+      "brand": [
+        "REDMI"
+      ],
+      "device": {
+        "zh": "REDMI K100 Pro",
+        "en": "REDMI K100 Pro"
+      },
+      "idtag": "CnOO",
+      "tag": "CNXM",
+      "branchtag": "F",
+      "name": {
+        "zh": "中国大陆正式版",
+        "en": "China Mainland Stable"
+      },
+      "table": [
+        "os",
+        "android",
+        "release",
+        "recovery",
+        "fastboot",
+        "ctelecom"
+      ],
+      "show": "1",
+      "carrier": [
+        "",
+        "chinatelecom",
+        "chinamobile",
+        "chinaunicom"
+      ],
+      "region": "cn",
+      "zone": "1",
+      "ep": "0",
+      "roms": {
+        "OS3.0.302.0.WPICNXM": {
+          "os": "OS3.0.302.0.WPICNXM",
+          "android": "16.0",
+          "release": "2026-08-12",
+          "aspatch": "2026-06-01",
+          "recovery": "athens-ota_full-OS3.0.302.0.WPICNXM-user-16.0-18e99699de.zip",
+          "fastboot": "",
+          "ctelecom": "athens_images_OS3.0.302.0.WPICNXM_20260710.0000.00_16.0_cn_chinatelecom_2d4e19dfda.tgz"
+        },
+        "OS3.0.306.0.WPICNXM": {
+          "os": "OS3.0.306.0.WPICNXM",
+          "android": "16.0",
+          "release": "2026-08-11",
+          "aspatch": "2026-07-01",
+          "recovery": "athens-ota_full-OS3.0.306.0.WPICNXM-user-16.0-9fc053e689.zip",
+          "fastboot": "athens_images_OS3.0.306.0.WPICNXM_20260805.0000.00_16.0_cn_b01c49b17d.tgz",
+          "ctelecom": "athens_images_OS3.0.306.0.WPICNXM_20260805.0000.00_16.0_cn_chinatelecom_b65f7b5d60.tgz"
+        }
+      }
+    },
+    {
+      "branchCode": "athens_demo",
+      "brand": [
+        "REDMI"
+      ],
+      "device": {
+        "zh": "REDMI K100 Pro",
+        "en": "REDMI K100 Pro"
+      },
+      "idtag": "CnOD",
+      "tag": "CNDM",
+      "branchtag": "F",
+      "name": {
+        "zh": "中国大陆演示机系统",
+        "en": "China Mainland MiStore Demo"
+      },
+      "table": [
+        "os",
+        "android",
+        "release",
+        "recovery",
+        "fastboot",
+        "ctelecom"
+      ],
+      "show": "0",
+      "carrier": [
+        "",
+        "chinatelecom",
+        "chinamobile",
+        "chinaunicom"
+      ],
+      "region": "cn",
+      "zone": "1",
+      "ep": "0",
+      "roms": {
+        "OS3.0.302.0.WPICNDM": {
+          "os": "OS3.0.302.0.WPICNDM",
+          "android": "16.0",
+          "release": "2026-08-10",
+          "aspatch": "",
+          "recovery": "athens_demo-ota_full-OS3.0.302.0.WPICNDM-user-16.0-d1326d2955.zip",
+          "fastboot": "athens_demo_images_OS3.0.302.0.WPICNDM_20260803.0000.00_16.0_cn_6ceb35c549.tgz",
+          "ctelecom": "athens_demo_images_OS3.0.302.0.WPICNDM_20260803.0000.00_16.0_cn_chinatelecom_58c06d1d6a.tgz"
+        }
+      }
+    }
+  ]
+}

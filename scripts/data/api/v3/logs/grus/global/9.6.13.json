@@ -1,0 +1,124 @@
+{
+  "logs_zh": {
+    "系统": [
+      "新增 全新的截屏体验，简化截屏编辑、分享、长截图流程",
+      "新增 全面屏设置中的水滴屏形状切换开关",
+      "优化 取消定时关闭勿扰后的声音提示",
+      "修复 长截屏引导弹出多次的问题"
+    ],
+    "电话": [
+      "修复 挂断电话慢问题"
+    ],
+    "应用锁": [
+      "新增 支持人脸和指纹同时解锁",
+      "修复 部分机型应用锁密码输入框显示错误"
+    ],
+    "锁屏、状态栏、通知栏": [
+      "新增 系统主题下，锁屏时钟支持三种自定义样式，可在锁屏高级设置中修改",
+      "新增 快捷开关中切换sim卡上网功能",
+      "优化 锁屏底部的充电提示样式",
+      "优化 锁屏画报触发区域调整，降低误触概率",
+      "修复 解锁进入横屏界面时有异常闪亮的问题",
+      "修复 状态栏无通知有提示",
+      "修复 来通知时，锁屏时间切换动画异常",
+      "修复 锁屏上来电时偶现屏幕无法亮起的问题",
+      "修复 锁屏上动态壁纸偶现黑屏的问题",
+      "修复 锁屏上偶现农历时间显示错误的问题",
+      "修复 息屏设置页面，双时钟预览图数字折行的问题",
+      "修复 横屏状态下无法正常打开指纹快捷功能的问题",
+      "修复 息屏下偶现指纹解锁失败的问题",
+      "修复 息屏时偶现屏下指纹无法解锁的问题",
+      "修复 息屏显示不能定时关闭的问题",
+      "修复 通话过程中误触通知栏的问题"
+    ],
+    "时钟": [
+      "新增 在时钟设置中自由选择黑色或白色背景的功能",
+      "修复 计时器页面按钮点击闪烁的问题",
+      "修复 时钟在特殊日期出现闪退的问题",
+      "提示：本次更新后时钟的背景颜色为白色"
+    ],
+    "设置": [
+      "新增 快捷回复功能，支持使用悬浮窗打开即时通讯类应用通知",
+      "优化 WiFi列表排序策略，以信号强度排序"
+    ],
+    "最近任务": [
+      "新增 模糊最近任务中的部分应用预览图的功能"
+    ],
+    "日历": [
+      "新增 日程通知“稍后提醒”功能"
+    ],
+    "骚扰拦截": [
+      "修复 批量拦截记录时响应时间过慢或失败的问题"
+    ],
+    "安全中心": [
+      "新增 骚扰拦截适配Darkmode",
+      "修复 手机重启后双开APP消失的bug",
+      "修复 优化加速功能中加锁应用个数显示错误的bug"
+    ],
+    "小米云服务": [
+      "新增 用户详情页",
+      "新增 用户关闭查找手机时，提示MiPay银行卡和虚拟门卡将被删除",
+      "新增 设置可搜索云服务内容",
+      "优化 云服务首页重新设计，可用空间显示更加直观",
+      "优化 多设备之间数据同步及时性",
+      "优化 用户名过长时滚动显示",
+      "优化 同步及时性，提升同步效率",
+      "优化 空间管理页面大字体显示",
+      "修复 点击立即同步按钮没有反应的问题",
+      "修复 退出小米帐号时，提示云服务停止运行的问题",
+      "修复 更换帐号时页面显示不正确",
+      "修复 界面长文字显示问题",
+      "修复 同步按钮显示不正常的问题",
+      "修复 通过设置搜索进入查找手机，查找手机开启状态显示错误问题",
+      "修复 同步状态显示问题"
+    ],
+    "其他优化及调整": [
+      "优化 充电动画的消失效果",
+      "优化 第三方锁屏界面无法显示系统充电动画的问题",
+      "修复 新版充电动画在横屏下显示异常的问题",
+      "删除 Talkback模式下, 关闭屏幕会提示“快速充电”的多余语音"
+    ]
+  },
+  "logs_en": {
+    "System": [
+      "New: An option for smoothening notch curves on full screen devices",
+      "Optimization: Removed unnecessary sound notifications for DND mode"
+    ],
+    "Phone": [
+      "Fix: Ending calls took longer time than expected"
+    ],
+    "App lock": [
+      "Fix: Issues with the App lock password form on some devices"
+    ],
+    "Lockscreen, status bar, Notification shade": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+      "New: A shortcut for switchong between data SIM cards",
+      "Fix: Errors occurred after unlocking device in landscape mode",
+      "Fix: Screen didn^t always light up for notifications",
+      "Fix: Issues with overlapping in Dual Clock settings",
+      "Fix: Fingerprint shortcuts didn^t work in landscape orientation",
+      "Fix: Fingerprint unlock didn^t always work with the screen off",
+      "Fix: In-screen fingerprint scanner didn^t work when the screen was turned off in some cases",
+      "Fix: Displaying items on the turned off screen couldn^t be turned off on time in some cases"
+    ],
+    "Clock": [
+      "Fix: Timer button started flashing after being tapped",
+      "Fix: Clock force closed on some specific dates"
+    ],
+    "Settings": [
+      "New: Quick replies for messaging apps",
+      "Optimization: Sorting principles for Wi-Fi networks"
+    ],
+    "Security": [
+      "Fix: Dual apps disappeared after a reboot"
+    ],
+    "Mi Cloud": [
+      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
+      "Optimization: Improved sync across multiple devices",
+      "Optimization: Improved sync efficiency",
+      "Fix: The Sync button didn^t always respond",
+      "Fix: Mi Cloud services stopped working when the users signed out of their Mi Account",
+      "Fix: Find device status wasn^t displayed correctly when this feature was accessed through search in the Settings"
+    ]
+  }
+}

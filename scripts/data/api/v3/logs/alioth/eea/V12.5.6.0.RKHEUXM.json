@@ -1,0 +1,101 @@
+{
+  "logs_zh": {
+    "MIUI12.5 增强版": [
+      "全面流畅，更低功耗",
+      "【焦点计算】 依据场景的智能算力调度机制，提升全机型流畅度",
+      "【原子内存】 超精细内存管理机制，应用驻留全面提升",
+      "【液态存储】 灵敏且高效的文件存储机制，提升系统抗老化能力"
+    ],
+    "控制中心": [
+      "修复 静音与振动开关联动状态显示错误",
+      "修复 “扫一扫”和“迷你小窗”开关消失问题"
+    ],
+    "锁屏": [
+      "新增 指纹是否应用于锁屏开关的功能",
+      "优化 锁屏负一屏功能的内存占用",
+      "修复 使用超级壁纸，锁屏界面灭屏偶现闪黑的问题",
+      "修复 个别界面灭屏指纹解锁时出现壁纸闪现的问题",
+      "修复 在游戏页面时，指纹解锁有概率屏幕出现花屏的问题",
+      "修复 指纹解锁时，个别界面灭屏后快速指纹解锁出现动画不对问题",
+      "修复 在插入SIM卡后有概率出现指纹和人脸功能失效问题",
+      "修复 使用超级壁纸时，灭屏指纹解锁进入个别界面闪黑问题",
+      "修复 抬起亮屏功能失效的问题",
+      "修复 个别界面人脸或是指纹解锁时，解锁过程中锁屏信息消失慢的问题",
+      "修复 修复灭屏后立即进行指纹解锁有概率闪黑问题",
+      "修复 指纹解锁之后一直黑屏，只显示状态栏问题",
+      "修复 锁屏使用三方主题后，开启超级壁纸功能，锁屏时间信息不显示的问题",
+      "修复 使用WhatsApp打电话时触发误触逻辑导致灭屏的问题",
+      "修复 充电动画显示时有概率内存异常的问题",
+      "修复 进入密码输入页面，人脸与指纹同时检测解锁时有概率出现崩溃的问题",
+      "修复 挂断电话亮屏后锁屏信息全部消失的问题",
+      "修复 使用主题后开启超级壁纸，锁屏页面内容不显示的偶现问题"
+    ],
+    "状态栏、通知栏": [
+      "优化 来电的悬浮通知屏蔽逻辑",
+      "优化 组通知展开收起的动画",
+      "优化 闹钟提醒通知的展示",
+      "优化 通知中心与三方主题的适配",
+      "优化 通知消息与深色模式的适配",
+      "优化 长按控制中心，锁屏通知消失的动画",
+      "修复 透明背景下，悬浮通知显示重叠的问题",
+      "修复 通知滑动时的圆角展示异常的问题",
+      "修复 通知中心下拉失效的问题",
+      "修复 长按通知偶现权限弹窗重叠的异常",
+      "修复 应用锁导致通知大小背景不一致的异常",
+      "修复 一键清理动画掉帧的问题",
+      "修复 锁屏时无法下拉通知栏的问题",
+      "修复 未接来电悬浮通知偶现异常的问题",
+      "修复 未接来电悬浮权限开启失败的异常",
+      "修复 通知列表展开组通知，子通知背景模糊效果不更新问题",
+      "修复 分身空间导致的悬浮通知异常闪烁问题",
+      "修复 播放音乐时，通知栏偶现不显示媒体控制面板的异常",
+      "修复 悬浮通知圆角缺失的异常",
+      "修复 三方主题下收到悬浮通知时，偶现背景异常的问题",
+      "修复 抬起亮屏时偶现锁屏通知抖动的异常",
+      "修复 深色模式下，通知按钮偶现显示异常的问题",
+      "修复 使用三方主题时，横屏下拉通知栏无法全屏的问题"
+    ],
+    "设置": [
+      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄的问题",
+      "修复 部分应用的帐号无法同步到“帐号与同步”中的问题",
+      "修复 在“应用管理-默认打开链接”页面中选择“地图”选项时页面崩溃的问题"
+    ],
+    "手机管家": [
+      "设置应用中新增「安全」菜单"
+    ]
+  },
+  "logs_en": {
+    "MIUI12.5 Enhanced": [
+      "Swift performance. More life between the charges.",
+      "Focused algorithms: Our new algorithms will dynamically allocate system resources based on specific scenes, ensuring smooth experience on all models.",
+      "Atomized memory: Ultra-fine memory management mechanism will make RAM usage more efficient.",
+      "Liquid storage: New sensitive storage mechanisms will keep your system vibrant and responsive as time goes by."
+    ],
+    "Lock screen": [
+      "New: New fingerprint options",
+      "Optimization: App vault memory usage when device is locked",
+      "Fix: ^Raise to wake^ turned off unexpectedly in some cases",
+      "Fix: Issues with the Lock screen clock when third party themes and super wallpapers were used",
+      "Fix: Memory usage issues when charging animation was displayed",
+      "Fix: Using Face unlock and Fingerprint unlock simultaneously led to crashes in some cases",
+      "Fix: Lock screen notifications disappeared after an ended call",
+      "Fix: Lock screen items weren^t displayed when super wallpapers and themes were combined"
+    ],
+    "Status bar, Notification shade": [
+      "Optimization: Algorithms for displaying incoming call notifications",
+      "Optimization: Third party theme compatibility for Notification shade",
+      "Optimization: Dark mode adjustments for notifications",
+      "Fix: Floating notifications overlapped when the transparent background was used",
+      "Fix: Permission dialog elements overlapped after a notification was long pressed",
+      "Fix: Notifications weren^t displayed correctly when App lock was used",
+      "Fix: Cleaner animations weren^t displayed correctly",
+      "Fix: Notification shade couldn^t be opened in some cases",
+      "Fix: Notifications weren^t displayed correctly after missed calls",
+      "Fix: Issues with permissions after missed calls",
+      "Fix: Issues with displaying grouped notifications",
+      "Fix: Player controls weren^t always displayed in the Notification shade",
+      "Fix: Notifications weren^t always displayed correctly when ^Raise to wake^ was used",
+      "Fix: Buttons weren^t always displayed correctly on the notifications when Dark mode was on"
+    ]
+  }
+}
