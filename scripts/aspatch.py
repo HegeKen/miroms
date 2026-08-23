@@ -69,11 +69,11 @@ def get_security_patch_from_url(url: str, file_type: str = 'recovery', timeout: 
 
 def fill_security_patches():
 	"""批量填充安全补丁信息"""
-	# 查询需要处理的记录（recovery 不为空且 aspatch 为空的记录）
+	# 查询需要处理的记录（recovery 不为空且 aspatch 为空的记录，id 超过 46000）
 	sql = (
 		"SELECT id, device, code, version, recovery FROM roms "
-		"WHERE id >= %s AND recovery IS NOT NULL AND recovery != '' "
-		"AND (aspatch IS NULL OR aspatch = '') ORDER BY id DESC"
+		"WHERE id >= %s AND id >= 46000 AND recovery IS NOT NULL AND recovery != '' "
+		"AND aspatch IS NULL ORDER BY id DESC"
 	)
 	rows = common.DatabaseManager.execute(sql, params=(START_ID,), fetch_one=False)
 	if not rows:
