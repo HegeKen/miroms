@@ -98,7 +98,7 @@ class FileUtils:
 
 		@staticmethod
 		def get_base_path() -> str:
-				"""获取项目根目录的绝对路径（miroms.com 项目）"""
+				"""获取项目根目录的绝对路径（hub.miuier.com 项目）"""
 				return str(Path(__file__).resolve().parent.parent.parent.parent)
 
 		@classmethod
