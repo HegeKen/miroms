@@ -32,21 +32,23 @@ def main() -> None:
 	print(f"\n[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 开始导出数据...")
 	run([sys.executable, str(EXPORTER)], check=True)
 
-	# 2. 提交并推送 data submodule
-	msg = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-	print(f"\n[{msg}] 提交 data submodule...")
+	# 2. 检查 data submodule 是否有变更，无变更则结束（不提交、不部署）
 	status = subprocess.run(
 		['git', 'status', '--porcelain'],
 		cwd=DATA_DIR, capture_output=True, text=True
 	).stdout.strip()
 	if not status:
-		print("无文件变更，跳过提交与推送")
-	else:
-		run(['git', 'add', '-A'], cwd=DATA_DIR, check=True)
-		run(['git', 'commit', '-m', msg], cwd=DATA_DIR, check=True)
-		run(['git', 'push'], cwd=DATA_DIR, check=True)
+		print("data submodule 无文件变更，跳过提交、推送与站点更新")
+		return
 
-	# 3. 部署站点
+	# 3. 提交并推送 data submodule
+	msg = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+	print(f"\n[{msg}] 提交 data submodule...")
+	run(['git', 'add', '-A'], cwd=DATA_DIR, check=True)
+	run(['git', 'commit', '-m', msg], cwd=DATA_DIR, check=True)
+	run(['git', 'push'], cwd=DATA_DIR, check=True)
+
+	# 4. 部署站点
 	print(f"\n[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 开始部署站点...")
 	run([sys.executable, str(DEPLOY)], check=True)
 
