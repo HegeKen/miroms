@@ -16,7 +16,7 @@ from miroms.recorder import DataRecorder
 from miroms.network import NetworkClient
 from miroms.changelog import ChangelogManager
 from miroms.validator import DataValidator
-from miroms.exporters import exportV1, exportV2, exportV3
+from miroms.exporters import exportV1, exportV2, exportV3, export_series_index, load_series_data
 import logging
 
 logger = logging.getLogger(__name__)

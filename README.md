@@ -17,20 +17,28 @@
 │   ├── v2/devices/<codename>.json    # V2：HyperOS 设备数据
 │   ├── v3/devices/<codename>.json    # V3：全量设备数据（MIUI + HyperOS）
 │   ├── v3/logs/<device>/[region/]<version>.json   # V3：中英文更新日志
+│   ├── v3/roms/<OS>.json             # V3：按系统版本（OS1/OS2/OS3…）分组的 ROM 列表
 │   ├── v3/index.json                 # V3：设备索引（设备列表 + 统计）
+│   ├── v3/series.json                # V3：机型系列数据（series 表导出）
 │   └── v3/stats.json                 # V3：近期更新统计
 ├── db_structure/                     # MySQL 表结构
 │   ├── devices.sql                   #   设备表
 │   ├── roms.sql                      #   ROM 表
-│   └── branches.sql                  #   分支表
-├── scripts/                          # 数据同步 / 导出脚本（Python）
+│   ├── branches.sql                  #   分支表
+│   └── series.sql                    #   机型系列表
+├── scripts/                          # 数据同步 / 抓取 / 导出 / 部署脚本（Python）
 │   ├── exporter.py                   #   主导出脚本
 │   ├── sync_devices.py               #   同步设备列表
 │   ├── fix_missing_tag_mappings.py   #   修复缺失 tag 映射
 │   ├── common.py                     #   向后兼容入口（重新导出 miroms 包）
-│   ├── config.py                     #   数据库连接配置
+│   ├── config.py                     #   数据库连接配置 + 部署 hook
+│   ├── push.py                       #   一键导出 → 提交推送 → 部署
+│   ├── deploy.py                     #   触发 Cloudflare Pages 部署
+│   ├── *.py                          #   各类抓取脚本（见下文「抓取 / 部署脚本」）
 │   └── miroms/                       #   核心包（常量/工具/抓取/导出等）
+├── CNAME                             # Cloudflare Pages 域名（api.miuier.com）
 ├── fix_missing_tag_mappings.sql      # 生成的修复 SQL
+├── new_flags.txt / new_roms.txt      # 抓取过程的临时产物（可忽略）
 ├── LICENSE                           # Apache License 2.0
 └── README.md
 ```
@@ -170,7 +178,9 @@
 | 文件 | 说明 |
 | --- | --- |
 | `api/v3/logs/<device>/[region]/<version>.json` | 单个 ROM 的中英文更新日志，含区域时存放在 `region` 子目录，结构为 `{"logs_zh": {...}, "logs_en": {...}}` |
-| `api/v3/index.json` | 设备索引：每台设备的名称、品牌、代码、Android 版本、支持的系统版本、分支数（`branchCount`）与 ROM 数（`romCount`） |
+| `api/v3/roms/<OS>.json` | 按系统版本分组的 ROM 列表（如 `OS1.json` = HyperOS 1），每项含设备、版本、Android、区域、分支名、日期、包文件名，按需按版本号拼接成设备 ROM 表 |
+| `api/v3/index.json` | 设备索引：每台设备的名称、品牌、系列（`series`）、代码、Android 版本、支持的系统版本、分支数（`branchCount`）与 ROM 数（`romCount`） |
+| `api/v3/series.json` | 机型系列：系列列表（品牌、中英文名、`device_ids` 设备归属）与设备排序（`order`） |
 | `api/v3/stats.json` | 近期统计：`generatedAt` 生成时间、`recentDays` 统计天数、`recentRoms` 近期新增 ROM 数、`recent` 近期 ROM 明细列表 |
 
 ---
@@ -182,6 +192,7 @@
 - **`devices.sql`** — 设备表：设备代号（`device`）、内部标识（`devtag`）、设备代码（`code`）、ROM 标签（`tag`）、区域（`region`）、运营商（`carrier`）、品牌（`brands` / `full_brands`）、中英文名（`full_names` / `names` / `xiaomi` / `redmi` / `poco`）、图片（`image`）、发布日期（`launch_date`）
 - **`roms.sql`** — ROM 表：系统类型（`type`：MIUI / HyperOS）、大版本（`bigver`）、区域、标签、分支（`branch`：F=正式版 / X=开发版）、完整版本号（`version`）、Android 版本、发布日期（`beta_date` / `release_date` / `public_date`）、Recovery / Fastboot / 运营商定制包文件名（`recovery` / `fastboot` / `ctelecom` / `cmobile` / `cunicom` / `others`）、中英文更新日志（`logs_zh` / `logs_en`，JSON 格式）、安全补丁日期（`aspatch`）
 - **`branches.sql`** — 分支表：分支类型、中英文名称、标签（`tag`）、代码后缀（`code`）、版本代码（`vercode`）、运营商、区域、分区（`zone`）、可见性（`visibility`）、是否政企版（`ep`）
+- **`series.sql`** — 机型系列表：品牌（`brand`：xiaomi / redmi / poco）、中英文名称（`name_zh` / `name_en`）、设备归属（`device_ids`，JSON 数组）、排序（`sort_order`）
 
 ---
 
@@ -195,8 +206,26 @@
 | `sync_devices.py` | 从 `devices` / `roms` 表同步设备列表到 `miroms/data.py`（`fullDevices`、`currentStable`、`flags`） |
 | `fix_missing_tag_mappings.py` | 修复 `devices` 表中缺失的 device+tag 映射（V3 导出器按 tag 匹配分支，缺失会导致 ROM 丢失），输出 SQL 到 stdout 或 `--apply` 直接执行 |
 | `common.py` | 向后兼容入口，重新导出 `miroms` 包全部公共 API，并保留 `fullDevices`、`currentStable`、`flags` 等模块级常量 |
-| `config.py` | 数据库连接配置（host / port / user / password / database） |
+| `config.py` | 数据库连接配置（host / port / user / password / database）+ Cloudflare Pages 部署 hook（`deploy_url`） |
+| `push.py` | 一键全流程：运行 `exporter.py` 导出 → 在 `data` 子仓库提交并推送（commit message 为当前日期时间）→ 调用 `deploy.py` 触发站点部署 |
+| `deploy.py` | 仅触发部署：POST `config.deploy_url`（Cloudflare Pages deploy hook）并打印部署 ID |
 | `miroms/` | 核心包：`constants.py`（常量、SDK 版本、Android 代号、分支表）、`data.py`（设备列表）、`database.py`（数据库访问）、`network.py` / `crypto.py` / `firmware.py`（小米服务器抓取与解密）、`recorder.py`（数据录入）、`changelog.py`（更新日志）、`validator.py`（校验）、`exporters.py`（V1/V2/V3 导出器）、`utils.py`（工具函数） |
+
+### 抓取 / 部署脚本
+
+| 文件 | 说明 |
+| --- | --- |
+| `get_new_branch.py` | Fastboot + OTA 探测，发现新分支 / 新版本 |
+| `ota_former.py` | OTA 版本检测 |
+| `ota_full.py` | 全量 OTA 偏移探测 |
+| `xfu_full.py` | 本地 HTML 核查 |
+| `get_current_fastboot.py` | 抓取当前 Fastboot 包信息 |
+| `mgc_fastboot.py` | 小米社区 API 抓取 |
+| `fetch_changelog.py` | 抓取更新日志（changelog）与卡刷包 |
+| `aspatch.py` | 提取安全补丁（Android Security Patch）日期 |
+| `test.py` | 调试 / 验证脚本（非流水线步骤） |
+
+以上抓取脚本也可通过 VS Code Tasks（主仓库 `.vscode/tasks.json`，`Ctrl+Shift+B`）一键运行。
 
 ### 生成流程 / Pipeline
 
@@ -204,15 +233,15 @@
 小米更新服务器 (update.miui.com)
         │  network / crypto / firmware 抓取并解密
         ▼
-MySQL 数据库 (miroms: devices / roms / branches)
+MySQL 数据库 (miroms: devices / roms / branches / series)
         │  python3 scripts/sync_devices.py        → 更新 miroms/data.py 设备列表
         │  python3 scripts/fix_missing_tag_mappings.py --apply（必要时）
-        │  python3 scripts/exporter.py            → 导出 api/v1|v2|v3 + index.json
+        │  python3 scripts/exporter.py            → 导出 api/v1|v2|v3 + index.json / series.json
         ▼
 JSON 数据（api/）
-        │  git commit & push
+        │  python3 scripts/push.py（导出 → git commit & push → 触发部署）
         ▼
-Cloudflare Pages（deploy hook）自动部署 → hub.miuier.com
+Cloudflare Pages（deploy hook）自动部署 → api.miuier.com（CNAME，见根目录 CNAME 文件）
 ```
 
 ---
@@ -263,11 +292,14 @@ Cloudflare Pages（deploy hook）自动部署 → hub.miuier.com
 数据文件为纯 JSON，可直接通过 GitHub Raw、CDN 或打包进应用使用：
 
 ```bash
-# 直接读取设备数据
+# 直接读取设备数据（GitHub Raw）
 curl -fsSL https://raw.githubusercontent.com/HegeKen/miroms/master/api/v3/devices/agate.json
+
+# 或通过 Cloudflare Pages 站点读取（CNAME: api.miuier.com）
+curl -fsSL https://api.miuier.com/v3/devices/agate.json
 ```
 
-前端站点、管理后台与移动端（Android / iOS / 小程序）均为本仓库数据的消费者；各消费者代码见主仓库 [HegeKen/hub.miuier.com](https://github.com/HegeKen/hub.miuier.com) 的 `app/` 目录。
+前端站点（`appBaseUrl` 为 `https://api.miuier.com/api`）、管理后台与移动端（Android / iOS / 小程序）均为本仓库数据的消费者；各消费者代码见主仓库 [HegeKen/hub.miuier.com](https://github.com/HegeKen/hub.miuier.com) 的 `app/` 目录。
 
 ---
 

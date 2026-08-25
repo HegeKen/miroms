@@ -1,283 +1,35 @@
 [
   {
-    "device": "agate",
+    "device": "mione_plus",
     "name": {
-      "zh": "小米 11T",
-      "en": "Xiaomi 11T"
+      "zh": "小米手机1/1S",
+      "en": "MI 1/1S"
     },
     "brand": [
       "Xiaomi"
     ],
-    "code": "KW",
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "MA",
     "android": [
-      "14.0",
-      "13.0",
-      "12.0",
-      "11.0"
+      "4.1",
+      "4.0",
+      "2.3"
     ],
     "supports": [
-      "OS1",
-      "V14",
-      "V13",
-      "V12.5",
-      "V12"
+      "V6",
+      "V5",
+      "V4",
+      "V3",
+      "Stock"
     ],
-    "branchCount": 16,
-    "romCount": 275
-  },
-  {
-    "device": "air",
-    "name": {
-      "zh": "Redmi 13C / 13R 5G / POCO M6 5G",
-      "en": "Redmi 13C / 13R 5G / POCO M6 5G"
-    },
-    "brand": [
-      "Redmi",
-      "POCO"
-    ],
-    "code": "GQ",
-    "android": [
-      "15.0",
-      "14.0",
-      "13.0"
-    ],
-    "supports": [
-      "OS2",
-      "OS1",
-      "V14"
-    ],
-    "branchCount": 9,
-    "romCount": 136
-  },
-  {
-    "device": "alioth",
-    "name": {
-      "zh": "小米 11X / Redmi K40 / POCO F3",
-      "en": "Mi 11X / Redmi K40 / POCO F3"
-    },
-    "brand": [
-      "Xiaomi",
-      "Redmi",
-      "POCO"
-    ],
-    "code": "KH",
-    "android": [
-      "13.0",
-      "12.0",
-      "11.0"
-    ],
-    "supports": [
-      "OS1",
-      "V14",
-      "V13",
-      "V12.5",
-      "V12"
-    ],
-    "branchCount": 12,
-    "romCount": 508
-  },
-  {
-    "device": "amethyst",
-    "name": {
-      "zh": "Redmi Note 14 Pro+",
-      "en": "Redmi Note 14 Pro+"
-    },
-    "brand": [
-      "Redmi"
-    ],
-    "code": "OP",
-    "android": [
-      "16.0",
-      "15.0",
-      "14.0"
-    ],
-    "supports": [
-      "OS3",
-      "OS2",
-      "OS1"
-    ],
-    "branchCount": 14,
-    "romCount": 158
-  },
-  {
-    "device": "andromeda",
-    "name": {
-      "zh": "小米 MIX 3 5G",
-      "en": "Mi MIX 3 5G"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "EM",
-    "android": [
-      "9.0"
-    ],
-    "supports": [
-      "V12",
-      "V10"
-    ],
-    "branchCount": 4,
-    "romCount": 27
-  },
-  {
-    "device": "angelica",
-    "name": {
-      "zh": "Redmi 9C / POCO C3",
-      "en": "Redmi 9C / POCO C3"
-    },
-    "brand": [
-      "Redmi",
-      "POCO"
-    ],
-    "code": "CR",
-    "android": [
-      "11.0",
-      "10.0"
-    ],
-    "supports": [
-      "V12.5",
-      "V12"
-    ],
-    "branchCount": 9,
-    "romCount": 102
-  },
-  {
-    "device": "angelicain",
-    "name": {
-      "zh": "POCO C31",
-      "en": "POCO C31"
-    },
-    "brand": [
-      "POCO"
-    ],
-    "code": "CR",
-    "android": [
-      "11.0",
-      "10.0"
-    ],
-    "supports": [
-      "V12.5",
-      "V12"
-    ],
-    "branchCount": 2,
-    "romCount": 24
-  },
-  {
-    "device": "angelican",
-    "name": {
-      "zh": "Redmi 9C NFC",
-      "en": "Redmi 9C NFC"
-    },
-    "brand": [
-      "Redmi"
-    ],
-    "code": "CS",
-    "android": [
-      "11.0",
-      "10.0"
-    ],
-    "supports": [
-      "V12.5",
-      "V12"
-    ],
-    "branchCount": 4,
-    "romCount": 45
-  },
-  {
-    "device": "annibale",
-    "name": {
-      "zh": "REDMI K90",
-      "en": "REDMI K90"
-    },
-    "brand": [
-      "REDMI",
-      "POCO"
-    ],
-    "code": "PK",
-    "android": [
-      "17.0",
-      "16.0"
-    ],
-    "supports": [
-      "OS4",
-      "OS3"
-    ],
-    "branchCount": 10,
-    "romCount": 48
-  },
-  {
-    "device": "apollo",
-    "name": {
-      "zh": "小米 10T / Pro / Redmi K30S 至尊纪念版",
-      "en": "Mi 10T / Pro / Redmi K30S Ultra"
-    },
-    "brand": [
-      "Xiaomi",
-      "Redmi"
-    ],
-    "code": "JD",
-    "android": [
-      "12.0",
-      "11.0",
-      "10.0"
-    ],
-    "supports": [
-      "V14",
-      "V13",
-      "V12.5",
-      "V12"
-    ],
-    "branchCount": 19,
-    "romCount": 546
-  },
-  {
-    "device": "aqua",
-    "name": {
-      "zh": "小米 4S",
-      "en": "MI 4S"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "AJ",
-    "android": [
-      "7.0",
-      "5.1"
-    ],
-    "supports": [
-      "V9",
-      "V8",
-      "V7",
-      "V10"
-    ],
-    "branchCount": 2,
-    "romCount": 119
-  },
-  {
-    "device": "ares",
-    "name": {
-      "zh": "Redmi K40 游戏增强版 / POCO F3 GT",
-      "en": "Redmi K40 Gaming / POCO F3 GT"
-    },
-    "brand": [
-      "Redmi",
-      "POCO"
-    ],
-    "code": "KJ",
-    "android": [
-      "13.0",
-      "12.0",
-      "11.0"
-    ],
-    "supports": [
-      "OS1",
-      "V14",
-      "V13",
-      "V12.5",
-      "V12"
-    ],
-    "branchCount": 5,
-    "romCount": 322
+    "branchCount": 7,
+    "romCount": 223
   },
   {
     "device": "aries",
@@ -287,6 +39,13 @@
     },
     "brand": [
       "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
     ],
     "code": "XA",
     "android": [
@@ -307,43 +66,56 @@
     "romCount": 363
   },
   {
-    "device": "aristotle",
+    "device": "taurus",
     "name": {
-      "zh": "小米 13T",
-      "en": "Xiaomi 13T"
+      "zh": "小米 2A",
+      "en": "Mi 2A"
     },
     "brand": [
       "Xiaomi"
     ],
-    "code": "MF",
-    "android": [
-      "16.0",
-      "15.0",
-      "14.0",
-      "13.0"
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
     ],
-    "supports": [
-      "OS3",
-      "OS2",
-      "OS1",
-      "V14"
-    ],
-    "branchCount": 10,
-    "romCount": 176
-  },
-  {
-    "device": "armani",
-    "name": {
-      "zh": "红米 1S",
-      "en": "Redmi 1S"
-    },
-    "brand": [
-      "Redmi"
-    ],
-    "code": "HC",
+    "code": "LB",
     "android": [
       "4.4",
-      "4.3"
+      "4.1"
+    ],
+    "supports": [
+      "V7",
+      "V6",
+      "V5",
+      "V4",
+      "Stock"
+    ],
+    "branchCount": 4,
+    "romCount": 174
+  },
+  {
+    "device": "pisces",
+    "name": {
+      "zh": "小米3 移动版",
+      "en": "MI 3 TD"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "XC",
+    "android": [
+      "4.4",
+      "4.2"
     ],
     "supports": [
       "V9",
@@ -352,351 +124,8 @@
       "V6",
       "V5"
     ],
-    "branchCount": 4,
-    "romCount": 212
-  },
-  {
-    "device": "athens",
-    "name": {
-      "zh": "REDMI K100 Pro",
-      "en": "REDMI K100 Pro"
-    },
-    "brand": [
-      "REDMI"
-    ],
-    "code": "PI",
-    "android": [
-      "16.0"
-    ],
-    "supports": [
-      "OS3"
-    ],
-    "branchCount": 2,
-    "romCount": 3
-  },
-  {
-    "device": "atom",
-    "name": {
-      "zh": "Redmi 10X 5G",
-      "en": "Redmi 10X 5G"
-    },
-    "brand": [
-      "Redmi"
-    ],
-    "code": "JH",
-    "android": [
-      "12.0",
-      "11.0",
-      "10.0"
-    ],
-    "supports": [
-      "V13",
-      "V12.5",
-      "V12",
-      "V11"
-    ],
-    "branchCount": 2,
-    "romCount": 350
-  },
-  {
-    "device": "aurora",
-    "name": {
-      "zh": "小米 14 Ultra / Ultra Ti",
-      "en": "Xiaomi 14 Ultra"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "NA",
-    "android": [
-      "16.0",
-      "15.0",
-      "14.0"
-    ],
-    "supports": [
-      "OS3",
-      "OS2",
-      "OS1"
-    ],
-    "branchCount": 11,
-    "romCount": 212
-  },
-  {
-    "device": "babylon",
-    "name": {
-      "zh": "小米 MIX Fold 3",
-      "en": "Xiaomi MIX Fold 3"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "MV",
-    "android": [
-      "16.0",
-      "15.0",
-      "14.0",
-      "13.0"
-    ],
-    "supports": [
-      "OS3",
-      "OS2",
-      "OS1",
-      "V14"
-    ],
-    "branchCount": 4,
-    "romCount": 77
-  },
-  {
-    "device": "begonia",
-    "name": {
-      "zh": "Redmi Note 8 Pro",
-      "en": "Redmi Note 8 Pro"
-    },
-    "brand": [
-      "Redmi"
-    ],
-    "code": "GG",
-    "android": [
-      "11.0",
-      "10.0",
-      "9.0"
-    ],
-    "supports": [
-      "V12.5",
-      "V12",
-      "V11",
-      "V10"
-    ],
-    "branchCount": 10,
-    "romCount": 416
-  },
-  {
-    "device": "beryl",
-    "name": {
-      "zh": "Redmi Note 14 5G / POCO M7 Pro 5G",
-      "en": "Redmi Note 14 5G / POCO M7 Pro 5G"
-    },
-    "brand": [
-      "Redmi",
-      "POCO"
-    ],
-    "code": "OQ",
-    "android": [
-      "16.0",
-      "15.0",
-      "14.0"
-    ],
-    "supports": [
-      "OS3",
-      "OS2",
-      "OS1"
-    ],
-    "branchCount": 14,
-    "romCount": 183
-  },
-  {
-    "device": "beryllium",
-    "name": {
-      "zh": "POCO F1",
-      "en": "POCO F1"
-    },
-    "brand": [
-      "POCO"
-    ],
-    "code": "EJ",
-    "android": [
-      "10.0",
-      "9.0",
-      "8.1"
-    ],
-    "supports": [
-      "V9",
-      "V12",
-      "V11",
-      "V10"
-    ],
     "branchCount": 3,
-    "romCount": 80
-  },
-  {
-    "device": "biloba",
-    "name": {
-      "zh": "Redmi Note 8 (2021)",
-      "en": "Redmi Note 8 (2021)"
-    },
-    "brand": [
-      "Redmi"
-    ],
-    "code": "CU",
-    "android": [
-      "13.0",
-      "12.0",
-      "11.0"
-    ],
-    "supports": [
-      "V14",
-      "V13",
-      "V12.5"
-    ],
-    "branchCount": 3,
-    "romCount": 47
-  },
-  {
-    "device": "bixi",
-    "name": {
-      "zh": "小米 MIX Flip 2",
-      "en": "Xiaomi MIX Flip 2"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "OH",
-    "android": [
-      "16.0",
-      "15.0"
-    ],
-    "supports": [
-      "OS3",
-      "OS2"
-    ],
-    "branchCount": 3,
-    "romCount": 30
-  },
-  {
-    "device": "blue",
-    "name": {
-      "zh": "POCO C61 / Redmi A3",
-      "en": "POCO C61 / Redmi A3"
-    },
-    "brand": [
-      "Redmi",
-      "POCO"
-    ],
-    "code": "GR",
-    "android": [
-      "16.0",
-      "15.0",
-      "14.0"
-    ],
-    "supports": [
-      "V816"
-    ],
-    "branchCount": 8,
-    "romCount": 103
-  },
-  {
-    "device": "bomb",
-    "name": {
-      "zh": "Redmi 10X Pro",
-      "en": "Redmi 10X Pro"
-    },
-    "brand": [
-      "Redmi"
-    ],
-    "code": "JL",
-    "android": [
-      "12.0",
-      "11.0",
-      "10.0"
-    ],
-    "supports": [
-      "V13",
-      "V12.5",
-      "V12",
-      "V11"
-    ],
-    "branchCount": 2,
-    "romCount": 346
-  },
-  {
-    "device": "breeze",
-    "name": {
-      "zh": "Redmi 13 5G / Redmi Note 13R 5G / POCO M6 Plus 5G",
-      "en": "Redmi 13 5G / Redmi Note 13R 5G / POCO M6 Plus 5G"
-    },
-    "brand": [
-      "Redmi",
-      "POCO"
-    ],
-    "code": "NU",
-    "android": [
-      "16.0",
-      "15.0",
-      "14.0"
-    ],
-    "supports": [
-      "OS3",
-      "OS2",
-      "OS1"
-    ],
-    "branchCount": 4,
-    "romCount": 52
-  },
-  {
-    "device": "byron",
-    "name": {
-      "zh": "小米 17 Max",
-      "en": "Xiaomi 17 Max"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "AF",
-    "android": [
-      "16.0"
-    ],
-    "supports": [
-      "OS3"
-    ],
-    "branchCount": 3,
-    "romCount": 6
-  },
-  {
-    "device": "cactus",
-    "name": {
-      "zh": "红米 6A",
-      "en": "Redmi 6A"
-    },
-    "brand": [
-      "Redmi"
-    ],
-    "code": "CB",
-    "android": [
-      "9.0",
-      "8.1"
-    ],
-    "supports": [
-      "V9",
-      "V12",
-      "V11",
-      "V10"
-    ],
-    "branchCount": 5,
-    "romCount": 153
-  },
-  {
-    "device": "camellia",
-    "name": {
-      "zh": "Redmi Note 10 10T / 10 5G / 11 SE / POCO M3 Pro",
-      "en": "Redmi Note 10 10T / 10 5G / 11 SE / POCO M3 Pro"
-    },
-    "brand": [
-      "Redmi"
-    ],
-    "code": "KS",
-    "android": [
-      "13.0",
-      "12.0",
-      "11.0"
-    ],
-    "supports": [
-      "V14",
-      "V13",
-      "V12.5",
-      "V12"
-    ],
-    "branchCount": 23,
-    "romCount": 374
+    "romCount": 211
   },
   {
     "device": "cancro",
@@ -706,6 +135,13 @@
     },
     "brand": [
       "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
     ],
     "code": "XG",
     "android": [
@@ -733,6 +169,13 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
     "code": "XG",
     "android": [
       "6.0",
@@ -749,6 +192,2663 @@
     "romCount": 192
   },
   {
+    "device": "libra",
+    "name": {
+      "zh": "小米 4C",
+      "en": "Mi 4C"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "XK",
+    "android": [
+      "7.0",
+      "5.1"
+    ],
+    "supports": [
+      "V9",
+      "V8",
+      "V7",
+      "V6",
+      "V10"
+    ],
+    "branchCount": 2,
+    "romCount": 161
+  },
+  {
+    "device": "aqua",
+    "name": {
+      "zh": "小米 4S",
+      "en": "MI 4S"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "AJ",
+    "android": [
+      "7.0",
+      "5.1"
+    ],
+    "supports": [
+      "V9",
+      "V8",
+      "V7",
+      "V10"
+    ],
+    "branchCount": 2,
+    "romCount": 119
+  },
+  {
+    "device": "ferrari",
+    "name": {
+      "zh": "小米 4i",
+      "en": "MI 4i"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "XI",
+    "android": [
+      "5.0"
+    ],
+    "supports": [
+      "V9",
+      "V8",
+      "V7",
+      "V6"
+    ],
+    "branchCount": 4,
+    "romCount": 128
+  },
+  {
+    "device": "gemini",
+    "name": {
+      "zh": "小米 5",
+      "en": "MI 5"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "AA",
+    "android": [
+      "8.0",
+      "7.0",
+      "6.0"
+    ],
+    "supports": [
+      "V9",
+      "V8",
+      "V7",
+      "V10"
+    ],
+    "branchCount": 5,
+    "romCount": 255
+  },
+  {
+    "device": "capricorn",
+    "name": {
+      "zh": "小米 5s",
+      "en": "Mi 5s"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "AG",
+    "android": [
+      "8.0",
+      "7.0",
+      "6.0"
+    ],
+    "supports": [
+      "V9",
+      "V8",
+      "V11",
+      "V10"
+    ],
+    "branchCount": 4,
+    "romCount": 244
+  },
+  {
+    "device": "natrium",
+    "name": {
+      "zh": "小米 5s Plus",
+      "en": "Mi 5s Plus"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "BG",
+    "android": [
+      "8.0",
+      "7.0",
+      "6.0"
+    ],
+    "supports": [
+      "V9",
+      "V8",
+      "V11",
+      "V10"
+    ],
+    "branchCount": 4,
+    "romCount": 248
+  },
+  {
+    "device": "meri",
+    "name": {
+      "zh": "小米 5C",
+      "en": "Mi 5C"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "CJ",
+    "android": [
+      "7.1",
+      "6.0"
+    ],
+    "supports": [
+      "V9",
+      "V8",
+      "V11",
+      "V10"
+    ],
+    "branchCount": 2,
+    "romCount": 124
+  },
+  {
+    "device": "tiffany",
+    "name": {
+      "zh": "小米 5X",
+      "en": "Mi 5X"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "DB",
+    "android": [
+      "8.1",
+      "7.1"
+    ],
+    "supports": [
+      "V9",
+      "V8",
+      "V11",
+      "V10"
+    ],
+    "branchCount": 2,
+    "romCount": 106
+  },
+  {
+    "device": "sagit",
+    "name": {
+      "zh": "小米 6",
+      "en": "Mi 6"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "CA",
+    "android": [
+      "9.0",
+      "8.0",
+      "7.1"
+    ],
+    "supports": [
+      "V9",
+      "V8",
+      "V12",
+      "V11",
+      "V10"
+    ],
+    "branchCount": 5,
+    "romCount": 418
+  },
+  {
+    "device": "wayne",
+    "name": {
+      "zh": "小米 6X",
+      "en": "Mi 6X"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "DC",
+    "android": [
+      "9.0",
+      "8.1"
+    ],
+    "supports": [
+      "V9",
+      "V12",
+      "V11",
+      "V10"
+    ],
+    "branchCount": 2,
+    "romCount": 242
+  },
+  {
+    "device": "dipper",
+    "name": {
+      "zh": "小米 8",
+      "en": "Mi 8"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "EA",
+    "android": [
+      "10.0",
+      "9.0",
+      "8.1"
+    ],
+    "supports": [
+      "V9",
+      "V12.5",
+      "V12",
+      "V11",
+      "V10"
+    ],
+    "branchCount": 5,
+    "romCount": 457
+  },
+  {
+    "device": "equuleus",
+    "name": {
+      "zh": "小米 8 屏幕指纹版",
+      "en": "Mi 8 Pro"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "EC",
+    "android": [
+      "11.0",
+      "10.0",
+      "9.0",
+      "8.1"
+    ],
+    "supports": [
+      "V9",
+      "V12.5",
+      "V12",
+      "V11",
+      "V10"
+    ],
+    "branchCount": 5,
+    "romCount": 308
+  },
+  {
+    "device": "ursa",
+    "name": {
+      "zh": "小米 8 透明探索版",
+      "en": "Mi 8 Explorer"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "EH",
+    "android": [
+      "10.0",
+      "9.0",
+      "8.1"
+    ],
+    "supports": [
+      "V9",
+      "V12.5",
+      "V12",
+      "V11",
+      "V10"
+    ],
+    "branchCount": 2,
+    "romCount": 131
+  },
+  {
+    "device": "platina",
+    "name": {
+      "zh": "小米 8 青春版",
+      "en": "Mi 8 Lite"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "DT",
+    "android": [
+      "10.0",
+      "9.0",
+      "8.1"
+    ],
+    "supports": [
+      "V9",
+      "V12.5",
+      "V12",
+      "V11",
+      "V10"
+    ],
+    "branchCount": 5,
+    "romCount": 180
+  },
+  {
+    "device": "sirius",
+    "name": {
+      "zh": "小米 8 SE",
+      "en": "Mi 8 SE"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "EB",
+    "android": [
+      "10.0",
+      "9.0",
+      "8.1"
+    ],
+    "supports": [
+      "V9",
+      "V12.5",
+      "V12",
+      "V11",
+      "V10"
+    ],
+    "branchCount": 2,
+    "romCount": 280
+  },
+  {
+    "device": "cepheus",
+    "name": {
+      "zh": "小米 9",
+      "en": "Mi 9"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "FA",
+    "android": [
+      "11.0",
+      "10.0",
+      "9.0"
+    ],
+    "supports": [
+      "V12.5",
+      "V12",
+      "V11",
+      "V10"
+    ],
+    "branchCount": 11,
+    "romCount": 561
+  },
+  {
+    "device": "crux",
+    "name": {
+      "zh": "小米 9 Pro 5G",
+      "en": "Mi 9 Pro 5G"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "FX",
+    "android": [
+      "11.0",
+      "10.0",
+      "9.0"
+    ],
+    "supports": [
+      "V13",
+      "V12.5",
+      "V12",
+      "V11",
+      "V10"
+    ],
+    "branchCount": 2,
+    "romCount": 342
+  },
+  {
+    "device": "davinci",
+    "name": {
+      "zh": "小米 9T / Redmi K20",
+      "en": "Mi 9T / Redmi K20"
+    },
+    "brand": [
+      "Xiaomi",
+      "Redmi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "FJ",
+    "android": [
+      "11.0",
+      "10.0",
+      "9.0"
+    ],
+    "supports": [
+      "V12.5",
+      "V12",
+      "V11",
+      "V10"
+    ],
+    "branchCount": 7,
+    "romCount": 409
+  },
+  {
+    "device": "umi",
+    "name": {
+      "zh": "小米 10",
+      "en": "Mi 10"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "JB",
+    "android": [
+      "13.0",
+      "12.0",
+      "11.0",
+      "10.0"
+    ],
+    "supports": [
+      "OS1",
+      "V14",
+      "V13",
+      "V12.5",
+      "V12",
+      "V11"
+    ],
+    "branchCount": 15,
+    "romCount": 572
+  },
+  {
+    "device": "vangogh",
+    "name": {
+      "zh": "小米 10 青春版",
+      "en": "Mi 10 Lite Zoom"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "JV",
+    "android": [
+      "12.0",
+      "11.0",
+      "10.0"
+    ],
+    "supports": [
+      "V13",
+      "V12.5",
+      "V12",
+      "V11"
+    ],
+    "branchCount": 2,
+    "romCount": 322
+  },
+  {
+    "device": "thyme",
+    "name": {
+      "zh": "小米 10S",
+      "en": "Mi 10S"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "GA",
+    "android": [
+      "13.0",
+      "12.0",
+      "11.0"
+    ],
+    "supports": [
+      "OS1",
+      "V14",
+      "V13",
+      "V12.5",
+      "V12"
+    ],
+    "branchCount": 3,
+    "romCount": 350
+  },
+  {
+    "device": "cmi",
+    "name": {
+      "zh": "小米 10 Pro",
+      "en": "Mi 10 Pro"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "JA",
+    "android": [
+      "13.0",
+      "12.0",
+      "11.0",
+      "10.0"
+    ],
+    "supports": [
+      "OS1",
+      "V14",
+      "V13",
+      "V12.5",
+      "V12",
+      "V11"
+    ],
+    "branchCount": 4,
+    "romCount": 450
+  },
+  {
+    "device": "cas",
+    "name": {
+      "zh": "小米 10 至尊纪念版",
+      "en": "Mi 10 Ultra"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "JJ",
+    "android": [
+      "13.0",
+      "12.0",
+      "11.0",
+      "10.0"
+    ],
+    "supports": [
+      "OS1",
+      "V14",
+      "V13",
+      "V12.5",
+      "V12"
+    ],
+    "branchCount": 2,
+    "romCount": 412
+  },
+  {
+    "device": "monet",
+    "name": {
+      "zh": "小米 10 Lite",
+      "en": "Mi 10 Lite"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "JI",
+    "android": [
+      "12.0",
+      "11.0",
+      "10.0"
+    ],
+    "supports": [
+      "V13",
+      "V12.5",
+      "V12",
+      "V11"
+    ],
+    "branchCount": 13,
+    "romCount": 69
+  },
+  {
+    "device": "apollo",
+    "name": {
+      "zh": "小米 10T / Pro / Redmi K30S 至尊纪念版",
+      "en": "Mi 10T / Pro / Redmi K30S Ultra"
+    },
+    "brand": [
+      "Xiaomi",
+      "Redmi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "JD",
+    "android": [
+      "12.0",
+      "11.0",
+      "10.0"
+    ],
+    "supports": [
+      "V14",
+      "V13",
+      "V12.5",
+      "V12"
+    ],
+    "branchCount": 19,
+    "romCount": 546
+  },
+  {
+    "device": "gauguin",
+    "name": {
+      "zh": "小米 10T Lite / 10i / Redmi Note 9 Pro 5G",
+      "en": "Mi 10T Lite / 10i / Redmi Note 9 Pro 5G"
+    },
+    "brand": [
+      "Xiaomi",
+      "Redmi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "JS",
+    "android": [
+      "12.0",
+      "11.0",
+      "10.0"
+    ],
+    "supports": [
+      "V14",
+      "V13",
+      "V12.5",
+      "V12"
+    ],
+    "branchCount": 14,
+    "romCount": 440
+  },
+  {
+    "device": "venus",
+    "name": {
+      "zh": "小米 11",
+      "en": "Mi 11"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "KB",
+    "android": [
+      "14.0",
+      "13.0",
+      "12.0",
+      "11.0"
+    ],
+    "supports": [
+      "OS2",
+      "OS1",
+      "V14",
+      "V13",
+      "V12.5",
+      "V12"
+    ],
+    "branchCount": 15,
+    "romCount": 641
+  },
+  {
+    "device": "star",
+    "name": {
+      "zh": "小米 11 Pro/Ultra",
+      "en": "Mi 11 Pro/Ultra"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "KA",
+    "android": [
+      "14.0",
+      "13.0",
+      "12.0",
+      "11.0"
+    ],
+    "supports": [
+      "OS2",
+      "OS1",
+      "V14",
+      "V13",
+      "V12.5",
+      "V12"
+    ],
+    "branchCount": 10,
+    "romCount": 516
+  },
+  {
+    "device": "renoir",
+    "name": {
+      "zh": "小米 11 青春版",
+      "en": "Mi 11 Lite 5G"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "KI",
+    "android": [
+      "13.0",
+      "12.0",
+      "11.0"
+    ],
+    "supports": [
+      "V14",
+      "V13",
+      "V12.5",
+      "V12"
+    ],
+    "branchCount": 18,
+    "romCount": 434
+  },
+  {
+    "device": "lisa",
+    "name": {
+      "zh": "小米 11 青春活力版",
+      "en": "Mi 11 LE/Xiaomi 11 Lite 5G NE"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "KO",
+    "android": [
+      "14.0",
+      "13.0",
+      "12.0",
+      "11.0"
+    ],
+    "supports": [
+      "OS2",
+      "OS1",
+      "V14",
+      "V13",
+      "V12.5"
+    ],
+    "branchCount": 20,
+    "romCount": 485
+  },
+  {
+    "device": "agate",
+    "name": {
+      "zh": "小米 11T",
+      "en": "Xiaomi 11T"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "KW",
+    "android": [
+      "14.0",
+      "13.0",
+      "12.0",
+      "11.0"
+    ],
+    "supports": [
+      "OS1",
+      "V14",
+      "V13",
+      "V12.5",
+      "V12"
+    ],
+    "branchCount": 16,
+    "romCount": 275
+  },
+  {
+    "device": "vili",
+    "name": {
+      "zh": "小米 11T Pro",
+      "en": "Xiaomi 11T Pro"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "KD",
+    "android": [
+      "14.0",
+      "13.0",
+      "12.0",
+      "11.0"
+    ],
+    "supports": [
+      "OS1",
+      "V14",
+      "V13",
+      "V12.5",
+      "V12"
+    ],
+    "branchCount": 16,
+    "romCount": 344
+  },
+  {
+    "device": "alioth",
+    "name": {
+      "zh": "小米 11X / Redmi K40 / POCO F3",
+      "en": "Mi 11X / Redmi K40 / POCO F3"
+    },
+    "brand": [
+      "Xiaomi",
+      "Redmi",
+      "POCO"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "KH",
+    "android": [
+      "13.0",
+      "12.0",
+      "11.0"
+    ],
+    "supports": [
+      "OS1",
+      "V14",
+      "V13",
+      "V12.5",
+      "V12"
+    ],
+    "branchCount": 12,
+    "romCount": 508
+  },
+  {
+    "device": "courbet",
+    "name": {
+      "zh": "小米 11 Lite 4G",
+      "en": "Mi 11 Lite 4G"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "KQ",
+    "android": [
+      "13.0",
+      "12.0",
+      "11.0"
+    ],
+    "supports": [
+      "V14",
+      "V13",
+      "V12.5",
+      "V12"
+    ],
+    "branchCount": 9,
+    "romCount": 111
+  },
+  {
+    "device": "pissarro",
+    "name": {
+      "zh": "小米 11i / Hypercharge / Redmi Note 11 Pro / Pro+ 5G",
+      "en": "Xiaomi 11i / Hypercharge / Redmi Note 11 Pro / Pro+ 5G"
+    },
+    "brand": [
+      "Xiaomi",
+      "Redmi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "KT",
+    "android": [
+      "13.0",
+      "12.0",
+      "11.0"
+    ],
+    "supports": [
+      "OS1",
+      "V14",
+      "V13",
+      "V12.5"
+    ],
+    "branchCount": 11,
+    "romCount": 345
+  },
+  {
+    "device": "pissarroin",
+    "name": {
+      "zh": "小米 11i 5G 印度版",
+      "en": "Xiaomi 11i 5G India"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "KT",
+    "android": [
+      "13.0",
+      "12.0",
+      "11.0"
+    ],
+    "supports": [
+      "V14",
+      "V13",
+      "V12.5"
+    ],
+    "branchCount": 2,
+    "romCount": 18
+  },
+  {
+    "device": "haydn",
+    "name": {
+      "zh": "小米 11i / Redmi K40 Pro/Pro+",
+      "en": "Mi 11i / Redmi K40 Pro/Pro+"
+    },
+    "brand": [
+      "Xiaomi",
+      "Redmi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "KK",
+    "android": [
+      "14.0",
+      "13.0",
+      "12.0",
+      "11.0"
+    ],
+    "supports": [
+      "OS1",
+      "V14",
+      "V13",
+      "V12.5",
+      "V12"
+    ],
+    "branchCount": 13,
+    "romCount": 526
+  },
+  {
+    "device": "cupid",
+    "name": {
+      "zh": "小米 12",
+      "en": "Xiaomi 12"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "LC",
+    "android": [
+      "15.0",
+      "14.0",
+      "13.0",
+      "12.0"
+    ],
+    "supports": [
+      "OS3",
+      "OS2",
+      "OS1",
+      "V14",
+      "V13"
+    ],
+    "branchCount": 11,
+    "romCount": 382
+  },
+  {
+    "device": "zeus",
+    "name": {
+      "zh": "小米 12 Pro",
+      "en": "Xiaomi 12 Pro"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "LB",
+    "android": [
+      "15.0",
+      "14.0",
+      "13.0",
+      "12.0"
+    ],
+    "supports": [
+      "OS3",
+      "OS2",
+      "OS1",
+      "V14",
+      "V13"
+    ],
+    "branchCount": 12,
+    "romCount": 422
+  },
+  {
+    "device": "mayfly",
+    "name": {
+      "zh": "小米 12S",
+      "en": "Xiaomi 12S"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "LT",
+    "android": [
+      "15.0",
+      "14.0",
+      "13.0",
+      "12.0"
+    ],
+    "supports": [
+      "OS3",
+      "OS2",
+      "OS1",
+      "V14",
+      "V13"
+    ],
+    "branchCount": 3,
+    "romCount": 127
+  },
+  {
+    "device": "unicorn",
+    "name": {
+      "zh": "小米 12S Pro",
+      "en": "Xiaomi 12S Pro"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "LE",
+    "android": [
+      "15.0",
+      "14.0",
+      "13.0",
+      "12.0"
+    ],
+    "supports": [
+      "OS3",
+      "OS2",
+      "OS1",
+      "V14",
+      "V13"
+    ],
+    "branchCount": 4,
+    "romCount": 127
+  },
+  {
+    "device": "thor",
+    "name": {
+      "zh": "小米 12S Ultra",
+      "en": "Xiaomi 12S Ultra"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "LA",
+    "android": [
+      "15.0",
+      "14.0",
+      "13.0",
+      "12.0"
+    ],
+    "supports": [
+      "OS3",
+      "OS2",
+      "OS1",
+      "V14",
+      "V13"
+    ],
+    "branchCount": 3,
+    "romCount": 126
+  },
+  {
+    "device": "daumier",
+    "name": {
+      "zh": "小米 12 Pro 天玑版",
+      "en": "Xiaomi 12 Pro Dimensity"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "LG",
+    "android": [
+      "14.0",
+      "13.0",
+      "12.0"
+    ],
+    "supports": [
+      "OS2",
+      "OS1",
+      "V14",
+      "V13"
+    ],
+    "branchCount": 2,
+    "romCount": 106
+  },
+  {
+    "device": "plato",
+    "name": {
+      "zh": "小米 12T",
+      "en": "Xiaomi 12T"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "LQ",
+    "android": [
+      "15.0",
+      "14.0",
+      "13.0",
+      "12.0"
+    ],
+    "supports": [
+      "OS2",
+      "OS1",
+      "V14",
+      "V13"
+    ],
+    "branchCount": 10,
+    "romCount": 204
+  },
+  {
+    "device": "diting",
+    "name": {
+      "zh": "小米 12T Pro / Redmi K50 至尊版",
+      "en": "Xiaomi 12T Pro / Redmi K50 Ultra"
+    },
+    "brand": [
+      "Xiaomi",
+      "Redmi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "LF",
+    "android": [
+      "15.0",
+      "14.0",
+      "13.0",
+      "12.0"
+    ],
+    "supports": [
+      "OS3",
+      "OS2",
+      "OS1",
+      "V14",
+      "V13"
+    ],
+    "branchCount": 13,
+    "romCount": 340
+  },
+  {
+    "device": "taoyao",
+    "name": {
+      "zh": "小米 12 Lite",
+      "en": "Xiaomi 12 Lite"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "LI",
+    "android": [
+      "14.0",
+      "13.0",
+      "12.0"
+    ],
+    "supports": [
+      "OS1",
+      "V14",
+      "V13"
+    ],
+    "branchCount": 8,
+    "romCount": 215
+  },
+  {
+    "device": "fuxi",
+    "name": {
+      "zh": "小米 13",
+      "en": "Xiaomi 13"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "MC",
+    "android": [
+      "16.0",
+      "15.0",
+      "14.0",
+      "13.0"
+    ],
+    "supports": [
+      "OS3",
+      "OS2",
+      "OS1",
+      "V14"
+    ],
+    "branchCount": 13,
+    "romCount": 260
+  },
+  {
+    "device": "nuwa",
+    "name": {
+      "zh": "小米 13 Pro",
+      "en": "Xiaomi 13 Pro"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "MB",
+    "android": [
+      "16.0",
+      "15.0",
+      "14.0",
+      "13.0"
+    ],
+    "supports": [
+      "OS3",
+      "OS2",
+      "OS1",
+      "V14"
+    ],
+    "branchCount": 15,
+    "romCount": 315
+  },
+  {
+    "device": "ishtar",
+    "name": {
+      "zh": "小米 13 Ultra",
+      "en": "Xiaomi 13 Ultra"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "MA",
+    "android": [
+      "16.0",
+      "15.0",
+      "14.0",
+      "13.0"
+    ],
+    "supports": [
+      "OS3",
+      "OS2",
+      "OS1",
+      "V14"
+    ],
+    "branchCount": 9,
+    "romCount": 217
+  },
+  {
+    "device": "aristotle",
+    "name": {
+      "zh": "小米 13T",
+      "en": "Xiaomi 13T"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "MF",
+    "android": [
+      "16.0",
+      "15.0",
+      "14.0",
+      "13.0"
+    ],
+    "supports": [
+      "OS3",
+      "OS2",
+      "OS1",
+      "V14"
+    ],
+    "branchCount": 10,
+    "romCount": 176
+  },
+  {
+    "device": "corot",
+    "name": {
+      "zh": "小米 13T Pro / Redmi K60 至尊版",
+      "en": "Xiaomi 13T Pro / Redmi K60 Ultra"
+    },
+    "brand": [
+      "Xiaomi",
+      "Redmi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "ML",
+    "android": [
+      "16.0",
+      "15.0",
+      "14.0",
+      "13.0"
+    ],
+    "supports": [
+      "OS3",
+      "OS2",
+      "OS1",
+      "V14"
+    ],
+    "branchCount": 12,
+    "romCount": 193
+  },
+  {
+    "device": "houji",
+    "name": {
+      "zh": "小米 14",
+      "en": "Xiaomi 14"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "NC",
+    "android": [
+      "16.0",
+      "15.0",
+      "14.0"
+    ],
+    "supports": [
+      "OS3",
+      "OS2",
+      "OS1"
+    ],
+    "branchCount": 16,
+    "romCount": 295
+  },
+  {
+    "device": "shennong_t",
+    "name": {
+      "zh": "小米 14 Pro 钛金属卫星通讯版",
+      "en": "Xiaomi 14 Pro Ti Satellite"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "ND",
+    "android": [
+      "14.0"
+    ],
+    "supports": [
+      "OS1"
+    ],
+    "branchCount": 1,
+    "romCount": 4
+  },
+  {
+    "device": "degas",
+    "name": {
+      "zh": "小米 14T",
+      "en": "Xiaomi 14T"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "NE",
+    "android": [
+      "16.0",
+      "15.0",
+      "14.0"
+    ],
+    "supports": [
+      "OS3",
+      "OS2",
+      "OS1"
+    ],
+    "branchCount": 9,
+    "romCount": 155
+  },
+  {
+    "device": "chenfeng",
+    "name": {
+      "zh": "小米 Civi 4 Pro / 小米 14 Civi",
+      "en": "Xiaomi Civi 4 Pro / 小米 14 Civi"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "NJ",
+    "android": [
+      "16.0",
+      "15.0",
+      "14.0"
+    ],
+    "supports": [
+      "OS3",
+      "OS2",
+      "OS1"
+    ],
+    "branchCount": 4,
+    "romCount": 74
+  },
+  {
+    "device": "dada",
+    "name": {
+      "zh": "小米 15",
+      "en": "Xiaomi 15"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "OC",
+    "android": [
+      "16.0",
+      "15.0"
+    ],
+    "supports": [
+      "OS3",
+      "OS2"
+    ],
+    "branchCount": 16,
+    "romCount": 199
+  },
+  {
+    "device": "haotian",
+    "name": {
+      "zh": "小米 15 Pro",
+      "en": "Xiaomi 15 Pro"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "OB",
+    "android": [
+      "16.0",
+      "15.0"
+    ],
+    "supports": [
+      "OS3",
+      "OS2"
+    ],
+    "branchCount": 4,
+    "romCount": 78
+  },
+  {
+    "device": "xuanyuan",
+    "name": {
+      "zh": "小米 15 Ultra",
+      "en": "Xiaomi 15 Ultra"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "OA",
+    "android": [
+      "16.0",
+      "15.0"
+    ],
+    "supports": [
+      "OS3",
+      "OS2"
+    ],
+    "branchCount": 14,
+    "romCount": 160
+  },
+  {
+    "device": "dijun",
+    "name": {
+      "zh": "小米 15S Pro",
+      "en": "Xiaomi 15S Pro"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "OD",
+    "android": [
+      "16.0",
+      "15.0"
+    ],
+    "supports": [
+      "OS3",
+      "OS2"
+    ],
+    "branchCount": 3,
+    "romCount": 36
+  },
+  {
+    "device": "goya",
+    "name": {
+      "zh": "小米 15T",
+      "en": "Xiaomi 15T"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "OE",
+    "android": [
+      "16.0",
+      "15.0"
+    ],
+    "supports": [
+      "OS3",
+      "OS2"
+    ],
+    "branchCount": 9,
+    "romCount": 77
+  },
+  {
+    "device": "klimt",
+    "name": {
+      "zh": "小米 15T Pro",
+      "en": "Xiaomi 15T Pro"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "ML",
+    "android": [
+      "17.0",
+      "16.0",
+      "15.0"
+    ],
+    "supports": [
+      "OS3",
+      "OS2"
+    ],
+    "branchCount": 11,
+    "romCount": 90
+  },
+  {
+    "device": "pudding",
+    "name": {
+      "zh": "小米 17",
+      "en": "Xiaomi 17"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "PC",
+    "android": [
+      "17.0",
+      "16.0"
+    ],
+    "supports": [
+      "OS4",
+      "OS3"
+    ],
+    "branchCount": 15,
+    "romCount": 103
+  },
+  {
+    "device": "pandora",
+    "name": {
+      "zh": "小米 17 Pro",
+      "en": "Xiaomi 17 Pro"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "BL",
+    "android": [
+      "17.0",
+      "16.0"
+    ],
+    "supports": [
+      "OS4",
+      "OS3"
+    ],
+    "branchCount": 3,
+    "romCount": 40
+  },
+  {
+    "device": "byron",
+    "name": {
+      "zh": "小米 17 Max",
+      "en": "Xiaomi 17 Max"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "AF",
+    "android": [
+      "16.0"
+    ],
+    "supports": [
+      "OS3"
+    ],
+    "branchCount": 3,
+    "romCount": 6
+  },
+  {
+    "device": "popsicle",
+    "name": {
+      "zh": "小米 17 Pro Max",
+      "en": "Xiaomi 17 Pro Max"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "PB",
+    "android": [
+      "17.0",
+      "16.0"
+    ],
+    "supports": [
+      "OS4",
+      "OS3"
+    ],
+    "branchCount": 3,
+    "romCount": 43
+  },
+  {
+    "device": "nezha",
+    "name": {
+      "zh": "小米 17 Ultra",
+      "en": "Xiaomi 17 Ultra"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "PA",
+    "android": [
+      "17.0",
+      "16.0"
+    ],
+    "supports": [
+      "OS4",
+      "OS3"
+    ],
+    "branchCount": 15,
+    "romCount": 82
+  },
+  {
+    "device": "chagall",
+    "name": {
+      "zh": "小米 17T",
+      "en": "Xiaomi 17T"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "PT",
+    "android": [
+      "16.0"
+    ],
+    "supports": [
+      "OS3"
+    ],
+    "branchCount": 13,
+    "romCount": 34
+  },
+  {
+    "device": "warhol",
+    "name": {
+      "zh": "小米 17T Pro",
+      "en": "Xiaomi 17T Pro"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [
+      {
+        "brand": "xiaomi",
+        "zh": "小米系列",
+        "en": "Xiaomi Series"
+      }
+    ],
+    "code": "PS",
+    "android": [
+      "16.0"
+    ],
+    "supports": [
+      "OS3"
+    ],
+    "branchCount": 12,
+    "romCount": 45
+  },
+  {
+    "device": "air",
+    "name": {
+      "zh": "Redmi 13C / 13R 5G / POCO M6 5G",
+      "en": "Redmi 13C / 13R 5G / POCO M6 5G"
+    },
+    "brand": [
+      "Redmi",
+      "POCO"
+    ],
+    "series": [],
+    "code": "GQ",
+    "android": [
+      "15.0",
+      "14.0",
+      "13.0"
+    ],
+    "supports": [
+      "OS2",
+      "OS1",
+      "V14"
+    ],
+    "branchCount": 9,
+    "romCount": 136
+  },
+  {
+    "device": "amethyst",
+    "name": {
+      "zh": "Redmi Note 14 Pro+",
+      "en": "Redmi Note 14 Pro+"
+    },
+    "brand": [
+      "Redmi"
+    ],
+    "series": [],
+    "code": "OP",
+    "android": [
+      "16.0",
+      "15.0",
+      "14.0"
+    ],
+    "supports": [
+      "OS3",
+      "OS2",
+      "OS1"
+    ],
+    "branchCount": 14,
+    "romCount": 158
+  },
+  {
+    "device": "andromeda",
+    "name": {
+      "zh": "小米 MIX 3 5G",
+      "en": "Mi MIX 3 5G"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [],
+    "code": "EM",
+    "android": [
+      "9.0"
+    ],
+    "supports": [
+      "V12",
+      "V10"
+    ],
+    "branchCount": 4,
+    "romCount": 27
+  },
+  {
+    "device": "angelica",
+    "name": {
+      "zh": "Redmi 9C / POCO C3",
+      "en": "Redmi 9C / POCO C3"
+    },
+    "brand": [
+      "Redmi",
+      "POCO"
+    ],
+    "series": [],
+    "code": "CR",
+    "android": [
+      "11.0",
+      "10.0"
+    ],
+    "supports": [
+      "V12.5",
+      "V12"
+    ],
+    "branchCount": 9,
+    "romCount": 102
+  },
+  {
+    "device": "angelicain",
+    "name": {
+      "zh": "POCO C31",
+      "en": "POCO C31"
+    },
+    "brand": [
+      "POCO"
+    ],
+    "series": [],
+    "code": "CR",
+    "android": [
+      "11.0",
+      "10.0"
+    ],
+    "supports": [
+      "V12.5",
+      "V12"
+    ],
+    "branchCount": 2,
+    "romCount": 24
+  },
+  {
+    "device": "angelican",
+    "name": {
+      "zh": "Redmi 9C NFC",
+      "en": "Redmi 9C NFC"
+    },
+    "brand": [
+      "Redmi"
+    ],
+    "series": [],
+    "code": "CS",
+    "android": [
+      "11.0",
+      "10.0"
+    ],
+    "supports": [
+      "V12.5",
+      "V12"
+    ],
+    "branchCount": 4,
+    "romCount": 45
+  },
+  {
+    "device": "annibale",
+    "name": {
+      "zh": "REDMI K90",
+      "en": "REDMI K90"
+    },
+    "brand": [
+      "REDMI",
+      "POCO"
+    ],
+    "series": [],
+    "code": "PK",
+    "android": [
+      "17.0",
+      "16.0"
+    ],
+    "supports": [
+      "OS4",
+      "OS3"
+    ],
+    "branchCount": 10,
+    "romCount": 48
+  },
+  {
+    "device": "ares",
+    "name": {
+      "zh": "Redmi K40 游戏增强版 / POCO F3 GT",
+      "en": "Redmi K40 Gaming / POCO F3 GT"
+    },
+    "brand": [
+      "Redmi",
+      "POCO"
+    ],
+    "series": [],
+    "code": "KJ",
+    "android": [
+      "13.0",
+      "12.0",
+      "11.0"
+    ],
+    "supports": [
+      "OS1",
+      "V14",
+      "V13",
+      "V12.5",
+      "V12"
+    ],
+    "branchCount": 5,
+    "romCount": 322
+  },
+  {
+    "device": "armani",
+    "name": {
+      "zh": "红米 1S",
+      "en": "Redmi 1S"
+    },
+    "brand": [
+      "Redmi"
+    ],
+    "series": [],
+    "code": "HC",
+    "android": [
+      "4.4",
+      "4.3"
+    ],
+    "supports": [
+      "V9",
+      "V8",
+      "V7",
+      "V6",
+      "V5"
+    ],
+    "branchCount": 4,
+    "romCount": 212
+  },
+  {
+    "device": "athens",
+    "name": {
+      "zh": "REDMI K100 Pro",
+      "en": "REDMI K100 Pro"
+    },
+    "brand": [
+      "REDMI"
+    ],
+    "series": [],
+    "code": "PI",
+    "android": [
+      "16.0"
+    ],
+    "supports": [
+      "OS3"
+    ],
+    "branchCount": 2,
+    "romCount": 3
+  },
+  {
+    "device": "atom",
+    "name": {
+      "zh": "Redmi 10X 5G",
+      "en": "Redmi 10X 5G"
+    },
+    "brand": [
+      "Redmi"
+    ],
+    "series": [],
+    "code": "JH",
+    "android": [
+      "12.0",
+      "11.0",
+      "10.0"
+    ],
+    "supports": [
+      "V13",
+      "V12.5",
+      "V12",
+      "V11"
+    ],
+    "branchCount": 2,
+    "romCount": 350
+  },
+  {
+    "device": "aurora",
+    "name": {
+      "zh": "小米 14 Ultra / Ultra Ti",
+      "en": "Xiaomi 14 Ultra"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [],
+    "code": "NA",
+    "android": [
+      "16.0",
+      "15.0",
+      "14.0"
+    ],
+    "supports": [
+      "OS3",
+      "OS2",
+      "OS1"
+    ],
+    "branchCount": 11,
+    "romCount": 212
+  },
+  {
+    "device": "babylon",
+    "name": {
+      "zh": "小米 MIX Fold 3",
+      "en": "Xiaomi MIX Fold 3"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [],
+    "code": "MV",
+    "android": [
+      "16.0",
+      "15.0",
+      "14.0",
+      "13.0"
+    ],
+    "supports": [
+      "OS3",
+      "OS2",
+      "OS1",
+      "V14"
+    ],
+    "branchCount": 4,
+    "romCount": 77
+  },
+  {
+    "device": "begonia",
+    "name": {
+      "zh": "Redmi Note 8 Pro",
+      "en": "Redmi Note 8 Pro"
+    },
+    "brand": [
+      "Redmi"
+    ],
+    "series": [],
+    "code": "GG",
+    "android": [
+      "11.0",
+      "10.0",
+      "9.0"
+    ],
+    "supports": [
+      "V12.5",
+      "V12",
+      "V11",
+      "V10"
+    ],
+    "branchCount": 10,
+    "romCount": 416
+  },
+  {
+    "device": "beryl",
+    "name": {
+      "zh": "Redmi Note 14 5G / POCO M7 Pro 5G",
+      "en": "Redmi Note 14 5G / POCO M7 Pro 5G"
+    },
+    "brand": [
+      "Redmi",
+      "POCO"
+    ],
+    "series": [],
+    "code": "OQ",
+    "android": [
+      "16.0",
+      "15.0",
+      "14.0"
+    ],
+    "supports": [
+      "OS3",
+      "OS2",
+      "OS1"
+    ],
+    "branchCount": 14,
+    "romCount": 183
+  },
+  {
+    "device": "beryllium",
+    "name": {
+      "zh": "POCO F1",
+      "en": "POCO F1"
+    },
+    "brand": [
+      "POCO"
+    ],
+    "series": [],
+    "code": "EJ",
+    "android": [
+      "10.0",
+      "9.0",
+      "8.1"
+    ],
+    "supports": [
+      "V9",
+      "V12",
+      "V11",
+      "V10"
+    ],
+    "branchCount": 3,
+    "romCount": 80
+  },
+  {
+    "device": "biloba",
+    "name": {
+      "zh": "Redmi Note 8 (2021)",
+      "en": "Redmi Note 8 (2021)"
+    },
+    "brand": [
+      "Redmi"
+    ],
+    "series": [],
+    "code": "CU",
+    "android": [
+      "13.0",
+      "12.0",
+      "11.0"
+    ],
+    "supports": [
+      "V14",
+      "V13",
+      "V12.5"
+    ],
+    "branchCount": 3,
+    "romCount": 47
+  },
+  {
+    "device": "bixi",
+    "name": {
+      "zh": "小米 MIX Flip 2",
+      "en": "Xiaomi MIX Flip 2"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "series": [],
+    "code": "OH",
+    "android": [
+      "16.0",
+      "15.0"
+    ],
+    "supports": [
+      "OS3",
+      "OS2"
+    ],
+    "branchCount": 3,
+    "romCount": 30
+  },
+  {
+    "device": "blue",
+    "name": {
+      "zh": "POCO C61 / Redmi A3",
+      "en": "POCO C61 / Redmi A3"
+    },
+    "brand": [
+      "Redmi",
+      "POCO"
+    ],
+    "series": [],
+    "code": "GR",
+    "android": [
+      "16.0",
+      "15.0",
+      "14.0"
+    ],
+    "supports": [
+      "V816"
+    ],
+    "branchCount": 8,
+    "romCount": 103
+  },
+  {
+    "device": "bomb",
+    "name": {
+      "zh": "Redmi 10X Pro",
+      "en": "Redmi 10X Pro"
+    },
+    "brand": [
+      "Redmi"
+    ],
+    "series": [],
+    "code": "JL",
+    "android": [
+      "12.0",
+      "11.0",
+      "10.0"
+    ],
+    "supports": [
+      "V13",
+      "V12.5",
+      "V12",
+      "V11"
+    ],
+    "branchCount": 2,
+    "romCount": 346
+  },
+  {
+    "device": "breeze",
+    "name": {
+      "zh": "Redmi 13 5G / Redmi Note 13R 5G / POCO M6 Plus 5G",
+      "en": "Redmi 13 5G / Redmi Note 13R 5G / POCO M6 Plus 5G"
+    },
+    "brand": [
+      "Redmi",
+      "POCO"
+    ],
+    "series": [],
+    "code": "NU",
+    "android": [
+      "16.0",
+      "15.0",
+      "14.0"
+    ],
+    "supports": [
+      "OS3",
+      "OS2",
+      "OS1"
+    ],
+    "branchCount": 4,
+    "romCount": 52
+  },
+  {
+    "device": "cactus",
+    "name": {
+      "zh": "红米 6A",
+      "en": "Redmi 6A"
+    },
+    "brand": [
+      "Redmi"
+    ],
+    "series": [],
+    "code": "CB",
+    "android": [
+      "9.0",
+      "8.1"
+    ],
+    "supports": [
+      "V9",
+      "V12",
+      "V11",
+      "V10"
+    ],
+    "branchCount": 5,
+    "romCount": 153
+  },
+  {
+    "device": "camellia",
+    "name": {
+      "zh": "Redmi Note 10 10T / 10 5G / 11 SE / POCO M3 Pro",
+      "en": "Redmi Note 10 10T / 10 5G / 11 SE / POCO M3 Pro"
+    },
+    "brand": [
+      "Redmi"
+    ],
+    "series": [],
+    "code": "KS",
+    "android": [
+      "13.0",
+      "12.0",
+      "11.0"
+    ],
+    "supports": [
+      "V14",
+      "V13",
+      "V12.5",
+      "V12"
+    ],
+    "branchCount": 23,
+    "romCount": 374
+  },
+  {
     "device": "cannon",
     "name": {
       "zh": "Redmi Note 9 5G",
@@ -757,6 +2857,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "JE",
     "android": [
       "12.0",
@@ -781,6 +2882,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "CI",
     "android": [
       "7.0"
@@ -794,56 +2896,6 @@
     "romCount": 95
   },
   {
-    "device": "capricorn",
-    "name": {
-      "zh": "小米 5s",
-      "en": "Mi 5s"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "AG",
-    "android": [
-      "8.0",
-      "7.0",
-      "6.0"
-    ],
-    "supports": [
-      "V9",
-      "V8",
-      "V11",
-      "V10"
-    ],
-    "branchCount": 4,
-    "romCount": 244
-  },
-  {
-    "device": "cas",
-    "name": {
-      "zh": "小米 10 至尊纪念版",
-      "en": "Mi 10 Ultra"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "JJ",
-    "android": [
-      "13.0",
-      "12.0",
-      "11.0",
-      "10.0"
-    ],
-    "supports": [
-      "OS1",
-      "V14",
-      "V13",
-      "V12.5",
-      "V12"
-    ],
-    "branchCount": 2,
-    "romCount": 412
-  },
-  {
     "device": "cattail",
     "name": {
       "zh": "Redmi 9 / 9 Activ",
@@ -852,6 +2904,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "CT",
     "android": [
       "11.0",
@@ -865,30 +2918,6 @@
     "romCount": 30
   },
   {
-    "device": "cepheus",
-    "name": {
-      "zh": "小米 9",
-      "en": "Mi 9"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "FA",
-    "android": [
-      "11.0",
-      "10.0",
-      "9.0"
-    ],
-    "supports": [
-      "V12.5",
-      "V12",
-      "V11",
-      "V10"
-    ],
-    "branchCount": 11,
-    "romCount": 561
-  },
-  {
     "device": "cereus",
     "name": {
       "zh": "红米 6",
@@ -897,6 +2926,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "CG",
     "android": [
       "9.0",
@@ -920,6 +2950,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "JT",
     "android": [
       "13.0",
@@ -945,6 +2976,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "JN",
     "android": [
       "12.0",
@@ -961,25 +2993,6 @@
     "romCount": 406
   },
   {
-    "device": "chagall",
-    "name": {
-      "zh": "小米 17T",
-      "en": "Xiaomi 17T"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "PT",
-    "android": [
-      "16.0"
-    ],
-    "supports": [
-      "OS3"
-    ],
-    "branchCount": 13,
-    "romCount": 34
-  },
-  {
     "device": "charoite",
     "name": {
       "zh": "Redmi Note 15 Pro 4G",
@@ -988,6 +3001,7 @@
     "brand": [
       "REDMI"
     ],
+    "series": [],
     "code": "PF",
     "android": [
       "16.0",
@@ -1001,29 +3015,6 @@
     "romCount": 39
   },
   {
-    "device": "chenfeng",
-    "name": {
-      "zh": "小米 Civi 4 Pro / 小米 14 Civi",
-      "en": "Xiaomi Civi 4 Pro / 小米 14 Civi"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "NJ",
-    "android": [
-      "16.0",
-      "15.0",
-      "14.0"
-    ],
-    "supports": [
-      "OS3",
-      "OS2",
-      "OS1"
-    ],
-    "branchCount": 4,
-    "romCount": 74
-  },
-  {
     "device": "chiron",
     "name": {
       "zh": "小米 MIX 2",
@@ -1032,6 +3023,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "DE",
     "android": [
       "9.0",
@@ -1058,6 +3050,7 @@
       "Redmi",
       "POCO"
     ],
+    "series": [],
     "code": "KP",
     "android": [
       "13.0",
@@ -1081,6 +3074,7 @@
     "brand": [
       "POCO"
     ],
+    "series": [],
     "code": "JF",
     "android": [
       "12.0",
@@ -1105,6 +3099,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "DJ",
     "android": [
       "8.1"
@@ -1117,83 +3112,6 @@
     "romCount": 64
   },
   {
-    "device": "cmi",
-    "name": {
-      "zh": "小米 10 Pro",
-      "en": "Mi 10 Pro"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "JA",
-    "android": [
-      "13.0",
-      "12.0",
-      "11.0",
-      "10.0"
-    ],
-    "supports": [
-      "OS1",
-      "V14",
-      "V13",
-      "V12.5",
-      "V12",
-      "V11"
-    ],
-    "branchCount": 4,
-    "romCount": 450
-  },
-  {
-    "device": "corot",
-    "name": {
-      "zh": "小米 13T Pro / Redmi K60 至尊版",
-      "en": "Xiaomi 13T Pro / Redmi K60 Ultra"
-    },
-    "brand": [
-      "Xiaomi",
-      "Redmi"
-    ],
-    "code": "ML",
-    "android": [
-      "16.0",
-      "15.0",
-      "14.0",
-      "13.0"
-    ],
-    "supports": [
-      "OS3",
-      "OS2",
-      "OS1",
-      "V14"
-    ],
-    "branchCount": 12,
-    "romCount": 193
-  },
-  {
-    "device": "courbet",
-    "name": {
-      "zh": "小米 11 Lite 4G",
-      "en": "Mi 11 Lite 4G"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "KQ",
-    "android": [
-      "13.0",
-      "12.0",
-      "11.0"
-    ],
-    "supports": [
-      "V14",
-      "V13",
-      "V12.5",
-      "V12"
-    ],
-    "branchCount": 9,
-    "romCount": 111
-  },
-  {
     "device": "creek",
     "name": {
       "zh": "REDMI 15 4G",
@@ -1202,6 +3120,7 @@
     "brand": [
       "REDMI"
     ],
+    "series": [],
     "code": "BO",
     "android": [
       "16.0",
@@ -1215,57 +3134,6 @@
     "romCount": 71
   },
   {
-    "device": "crux",
-    "name": {
-      "zh": "小米 9 Pro 5G",
-      "en": "Mi 9 Pro 5G"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "FX",
-    "android": [
-      "11.0",
-      "10.0",
-      "9.0"
-    ],
-    "supports": [
-      "V13",
-      "V12.5",
-      "V12",
-      "V11",
-      "V10"
-    ],
-    "branchCount": 2,
-    "romCount": 342
-  },
-  {
-    "device": "cupid",
-    "name": {
-      "zh": "小米 12",
-      "en": "Xiaomi 12"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "LC",
-    "android": [
-      "15.0",
-      "14.0",
-      "13.0",
-      "12.0"
-    ],
-    "supports": [
-      "OS3",
-      "OS2",
-      "OS1",
-      "V14",
-      "V13"
-    ],
-    "branchCount": 11,
-    "romCount": 382
-  },
-  {
     "device": "curtana",
     "name": {
       "zh": "Redmi Note 9S / Redmi Note 10 Lite",
@@ -1274,6 +3142,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "JW",
     "android": [
       "12.0",
@@ -1299,6 +3168,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "JW",
     "android": [
       "12.0",
@@ -1315,27 +3185,6 @@
     "romCount": 11
   },
   {
-    "device": "dada",
-    "name": {
-      "zh": "小米 15",
-      "en": "Xiaomi 15"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "OC",
-    "android": [
-      "16.0",
-      "15.0"
-    ],
-    "supports": [
-      "OS3",
-      "OS2"
-    ],
-    "branchCount": 16,
-    "romCount": 199
-  },
-  {
     "device": "dagu",
     "name": {
       "zh": "小米平板 5 Pro 12.4",
@@ -1344,6 +3193,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "LZ",
     "android": [
       "14.0",
@@ -1368,6 +3218,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "DL",
     "android": [
       "10.0",
@@ -1391,6 +3242,7 @@
     "brand": [
       "REDMI"
     ],
+    "series": [],
     "code": "ON",
     "android": [
       "16.0",
@@ -1412,6 +3264,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "CD",
     "android": [
       "11.0",
@@ -1433,6 +3286,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "CZ",
     "android": [
       "11.0"
@@ -1452,6 +3306,7 @@
     "brand": [
       "REDMI"
     ],
+    "series": [],
     "code": "PL",
     "android": [
       "16.0"
@@ -1463,78 +3318,6 @@
     "romCount": 48
   },
   {
-    "device": "daumier",
-    "name": {
-      "zh": "小米 12 Pro 天玑版",
-      "en": "Xiaomi 12 Pro Dimensity"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "LG",
-    "android": [
-      "14.0",
-      "13.0",
-      "12.0"
-    ],
-    "supports": [
-      "OS2",
-      "OS1",
-      "V14",
-      "V13"
-    ],
-    "branchCount": 2,
-    "romCount": 106
-  },
-  {
-    "device": "davinci",
-    "name": {
-      "zh": "小米 9T / Redmi K20",
-      "en": "Mi 9T / Redmi K20"
-    },
-    "brand": [
-      "Xiaomi",
-      "Redmi"
-    ],
-    "code": "FJ",
-    "android": [
-      "11.0",
-      "10.0",
-      "9.0"
-    ],
-    "supports": [
-      "V12.5",
-      "V12",
-      "V11",
-      "V10"
-    ],
-    "branchCount": 7,
-    "romCount": 409
-  },
-  {
-    "device": "degas",
-    "name": {
-      "zh": "小米 14T",
-      "en": "Xiaomi 14T"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "NE",
-    "android": [
-      "16.0",
-      "15.0",
-      "14.0"
-    ],
-    "supports": [
-      "OS3",
-      "OS2",
-      "OS1"
-    ],
-    "branchCount": 9,
-    "romCount": 155
-  },
-  {
     "device": "dew",
     "name": {
       "zh": "REDMI 15C / POCO C85",
@@ -1544,6 +3327,7 @@
       "REDMI",
       "POCO"
     ],
+    "series": [],
     "code": "BN",
     "android": [
       "16.0",
@@ -1557,27 +3341,6 @@
     "romCount": 71
   },
   {
-    "device": "dijun",
-    "name": {
-      "zh": "小米 15S Pro",
-      "en": "Xiaomi 15S Pro"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "OD",
-    "android": [
-      "16.0",
-      "15.0"
-    ],
-    "supports": [
-      "OS3",
-      "OS2"
-    ],
-    "branchCount": 3,
-    "romCount": 36
-  },
-  {
     "device": "dior",
     "name": {
       "zh": "红米 Note 4G 单卡版",
@@ -1586,6 +3349,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "HI",
     "android": [
       "4.4"
@@ -1601,58 +3365,6 @@
     "romCount": 223
   },
   {
-    "device": "dipper",
-    "name": {
-      "zh": "小米 8",
-      "en": "Mi 8"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "EA",
-    "android": [
-      "10.0",
-      "9.0",
-      "8.1"
-    ],
-    "supports": [
-      "V9",
-      "V12.5",
-      "V12",
-      "V11",
-      "V10"
-    ],
-    "branchCount": 5,
-    "romCount": 457
-  },
-  {
-    "device": "diting",
-    "name": {
-      "zh": "小米 12T Pro / Redmi K50 至尊版",
-      "en": "Xiaomi 12T Pro / Redmi K50 Ultra"
-    },
-    "brand": [
-      "Xiaomi",
-      "Redmi"
-    ],
-    "code": "LF",
-    "android": [
-      "15.0",
-      "14.0",
-      "13.0",
-      "12.0"
-    ],
-    "supports": [
-      "OS3",
-      "OS2",
-      "OS1",
-      "V14",
-      "V13"
-    ],
-    "branchCount": 13,
-    "romCount": 340
-  },
-  {
     "device": "dizi",
     "name": {
       "zh": "Redmi Pad Pro / 哈利·波特版 / POCO Pad",
@@ -1662,6 +3374,7 @@
       "Redmi",
       "POCO"
     ],
+    "series": [],
     "code": "NS",
     "android": [
       "16.0",
@@ -1686,6 +3399,7 @@
       "Redmi",
       "POCO"
     ],
+    "series": [],
     "code": "NL",
     "android": [
       "16.0",
@@ -1710,6 +3424,7 @@
       "Redmi",
       "POCO"
     ],
+    "series": [],
     "code": "CV",
     "android": [
       "14.0",
@@ -1733,6 +3448,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "KY",
     "android": [
       "13.0",
@@ -1758,6 +3474,7 @@
       "Redmi",
       "POCO"
     ],
+    "series": [],
     "code": "NF",
     "android": [
       "16.0",
@@ -1783,6 +3500,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "FO",
     "android": [
       "16.0",
@@ -1806,6 +3524,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "KZ",
     "android": [
       "13.0",
@@ -1822,32 +3541,6 @@
     "romCount": 241
   },
   {
-    "device": "equuleus",
-    "name": {
-      "zh": "小米 8 屏幕指纹版",
-      "en": "Mi 8 Pro"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "EC",
-    "android": [
-      "11.0",
-      "10.0",
-      "9.0",
-      "8.1"
-    ],
-    "supports": [
-      "V9",
-      "V12.5",
-      "V12",
-      "V11",
-      "V10"
-    ],
-    "branchCount": 5,
-    "romCount": 308
-  },
-  {
     "device": "erhu",
     "name": {
       "zh": "REDMI Pad 2 SE 4G",
@@ -1856,6 +3549,7 @@
     "brand": [
       "REDMI"
     ],
+    "series": [],
     "code": "DO",
     "android": [
       "16.0"
@@ -1875,6 +3569,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "GB",
     "android": [
       "13.0",
@@ -1899,6 +3594,7 @@
     "brand": [
       "POCO"
     ],
+    "series": [],
     "code": "GB",
     "android": [
       "13.0",
@@ -1923,6 +3619,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "JX",
     "android": [
       "12.0",
@@ -1940,28 +3637,6 @@
     "romCount": 32
   },
   {
-    "device": "ferrari",
-    "name": {
-      "zh": "小米 4i",
-      "en": "MI 4i"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "XI",
-    "android": [
-      "5.0"
-    ],
-    "supports": [
-      "V9",
-      "V8",
-      "V7",
-      "V6"
-    ],
-    "branchCount": 4,
-    "romCount": 128
-  },
-  {
     "device": "fire",
     "name": {
       "zh": "Redmi 12 国际",
@@ -1970,6 +3645,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "MX",
     "android": [
       "15.0",
@@ -1994,6 +3670,7 @@
       "Redmi",
       "POCO"
     ],
+    "series": [],
     "code": "GU",
     "android": [
       "16.0",
@@ -2017,6 +3694,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "HX",
     "android": [
       "16.0",
@@ -2041,6 +3719,7 @@
       "Redmi",
       "POCO"
     ],
+    "series": [],
     "code": "KE",
     "android": [
       "13.0",
@@ -2064,6 +3743,7 @@
     "brand": [
       "REDMI"
     ],
+    "series": [],
     "code": "PR",
     "android": [
       "16.0",
@@ -2085,6 +3765,7 @@
     "brand": [
       "REDMI"
     ],
+    "series": [],
     "code": "PW",
     "android": [
       "16.0",
@@ -2106,6 +3787,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "GE",
     "android": [
       "13.0",
@@ -2128,6 +3810,7 @@
     "brand": [
       "POCO"
     ],
+    "series": [],
     "code": "GF",
     "android": [
       "11.0"
@@ -2139,31 +3822,6 @@
     "romCount": 37
   },
   {
-    "device": "fuxi",
-    "name": {
-      "zh": "小米 13",
-      "en": "Xiaomi 13"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "MC",
-    "android": [
-      "16.0",
-      "15.0",
-      "14.0",
-      "13.0"
-    ],
-    "supports": [
-      "OS3",
-      "OS2",
-      "OS1",
-      "V14"
-    ],
-    "branchCount": 13,
-    "romCount": 260
-  },
-  {
     "device": "gale",
     "name": {
       "zh": "Redmi 13C 国际 / POCO C65",
@@ -2173,6 +3831,7 @@
       "Redmi",
       "POCO"
     ],
+    "series": [],
     "code": "GP",
     "android": [
       "15.0",
@@ -2197,6 +3856,7 @@
       "Redmi",
       "POCO"
     ],
+    "series": [],
     "code": "NR",
     "android": [
       "16.0",
@@ -2214,55 +3874,6 @@
     "romCount": 270
   },
   {
-    "device": "gauguin",
-    "name": {
-      "zh": "小米 10T Lite / 10i / Redmi Note 9 Pro 5G",
-      "en": "Mi 10T Lite / 10i / Redmi Note 9 Pro 5G"
-    },
-    "brand": [
-      "Xiaomi",
-      "Redmi"
-    ],
-    "code": "JS",
-    "android": [
-      "12.0",
-      "11.0",
-      "10.0"
-    ],
-    "supports": [
-      "V14",
-      "V13",
-      "V12.5",
-      "V12"
-    ],
-    "branchCount": 14,
-    "romCount": 440
-  },
-  {
-    "device": "gemini",
-    "name": {
-      "zh": "小米 5",
-      "en": "MI 5"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "AA",
-    "android": [
-      "8.0",
-      "7.0",
-      "6.0"
-    ],
-    "supports": [
-      "V9",
-      "V8",
-      "V7",
-      "V10"
-    ],
-    "branchCount": 5,
-    "romCount": 255
-  },
-  {
     "device": "ginkgo",
     "name": {
       "zh": "Redmi Note 8",
@@ -2271,6 +3882,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "CO",
     "android": [
       "11.0",
@@ -2295,6 +3907,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "NV",
     "android": [
       "16.0",
@@ -2319,6 +3932,7 @@
       "Redmi",
       "POCO"
     ],
+    "series": [],
     "code": "NQ",
     "android": [
       "15.0",
@@ -2335,27 +3949,6 @@
     "romCount": 271
   },
   {
-    "device": "goya",
-    "name": {
-      "zh": "小米 15T",
-      "en": "Xiaomi 15T"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "OE",
-    "android": [
-      "16.0",
-      "15.0"
-    ],
-    "supports": [
-      "OS3",
-      "OS2"
-    ],
-    "branchCount": 9,
-    "romCount": 77
-  },
-  {
     "device": "gram",
     "name": {
       "zh": "POCO M2 Pro",
@@ -2364,6 +3957,7 @@
     "brand": [
       "POCO"
     ],
+    "series": [],
     "code": "JP",
     "android": [
       "12.0",
@@ -2389,6 +3983,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "FB",
     "android": [
       "11.0",
@@ -2413,6 +4008,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "HK",
     "android": [
       "4.4"
@@ -2435,6 +4031,7 @@
     "brand": [
       "REDMI"
     ],
+    "series": [],
     "code": "DN",
     "android": [
       "16.0"
@@ -2446,54 +4043,6 @@
     "romCount": 23
   },
   {
-    "device": "haotian",
-    "name": {
-      "zh": "小米 15 Pro",
-      "en": "Xiaomi 15 Pro"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "OB",
-    "android": [
-      "16.0",
-      "15.0"
-    ],
-    "supports": [
-      "OS3",
-      "OS2"
-    ],
-    "branchCount": 4,
-    "romCount": 78
-  },
-  {
-    "device": "haydn",
-    "name": {
-      "zh": "小米 11i / Redmi K40 Pro/Pro+",
-      "en": "Mi 11i / Redmi K40 Pro/Pro+"
-    },
-    "brand": [
-      "Xiaomi",
-      "Redmi"
-    ],
-    "code": "KK",
-    "android": [
-      "14.0",
-      "13.0",
-      "12.0",
-      "11.0"
-    ],
-    "supports": [
-      "OS1",
-      "V14",
-      "V13",
-      "V12.5",
-      "V12"
-    ],
-    "branchCount": 13,
-    "romCount": 526
-  },
-  {
     "device": "helium",
     "name": {
       "zh": "小米 MAX 高配版",
@@ -2502,6 +4051,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "BD",
     "android": [
       "7.0",
@@ -2525,6 +4075,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "HN",
     "android": [
       "5.0"
@@ -2546,6 +4097,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "HM",
     "android": [
       "5.0"
@@ -2560,29 +4112,6 @@
     "romCount": 230
   },
   {
-    "device": "houji",
-    "name": {
-      "zh": "小米 14",
-      "en": "Xiaomi 14"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "NC",
-    "android": [
-      "16.0",
-      "15.0",
-      "14.0"
-    ],
-    "supports": [
-      "OS3",
-      "OS2",
-      "OS1"
-    ],
-    "branchCount": 16,
-    "romCount": 295
-  },
-  {
     "device": "hydrogen",
     "name": {
       "zh": "小米 MAX 标准版",
@@ -2591,6 +4120,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "BC",
     "android": [
       "7.0",
@@ -2615,6 +4145,7 @@
       "Redmi",
       "POCO"
     ],
+    "series": [],
     "code": "GM",
     "android": [
       "12.0"
@@ -2634,6 +4165,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "AI",
     "android": [
       "5.1"
@@ -2656,6 +4188,7 @@
       "Redmi",
       "POCO"
     ],
+    "series": [],
     "code": "LJ",
     "android": [
       "14.0",
@@ -2680,6 +4213,7 @@
     "brand": [
       "REDMI"
     ],
+    "series": [],
     "code": "DQ",
     "android": [
       "16.0"
@@ -2691,31 +4225,6 @@
     "romCount": 6
   },
   {
-    "device": "ishtar",
-    "name": {
-      "zh": "小米 13 Ultra",
-      "en": "Xiaomi 13 Ultra"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "MA",
-    "android": [
-      "16.0",
-      "15.0",
-      "14.0",
-      "13.0"
-    ],
-    "supports": [
-      "OS3",
-      "OS2",
-      "OS1",
-      "V14"
-    ],
-    "branchCount": 9,
-    "romCount": 217
-  },
-  {
     "device": "jasmine",
     "name": {
       "zh": "小米 A2",
@@ -2724,6 +4233,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "DI",
     "android": [
       "10.0",
@@ -2747,6 +4257,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "CH",
     "android": [
       "9.0",
@@ -2772,6 +4283,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "OX",
     "android": [
       "16.0",
@@ -2793,6 +4305,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "JZ",
     "android": [
       "12.0",
@@ -2818,6 +4331,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "HR",
     "android": [
       "6.0"
@@ -2840,6 +4354,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "HO",
     "android": [
       "6.0",
@@ -2863,6 +4378,7 @@
     "brand": [
       "REDMI"
     ],
+    "series": [],
     "code": "PJ",
     "android": [
       "16.0"
@@ -2882,6 +4398,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "GS",
     "android": [
       "16.0",
@@ -2895,28 +4412,6 @@
     "romCount": 63
   },
   {
-    "device": "klimt",
-    "name": {
-      "zh": "小米 15T Pro",
-      "en": "Xiaomi 15T Pro"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "ML",
-    "android": [
-      "17.0",
-      "16.0",
-      "15.0"
-    ],
-    "supports": [
-      "OS3",
-      "OS2"
-    ],
-    "branchCount": 11,
-    "romCount": 90
-  },
-  {
     "device": "konghou",
     "name": {
       "zh": "Xiaomi YU7 后排移动控制屏",
@@ -2925,6 +4420,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "BP",
     "android": [
       "14.0"
@@ -2944,6 +4440,7 @@
     "brand": [
       "REDMI"
     ],
+    "series": [],
     "code": "OW",
     "android": [
       "16.0",
@@ -2965,6 +4462,7 @@
     "brand": [
       "REDMI"
     ],
+    "series": [],
     "code": "PQ",
     "android": [
       "16.0",
@@ -2986,6 +4484,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "GT",
     "android": [
       "16.0",
@@ -3009,6 +4508,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "JC",
     "android": [
       "12.0",
@@ -3034,6 +4534,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "AL",
     "android": [
       "6.0"
@@ -3056,6 +4557,7 @@
     "brand": [
       "REDMI"
     ],
+    "series": [],
     "code": "PP",
     "android": [
       "16.0",
@@ -3077,6 +4579,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "AC",
     "android": [
       "5.1"
@@ -3098,6 +4601,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "FQ",
     "android": [
       "11.0",
@@ -3121,6 +4625,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "FM",
     "android": [
       "10.0",
@@ -3144,6 +4649,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "FG",
     "android": [
       "10.0",
@@ -3167,6 +4673,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "HD",
     "android": [
       "4.4",
@@ -3191,6 +4698,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "HE",
     "android": [
       "4.4",
@@ -3216,6 +4724,7 @@
       "REDMI",
       "POCO"
     ],
+    "series": [],
     "code": "DT",
     "android": [
       "16.0"
@@ -3235,6 +4744,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "XH",
     "android": [
       "7.0",
@@ -3251,30 +4761,6 @@
     "romCount": 143
   },
   {
-    "device": "libra",
-    "name": {
-      "zh": "小米 4C",
-      "en": "Mi 4C"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "XK",
-    "android": [
-      "7.0",
-      "5.1"
-    ],
-    "supports": [
-      "V9",
-      "V8",
-      "V7",
-      "V6",
-      "V10"
-    ],
-    "branchCount": 2,
-    "romCount": 161
-  },
-  {
     "device": "light",
     "name": {
       "zh": "Redmi 10 5G / Redmi Note 11E / POCO M4 5G",
@@ -3283,6 +4769,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "LS",
     "android": [
       "14.0",
@@ -3306,6 +4793,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "LS",
     "android": [
       "14.0",
@@ -3329,6 +4817,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "KN",
     "android": [
       "13.0",
@@ -3350,6 +4839,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "JQ",
     "android": [
       "12.0",
@@ -3366,32 +4856,6 @@
     "romCount": 448
   },
   {
-    "device": "lisa",
-    "name": {
-      "zh": "小米 11 青春活力版",
-      "en": "Mi 11 LE/Xiaomi 11 Lite 5G NE"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "KO",
-    "android": [
-      "14.0",
-      "13.0",
-      "12.0",
-      "11.0"
-    ],
-    "supports": [
-      "OS2",
-      "OS1",
-      "V14",
-      "V13",
-      "V12.5"
-    ],
-    "branchCount": 20,
-    "romCount": 485
-  },
-  {
     "device": "lithium",
     "name": {
       "zh": "小米 MIX",
@@ -3400,6 +4864,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "AH",
     "android": [
       "8.0",
@@ -3424,6 +4889,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "MY",
     "android": [
       "15.0",
@@ -3449,6 +4915,7 @@
       "Redmi",
       "POCO"
     ],
+    "series": [],
     "code": "JK",
     "android": [
       "12.0",
@@ -3474,6 +4941,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "FI",
     "android": [
       "8.1"
@@ -3494,6 +4962,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "HL",
     "android": [
       "4.4"
@@ -3516,6 +4985,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "OI",
     "android": [
       "16.0",
@@ -3538,6 +5008,7 @@
       "Redmi",
       "POCO"
     ],
+    "series": [],
     "code": "OO",
     "android": [
       "16.0",
@@ -3561,6 +5032,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "NM",
     "android": [
       "16.0",
@@ -3585,6 +5057,7 @@
       "Redmi",
       "POCO"
     ],
+    "series": [],
     "code": "MR",
     "android": [
       "15.0",
@@ -3609,6 +5082,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "BE",
     "android": [
       "6.0"
@@ -3630,6 +5104,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "LK",
     "android": [
       "14.0",
@@ -3646,55 +5121,6 @@
     "romCount": 141
   },
   {
-    "device": "mayfly",
-    "name": {
-      "zh": "小米 12S",
-      "en": "Xiaomi 12S"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "LT",
-    "android": [
-      "15.0",
-      "14.0",
-      "13.0",
-      "12.0"
-    ],
-    "supports": [
-      "OS3",
-      "OS2",
-      "OS1",
-      "V14",
-      "V13"
-    ],
-    "branchCount": 3,
-    "romCount": 127
-  },
-  {
-    "device": "meri",
-    "name": {
-      "zh": "小米 5C",
-      "en": "Mi 5C"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "CJ",
-    "android": [
-      "7.1",
-      "6.0"
-    ],
-    "supports": [
-      "V9",
-      "V8",
-      "V11",
-      "V10"
-    ],
-    "branchCount": 2,
-    "romCount": 124
-  },
-  {
     "device": "merlin",
     "name": {
       "zh": "Redmi 10X 4G / Redmi Note 9",
@@ -3703,6 +5129,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "JO",
     "android": [
       "12.0",
@@ -3727,6 +5154,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "CF",
     "android": [
       "7.0",
@@ -3743,31 +5171,6 @@
     "romCount": 232
   },
   {
-    "device": "mione_plus",
-    "name": {
-      "zh": "小米手机1/1S",
-      "en": "MI 1/1S"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "MA",
-    "android": [
-      "4.1",
-      "4.0",
-      "2.3"
-    ],
-    "supports": [
-      "V6",
-      "V5",
-      "V4",
-      "V3",
-      "Stock"
-    ],
-    "branchCount": 7,
-    "romCount": 223
-  },
-  {
     "device": "miro",
     "name": {
       "zh": "REDMI K80 Pro",
@@ -3776,6 +5179,7 @@
     "brand": [
       "REDMI"
     ],
+    "series": [],
     "code": "OM",
     "android": [
       "16.0",
@@ -3797,6 +5201,7 @@
     "brand": [
       "REDMI"
     ],
+    "series": [],
     "code": "PU",
     "android": [
       "16.0"
@@ -3816,6 +5221,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "XF",
     "android": [
       "4.4"
@@ -3839,6 +5245,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "KG",
     "android": [
       "12.0",
@@ -3862,6 +5269,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "KV",
     "android": [
       "13.0",
@@ -3887,6 +5295,7 @@
       "Redmi",
       "POCO"
     ],
+    "series": [],
     "code": "MN",
     "android": [
       "15.0",
@@ -3903,30 +5312,6 @@
     "romCount": 229
   },
   {
-    "device": "monet",
-    "name": {
-      "zh": "小米 10 Lite",
-      "en": "Mi 10 Lite"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "JI",
-    "android": [
-      "12.0",
-      "11.0",
-      "10.0"
-    ],
-    "supports": [
-      "V13",
-      "V12.5",
-      "V12",
-      "V11"
-    ],
-    "branchCount": 13,
-    "romCount": 69
-  },
-  {
     "device": "moon",
     "name": {
       "zh": "Redmi 13 / POCO M6 4G",
@@ -3936,6 +5321,7 @@
       "Redmi",
       "POCO"
     ],
+    "series": [],
     "code": "NT",
     "android": [
       "16.0",
@@ -3959,6 +5345,7 @@
     "brand": [
       "POCO"
     ],
+    "series": [],
     "code": "MP",
     "android": [
       "14.0",
@@ -3983,6 +5370,7 @@
       "Redmi",
       "POCO"
     ],
+    "series": [],
     "code": "LM",
     "android": [
       "14.0",
@@ -4006,6 +5394,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "OY",
     "android": [
       "16.0",
@@ -4027,6 +5416,7 @@
     "brand": [
       "REDMI"
     ],
+    "series": [],
     "code": "PM",
     "android": [
       "17.0",
@@ -4048,6 +5438,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "KX",
     "android": [
       "13.0",
@@ -4064,51 +5455,6 @@
     "romCount": 356
   },
   {
-    "device": "natrium",
-    "name": {
-      "zh": "小米 5s Plus",
-      "en": "Mi 5s Plus"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "BG",
-    "android": [
-      "8.0",
-      "7.0",
-      "6.0"
-    ],
-    "supports": [
-      "V9",
-      "V8",
-      "V11",
-      "V10"
-    ],
-    "branchCount": 4,
-    "romCount": 248
-  },
-  {
-    "device": "nezha",
-    "name": {
-      "zh": "小米 17 Ultra",
-      "en": "Xiaomi 17 Ultra"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "PA",
-    "android": [
-      "17.0",
-      "16.0"
-    ],
-    "supports": [
-      "OS4",
-      "OS3"
-    ],
-    "branchCount": 15,
-    "romCount": 82
-  },
-  {
     "device": "nikel",
     "name": {
       "zh": "红米 Note 4",
@@ -4117,6 +5463,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "BF",
     "android": [
       "6.0"
@@ -4139,6 +5486,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "ED",
     "android": [
       "10.0",
@@ -4156,31 +5504,6 @@
     "romCount": 194
   },
   {
-    "device": "nuwa",
-    "name": {
-      "zh": "小米 13 Pro",
-      "en": "Xiaomi 13 Pro"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "MB",
-    "android": [
-      "16.0",
-      "15.0",
-      "14.0",
-      "13.0"
-    ],
-    "supports": [
-      "OS3",
-      "OS2",
-      "OS1",
-      "V14"
-    ],
-    "branchCount": 15,
-    "romCount": 315
-  },
-  {
     "device": "obsidian",
     "name": {
       "zh": "Redmi Note 14 Pro",
@@ -4189,6 +5512,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "OF",
     "android": [
       "16.0",
@@ -4212,6 +5536,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "KM",
     "android": [
       "14.0",
@@ -4237,6 +5562,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "CN",
     "android": [
       "10.0",
@@ -4260,6 +5586,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "CP",
     "android": [
       "10.0",
@@ -4283,6 +5610,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "CQ",
     "android": [
       "10.0",
@@ -4305,6 +5633,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "HQ",
     "android": [
       "6.0"
@@ -4327,6 +5656,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "FF",
     "android": [
       "10.0",
@@ -4348,6 +5678,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "FL",
     "android": [
       "10.0",
@@ -4372,6 +5703,7 @@
       "Redmi",
       "POCO"
     ],
+    "series": [],
     "code": "OL",
     "android": [
       "16.0",
@@ -4393,6 +5725,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "GL",
     "android": [
       "13.0",
@@ -4416,6 +5749,7 @@
     "brand": [
       "REDMI"
     ],
+    "series": [],
     "code": "PX",
     "android": [
       "16.0",
@@ -4437,6 +5771,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "DD",
     "android": [
       "7.1"
@@ -4451,27 +5786,6 @@
     "romCount": 200
   },
   {
-    "device": "pandora",
-    "name": {
-      "zh": "小米 17 Pro",
-      "en": "Xiaomi 17 Pro"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "BL",
-    "android": [
-      "17.0",
-      "16.0"
-    ],
-    "supports": [
-      "OS4",
-      "OS3"
-    ],
-    "branchCount": 3,
-    "romCount": 40
-  },
-  {
     "device": "pearl",
     "name": {
       "zh": "Redmi Note 12T Pro",
@@ -4480,6 +5794,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "LH",
     "android": [
       "15.0",
@@ -4505,6 +5820,7 @@
       "Redmi",
       "POCO"
     ],
+    "series": [],
     "code": "NP",
     "android": [
       "16.0",
@@ -4528,6 +5844,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "EE",
     "android": [
       "10.0",
@@ -4552,6 +5869,7 @@
       "Redmi",
       "POCO"
     ],
+    "series": [],
     "code": "GH",
     "android": [
       "12.0",
@@ -4576,6 +5894,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "PY",
     "android": [
       "17.0",
@@ -4597,6 +5916,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "GI",
     "android": [
       "12.0",
@@ -4621,6 +5941,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "GI",
     "android": [
       "12.0",
@@ -4645,6 +5966,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "CM",
     "android": [
       "10.0",
@@ -4668,6 +5990,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "MZ",
     "android": [
       "14.0",
@@ -4682,128 +6005,6 @@
     "romCount": 248
   },
   {
-    "device": "pisces",
-    "name": {
-      "zh": "小米3 移动版",
-      "en": "MI 3 TD"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "XC",
-    "android": [
-      "4.4",
-      "4.2"
-    ],
-    "supports": [
-      "V9",
-      "V8",
-      "V7",
-      "V6",
-      "V5"
-    ],
-    "branchCount": 3,
-    "romCount": 211
-  },
-  {
-    "device": "pissarro",
-    "name": {
-      "zh": "小米 11i / Hypercharge / Redmi Note 11 Pro / Pro+ 5G",
-      "en": "Xiaomi 11i / Hypercharge / Redmi Note 11 Pro / Pro+ 5G"
-    },
-    "brand": [
-      "Xiaomi",
-      "Redmi"
-    ],
-    "code": "KT",
-    "android": [
-      "13.0",
-      "12.0",
-      "11.0"
-    ],
-    "supports": [
-      "OS1",
-      "V14",
-      "V13",
-      "V12.5"
-    ],
-    "branchCount": 11,
-    "romCount": 345
-  },
-  {
-    "device": "pissarroin",
-    "name": {
-      "zh": "小米 11i 5G 印度版",
-      "en": "Xiaomi 11i 5G India"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "KT",
-    "android": [
-      "13.0",
-      "12.0",
-      "11.0"
-    ],
-    "supports": [
-      "V14",
-      "V13",
-      "V12.5"
-    ],
-    "branchCount": 2,
-    "romCount": 18
-  },
-  {
-    "device": "platina",
-    "name": {
-      "zh": "小米 8 青春版",
-      "en": "Mi 8 Lite"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "DT",
-    "android": [
-      "10.0",
-      "9.0",
-      "8.1"
-    ],
-    "supports": [
-      "V9",
-      "V12.5",
-      "V12",
-      "V11",
-      "V10"
-    ],
-    "branchCount": 5,
-    "romCount": 180
-  },
-  {
-    "device": "plato",
-    "name": {
-      "zh": "小米 12T",
-      "en": "Xiaomi 12T"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "LQ",
-    "android": [
-      "15.0",
-      "14.0",
-      "13.0",
-      "12.0"
-    ],
-    "supports": [
-      "OS2",
-      "OS1",
-      "V14",
-      "V13"
-    ],
-    "branchCount": 10,
-    "romCount": 204
-  },
-  {
     "device": "polaris",
     "name": {
       "zh": "小米 MIX 2S",
@@ -4812,6 +6013,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "DG",
     "android": [
       "10.0",
@@ -4829,27 +6031,6 @@
     "romCount": 442
   },
   {
-    "device": "popsicle",
-    "name": {
-      "zh": "小米 17 Pro Max",
-      "en": "Xiaomi 17 Pro Max"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "PB",
-    "android": [
-      "17.0",
-      "16.0"
-    ],
-    "supports": [
-      "OS4",
-      "OS3"
-    ],
-    "branchCount": 3,
-    "romCount": 43
-  },
-  {
     "device": "prada",
     "name": {
       "zh": "红米 4 标准版",
@@ -4858,6 +6039,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "CE",
     "android": [
       "6.0"
@@ -4879,6 +6061,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "AA",
     "android": [
       "16.0"
@@ -4898,6 +6081,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "LD",
     "android": [
       "13.0",
@@ -4913,27 +6097,6 @@
     "romCount": 262
   },
   {
-    "device": "pudding",
-    "name": {
-      "zh": "小米 17",
-      "en": "Xiaomi 17"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "PC",
-    "android": [
-      "17.0",
-      "16.0"
-    ],
-    "supports": [
-      "OS4",
-      "OS3"
-    ],
-    "branchCount": 15,
-    "romCount": 103
-  },
-  {
     "device": "pyxis",
     "name": {
       "zh": "小米 CC 9 / 小米 9 Lite",
@@ -4942,6 +6105,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "FC",
     "android": [
       "11.0",
@@ -4967,6 +6131,7 @@
       "Xiaomi",
       "Redmi"
     ],
+    "series": [],
     "code": "FK",
     "android": [
       "11.0",
@@ -4991,6 +6156,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "FK",
     "android": [
       "9.0"
@@ -5011,6 +6177,7 @@
       "Redmi",
       "POCO"
     ],
+    "series": [],
     "code": "MS",
     "android": [
       "14.0",
@@ -5034,6 +6201,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "MM",
     "android": [
       "14.0",
@@ -5050,30 +6218,6 @@
     "romCount": 31
   },
   {
-    "device": "renoir",
-    "name": {
-      "zh": "小米 11 青春版",
-      "en": "Mi 11 Lite 5G"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "KI",
-    "android": [
-      "13.0",
-      "12.0",
-      "11.0"
-    ],
-    "supports": [
-      "V14",
-      "V13",
-      "V12.5",
-      "V12"
-    ],
-    "branchCount": 18,
-    "romCount": 434
-  },
-  {
     "device": "riva",
     "name": {
       "zh": "红米5A",
@@ -5082,6 +6226,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "CK",
     "android": [
       "8.1",
@@ -5106,6 +6251,7 @@
       "Redmi",
       "POCO"
     ],
+    "series": [],
     "code": "LU",
     "android": [
       "14.0",
@@ -5130,6 +6276,7 @@
       "Redmi",
       "POCO"
     ],
+    "series": [],
     "code": "OJ",
     "android": [
       "16.0",
@@ -5151,6 +6298,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "CC",
     "android": [
       "7.1",
@@ -5173,6 +6321,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "KL",
     "android": [
       "13.0",
@@ -5197,6 +6346,7 @@
     "brand": [
       "POCO"
     ],
+    "series": [],
     "code": "FF",
     "android": [
       "13.0",
@@ -5218,6 +6368,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "DA",
     "android": [
       "8.1",
@@ -5241,6 +6392,7 @@
       "Xiaomi",
       "Redmi"
     ],
+    "series": [],
     "code": "NN",
     "android": [
       "16.0",
@@ -5265,6 +6417,7 @@
       "Redmi",
       "POCO"
     ],
+    "series": [],
     "code": "FS",
     "android": [
       "16.0",
@@ -5288,6 +6441,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "LN",
     "android": [
       "14.0",
@@ -5312,6 +6466,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "MO",
     "android": [
       "14.0",
@@ -5336,6 +6491,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "NI",
     "android": [
       "16.0",
@@ -5351,31 +6507,6 @@
     "romCount": 111
   },
   {
-    "device": "sagit",
-    "name": {
-      "zh": "小米 6",
-      "en": "Mi 6"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "CA",
-    "android": [
-      "9.0",
-      "8.0",
-      "7.1"
-    ],
-    "supports": [
-      "V9",
-      "V8",
-      "V12",
-      "V11",
-      "V10"
-    ],
-    "branchCount": 5,
-    "romCount": 418
-  },
-  {
     "device": "sakura",
     "name": {
       "zh": "红米 6 Pro",
@@ -5384,6 +6515,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "DI",
     "android": [
       "9.0",
@@ -5407,6 +6539,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "AM",
     "android": [
       "7.1",
@@ -5430,6 +6563,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "NG",
     "android": [
       "15.0",
@@ -5453,6 +6587,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "NH",
     "android": [
       "15.0",
@@ -5476,6 +6611,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "AD",
     "android": [
       "8.0",
@@ -5500,6 +6636,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "HZ",
     "android": [
       "15.0",
@@ -5523,6 +6660,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "KU",
     "android": [
       "13.0",
@@ -5548,6 +6686,7 @@
       "REDMI",
       "POCO"
     ],
+    "series": [],
     "code": "GW",
     "android": [
       "15.0"
@@ -5567,6 +6706,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "NX",
     "android": [
       "16.0",
@@ -5590,6 +6730,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "NB",
     "android": [
       "16.0",
@@ -5605,25 +6746,6 @@
     "romCount": 141
   },
   {
-    "device": "shennong_t",
-    "name": {
-      "zh": "小米 14 Pro 钛金属卫星通讯版",
-      "en": "Xiaomi 14 Pro Ti Satellite"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "ND",
-    "android": [
-      "14.0"
-    ],
-    "supports": [
-      "OS1"
-    ],
-    "branchCount": 1,
-    "romCount": 4
-  },
-  {
     "device": "shiva",
     "name": {
       "zh": "POCO M2",
@@ -5632,6 +6754,7 @@
     "brand": [
       "POCO"
     ],
+    "series": [],
     "code": "JR",
     "android": [
       "11.0",
@@ -5646,31 +6769,6 @@
     "romCount": 22
   },
   {
-    "device": "sirius",
-    "name": {
-      "zh": "小米 8 SE",
-      "en": "Mi 8 SE"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "EB",
-    "android": [
-      "10.0",
-      "9.0",
-      "8.1"
-    ],
-    "supports": [
-      "V9",
-      "V12.5",
-      "V12",
-      "V11",
-      "V10"
-    ],
-    "branchCount": 2,
-    "romCount": 280
-  },
-  {
     "device": "sky",
     "name": {
       "zh": "Redmi 12 5G / Redmi Note 12R / POCO M6 Pro 5G",
@@ -5680,6 +6778,7 @@
       "Redmi",
       "POCO"
     ],
+    "series": [],
     "code": "MW",
     "android": [
       "15.0",
@@ -5703,6 +6802,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "MK",
     "android": [
       "16.0",
@@ -5728,6 +6828,7 @@
     "brand": [
       "POCO"
     ],
+    "series": [],
     "code": "BW",
     "android": [
       "16.0"
@@ -5747,6 +6848,7 @@
     "brand": [
       "REDMI"
     ],
+    "series": [],
     "code": "GN",
     "android": [
       "16.0"
@@ -5766,6 +6868,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "HY",
     "android": [
       "16.0",
@@ -5789,6 +6892,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "GC",
     "android": [
       "13.0",
@@ -5812,6 +6916,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "GK",
     "android": [
       "13.0",
@@ -5835,6 +6940,7 @@
     "brand": [
       "REDMI"
     ],
+    "series": [],
     "code": "PG",
     "android": [
       "16.0",
@@ -5856,6 +6962,7 @@
     "brand": [
       "REDMI"
     ],
+    "series": [],
     "code": "OU",
     "android": [
       "16.0",
@@ -5869,33 +6976,6 @@
     "romCount": 66
   },
   {
-    "device": "star",
-    "name": {
-      "zh": "小米 11 Pro/Ultra",
-      "en": "Mi 11 Pro/Ultra"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "KA",
-    "android": [
-      "14.0",
-      "13.0",
-      "12.0",
-      "11.0"
-    ],
-    "supports": [
-      "OS2",
-      "OS1",
-      "V14",
-      "V13",
-      "V12.5",
-      "V12"
-    ],
-    "branchCount": 10,
-    "romCount": 516
-  },
-  {
     "device": "steppe",
     "name": {
       "zh": "REDMI M100",
@@ -5904,6 +6984,7 @@
     "brand": [
       "REDMI"
     ],
+    "series": [],
     "code": "AV",
     "android": [
       "16.0"
@@ -5923,6 +7004,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "MQ",
     "android": [
       "14.0",
@@ -5947,6 +7029,7 @@
     "brand": [
       "POCO"
     ],
+    "series": [],
     "code": "JG",
     "android": [
       "12.0",
@@ -5971,6 +7054,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "KF",
     "android": [
       "13.0",
@@ -5995,6 +7079,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "HG",
     "android": [
       "13.0",
@@ -6018,6 +7103,7 @@
     "brand": [
       "REDMI"
     ],
+    "series": [],
     "code": "OV",
     "android": [
       "16.0",
@@ -6039,6 +7125,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "OG",
     "android": [
       "16.0",
@@ -6054,29 +7141,6 @@
     "romCount": 130
   },
   {
-    "device": "taoyao",
-    "name": {
-      "zh": "小米 12 Lite",
-      "en": "Xiaomi 12 Lite"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "LI",
-    "android": [
-      "14.0",
-      "13.0",
-      "12.0"
-    ],
-    "supports": [
-      "OS1",
-      "V14",
-      "V13"
-    ],
-    "branchCount": 8,
-    "romCount": 215
-  },
-  {
     "device": "tapas",
     "name": {
       "zh": "Redmi Note 12 4G",
@@ -6085,6 +7149,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "MT",
     "android": [
       "15.0",
@@ -6100,81 +7165,6 @@
     "romCount": 124
   },
   {
-    "device": "taurus",
-    "name": {
-      "zh": "小米 2A",
-      "en": "Mi 2A"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "LB",
-    "android": [
-      "4.4",
-      "4.1"
-    ],
-    "supports": [
-      "V7",
-      "V6",
-      "V5",
-      "V4",
-      "Stock"
-    ],
-    "branchCount": 4,
-    "romCount": 174
-  },
-  {
-    "device": "thor",
-    "name": {
-      "zh": "小米 12S Ultra",
-      "en": "Xiaomi 12S Ultra"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "LA",
-    "android": [
-      "15.0",
-      "14.0",
-      "13.0",
-      "12.0"
-    ],
-    "supports": [
-      "OS3",
-      "OS2",
-      "OS1",
-      "V14",
-      "V13"
-    ],
-    "branchCount": 3,
-    "romCount": 126
-  },
-  {
-    "device": "thyme",
-    "name": {
-      "zh": "小米 10S",
-      "en": "Mi 10S"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "GA",
-    "android": [
-      "13.0",
-      "12.0",
-      "11.0"
-    ],
-    "supports": [
-      "OS1",
-      "V14",
-      "V13",
-      "V12.5",
-      "V12"
-    ],
-    "branchCount": 3,
-    "romCount": 350
-  },
-  {
     "device": "tiare",
     "name": {
       "zh": "红米 Go",
@@ -6183,6 +7173,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "CL",
     "android": [
       "8.1"
@@ -6194,29 +7185,6 @@
     "romCount": 63
   },
   {
-    "device": "tiffany",
-    "name": {
-      "zh": "小米 5X",
-      "en": "Mi 5X"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "DB",
-    "android": [
-      "8.1",
-      "7.1"
-    ],
-    "supports": [
-      "V9",
-      "V8",
-      "V11",
-      "V10"
-    ],
-    "branchCount": 2,
-    "romCount": 106
-  },
-  {
     "device": "tissot",
     "name": {
       "zh": "小米 A1",
@@ -6225,6 +7193,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "DH",
     "android": [
       "9.0",
@@ -6248,6 +7217,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "FN",
     "android": [
       "12.0",
@@ -6272,6 +7242,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "MG",
     "android": [
       "15.0",
@@ -6295,6 +7266,7 @@
     "brand": [
       "REDMI"
     ],
+    "series": [],
     "code": "PO",
     "android": [
       "16.0",
@@ -6316,6 +7288,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "FD",
     "android": [
       "11.0",
@@ -6340,6 +7313,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "EK",
     "android": [
       "9.0",
@@ -6363,6 +7337,7 @@
     "brand": [
       "REDMI"
     ],
+    "series": [],
     "code": "AO",
     "android": [
       "16.0",
@@ -6384,6 +7359,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "DK",
     "android": [
       "7.1"
@@ -6406,6 +7382,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "DF",
     "android": [
       "7.1"
@@ -6428,6 +7405,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "OZ",
     "android": [
       "16.0",
@@ -6441,108 +7419,6 @@
     "romCount": 128
   },
   {
-    "device": "umi",
-    "name": {
-      "zh": "小米 10",
-      "en": "Mi 10"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "JB",
-    "android": [
-      "13.0",
-      "12.0",
-      "11.0",
-      "10.0"
-    ],
-    "supports": [
-      "OS1",
-      "V14",
-      "V13",
-      "V12.5",
-      "V12",
-      "V11"
-    ],
-    "branchCount": 15,
-    "romCount": 572
-  },
-  {
-    "device": "unicorn",
-    "name": {
-      "zh": "小米 12S Pro",
-      "en": "Xiaomi 12S Pro"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "LE",
-    "android": [
-      "15.0",
-      "14.0",
-      "13.0",
-      "12.0"
-    ],
-    "supports": [
-      "OS3",
-      "OS2",
-      "OS1",
-      "V14",
-      "V13"
-    ],
-    "branchCount": 4,
-    "romCount": 127
-  },
-  {
-    "device": "ursa",
-    "name": {
-      "zh": "小米 8 透明探索版",
-      "en": "Mi 8 Explorer"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "EH",
-    "android": [
-      "10.0",
-      "9.0",
-      "8.1"
-    ],
-    "supports": [
-      "V9",
-      "V12.5",
-      "V12",
-      "V11",
-      "V10"
-    ],
-    "branchCount": 2,
-    "romCount": 131
-  },
-  {
-    "device": "vangogh",
-    "name": {
-      "zh": "小米 10 青春版",
-      "en": "Mi 10 Lite Zoom"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "JV",
-    "android": [
-      "12.0",
-      "11.0",
-      "10.0"
-    ],
-    "supports": [
-      "V13",
-      "V12.5",
-      "V12",
-      "V11"
-    ],
-    "branchCount": 2,
-    "romCount": 322
-  },
-  {
     "device": "vayu",
     "name": {
       "zh": "POCO X3 Pro",
@@ -6551,6 +7427,7 @@
     "brand": [
       "POCO"
     ],
+    "series": [],
     "code": "JU",
     "android": [
       "13.0",
@@ -6575,6 +7452,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "FE",
     "android": [
       "11.0",
@@ -6591,33 +7469,6 @@
     "romCount": 298
   },
   {
-    "device": "venus",
-    "name": {
-      "zh": "小米 11",
-      "en": "Mi 11"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "KB",
-    "android": [
-      "14.0",
-      "13.0",
-      "12.0",
-      "11.0"
-    ],
-    "supports": [
-      "OS2",
-      "OS1",
-      "V14",
-      "V13",
-      "V12.5",
-      "V12"
-    ],
-    "branchCount": 15,
-    "romCount": 641
-  },
-  {
     "device": "vermeer",
     "name": {
       "zh": "Redmi K70 / POCO F6 Pro",
@@ -6627,6 +7478,7 @@
       "Redmi",
       "POCO"
     ],
+    "series": [],
     "code": "NK",
     "android": [
       "16.0",
@@ -6650,6 +7502,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "KC",
     "android": [
       "13.0",
@@ -6673,6 +7526,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "GD",
     "android": [
       "13.0",
@@ -6688,32 +7542,6 @@
     "romCount": 26
   },
   {
-    "device": "vili",
-    "name": {
-      "zh": "小米 11T Pro",
-      "en": "Xiaomi 11T Pro"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "KD",
-    "android": [
-      "14.0",
-      "13.0",
-      "12.0",
-      "11.0"
-    ],
-    "supports": [
-      "OS1",
-      "V14",
-      "V13",
-      "V12.5",
-      "V12"
-    ],
-    "branchCount": 16,
-    "romCount": 344
-  },
-  {
     "device": "vince",
     "name": {
       "zh": "红米5 Plus / Note 5",
@@ -6722,6 +7550,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "EG",
     "android": [
       "8.1",
@@ -6744,6 +7573,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "FH",
     "android": [
       "10.0",
@@ -6767,6 +7597,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "OT",
     "android": [
       "16.0",
@@ -6788,6 +7619,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "XE",
     "android": [
       "6.0",
@@ -6811,6 +7643,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "XJ",
     "android": [
       "4.4"
@@ -6831,6 +7664,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "GD",
     "android": [
       "13.0",
@@ -6846,25 +7680,6 @@
     "romCount": 99
   },
   {
-    "device": "warhol",
-    "name": {
-      "zh": "小米 17T Pro",
-      "en": "Xiaomi 17T Pro"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "PS",
-    "android": [
-      "16.0"
-    ],
-    "supports": [
-      "OS3"
-    ],
-    "branchCount": 12,
-    "romCount": 45
-  },
-  {
     "device": "warm",
     "name": {
       "zh": "Redmi A4 5G / POCO C75 5G",
@@ -6874,6 +7689,7 @@
       "Redmi",
       "POCO"
     ],
+    "series": [],
     "code": "GV",
     "android": [
       "16.0",
@@ -6897,6 +7713,7 @@
     "brand": [
       "REDMI"
     ],
+    "series": [],
     "code": "ON",
     "android": [
       "16.0"
@@ -6917,6 +7734,7 @@
       "Redmi",
       "POCO"
     ],
+    "series": [],
     "code": "GO",
     "android": [
       "13.0"
@@ -6928,29 +7746,6 @@
     "romCount": 229
   },
   {
-    "device": "wayne",
-    "name": {
-      "zh": "小米 6X",
-      "en": "Mi 6X"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "DC",
-    "android": [
-      "9.0",
-      "8.1"
-    ],
-    "supports": [
-      "V9",
-      "V12",
-      "V11",
-      "V10"
-    ],
-    "branchCount": 2,
-    "romCount": 242
-  },
-  {
     "device": "whyred",
     "name": {
       "zh": "红米 Note 5",
@@ -6959,6 +7754,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "EI",
     "android": [
       "9.0",
@@ -6983,6 +7779,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "CX",
     "android": [
       "11.0",
@@ -7007,6 +7804,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "HJ",
     "android": [
       "4.4"
@@ -7029,6 +7827,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "HJ",
     "android": [
       "5.1"
@@ -7050,6 +7849,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "HJ",
     "android": [
       "4.4"
@@ -7072,6 +7872,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "HJ",
     "android": [
       "5.1"
@@ -7093,6 +7894,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "HA",
     "android": [
       "4.4",
@@ -7118,6 +7920,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "HF",
     "android": [
       "4.4",
@@ -7142,6 +7945,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "HH",
     "android": [
       "4.4"
@@ -7165,6 +7969,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "HB",
     "android": [
       "4.4",
@@ -7190,6 +7995,7 @@
       "Redmi",
       "POCO"
     ],
+    "series": [],
     "code": "LO",
     "android": [
       "14.0",
@@ -7206,27 +8012,6 @@
     "romCount": 237
   },
   {
-    "device": "xuanyuan",
-    "name": {
-      "zh": "小米 15 Ultra",
-      "en": "Xiaomi 15 Ultra"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "OA",
-    "android": [
-      "16.0",
-      "15.0"
-    ],
-    "supports": [
-      "OS3",
-      "OS2"
-    ],
-    "branchCount": 14,
-    "romCount": 160
-  },
-  {
     "device": "xun",
     "name": {
       "zh": "Redmi 平板 SE",
@@ -7235,6 +8020,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "MU",
     "android": [
       "15.0",
@@ -7258,6 +8044,7 @@
     "brand": [
       "REDMI"
     ],
+    "series": [],
     "code": "AK",
     "android": [
       "16.0"
@@ -7277,6 +8064,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "EF",
     "android": [
       "9.0",
@@ -7300,6 +8088,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "MH",
     "android": [
       "15.0",
@@ -7324,6 +8113,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "MI",
     "android": [
       "15.0",
@@ -7348,6 +8138,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "LY",
     "android": [
       "14.0",
@@ -7371,6 +8162,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "PZ",
     "android": [
       "17.0",
@@ -7381,33 +8173,7 @@
       "OS3"
     ],
     "branchCount": 11,
-    "romCount": 50
-  },
-  {
-    "device": "zeus",
-    "name": {
-      "zh": "小米 12 Pro",
-      "en": "Xiaomi 12 Pro"
-    },
-    "brand": [
-      "Xiaomi"
-    ],
-    "code": "LB",
-    "android": [
-      "15.0",
-      "14.0",
-      "13.0",
-      "12.0"
-    ],
-    "supports": [
-      "OS3",
-      "OS2",
-      "OS1",
-      "V14",
-      "V13"
-    ],
-    "branchCount": 12,
-    "romCount": 422
+    "romCount": 51
   },
   {
     "device": "zijin",
@@ -7418,6 +8184,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "LP",
     "android": [
       "14.0",
@@ -7441,6 +8208,7 @@
     "brand": [
       "Redmi"
     ],
+    "series": [],
     "code": "NO",
     "android": [
       "16.0",
@@ -7466,6 +8234,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "LL",
     "android": [
       "15.0",
@@ -7492,6 +8261,7 @@
     "brand": [
       "Xiaomi"
     ],
+    "series": [],
     "code": "LR",
     "android": [
       "15.0",
@@ -7518,6 +8288,7 @@
     "brand": [
       "REDMI"
     ],
+    "series": [],
     "code": "OK",
     "android": [
       "16.0",

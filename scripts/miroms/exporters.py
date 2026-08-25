@@ -29,6 +29,177 @@ def normalize_bigver(bigver: Any) -> str:
 		)
 
 
+# ==================== 设备系列（series）排序 ====================
+# 品牌排序权重：Xiaomi > REDMI > POCO
+_BRAND_ORDER: Dict[str, int] = {"xiaomi": 0, "redmi": 1, "poco": 2}
+
+# series 数据缓存（惰性加载，避免每台设备导出时重复查询）
+_series_cache: Dict[str, Any] | None = None
+
+
+def _brand_key(full_name: str) -> str:
+		"""品牌全称/简称 → 品牌 key（xiaomi/redmi/poco），无法识别返回空串"""
+		v = (full_name or "").lower()
+		if "xiaomi" in v:
+				return "xiaomi"
+		if "redmi" in v:
+				return "redmi"
+		if "poco" in v:
+				return "poco"
+		return ""
+
+
+def _series_row_key(row: Tuple) -> Tuple[int, int, int]:
+		"""series 行排序 key：(品牌顺序, sort_order, id)"""
+		brand = row[1] or ""
+		return (
+				_BRAND_ORDER.get(brand, 99),
+				int(row[5] or 0),
+				int(row[0] or 0),
+		)
+
+
+def load_series_data() -> Dict[str, Any]:
+		"""读取 series 表并结合设备基准行 id，解析出全局设备排序顺序。
+
+		返回:
+		- order: 全局有序的设备代号列表（入系列设备按品牌→系列→系列内序号去重排序，
+		  未入系列的设备按品牌顺序+代号拼接到末尾）
+		- devices: {代号: {brand, zh, en}}，每台设备归属的「主系列」（品牌+名称）
+		- device_series: {代号: [{brand, zh, en}, ...]}，每台设备归属的全部系列
+		- series: series 表原始行（含解析后的 codenames 列表）
+		"""
+		global _series_cache
+		if _series_cache is not None:
+				return _series_cache
+
+		# 1. 设备代号 -> 基准行 id（优先 tag='CnOO'，否则最小 id）
+		device_sql = """SELECT d.device,
+				COALESCE(MAX(CASE WHEN d.tag = 'CnOO' THEN d.id END), MIN(d.id)) AS ref_id
+				FROM devices d GROUP BY d.device"""
+		device_rows = DatabaseManager.execute(device_sql, params=(), fetch_one=False) or []
+		device_to_ref: Dict[str, int] = {}
+		ref_to_device: Dict[int, str] = {}
+		for row in device_rows:
+				if not row or len(row) < 2 or not row[0]:
+						continue
+				device, ref_id = row[0], row[1]
+				device_to_ref[device] = ref_id
+				if ref_id is not None and ref_id not in ref_to_device:
+						ref_to_device[ref_id] = device
+
+		# 2. 读取 series 表并按（品牌 -> sort_order -> id）排序
+		# 若 series 表尚未建表/读取失败，DatabaseManager.execute 会返回 None，
+		# 这里需兜底为空列表，避免 .sort() 抛错中断整个导出流程。
+		series_rows = DatabaseManager.execute(
+				"""SELECT id, brand, name_zh, name_en, device_ids, sort_order
+					 FROM series ORDER BY sort_order, id""",
+				params=(), fetch_one=False,
+		) or []
+		series_rows = [r for r in series_rows if r]
+		series_rows.sort(key=_series_row_key)
+
+		all_series_devices: List[str] = []          # 全局有序（保序 + 去重）
+		seen: Set[str] = set()
+		device_series: Dict[str, List[Dict[str, str]]] = {}
+		parsed_series: List[Dict[str, Any]] = []
+
+		def _add_device(dev: str, meta: Dict[str, str]) -> None:
+				if not dev:
+						return
+				if dev not in seen:
+						seen.add(dev)
+						all_series_devices.append(dev)
+				device_series.setdefault(dev, []).append(meta)
+
+		for row in series_rows:
+				if not row or len(row) < 5:
+						continue
+				sid, brand, name_zh, name_en = row[0], row[1], row[2], row[3]
+				dev_ids_raw = row[4]
+				brand_key = (brand or "").lower() or ""
+				codenames: List[str] = []
+				parsed_ids: List[int] = []
+				if dev_ids_raw:
+						try:
+								parsed = json.loads(dev_ids_raw) if isinstance(dev_ids_raw, str) else dev_ids_raw
+								if isinstance(parsed, list):
+										for rid in parsed:
+												try:
+														i = int(rid)
+												except (TypeError, ValueError):
+														continue
+												if i not in parsed_ids:
+														parsed_ids.append(i)
+												dev = ref_to_device.get(i)
+												if dev and dev not in codenames:
+														codenames.append(dev)
+						except (json.JSONDecodeError, TypeError):
+								pass
+				for dev in codenames:
+						_add_device(dev, {
+								"brand": brand_key,
+								"zh": str(name_zh or ""),
+								"en": str(name_en or ""),
+						})
+				parsed_series.append({
+						"id": int(sid or 0),
+						"brand": brand_key,
+						"name_zh": str(name_zh or ""),
+						"name_en": str(name_en or ""),
+						"sort_order": int(row[5] or 0),
+						"device_ids": parsed_ids,
+						"codenames": codenames,
+				})
+
+		# 3. 未入系列的设备按「品牌顺序 + 代号」拼接到末尾
+		tail_devices = sorted(
+				[d for d in device_to_ref if d not in seen],
+				key=lambda d: (_BRAND_ORDER.get(_brand_key(d), 99), d),
+		)
+		order = all_series_devices + tail_devices
+
+		# 4. 每台设备的主系列（取品牌排序最靠前的那个）
+		devices: Dict[str, Dict[str, str]] = {}
+		for dev in all_series_devices:
+				entries = device_series.get(dev, [])
+				if entries:
+						entries_sorted = sorted(entries, key=lambda e: _BRAND_ORDER.get(e["brand"], 99))
+						devices[dev] = entries_sorted[0]
+
+		_series_cache = {
+				"order": order,
+				"devices": devices,
+				"device_series": device_series,
+				"series": parsed_series,
+		}
+		return _series_cache
+
+
+def export_series_index() -> Dict[str, Any]:
+		"""将 series 排序结果写入 data/api/v3/series.json，供前端与 generate-index 消费。"""
+		data = load_series_data()
+		index_struct: Dict[str, Any] = {
+				"order": data["order"],
+				"devices": data["devices"],
+				"series": data["series"],
+		}
+		out_dir = _EXPORT_BASE / 'v3'
+		out_dir.mkdir(parents=True, exist_ok=True)
+		file_path = out_dir / 'series.json'
+		temp_path = file_path.with_suffix('.tmp')
+		try:
+				with open(temp_path, 'w', encoding='utf-8') as f:
+						json.dump(index_struct, f, ensure_ascii=False, indent=2)
+				temp_path.replace(file_path)
+		except (IOError, OSError) as e:
+				logger.error(f"series 索引写入失败 {file_path}: {e}")
+				if temp_path.exists():
+						temp_path.unlink(missing_ok=True)
+				raise IOError(f"无法写入 series 索引 {file_path}: {e}")
+		return index_struct
+
+
 def exportV1(device: str) -> Dict[str, Any]:
 		if device in unreleased:
 				return None
@@ -646,6 +817,7 @@ def exportV3(device: str) -> Dict[str, Any]:
 						},
 						"code": dev_tag,
 						"brand": device_full_brand or "",
+						"series": [dict(s) for s in (load_series_data().get("device_series", {}).get(device, []))],
 						"android": android_versions,
 						"supports": supports_versions,
 						"branches": []
