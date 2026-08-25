@@ -12,6 +12,23 @@ from miroms.utils import FileUtils
 _EXPORT_BASE = Path(FileUtils.get_base_path()) / "data" / "api"
 
 
+def normalize_bigver(bigver: Any) -> str:
+		"""将数据库 bigver 原始值标准化为大版本格式（与 V2 一致）。
+
+		例如: "HyperOS 3" -> "OS3", "MIUI 14" -> "V14", "STAN 15" -> "STAN"。
+		"""
+		if not bigver:
+				return ""
+		if str(bigver).startswith("STAN"):
+				return "STAN"
+		return (
+				str(bigver)
+				.replace("MIUI ", "V")
+				.replace("HyperOS ", "OS")
+				.replace("VV", "V")
+		)
+
+
 def exportV1(device: str) -> Dict[str, Any]:
 		if device in unreleased:
 				return None
@@ -244,10 +261,11 @@ def exportV1(device: str) -> Dict[str, Any]:
 def exportV2(device: str) -> Dict[str, Any]:
 		if device in unreleased:
 				return None
-		# 检查是否为 MIUI/HyperOS 设备
-		type_sql = "SELECT type FROM roms WHERE device = %s AND type='HyperOS'"
-		types = DatabaseManager.execute(type_sql, params=(device,), fetch_one=False)
-		if "HyperOS" not in str(types):
+		# 检查是否为 HyperOS/STAN 设备（STAN = 现代原生安卓/AOSP）
+		type_sql = "SELECT DISTINCT type FROM roms WHERE device = %s"
+		type_rows = DatabaseManager.execute(type_sql, params=(device,), fetch_one=False)
+		device_types = [row[0] for row in (type_rows or []) if row]
+		if not any(t in ('HyperOS', 'STAN') for t in device_types):
 			return None
 		else:
 			logger = logging.getLogger(__name__)
@@ -314,8 +332,8 @@ def exportV2(device: str) -> Dict[str, Any]:
 					for row in supports_rows or []:
 							if row and row[0]:
 									# 标准化为大版本格式
-									bigver = row[0].replace("MIUI ", "V").replace("HyperOS ", "OS").replace("VV", "V")
-									if bigver not in supports_versions:
+									bigver = normalize_bigver(row[0])
+									if bigver and bigver not in supports_versions:
 											supports_versions.append(bigver)
 
 					# ==================== 阶段3: 获取分支代码映射 ====================
@@ -365,7 +383,7 @@ def exportV2(device: str) -> Dict[str, Any]:
 							},
 							"code": dev_tag,
 							"brand": device_full_brand or "",
-							"miui": "yes" if types and types[0] in ['MIUI', 'HyperOS'] else "no",
+							"miui": "yes" if 'HyperOS' in device_types else "no",
 							"merged": "no",	# V2 新增字段，默认no
 							"android": android_versions,
 							"supports": supports_versions,	# V2 使用 supports 而非 miui
@@ -538,7 +556,7 @@ def exportV3(device: str) -> Dict[str, Any]:
 				types_result = DatabaseManager.execute(type_sql, params=(device,), fetch_one=False)
 				device_types = [row[0] for row in types_result if row] if types_result else []
 
-				has_miui = 'MIUI' in device_types or 'HyperOS' in device_types
+				has_miui = any(t in ('MIUI', 'HyperOS', 'STAN') for t in device_types)
 				if not has_miui:
 						return None
 
@@ -608,7 +626,7 @@ def exportV3(device: str) -> Dict[str, Any]:
 				ui_versions = []
 				for bigver in bigver_set:
 						# 标准化为大版本格式（与 V2 一致）
-						normalized = bigver.replace("MIUI ", "V").replace("HyperOS ", "OS").replace("VV", "V")
+						normalized = normalize_bigver(bigver)
 						if normalized.startswith("OS"):
 								if normalized not in os_versions:
 										os_versions.append(normalized)
@@ -731,6 +749,8 @@ def exportV3(device: str) -> Dict[str, Any]:
 								# 构建 roms 条目（与 V1 links 结构一致）
 								roms_entry: Dict[str, Any] = {
 										"miui": version_str,
+										"os": normalize_bigver(bigver),
+										"bigver": str(bigver) if bigver is not None else "",
 										"android": str(android) if android is not None else "",
 										"release": str(beta_date) if beta_date is not None else "",
 										"aspatch": str(aspatch) if aspatch is not None else "",
