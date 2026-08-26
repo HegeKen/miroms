@@ -29,6 +29,44 @@ def normalize_bigver(bigver: Any) -> str:
 		)
 
 
+# ==================== 共享 btag 分支消岐 ====================
+# 同一 btag 可能被多条 constants 记录共用（如印度地区 btag=INSO 下同时定义了
+# INXM 标准版与 INFK FK 变体）。此时设备实际归属哪个子分支，由设备 code 约定决定：
+# code 含 _fk_ 的为 FK 变体（tag=INFK），否则为标准版（tag=INXM）。
+# 这里预先统计出所有被共享的 btag，仅在共享时做过滤，避免误伤单一 btag 的分支。
+_shared_btags: Set[str] | None = None
+
+
+def _get_shared_btags() -> Set[str]:
+		"""返回在 constants 中被多条记录共用的 btag 集合（如 INSO）。"""
+		global _shared_btags
+		if _shared_btags is None:
+				seen: Set[str] = set()
+				_shared_btags = set()
+				for branch in branches:
+						btag = branch.get("btag")
+						if not btag:
+								continue
+						if btag in seen:
+								_shared_btags.add(btag)
+						seen.add(btag)
+		return _shared_btags
+
+
+def _should_keep_sub_branch(branch: Dict[str, Any], branch_code: str) -> bool:
+		"""判断共享 btag 下的某条子分支（如 INXM / INFK）是否应保留。
+
+		仅在 btag 被共享时调用。约定：设备 code 含 _fk_ 表示 FK 变体（tag=INFK），
+		否则为标准版（tag=INXM），据此只保留匹配的子分支，避免同一 btag 重复输出。
+		"""
+		device_is_fk = "_fk_" in (branch_code or "")
+		branch_tag = (branch.get("tag") or "").upper()
+		branch_is_fk = "FK" in branch_tag
+		if device_is_fk:
+				return branch_is_fk
+		return not branch_is_fk
+
+
 # ==================== 设备系列（series）排序 ====================
 # 品牌排序权重：Xiaomi > REDMI > POCO
 _BRAND_ORDER: Dict[str, int] = {"xiaomi": 0, "redmi": 1, "poco": 2}
@@ -326,6 +364,12 @@ def exportV1(device: str) -> Dict[str, Any]:
 																		continue
 
 														branch_code = branch_info["code"]
+
+														# 共享 btag（如 INSO）下存在多条子分支（INXM / INFK），
+														# 按设备 code 约定只保留匹配的那一条，避免重复输出。
+														if btag in _get_shared_btags() and not _should_keep_sub_branch(branch, branch_code):
+																		continue
+
 														branch_roms = roms_by_tag.get(btag, [])
 														if not branch_roms:
 																		continue
@@ -572,6 +616,12 @@ def exportV2(device: str) -> Dict[str, Any]:
 									continue
 
 							branch_code = branch_info["code"]
+
+							# 共享 btag（如 INSO）下存在多条子分支（INXM / INFK），
+							# 按设备 code 约定只保留匹配的那一条，避免重复输出。
+							if btag in _get_shared_btags() and not _should_keep_sub_branch(branch, branch_code):
+									continue
+
 							branch_roms = roms_by_tag.get(btag, [])
 							if not branch_roms:
 									continue
@@ -835,6 +885,12 @@ def exportV3(device: str) -> Dict[str, Any]:
 								continue
 
 						branch_code = branch_info["code"]
+
+						# 共享 btag（如 INSO）下存在多条子分支（INXM / INFK），
+						# 按设备 code 约定只保留匹配的那一条，避免重复输出。
+						if btag in _get_shared_btags() and not _should_keep_sub_branch(branch, branch_code):
+								continue
+
 						branch_roms = roms_by_tag.get(btag, [])
 						if not branch_roms:
 								continue
