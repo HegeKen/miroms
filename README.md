@@ -6,6 +6,8 @@
 
 > This repository contains all Xiaomi ROM data (MIUI & HyperOS) for Xiaomi / Redmi / POCO devices, including Stable, Developer, Carrier and Enterprise editions. The data is generated automatically from a MySQL database by the scripts under `scripts/` and consumed by [hub.miuier.com](https://hub.miuier.com).
 
+> 🌐 **简体中文:** [README.md](README.md) · **English:** [README_EN.md](README_EN.md)
+
 ---
 
 ## 目录结构 / Repository Layout
@@ -36,7 +38,7 @@
 │   ├── deploy.py                     #   触发 Cloudflare Pages 部署
 │   ├── *.py                          #   各类抓取脚本（见下文「抓取 / 部署脚本」）
 │   └── miroms/                       #   核心包（常量/工具/抓取/导出等）
-├── CNAME                             # Cloudflare Pages 域名（api.miuier.com）
+├── CNAME                             # Github Pages 域名（api.miuier.com）
 ├── fix_missing_tag_mappings.sql      # 生成的修复 SQL
 ├── new_flags.txt / new_roms.txt      # 抓取过程的临时产物（可忽略）
 ├── LICENSE                           # Apache License 2.0
@@ -300,6 +302,17 @@ curl -fsSL https://api.miuier.com/v3/devices/agate.json
 ```
 
 前端站点（`appBaseUrl` 为 `https://api.miuier.com/api`）、管理后台与移动端（Android / iOS / 小程序）均为本仓库数据的消费者；各消费者代码见主仓库 [HegeKen/hub.miuier.com](https://github.com/HegeKen/hub.miuier.com) 的 `app/` 目录。
+
+---
+
+## 相关文档 / Related Docs
+
+| 文档 | 简体中文 | English |
+| --- | --- | --- |
+| 项目总览 | [../README.md](../README.md) | [../README_EN.md](../README_EN.md) |
+| 前端站点 | [../app/web/README.md](../app/web/README.md) | [../app/web/README_EN.md](../app/web/README_EN.md) |
+| 管理后台 | [../app/admin/README.md](../app/admin/README.md) | [../app/admin/README_EN.md](../app/admin/README_EN.md) |
+| 本仓库 | [README.md](README.md) | [README_EN.md](README_EN.md) |
 
 ---
 
