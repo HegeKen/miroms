@@ -238,6 +238,43 @@ def export_series_index() -> Dict[str, Any]:
 		return index_struct
 
 
+def export_statistics() -> Dict[str, Any]:
+		"""将数据库真实统计写入 data/api/v3/statistics.json，供官网首页展示。
+		
+		口径与后台一致：
+		- deviceCount: devices 表 device 列去重后的数量
+		- branchCount: devices 表的实际行数
+		- romCount: roms 表的实际行数
+		- todayNewRoms: roms 表今日新增（insdate >= CURDATE()）
+		"""
+		logger = logging.getLogger(__name__)
+		
+		def _count(sql: str) -> int:
+				row = DatabaseManager.query_one(sql)
+				return int(row[0]) if row else 0
+		
+		stats: Dict[str, Any] = {
+				"deviceCount": _count("SELECT COUNT(DISTINCT device) FROM devices"),
+				"branchCount": _count("SELECT COUNT(*) FROM devices"),
+				"romCount": _count("SELECT COUNT(*) FROM roms"),
+				"todayNewRoms": _count("SELECT COUNT(*) FROM roms WHERE insdate >= CURDATE()"),
+		}
+		out_dir = _EXPORT_BASE / 'v3'
+		out_dir.mkdir(parents=True, exist_ok=True)
+		file_path = out_dir / 'statistics.json'
+		temp_path = file_path.with_suffix('.tmp')
+		try:
+				with open(temp_path, 'w', encoding='utf-8') as f:
+						json.dump(stats, f, ensure_ascii=False, indent=2)
+				temp_path.replace(file_path)
+		except (IOError, OSError) as e:
+				logger.error(f"statistics 写入失败 {file_path}: {e}")
+				if temp_path.exists():
+						temp_path.unlink(missing_ok=True)
+				raise IOError(f"无法写入 statistics {file_path}: {e}")
+		return stats
+
+
 def exportV1(device: str) -> Dict[str, Any]:
 		if device in unreleased:
 				return None

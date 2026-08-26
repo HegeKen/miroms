@@ -16,6 +16,14 @@ try:
 except Exception as e:
   print(f"系列排序索引生成失败: {e}", file=sys.stderr)
 
+# 导出数据库真实统计（供官网首页统计卡片，口径与后台一致）
+print("\n--- 导出统计 (statistics.json) ---")
+try:
+  common.export_statistics()
+  print("统计已生成")
+except Exception as e:
+  print(f"统计生成失败: {e}", file=sys.stderr)
+
 # 导出完成后自动同步 index.json
 print("\n--- 同步 index.json ---")
 index_script = Path(__file__).resolve().parent.parent.parent / 'app' / 'web' / 'scripts' / 'generate-index.mjs'
