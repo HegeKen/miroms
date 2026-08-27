@@ -1,5 +1,7 @@
 import json
 import logging
+import re
+from functools import cmp_to_key
 from pathlib import Path
 from typing import Set, List, Tuple, Dict, Any
 
@@ -27,6 +29,41 @@ def normalize_bigver(bigver: Any) -> str:
 				.replace("HyperOS ", "OS")
 				.replace("VV", "V")
 		)
+
+
+# ==================== ROM 版本号排序 ====================
+# 排序规则：版本号为主（降序），release_date 为辅（降序、空值置后）。
+# 版本号形如 V10.1.1.0.MXDCNFI / OS2.0.1.0.VOBCNXM，取字母前缀后的数字段逐位比较。
+_ROM_VERSION_RE = re.compile(r'^[A-Za-z]*(\d+(?:\.\d+)*)')
+
+
+def _rom_version_parts(version: Any) -> List[int]:
+		"""提取版本号中的数字段，如 'V10.1.1.0.MXDCNFI' -> [10, 1, 1, 0]。"""
+		m = _ROM_VERSION_RE.match(str(version or ''))
+		if not m:
+				return []
+		return [int(x) if x.isdigit() else 0 for x in m.group(1).split('.')]
+
+
+def _compare_roms(a: Dict[str, Any], b: Dict[str, Any]) -> int:
+		"""ROM 排序比较：版本号降序为主，release_date 降序为辅。"""
+		pa = _rom_version_parts(a.get("miui", ""))
+		pb = _rom_version_parts(b.get("miui", ""))
+		n = max(len(pa), len(pb))
+		for i in range(n):
+				x = pa[i] if i < len(pa) else 0
+				y = pb[i] if i < len(pb) else 0
+				if x != y:
+						return y - x
+		ra = a.get("release") or ""
+		rb = b.get("release") or ""
+		if ra != rb:
+				if not ra:
+						return 1
+				if not rb:
+						return -1
+				return 1 if ra < rb else -1
+		return 0
 
 
 # ==================== 共享 btag 分支消岐 ====================
@@ -1049,6 +1086,9 @@ def exportV3(device: str) -> Dict[str, Any]:
 														"logs_zh": parsed_zh,
 														"logs_en": parsed_en
 												}
+
+						# 按版本号（降序）为主、发布日期为辅助排序
+						new_branch["roms"].sort(key=cmp_to_key(_compare_roms))
 
 						if new_branch["roms"]:
 								device_struct["branches"].append(new_branch)

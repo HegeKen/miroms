@@ -6,14 +6,16 @@
   },
   "code": "AA",
   "brand": [
-    "Redmi"
+    "REDMI"
   ],
   "miui": "yes",
   "merged": "no",
   "android": [
+    "17.0",
     "16.0"
   ],
   "supports": [
+    "OS4",
     "OS3"
   ],
   "branches": [
@@ -105,6 +107,50 @@
           "recovery": "prague-ota_full-OS3.0.304.0.WAACNXM-user-16.0-a2f9190f86.zip",
           "fastboot": "prague_images_OS3.0.304.0.WAACNXM_20260412.0000.00_16.0_cn_acc85a97a5.tgz",
           "ctelecom": "prague_images_OS3.0.304.0.WAACNXM_20260412.0000.00_16.0_cn_chinatelecom_79922b2316.tgz"
+        }
+      }
+    },
+    {
+      "branchCode": "prague",
+      "brand": [
+        "REDMI"
+      ],
+      "device": {
+        "zh": "REDMI K90 Max",
+        "en": "REDMI K90 Max"
+      },
+      "idtag": "CnOB",
+      "tag": "CNXM",
+      "branchtag": "F",
+      "name": {
+        "zh": "中国大陆Beta",
+        "en": "China Beta"
+      },
+      "table": [
+        "os",
+        "android",
+        "release",
+        "recovery",
+        "fastboot"
+      ],
+      "show": "1",
+      "carrier": [
+        "",
+        "chinatelecom",
+        "chinamobile",
+        "chinaunicom"
+      ],
+      "region": "cn",
+      "zone": "1",
+      "ep": "0",
+      "roms": {
+        "OS4.0.0.3.XAACNXM": {
+          "os": "OS4.0.0.3.XAACNXM",
+          "android": "17.0",
+          "release": "2026-08-27",
+          "aspatch": "2026-08-01",
+          "recovery": "prague-ota_full-OS4.0.0.3.XAACNXM-user-17.0-ac2d605793.zip",
+          "fastboot": ""
         }
       }
     },

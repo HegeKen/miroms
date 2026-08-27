@@ -11,9 +11,11 @@
   "miui": "yes",
   "merged": "no",
   "android": [
+    "17.0",
     "16.0"
   ],
   "supports": [
+    "OS4",
     "OS3"
   ],
   "branches": [
@@ -106,6 +108,50 @@
           "aspatch": "2026-04-01",
           "recovery": "yili-ota_full-OS3.0.303.0.WAKCNXM-user-16.0-99c932fe27.zip",
           "fastboot": "yili_images_OS3.0.303.0.WAKCNXM_20260415.0000.00_16.0_cn_345df1e396.tgz"
+        }
+      }
+    },
+    {
+      "branchCode": "yili",
+      "brand": [
+        "REDMI"
+      ],
+      "device": {
+        "zh": "Redmi K Pad 2",
+        "en": "Redmi K Pad 2"
+      },
+      "idtag": "CnOB",
+      "tag": "CNXM",
+      "branchtag": "F",
+      "name": {
+        "zh": "中国大陆Beta",
+        "en": "China Beta"
+      },
+      "table": [
+        "os",
+        "android",
+        "release",
+        "recovery",
+        "fastboot"
+      ],
+      "show": "1",
+      "carrier": [
+        "",
+        "chinatelecom",
+        "chinamobile",
+        "chinaunicom"
+      ],
+      "region": "cn",
+      "zone": "1",
+      "ep": "0",
+      "roms": {
+        "OS4.0.0.6.XAKCNXM": {
+          "os": "OS4.0.0.6.XAKCNXM",
+          "android": "17.0",
+          "release": "2026-08-27",
+          "aspatch": "2026-08-01",
+          "recovery": "yili-ota_full-OS4.0.0.6.XAKCNXM-user-17.0-b8e42fc0ec.zip",
+          "fastboot": ""
         }
       }
     }

@@ -51,13 +51,13 @@
       "ep": "0",
       "roms": [
         {
-          "miui": "V7.5.1.0.KXFCNDE",
-          "os": "V7",
-          "bigver": "MIUI 7",
+          "miui": "KXFCNBH11.0",
+          "os": "V5",
+          "bigver": "MIUI V5",
           "android": "4.4",
-          "release": "2018-08-03",
+          "release": "2015-03-08",
           "aspatch": "",
-          "recovery": "miui_MIPAD_V7.5.1.0.KXFCNDE_70f84200a5_4.4.zip",
+          "recovery": "miui_MOCHA_KXFCNBH11.0_b104d13e77_4.4.zip",
           "fastboot": ""
         },
         {
@@ -91,6 +91,16 @@
           "fastboot": ""
         },
         {
+          "miui": "KXFCNBH9.0",
+          "os": "V5",
+          "bigver": "MIUI V5",
+          "android": "4.4",
+          "release": "2015-03-25",
+          "aspatch": "",
+          "recovery": "miui_MOCHA_KXFCNBH9.0_4754681e3c_4.4.zip",
+          "fastboot": "mocha_images_KXFCNBH9.0_4.4_2bb6578611.tgz"
+        },
+        {
           "miui": "V8.5.1.0.KXFCNED",
           "os": "V8",
           "bigver": "MIUI 8",
@@ -118,6 +128,56 @@
           "release": "2016-11-28",
           "aspatch": "",
           "recovery": "miui_MIPAD_V8.1.2.0.KXFCNDI_4f5d2be676_4.4.zip",
+          "fastboot": ""
+        },
+        {
+          "miui": "V7.5.1.0.KXFCNDE",
+          "os": "V7",
+          "bigver": "MIUI 7",
+          "android": "4.4",
+          "release": "2018-08-03",
+          "aspatch": "",
+          "recovery": "miui_MIPAD_V7.5.1.0.KXFCNDE_70f84200a5_4.4.zip",
+          "fastboot": ""
+        },
+        {
+          "miui": "V7.3.1.0.KXFCNDD",
+          "os": "V7",
+          "bigver": "MIUI 7",
+          "android": "4.4",
+          "release": "2016-04-18",
+          "aspatch": "",
+          "recovery": "miui_MIPAD_V7.3.1.0.KXFCNDD_f52a192aff_4.4.zip",
+          "fastboot": "mocha_images_V7.3.1.0.KXFCNDD_20160322.0000.17_4.4_cn_22baa137a5.tgz"
+        },
+        {
+          "miui": "V7.2.1.0.KXFCNDA",
+          "os": "V7",
+          "bigver": "MIUI 7",
+          "android": "4.4",
+          "release": "2016-02-22",
+          "aspatch": "",
+          "recovery": "miui_MIPAD_V7.2.1.0.KXFCNDA_37438c3840_4.4.zip",
+          "fastboot": "mocha_images_V7.2.1.0.KXFCNDA_20160129.0000.14_4.4_cn_f47a602da1.tgz"
+        },
+        {
+          "miui": "V7.1.2.0.KXFCNCK",
+          "os": "V7",
+          "bigver": "MIUI 7",
+          "android": "4.4",
+          "release": "2015-12-18",
+          "aspatch": "",
+          "recovery": "miui_MIPAD_V7.1.2.0.KXFCNCK_6a89d9275e_4.4.zip",
+          "fastboot": "mocha_images_V7.1.2.0.KXFCNCK_20151126.0000.5_4.4_cn_b1a193622e.tgz"
+        },
+        {
+          "miui": "V7.0.3.0.KXFCNCI",
+          "os": "V7",
+          "bigver": "MIUI 7",
+          "android": "4.4",
+          "release": "2015-10-23",
+          "aspatch": "",
+          "recovery": "miui_MIPAD_V7.0.3.0.KXFCNCI_4182b7cfbf_4.4.zip",
           "fastboot": ""
         },
         {
@@ -171,46 +231,6 @@
           "fastboot": "mocha_images_V6.6.2.0.KXFCNCF_20150626.0000.4_4.4_cn_fdc2518730.tgz"
         },
         {
-          "miui": "V7.3.1.0.KXFCNDD",
-          "os": "V7",
-          "bigver": "MIUI 7",
-          "android": "4.4",
-          "release": "2016-04-18",
-          "aspatch": "",
-          "recovery": "miui_MIPAD_V7.3.1.0.KXFCNDD_f52a192aff_4.4.zip",
-          "fastboot": "mocha_images_V7.3.1.0.KXFCNDD_20160322.0000.17_4.4_cn_22baa137a5.tgz"
-        },
-        {
-          "miui": "V7.2.1.0.KXFCNDA",
-          "os": "V7",
-          "bigver": "MIUI 7",
-          "android": "4.4",
-          "release": "2016-02-22",
-          "aspatch": "",
-          "recovery": "miui_MIPAD_V7.2.1.0.KXFCNDA_37438c3840_4.4.zip",
-          "fastboot": "mocha_images_V7.2.1.0.KXFCNDA_20160129.0000.14_4.4_cn_f47a602da1.tgz"
-        },
-        {
-          "miui": "V7.1.2.0.KXFCNCK",
-          "os": "V7",
-          "bigver": "MIUI 7",
-          "android": "4.4",
-          "release": "2015-12-18",
-          "aspatch": "",
-          "recovery": "miui_MIPAD_V7.1.2.0.KXFCNCK_6a89d9275e_4.4.zip",
-          "fastboot": "mocha_images_V7.1.2.0.KXFCNCK_20151126.0000.5_4.4_cn_b1a193622e.tgz"
-        },
-        {
-          "miui": "V7.0.3.0.KXFCNCI",
-          "os": "V7",
-          "bigver": "MIUI 7",
-          "android": "4.4",
-          "release": "2015-10-23",
-          "aspatch": "",
-          "recovery": "miui_MIPAD_V7.0.3.0.KXFCNCI_4182b7cfbf_4.4.zip",
-          "fastboot": ""
-        },
-        {
           "miui": "V6.5.1.0.KXFCNCD",
           "os": "V6",
           "bigver": "MIUI 6",
@@ -241,26 +261,6 @@
           "fastboot": "mocha_images_V6.4.2.0.KXFCNCB_4.4_cn_191c433937.tgz"
         },
         {
-          "miui": "V6.2.2.0.KXFCNBK",
-          "os": "V6",
-          "bigver": "MIUI 6",
-          "android": "4.4",
-          "release": "2015-03-30",
-          "aspatch": "",
-          "recovery": "miui_MOCHA_V6.2.2.0.KXFCNBK_4d34d1a636_4.4.zip",
-          "fastboot": ""
-        },
-        {
-          "miui": "KXFCNBF5.0",
-          "os": "V5",
-          "bigver": "MIUI V5",
-          "android": "4.4",
-          "release": "2015-03-30",
-          "aspatch": "",
-          "recovery": "miui_MOCHA_KXFCNBF5.0_88b0de781e_4.4.zip",
-          "fastboot": ""
-        },
-        {
           "miui": "V6.3.1.0.KXFCNBL",
           "os": "V6",
           "bigver": "MIUI 6",
@@ -268,6 +268,16 @@
           "release": "2015-03-27",
           "aspatch": "",
           "recovery": "miui_MOCHA_V6.3.1.0.KXFCNBL_d10ff3f26b_4.4.zip",
+          "fastboot": ""
+        },
+        {
+          "miui": "V6.2.2.0.KXFCNBK",
+          "os": "V6",
+          "bigver": "MIUI 6",
+          "android": "4.4",
+          "release": "2015-03-30",
+          "aspatch": "",
+          "recovery": "miui_MOCHA_V6.2.2.0.KXFCNBK_4d34d1a636_4.4.zip",
           "fastboot": ""
         },
         {
@@ -281,33 +291,23 @@
           "fastboot": ""
         },
         {
-          "miui": "KXFCNBH9.0",
+          "miui": "KXFCNBF5.0",
           "os": "V5",
           "bigver": "MIUI V5",
           "android": "4.4",
-          "release": "2015-03-25",
+          "release": "2015-03-30",
           "aspatch": "",
-          "recovery": "miui_MOCHA_KXFCNBH9.0_4754681e3c_4.4.zip",
-          "fastboot": "mocha_images_KXFCNBH9.0_4.4_2bb6578611.tgz"
-        },
-        {
-          "miui": "KXFCNBH11.0",
-          "os": "V5",
-          "bigver": "MIUI V5",
-          "android": "4.4",
-          "release": "2015-03-08",
-          "aspatch": "",
-          "recovery": "miui_MOCHA_KXFCNBH11.0_b104d13e77_4.4.zip",
+          "recovery": "miui_MOCHA_KXFCNBF5.0_88b0de781e_4.4.zip",
           "fastboot": ""
         },
         {
-          "miui": "KXFCNBF2.0",
+          "miui": "KXFCNBF4.0",
           "os": "V5",
           "bigver": "MIUI V5",
           "android": "4.4",
-          "release": "2015-03-08",
+          "release": "2014-10-09",
           "aspatch": "",
-          "recovery": "miui_MOCHA_KXFCNBF2.0_65170fd773_4.4.zip",
+          "recovery": "miui_MOCHA_KXFCNBF4.0_5076eb5979_4.4.zip",
           "fastboot": ""
         },
         {
@@ -321,13 +321,13 @@
           "fastboot": ""
         },
         {
-          "miui": "KXFCNBF4.0",
+          "miui": "KXFCNBF2.0",
           "os": "V5",
           "bigver": "MIUI V5",
           "android": "4.4",
-          "release": "2014-10-09",
+          "release": "2015-03-08",
           "aspatch": "",
-          "recovery": "miui_MOCHA_KXFCNBF4.0_5076eb5979_4.4.zip",
+          "recovery": "miui_MOCHA_KXFCNBF2.0_65170fd773_4.4.zip",
           "fastboot": ""
         }
       ]
@@ -1313,16 +1313,6 @@
           "fastboot": ""
         },
         {
-          "miui": "5.4.17",
-          "os": "V6",
-          "bigver": "MIUI 6",
-          "android": "4.4",
-          "release": "2015-05-11",
-          "aspatch": "",
-          "recovery": "miui_MOCHA_5.4.17_ece3a3e7de_4.4.zip",
-          "fastboot": ""
-        },
-        {
           "miui": "5.5.8",
           "os": "V6",
           "bigver": "MIUI 6",
@@ -1333,26 +1323,6 @@
           "fastboot": ""
         },
         {
-          "miui": "5.4.20",
-          "os": "V6",
-          "bigver": "MIUI 6",
-          "android": "4.4",
-          "release": "2015-05-07",
-          "aspatch": "",
-          "recovery": "miui_MOCHA_5.4.20_03dba8bb2d_4.4.zip",
-          "fastboot": ""
-        },
-        {
-          "miui": "5.4.21",
-          "os": "V6",
-          "bigver": "MIUI 6",
-          "android": "4.4",
-          "release": "2015-05-04",
-          "aspatch": "",
-          "recovery": "miui_MOCHA_5.4.21_b0ff4226e7_4.4.zip",
-          "fastboot": ""
-        },
-        {
           "miui": "5.5.1",
           "os": "V6",
           "bigver": "MIUI 6",
@@ -1360,16 +1330,6 @@
           "release": "2015-05-01",
           "aspatch": "",
           "recovery": "miui_MOCHA_5.5.1_750768d653_4.4.zip",
-          "fastboot": ""
-        },
-        {
-          "miui": "5.4.22",
-          "os": "V6",
-          "bigver": "MIUI 6",
-          "android": "4.4",
-          "release": "2015-04-30",
-          "aspatch": "",
-          "recovery": "miui_MOCHA_5.4.22_888495855d_4.4.zip",
           "fastboot": ""
         },
         {
@@ -1390,6 +1350,46 @@
           "release": "2015-04-23",
           "aspatch": "",
           "recovery": "miui_MOCHA_5.4.23_1e8ec8102e_4.4.zip",
+          "fastboot": ""
+        },
+        {
+          "miui": "5.4.22",
+          "os": "V6",
+          "bigver": "MIUI 6",
+          "android": "4.4",
+          "release": "2015-04-30",
+          "aspatch": "",
+          "recovery": "miui_MOCHA_5.4.22_888495855d_4.4.zip",
+          "fastboot": ""
+        },
+        {
+          "miui": "5.4.21",
+          "os": "V6",
+          "bigver": "MIUI 6",
+          "android": "4.4",
+          "release": "2015-05-04",
+          "aspatch": "",
+          "recovery": "miui_MOCHA_5.4.21_b0ff4226e7_4.4.zip",
+          "fastboot": ""
+        },
+        {
+          "miui": "5.4.20",
+          "os": "V6",
+          "bigver": "MIUI 6",
+          "android": "4.4",
+          "release": "2015-05-07",
+          "aspatch": "",
+          "recovery": "miui_MOCHA_5.4.20_03dba8bb2d_4.4.zip",
+          "fastboot": ""
+        },
+        {
+          "miui": "5.4.17",
+          "os": "V6",
+          "bigver": "MIUI 6",
+          "android": "4.4",
+          "release": "2015-05-11",
+          "aspatch": "",
+          "recovery": "miui_MOCHA_5.4.17_ece3a3e7de_4.4.zip",
           "fastboot": ""
         },
         {
@@ -1423,16 +1423,6 @@
           "fastboot": ""
         },
         {
-          "miui": "5.1.23",
-          "os": "V6",
-          "bigver": "MIUI 6",
-          "android": "4.4",
-          "release": "2015-04-02",
-          "aspatch": "",
-          "recovery": "miui_MOCHA_5.1.23_05734ff5c3_4.4.zip",
-          "fastboot": ""
-        },
-        {
           "miui": "5.3.27",
           "os": "V6",
           "bigver": "MIUI 6",
@@ -1463,16 +1453,6 @@
           "fastboot": ""
         },
         {
-          "miui": "5.2.6",
-          "os": "V6",
-          "bigver": "MIUI 6",
-          "android": "4.4",
-          "release": "2015-03-01",
-          "aspatch": "",
-          "recovery": "miui_MOCHA_5.2.6_5118ce3ba2_4.4.zip",
-          "fastboot": ""
-        },
-        {
           "miui": "5.2.27",
           "os": "V6",
           "bigver": "MIUI 6",
@@ -1480,16 +1460,6 @@
           "release": "2015-02-28",
           "aspatch": "",
           "recovery": "miui_MOCHA_5.2.27_1f1105cd9f_4.4.zip",
-          "fastboot": ""
-        },
-        {
-          "miui": "5.1.9",
-          "os": "V6",
-          "bigver": "MIUI 6",
-          "android": "4.4",
-          "release": "2015-02-14",
-          "aspatch": "",
-          "recovery": "miui_MOCHA_5.1.9_526728676b_4.4.zip",
           "fastboot": ""
         },
         {
@@ -1503,6 +1473,16 @@
           "fastboot": ""
         },
         {
+          "miui": "5.2.6",
+          "os": "V6",
+          "bigver": "MIUI 6",
+          "android": "4.4",
+          "release": "2015-03-01",
+          "aspatch": "",
+          "recovery": "miui_MOCHA_5.2.6_5118ce3ba2_4.4.zip",
+          "fastboot": ""
+        },
+        {
           "miui": "5.1.30",
           "os": "V6",
           "bigver": "MIUI 6",
@@ -1513,6 +1493,16 @@
           "fastboot": ""
         },
         {
+          "miui": "5.1.23",
+          "os": "V6",
+          "bigver": "MIUI 6",
+          "android": "4.4",
+          "release": "2015-04-02",
+          "aspatch": "",
+          "recovery": "miui_MOCHA_5.1.23_05734ff5c3_4.4.zip",
+          "fastboot": ""
+        },
+        {
           "miui": "5.1.16",
           "os": "V6",
           "bigver": "MIUI 6",
@@ -1520,6 +1510,16 @@
           "release": "2015-01-16",
           "aspatch": "",
           "recovery": "miui_MOCHA_5.1.16_b2d160864f_4.4.zip",
+          "fastboot": ""
+        },
+        {
+          "miui": "5.1.9",
+          "os": "V6",
+          "bigver": "MIUI 6",
+          "android": "4.4",
+          "release": "2015-02-14",
+          "aspatch": "",
+          "recovery": "miui_MOCHA_5.1.9_526728676b_4.4.zip",
           "fastboot": ""
         },
         {
@@ -2001,44 +2001,24 @@
           "fastboot": ""
         },
         {
-          "miui": "V6.4.2.0.KXFMICB",
+          "miui": "V6.7.2.0.KXFMICH",
           "os": "V6",
           "bigver": "MIUI 6",
           "android": "4.4",
-          "release": "2015-10-24",
+          "release": "2015-09-10",
           "aspatch": "",
-          "recovery": "miui_MOCHAGlobal_V6.4.2.0.KXFMICB_58365fa411_4.4.zip",
-          "fastboot": "mocha_global_images_V6.4.2.0.KXFMICB_4.4_global_1f6219270b.tgz"
+          "recovery": "miui_MIPADGlobal_V6.7.2.0.KXFMICH_5ee3492de2_4.4.zip",
+          "fastboot": "mocha_global_images_V6.7.2.0.KXFMICH_20150826.0000.7_4.4_global_461e989f98.tgz"
         },
         {
-          "miui": "V6.6.3.0.KXFMICF",
+          "miui": "V6.6.5.0.KXFMICF",
           "os": "V6",
           "bigver": "MIUI 6",
           "android": "4.4",
-          "release": "2015-10-20",
+          "release": "2015-08-24",
           "aspatch": "",
-          "recovery": "miui_MIPADGlobal_V6.6.3.0.KXFMICF_6a765628a2_4.4.zip",
-          "fastboot": "mocha_global_images_V6.6.3.0.KXFMICF_20150626.0000.4_4.4_global_e342c81041.tgz"
-        },
-        {
-          "miui": "V6.3.1.0.KXFMIBL",
-          "os": "V6",
-          "bigver": "MIUI 6",
-          "android": "4.4",
-          "release": "2015-10-20",
-          "aspatch": "",
-          "recovery": "miui_MOCHAGlobal_V6.3.1.0.KXFMIBL_d532affed0_4.4.zip",
-          "fastboot": "mocha_global_images_V6.3.1.0.KXFMIBL_4.4_global_08a7fd8a35.tgz"
-        },
-        {
-          "miui": "V6.4.3.0.KXFMICB",
-          "os": "V6",
-          "bigver": "MIUI 6",
-          "android": "4.4",
-          "release": "2015-10-02",
-          "aspatch": "",
-          "recovery": "miui_MOCHAGlobal_V6.4.3.0.KXFMICB_b8cedfd790_4.4.zip",
-          "fastboot": ""
+          "recovery": "miui_MIPADGlobal_V6.6.5.0.KXFMICF_be2945e102_4.4.zip",
+          "fastboot": "mocha_global_images_V6.6.5.0.KXFMICF_20150626.0000.4_4.4_global_3d73a75cb3.tgz"
         },
         {
           "miui": "V6.6.4.0.KXFMICF",
@@ -2051,14 +2031,14 @@
           "fastboot": "mocha_global_images_V6.6.4.0.KXFMICF_20150626.0000.4_4.4_global_e32bcb3dd9.tgz"
         },
         {
-          "miui": "V6.7.2.0.KXFMICH",
+          "miui": "V6.6.3.0.KXFMICF",
           "os": "V6",
           "bigver": "MIUI 6",
           "android": "4.4",
-          "release": "2015-09-10",
+          "release": "2015-10-20",
           "aspatch": "",
-          "recovery": "miui_MIPADGlobal_V6.7.2.0.KXFMICH_5ee3492de2_4.4.zip",
-          "fastboot": "mocha_global_images_V6.7.2.0.KXFMICH_20150826.0000.7_4.4_global_461e989f98.tgz"
+          "recovery": "miui_MIPADGlobal_V6.6.3.0.KXFMICF_6a765628a2_4.4.zip",
+          "fastboot": "mocha_global_images_V6.6.3.0.KXFMICF_20150626.0000.4_4.4_global_e342c81041.tgz"
         },
         {
           "miui": "V6.5.1.0.KXFMICD",
@@ -2071,14 +2051,34 @@
           "fastboot": "mocha_global_images_V6.5.1.0.KXFMICD_4.4_global_1edcf4de33.tgz"
         },
         {
-          "miui": "V6.6.5.0.KXFMICF",
+          "miui": "V6.4.3.0.KXFMICB",
           "os": "V6",
           "bigver": "MIUI 6",
           "android": "4.4",
-          "release": "2015-08-24",
+          "release": "2015-10-02",
           "aspatch": "",
-          "recovery": "miui_MIPADGlobal_V6.6.5.0.KXFMICF_be2945e102_4.4.zip",
-          "fastboot": "mocha_global_images_V6.6.5.0.KXFMICF_20150626.0000.4_4.4_global_3d73a75cb3.tgz"
+          "recovery": "miui_MOCHAGlobal_V6.4.3.0.KXFMICB_b8cedfd790_4.4.zip",
+          "fastboot": ""
+        },
+        {
+          "miui": "V6.4.2.0.KXFMICB",
+          "os": "V6",
+          "bigver": "MIUI 6",
+          "android": "4.4",
+          "release": "2015-10-24",
+          "aspatch": "",
+          "recovery": "miui_MOCHAGlobal_V6.4.2.0.KXFMICB_58365fa411_4.4.zip",
+          "fastboot": "mocha_global_images_V6.4.2.0.KXFMICB_4.4_global_1f6219270b.tgz"
+        },
+        {
+          "miui": "V6.3.1.0.KXFMIBL",
+          "os": "V6",
+          "bigver": "MIUI 6",
+          "android": "4.4",
+          "release": "2015-10-20",
+          "aspatch": "",
+          "recovery": "miui_MOCHAGlobal_V6.3.1.0.KXFMIBL_d532affed0_4.4.zip",
+          "fastboot": "mocha_global_images_V6.3.1.0.KXFMIBL_4.4_global_08a7fd8a35.tgz"
         }
       ]
     }

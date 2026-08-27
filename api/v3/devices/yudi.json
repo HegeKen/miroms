@@ -52,6 +52,36 @@
       "ep": "0",
       "roms": [
         {
+          "miui": "V14.0.6.0.TMHCNXM",
+          "os": "V14",
+          "bigver": "MIUI 14",
+          "android": "13.0",
+          "release": "2023-09-19",
+          "aspatch": "2023-09-01",
+          "recovery": "miui_YUDI_V14.0.6.0.TMHCNXM_e089ca23f1_13.0.zip",
+          "fastboot": "yudi_images_V14.0.6.0.TMHCNXM_20230915.0000.00_13.0_cn_74b725da7b.tgz"
+        },
+        {
+          "miui": "V14.0.4.0.TMHCNXM",
+          "os": "V14",
+          "bigver": "MIUI 14",
+          "android": "13.0",
+          "release": "2023-08-28",
+          "aspatch": "2023-08-01",
+          "recovery": "miui_YUDI_V14.0.4.0.TMHCNXM_fc95e1b9b3_13.0.zip",
+          "fastboot": "yudi_images_V14.0.4.0.TMHCNXM_20230825.0000.00_13.0_cn_20395aa145.tgz"
+        },
+        {
+          "miui": "V14.0.3.0.TMHCNXM",
+          "os": "V14",
+          "bigver": "MIUI 14",
+          "android": "13.0",
+          "release": "2023-08-14",
+          "aspatch": "2023-07-01",
+          "recovery": "miui_YUDI_V14.0.3.0.TMHCNXM_791c025ae6_13.0.zip",
+          "fastboot": "yudi_images_V14.0.3.0.TMHCNXM_20230804.0000.00_13.0_cn_e44fe9dc5b.tgz"
+        },
+        {
           "miui": "OS3.0.6.0.VMHCNXM",
           "os": "OS3",
           "bigver": "HyperOS 3",
@@ -300,36 +330,6 @@
           "aspatch": "2023-11-01",
           "recovery": "miui_YUDI_OS1.0.2.0.UMHCNXM_34efc69cc0_14.0.zip",
           "fastboot": "yudi_images_OS1.0.2.0.UMHCNXM_20231124.0000.00_14.0_cn_ff52b125c5.tgz"
-        },
-        {
-          "miui": "V14.0.6.0.TMHCNXM",
-          "os": "V14",
-          "bigver": "MIUI 14",
-          "android": "13.0",
-          "release": "2023-09-19",
-          "aspatch": "2023-09-01",
-          "recovery": "miui_YUDI_V14.0.6.0.TMHCNXM_e089ca23f1_13.0.zip",
-          "fastboot": "yudi_images_V14.0.6.0.TMHCNXM_20230915.0000.00_13.0_cn_74b725da7b.tgz"
-        },
-        {
-          "miui": "V14.0.4.0.TMHCNXM",
-          "os": "V14",
-          "bigver": "MIUI 14",
-          "android": "13.0",
-          "release": "2023-08-28",
-          "aspatch": "2023-08-01",
-          "recovery": "miui_YUDI_V14.0.4.0.TMHCNXM_fc95e1b9b3_13.0.zip",
-          "fastboot": "yudi_images_V14.0.4.0.TMHCNXM_20230825.0000.00_13.0_cn_20395aa145.tgz"
-        },
-        {
-          "miui": "V14.0.3.0.TMHCNXM",
-          "os": "V14",
-          "bigver": "MIUI 14",
-          "android": "13.0",
-          "release": "2023-08-14",
-          "aspatch": "2023-07-01",
-          "recovery": "miui_YUDI_V14.0.3.0.TMHCNXM_791c025ae6_13.0.zip",
-          "fastboot": "yudi_images_V14.0.3.0.TMHCNXM_20230804.0000.00_13.0_cn_e44fe9dc5b.tgz"
         }
       ]
     },
@@ -364,26 +364,6 @@
       "ep": "0",
       "roms": [
         {
-          "miui": "OS2.0.1.0.VMHCNDM",
-          "os": "OS2",
-          "bigver": "HyperOS 2",
-          "android": "15.0",
-          "release": "2025-06-09",
-          "aspatch": "2025-04-01",
-          "recovery": "yudi_demo-ota_full-OS2.0.1.0.VMHCNDM-user-15.0-f103ce1755.zip",
-          "fastboot": "yudi_demo_images_OS2.0.1.0.VMHCNDM_20250529.0000.00_15.0_cn_29787cf754.tgz"
-        },
-        {
-          "miui": "OS1.0.1.0.UMHCNDM",
-          "os": "OS1",
-          "bigver": "HyperOS 1",
-          "android": "14.0",
-          "release": "2023-12-18",
-          "aspatch": "2023-11-01",
-          "recovery": "miui_YUDIDEMO_OS1.0.1.0.UMHCNDM_4a69190a68_14.0.zip",
-          "fastboot": "yudi_demo_images_OS1.0.1.0.UMHCNDM_20231218.0000.00_14.0_cn_1acd2aeef0.tgz"
-        },
-        {
           "miui": "V14.0.3.0.TMHCNDM",
           "os": "V14",
           "bigver": "MIUI 14",
@@ -402,6 +382,26 @@
           "aspatch": "2023-07-01",
           "recovery": "miui_YUDIDEMO_V14.0.2.0.TMHCNDM_a032970556_13.0.zip",
           "fastboot": "yudi_demo_images_V14.0.2.0.TMHCNDM_20230807.0000.00_13.0_cn_8b4278f53a.tgz"
+        },
+        {
+          "miui": "OS2.0.1.0.VMHCNDM",
+          "os": "OS2",
+          "bigver": "HyperOS 2",
+          "android": "15.0",
+          "release": "2025-06-09",
+          "aspatch": "2025-04-01",
+          "recovery": "yudi_demo-ota_full-OS2.0.1.0.VMHCNDM-user-15.0-f103ce1755.zip",
+          "fastboot": "yudi_demo_images_OS2.0.1.0.VMHCNDM_20250529.0000.00_15.0_cn_29787cf754.tgz"
+        },
+        {
+          "miui": "OS1.0.1.0.UMHCNDM",
+          "os": "OS1",
+          "bigver": "HyperOS 1",
+          "android": "14.0",
+          "release": "2023-12-18",
+          "aspatch": "2023-11-01",
+          "recovery": "miui_YUDIDEMO_OS1.0.1.0.UMHCNDM_4a69190a68_14.0.zip",
+          "fastboot": "yudi_demo_images_OS1.0.1.0.UMHCNDM_20231218.0000.00_14.0_cn_1acd2aeef0.tgz"
         }
       ]
     }

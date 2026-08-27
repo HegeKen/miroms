@@ -11,9 +11,11 @@
   "miui": "yes",
   "merged": "no",
   "android": [
+    "17.0",
     "16.0"
   ],
   "supports": [
+    "OS4",
     "OS3"
   ],
   "branches": [
@@ -93,6 +95,50 @@
           "recovery": "warsaw-ota_full-OS3.0.306.0.WHPCNXM-user-16.0-8d5c1b6155.zip",
           "fastboot": "warsaw_images_OS3.0.306.0.WHPCNXM_20260627.0000.00_16.0_cn_f937704bf2.tgz",
           "ctelecom": "warsaw_images_OS3.0.306.0.WHPCNXM_20260627.0000.00_16.0_cn_chinatelecom_a558f1160a.tgz"
+        }
+      }
+    },
+    {
+      "branchCode": "warsaw",
+      "brand": [
+        "REDMI"
+      ],
+      "device": {
+        "zh": "REDMI K90 至尊版",
+        "en": "REDMI K90 Ultra"
+      },
+      "idtag": "CnOB",
+      "tag": "CNXM",
+      "branchtag": "F",
+      "name": {
+        "zh": "中国大陆Beta",
+        "en": "China Beta"
+      },
+      "table": [
+        "os",
+        "android",
+        "release",
+        "recovery",
+        "fastboot"
+      ],
+      "show": "1",
+      "carrier": [
+        "",
+        "chinatelecom",
+        "chinamobile",
+        "chinaunicom"
+      ],
+      "region": "cn",
+      "zone": "1",
+      "ep": "0",
+      "roms": {
+        "OS4.0.0.7.XHPCNXM": {
+          "os": "OS4.0.0.7.XHPCNXM",
+          "android": "17.0",
+          "release": "2026-08-27",
+          "aspatch": "2026-08-01",
+          "recovery": "warsaw-ota_full-OS4.0.0.7.XHPCNXM-user-17.0-9262a50041.zip",
+          "fastboot": ""
         }
       }
     }

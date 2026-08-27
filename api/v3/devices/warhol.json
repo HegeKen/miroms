@@ -16,9 +16,11 @@
     }
   ],
   "android": [
+    "17.0",
     "16.0"
   ],
   "supports": [
+    "OS4",
     "OS3"
   ],
   "branches": [
@@ -75,17 +77,6 @@
           "ctelecom": "warhol_images_OS3.0.308.0.WPSCNXM_20260624.0000.00_16.0_cn_chinatelecom_5bb8346922.tgz"
         },
         {
-          "miui": "OS3.0.302.0.WPSCNXM",
-          "os": "OS3",
-          "bigver": "HyperOS 3",
-          "android": "16.0",
-          "release": "2026-06-08",
-          "aspatch": "2026-05-01",
-          "recovery": "warhol-ota_full-OS3.0.302.0.WPSCNXM-user-16.0-25d1cf39e2.zip",
-          "fastboot": "",
-          "ctelecom": "warhol_images_OS3.0.302.0.WPSCNXM_20260516.0000.00_16.0_cn_chinatelecom_98fede418a.tgz"
-        },
-        {
           "miui": "OS3.0.306.0.WPSCNXM",
           "os": "OS3",
           "bigver": "HyperOS 3",
@@ -95,6 +86,17 @@
           "recovery": "warhol-ota_full-OS3.0.306.0.WPSCNXM-user-16.0-fa6de8c867.zip",
           "fastboot": "warhol_images_OS3.0.306.0.WPSCNXM_20260605.0000.00_16.0_cn_2359ee8ba9.tgz",
           "ctelecom": "warhol_images_OS3.0.306.0.WPSCNXM_20260605.0000.00_16.0_cn_chinatelecom_253c120740.tgz"
+        },
+        {
+          "miui": "OS3.0.302.0.WPSCNXM",
+          "os": "OS3",
+          "bigver": "HyperOS 3",
+          "android": "16.0",
+          "release": "2026-06-08",
+          "aspatch": "2026-05-01",
+          "recovery": "warhol-ota_full-OS3.0.302.0.WPSCNXM-user-16.0-25d1cf39e2.zip",
+          "fastboot": "",
+          "ctelecom": "warhol_images_OS3.0.302.0.WPSCNXM_20260516.0000.00_16.0_cn_chinatelecom_98fede418a.tgz"
         }
       ]
     },
@@ -128,6 +130,16 @@
       "show": "1",
       "ep": "0",
       "roms": [
+        {
+          "miui": "OS4.0.0.3.XPSCNXM",
+          "os": "OS4",
+          "bigver": "HyperOS 4",
+          "android": "17.0",
+          "release": "2026-08-27",
+          "aspatch": "2026-08-01",
+          "recovery": "warhol-ota_full-OS4.0.0.3.XPSCNXM-user-17.0-d7c0b752aa.zip",
+          "fastboot": ""
+        },
         {
           "miui": "OS3.0.308.2.WPSCNXM",
           "os": "OS3",
@@ -231,6 +243,16 @@
           "fastboot": "warhol_tw_global_images_OS3.0.304.0.WPSTWXM_20260617.0000.00_16.0_tw_d25c5aed7b.tgz"
         },
         {
+          "miui": "OS3.0.303.0.WPSTWXM",
+          "os": "OS3",
+          "bigver": "HyperOS 3",
+          "android": "16.0",
+          "release": "2026-05-28",
+          "aspatch": "2026-04-01",
+          "recovery": "warhol_tw_global-ota_full-OS3.0.303.0.WPSTWXM-user-16.0-aaaace1dcd.zip",
+          "fastboot": "warhol_tw_global_images_OS3.0.303.0.WPSTWXM_20260525.0000.00_16.0_tw_018ac2a60e.tgz"
+        },
+        {
           "miui": "OS3.0.302.0.WPSTWXM",
           "os": "OS3",
           "bigver": "HyperOS 3",
@@ -249,16 +271,6 @@
           "aspatch": "2026-03-01",
           "recovery": "warhol_tw_global-ota_full-OS3.0.301.0.WPSTWXM-user-16.0-bc454ca25c.zip",
           "fastboot": ""
-        },
-        {
-          "miui": "OS3.0.303.0.WPSTWXM",
-          "os": "OS3",
-          "bigver": "HyperOS 3",
-          "android": "16.0",
-          "release": "2026-05-28",
-          "aspatch": "2026-04-01",
-          "recovery": "warhol_tw_global-ota_full-OS3.0.303.0.WPSTWXM-user-16.0-aaaace1dcd.zip",
-          "fastboot": "warhol_tw_global_images_OS3.0.303.0.WPSTWXM_20260525.0000.00_16.0_tw_018ac2a60e.tgz"
         }
       ]
     },
@@ -330,6 +342,16 @@
           "fastboot": "warhol_global_images_OS3.0.306.0.WPSMIXM_20260611.0000.00_16.0_global_cdb0823a36.tgz"
         },
         {
+          "miui": "OS3.0.305.0.WPSMIXM",
+          "os": "OS3",
+          "bigver": "HyperOS 3",
+          "android": "16.0",
+          "release": "2026-05-28",
+          "aspatch": "2026-04-01",
+          "recovery": "warhol_global-ota_full-OS3.0.305.0.WPSMIXM-user-16.0-8c0f373638.zip",
+          "fastboot": ""
+        },
+        {
           "miui": "OS3.0.304.0.WPSMIXM",
           "os": "OS3",
           "bigver": "HyperOS 3",
@@ -357,16 +379,6 @@
           "release": "2026-05-28",
           "aspatch": "2026-03-01",
           "recovery": "warhol_global-ota_full-OS3.0.302.0.WPSMIXM-user-16.0-47c65dd806.zip",
-          "fastboot": ""
-        },
-        {
-          "miui": "OS3.0.305.0.WPSMIXM",
-          "os": "OS3",
-          "bigver": "HyperOS 3",
-          "android": "16.0",
-          "release": "2026-05-28",
-          "aspatch": "2026-04-01",
-          "recovery": "warhol_global-ota_full-OS3.0.305.0.WPSMIXM-user-16.0-8c0f373638.zip",
           "fastboot": ""
         },
         {
@@ -498,16 +510,6 @@
           "fastboot": "warhol_eea_global_images_OS3.0.309.0.WPSEUXM_20260617.0000.00_16.0_eea_e9fab1ecfd.tgz"
         },
         {
-          "miui": "OS3.0.302.0.WPSEUXM",
-          "os": "OS3",
-          "bigver": "HyperOS 3",
-          "android": "16.0",
-          "release": "2026-05-28",
-          "aspatch": "2026-03-01",
-          "recovery": "warhol_eea_global-ota_full-OS3.0.302.0.WPSEUXM-user-16.0-0858dfacdf.zip",
-          "fastboot": ""
-        },
-        {
           "miui": "OS3.0.308.0.WPSEUXM",
           "os": "OS3",
           "bigver": "HyperOS 3",
@@ -536,6 +538,16 @@
           "aspatch": "2026-04-01",
           "recovery": "warhol_eea_global-ota_full-OS3.0.303.0.WPSEUDM-user-16.0-533731e5f6.zip",
           "fastboot": "warhol_eea_global_images_OS3.0.303.0.WPSEUDM_20260521.0000.00_16.0_eea_da9ee4b692.tgz"
+        },
+        {
+          "miui": "OS3.0.302.0.WPSEUXM",
+          "os": "OS3",
+          "bigver": "HyperOS 3",
+          "android": "16.0",
+          "release": "2026-05-28",
+          "aspatch": "2026-03-01",
+          "recovery": "warhol_eea_global-ota_full-OS3.0.302.0.WPSEUXM-user-16.0-0858dfacdf.zip",
+          "fastboot": ""
         }
       ]
     },

@@ -10,9 +10,11 @@
   ],
   "series": [],
   "android": [
+    "17.0",
     "16.0"
   ],
   "supports": [
+    "OS4",
     "OS3"
   ],
   "branches": [
@@ -97,16 +99,6 @@
           "fastboot": "yili_images_OS3.0.304.0.WAKCNXM_20260421.0000.00_16.0_cn_6e405e8896.tgz"
         },
         {
-          "miui": "OS3.0.301.0.WAKCNXM",
-          "os": "OS3",
-          "bigver": "HyperOS 3",
-          "android": "16.0",
-          "release": "2026-04-21",
-          "aspatch": "2026-03-01",
-          "recovery": "yili-ota_full-OS3.0.301.0.WAKCNXM-user-16.0-61d5003cdc.zip",
-          "fastboot": ""
-        },
-        {
           "miui": "OS3.0.303.0.WAKCNXM",
           "os": "OS3",
           "bigver": "HyperOS 3",
@@ -115,6 +107,58 @@
           "aspatch": "2026-04-01",
           "recovery": "yili-ota_full-OS3.0.303.0.WAKCNXM-user-16.0-99c932fe27.zip",
           "fastboot": "yili_images_OS3.0.303.0.WAKCNXM_20260415.0000.00_16.0_cn_345df1e396.tgz"
+        },
+        {
+          "miui": "OS3.0.301.0.WAKCNXM",
+          "os": "OS3",
+          "bigver": "HyperOS 3",
+          "android": "16.0",
+          "release": "2026-04-21",
+          "aspatch": "2026-03-01",
+          "recovery": "yili-ota_full-OS3.0.301.0.WAKCNXM-user-16.0-61d5003cdc.zip",
+          "fastboot": ""
+        }
+      ]
+    },
+    {
+      "id": "yili",
+      "brand": [
+        "REDMI"
+      ],
+      "device": {
+        "zh": "Redmi K Pad 2",
+        "en": "Redmi K Pad 2"
+      },
+      "name": {
+        "zh": "中国大陆Beta",
+        "en": "China Beta"
+      },
+      "region": "cn",
+      "carrier": [
+        "",
+        "chinatelecom",
+        "chinamobile",
+        "chinaunicom"
+      ],
+      "tags": {
+        "branch": "CnOB",
+        "tag": "CNXM",
+        "branchtag": "F",
+        "btag": "F"
+      },
+      "zone": "1",
+      "show": "1",
+      "ep": "0",
+      "roms": [
+        {
+          "miui": "OS4.0.0.6.XAKCNXM",
+          "os": "OS4",
+          "bigver": "HyperOS 4",
+          "android": "17.0",
+          "release": "2026-08-27",
+          "aspatch": "2026-08-01",
+          "recovery": "yili-ota_full-OS4.0.0.6.XAKCNXM-user-17.0-b8e42fc0ec.zip",
+          "fastboot": ""
         }
       ]
     }
