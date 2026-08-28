@@ -103,7 +103,8 @@
           "release": "2026-01-30",
           "aspatch": "2026-01-01",
           "recovery": "ruan-ota_full-OS3.0.2.0.WFSCNXM-user-16.0-c6eb414f29.zip",
-          "fastboot": ""
+          "fastboot": "",
+          "ctelecom": ""
         },
         {
           "miui": "OS2.0.207.0.VFSCNXM",
@@ -172,6 +173,17 @@
           "ctelecom": "ruan_images_OS2.0.202.0.VFSCNXM_20250621.0000.00_15.0_cn_chinatelecom_3e90bbe2c9.tgz"
         },
         {
+          "miui": "OS1.0.11.0.UFSCNXM",
+          "os": "OS1",
+          "bigver": "HyperOS 1",
+          "android": "14.0",
+          "release": "2025-06-04",
+          "aspatch": "2025-05-01",
+          "recovery": "miui_RUAN_OS1.0.11.0.UFSCNXM_f8537b2afb_14.0.zip",
+          "fastboot": "ruan_images_OS1.0.11.0.UFSCNXM_20250527.0000.00_14.0_cn_18fdc089ab.tgz",
+          "ctelecom": "ruan_images_OS1.0.11.0.UFSCNXM_20250527.0000.00_14.0_cn_chinatelecom_3d3f4cc0e3.tgz"
+        },
+        {
           "miui": "OS2.0.6.0.VFSCNXM",
           "os": "OS2",
           "bigver": "HyperOS 2",
@@ -214,17 +226,6 @@
           "recovery": "ruan-ota_full-OS2.0.2.0.VFSCNXM-user-15.0-439f3ebbb1.zip",
           "fastboot": "ruan_images_OS2.0.2.0.VFSCNXM_20250102.0000.00_15.0_cn_3c449f8793.tgz",
           "ctelecom": "ruan_images_OS2.0.2.0.VFSCNXM_20250102.0000.00_15.0_cn_chinatelecom_d2a12a5c77.tgz"
-        },
-        {
-          "miui": "OS1.0.11.0.UFSCNXM",
-          "os": "OS1",
-          "bigver": "HyperOS 1",
-          "android": "14.0",
-          "release": "2025-06-04",
-          "aspatch": "2025-05-01",
-          "recovery": "miui_RUAN_OS1.0.11.0.UFSCNXM_f8537b2afb_14.0.zip",
-          "fastboot": "ruan_images_OS1.0.11.0.UFSCNXM_20250527.0000.00_14.0_cn_18fdc089ab.tgz",
-          "ctelecom": "ruan_images_OS1.0.11.0.UFSCNXM_20250527.0000.00_14.0_cn_chinatelecom_3d3f4cc0e3.tgz"
         },
         {
           "miui": "OS1.0.10.0.UFSCNXM",
@@ -590,16 +591,6 @@
           "fastboot": "ruan_global_images_OS2.0.2.0.VFSMIXM_20250410.0000.00_15.0_global_ef9244fc29.tgz"
         },
         {
-          "miui": "OS2.0.1.0.VFSMIXM",
-          "os": "OS2",
-          "bigver": "HyperOS 2",
-          "android": "15.0",
-          "release": "2025-01-17",
-          "aspatch": "2025-01-01",
-          "recovery": "ruan_global-ota_full-OS2.0.1.0.VFSMIXM-user-15.0-44acadea50.zip",
-          "fastboot": "ruan_global_images_OS2.0.1.0.VFSMIXM_20250108.0000.00_15.0_global_13fe989141.tgz"
-        },
-        {
           "miui": "OS1.0.12.0.UFSMIXM",
           "os": "OS1",
           "bigver": "HyperOS 1",
@@ -618,6 +609,16 @@
           "aspatch": "2024-12-01",
           "recovery": "miui_RUANGlobal_OS1.0.9.0.UFSMIXM_7ee6eb2a54_14.0.zip",
           "fastboot": ""
+        },
+        {
+          "miui": "OS2.0.1.0.VFSMIXM",
+          "os": "OS2",
+          "bigver": "HyperOS 2",
+          "android": "15.0",
+          "release": "2025-01-17",
+          "aspatch": "2025-01-01",
+          "recovery": "ruan_global-ota_full-OS2.0.1.0.VFSMIXM-user-15.0-44acadea50.zip",
+          "fastboot": "ruan_global_images_OS2.0.1.0.VFSMIXM_20250108.0000.00_15.0_global_13fe989141.tgz"
         },
         {
           "miui": "OS1.0.8.0.UFSMIXM",
@@ -849,16 +850,6 @@
           "fastboot": "ruan_eea_global_images_OS2.0.3.0.VFSEUXM_20250121.0000.00_15.0_eea_ec1371f695.tgz"
         },
         {
-          "miui": "OS2.0.2.0.VFSEUXM",
-          "os": "OS2",
-          "bigver": "HyperOS 2",
-          "android": "15.0",
-          "release": "2024-12-12",
-          "aspatch": "2024-12-01",
-          "recovery": "ruan_eea_global-ota_full-OS2.0.2.0.VFSEUXM-user-15.0-367d14e9f3.zip",
-          "fastboot": "ruan_eea_global_images_OS2.0.2.0.VFSEUXM_20241206.0000.00_15.0_eea_fa4ea51ad5.tgz"
-        },
-        {
           "miui": "OS1.0.10.0.UFSEUXM",
           "os": "OS1",
           "bigver": "HyperOS 1",
@@ -867,6 +858,16 @@
           "aspatch": "2024-12-01",
           "recovery": "miui_RUANEEAGlobal_OS1.0.10.0.UFSEUXM_69e32ebe75_14.0.zip",
           "fastboot": "ruan_eea_global_images_OS1.0.10.0.UFSEUXM_20241224.0000.00_14.0_eea_5a3954c0d2.tgz"
+        },
+        {
+          "miui": "OS2.0.2.0.VFSEUXM",
+          "os": "OS2",
+          "bigver": "HyperOS 2",
+          "android": "15.0",
+          "release": "2024-12-12",
+          "aspatch": "2024-12-01",
+          "recovery": "ruan_eea_global-ota_full-OS2.0.2.0.VFSEUXM-user-15.0-367d14e9f3.zip",
+          "fastboot": "ruan_eea_global_images_OS2.0.2.0.VFSEUXM_20241206.0000.00_15.0_eea_fa4ea51ad5.tgz"
         },
         {
           "miui": "OS1.0.9.0.UFSEUXM",

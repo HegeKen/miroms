@@ -32,7 +32,9 @@ def normalize_bigver(bigver: Any) -> str:
 
 
 # ==================== ROM 版本号排序 ====================
-# 排序规则：版本号为主（降序），release_date 为辅（降序、空值置后）。
+# 排序规则：release_date 为主（降序，新版本在前、空值置后），版本号为辅（降序）。
+# 之所以以发布日期为主，是因为 MIUI(如 V14) 与 HyperOS(如 OS3) 的数字段不可直接比较：
+# 纯按版本号排序会让 2023 年的 MIUI 14 排在 2026 年的 HyperOS 3 之前。
 # 版本号形如 V10.1.1.0.MXDCNFI / OS2.0.1.0.VOBCNXM，取字母前缀后的数字段逐位比较。
 _ROM_VERSION_RE = re.compile(r'^[A-Za-z]*(\d+(?:\.\d+)*)')
 
@@ -46,15 +48,7 @@ def _rom_version_parts(version: Any) -> List[int]:
 
 
 def _compare_roms(a: Dict[str, Any], b: Dict[str, Any]) -> int:
-		"""ROM 排序比较：版本号降序为主，release_date 降序为辅。"""
-		pa = _rom_version_parts(a.get("miui", ""))
-		pb = _rom_version_parts(b.get("miui", ""))
-		n = max(len(pa), len(pb))
-		for i in range(n):
-				x = pa[i] if i < len(pa) else 0
-				y = pb[i] if i < len(pb) else 0
-				if x != y:
-						return y - x
+		"""ROM 排序比较：release_date 降序为主（新版本在前，空日期置后），版本号降序为辅。"""
 		ra = a.get("release") or ""
 		rb = b.get("release") or ""
 		if ra != rb:
@@ -63,6 +57,14 @@ def _compare_roms(a: Dict[str, Any], b: Dict[str, Any]) -> int:
 				if not rb:
 						return -1
 				return 1 if ra < rb else -1
+		pa = _rom_version_parts(a.get("miui", ""))
+		pb = _rom_version_parts(b.get("miui", ""))
+		n = max(len(pa), len(pb))
+		for i in range(n):
+				x = pa[i] if i < len(pa) else 0
+				y = pb[i] if i < len(pb) else 0
+				if x != y:
+						return y - x
 		return 0
 
 
@@ -253,6 +255,7 @@ def load_series_data() -> Dict[str, Any]:
 
 def export_series_index() -> Dict[str, Any]:
 		"""将 series 排序结果写入 data/api/v3/series.json，供前端与 generate-index 消费。"""
+		logger = logging.getLogger(__name__)
 		data = load_series_data()
 		index_struct: Dict[str, Any] = {
 				"order": data["order"],
@@ -715,7 +718,7 @@ def exportV2(device: str) -> Dict[str, Any]:
 											"zh": branch.get("name_zh", ""),
 											"en": branch.get("name_en", "")
 									},
-									"table": ["os", "android", "release", "recovery", "fastboot"],	# V2 基础表头
+									"table": ["os", "android", "release", "aspatch", "recovery", "fastboot"],	# V2 基础表头
 									"show": str(branch.get("visibility", 1)),
 									"carrier": branch.get("carrier", []),
 									"region": branch_info.get("region") or branch.get("region", ""),
@@ -757,10 +760,9 @@ def exportV2(device: str) -> Dict[str, Any]:
 											"fastboot": str(fastboot) if fastboot is not None else ""
 									}
 
-									# 添加运营商定制包（如果有）
-									if ctelecom:
-											rom_entry["ctelecom"] = str(ctelecom)
-									# 可扩展其他运营商字段 cmobile, cunicom 等
+									# 严格按 table 生成：若分支表头含 ctelecom，则每个 ROM 都携带该字段（无数据则为空）
+									if has_ctelecom:
+											rom_entry["ctelecom"] = str(ctelecom) if ctelecom else ""
 
 									# 使用版本号作为 key 存入 roms 字典
 									new_branch["roms"][version_str] = rom_entry
@@ -1060,13 +1062,13 @@ def exportV3(device: str) -> Dict[str, Any]:
 										"fastboot": str(fastboot) if fastboot is not None else ""
 								}
 
-								# 条件添加运营商定制包（只在存在时添加，减少输出体积）
-								if has_ctelecom and ctelecom:
-										roms_entry["ctelecom"] = str(ctelecom)
-								if has_cmobile and cmobile:
-										roms_entry["cmobile"] = str(cmobile)
-								if has_cunicom and cunicom:
-										roms_entry["cunicom"] = str(cunicom)
+								# 严格按分支列集生成：若分支含某运营商定制包，则每个 ROM 都携带该字段（无数据则为空）
+								if has_ctelecom:
+										roms_entry["ctelecom"] = str(ctelecom) if ctelecom else ""
+								if has_cmobile:
+										roms_entry["cmobile"] = str(cmobile) if cmobile else ""
+								if has_cunicom:
+										roms_entry["cunicom"] = str(cunicom) if cunicom else ""
 
 								new_branch["roms"].append(roms_entry)
 

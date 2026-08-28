@@ -79,6 +79,16 @@
           "fastboot": "willow_global_images_V12.5.2.0.RCXMIXM_20211227.0000.00_11.0_global_74ffeb31ed.tgz"
         },
         {
+          "miui": "V12.0.2.0.RCXMIXM",
+          "os": "V12",
+          "bigver": "MIUI 12",
+          "android": "11.0",
+          "release": "2021-10-22",
+          "aspatch": "2021-10-01",
+          "recovery": "miui_WILLOWGlobal_V12.0.2.0.RCXMIXM_5cc543a97e_11.0.zip",
+          "fastboot": ""
+        },
+        {
           "miui": "V12.0.4.0.QCXMIXM",
           "os": "V12",
           "bigver": "MIUI 12",
@@ -97,16 +107,6 @@
           "aspatch": "2021-04-01",
           "recovery": "miui_WILLOWGlobal_V12.0.3.0.QCXMIXM_792b6fd138_10.0.zip",
           "fastboot": "willow_global_images_V12.0.3.0.QCXMIXM_20210331.0000.00_10.0_global_e7258fc5aa.tgz"
-        },
-        {
-          "miui": "V12.0.2.0.RCXMIXM",
-          "os": "V12",
-          "bigver": "MIUI 12",
-          "android": "11.0",
-          "release": "2021-10-22",
-          "aspatch": "2021-10-01",
-          "recovery": "miui_WILLOWGlobal_V12.0.2.0.RCXMIXM_5cc543a97e_11.0.zip",
-          "fastboot": ""
         },
         {
           "miui": "V12.0.2.0.QCXMIXM",
@@ -248,16 +248,6 @@
           "fastboot": "willow_eea_global_images_V12.5.2.0.RCXEUXM_20211222.0000.00_11.0_eea_ed2b1926db.tgz"
         },
         {
-          "miui": "V12.0.4.0.QCXEUXM",
-          "os": "V12",
-          "bigver": "MIUI 12",
-          "android": "10.0",
-          "release": "2021-08-02",
-          "aspatch": "2021-07-01",
-          "recovery": "miui_WILLOWEEAGlobal_V12.0.4.0.QCXEUXM_52bf22031a_10.0.zip",
-          "fastboot": "willow_eea_global_images_V12.0.4.0.QCXEUXM_20210727.0000.00_10.0_eea_ac2f95c569.tgz"
-        },
-        {
           "miui": "V12.0.3.0.RCXEUXM",
           "os": "V12",
           "bigver": "MIUI 12",
@@ -268,16 +258,6 @@
           "fastboot": "willow_eea_global_images_V12.0.3.0.RCXEUXM_20211014.0000.00_11.0_eea_97eaf30998.tgz"
         },
         {
-          "miui": "V12.0.3.0.QCXEUXM",
-          "os": "V12",
-          "bigver": "MIUI 12",
-          "android": "10.0",
-          "release": "2021-04-15",
-          "aspatch": "2021-04-01",
-          "recovery": "miui_WILLOWEEAGlobal_V12.0.3.0.QCXEUXM_07285b429f_10.0.zip",
-          "fastboot": "willow_eea_global_images_V12.0.3.0.QCXEUXM_20210407.0000.00_10.0_eea_734a3376d6.tgz"
-        },
-        {
           "miui": "V12.0.2.0.RCXEUXM",
           "os": "V12",
           "bigver": "MIUI 12",
@@ -286,6 +266,26 @@
           "aspatch": "2021-07-01",
           "recovery": "miui_WILLOWEEAGlobal_V12.0.2.0.RCXEUXM_d4de58ff52_11.0.zip",
           "fastboot": "willow_eea_global_images_V12.0.2.0.RCXEUXM_20210729.0000.00_11.0_eea_237bff32a6.tgz"
+        },
+        {
+          "miui": "V12.0.4.0.QCXEUXM",
+          "os": "V12",
+          "bigver": "MIUI 12",
+          "android": "10.0",
+          "release": "2021-08-02",
+          "aspatch": "2021-07-01",
+          "recovery": "miui_WILLOWEEAGlobal_V12.0.4.0.QCXEUXM_52bf22031a_10.0.zip",
+          "fastboot": "willow_eea_global_images_V12.0.4.0.QCXEUXM_20210727.0000.00_10.0_eea_ac2f95c569.tgz"
+        },
+        {
+          "miui": "V12.0.3.0.QCXEUXM",
+          "os": "V12",
+          "bigver": "MIUI 12",
+          "android": "10.0",
+          "release": "2021-04-15",
+          "aspatch": "2021-04-01",
+          "recovery": "miui_WILLOWEEAGlobal_V12.0.3.0.QCXEUXM_07285b429f_10.0.zip",
+          "fastboot": "willow_eea_global_images_V12.0.3.0.QCXEUXM_20210407.0000.00_10.0_eea_734a3376d6.tgz"
         },
         {
           "miui": "V12.0.2.0.QCXEUXM",
@@ -625,16 +625,6 @@
       "ep": "0",
       "roms": [
         {
-          "miui": "V12.0.2.0.QCXEUHG",
-          "os": "V12",
-          "bigver": "MIUI 12",
-          "android": "10.0",
-          "release": "2021-07-22",
-          "aspatch": "2021-07-01",
-          "recovery": "miui_WILLOWEEAHGGlobal_V12.0.2.0.QCXEUHG_608a6c71ce_10.0.zip",
-          "fastboot": ""
-        },
-        {
           "miui": "V12.0.1.0.RCXEUHG",
           "os": "V12",
           "bigver": "MIUI 12",
@@ -643,6 +633,16 @@
           "aspatch": "2021-10-01",
           "recovery": "miui_WILLOWEEAHGGlobal_V12.0.1.0.RCXEUHG_053305207a_11.0.zip",
           "fastboot": "willow_eea_hg_global_images_V12.0.1.0.RCXEUHG_20211022.0000.00_11.0_eea_880c3dce4d.tgz"
+        },
+        {
+          "miui": "V12.0.2.0.QCXEUHG",
+          "os": "V12",
+          "bigver": "MIUI 12",
+          "android": "10.0",
+          "release": "2021-07-22",
+          "aspatch": "2021-07-01",
+          "recovery": "miui_WILLOWEEAHGGlobal_V12.0.2.0.QCXEUHG_608a6c71ce_10.0.zip",
+          "fastboot": ""
         },
         {
           "miui": "V11.0.5.0.PCXEUHG",
@@ -832,6 +832,16 @@
           "fastboot": "willow_ru_global_images_V12.5.1.0.RCXRUXM_20211228.0000.00_11.0_global_89e36debc8.tgz"
         },
         {
+          "miui": "V12.0.1.0.RCXRUXM",
+          "os": "V12",
+          "bigver": "MIUI 12",
+          "android": "11.0",
+          "release": "2021-10-22",
+          "aspatch": "2021-10-01",
+          "recovery": "miui_WILLOWRUGlobal_V12.0.1.0.RCXRUXM_34bfc815eb_11.0.zip",
+          "fastboot": ""
+        },
+        {
           "miui": "V12.0.5.0.QCXRUXM",
           "os": "V12",
           "bigver": "MIUI 12",
@@ -870,16 +880,6 @@
           "aspatch": "2020-10-01",
           "recovery": "miui_WILLOWRUGlobal_V12.0.2.0.QCXRUXM_4ccbba7cf5_10.0.zip",
           "fastboot": "willow_ru_global_images_V12.0.2.0.QCXRUXM_20201104.0000.00_10.0_global_ad16bd328f.tgz"
-        },
-        {
-          "miui": "V12.0.1.0.RCXRUXM",
-          "os": "V12",
-          "bigver": "MIUI 12",
-          "android": "11.0",
-          "release": "2021-10-22",
-          "aspatch": "2021-10-01",
-          "recovery": "miui_WILLOWRUGlobal_V12.0.1.0.RCXRUXM_34bfc815eb_11.0.zip",
-          "fastboot": ""
         },
         {
           "miui": "V11.0.5.0.PCXRUXM",

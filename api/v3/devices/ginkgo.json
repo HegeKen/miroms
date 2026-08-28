@@ -71,7 +71,9 @@
           "release": "2021-11-09",
           "aspatch": "2021-10-01",
           "recovery": "miui_GINKGO_V12.5.4.0.RCOCNXM_7b06ce4b4d_11.0.zip",
-          "fastboot": "ginkgo_images_V12.5.4.0.RCOCNXM_20211018.0000.00_11.0_cn_977f024e95.tgz"
+          "fastboot": "ginkgo_images_V12.5.4.0.RCOCNXM_20211018.0000.00_11.0_cn_977f024e95.tgz",
+          "ctelecom": "",
+          "cmobile": ""
         },
         {
           "miui": "V12.5.3.0.RCOCNXM",
@@ -81,7 +83,9 @@
           "release": "2021-10-18",
           "aspatch": "2021-10-01",
           "recovery": "miui_GINKGO_V12.5.3.0.RCOCNXM_1dd31985ed_11.0.zip",
-          "fastboot": "ginkgo_images_V12.5.3.0.RCOCNXM_20211016.0000.00_11.0_cn_86c3b02c78.tgz"
+          "fastboot": "ginkgo_images_V12.5.3.0.RCOCNXM_20211016.0000.00_11.0_cn_86c3b02c78.tgz",
+          "ctelecom": "",
+          "cmobile": ""
         },
         {
           "miui": "V12.5.2.0.RCOCNXM",
@@ -91,7 +95,9 @@
           "release": "2021-09-27",
           "aspatch": "2021-08-01",
           "recovery": "miui_GINKGO_V12.5.2.0.RCOCNXM_edb5a5dca4_11.0.zip",
-          "fastboot": ""
+          "fastboot": "",
+          "ctelecom": "",
+          "cmobile": ""
         },
         {
           "miui": "V12.5.1.0.RCOCNXM",
@@ -101,7 +107,9 @@
           "release": "2021-08-16",
           "aspatch": "2021-07-01",
           "recovery": "miui_GINKGO_V12.5.1.0.RCOCNXM_474fdd5c54_11.0.zip",
-          "fastboot": "ginkgo_images_V12.5.1.0.RCOCNXM_20210804.0000.00_11.0_cn_928cd0eb16.tgz"
+          "fastboot": "ginkgo_images_V12.5.1.0.RCOCNXM_20210804.0000.00_11.0_cn_928cd0eb16.tgz",
+          "ctelecom": "",
+          "cmobile": ""
         },
         {
           "miui": "V12.0.3.0.RCOCNXM",
@@ -111,27 +119,9 @@
           "release": "2021-06-01",
           "aspatch": "2021-04-01",
           "recovery": "miui_GINKGO_V12.0.3.0.RCOCNXM_dea616152f_11.0.zip",
-          "fastboot": "ginkgo_images_V12.0.3.0.RCOCNXM_20210524.0000.00_11.0_cn_eda1fc3541.tgz"
-        },
-        {
-          "miui": "V12.0.3.0.QCOCNXM",
-          "os": "V12",
-          "bigver": "MIUI 12",
-          "android": "10.0",
-          "release": "2020-11-23",
-          "aspatch": "2020-11-01",
-          "recovery": "miui_GINKGO_V12.0.3.0.QCOCNXM_e41fdaaac9_10.0.zip",
-          "fastboot": "ginkgo_images_V12.0.3.0.QCOCNXM_20201117.0000.00_10.0_cn_fe1f2115e7.tgz"
-        },
-        {
-          "miui": "V12.0.2.0.QCOCNXM",
-          "os": "V12",
-          "bigver": "MIUI 12",
-          "android": "10.0",
-          "release": "2020-09-30",
-          "aspatch": "2020-09-01",
-          "recovery": "miui_GINKGO_V12.0.2.0.QCOCNXM_fad5afbf68_10.0.zip",
-          "fastboot": "ginkgo_images_V12.0.2.0.QCOCNXM_20200926.0000.00_10.0_cn_0f2a39dd8e.tgz"
+          "fastboot": "ginkgo_images_V12.0.3.0.RCOCNXM_20210524.0000.00_11.0_cn_eda1fc3541.tgz",
+          "ctelecom": "",
+          "cmobile": ""
         },
         {
           "miui": "V12.0.1.0.RCOCNXM",
@@ -141,7 +131,21 @@
           "release": "2021-02-20",
           "aspatch": "2021-01-01",
           "recovery": "miui_GINKGO_V12.0.1.0.RCOCNXM_d885534244_11.0.zip",
-          "fastboot": ""
+          "fastboot": "",
+          "ctelecom": "",
+          "cmobile": ""
+        },
+        {
+          "miui": "V12.0.3.0.QCOCNXM",
+          "os": "V12",
+          "bigver": "MIUI 12",
+          "android": "10.0",
+          "release": "2020-11-23",
+          "aspatch": "2020-11-01",
+          "recovery": "miui_GINKGO_V12.0.3.0.QCOCNXM_e41fdaaac9_10.0.zip",
+          "fastboot": "ginkgo_images_V12.0.3.0.QCOCNXM_20201117.0000.00_10.0_cn_fe1f2115e7.tgz",
+          "ctelecom": "",
+          "cmobile": ""
         },
         {
           "miui": "V11.0.8.0.PCOCNXM",
@@ -151,7 +155,21 @@
           "release": "2020-10-19",
           "aspatch": "2020-09-01",
           "recovery": "miui_GINKGO_V11.0.8.0.PCOCNXM_40bbde64f6_9.0.zip",
-          "fastboot": "ginkgo_images_V11.0.8.0.PCOCNXM_20201014.0000.00_9.0_cn_2edac29a9d.tgz"
+          "fastboot": "ginkgo_images_V11.0.8.0.PCOCNXM_20201014.0000.00_9.0_cn_2edac29a9d.tgz",
+          "ctelecom": "",
+          "cmobile": ""
+        },
+        {
+          "miui": "V12.0.2.0.QCOCNXM",
+          "os": "V12",
+          "bigver": "MIUI 12",
+          "android": "10.0",
+          "release": "2020-09-30",
+          "aspatch": "2020-09-01",
+          "recovery": "miui_GINKGO_V12.0.2.0.QCOCNXM_fad5afbf68_10.0.zip",
+          "fastboot": "ginkgo_images_V12.0.2.0.QCOCNXM_20200926.0000.00_10.0_cn_0f2a39dd8e.tgz",
+          "ctelecom": "",
+          "cmobile": ""
         },
         {
           "miui": "V11.0.7.0.PCOCNXM",
@@ -161,7 +179,9 @@
           "release": "2020-06-23",
           "aspatch": "2020-06-01",
           "recovery": "miui_GINKGO_V11.0.7.0.PCOCNXM_103aa0209f_9.0.zip",
-          "fastboot": "ginkgo_images_V11.0.7.0.PCOCNXM_20200612.0000.00_9.0_cn_e7e894ac9b.tgz"
+          "fastboot": "ginkgo_images_V11.0.7.0.PCOCNXM_20200612.0000.00_9.0_cn_e7e894ac9b.tgz",
+          "ctelecom": "",
+          "cmobile": ""
         },
         {
           "miui": "V11.0.6.0.PCOCNXM",
@@ -171,7 +191,9 @@
           "release": "2020-03-18",
           "aspatch": "2020-03-01",
           "recovery": "miui_GINKGO_V11.0.6.0.PCOCNXM_c0598800f6_9.0.zip",
-          "fastboot": "ginkgo_images_V11.0.6.0.PCOCNXM_20200314.0000.00_9.0_cn_3f5d7be94d.tgz"
+          "fastboot": "ginkgo_images_V11.0.6.0.PCOCNXM_20200314.0000.00_9.0_cn_3f5d7be94d.tgz",
+          "ctelecom": "",
+          "cmobile": ""
         },
         {
           "miui": "V11.0.5.0.PCOCNXM",
@@ -181,7 +203,9 @@
           "release": "2020-02-21",
           "aspatch": "2020-01-01",
           "recovery": "miui_GINKGO_V11.0.5.0.PCOCNXM_01cc753a51_9.0.zip",
-          "fastboot": "ginkgo_images_V11.0.5.0.PCOCNXM_20200213.0000.00_9.0_cn_f96f9de56c.tgz"
+          "fastboot": "ginkgo_images_V11.0.5.0.PCOCNXM_20200213.0000.00_9.0_cn_f96f9de56c.tgz",
+          "ctelecom": "",
+          "cmobile": ""
         },
         {
           "miui": "V11.0.4.0.PCOCNXM",
@@ -191,7 +215,9 @@
           "release": "2020-01-03",
           "aspatch": "2019-12-01",
           "recovery": "miui_GINKGO_V11.0.4.0.PCOCNXM_7248ec69cc_9.0.zip",
-          "fastboot": "ginkgo_images_V11.0.4.0.PCOCNXM_20191227.0000.00_9.0_cn_6db8ae2174.tgz"
+          "fastboot": "ginkgo_images_V11.0.4.0.PCOCNXM_20191227.0000.00_9.0_cn_6db8ae2174.tgz",
+          "ctelecom": "",
+          "cmobile": ""
         },
         {
           "miui": "V11.0.3.0.PCOCNXM",
@@ -201,7 +227,9 @@
           "release": "2019-11-21",
           "aspatch": "2019-10-01",
           "recovery": "miui_GINKGO_V11.0.3.0.PCOCNXM_b07db156df_9.0.zip",
-          "fastboot": "ginkgo_images_V11.0.3.0.PCOCNXM_20191119.0000.00_9.0_cn_24aeb205ba.tgz"
+          "fastboot": "ginkgo_images_V11.0.3.0.PCOCNXM_20191119.0000.00_9.0_cn_24aeb205ba.tgz",
+          "ctelecom": "",
+          "cmobile": ""
         },
         {
           "miui": "V11.0.2.0.PCOCNXM",
@@ -211,7 +239,9 @@
           "release": "2019-11-15",
           "aspatch": "2019-10-01",
           "recovery": "miui_GINKGO_V11.0.2.0.PCOCNXM_4f887a3f3e_9.0.zip",
-          "fastboot": ""
+          "fastboot": "",
+          "ctelecom": "",
+          "cmobile": ""
         },
         {
           "miui": "V10.3.8.0.PCOCNXM",
@@ -221,7 +251,9 @@
           "release": "2019-10-24",
           "aspatch": "2019-09-01",
           "recovery": "miui_GINKGO_V10.3.8.0.PCOCNXM_378cda9a0b_9.0.zip",
-          "fastboot": "ginkgo_images_V10.3.8.0.PCOCNXM_20191018.0000.00_9.0_cn_6f457d9004.tgz"
+          "fastboot": "ginkgo_images_V10.3.8.0.PCOCNXM_20191018.0000.00_9.0_cn_6f457d9004.tgz",
+          "ctelecom": "",
+          "cmobile": ""
         },
         {
           "miui": "V10.3.6.0.PCOCNXM",
@@ -231,7 +263,9 @@
           "release": "2019-09-30",
           "aspatch": "2019-09-01",
           "recovery": "miui_GINKGO_V10.3.6.0.PCOCNXM_36a8a15d18_9.0.zip",
-          "fastboot": "ginkgo_images_V10.3.6.0.PCOCNXM_20190926.0000.00_9.0_cn_41ed71bc5f.tgz"
+          "fastboot": "ginkgo_images_V10.3.6.0.PCOCNXM_20190926.0000.00_9.0_cn_41ed71bc5f.tgz",
+          "ctelecom": "",
+          "cmobile": ""
         },
         {
           "miui": "V10.3.5.0.PCOCNXM",
@@ -241,7 +275,9 @@
           "release": "2019-09-26",
           "aspatch": "2019-09-01",
           "recovery": "miui_GINKGO_V10.3.5.0.PCOCNXM_f0623abc24_9.0.zip",
-          "fastboot": "ginkgo_images_V10.3.5.0.PCOCNXM_20190924.0000.00_9.0_cn_7f0dd8045e.tgz"
+          "fastboot": "ginkgo_images_V10.3.5.0.PCOCNXM_20190924.0000.00_9.0_cn_7f0dd8045e.tgz",
+          "ctelecom": "",
+          "cmobile": ""
         },
         {
           "miui": "V10.3.2.0.PCOCNXM",
@@ -251,7 +287,9 @@
           "release": "2019-09-20",
           "aspatch": "2019-08-01",
           "recovery": "miui_GINKGO_V10.3.2.0.PCOCNXM_47241996dd_9.0.zip",
-          "fastboot": "ginkgo_images_V10.3.2.0.PCOCNXM_20190902.0000.00_9.0_cn_081d389897.tgz"
+          "fastboot": "ginkgo_images_V10.3.2.0.PCOCNXM_20190902.0000.00_9.0_cn_081d389897.tgz",
+          "ctelecom": "",
+          "cmobile": ""
         }
       ]
     },
@@ -2845,6 +2883,16 @@
           "fastboot": "ginkgo_global_images_V12.5.1.0.RCOMIXM_20211107.0000.00_11.0_global_6af0fb6620.tgz"
         },
         {
+          "miui": "V12.0.2.0.RCOMIXM",
+          "os": "V12",
+          "bigver": "MIUI 12",
+          "android": "11.0",
+          "release": "2021-08-13",
+          "aspatch": "2021-07-01",
+          "recovery": "miui_GINKGOGlobal_V12.0.2.0.RCOMIXM_95e3ba801c_11.0.zip",
+          "fastboot": "ginkgo_global_images_V12.0.2.0.RCOMIXM_20210810.0000.00_11.0_global_1d224fa56a.tgz"
+        },
+        {
           "miui": "V12.0.6.0.QCOMIXM",
           "os": "V12",
           "bigver": "MIUI 12",
@@ -2885,14 +2933,14 @@
           "fastboot": "ginkgo_global_images_V12.0.3.0.QCOMIXM_20201226.0000.00_10.0_global_044c052090.tgz"
         },
         {
-          "miui": "V12.0.2.0.RCOMIXM",
-          "os": "V12",
-          "bigver": "MIUI 12",
-          "android": "11.0",
-          "release": "2021-08-13",
-          "aspatch": "2021-07-01",
-          "recovery": "miui_GINKGOGlobal_V12.0.2.0.RCOMIXM_95e3ba801c_11.0.zip",
-          "fastboot": "ginkgo_global_images_V12.0.2.0.RCOMIXM_20210810.0000.00_11.0_global_1d224fa56a.tgz"
+          "miui": "V11.0.12.0.PCOMIXM",
+          "os": "V11",
+          "bigver": "MIUI 11",
+          "android": "9.0",
+          "release": "2020-11-25",
+          "aspatch": "2020-11-01",
+          "recovery": "miui_GINKGOGlobal_V11.0.12.0.PCOMIXM_912960e1fc_9.0.zip",
+          "fastboot": "ginkgo_global_images_V11.0.12.0.PCOMIXM_20201119.0000.00_9.0_global_37804edbcb.tgz"
         },
         {
           "miui": "V12.0.2.0.QCOMIXM",
@@ -2913,16 +2961,6 @@
           "aspatch": "2020-09-01",
           "recovery": "miui_GINKGOGlobal_V12.0.1.0.QCOMIXM_f5da3c2665_10.0.zip",
           "fastboot": "ginkgo_global_images_V12.0.1.0.QCOMIXM_20201019.0000.00_10.0_global_a4829c10a8.tgz"
-        },
-        {
-          "miui": "V11.0.12.0.PCOMIXM",
-          "os": "V11",
-          "bigver": "MIUI 11",
-          "android": "9.0",
-          "release": "2020-11-25",
-          "aspatch": "2020-11-01",
-          "recovery": "miui_GINKGOGlobal_V11.0.12.0.PCOMIXM_912960e1fc_9.0.zip",
-          "fastboot": "ginkgo_global_images_V11.0.12.0.PCOMIXM_20201119.0000.00_9.0_global_37804edbcb.tgz"
         },
         {
           "miui": "V11.0.11.0.PCOMIXM",
@@ -3104,16 +3142,6 @@
           "fastboot": "ginkgo_eea_global_images_V12.5.2.0.RCOEUXM_20211224.0000.00_11.0_eea_c87aa6a165.tgz"
         },
         {
-          "miui": "V12.0.6.0.QCOEUXM",
-          "os": "V12",
-          "bigver": "MIUI 12",
-          "android": "10.0",
-          "release": "2021-04-16",
-          "aspatch": "2021-04-01",
-          "recovery": "miui_GINKGOEEAGlobal_V12.0.6.0.QCOEUXM_e152be6842_10.0.zip",
-          "fastboot": "ginkgo_eea_global_images_V12.0.6.0.QCOEUXM_20210407.0000.00_10.0_eea_680a489b23.tgz"
-        },
-        {
           "miui": "V12.0.4.0.RCOEUXM",
           "os": "V12",
           "bigver": "MIUI 12",
@@ -3122,16 +3150,6 @@
           "aspatch": "2021-10-01",
           "recovery": "miui_GINKGOEEAGlobal_V12.0.4.0.RCOEUXM_55a93f0b31_11.0.zip",
           "fastboot": "ginkgo_eea_global_images_V12.0.4.0.RCOEUXM_20211012.0000.00_11.0_eea_7ebfebccfa.tgz"
-        },
-        {
-          "miui": "V12.0.4.0.QCOEUXM",
-          "os": "V12",
-          "bigver": "MIUI 12",
-          "android": "10.0",
-          "release": "2021-03-08",
-          "aspatch": "2021-02-01",
-          "recovery": "miui_GINKGOEEAGlobal_V12.0.4.0.QCOEUXM_abeb7babba_10.0.zip",
-          "fastboot": "ginkgo_eea_global_images_V12.0.4.0.QCOEUXM_20210302.0000.00_10.0_eea_2da65aaa58.tgz"
         },
         {
           "miui": "V12.0.3.0.RCOEUXM",
@@ -3144,16 +3162,6 @@
           "fastboot": "ginkgo_eea_global_images_V12.0.3.0.RCOEUXM_20210814.0000.00_11.0_eea_55da31d01d.tgz"
         },
         {
-          "miui": "V12.0.3.0.QCOEUXM",
-          "os": "V12",
-          "bigver": "MIUI 12",
-          "android": "10.0",
-          "release": "2021-01-11",
-          "aspatch": "2020-11-01",
-          "recovery": "miui_GINKGOEEAGlobal_V12.0.3.0.QCOEUXM_fc0a7dfc2e_10.0.zip",
-          "fastboot": "ginkgo_eea_global_images_V12.0.3.0.QCOEUXM_20201230.0000.00_10.0_eea_0848618fbb.tgz"
-        },
-        {
           "miui": "V12.0.2.0.RCOEUXM",
           "os": "V12",
           "bigver": "MIUI 12",
@@ -3162,6 +3170,36 @@
           "aspatch": "2021-05-01",
           "recovery": "miui_GINKGOEEAGlobal_V12.0.2.0.RCOEUXM_2a44f40334_11.0.zip",
           "fastboot": "ginkgo_eea_global_images_V12.0.2.0.RCOEUXM_20210625.0000.00_11.0_eea_24c30e05e0.tgz"
+        },
+        {
+          "miui": "V12.0.6.0.QCOEUXM",
+          "os": "V12",
+          "bigver": "MIUI 12",
+          "android": "10.0",
+          "release": "2021-04-16",
+          "aspatch": "2021-04-01",
+          "recovery": "miui_GINKGOEEAGlobal_V12.0.6.0.QCOEUXM_e152be6842_10.0.zip",
+          "fastboot": "ginkgo_eea_global_images_V12.0.6.0.QCOEUXM_20210407.0000.00_10.0_eea_680a489b23.tgz"
+        },
+        {
+          "miui": "V12.0.4.0.QCOEUXM",
+          "os": "V12",
+          "bigver": "MIUI 12",
+          "android": "10.0",
+          "release": "2021-03-08",
+          "aspatch": "2021-02-01",
+          "recovery": "miui_GINKGOEEAGlobal_V12.0.4.0.QCOEUXM_abeb7babba_10.0.zip",
+          "fastboot": "ginkgo_eea_global_images_V12.0.4.0.QCOEUXM_20210302.0000.00_10.0_eea_2da65aaa58.tgz"
+        },
+        {
+          "miui": "V12.0.3.0.QCOEUXM",
+          "os": "V12",
+          "bigver": "MIUI 12",
+          "android": "10.0",
+          "release": "2021-01-11",
+          "aspatch": "2020-11-01",
+          "recovery": "miui_GINKGOEEAGlobal_V12.0.3.0.QCOEUXM_fc0a7dfc2e_10.0.zip",
+          "fastboot": "ginkgo_eea_global_images_V12.0.3.0.QCOEUXM_20201230.0000.00_10.0_eea_0848618fbb.tgz"
         },
         {
           "miui": "V12.0.2.0.QCOEUXM",
@@ -3302,16 +3340,6 @@
           "fastboot": "ginkgo_in_global_images_V12.5.1.0.RCOINXM_20211220.0000.00_11.0_in_0f02318e13.tgz"
         },
         {
-          "miui": "V12.0.2.0.QCOINXM",
-          "os": "V12",
-          "bigver": "MIUI 12",
-          "android": "10.0",
-          "release": "2021-01-28",
-          "aspatch": "2021-01-01",
-          "recovery": "miui_GINKGOINGlobal_V12.0.2.0.QCOINXM_e2889b8fd0_10.0.zip",
-          "fastboot": "ginkgo_in_global_images_V12.0.2.0.QCOINXM_20210121.0000.00_10.0_in_03e515873b.tgz"
-        },
-        {
           "miui": "V12.0.1.0.RCOINXM",
           "os": "V12",
           "bigver": "MIUI 12",
@@ -3320,6 +3348,16 @@
           "aspatch": "2021-10-01",
           "recovery": "miui_GINKGOINGlobal_V12.0.1.0.RCOINXM_091c3f13d2_11.0.zip",
           "fastboot": "ginkgo_in_global_images_V12.0.1.0.RCOINXM_20211115.0000.00_11.0_in_c0b22bc14e.tgz"
+        },
+        {
+          "miui": "V12.0.2.0.QCOINXM",
+          "os": "V12",
+          "bigver": "MIUI 12",
+          "android": "10.0",
+          "release": "2021-01-28",
+          "aspatch": "2021-01-01",
+          "recovery": "miui_GINKGOINGlobal_V12.0.2.0.QCOINXM_e2889b8fd0_10.0.zip",
+          "fastboot": "ginkgo_in_global_images_V12.0.2.0.QCOINXM_20210121.0000.00_10.0_in_03e515873b.tgz"
         },
         {
           "miui": "V12.0.1.0.QCOINXM",
@@ -3481,16 +3519,6 @@
           "fastboot": "ginkgo_id_global_images_V12.0.3.0.RCOIDXM_20211119.0000.00_11.0_global_76089bc59b.tgz"
         },
         {
-          "miui": "V12.0.2.0.QCOIDXM",
-          "os": "V12",
-          "bigver": "MIUI 12",
-          "android": "10.0",
-          "release": "2021-03-16",
-          "aspatch": "2021-02-01",
-          "recovery": "miui_GINKGOIDGlobal_V12.0.2.0.QCOIDXM_72fd4bd5a7_10.0.zip",
-          "fastboot": "ginkgo_id_global_images_V12.0.2.0.QCOIDXM_20210306.0000.00_10.0_global_dadfbad2ed.tgz"
-        },
-        {
           "miui": "V12.0.1.0.RCOIDXM",
           "os": "V12",
           "bigver": "MIUI 12",
@@ -3499,6 +3527,16 @@
           "aspatch": "2021-10-01",
           "recovery": "miui_GINKGOIDGlobal_V12.0.1.0.RCOIDXM_538094f7fd_11.0.zip",
           "fastboot": ""
+        },
+        {
+          "miui": "V12.0.2.0.QCOIDXM",
+          "os": "V12",
+          "bigver": "MIUI 12",
+          "android": "10.0",
+          "release": "2021-03-16",
+          "aspatch": "2021-02-01",
+          "recovery": "miui_GINKGOIDGlobal_V12.0.2.0.QCOIDXM_72fd4bd5a7_10.0.zip",
+          "fastboot": "ginkgo_id_global_images_V12.0.2.0.QCOIDXM_20210306.0000.00_10.0_global_dadfbad2ed.tgz"
         },
         {
           "miui": "V12.0.1.0.QCOIDXM",

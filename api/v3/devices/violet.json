@@ -70,7 +70,9 @@
           "release": "2021-06-29",
           "aspatch": "2021-05-01",
           "recovery": "miui_VIOLET_V12.5.1.0.QFHCNXM_0a511daa5e_10.0.zip",
-          "fastboot": "violet_images_V12.5.1.0.QFHCNXM_20210623.0000.00_10.0_cn_b3e943475d.tgz"
+          "fastboot": "violet_images_V12.5.1.0.QFHCNXM_20210623.0000.00_10.0_cn_b3e943475d.tgz",
+          "ctelecom": "",
+          "cmobile": ""
         },
         {
           "miui": "V12.0.3.0.QFHCNXM",
@@ -80,7 +82,9 @@
           "release": "2020-10-10",
           "aspatch": "2020-09-01",
           "recovery": "miui_VIOLET_V12.0.3.0.QFHCNXM_23b306b741_10.0.zip",
-          "fastboot": "violet_images_V12.0.3.0.QFHCNXM_20200929.0000.00_10.0_cn_9a31298730.tgz"
+          "fastboot": "violet_images_V12.0.3.0.QFHCNXM_20200929.0000.00_10.0_cn_9a31298730.tgz",
+          "ctelecom": "",
+          "cmobile": ""
         },
         {
           "miui": "V12.0.2.0.QFHCNXM",
@@ -90,37 +94,9 @@
           "release": "2020-08-05",
           "aspatch": "2020-07-01",
           "recovery": "miui_VIOLET_V12.0.2.0.QFHCNXM_cb92059195_10.0.zip",
-          "fastboot": "violet_images_V12.0.2.0.QFHCNXM_20200731.0000.00_10.0_cn_da154791b2.tgz"
-        },
-        {
-          "miui": "V11.0.8.0.PFHCNXM",
-          "os": "V11",
-          "bigver": "MIUI 11",
-          "android": "9.0",
-          "release": "2020-03-10",
-          "aspatch": "2020-02-01",
-          "recovery": "miui_VIOLET_V11.0.8.0.PFHCNXM_3b7c27c482_9.0.zip",
-          "fastboot": "violet_images_V11.0.8.0.PFHCNXM_20200303.0000.00_9.0_cn_899b0d2046.tgz"
-        },
-        {
-          "miui": "V11.0.4.0.PFHCNXM",
-          "os": "V11",
-          "bigver": "MIUI 11",
-          "android": "9.0",
-          "release": "2019-10-29",
-          "aspatch": "2019-10-01",
-          "recovery": "miui_VIOLET_V11.0.4.0.PFHCNXM_64c00b1368_9.0.zip",
-          "fastboot": "violet_images_V11.0.4.0.PFHCNXM_20191022.0000.00_9.0_cn_61a88e50e8.tgz"
-        },
-        {
-          "miui": "V11.0.3.0.PFHCNXM",
-          "os": "V11",
-          "bigver": "MIUI 11",
-          "android": "9.0",
-          "release": "2019-10-08",
-          "aspatch": "2019-09-01",
-          "recovery": "miui_VIOLET_V11.0.3.0.PFHCNXM_38ac3021fa_9.0.zip",
-          "fastboot": "violet_images_V11.0.3.0.PFHCNXM_20190925.0000.00_9.0_cn_d245e22d05.tgz"
+          "fastboot": "violet_images_V12.0.2.0.QFHCNXM_20200731.0000.00_10.0_cn_da154791b2.tgz",
+          "ctelecom": "",
+          "cmobile": ""
         },
         {
           "miui": "V11.0.1.0.QFHCNXM",
@@ -130,7 +106,45 @@
           "release": "2020-06-09",
           "aspatch": "2020-05-01",
           "recovery": "miui_VIOLET_V11.0.1.0.QFHCNXM_d16fb03b84_10.0.zip",
-          "fastboot": "violet_images_V11.0.1.0.QFHCNXM_20200603.0000.00_10.0_cn_32a5958a03.tgz"
+          "fastboot": "violet_images_V11.0.1.0.QFHCNXM_20200603.0000.00_10.0_cn_32a5958a03.tgz",
+          "ctelecom": "",
+          "cmobile": ""
+        },
+        {
+          "miui": "V11.0.8.0.PFHCNXM",
+          "os": "V11",
+          "bigver": "MIUI 11",
+          "android": "9.0",
+          "release": "2020-03-10",
+          "aspatch": "2020-02-01",
+          "recovery": "miui_VIOLET_V11.0.8.0.PFHCNXM_3b7c27c482_9.0.zip",
+          "fastboot": "violet_images_V11.0.8.0.PFHCNXM_20200303.0000.00_9.0_cn_899b0d2046.tgz",
+          "ctelecom": "",
+          "cmobile": ""
+        },
+        {
+          "miui": "V11.0.4.0.PFHCNXM",
+          "os": "V11",
+          "bigver": "MIUI 11",
+          "android": "9.0",
+          "release": "2019-10-29",
+          "aspatch": "2019-10-01",
+          "recovery": "miui_VIOLET_V11.0.4.0.PFHCNXM_64c00b1368_9.0.zip",
+          "fastboot": "violet_images_V11.0.4.0.PFHCNXM_20191022.0000.00_9.0_cn_61a88e50e8.tgz",
+          "ctelecom": "",
+          "cmobile": ""
+        },
+        {
+          "miui": "V11.0.3.0.PFHCNXM",
+          "os": "V11",
+          "bigver": "MIUI 11",
+          "android": "9.0",
+          "release": "2019-10-08",
+          "aspatch": "2019-09-01",
+          "recovery": "miui_VIOLET_V11.0.3.0.PFHCNXM_38ac3021fa_9.0.zip",
+          "fastboot": "violet_images_V11.0.3.0.PFHCNXM_20190925.0000.00_9.0_cn_d245e22d05.tgz",
+          "ctelecom": "",
+          "cmobile": ""
         },
         {
           "miui": "V10.3.11.0.PFHCNXM",
@@ -140,7 +154,9 @@
           "release": "2019-08-16",
           "aspatch": "2019-08-01",
           "recovery": "miui_VIOLET_V10.3.11.0.PFHCNXM_ab1b0c15b1_9.0.zip",
-          "fastboot": "violet_images_V10.3.11.0.PFHCNXM_20190812.0000.00_9.0_cn_702882441e.tgz"
+          "fastboot": "violet_images_V10.3.11.0.PFHCNXM_20190812.0000.00_9.0_cn_702882441e.tgz",
+          "ctelecom": "",
+          "cmobile": ""
         },
         {
           "miui": "V10.3.10.0.PFHCNXM",
@@ -150,7 +166,9 @@
           "release": "2019-07-30",
           "aspatch": "2019-06-01",
           "recovery": "miui_VIOLET_V10.3.10.0.PFHCNXM_fe274086b6_9.0.zip",
-          "fastboot": "violet_images_V10.3.10.0.PFHCNXM_20190725.0000.00_9.0_cn_4147db1de1.tgz"
+          "fastboot": "violet_images_V10.3.10.0.PFHCNXM_20190725.0000.00_9.0_cn_4147db1de1.tgz",
+          "ctelecom": "",
+          "cmobile": ""
         },
         {
           "miui": "V10.3.9.0.PFHCNXM",
@@ -160,7 +178,9 @@
           "release": "2019-07-08",
           "aspatch": "2019-06-01",
           "recovery": "miui_VIOLET_V10.3.9.0.PFHCNXM_ecd8283ce3_9.0.zip",
-          "fastboot": "violet_images_V10.3.9.0.PFHCNXM_20190703.0000.00_9.0_cn_d2831bf879.tgz"
+          "fastboot": "violet_images_V10.3.9.0.PFHCNXM_20190703.0000.00_9.0_cn_d2831bf879.tgz",
+          "ctelecom": "",
+          "cmobile": ""
         },
         {
           "miui": "V10.3.8.0.PFHCNXM",
@@ -170,7 +190,9 @@
           "release": "2019-06-26",
           "aspatch": "2019-06-01",
           "recovery": "miui_VIOLET_V10.3.8.0.PFHCNXM_57ce442583_9.0.zip",
-          "fastboot": "violet_images_V10.3.8.0.PFHCNXM_20190621.0000.00_9.0_cn_69d4317591.tgz"
+          "fastboot": "violet_images_V10.3.8.0.PFHCNXM_20190621.0000.00_9.0_cn_69d4317591.tgz",
+          "ctelecom": "",
+          "cmobile": ""
         },
         {
           "miui": "V10.3.6.0.PFHCNXM",
@@ -180,7 +202,9 @@
           "release": "2019-06-14",
           "aspatch": "2019-05-01",
           "recovery": "miui_VIOLET_V10.3.6.0.PFHCNXM_8c67bdc758_9.0.zip",
-          "fastboot": "violet_images_V10.3.6.0.PFHCNXM_20190604.0000.00_9.0_cn_e5062d168d.tgz"
+          "fastboot": "violet_images_V10.3.6.0.PFHCNXM_20190604.0000.00_9.0_cn_e5062d168d.tgz",
+          "ctelecom": "",
+          "cmobile": ""
         },
         {
           "miui": "V10.3.5.0.PFHCNXM",
@@ -190,7 +214,9 @@
           "release": "2019-05-15",
           "aspatch": "2019-04-01",
           "recovery": "miui_VIOLET_V10.3.5.0.PFHCNXM_4bdf98d05f_9.0.zip",
-          "fastboot": "violet_images_V10.3.5.0.PFHCNXM_20190510.0000.00_9.0_cn_acb5f32f11.tgz"
+          "fastboot": "violet_images_V10.3.5.0.PFHCNXM_20190510.0000.00_9.0_cn_acb5f32f11.tgz",
+          "ctelecom": "",
+          "cmobile": ""
         },
         {
           "miui": "V10.2.8.0.PFHCNXM",
@@ -200,7 +226,9 @@
           "release": "2019-04-26",
           "aspatch": "2019-03-01",
           "recovery": "miui_VIOLET_V10.2.8.0.PFHCNXM_b7cc19ccd8_9.0.zip",
-          "fastboot": "violet_images_V10.2.8.0.PFHCNXM_20190423.0000.00_9.0_cn_ae91a09e68.tgz"
+          "fastboot": "violet_images_V10.2.8.0.PFHCNXM_20190423.0000.00_9.0_cn_ae91a09e68.tgz",
+          "ctelecom": "",
+          "cmobile": ""
         },
         {
           "miui": "V10.2.6.0.PFHCNXM",
@@ -210,7 +238,9 @@
           "release": "2019-04-10",
           "aspatch": "2019-03-01",
           "recovery": "miui_VIOLET_V10.2.6.0.PFHCNXM_58a985074b_9.0.zip",
-          "fastboot": "violet_images_V10.2.6.0.PFHCNXM_20190404.0000.00_9.0_cn_06350797b7.tgz"
+          "fastboot": "violet_images_V10.2.6.0.PFHCNXM_20190404.0000.00_9.0_cn_06350797b7.tgz",
+          "ctelecom": "",
+          "cmobile": ""
         },
         {
           "miui": "V10.2.5.0.PFHCNXM",
@@ -220,7 +250,9 @@
           "release": "2019-03-20",
           "aspatch": "2019-02-01",
           "recovery": "miui_VIOLET_V10.2.5.0.PFHCNXM_6b8f26446b_9.0.zip",
-          "fastboot": "violet_images_V10.2.5.0.PFHCNXM_20190316.0000.00_9.0_cn_8e2009cdc7.tgz"
+          "fastboot": "violet_images_V10.2.5.0.PFHCNXM_20190316.0000.00_9.0_cn_8e2009cdc7.tgz",
+          "ctelecom": "",
+          "cmobile": ""
         }
       ]
     },
@@ -2484,6 +2516,16 @@
           "fastboot": "violet_in_global_images_V12.0.1.0.QFHINXM_20200910.0000.00_10.0_in_8112531302.tgz"
         },
         {
+          "miui": "V11.0.2.0.QFHINXM",
+          "os": "V11",
+          "bigver": "MIUI 11",
+          "android": "10.0",
+          "release": "2020-08-10",
+          "aspatch": "2020-07-01",
+          "recovery": "miui_VIOLETINGlobal_V11.0.2.0.QFHINXM_73c0bc5751_10.0.zip",
+          "fastboot": "violet_in_global_images_V11.0.2.0.QFHINXM_20200731.0000.00_10.0_in_c313e6a516.tgz"
+        },
+        {
           "miui": "V11.0.10.0.PFHINXM",
           "os": "V11",
           "bigver": "MIUI 11",
@@ -2532,16 +2574,6 @@
           "aspatch": "2019-10-01",
           "recovery": "miui_VIOLETINGlobal_V11.0.5.0.PFHINXM_04632f47d3_9.0.zip",
           "fastboot": "violet_in_global_images_V11.0.5.0.PFHINXM_20191022.0000.00_9.0_in_9bff00d97f.tgz"
-        },
-        {
-          "miui": "V11.0.2.0.QFHINXM",
-          "os": "V11",
-          "bigver": "MIUI 11",
-          "android": "10.0",
-          "release": "2020-08-10",
-          "aspatch": "2020-07-01",
-          "recovery": "miui_VIOLETINGlobal_V11.0.2.0.QFHINXM_73c0bc5751_10.0.zip",
-          "fastboot": "violet_in_global_images_V11.0.2.0.QFHINXM_20200731.0000.00_10.0_in_c313e6a516.tgz"
         },
         {
           "miui": "V10.3.13.0.PFHINXM",

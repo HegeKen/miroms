@@ -92,7 +92,9 @@
           "release": "2026-01-04",
           "aspatch": "",
           "recovery": "tornado-ota_full-OS2.0.205.0.VPOCNXM-user-15.0-931342d7e0.zip",
-          "fastboot": ""
+          "fastboot": "",
+          "ctelecom": "",
+          "cmobile": ""
         },
         {
           "miui": "OS2.0.203.0.VPOCNXM",
@@ -103,7 +105,8 @@
           "aspatch": "2025-10-01",
           "recovery": "tornado-ota_full-OS2.0.203.0.VPOCNXM-user-15.0-c475aea23c.zip",
           "fastboot": "tornado_images_OS2.0.203.0.VPOCNXM_20251016.0000.00_15.0_cn_05d86b5969.tgz",
-          "ctelecom": "tornado_images_OS2.0.203.0.VPOCNXM_20251016.0000.00_15.0_cn_chinatelecom_44ef509545.tgz"
+          "ctelecom": "tornado_images_OS2.0.203.0.VPOCNXM_20251016.0000.00_15.0_cn_chinatelecom_44ef509545.tgz",
+          "cmobile": ""
         },
         {
           "miui": "OS2.0.202.0.VPOCNXM",
@@ -114,7 +117,8 @@
           "aspatch": "2025-09-01",
           "recovery": "tornado-ota_full-OS2.0.202.0.VPOCNXM-user-15.0-d9730a074c.zip",
           "fastboot": "tornado_images_OS2.0.202.0.VPOCNXM_20250906.0000.00_15.0_cn_664e50be77.tgz",
-          "ctelecom": "tornado_images_OS2.0.202.0.VPOCNXM_20250906.0000.00_15.0_cn_chinatelecom_e1bc01ff2f.tgz"
+          "ctelecom": "tornado_images_OS2.0.202.0.VPOCNXM_20250906.0000.00_15.0_cn_chinatelecom_e1bc01ff2f.tgz",
+          "cmobile": ""
         }
       ]
     },
@@ -251,6 +255,16 @@
           "fastboot": "tornado_global_images_OS3.0.301.0.WPOMIXM_20260513.0000.00_16.0_global_c94e8f7506.tgz"
         },
         {
+          "miui": "OS2.0.207.0.VPOMIXM",
+          "os": "OS2",
+          "bigver": "HyperOS 2",
+          "android": "15.0",
+          "release": "2026-04-30",
+          "aspatch": "2026-05-01",
+          "recovery": "tornado_global-ota_full-OS2.0.207.0.VPOMIXM-user-15.0-e1de95af7f.zip",
+          "fastboot": "tornado_global_images_OS2.0.207.0.VPOMIXM_20260424.0000.00_15.0_global_4aa383f0c8.tgz"
+        },
+        {
           "miui": "OS3.0.3.0.WPOMIXM",
           "os": "OS3",
           "bigver": "HyperOS 3",
@@ -269,16 +283,6 @@
           "aspatch": "2026-02-01",
           "recovery": "tornado_global-ota_full-OS3.0.1.0.WPOMIXM-user-16.0-d1a4d43395.zip",
           "fastboot": "tornado_global_images_OS3.0.1.0.WPOMIXM_20260206.0000.00_16.0_global_086d2a53ae.tgz"
-        },
-        {
-          "miui": "OS2.0.207.0.VPOMIXM",
-          "os": "OS2",
-          "bigver": "HyperOS 2",
-          "android": "15.0",
-          "release": "2026-04-30",
-          "aspatch": "2026-05-01",
-          "recovery": "tornado_global-ota_full-OS2.0.207.0.VPOMIXM-user-15.0-e1de95af7f.zip",
-          "fastboot": "tornado_global_images_OS2.0.207.0.VPOMIXM_20260424.0000.00_15.0_global_4aa383f0c8.tgz"
         },
         {
           "miui": "OS2.0.206.0.VPOMIXM",
@@ -509,16 +513,6 @@
           "fastboot": "tornado_eea_global_images_OS2.0.203.0.VPOEUXM_20250918.0000.00_15.0_eea_111b548a9f.tgz"
         },
         {
-          "miui": "OS2.0.202.0.VPOEUXM",
-          "os": "OS2",
-          "bigver": "HyperOS 2",
-          "android": "15.0",
-          "release": "2025-09-13",
-          "aspatch": "",
-          "recovery": "tornado_eea_global-ota_full-OS2.0.202.0.VPOEUXM-user-15.0-9434e745a0.zip",
-          "fastboot": "tornado_eea_global_images_OS2.0.202.0.VPOEUXM_20250825.0000.00_15.0_eea_94d8e61a91.tgz"
-        },
-        {
           "miui": "OS2.0.201.0.VPOEUXM",
           "os": "OS2",
           "bigver": "HyperOS 2",
@@ -527,6 +521,16 @@
           "aspatch": "2025-08-01",
           "recovery": "tornado_eea_global-ota_full-OS2.0.201.0.VPOEUXM-user-15.0-aee73e58c3.zip",
           "fastboot": ""
+        },
+        {
+          "miui": "OS2.0.202.0.VPOEUXM",
+          "os": "OS2",
+          "bigver": "HyperOS 2",
+          "android": "15.0",
+          "release": "2025-09-13",
+          "aspatch": "",
+          "recovery": "tornado_eea_global-ota_full-OS2.0.202.0.VPOEUXM-user-15.0-9434e745a0.zip",
+          "fastboot": "tornado_eea_global_images_OS2.0.202.0.VPOEUXM_20250825.0000.00_15.0_eea_94d8e61a91.tgz"
         }
       ]
     },
