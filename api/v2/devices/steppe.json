@@ -73,6 +73,47 @@
       }
     },
     {
+      "branchCode": "steppe_tw_global",
+      "brand": [
+        "REDMI"
+      ],
+      "device": {
+        "zh": "REDMI M100",
+        "en": "REDMI M100"
+      },
+      "idtag": "CNTP",
+      "tag": "TWXM",
+      "branchtag": "F",
+      "name": {
+        "zh": "中国台湾地区正式版",
+        "en": "China Taiwan Stable"
+      },
+      "table": [
+        "os",
+        "android",
+        "release",
+        "recovery",
+        "fastboot"
+      ],
+      "show": "1",
+      "carrier": [
+        ""
+      ],
+      "region": "tw",
+      "zone": "2",
+      "ep": "0",
+      "roms": {
+        "OS3.0.302.0.WAVTWXM": {
+          "os": "OS3.0.302.0.WAVTWXM",
+          "android": "16.0",
+          "release": "2026-08-28",
+          "aspatch": "2026-06-01",
+          "recovery": "steppe_tw_global-ota_full-OS3.0.302.0.WAVTWXM-user-16.0-4c79b124c6.zip",
+          "fastboot": "steppe_tw_global_images_OS3.0.302.0.WAVTWXM_20260716.0000.00_16.0_tw_10f5a46245.tgz"
+        }
+      }
+    },
+    {
       "branchCode": "steppe_global",
       "brand": [
         "REDMI"
@@ -103,6 +144,14 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS3.0.310.0.WAVMIXM": {
+          "os": "OS3.0.310.0.WAVMIXM",
+          "android": "16.0",
+          "release": "2026-08-24",
+          "aspatch": "2026-08-01",
+          "recovery": "steppe_global-ota_full-OS3.0.310.0.WAVMIXM-user-16.0-2b4412995f.zip",
+          "fastboot": ""
+        },
         "OS3.0.308.0.WAVMIXM": {
           "os": "OS3.0.308.0.WAVMIXM",
           "android": "16.0",

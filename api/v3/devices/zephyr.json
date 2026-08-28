@@ -1,0 +1,147 @@
+{
+  "device": "zephyr",
+  "name": {
+    "zh": "REDMI Note 17 4G",
+    "en": "REDMI Note 17 4G"
+  },
+  "code": "BU",
+  "brand": [
+    "REDMI"
+  ],
+  "series": [],
+  "android": [
+    "16.0"
+  ],
+  "supports": [
+    "OS3"
+  ],
+  "branches": [
+    {
+      "id": "zephyr_tw_global",
+      "brand": [
+        "REDMI"
+      ],
+      "device": {
+        "zh": "REDMI Note 17 4G",
+        "en": "REDMI Note 17 4G"
+      },
+      "name": {
+        "zh": "中国台湾地区正式版",
+        "en": "China Taiwan Stable"
+      },
+      "region": "tw",
+      "carrier": [
+        ""
+      ],
+      "tags": {
+        "branch": "CNTP",
+        "tag": "TWXM",
+        "branchtag": "F",
+        "btag": "F"
+      },
+      "zone": "2",
+      "show": "1",
+      "ep": "0",
+      "roms": [
+        {
+          "miui": "OS3.0.304.0.WBUTWXM",
+          "os": "OS3",
+          "bigver": "HyperOS 3",
+          "android": "16.0",
+          "release": "2026-08-27",
+          "aspatch": "2026-08-01",
+          "recovery": "zephyr_tw_global-ota_full-OS3.0.304.0.WBUTWXM-user-16.0-9a67f563af.zip",
+          "fastboot": "zephyr_tw_global_images_OS3.0.304.0.WBUTWXM_20260820.0000.00_16.0_tw_f1b7158539.tgz"
+        }
+      ]
+    },
+    {
+      "id": "zephyr_global",
+      "brand": [
+        "REDMI"
+      ],
+      "device": {
+        "zh": "REDMI Note 17 4G",
+        "en": "REDMI Note 17 4G"
+      },
+      "name": {
+        "zh": "国际正式版",
+        "en": "Global Stable"
+      },
+      "region": "global",
+      "carrier": [
+        ""
+      ],
+      "tags": {
+        "branch": "GBOO",
+        "tag": "MIXM",
+        "branchtag": "F",
+        "btag": "F"
+      },
+      "zone": "2",
+      "show": "1",
+      "ep": "0",
+      "roms": [
+        {
+          "miui": "OS3.0.308.0.WBUMIXM",
+          "os": "OS3",
+          "bigver": "HyperOS 3",
+          "android": "16.0",
+          "release": "2026-08-27",
+          "aspatch": "2026-08-01",
+          "recovery": "zephyr_global-ota_full-OS3.0.308.0.WBUMIXM-user-16.0-d5f2cea0fa.zip",
+          "fastboot": "zephyr_global_images_OS3.0.308.0.WBUMIXM_20260826.0000.00_16.0_global_5936be1a30.tgz"
+        },
+        {
+          "miui": "OS3.0.307.0.WBUMIXM",
+          "os": "OS3",
+          "bigver": "HyperOS 3",
+          "android": "16.0",
+          "release": "2026-08-27",
+          "aspatch": "2026-08-01",
+          "recovery": "zephyr_global-ota_full-OS3.0.307.0.WBUMIXM-user-16.0-1d2f41019f.zip",
+          "fastboot": ""
+        }
+      ]
+    },
+    {
+      "id": "zephyr_eea_global",
+      "brand": [
+        "REDMI"
+      ],
+      "device": {
+        "zh": "REDMI Note 17 4G",
+        "en": "REDMI Note 17 4G"
+      },
+      "name": {
+        "zh": "欧洲EEA正式版",
+        "en": "Europe EEA Stable"
+      },
+      "region": "eea",
+      "carrier": [
+        ""
+      ],
+      "tags": {
+        "branch": "EEAO",
+        "tag": "EUXM",
+        "branchtag": "F",
+        "btag": "F"
+      },
+      "zone": "2",
+      "show": "1",
+      "ep": "0",
+      "roms": [
+        {
+          "miui": "OS3.0.305.0.WBUEUDM",
+          "os": "OS3",
+          "bigver": "HyperOS 3",
+          "android": "16.0",
+          "release": "2026-08-27",
+          "aspatch": "2026-08-01",
+          "recovery": "zephyr_eea_global-ota_full-OS3.0.305.0.WBUEUDM-user-16.0-5a0912999a.zip",
+          "fastboot": "zephyr_eea_global_images_OS3.0.305.0.WBUEUDM_20260803.0000.00_16.0_eea_c28c5c5bed.tgz"
+        }
+      ]
+    }
+  ]
+}

@@ -13,6 +13,7 @@ from datetime import datetime
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 DATA_DIR = SCRIPT_DIR.parent
+SYNC = SCRIPT_DIR / 'sync_devices.py'
 EXPORTER = SCRIPT_DIR / 'exporter.py'
 DEPLOY = SCRIPT_DIR / 'deploy.py'
 
@@ -28,11 +29,15 @@ def run(cmd, cwd=None, check=False):
 
 
 def main() -> None:
-	# 1. 导出数据
+	# 1. 同步机型数据
+	print(f"\n[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 开始同步机型数据...")
+	run([sys.executable, str(SYNC)], check=True)
+
+	# 2. 导出数据
 	print(f"\n[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 开始导出数据...")
 	run([sys.executable, str(EXPORTER)], check=True)
 
-	# 2. 检查 data submodule 是否有变更，无变更则结束（不提交、不部署）
+	# 3. 检查 data submodule 是否有变更，无变更则结束（不提交、不部署）
 	status = subprocess.run(
 		['git', 'status', '--porcelain'],
 		cwd=DATA_DIR, capture_output=True, text=True
@@ -41,14 +46,14 @@ def main() -> None:
 		print("data submodule 无文件变更，跳过提交、推送与站点更新")
 		return
 
-	# 3. 提交并推送 data submodule
+	# 4. 提交并推送 data submodule
 	msg = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 	print(f"\n[{msg}] 提交 data submodule...")
 	run(['git', 'add', '-A'], cwd=DATA_DIR, check=True)
 	run(['git', 'commit', '-m', msg], cwd=DATA_DIR, check=True)
 	run(['git', 'push'], cwd=DATA_DIR, check=True)
 
-	# 4. 部署站点
+	# 5. 部署站点
 	print(f"\n[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 开始部署站点...")
 	run([sys.executable, str(DEPLOY)], check=True)
 

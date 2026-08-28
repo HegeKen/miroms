@@ -109,6 +109,22 @@ if flags_result:
 else:
     print("✗ 未查询到任何 flags 数据")
 
+# ==================== 诊断：检测异常设备记录（None / NULL / 空 / 'None' 字符串） ====================
+# 这些异常值会被带入 fullDevices/currentStable，进而导致 exporter 报"设备 'None' 不存在"
+print("--- 诊断：检测异常设备记录 ---")
+for table in ('roms', 'devices'):
+    diag_sql = f"""
+        SELECT id, device, code FROM {table}
+        WHERE device IS NULL OR device = '' OR device = 'None'
+        ORDER BY id
+    """
+    diag_result = common.DatabaseManager.execute(diag_sql, fetch_one=False)
+    if diag_result:
+        for row in diag_result:
+            print(f"  ⚠ {table} 表异常设备记录 id={row[0]}, device={row[1]!r}, code={row[2]!r}")
+    else:
+        print(f"  ✓ {table} 表无异常设备记录")
+
 # ==================== 写入 miroms/data.py 源文件 ====================
 with open(DATA_PY, 'r', encoding='utf-8') as f:
     source = f.read()
