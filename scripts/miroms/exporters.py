@@ -1036,7 +1036,6 @@ def exportV3(device: str) -> Dict[str, Any]:
 								aspatch = rom[13] if len(rom) > 13 else None
 								logs_zh = rom[14] if len(rom) > 14 else None
 								logs_en = rom[15] if len(rom) > 15 else None
-								rom_region = rom[16] if len(rom) > 16 else None
 
 								version_str = str(version) if version is not None else ""
 								if not version_str or version_str in added_versions:
@@ -1072,9 +1071,12 @@ def exportV3(device: str) -> Dict[str, Any]:
 
 								new_branch["roms"].append(roms_entry)
 
-								# 收集日志数据（按 ROM 自身 region/version 去重）
+								# 收集日志数据（按 分支 region/version 去重）
+								# Android One/Go 等机型（如 blue）roms.region 常缺失或存为 "None"，
+								# 而前端始终按分支 region 读取日志，故以分支 region 为准并容忍缺失值。
+								branch_region = new_branch["region"] or ""
 								if (logs_zh or logs_en) and version_str:
-										log_key = f"{rom_region}/{version_str}" if rom_region else version_str
+										log_key = f"{branch_region}/{version_str}" if branch_region else version_str
 										if log_key not in rom_logs:
 												try:
 														parsed_zh = json.loads(logs_zh) if isinstance(logs_zh, str) else logs_zh
