@@ -47,6 +47,40 @@ def _rom_version_parts(version: Any) -> List[int]:
 		return [int(x) if x.isdigit() else 0 for x in m.group(1).split('.')]
 
 
+# 大版本号正则：匹配字母前缀(OS/V)后的数字段，如 "OS4" / "V12.5" / "V816"
+_BIGVER_RE = re.compile(r'^(OS|V)?(\d+(?:\.\d+)*)$')
+
+
+def _bigver_parts(bigver: str) -> Tuple[str, List[int]]:
+		"""拆解大版本为 (前缀, 数字段列表)，如 "V12.5" -> ('V', [12, 5])。无数字前缀类别返回 ('', [])。"""
+		m = _BIGVER_RE.match(bigver)
+		if not m:
+				return '', []
+		return (m.group(1) or '', [int(x) for x in m.group(2).split('.')])
+
+
+def _compare_bigver(a: str, b: str) -> int:
+		"""大版本排序比较，与前端 osSort 保持一致：
+		- 无数字前缀类别（STAN/Stock）排最末并按字母序；
+		- OS 系（HyperOS）优先于 V 系（MIUI）；
+		- 同前缀按数字段逐位降序（V12.5 排在 V12 与 V13 之间）。
+		"""
+		pa, va = _bigver_parts(a)
+		pb, vb = _bigver_parts(b)
+		if not va or not vb:
+				if not va and not vb:
+						return (a > b) - (a < b)
+				return 1 if not va else -1
+		if pa != pb:
+				return -1 if pa == 'OS' else 1
+		for x, y in zip(va, vb):
+				if x != y:
+						return y - x
+		if len(va) != len(vb):
+				return len(vb) - len(va)
+		return (a > b) - (a < b)
+
+
 def _compare_roms(a: Dict[str, Any], b: Dict[str, Any]) -> int:
 		"""ROM 排序比较：release_date 降序为主（新版本在前，空日期置后），版本号降序为辅。"""
 		ra = a.get("release") or ""
@@ -919,20 +953,14 @@ def exportV3(device: str) -> Dict[str, Any]:
 				for rom in all_roms or []:
 						if len(rom) > 9 and rom[9]:
 								bigver_set.add(str(rom[9]))
-				os_versions = []
-				ui_versions = []
+				# 收集并标准化大版本（去重），统一按「OS 优先 + 数字段降序」排序，
+				# 避免字符串排序把 V9 误排在 V12.5 / V12 之前。
+				supports_set: Set[str] = set()
 				for bigver in bigver_set:
-						# 标准化为大版本格式（与 V2 一致）
 						normalized = normalize_bigver(bigver)
-						if normalized.startswith("OS"):
-								if normalized not in os_versions:
-										os_versions.append(normalized)
-						else:
-								if normalized not in ui_versions:
-										ui_versions.append(normalized)
-				os_versions.sort(reverse=True)
-				ui_versions.sort(reverse=True)
-				supports_versions = os_versions + ui_versions
+						if normalized:
+								supports_set.add(normalized)
+				supports_versions = sorted(supports_set, key=cmp_to_key(_compare_bigver))
 
 				# ==================== 阶段5: 构建 V3 输出结构 ====================
 				device_struct: Dict[str, Any] = {
