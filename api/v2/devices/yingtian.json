@@ -1,0 +1,111 @@
+{
+  "device": "yingtian",
+  "name": {
+    "zh": "小米平板 9 Pro Max",
+    "en": "Xiaomi Pad 9 Pro Max"
+  },
+  "code": "BM",
+  "brand": [
+    "Xiaomi"
+  ],
+  "miui": "yes",
+  "merged": "no",
+  "android": [
+    "17.0"
+  ],
+  "supports": [
+    "OS4"
+  ],
+  "branches": [
+    {
+      "branchCode": "yingtian",
+      "brand": [
+        "Xiaomi"
+      ],
+      "device": {
+        "zh": "小米平板 9 Pro Max",
+        "en": "Xiaomi Pad 9 Pro Max"
+      },
+      "idtag": "CnOO",
+      "tag": "CNXM",
+      "branchtag": "F",
+      "name": {
+        "zh": "中国大陆正式版",
+        "en": "China Mainland Stable"
+      },
+      "table": [
+        "os",
+        "android",
+        "release",
+        "aspatch",
+        "recovery",
+        "fastboot"
+      ],
+      "show": "1",
+      "carrier": [
+        "",
+        "chinatelecom",
+        "chinamobile",
+        "chinaunicom"
+      ],
+      "region": "cn",
+      "zone": "1",
+      "ep": "0",
+      "roms": {
+        "OS4.0.10.0.XBMCNXM": {
+          "os": "OS4.0.10.0.XBMCNXM",
+          "android": "17.0",
+          "release": "2026-09-07",
+          "aspatch": "2026-08-01",
+          "recovery": "yingtian-ota_full-OS4.0.10.0.XBMCNXM-user-17.0-b8fd7d392d.zip",
+          "fastboot": "yingtian-images-OS4.0.10.0.XBMCNXM-user-20260905.0000.00-17.0-cn-6e79a1ed86.tgz"
+        }
+      }
+    },
+    {
+      "branchCode": "yingtian_demo",
+      "brand": [
+        "Xiaomi"
+      ],
+      "device": {
+        "zh": "小米平板 9 Pro Max",
+        "en": "Xiaomi Pad 9 Pro Max"
+      },
+      "idtag": "CnOD",
+      "tag": "CNDM",
+      "branchtag": "F",
+      "name": {
+        "zh": "中国大陆演示机系统",
+        "en": "China Mainland MiStore Demo"
+      },
+      "table": [
+        "os",
+        "android",
+        "release",
+        "aspatch",
+        "recovery",
+        "fastboot"
+      ],
+      "show": "0",
+      "carrier": [
+        "",
+        "chinatelecom",
+        "chinamobile",
+        "chinaunicom"
+      ],
+      "region": "cn",
+      "zone": "1",
+      "ep": "0",
+      "roms": {
+        "OS4.0.3.0.XBMCNDM": {
+          "os": "OS4.0.3.0.XBMCNDM",
+          "android": "17.0",
+          "release": "2026-09-07",
+          "aspatch": "2026-08-01",
+          "recovery": "yingtian_demo-ota_full-OS4.0.3.0.XBMCNDM-user-17.0-55d52529f0.zip",
+          "fastboot": "yingtian_demo-images-OS4.0.3.0.XBMCNDM-user-20260905.0000.00-17.0-cn-ec22b4f68c.tgz"
+        }
+      }
+    }
+  ]
+}
