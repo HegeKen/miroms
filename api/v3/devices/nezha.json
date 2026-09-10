@@ -280,6 +280,16 @@
           "fastboot": ""
         },
         {
+          "miui": "OS3.3.260422.2.XPACNXM.STABLE-DPP",
+          "os": "OS3",
+          "bigver": "HyperOS 3",
+          "android": "17.0",
+          "release": "2026-04-28",
+          "aspatch": "2026-03-05",
+          "recovery": "nezha_dpp-ota_full-OS3.3.260422.2.XPACNXM.STABLE-DPP-user-17.0-871d44f4c2.zip",
+          "fastboot": ""
+        },
+        {
           "miui": "OS3.0.330.10.XPACNXM",
           "os": "OS3",
           "bigver": "HyperOS 3",
@@ -317,16 +327,6 @@
           "release": "2026-05-07",
           "aspatch": "2026-04-01",
           "recovery": "nezha-ota_full-OS3.0.306.2.WPACNXM-user-16.0-39093ef20a.zip",
-          "fastboot": ""
-        },
-        {
-          "miui": "OS3.3.260422.2.XPACNXM.STABLE-DPP",
-          "os": "OS3",
-          "bigver": "HyperOS 3",
-          "android": "17.0",
-          "release": "2026-04-28",
-          "aspatch": "2026-03-05",
-          "recovery": "nezha_dpp-ota_full-OS3.3.260422.2.XPACNXM.STABLE-DPP-user-17.0-871d44f4c2.zip",
           "fastboot": ""
         },
         {
@@ -676,16 +676,6 @@
           "fastboot": "nezha_global_images_OS3.0.9.0.WPAMIXM_20260210.0000.00_16.0_global_e160067725.tgz"
         },
         {
-          "miui": "OS3.0.2.0.WPAMIXM",
-          "os": "OS3",
-          "bigver": "HyperOS 3",
-          "android": "16.0",
-          "release": "2026-02-28",
-          "aspatch": "2025-12-01",
-          "recovery": "nezha_global-ota_full-OS3.0.2.0.WPAMIXM-user-16.0-f5a1a556c5.zip",
-          "fastboot": ""
-        },
-        {
           "miui": "OS3.0.5.0.WPAMIXM",
           "os": "OS3",
           "bigver": "HyperOS 3",
@@ -694,6 +684,16 @@
           "aspatch": "2025-12-01",
           "recovery": "nezha_global-ota_full-OS3.0.5.0.WPAMIXM-user-16.0-3d179258a5.zip",
           "fastboot": "nezha_global_images_OS3.0.5.0.WPAMIXM_20260105.0000.00_16.0_global_7939d3f750.tgz"
+        },
+        {
+          "miui": "OS3.0.2.0.WPAMIXM",
+          "os": "OS3",
+          "bigver": "HyperOS 3",
+          "android": "16.0",
+          "release": "2026-02-28",
+          "aspatch": "2025-12-01",
+          "recovery": "nezha_global-ota_full-OS3.0.2.0.WPAMIXM-user-16.0-f5a1a556c5.zip",
+          "fastboot": ""
         }
       ]
     },
@@ -853,16 +853,6 @@
           "fastboot": ""
         },
         {
-          "miui": "OS3.0.307.0.WPAEUXM",
-          "os": "OS3",
-          "bigver": "HyperOS 3",
-          "android": "16.0",
-          "release": "2026-08-06",
-          "aspatch": "2026-07-01",
-          "recovery": "nezha_eea_global-ota_full-OS3.0.307.0.WPAEUXM-user-16.0-11ead0756c.zip",
-          "fastboot": "nezha_eea_global_images_OS3.0.307.0.WPAEUXM_20260729.0000.00_16.0_eea_683716e3d3.tgz"
-        },
-        {
           "miui": "OS3.0.332.0.XPAEUXM",
           "os": "OS3",
           "bigver": "HyperOS 3",
@@ -871,6 +861,16 @@
           "aspatch": "2026-06-05",
           "recovery": "nezha_eea_global-ota_full-OS3.0.332.0.XPAEUXM-user-17.0-86f214fdf5.zip",
           "fastboot": ""
+        },
+        {
+          "miui": "OS3.0.307.0.WPAEUXM",
+          "os": "OS3",
+          "bigver": "HyperOS 3",
+          "android": "16.0",
+          "release": "2026-08-06",
+          "aspatch": "2026-07-01",
+          "recovery": "nezha_eea_global-ota_full-OS3.0.307.0.WPAEUXM-user-16.0-11ead0756c.zip",
+          "fastboot": "nezha_eea_global_images_OS3.0.307.0.WPAEUXM_20260729.0000.00_16.0_eea_683716e3d3.tgz"
         },
         {
           "miui": "OS3.0.303.0.WPAEUXM",
@@ -913,6 +913,26 @@
           "fastboot": "nezha_eea_global_images_OS3.0.11.0.WPAEUXM_20260210.0000.00_16.0_eea_d01c255e12.tgz"
         },
         {
+          "miui": "OS3.0.10.0.WPAEUXM",
+          "os": "OS3",
+          "bigver": "HyperOS 3",
+          "android": "16.0",
+          "release": "2026-02-25",
+          "aspatch": "2026-02-01",
+          "recovery": "nezha_eea_global-ota_full-OS3.0.10.0.WPAEUXM-user-16.0-8afe963fae.zip",
+          "fastboot": ""
+        },
+        {
+          "miui": "OS3.0.7.0.WPAEUXM",
+          "os": "OS3",
+          "bigver": "HyperOS 3",
+          "android": "16.0",
+          "release": "2026-01-05",
+          "aspatch": "2025-12-01",
+          "recovery": "nezha_eea_global-ota_full-OS3.0.7.0.WPAEUXM-user-16.0-95176a97c7.zip",
+          "fastboot": "nezha_eea_global_images_OS3.0.7.0.WPAEUXM_20260101.0000.00_16.0_eea_b4a2ccd781.tgz"
+        },
+        {
           "miui": "OS3.0.6.0.WPAEUXM",
           "os": "OS3",
           "bigver": "HyperOS 3",
@@ -941,26 +961,6 @@
           "aspatch": "2025-12-01",
           "recovery": "nezha_eea_global-ota_full-OS3.0.2.0.WPAEUXM-user-16.0-433fb518a4.zip",
           "fastboot": "nezha_eea_global_images_OS3.0.2.0.WPAEUXM_20251217.0000.00_16.0_eea_b42b0b432c.tgz"
-        },
-        {
-          "miui": "OS3.0.10.0.WPAEUXM",
-          "os": "OS3",
-          "bigver": "HyperOS 3",
-          "android": "16.0",
-          "release": "2026-02-25",
-          "aspatch": "2026-02-01",
-          "recovery": "nezha_eea_global-ota_full-OS3.0.10.0.WPAEUXM-user-16.0-8afe963fae.zip",
-          "fastboot": ""
-        },
-        {
-          "miui": "OS3.0.7.0.WPAEUXM",
-          "os": "OS3",
-          "bigver": "HyperOS 3",
-          "android": "16.0",
-          "release": "2026-01-05",
-          "aspatch": "2025-12-01",
-          "recovery": "nezha_eea_global-ota_full-OS3.0.7.0.WPAEUXM-user-16.0-95176a97c7.zip",
-          "fastboot": "nezha_eea_global_images_OS3.0.7.0.WPAEUXM_20260101.0000.00_16.0_eea_b4a2ccd781.tgz"
         }
       ]
     },

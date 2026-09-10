@@ -32,11 +32,14 @@ def normalize_bigver(bigver: Any) -> str:
 
 
 # ==================== ROM 版本号排序 ====================
-# 排序规则：release_date 为主（降序，新版本在前、空值置后），版本号为辅（降序）。
-# 之所以以发布日期为主，是因为 MIUI(如 V14) 与 HyperOS(如 OS3) 的数字段不可直接比较：
-# 纯按版本号排序会让 2023 年的 MIUI 14 排在 2026 年的 HyperOS 3 之前。
+# 排序规则：版本族为主（HyperOS/OS 系优先于 MIUI/V 系），同族内版本号数字段降序，
+# release_date 为辅（降序、空值置后）。
+# MIUI(V) 与 HyperOS(OS) 的数字段不可直接比较（V14 的数字段 14 会大于 OS3 的 3），
+# 故先按字母前缀划分族再比数字，避免 MIUI 14 排在 HyperOS 3 之前；
+# 同族内数字段逐位比较，避免 OS4.0.11 被排在 OS4.0.6 之前（直接比字符串会出错）。
 # 版本号形如 V10.1.1.0.MXDCNFI / OS2.0.1.0.VOBCNXM，取字母前缀后的数字段逐位比较。
 _ROM_VERSION_RE = re.compile(r'^[A-Za-z]*(\d+(?:\.\d+)*)')
+_ROM_PREFIX_RE = re.compile(r'^([A-Za-z]+)')
 
 
 def _rom_version_parts(version: Any) -> List[int]:
@@ -45,6 +48,17 @@ def _rom_version_parts(version: Any) -> List[int]:
 		if not m:
 				return []
 		return [int(x) if x.isdigit() else 0 for x in m.group(1).split('.')]
+
+
+def _rom_family_rank(version: Any) -> int:
+		"""ROM 版本族排名，用于跨大版本排序：HyperOS(OS) 系 0 < MIUI(V) 系 1 < 其他 2。"""
+		m = _ROM_PREFIX_RE.match(str(version or ''))
+		prefix = (m.group(1) or '').upper() if m else ''
+		if prefix.startswith('OS'):
+				return 0
+		if prefix.startswith('V'):
+				return 1
+		return 2
 
 
 # 大版本号正则：匹配字母前缀(OS/V)后的数字段，如 "OS4" / "V12.5" / "V816"
@@ -82,15 +96,11 @@ def _compare_bigver(a: str, b: str) -> int:
 
 
 def _compare_roms(a: Dict[str, Any], b: Dict[str, Any]) -> int:
-		"""ROM 排序比较：release_date 降序为主（新版本在前，空日期置后），版本号降序为辅。"""
-		ra = a.get("release") or ""
-		rb = b.get("release") or ""
-		if ra != rb:
-				if not ra:
-						return 1
-				if not rb:
-						return -1
-				return 1 if ra < rb else -1
+		"""ROM 排序比较：版本族（OS 优先于 V）→ 版本号数字段降序 → release_date 降序（空值置后）。"""
+		fa = _rom_family_rank(a.get("miui", ""))
+		fb = _rom_family_rank(b.get("miui", ""))
+		if fa != fb:
+				return fa - fb
 		pa = _rom_version_parts(a.get("miui", ""))
 		pb = _rom_version_parts(b.get("miui", ""))
 		n = max(len(pa), len(pb))
@@ -99,6 +109,14 @@ def _compare_roms(a: Dict[str, Any], b: Dict[str, Any]) -> int:
 				y = pb[i] if i < len(pb) else 0
 				if x != y:
 						return y - x
+		ra = a.get("release") or ""
+		rb = b.get("release") or ""
+		if ra != rb:
+				if not ra:
+						return 1
+				if not rb:
+						return -1
+				return 1 if ra < rb else -1
 		return 0
 
 
