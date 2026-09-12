@@ -18,13 +18,14 @@ BASE_URL = "https://update.intl.miui.com/updates/miota-fullrom.php?d="
 def get_device_info(device: str) -> dict | None:
 	"""从数据库获取设备信息"""
 	info = common.DatabaseManager.query_one(
-		"SELECT code FROM devices WHERE device = %s LIMIT 1",
+		"SELECT code, devtag FROM devices WHERE device = %s LIMIT 1",
 		params=(device,)
 	)
 	if not info:
 		return None
 
 	code = info[0] or device
+	devtag = info[1] or device
 
 	# Android 版本列表
 	android_rows = common.DatabaseManager.query_all(
@@ -54,6 +55,7 @@ def get_device_info(device: str) -> dict | None:
 	return {
 		'device': device,
 		'code': code,
+		'devtag': devtag,
 		'android': andvs,
 		'supports': oss,
 		'known': known_versions,
@@ -72,17 +74,20 @@ def get_known_branch_codes() -> set:
 
 
 def main() -> None:
-	print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 开始新分支检测...")
+	print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 开始新分支检测...             ")
 
 	devices = list(dict.fromkeys(common.currentStable + common.unreleased))
 	known_codes = get_known_branch_codes()
 
 	for device in devices:
+		queried_fastboot_urls = set()
+		queried_ota = set()
 		devdata = get_device_info(device)
 		if not devdata:
 			continue
 
 		code = devdata['code']
+		devtag = devdata['devtag']
 
 		for br in common.branches:
 			devcode = device + br['code']
@@ -93,7 +98,10 @@ def main() -> None:
 					url = BASE_URL + devcode + "&b=F&r=&n=" + carrier
 				else:
 					url = BASE_URL + devcode + "&b=F&r=" + br['region'] + "&n=" + carrier
-				print(f"\r{datetime.now().strftime('%Y-%m-%d %H:%M:%S')} {url}", end="", flush=True)
+				print(f"\r{datetime.now().strftime('%Y-%m-%d %H:%M:%S')} {url}                                           ", end="", flush=True)
+				if url in queried_fastboot_urls:
+					continue
+				queried_fastboot_urls.add(url)
 				common.NetworkClient.get_fastboot_info(url)
 
 			# === 阶段2: OTA 增量号探测（已知设备） ===
@@ -102,10 +110,13 @@ def main() -> None:
 					for andv in devdata['android']:
 						for inc in INCREMENT:
 							android_code = common.VersionUtils.android_code(andv)
-							version = os_ver + "." + inc + ".0." + android_code + code + br['tag']
+							version = ver_replace(os_ver) + ".0." + inc + ".0." + android_code + devtag + br['tag']
 							if version in devdata['known']:
 								continue
-							print(f"\r{datetime.now().strftime('%Y-%m-%d %H:%M:%S')} 正在检测 {device} {devcode} {version}", end="", flush=True)
+							if (devcode, version) in queried_ota:
+								continue
+							queried_ota.add((devcode, version))
+							print(f"\r{datetime.now().strftime('%Y-%m-%d %H:%M:%S')} 正在检测 {device} {devcode} {version}                                                  ", end="", flush=True)
 							region = '' if device in ONE_DEVICES else br['region']
 							form_json = common.FirmwareParser.build_ota_form(device, devcode, region, 'F', br['zone'], andv, version)
 							encrypted = common.CryptoManager.encrypt(form_json)
@@ -114,14 +125,25 @@ def main() -> None:
 			# === 阶段3: 未知 device+code 组合的 OTA 探测 ===
 			elif (device, devcode) not in known_codes:
 				if device not in ONE_DEVICES:
+					if (devcode, '') in queried_ota:
+						continue
+					queried_ota.add((devcode, ''))
 					form_json = common.FirmwareParser.build_ota_form(
 						device, devcode, br['region'], 'F', br['zone'], '14.0', ''
 					)
 					encrypted = common.CryptoManager.encrypt(form_json)
 					common.NetworkClient.fetch_and_check(encrypted)
 
-	print(f"\n[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 新分支检测完成")
+	print(f"\n[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 新分支检测完成                                ")
 
-
+def ver_replace(os_ver):
+	if "HyperOS" in os_ver:
+		return os_ver.replace("HyperOS ", "OS")
+	elif "MIUI" in os_ver:
+		return os_ver.replace("MIUI ", "V")
+	elif "STAN" in os_ver:
+		return os_ver.replace("STAN ", "")
+	else:
+		return os_ver
 if __name__ == '__main__':
 	main()
