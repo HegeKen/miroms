@@ -110,17 +110,20 @@ def main() -> None:
 					for andv in devdata['android']:
 						for inc in INCREMENT:
 							android_code = common.VersionUtils.android_code(andv)
-							version = ver_replace(os_ver) + ".0." + inc + ".0." + android_code + devtag + br['tag']
-							if version in devdata['known']:
+							if br['tag'] == '':
 								continue
-							if (devcode, version) in queried_ota:
-								continue
-							queried_ota.add((devcode, version))
-							print(f"\r{datetime.now().strftime('%Y-%m-%d %H:%M:%S')} 正在检测 {device} {devcode} {version}                                                  ", end="", flush=True)
-							region = '' if device in ONE_DEVICES else br['region']
-							form_json = common.FirmwareParser.build_ota_form(device, devcode, region, 'F', br['zone'], andv, version)
-							encrypted = common.CryptoManager.encrypt(form_json)
-							common.NetworkClient.fetch_and_check(encrypted)
+							else:
+								version = ver_replace(os_ver) + ".0." + inc + ".0." + android_code + devtag + br['tag']
+								if version in devdata['known']:
+									continue
+								if (devcode, version) in queried_ota:
+									continue
+								queried_ota.add((devcode, version))
+								print(f"\r{datetime.now().strftime('%Y-%m-%d %H:%M:%S')} 正在检测 {device} {devcode} {version}                                                  ", end="", flush=True)
+								region = '' if device in ONE_DEVICES else br['region']
+								form_json = common.FirmwareParser.build_ota_form(device, devcode, region, 'F', br['zone'], andv, version)
+								encrypted = common.CryptoManager.encrypt(form_json)
+								common.NetworkClient.fetch_and_check(encrypted)
 
 			# === 阶段3: 未知 device+code 组合的 OTA 探测 ===
 			elif (device, devcode) not in known_codes:
