@@ -181,7 +181,7 @@
 | --- | --- |
 | `api/v3/logs/<device>/[region]/<version>.json` | 单个 ROM 的中英文更新日志，含区域时存放在 `region` 子目录，结构为 `{"logs_zh": {...}, "logs_en": {...}}` |
 | `api/v3/roms/<OS>.json` | 按系统版本分组的 ROM 列表（如 `OS1.json` = HyperOS 1），每项含设备、版本、Android、区域、分支名、日期、包文件名，按需按版本号拼接成设备 ROM 表 |
-| `api/v3/index.json` | 设备索引：每台设备的名称、品牌、系列（`series`）、代码、Android 版本、支持的系统版本、分支数（`branchCount`）与 ROM 数（`romCount`） |
+| `api/v3/index.json` | 设备索引：每台设备的名称、品牌、系列（`series`）、代码、Android 版本、支持的系统版本、支持区域（`regions`，可见分支的区域去重）、支持运营商（`carriers`，可见分支的运营商去重，排除空值）、分支数（`branchCount`）与 ROM 数（`romCount`） |
 | `api/v3/series.json` | 机型系列：系列列表（品牌、中英文名、`device_ids` 设备归属）与设备排序（`order`） |
 | `api/v3/stats.json` | 近期统计：`generatedAt` 生成时间、`recentDays` 统计天数、`recentRoms` 近期新增 ROM 数、`recent` 近期 ROM 明细列表 |
 
