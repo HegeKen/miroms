@@ -1,7 +1,7 @@
 import json
 import base64
 import urllib.parse
-from typing import Dict
+from typing import Dict, Union
 from Crypto.Cipher import AES
 from Crypto.Util.Padding import pad
 from miroms.constants import _const
@@ -28,7 +28,7 @@ class CryptoManager:
 				return json.loads(plaintext)
 
 		@classmethod
-		def encrypt(cls, json_request: Dict) -> str:
+		def encrypt(cls, json_request: Union[Dict, str]) -> str:
 				"""AES-CBC加密并URL编码 (原: miui_encrypt)"""
 				cipher = AES.new(_const.MIUI_KEY, AES.MODE_CBC, _const.MIUI_IV)
 				text = str(json_request).encode("ascii")

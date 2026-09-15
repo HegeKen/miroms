@@ -21,7 +21,7 @@ def os_replace(ver: str) -> str:
 	return ver
 
 
-def get_changelog_for_device(info: dict, lang: str) -> str | None:
+def get_changelog_for_device(info: dict, lang: str) -> dict | None:
 	"""为单个设备获取指定语言的 changelog"""
 	form = dict(common.HyperOSForm)
 
