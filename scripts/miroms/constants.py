@@ -1072,3 +1072,57 @@ HyperOSForm = {
 				"cv": ""
 		}
 }
+
+
+# ==================== ROM 更新日志语种 ====================
+# roms 表的更新日志列 ↔ 站点语言 ↔ update.miui.com 请求的 l 参数。
+#
+# - column: roms 表列名，同时是 v3/logs/*.json 与前端读取的键名
+# - api:    请求小米更新接口时使用的 l 参数（服务端按此返回对应译文；无译文的语种会回落英文）
+# - site:   app/web 的 i18n locale（zh-Hans / zh-Hant 对应站点的简繁中文）
+# - zh:     中文说明（用于数据库列注释等）
+# - name:   语言自称，仅用于日志输出
+# - region: 该语言主要覆盖的数据区域，仅用于日志输出
+#
+# 新增语种时：在此表登记 → 给 roms 表加同名列（见 db_structure/migrations/）→ 重跑 fetch_changelog.py
+CHANGELOG_LOCALES = [
+	{"column": "logs_zh",    "zh": "简体中文", "api": "zh_CN", "site": "zh-Hans", "name": "简体中文",       "region": "cn"},
+	{"column": "logs_zh_tw", "zh": "繁体中文", "api": "zh_TW", "site": "zh-Hant", "name": "繁體中文",       "region": "tw/hk/mo"},
+	{"column": "logs_en",    "zh": "英文", "api": "en_US", "site": "en",      "name": "English",        "region": "global"},
+	{"column": "logs_ja",    "zh": "日文", "api": "ja_JP", "site": "ja",      "name": "日本語",          "region": "jp"},
+	{"column": "logs_ko",    "zh": "韩文", "api": "ko_KR", "site": "ko",      "name": "한국어",          "region": "kr"},
+	{"column": "logs_ru",    "zh": "俄文", "api": "ru_RU", "site": "ru",      "name": "Русский",        "region": "ru"},
+	{"column": "logs_uk",    "zh": "乌克兰文", "api": "uk_UA", "site": "uk",      "name": "Українська",     "region": "eea"},
+	{"column": "logs_pl",    "zh": "波兰文", "api": "pl_PL", "site": "pl",      "name": "Polski",         "region": "eea"},
+	{"column": "logs_de",    "zh": "德文", "api": "de_DE", "site": "de",      "name": "Deutsch",        "region": "eea"},
+	{"column": "logs_fr",    "zh": "法文", "api": "fr_FR", "site": "fr",      "name": "Français",       "region": "eea"},
+	{"column": "logs_it",    "zh": "意大利文", "api": "it_IT", "site": "it",      "name": "Italiano",       "region": "eea"},
+	{"column": "logs_es",    "zh": "西班牙文", "api": "es_ES", "site": "es",      "name": "Español",        "region": "mx/lm/cl/gt"},
+	{"column": "logs_pt",    "zh": "葡萄牙文", "api": "pt_BR", "site": "pt",      "name": "Português",      "region": "pt/br"},
+	{"column": "logs_tr",    "zh": "土耳其文", "api": "tr_TR", "site": "tr",      "name": "Türkçe",         "region": "tr"},
+	{"column": "logs_id",    "zh": "印尼文", "api": "id_ID", "site": "id",      "name": "Bahasa Indonesia", "region": "id"},
+	{"column": "logs_vi",    "zh": "越南文", "api": "vi_VN", "site": "vi",      "name": "Tiếng Việt",     "region": "vn"},
+	{"column": "logs_th",    "zh": "泰文", "api": "th_TH", "site": "th",      "name": "ไทย",            "region": "th"},
+	# 阿拉伯语：实测接口只对 ar_EG 返回真译文，ar / ar_SA / ar_AE / ar_MA 等其余阿拉伯语
+	# locale 一律回落英文，因此 api 固定用 ar_EG（新增条目请追加在末尾，
+	# CHANGELOG_EXTRA_COLUMNS 的顺序决定 exporters 的 SELECT 下标，插队会错位）
+	{"column": "logs_ar",    "zh": "阿拉伯文", "api": "ar_EG", "site": "ar",      "name": "العربية",        "region": "eg/sa/ma"},
+]
+
+# 全部更新日志列名（含 logs_zh / logs_en）
+CHANGELOG_COLUMNS = [item["column"] for item in CHANGELOG_LOCALES]
+
+# 除中文外的其他语言列（导出时 logs_zh / logs_en 位置固定，其余列追加在末尾）
+CHANGELOG_EXTRA_COLUMNS = [c for c in CHANGELOG_COLUMNS if c not in ("logs_zh", "logs_en")]
+
+# 判断「接口没有该语种译文」的基准列：与英文完全相同即视为回落
+CHANGELOG_BASE_COLUMN = "logs_en"
+
+
+def find_changelog_locale(value: str) -> Dict:
+	"""按列名 / api locale / 站点 locale / 语言名查找语种配置（大小写不敏感）。"""
+	key = str(value or "").strip().lower()
+	for item in CHANGELOG_LOCALES:
+		if key in (item["column"].lower(), item["api"].lower(), str(item["site"]).lower(), item["name"].lower()):
+			return item
+	return {}

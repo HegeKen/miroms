@@ -2,7 +2,7 @@
 miroms - 小米 ROM 数据管理包
 
 模块结构:
-    constants   - 系统常量配置 (Constants, branches, HyperOSForm)
+    constants   - 系统常量配置 (Constants, branches, HyperOSForm, CHANGELOG_LOCALES)
     data        - 设备数据常量 (fullDevices, currentStable, flags 等)
     utils       - 版本处理与文件操作工具 (VersionUtils, FileUtils)
     database    - 数据库管理 (DatabaseManager)
@@ -15,7 +15,9 @@ miroms - 小米 ROM 数据管理包
     exporters   - 数据导出 (exportV1, exportV2, exportV3)
 """
 
-from miroms.constants import Constants, _const, branches, HyperOSForm
+from miroms.constants import (Constants, _const, branches, HyperOSForm,
+	CHANGELOG_LOCALES, CHANGELOG_COLUMNS, CHANGELOG_EXTRA_COLUMNS, CHANGELOG_BASE_COLUMN,
+	find_changelog_locale)
 from miroms.data import (
 	unreleased, currentStable, order, fullDevices, flags
 )
@@ -32,6 +34,8 @@ from miroms.exporters import exportV1, exportV2, exportV3
 __all__ = [
 	# 常量
 	'Constants', '_const', 'branches', 'HyperOSForm',
+	'CHANGELOG_LOCALES', 'CHANGELOG_COLUMNS', 'CHANGELOG_EXTRA_COLUMNS', 'CHANGELOG_BASE_COLUMN',
+	'find_changelog_locale',
 	# 数据
 	'unreleased', 'currentStable', 'order', 'fullDevices', 'flags',
 	# 工具

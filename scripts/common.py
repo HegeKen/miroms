@@ -7,7 +7,9 @@ common.py - 向后兼容入口模块
 注意: fullDevices, currentStable, flags 变量保留为模块级赋值，
 以便 sync_devices.py 可以通过正则替换来更新它们。
 """
-from miroms.constants import Constants, _const, branches, HyperOSForm
+from miroms.constants import (Constants, _const, branches, HyperOSForm,
+	CHANGELOG_LOCALES, CHANGELOG_COLUMNS, CHANGELOG_EXTRA_COLUMNS, CHANGELOG_BASE_COLUMN,
+	find_changelog_locale)
 from miroms.utils import VersionUtils, FileUtils
 from miroms.database import DatabaseManager
 from miroms.crypto import CryptoManager

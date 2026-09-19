@@ -56,7 +56,8 @@ class DatabaseManager:
 				cls,
 				sql: str,
 				params: Optional[Union[Tuple, List, Dict]] = None,
-				fetch_one: bool = False
+				fetch_one: bool = False,
+				raise_on_error: bool = False
 		) -> Union[Tuple, List[Tuple], None]:
 				"""
 				执行参数化SQL语句（安全增强版）
@@ -65,9 +66,11 @@ class DatabaseManager:
 						sql: SQL语句，使用 %s 作为参数占位符
 						params: 查询参数（元组/列表/字典），用于替换 %s 占位符
 						fetch_one: 是否只获取单条记录
+						raise_on_error: 出错时是否抛出异常。默认 False 保持历史行为（只记日志并返回 None，调用方无法区分
+								「失败」与「空结果」）；写入类调用建议传 True，避免写失败被静默忽略。
 
 				Returns:
-						查询结果：单条记录（元组）或所有记录（列表）
+						查询结果：单条记录（元组）或所有记录（列表）；出错且 raise_on_error=False 时返回 None
 				"""
 				cnx = None
 				cursor = None
@@ -87,6 +90,8 @@ class DatabaseManager:
 
 				except Exception as e:
 						logger.error(f"SQL执行错误: {sql[:100]}..., 错误: {type(e).__name__}: {e}")
+						if raise_on_error:
+								raise
 						return None
 
 				finally:

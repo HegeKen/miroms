@@ -46,5 +46,365 @@
       "New: More system apps now support Private access, with ongoing compatibility improvements for additional apps",
       "Optimization: Updated ^Fingerprints, face data, and screen lock^ page layout for easier, faster setup"
     ]
+  },
+  "logs_zh_tw": {
+    "系統": [
+      "合入 2026 年 7 月安全修補程式，增強系統安全"
+    ],
+    "系統應用程式全面最佳化": [
+      "日曆：",
+      "最佳化 日曆節日顯示，增加更多傳統節日、歷史紀念日",
+      "修復 部分場景下日期顯示異常的問題",
+      "更多易用性最佳化：",
+      "新增 「長輩關懷」頁面，整合字體與圖示大小調整、鈴聲音量調整以及詐騙電話攔截等用機設定項",
+      "新增 部分場景下點選狀態列回到頁面頂端功能",
+      "最佳化 「小米換機」支援轉移更多資料，包括部分設定項資料與系統應用程式的用戶資料",
+      "最佳化 相簿搜尋動效，過渡更自然",
+      "修復 部分場景下「檔案管理」中 macOS 壓縮檔案無法正常顯示的問題",
+      "修復 部分截圖場景下多語言縮略圖顯示卡頓的問題"
+    ],
+    "裝置互聯": [
+      "新增 小米手機相容 AirPods，支援快連彈窗、查看電量、使用空間音訊、切換降噪模式及尋找功能"
+    ],
+    "安全隱私": [
+      "新增 部分系統應用程式適配安全存取控制項，更多應用程式適配持續進行中",
+      "最佳化 指紋、臉部與密碼頁面樣式，設定更方便"
+    ]
+  },
+  "logs_ja": {
+    "システムアプリの総合的最適化": [
+      "カレンダー:",
+      "最適化：カレンダーの祝日表示に、より多くの伝統的な祝日や歴史的な記念日を追加",
+      "修正：場合によっては日付が正しく表示されない問題",
+      "その他の改善点:",
+      "新機能：明瞭モードでは、文字やアイコンのサイズ、着信音の音量、詐欺電話のブロック機能、その他の電話設定を一元管理できます",
+      "新機能：一部のアプリや状況において、ステータスバーをタップするとページの上部に戻れるようになりました",
+      "最適化：Mi Mover は、システムアプリの設定やユーザーデータなど、より多くのデータの転送に対応するようになりました",
+      "最適化：ギャラリー検索のアニメーションを滑らかに改善",
+      "修正：macOSの圧縮ファイルが、ファイルマネージャーで正しく表示されない場合があった問題",
+      "修正：特定の状況下で多言語スクリーンショットのサムネイルを読み込む際に発生するカクつき"
+    ],
+    "プライバシーとセキュリティ": [
+      "新機能：より多くのシステムアプリでプライベートアクセスに対応するようになりました。また、その他のアプリについても互換性の改善を継続して行っています",
+      "最適化：「指紋、顔データ、画面ロック」ページのレイアウトをアップデートし、設定がより簡単かつ迅速に行えるようになりました"
+    ],
+    "システム": [
+      "セキュリティパッチを2026年7月にアップデートしました。システムのセキュリティが強化されました。"
+    ],
+    "相互接続性": [
+      "新機能：Xiaomi のスマートフォンが AirPods に対応しました。クイックペアリングのポップアップ表示、バッテリーステータス、空間オーディオ、ノイズキャンセリングの切り替え、およびデバイスを探す機能などが利用可能です。"
+    ]
+  },
+  "logs_ko": {
+    "포괄적인 시스템 앱 최적화": [
+      "캘린더:",
+      "최적화: 캘린더에 휴일 표시 방식을 개선하여, 더 많은 전통 축제와 역사적인 기념일을 포함시켰습니다.",
+      "수정: 일부 경우에 날짜가 잘못 표시되는 문제를 해결했습니다.",
+      "기타 개선 사항:",
+      "신규 기능: 선명도 모드에서는 텍스트 및 아이콘 크기, 벨소리 볼륨, 스팸 전화 차단 및 기타 전화 설정을 한곳에 모아 볼 수 있습니다.",
+      "신규 기능: 일부 앱 및 상황에서 상태 표시줄을 탭하여 페이지 맨 위로 돌아갈 수 있는 옵션이 추가되었습니다.",
+      "최적화: Mi Mover가 시스템 앱의 설정 및 사용자 데이터를 포함하여 더 많은 데이터를 전송할 수 있도록 지원합니다.",
+      "최적화: 갤러리 검색 애니메이션을 더욱 부드럽게 개선했습니다.",
+      "수정: macOS에서 압축 파일이 파일탐색기에서 제대로 표시되지 않는 문제를 해결했습니다.",
+      "수정: 일부 경우 다국어 스크린샷 미리보기 이미지를 로드할 때 발생하던 끊김 현상을 해결했습니다."
+    ],
+    "개인정보 보호 및 보안": [
+      "신규 기능: 이제 더 많은 시스템 앱에서 프라이빗 액세스를 지원하며, 추가적인 앱과의 호환성 개선이 지속적으로 진행될 예정입니다.",
+      "최적화: 더 쉽고 빠른 설정을 위해 ^지문, 안면 인식 데이터 및 화면 잠금^ 페이지 레이아웃을 업데이트했습니다."
+    ],
+    "시스템": [
+      "보안패치 (2026#07) 업데이트됨. 시스템 보안이 향상되었습니다."
+    ],
+    "상호 연결성": [
+      "신규 기능: Xiaomi 휴대전화에서 AirPods을 지원하며, 빠른 페어링 팝업, 배터리 상태 표시, 공간 오디오, 노이즈 캔슬링 전환 및 Find My 기능을 사용할 수 있습니다."
+    ]
+  },
+  "logs_ru": {
+    "Комплексная оптимизация системных приложений": [
+      "Календарь:",
+      "Оптимизация: Календарь — добавлены традиционные праздники и памятные даты",
+      "Исправление: в некоторых случаях даты отображались некорректно",
+      "Прочие улучшения:",
+      "Новое: режим четкости объединяет настройки размера текста и значков, громкости звонка, блокировки мошеннических звонков и другие параметры",
+      "Новое: теперь в некоторых приложениях и сценариях вы можете коснуться строки состояния, чтобы вернуться к началу страницы",
+      "Оптимизация: Mi Mover теперь поддерживает перенос большего объема данных, включая некоторые настройки и пользовательские данные системных приложений",
+      "Оптимизация: анимации поиска в Галерее стали более плавными",
+      "Исправление: в некоторых случаях архивы, созданные в macOS, отображались некорректно в Проводнике",
+      "Исправление: в некоторых случаях возникали задержки при загрузке миниатюр многоязычных скриншотов"
+    ],
+    "Конфиденциальность и безопасность": [
+      "Новое: еще больше системных приложений теперь поддерживают «Приватный доступ», расширение совместимости продолжается",
+      "Оптимизация: обновлена компоновка элементов в разделе «Отпечатки пальцев, данные лица и блокировка экрана» для более быстрой и удобной настройки"
+    ],
+    "Система": [
+      "Обновление системы безопасности (июль 2026 года). Улучшена безопасность системы."
+    ],
+    "Взаимосвязанность": [
+      "Новое: смартфоны Xiaomi теперь поддерживают AirPods, включая быстрое подключение через всплывающее окно, отображение заряда, режим Spatial Audio, переключение шумоподавления и «Локатор»"
+    ]
+  },
+  "logs_uk": {
+    "Комплексна оптимізація системних програм": [
+      "Календар:",
+      "Оптимізація: відображення свят у календарі з додаванням більшої кількості традиційних фестивалів та історичних пам’ятних дат",
+      "Виправлення: у деяких випадках дати відображалися некоректно",
+      "Інші покращення:",
+      "Нове: Режим чіткості об’єднує налаштування розміру тексту та іконок, гучності дзвінків, блокування шахрайських викликів та інші параметри телефона",
+      "Нове: опція натиснення на рядок стану, щоб повернутися у верхню частину сторінки в деяких додатках програмах і сценаріях",
+      "Оптимізація: Mi Mover тепер підтримує перенесення більшої кількості даних, включно з деякими налаштуваннями та даними користувача системних програм",
+      "Оптимізація: анімації пошуку в Галереї для плавніших переходів",
+      "Виправлення: у деяких випадках стиснуті файли macOS некоректно відображалися у Провіднику",
+      "Виправлення: у деяких випадках виникали затримки під час завантаження мініатюр знімків екрана з різними мовами"
+    ],
+    "Конфіденційність та безпека": [
+      "Нове: більше системних програм тепер підтримують Конфіденційний доступ, а для додаткових програм постійно покращується їх сумісність із системою",
+      "Оптимізація: оновлено макет сторінки ^Відбитки пальців, дані про обличчя та екран блокування^ для спрощення та прискорення налаштування."
+    ],
+    "Система": [
+      "Оновлено патч безпеки за липень 2026 року. Збільшено безпеку системи."
+    ],
+    "Взаємопов'язаність": [
+      "Нове: телефони Xiaomi тепер підтримують AirPods, включно зі швидким підключенням через спливаюче вікно, відображенням рівня заряду, Персоналізованим просторовим аудіо, перемиканням шумопоглинання та функцією ^Локатор^"
+    ]
+  },
+  "logs_pl": {
+    "Kompleksowa optymalizacja aplikacji systemowych": [
+      "Kalendarz:",
+      "Optymalizacja: Poprawiono wyświetlanie świąt w Kalendarzu, a także dodano więcej tradycyjnych świąt oraz dni upamiętniających wydarzenia historyczne",
+      "Poprawka: Naprawiono problem, w wyniku którego w niektórych przypadkach daty były wyświetlane nieprawidłowo",
+      "Inne usprawnienia:",
+      "Nowość: Tryb klarowności obejmuje teraz rozmiar tekstu i ikon, głośność dzwonka, blokowanie połączeń od oszustów i inne ustawienia telefonu",
+      "Nowość: Dodano możliwość dotknięcia paska stanu w celu powrotu na górę strony w niektórych aplikacjach i scenariuszach",
+      "Optymalizacja: Mi Mover obsługuje teraz przesyłanie większej ilości danych, w tym niektórych ustawień oraz danych użytkownika pochodzących z aplikacji systemowych",
+      "Optymalizacja: Poprawiono animacje wyszukiwania w Galerii, zapewniając płynniejsze przejścia",
+      "Poprawka: Naprawiono problem, w wyniku którego skompresowane pliki systemu macOS w niektórych przypadkach nie były poprawnie wyświetlane w Menedżerze plików",
+      "Poprawka: Naprawiono zacinanie się ładowania wielojęzycznych miniatur zrzutów ekranu w niektórych przypadkach"
+    ],
+    "Prywatność i bezpieczeństwo": [
+      "Nowość: Teraz więcej aplikacji systemowych obsługuje Prywatny dostęp, a w przypadku dodatkowych aplikacji wprowadzane są ciągłe ulepszenia zgodności",
+      "Optymalizacja: Zaktualizowano układ strony „Odciski palców, dane twarzy i blokada ekranu” dla łatwiejszej i szybszej konfiguracji"
+    ],
+    "System": [
+      "Zaktualizowano Pakiet Bezpieczeństwa do lipca 2026 r. Zwiększono bezpieczeństwo systemu."
+    ],
+    "Łączność": [
+      "Nowość: Telefony Xiaomi obsługują teraz słuchawki AirPods, w tym wyskakujące okienka parowania, stan baterii, dźwięk przestrzenny, przełączanie redukcji hałasów oraz funkcję „Znajdź”"
+    ]
+  },
+  "logs_fr": {
+    "Optimisation complète des applications système": [
+      "Agenda :",
+      "Optimisation : Affichage des jours fériés dans Agenda, avec davantage de fêtes traditionnelles et de jours commémoratifs historiques",
+      "Correction : Un problème d^affichage incorrect des dates dans certains cas",
+      "Autres améliorations :",
+      "Nouveau : Le mode Clarté regroupe la taille du texte et des icônes, le volume de la sonnerie, le blocage des appels frauduleux et d^autres paramètres du téléphone",
+      "Nouveau : Dans certaines applications et certains cas de figure, il est désormais possible d^appuyer sur la barre d^état pour revenir en haut de la page",
+      "Optimisation : Mi Mover prend désormais en charge le transfert de davantage de données, notamment certains paramètres et données utilisateur des applications système",
+      "Optimisation : Animations de recherche dans la galerie pour des transitions plus fluides",
+      "Correction : Un problème d^affichage incorrect des fichiers compressés macOS dans le Gestionnaire de fichiers dans certains cas",
+      "Correction : saccades lors du chargement des vignettes de captures d^écran multilingues dans certains cas"
+    ],
+    "Confidentialité et sécurité": [
+      "Nouveau : Davantage d^applications système prennent désormais en charge l^accès privé, et la compatibilité est en cours d^amélioration pour d^autres applications",
+      "Optimisation : Mise à jour de la mise en page de la page ^Empreintes digitales, données faciales et verrouillage de l’écran^ pour une configuration plus simple et plus rapide"
+    ],
+    "Système": [
+      "Mise à jour du correctif de sécurité en juillet 2026. Sécurité accrue du système."
+    ],
+    "Interconnectivité": [
+      "Nouveau : Les téléphones Xiaomi sont désormais compatibles avec les AirPods, et notamment avec l^appairage rapide, l^affichage de l^état de la batterie, l^audio spatial, Annulation du bruit et Localiser mon"
+    ]
+  },
+  "logs_it": {
+    "Ottimizzazione completa delle app di sistema": [
+      "Calendario:",
+      "Ottimizzazione: visualizzazione delle festività nel Calendario, con l^aggiunta di festività tradizionali e ricorrenze storiche",
+      "Correzione: un problema per cui, in alcuni casi, le date venivano visualizzate in modo errato",
+      "Altri miglioramenti:",
+      "Novità: la modalità Chiarezza riunisce le impostazioni relative alle dimensioni del testo e delle icone, al volume della suoneria, al blocco delle chiamate fraudolente e ad altre impostazioni del telefono",
+      "Novità: opzione per toccare la barra di stato e tornare all’inizio della pagina in alcune app e scenari",
+      "Ottimizzazione: Mi Mover ora consente di trasferire una maggiore quantità di dati, comprese alcune impostazioni e i dati utente delle app di sistema",
+      "Ottimizzazione: animazioni di ricerca nella galleria per transizioni più fluide",
+      "Correzione: un problema per cui, in alcuni casi, i file compressi di macOS non venivano visualizzati correttamente in Gestore File",
+      "Correzione: rallentamenti durante il caricamento delle miniature degli screenshot multilingue in alcuni casi"
+    ],
+    "Privacy e sicurezza": [
+      "Novità: più app di sistema ora supportano l^Accesso privato, con continui miglioramenti alla compatibilità per altre app",
+      "Ottimizzazione: aggiornamento della disposizione della pagina “Impronte digitali, dati del volto e blocco schermo” per una configurazione più semplice e veloce"
+    ],
+    "Sistema": [
+      "Patch di sicurezza aggiornata a luglio 2026. Migliorata la sicurezza del sistema."
+    ],
+    "Interconnettività": [
+      "Novità: gli smartphone Xiaomi ora supportano gli AirPods, con funzionalità come pop-up di associazione rapida, stato della batteria, audio spaziale, attivazione della cancellazione del rumore e Dov^è"
+    ]
+  },
+  "logs_es": {
+    "Optimización integral de las aplicaciones del sistema": [
+      "Calendario:",
+      "Optimización: Visualización de días festivos en el Calendario, con festivales más tradicionales y días conmemorativos históricos",
+      "Corrección: Un problema en el que las fechas se mostraban incorrectamente en algunos casos",
+      "Otras mejoras:",
+      "Nuevo: El Modo claridad reúne el tamaño del texto y los Iconos, el volumen del tono de llamada, el bloqueo de llamadas fraudulentas y otras configuraciones del teléfono.",
+      "Nuevo: La opción de tocar la barra de estado para volver a la parte superior de la página en algunas aplicaciones y escenarios.",
+      "Optimización: Mi Mover ahora admite la transferencia de más datos, incluidas algunas configuraciones y datos de usuario desde las aplicaciones del sistema",
+      "Optimización: Animaciones de búsqueda en la Galería para transiciones más suaves",
+      "Solución: Un problema en el que los archivos comprimidos de macOS no se mostraban correctamente en el Gestor de archivos en algunos casos",
+      "Corrección: Cortes al cargar miniaturas de capturas de pantalla multilingües en algunos casos"
+    ],
+    "Privacidad y seguridad": [
+      "Nuevo: Más aplicaciones del sistema ahora admiten el acceso privado, con mejoras de compatibilidad continuas para aplicaciones adicionales",
+      "Optimización: Se actualizó el diseño de la página ^Huellas dactilares, datos faciales y bloqueo de pantalla^ para una configuración más fácil y rápida."
+    ],
+    "Sistema": [
+      "Parche de seguridad actualizado a junio de 2026. Seguridad del sistema incrementada."
+    ],
+    "Interconectividad": [
+      "Novedad: Los teléfonos Xiaomi ahora son compatibles con AirPods, incluidas ventanas emergentes de emparejamiento rápido, estado de la batería, audio espacial, cambio de cancelación de ruido y Buscar."
+    ]
+  },
+  "logs_pt": {
+    "Otimização compreensiva de apps do sistema": [
+      "Agenda:",
+      "Otimização: Exibição de feriados no Calendário, incluindo mais festivais tradicionais e datas comemorativas históricas",
+      "Correção: Um problema em que as datas eram exibidas incorretamente em alguns casos",
+      "Outras melhorias:",
+      "Novidade: o modo clareza reúne configurações como tamanho do texto e dos ícones, volume do toque, bloqueio de chamadas fraudulentas e outras configurações do telefone",
+      "Novidade: a opção de tocar na barra de status para voltar ao topo da página em alguns aplicativos e situações",
+      "Otimização: O Mi Mover agora permite transferir mais dados, incluindo algumas configurações e dados do usuário de aplicativos do sistema",
+      "Otimização: animações de pesquisa na galeria para transições mais suaves",
+      "Correção: Um problema em que, em alguns casos, os arquivos compactados do macOS não eram exibidos corretamente no Gerenciador de Arquivos",
+      "Correção: lentidão ao carregar miniaturas de capturas de tela multilíngues em alguns casos"
+    ],
+    "Privacidade e segurança": [
+      "Novidade: agora, mais aplicativos do sistema oferecem suporte ao acesso privado, com melhorias contínuas de compatibilidade para outros aplicativos",
+      "Otimização: Atualizamos o layout da página “Impressões digitais, dados faciais e bloqueio de tela” para facilitar e agilizar a configuração"
+    ],
+    "Sistema": [
+      "Atualização do patch de segurança para julho de 2026. Segurança do sistema aprimorada."
+    ],
+    "Interconectividade": [
+      "Novidade: os celulares da Xiaomi agora são compatíveis com os AirPods, incluindo janelas pop-up de emparelhamento rápido, status da bateria, Áudio Espacial, ativação do cancelamento de ruído e o recurso Find My"
+    ]
+  },
+  "logs_tr": {
+    "Kapsamlı sistem uygulaması optimizasyonu": [
+      "Takvim:",
+      "Optimizasyon: Daha geleneksel festivaller ve tarihi anma günleri ile Takvim^de tatil günleri gösterimi",
+      "Düzeltme: Bazı durumlarda tarihlerin yanlış görüntülenmesiyle ilgili bir sorun",
+      "Diğer geliştirmeler:",
+      "Yeni: Netlik modu, metin ve simge boyutunu, zil sesi seviyesini, dolandırıcılık amaçlı arama engellemeyi ve diğer telefon ayarlarını bir araya getirir",
+      "Yeni: Bazı uygulamalarda ve senaryolarda sayfanın başına dönmek için durum çubuğuna dokunma seçeneği",
+      "Optimizasyon: Mi Taşıyıcı artık daha fazla veri aktarımını destekliyor, sistem uygulamalarından gelen bazı ayarlar ve kullanıcı verileri dahil",
+      "Optimizasyon: Daha akıcı geçişler için Galeri arama animasyonları",
+      "Düzeltme: Bazı durumlarda macOS^ta sıkıştırılmış dosyaların Dosya Yöneticisi^nde düzgün görüntülenmemesi sorunu",
+      "Düzeltme: Bazı durumlarda çok dilli ekran görüntüsü küçük resimleri yüklenirken takılmalar yaşanıyor"
+    ],
+    "Gizlilik ve güvenlik": [
+      "Yeni: Artık daha fazla sistem uygulaması Özel erişim^i destekliyor, ek uygulamalar için uyumluluk iyileştirmeleri devam ediyor",
+      "Optimizasyon: Daha kolay ve daha hızlı kurulum için ^^Parmak izi, yüz verisi ve ekran kilidi^^ sayfa düzeni güncellendi"
+    ],
+    "Sistem": [
+      "Güvenlik patch^i Temmuz 2026^da güncellendi. Sistem güvenliği arttırıldı."
+    ],
+    "Ara bağlantı": [
+      "Yeni: Xiaomi telefonlar artık AirPods^ları destekliyor, hızlı eşleşme açılır pencereleri, pil durumu, Mekânsal ses, Gürültü engelleme değiştirme ve Bu özelliği dahil"
+    ]
+  },
+  "logs_id": {
+    "Optimalisasi apl sistem yang komprehensif": [
+      "Kalender:",
+      "Optimalisasi: Tampilan hari libur di Kalender, dengan lebih banyak festival tradisional dan hari peringatan bersejarah",
+      "Perbaikan: Masalah di mana tanggal ditampilkan secara tidak benar dalam beberapa kasus",
+      "Peningkatan lainnya:",
+      "Baru: Mode Kejernihan menggabungkan ukuran teks dan ikon, volume nada dering, pemblokiran panggilan penipuan, dan setelan telepon lainnya",
+      "Baru: Opsi untuk mengetuk bilah status untuk kembali ke bagian atas halaman di beberapa aplikasi dan skenario",
+      "Optimalisasi: Mi Mover kini mendukung transfer lebih banyak data, termasuk beberapa pengaturan dan data pengguna dari aplikasi sistem",
+      "Optimalisasi: Animasi pencarian di galeri untuk transisi yang lebih halus",
+      "Perbaikan: Masalah di mana berkas terkompresi macOS tidak ditampilkan dengan benar di File Manager dalam beberapa kasus",
+      "Perbaikan: Terjadi jeda saat memuat gambar mini screenshot multibahasa di beberapa kasus"
+    ],
+    "Privasi dan keamanan": [
+      "Baru: Lebih banyak aplikasi sistem kini mendukung akses Pribadi, dengan peningkatan kompatibilitas berkelanjutan untuk aplikasi tambahan",
+      "Optimalisasi: Tata letak halaman ^Sidik jari, data wajah, dan kunci layar^ diperbarui untuk pengaturan yang lebih mudah dan cepat"
+    ],
+    "Sistem": [
+      "Patch keamanan diperbarui (Juli 2026). Keamanan sistem ditingkatkan."
+    ],
+    "Interkonektivitas": [
+      "Baru: Ponsel Xiaomi kini mendukung AirPods, termasuk pop-up pemasangan cepat, status baterai, Audio Spasial, peralihan peredam bising, dan aplikasi Lacak"
+    ]
+  },
+  "logs_vi": {
+    "Tối ưu toàn diện các ứng dụng hệ thống": [
+      "Lịch:",
+      "Tối ưu: Hiển thị ngày lễ trong Lịch, với nhiều lễ hội truyền thống và ngày kỷ niệm lịch sử hơn",
+      "Sửa: Vấn đề hiển thị ngày tháng không chính xác trong một số trường hợp",
+      "Cải thiện khác:",
+      "Mới: Chế độ dễ nhìn kết hợp kích thước văn bản và biểu tượng, âm lượng nhạc chuông, chặn cuộc gọi lừa đảo và các cài đặt điện thoại khác",
+      "Mới: Tùy chọn chạm vào thanh trạng thái để quay lại đầu trang trong một số ứng dụng và tình huống",
+      "Tối ưu: Mi Mover hiện hỗ trợ chuyển nhiều dữ liệu hơn, bao gồm một số cài đặt và dữ liệu người dùng từ các ứng dụng hệ thống",
+      "Tối ưu: Hoạt ảnh tìm kiếm trong thư viện ảnh giúp chuyển đổi mượt mà hơn",
+      "Sửa: Vấn đề khiến các tập tin nén trên macOS không hiển thị đúng cách trong Quản lý Tập tin trong một số trường hợp",
+      "Sửa: Giật vấp khi tải ảnh thu nhỏ màn hình đa ngôn ngữ trong một số trường hợp"
+    ],
+    "Bảo mật và quyền riêng tư": [
+      "Mới: Nhiều ứng dụng hệ thống hơn hiện hỗ trợ Truy cập riêng tư, đồng thời tiếp tục cải thiện khả năng tương thích cho các ứng dụng khác",
+      "Tối ưu: Đã cập nhật bố cục trang ^Vân tay, dữ liệu khuôn mặt và khóa màn hình^ để thiết lập dễ dàng và nhanh chóng hơn"
+    ],
+    "Hệ thống": [
+      "Cập nhật bản vá bảo mật đến tháng 7 năm 2026. Tăng cường bảo mật hệ thống."
+    ],
+    "Liên thông": [
+      "Mới: Máy tính bảng Xiaomi hiện hỗ trợ AirPods, bao gồm cửa sổ nổi ghép nối nhanh, trạng thái pin, Âm thanh Không gian, chuyển đổi chống ồn và Tìm"
+    ]
+  },
+  "logs_th": {
+    "การเพิ่มประสิทธิภาพแอประบบอย่างครอบคลุม": [
+      "ปฏิทิน:",
+      "การเพิ่มประสิทธิภาพ: แสดงวันหยุดในปฏิทิน โดยเน้นเทศกาลดั้งเดิมและวันสำคัญทางประวัติศาสตร์มากขึ้น",
+      "แก้ไข: แก้ไขปัญหาที่แสดงวันที่ไม่ถูกต้องในบางกรณี",
+      "การปรับปรุงอื่นๆ:",
+      "ใหม่: โหมดความคมชัดรวมการปรับขนาดข้อความและไอคอน ระดับเสียงเรียกเข้า การบล็อกสายเรียกเข้าจากมิจฉาชีพ และการตั้งค่าโทรศัพท์อื่นๆ เข้าไว้ด้วยกัน",
+      "ใหม่: เพิ่มตัวเลือกแตะแถบสถานะเพื่อกลับไปยังด้านบนของหน้าในบางแอปและบางสถานการณ์",
+      "การเพิ่มประสิทธิภาพ: Mi Mover รองรับการถ่ายโอนข้อมูลได้มากขึ้น รวมถึงการตั้งค่าและข้อมูลผู้ใช้บางส่วนจากแอปพลิเคชันระบบ",
+      "การเพิ่มประสิทธิภาพ: ภาพเคลื่อนไหวการค้นหาในคลังภาพเพื่อการเปลี่ยนภาพที่ราบรื่นยิ่งขึ้น",
+      "แก้ไข: ปัญหาที่ไฟล์บีบอัดของ macOS แสดงผลไม่ถูกต้องใน ตัวจัดการไฟล์ ในบางกรณี",
+      "แก้ไข: อาการกระตุกขณะโหลดภาพขนาดย่อของภาพหน้าจอหลายภาษาในบางกรณี"
+    ],
+    "ความเป็นส่วนตัวและความปลอดภัย": [
+      "ใหม่: แอประบบจำนวนมากรองรับการเข้าถึงแบบส่วนตัวแล้ว และจะมีการปรับปรุงความเข้ากันได้อย่างต่อเนื่องสำหรับแอปพลิเคชันเพิ่มเติม",
+      "การเพิ่มประสิทธิภาพ: ปรับปรุงเค้าโครงหน้า ^ลายนิ้วมือ ข้อมูลใบหน้า และการล็อกหน้าจอ^ เพื่อให้ตั้งค่าได้ง่ายและรวดเร็วยิ่งขึ้น"
+    ],
+    "ระบบ": [
+      "อัปเดตแพตช์ความปลอดภัยเป็นเดือนกรกฎาคม 2026 เพิ่มความปลอดภัยของระบบ"
+    ],
+    "การเชื่อมต่อระหว่างกัน": [
+      "ใหม่: โทรศัพท์ Xiaomi รองรับ AirPods แล้ว รวมถึงฟีเจอร์ต่างๆ เช่น การจับคู่ด่วน, สถานะแบตเตอรี่, ระบบเสียง Spatial Audio, การสลับโหมดตัดเสียงรบกวน และ Find My"
+    ]
+  },
+  "logs_ar": {
+    "التحسين الشامل لتطبيقات النظام": [
+      "التقويم:",
+      "تحسين: عرض العطلات في التقويم مع إضافة مزيد من المناسبات التقليدية والتاريخية",
+      "إصلاح: مشكلة عرض التواريخ بشكل غير صحيح في بعض الحالات",
+      "تحسينات أخرى:",
+      "جديد: وضع الوضوح يجمع بين حجم النص والأيقونات، مستوى صوت النغمة، حظر مكالمات الاحتيال، وإعدادات أخرى",
+      "جديد: خيار النقر على شريط الحالة للعودة إلى أعلى الصفحة في بعض التطبيقات والسيناريوهات",
+      "تحسين: يدعم ناقل Mi الآن نقل المزيد من البيانات، بما في ذلك بعض الإعدادات وبيانات المستخدم من تطبيقات النظام",
+      "تحسين: رسوم البحث في المعرض لانتقالات أكثر سلاسة",
+      "إصلاح: مشكلة عرض ملفات macOS المضغوطة في مدير الملفات في بعض الحالات",
+      "إصلاح: التقطع عند تحميل صور معاينة لقطات الشاشة متعددة اللغات في بعض الحالات"
+    ],
+    "الخصوصية والأمان": [
+      "جديد: المزيد من تطبيقات النظام تدعم الآن الوصول الخاص، مع تحسينات مستمرة للتوافق مع تطبيقات إضافية",
+      "تحسين: تحديث تصميم صفحة ^بصمات الأصابع وبيانات الوجه وقفل الشاشة^ لتسهيل وتسريع الإعداد"
+    ],
+    "النظام": [
+      "تم تحديث تصحيح الأمان إلى يوليو 2026 لزيادة أمان النظام."
+    ],
+    "الربط بين الأجهزة": [
+      "جديد: تدعم هواتف Xiaomi الآن AirPods، بما في ذلك نافذة الاقتران السريع، عرض مستوى البطارية، الصوت المكاني، التبديل بين أوضاع إلغاء الضجيج، وميزة ^تحديد الموقع^"
+    ]
   }
 }

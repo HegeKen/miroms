@@ -18,8 +18,10 @@
 │   ├── v1/devices/<codename>.json    # V1：MIUI 设备数据（旧格式）
 │   ├── v2/devices/<codename>.json    # V2：HyperOS 设备数据
 │   ├── v3/devices/<codename>.json    # V3：全量设备数据（MIUI + HyperOS）
-│   ├── v3/logs/<device>/[region/]<version>.json   # V3：中英文更新日志
+│   ├── v3/logs/<device>/[region/]<version>.json   # V3：多语言更新日志
 │   ├── v3/roms/<OS>.json             # V3：按系统版本（OS1/OS2/OS3…）分组的 ROM 列表
+│   ├── v3/releases/<year>.json       # V3：按发布日期分组的 ROM 列表（按年份分片）
+│   ├── v3/releases/index.json        # V3：发布日期索引的元信息（日期范围 / 年份统计）
 │   ├── v3/index.json                 # V3：设备索引（设备列表 + 统计）
 │   ├── v3/series.json                # V3：机型系列数据（series 表导出）
 │   └── v3/stats.json                 # V3：近期更新统计
@@ -179,11 +181,28 @@
 
 | 文件 | 说明 |
 | --- | --- |
-| `api/v3/logs/<device>/[region]/<version>.json` | 单个 ROM 的中英文更新日志，含区域时存放在 `region` 子目录，结构为 `{"logs_zh": {...}, "logs_en": {...}}` |
+| `api/v3/logs/<device>/[region]/<version>.json` | 单个 ROM 的多语言更新日志，含区域时存放在 `region` 子目录。`logs_zh` / `logs_en` 固定存在，其余语言按有译文才出现：`{"logs_zh": {...}, "logs_en": {...}, "logs_zh_tw": {...}, "logs_ja": {...}, ...}`（语言集合见 `scripts/miroms/constants.py` 的 `CHANGELOG_LOCALES`，与站点 18 种语言一致） |
 | `api/v3/roms/<OS>.json` | 按系统版本分组的 ROM 列表（如 `OS1.json` = HyperOS 1），每项含设备、版本、Android、区域、分支名、日期、包文件名，按需按版本号拼接成设备 ROM 表 |
-| `api/v3/index.json` | 设备索引：每台设备的名称、品牌、系列（`series`）、代码、Android 版本、支持的系统版本、支持区域（`regions`，可见分支的区域去重）、支持运营商（`carriers`，可见分支的运营商去重，排除空值）、分支数（`branchCount`）与 ROM 数（`romCount`） |
+| `api/v3/releases/<year>.json` | 按发布日期分组的 ROM 列表，结构为 `{"year": "2026", "dates": {"2026-09-18": [{"device": "brussels", "version": "OS3.0.308.0.WDRMIXM", "region": "global"}, ...]}}`，供前端按日期查询时只拉取某一年的数据 |
+| `api/v3/releases/index.json` | 发布日期索引元信息：`generatedAt` 生成时间、`minDate` / `maxDate` 可查询日期范围、`totalRoms` 总数与 `years`（每年的 ROM 数与有发布记录的天数） |
+| `api/v3/index.json` | 设备索引：每台设备的名称、品牌、系列（`series`）、代码、Android 版本、支持的系统版本、支持区域（`regions`，可见分支的区域去重）、支持运营商（`carriers`，可见分支的运营商去重，排除空值）、区域与运营商的对应关系（`regionCarriers`，形如 `{"cn": ["chinatelecom", ...]}`）、分支数（`branchCount`）与 ROM 数（`romCount`） |
 | `api/v3/series.json` | 机型系列：系列列表（品牌、中英文名、`device_ids` 设备归属）与设备排序（`order`） |
 | `api/v3/stats.json` | 近期统计：`generatedAt` 生成时间、`recentDays` 统计天数、`recentRoms` 近期新增 ROM 数、`recent` 近期 ROM 明细列表 |
+
+### 多语言更新日志
+
+更新日志来自 `update.miui.com`：请求表单里的 `l` 参数决定返回哪种语言，小米没有提供译文的语种会回落英文。因此新增语种时先用 `--probe` 确认接口到底认哪个 locale——例如阿拉伯语只有 `ar_EG` 有译文，`ar` / `ar_SA` / `ar_AE` 等都会回落英文。步骤：
+
+1. 先在 `scripts/miroms/constants.py` 的 `CHANGELOG_LOCALES` 里登记语种（列名 / 接口 locale / 站点 locale）
+2. 给 `roms` 表加同名列：结构见 `db_structure/roms.sql`，线上库依次执行 `db_structure/migrations/` 下的迁移（`20260919_add_roms_changelog_locales.sql` 建 16 个语种列，`20260919_add_roms_logs_ar.sql` 补阿拉伯语列）
+3. `python3 scripts/fetch_changelog.py --probe 5` 先看接口对哪些语种返回了独立译文（不写库）
+4. `python3 scripts/fetch_changelog.py --langs ja,ko,ru` 按语种补数据；不加参数则依次处理全部语种
+处理时按 ROM id 批量进行：每个语种先各自查出待补 id 数组，再遍历 id 并集——同一个 ROM 只查一次数据库、只构建一次请求表单，命中多个语种时仅替换 `l` 参数各请求一次，处理完即从对应数组移除，因此不会重复请求也不会重复查库。
+
+写入是逐条 `UPDATE` + 连接层 `autocommit`，执行即落库（不会攒到最后统一提交）。脚本启动时会先打印实际连接的库、并校验 `roms` 是否已有各语言列——缺列会直接报错并给出迁移命令，而不是被静默吞掉；写入失败会计入 `write_failed` 并打印首个错误，不会出现「报告写入 N 但库里没有」。若本次没有任何写入，脚本会列出排查方向：接口全部回落英文（用 `--probe` 确认，确需写入加 `--force`）、待补数组为空（`--min-id` 过大）、写入被数据库拒绝。`--dry-run` 可以只看将写入什么而不落库。
+
+回落到英文的语种会被自动跳过（列保持 NULL），避免存一堆英文副本；确需写入时加 `--force`。
+
 
 ---
 
@@ -192,7 +211,7 @@
 数据库使用 MySQL（InnoDB，utf8mb4），表结构与字段含义见 `db_structure/`：
 
 - **`devices.sql`** — 设备表：设备代号（`device`）、内部标识（`devtag`）、设备代码（`code`）、ROM 标签（`tag`）、区域（`region`）、运营商（`carrier`）、品牌（`brands` / `full_brands`）、中英文名（`full_names` / `names` / `xiaomi` / `redmi` / `poco`）、图片（`image`）、发布日期（`launch_date`）
-- **`roms.sql`** — ROM 表：系统类型（`type`：MIUI / HyperOS）、大版本（`bigver`）、区域、标签、分支（`branch`：F=正式版 / X=开发版）、完整版本号（`version`）、Android 版本、发布日期（`beta_date` / `release_date` / `public_date`）、Recovery / Fastboot / 运营商定制包文件名（`recovery` / `fastboot` / `ctelecom` / `cmobile` / `cunicom` / `others`）、中英文更新日志（`logs_zh` / `logs_en`，JSON 格式）、安全补丁日期（`aspatch`）
+- **`roms.sql`** — ROM 表：系统类型（`type`：MIUI / HyperOS）、大版本（`bigver`）、区域、标签、分支（`branch`：F=正式版 / X=开发版）、完整版本号（`version`）、Android 版本、发布日期（`beta_date` / `release_date` / `public_date`）、Recovery / Fastboot / 运营商定制包文件名（`recovery` / `fastboot` / `ctelecom` / `cmobile` / `cunicom` / `others`）、多语言更新日志（`logs_zh` / `logs_zh_tw` / `logs_en` / `logs_ja` / `logs_ko` / `logs_ru` / `logs_uk` / `logs_pl` / `logs_de` / `logs_fr` / `logs_it` / `logs_es` / `logs_pt` / `logs_tr` / `logs_id` / `logs_vi` / `logs_th` / `logs_ar`，JSON 格式，与站点语言一一对应）、安全补丁日期（`aspatch`）
 - **`branches.sql`** — 分支表：分支类型、中英文名称、标签（`tag`）、代码后缀（`code`）、版本代码（`vercode`）、运营商、区域、分区（`zone`）、可见性（`visibility`）、是否政企版（`ep`）
 - **`series.sql`** — 机型系列表：品牌（`brand`：xiaomi / redmi / poco）、中英文名称（`name_zh` / `name_en`）、设备归属（`device_ids`，JSON 数组）、排序（`sort_order`）
 
@@ -204,7 +223,7 @@
 
 | 文件 | 说明 |
 | --- | --- |
-| `exporter.py` | 入口脚本：遍历 `common.fullDevices` 依次执行 `exportV1` / `exportV2` / `exportV3`，完成后调用 `app/web/scripts/generate-index.mjs`（Node.js）重新生成 `api/v3/index.json` |
+| `exporter.py` | 入口脚本：遍历 `common.fullDevices` 依次执行 `exportV1` / `exportV2` / `exportV3`，完成后调用 `app/web/scripts/generate-index.mjs`（Node.js）重新生成 `api/v3/index.json`、`api/v3/stats.json`、`api/v3/roms/*.json` 与 `api/v3/releases/*.json` |
 | `sync_devices.py` | 从 `devices` / `roms` 表同步设备列表到 `miroms/data.py`（`fullDevices`、`currentStable`、`flags`） |
 | `fix_missing_tag_mappings.py` | 修复 `devices` 表中缺失的 device+tag 映射（V3 导出器按 tag 匹配分支，缺失会导致 ROM 丢失），输出 SQL 到 stdout 或 `--apply` 直接执行 |
 | `common.py` | 向后兼容入口，重新导出 `miroms` 包全部公共 API，并保留 `fullDevices`、`currentStable`、`flags` 等模块级常量 |
@@ -223,7 +242,7 @@
 | `xfu_full.py` | 本地 HTML 核查 |
 | `get_current_fastboot.py` | 抓取当前 Fastboot 包信息 |
 | `mgc_fastboot.py` | 小米社区 API 抓取 |
-| `fetch_changelog.py` | 抓取更新日志（changelog）与卡刷包 |
+| `fetch_changelog.py` | 抓取多语言更新日志（changelog）与卡刷包；`--probe` 探测接口对哪些语种真的返回译文，`--langs` 指定语种，`--force` 连英文回落也写入 |
 | `aspatch.py` | 提取安全补丁（Android Security Patch）日期 |
 | `test.py` | 调试 / 验证脚本（非流水线步骤） |
 

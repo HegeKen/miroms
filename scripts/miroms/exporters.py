@@ -6,12 +6,53 @@ from pathlib import Path
 from typing import Set, List, Tuple, Dict, Any
 
 from miroms.database import DatabaseManager
-from miroms.constants import branches
+from miroms.constants import branches, CHANGELOG_EXTRA_COLUMNS
 from miroms.data import unreleased, DEVICE_NAME_ALIASES
 from miroms.utils import FileUtils
 
 # 导出目录基准路径（使用绝对路径，避免 cwd 依赖）
 _EXPORT_BASE = Path(FileUtils.get_base_path()) / "data" / "api"
+
+# roms 表日志列在 SELECT 中的位置（与下方 roms_sql 保持一致）：
+# 14 = logs_zh，15 = logs_en，17 起为 CHANGELOG_EXTRA_COLUMNS（16 是 region）
+_LOG_INDEX_BASE = {"logs_zh": 14, "logs_en": 15}
+_EXTRA_LOG_INDEX_BASE = 17
+
+
+def rom_log_index_map(extra_log_columns: List[str]) -> Dict[str, int]:
+		"""返回 {日志列名: 该行数据中的下标}"""
+		index_map = dict(_LOG_INDEX_BASE)
+		for offset, column in enumerate(extra_log_columns):
+				index_map[column] = _EXTRA_LOG_INDEX_BASE + offset
+		return index_map
+
+
+def parse_rom_logs(rom: Tuple, index_map: Dict[str, int]) -> Dict[str, Any]:
+		"""把一行 roms 数据中所有非空的更新日志列解析为 {列名: 解析后的日志}"""
+		logs: Dict[str, Any] = {}
+		for column, index in index_map.items():
+				if len(rom) <= index:
+						continue
+				value = rom[index]
+				if not value:
+						continue
+				try:
+						logs[column] = json.loads(value) if isinstance(value, str) else value
+				except (json.JSONDecodeError, TypeError):
+						logs[column] = value
+		return logs
+
+
+def build_log_entry(logs_map: Dict[str, Any]) -> Dict[str, Any]:
+		"""构造单个 ROM 的日志对象：logs_zh / logs_en 固定存在（保持既有接口结构），其余语种按有值才写"""
+		entry: Dict[str, Any] = {
+				"logs_zh": logs_map.get("logs_zh"),
+				"logs_en": logs_map.get("logs_en")
+		}
+		for column, value in logs_map.items():
+				if column not in entry and value:
+						entry[column] = value
+		return entry
 
 
 def normalize_bigver(bigver: Any) -> str:
@@ -930,14 +971,19 @@ def exportV3(device: str) -> Dict[str, Any]:
 										}
 
 				# ==================== 阶段4: 批量获取所有 ROM 数据（带运营商字段）====================
-				roms_sql = """
+				# 日志列：logs_zh / logs_en 保持原有位置（rom[14] / rom[15]），
+				# 其余语种列追加在 region 之后，由 constants.CHANGELOG_LOCALES 统一维护
+				extra_log_columns = list(CHANGELOG_EXTRA_COLUMNS)
+				extra_log_select = "".join(f", {column}" for column in extra_log_columns)
+				roms_sql = f"""
 						SELECT id, version, android, beta_date, recovery, fastboot,
 									 tag, code, type, bigver, ctelecom, cmobile, cunicom, aspatch,
-									 logs_zh, logs_en, region
+									 logs_zh, logs_en, region{extra_log_select}
 						FROM roms
 						WHERE device = %s
 						ORDER BY id DESC
 				"""
+				log_index_map = rom_log_index_map(extra_log_columns)
 				all_roms = DatabaseManager.execute(roms_sql, params=(device,), fetch_one=False)
 
 				# 按 tag 分组 ROM（使用字典setdefault，效率更高）
@@ -996,7 +1042,7 @@ def exportV3(device: str) -> Dict[str, Any]:
 				}
 
 				# ==================== 阶段6: 处理每个分支（添加 device 字段）====================
-				rom_logs: Dict[str, Dict[str, str]] = {}  # key: "{region}/{version}" -> {logs_zh, logs_en}
+				rom_logs: Dict[str, Dict[str, Any]] = {}  # key: "{region}/{version}" -> {logs_zh, logs_en, logs_ja, ...}
 				for branch in branches:
 						btag = branch.get("btag")
 						if not btag:
@@ -1080,8 +1126,7 @@ def exportV3(device: str) -> Dict[str, Any]:
 								cmobile = rom[11] if len(rom) > 11 else None
 								cunicom = rom[12] if len(rom) > 12 else None
 								aspatch = rom[13] if len(rom) > 13 else None
-								logs_zh = rom[14] if len(rom) > 14 else None
-								logs_en = rom[15] if len(rom) > 15 else None
+								logs_map = parse_rom_logs(rom, log_index_map)
 
 								version_str = str(version) if version is not None else ""
 								if not version_str or version_str in added_versions:
@@ -1121,21 +1166,10 @@ def exportV3(device: str) -> Dict[str, Any]:
 								# Android One/Go 等机型（如 blue）roms.region 常缺失或存为 "None"，
 								# 而前端始终按分支 region 读取日志，故以分支 region 为准并容忍缺失值。
 								branch_region = new_branch["region"] or ""
-								if (logs_zh or logs_en) and version_str:
+								if logs_map and version_str:
 										log_key = f"{branch_region}/{version_str}" if branch_region else version_str
 										if log_key not in rom_logs:
-												try:
-														parsed_zh = json.loads(logs_zh) if isinstance(logs_zh, str) else logs_zh
-												except (json.JSONDecodeError, TypeError):
-														parsed_zh = logs_zh
-												try:
-														parsed_en = json.loads(logs_en) if isinstance(logs_en, str) else logs_en
-												except (json.JSONDecodeError, TypeError):
-														parsed_en = logs_en
-												rom_logs[log_key] = {
-														"logs_zh": parsed_zh,
-														"logs_en": parsed_en
-												}
+												rom_logs[log_key] = build_log_entry(logs_map)
 
 						# 按版本号（降序）为主、发布日期为辅助排序
 						new_branch["roms"].sort(key=cmp_to_key(_compare_roms))

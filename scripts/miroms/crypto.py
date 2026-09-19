@@ -33,5 +33,8 @@ class CryptoManager:
 				cipher = AES.new(_const.MIUI_KEY, AES.MODE_CBC, _const.MIUI_IV)
 				text = str(json_request).encode("ascii")
 				padded = pad(text, AES.block_size)
-				encrypted = base64.b64encode(padded).decode("utf-8")
+				# 必须真正执行 AES 加密：此前漏掉 cipher.encrypt()，只把「明文 + PKCS#7 填充」
+				# 做了 base64，服务端解不出任何有效表单，只能回空的 patchInfo（Code 2000 success）。
+				cipher_text = cipher.encrypt(padded)
+				encrypted = base64.b64encode(cipher_text).decode("utf-8")
 				return urllib.parse.quote(encrypted).replace("/", "%2F")
