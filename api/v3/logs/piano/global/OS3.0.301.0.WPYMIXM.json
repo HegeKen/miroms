@@ -50,5 +50,395 @@
       "New: More system apps now support Private access, with ongoing compatibility improvements for additional apps",
       "Optimization: Updated ^Fingerprints, face data, and screen lock^ page layout for easier, faster setup"
     ]
+  },
+  "logs_zh_tw": {
+    "小米超級島": [
+      "新增 小米超級島，資訊觸達更高效率",
+      "新增 支援下拉展開小視窗，多任務場景高效率處理"
+    ],
+    "系統應用程式全面最佳化": [
+      "日曆：",
+      "最佳化 日曆節日顯示，增加更多傳統節日、歷史紀念日",
+      "修復 部分場景下日期顯示異常的問題",
+      "更多易用性最佳化：",
+      "新增 部分場景下點選狀態列回到頁面頂端功能",
+      "最佳化 使用鍵盤調整螢幕亮度時的視覺回饋",
+      "最佳化 「小米換機」支援轉移更多資料，包括部分設定項資料與系統應用程式的用戶資料",
+      "最佳化 桌面網格，邊距較勻稱、間距較舒適",
+      "最佳化 相簿搜尋動效，過渡更自然",
+      "修復 部分場景下「檔案管理」中 macOS 壓縮檔案無法正常顯示的問題",
+      "修復 部分截圖場景下多語言縮略圖顯示卡頓的問題"
+    ],
+    "裝置互聯": [
+      "新增 小米平板相容 AirPods，支援快連彈窗、查看電量、使用空間音訊、切換降噪模式及尋找功能"
+    ],
+    "安全隱私": [
+      "新增 部分系統應用程式適配安全存取控制項，更多應用程式適配持續進行中",
+      "最佳化 指紋、臉部與密碼頁面樣式，設定更方便"
+    ]
+  },
+  "logs_ja": {
+    "Xiaomi HyperIsland": [
+      "新機能：Xiaomi HyperIsland で重要な情報を一目で確認",
+      "新機能：小さなウィンドウを下にスワイプして拡大できるようになり、複数のタスクをより効率的に処理できるようになりました"
+    ],
+    "システムアプリの総合的最適化": [
+      "カレンダー:",
+      "最適化：カレンダーの祝日表示に、より多くの伝統的な祝日や歴史的な記念日を追加",
+      "修正：場合によっては日付が正しく表示されない問題",
+      "その他の改善点:",
+      "新機能：一部のアプリや状況において、ステータスバーをタップするとページの上部に戻れるようになりました",
+      "最適化：キーボードで画面の明るさを調整した際の視覚的なフィードバック",
+      "最適化：Mi Mover は、システムアプリの設定やユーザーデータなど、より多くのデータの転送に対応するようになりました",
+      "最適化：ホーム画面のグリッドは、よりバランスの取れた余白と快適な間隔で再デザインされました",
+      "最適化：ギャラリー検索のアニメーションを滑らかに改善",
+      "修正：macOSの圧縮ファイルが、ファイルマネージャーで正しく表示されない場合があった問題",
+      "修正：特定の状況下で多言語スクリーンショットのサムネイルを読み込む際に発生するカクつき"
+    ],
+    "プライバシーとセキュリティ": [
+      "新機能：より多くのシステムアプリでプライベートアクセスに対応するようになりました。また、その他のアプリについても互換性の改善を継続して行っています",
+      "最適化：「指紋、顔データ、画面ロック」ページのレイアウトをアップデートし、設定がより簡単かつ迅速に行えるようになりました"
+    ],
+    "相互接続性": [
+      "新機能：Xiaomi のタブレットが AirPods に対応しました。クイックペアリングのポップアップ表示、バッテリーステータス、空間オーディオ、ノイズキャンセリングの切り替え、およびデバイスを探す機能などが利用可能です。"
+    ]
+  },
+  "logs_ko": {
+    "Xiaomi HyperIsland": [
+      "신규 기능: Xiaomi HyperIsland로 모든 중요 정보를 한눈에 확인하세요.",
+      "신규 기능: 이제 작은 창을 아래로 끌어내려 확장할 수 있어 더 효율적으로 멀티태스킹이 가능합니다."
+    ],
+    "포괄적인 시스템 앱 최적화": [
+      "캘린더:",
+      "최적화: 캘린더에 휴일 표시 방식을 개선하여, 더 많은 전통 축제와 역사적인 기념일을 포함시켰습니다.",
+      "수정: 일부 경우에 날짜가 잘못 표시되는 문제를 해결했습니다.",
+      "기타 개선 사항:",
+      "신규 기능: 일부 앱 및 상황에서 상태 표시줄을 탭하여 페이지 맨 위로 돌아갈 수 있는 옵션이 추가되었습니다.",
+      "최적화: 키보드로 화면 밝기를 조절할 때 시각적 피드백 제공",
+      "최적화: Mi Mover가 시스템 앱의 설정 및 사용자 데이터를 포함하여 더 많은 데이터를 전송할 수 있도록 지원합니다.",
+      "최적화: 홈 화면 격자가 균형 잡힌 여백과 편안한 간격으로 새롭게 디자인되었습니다.",
+      "최적화: 갤러리 검색 애니메이션을 더욱 부드럽게 개선했습니다.",
+      "수정: macOS에서 압축 파일이 파일탐색기에서 제대로 표시되지 않는 문제를 해결했습니다.",
+      "수정: 일부 경우 다국어 스크린샷 미리보기 이미지를 로드할 때 발생하던 끊김 현상을 해결했습니다."
+    ],
+    "개인정보 보호 및 보안": [
+      "신규 기능: 이제 더 많은 시스템 앱에서 프라이빗 액세스를 지원하며, 추가적인 앱과의 호환성 개선이 지속적으로 진행될 예정입니다.",
+      "최적화: 더 쉽고 빠른 설정을 위해 ^지문, 안면 인식 데이터 및 화면 잠금^ 페이지 레이아웃을 업데이트했습니다."
+    ],
+    "상호 연결성": [
+      "신규 기능: Xiaomi 태블릿에서 AirPods을 지원하며, 빠른 페어링 팝업, 배터리 상태 표시, 공간 오디오, 노이즈 캔슬링 전환 및 Find My 기능을 사용할 수 있습니다."
+    ]
+  },
+  "logs_ru": {
+    "Xiaomi HyperIsland": [
+      "Новое: быстрый доступ к важной информации с новым Xiaomi HyperIsland",
+      "Новое: теперь можно потянуть вниз, чтобы развернуть маленькие окна и эффективнее выполнять несколько задач одновременно"
+    ],
+    "Комплексная оптимизация системных приложений": [
+      "Календарь:",
+      "Оптимизация: Календарь — добавлены традиционные праздники и памятные даты",
+      "Исправление: в некоторых случаях даты отображались некорректно",
+      "Прочие улучшения:",
+      "Новое: теперь в некоторых приложениях и сценариях вы можете коснуться строки состояния, чтобы вернуться к началу страницы",
+      "Оптимизация: визуальная обратная связь при регулировке яркости экрана с помощью клавиатуры",
+      "Оптимизация: Mi Mover теперь поддерживает перенос большего объема данных, включая некоторые настройки и пользовательские данные системных приложений",
+      "Оптимизация: переработана сетка рабочего стола — отступы стали более сбалансированными, а расстояние между элементами — более комфортным",
+      "Оптимизация: анимации поиска в Галерее стали более плавными",
+      "Исправление: в некоторых случаях архивы, созданные в macOS, отображались некорректно в Проводнике",
+      "Исправление: в некоторых случаях возникали задержки при загрузке миниатюр многоязычных скриншотов"
+    ],
+    "Конфиденциальность и безопасность": [
+      "Новое: еще больше системных приложений теперь поддерживают «Приватный доступ», расширение совместимости продолжается",
+      "Оптимизация: обновлена компоновка элементов в разделе «Отпечатки пальцев, данные лица и блокировка экрана» для более быстрой и удобной настройки"
+    ],
+    "Взаимосвязанность": [
+      "Новое: планшеты Xiaomi теперь поддерживают AirPods, включая быстрое подключение через всплывающее окно, отображение заряда, режим Spatial Audio, переключение шумоподавления и «Локатор»"
+    ]
+  },
+  "logs_uk": {
+    "Xiaomi HyperIsland": [
+      "Нове: перегляд усієї важливої інформації з першого погляду завдяки Xiaomi HyperIsland",
+      "Нове: тепер можна потягнути вниз, щоб розгорнути маленькі вікна та ефективніше виконувати декілька завдань одночасно"
+    ],
+    "Комплексна оптимізація системних програм": [
+      "Календар:",
+      "Оптимізація: відображення свят у календарі з додаванням більшої кількості традиційних фестивалів та історичних пам’ятних дат",
+      "Виправлення: у деяких випадках дати відображалися некоректно",
+      "Інші покращення:",
+      "Нове: опція натиснення на рядок стану, щоб повернутися у верхню частину сторінки в деяких додатках програмах і сценаріях",
+      "Оптимізація: візуальний відгук під час налаштування яскравості екрана за допомогою клавіатури",
+      "Оптимізація: Mi Mover тепер підтримує перенесення більшої кількості даних, включно з деякими налаштуваннями та даними користувача системних програм",
+      "Оптимізація: сітку Робочого столу перероблено з більш збалансованими відступами та комфортнішим інтервалом",
+      "Оптимізація: анімації пошуку в Галереї для плавніших переходів",
+      "Виправлення: у деяких випадках стиснуті файли macOS некоректно відображалися у Провіднику",
+      "Виправлення: у деяких випадках виникали затримки під час завантаження мініатюр знімків екрана з різними мовами"
+    ],
+    "Конфіденційність та безпека": [
+      "Нове: більше системних програм тепер підтримують Конфіденційний доступ, а для додаткових програм постійно покращується їх сумісність із системою",
+      "Оптимізація: оновлено макет сторінки ^Відбитки пальців, дані про обличчя та екран блокування^ для спрощення та прискорення налаштування."
+    ],
+    "Взаємопов'язаність": [
+      "Нове: планшети Xiaomi тепер підтримують AirPods, включно зі швидким підключенням через спливаюче вікно, відображенням рівня заряду, Персоналізованим просторовим аудіо, перемиканням шумопоглинання та функцією ^Локатор^"
+    ]
+  },
+  "logs_pl": {
+    "Xiaomi HyperIsland": [
+      "Nowość: Zobacz wszystkie ważne informacje na pierwszy rzut oka dzięki Xiaomi HyperIsland",
+      "Nowość: Teraz możesz przeciągnąć ekran w dół, aby rozszerzyć małe okna i jeszcze sprawniej wykonywać wiele zadań jednocześnie"
+    ],
+    "Kompleksowa optymalizacja aplikacji systemowych": [
+      "Kalendarz:",
+      "Optymalizacja: Poprawiono wyświetlanie świąt w Kalendarzu, a także dodano więcej tradycyjnych świąt oraz dni upamiętniających wydarzenia historyczne",
+      "Poprawka: Naprawiono problem, w wyniku którego w niektórych przypadkach daty były wyświetlane nieprawidłowo",
+      "Inne usprawnienia:",
+      "Nowość: Dodano możliwość dotknięcia paska stanu w celu powrotu na górę strony w niektórych aplikacjach i scenariuszach",
+      "Optymalizacja: Wizualna informacja zwrotna podczas dostosowywania jasności ekranu za pomocą klawiatury",
+      "Optymalizacja: Mi Mover obsługuje teraz przesyłanie większej ilości danych, w tym niektórych ustawień oraz danych użytkownika pochodzących z aplikacji systemowych",
+      "Optymalizacja: Siatka Ekranu głównego zyskała nowy układ z bardziej zrównoważonymi marginesami i optymalnym rozmieszczeniem elementów",
+      "Optymalizacja: Poprawiono animacje wyszukiwania w Galerii, zapewniając płynniejsze przejścia",
+      "Poprawka: Naprawiono problem, w wyniku którego skompresowane pliki systemu macOS w niektórych przypadkach nie były poprawnie wyświetlane w Menedżerze plików",
+      "Poprawka: Naprawiono zacinanie się ładowania wielojęzycznych miniatur zrzutów ekranu w niektórych przypadkach"
+    ],
+    "Prywatność i bezpieczeństwo": [
+      "Nowość: Teraz więcej aplikacji systemowych obsługuje Prywatny dostęp, a w przypadku dodatkowych aplikacji wprowadzane są ciągłe ulepszenia zgodności",
+      "Optymalizacja: Zaktualizowano układ strony „Odciski palców, dane twarzy i blokada ekranu” dla łatwiejszej i szybszej konfiguracji"
+    ],
+    "Łączność": [
+      "Nowość: Tablety Xiaomi obsługują teraz słuchawki AirPods, w tym wyskakujące okienka parowania, stan baterii, dźwięk przestrzenny, przełączanie redukcji hałasów oraz funkcję „Znajdź”"
+    ]
+  },
+  "logs_fr": {
+    "Xiaomi HyperIsland": [
+      "Nouveau : Consultez toutes les informations importantes en un coup d^œil avec Xiaomi HyperIsland",
+      "Nouveau : Vous pouvez désormais tirer vers le bas pour développer de petites fenêtres et gérer plusieurs tâches plus efficacement"
+    ],
+    "Optimisation complète des applications système": [
+      "Agenda :",
+      "Optimisation : Affichage des jours fériés dans Agenda, avec davantage de fêtes traditionnelles et de jours commémoratifs historiques",
+      "Correction : Un problème d^affichage incorrect des dates dans certains cas",
+      "Autres améliorations :",
+      "Nouveau : Dans certaines applications et certains cas de figure, il est désormais possible d^appuyer sur la barre d^état pour revenir en haut de la page",
+      "Optimisation : retour visuel lors du réglage de la luminosité de l’écran à l’aide du clavier",
+      "Optimisation : Mi Mover prend désormais en charge le transfert de davantage de données, notamment certains paramètres et données utilisateur des applications système",
+      "Optimisation : La grille de l^écran d^accueil a été repensée avec des marges plus équilibrées et un espacement plus confortable",
+      "Optimisation : Animations de recherche dans la galerie pour des transitions plus fluides",
+      "Correction : Un problème d^affichage incorrect des fichiers compressés macOS dans le Gestionnaire de fichiers dans certains cas",
+      "Correction : saccades lors du chargement des vignettes de captures d^écran multilingues dans certains cas"
+    ],
+    "Confidentialité et sécurité": [
+      "Nouveau : Davantage d^applications système prennent désormais en charge l^accès privé, et la compatibilité est en cours d^amélioration pour d^autres applications",
+      "Optimisation : Mise à jour de la mise en page de la page ^Empreintes digitales, données faciales et verrouillage de l’écran^ pour une configuration plus simple et plus rapide"
+    ],
+    "Interconnectivité": [
+      "Nouveau : Les tablettes Xiaomi sont désormais compatibles avec les AirPods, et notamment avec l^appairage rapide, l^affichage de l^état de la batterie, l^audio spatial, Annulation du bruit et Localiser mon"
+    ]
+  },
+  "logs_it": {
+    "Xiaomi HyperIsland": [
+      "Novità: tutte le informazioni importanti a colpo d^occhio con Xiaomi HyperIsland",
+      "Novità: ora puoi scorrere verso il basso per espandere le finestre piccole e gestire più attività in modo più efficiente"
+    ],
+    "Ottimizzazione completa delle app di sistema": [
+      "Calendario:",
+      "Ottimizzazione: visualizzazione delle festività nel Calendario, con l^aggiunta di festività tradizionali e ricorrenze storiche",
+      "Correzione: un problema per cui, in alcuni casi, le date venivano visualizzate in modo errato",
+      "Altri miglioramenti:",
+      "Novità: opzione per toccare la barra di stato e tornare all’inizio della pagina in alcune app e scenari",
+      "Ottimizzazione: feedback visivo durante la regolazione della luminosità dello schermo tramite tastiera",
+      "Ottimizzazione: Mi Mover ora consente di trasferire una maggiore quantità di dati, comprese alcune impostazioni e i dati utente delle app di sistema",
+      "Ottimizzazione: la griglia della schermata Home è stata ridisegnata con margini più equilibrati e una spaziatura più confortevole",
+      "Ottimizzazione: animazioni di ricerca nella galleria per transizioni più fluide",
+      "Correzione: un problema per cui, in alcuni casi, i file compressi di macOS non venivano visualizzati correttamente in Gestore File",
+      "Correzione: rallentamenti durante il caricamento delle miniature degli screenshot multilingue in alcuni casi"
+    ],
+    "Privacy e sicurezza": [
+      "Novità: più app di sistema ora supportano l^Accesso privato, con continui miglioramenti alla compatibilità per altre app",
+      "Ottimizzazione: aggiornamento della disposizione della pagina “Impronte digitali, dati del volto e blocco schermo” per una configurazione più semplice e veloce"
+    ],
+    "Interconnettività": [
+      "Novità: i tablet Xiaomi ora supportano gli AirPods, con funzionalità come pop-up di associazione rapida, stato della batteria, audio spaziale, attivazione della cancellazione del rumore e Dov^è"
+    ]
+  },
+  "logs_es": {
+    "Xiaomi HyperIsland": [
+      "Nuevo: Consulta toda la información importante de un vistazo con Xiaomi HyperIsland",
+      "Nuevo: Ahora puedes deslizar hacia abajo para expandir ventanas pequeñas y manejar múltiples tareas de manera más eficiente"
+    ],
+    "Optimización integral de las aplicaciones del sistema": [
+      "Calendario:",
+      "Optimización: Visualización de días festivos en el Calendario, con festivales más tradicionales y días conmemorativos históricos",
+      "Corrección: Un problema en el que las fechas se mostraban incorrectamente en algunos casos",
+      "Otras mejoras:",
+      "Nuevo: La opción de tocar la barra de estado para volver a la parte superior de la página en algunas aplicaciones y escenarios.",
+      "Optimización: Respuesta visual al ajustar el brillo de la pantalla con el teclado",
+      "Optimización: Mi Mover ahora admite la transferencia de más datos, incluidas algunas configuraciones y datos de usuario desde las aplicaciones del sistema",
+      "Optimización: La cuadrícula de la Pantalla de inicio se ha rediseñado con márgenes más equilibrados y un espaciado más cómodo",
+      "Optimización: Animaciones de búsqueda en la Galería para transiciones más suaves",
+      "Solución: Un problema en el que los archivos comprimidos de macOS no se mostraban correctamente en el Gestor de archivos en algunos casos",
+      "Corrección: Cortes al cargar miniaturas de capturas de pantalla multilingües en algunos casos"
+    ],
+    "Privacidad y seguridad": [
+      "Nuevo: Más aplicaciones del sistema ahora admiten el acceso privado, con mejoras de compatibilidad continuas para aplicaciones adicionales",
+      "Optimización: Se actualizó el diseño de la página ^Huellas dactilares, datos faciales y bloqueo de pantalla^ para una configuración más fácil y rápida."
+    ],
+    "Interconectividad": [
+      "Novedad: Las tablets Xiaomi ahora son compatibles con AirPods, incluidas ventanas emergentes de emparejamiento rápido, estado de la batería, audio espacial, cambio de cancelación de ruido y Buscar."
+    ]
+  },
+  "logs_pt": {
+    "Xiaomi HyperIsland": [
+      "Novidade: Veja todas as informações importantes de uma só vez com o Xiaomi HyperIsland",
+      "Novo: Agora você pode puxar para baixo para expandir pequenas janelas e lidar com várias tarefas com mais eficiência"
+    ],
+    "Otimização compreensiva de apps do sistema": [
+      "Agenda:",
+      "Otimização: Exibição de feriados no Calendário, incluindo mais festivais tradicionais e datas comemorativas históricas",
+      "Correção: Um problema em que as datas eram exibidas incorretamente em alguns casos",
+      "Outras melhorias:",
+      "Novidade: a opção de tocar na barra de status para voltar ao topo da página em alguns aplicativos e situações",
+      "Otimização: Feedback visual ao ajustar o brilho da tela com o teclado",
+      "Otimização: O Mi Mover agora permite transferir mais dados, incluindo algumas configurações e dados do usuário de aplicativos do sistema",
+      "Otimização: a grade da Tela inicial foi redesenhada com margens mais equilibradas e um espaçamento mais confortável",
+      "Otimização: animações de pesquisa na galeria para transições mais suaves",
+      "Correção: Um problema em que, em alguns casos, os arquivos compactados do macOS não eram exibidos corretamente no Gerenciador de Arquivos",
+      "Correção: lentidão ao carregar miniaturas de capturas de tela multilíngues em alguns casos"
+    ],
+    "Privacidade e segurança": [
+      "Novidade: agora, mais aplicativos do sistema oferecem suporte ao acesso privado, com melhorias contínuas de compatibilidade para outros aplicativos",
+      "Otimização: Atualizamos o layout da página “Impressões digitais, dados faciais e bloqueio de tela” para facilitar e agilizar a configuração"
+    ],
+    "Interconectividade": [
+      "Novidade: os tablets da Xiaomi agora são compatíveis com os AirPods, incluindo janelas pop-up de emparelhamento rápido, status da bateria, Áudio Espacial, ativação do cancelamento de ruído e o recurso “Encontrar Meu”"
+    ]
+  },
+  "logs_tr": {
+    "Xiaomi HyperIsland": [
+      "Yeni: Tüm önemli bilgileri Xiaomi HyperIsland ile tek bakışta görüntüleyin",
+      "Yeni: Artık aşağı doğru çekerek küçük pencereleri genişletebilir ve birden fazla görevi verimli bir şekilde halledebilirsiniz"
+    ],
+    "Kapsamlı sistem uygulaması optimizasyonu": [
+      "Takvim:",
+      "Optimizasyon: Daha geleneksel festivaller ve tarihi anma günleri ile Takvim^de tatil günleri gösterimi",
+      "Düzeltme: Bazı durumlarda tarihlerin yanlış görüntülenmesiyle ilgili bir sorun",
+      "Diğer geliştirmeler:",
+      "Yeni: Bazı uygulamalarda ve senaryolarda sayfanın başına dönmek için durum çubuğuna dokunma seçeneği",
+      "Optimizasyon: Klavye ile ekran parlaklığını ayarlarken görsel geri bildirim",
+      "Optimizasyon: Mi Taşıyıcı artık daha fazla veri aktarımını destekliyor, sistem uygulamalarından gelen bazı ayarlar ve kullanıcı verileri dahil",
+      "Optimizasyon: Ana ekran ızgarası daha dengeli kenar boşlukları ve daha rahat aralıklarla yeniden tasarlandı",
+      "Optimizasyon: Daha akıcı geçişler için Galeri arama animasyonları",
+      "Düzeltme: Bazı durumlarda macOS^ta sıkıştırılmış dosyaların Dosya Yöneticisi^nde düzgün görüntülenmemesi sorunu",
+      "Düzeltme: Bazı durumlarda çok dilli ekran görüntüsü küçük resimleri yüklenirken takılmalar yaşanıyor"
+    ],
+    "Gizlilik ve güvenlik": [
+      "Yeni: Artık daha fazla sistem uygulaması Özel erişim^i destekliyor, ek uygulamalar için uyumluluk iyileştirmeleri devam ediyor",
+      "Optimizasyon: Daha kolay ve daha hızlı kurulum için ^^Parmak izi, yüz verisi ve ekran kilidi^^ sayfa düzeni güncellendi"
+    ],
+    "Ara bağlantı": [
+      "Yeni: Xiaomi tabletler artık AirPods^ları destekliyor, hızlı eşleşme açılır pencereleri, pil durumu, Mekânsal ses, Gürültü engelleme değiştirme ve Bu özelliği dahil"
+    ]
+  },
+  "logs_id": {
+    "Xiaomi HyperIsland": [
+      "Baru: Lihat semua informasi penting dengan mudah dengan Xiaomi HyperIsland",
+      "Baru: Sekarang Anda dapat menarik ke bawah untuk memperluas jendela kecil dan menangani beragam tugas secara lebih efisien"
+    ],
+    "Optimalisasi apl sistem yang komprehensif": [
+      "Kalender:",
+      "Optimalisasi: Tampilan hari libur di Kalender, dengan lebih banyak festival tradisional dan hari peringatan bersejarah",
+      "Perbaikan: Masalah di mana tanggal ditampilkan secara tidak benar dalam beberapa kasus",
+      "Peningkatan lainnya:",
+      "Baru: Opsi untuk mengetuk bilah status untuk kembali ke bagian atas halaman di beberapa aplikasi dan skenario",
+      "Optimalisasi: Umpan balik visual saat Anda menyesuaikan kecerahan layar dengan keyboard",
+      "Optimalisasi: Mi Mover kini mendukung transfer lebih banyak data, termasuk beberapa pengaturan dan data pengguna dari aplikasi sistem",
+      "Optimalisasi: Kisi Layar utama didesain ulang dengan margin yang lebih seimbang dan jarak yang lebih nyaman",
+      "Optimalisasi: Animasi pencarian di galeri untuk transisi yang lebih halus",
+      "Perbaikan: Masalah di mana berkas terkompresi macOS tidak ditampilkan dengan benar di File Manager dalam beberapa kasus",
+      "Perbaikan: Terjadi jeda saat memuat gambar mini screenshot multibahasa di beberapa kasus"
+    ],
+    "Privasi dan keamanan": [
+      "Baru: Lebih banyak aplikasi sistem kini mendukung akses Pribadi, dengan peningkatan kompatibilitas berkelanjutan untuk aplikasi tambahan",
+      "Optimalisasi: Tata letak halaman ^Sidik jari, data wajah, dan kunci layar^ diperbarui untuk pengaturan yang lebih mudah dan cepat"
+    ],
+    "Interkonektivitas": [
+      "Baru: Tablet Xiaomi kini mendukung AirPods, termasuk pop-up pemasangan cepat, status baterai, Audio Spasial, peralihan peredam bising, dan aplikasi Lacak"
+    ]
+  },
+  "logs_vi": {
+    "Xiaomi HyperIsland": [
+      "Mới: Xem tất cả thông tin quan trọng chỉ trong nháy mắt với Xiaomi HyperIsland",
+      "Mới: Bạn hiện có thể kéo xuống để mở rộng các cửa sổ nhỏ và xử lý nhiều tác vụ hiệu quả hơn"
+    ],
+    "Tối ưu toàn diện các ứng dụng hệ thống": [
+      "Lịch:",
+      "Tối ưu: Hiển thị ngày lễ trong Lịch, với nhiều lễ hội truyền thống và ngày kỷ niệm lịch sử hơn",
+      "Sửa: Vấn đề hiển thị ngày tháng không chính xác trong một số trường hợp",
+      "Cải thiện khác:",
+      "Mới: Tùy chọn chạm vào thanh trạng thái để quay lại đầu trang trong một số ứng dụng và tình huống",
+      "Tối ưu: Phản hồi trực quan khi bạn điều chỉnh độ sáng màn hình bằng bàn phím",
+      "Tối ưu: Mi Mover hiện hỗ trợ chuyển nhiều dữ liệu hơn, bao gồm một số cài đặt và dữ liệu người dùng từ các ứng dụng hệ thống",
+      "Tối ưu: Lưới Màn hình chính được thiết kế lại với khung cân bằng hơn và khoảng cách thoải mái hơn",
+      "Tối ưu: Hoạt ảnh tìm kiếm trong thư viện ảnh giúp chuyển đổi mượt mà hơn",
+      "Sửa: Vấn đề khiến các tập tin nén trên macOS không hiển thị đúng cách trong Quản lý Tập tin trong một số trường hợp",
+      "Sửa: Giật vấp khi tải ảnh thu nhỏ màn hình đa ngôn ngữ trong một số trường hợp"
+    ],
+    "Bảo mật và quyền riêng tư": [
+      "Mới: Nhiều ứng dụng hệ thống hơn hiện hỗ trợ Truy cập riêng tư, đồng thời tiếp tục cải thiện khả năng tương thích cho các ứng dụng khác",
+      "Tối ưu: Đã cập nhật bố cục trang ^Vân tay, dữ liệu khuôn mặt và khóa màn hình^ để thiết lập dễ dàng và nhanh chóng hơn"
+    ],
+    "Liên thông": [
+      "Mới: Máy tính bảng Xiaomi hiện hỗ trợ AirPods, bao gồm cửa sổ nổi ghép nối nhanh, trạng thái pin, Âm thanh Không gian, chuyển đổi chống ồn và Tìm"
+    ]
+  },
+  "logs_th": {
+    "Xiaomi HyperIsland": [
+      "ใหม่: ดูข้อมูลสำคัญทั้งหมดได้ในพริบตาเดียวด้วย Xiaomi HyperIsland",
+      "ใหม่: ตอนนี้คุณสามารถดึงลงเพื่อขยายหน้าต่างขนาดเล็กและจัดการงานหลายอย่างได้อย่างมีประสิทธิภาพยิ่งขึ้น"
+    ],
+    "การเพิ่มประสิทธิภาพแอประบบอย่างครอบคลุม": [
+      "ปฏิทิน:",
+      "การเพิ่มประสิทธิภาพ: แสดงวันหยุดในปฏิทิน โดยเน้นเทศกาลดั้งเดิมและวันสำคัญทางประวัติศาสตร์มากขึ้น",
+      "แก้ไข: แก้ไขปัญหาที่แสดงวันที่ไม่ถูกต้องในบางกรณี",
+      "การปรับปรุงอื่นๆ:",
+      "ใหม่: เพิ่มตัวเลือกแตะแถบสถานะเพื่อกลับไปยังด้านบนของหน้าในบางแอปและบางสถานการณ์",
+      "การเพิ่มประสิทธิภาพ: แสดงผลตอบรับทางภาพเมื่อคุณปรับความสว่างหน้าจอด้วยแป้นพิมพ์",
+      "การเพิ่มประสิทธิภาพ: Mi Mover รองรับการถ่ายโอนข้อมูลได้มากขึ้น รวมถึงการตั้งค่าและข้อมูลผู้ใช้บางส่วนจากแอปพลิเคชันระบบ",
+      "การเพิ่มประสิทธิภาพ: ตารางบนหน้าจอหลักได้รับการออกแบบใหม่ โดยมีระยะขอบที่สมดุลมากขึ้นและระยะห่างที่สบายตากว่าเดิม",
+      "การเพิ่มประสิทธิภาพ: ภาพเคลื่อนไหวการค้นหาในคลังภาพเพื่อการเปลี่ยนภาพที่ราบรื่นยิ่งขึ้น",
+      "แก้ไข: ปัญหาที่ไฟล์บีบอัดของ macOS แสดงผลไม่ถูกต้องใน ตัวจัดการไฟล์ ในบางกรณี",
+      "แก้ไข: อาการกระตุกขณะโหลดภาพขนาดย่อของภาพหน้าจอหลายภาษาในบางกรณี"
+    ],
+    "ความเป็นส่วนตัวและความปลอดภัย": [
+      "ใหม่: แอประบบจำนวนมากรองรับการเข้าถึงแบบส่วนตัวแล้ว และจะมีการปรับปรุงความเข้ากันได้อย่างต่อเนื่องสำหรับแอปพลิเคชันเพิ่มเติม",
+      "การเพิ่มประสิทธิภาพ: ปรับปรุงเค้าโครงหน้า ^ลายนิ้วมือ ข้อมูลใบหน้า และการล็อกหน้าจอ^ เพื่อให้ตั้งค่าได้ง่ายและรวดเร็วยิ่งขึ้น"
+    ],
+    "การเชื่อมต่อระหว่างกัน": [
+      "ใหม่: แท็บเล็ต Xiaomi รองรับ AirPods แล้ว รวมถึงฟีเจอร์ต่างๆ เช่น การจับคู่ด่วน, สถานะแบตเตอรี่, ระบบเสียง Spatial Audio, การสลับโหมดตัดเสียงรบกวน และ Find My"
+    ]
+  },
+  "logs_ar": {
+    "Xiaomi HyperIsland": [
+      "جديد: عرض جميع المعلومات المهمة بنظرة واحدة مع Xiaomi HyperIsland",
+      "جديد: يمكنك الآن السحب للأسفل لتوسيع النوافذ الصغيرة وإنجاز المهام المتعددة بكفاءة أكبر"
+    ],
+    "التحسين الشامل لتطبيقات النظام": [
+      "التقويم:",
+      "تحسين: عرض العطلات في التقويم مع إضافة مزيد من المناسبات التقليدية والتاريخية",
+      "إصلاح: مشكلة عرض التواريخ بشكل غير صحيح في بعض الحالات",
+      "تحسينات أخرى:",
+      "جديد: خيار النقر على شريط الحالة للعودة إلى أعلى الصفحة في بعض التطبيقات والسيناريوهات",
+      "تحسين: الاستجابة المرئية عند ضبط سطوع الشاشة باستخدام لوحة المفاتيح",
+      "تحسين: يدعم ناقل Mi الآن نقل المزيد من البيانات، بما في ذلك بعض الإعدادات وبيانات المستخدم من تطبيقات النظام",
+      "تحسين: إعادة تصميم شبكة الشاشة الرئيسية بهوامش أكثر توازنًا ومسافات مريحة",
+      "تحسين: رسوم البحث في المعرض لانتقالات أكثر سلاسة",
+      "إصلاح: مشكلة عرض ملفات macOS المضغوطة في مدير الملفات في بعض الحالات",
+      "إصلاح: التقطع عند تحميل صور معاينة لقطات الشاشة متعددة اللغات في بعض الحالات"
+    ],
+    "الخصوصية والأمان": [
+      "جديد: المزيد من تطبيقات النظام تدعم الآن الوصول الخاص، مع تحسينات مستمرة للتوافق مع تطبيقات إضافية",
+      "تحسين: تحديث تصميم صفحة ^بصمات الأصابع وبيانات الوجه وقفل الشاشة^ لتسهيل وتسريع الإعداد"
+    ],
+    "الربط بين الأجهزة": [
+      "جديد: تدعم أجهزة Xiaomi اللوحية الآن AirPods، بما في ذلك نافذة الاقتران السريع، عرض مستوى البطارية، الصوت المكاني، التبديل بين أوضاع إلغاء الضجيج، وميزة تحديد الموقع"
+    ]
   }
 }

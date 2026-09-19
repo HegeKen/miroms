@@ -58,5 +58,425 @@
       "New: More system apps now support Private access, with ongoing compatibility improvements for additional apps",
       "Optimization: Updated ^Fingerprints, face data, and screen lock^ page layout for easier, faster setup"
     ]
+  },
+  "logs_zh_tw": {
+    "系統應用程式全面最佳化": [
+      "相機：",
+      "新增 相機設定中的專業影片功能介紹頁可一鍵下載「Mi-LOG to Rec.709」色彩還原 LUT 檔案",
+      "最佳化 專業模式參數預設功能體驗，增加預設管理頁，支援批次匯入和匯出預設參數",
+      "錄音機：",
+      "修復 長時間錄音場景下偶現錄製失敗的問題",
+      "修復 部分場景下出現相同錄音記錄的問題",
+      "日曆：",
+      "最佳化 日曆節日顯示，增加更多傳統節日、歷史紀念日",
+      "修復 部分場景下日期顯示異常的問題",
+      "更多易用性最佳化：",
+      "新增 「長輩關懷」頁面，整合字體與圖示大小調整、鈴聲音量調整以及詐騙電話攔截等用機設定項",
+      "新增 部分場景下點選狀態列回到頁面頂端功能",
+      "最佳化 「小米換機」支援轉移更多資料，包括部分設定項資料與系統應用程式的用戶資料",
+      "最佳化 相簿搜尋動效，過渡更自然",
+      "修復 部分場景下「檔案管理」中 macOS 壓縮檔案無法正常顯示的問題",
+      "修復 部分截圖場景下多語言縮略圖顯示卡頓的問題"
+    ],
+    "裝置互聯": [
+      "新增 貼近小米手機或 iPhone 的 NFC 區域，即可快速分享錄音、筆記",
+      "新增 小米手機相容 AirPods，支援快連彈窗、查看電量、使用空間音訊、切換降噪模式及尋找功能",
+      "新增 iPhone 接收的簡訊驗證碼同步到小米手機後，支援智慧辨識與一鍵複製",
+      "最佳化 在 iPhone 鏡像開啟小米手機應用程式時，支援同步使用小米手機設定的輸入法"
+    ],
+    "安全隱私": [
+      "新增 部分系統應用程式適配安全存取控制項，更多應用程式適配持續進行中",
+      "最佳化 指紋、臉部與密碼頁面樣式，設定更方便"
+    ]
+  },
+  "logs_ja": {
+    "システムアプリの総合的最適化": [
+      "カメラ:",
+      "新機能：カメラ設定のプロビデオ紹介ページから、「Mi-LOG to Rec.709」カラー変換LUTファイルをワンタップでダウンロード可能",
+      "最適化：プロモード向けに、プリセット管理ページを追加し、プリセットパラメータの一括インポート／エクスポート機能をサポート",
+      "レコーダー：",
+      "修正：長時間録画中に時折発生する録画エラー",
+      "修正：特定の状況下で記録項目が重複する問題",
+      "カレンダー:",
+      "最適化：カレンダーの祝日表示に、より多くの伝統的な祝日や歴史的な記念日を追加",
+      "修正：場合によっては日付が正しく表示されない問題",
+      "その他の改善点:",
+      "新機能：明瞭モードでは、文字やアイコンのサイズ、着信音の音量、詐欺電話のブロック機能、その他の電話設定を一元管理できます",
+      "新機能：一部のアプリや状況において、ステータスバーをタップするとページの上部に戻れるようになりました",
+      "最適化：Mi Mover は、システムアプリの設定やユーザーデータなど、より多くのデータの転送に対応するようになりました",
+      "最適化：ギャラリー検索のアニメーションを滑らかに改善",
+      "修正：macOSの圧縮ファイルが、ファイルマネージャーで正しく表示されない場合があった問題",
+      "修正：特定の状況下で多言語スクリーンショットのサムネイルを読み込む際に発生するカクつき"
+    ],
+    "プライバシーとセキュリティ": [
+      "新機能：より多くのシステムアプリでプライベートアクセスに対応するようになりました。また、その他のアプリについても互換性の改善を継続して行っています",
+      "最適化：「指紋、顔データ、画面ロック」ページのレイアウトをアップデートし、設定がより簡単かつ迅速に行えるようになりました"
+    ],
+    "相互接続性": [
+      "新機能：Xiaomi スマートフォンまたはiPhoneのNFCエリアをタップして、録音データやメモをすばやく共有できます",
+      "新機能：Xiaomi のスマートフォンが AirPods に対応しました。クイックペアリングのポップアップ表示、バッテリーステータス、空間オーディオ、ノイズキャンセリングの切り替え、およびデバイスを探す機能などが利用可能です。",
+      "新機能：iPhoneで受信したSMS認証コードが Xiaomi スマートフォンに同期されると、ワンタップでそのコードを検出してコピーできるようになります",
+      "最適化：iPhoneでスクリーンミラーリングを使用中に Xiaomi スマートフォンのアプリを開くと、Xiaomi スマートフォンで設定されている入力方式を同時に使用できます"
+    ]
+  },
+  "logs_ko": {
+    "포괄적인 시스템 앱 최적화": [
+      "카메라:",
+      "새로운 기능: 카메라 설정의 Pro 동영상 소개 페이지에서 ^Mi-LOG to Rec.709^ 색상 변환 LUT 파일을 한 번의 탭으로 다운로드할 수 있습니다.",
+      "최적화: Pro 모드에서 프리셋 관리 페이지와 프리셋 매개변수의 일괄 가져오기/내보내기 기능을 추가했습니다.",
+      "녹음기:",
+      "수정: 장시간 녹화 중 간헐적으로 발생하는 녹화 오류 수정",
+      "수정: 일부 경우에 중복되는 기록 항목 문제를 해결했습니다.",
+      "캘린더:",
+      "최적화: 캘린더에 휴일 표시 방식을 개선하여, 더 많은 전통 축제와 역사적인 기념일을 포함시켰습니다.",
+      "수정: 일부 경우에 날짜가 잘못 표시되는 문제를 해결했습니다.",
+      "기타 개선 사항:",
+      "신규 기능: 선명도 모드에서는 텍스트 및 아이콘 크기, 벨소리 볼륨, 스팸 전화 차단 및 기타 전화 설정을 한곳에 모아 볼 수 있습니다.",
+      "신규 기능: 일부 앱 및 상황에서 상태 표시줄을 탭하여 페이지 맨 위로 돌아갈 수 있는 옵션이 추가되었습니다.",
+      "최적화: Mi Mover가 시스템 앱의 설정 및 사용자 데이터를 포함하여 더 많은 데이터를 전송할 수 있도록 지원합니다.",
+      "최적화: 갤러리 검색 애니메이션을 더욱 부드럽게 개선했습니다.",
+      "수정: macOS에서 압축 파일이 파일탐색기에서 제대로 표시되지 않는 문제를 해결했습니다.",
+      "수정: 일부 경우 다국어 스크린샷 미리보기 이미지를 로드할 때 발생하던 끊김 현상을 해결했습니다."
+    ],
+    "개인정보 보호 및 보안": [
+      "신규 기능: 이제 더 많은 시스템 앱에서 프라이빗 액세스를 지원하며, 추가적인 앱과의 호환성 개선이 지속적으로 진행될 예정입니다.",
+      "최적화: 더 쉽고 빠른 설정을 위해 ^지문, 안면 인식 데이터 및 화면 잠금^ 페이지 레이아웃을 업데이트했습니다."
+    ],
+    "상호 연결성": [
+      "신규 기능: Xiaomi 휴대전화 또는 iPhone의 NFC 영역을 터치하여 녹음 파일과 메모를 빠르게 공유할 수 있습니다.",
+      "신규 기능: Xiaomi 휴대전화에서 AirPods을 지원하며, 빠른 페어링 팝업, 배터리 상태 표시, 공간 오디오, 노이즈 캔슬링 전환 및 Find My 기능을 사용할 수 있습니다.",
+      "신규 기능: iPhone으로 수신한 SMS 인증 코드가 Xiaomi 휴대전화와 동기화되면, 한 번의 탭으로 코드를 감지하고 복사할 수 있습니다.",
+      "최적화: iPhone에서 화면 미러링을 사용하는 동안 Xiaomi 휴대전화 앱을 열면 Xiaomi 휴대전화에 설정된 입력 방식을 동시에 사용할 수 있습니다."
+    ]
+  },
+  "logs_ru": {
+    "Комплексная оптимизация системных приложений": [
+      "Камера:",
+      "Новое: добавлена возможность загрузки LUT-файла Mi-LOG to Rec.709 в один клик со страницы описания «Видео Pro» в настройках Камеры",
+      "Оптимизация: добавлена страница управления пресетами и поддержка массового импорта/экспорта параметров в Pro-режиме",
+      "Диктофон:",
+      "Исправление: в редких случаях при длительной съемке могла возникать ошибка записи",
+      "Исправление: в некоторых случаях могли появляться дубликаты записей",
+      "Календарь:",
+      "Оптимизация: Календарь — добавлены традиционные праздники и памятные даты",
+      "Исправление: в некоторых случаях даты отображались некорректно",
+      "Прочие улучшения:",
+      "Новое: режим четкости объединяет настройки размера текста и значков, громкости звонка, блокировки мошеннических звонков и другие параметры",
+      "Новое: теперь в некоторых приложениях и сценариях вы можете коснуться строки состояния, чтобы вернуться к началу страницы",
+      "Оптимизация: Mi Mover теперь поддерживает перенос большего объема данных, включая некоторые настройки и пользовательские данные системных приложений",
+      "Оптимизация: анимации поиска в Галерее стали более плавными",
+      "Исправление: в некоторых случаях архивы, созданные в macOS, отображались некорректно в Проводнике",
+      "Исправление: в некоторых случаях возникали задержки при загрузке миниатюр многоязычных скриншотов"
+    ],
+    "Конфиденциальность и безопасность": [
+      "Новое: еще больше системных приложений теперь поддерживают «Приватный доступ», расширение совместимости продолжается",
+      "Оптимизация: обновлена компоновка элементов в разделе «Отпечатки пальцев, данные лица и блокировка экрана» для более быстрой и удобной настройки"
+    ],
+    "Взаимосвязанность": [
+      "Новое: коснитесь области NFC на смартфоне Xiaomi или iPhone, чтобы быстро делиться записями и заметками",
+      "Новое: смартфоны Xiaomi теперь поддерживают AirPods, включая быстрое подключение через всплывающее окно, отображение заряда, режим Spatial Audio, переключение шумоподавления и «Локатор»",
+      "Новое: после синхронизации SMS-кодов подтверждения с iPhone на смартфон Xiaomi их можно распознавать и копировать в одно касание",
+      "Оптимизация: при открытии приложений со смартфона Xiaomi на iPhone через функцию «Повтор экрана» можно использовать клавиатуру смартфона Xiaomi"
+    ]
+  },
+  "logs_uk": {
+    "Комплексна оптимізація системних програм": [
+      "Камера:",
+      "Нове: завантаження файлу LUT для конвертації кольору ^Mi-LOG у Rec.709^ в один дотик із початкової сторінки Pro-відео у налаштуваннях камери",
+      "Оптимізація: додано сторінку керування пресетами та підтримку масового імпорту й експорту параметрів пресетів для Ручного режиму",
+      "Диктофон:",
+      "Виправлення: інколи виникала помилка запису під час тривалих записів",
+      "Виправлення: у деяких випадках з’являлися дублікати записів",
+      "Календар:",
+      "Оптимізація: відображення свят у календарі з додаванням більшої кількості традиційних фестивалів та історичних пам’ятних дат",
+      "Виправлення: у деяких випадках дати відображалися некоректно",
+      "Інші покращення:",
+      "Нове: Режим чіткості об’єднує налаштування розміру тексту та іконок, гучності дзвінків, блокування шахрайських викликів та інші параметри телефона",
+      "Нове: опція натиснення на рядок стану, щоб повернутися у верхню частину сторінки в деяких додатках програмах і сценаріях",
+      "Оптимізація: Mi Mover тепер підтримує перенесення більшої кількості даних, включно з деякими налаштуваннями та даними користувача системних програм",
+      "Оптимізація: анімації пошуку в Галереї для плавніших переходів",
+      "Виправлення: у деяких випадках стиснуті файли macOS некоректно відображалися у Провіднику",
+      "Виправлення: у деяких випадках виникали затримки під час завантаження мініатюр знімків екрана з різними мовами"
+    ],
+    "Конфіденційність та безпека": [
+      "Нове: більше системних програм тепер підтримують Конфіденційний доступ, а для додаткових програм постійно покращується їх сумісність із системою",
+      "Оптимізація: оновлено макет сторінки ^Відбитки пальців, дані про обличчя та екран блокування^ для спрощення та прискорення налаштування."
+    ],
+    "Взаємопов'язаність": [
+      "Нове: торкніться області NFC на телефоні Xiaomi або iPhone, щоб швидко ділитися записами та нотатками.",
+      "Нове: телефони Xiaomi тепер підтримують AirPods, включно зі швидким підключенням через спливаюче вікно, відображенням рівня заряду, Персоналізованим просторовим аудіо, перемиканням шумопоглинання та функцією ^Локатор^",
+      "Нове: після того, як коди підтвердження SMS, отримані на iPhone, будуть синхронізовані з вашим телефоном Xiaomi, їх можна буде відкрити та скопіювати одним натисненням",
+      "Оптимізація: коли ви відкриваєте програми для телефону Xiaomi в режимі ^Повтор екрана^ на iPhone, ви можете одночасно використовувати метод введення, встановлений на вашому телефоні Xiaomi"
+    ]
+  },
+  "logs_pl": {
+    "Kompleksowa optymalizacja aplikacji systemowych": [
+      "Aparat:",
+      "Nowość: Możliwość pobrania jednym dotknięciem pliku LUT do konwersji kolorów „Mi-LOG do Rec.709” ze strony wstępnej do filmów Pro w ustawieniach aparatu",
+      "Optymalizacja: Dodano stronę zarządzania ustawieniami wstępnymi i obsługę masowego importu/eksportu ustawień wstępnych dla trybu Pro",
+      "Dyktafon:",
+      "Poprawka: Naprawiono sporadycznie występujący błąd nagrywania podczas długich nagrań",
+      "Poprawka: Naprawiono pojawianie się w niektórych przypadkach duplikatów wpisów w nagraniach",
+      "Kalendarz:",
+      "Optymalizacja: Poprawiono wyświetlanie świąt w Kalendarzu, a także dodano więcej tradycyjnych świąt oraz dni upamiętniających wydarzenia historyczne",
+      "Poprawka: Naprawiono problem, w wyniku którego w niektórych przypadkach daty były wyświetlane nieprawidłowo",
+      "Inne usprawnienia:",
+      "Nowość: Tryb klarowności obejmuje teraz rozmiar tekstu i ikon, głośność dzwonka, blokowanie połączeń od oszustów i inne ustawienia telefonu",
+      "Nowość: Dodano możliwość dotknięcia paska stanu w celu powrotu na górę strony w niektórych aplikacjach i scenariuszach",
+      "Optymalizacja: Mi Mover obsługuje teraz przesyłanie większej ilości danych, w tym niektórych ustawień oraz danych użytkownika pochodzących z aplikacji systemowych",
+      "Optymalizacja: Poprawiono animacje wyszukiwania w Galerii, zapewniając płynniejsze przejścia",
+      "Poprawka: Naprawiono problem, w wyniku którego skompresowane pliki systemu macOS w niektórych przypadkach nie były poprawnie wyświetlane w Menedżerze plików",
+      "Poprawka: Naprawiono zacinanie się ładowania wielojęzycznych miniatur zrzutów ekranu w niektórych przypadkach"
+    ],
+    "Prywatność i bezpieczeństwo": [
+      "Nowość: Teraz więcej aplikacji systemowych obsługuje Prywatny dostęp, a w przypadku dodatkowych aplikacji wprowadzane są ciągłe ulepszenia zgodności",
+      "Optymalizacja: Zaktualizowano układ strony „Odciski palców, dane twarzy i blokada ekranu” dla łatwiejszej i szybszej konfiguracji"
+    ],
+    "Łączność": [
+      "Nowość: Dotknij obszaru NFC na swoim telefonie Xiaomi lub iPhonie, aby szybko udostępniać nagrania i notatki",
+      "Nowość: Telefony Xiaomi obsługują teraz słuchawki AirPods, w tym wyskakujące okienka parowania, stan baterii, dźwięk przestrzenny, przełączanie redukcji hałasów oraz funkcję „Znajdź”",
+      "Nowość: Po zsynchronizowaniu kodów weryfikacyjnych SMS otrzymanych na iPhone^a z telefonem Xiaomi można je wykryć i skopiować jednym dotknięciem",
+      "Optymalizacja: Otwierając aplikacje z telefonu Xiaomi podczas korzystania z Udostępniania ekranu na iPhonie możesz jednocześnie korzystać z metody wprowadzania ustawionej na telefonie Xiaomi"
+    ]
+  },
+  "logs_fr": {
+    "Optimisation complète des applications système": [
+      "Appareil photo :",
+      "Nouveau : Téléchargement en un clic du fichier LUT de conversion de couleur ^Mi-LOG vers Rec.709^ depuis la page d^introduction vidéo Pro dans les paramètres de l^appareil photo",
+      "Optimisation : Ajout d^une page de gestion des préréglages et prise en charge de l^import/export en masse des paramètres de préréglages pour le mode Pro",
+      "Magnétophone :",
+      "Correction : Erreur d^enregistrement occasionnelle lors des enregistrements longs",
+      "Correction : Entrées d^enregistrement en double dans certains cas",
+      "Agenda :",
+      "Optimisation : Affichage des jours fériés dans Agenda, avec davantage de fêtes traditionnelles et de jours commémoratifs historiques",
+      "Correction : Un problème d^affichage incorrect des dates dans certains cas",
+      "Autres améliorations :",
+      "Nouveau : Le mode Clarté regroupe la taille du texte et des icônes, le volume de la sonnerie, le blocage des appels frauduleux et d^autres paramètres du téléphone",
+      "Nouveau : Dans certaines applications et certains cas de figure, il est désormais possible d^appuyer sur la barre d^état pour revenir en haut de la page",
+      "Optimisation : Mi Mover prend désormais en charge le transfert de davantage de données, notamment certains paramètres et données utilisateur des applications système",
+      "Optimisation : Animations de recherche dans la galerie pour des transitions plus fluides",
+      "Correction : Un problème d^affichage incorrect des fichiers compressés macOS dans le Gestionnaire de fichiers dans certains cas",
+      "Correction : saccades lors du chargement des vignettes de captures d^écran multilingues dans certains cas"
+    ],
+    "Confidentialité et sécurité": [
+      "Nouveau : Davantage d^applications système prennent désormais en charge l^accès privé, et la compatibilité est en cours d^amélioration pour d^autres applications",
+      "Optimisation : Mise à jour de la mise en page de la page ^Empreintes digitales, données faciales et verrouillage de l’écran^ pour une configuration plus simple et plus rapide"
+    ],
+    "Interconnectivité": [
+      "Nouveau : Touchez la zone NFC de votre téléphone Xiaomi ou iPhone pour partager rapidement des enregistrements et des notes",
+      "Nouveau : Les téléphones Xiaomi sont désormais compatibles avec les AirPods, et notamment avec l^appairage rapide, l^affichage de l^état de la batterie, l^audio spatial, Annulation du bruit et Localiser mon",
+      "Nouveau : Une fois les codes de vérification SMS reçus sur iPhone synchronisés avec votre téléphone Xiaomi, ils peuvent être détectés et copiés en un seul clic",
+      "Optimisation : Lorsque vous ouvrez des applications de votre téléphone Xiaomi tout en utilisant le Miroir d^écran sur votre iPhone, vous pouvez utiliser simultanément le mode de saisie défini sur votre téléphone Xiaomi"
+    ]
+  },
+  "logs_it": {
+    "Ottimizzazione completa delle app di sistema": [
+      "Fotocamera:",
+      "Novità: download con un tocco del file LUT di conversione colore ^Mi-LOG to Rec.709^ dalla pagina introduttiva di Video Pro nelle impostazioni della fotocamera",
+      "Ottimizzazione: aggiunta una pagina di gestione dei predefiniti e supporto per l^importazione/esportazione in blocco dei parametri dei predefiniti per la modalità Pro",
+      "Registratore:",
+      "Correzione: errore occasionale durante le registrazioni lunghe",
+      "Correzione: in alcuni casi vengono registrate voci duplicate",
+      "Calendario:",
+      "Ottimizzazione: visualizzazione delle festività nel Calendario, con l^aggiunta di festività tradizionali e ricorrenze storiche",
+      "Correzione: un problema per cui, in alcuni casi, le date venivano visualizzate in modo errato",
+      "Altri miglioramenti:",
+      "Novità: la modalità Chiarezza riunisce le impostazioni relative alle dimensioni del testo e delle icone, al volume della suoneria, al blocco delle chiamate fraudolente e ad altre impostazioni del telefono",
+      "Novità: opzione per toccare la barra di stato e tornare all’inizio della pagina in alcune app e scenari",
+      "Ottimizzazione: Mi Mover ora consente di trasferire una maggiore quantità di dati, comprese alcune impostazioni e i dati utente delle app di sistema",
+      "Ottimizzazione: animazioni di ricerca nella galleria per transizioni più fluide",
+      "Correzione: un problema per cui, in alcuni casi, i file compressi di macOS non venivano visualizzati correttamente in Gestore File",
+      "Correzione: rallentamenti durante il caricamento delle miniature degli screenshot multilingue in alcuni casi"
+    ],
+    "Privacy e sicurezza": [
+      "Novità: più app di sistema ora supportano l^Accesso privato, con continui miglioramenti alla compatibilità per altre app",
+      "Ottimizzazione: aggiornamento della disposizione della pagina “Impronte digitali, dati del volto e blocco schermo” per una configurazione più semplice e veloce"
+    ],
+    "Interconnettività": [
+      "Novità: tocca l^area NFC del tuo telefono Xiaomi o iPhone per condividere rapidamente registrazioni e note",
+      "Novità: gli smartphone Xiaomi ora supportano gli AirPods, con funzionalità come pop-up di associazione rapida, stato della batteria, audio spaziale, attivazione della cancellazione del rumore e Dov^è",
+      "Novità: una volta sincronizzati sul tuo telefono Xiaomi i codici di verifica SMS ricevuti sull^iPhone, potrai individuarli e copiarli con un solo tocco",
+      "Ottimizzazione: quando apri le app del telefono Xiaomi mentre utilizzi la funzione di duplicazione dello schermo sull^iPhone, puoi utilizzare contemporaneamente il metodo di immissione impostato sul tuo telefono Xiaomi"
+    ]
+  },
+  "logs_es": {
+    "Optimización integral de las aplicaciones del sistema": [
+      "Cámara:",
+      "Nuevo: Descarga con un solo toque el archivo LUT de conversión de color ^Mi-LOG a Rec.709^ desde la página de introducción de vídeo Pro en la configuración de la cámara.",
+      "Optimización: Se agregó una página de administración de ajustes preestablecidos y soporte para la importación/exportación masiva de parámetros preestablecidos para el modo Pro",
+      "Grabadora:",
+      "Corrección: Un error de grabación ocasional durante grabaciones largas",
+      "Corrección: Entradas de grabación duplicadas en algunos casos",
+      "Calendario:",
+      "Optimización: Visualización de días festivos en el Calendario, con festivales más tradicionales y días conmemorativos históricos",
+      "Corrección: Un problema en el que las fechas se mostraban incorrectamente en algunos casos",
+      "Otras mejoras:",
+      "Nuevo: El Modo claridad reúne el tamaño del texto y los Iconos, el volumen del tono de llamada, el bloqueo de llamadas fraudulentas y otras configuraciones del teléfono.",
+      "Nuevo: La opción de tocar la barra de estado para volver a la parte superior de la página en algunas aplicaciones y escenarios.",
+      "Optimización: Mi Mover ahora admite la transferencia de más datos, incluidas algunas configuraciones y datos de usuario desde las aplicaciones del sistema",
+      "Optimización: Animaciones de búsqueda en la Galería para transiciones más suaves",
+      "Solución: Un problema en el que los archivos comprimidos de macOS no se mostraban correctamente en el Gestor de archivos en algunos casos",
+      "Corrección: Cortes al cargar miniaturas de capturas de pantalla multilingües en algunos casos"
+    ],
+    "Privacidad y seguridad": [
+      "Nuevo: Más aplicaciones del sistema ahora admiten el acceso privado, con mejoras de compatibilidad continuas para aplicaciones adicionales",
+      "Optimización: Se actualizó el diseño de la página ^Huellas dactilares, datos faciales y bloqueo de pantalla^ para una configuración más fácil y rápida."
+    ],
+    "Interconectividad": [
+      "Nuevo: Toca el área NFC en tu teléfono Xiaomi o iPhone para compartir rápidamente grabaciones y notas",
+      "Novedad: Los teléfonos Xiaomi ahora son compatibles con AirPods, incluidas ventanas emergentes de emparejamiento rápido, estado de la batería, audio espacial, cambio de cancelación de ruido y Buscar.",
+      "Nuevo: Una vez que los códigos de verificación SMS recibidos en el iPhone se sincronizan con tu teléfono Xiaomi, se pueden detectar y copiar con un solo toque",
+      "Optimización: Cuando abres aplicaciones de teléfonos Xiaomi mientras usas Screen Mirroring en iPhone, puedes usar el método de entrada configurado en tu teléfono Xiaomi al mismo tiempo"
+    ]
+  },
+  "logs_pt": {
+    "Otimização compreensiva de apps do sistema": [
+      "Câmera:",
+      "Novidade: Baixe com um único toque o arquivo LUT de conversão de cores “Mi-LOG para Rec.709” na página de introdução do vídeo “Pro” nas configurações da câmera",
+      "Otimização: Adicionada uma página de gerenciamento de predefinições e suporte para importação/exportação em massa de parâmetros de predefinições no modo Pro",
+      "Gravador:",
+      "Correção: Um erro ocasional de gravação durante gravações longas",
+      "Correção: entradas de gravação duplicadas em alguns casos",
+      "Agenda:",
+      "Otimização: Exibição de feriados no Calendário, incluindo mais festivais tradicionais e datas comemorativas históricas",
+      "Correção: Um problema em que as datas eram exibidas incorretamente em alguns casos",
+      "Outras melhorias:",
+      "Novidade: o modo clareza reúne configurações como tamanho do texto e dos ícones, volume do toque, bloqueio de chamadas fraudulentas e outras configurações do telefone",
+      "Novidade: a opção de tocar na barra de status para voltar ao topo da página em alguns aplicativos e situações",
+      "Otimização: O Mi Mover agora permite transferir mais dados, incluindo algumas configurações e dados do usuário de aplicativos do sistema",
+      "Otimização: animações de pesquisa na galeria para transições mais suaves",
+      "Correção: Um problema em que, em alguns casos, os arquivos compactados do macOS não eram exibidos corretamente no Gerenciador de Arquivos",
+      "Correção: lentidão ao carregar miniaturas de capturas de tela multilíngues em alguns casos"
+    ],
+    "Privacidade e segurança": [
+      "Novidade: agora, mais aplicativos do sistema oferecem suporte ao acesso privado, com melhorias contínuas de compatibilidade para outros aplicativos",
+      "Otimização: Atualizamos o layout da página “Impressões digitais, dados faciais e bloqueio de tela” para facilitar e agilizar a configuração"
+    ],
+    "Interconectividade": [
+      "Novidade: Toque na área NFC do seu celular Xiaomi ou iPhone para compartilhar rapidamente gravações e notas",
+      "Novidade: os celulares da Xiaomi agora são compatíveis com os AirPods, incluindo janelas pop-up de emparelhamento rápido, status da bateria, Áudio Espacial, ativação do cancelamento de ruído e o recurso Find My",
+      "Novidade: depois que os códigos de verificação por SMS recebidos no iPhone forem sincronizados com o seu celular Xiaomi, eles poderão ser detectados e copiados com um único toque",
+      "Otimização: Ao abrir aplicativos do celular Xiaomi enquanto usa o Espelhamento de Tela no iPhone, você pode usar o método de entrada definido no seu celular Xiaomi ao mesmo tempo"
+    ]
+  },
+  "logs_tr": {
+    "Kapsamlı sistem uygulaması optimizasyonu": [
+      "Kamera:",
+      "Yeni: Kamera ayarlarındaki Pro video giriş sayfasından ^^Mi-LOG^dan Rec.709^a^^ renk dönüştürme LUT dosyasını tek dokunuşla indirme",
+      "Optimizasyon: Pro modu için ön ayar yönetimi sayfası ve ön ayar parametrelerinin toplu içe/dışa aktarımı desteği eklendi",
+      "Kaydedici:",
+      "Düzeltme: Uzun kayıtlar sırasında ara sıra oluşan kayıt hatası",
+      "Düzeltme: Bazı durumlarda yinelenen kayıt girişleri",
+      "Takvim:",
+      "Optimizasyon: Daha geleneksel festivaller ve tarihi anma günleri ile Takvim^de tatil günleri gösterimi",
+      "Düzeltme: Bazı durumlarda tarihlerin yanlış görüntülenmesiyle ilgili bir sorun",
+      "Diğer geliştirmeler:",
+      "Yeni: Netlik modu, metin ve simge boyutunu, zil sesi seviyesini, dolandırıcılık amaçlı arama engellemeyi ve diğer telefon ayarlarını bir araya getirir",
+      "Yeni: Bazı uygulamalarda ve senaryolarda sayfanın başına dönmek için durum çubuğuna dokunma seçeneği",
+      "Optimizasyon: Mi Taşıyıcı artık daha fazla veri aktarımını destekliyor, sistem uygulamalarından gelen bazı ayarlar ve kullanıcı verileri dahil",
+      "Optimizasyon: Daha akıcı geçişler için Galeri arama animasyonları",
+      "Düzeltme: Bazı durumlarda macOS^ta sıkıştırılmış dosyaların Dosya Yöneticisi^nde düzgün görüntülenmemesi sorunu",
+      "Düzeltme: Bazı durumlarda çok dilli ekran görüntüsü küçük resimleri yüklenirken takılmalar yaşanıyor"
+    ],
+    "Gizlilik ve güvenlik": [
+      "Yeni: Artık daha fazla sistem uygulaması Özel erişim^i destekliyor, ek uygulamalar için uyumluluk iyileştirmeleri devam ediyor",
+      "Optimizasyon: Daha kolay ve daha hızlı kurulum için ^^Parmak izi, yüz verisi ve ekran kilidi^^ sayfa düzeni güncellendi"
+    ],
+    "Ara bağlantı": [
+      "Yeni: Kayıtları ve notları hızlıca paylaşmak için Xiaomi telefonunuzda veya iPhone^unuzda NFC alanına dokunun",
+      "Yeni: Xiaomi telefonlar artık AirPods^ları destekliyor, hızlı eşleşme açılır pencereleri, pil durumu, Mekânsal ses, Gürültü engelleme değiştirme ve Bu özelliği dahil",
+      "Yeni: iPhone^da alınan SMS doğrulama kodları Xiaomi telefonunuzla senkronize edildikten sonra kodlar tek dokunuşla algılanabilir ve kopyalanabilir",
+      "Optimizasyon: iPhone^da Ekran Yansıtma özelliğini kullanıyorken Xiaomi telefon uygulamalarını açtığınızda aynı zamanda Xiaomi telefonunuzda ayarlı olan giriş yöntemini kullanabilirsiniz"
+    ]
+  },
+  "logs_id": {
+    "Optimalisasi apl sistem yang komprehensif": [
+      "Kamera:",
+      "Baru: Pengunduhan sekali klik untuk berkas LUT konversi warna ^Mi-LOG ke Rec.709^ dari halaman pengantar video Pro di setelan Kamera",
+      "Optimalisasi: Menambahkan halaman manajemen preset dan dukungan untuk impor/ekspor massal parameter preset untuk mode Pro",
+      "Perekam:",
+      "Perbaikan: Kesalahan perekaman sesekali selama perekaman panjang",
+      "Perbaikan: Terdapat entri rekaman ganda dalam beberapa kasus",
+      "Kalender:",
+      "Optimalisasi: Tampilan hari libur di Kalender, dengan lebih banyak festival tradisional dan hari peringatan bersejarah",
+      "Perbaikan: Masalah di mana tanggal ditampilkan secara tidak benar dalam beberapa kasus",
+      "Peningkatan lainnya:",
+      "Baru: Mode Kejernihan menggabungkan ukuran teks dan ikon, volume nada dering, pemblokiran panggilan penipuan, dan setelan telepon lainnya",
+      "Baru: Opsi untuk mengetuk bilah status untuk kembali ke bagian atas halaman di beberapa aplikasi dan skenario",
+      "Optimalisasi: Mi Mover kini mendukung transfer lebih banyak data, termasuk beberapa pengaturan dan data pengguna dari aplikasi sistem",
+      "Optimalisasi: Animasi pencarian di galeri untuk transisi yang lebih halus",
+      "Perbaikan: Masalah di mana berkas terkompresi macOS tidak ditampilkan dengan benar di File Manager dalam beberapa kasus",
+      "Perbaikan: Terjadi jeda saat memuat gambar mini screenshot multibahasa di beberapa kasus"
+    ],
+    "Privasi dan keamanan": [
+      "Baru: Lebih banyak aplikasi sistem kini mendukung akses Pribadi, dengan peningkatan kompatibilitas berkelanjutan untuk aplikasi tambahan",
+      "Optimalisasi: Tata letak halaman ^Sidik jari, data wajah, dan kunci layar^ diperbarui untuk pengaturan yang lebih mudah dan cepat"
+    ],
+    "Interkonektivitas": [
+      "Baru: Ketuk area NFC di ponsel Xiaomi atau iPhone Anda untuk berbagi rekaman dan catatan dengan cepat",
+      "Baru: Ponsel Xiaomi kini mendukung AirPods, termasuk pop-up pemasangan cepat, status baterai, Audio Spasial, peralihan peredam bising, dan aplikasi Lacak",
+      "Baru: Setelah kode verifikasi SMS yang diterima di iPhone disinkronkan ke ponsel Xiaomi Anda, kode tersebut dapat dideteksi dan disalin hanya dengan satu ketukan",
+      "Optimalisasi: Saat Anda membuka aplikasi ponsel Xiaomi sambil menggunakan Pencerminan Layar di iPhone, Anda dapat menggunakan metode input yang telah diatur di ponsel Xiaomi Anda secara bersamaan"
+    ]
+  },
+  "logs_vi": {
+    "Tối ưu toàn diện các ứng dụng hệ thống": [
+      "Camera:",
+      "Mới: Tải xuống chỉ với một lần chạm tập tin LUT chuyển đổi màu ^Mi-LOG sang Rec.709^ từ trang giới thiệu video Chuyên nghiệp trong cài đặt Camera",
+      "Tối ưu: Đã thêm trang quản lý thiết lập sẵn và hỗ trợ nhập/xuất hàng loạt các thông số thiết lập sẵn cho chế độ Chuyên nghiệp",
+      "Ghi âm:",
+      "Sửa: Lỗi ghi âm thỉnh thoảng xảy ra trong quá trình ghi âm dài",
+      "Sửa: Trùng lặp dữ liệu ghi âm trong một số trường hợp",
+      "Lịch:",
+      "Tối ưu: Hiển thị ngày lễ trong Lịch, với nhiều lễ hội truyền thống và ngày kỷ niệm lịch sử hơn",
+      "Sửa: Vấn đề hiển thị ngày tháng không chính xác trong một số trường hợp",
+      "Cải thiện khác:",
+      "Mới: Chế độ dễ nhìn kết hợp kích thước văn bản và biểu tượng, âm lượng nhạc chuông, chặn cuộc gọi lừa đảo và các cài đặt điện thoại khác",
+      "Mới: Tùy chọn chạm vào thanh trạng thái để quay lại đầu trang trong một số ứng dụng và tình huống",
+      "Tối ưu: Mi Mover hiện hỗ trợ chuyển nhiều dữ liệu hơn, bao gồm một số cài đặt và dữ liệu người dùng từ các ứng dụng hệ thống",
+      "Tối ưu: Hoạt ảnh tìm kiếm trong thư viện ảnh giúp chuyển đổi mượt mà hơn",
+      "Sửa: Vấn đề khiến các tập tin nén trên macOS không hiển thị đúng cách trong Quản lý Tập tin trong một số trường hợp",
+      "Sửa: Giật vấp khi tải ảnh thu nhỏ màn hình đa ngôn ngữ trong một số trường hợp"
+    ],
+    "Bảo mật và quyền riêng tư": [
+      "Mới: Nhiều ứng dụng hệ thống hơn hiện hỗ trợ Truy cập riêng tư, đồng thời tiếp tục cải thiện khả năng tương thích cho các ứng dụng khác",
+      "Tối ưu: Đã cập nhật bố cục trang ^Vân tay, dữ liệu khuôn mặt và khóa màn hình^ để thiết lập dễ dàng và nhanh chóng hơn"
+    ],
+    "Liên thông": [
+      "Mới: Chạm vào khu vực NFC trên điện thoại Xiaomi hoặc iPhone để nhanh chóng chia sẻ bản ghi và ghi chú",
+      "Mới: Máy tính bảng Xiaomi hiện hỗ trợ AirPods, bao gồm cửa sổ nổi ghép nối nhanh, trạng thái pin, Âm thanh Không gian, chuyển đổi chống ồn và Tìm",
+      "Mới: Sau khi mã xác minh SMS nhận được trên iPhone được đồng bộ với điện thoại Xiaomi, bạn có thể nhận diện và sao chép chỉ bằng một lần chạm",
+      "Tối ưu: Khi bạn mở ứng dụng trên điện thoại Xiaomi trong khi sử dụng Phản chiếu Màn hình trên iPhone, bạn có thể sử dụng phương thức nhập đã được thiết lập trên điện thoại Xiaomi cùng lúc"
+    ]
+  },
+  "logs_ar": {
+    "التحسين الشامل لتطبيقات النظام": [
+      "الكاميرا:",
+      "جديد: تنزيل ملف LUT لاستعادة الألوان ^Mi-LOG إلى Rec.709^ بنقرة واحدة من صفحة الفيديو الاحترافي في إعدادات الكاميرا",
+      "تحسين: إضافة صفحة لإدارة الإعدادات المسبقة ودعم الاستيراد والتصدير الجماعي لإعدادات الوضع الاحترافي",
+      "المسجل:",
+      "إصلاح: خطأ يحدث أحيانًا أثناء التسجيلات الطويلة",
+      "إصلاح: تكرار سجلات التسجيل في بعض الحالات",
+      "التقويم:",
+      "تحسين: عرض العطلات في التقويم مع إضافة مزيد من المناسبات التقليدية والتاريخية",
+      "إصلاح: مشكلة عرض التواريخ بشكل غير صحيح في بعض الحالات",
+      "تحسينات أخرى:",
+      "جديد: وضع الوضوح يجمع بين حجم النص والأيقونات، مستوى صوت النغمة، حظر مكالمات الاحتيال، وإعدادات أخرى",
+      "جديد: خيار النقر على شريط الحالة للعودة إلى أعلى الصفحة في بعض التطبيقات والسيناريوهات",
+      "تحسين: يدعم ناقل Mi الآن نقل المزيد من البيانات، بما في ذلك بعض الإعدادات وبيانات المستخدم من تطبيقات النظام",
+      "تحسين: رسوم البحث في المعرض لانتقالات أكثر سلاسة",
+      "إصلاح: مشكلة عرض ملفات macOS المضغوطة في مدير الملفات في بعض الحالات",
+      "إصلاح: التقطع عند تحميل صور معاينة لقطات الشاشة متعددة اللغات في بعض الحالات"
+    ],
+    "الخصوصية والأمان": [
+      "جديد: المزيد من تطبيقات النظام تدعم الآن الوصول الخاص، مع تحسينات مستمرة للتوافق مع تطبيقات إضافية",
+      "تحسين: تحديث تصميم صفحة ^بصمات الأصابع وبيانات الوجه وقفل الشاشة^ لتسهيل وتسريع الإعداد"
+    ],
+    "الربط بين الأجهزة": [
+      "جديد: انقر على منطقة NFC على هاتف Xiaomi أو iPhone لمشاركة التسجيلات والملاحظات بسرعة",
+      "جديد: تدعم هواتف Xiaomi الآن AirPods، بما في ذلك نافذة الاقتران السريع، عرض مستوى البطارية، الصوت المكاني، التبديل بين أوضاع إلغاء الضجيج، وميزة ^تحديد الموقع^",
+      "جديد: بعد مزامنة رموز التحقق عبر الرسائل القصيرة (SMS) المستلمة على iPhone مع هاتف Xiaomi، يمكن اكتشافها ونسخها بنقرة واحدة",
+      "تحسين: عند فتح تطبيقات هاتف Xiaomi أثناء استخدام انعكاس الشاشة على iPhone، يمكنك استخدام طريقة الإدخال المعينة على هاتف Xiaomi في الوقت نفسه"
+    ]
   }
 }
