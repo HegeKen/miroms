@@ -78,5 +78,265 @@
       "Fix: Blank notifications appeared with only the icon displayed",
       "Fix: The 5G icon in the status bar wasn^t fully displayed after switching font size or changing to a third party font"
     ]
+  },
+  "logs_zh_tw": {
+    "系統": [
+      "修復: 解析度切換場景下，螢幕有機率閃爍的問題",
+      "合入2024年6月安全修補程式，增強系統安全"
+    ],
+    "筆記": [
+      "修復: 筆記附件資料超過20MB時，雲同步失敗的問題"
+    ],
+    "控制中心": [
+      "修復: 部分快速開關低機率失效的問題"
+    ],
+    "小工具": [
+      "新增: 出行助手功能，智慧提醒火車、飛機行程，讓出行更便利（後續需在小米應用商店將智慧助理應用程式升級至5.12.2及以上版本，簡訊升級至15.0.2.24及以上版本，MiAI引擎升級至2.2及以上版本時可支援）",
+      "優化: 資訊助手載入速度",
+      "修復: 點選音樂小工具時縮放動畫異常的問題",
+      "修復: 新增時鐘小工具時，低機率出現的顯示異常問題"
+    ],
+    "鎖屏": [
+      "優化: 鎖定畫面長按進入編輯的觸發策略，減少誤觸"
+    ],
+    "時鐘": [
+      "修復: 鬧鐘響鈴後，無法透過按鍵關閉鬧鐘的問題"
+    ],
+    "相簿": [
+      "優化: 影片同步策略，提升播放畫面流暢度",
+      "修復: 短時間產生大量圖片時，相簿預覽圖載入時間過長的問題",
+      "修復: 雲同步過程中照片時間遺失，導致日期錯誤的問題",
+      "修復: 在雲同步時刪除照片後，照片再次出現的問題",
+      "修復: 部分機型時光卡片無法播放的問題",
+      "修復: 連續拍攝大量照片時，相簿預覽圖顯示異常的問題"
+    ],
+    "檔案管理器": [
+      "優化: 檔案清單的載入速度"
+    ],
+    "狀態欄、通知欄": [
+      "修復: 單行通知圖示顯示不全的問題",
+      "修復: 空白通知僅顯示圖示的問題",
+      "修復: 狀態列切換字體大小或切換三方字體後，5G圖示顯示不全的問題"
+    ]
+  },
+  "logs_ja": {
+    "コントロールセンター": [
+      "修正: 一部のトグルが時々機能しなくなる問題"
+    ],
+    "システム": [
+      "セキュリティパッチを 2024 年 6 月にアップデートしました。システムのセキュリティが強化されました。"
+    ],
+    "ロック画面": [
+      "最適化: ロック画面の新しい「長押しして編集」ロジックにより、偶発的なトリガーが低減されます"
+    ],
+    "ステータスバー、通知シェード": [
+      "修正: 1 行の通知アイコンが完全に表示されない問題",
+      "修正: アイコンのみが表示され、空白の通知が表示される問題",
+      "修正: フォントサイズを変更したり、サードパーティ製フォントに変更したりすると、ステータスバーの 5G アイコンが完全に表示されない問題"
+    ]
+  },
+  "logs_ko": {
+    "제어 센터": [
+      "수정: 일부 토글이 작동하지 않는 문제"
+    ],
+    "시스템": [
+      "보안패치 (2024#06) 업데이트됨. 시스템 보안이 향상되었습니다."
+    ],
+    "잠금화면": [
+      "최적화: 잠금화면을 위한 새로운 ^길게 눌러 편집^ 로직으로 우발적 트리거 감소"
+    ],
+    "상태 바, 알림 바": [
+      "수정: 한 줄 알림 아이콘이 완전히 표시되지 않는 문제",
+      "수정: 아이콘만 표시된 상태에서 빈 알림이 나타나는 문제",
+      "수정: 글꼴 크기를 변경하거나 타사 글꼴로 변경한 후 상태 표시줄의 5G 아이콘이 완전히 표시되지 않는 문제"
+    ]
+  },
+  "logs_ru": {
+    "Центр управления": [
+      "Исправлено: Некоторые переключатели могли не работать"
+    ],
+    "Система": [
+      "Обновление системы безопасности (июнь 2024 года). Улучшена безопасность системы."
+    ],
+    "Экран блокировки": [
+      "Оптимизация: Новая логика ^долгого нажатия для редактирования^ на экране блокировки уменьшает количество случайных срабатываний"
+    ],
+    "Строка состояния, шторка уведомлений": [
+      "Исправлено: Однострочные значки уведомлений могли отображаться не полностью",
+      "Исправлено: Могли появляться пустые уведомления с отображением только значка",
+      "Исправлено: Значок 5G в строке состояния отображался не полностью после изменения размера шрифта или использовании стороннего шрифта"
+    ]
+  },
+  "logs_uk": {
+    "Центр керування": [
+      "Виправлено: Іноді деякі перемикачі не працювали"
+    ],
+    "Система": [
+      "Оновлено патч безпеки за червень 2024 року. Збільшено безпеку системи."
+    ],
+    "Екран блокування": [
+      "Оптимізація: Новий алгоритм для дії ^Натисніть та утримуйте для редагування^ на екрані блокування зменшує кількість випадкових запусків"
+    ],
+    "Рядок стану, Панель сповіщень": [
+      "Виправлено: Іконки у однорядкових сповіщеннях відображалися не повністю",
+      "Виправлено: Порожні сповіщення відображалися лише з іконкою",
+      "Виправлено: Значок 5G у рядку стану не відображався повністю після зміни розміру шрифту або переходу на сторонній шрифт"
+    ]
+  },
+  "logs_pl": {
+    "Centrum kontroli": [
+      "Naprawiono: Niektóre przełączniki czasami nie działały"
+    ],
+    "System": [
+      "Zaktualizowano Pakiet Bezpieczeństwa do czerwca 2024 r. Zwiększono bezpieczeństwo systemu."
+    ],
+    "Ekran blokady": [
+      "Zoptymalizowano: Nowa logika „naciśnij i przytrzymaj, aby edytować” na Ekranie blokady ogranicza liczbę przypadkowych uruchomień"
+    ],
+    "Pasek powiadomień, Panel powiadomień": [
+      "Naprawiono: Ikony powiadomień jednowierszowych nie były w pełni wyświetlane",
+      "Naprawiono: Pojawiały się puste powiadomienia z wyświetloną tylko ikoną",
+      "Naprawiono: Ikona 5G na pasku statusu nie była w pełni wyświetlana po zmianie rozmiaru czcionki lub zmianie na czcionkę firmy zewnętrznej"
+    ]
+  },
+  "logs_de": {
+    "Other": [
+      "Optimized system performance",
+      "Improved system security and stability"
+    ]
+  },
+  "logs_fr": {
+    "Centre de contrôle": [
+      "Réparé: Certaines bascules ont parfois échoué"
+    ],
+    "Système": [
+      "Mise à jour du correctif de sécurité en juin 2024. Sécurité accrue du système."
+    ],
+    "Écran de verrouillage": [
+      "Optimisation: Nouvelle logique ^appuyez et maintenez pour modifier^ pour l’écran de verrouillage réduit les déclenchements accidentels"
+    ],
+    "Barre d'état, Panneau de notification": [
+      "Réparé: Les icônes de notification d’une seule ligne n’étaient pas entièrement affichées",
+      "Réparé: Les notifications vides sont apparues avec seulement l’icône affichée",
+      "Réparé: L’icône 5G dans la barre d’état n’était pas complètement affichée après le changement de taille de police ou le passage à une police tierce"
+    ]
+  },
+  "logs_it": {
+    "Centro di controllo": [
+      "Risolto: Alcuni comandi a volte non funzionavano"
+    ],
+    "Sistema": [
+      "Patch di sicurezza aggiornata a giugno 2024. Maggiore sicurezza del sistema."
+    ],
+    "Schermata di blocco": [
+      "Ottimizzazione: La nuova logica ^tieni premuto per modificare^ per la schermata di blocco riduce le attivazioni accidentali"
+    ],
+    "Barra di stato, Area delle notifiche": [
+      "Risolto: Le icone di notifica su una linea non venivano visualizzate completamente",
+      "Risolto: Apparivano notifiche vuote con solo l^icona visualizzata",
+      "Risolto: L^icona 5G nella barra di stato non veniva visualizzata completamente dopo aver cambiato la dimensione del carattere o usando un carattere di terze parti"
+    ]
+  },
+  "logs_es": {
+    "Centro de control": [
+      "Reparado: Algunos interruptores no funcionaban ocasionalmente"
+    ],
+    "Sistema": [
+      "Parche de seguridad actualizado a junio de 2024. Seguridad del sistema incrementada."
+    ],
+    "Pantalla de bloqueo": [
+      "Optimización: El nuevo sistema de ^mantener pulsado para editar^ en la Pantalla de bloqueo reduce los toques accidentales"
+    ],
+    "Barra de estado, Barra de notificaciones": [
+      "Reparado: Los iconos de notificaciones de una sola línea no se mostraban completamente",
+      "Reparado: Se mostraban notificaciones en blanco mostrando solo el icono",
+      "Reparado: El icono 5G en la barra de estado no se mostraba completamente después de cambiar el tamaño de fuente o cambiar a una fuente de terceros"
+    ]
+  },
+  "logs_pt": {
+    "Centro de controle": [
+      "Correção: Alguns seletores falhavam em alguns casos"
+    ],
+    "Sistema": [
+      "Patch de segurança atualizado para junho de 2024. Segurança do sistema aprimorada."
+    ],
+    "Tela de bloqueio": [
+      "Otimização: Nova lógica para ^pressionar e segurar para editar^ na Tela de bloqueio para reduzir acionamentos acidentais"
+    ],
+    "Barra de status, Área de notificações": [
+      "Correção: Ícones em notificações de linha única não eram exibidos completamente",
+      "Correção: Notificações em branco apareciam com somente o ícone sendo exibido",
+      "Correção: O ícone do 5G na barra de status não era totalmente exibido após alterar o tamanho da fonte ou ao alterar para uma fonte de terceiros"
+    ]
+  },
+  "logs_tr": {
+    "Kontrol merkezi": [
+      "Onarım: Bazı geçişler ara sıra çalışmadı"
+    ],
+    "Sistem": [
+      "Güvenlik patch^i Haziran 2024^te güncellendi. Sistem güvenliği arttırıldı."
+    ],
+    "Kilit ekranı": [
+      "Optimizasyon: Kilit ekranı için yeni ^^düzenlemek için basılı tutun^^ mantığı, yanlışlıkla tetiklenen tetiklemeleri azaltır"
+    ],
+    "Durum çubuğu, Bildirim çubuğu": [
+      "Onarım: Tek satırlı bildirim simgeleri tam olarak görüntülenmiyor",
+      "Onarım: Yalnızca simgenin görüntülendiği boş bildirimler göründü",
+      "Onarım: Durum çubuğundaki 5G simgesi, yazı tipi boyutunu değiştirdikten veya üçüncü taraf yazı tipine geçtikten sonra tam görüntülenmedi"
+    ]
+  },
+  "logs_id": {
+    "Other": [
+      "Optimized system performance",
+      "Improved system security and stability"
+    ]
+  },
+  "logs_vi": {
+    "Trung tâm điều khiển": [
+      "Sửa: Một số phím nhanh thỉnh thoảng không hoạt động"
+    ],
+    "Hệ thống": [
+      "Cập nhật bản vá bảo mật đến tháng 6 năm 2024. Tăng cường bảo mật hệ thống."
+    ],
+    "Màn hình khóa": [
+      "Tối ưu: Logic ^bấm và giữ để sửa^ mới cho Màn hình khóa giúp giảm các kích hoạt vô tình"
+    ],
+    "Thanh trạng thái, Thanh thông báo": [
+      "Sửa: Biểu tượng thông báo một dòng không được hiển thị đầy đủ",
+      "Sửa: Thông báo trống xuất hiện chỉ với biểu tượng được hiển thị",
+      "Sửa: Biểu tượng 5G trên thanh trạng thái không hiển thị đầy đủ sau khi chuyển cỡ chữ hoặc đổi sang phông chữ của bên thứ ba"
+    ]
+  },
+  "logs_th": {
+    "ศูนย์กลางการควบคุม": [
+      "แก้ไข: การสลับบางอย่างล้มเหลวในการทำงานเป็นครั้งคราว"
+    ],
+    "ระบบ": [
+      "อัปเดตแพตช์ความปลอดภัยเป็นเดือนมิถุนายน 2024 เพิ่มความปลอดภัยของระบบ"
+    ],
+    "ล็อคหน้าจอ": [
+      "การเพิ่มประสิทธิภาพ: ตรรกะ ^กดค้างไว้เพื่อแก้ไข^ ใหม่สำหรับหน้าจอล็อคจะช่วยลดการกระตุ้นโดยไม่ตั้งใจ"
+    ],
+    "แถบสถานะ, แถบแจ้งเตือน": [
+      "แก้ไข: ไอคอนการแจ้งเตือนบรรทัดเดียวไม่แสดงทั้งหมด",
+      "แก้ไข: การแจ้งเตือนว่างเปล่าปรากฏขึ้นโดยแสดงเฉพาะไอคอนเท่านั้น",
+      "แก้ไข: ไอคอน 5G ในแถบสถานะแสดงได้ไม่เต็มที่หลังจากเปลี่ยนขนาดตัวอักษรหรือเปลี่ยนเป็นแบบอักษรของบุคคลที่สาม"
+    ]
+  },
+  "logs_ar": {
+    "مركز التحكم": [
+      "الإصلاح: فشل بعض مفاتيح تشغيل/إيقاف عن العمل في بعض الأحيان"
+    ],
+    "النظام": [
+      "تم تحديث تصحيح الأمان إلى يونيو 2024 لزيادة أمان النظام."
+    ],
+    "شاشة القفل": [
+      "التحسين: استراتيجية جديدة لـ ^الضغط مطولا للتعديل^ على شاشة القفل لتقليل النقرات غير المقصودة"
+    ],
+    "شريط الحالة ومركز الإشعارات": [
+      "الإصلاح: عرض أيقونات الإشعارات ذات السطر الواحد الغير كامل",
+      "الإصلاح: الإشعارات الفارغة التي تظهر الأيقونة فقط",
+      "الإصلاح: عدم عرض أيقونة 5G في شريط الحالة بشكل كامل بعد تغيير حجم الخط أو تغيير خط تابع لجهة خارجية"
+    ]
   }
 }
