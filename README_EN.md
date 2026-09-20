@@ -348,6 +348,24 @@ The frontend site (`apiBaseUrl` is `https://api.miuier.com/api`), the admin pane
 
 ---
 
+## Credits
+
+The data pipeline in this repository relies on the runtimes, platforms and data sources below. Thanks to their authors and communities.
+
+| Name | Purpose | License |
+| --- | --- | --- |
+| [Python 3](https://www.python.org/) | All fetch / export / deploy scripts in `scripts/` (stdlib only) | PSF-2.0 |
+| [Node.js](https://nodejs.org/) | `../app/web/scripts/generate-index.mjs` builds the v3 indexes, yearly shards and `releases/*.json` | MIT |
+| [MySQL](https://www.mysql.com/) | Data storage (InnoDB / utf8mb4; `devices` / `roms` / `branches` / `series`) | GPL-2.0 / commercial |
+| [Cloudflare Pages](https://pages.cloudflare.com/) | Hosting for `api.miuier.com` and deploy-hook deployments | Cloudflare Terms of Service |
+| [GitHub](https://github.com/) | Repository hosting, submodule and Raw distribution | GitHub Terms of Service |
+| Xiaomi update servers (`update.miui.com`) | ROM versions, download URLs and changelogs (fetched and decrypted by `network` / `crypto` / `firmware`) | Data and trademarks owned by Xiaomi |
+| Mi Community | Fastboot package information (`mgc_fastboot.py`) | Data and trademarks owned by Xiaomi |
+
+> MIUI, HyperOS, Xiaomi, Redmi and POCO are trademarks of Xiaomi or its affiliates; this repository is not affiliated with Xiaomi.
+
+---
+
 ## License
 
 [Apache License 2.0](LICENSE)

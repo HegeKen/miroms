@@ -84,5 +84,580 @@
       "Fix: Memories couldn^t be played on some device models",
       "Fix: Preview thumbnails in Gallery displayed abnormally when capturing a large number of photos consecutively"
     ]
+  },
+  "logs_zh_tw": {
+    "系統": [
+      "優化: 應用程式切換時的系統資源回收策略，提升應用程式流暢度",
+      "優化: 應用程式預載入，提升應用程式啟動速度",
+      "優化: 啟動動畫策略，降低應用程式啟動延遲",
+      "修復: 通知過多可能導致系統重新啟動的問題",
+      "合入2024年7月安全修補程式，增強系統安全"
+    ],
+    "筆記": [
+      "修復: 筆記附件資料超過20MB時，雲同步失敗的問題"
+    ],
+    "桌面": [
+      "新增: 外螢幕支援使用乘車碼、付款碼等快捷功能"
+    ],
+    "小工具": [
+      "新增: 出行助手功能，智慧提醒火車、飛機行程，讓出遊更方便"
+    ],
+    "主動智慧": [
+      "新增: 外螢幕小愛輸入助手，幫您快速潤飾文字，回覆訊息更有效率",
+      "新增: AI識圖，上傳圖片即可辨識圖片內容、拍照解題。支援路人消除、AI擴圖、AI換背景、動漫風格切換。需要在應用商店將小愛同學升級至最新版",
+      "新增: AI摘要，可幫您總結文件摘要及追問文件細節，支援15MB以內的PDF文件及Word文件。需要在應用商店將小愛同學升級至最新版",
+      "新增: 一句話智慧成片，相簿素材生成精美Vlog，描述需求即可變身大片。需要在應用商店將小愛同學及小米相簿升級至最新版",
+      "新增: 筆記存取AI，涵蓋AI摘要、排版、糾錯和翻譯等多項能力，支援最佳化內容品質",
+      "新增: AI精準同聲傳譯，支援電話或線上會議即時翻譯對話，幫助跨語言聊天。支持語種：中文、英語、俄語、德語、法語、韓語、葡萄牙語、日語、西班牙語、義大利語、印地語、印尼語"
+    ],
+    "鎖屏": [
+      "新增: 外屏4款動態萌寵鎖定螢幕，多款萌寵任您「領養」"
+    ],
+    "互聯互通": [
+      "新增: 外螢幕支援跨裝置相機，平板、筆記型電腦視訊通話時可呼叫外螢幕攝影機拍攝"
+    ],
+    "時鐘": [
+      "修復: 鬧鐘響鈴後，無法透過按鍵關閉鬧鐘的問題"
+    ],
+    "相簿": [
+      "優化: 影片同步策略，提升播放畫面流暢度",
+      "修復: 短時間產生大量圖片時，相簿預覽圖載入時間過長的問題",
+      "修復: 雲同步過程中照片時間遺失，導致日期錯誤的問題",
+      "修復: 在雲同步時刪除照片後，照片再次出現的問題",
+      "修復: 部分機型時光卡片無法播放的問題",
+      "修復: 連續拍攝大量照片時，相簿預覽圖顯示異常的問題"
+    ]
+  },
+  "logs_ja": {
+    "ウィジェット": [
+      "新機能: トラベルアシスタントがフライトや列車の情報をお知らせします"
+    ],
+    "システム": [
+      "最適化: アプリ切り替え時のシステムリソース回復戦略を改善し、アプリのスムーズさを向上",
+      "最適化: アプリのプリロードを改善し、アプリの起動速度を向上",
+      "最適化: 新しい起動アニメーション戦略により、アプリの起動遅延が短縮されます",
+      "修正: 通知が多すぎるとシステムが再起動する場合がある問題",
+      "セキュリティパッチを 2024 年 7 月にアップデートしました。システムのセキュリティが強化されました。"
+    ],
+    "プロアクティブなインテリジェンス": [
+      "新機能: 外側の画面にテキストを入力するよりスマートな方法を探る",
+      "新機能: Mi AI の最新バージョンでは、デバイスは画像内のアイテムを認識し、計算問題を解いたり、オブジェクトを消去したり、写真を拡大したり、背景を変更したり、エフェクトを追加したりすることができます。",
+      "新機能: Mi AI の最新バージョンでは、AI サマリーは最大15MBのWordおよびPDF文書をサポートします",
+      "新機能: Mi AI とギャラリーの最新バージョンでは、AI を使用してアイテムを選択したり、テキストプロンプトを追加したり、ビデオを生成したりすることができます。",
+      "新機能: AI により、メモアプリは AI サマリー、スマートレイアウト、エラー修正、翻訳などの機能をサポートするようになりました。",
+      "新機能: AI は、通話中やオンライン会議中に、中国語、英語、フランス語、ドイツ語、ヒンディー語、インドネシア語、イタリア語、日本語、韓国語、ポルトガル語、ロシア語、スペイン語間の同時通訳を提供します。"
+    ],
+    "ロック画面": [
+      "新機能: かわいいペットが登場する 4 つの外側の画面テーマ"
+    ],
+    "相互接続性": [
+      "新機能: 外側の画面にあるクロスデバイスカメラは、パソコンやタブレットでのビデオ通話に使用できます。"
+    ],
+    "ホーム画面": [
+      "新機能: 乗車コードと支払いコードは外側の画面で使用できます"
+    ],
+    "時計": [
+      "修正: アラームが鳴った後、ボタンでアラームを止められない問題"
+    ],
+    "ギャラリー": [
+      "最適化: ビデオ同期戦略を改善し、再生のスムーズさを向上",
+      "修正: 短時間に大量の画像が生成された場合に、ギャラリーのプレビューサムネイルの読み込みに時間がかかりすぎる問題",
+      "修正: クラウド同期中に写真のタイムスタンプが失われ、誤った日付が表示される問題",
+      "修正: クラウド同期中に削除された写真が再び表示される問題",
+      "修正: 一部のデバイスモデルでは思い出を再生できない問題",
+      "修正: 大量の写真を連続撮影すると、ギャラリーのプレビューサムネイルが異常に表示される問題"
+    ]
+  },
+  "logs_ko": {
+    "위젯": [
+      "New: 여행 도우미가 항공편 및 기차에 대한 정보를 알려드립니다"
+    ],
+    "시스템": [
+      "최적화: 앱 전환 시 시스템 리소스 복구 전략을 개선하고 앱의 부드러움 향상",
+      "최적화: 앱 프리로드를 개선하고 앱 시작 속도 향상",
+      "최적화: 새로운 시작 애니메이션 전략으로 앱 시작 지연 감소",
+      "수정: 알림이 너무 많으면 시스템이 재부팅될 수 있는 문제",
+      "보안패치 (2024#07) 업데이트됨. 시스템 보안이 향상되었습니다."
+    ],
+    "프로액티브 인텔리전스": [
+      "New: 외부 화면에 텍스트를 입력하는 더욱 스마트한 방법 살펴보기",
+      "New: 최신 버전의 Mi AI를 통해 기기는 이미지에서 항목을 인식하고 수학 문제를 해결하고 객체를 지우고 사진을 확장하고 배경을 변경하고 효과를 추가할 수 있습니다",
+      "New: 최신 버전의 Mi AI를 통해 AI 요약이 최대 15 MB의 Word 및 PDF 문서를 지원합니다",
+      "New: 최신 버전의 Mi AI와 갤러리를 통해 AI를 사용하여 항목을 선택하고 텍스트 프롬프트를 추가하고 동영상을 생성할 수 있습니다",
+      "New: AI를 통해 메모가 AI 요약, 스마트 레이아웃, 오류 수정, 번역 등의 기능을 지원합니다",
+      "New: AI는 중국어, 영어, 프랑스어, 독일어, 힌디어, 인도네시아어, 이탈리아어, 일본어, 한국어, 포르투갈어, 러시아어, 스페인어 간 통화 및 온라인 회의에서 동시 통역을 제공합니다."
+    ],
+    "잠금화면": [
+      "New: 4가지 귀여운 애완동물 외부 화면 테마"
+    ],
+    "상호 연결성": [
+      "New: 외부 화면의 기기 간 카메라는 컴퓨터 또는 태블릿의 영상 통화에 사용할 수 있습니다"
+    ],
+    "홈 화면": [
+      "New: 탑승 코드 및 결제 코드를 외부 화면에서 사용할 수 있습니다"
+    ],
+    "시계": [
+      "수정: 알람이 울린 후 버튼으로 알람을 멈출 수 없는 문제"
+    ],
+    "갤러리": [
+      "최적화: 동영상 동기화 전략을 개선하여 재생의 부드러움 향상",
+      "수정: 단시간에 대량의 이미지가 생성된 경우 갤러리의 미리보기 섬네일을 읽는 데 시간이 너무 걸리는 문제",
+      "수정: 클라우드 동기화 중에 사진의 타임스탬프가 손실되어 잘못된 날짜가 표시되는 문제",
+      "수정: 클라우드 동기화 중 삭제된 사진이 다시 표시되는 문제",
+      "수정: 일부 기기 모델에서 추억 기능을 재생할 수 없는 문제",
+      "수정: 대량의 사진을 연속 촬영하면 갤러리의 미리보기 섬네일이 비정상적으로 표시되는 문제"
+    ]
+  },
+  "logs_ru": {
+    "Виджеты": [
+      "Новое: Помощник путешественника может напоминать вам о перелетах и поездах"
+    ],
+    "Система": [
+      "Оптимизация: Улучшена стратегия восстановления системных ресурсов при переключении приложений для повышения плавности их работы",
+      "Оптимизация: Улучшена предварительная загрузка приложений для повышения скорости их запуска",
+      "Оптимизация: Новая логика анимация запуска позволила сократить задержки при запуске приложений",
+      "Исправлено: Слишком большое количество уведомлений могло приводить к перезагрузке системы",
+      "Обновление системы безопасности (июль 2024 года). Улучшена безопасность системы."
+    ],
+    "Активная интеллектуальная система": [
+      "Новое: Более эффективные способы ввода текста на внешнем экране",
+      "Новое: С последней версией Mi AI ваше устройство может распознавать предметы на изображениях и решать математические задачи, удалять объекты с изображений, расширять фото, заменять фон и добавлять эффекты",
+      "Новое: В последней версии Mi AI добавлена поддержка AI-конспектов для документов Word и PDF размером до 15 МБ",
+      "Новое: В последней версии Mi AI и Галереи добавлена поддержка выбора объектов, добавления надписей и создания видеороликов с помощью искусственного интеллекта",
+      "Новое: Благодаря ИИ приложение ^Заметки^ поддерживает такие возможности, как AI-конспект, смарт-макеты, исправление ошибок и перевод",
+      "Новое: ИИ обеспечивает синхронный перевод во время звонков и онлайн-встреч с английского, индонезийского, испанского, итальянского, китайского, немецкого, корейского, португальского, русского, хинди, французского и японского языков"
+    ],
+    "Экран блокировки": [
+      "Новое: 4 темы с животными для внешнего экрана"
+    ],
+    "Взаимосвязанность": [
+      "Новое: Камера для нескольких устройств на внешнем экране может использоваться для видеовызовов на компьютере или планшете"
+    ],
+    "Рабочий стол": [
+      "Новое: Коды поездок и платежные коды можно использовать на внешнем экране"
+    ],
+    "Часы": [
+      "Исправлено: В некоторых случаях сигнал будильника нельзя было выключить при помощи кнопок"
+    ],
+    "Галерея": [
+      "Оптимизация: Улучшенная стратегия синхронизации видео для повышения плавности воспроизведения",
+      "Исправлено: Миниатюры предварительного просмотра в Галерее могли загружаться слишком долго, если за короткий промежуток времени было создано большое количество изображений",
+      "Исправлено: При синхронизации с облаком данные о времени съемки фото могли исчезать, что приводило к отображению неправильных дат",
+      "Исправлено: Удаленные фото снова появились после удаления во время синхронизации с облаком",
+      "Исправлено: На некоторых моделях устройств не удавалось воспроизвести сюжеты",
+      "Исправлено: Миниатюры предварительного просмотра в Галерее могли отображаться неправильно при последовательной съемке большого количества фото"
+    ]
+  },
+  "logs_uk": {
+    "Віджети": [
+      "Нове: Помічник з подорожей може повідомляти вас про ваші рейси та поїзди"
+    ],
+    "Система": [
+      "Оптимізація: Покращена стратегія відновлення системних ресурсів при перемиканні програм для підвищення плавності їх роботи",
+      "Оптимізація: Покращено попереднє завантаження програм для підвищення швидкості їх запуску",
+      "Оптимізація: Нова логіка анімації запуску дозволила скоротити затримки під час запуску програм",
+      "Виправлено: Занадто велика кількість сповіщень могла призводити до перезавантаження системи",
+      "Оновлено патч безпеки за липень 2024 року. Збільшено безпеку системи."
+    ],
+    "Активна інтелектуальна система": [
+      "Нове: Дізнайтеся про більш зручні способи введення тексту на зовнішньому екрані",
+      "Нове: В останній версії Mi AI ваш пристрій може розпізнавати елементи на зображеннях та вирішувати математичні задачі, видаляти об^єкти, збільшувати фотографії, змінювати фон і додавати ефекти",
+      "Нове: В останній версії Mi AI функція ШІ-звіт підтримує документи формату Word та PDF об^ємом до 15 МБ",
+      "Нове: В останній версії Mi AI та Галереї ви можете вибирати об^єкти, додавати текстові підказки та створювати відео за допомогою штучного інтелекту",
+      "Нове: Завдяки ШІ програма ^Нотатки^ підтримує такі функції, як ШІ-звіт, інтелектуальні макети, виправлення помилок та переклад",
+      "Нове: ШІ надає синхронний переклад під час викликів та онлайн-зустрічей з китайської, англійської, французької, німецької, хінді, індонезійської, італійської, японської, корейської, португальської, російської та іспанської мов."
+    ],
+    "Екран блокування": [
+      "Нове: 4 теми для зовнішнього екрану з милими домашніми тваринами"
+    ],
+    "Взаємопов'язаність": [
+      "Нове: Вбудовану камеру на зовнішньому екрані можна використовувати для відеодзвінків з комп^ютера або планшета"
+    ],
+    "Робочий стіл": [
+      "Нове: Коди поїздок та коди оплат можна використовувати на зовнішньому екрані"
+    ],
+    "Годинник": [
+      "Виправлено: Будильник не вимикався кнопкою після того, як він задзвонив"
+    ],
+    "Галерея": [
+      "Оптимізація: Покращена стратегія синхронізації відео для більшої плавності відтворення",
+      "Виправлено: Завантаження мініатюр для попереднього перегляду в Галереї займало багато часу, коли велика кількість зображень була створена за короткий період",
+      "Виправлено: Мітки часу на фотографіях були втрачені під час синхронізації у хмарі, що призвело до неправильних дат",
+      "Виправлено: Під час синхронізації у хмарі видалені фотографії знову з^являлися у стрічці",
+      "Виправлено: Сюжети не могли бути відтворені на деяких моделях пристроїв",
+      "Виправлено: Мініатюри для попереднього перегляду ненормально відображалися в Галереї, коли було зроблено велику кількість фотографій поспіль"
+    ]
+  },
+  "logs_pl": {
+    "Widżety": [
+      "Nowe: Asystent podróży może powiadamiać Cię o Twoich lotach i pociągach"
+    ],
+    "System": [
+      "Zoptymalizowano: Ulepszona strategia odzyskiwania zasobów systemowych podczas przełączania aplikacji w celu zwiększenia płynności aplikacji",
+      "Zoptymalizowano: Ulepszone wstępne ładowanie aplikacji w celu zwiększenia szybkości uruchamiania aplikacji",
+      "Zoptymalizowano: Nowa strategia animacji uruchamiania zmniejsza opóźnienia w uruchamianiu aplikacji",
+      "Naprawiono: Zbyt wiele powiadomień może spowodować ponowne uruchomienie systemu",
+      "Zaktualizowano Pakiet Bezpieczeństwa do lipca 2024 r. Zwiększono bezpieczeństwo systemu."
+    ],
+    "Proaktywna inteligencja": [
+      "Nowe: Poznaj mądrzejsze sposoby wprowadzania tekstu na ekranie zewnętrznym",
+      "Nowe: Dzięki najnowszej wersji Mi SI Twoje urządzenie może rozpoznawać elementy na obrazach i rozwiązywać problemy matematyczne, usuwać obiekty, powiększać zdjęcia, zmieniać tła i dodawać efekty",
+      "Nowe: W najnowszej wersji Mi SI podsumowanie SI obsługuje dokumenty Word i PDF o rozmiarze do 15 MB",
+      "Nowe: Dzięki najnowszej wersji Mi SI i Galerii możesz wybierać elementy, dodawać podpowiedzi tekstowe i generować filmy za pomocą sztucznej inteligencji",
+      "Nowe: Dzięki sztucznej inteligencji Notatki obsługuje teraz takie funkcje, jak podsumowania SI, inteligentne układy, korekcja błędów i tłumaczenie",
+      "Nowe: Sztuczna inteligencja zapewnia tłumaczenie symultaniczne podczas rozmów i spotkań online między językiem chińskim, angielskim, francuskim, niemieckim, hindi, indonezyjskim, włoskim, japońskim, koreańskim, portugalskim, rosyjskim i hiszpańskim."
+    ],
+    "Ekran blokady": [
+      "Nowe: 4 motywy ekranu zewnętrznego z uroczymi zwierzakami"
+    ],
+    "Łączność": [
+      "Nowe: Aparat na różnych urządzeniach na zewnętrznym ekranie może być używany do rozmów wideo na komputerze lub tablecie"
+    ],
+    "Ekran główny": [
+      "Nowe: Kody przejazdów i kody płatności można używać na ekranie zewnętrznym"
+    ],
+    "Zegar": [
+      "Naprawiono: Nie można było wyłączyć alarmu przyciskami po jego włączeniu"
+    ],
+    "Galeria": [
+      "Zoptymalizowano: Ulepszona strategia synchronizacji filmu w celu zwiększenia płynności odtwarzania",
+      "Naprawiono: Ładowanie miniatur podglądu w Galerii trwało zbyt długo, gdy w krótkim czasie wygenerowano dużą liczbę obrazów",
+      "Naprawiono: Sygnatury czasowe zdjęć zostały utracone podczas synchronizacji z chmurą, co spowodowało nieprawidłowe daty",
+      "Naprawiono: Usunięte zdjęcia pojawiły się ponownie po usunięciu podczas synchronizacji z chmurą",
+      "Naprawiono: Wspomnień nie można odtwarzać na niektórych modelach urządzeń",
+      "Naprawiono: Miniatury podglądu w Galerii wyświetlają się nieprawidłowo podczas robienia dużej liczby zdjęć po kolei"
+    ]
+  },
+  "logs_de": {
+    "Other": [
+      "Optimized system performance",
+      "Improved system security and stability"
+    ]
+  },
+  "logs_fr": {
+    "Widgets": [
+      "Nouveau: L’assistant de voyage peut vous informer de vos vols et train"
+    ],
+    "Système": [
+      "Optimisation: Amélioration de la stratégie de récupération des ressources du système lors du changement d’applications pour améliorer la fluidité de l’application",
+      "Optimisation: Préchargement de l’application amélioré pour améliorer la vitesse de démarrage de l’application",
+      "Optimisation: La nouvelle stratégie d’animation de démarrage réduit les retards de lancement d’applications",
+      "Réparé: Avoir trop de notifications pourrait provoquer le redémarrage du système",
+      "Mise à jour du correctif de sécurité en juillet 2024. Sécurité accrue du système."
+    ],
+    "Intelligence proactive": [
+      "Nouveau: Explorer des façons plus intelligentes de saisir du texte sur l’écran externe",
+      "Nouveau: Avec la dernière version de Mi IA, votre appareil peut reconnaître les éléments dans les images et résoudre les problèmes mathématiques, effacer les objets, agrandir les photos, modifier les arrière-plans et ajouter des effets",
+      "Nouveau: Avec la dernière version de Mi IA, Résumé IA prend en charge les documents Word et PDF jusqu’à 15 Mo",
+      "Nouveau: Avec la dernière version de Mi IA et Galérie, vous pouvez sélectionner des éléments, ajouter des invites de texte et générer des vidéos à l’aide de l’IA",
+      "Nouveau: Avec l’IA, Notes prend en charge les fonctionnalités telles que le résumé IA, les mises en page intelligentes, la correction des erreurs et la traduction maintenant",
+      "Nouveau: L^IA fournit une interprétation simultanée pendant les appels et les réunions en ligne entre chinois, anglais, français, allemand, hindi, indonésien, italien, japonais, coréen, portugais, russe et espagnol."
+    ],
+    "Écran de verrouillage": [
+      "Nouveau: 4 thèmes d’écran externe avec des animaux mignons"
+    ],
+    "Interconnectivité": [
+      "Nouveau: La caméra multi-appareil sur l’écran externe peut être utilisée pour les appels vidéo sur votre ordinateur ou votre tablette"
+    ],
+    "Écran d'accueil": [
+      "Nouveau: Les codes de trajet et de paiement peuvent être utilisés sur l’écran externe"
+    ],
+    "Horloge": [
+      "Réparé: L’alarme ne pouvait pas être désactivée à l’aide de boutons après avoir sonné"
+    ],
+    "Galerie": [
+      "Optimisation: Stratégie de synchronisation vidéo améliorée pour améliorer la fluidité de la lecture",
+      "Réparé: Prévisualiser les miniatures dans la Galerie a pris trop de temps à charger lorsqu’un grand nombre d’images ont été générées dans une courte période",
+      "Réparé: Les horodatages des photos ont été perdus pendant la synchronisation dans le cloud, provoquant des dates incorrectes",
+      "Réparé: Les photos supprimées réapparaissent après avoir été supprimées lors de la synchronisation du cloud",
+      "Réparé: Les souvenirs ne pouvaient pas être joués sur certains modèles d’appareils",
+      "Réparé: Aperçu des miniatures dans la galerie affichées anormalement lors de la capture d’un grand nombre de photos consécutivement"
+    ]
+  },
+  "logs_it": {
+    "Widget": [
+      "Nuovo: L^Assistente di viaggio fornisce informazioni su voli e treni"
+    ],
+    "Sistema": [
+      "Ottimizzazione: Migliorata la strategia di recupero delle risorse di sistema quando si passa da un^app all^altra per migliorare la fluidità delle app",
+      "Ottimizzazione: Migliorato il precaricamento delle app per incrementarne la velocità di avviamento",
+      "Ottimizzazione: La nuova strategia di animazione di avviamento riduce i ritardi nel lancio delle app",
+      "Risolto: Un numero eccessivo di notifiche poteva causare il riavvio del sistema",
+      "Patch di sicurezza aggiornata a luglio 2024. Maggiore sicurezza del sistema."
+    ],
+    "Intelligenza proattiva": [
+      "Nuovo: Esplora modi più smart per inserire il testo sullo schermo esterno",
+      "Nuovo: Con l^ultima versione di Mi AI, il dispositivo è in grado di riconoscere gli oggetti nelle immagini e di risolvere problemi matematici, cancellare oggetti, espandere foto, modificare sfondi e aggiungere effetti",
+      "Nuovo: Con l^ultima versione di Mi AI, Riepilogo AI supporta documenti Word e PDF fino a 15 MB",
+      "Nuovo: Con l^ultima versione di Mi AI e Galleria, puoi selezionare elementi, aggiungere messaggi di testo e generare video tramite AI",
+      "Nuovo: Grazie all^AI, Note supporta funzionalità come il riepilogo AI, i layout smart, la correzione degli errori e la traduzione",
+      "Nuovo: AI fornisce interpretazione simultanea durante le chiamate e le riunioni online tra cinese, inglese, francese, tedesco, hindi, indonesiano, italiano, giapponese, coreano, portoghese, russo e spagnolo."
+    ],
+    "Schermata di blocco": [
+      "Nuovo: 4 temi con teneri animali domestici per lo schermo esterno"
+    ],
+    "Interconnettività": [
+      "Nuovo: La fotocamera multidispositivo sullo schermo esterno può essere utilizzata per le videochiamate sul computer o sul tablet"
+    ],
+    "Schermata Home": [
+      "Nuovo: Codici corsa e i codici di pagamento possono essere utilizzati sullo schermo esterno"
+    ],
+    "Orologio": [
+      "Risolto: La sveglia non poteva essere spenta con i pulsanti una volta suonata"
+    ],
+    "Galleria": [
+      "Ottimizzazione: Strategia di sincronizzazione video migliorata per aumentare la fluidità della riproduzione",
+      "Risolto: Il caricamento delle anteprime nella Galleria era troppo lungo quando veniva generato un numero elevato di immagini in un breve periodo di tempo",
+      "Risolto: I dati temporali delle foto venivano persi durante la sincronizzazione con il cloud, causando errori nelle date",
+      "Risolto: Le foto eliminate ricomparivano dopo essere state rimosse durante la sincronizzazione con il cloud",
+      "Risolto: Non era possibile riprodurre i Ricordi su alcuni modelli di dispositivi",
+      "Risolto: Le miniature di anteprima nella Galleria venivano visualizzate in modo anomalo quando si acquisiva un gran numero di foto consecutivamente"
+    ]
+  },
+  "logs_es": {
+    "Widgets": [
+      "Nuevo: El asistente de viaje puede notificarte sobre tus vuelos y trenes"
+    ],
+    "Sistema": [
+      "Optimización: Se ha mejorado la estrategia de recuperación de recursos del sistema al cambiar de aplicaciones para mejorar la fluidez de las aplicaciones",
+      "Optimización: Precarga de aplicaciones mejorada para aumentar la velocidad de inicio de la aplicación",
+      "Optimización: Una nueva estrategia de animación de inicio reduce los retrasos en la ejecución de aplicaciones",
+      "Reparado: Tener demasiadas notificaciones podría provocar que el sistema se reinicie",
+      "Parche de seguridad actualizado a junio de 2024. Seguridad del sistema incrementada."
+    ],
+    "Inteligencia proactiva": [
+      "Nuevo: Explora formas más inteligentes de añadir texto en la pantalla externa",
+      "Nuevo: Con la última versión de Mi AI, tu dispositivo puede reconocer elementos en imágenes y resolver problemas matemáticos, borrar objetos, expandir fotos, cambiar fondos y añadir efectos",
+      "Nuevo: Con la última versión de Mi IA, Resumen con IA admite documentos Word y PDF de hasta 15 MB",
+      "Nuevo: Con la última versión de Mi IA y Galería, puedes seleccionar elementos, añadir indicaciones de texto y generar vídeos usando IA",
+      "Nuevo: Con IA, Notas ahora admite funciones como Resumen con IA, diseños inteligentes, corrección de errores y traducción",
+      "Nuevo: La IA proporciona interpretación simultánea durante llamadas y reuniones online entre chino, inglés, francés, alemán, hindi, indonesio, italiano, japonés, coreano, portugués, ruso y español."
+    ],
+    "Pantalla de bloqueo": [
+      "Nuevo: 4 temas de pantalla exterior con lindas mascotas"
+    ],
+    "Interconectividad": [
+      "Nuevo: La cámara multidispositivo en la pantalla exterior se puede usar para realizar videollamadas en tu ordenador o tablet"
+    ],
+    "Pantalla de inicio": [
+      "Nuevo: Los códigos de viaje y los códigos de pago se pueden usar en la pantalla exterior"
+    ],
+    "Reloj": [
+      "Reparado: La alarma no se podía apagar usando los botones después de que sonase"
+    ],
+    "Galería": [
+      "Optimización: Estrategia de sincronización de vídeo mejorada para mejorar la fluidez de reproducción",
+      "Reparado: Las miniaturas de previsualización en la Galería tardaban demasiado en cargarse cuando se generaba una gran cantidad de imágenes en un período corto",
+      "Reparado: Las marcas de tiempo de las fotografías se perdían durante la sincronización en la nube, lo que provocaba fechas incorrectas",
+      "Reparado: Las fotos eliminadas reaparecían después de ser eliminadas durante la sincronización en la nube",
+      "Reparado: No se podía reproducir los recuerdos en algunos modelos de dispositivos",
+      "Reparado: Las miniaturas de previsualización en la Galería se mostraba de manera anormal al capturar una gran cantidad de fotos consecutivamente"
+    ]
+  },
+  "logs_pt": {
+    "Widgets": [
+      "Novo: O assistente de viagens pode notificar sobre voos e trens"
+    ],
+    "Sistema": [
+      "Otimização: Estratégia aprimorada de recuperação de recursos do sistema ao alternar apps para melhorar a suavidade do app",
+      "Otimização: Pré-carregamento de apps aprimorado para aumentar a velocidade de inicialização do app",
+      "Otimização: Nova estratégia de animação de inicialização reduz atrasos no lançamento do app",
+      "Correção: Ter muitas notificações pode fazer com que o sistema reinicie",
+      "Patch de segurança atualizado para julho de 2024. Segurança do sistema aprimorada."
+    ],
+    "Inteligência proativa": [
+      "Novo: Explore formas inteligentes de inserir texto na tela externa",
+      "Novo: Com a versão mais recente do Mi AI, o seu dispositivo pode reconhecer itens em imagens e resolver problemas matemáticos, apagar objetos, expandir fotos, alterar fundos e adicionar efeitos",
+      "Novo: Com a versão mais recente do Mi AI, o Resumo IA suporta documentos do Word e PDF de até 15 MB",
+      "Novo: Com a versão mais recente do Mi AI e da Galeria, você pode selecionar itens, adicionar instruções por texto e gerar vídeos por IA",
+      "Novo: Com a IA, as Anotações agora suportam recursos como Resumo IA, layout inteligente, correção de erros e tradução",
+      "Novo: A IA fornece interpretação simultânea durante chamadas e reuniões online para Chinês, Inglês, Francês, Alemão, Hindi, Indonésio, Italiano, Japonês, Coreano, Português, Russo e Espanhol."
+    ],
+    "Tela de bloqueio": [
+      "Novo: 4 temas para a tela externa com belos animais de estimação"
+    ],
+    "Interconectividade": [
+      "Novo: A Câmera entre dispositivos na tela externa pode ser utilizada para chamadas de vídeo no seu computador ou tablet"
+    ],
+    "Tela inicial": [
+      "Novo: Códigos de corrida e de pagamento podem ser utilizados na tela externa"
+    ],
+    "Relógio": [
+      "Correção: O alarme não podia ser desativado usando botões após disparar"
+    ],
+    "Galeria": [
+      "Otimização: Melhoria na sincronização de vídeos para aprimorar a suavidade da reprodução",
+      "Correção: Miniaturas na Galeria demoravam para carregar quando um grande número de imagens eram geradas em um curto período de tempo",
+      "Correção: O Carimbo de hora em fotos era perdido durante a sincronização com a nuvem, causando datas incorretas",
+      "Correção: Fotos excluídas reapareciam após serem removidas durante a sincronização com a nuvem",
+      "Correção: Memórias não podiam ser reproduzidas em alguns modelos de dispositivos",
+      "Correção: Miniaturas da Galeria eram exibidos incorretamente ao capturar um grande número de fotos em sequência"
+    ]
+  },
+  "logs_tr": {
+    "Araçlar": [
+      "Yeni: Seyahat yardımcısı sizi uçuşlar ve trenler hakkında bilgilendirebilir"
+    ],
+    "Sistem": [
+      "Optimizasyon: Uygulama düzgünlüğünü artırmak için uygulamalar arasında geçiş yaparken iyileştirilmiş sistem kaynağı kurtarma stratejisi",
+      "Optimizasyon: Uygulama başlatma hızını artırmak için iyileştirilmiş uygulama önyüklemesi",
+      "Optimizasyon: Yeni başlangıç animasyonu stratejisi, uygulama başlatma gecikmelerini azaltır",
+      "Onarım: Çok fazla bildirim olması sistemin yeniden başlatılmasına neden olabilir",
+      "Güvenlik patch^i Temmuz 2024^te güncellendi. Sistem güvenliği arttırıldı."
+    ],
+    "Proaktif zeka": [
+      "Yeni: Dış ekrana metin girmenin daha akıllı yollarını keşfedin",
+      "Yeni: Mi AI^ın son sürümü ile cihazınız görüntülerdeki ögeleri tanıyabilir ve matematik problemlerini çözebilir, nesneleri silebilir, fotoğrafları genişletebilir, arka planları değiştirebilir ve efekt ekleyebilir",
+      "Yeni: Mi AI^ın son sürümü ile AI özet, 15 MB^a kadar Word ve PDF belgelerini destekler",
+      "Yeni: Mi AI ve Galeri^nin son sürümü ile AI^ı kullanırken ögeleri seçebilir, metin istemleri ekleyebilir ve videolar oluşturabilirsiniz",
+      "Yeni: AI ile Notlar artık AI özet, akıllı düzenler, hata düzeltme ve çeviri gibi özellikleri destekliyor",
+      "Yeni: AI, Çince, İngilizce, Fransızca, Almanca, Hintçe, Endonezce, İtalyanca, Japonca, Korece, Portekizce, Rusça ve İspanyolca arasındaki aramalar ve çevrim içi toplantılar sırasında simültane çeviri sağlar."
+    ],
+    "Kilit ekranı": [
+      "Yeni: Sevimli evcil hayvanların olduğu 4 dış ekran teması"
+    ],
+    "Karşılıklı bağlantı": [
+      "Yeni: Dış ekrandaki cihazlar arası kamera bilgisayarınızda veya tabletinizde görüntülü aramalar için kullanılabilir"
+    ],
+    "Ana ekran": [
+      "Yeni: Seyahat kodları ve ödeme kodları dış ekranda kullanılabilir"
+    ],
+    "Saat": [
+      "Onarım: Alarm çaldıktan sonra tuşlar kullanılarak kapatılamadı"
+    ],
+    "Galeri": [
+      "Optimizasyon: Oynatma düzgünlüğünü geliştirmek için video senkronizasyonu stratejisi iyileştirildi",
+      "Onarım: Kısa sürede çok sayıda fotoğraf oluşturulduğunda Galeri^deki küçük fotoğrafların önizlemesinin yüklenmesi çok uzun sürdü",
+      "Onarım: Cloud senkronizasyonu sırasında fotoğraf zaman damgaları kaybolarak tarihlerin yanlış olmasına neden oldu",
+      "Onarım: Silinen fotoğraflar cloud senkronizasyonu sırasında kaldırıldıktan sonra tekrar göründü",
+      "Onarım: Anılar bazı cihaz modellerinde oynatılamadı",
+      "Onarım: Arka arkaya çok sayıda fotoğraf çekildiğinde Galeri^deki küçük resimlerin önizlemesi anormal şekilde görüntülendi"
+    ]
+  },
+  "logs_id": {
+    "Other": [
+      "Optimized system performance",
+      "Improved system security and stability"
+    ]
+  },
+  "logs_vi": {
+    "Tiện ích": [
+      "Mới: Trợ lý du lịch có thể thông báo cho bạn về chuyến bay và chuyến tàu của bạn"
+    ],
+    "Hệ thống": [
+      "Tối ưu: Cải thiện chiến lược khôi phục tài nguyên hệ thống khi chuyển đổi ứng dụng để tăng cường độ mượt của ứng dụng",
+      "Tối ưu: Cải thiện tải trước ứng dụng để nâng cao tốc độ khởi động ứng dụng",
+      "Tối ưu: Chiến lược hoạt ảnh khởi động mới giúp giảm độ trễ khởi chạy ứng dụng",
+      "Sửa: Có quá nhiều thông báo có thể khiến hệ thống khởi động lại",
+      "Cập nhật bản vá bảo mật đến tháng 7 năm 2024. Tăng cường bảo mật hệ thống."
+    ],
+    "Trí tuệ chủ động": [
+      "Mới: Khám phá những cách thông minh hơn để nhập văn bản trên màn hình ngoài",
+      "Mới: Với phiên bản mới nhất của Mi AI, thiết bị của bạn có thể nhận dạng các mục trong ảnh và giải các bài toán, xóa đối tượng, mở rộng ảnh, thay đổi hình nền và thêm hiệu ứng",
+      "Mới: Với phiên bản mới nhất của Mi AI, Tóm tắt AI hỗ trợ tài liệu Word và PDF lên đến 15 MB",
+      "Mới: Với phiên bản mới nhất của Mi AI và Thư viện, bạn có thể chọn các mục, thêm nhắc nhở văn bản và tạo video bằng AI",
+      "Mới: Với AI, Ghi chú hỗ trợ các khả năng như tóm tắt AI, bố cục thông minh, sửa lỗi và dịch thuật ngay",
+      "Mới: AI cung cấp khả năng phiên dịch đồng thời trong các cuộc gọi và cuộc họp trực tuyến giữa tiếng Trung, tiếng Anh, tiếng Pháp, tiếng Đức, tiếng Hindi, tiếng Indonesia, tiếng Ý, tiếng Nhật, tiếng Hàn, tiếng Bồ Đào Nha, tiếng Nga và tiếng Tây Ban Nha."
+    ],
+    "Màn hình khóa": [
+      "Mới: 4 chủ đề màn hình ngoài cùng thú cưng dễ thương"
+    ],
+    "Liên thông": [
+      "Mới: Có thể sử dụng camera đa thiết bị ở màn hình ngoài cho cuộc gọi video trên máy tính hoặc máy tính bảng"
+    ],
+    "Màn hình chính": [
+      "Mới: Mã đi xe và mã thanh toán có thể được sử dụng trên màn hình ngoài"
+    ],
+    "Đồng hồ": [
+      "Sửa: Không thể tắt báo thức bằng các phím sau khi đổ chuông"
+    ],
+    "Thư viện": [
+      "Tối ưu: Chiến lược đồng bộ video được cải thiện để nâng cao độ mượt khi phát",
+      "Sửa: Hình thu nhỏ xem trước trong Thư viện mất quá nhiều thời gian để tải khi một số lượng lớn ảnh được tạo trong một khoảng thời gian ngắn",
+      "Sửa: Dấu thời gian của ảnh bị mất trong quá trình đồng bộ đám mây, khiến ngày không chính xác",
+      "Sửa: Ảnh đã xóa xuất hiện trở lại sau khi xóa trong quá trình đồng bộ đám mây",
+      "Sửa: Không thể phát kỷ niệm trên một số mẫu thiết bị",
+      "Sửa: Hình thu nhỏ xem trước trong Thư viện hiển thị bất thường khi chụp liên tiếp nhiều ảnh"
+    ]
+  },
+  "logs_th": {
+    "วิดเจ็ต": [
+      "ใหม่: ผู้ช่วยการเดินทางสามารถแจ้งให้คุณทราบเกี่ยวกับเที่ยวบินและรถไฟของคุณได้"
+    ],
+    "ระบบ": [
+      "การเพิ่มประสิทธิภาพ: ปรับปรุงกลยุทธ์การกู้คืนทรัพยากรระบบเมื่อสลับแอปเพื่อปรับปรุงความราบรื่นของแอป",
+      "การเพิ่มประสิทธิภาพ: ปรับปรุงการโหลดแอปล่วงหน้าเพื่อเพิ่มความเร็วในการเริ่มต้นแอป",
+      "การเพิ่มประสิทธิภาพ: กลยุทธ์แอนิเมชั่นการเริ่มต้นใหม่ช่วยลดความล่าช้าในการเปิดแอป",
+      "แก้ไข: การมีการแจ้งเตือนมากเกินไปอาจทำให้ระบบรีสตาร์ทได้",
+      "อัปเดตแพตช์ความปลอดภัยเป็นเดือนกรกฎาคม 2024 เพิ่มความปลอดภัยของระบบ"
+    ],
+    "ระบบอัจฉริยะที่ใช้งานอยู่": [
+      "ใหม่: สำรวจวิธีที่ชาญฉลาดยิ่งขึ้นในการป้อนข้อความบนหน้าจอด้านนอก",
+      "ใหม่: ด้วย Mi AI เวอร์ชันล่าสุด อุปกรณ์ของคุณจะสามารถจดจำรายการต่างๆ ในภาพและแก้ปัญหาทางคณิตศาสตร์ ลบวัตถุ ขยายรูปภาพ เปลี่ยนพื้นหลัง และเพิ่มเอฟเฟ็กต์ได้",
+      "ใหม่: ด้วย Mi AI เวอร์ชันล่าสุด สรุปด้วย AI รองรับเอกสาร Word และ PDF สูงสุด 15 MB แล้ว",
+      "ใหม่: ด้วย Mi AI และคลังภาพเวอร์ชันล่าสุด คุณสามารถเลือกรายการ เพิ่มข้อความแจ้ง และสร้างวิดีโอโดยใช้ AI ได้",
+      "ใหม่: ด้วย AI บันทึกย่อสนับสนุนความสามารถต่างๆ เช่น สรุป AI, เค้าโครงอัจฉริยะ, การแก้ไขข้อผิดพลาด และการแปลทันที",
+      "ใหม่: AI ให้การตีความพร้อมกันระหว่างการโทรและการประชุมออนไลน์ระหว่างภาษาจีน อังกฤษ ฝรั่งเศส เยอรมัน ฮินดี อินโดนีเซีย อิตาลี ญี่ปุ่น เกาหลี โปรตุเกส รัสเซีย และสเปน"
+    ],
+    "ล็อคหน้าจอ": [
+      "ใหม่: 4 ธีมหน้าจอด้านนอกพร้อมสัตว์เลี้ยงแสนน่ารัก"
+    ],
+    "การเชื่อมต่อระหว่างกัน": [
+      "ใหม่: สามารถใช้กล้องข้ามอุปกรณ์บนหน้าจอด้านนอกสำหรับแฮงเอาท์วิดีโอบนคอมพิวเตอร์หรือแท็บเล็ตได้"
+    ],
+    "หน้าจอหลัก": [
+      "ใหม่: รหัสขับขี่และรหัสชำระเงินสามารถใช้บนหน้าจอด้านนอกได้"
+    ],
+    "นาฬิกา": [
+      "แก้ไข: ไม่สามารถปิดการปลุกโดยใช้ปุ่มหลังจากที่ปลุกดังแล้ว"
+    ],
+    "คลังภาพ": [
+      "การเพิ่มประสิทธิภาพ: ปรับปรุงกลยุทธ์การซิงโครไนซ์วิดีโอเพื่อเพิ่มความราบรื่นในการเล่น",
+      "แก้ไข: การแสดงตัวอย่างภาพขนาดย่อในคลังภาพใช้เวลาโหลดนานเกินไปเมื่อมีการสร้างภาพจำนวนมากในช่วงเวลาสั้นๆ",
+      "แก้ไข: การประทับเวลารูปภาพสูญหายระหว่างการซิงค์บนคลาวด์ ทำให้วันที่ไม่ถูกต้อง",
+      "แก้ไข: รูปภาพที่ถูกลบปรากฏขึ้นอีกครั้งหลังจากถูกลบออกระหว่างการซิงโครไนซ์บนคลาวด์",
+      "แก้ไข: ไม่สามารถเล่นความทรงจำบนอุปกรณ์บางรุ่นได้",
+      "แก้ไข: ภาพตัวอย่างขนาดย่อในคลังภาพแสดงผิดปกติเมื่อถ่ายภาพจำนวนมากติดต่อกัน"
+    ]
+  },
+  "logs_ar": {
+    "الإضافات": [
+      "الجديد: يمكن لمساعد السفر إبلاغك برحلات الطيران والقطارات"
+    ],
+    "النظام": [
+      "التحسين: استراتيجية استرداد موارد النظام عند تبديل التطبيقات لتحسين سلاسة تشغيلها",
+      "التحسين: التحميل المسبق للتطبيق لتحسين سرعة بدء تشغيله",
+      "التحسين: استراتيجية بدء الرسوم المتحركة لتقليل تأخير بدء تشغيل التطبيق",
+      "الإصلاح: وجود عدد كبير جدًا من الإشعارات أدى إلى إعادة تشغيل النظام",
+      "تم تحديث تصحيح الأمان إلى يوليو 2024 لزيادة أمان النظام."
+    ],
+    "التفاعل الذكي": [
+      "الجديد: اكتشف طرق ذكية لإدخال النص على الشاشة الخارجية",
+      "الجديد: باستخدام أحدث إصدار من Mi AI، يمكن لجهازك التعرف على العناصر الموجودة في الصور وحل المسائل الرياضية ومسح العناصر وتوسيع الصور وتغيير الخلفيات وإضافة التأثيرات",
+      "الجديد: يدعم الإصدار الأحدث من Mi AI ملاحظات الذكاء الاصطناعي لمستندات Word وPDF التي يصل حجمها إلى 15 ميجابايت",
+      "الجديد: يدعم أحدث إصدار من Mi AI والمعرض تحديد العناصر وإضافة التسميات التوضيحية وإنشاء مقاطع فيديو باستخدام الذكاء الاصطناعي",
+      "الجديد: يدعم تطبيق الملاحظات المدعوم بالذكاء الاصطناعي، ميزات مثل ملخص الذكاء الاصطناعي والتخطيطات الذكية وتصحيح الأخطاء والترجمة",
+      "الجديد: يوفر الذكاء الاصطناعي ترجمة فورية أثناء المكالمات والاجتماعات عبر الإنترنت ما بين اللغات الصينية والإنجليزية والفرنسية والألمانية والهندية والإندونيسية والإيطالية واليابانية والكورية والبرتغالية والروسية والإسبانية."
+    ],
+    "شاشة القفل": [
+      "الجديد: 4 ثيمات لحيوانات أليفة لطيفة على الشاشة الخارجية"
+    ],
+    "الاتصال البيني": [
+      "الجديد: يمكن استخدام الكاميرا عبر الأجهزة الموجودة على الشاشة الخارجية لإجراء مكالمات الفيديو على الكمبيوتر أو الجهاز اللوحي"
+    ],
+    "الشاشة الرئيسية": [
+      "الجديد: يمكن استخدام رموز الركوب وأكواد الدفع على الشاشة الخارجية"
+    ],
+    "الساعة": [
+      "الإصلاح: لا يمكن إيقاف تشغيل المنبه باستخدام الأزرار بعد رنينه"
+    ],
+    "المعرض": [
+      "التحسين: استراتيجية مزامنة الفيديو لتحسين سلاسة التشغيل",
+      "الإصلاح: استغراق وقت طويل لتحميل الصور المصغرة لمعاينة المعرض عندما يتم إنشاء عدد كبير من الصور في فترة قصيرة",
+      "الإصلاح: فقدان الطوابع الزمنية للصور أثناء المزامنة إلى Cloud، مما تسبب في عرض تواريخ غير صحيحة",
+      "الإصلاح: مشكلة عودة الصور للظهور بعد حذفها أثناء المزامنة إلى Cloud",
+      "الإصلاح: لا يمكن تشغيل الذكريات على بعض طرز الأجهزة",
+      "الإصلاح: تظهر معاينة الصور المصغرة في المعرض بشكل غير طبيعي عند التقاط عدد كبير من الصور على التوالي"
+    ]
   }
 }

@@ -335,6 +335,24 @@ curl -fsSL https://api.miuier.com/v3/devices/agate.json
 
 ---
 
+## Credits
+
+本仓库的数据管线依赖以下运行时、平台与数据源，谨向各作者与社区致谢。
+
+| 名称 | 用途 | 许可 |
+| --- | --- | --- |
+| [Python 3](https://www.python.org/) | `scripts/` 全部抓取 / 导出 / 部署脚本（仅用标准库） | PSF-2.0 |
+| [Node.js](https://nodejs.org/) | `../app/web/scripts/generate-index.mjs` 生成 v3 索引、按年分片与 `releases/*.json` | MIT |
+| [MySQL](https://www.mysql.com/) | 数据存储（InnoDB / utf8mb4；`devices` / `roms` / `branches` / `series`） | GPL-2.0 / 商业许可 |
+| [Cloudflare Pages](https://pages.cloudflare.com/) | `api.miuier.com` 托管与 deploy hook 自动部署 | Cloudflare 服务条款 |
+| [GitHub](https://github.com/) | 仓库托管、子模块与 Raw 分发 | GitHub 服务条款 |
+| 小米更新服务器（`update.miui.com`） | ROM 版本号、下载地址与更新日志（经 `network` / `crypto` / `firmware` 抓取解密） | 数据与商标归小米科技所有 |
+| 小米社区（Mi Community） | Fastboot 包信息（`mgc_fastboot.py`） | 数据与商标归小米科技所有 |
+
+> MIUI、HyperOS、Xiaomi、Redmi、POCO 等为小米科技或其关联公司的商标；本仓库与小米科技无隶属关系。
+
+---
+
 ## License
 
 [Apache License 2.0](LICENSE)
