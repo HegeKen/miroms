@@ -50,5 +50,415 @@
     "Status bar, Notification shade": [
       "New: Some status bar icons now support custom display"
     ]
+  },
+  "logs_zh_tw": {
+    "系統動畫設計": [
+      "優化: 應用程式跳轉時的打斷動畫效果",
+      "優化: 進入應用程式二級頁時的打斷動畫效果"
+    ],
+    "系統": [
+      "新增: 桌面桌布支援模糊效果",
+      "優化: 部分經典頁面樣式更新",
+      "優化: 開啟應用程式時的動畫顯示效果",
+      "優化: 開啟/關閉應用程式動畫穩定性",
+      "修復: 開啟/關閉應用程式偶現桌布遺失問題",
+      "修復: 開啟/關閉應用程式偶現應用程式顯示異常問題"
+    ],
+    "鎖屏": [
+      "新增: 鎖定螢幕桌布支援透鏡效果"
+    ],
+    "設定": [
+      "優化: 桌面設定中，系統導覽方式頁的快速功能入口"
+    ],
+    "狀態欄、通知欄": [
+      "新增: 部分狀態列圖示支援自訂顯示"
+    ]
+  },
+  "logs_ja": {
+    "システムアニメーション": [
+      "最適化: アプリの遷移中にアニメーションを中断する",
+      "最適化: アプリ内のサブページに入るときの中断アニメーション"
+    ],
+    "基本的な使用体験": [
+      "最適化: ストレージ更新アルゴリズムを調整し、より頻繁に起動するようにしました"
+    ],
+    "システム": [
+      "新機能: ホーム画面の壁紙がぼかし効果をサポートするようになりました",
+      "最適化: いくつかのクラシックページのスタイルをアップデートしました",
+      "最適化: アプリ起動時のアニメーション効果",
+      "最適化: アプリを開いたり閉じたりするときのアニメーションの安定性",
+      "修正: アプリを開いたり閉じたりするとまれに壁紙が消える不具合",
+      "修正: アプリを開いたり閉じたりすると時々表示が乱れる不具合"
+    ],
+    "ロック画面": [
+      "新機能: ロック画面の壁紙がレンズ効果をサポートするようになりました"
+    ],
+    "ステータスバー、通知シェード": [
+      "新機能: 一部のステータスバーアイコンがカスタム表示をサポートするようになりました"
+    ],
+    "設定": [
+      "最適化: ホーム画面の設定にシステムナビゲーション設定へのショートカットを追加しました"
+    ]
+  },
+  "logs_ko": {
+    "시스템 애니메이션": [
+      "최적화: 앱 전환 중에 애니메이션이 중단되는 문제",
+      "최적화: 앱 내 하위 페이지 진입 시의 중단 애니메이션"
+    ],
+    "기본 사용 경험": [
+      "최적화: 저장소 새로고침 알고리즘을 조정하여 더 자주 활성됨"
+    ],
+    "시스템": [
+      "New: 홈 화면 배경화면에 블러 효과 지원",
+      "최적화: 일부 클래식 페이지의 스타일 업데이트됨",
+      "최적화: 앱 실행 시 애니메이션 효과",
+      "최적화: 앱을 열고 닫을 때 애니메이션 안정성",
+      "수정: 앱을 열거나 닫을 때 드물게 배경화면이 사라지는 문제",
+      "수정: 앱을 열거나 닫을 때 가끔씩 디스플레이 오류가 발생하는 문제"
+    ],
+    "잠금화면": [
+      "New: 잠금화면 배경화면에 렌즈 효과 지원"
+    ],
+    "상태 바, 알림 바": [
+      "New: 일부 상태 바 아이콘에 사용자지정 디스플레이 지원"
+    ],
+    "설정": [
+      "최적화: 홈 화면 설정에 시스템 탐색 설정 바로가기 추가됨"
+    ]
+  },
+  "logs_ru": {
+    "Системные анимации": [
+      "Оптимизация: Прерывание анимации при переходе между приложениями",
+      "Оптимизация: Анимация прерывания при переходе на подстраницы в приложениях"
+    ],
+    "Основной опыт взаимодействия": [
+      "Оптимизация: Отрегулирован алгоритм обновления хранилища — теперь он срабатывает чаще"
+    ],
+    "Система": [
+      "Новое: Обои Рабочего стола теперь поддерживают эффект размытия",
+      "Оптимизация: Обновленные стили некоторых классических страниц",
+      "Оптимизация: Анимационные эффекты при запуске приложений",
+      "Оптимизация: Стабильность анимации во время запуска и закрытия приложений",
+      "Исправлено: Исправлена проблема, из-за которой в редких случаях обои исчезали при открытии или закрытии приложений",
+      "Исправлено: Исправлены редкие графические сбои при открытии и закрытии приложений"
+    ],
+    "Экран блокировки": [
+      "Новое: Обои экрана блокировки теперь поддерживают эффект линзы"
+    ],
+    "Строка состояния, шторка уведомлений": [
+      "Новое: Некоторые значки строки состояния теперь могут быть настроены пользователем"
+    ],
+    "Настройки": [
+      "Оптимизация: Добавлен ярлык для настроек способа навигации в Настройках рабочего стола"
+    ]
+  },
+  "logs_uk": {
+    "Системна анімація": [
+      "Оптимізація: Переривання анімації під час переходів між застосунками",
+      "Оптимізація: Переривання анімації при вході на підсторінки в програмах"
+    ],
+    "Основний досвід": [
+      "Оптимізація: Змінено алгоритм оновлення сховища, щоб він активувався частіше"
+    ],
+    "Система": [
+      "Нове: Робочий стіл тепер підтримує ефект розмиття",
+      "Оптимізація: Оновлені стилі для деяких класичних сторінок",
+      "Оптимізація: Ефекти анімації під час запуску застосунків",
+      "Оптимізація: Стабільність анімації під час відкриття та закриття програм",
+      "Виправлено: Шпалери зникали в деяких випадках при відкритті або закритті програм",
+      "Виправлено: Випадкові збої в роботі екрана при відкритті або закритті програм"
+    ],
+    "Екран блокування": [
+      "Нове: Фонові зображення екрана блокування тепер підтримують ефект лінзи"
+    ],
+    "Рядок стану, Панель сповіщень": [
+      "Нове: Деякі піктограми в рядку стану тепер підтримують користувацьке відображення"
+    ],
+    "Налаштування": [
+      "Оптимізація: Додано ярлик до «Способів навігації» в «Налаштуваннях робочого столу»"
+    ]
+  },
+  "logs_pl": {
+    "Animacje systemowe": [
+      "Zoptymalizowano: Przerywanie animacji podczas przejść w aplikacji",
+      "Zoptymalizowano: Przerywanie animacji podczas wchodzenia na podstrony w aplikacjach"
+    ],
+    "Fundamentalne zadowolenie użytkownika": [
+      "Zoptymalizowano: Poprawiono algorytm odświeżania pamięci masowej, by aktywował się częściej."
+    ],
+    "System": [
+      "Nowe: Tapeta ekranu głównego obsługuje teraz efekt rozmycia",
+      "Zoptymalizowano: Zaktualizowano wygląd części klasycznych stron",
+      "Zoptymalizowano: Efekty animacji podczas uruchamiania aplikacji",
+      "Zoptymalizowano: Stabilność animacji podczas otwierania i zamykania aplikacji.",
+      "Naprawiono: Okazjonalne znikanie tapet podczas otwierania lub zamykania aplikacji.",
+      "Naprawiono: Sporadyczne błędy wyświetlania podczas otwierania lub zamykania aplikacji."
+    ],
+    "Ekran blokady": [
+      "Nowe: Tapety ekranu blokady obsługują teraz efekt soczewki"
+    ],
+    "Pasek powiadomień, Panel powiadomień": [
+      "Nowe: Niektóre ikony paska stanu obsługują teraz niestandardowe tryby wyświetlania"
+    ],
+    "Ustawienia": [
+      "Zoptymalizowano: Dodano skrót do ustawień nawigacji systemowej w ustawieniach ekranu głównego"
+    ]
+  },
+  "logs_de": {
+    "System animations": [
+      "Optimization: Interrupt animation during app transitions",
+      "Optimization: Interrupt animation when entering subpages within apps"
+    ],
+    "System": [
+      "New: Home screen wallpaper now supports a blur effect",
+      "Optimization: Updated styles for some classic pages",
+      "Optimization: Animation effects when launching apps",
+      "Optimization: Stability of animations when opening and closing apps",
+      "Fix: Wallpapers disappeared in rare cases when opening or closing apps",
+      "Fix: Occasional display glitches when opening or closing apps"
+    ],
+    "Lock screen": [
+      "New: Lock screen wallpapers now support lens effect"
+    ],
+    "Settings": [
+      "Optimization: Added a shortcut to system navigation settings in Home screen settings"
+    ],
+    "Status bar, Notification shade": [
+      "New: Some status bar icons now support custom display"
+    ]
+  },
+  "logs_fr": {
+    "Animations système": [
+      "Optimisation: Interrompre l’animation pendant les transitions de l’application",
+      "Optimisation: Interruption de l’animation lors de la saisie des sous-pages dans les applications"
+    ],
+    "Expérience basique ": [
+      "Optimisation: L^algorithme d^actualisation du stockage a été modifié afin qu^il s^active plus souvent"
+    ],
+    "Système": [
+      "Nouveau: Le fond d^écran d^accueil prend maintenant en charge un effet de flou",
+      "Optimisation: Mise à jour des styles pour certaines pages classiques",
+      "Optimisation: Effets d’animation lors du lancement des applications",
+      "Optimisation: Stabilité des animations lors de l’ouverture et la fermeture des applications",
+      "Réparé: Les fonds d^écran disparaissaient dans de rares cas lors de l^ouverture ou de la fermeture d^applications",
+      "Réparé: Problèmes d^affichage occasionnels lors de l^ouverture ou de la fermeture d^applications"
+    ],
+    "Écran de verrouillage": [
+      "Nouveau: Les fonds d’écran de verrouillage prennent maintenant en charge l’effet de lentille"
+    ],
+    "Barre d'état, Panneau de notification": [
+      "Nouveau: Certaines icônes de barre d’état prennent maintenant en charge l’affichage personnalisé"
+    ],
+    "Paramètres": [
+      "Optimisation: Ajout d’un raccourci vers les paramètres de navigation du système dans les paramètres de l’écran d’accueil"
+    ]
+  },
+  "logs_it": {
+    "Animazioni di sistema": [
+      "Ottimizzazione: Interruzione dell^animazione durante le transizioni delle app",
+      "Ottimizzazione: Interruzione dell^animazione durante l^accesso alle sottopagine all^interno delle app"
+    ],
+    "Esperienza di base": [
+      "Ottimizzazione: Modificato l^algoritmo di aggiornamento dell‘archiviazione in modo che si attivi più spesso"
+    ],
+    "Sistema": [
+      "Nuovo: Lo sfondo della schermata Home ora supporta l^effetto sfocatura",
+      "Ottimizzazione: Stili aggiornati per alcune pagine classiche",
+      "Ottimizzazione: Effetti di animazione all^avvio delle app",
+      "Ottimizzazione: Stabilità delle animazioni durante l^apertura e la chiusura delle app",
+      "Risolto: Gli sfondi scomparivano in rari casi all’apertura o chiusura delle app",
+      "Risolto: Problemi di visualizzazione occasionali all’apertura o chiusura delle app"
+    ],
+    "Schermata di blocco": [
+      "Nuovo: Gli sfondi della schermata di blocco ora supportano l^effetto obiettivo"
+    ],
+    "Barra di stato, Area delle notifiche": [
+      "Nuovo: Alcune icone della barra di stato ora supportano la visualizzazione personalizzata"
+    ],
+    "Impostazioni": [
+      "Ottimizzazione: Aggiunto un collegamento alle impostazioni di navigazione del sistema nelle impostazioni della schermata Home"
+    ]
+  },
+  "logs_es": {
+    "Animaciones del sistema": [
+      "Optimización: Interrumpir la animación durante las transiciones de aplicaciones",
+      "Optimización: Animación de interrupción al ingresar a subpáginas dentro de las aplicaciones"
+    ],
+    "Expericencia básica": [
+      "Optimización: Se ajustó el algoritmo de actualización del almacenamiento para que se active con más frecuencia"
+    ],
+    "Sistema": [
+      "Nuevo: El fondo de la Pantalla de inicio ahora admite un efecto de desenfoque",
+      "Optimización: Estilos actualizados para algunas páginas clásicas",
+      "Optimización: Efectos de animación al iniciar aplicaciones",
+      "Optimización: Estabilidad de las animaciones al abrir y cerrar aplicaciones",
+      "Reparado: Los fondos de pantalla desaparecían en casos al abrir o cerrar aplicaciones",
+      "Reparado: Fallos ocasionales en la visualización al abrir o cerrar aplicaciones"
+    ],
+    "Pantalla de bloqueo": [
+      "Nuevo: Los fondos de la Pantalla de bloqueo ahora admiten el efecto de lente"
+    ],
+    "Barra de estado, Barra de notificaciones": [
+      "Nuevo: Algunos iconos de la barra de estado ahora admiten la visualización personalizada"
+    ],
+    "Ajustes": [
+      "Optimización: Se agregó un acceso directo a la configuración de navegación del sistema en la configuración de la Pantalla de inicio"
+    ]
+  },
+  "logs_pt": {
+    "Animações do sistema": [
+      "Otimização: Interrupção de animação durante transições de apps",
+      "Otimização: Animação de interrupção ao entrar em subpáginas dentro de apps"
+    ],
+    "Experiência básica": [
+      "Otimização: Algoritmo de atualização do armazenamento otimizado para ser acionado mais vezes"
+    ],
+    "Sistema": [
+      "Novo: O Plano de fundo da Tela inicial agora suporta o efeito de desfoque",
+      "Otimização: Estilos atualizados para algumas páginas clássicas",
+      "Otimização: Efeitos de animação ao iniciar apps",
+      "Otimização: Estabilidade das animações ao abrir e fechar apps",
+      "Correção: Planos de fundo desapareciam em casos raros ao abrir e fechar apps",
+      "Correção: Erros de exibição ocasionais ao abrir ou fechar apps"
+    ],
+    "Tela de bloqueio": [
+      "Novo: Papéis de parede da Tela de bloqueio agora suportam efeito de lente"
+    ],
+    "Barra de status, Área de notificações": [
+      "Novo: Alguns ícones da barra de status agora suportam exibição personalizada"
+    ],
+    "Configurações": [
+      "Otimização: Adicionado um atalho para as configurações de navegação do sistema nas configurações da Tela inicial"
+    ]
+  },
+  "logs_tr": {
+    "Sistem animasyonları": [
+      "Optimizasyon: Uygulama geçişleri sırasında animasyonların kesintiye uğraması",
+      "Optimizasyon: Uygulamalar içinde alt sayfalara girerken kesinti animasyonu"
+    ],
+    "Temel deneyim": [
+      "Optimizasyon: Depolama yenileme algoritması daha sık etkinleşecek şekilde ayarlandı"
+    ],
+    "Sistem": [
+      "Yeni: Ana ekran duvar kağıdı artık bir bulanıklık efektini destekliyor",
+      "Optimizasyon: Bazı klasik sayfalar için güncellenmiş stiller",
+      "Optimizasyon: Uygulamaları başlatırken animasyon efektleri",
+      "Optimizasyon: Uygulamaları açıp kapatırken animasyonların kararlılığı",
+      "Onarım: Nadir durumlarda uygulamaları açarken veya kapatırken duvar kağıtları kayboldu",
+      "Onarım: Uygulamaları açarken veya kapatırken ara sıra ekran hataları oluşuyor"
+    ],
+    "Kilit ekranı": [
+      "Yeni: Kilit ekranı duvar kağıtları artık lens efektini destekliyor"
+    ],
+    "Durum çubuğu, Bildirim çubuğu": [
+      "Yeni: Bazı durum çubuğu simgeleri artık özel görüntülemeyi destekliyor"
+    ],
+    "Ayarlar": [
+      "Optimizasyon: Ana ekran ayarlarında sistem navigasyonu ayarlarına bir kısayol eklendi"
+    ]
+  },
+  "logs_id": {
+    "Animasi sistem": [
+      "Pengoptimalan: Animasi terganggu pada saat pergantian aplikasi",
+      "Pengoptimalan: Animasi interupsi saat masuk ke subhalaman di dalam aplikasi"
+    ],
+    "Pengalaman dasar": [
+      "Pengoptimalan: Algoritma penyegaran Penyimpanan diubah sehingga lebih sering aktif"
+    ],
+    "Sistem": [
+      "Baru: Wallpaper Layar utama kini mendukung efek blur",
+      "Pengoptimalan: Gaya yang diperbarui untuk beberapa halaman klasik",
+      "Pengoptimalan: Efek animasi saat meluncurkan aplikasi",
+      "Pengoptimalan: Stabilitas animasi saat membuka dan menutup aplikasi",
+      "Perbaikan: Wallpaper menghilang dalam kasus yang jarang terjadi saat membuka atau menutup aplikasi",
+      "Perbaikan: Gangguan tampilan sesekali saat membuka atau menutup aplikasi"
+    ],
+    "Layar kunci": [
+      "Baru: Wallpaper Layar kunci kini mendukung efek lensa"
+    ],
+    "Bar status, Layar notiifikasi": [
+      "Baru: Beberapa ikon bilah status kini mendukung tampilan kustom"
+    ],
+    "Setelan": [
+      "Pengoptimalan: Pintasan ke setelan navigasi sistem ditambahkan di setelan Layar utama"
+    ]
+  },
+  "logs_vi": {
+    "Ảnh động hệ thống": [
+      "Tối ưu: Hoạt ảnh gián đoạn trong quá trình chuyển tiếp ứng dụng",
+      "Tối ưu: Hoạt ảnh gián đoạn khi vào các trang phụ trong ứng dụng"
+    ],
+    "Trải nghiệm cơ bản": [
+      "Tối ưu: Đã điều chỉnh thuật toán làm mới Lưu trữ để kích hoạt thường xuyên hơn"
+    ],
+    "Hệ thống": [
+      "Mới: Hình nền Màn hình chính hiện hỗ trợ hiệu ứng làm mờ",
+      "Tối ưu: Cập nhật phong cách cho một số trang cổ điển",
+      "Tối ưu: Hiệu ứng hoạt ảnh khi khởi chạy ứng dụng",
+      "Tối ưu: Độ ổn định của hoạt ảnh khi mở và đóng ứng dụng",
+      "Sửa: Hình nền biến mất trong một số ít trường hợp hiếm gặp khi mở hoặc đóng ứng dụng",
+      "Sửa: Thỉnh thoảng xảy ra lỗi hiển thị khi mở hoặc đóng ứng dụng"
+    ],
+    "Màn hình khóa": [
+      "Mới: Hình nền Màn hình khóa hiện hỗ trợ hiệu ứng ống kính"
+    ],
+    "Thanh trạng thái, Thanh thông báo": [
+      "Mới: Một số biểu tượng thanh trạng thái hiện hỗ trợ hiển thị tùy chỉnh"
+    ],
+    "Cài đặt": [
+      "Tối ưu: Đã thêm lối tắt vào cài đặt điều hướng hệ thống trong cài đặt Màn hình chính"
+    ]
+  },
+  "logs_th": {
+    "ภาพเคลื่อนไหวของระบบ": [
+      "การเพิ่มประสิทธิภาพ: ขัดจังหวะภาพเคลื่อนไหวระหว่างการเปลี่ยนแอป",
+      "การเพิ่มประสิทธิภาพ: แอนิเมชั่นการขัดจังหวะเมื่อเข้าสู่หน้าย่อยภายในแอป"
+    ],
+    "ประสบการณ์พื้นฐาน": [
+      "การเพิ่มประสิทธิภาพ: ปรับแต่งอัลกอริธึมการรีเฟรชที่เก็บข้อมูลเพื่อให้เปิดใช้งานได้บ่อยขึ้น"
+    ],
+    "ระบบ": [
+      "ใหม่: ภาพพื้นหลังหน้าจอหลักรองรับเอฟเฟกต์เบลอแล้ว",
+      "การเพิ่มประสิทธิภาพ: ปรับปรุงสไตล์สำหรับบางหน้าแบบคลาสสิก",
+      "การเพิ่มประสิทธิภาพ: เอฟเฟกต์ภาพเคลื่อนไหวเมื่อเปิดแอป",
+      "การเพิ่มประสิทธิภาพ: ความเสถียรของภาพเคลื่อนไหวเมื่อเปิดและปิดแอป",
+      "แก้ไข: ภาพพื้นหลังจะหายไปในบางกรณีเมื่อเปิดหรือปิดแอป",
+      "แก้ไข: การแสดงผลผิดพลาดเป็นครั้งคราวเมื่อเปิดหรือปิดแอป"
+    ],
+    "ล็อคหน้าจอ": [
+      "ใหม่: ภาพพื้นหลังหน้าจอล็อกรองรับเอฟเฟกต์เลนส์แล้ว"
+    ],
+    "แถบสถานะ, แถบแจ้งเตือน": [
+      "ใหม่: ไอคอนแถบสถานะบางรายการรองรับการแสดงผลแบบกำหนดเองแล้ว"
+    ],
+    "การตั้งค่า": [
+      "การเพิ่มประสิทธิภาพ: เพิ่มทางลัดไปยังการตั้งค่าการนำทางระบบในการตั้งค่าหน้าจอหลัก"
+    ]
+  },
+  "logs_ar": {
+    "نظام الرسوم المتحركة": [
+      "التحسين: عرض رسوم متحركة للمقاطعة عند التنقل بين التطبيقات",
+      "التحسين: عرض رسوم متحركة للمقاطعة عند الدخول إلى الصفحات الفرعية داخل التطبيقات"
+    ],
+    "الخبرة الأساسية": [
+      "التحسين: تحسين خوارزمية تحديث التخزين لتعمل بشكل أكثر انتظام"
+    ],
+    "النظام": [
+      "الجديد: تدعم خلفية الشاشة الرئيسية الآن تأثير التمويه",
+      "التحسين: تحديث تصميم بعض الصفحات الكلاسيكية",
+      "التحسين: تأثيرات رسوم متحركة عند فتح التطبيقات",
+      "التحسين: استقرار الرسوم المتحركة عند فتح وإغلاق التطبيق",
+      "الإصلاح: تم إصلاح مشكلة اختفاء الخلفية أحيانًا عند فتح أو إغلاق التطبيقات",
+      "الإصلاح: تم إصلاح مشكلة ظهور رسومات غير طبيعية أحيانًا عند فتح أو إغلاق التطبيقات"
+    ],
+    "شاشة القفل": [
+      "الجديد: تدعم خلفيات شاشة القفل الآن تأثير العدسة"
+    ],
+    "شريط الحالة ومركز الإشعارات": [
+      "الجديد: تدعم بعض أيقونات شريط الحالة االآن العرض المخصص"
+    ],
+    "الإعدادات": [
+      "التحسين: تمت إضافة اختصار لإعدادات التنقل في النظام في إعدادات الشاشة الرئيسية"
+    ]
   }
 }

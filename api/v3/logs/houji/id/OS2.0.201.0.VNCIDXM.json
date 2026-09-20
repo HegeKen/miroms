@@ -78,5 +78,639 @@
       "Fix: Issues with announcements for unselected items in Calendar and other apps",
       "Fix: Some buttons weren^t announced in several apps, including Settings, Control center, Messaging, Contacts, Weather, Notes, and Browser"
     ]
+  },
+  "logs_zh_tw": {
+    "系統動畫設計": [
+      "優化: 進入應用程式二級頁時的打斷動畫效果",
+      "優化: 應用程式跳轉時的打斷動畫效果",
+      "優化: 關閉橫向應用程式時的打斷動畫效果"
+    ],
+    "系統": [
+      "新增: 桌面桌布支援模糊效果",
+      "優化: 部分場景的手勢提醒線沉浸效果",
+      "優化: 部分經典頁面樣式更新",
+      "優化: 開啟應用程式時的動畫顯示效果",
+      "優化: 部分三方應用程式的資訊流頁面流暢度",
+      "優化: 開啟/關閉應用程式動畫穩定性",
+      "修復: 部分場景手勢失效問題",
+      "修復: 開啟/關閉應用程式動畫顯示異常問題",
+      "修復: 開啟/關閉應用程式偶現桌布遺失問題",
+      "修復: 開啟/關閉應用程式偶現應用程式顯示異常問題"
+    ],
+    "鎖屏": [
+      "新增: 東方美學鎖定螢幕模板",
+      "新增: 鎖定螢幕桌布支援透鏡效果",
+      "新增: 鎖定螢幕自訂快速功能"
+    ],
+    "設定": [
+      "優化: 桌面設定中，系統導覽方式頁的快速功能入口"
+    ],
+    "狀態欄、通知欄": [
+      "新增: 部分狀態列圖示支援自訂顯示"
+    ],
+    "無障礙服務": [
+      "修復: 部分場景 TalkBack 觸控操作失效的問題",
+      "修復: TalkBack 模式下音量調整失效的問題",
+      "修復: 錄音機錄製到 TalkBack 聲音的問題",
+      "修復: 日曆等應用程式無選中狀態提醒播報問題",
+      "修復: 部分應用程式按鈕不播報的問題，包括設定、控制中心、簡訊、聯絡人、天氣、筆記、瀏覽器等"
+    ]
+  },
+  "logs_ja": {
+    "アクセシビリティ": [
+      "修正: TalkBack モードでタッチジェスチャーが機能しない不具合",
+      "修正: TalkBack モードで音量ボタンが機能しない不具合",
+      "修正: レコーダーが TalkBack オーディオをキャプチャできない問題",
+      "修正: カレンダーやその他のアプリで選択されていないアイテムのアナウンスに関する問題",
+      "修正: 設定、コントロールセンター、メッセージ、連絡先、天気、メモ、ブラウザーを含む複数のアプリで一部のボタンがアナウンスされない不具合"
+    ],
+    "システムアニメーション": [
+      "最適化: アプリ内のサブページに入るときの中断アニメーション",
+      "最適化: アプリの遷移中にアニメーションを中断する",
+      "最適化: 横向きモードでアプリを閉じるときにアニメーションを中断する"
+    ],
+    "基本的な使用体験": [
+      "最適化: ストレージ更新アルゴリズムを調整し、より頻繁に起動するようにしました"
+    ],
+    "システム": [
+      "新機能: ホーム画面の壁紙がぼかし効果をサポートするようになりました",
+      "最適化: 特定のシナリオにおける全画面表示ラインの没入感効果",
+      "最適化: いくつかのクラシックページのスタイルをアップデートしました",
+      "最適化: アプリ起動時のアニメーション効果",
+      "最適化: 一部のサードパーティアプリのコンテンツフィードのスクロールパフォーマンス",
+      "最適化: アプリを開いたり閉じたりするときのアニメーションの安定性",
+      "修正: 特定のシナリオでジェスチャーが正しく機能しない問題",
+      "修正: アプリを開いたり閉じたりするときのアニメーションの問題",
+      "修正: アプリを開いたり閉じたりするとまれに壁紙が消える不具合",
+      "修正: アプリを開いたり閉じたりすると時々表示が乱れる不具合"
+    ],
+    "ステータスバー、通知シェード": [
+      "新機能: 一部のステータスバーアイコンがカスタム表示をサポートするようになりました"
+    ],
+    "ロック画面": [
+      "新機能: 東洋の美学をテーマとしたロック画面テンプレート",
+      "新機能: ロック画面の壁紙がレンズ効果をサポートするようになりました",
+      "新機能: カスタマイズ可能なロック画面のショートカット"
+    ],
+    "設定": [
+      "最適化: ホーム画面の設定にシステムナビゲーション設定へのショートカットを追加しました"
+    ]
+  },
+  "logs_ko": {
+    "접근성": [
+      "수정: TalkBack 모드에서 터치 제스처가 작동하지 않는 문제",
+      "수정: TalkBack 모드에서 볼륨 버튼이 작동하지 않는 문제",
+      "수정: 녹음기가 TalkBack 오디오를 캡처하지 못하는 문제",
+      "수정: 캘린더 및 기타 앱에서 선택되지 않은 항목에 대한 알림 문제",
+      "수정: 설정, 제어 센터, 메시지, 연락처, 날씨, 메모, 브라우저 등 여러 앱에서 일부 버튼이 표시되지 않는 문제"
+    ],
+    "시스템 애니메이션": [
+      "최적화: 앱 내 하위 페이지 진입 시의 중단 애니메이션",
+      "최적화: 앱 전환 중에 애니메이션이 중단되는 문제",
+      "최적화: 가로 모드에서 앱을 닫을 시에 애니메이션이 중단되는 문제"
+    ],
+    "기본 사용 경험": [
+      "최적화: 저장소 새로고침 알고리즘을 조정하여 더 자주 활성됨"
+    ],
+    "시스템": [
+      "New: 홈 화면 배경화면에 블러 효과 지원",
+      "최적화: 특정 시나리오에서 전체화면 표시기에 대한 몰입 효과",
+      "최적화: 일부 클래식 페이지의 스타일 업데이트됨",
+      "최적화: 앱 실행 시 애니메이션 효과",
+      "최적화: 일부 타사 앱의 콘텐츠 피드에 대한 스크롤 성능",
+      "최적화: 앱을 열고 닫을 때 애니메이션 안정성",
+      "수정: 특정 시나리오에서 제스처가 제대로 작동하지 않는 문제",
+      "수정: 앱을 열고 닫을 시의 애니메이션 문제",
+      "수정: 앱을 열거나 닫을 때 드물게 배경화면이 사라지는 문제",
+      "수정: 앱을 열거나 닫을 때 가끔씩 디스플레이 오류가 발생하는 문제"
+    ],
+    "상태 바, 알림 바": [
+      "New: 일부 상태 바 아이콘에 사용자지정 디스플레이 지원"
+    ],
+    "잠금화면": [
+      "New: 동양적 미학 잠금화면 템플릿",
+      "New: 잠금화면 배경화면에 렌즈 효과 지원",
+      "New: 잠금화면 단축키 맞춤형 설정 가능"
+    ],
+    "설정": [
+      "최적화: 홈 화면 설정에 시스템 탐색 설정 바로가기 추가됨"
+    ]
+  },
+  "logs_ru": {
+    "Специальные возможности": [
+      "Исправлено: Исправлена проблема, из-за которой сенсорные жесты переставали работать в режиме TalkBack",
+      "Исправлено: Исправлена проблема с неработающими кнопками регулировки громкости в режиме TalkBack",
+      "Исправлено: Исправлены проблемы, мешавшие Диктофону захватывать звук функции TalkBack",
+      "Исправлено: Исправлены проблемы с озвучиванием невыбранных элементов в Календаре и других приложениях",
+      "Исправлено: Исправлена проблема, из-за которой некоторые кнопки не озвучивались в нескольких приложениях, включая «Настройки», «Центр управления», «Сообщения», «Контакты», «Погоду», «Заметки» и «Браузер»"
+    ],
+    "Системные анимации": [
+      "Оптимизация: Анимация прерывания при переходе на подстраницы в приложениях",
+      "Оптимизация: Прерывание анимации при переходе между приложениями",
+      "Оптимизация: Прерывание анимации при закрытии приложений в альбомном режиме"
+    ],
+    "Основной опыт взаимодействия": [
+      "Оптимизация: Отрегулирован алгоритм обновления хранилища — теперь он срабатывает чаще"
+    ],
+    "Система": [
+      "Новое: Обои Рабочего стола теперь поддерживают эффект размытия",
+      "Оптимизация: Эффект погружения для полноэкранного индикатора в определенных сценариях",
+      "Оптимизация: Обновленные стили некоторых классических страниц",
+      "Оптимизация: Анимационные эффекты при запуске приложений",
+      "Оптимизация: Производительность прокрутки лент контента в некоторых сторонних приложениях",
+      "Оптимизация: Стабильность анимации во время запуска и закрытия приложений",
+      "Исправлено: Жесты не работали должным образом в некоторых сценариях",
+      "Исправлено: Проблемы с анимациями при открытии или закрытии приложений",
+      "Исправлено: Исправлена проблема, из-за которой в редких случаях обои исчезали при открытии или закрытии приложений",
+      "Исправлено: Исправлены редкие графические сбои при открытии и закрытии приложений"
+    ],
+    "Строка состояния, шторка уведомлений": [
+      "Новое: Некоторые значки строки состояния теперь могут быть настроены пользователем"
+    ],
+    "Экран блокировки": [
+      "Новое: Шаблоны экранов блокировки в стиле восточной эстетики",
+      "Новое: Обои экрана блокировки теперь поддерживают эффект линзы",
+      "Новое: Настраиваемые ярлыки на экране блокировки"
+    ],
+    "Настройки": [
+      "Оптимизация: Добавлен ярлык для настроек способа навигации в Настройках рабочего стола"
+    ]
+  },
+  "logs_uk": {
+    "Спеціальні можливості": [
+      "Виправлено: Сенсорні жести перестали працювати в режимі TalkBack",
+      "Виправлено: Кнопки гучності не працювали в режимі TalkBack",
+      "Виправлено: Проблеми, через які диктофон не міг записувати звук TalkBack",
+      "Виправлено: Проблеми з оголошеннями для вибраних об^єктів у календарі та інших програмах",
+      "Виправлено: Деякі кнопки не були оголошені в декількох програмах, включаючи ^Налаштування^, ^Центр керування^, ^Повідомлення^, ^Контакти^, ^Погода^, ^Нотатки^ та ^Браузер^"
+    ],
+    "Системна анімація": [
+      "Оптимізація: Переривання анімації при вході на підсторінки в програмах",
+      "Оптимізація: Переривання анімації під час переходів між застосунками",
+      "Оптимізація: Переривання анімації під час закриття застосунків в альбомній орієнтації"
+    ],
+    "Основний досвід": [
+      "Оптимізація: Змінено алгоритм оновлення сховища, щоб він активувався частіше"
+    ],
+    "Система": [
+      "Нове: Робочий стіл тепер підтримує ефект розмиття",
+      "Оптимізація: Ефект занурення для індикатора повноекранного режиму в певних сценаріях",
+      "Оптимізація: Оновлені стилі для деяких класичних сторінок",
+      "Оптимізація: Ефекти анімації під час запуску застосунків",
+      "Оптимізація: Продуктивність прокручування стрічки новин в деяких сторонніх застосунках",
+      "Оптимізація: Стабільність анімації під час відкриття та закриття програм",
+      "Виправлено: Жести не працювали належним чином у певних сценаріях",
+      "Виправлено: Проблеми з анімаціями під час відкриття або закриття застосунків",
+      "Виправлено: Шпалери зникали в деяких випадках при відкритті або закритті програм",
+      "Виправлено: Випадкові збої в роботі екрана при відкритті або закритті програм"
+    ],
+    "Рядок стану, Панель сповіщень": [
+      "Нове: Деякі піктограми в рядку стану тепер підтримують користувацьке відображення"
+    ],
+    "Екран блокування": [
+      "Нове: Шаблони екрана блокування в східному стилі",
+      "Нове: Фонові зображення екрана блокування тепер підтримують ефект лінзи",
+      "Нове: Налаштовувані ярлики на екрані блокування"
+    ],
+    "Налаштування": [
+      "Оптимізація: Додано ярлик до «Способів навігації» в «Налаштуваннях робочого столу»"
+    ]
+  },
+  "logs_pl": {
+    "Dostępność": [
+      "Naprawiono: Gesty dotykowe przestawały działać w trybie TalkBack.",
+      "Naprawiono: Przyciski głośności nie działały w trybie TalkBack.",
+      "Naprawiono: Problemy, które uniemożliwiały aplikacji Dyktafon przechwytywanie dźwięku z funkcji TalkBack.",
+      "Naprawiono: Problemy z odczytywaniem na głos niezaznaczonych pozycji w Kalendarzu i innych aplikacjach.",
+      "Naprawiono: W kilku aplikacjach przyciski nie były prawidłowo odczytywane na głos. Dotyczyło to m.in. Ustawień, Centrum kontroli, Wiadomości, Kontaktów, Pogody, Notatek i Przeglądarki."
+    ],
+    "Animacje systemowe": [
+      "Zoptymalizowano: Przerywanie animacji podczas wchodzenia na podstrony w aplikacjach",
+      "Zoptymalizowano: Przerywanie animacji podczas przejść w aplikacji",
+      "Zoptymalizowano: Przerywanie animacji podczas zamykania aplikacji w trybie poziomym"
+    ],
+    "Fundamentalne zadowolenie użytkownika": [
+      "Zoptymalizowano: Poprawiono algorytm odświeżania pamięci masowej, by aktywował się częściej."
+    ],
+    "System": [
+      "Nowe: Tapeta ekranu głównego obsługuje teraz efekt rozmycia",
+      "Zoptymalizowano: Immersyjny wygląd wskaźnika pełnego ekranu w określonych sytuacjach",
+      "Zoptymalizowano: Zaktualizowano wygląd części klasycznych stron",
+      "Zoptymalizowano: Efekty animacji podczas uruchamiania aplikacji",
+      "Zoptymalizowano: Wydajność przewijania kanałów treści w niektórych aplikacjach innych firm",
+      "Zoptymalizowano: Stabilność animacji podczas otwierania i zamykania aplikacji.",
+      "Naprawiono: Gesty nie działały poprawnie w określonych sytuacjach",
+      "Naprawiono: Problemy z animacją podczas otwierania i zamykania aplikacji",
+      "Naprawiono: Okazjonalne znikanie tapet podczas otwierania lub zamykania aplikacji.",
+      "Naprawiono: Sporadyczne błędy wyświetlania podczas otwierania lub zamykania aplikacji."
+    ],
+    "Pasek powiadomień, Panel powiadomień": [
+      "Nowe: Niektóre ikony paska stanu obsługują teraz niestandardowe tryby wyświetlania"
+    ],
+    "Ekran blokady": [
+      "Nowe: Szablony ekranu blokady we wschodnim stylu",
+      "Nowe: Tapety ekranu blokady obsługują teraz efekt soczewki",
+      "Nowe: Konfigurowalne skróty ekranu blokady"
+    ],
+    "Ustawienia": [
+      "Zoptymalizowano: Dodano skrót do ustawień nawigacji systemowej w ustawieniach ekranu głównego"
+    ]
+  },
+  "logs_de": {
+    "System animations": [
+      "Optimization: Interrupt animation when entering subpages within apps",
+      "Optimization: Interrupt animation during app transitions",
+      "Optimization: Interrupt animation when closing apps in Landscape mode"
+    ],
+    "System": [
+      "New: Home screen wallpaper now supports a blur effect",
+      "Optimization: Immersive effect for full screen indicator in certain scenarios",
+      "Optimization: Updated styles for some classic pages",
+      "Optimization: Animation effects when launching apps",
+      "Optimization: Scrolling performance on content feeds in some third party apps",
+      "Optimization: Stability of animations when opening and closing apps",
+      "Fix: Gestures didn^t work properly in certain scenarios",
+      "Fix: Issues with animations when opening or closing apps",
+      "Fix: Wallpapers disappeared in rare cases when opening or closing apps",
+      "Fix: Occasional display glitches when opening or closing apps"
+    ],
+    "Lock screen": [
+      "New: Eastern aesthetics lock screen templates",
+      "New: Lock screen wallpapers now support lens effect",
+      "New: Customizable Lock screen shortcuts"
+    ],
+    "Settings": [
+      "Optimization: Added a shortcut to system navigation settings in Home screen settings"
+    ],
+    "Status bar, Notification shade": [
+      "New: Some status bar icons now support custom display"
+    ],
+    "Accessibility": [
+      "Fix: Touch gestures stopped working in TalkBack mode",
+      "Fix: Volume buttons didn^t work in TalkBack mode",
+      "Fix: Issues that prevented Recorder from capturing TalkBack audio",
+      "Fix: Issues with announcements for unselected items in Calendar and other apps",
+      "Fix: Some buttons weren^t announced in several apps, including Settings, Control center, Messaging, Contacts, Weather, Notes, and Browser"
+    ]
+  },
+  "logs_fr": {
+    "Accessibilité": [
+      "Réparé: Les gestes tactiles ne fonctionnent plus en mode TalkBack",
+      "Réparé: Les boutons de volume ne fonctionnaient pas en mode TalkBack",
+      "Réparé: Problèmes qui ont empêché Magnétophone de capturer l^audio TalkBack",
+      "Réparé: Problèmes avec les annonces pour les éléments non sélectionnés dans Agenda et d^autres applications",
+      "Réparé: Certains boutons n^ont pas été annoncés dans plusieurs applications, notamment Paramètres, Centre de contrôle, Messagerie, Contacts, Météo, Notes et Navigateur"
+    ],
+    "Animations système": [
+      "Optimisation: Interruption de l’animation lors de la saisie des sous-pages dans les applications",
+      "Optimisation: Interrompre l’animation pendant les transitions de l’application",
+      "Optimisation: Interrompre l’animation lors de la fermeture des applications en Mode paysage"
+    ],
+    "Expérience basique ": [
+      "Optimisation: L^algorithme d^actualisation du stockage a été modifié afin qu^il s^active plus souvent"
+    ],
+    "Système": [
+      "Nouveau: Le fond d^écran d^accueil prend maintenant en charge un effet de flou",
+      "Optimisation: Effet immersif pour l’indicateur plein écran dans certains scénarios",
+      "Optimisation: Mise à jour des styles pour certaines pages classiques",
+      "Optimisation: Effets d’animation lors du lancement des applications",
+      "Optimisation: Performances de défilement sur les flux de contenu dans certaines applications tierces",
+      "Optimisation: Stabilité des animations lors de l’ouverture et la fermeture des applications",
+      "Réparé: Les gestes ne fonctionnaient pas correctement dans certains scénarios",
+      "Réparé: Problèmes avec les animations lors de l’ouverture ou la fermeture des applications",
+      "Réparé: Les fonds d^écran disparaissaient dans de rares cas lors de l^ouverture ou de la fermeture d^applications",
+      "Réparé: Problèmes d^affichage occasionnels lors de l^ouverture ou de la fermeture d^applications"
+    ],
+    "Barre d'état, Panneau de notification": [
+      "Nouveau: Certaines icônes de barre d’état prennent maintenant en charge l’affichage personnalisé"
+    ],
+    "Écran de verrouillage": [
+      "Nouveau: Modèles d^écran de verrouillage d^esthétique orientale",
+      "Nouveau: Les fonds d’écran de verrouillage prennent maintenant en charge l’effet de lentille",
+      "Nouveau: Raccourcis d’écran de verrouillage personnalisables"
+    ],
+    "Paramètres": [
+      "Optimisation: Ajout d’un raccourci vers les paramètres de navigation du système dans les paramètres de l’écran d’accueil"
+    ]
+  },
+  "logs_it": {
+    "Accessibilità": [
+      "Risolto: I gesti touch smettevano di funzionare in modalità TalkBack",
+      "Risolto: I tasti del volume non funzionavano in modalità TalkBack",
+      "Risolto: Problemi che impedivano a Registratore di acquisire l’audio di TalkBack",
+      "Risolto: Problemi con gli annunci degli elementi non selezionati in Calendario e altre app",
+      "Risolto: Alcuni pulsanti non venivano annunciati in diverse app, tra cui Impostazioni, Centro di controllo, Messaggi, Contatti, Meteo, Note e Browser"
+    ],
+    "Animazioni di sistema": [
+      "Ottimizzazione: Interruzione dell^animazione durante l^accesso alle sottopagine all^interno delle app",
+      "Ottimizzazione: Interruzione dell^animazione durante le transizioni delle app",
+      "Ottimizzazione: Interruzione dell^animazione quando si chiudono le app in modalità orizzontale"
+    ],
+    "Esperienza di base": [
+      "Ottimizzazione: Modificato l^algoritmo di aggiornamento dell‘archiviazione in modo che si attivi più spesso"
+    ],
+    "Sistema": [
+      "Nuovo: Lo sfondo della schermata Home ora supporta l^effetto sfocatura",
+      "Ottimizzazione: Effetto immersivo per l^indicatore di schermo intero in alcuni scenari",
+      "Ottimizzazione: Stili aggiornati per alcune pagine classiche",
+      "Ottimizzazione: Effetti di animazione all^avvio delle app",
+      "Ottimizzazione: Prestazioni dello scorrimento sui feed di contenuti in alcune app di terze parti",
+      "Ottimizzazione: Stabilità delle animazioni durante l^apertura e la chiusura delle app",
+      "Risolto: I gesti non funzionavano correttamente in alcuni scenari",
+      "Risolto: Problemi con le animazioni quando si aprono o si chiudono le app",
+      "Risolto: Gli sfondi scomparivano in rari casi all’apertura o chiusura delle app",
+      "Risolto: Problemi di visualizzazione occasionali all’apertura o chiusura delle app"
+    ],
+    "Barra di stato, Area delle notifiche": [
+      "Nuovo: Alcune icone della barra di stato ora supportano la visualizzazione personalizzata"
+    ],
+    "Schermata di blocco": [
+      "Nuovo: Modelli di schermata di blocco con estetica orientale",
+      "Nuovo: Gli sfondi della schermata di blocco ora supportano l^effetto obiettivo",
+      "Nuovo: Collegamenti personalizzabili per la schermata di blocco"
+    ],
+    "Impostazioni": [
+      "Ottimizzazione: Aggiunto un collegamento alle impostazioni di navigazione del sistema nelle impostazioni della schermata Home"
+    ]
+  },
+  "logs_es": {
+    "Accesibilidad": [
+      "Reparado: Los gestos táctiles dejaron de funcionar en el modo de TalkBack",
+      "Reparado: Los botones de volumen no funcionaban en el modo de TalkBack",
+      "Reparado: Problemas que impedían que la Grabadora capturara el audio de TalkBack",
+      "Reparado: Problemas con los anuncios de elementos no seleccionados en el Calendario y otras aplicaciones",
+      "Reparado: Algunos botones no fueron anunciados en varias aplicaciones, incluidas Ajustes, Centro de control, Mensajes, Contactos, Tiempo, Notas y Navegador"
+    ],
+    "Animaciones del sistema": [
+      "Optimización: Animación de interrupción al ingresar a subpáginas dentro de las aplicaciones",
+      "Optimización: Interrumpir la animación durante las transiciones de aplicaciones",
+      "Optimización: Interrumpir la animación al cerrar aplicaciones en el Modo apaisado"
+    ],
+    "Expericencia básica": [
+      "Optimización: Se ajustó el algoritmo de actualización del almacenamiento para que se active con más frecuencia"
+    ],
+    "Sistema": [
+      "Nuevo: El fondo de la Pantalla de inicio ahora admite un efecto de desenfoque",
+      "Optimización: Efecto inmersivo para el indicador de pantalla completa en ciertos escenarios",
+      "Optimización: Estilos actualizados para algunas páginas clásicas",
+      "Optimización: Efectos de animación al iniciar aplicaciones",
+      "Optimización: Rendimiento del desplazamiento en feeds de contenido en algunas aplicaciones de terceros",
+      "Optimización: Estabilidad de las animaciones al abrir y cerrar aplicaciones",
+      "Reparado: Los gestos no funcionaban correctamente en ciertos escenarios",
+      "Reparado: Problemas con las animaciones al abrir o cerrar aplicaciones",
+      "Reparado: Los fondos de pantalla desaparecían en casos al abrir o cerrar aplicaciones",
+      "Reparado: Fallos ocasionales en la visualización al abrir o cerrar aplicaciones"
+    ],
+    "Barra de estado, Barra de notificaciones": [
+      "Nuevo: Algunos iconos de la barra de estado ahora admiten la visualización personalizada"
+    ],
+    "Pantalla de bloqueo": [
+      "Nuevo: Plantillas de pantalla de bloqueo de estética oriental",
+      "Nuevo: Los fondos de la Pantalla de bloqueo ahora admiten el efecto de lente",
+      "Nuevo: Accesos directos personalizables de la Pantalla de bloqueo"
+    ],
+    "Ajustes": [
+      "Optimización: Se agregó un acceso directo a la configuración de navegación del sistema en la configuración de la Pantalla de inicio"
+    ]
+  },
+  "logs_pt": {
+    "Acessibilidade": [
+      "Correção: Gestos de toque paravam de funcionar no modo TalkBack",
+      "Correção: Os botões de volume não funcionavam no modo TalkBack",
+      "Correção: Problemas que impediam o Gravador de capturar áudio do TalkBack",
+      "Correção: Problemas com anúncios de itens não selecionados na Agenda e em outros apps",
+      "Correção: Alguns botões não eram anunciados em vários apps, incluindo Configurações, Centro de controle, Mensgaens, Clima, Anotações e Navegador"
+    ],
+    "Animações do sistema": [
+      "Otimização: Animação de interrupção ao entrar em subpáginas dentro de apps",
+      "Otimização: Interrupção de animação durante transições de apps",
+      "Otimização: Interrupção de animação ao fechar apps no modo paisagem"
+    ],
+    "Experiência básica": [
+      "Otimização: Algoritmo de atualização do armazenamento otimizado para ser acionado mais vezes"
+    ],
+    "Sistema": [
+      "Novo: O Plano de fundo da Tela inicial agora suporta o efeito de desfoque",
+      "Otimização: Efeito imersivo para o indicador de tela cheia em certos cenários",
+      "Otimização: Estilos atualizados para algumas páginas clássicas",
+      "Otimização: Efeitos de animação ao iniciar apps",
+      "Otimização: Desempenho de rolagem em feeds de conteúdo em alguns apps de terceiros",
+      "Otimização: Estabilidade das animações ao abrir e fechar apps",
+      "Correção: Os gestos não funcionavam corretamente em certos cenários",
+      "Correção: Problemas com animações ao abrir ou fechar apps",
+      "Correção: Planos de fundo desapareciam em casos raros ao abrir e fechar apps",
+      "Correção: Erros de exibição ocasionais ao abrir ou fechar apps"
+    ],
+    "Barra de status, Área de notificações": [
+      "Novo: Alguns ícones da barra de status agora suportam exibição personalizada"
+    ],
+    "Tela de bloqueio": [
+      "Novo: Modelos de Tela de bloqueio com estética oriental",
+      "Novo: Papéis de parede da Tela de bloqueio agora suportam efeito de lente",
+      "Novo: Atalhos personalizáveis na Tela de bloqueio"
+    ],
+    "Configurações": [
+      "Otimização: Adicionado um atalho para as configurações de navegação do sistema nas configurações da Tela inicial"
+    ]
+  },
+  "logs_tr": {
+    "Erişilebilirlik": [
+      "Onarım: Dokunmatik hareketler TalkBack modunda çalışmayı durdurdu",
+      "Onarım: Ses seviyesi tuşları TalkBack modunda çalışmadı",
+      "Onarım: Kaydedicinin TalkBack sesini yakalamasını engelleyen sorunlar",
+      "Onarım: Takvim ve diğer uygulamalarda seçilmemiş ögeler için duyurularla ilgili sorunlar",
+      "Onarım: Ayarlar, Kontrol merkezi, Mesajlaşma, Kişiler, Hava durumu, Notlar ve Tarayıcı dahil olmak üzere çeşitli uygulamalarda bazı tuşlar duyurulmadı"
+    ],
+    "Sistem animasyonları": [
+      "Optimizasyon: Uygulamalar içinde alt sayfalara girerken kesinti animasyonu",
+      "Optimizasyon: Uygulama geçişleri sırasında animasyonların kesintiye uğraması",
+      "Optimizasyon: Manzara modunda uygulamaları kapatırken animasyonların kesintiye uğraması"
+    ],
+    "Temel deneyim": [
+      "Optimizasyon: Depolama yenileme algoritması daha sık etkinleşecek şekilde ayarlandı"
+    ],
+    "Sistem": [
+      "Yeni: Ana ekran duvar kağıdı artık bir bulanıklık efektini destekliyor",
+      "Optimizasyon: Belirli senaryolarda tam ekran göstergesi için sürükleyici efekt",
+      "Optimizasyon: Bazı klasik sayfalar için güncellenmiş stiller",
+      "Optimizasyon: Uygulamaları başlatırken animasyon efektleri",
+      "Optimizasyon: Bazı üçüncü taraf uygulamalarda içerik akışlarında kaydırma performansı",
+      "Optimizasyon: Uygulamaları açıp kapatırken animasyonların kararlılığı",
+      "Onarım: Hareketler bazı senaryolarda düzgün çalışmadı",
+      "Onarım: Uygulamaları açarken veya kapatırken animasyonlarla ilgili sorunlar",
+      "Onarım: Nadir durumlarda uygulamaları açarken veya kapatırken duvar kağıtları kayboldu",
+      "Onarım: Uygulamaları açarken veya kapatırken ara sıra ekran hataları oluşuyor"
+    ],
+    "Durum çubuğu, Bildirim çubuğu": [
+      "Yeni: Bazı durum çubuğu simgeleri artık özel görüntülemeyi destekliyor"
+    ],
+    "Kilit ekranı": [
+      "Yeni: Doğu estetiği kilit ekranı şablonları",
+      "Yeni: Kilit ekranı duvar kağıtları artık lens efektini destekliyor",
+      "Yeni: Özelleştirilebilir Kilit ekranı kısayolları"
+    ],
+    "Ayarlar": [
+      "Optimizasyon: Ana ekran ayarlarında sistem navigasyonu ayarlarına bir kısayol eklendi"
+    ]
+  },
+  "logs_id": {
+    "Aksesibilitas": [
+      "Perbaikan: Gerakan sentuh berhenti berfungsi dalam mode TalkBack",
+      "Perbaikan: Tombol volume tidak berfungsi dalam mode TalkBack",
+      "Perbaikan: Masalah yang mencegah apl Perekam merekam audio TalkBack",
+      "Perbaikan: Masalah dengan pengucapan untuk item yang tidak dipilih di Kalender dan aplikasi lainnya",
+      "Perbaikan: Beberapa tombol tidak disebutkan di beberapa aplikasi, termasuk Setelan, Pusat kontrol, Pesan, Kontak, Cuaca, Catatan, dan Browser"
+    ],
+    "Animasi sistem": [
+      "Pengoptimalan: Animasi interupsi saat masuk ke subhalaman di dalam aplikasi",
+      "Pengoptimalan: Animasi terganggu pada saat pergantian aplikasi",
+      "Pengoptimalan: Animasi terganggu saat menutup aplikasi di mode Horizontal"
+    ],
+    "Pengalaman dasar": [
+      "Pengoptimalan: Algoritma penyegaran Penyimpanan diubah sehingga lebih sering aktif"
+    ],
+    "Sistem": [
+      "Baru: Wallpaper Layar utama kini mendukung efek blur",
+      "Pengoptimalan: Efek imersif untuk indikator layar penuh dalam skenario tertentu",
+      "Pengoptimalan: Gaya yang diperbarui untuk beberapa halaman klasik",
+      "Pengoptimalan: Efek animasi saat meluncurkan aplikasi",
+      "Pengoptimalan: Performa gulir pada konten baru di beberapa aplikasi pihak ketiga",
+      "Pengoptimalan: Stabilitas animasi saat membuka dan menutup aplikasi",
+      "Perbaikan: Gerakan tidak berfungsi selayaknya dalam skenario tertentu",
+      "Perbaikan: Masalah dengan animasi saat membuka atau menutup aplikasi",
+      "Perbaikan: Wallpaper menghilang dalam kasus yang jarang terjadi saat membuka atau menutup aplikasi",
+      "Perbaikan: Gangguan tampilan sesekali saat membuka atau menutup aplikasi"
+    ],
+    "Bar status, Layar notiifikasi": [
+      "Baru: Beberapa ikon bilah status kini mendukung tampilan kustom"
+    ],
+    "Layar kunci": [
+      "Baru: Templat Layar kunci dengan estetika oriental",
+      "Baru: Wallpaper Layar kunci kini mendukung efek lensa",
+      "Baru: Pintasan Layar kunci yang dapat dikustomisasi"
+    ],
+    "Setelan": [
+      "Pengoptimalan: Pintasan ke setelan navigasi sistem ditambahkan di setelan Layar utama"
+    ]
+  },
+  "logs_vi": {
+    "Khả năng truy cập": [
+      "Sửa: Cử chỉ chạm đã dừng hoạt động ở chế độ TalkBack",
+      "Sửa: Các phím âm lượng không hoạt động ở chế độ TalkBack",
+      "Sửa: Vấn đề khiến Ghi âm không thể ghi lại âm thanh TalkBack",
+      "Sửa: Vấn đề với thông báo cho các mục chưa chọn trong Lịch và các ứng dụng khác",
+      "Sửa: Một số phím không được thông báo trong một số ứng dụng, bao gồm Cài đặt, Trung tâm điều khiển, Tin nhắn, Liên hệ, Thời tiết, Ghi chú và Trình duyệt"
+    ],
+    "Ảnh động hệ thống": [
+      "Tối ưu: Hoạt ảnh gián đoạn khi vào các trang phụ trong ứng dụng",
+      "Tối ưu: Hoạt ảnh gián đoạn trong quá trình chuyển tiếp ứng dụng",
+      "Tối ưu: Hoạt ảnh gián đoạn khi đóng ứng dụng ở Chế độ nằm ngang"
+    ],
+    "Trải nghiệm cơ bản": [
+      "Tối ưu: Đã điều chỉnh thuật toán làm mới Lưu trữ để kích hoạt thường xuyên hơn"
+    ],
+    "Hệ thống": [
+      "Mới: Hình nền Màn hình chính hiện hỗ trợ hiệu ứng làm mờ",
+      "Tối ưu: Hiệu ứng đắm chìm cho biểu tượng màn hình tràn cạnh ở một số tình huống nhất định",
+      "Tối ưu: Cập nhật phong cách cho một số trang cổ điển",
+      "Tối ưu: Hiệu ứng hoạt ảnh khi khởi chạy ứng dụng",
+      "Tối ưu: Hiệu suất cuộn trên nội dung bảng tin trong một số ứng dụng của bên thứ ba",
+      "Tối ưu: Độ ổn định của hoạt ảnh khi mở và đóng ứng dụng",
+      "Sửa: Cử chỉ không hoạt động chính xác trong một số trường hợp",
+      "Sửa: Vấn đề với hoạt ảnh khi mở hoặc đóng ứng dụng",
+      "Sửa: Hình nền biến mất trong một số ít trường hợp hiếm gặp khi mở hoặc đóng ứng dụng",
+      "Sửa: Thỉnh thoảng xảy ra lỗi hiển thị khi mở hoặc đóng ứng dụng"
+    ],
+    "Thanh trạng thái, Thanh thông báo": [
+      "Mới: Một số biểu tượng thanh trạng thái hiện hỗ trợ hiển thị tùy chỉnh"
+    ],
+    "Màn hình khóa": [
+      "Mới: Mẫu màn hình khóa thẩm mỹ phương Đông",
+      "Mới: Hình nền Màn hình khóa hiện hỗ trợ hiệu ứng ống kính",
+      "Mới: Lối tắt Màn hình khóa có thể tùy chỉnh"
+    ],
+    "Cài đặt": [
+      "Tối ưu: Đã thêm lối tắt vào cài đặt điều hướng hệ thống trong cài đặt Màn hình chính"
+    ]
+  },
+  "logs_th": {
+    "การเข้าถึง": [
+      "แก้ไข: ท่าทางสัมผัสหยุดทำงานในโหมด TalkBack",
+      "แก้ไข: ปุ่มปรับระดับเสียงไม่ทำงานในโหมด TalkBack",
+      "แก้ไข: ปัญหาที่ทำให้เครื่องบันทึกไม่สามารถบันทึกเสียง TalkBack ได้",
+      "แก้ไข: ปัญหาเกี่ยวกับการประกาศสำหรับรายการที่ไม่ได้เลือกในปฏิทินและแอปอื่นๆ",
+      "แก้ไข: ปุ่มบางปุ่มไม่ได้รับการประกาศในแอปหลายตัว เช่น การตั้งค่า ศูนย์ควบคุม การส่งข้อความ รายชื่อผู้ติดต่อ สภาพอากาศ บันทึก และเบราว์เซอร์"
+    ],
+    "ภาพเคลื่อนไหวของระบบ": [
+      "การเพิ่มประสิทธิภาพ: แอนิเมชั่นการขัดจังหวะเมื่อเข้าสู่หน้าย่อยภายในแอป",
+      "การเพิ่มประสิทธิภาพ: ขัดจังหวะภาพเคลื่อนไหวระหว่างการเปลี่ยนแอป",
+      "การเพิ่มประสิทธิภาพ: ขัดจังหวะภาพเคลื่อนไหวเมื่อปิดแอปในโหมดแนวนอน"
+    ],
+    "ประสบการณ์พื้นฐาน": [
+      "การเพิ่มประสิทธิภาพ: ปรับแต่งอัลกอริธึมการรีเฟรชที่เก็บข้อมูลเพื่อให้เปิดใช้งานได้บ่อยขึ้น"
+    ],
+    "ระบบ": [
+      "ใหม่: ภาพพื้นหลังหน้าจอหลักรองรับเอฟเฟกต์เบลอแล้ว",
+      "การเพิ่มประสิทธิภาพ: เอฟเฟกต์สมจริงสำหรับตัวบ่งชี้แบบเต็มหน้าจอในบางสถานการณ์",
+      "การเพิ่มประสิทธิภาพ: ปรับปรุงสไตล์สำหรับบางหน้าแบบคลาสสิก",
+      "การเพิ่มประสิทธิภาพ: เอฟเฟกต์ภาพเคลื่อนไหวเมื่อเปิดแอป",
+      "การเพิ่มประสิทธิภาพ: ประสิทธิภาพการเลื่อนบนฟีดเนื้อหาในแอปของบริษัทอื่นบางแอป",
+      "การเพิ่มประสิทธิภาพ: ความเสถียรของภาพเคลื่อนไหวเมื่อเปิดและปิดแอป",
+      "แก้ไข: ท่าทางไม่ทำงานอย่างถูกต้องในบางสถานการณ์",
+      "แก้ไข: ปัญหาเกี่ยวกับภาพเคลื่อนไหวเมื่อเปิดหรือปิดแอป",
+      "แก้ไข: ภาพพื้นหลังจะหายไปในบางกรณีเมื่อเปิดหรือปิดแอป",
+      "แก้ไข: การแสดงผลผิดพลาดเป็นครั้งคราวเมื่อเปิดหรือปิดแอป"
+    ],
+    "แถบสถานะ, แถบแจ้งเตือน": [
+      "ใหม่: ไอคอนแถบสถานะบางรายการรองรับการแสดงผลแบบกำหนดเองแล้ว"
+    ],
+    "ล็อคหน้าจอ": [
+      "ใหม่: เทมเพลตหน้าจอล็อกสไตล์ตะวันออก",
+      "ใหม่: ภาพพื้นหลังหน้าจอล็อกรองรับเอฟเฟกต์เลนส์แล้ว",
+      "ใหม่: ทางลัดหน้าจอล็อกแบบกำหนดเองได้"
+    ],
+    "การตั้งค่า": [
+      "การเพิ่มประสิทธิภาพ: เพิ่มทางลัดไปยังการตั้งค่าการนำทางระบบในการตั้งค่าหน้าจอหลัก"
+    ]
+  },
+  "logs_ar": {
+    "إمكانية الوصول": [
+      "الإصلاح: تم إصلاح مشكلة توقف إيماءات اللمس عن العمل في بعض الحالات أثناء استخدام وضع TalkBack",
+      "الإصلاح: تم إصلاح مشكلة عدم عمل أزرار الصوت في وضع TalkBack",
+      "الإصلاح: إصلاح مشكلة عدم تسجيل صوت TalkBack في تطبيق التسجيل",
+      "الإصلاح: تم تحسين الإعلانات الصوتية للعناصر غير المحددة في ^التقويم^ وتطبيقات أخرى",
+      "الإصلاح: تم إصلاح مشكلة عدم إعلان بعض الأزرار في عدد من التطبيقات، مثل الإعدادات، مركز التحكم، الرسائل، جهات الاتصال، الطقس، الملاحظات، والمتصفح"
+    ],
+    "نظام الرسوم المتحركة": [
+      "التحسين: عرض رسوم متحركة للمقاطعة عند الدخول إلى الصفحات الفرعية داخل التطبيقات",
+      "التحسين: عرض رسوم متحركة للمقاطعة عند التنقل بين التطبيقات",
+      "التحسين: عرض رسوم متحركة للمقاطعة عند إغلاق التطبيقات في الوضع الأفقي"
+    ],
+    "الخبرة الأساسية": [
+      "التحسين: تحسين خوارزمية تحديث التخزين لتعمل بشكل أكثر انتظام"
+    ],
+    "النظام": [
+      "الجديد: تدعم خلفية الشاشة الرئيسية الآن تأثير التمويه",
+      "التحسين: تحسين تأثير الإندماج لمؤشر الإيماءات في بعض السيناريوهات",
+      "التحسين: تحديث تصميم بعض الصفحات الكلاسيكية",
+      "التحسين: تأثيرات رسوم متحركة عند فتح التطبيقات",
+      "التحسين: تحسين أداء التمرير في أحدث المحتويات داخل بعض تطبيقات الطرف الثالث",
+      "التحسين: استقرار الرسوم المتحركة عند فتح وإغلاق التطبيق",
+      "الإصلاح: عدم استجابة الإيماءات في بعض السيناريوهات",
+      "الإصلاح: مشاكل الرسوم المتحركة عند فتح أو إغلاق التطبيقات",
+      "الإصلاح: تم إصلاح مشكلة اختفاء الخلفية أحيانًا عند فتح أو إغلاق التطبيقات",
+      "الإصلاح: تم إصلاح مشكلة ظهور رسومات غير طبيعية أحيانًا عند فتح أو إغلاق التطبيقات"
+    ],
+    "شريط الحالة ومركز الإشعارات": [
+      "الجديد: تدعم بعض أيقونات شريط الحالة االآن العرض المخصص"
+    ],
+    "شاشة القفل": [
+      "الجديد: قوالب شاشة قفل مستوحاه من الجماليات الشرقية",
+      "الجديد: تدعم خلفيات شاشة القفل الآن تأثير العدسة",
+      "الجديد: إمكانية تخصيص اختصارات شاشة القفل"
+    ],
+    "الإعدادات": [
+      "التحسين: تمت إضافة اختصار لإعدادات التنقل في النظام في إعدادات الشاشة الرئيسية"
+    ]
   }
 }
