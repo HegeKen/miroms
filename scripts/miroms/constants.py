@@ -1107,6 +1107,15 @@ CHANGELOG_LOCALES = [
 	# locale 一律回落英文，因此 api 固定用 ar_EG（新增条目请追加在末尾，
 	# CHANGELOG_EXTRA_COLUMNS 的顺序决定 exporters 的 SELECT 下标，插队会错位）
 	{"column": "logs_ar",    "zh": "阿拉伯文", "api": "ar_EG", "site": "ar",      "name": "العربية",        "region": "eg/sa/ma"},
+	# 印地语：实测只有 hi_IN 有译文，其余 hi 系 locale 会回落英文。
+	# 站点（app/web）已接入 hi 语种，日志通过 web 的 logs.ts 键名映射（hi -> logs_in）消费。
+	{"column": "logs_in",    "zh": "印地文", "api": "hi_IN", "site": "hi",      "name": "हिन्दी",          "region": "in"},
+	# 维吾尔文：实测接口对 uy_CN / ug_CN  等全部变体都不返回维文译文
+	# （稳定版返回 Other 键英文，开发版与 logs_en 逐字相同），只能 --force 拉取英文占位。
+	# 站点（app/web）已接入 ug 语种，日志通过 web 的 logs.ts 键名映射（ug -> logs_ug）消费。
+	{"column": "logs_ug",    "zh": "维吾尔文", "api": "ug_CN", "site": "ug",      "name": "ئۇيغۇرچە",        "region": "cn"},
+	# 藏文：同维吾尔文，实测接口对 bo_CN 回落英文，需 --force 拉取。
+	{"column": "logs_bo",    "zh": "藏文", "api": "bo_CN", "site": "bo",      "name": "བོད་ཡིག",          "region": "cn"},
 ]
 
 # 全部更新日志列名（含 logs_zh / logs_en）

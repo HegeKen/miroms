@@ -181,7 +181,7 @@
 
 | 文件 | 说明 |
 | --- | --- |
-| `api/v3/logs/<device>/[region]/<version>.json` | 单个 ROM 的多语言更新日志，含区域时存放在 `region` 子目录。`logs_zh` / `logs_en` 固定存在，其余语言按有译文才出现：`{"logs_zh": {...}, "logs_en": {...}, "logs_zh_tw": {...}, "logs_ja": {...}, ...}`（语言集合见 `scripts/miroms/constants.py` 的 `CHANGELOG_LOCALES`，与站点 18 种语言一致） |
+| `api/v3/logs/<device>/[region]/<version>.json` | 单个 ROM 的多语言更新日志，含区域时存放在 `region` 子目录。`logs_zh` / `logs_en` 固定存在，其余语言按有译文才出现：`{"logs_zh": {...}, "logs_en": {...}, "logs_zh_tw": {...}, "logs_ja": {...}, ...}`（语言集合见 `scripts/miroms/constants.py` 的 `CHANGELOG_LOCALES`；与站点 21 种语言一致） |
 | `api/v3/roms/<OS>.json` | 按系统版本分组的 ROM 列表（如 `OS1.json` = HyperOS 1），每项含设备、版本、Android、区域、分支名、日期、包文件名，按需按版本号拼接成设备 ROM 表 |
 | `api/v3/releases/<year>.json` | 按发布日期分组的 ROM 列表，结构为 `{"year": "2026", "dates": {"2026-09-18": [{"device": "brussels", "version": "OS3.0.308.0.WDRMIXM", "region": "global"}, ...]}}`，供前端按日期查询时只拉取某一年的数据 |
 | `api/v3/releases/index.json` | 发布日期索引元信息：`generatedAt` 生成时间、`minDate` / `maxDate` 可查询日期范围、`totalRoms` 总数与 `years`（每年的 ROM 数与有发布记录的天数） |
@@ -194,7 +194,7 @@
 更新日志来自 `update.miui.com`：请求表单里的 `l` 参数决定返回哪种语言，小米没有提供译文的语种会回落英文。因此新增语种时先用 `--probe` 确认接口到底认哪个 locale——例如阿拉伯语只有 `ar_EG` 有译文，`ar` / `ar_SA` / `ar_AE` 等都会回落英文。步骤：
 
 1. 先在 `scripts/miroms/constants.py` 的 `CHANGELOG_LOCALES` 里登记语种（列名 / 接口 locale / 站点 locale）
-2. 给 `roms` 表加同名列：结构见 `db_structure/roms.sql`，线上库依次执行 `db_structure/migrations/` 下的迁移（`20260919_add_roms_changelog_locales.sql` 建 16 个语种列，`20260919_add_roms_logs_ar.sql` 补阿拉伯语列）
+2. 给 `roms` 表加同名列：结构见 `db_structure/roms.sql`，线上库依次执行 `db_structure/migrations/` 下的迁移（`20260919_add_roms_changelog_locales.sql` 建首批语种列，`20260919_add_roms_logs_ar.sql` 补阿拉伯语列）；后续新增的 `logs_in` / `logs_ug` / `logs_bo` 已直接并入 `roms.sql` 与线上库
 3. `python3 scripts/fetch_changelog.py --probe 5` 先看接口对哪些语种返回了独立译文（不写库）
 4. `python3 scripts/fetch_changelog.py --langs ja,ko,ru` 按语种补数据；不加参数则依次处理全部语种
 处理时按 ROM id 批量进行：每个语种先各自查出待补 id 数组，再遍历 id 并集——同一个 ROM 只查一次数据库、只构建一次请求表单，命中多个语种时仅替换 `l` 参数各请求一次，处理完即从对应数组移除，因此不会重复请求也不会重复查库。
@@ -211,7 +211,7 @@
 数据库使用 MySQL（InnoDB，utf8mb4），表结构与字段含义见 `db_structure/`：
 
 - **`devices.sql`** — 设备表：设备代号（`device`）、内部标识（`devtag`）、设备代码（`code`）、ROM 标签（`tag`）、区域（`region`）、运营商（`carrier`）、品牌（`brands` / `full_brands`）、中英文名（`full_names` / `names` / `xiaomi` / `redmi` / `poco`）、图片（`image`）、发布日期（`launch_date`）
-- **`roms.sql`** — ROM 表：系统类型（`type`：MIUI / HyperOS）、大版本（`bigver`）、区域、标签、分支（`branch`：F=正式版 / X=开发版）、完整版本号（`version`）、Android 版本、发布日期（`beta_date` / `release_date` / `public_date`）、Recovery / Fastboot / 运营商定制包文件名（`recovery` / `fastboot` / `ctelecom` / `cmobile` / `cunicom` / `others`）、多语言更新日志（`logs_zh` / `logs_zh_tw` / `logs_en` / `logs_ja` / `logs_ko` / `logs_ru` / `logs_uk` / `logs_pl` / `logs_de` / `logs_fr` / `logs_it` / `logs_es` / `logs_pt` / `logs_tr` / `logs_id` / `logs_vi` / `logs_th` / `logs_ar`，JSON 格式，与站点语言一一对应）、安全补丁日期（`aspatch`）
+- **`roms.sql`** — ROM 表：系统类型（`type`：MIUI / HyperOS）、大版本（`bigver`）、区域、标签、分支（`branch`：F=正式版 / X=开发版）、完整版本号（`version`）、Android 版本、发布日期（`beta_date` / `release_date` / `public_date`）、Recovery / Fastboot / 运营商定制包文件名（`recovery` / `fastboot` / `ctelecom` / `cmobile` / `cunicom` / `others`）、多语言更新日志（`logs_zh` / `logs_zh_tw` / `logs_en` / `logs_ja` / `logs_ko` / `logs_ru` / `logs_uk` / `logs_pl` / `logs_de` / `logs_fr` / `logs_it` / `logs_es` / `logs_pt` / `logs_tr` / `logs_in` / `logs_id` / `logs_vi` / `logs_th` / `logs_ar` / `logs_ug` / `logs_bo`，JSON 格式，一门语言一列）、安全补丁日期（`aspatch`）
 - **`branches.sql`** — 分支表：分支类型、中英文名称、标签（`tag`）、代码后缀（`code`）、版本代码（`vercode`）、运营商、区域、分区（`zone`）、可见性（`visibility`）、是否政企版（`ep`）
 - **`series.sql`** — 机型系列表：品牌（`brand`：xiaomi / redmi / poco）、中英文名称（`name_zh` / `name_en`）、设备归属（`device_ids`，JSON 数组）、排序（`sort_order`）
 

@@ -183,7 +183,7 @@ Covers both MIUI and HyperOS; adds a nested `tags` field and separate changelog 
 
 | File | Description |
 | --- | --- |
-| `api/v3/logs/<device>/[region]/<version>.json` | Multilingual changelog for a single ROM; region-tagged versions live in a `region` subdirectory. `logs_zh` / `logs_en` are always present, other languages appear only when translated: `{"logs_zh": {...}, "logs_en": {...}, "logs_zh_tw": {...}, "logs_ja": {...}, ...}` (see `CHANGELOG_LOCALES` in `scripts/miroms/constants.py`, matching the site's 18 locales) |
+| `api/v3/logs/<device>/[region]/<version>.json` | Multilingual changelog for a single ROM; region-tagged versions live in a `region` subdirectory. `logs_zh` / `logs_en` are always present, other languages appear only when translated: `{"logs_zh": {...}, "logs_en": {...}, "logs_zh_tw": {...}, "logs_ja": {...}, ...}` (see `CHANGELOG_LOCALES` in `scripts/miroms/constants.py`; all 21 match the site's locales) |
 | `api/v3/roms/<OS>.json` | ROM lists grouped by OS major version (e.g. `OS1.json` = HyperOS 1); each entry has device, version, Android, region, branch name, dates and package filenames — combine by version to build per-device ROM tables |
 | `api/v3/releases/<year>.json` | ROM lists grouped by release date: `{"year": "2026", "dates": {"2026-09-18": [{"device": "brussels", "version": "OS3.0.308.0.WDRMIXM", "region": "global"}, ...]}}`; year shards let the frontend fetch only what a date query needs |
 | `api/v3/releases/index.json` | Release index metadata: `generatedAt`, queryable range (`minDate` / `maxDate`), `totalRoms` and per-year `years` stats (ROM and active-day counts) |
@@ -196,7 +196,7 @@ Covers both MIUI and HyperOS; adds a nested `tags` field and separate changelog 
 Changelogs come from `update.miui.com`: the `l` field in the request form selects the language, and locales Xiaomi has no translation for fall back to English. Use `--probe` first to confirm which locale the API actually honours — Arabic, for example, is only translated for `ar_EG`; `ar` / `ar_SA` / `ar_AE` all fall back to English. Workflow:
 
 1. Register the locale in `CHANGELOG_LOCALES` (`scripts/miroms/constants.py`: column / API locale / site locale)
-2. Add the matching column to the `roms` table (schema: `db_structure/roms.sql`; run the migrations under `db_structure/migrations/` in order — `20260919_add_roms_changelog_locales.sql` creates the 16 locale columns, `20260919_add_roms_logs_ar.sql` adds Arabic)
+2. Add the matching column to the `roms` table (schema: `db_structure/roms.sql`; run the migrations under `db_structure/migrations/` in order — `20260919_add_roms_changelog_locales.sql` creates the first batch of locale columns, `20260919_add_roms_logs_ar.sql` adds Arabic); the later `logs_in` / `logs_ug` / `logs_bo` columns were merged straight into `roms.sql` and the live database
 3. `python3 scripts/fetch_changelog.py --probe 5` to see which locales actually return a distinct translation (no writes)
 4. `python3 scripts/fetch_changelog.py --langs ja,ko,ru` to fill specific locales; without arguments every locale is processed in order
 Processing is batched by ROM id: each locale first collects its own array of pending ids, then the union of ids is walked once — a ROM's row is queried once and its request form is built once, so a ROM present in several locales only swaps the `l` parameter for each extra request and is removed from those arrays right after, avoiding duplicate queries and duplicate requests.
@@ -218,7 +218,7 @@ MySQL (InnoDB, utf8mb4); table structure and field meanings are in `db_structure
 - **`roms.sql`** — ROMs: system type (`type`: MIUI / HyperOS), major version (`bigver`), region, tag, branch
   (`branch`: F=Stable / X=Developer), full version (`version`), Android version, release dates (`beta_date` /
   `release_date` / `public_date`), Recovery / Fastboot / carrier package filenames (`recovery` / `fastboot` /
-  `ctelecom` / `cmobile` / `cunicom` / `others`), multilingual changelogs (`logs_zh` / `logs_zh_tw` / `logs_en` / `logs_ja` / `logs_ko` / `logs_ru` / `logs_uk` / `logs_pl` / `logs_de` / `logs_fr` / `logs_it` / `logs_es` / `logs_pt` / `logs_tr` / `logs_id` / `logs_vi` / `logs_th` / `logs_ar`, JSON, one column per site locale), security patch
+  `ctelecom` / `cmobile` / `cunicom` / `others`), multilingual changelogs (`logs_zh` / `logs_zh_tw` / `logs_en` / `logs_ja` / `logs_ko` / `logs_ru` / `logs_uk` / `logs_pl` / `logs_de` / `logs_fr` / `logs_it` / `logs_es` / `logs_pt` / `logs_tr` / `logs_in` / `logs_id` / `logs_vi` / `logs_th` / `logs_ar` / `logs_ug` / `logs_bo`, JSON, one column per language), security patch
   date (`aspatch`)
 - **`branches.sql`** — branches: branch type, zh/en names, tag (`tag`), code suffix (`code`), version code
   (`vercode`), carrier, region, zone (`zone`), visibility (`visibility`), enterprise flag (`ep`)

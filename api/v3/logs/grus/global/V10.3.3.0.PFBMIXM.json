@@ -80,5 +80,709 @@
       "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
       "Optimization: Improved sync across multiple devices"
     ]
+  },
+  "logs_zh_tw": {
+    "系統": [
+      "新增 全面屏設定中的水滴屏形狀切換開關",
+      "優化 更新Android安全性修補程式等級(2019#7)，提升系統安全性",
+      "優化 鎖屏誤觸問題，避免手機在口袋中發生螢幕誤操作"
+    ],
+    "電話": [
+      "修復 掛斷電話較慢的問題"
+    ],
+    "應用鎖": [
+      "新增 支援谷歌聯絡人可以加鎖"
+    ],
+    "聯絡人": [
+      "修復 SIM聯絡人無法刪除的問題"
+    ],
+    "解鎖畫面、狀態欄、通知欄": [
+      "新增 螢幕熄滅時顯示支援不顯示指紋圖標，但指紋可用",
+      "新增 系統主題下，鎖屏時鐘支援三種自訂型式，可在鎖屏進階設定中修改",
+      "新增 人臉解鎖成功並停留在鎖屏上時，可通過指紋進入桌面的功能",
+      "優化 調節圖型密碼中圓點的觸發區域，提升複雜圖型密碼繪製的成功率",
+      "優化 開啓Talkback後，螢幕指紋無法使用",
+      "修復 橫向螢幕狀況下未即時顯示低電量懸浮通知的問題",
+      "修復 下拉狀態欄開啟或關閉同步，同步介面不刷新問題",
+      "修復 螢幕鎖定上來電時偶現螢幕無法亮起的問題",
+      "修復 收到通知後媒體音量沒有恢復的問題"
+    ],
+    "相機": [
+      "新增 AI相機場景：月亮模式、高塔、合影",
+      "新增 前置全景功能",
+      "新增 超級夜景功能"
+    ],
+    "設定": [
+      "優化 Wi-Fi清單排列策略，以信號的強度排列"
+    ],
+    "遊戲加速": [
+      "新增 電話懸浮視窗功能，支援遊戲中接通的電話使用懸浮視窗顯示接通狀態",
+      "優化 遊戲工具箱喚醒方式調整為頂部側邊滑出",
+      "修復 遊戲中接聽免持聽筒通話，通話時長顯示錯誤的問題"
+    ],
+    "小米雲服務": [
+      "優化 雲服務首頁重新設計，雲端可用空間顯示更加直觀",
+      "優化 多裝置之間數據同步即時性"
+    ]
+  },
+  "logs_ja": {
+    "System": [
+      "New: An option for smoothening notch curves on full screen devices",
+      "Optimization: Updated Android Security Patch to July 2019. Increased system security.",
+      "Optimization: Lock screen pocket mode"
+    ],
+    "Phone": [
+      "Fix: Ending calls took longer time than expected"
+    ],
+    "App lock": [
+      "New: Locking Google contacts is available now"
+    ],
+    "Contacts": [
+      "Fix: Contacts couldn^t be deleted from SIM cards in some cases"
+    ],
+    "Lockscreen, status bar, Notification shade": [
+      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally.",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
+      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
+      "Optimization: Fingerprint scanner couldn^t be used when TalkBack was on",
+      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode",
+      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
+      "Fix: Screen didn^t always light up for notifications",
+      "Fix: Media volume couldn^t be restored after receiving a notification"
+    ],
+    "Camera": [
+      "New: New modes for AI camera",
+      "New: Panoramas for the front camera",
+      "New: Enhanced low light mode"
+    ],
+    "Settings": [
+      "Optimization: Sorting principles for Wi-Fi networks"
+    ],
+    "Game speed booster": [
+      "New: Floating windows for incoming calls during games",
+      "Optimization: You can open the gaming toolbox by swiping from the top side of the screen",
+      "Fix: Hands-free call duration wasn^t displayed correctly in Game Turbo"
+    ],
+    "Mi Cloud": [
+      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
+      "Optimization: Improved sync across multiple devices"
+    ]
+  },
+  "logs_ko": {
+    "System": [
+      "New: An option for smoothening notch curves on full screen devices",
+      "Optimization: Updated Android Security Patch to July 2019. Increased system security.",
+      "Optimization: Lock screen pocket mode"
+    ],
+    "Phone": [
+      "Fix: Ending calls took longer time than expected"
+    ],
+    "App lock": [
+      "New: Locking Google contacts is available now"
+    ],
+    "Contacts": [
+      "Fix: Contacts couldn^t be deleted from SIM cards in some cases"
+    ],
+    "Lockscreen, status bar, Notification shade": [
+      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally.",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
+      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
+      "Optimization: Fingerprint scanner couldn^t be used when TalkBack was on",
+      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode",
+      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
+      "Fix: Screen didn^t always light up for notifications",
+      "Fix: Media volume couldn^t be restored after receiving a notification"
+    ],
+    "Camera": [
+      "New: New modes for AI camera",
+      "New: Panoramas for the front camera",
+      "New: Enhanced low light mode"
+    ],
+    "Settings": [
+      "Optimization: Sorting principles for Wi-Fi networks"
+    ],
+    "Game speed booster": [
+      "New: Floating windows for incoming calls during games",
+      "Optimization: You can open the gaming toolbox by swiping from the top side of the screen",
+      "Fix: Hands-free call duration wasn^t displayed correctly in Game Turbo"
+    ],
+    "Mi Cloud": [
+      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
+      "Optimization: Improved sync across multiple devices"
+    ]
+  },
+  "logs_ru": {
+    "Система": [
+      "Новое: Функция сглаживания выреза для устройств с Безграничным экраном",
+      "Оптимизация: Обновление системы безопасности Android (июль 2019 года). Улучшена безопасность системы.",
+      "Оптимизация: Режим ^В кармане^"
+    ],
+    "Телефон": [
+      "Исправлено: Завершение вызова выполнялось слишком долго"
+    ],
+    "Защита приложений": [
+      "Новое: Добавлена возможность блокировки контактов Google"
+    ],
+    "Контакты": [
+      "Исправлено: В некоторых случаях контакты не могли быть удалены с SIM-карты"
+    ],
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Новое: Вы можете отключить отображение значка отпечатка пальца на заблокированном экране. Вы по-прежнему сможете воспользоваться разблокировкой при помощи отпечатка пальца",
+      "Новое: Добавлены настраиваемые часы для экрана блокировки (Настройки > Блокировка и защита > Расширенные настройки). Новые часы для экрана блокировки несовместимы со сторонними темами",
+      "Новое: Используйте отпечаток пальца, чтобы перейти на рабочий стол после того, как вы разблокировали устройство при помощи данных лица и остались на экране блокировки",
+      "Оптимизация: Отрегулированы чувствительные зоны вокруг точек ввода графического ключа",
+      "Оптимизация: Сканер отпечатков пальцев не работал, когда была активна функция TalkBack",
+      "Исправлено: Всплывающие уведомления, связанные с аккумулятором, не отображались правильно в режиме альбомной ориентации",
+      "Исправлено: Страница синхронизации не обновлялась всякий раз, когда синхронизация была включена или отключена через Шторку уведомлений",
+      "Исправлено: Экран не всегда включался при получении новых уведомлений",
+      "Исправлено: Громкость мультимедиа не восстанавливалась после получения уведомлений"
+    ],
+    "Камера": [
+      "Новое: Поддержка новых режимов камеры с ИИ",
+      "Новое: Режим ^Панорама^ для фронтальной камеры",
+      "Новое: Улучшенный режим ночной съемки"
+    ],
+    "Настройки": [
+      "Оптимизация: Принцип сортировки сетей Wi-Fi"
+    ],
+    "Ускорение приложений": [
+      "Новое: Всплывающее окно с уведомлением о входящем вызове во время игры",
+      "Оптимизация: Проведите вниз от верхней части экрана, чтобы открыть игровые инструменты",
+      "Исправлено: Длительность вызовов не отображалась в Ускорении игр"
+    ],
+    "Mi Cloud": [
+      "Оптимизация: Мы переработали начальную страницу Mi Cloud. Теперь она выглядит намного лучше!",
+      "Оптимизация: Улучшена синхронизация данных между несколькими  устройствами"
+    ]
+  },
+  "logs_uk": {
+    "System": [
+      "New: An option for smoothening notch curves on full screen devices",
+      "Optimization: Updated Android Security Patch to July 2019. Increased system security.",
+      "Optimization: Lock screen pocket mode"
+    ],
+    "Phone": [
+      "Fix: Ending calls took longer time than expected"
+    ],
+    "App lock": [
+      "New: Locking Google contacts is available now"
+    ],
+    "Contacts": [
+      "Fix: Contacts couldn^t be deleted from SIM cards in some cases"
+    ],
+    "Lockscreen, status bar, Notification shade": [
+      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally.",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
+      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
+      "Optimization: Fingerprint scanner couldn^t be used when TalkBack was on",
+      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode",
+      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
+      "Fix: Screen didn^t always light up for notifications",
+      "Fix: Media volume couldn^t be restored after receiving a notification"
+    ],
+    "Camera": [
+      "New: New modes for AI camera",
+      "New: Panoramas for the front camera",
+      "New: Enhanced low light mode"
+    ],
+    "Settings": [
+      "Optimization: Sorting principles for Wi-Fi networks"
+    ],
+    "Game speed booster": [
+      "New: Floating windows for incoming calls during games",
+      "Optimization: You can open the gaming toolbox by swiping from the top side of the screen",
+      "Fix: Hands-free call duration wasn^t displayed correctly in Game Turbo"
+    ],
+    "Mi Cloud": [
+      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
+      "Optimization: Improved sync across multiple devices"
+    ]
+  },
+  "logs_pl": {
+    "System": [
+      "New: An option for smoothening notch curves on full screen devices",
+      "Optimization: Updated Android Security Patch to July 2019. Increased system security.",
+      "Optimization: Lock screen pocket mode"
+    ],
+    "Phone": [
+      "Fix: Ending calls took longer time than expected"
+    ],
+    "App lock": [
+      "New: Locking Google contacts is available now"
+    ],
+    "Contacts": [
+      "Fix: Contacts couldn^t be deleted from SIM cards in some cases"
+    ],
+    "Lockscreen, status bar, Notification shade": [
+      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally.",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
+      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
+      "Optimization: Fingerprint scanner couldn^t be used when TalkBack was on",
+      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode",
+      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
+      "Fix: Screen didn^t always light up for notifications",
+      "Fix: Media volume couldn^t be restored after receiving a notification"
+    ],
+    "Camera": [
+      "New: New modes for AI camera",
+      "New: Panoramas for the front camera",
+      "New: Enhanced low light mode"
+    ],
+    "Settings": [
+      "Optimization: Sorting principles for Wi-Fi networks"
+    ],
+    "Game speed booster": [
+      "New: Floating windows for incoming calls during games",
+      "Optimization: You can open the gaming toolbox by swiping from the top side of the screen",
+      "Fix: Hands-free call duration wasn^t displayed correctly in Game Turbo"
+    ],
+    "Mi Cloud": [
+      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
+      "Optimization: Improved sync across multiple devices"
+    ]
+  },
+  "logs_de": {
+    "System": [
+      "New: An option for smoothening notch curves on full screen devices",
+      "Optimization: Updated Android Security Patch to July 2019. Increased system security.",
+      "Optimization: Lock screen pocket mode"
+    ],
+    "Phone": [
+      "Fix: Ending calls took longer time than expected"
+    ],
+    "App lock": [
+      "New: Locking Google contacts is available now"
+    ],
+    "Contacts": [
+      "Fix: Contacts couldn^t be deleted from SIM cards in some cases"
+    ],
+    "Lockscreen, status bar, Notification shade": [
+      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally.",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
+      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
+      "Optimization: Fingerprint scanner couldn^t be used when TalkBack was on",
+      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode",
+      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
+      "Fix: Screen didn^t always light up for notifications",
+      "Fix: Media volume couldn^t be restored after receiving a notification"
+    ],
+    "Camera": [
+      "New: New modes for AI camera",
+      "New: Panoramas for the front camera",
+      "New: Enhanced low light mode"
+    ],
+    "Settings": [
+      "Optimization: Sorting principles for Wi-Fi networks"
+    ],
+    "Game speed booster": [
+      "New: Floating windows for incoming calls during games",
+      "Optimization: You can open the gaming toolbox by swiping from the top side of the screen",
+      "Fix: Hands-free call duration wasn^t displayed correctly in Game Turbo"
+    ],
+    "Mi Cloud": [
+      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
+      "Optimization: Improved sync across multiple devices"
+    ]
+  },
+  "logs_fr": {
+    "Système": [
+      "Nouveau: Une option pour lisser les courbes d^encoches sur les périphériques plein écran",
+      "Optimisation: Mise à jour du correctif de sécurité Android jusqu^en juillet 2019. Sécurité accrue du système.",
+      "Optimisation: Verrouiller le mode poche"
+    ],
+    "Téléphone": [
+      "Réparé: Mettre fin aux appels a pris plus de temps que prévu"
+    ],
+    "Verrouillage de l'application": [
+      "Nouveau: Bloquer les contacts Google est maintenant disponible"
+    ],
+    "Contacts": [
+      "Réparé: Les contacts ne pouvaient pas être supprimés des cartes SIM dans certains cas"
+    ],
+    "Écran de verrouillage, Barre d'état, Panneau de notification": [
+      "Nouveau: Vous pouvez choisir de ne pas afficher l^icône d^empreinte digitale sur l^écran éteint. Le déverrouillage par empreinte digitale fonctionnera toujours normalement.",
+      "Nouveau: Présentation de l’horloge de l’écran de verrouillage personnalisable (Paramètres> Écran de verrouillage et mot de passe> Paramètres avancés). La nouvelle horloge de l^écran de verrouillage ne fonctionne pas avec les thèmes tiers.",
+      "Nouveau: Utilisez votre empreinte digitale pour ouvrir l^écran d^accueil une fois que vous avez déverrouillé l^appareil à l^aide des données du visage et que vous êtes resté sur l^écran de verrouillage",
+      "Optimisation: Zones sensibles réajustées pour les points du schéma de déverrouillage",
+      "Optimisation: Le commutateur VoLTE est apparu dans les régions où VoLTE n^est pas pris en charge",
+      "Réparé: Les notifications flottantes relatives à la batterie n^étaient pas affichées correctement en mode paysage",
+      "Réparé: La page de synchronisation ne peut pas être régénérée chaque fois que la synchronisation est activée ou désactivée dans le panneau de Notifications",
+      "Réparé: L^écran ne s^allume pas toujours pour les notifications",
+      "Réparé: Le volume du média n^a pas pu être restauré après avoir reçu une notification"
+    ],
+    "Appareil Photo": [
+      "Nouveau: Nouveaux modes pour caméra IA",
+      "Nouveau: Panoramas pour la caméra frontale",
+      "Nouveau: Mode faible luminosité amélioré"
+    ],
+    "Paramètres": [
+      "Optimisation: Principes de tri pour les réseaux Wi-Fi"
+    ],
+    "Booster de vitesse de jeu": [
+      "Nouveau: Fenêtres flottantes pour les appels entrants pendant les jeux",
+      "Optimisation: Vous pouvez ouvrir la boîte à outils de jeu en faisant glisser votre doigt depuis le haut de l^écran",
+      "Réparé: La durée des appels mains libres n^était pas affichée correctement dans Game Turbo"
+    ],
+    "Mi Cloud": [
+      "Optimisation: Nous avons repensé la page de démarrage de Mi Cloud. Ça a l^air beaucoup mieux maintenant!",
+      "Optimisation: Amélioration de la synchronisation sur plusieurs appareils"
+    ]
+  },
+  "logs_it": {
+    "Sistema": [
+      "Nuovo: Opzione per uniformare le curve del notch sui dispositivi a schermo intero",
+      "Ottimizzazione: Aggiornamento della patch di sicurezza Android a luglio 2019. Maggiore sicurezza del sistema.",
+      "Ottimizzazione: Modalità Tasca schermata di blocco"
+    ],
+    "Telefono": [
+      "Risolto: Terminare le chiamate richiedeva più tempo del previsto"
+    ],
+    "Blocco app": [
+      "Nuovo: Il blocco dei contatti Google è ora disponibile"
+    ],
+    "Contatti": [
+      "Risolto: In alcuni casi, i contatti non potevano essere eliminati dalle schede SIM"
+    ],
+    "Schermata di blocco, barra di stato, area delle notifiche": [
+      "Nuovo: Puoi scegliere di non mostrare l^icona dell^impronta digitale a schermo spento. Lo sblocco con l^impronta digitale continuerà a funzionare normalmente.",
+      "Nuovo: Introdotto l^orologio personalizzabile per la schermata di blocco (Impostazioni > Schermata di blocco e password > Impostazioni avanzate). Il nuovo orologio della schermata di blocco non funziona con temi di terze parti.",
+      "Nuovo: Accedi alla schermata Home usando l^impronta digitale dopo aver sbloccato il dispositivo con i dati del volto restando sulla schermata di blocco.",
+      "Ottimizzazione: Riadattate le aree sensibili per i punti nella sequenza di sblocco",
+      "Ottimizzazione: Il sensore di impronte non poteva essere utilizzato quando la funzionalità TalkBack era attiva",
+      "Risolto: Le notifiche a comparsa relative alla batteria non erano visualizzate correttamente in modalità orizzontale",
+      "Risolto: La pagina di sincronizzazione non poteva essere aggiornata quando la sincronizzazione era attiva o disattivata nell^area delle notifiche",
+      "Risolto: Lo schermo non sempre si accendeva per mostrare le notifiche",
+      "Risolto: Il volume multimediale non poteva essere ripristinato dopo aver ricevuto una notifica"
+    ],
+    "Fotocamera": [
+      "Nuovo: Nuove modalità per la fotocamera AI",
+      "Nuovo: Modalità Panorama per la fotocamera frontale",
+      "Nuovo: Migliorata la modalità luce scarsa"
+    ],
+    "Impostazioni": [
+      "Ottimizzazione: Principi di ordinamento delle reti Wi-Fi"
+    ],
+    "Turbo Videogiochi": [
+      "Nuovo: Finestre a comparsa per le chiamate in arrivo durante il gioco",
+      "Ottimizzazione: Puoi aprire gli strumenti di gioco scorrendo dal lato superiore dello schermo",
+      "Risolto: La durata delle chiamate in vivavoce non era visualizzata correttamente in Turbo Videogiochi"
+    ],
+    "Mi Cloud": [
+      "Ottimizzazione: Abbiamo ridisegnato la pagina iniziale di Mi Cloud. Ora è molto meglio!",
+      "Ottimizzazione: Sincronizzazione migliorata su più dispositivi"
+    ]
+  },
+  "logs_es": {
+    "Sistema": [
+      "Nuevo: Una opción para suavizar las curvas del notch en los dispositivos todo pantalla",
+      "Optimización: Parche de seguridad de Android actualizado a julio de 2019. Seguridad del sistema incrementada.",
+      "Optimización: Pantalla de bloqueo en Modo bolsillo"
+    ],
+    "Teléfono": [
+      "Reparado: Terminar las llamadas llevó más tiempo de lo esperado"
+    ],
+    "Bloqueo de aplicaciones": [
+      "Nuevo: Ahora el bloqueo de contactos de Google está disponible"
+    ],
+    "Contactos": [
+      "Reparado: Los contactos no podían ser eliminados de las tarjetas SIM en algunos casos"
+    ],
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Nuevo: Puedes elegir no mostrar el icono de huella dactilar con la pantalla apagada. El desbloqueo funcionará con normalidad.",
+      "Nuevo: Introducción de un reloj personalizable en la Pantalla de bloqueo (Ajustes > Pantalla de bloqueo y contraseña > Ajustes avanzados). El nuevo reloj de la Pantalla de bloqueo no funciona con temas de terceros.",
+      "Nuevo: Usa tu huella dactilar para abrir la Pantalla de inicio después de haber desbloqueado el dispositivo usando tus datos faciales y haber permanecido en la Pantalla de bloqueo",
+      "Optimización: Áreas sensitivas de los puntos reajustadas en el patrón de desbloqueo ",
+      "Optimización: El lector de huella dactilar no podía ser usado cuando TalkBack estaba activo",
+      "Reparado: Las notificaciones flotantes relacionadas con la batería no se mostraban correctamente en el modo paisaje",
+      "Reparado: La página de sincronización no pudo ser refrescada cuando la sincronización fue activada o desactivada en la Barra de notificaciones ",
+      "Reparado: La pantalla no siempre se encendía con las notificaciones",
+      "Reparado: El volumen medio no pudo ser restaurado después de recibir una notificación"
+    ],
+    "Cámara": [
+      "Nuevo: Nuevo modos para la cámara IA",
+      "Nuevo: Fotos panorámicas para la cámara frontal",
+      "Nuevo: Modo luz baja mejorado"
+    ],
+    "Ajustes": [
+      "Optimización: Los valores de redes Wi-Fi son ordenados"
+    ],
+    "Acelerador de juegos": [
+      "Nuevo: Ventanas flotantes para llamadas entrantes durante juegos",
+      "Optimización: Puedes abrir la caja de herramientas de juegos deslizando desde la parte superior de la pantalla",
+      "Reparado: La duración de las llamadas en manos libres no se mostraba correctamente en Game Turbo"
+    ],
+    "Mi Cloud": [
+      "Optimización: Hemos rediseñado la página de inicio de Mi Nube. ¡Ahora tiene mucho mejor aspecto!",
+      "Optimización: Sincronización entre múltiples dispositivos mejorada"
+    ]
+  },
+  "logs_pt": {
+    "Sistema": [
+      "Novo: Opção para suavizar as curvas de entalhes em dispositivos com tela infinita",
+      "Otimização: Atualização do Patch de Segurança do Android para Julho de 2019. Segurança do sistema aprimorada.",
+      "Otimização: Modo de bolso para a Tela de bloqueio"
+    ],
+    "Telefone": [
+      "Correção: Encerrar chamadas levava mais tempo que o esperado"
+    ],
+    "Bloqueio de apps": [
+      "Novo: Agora é possível bloquear contatos do Google"
+    ],
+    "Contatos": [
+      "Correção: Contatos não podiam ser excluídos de cartões SIM em alguns casos"
+    ],
+    "Tela de bloqueio, Barra de status e Área de notificações": [
+      "Novo: Você pode optar por não exibir o ícone de impressão digital com a tela desligada. O desbloqueio por impressão digital ainda funcionará normalmente.",
+      "Novo: Introduzindo o Relógio personalizável na Tela de bloqueio (Configurar > Bloqueio de tela e senhas > Configurações avançadas). O novo relógio da Tela de bloqueio não funciona com temas de terceiros.",
+      "Novo: Use sua impressão digital para abrir a Tela inicial quando você desbloquear o dispositivo usando o desbloqueio facial e ficar na Tela de bloqueio",
+      "Otimização: Reajuste nas áreas sensíveis dos pontos do padrão de desbloqueio",
+      "Otimização: O sensor de impressões digitais não podia ser usado com o TalkBack ativado",
+      "Correção: Notificações flutuantes sobre a bateria não eram exibidas corretamente em modo paisagem",
+      "Correção: A página de sincronização não podia ser recarregada quando a sincronização era ativada ou desativada na Área de notificações",
+      "Correção: Em alguns casos, a tela não acendia para notificações recebidas",
+      "Correção: O volume de mídia não podia ser restaurado após receber uma notificação"
+    ],
+    "Câmera": [
+      "Novo: Novos modos para a Câmera com IA",
+      "Novo: Panoramas para a câmera frontal",
+      "Novo: Modo de pouca luz aprimorado"
+    ],
+    "Configurações": [
+      "Otimização: Ordenação de redes Wi-Fi salvas"
+    ],
+    "Acelerador de jogos": [
+      "Novo: Janelas flutuantes para chamadas recebidas durante jogos",
+      "Otimização: Você pode abrir a caixa de ferramentas de jogos ao deslizar a partir da parte superior da tela",
+      "Correção: A duração para chamadas hands-free não era exibida corretamente no Game Turbo"
+    ],
+    "Mi Cloud": [
+      "Otimização: Nós redesenhamos a página inicial da Mi Cloud. Ela está muito melhor agora!",
+      "Otimização: Sincronização otimizada entre vários dispositivos"
+    ]
+  },
+  "logs_tr": {
+    "Sistem": [
+      "Yeni: Tam ekran cihazlardaki çentik eğimini düzeltmek için bir seçenek",
+      "Optimizasyon: Android Güvenlik Yaması Temmuz 2019 sürümüne güncellendi. Sistem güvenliği artırıldı.",
+      "Optimizasyon: Kilit ekranı cep modu"
+    ],
+    "Telefon": [
+      "Onarım: Aramaları sonlandırmak beklenenden daha uzun sürdü"
+    ],
+    "Uygulama kilidi": [
+      "Yeni: Google kişilerini kilitleme şimdi kullanılabilir"
+    ],
+    "Kişiler": [
+      "Onarım: Kişilerin bazı durumlarda silinememesi sorunu giderildi"
+    ],
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Yeni: Parmak izi simgesini kapanma ekranında göstermemeyi seçebilirsiniz. Parmak izi ile kilit açma işlevi normal bir şekilde çalışmaya devam edecektir.",
+      "Yeni: Özelleştirilebilir Kilit ekranı saati (Ayarlar > Kilit ekranı & şifre > Gelişmiş ayarlar). Yeni kilit ekranı saati üçüncü parti temaları ile çalışmaz.",
+      "Yeni: Cihazın kilidini yüz verilerini kullanarak açtıktan ve Kilit ekranında kaldıktan sonra Ana ekranı açmak için parmak izinizi kullanın",
+      "Optimizasyon: Kilit açma desenindeki noktalar için hassas bölgeler yeniden ayarlandı",
+      "Optimizasyon: Parmakizi tarayıcının, TalkBack özelliği açık olduğunda, kullanılamama sorunu giderildi",
+      "Onarım: Pille ilgili kayan bildirimler, manzara modunda doğru görüntülenmedi",
+      "Onarım: Senkronizasyon Bildirim çubuğunda açıldığında veya kapatıldığında senkronizasyon sayfası yenilenemedi",
+      "Onarım: Bazen bildirimler için ekran açılmadı",
+      "Onarım: Medya sesi, bildirim alındıktan sonra geri alınamadı"
+    ],
+    "Kamera": [
+      "Yeni: AI kamera için yeni modlar",
+      "Yeni: Ön kamera için panoramalar",
+      "Yeni: Gelişmiş düşük ışık modu"
+    ],
+    "Ayarlar": [
+      "Optimizasyon: Wi-Fi ağları için sıralama ilkeleri"
+    ],
+    "Oyun hız artırıcı": [
+      "Yeni: Oyunlar sırasında gelen aramalar için kayan pencereler",
+      "Optimizasyon: Oyun araç kutusunu, ekranın en üstünden itibaren kaydırarak açabilirsiniz",
+      "Onarım: Eller serbest arama süresi, Game Turbo^da doğru gösterilmedi"
+    ],
+    "Mi Cloud": [
+      "Optimizasyon: Mi Cloud^un ana sayfasını yeniden tasarladık, artık çok daha iyi görünüyor!",
+      "Optimizasyon: Birkaç cihaz arasında geliştirilmiş senkronizasyon"
+    ]
+  },
+  "logs_id": {
+    "Sistem": [
+      "Baru: Pilihan untuk memperhalus lekukan notch pada perangkat layar penuh",
+      "Pengoptimalan: Patch Keamanan Android diperbarui hingga Juli 2019. Keamanan sistem ditingkatkan.",
+      "Pengoptimalan: Mode saku Layar kunci"
+    ],
+    "Telepon": [
+      "Perbaikan: Mematikan panggilan memakan waktu lebih lama dibanding seharusnya"
+    ],
+    "Kunci aplikasi": [
+      "Baru: Fitur mengunci kontak Google telah didukung sekarang"
+    ],
+    "Kontak": [
+      "Perbaikan: Kontak tidak dapat dihapus dari kartu SIM di beberapa kasus"
+    ],
+    "Layar kunci, bar status, layar notifikasi": [
+      "Baru: Anda dapat memilih untuk tidak menampilkan ikon sidik jari saat layar dimatikan. Buka kunci dengan sidik jari tetap dapat bekerja dengan normal.",
+      "Baru: Memperkenalkan jam Layar kunci yang dapat dikustomisasi (Setelan > Kunci layar & sandi> Setelan lanjutan). Jam Layar kunci baru tidak berfungsi dalam tema pihak ketiga.",
+      "Baru: Menggunakan sidik jari untuk membuka Layar utama saat Anda membuka kunci perangkat dengan data wajah dan tetap berada di Layar kunci",
+      "Pengoptimalan: Area sensitif yang disesuaikan untuk titik-titik dalam pola buka kunci",
+      "Pengoptimalan: Pemindai sidik jari tidak dapat digunakan saat TalkBack dihidupkan",
+      "Perbaikan: Notifikasi mengambang yang berkaitan dengan baterai tidak ditampilkan saat dalam mode horisontal",
+      "Perbaikan: Halaman sinkron tidak dapat disegarkan kembali setiap kali sinkron dihidupkan atau dimatikan di Layar notifikasi",
+      "Perbaikan: Layar tidak selalu menyala saat ada notifikasi",
+      "Perbaikan: Volume media tidak dapat dipulihkan setelah menerima notifikasi"
+    ],
+    "Kamera": [
+      "Baru: Mode baru untuk kamera AI",
+      "Baru: Mode Panorama untuk kamera depan",
+      "Baru: Mode cahaya rendah yang ditingkatkan"
+    ],
+    "Setelan": [
+      "Pengoptimalan: Pengurutan daftar Wi-Fi berdasarkan kekuatan sinyal"
+    ],
+    "Peningkat kecepatan permainan": [
+      "Baru: Jendela mengambang untuk panggilan masuk saat bermain permainan",
+      "Pengoptimalan: Toolbox permainan dapat dibuka dengan menggeser ke bawah dari bagian atas layar",
+      "Perbaikan: Durasi panggilan hands-free tidak ditampilkan dengan benar di Game Turbo"
+    ],
+    "Mi Cloud": [
+      "Pengoptimalan: Halaman awal Mi Cloud didesain ulang. Sekarang semakin terlihat lebih baik!",
+      "Pengoptimalan: Sinkronisasi ditingkatkan di beberapa perangkat"
+    ]
+  },
+  "logs_vi": {
+    "System": [
+      "New: An option for smoothening notch curves on full screen devices",
+      "Optimization: Updated Android Security Patch to July 2019. Increased system security.",
+      "Optimization: Lock screen pocket mode"
+    ],
+    "Phone": [
+      "Fix: Ending calls took longer time than expected"
+    ],
+    "App lock": [
+      "New: Locking Google contacts is available now"
+    ],
+    "Contacts": [
+      "Fix: Contacts couldn^t be deleted from SIM cards in some cases"
+    ],
+    "Lockscreen, status bar, Notification shade": [
+      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally.",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
+      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
+      "Optimization: Fingerprint scanner couldn^t be used when TalkBack was on",
+      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode",
+      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
+      "Fix: Screen didn^t always light up for notifications",
+      "Fix: Media volume couldn^t be restored after receiving a notification"
+    ],
+    "Camera": [
+      "New: New modes for AI camera",
+      "New: Panoramas for the front camera",
+      "New: Enhanced low light mode"
+    ],
+    "Settings": [
+      "Optimization: Sorting principles for Wi-Fi networks"
+    ],
+    "Game speed booster": [
+      "New: Floating windows for incoming calls during games",
+      "Optimization: You can open the gaming toolbox by swiping from the top side of the screen",
+      "Fix: Hands-free call duration wasn^t displayed correctly in Game Turbo"
+    ],
+    "Mi Cloud": [
+      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
+      "Optimization: Improved sync across multiple devices"
+    ]
+  },
+  "logs_th": {
+    "System": [
+      "New: An option for smoothening notch curves on full screen devices",
+      "Optimization: Updated Android Security Patch to July 2019. Increased system security.",
+      "Optimization: Lock screen pocket mode"
+    ],
+    "Phone": [
+      "Fix: Ending calls took longer time than expected"
+    ],
+    "App lock": [
+      "New: Locking Google contacts is available now"
+    ],
+    "Contacts": [
+      "Fix: Contacts couldn^t be deleted from SIM cards in some cases"
+    ],
+    "Lockscreen, status bar, Notification shade": [
+      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally.",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
+      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
+      "Optimization: Fingerprint scanner couldn^t be used when TalkBack was on",
+      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode",
+      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
+      "Fix: Screen didn^t always light up for notifications",
+      "Fix: Media volume couldn^t be restored after receiving a notification"
+    ],
+    "Camera": [
+      "New: New modes for AI camera",
+      "New: Panoramas for the front camera",
+      "New: Enhanced low light mode"
+    ],
+    "Settings": [
+      "Optimization: Sorting principles for Wi-Fi networks"
+    ],
+    "Game speed booster": [
+      "New: Floating windows for incoming calls during games",
+      "Optimization: You can open the gaming toolbox by swiping from the top side of the screen",
+      "Fix: Hands-free call duration wasn^t displayed correctly in Game Turbo"
+    ],
+    "Mi Cloud": [
+      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
+      "Optimization: Improved sync across multiple devices"
+    ]
+  },
+  "logs_ar": {
+    "System": [
+      "New: An option for smoothening notch curves on full screen devices",
+      "Optimization: Updated Android Security Patch to July 2019. Increased system security.",
+      "Optimization: Lock screen pocket mode"
+    ],
+    "Phone": [
+      "Fix: Ending calls took longer time than expected"
+    ],
+    "App lock": [
+      "New: Locking Google contacts is available now"
+    ],
+    "Contacts": [
+      "Fix: Contacts couldn^t be deleted from SIM cards in some cases"
+    ],
+    "Lockscreen, status bar, Notification shade": [
+      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally.",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
+      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
+      "Optimization: Fingerprint scanner couldn^t be used when TalkBack was on",
+      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode",
+      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
+      "Fix: Screen didn^t always light up for notifications",
+      "Fix: Media volume couldn^t be restored after receiving a notification"
+    ],
+    "Camera": [
+      "New: New modes for AI camera",
+      "New: Panoramas for the front camera",
+      "New: Enhanced low light mode"
+    ],
+    "Settings": [
+      "Optimization: Sorting principles for Wi-Fi networks"
+    ],
+    "Game speed booster": [
+      "New: Floating windows for incoming calls during games",
+      "Optimization: You can open the gaming toolbox by swiping from the top side of the screen",
+      "Fix: Hands-free call duration wasn^t displayed correctly in Game Turbo"
+    ],
+    "Mi Cloud": [
+      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
+      "Optimization: Improved sync across multiple devices"
+    ]
   }
 }

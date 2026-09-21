@@ -25,6 +25,8 @@ CREATE TABLE `roms` (
   `logs_zh` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin COMMENT '中文更新日志，JSON 格式',
   `logs_en` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin COMMENT '英文更新日志，JSON 格式',
   `logs_zh_tw` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin COMMENT '繁体中文（zh-Hant）更新日志，JSON 格式',
+  `logs_ug` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin COMMENT '维吾尔文（ug_CN）更新日志，JSON 格式',
+  `logs_bo` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin COMMENT '藏文（bo_CN）更新日志，JSON 格式',
   `logs_ja` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin COMMENT '日文（ja）更新日志，JSON 格式',
   `logs_ko` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin COMMENT '韩文（ko）更新日志，JSON 格式',
   `logs_ru` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin COMMENT '俄文（ru）更新日志，JSON 格式',
@@ -36,6 +38,7 @@ CREATE TABLE `roms` (
   `logs_es` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin COMMENT '西班牙文（es）更新日志，JSON 格式',
   `logs_pt` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin COMMENT '葡萄牙文（pt）更新日志，JSON 格式',
   `logs_tr` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin COMMENT '土耳其文（tr）更新日志，JSON 格式',
+  `logs_in` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin COMMENT '印地语（hi）更新日志，JSON 格式',
   `logs_id` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin COMMENT '印尼文（id）更新日志，JSON 格式',
   `logs_vi` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin COMMENT '越南文（vi）更新日志，JSON 格式',
   `logs_th` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin COMMENT '泰文（th）更新日志，JSON 格式',
@@ -64,7 +67,10 @@ CREATE TABLE `roms` (
   CONSTRAINT `roms_chk_15` CHECK (json_valid(`logs_id`)),
   CONSTRAINT `roms_chk_16` CHECK (json_valid(`logs_vi`)),
   CONSTRAINT `roms_chk_17` CHECK (json_valid(`logs_th`)),
-  CONSTRAINT `roms_chk_18` CHECK (json_valid(`logs_ar`))
+  CONSTRAINT `roms_chk_18` CHECK (json_valid(`logs_ar`)),
+  CONSTRAINT `roms_chk_19` CHECK (json_valid(`logs_in`)),
+  CONSTRAINT `roms_chk_20` CHECK (json_valid(`logs_ug`)),
+  CONSTRAINT `roms_chk_21` CHECK (json_valid(`logs_bo`))
 ) ENGINE=InnoDB AUTO_INCREMENT=53771 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin ROW_FORMAT=DYNAMIC;
 
 -- 数据示例：52119,'taiko','taiko','HyperOS','HyperOS 3','cn','CnOO','F',1,'OS3.0.303.0.WOVCNXM','16.0','2026-04-22','2026-04-22','2026-04-27','taiko-ota_full-OS3.0.303.0.WOVCNXM-user-16.0-cafd2ead7a.zip','taiko_images_OS3.0.303.0.WOVCNXM_20260416.0000.00_16.0_cn_343def42ff.tgz','taiko_images_OS3.0.303.0.WOVCNXM_20260416.0000.00_16.0_cn_chinatelecom_251b6f1689.tgz',NULL,NULL,NULL,'2026-04-22',NULL,'{\"小米超级岛\": [\"新增 小米超级岛，信息触达更高效\", \"新增 支持下拉展开小窗，多任务场景高效处理\"]}','{\"Xiaomi HyperIsland\": [\"New: View all the important info at a glance with Xiaomi HyperIsland\"]}','2026-03-01'
