@@ -104,5 +104,297 @@
     "Status bar, Notification shade": [
       "Fix: Cleaner animations weren^t displayed correctly"
     ]
+  },
+  "logs_zh_tw": {
+    "MIUI12.5 增強版": [
+      "全面流暢，更低功耗",
+      "【焦點計算】 依據場景的智慧演算力調度機制，提升全機型流暢度",
+      "【原子記憶體】 超精細記憶體管理機制，應用駐留全面提升",
+      "【液態存儲】 靈敏且高效的檔案儲存機制，提升系統抗老化能力",
+      "【智慧均衡】 對旗艦硬體性能的智慧調整"
+    ],
+    "鎖屏": [
+      "修復: 指紋解鎖進入桌面之後，在任意顯示圖標的界面指紋動畫會一直播放問題",
+      "修復: 指紋動畫導致的崩潰問題",
+      "修復: 橫向螢幕畫面螢幕熄滅後指紋圖標消失或錯位的問題",
+      "修復: 指紋解鎖後自動黑色畫面跳轉到螢幕鎖定畫面，且螢幕鎖定畫面壁紙為桌面壁紙的問題",
+      "修復: 個別應用在使用指紋驗證時, 跳回到螢幕鎖定介面的問題",
+      "修復: 螢幕熄滅之後指紋快速解鎖導致螢幕鎖定畫面透明問題",
+      "修復: 指紋解鎖進入桌面之後，指紋圖標依舊顯示，點擊可播放動畫的問題",
+      "修復: 螢幕熄滅之後指紋快速解鎖導致螢幕鎖定畫面透明問題",
+      "修復: 指紋解鎖時閃現桌面壁紙，且未成功解鎖的問題",
+      "修復: 螢幕亮起指紋解鎖成功後又跳轉到螢幕鎖定畫面的問題",
+      "修復: 進入密碼輸入頁面，人臉與指紋同時檢測解鎖時有概率出現錯誤的問題",
+      "修復: 掛斷電話螢幕亮起後螢幕鎖定畫面訊息全部消失的問題"
+    ],
+    "狀態欄、通知欄": [
+      "修復: 一鍵清理動畫掉幀的問題"
+    ]
+  },
+  "logs_ja": {
+    "ロック画面": [
+      "修正: ロック解除後に指紋認証のアニメーションが再生され続ける問題",
+      "修正: 指紋認証のアニメーションでクラッシュが発生する問題",
+      "修正: 画面を横向きにして電源を切ったときに、指紋認証アイコンが表示されない、または正しく表示されない問題",
+      "修正: 指紋認証でロック解除した後、画面が黒くなり、デバイスがロックされ、ロック画面の壁紙がホーム画面の壁紙に変わってしまう問題",
+      "修正: 一部のアプリで指紋認証を使用するとデバイスがロックされる問題",
+      "修正: ロックを解除しても指紋認証のアイコンが消えない問題",
+      "修正: ロックを解除しても指紋認証のアイコンが消えない問題",
+      "修正: 指紋認証を行うとロック画面が透明になる場合がある問題",
+      "修正: 指紋認証でのロック解除中に壁紙が点滅し、ロック解除に失敗する問題",
+      "修正: 指紋認証でのロック解除後、デバイスが再びロックされる問題",
+      "修正: 顔認証と指紋認証を同時に使用するとクラッシュする場合がある問題",
+      "修正: 通話終了後にロック画面の通知が消えてしまう問題"
+    ],
+    "ステータスバー、通知シェード": [
+      "修正: クリーナーのアニメーションが正しく表示されない問題"
+    ]
+  },
+  "logs_ko": {
+    "잠금화면": [
+      "수정: 기기 잠금을 해제한 후에도 지문 잠금해제 애니메이션이 계속 재생되는 문제",
+      "수정: 지문 잠금해제의 애니메이션에서 충돌이 발생하는 문제",
+      "수정: 화면에서 가로 모드를 끈 후에 지문 아이콘이 나타나지 않거나 잘못 표시되는 문제",
+      "수정: 지문 잠금해제를 사용한 후 화면이 검게 변하고 기기가 잠기며 잠금화면 배경화면이 홈 화면의 배경화면으로 교체되는 문제",
+      "수정: 일부 앱에서 지문을 사용하면 기기가 잠기는 문제",
+      "수정: 기기 잠금을 해제한 후에도 지문 아이콘이 사라지지 않는 문제",
+      "수정: 기기 잠금을 해제한 후에도 지문 아이콘이 사라지지 않는 문제",
+      "수정: 일부 상황에서 지문 잠금해제를 사용한 후 잠금화면이 투명해지는 문제",
+      "수정: 지문으로 잠금을 해제하는 중에 배경화면이 깜빡이며 잠금이 해제되지 않는 문제",
+      "수정: 지문으로 기기 잠금을 해제한 후 다시 잠기는 문제",
+      "수정: 일부 상황에서 안면 인식 잠금해제와 지문 잠금해제를 동시에 사용 시 충돌이 발생하는 문제",
+      "수정: 통화 종료 후에 잠금화면 알림이 사라지는 문제"
+    ],
+    "상태 바, 알림 바": [
+      "수정: 클리너 애니메이션이 제대로 표시되지 않는 문제"
+    ]
+  },
+  "logs_ru": {
+    "Экран блокировки": [
+      "Исправлено: Анимация разблокировки при помощи отпечатка пальца не прекращала отображаться даже после разблокировки устройства",
+      "Исправлено: Анимация разблокировки при помощи отпечатка пальца могла приводить к ошибкам",
+      "Исправлено: Значок отпечатка пальца не отображался или отображался неправильно, когда экран был выключен в альбомной ориентации",
+      "Исправлено: После разблокировки при помощи отпечатка пальца экран мог погаснуть, устройство заблокироваться, а обои экрана блокировки могли быть заменены обоями рабочего стола",
+      "Исправлено: Использование отпечатков пальцев в некоторых приложениях могло приводить к блокировке устройства",
+      "Исправлено: Значок отпечатка пальца не исчезал после разблокировки устройства",
+      "Исправлено: Значок отпечатка пальца не исчезал после разблокировки устройства",
+      "Исправлено: В некоторых случаях после разблокировки при помощи отпечатка пальца экран блокировки мог стать прозрачным",
+      "Исправлено: В некоторых случаях при использовании разблокировки при помощи отпечатка пальца обои начинали мерцать, что не позволяло разблокировать устройство",
+      "Исправлено: Устройство блокировалось снова даже после успешной разблокировки при помощи отпечатка пальца",
+      "Исправлено: В редких случаях одновременное использование разблокировки по лицу и при помощи отпечатка пальца могло приводить к ошибкам",
+      "Исправлено: После завершения голосового вызова уведомления на экране блокировки могли исчезнуть"
+    ],
+    "Строка состояния, шторка уведомлений": [
+      "Исправлено: Исправлено некорректное отображение анимации ^Очистки^"
+    ]
+  },
+  "logs_uk": {
+    "Екран блокування": [
+      "Виправлено: Анімація розблокування за допомогою відбитка пальця не припиняла відображатися навіть після розблокування пристрою",
+      "Виправлено: Анімація розблокування за допомогою відбитка пальця могла призводити до помилок",
+      "Виправлено: Значок відбитка пальця не відображався або відображався неправильно, коли екран був вимкнений в альбомній орієнтації",
+      "Виправлено: Після розблокування за допомогою відбитка пальця екран міг згаснути, пристрій заблокуватися, а шпалери екрану блокування могли бути замінені шпалерами робочого столу",
+      "Виправлено: Використання відбитків пальців в деяких програмах могло призводити до блокування пристрою",
+      "Виправлено: Значок відбитка пальця не зникав після розблокування пристрою",
+      "Виправлено: Значок відбитка пальця не зникав після розблокування пристрою",
+      "Виправлено: У деяких випадках після розблокування за допомогою відбитка пальця екран блокування міг стати прозорим",
+      "Виправлено: У деяких випадках під час використання розблокування за допомогою відбитка пальця шпалери починали мерехтіти, що не дозволяло розблокувати пристрій",
+      "Виправлено: Пристрій блокувався знову навіть після успішного розблокування за допомогою відбитка пальця",
+      "Виправлено: У деяких випадках одночасне використання розблокування за допомогою обличчя і за допомогою відбитка пальця могло призводити до помилок",
+      "Виправлено: Після завершення голосового виклику повідомлення на екрані блокування могли зникнути"
+    ],
+    "Рядок стану, Панель сповіщень": [
+      "Виправлено: Виправлено некоректне відображення анімації ^Очищення^"
+    ]
+  },
+  "logs_pl": {
+    "Ekran blokady": [
+      "Naprawiono: Animacja odblokowania odciskiem palca była odtwarzana po odblokowaniu urządzenia",
+      "Naprawiono: Animacja odblokowania odciskiem palca doprowadziła do awarii",
+      "Naprawiono: Ikona odcisku palca nie pojawiała się lub była wyświetlana nieprawidłowo, gdy ekran był wyłączony w trybie poziomym",
+      "Naprawiono: Ekran zrobił się czarny, urządzenie zostało zablokowane, a tapeta ekranu blokady została zastąpiona tapetą ekranu głównego po użyciu odblokowania odciskiem palca",
+      "Naprawiono: Używanie odcisków palców w niektórych aplikacjach zablokowało urządzenie",
+      "Naprawiono: Ikona odcisku palca nie zniknęła po odblokowaniu urządzenia",
+      "Naprawiono: Ikona odcisku palca nie zniknęła po odblokowaniu urządzenia",
+      "Naprawiono: Ekran blokady stał się przezroczysty po użyciu w niektórych przypadkach odblokowania odciskiem palca",
+      "Naprawiono: Tapety błysnęły, gdy używane było odblokowanie odciskiem palca, co nie pozwalało na odblokowanie urządzenia",
+      "Naprawiono: Urządzenie zostało ponownie zablokowane po udanych próbach odblokowania odciskiem palca",
+      "Naprawiono: Jednoczesne używanie rozpoznawania twarzy i odblokowywania odciskiem palca w niektórych przypadkach powodowało awarie",
+      "Naprawiono: Powiadomienia na ekranie blokady znikały po zakończonej rozmowie"
+    ],
+    "Pasek powiadomień, Panel powiadomień": [
+      "Naprawiono: Czystsze animacje nie były wyświetlane poprawnie"
+    ]
+  },
+  "logs_fr": {
+    "Écran de verrouillage": [
+      "Réparé: L^animation de déverrouillage des empreintes digitales a continué à jouer après le déverrouillage de l^appareil",
+      "Réparé: L^animation de déverrouillage des empreintes digitales a entraîné des plantages",
+      "Réparé: L^icône d^empreinte digitale n^apparaissait pas ou ne s^affichait pas correctement lorsque l^écran était éteint en mode paysage",
+      "Réparé: L^écran est devenu noir, l^appareil a été verrouillé et le fond d^écran de l^écran de verrouillage a été remplacé par le fond d^écran de l^écran d^accueil après l^utilisation du déverrouillage par empreinte digitale",
+      "Réparé: L^utilisation d^empreintes digitales dans certaines applications a verrouillé l^appareil",
+      "Réparé: L^icône d^empreinte digitale n^a pas disparu après le déverrouillage de l^appareil",
+      "Réparé: L^icône d^empreinte digitale n^a pas disparu après le déverrouillage de l^appareil",
+      "Réparé: L^écran de verrouillage est devenu transparent après l^utilisation du déverrouillage par empreinte digitale dans certains cas",
+      "Réparé: Les fonds d^écran ont clignoté lorsque le déverrouillage par empreinte digitale était utilisé, ce qui ne permettait pas de déverrouiller l^appareil",
+      "Réparé: L^appareil a été à nouveau verrouillé après des tentatives réussies de déverrouillage par empreinte digitale",
+      "Réparé: L^utilisation simultanée du déverrouillage du visage et du déverrouillage des empreintes digitales a entraîné des plantages dans certains cas",
+      "Réparé: Les notifications de l^écran de verrouillage ont disparu après un appel terminé"
+    ],
+    "Barre d'état, Panneau de notification": [
+      "Réparé: Les animations plus propres ne s^affichaient pas correctement"
+    ]
+  },
+  "logs_it": {
+    "Schermata di blocco": [
+      "Risolto: L^animazione di sblocco tramite impronta continuava a essere riprodotta dopo lo sblocco del dispositivo",
+      "Risolto: L^animazione dello sblocco tramite impronta causava arresti anomali",
+      "Risolto: L^icona dell^impronta digitale non appariva o veniva visualizzata in modo errato a schermo spento in modalità orizzontale",
+      "Risolto: Lo schermo diventava nero, il dispositivo veniva bloccato e lo sfondo della schermata di blocco veniva sostituito con lo sfondo della schermata Home dopo lo sblocco tramite impronta",
+      "Risolto: L^uso delle impronte digitali in alcune app bloccava il dispositivo",
+      "Risolto: L^icona dell^impronta digitale non scompariva dopo lo sblocco del dispositivo",
+      "Risolto: L^icona dell^impronta digitale non scompariva dopo lo sblocco del dispositivo",
+      "Risolto: La schermata di blocco diventava trasparente dopo lo sblocco tramite impronta in alcuni casi",
+      "Risolto: Gli sfondi lampeggiavano durante lo sblocco tramite impronta, il che non consentiva di sbloccare il dispositivo",
+      "Risolto: Il dispositivo veniva nuovamente bloccato dopo i tentativi di sblocco tramite impronta riusciti",
+      "Risolto: L^uso simultaneo di riconoscimento facciale e sblocco tramite impronta causava arresti anomali in alcuni casi",
+      "Risolto: Le notifiche sulla schermata di blocco scomparivano dopo una chiamata terminata"
+    ],
+    "Barra di stato, Area delle notifiche": [
+      "Risolto: Le animazioni di Pulitore non venivano visualizzate correttamente"
+    ]
+  },
+  "logs_es": {
+    "Pantalla de bloqueo": [
+      "Reparado: La animación del desbloqueo con huella dactilar seguía reproduciéndose después de que se desbloquease el dispositivo",
+      "Reparado: La animación de desbloqueo con huella dactilar provocaba bloqueos",
+      "Reparado: El icono de huella dactilar no aparecía o se mostraba incorrectamente cuando la pantalla se apagaba en el modo apaisado",
+      "Reparado: La pantalla se ponía negra, el dispositivo se bloqueba y el fondo de pantalla de la Pantalla de bloqueo se reemplazaba con el fondo de pantalla de la Pantalla inicio después de que se usase el desbloqueo con huella dactilar",
+      "Reparado: El uso de la huella dactilar en algunas aplicaciones bloqueaba el dispositivo",
+      "Reparado: El icono de huella dactilar no desaparecía después de desbloquear el dispositivo",
+      "Reparado: El icono de huella dactilar no desaparecía después de desbloquear el dispositivo",
+      "Reparado: En algunos casos la Pantalla de bloqueo se volvía transparente después de que se usase el desbloqueo con huella dactilar",
+      "Reparado: Los fondos de pantalla parpadeaban cuando se usaba el desbloqueo con huella dactilar, lo que no permitía desbloquear el dispositivo",
+      "Reparado: El dispositivo se bloqueaba nuevamente después de intentos exitosos de desbloqueo con la huella dactilar",
+      "Reparado: En algunos casos usar el desbloqueo facial y el desbloqueo con huella dactilar simultáneamente provocaba bloqueos",
+      "Reparado: Las notificaciones de la Pantalla de bloqueo desaparecían después de finalizar una llamada"
+    ],
+    "Barra de estado, Barra de notificaciones": [
+      "Reparado: Las animaciones del Limpiador no se mostraban correctamente"
+    ]
+  },
+  "logs_pt": {
+    "Tela de bloqueio": [
+      "Correção: A animação de desbloqueio por impressão digital continuava reproduzindo após o dispositivo ser desbloqueado",
+      "Correção: As animações de desbloqueio por impressão digital ocasionavam travamentos",
+      "Correção: O ícone da impressão digital não aparecia ou era exibido incorretamente quando a tela estava desligada no modo paisagem",
+      "Correção: A tela ficava preta, o dispositivo era bloqueado, e o plano de fundo da Tela de bloqueio era substituído pelo plano de fundo da Tela inicial após o desbloqueio por impressão digital ser usado",
+      "Correção: Usar a impressão digital em alguns apps bloqueava o dispositivo",
+      "Correção: O ícone de impressão digital não desaparecia após o dispositivo ser desbloqueado",
+      "Correção: O ícone de impressão digital não desaparecia após o dispositivo ser desbloqueado",
+      "Correção: A Tela de bloqueio ficava transparente após o desbloqueio por impressão digital ser usado em alguns casos",
+      "Correção: Os planos de fundo piscavam quando o desbloqueio por impressão digital estava sendo usado, que não permitia o desbloqueio do dispositivo",
+      "Correção: O dispositivo era bloqueado novamente após tentativas de desbloqueio por impressão digital com sucesso",
+      "Correção: Usar o desbloqueio facial e o desbloqueio por impressão digital simultaneamente causava travamentos em alguns casos",
+      "Correção: As notificações na Tela de bloqueio desaparecia após encerrar uma chamada"
+    ],
+    "Barra de status, Área de notificações": [
+      "Correção: As animações da Limpeza não eram exibidas corretamente"
+    ]
+  },
+  "logs_tr": {
+    "Kilit ekranı": [
+      "Onarım: Cihaz kilidi açıldıktan sonra Parmak izi ile kilit açma animasyonu hareket etmeye devam etti",
+      "Onarım: Parmak izi ile kilit açma animasyonu çökmelere yol açtı",
+      "Onarım: Ekran Manzara modunda kapatıldıktan sonra Parmak izi simgesi görünmedi veya düzgün bir şekilde görüntülenmedi",
+      "Onarım: Parmak izi ile kilit açma kullanıldıktan sonra ekran karardı, cihaz kilitlendi ve Kilit ekranı duvar kağıdı, Ana ekran duvar kağıdı ile yer değiştirdi",
+      "Onarım: Bazı uygulamalarda parmak izi kullanmak cihazı kilitledi",
+      "Onarım: Cihaz kilidi açıldıktan sonra parmak izi simgesi kaybolmadı",
+      "Onarım: Cihaz kilidi açıldıktan sonra parmak izi simgesi kaybolmadı",
+      "Onarım: Parmak izi ile kilit açma bazı durumlarda kullanıldıktan sonra Kilit ekranı şeffaflaştı",
+      "Onarım: Cihaz kilidini açmaya izin vermeyen parmak izi ile kilit açma kullanılıyorken duvar kağıtları yanıp söndü",
+      "Onarım: Başarılı Parmak izi ile kilit açma denemelerinden sonra cihaz tekrar kilitlendi",
+      "Onarım: Yüz ile kilit açmayı ve Parmak izi ile kilit açmayı aynı anda kullanmak bazı durumlarda çökmelere yol açtı",
+      "Onarım: Biten bir aramanın ardından Kilit ekranı bildirimleri kayboldu"
+    ],
+    "Durum çubuğu, Bildirim çubuğu": [
+      "Onarım: Temizleyici animasyonları doğru bir şekilde görüntülenmedi"
+    ]
+  },
+  "logs_id": {
+    "Layar kunci": [
+      "Perbaikan: Animasi buka kunci sidik jari terus diputar setelah perangkat dibuka kuncinya",
+      "Perbaikan: Animasi buka kunci dengan sidik jari menyebabkan layar tertutup tiba-tiba",
+      "Perbaikan: Ikon sidik jari tidak muncul atau ditampilkan dengan tidak benar saat layar dimatikan dalam mode horisontal",
+      "Perbaikan: Layar menjadi hitam, perangkat terkunci, dan wallpaper Layar kunci diganti dengan wallpaper Layar utama setelah buka kunci dengan sidik jari digunakan",
+      "Perbaikan: Menggunakan sidik jari di beberapa aplikasi, menyebabkan perangkat terkunci (ke bagian Layar kunci)",
+      "Perbaikan: Ikon sidik jari tidak hilang setelah perangkat dibuka kuncinya",
+      "Perbaikan: Ikon sidik jari tidak hilang setelah perangkat dibuka kuncinya",
+      "Perbaikan: Layar kunci menjadi transparan setelah membuka kunci dengan sidik jari digunakan dalam beberapa kasus",
+      "Perbaikan: Wallpaper berkedip ketika buka kunci dengan sidik jari sedang digunakan, yang mana tidak memungkinkan untuk membuka kunci perangkat",
+      "Perbaikan: Perangkat terkunci lagi setelah upaya membuka kunci dengan sidik jari berhasil",
+      "Perbaikan: Menggunakan Buka kunci dengan wajah dan Buka kunci dengan sidik jari secara bersamaan menyebabkan layar tertutup tiba-tiba dalam beberapa kasus",
+      "Perbaikan: Notifikasi Layar kunci menghilang setelah panggilan berakhir"
+    ],
+    "Bar status, Layar notiifikasi": [
+      "Perbaikan: Animasi fitur Pembersih tidak ditampilkan dengan benar"
+    ]
+  },
+  "logs_vi": {
+    "Màn hình khóa": [
+      "Sửa: Hoạt ảnh mở khóa vân tay vẫn tiếp tục xuất hiện sau khi thiết bị được mở khóa",
+      "Sửa: Hoạt ảnh mở khóa vân tay gây ra lỗi",
+      "Sửa: Biểu tượng vân tay không xuất hiện hoặc hiển thị không chính xác khi tắt màn hình ở chế độ nằm ngang",
+      "Sửa: Màn hình chuyển sang màu đen, thiết bị khóa và Hình nền màn hình khóa được thay thế bằng hình nền Màn hình chính sau khi sử dụng Mở khóa vân tay",
+      "Sửa: Sử dụng vân tay trong một số ứng dụng khóa thiết bị",
+      "Sửa: Biểu tượng vân tay không biến mất sau khi thiết bị được mở khóa",
+      "Sửa: Biểu tượng vân tay không biến mất sau khi thiết bị được mở khóa",
+      "Sửa: Màn hình khóa trở nên trong suốt sau khi sử dụng Mở khóa vân tay trong một số trường hợp",
+      "Sửa: Hình nền nhấp nháy khi Mở khóa vân tay được sử dụng, điều này dẫn đến không thể mở khóa thiết bị",
+      "Sửa: Thiết bị khóa lại sau khi mở khóa vân tay thành công",
+      "Sửa: Sử dụng Mở khóa bằng khuôn mặt và Mở khóa vân tay đồng thời dẫn đến sự cố trong một số trường hợp",
+      "Sửa: Thông báo Màn hình khóa biến mất sao khi kết thúc cuộc gọi"
+    ],
+    "Thanh trạng thái, Thanh thông báo": [
+      "Sửa: Hoạt ảnh dọn dẹp không hiển thị chính xác"
+    ]
+  },
+  "logs_th": {
+    "ล็อคหน้าจอ": [
+      "แก้ไข: แอนิเมชั่นการปลดล็อกด้วยลายนิ้วมือยังคงเล่นต่อไปหลังจากที่ปลดล็อกอุปกรณ์แล้ว",
+      "แก้ไข: แอนิเมชั่นการปลดล็อกด้วยลายนิ้วมือทำให้เกิดข้อขัดข้อง",
+      "แก้ไข: ไอคอนลายนิ้วมือไม่ปรากฏขึ้นหรือแสดงอย่างไม่ถูกต้องเมื่อปิดหน้าจอในโหมดแนวนอน",
+      "แก้ไข: หน้าจอเป็นสีดำ อุปกรณ์ถูกล็อก และภาพพื้นหลังหน้าจอล็อกถูกแทนที่ด้วยภาพพื้นหลังหน้าจอหลักหลังจากใช้การปลดล็อกด้วยลายนิ้วมือ",
+      "แก้ไข: การใช้ลายนิ้วมือในบางแอปจะล็อคเครื่อง",
+      "แก้ไข: ไอคอนลายนิ้วมือไม่หายไปหลังจากปลดล็อกอุปกรณ์แล้ว",
+      "แก้ไข: ไอคอนลายนิ้วมือไม่หายไปหลังจากปลดล็อกอุปกรณ์แล้ว",
+      "แก้ไข: หน้าจอล็อกโปร่งใสหลังจากใช้การปลดล็อกด้วยลายนิ้วมือในบางกรณี",
+      "แก้ไข: ภาพพื้นหลังกะพริบเมื่อใช้การปลดล็อกด้วยลายนิ้วมือซึ่งไม่อนุญาตให้ปลดล็อกอุปกรณ์",
+      "แก้ไข: อุปกรณ์ถูกล็อคอีกครั้งหลังจากพยายามปลดล็อคด้วยลายนิ้วมือสำเร็จ",
+      "แก้ไข: การใช้การปลดล็อกด้วยใบหน้าและการปลดล็อกด้วยลายนิ้วมือพร้อมกันทำให้เกิดข้อขัดข้องในบางกรณี",
+      "แก้ไข: การแจ้งเตือนหน้าจอล็อกหายไปหลังจากวางสาย"
+    ],
+    "แถบสถานะ, แถบแจ้งเตือน": [
+      "แก้ไข: แอนิเมชั่นตัวทำความสะอาดแสดงไม่ถูกต้อง"
+    ]
+  },
+  "logs_ar": {
+    "شاشة القفل": [
+      "الإصلاح: مشكلة استمرار ظهور الرسم المتحرك لإلغاء القفل ببصمة الإصبع بعد فتح قفل شاشة الجهاز",
+      "الإصلاح: مشكلة تسبب الرسم المتحرك لإلغاء القفل ببصمة الإصبع إلى تعطل في الجهاز",
+      "الإصلاح: مشكلة عدم ظهور أيقونة بصمة الإصبع أو عرضها بشكل غير صحيح عند إيقاف تشغيل الوضع الأفقي",
+      "الإصلاح: مشكلة تغير الشاشة إلى اللون الأسود وقفل شاشة الجهاز واستبدال خلفية شاشة القفل بخلفية الشاشة الرئيسية بعد استخدام إلغاء القفل ببصمة الإصبع",
+      "الإصلاح: مشكلة استخدام بصمة الإصبع في بعض التطبيقات يؤدي إلى قفل الشاشة",
+      "الإصلاح: مشكلة عدم ظهور أيقونة بصمة الإصبع بعد فتح قفل الشاشة",
+      "الإصلاح: مشكلة عدم ظهور أيقونة بصمة الإصبع بعد فتح قفل الشاشة",
+      "الإصلاح: مشكلة ظهور شاشة القفل بشكل شفاف عند استخدام إلغاء القفل ببصمة الإصبع",
+      "الإصلاح: مشكلة وميض الخلفيات عند استخدام إلغاء القفل ببصمة الإصبع وفشل فتح قفل الشاشة",
+      "الإصلاح: مشكلة قفل الشاشة مجددا بعد محاولات ناجحة لفتحها باستخدام بصمة الإصبع",
+      "الإصلاح: مشكلة حدوث تعطل الجهاز احيانا عند استخدام ميزات التعرف على الوجه وإلغاء القفل ببصمة الإصبع في نفس الوقت",
+      "الإصلاح: مشكلة اختفاء إشعارات شاشة القفل بعد انهاء المكالمة"
+    ],
+    "شريط الحالة ومركز الإشعارات": [
+      "الإصلاح: مشكلة عدم ظهور الرسوم المتحركة للمنظف بشكل صحيح"
+    ]
   }
 }

@@ -59,5 +59,517 @@
     "Security": [
       "New: New animations feel natural and refreshing."
     ]
+  },
+  "logs_zh_tw": {
+    "隱私保護": [
+      "新增: 全球首個通過Android增強隱私保護測試的手機系統"
+    ],
+    "自由視窗": [
+      "新增: 迷你小窗功能，可將應用懸掛至前端並保持執行狀態",
+      "新增: 全面屏手勢下，支援將應用上推至螢幕右上角變身迷你小窗",
+      "優化: 長按最近任務應用卡片，支援啟用分割螢幕與小窗功能"
+    ],
+    "深色模式": [
+      "新增: 第三方應用也可以完美支援深色模式，實現更極致的深色模式體驗",
+      "新增: 自動對比度功能，暗光下調低對比度，夜間更護眼",
+      "新增: 深色模式下智慧壓暗桌布，體驗更舒適"
+    ],
+    "全能投影": [
+      "新增: 投影功能，可選隱私投影模式保護訊息的隱私，小窗投影模式輕鬆處理多任務"
+    ],
+    "桌面": [
+      "新增: 帶有抽屜的桌面模式，桌面上滑進入抽屜，所有應用程式一覽無餘，不同程式自動分類"
+    ],
+    "天氣": [
+      "新增: 全新天氣背景動畫，親近自然不必只在窗前"
+    ],
+    "便條": [
+      "新增: 便條支援合併成資料夾，管理更方便",
+      "新增: 便條動態背景，賞心悅目",
+      "新增: 待辦支援增加待辦清單，列個清單，事事清楚"
+    ],
+    "手機管家": [
+      "新增: 全新界面動畫設計，自然規律般舒適"
+    ]
+  },
+  "logs_ja": {
+    "プライバシー保護": [
+      "新機能: MIUI 12は、厳格な強化されたプライバシー保護テストを通過した初のAndroidベースのモバイルOSです。"
+    ],
+    "フローティングウィンドウ": [
+      "新機能: フローティングウィンドウを使用すると、あなたが一旦中断して他のことをしているときも、アプリはフォアグラウンドで実行され続けます。",
+      "新機能: フルスクリーンジェスチャーを使用して、フローティングウィンドウを最小化できます。",
+      "最適化: ^最近^でアプリのプレビューを長押しして、画面分割とフローティングウィンドウのどちらかを選択します。"
+    ],
+    "ダークモード": [
+      "新機能: ダークモードがサードパーティのアプリでもサポートされるようになりました。",
+      "新機能: 暗い場所ではコントラストを自動的に下げ、目を保護します。",
+      "新機能: デバイスがダークモードに切り替わると、壁紙をより暗いパレットで表示することができます。"
+    ],
+    "キャスト": [
+      "新機能: キャスト中にプライベートアイテムを非表示にしたり、ウィンドウを最小化してマルチタスクを行うことができます。"
+    ],
+    "ホーム画面": [
+      "新機能: アプリドロワーを使えば、ホーム画面をすっきりさせてアプリを分類でき、より素早くアプリを見つけることができます。"
+    ],
+    "天気": [
+      "新機能: 新しいアニメーションにより、外の天気が画面に直接表示されます。"
+    ],
+    "メモ": [
+      "新機能: メモでフォルダーを作成できるようになりました。",
+      "新機能: 新しいダイナミックな背景が華やかです！",
+      "新機能: サブタスクのチェックリストを使用すると、アジェンダの管理が格段に簡単になります。"
+    ],
+    "セキュリティ": [
+      "新機能: 新しいアニメーションは自然で爽快感があります。"
+    ]
+  },
+  "logs_ko": {
+    "개인 정보 보호": [
+      "New: MIUI 12는 엄격하게 강화된 개인 정보 보호 테스트를 거친 최초의 안드로이드 기반 모바일 OS입니다."
+    ],
+    "플로팅 창": [
+      "New: 플로팅 창은 다른 작업을 위해 잠시 멈춰도 앱이 포그라운드에서 계속 실행되도록 합니다.",
+      "New: 전체화면 제스처를 사용하여 플로팅 창을 최소화하실 수 있습니다.",
+      "최적화: 최근 탭의 앱 미리보기를 길게 눌러 분할 화면과 플로팅 창 중 선택하십시오."
+    ],
+    "다크 모드": [
+      "New: 다크 모드가 타사 앱에서도 지원됩니다.",
+      "New: 저조도 환경에서 사용자의 눈을 보호하기 위해 명암을 낮춥니다.",
+      "New: 기기가 다크 모드로 전환하면 배경화면을 어두운 팔레트로 표시하실 수 있습니다."
+    ],
+    "캐스트": [
+      "New: 캐스트 중에 비공개 항목을 숨길 수 있고, 멀티태스킹으로 창을 최소화하실 수 있습니다."
+    ],
+    "홈 화면": [
+      "New: 앱 서랍은 홈 화면을 깔끔하게 유지하고, 앱을 분류하여 더 빨리 찾을 수 있도록 해줍니다."
+    ],
+    "날씨": [
+      "New: 새로운 애니메이션은 바깥의 날씨를 화면으로 바로 가져오는 듯한 느낌을 줍니다."
+    ],
+    "메모": [
+      "New: 메모에 폴더를 생성하실 수 있습니다.",
+      "New: 새로운 동적 배경으로 눈이 즐겁습니다!",
+      "New: 보조 작업의 체크리스트로 업무 관리가 더욱 간편해졌습니다."
+    ],
+    "보안": [
+      "New: 새로운 애니메이션으로 자연스럽고 신선합니다."
+    ]
+  },
+  "logs_ru": {
+    "Защита конфиденциальности": [
+      "Новое: MIUI 12 — это первая мобильная ОС на базе Android, прошедшая строгое тестирование защиты конфиденциальности."
+    ],
+    "Плавающие окна": [
+      "Новое: Плавающие окна позволяют одновременно использовать несколько приложений.",
+      "Новое: Вы можете свернуть плавающее окно при помощи полноэкранных жестов.",
+      "Оптимизация: Нажмите и удерживайте палец на превью приложения в меню многозадачности, чтобы открыть его в режим разделения экрана или в виде плавающего окна."
+    ],
+    "Темный режим": [
+      "Новое: Теперь темные режим доступен во всех сторонних приложениях.",
+      "Новое: В условиях низкой освещенности контрастность будет автоматически снижена, чтобы защитить ваши глаза.",
+      "Новое: В темном режиме все обои будут автоматически затемнены."
+    ],
+    "Трансляция": [
+      "Новое: Вы можете скрывать личные объекты во время трансляции и сворачивать транслируемое окно."
+    ],
+    "Рабочий стол": [
+      "Новое: Меню приложений позволяет освободить место на рабочем столе и распределять приложения по категориям для быстрого поиска."
+    ],
+    "Погода": [
+      "Новое: Новая анимация позволяет перенести погоду за окном прямо на экран вашего смартфона."
+    ],
+    "Заметки": [
+      "Новое: Теперь вы можете распределять заметки по папкам.",
+      "Новое: Новые динамические фоновые изображения выглядят великолепно!",
+      "Новое: Теперь управлять списками задач стало намного проще."
+    ],
+    "Безопасность": [
+      "Новое: Новая анимация ощущается естественно и освежающе."
+    ]
+  },
+  "logs_uk": {
+    "Захист конфіденційності": [
+      "Нове: MIUI 12 - це перша мобільна ОС на базі Android, яка пройшла суворе тестування посиленого захисту конфіденційності."
+    ],
+    "Спливаючі вікна": [
+      "Нове: Плаваючі вікна зберігають програми працюючими на передньому плані, навіть коли ви відволікаєтесь на інші речі.",
+      "Нове: Ви можете згорнути плаваюче вікно за допомогою повноекранних жестів.",
+      "Оптимізація: Натисніть та утримуйте кнопку попереднього перегляду програми у вкладці Нещодавні, щоб вибрати між Розділеним екраном і плаваючими вікнами."
+    ],
+    "Темний режим": [
+      "Нове: Підтримка Темного режиму тепер надається і для сторонніх програм.",
+      "Нове: Контраст автоматично знижується в умовах низької освітленості, щоб захистити ваші очі.",
+      "Нове: Шпалери можуть відображатися в більш темній палітрі, коли ваш пристрій переходить в Темний режим."
+    ],
+    "Трансляція": [
+      "Нове: Ви можете приховувати особисті об^єкти під час трансляції і згортати вікно, яке транслюється."
+    ],
+    "Робочий стіл": [
+      "Нове: Меню програм дозволяє звільнити місце на робочому столі і розподіляти програми за категоріями для швидкого пошуку."
+    ],
+    "Погода": [
+      "Нове: Нова анімація приносить погоду прямо на ваший екран."
+    ],
+    "Нотатки": [
+      "Нове: Тепер ви можете створювати нотаки для папок.",
+      "Нове: Новий динамічний фон виглядає просто неперевершено!",
+      "Нове: Контрольні списки підзадач значно спрощують управління вашим розпорядком дня."
+    ],
+    "Безпека": [
+      "Нове: Нова анімація виглядає стильно та природньо."
+    ]
+  },
+  "logs_pl": {
+    "Ochrona prywatności": [
+      "Nowe: MIUI 12 to pierwszy mobilny system operacyjny oparty na systemie Android, który przeszedł rygorystyczne testy ochrony prywatności."
+    ],
+    "Pływające okna": [
+      "Nowe: Pływające okna sprawiają, że aplikacje działają na pierwszym planie nawet wtedy, gdy robisz inne rzeczy.",
+      "Nowe: Możesz zminimalizować pływające okno za pomocą gestu pełnoekranowego.",
+      "Zoptymalizowano: Naciśnij i przytrzymaj podgląd aplikacji w oknie Ostatnie zadania, aby wybrać pomiędzy Podziałem ekranu a pływającymi oknami."
+    ],
+    "Tryb ciemny": [
+      "Nowe: Obsługa trybu ciemnego jest teraz dostępna także dla aplikacji innych firm.",
+      "Nowe: Kontrast jest automatycznie obniżany w warunkach słabego oświetlenia, aby chronić oczy.",
+      "Nowe: Tapety mogą być wyświetlane w ciemniejszej palecie, gdy urządzenie przełączy się w tryb ciemny."
+    ],
+    "Projekcja": [
+      "Nowe: Możesz ukryć prywatne elementy podczas projekcji i zminimalizować okno, aby wykonywać wiele zadań."
+    ],
+    "Ekran główny": [
+      "Nowe: Szuflada aplikacji pozwala zachować porządek na ekranie głównym i kategoryzuje aplikacje, dzięki czemu można je szybciej znaleźć."
+    ],
+    "Pogoda": [
+      "Nowe: Nowe animacje przenoszą pogodę bezpośrednio na ekran."
+    ],
+    "Notatki": [
+      "Nowe: Możesz teraz tworzyć foldery z notatkami.",
+      "Nowe: Nowe, dynamiczne tła wyglądają wspaniale!",
+      "Nowe: Listy kontrolne podzadań znacznie ułatwiają zarządzanie programem."
+    ],
+    "Panel sterowania": [
+      "Nowe: Nowe animacje są naturalne i dodają uroku."
+    ]
+  },
+  "logs_de": {
+    "Privacy protection": [
+      "New: MIUI 12 is the first Android-based mobile OS that went through the rigorous enhanced privacy protection testing."
+    ],
+    "Floating windows": [
+      "New: Floating windows keep apps running in the foreground even when you pause to do other things.",
+      "New: You can minimize a floating window using a full screen gesture.",
+      "Optimization: Press and hold an app preview in Recents to choose between Split screen and floating windows."
+    ],
+    "Dark mode": [
+      "New: Dark mode support is also provided for third party apps now.",
+      "New: Contrast is lowered automatically in low light conditions to protect your eyes.",
+      "New: Wallpapers can be displayed in darker palette when your device switches to Dark mode."
+    ],
+    "Casting": [
+      "New: You can hide private items while casting and minimize the window to multitask."
+    ],
+    "Home screen": [
+      "New: App drawer allows you to keep your Home screen neat and categorizes apps so you can find them faster."
+    ],
+    "Weather": [
+      "New: New animations bring the weather from outside directly to your screen."
+    ],
+    "Notes": [
+      "New: You can create folders with notes now.",
+      "New: New dynamic backgrounds look gorgeous!",
+      "New: Checklists of subtasks make managing your agenda much simpler."
+    ],
+    "Security": [
+      "New: New animations feel natural and refreshing."
+    ]
+  },
+  "logs_fr": {
+    "Protection de la vie privée": [
+      "Nouveau: MIUI 12 est le premier système d^exploitation mobile basé sur Android qui a subi des tests rigoureux de protection de la vie privée."
+    ],
+    "Fenêtres flottantes": [
+      "Nouveau: Les fenêtres flottantes permettent aux applications de s^exécuter au premier plan même lorsque vous vous arrêtez pour faire autre chose.",
+      "Nouveau: Vous pouvez réduire une fenêtre flottante en utilisant un geste plein écran.",
+      "Optimisation: Appuyez et maintenez un aperçu de l^application dans Récents pour choisir entre l^écran partagé et les fenêtres flottantes."
+    ],
+    "Mode Sombre": [
+      "Nouveau: La prise en charge du mode sombre est également fournie pour les applications tierces maintenant.",
+      "Nouveau: Le contraste est abaissé automatiquement dans des conditions de faible luminosité pour protéger vos yeux.",
+      "Nouveau: Les fonds d^écran peuvent être affichés dans une palette plus sombre lorsque votre appareil passe en Mode sombre."
+    ],
+    "Diffusion": [
+      "Nouveau: Vous pouvez masquer des éléments privés lors de la diffusion et réduire la fenêtre à plusieurs tâches."
+    ],
+    "Écran d'accueil": [
+      "Nouveau: Le tiroir d^applications vous permet de garder votre écran d^accueil propre et de catégoriser les applications afin que vous puissiez les trouver plus rapidement."
+    ],
+    "Météo": [
+      "Nouveau: De nouvelles animations apportent la météo de l^extérieur directement sur votre écran."
+    ],
+    "Notes": [
+      "Nouveau: Vous pouvez maintenant créer des dossiers avec des notes.",
+      "Nouveau: De nouveaux arrière-plans dynamiques magnifiques!",
+      "Nouveau: Les listes de contrôle des sous-tâches rendent la gestion de votre agenda beaucoup plus simple."
+    ],
+    "Sécurité": [
+      "Nouveau: Les nouvelles animations sont naturelles et rafraîchissantes."
+    ]
+  },
+  "logs_it": {
+    "Protezione privacy": [
+      "Nuovo: MIUI 12 è il primo sistema operativo mobile basato su Android ad aver superato rigorosi test di protezione della privacy."
+    ],
+    "Finestre a comparsa": [
+      "Nuovo: Le finestre a comparsa mantengono in esecuzione le app in primo piano anche mentre sei concentrato su qualcos^altro.",
+      "Nuovo: Puoi ridurre a icona una finestra a comparsa usando un gesto a schermo intero.",
+      "Ottimizzazione: Tieni premuta un^anteprima app in Recenti per scegliere tra Multi schermo e finestre a comparsa."
+    ],
+    "Modalità Scura": [
+      "Nuovo: Ora è disponibile il supporto per la modalità Scura anche per le app di terze parti.",
+      "Nuovo: Il contrasto si abbassa automaticamente in condizioni di scarsa luminosità per proteggere gli occhi.",
+      "Nuovo: Gli sfondi possono essere visualizzati in una tavolozza più scura quando il dispositivo passa alla modalità Scura."
+    ],
+    "Trasmissione": [
+      "Nuovo: Puoi nascondere i contenuti privati durante la proiezione e ridurre la finestra in multitasking."
+    ],
+    "Schermata Home": [
+      "Nuovo: Il Cassetto app ti consente di tenere in ordine la schermata Home e classifica le app per trovare più velocemente."
+    ],
+    "Meteo": [
+      "Nuovo: Le nuove animazioni portano il tempo atmosferico esterno direttamente sul tuo schermo."
+    ],
+    "Note": [
+      "Nuovo: Ora puoi creare cartelle con le note.",
+      "Nuovo: I nuovi sfondi dinamici sono fantastici!",
+      "Nuovo: Le liste delle attività secondarie rendono la gestione delle cose da fare molto più semplice."
+    ],
+    "Sicurezza": [
+      "Nuovo: Le nuove animazioni sono fresche e naturali."
+    ]
+  },
+  "logs_es": {
+    "Protección de la privacidad": [
+      "Nuevo: MIUI 12 es el primer sistema operativo móvil basado en Android que ha pasado por rigurosas pruebas de protección de la privacidad."
+    ],
+    "Ventanas flotantes": [
+      "Nuevo: Las ventanas flotantes mantienen las aplicaciones ejecutándose en primer plano incluso cuando haces una pausa para hacer otras cosas.",
+      "Nuevo: Puedes minimizar una ventana flotante con un gesto a pantalla completa.",
+      "Optimización: Mantén pulsada la previsualización de una aplicación en Recientes para elegir entre la Pantalla dividida y las ventanas flotantes."
+    ],
+    "Modo oscuro": [
+      "Nuevo:  Modo oscuro ahora también es compatible con aplicaciones de terceros.",
+      "Nuevo: El contraste se reduce automáticamente en condiciones de poca luz para proteger tus ojos.",
+      "Nuevo: Los fondos de pantalla se pueden mostrar en una paleta de colores más oscura cuando tu dispositivo cambia al Modo oscuro."
+    ],
+    "Emitir": [
+      "Nuevo: You can hide private items while casting and minimize the window to multitask."
+    ],
+    "Pantalla de inicio": [
+      "Nuevo: El Cajón de aplicaciones te permite mantener tu Pantalla de inicio ordenada y categorizar aplicaciones para encontrarlas más rápido."
+    ],
+    "Tiempo": [
+      "Nuevo: Las nuevas animaciones traen el tiempo del exterior directamente a tu pantalla."
+    ],
+    "Notas": [
+      "Nuevo: Ahora puedes crear carpetas con notas.",
+      "Nuevo: ¡Los nuevos fondos animados se ven increíbles!",
+      "Nuevo: Las listas de verificación de subtareas hacen que gestionar tu agenda sea mucho más simple."
+    ],
+    "Seguridad": [
+      "Nuevo: Las nuevas animaciones se ven naturales y actualizadas."
+    ]
+  },
+  "logs_pt": {
+    "Proteção de privacidade": [
+      "Novo: O MIUI 12 é o primeiro Sistema Operacional baseado no Android que passou por aprimoramentos e testes rigorosos de proteção de privacidade."
+    ],
+    "Janelas flutuantes": [
+      "Novo: As janelas flutuantes mantêm os apps executando em segundo plano mesmo se você pausar para fazer outras coisas.",
+      "Novo: Você pode minimizar uma janela flutuante usando um gesto de tela inteira.",
+      "Otimização: Pressione e segure em uma prévia do app nos Recentes para escolher entre a Tela dividida ou janelas flutuantes."
+    ],
+    "Modo Escuro": [
+      "Novo: O suporte ao Modo Escuro agora funciona com apps de terceiros.",
+      "Novo: O contraste é reduzido automaticamente em condições de pouca luminosidade para proteger os seus olhos.",
+      "Novo: Os planos de fundo podem ser exibidos em uma paleta de cores mais escura quando o dispositivo mudar para o Modo Escuro."
+    ],
+    "Transmissão": [
+      "Novo: Você pode ocultar itens privados durante a transmissão e minimizar a janela para atividades multitarefa."
+    ],
+    "Tela inicial": [
+      "Novo: A gaveta de apps permite que você simplifique sua Tela inicial e categorize apps para encontrá-los mais rápido."
+    ],
+    "Clima": [
+      "Novo: Novas animações trazem o clima do exterior diretamente para sua tela."
+    ],
+    "Anotações": [
+      "Novo: Agora você pode criar pastas com anotações.",
+      "Novo: Os novos fundos dinâmicos estão deslumbrantes!",
+      "Novo: Listas de verificação de sub-tarefas tornam o gerenciamento de sua agenda muito mais simples."
+    ],
+    "Segurança": [
+      "Novo: As novas animações são naturais e revigorantes."
+    ]
+  },
+  "logs_tr": {
+    "Gizlilik koruması": [
+      "Yeni: MIUI 12, titiz geliştirilmiş gizlilik koruma testinden geçen ilk Android tabanlı mobil işletim sistemidir."
+    ],
+    "Kayan pencereler": [
+      "Yeni: Yüzen pencereler, diğer şeyleri duraklattığınızda bile ön planda çalışmayı sürdürür.",
+      "Yeni: Tam ekran hareketini kullanarak yüzen bir pencereyi simge durumuna küçültebilirsiniz.",
+      "Optimizasyon: Bölünmüş ekran ve yüzen pencereler arasında seçim yapmak için Son kullanılanlarda bir uygulama önizlemesine basılı tutun."
+    ],
+    "Karanlık mod": [
+      "Yeni: Karanlık mod şimdi üçüncü taraf uygulamalar için de sağlanıyor.",
+      "Yeni: Gözlerinizi korumak için düşük ışık koşullarında kontrast otomatik olarak düşürülür.",
+      "Yeni: Cihazınızı Karanlık moda geçirdiğinizde duvar kağıtları daha karanlık bir palette gösterilir."
+    ],
+    "Yansıtma": [
+      "Yeni: Yansıtma yaparken özel ögeleri gizleyebilir ve çoklu görev için pencereleri simge durumuna küçültebilirsiniz."
+    ],
+    "Ana ekran": [
+      "Yeni: Uygulama çekmecesi, Ana ekranınızı düzenli tutmanızı ve uygulamaları kategorize etmenizi sağlar ki onları daha hızlı bulabilirsiniz."
+    ],
+    "Hava durumu": [
+      "Yeni: Yeni animasyonlar dışarıdan hava durumunu doğrudan ekranınıza getirir."
+    ],
+    "Notlar": [
+      "Yeni: Şimdi notlarla klasörler oluşturabilirsiniz.",
+      "Yeni: Yeni hareketli arka planlar muhteşem görünüyor!",
+      "Yeni: Alt görevlerin listesi, ajandanızı yönetmeyi çok daha basit hale getirir."
+    ],
+    "Güvenlik": [
+      "Yeni: Yeni animasyonlar doğal ve ferahlatıcı hissettiriyor."
+    ]
+  },
+  "logs_id": {
+    "Perlindungan privasi": [
+      "Baru: MIUI 12 adalah OS mobile berbasis Android pertama yang melalui pengujian perlindungan privasi yang ditingkatkan dengan ketat."
+    ],
+    "Jendela mengambang": [
+      "Baru: Dengan jendela mengambang, aplikasi akan tetap berjalan di latar depan bahkan saat Anda berhenti sejenak untuk melakukan hal lainnya.",
+      "Baru: Anda dapat membuat jendela mengambang menjadi kecil dengan gerakan layar penuh.",
+      "Pengoptimalan: Tekan dan tahan suatu pratinjau aplikasi di bagian Terkini, untuk memilih antara Layar split atau jendela mengambang."
+    ],
+    "Mode Gelap": [
+      "Baru: Dukungan mode Gelap juga tersedia untuk aplikasi pihak ketiga.",
+      "Baru: Kontras diturunkan secara otomatis dalam kondisi cahaya rendah untuk melindungi mata Anda.",
+      "Baru: Wallpaper dapat ditampilkan dalam palet yang lebih gelap ketika perangkat Anda beralih ke mode Gelap."
+    ],
+    "Proyeksi": [
+      "Baru: Anda dapat menyembunyikan hal privasi saat memproyeksi dan memperkecil jendela untuk multi tugas."
+    ],
+    "Layar utama": [
+      "Baru: Dengan Laci aplikasi, Layar utama menjadi rapi dan pengelompokkan aplikasi berdasarkan kategori membuat Anda dapat menemukannya dengan lebih cepat."
+    ],
+    "Cuaca": [
+      "Baru: Animasi baru membawa cuaca dari luar langsung ke layar Anda."
+    ],
+    "Catatan": [
+      "Baru: Anda dapat membuat folder dengan catatan sekarang.",
+      "Baru: Latar belakang dinamis baru terlihat memukau!",
+      "Baru: Daftar centang pada subtugas membuat pengelolaan agenda Anda menjadi jauh lebih mudah."
+    ],
+    "Keamanan": [
+      "Baru: Animasi baru terlihat lebih alami dan menyegarkan."
+    ]
+  },
+  "logs_vi": {
+    "Bảo mật riêng tư": [
+      "Mới: MIUI 12 là hệ điều hành di động trên nền tảng Android đầu tiên đã vượt qua các bài kiểm tra bảo mật cá nhân nâng cao vô cùng nghiêm ngặt."
+    ],
+    "Cửa sổ nổi": [
+      "Mới: Cửa sổ nổi giữ cho ứng dụng chạy trên nền trước ngay cả khi bạn tạm dừng để làm việc khác.",
+      "Mới: Bạn có thể thu nhỏ cửa sổ nổi bằng cử chỉ màn hình tràn cạnh.",
+      "Tối ưu: Nhấn và giữ xem trước ứng dụng trong Gần đây để chọn giữa Chia màn hình và cửa sổ nổi."
+    ],
+    "Chế độ nền tối": [
+      "Mới: Chế độ nền tối hiện cũng hỗ trợ cho ứng dụng bên thứ ba.",
+      "Mới: Độ tương phản được giảm xuống tự động trong điều kiện ánh sáng yếu để bảo vệ đôi mắt của bạn.",
+      "Mới: Hình nền có thể được hiển thị trong bảng màu tối hơn khi thiết bị của bạn chuyển sang Chế độ nền tối."
+    ],
+    "Chiếu": [
+      "Mới: Bạn có thể ẩn các mục cá nhân trong khi chiếu và thu nhỏ cửa sổ thành đa nhiệm."
+    ],
+    "Màn hình chính": [
+      "Mới: Ngăn ứng dụng cho phép bạn giữ Màn hình chính gọn gàng và phân loại ứng dụng để bạn có thể tìm thấy nhanh hơn."
+    ],
+    "Thời tiết": [
+      "Mới: Hoạt ảnh đem thời tiết từ bên ngoài trực tiếp đến màn hình."
+    ],
+    "Ghi chú": [
+      "Mới: Bây giờ bạn có thể tạo các thư mục với ghi chú.",
+      "Mới: Hình nền động mới trông hoành tráng hơn!",
+      "Mới: Danh sách nhiệm vụ giúp quản lý lịch làm việc đơn giản hơn."
+    ],
+    "Bảo mật": [
+      "Mới: Hoạt ảnh trông tự nhiên và tươi mới."
+    ]
+  },
+  "logs_th": {
+    "การป้องกันความเป็นส่วนตัว": [
+      "ใหม่: MIUI 12 เป็นระบบปฏิบัติการมือถือระบบแอนดรอยด์แรกที่ผ่านการทดสอบการปกป้องความเป็นส่วนตัวที่เข้มงวดยิ่งขึ้น"
+    ],
+    "หน้าต่างแบบลอย": [
+      "ใหม่: หน้าต่างแบบลอยช่วยให้แอปทำงานในเบื้องหน้าแม้เมื่อคุณหยุดทำสิ่งอื่นชั่วคราว",
+      "ใหม่: คุณสามารถย่อหน้าต่างลอยโดยใช้ท่าทางเต็มหน้าจอ",
+      "การเพิ่มประสิทธิภาพ: กดตัวอย่างแอปค้างไว้ใน ล่าสุด เพื่อเลือกระหว่างหน้าจอแยกและหน้าต่างลอย"
+    ],
+    "โหมดมืด": [
+      "ใหม่: รองรับโหมดมืด สำหรับแอปของบุคคลที่สามด้วย",
+      "ใหม่: ความคมชัดจะลดลงโดยอัตโนมัติในสภาพแสงน้อยเพื่อปกป้องดวงตาของคุณ",
+      "ใหม่: วอลล์เปเปอร์สามารถแสดงในแถบสีเข้มเมื่ออุปกรณ์ของคุณสลับไปที่โหมดมืด"
+    ],
+    "ฉายภาพ": [
+      "ใหม่: คุณสามารถซ่อนรายการส่วนตัวในขณะที่ฉายภาพและย่อขนาดหน้าต่างเป็นมัลติทาสก์ได้"
+    ],
+    "หน้าจอหลัก": [
+      "ใหม่: ลิ้นชักแอป ช่วยทำให้หน้าจอหลักของคุณเรียบร้อยและจัดหมวดหมู่แอปเพื่อให้คุณค้นหาได้เร็วขึ้น"
+    ],
+    "สภาพอากาศ": [
+      "ใหม่: ภาพเคลื่อนไหวใหม่นำสภาพอากาศจากภายนอกสู่หน้าจอของคุณโดยตรง"
+    ],
+    "บันทึก": [
+      "ใหม่: คุณสามารถสร้างโฟลเดอร์กับบันทึกย่อได้แล้ว",
+      "ใหม่: ภาพพื้นหลังแบบไดนามิกใหม่ดูสวยงาม!",
+      "ใหม่: รายการตรวจสอบของภารกิจย่อยช่วยให้การจัดการวาระของคุณง่ายขึ้นมาก"
+    ],
+    "ความปลอดภัย": [
+      "ใหม่: ภาพเคลื่อนไหวใหม่ให้ความรู้สึกเป็นธรรมชาติและสดชื่น"
+    ]
+  },
+  "logs_ar": {
+    "حماية الخصوصية": [
+      ":الجديد MIUI 12 هو أول نظام تشغيل أندوريد للهواتف المحمولة يجتاز اختبار الخصوصية الصارم."
+    ],
+    "النوافذ المنبثقة": [
+      ":الجديد تسمح النوافذ المنبثقة باستمرار تشغيل التطبيقات حتى عندما تتوقف مؤقتا في استخدامها للقيام بشيء آخر.",
+      ":الجديد يمكنك تصغير أي نافذة منبثقة بإستخدام إيماءات ملء الشاشة.",
+      ":التحسين يمكنك الضغط مطولاً على معاينة تطبيق ما في شاشة التطبيقات الحديثة واختيار عرضة في تقسيم الشاشة أو كنافذة منبثقة."
+    ],
+    "وضع الظلام": [
+      ":الجديد يمكن الآن استخدام الوضع الداكن في تطبيقات الجهات الخارجية.",
+      ":الجديد ميزة تقليل التباين تلقائيًا في الأماكن المظلمة لحماية عينيك.",
+      ":الجديد تظهر خلفيات الشاشة في لوحة أغمق عند تبديل جهازك إلى الوضع الداكن."
+    ],
+    "البث": [
+      ":الجديد يمكنك إخفاء العناصر الخاصة أثناء البث وتصغير الشاشة للقيام بمهام أخرى."
+    ],
+    "الشاشة الرئيسية": [
+      ":الجديد يساعدك درج التطبيقات في تنظيم الشاشة الرئيسية وفرز التطبيقات لتتمكن من العثور عليها بشكل أسرع."
+    ],
+    "الطقس": [
+      ":الجديد إضافة رسوم متحركة جديدة تحول شاشتك إلى عرض يعكس حالة الطقس في المكان الذي تتواجد فية."
+    ],
+    "الملاحظات": [
+      ":الجديد يمكنك الآن إنشاء مجلدات داخل الملاحظات.",
+      ":الجديد خلفيات ديناميكية جديدة رائعة!",
+      ":الجديد إضافة قوائم اختيار للمهام الفرعية لتسهيل إدارة جدول أعمالك."
+    ],
+    "الحماية": [
+      ":الجديد تصميم جديد للرسوم المتحركة يشعرك بالطبيعة والانتعاش."
+    ]
   }
 }

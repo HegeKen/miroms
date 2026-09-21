@@ -84,5 +84,650 @@
       "Optimization: Low battery warning",
       "Fix: Low battery notification appeared twice in some cases"
     ]
+  },
+  "logs_zh_tw": {
+    "系統動畫設計": [
+      "優化: 部分場景下的動畫流暢度"
+    ],
+    "控制中心": [
+      "新增: 桌面左側下滑顯示通知中心，右側下滑顯示控制中心",
+      "新增: 在通知中心右上角狀態欄下拉，可以呼出控制中心",
+      "優化: 來電狀態下收起控制中心",
+      "優化: 首張卡片增加長按跳轉",
+      "修復: 控制中心橫向螢幕顯示寬度異常問題"
+    ],
+    "小米互傳": [
+      "新增: 將最近發送過檔案的裝置，在短時間內置頂顯示的功能"
+    ],
+    "深色模式": [
+      "優化: “深色模式下調暗壁紙”功能，增加調暗後壁紙的明度和色彩"
+    ],
+    "系統": [
+      "優化: 取消定時關閉勿擾後的聲音提示",
+      "更新谷歌安全性修補程式等級（2020#07），提升系統安全性"
+    ],
+    "應用鎖": [
+      "優化: 應用鎖驗證頁顯示效果",
+      "修復: 部分情況不顯示指紋圖示的問題",
+      "修復: 快速進入和關閉應用鎖的時候狀態列異常問題"
+    ],
+    "狀態欄、通知欄": [
+      "新增: 手機螢幕喚醒動畫特效",
+      "新增: 狀態欄顏色過渡動畫",
+      "修復: 深色模式下狀態欄顏色異常的問題"
+    ],
+    "瀏覽器": [
+      "新增: 瀏覽器本地搜尋功能",
+      "新增: 熱門網站的影片下載功能"
+    ],
+    "省電優化": [
+      "新增: 省電模式新增多項優化，如：關閉觸控反饋，抬起喚醒等",
+      "新增: 一鍵優化新增多項優化項目",
+      "新增: 自動任務支援備份還原",
+      "優化: 低電量彈窗樣式",
+      "修復: 低電量提示音在橫向螢幕模式下可能出現兩次的問題"
+    ]
+  },
+  "logs_ja": {
+    "コントロールセンター": [
+      "新機能: 左上から下にスワイプして通知シェードを開き、右上から下にスワイプしてコントロールセンターを開きます",
+      "新機能: 通知シェードが開いているときに、右上隅から下にスワイプするとコントロールセンターを開きます",
+      "最適化: 着信時にコントロールセンターが閉じられるようになりました",
+      "最適化: 長押しリダイレクションオプション",
+      "修正: コントロールセンターが横向きモードで正しく表示されない問題"
+    ],
+    "ダークモード": [
+      "最適化: ダークモード時の壁紙の明るさと色彩が改善されました"
+    ],
+    "システムアニメーション": [
+      "最適化: 選択したシーンのアニメーション"
+    ],
+    "Mi シェア": [
+      "新機能: 最近接続したデバイスは、しばらくの間リストの一番上にピン留めされます"
+    ],
+    "システム": [
+      "最適化: DNDモードの不要なサウンド通知を削除しました",
+      "Androidのセキュリティパッチを2020年7月にアップデートしました。システムのセキュリティを強化しました。"
+    ],
+    "アプリロック": [
+      "最適化: アプリロックの認証ページ",
+      "修正: 指紋アイコンが表示されない場合がある問題",
+      "修正: ステータスバーが正しく表示されない場合がある問題"
+    ],
+    "ステータスバー、通知シェード": [
+      "新機能: 画面がアニメーションで点灯するようになりました",
+      "新機能: ステータスバーのカラーグラデーションアニメーション",
+      "修正: 通知シェードがダークモードで正しく表示されない問題"
+    ],
+    "ブラウザー": [
+      "新機能: ローカル検索機能",
+      "新機能: 人気サイトの動画ダウンロード機能"
+    ],
+    "バッテリー使用量": [
+      "新機能: バッテリーセーバーの複数の最適化",
+      "新機能: 複数の最適化オプション",
+      "新機能: 自動タスクがバックアップの復元をサポートするようになりました",
+      "最適化: バッテリー低下の通知",
+      "修正: バッテリー低下の通知が2回表示される場合がある問題"
+    ]
+  },
+  "logs_ko": {
+    "제어 센터": [
+      "New: 홈 화면 좌측에서 아래로 스와이프하여 알림 바 표시, 우측에서 아래로 스와이프하여 제어 센터 표시",
+      "New: 알림 바가 열려있을 때, 오른쪽 상단에서 아래로 스와이프하여 제어 센터 실행",
+      "최적화: 통화가 수신되면 제어 센터를 종료",
+      "최적화: 길게 눌러 리디렉션 옵션",
+      "수정: 풍경 모드에서 제어 센터가 제대로 표시되지 않는 현상"
+    ],
+    "다크 모드": [
+      "최적화: 다크 모드 실행 중 배경화면의 밝기 및 색상 강화"
+    ],
+    "시스템 애니메이션": [
+      "최적화: 선택한 장면의 애니메이션"
+    ],
+    "Mi Share": [
+      "New: 최근 연결한 장치가 목록 상단에 잠시 고정됩니다"
+    ],
+    "시스템": [
+      "최적화: 방해금지 모드에서의 불필요한 알림음 제거됨",
+      "Android 보안패치 (2020#07) 업데이트됨. 시스템 보안이 향상되었습니다."
+    ],
+    "앱 잠금": [
+      "최적화: 앱 잠금 인증 페이지",
+      "수정: 일부 상황에서 지문 아이콘이 표시되지 않는 문제",
+      "수정: 일부 상황에서 상태 바가 제대로 표시되지 않는 문제"
+    ],
+    "상태 바, 알림 바": [
+      "New: 애니메이션 효과에 화면 밝힘 효과 추가",
+      "New: 상태 바 컬러 그라데이션 애니메이션",
+      "수정: 다크 모드에서 알림 바가 제대로 표시되지 않는 문제"
+    ],
+    "브라우저": [
+      "New: 로컬 검색",
+      "New: 인기 웹사이트에서 동영상 다운로드"
+    ],
+    "배터리 사용량": [
+      "New: 배터리 절약을 위한 여러 가지 최적화",
+      "New: 여러 가지 최적화 옵션",
+      "New: 자동화된 작업으로 백업 복원 지원",
+      "최적화: 배터리 부족 경고",
+      "수정: 일부 상황에서 배터리 부족 알림이 두 번 표시되는 문제"
+    ]
+  },
+  "logs_ru": {
+    "Центр управления": [
+      "Новое: Смахните вниз от левого верхнего угла, чтобы открыть Шторку уведомлений, или от правого верхнего угла, чтобы открыть Центр управления",
+      "Новое: Смахните вниз от правого верхнего угла, чтобы открыть Центр управления, когда вы находитесь в Шторке уведомлений",
+      "Оптимизация: Теперь Центр управления закрывается при получении входящих вызовов",
+      "Оптимизация: Долгое нажатие для быстрого перехода",
+      "Исправлено: Центр управления не всегда отображался правильно в альбомном режиме"
+    ],
+    "Темный режим": [
+      "Оптимизация: Оптимизация яркости и цветов для обоев в Темном режиме"
+    ],
+    "Системные анимации": [
+      "Оптимизация: Анимация в выбранных сценах"
+    ],
+    "Mi Share": [
+      "Новое: Недавно подключенные устройства будут некоторое время отображаться в начале списка"
+    ],
+    "Система": [
+      "Оптимизация: Устранены звуковые уведомления в режиме Не беспокоить",
+      "Обновление системы безопасности Android (июль 2020 года). Улучшена безопасность системы."
+    ],
+    "Защита приложений": [
+      "Оптимизация: Интерфейс защиты приложений",
+      "Исправлено: В некоторых случаях мог не отображаться значок отпечатка пальца",
+      "Исправлено: В некоторых случаях Строка состояния могла отображаться неправильно"
+    ],
+    "Строка состояния, шторка уведомлений": [
+      "Новое: Добавлена новая анимация активации дисплея",
+      "Новое: Анимация градиента строки состояния",
+      "Исправлено: Шторка уведомлений неправильно отображалась  при активации темного режима"
+    ],
+    "Браузер": [
+      "Новое: Добавлен локальный поиск",
+      "Новое: Добавлена возможность загрузки видео с популярных платформ"
+    ],
+    "Потребление энергии": [
+      "Новое: Несколько параметров оптимизации для ^Экономии энергии^",
+      "Новое: Несколько параметров оптимизации",
+      "Новое: Восстановление резервных копий теперь можно использовать как автоматизированную задачу",
+      "Оптимизация: Предупреждение о низком заряде аккумулятора",
+      "Исправлено: В некоторых случаях уведомление о низком заряде аккумулятора могло появляться дважды"
+    ]
+  },
+  "logs_uk": {
+    "Центр керування": [
+      "Нове: Проведіть вниз від верхнього лівого кута, щоб відкрити Панель сповіщень і від верхнього правого кута, щоб відкрити Центр управління",
+      "Нове: Коли Панель сповіщень розгорнута, проведіть вниз від верхнього правого кута, щоб відкрити Центр керування",
+      "Оптимізація: Центр управління тепер закривається під час вхідних викликів",
+      "Оптимізація: Натисніть та утримуйте для перенаправлення варіантів",
+      "Виправлено: Центр керування відображався неправильно у альбомній орієнтації"
+    ],
+    "Темний режим": [
+      "Оптимізація: Поліпшення яскравості і кольору для шпалер в Темному режимі"
+    ],
+    "Системна анімація": [
+      "Оптимізація: Анімація у вибраних областях"
+    ],
+    "Mi Share": [
+      "Нове: Нещодавно підключені пристрої будуть тимчасово закріплені на початку списку"
+    ],
+    "Система": [
+      "Оптимізація: Виделено непотрібні звукові сповіщення у режимі ^Не трубувати^",
+      "Оновлено патч безпеки Android за липень 2020 року. Збільшено безпеку системи."
+    ],
+    "Захист програм": [
+      "Оптимізація: Uygulama kilidi doğrulama sayfası",
+      "Виправлено: В деяких випадках міг не відображатися значок відбитка пальця",
+      "Виправлено: Bilah status tidak ditampilkan dengan benar dalam beberapa kasus"
+    ],
+    "Рядок стану, Панель сповіщень": [
+      "Нове: Тепер екран вмикається разом з анімацією",
+      "Нове: Анімація градієнта рядка стану",
+      "Виправлено: Панель сповіщень відображалася неправильно у Темному режимі"
+    ],
+    "Браузер": [
+      "Нове: Mahalliy qidiruv",
+      "Нове: Mashhur veb-saytlardan videolarni yuklab olish"
+    ],
+    "Живлення": [
+      "Нове: Beragam pengoptimalan untuk fitur Penghemat baterai",
+      "Нове: Bir nechta optimallashtirish variantlari",
+      "Нове: Endi avtomatlashtirilgan vazifalar zaxira nusxalarini tiklashga yordam beradi",
+      "Оптимізація: Batareya quvvati kamligi to‘g‘risida ogohlantirish",
+      "Виправлено: Notifikasi tentang baterai lemah ditampilkan 2x dalam beberapa kasus"
+    ]
+  },
+  "logs_pl": {
+    "Centrum kontroli": [
+      "Nowe: Przesuń palcem w dół od lewego górnego rogu, aby otworzyć Pasek powiadomień, i od prawego górnego rogu, aby otworzyć Centrum kontroli",
+      "Nowe: Gdy pasek powiadomień jest otwarty, przeciągnij w dół od prawego górnego rogu, aby otworzyć Centrum kontroli",
+      "Zoptymalizowano: Centrum kontroli jest teraz zablokowane przez połączenie przychodzące",
+      "Zoptymalizowano: Naciśnij i przytrzymaj opcje przekierowania",
+      "Naprawiono: Centrum kontroli nie zawsze było poprawnie wyświetlane w trybie poziomym"
+    ],
+    "Tryb ciemny": [
+      "Zoptymalizowano: Poprawa jasności i kolorów tapet w trybie ciemnym"
+    ],
+    "Animacje systemowe": [
+      "Zoptymalizowano: Animacje w wybranych scenach"
+    ],
+    "Mi Share": [
+      "Nowe: Ostatnio podłączone urządzenia zostaną na krótko przypięte na górze listy"
+    ],
+    "System": [
+      "Zoptymalizowano: Usunięto niepotrzebne sygnały dźwiękowe dla trybu nie przeszkadzać",
+      "Zaktualizowano Pakiet Bezpieczeństwa Android do lipca 2020 r. Zwiększono bezpieczeństwo systemu."
+    ],
+    "Blokowanie aplikacji": [
+      "Zoptymalizowano: Strona weryfikacji Blokady aplikacji",
+      "Naprawiono: W niektórych przypadkach ikona odcisku palca nie była wyświetlana",
+      "Naprawiono: W niektórych przypadkach pasek statusu nie był wyświetlany poprawnie"
+    ],
+    "Pasek powiadomień, Panel powiadomień": [
+      "Nowe: Ekran włącza się teraz z animacją",
+      "Nowe: Animacja w kolorze gradientu na pasku statusu",
+      "Naprawiono: Pasek powiadomień nie był poprawnie wyświetlany w trybie ciemnym"
+    ],
+    "Przeglądarka": [
+      "Nowe: Lokalne wyszukiwanie",
+      "Nowe: Pobieranie wideo z popularnych witryn internetowych"
+    ],
+    "Zużycie baterii": [
+      "Nowe: Wiele optymalizacji Oszczędzania baterii",
+      "Nowe: Wiele opcji optymalizacji",
+      "Nowe: Zautomatyzowane zadania obsługują teraz przywracanie kopii zapasowych",
+      "Zoptymalizowano: Ostrzeżenie o niskim poziomie baterii",
+      "Naprawiono: W niektórych przypadkach powiadomienie o niskim poziomie baterii pojawiło się dwukrotnie"
+    ]
+  },
+  "logs_fr": {
+    "Centre de contrôle": [
+      "Nouveau: Glissez vers le bas depuis le côté gauche en haut pour ouvrir le Panneau de notification et depuis le côté droit en haut pour ouvrir le Centre de contrôle",
+      "Nouveau: Quand le Panneau de notification est ouvert, glissez vers le bas depuis le côté en haut à droite pour ouvrir le Centre de contrôle",
+      "Optimisation: Le centre de contrôle est à présent fermé pour les appels entrants",
+      "Optimisation: Appuyez et maintenez les options de redirection",
+      "Réparé: Le centre de contrôle ne s^affichait pas toujours correctement en mode paysage"
+    ],
+    "Mode Sombre": [
+      "Optimisation: Améliorations de la luminosité et de la couleur pour les fonds d^ écrans en Mode sombre"
+    ],
+    "Animations système": [
+      "Optimisation: Animations dans les scènes sélectionnées"
+    ],
+    "Mi Share": [
+      "Nouveau: Connectés récemment aux appareils seront mis en tête de liste pendant un petit moment"
+    ],
+    "Système": [
+      "Optimisation: A retiré les sons de notifications inutiles pour le mode DND",
+      "Patch de sécurité Android mis à jour en juillet 2020. Sécurité du système amélioré. "
+    ],
+    "Verrouillage de l'application": [
+      "Optimisation: Page de vérification du verrouillage de l^application",
+      "Réparé: L^icône d^empreinte digitale n^était pas affichée dans certains cas",
+      "Réparé: La barre d^état ne s^affichait pas correctement dans certains cas"
+    ],
+    "Barre d'état, Panneau de notification": [
+      "Nouveau: L^écran s^allume avec une animation maintenant",
+      "Nouveau: Animation couleur gradiente de la barre d^état",
+      "Réparé: Le panneau de notification ne s^affiche pas correctement en Mode sombre"
+    ],
+    "Navigateur": [
+      "Nouveau: Recherche locale",
+      "Nouveau: Téléchargement de vidéos à partir de sites Web populaires"
+    ],
+    "Utilisation de la batterie": [
+      "Nouveau: Optimisations multiples pour l^économiseur de batterie",
+      "Nouveau: Plusieurs options d^optimisation",
+      "Nouveau: Les tâches automatisées prennent désormais en charge la restauration des sauvegardes",
+      "Optimisation: Avertissement de batterie faible",
+      "Réparé: La notification de batterie faible est apparue deux fois dans certains cas"
+    ]
+  },
+  "logs_it": {
+    "Centro di controllo": [
+      "Nuovo: Scorri verso il basso dall^angolo in alto a sinistra per aprire l^area delle notifiche e dall^angolo in alto a destra per aprire Centro di controllo",
+      "Nuovo: Quando l^area delle notifiche è aperta, scorri verso il basso dall^angolo in alto a destra per aprire Centro di controllo",
+      "Ottimizzazione: Il Centro di controllo viene ora chiuso dalle chiamate in arrivo",
+      "Ottimizzazione: Tieni premute le opzioni di reindirizzamento",
+      "Risolto: Il Centro di controllo non veniva sempre visualizzato correttamente in modalità orizzontale"
+    ],
+    "Modalità Scura": [
+      "Ottimizzazione: Luminosità e colore migliorati per gli sfondi in modalità Scura"
+    ],
+    "Animazioni di sistema": [
+      "Ottimizzazione: Animazioni in scenari selezionati"
+    ],
+    "Mi Share": [
+      "Nuovo: I dispositivi connessi di recente verranno bloccati in cima all^elenco per un breve periodo"
+    ],
+    "Sistema": [
+      "Ottimizzazione: Rimosse notifiche audio non necessarie per la modalità Non Disturbare",
+      "Patch di sicurezza Android aggiornata a luglio 2020. Maggiore sicurezza del sistema."
+    ],
+    "Blocco app": [
+      "Ottimizzazione: Pagina di verifica del blocco app",
+      "Risolto: L^icona dell^impronta digitale non veniva visualizzata in alcuni casi",
+      "Risolto: La barra di stato non veniva visualizzata correttamente in alcuni casi"
+    ],
+    "Barra di stato, Area delle notifiche": [
+      "Nuovo: Ora lo schermo si illumina con un^animazione",
+      "Nuovo: Animazione con sfumatura di colore per la barra di stato",
+      "Risolto: L^area delle notifiche non era visualizzata correttamente in modalità Scura"
+    ],
+    "Browser": [
+      "Nuovo: Ricerca locale",
+      "Nuovo: Download di video da siti Web popolari"
+    ],
+    "Utilizzo batteria": [
+      "Nuovo: Molteplici ottimizzazioni per Risparmio energetico",
+      "Nuovo: Molteplici opzioni di ottimizzazione",
+      "Nuovo: Le operazioni automatiche ora supportano il ripristino dei backup",
+      "Ottimizzazione: Avviso di batteria scarica",
+      "Risolto: L^avviso di batteria scarica appariva due volte in alcuni casi"
+    ]
+  },
+  "logs_es": {
+    "Centro de control": [
+      "Nuevo: Desliza hacia abajo desde la esquina superior izquierda para abrir la Barra de notificaciones y desde la esquina superior derecha para abrir el Centro de control",
+      "Nuevo: Cuando la Barra de notificaciones esté desplegada, desliza hacia abajo desde la esquina superior derecha para abrir el Centro de control",
+      "Optimización: El Centro de control ahora es cerrado por las llamadas entrantes",
+      "Optimización: Mantén pulsadas las opciones de redirección",
+      "Reparado: El Centro de control no siempre se mostraba correctamente en el modo paisaje"
+    ],
+    "Modo oscuro": [
+      "Optimización: Mejoras del brillo y del color para fondos de pantalla en el Modo oscuro"
+    ],
+    "Animaciones del sistema": [
+      "Optimización: Animaciones en escenas seleccionadas"
+    ],
+    "Mi Share": [
+      "Nuevo: Los dispositivos conectados recientemente serán anclados en la parte superior de la lista durante un corto periodo de tiempo"
+    ],
+    "Sistema": [
+      "Optimización: Las notificaciones con sonido innecesarias han sido eliminadas del Modo no molestar",
+      "Parche de seguridad de Android actualizado a julio de 2020. Seguridad del sistema incrementada."
+    ],
+    "Bloqueo de aplicaciones": [
+      "Optimización: Página de verificación del Bloqueo de aplicaciones",
+      "Reparado: El icono de huella dactilar no se mostraba en algunos casos",
+      "Reparado: La Barra de estado no se mostraba correctamente en algunos casos"
+    ],
+    "Barra de estado, Barra de notificaciones": [
+      "Nuevo: Ahora la pantalla se enciende con una animación",
+      "Nuevo: Animación de degradado de la barra de estado",
+      "Reparado: La Barra de notificaciones no se mostraba correctamente en el Modo oscuro"
+    ],
+    "Navegador": [
+      "Nuevo: Búsqueda local",
+      "Nuevo: Descarga de vídeos de sitios web populares"
+    ],
+    "Uso de la batería": [
+      "Nuevo: Varias optimizaciones para el Ahorro de batería",
+      "Nuevo: Varias opciones de optimización",
+      "Nuevo: Las tareas automatizadas ahora admiten la restauración de copias de seguridad",
+      "Optimización: Advertencia de nivel bajo de batería",
+      "Reparado: La notificación de batería baja aparecía dos veces en algunos casos"
+    ]
+  },
+  "logs_pt": {
+    "Centro de controle": [
+      "Novo: Deslize para baixo a partir do canto superior esquerdo para abrir a Área de notificações e a partir do canto superior direito para abrir o Centro de controle",
+      "Novo: Quando a Área de notificações está aberta, deslize para baixo no canto superior direito para abrir o Centro de controle",
+      "Otimização: O Centro de controle agora é fechado por chamadas recebidas",
+      "Otimização: Opções de redirecionamento para pressionar e segurar",
+      "Correção: O Centro de Controle não era exibido sempre da forma correta no modo paisagem"
+    ],
+    "Modo Escuro": [
+      "Otimização: Melhorias nas cores e no brilho para planos de fundo no Modo Escuro"
+    ],
+    "Animações do sistema": [
+      "Otimização: Animações em cenários selecionados"
+    ],
+    "Compartilhamento Mi": [
+      "Novo: Os dispositivos conectados recentemente serão fixados no topo da lista por um curto período de tempo"
+    ],
+    "Sistema": [
+      "Otimização: Sons de notificação desnecessários removidos do modo Não perturbe",
+      "Atualização do Patch de Segurança do Android para Julho de 2020. Segurança do sistema aprimorada."
+    ],
+    "Bloqueio de apps": [
+      "Otimização: Página de verificação do Bloqueio de apps",
+      "Correção: O ícone de impressão digital não era exibido em alguns casos",
+      "Correção: A Barra de status não é exibida corretamente em alguns casos"
+    ],
+    "Barra de status, Área de notificações": [
+      "Novo: Agora a tela acende com animações",
+      "Novo: Animação de cores em gradiente na barra de status",
+      "Correção: A Área de notificações não era exibida corretamente no Modo Escuro"
+    ],
+    "Navegador": [
+      "Novo: Pesquisa local",
+      "Novo: Baixe vídeos de sites populares"
+    ],
+    "Uso de bateria": [
+      "Novo: Várias otimizações para a Economia de bateria",
+      "Novo: Varias opções de otimização",
+      "Novo: As tarefas automáticas agora suportam restauração de backups",
+      "Otimização: Alerta de bateria fraca",
+      "Correção: A notificação de bateria fraca aparecia duas vezes em alguns casos"
+    ]
+  },
+  "logs_tr": {
+    "Kontrol merkezi": [
+      "Yeni: Bildirim çubuğunu açmak için sol üst köşeden aşağı kaydırın ve Kontrol merkezini açmak için sağ üst köşeden aşağı kaydırın",
+      "Yeni: Bildirim çubuğu açık iken, Kontrol merkezini açmak için sağ üst köşeden aşağı kaydırın",
+      "Optimizasyon: Kontrol merkezi şimdi gelen aramalarla kapatıldı",
+      "Optimizasyon: Yönlendirme seçeneklerine basılı tutun",
+      "Onarım: Kontrol merkezi, manzara modunda doğru bir şekilde görüntülenmedi"
+    ],
+    "Karanlık mod": [
+      "Optimizasyon: Karanlık modda duvar kağıtları için parlaklık ve renk geliştirmeleri"
+    ],
+    "Sistem animasyonları": [
+      "Optimizasyon: Seçilen sahnelerdeki animasyonlar"
+    ],
+    "Mi Paylaşım": [
+      "Yeni: Son bağlanan cihazlar kısa bir süre için listenin başına iğnelenecektir"
+    ],
+    "Sistem": [
+      "Optimizasyon: Rahatsız Etme modu için gereksiz sesli bildirimler kaldırıldı",
+      "Android Güvenlik Patch^i Temmuz 2020^de güncellendi. Sistem güvenliği arttırıldı."
+    ],
+    "Uygulama kilidi": [
+      "Optimizasyon: Uygulama kilidi doğrulama sayfası",
+      "Onarım: Parmak izi simgesi bazı durumlarda gösterilmedi",
+      "Onarım: Durum çubuğu bazı durumlarda düzgün bir şekilde görüntülenmedi"
+    ],
+    "Durum çubuğu, Bildirim çubuğu": [
+      "Yeni: Ekran şimdi bir animasyonla aydınlanıyor",
+      "Yeni: Durum çubuğu renk düşüm animasyonu",
+      "Onarım: Bildirim çubuğu Karanlık modda düzgün görüntülenmedi"
+    ],
+    "Tarayıcı": [
+      "Yeni: Yerel arama",
+      "Yeni: Popüler internet sitelerinden videolar indiriliyor"
+    ],
+    "Pil kullanımı": [
+      "Yeni: Pil tasarrufu için çoklu optimizasyon",
+      "Yeni: Çoklu optimizasyon seçenekleri",
+      "Yeni: Otomatik görevler şimdi yedeklemeleri geri yüklemeyi destekliyor",
+      "Optimizasyon: Düşük pil uyarısı",
+      "Onarım: Düşük pil bildirimi bazı durumlarda iki kez görüntülendi"
+    ]
+  },
+  "logs_id": {
+    "Pusat kontrol": [
+      "Baru: Geser ke bawah dari sudut kiri atas untuk membuka Layar notifikasi dan dari sudut kanan atas untuk membuka Pusat kontrol",
+      "Baru: Saat Layar notifikasi terbuka, geser ke bawah dari sudut kanan atas untuk membuka Pusat kontrol",
+      "Pengoptimalan: Pusat kontrol akan ditutup saat ada panggilan masuk",
+      "Pengoptimalan: Tekan dan tahan opsi pengalihan",
+      "Perbaikan: Pusat kontrol tidak selalu ditampilkan dengan benar saat mode horisontal"
+    ],
+    "Mode Gelap": [
+      "Pengoptimalan: Peningkatan kecerahan dan warna untuk wallpaper dalam mode Gelap"
+    ],
+    "Animasi sistem": [
+      "Pengoptimalan: Animasi pada kondisi tertentu"
+    ],
+    "Mi Share": [
+      "Baru: Perangkat yang baru saja terhubung akan disematkan di atas daftar untuk waktu yang singkat"
+    ],
+    "Sistem": [
+      "Pengoptimalan: Notifikasi suara yang tidak dibutuhkan untuk mode Jangan ganggu dihapus",
+      "Patch Keamanan Android diperbarui (Juli 2020). Keamanan sistem ditingkatkan."
+    ],
+    "Kunci aplikasi": [
+      "Pengoptimalan: Halaman verifikasi Kunci aplikasi",
+      "Perbaikan: Ikon sidik jari tidak muncul di beberapa kasus",
+      "Perbaikan: Bilah status tidak ditampilkan dengan benar dalam beberapa kasus"
+    ],
+    "Bar status, Layar notiifikasi": [
+      "Baru: Ada animasi saat layar dihidupkan",
+      "Baru: Animasi gradien warna bilah status",
+      "Perbaikan: Layar notifikasi tidak ditampilkan dengan benar di mode Gelap"
+    ],
+    "Browser": [
+      "Baru: Pencarian lokal",
+      "Baru: Pengunduhan video dari situs web populer"
+    ],
+    "Konsumsi baterai": [
+      "Baru: Beragam pengoptimalan untuk fitur Penghemat baterai",
+      "Baru: Pilihan pengoptimalan yang beragam",
+      "Baru: Tugas otomatis sekarang mendukung pemulihan cadangan",
+      "Pengoptimalan: Peringatan baterai lemah",
+      "Perbaikan: Notifikasi tentang baterai lemah ditampilkan 2x dalam beberapa kasus"
+    ]
+  },
+  "logs_vi": {
+    "Trung tâm điều khiển": [
+      "Mới: Trượt xuống từ góc trên bên trái để mở Thanh thông báo và từ góc trên bên phải để mở Trung tâm điều khiển",
+      "Mới: Khi Thanh thông báo mở, trượt xuống từ góc trên bên phải để mở Trung tâm điều khiển",
+      "Tối ưu: Trung tâm điều khiển hiện đang đóng bởi các cuộc gọi đến",
+      "Tối ưu: Bấm và giữ các tùy chọn chuyển hướng",
+      "Sửa: Kontrol merkezi, manzara modunda doğru bir şekilde görüntülenmedi"
+    ],
+    "Chế độ nền tối": [
+      "Tối ưu: Cải thiện độ sáng và màu sắc cho hình nền ở Chế độ nền tối"
+    ],
+    "Ảnh động hệ thống": [
+      "Tối ưu: Hoạt ảnh khi chọn"
+    ],
+    "Mi Share": [
+      "Mới: Thiết bị được kết nối gần đây sẽ được ghim trên đầu danh sách trong một thời gian ngắn"
+    ],
+    "Hệ thống": [
+      "Tối ưu: Xóa âm thanh thông báo không cần thiết trong chế độ không làm phiền",
+      "Cập nhật Bản vá bảo mật Android đến tháng 7 năm 2020. Tăng cường bảo mật hệ thống."
+    ],
+    "Khóa ứng dụng": [
+      "Tối ưu: Trang xác minh khóa ứng dụng",
+      "Sửa: Biểu tượng vân tay không hiển thị trong một số trường hợp",
+      "Sửa: Thanh trạng thái không hiển thị chính xác trong một số trường hợp"
+    ],
+    "Thanh trạng thái, Thanh thông báo": [
+      "Mới: Màn hình sáng lên với ảnh động",
+      "Mới: Chuyển động color gradient thanh trạng thái ",
+      "Sửa: Thanh thông báo không hiển thị chính xác trên Chế độ nền tối"
+    ],
+    "Trình duyệt": [
+      "Mới: Tìm kiếm trên máy",
+      "Mới: Tải xuống video từ các trang web phổ biến"
+    ],
+    "Sử dụng pin": [
+      "Mới: Nhiều tối ưu cho Tiết kiệm pin",
+      "Mới: Nhiều tùy chọn tối ưu",
+      "Mới: Tác vụ tự động hiện hỗ trợ khôi phục bản sao lưu",
+      "Tối ưu: Cảnh báo pin yếu",
+      "Sửa: Thông báo pin yếu xuất hiện hai lần trong một số trường hợp"
+    ]
+  },
+  "logs_th": {
+    "ศูนย์กลางการควบคุม": [
+      "ใหม่: กวาดนิ้วลงจากมุมซ้ายบนเพื่อเปิดแถบแจ้งเตือนและจากมุมขวาบนเพื่อเปิดศูนย์ควบคุม",
+      "ใหม่: เมื่อเฉดการแจ้งเตือนเปิดขึ้น ปัดลงจากมุมขวาบนเพื่อเปิดศูนย์ควบคุม",
+      "การเพิ่มประสิทธิภาพ: ตอนนี้ศูนย์ควบคุมถูกปิดโดยสายเรียกเข้า",
+      "การเพิ่มประสิทธิภาพ: กดตัวเลือกการเปลี่ยนเส้นทางค้างไว้",
+      "แก้ไข: ศูนย์ควบคุมไม่ได้แสดงอย่างถูกต้องทุกครั้งในโหมดแนวนอน"
+    ],
+    "โหมดมืด": [
+      "การเพิ่มประสิทธิภาพ: ปรับปรุงความสว่างและสีของวอลเปเปอร์ในโหมดมืด"
+    ],
+    "ภาพเคลื่อนไหวของระบบ": [
+      "การเพิ่มประสิทธิภาพ: ภาพเคลื่อนไหวในบางฉาก"
+    ],
+    "Mi แชร์": [
+      "ใหม่: อุปกรณ์ที่เชื่อมต่อล่าสุดจะถูกตรึงที่ด้านบนของรายการเป็นเวลาสั้นๆ"
+    ],
+    "ระบบ": [
+      "การเพิ่มประสิทธิภาพ: ลบการแจ้งเตือนด้วยเสียงที่ไม่จำเป็นสำหรับโหมด DND",
+      "อัปเดตแพทช์ความปลอดภัยของแอนดรอยด์เป็นกรกฎาคม 2020 เพิ่มความปลอดภัยของระบบ"
+    ],
+    "ล็อกแอป": [
+      "การเพิ่มประสิทธิภาพ: หน้าการตรวจสอบการล็อกแอป",
+      "แก้ไข: ไอคอนลายนิ้วมือไม่ปรากฏในบางกรณี",
+      "แก้ไข: แถบสถานะแสดงไม่ถูกต้องในบางกรณี"
+    ],
+    "แถบสถานะ, แถบแจ้งเตือน": [
+      "ใหม่: หน้าจอสว่างขึ้นด้วยภาพเคลื่อนไหวแล้วตอนนี้",
+      "ใหม่: ภาพเคลื่อนไหวการไล่ระดับสีของแถบสถานะ",
+      "แก้ไข: แถบการแจ้งเตือนแสดงไม่ถูกต้องในโหมดมืด"
+    ],
+    "เบราว์เซอร์": [
+      "ใหม่: ค้นในอุปกรณ์",
+      "ใหม่: ดาวน์โหลดวิดีโอจากเว็บไซต์ยอดนิยม"
+    ],
+    "การใช้แบตเตอรี่": [
+      "ใหม่: การเพิ่มประสิทธิภาพหลายรายการสำหรับการประหยัดแบตเตอรี่",
+      "ใหม่: ตัวเลือกการเพิ่มประสิทธิภาพที่หลากหลาย",
+      "ใหม่: ขณะนี้งานอัตโนมัติรองรับการกู้คืนข้อมูลสำรอง",
+      "การเพิ่มประสิทธิภาพ: คำเตือนแบตเตอรี่ต่ำ",
+      "แก้ไข: การแจ้งเตือนแบตเตอรี่อ่อนปรากฏขึ้นสองครั้งในบางกรณี"
+    ]
+  },
+  "logs_ar": {
+    "مركز التحكم": [
+      ":الجديد يمكنك السحب لأسفل من أعلى يسارالشاشة لفتح مركز الإشعارات، والسحب لأسفل من أعلى يمين الشاشة لفتح مركز التحكم",
+      ":الجديد أثناء فتح مركز الإشعارات، يمكنك الآن السحب لأسفل من الزاوية العلوية اليمنى من الشاشة لفتح مركز التحكم",
+      ":التحسين يمكن الآن إغلاق مركز التحكم عند تلقي المكالمات الواردة",
+      ":التحسين الضغط باستمرار على خيارات إعادة التوجية",
+      ":الإصلاح لا يظهر مركز التحكم بشكل صحيح في الوضع الأفقي"
+    ],
+    "وضع الظلام": [
+      ":التحسين تحسين السطوع واللون لخلفيات الوضع الداكن"
+    ],
+    "نظام الرسوم المتحركة": [
+      ":التحسين الرسوم المتحركة في سيناريوهات مختارة"
+    ],
+    "Mi Share": [
+      ":الجديد إضافة ميزة تثبيت الأجهزة المتصلة مؤخرا بأعلى القائمة لفترة من الوقت"
+    ],
+    "النظام": [
+      ":التحسين إزالة إشعارات الصوت غير ضرورية لوضع عدم الإزعاج",
+      "تم تحديث تصحيح أمان الأندرويد إلى يوليو 2020 لزيادة أمان النظام."
+    ],
+    "قفل التطبيقات": [
+      ":التحسين صفحة مصادقة قفل التطبيق",
+      ":الإصلاح مشكله ظهور أيقونة بصمة الإصبع بشكل غير صحيح في بعض الحالات",
+      ":الإصلاح مشكله ظهور شريط الحالة بشكل غير صحيح في بعض الحالات"
+    ],
+    "شريط الحالة ومركز الإشعارات": [
+      ":الجديد إضافة ميزة إضاءة الشاشة مع الرسوم المتحركة",
+      ":الجديد تدرج لوني متحرك لشريط الحالة",
+      ":الإصلاح لا يظهر مركز الإشعارات بشكل صحيح في الوضع الداكن"
+    ],
+    "المتصفح": [
+      ":الجديد ميزة البحث المحلي",
+      ":الجديد ميزة تنزيل مقاطع الفيديو من المواقع المشهورة"
+    ],
+    "استخدام البطارية": [
+      ":الجديد تحسينات متعددة لموفر البطارية",
+      ":الجديد خيارات متعددة للتحسينات",
+      ":الجديد تدعم المهام الآلية الآن استعادة النُسخ الاحتياطية",
+      ":التحسين إضافة تحذير عند انخفاض البطارية",
+      ":الإصلاح ظهور إشعار ^البطارية منخفضة^ مرتين في بعض الحالات"
+    ]
   }
 }

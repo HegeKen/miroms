@@ -70,5 +70,407 @@
       "Fix: UI elements overlapped in the super wallpaper settings",
       "Fix: When system font size was set to large, super wallpaper descriptions overlapped during the setup process"
     ]
+  },
+  "logs_zh_tw": {
+    "系統": [
+      "新增: 演算力升級，20倍渲染力，渲出大精彩",
+      "新增: 機型分級，不同手機，都更流暢",
+      "新增: 安卓首創手勢Turbo，極速響應，流暢於心",
+      "優化: 系統最佳化，更輕、更快、更省",
+      "基於Android 11 深度訂製的MIUI穩定版發布"
+    ],
+    "筆記": [
+      "新增: 塗鴉快速繪圖功能，包括規則圖形長按自動修正以及直線端點自動連線",
+      "新增: 全局待辦升級為「速記」，隨時查看筆記、待辦、摘錄",
+      "新增: 摘錄功能，支援將圖片、文字、鏈接一鍵摘錄至筆記（需在商店中升級至3.1.0級以上版本）",
+      "新增: 動態網格排版，構建文字秩序之美，讓不同字號，同樣優美",
+      "新增: 思維筆記功能，手機上的結構化書寫利器，一鍵生成腦圖",
+      "新增: 塗鴉功能，精心調校四種畫筆，細膩還原真實筆觸",
+      "便簽全面升級為「筆記 」"
+    ],
+    "主題": [
+      "修復: 設定頁超級壁紙底部導航欄顯示不清楚",
+      "修復: 省電模式下，分身空間桌面壁紙與主空間相同",
+      "修復: 分身空間中設定桌面壁紙異常顯示",
+      "修復: 部份場景下解鎖時壁紙閃爍",
+      "修復: 某些場景下的壁紙服務出現錯誤",
+      "修復: 部分壁紙預覽頁顯示異常",
+      "修復: 螢幕鎖定畫面指紋解鎖螢幕閃爍",
+      "修復: 部分場景下關閉深色模式壁紙仍為深色效果",
+      "修復: 退出超級省電模式後，桌面壁紙變黑",
+      "修復: 無障礙模式下，超級壁紙點擊下載時播報錯誤",
+      "修復: 地球超級壁紙文字顯示不完整",
+      "修復: 設定-超級壁紙卡片文案與按鈕重疊",
+      "修復: 大字體時，超級壁紙落地點選擇頁文字重疊"
+    ]
+  },
+  "logs_ja": {
+    "システム": [
+      "新機能: レンダリング能力が20倍になったことで、画面に映し出されるものにはほとんど制限がなくなりました。",
+      "新機能: デバイスモデルごとの調整により、アップグレード後はどの機種でも高速化が実現します。",
+      "新機能: ジェスチャー操作の反応性が向上しました。",
+      "最適化: MIUIは、軽量化、高速化、省電力化を実現しました。",
+      "Android 11ベースのMIUI安定版"
+    ],
+    "テーマ": [
+      "修正: スーパー壁紙の設定でナビゲーションボタンが正しく表示されない問題",
+      "修正: バッテリーセーバーがオンのときに、ファースト・スペースの壁紙がセカンド・スペースにも適用された問題",
+      "修正: セカンド・スペースで壁紙が正しく表示されない問題",
+      "修正: デバイスのロック解除中に壁紙が点滅することがある問題",
+      "修正: 壁紙サービスがクラッシュする場合がある問題",
+      "修正: 一部の壁紙プレビューが正しく表示されない問題",
+      "修正: 指紋認証の使用中に画面が点滅する問題",
+      "修正: ダークモードをオフにしても壁紙が暗いままになる場合がある問題",
+      "修正: ウルトラバッテリーセーバーをオフにすると、ホーム画面の背景が黒くなる問題",
+      "修正: アクセシビリティモードでスーパー壁紙をダウンロードする際の音声案内が正しくない問題",
+      "修正: スーパー壁紙での文字切れ問題",
+      "修正: スーパー壁紙の設定でUI要素が重なる問題",
+      "修正: システムのフォントサイズを大に設定すると、セットアップ時にスーパー壁紙の説明が重なって表示される問題"
+    ]
+  },
+  "logs_ko": {
+    "시스템": [
+      "New: 20배 증가한 렌더링 능력으로 화면에서 볼 수 있는 것에 대한 한계가 거의 없어졌습니다.",
+      "New: 기기 모델 맞춤형 조정을 통해 어느 기종에서도 고속화가 실현됩니다.",
+      "New: 제스처 조작에 대한 반응이 향상되었습니다.",
+      "최적화: MIUI는 경량화, 고속화 및 저전력화를 실현했습니다.",
+      "Android 11 기반의 MIUI 안정화 버전"
+    ],
+    "테마": [
+      "수정: 슈퍼 배경화면 설정에서 탐색 버튼이 제대로 표시되지 않는 문제",
+      "수정: 배터리 절약이 켜져 있을 때 기본 공간의 배경화면이 보조 공간에도 적용되는 문제",
+      "수정: 보조 공간에서 배경화면이 제대로 표시되지 않는 문제",
+      "수정: 일부 상황에서 기기의 잠금을 해제하는 중에 배경화면이 깜빡이는 문제",
+      "수정: 일부 상황에서 배경화면 서비스가 중단되는 문제",
+      "수정: 일부 배경화면 미리보기가 제대로 표시되지 않는 문제",
+      "수정: 지문 잠금해제 사용 중에 발생하는 화면이 깜빡이는 문제",
+      "수정: 일부 상황에서 다크 모드를 끈 후에도 배경화면이 어둡게 유지되는 문제",
+      "수정: 울트라 배터리 절약이 꺼진 후 홈 화면 배경이 검게 변하는 문제",
+      "수정: 접근성 모드에서 슈퍼 배경화면을 다운로드할 시 음성 안내가 올바르지 않은 문제",
+      "수정: 슈퍼 배경화면의 텍스트가 잘려 표시되는 문제",
+      "수정: 슈퍼 배경화면 설정에서 UI 구성요소가 겹쳐 표시되는 문제",
+      "수정: 시스템의 글꼴 크기를 크게 설정할 시, 설치 과정 중에 슈퍼 배경화면의 설명이 겹쳐 표시되는 문제"
+    ]
+  },
+  "logs_ru": {
+    "Система": [
+      "Новое: Благодаря 20-кратному увеличению производительности рендеринга возможности отрисовки стали практически безграничны.",
+      "Новое: Обновление для каждого устройства содержит индивидуальные улучшения, которые сделают ваше устройство еще быстрее.",
+      "Новое: Мгновенный отклик на жесты.",
+      "Оптимизация: Система MIUI стала легче, быстрее и стабильнее.",
+      "Стабильная версия MIUI на базе Android 11"
+    ],
+    "Темы": [
+      "Исправлено: В настройках суперобоев кнопки навигации могли отображаться неправильно",
+      "Исправлено: При включенном режиме экономии энергии обои первого пространства также устанавливались для второго пространства",
+      "Исправлено: Во втором пространстве обои могли отображаться неправильно",
+      "Исправлено: В некоторых случаях после разблокировки устройства обои могли мерцать",
+      "Исправлено: Редкие ошибки в работе служб обоев",
+      "Исправлено: Исправлено некорректное отображение превью некоторых обоев",
+      "Исправлено: Во время разблокировки при помощи отпечатка пальца экран устройства мог мерцать",
+      "Исправлено: В некоторых случаях обои оставались затемнены даже после отключения Темного режима",
+      "Исправлено: После отключения Ультраэкономии энергии фон рабочего стола мог становиться черным",
+      "Исправлено: Неправильные голосовые подсказки о загрузке суперобоев в режиме специальных возможностей",
+      "Исправлено: Проблемы с отображением текста в разделе ^Суперобои^",
+      "Исправлено: В настройках суперобоев элементы интерфейса могли перекрываться",
+      "Исправлено: Во время настройки суперобоев описание могло отображаться неправильно, если был выбран большой размер системного текста"
+    ]
+  },
+  "logs_uk": {
+    "Система": [
+      "Нове: Завдяки 20-кратному збільшенню продуктивності рендерингу, можливості відтворення стали практично безмежними.",
+      "Нове: Оновлення для кожного пристрою містить індивідуальні покращення, які зроблять ваш пристрій ще швидше.",
+      "Нове: Миттєва відповідь на жести.",
+      "Оптимізація: Система MIUI стала легшою, швидшою та стабільнішою.",
+      "Стабільна версія MIUI на основі Android 11"
+    ],
+    "Теми": [
+      "Виправлено: У налаштуваннях супершпалер кнопки навігації могли відображатися неправильно",
+      "Виправлено: При увімкненому режимі економії енергії шпалери Першого простору також встановлювалися для Другого простору",
+      "Виправлено: У Другому просторі шпалери могли відображатися неправильно",
+      "Виправлено: У деяких випадках після розблокування пристрою шпалери могли мерехтіти",
+      "Виправлено: Рідкісні помилки в роботі служб шпалер",
+      "Виправлено: Виправлено некоректне відображення попереднього перегляду деяких шпалер",
+      "Виправлено: Під час розблокування за допомогою відбитка пальця екран пристрою міг мерехтіти",
+      "Виправлено: В деяких випадках шпалери залишалися затемненими навіть після відключення Темного режиму",
+      "Виправлено: Пісдя відключення Ультраекнопомії енергії фон робочого столу міг ставати чорним",
+      "Виправлено: Неправильні голосові підказки про завантаження супершпалер в режимі спеціальних можливостей",
+      "Виправлено: Проблеми з відображенням тексту в розділі ^Супершпалери^",
+      "Виправлено: У налаштуваннях супершпалер елементи інтерфейсу могли перекриватися",
+      "Виправлено: Під час налаштування супершпалер опис міг відображатися неправильно, якщо було вибрано великий розмір системного тексту"
+    ]
+  },
+  "logs_pl": {
+    "System": [
+      "Nowe: Dzięki 20-krotnie większej mocy renderowania, nie istnieją prawie żadne ograniczenia tego, co możesz zobaczyć na ekranie.",
+      "Nowe: Dzięki dostosowaniu do modelu urządzenia, każdy telefon stanie się szybszy po aktualizacji.",
+      "Nowe: Reakcja na gesty jest teraz natychmiastowa.",
+      "Zoptymalizowano: MIUI stał się jaśniejszy, szybszy i bardziej wytrzymały.",
+      "Stabilny MIUI oparty na Android 11"
+    ],
+    "Motywy": [
+      "Naprawiono: Przyciski nawigacyjne nie wyświetlały się poprawnie w ustawieniach super tapety",
+      "Naprawiono: Tapety z pierwszej przestrzeni zostały również zastosowane w drugiej przestrzeni, gdy Oszczędzanie baterii było włączone",
+      "Naprawiono: Tapety nie wyświetlały się poprawnie w drugiej przestrzeni",
+      "Naprawiono: W niektórych przypadkach tapety błysnęły podczas odblokowywania urządzenia",
+      "Naprawiono: W niektórych przypadkach usługi tapetowania uległy awarii",
+      "Naprawiono: Niektóre podglądy tapet nie wyświetlały się poprawnie",
+      "Naprawiono: Ekran migał podczas odblokowywania odciskiem palca",
+      "Naprawiono: W niektórych przypadkach tapety pozostawały ciemne po wyłączeniu trybu ciemnego",
+      "Naprawiono: Tło ekranu głównego stało się czarne po wyłączeniu oszczędzania baterii Ultra",
+      "Naprawiono: Nieprawidłowe komunikaty głosowe dotyczące pobierania supertapet w trybie ułatwień dostępu",
+      "Naprawiono: Problemy z obcinaniem tekstu w super tapetach",
+      "Naprawiono: Elementy interfejsu użytkownika nakładały się w ustawieniach super tapety",
+      "Naprawiono: Gdy systemowy rozmiar czcionki został ustawiony na duży, opisy super tapet nakładały się podczas procesu konfiguracji"
+    ]
+  },
+  "logs_de": {
+    "System": [
+      "New: With 20 times more rendering power, there are now few limits to what you can see on your screen.",
+      "New: With custom device model adjustments, any phone becomes faster after the upgrade.",
+      "New: Response to gestures is now instant.",
+      "Optimization: MIUI became lighter, faster, and more durable.",
+      "Stable MIUI based on Android 11"
+    ],
+    "Notes": [
+      "New: Press and hold a sketch to adjust the strokes automatically.",
+      "New: A gesture shortcut now allows you to create notes, tasks, and excerpts anywhere.",
+      "New: Excerpts save text, URLs, and images to Notes in a few simple taps.",
+      "New: Dynamic layouts bring the typography in Notes to a new level.",
+      "New: Compose mind maps with complex structures.",
+      "New: New tools for doodling and sketching.",
+      "All-new Notes."
+    ],
+    "Themes": [
+      "Fix: Navigation buttons weren^t displayed correctly in the super wallpaper settings",
+      "Fix: Wallpapers from First space were also applied in Second space when Battery saver was on",
+      "Fix: Wallpapers weren^t displayed correctly in Second space",
+      "Fix: Wallpapers flashed while device was being unlocked in some cases",
+      "Fix: Wallpaper services crashed in some cases",
+      "Fix: Some wallpaper previews weren^t displayed correctly",
+      "Fix: The screen flashed while Fingerprint unlock was being used",
+      "Fix: Wallpapers stayed dark after Dark mode was turned off in some cases",
+      "Fix: Home screen background went black after Ultra battery saver was turned off",
+      "Fix: Incorrect voice prompts for downloading super wallpapers in Accessibility mode",
+      "Fix: Text truncation issues in super wallpapers",
+      "Fix: UI elements overlapped in the super wallpaper settings",
+      "Fix: When system font size was set to large, super wallpaper descriptions overlapped during the setup process"
+    ]
+  },
+  "logs_fr": {
+    "Système": [
+      "Nouveau: Avec 20 fois plus de puissance de rendu, il y a maintenant peu de limites à ce que vous pouvez voir sur votre écran.",
+      "Nouveau: Grâce aux ajustements personnalisés du modèle d^appareil, n^importe quel téléphone devient plus rapide après la mise à niveau.",
+      "Nouveau: La réponse aux gestes est désormais instantanée.",
+      "Optimisation: MIUI est devenu plus léger, plus rapide et plus durable.",
+      "MIUI Stable basé sur Android 11"
+    ],
+    "Thèmes": [
+      "Réparé: Les boutons de navigation ne s^affichaient pas correctement dans les paramètres du super fond d^écran",
+      "Réparé: Les fonds d^écran du premier espace ont également été appliqués dans le deuxième espace lorsque l^économiseur de batterie était activé",
+      "Réparé: Les fonds d^écran ne s^affichaient pas correctement dans le deuxième espace",
+      "Réparé: Les fonds d^écran ont clignoté pendant le déverrouillage de l^appareil dans certains cas",
+      "Réparé: Les services de papier peint ont planté dans certains cas",
+      "Réparé: Certains aperçus de fond d^écran ne s^affichaient pas correctement",
+      "Réparé: L^écran a clignoté pendant que le déverrouillage par empreinte digitale était utilisé",
+      "Réparé: Les fonds d^écran sont restés sombres après la désactivation du mode sombre dans certains cas",
+      "Réparé: L^arrière-plan de l^écran d^accueil est devenu noir après la désactivation de l^économiseur de batterie ultra",
+      "Réparé: Invites vocales incorrectes pour le téléchargement de super fonds d^écran en mode Accessibilité",
+      "Réparé: Problèmes de troncature de texte pour les super fonds d^écran",
+      "Réparé: Les éléments de l^interface utilisateur se chevauchent dans les paramètres du super fond d^écran",
+      "Réparé: Lorsque la taille de la police du système était définie sur grande, les descriptions des super fonds d^écran se chevauchaient pendant le processus de configuration"
+    ]
+  },
+  "logs_it": {
+    "Sistema": [
+      "Nuovo: Con una potenza di rendering 20 volte superiore, ci sono sempre meno limiti a ciò che puoi vedere sullo schermo.",
+      "Nuovo: Con le regolazioni personalizzate in base al modello del dispositivo, tutti i telefoni diventano più veloci dopo l^aggiornamento.",
+      "Nuovo: La risposta ai gesti è ora istantanea.",
+      "Ottimizzazione: MIUI è diventata più leggera, più veloce e più durevole.",
+      "MIUI Stable basata su Android 11"
+    ],
+    "Temi": [
+      "Risolto: I tasti di navigazione non venivano visualizzati correttamente nelle impostazioni di Super sfondi",
+      "Risolto: Gli sfondi di Primo spazio erano applicati anche a Secondo spazio quando il risparmio energetico era attivo",
+      "Risolto: Gli sfondi non venivano visualizzati correttamente in Secondo spazio",
+      "Risolto: Gli sfondi lampeggiavano durante lo sblocco del dispositivo in alcuni casi",
+      "Risolto: I servizi relativi agli sfondi si bloccavano in alcuni casi",
+      "Risolto: Alcune anteprime degli sfondi non venivano visualizzate correttamente",
+      "Risolto: Lo schermo lampeggiava durante l^utilizzo dello sblocco tramite impronta",
+      "Risolto: Gli sfondi rimanevano scuri dopo la disattivazione della modalità scura in alcuni casi",
+      "Risolto: Lo sfondo della schermata Home diventava nero dopo la disattivazione di Super risparmio energetico",
+      "Risolto: Messaggi vocali errati per il download di Super sfondi in modalità accessibilità",
+      "Risolto: Problemi di troncamento del testo nei Super sfondi",
+      "Risolto: Gli elementi dell^interfaccia utente si sovrapponevano nelle impostazioni di Super sfondi",
+      "Risolto: Quando la dimensione del carattere di sistema era impostata su grande, le descrizioni di Super sfondi si sovrapponevano durante il processo di installazione"
+    ]
+  },
+  "logs_es": {
+    "Sistema": [
+      "Nuevo: Con 20 veces más poder de renderizado, ahora ya no hay límites para lo que puedes ver en tu pantalla.",
+      "Nuevo: Con los ajustes personalizados del modelo de dispositivo, cualquier teléfono se vuelve más rápido después de la actualización.",
+      "Nuevo: La respuesta a los gestos ahora es instantánea.",
+      "Optimización: MIUI ahora es más ligero, más rápido y más duradero.",
+      "MIUI estable basado en Android 11"
+    ],
+    "Temas": [
+      "Reparado: Los botones de navegación no se mostraban correctamente en los ajustes de los superfondos de pantalla",
+      "Reparado: Los fondos de pantalla del Primer espacio también se aplicaban en el Segundo espacio cuando el Ahorro de batería estaba activado",
+      "Reparado: Los fondos de pantalla no se mostraban correctamente en el Segundo espacio",
+      "Reparado: En algunos casos los fondos de pantalla parpadeaban mientras se desbloqueaba el dispositivo",
+      "Reparado: En algunos casos los servicios de fondos de pantalla fallaban",
+      "Reparado: Algunas previsualizaciones de fondos de pantalla no se mostraban correctamente",
+      "Reparado: La pantalla parpadeaba mientras se usaba el desbloqueo con huella dactilar",
+      "Reparado: En algunos casos los fondos de pantalla permanecían oscuros después de que el Modo oscuro se desactivase",
+      "Reparado: El fondo de la Pantalla de inicio se volvía negro después de que se desactivase el Ahorro de batería extremo",
+      "Reparado: Indicaciones de voz incorrectas para descargar superfondos de pantalla en el Modo accesibilidad",
+      "Reparado: Problemas de truncamiento de texto en los superfondos de pantalla",
+      "Reparado: Elementos de la interfaz de usuario se superponían en los ajustes de los superfondos de pantalla",
+      "Reparado: Cuando el tamaño de la fuente del sistema se establecía en grande, las descripciones de los superfondos de pantalla se superponían durante el proceso de configuración"
+    ]
+  },
+  "logs_pt": {
+    "Sistema": [
+      "Novo: Com 20 vezes mais poder de renderização, agora são poucos os limites do que você pode ver em sua tela.",
+      "Novo: Com ajustes personalizados ao modelo do dispositivo, qualquer telefone fica mais rápido após a atualização.",
+      "Novo: Resposta a gestos é instantânea agora.",
+      "Otimização: O MIUI está mais leve, mais rápido e mais durável.",
+      "O MIUI Estável baseado no Android 11"
+    ],
+    "Temas": [
+      "Correção: Os botões de navegação não eram exibidos corretamente nas configurações dos super planos de fundo",
+      "Correção: Planos de fundo do Primeiro Espaço também são aplicados ao Segundo Espaço quando a Economia de bateria estava ativada",
+      "Correção: Os planos de fundo não eram exibidos corretamente no Segundo Espaço",
+      "Correção: Os planos de fundo piscavam enquanto o dispositivo estava sendo desbloqueado em alguns casos",
+      "Correção: Os serviços de plano de fundo travavam em alguns casos",
+      "Correção: Algumas prévias de planos de fundo não eram exibidas corretamente",
+      "Correção: A tela piscava quando o desbloqueio com impressão digital era usado",
+      "Correção: Planos de fundo permaneciam escuros após o Modo Escuro ser desativado em alguns casos",
+      "Correção: O plano de fundo da Tela inicial ficava preto após a Ultra economia de energia ser desativada",
+      "Correção: Alertas de voz incorretos para o download de super planos de fundo no Modo Acessibilidade",
+      "Correção: Problemas de texto truncado nos super planos de fundo",
+      "Correção: Elementos da IU sobrepunham nas configurações dos super papeis de parede",
+      "Correção: Quando o tamanho da fonte do sistema era definida para grande, as descrições dos super planos de fundo sobrepunham durante o processo de configuração"
+    ]
+  },
+  "logs_tr": {
+    "Sistem": [
+      "Yeni: 20 kat daha fazla işleme gücü ile ekranınızda görebileceklerinizin artık birkaç sınırı var.",
+      "Yeni: Özel cihaz modeli ayarlamaları ile herhangi bir telefon yükseltmeden sonra daha hızlı hale gelir.",
+      "Yeni: Hareketlere yanıt artık anında.",
+      "Optimizasyon: MIUI artık daha hafif, daha hızlı ve daha dayanıklı.",
+      "Android 11 tabanlı stabil MIUI"
+    ],
+    "Temalar": [
+      "Onarım: Süper duvar kağıtları ayarlarında navigasyon tuşları doğru görüntülenmedi",
+      "Onarım: Pil tasarrufu açık iken İlk alan^dan Duvar kağıtları İkinci alan^a da uygulandı",
+      "Onarım: İkinci alan^da duvar kağıdı doğru görüntülenmedi",
+      "Onarım: Cihaz kilidi açılıyorken bazı durumlarda duvar kağıdı yandı söndü",
+      "Onarım: Duvar kağıdı hizmetleri bazı durumlarda çöktü",
+      "Onarım: Bazı duvar kağıdı önizlemeleri doğru görüntülenmedi",
+      "Onarım: Parmak izi ile kilit açma kullanılıyorken ekran yanıp söndü",
+      "Onarım: Karanlık mod bazı durumlarda kapatıldıktan sonra Duvar kağıdı karanlık kaldı",
+      "Onarım: Ultra pil tasarrufu kapatıldığında Ana ekran arka planı karardı",
+      "Onarım: Erişilebilirlik modunda süper duvar kağıtlarını indirmek için hatalı sesli komutlar",
+      "Onarım: Süper duvar kağıtlarında metin kesme sorunları",
+      "Onarım: Süper duvar kağıtları ayarlarında kullancı arayüzü ögeleri üst üste bindi",
+      "Onarım: Sistem yazı tipi boyutu büyük olarak ayarlandığında, kurulum işlemi sırasında süper duvar kağıdı açıklamaları üst üste bindi"
+    ]
+  },
+  "logs_id": {
+    "Sistem": [
+      "Baru: Dengan kekuatan rendering 20 kali lebih banyak, sekarang ini, hanya ada sedikit batasan-batasan untuk apa yang dapat Anda lihat di layar Anda.",
+      "Baru: Dengan penyesuaian model perangkat kustomisasi, ponsel apa pun menjadi lebih cepat setelah pembaruan.",
+      "Baru: Respons terhadap gerakan lebih cepat.",
+      "Pengoptimalan: MIUI menjadi lebih ringan, cepat, dan tahan lama.",
+      "MIUI Stabil dengan sistem operasi Android 11"
+    ],
+    "Tema": [
+      "Perbaikan: Tombol navigasi tidak ditampilkan dengan benar di setelan wallpaper super",
+      "Perbaikan: Wallpaper dari Ruang pertama juga diterapkan di Ruang kedua saat Penghemat baterai dihidupkan",
+      "Perbaikan: Wallpaper tidak ditampilkan dengan benar di Ruang kedua",
+      "Perbaikan: Wallpaper berkedip saat perangkat dibuka kuncinya dalam beberapa kasus",
+      "Perbaikan: Layanan wallpaper tutup tiba-tiba dalam beberapa kasus",
+      "Perbaikan: Beberapa pratinjau wallpaper tidak ditampilkan dengan benar",
+      "Perbaikan: Layar berkedip saat membuka kunci dengan sidik jari sedang digunakan",
+      "Perbaikan: Wallpaper tetap gelap setelah mode Gelap dimatikan dalam beberapa kasus",
+      "Perbaikan: Latar belakang Layar utama menjadi hitam setelah Penghemat baterai ultra dimatikan",
+      "Perbaikan: Perintah suara yang salah untuk mengunduh wallpaper super dalam mode Aksesibilitas",
+      "Perbaikan: Masalah teks terpotong pada wallpaper super",
+      "Perbaikan: Elemen antarmuka (UI) tumpang tindih dalam setelan wallpaper super",
+      "Perbaikan: Ketika ukuran huruf sistem diatur ke ukuran besar, deskripsi wallpaper super akan tumpang tindih selama proses penyiapan"
+    ]
+  },
+  "logs_vi": {
+    "Hệ thống": [
+      "Mới: Với khả năng kiết xuất cao hơn 20 lần, giờ đây có rất ít giới hạn đối với những gì bạn có thể nhìn thấy trên màn hình của mình.",
+      "Mới: Với điều chỉnh kiểu thiết bị tùy chỉnh, bất kỳ điện thoại nào cũng đều nhanh hơn sau khi nâng cấp.",
+      "Mới: Phản hồi cử chỉ tức thì.",
+      "Tối ưu: MIUI trở nên nhẹ hơn, nhanh hơn và tiện dụng hơn.",
+      "Phiên bản ổn định MIUI dựa trên nền tảng Android 11"
+    ],
+    "Chủ đề": [
+      "Sửa: Phím điều hướng không hiển thị chính xác trong cài đặt Siêu hình nền",
+      "Sửa: Hình nền từ Không gian thứ nhất cũng được áp dụng trong Không gian thứ hai khi Tiết kiệm pin được bật",
+      "Sửa: Hình nền không hiển thị chính xác trong Không gian thứ hai",
+      "Sửa: Hình nền nhấp nháy khi thiết bị được mở khóa trong một số trường hợp",
+      "Sửa: Dịch vụ hình nền gặp sự cố trong một số trường hợp",
+      "Sửa: Một số xem trước hình nền không hiển thị chính xác",
+      "Sửa: Màn hình nhấp nháy khi Mở khóa vân tay được sử dụng",
+      "Sửa: Hình nền vẫn tối sau khi Chế độ tối bị tắt trong một số trường hợp",
+      "Sửa: Nền màn hình chính màu đen khi Tiết kiệm pin tối ưu tắt",
+      "Sửa: Nhắc nhở giọng nói không chính xác để tải xuống siêu hình nền ở Chế độ trợ năng",
+      "Sửa: Vấn đề chữ không hiển thị toàn bộ trong Siêu hình nền",
+      "Sửa: Yếu tố giao diện người dùng chồng lên nhau trong cài đặt siêu hình nền",
+      "Sửa: Khi kích thước phông chữ hệ thống được đặt thành lớn, mô tả siêu hình nền sẽ chồng lên nhau trong quá trình thiết lập"
+    ]
+  },
+  "logs_th": {
+    "ระบบ": [
+      "ใหม่: ด้วยพลังการเรนเดอร์ที่เพิ่มขึ้น 20 เท่า ตอนนี้สิ่งที่คุณเห็นบนหน้าจอของคุณเหลือข้อจำกัดเพียงเล็กน้อย",
+      "ใหม่: ด้วยการปรับเปลี่ยนรุ่นอุปกรณ์ที่กำหนดเอง โทรศัพท์ทุกเครื่องจะเร็วขึ้นหลังจากการอัปเกรด",
+      "ใหม่: ขณะนี้การตอบสนองต่อท่าทางสัมผัสเป็นแบบทันที",
+      "การเพิ่มประสิทธิภาพ: MIUI เบาขึ้น เร็วขึ้น และทนทานมากขึ้น",
+      "MIUI เวอร์ชั่นเสถียรบน Android 11"
+    ],
+    "ธีม": [
+      "แก้ไข: ปุ่มนำทางแสดงไม่ถูกต้องในการตั้งค่าสุดยอดภาพพื้นหลัง",
+      "แก้ไข: ภาพพื้นหลังจากพื้นที่ปกติยังถูกนำไปใช้ในพื้นที่ทับซ้อนเมื่อเปิดตัวประหยัดแบตเตอรี่",
+      "แก้ไข: ภาพพื้นหลังไม่แสดงอย่างถูกต้องในพื้นที่ทับซ้อน",
+      "แก้ไข: ภาพพื้นหลังกะพริบขณะปลดล็อกอุปกรณ์ในบางกรณี",
+      "แก้ไข: บริการภาพพื้นหลังขัดข้องในบางกรณี",
+      "แก้ไข: ตัวอย่างภาพพื้นหลังบางรายการไม่ถูกต้อง",
+      "แก้ไข: หน้าจอกะพริบขณะกำลังใช้การปลดล็อกด้วยลายนิ้วมือ",
+      "แก้ไข: ภาพพื้นหลังยังคงมืดหลังจากปิดโหมดมืดในบางกรณี",
+      "แก้ไข: พื้นหลังหน้าจอหลักเป็นสีดำหลังจากปิดใช้งานตัวประหยัดแบตเตอรี่อัลตร้า",
+      "แก้ไข: เสียงเตือนที่ไม่ถูกต้องสำหรับการดาวน์โหลดสุดยอดภาพพื้นหลังในโหมดสิ่งอำนวยความสะดวก",
+      "แก้ไข: ปัญหาการตัดข้อความในสุดยอดภาพพื้นหลัง",
+      "แก้ไข: องค์ประกอบ UI ซ้อนทับกันในการตั้งค่าสุดยอดภาพพื้นหลัง",
+      "แก้ไข: เมื่อตั้งค่าขนาดแบบอักษรของระบบเป็นขนาดใหญ่ คำอธิบายสุดยอดภาพพื้นหลังจะซ้อนทับกันระหว่างขั้นตอนการตั้งค่า"
+    ]
+  },
+  "logs_ar": {
+    "النظام": [
+      "الجديد: مع قوة عرض أكبر بمقدار 20 ضعفًا، لا توجد قيود على ماتراه على شاشتك.",
+      "الجديد: تخصيص طراز الجهاز ليصبح أي هاتف أسرع بعد التحديث.",
+      "الجديد: الجهاز الآن يستجيب للإيماءات بشكل أسرع.",
+      "التحسين: MIUI الآن أخف وأسرع وأكثر قوة.",
+      "نسخة مستقرة من MIUI على أساس Android 11"
+    ],
+    "السمات": [
+      "الإصلاح: مشكلة عدم عرض أزرار التنقل بشكل صحيح في إعدادات خلفيات سوبر",
+      "الإصلاح: مشكلة تعيين خلفية شاشة الواجهة الأولى في الواجهة الثانية عند تشغيل موفر البطارية",
+      "الإصلاح: مشكلة العرض الغير طبيعي للخلفيات في الواجهة الثانية",
+      "الإصلاح: مشكلة وميض خلفيات الشاشة أثناء فتح الجهاز في بعض الحالات",
+      "الإصلاح: مشكلة توقف خدمات الخلفيات عن العمل في بعض الحالات",
+      "الإصلاح: مشكلة عدم عرض معاينة بعض خلفيات الشاشة بشكل صحيح",
+      "الإصلاح: مشكلة وميض الشاشة أثناء استخدام إلغاء القفل ببصمة الإصبع",
+      "الإصلاح: مشكلة استمرار الوضع الداكن في خلفية الشاشة بعد إيقاف تشغيلة في بعض الحالات",
+      "الإصلاح: مشكلة ظهور خلفية الشاشة الرئيسية بالون الأسود بعد إيقاف تشغيل موفر البطارية الأقصى",
+      "الإصلاح: مشكلة الأوامر الصوتية غير صحيحة عند تنزيل خلفيات سوبر في وضع إمكانية الوصول",
+      "الإصلاح: مشاكل اقتطاع النص في خلفيات سوبر",
+      "الإصلاح: مشكلة تتداخل عناصر واجهة المستخدم في إعدادات خلفيات سوبر",
+      "الإصلاح: مشكلة تتداخل وصف خلفيات سوبر أثناء عملية إعداداها عند تعيين حجم خط النظام إلى كبير"
+    ]
   }
 }

@@ -48,5 +48,369 @@
       "Fix: Memory usage issues when charging animation was displayed",
       "Fix: Using Face unlock and Fingerprint unlock simultaneously led to crashes in some cases"
     ]
+  },
+  "logs_zh_tw": {
+    "MIUI12.5 增強版": [
+      "全面流暢，更低功耗",
+      "【焦點計算】 依據場景的智慧演算力調度機制，提升全機型流暢度",
+      "【原子記憶體】 超精細記憶體管理機制，應用駐留全面提升",
+      "【液態存儲】 靈敏且高效的檔案儲存機制，提升系統抗老化能力"
+    ],
+    "系統": [
+      "更新Android安全性修補程式等級（2021#09），提升系統安全性"
+    ],
+    "鎖屏": [
+      "新增: 指紋是否應用於螢幕鎖定開關的功能",
+      "優化: 鎖定螢幕畫面左側畫面的記憶體佔用",
+      "修復: 使用超級壁紙，鎖屏界面螢幕熄滅時偶現閃黑的問題",
+      "修復: 個別界面螢幕熄滅指紋解鎖時出現壁紙閃現的問題",
+      "修復: 在遊戲頁面時，指紋解鎖有概率螢幕出現雪花畫面的問題",
+      "修復: 指紋解鎖時，個別界面熄滅螢幕後快速指紋解鎖出現動畫不對問題",
+      "修復: 在插入SIM卡後有概率出現指紋和人臉功能失效問題",
+      "修復: 使用超級壁紙時，螢幕熄滅狀態下指紋解鎖進入個別界面閃黑問題",
+      "修復: 抬起喚醒螢幕功能失效的問題",
+      "修復: 個別界面人臉或是指紋解鎖時，解鎖過程中螢幕鎖定畫面訊息消失慢的問題",
+      "修復: 修復螢幕熄滅後立即進行指紋解鎖有概率閃黑問題",
+      "修復: 指紋解鎖之後一直顯示黑色畫面，只顯示狀態欄問題",
+      "修復: 螢幕鎖定使用第三方主題後，開啟超級壁紙功能，螢幕鎖定頁面時間資訊不顯示的問題",
+      "修復: 充電動畫顯示時有概率記憶體異常的問題",
+      "修復: 進入密碼輸入頁面，人臉與指紋同時檢測解鎖時有概率出現錯誤的問題"
+    ]
+  },
+  "logs_ja": {
+    "システム": [
+      "Androidのセキュリティパッチを2021年9月にアップデートしました。システムのセキュリティを強化しました。"
+    ],
+    "ロック画面": [
+      "新機能: 指紋認証の新しいオプション",
+      "最適化: デバイスがロックされているときのアプリ保管庫のメモリ使用量",
+      "修正: スーパー壁紙を使用するとロック後に画面が点滅する問題",
+      "修正: 指紋認証によるロック解除時に壁紙が点滅する場合がある問題",
+      "修正: ゲームで指紋認証を使用すると表示異常が発生する問題",
+      "修正: いくつかのシーンでの指紋アニメーションに関する問題",
+      "修正: SIMカードを挿入後、指紋認証と顔認証がオフになる問題",
+      "修正: スーパー壁紙を使用して指紋認証を行うと画面が点滅する場合がある問題",
+      "修正: ^持ち上げてスリープ解除^機能が予期せずオフになる場合がある問題",
+      "修正: 指紋認証や顔認証を使用したときに、ロック画面の通知が時間通りに消えないことがある問題",
+      "修正: 指紋認証によるロック解除時に画面が点滅する場合がある問題",
+      "修正: 指紋認証後の画面にステータスバー以外のアイテムが表示されない問題",
+      "修正: サードパーティ製のテーマやスーパー壁紙を使用した際のロック画面の時計に関する問題",
+      "修正: 充電アニメーション表示時のメモリ使用量の問題",
+      "修正: 顔認証と指紋認証を同時に使用するとクラッシュする場合がある問題"
+    ]
+  },
+  "logs_ko": {
+    "시스템": [
+      "Android 보안패치 (2021#09) 업데이트됨. 시스템 보안이 향상되었습니다."
+    ],
+    "잠금화면": [
+      "New: 새 지문 옵션",
+      "최적화: 기기가 잠겨 있을 시의 앱 서랍 메모리 점유",
+      "수정: 슈퍼 배경화면 사용 중에 잠금을 해제한 후 화면이 깜빡이는 문제",
+      "수정: 일부 상황에서 지문 잠금해제를 사용 시 배경화면이 깜빡이는 문제",
+      "수정: 게이밍 중 지문 잠금해제를 사용 시 화면에 오류가 발생하는 문제",
+      "수정: 여러 상황에서 발생하는 지문 애니메이션 오류 문제",
+      "수정: SIM 카드를 장착한 후 지문 잠금해제 및 안면 인식 잠금해제가 꺼지는 문제",
+      "수정: 슈퍼 배경화면에서 지문 잠금해제를 사용하는 중에 발생하는 화면이 깜빡이는 문제",
+      "수정: 일부 상황에서 ^손목 올려 켜기^가 갑자기 꺼지는 문제",
+      "수정: 일부 상황에서 지문 잠금해제 또는 안면 인식 잠금해제 사용 시 적시에 잠금화면 알림이 사라지지 않는 문제",
+      "수정: 일부 상황에서 지문 잠금해제를 사용 시 화면이 깜빡이는 문제",
+      "수정: 지문 잠금해제를 사용한 후 화면에 상태 바를 제외한 다른 항목이 표시되지 않는 문제",
+      "수정: 타사 테마 및 슈퍼 배경화면을 사용 중일 시 잠금화면 시계가 제대로 표시되지 않는 문제",
+      "수정: 충전 애니메이션 표시 시 메모리에 이상이 발생하는 문제",
+      "수정: 일부 상황에서 안면 인식 잠금해제와 지문 잠금해제를 동시에 사용 시 충돌이 발생하는 문제"
+    ]
+  },
+  "logs_ru": {
+    "Система": [
+      "Обновление системы безопасности Android (сентябрь 2021 года). Улучшена безопасность системы."
+    ],
+    "Экран блокировки": [
+      "Новое: Новый параметры для отпечатков пальцев",
+      "Оптимизация: Использование памяти Лентой виджетов, когда устройство заблокировано",
+      "Исправлено: При использовании Суперобоев после блокировки экран устройства мог мерцать",
+      "Исправлено: В некоторых случаях после разблокировки отпечатком пальца обои могли начать мерцать",
+      "Исправлено: При разблокировке отпечатком пальца в играх могли появляться визуальные артефакты",
+      "Исправлено: Неправильное отображение анимации отпечатка пальца",
+      "Исправлено: После установки SIM-карты могла отключаться разблокировка по лицу и отпечатком пальца",
+      "Исправлено: В некоторых случаях при использовании Суперобоев и разблокировки отпечатком пальца экран устройства мог мерцать",
+      "Исправлено: В некоторых случаях функция ^Поднять для активации^ могла отключаться",
+      "Исправлено: В некоторых случаях при использовании разблокировки по лицу или отпечатком пальца уведомления на экране блокировки не исчезали вовремя.",
+      "Исправлено: В некоторых случаях после разблокировки отпечатком пальца экран устройства мог начать мерцать",
+      "Исправлено: После разблокировки отпечатком пальца на экране могли отображаться только объекты строки состояния",
+      "Исправлено: Исправлены ошибки отображения виджета часов на экране блокировки при использовании суперобоев и сторонних тем",
+      "Исправлено: Использование памяти при отображении анимации зарядки",
+      "Исправлено: В редких случаях одновременное использование разблокировки по лицу и при помощи отпечатка пальца могло приводить к ошибкам"
+    ]
+  },
+  "logs_uk": {
+    "Система": [
+      "Оновлено патч безпеки Android за вересень 2021 року. Збільшено безпеку системи."
+    ],
+    "Екран блокування": [
+      "Нове: Нові параметри для відбитків пальців",
+      "Оптимізація: Використання пам^яті Стрічкою віджетів, коли пристрій заблоковано",
+      "Виправлено: Під час використання Супершпадкр екран пристрою міг мерехтіти після блокування",
+      "Виправлено: В деяких випадках після розблокування відбитком пальця шпалери могли мерехтіти",
+      "Виправлено: Під час розблокування відбитком пальця в іграх могли з’явитися візуальні артефакти",
+      "Виправлено: Неправильне відображення анімації відбитка пальця",
+      "Виправлено: Після встановлення SIM-карти могла відключатися функція розблокування за допомогою обличчя або відбитком пальця",
+      "Виправлено: В деяких випадках під час використання Супершпалер та розблокування за допомогою відбитка пальця екран пристрою міг мерехтіти",
+      "Виправлено: В деяких випадках функція ^Підняти для активації^ могла відключатися",
+      "Виправлено: В деяких випадках під час використання розблокування за допомогою обличчя або відбитком пальця сповіщення на екрані блокування не зникали",
+      "Виправлено: В деяких випадках після розблокування відбитком пальця екран міг мерехтіти",
+      "Виправлено: Під час розблокування відбитком пальця на екрані могли відображатися тільки об’єкти рядку стану",
+      "Виправлено: Виправлені помилки відображення віджета годинника на екрані блокування під час використання супершрплер та сторонніх тем",
+      "Виправлено: Використання пам^яті під час відображення анімації заряджання",
+      "Виправлено: У деяких випадках одночасне використання розблокування за допомогою обличчя і за допомогою відбитка пальця могло призводити до помилок"
+    ]
+  },
+  "logs_pl": {
+    "System": [
+      "Zaktualizowano Pakiet Bezpieczeństwa Android do września 2021 r. Zwiększono bezpieczeństwo systemu."
+    ],
+    "Ekran blokady": [
+      "Nowe: Nowe opcje odcisków palców",
+      "Zoptymalizowano: Wykorzystanie pamięci skarbca aplikacji, gdy urządzenie jest zablokowane",
+      "Naprawiono: Podczas używania Super tapet ekran błyskał po zablokowaniu",
+      "Naprawiono: W niektórych przypadkach przy odblokowywaniu odciskiem palca tapety błyskały",
+      "Naprawiono: Nieprawidłowości w wyświetlaniu pojawiały się przy oblokowywaniu za pomocą odcisku palca podczas grania",
+      "Naprawiono: Problemy z animacją odcisku palca w niektórych sytuacjach",
+      "Naprawiono: Odblokowywanie przy pomocy odcisku palca i rozpoznawania twarzy były wyłączane po włożeniu karty SIM",
+      "Naprawiono: W niektórych przypadkach podczas używania Super tapet, ekran błyskał przy odblokowywaniu za pomocą odcisku palca",
+      "Naprawiono: W niektórych przypadkach funkcja „Podnieś, by się obudzić” została niespodziewanie wyłączona",
+      "Naprawiono: W niektórych przypadkach powiadomienia na Ekranie blokady nie znikały podczas odblokowywania za pomocą odcisku palca lub przez rozpoznawanie twarzy",
+      "Naprawiono: W niektórych przypadkach ekran migał podczas odblokowywania za pomocą odcisku palca",
+      "Naprawiono: Po odblokowywaniu za pomocą odcisku palca wszystkie elementy, poza Paskiem statusu, nie wyświetlały się na ekranie",
+      "Naprawiono: Problemy z zegarem na ekranie blokady, gdy używane były motywy i super tapety innych firm",
+      "Naprawiono: Problemy z wykorzystaniem pamięci podczas wyświetlania animacji ładowania",
+      "Naprawiono: Jednoczesne używanie rozpoznawania twarzy i odblokowywania odciskiem palca w niektórych przypadkach powodowało awarie"
+    ]
+  },
+  "logs_de": {
+    "MIUI12.5 Enhanced": [
+      "Swift performance. More life between the charges.",
+      "Focused algorithms: Our new algorithms will dynamically allocate system resources based on specific scenes, ensuring smooth experience on all models.",
+      "Atomized memory: Ultra-fine memory management mechanism will make RAM usage more efficient.",
+      "Liquid storage: New sensitive storage mechanisms will keep your system vibrant and responsive as time goes by."
+    ],
+    "System": [
+      "Updated Android Security Patch to September 2021. Increased system security."
+    ],
+    "Lock screen": [
+      "New: New fingerprint options",
+      "Optimization: App vault memory usage when device is locked",
+      "Fix: Screen flashed after locking when Super wallpapers were used",
+      "Fix: Wallpapers flashed when Fingerprint unlock was used in some cases",
+      "Fix: Display abnormalities occurred when Fingerprint unlock was used with games",
+      "Fix: Issues with the fingerprint animation in several scenes",
+      "Fix: Fingerprint and Face unlock were turned off after a SIM card was installed",
+      "Fix: The screen flashed when Fingerprint unlock was used with Super wallpapers in some cases",
+      "Fix: ^Raise to wake^ turned off unexpectedly in some cases",
+      "Fix: Lock screen notifications didn^t disappear on time when Fingerprint or Face unlock was used in some cases",
+      "Fix: Screen flashed when Fingerprint unlock was used in some cases",
+      "Fix: No items except for the status bar were shown on the screen after using Fingerprint unlock",
+      "Fix: Issues with the Lock screen clock when third party themes and super wallpapers were used",
+      "Fix: Memory usage issues when charging animation was displayed",
+      "Fix: Using Face unlock and Fingerprint unlock simultaneously led to crashes in some cases"
+    ]
+  },
+  "logs_fr": {
+    "Système": [
+      "Patch de Sécurité Android mis à jour pour septembre 2021. Amélioration du système de sécurité."
+    ],
+    "Écran de verrouillage": [
+      "Nouveau: Nouvelles options d^empreintes digitales",
+      "Optimisation: Utilisation de la mémoire du coffre d^applications lorsque l^appareil est verrouillé",
+      "Réparé: L^écran a clignoté après le verrouillage lorsque les fonds d^écran Super ont été utilisés",
+      "Réparé: Les fonds d^écran clignotaient lorsque le déverrouillage par empreinte digitale était utilisé dans certains cas",
+      "Réparé: Des anomalies d^affichage se sont produites lorsque le déverrouillage par Empreinte digitale a été utilisé avec des jeux",
+      "Réparé: Problèmes avec l^animation des empreintes digitales dans plusieurs scènes",
+      "Réparé: Les empreintes digitales et le Déverrouillage facial ont été désactivés après l^installation d^une carte SIM",
+      "Réparé: L^écran a clignoté lorsque le déverrouillage par empreinte digitale était utilisé avec les fonds d^écran Super dans certains cas",
+      "Réparé: ^Lever pour activer^ désactivé de manière inattendue dans certains cas",
+      "Réparé: Les notifications de l^écran de verrouillage ne disparaissaient pas à temps lorsque le déverrouillage par empreinte digitale ou facial était utilisé dans certains cas",
+      "Réparé: L^écran clignotait lorsque le déverrouillage par empreinte digitale était utilisé dans certains cas",
+      "Réparé: Aucun élément, à l^exception de la barre d^état, n^était affiché à l^écran après avoir utilisé le déverrouillage par empreinte digitale",
+      "Réparé: Problèmes avec l^horloge de l^écran de verrouillage lorsque des thèmes tiers et des super fonds d^écran ont été utilisés",
+      "Réparé: Problèmes d^utilisation de la mémoire lors de l^affichage de l^animation de charge",
+      "Réparé: L^utilisation simultanée du déverrouillage du visage et du déverrouillage des empreintes digitales a entraîné des plantages dans certains cas"
+    ]
+  },
+  "logs_it": {
+    "Sistema": [
+      "Patch di sicurezza Android aggiornata a settembre 2021. Maggiore sicurezza del sistema."
+    ],
+    "Schermata di blocco": [
+      "Nuovo: Nuove opzioni per le impronte digitali",
+      "Ottimizzazione: Utilizzo della memoria dell^assistente app quando il dispositivo è bloccato",
+      "Risolto: Lo schermo lampeggiava dopo il blocco durante l^utilizzo dei Super sfondi",
+      "Risolto: Gli sfondi lampeggiavano durante l^utilizzo dello sblocco tramite impronta in alcuni casi",
+      "Risolto: Si verificavano anomalie di visualizzazione durante l^utilizzo dello sblocco tramite impronta con i giochi",
+      "Risolto: Problemi con l^animazione delle impronte digitali in diversi scenari",
+      "Risolto: L^impronta digitale e il riconoscimento facciale venivano disattivati dopo l^installazione di una scheda SIM",
+      "Risolto: Lo schermo lampeggiava durante l^utilizzo dello sblocco tramite impronta con i Super sfondi in alcuni casi",
+      "Risolto: ^Solleva per attivare^ veniva disattivato inaspettatamente in alcuni casi",
+      "Risolto: Le notifiche sulla schermata di blocco non scomparivano in tempo durante l^utilizzo dello sblocco tramite impronta o del riconoscimento facciale in alcuni casi",
+      "Risolto: Lo schermo lampeggiava durante l^utilizzo dello sblocco tramite impronta in alcuni casi",
+      "Risolto: Dopo lo sblocco tramite impronta non veniva mostrato nessun elemento sullo schermo tranne barra di stato",
+      "Risolto: Problemi con l^orologio della schermata di blocco durante l^utilizzo di temi di terze parti e super sfondi",
+      "Risolto: Problemi di utilizzo della memoria durante la visualizzazione dell^animazione di ricarica",
+      "Risolto: L^uso simultaneo di riconoscimento facciale e sblocco tramite impronta causava arresti anomali in alcuni casi"
+    ]
+  },
+  "logs_es": {
+    "Sistema": [
+      "Parche de seguridad de Android actualizado a septiembre de 2021. Seguridad del sistema incrementada."
+    ],
+    "Pantalla de bloqueo": [
+      "Nuevo: Nuevas opciones de huella dactilar",
+      "Optimización: Uso de la memoria de la Bóveda de aplicaciones cuando el dispositivo estaba bloqueado",
+      "Reparado: La pantalla parpadeaba después del bloqueo cuando se usaban los Superfondos de pantalla",
+      "Reparado: En algunos casos los fondos de pantalla parpadeaban cuando se usaba el Desbloqueo con huella dactilar",
+      "Reparado: Se producían anomalías en la pantalla cuando se utilizaba el Desbloqueo con huella dactilar con videojuegos",
+      "Reparado: Problemas con la animación de la huella dactilar en varias escenas",
+      "Reparado: La huella dactilar y el Desbloqueo facial se desactivaban después de instalar una tarjeta SIM",
+      "Reparado: En algunos casos la pantalla parpadeaba cuando se usaba el Desbloqueo con huella dactilar con los Superfondos de pantalla",
+      "Reparado: ^Levantar para activar^ se desactivaba inesperadamente en algunos casos",
+      "Reparado: En algunos casos las notificaciones de la Pantalla de bloqueo no desaparecían a tiempo cuando se usaba la huella dactilar o el Desbloqueo facial",
+      "Reparado: En algunos casos la pantalla parpadeaba cuando se usaba el Desbloqueo con huella dactilar",
+      "Reparado: No se mostraba ningún elemento en la pantalla excepto la barra de estado después de usar el Desbloqueo con huella dactilar",
+      "Reparado: Problemas con el reloj de la Pantalla de bloqueo cuando se utilizaban temas de terceros y superfondos de pantalla",
+      "Reparado: Problemas de uso de la memoria cuando se mostraba la animación de carga",
+      "Reparado: En algunos casos usar el desbloqueo facial y el desbloqueo con huella dactilar simultáneamente provocaba bloqueos"
+    ]
+  },
+  "logs_pt": {
+    "Sistema": [
+      "Patch de Segurança do Android atualizado para Setembro de 2021. Segurança do sistema aprimorada."
+    ],
+    "Tela de bloqueio": [
+      "Novo: Novas opções de impressão digital",
+      "Otimização: Uso de memória do App vault com o dispositivo bloqueado",
+      "Correção: A tela piscava após ser bloqueada quando os Super planos de fundo estavam em uso",
+      "Correção: Os planos de fundo piscavam quando o Desbloqueio por impressão digital era usado em alguns casos",
+      "Correção: Problemas de exibição ocorriam quando o Desbloqueio por impressão digital era usado em jogos",
+      "Correção: Problemas com a animação de impressão digital em vários cenários",
+      "Correção: Desbloqueio por impressão digital ou facial eram desativados após um cartão SIM ser instalado",
+      "Correção: A tela piscava quando o Desbloqueio por impressão digital era usado com os Super planos de fundo em alguns casos",
+      "Correção: ^Levantar para ligar a tela^ desativava inesperadamente em alguns casos",
+      "Correção: Notificações na Tela de bloqueio não desapareciam a tempo quando o Desbloqueio facial ou por impressão digital era usado em alguns casos",
+      "Correção: A tela piscava quando o Desbloqueio por impressão digital era usado em alguns casos",
+      "Correção: Nenhum item exceto pela barra de status eram exibidos na tela após usar o Desbloqueio por impressão digital",
+      "Correção: Problemas com o relógio da Tela de bloqueio quando temas de terceiros e super planos de fundo eram usados",
+      "Correção: Problema de uso de memória quando a animação de carregamento era exibida",
+      "Correção: Usar o desbloqueio facial e o desbloqueio por impressão digital simultaneamente causava travamentos em alguns casos"
+    ]
+  },
+  "logs_tr": {
+    "Sistem": [
+      "Android Güvenlik Patch^i Eylül 2021^de güncellendi. Sistem güvenliği arttırıldı."
+    ],
+    "Kilit ekranı": [
+      "Yeni: Yeni parmak izi seçenekleri",
+      "Optimizasyon: Cihaz kilitlendiğinde Uygulama kasası belleği kullanımı",
+      "Onarım: Süper duvar kağıtları kullanıldığında kilit açtıktan sonra ekran yanıp söndü",
+      "Onarım: Parmak izi ile kilit açma kullanıldığı bazı durumlarda duvar kağıtları yanıp söndü",
+      "Onarım: Parmak izi ile kilit açma, oyunlar ile kullanıldığında ekran anormallikleri oluştu",
+      "Onarım: Birkaç sahnedeki parmak izi animasyonu ile ilgili sorunlar",
+      "Onarım: SIM kart takıldıktan sonra Parmak izi ve Yüz ile kilit açma kapatıldı",
+      "Onarım: Parmak izi ile kilit açma, Süper duvar kağıtları ile kullanıldığı bazı durumlarda ekran yanıp söndü",
+      "Onarım: ^^Uyandırmak için kaldır^^ bazı durumlarda beklenmedik şekilde kapandı",
+      "Onarım: Parmak izi veya Yüz ile kilit açma kullanıldığı bazı durumlarda Kilit ekranı bildirimleri zamanında kaybolmadı",
+      "Onarım: Parmak izi ile kilit açma kullanıldığı bazı durumlarda ekran yanıp söndü",
+      "Onarım: Parmak izi ile kilit açma kullanıldıktan sonra ekranda durum çubuğundan başka öge gösterilmedi",
+      "Onarım: Üçüncü taraf temaları ve süper duvar kağıtları kullanıldığında Kilit ekranı saati ile ilgili sorunlar",
+      "Onarım: Şarj animasyonu görüntülendiğinde bellek kullanımı sorunları",
+      "Onarım: Yüz ile kilit açmayı ve Parmak izi ile kilit açmayı aynı anda kullanmak bazı durumlarda çökmelere yol açtı"
+    ]
+  },
+  "logs_id": {
+    "Sistem": [
+      "Patch Keamanan Android diperbarui (September 2021). Keamanan sistem ditingkatkan."
+    ],
+    "Layar kunci": [
+      "Baru: Pilihan penggunaan sidik jari baru",
+      "Pengoptimalan: Penggunaan memori App vault saat perangkat terkunci",
+      "Perbaikan: Layar berkedip setelah dikunci saat Wallpaper super digunakan",
+      "Perbaikan: Wallpaper berkedip saat Buka kunci dengan sidik jari digunakan dalam beberapa kasus",
+      "Perbaikan: Ada masalah dengan tampilan, saat Buka kunci dengan sidik jari digunakan di halaman permainan",
+      "Perbaikan: Masalah dengan animasi sidik jari di beberapa kondisi",
+      "Perbaikan: Buka kunci dengan sidik jari dan wajah dimatikan setelah kartu SIM dipasang",
+      "Perbaikan: Layar berkedip saat Buka kunci dengan sidik jari digunakan di Wallpaper super dalam beberapa kasus",
+      "Perbaikan: ^Angkat untuk bangunkan^ mati secara tidak terduga dalam beberapa kasus",
+      "Perbaikan: Notifikasi Layar kunci tidak hilang tepat waktu, saat Buka kunci dengan sidik jari atau wajah digunakan dalam beberapa kasus",
+      "Perbaikan: Layar berkedip saat Buka kunci dengan sidik jari digunakan dalam beberapa kasus",
+      "Perbaikan: Tidak ada item kecuali bilah status yang ditampilkan di layar setelah menggunakan Buka kunci dengan sidik jari",
+      "Perbaikan: Masalah dengan jam Layar Kunci saat tema pihak ketiga dan wallpaper super digunakan",
+      "Perbaikan: Masalah penggunaan memori saat animasi pengisian daya ditampilkan",
+      "Perbaikan: Menggunakan Buka kunci dengan wajah dan Buka kunci dengan sidik jari secara bersamaan menyebabkan layar tertutup tiba-tiba dalam beberapa kasus"
+    ]
+  },
+  "logs_vi": {
+    "Hệ thống": [
+      "Cập nhật Bản vá bảo mật Android đến tháng 9 năm 2021. Tăng cường bảo mật hệ thống."
+    ],
+    "Màn hình khóa": [
+      "Mới: Tùy chọn vân tay mới",
+      "Tối ưu: App vault chiếm dụng bộ nhớ khi thiết bị khóa",
+      "Sửa: Màn hình nhấp nháy sau khi khóa khi Siêu hình nền được sử dụng",
+      "Sửa: Hình nền nhấp nháy khi sử dụng Mở khóa vân tay trong một số trường hợp",
+      "Sửa: Màn hình bất thường khi sử dụng Mở khóa vân tay với trò chơi",
+      "Sửa: Vấn đề với hoạt ảnh vân tay trong một số trường hợp",
+      "Sửa: Mở khóa bằng vân tay và khuôn mặt bị tắt sau khi lắp thẻ SIM",
+      "Sửa: Màn hình nhấp nháy khi Mở khóa vân tay được sử dụng với Siêu hình nền trong một số trường hợp",
+      "Sửa: ^Nâng lên để đánh thức^ bị tắt đột ngột trong một số trường hợp",
+      "Sửa: Thông báo Màn hình khóa không biến mất khi Mở khóa bằng vân tay hoặc khuôn mặt được sử dụng trong một số trường hợp",
+      "Sửa: Màn hình nhấp nháy khi sử dụng Mở khóa vân tay trong một số trường hợp",
+      "Sửa: Không có mục nào ngoại trừ thanh trạng thái được hiển thị trên màn hình sau khi sử dụng Mở khóa vân tay",
+      "Sửa: Vấn đề đồng hồ Màn hình khóa khi chủ đề bên thứ ba và siêu hình nền được sử dụng",
+      "Sửa: Vấn đề sử dụng bộ nhớ khi hoạt ảnh được hiển thị",
+      "Sửa: Sử dụng Mở khóa bằng khuôn mặt và Mở khóa vân tay đồng thời dẫn đến sự cố trong một số trường hợp"
+    ]
+  },
+  "logs_th": {
+    "ระบบ": [
+      "อัปเดตแพทช์ความปลอดภัยของแอนดรอยด์เป็นกันยายน 2021 เพิ่มความปลอดภัยของระบบ"
+    ],
+    "ล็อคหน้าจอ": [
+      "ใหม่: ตัวเลือกลายนิ้วมือใหม่",
+      "การเพิ่มประสิทธิภาพ: การใช้หน่วยความจำ App vault เมื่ออุปกรณ์ถูกล็อค",
+      "แก้ไข: หน้าจอกะพริบหลังจากล็อคเมื่อใช้สุดยอดภาพพื้นหลัง",
+      "แก้ไข: ภาพพื้นหลังกะพริบเมื่อใช้การปลดล็อกด้วยลายนิ้วมือในบางกรณี",
+      "แก้ไข: แสดงความผิดปกติที่เกิดขึ้นเมื่อใช้การปลดล็อกด้วยลายนิ้วมือกับเกม",
+      "แก้ไข: ปัญหาเกี่ยวกับแอนิเมชั่นลายนิ้วมือในหลายฉาก",
+      "แก้ไข: ปลดล็อกด้วยลายนิ้วมือและใบหน้าถูกปิดหลังจากติดตั้งซิมการ์ด",
+      "แก้ไข: หน้าจอกะพริบเมื่อใช้การปลดล็อกด้วยลายนิ้วมือกับสุดยอดภาพพื้นหลังในบางกรณี",
+      "แก้ไข: ^ยกขึ้นเพื่อปลุก^ ถูกปิดโดยไม่คาดคิดในบางกรณี",
+      "แก้ไข: การแจ้งเตือนหน้าจอล็อกไม่หายไปตามเวลาเมื่อปลดล็อกด้วยลายนิ้วมือหรือใบหน้าในบางกรณี",
+      "แก้ไข: หน้าจอกะพริบเมื่อใช้การปลดล็อกด้วยลายนิ้วมือในบางกรณี",
+      "แก้ไข: ไม่มีรายการยกเว้นแถบสถานะปรากฏบนหน้าจอหลังจากใช้การปลดล็อกด้วยลายนิ้วมือ",
+      "แก้ไข: ปัญหาเกี่ยวกับนาฬิกาหน้าจอล็อกเมื่อใช้ธีมของบุคคลที่สามและสุดยอดภาพพื้นหลัง",
+      "แก้ไข: ปัญหาการใช้หน่วยความจำเมื่อแสดงภาพเคลื่อนไหวการชาร์จ",
+      "แก้ไข: การใช้การปลดล็อกด้วยใบหน้าและการปลดล็อกด้วยลายนิ้วมือพร้อมกันทำให้เกิดข้อขัดข้องในบางกรณี"
+    ]
+  },
+  "logs_ar": {
+    "النظام": [
+      "تم تحديث تصحيح أمان الأندرويد إلى سبتمبر 2021 لزيادة أمان النظام."
+    ],
+    "شاشة القفل": [
+      "الجديد: خيارات جديدة لبصمات الأصابع",
+      "التحسين: استخدام منصة التطبيقات للذاكرة عند قفل شاشة الجهاز",
+      "الإصلاح: وميض الشاشة بعد قفلها عند استخدام خلفيات سوبر",
+      "الإصلاح: مشكلة وميض خلفيات الشاشة عند استخدام فتح قفل الشاشة ببصمة الإصبع في بعض الحالات",
+      "الإصلاح: حدوث مشاكل غير طبيعية في العرض عند استخدام فتح قفل الشاشة ببصمة الإصبع مع الألعاب",
+      "الإصلاح: مشاكل حركة بصمة الإصبع في بعض المشاهد",
+      "الإصلاح: توقف ميزة بصمة الإصبع والتعرف على الوجه بعد إدخال بطاقة SIM",
+      "الإصلاح: مشكلة وميض الشاشة عند فتح قفل الشاشة عند استخدام خلفيات سوبر في بعض الأحيان",
+      "الإصلاح: مشكلة توقف ميزة ^رفع الجهاز لإيقاظه^ بشكل غير متوقع في بعض الحالات",
+      "الإصلاح: عدم ظهور إشعارات شاشة القفل في الوقت المحدد عند استخدام بصمة الإصبع أو التعرف على الوجه في بعض الحالات",
+      "الإصلاح: مشكلة وميض الشاشة عند استخدام فتح قفل الشاشة ببصمة الإصبع في بعض الحالات",
+      "الإصلاح: عدم ظهور أي عناصر على الشاشة على الشاشة باستثناء شريط الحالة بعد استخدام فتح قفل الشاشة ببصمة الإصبع",
+      "الإصلاح: مشاكل ساعة شاشة القفل عند استخدام ثيمات جهة خارجية وخلفيات سوبر",
+      "الإصلاح: مشاكل استخدام الذاكرة عند عرض الرسوم المتحركة للشحن",
+      "الإصلاح: مشكلة حدوث تعطل الجهاز احيانا عند استخدام ميزات التعرف على الوجه وإلغاء القفل ببصمة الإصبع في نفس الوقت"
+    ]
   }
 }

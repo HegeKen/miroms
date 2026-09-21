@@ -50,5 +50,395 @@
       "Fix: Fingerprint unlock didn^t work on Always-on display in some cases",
       "Removed: Lock screen and Always-on display issues in Second space"
     ]
+  },
+  "logs_zh_tw": {
+    "超級桌布": [
+      "修復: 超級桌面在深色模式下狀態列顏色異常的問題"
+    ],
+    "控制中心": [
+      "優化: 來電狀態下收起控制中心",
+      "優化: 首張卡片增加長按跳轉",
+      "修復: 第一次下拉控制中心後，亮度條無法使用的問題",
+      "修復: 舊版控制中心快捷開關順序異常的問題",
+      "修復: 切換SIM卡時偶現的錯誤問題",
+      "修復: 編輯模式下的無障礙功能不可用問題"
+    ],
+    "小米互傳": [
+      "新增: 將最近發送過檔案的裝置，在短時間內置頂顯示的功能"
+    ],
+    "萬象微光螢幕": [
+      "修復: 偶現螢幕熄滅界面顯示螢幕鎖定內容的問題"
+    ],
+    "系統": [
+      "更新Android安全性修補程式等級（2020#06），提升系統安全性"
+    ],
+    "鎖屏": [
+      "修復: 微光螢幕下偶發指紋無法使用的問題",
+      "移除: 切換至分身空間後，螢幕鎖定和熄滅螢幕重疊的問題"
+    ]
+  },
+  "logs_ja": {
+    "スーパー壁紙": [
+      "修正: ダークモードでステータスバーの色が正しく表示されない問題"
+    ],
+    "コントロールセンター": [
+      "最適化: 着信時にコントロールセンターが閉じられるようになりました",
+      "最適化: 長押しリダイレクションオプション",
+      "修正: コントロールセンターを初めて開いたときに、明るさ調整バーが使用できない問題",
+      "修正: 古いトグルパネルでトグルの順序が正しくない問題",
+      "修正: SIMカードの切り替えでアプリがクラッシュすることがある問題",
+      "修正: 編集モードでアクセシビリティ機能が利用できない問題"
+    ],
+    "常時オンディスプレイ": [
+      "修正: ロック画面のアイテムが常時オンディスプレイに表示される問題"
+    ],
+    "Mi シェア": [
+      "新機能: 最近接続したデバイスは、しばらくの間リストの一番上にピン留めされます"
+    ],
+    "システム": [
+      "Androidのセキュリティパッチを2020年6月にアップデートしました。システムのセキュリティを強化しました。"
+    ],
+    "ロック画面": [
+      "修正: 指紋でのロック解除が常時オンディスプレイで機能しないことがある問題",
+      "削除: セカンド・スペースでのロック画面と常時オンディスプレイの問題"
+    ]
+  },
+  "logs_ko": {
+    "고화질 배경화면": [
+      "수정: 다크 모드에서 상태 바 색상이 제대로 표시되지 않는 문제"
+    ],
+    "제어 센터": [
+      "최적화: 통화가 수신되면 제어 센터를 종료",
+      "최적화: 길게 눌러 리디렉션 옵션",
+      "수정: 처음 제어 센터 실행 시 밝기 바를 조절할 수 없는 현상",
+      "수정: 이전 토글 패널에 토글 순서가 올바르지 않은 문제",
+      "수정: SIM 카드 전환 시 일부 앱이 중단되는 현상",
+      "수정: 편집 모드에서 접근성 기능을 사용할 수 없는 문제"
+    ],
+    "Always On Display": [
+      "수정: 잠금화면 항목이 Alaways On Display에 표시되는 문제"
+    ],
+    "Mi Share": [
+      "New: 최근 연결한 장치가 목록 상단에 잠시 고정됩니다"
+    ],
+    "시스템": [
+      "Android 보안패치 (2020#06) 업데이트됨. 시스템 보안이 향상되었습니다."
+    ],
+    "잠금화면": [
+      "수정: 일부 Always On Display에서 지문 잠금해제가 제대로 작동하지 않는 문제",
+      "삭제: 보조 공간의 잠금화면 및 Alwats On Display 문제"
+    ]
+  },
+  "logs_ru": {
+    "Суперобои": [
+      "Исправлено: В темном режиме цвета строки состояния отображались неправильно"
+    ],
+    "Центр управления": [
+      "Оптимизация: Теперь Центр управления закрывается при получении входящих вызовов",
+      "Оптимизация: Долгое нажатие для быстрого перехода",
+      "Исправлено: Ползунок регулировки яркости не мог быть использован при открытии Центра управления в первый раз",
+      "Исправлено: Порядок отображения переключателей неправильно отображался  на старой панели переключателей",
+      "Исправлено: При смене SIM-карты приложение могло работать неправильно",
+      "Исправлено: Специальные возможности были недоступны в режиме редактирования"
+    ],
+    "Активный экран": [
+      "Исправлено: Объекты экрана блокировки отображались на Активном экране"
+    ],
+    "Mi Share": [
+      "Новое: Недавно подключенные устройства будут некоторое время отображаться в начале списка"
+    ],
+    "Система": [
+      "Обновление системы безопасности Android (июнь 2020 года). Улучшена безопасность системы."
+    ],
+    "Экран блокировки": [
+      "Исправлено: В некоторых случаях не удавалось разблокировать устройство при помощи отпечатка пальца с Активного экрана",
+      "Удалено: Проблемы с экраном блокировки и Активным экраном во втором пространстве"
+    ]
+  },
+  "logs_uk": {
+    "Супершпалери": [
+      "Виправлено: Кольори рядка стану відображалася неправильно у Темному режимі"
+    ],
+    "Центр керування": [
+      "Оптимізація: Центр управління тепер закривається під час вхідних викликів",
+      "Оптимізація: Натисніть та утримуйте для перенаправлення варіантів",
+      "Виправлено: Панель регулювання яскравості була недоступна при першому відкритті Центру управління",
+      "Виправлено: У більш ранній версії панелі перемикачів їх порядок був неправильним",
+      "Виправлено: У деяких випадках зміна SIM-карти призводила до збою програми",
+      "Виправлено: Спеціальні можливості були недоступні в режимі редагування"
+    ],
+    "Завжди активний екран": [
+      "Виправлено: Об’єкти екрану блокування відображалися на Активному екрані"
+    ],
+    "Mi Share": [
+      "Нове: Нещодавно підключені пристрої будуть тимчасово закріплені на початку списку"
+    ],
+    "Система": [
+      "Оновлено патч безпеки Android за червень 2020 року. Збільшено безпеку системи."
+    ],
+    "Екран блокування": [
+      "Виправлено: Функція розблокування відбитком пальця не працювала у деяких випадках у режимі Активного екрану",
+      "Видалено: Проблеми з блокуванням екрану і Активним екраном в Другому просторі"
+    ]
+  },
+  "logs_pl": {
+    "Super tapety": [
+      "Naprawiono: Kolory paska statusu nie były poprawnie wyświetlane w trybie ciemnym"
+    ],
+    "Centrum kontroli": [
+      "Zoptymalizowano: Centrum kontroli jest teraz zablokowane przez połączenie przychodzące",
+      "Zoptymalizowano: Naciśnij i przytrzymaj opcje przekierowania",
+      "Naprawiono: Pasek regulacji jasności nie mógł być używany przy pierwszym otwarciu Centrum kontroli",
+      "Naprawiono: Kolejność przełączników nie była prawidłowa na starym panelu",
+      "Naprawiono: Przełączanie kart SIM w niektórych przypadkach powodowało awarię aplikacji",
+      "Naprawiono: Funkcje ułatwień dostępu nie były dostępne w trybie edycji"
+    ],
+    "Ekran zawsze włączony": [
+      "Naprawiono: Elementy ekranu blokady były wyświetlane na Ekranie zawsze włączonym"
+    ],
+    "Mi Share": [
+      "Nowe: Ostatnio podłączone urządzenia zostaną na krótko przypięte na górze listy"
+    ],
+    "System": [
+      "Zaktualizowano Pakiet Bezpieczeństwa Android do czerwca 2020 r. Zwiększono bezpieczeństwo systemu."
+    ],
+    "Ekran blokady": [
+      "Naprawiono: W niektórych przypadkach odblokowywanie za pomocą odcisku palca nie działało w trybie Ekran zawsze włączony",
+      "Usunięto: Problemy z Ekranem blokady i Ekranem zawsze włączonym w Drugiej przestrzeni"
+    ]
+  },
+  "logs_fr": {
+    "Super fonds d'écran": [
+      "Réparé: Les couleurs de la barre d^état ne s^affichaient pas correctement dans le Mode sombre"
+    ],
+    "Centre de contrôle": [
+      "Optimisation: Le centre de contrôle est à présent fermé pour les appels entrants",
+      "Optimisation: Appuyez et maintenez les options de redirection",
+      "Réparé: L^ajustement de la barre de luminosité ne pouvait pas être utilisée quand le Centre de contrôle à été ouvert pour la première fois",
+      "Réparé: L^ordre de basculement n^était pas correct sur l^ancien panneau de basculement",
+      "Réparé: Changer les cartes SIM à écrasé l^application da^s certains cas",
+      "Réparé: Accès des fonctionnalités qui n^étaient pas disponibles dans le mode de correction"
+    ],
+    "Toujours afficher": [
+      "Réparé: Les éléments de l^écran de verrouillage étaient affichés sur l^écran Toujours Afficher"
+    ],
+    "Mi Share": [
+      "Nouveau: Connectés récemment aux appareils seront mis en tête de liste pendant un petit moment"
+    ],
+    "Système": [
+      "Patch de Sécurité Android mis à jour pour juin 2020. Amélioration du système de sécurité."
+    ],
+    "Écran de verrouillage": [
+      "Réparé: Le déverrouillage avec empreinte digitale ne fonctionnait pas pour Toujours Afficher dans certains cas",
+      "Retiré: Verrouiller l^écran et Toujours Afficher les problèmes du second espace"
+    ]
+  },
+  "logs_it": {
+    "Super sfondi": [
+      "Risolto: I colori della barra di stato non erano visualizzati correttamente in modalità Scura"
+    ],
+    "Centro di controllo": [
+      "Ottimizzazione: Il Centro di controllo viene ora chiuso dalle chiamate in arrivo",
+      "Ottimizzazione: Tieni premute le opzioni di reindirizzamento",
+      "Risolto: La barra di regolazione della luminosità non poteva essere utilizzata quando si apriva Centro di controllo per la prima volta",
+      "Risolto: L^ordine dei comandi non era corretto sul vecchio pannello dei comandi",
+      "Risolto: In alcuni casi, il cambio di scheda SIM provocava l^arresto anomalo dell^app",
+      "Risolto: Le funzioni di accessibilità non erano disponibili in modalità di modifica"
+    ],
+    "Always-on display": [
+      "Risolto: Gli elementi della schermata di blocco erano visualizzati sull^Always-on display"
+    ],
+    "Mi Share": [
+      "Nuovo: I dispositivi connessi di recente verranno bloccati in cima all^elenco per un breve periodo"
+    ],
+    "Sistema": [
+      "Patch di sicurezza Android aggiornata a giugno 2020. Maggiore sicurezza del sistema."
+    ],
+    "Schermata di blocco": [
+      "Risolto: Lo sblocco con impronta digitale in alcuni casi non funzionata su Always-on display",
+      "Eliminato: Problemi di schermata di blocco e Always-on display in Secondo spazio"
+    ]
+  },
+  "logs_es": {
+    "Superfondos de pantalla": [
+      "Reparado: Los colores de la barra de estado no se mostraban correctamente en el Modo oscuro"
+    ],
+    "Centro de control": [
+      "Optimización: El Centro de control ahora es cerrado por las llamadas entrantes",
+      "Optimización: Mantén pulsadas las opciones de redirección",
+      "Reparado: La barra de ajuste del brillo no podía ser usada cuando se abría el Centro de control por primera vez",
+      "Reparado: El orden de los interruptores no era correcto en el antiguo panel de interruptores",
+      "Reparado: Cambiar entre tarjetas SIM bloqueaba la aplicación en algunos casos",
+      "Reparado: Las funciones de accesibilidad no estaban disponibles en el modo de edición"
+    ],
+    "Pantalla siempre activa": [
+      "Reparado: Los elementos de la Pantalla de bloqueo se muestran en la Pantalla siempre activa"
+    ],
+    "Mi Share": [
+      "Nuevo: Los dispositivos conectados recientemente serán anclados en la parte superior de la lista durante un corto periodo de tiempo"
+    ],
+    "Sistema": [
+      "Parche de seguridad de Android actualizado a junio de 2020. Seguridad del sistema incrementada."
+    ],
+    "Pantalla de bloqueo": [
+      "Reparado: El desbloqueo con huella dactilar no funcionaba en la Pantalla siempre activa en algunos casos",
+      "Eliminado: Problemas en la Pantalla de bloqueo y Pantalla siempre activa en el Segundo espacio"
+    ]
+  },
+  "logs_pt": {
+    "Super planos de fundo": [
+      "Correção: As cores da Barra de status não eram exibidas corretamente no Modo Escuro"
+    ],
+    "Centro de controle": [
+      "Otimização: O Centro de controle agora é fechado por chamadas recebidas",
+      "Otimização: Opções de redirecionamento para pressionar e segurar",
+      "Correção: A barra de ajuste de brilho não podia ser usada quando o Centro de controle era aberto pela primeira vez",
+      "Correção: A ordem dos seletores não estava correta no antigo painel",
+      "Correção: Trocar cartões SIM causava erros no app em alguns casos",
+      "Correção: Recursos de acessibilidade não estavam disponíveis no modo de edição"
+    ],
+    "Tela sempre ativa": [
+      "Correção: Itens da Tela de bloqueio eram exibidos na Tela sempre ativa"
+    ],
+    "Compartilhamento Mi": [
+      "Novo: Os dispositivos conectados recentemente serão fixados no topo da lista por um curto período de tempo"
+    ],
+    "Sistema": [
+      "Patch de Segurança do Android atualizado para Junho de 2020. Segurança do sistema aprimorada."
+    ],
+    "Tela de bloqueio": [
+      "Correção: O desbloqueio por impressão digital não funcionava para a Tela sempre ativa em alguns casos",
+      "Removido: Problemas com a Tela de bloqueio e Tela sempre ativa no Segundo Espaço"
+    ]
+  },
+  "logs_tr": {
+    "Süper duvar kağıtları": [
+      "Onarım: Durum çubuğu renkleri Karanlık modda düzgün bir şekilde görüntülenmedi"
+    ],
+    "Kontrol merkezi": [
+      "Optimizasyon: Kontrol merkezi şimdi gelen aramalarla kapatıldı",
+      "Optimizasyon: Yönlendirme seçeneklerine basılı tutun",
+      "Onarım: Parlaklık ayarlama çubuğu, Kontrol merkezi ilk kez açıldığında kullanılamadı",
+      "Onarım: Geçiş düzeni eski geçiş panelinde doğru değildi",
+      "Onarım: SIM kartları değiştirmek bazı durumlarda uygulamayı kilitledi",
+      "Onarım: Erişilebilirlik özellikleri düzenleme modunda kullanılamıyordu"
+    ],
+    "Daima açık ekran": [
+      "Onarım: Kilit ekranı ögeleri Daima açık ekranda gösterildi"
+    ],
+    "Mi Paylaşım": [
+      "Yeni: Son bağlanan cihazlar kısa bir süre için listenin başına iğnelenecektir"
+    ],
+    "Sistem": [
+      "Android Güvenlik Patch^i Haziran 2020^de güncellendi. Sistem güvenliği arttırıldı."
+    ],
+    "Kilit ekranı": [
+      "Onarım: Parmak izi ile kilit açma bazı durumlarda Daima açık ekranda çalışmadı",
+      "Temizlendi: İkinci alanda Kilit ekranı ve Daima açık ekran sorunları"
+    ]
+  },
+  "logs_id": {
+    "Wallpaper super": [
+      "Perbaikan: Warna bilah status tidak ditampilkan dengan benar dalam mode Gelap"
+    ],
+    "Pusat kontrol": [
+      "Pengoptimalan: Pusat kontrol akan ditutup saat ada panggilan masuk",
+      "Pengoptimalan: Tekan dan tahan opsi pengalihan",
+      "Perbaikan: Bilah penyesuaian kecerahan tidak dapat digunakan saat Pusat kontrol dibuka untuk pertama kalinya",
+      "Perbaikan: Urutan toggle di panel toggle yang lama tidak benar",
+      "Perbaikan: Pergantian kartu SIM menyebabkan aplikasi tertutup paksa di beberapa kasus",
+      "Perbaikan: Fitur aksesbilitas tidak tersedia di mode pengubahan"
+    ],
+    "Tampilan selalu aktif (AOD)": [
+      "Perbaikan: Item Layar kunci ditampilkan di Tampilan selalu aktif (AOD)"
+    ],
+    "Mi Share": [
+      "Baru: Perangkat yang baru saja terhubung akan disematkan di atas daftar untuk waktu yang singkat"
+    ],
+    "Sistem": [
+      "Patch Keamanan Android diperbarui (Juni 2020). Keamanan sistem ditingkatkan."
+    ],
+    "Layar kunci": [
+      "Perbaikan: Buka kunci dengan sidik jari tidak berfungsi pada Tampilan selalu aktif (AOD) dalam beberapa kasus",
+      "Dihilangkan: Masalah dengan Layar kunci dan Tampilan selalu aktif (AOD) di Ruang kedua"
+    ]
+  },
+  "logs_vi": {
+    "Siêu hình nền": [
+      "Sửa: Màu của thanh trạng thái không hiển thị chính xác trên Chế độ nền tối"
+    ],
+    "Trung tâm điều khiển": [
+      "Tối ưu: Trung tâm điều khiển hiện đang đóng bởi các cuộc gọi đến",
+      "Tối ưu: Bấm và giữ các tùy chọn chuyển hướng",
+      "Sửa: Không thể sử dụng thanh điều chỉnh độ sáng khi Trung tâm điều khiển được mở lần đầu tiên",
+      "Sửa: Thứ tự phím nhanh không chính xác trên thanh phím nhanh cũ",
+      "Sửa: Chuyển đổi thẻ SIM làm crash ứng dụng trong một số trường hợp",
+      "Sửa: Các tính năng truy cập không khả dụng trong chế độ chỉnh sửa"
+    ],
+    "Always-on display": [
+      "Sửa: Mục màn hình khóa hiển thị trên Always-on display"
+    ],
+    "Mi Share": [
+      "Mới: Thiết bị được kết nối gần đây sẽ được ghim trên đầu danh sách trong một thời gian ngắn"
+    ],
+    "Hệ thống": [
+      "Cập nhật Bản vá bảo mật Android đến tháng 6 năm 2020. Tăng cường bảo mật hệ thống."
+    ],
+    "Màn hình khóa": [
+      "Sửa: Mở khóa vân tay không hoạt động trên Always-on display trong một số trường hợp",
+      "Đã xóa: Các vấn đề về Màn hình khóa và Always-on display trong Không gian thứ hai"
+    ]
+  },
+  "logs_th": {
+    "สุดยอดภาพพื้นหลัง": [
+      "แก้ไข: สีของแถบสถานะแสดงไม่ถูกต้องในโหมดมืด"
+    ],
+    "ศูนย์กลางการควบคุม": [
+      "การเพิ่มประสิทธิภาพ: ตอนนี้ศูนย์ควบคุมถูกปิดโดยสายเรียกเข้า",
+      "การเพิ่มประสิทธิภาพ: กดตัวเลือกการเปลี่ยนเส้นทางค้างไว้",
+      "แก้ไข: แถบการปรับความสว่างไม่สามารถใช้งานได้เมื่อเปิดศูนย์ควบคุมเป็นครั้งแรก",
+      "แก้ไข: ลำดับปุ่มเปิดปิดไม่ถูกต้องบนแผงปุ่มเปิดปิดเก่า",
+      "แก้ไข: การสลับซิมการ์ดทำให้แอปขัดข้องในบางกรณี",
+      "แก้ไข: คุณลักษณะการเข้าถึงไม่สามารถใช้ได้ในโหมดแก้ไข"
+    ],
+    "จอแสดงผลแบบตลอดเวลา": [
+      "แก้ไข: รายการหน้าจอล็อคถูกแสดงบนหน้าจอแสดงผลแบบเปิดตลอด"
+    ],
+    "Mi แชร์": [
+      "ใหม่: อุปกรณ์ที่เชื่อมต่อล่าสุดจะถูกตรึงที่ด้านบนของรายการเป็นเวลาสั้นๆ"
+    ],
+    "ระบบ": [
+      "อัปเดตแพทช์ความปลอดภัยของแอนดรอยด์เป็นมิถุนายน 2020 เพิ่มความปลอดภัยของระบบ"
+    ],
+    "ล็อคหน้าจอ": [
+      "แก้ไข: การปลดล็อกลายนิ้วมือไม่ทำงานบนหน้าจอแสดงผลแบบเปิดตลอดในบางกรณี",
+      "ลบออก: ปัญหาหน้าล็อคและจอแสดงผลแบบเปิดตลอดในพื้นที่ทับซ้อน"
+    ]
+  },
+  "logs_ar": {
+    "خلفيات سوبر": [
+      ":الإصلاح مشكله عدم عرض لون شريط الحالة بشكل صحيح في الوضع الداكن"
+    ],
+    "مركز التحكم": [
+      ":التحسين يمكن الآن إغلاق مركز التحكم عند تلقي المكالمات الواردة",
+      ":التحسين الضغط باستمرار على خيارات إعادة التوجية",
+      ":الإصلاح شريط تمرير السطوع لا يعمل عند فتح مركز التحكم للمرة الأولى",
+      ":الإصلاح لم يكن ترتيب عناصر التحكم صحيحًا في لوحة التبديل القديمة",
+      ":الإصلاح توقف استجابة التطبيق عند تبديل بطاقات SIM في بعض الحالات",
+      ":الإصلاح لم تتوفر ميزات الوصول في وضع التعديل"
+    ],
+    "الشاشة الدائمة": [
+      ":الإصلاح عناصر شاشة القفل تظهر على الشاشة الدائمة"
+    ],
+    "Mi Share": [
+      ":الجديد إضافة ميزة تثبيت الأجهزة المتصلة مؤخرا بأعلى القائمة لفترة من الوقت"
+    ],
+    "النظام": [
+      "تم تحديث تصحيح أمان الأندرويد إلى يونيو 2020 لزيادة أمان النظام."
+    ],
+    "شاشة القفل": [
+      ":الإصلاح فتح القفل ببصمة الاصبع لا يعمل على الشاشة الدائمة في بعض الأحيان",
+      ":المزالة مشاكل قفل الشاشة والشاشة الدائمة في الواجهة الثانية"
+    ]
   }
 }
