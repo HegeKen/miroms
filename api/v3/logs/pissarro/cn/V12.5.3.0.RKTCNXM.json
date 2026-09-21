@@ -41,5 +41,272 @@
       "Fix: Notifications weren^t always displayed correctly when ^Raise to wake^ was used",
       "Fix: Buttons weren^t always displayed correctly on the notifications when Dark mode was on"
     ]
+  },
+  "logs_zh_tw": {
+    "系統": [
+      "優化: 某些場景時的充電速度"
+    ],
+    "鎖屏": [
+      "修復: 使用主題後開啟超級壁紙，螢幕鎖定頁面內容不顯示的偶發問題",
+      "修復: 指紋解鎖時偶現閃黑條的問題"
+    ],
+    "狀態欄、通知欄": [
+      "優化: 通知中心與第三方主題的相容性",
+      "優化: 通知提醒與深色模式的相容",
+      "修復: 應用鎖導致通知大小背景不一致的異常",
+      "修復: 螢幕鎖定時無法下拉通知欄的問題",
+      "修復: 分身空間導致的懸浮通知異常閃爍問題",
+      "修復: 播放音樂時，通知欄偶發不顯示媒體控制面板的異常",
+      "修復: 懸浮通知圓角缺失的異常",
+      "修復: 第三方主題下收到懸浮通知時，偶現背景異常的問題",
+      "修復: 抬起螢幕亮起時偶現鎖定螢幕通知閃動的異常",
+      "修復: 深色模式下，通知按鈕偶發顯示異常的問題"
+    ]
+  },
+  "logs_ja": {
+    "ロック画面": [
+      "修正: スーパー壁紙とテーマを組み合わせたときにロック画面のアイテムが表示されない問題",
+      "修正: 指紋認証を使用すると点滅した黒い線が出現する問題"
+    ],
+    "ステータスバー、通知シェード": [
+      "最適化: 通知シェードのサードパーティ製テーマへの対応",
+      "最適化: 通知のダークモード調整",
+      "修正: アプリロックを使用時に通知が正しく表示されない問題",
+      "修正: 通知シェードが開けない場合がある問題",
+      "修正: セカンド・スペースの使用時にフローティング通知が点滅する問題",
+      "修正: プレイヤーのコントロールが通知シェードに表示されないことがある問題",
+      "修正: 通知バッジが表示されないことがある問題",
+      "修正: サードパーティ製のテーマを使用している際に、通知を受信すると背景が正しく表示されない問題",
+      "修正: ^持ち上げてスリープ解除^実行時に通知が正しく表示されない場合がある問題",
+      "修正: ダークモードがオンの場合、通知にボタンが正しく表示されないことがある問題"
+    ]
+  },
+  "logs_ko": {
+    "잠금화면": [
+      "수정: 테마를 사용 중에 슈퍼 배경화면을 실행 시 잠금화면 항목이 제대로 표시되지 않는 문제",
+      "수정: 지문 잠금해제를 사용한 후 깜빡이는 검은 선이 나타나는 문제"
+    ],
+    "상태 바, 알림 바": [
+      "최적화: 알림 바와 타사 테마의 호환성",
+      "최적화: 알림을 위한 다크 모드 조정",
+      "수정: 앱 잠금을 사용 중일 시 알림이 제대로 표시되지 않는 문제",
+      "수정: 일부 상황에서 알림 바가 열리지 않는 문제",
+      "수정: 보조 공간 사용 시 플로팅 창이 점멸하는 문제",
+      "수정: 플레이어의 컨트롤이 알림바에 표시되지 않을 수있는 문제",
+      "수정: 알림 배지가 표시되지 않는 문제",
+      "수정: 타사 테마 사용 중에 알림 수신 시 배경이 제대로 표시되지 않는 문제",
+      "수정: ^손목 올려 켜기^ 사용 시에 알림이 제대로 표시되지 않는 문제",
+      "수정: 다크 모드가 켜져있는 경우 알림에 버튼이 제대로 표시되지 않는 문제"
+    ]
+  },
+  "logs_ru": {
+    "Экран блокировки": [
+      "Исправлено: При комбинировании суперобоев и тем некоторые объекты могли не отображаться на экране блокировки",
+      "Исправлено: После разблокировки отпечатком пальца на экране могла появляться черная мерцающая полоса"
+    ],
+    "Строка состояния, шторка уведомлений": [
+      "Оптимизация: Совместимость сторонних тем со шторкой уведомлений",
+      "Оптимизация: Оптимизация отображения уведомлений в темном режиме",
+      "Исправлено: При использовании защиты приложений уведомления могли отображаться неправильно",
+      "Исправлено: В некоторых случаях шторка уведомлений могла не открываться",
+      "Исправлено: При использовании второго пространства всплывающие уведомления могли мерцать",
+      "Исправлено: Виджет управления воспроизведением музыки мог не отображаться в шторке уведомлений",
+      "Исправлено: В некоторых случаях могли не появляться метки уведомлений",
+      "Исправлено: Фон отображался неправильно при получении уведомлений и использовании сторонних тем",
+      "Исправлено: При использовании функции ^Поднять для активации^ уведомления могли отображаться неправильно",
+      "Исправлено: При активации темного режима некоторые кнопки на уведомлениях могли не отображаться"
+    ]
+  },
+  "logs_uk": {
+    "Екран блокування": [
+      "Виправлено: Під час комбінування супершпалер та тем деякі об^єкти могли не відборажатися на екрані блокування",
+      "Виправлено: Після розблокування відбитком пальця на екрані могла з^являтися чорна полоса, яка мерехтить"
+    ],
+    "Рядок стану, Панель сповіщень": [
+      "Оптимізація: Сумісність сторонніх тем із панеллю сповіщень",
+      "Оптимізація: Оптимізація відображення сповіщень у темному режимі",
+      "Виправлено: Під час використання захисту програм сповіщення могли відображатися неправильно",
+      "Виправлено: В деяких випадках панель сповіщень могла не відкриватися",
+      "Виправлено: Під час використання Другого простору спливаючи сповіщення могли мерехтіти",
+      "Виправлено: Віджет керування відтворенням музиик міг не відображатися у панелі сповіщень",
+      "Виправлено: В деяких випадках могли не відображатися мітки сповіщень на значку програм",
+      "Виправлено: Фон відображався неправильно під час отримання сповіщень та використання сторонніх тем",
+      "Виправлено: Під час використання функції ^Підняти для активації^ сповіщення могли відображатися неправильно",
+      "Виправлено: Під час активації темного режиму деякі кнопки на сповіщеннях могли не відображатися"
+    ]
+  },
+  "logs_pl": {
+    "Ekran blokady": [
+      "Naprawiono: Elementy Ekranu blokady nie były wyświetlane kiedy super tapety i motywy były połączone",
+      "Naprawiono: Czarna migająca linia pojawiała się po odblokowywaniu odciskiem palca"
+    ],
+    "Pasek powiadomień, Panel powiadomień": [
+      "Zoptymalizowano: Kompatybilność motywów stron trzecich dla odcienia powiadomień",
+      "Zoptymalizowano: Dostosowanie Trybu ciemnego do powiadomień",
+      "Naprawiono: Powiadomienia nie były wyświetlane poprawnie po użyciu blokady aplikacji",
+      "Naprawiono: W niektórych przypadkach nie można było otworzyć obszaru powiadomień",
+      "Naprawiono: Pływające powiadomienia migały podczas używania Drugiej przestrzeni",
+      "Naprawiono: Kontrolki odtwarzacza nie zawsze były wyświetlane w Panelu powiadomień",
+      "Naprawiono: Symbole powiadomień nie zawsze się pojawiały",
+      "Naprawiono: Gdy używano motywów firm zewnętrznych, tło nie było wyświetlane poprawnie podczas otrzymywania powiadomień",
+      "Naprawiono: Powiadomienia nie zawsze były wyświetlane poprawnie, gdy użyto opcji „Podnieś, aby się obudzić”",
+      "Naprawiono: Przyciski w Powiadomieniach nie zawsze były wyświetlane poprawnie w Trybie ciemnym"
+    ]
+  },
+  "logs_de": {
+    "Other": [
+      "Optimized system performance",
+      "Improved system security and stability"
+    ]
+  },
+  "logs_fr": {
+    "Écran de verrouillage": [
+      "Réparé: Les éléments de l^écran de verrouillage ne s^affichaient pas lorsque les super fonds d^écran et les thèmes étaient combinés",
+      "Réparé: Une ligne noire clignotante est apparue lorsque le déverrouillage par empreinte digitale a été utilisé"
+    ],
+    "Barre d'état, Panneau de notification": [
+      "Optimisation: Compatibilité des thèmes tiers pour le panneau de notification",
+      "Optimisation: Réglages du mode sombre pour les notifications",
+      "Réparé: Les notifications ne s^affichaient pas correctement lorsque le verrouillage de l^application était utilisé",
+      "Réparé: Le volet de notification n^a pas pu être ouvert dans certains cas",
+      "Réparé: Les notifications flottantes ont clignoté lorsque le deuxième espace a été utilisé",
+      "Réparé: Les commandes du lecteur n^étaient pas toujours affichées dans le Panneau de notification",
+      "Réparé: Les badges de notification n^apparaissaient pas toujours",
+      "Réparé: Les arrière-plans ne s^affichaient pas correctement lorsque les notifications arrivaient et que des thèmes tiers étaient utilisés",
+      "Réparé: Les notifications ne s^affichaient pas toujours correctement lorsque ^Lever pour activer^ était utilisé",
+      "Réparé: Les boutons ne s^affichaient pas toujours correctement sur les notifications lorsque le mode sombre était activé"
+    ]
+  },
+  "logs_it": {
+    "Schermata di blocco": [
+      "Risolto: Gli elementi della schermata di blocco non venivano visualizzati quando si combinavano super sfondi e temi",
+      "Risolto: Durante l^utilizzato dello sblocco tramite impronta appariva una linea nera lampeggiante"
+    ],
+    "Barra di stato, Area delle notifiche": [
+      "Ottimizzazione: Compatibilità dei temi di terze parti per l^area delle notifiche",
+      "Ottimizzazione: Miglioramenti della modalità scura per le notifiche",
+      "Risolto: Le notifiche non venivano visualizzate correttamente quando veniva utilizzato il blocco app",
+      "Risolto: Non era possibile aprire l^area delle notifiche in alcuni casi",
+      "Risolto: Le notifiche a comparsa lampeggiavano durante l^utilizzo di Secondo spazio",
+      "Risolto: I controlli del giocatore non venivano sempre visualizzati nell^area delle notifiche",
+      "Risolto: I badge di notifica non apparivano sempre",
+      "Risolto: Gli sfondi non venivano visualizzati correttamente durante la ricezione di notifiche e l^utilizzo di temi di terze parti",
+      "Risolto: Le notifiche non venivano sempre visualizzate correttamente durante l^utilizzo di ^Solleva per attivare^",
+      "Risolto: I pulsanti non venivano sempre visualizzati correttamente nelle notifiche con la modalità scura attiva"
+    ]
+  },
+  "logs_es": {
+    "Pantalla de bloqueo": [
+      "Reparado: Los elementos de la Pantalla de bloqueo no se mostraban cuando se combinaban los superfondos de pantalla y temas",
+      "Reparado: Aparecía una línea negra parpadeante cuando se usaba el Desbloqueo con huella dactilar"
+    ],
+    "Barra de estado, Barra de notificaciones": [
+      "Optimización: Compatibilidad de temas de terceros para la Barra de notificaciones",
+      "Optimización: Ajustes del Modo oscuro para notificaciones",
+      "Reparado: Las notificaciones no se mostraban correctamente cuando se usaba el Bloqueo de aplicaciones",
+      "Reparado: La barra de notificaciones no se podía abrir en algunos casos",
+      "Reparado: Las notificaciones flotantes parpadeaban cuando se usaba el Segundo espacio",
+      "Reparado: Los controles del reproductor no siempre se mostraban en la Barra de notificaciones",
+      "Reparado: Los iconos de notificaciones no siempre aparecían",
+      "Reparado: Los fondos no se mostraban correctamente cuando llegaban las notificaciones y se usaban temas de terceros",
+      "Reparado: Las notificaciones no siempre se mostraban correctamente cuando se usaba ^Levantar para activar^",
+      "Reparado: Los botones no siempre se mostraban correctamente en las notificaciones cuando el Modo oscuro estaba activado"
+    ]
+  },
+  "logs_pt": {
+    "Tela de bloqueio": [
+      "Correção: Os itens da Tela de bloqueio não eram exibidos quando super planos de fundo e temas eram combinados",
+      "Correção: Uma linha preta piscante aparecia quando o Desbloqueio por impressão digital foi usado"
+    ],
+    "Barra de status, Área de notificações": [
+      "Otimização: Compatibilidade com temas de terceiros para a Área de notificações",
+      "Otimização: Ajuste no Modo Escuro para notificações",
+      "Correção: As notificações não eram exibidas corretamente com o Bloqueio de apps em uso",
+      "Correção: A Área de notificações não abria em alguns casos",
+      "Correção: As notificações flutuantes piscavam quando o Segundo Espaço era usado",
+      "Correção: Os controles de reprodução não eram sempre exibidos na Área de notificações",
+      "Correção: Emblemas de notificação não desapareciam em alguns casos",
+      "Correção: Os fundos não eram exibidos corretamente ao receber notificações em temas de terceiros",
+      "Correção: As notificações não eram exibidas corretamente quando o ^Levantar para ligar a tela^ era usado",
+      "Correção: Os botões não eram sempre exibidos corretamente nas notificações quando o Modo Escuro estava ativado"
+    ]
+  },
+  "logs_tr": {
+    "Kilit ekranı": [
+      "Onarım: Süper duvar kağıtları ve temaları birleştiğinde Kilit ekranı ögeleri görüntülenmedi",
+      "Onarım: Parmak izi ile kilit açma kullanıldığında yanıp sönen siyah bir çizgi belirdi"
+    ],
+    "Durum çubuğu, Bildirim çubuğu": [
+      "Optimizasyon: Bildirim çubuğu için üçüncü taraf tema uyumluluğu",
+      "Optimizasyon: Bildirimler için Karanlık mod ayarlamaları",
+      "Onarım: Uygulama kilidi kullanıldığında bildirimler düzgün bir şekilde görüntülenmedi",
+      "Onarım: Bildirim çubuğu bazı durumlarda açılamadı",
+      "Onarım: İkinci alan kullanıldığında kayan bildirimler yanıp söndü",
+      "Onarım: Oynatıcı kontrolleri Bildirim Çubuğu^nda her zaman görüntülenmedi",
+      "Onarım: Bildirim rozetleri her zaman görünmedi",
+      "Onarım: Bildirimler alındığında ve üçüncü taraf temaları kullanıldığında arka planlar düzgün bir şekilde görüntülenmedi",
+      "Onarım: ^^Uyandırmak için kaldır^^ kullanıldığında bildirimler hiçbir zaman düzgün bir şekilde görüntülenmedi",
+      "Onarım: Karanlık mod açık olduğunda tuşlar bildirimlerde her zaman düzgün bir şekilde görüntülenmedi"
+    ]
+  },
+  "logs_id": {
+    "Other": [
+      "Optimized system performance",
+      "Improved system security and stability"
+    ]
+  },
+  "logs_vi": {
+    "Màn hình khóa": [
+      "Sửa: Mục trên màn hình khóa không được hiển thị khi kết hợp siêu màn hình và chủ đề",
+      "Sửa: Một đường màu đen nhấp nháy xuất hiện khi sử dụng Mở khóa vân tay"
+    ],
+    "Thanh trạng thái, Thanh thông báo": [
+      "Tối ưu: Chủ đề bên thứ ba tương thích với Thanh thông báo",
+      "Tối ưu: Điều chỉnh chế độ nền tối cho thông báo",
+      "Sửa: Thông báo không hiển thị chính xác khi Khóa ứng dụng được sử dụng",
+      "Sửa: Không thể mở Thanh thông báo trong một số trường hợp",
+      "Sửa: Thông báo nổi nhấp nháy khi Không gian thứ hai được sử dụng",
+      "Sửa: Điều khiển trình phát không luôn hiển thị trong Thanh thông báo",
+      "Sửa: Thẻ thông báo không xuất hiện",
+      "Sửa: Nền không được hiển thị chính xác khi có thông báo và chủ đề của bên thứ ba được sử dụng",
+      "Sửa: Thông báo không hiển thị chính xác khi ^Nâng lên để đánh thức^ được sử dụng",
+      "Sửa: Phím không hiển thị chính xác trên thanh thông báo khi Chế độ nền tối bật"
+    ]
+  },
+  "logs_th": {
+    "ล็อคหน้าจอ": [
+      "แก้ไข: ไอเท็มล็อคหน้าจอไม่แสดงเมื่อรวมสุดยอดภาพพื้นหลังและธีมเข้าด้วยกัน",
+      "แก้ไข: เส้นสีดำกะพริบปรากฏขึ้นเมื่อใช้การปลดล็อกด้วยลายนิ้วมือ"
+    ],
+    "แถบสถานะ, แถบแจ้งเตือน": [
+      "การเพิ่มประสิทธิภาพ: ความเข้ากันได้ของธีมของบุคคลที่สามสำหรับหน้าต่างแจ้งเตือน",
+      "การเพิ่มประสิทธิภาพ: การปรับโหมดมืดสำหรับการแจ้งเตือน",
+      "แก้ไข: การแจ้งเตือนแสดงไม่ถูกต้องเมื่อใช้ ล็อกแอป",
+      "แก้ไข: ไม่สามารถเปิดหน้าต่างแจ้งเตือนได้ในบางกรณี",
+      "แก้ไข: การแจ้งเตือนแบบลอยจะกะพริบเมื่อใช้พื้นที่ทับซ้อน",
+      "แก้ไข: การควบคุมเครื่องเล่นเพลงไม่ได้แสดงในแถบการแจ้งเตือนทุกครั้ง",
+      "แก้ไข: ป้ายแจ้งเตือนไม่ปรากฏขึ้นทุกครั้ง",
+      "แก้ไข: พื้นหลังไม่แสดงอย่างถูกต้องเมื่อมีการแจ้งเตือนและใช้ธีมบุคคลที่สาม",
+      "แก้ไข: การแจ้งเตือนแสดงไม่ถูกต้องทุกครั้งเมื่อใช้ ^ยกขึ้นเพื่อปลุก^",
+      "แก้ไข: ปุ่มต่างๆ แสดงไม่ถูกต้องในการแจ้งเตือนทุกครั้งเมื่อเปิดโหมดมืด"
+    ]
+  },
+  "logs_ar": {
+    "شاشة القفل": [
+      "الإصلاح: مشكلة عدم عرض عناصر شاشة القفل عند دمج خلفيات سوبر والثيمات",
+      "الإصلاح: مشكلة ظهور خط أسود وامض عند فتح قفل الشاشة ببصمة الإصبع"
+    ],
+    "شريط الحالة ومركز الإشعارات": [
+      "التحسين: توافق ثيمات الجهات الخارجية مع مركز الإشعارات",
+      "التحسين: زيادة توافق الوضع الداكن مع الإشعارات",
+      "الإصلاح: مشكلة عدم عرض الإشعارات عند استخدام قفل التطبيقات",
+      "الإصلاح: مشكلة عدم إمكانية سحب مركز الإشعارات لإسفل عند قفل الشاشة",
+      "الإصلاح: مشكلة وميض الإشعارات المنبثقة عند استخدام الواجهة الثانية",
+      "الإصلاح: مشكلة عدم ظهور عناصر تحكم مشغل الموسيقى في مركز الإشعارات",
+      "الإصلاح: عدم ظهور شارات الإشعارات دائما",
+      "الإصلاح: عدم عرض الخلفيات بشكل صحيح عند تلقي الإشعارات واستخدام ثيمات جهات خارجية",
+      "الإصلاح: مشكلة عدم عرض الإشعارات بشكل صحيح عند استخدام ميزة ^رفع الجهاز لإيقاظه^",
+      "الإصلاح: مشكلة عدم عرض الأزرار بشكل صحيح في الإشعارات عند تشغيل الوضع الداكن"
+    ]
   }
 }

@@ -91,5 +91,551 @@
       "Fix: Notifications weren^t always displayed correctly when ^Raise to wake^ was used",
       "Fix: Buttons weren^t always displayed correctly on the notifications when Dark mode was on"
     ]
+  },
+  "logs_zh_tw": {
+    "系統": [
+      "新增: 安卓首創手勢Turbo，極速響應，流暢於心",
+      "新增: 演算力升級，20倍渲染力，渲出大精彩",
+      "新增: 機型分級，不同手機，都更流暢",
+      "優化: 系統最佳化，更輕、更快、更省"
+    ],
+    "筆記": [
+      "新增: 摘錄功能，支援將圖片、文字、鏈接一鍵摘錄至筆記（需在商店中升級至3.1.0級以上版本）",
+      "新增: 動態網格排版，構建文字秩序之美，讓不同字號，同樣優美",
+      "新增: 思維筆記功能，手機上的結構化書寫利器，一鍵生成腦圖",
+      "新增: 塗鴉功能，精心調校四種畫筆，細膩還原真實筆觸",
+      "新增: 塗鴉快速繪圖功能，包括規則圖形長按自動修正以及直線端點自動連線",
+      "新增: 全局待辦升級為「速記」，隨時查看筆記、待辦、摘錄",
+      "便簽全面升級為「筆記 」"
+    ],
+    "鎖屏": [
+      "修復: 掛斷電話螢幕亮起後螢幕鎖定畫面訊息全部消失的問題",
+      "修復: 使用主題後開啟超級壁紙，螢幕鎖定頁面內容不顯示的偶發問題",
+      "修復: 指紋解鎖時偶現閃黑條的問題"
+    ],
+    "狀態欄、通知欄": [
+      "優化: 來電的懸浮通知屏蔽邏輯",
+      "優化: 鬧鐘提醒通知的展示",
+      "優化: 通知中心與第三方主題的相容性",
+      "優化: 通知提醒與深色模式的相容",
+      "修復: 透明背景下，懸浮通知顯示重疊的問題",
+      "修復: 長按通知偶現權限彈窗重疊的異常",
+      "修復: 應用鎖導致通知大小背景不一致的異常",
+      "修復: 一鍵清理動畫掉幀的問題",
+      "修復: 螢幕鎖定時無法下拉通知欄的問題",
+      "修復: 未接來電懸浮通知偶現異常的問題",
+      "修復: 未接來電懸浮權限開啟失敗的異常",
+      "修復: 分身空間導致的懸浮通知異常閃爍問題",
+      "修復: 下拉通知欄後滑動頁面偶現時間顯示區域的異常抖動",
+      "修復: 播放音樂時，通知欄偶發不顯示媒體控制面板的異常",
+      "修復: 懸浮通知圓角缺失的異常",
+      "修復: 第三方主題下收到懸浮通知時，偶現背景異常的問題",
+      "修復: 抬起螢幕亮起時偶現鎖定螢幕通知閃動的異常",
+      "修復: 深色模式下，通知按鈕偶發顯示異常的問題"
+    ]
+  },
+  "logs_ja": {
+    "システム": [
+      "新機能: ジェスチャー操作の反応性が向上しました。",
+      "新機能: レンダリング能力が20倍になったことで、画面に映し出されるものにはほとんど制限がなくなりました。",
+      "新機能: デバイスモデルごとの調整により、アップグレード後はどの機種でも高速化が実現します。",
+      "最適化: MIUIは、軽量化、高速化、省電力化を実現しました。"
+    ],
+    "ロック画面": [
+      "修正: 通話終了後にロック画面の通知が消えてしまう問題",
+      "修正: スーパー壁紙とテーマを組み合わせたときにロック画面のアイテムが表示されない問題",
+      "修正: 指紋認証を使用すると点滅した黒い線が出現する問題"
+    ],
+    "ステータスバー、通知シェード": [
+      "最適化: 着信通知を表示するアルゴリズム",
+      "最適化: アラーム通知",
+      "最適化: 通知シェードのサードパーティ製テーマへの対応",
+      "最適化: 通知のダークモード調整",
+      "修正: 透明な背景を使用した際にフローティング通知の表示が重なる問題",
+      "修正: 通知を長押しするとアクセス許可のダイアログと表示が重なってしまう問題",
+      "修正: アプリロックを使用時に通知が正しく表示されない問題",
+      "修正: クリーナーのアニメーションが正しく表示されない問題",
+      "修正: 通知シェードが開けない場合がある問題",
+      "修正: 不在着信後に通知が正しく表示されない問題",
+      "修正: 不在着信後のアクセス許可に関する問題",
+      "修正: セカンド・スペースの使用時にフローティング通知が点滅する問題",
+      "修正: 通知シェードに時計が正しく表示されないことがある問題",
+      "修正: プレイヤーのコントロールが通知シェードに表示されないことがある問題",
+      "修正: 通知バッジが表示されないことがある問題",
+      "修正: サードパーティ製のテーマを使用している際に、通知を受信すると背景が正しく表示されない問題",
+      "修正: ^持ち上げてスリープ解除^実行時に通知が正しく表示されない場合がある問題",
+      "修正: ダークモードがオンの場合、通知にボタンが正しく表示されないことがある問題"
+    ]
+  },
+  "logs_ko": {
+    "시스템": [
+      "New: 제스처 조작에 대한 반응이 향상되었습니다.",
+      "New: 20배 증가한 렌더링 능력으로 화면에서 볼 수 있는 것에 대한 한계가 거의 없어졌습니다.",
+      "New: 기기 모델 맞춤형 조정을 통해 어느 기종에서도 고속화가 실현됩니다.",
+      "최적화: MIUI는 경량화, 고속화 및 저전력화를 실현했습니다."
+    ],
+    "잠금화면": [
+      "수정: 통화 종료 후에 잠금화면 알림이 사라지는 문제",
+      "수정: 테마를 사용 중에 슈퍼 배경화면을 실행 시 잠금화면 항목이 제대로 표시되지 않는 문제",
+      "수정: 지문 잠금해제를 사용한 후 깜빡이는 검은 선이 나타나는 문제"
+    ],
+    "상태 바, 알림 바": [
+      "최적화: 수신 통화 알림 표시를 위한 알고리즘",
+      "최적화: 알람 알림 표시",
+      "최적화: 알림 바와 타사 테마의 호환성",
+      "최적화: 알림을 위한 다크 모드 조정",
+      "수정: 투명 배경화면 사용 시 플로팅 창이 겹치는 문제",
+      "수정: 알림을 오래 누르면 발생할 수 있는 권한 다이얼로그 요소가 겹치는 문제",
+      "수정: 앱 잠금을 사용 중일 시 알림이 제대로 표시되지 않는 문제",
+      "수정: 클리너 애니메이션이 제대로 표시되지 않는 문제",
+      "수정: 일부 상황에서 알림 바가 열리지 않는 문제",
+      "수정: 부재중 통화 후의 알림이 제대로 표시되지 않는 문제",
+      "수정: 부재중 통화 후의 권한 문제",
+      "수정: 보조 공간 사용 시 플로팅 창이 점멸하는 문제",
+      "수정: 알림 바의 시계가 제대로 표시되지 않는 문제",
+      "수정: 플레이어의 컨트롤이 알림바에 표시되지 않을 수있는 문제",
+      "수정: 알림 배지가 표시되지 않는 문제",
+      "수정: 타사 테마 사용 중에 알림 수신 시 배경이 제대로 표시되지 않는 문제",
+      "수정: ^손목 올려 켜기^ 사용 시에 알림이 제대로 표시되지 않는 문제",
+      "수정: 다크 모드가 켜져있는 경우 알림에 버튼이 제대로 표시되지 않는 문제"
+    ]
+  },
+  "logs_ru": {
+    "Система": [
+      "Новое: Мгновенный отклик на жесты.",
+      "Новое: Благодаря 20-кратному увеличению производительности рендеринга возможности отрисовки стали практически безграничны.",
+      "Новое: Обновление для каждого устройства содержит индивидуальные улучшения, которые сделают ваше устройство еще быстрее.",
+      "Оптимизация: Система MIUI стала легче, быстрее и стабильнее."
+    ],
+    "Экран блокировки": [
+      "Исправлено: После завершения голосового вызова уведомления на экране блокировки могли исчезнуть",
+      "Исправлено: При комбинировании суперобоев и тем некоторые объекты могли не отображаться на экране блокировки",
+      "Исправлено: После разблокировки отпечатком пальца на экране могла появляться черная мерцающая полоса"
+    ],
+    "Строка состояния, шторка уведомлений": [
+      "Оптимизация: Алгоритмы отображения уведомлений о входящих вызовах",
+      "Оптимизация: Уведомления будильника",
+      "Оптимизация: Совместимость сторонних тем со шторкой уведомлений",
+      "Оптимизация: Оптимизация отображения уведомлений в темном режиме",
+      "Исправлено: При использовании прозрачного фона всплывающие уведомления могли перекрываться",
+      "Исправлено: Элементы диалогового окна предоставления разрешений перекрывались после долгого нажатия на уведомление",
+      "Исправлено: При использовании защиты приложений уведомления могли отображаться неправильно",
+      "Исправлено: Исправлено некорректное отображение анимации ^Очистки^",
+      "Исправлено: В некоторых случаях шторка уведомлений могла не открываться",
+      "Исправлено: После пропущенных вызовов уведомления могли отображаться неправильно",
+      "Исправлено: Исправлены ошибки разрешений, появлявшиеся после пропущенных вызовов",
+      "Исправлено: При использовании второго пространства всплывающие уведомления могли мерцать",
+      "Исправлено: Часы в шторке уведомлений могли отображаться неправильно",
+      "Исправлено: Виджет управления воспроизведением музыки мог не отображаться в шторке уведомлений",
+      "Исправлено: В некоторых случаях могли не появляться метки уведомлений",
+      "Исправлено: Фон отображался неправильно при получении уведомлений и использовании сторонних тем",
+      "Исправлено: При использовании функции ^Поднять для активации^ уведомления могли отображаться неправильно",
+      "Исправлено: При активации темного режима некоторые кнопки на уведомлениях могли не отображаться"
+    ]
+  },
+  "logs_uk": {
+    "Система": [
+      "Нове: Миттєва відповідь на жести.",
+      "Нове: Завдяки 20-кратному збільшенню продуктивності рендерингу, можливості відтворення стали практично безмежними.",
+      "Нове: Оновлення для кожного пристрою містить індивідуальні покращення, які зроблять ваш пристрій ще швидше.",
+      "Оптимізація: Система MIUI стала легшою, швидшою та стабільнішою."
+    ],
+    "Екран блокування": [
+      "Виправлено: Після завершення голосового виклику повідомлення на екрані блокування могли зникнути",
+      "Виправлено: Під час комбінування супершпалер та тем деякі об^єкти могли не відборажатися на екрані блокування",
+      "Виправлено: Після розблокування відбитком пальця на екрані могла з^являтися чорна полоса, яка мерехтить"
+    ],
+    "Рядок стану, Панель сповіщень": [
+      "Оптимізація: Алгоритми відображення сповіщень про вхідні виклики",
+      "Оптимізація: Сповіщення будильника",
+      "Оптимізація: Сумісність сторонніх тем із панеллю сповіщень",
+      "Оптимізація: Оптимізація відображення сповіщень у темному режимі",
+      "Виправлено: Під час використання прозорого фону спливаючі сповіщення могли перекриватися",
+      "Виправлено: Елементи діалогового вікна надання дозволів перекривалися після довгого натиснення на сповіщення",
+      "Виправлено: Під час використання захисту програм сповіщення могли відображатися неправильно",
+      "Виправлено: Виправлено некоректне відображення анімації ^Очищення^",
+      "Виправлено: В деяких випадках панель сповіщень могла не відкриватися",
+      "Виправлено: Після пропущених викликів сповіщення могли відображатися неправильно",
+      "Виправлено: Виправлені помилки дозволів, які з^являлися після пропущених викликів",
+      "Виправлено: Під час використання Другого простору спливаючи сповіщення могли мерехтіти",
+      "Виправлено: Годинник у панелі сповіщень міг відображатися неправильно",
+      "Виправлено: Віджет керування відтворенням музиик міг не відображатися у панелі сповіщень",
+      "Виправлено: В деяких випадках могли не відображатися мітки сповіщень на значку програм",
+      "Виправлено: Фон відображався неправильно під час отримання сповіщень та використання сторонніх тем",
+      "Виправлено: Під час використання функції ^Підняти для активації^ сповіщення могли відображатися неправильно",
+      "Виправлено: Під час активації темного режиму деякі кнопки на сповіщеннях могли не відображатися"
+    ]
+  },
+  "logs_pl": {
+    "System": [
+      "Nowe: Reakcja na gesty jest teraz natychmiastowa.",
+      "Nowe: Dzięki 20-krotnie większej mocy renderowania, nie istnieją prawie żadne ograniczenia tego, co możesz zobaczyć na ekranie.",
+      "Nowe: Dzięki dostosowaniu do modelu urządzenia, każdy telefon stanie się szybszy po aktualizacji.",
+      "Zoptymalizowano: MIUI stał się jaśniejszy, szybszy i bardziej wytrzymały."
+    ],
+    "Ekran blokady": [
+      "Naprawiono: Powiadomienia na ekranie blokady znikały po zakończonej rozmowie",
+      "Naprawiono: Elementy Ekranu blokady nie były wyświetlane kiedy super tapety i motywy były połączone",
+      "Naprawiono: Czarna migająca linia pojawiała się po odblokowywaniu odciskiem palca"
+    ],
+    "Pasek powiadomień, Panel powiadomień": [
+      "Zoptymalizowano: Algorytmy wyświetlania powiadomień o połączeniach przychodzących",
+      "Zoptymalizowano: Powiadomienia Alarmu",
+      "Zoptymalizowano: Kompatybilność motywów stron trzecich dla odcienia powiadomień",
+      "Zoptymalizowano: Dostosowanie Trybu ciemnego do powiadomień",
+      "Naprawiono: Powiadomienia pływające nakładały się, gdy używane było przezroczyste tło",
+      "Naprawiono: Elementy okna dialogowego uprawnień nakładały się po długim naciśnięciu powiadomienia",
+      "Naprawiono: Powiadomienia nie były wyświetlane poprawnie po użyciu blokady aplikacji",
+      "Naprawiono: Czystsze animacje nie były wyświetlane poprawnie",
+      "Naprawiono: W niektórych przypadkach nie można było otworzyć obszaru powiadomień",
+      "Naprawiono: Powiadomienia nie wyświetlały się poprawnie po nieodebranych połączeniach",
+      "Naprawiono: Problemy z uprawnieniami po nieodebranych połączeniach",
+      "Naprawiono: Pływające powiadomienia migały podczas używania Drugiej przestrzeni",
+      "Naprawiono: Zegar nie zawsze był wyświetlany poprawnie w Panelu powiadomień",
+      "Naprawiono: Kontrolki odtwarzacza nie zawsze były wyświetlane w Panelu powiadomień",
+      "Naprawiono: Symbole powiadomień nie zawsze się pojawiały",
+      "Naprawiono: Gdy używano motywów firm zewnętrznych, tło nie było wyświetlane poprawnie podczas otrzymywania powiadomień",
+      "Naprawiono: Powiadomienia nie zawsze były wyświetlane poprawnie, gdy użyto opcji „Podnieś, aby się obudzić”",
+      "Naprawiono: Przyciski w Powiadomieniach nie zawsze były wyświetlane poprawnie w Trybie ciemnym"
+    ]
+  },
+  "logs_de": {
+    "System": [
+      "New: Response to gestures is now instant.",
+      "New: With 20 times more rendering power, there are now few limits to what you can see on your screen.",
+      "New: With custom device model adjustments, any phone becomes faster after the upgrade.",
+      "Optimization: MIUI became lighter, faster, and more durable."
+    ],
+    "Notes": [
+      "New: Excerpts save text, URLs, and images to Notes in a few simple taps.",
+      "New: Dynamic layouts bring the typography in Notes to a new level.",
+      "New: Compose mind maps with complex structures.",
+      "New: New tools for doodling and sketching.",
+      "New: Press and hold a sketch to adjust the strokes automatically.",
+      "New: A gesture shortcut now allows you to create notes, tasks, and excerpts anywhere.",
+      "All-new Notes."
+    ],
+    "Lock screen": [
+      "Fix: Lock screen notifications disappeared after an ended call",
+      "Fix: Lock screen items weren^t displayed when super wallpapers and themes were combined",
+      "Fix: A flashing black line appeared when Fingerprint unlock was used"
+    ],
+    "Status bar, Notification shade": [
+      "Optimization: Algorithms for displaying incoming call notifications",
+      "Optimization: Alarm notifications",
+      "Optimization: Third party theme compatibility for Notification shade",
+      "Optimization: Dark mode adjustments for notifications",
+      "Fix: Floating notifications overlapped when the transparent background was used",
+      "Fix: Permission dialog elements overlapped after a notification was long pressed",
+      "Fix: Notifications weren^t displayed correctly when App lock was used",
+      "Fix: Cleaner animations weren^t displayed correctly",
+      "Fix: Notification shade couldn^t be opened in some cases",
+      "Fix: Notifications weren^t displayed correctly after missed calls",
+      "Fix: Issues with permissions after missed calls",
+      "Fix: Floating notifications flashed when Second space was used",
+      "Fix: The clock wasn^t always displayed correctly in the Notification shade",
+      "Fix: Player controls weren^t always displayed in the Notification shade",
+      "Fix: Notification badges didn^t always appear",
+      "Fix: Backgrounds weren^t displayed correctly when notifications arrived and third party themes were used",
+      "Fix: Notifications weren^t always displayed correctly when ^Raise to wake^ was used",
+      "Fix: Buttons weren^t always displayed correctly on the notifications when Dark mode was on"
+    ]
+  },
+  "logs_fr": {
+    "Système": [
+      "Nouveau: La réponse aux gestes est désormais instantanée.",
+      "Nouveau: Avec 20 fois plus de puissance de rendu, il y a maintenant peu de limites à ce que vous pouvez voir sur votre écran.",
+      "Nouveau: Grâce aux ajustements personnalisés du modèle d^appareil, n^importe quel téléphone devient plus rapide après la mise à niveau.",
+      "Optimisation: MIUI est devenu plus léger, plus rapide et plus durable."
+    ],
+    "Écran de verrouillage": [
+      "Réparé: Les notifications de l^écran de verrouillage ont disparu après un appel terminé",
+      "Réparé: Les éléments de l^écran de verrouillage ne s^affichaient pas lorsque les super fonds d^écran et les thèmes étaient combinés",
+      "Réparé: Une ligne noire clignotante est apparue lorsque le déverrouillage par empreinte digitale a été utilisé"
+    ],
+    "Barre d'état, Panneau de notification": [
+      "Optimisation: Algorithmes d^affichage des notifications d^appels entrants",
+      "Optimisation: Notifications d^alarme",
+      "Optimisation: Compatibilité des thèmes tiers pour le panneau de notification",
+      "Optimisation: Réglages du mode sombre pour les notifications",
+      "Réparé: Les notifications flottantes se chevauchaient lorsque l^arrière-plan transparent était utilisé",
+      "Réparé: Les éléments de la boîte de dialogue d^autorisation se chevauchent après un appui long sur une notification",
+      "Réparé: Les notifications ne s^affichaient pas correctement lorsque le verrouillage de l^application était utilisé",
+      "Réparé: Les animations plus propres ne s^affichaient pas correctement",
+      "Réparé: Le volet de notification n^a pas pu être ouvert dans certains cas",
+      "Réparé: Les notifications ne s^affichaient pas correctement après des appels manqués",
+      "Réparé: Problèmes avec les autorisations après des appels manqués",
+      "Réparé: Les notifications flottantes ont clignoté lorsque le deuxième espace a été utilisé",
+      "Réparé: La monte ne s^affichait pas toujours correctement dans le Panneau de notification",
+      "Réparé: Les commandes du lecteur n^étaient pas toujours affichées dans le Panneau de notification",
+      "Réparé: Les badges de notification n^apparaissaient pas toujours",
+      "Réparé: Les arrière-plans ne s^affichaient pas correctement lorsque les notifications arrivaient et que des thèmes tiers étaient utilisés",
+      "Réparé: Les notifications ne s^affichaient pas toujours correctement lorsque ^Lever pour activer^ était utilisé",
+      "Réparé: Les boutons ne s^affichaient pas toujours correctement sur les notifications lorsque le mode sombre était activé"
+    ]
+  },
+  "logs_it": {
+    "Sistema": [
+      "Nuovo: La risposta ai gesti è ora istantanea.",
+      "Nuovo: Con una potenza di rendering 20 volte superiore, ci sono sempre meno limiti a ciò che puoi vedere sullo schermo.",
+      "Nuovo: Con le regolazioni personalizzate in base al modello del dispositivo, tutti i telefoni diventano più veloci dopo l^aggiornamento.",
+      "Ottimizzazione: MIUI è diventata più leggera, più veloce e più durevole."
+    ],
+    "Schermata di blocco": [
+      "Risolto: Le notifiche sulla schermata di blocco scomparivano dopo una chiamata terminata",
+      "Risolto: Gli elementi della schermata di blocco non venivano visualizzati quando si combinavano super sfondi e temi",
+      "Risolto: Durante l^utilizzato dello sblocco tramite impronta appariva una linea nera lampeggiante"
+    ],
+    "Barra di stato, Area delle notifiche": [
+      "Ottimizzazione: Algoritmi per la visualizzazione delle notifiche delle chiamate in arrivo",
+      "Ottimizzazione: Notifiche sveglia",
+      "Ottimizzazione: Compatibilità dei temi di terze parti per l^area delle notifiche",
+      "Ottimizzazione: Miglioramenti della modalità scura per le notifiche",
+      "Risolto: Le notifiche a comparsa si sovrapponevano quando veniva utilizzato lo sfondo trasparente",
+      "Risolto: Gli elementi della finestra di dialogo dei permessi si sovrapponevano quando una notifica era premuta a lungo",
+      "Risolto: Le notifiche non venivano visualizzate correttamente quando veniva utilizzato il blocco app",
+      "Risolto: Le animazioni di Pulitore non venivano visualizzate correttamente",
+      "Risolto: Non era possibile aprire l^area delle notifiche in alcuni casi",
+      "Risolto: Le notifiche non venivano visualizzate correttamente dopo le chiamate perse",
+      "Risolto: Problemi con i permessi dopo le chiamate perse",
+      "Risolto: Le notifiche a comparsa lampeggiavano durante l^utilizzo di Secondo spazio",
+      "Risolto: L^orologio non veniva sempre visualizzato correttamente nell^area delle notifiche",
+      "Risolto: I controlli del giocatore non venivano sempre visualizzati nell^area delle notifiche",
+      "Risolto: I badge di notifica non apparivano sempre",
+      "Risolto: Gli sfondi non venivano visualizzati correttamente durante la ricezione di notifiche e l^utilizzo di temi di terze parti",
+      "Risolto: Le notifiche non venivano sempre visualizzate correttamente durante l^utilizzo di ^Solleva per attivare^",
+      "Risolto: I pulsanti non venivano sempre visualizzati correttamente nelle notifiche con la modalità scura attiva"
+    ]
+  },
+  "logs_es": {
+    "Sistema": [
+      "Nuevo: La respuesta a los gestos ahora es instantánea.",
+      "Nuevo: Con 20 veces más poder de renderizado, ahora ya no hay límites para lo que puedes ver en tu pantalla.",
+      "Nuevo: Con los ajustes personalizados del modelo de dispositivo, cualquier teléfono se vuelve más rápido después de la actualización.",
+      "Optimización: MIUI ahora es más ligero, más rápido y más duradero."
+    ],
+    "Pantalla de bloqueo": [
+      "Reparado: Las notificaciones de la Pantalla de bloqueo desaparecían después de finalizar una llamada",
+      "Reparado: Los elementos de la Pantalla de bloqueo no se mostraban cuando se combinaban los superfondos de pantalla y temas",
+      "Reparado: Aparecía una línea negra parpadeante cuando se usaba el Desbloqueo con huella dactilar"
+    ],
+    "Barra de estado, Barra de notificaciones": [
+      "Optimización: Algoritmos para mostrar notificaciones de llamadas entrantes",
+      "Optimización: Notificaciones de alarmas",
+      "Optimización: Compatibilidad de temas de terceros para la Barra de notificaciones",
+      "Optimización: Ajustes del Modo oscuro para notificaciones",
+      "Reparado: Las notificaciones flotantes se superponían cuando se usaba el fondo transparente",
+      "Reparado: Los elementos del diálogo de permisos se superponían después de presionar una notificación durante mucho tiempo",
+      "Reparado: Las notificaciones no se mostraban correctamente cuando se usaba el Bloqueo de aplicaciones",
+      "Reparado: Las animaciones del Limpiador no se mostraban correctamente",
+      "Reparado: La barra de notificaciones no se podía abrir en algunos casos",
+      "Reparado: Las notificaciones no se mostraban correctamente después de recibir llamadas perdidas",
+      "Reparado: Problemas con los permisos después de recibir llamadas perdidas",
+      "Reparado: Las notificaciones flotantes parpadeaban cuando se usaba el Segundo espacio",
+      "Reparado: El reloj no siempre se mostraba correctamente en la Barra de notificaciones",
+      "Reparado: Los controles del reproductor no siempre se mostraban en la Barra de notificaciones",
+      "Reparado: Los iconos de notificaciones no siempre aparecían",
+      "Reparado: Los fondos no se mostraban correctamente cuando llegaban las notificaciones y se usaban temas de terceros",
+      "Reparado: Las notificaciones no siempre se mostraban correctamente cuando se usaba ^Levantar para activar^",
+      "Reparado: Los botones no siempre se mostraban correctamente en las notificaciones cuando el Modo oscuro estaba activado"
+    ]
+  },
+  "logs_pt": {
+    "Sistema": [
+      "Novo: Resposta a gestos é instantânea agora.",
+      "Novo: Com 20 vezes mais poder de renderização, agora são poucos os limites do que você pode ver em sua tela.",
+      "Novo: Com ajustes personalizados ao modelo do dispositivo, qualquer telefone fica mais rápido após a atualização.",
+      "Otimização: O MIUI está mais leve, mais rápido e mais durável."
+    ],
+    "Tela de bloqueio": [
+      "Correção: As notificações na Tela de bloqueio desaparecia após encerrar uma chamada",
+      "Correção: Os itens da Tela de bloqueio não eram exibidos quando super planos de fundo e temas eram combinados",
+      "Correção: Uma linha preta piscante aparecia quando o Desbloqueio por impressão digital foi usado"
+    ],
+    "Barra de status, Área de notificações": [
+      "Otimização: Algoritmo para exibição de notificações de chamada recebida",
+      "Otimização: Notificações de alarme",
+      "Otimização: Compatibilidade com temas de terceiros para a Área de notificações",
+      "Otimização: Ajuste no Modo Escuro para notificações",
+      "Correção: As notificações flutuantes eram sobrepostas quando planos de fundo transparentes eram usados",
+      "Correção: Elementos da caixa de diálogo de permissões se sobrepunham quando uma notificação era pressionada longamente",
+      "Correção: As notificações não eram exibidas corretamente com o Bloqueio de apps em uso",
+      "Correção: As animações da Limpeza não eram exibidas corretamente",
+      "Correção: A Área de notificações não abria em alguns casos",
+      "Correção: As notificações não eram exibidas corretamente após chamadas perdidas",
+      "Correção: Problemas com permissões após chamadas perdidas",
+      "Correção: As notificações flutuantes piscavam quando o Segundo Espaço era usado",
+      "Correção: O relógio não era sempre exibido corretamente na Área de notificações",
+      "Correção: Os controles de reprodução não eram sempre exibidos na Área de notificações",
+      "Correção: Emblemas de notificação não desapareciam em alguns casos",
+      "Correção: Os fundos não eram exibidos corretamente ao receber notificações em temas de terceiros",
+      "Correção: As notificações não eram exibidas corretamente quando o ^Levantar para ligar a tela^ era usado",
+      "Correção: Os botões não eram sempre exibidos corretamente nas notificações quando o Modo Escuro estava ativado"
+    ]
+  },
+  "logs_tr": {
+    "Sistem": [
+      "Yeni: Hareketlere yanıt artık anında.",
+      "Yeni: 20 kat daha fazla işleme gücü ile ekranınızda görebileceklerinizin artık birkaç sınırı var.",
+      "Yeni: Özel cihaz modeli ayarlamaları ile herhangi bir telefon yükseltmeden sonra daha hızlı hale gelir.",
+      "Optimizasyon: MIUI artık daha hafif, daha hızlı ve daha dayanıklı."
+    ],
+    "Kilit ekranı": [
+      "Onarım: Biten bir aramanın ardından Kilit ekranı bildirimleri kayboldu",
+      "Onarım: Süper duvar kağıtları ve temaları birleştiğinde Kilit ekranı ögeleri görüntülenmedi",
+      "Onarım: Parmak izi ile kilit açma kullanıldığında yanıp sönen siyah bir çizgi belirdi"
+    ],
+    "Durum çubuğu, Bildirim çubuğu": [
+      "Optimizasyon: Gelen arama bildirimlerini görüntülemek için algoritmalar",
+      "Optimizasyon: Alarm bildirimleri",
+      "Optimizasyon: Bildirim çubuğu için üçüncü taraf tema uyumluluğu",
+      "Optimizasyon: Bildirimler için Karanlık mod ayarlamaları",
+      "Onarım: Şeffaf arka plan kullanıldığında Kayan bildirimler üst üste bindi",
+      "Onarım: Bir bildirime uzun süre basıldıktan sonra İzinler diyaloğu ögeleri üst üste bindi",
+      "Onarım: Uygulama kilidi kullanıldığında bildirimler düzgün bir şekilde görüntülenmedi",
+      "Onarım: Temizleyici animasyonları doğru bir şekilde görüntülenmedi",
+      "Onarım: Bildirim çubuğu bazı durumlarda açılamadı",
+      "Onarım: Cevapsız aramalardan sonra bildirimler düzgün bir şekilde görüntülenmedi",
+      "Onarım: Cevapsız aramalardan sonra izinlerle ilgili sorunlar",
+      "Onarım: İkinci alan kullanıldığında kayan bildirimler yanıp söndü",
+      "Onarım: Saat, Bildirim Çubuğu^nda her zaman düzgün bir şekilde görüntülenmedi",
+      "Onarım: Oynatıcı kontrolleri Bildirim Çubuğu^nda her zaman görüntülenmedi",
+      "Onarım: Bildirim rozetleri her zaman görünmedi",
+      "Onarım: Bildirimler alındığında ve üçüncü taraf temaları kullanıldığında arka planlar düzgün bir şekilde görüntülenmedi",
+      "Onarım: ^^Uyandırmak için kaldır^^ kullanıldığında bildirimler hiçbir zaman düzgün bir şekilde görüntülenmedi",
+      "Onarım: Karanlık mod açık olduğunda tuşlar bildirimlerde her zaman düzgün bir şekilde görüntülenmedi"
+    ]
+  },
+  "logs_id": {
+    "Sistem": [
+      "Baru: Respons terhadap gerakan lebih cepat.",
+      "Baru: Dengan kekuatan rendering 20 kali lebih banyak, sekarang ini, hanya ada sedikit batasan-batasan untuk apa yang dapat Anda lihat di layar Anda.",
+      "Baru: Dengan penyesuaian model perangkat kustomisasi, ponsel apa pun menjadi lebih cepat setelah pembaruan.",
+      "Pengoptimalan: MIUI menjadi lebih ringan, cepat, dan tahan lama."
+    ],
+    "Layar kunci": [
+      "Perbaikan: Notifikasi Layar kunci menghilang setelah panggilan berakhir",
+      "Perbaikan: Item Layar kunci tidak ditampilkan saat wallpaper super dan tema digabungkan",
+      "Perbaikan: Garis hitam berkedip muncul saat Buka kunci dengan sidik jari digunakan"
+    ],
+    "Bar status, Layar notiifikasi": [
+      "Pengoptimalan: Algoritma untuk menampilkan notifikasi panggilan masuk",
+      "Pengoptimalan: Notifikasi alarm",
+      "Pengoptimalan: Kompatibilitas tema pihak ketiga untuk Layar notifikasi",
+      "Pengoptimalan: Penyesuaian mode Gelap untuk notifikasi",
+      "Perbaikan: Notifikasi mengambang tumpang tindih saat latar belakang transparan digunakan",
+      "Perbaikan: Elemen dialog perizinan tumpang tindih setelah notifikasi ditekan lama",
+      "Perbaikan: Notifikasi tidak ditampilkan dengan benar saat fitur Kunci aplikasi digunakan",
+      "Perbaikan: Animasi fitur Pembersih tidak ditampilkan dengan benar",
+      "Perbaikan: Layar notifikasi tidak dapat dibuka dalam beberapa kasus",
+      "Perbaikan: Notifikasi tidak ditampilkan dengan benar setelah ada panggilan tak terjawab",
+      "Perbaikan: Masalah dengan izin setelah panggilan tak terjawab",
+      "Perbaikan: Notifikasi mengambang muncul saat Ruang kedua digunakan",
+      "Perbaikan: Jam tidak selalu ditampilkan dengan benar di Layar notifikasi",
+      "Perbaikan: Kontrol pemutar tidak selalu ditampilkan di Layar notifikasi",
+      "Perbaikan: Lencana notifikasi tidak selalu muncul",
+      "Perbaikan: Latar belakang tidak ditampilkan dengan benar saat notifikasi tiba dan tema pihak ketiga digunakan",
+      "Perbaikan: Notifikasi tidak selalu ditampilkan dengan benar saat ^Angkat untuk bangunkan^ digunakan",
+      "Perbaikan: Tombol tidak selalu ditampilkan dengan benar di notifikasi saat mode Gelap dihidupkan"
+    ]
+  },
+  "logs_vi": {
+    "Hệ thống": [
+      "Mới: Phản hồi cử chỉ tức thì.",
+      "Mới: Với khả năng kiết xuất cao hơn 20 lần, giờ đây có rất ít giới hạn đối với những gì bạn có thể nhìn thấy trên màn hình của mình.",
+      "Mới: Với điều chỉnh kiểu thiết bị tùy chỉnh, bất kỳ điện thoại nào cũng đều nhanh hơn sau khi nâng cấp.",
+      "Tối ưu: MIUI trở nên nhẹ hơn, nhanh hơn và tiện dụng hơn."
+    ],
+    "Màn hình khóa": [
+      "Sửa: Thông báo Màn hình khóa biến mất sao khi kết thúc cuộc gọi",
+      "Sửa: Mục trên màn hình khóa không được hiển thị khi kết hợp siêu màn hình và chủ đề",
+      "Sửa: Một đường màu đen nhấp nháy xuất hiện khi sử dụng Mở khóa vân tay"
+    ],
+    "Thanh trạng thái, Thanh thông báo": [
+      "Tối ưu: Thuật toán thông báo cuộc gọi đến",
+      "Tối ưu: Thông báo báo thức",
+      "Tối ưu: Chủ đề bên thứ ba tương thích với Thanh thông báo",
+      "Tối ưu: Điều chỉnh chế độ nền tối cho thông báo",
+      "Sửa: Thông báo nổi bị chồng lấn khi hình nền trong suốt được sử dụng",
+      "Sửa: Hộp thoại quyền bị chồng lấn sau khi bấm giữ thông báo",
+      "Sửa: Thông báo không hiển thị chính xác khi Khóa ứng dụng được sử dụng",
+      "Sửa: Hoạt ảnh dọn dẹp không hiển thị chính xác",
+      "Sửa: Không thể mở Thanh thông báo trong một số trường hợp",
+      "Sửa: Thông báo không hiển thị chính xác sau khi lỡ cuộc gọi",
+      "Sửa: Vấn đề về quyền sau khi có cuộc gọi nhỡ",
+      "Sửa: Thông báo nổi nhấp nháy khi Không gian thứ hai được sử dụng",
+      "Sửa: Đồng hồ không phải lúc nào cũng được hiển thị chính xác trong Thanh thông báo",
+      "Sửa: Điều khiển trình phát không luôn hiển thị trong Thanh thông báo",
+      "Sửa: Thẻ thông báo không xuất hiện",
+      "Sửa: Nền không được hiển thị chính xác khi có thông báo và chủ đề của bên thứ ba được sử dụng",
+      "Sửa: Thông báo không hiển thị chính xác khi ^Nâng lên để đánh thức^ được sử dụng",
+      "Sửa: Phím không hiển thị chính xác trên thanh thông báo khi Chế độ nền tối bật"
+    ]
+  },
+  "logs_th": {
+    "ระบบ": [
+      "ใหม่: ขณะนี้การตอบสนองต่อท่าทางสัมผัสเป็นแบบทันที",
+      "ใหม่: ด้วยพลังการเรนเดอร์ที่เพิ่มขึ้น 20 เท่า ตอนนี้สิ่งที่คุณเห็นบนหน้าจอของคุณเหลือข้อจำกัดเพียงเล็กน้อย",
+      "ใหม่: ด้วยการปรับเปลี่ยนรุ่นอุปกรณ์ที่กำหนดเอง โทรศัพท์ทุกเครื่องจะเร็วขึ้นหลังจากการอัปเกรด",
+      "การเพิ่มประสิทธิภาพ: MIUI เบาขึ้น เร็วขึ้น และทนทานมากขึ้น"
+    ],
+    "ล็อคหน้าจอ": [
+      "แก้ไข: การแจ้งเตือนหน้าจอล็อกหายไปหลังจากวางสาย",
+      "แก้ไข: ไอเท็มล็อคหน้าจอไม่แสดงเมื่อรวมสุดยอดภาพพื้นหลังและธีมเข้าด้วยกัน",
+      "แก้ไข: เส้นสีดำกะพริบปรากฏขึ้นเมื่อใช้การปลดล็อกด้วยลายนิ้วมือ"
+    ],
+    "แถบสถานะ, แถบแจ้งเตือน": [
+      "การเพิ่มประสิทธิภาพ: อัลกอริทึมสำหรับการแสดงการแจ้งเตือนสายเรียกเข้า",
+      "การเพิ่มประสิทธิภาพ: การแจ้งเตือน",
+      "การเพิ่มประสิทธิภาพ: ความเข้ากันได้ของธีมของบุคคลที่สามสำหรับหน้าต่างแจ้งเตือน",
+      "การเพิ่มประสิทธิภาพ: การปรับโหมดมืดสำหรับการแจ้งเตือน",
+      "แก้ไข: การแจ้งเตือนแบบลอยซ้อนทับกันเมื่อใช้พื้นหลังโปร่งใส",
+      "แก้ไข: องค์ประกอบข้อความการอนุญาตซ้อนทับกันหลังจากกดการแจ้งเตือนค้างไว้",
+      "แก้ไข: การแจ้งเตือนแสดงไม่ถูกต้องเมื่อใช้ ล็อกแอป",
+      "แก้ไข: แอนิเมชั่นตัวทำความสะอาดแสดงไม่ถูกต้อง",
+      "แก้ไข: ไม่สามารถเปิดหน้าต่างแจ้งเตือนได้ในบางกรณี",
+      "แก้ไข: การแจ้งเตือนแสดงไม่ถูกต้องหลังสายที่ไม่ได้รับ",
+      "แก้ไข: ปัญหาเกี่ยวกับการอนุญาตหลังจากไม่ได้รับสาย",
+      "แก้ไข: การแจ้งเตือนแบบลอยจะกะพริบเมื่อใช้พื้นที่ทับซ้อน",
+      "แก้ไข: นาฬิกาไม่ได้แสดงอย่างถูกต้องเสมอในแถบการแจ้งเตือน",
+      "แก้ไข: การควบคุมเครื่องเล่นเพลงไม่ได้แสดงในแถบการแจ้งเตือนทุกครั้ง",
+      "แก้ไข: ป้ายแจ้งเตือนไม่ปรากฏขึ้นทุกครั้ง",
+      "แก้ไข: พื้นหลังไม่แสดงอย่างถูกต้องเมื่อมีการแจ้งเตือนและใช้ธีมบุคคลที่สาม",
+      "แก้ไข: การแจ้งเตือนแสดงไม่ถูกต้องทุกครั้งเมื่อใช้ ^ยกขึ้นเพื่อปลุก^",
+      "แก้ไข: ปุ่มต่างๆ แสดงไม่ถูกต้องในการแจ้งเตือนทุกครั้งเมื่อเปิดโหมดมืด"
+    ]
+  },
+  "logs_ar": {
+    "النظام": [
+      "الجديد: الجهاز الآن يستجيب للإيماءات بشكل أسرع.",
+      "الجديد: مع قوة عرض أكبر بمقدار 20 ضعفًا، لا توجد قيود على ماتراه على شاشتك.",
+      "الجديد: تخصيص طراز الجهاز ليصبح أي هاتف أسرع بعد التحديث.",
+      "التحسين: MIUI الآن أخف وأسرع وأكثر قوة."
+    ],
+    "شاشة القفل": [
+      "الإصلاح: مشكلة اختفاء إشعارات شاشة القفل بعد انهاء المكالمة",
+      "الإصلاح: مشكلة عدم عرض عناصر شاشة القفل عند دمج خلفيات سوبر والثيمات",
+      "الإصلاح: مشكلة ظهور خط أسود وامض عند فتح قفل الشاشة ببصمة الإصبع"
+    ],
+    "شريط الحالة ومركز الإشعارات": [
+      "التحسين: خوارزمية لعرض إشعارات المكالمات الواردة",
+      "التحسين: إشعارات المنبه",
+      "التحسين: توافق ثيمات الجهات الخارجية مع مركز الإشعارات",
+      "التحسين: زيادة توافق الوضع الداكن مع الإشعارات",
+      "الإصلاح: مشكلة تداخل الإشعارات المنبثقة عند استخدام خلفية شفافة",
+      "الإصلاح: مشكلة تداخل عناصر مربع الإذن بعد الضغط لفترة طويلة على الإشعار",
+      "الإصلاح: مشكلة عدم عرض الإشعارات عند استخدام قفل التطبيقات",
+      "الإصلاح: مشكلة عدم ظهور الرسوم المتحركة للمنظف بشكل صحيح",
+      "الإصلاح: مشكلة عدم إمكانية سحب مركز الإشعارات لإسفل عند قفل الشاشة",
+      "الإصلاح: مشكلة عدم ظهور الإشعارات بشكل صحيح بعد المكالمات الفائتة",
+      "الإصلاح: مشاكل مع الأذونات بعد المكالمات الفائتة",
+      "الإصلاح: مشكلة وميض الإشعارات المنبثقة عند استخدام الواجهة الثانية",
+      "الإصلاح: مشكلة عدم ظهور الساعة بشكل صحيح دائما في مركز الإشعارات",
+      "الإصلاح: مشكلة عدم ظهور عناصر تحكم مشغل الموسيقى في مركز الإشعارات",
+      "الإصلاح: عدم ظهور شارات الإشعارات دائما",
+      "الإصلاح: عدم عرض الخلفيات بشكل صحيح عند تلقي الإشعارات واستخدام ثيمات جهات خارجية",
+      "الإصلاح: مشكلة عدم عرض الإشعارات بشكل صحيح عند استخدام ميزة ^رفع الجهاز لإيقاظه^",
+      "الإصلاح: مشكلة عدم عرض الأزرار بشكل صحيح في الإشعارات عند تشغيل الوضع الداكن"
+    ]
   }
 }
