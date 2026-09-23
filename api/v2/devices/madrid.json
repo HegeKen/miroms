@@ -1,0 +1,77 @@
+{
+  "device": "madrid",
+  "name": {
+    "zh": "小米 18 Pro Max",
+    "en": "Xiaomi 18 Pro Max"
+  },
+  "code": "BL",
+  "brand": [
+    "Xiaomi"
+  ],
+  "miui": "yes",
+  "merged": "no",
+  "android": [
+    "17.0"
+  ],
+  "supports": [
+    "OS4"
+  ],
+  "branches": [
+    {
+      "branchCode": "madrid_demo",
+      "brand": [
+        "Xiaomi"
+      ],
+      "device": {
+        "zh": "小米 18 Pro Max",
+        "en": "Xiaomi 18 Pro Max"
+      },
+      "idtag": "CnOD",
+      "tag": "CNDM",
+      "branchtag": "F",
+      "name": {
+        "zh": "中国大陆演示机系统",
+        "en": "China Mainland MiStore Demo"
+      },
+      "table": [
+        "os",
+        "android",
+        "release",
+        "aspatch",
+        "recovery",
+        "fastboot",
+        "ctelecom"
+      ],
+      "show": "0",
+      "carrier": [
+        "",
+        "chinatelecom",
+        "chinamobile",
+        "chinaunicom"
+      ],
+      "region": "cn",
+      "zone": "1",
+      "ep": "0",
+      "roms": {
+        "OS4.0.5.0.XEOCNDM": {
+          "os": "OS4.0.5.0.XEOCNDM",
+          "android": "17.0",
+          "release": "2026-09-23",
+          "aspatch": "2026-09-01",
+          "recovery": "madrid_demo-ota_full-OS4.0.5.0.XEOCNDM-user-17.0-38007cd602.zip",
+          "fastboot": "",
+          "ctelecom": ""
+        },
+        "OS4.0.4.0.XEOCNDM": {
+          "os": "OS4.0.4.0.XEOCNDM",
+          "android": "17.0",
+          "release": "2026-09-23",
+          "aspatch": "2026-09-01",
+          "recovery": "madrid_demo-ota_full-OS4.0.4.0.XEOCNDM-user-17.0-85e427ee0b.zip",
+          "fastboot": "madrid_demo_images_OS4.0.4.0.XEOCNDM_20260921.0000.00_17.0_cn_8505879000.tgz",
+          "ctelecom": "madrid_demo_images_OS4.0.4.0.XEOCNDM_20260921.0000.00_17.0_cn_chinatelecom_3473887397.tgz"
+        }
+      }
+    }
+  ]
+}

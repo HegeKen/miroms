@@ -1,0 +1,825 @@
+{
+  "logs_zh": {
+    "基础体验": [
+      "降负载、控内存，久用也流畅",
+      "新增 负载精算技术，全链路综合调优",
+      "优化 系统负载调度，剔除冗余指令，提升运行效率、降低系统功耗",
+      "优化 CPU 计算、GPU 渲染负载，运行更省电",
+      "优化 图形渲染负载，降低 UI 渲染功耗，减少卡顿",
+      "优化 游戏调频算法，提升团战等高负载场景帧率稳定性",
+      "新增 内存预载技术，应用响应更快",
+      "优化 内存预留与分配机制，精简资源占用，开机内存占用更少",
+      "优化 后台资源调度与加载策略，根据使用场景按需加载和释放，分时错峰运行，内存占用更少、使用更流畅",
+      "优化 内存预载和闪存预读机制，减少随机卡顿和掉帧，应用冷启动更快、响应更及时",
+      "新增 小米澎湃OS 应用运行环境，提升系统应用的运行流畅度和资源效率",
+      "优化 桌面与相册的交互体验，提升界面流畅度和操作跟手性",
+      "优化 相册与天气后台活动，降低 CPU 消耗与内存占用"
+    ],
+    "超级小爱": [
+      "升级超级小爱 2.0，更懂你、更省心",
+      "新交互：",
+      "新增 超级小爱 2.0 适配“小米超级岛”，AI 长任务执行过程可在岛上实时更新，任务完成后自动展开通知",
+      "新增 侧滑停顿拖出灵感球，指哪问哪，精准识别意图；拖出指向地点可以直接导航，拖出指向日程可以直接加日程",
+      "优化 “超级小爱”默认音色，声音效果更自然",
+      "优化 “超级小爱”主页展示方式，可点击底部标签查看历史任务、个人主页和新建对话",
+      "专家模式：",
+      "新增 超级小爱 2.0 支持“专家模式”，可跨应用、跨设备执行复杂、定时任务，搭配云端办公套件，文档处理、网页创建均可云端处理",
+      "• 记忆、记忆偏好支持在手机、平板及电脑之间同步",
+      "• 支持跨设备文件传输，文件可通过电脑发送到手机，还支持跨手机、平板和电脑搜索其他设备文件",
+      "• 支持一句话设备操作，如一句话投屏",
+      "• 支持一句话生成网页、PPT、Word、Excel 和 PDF，还支持文档格式转换等云端文件处理能力",
+      "• 手机通知实时同步至平板、电脑，支持通过“妙享桌面”在平板、电脑上回复",
+      "隐私守护：",
+      "新增 超级小爱 2.0 提供隐私守护能力，AI 将在用户授权范围内控制应用、访问数据，敏感操作先确认后执行，减少误操作风险，使用更安心",
+      "新增 超级小爱 2.0 增加“记忆管理”页面，支持手动管理“超级小爱记忆”授权范围、本地加密存储，记忆可控才安心"
+    ],
+    "生命感美学": [
+      "视觉焕新，系统界面更显精致",
+      "新增 柔光玻璃材质，支持感知环境颜色、自适应通透度，视觉质感更细腻",
+      "新增 柔光玻璃光效，光感变化跟随操作而变，交互更灵动",
+      "新增 锁屏时钟字体支持自由调节，可自定义文字宽高、位置、字体及材质样式等",
+      "新增 通知堆叠效果，支持在锁屏、通知中心底部堆叠展示消息通知，操作更便捷、动效更丝滑",
+      "新增 桌面小部件支持堆叠展示，上下滑动切换，更有多种形状样式可选，信息呈现更直观",
+      "新增 桌面文件夹支持拖拽边缘自由调整大小",
+      "新增 柔性悬浮框架，系统应用设计焕新，适配多尺寸屏幕形态，内容浏览更沉浸、功能层级更清晰",
+      "新增 三方应用一镜到底动画，切换更流畅",
+      "优化 横屏应用启动关闭动画、多窗口横竖屏旋转动画，动效更丝滑"
+    ],
+    "系统应用全面优化": [
+      "核心系统应用升级，更实用、更好用",
+      "电话：",
+      "新增 全新 AI 通话功能，接听电话更省心",
+      "支持通过超级小爱一句话设置一段时间内 AI 代接来电、并在接听结束后自动总结重点",
+      "支持针对外卖、快递等常用来电场景提供 AI 回复建议，点击确认可按照该建议内容由 AI 语音回复来电",
+      "笔记：",
+      "新增 笔记内录音实时转写文字，自动总结摘要",
+      "新增 会议、访谈、课堂和通用等场景 AI 总结模板，结构化总结内容，重点更清晰",
+      "新增 导入本地音频、图片后，可自动识别并生成 AI 笔记",
+      "新增 笔记内调用“超级小爱”，支持内容问答、笔记修改等 AI 能力",
+      "超级小爱输入法：",
+      "新增 支持语音输入，AI 可自动整理为语义通顺、结构清晰的文本内容",
+      "新增 AI 结合对话上下文生成聊天回复，还可切换个性、正式和幽默等语言风格",
+      "新增 “AI 翻译”功能，支持打字或语音输入，实时中英互译",
+      "新增 自动填充卡证信息",
+      "录音机：",
+      "新增 显示录音内容时间线大纲，快速定位跳转至目标位置",
+      "新增 针对标记关键点智能总结，自动总结摘要",
+      "新增 会议、通用场景 AI 总结模板，录音内容自动结构化输出",
+      "新增 “跳过静音片段”功能，开启后播放录音时将自动跳过声纹空白片段",
+      "其他：",
+      "新增 文件管理增加“最近删除”功能，删除的文件可随时找回",
+      "新增 “复制直达”功能适配更多使用场景，可在复制文本后，进行证件信息提取、拨打电话和导航等快捷操作",
+      "新增 小米换机支持迁移超级小爱会话记录及定时任务",
+      "新增 云备份支持备份相册、短信、联系人、通话记录、文档、超级小爱（会话记录及定时任务）、微信（含聊天记录）、QQ （含聊天记录）等应用数据备份",
+      "新增 人脸设置“暗光识别优化”功能，在环境光较暗时，将暂时提升屏幕亮度辅助完成人脸识别",
+      "新增 和超级小爱对话即可提交问题或建议，反馈更省心",
+      "优化 “日历”中日程详情页展示效果，可根据日程类型展示详细信息"
+    ],
+    "设备互联": [
+      "新增 “融合设备中心”可进行卡片式交互，支持常用设备置顶、多家庭一键切换，人车家全生态设备操控更方便",
+      "新增 “小米互联服务”PC、Mac 端升级，支持通过超级小爱 2.0 联动手机、平板传输文件及同步通知",
+      "新增 两台小米手机双持互联，来电、短信验证码双向同步，支持另一台手机接听电话、短信，并智能识别与一键复制内容",
+      "*需前往系统设置 > 设备互联 > 跨设备通知 > 本机接收通知，选择另一同账号小米手机，开启来电、短信通知，并确保两台小米手机均已联网"
+    ],
+    "安全隐私": [
+      "新增 照片与视频安全访问控件可调取相册影集、支持智能搜索，找图又快又放心",
+      "新增 重置锁屏密码防遗忘能力，录入指纹后 96 小时内可使用旧密码和指纹重置新密码"
+    ],
+    "妙享背屏": [
+      "新增 背屏智能伙伴 - 自定义形象"
+    ],
+    "其他": [
+      "查看更多内容可浏览官网：https://hyperos.mi.com/"
+    ]
+  },
+  "logs_en": {
+    "Basic experience": [
+      "Reduced system load and memory use for lasting smooth performance",
+      "New: Precision workload scheduling helps optimize system-wide performance",
+      "Optimization: System workload scheduling handles tasks more efficiently, while redundant instructions have been removed to improve performance and reduce power consumption",
+      "Optimization: CPU processing and GPU rendering workloads consume less power",
+      "Optimization: Graphics rendering reduces UI power consumption and stuttering",
+      "Optimization: Game frequency scaling delivers more stable frame rates in demanding scenarios such as team battles",
+      "New: Memory preloading helps apps respond faster",
+      "Optimization: Memory reservation and allocation reduce resource use and memory usage after startup",
+      "Optimization: Background resource scheduling loads resources only when needed and staggers background tasks to reduce memory use and improve performance",
+      "Optimization: Memory preloading and storage prefetching reduce occasional stuttering and frame drops, speed up cold starts, and improve app responsiveness",
+      "New: Xiaomi HyperOS app runtime environment helps system apps run more smoothly and use resources more efficiently",
+      "Optimization: Home screen and Gallery interactions provide smoother visuals and more responsive controls",
+      "Optimization: Gallery and Weather use fewer CPU and memory resources in the background"
+    ],
+    "Xiaomi Hyper XiaoAi": [
+      "Upgraded Xiaomi Hyper XiaoAi now understands you better and makes everyday tasks easier",
+      "New interactions:",
+      "New: Xiaomi Hyper XiaoAi supports Xiaomi HyperIsland, letting you follow the progress of long-running AI tasks in real time. Notifications automatically expand when tasks are complete."
+    ],
+    "Alive Design Philosophy": [
+      "Refreshed system visuals for a more polished look",
+      "New: A soft glass material responds to surrounding colors and automatically adjusts its transparency for a more refined look",
+      "New: Soft glass lighting effects respond dynamically to your actions for more fluid interactions",
+      "New: The Lock screen offers more clock customization options, including text width and height, position, font, and material style",
+      "New: Notifications can appear in stacks on the Lock screen and at the bottom of the Notification shade for easier access and smoother animations",
+      "New: The Home screen supports widget stacks. Swipe up or down to switch between widgets, with multiple shapes and styles available for a clearer view of information.",
+      "New: You can resize Home screen folders by dragging their edges",
+      "New: System apps use an adaptive floating layout with a refreshed design that adjusts to different screen sizes for more immersive browsing and clearer navigation",
+      "New: Third party apps support seamless transition animations",
+      "Optimization: Opening and closing animations for landscape apps and screen rotation animations in multi-window scenarios provide smoother transitions"
+    ],
+    "Comprehensive system app optimization": [
+      "Upgraded core system apps to make them more useful and easier to use"
+    ],
+    "Interconnectivity": [
+      "New: Xiaomi Smart Hub offers card-based controls, letting you pin frequently used devices, switch between homes with one tap, and control devices across the Human × Car × Home ecosystem more easily",
+      "New: Xiaomi Interconnectivity for PC and Mac has been upgraded. Use Xiaomi Hyper XiaoAi to transfer files and sync notifications across your computer, phone, and tablet.",
+      "New: Two Xiaomi phones can connect to each other, allowing calls and SMS verification codes to sync between them. You can handle calls and messages on either phone and quickly copy recognized content with one tap.",
+      "*Go to Settings > Interconnectivity > Cross-device notifications > Receive, select another Xiaomi phone signed in to the same Xiaomi Account, turn on call and message notifications, and make sure both phones are connected to the internet"
+    ],
+    "Privacy and security": [
+      "New: Secure access to photos and videos supports albums and smart search, making it easier to find the content you want",
+      "New: You can reset your screen lock if you forget it. Within 96 hours of adding a fingerprint, use your previous screen lock and fingerprint to set a new one."
+    ],
+    "Other": [
+      "Visit our website to learn more: https://hyperos.mi.com/"
+    ]
+  },
+  "logs_zh_tw": {
+    "基礎體驗": [
+      "降負載、控記憶體，久用也流暢",
+      "新增 負載精算技術，全鏈路綜合調優",
+      "最佳化 系統負載調度，刪除冗餘指令，提升運作效率、降低系統功耗",
+      "最佳化 CPU 運算、GPU 渲染負載，運作更省電",
+      "最佳化 圖形渲染負載，降低 UI 渲染功耗，減少卡頓",
+      "最佳化 遊戲調頻演算法，提升團戰等高負載場景影格率穩定性",
+      "新增 記憶體預載技術，應用程式回應更快",
+      "最佳化 記憶體預留與分配機制，精簡資源佔用，開機記憶體佔用更少",
+      "最佳化 後台資源調度與載入策略，根據使用場景按需載入和釋放，分時錯峰運作，記憶體佔用更少、使用更流暢",
+      "最佳化 記憶體預載和快閃預讀機制，減少隨機卡頓和掉影格，應用程式冷啟動更快、回應更及時",
+      "新增 小米澎湃OS 應用程式運作環境，提升系統應用程式的運作流暢度和資源效率",
+      "最佳化 桌面與相簿的互動體驗，提升介面流暢度和操作順手性",
+      "最佳化 相簿與天氣後台活動，降低 CPU 消耗與記憶體佔用"
+    ],
+    "超級小愛": [
+      "升級超級小愛 2.0，更懂你、更省心",
+      "新互動：",
+      "新增 超級小愛 2.0 適配「小米超級島」，AI 長任務執行過程可在島上即時更新，任務完成後自動展開通知"
+    ],
+    "生命感美學": [
+      "視覺煥新，系統介面更顯精緻",
+      "新增 柔光玻璃材質，支援感知環境色彩、自適應通透度，視覺質感更細膩",
+      "新增 柔光玻璃光效，光感變化跟著操作而變，互動更靈活",
+      "新增 鎖定螢幕時鐘字體支援自由調整，可自訂文字寬高、位置、字體及材質樣式等",
+      "新增 通知堆疊效果，支援在鎖定畫面、通知中心底部堆疊顯示訊息通知，操作更便利、動效更絲滑",
+      "新增 桌面小工具支援堆疊顯示，上下滑動切換，更有多種形狀樣式可選，資訊呈現更直觀",
+      "新增 桌面資料夾支援拖曳邊緣自由調整大小",
+      "新增 柔性懸浮框架，系統應用程式設計煥新，適配多尺寸螢幕形態，內容瀏覽更沉浸、功能層級更清晰",
+      "新增 三方應用程式一鏡到底動畫，切換更流暢",
+      "最佳化 橫向螢幕應用程式啟動關閉動畫、多視窗橫豎螢幕旋轉動畫，動效更絲滑"
+    ],
+    "系統應用程式全面最佳化": [
+      "核心系統應用程式升級，更實用、更好用"
+    ],
+    "裝置互聯": [
+      "新增 「融合裝置中心」可進行卡片式互動，支援常用裝置置頂、多家庭一鍵切換，人車家全生態裝置操控更方便",
+      "新增 「小米互聯服務」PC、Mac 端升級，支援透過超級小愛 2.0 聯動手機、平板傳輸檔案及同步通知",
+      "新增 兩台小米手機雙持互聯，來電、簡訊驗證碼雙向同步，支援另一台手機接聽電話、簡訊，並智能辨識與一鍵複製內容",
+      "*需前往系統設定 > 裝置互聯 > 跨裝置通知 > 本機接收通知，選擇另一同帳號小米手機，開啟來電、簡訊通知，並確保兩台小米手機皆已連網"
+    ],
+    "安全隱私": [
+      "新增 照片與影片安全存取控制項可調取相簿影集、支援智慧搜尋，找圖又快又放心",
+      "新增 重設鎖定螢幕密碼防遺忘能力，輸入指紋後 96 小時內可使用舊密碼和指紋重設新密碼"
+    ],
+    "其他": [
+      "查看更多內容可瀏覽官網：https://hyperos.mi.com/"
+    ]
+  },
+  "logs_ja": {
+    "システムアプリの総合的最適化": [
+      "コアとなるシステムアプリをアップグレードして、より便利で使いやすくしました"
+    ],
+    "プライバシーとセキュリティ": [
+      "新機能: 写真や動画への安全なアクセスがアルバムとスマート検索に対応しました。探しているコンテンツを簡単に見つけることができます",
+      "新機能: 画面ロックを忘れた際にリセットできます。指紋を追加してから 96 時間以内であれば、以前の画面ロックと指紋で新しい指紋を設定できます。"
+    ],
+    "基本的な体験": [
+      "スムーズなパフォーマンスを維持するため、システム負荷とメモリ使用量を削減しました",
+      "新機能: 高精度のワークロードスケジューリングにより、システム全体のパフォーマンスを最適化します",
+      "最適化: システムのワークロードのスケジューリングはタスクをより効率的に処理します。冗長な命令を削除し、パフォーマンスの向上と消費電力の削減を図りました",
+      "最適化: CPU 処理と GPU レンダリングのワークロードによる消費電力を低減しました",
+      "最適化: グラフィックレンダリングで UI の消費電力とカクつきを低減します",
+      "最適化: ゲームの周波数スケーリングは、チームバトルなどの要求の厳しいシナリオで、より安定したフレームレートを実現します",
+      "新機能: メモリのプリロードにより、アプリの応答速度が向上します",
+      "最適化: メモリの予約と割り当てにより、起動後のリソースの使用とメモリの使用を削減します",
+      "最適化: バックグラウンドリソーススケジューリングは、必要時にのみリソースを読み込み、バックグラウンドタスクの実行タイミングをずらすことで、メモリ使用量を削減し、パフォーマンスを向上させます",
+      "最適化: メモリのプリロードとストレージのプリフェッチにより、時折のカクつきやフレームレートの低下を低減し、コールドスタートを高速化し、アプリの応答性を向上させました",
+      "新機能: Xiaomi HyperOS アプリランタイム環境は、システムアプリをよりスムーズに実行し、リソースをより効率的に使用するのに役立ちます",
+      "最適化: ホーム画面とギャラリーの相互作用により、よりスムーズなビジュアルとより応答性の高い制御が実現します",
+      "最適化: ギャラリーと天気がバックグラウンドで使用する CPU とメモリリソースを低減します"
+    ],
+    "活気あるデザイン哲学": [
+      "より洗練された新しいシステムビジュアル",
+      "新機能: ソフトガラス素材は周囲の色に反応し、より洗練されて見えるように、透明度を自動的に調整します",
+      "新機能: ソフトガラスの照明効果は、より滑らかに相互作用するために、操作に動的に反応します",
+      "新機能: ロック画面の時計で、テキストの幅と高さ、位置、フォント、素材スタイルなど、カスタマイズオプションが増えました",
+      "新機能: 通知は、ロック画面のスタックと通知シェードの下部に表示されるようになりました。これにより、容易なアクセスとスムーズなアニメーションを実現しました",
+      "新機能: ホーム画面がウィジェットスタックに対応しました。上下にスワイプしてウィジェットを切り替えられます。複数の形状やスタイルを使用して、情報をより明確に表示できます。",
+      "新機能: ホーム画面のフォルダの隅をドラッグしてサイズを変更できるようになりました",
+      "新機能: システム アプリは、より没入感のあるブラウジングとより明確なナビゲーションのために、さまざまな画面サイズに対応する、新デザインの適応型フローティング レイアウトを採用しました",
+      "新機能: サードパーティ製アプリがシームレスな遷移アニメーションに対応しました",
+      "最適化: 横向きアプリの起動・終了アニメーションや、マルチウィンドウ環境での画面回転アニメーションが、より滑らかに遷移します"
+    ],
+    "相互接続性": [
+      "新機能: Xiaomi Smart Hub は、カードベースの制御を実現します。よく使うデバイスをピン留めし、ワンタップでHomeを切り替え、Human × Car × Home エコシステム全体のデバイスをより簡単に制御できます",
+      "新機能: PC と Mac 用の Xiaomi 相互接続がアップグレードされました。Xiaomi Hyper XiaoAiを使用して、パソコン、スマートフォン、タブレット間でファイルを転送し、通知を同期できます。",
+      "新機能: 2 台の Xiaomi スマートフォンを相互に接続し、通話と SMS 認証コードを同期できます。どちらの電話でも通話とメッセージ送受信が可能で、認識されたコンテンツをワンタップですばやくコピーできます。",
+      "* [設定] > [相互接続性] > [クロスデバイス通知] > [受信] に移動し、同じ Xiaomi アカウントにサインインしている別の Xiaomi スマートフォンを選択し、通話とメッセージ通知をオンにして、両方のスマートフォンがインターネットに接続されていることを確認します"
+    ],
+    "その他": [
+      "詳細は弊社ウェブサイトをご覧ください: https://hyperos.mi.com/"
+    ]
+  },
+  "logs_ko": {
+    "포괄적인 시스템 앱 최적화": [
+      "주요 시스템 앱이 업그레이드되어 활용도와 사용 편의성이 높아졌습니다."
+    ],
+    "개인정보 보호 및 보안": [
+      "신규 기능: 사진 및 동영상 보안 접근 기능이 앨범과 스마트 검색을 지원해 원하는 콘텐츠를 쉽게 찾을 수 있습니다.",
+      "신규 기능: 화면 잠금 비밀번호를 잊어버린 경우 재설정할 수 있습니다. 지문을 등록한 96시간 이내에 이전 화면 잠금 방식과 지문을 사용해 새로운 잠금을 설정하세요."
+    ],
+    "기본 사용 경험": [
+      "시스템 부하 및 메모리 사용량 감소로 지속적인 원활한 성능 제공",
+      "새로운 기능: 정밀한 워크로드 스케줄링으로 시스템 전반의 성능 최적화를 지원합니다.",
+      "최적화: 시스템 워크로드 스케줄링이 작업을 더욱 효율적으로 처리하며, 불필요한 명령어를 제거하여 성능을 향상시키고 전력 소모를 줄였습니다.",
+      "최적화: CPU 처리 및 GPU 렌더링 작업의 전력 소모를 줄였습니다.",
+      "최적화: 그래픽 렌더링을 통해 UI 전력 소모와 끊김 현상을 줄였습니다.",
+      "최적화: 게임 주파수 스케일링을 통해 팀 전투와 같이 부하가 큰 상황에서도 더욱 안정적인 프레임 레이트를 제공합니다.",
+      "새로운 기능: 메모리 사전 로딩으로 앱 응답 속도가 향상되었습니다.",
+      "최적화: 메모리 예약 및 할당을 통해 시작 후 리소스 및 메모리 사용량을 줄였습니다.",
+      "최적화: 백그라운드 리소스 스케줄링은 필요할 때만 리소스를 로드하고 백그라운드 작업을 분산시켜 메모리 사용량을 줄이고 성능을 향상시킵니다.",
+      "최적화: 메모리 사전 로드 및 스토리지 사전 인출은 간헐적인 끊김과 프레임 드롭을 줄이고, 콜드 스타트 ​​속도를 높이며, 앱 응답성을 향상시킵니다.",
+      "새로운 기능: Xiaomi HyperOS 앱 런타임 환경은 시스템 앱이 더 원활하게 실행되고 리소스를 더 효율적으로 사용할 수 있도록 돕습니다.",
+      "최적화: 홈 화면 및 갤러리에서의 상호작용 시 시각적 효과가 더 매끄러워지고 제어 반응성이 향상되었습니다.",
+      "최적화: 갤러리와 날씨 앱이 백그라운드에서 CPU 및 메모리 리소스를 더 적게 사용합니다."
+    ],
+    "생동감의 미학": [
+      "시각 디자인이 새롭게 개선되어 더욱 완성도 높은 화면을 선사합니다.",
+      "신규 기능: 부드러운 유리 소재가 주변 색상에 반응하고 투명도를 자동으로 조절하여 더욱 세련된 느낌을 선사합니다.",
+      "신규 기능: 소프트 글래스 라이팅 효과가 사용자 동작에 동적으로 반응하여 더 부드러운 인터랙션을 경험할 수 있습니다.",
+      "신규 기능: 잠금화면에서 텍스트 너비 및 높이, 위치, 글꼴, 소재 스타일 등 시계 커스터마이징 옵션이 더욱 다양해졌습니다.",
+      "신규 기능: 잠금화면과 알림창 하단에 알림을 스택 형태로 표시할 수 있어 접근성이 높아지고 애니메이션이 더 부드러워졌습니다.",
+      "신규 기능: 홈 화면에서 위젯 스택을 지원합니다. 위아래로 스와이프해 위젯을 전환할 수 있으며, 다양한 형태와 스타일로 정보를 더 깔끔하게 확인할 수 있습니다.",
+      "신규 기능: 홈 화면 폴더의 가장자리를 드래그하여 크기를 조절할 수 있습니다.",
+      "신규 기능: 시스템 앱은 새롭게 디자인된 적응형 플로팅 레이아웃을 적용해 다양한 화면 크기에 맞춰 조절되며, 더욱 몰입감 있는 탐색과 명확한 내비게이션을 제공합니다.",
+      "신규 기능: 서드파티 앱에서 매끄러운 전환 애니메이션을 지원합니다.",
+      "최적화: 가로 모드 앱의 실행 및 종료 애니메이션과 멀티 윈도우 상황에서의 화면 회전 애니메이션이 더 부드러운 전환을 제공합니다."
+    ],
+    "상호 연결성": [
+      "신규 기능: Xiaomi Smart Hub가 카드 형식 제어 방식을 지원합니다. 자주 사용하는 기기를 고정하고 한 번의 탭으로 집을 전환하며, Human × Car × Home 생태계의 기기를 더욱 편리하게 제어할 수 있습니다.",
+      "신규 기능: PC 및 Mac용 Xiaomi 상호 연결 기능이 업그레이드되었습니다. Xiaomi Hyper XiaoAi를 활용해 컴퓨터, 휴대전화, 태블릿 간 파일 전송 및 알림 동기화가 가능합니다.",
+      "신규 기능: 두 대의 Xiaomi 휴대전화를 서로 연결할 수 있으며, 통화와 SMS 인증 코드가 동기화됩니다. 어느 기기에서나 통화와 메시지를 처리하고 인식된 내용을 한 번의 탭으로 빠르게 복사할 수 있습니다.",
+      "*설정 > 상호 연결 > 기기 간 알림 > 수신으로 이동한 뒤, 동일한 Xiaomi 계정에 로그인한 다른 Xiaomi 휴대전화를 선택하고 통화 및 메시지 알림을 켜주세요. 두 기기 모두 인터넷에 연결되어 있어야 합니다."
+    ],
+    "기타": [
+      "웹사이트를 방문해 더 자세히 알아보세요: https://hyperos.mi.com/"
+    ]
+  },
+  "logs_ru": {
+    "Комплексная оптимизация системных приложений": [
+      "Обновление основных системных приложений — еще больше полезных функций и улучшенный опыт использования"
+    ],
+    "Конфиденциальность и безопасность": [
+      "Новое: безопасный доступ к фото и видео поддерживает альбомы и умный поиск",
+      "Новое: теперь вы можете выполнить сброс защиты телефона, если забыли пароль. В течение 96 часов после добавления нового отпечатка пальца вы можете воспользоваться предыдущим способом защиты телефона или отпечатком пальца, чтобы установить новый."
+    ],
+    "Базовый опыт использования": [
+      "Снижена общая нагрузка на систему и использование памяти для улучшения плавности работы устройства",
+      "Новое: точная оценка рабочей нагрузки помогает оптимизировать производительность всей системы",
+      "Оптимизация: планировщик системных задач обрабатывает задачи более эффективно, а избыточные инструкции удалены для повышения производительности и снижения энергопотребления",
+      "Оптимизация: рабочие нагрузки ЦП и рендеринга ГП потребляют меньше энергии",
+      "Оптимизация: уменьшение энергопотребления и задержек во время графического рендеринга",
+      "Оптимизация: масштабирование частоты кадров в играх обеспечивает более стабильное и плавное изображение в ресурсоемких сценариях, например в командных сражениях.",
+      "Новое: предзагрузка памяти помогает увеличить скорость отклика приложений",
+      "Оптимизация: резервирование и распределение памяти снижают использование ресурсов и потребление памяти после запуска",
+      "Оптимизация: фоновое планирование загружает ресурсы только при необходимости и распределяет фоновые задачи для снижения использования памяти и повышения производительности",
+      "Оптимизация: предварительная загрузка памяти позволяет уменьшить задержки и просадку частоты кадров, одновременно ускоряя запуск и повышая отзывчивость приложений",
+      "Новое: среда выполнения приложений Xiaomi HyperOS, помогает системным приложениям работать более плавно и эффективнее использовать ресурсы",
+      "Оптимизация: улучшение плавности изображения и управления при взаимодействии с Рабочим столом и Галереей",
+      "Оптимизация: Галерея и Погода используют меньше ресурсов ЦП и памяти в фоновом режиме"
+    ],
+    "Философия живого дизайна": [
+      "Обновленный визуальный стиль системы для более изысканного вида",
+      "Новое: материал «Мягкое стекло» реагирует на окружающие цвета и автоматически регулирует прозрачность для более изысканного вида",
+      "Новое: эффекты освещения «Мягкого стекла» динамически реагируют на ваши действия, позволяя сделать взаимодействие с системой еще более плавным",
+      "Новое: экран блокировки предлагает больше настроек часов, включая ширину и высоту текста, положение, шрифт и стиль материала",
+      "Новое: уведомления могут отображаться стопками на экране блокировки и внизу шторки уведомлений для более удобного доступа",
+      "Новое: теперь Рабочий стол поддерживает стопки виджетов. Смахивайте вверх или вниз для переключения между виджетами, с различными формами и стилями для более четкого отображения информации.",
+      "Новое: добавлена возможность изменять размер папок на рабочем столе, потянув за их края",
+      "Новое: системные приложения используют адаптивную плавающую компоновку с обновленным дизайном, который подстраивается под разные размеры экрана для более погружающего просмотра и понятной навигации",
+      "Новое: сторонние приложения поддерживают плавные анимации переходов",
+      "Оптимизация: улучшение плавности переходов анимации запуска и закрытия для приложений в альбомной ориентации, а также анимации поворота экрана в многооконных сценариях"
+    ],
+    "Взаимосвязанность": [
+      "Новое: Xiaomi Smart Hub предлагает управление на основе карточек, позволяя закреплять часто используемые устройства, переключаться между домами одним касанием и управлять устройствами в экосистеме «Human × Car × Home»",
+      "Новое: приложение Взаимосвязанность Xiaomi для ПК и Mac было обновлено. Используйте Xiaomi Hyper XiaoAi для передачи файлов и синхронизации уведомлений между компьютером, телефоном и планшетом.",
+      "Новое: два телефона Xiaomi могут соединяться друг с другом, позволяя синхронизировать звонки и SMS-коды подтверждения между ними. Вы можете отвечать на звонки и сообщения на любом из телефонов и быстро копировать распознанное содержимое одним касанием.",
+      "*Перейдите в «Настройки» > «Взаимосвязанность» > «Уведомления на нескольких устройствах» > «Получать», выберите другой телефон Xiaomi, на котором выполнен вход в ту же учетную запись Xiaomi, включите уведомления о звонках и сообщениях и убедитесь, что оба телефона подключены к интернету"
+    ],
+    "Другое": [
+      "Посетите наш сайт, чтобы узнать больше: https://hyperos.mi.com/"
+    ]
+  },
+  "logs_uk": {
+    "Комплексна оптимізація системних програм": [
+      "Оновлення основних системних програм — ще більше корисних функцій та покращений досвід використання"
+    ],
+    "Конфіденційність та безпека": [
+      "Нове: безпечний доступ до фото та відео підтримує альбоми та розумний пошук",
+      "Нове: якщо ви забули пароль, ви можете скинути екран блокування. Протягом 96 годин після додавання нового відбитка пальця можна скористатися попереднім способом захисту телефону або відбитком пальця, щоб встановити новий."
+    ],
+    "Базовий досвід": [
+      "Знижено загальне навантаження на систему та використання пам^яті для покращення плавності роботи пристрою",
+      "Нове: точна оцінка робочого навантаження допомагає оптимізувати продуктивність всієї системи",
+      "Оптимізація: планувальник системних завдань обробляє завдання більш ефективно, а надмірні інструкції видалені для збільшення продуктивності та зниження енергоспоживання.",
+      "Оптимізація: робочі навантаження ЦП та рендерингу ДП споживають менше енергії",
+      "Оптимізація: зменшення енергоспоживання та затримок під час графічного рендерингу",
+      "Оптимізація: масштабування частоти кадрів в іграх забезпечує більш стабільне та плавне зображення в ресурсомістких сценаріях, наприклад, у командних битвах.",
+      "Нове: попереднє завантаження пам^яті допомагає збільшити швидкість відгуку програм",
+      "Оптимізація: резервування та розподіл пам^яті знижують використання ресурсів та споживання пам^яті після запуску",
+      "Оптимізація: фонове планування завантажує ресурси лише за необхідності та розподіляє фонові завдання для зниження використання пам^яті та підвищення продуктивності",
+      "Оптимізація: попереднє завантаження пам^яті дозволяє зменшити затримки та просідання частоти кадрів, одночасно прискорюючи запуск і підвищуючи відповідь програм",
+      "Нове: середовище виконання програм Xiaomi HyperOS, допомагає системним програмам працювати більш плавно та ефективніше використовувати ресурси",
+      "Оптимізація: покращення плавності зображення та керування під час взаємодії з робочим столом та Галереєю",
+      "Оптимізація: Галерея та Погода використовують менше ресурсів ЦП та пам^яті у фоновому режимі"
+    ],
+    "Філософія живого дизайну": [
+      "Оновлений візуальний стиль системи для більш вишуканого вигляду",
+      "Нове: матеріал ^М^яке скло^ реагує на навколишні кольори та автоматично регулює прозорість для більш вишуканого вигляду",
+      "Нове: ефекти освітлення ^М^якого скла^ динамічно реагують на ваші дії, дозволяючи робити взаємодію із системою ще більш плавною",
+      "Нове: екран блокування пропонує більше налаштувань годинника, включаючи ширину і висоту тексту, положення, шрифт і стиль матеріалу",
+      "Нове: сповіщення можуть відображатися стеками на екрані блокування та внизу панелі сповіщень для більш зручного доступу",
+      "Нове: тепер Робочий стіл підтримує стек віджетів. Проведіть вгору або вниз для перемикання між віджетами, з різними формами та стилями для більш чіткого відображення інформації.",
+      "Нове: додано можливість змінювати розмір папок на робочому столі, потягнувши за їхні краї",
+      "Нове: системні програми використовують адаптивне спливаюче компонування з оновленим дизайном, який підлаштовується під різні розміри екрана для більш захоплюючого перегляду та зрозумілої навігації.",
+      "Нове: сторонні програми підтримують плавні анімації переходів",
+      "Оптимізація: покращення плавності переходів анімації запуску та закриття для програм у альбомній орієнтації, а також анімації повороту екрана у багатовіконних сценаріях"
+    ],
+    "Взаємопов'язаність": [
+      "Нове: Xiaomi Smart Hub пропонує керування на основі карток, дозволяючи закріплювати часто використовувані пристрої, перемикатися між будинками одним дотиком і керувати пристроями в екосистемі ^Human × Car × Home^",
+      "Нове: програму Xiaomi Interconnectivity для ПК і Mac було оновлено. Використовуйте Xiaomi Hyper XiaoAi для передачі файлів та синхронізації повідомлень між комп^ютером, телефоном та планшетом.",
+      "Нове: два телефони Xiaomi можуть підключатися один до одного, дозволяючи синхронізувати дзвінки та SMS-коди підтвердження між ними. Ви можете відповідати на дзвінки та повідомлення на будь-якому телефоні та швидко копіювати розпізнаний вміст одним дотиком.",
+      "*Перейдіть до розділу ^Налаштування^ > ^Взаємопов^язаність^ > ^Сповіщення на декількох пристроях^ > ^Отримувати^, виберіть інший телефон Xiaomi, на якому виконано вхід до того ж Xiaomi акаунту, увімкніть сповізення про дзвінки та повідомлення та переконайтеся, що обидва телефони підключені до інтернету"
+    ],
+    "Інше": [
+      "Відвідайте наш сайт, щоб дізнатися більше: https://hyperos.mi.com/"
+    ]
+  },
+  "logs_pl": {
+    "Kompleksowa optymalizacja aplikacji systemowych": [
+      "Ulepszono podstawowe aplikacje systemowe, aby były bardziej użyteczne i łatwiejsze w obsłudze"
+    ],
+    "Prywatność i bezpieczeństwo": [
+      "Nowość: bezpieczny dostęp do zdjęć i filmów obsługuje albumy oraz inteligentne wyszukiwanie, dzięki czemu łatwiej odnajdziesz potrzebne treści",
+      "Nowość: Jeśli zapomnisz swoją blokadę ekranu, możesz ją zresetować. W ciągu 96 godzin od dodania odcisku palca użyj poprzedniej blokady ekranu i odcisku palca, aby ustawić nową blokadę."
+    ],
+    "Podstawowe wrażenia": [
+      "Zmniejszono obciążenie systemu i zużycie pamięci, zapewniając trwałą płynność działania",
+      "Nowość: Precyzyjne zarządzanie obciążeniem pomaga poprawić wydajność całego systemu",
+      "Optymalizacja: planowanie obciążeniami systemowymi efektywniej zarządza zadaniami, a zbędne instrukcje zostały usunięte w celu poprawy wydajności i zmniejszenia zużycia energii",
+      "Optymalizacja: obciążenia związane z przetwarzaniem CPU i renderowaniem GPU zużywają mniej energii",
+      "Optymalizacja: renderowanie grafiki zmniejsza zacinanie i zużycie energii przez interfejs",
+      "Optymalizacja: skalowanie częstotliwości w grach zapewnia stabilniejsze wyświetlanie w wymagających scenariuszach, takich jak walki drużynowe",
+      "Nowość: wstępne ładowanie do pamięci przyspiesza działanie aplikacji",
+      "Optymalizacja: rezerwacja i alokacja pamięci zmniejszają zużycie zasobów oraz pamięci po uruchomieniu",
+      "Optymalizacja: planowanie zasobów w tle wczytuje je tylko w razie potrzeby i rozkłada zadania w tle tak, aby zmniejszyć zużycie pamięci i poprawić wydajność",
+      "Optymalizacja: wstępne ładowanie do pamięci i składowanie danych zmniejsza okazjonalne zacięcia i spadki klatek, przyspiesza zimne starty i poprawia responsywność aplikacji",
+      "Nowość: Środowisko uruchomieniowe aplikacji Xiaomi HyperOS zapewnia płynniejszą pracę aplikacji systemowych oraz lepsze zarządzanie zasobami",
+      "Optymalizacja: interakcje na Ekranie głównym i w Galerii zapewniają płynniejsze animacje oraz bardziej czułe sterowanie",
+      "Optymalizacja: Galeria i Pogoda zużywają mniej zasobów CPU i pamięci w tle"
+    ],
+    "Filozofia żywego designu": [
+      "Odświeżono wygląd systemu, nadając mu bardziej dopracowany design",
+      "Nowość: Gładkie szkło reaguje na otaczające kolory i automatycznie dostosowuje poziom przezroczystości, zapewniając bardziej elegancki wygląd",
+      "Nowość: efekty świetlne Gładkiego szkła dynamicznie reagują na działania użytkownika, zapewniając płynniejsze interakcje",
+      "Nowość: Ekran blokady oferuje więcej opcji dostosowywania zegara, w tym wysokość i szerokość tekstu, pozycję, czcionkę oraz materiał",
+      "Nowość: powiadomienia mogą być wyświetlane w stosach na Ekranie blokady oraz w dolnej części panelu powiadomień, co ułatwia dostęp i zapewnia płynniejsze animacje",
+      "Nowość: Ekran główny obsługuje stosy widżetów. Przesuń w górę lub w dół, aby przełączać się między nimi. Dostępne są różne kształty i style dla lepszego podglądu informacji.",
+      "Nowość: dodano możliwość dostosowania rozmiaru folderów na Ekranie głównym poprzez przeciąganie ich krawędzi",
+      "Nowość: aplikacje systemowe korzystają z adaptacyjnego układu pływającego z odświeżonym wyglądem, który dostosowuje się do różnych rozmiarów ekranu, zapewniając bardziej wciągające wrażenia z przeglądania i czytelniejszą nawigację",
+      "Nowość: aplikacje zewnętrznych dostawców obsługują płynne animacje przejść",
+      "Optymalizacja: animacje uruchamiania i zamykania aplikacji w orientacji poziomej oraz animacje obrotu ekranu podczas korzystania z wielu okien zapewniają płynniejsze przejścia"
+    ],
+    "Łączność": [
+      "Nowość: Xiaomi Smart Hub oferuje sterowanie za pomocą kart, umożliwiając przypinanie często używanych urządzeń, przełączanie jednym dotknięciem oraz łatwiejsze sterowanie urządzeniami w ekosystemie Human × Car × Home.",
+      "Nowość: Łączność Xiaomi na komputery PC i Mac została ulepszona. Możesz korzystać z Xiaomi Hyper XiaoAi do przesyłania plików i synchronizacji powiadomień między komputerem, telefonem i tabletem.",
+      "Nowość: Dwa telefony Xiaomi mogą łączyć się ze sobą, umożliwiając synchronizację połączeń i kodów weryfikacyjnych SMS. Możesz odbierać połączenia i wiadomości na dowolnym telefonie oraz jednym dotknięciem kopiować rozpoznane treści.",
+      "*Przejdź do: Ustawienia > Łączność > Powiadomienia pomiędzy urządzeniami > Odbieranie, wybierz inny telefon Xiaomi zalogowany na to samo konto Xiaomi, włącz powiadomienia o połączeniach i wiadomościach, a następnie upewnij się, że oba telefony są połączone z Internetem."
+    ],
+    "Inne": [
+      "Odwiedź naszą stronę, aby dowiedzieć się więcej: https://hyperos.mi.com/"
+    ]
+  },
+  "logs_fr": {
+    "Optimisation complète des applications système": [
+      "Applications système de base mises à niveau pour les rendre plus utiles et plus faciles à utiliser"
+    ],
+    "Confidentialité et sécurité": [
+      "Nouveau : L^accès sécurisé aux photos et vidéos prend en charge les albums et la recherche intelligente, facilitant ainsi la recherche du contenu souhaité",
+      "Nouveau : Vous pouvez réinitialiser votre verrouillage d’écran si vous l’oubliez. Dans les 96 heures suivant l’ajout d’une empreinte digitale, utilisez votre verrouillage d’écran et votre empreinte digitale précédents pour en définir un nouveau."
+    ],
+    "Expérience de base": [
+      "Réduction de la charge système et de l^utilisation de la mémoire pour des performances fluides et durables",
+      "Nouveau : La planification précise des charges de travail contribue à optimiser les performances globales du système",
+      "Optimisation : La planification de la charge de travail du système gère les tâches plus efficacement, tandis que les instructions redondantes ont été retirées afin d^améliorer les performances et de réduire la consommation d^énergie",
+      "Optimisation : Les charges de travail de traitement du processeur et de rendu du GPU consomment moins d^énergie",
+      "Optimisation : Le rendu graphique réduit la consommation d’énergie et les saccades de l’interface utilisateur",
+      "Optimisation : La mise à l^échelle de la fréquence du jeu offre des taux de rafraîchissement plus stables dans les scénarios exigeants tels que les batailles en équipe",
+      "Nouveau : Le préchargement en mémoire permet aux applications de répondre plus rapidement",
+      "Optimisation : La réservation et l^allocation de mémoire réduisent l^utilisation des ressources et de la mémoire après le démarrage",
+      "Optimisation : La planification des ressources en arrière-plan charge les ressources uniquement lorsque cela est nécessaire et échelonne les tâches en arrière-plan afin de réduire l^utilisation de la mémoire et d^améliorer les performances",
+      "Optimisation : Le préchargement en mémoire et le préchargement du stockage réduisent les saccades et les chutes d’images occasionnelles, accélèrent les démarrages à froid et améliorent la réactivité de l’application",
+      "Nouveau : L’environnement d’exécution d’applications Xiaomi HyperOS permet aux applications système de fonctionner plus fluidement et d’utiliser les ressources plus efficacement",
+      "Optimisation : L^écran d^accueil et les interactions avec la Galerie offrent un affichage plus fluide et des commandes plus réactives",
+      "Optimisation : Galerie et Météo utilisent moins de ressources CPU et mémoire en arrière-plan"
+    ],
+    "Philosophie de design vivant": [
+      "Des visuels système revisités pour un aspect plus soigné",
+      "Nouveau : Un matériau en verre souple réagit aux couleurs environnantes et ajuste automatiquement sa transparence pour un rendu plus raffiné",
+      "Nouveau : Les effets lumineux en verre souple réagissent dynamiquement à vos actions pour des interactions plus fluides",
+      "Nouveau : L’écran de verrouillage offre davantage d’options de personnalisation de l’horloge, notamment la largeur et la hauteur du texte, sa position, la police et le style matériel",
+      "Nouveau : Les notifications peuvent désormais s^afficher sous forme de piles sur l^écran de verrouillage et en bas du panneau de notification pour un accès plus facile et des animations plus fluides",
+      "Nouveau : L’écran d’accueil prend désormais en charge les piles de widgets. Balayez l’écran vers le haut ou vers le bas pour passer d’un widget à l’autre. Plusieurs formes et styles sont disponibles pour une meilleure lisibilité.",
+      "Nouveau : Vous pouvez redimensionner les dossiers de l’écran d’accueil en faisant glisser leurs bords",
+      "Nouveau : Les applications système utilisent une disposition flottante adaptative avec un design repensé qui s^ajuste aux différentes tailles d^écran pour une navigation plus immersive et plus claire",
+      "Nouveau : Les applications tierces prennent en charge les animations de transition fluides",
+      "Optimisation : Les animations d’ouverture et de fermeture pour les applications en mode paysage et les animations de rotation d’écran dans les scénarios multi-fenêtres offrent des transitions plus fluides"
+    ],
+    "Interconnectivité": [
+      "Nouveau : Xiaomi Smart Hub propose des commandes par cartes, vous permettant d^épingler les appareils fréquemment utilisés, de basculer entre les maisons d^un simple clic et de contrôler plus facilement les appareils de Human × Car × Home écosystème",
+      "Nouveau : Interconnectivité Xiaomi pour PC et Mac a été mis à jour. Utilisez Xiaomi Hyper XiaoAi pour transférer des fichiers et synchroniser les notifications entre votre ordinateur, votre téléphone et votre tablette.",
+      "Nouveau : Deux téléphones Xiaomi peuvent désormais se connecter, permettant la synchronisation des appels et des codes de vérification par SMS. Vous pouvez gérer les appels et les messages sur l’un ou l’autre téléphone et copier rapidement le contenu reconnu d’un simple clic.",
+      "*Accédez à Paramètres > Interconnectivité > Notifications entre appareils > Recevoir, sélectionnez un autre téléphone Xiaomi connecté au même Compte Xiaomi, activez les notifications d^appels et de messages, et assurez-vous que les deux téléphones sont connectés à internet"
+    ],
+    "Autre": [
+      "Visitez notre site Web pour en savoir plus : https://hyperos.mi.com/"
+    ]
+  },
+  "logs_it": {
+    "Ottimizzazione completa delle app di sistema": [
+      "App di sistema aggiornate per renderle più utili e facili da utilizzare"
+    ],
+    "Privacy e sicurezza": [
+      "Novità: l^accesso sicuro a foto e video supporta album e ricerca smart, semplificando la ricerca dei contenuti che ti interessano",
+      "Novità: ora puoi reimpostare il blocco schermo se lo dimentichi. Entro 96 ore dall^aggiunta di un^impronta digitale, usa il blocco schermo e l^impronta precedenti per impostarne uno nuovo."
+    ],
+    "Esperienza base": [
+      "Riduzione del carico di sistema e dell^uso della memoria per prestazioni fluide e durature",
+      "Novità: pianificazione precisa del carico di lavoro per ottimizzare le prestazioni di sistema",
+      "Ottimizzazione: la pianificazione del carico di lavoro di sistema gestisce le attività in modo più efficiente, mentre sono state rimosse le istruzioni ridondanti per migliorare le prestazioni e ridurre il consumo energetico",
+      "Ottimizzazione: i carichi di lavoro di elaborazione CPU e rendering GPU consumano meno energia",
+      "Ottimizzazione: il rendering grafico riduce il consumo energetico e gli scatti dell^interfaccia utente",
+      "Ottimizzazione: la scalatura della frequenza di gioco garantisce frame rate più stabili negli scenari più impegnativi, come le battaglie di squadra",
+      "Novità: il precaricamento della memoria aiuta le app a rispondere più velocemente",
+      "Ottimizzazione: la riserva e l^allocazione della memoria riducono l^uso delle risorse e il consumo di memoria dopo l^avvio",
+      "Ottimizzazione: la pianificazione delle risorse in background carica le risorse solo quando necessario e ripartisce le attività in background per ridurre l^utilizzo della memoria e migliorare le prestazioni",
+      "Ottimizzazione: il precaricamento della memoria e il prefetching dell^archiviazione riducono occasionali scatti e cali di frame rate, velocizzano gli avvii a freddo e migliorano la reattività delle app",
+      "Novità: l^ambiente di esecuzione delle app di Xiaomi HyperOS rende le app di sistema più fluide ed efficienti nell^uso delle risorse",
+      "Ottimizzazione: le interazioni della schermata Home e della Galleria offrono immagini più fluide e controlli più reattivi",
+      "Ottimizzazione: Galleria e Meteo utilizzano meno risorse di CPU e memoria in background"
+    ],
+    "Filosofia di design \"Alive\"": [
+      "Grafica di sistema rinnovata per un aspetto più curato",
+      "Novità: un materiale in vetro satinato risponde ai colori circostanti e regola automaticamente la trasparenza per un aspetto più raffinato",
+      "Novità: gli effetti di luce del vetro satinato rispondono dinamicamente alle tue azioni per interazioni più fluide",
+      "Novità: la schermata di blocco offre più opzioni di personalizzazione dell^orologio, tra cui larghezza e altezza del testo, posizione, font e stile del materiale",
+      "Novità: le notifiche possono ora comparire in pile sulla schermata di blocco e nella parte inferiore del pannello delle notifiche, per un accesso più semplice e animazioni più fluide",
+      "Novità: la schermata Home supporta ora le pile di widget. Scorri verso l^alto o il basso per passare da un widget all^altro, con più forme e stili disponibili per una visualizzazione più chiara delle informazioni.",
+      "Novità: puoi ridimensionare le cartelle della schermata Home trascinandone i bordi",
+      "Novità: le app di sistema utilizzano ora una disposizione fluttuante adattiva con un design rinnovato che si adatta alle diverse dimensioni dello schermo, per un^esperienza di navigazione più coinvolgente e intuitiva",
+      "Novità: le app di terze parti supportano animazioni di transizione fluide",
+      "Ottimizzazione: le animazioni di apertura e chiusura per le app in orizzontale e le animazioni di rotazione dello schermo negli scenari con più finestre garantiscono transizioni più fluide"
+    ],
+    "Interconnettività": [
+      "Novità: Xiaomi Smart Hub offre controlli basati su schede, che ti permettono di aggiungere ai preferiti i dispositivi usati più spesso, passare da una casa all^altra con un tocco e controllare più facilmente i dispositivi dell^ecosistema Human × Car × Home",
+      "Novità: Interconnettività Xiaomi per PC e Mac è stata aggiornata. Usa Xiaomi Hyper XiaoAi per trasferire file e sincronizzare le notifiche tra computer, telefono e tablet.",
+      "Novità: due telefoni Xiaomi possono collegarsi tra loro, permettendo la sincronizzazione di chiamate e codici di verifica SMS. Puoi gestire chiamate e messaggi su entrambi i telefoni e copiare rapidamente i contenuti riconosciuti con un tocco.",
+      "*Vai su Impostazioni > Interconnettività > Notifiche multidispositivo > Ricevi, seleziona un altro telefono Xiaomi collegato allo stesso Xiaomi Account, attiva le notifiche di chiamate e messaggi e assicurati che entrambi i telefoni siano connessi a Internet"
+    ],
+    "Altro": [
+      "Scopri di più sul nostro sito web: https://hyperos.mi.com/"
+    ]
+  },
+  "logs_es": {
+    "Optimización integral de las aplicaciones del sistema": [
+      "Se han actualizado las aplicaciones principales del sistema para hacerlas más útiles y fáciles de usar"
+    ],
+    "Privacidad y seguridad": [
+      "Nuevo: El acceso seguro a fotos y vídeos es compatible con álbumes y búsqueda inteligente, lo que facilita encontrar el contenido que buscas",
+      "Nuevo: Puedes restablecer el bloqueo de pantalla si lo olvidas. En un plazo de 96 horas tras añadir una huella dactilar, utiliza tu bloqueo de pantalla anterior y la huella dactilar para configurar uno nuevo."
+    ],
+    "Experiencia básica": [
+      "Menor carga del sistema y uso de memoria para un rendimiento fluido y duradero",
+      "Nuevo: La programación precisa de carga de trabajo ayuda a optimizar el rendimiento de todo el sistema",
+      "Optimización: La planificación de carga de trabajo del sistema gestiona las tareas de forma más eficiente, mientras que se han eliminado las instrucciones redundantes para mejorar el rendimiento y reducir el consumo de energía",
+      "Optimización: Las cargas de trabajo de procesamiento de CPU y renderizado de GPU consumen menos energía",
+      "Optimización: La renderización de gráficos reduce el consumo de energía y los tirones de la interfaz de usuario",
+      "Optimización: El escalado de frecuencia de juego ofrece tasas de fotogramas más estables en escenarios exigentes como las batallas por equipos",
+      "Nuevo: La precarga de memoria ayuda a que las aplicaciones respondan más rápido.",
+      "Optimización: La reserva y asignación de memoria reducen el uso de recursos y de memoria después del arranque",
+      "Optimización: La programación de recursos en segundo plano carga los recursos solo cuando son necesarios y escalona las tareas en segundo plano para reducir el uso de memoria y mejorar el rendimiento",
+      "Optimización: La precarga de memoria y la precarga de almacenamiento reducen los tirones ocasionales y las caídas de fotogramas, aceleran los arranques en frío y mejoran la capacidad de respuesta de la aplicación",
+      "Nuevo: El entorno de ejecución de aplicaciones de Xiaomi HyperOS ayuda a que las aplicaciones del sistema se ejecuten con mayor fluidez y utilicen los recursos de forma más eficiente",
+      "Optimización: Las interacciones en Pantalla de inicio y Galería ofrecen imágenes más fluidas y controles más receptivos",
+      "Optimización: Galería y Tiempo utilizan menos recursos de CPU y memoria en segundo plano"
+    ],
+    "Filosofía de diseño dinámico": [
+      "Elementos visuales del sistema renovados para una apariencia más pulida",
+      "Novedad: Un material de vidrio suave reacciona a los colores del entorno y ajusta automáticamente su transparencia para lograr un aspecto más refinado",
+      "Novedad: Los efectos de iluminación de vidrio suave responden dinámicamente a tus acciones para lograr interacciones más fluidas",
+      "Novedad: La pantalla de bloqueo ofrece más opciones de personalización del reloj, incluyendo el ancho y la altura del texto, la posición, la fuente y el estilo de material",
+      "Novedad: Las notificaciones pueden aparecer apiladas en la Pantalla de bloqueo y en la parte inferior de la Barra de notificaciones para facilitar el acceso y ofrecer animaciones más fluidas",
+      "Novedad: La pantalla de inicio admite agrupar widgets. Desliza el dedo hacia arriba o abajo para cambiar entre widgets; hay disponibles diversas formas y estilos para visualizar la información con mayor claridad",
+      "Novedad: Puedes cambiar el tamaño de las carpetas de la pantalla de inicio arrastrando de sus bordes",
+      "Novedad: Las aplicaciones del sistema utilizan un diseño flotante adaptativo con una estética renovada que se ajusta a diferentes tamaños de pantalla para ofrecer una experiencia de navegación más envolvente y clara",
+      "Novedad: Las aplicaciones de terceros admiten animaciones de transición fluidas",
+      "Optimización: Las animaciones de apertura y cierre para aplicaciones en horizontal y las animaciones de rotación de pantalla en escenarios multiventana ofrecen transiciones más fluidas"
+    ],
+    "Interconectividad": [
+      "Nuevo: Xiaomi Smart Hub ofrece controles basados ​​en tarjetas, lo que permite anclar dispositivos de uso frecuente, alternar entre hogares con un solo toque y controlar dispositivos del ecosistema Human × Car × Home con mayor facilidad",
+      "Nuevo: Se ha mejorado la función de Interconectividad Xiaomi para PC y Mac. Utiliza Xiaomi Hyper XiaoAi para transferir archivos y sincronizar notificaciones entre tu ordenador, teléfono y tablet.",
+      "Nuevo: Dos teléfonos Xiaomi pueden conectarse entre sí, permitiendo sincronizar llamadas y códigos de verificación por SMS. Puedes gestionar llamadas y mensajes en cualquiera de los dos teléfonos y copiar rápidamente el contenido reconocido con un solo toque.",
+      "*Ve a Ajustes > Interconectividad > Notificaciones multidispositivo > Recibir, selecciona otro teléfono Xiaomi que haya iniciado sesión en la misma Cuenta Xiaomi, activa las notificaciones de llamadas y mensajes, y asegúrate de que ambos teléfonos estén conectados a internet"
+    ],
+    "Otros": [
+      "Visita nuestro sitio web para obtener más información: https://hyperos.mi.com/"
+    ]
+  },
+  "logs_pt": {
+    "Otimização compreensiva de apps do sistema": [
+      "Atualizamos os apps do sistema principal para torná-los mais úteis e fáceis de usar"
+    ],
+    "Privacidade e segurança": [
+      "Novidade: o acesso seguro a fotos e vídeos oferece suporte a álbuns e à pesquisa inteligente, facilitando a localização do conteúdo que você deseja",
+      "Novidade: você pode redefinir o bloqueio de tela caso o esqueça. Dentro de 96 horas após adicionar uma impressão digital, use o bloqueio de tela anterior e a impressão digital para definir um novo."
+    ],
+    "Experiência básica": [
+      "Menor carga no sistema e menor uso de memória para um desempenho estável e duradouro",
+      "Novidade: O agendamento preciso das cargas de trabalho ajuda a otimizar o desempenho em todo o sistema",
+      "Otimização: o agendamento da carga de trabalho do sistema lida com as tarefas de forma mais eficiente, enquanto instruções redundantes foram removidas para melhorar o desempenho e reduzir o consumo de energia",
+      "Otimização: as cargas de trabalho de processamento da CPU e de renderização da GPU consomem menos energia",
+      "Otimização: a renderização gráfica reduz o consumo de energia da interface do usuário e as falhas de exibição",
+      "Otimização: o ajuste da frequência do jogo proporciona taxas de quadros mais estáveis em cenários exigentes, como batalhas em equipe",
+      "Novidade: o pré-carregamento de memória ajuda os apps a responderem mais rapidamente",
+      "Otimização: A reserva e a alocação de memória reduzem o uso de recursos e o consumo de memória após a inicialização",
+      "Otimização: O agendamento de recursos em segundo plano carrega os recursos somente quando necessário e escalona as tarefas em segundo plano para reduzir o uso de memória e melhorar o desempenho",
+      "Otimização: o pré-carregamento de memória e a pré-busca de dados em armazenamento reduzem travamentos ocasionais e quedas de quadros, aceleram as inicializações a frio e melhoram a capacidade de resposta dos apps",
+      "Novidade: o ambiente de execução de apps Xiaomi HyperOS ajuda os apps do sistema a funcionarem com mais fluidez e a utilizarem os recursos de forma mais eficiente",
+      "Otimização: as interações na Tela inicial e na Galeria proporcionam imagens mais suaves e controles mais ágeis",
+      "Otimização: os apps Galeria e Clima consomem menos recursos de CPU e memória em segundo plano"
+    ],
+    "Filosofia de Design Vivo": [
+      "Design visual do sistema renovado para uma aparência mais sofisticada",
+      "Novidade: um material de vidro translúcido reage às cores do ambiente e ajusta automaticamente sua transparência, proporcionando um visual mais refinado",
+      "Novidade: os efeitos de iluminação em vidro translúcido respondem dinamicamente às suas ações, proporcionando interações mais fluidas",
+      "Novidade: A Tela de bloqueio oferece mais opções de personalização do relógio, incluindo largura e altura do texto, posição, fonte e estilo de material",
+      "Novidade: as notificações podem aparecer em pilhas na Tela de bloqueio e na parte inferior da Área de notificações, facilitando o acesso e proporcionando animações mais suaves",
+      "Novidade: A Tela inicial agora suporta pilhas de widgets. Deslize para cima ou para baixo para alternar entre os widgets, com várias formas e estilos disponíveis para uma visualização mais clara das informações.",
+      "Novidade: agora é possível ajustar o tamanho das pastas da Tela inicial arrastando suas bordas",
+      "Novidade: os apps do sistema utilizam um layout flutuante adaptável com um design renovado que se ajusta a diferentes tamanhos de tela, proporcionando uma experiência de navegação mais envolvente e mais clara",
+      "Novidade: apps de terceiros oferecem suporte a animações de transição fluidas",
+      "Otimização: as animações de abertura e fechamento para apps em modo paisagem e as animações de rotação da tela em cenários com múltiplas janelas proporcionam transições mais suaves"
+    ],
+    "Interconectividade": [
+      "Novidade: o Xiaomi Smart Hub oferece controles baseados em cartões, permitindo que você fixe dispositivos usados com frequência, alterne entre residências com um único toque e controle dispositivos em todo o ecossistema Human × Car × Home com mais facilidade",
+      "Novidade: a Interconectividade Xiaomi para PC e Mac foi atualizada. Use o Xiaomi Hyper XiaoAi para transferir arquivos e sincronizar notificações entre seu computador, celular e tablet.",
+      "Novidade: Dois telefones da Xiaomi podem se conectar entre si, permitindo que chamadas e códigos de verificação por SMS sejam sincronizados entre eles. Você pode atender chamadas e ler mensagens em qualquer um dos aparelhos e copiar rapidamente o conteúdo reconhecido com um único toque.",
+      "*Acesse Configurações > Interconectividade > Notificações entre dispositivos > Receber, selecione outro telefone Xiaomi conectado à mesma Conta Xiaomi, ative as notificações de chamadas e mensagens e certifique-se de que ambos os telefones estejam conectados à internet"
+    ],
+    "Outros": [
+      "Visite nosso site para saber mais: https://hyperos.mi.com/"
+    ]
+  },
+  "logs_tr": {
+    "Kapsamlı sistem uygulaması optimizasyonu": [
+      "Temel sistem uygulamaları, daha kullanışlı ve kullanımı daha kolay hale getirilmek üzere yükseltildi"
+    ],
+    "Gizlilik ve güvenlik": [
+      "Yeni: Fotoğraflara ve videolara güvenli erişim; albümleri ve akıllı aramayı destekleyerek istediğiniz içeriği bulmanızı kolaylaştırır",
+      "Yeni: Unutursanız ekran kilidinizi sıfırlayabilirsiniz. Parmak izi ekledikten sonraki 96 saat içinde yeni bir ekran kilidi ayarlamak için önceki ekran kilidinizi ve parmak izinizi kullanın."
+    ],
+    "Temel deneyim": [
+      "Uzun süreli ve sorunsuz bir performans için azaltılmış sistem yükü ve bellek kullanımı",
+      "Yeni: Hassas iş yükü zamanlaması, sistem genelindeki performansın optimize edilmesine yardımcı olur",
+      "Optimizasyon: Sistem iş yükü zamanlaması görevleri daha verimli bir şekilde yönetirken performansı artırmak ve güç tüketimini azaltmak amacıyla gereksiz komutlar kaldırılmıştır",
+      "Optimizasyon: CPU işleme ve GPU işleme iş yükleri daha az güç tüketir",
+      "Optimizasyon: Grafik işleme, kullanıcı arayüzü güç tüketimini ve takılmaları azaltır",
+      "Optimizasyon: Oyun frekans ölçeklendirme, takım savaşları gibi zorlu senaryolarda daha istikrarlı kare hızları sunar",
+      "Yeni: Bellek ön yüklemesi, uygulamaların daha hızlı yanıt vermesine yardımcı olur",
+      "Optimizasyon: Bellek ayırma ve tahsisi, başlatma sonrasında kaynak kullanımını ve bellek kullanımını azaltır",
+      "Optimizasyon: Arka plan kaynak zamanlaması, kaynakları yalnızca gerektiğinde yükler ve bellek kullanımını azaltıp performansı artırmak amacıyla arka plan görevlerini kademeli olarak yürütür",
+      "Optimizasyon: Bellek ön yüklemesi ve depolama ön getirme işlemi ara sıra yaşanan takılmaları ve kare kayıplarını azaltır, soğuk başlatma sürelerini kısaltır ve uygulama yanıt verebilirliğini artırır",
+      "Yeni: Xiaomi HyperOS uygulama çalışma zamanı ortamı, sistem uygulamalarının daha sorunsuz çalışmasına ve kaynakları daha verimli kullanmasına yardımcı olur",
+      "Optimizasyon: Ana ekran ve Galeri etkileşimleri daha akıcı görseller ve daha hızlı tepki veren kontroller sunar",
+      "Optimizasyon: Galeri ve Hava durumu arka planda daha az CPU ve bellek kaynağı kullanır"
+    ],
+    "Canlı Tasarım Felsefesi": [
+      "Daha rafine bir görünüm için yenilenmiş sistem görselleri",
+      "Yeni: Yumuşak cam malzemesi, çevredeki renklere tepki vererek daha zarif bir görünüm için şeffaflığını otomatik olarak ayarlar",
+      "Yeni: Yumuşak cam aydınlatma efektleri, daha akıcı etkileşimler için eylemlerinize dinamik bir şekilde yanıt verir",
+      "Yeni: Kilit ekranı, metin genişliği ve yüksekliği, konum, yazı tipi ve malzeme stili dahil olmak üzere daha fazla saat özelleştirme seçeneği sunuyor",
+      "Yeni: Daha kolay erişim ve daha akıcı animasyonlar için bildirimler, Kilit ekranında ve Bildirim çubuğunun alt kısmında yığın halinde görünebilir",
+      "Yeni: Ana ekran, araç yığınlarını destekliyor. Bilgileri daha net bir şekilde görüntülemek için çeşitli şekil ve stillere sahip araçlar arasında geçiş yapmak üzere yukarı veya aşağı kaydırın.",
+      "Yeni: Kenarlarından sürükleyerek Ana ekran klasörlerini yeniden boyutlandırabilirsiniz",
+      "Yeni: Sistem uygulamaları; daha sürükleyici bir gezinme deneyimi ve daha net bir dolaşım için farklı ekran boyutlarına uyum sağlayan, yenilenmiş tasarıma sahip ve uyarlanabilir bir kayan düzen kullanır",
+      "Yeni: Üçüncü taraf uygulamalar kesintisiz geçiş animasyonlarını destekliyor",
+      "Optimizasyon: Manzara modundaki uygulamalar için açılış ve kapanış animasyonları ile çoklu pencere senaryolarındaki ekran döndürme animasyonları daha akıcı geçişler sağlar"
+    ],
+    "Ara bağlantı": [
+      "Yeni: Xiaomi Smart Hub, kart tabanlı kontroller sunarak sık kullanılan cihazları sabitlemenize, tek bir dokunuşla evler arasında geçiş yapmanıza ve Human × Car × Home ekosistemindeki cihazları daha kolay yönetmenize olanak tanır",
+      "Yeni: PC ve Mac için Xiaomi Interconnectivity yükseltildi. Bilgisayarınız, telefonunuz ve tabletiniz arasında dosya aktarmak ve bildirimleri senkronize etmek için Xiaomi Hyper XiaoAi^yi kullanın.",
+      "Yeni: İki Xiaomi telefon birbirine bağlanarak aramaların ve SMS doğrulama kodlarının bu cihazlar arasında senkronize edilmesini sağlar. Aramaları ve mesajları her iki telefondan da yönetebilir, algılanan içerikleri tek bir dokunuşla hızlıca kopyalayabilirsiniz.",
+      "*Ayarlar > Ara bağlantı > Cihazlar arası bildirimler > Al menüsüne gidin, aynı Xiaomi Hesabı^na giriş yapmış başka bir Xiaomi telefonu seçin, arama ve mesaj bildirimlerini açın ve her iki telefonun da internete bağlı olduğundan emin olun"
+    ],
+    "Diğer": [
+      "Daha fazla bilgi edinmek için web sitemizi ziyaret edin: https://hyperos.mi.com/"
+    ]
+  },
+  "logs_vi": {
+    "Tối ưu toàn diện các ứng dụng hệ thống": [
+      "Nâng cấp các ứng dụng hệ thống cốt lõi để hữu ích hơn và dễ sử dụng hơn"
+    ],
+    "Bảo mật và quyền riêng tư": [
+      "Mới: Truy cập an toàn vào ảnh và video hỗ trợ album và tìm kiếm thông minh, giúp bạn dễ dàng tìm thấy nội dung mình muốn",
+      "Mới: Bạn có thể đặt lại khóa màn hình nếu bạn quên. Trong vòng 96 giờ kể từ khi thêm vân tay, sử dụng khóa màn hình và vân tay trước đó để đặt khóa mới."
+    ],
+    "Trải nghiệm cơ bản": [
+      "Giảm tải hệ thống và sử dụng bộ nhớ để đảm bảo hiệu suất mượt mà lâu dài",
+      "Mới: Lên lịch khối lượng công việc chính xác giúp tối ưu hiệu suất toàn hệ thống",
+      "Tối ưu: Lên lịch khối lượng công việc của hệ thống xử lý các nhiệm vụ hiệu quả hơn, đồng thời các lệnh dư thừa đã được loại bỏ để cải thiện hiệu suất và giảm mức tiêu thụ điện năng",
+      "Tối ưu: Xử lý CPU và kết xuất GPU tiêu thụ ít điện năng hơn",
+      "Tối ưu: Kết xuất đồ họa giúp giảm mức tiêu thụ điện năng của giao diện người dùng và hiện tượng giật vấp",
+      "Tối ưu: Tính năng điều chỉnh tần số trò chơi giúp mang lại tốc độ khung hình ổn định hơn trong các tình huống yêu cầu cao, chẳng hạn như các trận chiến đồng đội",
+      "Mới: Tải trước bộ nhớ giúp ứng dụng phản hồi nhanh hơn",
+      "Tối ưu: Lưu trữ và phân bổ bộ nhớ giúp giảm thiểu sử dụng tài nguyên và dung lượng bộ nhớ sau khi khởi động",
+      "Tối ưu: Lên lịch tài nguyên nền chỉ tải tài nguyên khi cần thiết và phân bổ các nhiệm vụ nền hợp lý để giảm mức sử dụng bộ nhớ và cải thiện hiệu suất",
+      "Tối ưu: Tải trước bộ nhớ và tìm nạp trước lưu trữ giúp giảm hiện tượng giật vấp và giảm khung hình không thường xuyên, tăng tốc độ khởi động và cải thiện khả năng phản hồi của ứng dụng",
+      "Mới: Môi trường chạy ứng dụng Xiaomi HyperOS giúp ứng dụng hệ thống hoạt động mượt mà hơn và sử dụng tài nguyên hiệu quả hơn",
+      "Tối ưu: Tương tác với Màn hình chính và Thư viện mang lại hình ảnh mượt mà hơn và điều khiển phản hồi nhanh hơn",
+      "Tối ưu: Thư viện và Thời tiết sử dụng ít tài nguyên bộ nhớ và CPU hơn khi chạy trong nền"
+    ],
+    "Triết lý Thiết kế Năng Động": [
+      "Giao diện hệ thống được làm mới cho vẻ ngoài trau chuốt hơn",
+      "Mới: Chất liệu kính ánh sáng dịu tương tác với màu sắc môi trường xung quanh và tự động điều chỉnh độ trong suốt để tạo nên vẻ ngoài tinh tế hơn",
+      "Mới: Hiệu ứng ánh sáng kính ánh sáng dịu phản ứng linh hoạt với thao tác, mang đến trải nghiệm tương tác mượt mà hơn",
+      "Mới: Màn hình khóa cung cấp nhiều tùy chọn tùy chỉnh đồng hồ hơn, bao gồm chiều rộng và chiều cao văn bản, vị trí, phông chữ và phong cách vật liệu",
+      "Mới: Thông báo có thể hiển thị theo dạng xếp chồng trên Màn hình khóa và ở cuối Thanh thông báo để dễ truy cập hơn và hoạt ảnh mượt mà hơn",
+      "Mới: Màn hình chính hỗ trợ xếp chồng tiện ích. Trượt lên hoặc xuống để chuyển đổi giữa các tiện ích, với nhiều hình dạng và kiểu dáng khác nhau giúp hiển thị thông tin rõ ràng hơn.",
+      "Mới: Bạn có thể thay đổi kích thước các thư mục trên Màn hình chính bằng cách kéo các cạnh",
+      "Mới: Ứng dụng hệ thống sử dụng bố cục nổi thích ứng với thiết kế được làm mới, tự điều chỉnh theo kích thước màn hình khác nhau để mang lại trải nghiệm duyệt web sống động hơn và điều hướng rõ ràng hơn",
+      "Mới: Các ứng dụng của bên thứ ba hỗ trợ ảnh động chuyển tiếp liền mạch",
+      "Tối ưu: Hoạt ảnh mở và đóng ứng dụng trên màn hình ngang và hoạt ảnh xoay màn hình trong trường hợp đa cửa sổ mang lại sự chuyển tiếp mượt mà hơn"
+    ],
+    "Liên thông": [
+      "Mới: Xiaomi Smart Hub cung cấp điều khiển bằng thẻ, cho phép bạn ghim các thiết bị thường dùng, chuyển đổi giữa các ngôi nhà chỉ bằng một lần chạm và điều khiển các thiết bị trong hệ sinh thái Human × Car × Home dễ dàng hơn",
+      "Mới: Liên thông Xiaomi dành cho PC và Mac đã được nâng cấp. Sử dụng Xiaomi Hyper XiaoAi để chuyển tập tin và đồng bộ thông báo giữa máy tính, điện thoại và máy tính bảng.",
+      "Mới: Hai điện thoại Xiaomi có thể kết nối với nhau, cho phép đồng bộ cuộc gọi và mã xác minh SMS. Bạn có thể xử lý cuộc gọi và tin nhắn trên cả hai điện thoại và nhanh chóng sao chép nội dung đã được nhận dạng chỉ với một lần chạm.",
+      "*Vào Cài đặt > Liên thông > Thông báo đa thiết bị > Nhận, chọn điện thoại Xiaomi khác đã đăng nhập vào cùng một Tài khoản Xiaomi, bật thông báo cuộc gọi và tin nhắn, và đảm bảo cả hai điện thoại đều được kết nối internet"
+    ],
+    "Khác": [
+      "Truy cập trang web của chúng tôi để tìm hiểu thêm: https://hyperos.mi.com/"
+    ]
+  },
+  "logs_th": {
+    "การเพิ่มประสิทธิภาพแอประบบอย่างครอบคลุม": [
+      "ปรับปรุงแอปพลิเคชันระบบหลักให้มีประโยชน์และใช้งานง่ายยิ่งขึ้น"
+    ],
+    "ความเป็นส่วนตัวและความปลอดภัย": [
+      "ใหม่: การเข้าถึงรูปภาพและวิดีโออย่างปลอดภัย รองรับอัลบั้มและการค้นหาอัจฉริยะ ทำให้ค้นหาเนื้อหาที่คุณต้องการได้ง่ายขึ้น",
+      "ใหม่: คุณสามารถรีเซ็ตการล็อกหน้าจอได้หากลืม ภายใน 96 ชั่วโมงหลังจากเพิ่มลายนิ้วมือ ให้ใช้ลายนิ้วมือและการล็อกหน้าจอเดิมของคุณเพื่อตั้งค่าใหม่"
+    ],
+    "ประสบการณ์พื้นฐาน": [
+      "ลดภาระการทำงานของระบบและการใช้หน่วยความจำ เพื่อประสิทธิภาพการทำงานที่ราบรื่นยาวนานยิ่งขึ้น",
+      "ใหม่: การจัดตารางงานที่แม่นยำช่วยเพิ่มประสิทธิภาพโดยรวมของระบบ",
+      "การปรับปรุงประสิทธิภาพ: การจัดตารางงานของระบบจัดการงานได้อย่างมีประสิทธิภาพมากขึ้น ในขณะเดียวกันก็ได้ลบคำสั่งที่ซ้ำซ้อนออกเพื่อปรับปรุงประสิทธิภาพและลดการใช้พลังงาน",
+      "การปรับปรุงประสิทธิภาพ: การประมวลผลด้วย CPU และการเรนเดอร์ด้วย GPU ใช้พลังงานน้อยลง",
+      "การปรับปรุงประสิทธิภาพ: การเรนเดอร์กราฟิกช่วยลดการใช้พลังงานของ UI และลดอาการกระตุก",
+      "การปรับปรุงประสิทธิภาพ: การปรับขนาดความถี่ของเกมช่วยให้ได้อัตราเฟรมที่เสถียรยิ่งขึ้นในสถานการณ์ที่ต้องการประสิทธิภาพสูง เช่น การต่อสู้แบบทีม",
+      "ใหม่: การโหลดข้อมูลล่วงหน้าในหน่วยความจำช่วยให้แอปตอบสนองได้เร็วขึ้น",
+      "การปรับปรุงประสิทธิภาพ: การสำรองและจัดสรรหน่วยความจำช่วยลดการใช้ทรัพยากรและการใช้หน่วยความจำหลังจากการเริ่มต้นระบบ",
+      "การปรับปรุงประสิทธิภาพ: การจัดตารางทรัพยากรเบื้องหลังจะโหลดทรัพยากรเฉพาะเมื่อจำเป็นและจัดลำดับงานเบื้องหลังเพื่อลดการใช้หน่วยความจำและปรับปรุงประสิทธิภาพ",
+      "การปรับปรุงประสิทธิภาพ: การโหลดหน่วยความจำล่วงหน้าและการดึงข้อมูลจัดเก็บล่วงหน้าช่วยลดอาการกระตุกและเฟรมดรอปเป็นครั้งคราว เร่งความเร็วในการเริ่มต้นระบบ และปรับปรุงการตอบสนองของแอป",
+      "ใหม่: สภาพแวดล้อมการทำงานของแอป Xiaomi HyperOS ช่วยให้แอปของระบบทำงานได้อย่างราบรื่นยิ่งขึ้นและใช้ทรัพยากรได้อย่างมีประสิทธิภาพมากขึ้น",
+      "การปรับปรุงประสิทธิภาพ: การใช้งานหน้าจอหลักและแกลเลอรีให้ภาพที่ราบรื่นยิ่งขึ้นและการควบคุมที่ตอบสนองได้ดียิ่งขึ้น",
+      "การปรับปรุงประสิทธิภาพ: แอปแกลเลอรีและสภาพอากาศใช้ทรัพยากร CPU และหน่วยความจำน้อยลงในพื้นหลัง"
+    ],
+    "ปรัชญาการออกแบบที่มีชีวิต": [
+      "ปรับปรุงภาพระบบให้ดูสวยงามยิ่งขึ้น",
+      "ใหม่: วัสดุคล้ายกระจกชนิดอ่อนจะตอบสนองต่อสีโดยรอบและปรับความโปร่งใสโดยอัตโนมัติเพื่อรูปลักษณ์ที่ดูประณีตยิ่งขึ้น",
+      "ใหม่: เอฟเฟ็กต์แสงนุ่มนวลบนกระจกจะตอบสนองต่อการกระทำของคุณอย่างไดนามิก เพื่อการโต้ตอบที่ลื่นไหลยิ่งขึ้น",
+      "ใหม่: หน้าจอล็อกมีตัวเลือกการปรับแต่งนาฬิกาเพิ่มเติม รวมถึงความกว้างและความสูงของตัวอักษร ตำแหน่ง แบบอักษร และสไตล์วัสดุ",
+      "ใหม่: การแจ้งเตือนสามารถแสดงเป็นกลุ่มๆ บนหน้าจอล็อกและที่ด้านล่างของแถบการแจ้งเตือน เพื่อให้เข้าถึงได้ง่ายขึ้นและภาพเคลื่อนไหวราบรื่นยิ่งขึ้น",
+      "ใหม่: หน้าจอหลักรองรับการจัดเรียงวิดเจ็ตแบบซ้อนกัน ปัดขึ้นหรือลงเพื่อสลับระหว่างวิดเจ็ต โดยมีรูปทรงและสไตล์ให้เลือกมากมายเพื่อให้มองเห็นข้อมูลได้ชัดเจนยิ่งขึ้น",
+      "ใหม่: คุณสามารถปรับขนาดโฟลเดอร์บนหน้าจอหลักได้โดยการลากขอบของโฟลเดอร์เหล่านั้น",
+      "ใหม่: แอปพลิเคชันในระบบใช้เลย์เอาต์แบบลอยตัวที่ปรับเปลี่ยนได้ พร้อมดีไซน์ใหม่ที่ปรับให้เข้ากับขนาดหน้าจอต่างๆ เพื่อการท่องเว็บที่สมจริงยิ่งขึ้นและการนำทางที่ชัดเจนยิ่งขึ้น",
+      "ใหม่: แอปจากผู้พัฒนาภายนอกรองรับแอนิเมชั่นการเปลี่ยนภาพแบบไร้รอยต่อ",
+      "การปรับปรุงประสิทธิภาพ: แอนิเมชั่นการเปิดและปิดสำหรับแอปในแนวนอน และแอนิเมชั่นการหมุนหน้าจอในสถานการณ์ที่มีหลายหน้าต่าง จะช่วยให้การเปลี่ยนภาพราบรื่นยิ่งขึ้น"
+    ],
+    "การเชื่อมต่อระหว่างกัน": [
+      "ใหม่: Xiaomi Smart Hub มาพร้อมระบบควบคุมแบบใช้การ์ด ช่วยให้คุณปักหมุดอุปกรณ์ที่ใช้บ่อย สลับระหว่างบ้านต่างๆ ได้ด้วยการแตะเพียงครั้งเดียว และควบคุมอุปกรณ์ต่างๆ ในระบบนิเวศ Human × Car × Home ได้ง่ายยิ่งขึ้น",
+      "ใหม่: การเชื่อมต่อโครงข่าย Xiaomi สำหรับ PC และ Mac ได้รับการอัปเกรดแล้ว ใช้ Xiaomi Hyper XiaoAi เพื่อถ่ายโอนไฟล์และซิงค์การแจ้งเตือนระหว่างคอมพิวเตอร์ โทรศัพท์ และแท็บเล็ตของคุณ",
+      "ใหม่: โทรศัพท์ Xiaomi สองเครื่องสามารถเชื่อมต่อกันได้ ทำให้สามารถซิงค์การโทรและรหัสยืนยัน SMS ระหว่างกันได้ คุณสามารถจัดการการโทรและข้อความบนโทรศัพท์เครื่องใดก็ได้ และคัดลอกเนื้อหาที่ตรวจสอบแล้วได้อย่างรวดเร็วด้วยการแตะเพียงครั้งเดียว",
+      "*ไปที่ การตั้งค่า > การเชื่อมต่อระหว่างกัน > การแจ้งเตือนข้ามอุปกรณ์ > รับ เลือกโทรศัพท์ Xiaomi เครื่องอื่นที่ลงชื่อเข้าใช้บัญชี Xiaomi เดียวกัน เปิดใช้งานการแจ้งเตือนการโทรและข้อความ และตรวจสอบให้แน่ใจว่าโทรศัพท์ทั้งสองเครื่องเชื่อมต่อกับอินเทอร์เน็ตแล้ว"
+    ],
+    "อื่นๆ": [
+      "เยี่ยมชมเว็บไซต์ของเราเพื่อเรียนรู้เพิ่มเติม: https://hyperos.mi.com/"
+    ]
+  },
+  "logs_ar": {
+    "التحسين الشامل لتطبيقات النظام": [
+      "ترقية تطبيقات النظام الأساسية لتصبح أكثر فائدة وسهولة في الاستخدام"
+    ],
+    "الخصوصية والأمان": [
+      "جديد: يتيح الوصول الآمن إلى الصور ومقاطع الفيديو استخدام الألبومات والبحث الذكي، مما يسهل العثور على المحتوى الذي تريده",
+      "جديد: يمكنك إعادة تعيين قفل الشاشة إذا نسيته. في خلال 96 ساعة من إضافة بصمة إصبع، يمكنك استخدام قفل الشاشة السابق وبصمة إصبعك لتعيين قفل جديد."
+    ],
+    "التجربة الأساسية": [
+      "تم تقليل استهلاك النظام والذاكرة للحفاظ على سلاسة الأداء لفترة أطول",
+      "جديد: التقدير الدقيق لمهام النظام يساعد على تحسين الأداء بشكل شامل.",
+      "التحسين: إدارة مهام النظام بكفاءة أكبر، مع إزالة التعليمات غير الضرورية لتحسين الأداء وتقليل استهلاك الطاقة",
+      "التحسين: تقليل استهلاك الطاقة أثناء معالجة CPU وعرض الرسومات باستخدام GPU",
+      "التحسين: عرض الرسومات باستهلاك أقل للطاقة وتقليل التقطع في واجهة المستخدم",
+      "التحسين: ضبط تردد الألعاب لزيادة استقرار معدل الإطارات في المشاهد التي تتطلب أداء عالي مثل المعارك الجماعية.",
+      "جديد: التحميل المسبق للذاكرة يساعد التطبيقات على الاستجابة بشكل أسرع.",
+      "التحسين: إدارة حجز الذاكرة وتخصيصها لتقليل استخدام الموارد والذاكرة بعد بدء التشغيل",
+      "التحسين: إدارة موارد الخلفية وتحميلها عند الحاجة، مع توزيع المهام لتقليل استهلاك الذاكرة وتحسين سلاسة الأداء.",
+      "التحسين: التحميل المسبق للذاكرة والتخزين لتقليل التقطع وفقدان الإطارات، وتسريع بدء تشغيل التطبيقات وتحسين استجابتها.",
+      "جديد: بيئة تشغيل تطبيقات Xiaomi HyperOS تساعد تطبيقات النظام على العمل بسلاسة أكبر واستخدام الموارد بكفاءة أعلى",
+      "التحسين: أصبحت التفاعلات مع الشاشة الرئيسية والمعرض أكثر سلاسة، مع استجابة أسرع لعناصر التحكم",
+      "التحسين: تقليل استخدام المعالج والذاكرة في الخلفية لتطبيقي المعرض والطقس"
+    ],
+    "فلسفة تصميم نابضة بالحياة": [
+      "تصميم مرئي محدث للنظام لمظهر أكثر أناقة",
+      "جديد: يتفاعل تأثير الزجاج الناعم مع الألوان المحيطة ويضبط شفافيته تلقائيًا للحصول على مظهر أكثر أناقة",
+      "جديد: تتفاعل تأثيرات الإضاءة الزجاجية الناعمة مع إجراءاتك بشكل ديناميكي لتوفير تجربة أكثر سلاسة",
+      "جديد: توفر شاشة القفل المزيد من خيارات تخصيص الساعة، بما في ذلك عرض النص وارتفاعه وموضعه والخط ونمط التصميم",
+      "جديد: يمكن عرض الإشعارات في مجموعات على شاشة القفل وأسفل لوحة الإشعارات، لسهولة الوصول إليها وحركات أكثر سلاسة",
+      "جديد: تدعم الشاشة الرئيسية تجميع الأدوات والتبديل بينها بالسحب لأعلى أو لأسفل، مع توفر أشكال وأنماط متعددة لعرض المعلومات بشكل أوضح.",
+      "جديد: يمكنك تغيير حجم مجلدات الشاشة الرئيسية بسحب حوافها",
+      "جديد: تستخدم تطبيقات النظام تخطيط عائم متكيف بتصميم جديد يتناسب مع أحجام الشاشات المختلفة، لتصفح أكثر سلاسة وتنقل أوضح.",
+      "جديد: تدعم تطبيقات الجهات الخارجية حركات انتقال سلسة",
+      "التحسين: حركات أكثر سلاسة عند فتح التطبيقات وإغلاقها في الوضع الأفقي، وعند تدوير الشاشة في وضع النوافذ المتعددة."
+    ],
+    "الربط بين الأجهزة": [
+      "جديد: يوفر Xiaomi Smart Hub عناصر تحكم على شكل بطاقات، مما يتيح لك تثبيت الأجهزة المستخدمة بشكل متكرر، والتبديل بين المنازل بنقرة واحدة، والتحكم بسهولة أكبر في الأجهزة ضمن منظومة Human × Car × Home",
+      "جديد: تمت ترقية Xiaomi Interconnectivity لأجهزة PC و Mac. يمكنك استخدم Xiaomi Hyper XiaoAi لنقل الملفات ومزامنة الإشعارات بين الكمبيوتر والهاتف والجهاز اللوحي.",
+      "جديد: يمكن ربط هاتفي Xiaomi معًا لمزامنة المكالمات ورموز التحقق عبر الرسائل النصية بينهما. ويمكنك الرد على المكالمات والرسائل من أي من الهاتفين، ونسخ المحتوى الذي تم التعرف عليه بسرعة بنقرة واحدة.",
+      "*انتقل إلى الإعدادات > الربط بين الأجهزة > الإشعارات عبر الأجهزة > استلام، وحدد هاتف Xiaomi آخر مسجل الدخول منه على حساب Xiaomi نفسه، ثم قم بتفعيل إشعارات المكالمات والرسائل، وتأكد من اتصال كلا الهاتفين بالإنترنت."
+    ],
+    "أخرى": [
+      "قم بزيارة موقعنا الإلكتروني لمعرفة المزيد: https://hyperos.mi.com/"
+    ]
+  },
+  "logs_in": {
+    "व्यापक सिस्टम ऐप्प ऑप्टिमाइज़ेशन": [
+      "कोर सिस्टम ऐप्स को ज़्यादा उपयोगी और इस्तेमाल में आसान बनाने के लिए अपग्रेड किया गया है"
+    ],
+    "गोपनीयता और सुरक्षा": [
+      "नया: फ़ोटो और वीडियो को सुरक्षित तरीके से एक्सेस करने की सुविधा में अब एल्बम और स्मार्ट खोज समर्थित हैं, इससे अपनी ज़रूरत का कंटेंट ढूंढना और भी आसान हो जाता है",
+      "नया: अगर आप स्क्रीन लॉक भूल जाते हैं, तो अब उसे रीसेट कर सकते हैं. फिंगरप्रिंट जोड़ने के 96 घंटे के भीतर, अपना पिछला स्क्रीन लॉक और फिंगरप्रिंट इस्तेमाल करके नया स्क्रीन लॉक सेट किया जा सकता है."
+    ],
+    "शुरुआती अनुभव": [
+      "लंबे समय तक सुचारू परफ़ॉर्मेंस के लिए सिस्टम लोड और मेमोरी का इस्तेमाल कम किया गया",
+      "नया: सटीक वर्कलोड शेड्यूलिंग पूरे सिस्टम की परफ़ॉर्मेंस को बेहतर बनाने में मदद करती है",
+      "ऑप्टिमाइज़ेशन: सिस्टम वर्कलोड शेड्यूलिंग टास्क को ज़्यादा बेहतर ढंग से संभालती है, जबकि परफ़ॉर्मेंस को बेहतर बनाने और पावर की खपत कम करने के लिए अनावश्यक निर्देशों को हटा दिया गया है.",
+      "ऑप्टिमाइज़ेशन: CPU प्रोसेसिंग और GPU रेंडरिंग वर्कलोड कम पावर की खपत करते हैं",
+      "ऑप्टिमाइज़ेशन: ग्राफ़िक्स रेंडरिंग UI पावर की खपत और अटकने को कम करता है",
+      "ऑप्टिमाइज़ेशन: गेम फ़्रीक्वेंसी स्केलिंग, टीम बैटल जैसे अधिक चुनौतीपूर्ण परिदृश्यों में अधिक स्थिर फ़्रेम दर मुहैया करवाती है",
+      "नया: मेमोरी प्रीलोडिंग से ऐप्स तेज़ी से प्रतिक्रिया दे पाते हैं",
+      "ऑप्टिमाइज़ेशन: मेमोरी रिज़र्वेशन और एलोकेशन, स्टार्टअप के बाद रिसोर्स और मेमोरी के इस्तेमाल को कम करते हैं",
+      "ऑप्टिमाइज़ेशन: बैकग्राउंड रिसोर्स शेड्यूलिंग ज़रूरत के समय ही रिसोर्स लोड करती है और बैकग्राउंड टास्क को स्मार्ट तरीके से चरणों में चलाती है, जिससे मेमोरी का बेहतर प्रबंधन होता है और परफ़ॉर्मेंस अधिक तेज़ और सुचारु रहती है.",
+      "ऑप्टिमाइज़ेशन: मेमोरी प्रीलोडिंग और स्टोरेज प्रीफ़ेचिंग से ऐप्प में होने वाली रुकावट और वीडियो/एनिमेशन में अटकने की समस्या कम होती है, इससे ऐप्प जल्दी खुलता है और तेजी से काम करता है",
+      "नया: Xiaomi HyperOS का ऐप्प रनटाइम एनवायरनमेंट सिस्टम ऐप्स को अधिक सहजता से चलाने और संसाधनों का अधिक कुशल उपयोग करने में मदद करता है",
+      "ऑप्टिमाइज़ेशन: होम स्क्रीन और गैलरी पर इंटरैक्शन अब अधिक सहज विज़ुअल्स और बेहतर प्रतिक्रिया कंट्रोल देते हैं",
+      "ऑप्टिमाइज़ेशन: गैलरी और मौसम बैकग्राउंड में कम CPU और मेमोरी रिसोर्स इस्तेमाल करते हैं"
+    ],
+    "जीवित डिज़ाइन तत्वज्ञान": [
+      "बेहतर और आकर्षक लुक के लिए सिस्टम के विज़ुअल्स को नया रूप दिया गया है",
+      "नया: सॉफ़्ट ग्लास डिज़ाइन आस-पास के रंगों के अनुसार खुद को बदलता है और पारदर्शिता को अपने आप एडजस्ट करता है, जिससे लुक और भी बेहतर और आकर्षक दिखाई देता है",
+      "नया: सॉफ़्ट ग्लास लाइटिंग इफ़ेक्ट्स आपके एक्शन के हिसाब से तेज़ी से बदलते हैं, जिससे इंटरैक्शन और भी सहज और बेहतर महसूस होता है",
+      "नया: लॉक स्क्रीन पर अब घड़ी को अपनी पसंद के अनुसार कस्टमाइज़ करने के और भी विकल्प हैं. आप टेक्स्ट की चौड़ाई और ऊंचाई, उसकी जगह, फ़ॉन्ट और स्टाइल को बदल सकते हैं",
+      "नया: आसान एक्सेस और सहज एनिमेशन के लिए सूचनाएं लॉक स्क्रीन पर और सूचना शेड के नीचे स्टैक में दिखाई दे सकती हैं",
+      "नया: होम स्क्रीन पर अब विजेट स्टैक समर्थित है. ऊपर या नीचे स्वाइप करके अलग-अलग विजेट के बीच आसानी से स्विच किया जा सकता है. जानकारी को और साफ़ तरीके से देखने के लिए कई आकार और स्टाइल के विकल्प भी उपलब्ध हैं.",
+      "नया: होम स्क्रीन पर अब फ़ोल्डर के किनारों को खींचकर उनका आकार अपनी पसंद के अनुसार बदला जा सकता है",
+      "नया: सिस्टम ऐप्स में अब नया और बेहतर डिज़ाइन वाला फ़्लोटिंग लेआउट है, जो स्क्रीन के आकार के अनुसार अपने-आप एडजस्ट हो जाता है. इससे कंटेंट देखना ज़्यादा आसान और नेविगेशन ज़्यादा साफ़ और सहज हो जाता है",
+      "नया: तृतीय-पक्ष ऐप्स ट्रांज़िशन एनिमेशन ज्यादा सहज और लगातार दिखाई देते हैं",
+      "ऑप्टिमाइज़ेशन: लैंडस्केप मोड वाले ऐप्स को खोलने-बंद करने और मल्टी-विंडो में स्क्रीन घुमाने पर होने वाले एनिमेशन अब अधिक सहज और बेहतर तरीके से चलते हैं"
+    ],
+    "इंटरकनेक्टिविटी": [
+      "नया: Xiaomi Smart Hub में अब कार्ड-आधारित कंट्रोल मिलता है, इसमें आप अक्सर इस्तेमाल किए जाने वाले डिवाइस को पिन कर सकते हैं, एक टैप में अलग-अलग घरों के बीच स्विच कर सकते हैं और Human × Car × Home इकोसिस्टम में डिवाइस को पहले से ज़्यादा आसानी से कंट्रोल कर सकते हैं",
+      "नया: PC और Mac के लिए Xiaomi इंटरकनेक्टिविटी को अपग्रेड किया गया है. अपने कंप्यूटर, फ़ोन और टैबलेट के बीच फ़ाइलें ट्रांसफ़र करने और सूचनाएं सिंक करने के लिए Xiaomi Hyper XiaoAi का उपयोग करें.",
+      "नया: Xiaomi के दो फ़ोन एक-दूसरे से कनेक्ट हो सकते हैं, जिससे उन पर कॉल और एसएमएस सत्यापन कोड सिंक हो जाते हैं. आप किसी भी फ़ोन पर कॉल और संदेश देख सकते हैं और एक टैप से पहचाने गए कंटेंट को तेज़ी से कॉपी कर सकते हैं.",
+      "सेटिंग्स > इंटरकनेक्टिविटी > क्रॉस-डिवाइस सूचनाएं > पाएं पर जाएं, उसी Xiaomi खाते से साइन-इन किया हुआ दूसरा Xiaomi फ़ोन चुनें, कॉल और संदेश सूचनाएं चालू करें और यह पक्का करें कि दोनों फ़ोन इंटरनेट से कनेक्टेड हों"
+    ],
+    "अन्य": [
+      "ज़्यादा जाननें के लिए हमारी वेबसाइट पर जाएं: https://hyperos.mi.com/"
+    ]
+  }
+}

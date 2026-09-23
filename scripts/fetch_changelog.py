@@ -218,7 +218,7 @@ def collect_pending_ids(locales: list[dict], min_id: int = 0, limit: int = 0) ->
 		column = cfg['column']
 		try:
 			result = common.DatabaseManager.execute(
-				f"SELECT id FROM roms WHERE {column} IS NULL AND branch != 'X' ORDER BY id DESC",
+				f"SELECT id FROM roms WHERE logs_zh IS NULL AND branch != 'X' AND (tag != 'CnOB' OR tag IS NULL) ORDER BY id DESC",
 				fetch_one=False, raise_on_error=True
 			)
 		except Exception as exc:
