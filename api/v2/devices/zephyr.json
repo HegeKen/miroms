@@ -126,6 +126,48 @@
       }
     },
     {
+      "branchCode": "zephyr_dc_global",
+      "brand": [
+        "REDMI"
+      ],
+      "device": {
+        "zh": "REDMI Note 17 4G",
+        "en": "REDMI Note 17 4G"
+      },
+      "idtag": "GBDC",
+      "tag": "MIDC",
+      "branchtag": "F",
+      "name": {
+        "zh": "国际 DC 正式版",
+        "en": "Global DC Stable"
+      },
+      "table": [
+        "os",
+        "android",
+        "release",
+        "aspatch",
+        "recovery",
+        "fastboot"
+      ],
+      "show": "0",
+      "carrier": [
+        "dc"
+      ],
+      "region": "global",
+      "zone": "2",
+      "ep": "0",
+      "roms": {
+        "OS3.0.303.0.WBUMIDC": {
+          "os": "OS3.0.303.0.WBUMIDC",
+          "android": "16.0",
+          "release": "",
+          "aspatch": "",
+          "recovery": "zephyr_dc_global-ota_full-OS3.0.303.0.WBUMIDC-user-16.0-09c9b8ac0e.zip",
+          "fastboot": "zephyr_dc_global_images_OS3.0.303.0.WBUMIDC_20260803.0000.00_16.0_global_dc_c5693f00c1.tgz"
+        }
+      }
+    },
+    {
       "branchCode": "zephyr_eea_global",
       "brand": [
         "REDMI"
@@ -164,6 +206,48 @@
           "aspatch": "2026-08-01",
           "recovery": "zephyr_eea_global-ota_full-OS3.0.305.0.WBUEUDM-user-16.0-5a0912999a.zip",
           "fastboot": "zephyr_eea_global_images_OS3.0.305.0.WBUEUDM_20260803.0000.00_16.0_eea_c28c5c5bed.tgz"
+        }
+      }
+    },
+    {
+      "branchCode": "zephyr_ru_global",
+      "brand": [
+        "REDMI"
+      ],
+      "device": {
+        "zh": "REDMI Note 17 4G",
+        "en": "REDMI Note 17 4G"
+      },
+      "idtag": "RUSO",
+      "tag": "RUXM",
+      "branchtag": "F",
+      "name": {
+        "zh": "俄罗斯正式版",
+        "en": "Russia Stable"
+      },
+      "table": [
+        "os",
+        "android",
+        "release",
+        "aspatch",
+        "recovery",
+        "fastboot"
+      ],
+      "show": "1",
+      "carrier": [
+        ""
+      ],
+      "region": "ru",
+      "zone": "2",
+      "ep": "0",
+      "roms": {
+        "OS3.0.306.0.WBURUXM": {
+          "os": "OS3.0.306.0.WBURUXM",
+          "android": "16.0",
+          "release": "2026-09-24",
+          "aspatch": "2026-08-01",
+          "recovery": "zephyr_ru_global-ota_full-OS3.0.306.0.WBURUXM-user-16.0-58834b393f.zip",
+          "fastboot": "zephyr_ru_global_images_OS3.0.306.0.WBURUXM_20260820.0000.00_16.0_ru_d614024109.tgz"
         }
       }
     }
