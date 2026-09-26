@@ -12,7 +12,7 @@ unreleased = ['arctic', 'coral']
 currentStable = [
 		'agate', 'air', 'alioth', 'amethyst', 'annibale', 'apollo', 'ares', 'aristotle', 'athens', 'aurora', 'babylon',
 		'beryl', 'biloba', 'bixi', 'blue', 'breeze', 'brussels', 'byron', 'camellia', 'cannon', 'cas', 'cetus', 'chagall',
-		'charoite', 'chenfeng', 'chopin', 'cmi', 'corot', 'courbet', 'creek', 'cupid', 'curtana_in_rf', 'dada', 'dagu', 'dali',
+		'charoite', 'chenfeng', 'chopin', 'cmi', 'corot', 'courbet', 'creek', 'cupid', 'dada', 'dagu', 'dali',
 		'dandelion_c3l2', 'dash', 'daumier', 'degas', 'dew', 'dijun', 'diting', 'dizi', 'duchamp', 'earth', 'elish', 'emerald',
 		'emerald_r', 'enuma', 'erhu', 'evergo', 'evergreen', 'fire', 'flame', 'flare', 'fleur', 'flourite', 'flute', 'fog',
 		'frost', 'fuxi', 'gale', 'garnet', 'goku', 'gold', 'goya', 'guitar', 'haotian', 'haydn', 'hongkong', 'houji', 'ice',
