@@ -141,13 +141,18 @@ def get_changelog_for_device(info: dict, lang: str, form: dict | None = None) ->
 
 
 def is_same_log(left: str | None, right: str | None) -> bool:
-	"""比较两条日志 JSON 是否等价（用于判断接口是否回落到英文）"""
+	"""比较两条日志是否等价（用于判断接口是否回落到英文）
+
+	left 为接口返回的原文 JSON；right 为库中现值（可能是 ID 引用结构），
+	比较前统一归一化为原文对象。
+	"""
 	if not left or not right:
 		return False
-	try:
-		return json.loads(left) == json.loads(right)
-	except (json.JSONDecodeError, TypeError):
-		return str(left).strip() == str(right).strip()
+	lval = common.LogStore.normalize_json(left)
+	rval = common.LogStore.normalize_json(right)
+	if isinstance(lval, (dict, list)) and isinstance(rval, (dict, list)):
+		return lval == rval
+	return str(left).strip() == str(right).strip()
 
 
 def write_log_column(rom_id: int, column: str, log: str, region: str,
@@ -165,17 +170,20 @@ def write_log_column(rom_id: int, column: str, log: str, region: str,
 			print(f"\n{prefix}将写入 {column} id={rom_id}: {str(log)[:80]}...")
 		return True
 
+	# 原文 JSON -> logs 表 ID 引用结构（幂等；见 miroms/logs_store.py）
+	encoded = common.LogStore.encode_value(log)
+
 	try:
 		if region == 'cn':
 			common.DatabaseManager.execute(
 				f"UPDATE roms SET {column} = %s, release_date = %s WHERE id = %s",
-				params=(log, date.today().strftime('%Y-%m-%d'), rom_id),
+				params=(encoded, date.today().strftime('%Y-%m-%d'), rom_id),
 				raise_on_error=True
 			)
 		else:
 			common.DatabaseManager.execute(
 				f"UPDATE roms SET {column} = %s WHERE id = %s",
-				params=(log, rom_id),
+				params=(encoded, rom_id),
 				raise_on_error=True
 			)
 	except Exception as exc:

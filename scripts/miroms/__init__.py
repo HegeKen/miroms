@@ -11,6 +11,7 @@ miroms - 小米 ROM 数据管理包
     recorder    - 数据记录管理 (DataRecorder)
     network     - 网络请求客户端 (NetworkClient)
     changelog   - 更新日志管理 (ChangelogManager)
+    logs_store  - 更新日志字典化存储 (LogStore)
     validator   - 数据校验 (DataValidator)
     exporters   - 数据导出 (exportV1, exportV2, exportV3)
 """
@@ -28,6 +29,7 @@ from miroms.firmware import FirmwareParser
 from miroms.recorder import DataRecorder
 from miroms.network import NetworkClient
 from miroms.changelog import ChangelogManager
+from miroms.logs_store import LogStore
 from miroms.validator import DataValidator
 from miroms.exporters import exportV1, exportV2, exportV3
 
@@ -44,7 +46,7 @@ __all__ = [
 	'DatabaseManager', 'CryptoManager',
 	# 业务
 	'FirmwareParser', 'DataRecorder', 'NetworkClient',
-	'ChangelogManager', 'DataValidator',
+	'ChangelogManager', 'DataValidator', 'LogStore',
 	# 导出
 	'exportV1', 'exportV2', 'exportV3',
 ]

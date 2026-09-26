@@ -8,6 +8,7 @@ from typing import Set, List, Tuple, Dict, Any
 from miroms.database import DatabaseManager
 from miroms.constants import branches, CHANGELOG_EXTRA_COLUMNS
 from miroms.data import unreleased, DEVICE_NAME_ALIASES
+from miroms.logs_store import LogStore
 from miroms.utils import FileUtils
 
 # 导出目录基准路径（使用绝对路径，避免 cwd 依赖）
@@ -28,7 +29,11 @@ def rom_log_index_map(extra_log_columns: List[str]) -> Dict[str, int]:
 
 
 def parse_rom_logs(rom: Tuple, index_map: Dict[str, int]) -> Dict[str, Any]:
-		"""把一行 roms 数据中所有非空的更新日志列解析为 {列名: 解析后的日志}"""
+		"""把一行 roms 数据中所有非空的更新日志列解析为 {列名: 日志对象}
+
+		列内容为 logs 表 ID 引用结构（[[模块ID,[条目ID,...]], ...]）时，
+		经 LogStore 内存映射还原为原文 {"模块": ["条目", ...]}，保证导出格式不变。
+		"""
 		logs: Dict[str, Any] = {}
 		for column, index in index_map.items():
 				if len(rom) <= index:
@@ -37,7 +42,8 @@ def parse_rom_logs(rom: Tuple, index_map: Dict[str, int]) -> Dict[str, Any]:
 				if not value:
 						continue
 				try:
-						logs[column] = json.loads(value) if isinstance(value, str) else value
+						parsed = json.loads(value) if isinstance(value, str) else value
+						logs[column] = LogStore.decode_value(parsed)
 				except (json.JSONDecodeError, TypeError):
 						logs[column] = value
 		return logs

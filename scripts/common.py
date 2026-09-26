@@ -17,6 +17,7 @@ from miroms.firmware import FirmwareParser
 from miroms.recorder import DataRecorder
 from miroms.network import NetworkClient
 from miroms.changelog import ChangelogManager
+from miroms.logs_store import LogStore
 from miroms.validator import DataValidator
 from miroms.exporters import exportV1, exportV2, exportV3, export_series_index, export_statistics, load_series_data
 import logging
