@@ -17,7 +17,10 @@ EXCLUDED_FILES = {
 }
 
 # HTML 页面目录（按需修改为本地路径）
-TARGET_DIRECTORY = "../Sources/xmfirmwareupdater.github.io/pages/hyperos"
+TARGET_DIRECTORIES = [
+	'/Users/hegeken/Desktop/Codes/Sources/xmfirmwareupdater.github.io/pages/hyperos',
+	'/Users/hegeken/Desktop/Codes/Sources/xmfirmwareupdater.github.io/pages/miui',
+]
 FILENAME_SPAN_ID = 'filename'
 
 
@@ -80,7 +83,9 @@ def process_directory(directory: str) -> None:
 
 def main() -> None:
 	print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 开始扫描 XFU HTML 页面...")
-	process_directory(TARGET_DIRECTORY)
+	for directory in TARGET_DIRECTORIES:
+		print(f"\n--- 扫描目录: {directory} ---")
+		process_directory(directory)
 	print(f"\n[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 扫描完成")
 
 
