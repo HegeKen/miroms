@@ -1509,7 +1509,7 @@
     "release": "2026-09-30",
     "aspatch": "2026-09-01",
     "recovery": "steppe_global-ota_full-OS3.0.313.0.WAVMIXM-user-16.0-ec59f294cf.zip",
-    "fastboot": ""
+    "fastboot": "steppe_global_images_OS3.0.313.0.WAVMIXM_20260919.0000.00_16.0_global_81c0055882.tgz"
   },
   {
     "os": "OS3",
@@ -2230,7 +2230,7 @@
     "release": "2026-09-22",
     "aspatch": "2026-08-01",
     "recovery": "songyuan-ota_full-OS3.0.310.0.WGNCNXM-user-16.0-bd15542a34.zip",
-    "fastboot": ""
+    "fastboot": "songyuan_images_OS3.0.310.0.WGNCNXM_20260909.0000.00_16.0_cn_713f062d5d.tgz"
   },
   {
     "os": "OS3",
@@ -2549,6 +2549,30 @@
   {
     "os": "OS3",
     "bigver": "HyperOS 3",
+    "device": "lapis",
+    "name": {
+      "zh": "REDMI Note 15 Pro 5G",
+      "en": "REDMI Note 15 Pro 5G"
+    },
+    "brand": [
+      "REDMI"
+    ],
+    "version": "OS3.0.309.0.WPPMIXM",
+    "android": "16.0",
+    "region": "global",
+    "zone": "2",
+    "branchName": {
+      "zh": "国际正式版",
+      "en": "Global Stable"
+    },
+    "release": "2026-09-30",
+    "aspatch": "2026-09-01",
+    "recovery": "lapis_global-ota_full-OS3.0.309.0.WPPMIXM-user-16.0-0745344e5b.zip",
+    "fastboot": ""
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
     "device": "songyuan",
     "name": {
       "zh": "REDMI K100 Pro Max",
@@ -2568,7 +2592,7 @@
     "release": "2026-09-25",
     "aspatch": "2026-08-01",
     "recovery": "songyuan_global-ota_full-OS3.0.309.0.WGNMIXM-user-16.0-84cf44010c.zip",
-    "fastboot": ""
+    "fastboot": "songyuan_global_images_OS3.0.309.0.WGNMIXM_20260922.0000.00_16.0_global_be005c0bcd.tgz"
   },
   {
     "os": "OS3",
@@ -2640,7 +2664,7 @@
     "release": "2026-09-23",
     "aspatch": "2026-08-01",
     "recovery": "shennong-ota_full-OS3.0.309.0.WNBCNXM-user-16.0-ab2b836306.zip",
-    "fastboot": ""
+    "fastboot": "shennong_images_OS3.0.309.0.WNBCNXM_20260908.0000.00_16.0_cn_31351cca97.tgz"
   },
   {
     "os": "OS3",
@@ -3242,6 +3266,31 @@
     "aspatch": "2026-08-01",
     "recovery": "iolite_global-ota_full-OS3.0.308.0.WDQMIXM-user-16.0-f225ca06a9.zip",
     "fastboot": "iolite_global_images_OS3.0.308.0.WDQMIXM_20260917.0000.00_16.0_global_79ca086f65.tgz"
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
+    "device": "malachite",
+    "name": {
+      "zh": "Redmi Note 14 Pro / POCO X7",
+      "en": "Redmi Note 14 Pro / POCO X7"
+    },
+    "brand": [
+      "Redmi",
+      "POCO"
+    ],
+    "version": "OS3.0.308.0.WOOCNXM",
+    "android": "16.0",
+    "region": "cn",
+    "zone": "1",
+    "branchName": {
+      "zh": "中国大陆正式版",
+      "en": "China Mainland Stable"
+    },
+    "release": "2026-09-22",
+    "aspatch": "2026-08-01",
+    "recovery": "malachite-ota_full-OS3.0.308.0.WOOCNXM-user-16.0-48049ecf6e.zip",
+    "fastboot": ""
   },
   {
     "os": "OS3",
@@ -3938,6 +3987,30 @@
     "release": "2026-06-30",
     "aspatch": "2026-06-01",
     "recovery": "chagall-ota_full-OS3.0.307.5.WPTCNXM-user-16.0-54f10a18f9.zip",
+    "fastboot": ""
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
+    "device": "brussels",
+    "name": {
+      "zh": "REDMI Note 17 Pro Max",
+      "en": "REDMI Note 17 Pro Max"
+    },
+    "brand": [
+      "REDMI"
+    ],
+    "version": "OS3.0.307.0.WDREUXM",
+    "android": "16.0",
+    "region": "eea",
+    "zone": "2",
+    "branchName": {
+      "zh": "欧洲EEA正式版",
+      "en": "Europe EEA Stable"
+    },
+    "release": "2026-09-30",
+    "aspatch": "2026-08-01",
+    "recovery": "brussels_eea_global-ota_full-OS3.0.307.0.WDREUXM-user-16.0-4df85570f2.zip",
     "fastboot": ""
   },
   {
@@ -7083,6 +7156,55 @@
   {
     "os": "OS3",
     "bigver": "HyperOS 3",
+    "device": "corot",
+    "name": {
+      "zh": "小米 13T Pro / Redmi K60 至尊版",
+      "en": "Xiaomi 13T Pro / Redmi K60 Ultra"
+    },
+    "brand": [
+      "Xiaomi",
+      "Redmi"
+    ],
+    "version": "OS3.0.305.0.WMLCNXM",
+    "android": "16.0",
+    "region": "cn",
+    "zone": "1",
+    "branchName": {
+      "zh": "中国大陆正式版",
+      "en": "China Mainland Stable"
+    },
+    "release": "2026-09-30",
+    "aspatch": "2026-09-01",
+    "recovery": "corot-ota_full-OS3.0.305.0.WMLCNXM-user-16.0-4beff56444.zip",
+    "fastboot": ""
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
+    "device": "brussels",
+    "name": {
+      "zh": "REDMI Note 17 Pro Max",
+      "en": "REDMI Note 17 Pro Max"
+    },
+    "brand": [
+      "REDMI"
+    ],
+    "version": "OS3.0.305.0.WDRJPXM",
+    "android": "16.0",
+    "region": "jp",
+    "zone": "2",
+    "branchName": {
+      "zh": "日本正式版",
+      "en": "Japan Stable"
+    },
+    "release": "2026-09-30",
+    "aspatch": "2026-08-01",
+    "recovery": "brussels_jp_global-ota_full-OS3.0.305.0.WDRJPXM-user-16.0-2635db8514.zip",
+    "fastboot": ""
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
     "device": "brussels",
     "name": {
       "zh": "REDMI Note 17 Pro Max",
@@ -7102,7 +7224,7 @@
     "release": "2026-09-30",
     "aspatch": "2026-08-01",
     "recovery": "brussels_tw_global-ota_full-OS3.0.305.0.WDRTWXM-user-16.0-44efef71c3.zip",
-    "fastboot": ""
+    "fastboot": "brussels_tw_global_images_OS3.0.305.0.WDRTWXM_20260917.0000.00_16.0_tw_a1fcc5d08e.tgz"
   },
   {
     "os": "OS3",
@@ -7126,7 +7248,7 @@
     "release": "2026-09-29",
     "aspatch": "2026-08-01",
     "recovery": "erhu_global-ota_full-OS3.0.305.0.WDOMIXM-user-16.0-55ff2a788b.zip",
-    "fastboot": ""
+    "fastboot": "erhu_global_images_OS3.0.305.0.WDOMIXM_20260915.0000.00_16.0_global_ae225e77c9.tgz"
   },
   {
     "os": "OS3",
@@ -7372,6 +7494,30 @@
   {
     "os": "OS3",
     "bigver": "HyperOS 3",
+    "device": "creek",
+    "name": {
+      "zh": "REDMI 15 4G",
+      "en": "REDMI 15 4G"
+    },
+    "brand": [
+      "REDMI"
+    ],
+    "version": "OS3.0.305.0.WBOMIXM",
+    "android": "16.0",
+    "region": "global",
+    "zone": "2",
+    "branchName": {
+      "zh": "国际正式版",
+      "en": "Global Stable"
+    },
+    "release": "2026-09-23",
+    "aspatch": "2026-09-01",
+    "recovery": "creek_global-ota_full-OS3.0.305.0.WBOMIXM-user-16.0-c0a5c5e1c2.zip",
+    "fastboot": ""
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
     "device": "houji",
     "name": {
       "zh": "小米 14",
@@ -7391,7 +7537,7 @@
     "release": "2026-09-22",
     "aspatch": "2026-08-01",
     "recovery": "houji_ru_global-ota_full-OS3.0.305.0.WNCRUXM-user-16.0-1715c54c88.zip",
-    "fastboot": ""
+    "fastboot": "houji_ru_global_images_OS3.0.305.0.WNCRUXM_20260911.0000.00_16.0_ru_c72f9e2869.tgz"
   },
   {
     "os": "OS3",
@@ -9455,6 +9601,30 @@
   {
     "os": "OS3",
     "bigver": "HyperOS 3",
+    "device": "kunzite",
+    "name": {
+      "zh": "REDMI Note 15 5G",
+      "en": "REDMI Note 15 5G"
+    },
+    "brand": [
+      "REDMI"
+    ],
+    "version": "OS3.0.304.0.WPQMIXM",
+    "android": "16.0",
+    "region": "global",
+    "zone": "2",
+    "branchName": {
+      "zh": "国际正式版",
+      "en": "Global Stable"
+    },
+    "release": "2026-10-04",
+    "aspatch": "2026-09-01",
+    "recovery": "kunzite_global-ota_full-OS3.0.304.0.WPQMIXM-user-16.0-d4997b08a5.zip",
+    "fastboot": ""
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
     "device": "obsidian",
     "name": {
       "zh": "Redmi Note 14 Pro",
@@ -9498,6 +9668,31 @@
     "release": "2026-09-29",
     "aspatch": "2026-08-01",
     "recovery": "creek_mx_at_global-ota_full-OS3.0.304.0.WBOMXAT-user-16.0-cbc205b455.zip",
+    "fastboot": "creek_mx_at_global_images_OS3.0.304.0.WBOMXAT_20260818.0000.00_16.0_mx_at_a964ed5804.tgz"
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
+    "device": "dizi",
+    "name": {
+      "zh": "Redmi Pad Pro / 哈利·波特版 / POCO Pad",
+      "en": "edmi Pad Pro / Special Edition featuring Harry Potter / POCO Pad"
+    },
+    "brand": [
+      "Redmi",
+      "POCO"
+    ],
+    "version": "OS3.0.304.0.WNSTRXM",
+    "android": "16.0",
+    "region": "tr",
+    "zone": "2",
+    "branchName": {
+      "zh": "土耳其正式版",
+      "en": "Turkey Stable"
+    },
+    "release": "2026-09-29",
+    "aspatch": "2026-09-01",
+    "recovery": "dizi_tr_global-ota_full-OS3.0.304.0.WNSTRXM-user-16.0-18e57d48f9.zip",
     "fastboot": ""
   },
   {
@@ -9595,7 +9790,7 @@
     "release": "2026-09-23",
     "aspatch": "2026-08-01",
     "recovery": "piano_global-ota_full-OS3.0.304.0.WPYMIXM-user-16.0-105ba11d98.zip",
-    "fastboot": ""
+    "fastboot": "piano_global_images_OS3.0.304.0.WPYMIXM_20260917.0000.00_16.0_global_68563b68e7.tgz"
   },
   {
     "os": "OS3",
@@ -9667,7 +9862,7 @@
     "release": "2026-09-22",
     "aspatch": "2026-08-01",
     "recovery": "houji_id_global-ota_full-OS3.0.304.0.WNCIDXM-user-16.0-05439dca26.zip",
-    "fastboot": ""
+    "fastboot": "houji_id_global_images_OS3.0.304.0.WNCIDXM_20260911.0000.00_16.0_id_a454e654b6.tgz"
   },
   {
     "os": "OS3",
@@ -9691,7 +9886,7 @@
     "release": "2026-09-22",
     "aspatch": "2026-08-01",
     "recovery": "houji_in_global-ota_full-OS3.0.304.0.WNCINXM-user-16.0-65dd58d561.zip",
-    "fastboot": ""
+    "fastboot": "houji_in_global_images_OS3.0.304.0.WNCINXM_20260911.0000.00_16.0_in_090c7d55ca.tgz"
   },
   {
     "os": "OS3",
@@ -9715,7 +9910,7 @@
     "release": "2026-09-22",
     "aspatch": "2026-08-01",
     "recovery": "houji_tw_global-ota_full-OS3.0.304.0.WNCTWXM-user-16.0-f1787a0d2e.zip",
-    "fastboot": ""
+    "fastboot": "houji_tw_global_images_OS3.0.304.0.WNCTWXM_20260911.0000.00_16.0_tw_ff4d886c9c.tgz"
   },
   {
     "os": "OS3",
@@ -13151,6 +13346,56 @@
   {
     "os": "OS3",
     "bigver": "HyperOS 3",
+    "device": "emerald",
+    "name": {
+      "zh": "Redmi Note 13 Pro 4G / POCO M6 Pro",
+      "en": "Redmi Note 13 Pro 4G / POCO M6 Pro"
+    },
+    "brand": [
+      "Redmi",
+      "POCO"
+    ],
+    "version": "OS3.0.303.0.WNFMIDC",
+    "android": "16.0",
+    "region": "global",
+    "zone": "2",
+    "branchName": {
+      "zh": "国际 DC 正式版",
+      "en": "Global DC Stable"
+    },
+    "release": "2026-10-08",
+    "aspatch": "2026-09-01",
+    "recovery": "emerald_dc_global-ota_full-OS3.0.303.0.WNFMIDC-user-16.0-d99c33fa32.zip",
+    "fastboot": ""
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
+    "device": "malachite",
+    "name": {
+      "zh": "Redmi Note 14 Pro / POCO X7",
+      "en": "Redmi Note 14 Pro / POCO X7"
+    },
+    "brand": [
+      "Redmi",
+      "POCO"
+    ],
+    "version": "OS3.0.303.0.WOOMIDC",
+    "android": "16.0",
+    "region": "global",
+    "zone": "2",
+    "branchName": {
+      "zh": "国际 DC 正式版",
+      "en": "Global DC Stable"
+    },
+    "release": "2026-10-08",
+    "aspatch": "2026-09-01",
+    "recovery": "malachite_dc_global-ota_full-OS3.0.303.0.WOOMIDC-user-16.0-d691b7bbeb.zip",
+    "fastboot": ""
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
     "device": "klimt",
     "name": {
       "zh": "小米 15T Pro",
@@ -13170,6 +13415,272 @@
     "release": "2026-09-30",
     "aspatch": "2026-09-01",
     "recovery": "klimt_lm_cr_global-ota_full-OS3.0.303.0.WOSLMCR-user-16.0-8ff72676cc.zip",
+    "fastboot": "klimt_lm_cr_global_images_OS3.0.303.0.WOSLMCR_20260915.0000.00_16.0_lm_cr_1dcd8160a0.tgz"
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
+    "device": "obsidian",
+    "name": {
+      "zh": "Redmi Note 14 Pro",
+      "en": "Redmi Note 14 Pro"
+    },
+    "brand": [
+      "Redmi"
+    ],
+    "version": "OS3.0.303.0.WOFRUXM",
+    "android": "16.0",
+    "region": "ru",
+    "zone": "2",
+    "branchName": {
+      "zh": "俄罗斯正式版",
+      "en": "Russia Stable"
+    },
+    "release": "2026-09-30",
+    "aspatch": "2026-09-01",
+    "recovery": "obsidian_ru_global-ota_full-OS3.0.303.0.WOFRUXM-user-16.0-6f24571939.zip",
+    "fastboot": ""
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
+    "device": "obsidian",
+    "name": {
+      "zh": "Redmi Note 14 Pro",
+      "en": "Redmi Note 14 Pro"
+    },
+    "brand": [
+      "Redmi"
+    ],
+    "version": "OS3.0.303.0.WOFTRXM",
+    "android": "16.0",
+    "region": "tr",
+    "zone": "2",
+    "branchName": {
+      "zh": "土耳其正式版",
+      "en": "Turkey Stable"
+    },
+    "release": "2026-09-30",
+    "aspatch": "2026-09-01",
+    "recovery": "obsidian_tr_global-ota_full-OS3.0.303.0.WOFTRXM-user-16.0-7162c20a4e.zip",
+    "fastboot": ""
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
+    "device": "ruan",
+    "name": {
+      "zh": "Redmi Pad Pro 5G / POCO Pad 5G",
+      "en": "Redmi Pad Pro 5G / POCO Pad 5G"
+    },
+    "brand": [
+      "Redmi",
+      "POCO"
+    ],
+    "version": "OS3.0.303.0.WFSEUXM",
+    "android": "16.0",
+    "region": "eea",
+    "zone": "2",
+    "branchName": {
+      "zh": "欧洲EEA正式版",
+      "en": "Europe EEA Stable"
+    },
+    "release": "2026-09-29",
+    "aspatch": "2026-09-01",
+    "recovery": "ruan_eea_global-ota_full-OS3.0.303.0.WFSEUXM-user-16.0-0fbd49ba73.zip",
+    "fastboot": ""
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
+    "device": "flare",
+    "name": {
+      "zh": "Redmi Pad SE 8.7 Wi-Fi",
+      "en": "Redmi Pad SE 8.7 Wi-Fi"
+    },
+    "brand": [
+      "Redmi"
+    ],
+    "version": "OS3.0.303.0.WHXEUXM",
+    "android": "16.0",
+    "region": "eea",
+    "zone": "2",
+    "branchName": {
+      "zh": "欧洲EEA正式版",
+      "en": "Europe EEA Stable"
+    },
+    "release": "2026-09-28",
+    "aspatch": "2026-09-01",
+    "recovery": "flare_eea_global-ota_full-OS3.0.303.0.WHXEUXM-user-16.0-c8702cca6b.zip",
+    "fastboot": ""
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
+    "device": "flare",
+    "name": {
+      "zh": "Redmi Pad SE 8.7 Wi-Fi",
+      "en": "Redmi Pad SE 8.7 Wi-Fi"
+    },
+    "brand": [
+      "Redmi"
+    ],
+    "version": "OS3.0.303.0.WHXMIXM",
+    "android": "16.0",
+    "region": "global",
+    "zone": "2",
+    "branchName": {
+      "zh": "国际正式版",
+      "en": "Global Stable"
+    },
+    "release": "2026-09-28",
+    "aspatch": "2026-09-01",
+    "recovery": "flare_global-ota_full-OS3.0.303.0.WHXMIXM-user-16.0-5737ce6962.zip",
+    "fastboot": ""
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
+    "device": "tanzanite",
+    "name": {
+      "zh": "Redmi Note 14 4G",
+      "en": "Redmi Note 14 4G"
+    },
+    "brand": [
+      "Redmi"
+    ],
+    "version": "OS3.0.303.0.WOGIDXM",
+    "android": "16.0",
+    "region": "id",
+    "zone": "2",
+    "branchName": {
+      "zh": "印度尼西亚正式版",
+      "en": "Indonesia Stable"
+    },
+    "release": "2026-09-28",
+    "aspatch": "2026-09-01",
+    "recovery": "tanzanite_id_global-ota_full-OS3.0.303.0.WOGIDXM-user-16.0-ecd4c0a765.zip",
+    "fastboot": ""
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
+    "device": "vermeer",
+    "name": {
+      "zh": "Redmi K70 / POCO F6 Pro",
+      "en": "Redmi K70 / POCO F6 Pro"
+    },
+    "brand": [
+      "Redmi",
+      "POCO"
+    ],
+    "version": "OS3.0.303.0.WNKEUXM",
+    "android": "16.0",
+    "region": "eea",
+    "zone": "2",
+    "branchName": {
+      "zh": "欧洲EEA正式版",
+      "en": "Europe EEA Stable"
+    },
+    "release": "2026-09-28",
+    "aspatch": "2026-09-01",
+    "recovery": "vermeer_eea_global-ota_full-OS3.0.303.0.WNKEUXM-user-16.0-823645d94e.zip",
+    "fastboot": ""
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
+    "device": "zorn",
+    "name": {
+      "zh": "REDMI K80",
+      "en": "REDMI K80"
+    },
+    "brand": [
+      "REDMI"
+    ],
+    "version": "OS3.0.303.0.WOKEUXM",
+    "android": "16.0",
+    "region": "eea",
+    "zone": "2",
+    "branchName": {
+      "zh": "欧洲EEA正式版",
+      "en": "Europe EEA Stable"
+    },
+    "release": "2026-09-28",
+    "aspatch": "2026-09-01",
+    "recovery": "zorn_eea_global-ota_full-OS3.0.303.0.WOKEUXM-user-16.0-c4ae6bd609.zip",
+    "fastboot": ""
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
+    "device": "zorn",
+    "name": {
+      "zh": "REDMI K80",
+      "en": "REDMI K80"
+    },
+    "brand": [
+      "REDMI"
+    ],
+    "version": "OS3.0.303.0.WOKIDXM",
+    "android": "16.0",
+    "region": "id",
+    "zone": "2",
+    "branchName": {
+      "zh": "印度尼西亚正式版",
+      "en": "Indonesia Stable"
+    },
+    "release": "2026-09-28",
+    "aspatch": "2026-09-01",
+    "recovery": "zorn_id_global-ota_full-OS3.0.303.0.WOKIDXM-user-16.0-2f1ea88261.zip",
+    "fastboot": ""
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
+    "device": "zorn",
+    "name": {
+      "zh": "REDMI K80",
+      "en": "REDMI K80"
+    },
+    "brand": [
+      "REDMI"
+    ],
+    "version": "OS3.0.303.0.WOKRUXM",
+    "android": "16.0",
+    "region": "ru",
+    "zone": "2",
+    "branchName": {
+      "zh": "俄罗斯正式版",
+      "en": "Russia Stable"
+    },
+    "release": "2026-09-28",
+    "aspatch": "2026-09-01",
+    "recovery": "zorn_ru_global-ota_full-OS3.0.303.0.WOKRUXM-user-16.0-353428d500.zip",
+    "fastboot": ""
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
+    "device": "zorn",
+    "name": {
+      "zh": "REDMI K80",
+      "en": "REDMI K80"
+    },
+    "brand": [
+      "REDMI"
+    ],
+    "version": "OS3.0.303.0.WOKTWXM",
+    "android": "16.0",
+    "region": "tw",
+    "zone": "2",
+    "branchName": {
+      "zh": "中国台湾地区正式版",
+      "en": "China Taiwan Stable"
+    },
+    "release": "2026-09-28",
+    "aspatch": "2026-09-01",
+    "recovery": "zorn_tw_global-ota_full-OS3.0.303.0.WOKTWXM-user-16.0-a870199d3d.zip",
     "fastboot": ""
   },
   {
@@ -13343,6 +13854,55 @@
   {
     "os": "OS3",
     "bigver": "HyperOS 3",
+    "device": "creek",
+    "name": {
+      "zh": "REDMI 15 4G",
+      "en": "REDMI 15 4G"
+    },
+    "brand": [
+      "REDMI"
+    ],
+    "version": "OS3.0.303.0.WBORUXM",
+    "android": "16.0",
+    "region": "ru",
+    "zone": "2",
+    "branchName": {
+      "zh": "俄罗斯正式版",
+      "en": "Russia Stable"
+    },
+    "release": "2026-09-23",
+    "aspatch": "2026-09-01",
+    "recovery": "creek_ru_global-ota_full-OS3.0.303.0.WBORUXM-user-16.0-6cc6590aa7.zip",
+    "fastboot": ""
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
+    "device": "flame",
+    "name": {
+      "zh": "Redmi 14R 5G / POCO M7 5G",
+      "en": "Redmi 14R 5G / POCO M7 5G"
+    },
+    "brand": [
+      "Redmi",
+      "POCO"
+    ],
+    "version": "OS3.0.303.0.WGUCNXM",
+    "android": "16.0",
+    "region": "cn",
+    "zone": "1",
+    "branchName": {
+      "zh": "中国大陆正式版",
+      "en": "China Mainland Stable"
+    },
+    "release": "2026-09-23",
+    "aspatch": "2026-08-01",
+    "recovery": "flame-ota_full-OS3.0.303.0.WGUCNXM-user-16.0-3b58d7e390.zip",
+    "fastboot": ""
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
     "device": "songyuan",
     "name": {
       "zh": "REDMI K100 Pro Max",
@@ -13386,7 +13946,7 @@
     "release": "2026-09-22",
     "aspatch": "2026-08-01",
     "recovery": "chenfeng_in_global-ota_full-OS3.0.303.0.WNJINXM-user-16.0-ed93d79ed9.zip",
-    "fastboot": ""
+    "fastboot": "chenfeng_in_global_images_OS3.0.303.0.WNJINXM_20260911.0000.00_16.0_in_ebc45a76aa.tgz"
   },
   {
     "os": "OS3",
@@ -13410,7 +13970,7 @@
     "release": "2026-09-21",
     "aspatch": "2026-08-01",
     "recovery": "ruyi_ru_global-ota_full-OS3.0.303.0.WNIRUXM-user-16.0-fc481d2689.zip",
-    "fastboot": ""
+    "fastboot": "ruyi_ru_global_images_OS3.0.303.0.WNIRUXM_20260902.0000.00_16.0_ru_00fc5a8939.tgz"
   },
   {
     "os": "OS3",
@@ -13434,6 +13994,31 @@
     "release": "2026-09-21",
     "aspatch": "2026-08-01",
     "recovery": "xuanyuan_in_global-ota_full-OS3.0.303.0.WOAINXM-user-16.0-a598679b8d.zip",
+    "fastboot": ""
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
+    "device": "malachite",
+    "name": {
+      "zh": "Redmi Note 14 Pro / POCO X7",
+      "en": "Redmi Note 14 Pro / POCO X7"
+    },
+    "brand": [
+      "Redmi",
+      "POCO"
+    ],
+    "version": "OS3.0.303.0.WOOEUXM",
+    "android": "16.0",
+    "region": "eea",
+    "zone": "2",
+    "branchName": {
+      "zh": "欧洲EEA正式版",
+      "en": "Europe EEA Stable"
+    },
+    "release": "2026-09-21",
+    "aspatch": "2026-09-01",
+    "recovery": "malachite_eea_global-ota_full-OS3.0.303.0.WOOEUXM-user-16.0-08b9ce90b6.zip",
     "fastboot": ""
   },
   {
@@ -13823,7 +14408,7 @@
     "release": "2026-09-15",
     "aspatch": "2026-07-01",
     "recovery": "kunzite_global-ota_full-OS3.0.303.0.WPQMIXM-user-16.0-710fead382.zip",
-    "fastboot": ""
+    "fastboot": "kunzite_global_images_OS3.0.303.0.WPQMIXM_20260827.0000.00_16.0_global_71175a32d3.tgz"
   },
   {
     "os": "OS3",
@@ -19218,6 +19803,31 @@
   {
     "os": "OS3",
     "bigver": "HyperOS 3",
+    "device": "corot",
+    "name": {
+      "zh": "小米 13T Pro / Redmi K60 至尊版",
+      "en": "Xiaomi 13T Pro / Redmi K60 Ultra"
+    },
+    "brand": [
+      "Xiaomi",
+      "Redmi"
+    ],
+    "version": "OS3.0.302.0.WMLMIXM",
+    "android": "16.0",
+    "region": "global",
+    "zone": "2",
+    "branchName": {
+      "zh": "国际正式版",
+      "en": "Global Stable"
+    },
+    "release": "2026-09-30",
+    "aspatch": "2026-09-01",
+    "recovery": "corot_global-ota_full-OS3.0.302.0.WMLMIXM-user-16.0-277cf37730.zip",
+    "fastboot": ""
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
     "device": "goya",
     "name": {
       "zh": "小米 15T",
@@ -19237,6 +19847,31 @@
     "release": "2026-09-30",
     "aspatch": "2026-09-01",
     "recovery": "goya_lm_cr_global-ota_full-OS3.0.302.0.WOELMCR-user-16.0-b3c7c6a05d.zip",
+    "fastboot": "goya_lm_cr_global_images_OS3.0.302.0.WOELMCR_20260912.0000.00_16.0_lm_cr_e695ddd0c2.tgz"
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
+    "device": "dew",
+    "name": {
+      "zh": "REDMI 15C / POCO C85",
+      "en": "REDMI 15C / POCO C85"
+    },
+    "brand": [
+      "REDMI",
+      "POCO"
+    ],
+    "version": "OS3.0.302.0.WBNIDXM",
+    "android": "16.0",
+    "region": "id",
+    "zone": "2",
+    "branchName": {
+      "zh": "印度尼西亚正式版",
+      "en": "Indonesia Stable"
+    },
+    "release": "2026-09-30",
+    "aspatch": "2026-09-01",
+    "recovery": "dew_id_global-ota_full-OS3.0.302.0.WBNIDXM-user-16.0-9d396440da.zip",
     "fastboot": ""
   },
   {
@@ -19310,7 +19945,7 @@
     "release": "2026-09-24",
     "aspatch": "2026-09-01",
     "recovery": "malachite_lm_cr_global-ota_full-OS3.0.302.0.WOOLMCR-user-16.0-d54a1cb059.zip",
-    "fastboot": ""
+    "fastboot": "malachite_lm_cr_global_images_OS3.0.302.0.WOOLMCR_20260912.0000.00_16.0_lm_cr_9def223b00.tgz"
   },
   {
     "os": "OS3",
@@ -41074,6 +41709,31 @@
   {
     "os": "OS3",
     "bigver": "HyperOS 3",
+    "device": "duchamp",
+    "name": {
+      "zh": "Redmi K70E / POCO X6 Pro 5G",
+      "en": "Redmi K70E / POCO X6 Pro 5G"
+    },
+    "brand": [
+      "Redmi",
+      "POCO"
+    ],
+    "version": "OS3.0.10.0.WNLMIXM",
+    "android": "16.0",
+    "region": "global",
+    "zone": "2",
+    "branchName": {
+      "zh": "国际正式版",
+      "en": "Global Stable"
+    },
+    "release": "2026-10-08",
+    "aspatch": "2026-08-01",
+    "recovery": "duchamp_global-ota_full-OS3.0.10.0.WNLMIXM-user-16.0-91604fa25b.zip",
+    "fastboot": ""
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
     "device": "gold",
     "name": {
       "zh": "Redmi Note 13 5G / POCO X6 Neo 5G",
@@ -43328,6 +43988,31 @@
   {
     "os": "OS3",
     "bigver": "HyperOS 3",
+    "device": "diting",
+    "name": {
+      "zh": "小米 12T Pro / Redmi K50 至尊版",
+      "en": "Xiaomi 12T Pro / Redmi K50 Ultra"
+    },
+    "brand": [
+      "Xiaomi",
+      "Redmi"
+    ],
+    "version": "OS3.0.7.0.VLFMIXM",
+    "android": "15.0",
+    "region": "global",
+    "zone": "2",
+    "branchName": {
+      "zh": "国际正式版",
+      "en": "Global Stable"
+    },
+    "release": "2026-09-30",
+    "aspatch": "2026-09-01",
+    "recovery": "diting_global-ota_full-OS3.0.7.0.VLFMIXM-user-15.0-cfaa381681.zip",
+    "fastboot": ""
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
     "device": "gold",
     "name": {
       "zh": "Redmi Note 13 5G / POCO X6 Neo 5G",
@@ -44778,6 +45463,31 @@
     "release": "2025-12-31",
     "aspatch": "2025-12-01",
     "recovery": "dada-ota_full-OS3.0.6.2.WOCCNXM-user-16.0-00010f19a1.zip",
+    "fastboot": ""
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
+    "device": "diting",
+    "name": {
+      "zh": "小米 12T Pro / Redmi K50 至尊版",
+      "en": "Xiaomi 12T Pro / Redmi K50 Ultra"
+    },
+    "brand": [
+      "Xiaomi",
+      "Redmi"
+    ],
+    "version": "OS3.0.6.0.VLFEUXM",
+    "android": "15.0",
+    "region": "eea",
+    "zone": "2",
+    "branchName": {
+      "zh": "欧洲EEA正式版",
+      "en": "Europe EEA Stable"
+    },
+    "release": "2026-09-30",
+    "aspatch": "2026-09-01",
+    "recovery": "diting_eea_global-ota_full-OS3.0.6.0.VLFEUXM-user-15.0-495c1db06b.zip",
     "fastboot": ""
   },
   {
@@ -46747,7 +47457,7 @@
     "release": "2026-09-21",
     "aspatch": "2026-08-01",
     "recovery": "diting_ru_global-ota_full-OS3.0.5.0.VLFRUXM-user-15.0-c159122e16.zip",
-    "fastboot": ""
+    "fastboot": "diting_ru_global_images_OS3.0.5.0.VLFRUXM_20260820.0000.00_15.0_ru_6736c53f6f.tgz"
   },
   {
     "os": "OS3",
@@ -46772,7 +47482,7 @@
     "release": "2026-09-21",
     "aspatch": "2026-08-01",
     "recovery": "diting_tr_global-ota_full-OS3.0.5.0.VLFTRXM-user-15.0-268c3bd7cb.zip",
-    "fastboot": ""
+    "fastboot": "diting_tr_global_images_OS3.0.5.0.VLFTRXM_20260821.0000.00_15.0_tr_3d35203d27.tgz"
   },
   {
     "os": "OS3",
