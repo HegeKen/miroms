@@ -3885,7 +3885,7 @@
       ]
     },
     "branchCount": 2,
-    "romCount": 12
+    "romCount": 14
   },
   {
     "device": "madrid",
@@ -3926,7 +3926,7 @@
       ]
     },
     "branchCount": 2,
-    "romCount": 14
+    "romCount": 16
   },
   {
     "device": "lhasa",
@@ -14735,12 +14735,19 @@
       "global",
       "eea",
       "ru",
-      "tr"
+      "tr",
+      "lm"
     ],
-    "carriers": [],
-    "regionCarriers": {},
-    "branchCount": 6,
-    "romCount": 13
+    "carriers": [
+      "cr"
+    ],
+    "regionCarriers": {
+      "lm": [
+        "cr"
+      ]
+    },
+    "branchCount": 7,
+    "romCount": 14
   },
   {
     "device": "zijin",
