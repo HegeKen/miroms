@@ -4867,12 +4867,19 @@
       "ru",
       "in",
       "tr",
-      "jp"
+      "jp",
+      "lm"
     ],
-    "carriers": [],
-    "regionCarriers": {},
-    "branchCount": 8,
-    "romCount": 18
+    "carriers": [
+      "cr"
+    ],
+    "regionCarriers": {
+      "lm": [
+        "cr"
+      ]
+    },
+    "branchCount": 9,
+    "romCount": 19
   },
   {
     "device": "cactus",
@@ -6158,7 +6165,7 @@
       ]
     },
     "branchCount": 8,
-    "romCount": 184
+    "romCount": 185
   },
   {
     "device": "emerald_r",
@@ -8385,12 +8392,19 @@
       "ru",
       "id",
       "tr",
-      "jp"
+      "jp",
+      "lm"
     ],
-    "carriers": [],
-    "regionCarriers": {},
-    "branchCount": 8,
-    "romCount": 27
+    "carriers": [
+      "cr"
+    ],
+    "regionCarriers": {
+      "lm": [
+        "cr"
+      ]
+    },
+    "branchCount": 9,
+    "romCount": 28
   },
   {
     "device": "leo",
@@ -8984,7 +8998,7 @@
       ]
     },
     "branchCount": 4,
-    "romCount": 47
+    "romCount": 48
   },
   {
     "device": "marble",
@@ -12572,22 +12586,27 @@
       "global",
       "eea",
       "in",
-      "tr"
+      "tr",
+      "lm"
     ],
     "carriers": [
       "chinatelecom",
       "chinamobile",
-      "chinaunicom"
+      "chinaunicom",
+      "cr"
     ],
     "regionCarriers": {
       "cn": [
         "chinatelecom",
         "chinamobile",
         "chinaunicom"
+      ],
+      "lm": [
+        "cr"
       ]
     },
-    "branchCount": 7,
-    "romCount": 24
+    "branchCount": 8,
+    "romCount": 25
   },
   {
     "device": "sunstone",
@@ -13088,7 +13107,7 @@
       ]
     },
     "branchCount": 9,
-    "romCount": 56
+    "romCount": 57
   },
   {
     "device": "tucana",
