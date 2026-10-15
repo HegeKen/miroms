@@ -100,6 +100,78 @@ def pair(zh: Any, en: Any) -> Dict[str, str]:
 	return {'zh': clean(zh), 'en': clean(en)}
 
 
+def canonical_bigver(label: str) -> str:
+	"""统一大版本写法：MIUI13 -> MIUI 13、MIUI6 -> MIUI V6、hyperos1 -> HyperOS 1
+
+	MIUI V1~V6 是官方叫法（页面里也写作 MIUI6 / MIUI V6 两种），7 之后不再带 V。
+	"""
+	text = re.sub(r'\s+', ' ', clean(label))
+	match = re.match(r'^(MIUI|HyperOS)\s*V?\s*(\d+(?:\.\d+)?)$', text, re.I)
+	if not match:
+		return text
+	brand = 'HyperOS' if match.group(1).lower().startswith('hyper') else 'MIUI'
+	number = match.group(2)
+	if brand == 'MIUI' and float(number) <= 6:
+		return f'MIUI V{int(float(number))}'
+	return f'{brand} {number}'
+
+
+def load_week_bigver_map(roots: Dict[str, Path]) -> Dict[int, str]:
+	"""从参考仓库的版本索引构建 {周数: 大版本}
+
+	* MIUIROMS/weekly/index.html  —— 国内开发版按版本分段（MIUI V1 ~ MIUI 13）
+	* NuxtMR/data/weekly.json     —— 版本 -> 周数列表（覆盖到第 618 周）
+	逐页文本解析只作兜底，避免把「MIUI 6.12.15」这类版本号误当成大版本。
+	"""
+	mapping: Dict[int, str] = {}
+	conflicts = 0
+
+	nuxtmr_root = roots.get('nuxtmr')
+	if nuxtmr_root:
+		weekly_json = nuxtmr_root.parent / 'weekly.json'
+		if weekly_json.exists():
+			try:
+				data = json.loads(weekly_json.read_text(encoding='utf-8'))
+				for item in data.get('versions') or []:
+					label = canonical_bigver(item.get('version'))
+					for week in item.get('weeks') or []:
+						try:
+							mapping[int(week)] = label
+						except (TypeError, ValueError):
+							continue
+			except (json.JSONDecodeError, OSError) as exc:
+				print(f"  ⚠ 读取 {weekly_json} 失败：{exc}")
+
+	miuiroms_root = roots.get('miuiroms')
+	if miuiroms_root:
+		index_html = miuiroms_root.parent / 'index.html'
+		if index_html.exists():
+			try:
+				raw = index_html.read_text(encoding='utf-8', errors='replace')
+				section = raw.split('id="CN-BETA"', 1)[-1].split('id="GB-BETA"', 1)[0]
+				blocks = re.split(r'<p>([^<]+)</p>', section)
+				for i in range(1, len(blocks), 2):
+					label = canonical_bigver(blocks[i])
+					for week_text in re.findall(r'logs/week-(\d+)-CN\.html', blocks[i + 1]):
+						week = int(week_text)
+						if week in mapping and mapping[week] != label:
+							conflicts += 1
+						mapping[week] = label
+			except (OSError, IndexError) as exc:
+				print(f"  ⚠ 读取 {index_html} 失败：{exc}")
+
+	print(f"[{ts()}] 周→大版本索引：{len(mapping)} 周"
+		  + (f"（两个来源有 {conflicts} 处冲突，以 MIUIROMS 索引为准）" if conflicts else ""))
+	return mapping
+
+
+_WEEK_BIGVER: Optional[Dict[int, str]] = None
+
+
+def week_bigver(week: int) -> str:
+	return (_WEEK_BIGVER or {}).get(int(week), '')
+
+
 def infer_bigver(version: str) -> str:
 	"""从版本号推断大版本：OS1.0.24.7.28.DEV -> HyperOS 1、V14.0.23.10.15.DEV -> MIUI 14"""
 	match = re.match(r'^(OS|V)(\d+)', clean(version), re.I)
@@ -561,7 +633,7 @@ def upsert_dev(meta: Dict[str, Any], logs_value: str, dry_run: bool = False) -> 
 		'week': meta['week'],
 		'region': meta['region'],
 		'zone': REGION_INFO.get(meta['region'], {}).get('zone', 1),
-		'bigver': meta.get('bigver') or infer_bigver(meta.get('versions', '')),
+		'bigver': canonical_bigver(meta.get('bigver') or '') or infer_bigver(meta.get('versions', '')),
 		'versions': meta.get('versions') or '',
 		'title_zh': meta.get('title_zh') or '',
 		'title_en': meta.get('title_en') or '',
@@ -656,6 +728,11 @@ def import_meta(meta: Dict[str, Any], official: OfficialEnglish, dry_run: bool =
 	zh_obj = meta.get('logs_zh') or {}
 	en_obj = meta.get('logs_en') or {}
 	corrected = correct_english(zh_obj, en_obj, official)
+
+	# 大版本以参考仓库的版本索引为准，逐页文本解析只作兜底
+	meta['bigver'] = (week_bigver(meta['week'])
+					  or canonical_bigver(meta.get('bigver') or '')
+					  or infer_bigver(meta.get('versions') or ''))
 
 	dates = [parse_date(r.get('release')) for r in (meta.get('roms') or [])]
 	dates = [d for d in dates if d]
@@ -761,6 +838,10 @@ def main() -> None:
 	sources = ['hyperos', 'nuxtmr', 'miuiroms'] if args.all else ([args.source] if args.source else [])
 	if not sources:
 		raise SystemExit('请指定 --source 或 --all')
+
+	roots = {name: (Path(args.root) if args.root else DEFAULT_ROOTS[name]) for name in DEFAULT_ROOTS}
+	global _WEEK_BIGVER
+	_WEEK_BIGVER = load_week_bigver_map(roots)
 
 	official = OfficialEnglish()
 	stats = []
