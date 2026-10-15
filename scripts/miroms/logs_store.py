@@ -486,7 +486,17 @@ class LogStore:
 		"""记录「复用已有分组时需要补写的语言」，并同步到内存候选，避免重复写"""
 		missing = {column: value for column, value in row['texts'].items()
 				   if value and not match['texts'].get(column)}
+		zh_text = match['texts'].get(cls.ZH_COLUMN)
+		if zh_text and match['content'] != zh_text:
+			# 复用的行主内容与中文列不一致（历史上由英文占位创建）——一并纠正，
+			# 保证 content 始终是中文优先的主内容
+			match['content'] = zh_text
+			DatabaseManager.execute(
+				"UPDATE `logs` SET `content` = %s, `content_hash` = %s WHERE `id` = %s",
+				params=(zh_text, cls._hash(zh_text), match['id']), raise_on_error=True,
+			)
 		if not missing:
+			match['sig'] = cls.signature(match['type'], match['content'], match['texts'])
 			return
 		fill_map.setdefault(int(match['id']), {}).update(missing)
 		match['texts'].update(missing)
