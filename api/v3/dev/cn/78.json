@@ -2,8 +2,8 @@
   "week": 78,
   "region": "cn",
   "zone": 1,
-  "bigver": "",
-  "versions": "MIUI V4 2.2.24 已发布！",
+  "bigver": "MIUI V4",
+  "versions": "2.2.24",
   "title": {
     "zh": "第78周开发版日志",
     "en": ""
@@ -11,7 +11,12 @@
   "postId": "",
   "update": "",
   "release": "",
-  "description": [],
+  "description": [
+    {
+      "zh": "MIUI V4 2.2.24 已发布！",
+      "en": ""
+    }
+  ],
   "attention": [
     {
       "zh": "本周发布小米手机（标准版、联通版和电信版）三个版本的MIUI 2.3.5 稳定版和OTA包",
@@ -35,8 +40,29 @@
     }
   ],
   "suspended": [],
-  "devices": [],
-  "roms": [],
+  "devices": [
+    {
+      "device": "mione_plus",
+      "name": {
+        "zh": "小米手机1/1S",
+        "en": ""
+      }
+    }
+  ],
+  "roms": [
+    {
+      "device": "mione_plus",
+      "name": {
+        "zh": "小米手机1/1S",
+        "en": ""
+      },
+      "version": "",
+      "android": "4.0",
+      "release": "",
+      "recovery": "miui_Mioneplus_2.2.24_99eafb2501_4.0.zip",
+      "fastboot": "miuiV4_Mioneplus_2.2.24_fastboot-dkeis93kn9.zip"
+    }
+  ],
   "logs": {
     "logs_zh": {
       "系统": [
@@ -143,68 +169,7 @@
       ],
       "浏览器": [
         "优化 书签中，预置的网站图标不会被网页缩略图替换",
-        "优化 书签中，预置的网站图标不会被网页缩略图替换",
-        "机型",
-        "安卓版本",
-        "卡刷包",
-        "线刷包",
-        "小米手机1/1S",
-        "4.0",
-        "miui_Mioneplus_2.2.24_99eafb2501_4.0.zip",
-        "miuiV4_Mioneplus_2.2.24_fastboot-dkeis93kn9.zip",
-        "机型",
-        "安卓版本",
-        "卡刷包",
-        "Google Nexus S",
-        "4.0",
-        "miui_NS_2.2.24_7c9a490866_4.0.zip",
-        "Google Nexus One",
-        "2.3 Gingerbread",
-        "miui_NexusOne_2.2.24_8psrshdai2_2.3.zip",
-        "MOTO Milestone",
-        "2.3 Gingerbread",
-        "miui_Milestone_2.2.24_m62qfhet7w_2.3.zip",
-        "MOTO Defy/Defy+",
-        "2.3 Gingerbread",
-        "miui_Defy_2.2.24_imk82s2ku6_2.3.zip",
-        "HTC HD2",
-        "2.3 Gingerbread",
-        "miui_HD2_2.2.24_mzrif0huul_2.3.zip",
-        "HTC Desire HD",
-        "2.3 Gingerbread",
-        "miui_DHD_2.2.24_xdv3qrujak_2.3.zip",
-        "HTC Desire Z",
-        "2.3 Gingerbread",
-        "miui_DesireZ_2.2.24_f9oaat3hb4_2.3.zip",
-        "HTC Incredible S",
-        "2.3 Gingerbread",
-        "miui_IncredibleS_2.2.24_mzzlm7ctw9_2.3.zip",
-        "HTC Desire S",
-        "2.3 Gingerbread",
-        "miui_DesireS_2.2.24_w8fgssztov_2.3.zip",
-        "HTC Desire G7",
-        "2.3 Gingerbread",
-        "miui_Desire_2.2.24_4sqit7ralz_2.3.zip",
-        "Samsung Galaxy I9000",
-        "2.3 Gingerbread",
-        "miui_I9000_2.2.24_u2okew8ml0_2.3.zip",
-        "Samsung Galaxy T959",
-        "2.3 Gingerbread",
-        "miui_T959_2.2.24_nxcca1uess_2.3.zip",
-        "Samsung Galaxy S2",
-        "2.3 Gingerbread",
-        "miui_GalaxyS2_2.2.24_4mdm4eqzx1_2.3.zip",
-        "Samsung Galaxy I897",
-        "2.3 Gingerbread",
-        "miui_I897_2.2.24_w50o2kn29s_2.3.zip",
-        "LG P990",
-        "2.3 Gingerbread",
-        "miui_P990_2.2.24_k737tcec1q_2.3.zip",
-        "关于我",
-        "我的主页",
-        "使用MDUI打造",
-        "2019 - 2022",
-        "arrow_upward"
+        "优化 书签中，预置的网站图标不会被网页缩略图替换"
       ],
       "桌面": [
         "修复 解决清空所有数据重启后桌面图标可能不全的问题"

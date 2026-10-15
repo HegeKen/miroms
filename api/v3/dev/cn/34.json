@@ -2,8 +2,8 @@
   "week": 34,
   "region": "cn",
   "zone": 1,
-  "bigver": "",
-  "versions": "MIUI V3 1.4.15 OTA 已发布，完整包正在陆续发布！",
+  "bigver": "MIUI V3",
+  "versions": "1.4.15",
   "title": {
     "zh": "第34周开发版日志",
     "en": ""
@@ -11,7 +11,20 @@
   "postId": "",
   "update": "",
   "release": "",
-  "description": [],
+  "description": [
+    {
+      "zh": "MIUI V3 1.4.15 OTA 已发布，完整包正在陆续发布！",
+      "en": ""
+    },
+    {
+      "zh": "状态栏24小时显示问题，下周更新会解决",
+      "en": ""
+    },
+    {
+      "zh": "少部分主题（如蜂窝3.0）会导致大量FC（如进入程序的设置时），临时解决办法更换其它主题（或在该主题包删除framework-res/res/drawable-hdpi里以sliding_btn开头的所有文件）",
+      "en": ""
+    }
+  ],
   "attention": [
     {
       "zh": "第一次刷MIUI ROM时请务必在 Recovery 中选择wipe 清除数据",
@@ -110,33 +123,7 @@
         "修复 最近任务图标显示有重复的问题"
       ],
       "其他": [
-        "优化 全局时间上午/下午的显示，增加凌晨/中午/傍晚/晚上/半夜的判断",
-        "机型",
-        "安卓版本",
-        "卡刷包",
-        "Google Nexus S",
-        "2.3 Gingerbread",
-        "miui_NS_1.4.15_u9t9xb79lg_2.3.zip",
-        "Google Nexus One",
-        "2.3 Gingerbread",
-        "miui_NexusOne_1.4.15_ew6955vkj5_2.3.zip",
-        "MOTO Milestone",
-        "2.3 Gingerbread",
-        "miui_Milestone_1.4.15_n1uxorqdn6_2.3.zip",
-        "HTC HD2",
-        "2.3 Gingerbread",
-        "miui_HD2_1.4.15_ixmy8o0no2_2.3.zip",
-        "HTC Desire HD",
-        "2.3 Gingerbread",
-        "miui_DHD_1.4.15_jmjpiz8342_2.3.zip",
-        "HTC Desire",
-        "2.3 Gingerbread",
-        "miui_Desire_1.4.15_4huv07jme7_2.3.zip",
-        "关于我",
-        "我的主页",
-        "使用MDUI打造",
-        "2019 - 2022",
-        "arrow_upward"
+        "优化 全局时间上午/下午的显示，增加凌晨/中午/傍晚/晚上/半夜的判断"
       ]
     }
   },

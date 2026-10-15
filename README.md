@@ -38,6 +38,8 @@
 ├── scripts/                          # 数据同步 / 抓取 / 导出 / 部署脚本（Python）
 │   ├── exporter.py                   #   主导出脚本
 │   ├── migrate_logs_multilang.py     #   日志多语言分组迁移（logs 重建 + roms.logs 回写）
+│   ├── dedup_logs.py                 #   logs 去重体检 / 合并重复分组 / 清理孤儿行
+│   ├── rebuild_roms_logs.py          #   按备份库重建 roms.logs（修复悬空引用）
 │   ├── import_dev_week.py            #   导入开发版周更数据（dev 表 + roms.dev_week）
 │   ├── sync_devices.py               #   同步设备列表
 │   ├── fix_missing_tag_mappings.py   #   修复缺失 tag 映射
@@ -211,6 +213,24 @@
 
 写入失败会计入 `write_failed` 并打印首个错误；`--dry-run` 可以只看将写入什么而不落库。回落到英文的语种会被自动跳过（该语种不写入），确需写入时加 `--force`。
 
+#### 日志去重（必须校验）
+
+`logs` 表按内容跨 ROM 复用分组，**写入侧只做「语言不冲突即可复用」的匹配**：
+写入前把整张 `logs` 表载入内存行池（`LogStore.load_index`），按「类型相同 + 各语言不冲突」
+认领已有分组，冲突时另起一行。这样同一日志即使主内容不同（`#25 content=相册` 与
+`#27 content=Gallery`）也能合并，不会像早期实现那样只按 `content_hash` 找候选而漏掉。
+
+配套的兜底校验（三处都会跑，发现重复即报错退出）：
+
+| 位置 | 说明 |
+| --- | --- |
+| `python3 scripts/dedup_logs.py` | 体检并列出可合并分组；`--apply` 合并、`--prune-unused` 清理孤儿行 |
+| `import_dev_week.py` / `migrate_logs_multilang.py` | 导入 / 迁移结束后自动调用 `LogStore.duplicate_report()`，有重复即退出码 1 |
+| 管理后台 `/logs` 页「去重体检」 | `GET /api/logs/audit`：重复分组、重复行数、未被 `roms`/`dev` 引用的孤儿行数 |
+
+判定标准：类型相同、各语言文本互不冲突、且至少共享一门语言文本 → 本应是同一行。
+合并只做「并集 + 重写引用」，语言掩码保持不变，因此各 ROM 的导出结果与合并前逐字一致。
+
 #### 日志存储结构（同一日志多语言共用一行）
 
 原先 `roms` 表有 21 个 `logs_*` 列（一门语言一列），同一句日志的不同语言版本各自去重、互不关联。现在改为：
@@ -245,6 +265,11 @@ python3 scripts/import_dev_week.py --backfill-roms     # 仅按发布日期回�
 * **以中文为依据修正英文**：元数据里的英文是人工翻译、与官方有出入，导入时会先在 `logs` 表里按中文反查官方英文，命中就用官方译文，未命中才保留元数据里的翻译。
 * `expand_mask=True` 会把语言掩码扩展到「模块与全部条目的公共语言」，因此复用到库里已有多语言分组时，能顺带带出中英文之外的其他译文。
 * 机型匹配：优先按元数据的 `device + version` 精确回填 `roms.dev_week`；没有机型清单的来源（HTML）则按 `branch='X'` + 区域 + 发布日期回填。
+* MIUIROMS 的 HTML 页面里「支持机型」是独立的 `<table>`：解析时会先把表格摘掉再提取日志正文
+  （否则表格行会被当成日志条目，历史上确实混入过「机型 / 卡刷包 / miui_XXX.zip」这类脏数据），
+  表格本身会解析成 `devices` / `roms`（机型号里的 `(cepheus)` 直接取代号，否则按 `devices` 表的中英文名反查）。
+  `▍发布时间` 一节会按内容拆分：日期进 `release_date`、版本号进 `versions`、`MIUI V5` / `MIUI 12.5` 进 `bigver`，
+  原文一并存进 `description`；解析器还会统计「疑似表格内容」并在发现时打印告警。
 
 ---
 
@@ -268,7 +293,9 @@ python3 scripts/import_dev_week.py --backfill-roms     # 仅按发布日期回�
 | 文件 | 说明 |
 | --- | --- |
 | `exporter.py` | 入口脚本：遍历 `common.fullDevices` 依次执行 `exportV1` / `exportV2` / `exportV3`，再执行 `export_dev()` 导出 `api/v3/dev/**`，完成后调用 `app/web/scripts/generate-index.mjs`（Node.js）重新生成 `api/v3/index.json`、`api/v3/stats.json`、`api/v3/roms/*.json` 与 `api/v3/releases/*.json` |
-| `migrate_logs_multilang.py` | 把 `roms` 的 21 个 `logs_*` 列迁移为「`logs` 多语言分组 + `roms.logs` 单列」；旧表保留为 `logs_legacy`，`--dry-run` 只统计，`--verify N` 抽查中英文一致性 |
+| `migrate_logs_multilang.py` | 把 `roms` 的 21 个 `logs_*` 列迁移为「`logs` 多语言分组 + `roms.logs` 单列」；旧表保留为 `logs_legacy`，`--dry-run` 只统计，`--verify N` 抽查中英文一致性；结束时自动跑去重体检 |
+| `dedup_logs.py` | `logs` 去重体检与合并：把「同一日志被拆成多行」的分组并成一行，同步重写 `roms.logs` / `dev.logs` 引用（掩码不变，导出结果不受影响）；`--apply` 实际合并，`--prune-unused` 顺带清理孤儿行 |
+| `rebuild_roms_logs.py` | 以迁移前的备份库为权威来源重建 `roms.logs`（修复人工改动 `logs` 表造成的悬空引用），并复核「无悬空引用」 |
 | `import_dev_week.py` | 导入开发版（周更）数据到 `dev` 表并回填 `roms.dev_week`；支持 `--source hyperos\|nuxtmr\|miuiroms`、`--all`、`--weeks 619-652`、`--region global`、`--dry-run`、`--backfill-roms` |
 | `sync_devices.py` | 从 `devices` / `roms` 表同步设备列表到 `miroms/data.py`（`fullDevices`、`currentStable`、`flags`） |
 | `fix_missing_tag_mappings.py` | 修复 `devices` 表中缺失的 device+tag 映射（V3 导出器按 tag 匹配分支，缺失会导致 ROM 丢失），输出 SQL 到 stdout 或 `--apply` 直接执行 |
@@ -304,6 +331,7 @@ MySQL 数据库 (miroms: devices / roms / logs / dev / branches / series)
         │  python3 scripts/sync_devices.py        → 更新 miroms/data.py 设备列表
         │  python3 scripts/fix_missing_tag_mappings.py --apply（必要时）
         │  python3 scripts/migrate_logs_multilang.py        → 日志多语言分组（一次性）
+        │  python3 scripts/dedup_logs.py --apply --prune-unused  → 日志去重体检 / 合并 / 清理
         │  python3 scripts/import_dev_week.py --all         → 开发版周更数据（dev 表）
         │  python3 scripts/exporter.py            → 导出 api/v1|v2|v3 + dev + index.json / series.json
         ▼

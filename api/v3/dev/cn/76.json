@@ -2,8 +2,8 @@
   "week": 76,
   "region": "cn",
   "zone": 1,
-  "bigver": "",
-  "versions": "MIUI V4 2.2.10 已发布！",
+  "bigver": "MIUI V4",
+  "versions": "2.2.10",
   "title": {
     "zh": "第76周开发版日志",
     "en": ""
@@ -11,7 +11,20 @@
   "postId": "",
   "update": "",
   "release": "",
-  "description": [],
+  "description": [
+    {
+      "zh": "MIUI V4 2.2.10 已发布！",
+      "en": ""
+    },
+    {
+      "zh": "刷机有风险，务必要小心；请谨慎操作、认真阅读更新日志和刷机教程，将风险降到最低",
+      "en": ""
+    },
+    {
+      "zh": "第一次刷MIUI 时请务必在 Recovery 中选择wipe 清除数据",
+      "en": ""
+    }
+  ],
   "attention": [
     {
       "zh": "小米手机本周没有2.3.5稳定版（荣誉开发组可OTA到2.3.5l2），仅发布4.0的升级包",
@@ -27,8 +40,29 @@
     }
   ],
   "suspended": [],
-  "devices": [],
-  "roms": [],
+  "devices": [
+    {
+      "device": "mione_plus",
+      "name": {
+        "zh": "小米手机1/1S",
+        "en": ""
+      }
+    }
+  ],
+  "roms": [
+    {
+      "device": "mione_plus",
+      "name": {
+        "zh": "小米手机1/1S",
+        "en": ""
+      },
+      "version": "",
+      "android": "4.0",
+      "release": "",
+      "recovery": "miui_Mioneplus_2.2.10_94e8f3e8f0_4.0.zip",
+      "fastboot": "miuiV4_Mioneplus_2.2.10_fastboot-ke83jid7h4.zip"
+    }
+  ],
   "logs": {
     "logs_zh": {
       "系统": [
@@ -106,68 +140,7 @@
       ],
       "防打扰": [
         "修复 无法从联系人picker中选择陌生号码加入黑白名单的问题",
-        "修复 无法从联系人picker中选择陌生号码加入黑白名单的问题",
-        "机型",
-        "安卓版本",
-        "卡刷包",
-        "线刷包",
-        "小米手机1/1S",
-        "4.0",
-        "miui_Mioneplus_2.2.10_94e8f3e8f0_4.0.zip",
-        "miuiV4_Mioneplus_2.2.10_fastboot-ke83jid7h4.zip",
-        "机型",
-        "安卓版本",
-        "卡刷包",
-        "Google Nexus S",
-        "4.0",
-        "miui_NS_2.2.10_f8d651d801_4.0.zip",
-        "Google Nexus One",
-        "2.3 Gingerbread",
-        "miui_NexusOne_2.2.10_hljrnfsjec_2.3.zip",
-        "MOTO Milestone",
-        "2.3 Gingerbread",
-        "miui_Milestone_2.2.10_8p87twaa4l_2.3.zip",
-        "MOTO Defy/Defy+",
-        "2.3 Gingerbread",
-        "miui_Defy_2.2.10_d1l13s199j_2.3.zip",
-        "HTC HD2",
-        "2.3 Gingerbread",
-        "miui_HD2_2.2.10_jcd8i0yfvj_2.3.zip",
-        "HTC Desire HD",
-        "2.3 Gingerbread",
-        "miui_DHD_2.2.10_rka0tkhz10_2.3.zip",
-        "HTC Desire Z",
-        "2.3 Gingerbread",
-        "miui_DesireZ_2.2.10_0bm2zk1jng_2.3.zip",
-        "HTC Incredible S",
-        "2.3 Gingerbread",
-        "miui_IncredibleS_2.2.10_ev3b7dy3p6_2.3.zip",
-        "HTC Desire S",
-        "2.3 Gingerbread",
-        "miui_DesireS_2.2.10_8ows9my008_2.3.zip",
-        "HTC Desire G7",
-        "2.3 Gingerbread",
-        "miui_NexusOne_2.2.10_hljrnfsjec_2.3.zip",
-        "Samsung Galaxy I9000",
-        "2.3 Gingerbread",
-        "miui_I9000_2.2.10_e4j7n280o3_2.3.zip",
-        "Samsung Galaxy T959",
-        "2.3 Gingerbread",
-        "miui_T959_2.2.10_dhmvt8929s_2.3.zip",
-        "Samsung Galaxy S2",
-        "2.3 Gingerbread",
-        "miui_GalaxyS2_2.2.10_j71ihriq8q_2.3.zip",
-        "Samsung Galaxy I897",
-        "2.3 Gingerbread",
-        "miui_I897_2.2.10_k0hpt6dzkx_2.3.zip",
-        "LG P990",
-        "2.3 Gingerbread",
-        "miui_P990_2.2.10_int1wu947i_2.3.zip",
-        "关于我",
-        "我的主页",
-        "使用MDUI打造",
-        "2019 - 2022",
-        "arrow_upward"
+        "修复 无法从联系人picker中选择陌生号码加入黑白名单的问题"
       ],
       "相机": [
         "修复 闪光灯无法使用的问题",

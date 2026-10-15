@@ -2,8 +2,8 @@
   "week": 82,
   "region": "cn",
   "zone": 1,
-  "bigver": "",
-  "versions": "MIUI V4 2.3.23 已发布！",
+  "bigver": "MIUI V4",
+  "versions": "2.3.23",
   "title": {
     "zh": "第82周开发版日志",
     "en": ""
@@ -11,7 +11,24 @@
   "postId": "",
   "update": "",
   "release": "",
-  "description": [],
+  "description": [
+    {
+      "zh": "MIUI V4 2.3.23 已发布！",
+      "en": ""
+    },
+    {
+      "zh": "Galaxy Nexus 首次刷机后需手动更换锁屏壁纸",
+      "en": ""
+    },
+    {
+      "zh": "I9100 v4 本周版本在发送短信时会同时发出两条，预计下周解决",
+      "en": ""
+    },
+    {
+      "zh": "小米手机从2.3升4.0，请先进行系统分区",
+      "en": ""
+    }
+  ],
   "attention": [
     {
       "zh": "经过最近一段时间的内功修炼，MIUI开发小组已基本回归满血状态，每周的更新日志将越来越给力。之前收集的v4吐槽贴里大家提到的问题，我们已梳理排期，每周都会针对里面的重点问题持续跟进，请大家仔细阅读更新日志，你会发现自己关心的问题已经或正在被解决！",
@@ -35,8 +52,29 @@
     }
   ],
   "suspended": [],
-  "devices": [],
-  "roms": [],
+  "devices": [
+    {
+      "device": "mione_plus",
+      "name": {
+        "zh": "小米手机1/1S",
+        "en": ""
+      }
+    }
+  ],
+  "roms": [
+    {
+      "device": "mione_plus",
+      "name": {
+        "zh": "小米手机1/1S",
+        "en": ""
+      },
+      "version": "",
+      "android": "4.0",
+      "release": "",
+      "recovery": "miui_Mioneplus_2.3.23_59cd29f9ee_4.0.zip",
+      "fastboot": "miuiV4_Mioneplus_2.3.23_fastboot_58cawf4r5h.zip"
+    }
+  ],
   "logs": {
     "logs_zh": {
       "本周推荐": [
@@ -211,74 +249,7 @@
       ],
       "闹钟": [
         "新增 世界时钟，优化闹钟界面",
-        "新增 世界时钟，优化闹钟界面",
-        "机型",
-        "安卓版本",
-        "卡刷包",
-        "线刷包",
-        "小米手机1/1S",
-        "4.0",
-        "miui_Mioneplus_2.3.23_59cd29f9ee_4.0.zip",
-        "miuiV4_Mioneplus_2.3.23_fastboot_58cawf4r5h.zip",
-        "机型",
-        "安卓版本",
-        "卡刷包",
-        "Google Nexus S",
-        "4.0",
-        "miui_NS_2.3.23_e6d3af8496_4.0.zip",
-        "Google Nexus One",
-        "2.3 Gingerbread",
-        "miui_NexusOne_2.3.23_5dkll5gjg6_2.3.zip",
-        "MOTO Milestone",
-        "2.3 Gingerbread",
-        "miui_Milestone_2.3.23_s8jy59ssa4_2.3.zip",
-        "MOTO Defy/Defy+",
-        "2.3 Gingerbread",
-        "miui_Defy_2.3.23_51gg1102oq_2.3.zip",
-        "HTC HD2",
-        "2.3 Gingerbread",
-        "miui_HD2_2.3.23_ykjo0q8ezw_2.3.zip",
-        "HTC Desire HD",
-        "2.3 Gingerbread",
-        "miui_DHD_2.3.23_6i0y4ungs2_2.3.zip",
-        "HTC Desire Z",
-        "2.3 Gingerbread",
-        "miui_DesireZ_2.3.23_bxa2r73vxe_2.3.zip",
-        "HTC Incredible S",
-        "2.3 Gingerbread",
-        "miui_IncredibleS_2.3.23_it8c572kl5_2.3.zip",
-        "HTC Desire S",
-        "2.3 Gingerbread",
-        "miui_DesireS_2.3.23_y4ggwigx82_2.3.zip",
-        "HTC Sensation",
-        "4.0",
-        "miui_Sensation_2.3.23_35f902fc5a_4.0.zip",
-        "Samsung Galaxy I9000",
-        "2.3 Gingerbread",
-        "miui_I9000_2.3.23_svmn0ym29o_2.3.zip",
-        "Samsung Galaxy T959",
-        "2.3 Gingerbread",
-        "miui_T959_2.3.23_xotz2a0v1y_2.3.zip",
-        "Samsung Galaxy S2",
-        "4.0",
-        "miui_i9100_2.3.23_ebfa8a2d83_4.0.zip",
-        "Samsung Galaxy I897",
-        "2.3 Gingerbread",
-        "miui_I897_2.3.23_ibr2ydyd3i_2.3.zip",
-        "Samsung Galaxy Nexus",
-        "4.0",
-        "miui_GalaxyNexus_2.3.23_6ad88b90e5_4.0.zip",
-        "LG P990",
-        "2.3 Gingerbread",
-        "miui_P990_2.3.23_lhabzkcvgd_2.3.zip",
-        "华为 Honor",
-        "4.0",
-        "miui_Honor_2.3.23_20cedef797_4.0.zip",
-        "关于我",
-        "我的主页",
-        "使用MDUI打造",
-        "2019 - 2022",
-        "arrow_upward"
+        "新增 世界时钟，优化闹钟界面"
       ]
     }
   },

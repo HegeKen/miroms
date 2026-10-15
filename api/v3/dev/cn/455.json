@@ -2,8 +2,8 @@
   "week": 455,
   "region": "cn",
   "zone": 1,
-  "bigver": "",
-  "versions": "MIUI12 开发版20.5.28 11:40发布，部分机型延迟发布",
+  "bigver": "MIUI12",
+  "versions": "20.5.28",
   "title": {
     "zh": "第455周开发版日志",
     "en": ""
@@ -11,7 +11,24 @@
   "postId": "",
   "update": "",
   "release": "",
-  "description": [],
+  "description": [
+    {
+      "zh": "MIUI12 开发版20.5.28 11:40发布，部分机型延迟发布",
+      "en": ""
+    },
+    {
+      "zh": "Redmi Note 8、小米CC 9e 适配Android 10升级，停版一段时间",
+      "en": ""
+    },
+    {
+      "zh": "2020年6月20日起，以下机型将停止开发版内测公测：小米6、红米Note5、小米6X、小米Note3、小米MIX2 开发版内测",
+      "en": ""
+    },
+    {
+      "zh": "为了提升手机的通讯性能以及提高稳定性，我们将进行高通基线的升级，小米10、小米10Pro、Redmi K30 Pro从5月25日起暂停发布，预计暂停三周左右，此次升级不影响稳定版，请大家理解",
+      "en": ""
+    }
+  ],
   "attention": [
     {
       "zh": "MIUI 开发版可进入“设置—>我的设备—>MIUI版本”在线升级，升级前务必备份重要数据",
@@ -23,8 +40,485 @@
     }
   ],
   "suspended": [],
-  "devices": [],
-  "roms": [],
+  "devices": [
+    {
+      "device": "sagit",
+      "name": {
+        "zh": "小米6",
+        "en": ""
+      }
+    },
+    {
+      "device": "wayne",
+      "name": {
+        "zh": "小米6X",
+        "en": ""
+      }
+    },
+    {
+      "device": "dipper",
+      "name": {
+        "zh": "小米8",
+        "en": ""
+      }
+    },
+    {
+      "device": "ursa",
+      "name": {
+        "zh": "小米8探索版",
+        "en": ""
+      }
+    },
+    {
+      "device": "equuleus",
+      "name": {
+        "zh": "小米8屏幕指纹版",
+        "en": ""
+      }
+    },
+    {
+      "device": "sirius",
+      "name": {
+        "zh": "小米8 SE",
+        "en": ""
+      }
+    },
+    {
+      "device": "platina",
+      "name": {
+        "zh": "小米8青春版",
+        "en": ""
+      }
+    },
+    {
+      "device": "cepheus",
+      "name": {
+        "zh": "小米9/透明版",
+        "en": ""
+      }
+    },
+    {
+      "device": "crux",
+      "name": {
+        "zh": "小米9 Pro 5G",
+        "en": ""
+      }
+    },
+    {
+      "device": "grus",
+      "name": {
+        "zh": "小米9 SE",
+        "en": ""
+      }
+    },
+    {
+      "device": "pyxis",
+      "name": {
+        "zh": "小米CC9",
+        "en": ""
+      }
+    },
+    {
+      "device": "vela",
+      "name": {
+        "zh": "小米CC9美图定制版",
+        "en": ""
+      }
+    },
+    {
+      "device": "tucana",
+      "name": {
+        "zh": "小米CC9 Pro",
+        "en": ""
+      }
+    },
+    {
+      "device": "vangogh",
+      "name": {
+        "zh": "小米10 青春版",
+        "en": ""
+      }
+    },
+    {
+      "device": "nitrogen",
+      "name": {
+        "zh": "小米Max 3",
+        "en": ""
+      }
+    },
+    {
+      "device": "jason",
+      "name": {
+        "zh": "小米Note 3",
+        "en": ""
+      }
+    },
+    {
+      "device": "polaris",
+      "name": {
+        "zh": "小米MIX 2S",
+        "en": ""
+      }
+    },
+    {
+      "device": "perseus",
+      "name": {
+        "zh": "小米MIX 3",
+        "en": ""
+      }
+    },
+    {
+      "device": "whyred",
+      "name": {
+        "zh": "红米Note5",
+        "en": ""
+      }
+    },
+    {
+      "device": "lavender",
+      "name": {
+        "zh": "Redmi Note 7",
+        "en": ""
+      }
+    },
+    {
+      "device": "violet",
+      "name": {
+        "zh": "Redmi Note 7 Pro",
+        "en": ""
+      }
+    },
+    {
+      "device": "begonia",
+      "name": {
+        "zh": "Redmi Note 8 Pro",
+        "en": ""
+      }
+    },
+    {
+      "device": "davinci",
+      "name": {
+        "zh": "Redmi K20",
+        "en": ""
+      }
+    },
+    {
+      "device": "raphael",
+      "name": {
+        "zh": "Redmi K20 Pro/尊享版",
+        "en": ""
+      }
+    },
+    {
+      "device": "phoenix",
+      "name": {
+        "zh": "Redmi K30 4G版",
+        "en": ""
+      }
+    }
+  ],
+  "roms": [
+    {
+      "device": "sagit",
+      "name": {
+        "zh": "小米6",
+        "en": ""
+      },
+      "version": "",
+      "android": "9.0",
+      "release": "",
+      "recovery": "miui_MI6_20.5.28_98efb12884_9.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "wayne",
+      "name": {
+        "zh": "小米6X",
+        "en": ""
+      },
+      "version": "",
+      "android": "9.0",
+      "release": "",
+      "recovery": "miui_MI6X_20.5.28_25b48bcb48_9.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "dipper",
+      "name": {
+        "zh": "小米8",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_MI8_20.5.28_a31ca01f86_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "ursa",
+      "name": {
+        "zh": "小米8探索版",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_MI8Explorer_20.5.28_f0891c672f_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "equuleus",
+      "name": {
+        "zh": "小米8屏幕指纹版",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_MI8UD_20.5.28_e684ba615d_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "sirius",
+      "name": {
+        "zh": "小米8 SE",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_MI8SE_20.5.28_d4aaf40f76_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "platina",
+      "name": {
+        "zh": "小米8青春版",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_MI8Lite_20.5.28_1c4e513313_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "cepheus",
+      "name": {
+        "zh": "小米9/透明版",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_CEPHEUS_20.5.28_13fad6e814_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "crux",
+      "name": {
+        "zh": "小米9 Pro 5G",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_CRUX_20.5.28_74e2d1d3e9_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "grus",
+      "name": {
+        "zh": "小米9 SE",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_GRUS_20.5.28_dcdfb69e45_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "pyxis",
+      "name": {
+        "zh": "小米CC9",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_PYXIS_20.5.28_5653d0e1fb_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "vela",
+      "name": {
+        "zh": "小米CC9美图定制版",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_VELA_20.5.28_0bf93f3ab5_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "tucana",
+      "name": {
+        "zh": "小米CC9 Pro",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_TUCANA_20.5.28_001e2dab4d_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "vangogh",
+      "name": {
+        "zh": "小米10 青春版",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_VANGOGH_20.5.28_a9be7baead_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "nitrogen",
+      "name": {
+        "zh": "小米Max 3",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_MIMAX3_20.5.28_5ab65972b1_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "jason",
+      "name": {
+        "zh": "小米Note 3",
+        "en": ""
+      },
+      "version": "",
+      "android": "9.0",
+      "release": "",
+      "recovery": "miui_MINote3_20.5.28_6b0c3b94c8_9.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "polaris",
+      "name": {
+        "zh": "小米MIX 2S",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_MIMIX2S_20.5.28_20fa7f67d3_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "perseus",
+      "name": {
+        "zh": "小米MIX 3",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_MIMIX3_20.5.28_27af5ab082_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "whyred",
+      "name": {
+        "zh": "红米Note5",
+        "en": ""
+      },
+      "version": "",
+      "android": "9.0",
+      "release": "",
+      "recovery": "miui_HMNote5_20.5.28_6b38f5a374_9.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "lavender",
+      "name": {
+        "zh": "Redmi Note 7",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_LAVENDER_20.5.28_6293665759_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "violet",
+      "name": {
+        "zh": "Redmi Note 7 Pro",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_VIOLET_20.5.28_c814552457_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "begonia",
+      "name": {
+        "zh": "Redmi Note 8 Pro",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_BEGONIA_20.5.28_356c5fc0e2_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "davinci",
+      "name": {
+        "zh": "Redmi K20",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_DAVINCI_20.5.28_98164b3466_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "raphael",
+      "name": {
+        "zh": "Redmi K20 Pro/尊享版",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_RAPHAEL_20.5.28_79236bd656_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "phoenix",
+      "name": {
+        "zh": "Redmi K30 4G版",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_PHOENIX_20.5.28_ef1f0d470e_10.0.zip",
+      "fastboot": ""
+    }
+  ],
   "logs": {
     "logs_zh": {
       "超级壁纸": [
@@ -55,93 +549,167 @@
         "系统更新界面重大改版，尤其在下一次检测到新版本时，您将体验到丝滑且奇妙的动画体验，敬请期待"
       ],
       "其他": [
-        "新增 三指长按触发区域截屏功能",
-        "机型",
-        "安卓版本",
-        "卡刷包",
-        "小米6(sagit)",
-        "9.0",
-        "miui_MI6_20.5.28_98efb12884_9.0.zip",
-        "小米6X(wayne)",
-        "9.0",
-        "miui_MI6X_20.5.28_25b48bcb48_9.0.zip",
-        "小米8(dipper)",
-        "10.0",
-        "miui_MI8_20.5.28_a31ca01f86_10.0.zip",
-        "小米8探索版(ursa)",
-        "10.0",
-        "miui_MI8Explorer_20.5.28_f0891c672f_10.0.zip",
-        "小米8屏幕指纹版(equuleus)",
-        "10.0",
-        "miui_MI8UD_20.5.28_e684ba615d_10.0.zip",
-        "小米8 SE(sirius)",
-        "10.0",
-        "miui_MI8SE_20.5.28_d4aaf40f76_10.0.zip",
-        "小米8青春版(platina)",
-        "10.0",
-        "miui_MI8Lite_20.5.28_1c4e513313_10.0.zip",
-        "小米9/透明版(cepheus)",
-        "10.0",
-        "miui_CEPHEUS_20.5.28_13fad6e814_10.0.zip",
-        "小米9 Pro 5G(crux)",
-        "10.0",
-        "miui_CRUX_20.5.28_74e2d1d3e9_10.0.zip",
-        "小米9 SE(grus)",
-        "10.0",
-        "miui_GRUS_20.5.28_dcdfb69e45_10.0.zip",
-        "小米CC9(pyxis)",
-        "10.0",
-        "miui_PYXIS_20.5.28_5653d0e1fb_10.0.zip",
-        "小米CC9美图定制版(vela)",
-        "10.0",
-        "miui_VELA_20.5.28_0bf93f3ab5_10.0.zip",
-        "小米CC9 Pro(tucana)",
-        "10.0",
-        "miui_TUCANA_20.5.28_001e2dab4d_10.0.zip",
-        "小米10 青春版(vangogh)",
-        "10.0",
-        "miui_VANGOGH_20.5.28_a9be7baead_10.0.zip",
-        "小米Max 3(nitrogen)",
-        "10.0",
-        "miui_MIMAX3_20.5.28_5ab65972b1_10.0.zip",
-        "小米Note 3(jason)",
-        "9.0",
-        "miui_MINote3_20.5.28_6b0c3b94c8_9.0.zip",
-        "小米MIX 2S(polaris)",
-        "10.0",
-        "miui_MIMIX2S_20.5.28_20fa7f67d3_10.0.zip",
-        "小米MIX 3(perseus)",
-        "10.0",
-        "miui_MIMIX3_20.5.28_27af5ab082_10.0.zip",
-        "红米Note5(whyred)",
-        "9.0",
-        "miui_HMNote5_20.5.28_6b38f5a374_9.0.zip",
-        "Redmi Note 7(lavender)",
-        "10.0",
-        "miui_LAVENDER_20.5.28_6293665759_10.0.zip",
-        "Redmi Note 7 Pro(violet)",
-        "10.0",
-        "miui_VIOLET_20.5.28_c814552457_10.0.zip",
-        "Redmi Note 8 Pro(begonia)",
-        "10.0",
-        "miui_BEGONIA_20.5.28_356c5fc0e2_10.0.zip",
-        "Redmi K20(davinci)",
-        "10.0",
-        "miui_DAVINCI_20.5.28_98164b3466_10.0.zip",
-        "Redmi K20 Pro/尊享版(raphael)",
-        "10.0",
-        "miui_RAPHAEL_20.5.28_79236bd656_10.0.zip",
-        "Redmi K30 4G版(phoenix)",
-        "10.0",
-        "miui_PHOENIX_20.5.28_ef1f0d470e_10.0.zip",
-        "Redmi K30 5G版(Picasso)",
-        "10.0",
-        "miui_PICASSO_20.5.28_1a3b6da8f3_10.0.zip",
-        "关于我",
-        "我的主页",
-        "使用MDUI打造",
-        "2019 - 2022",
-        "arrow_upward"
+        "新增 三指长按触发区域截屏功能"
+      ]
+    },
+    "logs_zh_tw": {
+      "超級桌布": [
+        "修復: 超級桌面在深色模式下狀態列顏色異常的問題"
+      ],
+      "萬象微光螢幕": [
+        "修復: 偶現螢幕熄滅界面顯示螢幕鎖定內容的問題"
+      ]
+    },
+    "logs_en": {
+      "Super wallpapers": [
+        "Fix: Status bar colors weren^t displayed correctly in the Dark mode"
+      ],
+      "Always-on display": [
+        "Fix: Lock screen items were shown on the Always-on display"
+      ]
+    },
+    "logs_ja": {
+      "スーパー壁紙": [
+        "修正: ダークモードでステータスバーの色が正しく表示されない問題"
+      ],
+      "Mi シェア": [
+        "新機能: 最近接続したデバイスは、しばらくの間リストの一番上にピン留めされます"
+      ]
+    },
+    "logs_ko": {
+      "고화질 배경화면": [
+        "수정: 다크 모드에서 상태 바 색상이 제대로 표시되지 않는 문제"
+      ],
+      "Mi Share": [
+        "New: 최근 연결한 장치가 목록 상단에 잠시 고정됩니다"
+      ]
+    },
+    "logs_ru": {
+      "Суперобои": [
+        "Исправлено: В темном режиме цвета строки состояния отображались неправильно"
+      ],
+      "Mi Share": [
+        "Новое: Недавно подключенные устройства будут некоторое время отображаться в начале списка"
+      ]
+    },
+    "logs_uk": {
+      "Супершпалери": [
+        "Виправлено: Кольори рядка стану відображалася неправильно у Темному режимі"
+      ],
+      "Mi Share": [
+        "Нове: Нещодавно підключені пристрої будуть тимчасово закріплені на початку списку"
+      ]
+    },
+    "logs_pl": {
+      "Super tapety": [
+        "Naprawiono: Kolory paska statusu nie były poprawnie wyświetlane w trybie ciemnym"
+      ],
+      "Mi Share": [
+        "Nowe: Ostatnio podłączone urządzenia zostaną na krótko przypięte na górze listy"
+      ]
+    },
+    "logs_de": {
+      "Super wallpapers": [
+        "Fix: Status bar colors weren^t displayed correctly in the Dark mode"
+      ],
+      "Always-on display": [
+        "Fix: Lock screen items were shown on the Always-on display"
+      ]
+    },
+    "logs_fr": {
+      "Super fonds d'écran": [
+        "Réparé: Les couleurs de la barre d^état ne s^affichaient pas correctement dans le Mode sombre"
+      ],
+      "Mi Share": [
+        "Nouveau: Connectés récemment aux appareils seront mis en tête de liste pendant un petit moment"
+      ]
+    },
+    "logs_it": {
+      "Super sfondi": [
+        "Risolto: I colori della barra di stato non erano visualizzati correttamente in modalità Scura"
+      ],
+      "Mi Share": [
+        "Nuovo: I dispositivi connessi di recente verranno bloccati in cima all^elenco per un breve periodo"
+      ]
+    },
+    "logs_es": {
+      "Superfondos de pantalla": [
+        "Reparado: Los colores de la barra de estado no se mostraban correctamente en el Modo oscuro"
+      ],
+      "Mi Share": [
+        "Nuevo: Los dispositivos conectados recientemente serán anclados en la parte superior de la lista durante un corto periodo de tiempo"
+      ]
+    },
+    "logs_pt": {
+      "Super planos de fundo": [
+        "Correção: As cores da Barra de status não eram exibidas corretamente no Modo Escuro"
+      ],
+      "Compartilhamento Mi": [
+        "Novo: Os dispositivos conectados recentemente serão fixados no topo da lista por um curto período de tempo"
+      ]
+    },
+    "logs_tr": {
+      "Süper duvar kağıtları": [
+        "Onarım: Durum çubuğu renkleri Karanlık modda düzgün bir şekilde görüntülenmedi"
+      ],
+      "Mi Paylaşım": [
+        "Yeni: Son bağlanan cihazlar kısa bir süre için listenin başına iğnelenecektir"
+      ]
+    },
+    "logs_id": {
+      "Wallpaper super": [
+        "Perbaikan: Warna bilah status tidak ditampilkan dengan benar dalam mode Gelap"
+      ],
+      "Mi Share": [
+        "Baru: Perangkat yang baru saja terhubung akan disematkan di atas daftar untuk waktu yang singkat"
+      ]
+    },
+    "logs_vi": {
+      "Siêu hình nền": [
+        "Sửa: Màu của thanh trạng thái không hiển thị chính xác trên Chế độ nền tối"
+      ],
+      "Mi Share": [
+        "Mới: Thiết bị được kết nối gần đây sẽ được ghim trên đầu danh sách trong một thời gian ngắn"
+      ]
+    },
+    "logs_th": {
+      "สุดยอดภาพพื้นหลัง": [
+        "แก้ไข: สีของแถบสถานะแสดงไม่ถูกต้องในโหมดมืด"
+      ],
+      "Mi แชร์": [
+        "ใหม่: อุปกรณ์ที่เชื่อมต่อล่าสุดจะถูกตรึงที่ด้านบนของรายการเป็นเวลาสั้นๆ"
+      ]
+    },
+    "logs_ar": {
+      "خلفيات سوبر": [
+        ":الإصلاح مشكله عدم عرض لون شريط الحالة بشكل صحيح في الوضع الداكن"
+      ],
+      "Mi Share": [
+        ":الجديد إضافة ميزة تثبيت الأجهزة المتصلة مؤخرا بأعلى القائمة لفترة من الوقت"
+      ]
+    },
+    "logs_in": {
+      "Super wallpapers": [
+        "Fix: Status bar colors weren^t displayed correctly in the Dark mode"
+      ],
+      "Always-on display": [
+        "Fix: Lock screen items were shown on the Always-on display"
+      ]
+    },
+    "logs_ug": {
+      "Super wallpapers": [
+        "Fix: Status bar colors weren^t displayed correctly in the Dark mode"
+      ],
+      "Always-on display": [
+        "Fix: Lock screen items were shown on the Always-on display"
+      ]
+    },
+    "logs_bo": {
+      "Super wallpapers": [
+        "Fix: Status bar colors weren^t displayed correctly in the Dark mode"
+      ],
+      "Always-on display": [
+        "Fix: Lock screen items were shown on the Always-on display"
       ]
     }
   },

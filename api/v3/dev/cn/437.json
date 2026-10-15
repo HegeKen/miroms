@@ -2,8 +2,8 @@
   "week": 437,
   "region": "cn",
   "zone": 1,
-  "bigver": "",
-  "versions": "MIUI11 开发版9.11.14 11:00发布，部分机型延迟发布",
+  "bigver": "MIUI11",
+  "versions": "9.11.14",
   "title": {
     "zh": "第437周开发版日志",
     "en": ""
@@ -11,7 +11,32 @@
   "postId": "",
   "update": "",
   "release": "",
-  "description": [],
+  "description": [
+    {
+      "zh": "MIUI11 开发版9.11.14 11:00发布，部分机型延迟发布",
+      "en": ""
+    },
+    {
+      "zh": "小米CC 9、小米CC 9 美图定制版 启动Android 10升级，本周暂停发布",
+      "en": ""
+    },
+    {
+      "zh": "小米PLAY、Redmi Note7 Pro、小米MIX 2、小米 MAX3、小米CC 9e、小米MIX 2S、小米MIX 3、Redmi K20、小米9 Pro 5G、Redmi Note 8 Pro、小米8 SE、小米8屏幕指纹版、小米8透明探索版、Redmi K20 Pro 因测试系统稳定性，公测发布延迟",
+      "en": ""
+    },
+    {
+      "zh": "小米9 因解决影响稳定性Bug，本周暂停发布",
+      "en": ""
+    },
+    {
+      "zh": "红米Note 4X 、红米4X、红米Note 5A标准版、红米Note 5A高配版、小米5C、小米Max 2、小米Note 2、小米MIX、小米手机5s、小米手机5s Plus 、红米5 Plus、小米5X、红米5A、红米5、小米平板3 正式停止开发版公测",
+      "en": ""
+    },
+    {
+      "zh": "由于不在MIUI11适配计划机型内，小米平板4/4Plus暂停更新",
+      "en": ""
+    }
+  ],
   "attention": [
     {
       "zh": "MIUI 11开发版可进入“设置—>我的设备—>MIUI版本”在线升级，升级前务必备份重要数据",
@@ -23,8 +48,333 @@
     }
   ],
   "suspended": [],
-  "devices": [],
-  "roms": [],
+  "devices": [
+    {
+      "device": "sagit",
+      "name": {
+        "zh": "小米6",
+        "en": ""
+      }
+    },
+    {
+      "device": "dipper",
+      "name": {
+        "zh": "小米8",
+        "en": ""
+      }
+    },
+    {
+      "device": "sirius",
+      "name": {
+        "zh": "小米8 SE",
+        "en": ""
+      }
+    },
+    {
+      "device": "platina",
+      "name": {
+        "zh": "小米8青春版",
+        "en": ""
+      }
+    },
+    {
+      "device": "grus",
+      "name": {
+        "zh": "小米9 SE",
+        "en": ""
+      }
+    },
+    {
+      "device": "nitrogen",
+      "name": {
+        "zh": "小米Max 3",
+        "en": ""
+      }
+    },
+    {
+      "device": "jason",
+      "name": {
+        "zh": "小米Note 3",
+        "en": ""
+      }
+    },
+    {
+      "device": "chiron",
+      "name": {
+        "zh": "小米MIX 2",
+        "en": ""
+      }
+    },
+    {
+      "device": "perseus",
+      "name": {
+        "zh": "小米MIX 3",
+        "en": ""
+      }
+    },
+    {
+      "device": "cereus",
+      "name": {
+        "zh": "红米6",
+        "en": ""
+      }
+    },
+    {
+      "device": "cactus",
+      "name": {
+        "zh": "红米6A",
+        "en": ""
+      }
+    },
+    {
+      "device": "sakura",
+      "name": {
+        "zh": "红米6 Pro",
+        "en": ""
+      }
+    },
+    {
+      "device": "whyred",
+      "name": {
+        "zh": "红米Note 5",
+        "en": ""
+      }
+    },
+    {
+      "device": "lavender",
+      "name": {
+        "zh": "Redmi Note 7",
+        "en": ""
+      }
+    },
+    {
+      "device": "violet",
+      "name": {
+        "zh": "Redmi Note 7 Pro",
+        "en": ""
+      }
+    },
+    {
+      "device": "ginkgo",
+      "name": {
+        "zh": "Redmi Note 8",
+        "en": ""
+      }
+    },
+    {
+      "device": "davinci",
+      "name": {
+        "zh": "Redmi K20",
+        "en": ""
+      }
+    }
+  ],
+  "roms": [
+    {
+      "device": "sagit",
+      "name": {
+        "zh": "小米6",
+        "en": ""
+      },
+      "version": "",
+      "android": "9.0",
+      "release": "",
+      "recovery": "miui_MI6_9.11.14_bc688b7a4b_9.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "dipper",
+      "name": {
+        "zh": "小米8",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_MI8_9.11.14_2ce5337e20_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "sirius",
+      "name": {
+        "zh": "小米8 SE",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_MI8SE_9.11.14_9afc5412d6_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "platina",
+      "name": {
+        "zh": "小米8青春版",
+        "en": ""
+      },
+      "version": "",
+      "android": "9.0",
+      "release": "",
+      "recovery": "miui_MI8Lite_9.11.14_00a1ef5c5e_9.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "grus",
+      "name": {
+        "zh": "小米9 SE",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_GRUS_9.11.14_df74ea5740_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "nitrogen",
+      "name": {
+        "zh": "小米Max 3",
+        "en": ""
+      },
+      "version": "",
+      "android": "9.0",
+      "release": "",
+      "recovery": "miui_MIMAX3_9.11.14_b66c17a7d4_9.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "jason",
+      "name": {
+        "zh": "小米Note 3",
+        "en": ""
+      },
+      "version": "",
+      "android": "9.0",
+      "release": "",
+      "recovery": "miui_MINote3_9.11.14_de3ab29e45_9.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "chiron",
+      "name": {
+        "zh": "小米MIX 2",
+        "en": ""
+      },
+      "version": "",
+      "android": "9.0",
+      "release": "",
+      "recovery": "miui_MIMIX2_9.11.14_477bc3e5e8_9.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "perseus",
+      "name": {
+        "zh": "小米MIX 3",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_MIMIX3_9.11.14_03197d5607_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "cereus",
+      "name": {
+        "zh": "红米6",
+        "en": ""
+      },
+      "version": "",
+      "android": "9.0",
+      "release": "",
+      "recovery": "miui_HM6_9.11.14_6553831422_9.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "cactus",
+      "name": {
+        "zh": "红米6A",
+        "en": ""
+      },
+      "version": "",
+      "android": "9.0",
+      "release": "",
+      "recovery": "miui_HM6A_9.11.14_03112ecc11_9.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "sakura",
+      "name": {
+        "zh": "红米6 Pro",
+        "en": ""
+      },
+      "version": "",
+      "android": "9.0",
+      "release": "",
+      "recovery": "miui_HM6Pro_9.11.14_9e226f58d2_9.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "whyred",
+      "name": {
+        "zh": "红米Note 5",
+        "en": ""
+      },
+      "version": "",
+      "android": "9.0",
+      "release": "",
+      "recovery": "miui_HMNote5_9.11.14_36f226f5e4_9.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "lavender",
+      "name": {
+        "zh": "Redmi Note 7",
+        "en": ""
+      },
+      "version": "",
+      "android": "9.0",
+      "release": "",
+      "recovery": "miui_LAVENDER_9.11.14_f1df2b02dc_9.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "violet",
+      "name": {
+        "zh": "Redmi Note 7 Pro",
+        "en": ""
+      },
+      "version": "",
+      "android": "9.0",
+      "release": "",
+      "recovery": "miui_VIOLET_9.11.14_bc24fb6553_9.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "ginkgo",
+      "name": {
+        "zh": "Redmi Note 8",
+        "en": ""
+      },
+      "version": "",
+      "android": "9.0",
+      "release": "",
+      "recovery": "miui_BEGONIA_9.11.14_a79ae7a794_9.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "davinci",
+      "name": {
+        "zh": "Redmi K20",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_DAVINCI_9.11.14_dea263afb9_10.0.zip",
+      "fastboot": ""
+    }
+  ],
   "logs": {
     "logs_zh": {
       "其他": [
@@ -47,66 +397,7 @@
         "修复 偶现首次使用游戏投屏不响应的问题（Redmi Note 7Pro、Redmi K20 Pro、小米Play）",
         "其他",
         "优化 截屏动画（红米Note5、红米手机6 Pro、红米手机6A）",
-        "修复 长截屏底部画面重叠的问题（红米Note5、红米手机6 Pro、红米手机6A）",
-        "机型",
-        "安卓版本",
-        "卡刷包",
-        "小米6(sagit)",
-        "9.0",
-        "miui_MI6_9.11.14_bc688b7a4b_9.0.zip",
-        "小米8(dipper)",
-        "10.0",
-        "miui_MI8_9.11.14_2ce5337e20_10.0.zip",
-        "小米8 SE(sirius)",
-        "10.0",
-        "miui_MI8SE_9.11.14_9afc5412d6_10.0.zip",
-        "小米8青春版(platina)",
-        "9.0",
-        "miui_MI8Lite_9.11.14_00a1ef5c5e_9.0.zip",
-        "小米9 SE(grus)",
-        "10.0",
-        "miui_GRUS_9.11.14_df74ea5740_10.0.zip",
-        "小米Max 3(nitrogen)",
-        "9.0",
-        "miui_MIMAX3_9.11.14_b66c17a7d4_9.0.zip",
-        "小米Note 3(jason)",
-        "9.0",
-        "miui_MINote3_9.11.14_de3ab29e45_9.0.zip",
-        "小米MIX 2(chiron)",
-        "9.0",
-        "miui_MIMIX2_9.11.14_477bc3e5e8_9.0.zip",
-        "小米MIX 3(perseus)",
-        "10.0",
-        "miui_MIMIX3_9.11.14_03197d5607_10.0.zip",
-        "红米6(cereus)",
-        "9.0",
-        "miui_HM6_9.11.14_6553831422_9.0.zip",
-        "红米6A(cactus)",
-        "9.0",
-        "miui_HM6A_9.11.14_03112ecc11_9.0.zip",
-        "红米6 Pro(sakura)",
-        "9.0",
-        "miui_HM6Pro_9.11.14_9e226f58d2_9.0.zip",
-        "红米Note 5(whyred)",
-        "9.0",
-        "miui_HMNote5_9.11.14_36f226f5e4_9.0.zip",
-        "Redmi Note 7(lavender)",
-        "9.0",
-        "miui_LAVENDER_9.11.14_f1df2b02dc_9.0.zip",
-        "Redmi Note 7 Pro(violet)",
-        "9.0",
-        "miui_VIOLET_9.11.14_bc24fb6553_9.0.zip",
-        "Redmi Note 8(ginkgo)",
-        "9.0",
-        "miui_BEGONIA_9.11.14_a79ae7a794_9.0.zip",
-        "Redmi K20(davinci)",
-        "10.0",
-        "miui_DAVINCI_9.11.14_dea263afb9_10.0.zip",
-        "关于我",
-        "我的主页",
-        "使用MDUI打造",
-        "2019 - 2022",
-        "arrow_upward"
+        "修复 长截屏底部画面重叠的问题（红米Note5、红米手机6 Pro、红米手机6A）"
       ]
     }
   },

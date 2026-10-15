@@ -350,9 +350,15 @@ def main() -> None:
 	drop_legacy_columns()
 	fix_auto_increment()
 
+	dupes = LogStore.duplicate_report()
+	print(f"[{ts()}] 去重体检：重复分组 {len(dupes)} 组"
+		  + (f"（如 {dupes[0]}）" if dupes else " ✓"))
+	if dupes:
+		print("    ✖ 存在重复日志分组，请运行：python3 data/scripts/dedup_logs.py --apply")
+
 	print(f"\n[{ts()}] 迁移完成，logs 表共 {LogStore.count()} 条。"
 		  f"核对无误后可执行：DROP TABLE `{LEGACY_TABLE}`;")
-	if failed:
+	if failed or dupes:
 		sys.exit(1)
 
 

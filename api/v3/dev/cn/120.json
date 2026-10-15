@@ -2,8 +2,8 @@
   "week": 120,
   "region": "cn",
   "zone": 1,
-  "bigver": "",
-  "versions": "MIUI V4 2.12.21 已发布！",
+  "bigver": "MIUI V4",
+  "versions": "2.12.21",
   "title": {
     "zh": "第120周开发版日志",
     "en": ""
@@ -11,7 +11,12 @@
   "postId": "",
   "update": "",
   "release": "",
-  "description": [],
+  "description": [
+    {
+      "zh": "MIUI V4 2.12.21 已发布！",
+      "en": ""
+    }
+  ],
   "attention": [
     {
       "zh": "刷机有风险，务必要小心；请谨慎操作、认真阅读更新日志和刷机教程，将风险降到最低",
@@ -23,8 +28,48 @@
     }
   ],
   "suspended": [],
-  "devices": [],
-  "roms": [],
+  "devices": [
+    {
+      "device": "mione_plus",
+      "name": {
+        "zh": "小米手机1/小米手机1S",
+        "en": ""
+      }
+    },
+    {
+      "device": "aries",
+      "name": {
+        "zh": "小米2/2S",
+        "en": ""
+      }
+    }
+  ],
+  "roms": [
+    {
+      "device": "mione_plus",
+      "name": {
+        "zh": "小米手机1/小米手机1S",
+        "en": ""
+      },
+      "version": "",
+      "android": "4.0",
+      "release": "",
+      "recovery": "miui_Mioneplus_2.12.17_bc8be7e035_4.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "aries",
+      "name": {
+        "zh": "小米2/2S",
+        "en": ""
+      },
+      "version": "",
+      "android": "4.1 Jelly Bean",
+      "release": "",
+      "recovery": "miui_MI2_2.12.17_23ecb6cc77_4.1.zip",
+      "fastboot": ""
+    }
+  ],
   "logs": {
     "logs_zh": {
       "联系人": [
@@ -70,89 +115,7 @@
       "视频": [
         "新增 在线视频可一键进入全屏播放模式",
         "新增 在线视频可一键进入全屏播放模式",
-        "新增 在线视频可一键进入全屏播放模式",
-        "机型",
-        "安卓版本",
-        "卡刷包",
-        "线刷包",
-        "-->",
-        "小米手机1/小米手机1S(mione_plus)",
-        "4.0",
-        "miui_Mioneplus_2.12.17_bc8be7e035_4.0.zip",
-        "小米2/2S(aries)",
-        "4.1 Jelly Bean",
-        "miui_MI2_2.12.17_23ecb6cc77_4.1.zip",
-        "Google Galaxy Nexus",
-        "4.1 Jelly Bean",
-        "miui_GalaxyNexus_2.12.17_658752ce4b_4.1.zip",
-        "Google Nexus S",
-        "4.1 Jelly Bean",
-        "miui_NS_2.12.17_3b8c55f62a_4.1.zip",
-        "Google Nexus 7",
-        "4.1 Jelly Bean",
-        "miui_Nexus7_2.12.17_9ae91b93b9_4.1.zip",
-        "MOTO ME865(Atrix2)",
-        "4.0",
-        "miui_ME865_2.12.17_cdd6ab9ade_4.0.zip",
-        "MOTO Razr",
-        "4.0",
-        "miui_Razr_2.12.17_de69521df4_4.0.zip",
-        "HTC One X",
-        "4.0",
-        "miui_OneX_2.12.17_4126ceda76_4.0.zip",
-        "HTC One S",
-        "4.0",
-        "miui_OneS_2.12.17_2b38461bf2_4.0.zip",
-        "HTC Evo 3D",
-        "4.0",
-        "miui_X515M_2.12.17_a4344936f4_4.0.zip",
-        "HTC Sensation G14(G18)",
-        "4.0",
-        "miui_Sensation_2.12.17_cf224aafcf_4.0.zip",
-        "HTC Desire S",
-        "4.0",
-        "miui_DesireS_2.12.17_2482df5aeb_4.0.zip",
-        "HTC Incredible S",
-        "4.0",
-        "miui_IncredibleS_2.12.17_f55dc39a75_4.0.zip",
-        "Samsung Galaxy S2",
-        "4.0",
-        "miui_i9100_2.12.17_473264e08f_4.0.zip",
-        "Samsung Galaxy S3",
-        "4.1 Jelly Bean",
-        "miui_i9300_2.12.17_7729a92b5e_4.1.zip",
-        "Samsung Galaxy Note",
-        "4.0",
-        "miui_GalaxyNote_2.12.17_84dfbf56d9_4.0.zip",
-        "Samsung Galaxy Note 2",
-        "4.1 Jelly Bean",
-        "miui_Note2_2.12.17_9c5343f155_4.1.zip",
-        "华为 Honor",
-        "4.0",
-        "miui_Honor_2.12.17_cdefbc2e1f_4.0.zip",
-        "华为 Ascend P1",
-        "4.0",
-        "miui_P1_2.12.17_3f02e7b120_4.0.zip",
-        "华为 Ascend D1",
-        "4.0",
-        "miui_AscendD1_2.12.17_c8d35e9910_4.0.zip",
-        "中兴 U970",
-        "4.0",
-        "miui_U970_2.12.17_3dc2bedc5f_4.0.zip",
-        "索爱 LT18i",
-        "4.0",
-        "miui_LT18i_2.12.17_ce6a3cb3aa_4.0.zip",
-        "LG LU6200",
-        "4.0",
-        "miui_LU6200_2.12.17_572fa80bcc_4.0.zip",
-        "OPPO Finder",
-        "4.0",
-        "miui_Finder_2.12.17_4186d6f80b_4.0.zip",
-        "关于我",
-        "我的主页",
-        "使用MDUI打造",
-        "2019 - 2022",
-        "arrow_upward"
+        "新增 在线视频可一键进入全屏播放模式"
       ]
     }
   },

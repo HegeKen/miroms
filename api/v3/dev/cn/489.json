@@ -3,15 +3,28 @@
   "region": "cn",
   "zone": 1,
   "bigver": "",
-  "versions": "Redmi Note7 Pro、小米CC9e、Redmi Note7 今日预计13点前发布",
+  "versions": "",
   "title": {
     "zh": "第489周开发版日志",
     "en": ""
   },
   "postId": "",
-  "update": "",
-  "release": "",
-  "description": [],
+  "update": "2021-04-24 00:00:00",
+  "release": "2021-04-24",
+  "description": [
+    {
+      "zh": "Redmi Note7 Pro、小米CC9e、Redmi Note7 今日预计13点前发布",
+      "en": ""
+    },
+    {
+      "zh": "为给米粉朋友们，相对更好的测试版本使用体验，正在排查特定场景下卡米的问题，其他机型 本周暂停发布，感谢大家的理解",
+      "en": ""
+    },
+    {
+      "zh": "2021年4月24日起，Redmi Note7、Redmi Note7 Pro、小米CC9e 将停止开发版内测公测，感谢大家的理解",
+      "en": ""
+    }
+  ],
   "attention": [
     {
       "zh": "MIUI 开发版可进入“设置—>我的设备—>MIUI版本”在线升级，升级前务必备份重要数据",
@@ -23,29 +36,71 @@
     }
   ],
   "suspended": [],
-  "devices": [],
-  "roms": [],
+  "devices": [
+    {
+      "device": "laurus",
+      "name": {
+        "zh": "小米CC9e",
+        "en": ""
+      }
+    },
+    {
+      "device": "lavender",
+      "name": {
+        "zh": "Redmi Note 7",
+        "en": ""
+      }
+    },
+    {
+      "device": "violet",
+      "name": {
+        "zh": "Redmi Note 7 Pro",
+        "en": ""
+      }
+    }
+  ],
+  "roms": [
+    {
+      "device": "laurus",
+      "name": {
+        "zh": "小米CC9e",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_LAURUS_21.3.25_5f2ee9a480_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "lavender",
+      "name": {
+        "zh": "Redmi Note 7",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_LAVENDER_21.3.25_869ea26d20_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "violet",
+      "name": {
+        "zh": "Redmi Note 7 Pro",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_VIOLET_21.3.25_4f306a409d_10.0.zip",
+      "fastboot": ""
+    }
+  ],
   "logs": {
     "logs_zh": {
       "系统": [
-        "优化 更新谷歌安全补丁（2021#4），提升系统安全性(适配机型：Redmi Note7)",
-        "机型",
-        "安卓版本",
-        "卡刷包",
-        "小米CC9e(laurus)",
-        "10.0",
-        "miui_LAURUS_21.3.25_5f2ee9a480_10.0.zip",
-        "Redmi Note 7(lavender)",
-        "10.0",
-        "miui_LAVENDER_21.3.25_869ea26d20_10.0.zip",
-        "Redmi Note 7 Pro(violet)",
-        "10.0",
-        "miui_VIOLET_21.3.25_4f306a409d_10.0.zip",
-        "关于我",
-        "我的主页",
-        "使用MDUI打造",
-        "2019 - 2022",
-        "arrow_upward"
+        "优化 更新谷歌安全补丁（2021#4），提升系统安全性(适配机型：Redmi Note7)"
       ]
     }
   },

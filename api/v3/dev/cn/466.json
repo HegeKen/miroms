@@ -2,8 +2,8 @@
   "week": 466,
   "region": "cn",
   "zone": 1,
-  "bigver": "",
-  "versions": "MIUI12 开发版20.8.20 11:00发布，部分机型延迟发布",
+  "bigver": "MIUI12",
+  "versions": "20.8.20",
   "title": {
     "zh": "第466周开发版日志",
     "en": ""
@@ -11,7 +11,28 @@
   "postId": "",
   "update": "",
   "release": "",
-  "description": [],
+  "description": [
+    {
+      "zh": "MIUI12 开发版20.8.20 11:00发布，部分机型延迟发布",
+      "en": ""
+    },
+    {
+      "zh": "小米9、Redmi K20 Pro、小米9 Pro 5G、小米10 Pro、小米10 因解决影响稳定性Bug，本周发布延迟",
+      "en": ""
+    },
+    {
+      "zh": "Redmi K30 Pro 因解决部分场景下多次振动的问题，本周暂停发布",
+      "en": ""
+    },
+    {
+      "zh": "Redmi K30 5G、小米10青春版 正在适配Android 11，本周暂停发布",
+      "en": ""
+    },
+    {
+      "zh": "2020年9月5日起，小米8青春版、小米MAX3、小米8SE、小米8屏幕指纹版、小米MIX2S、小米8、小米8透明探索版、小米MIX3 将停止开发版内测",
+      "en": ""
+    }
+  ],
   "attention": [
     {
       "zh": "MIUI 开发版可进入“设置—>我的设备—>MIUI版本”在线升级，升级前务必备份重要数据",
@@ -23,95 +44,489 @@
     }
   ],
   "suspended": [],
-  "devices": [],
-  "roms": [],
+  "devices": [
+    {
+      "device": "dipper",
+      "name": {
+        "zh": "小米8",
+        "en": ""
+      }
+    },
+    {
+      "device": "ursa",
+      "name": {
+        "zh": "小米8探索版",
+        "en": ""
+      }
+    },
+    {
+      "device": "equuleus",
+      "name": {
+        "zh": "小米8屏幕指纹版",
+        "en": ""
+      }
+    },
+    {
+      "device": "sirius",
+      "name": {
+        "zh": "小米8 SE",
+        "en": ""
+      }
+    },
+    {
+      "device": "platina",
+      "name": {
+        "zh": "小米8青春版",
+        "en": ""
+      }
+    },
+    {
+      "device": "cepheus",
+      "name": {
+        "zh": "小米9/透明版",
+        "en": ""
+      }
+    },
+    {
+      "device": "crux",
+      "name": {
+        "zh": "小米9 Pro 5G",
+        "en": ""
+      }
+    },
+    {
+      "device": "grus",
+      "name": {
+        "zh": "小米9 SE",
+        "en": ""
+      }
+    },
+    {
+      "device": "pyxis",
+      "name": {
+        "zh": "小米CC9",
+        "en": ""
+      }
+    },
+    {
+      "device": "vela",
+      "name": {
+        "zh": "小米CC9美图定制版",
+        "en": ""
+      }
+    },
+    {
+      "device": "laurus",
+      "name": {
+        "zh": "小米CC9e",
+        "en": ""
+      }
+    },
+    {
+      "device": "tucana",
+      "name": {
+        "zh": "小米CC9 Pro",
+        "en": ""
+      }
+    },
+    {
+      "device": "umi",
+      "name": {
+        "zh": "小米10",
+        "en": ""
+      }
+    },
+    {
+      "device": "cmi",
+      "name": {
+        "zh": "小米10 Pro",
+        "en": ""
+      }
+    },
+    {
+      "device": "nitrogen",
+      "name": {
+        "zh": "小米Max 3",
+        "en": ""
+      }
+    },
+    {
+      "device": "polaris",
+      "name": {
+        "zh": "小米MIX 2S",
+        "en": ""
+      }
+    },
+    {
+      "device": "perseus",
+      "name": {
+        "zh": "小米MIX 3",
+        "en": ""
+      }
+    },
+    {
+      "device": "atom",
+      "name": {
+        "zh": "Redmi 10X",
+        "en": ""
+      }
+    },
+    {
+      "device": "bomb",
+      "name": {
+        "zh": "Redmi 10X Pro",
+        "en": ""
+      }
+    },
+    {
+      "device": "lavender",
+      "name": {
+        "zh": "Redmi Note 7",
+        "en": ""
+      }
+    },
+    {
+      "device": "ginkgo",
+      "name": {
+        "zh": "Redmi Note 8",
+        "en": ""
+      }
+    },
+    {
+      "device": "davinci",
+      "name": {
+        "zh": "Redmi K20",
+        "en": ""
+      }
+    },
+    {
+      "device": "raphael",
+      "name": {
+        "zh": "Redmi K20 Pro/尊享版",
+        "en": ""
+      }
+    },
+    {
+      "device": "phoenix",
+      "name": {
+        "zh": "Redmi K30 4G版",
+        "en": ""
+      }
+    },
+    {
+      "device": "lmi",
+      "name": {
+        "zh": "Redmi K30 Pro",
+        "en": ""
+      }
+    }
+  ],
+  "roms": [
+    {
+      "device": "dipper",
+      "name": {
+        "zh": "小米8",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_MI8_20.8.20_4ae0d90b6e_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "ursa",
+      "name": {
+        "zh": "小米8探索版",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_MI8Explorer_20.8.20_8405301b26_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "equuleus",
+      "name": {
+        "zh": "小米8屏幕指纹版",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_MI8UD_20.8.20_172763f9ac_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "sirius",
+      "name": {
+        "zh": "小米8 SE",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_MI8SE_20.8.20_784351f621_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "platina",
+      "name": {
+        "zh": "小米8青春版",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_MI8Lite_20.8.20_9e8167e427_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "cepheus",
+      "name": {
+        "zh": "小米9/透明版",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_CEPHEUS_20.8.20_8c97c4d999_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "crux",
+      "name": {
+        "zh": "小米9 Pro 5G",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_CRUX_20.8.20_ab56621141_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "grus",
+      "name": {
+        "zh": "小米9 SE",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_GRUS_20.8.20_9aa8e6c038_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "pyxis",
+      "name": {
+        "zh": "小米CC9",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_GRUS_20.8.20_9aa8e6c038_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "vela",
+      "name": {
+        "zh": "小米CC9美图定制版",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_VELA_20.8.20_f30c0933bd_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "laurus",
+      "name": {
+        "zh": "小米CC9e",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_LAURUS_20.8.20_2e6b3fc438_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "tucana",
+      "name": {
+        "zh": "小米CC9 Pro",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_TUCANA_20.8.20_ac8d221646_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "umi",
+      "name": {
+        "zh": "小米10",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_UMI_20.8.20_ed318806ed_11.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "cmi",
+      "name": {
+        "zh": "小米10 Pro",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_CMI_20.8.20_2d9ecf13b9_11.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "nitrogen",
+      "name": {
+        "zh": "小米Max 3",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_MIMAX3_20.8.20_846ef71676_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "polaris",
+      "name": {
+        "zh": "小米MIX 2S",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_MIMIX2S_20.8.20_2e0e15beea_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "perseus",
+      "name": {
+        "zh": "小米MIX 3",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_MIMIX3_20.8.20_7569ce1510_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "atom",
+      "name": {
+        "zh": "Redmi 10X",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_ATOM_20.8.20_ce8f4e45d0_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "bomb",
+      "name": {
+        "zh": "Redmi 10X Pro",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_BOMB_20.8.20_1ef43fa07d_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "lavender",
+      "name": {
+        "zh": "Redmi Note 7",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_LAVENDER_20.8.20_2caa79398b_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "ginkgo",
+      "name": {
+        "zh": "Redmi Note 8",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_GINKGO_20.8.20_4de370baf0_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "davinci",
+      "name": {
+        "zh": "Redmi K20",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_DAVINCI_20.8.20_760c1dd279_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "raphael",
+      "name": {
+        "zh": "Redmi K20 Pro/尊享版",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_RAPHAEL_20.8.20_dec0239edb_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "phoenix",
+      "name": {
+        "zh": "Redmi K30 4G版",
+        "en": ""
+      },
+      "version": "",
+      "android": "10.0",
+      "release": "",
+      "recovery": "miui_PHOENIX_20.8.20_a09c2b4d21_10.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "lmi",
+      "name": {
+        "zh": "Redmi K30 Pro",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_LMI_20.8.20_138458d1c7_11.0.zip",
+      "fastboot": ""
+    }
+  ],
   "logs": {
     "logs_zh": {
       "控制中心": [
-        "优化 横屏下控制中心左右布局",
-        "机型",
-        "安卓版本",
-        "卡刷包",
-        "小米8(dipper)",
-        "10.0",
-        "miui_MI8_20.8.20_4ae0d90b6e_10.0.zip",
-        "小米8探索版(ursa)",
-        "10.0",
-        "miui_MI8Explorer_20.8.20_8405301b26_10.0.zip",
-        "小米8屏幕指纹版(equuleus)",
-        "10.0",
-        "miui_MI8UD_20.8.20_172763f9ac_10.0.zip",
-        "小米8 SE(sirius)",
-        "10.0",
-        "miui_MI8SE_20.8.20_784351f621_10.0.zip",
-        "小米8青春版(platina)",
-        "10.0",
-        "miui_MI8Lite_20.8.20_9e8167e427_10.0.zip",
-        "小米9/透明版(cepheus)",
-        "10.0",
-        "miui_CEPHEUS_20.8.20_8c97c4d999_10.0.zip",
-        "小米9 Pro 5G(crux)",
-        "10.0",
-        "miui_CRUX_20.8.20_ab56621141_10.0.zip",
-        "小米9 SE(grus)",
-        "10.0",
-        "miui_GRUS_20.8.20_9aa8e6c038_10.0.zip",
-        "小米CC9(pyxis)",
-        "10.0",
-        "miui_GRUS_20.8.20_9aa8e6c038_10.0.zip",
-        "小米CC9美图定制版(vela)",
-        "10.0",
-        "miui_VELA_20.8.20_f30c0933bd_10.0.zip",
-        "小米CC9e(laurus)",
-        "10.0",
-        "miui_LAURUS_20.8.20_2e6b3fc438_10.0.zip",
-        "小米CC9 Pro(tucana)",
-        "10.0",
-        "miui_TUCANA_20.8.20_ac8d221646_10.0.zip",
-        "小米10(umi)",
-        "11.0",
-        "miui_UMI_20.8.20_ed318806ed_11.0.zip",
-        "小米10 Pro(cmi)",
-        "11.0",
-        "miui_CMI_20.8.20_2d9ecf13b9_11.0.zip",
-        "小米Max 3(nitrogen)",
-        "10.0",
-        "miui_MIMAX3_20.8.20_846ef71676_10.0.zip",
-        "小米MIX 2S(polaris)",
-        "10.0",
-        "miui_MIMIX2S_20.8.20_2e0e15beea_10.0.zip",
-        "小米MIX 3(perseus)",
-        "10.0",
-        "miui_MIMIX3_20.8.20_7569ce1510_10.0.zip",
-        "Redmi 10X(atom)",
-        "10.0",
-        "miui_ATOM_20.8.20_ce8f4e45d0_10.0.zip",
-        "Redmi 10X Pro(bomb)",
-        "10.0",
-        "miui_BOMB_20.8.20_1ef43fa07d_10.0.zip",
-        "Redmi Note 7(lavender)",
-        "10.0",
-        "miui_LAVENDER_20.8.20_2caa79398b_10.0.zip",
-        "Redmi Note 8(ginkgo)",
-        "10.0",
-        "miui_GINKGO_20.8.20_4de370baf0_10.0.zip",
-        "Redmi K20(davinci)",
-        "10.0",
-        "miui_DAVINCI_20.8.20_760c1dd279_10.0.zip",
-        "Redmi K20 Pro/尊享版(raphael)",
-        "10.0",
-        "miui_RAPHAEL_20.8.20_dec0239edb_10.0.zip",
-        "Redmi K30 4G版(phoenix)",
-        "10.0",
-        "miui_PHOENIX_20.8.20_a09c2b4d21_10.0.zip",
-        "Redmi K30 Pro(lmi)",
-        "11.0",
-        "miui_LMI_20.8.20_138458d1c7_11.0.zip",
-        "关于我",
-        "我的主页",
-        "使用MDUI打造",
-        "2019 - 2022",
-        "arrow_upward"
+        "优化 横屏下控制中心左右布局"
       ]
     }
   },

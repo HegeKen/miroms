@@ -2,8 +2,8 @@
   "week": 84,
   "region": "cn",
   "zone": 1,
-  "bigver": "",
-  "versions": "MIUI V4 2.4.6 已发布！",
+  "bigver": "MIUI V4",
+  "versions": "2.4.6",
   "title": {
     "zh": "第84周开发版日志",
     "en": ""
@@ -11,7 +11,12 @@
   "postId": "",
   "update": "",
   "release": "",
-  "description": [],
+  "description": [
+    {
+      "zh": "MIUI V4 2.4.6 已发布！",
+      "en": ""
+    }
+  ],
   "attention": [
     {
       "zh": "本周MIUI V4继续发布开发版，已刷上周推荐版的请在“系统更新-菜单键-检查设置”里关闭“仅升级到推荐版”，否则可能无法检查到系统更新",
@@ -39,8 +44,29 @@
     }
   ],
   "suspended": [],
-  "devices": [],
-  "roms": [],
+  "devices": [
+    {
+      "device": "mione_plus",
+      "name": {
+        "zh": "小米手机1/1S",
+        "en": ""
+      }
+    }
+  ],
+  "roms": [
+    {
+      "device": "mione_plus",
+      "name": {
+        "zh": "小米手机1/1S",
+        "en": ""
+      },
+      "version": "",
+      "android": "4.0",
+      "release": "",
+      "recovery": "miui_Mioneplus_2.4.6_f8607237cb_4.0.zip",
+      "fastboot": ""
+    }
+  ],
   "logs": {
     "logs_zh": {
       "本周推荐": [
@@ -133,68 +159,7 @@
       ],
       "闹钟": [
         "新增 计时器",
-        "新增 计时器",
-        "机型",
-        "安卓版本",
-        "卡刷包",
-        "线刷包",
-        "小米手机1/1S",
-        "4.0",
-        "miui_Mioneplus_2.4.6_f8607237cb_4.0.zip",
-        "miuiV4_Mioneplus_2.4.6_fastboot.exe",
-        "机型",
-        "安卓版本",
-        "卡刷包",
-        "Google Nexus S",
-        "4.0",
-        "miui_NS_2.4.6_dfeeab519f_4.0.zip",
-        "MOTO Milestone",
-        "2.3 Gingerbread",
-        "miui_Milestone_2.4.6_d38flt1zu2_2.3.zip",
-        "MOTO Defy/Defy+",
-        "2.3 Gingerbread",
-        "miui_Defy_2.4.6_t49qxhwraq_2.3.zip",
-        "HTC Sensation",
-        "4.0",
-        "miui_Sensation_2.4.6_026019bd0a_4.0.zip",
-        "HTC HD2",
-        "2.3 Gingerbread",
-        "miui_HD2_2.4.6_03uq1vdexx_2.3.zip",
-        "HTC Desire HD",
-        "2.3 Gingerbread",
-        "miui_DHD_2.4.6_2jb62uwv6i_2.3.zip",
-        "HTC Incredible S",
-        "2.3 Gingerbread",
-        "miui_IncredibleS_2.4.6_9zj0zlqw0o_2.3.zip",
-        "HTC Desire S",
-        "2.3 Gingerbread",
-        "miui_DesireS_2.4.6_gnudgz5ino_2.3.zip",
-        "HTC Desire G7",
-        "2.3 Gingerbread",
-        "miui_Desire_2.4.6_m4tb0nmjsh_2.3.zip",
-        "Samsung Galaxy I9000",
-        "2.3 Gingerbread",
-        "miui_I9000_2.4.6_twc28htma9_2.3.zip",
-        "Samsung Galaxy S2",
-        "4.0",
-        "miui_i9100_2.4.6_109a2b90ad_4.0.zip",
-        "Samsung Galaxy Nexus",
-        "4.0",
-        "miui_GalaxyNexus_2.4.6_4dd0f30d42_4.0.zip",
-        "LG P990",
-        "2.3 Gingerbread",
-        "miui_P990_2.4.6_9t6ly0t6bp_2.3.zip",
-        "索爱 LT18i",
-        "4.0",
-        "miui_LT18i_2.4.6_acc51b3563_4.0.zip",
-        "华为 Honor",
-        "4.0",
-        "miui_Honor_2.4.6_4d86f3f6f7_4.0.zip",
-        "关于我",
-        "我的主页",
-        "使用MDUI打造",
-        "2019 - 2022",
-        "arrow_upward"
+        "新增 计时器"
       ]
     }
   },

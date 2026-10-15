@@ -269,16 +269,140 @@ def load_nuxtmr(path: Path) -> Dict[str, Any]:
 
 SECTION_RE = re.compile(r'^▍\s*(.+)$')
 MODULE_RE = re.compile(r'^【(.+)】$')
+DATE_RE = re.compile(r'(\d{4})\s*[年.\-/]\s*(\d{1,2})\s*[月.\-/]\s*(\d{1,2})\s*日?')
+# 版本号：V5 3.3.15 / 开发版21.6.16 / 14.0.23.10.15.DEV 等
+VERSION_RE = re.compile(r'(\d{1,3}(?:\.\d{1,3}){1,4}(?:\.[A-Za-z]+)?)')
+BIGVER_RE = re.compile(r'(MIUI\s*V?\s*\d+(?:\.\d+)?|HyperOS\s*\d+(?:\.\d+)?)', re.I)
+# 支持机型表格的表头关键字
+TABLE_HEADER_HINT = ('机型', '型号', '卡刷', '线刷', '安卓版本', 'MIUI')
+
+
+def _cell_text(cell: str) -> str:
+	return re.sub(r'\s+', ' ', html_module.unescape(re.sub(r'<[^>]+>', ' ', cell))).strip()
+
+
+def parse_tables(raw: str) -> List[List[List[str]]]:
+	"""把页面里的 <table> 解析成 [[行, ...], ...]（每行是各单元格文本）"""
+	tables: List[List[List[str]]] = []
+	for block in re.findall(r'<table.*?</table>', raw, re.S | re.I):
+		rows: List[List[str]] = []
+		for row_html in re.findall(r'<tr.*?</tr>', block, re.S | re.I):
+			cells = [_cell_text(c) for c in re.findall(r'<t[hd][^>]*>(.*?)</t[hd]>', row_html, re.S | re.I)]
+			if any(cells):
+				rows.append(cells)
+		if rows:
+			tables.append(rows)
+	return tables
+
+
+def device_name_index() -> Dict[str, str]:
+	"""devices 表：中英文名 -> 设备代号（老周报只有营销名，用它反查代号）"""
+	index: Dict[str, str] = {}
+	for row in DatabaseManager.query_all("SELECT `device`, `full_names`, `names`, `xiaomi`, `redmi`, `poco` FROM `devices`") or []:
+		device = clean(row[0])
+		if not device:
+			continue
+		for raw in row[1:]:
+			if not raw:
+				continue
+			try:
+				parsed = json.loads(raw) if str(raw).strip().startswith('{') else None
+			except (json.JSONDecodeError, TypeError):
+				parsed = None
+			if isinstance(parsed, dict):
+				for value in parsed.values():
+					name = clean(value).lower()
+					if name:
+						index.setdefault(name, device)
+			else:
+				for value in str(raw).split(','):
+					name = clean(value).lower()
+					if name:
+						index.setdefault(name, device)
+	return index
+
+
+def resolve_device(name: str, index: Dict[str, str]) -> Tuple[str, str]:
+	"""营销名 -> (设备代号, 纯名称)：优先取括号里的代号，其次查 devices 表"""
+	text = clean(name)
+	match = re.search(r'[（(]\s*([a-z0-9_]+)\s*[）)]\s*$', text)
+	if match:
+		return match.group(1), clean(text[:match.start()])
+	return index.get(text.lower(), ''), text
+
+
+def roms_from_tables(tables: List[List[List[str]]], index: Dict[str, str]) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]:
+	"""从支持机型表格提取机型清单与 ROM 清单（字段随年代不同，按表头取值）"""
+	devices: List[Dict[str, Any]] = []
+	roms: List[Dict[str, Any]] = []
+	for table in tables:
+		header: List[str] = []
+		for row in table:
+			joined = ' '.join(row)
+			if not header:
+				if '机型' in joined or '型号' in joined:
+					header = row
+				continue
+			if len(row) < 2:
+				continue
+			data = {header[i]: row[i] for i in range(min(len(header), len(row)))}
+
+			def pick(*names: str) -> str:
+				# 先精确匹配表头，再退回包含匹配，避免「版本」误命中「安卓版本」
+				for name in names:
+					for key, value in data.items():
+						if clean(key) == name:
+							return clean(value)
+				for name in names:
+					for key, value in data.items():
+						if name in key and not any(x in key for x in ('安卓', 'Android')):
+							return clean(value)
+				return ''
+
+			raw_name = pick('机型', '型号')
+			if not raw_name:
+				continue
+			device, plain_name = resolve_device(raw_name, index)
+			version = pick('MIUI', '版本')
+			android = pick('安卓版本', 'Android')
+			recovery = pick('卡刷包')
+			fastboot = pick('线刷包')
+			if recovery and not recovery.lower().endswith(('.zip', '.tgz')):
+				recovery = ''   # 老页面里是网盘链接，不是包文件名
+			if fastboot and not fastboot.lower().endswith(('.zip', '.tgz')):
+				fastboot = ''
+			if not device:
+				continue
+			devices.append({'device': device, 'name': pair(plain_name, '')})
+			roms.append({
+				'device': device,
+				'name': pair(plain_name, ''),
+				'version': version,
+				'android': android,
+				'release': '',
+				'recovery': recovery,
+				'fastboot': fastboot,
+			})
+	return devices, roms
 
 
 def load_miuiroms(path: Path) -> Dict[str, Any]:
-	"""MIUIROMS/weekly/logs/week-<week>-CN.html（正文只有中文）"""
+	"""MIUIROMS/weekly/logs/week-<week>-CN.html（正文只有中文）
+
+	页面结构：▍发布时间 / ▍升级说明 / ▍支持机型（表格）/ ▍更新日志 / 【模块】条目。
+	支持机型表格必须先从正文里摘掉，否则表格行会被当成日志正文（历史 bug）。
+	"""
 	raw = path.read_text(encoding='utf-8', errors='replace')
 	title_match = re.search(r'<title>([^<]*)</title>', raw)
 	title = clean(html_module.unescape(title_match.group(1))) if title_match else ''
 	title = re.sub(r'\s*-\s*MIUI官方ROM仓库\s*$', '', title)
 
-	body = raw.split('<body', 1)[-1]
+	tables = parse_tables(raw)
+	# 先切掉页脚 / 侧栏 / 导航，否则「关于我 / 我的主页 / 使用MDUI打造 / 2019 - 2022 /
+	# arrow_upward」这些页脚内容会被当成更新日志正文
+	body = re.split(r'<(footer|nav|aside|header)\b', raw, maxsplit=1, flags=re.I)[0]
+	body = re.sub(r'<table.*?</table>', '\n', body, flags=re.S | re.I)
+	body = body.split('<body', 1)[-1]
 	body = re.sub(r'<script.*?</script>', '', body, flags=re.S)
 	body = re.sub(r'<style.*?</style>', '', body, flags=re.S)
 	body = re.sub(r'<br\s*/?>', '\n', body, flags=re.I)
@@ -288,49 +412,89 @@ def load_miuiroms(path: Path) -> Dict[str, Any]:
 	lines = [line for line in lines if line and line not in ('>', 'menu', 'MIUI官方ROM仓库')]
 
 	attention: List[str] = []
+	description: List[str] = []
 	logs_zh: Dict[str, List[str]] = {}
 	versions = ''
+	bigver = ''
+	release_date: Optional[str] = None
 	section = ''
+	has_section = any(SECTION_RE.match(line) for line in lines)
+	in_logs = not has_section   # 没有 ▍ 分节的早期页面：从第一个【模块】开始收
 	current: Optional[str] = None
+
 	for line in lines:
+		if in_logs and any(marker in line for marker in FOOTER_MARKERS):
+			break   # 页脚兜底：进入页脚后不再收集
+
 		heading = SECTION_RE.match(line)
 		if heading:
 			section = clean(heading.group(1))
 			current = None
+			in_logs = section.startswith('更新日志')
 			continue
+
 		module = MODULE_RE.match(line)
-		if module:
+		if module and in_logs:
 			current = clean(module.group(1))
 			logs_zh.setdefault(current, [])
 			continue
-		if section.startswith('发布时间'):
-			if not versions:
-				versions = line
-			continue
-		if section.startswith('升级说明') or section.startswith('注意事项'):
-			attention.append(line)
-			continue
-		if section.startswith('更新日志'):
+
+		if in_logs and (not section or section.startswith('更新日志')):
 			if current is None:
-				# 【本周推荐】等标题会被上面的 MODULE_RE 捕获；兜底放进「其他」
 				current = '其他'
 				logs_zh.setdefault(current, [])
 			logs_zh[current].append(line)
+			continue
+
+		if section.startswith('发布'):
+			# 发布时间 / 发布时间和机型：抽日期与版本号，原文一并留档
+			rest = line
+			date_match = DATE_RE.search(rest)
+			if date_match:
+				if release_date is None:
+					release_date = parse_date(
+						f'{date_match.group(1)}-{date_match.group(2)}-{date_match.group(3)}')
+				rest = rest[:date_match.start()] + ' ' + rest[date_match.end():]
+			bigver_match = BIGVER_RE.search(rest)
+			if bigver_match and not bigver:
+				bigver = re.sub(r'\s+', ' ', bigver_match.group(1).strip())
+				rest = rest[:bigver_match.start()] + ' ' + rest[bigver_match.end():]
+			version_match = VERSION_RE.search(rest)
+			if version_match and not versions:
+				versions = version_match.group(1)
+			description.append(line)
+			continue
+
+		if section.startswith(('升级说明', '注意事项')):
+			attention.append(line)
+			continue
+
+		# 其余分节（已知Bug / 重要说明 等）留档到 description；
+		# 「支持机型」是机型清单，已由表格解析成 devices / roms，不再塞进公告正文
+		if section and '机型' not in section:
+			description.append(line)
 
 	week = int(re.search(r'week-(\d+)', path.stem).group(1))
+	device_index = device_name_index()
+	devices, roms = roms_from_tables(tables, device_index)
+	if not versions and roms:
+		versions = clean(roms[0].get('version'))
+
 	return {
 		'week': week,
 		'region': 'cn',
 		'title_zh': title,
 		'title_en': '',
 		'post_id': '',
-		'update_time': None,
+		'update_time': parse_datetime(release_date or ''),
+		'release_date': release_date,
 		'versions': versions,
-		'description': [pair(x, '') for x in attention[:0]],
+		'bigver': bigver or infer_bigver(versions),
+		'description': [pair(x, '') for x in description],
 		'attention': [pair(x, '') for x in attention],
 		'suspended': [],
-		'devices': [],
-		'roms': [],
+		'devices': devices,
+		'roms': roms,
 		'logs_zh': logs_zh,
 		'logs_en': {},
 		'source': 'miuiroms',
@@ -466,6 +630,26 @@ def backfill_roms(meta: Dict[str, Any], dev_id: Optional[int], dry_run: bool = F
 	return 0
 
 
+# 页脚 / 侧栏的固定文案：出现即认为正文结束
+FOOTER_MARKERS = ('关于我', '我的主页', '使用MDUI打造', 'arrow_upward', '2019 - 2022')
+
+# 明显不该出现在日志正文里的内容（机型表格行 / 包文件名 / 链接 / 页脚）
+JUNK_LINE_RE = re.compile(
+	r'^(机型|型号|安卓版本|卡刷包|线刷包|MIUI|Android)$|\\.(zip|tgz)$|^https?://'
+	r'|^(关于我|我的主页|使用MDUI打造|arrow_upward|回到首页|2019\s*-\s*\d{4})$')
+
+
+def count_junk(zh_obj: Dict[str, List[str]]) -> List[str]:
+	"""体检：日志正文里混进了机型表格行 / 包文件名等异常内容时列出来"""
+	bad: List[str] = []
+	for module, lines in (zh_obj or {}).items():
+		for line in lines:
+			text = clean(line)
+			if JUNK_LINE_RE.search(text):
+				bad.append(f'{module}: {text[:40]}')
+	return bad
+
+
 def import_meta(meta: Dict[str, Any], official: OfficialEnglish, dry_run: bool = False,
 				verbose: bool = True) -> Dict[str, Any]:
 	"""归档一周开发版：修正英文 → 写入 logs → upsert dev → 回填 roms.dev_week"""
@@ -489,6 +673,7 @@ def import_meta(meta: Dict[str, Any], official: OfficialEnglish, dry_run: bool =
 	dev_id = upsert_dev(meta, logs_value, dry_run=dry_run)
 	rom_rows = backfill_roms(meta, dev_id, dry_run=dry_run)
 
+	junk = count_junk(zh_obj)
 	stat = {
 		'week': meta['week'],
 		'region': meta['region'],
@@ -498,11 +683,14 @@ def import_meta(meta: Dict[str, Any], official: OfficialEnglish, dry_run: bool =
 		'official_hits': official.hits,
 		'roms': rom_rows,
 		'dev_id': dev_id,
+		'junk': len(junk),
 	}
 	if verbose:
 		print(f"  [{stat['source']}] 第 {stat['week']} 周 {stat['region']}："
 			  f"模块 {stat['modules']} / 条目 {stat['entries']}，"
 			  f"官方英文命中 {stat['official_hits']}，机型 {stat['roms']}，dev.id={dev_id}")
+		if junk:
+			print(f"      ⚠ 正文疑似混入机型表格/包文件名 {len(junk)} 条：{junk[:2]}")
 	return stat
 
 
@@ -590,6 +778,18 @@ def main() -> None:
 
 	print(f"\n[{ts()}] 完成：{len(stats)} 个周次，"
 		  f"{'（dry-run 未写库）' if args.dry_run else ''}")
+	junk_total = sum(item['junk'] for item in stats)
+	if junk_total:
+		print(f"    ⚠ 共 {junk_total} 条正文疑似表格内容，请检查上面的来源解析")
+
+	if not args.dry_run:
+		# 去重体检：同一日志被拆成多行时必须显式处理（dedup_logs.py --apply）
+		dupes = LogStore.duplicate_report()
+		print(f"[{ts()}] 去重体检：重复分组 {len(dupes)} 组"
+			  + (f"（如 {dupes[0]}）" if dupes else " ✓"))
+		if dupes:
+			print("    ✖ 存在重复日志分组，请先运行：python3 data/scripts/dedup_logs.py --apply")
+			sys.exit(1)
 	if stats:
 		print(f"    官方英文命中累计 {official.hits} 条，元数据命中 {len(official.cache)} 个键")
 

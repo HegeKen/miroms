@@ -2,8 +2,8 @@
   "week": 80,
   "region": "cn",
   "zone": 1,
-  "bigver": "",
-  "versions": "MIUI V4 2.3.9 已发布！",
+  "bigver": "MIUI V4",
+  "versions": "2.3.9",
   "title": {
     "zh": "第80周开发版日志",
     "en": ""
@@ -11,7 +11,12 @@
   "postId": "",
   "update": "",
   "release": "",
-  "description": [],
+  "description": [
+    {
+      "zh": "MIUI V4 2.3.9 已发布！",
+      "en": ""
+    }
+  ],
   "attention": [
     {
       "zh": "小米手机本周没有 2.3.5 稳定版，电信版目前暂不能刷MIUI 4.0",
@@ -39,8 +44,29 @@
     }
   ],
   "suspended": [],
-  "devices": [],
-  "roms": [],
+  "devices": [
+    {
+      "device": "mione_plus",
+      "name": {
+        "zh": "小米手机1/1S",
+        "en": ""
+      }
+    }
+  ],
+  "roms": [
+    {
+      "device": "mione_plus",
+      "name": {
+        "zh": "小米手机1/1S",
+        "en": ""
+      },
+      "version": "",
+      "android": "4.0",
+      "release": "",
+      "recovery": "miui_Mioneplus_2.3.9_5853472a6c_4.0.zip",
+      "fastboot": "miuiV4_Mioneplus_2.3.9_fastboot_2e39fj2odc.zip"
+    }
+  ],
   "logs": {
     "logs_zh": {
       "锁屏、状态栏、通知栏": [
@@ -165,68 +191,7 @@
       ],
       "访问限制": [
         "修复 某些情况下密码保护不生效的问题",
-        "修复 某些情况下密码保护不生效的问题",
-        "机型",
-        "安卓版本",
-        "卡刷包",
-        "线刷包",
-        "小米手机1/1S",
-        "4.0",
-        "miui_Mioneplus_2.3.9_5853472a6c_4.0.zip",
-        "miuiV4_Mioneplus_2.3.9_fastboot_2e39fj2odc.zip",
-        "机型",
-        "安卓版本",
-        "卡刷包",
-        "Google Nexus S",
-        "4.0",
-        "miui_NS_2.3.9_0cc040b477_4.0.zip",
-        "Google Nexus One",
-        "2.3 Gingerbread",
-        "miui_NexusOne_2.3.9_z6800ti2b4_2.3.zip",
-        "MOTO Milestone",
-        "2.3 Gingerbread",
-        "miui_Milestone_2.3.9_5h2vfj0p9r_2.3.zip",
-        "MOTO Defy/Defy+",
-        "2.3 Gingerbread",
-        "miui_Defy_2.3.9_7u34ctq11t_2.3.zip",
-        "HTC HD2",
-        "2.3 Gingerbread",
-        "miui_HD2_2.3.9_vcvopw3x30_2.3.zip",
-        "HTC Desire HD",
-        "2.3 Gingerbread",
-        "miui_DHD_2.3.9_c1oxhlmmrn_2.3.zip",
-        "HTC Desire Z",
-        "2.3 Gingerbread",
-        "miui_DesireZ_2.3.9_3nocedejw7_2.3.zip",
-        "HTC Incredible S",
-        "2.3 Gingerbread",
-        "miui_IncredibleS_2.3.9_rs09kxms35_2.3.zip",
-        "HTC Desire S",
-        "2.3 Gingerbread",
-        "miui_DesireS_2.3.9_4xczym3z83_2.3.zip",
-        "HTC Desire G7",
-        "2.3 Gingerbread",
-        "miui_Desire_2.3.9_bc80v7697v_2.3.zip",
-        "Samsung Galaxy I9000",
-        "2.3 Gingerbread",
-        "miui_I9000_2.3.9_54px15xm5k_2.3.zip",
-        "Samsung Galaxy T959",
-        "2.3 Gingerbread",
-        "miui_T959_2.3.9_quzyu72pho_2.3.zip",
-        "Samsung Galaxy S2",
-        "2.3 Gingerbread",
-        "miui_GalaxyS2_2.3.9_gh55mbb6qv_2.3.zip",
-        "Samsung Galaxy I897",
-        "2.3 Gingerbread",
-        "-->",
-        "LG P990",
-        "2.3 Gingerbread",
-        "miui_P990_2.3.9_wxfk06aotu_2.3.zip",
-        "关于我",
-        "我的主页",
-        "使用MDUI打造",
-        "2019 - 2022",
-        "arrow_upward"
+        "修复 某些情况下密码保护不生效的问题"
       ]
     }
   },

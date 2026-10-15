@@ -2,8 +2,8 @@
   "week": 79,
   "region": "cn",
   "zone": 1,
-  "bigver": "",
-  "versions": "MIUI V4 2.3.2 已发布！",
+  "bigver": "MIUI V4",
+  "versions": "2.3.2",
   "title": {
     "zh": "第79周开发版日志",
     "en": ""
@@ -11,7 +11,12 @@
   "postId": "",
   "update": "",
   "release": "",
-  "description": [],
+  "description": [
+    {
+      "zh": "MIUI V4 2.3.2 已发布！",
+      "en": ""
+    }
+  ],
   "attention": [
     {
       "zh": "小米手机本周没有 2.3.5 稳定版，电信版目前暂不能刷MIUI 4.0",
@@ -35,8 +40,29 @@
     }
   ],
   "suspended": [],
-  "devices": [],
-  "roms": [],
+  "devices": [
+    {
+      "device": "mione_plus",
+      "name": {
+        "zh": "小米手机1/1S",
+        "en": ""
+      }
+    }
+  ],
+  "roms": [
+    {
+      "device": "mione_plus",
+      "name": {
+        "zh": "小米手机1/1S",
+        "en": ""
+      },
+      "version": "",
+      "android": "4.0",
+      "release": "",
+      "recovery": "miui_Mioneplus_2.3.2_82017b7e22_4.0.zip",
+      "fastboot": "miuiV4_Mioneplus_2.3.2_fastboot_djem30c89n2.zip"
+    }
+  ],
   "logs": {
     "logs_zh": {
       "主题": [
@@ -115,68 +141,7 @@
       ],
       "访问限制": [
         "新增 支持应用加密（见设置->安全->密码保护应用）",
-        "新增 支持应用加密（见设置->安全->密码保护应用）",
-        "机型",
-        "安卓版本",
-        "卡刷包",
-        "线刷包",
-        "小米手机1/1S",
-        "4.0",
-        "miui_Mioneplus_2.3.2_82017b7e22_4.0.zip",
-        "miuiV4_Mioneplus_2.3.2_fastboot_djem30c89n2.zip",
-        "机型",
-        "安卓版本",
-        "卡刷包",
-        "Google Nexus S",
-        "4.0",
-        "miui_NS_2.3.2_f7c77dcc53_4.0.zip",
-        "Google Nexus One",
-        "2.3 Gingerbread",
-        "miui_NexusOne_2.3.2_iqcknna12z_2.3.zip",
-        "MOTO Milestone",
-        "2.3 Gingerbread",
-        "miui_Milestone_2.3.2_gowvoslhzv_2.3.zip",
-        "MOTO Defy/Defy+",
-        "2.3 Gingerbread",
-        "miui_Defy_2.3.2_58g6butebo_2.3.zip",
-        "HTC HD2",
-        "2.3 Gingerbread",
-        "miui_HD2_2.3.2_quwi0r9ror_2.3.zip",
-        "HTC Desire HD",
-        "2.3 Gingerbread",
-        "miui_DHD_2.3.2_y114vsscqq_2.3.zip",
-        "HTC Desire Z",
-        "2.3 Gingerbread",
-        "miui_DesireZ_2.3.2_4lu3pngj4e_2.3.zip",
-        "HTC Incredible S",
-        "2.3 Gingerbread",
-        "miui_IncredibleS_2.3.2_lggch8i6c7_2.3.zip",
-        "HTC Desire S",
-        "2.3 Gingerbread",
-        "miui_DesireS_2.3.2_jm0glbu0vc_2.3.zip",
-        "HTC Desire G7",
-        "2.3 Gingerbread",
-        "miui_Desire_2.3.2_m0xg8jmk9d_2.3.zip",
-        "Samsung Galaxy I9000",
-        "2.3 Gingerbread",
-        "miui_I9000_2.3.2_5ki9bb8p97_2.3.zip",
-        "Samsung Galaxy T959",
-        "2.3 Gingerbread",
-        "miui_T959_2.3.2_u600cshrie_2.3.zip",
-        "Samsung Galaxy S2",
-        "2.3 Gingerbread",
-        "miui_GalaxyS2_2.3.2_2s0rxfgfcx_2.3.zip",
-        "Samsung Galaxy I897",
-        "2.3 Gingerbread",
-        "miui_I897_2.3.2_otl8tjvxfq_2.3.zip",
-        "LG P990",
-        "2.3 Gingerbread",
-        "miui_I897_2.3.2_otl8tjvxfq_2.3.zip",
-        "关于我",
-        "我的主页",
-        "使用MDUI打造",
-        "2019 - 2022",
-        "arrow_upward"
+        "新增 支持应用加密（见设置->安全->密码保护应用）"
       ],
       "FM收音机": [
         "新增 支持FM"

@@ -2,8 +2,8 @@
   "week": 77,
   "region": "cn",
   "zone": 1,
-  "bigver": "",
-  "versions": "MIUI V4 2.2.17 已发布！",
+  "bigver": "MIUI V4",
+  "versions": "2.2.17",
   "title": {
     "zh": "第77周开发版日志",
     "en": ""
@@ -11,7 +11,12 @@
   "postId": "",
   "update": "",
   "release": "",
-  "description": [],
+  "description": [
+    {
+      "zh": "MIUI V4 2.2.17 已发布！",
+      "en": ""
+    }
+  ],
   "attention": [
     {
       "zh": "小米手机本周没有2.3.5稳定版，仅发布4.0的OTA包和Fastboot刷机包",
@@ -35,8 +40,29 @@
     }
   ],
   "suspended": [],
-  "devices": [],
-  "roms": [],
+  "devices": [
+    {
+      "device": "mione_plus",
+      "name": {
+        "zh": "小米手机1/1S",
+        "en": ""
+      }
+    }
+  ],
+  "roms": [
+    {
+      "device": "mione_plus",
+      "name": {
+        "zh": "小米手机1/1S",
+        "en": ""
+      },
+      "version": "",
+      "android": "4.0",
+      "release": "",
+      "recovery": "miui_Mioneplus_2.2.17_5de3704a90_4.0.zip",
+      "fastboot": "miuiV4_Mioneplus_2.2.17_fastboot-firkd39j9x.zip"
+    }
+  ],
   "logs": {
     "logs_zh": {
       "电话": [
@@ -143,68 +169,7 @@
       ],
       "访问限制": [
         "修复 解锁时密码无效的问题",
-        "修复 解锁时密码无效的问题",
-        "机型",
-        "安卓版本",
-        "卡刷包",
-        "线刷包",
-        "小米手机1/1S",
-        "4.0",
-        "miui_Mioneplus_2.2.17_5de3704a90_4.0.zip",
-        "miuiV4_Mioneplus_2.2.17_fastboot-firkd39j9x.zip",
-        "机型",
-        "安卓版本",
-        "卡刷包",
-        "Google Nexus S",
-        "4.0",
-        "miui_NS_2.2.17_c558444dee_4.0.zip",
-        "Google Nexus One",
-        "2.3 Gingerbread",
-        "miui_NexusOne_2.2.17_qngfexn61p_2.3.zip",
-        "MOTO Milestone",
-        "2.3 Gingerbread",
-        "miui_Milestone_2.2.17_21ma9fj4li_2.3.zip",
-        "MOTO Defy/Defy+",
-        "2.3 Gingerbread",
-        "miui_Defy_2.2.17_vzfwc0qfmh_2.3.zip",
-        "HTC HD2",
-        "2.3 Gingerbread",
-        "miui_HD2_2.2.17_6t034k3s4u_2.3.zip",
-        "HTC Desire HD",
-        "2.3 Gingerbread",
-        "miui_DHD_2.2.17_8eh3jtdluw_2.3.zip",
-        "HTC Desire Z",
-        "2.3 Gingerbread",
-        "miui_DesireZ_2.2.17_2so6bedgqa_2.3.zip",
-        "HTC Incredible S",
-        "2.3 Gingerbread",
-        "miui_IncredibleS_2.2.17_0brq5mp58e_2.3.zip",
-        "HTC Desire S",
-        "2.3 Gingerbread",
-        "miui_DesireS_2.2.17_0ib857sb4t_2.3.zip",
-        "HTC Desire G7",
-        "2.3 Gingerbread",
-        "miui_Desire_2.2.17_fx2oavinmz_2.3.zip",
-        "Samsung Galaxy I9000",
-        "2.3 Gingerbread",
-        "miui_I9000_2.2.17_5y0qq7hjvw_2.3.zip",
-        "Samsung Galaxy T959",
-        "2.3 Gingerbread",
-        "miui_T959_2.2.17_snirl243ja_2.3.zip",
-        "Samsung Galaxy S2",
-        "2.3 Gingerbread",
-        "miui_GalaxyS2_2.2.17_gjhfbcfkhi_2.3.zip",
-        "Samsung Galaxy I897",
-        "2.3 Gingerbread",
-        "miui_I897_2.2.17_05pm669dka_2.3.zip",
-        "LG P990",
-        "2.3 Gingerbread",
-        "miui_P990_2.2.17_5qd8xt40ij_2.3.zip",
-        "关于我",
-        "我的主页",
-        "使用MDUI打造",
-        "2019 - 2022",
-        "arrow_upward"
+        "修复 解锁时密码无效的问题"
       ],
       "相机": [
         "修复 在拍照时长按menu和电源键会FC的问题"

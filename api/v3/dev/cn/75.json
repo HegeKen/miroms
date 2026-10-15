@@ -2,8 +2,8 @@
   "week": 75,
   "region": "cn",
   "zone": 1,
-  "bigver": "",
-  "versions": "MIUI V4 2.2.3 已发布！",
+  "bigver": "MIUI V4",
+  "versions": "2.2.3",
   "title": {
     "zh": "第75周开发版日志",
     "en": ""
@@ -11,7 +11,20 @@
   "postId": "",
   "update": "",
   "release": "",
-  "description": [],
+  "description": [
+    {
+      "zh": "MIUI V4 2.2.3 已发布！",
+      "en": ""
+    },
+    {
+      "zh": "刷机有风险，务必要小心；请谨慎操作、认真阅读更新日志和刷机教程，将风险降到最低",
+      "en": ""
+    },
+    {
+      "zh": "第一次刷MIUI 时请务必在 Recovery 中选择wipe 清除数据",
+      "en": ""
+    }
+  ],
   "attention": [
     {
       "zh": "小米手机今天没有2.3.5稳定版，仅发布4.0的升级包",
@@ -27,8 +40,29 @@
     }
   ],
   "suspended": [],
-  "devices": [],
-  "roms": [],
+  "devices": [
+    {
+      "device": "mione_plus",
+      "name": {
+        "zh": "小米手机1/1S",
+        "en": ""
+      }
+    }
+  ],
+  "roms": [
+    {
+      "device": "mione_plus",
+      "name": {
+        "zh": "小米手机1/1S",
+        "en": ""
+      },
+      "version": "",
+      "android": "4.0",
+      "release": "",
+      "recovery": "miui_Mioneplus_2.2.3_4b993cea60_4.0.zip",
+      "fastboot": ""
+    }
+  ],
   "logs": {
     "logs_zh": {
       "本周推荐": [
@@ -63,63 +97,7 @@
       "访问限制": [
         "新增 访客模式下会隐藏图库中的图片",
         "新增 访客模式下会隐藏图库中的图片",
-        "新增 访客模式下会隐藏图库中的图片",
-        "机型",
-        "安卓版本",
-        "卡刷包",
-        "小米手机1/1S",
-        "4.0",
-        "miui_Mioneplus_2.2.3_4b993cea60_4.0.zip",
-        "Google Nexus S",
-        "4.0",
-        "miui_NS_2.2.3_c0f0ac7bee_4.0.zip",
-        "Google Nexus One",
-        "2.3 Gingerbread",
-        "miui_NexusOne_2.2.3_mb7ege7rda_2.3.zip",
-        "MOTO Milestone",
-        "2.3 Gingerbread",
-        "miui_Milestone_2.2.3_gtj44t8nm4_2.3.zip",
-        "MOTO Defy/Defy+",
-        "2.3 Gingerbread",
-        "miui_Defy_2.2.3_fmi0z881mr_2.3.zip",
-        "HTC HD2",
-        "2.3 Gingerbread",
-        "miui_HD2_2.2.3_g0cs7vdkkq_2.3.zip",
-        "HTC Desire HD",
-        "2.3 Gingerbread",
-        "miui_DHD_2.2.3_iplekb4h4w_2.3.zip",
-        "HTC Desire Z",
-        "2.3 Gingerbread",
-        "miui_DesireZ_2.2.3_ssqpe7hpth_2.3.zip",
-        "HTC Incredible S",
-        "2.3 Gingerbread",
-        "miui_IncredibleS_2.2.3_8j62mh8g03_2.3.zip",
-        "HTC Desire S",
-        "2.3 Gingerbread",
-        "miui_DesireS_2.2.3_du01dsnwou_2.3.zip",
-        "HTC Desire G7",
-        "2.3 Gingerbread",
-        "miui_Desire_2.2.3_blco43gxgf_2.3.zip",
-        "Samsung Galaxy I9000",
-        "2.3 Gingerbread",
-        "miui_I9000_2.2.3_130evzd4y4_2.3.zip",
-        "Samsung Galaxy T959",
-        "2.3 Gingerbread",
-        "miui_T959_2.2.3_snu6v0rky8_2.3.zip",
-        "Samsung Galaxy S2",
-        "2.3 Gingerbread",
-        "miui_GalaxyS2_2.2.3_h61m2s7nam_2.3.zip",
-        "Samsung Galaxy I897",
-        "2.3 Gingerbread",
-        "miui_I897_2.2.3_zgj3t9kawp_2.3.zip",
-        "LG P990",
-        "2.3 Gingerbread",
-        "miui_P990_2.2.3_ogay2jpvn0_2.3.zip",
-        "关于我",
-        "我的主页",
-        "使用MDUI打造",
-        "2019 - 2022",
-        "arrow_upward"
+        "新增 访客模式下会隐藏图库中的图片"
       ],
       "联系人": [
         "新增 本地修改联系人后，如果长时间没同步，自动提醒是否同步联系人（见联系人设置）",

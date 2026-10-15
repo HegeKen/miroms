@@ -2,8 +2,8 @@
   "week": 83,
   "region": "cn",
   "zone": 1,
-  "bigver": "",
-  "versions": "MIUI V4 2.3.30 已发布！",
+  "bigver": "MIUI V4",
+  "versions": "2.3.30",
   "title": {
     "zh": "第83周开发版日志",
     "en": ""
@@ -11,7 +11,32 @@
   "postId": "",
   "update": "",
   "release": "",
-  "description": [],
+  "description": [
+    {
+      "zh": "MIUI V4 2.3.30 已发布！",
+      "en": ""
+    },
+    {
+      "zh": "从本周起，我们调整了MIUI各版本的叫法，说明如下（大家看英文也许更能明白意思）",
+      "en": ""
+    },
+    {
+      "zh": "荣誉开发组版（Daily Build）：荣誉开发组及版主等资深用户可刷版本，功能新，但可能不稳定，用于尝鲜",
+      "en": ""
+    },
+    {
+      "zh": "开发版（Weekly Build）：经荣誉开发组一起完善后，每周五公开发布的版本为开发版",
+      "en": ""
+    },
+    {
+      "zh": "推荐版（Monthly Build）：由社区原来的“稳定版”演变而来，属于开发版范畴，原则上每月更新一次，它是当月开发版中最稳定的版本，我们强烈推荐很普通的米粉刷机",
+      "en": ""
+    },
+    {
+      "zh": "小米手机稳定版：近期版本号为ICSx.y（x,y为数字变量），可作为小米手机出厂版使用",
+      "en": ""
+    }
+  ],
   "attention": [
     {
       "zh": "小米手机本周发布2.3.5r（支持标准版、联通版和电信版）",
@@ -39,8 +64,29 @@
     }
   ],
   "suspended": [],
-  "devices": [],
-  "roms": [],
+  "devices": [
+    {
+      "device": "mione_plus",
+      "name": {
+        "zh": "小米手机1/1S",
+        "en": ""
+      }
+    }
+  ],
+  "roms": [
+    {
+      "device": "mione_plus",
+      "name": {
+        "zh": "小米手机1/1S",
+        "en": ""
+      },
+      "version": "",
+      "android": "4.0",
+      "release": "",
+      "recovery": "miui_Mioneplus_2.3.30_c8bfb57b6e_4.0.zip",
+      "fastboot": ""
+    }
+  ],
   "logs": {
     "logs_zh": {
       "本周推荐": [
@@ -244,80 +290,7 @@
         "新增 秒表",
         "优化 闹钟开关样式",
         "优化 若干UI调整",
-        "修复 设置“静音模式下闹钟响”无效的问题",
-        "机型",
-        "安卓版本",
-        "卡刷包",
-        "线刷包",
-        "小米手机1/1S",
-        "4.0",
-        "miui_Mioneplus_2.3.30_c8bfb57b6e_4.0.zip",
-        "miuiV4_Mioneplus_2.3.30_fastboot_vke309do1p.exe",
-        "机型",
-        "安卓版本",
-        "卡刷包",
-        "Google Nexus S",
-        "4.0",
-        "miui_NS_2.3.30_c1e078377e_4.0.zip",
-        "Google Nexus One",
-        "2.3 Gingerbread",
-        "miui_NexusOne_2.3.30_3bl6o8f9nl_2.3.zip",
-        "MOTO Milestone",
-        "2.3 Gingerbread",
-        "miui_Milestone_2.3.30_bxlabhksx3_2.3.zip",
-        "MOTO Defy/Defy+",
-        "2.3 Gingerbread",
-        "miui_Defy_2.3.30_j6jtxhhxcn_2.3.zip",
-        "HTC Sensation",
-        "4.0",
-        "miui_Sensation_2.3.30_c30fb7b0b5_4.0.zip",
-        "HTC HD2",
-        "2.3 Gingerbread",
-        "miui_HD2_2.3.30_2x0s7no6nc_2.3.zip",
-        "HTC Desire HD",
-        "2.3 Gingerbread",
-        "miui_DHD_2.3.30_sifmg6hhwz_2.3.zip",
-        "HTC Desire Z",
-        "2.3 Gingerbread",
-        "miui_DesireZ_2.3.30_84sve1ass6_2.3.zip",
-        "HTC Incredible S",
-        "2.3 Gingerbread",
-        "miui_IncredibleS_2.3.30_omi00c0564_2.3.zip",
-        "HTC Desire S",
-        "2.3 Gingerbread",
-        "miui_DesireS_2.3.30_sjxkwwyjwl_2.3.zip",
-        "HTC Desire G7",
-        "2.3 Gingerbread",
-        "miui_Desire_2.3.30_8g2lk30l0a_2.3.zip",
-        "Samsung Galaxy I9000",
-        "2.3 Gingerbread",
-        "miui_I9000_2.3.30_kl351icif9_2.3.zip",
-        "Samsung Galaxy T959",
-        "2.3 Gingerbread",
-        "miui_T959_2.3.30_z8nk2m7zel_2.3.zip",
-        "Samsung Galaxy S2",
-        "4.0",
-        "miui_i9100_2.3.30_9e5521f86f_4.0.zip",
-        "Samsung Galaxy I897",
-        "2.3 Gingerbread",
-        "miui_I897_2.3.30_odp5f35e41_2.3.zip",
-        "Samsung Galaxy Nexus",
-        "4.0",
-        "miui_GalaxyNexus_2.3.30_ab757024fa_4.0.zip",
-        "LG P990",
-        "2.3 Gingerbread",
-        "miui_P990_2.3.30_qdo105tc03_2.3.zip",
-        "索爱 LT18i",
-        "4.0",
-        "miui_LT18i_2.3.30_99147ab498_4.0.zip",
-        "华为 Honor",
-        "4.0",
-        "miui_Honor_2.3.30_b8060442b5_4.0.zip",
-        "关于我",
-        "我的主页",
-        "使用MDUI打造",
-        "2019 - 2022",
-        "arrow_upward"
+        "修复 设置“静音模式下闹钟响”无效的问题"
       ]
     }
   },

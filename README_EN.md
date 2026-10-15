@@ -211,6 +211,26 @@ Writes are per-row `UPDATE`s on an `autocommit` connection, so each one lands im
 
 Locales that fall back to English are skipped automatically (column stays NULL) so the table does not fill with English copies; use `--force` to store them anyway.
 
+#### Log deduplication (always verified)
+
+`logs` rows are shared across ROMs, and the write path matches by **"same type + no language conflict"**:
+before writing, the whole `logs` table is loaded into an in-memory row pool (`LogStore.load_index`) and an
+existing group is reused whenever its language texts do not conflict — so the same log is recognised even when
+the primary content differs (`#25 content=相册` vs `#27 content=Gallery`), unlike the early implementation that
+only looked rows up by `content_hash`.
+
+Three independent guards now report duplicates and fail loudly:
+
+| Where | What |
+| --- | --- |
+| `python3 scripts/dedup_logs.py` | Lists mergeable groups; `--apply` merges, `--prune-unused` removes orphan rows |
+| `import_dev_week.py` / `migrate_logs_multilang.py` | Call `LogStore.duplicate_report()` at the end and exit non-zero when duplicates are found |
+| Admin `/logs` page → "dedup audit" | `GET /api/logs/audit`: duplicate groups, duplicate rows, unreferenced rows |
+
+Rule: same type, no conflicting language text, at least one shared language text → they are the same row.
+Merging only unions texts and rewrites references; language masks stay untouched, so every ROM still exports
+byte-for-byte the same content.
+
 #### Log storage: one row per log, shared by all languages
 
 `roms` used to carry 21 `logs_*` columns (one per language) where each translation of the same line was deduplicated
@@ -261,6 +281,13 @@ metadata translation. `expand_mask=True` widens the language mask to the languag
 entries, so reusing an already-translated group also surfaces translations beyond Chinese and English. Device
 matching prefers the metadata's `device + version`; sources without a device list (HTML) fall back to
 `branch='X'` + region + release date.
+
+In the MIUIROMS HTML pages the device list is a separate `<table>`: it is stripped before the changelog text is
+extracted (otherwise its rows leak into the log body as `机型 / 卡刷包 / miui_XXX.zip` junk — which did happen),
+and parsed into `devices` / `roms` instead (a `(cepheus)` suffix in the model name is used directly as the
+codename, otherwise the name is looked up in the `devices` table). The `▍发布时间` section is split into
+`release_date` / `versions` / `bigver` with the original line kept in `description`, and the parser counts and
+warns about suspicious "table-like" entries.
 
 
 ---

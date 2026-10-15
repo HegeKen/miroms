@@ -2,8 +2,8 @@
   "week": 507,
   "region": "cn",
   "zone": 1,
-  "bigver": "",
-  "versions": "MIUI 12.5 开发版 21.8.4 版本 今天陆续发布，部分机型已发布",
+  "bigver": "MIUI 12.5",
+  "versions": "21.8.4",
   "title": {
     "zh": "第507周开发版日志",
     "en": ""
@@ -11,7 +11,24 @@
   "postId": "",
   "update": "",
   "release": "",
-  "description": [],
+  "description": [
+    {
+      "zh": "MIUI 12.5 开发版 21.8.4 版本 今天陆续发布，部分机型已发布",
+      "en": ""
+    },
+    {
+      "zh": "由于正在修复特定场景重启不能开机的问题，小米11 Ultra、小米11 Pro 本周暂停发布",
+      "en": ""
+    },
+    {
+      "zh": "2021年5月2日起，如出现灌水希望增加内测分行为，会非常大降低内测通过机率，好的氛围需要大家一起维护，感谢大家的理解",
+      "en": ""
+    },
+    {
+      "zh": "橙色星期五投票，会在下周一上线，方便米粉朋友们更充分体验后投票，感谢大家的理解",
+      "en": ""
+    }
+  ],
   "attention": [
     {
       "zh": "MIUI 开发版可进入“设置—>我的设备—>MIUI版本”在线升级，升级前务必备份重要数据",
@@ -23,8 +40,637 @@
     }
   ],
   "suspended": [],
-  "devices": [],
-  "roms": [],
+  "devices": [
+    {
+      "device": "cepheus",
+      "name": {
+        "zh": "小米9/透明版",
+        "en": ""
+      }
+    },
+    {
+      "device": "crux",
+      "name": {
+        "zh": "小米9 Pro 5G",
+        "en": ""
+      }
+    },
+    {
+      "device": "grus",
+      "name": {
+        "zh": "小米9 SE",
+        "en": ""
+      }
+    },
+    {
+      "device": "pyxis",
+      "name": {
+        "zh": "小米CC9",
+        "en": ""
+      }
+    },
+    {
+      "device": "vela",
+      "name": {
+        "zh": "小米CC9美图定制版",
+        "en": ""
+      }
+    },
+    {
+      "device": "tucana",
+      "name": {
+        "zh": "小米CC9 Pro",
+        "en": ""
+      }
+    },
+    {
+      "device": "umi",
+      "name": {
+        "zh": "小米10",
+        "en": ""
+      }
+    },
+    {
+      "device": "thyme",
+      "name": {
+        "zh": "小米10S",
+        "en": ""
+      }
+    },
+    {
+      "device": "cmi",
+      "name": {
+        "zh": "小米10 Pro",
+        "en": ""
+      }
+    },
+    {
+      "device": "vangogh",
+      "name": {
+        "zh": "小米10 青春版",
+        "en": ""
+      }
+    },
+    {
+      "device": "cas",
+      "name": {
+        "zh": "小米10 至尊纪念版",
+        "en": ""
+      }
+    },
+    {
+      "device": "venus",
+      "name": {
+        "zh": "小米11",
+        "en": ""
+      }
+    },
+    {
+      "device": "renoir",
+      "name": {
+        "zh": "小米11 青春版",
+        "en": ""
+      }
+    },
+    {
+      "device": "star",
+      "name": {
+        "zh": "小米11 Pro/Ultra",
+        "en": ""
+      }
+    },
+    {
+      "device": "cetus",
+      "name": {
+        "zh": "小米MIX FOLD",
+        "en": ""
+      }
+    },
+    {
+      "device": "atom",
+      "name": {
+        "zh": "Redmi 10X 5G",
+        "en": ""
+      }
+    },
+    {
+      "device": "bomb",
+      "name": {
+        "zh": "Redmi 10X Pro",
+        "en": ""
+      }
+    },
+    {
+      "device": "ginkgo",
+      "name": {
+        "zh": "Redmi Note 8",
+        "en": ""
+      }
+    },
+    {
+      "device": "begonia",
+      "name": {
+        "zh": "Redmi Note 8 Pro",
+        "en": ""
+      }
+    },
+    {
+      "device": "lime",
+      "name": {
+        "zh": "Redmi Note 9 4G",
+        "en": ""
+      }
+    },
+    {
+      "device": "cannon",
+      "name": {
+        "zh": "Redmi Note 9 5G",
+        "en": ""
+      }
+    },
+    {
+      "device": "gauguin",
+      "name": {
+        "zh": "Redmi Note 9 Pro",
+        "en": ""
+      }
+    },
+    {
+      "device": "camellia",
+      "name": {
+        "zh": "Redmi Note 10",
+        "en": ""
+      }
+    },
+    {
+      "device": "chopin",
+      "name": {
+        "zh": "Redmi Note 10 Pro",
+        "en": ""
+      }
+    },
+    {
+      "device": "davinci",
+      "name": {
+        "zh": "Redmi K20",
+        "en": ""
+      }
+    },
+    {
+      "device": "raphael",
+      "name": {
+        "zh": "Redmi K20 Pro/尊享版",
+        "en": ""
+      }
+    },
+    {
+      "device": "phoenix",
+      "name": {
+        "zh": "Redmi K30 4G版",
+        "en": ""
+      }
+    },
+    {
+      "device": "lmi",
+      "name": {
+        "zh": "Redmi K30 Pro",
+        "en": ""
+      }
+    },
+    {
+      "device": "cezanne",
+      "name": {
+        "zh": "Redmi K30 至尊纪念版",
+        "en": ""
+      }
+    },
+    {
+      "device": "apollo",
+      "name": {
+        "zh": "Redmi K30S 至尊纪念版",
+        "en": ""
+      }
+    },
+    {
+      "device": "alioth",
+      "name": {
+        "zh": "Redmi K40",
+        "en": ""
+      }
+    },
+    {
+      "device": "haydn",
+      "name": {
+        "zh": "Redmi K40 Pro",
+        "en": ""
+      }
+    },
+    {
+      "device": "ares",
+      "name": {
+        "zh": "Redmi K40 游戏增强版",
+        "en": ""
+      }
+    }
+  ],
+  "roms": [
+    {
+      "device": "cepheus",
+      "name": {
+        "zh": "小米9/透明版",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_CEPHEUS_21.8.4_d010ab306b_11.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "crux",
+      "name": {
+        "zh": "小米9 Pro 5G",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_CRUX_21.8.4_54c848990c_11.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "grus",
+      "name": {
+        "zh": "小米9 SE",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_GRUS_21.8.4_1294be6e7b_11.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "pyxis",
+      "name": {
+        "zh": "小米CC9",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_PYXIS_21.8.4_4492b856b9_11.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "vela",
+      "name": {
+        "zh": "小米CC9美图定制版",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_VELA_21.8.4_cd838c26b5_11.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "tucana",
+      "name": {
+        "zh": "小米CC9 Pro",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_TUCANA_21.8.4_29d81b4539_11.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "umi",
+      "name": {
+        "zh": "小米10",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_UMI_21.8.4_646f3cc9fe_11.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "thyme",
+      "name": {
+        "zh": "小米10S",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_THYME_21.8.4_4b03a42876_11.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "cmi",
+      "name": {
+        "zh": "小米10 Pro",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_CMI_21.8.4_8c272f4643_11.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "vangogh",
+      "name": {
+        "zh": "小米10 青春版",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_VANGOGH_21.8.4_b55271e7f8_11.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "cas",
+      "name": {
+        "zh": "小米10 至尊纪念版",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_CAS_21.8.4_8240129ccd_11.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "venus",
+      "name": {
+        "zh": "小米11",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_VENUS_21.8.4_cbb497a500_11.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "renoir",
+      "name": {
+        "zh": "小米11 青春版",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_RENOIR_21.8.4_e3e8da3555_11.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "star",
+      "name": {
+        "zh": "小米11 Pro/Ultra",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_STAR_21.8.4_0a5276d572_11.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "cetus",
+      "name": {
+        "zh": "小米MIX FOLD",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_CETUS_21.8.4_408c76d39c_11.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "atom",
+      "name": {
+        "zh": "Redmi 10X 5G",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_ATOM_21.8.4_5dea03f2b0_11.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "bomb",
+      "name": {
+        "zh": "Redmi 10X Pro",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_BOMB_21.8.4_d104d80b49_11.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "ginkgo",
+      "name": {
+        "zh": "Redmi Note 8",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_GINKGO_21.8.4_e78d736643_11.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "begonia",
+      "name": {
+        "zh": "Redmi Note 8 Pro",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_BEGONIA_21.8.4_46d9459bd4_11.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "lime",
+      "name": {
+        "zh": "Redmi Note 9 4G",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_LIME_21.8.4_ba9a6eab7b_11.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "cannon",
+      "name": {
+        "zh": "Redmi Note 9 5G",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_CANNON_21.8.4_ba90d821f4_11.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "gauguin",
+      "name": {
+        "zh": "Redmi Note 9 Pro",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_GAUGUIN_21.8.4_f336f21402_11.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "camellia",
+      "name": {
+        "zh": "Redmi Note 10",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_CAMELLIA_21.8.4_5b4189bfe1_11.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "chopin",
+      "name": {
+        "zh": "Redmi Note 10 Pro",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_CHOPIN_21.8.4_06f94b323d_11.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "davinci",
+      "name": {
+        "zh": "Redmi K20",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_DAVINCI_21.8.4_4a9043bad4_11.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "raphael",
+      "name": {
+        "zh": "Redmi K20 Pro/尊享版",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_RAPHAEL_21.8.4_862deee113_11.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "phoenix",
+      "name": {
+        "zh": "Redmi K30 4G版",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_PHOENIX_21.8.4_c1b034ffb2_11.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "lmi",
+      "name": {
+        "zh": "Redmi K30 Pro",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_LMI_21.8.4_bf2c77856a_11.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "cezanne",
+      "name": {
+        "zh": "Redmi K30 至尊纪念版",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_CEZANNE_21.8.4_8fb572921e_11.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "apollo",
+      "name": {
+        "zh": "Redmi K30S 至尊纪念版",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_APOLLO_21.8.4_5940257b1d_11.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "alioth",
+      "name": {
+        "zh": "Redmi K40",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_ALIOTH_21.8.4_95073b0c2c_11.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "haydn",
+      "name": {
+        "zh": "Redmi K40 Pro",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_HAYDN_21.8.4_134f4447a7_11.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "ares",
+      "name": {
+        "zh": "Redmi K40 游戏增强版",
+        "en": ""
+      },
+      "version": "",
+      "android": "11.0",
+      "release": "",
+      "recovery": "miui_ARES_21.8.4_9076e148b3_11.0.zip",
+      "fastboot": ""
+    }
+  ],
   "logs": {
     "logs_zh": {
       "系统": [
@@ -48,120 +694,12 @@
         "修复部分机型卡面比例异常问题"
       ],
       "扫一扫": [
-        "修复扫码结果弹窗慢问题",
-        "机型",
-        "安卓版本",
-        "卡刷包",
-        "小米9/透明版(cepheus)",
-        "11.0",
-        "miui_CEPHEUS_21.8.4_d010ab306b_11.0.zip",
-        "小米9 Pro 5G(crux)",
-        "11.0",
-        "miui_CRUX_21.8.4_54c848990c_11.0.zip",
-        "小米9 SE(grus)",
-        "11.0",
-        "miui_GRUS_21.8.4_1294be6e7b_11.0.zip",
-        "小米CC9(pyxis)",
-        "11.0",
-        "miui_PYXIS_21.8.4_4492b856b9_11.0.zip",
-        "小米CC9美图定制版(vela)",
-        "11.0",
-        "miui_VELA_21.8.4_cd838c26b5_11.0.zip",
-        "小米CC9 Pro(tucana)",
-        "11.0",
-        "miui_TUCANA_21.8.4_29d81b4539_11.0.zip",
-        "小米10(umi)",
-        "11.0",
-        "miui_UMI_21.8.4_646f3cc9fe_11.0.zip",
-        "小米10S(thyme)",
-        "11.0",
-        "miui_THYME_21.8.4_4b03a42876_11.0.zip",
-        "小米10 Pro(cmi)",
-        "11.0",
-        "miui_CMI_21.8.4_8c272f4643_11.0.zip",
-        "小米10 青春版(vangogh)",
-        "11.0",
-        "miui_VANGOGH_21.8.4_b55271e7f8_11.0.zip",
-        "小米10 至尊纪念版(cas)",
-        "11.0",
-        "miui_CAS_21.8.4_8240129ccd_11.0.zip",
-        "小米11(venus)",
-        "11.0",
-        "miui_VENUS_21.8.4_cbb497a500_11.0.zip",
-        "小米11 青春版(renoir)",
-        "11.0",
-        "miui_RENOIR_21.8.4_e3e8da3555_11.0.zip",
-        "小米11 Pro/Ultra(star)",
-        "11.0",
-        "miui_STAR_21.8.4_0a5276d572_11.0.zip",
-        "小米MIX FOLD(cetus)",
-        "11.0",
-        "miui_CETUS_21.8.4_408c76d39c_11.0.zip",
-        "Redmi 10X 5G(atom)",
-        "11.0",
-        "miui_ATOM_21.8.4_5dea03f2b0_11.0.zip",
-        "Redmi 10X Pro(bomb)",
-        "11.0",
-        "miui_BOMB_21.8.4_d104d80b49_11.0.zip",
-        "Redmi Note 8(ginkgo)",
-        "11.0",
-        "miui_GINKGO_21.8.4_e78d736643_11.0.zip",
-        "Redmi Note 8 Pro(begonia)",
-        "11.0",
-        "miui_BEGONIA_21.8.4_46d9459bd4_11.0.zip",
-        "Redmi Note 9 4G(lime)",
-        "11.0",
-        "miui_LIME_21.8.4_ba9a6eab7b_11.0.zip",
-        "Redmi Note 9 5G(cannon)",
-        "11.0",
-        "miui_CANNON_21.8.4_ba90d821f4_11.0.zip",
-        "Redmi Note 9 Pro(gauguin)",
-        "11.0",
-        "miui_GAUGUIN_21.8.4_f336f21402_11.0.zip",
-        "Redmi Note 10(camellia)",
-        "11.0",
-        "miui_CAMELLIA_21.8.4_5b4189bfe1_11.0.zip",
-        "Redmi Note 10 Pro(chopin)",
-        "11.0",
-        "miui_CHOPIN_21.8.4_06f94b323d_11.0.zip",
-        "Redmi K20(davinci)",
-        "11.0",
-        "miui_DAVINCI_21.8.4_4a9043bad4_11.0.zip",
-        "Redmi K20 Pro/尊享版(raphael)",
-        "11.0",
-        "miui_RAPHAEL_21.8.4_862deee113_11.0.zip",
-        "Redmi K30 4G版(phoenix)",
-        "11.0",
-        "miui_PHOENIX_21.8.4_c1b034ffb2_11.0.zip",
-        "Redmi K30 5G版(Picasso)",
-        "11.0",
-        "miui_PICASSO_21.8.4_4c0f10630f_11.0.zip",
-        "Redmi K30i 5G版(Picasso_48m)",
-        "11.0",
-        "miui_PICASSO48M_21.8.4_70d49f17ee_11.0.zip",
-        "Redmi K30 Pro(lmi)",
-        "11.0",
-        "miui_LMI_21.8.4_bf2c77856a_11.0.zip",
-        "Redmi K30 至尊纪念版(cezanne)",
-        "11.0",
-        "miui_CEZANNE_21.8.4_8fb572921e_11.0.zip",
-        "Redmi K30S 至尊纪念版(apollo)",
-        "11.0",
-        "miui_APOLLO_21.8.4_5940257b1d_11.0.zip",
-        "Redmi K40(alioth)",
-        "11.0",
-        "miui_ALIOTH_21.8.4_95073b0c2c_11.0.zip",
-        "Redmi K40 Pro(haydn)",
-        "11.0",
-        "miui_HAYDN_21.8.4_134f4447a7_11.0.zip",
-        "Redmi K40 游戏增强版(ares)",
-        "11.0",
-        "miui_ARES_21.8.4_9076e148b3_11.0.zip",
-        "关于我",
-        "我的主页",
-        "使用MDUI打造",
-        "2019 - 2022",
-        "arrow_upward"
+        "修复扫码结果弹窗慢问题"
+      ]
+    },
+    "logs_en": {
+      "Clock": [
+        "Optimizing alarm clock ringing experience."
       ]
     }
   },
