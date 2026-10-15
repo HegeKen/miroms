@@ -102,6 +102,31 @@ class DatabaseManager:
 								cnx.close()
 
 		@classmethod
+		def insert(
+				cls,
+				sql: str,
+				params: Optional[Union[Tuple, List, Dict]] = None,
+				raise_on_error: bool = False
+		) -> int:
+				"""执行 INSERT 并返回自增主键（lastrowid）
+
+				用途：先查后写时拿到新行 id。不要用 `INSERT ... ON DUPLICATE KEY UPDATE`
+				做「有则更新」——命中重复键时 InnoDB 同样会推进 AUTO_INCREMENT，
+				反复导入会把 id 烧出一堆空档（dev 表就踩过）。
+				"""
+				cnx = None
+				try:
+						cnx = cls._get_connection()
+						cursor = cnx.cursor()
+						cursor.execute(sql, params or ())
+						return int(cursor.lastrowid or 0)
+				except Exception as e:
+						logger.error(f"SQL执行错误: {sql[:100]}..., 错误: {type(e).__name__}: {e}")
+						if raise_on_error:
+								raise
+						return 0
+
+		@classmethod
 		def execute_many(
 				cls,
 				sql: str,

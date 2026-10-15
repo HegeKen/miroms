@@ -664,19 +664,25 @@ def upsert_dev(meta: Dict[str, Any], logs_value: str, dry_run: bool = False) -> 
 		return None
 
 	columns = list(row.keys())
-	placeholders = ', '.join(['%s'] * len(columns))
-	updates = ', '.join(f'`{c}` = VALUES(`{c}`)' for c in columns if c not in ('week', 'region'))
-	DatabaseManager.execute(
-		f"INSERT INTO `dev` ({', '.join(f'`{c}`' for c in columns)}) VALUES ({placeholders}) "
-		f"ON DUPLICATE KEY UPDATE {updates}",
-		params=tuple(row[c] for c in columns),
-		raise_on_error=True,
-	)
 	found = DatabaseManager.query_one(
 		"SELECT `id` FROM `dev` WHERE `week` = %s AND `region` = %s",
 		params=(row['week'], row['region']),
 	)
-	return int(found[0]) if found else None
+	if found:
+		# 先查再 UPDATE：不用 INSERT ... ON DUPLICATE KEY UPDATE，
+		# 后者命中重复键时也会推进 AUTO_INCREMENT，反复导入会烧出一堆 id 空档
+		assignments = ', '.join(f'`{c}` = %s' for c in columns if c not in ('week', 'region'))
+		values = tuple(row[c] for c in columns if c not in ('week', 'region')) + (int(found[0]),)
+		DatabaseManager.execute(
+			f"UPDATE `dev` SET {assignments} WHERE `id` = %s",
+			params=values, raise_on_error=True)
+		return int(found[0])
+
+	inserted = DatabaseManager.insert(
+		f"INSERT INTO `dev` ({', '.join(f'`{c}`' for c in columns)}) "
+		f"VALUES ({', '.join(['%s'] * len(columns))})",
+		params=tuple(row[c] for c in columns), raise_on_error=True)
+	return inserted or None
 
 
 def version_owner(versions: str) -> Optional[int]:

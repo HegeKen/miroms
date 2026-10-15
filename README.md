@@ -39,6 +39,7 @@
 │   ├── exporter.py                   #   主导出脚本
 │   ├── migrate_logs_multilang.py     #   日志多语言分组迁移（logs 重建 + roms.logs 回写）
 │   ├── dedup_logs.py                 #   logs 去重体检 / 合并重复分组 / 清理孤儿行
+│   ├── resequence_ids.py             #   重排 roms / dev 的 id（消除自增空档）
 │   ├── rebuild_roms_logs.py          #   按备份库重建 roms.logs（修复悬空引用）
 │   ├── import_dev_week.py            #   导入开发版周更数据（dev 表 + roms.dev_week）
 │   ├── sync_devices.py               #   同步设备列表
@@ -213,6 +214,24 @@
 
 写入失败会计入 `write_failed` 并打印首个错误；`--dry-run` 可以只看将写入什么而不落库。回落到英文的语种会被自动跳过（该语种不写入），确需写入时加 `--force`。
 
+#### 自增 id 空档
+
+InnoDB 的 `AUTO_INCREMENT` 在**插入失败 / 事务回滚**时不会回收（MySQL 的既有行为），
+抓取脚本偶发失败就会烧掉一个 id；而且本项目与 HyperOS.fans、NuxtMR **三个项目的抓取脚本
+共用同一个 `miroms` 库**（各自的 `scripts/config.py` 都指向它），空档因此会缓慢累积
+（例如 `roms` 一度是 54622 行却已经自增到 54634）。导入脚本里也要避免
+`INSERT ... ON DUPLICATE KEY UPDATE` 做「有则更新」——命中重复键时同样会推进计数器
+（`dev` 表曾因此每次导入烧掉几百个 id，现已改为先查再 `UPDATE`）。
+
+清理方式（可重复执行）：
+
+```bash
+python3 scripts/resequence_ids.py                 # 只看 roms 的空档
+python3 scripts/resequence_ids.py --table dev     # 只看 dev
+python3 scripts/resequence_ids.py --apply         # 重排 roms 并归位计数器
+python3 scripts/resequence_ids.py --verify        # 只校验是否连续
+```
+
 #### 日志去重（必须校验）
 
 `logs` 表按内容跨 ROM 复用分组，**写入侧只做「语言不冲突即可复用」的匹配**：
@@ -313,6 +332,7 @@ python3 scripts/import_dev_week.py --backfill-roms     # 仅按发布日期回�
 | --- | --- |
 | `exporter.py` | 入口脚本：遍历 `common.fullDevices` 依次执行 `exportV1` / `exportV2` / `exportV3`，再执行 `export_dev()` 导出 `api/v3/dev/**`，完成后调用 `app/web/scripts/generate-index.mjs`（Node.js）重新生成 `api/v3/index.json`、`api/v3/stats.json`、`api/v3/roms/*.json` 与 `api/v3/releases/*.json` |
 | `migrate_logs_multilang.py` | 把 `roms` 的 21 个 `logs_*` 列迁移为「`logs` 多语言分组 + `roms.logs` 单列」；旧表保留为 `logs_legacy`，`--dry-run` 只统计，`--verify N` 抽查中英文一致性；结束时自动跑去重体检 |
+| `resequence_ids.py` | 把 `roms` / `dev` 的 id 重排成连续自增并归位自增计数器（消除 `AUTO_INCREMENT` 空档）；先采样 20 秒确认无人写入，并把「旧 id → 新 id」映射写到 `.backup/*_id_map_*.csv`。`logs.id` 被 `roms.logs` / `dev.logs` 引用，**不可重排**，所以不在允许列表里 |
 | `dedup_logs.py` | `logs` 去重体检与合并：把「同一日志被拆成多行」的分组并成一行，同步重写 `roms.logs` / `dev.logs` 引用（掩码不变，导出结果不受影响）；`--apply` 实际合并，`--prune-unused` 顺带清理孤儿行 |
 | `rebuild_roms_logs.py` | 以迁移前的备份库为权威来源重建 `roms.logs`（修复人工改动 `logs` 表造成的悬空引用），并复核「无悬空引用」 |
 | `import_dev_week.py` | 导入开发版（周更）数据到 `dev` 表并回填 `roms.dev_week`；支持 `--source hyperos\|nuxtmr\|miuiroms`、`--all`、`--weeks 619-652`、`--region global`、`--dry-run`、`--backfill-roms` |

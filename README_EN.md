@@ -37,6 +37,7 @@ the [hub.miuier.com](https://hub.miuier.com) website, the admin panel and variou
 ├── scripts/                          # sync / fetch / export / deploy scripts (Python)
 │   ├── exporter.py                   #   main export script
 │   ├── migrate_logs_multilang.py     #   logs table rebuild + roms.logs migration
+│   ├── resequence_ids.py             #   renumber roms / dev ids (remove AUTO_INCREMENT gaps)
 │   ├── import_dev_week.py            #   import dev (weekly) data into dev table
 │   ├── sync_devices.py               #   sync device list
 │   ├── fix_missing_tag_mappings.py   #   fix missing tag mappings
@@ -211,6 +212,22 @@ Writes are per-row `UPDATE`s on an `autocommit` connection, so each one lands im
 
 Locales that fall back to English are skipped automatically (column stays NULL) so the table does not fill with English copies; use `--force` to store them anyway.
 
+#### AUTO_INCREMENT gaps
+
+InnoDB never reclaims an `AUTO_INCREMENT` value after a failed insert or a rolled-back transaction, so occasional
+failures in the scrapers burn ids — and note that this project, HyperOS.fans and NuxtMR **all write to the same
+`miroms` database** (each has its own `scripts/config.py` pointing at it), so gaps accumulate slowly (`roms` once had
+54,622 rows but had already reached id 54,634). Avoid `INSERT ... ON DUPLICATE KEY UPDATE` for upserts in importers
+for the same reason — a duplicate-key hit also advances the counter (the `dev` importer used to burn hundreds of ids
+per run and now does a lookup followed by `UPDATE`).
+
+```bash
+python3 scripts/resequence_ids.py                 # report gaps in roms
+python3 scripts/resequence_ids.py --table dev     # report gaps in dev
+python3 scripts/resequence_ids.py --apply         # renumber roms and reset the counter
+python3 scripts/resequence_ids.py --verify        # verify density only
+```
+
 #### Log deduplication (always verified)
 
 `logs` rows are shared across ROMs, and the write path matches by **"same type + no language conflict"**:
@@ -224,6 +241,7 @@ Three independent guards now report duplicates and fail loudly:
 | Where | What |
 | --- | --- |
 | `python3 scripts/dedup_logs.py` | Lists mergeable groups; `--apply` merges, `--prune-unused` removes orphan rows |
+| `python3 scripts/resequence_ids.py` | Renumber `roms` / `dev` ids into a dense sequence and reset their AUTO_INCREMENT counter; samples 20 s to make sure nobody is writing and dumps the old→new id map to `.backup/*_id_map_*.csv`. `logs.id` is referenced by `roms.logs` / `dev.logs`, so it is deliberately not allowed |
 | `import_dev_week.py` / `migrate_logs_multilang.py` | Call `LogStore.duplicate_report()` at the end and exit non-zero when duplicates are found |
 | Admin `/logs` page → "dedup audit" | `GET /api/logs/audit`: duplicate groups, duplicate rows, unreferenced rows |
 
