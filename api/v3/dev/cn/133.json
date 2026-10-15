@@ -28,8 +28,48 @@
     }
   ],
   "suspended": [],
-  "devices": [],
-  "roms": [],
+  "devices": [
+    {
+      "device": "mione_plus",
+      "name": {
+        "zh": "小米手机1/1S",
+        "en": "MI 1/1S"
+      }
+    },
+    {
+      "device": "aries",
+      "name": {
+        "zh": "小米 2/2S",
+        "en": "MI 2/2S"
+      }
+    }
+  ],
+  "roms": [
+    {
+      "device": "mione_plus",
+      "name": {
+        "zh": "小米手机1/1S",
+        "en": "MI 1/1S"
+      },
+      "version": "3.4.5",
+      "android": "4.1",
+      "release": "2013-04-05",
+      "recovery": "",
+      "fastboot": "miui_Mioneplus_3.4.5_fastboot_4.1_sdfjkl8769.exe"
+    },
+    {
+      "device": "aries",
+      "name": {
+        "zh": "小米 2/2S",
+        "en": "MI 2/2S"
+      },
+      "version": "3.4.5",
+      "android": "4.1",
+      "release": "2013-04-05",
+      "recovery": "miui_MI2_3.4.5_93a974a0fe_4.1.zip",
+      "fastboot": ""
+    }
+  ],
   "logs": {
     "logs_zh": {
       "本周推荐": [

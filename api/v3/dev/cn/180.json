@@ -40,8 +40,86 @@
     }
   ],
   "suspended": [],
-  "devices": [],
-  "roms": [],
+  "devices": [
+    {
+      "device": "mione_plus",
+      "name": {
+        "zh": "小米手机1/1S",
+        "en": "MI 1/1S"
+      }
+    },
+    {
+      "device": "aries",
+      "name": {
+        "zh": "小米 2/2S",
+        "en": "MI 2/2S"
+      }
+    },
+    {
+      "device": "pisces",
+      "name": {
+        "zh": "小米3 移动版",
+        "en": "MI 3 TD"
+      }
+    },
+    {
+      "device": "cancro",
+      "name": {
+        "zh": "小米 3 联通电信版/小米 4",
+        "en": "MI3 WCDMA/Mi 4"
+      }
+    }
+  ],
+  "roms": [
+    {
+      "device": "mione_plus",
+      "name": {
+        "zh": "小米手机1/1S",
+        "en": "MI 1/1S"
+      },
+      "version": "4.3.14",
+      "android": "4.1",
+      "release": "2014-03-14",
+      "recovery": "miui_Mioneplus_4.3.14_deecd0263e_4.1.zip",
+      "fastboot": "mione_plus_images_4.3.14_4.1_a8b20f4253.tgz"
+    },
+    {
+      "device": "aries",
+      "name": {
+        "zh": "小米 2/2S",
+        "en": "MI 2/2S"
+      },
+      "version": "4.3.14",
+      "android": "4.1",
+      "release": "2014-03-14",
+      "recovery": "miui_MI2_4.3.14_5bc197ed93_4.1.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "pisces",
+      "name": {
+        "zh": "小米3 移动版",
+        "en": "MI 3 TD"
+      },
+      "version": "4.3.14",
+      "android": "4.2",
+      "release": "2014-03-14",
+      "recovery": "miui_MI3_4.3.14_4a95a41691_4.2.zip",
+      "fastboot": "pisces_images_4.3.14_4.2_c7aa4b6399.tgz"
+    },
+    {
+      "device": "cancro",
+      "name": {
+        "zh": "小米 3 联通电信版/小米 4",
+        "en": "MI3 WCDMA/Mi 4"
+      },
+      "version": "4.3.14",
+      "android": "4.3",
+      "release": "2014-03-14",
+      "recovery": "miui_MI3W_4.3.14_33712e0406_4.3.zip",
+      "fastboot": "cancro_images_4.3.14_4.3_629a777999.tgz"
+    }
+  ],
   "logs": {
     "logs_zh": {
       "本周推荐": [

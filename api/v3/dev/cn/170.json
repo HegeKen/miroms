@@ -36,8 +36,86 @@
     }
   ],
   "suspended": [],
-  "devices": [],
-  "roms": [],
+  "devices": [
+    {
+      "device": "mione_plus",
+      "name": {
+        "zh": "小米手机1/1S",
+        "en": "MI 1/1S"
+      }
+    },
+    {
+      "device": "aries",
+      "name": {
+        "zh": "小米 2/2S",
+        "en": "MI 2/2S"
+      }
+    },
+    {
+      "device": "taurus",
+      "name": {
+        "zh": "小米 2A",
+        "en": "Mi 2A"
+      }
+    },
+    {
+      "device": "pisces",
+      "name": {
+        "zh": "小米3 移动版",
+        "en": "MI 3 TD"
+      }
+    }
+  ],
+  "roms": [
+    {
+      "device": "mione_plus",
+      "name": {
+        "zh": "小米手机1/1S",
+        "en": "MI 1/1S"
+      },
+      "version": "3.12.27",
+      "android": "4.1",
+      "release": "2013-12-27",
+      "recovery": "miui_Mioneplus_3.12.27_4fe25ae0df_4.1.zip",
+      "fastboot": "miui_MI1_3.12.27_fastboot_4.1_qyg0ythvuk.exe"
+    },
+    {
+      "device": "aries",
+      "name": {
+        "zh": "小米 2/2S",
+        "en": "MI 2/2S"
+      },
+      "version": "3.12.27",
+      "android": "4.1",
+      "release": "2013-12-27",
+      "recovery": "miui_MI2_3.12.27_baf0c86d1f_4.1.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "taurus",
+      "name": {
+        "zh": "小米 2A",
+        "en": "Mi 2A"
+      },
+      "version": "3.12.27",
+      "android": "4.1",
+      "release": "2013-12-27",
+      "recovery": "miui_MI2A_3.12.27_596e27ac7d_4.1.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "pisces",
+      "name": {
+        "zh": "小米3 移动版",
+        "en": "MI 3 TD"
+      },
+      "version": "3.12.27",
+      "android": "4.2",
+      "release": "2013-12-27",
+      "recovery": "miui_MI3_3.12.27_3940d30d7c_4.2.zip",
+      "fastboot": "miui_MI3-TD_3.12.27_fastboot_4.2_pbsq6jfpqf.exe"
+    }
+  ],
   "logs": {
     "logs_zh": {
       "本周推荐": [

@@ -36,8 +36,447 @@
     }
   ],
   "suspended": [],
-  "devices": [],
-  "roms": [],
+  "devices": [
+    {
+      "device": "aries",
+      "name": {
+        "zh": "小米 2/2S",
+        "en": "MI 2/2S"
+      }
+    },
+    {
+      "device": "taurus",
+      "name": {
+        "zh": "小米 2A",
+        "en": "Mi 2A"
+      }
+    },
+    {
+      "device": "pisces",
+      "name": {
+        "zh": "小米3 移动版",
+        "en": "MI 3 TD"
+      }
+    },
+    {
+      "device": "cancro",
+      "name": {
+        "zh": "小米 3 联通电信版/小米 4",
+        "en": "MI3 WCDMA/Mi 4"
+      }
+    },
+    {
+      "device": "cancro_lte_ct",
+      "name": {
+        "zh": "小米手机4 电信4G",
+        "en": "Mi 4 LTE CT"
+      }
+    },
+    {
+      "device": "ferrari",
+      "name": {
+        "zh": "小米 4i",
+        "en": "MI 4i"
+      }
+    },
+    {
+      "device": "libra",
+      "name": {
+        "zh": "小米 4C",
+        "en": "Mi 4C"
+      }
+    },
+    {
+      "device": "leo",
+      "name": {
+        "zh": "小米 Note 顶配版",
+        "en": "Mi Note Pro"
+      }
+    },
+    {
+      "device": "mocha",
+      "name": {
+        "zh": "小米平板 1",
+        "en": "MiPad 1"
+      }
+    },
+    {
+      "device": "wt93007",
+      "name": {
+        "zh": "红米 1/1W",
+        "en": "Redmi 1/1W"
+      }
+    },
+    {
+      "device": "wt98007",
+      "name": {
+        "zh": "红米1 联通版",
+        "en": "Redmi 1 WCDMA"
+      }
+    },
+    {
+      "device": "armani",
+      "name": {
+        "zh": "红米 1S",
+        "en": "Redmi 1S"
+      }
+    },
+    {
+      "device": "wt93807",
+      "name": {
+        "zh": "红米 1S 移动3G版",
+        "en": "Redmi 1S TD"
+      }
+    },
+    {
+      "device": "wt96007",
+      "name": {
+        "zh": "红米 1S 移动4G版",
+        "en": "Redmi 1S LTE"
+      }
+    },
+    {
+      "device": "wt86047",
+      "name": {
+        "zh": "红米 2 移动3G版",
+        "en": "Redmi 2 TD"
+      }
+    },
+    {
+      "device": "wt88047",
+      "name": {
+        "zh": "红米 2 联通/电信3G版",
+        "en": "Redmi 2 WCDMA"
+      }
+    },
+    {
+      "device": "lte26007",
+      "name": {
+        "zh": "红米 2A 标准版",
+        "en": "Redmi 2A"
+      }
+    },
+    {
+      "device": "lcsh92_wet_xm_td",
+      "name": {
+        "zh": "红米 Note 移动3G版",
+        "en": "Redmi Note 1 TD"
+      }
+    },
+    {
+      "device": "lcsh92_wet_jb9",
+      "name": {
+        "zh": "红米 Note 联通3G版",
+        "en": "Redmi Note 3G"
+      }
+    },
+    {
+      "device": "dior",
+      "name": {
+        "zh": "红米 Note 4G 单卡版",
+        "en": "Redmi Note 4G"
+      }
+    },
+    {
+      "device": "gucci",
+      "name": {
+        "zh": "红米 Note 4G 双卡版",
+        "en": "Redmi Note 1S 4G"
+      }
+    },
+    {
+      "device": "hermes",
+      "name": {
+        "zh": "红米 Note 2",
+        "en": "Redmi Note 2"
+      }
+    },
+    {
+      "device": "hennessy",
+      "name": {
+        "zh": "红米 Note 3 双网通版",
+        "en": "Redmi Note 3 (MTK)"
+      }
+    }
+  ],
+  "roms": [
+    {
+      "device": "aries",
+      "name": {
+        "zh": "小米 2/2S",
+        "en": "MI 2/2S"
+      },
+      "version": "6.2.25",
+      "android": "5.0",
+      "release": "",
+      "recovery": "miui_MI2_6.2.25_7dc01bcf5d_5.0.zip",
+      "fastboot": "aries_images_6.2.25_20160129.0000.14_5.0_cn_302e513c9f.tgz"
+    },
+    {
+      "device": "taurus",
+      "name": {
+        "zh": "小米 2A",
+        "en": "Mi 2A"
+      },
+      "version": "6.2.25",
+      "android": "4.4",
+      "release": "",
+      "recovery": "miui_MI2ABeta_6.2.25_730f129c24_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "pisces",
+      "name": {
+        "zh": "小米3 移动版",
+        "en": "MI 3 TD"
+      },
+      "version": "6.2.25",
+      "android": "4.4",
+      "release": "",
+      "recovery": "miui_MI3TD_6.2.25_f3dd98d6c3_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "cancro",
+      "name": {
+        "zh": "小米 3 联通电信版/小米 4",
+        "en": "MI3 WCDMA/Mi 4"
+      },
+      "version": "6.2.25",
+      "android": "6.0",
+      "release": "",
+      "recovery": "miui_MI3WMI4W_6.2.25_0685b75b4f_6.0.zip",
+      "fastboot": "cancro_images_6.2.25_20160129.0000.14_6.0_cn_210c918238.tgz"
+    },
+    {
+      "device": "cancro_lte_ct",
+      "name": {
+        "zh": "小米手机4 电信4G",
+        "en": "Mi 4 LTE CT"
+      },
+      "version": "6.2.25",
+      "android": "6.0",
+      "release": "",
+      "recovery": "miui_MI4LTECT_6.2.25_ae890d2686_6.0.zip",
+      "fastboot": "cancro_lte_ct_images_6.2.25_20160129.0000.14_6.0_cn_01991e93f1.tgz"
+    },
+    {
+      "device": "ferrari",
+      "name": {
+        "zh": "小米 4i",
+        "en": "MI 4i"
+      },
+      "version": "6.2.25",
+      "android": "5.0",
+      "release": "",
+      "recovery": "miui_MI4i_6.2.25_a3a1142b24_5.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "libra",
+      "name": {
+        "zh": "小米 4C",
+        "en": "Mi 4C"
+      },
+      "version": "6.2.25",
+      "android": "5.1",
+      "release": "",
+      "recovery": "miui_MI4c_6.2.25_0d1e12d705_5.1.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "leo",
+      "name": {
+        "zh": "小米 Note 顶配版",
+        "en": "Mi Note Pro"
+      },
+      "version": "6.2.25",
+      "android": "5.1",
+      "release": "",
+      "recovery": "miui_MINotePro_6.2.25_739c5a9d07_5.1.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "mocha",
+      "name": {
+        "zh": "小米平板 1",
+        "en": "MiPad 1"
+      },
+      "version": "6.2.25",
+      "android": "4.4",
+      "release": "",
+      "recovery": "miui_MIPAD_6.2.25_945a041a86_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "wt93007",
+      "name": {
+        "zh": "红米 1/1W",
+        "en": "Redmi 1/1W"
+      },
+      "version": "6.2.25",
+      "android": "4.4",
+      "release": "",
+      "recovery": "miui_HMTD_6.2.25_aa1faa86f6_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "wt98007",
+      "name": {
+        "zh": "红米1 联通版",
+        "en": "Redmi 1 WCDMA"
+      },
+      "version": "6.2.25",
+      "android": "4.4",
+      "release": "",
+      "recovery": "miui_HMW_6.2.25_33b2cffb74_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "armani",
+      "name": {
+        "zh": "红米 1S",
+        "en": "Redmi 1S"
+      },
+      "version": "6.2.25",
+      "android": "4.4",
+      "release": "",
+      "recovery": "miui_HM1SWC_6.2.25_d468490032_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "wt93807",
+      "name": {
+        "zh": "红米 1S 移动3G版",
+        "en": "Redmi 1S TD"
+      },
+      "version": "6.2.25",
+      "android": "4.4",
+      "release": "",
+      "recovery": "miui_HM1STD_6.2.25_43dd9ebf33_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "wt96007",
+      "name": {
+        "zh": "红米 1S 移动4G版",
+        "en": "Redmi 1S LTE"
+      },
+      "version": "6.2.25",
+      "android": "4.4",
+      "release": "",
+      "recovery": "miui_HM1SLTE_6.2.25_ebfbe8dd74_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "wt86047",
+      "name": {
+        "zh": "红米 2 移动3G版",
+        "en": "Redmi 2 TD"
+      },
+      "version": "6.2.25",
+      "android": "4.4",
+      "release": "",
+      "recovery": "miui_HM2XTD_6.2.25_70da493e87_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "wt88047",
+      "name": {
+        "zh": "红米 2 联通/电信3G版",
+        "en": "Redmi 2 WCDMA"
+      },
+      "version": "6.2.25",
+      "android": "4.4",
+      "release": "",
+      "recovery": "miui_HM2XWC_6.2.25_6dcbc6068f_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "lte26007",
+      "name": {
+        "zh": "红米 2A 标准版",
+        "en": "Redmi 2A"
+      },
+      "version": "6.2.25",
+      "android": "4.4",
+      "release": "",
+      "recovery": "miui_HM2A_6.2.25_e398a6e5ec_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "lcsh92_wet_xm_td",
+      "name": {
+        "zh": "红米 Note 移动3G版",
+        "en": "Redmi Note 1 TD"
+      },
+      "version": "6.2.25",
+      "android": "4.4",
+      "release": "",
+      "recovery": "miui_HMNoteTD_6.2.25_1caab5fb6f_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "lcsh92_wet_jb9",
+      "name": {
+        "zh": "红米 Note 联通3G版",
+        "en": "Redmi Note 3G"
+      },
+      "version": "6.2.25",
+      "android": "4.4",
+      "release": "",
+      "recovery": "miui_HMNoteW_6.2.25_c97053699c_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "dior",
+      "name": {
+        "zh": "红米 Note 4G 单卡版",
+        "en": "Redmi Note 4G"
+      },
+      "version": "6.2.25",
+      "android": "4.4",
+      "release": "",
+      "recovery": "miui_HMNoteLTE_6.2.25_3096506359_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "gucci",
+      "name": {
+        "zh": "红米 Note 4G 双卡版",
+        "en": "Redmi Note 1S 4G"
+      },
+      "version": "6.2.25",
+      "android": "4.4",
+      "release": "",
+      "recovery": "miui_HMNote1S_6.2.25_92b2418dc3_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "hermes",
+      "name": {
+        "zh": "红米 Note 2",
+        "en": "Redmi Note 2"
+      },
+      "version": "6.2.25",
+      "android": "5.0",
+      "release": "",
+      "recovery": "miui_HMNote2_6.2.25_e4691bed0a_5.0.zip",
+      "fastboot": "hermes_images_6.2.25_20160129.0000.14_5.0_cn_a917206907.tgz"
+    },
+    {
+      "device": "hennessy",
+      "name": {
+        "zh": "红米 Note 3 双网通版",
+        "en": "Redmi Note 3 (MTK)"
+      },
+      "version": "6.2.25",
+      "android": "5.0",
+      "release": "",
+      "recovery": "miui_HMNote3_6.2.25_b2f027298e_5.0.zip",
+      "fastboot": ""
+    }
+  ],
   "logs": {
     "logs_zh": {
       "本周推荐": [

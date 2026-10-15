@@ -405,13 +405,47 @@ def export_dev() -> Dict[str, Any]:
 		  v3/dev/index.json            周次索引（按周数降序，含大陆版 / 国际版两条）
 		  v3/dev/<region>/<week>.json  单周详情：公告 + 机型清单 + 多语言更新日志
 
-		日志来自 dev.logs（logs 表 ID 引用结构），由 LogStore.build_localized 还原为
-		{"logs_zh": {...}, "logs_en": {...}, ...}，前端按当前语言取用。
+		机型 / ROM 清单不落在 dev 表里，而是按 `roms.dev_week = week AND zone = 区域`
+		现算（版本号 / Android / 发布日期 / 卡刷线刷包读 roms，机型名读 devices），
+		因此输出结构与历史一致，但库里不再重复存一份 JSON。
 		"""
 		logger = logging.getLogger(__name__)
+
+		# 机型名：每台设备取代表行（优先 tag='CnOO'，否则最小 id）
+		name_map: Dict[str, Dict[str, str]] = {}
+		name_rows = DatabaseManager.query_all(
+				"SELECT d.`device`, d.`full_names`, d.`names` FROM `devices` d "
+				"JOIN (SELECT `device`, COALESCE(MAX(CASE WHEN `tag` = 'CnOO' THEN `id` END), MIN(`id`)) AS ref_id "
+				"      FROM `devices` GROUP BY `device`) ref "
+				"  ON ref.`device` = d.`device` AND ref.ref_id = d.`id`"
+		)
+		for device, full_names, names in name_rows or []:
+				label = {'zh': '', 'en': ''}
+				for raw in (full_names, names):
+						if not raw:
+								continue
+						try:
+								parsed = json.loads(raw)
+						except (json.JSONDecodeError, TypeError):
+								continue
+						if isinstance(parsed, dict):
+								label['zh'] = label['zh'] or str(parsed.get('zh') or '')
+								label['en'] = label['en'] or str(parsed.get('en') or '')
+				name_map[str(device)] = label
+
+		# 已绑定到某一周的开发版 ROM，按 (week, zone) 归组
+		rom_rows = DatabaseManager.query_all(
+				"SELECT `dev_week`, `zone`, `device`, `version`, `android`, `release_date`, "
+				"`recovery`, `fastboot` FROM `roms` WHERE `dev_week` IS NOT NULL "
+				"ORDER BY `release_date` IS NULL, `release_date`, `id`"
+		)
+		by_week: Dict[tuple, List[tuple]] = {}
+		for row in rom_rows or []:
+				by_week.setdefault((int(row[0]), int(row[1] or 1)), []).append(row)
+
 		rows = DatabaseManager.query_all(
 				"SELECT `week`, `region`, `zone`, `bigver`, `versions`, `title_zh`, `title_en`, `post_id`, "
-				"`update_time`, `release_date`, `description`, `attention`, `suspended`, `devices`, `roms`, "
+				"`update_time`, `release_date`, `description`, `attention`, `suspended`, "
 				"`logs`, `source` FROM `dev` WHERE `show` = 1 ORDER BY `week` DESC, `region` ASC"
 		)
 
@@ -435,19 +469,39 @@ def export_dev() -> Dict[str, Any]:
 		saved = 0
 		for row in rows or []:
 				week, region = int(row[0]), (_text(row[1]) or 'cn')
-				logs_value = row[15]
+				zone = int(row[2]) if row[2] is not None else (1 if region == 'cn' else 2)
+
+				logs_value = row[13]
 				localized: Dict[str, Any] = {}
 				if logs_value:
 						try:
 								localized = LogStore.build_localized(json.loads(logs_value))
 						except (json.JSONDecodeError, TypeError):
 								localized = {}
-				devices = _json(row[13], [])
-				rom_list = _json(row[14], [])
+
+				devices: List[Dict[str, Any]] = []
+				rom_list: List[Dict[str, Any]] = []
+				seen_devices = set()
+				for rom in by_week.get((week, zone), []):
+						device = _text(rom[2])
+						name = name_map.get(device) or {'zh': '', 'en': ''}
+						rom_list.append({
+								"device": device,
+								"name": name,
+								"version": _text(rom[3]),
+								"android": _text(rom[4]),
+								"release": _text(rom[5])[:10],
+								"recovery": _text(rom[6]),
+								"fastboot": _text(rom[7]),
+						})
+						if device and device not in seen_devices:
+								seen_devices.add(device)
+								devices.append({"device": device, "name": name})
+
 				detail = {
 						"week": week,
 						"region": region,
-						"zone": int(row[2]) if row[2] is not None else (1 if region == 'cn' else 2),
+						"zone": zone,
 						"bigver": _text(row[3]),
 						"versions": _text(row[4]),
 						"title": {"zh": _text(row[5]), "en": _text(row[6])},
@@ -460,7 +514,7 @@ def export_dev() -> Dict[str, Any]:
 						"devices": devices,
 						"roms": rom_list,
 						"logs": localized,
-						"source": _text(row[16]),
+						"source": _text(row[14]),
 				}
 
 				region_dir = base / region
@@ -480,12 +534,12 @@ def export_dev() -> Dict[str, Any]:
 				weeks.append({
 						"week": week,
 						"region": region,
-						"zone": detail["zone"],
+						"zone": zone,
 						"bigver": detail["bigver"],
 						"versions": detail["versions"],
 						"title": detail["title"],
 						"release": detail["release"],
-						"deviceCount": len(devices) or len(rom_list),
+						"deviceCount": len(devices),
 						"hasLogs": bool(localized),
 						"languages": list(localized.keys()),
 				})

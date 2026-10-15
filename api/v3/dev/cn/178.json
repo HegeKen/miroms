@@ -44,8 +44,67 @@
     }
   ],
   "suspended": [],
-  "devices": [],
-  "roms": [],
+  "devices": [
+    {
+      "device": "mione_plus",
+      "name": {
+        "zh": "小米手机1/1S",
+        "en": "MI 1/1S"
+      }
+    },
+    {
+      "device": "pisces",
+      "name": {
+        "zh": "小米3 移动版",
+        "en": "MI 3 TD"
+      }
+    },
+    {
+      "device": "cancro",
+      "name": {
+        "zh": "小米 3 联通电信版/小米 4",
+        "en": "MI3 WCDMA/Mi 4"
+      }
+    }
+  ],
+  "roms": [
+    {
+      "device": "mione_plus",
+      "name": {
+        "zh": "小米手机1/1S",
+        "en": "MI 1/1S"
+      },
+      "version": "4.2.28",
+      "android": "4.1",
+      "release": "2014-02-28",
+      "recovery": "miui_Mioneplus_4.2.28_633751653d_4.1.zip",
+      "fastboot": "miui_MI1_4.2.28_fastboot_4.1_hxxj2d8j2s.exe"
+    },
+    {
+      "device": "pisces",
+      "name": {
+        "zh": "小米3 移动版",
+        "en": "MI 3 TD"
+      },
+      "version": "4.2.28",
+      "android": "4.2",
+      "release": "2014-02-28",
+      "recovery": "miui_MI3_4.2.28_9322d2aae5_4.2.zip",
+      "fastboot": "miui_MI3-TD_4.2.28_fastboot_4.2_jfi4fkg2qs.exe"
+    },
+    {
+      "device": "cancro",
+      "name": {
+        "zh": "小米 3 联通电信版/小米 4",
+        "en": "MI3 WCDMA/Mi 4"
+      },
+      "version": "4.2.28",
+      "android": "4.3",
+      "release": "2014-02-28",
+      "recovery": "miui_MI3W_4.2.28_44968322d3_4.3.zip",
+      "fastboot": "miui_MI3-WCDMA_4.2.28_fastboot_4.3_afhb70bptu.exe"
+    }
+  ],
   "logs": {
     "logs_zh": {
       "本周推荐": [

@@ -44,8 +44,314 @@
     }
   ],
   "suspended": [],
-  "devices": [],
-  "roms": [],
+  "devices": [
+    {
+      "device": "cancro",
+      "name": {
+        "zh": "小米 3 联通电信版/小米 4",
+        "en": "MI3 WCDMA/Mi 4"
+      }
+    },
+    {
+      "device": "cancro_lte_ct",
+      "name": {
+        "zh": "小米手机4 电信4G",
+        "en": "Mi 4 LTE CT"
+      }
+    },
+    {
+      "device": "gemini",
+      "name": {
+        "zh": "小米 5",
+        "en": "MI 5"
+      }
+    },
+    {
+      "device": "capricorn",
+      "name": {
+        "zh": "小米 5s",
+        "en": "Mi 5s"
+      }
+    },
+    {
+      "device": "virgo",
+      "name": {
+        "zh": "小米 Note 双网通版",
+        "en": "Mi Note"
+      }
+    },
+    {
+      "device": "scorpio",
+      "name": {
+        "zh": "小米 Note 2",
+        "en": "Mi Note 2"
+      }
+    },
+    {
+      "device": "lithium",
+      "name": {
+        "zh": "小米 MIX",
+        "en": "Mi MIX"
+      }
+    },
+    {
+      "device": "wt86047_pro",
+      "name": {
+        "zh": "红米 2 移动增强版",
+        "en": "Redmi 2 LTE"
+      }
+    },
+    {
+      "device": "wt88047_pro",
+      "name": {
+        "zh": "红米 2 联通/电信增强版",
+        "en": "Redmi 2W Pro"
+      }
+    },
+    {
+      "device": "land",
+      "name": {
+        "zh": "红米 3S/X",
+        "en": "Redmi 3S/X"
+      }
+    },
+    {
+      "device": "prada",
+      "name": {
+        "zh": "红米 4 标准版",
+        "en": "Redmi 4"
+      }
+    },
+    {
+      "device": "markw",
+      "name": {
+        "zh": "红米 4 高配版",
+        "en": "Redmi 4 Prime"
+      }
+    },
+    {
+      "device": "rolex",
+      "name": {
+        "zh": "红米 4A",
+        "en": "Redmi 4A"
+      }
+    },
+    {
+      "device": "hennessy",
+      "name": {
+        "zh": "红米 Note 3 双网通版",
+        "en": "Redmi Note 3 (MTK)"
+      }
+    },
+    {
+      "device": "kenzo",
+      "name": {
+        "zh": "红米 Note 3 全网通版",
+        "en": "Redmi Note 3 Pro"
+      }
+    },
+    {
+      "device": "nikel",
+      "name": {
+        "zh": "红米 Note 4",
+        "en": "Redmi Note 4 MTK"
+      }
+    }
+  ],
+  "roms": [
+    {
+      "device": "cancro",
+      "name": {
+        "zh": "小米 3 联通电信版/小米 4",
+        "en": "MI3 WCDMA/Mi 4"
+      },
+      "version": "7.2.24",
+      "android": "6.0",
+      "release": "",
+      "recovery": "miui_MI3WMI4W_7.2.24_05897f7fcc_6.0.zip",
+      "fastboot": "cancro_images_7.2.24_20170224.0000.00_6.0_cn_556fc75aea.tgz"
+    },
+    {
+      "device": "cancro_lte_ct",
+      "name": {
+        "zh": "小米手机4 电信4G",
+        "en": "Mi 4 LTE CT"
+      },
+      "version": "7.2.24",
+      "android": "6.0",
+      "release": "",
+      "recovery": "miui_MI4LTECT_7.2.24_8fb52aa8dd_6.0.zip",
+      "fastboot": "cancro_lte_ct_images_7.2.24_20170224.0000.00_6.0_cn_3f9fb9fd4b.tgz"
+    },
+    {
+      "device": "gemini",
+      "name": {
+        "zh": "小米 5",
+        "en": "MI 5"
+      },
+      "version": "7.2.24",
+      "android": "7.0",
+      "release": "",
+      "recovery": "miui_MI5_7.2.24_b4d88aacfa_7.0.zip",
+      "fastboot": "gemini_images_7.2.24_20170224.0000.00_7.0_cn_7879c5b089.tgz"
+    },
+    {
+      "device": "capricorn",
+      "name": {
+        "zh": "小米 5s",
+        "en": "Mi 5s"
+      },
+      "version": "7.2.24",
+      "android": "6.0",
+      "release": "",
+      "recovery": "miui_MI5S_7.2.24_4566e3de9d_6.0.zip",
+      "fastboot": "capricorn_images_7.2.24_20170224.0000.00_6.0_cn_290ec0fc57.tgz"
+    },
+    {
+      "device": "virgo",
+      "name": {
+        "zh": "小米 Note 双网通版",
+        "en": "Mi Note"
+      },
+      "version": "7.2.24",
+      "android": "6.0",
+      "release": "",
+      "recovery": "miui_MINote_7.2.24_27d3d37057_6.0.zip",
+      "fastboot": "virgo_images_7.2.24_20170224.0000.00_6.0_cn_a565f712fc.tgz"
+    },
+    {
+      "device": "scorpio",
+      "name": {
+        "zh": "小米 Note 2",
+        "en": "Mi Note 2"
+      },
+      "version": "7.2.24",
+      "android": "6.0",
+      "release": "",
+      "recovery": "miui_MINote2_7.2.24_2ce17aeb7c_6.0.zip",
+      "fastboot": "scorpio_images_7.2.24_20170224.0000.00_6.0_cn_9cadd5d1b8.tgz"
+    },
+    {
+      "device": "lithium",
+      "name": {
+        "zh": "小米 MIX",
+        "en": "Mi MIX"
+      },
+      "version": "7.2.24",
+      "android": "6.0",
+      "release": "",
+      "recovery": "miui_MIMIX_7.2.24_973c6ed753_6.0.zip",
+      "fastboot": "lithium_images_7.2.24_20170224.0000.00_6.0_cn_0504f3180e.tgz"
+    },
+    {
+      "device": "wt86047_pro",
+      "name": {
+        "zh": "红米 2 移动增强版",
+        "en": "Redmi 2 LTE"
+      },
+      "version": "7.2.24",
+      "android": "5.1",
+      "release": "",
+      "recovery": "miui_HM2XTDPro_7.2.24_9b29dbc685_5.1.zip",
+      "fastboot": "wt86047_pro_images_7.2.24_20170224.0000.00_5.1_cn_e79cfc66ef.tgz"
+    },
+    {
+      "device": "wt88047_pro",
+      "name": {
+        "zh": "红米 2 联通/电信增强版",
+        "en": "Redmi 2W Pro"
+      },
+      "version": "7.2.24",
+      "android": "5.1",
+      "release": "",
+      "recovery": "miui_HM2XWCPro_7.2.24_06bd75b21b_5.1.zip",
+      "fastboot": "wt88047_pro_images_7.2.24_20170224.0000.00_5.1_cn_22f7021990.tgz"
+    },
+    {
+      "device": "land",
+      "name": {
+        "zh": "红米 3S/X",
+        "en": "Redmi 3S/X"
+      },
+      "version": "7.2.24",
+      "android": "6.0",
+      "release": "",
+      "recovery": "miui_HM3S_7.2.24_95b83f092a_6.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "prada",
+      "name": {
+        "zh": "红米 4 标准版",
+        "en": "Redmi 4"
+      },
+      "version": "7.2.24",
+      "android": "6.0",
+      "release": "",
+      "recovery": "miui_HM4_7.2.24_7ccd35e3fb_6.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "markw",
+      "name": {
+        "zh": "红米 4 高配版",
+        "en": "Redmi 4 Prime"
+      },
+      "version": "7.2.24",
+      "android": "6.0",
+      "release": "",
+      "recovery": "miui_HM4Pro_7.2.24_71260a802d_6.0.zip",
+      "fastboot": "markw_images_7.2.24_20170224.0000.00_6.0_cn_ab64470b65.tgz"
+    },
+    {
+      "device": "rolex",
+      "name": {
+        "zh": "红米 4A",
+        "en": "Redmi 4A"
+      },
+      "version": "7.2.24",
+      "android": "6.0",
+      "release": "",
+      "recovery": "miui_HM4A_7.2.24_7539e6b161_6.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "hennessy",
+      "name": {
+        "zh": "红米 Note 3 双网通版",
+        "en": "Redmi Note 3 (MTK)"
+      },
+      "version": "7.2.24",
+      "android": "5.0",
+      "release": "",
+      "recovery": "miui_HMNote3_7.2.24_2aaa5be613_5.0.zip",
+      "fastboot": "hennessy_images_7.2.24_20170224.0000.00_5.0_cn_362c5cf9ff.tgz"
+    },
+    {
+      "device": "kenzo",
+      "name": {
+        "zh": "红米 Note 3 全网通版",
+        "en": "Redmi Note 3 Pro"
+      },
+      "version": "7.2.24",
+      "android": "6.0",
+      "release": "",
+      "recovery": "miui_HMNote3Pro_7.2.24_0d1ebba056_6.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "nikel",
+      "name": {
+        "zh": "红米 Note 4",
+        "en": "Redmi Note 4 MTK"
+      },
+      "version": "7.2.24",
+      "android": "6.0",
+      "release": "",
+      "recovery": "miui_HMNote4_7.2.24_81cf9ff165_6.0.zip",
+      "fastboot": ""
+    }
+  ],
   "logs": {
     "logs_zh": {
       "本周推荐": [

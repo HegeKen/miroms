@@ -46,6 +46,13 @@
   "suspended": [],
   "devices": [
     {
+      "device": "fuxi",
+      "name": {
+        "zh": "小米 13",
+        "en": "Xiaomi 13"
+      }
+    },
+    {
       "device": "venus",
       "name": {
         "zh": "小米 11",
@@ -102,38 +109,10 @@
       }
     },
     {
-      "device": "fuxi",
+      "device": "diting",
       "name": {
-        "zh": "小米 13",
-        "en": "Xiaomi 13"
-      }
-    },
-    {
-      "device": "fuxi",
-      "name": {
-        "zh": "小米 13",
-        "en": "Xiaomi 13"
-      }
-    },
-    {
-      "device": "fuxi",
-      "name": {
-        "zh": "小米 13",
-        "en": "Xiaomi 13"
-      }
-    },
-    {
-      "device": "nuwa",
-      "name": {
-        "zh": "小米 13 Pro",
-        "en": "Xiaomi 13 Pro"
-      }
-    },
-    {
-      "device": "nuwa",
-      "name": {
-        "zh": "小米 13 Pro",
-        "en": "Xiaomi 13 Pro"
+        "zh": "小米 12T Pro / Redmi K50 至尊版",
+        "en": "Xiaomi 12T Pro / Redmi K50 Ultra"
       }
     },
     {
@@ -167,15 +146,22 @@
     {
       "device": "xaga",
       "name": {
-        "zh": "Redmi Note 11T Pro/Pro+",
-        "en": "Redmi Note 11T Pro/Pro+"
+        "zh": "Redmi Note 11T Pro / Redmi K50i / POCO X4 GT / Pro",
+        "en": "Redmi Note 11T Pro / Redmi K50i / POCO X4 GT / Pro"
       }
     },
     {
       "device": "munch",
       "name": {
-        "zh": "Redmi K40S",
-        "en": "Redmi K40S"
+        "zh": "Redmi K40S / POCO F4",
+        "en": "Redmi K40S / POCO F4"
+      }
+    },
+    {
+      "device": "ingres",
+      "name": {
+        "zh": "Redmi K50 电竞版 / POCO F4 GT",
+        "en": "Redmi K50G / POCO F4 GT"
       }
     },
     {
@@ -193,24 +179,10 @@
       }
     },
     {
-      "device": "ingres",
-      "name": {
-        "zh": "Redmi K50 电竞版",
-        "en": "Redmi K50G"
-      }
-    },
-    {
-      "device": "diting",
-      "name": {
-        "zh": "Redmi K50 至尊版",
-        "en": "Redmi K50 Ultra"
-      }
-    },
-    {
       "device": "mondrian",
       "name": {
-        "zh": "Redmi K60",
-        "en": "Redmi K60"
+        "zh": "Redmi K60 / POCO F5 Pro",
+        "en": "Redmi K60 / POCO F5 Pro"
       }
     },
     {
@@ -222,6 +194,18 @@
     }
   ],
   "roms": [
+    {
+      "device": "fuxi",
+      "name": {
+        "zh": "小米 13",
+        "en": "Xiaomi 13"
+      },
+      "version": "V14.0.23.8.14.DEV",
+      "android": "13.0",
+      "release": "2023-08-23",
+      "recovery": "",
+      "fastboot": "fuxi_images_V14.0.23.8.14.DEV_20230814.0000.00_13.0_cn_1f99eb1773.tgz"
+    },
     {
       "device": "venus",
       "name": {
@@ -319,28 +303,16 @@
       "fastboot": ""
     },
     {
-      "device": "fuxi",
+      "device": "diting",
       "name": {
-        "zh": "小米 13",
-        "en": "Xiaomi 13"
-      },
-      "version": "V14.0.23.8.15.DEV",
-      "android": "14.0",
-      "release": "",
-      "recovery": "miui_FUXI_V14.0.23.8.15.DEV_285e461a99_14.0.zip",
-      "fastboot": ""
-    },
-    {
-      "device": "fuxi",
-      "name": {
-        "zh": "小米 13",
-        "en": "Xiaomi 13"
+        "zh": "小米 12T Pro / Redmi K50 至尊版",
+        "en": "Xiaomi 12T Pro / Redmi K50 Ultra"
       },
       "version": "V14.0.23.8.14.DEV",
       "android": "13.0",
       "release": "",
-      "recovery": "",
-      "fastboot": "fuxi_images_V14.0.23.8.14.DEV_20230814.0000.00_13.0_cn_1f99eb1773.tgz"
+      "recovery": "miui_DITING_V14.0.23.8.14.DEV_8a4e7b55f2_13.0.zip",
+      "fastboot": ""
     },
     {
       "device": "fuxi",
@@ -355,15 +327,27 @@
       "fastboot": ""
     },
     {
+      "device": "fuxi",
+      "name": {
+        "zh": "小米 13",
+        "en": "Xiaomi 13"
+      },
+      "version": "V14.0.23.8.15.DEV",
+      "android": "14.0",
+      "release": "",
+      "recovery": "miui_FUXI_V14.0.23.8.15.DEV_285e461a99_14.0.zip",
+      "fastboot": ""
+    },
+    {
       "device": "nuwa",
       "name": {
         "zh": "小米 13 Pro",
         "en": "Xiaomi 13 Pro"
       },
-      "version": "V14.0.23.8.15.DEV",
-      "android": "14.0",
+      "version": "V14.0.23.8.13.DEV",
+      "android": "13.0",
       "release": "",
-      "recovery": "miui_NUWA_V14.0.23.8.15.DEV_4bcc683022_14.0.zip",
+      "recovery": "miui_NUWA_V14.0.23.8.13.DEV_e304759db0_13.0.zip",
       "fastboot": ""
     },
     {
@@ -384,10 +368,10 @@
         "zh": "小米 13 Pro",
         "en": "Xiaomi 13 Pro"
       },
-      "version": "V14.0.23.8.13.DEV",
-      "android": "13.0",
+      "version": "V14.0.23.8.15.DEV",
+      "android": "14.0",
       "release": "",
-      "recovery": "miui_NUWA_V14.0.23.8.13.DEV_e304759db0_13.0.zip",
+      "recovery": "miui_NUWA_V14.0.23.8.15.DEV_4bcc683022_14.0.zip",
       "fastboot": ""
     },
     {
@@ -429,8 +413,8 @@
     {
       "device": "xaga",
       "name": {
-        "zh": "Redmi Note 11T Pro/Pro+",
-        "en": "Redmi Note 11T Pro/Pro+"
+        "zh": "Redmi Note 11T Pro / Redmi K50i / POCO X4 GT / Pro",
+        "en": "Redmi Note 11T Pro / Redmi K50i / POCO X4 GT / Pro"
       },
       "version": "V14.0.23.8.14.DEV",
       "android": "13.0",
@@ -441,13 +425,25 @@
     {
       "device": "munch",
       "name": {
-        "zh": "Redmi K40S",
-        "en": "Redmi K40S"
+        "zh": "Redmi K40S / POCO F4",
+        "en": "Redmi K40S / POCO F4"
       },
       "version": "V14.0.23.8.14.DEV",
       "android": "13.0",
       "release": "",
       "recovery": "miui_MUNCH_V14.0.23.8.14.DEV_524d7ccf52_13.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "ingres",
+      "name": {
+        "zh": "Redmi K50 电竞版 / POCO F4 GT",
+        "en": "Redmi K50G / POCO F4 GT"
+      },
+      "version": "V14.0.23.8.14.DEV",
+      "android": "13.0",
+      "release": "",
+      "recovery": "miui_INGRES_V14.0.23.8.14.DEV_25fcdd8593_13.0.zip",
       "fastboot": ""
     },
     {
@@ -475,34 +471,10 @@
       "fastboot": ""
     },
     {
-      "device": "ingres",
-      "name": {
-        "zh": "Redmi K50 电竞版",
-        "en": "Redmi K50G"
-      },
-      "version": "V14.0.23.8.14.DEV",
-      "android": "13.0",
-      "release": "",
-      "recovery": "miui_INGRES_V14.0.23.8.14.DEV_25fcdd8593_13.0.zip",
-      "fastboot": ""
-    },
-    {
-      "device": "diting",
-      "name": {
-        "zh": "Redmi K50 至尊版",
-        "en": "Redmi K50 Ultra"
-      },
-      "version": "V14.0.23.8.14.DEV",
-      "android": "13.0",
-      "release": "",
-      "recovery": "miui_DITING_V14.0.23.8.14.DEV_8a4e7b55f2_13.0.zip",
-      "fastboot": ""
-    },
-    {
       "device": "mondrian",
       "name": {
-        "zh": "Redmi K60",
-        "en": "Redmi K60"
+        "zh": "Redmi K60 / POCO F5 Pro",
+        "en": "Redmi K60 / POCO F5 Pro"
       },
       "version": "V14.0.23.8.14.DEV",
       "android": "13.0",

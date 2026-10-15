@@ -63,20 +63,6 @@
   ],
   "devices": [
     {
-      "device": "cupid",
-      "name": {
-        "zh": "小米 12",
-        "en": "Xiaomi 12"
-      }
-    },
-    {
-      "device": "zeus",
-      "name": {
-        "zh": "小米 12 Pro",
-        "en": "Xiaomi 12 Pro"
-      }
-    },
-    {
       "device": "daumier",
       "name": {
         "zh": "小米 12 Pro 天玑版",
@@ -135,14 +121,21 @@
     {
       "device": "shennong",
       "name": {
-        "zh": "小米 14 Pro / Ti",
-        "en": "Xiaomi 14 Pro / Ti"
+        "zh": "",
+        "en": ""
+      }
+    },
+    {
+      "device": "dagu",
+      "name": {
+        "zh": "小米平板 5 Pro 12.4",
+        "en": "Xiaomi Pad 5 Pro 12.4"
       }
     },
     {
       "device": "zizhan",
       "name": {
-        "zh": "小米 MIX Fold 2",
+        "zh": "小米 MIX FOLD 2",
         "en": "Xiaomi MIX Fold 2"
       }
     },
@@ -151,13 +144,6 @@
       "name": {
         "zh": "小米 MIX Fold 3",
         "en": "Xiaomi MIX Fold 3"
-      }
-    },
-    {
-      "device": "dagu",
-      "name": {
-        "zh": "小米平板 5 Pro 12.4",
-        "en": "Xiaomi Pad 5 Pro 12.4"
       }
     },
     {
@@ -177,22 +163,22 @@
     {
       "device": "ingres",
       "name": {
-        "zh": "Redmi K50 电竞版",
-        "en": "Redmi K50G"
+        "zh": "Redmi K50 电竞版 / POCO F4 GT",
+        "en": "Redmi K50G / POCO F4 GT"
       }
     },
     {
       "device": "diting",
       "name": {
-        "zh": "Redmi K50 至尊版",
-        "en": "Redmi K50 Ultra"
+        "zh": "小米 12T Pro / Redmi K50 至尊版",
+        "en": "Xiaomi 12T Pro / Redmi K50 Ultra"
       }
     },
     {
       "device": "mondrian",
       "name": {
-        "zh": "Redmi K60",
-        "en": "Redmi K60"
+        "zh": "Redmi K60 / POCO F5 Pro",
+        "en": "Redmi K60 / POCO F5 Pro"
       }
     },
     {
@@ -201,33 +187,23 @@
         "zh": "Redmi K60 Pro",
         "en": "Redmi K60 Pro"
       }
-    }
-  ],
-  "roms": [
+    },
     {
       "device": "cupid",
       "name": {
         "zh": "小米 12",
         "en": "Xiaomi 12"
-      },
-      "version": "OS1.0.24.2.25.DEV",
-      "android": "14.0",
-      "release": "2024-02-26",
-      "recovery": "miui_CUPID_OS1.0.24.2.25.DEV_89bcd22b99_14.0.zip",
-      "fastboot": ""
+      }
     },
     {
       "device": "zeus",
       "name": {
         "zh": "小米 12 Pro",
         "en": "Xiaomi 12 Pro"
-      },
-      "version": "OS1.0.24.2.25.DEV",
-      "android": "14.0",
-      "release": "2024-02-26",
-      "recovery": "miui_ZEUS_OS1.0.24.2.25.DEV_1fed051613_14.0.zip",
-      "fastboot": ""
-    },
+      }
+    }
+  ],
+  "roms": [
     {
       "device": "daumier",
       "name": {
@@ -327,8 +303,8 @@
     {
       "device": "shennong",
       "name": {
-        "zh": "小米 14 Pro / Ti",
-        "en": "Xiaomi 14 Pro / Ti"
+        "zh": "",
+        "en": ""
       },
       "version": "OS1.0.24.2.19.DEV",
       "android": "14.0",
@@ -337,9 +313,21 @@
       "fastboot": ""
     },
     {
+      "device": "dagu",
+      "name": {
+        "zh": "小米平板 5 Pro 12.4",
+        "en": "Xiaomi Pad 5 Pro 12.4"
+      },
+      "version": "OS1.0.24.2.19.DEV",
+      "android": "14.0",
+      "release": "2024-02-23",
+      "recovery": "miui_DAGU_OS1.0.24.2.19.DEV_fe8adbf68d_14.0.zip",
+      "fastboot": ""
+    },
+    {
       "device": "zizhan",
       "name": {
-        "zh": "小米 MIX Fold 2",
+        "zh": "小米 MIX FOLD 2",
         "en": "Xiaomi MIX Fold 2"
       },
       "version": "OS1.0.24.2.20.DEV",
@@ -358,18 +346,6 @@
       "android": "14.0",
       "release": "2024-02-23",
       "recovery": "miui_BABYLON_OS1.0.24.2.20.DEV_0f4f36a5d8_14.0.zip",
-      "fastboot": ""
-    },
-    {
-      "device": "dagu",
-      "name": {
-        "zh": "小米平板 5 Pro 12.4",
-        "en": "Xiaomi Pad 5 Pro 12.4"
-      },
-      "version": "OS1.0.24.2.19.DEV",
-      "android": "14.0",
-      "release": "2024-02-23",
-      "recovery": "miui_DAGU_OS1.0.24.2.19.DEV_fe8adbf68d_14.0.zip",
       "fastboot": ""
     },
     {
@@ -399,8 +375,8 @@
     {
       "device": "ingres",
       "name": {
-        "zh": "Redmi K50 电竞版",
-        "en": "Redmi K50G"
+        "zh": "Redmi K50 电竞版 / POCO F4 GT",
+        "en": "Redmi K50G / POCO F4 GT"
       },
       "version": "OS1.0.24.2.20.DEV",
       "android": "14.0",
@@ -411,8 +387,8 @@
     {
       "device": "diting",
       "name": {
-        "zh": "Redmi K50 至尊版",
-        "en": "Redmi K50 Ultra"
+        "zh": "小米 12T Pro / Redmi K50 至尊版",
+        "en": "Xiaomi 12T Pro / Redmi K50 Ultra"
       },
       "version": "OS1.0.24.2.20.DEV",
       "android": "14.0",
@@ -423,8 +399,8 @@
     {
       "device": "mondrian",
       "name": {
-        "zh": "Redmi K60",
-        "en": "Redmi K60"
+        "zh": "Redmi K60 / POCO F5 Pro",
+        "en": "Redmi K60 / POCO F5 Pro"
       },
       "version": "OS1.0.24.2.20.DEV",
       "android": "14.0",
@@ -442,6 +418,30 @@
       "android": "14.0",
       "release": "2024-02-23",
       "recovery": "miui_SOCRATES_OS1.0.24.2.20.DEV_dd70c1ec04_14.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "cupid",
+      "name": {
+        "zh": "小米 12",
+        "en": "Xiaomi 12"
+      },
+      "version": "OS1.0.24.2.25.DEV",
+      "android": "14.0",
+      "release": "2024-02-26",
+      "recovery": "miui_CUPID_OS1.0.24.2.25.DEV_89bcd22b99_14.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "zeus",
+      "name": {
+        "zh": "小米 12 Pro",
+        "en": "Xiaomi 12 Pro"
+      },
+      "version": "OS1.0.24.2.25.DEV",
+      "android": "14.0",
+      "release": "2024-02-26",
+      "recovery": "miui_ZEUS_OS1.0.24.2.25.DEV_1fed051613_14.0.zip",
       "fastboot": ""
     }
   ],

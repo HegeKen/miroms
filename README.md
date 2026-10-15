@@ -249,7 +249,19 @@
 
 #### 开发版（周更）数据
 
-`dev` 表按「周数 + 区域」存放开发版公告：同一周数会有两条记录——大陆版 `region=cn`（zone 1）与国际版 `region=global`（zone 2），各自有独立的公告、日志和机型列表。字段见 `db_structure/dev.sql`（标题、版本号、公告正文、升级说明、机型清单、ROM 清单、停版机型、日志 ID 结构等）。
+`dev` 表按「周数 + 区域」存放开发版公告：同一周数会有两条记录——大陆版 `region=cn`（zone 1）与国际版 `region=global`（zone 2），各自有独立的公告、日志和机型列表。字段见 `db_structure/dev.sql`。
+
+**机型 / ROM 清单不单独存 JSON**（早期版本存过 `devices` / `roms` 两列，约 1.2 MB 重复数据，已删除，见 `db_structure/migrations/20261016_dev_drop_json.sql`）：
+
+```sql
+-- 第 N 周（某区域）有哪些机型与 ROM
+SELECT r.device, r.version, r.android, r.release_date, r.recovery, r.fastboot
+  FROM roms r
+  JOIN dev d ON d.week = r.dev_week AND d.zone = r.zone
+ WHERE d.week = 500 AND d.region = 'cn';
+```
+
+机型名走 `devices` 表，版本号 / Android / 发布日期 / 卡刷线刷包全部读 `roms` 本身，导出（`export_dev`）与后台绑定页都按上面的关系现算，因此 `dev` 表只保留公告与日志这类真正独有的数据（387 行约 64 KB）。
 
 导入参考仓库的数据：
 
@@ -264,10 +276,17 @@ python3 scripts/import_dev_week.py --backfill-roms     # 仅按发布日期回�
 * 日志按上面的方法存档：以中文结构为依据重新分组写入 `logs` 表，`dev.logs` 只存语言中性的 ID 引用结构。
 * **以中文为依据修正英文**：元数据里的英文是人工翻译、与官方有出入，导入时会先在 `logs` 表里按中文反查官方英文，命中就用官方译文，未命中才保留元数据里的翻译。
 * `expand_mask=True` 会把语言掩码扩展到「模块与全部条目的公共语言」，因此复用到库里已有多语言分组时，能顺带带出中英文之外的其他译文。
-* 机型匹配：优先按元数据的 `device + version` 精确回填 `roms.dev_week`；没有机型清单的来源（HTML）则按 `branch='X'` + 区域 + 发布日期回填。
+* **机型绑定（写 `roms.dev_week`）**分三级：
+  1. 主规则——按**该周版本号**绑定：`roms.version = 该周 versions AND zone = 该周 zone AND branch = 'X'`
+     （版本号唯一标识这一周的开发版，任何带该版本的机型都属于本周）；
+  2. 补充规则——公告机型表里逐机型带版本号的行（部分周次各机型版本号并不相同，如 NuxtMR）；
+  3. 退化规则——既没有版本号也没有机型表时，按 `branch='X'` + 区域 + 发布日期匹配。
+  仍绑不上的周次（老周报只有机型列表没有版本号、延期公告把日期写进正文）留空，
+  在管理后台「开发版绑定」页手动关联，绑定关系本身就是 `roms.dev_week`，不额外建表。
+* 版本号识别会排除日期：「全机型预计11.2日24点前发布」这类延期公告不再把 `11.2` 当成版本号。
 * MIUIROMS 的 HTML 页面里「支持机型」是独立的 `<table>`：解析时会先把表格摘掉再提取日志正文
   （否则表格行会被当成日志条目，历史上确实混入过「机型 / 卡刷包 / miui_XXX.zip」这类脏数据），
-  表格本身会解析成 `devices` / `roms`（机型号里的 `(cepheus)` 直接取代号，否则按 `devices` 表的中英文名反查）。
+  表格本身用于机型绑定与发布日期兜底（机型号里的 `(cepheus)` 直接取代号，否则按 `devices` 表的中英文名反查）。
   `▍发布时间` 一节会按内容拆分：日期进 `release_date`、版本号进 `versions`、`MIUI V5` / `MIUI 12.5` 进 `bigver`，
   原文一并存进 `description`；解析器还会统计「疑似表格内容」并在发现时打印告警。
 
@@ -280,7 +299,7 @@ python3 scripts/import_dev_week.py --backfill-roms     # 仅按发布日期回�
 - **`devices.sql`** — 设备表：设备代号（`device`）、内部标识（`devtag`）、设备代码（`code`）、ROM 标签（`tag`）、区域（`region`）、运营商（`carrier`）、品牌（`brands` / `full_brands`）、中英文名（`full_names` / `names` / `xiaomi` / `redmi` / `poco`）、图片（`image`）、发布日期（`launch_date`）
 - **`roms.sql`** — ROM 表：系统类型（`type`：MIUI / HyperOS）、大版本（`bigver`）、区域、标签、分支（`branch`：F=正式版 / X=开发版）、完整版本号（`version`）、Android 版本、发布日期（`beta_date` / `release_date` / `public_date`）、Recovery / Fastboot / 运营商定制包文件名（`recovery` / `fastboot` / `ctelecom` / `cmobile` / `cunicom` / `others`）、更新日志（`logs`，语言中性的 ID 引用结构 `[[模块ID,[条目ID,...],语言掩码],...]`）、开发版周数（`dev_week`，反查 `dev` 表）、安全补丁日期（`aspatch`）
 - **`logs.sql`** — 更新日志表：`type`（`module` 模块名 / `log` 条目）、`content`（主内容，中文优先）、`content_hash`（`md5(content)`）、以及 21 个语言列（`logs_zh` / `logs_zh_tw` / `logs_en` / `logs_ja` / `logs_ko` / `logs_ru` / `logs_uk` / `logs_pl` / `logs_de` / `logs_fr` / `logs_it` / `logs_es` / `logs_pt` / `logs_tr` / `logs_id` / `logs_vi` / `logs_th` / `logs_ar` / `logs_in` / `logs_ug` / `logs_bo`）——同一日志的各语言版本共用一行
-- **`dev.sql`** — 开发版（周更）表：`week` + `region`（cn / global）唯一，含大版本、版本号、中英标题、公告正文（`description`）、升级说明（`attention`）、停版机型（`suspended`）、机型清单（`devices`）、ROM 清单（`roms`）、日志 ID 结构（`logs`）与数据来源（`source`）
+- **`dev.sql`** — 开发版（周更）表：`week` + `region`（cn / global）唯一，含大版本、版本号、中英标题、公告正文（`description`）、升级说明（`attention`）、停版机型（`suspended`）、日志 ID 结构（`logs`）与数据来源（`source`）；机型 / ROM 清单由 `roms.dev_week` + `zone` 现算，不另存 JSON
 - **`branches.sql`** — 分支表：分支类型、中英文名称、标签（`tag`）、代码后缀（`code`）、版本代码（`vercode`）、运营商、区域、分区（`zone`）、可见性（`visibility`）、是否政企版（`ep`）
 - **`series.sql`** — 机型系列表：品牌（`brand`：xiaomi / redmi / poco）、中英文名称（`name_zh` / `name_en`）、设备归属（`device_ids`，JSON 数组）、排序（`sort_order`）
 

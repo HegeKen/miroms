@@ -69,8 +69,6 @@ CREATE TABLE IF NOT EXISTS `dev` (
   `description` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin,
   `attention` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin,
   `suspended` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin,
-  `devices` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin,
-  `roms` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin,
   `logs` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin,
   `source` varchar(32) COLLATE utf8mb4_bin DEFAULT NULL,
   `show` tinyint NOT NULL DEFAULT '1',
@@ -79,7 +77,8 @@ CREATE TABLE IF NOT EXISTS `dev` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `uq_dev_week_region` (`week`,`region`),
   KEY `idx_dev_week` (`week`),
-  KEY `idx_dev_region` (`region`)
+  KEY `idx_dev_region` (`region`),
+  KEY `idx_dev_versions` (`versions`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin
 """
 
@@ -343,7 +342,20 @@ SECTION_RE = re.compile(r'^▍\s*(.+)$')
 MODULE_RE = re.compile(r'^【(.+)】$')
 DATE_RE = re.compile(r'(\d{4})\s*[年.\-/]\s*(\d{1,2})\s*[月.\-/]\s*(\d{1,2})\s*日?')
 # 版本号：V5 3.3.15 / 开发版21.6.16 / 14.0.23.10.15.DEV 等
-VERSION_RE = re.compile(r'(\d{1,3}(?:\.\d{1,3}){1,4}(?:\.[A-Za-z]+)?)')
+# 版本号候选：至少含一个点的数字串；后面紧跟「日 / 号」的是日期（延期公告里的
+#「全机型预计11.2日18点前发布」），必须排除
+VERSION_TOKEN_RE = re.compile(r'(?<![\d.])(\d+(?:\.\d+)+)(?![\d日号])')
+
+
+def extract_version(text: str) -> str:
+	"""从一行文本里取版本号：优先含两段以上数字的（2.12.17 / 21.6.16），否则取首个候选"""
+	tokens = VERSION_TOKEN_RE.findall(text or '')
+	if not tokens:
+		return ''
+	for token in tokens:
+		if token.count('.') >= 2:
+			return token
+	return tokens[0]
 BIGVER_RE = re.compile(r'(MIUI\s*V?\s*\d+(?:\.\d+)?|HyperOS\s*\d+(?:\.\d+)?)', re.I)
 # 支持机型表格的表头关键字
 TABLE_HEADER_HINT = ('机型', '型号', '卡刷', '线刷', '安卓版本', 'MIUI')
@@ -531,9 +543,8 @@ def load_miuiroms(path: Path) -> Dict[str, Any]:
 			if bigver_match and not bigver:
 				bigver = re.sub(r'\s+', ' ', bigver_match.group(1).strip())
 				rest = rest[:bigver_match.start()] + ' ' + rest[bigver_match.end():]
-			version_match = VERSION_RE.search(rest)
-			if version_match and not versions:
-				versions = version_match.group(1)
+			if not versions:
+				versions = extract_version(rest)
 			description.append(line)
 			continue
 
@@ -643,8 +654,6 @@ def upsert_dev(meta: Dict[str, Any], logs_value: str, dry_run: bool = False) -> 
 		'description': json.dumps(meta.get('description') or [], ensure_ascii=False),
 		'attention': json.dumps(meta.get('attention') or [], ensure_ascii=False),
 		'suspended': json.dumps(meta.get('suspended') or [], ensure_ascii=False),
-		'devices': json.dumps(meta.get('devices') or [], ensure_ascii=False),
-		'roms': json.dumps(meta.get('roms') or [], ensure_ascii=False),
 		'logs': logs_value,
 		'source': meta.get('source') or '',
 		'show': 1 if meta.get('show', 'yes') not in (0, '0', 'no', False) else 0,
@@ -670,36 +679,62 @@ def upsert_dev(meta: Dict[str, Any], logs_value: str, dry_run: bool = False) -> 
 	return int(found[0]) if found else None
 
 
+def version_owner(versions: str) -> Optional[int]:
+	"""版本号唯一对应的周数；被多个周次共用时返回 None（交由后台手动绑定）"""
+	text = clean(versions)
+	if not text:
+		return None
+	rows = DatabaseManager.query_all(
+		"SELECT `week` FROM `dev` WHERE `versions` = %s GROUP BY `week`", params=(text,))
+	weeks = [int(row[0]) for row in rows or []]
+	return weeks[0] if len(weeks) == 1 else None
+
+
 def backfill_roms(meta: Dict[str, Any], dev_id: Optional[int], dry_run: bool = False) -> int:
 	"""把 roms.dev_week 标到本周的开发版记录上
 
-	优先按元数据里的 device + version 精确匹配；没有机型清单时（如 HTML 来源）
-	按 branch='X' + 区域 + 发布日期 匹配。
+	主规则：**按周版本号**绑定——`roms.version = 该周 versions AND zone = 该周 zone AND branch='X'`
+	（版本号唯一标识这一周的开发版，任何带该版本的机型都属于本周，比逐机型匹配更完整）。
+	兜底：没有版本号或版本号被多周共用时，退化为元数据里的 device+version 精确匹配，
+	再退化为 branch='X' + 区域 + 发布日期匹配；剩下的缺口由后台 /dev-bind 手动绑定。
 	"""
 	zone = REGION_INFO.get(meta['region'], {}).get('zone', 1)
-	updated = 0
-	pairs = [(r['device'], r['version']) for r in (meta.get('roms') or []) if r.get('device') and r.get('version')]
-	if pairs and not dry_run:
-		for device, version in pairs:
-			result = DatabaseManager.execute(
-				"UPDATE `roms` SET `dev_week` = %s WHERE `device` = %s AND `version` = %s AND `zone` = %s",
-				params=(meta['week'], device, version, zone), raise_on_error=True,
-			)
-			updated += 1
-		return updated
-	if pairs:
-		return len(pairs)
-
-	if not meta.get('release_date'):
-		return 0
+	week = int(meta['week'])
 	if dry_run:
 		return 0
-	DatabaseManager.execute(
-		"UPDATE `roms` SET `dev_week` = %s WHERE `branch` = 'X' AND `zone` = %s AND `release_date` = %s "
-		"AND `dev_week` IS NULL",
-		params=(meta['week'], zone, meta['release_date']), raise_on_error=True,
-	)
-	return 0
+
+	versions = clean(meta.get('versions'))
+	owner = version_owner(versions) if versions else None
+	if versions and owner in (None, week):
+		# 主规则：该周版本号对应的全部开发版 ROM（公告机型表里逐机型的版本号只要等于周版本号，也在这里覆盖）
+		DatabaseManager.execute(
+			"UPDATE `roms` SET `dev_week` = %s "
+			"WHERE `branch` = 'X' AND `version` = %s AND `zone` = %s "
+			"AND (`dev_week` IS NULL OR `dev_week` = %s)",
+			params=(week, versions, zone, week), raise_on_error=True)
+
+	# 补充规则：公告机型表里带独立版本号的行（部分周次各机型版本号并不相同）
+	pairs = [(r['device'], r['version']) for r in (meta.get('roms') or [])
+			 if r.get('device') and r.get('version')]
+	for device, device_version in pairs:
+		if device_version == versions:
+			continue
+		DatabaseManager.execute(
+			"UPDATE `roms` SET `dev_week` = %s WHERE `device` = %s AND `version` = %s AND `zone` = %s "
+			"AND (`dev_week` IS NULL OR `dev_week` = %s)",
+			params=(week, device, device_version, zone, week), raise_on_error=True)
+
+	# 退化规则：既没有版本号也没有机型表时，按发布日期匹配
+	if not versions and not pairs and meta.get('release_date'):
+		DatabaseManager.execute(
+			"UPDATE `roms` SET `dev_week` = %s WHERE `branch` = 'X' AND `zone` = %s "
+			"AND `release_date` = %s AND `dev_week` IS NULL",
+			params=(week, zone, meta['release_date']), raise_on_error=True)
+
+	row = DatabaseManager.query_one(
+		"SELECT COUNT(*) FROM `roms` WHERE `dev_week` = %s AND `zone` = %s",
+		params=(week, zone))
+	return int(row[0]) if row else 0
 
 
 # 页脚 / 侧栏的固定文案：出现即认为正文结束

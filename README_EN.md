@@ -274,6 +274,25 @@ python3 scripts/import_dev_week.py --all --dry-run     # every source, no writes
 python3 scripts/import_dev_week.py --backfill-roms     # only backfill roms.dev_week by release date
 ```
 
+`dev` stores **no device/ROM JSON** (the old `devices` / `roms` columns held ~1.2 MB of duplicated data and were
+dropped — see `db_structure/migrations/20261016_dev_drop_json.sql`). A week's device list *is* the `roms` relation:
+
+```sql
+SELECT r.device, r.version, r.android, r.release_date, r.recovery, r.fastboot
+  FROM roms r
+  JOIN dev d ON d.week = r.dev_week AND d.zone = r.zone
+ WHERE d.week = 500 AND d.region = 'cn';
+```
+
+Device names come from `devices`, while version / Android / release date / package filenames come from `roms`, so the
+exporter and the admin binding page both derive the lists on the fly. Binding (`roms.dev_week`) uses three rules: the
+week's version number (primary), per-device versions from the announcement table (secondary), then branch + zone +
+release date (fallback); weeks that still cannot be matched are bound by hand in the admin "dev binding" page.
+
+```bash
+# (commands above)
+```
+
 Logs go through the same pipeline (Chinese structure first, `dev.logs` stores the language-neutral ID structure).
 The English text in the metadata is a hand translation that differs from the official one, so the importer first
 looks the Chinese text up in `logs` and prefers the official English; only when nothing is found does it keep the

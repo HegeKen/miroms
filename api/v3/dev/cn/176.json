@@ -48,8 +48,105 @@
     }
   ],
   "suspended": [],
-  "devices": [],
-  "roms": [],
+  "devices": [
+    {
+      "device": "mione_plus",
+      "name": {
+        "zh": "小米手机1/1S",
+        "en": "MI 1/1S"
+      }
+    },
+    {
+      "device": "aries",
+      "name": {
+        "zh": "小米 2/2S",
+        "en": "MI 2/2S"
+      }
+    },
+    {
+      "device": "taurus",
+      "name": {
+        "zh": "小米 2A",
+        "en": "Mi 2A"
+      }
+    },
+    {
+      "device": "pisces",
+      "name": {
+        "zh": "小米3 移动版",
+        "en": "MI 3 TD"
+      }
+    },
+    {
+      "device": "cancro",
+      "name": {
+        "zh": "小米 3 联通电信版/小米 4",
+        "en": "MI3 WCDMA/Mi 4"
+      }
+    }
+  ],
+  "roms": [
+    {
+      "device": "mione_plus",
+      "name": {
+        "zh": "小米手机1/1S",
+        "en": "MI 1/1S"
+      },
+      "version": "4.2.14",
+      "android": "4.1",
+      "release": "2014-02-14",
+      "recovery": "miui_Mioneplus_4.2.14_000eabd695_4.1.zip",
+      "fastboot": "miui_MI1_4.2.14_fastboot_4.1_w07unknruo.exe"
+    },
+    {
+      "device": "aries",
+      "name": {
+        "zh": "小米 2/2S",
+        "en": "MI 2/2S"
+      },
+      "version": "4.2.14",
+      "android": "4.1",
+      "release": "2014-02-14",
+      "recovery": "miui_MI2_4.2.14_0e03e75837_4.1.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "taurus",
+      "name": {
+        "zh": "小米 2A",
+        "en": "Mi 2A"
+      },
+      "version": "4.2.14",
+      "android": "4.1",
+      "release": "2014-02-14",
+      "recovery": "miui_MI2A_4.2.14_a36f962c7c_4.1.zip",
+      "fastboot": "miui_MI2A_4.2.14_fastboot_4.1_dg7jlv8xsc.exe"
+    },
+    {
+      "device": "pisces",
+      "name": {
+        "zh": "小米3 移动版",
+        "en": "MI 3 TD"
+      },
+      "version": "4.2.14",
+      "android": "4.2",
+      "release": "2014-02-14",
+      "recovery": "miui_MI3_4.2.14_d4341a16f4_4.2.zip",
+      "fastboot": "miui_MI3-TD_4.2.14_fastboot_4.2_b6nof3uxs0.exe"
+    },
+    {
+      "device": "cancro",
+      "name": {
+        "zh": "小米 3 联通电信版/小米 4",
+        "en": "MI3 WCDMA/Mi 4"
+      },
+      "version": "4.2.14",
+      "android": "4.3",
+      "release": "2014-02-14",
+      "recovery": "miui_MI3W_4.2.14_e0c53db637_4.3.zip",
+      "fastboot": "miui_MI3-WCDMA_4.2.14_fastboot_4.3_m0osx8py4b.exe"
+    }
+  ],
   "logs": {
     "logs_zh": {
       "本周推荐": [

@@ -48,8 +48,105 @@
     }
   ],
   "suspended": [],
-  "devices": [],
-  "roms": [],
+  "devices": [
+    {
+      "device": "mione_plus",
+      "name": {
+        "zh": "小米手机1/1S",
+        "en": "MI 1/1S"
+      }
+    },
+    {
+      "device": "aries",
+      "name": {
+        "zh": "小米 2/2S",
+        "en": "MI 2/2S"
+      }
+    },
+    {
+      "device": "taurus",
+      "name": {
+        "zh": "小米 2A",
+        "en": "Mi 2A"
+      }
+    },
+    {
+      "device": "pisces",
+      "name": {
+        "zh": "小米3 移动版",
+        "en": "MI 3 TD"
+      }
+    },
+    {
+      "device": "cancro",
+      "name": {
+        "zh": "小米 3 联通电信版/小米 4",
+        "en": "MI3 WCDMA/Mi 4"
+      }
+    }
+  ],
+  "roms": [
+    {
+      "device": "mione_plus",
+      "name": {
+        "zh": "小米手机1/1S",
+        "en": "MI 1/1S"
+      },
+      "version": "4.5.23",
+      "android": "4.1",
+      "release": "2014-05-23",
+      "recovery": "miui_Mioneplus_4.5.23_db1e131d0d_4.1.zip",
+      "fastboot": "mione_plus_images_4.5.23_4.1_cn_4e41a9234d.tgz"
+    },
+    {
+      "device": "aries",
+      "name": {
+        "zh": "小米 2/2S",
+        "en": "MI 2/2S"
+      },
+      "version": "4.5.23",
+      "android": "4.1",
+      "release": "2014-05-23",
+      "recovery": "miui_MI2_4.5.23_df00bd30ca_4.1.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "taurus",
+      "name": {
+        "zh": "小米 2A",
+        "en": "Mi 2A"
+      },
+      "version": "4.5.23",
+      "android": "4.1",
+      "release": "2014-05-23",
+      "recovery": "miui_MI2A_4.5.23_5e17627cfb_4.1.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "pisces",
+      "name": {
+        "zh": "小米3 移动版",
+        "en": "MI 3 TD"
+      },
+      "version": "4.5.23",
+      "android": "4.2",
+      "release": "2014-05-23",
+      "recovery": "miui_MI3_4.5.23_887404c5ac_4.2.zip",
+      "fastboot": "pisces_images_4.5.23_4.2_cn_9039646b31.tgz"
+    },
+    {
+      "device": "cancro",
+      "name": {
+        "zh": "小米 3 联通电信版/小米 4",
+        "en": "MI3 WCDMA/Mi 4"
+      },
+      "version": "4.5.23",
+      "android": "4.4",
+      "release": "2014-05-23",
+      "recovery": "miui_MI3W_4.5.23_7fe9d9cec7_4.4.zip",
+      "fastboot": "cancro_images_4.5.23_4.4_cn_ebb34ee5b4.tgz"
+    }
+  ],
   "logs": {
     "logs_zh": {
       "本周推荐": [
