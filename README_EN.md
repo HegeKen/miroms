@@ -21,19 +21,23 @@ the [hub.miuier.com](https://hub.miuier.com) website, the admin panel and variou
 │   ├── v2/devices/<codename>.json    # V2: HyperOS device data
 │   ├── v3/devices/<codename>.json    # V3: full device data (MIUI + HyperOS)
 │   ├── v3/logs/<device>/[region/]<version>.json   # V3: multilingual changelogs
+│   ├── v3/dev/index.json             # V3: developer (weekly) release index
+│   ├── v3/dev/<region>/<week>.json   # V3: one dev week (announcement + devices + logs)
 │   ├── v3/roms/<OS>.json             # V3: ROM lists grouped by OS (OS1/OS2/OS3…)
 │   ├── v3/releases/<year>.json       # V3: ROM lists grouped by release date (year shards)
 │   ├── v3/releases/index.json        # V3: release index metadata (date range / per-year stats)
 │   ├── v3/index.json                 # V3: device index (device list + stats)
 │   ├── v3/series.json                # V3: series data (exported from the series table)
 │   └── v3/stats.json                 # V3: recent-update stats
-├── db_structure/                     # MySQL table schemas
+├── db_structure/                     # MySQL table schemas (incl. logs.sql / dev.sql)
 │   ├── devices.sql                   #   devices table
 │   ├── roms.sql                      #   roms table
 │   ├── branches.sql                  #   branches table
 │   └── series.sql                    #   series table
 ├── scripts/                          # sync / fetch / export / deploy scripts (Python)
 │   ├── exporter.py                   #   main export script
+│   ├── migrate_logs_multilang.py     #   logs table rebuild + roms.logs migration
+│   ├── import_dev_week.py            #   import dev (weekly) data into dev table
 │   ├── sync_devices.py               #   sync device list
 │   ├── fix_missing_tag_mappings.py   #   fix missing tag mappings
 │   ├── common.py                     #   backward-compat entry (re-exports the miroms package)
@@ -184,6 +188,8 @@ Covers both MIUI and HyperOS; adds a nested `tags` field and separate changelog 
 | File | Description |
 | --- | --- |
 | `api/v3/logs/<device>/[region]/<version>.json` | Multilingual changelog for a single ROM; region-tagged versions live in a `region` subdirectory. `logs_zh` / `logs_en` are always present, other languages appear only when translated: `{"logs_zh": {...}, "logs_en": {...}, "logs_zh_tw": {...}, "logs_ja": {...}, ...}` (see `CHANGELOG_LOCALES` in `scripts/miroms/constants.py`; all 21 match the site's locales) |
+| `api/v3/dev/index.json` | Developer (weekly) index: `latest` / `oldest` / `regions` plus a `weeks` list (week, region cn/global, big version, version, zh/en title, release date, device count, available languages) |
+| `api/v3/dev/<region>/<week>.json` | One developer week: announcement title/body/notes, `devices`, `roms` and multilingual `logs` (same shape as `v3/logs/**`) |
 | `api/v3/roms/<OS>.json` | ROM lists grouped by OS major version (e.g. `OS1.json` = HyperOS 1); each entry has device, version, Android, region, branch name, dates and package filenames — combine by version to build per-device ROM tables |
 | `api/v3/releases/<year>.json` | ROM lists grouped by release date: `{"year": "2026", "dates": {"2026-09-18": [{"device": "brussels", "version": "OS3.0.308.0.WDRMIXM", "region": "global"}, ...]}}`; year shards let the frontend fetch only what a date query needs |
 | `api/v3/releases/index.json` | Release index metadata: `generatedAt`, queryable range (`minDate` / `maxDate`), `totalRoms` and per-year `years` stats (ROM and active-day counts) |
@@ -196,7 +202,7 @@ Covers both MIUI and HyperOS; adds a nested `tags` field and separate changelog 
 Changelogs come from `update.miui.com`: the `l` field in the request form selects the language, and locales Xiaomi has no translation for fall back to English. Use `--probe` first to confirm which locale the API actually honours — Arabic, for example, is only translated for `ar_EG`; `ar` / `ar_SA` / `ar_AE` all fall back to English. Workflow:
 
 1. Register the locale in `CHANGELOG_LOCALES` (`scripts/miroms/constants.py`: column / API locale / site locale)
-2. Add the matching column to the `roms` table (schema: `db_structure/roms.sql`; run the migrations under `db_structure/migrations/` in order — `20260919_add_roms_changelog_locales.sql` creates the first batch of locale columns, `20260919_add_roms_logs_ar.sql` adds Arabic); the later `logs_in` / `logs_ug` / `logs_bo` columns were merged straight into `roms.sql` and the live database
+2. Add the matching column to the `logs` table (schema: `db_structure/logs.sql`; the column set follows `CHANGELOG_LOCALES` automatically — the `roms` table no longer needs to change)
 3. `python3 scripts/fetch_changelog.py --probe 5` to see which locales actually return a distinct translation (no writes)
 4. `python3 scripts/fetch_changelog.py --langs ja,ko,ru` to fill specific locales; without arguments every locale is processed in order
 Processing is batched by ROM id: each locale first collects its own array of pending ids, then the union of ids is walked once — a ROM's row is queried once and its request form is built once, so a ROM present in several locales only swaps the `l` parameter for each extra request and is removed from those arrays right after, avoiding duplicate queries and duplicate requests.
@@ -204,6 +210,57 @@ Processing is batched by ROM id: each locale first collects its own array of pen
 Writes are per-row `UPDATE`s on an `autocommit` connection, so each one lands immediately (nothing is batched into a final commit). On startup the script prints the database it actually connects to and verifies that every locale column exists — a missing column aborts with the migration command instead of being swallowed silently; failed writes are counted as `write_failed` and the first error is printed, so it can no longer report "N written" while the table stays untouched. When nothing was written the script lists the likely causes: the API fell back to English for every locale (check with `--probe`, or force with `--force`), the pending arrays are empty (`--min-id` too high), or the database rejected the writes. `--dry-run` shows what would be written without touching the DB.
 
 Locales that fall back to English are skipped automatically (column stays NULL) so the table does not fill with English copies; use `--force` to store them anyway.
+
+#### Log storage: one row per log, shared by all languages
+
+`roms` used to carry 21 `logs_*` columns (one per language) where each translation of the same line was deduplicated
+separately and never linked. The new layout is:
+
+* **`logs` table** — one row per log, shared by every language version: `id` / `type` (`module` or `log`) /
+  `content` (primary text, Chinese first, English when no Chinese exists) / `content_hash` (`md5(content)`) /
+  `logs_zh`, `logs_zh_tw`, `logs_en` … `logs_bo` (the per-language texts).
+* **`roms.logs`** — a single language-neutral ID structure `[[moduleId, [entryId, ...], langMask], ...]`. The mask is
+  a 21-bit integer (bit *i* = the *i*-th locale column) recording which languages that position actually belongs to
+  in that ROM. Adding a locale no longer touches `roms`.
+
+Two rules make this safe (both in `scripts/miroms/logs_store.py`):
+
+1. **Shape clustering** — module/entry indexes of the Chinese log do not always line up with other languages
+   (e.g. Chinese has 电话 / 联系人 / 短信 / 便签 while Japanese and German only return a single 「其他」 module).
+   Languages are therefore only merged positionally when their *structure fingerprint* is identical; other languages
+   form their own group and are appended to the master log, so logs mentioned only by other languages are kept.
+2. **Language mask + conflict splitting** — `logs` rows are shared across ROMs, so the mask stops a module from one
+   language leaking into another language's output; when the same primary text has conflicting translations in
+   different ROMs the row is split instead of overwriting, so every ROM round-trips exactly.
+
+> Migration: `python3 scripts/migrate_logs_multilang.py` (the old table is renamed to `logs_legacy`; drop it once you
+> are happy). The migration was cross-checked against an independent restore of the pre-migration backup: all
+> 470,542 "ROM × language" structures decode byte-for-byte identically.
+>
+> Normalisation: leading/trailing whitespace is trimmed from the primary text (the legacy data had 91 entries that
+> differed only by trailing spaces), so a handful of exported lines no longer carry stray spaces.
+
+#### Developer (weekly) releases
+
+The `dev` table stores one row per week and region — `region=cn` (zone 1) for China and `region=global` (zone 2) for
+the global build, so the same week can have two independent announcements, logs and device lists. Schema:
+`db_structure/dev.sql`.
+
+```bash
+python3 scripts/import_dev_week.py --source hyperos    # HyperOS.fans/public/data/dev/<week>.json
+python3 scripts/import_dev_week.py --source nuxtmr     # NuxtMR/public/MRData/data/weekly/week-<week>-cn.json
+python3 scripts/import_dev_week.py --source miuiroms   # MIUIROMS/weekly/logs/week-<week>-CN.html
+python3 scripts/import_dev_week.py --all --dry-run     # every source, no writes
+python3 scripts/import_dev_week.py --backfill-roms     # only backfill roms.dev_week by release date
+```
+
+Logs go through the same pipeline (Chinese structure first, `dev.logs` stores the language-neutral ID structure).
+The English text in the metadata is a hand translation that differs from the official one, so the importer first
+looks the Chinese text up in `logs` and prefers the official English; only when nothing is found does it keep the
+metadata translation. `expand_mask=True` widens the language mask to the languages shared by the module and all its
+entries, so reusing an already-translated group also surfaces translations beyond Chinese and English. Device
+matching prefers the metadata's `device + version`; sources without a device list (HTML) fall back to
+`branch='X'` + region + release date.
 
 
 ---
@@ -218,8 +275,12 @@ MySQL (InnoDB, utf8mb4); table structure and field meanings are in `db_structure
 - **`roms.sql`** — ROMs: system type (`type`: MIUI / HyperOS), major version (`bigver`), region, tag, branch
   (`branch`: F=Stable / X=Developer), full version (`version`), Android version, release dates (`beta_date` /
   `release_date` / `public_date`), Recovery / Fastboot / carrier package filenames (`recovery` / `fastboot` /
-  `ctelecom` / `cmobile` / `cunicom` / `others`), multilingual changelogs (`logs_zh` / `logs_zh_tw` / `logs_en` / `logs_ja` / `logs_ko` / `logs_ru` / `logs_uk` / `logs_pl` / `logs_de` / `logs_fr` / `logs_it` / `logs_es` / `logs_pt` / `logs_tr` / `logs_in` / `logs_id` / `logs_vi` / `logs_th` / `logs_ar` / `logs_ug` / `logs_bo`, JSON, one column per language), security patch
-  date (`aspatch`)
+  `ctelecom` / `cmobile` / `cunicom` / `others`), changelog (`logs`, a single language-neutral ID structure
+  `[[moduleId,[entryId,...],langMask],...]`), developer week (`dev_week`), security patch date (`aspatch`)
+- **`logs.sql`** — changelogs: one row per log shared by every language version (`type` module/log, `content`
+  primary text with Chinese first, `content_hash`, plus 21 `logs_xx` language columns)
+- **`dev.sql`** — developer (weekly) releases: unique on `week` + `region` (cn / global), holding the announcement,
+  upgrade notes, device/ROM lists and the language-neutral `logs` ID structure
 - **`branches.sql`** — branches: branch type, zh/en names, tag (`tag`), code suffix (`code`), version code
   (`vercode`), carrier, region, zone (`zone`), visibility (`visibility`), enterprise flag (`ep`)
 - **`series.sql`** — series: brand (`brand`: xiaomi / redmi / poco), zh/en names (`name_zh` / `name_en`), device
@@ -233,7 +294,9 @@ MySQL (InnoDB, utf8mb4); table structure and field meanings are in `db_structure
 
 | File | Description |
 | --- | --- |
-| `exporter.py` | Entry script: iterates `common.fullDevices`, runs `exportV1` / `exportV2` / `exportV3`, then invokes `app/web/scripts/generate-index.mjs` (Node.js) to regenerate `api/v3/index.json`, `api/v3/stats.json`, `api/v3/roms/*.json` and `api/v3/releases/*.json` |
+| `exporter.py` | Entry script: iterates `common.fullDevices`, runs `exportV1` / `exportV2` / `exportV3`, then `export_dev()` for `api/v3/dev/**`, then invokes `app/web/scripts/generate-index.mjs` (Node.js) to regenerate `api/v3/index.json`, `api/v3/stats.json`, `api/v3/roms/*.json` and `api/v3/releases/*.json` |
+| `migrate_logs_multilang.py` | Migrate the 21 `roms.logs_*` columns into the multilingual `logs` table plus a single language-neutral `roms.logs`; the old table is kept as `logs_legacy` |
+| `import_dev_week.py` | Import developer (weekly) data into `dev` and backfill `roms.dev_week` (`--source hyperos\|nuxtmr\|miuiroms`, `--all`, `--weeks`, `--region`, `--dry-run`, `--backfill-roms`) |
 | `sync_devices.py` | Syncs the device list from `devices` / `roms` into `miroms/data.py` (`fullDevices`, `currentStable`, `flags`) |
 | `fix_missing_tag_mappings.py` | Fixes missing device+tag mappings in `devices` (the V3 exporter matches branches by tag; missing ones lose ROMs); prints SQL to stdout or applies it directly with `--apply` |
 | `common.py` | Backward-compat entry re-exporting the full public API of the `miroms` package, keeping module-level constants like `fullDevices`, `currentStable`, `flags` |
@@ -264,10 +327,12 @@ The fetch scripts can also be run via VS Code Tasks (`.vscode/tasks.json` of the
 Xiaomi update server (update.miui.com)
         │  network / crypto / firmware fetch & decrypt
         ▼
-MySQL database (miroms: devices / roms / branches / series)
+MySQL database (miroms: devices / roms / logs / dev / branches / series)
         │  python3 scripts/sync_devices.py        → update miroms/data.py device list
         │  python3 scripts/fix_missing_tag_mappings.py --apply (when needed)
-        │  python3 scripts/exporter.py            → export api/v1|v2|v3 + index.json / series.json
+        │  python3 scripts/migrate_logs_multilang.py   → multilingual log groups (one-off)
+        │  python3 scripts/import_dev_week.py --all    → developer weekly data (dev table)
+        │  python3 scripts/exporter.py            → export api/v1|v2|v3 + dev + index.json / series.json
         ▼
 JSON data (api/)
         │  python3 scripts/push.py (export → git commit & push → trigger deploy)

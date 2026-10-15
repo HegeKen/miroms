@@ -1,0 +1,780 @@
+{
+  "week": 565,
+  "region": "cn",
+  "zone": 1,
+  "bigver": "MIUI 13",
+  "versions": "V13.1.22.9.12.DEV,V13.1.22.9.13.DEV,V13.1.22.9.14.DEV",
+  "title": {
+    "zh": "MIUI第565周发布公告及更新日志",
+    "en": "The 565th MIUI Weekly Update Changelogs"
+  },
+  "postId": "38967024",
+  "update": "2022-09-16 00:00:00",
+  "release": "2022-09-16",
+  "description": [
+    {
+      "zh": "Xiaomi 12 Pro、Xiaomi 12、Redmi K50 电竞版 首次发布基于 Android 13的MIUI开发版, 多项优化与改进, 向勇敢尝鲜的米粉们致敬",
+      "en": "We're releasing MIUI China Beta Based on Android 13 for Xiaomi 12 Pro、Xiaomi 12、Redmi K50G for the first time, includes minor improvements ,salute to our early adapter fans."
+    },
+    {
+      "zh": "Redmi Note11 5G、Redmi Note 9 4G 已发布V13.1.22.9.16.DEV版本，Xiaomi 12S Pro 已发布V13.1.22.9.12.DEV版本，感谢米粉朋友们的理解和支持",
+      "en": "We've released V13.1.22.9.16.DEV for Redmi Note11 5G&Redmi Note 9 4G, and V13.1.22.9.12.DEV for Xiaomi 12S Pro, thank you for your understanding."
+    },
+    {
+      "zh": "Redmi K50 Pro 已通过基于 Android 13的MIUI开发版招募的米粉朋友，已为大家发布V13.1.22.9.16.DEV版本，感谢米粉朋友们的理解和支持",
+      "en": "We've released MIUI Update V13.1.22.9.16.DEV based on Android 13 for Redmi K50 Pro for recruited members, thank you for your understanding."
+    },
+    {
+      "zh": "由于Android大版本升级，Redmi K40S 2022年9月23日起暂停发布基于Android 12的MIUI开发版，感谢大家的支持和理解",
+      "en": "We're suspending MIUI updates based on Android 12 for Redmi K40S since September 23, 2022, thank you for your understanding."
+    },
+    {
+      "zh": "由于为配合软件系统架构变更，开发版部分机型版本号有变更，感谢米粉朋友们的理解",
+      "en": "Because of structural changes, MIUI China Beta version naming scheme has altered for some devices, thank you for your understanding."
+    },
+    {
+      "zh": "如卡刷未切换成功的米粉朋友，请将数据完整备份电脑后，尝试线刷方法进行切换包",
+      "en": "If you failed switching to MIUI Beta via recovery flash, please update via fastboot."
+    },
+    {
+      "zh": "为了给米粉朋友们相对更好的使用体验，我们将会对MIUI开发模式进行升级",
+      "en": "For better user experience, we've deviced make some changes to our development methods."
+    },
+    {
+      "zh": "开发版不断迭代中，因不同机型的系统底层存在部分差异，部分修复可能不完全显示在当天公告日志里，希望给大家相对更好的使用体验，感谢大家的支持和理解",
+      "en": "MIUI China Beta is in continuous development, and because of structural differences, some changes may not be included in this changelog , thank you for your understanding."
+    },
+    {
+      "zh": "2022年10月31日起，以下机型将停止开发版内测公测：小米10 至尊纪念版、Redmi K30S 至尊纪念版、Redmi Note 9 Pro、Redmi Note 9 4G、Redmi 10X、Redmi 10X Pro、Redmi K30 至尊纪念版、Redmi Note 10、Redmi Note 11 5G、Redmi Note 11E Pro、Redmi Note 9",
+      "en": "Starting from October 31, 2022, Mi 10 Ultra/Redmi K30S Ultra/Redmi K30 Ultra/Redmi Note 9 Pro/Redmi Note 9 4G/Redmi 10X/Redmi 10X Pro/Redmi Note 10/Redmi Note 11 5G/Redmi Note 11E Pro/Redmi Note 9 stops rolling MIUI China Beta updates."
+    },
+    {
+      "zh": "部分机型在某些情况下，可能出现桌面图标上移的问题，会在本周版本修复，感谢大家的支持和理解",
+      "en": "We've noticed a bug that icons shifting on home screen on some devices, we'll fix the bug in upcoming update, thank you for your understanding."
+    },
+    {
+      "zh": "如米粉朋友们遇到短信闪退的问题，请通过应用商店-我的-应用升级将短信更新至最新版本，感谢大家的支持和理解",
+      "en": "If you encounter SMS N/R bug, please try updating SMS App in MiGetApps."
+    }
+  ],
+  "attention": [
+    {
+      "zh": "MIUI开发版可进入“设置→我的设备→MIUI版本”在线升级，升级前务必备份重要数据",
+      "en": "You can upgrade MIUI China Beta by 'Settings→My Device→MIUI version', please make sure you've backed up important personal data before update."
+    },
+    {
+      "zh": "部分机型可能因功能进版时间略有差异，具体功能请以手机端展示日志为准",
+      "en": "Some devices will get these same features later some time, please view specific changelog in the 'System Update' App."
+    },
+    {
+      "zh": "开发版：是提供给少数资深极客精神米粉的测试版本，用于问题反馈和测试，稳定性不可预估，感谢勇敢冒险者试用开发版。版本根据项目需要和实际情况发布，存在停版的可能，推荐发烧友米粉尝鲜体验，遇到问题请理性反馈，关注后续版本升级。",
+      "en": "China Beta: China Beta is a test version that MIUI Dev Team prepared for Geeky Mi Fans, more focused on feature testing and bug feedback, stablity is not predictable, We(MIUI Dev Team) thank you for all your support. Version is released according to the needs of the project and the actual situation, and there is a possibility of suspension, If you encounter bugs, please send us bug report in Xiaomi Community(China), and pay attention to the subsequent upgrade."
+    },
+    {
+      "zh": "为提升用户体验，MIUI系统部分APP解耦合，在应用商店可升级，是MIUI系统的一部分。开发版不断迭代中，部分修复有时可能不完全显示在当天公告日志里，感谢大家的理解",
+      "en": "In order to improve the user experience, bunch of the MIUI system APPs are Deodexed and can be upgraded in the Mi GetApps/Google Play . As a part of the MIUI system, some APPs bug fixes may not be included in this changelog , thank you for your understanding."
+    }
+  ],
+  "suspended": [],
+  "devices": [
+    {
+      "device": "cas",
+      "name": {
+        "zh": "小米 10 至尊纪念版",
+        "en": "Mi 10 Ultra"
+      }
+    },
+    {
+      "device": "venus",
+      "name": {
+        "zh": "小米 11",
+        "en": "Mi 11"
+      }
+    },
+    {
+      "device": "star",
+      "name": {
+        "zh": "小米 11 Pro/Ultra",
+        "en": "Mi 11 Pro/Ultra"
+      }
+    },
+    {
+      "device": "renoir",
+      "name": {
+        "zh": "小米 11 青春版",
+        "en": "Mi 11 Lite 5G"
+      }
+    },
+    {
+      "device": "pissarro",
+      "name": {
+        "zh": "小米 11i 印度快充版",
+        "en": "Xiaomi 11i / Hypercharge India"
+      }
+    },
+    {
+      "device": "cupid",
+      "name": {
+        "zh": "小米 12",
+        "en": "Xiaomi 12"
+      }
+    },
+    {
+      "device": "zeus",
+      "name": {
+        "zh": "小米 12 Pro",
+        "en": "Xiaomi 12 Pro"
+      }
+    },
+    {
+      "device": "psyche",
+      "name": {
+        "zh": "小米 12X",
+        "en": "Xiaomi 12X"
+      }
+    },
+    {
+      "device": "daumier",
+      "name": {
+        "zh": "小米 12 Pro 天玑版",
+        "en": "Xiaomi 12 Pro Dimensity"
+      }
+    },
+    {
+      "device": "mayfly",
+      "name": {
+        "zh": "小米 12S",
+        "en": "Xiaomi 12S"
+      }
+    },
+    {
+      "device": "unicorn",
+      "name": {
+        "zh": "小米 12S Pro",
+        "en": "Xiaomi 12S Pro"
+      }
+    },
+    {
+      "device": "thor",
+      "name": {
+        "zh": "小米 12S Ultra",
+        "en": "Xiaomi 12S Ultra"
+      }
+    },
+    {
+      "device": "cetus",
+      "name": {
+        "zh": "小米 MIX FOLD",
+        "en": "Mi MIX FOLD"
+      }
+    },
+    {
+      "device": "odin",
+      "name": {
+        "zh": "小米 MIX 4",
+        "en": "MIX 4"
+      }
+    },
+    {
+      "device": "nabu",
+      "name": {
+        "zh": "小米平板 5",
+        "en": "Xiaomi Pad 5"
+      }
+    },
+    {
+      "device": "elish",
+      "name": {
+        "zh": "小米平板 5 Pro Wi-Fi",
+        "en": "Xiaomi Pad 5 Pro Wi-Fi"
+      }
+    },
+    {
+      "device": "enuma",
+      "name": {
+        "zh": "小米平板 5 Pro 5G",
+        "en": "Xiaomi Pad 5 Pro 5G"
+      }
+    },
+    {
+      "device": "dagu",
+      "name": {
+        "zh": "小米平板 5 Pro 12.4",
+        "en": "Xiaomi Pad 5 Pro 12.4"
+      }
+    },
+    {
+      "device": "atom",
+      "name": {
+        "zh": "Redmi 10X 5G",
+        "en": "Redmi 10X 5G"
+      }
+    },
+    {
+      "device": "bomb",
+      "name": {
+        "zh": "Redmi 10X Pro",
+        "en": "Redmi 10X Pro"
+      }
+    },
+    {
+      "device": "lime",
+      "name": {
+        "zh": "Redmi Note 9 4G",
+        "en": "Redmi Note 9 4G"
+      }
+    },
+    {
+      "device": "lime",
+      "name": {
+        "zh": "Redmi Note 9 4G",
+        "en": "Redmi Note 9 4G"
+      }
+    },
+    {
+      "device": "cannon",
+      "name": {
+        "zh": "Redmi Note 9 5G",
+        "en": "Redmi Note 9 5G"
+      }
+    },
+    {
+      "device": "gauguin",
+      "name": {
+        "zh": "Redmi Note 9 Pro 5G",
+        "en": "Redmi Note 9 Pro 5G"
+      }
+    },
+    {
+      "device": "chopin",
+      "name": {
+        "zh": "Redmi Note 10 Pro 5G",
+        "en": "Redmi Note 10 Pro 5G"
+      }
+    },
+    {
+      "device": "pissarro",
+      "name": {
+        "zh": "Redmi Note 11 Pro/Pro+/Pro+ 5G",
+        "en": "Redmi Note 11 Pro/Pro+/Pro+ 5G"
+      }
+    },
+    {
+      "device": "cezanne",
+      "name": {
+        "zh": "Redmi K30 至尊纪念版",
+        "en": "Redmi K30 Ultra"
+      }
+    },
+    {
+      "device": "apollo",
+      "name": {
+        "zh": "Redmi K30S 至尊纪念版",
+        "en": "Redmi K30S Ultra"
+      }
+    },
+    {
+      "device": "alioth",
+      "name": {
+        "zh": "Redmi K40",
+        "en": "Redmi K40"
+      }
+    },
+    {
+      "device": "haydn",
+      "name": {
+        "zh": "Redmi K40 Pro/Pro+",
+        "en": "Redmi K40 Pro/Pro+"
+      }
+    },
+    {
+      "device": "ares",
+      "name": {
+        "zh": "Redmi K40 游戏增强版",
+        "en": "Redmi K40 Gaming"
+      }
+    },
+    {
+      "device": "munch",
+      "name": {
+        "zh": "Redmi K40S",
+        "en": "Redmi K40S"
+      }
+    },
+    {
+      "device": "ingres",
+      "name": {
+        "zh": "Redmi K50 电竞版",
+        "en": "Redmi K50G"
+      }
+    },
+    {
+      "device": "rubens",
+      "name": {
+        "zh": "Redmi K50",
+        "en": "Redmi K50"
+      }
+    },
+    {
+      "device": "matisse",
+      "name": {
+        "zh": "Redmi K50 Pro",
+        "en": "Redmi K50 Pro"
+      }
+    },
+    {
+      "device": "diting",
+      "name": {
+        "zh": "Redmi K50 至尊版",
+        "en": "Redmi K50 Ultra"
+      }
+    }
+  ],
+  "roms": [
+    {
+      "device": "cas",
+      "name": {
+        "zh": "小米 10 至尊纪念版",
+        "en": "Mi 10 Ultra"
+      },
+      "version": "V13.1.22.9.12.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_CAS_V13.1.22.9.12.DEV_06f1cef2ff_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "venus",
+      "name": {
+        "zh": "小米 11",
+        "en": "Mi 11"
+      },
+      "version": "V13.1.22.9.12.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_VENUS_V13.1.22.9.12.DEV_6349b1932a_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "star",
+      "name": {
+        "zh": "小米 11 Pro/Ultra",
+        "en": "Mi 11 Pro/Ultra"
+      },
+      "version": "V13.1.22.9.12.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_STAR_V13.1.22.9.12.DEV_cb57c66429_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "renoir",
+      "name": {
+        "zh": "小米 11 青春版",
+        "en": "Mi 11 Lite 5G"
+      },
+      "version": "V13.1.22.9.12.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_RENOIR_V13.1.22.9.12.DEV_60c21e0b64_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "pissarro",
+      "name": {
+        "zh": "小米 11i 印度快充版",
+        "en": "Xiaomi 11i / Hypercharge India"
+      },
+      "version": "V13.1.22.9.14.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_PISSARRO_V13.1.22.9.14.DEV_e552c0812f_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "cupid",
+      "name": {
+        "zh": "小米 12",
+        "en": "Xiaomi 12"
+      },
+      "version": "V13.1.22.9.13.DEV",
+      "android": "13.0",
+      "release": "",
+      "recovery": "miui_CUPID_V13.1.22.9.13.DEV_a34c1861c3_13.0.zip",
+      "fastboot": "cupid_images_V13.1.22.9.13.DEV_20220914.0000.00_13.0_cn_20c4262899.tgz"
+    },
+    {
+      "device": "zeus",
+      "name": {
+        "zh": "小米 12 Pro",
+        "en": "Xiaomi 12 Pro"
+      },
+      "version": "V13.1.22.9.13.DEV",
+      "android": "13.0",
+      "release": "",
+      "recovery": "miui_ZEUS_V13.1.22.9.13.DEV_d701413485_13.0.zip",
+      "fastboot": "zeus_images_V13.1.22.9.13.DEV_20220914.0000.00_13.0_cn_24ab9f2944.tgz"
+    },
+    {
+      "device": "psyche",
+      "name": {
+        "zh": "小米 12X",
+        "en": "Xiaomi 12X"
+      },
+      "version": "V13.1.22.9.12.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_PSYCHE_V13.1.22.9.12.DEV_5d007c5950_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "daumier",
+      "name": {
+        "zh": "小米 12 Pro 天玑版",
+        "en": "Xiaomi 12 Pro Dimensity"
+      },
+      "version": "V13.1.22.9.12.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_DAUMIER_V13.1.22.9.12.DEV_eff3dd21e7_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "mayfly",
+      "name": {
+        "zh": "小米 12S",
+        "en": "Xiaomi 12S"
+      },
+      "version": "V13.1.22.9.12.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_MAYFLY_V13.1.22.9.12.DEV_5cdcab8db5_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "unicorn",
+      "name": {
+        "zh": "小米 12S Pro",
+        "en": "Xiaomi 12S Pro"
+      },
+      "version": "V13.1.22.9.12.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_UNICORN_V13.1.22.9.12.DEV_c927a99210_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "thor",
+      "name": {
+        "zh": "小米 12S Ultra",
+        "en": "Xiaomi 12S Ultra"
+      },
+      "version": "V13.1.22.9.12.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_THOR_V13.1.22.9.12.DEV_18b5b9fa2b_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "cetus",
+      "name": {
+        "zh": "小米 MIX FOLD",
+        "en": "Mi MIX FOLD"
+      },
+      "version": "V13.1.22.9.12.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_CETUS_V13.1.22.9.12.DEV_f086c00057_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "odin",
+      "name": {
+        "zh": "小米 MIX 4",
+        "en": "MIX 4"
+      },
+      "version": "V13.1.22.9.12.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_ODIN_V13.1.22.9.12.DEV_c3b655cd1a_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "nabu",
+      "name": {
+        "zh": "小米平板 5",
+        "en": "Xiaomi Pad 5"
+      },
+      "version": "V13.1.22.9.12.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_NABU_V13.1.22.9.12.DEV_ba210736bf_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "elish",
+      "name": {
+        "zh": "小米平板 5 Pro Wi-Fi",
+        "en": "Xiaomi Pad 5 Pro Wi-Fi"
+      },
+      "version": "V13.1.22.9.12.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_ELISH_V13.1.22.9.12.DEV_707f86592c_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "enuma",
+      "name": {
+        "zh": "小米平板 5 Pro 5G",
+        "en": "Xiaomi Pad 5 Pro 5G"
+      },
+      "version": "V13.1.22.9.12.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_ENUMA_V13.1.22.9.12.DEV_ef8853d4b1_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "dagu",
+      "name": {
+        "zh": "小米平板 5 Pro 12.4",
+        "en": "Xiaomi Pad 5 Pro 12.4"
+      },
+      "version": "V13.1.22.9.12.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_DAGU_V13.1.22.9.12.DEV_e9f4b74dc6_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "atom",
+      "name": {
+        "zh": "Redmi 10X 5G",
+        "en": "Redmi 10X 5G"
+      },
+      "version": "V13.1.22.9.12.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_ATOM_V13.1.22.9.12.DEV_4a28842e75_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "bomb",
+      "name": {
+        "zh": "Redmi 10X Pro",
+        "en": "Redmi 10X Pro"
+      },
+      "version": "V13.1.22.9.12.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_BOMB_V13.1.22.9.12.DEV_4f07ca6c7e_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "lime",
+      "name": {
+        "zh": "Redmi Note 9 4G",
+        "en": "Redmi Note 9 4G"
+      },
+      "version": "V13.1.22.9.16.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_LIME_V13.1.22.9.16.DEV_07fe57c847_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "lime",
+      "name": {
+        "zh": "Redmi Note 9 4G",
+        "en": "Redmi Note 9 4G"
+      },
+      "version": "V13.1.22.9.12.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_LIME_V13.1.22.9.12.DEV_6cf0490ada_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "cannon",
+      "name": {
+        "zh": "Redmi Note 9 5G",
+        "en": "Redmi Note 9 5G"
+      },
+      "version": "V13.1.22.9.12.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_CANNON_V13.1.22.9.12.DEV_8084a23d71_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "gauguin",
+      "name": {
+        "zh": "Redmi Note 9 Pro 5G",
+        "en": "Redmi Note 9 Pro 5G"
+      },
+      "version": "V13.1.22.9.12.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_GAUGUIN_V13.1.22.9.12.DEV_f38372d55d_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "chopin",
+      "name": {
+        "zh": "Redmi Note 10 Pro 5G",
+        "en": "Redmi Note 10 Pro 5G"
+      },
+      "version": "V13.1.22.9.13.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_CHOPIN_V13.1.22.9.13.DEV_cf11fb3f30_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "pissarro",
+      "name": {
+        "zh": "Redmi Note 11 Pro/Pro+/Pro+ 5G",
+        "en": "Redmi Note 11 Pro/Pro+/Pro+ 5G"
+      },
+      "version": "V13.1.22.9.14.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_PISSARRO_V13.1.22.9.14.DEV_e552c0812f_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "cezanne",
+      "name": {
+        "zh": "Redmi K30 至尊纪念版",
+        "en": "Redmi K30 Ultra"
+      },
+      "version": "V13.1.22.9.12.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_CEZANNE_V13.1.22.9.12.DEV_51a9659a6e_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "apollo",
+      "name": {
+        "zh": "Redmi K30S 至尊纪念版",
+        "en": "Redmi K30S Ultra"
+      },
+      "version": "V13.1.22.9.12.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_APOLLO_V13.1.22.9.12.DEV_94a70444ab_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "alioth",
+      "name": {
+        "zh": "Redmi K40",
+        "en": "Redmi K40"
+      },
+      "version": "V13.1.22.9.12.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_ALIOTH_V13.1.22.9.12.DEV_09c6758a12_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "haydn",
+      "name": {
+        "zh": "Redmi K40 Pro/Pro+",
+        "en": "Redmi K40 Pro/Pro+"
+      },
+      "version": "V13.1.22.9.12.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_HAYDN_V13.1.22.9.12.DEV_8839d93099_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "ares",
+      "name": {
+        "zh": "Redmi K40 游戏增强版",
+        "en": "Redmi K40 Gaming"
+      },
+      "version": "V13.1.22.9.13.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_ARES_V13.1.22.9.13.DEV_ca0ba002c2_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "munch",
+      "name": {
+        "zh": "Redmi K40S",
+        "en": "Redmi K40S"
+      },
+      "version": "V13.1.22.9.14.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_MUNCH_V13.1.22.9.14.DEV_524fad12fe_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "ingres",
+      "name": {
+        "zh": "Redmi K50 电竞版",
+        "en": "Redmi K50G"
+      },
+      "version": "V13.1.22.9.13.DEV",
+      "android": "13.0",
+      "release": "",
+      "recovery": "miui_INGRES_V13.1.22.9.13.DEV_09c965cf47_13.0.zip",
+      "fastboot": "ingres_images_V13.1.22.9.13.DEV_20220914.0000.00_13.0_cn_48821a19e8.tgz"
+    },
+    {
+      "device": "rubens",
+      "name": {
+        "zh": "Redmi K50",
+        "en": "Redmi K50"
+      },
+      "version": "V13.1.22.9.12.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_RUBENS_V13.1.22.9.12.DEV_97b1ed81bd_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "matisse",
+      "name": {
+        "zh": "Redmi K50 Pro",
+        "en": "Redmi K50 Pro"
+      },
+      "version": "V13.1.22.9.16.DEV",
+      "android": "13.0",
+      "release": "",
+      "recovery": "miui_MATISSE_V13.1.22.9.16.DEV_36f01e0042_13.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "diting",
+      "name": {
+        "zh": "Redmi K50 至尊版",
+        "en": "Redmi K50 Ultra"
+      },
+      "version": "V13.1.22.9.13.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_DITING_V13.1.22.9.13.DEV_5a50e55b31_12.0.zip",
+      "fastboot": ""
+    }
+  ],
+  "logs": {
+    "logs_zh": {
+      "应用商店": [
+        "优化详情页加载动效及页面样式"
+      ]
+    },
+    "logs_en": {
+      "Mi GetApps": [
+        "Optimizing detail loading animation and style."
+      ]
+    }
+  },
+  "source": "nuxtmr"
+}

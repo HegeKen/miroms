@@ -1,12 +1,13 @@
 import json
 import logging
 import re
+from datetime import datetime
 from functools import cmp_to_key
 from pathlib import Path
 from typing import Set, List, Tuple, Dict, Any
 
 from miroms.database import DatabaseManager
-from miroms.constants import branches, CHANGELOG_EXTRA_COLUMNS
+from miroms.constants import branches
 from miroms.data import unreleased, DEVICE_NAME_ALIASES
 from miroms.logs_store import LogStore
 from miroms.utils import FileUtils
@@ -14,39 +15,22 @@ from miroms.utils import FileUtils
 # 导出目录基准路径（使用绝对路径，避免 cwd 依赖）
 _EXPORT_BASE = Path(FileUtils.get_base_path()) / "data" / "api"
 
-# roms 表日志列在 SELECT 中的位置（与下方 roms_sql 保持一致）：
-# 14 = logs_zh，15 = logs_en，17 起为 CHANGELOG_EXTRA_COLUMNS（16 是 region）
-_LOG_INDEX_BASE = {"logs_zh": 14, "logs_en": 15}
-_EXTRA_LOG_INDEX_BASE = 17
 
+def parse_rom_logs(rom: Tuple, index: int = 14) -> Dict[str, Any]:
+		"""把一行 roms 的 logs 列（语言中性 ID 引用结构）解析为 {语言列: 日志对象}
 
-def rom_log_index_map(extra_log_columns: List[str]) -> Dict[str, int]:
-		"""返回 {日志列名: 该行数据中的下标}"""
-		index_map = dict(_LOG_INDEX_BASE)
-		for offset, column in enumerate(extra_log_columns):
-				index_map[column] = _EXTRA_LOG_INDEX_BASE + offset
-		return index_map
-
-
-def parse_rom_logs(rom: Tuple, index_map: Dict[str, int]) -> Dict[str, Any]:
-		"""把一行 roms 数据中所有非空的更新日志列解析为 {列名: 日志对象}
-
-		列内容为 logs 表 ID 引用结构（[[模块ID,[条目ID,...]], ...]）时，
-		经 LogStore 内存映射还原为原文 {"模块": ["条目", ...]}，保证导出格式不变。
+		roms.logs 存 [[模块ID,[条目ID,...],语言掩码],...]，经 LogStore 内存映射
+		还原为 {"logs_zh": {"模块": ["条目", ...]}, "logs_en": {...}, ...}，
+		语言掩码保证只输出该 ROM 真正拥有的语言。导出格式与历史一致。
 		"""
-		logs: Dict[str, Any] = {}
-		for column, index in index_map.items():
-				if len(rom) <= index:
-						continue
-				value = rom[index]
-				if not value:
-						continue
-				try:
-						parsed = json.loads(value) if isinstance(value, str) else value
-						logs[column] = LogStore.decode_value(parsed)
-				except (json.JSONDecodeError, TypeError):
-						logs[column] = value
-		return logs
+		if len(rom) <= index or not rom[index]:
+				return {}
+		value = rom[index]
+		try:
+				parsed = json.loads(value) if isinstance(value, str) else value
+				return LogStore.build_localized(parsed)
+		except (json.JSONDecodeError, TypeError):
+				return {}
 
 
 def build_log_entry(logs_map: Dict[str, Any]) -> Dict[str, Any]:
@@ -412,6 +396,121 @@ def export_statistics() -> Dict[str, Any]:
 						temp_path.unlink(missing_ok=True)
 				raise IOError(f"无法写入 statistics {file_path}: {e}")
 		return stats
+
+
+def export_dev() -> Dict[str, Any]:
+		"""导出开发版（周更）公告与更新日志到 data/api/v3/dev/
+
+		产物：
+		  v3/dev/index.json            周次索引（按周数降序，含大陆版 / 国际版两条）
+		  v3/dev/<region>/<week>.json  单周详情：公告 + 机型清单 + 多语言更新日志
+
+		日志来自 dev.logs（logs 表 ID 引用结构），由 LogStore.build_localized 还原为
+		{"logs_zh": {...}, "logs_en": {...}, ...}，前端按当前语言取用。
+		"""
+		logger = logging.getLogger(__name__)
+		rows = DatabaseManager.query_all(
+				"SELECT `week`, `region`, `zone`, `bigver`, `versions`, `title_zh`, `title_en`, `post_id`, "
+				"`update_time`, `release_date`, `description`, `attention`, `suspended`, `devices`, `roms`, "
+				"`logs`, `source` FROM `dev` WHERE `show` = 1 ORDER BY `week` DESC, `region` ASC"
+		)
+
+		base = _EXPORT_BASE / 'v3' / 'dev'
+		base.mkdir(parents=True, exist_ok=True)
+
+		def _json(value: Any, default: Any) -> Any:
+				if value in (None, ''):
+						return default
+				if isinstance(value, (list, dict)):
+						return value
+				try:
+						return json.loads(value)
+				except (json.JSONDecodeError, TypeError):
+						return default
+
+		def _text(value: Any) -> str:
+				return '' if value is None else str(value)
+
+		weeks: List[Dict[str, Any]] = []
+		saved = 0
+		for row in rows or []:
+				week, region = int(row[0]), (_text(row[1]) or 'cn')
+				logs_value = row[15]
+				localized: Dict[str, Any] = {}
+				if logs_value:
+						try:
+								localized = LogStore.build_localized(json.loads(logs_value))
+						except (json.JSONDecodeError, TypeError):
+								localized = {}
+				devices = _json(row[13], [])
+				rom_list = _json(row[14], [])
+				detail = {
+						"week": week,
+						"region": region,
+						"zone": int(row[2]) if row[2] is not None else (1 if region == 'cn' else 2),
+						"bigver": _text(row[3]),
+						"versions": _text(row[4]),
+						"title": {"zh": _text(row[5]), "en": _text(row[6])},
+						"postId": _text(row[7]),
+						"update": _text(row[8]),
+						"release": _text(row[9])[:10],
+						"description": _json(row[10], []),
+						"attention": _json(row[11], []),
+						"suspended": _json(row[12], []),
+						"devices": devices,
+						"roms": rom_list,
+						"logs": localized,
+						"source": _text(row[16]),
+				}
+
+				region_dir = base / region
+				region_dir.mkdir(parents=True, exist_ok=True)
+				file_path = region_dir / f'{week}.json'
+				temp_path = file_path.with_suffix('.tmp')
+				try:
+						with open(temp_path, 'w', encoding='utf-8') as f:
+								json.dump(detail, f, ensure_ascii=False, indent=2)
+						temp_path.replace(file_path)
+						saved += 1
+				except (IOError, OSError) as e:
+						logger.error(f"开发版周报写入失败 {file_path}: {e}")
+						temp_path.unlink(missing_ok=True)
+						continue
+
+				weeks.append({
+						"week": week,
+						"region": region,
+						"zone": detail["zone"],
+						"bigver": detail["bigver"],
+						"versions": detail["versions"],
+						"title": detail["title"],
+						"release": detail["release"],
+						"deviceCount": len(devices) or len(rom_list),
+						"hasLogs": bool(localized),
+						"languages": list(localized.keys()),
+				})
+
+		index = {
+				"generatedAt": datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+				"total": len(weeks),
+				"latest": weeks[0]["week"] if weeks else 0,
+				"oldest": weeks[-1]["week"] if weeks else 0,
+				"regions": sorted({item["region"] for item in weeks}),
+				"weeks": weeks,
+		}
+		index_path = base / 'index.json'
+		temp_path = index_path.with_suffix('.tmp')
+		try:
+				with open(temp_path, 'w', encoding='utf-8') as f:
+						json.dump(index, f, ensure_ascii=False, indent=2)
+				temp_path.replace(index_path)
+		except (IOError, OSError) as e:
+				logger.error(f"开发版索引写入失败 {index_path}: {e}")
+				temp_path.unlink(missing_ok=True)
+				raise IOError(f"无法写入开发版索引 {index_path}: {e}")
+
+		logger.info(f"开发版导出完成: {saved} 个周次")
+		return index
 
 
 def exportV1(device: str) -> Dict[str, Any]:
@@ -977,19 +1076,16 @@ def exportV3(device: str) -> Dict[str, Any]:
 										}
 
 				# ==================== 阶段4: 批量获取所有 ROM 数据（带运营商字段）====================
-				# 日志列：logs_zh / logs_en 保持原有位置（rom[14] / rom[15]），
-				# 其余语种列追加在 region 之后，由 constants.CHANGELOG_LOCALES 统一维护
-				extra_log_columns = list(CHANGELOG_EXTRA_COLUMNS)
-				extra_log_select = "".join(f", {column}" for column in extra_log_columns)
-				roms_sql = f"""
+				# 更新日志：roms 只保留一列语言中性的 logs（[[模块ID,[条目ID,...],语言掩码],...]），
+				# 各语言原文在 logs 表按列存放，导出时由 LogStore.build_localized 还原
+				roms_sql = """
 						SELECT id, version, android, beta_date, recovery, fastboot,
 									 tag, code, type, bigver, ctelecom, cmobile, cunicom, aspatch,
-									 logs_zh, logs_en, region{extra_log_select}
+									 logs, region
 						FROM roms
 						WHERE device = %s
 						ORDER BY id DESC
 				"""
-				log_index_map = rom_log_index_map(extra_log_columns)
 				all_roms = DatabaseManager.execute(roms_sql, params=(device,), fetch_one=False)
 
 				# 按 tag 分组 ROM（使用字典setdefault，效率更高）
@@ -1132,7 +1228,7 @@ def exportV3(device: str) -> Dict[str, Any]:
 								cmobile = rom[11] if len(rom) > 11 else None
 								cunicom = rom[12] if len(rom) > 12 else None
 								aspatch = rom[13] if len(rom) > 13 else None
-								logs_map = parse_rom_logs(rom, log_index_map)
+								logs_map = parse_rom_logs(rom, 14)
 
 								version_str = str(version) if version is not None else ""
 								if not version_str or version_str in added_versions:

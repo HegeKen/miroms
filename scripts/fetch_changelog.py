@@ -1,15 +1,17 @@
 """
-批量获取 ROM 的更新日志（changelog），按语种分别写入 roms 表对应的 logs_* 列。
+批量获取 ROM 的更新日志（changelog），按语种写入 logs 表的多语言分组，并回写 roms.logs。
 
-语种与列名的对应关系集中在 miroms/constants.py 的 CHANGELOG_LOCALES，
-新增语种只需在那里登记 + 给 roms 表加同名列（见 db_structure/migrations/）。
+更新日志已改为「同一日志的多语言版本共用一行」的 logs 表 + roms 单列 logs
+（详见 db_structure/logs.sql 与 miroms/logs_store.py）；语种与列名的对应关系集中在
+miroms/constants.py 的 CHANGELOG_LOCALES，新增语种只需在那里登记 + 给 logs 表加同名列，
+roms 表不再需要改动。
 
 运行逻辑（按 ROM id 批量，而非按语种逐遍扫表）：
-1. 每个语种各查一次 `WHERE logs_<lang> IS NULL`，把待补的 id 存进该语种的数组；
+1. 把候选 ROM 的 logs 解回各语言，找出缺少该语种的 id 存进该语种的数组；
 2. 遍历所有 id 的并集（由新到旧，id 从大到小），同一个 id 只查一次数据库拿到 ROM 信息、
    只构建一次请求表单；命中的多个语种共用这份表单，仅替换 l 参数各请求一次；
 3. 每个语种处理完就把该 id 从对应数组中删除，处理下一个 id；
-4. 接口没有该语种译文时会回落英文，检测到与 logs_en 完全相同即跳过（列保持 NULL），
+4. 接口没有该语种译文时会回落英文，检测到与 logs_en 完全相同即跳过（该语种不写入），
    需要强制写入时加 --force。
 5. 对 cn 区域的记录同时写入 release_date，并从响应中提取卡刷包（recovery）文件名。
 
@@ -38,8 +40,10 @@ sys.path.insert(0, str(Path(__file__).parent))
 import common
 
 # 单个 ROM 的数据库字段（一次查询供该 id 的所有语种复用）
+# logs 列为语言中性的 ID 引用结构（[[模块ID,[条目ID,...],语言掩码],...]），
+# 各语言原文在 logs 表按列存放，经 LogStore.build_localized 还原为 {语言列: {...}}
 ROM_INFO_SQL = (
-	"SELECT device, code, region, branch, android, version, zone, logs_en "
+	"SELECT device, code, region, branch, android, version, zone, logs "
 	"FROM roms WHERE id = %s"
 )
 
@@ -54,10 +58,6 @@ def region_field(region: str) -> str:
 	"""把数据库 roms.region 映射为请求表单的 r 字段"""
 	code = str(region or '').strip().lower()
 	return REGION_FIELD_OVERRIDES.get(code, code)
-
-
-# 补充新列用到的迁移脚本（缺列时提示）
-MIGRATION_FILE = 'db_structure/migrations/20260919_add_roms_changelog_locales.sql'
 
 
 def os_replace(ver: str) -> str:
@@ -78,26 +78,31 @@ def print_target() -> None:
 
 
 def verify_columns(locales: list[dict]) -> None:
-	"""确认 roms 表已有各语言列；缺列时给出迁移指引并退出
+	"""确认 logs 表已有各语言列；缺列时给出迁移指引并退出
 
-	否则 `WHERE logs_ja IS NULL` 会被 DatabaseManager 静默吞掉，
-	表现为「待补 0 条、什么都没写」。
+	语言列已从 roms 表搬到 logs 表（见 db_structure/logs.sql），
+	缺列会导致写入静默失败，所以先检查。
 	"""
 	try:
 		rows = common.DatabaseManager.execute(
-			"SHOW COLUMNS FROM roms", fetch_one=False, raise_on_error=True
+			"SHOW COLUMNS FROM logs", fetch_one=False, raise_on_error=True
 		)
 	except Exception as exc:
-		print(f"✖ 无法读取 roms 表结构：{type(exc).__name__}: {exc}")
+		print(f"✖ 无法读取 logs 表结构：{type(exc).__name__}: {exc}")
 		print("  请检查 scripts/config.py 里的 host / database 是否正确、数据库是否可连")
 		sys.exit(1)
 
 	existing = {row[0] for row in rows or []}
+	if 'content' not in existing:
+		print("✖ logs 表仍是旧结构（缺少多语言列），请先执行迁移：")
+		print("  python3 data/scripts/migrate_logs_multilang.py")
+		sys.exit(1)
+
 	missing = [cfg['column'] for cfg in locales if cfg['column'] not in existing]
 	if missing:
-		print(f"✖ roms 表缺少以下列：{', '.join(missing)}")
-		print(f"  请先执行迁移：mysql <库名> < {MIGRATION_FILE}")
-		print("  （或直接执行 db_structure/roms.sql 中对应的 ADD COLUMN 语句）")
+		print(f"✖ logs 表缺少以下语言列：{', '.join(missing)}")
+		print("  请先执行迁移：python3 data/scripts/migrate_logs_multilang.py")
+		print("  （或直接执行 db_structure/logs.sql 中对应的 ADD COLUMN 语句）")
 		sys.exit(1)
 
 
@@ -155,48 +160,49 @@ def is_same_log(left: str | None, right: str | None) -> bool:
 	return str(left).strip() == str(right).strip()
 
 
-def write_log_column(rom_id: int, column: str, log: str, region: str,
-					 stats: dict, per_locale: dict, dry_run: bool = False) -> bool:
-	"""写入单个语种的日志（cn 区域同时写 release_date）
+def write_rom_logs(rom_id: int, langs: dict, region: str, stats: dict, per_locale: dict,
+				   dry_run: bool = False) -> bool:
+	"""写入一个 ROM 的多语言日志（cn 区域同时写 release_date）
 
-	DatabaseManager.execute 默认会把 SQL 异常吞成 None，这里用 raise_on_error=True
-	让失败显形：计入 write_failed 并打印首个错误，避免「报告写入 N 但库里没有」。
+	langs 已是 {语言列: 原文对象}，由 LogStore.write_logs 重新分组写入 logs 表并返回
+	roms.logs 的 ID 引用结构。DatabaseManager.execute 默认会把 SQL 异常吞成 None，
+	这里用 raise_on_error=True 让失败显形：计入 write_failed 并打印首个错误。
 	"""
 	prefix = "[dry-run] " if dry_run else ""
 	if dry_run:
 		stats['updated'] += 1
-		per_locale[column]['updated'] += 1
-		if stats['updated'] <= 3:
-			print(f"\n{prefix}将写入 {column} id={rom_id}: {str(log)[:80]}...")
+		print(f"\n{prefix}将写入 id={rom_id} 的语言：{', '.join(sorted(langs))}")
 		return True
 
-	# 原文 JSON -> logs 表 ID 引用结构（幂等；见 miroms/logs_store.py）
-	encoded = common.LogStore.encode_value(log)
+	try:
+		encoded = common.LogStore.write_logs(langs)
+	except Exception as exc:
+		stats['write_failed'] += 1
+		if stats['write_failed'] == 1:
+			print(f"\n✖ 日志分组写入失败（id={rom_id}）：{type(exc).__name__}: {exc}")
+		return False
 
 	try:
 		if region == 'cn':
 			common.DatabaseManager.execute(
-				f"UPDATE roms SET {column} = %s, release_date = %s WHERE id = %s",
+				"UPDATE roms SET logs = %s, release_date = %s WHERE id = %s",
 				params=(encoded, date.today().strftime('%Y-%m-%d'), rom_id),
-				raise_on_error=True
+				raise_on_error=True,
 			)
 		else:
 			common.DatabaseManager.execute(
-				f"UPDATE roms SET {column} = %s WHERE id = %s",
-				params=(encoded, rom_id),
-				raise_on_error=True
+				"UPDATE roms SET logs = %s WHERE id = %s",
+				params=(encoded, rom_id), raise_on_error=True,
 			)
 	except Exception as exc:
 		stats['write_failed'] += 1
-		per_locale[column]['write_failed'] += 1
 		if stats['write_failed'] == 1:
-			print(f"\n✖ 写入失败（{column} id={rom_id}）：{type(exc).__name__}: {exc}")
+			print(f"\n✖ 写入失败（id={rom_id}）：{type(exc).__name__}: {exc}")
 		return False
 
 	stats['updated'] += 1
-	per_locale[column]['updated'] += 1
 	if stats['updated'] == 1:
-		print(f"\n✓ 首次写入成功：{column} id={rom_id} {str(log)[:80]}...")
+		print(f"\n✓ 首次写入成功：id={rom_id} 语言 {', '.join(sorted(langs))}")
 	return True
 
 
@@ -220,21 +226,38 @@ def select_locales(names: list[str] | None) -> list[dict]:
 
 
 def collect_pending_ids(locales: list[dict], min_id: int = 0, limit: int = 0) -> dict:
-	"""每个语种查一次库，返回 {列名: [待补 id...]}（由新到旧）"""
+	"""每个语种查一次待补 id，返回 {列名: [待补 id...]}（由新到旧）
+
+	更新日志已改为「同一日志多语言一行」的 logs 表 + roms 单列日志结构，
+	因此不再能用 `WHERE logs_ja IS NULL` 判断，改为把候选 ROM 的 logs 解回各语言，
+	再挑出缺少该语言的 id。
+	"""
+	try:
+		rows = common.DatabaseManager.execute(
+			"SELECT id, logs FROM roms "
+			"WHERE branch != 'X' AND (tag != 'CnOB' OR tag IS NULL) ORDER BY id DESC",
+			fetch_one=False, raise_on_error=True,
+		)
+	except Exception as exc:
+		print(f"✖ 查询待补记录失败：{type(exc).__name__}: {exc}")
+		sys.exit(1)
+
+	present: dict[int, set] = {}
+	for row in rows or []:
+		rom_id, value = row[0], row[1]
+		if not value:
+			present[rom_id] = set()
+			continue
+		try:
+			parsed = json.loads(value)
+			present[rom_id] = set(common.LogStore.build_localized(parsed).keys())
+		except (json.JSONDecodeError, TypeError):
+			present[rom_id] = set()
+
 	pending: dict[str, list[int]] = {}
 	for cfg in locales:
 		column = cfg['column']
-		try:
-			result = common.DatabaseManager.execute(
-				f"SELECT id FROM roms WHERE logs_zh IS NULL AND branch != 'X' AND (tag != 'CnOB' OR tag IS NULL) ORDER BY id DESC",
-				fetch_one=False, raise_on_error=True
-			)
-		except Exception as exc:
-			print(f"✖ 查询 {column} 待补记录失败：{type(exc).__name__}: {exc}")
-			sys.exit(1)
-
-		# SQL 已按 id DESC 返回，这里保持「由新到旧」，--limit 截断的就是最新的 N 条
-		ids = [row[0] for row in result or []]
+		ids = [rom_id for rom_id, langs in present.items() if column not in langs]
 		raw_total = len(ids)
 		if min_id:
 			ids = [rom_id for rom_id in ids if rom_id > min_id]
@@ -312,7 +335,14 @@ def fetch_changelogs(locales: list[dict], min_id: int = 46000, limit: int = 0,
 			'version': info_row[5],
 			'zone': info_row[6],
 		}
-		logs_en = info_row[7]
+		# 该 ROM 现有的各语言日志（语言列 -> 原文对象），新抓到的语种合并进去后整体回写
+		merged: dict = {}
+		if info_row[7]:
+			try:
+				merged = dict(common.LogStore.build_localized(json.loads(info_row[7])))
+			except (json.JSONDecodeError, TypeError):
+				merged = {}
+		logs_en = merged.get(common.CHANGELOG_BASE_COLUMN)
 		form = build_changelog_form(info)
 
 		columns = ','.join(cfg['column'] for cfg in targets)
@@ -325,6 +355,7 @@ def fetch_changelogs(locales: list[dict], min_id: int = 46000, limit: int = 0,
 		print(f"\r{rom_id} {info['version']} {info['device']} {idx}/{len(all_ids)} [{columns}]",
 			  end="", flush=True)
 
+		fetched: dict = {}
 		for cfg in targets:
 			column = cfg['column']
 			# 同一份表单，仅替换 l
@@ -347,7 +378,10 @@ def fetch_changelogs(locales: list[dict], min_id: int = 46000, limit: int = 0,
 					stats['fallback'] += 1
 					per_locale[column]['fallback'] += 1
 				else:
-					write_log_column(rom_id, column, log, info['region'], stats, per_locale, dry_run)
+					try:
+						fetched[column] = json.loads(log)
+					except (json.JSONDecodeError, TypeError):
+						fetched[column] = log
 			else:
 				stats['empty'] += 1
 				per_locale[column]['empty'] += 1
@@ -365,6 +399,12 @@ def fetch_changelogs(locales: list[dict], min_id: int = 46000, limit: int = 0,
 
 			if sleep:
 				time.sleep(sleep)
+
+		if fetched:
+			merged.update(fetched)
+			ok = write_rom_logs(rom_id, merged, info['region'], stats, per_locale, dry_run)
+			for column in fetched:
+				per_locale[column]['updated' if ok else 'write_failed'] += 1
 
 	print()
 	print("\n各语种处理结果（写入 / 回落英文跳过 / 无日志 / 请求失败 / 写入失败）：")
@@ -386,12 +426,12 @@ def fetch_changelogs(locales: list[dict], min_id: int = 46000, limit: int = 0,
 def probe(locales: list[dict], limit: int = 3, sleep: float = 0.0) -> None:
 	"""探测接口对各语种的返回情况：拿最近若干条已有英文日志的记录逐语种比对。"""
 	rows = common.DatabaseManager.execute(
-		"SELECT id, device, code, region, branch, android, version, zone, logs_en FROM roms "
-		"WHERE logs_en IS NOT NULL AND logs_en != '' AND branch != 'X' ORDER BY id DESC LIMIT %s",
+		"SELECT id, device, code, region, branch, android, version, zone, logs FROM roms "
+		"WHERE logs IS NOT NULL AND logs != '' AND branch != 'X' ORDER BY id DESC LIMIT %s",
 		params=(limit,), fetch_one=False
 	)
 	if not rows:
-		print("没有可用于探测的记录（需要已有 logs_en 的记录）")
+		print("没有可用于探测的记录（需要已有日志的记录）")
 		return
 
 	print(f"用最近 {len(rows)} 条记录探测 {len(locales)} 个语种：\n")
@@ -403,7 +443,11 @@ def probe(locales: list[dict], limit: int = 3, sleep: float = 0.0) -> None:
 			'device': row[1], 'code': row[2], 'region': row[3], 'branch': row[4],
 			'android': row[5], 'version': row[6], 'zone': row[7],
 		}
-		logs_en = row[8]
+		try:
+			current = common.LogStore.build_localized(json.loads(row[8])) if row[8] else {}
+		except (json.JSONDecodeError, TypeError):
+			current = {}
+		logs_en = current.get(common.CHANGELOG_BASE_COLUMN)
 		print(f"--- {info['device']} {info['version']} ({info['region']})")
 
 		form = build_changelog_form(info)
@@ -452,7 +496,7 @@ def main() -> None:
 
 	print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 开始获取 changelog...")
 	print_target()
-	# 探测只需要 logs_en 列，方便在补列之前先确认接口支持哪些语种
+	# 探测只需要英文列，方便在补列之前先确认接口支持哪些语种
 	verify_columns([common.find_changelog_locale(common.CHANGELOG_BASE_COLUMN)]
 				   if args.probe is not None else locales)
 

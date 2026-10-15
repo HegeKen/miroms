@@ -31,7 +31,7 @@ from miroms.network import NetworkClient
 from miroms.changelog import ChangelogManager
 from miroms.logs_store import LogStore
 from miroms.validator import DataValidator
-from miroms.exporters import exportV1, exportV2, exportV3
+from miroms.exporters import exportV1, exportV2, exportV3, export_dev
 
 __all__ = [
 	# 常量
@@ -48,5 +48,5 @@ __all__ = [
 	'FirmwareParser', 'DataRecorder', 'NetworkClient',
 	'ChangelogManager', 'DataValidator', 'LogStore',
 	# 导出
-	'exportV1', 'exportV2', 'exportV3',
+	'exportV1', 'exportV2', 'exportV3', 'export_dev',
 ]

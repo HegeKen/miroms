@@ -24,6 +24,14 @@ try:
 except Exception as e:
   print(f"统计生成失败: {e}", file=sys.stderr)
 
+# 导出开发版（周更）公告与更新日志（供官网 /dev 页面按周展示）
+print("\n--- 导出开发版周报 (v3/dev) ---")
+try:
+  dev_index = common.export_dev()
+  print(f"开发版周报已生成：{dev_index['total']} 个周次（最近第 {dev_index['latest']} 周）")
+except Exception as e:
+  print(f"开发版周报生成失败: {e}", file=sys.stderr)
+
 # 导出完成后自动同步 index.json
 print("\n--- 同步 index.json ---")
 index_script = Path(__file__).resolve().parent.parent.parent / 'app' / 'web' / 'scripts' / 'generate-index.mjs'

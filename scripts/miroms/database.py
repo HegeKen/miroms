@@ -102,6 +102,33 @@ class DatabaseManager:
 								cnx.close()
 
 		@classmethod
+		def execute_many(
+				cls,
+				sql: str,
+				seq_params,
+				raise_on_error: bool = False
+		) -> int:
+				"""批量执行同一条参数化 SQL（executemany），返回受影响行数
+
+				适合批量 INSERT / UPDATE（如迁移脚本逐行回写、批量插入 logs）。
+				"""
+				cnx = None
+				cursor = None
+				try:
+						cnx = cls._get_connection()
+						cursor = cnx.cursor()
+						cursor.executemany(sql, seq_params)
+						return cursor.rowcount if cursor.rowcount and cursor.rowcount > 0 else 0
+				except Exception as e:
+						logger.error(f"SQL批量执行错误: {sql[:100]}..., 错误: {type(e).__name__}: {e}")
+						if raise_on_error:
+								raise
+						return 0
+				finally:
+						if cursor:
+								cursor.close()
+
+		@classmethod
 		def query_one(cls, sql: str, params: Optional[Union[Tuple, List, Dict]] = None) -> Optional[Tuple]:
 				"""查询单条记录（参数化安全版）"""
 				return cls.execute(sql, params=params, fetch_one=True)

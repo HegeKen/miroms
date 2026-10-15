@@ -1,0 +1,265 @@
+{
+  "week": 569,
+  "region": "cn",
+  "zone": 1,
+  "bigver": "MIUI 13",
+  "versions": "V13.1.22.10.11.DEV",
+  "title": {
+    "zh": "MIUI第569周发布公告及更新日志",
+    "en": "The 569th MIUI Weekly Update Changelogs"
+  },
+  "postId": "38604936",
+  "update": "2022-10-14 00:00:00",
+  "release": "2022-10-14",
+  "description": [
+    {
+      "zh": "Redmi K40S 首次发布基于 Android 13的MIUI开发版, 多项优化与改进, 向勇敢尝鲜的米粉们致敬",
+      "en": "We're releasing MIUI China Beta Based on Android 13 for Redmi K40S for the first time, includes minor improvements ,salute to our early adapter fans."
+    },
+    {
+      "zh": "为给米粉朋友们相对更好的使用体验，由于正在排查重启后进入系统异常的问题，Redmi Note 11T Pro、Redmi Note 11T Pro+ 已暂停发布，感谢大家的理解",
+      "en": "We are aware of the bug causing System fails after reboot on various devices, this week's update for Redmi Note 11T Pro、Redmi Note 11T Pro+ has been suspended, thank you for your understanding."
+    },
+    {
+      "zh": "Redmi K50 Pro 基于Android 13的MIUI开发版测试已告一段落，感谢积极参与的米粉朋友们的支持，我们预计在12月左右全量推送该机型基于Android 13的MIUI开发版，届时参与本次内测的米粉朋友可直接OTA升级，如需线刷回基于Android 12的MIUI开发版",
+      "en": "MIUI Based on Android 13 for Redmi K50 Pro has ended, thanks for all Mi Fans support, we'll roll out official Android 13 updates during december, all user can update over the air, if you want to downgrade to MIUI based on Android 12, please flash via fastboot mode"
+    },
+    {
+      "zh": "由于为配合软件系统架构变更，开发版部分机型版本号有变更，感谢米粉朋友们的理解",
+      "en": "Because of structural changes, MIUI China Beta version naming scheme has altered for some devices, thank you for your understanding."
+    },
+    {
+      "zh": "如卡刷未切换成功的米粉朋友，请将数据完整备份电脑后，尝试线刷方法进行切换包",
+      "en": "If you failed switching to MIUI Beta via recovery flash, please update via fastboot."
+    },
+    {
+      "zh": "为了给米粉朋友们相对更好的使用体验，我们将会对MIUI开发模式进行升级",
+      "en": "For better user experience, we've deviced make some changes to our development methods."
+    },
+    {
+      "zh": "开发版不断迭代中，因不同机型的系统底层存在部分差异，部分修复可能不完全显示在当天公告日志里，希望给大家相对更好的使用体验，感谢大家的支持和理解",
+      "en": "MIUI China Beta is in continuous development, and because of structural differences, some changes may not be included in this changelog , thank you for your understanding."
+    },
+    {
+      "zh": "2022年10月31日起，以下机型将停止开发版内测公测：小米10 至尊纪念版、Redmi K30S 至尊纪念版、Redmi Note 9 Pro、Redmi Note 9 4G、Redmi 10X、Redmi 10X Pro、Redmi K30 至尊纪念版、Redmi Note 10、Redmi Note 11 5G、Redmi Note 11E Pro、Redmi Note 9",
+      "en": "Starting from October 31, 2022, Mi 10 Ultra/Redmi K30S Ultra/Redmi K30 Ultra/Redmi Note 9 Pro/Redmi Note 9 4G/Redmi 10X/Redmi 10X Pro/Redmi Note 10/Redmi Note 11 5G/Redmi Note 11E Pro/Redmi Note 9 stops rolling MIUI China Beta updates."
+    }
+  ],
+  "attention": [
+    {
+      "zh": "MIUI开发版可进入“设置→我的设备→MIUI版本”在线升级，升级前务必备份重要数据",
+      "en": "You can upgrade MIUI China Beta by 'Settings→My Device→MIUI version', please make sure you've backed up important personal data before update."
+    },
+    {
+      "zh": "部分机型可能因功能进版时间略有差异，具体功能请以手机端展示日志为准",
+      "en": "Some devices will get these same features later some time, please view specific changelog in the 'System Update' App."
+    },
+    {
+      "zh": "开发版：是提供给少数资深极客精神米粉的测试版本，用于问题反馈和测试，稳定性不可预估，感谢勇敢冒险者试用开发版。版本根据项目需要和实际情况发布，存在停版的可能，推荐发烧友米粉尝鲜体验，遇到问题请理性反馈，关注后续版本升级。",
+      "en": "China Beta: China Beta is a test version that MIUI Dev Team prepared for Geeky Mi Fans, more focused on feature testing and bug feedback, stablity is not predictable, We(MIUI Dev Team) thank you for all your support. Version is released according to the needs of the project and the actual situation, and there is a possibility of suspension, If you encounter bugs, please send us bug report in Xiaomi Community(China), and pay attention to the subsequent upgrade."
+    },
+    {
+      "zh": "为提升用户体验，MIUI系统部分APP解耦合，在应用商店可升级，是MIUI系统的一部分。开发版不断迭代中，部分修复有时可能不完全显示在当天公告日志里，感谢大家的理解",
+      "en": "In order to improve the user experience, bunch of the MIUI system APPs are Deodexed and can be upgraded in the Mi GetApps/Google Play . As a part of the MIUI system, some APPs bug fixes may not be included in this changelog , thank you for your understanding."
+    }
+  ],
+  "suspended": [],
+  "devices": [
+    {
+      "device": "cas",
+      "name": {
+        "zh": "小米 10 至尊纪念版",
+        "en": "Mi 10 Ultra"
+      }
+    },
+    {
+      "device": "atom",
+      "name": {
+        "zh": "Redmi 10X 5G",
+        "en": "Redmi 10X 5G"
+      }
+    },
+    {
+      "device": "bomb",
+      "name": {
+        "zh": "Redmi 10X Pro",
+        "en": "Redmi 10X Pro"
+      }
+    },
+    {
+      "device": "lime",
+      "name": {
+        "zh": "Redmi Note 9 4G",
+        "en": "Redmi Note 9 4G"
+      }
+    },
+    {
+      "device": "cannon",
+      "name": {
+        "zh": "Redmi Note 9 5G",
+        "en": "Redmi Note 9 5G"
+      }
+    },
+    {
+      "device": "gauguin",
+      "name": {
+        "zh": "Redmi Note 9 Pro 5G",
+        "en": "Redmi Note 9 Pro 5G"
+      }
+    },
+    {
+      "device": "xaga",
+      "name": {
+        "zh": "Redmi Note 11T Pro/Pro+",
+        "en": "Redmi Note 11T Pro/Pro+"
+      }
+    },
+    {
+      "device": "cezanne",
+      "name": {
+        "zh": "Redmi K30 至尊纪念版",
+        "en": "Redmi K30 Ultra"
+      }
+    },
+    {
+      "device": "apollo",
+      "name": {
+        "zh": "Redmi K30S 至尊纪念版",
+        "en": "Redmi K30S Ultra"
+      }
+    }
+  ],
+  "roms": [
+    {
+      "device": "cas",
+      "name": {
+        "zh": "小米 10 至尊纪念版",
+        "en": "Mi 10 Ultra"
+      },
+      "version": "V13.1.22.10.11.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_CAS_V13.1.22.10.11.DEV_b42cbefe68_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "atom",
+      "name": {
+        "zh": "Redmi 10X 5G",
+        "en": "Redmi 10X 5G"
+      },
+      "version": "V13.1.22.10.11.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_ATOM_V13.1.22.10.11.DEV_233c6c980b_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "bomb",
+      "name": {
+        "zh": "Redmi 10X Pro",
+        "en": "Redmi 10X Pro"
+      },
+      "version": "V13.1.22.10.11.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_BOMB_V13.1.22.10.11.DEV_e0a5a9b966_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "lime",
+      "name": {
+        "zh": "Redmi Note 9 4G",
+        "en": "Redmi Note 9 4G"
+      },
+      "version": "V13.1.22.10.11.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_LIME_V13.1.22.10.11.DEV_0d42183f0d_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "cannon",
+      "name": {
+        "zh": "Redmi Note 9 5G",
+        "en": "Redmi Note 9 5G"
+      },
+      "version": "V13.1.22.10.11.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_CANNON_V13.1.22.10.11.DEV_0f4b87da23_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "gauguin",
+      "name": {
+        "zh": "Redmi Note 9 Pro 5G",
+        "en": "Redmi Note 9 Pro 5G"
+      },
+      "version": "V13.1.22.10.11.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_GAUGUIN_V13.1.22.10.11.DEV_cf8b70f216_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "xaga",
+      "name": {
+        "zh": "Redmi Note 11T Pro/Pro+",
+        "en": "Redmi Note 11T Pro/Pro+"
+      },
+      "version": "V13.1.22.10.11.DEV",
+      "android": "13.0",
+      "release": "",
+      "recovery": "miui_XAGA_V13.1.22.10.11.DEV_65a32558ee_13.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "cezanne",
+      "name": {
+        "zh": "Redmi K30 至尊纪念版",
+        "en": "Redmi K30 Ultra"
+      },
+      "version": "V13.1.22.10.11.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_CEZANNE_V13.1.22.10.11.DEV_b0328dd778_12.0.zip",
+      "fastboot": ""
+    },
+    {
+      "device": "apollo",
+      "name": {
+        "zh": "Redmi K30S 至尊纪念版",
+        "en": "Redmi K30S Ultra"
+      },
+      "version": "V13.1.22.10.11.DEV",
+      "android": "12.0",
+      "release": "",
+      "recovery": "miui_APOLLO_V13.1.22.10.11.DEV_dbe58048a2_12.0.zip",
+      "fastboot": ""
+    }
+  ],
+  "logs": {
+    "logs_zh": {
+      "小米笔记": [
+        "新增文件夹快速选择栏，支持滑动查看与点击切换",
+        "修复设置皮肤的笔记偶现语音条UI显示异常的问题",
+        "修复小窗状态下引导文案显示不全的问题"
+      ],
+      "应用商店": [
+        "优化商店多处文案，提示引导更清晰"
+      ]
+    },
+    "logs_en": {
+      "Mi Notes": [
+        "Adding new folder switcher, you can access by tapping or sliding inside the app.",
+        "Fixing recording ui bug on skinned notes.",
+        "Fixing texts not displaying fully in window mode."
+      ],
+      "Mi GetApps": [
+        "Aptomizing labels in GetApp to make it more user friendly."
+      ]
+    }
+  },
+  "source": "nuxtmr"
+}
