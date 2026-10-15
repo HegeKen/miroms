@@ -81,7 +81,27 @@ class _RowIndex:
 			self._register(len(self.rows) - 1)
 
 	def flush(self) -> None:
-		"""把行池的变更落库：新行 INSERT（逐条取 lastrowid），补齐语言的行 UPDATE（COALESCE）"""
+		"""把行池的变更落库：新行 INSERT（逐条取 lastrowid），补齐语言的行 UPDATE（COALESCE）
+
+		落库前会校验行池里已有的 id 是否仍然存在：长时间运行的进程（如定时抓取）可能持有
+		已被其它进程合并 / 删除的行，若不校验就会往 roms.logs 写死引用。失效的行会针对
+		最新数据重新解析（复用幸存的分组，或改为新插入一行）。
+		"""
+		existing_ids = [int(row['id']) for row in self.rows if row.get('id') is not None]
+		stale = LogStore._missing_ids(existing_ids)
+		if stale:
+			fresh = LogStore.load_index(force=True)
+			for row in self.rows:
+				if row.get('id') is None or int(row['id']) not in stale:
+					continue
+				found = fresh.resolve(row['type'], row['texts'])
+				if found is not None and fresh.rows[found].get('id') is not None:
+					row['id'] = int(fresh.rows[found]['id'])
+				else:
+					row['id'] = None   # 没有可复用的分组，按新行插入
+				row['dirty'] = False
+			logger.warning(f"行池中有 {len(stale)} 个分组已被其它进程删除，已重新解析")
+
 		fills: List[Tuple[int, Dict[str, str]]] = []
 		for row in self.rows:
 			if row.get('id') is None:
@@ -396,6 +416,22 @@ class LogStore:
 			refs.append([module_index, entry_indices, int(position.get('mask', 0))])
 		cls.last_conflicts = index.conflicts
 		return index.rows, refs
+
+	@classmethod
+	def _missing_ids(cls, ids: Sequence[int]) -> set:
+		"""返回给定 id 中已不存在的部分（批量查库）"""
+		wanted = {int(i) for i in ids}
+		if not wanted:
+			return set()
+		found = set()
+		chunk_list = list(wanted)
+		for i in range(0, len(chunk_list), 500):
+			chunk = chunk_list[i:i + 500]
+			rows = DatabaseManager.query_all(
+				f"SELECT `id` FROM `logs` WHERE `id` IN ({','.join(['%s'] * len(chunk))})",
+				params=tuple(chunk))
+			found.update(int(row[0]) for row in rows or [])
+		return wanted - found
 
 	@classmethod
 	def _fetch_all_rows(cls) -> List[Dict[str, Any]]:
