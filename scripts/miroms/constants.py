@@ -1104,8 +1104,9 @@ CHANGELOG_LOCALES = [
 	{"column": "logs_vi",    "zh": "越南文", "api": "vi_VN", "site": "vi",      "name": "Tiếng Việt",     "region": "vn"},
 	{"column": "logs_th",    "zh": "泰文", "api": "th_TH", "site": "th",      "name": "ไทย",            "region": "th"},
 	# 阿拉伯语：实测接口只对 ar_EG 返回真译文，ar / ar_SA / ar_AE / ar_MA 等其余阿拉伯语
-	# locale 一律回落英文，因此 api 固定用 ar_EG（新增条目请追加在末尾，
-	# CHANGELOG_EXTRA_COLUMNS 的顺序决定 exporters 的 SELECT 下标，插队会错位）
+	# locale 一律回落英文，因此 api 固定用 ar_EG。新增语种直接追加在末尾即可：
+	# logs 表的列集合由本表生成，而 roms.logs 的语言掩码按本表顺序取位，
+	# 插队会让已入库数据的掩码错位，所以只追加、不插队。
 	{"column": "logs_ar",    "zh": "阿拉伯文", "api": "ar_EG", "site": "ar",      "name": "العربية",        "region": "eg/sa/ma"},
 	# 印地语：实测只有 hi_IN 有译文，其余 hi 系 locale 会回落英文。
 	# 站点（app/web）已接入 hi 语种，日志通过 web 的 logs.ts 键名映射（hi -> logs_in）消费。
@@ -1118,10 +1119,10 @@ CHANGELOG_LOCALES = [
 	{"column": "logs_bo",    "zh": "藏文", "api": "bo_CN", "site": "bo",      "name": "བོད་ཡིག",          "region": "cn"},
 ]
 
-# 全部更新日志列名（含 logs_zh / logs_en）
+# 全部语言列名（logs_zh / logs_zh_tw / logs_en / ... 顺序即 roms.logs 语言掩码的位序）
 CHANGELOG_COLUMNS = [item["column"] for item in CHANGELOG_LOCALES]
 
-# 除中文外的其他语言列（导出时 logs_zh / logs_en 位置固定，其余列追加在末尾）
+# 除简体中文与英文外的其他语言列（保留给按语种批处理的脚本使用）
 CHANGELOG_EXTRA_COLUMNS = [c for c in CHANGELOG_COLUMNS if c not in ("logs_zh", "logs_en")]
 
 # 判断「接口没有该语种译文」的基准列：与英文完全相同即视为回落
