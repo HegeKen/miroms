@@ -1,0 +1,547 @@
+{
+	"device": "arctic",
+	"name": {
+		"zh": "REDMI A7 Pro / POCO C81",
+		"en": "REDMI A7 Pro / POCO C81"
+	},
+	"code": "BV",
+	"supports": [
+		"OS3.0"
+	],
+	"android": [
+		"16.0"
+	],
+	"type": "phone",
+	"miui": "no",
+	"merged": "no",
+	"branches": [
+		{
+			"name": {
+				"zh": "小米澎湃 OS 国际正式版",
+				"en": "Xiaomi HyperOS Global Stable"
+			},
+			"branchCode": "arctic_global",
+			"brand": "REDMI",
+			"device": {
+				"zh": "REDMI A7 Pro",
+				"en": "REDMI A7 Pro"
+			},
+			"idtag": "GBOO",
+			"tag": "MIXM",
+			"branchtag": "F",
+			"table": [
+				"os",
+				"android",
+				"release",
+				"aspatch",
+				"recovery",
+				"fastboot"
+			],
+			"show": "1",
+			"carrier": [
+				""
+			],
+			"region": "global",
+			"zone": "2",
+			"ep": "0",
+			"roms": {
+				"OS3.0.13.0.WBVMIXM": {
+					"os": "OS3.0.13.0.WBVMIXM",
+					"android": "16.0",
+					"release": "2026-09-28",
+					"aspatch": "2026-09-01",
+					"recovery": "arctic_global-ota_full-OS3.0.13.0.WBVMIXM-user-16.0-4cbd1227d7.zip",
+					"fastboot": ""
+				},
+				"OS3.0.12.0.WBVMIXM": {
+					"os": "OS3.0.12.0.WBVMIXM",
+					"android": "16.0",
+					"release": "2026-07-31",
+					"aspatch": "2026-08-01",
+					"recovery": "arctic_global-ota_full-OS3.0.12.0.WBVMIXM-user-16.0-cf14a45af2.zip",
+					"fastboot": "arctic_global-images-OS3.0.12.0.WBVMIXM-user-20260730.0000.00-16.0-global-5463323933.tgz"
+				},
+				"OS3.0.11.0.WBVMIXM": {
+					"os": "OS3.0.11.0.WBVMIXM",
+					"android": "16.0",
+					"release": "2026-07-23",
+					"aspatch": "2026-07-01",
+					"recovery": "arctic_global-ota_full-OS3.0.11.0.WBVMIXM-user-16.0-8bf3cf1ab2.zip",
+					"fastboot": "arctic_global-images-OS3.0.11.0.WBVMIXM-user-20260716.0000.00-16.0-global-79893d86e9.tgz"
+				},
+				"OS3.0.8.0.WBVMIXM": {
+					"os": "OS3.0.8.0.WBVMIXM",
+					"android": "16.0",
+					"release": "2026-06-09",
+					"aspatch": "2026-05-01",
+					"recovery": "arctic_global-ota_full-OS3.0.8.0.WBVMIXM-user-16.0-f6917a18f8.zip",
+					"fastboot": "arctic_global-images-OS3.0.8.0.WBVMIXM-user-20260518.0000.00-16.0-global-6670002810.tgz"
+				},
+				"OS3.0.7.0.WBVMIXM": {
+					"os": "OS3.0.7.0.WBVMIXM",
+					"android": "16.0",
+					"release": "2026-05-08",
+					"aspatch": "2026-04-01",
+					"recovery": "arctic_global-ota_full-OS3.0.7.0.WBVMIXM-user-16.0-db1d34b4a8.zip",
+					"fastboot": "arctic_global-images-OS3.0.7.0.WBVMIXM-user-20260428.0000.00-16.0-global-4d3617bf9d.tgz"
+				},
+				"OS3.0.6.0.WBVMIXM": {
+					"os": "OS3.0.6.0.WBVMIXM",
+					"android": "16.0",
+					"release": "2026-04-03",
+					"aspatch": "2026-02-01",
+					"recovery": "arctic_global-ota_full-OS3.0.6.0.WBVMIXM-user-16.0-a33067d533.zip",
+					"fastboot": "arctic_global-images-OS3.0.6.0.WBVMIXM-user-20260318.0000.00-16.0-global-dde688e7b5.tgz"
+				},
+				"OS3.0.5.0.WBVMIXM": {
+					"os": "OS3.0.5.0.WBVMIXM",
+					"android": "16.0",
+					"release": "2026-04-01",
+					"aspatch": "2026-02-01",
+					"recovery": "arctic_global-ota_full-OS3.0.5.0.WBVMIXM-user-16.0-07a935ce66.zip",
+					"fastboot": "arctic_global-images-OS3.0.5.0.WBVMIXM-user-20260306.0000.00-16.0-global-3d59d676b6.tgz"
+				}
+			}
+		},
+		{
+			"name": {
+				"zh": "小米澎湃 OS 国际 DC 正式版",
+				"en": "Xiaomi HyperOS Global DC Stable"
+			},
+			"branchCode": "arctic_dc_global",
+			"brand": "REDMI",
+			"device": {
+				"zh": "REDMI A7 Pro",
+				"en": "REDMI A7 Pro"
+			},
+			"idtag": "GBDC",
+			"tag": "MIDC",
+			"branchtag": "F",
+			"table": [
+				"os",
+				"android",
+				"release",
+				"aspatch",
+				"recovery",
+				"fastboot"
+			],
+			"show": "0",
+			"carrier": [
+				"dc"
+			],
+			"region": "global",
+			"zone": "2",
+			"ep": "0",
+			"roms": {
+				"OS3.0.7.0.WBVMIDC": {
+					"os": "OS3.0.7.0.WBVMIDC",
+					"android": "16.0",
+					"release": "2026-10-08",
+					"aspatch": "2026-09-01",
+					"recovery": "arctic_dc_global-ota_full-OS3.0.7.0.WBVMIDC-user-16.0-a3bd685cc3.zip",
+					"fastboot": ""
+				},
+				"OS3.0.6.0.WBVMIDC": {
+					"os": "OS3.0.6.0.WBVMIDC",
+					"android": "16.0",
+					"release": "2026-07-13",
+					"aspatch": "2026-06-01",
+					"recovery": "arctic_dc_global-ota_full-OS3.0.6.0.WBVMIDC-user-16.0-d480614d42.zip",
+					"fastboot": ""
+				},
+				"OS3.0.4.0.WBVMIDC": {
+					"os": "OS3.0.4.0.WBVMIDC",
+					"android": "16.0",
+					"release": "2026-06-06",
+					"aspatch": "2026-05-01",
+					"recovery": "arctic_dc_global-ota_full-OS3.0.4.0.WBVMIDC-user-16.0-368fdaff7b.zip",
+					"fastboot": ""
+				},
+				"OS3.0.3.0.WBVMIDC": {
+					"os": "OS3.0.3.0.WBVMIDC",
+					"android": "16.0",
+					"release": "2026-04-28",
+					"aspatch": "2026-03-01",
+					"recovery": "arctic_dc_global-ota_full-OS3.0.3.0.WBVMIDC-user-16.0-9f81248ae4.zip",
+					"fastboot": ""
+				}
+			}
+		},
+		{
+			"name": {
+				"zh": "小米澎湃 OS 欧洲EEA正式版",
+				"en": "Xiaomi HyperOS Europe EEA Stable"
+			},
+			"branchCode": "arctic_eea_global",
+			"brand": "REDMI",
+			"device": {
+				"zh": "REDMI A7 Pro",
+				"en": "REDMI A7 Pro"
+			},
+			"idtag": "EEAO",
+			"tag": "EUXM",
+			"branchtag": "F",
+			"table": [
+				"os",
+				"android",
+				"release",
+				"aspatch",
+				"recovery",
+				"fastboot"
+			],
+			"show": "1",
+			"carrier": [
+				""
+			],
+			"region": "eea",
+			"zone": "2",
+			"ep": "0",
+			"roms": {
+				"OS3.0.9.0.WBVEUXM": {
+					"os": "OS3.0.9.0.WBVEUXM",
+					"android": "16.0",
+					"release": "2026-08-27",
+					"aspatch": "2026-08-01",
+					"recovery": "arctic_eea_global-ota_full-OS3.0.9.0.WBVEUXM-user-16.0-60bb97d16e.zip",
+					"fastboot": "arctic_eea_global-images-OS3.0.9.0.WBVEUXM-user-20260821.0000.00-16.0-eea-fcaeba4d72.tgz"
+				},
+				"OS3.0.8.0.WBVEUXM": {
+					"os": "OS3.0.8.0.WBVEUXM",
+					"android": "16.0",
+					"release": "2026-07-03",
+					"aspatch": "2026-06-01",
+					"recovery": "arctic_eea_global-ota_full-OS3.0.8.0.WBVEUXM-user-16.0-325543de43.zip",
+					"fastboot": "arctic_eea_global-images-OS3.0.8.0.WBVEUXM-user-20260624.0000.00-16.0-eea-5b2771a432.tgz"
+				},
+				"OS3.0.7.0.WBVEUXM": {
+					"os": "OS3.0.7.0.WBVEUXM",
+					"android": "16.0",
+					"release": "2026-05-19",
+					"aspatch": "2026-05-01",
+					"recovery": "arctic_eea_global-ota_full-OS3.0.7.0.WBVEUXM-user-16.0-e96afde1fd.zip",
+					"fastboot": "arctic_eea_global-images-OS3.0.7.0.WBVEUXM-user-20260512.0000.00-16.0-eea-a873f3f4b0.tgz"
+				},
+				"OS3.0.6.0.WBVEUXM": {
+					"os": "OS3.0.6.0.WBVEUXM",
+					"android": "16.0",
+					"release": "2026-04-24",
+					"aspatch": "2026-03-01",
+					"recovery": "arctic_eea_global-ota_full-OS3.0.6.0.WBVEUXM-user-16.0-c8160c5f95.zip",
+					"fastboot": "arctic_eea_global-images-OS3.0.6.0.WBVEUXM-user-20260409.0000.00-16.0-eea-8581295ba6.tgz"
+				},
+				"OS3.0.5.0.WBVEUXM": {
+					"os": "OS3.0.5.0.WBVEUXM",
+					"android": "16.0",
+					"release": "2026-03-27",
+					"aspatch": "2026-03-01",
+					"recovery": "arctic_eea_global-ota_full-OS3.0.5.0.WBVEUXM-user-16.0-506f1d713d.zip",
+					"fastboot": "arctic_eea_global-images-OS3.0.5.0.WBVEUXM-user-20260318.0000.00-16.0-eea-3628698109.tgz"
+				}
+			}
+		},
+		{
+			"name": {
+				"zh": "小米澎湃 OS 俄罗斯正式版",
+				"en": "Xiaomi HyperOS Russia Stable"
+			},
+			"branchCode": "arctic_ru_global",
+			"brand": "REDMI",
+			"device": {
+				"zh": "REDMI A7 Pro",
+				"en": "REDMI A7 Pro"
+			},
+			"idtag": "RUSO",
+			"tag": "RUXM",
+			"branchtag": "F",
+			"table": [
+				"os",
+				"android",
+				"release",
+				"aspatch",
+				"recovery",
+				"fastboot"
+			],
+			"show": "1",
+			"carrier": [
+				""
+			],
+			"region": "ru",
+			"zone": "2",
+			"ep": "0",
+			"roms": {
+				"OS3.0.7.0.WBVRUXM": {
+					"os": "OS3.0.7.0.WBVRUXM",
+					"android": "16.0",
+					"release": "2026-08-04",
+					"aspatch": "2026-08-01",
+					"recovery": "arctic_ru_global-ota_full-OS3.0.7.0.WBVRUXM-user-16.0-387b7bfca6.zip",
+					"fastboot": "arctic_ru_global-images-OS3.0.7.0.WBVRUXM-user-20260731.0000.00-16.0-ru-3b87fb32ca.tgz"
+				},
+				"OS3.0.5.0.WBVRUXM": {
+					"os": "OS3.0.5.0.WBVRUXM",
+					"android": "16.0",
+					"release": "2026-06-01",
+					"aspatch": "2026-05-01",
+					"recovery": "arctic_ru_global-ota_full-OS3.0.5.0.WBVRUXM-user-16.0-52bbf31c9f.zip",
+					"fastboot": "arctic_ru_global-images-OS3.0.5.0.WBVRUXM-user-20260522.0000.00-16.0-ru-917138958a.tgz"
+				},
+				"OS3.0.4.0.WBVRUXM": {
+					"os": "OS3.0.4.0.WBVRUXM",
+					"android": "16.0",
+					"release": "2026-04-16",
+					"aspatch": "2026-02-01",
+					"recovery": "arctic_ru_global-ota_full-OS3.0.4.0.WBVRUXM-user-16.0-51393ac275.zip",
+					"fastboot": "arctic_ru_global-images-OS3.0.4.0.WBVRUXM-user-20260318.0000.00-16.0-ru-1ae8366794.tgz"
+				}
+			}
+		},
+		{
+			"name": {
+				"zh": "小米澎湃 OS 印度正式版",
+				"en": "Xiaomi HyperOS India Stable"
+			},
+			"branchCode": "arctic_in_global",
+			"brand": "POCO",
+			"device": {
+				"zh": "POCO C81",
+				"en": "POCO C81"
+			},
+			"idtag": "INSO",
+			"tag": "INXM",
+			"branchtag": "F",
+			"table": [
+				"os",
+				"android",
+				"release",
+				"aspatch",
+				"recovery",
+				"fastboot"
+			],
+			"show": "1",
+			"carrier": [
+				""
+			],
+			"region": "in",
+			"zone": "2",
+			"ep": "0",
+			"roms": {
+				"OS3.0.5.0.WBVINXM": {
+					"os": "OS3.0.5.0.WBVINXM",
+					"android": "16.0",
+					"release": "2026-09-25",
+					"aspatch": "2026-09-01",
+					"recovery": "arctic_in_global-ota_full-OS3.0.5.0.WBVINXM-user-16.0-25c4d3d78e.zip",
+					"fastboot": "arctic_in_global-images-OS3.0.5.0.WBVINXM-user-20260917.0000.00-16.0-in-995b70aa74.tgz"
+				},
+				"OS3.0.4.0.WBVINXM": {
+					"os": "OS3.0.4.0.WBVINXM",
+					"android": "16.0",
+					"release": "2026-07-21",
+					"aspatch": "2026-07-01",
+					"recovery": "arctic_in_global-ota_full-OS3.0.4.0.WBVINXM-user-16.0-9d9d19e9d7.zip",
+					"fastboot": "arctic_in_global-images-OS3.0.4.0.WBVINXM-user-20260715.0000.00-16.0-in-be48762995.tgz"
+				},
+				"OS3.0.3.0.WBVINXM": {
+					"os": "OS3.0.3.0.WBVINXM",
+					"android": "16.0",
+					"release": "2026-06-11",
+					"aspatch": "2026-05-01",
+					"recovery": "arctic_in_global-ota_full-OS3.0.3.0.WBVINXM-user-16.0-feba710099.zip",
+					"fastboot": "arctic_in_global-images-OS3.0.3.0.WBVINXM-user-20260602.0000.00-16.0-in-8904532d0e.tgz"
+				},
+				"OS3.0.2.0.WBVINXM": {
+					"os": "OS3.0.2.0.WBVINXM",
+					"android": "16.0",
+					"release": "2026-04-24",
+					"aspatch": "2026-03-01",
+					"recovery": "arctic_in_global-ota_full-OS3.0.2.0.WBVINXM-user-16.0-1fe92770f9.zip",
+					"fastboot": "arctic_in_global-images-OS3.0.2.0.WBVINXM-user-20260323.0000.00-16.0-in-1fb30dee11.tgz"
+				},
+				"OS3.0.1.0.WBVINXM": {
+					"os": "OS3.0.1.0.WBVINXM",
+					"android": "16.0",
+					"release": "2026-04-24",
+					"aspatch": "2026-02-01",
+					"recovery": "arctic_in_global-ota_full-OS3.0.1.0.WBVINXM-user-16.0-ca01dc0b91.zip",
+					"fastboot": ""
+				}
+			}
+		},
+		{
+			"name": {
+				"zh": "小米澎湃 OS 印度尼西亚正式版",
+				"en": "Xiaomi HyperOS Indonesia Stable"
+			},
+			"branchCode": "arctic_id_global",
+			"brand": "REDMI",
+			"device": {
+				"zh": "REDMI A7 Pro",
+				"en": "REDMI A7 Pro"
+			},
+			"idtag": "IDSO",
+			"tag": "IDXM",
+			"branchtag": "F",
+			"table": [
+				"os",
+				"android",
+				"release",
+				"aspatch",
+				"recovery",
+				"fastboot"
+			],
+			"show": "1",
+			"carrier": [
+				""
+			],
+			"region": "id",
+			"zone": "2",
+			"ep": "0",
+			"roms": {
+				"OS3.0.5.0.WBVIDXM": {
+					"os": "OS3.0.5.0.WBVIDXM",
+					"android": "16.0",
+					"release": "2026-08-21",
+					"aspatch": "2026-08-01",
+					"recovery": "arctic_id_global-ota_full-OS3.0.5.0.WBVIDXM-user-16.0-d99e4fba96.zip",
+					"fastboot": "arctic_id_global-images-OS3.0.5.0.WBVIDXM-user-20260811.0000.00-16.0-id-42c1c3051e.tgz"
+				},
+				"OS3.0.4.0.WBVIDXM": {
+					"os": "OS3.0.4.0.WBVIDXM",
+					"android": "16.0",
+					"release": "2026-07-07",
+					"aspatch": "2026-06-01",
+					"recovery": "arctic_id_global-ota_full-OS3.0.4.0.WBVIDXM-user-16.0-811ca1f165.zip",
+					"fastboot": "arctic_id_global-images-OS3.0.4.0.WBVIDXM-user-20260625.0000.00-16.0-id-304b53fb88.tgz"
+				},
+				"OS3.0.3.0.WBVIDXM": {
+					"os": "OS3.0.3.0.WBVIDXM",
+					"android": "16.0",
+					"release": "2026-05-28",
+					"aspatch": "2026-05-01",
+					"recovery": "arctic_id_global-ota_full-OS3.0.3.0.WBVIDXM-user-16.0-0997a3c45e.zip",
+					"fastboot": "arctic_id_global-images-OS3.0.3.0.WBVIDXM-user-20260522.0000.00-16.0-id-b2351f6de5.tgz"
+				},
+				"OS3.0.2.0.WBVIDXM": {
+					"os": "OS3.0.2.0.WBVIDXM",
+					"android": "16.0",
+					"release": "2026-05-11",
+					"aspatch": "2026-03-01",
+					"recovery": "arctic_id_global-ota_full-OS3.0.2.0.WBVIDXM-user-16.0-638c3b2fb9.zip",
+					"fastboot": "arctic_id_global-images-OS3.0.2.0.WBVIDXM-user-20260327.0000.00-16.0-id-3277e74f51.tgz"
+				},
+				"OS3.0.1.0.WBVIDXM": {
+					"os": "OS3.0.1.0.WBVIDXM",
+					"android": "16.0",
+					"release": "2026-03-13",
+					"aspatch": "2026-01-01",
+					"recovery": "arctic_id_global-ota_full-OS3.0.1.0.WBVIDXM-user-16.0-0b43221d7b.zip",
+					"fastboot": "arctic_id_global-images-OS3.0.1.0.WBVIDXM-user-20260123.0000.00-16.0-id-0844ea7b26.tgz"
+				}
+			}
+		},
+		{
+			"name": {
+				"zh": "小米澎湃 OS 土耳其正式版",
+				"en": "Xiaomi HyperOS Turkey Stable"
+			},
+			"branchCode": "arctic_tr_global",
+			"brand": "REDMI",
+			"device": {
+				"zh": "REDMI A7 Pro",
+				"en": "REDMI A7 Pro"
+			},
+			"idtag": "TRSO",
+			"tag": "TRXM",
+			"branchtag": "F",
+			"table": [
+				"os",
+				"android",
+				"release",
+				"aspatch",
+				"recovery",
+				"fastboot"
+			],
+			"show": "1",
+			"carrier": [
+				""
+			],
+			"region": "tr",
+			"zone": "2",
+			"ep": "0",
+			"roms": {
+				"OS3.0.2.0.WBVTRXM": {
+					"os": "OS3.0.2.0.WBVTRXM",
+					"android": "16.0",
+					"release": "2026-06-23",
+					"aspatch": "2026-05-01",
+					"recovery": "arctic_tr_global-ota_full-OS3.0.2.0.WBVTRXM-user-16.0-6668d2997b.zip",
+					"fastboot": "arctic_tr_global-images-OS3.0.2.0.WBVTRXM-user-20260518.0000.00-16.0-tr-7bb3762cd4.tgz"
+				}
+			}
+		},
+		{
+			"name": {
+				"zh": "小米澎湃 OS 拉丁美洲Claro运营商定制版",
+				"en": "Xiaomi HyperOS Latin America Claro Carrier Edition"
+			},
+			"branchCode": "arctic_lm_cr_global",
+			"brand": "REDMI",
+			"device": {
+				"zh": "REDMI A7 Pro",
+				"en": "REDMI A7 Pro"
+			},
+			"idtag": "LMCR",
+			"tag": "LMCR",
+			"branchtag": "F",
+			"table": [
+				"os",
+				"android",
+				"release",
+				"aspatch",
+				"recovery",
+				"fastboot"
+			],
+			"show": "1",
+			"carrier": [
+				"cr"
+			],
+			"region": "lm",
+			"zone": "2",
+			"ep": "0",
+			"roms": {
+				"OS3.0.4.0.WBVLMCR": {
+					"os": "OS3.0.4.0.WBVLMCR",
+					"android": "16.0",
+					"release": "2026-08-19",
+					"aspatch": "2026-08-01",
+					"recovery": "arctic_lm_cr_global-ota_full-OS3.0.4.0.WBVLMCR-user-16.0-b450438b0a.zip",
+					"fastboot": ""
+				},
+				"OS3.0.3.0.WBVLMCR": {
+					"os": "OS3.0.3.0.WBVLMCR",
+					"android": "16.0",
+					"release": "2026-07-09",
+					"aspatch": "2026-06-01",
+					"recovery": "arctic_lm_cr_global-ota_full-OS3.0.3.0.WBVLMCR-user-16.0-f513c89b14.zip",
+					"fastboot": ""
+				},
+				"OS3.0.2.0.WBVLMCR": {
+					"os": "OS3.0.2.0.WBVLMCR",
+					"android": "16.0",
+					"release": "2026-05-26",
+					"aspatch": "2026-05-01",
+					"recovery": "arctic_lm_cr_global-ota_full-OS3.0.2.0.WBVLMCR-user-16.0-55c0f36bad.zip",
+					"fastboot": ""
+				},
+				"OS3.0.1.0.WBVLMCR": {
+					"os": "OS3.0.1.0.WBVLMCR",
+					"android": "16.0",
+					"release": "2026-05-26",
+					"aspatch": "2026-01-01",
+					"recovery": "arctic_lm_cr_global-ota_full-OS3.0.1.0.WBVLMCR-user-16.0-33731f1dd3.zip",
+					"fastboot": ""
+				}
+			}
+		}
+	]
+}

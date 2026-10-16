@@ -14,6 +14,7 @@ miroms - 小米 ROM 数据管理包
     logs_store  - 更新日志字典化存储 (LogStore)
     validator   - 数据校验 (DataValidator)
     exporters   - 数据导出 (exportV1, exportV2, exportV3)
+    legacy_exporters - 参考站点附属导出 (api/v1 = NuxtMR、api/v2 = HyperOS.fans)
 """
 
 from miroms.constants import (Constants, _const, branches, HyperOSForm,
@@ -32,6 +33,12 @@ from miroms.changelog import ChangelogManager
 from miroms.logs_store import LogStore
 from miroms.validator import DataValidator
 from miroms.exporters import exportV1, exportV2, exportV3, export_dev
+from miroms.legacy_exporters import (
+	export_sitelog, export_v1_extras, export_v2_extras, export_hub_extras,
+	export_v1_index, export_v1_weekly_index, export_v1_weekly_weeks, export_v1_devlist,
+	export_v2_index, export_v2_dev_index, export_v2_dev_weeks, export_v2_devices,
+	export_hub_sitelog, export_tools,
+)
 
 __all__ = [
 	# 常量
@@ -49,4 +56,10 @@ __all__ = [
 	'ChangelogManager', 'DataValidator', 'LogStore',
 	# 导出
 	'exportV1', 'exportV2', 'exportV3', 'export_dev',
+	# 参考站点附属导出（api/v1 = NuxtMR、api/v2 = HyperOS.fans）
+	'export_sitelog', 'export_v1_extras', 'export_v2_extras',
+	'export_v1_index', 'export_v1_weekly_index', 'export_v1_weekly_weeks', 'export_v1_devlist',
+	'export_v2_index', 'export_v2_dev_index', 'export_v2_dev_weeks', 'export_v2_devices',
+	# hub 自身（api/v3）：站点日志 + 工具下载
+	'export_hub_extras', 'export_hub_sitelog', 'export_tools',
 ]

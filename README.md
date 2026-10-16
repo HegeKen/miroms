@@ -15,8 +15,20 @@
 ```
 .
 ├── api/                              # 导出的 JSON 数据（API 产物）
-│   ├── v1/devices/<codename>.json    # V1：MIUI 设备数据（旧格式）
-│   ├── v2/devices/<codename>.json    # V2：HyperOS 设备数据
+│   ├── v1/devices/<codename>.json    # V1：MIUI 设备数据（旧格式，NuxtMR 站点）
+│   ├── v1/index.json                 # V1：首页「本周正式版更新」
+│   ├── v1/weekly.json                # V1：周更大版本 -> 周数索引
+│   ├── v1/weekly/week-<week>-cn.json # V1：单周公告 + 机型清单 + 更新日志
+│   ├── v1/devlist.json               # V1：机型列表目录（含 android / miui）
+│   ├── v1/sitelog.json               # V1：站点日志（sitelog 表 site=nuxtmr）
+│   ├── v1/*.json                     # V1：遗留 / 手写接口（见「V1 / V2 附属文件」）
+│   ├── v2/devices/<codename>.json    # V2：HyperOS 设备数据（HyperOS.fans 站点）
+│   ├── v2/index.json                 # V2：首页「近 6 天新增」
+│   ├── v2/dev.json                   # V2：开发版大版本 -> 周数索引
+│   ├── v2/dev/<week>.json            # V2：单周公告 + ROM 清单 + 多语言日志
+│   ├── v2/devices.json               # V2：机型列表目录（含 supports / android）
+│   ├── v2/sitelog.json               # V2：站点日志（sitelog 表 site=hyperos.fans）
+│   ├── v2/*.json                     # V2：遗留 / 手写接口（见「V1 / V2 附属文件」）
 │   ├── v3/devices/<codename>.json    # V3：全量设备数据（MIUI + HyperOS）
 │   ├── v3/logs/<device>/[region/]<version>.json   # V3：多语言更新日志
 │   ├── v3/dev/index.json             # V3：开发版（周更）周次索引
@@ -26,7 +38,9 @@
 │   ├── v3/releases/index.json        # V3：发布日期索引的元信息（日期范围 / 年份统计）
 │   ├── v3/index.json                 # V3：设备索引（设备列表 + 统计）
 │   ├── v3/series.json                # V3：机型系列数据（series 表导出）
-│   └── v3/stats.json                 # V3：近期更新统计
+│   ├── v3/stats.json                 # V3：近期更新统计
+│   ├── v3/sitelog.json               # V3：hub 自身站点日志（hub.web / hub.admin）
+│   └── v3/tools.json                 # V3：刷机工具下载（由 v1/tools.json 转换）
 ├── db_structure/                     # MySQL 表结构
 │   ├── devices.sql                   #   设备表
 │   ├── roms.sql                      #   ROM 表
@@ -34,14 +48,18 @@
 │   ├── dev.sql                       #   开发版（周更）表
 │   ├── branches.sql                  #   分支表
 │   ├── series.sql                    #   机型系列表
+│   ├── sitelog.sql                   #   站点日志表（site 列区分 nuxtmr / hyperos.fans / hub.web / hub.admin）
 │   └── migrations/                   #   schema 迁移 SQL
 ├── scripts/                          # 数据同步 / 抓取 / 导出 / 部署脚本（Python）
-│   ├── exporter.py                   #   主导出脚本
+│   ├── exporter.py                   #   主导出脚本（v1 / v2 / v3 + 站点附属接口）
 │   ├── migrate_logs_multilang.py     #   日志多语言分组迁移（logs 重建 + roms.logs 回写）
 │   ├── dedup_logs.py                 #   logs 去重体检 / 合并重复分组 / 清理孤儿行
 │   ├── resequence_ids.py             #   重排 roms / dev 的 id（消除自增空档）
 │   ├── rebuild_roms_logs.py          #   按备份库重建 roms.logs（修复悬空引用）
 │   ├── import_dev_week.py            #   导入开发版周更数据（dev 表 + roms.dev_week）
+│   ├── import_sitelog.py             #   导入两个站点的站点日志到 sitelog 表
+│   ├── import_hub_sitelog.py         #   按 git 记录导入 hub 自身（web / admin）的更新日志
+│   ├── migrate_v1v2_assets.py        #   补齐 v1/v2 的静态文件 / 机型目录 / 图片 / 遗留机型
 │   ├── sync_devices.py               #   同步设备列表
 │   ├── fix_missing_tag_mappings.py   #   修复缺失 tag 映射
 │   ├── common.py                     #   向后兼容入口（重新导出 miroms 包）
@@ -50,6 +68,8 @@
 │   ├── deploy.py                     #   触发 Cloudflare Pages 部署
 │   ├── *.py                          #   各类抓取脚本（见下文「抓取 / 部署脚本」）
 │   └── miroms/                       #   核心包（常量/工具/抓取/导出等）
+│       ├── exporters.py              #     exportV1 / exportV2 / exportV3 / export_dev
+│       └── legacy_exporters.py       #     v1 / v2 站点附属接口导出
 ├── CNAME                             # Github Pages 域名（api.miuier.com）
 ├── fix_missing_tag_mappings.sql      # 生成的修复 SQL
 ├── new_flags.txt / new_roms.txt      # 抓取过程的临时产物（可忽略）
@@ -148,6 +168,41 @@
 }
 ```
 
+### V1 / V2 附属文件（NuxtMR / HyperOS.fans 站点接口）
+
+两个参考站点原先各自维护一份数据仓库（NuxtMR 的 `public/MRData/data`、
+HyperOS.fans 的 `public/data`），除设备文件外还有一批站点级接口。迁移到本仓库后：
+
+* **从库里重生成**（`scripts/exporter.py` → `miroms/legacy_exporters.py`）：
+
+| 文件 | 说明 |
+| --- | --- |
+| `api/v1/index.json` | 首页「本周正式版更新」：按 ISO 周聚合 `roms`（`type=MIUI`、`branch=F`，排除 `.EP.` 政企版），字段 `year` / `week` / `period` / `nextperiod` / `date` / `stable[{code, zh-cn, en-us, date, rom}]`，同一机型当周多个分支版本以 `"; "` 连接 |
+| `api/v1/weekly.json` | 周更索引：`latest` / `oldest` / `versions[{version, period, weeks}]`。周次来自 `dev` 表（`region='cn'`、`show=1` 的 MIUI 周），`oldest` 取第一个有 V1 单周详情页的来源（`source='nuxtmr'`，第 560 周）；更早的周次仍出现在 `versions` 里，前端外链到 old.miuier.com |
+| `api/v1/weekly/week-<week>-cn.json` | 单周公告（`zh-cn` / `en-us` / `CnComID` 等）+ `devices` 机型清单 + `tpd` 停版 + `addons` 升级说明 / 版本说明 + `logs` 模块日志；数据来自 `dev`（`source='nuxtmr'`）与 `roms.dev_week` |
+| `api/v1/devlist.json` | 机型列表页 / sitemap 的设备目录：品牌 → 系列 → 机型（人工维护顺序），脚本按 `devices/<code>.json` 回填 `android` / `miui` |
+| `api/v1/sitelog.json` | 站点日志，结构 `{"log": [{sudate, ver, zh-cn, en-us, log: [{zh-cn, en-us}]}]}`，来自 `sitelog` 表 `site='nuxtmr'` |
+| `api/v2/index.json` | 首页「近 6 天新增」：按 `roms.insdate` 聚合 HyperOS ROM（窗口 6 天，与源站点一致），结构 `{"recent": {time, developing, roms: {<device>: {name, versions: [{insert_date, version}]}}}}` |
+| `api/v2/dev.json` | 开发版索引：`{"HyperOS": [{bigVer, start, latest, weeks}]}`，`bigVer` 由 `dev.bigver`（`HyperOS 1`）转成站点写法（`HyperOS1.0`），周次来自 `dev`（`source='hyperos.fans'`） |
+| `api/v2/dev/<week>.json` | 单周公告（`title` / `postId` / `update` / `versions` / `description` / `attention` / `show`）+ `roms` ROM 清单 + `suspended` 停版 + 多语言 `logs`（`[{module: {zh, en}, log: [{zh, en}]}]`） |
+| `api/v2/devices.json` | 机型列表页 / sitemap 的目录：`mi` / `redmi` / `poco` → 机型（人工维护 `image` / `series`），脚本按 `devices/<code>.json` 回填 `supports` / `android` |
+| `api/v2/sitelog.json` | 站点日志，结构 `{"icons": [...], "logs": [{siteVer, icon, date, log: [{zh, en}]}]}`，来自 `sitelog` 表 `site='hyperos.fans'`（`icons` 调色板取 `kind='meta'` 行） |
+
+* **随仓库维护**（库里没有来源，`scripts/migrate_v1v2_assets.py` 只负责首次播种，之后不再自动生成）：
+  * 手写内容：`api/v1/tools.json`、`api/v1/thanks.json`、`api/v1/devices.json`、`api/v2/updates.json`、`api/v2/new-rom.json`
+  * 废弃脚本的归档产物（字段大面积为空，保留仅为兼容旧客户端）：`api/v1/log.json`、`api/v1/stable.json`、`api/v1/update.json`、`api/v1/update_full.json`、`api/v1/newrom.json`
+  * 机型图片：**不搬运**——规范位置是仓库根的 `images/`（站点根 `https://api.miuier.com/images/<file>`，前端 `buildDeviceImageUrl()` 即走这里）。参考站点的 `assets/images/**` 与它逐文件一致（382/382，且 `api/v2/devices.json` 引用的 247 张全覆盖），再复制一份到 `api/v2/assets/images/**` 属于纯重复（约 25 MB）；`migrate_v1v2_assets.py --with-images` 可按需还原。
+  * 仅存于参考仓库、`miroms` 库中没有记录的遗留机型（`devices/<codename>.json`）：
+    V1 的 `HM2013023` / `HM2014011` / `HM2014501` / `camellian` / `cannong` / `ido` / `laurel` / `lcsh92` / `lcsh92_wet_tdd` / `mione` / `pond`，
+    V2 的 `arctic` / `chicago` / `coral` / `donghai` / `moscow` / `pissarro_in` / `pond` / `suiren` / `yupei_d`
+
+> 迁移自参考仓库的已知差异（都源于「以库为准」的重生成，属预期）：
+> 机型名取自 `devices.full_names`（可能同时包含 POCO 等马甲名，如 `blue` = 「POCO C61 / Redmi A3」）；
+> `dev.bigver` 统一为 `MIUI V6`（V1 周更索引里按历史写法映射回 `MIUI 6`）；
+> V1 周更列表会包含库里 `dev_week` 已绑定但源文件未列出的机型，并去掉源文件里完全重复的行；
+> 周更日志的英文以 `logs` 表里的官方译文为准（源文件是人工翻译）；
+> V1 周更公告里 `no`（手写机型简称，源文件 54 周中有 30 周带此字段）、`vid`、`showdevices` 与 `CnBBSID` / `GbBBSID`（源文件里始终为空）在库里没有对应字段，导出统一为空串 / `"1"`——这些字段前端目前都没有使用。
+
 ### V3 — `api/v3/devices/<codename>.json`（全量，推荐）
 
 同时覆盖 MIUI 与 HyperOS，新增 `tags` 嵌套字段与独立的更新日志文件：
@@ -200,6 +255,8 @@
 | `api/v3/index.json` | 设备索引：每台设备的名称、品牌、系列（`series`）、代码、Android 版本、支持的系统版本、支持区域（`regions`，可见分支的区域去重）、支持运营商（`carriers`，可见分支的运营商去重，排除空值）、区域与运营商的对应关系（`regionCarriers`，形如 `{"cn": ["chinatelecom", ...]}`）、分支数（`branchCount`）与 ROM 数（`romCount`） |
 | `api/v3/series.json` | 机型系列：系列列表（品牌、中英文名、`device_ids` 设备归属）与设备排序（`order`） |
 | `api/v3/stats.json` | 近期统计：`generatedAt` 生成时间、`recentDays` 统计天数、`recentRoms` 近期新增 ROM 数、`recent` 近期 ROM 明细列表 |
+| `api/v3/sitelog.json` | hub 自身的站点日志：`{"generatedAt", "sites": {"hub.web": {site, latest, count, logs}, "hub.admin": {...}}}`，每条形如 `{ver, date, log: [{zh, en}]}`（按版本倒序，最新在前）。条目由 `scripts/import_hub_sitelog.py` 按 git 记录导入 `sitelog` 表后导出；官网前端读 `sites['hub.web']`，管理后台直连数据库读 `site='hub.admin'` |
+| `api/v3/tools.json` | 刷机工具下载（供官网「工具下载」页）：`{"generatedAt", "source", "tools": [{tool, name: {zh, en}, packages: [{version, date, filename, url, attentions: [{zh, en}], logs: [{zh, en}]}]}]}`；人工维护的 `api/v1/tools.json` 是唯一手写源，导出时把 `zh-cn` / `en-us` 转成 `zh` / `en`、`FileName` 转成 `filename` |
 
 ### 多语言更新日志
 
@@ -309,6 +366,37 @@ python3 scripts/import_dev_week.py --backfill-roms     # 仅按发布日期回�
   `▍发布时间` 一节会按内容拆分：日期进 `release_date`、版本号进 `versions`、`MIUI V5` / `MIUI 12.5` 进 `bigver`，
   原文一并存进 `description`；解析器还会统计「疑似表格内容」并在发现时打印告警。
 
+#### 站点日志（sitelog 表）
+
+两个参考站点的站点日志原先各自手写在仓库里，结构不同：
+
+* NuxtMR：`{"log": [{sudate, ver, zh-cn, en-us, log: [{zh-cn, en-us}]}]}`
+* HyperOS.fans：`{"icons": [...], "logs": [{siteVer, icon, date, log: [{zh, en}]}]}`
+
+hub 自身（官网前端 `hub.web`、管理后台 `hub.admin`）的更新日志则直接按 git 记录推导，
+仓库没有 git tag，因此**按提交日期分版**：每个项目在该路径下的提交按作者日期分组，
+日期升序依次编号 `V0.1.0`、`V0.2.0`…，最新一版即当前版本（git 历史只在末尾追加，既有版本号稳定）。
+提交标题会去掉对项目冗余的 `[web]` / `[admin]` / `[root]` / `[data]` 前缀与 `feat(web):` 这类作用域。
+
+现在统一存 `sitelog` 表（见 `db_structure/sitelog.sql`），用 `site` 列区分站点、`kind` 列区分行类型：
+
+```bash
+python3 scripts/import_sitelog.py --all                  # 参考站点（nuxtmr 76 条 + hyperos.fans 45 条）
+python3 scripts/import_sitelog.py --source nuxtmr        # 只导入 NuxtMR
+python3 scripts/import_sitelog.py --dry-run              # 只统计不写库
+
+python3 scripts/import_hub_sitelog.py --dry-run          # hub 自身：预览两个项目的版本划分
+python3 scripts/import_hub_sitelog.py                    # hub 自身：hub.web 17 版 + hub.admin 13 版
+python3 scripts/import_hub_sitelog.py --drop-types chore,build,docs   # 只保留 feat/fix 等面向用户的提交
+```
+
+* `kind='entry'` 为日志条目：`ver` / `icon` / `log_date` / `devices_zh` / `devices_en` / `logs`（`[{"zh","en"},...]`），`sort_order` 越小越靠前（0 = 最新）。
+* `kind='meta'` 为站点级元信息：目前只有 HyperOS.fans 的 `icons` 调色板（前端未使用，保留源站数据）。
+* 站内版本号允许重复（NuxtMR 有两条 `V0.5.5-SNAPSHOT`、两条 `V0.3.8-SNAPSHOT`），唯一键带上 `log_date`。
+* git 推导的条目只在标题本身不含中日韩字符时填 `en`，其余留空——前端在译文缺失时回退中文。
+* 落库统一走 `miroms/sitelog_store.py`（按唯一键原地 UPDATE，不烧自增 id）。
+* 导出：`export_sitelog('nuxtmr')` → `api/v1/sitelog.json`，`export_sitelog('hyperos.fans')` → `api/v2/sitelog.json`（导入 + 导出与源文件逐字段一致，已核对）；`export_hub_sitelog()` → `api/v3/sitelog.json`（hub.web / hub.admin 两条线）。
+
 ---
 
 ## 数据库结构 / Database Schema
@@ -321,6 +409,7 @@ python3 scripts/import_dev_week.py --backfill-roms     # 仅按发布日期回�
 - **`dev.sql`** — 开发版（周更）表：`week` + `region`（cn / global）唯一，含大版本、版本号、中英标题、公告正文（`description`）、升级说明（`attention`）、停版机型（`suspended`）、日志 ID 结构（`logs`）与数据来源（`source`）；机型 / ROM 清单由 `roms.dev_week` + `zone` 现算，不另存 JSON
 - **`branches.sql`** — 分支表：分支类型、中英文名称、标签（`tag`）、代码后缀（`code`）、版本代码（`vercode`）、运营商、区域、分区（`zone`）、可见性（`visibility`）、是否政企版（`ep`）
 - **`series.sql`** — 机型系列表：品牌（`brand`：xiaomi / redmi / poco）、中英文名称（`name_zh` / `name_en`）、设备归属（`device_ids`，JSON 数组）、排序（`sort_order`）
+- **`sitelog.sql`** — 站点日志表：`site` 区分站点（`nuxtmr` → `api/v1/sitelog.json`、`hyperos.fans` → `api/v2/sitelog.json`、`hub.web` / `hub.admin` → `api/v3/sitelog.json`），`kind` 区分行类型（`entry` 日志条目 / `meta` 站点级元信息如 `icons` 调色板），含版本号（`ver`）、图标（`icon`）、日期（`log_date`）、新增机型摘要（`devices_zh` / `devices_en`）与日志正文（`logs`，`[{"zh","en"},...]`）
 
 ---
 
@@ -330,19 +419,22 @@ python3 scripts/import_dev_week.py --backfill-roms     # 仅按发布日期回�
 
 | 文件 | 说明 |
 | --- | --- |
-| `exporter.py` | 入口脚本：遍历 `common.fullDevices` 依次执行 `exportV1` / `exportV2` / `exportV3`，再执行 `export_dev()` 导出 `api/v3/dev/**`，完成后调用 `app/web/scripts/generate-index.mjs`（Node.js）重新生成 `api/v3/index.json`、`api/v3/stats.json`、`api/v3/roms/*.json` 与 `api/v3/releases/*.json` |
+| `exporter.py` | 入口脚本：遍历 `common.fullDevices` 依次执行 `exportV1` / `exportV2` / `exportV3`，再执行 `export_dev()` 导出 `api/v3/dev/**`、`export_v1_extras()` / `export_v2_extras()` 导出两个参考站点的附属接口（见「V1 / V2 附属文件」）与 `export_hub_extras()` 导出 `api/v3/sitelog.json` / `api/v3/tools.json`，完成后调用 `app/web/scripts/generate-index.mjs`（Node.js）重新生成 `api/v3/index.json`、`api/v3/stats.json`、`api/v3/roms/*.json` 与 `api/v3/releases/*.json` |
 | `migrate_logs_multilang.py` | 把 `roms` 的 21 个 `logs_*` 列迁移为「`logs` 多语言分组 + `roms.logs` 单列」；旧表保留为 `logs_legacy`，`--dry-run` 只统计，`--verify N` 抽查中英文一致性；结束时自动跑去重体检 |
 | `resequence_ids.py` | 把 `roms` / `dev` 的 id 重排成连续自增并归位自增计数器（消除 `AUTO_INCREMENT` 空档）；先采样 20 秒确认无人写入，并把「旧 id → 新 id」映射写到 `.backup/*_id_map_*.csv`。`logs.id` 被 `roms.logs` / `dev.logs` 引用，**不可重排**，所以不在允许列表里 |
 | `dedup_logs.py` | `logs` 去重体检与合并：把「同一日志被拆成多行」的分组并成一行，同步重写 `roms.logs` / `dev.logs` 引用（掩码不变，导出结果不受影响）；`--apply` 实际合并，`--prune-unused` 顺带清理孤儿行 |
 | `rebuild_roms_logs.py` | 以迁移前的备份库为权威来源重建 `roms.logs`（修复人工改动 `logs` 表造成的悬空引用），并复核「无悬空引用」 |
 | `import_dev_week.py` | 导入开发版（周更）数据到 `dev` 表并回填 `roms.dev_week`；支持 `--source hyperos\|nuxtmr\|miuiroms`、`--all`、`--weeks 619-652`、`--region global`、`--dry-run`、`--backfill-roms` |
+| `import_sitelog.py` | 把 NuxtMR / HyperOS.fans 两个站点的站点日志（`sitelog.json`）导入 `sitelog` 表，`--source nuxtmr\|hyperos`、`--all`、`--root`、`--dry-run`；按唯一键原地更新，幂等且不烧自增 id |
+| `import_hub_sitelog.py` | 按 git 记录推导 hub 自身（`hub.web` = `app/web`、`hub.admin` = `app/admin`）的更新日志并写入 `sitelog` 表：按提交日期分版编号 `V0.1.0`…，`--site`、`--drop-types chore,build,docs`、`--dry-run` |
+| `migrate_v1v2_assets.py` | 把参考仓库里的静态接口文件、机型目录与「仅存于参考仓库的遗留机型」播种到 `api/v1` / `api/v2`；默认只补缺失，`--force` 可强制覆盖静态文件（设备文件始终不覆盖），`--with-images` 额外把机型图片复制到 `api/v2/assets/images`（默认不搬，规范位置是 `images/`） |
 | `sync_devices.py` | 从 `devices` / `roms` 表同步设备列表到 `miroms/data.py`（`fullDevices`、`currentStable`、`flags`） |
 | `fix_missing_tag_mappings.py` | 修复 `devices` 表中缺失的 device+tag 映射（V3 导出器按 tag 匹配分支，缺失会导致 ROM 丢失），输出 SQL 到 stdout 或 `--apply` 直接执行 |
 | `common.py` | 向后兼容入口，重新导出 `miroms` 包全部公共 API，并保留 `fullDevices`、`currentStable`、`flags` 等模块级常量 |
 | `config.py` | 数据库连接配置（host / port / user / password / database）+ Cloudflare Pages 部署 hook（`deploy_url`） |
 | `push.py` | 一键全流程：运行 `exporter.py` 导出 → 在 `data` 子仓库提交并推送（commit message 为当前日期时间）→ 调用 `deploy.py` 触发站点部署 |
 | `deploy.py` | 仅触发部署：POST `config.deploy_url`（Cloudflare Pages deploy hook）并打印部署 ID |
-| `miroms/` | 核心包：`constants.py`（常量、SDK 版本、Android 代号、分支表、语种表）、`data.py`（设备列表）、`database.py`（数据库访问）、`network.py` / `crypto.py` / `firmware.py`（小米服务器抓取与解密）、`recorder.py`（数据录入）、`changelog.py`（更新日志）、`logs_store.py`（日志多语言分组读写）、`validator.py`（校验）、`exporters.py`（V1/V2/V3 + 开发版导出器）、`utils.py`（工具函数） |
+| `miroms/` | 核心包：`constants.py`（常量、SDK 版本、Android 代号、分支表、语种表）、`data.py`（设备列表）、`database.py`（数据库访问）、`network.py` / `crypto.py` / `firmware.py`（小米服务器抓取与解密）、`recorder.py`（数据录入）、`changelog.py`（更新日志）、`logs_store.py`（日志多语言分组读写）、`sitelog_store.py`（站点日志落库）、`validator.py`（校验）、`exporters.py`（V1/V2/V3 + 开发版导出器）、`legacy_exporters.py`（api/v1 = NuxtMR、api/v2 = HyperOS.fans、api/v3 = hub 自身的站点附属接口导出）、`utils.py`（工具函数） |
 
 ### 抓取 / 部署脚本
 
@@ -431,8 +523,8 @@ Cloudflare Pages（deploy hook）自动部署 → api.miuier.com（CNAME，见�
 # 直接读取设备数据（GitHub Raw）
 curl -fsSL https://raw.githubusercontent.com/HegeKen/miroms/master/api/v3/devices/agate.json
 
-# 或通过 Cloudflare Pages 站点读取（CNAME: api.miuier.com）
-curl -fsSL https://api.miuier.com/v3/devices/agate.json
+# 或通过 Cloudflare Pages 站点读取（CNAME: api.miuier.com，站点根是仓库根，数据在 /api 下）
+curl -fsSL https://api.miuier.com/api/v3/devices/agate.json
 ```
 
 前端站点（`appBaseUrl` 为 `https://api.miuier.com/api`）、管理后台与移动端（Android / iOS / 小程序）均为本仓库数据的消费者；各消费者代码见主仓库 [HegeKen/hub.miuier.com](https://github.com/HegeKen/hub.miuier.com) 的 `app/` 目录。

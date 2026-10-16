@@ -17,8 +17,20 @@ the [hub.miuier.com](https://hub.miuier.com) website, the admin panel and variou
 ```
 .
 ├── api/                              # Exported JSON data (API artifacts)
-│   ├── v1/devices/<codename>.json    # V1: MIUI device data (legacy format)
-│   ├── v2/devices/<codename>.json    # V2: HyperOS device data
+│   ├── v1/devices/<codename>.json    # V1: MIUI device data (legacy format, NuxtMR site)
+│   ├── v1/index.json                 # V1: homepage "this week's stable updates"
+│   ├── v1/weekly.json                # V1: weekly big version → week index
+│   ├── v1/weekly/week-<week>-cn.json # V1: one week (announcement + devices + changelogs)
+│   ├── v1/devlist.json               # V1: device list directory (with android / miui)
+│   ├── v1/sitelog.json               # V1: site log (sitelog table, site=nuxtmr)
+│   ├── v1/*.json                     # V1: legacy / hand-written endpoints (see "V1 / V2 auxiliary files")
+│   ├── v2/devices/<codename>.json    # V2: HyperOS device data (HyperOS.fans site)
+│   ├── v2/index.json                 # V2: homepage "added in the last 6 days"
+│   ├── v2/dev.json                   # V2: developer big version → week index
+│   ├── v2/dev/<week>.json            # V2: one dev week (announcement + ROMs + multilingual logs)
+│   ├── v2/devices.json               # V2: device list directory (with supports / android)
+│   ├── v2/sitelog.json               # V2: site log (sitelog table, site=hyperos.fans)
+│   ├── v2/*.json                     # V2: legacy / hand-written endpoints (see "V1 / V2 auxiliary files")
 │   ├── v3/devices/<codename>.json    # V3: full device data (MIUI + HyperOS)
 │   ├── v3/logs/<device>/[region/]<version>.json   # V3: multilingual changelogs
 │   ├── v3/dev/index.json             # V3: developer (weekly) release index
@@ -28,17 +40,28 @@ the [hub.miuier.com](https://hub.miuier.com) website, the admin panel and variou
 │   ├── v3/releases/index.json        # V3: release index metadata (date range / per-year stats)
 │   ├── v3/index.json                 # V3: device index (device list + stats)
 │   ├── v3/series.json                # V3: series data (exported from the series table)
-│   └── v3/stats.json                 # V3: recent-update stats
-├── db_structure/                     # MySQL table schemas (incl. logs.sql / dev.sql)
+│   ├── v3/stats.json                 # V3: recent-update stats
+│   ├── v3/sitelog.json               # V3: hub's own site log (hub.web / hub.admin)
+│   └── v3/tools.json                 # V3: flashing-tool downloads (converted from v1/tools.json)
+├── db_structure/                     # MySQL table schemas
 │   ├── devices.sql                   #   devices table
 │   ├── roms.sql                      #   roms table
+│   ├── logs.sql                      #   changelog table (one row shared by all languages)
+│   ├── dev.sql                       #   developer (weekly) table
 │   ├── branches.sql                  #   branches table
-│   └── series.sql                    #   series table
+│   ├── series.sql                    #   series table
+│   ├── sitelog.sql                   #   site log table (site column: nuxtmr / hyperos.fans / hub.web / hub.admin)
+│   └── migrations/                   #   schema migration SQL
 ├── scripts/                          # sync / fetch / export / deploy scripts (Python)
-│   ├── exporter.py                   #   main export script
+│   ├── exporter.py                   #   main export script (v1 / v2 / v3 + site auxiliary endpoints)
 │   ├── migrate_logs_multilang.py     #   logs table rebuild + roms.logs migration
+│   ├── dedup_logs.py                 #   logs dedup audit / merge duplicate groups / prune orphan rows
 │   ├── resequence_ids.py             #   renumber roms / dev ids (remove AUTO_INCREMENT gaps)
+│   ├── rebuild_roms_logs.py          #   rebuild roms.logs from the backup DB (fix dangling references)
 │   ├── import_dev_week.py            #   import dev (weekly) data into dev table
+│   ├── import_sitelog.py             #   import both sites' site logs into the sitelog table
+│   ├── import_hub_sitelog.py         #   import hub's own (web / admin) changelog from git history
+│   ├── migrate_v1v2_assets.py        #   seed v1/v2 static files / device dirs / legacy devices
 │   ├── sync_devices.py               #   sync device list
 │   ├── fix_missing_tag_mappings.py   #   fix missing tag mappings
 │   ├── common.py                     #   backward-compat entry (re-exports the miroms package)
@@ -47,6 +70,8 @@ the [hub.miuier.com](https://hub.miuier.com) website, the admin panel and variou
 │   ├── deploy.py                     #   trigger Cloudflare Pages deploy
 │   ├── *.py                          #   various fetch scripts (see "Fetch / Deploy Scripts")
 │   └── miroms/                       #   core package (constants/utils/fetch/export, etc.)
+│       ├── exporters.py              #     exportV1 / exportV2 / exportV3 / export_dev
+│       └── legacy_exporters.py       #     v1 / v2 site auxiliary endpoint exports
 ├── CNAME                             # Github Pages domain (api.miuier.com)
 ├── fix_missing_tag_mappings.sql      # generated fix SQL
 ├── new_flags.txt / new_roms.txt      # transient fetch artifacts (safe to ignore)
@@ -145,6 +170,43 @@ A `roms` dict keyed by version number, plus a `table` header description:
 }
 ```
 
+### V1 / V2 auxiliary files (NuxtMR / HyperOS.fans site endpoints)
+
+The two reference sites each used to maintain their own data repository (NuxtMR's `public/MRData/data`, HyperOS.fans's
+`public/data`) which, besides the device files, also carried a set of site-level endpoints. After migrating to this
+repository:
+
+* **Regenerated from the database** (`scripts/exporter.py` → `miroms/legacy_exporters.py`):
+
+| File | Description |
+| --- | --- |
+| `api/v1/index.json` | Homepage "this week's stable updates": aggregates `roms` by ISO week (`type=MIUI`, `branch=F`, excluding `.EP.` enterprise builds) with fields `year` / `week` / `period` / `nextperiod` / `date` / `stable[{code, zh-cn, en-us, date, rom}]`; several branch versions of the same device in one week are joined with `"; "` |
+| `api/v1/weekly.json` | Weekly index: `latest` / `oldest` / `versions[{version, period, weeks}]`. Weeks come from the `dev` table (`region='cn'`, `show=1` MIUI weeks), and `oldest` is the first week that has a V1 single-week detail page (`source='nuxtmr'`, week 560); earlier weeks still appear in `versions` and the frontend links out to old.miuier.com |
+| `api/v1/weekly/week-<week>-cn.json` | One week: announcement (`zh-cn` / `en-us` / `CnComID`, etc.) + `devices` list + `tpd` suspended builds + `addons` upgrade notes / release notes + `logs` module logs; the data comes from `dev` (`source='nuxtmr'`) and `roms.dev_week` |
+| `api/v1/devlist.json` | Device directory for the list page / sitemap: brand → series → device (hand-maintained order); the script backfills `android` / `miui` from `devices/<code>.json` |
+| `api/v1/sitelog.json` | Site log shaped `{"log": [{sudate, ver, zh-cn, en-us, log: [{zh-cn, en-us}]}]}`, from the `sitelog` table with `site='nuxtmr'` |
+| `api/v2/index.json` | Homepage "added in the last 6 days": aggregates HyperOS ROMs by `roms.insdate` (6-day window, matching the source site), shaped `{"recent": {time, developing, roms: {<device>: {name, versions: [{insert_date, version}]}}}}` |
+| `api/v2/dev.json` | Developer index: `{"HyperOS": [{bigVer, start, latest, weeks}]}`; `bigVer` is converted from `dev.bigver` (`HyperOS 1`) into the site's spelling (`HyperOS1.0`), and the weeks come from `dev` (`source='hyperos.fans'`) |
+| `api/v2/dev/<week>.json` | One dev week: announcement (`title` / `postId` / `update` / `versions` / `description` / `attention` / `show`) + `roms` list + `suspended` + multilingual `logs` (`[{module: {zh, en}, log: [{zh, en}]}]`) |
+| `api/v2/devices.json` | Device directory for the list page / sitemap: `mi` / `redmi` / `poco` → devices (hand-maintained `image` / `series`); the script backfills `supports` / `android` from `devices/<code>.json` |
+| `api/v2/sitelog.json` | Site log shaped `{"icons": [...], "logs": [{siteVer, icon, date, log: [{zh, en}]}]}`, from the `sitelog` table with `site='hyperos.fans'` (the `icons` palette comes from the `kind='meta'` row) |
+
+* **Maintained with the repository** (there is no database source; `scripts/migrate_v1v2_assets.py` only seeds them once and never regenerates them afterwards):
+  * Hand-written content: `api/v1/tools.json`, `api/v1/thanks.json`, `api/v1/devices.json`, `api/v2/updates.json`, `api/v2/new-rom.json`
+  * Archived artifacts of deprecated scripts (mostly empty fields, kept only so old clients keep working): `api/v1/log.json`, `api/v1/stable.json`, `api/v1/update.json`, `api/v1/update_full.json`, `api/v1/newrom.json`
+  * Device images: **not copied** — the canonical location is the repository-root `images/` (site root `https://api.miuier.com/images/<file>`, which is what the frontend's `buildDeviceImageUrl()` uses). The reference sites' `assets/images/**` matches it file-for-file (382/382, including all 247 images referenced by `api/v2/devices.json`), so copying them again into `api/v2/assets/images/**` would be pure duplication (~25 MB); use `migrate_v1v2_assets.py --with-images` to restore the old layout if ever needed.
+  * Legacy devices that exist only in the reference repositories and have no record in the `miroms` database (`devices/<codename>.json`):
+    V1: `HM2013023` / `HM2014011` / `HM2014501` / `camellian` / `cannong` / `ido` / `laurel` / `lcsh92` / `lcsh92_wet_tdd` / `mione` / `pond`,
+    V2: `arctic` / `chicago` / `coral` / `donghai` / `moscow` / `pissarro_in` / `pond` / `suiren` / `yupei_d`
+
+> Known differences from the reference repositories after migration (all expected, because regeneration is
+> database-first):
+> device names come from `devices.full_names` (they may also carry an alias such as POCO, e.g. `blue` = "POCO C61 / Redmi A3");
+> `dev.bigver` is normalised to `MIUI V6` (the V1 weekly index maps it back to the historical spelling `MIUI 6`);
+> the V1 weekly list also includes devices that are bound to a `dev_week` in the database but were not listed by the source file, and drops fully duplicated rows from the source file;
+> English weekly logs follow the official translations in the `logs` table (the source files were hand-translated);
+> the V1 weekly announcement fields `no` (a hand-written device shorthand, present in 30 of the 54 source weeks), `vid`, `showdevices` and `CnBBSID` / `GbBBSID` (always empty in the source files) have no counterpart column in the database, so the export always emits an empty string / `"1"` — the frontend does not use any of these fields today.
+
 ### V3 — `api/v3/devices/<codename>.json` (full, recommended)
 
 Covers both MIUI and HyperOS; adds a nested `tags` field and separate changelog files:
@@ -197,6 +259,8 @@ Covers both MIUI and HyperOS; adds a nested `tags` field and separate changelog 
 | `api/v3/index.json` | Device index: name, brand, series (`series`), code, Android versions, supported systems, regions (`regions`), carriers (`carriers`), region-to-carrier mapping (`regionCarriers`, e.g. `{"cn": ["chinatelecom", ...]}`), branch count (`branchCount`) and ROM count (`romCount`) per device |
 | `api/v3/series.json` | Series: series list (brand, zh/en names, `device_ids` membership) plus device ordering (`order`) |
 | `api/v3/stats.json` | Recent stats: `generatedAt` generation time, `recentDays` window, `recentRoms` recent additions count, `recent` recent ROM detail list |
+| `api/v3/sitelog.json` | hub's own site log: `{"generatedAt", "sites": {"hub.web": {site, latest, count, logs}, "hub.admin": {...}}}`, each entry shaped `{ver, date, log: [{zh, en}]}` (newest version first). Entries are imported into the `sitelog` table from git history by `scripts/import_hub_sitelog.py` and then exported; the website frontend reads `sites['hub.web']` while the admin panel connects straight to the database and reads `site='hub.admin'` |
+| `api/v3/tools.json` | Flashing-tool downloads (for the website's "tool downloads" page): `{"generatedAt", "source", "tools": [{tool, name: {zh, en}, packages: [{version, date, filename, url, attentions: [{zh, en}], logs: [{zh, en}]}]}]}`; the hand-maintained `api/v1/tools.json` is the only hand-written source, and the export converts `zh-cn` / `en-us` into `zh` / `en` and `FileName` into `filename` |
 
 ### Multilingual changelogs
 
@@ -327,6 +391,40 @@ codename, otherwise the name is looked up in the `devices` table). The `▍发�
 warns about suspicious "table-like" entries.
 
 
+#### Site log (sitelog table)
+
+The site logs of the two reference sites used to be hand-written in their own repositories, in different shapes:
+
+* NuxtMR: `{"log": [{sudate, ver, zh-cn, en-us, log: [{zh-cn, en-us}]}]}`
+* HyperOS.fans: `{"icons": [...], "logs": [{siteVer, icon, date, log: [{zh, en}]}]}`
+
+hub's own changelogs (the website frontend `hub.web` and the admin panel `hub.admin`) are instead derived straight
+from git history: the repository has no git tags, so **versions are grouped by commit date** — the commits of each
+project under its path are grouped by author date and numbered ascending `V0.1.0`, `V0.2.0`…, the newest one being the
+current version (git history only appends at the end, so existing version numbers stay stable). Commit titles have the
+`[web]` / `[admin]` / `[root]` / `[data]` prefixes and `feat(web):`-style scopes stripped, since they are redundant
+for the project.
+
+They now live in a single `sitelog` table (see `db_structure/sitelog.sql`), with a `site` column to tell the sites
+apart and a `kind` column for the row type:
+
+```bash
+python3 scripts/import_sitelog.py --all                  # reference sites (nuxtmr 76 rows + hyperos.fans 45 rows)
+python3 scripts/import_sitelog.py --source nuxtmr        # NuxtMR only
+python3 scripts/import_sitelog.py --dry-run              # stats only, no writes
+
+python3 scripts/import_hub_sitelog.py --dry-run          # hub itself: preview the version split of both projects
+python3 scripts/import_hub_sitelog.py                    # hub itself: hub.web 17 versions + hub.admin 13 versions
+python3 scripts/import_hub_sitelog.py --drop-types chore,build,docs   # keep only user-facing commits such as feat/fix
+```
+
+* `kind='entry'` are log entries: `ver` / `icon` / `log_date` / `devices_zh` / `devices_en` / `logs` (`[{"zh","en"},...]`); the smaller `sort_order` comes first (0 = newest).
+* `kind='meta'` is site-level metadata: currently only the HyperOS.fans `icons` palette (unused by the frontend, kept to preserve the source site's data).
+* Site version numbers may repeat (NuxtMR has two `V0.5.5-SNAPSHOT` and two `V0.3.8-SNAPSHOT` rows), so the unique key includes `log_date`.
+* Git-derived entries only fill `en` when the title itself contains no CJK characters and leave it empty otherwise — the frontend falls back to Chinese when a translation is missing.
+* All writes go through `miroms/sitelog_store.py` (an in-place UPDATE by unique key, so no AUTO_INCREMENT ids are burned).
+* On export each site is restored to its original shape: `export_sitelog('nuxtmr')` → `api/v1/sitelog.json`, `export_sitelog('hyperos.fans')` → `api/v2/sitelog.json`; importing and re-exporting round-trips the source files field for field (verified); `export_hub_sitelog()` → `api/v3/sitelog.json` (the hub.web / hub.admin lines).
+
 ---
 
 ## Database Schema
@@ -349,6 +447,10 @@ MySQL (InnoDB, utf8mb4); table structure and field meanings are in `db_structure
   (`vercode`), carrier, region, zone (`zone`), visibility (`visibility`), enterprise flag (`ep`)
 - **`series.sql`** — series: brand (`brand`: xiaomi / redmi / poco), zh/en names (`name_zh` / `name_en`), device
   membership (`device_ids`, JSON array), ordering (`sort_order`)
+- **`sitelog.sql`** — site log: `site` identifies the site (`nuxtmr` → `api/v1/sitelog.json`, `hyperos.fans` →
+  `api/v2/sitelog.json`, `hub.web` / `hub.admin` → `api/v3/sitelog.json`) and `kind` the row type (`entry` log entry /
+  `meta` site-level metadata such as the `icons` palette), holding the version (`ver`), icon (`icon`), date
+  (`log_date`), new-device summary (`devices_zh` / `devices_en`) and log body (`logs`, `[{"zh","en"},...]`)
 
 ---
 
@@ -358,16 +460,19 @@ MySQL (InnoDB, utf8mb4); table structure and field meanings are in `db_structure
 
 | File | Description |
 | --- | --- |
-| `exporter.py` | Entry script: iterates `common.fullDevices`, runs `exportV1` / `exportV2` / `exportV3`, then `export_dev()` for `api/v3/dev/**`, then invokes `app/web/scripts/generate-index.mjs` (Node.js) to regenerate `api/v3/index.json`, `api/v3/stats.json`, `api/v3/roms/*.json` and `api/v3/releases/*.json` |
+| `exporter.py` | Entry script: iterates `common.fullDevices`, runs `exportV1` / `exportV2` / `exportV3`, then `export_dev()` for `api/v3/dev/**` and `export_v1_extras()` / `export_v2_extras()` for the two reference sites' auxiliary endpoints (see "V1 / V2 auxiliary files") plus `export_hub_extras()` for `api/v3/sitelog.json` / `api/v3/tools.json`, then invokes `app/web/scripts/generate-index.mjs` (Node.js) to regenerate `api/v3/index.json`, `api/v3/stats.json`, `api/v3/roms/*.json` and `api/v3/releases/*.json` |
 | `migrate_logs_multilang.py` | Migrate the 21 `roms.logs_*` columns into the multilingual `logs` table plus a single language-neutral `roms.logs`; the old table is kept as `logs_legacy` |
 | `import_dev_week.py` | Import developer (weekly) data into `dev` and backfill `roms.dev_week` (`--source hyperos\|nuxtmr\|miuiroms`, `--all`, `--weeks`, `--region`, `--dry-run`, `--backfill-roms`) |
+| `import_sitelog.py` | Import the NuxtMR / HyperOS.fans site logs (`sitelog.json`) into the `sitelog` table (`--source nuxtmr\|hyperos`, `--all`, `--root`, `--dry-run`); it updates in place by unique key, so it is idempotent and burns no AUTO_INCREMENT ids |
+| `import_hub_sitelog.py` | Derive hub's own changelogs (`hub.web` = `app/web`, `hub.admin` = `app/admin`) from git history and write them into the `sitelog` table: versions are numbered `V0.1.0`… by commit date; `--site`, `--drop-types chore,build,docs`, `--dry-run` |
+| `migrate_v1v2_assets.py` | Seed the reference repositories' static endpoint files, device directories and "legacy devices that exist only in the reference repositories" into `api/v1` / `api/v2`; by default only missing files are added, `--force` overwrites static files (device files are never overwritten), and `--with-images` additionally copies the device images into `api/v2/assets/images` (skipped by default; the canonical location is `images/`) |
 | `sync_devices.py` | Syncs the device list from `devices` / `roms` into `miroms/data.py` (`fullDevices`, `currentStable`, `flags`) |
 | `fix_missing_tag_mappings.py` | Fixes missing device+tag mappings in `devices` (the V3 exporter matches branches by tag; missing ones lose ROMs); prints SQL to stdout or applies it directly with `--apply` |
 | `common.py` | Backward-compat entry re-exporting the full public API of the `miroms` package, keeping module-level constants like `fullDevices`, `currentStable`, `flags` |
 | `config.py` | DB connection config (host / port / user / password / database) + Cloudflare Pages deploy hook (`deploy_url`) |
 | `push.py` | One-shot pipeline: run `exporter.py` → commit & push inside the `data` sub-repo (commit message = current datetime) → call `deploy.py` to trigger deployment |
 | `deploy.py` | Deploy only: POSTs `config.deploy_url` (Cloudflare Pages deploy hook) and prints the deploy ID |
-| `miroms/` | Core package: `constants.py` (constants, SDK versions, Android codenames, branch tables), `data.py` (device list), `database.py` (DB access), `network.py` / `crypto.py` / `firmware.py` (Xiaomi server fetch & decryption), `recorder.py` (data recording), `changelog.py` (changelogs), `validator.py` (validation), `exporters.py` (V1/V2/V3 exporters), `utils.py` (helpers) |
+| `miroms/` | Core package: `constants.py` (constants, SDK versions, Android codenames, branch tables), `data.py` (device list), `database.py` (DB access), `network.py` / `crypto.py` / `firmware.py` (Xiaomi server fetch & decryption), `recorder.py` (data recording), `changelog.py` (changelogs), `sitelog_store.py` (site-log persistence), `validator.py` (validation), `exporters.py` (V1/V2/V3 exporters), `legacy_exporters.py` (site auxiliary endpoint exports for api/v1 = NuxtMR, api/v2 = HyperOS.fans, api/v3 = hub's own site endpoints), `utils.py` (helpers) |
 
 ### Fetch / Deploy Scripts
 
@@ -456,8 +561,8 @@ The data files are plain JSON and can be consumed via GitHub Raw, CDN, or bundle
 # Read device data directly (GitHub Raw)
 curl -fsSL https://raw.githubusercontent.com/HegeKen/miroms/master/api/v3/devices/agate.json
 
-# Or via the Cloudflare Pages site (CNAME: api.miuier.com)
-curl -fsSL https://api.miuier.com/v3/devices/agate.json
+# Or via the Cloudflare Pages site (CNAME: api.miuier.com; the site root is the repo root, data lives under /api)
+curl -fsSL https://api.miuier.com/api/v3/devices/agate.json
 ```
 
 The frontend site (`apiBaseUrl` is `https://api.miuier.com/api`), the admin panel, and mobile clients

@@ -21,6 +21,11 @@ from miroms.logs_store import LogStore
 from miroms.validator import DataValidator
 from miroms.exporters import (exportV1, exportV2, exportV3, export_series_index, export_statistics,
 	export_dev, load_series_data)
+# 参考站点附属导出（api/v1 = NuxtMR、api/v2 = HyperOS.fans）
+from miroms.legacy_exporters import (export_sitelog, export_v1_extras, export_v2_extras, export_hub_extras,
+	export_v1_index, export_v1_weekly_index, export_v1_weekly_weeks, export_v1_devlist,
+	export_v2_index, export_v2_dev_index, export_v2_dev_weeks, export_v2_devices,
+	export_hub_sitelog, export_tools)
 import logging
 
 logger = logging.getLogger(__name__)
