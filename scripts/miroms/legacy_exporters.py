@@ -8,7 +8,7 @@
 api/v1（NuxtMR，MIUI）
   * ``index.json``              首页「本周正式版更新」，按 ISO 周聚合 roms（type=MIUI, branch=F）
   * ``weekly.json``             周更索引：大版本 -> 周数列表（dev 表 region=cn 的 MIUI 周）
-  * ``weekly/week-<week>-cn.json``  单周公告 + 机型清单 + 更新日志（dev.source='nuxtmr'）
+  * ``weekly/week-<week>-cn.json``  单周公告 + 机型清单 + 更新日志（dev 表全部 MIUI 周，不限来源）
   * ``devlist.json``            机型列表目录（手写目录 + 从 devices/*.json 回填 android/miui）
   * ``sitelog.json``            站点日志（sitelog 表 site='nuxtmr'）
 
@@ -340,8 +340,8 @@ def export_v1_index() -> Optional[Dict[str, Any]]:
 def export_v1_weekly_index() -> Optional[Dict[str, Any]]:
 	"""导出 api/v1/weekly.json：周更大版本 -> 周数列表。
 
-	``oldest`` 取 dev 表里第一个有 v1 单周详情页的来源（``source='nuxtmr'``，第 560 周起）；
-	比它更早的周次前端会外链到 old.miuier.com，因此仍需出现在 ``versions`` 里。
+	周次取 ``dev`` 表里全部 MIUI 周（``bigver LIKE 'MIUI%'``），不区分来源
+	（miuiroms / nuxtmr 等）；这些周次都会导出单周详情页，因此 ``oldest`` 直接取最早一周。
 	"""
 	rows = DatabaseManager.query_all(
 		"SELECT `week`, `bigver` FROM `dev` "
@@ -357,17 +357,9 @@ def export_v1_weekly_index() -> Optional[Dict[str, Any]]:
 		key = _V1_BIGVER_ALIASES.get(bigver or '', bigver or 'MIUI')
 		versions.setdefault(key, []).append(str(int(week)))
 
-	oldest_row = DatabaseManager.query_all(
-		"SELECT MIN(`week`) FROM `dev` WHERE `source` = 'nuxtmr' AND `region` = 'cn'"
-	)
-	oldest = oldest_row[0][0] if oldest_row and oldest_row[0] else None
-	if oldest is None:
-		# 没有导入过 NuxtMR 周更时，退化为「全部周次都可点」而不是丢掉 oldest
-		oldest = min(int(w) for weeks in versions.values() for w in weeks)
-
 	payload = {
 		'latest': str(max(int(w) for weeks in versions.values() for w in weeks)),
-		'oldest': str(int(oldest)),
+		'oldest': str(min(int(w) for weeks in versions.values() for w in weeks)),
 		'versions': [
 			{'version': name, 'period': '', 'weeks': weeks}
 			for name, weeks in versions.items()
@@ -379,14 +371,18 @@ def export_v1_weekly_index() -> Optional[Dict[str, Any]]:
 
 
 def export_v1_weekly_weeks() -> int:
-	"""导出 api/v1/weekly/week-<week>-cn.json（dev 表 source='nuxtmr' 的全部周次）。"""
+	"""导出 api/v1/weekly/week-<week>-cn.json（dev 表 region='cn'、show=1 的全部 MIUI 周次）。
+
+	只要 ``bigver`` 是 MIUI 就导出，不再要求 ``source='nuxtmr'``：早期周次来自
+	miuiroms，nuxtmr 只覆盖第 560 周之后，按来源过滤会丢掉大量 MIUI 周更日志。
+	"""
 	rows = DatabaseManager.query_all(
 		"SELECT `week`, `zone`, `versions`, `title_zh`, `title_en`, `post_id`, `update_time`, "
 		"`description`, `attention`, `suspended`, `logs` FROM `dev` "
-		"WHERE `source` = 'nuxtmr' AND `region` = 'cn' AND `show` = 1 ORDER BY `week`"
+		"WHERE `region` = 'cn' AND `show` = 1 AND `bigver` LIKE 'MIUI%%' ORDER BY `week`"
 	)
 	if not rows:
-		logger.warning("dev 表没有 NuxtMR 周更记录，跳过 v1/weekly/**")
+		logger.warning("dev 表没有 MIUI 周更记录，跳过 v1/weekly/**")
 		return 0
 
 	names = _device_name_map()

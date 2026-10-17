@@ -184,8 +184,8 @@ HyperOS.fans 的 `public/data`），除设备文件外还有一批站点级接�
 | 文件 | 说明 |
 | --- | --- |
 | `api/v1/index.json` | 首页「本周正式版更新」：按 ISO 周聚合 `roms`（`type=MIUI`、`branch=F`，排除 `.EP.` 政企版），字段 `year` / `week` / `period` / `nextperiod` / `date` / `stable[{code, zh-cn, en-us, date, rom}]`，同一机型当周多个分支版本以 `"; "` 连接 |
-| `api/v1/weekly.json` | 周更索引：`latest` / `oldest` / `versions[{version, period, weeks}]`。周次来自 `dev` 表（`region='cn'`、`show=1` 的 MIUI 周），`oldest` 取第一个有 V1 单周详情页的来源（`source='nuxtmr'`，第 560 周）；更早的周次仍出现在 `versions` 里，前端外链到 old.miuier.com |
-| `api/v1/weekly/week-<week>-cn.json` | 单周公告（`zh-cn` / `en-us` / `CnComID` 等）+ `devices` 机型清单 + `tpd` 停版 + `addons` 升级说明 / 版本说明 + `logs` 模块日志；数据来自 `dev`（`source='nuxtmr'`）与 `roms.dev_week` |
+| `api/v1/weekly.json` | 周更索引：`latest` / `oldest` / `versions[{version, period, weeks}]`。周次来自 `dev` 表（`region='cn'`、`show=1` 的全部 MIUI 周，不区分来源 miuiroms / nuxtmr），`oldest` 即最早一周，所有周次都有 V1 单周详情页 |
+| `api/v1/weekly/week-<week>-cn.json` | 单周公告（`zh-cn` / `en-us` / `CnComID` 等）+ `devices` 机型清单 + `tpd` 停版 + `addons` 升级说明 / 版本说明 + `logs` 模块日志；数据来自 `dev`（`bigver` 为 MIUI 的全部周次，不限来源）与 `roms.dev_week` |
 | `api/v1/devlist.json` | 机型列表页 / sitemap 的设备目录：品牌 → 系列 → 机型（人工维护顺序），脚本按 `devices/<code>.json` 回填 `android` / `miui` |
 | `api/v1/sitelog.json` | 站点日志，结构 `{"log": [{sudate, ver, zh-cn, en-us, log: [{zh-cn, en-us}]}]}`，来自 `sitelog` 表 `site='nuxtmr'` |
 | `api/v2/index.json` | 首页「近 6 天新增」：按 `roms.insdate` 聚合 HyperOS ROM（窗口 6 天，与源站点一致），结构 `{"recent": {time, developing, roms: {<device>: {name, versions: [{insert_date, version}]}}}}` |
