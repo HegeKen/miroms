@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import ssl
 import sys
 import time
 import urllib.error
@@ -66,10 +67,25 @@ def deploy_targets(selected=None) -> list[tuple[str, str]]:
 	return matched
 
 
+def ssl_context() -> ssl.SSLContext:
+	"""构造 TLS 上下文：优先用 certifi 的 CA（框架版 Python 常缺系统根证书）
+
+	可通过 config.ca_bundle 指定自定义 CA bundle；未安装 certifi 时回退系统默认。
+	"""
+	ca_bundle = getattr(config, "ca_bundle", None)
+	if ca_bundle and str(ca_bundle).strip():
+		return ssl.create_default_context(cafile=str(ca_bundle).strip())
+	try:
+		import certifi
+	except ImportError:
+		return ssl.create_default_context()
+	return ssl.create_default_context(cafile=certifi.where())
+
+
 def post_hook(url: str, timeout: int = DEFAULT_TIMEOUT) -> dict:
 	"""POST 一个 Cloudflare deploy hook，返回解析后的 JSON"""
 	request = urllib.request.Request(url, data=b"", method="POST")
-	with urllib.request.urlopen(request, timeout=timeout) as response:
+	with urllib.request.urlopen(request, timeout=timeout, context=ssl_context()) as response:
 		body = response.read().decode("utf-8", "replace")
 	return json.loads(body)
 

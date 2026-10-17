@@ -3,6 +3,8 @@ ids=[
       "", #HUB
       "", #HyperOS.fans
       ""] #MIUIer
+# 可选：自定义 CA bundle（如公司代理证书）；留空则自动用 certifi 的根证书
+ca_bundle = ""
 user=''
 password=''
 host=''
