@@ -1,0 +1,213 @@
+{
+  "zh-cn": "第226周开发版日志",
+  "en-us": "",
+  "CnBBSID": "",
+  "CnComID": "",
+  "GbBBSID": "",
+  "update": "",
+  "versions": "5.2.27",
+  "showdevices": "1",
+  "vid": "",
+  "no": "",
+  "devices": [
+    {
+      "code": "aries",
+      "zh-cn": "小米 2/2S",
+      "en-us": "MI 2/2S",
+      "miui": "5.2.27",
+      "android": "4.4",
+      "recovery": "miui_MI2Beta_5.2.27_3c2ef796c8_4.4.zip",
+      "fastboot": "aries_beta_images_5.2.27_4.4_cn_e0d0e1e3e3.tgz"
+    },
+    {
+      "code": "taurus",
+      "zh-cn": "小米 2A",
+      "en-us": "Mi 2A",
+      "miui": "5.2.27",
+      "android": "4.4",
+      "recovery": "miui_MI2ABeta_5.2.27_d8be23720a_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "code": "pisces",
+      "zh-cn": "小米3 移动版",
+      "en-us": "MI 3 TD",
+      "miui": "5.2.27",
+      "android": "4.4",
+      "recovery": "miui_MI3TD_5.2.27_b85e823ca1_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "code": "cancro",
+      "zh-cn": "小米 3 联通电信版/小米 4",
+      "en-us": "MI3 WCDMA/Mi 4",
+      "miui": "5.2.27",
+      "android": "4.4",
+      "recovery": "miui_MI3WMI4W_5.2.27_ad2533c6cb_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "code": "cancro_lte_ct",
+      "zh-cn": "小米手机4 电信4G",
+      "en-us": "Mi 4 LTE CT",
+      "miui": "5.2.27",
+      "android": "4.4",
+      "recovery": "miui_MI4LTECT_5.2.27_9b2f5330ac_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "code": "virgo",
+      "zh-cn": "小米 Note 双网通版",
+      "en-us": "Mi Note",
+      "miui": "5.2.27",
+      "android": "4.4",
+      "recovery": "miui_MINote_5.2.27_11be1ed583_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "code": "mocha",
+      "zh-cn": "小米平板 1",
+      "en-us": "MiPad 1",
+      "miui": "5.2.27",
+      "android": "4.4",
+      "recovery": "miui_MOCHA_5.2.27_1f1105cd9f_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "code": "wt96007",
+      "zh-cn": "红米 1S 移动4G版",
+      "en-us": "Redmi 1S LTE",
+      "miui": "5.2.27",
+      "android": "4.4",
+      "recovery": "miui_HM1SLTE_5.2.27_f0bea6e5f1_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "code": "wt86047",
+      "zh-cn": "红米 2 移动3G版",
+      "en-us": "Redmi 2 TD",
+      "miui": "5.2.27",
+      "android": "4.4",
+      "recovery": "miui_HM2XTD_5.2.27_9fc27667b9_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "code": "wt88047",
+      "zh-cn": "红米 2 联通/电信3G版",
+      "en-us": "Redmi 2 WCDMA",
+      "miui": "5.2.27",
+      "android": "4.4",
+      "recovery": "miui_HM2XWC_5.2.27_7935cd93c3_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "code": "dior",
+      "zh-cn": "红米 Note 4G 单卡版",
+      "en-us": "Redmi Note 4G",
+      "miui": "5.2.27",
+      "android": "4.4",
+      "recovery": "miui_HMNoteLTE_5.2.27_d5b295f45b_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "code": "gucci",
+      "zh-cn": "红米 Note 4G 双卡版",
+      "en-us": "Redmi Note 1S 4G",
+      "miui": "5.2.27",
+      "android": "4.4",
+      "recovery": "miui_HMNote1S_5.2.27_9a4cd16fbe_4.4.zip",
+      "fastboot": ""
+    }
+  ],
+  "tpd": [],
+  "addons": [
+    {
+      "zh-cn": "升级说明",
+      "en-us": "Update instruction",
+      "details": [
+        {
+          "zh-cn": "MIUI V5 / MIUI 6开发版可以直接 OTA 升级（方法：系统更新 - 检查更新 - 选择最新版本升级）",
+          "en-us": ""
+        },
+        {
+          "zh-cn": "较老版本的 MIUI 可通过刷 MIUI V5 / MIUI 6 最新完整包快速升级（方法：小米手机可通过系统更新 - Menu - 选择安装包进行升级，第三方机型需手动进入 Recovery 选择完整包进行升级）",
+          "en-us": ""
+        },
+        {
+          "zh-cn": "跨版本进行升级时（如稳定版刷开发版）需要清除所有数据，以避免因数据冲突出现个例问题；清除数据前务必主动备份数据，以免丢失（方法：设置 - 备份和重置 - 本地备份）",
+          "en-us": ""
+        },
+        {
+          "zh-cn": "其它品牌手机首次刷 MIUI ROM 请严格按照刷机教程进行刷机",
+          "en-us": ""
+        }
+      ]
+    },
+    {
+      "zh-cn": "版本说明",
+      "en-us": "Version Information",
+      "details": [
+        {
+          "zh-cn": "MIUI6 5.2.27 已发布！",
+          "en-us": ""
+        }
+      ]
+    }
+  ],
+  "logs": [
+    {
+      "zh-cn": "第226周开发版日志",
+      "en-us": "",
+      "log": [
+        {
+          "zh-cn": "音乐",
+          "en-us": "音乐",
+          "changes": [
+            {
+              "zh-cn": "优化 底部播放条的视觉效果（小米Note）",
+              "en-us": "优化 底部播放条的视觉效果（小米Note）"
+            }
+          ]
+        },
+        {
+          "zh-cn": "日历",
+          "en-us": "日历",
+          "changes": [
+            {
+              "zh-cn": "修复 某些情况下，点击更多按钮后操作栏自动收起的问题",
+              "en-us": "修复 某些情况下，点击更多按钮后操作栏自动收起的问题"
+            }
+          ]
+        },
+        {
+          "zh-cn": "网络助手",
+          "en-us": "网络助手",
+          "changes": [
+            {
+              "zh-cn": "修复 某些情况下，使用双SIM卡时不能自动校正流量的问题",
+              "en-us": "修复 某些情况下，使用双SIM卡时不能自动校正流量的问题"
+            },
+            {
+              "zh-cn": "修复 切换系统语言后，进入流量排行功能导致意外退出的问题",
+              "en-us": "修复 切换系统语言后，进入流量排行功能导致意外退出的问题"
+            }
+          ]
+        },
+        {
+          "zh-cn": "二维码",
+          "en-us": "二维码",
+          "changes": [
+            {
+              "zh-cn": "优化 网址识别算法（重点识别http、https、rtsp）",
+              "en-us": "优化 网址识别算法（重点识别http、https、rtsp）"
+            },
+            {
+              "zh-cn": "视频演示：",
+              "en-us": "视频演示："
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

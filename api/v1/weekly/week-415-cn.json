@@ -1,0 +1,569 @@
+{
+  "zh-cn": "第415周开发版日志",
+  "en-us": "",
+  "CnBBSID": "",
+  "CnComID": "",
+  "GbBBSID": "",
+  "update": "",
+  "versions": "9.5.9",
+  "showdevices": "1",
+  "vid": "",
+  "no": "",
+  "devices": [
+    {
+      "code": "capricorn",
+      "zh-cn": "小米 5s",
+      "en-us": "Mi 5s",
+      "miui": "9.5.9",
+      "android": "8.0",
+      "recovery": "miui_MI5S_9.5.9_6754100b38_8.0.zip",
+      "fastboot": "capricorn_images_9.5.9_20190509.0000.00_8.0_cn_4ce63c896e.tgz"
+    },
+    {
+      "code": "natrium",
+      "zh-cn": "小米 5s Plus",
+      "en-us": "Mi 5s Plus",
+      "miui": "9.5.9",
+      "android": "8.0",
+      "recovery": "miui_MI5SPlus_9.5.9_a02050f510_8.0.zip",
+      "fastboot": "natrium_images_9.5.9_20190509.0000.00_8.0_cn_2a80bfa7c7.tgz"
+    },
+    {
+      "code": "meri",
+      "zh-cn": "小米 5C",
+      "en-us": "Mi 5C",
+      "miui": "9.5.9",
+      "android": "7.1",
+      "recovery": "miui_MI5C_9.5.9_c7308eb27a_7.1.zip",
+      "fastboot": "meri_images_9.5.9_20190509.0000.00_7.1_cn_ef8111cf2b.tgz"
+    },
+    {
+      "code": "tiffany",
+      "zh-cn": "小米 5X",
+      "en-us": "Mi 5X",
+      "miui": "9.5.9",
+      "android": "8.1",
+      "recovery": "miui_MI5X_9.5.9_3e496bb6b0_8.1.zip",
+      "fastboot": "tiffany_images_9.5.9_20190509.0000.00_8.1_cn_ad36b08826.tgz"
+    },
+    {
+      "code": "sagit",
+      "zh-cn": "小米 6",
+      "en-us": "Mi 6",
+      "miui": "9.5.9",
+      "android": "9.0",
+      "recovery": "miui_MI6_9.5.9_0c696066a4_9.0.zip",
+      "fastboot": "sagit_images_9.5.9_20190509.0000.00_9.0_cn_921b2f8378.tgz"
+    },
+    {
+      "code": "wayne",
+      "zh-cn": "小米 6X",
+      "en-us": "Mi 6X",
+      "miui": "9.5.9",
+      "android": "9.0",
+      "recovery": "miui_MI6X_9.5.9_51aebd8e82_9.0.zip",
+      "fastboot": "wayne_images_9.5.9_20190509.0000.00_9.0_cn_b444fc74eb.tgz"
+    },
+    {
+      "code": "dipper",
+      "zh-cn": "小米 8",
+      "en-us": "Mi 8",
+      "miui": "9.5.9",
+      "android": "9.0",
+      "recovery": "miui_MI8_9.5.9_3301cae69a_9.0.zip",
+      "fastboot": "dipper_images_9.5.9_20190509.0000.00_9.0_cn_a3a26b4e19.tgz"
+    },
+    {
+      "code": "equuleus",
+      "zh-cn": "小米 8 屏幕指纹版",
+      "en-us": "Mi 8 Pro",
+      "miui": "9.5.9",
+      "android": "9.0",
+      "recovery": "miui_MI8UD_9.5.9_b6d2a27972_9.0.zip",
+      "fastboot": "equuleus_images_9.5.9_20190509.0000.00_9.0_cn_f6a9558c5f.tgz"
+    },
+    {
+      "code": "ursa",
+      "zh-cn": "小米 8 透明探索版",
+      "en-us": "Mi 8 Explorer",
+      "miui": "9.5.9",
+      "android": "9.0",
+      "recovery": "miui_MI8Explorer_9.5.9_b7a70ac645_9.0.zip",
+      "fastboot": "ursa_images_9.5.9_20190509.0000.00_9.0_cn_6495fcc792.tgz"
+    },
+    {
+      "code": "platina",
+      "zh-cn": "小米 8 青春版",
+      "en-us": "Mi 8 Lite",
+      "miui": "9.5.9",
+      "android": "9.0",
+      "recovery": "miui_MI8Lite_9.5.9_f025d6aa44_9.0.zip",
+      "fastboot": "platina_images_9.5.9_20190509.0000.00_9.0_cn_9aba984984.tgz"
+    },
+    {
+      "code": "cepheus",
+      "zh-cn": "小米 9",
+      "en-us": "Mi 9",
+      "miui": "9.5.9",
+      "android": "9.0",
+      "recovery": "miui_CEPHEUS_9.5.9_c70d71d568_9.0.zip",
+      "fastboot": "cepheus_images_9.5.9_20190509.0000.00_9.0_cn_5f55a976af.tgz"
+    },
+    {
+      "code": "sirius",
+      "zh-cn": "小米 8 SE",
+      "en-us": "Mi 8 SE",
+      "miui": "9.5.9",
+      "android": "9.0",
+      "recovery": "miui_MI8SE_9.5.9_09aa77511c_9.0.zip",
+      "fastboot": "sirius_images_9.5.9_20190509.0000.00_9.0_cn_324f125378.tgz"
+    },
+    {
+      "code": "grus",
+      "zh-cn": "小米 9 SE",
+      "en-us": "Mi 9 SE",
+      "miui": "9.5.9",
+      "android": "9.0",
+      "recovery": "miui_GRUS_9.5.9_705ee1e0af_9.0.zip",
+      "fastboot": "grus_images_9.5.9_20190509.0000.00_9.0_cn_4b14c2c19e.tgz"
+    },
+    {
+      "code": "scorpio",
+      "zh-cn": "小米 Note 2",
+      "en-us": "Mi Note 2",
+      "miui": "9.5.9",
+      "android": "8.0",
+      "recovery": "miui_MINote2_9.5.9_1245aa0abd_8.0.zip",
+      "fastboot": "scorpio_images_9.5.9_20190509.0000.00_8.0_cn_9b81542c2f.tgz"
+    },
+    {
+      "code": "jason",
+      "zh-cn": "小米 Note 3",
+      "en-us": "Mi Note 3",
+      "miui": "9.5.9",
+      "android": "8.1",
+      "recovery": "miui_MINote3_9.5.9_6229f4ab86_8.1.zip",
+      "fastboot": "jason_images_9.5.9_20190509.0000.00_8.1_cn_c8b5078959.tgz"
+    },
+    {
+      "code": "oxygen",
+      "zh-cn": "小米 MAX 2",
+      "en-us": "Mi Max 2",
+      "miui": "9.5.9",
+      "android": "7.1",
+      "recovery": "miui_MIMAX2_9.5.9_d30a5ef905_7.1.zip",
+      "fastboot": "oxygen_images_9.5.9_20190509.0000.00_7.1_cn_051da7d470.tgz"
+    },
+    {
+      "code": "nitrogen",
+      "zh-cn": "小米 MAX 3",
+      "en-us": "Mi Max 3",
+      "miui": "9.5.9",
+      "android": "9.0",
+      "recovery": "miui_MIMAX3_9.5.9_c2cf21a1f8_9.0.zip",
+      "fastboot": "nitrogen_images_9.5.9_20190509.0000.00_9.0_cn_1575b40646.tgz"
+    },
+    {
+      "code": "lithium",
+      "zh-cn": "小米 MIX",
+      "en-us": "Mi MIX",
+      "miui": "9.5.9",
+      "android": "8.0",
+      "recovery": "miui_MIMIX_9.5.9_9e2b6d373c_8.0.zip",
+      "fastboot": "lithium_images_9.5.9_20190509.0000.00_8.0_cn_2a4166c029.tgz"
+    },
+    {
+      "code": "chiron",
+      "zh-cn": "小米 MIX 2",
+      "en-us": "Mi MIX 2",
+      "miui": "9.5.9",
+      "android": "9.0",
+      "recovery": "miui_MIMIX2_9.5.9_5a5f9c3558_9.0.zip",
+      "fastboot": ""
+    },
+    {
+      "code": "polaris",
+      "zh-cn": "小米 MIX 2S",
+      "en-us": "Mi MIX 2S",
+      "miui": "9.5.9",
+      "android": "9.0",
+      "recovery": "miui_MIMIX2S_9.5.9_f8336ded6f_9.0.zip",
+      "fastboot": "polaris_images_9.5.9_20190509.0000.00_9.0_cn_5535eaabdc.tgz"
+    },
+    {
+      "code": "perseus",
+      "zh-cn": "小米 MIX 3",
+      "en-us": "Mi MIX 3",
+      "miui": "9.5.9",
+      "android": "9.0",
+      "recovery": "miui_MIMIX3_9.5.9_9366e0357b_9.0.zip",
+      "fastboot": "perseus_images_9.5.9_20190509.0000.00_9.0_cn_8d92d7332e.tgz"
+    },
+    {
+      "code": "cappu",
+      "zh-cn": "小米平板 3",
+      "en-us": "Mi Pad 3",
+      "miui": "9.5.9",
+      "android": "7.0",
+      "recovery": "miui_MIPAD3_9.5.9_bd241c400f_7.0.zip",
+      "fastboot": "cappu_images_9.5.9_20190509.0000.00_7.0_cn_03ca3db499.tgz"
+    },
+    {
+      "code": "clover",
+      "zh-cn": "小米平板 4/Plus",
+      "en-us": "Mi Pad 4 (Plus)",
+      "miui": "9.5.9",
+      "android": "8.1",
+      "recovery": "miui_MIPAD4_9.5.9_72a10d56ca_8.1.zip",
+      "fastboot": "clover_images_9.5.9_20190509.0000.00_8.1_cn_8c22ac5150.tgz"
+    },
+    {
+      "code": "lotus",
+      "zh-cn": "小米 Play",
+      "en-us": "Mi Play",
+      "miui": "9.5.9",
+      "android": "8.1",
+      "recovery": "miui_MIPLAY_9.5.9_9885d45019_8.1.zip",
+      "fastboot": "lotus_images_9.5.9_20190509.0000.00_8.1_cn_37689bc476.tgz"
+    },
+    {
+      "code": "santoni",
+      "zh-cn": "红米 4X",
+      "en-us": "Redmi 4X",
+      "miui": "9.5.9",
+      "android": "7.1",
+      "recovery": "miui_HM4X_9.5.9_542c178888_7.1.zip",
+      "fastboot": "santoni_images_9.5.9_20190509.0000.00_7.1_cn_3c9e299f25.tgz"
+    },
+    {
+      "code": "rosy",
+      "zh-cn": "红米 5",
+      "en-us": "Redmi 5",
+      "miui": "9.5.9",
+      "android": "8.1",
+      "recovery": "miui_HM5_9.5.9_7e75b980f4_8.1.zip",
+      "fastboot": "rosy_images_9.5.9_20190509.0000.00_8.1_cn_3fd2ee6805.tgz"
+    },
+    {
+      "code": "riva",
+      "zh-cn": "红米5A",
+      "en-us": "Redmi 5A",
+      "miui": "9.5.9",
+      "android": "8.1",
+      "recovery": "miui_HM5A_9.5.9_9f4c7681bf_8.1.zip",
+      "fastboot": "riva_images_9.5.9_20190509.0000.00_8.1_cn_0ad8908a90.tgz"
+    },
+    {
+      "code": "vince",
+      "zh-cn": "红米5 Plus / Note 5",
+      "en-us": "Redmi 5 Plus / Note 5",
+      "miui": "9.5.9",
+      "android": "8.1",
+      "recovery": "miui_HM5Plus_9.5.9_45942882c9_8.1.zip",
+      "fastboot": "vince_images_9.5.9_20190509.0000.00_8.1_cn_80de1cc78c.tgz"
+    },
+    {
+      "code": "cereus",
+      "zh-cn": "红米 6",
+      "en-us": "Redmi 6",
+      "miui": "9.5.9",
+      "android": "8.1",
+      "recovery": "miui_HM6_9.5.9_6c46c23d59_8.1.zip",
+      "fastboot": "cereus_images_9.5.9_20190509.0000.00_8.1_cn_53efc68865.tgz"
+    },
+    {
+      "code": "cactus",
+      "zh-cn": "红米 6A",
+      "en-us": "Redmi 6A",
+      "miui": "9.5.9",
+      "android": "8.1",
+      "recovery": "miui_HM6A_9.5.9_af651c56ea_8.1.zip",
+      "fastboot": "cactus_images_9.5.9_20190509.0000.00_8.1_cn_8447e30f50.tgz"
+    },
+    {
+      "code": "sakura",
+      "zh-cn": "红米 6 Pro",
+      "en-us": "Redmi 6 Pro",
+      "miui": "9.5.9",
+      "android": "9.0",
+      "recovery": "miui_HM6Pro_9.5.9_8d423fe112_9.0.zip",
+      "fastboot": "sakura_images_9.5.9_20190509.0000.00_9.0_cn_fefad893da.tgz"
+    },
+    {
+      "code": "mido",
+      "zh-cn": "红米 Note 4X 高通版",
+      "en-us": "Redmi Note 4",
+      "miui": "9.5.9",
+      "android": "7.0",
+      "recovery": "miui_HMNote4X_9.5.9_6ed39591c4_7.0.zip",
+      "fastboot": "mido_images_9.5.9_20190509.0000.00_7.0_cn_2161a9d4ae.tgz"
+    },
+    {
+      "code": "ugglite",
+      "zh-cn": "红米 Note 5A 标准版",
+      "en-us": "Redmi Note 5A (2GB)",
+      "miui": "9.5.9",
+      "android": "7.1",
+      "recovery": "miui_HMNote5ALITE_9.5.9_944b7e34fb_7.1.zip",
+      "fastboot": "ugglite_images_9.5.9_20190509.0000.00_7.1_cn_5fffcf49d9.tgz"
+    },
+    {
+      "code": "ugg",
+      "zh-cn": "红米 Note 5A 高配版",
+      "en-us": "Redmi Note 5A Prime",
+      "miui": "9.5.9",
+      "android": "7.1",
+      "recovery": "miui_HMNote5A_9.5.9_9bfe5263bb_7.1.zip",
+      "fastboot": "ugg_images_9.5.9_20190509.0000.00_7.1_cn_e26643213c.tgz"
+    },
+    {
+      "code": "whyred",
+      "zh-cn": "红米 Note 5",
+      "en-us": "Redmi Note 5/5 Pro",
+      "miui": "9.5.9",
+      "android": "9.0",
+      "recovery": "miui_HMNote5_9.5.9_786dc78d7b_9.0.zip",
+      "fastboot": "whyred_images_9.5.9_20190509.0000.00_9.0_cn_4c43f17f79.tgz"
+    },
+    {
+      "code": "lavender",
+      "zh-cn": "Redmi Note 7/7S",
+      "en-us": "Redmi Note 7/7S",
+      "miui": "9.5.9",
+      "android": "9.0",
+      "recovery": "miui_LAVENDER_9.5.9_2a34bc3d99_9.0.zip",
+      "fastboot": "lavender_images_9.5.9_20190509.0000.00_9.0_cn_fe373b7e13.tgz"
+    }
+  ],
+  "tpd": [],
+  "addons": [
+    {
+      "zh-cn": "升级说明",
+      "en-us": "Update instruction",
+      "details": [
+        {
+          "zh-cn": "已加入防回刷机制的机型无法降级刷回旧版本的开发版或稳定版，否则会导致手机变砖",
+          "en-us": ""
+        },
+        {
+          "zh-cn": "MIUI 6/7/8/9开发版可进入“设置→我的设备→MIUI版本”在线升级",
+          "en-us": ""
+        },
+        {
+          "zh-cn": "MIUI 6/7/8/9稳定版用户，建议通过线刷升级至 MIUI 10开发版，教程请见下方“刷机指南”",
+          "en-us": ""
+        },
+        {
+          "zh-cn": "部分机型可能因功能进版时间略有差异，具体功能请以手机端展示日志为准",
+          "en-us": ""
+        }
+      ]
+    },
+    {
+      "zh-cn": "版本说明",
+      "en-us": "Version Information",
+      "details": [
+        {
+          "zh-cn": "MIUI10 开发版 9.5.9 已发布",
+          "en-us": ""
+        },
+        {
+          "zh-cn": "已升级 Android P 的小米6用户，不建议回刷版本，因底层版本不同，可能出现功能异常等问题；从 Android P 回刷至 Android O, 若出现查找手机、指纹支付等异常问题，需先刷入过渡的",
+          "en-us": ""
+        },
+        {
+          "zh-cn": "线刷包",
+          "en-us": ""
+        },
+        {
+          "zh-cn": "，再刷 Android O 版本即可正常使用。",
+          "en-us": ""
+        },
+        {
+          "zh-cn": "小米MIX 2 因升级 Android P 本周暂停公测",
+          "en-us": ""
+        },
+        {
+          "zh-cn": "小米MIX2S、小米9已发布公测",
+          "en-us": ""
+        },
+        {
+          "zh-cn": "小米MIX 3已发布公测",
+          "en-us": ""
+        },
+        {
+          "zh-cn": "Android P机型招募开发版内测米粉",
+          "en-us": ""
+        },
+        {
+          "zh-cn": "MIUI 6/7/8/9开发版可点击“设置”→“我的设备”→“MIUI版本”在线升级，升级前务必备份重要数据",
+          "en-us": ""
+        },
+        {
+          "zh-cn": "MIUI 6/7/8/9稳定版用户版本用户建议通过线刷升级，线刷会清除全部数据",
+          "en-us": ""
+        },
+        {
+          "zh-cn": "开发版/稳定版相互刷机时，需备份好重要数据，再通过线刷方式清除所有数据进行刷机，防止出现异常问题",
+          "en-us": ""
+        },
+        {
+          "zh-cn": "新机型有防刷机保护，线刷前请先进行 Bootloader 解锁",
+          "en-us": ""
+        }
+      ]
+    }
+  ],
+  "logs": [
+    {
+      "zh-cn": "第415周开发版日志",
+      "en-us": "",
+      "log": [
+        {
+          "zh-cn": "系统",
+          "en-us": "系统",
+          "changes": [
+            {
+              "zh-cn": "优化 开启防闪烁模式的指纹识别率（小米9）",
+              "en-us": "优化 开启防闪烁模式的指纹识别率（小米9）"
+            }
+          ]
+        },
+        {
+          "zh-cn": "锁屏、状态栏、通知栏",
+          "en-us": "锁屏、状态栏、通知栏",
+          "changes": [
+            {
+              "zh-cn": "新增 锁屏时钟自定义功能! 提供三种锁屏时钟样式，轻松搭配各种壁纸! 可在 设置 --> 锁屏、密码和指纹 --> 锁屏高级设置 --> 锁屏时间样式 中进行自定义。该功能对第三方主题不生效",
+              "en-us": "新增 锁屏时钟自定义功能! 提供三种锁屏时钟样式，轻松搭配各种壁纸! 可在 设置 --> 锁屏、密码和指纹 --> 锁屏高级设置 --> 锁屏时间样式 中进行自定义。该功能对第三方主题不生效"
+            },
+            {
+              "zh-cn": "优化 录入指纹前需要先设置密码的提示文案",
+              "en-us": "优化 录入指纹前需要先设置密码的提示文案"
+            },
+            {
+              "zh-cn": "优化 息屏显示的UI样式",
+              "en-us": "优化 息屏显示的UI样式"
+            },
+            {
+              "zh-cn": "优化 息屏显示下的日历图标样式",
+              "en-us": "优化 息屏显示下的日历图标样式"
+            },
+            {
+              "zh-cn": "优化 息屏样式选择页面的UI和体验",
+              "en-us": "优化 息屏样式选择页面的UI和体验"
+            },
+            {
+              "zh-cn": "优化 “灭屏显示指纹”的文案修改为“息屏显示指纹”，并优化了描述文案",
+              "en-us": "优化 “灭屏显示指纹”的文案修改为“息屏显示指纹”，并优化了描述文案"
+            },
+            {
+              "zh-cn": "修复 横屏状态下无法正常打开指纹快捷功能的问题",
+              "en-us": "修复 横屏状态下无法正常打开指纹快捷功能的问题"
+            },
+            {
+              "zh-cn": "修复 息屏下偶现指纹解锁失败的问题",
+              "en-us": "修复 息屏下偶现指纹解锁失败的问题"
+            },
+            {
+              "zh-cn": "修复 少数情况下，后置指纹被锁定时没有错误提示的问题",
+              "en-us": "修复 少数情况下，后置指纹被锁定时没有错误提示的问题"
+            }
+          ]
+        },
+        {
+          "zh-cn": "相机",
+          "en-us": "相机",
+          "changes": [
+            {
+              "zh-cn": "修复 相机稳定性问题",
+              "en-us": "修复 相机稳定性问题"
+            }
+          ]
+        },
+        {
+          "zh-cn": "相册",
+          "en-us": "相册",
+          "changes": [
+            {
+              "zh-cn": "新增 照片页新增年视图功能",
+              "en-us": "新增 照片页新增年视图功能"
+            },
+            {
+              "zh-cn": "优化 分类相册封面加载",
+              "en-us": "优化 分类相册封面加载"
+            }
+          ]
+        },
+        {
+          "zh-cn": "设置",
+          "en-us": "设置",
+          "changes": [
+            {
+              "zh-cn": "新增 防闪烁模式，全局直流调光，前往设置->显示->防闪烁模式开启（小米9）",
+              "en-us": "新增 防闪烁模式，全局直流调光，前往设置->显示->防闪烁模式开启（小米9）"
+            },
+            {
+              "zh-cn": "优化 完善搜索词库",
+              "en-us": "优化 完善搜索词库"
+            },
+            {
+              "zh-cn": "优化 WLAN列表排序规则",
+              "en-us": "优化 WLAN列表排序规则"
+            },
+            {
+              "zh-cn": "优化 WiFi列表排序策略",
+              "en-us": "优化 WiFi列表排序策略"
+            },
+            {
+              "zh-cn": "修复 某些情况下，SIM卡状态中移动网络类型错误的问题",
+              "en-us": "修复 某些情况下，SIM卡状态中移动网络类型错误的问题"
+            }
+          ]
+        },
+        {
+          "zh-cn": "游戏加速",
+          "en-us": "游戏加速",
+          "changes": [
+            {
+              "zh-cn": "新版游戏加速首页，界面风格焕然一新",
+              "en-us": "新版游戏加速首页，界面风格焕然一新"
+            },
+            {
+              "zh-cn": "游戏工具箱全面升级，支持一键切换上网卡功能",
+              "en-us": "游戏工具箱全面升级，支持一键切换上网卡功能"
+            }
+          ]
+        },
+        {
+          "zh-cn": "病毒扫描",
+          "en-us": "病毒扫描",
+          "changes": [
+            {
+              "zh-cn": "新增 支持对“一键换机” 的适配",
+              "en-us": "新增 支持对“一键换机” 的适配"
+            }
+          ]
+        },
+        {
+          "zh-cn": "安全中心",
+          "en-us": "安全中心",
+          "changes": [
+            {
+              "zh-cn": "优化 骚扰拦截记录页面的响应速度",
+              "en-us": "优化 骚扰拦截记录页面的响应速度"
+            },
+            {
+              "zh-cn": "修复 手机重启后双开APP消失的bug",
+              "en-us": "修复 手机重启后双开APP消失的bug"
+            },
+            {
+              "zh-cn": "修复 红包助手在Talkback模式下兼容问题",
+              "en-us": "修复 红包助手在Talkback模式下兼容问题"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

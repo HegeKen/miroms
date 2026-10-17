@@ -1,0 +1,164 @@
+{
+  "zh-cn": "第175周开发版日志",
+  "en-us": "",
+  "CnBBSID": "",
+  "CnComID": "",
+  "GbBBSID": "",
+  "update": "",
+  "versions": "4.2.7",
+  "showdevices": "1",
+  "vid": "",
+  "no": "",
+  "devices": [
+    {
+      "code": "mione_plus",
+      "zh-cn": "小米手机1/1S",
+      "en-us": "MI 1/1S",
+      "miui": "4.2.7",
+      "android": "4.1",
+      "recovery": "miui_Mioneplus_4.2.7_dd246f0b2b_4.1.zip",
+      "fastboot": "miui_MI1_4.2.7_fastboot_4.1_f1golymq45.exe"
+    },
+    {
+      "code": "aries",
+      "zh-cn": "小米 2/2S",
+      "en-us": "MI 2/2S",
+      "miui": "4.2.7",
+      "android": "4.1",
+      "recovery": "miui_MI2_4.2.7_80b32ce042_4.1.zip",
+      "fastboot": ""
+    },
+    {
+      "code": "taurus",
+      "zh-cn": "小米 2A",
+      "en-us": "Mi 2A",
+      "miui": "4.2.7",
+      "android": "4.1",
+      "recovery": "miui_MI2A_4.2.7_bf82b8d85e_4.1.zip",
+      "fastboot": ""
+    },
+    {
+      "code": "pisces",
+      "zh-cn": "小米3 移动版",
+      "en-us": "MI 3 TD",
+      "miui": "4.2.7",
+      "android": "4.2",
+      "recovery": "miui_MI3_4.2.7_216b90e1cc_4.2.zip",
+      "fastboot": "miui_MI3-TD_4.2.7_fastboot_4.2_y24zyfz0ir.exe"
+    },
+    {
+      "code": "cancro",
+      "zh-cn": "小米 3 联通电信版/小米 4",
+      "en-us": "MI3 WCDMA/Mi 4",
+      "miui": "4.2.7",
+      "android": "4.3",
+      "recovery": "miui_MI3W_4.2.7_523199d3f8_4.3.zip",
+      "fastboot": "miui_MI3-WCDMA_4.2.7_fastboot_4.3_htmt5mlxm2.exe"
+    }
+  ],
+  "tpd": [],
+  "addons": [
+    {
+      "zh-cn": "升级说明",
+      "en-us": "Update instruction",
+      "details": [
+        {
+          "zh-cn": "MIUI V5开发版可以直接 OTA 升级（方法：系统更新 - 检查更新 - 选择最新版本升级）",
+          "en-us": ""
+        },
+        {
+          "zh-cn": "较老版本的 MIUI 可通过刷 V5 最新完整包快速升级（方法：小米手机可通过系统更新 - Menu - 选择安装包进行升级，第三方机型需手动进入 Recovery 选择完整包进行升级）",
+          "en-us": ""
+        },
+        {
+          "zh-cn": "跨版本进行升级时（如稳定版刷开发版）尽量清除所有数据，以避免因数据冲突出现个例问题；清除数据前务必主动备份数据，以免丢失（方法：系统与安全 - 备份 - 新建备份）",
+          "en-us": ""
+        },
+        {
+          "zh-cn": "其他品牌手机首次刷 MIUI ROM 请严格按照刷机教程进行刷机",
+          "en-us": ""
+        }
+      ]
+    },
+    {
+      "zh-cn": "版本说明",
+      "en-us": "Version Information",
+      "details": [
+        {
+          "zh-cn": "MIUI V5 4.2.7 已发布！",
+          "en-us": ""
+        }
+      ]
+    }
+  ],
+  "logs": [
+    {
+      "zh-cn": "第175周开发版日志",
+      "en-us": "",
+      "log": [
+        {
+          "zh-cn": "本周推荐",
+          "en-us": "本周推荐",
+          "changes": [
+            {
+              "zh-cn": "新增 小米优惠服务，美食、电影、休闲娱乐、酒店各类优惠一网打尽",
+              "en-us": "新增 小米优惠服务，美食、电影、休闲娱乐、酒店各类优惠一网打尽"
+            },
+            {
+              "zh-cn": "新增 通知栏新增自定义运营商功能",
+              "en-us": "新增 通知栏新增自定义运营商功能"
+            }
+          ]
+        },
+        {
+          "zh-cn": "锁屏、状态栏、通知栏",
+          "en-us": "锁屏、状态栏、通知栏",
+          "changes": [
+            {
+              "zh-cn": "新增 自定义运营商（设置－通知栏设置－高级）",
+              "en-us": "新增 自定义运营商（设置－通知栏设置－高级）"
+            },
+            {
+              "zh-cn": "优化 下拉通知栏方式，并显示部分状态栏信息",
+              "en-us": "优化 下拉通知栏方式，并显示部分状态栏信息"
+            }
+          ]
+        },
+        {
+          "zh-cn": "天气",
+          "en-us": "天气",
+          "changes": [
+            {
+              "zh-cn": "修复 修复海外版定位问题",
+              "en-us": "修复 修复海外版定位问题"
+            }
+          ]
+        },
+        {
+          "zh-cn": "安全中心",
+          "en-us": "安全中心",
+          "changes": [
+            {
+              "zh-cn": "修复 垃圾清理中，手机容量显示错误的问题",
+              "en-us": "修复 垃圾清理中，手机容量显示错误的问题"
+            }
+          ]
+        },
+        {
+          "zh-cn": "小米优惠",
+          "en-us": "小米优惠",
+          "changes": [
+            {
+              "zh-cn": "新增 美食、电影、休闲娱乐、酒店各类优惠一网打尽",
+              "en-us": "新增 美食、电影、休闲娱乐、酒店各类优惠一网打尽"
+            },
+            {
+              "zh-cn": "视频演示：",
+              "en-us": "视频演示："
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

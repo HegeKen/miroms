@@ -1,0 +1,324 @@
+{
+  "zh-cn": "第229周开发版日志",
+  "en-us": "",
+  "CnBBSID": "",
+  "CnComID": "",
+  "GbBBSID": "",
+  "update": "",
+  "versions": "5.3.20",
+  "showdevices": "1",
+  "vid": "",
+  "no": "",
+  "devices": [
+    {
+      "code": "aries",
+      "zh-cn": "小米 2/2S",
+      "en-us": "MI 2/2S",
+      "miui": "5.3.20",
+      "android": "4.4",
+      "recovery": "miui_MI2Beta_5.3.20_6ecbb0183a_4.4.zip",
+      "fastboot": "aries_beta_images_5.3.20_4.4_cn_23a3a03b2f.tgz"
+    },
+    {
+      "code": "taurus",
+      "zh-cn": "小米 2A",
+      "en-us": "Mi 2A",
+      "miui": "5.3.20",
+      "android": "4.4",
+      "recovery": "miui_MI2ABeta_5.3.20_1d8987a3c2_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "code": "pisces",
+      "zh-cn": "小米3 移动版",
+      "en-us": "MI 3 TD",
+      "miui": "5.3.20",
+      "android": "4.4",
+      "recovery": "miui_MI3TD_5.3.20_54d4e8062a_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "code": "cancro",
+      "zh-cn": "小米 3 联通电信版/小米 4",
+      "en-us": "MI3 WCDMA/Mi 4",
+      "miui": "5.3.20",
+      "android": "4.4",
+      "recovery": "miui_MI3WMI4W_5.3.20_77a36fc6f1_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "code": "virgo",
+      "zh-cn": "小米 Note 双网通版",
+      "en-us": "Mi Note",
+      "miui": "5.3.20",
+      "android": "4.4",
+      "recovery": "miui_MINote_5.3.20_71e0bdab64_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "code": "mocha",
+      "zh-cn": "小米平板 1",
+      "en-us": "MiPad 1",
+      "miui": "5.3.20",
+      "android": "4.4",
+      "recovery": "miui_MOCHA_5.3.20_112e47e4c3_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "code": "wt93807",
+      "zh-cn": "红米 1S 移动3G版",
+      "en-us": "Redmi 1S TD",
+      "miui": "5.3.20",
+      "android": "4.4",
+      "recovery": "miui_HM1STD_5.3.20_9df23ef2a1_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "code": "wt86047",
+      "zh-cn": "红米 2 移动3G版",
+      "en-us": "Redmi 2 TD",
+      "miui": "5.3.20",
+      "android": "4.4",
+      "recovery": "miui_HM2XTD_5.3.20_91d147ab14_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "code": "wt88047",
+      "zh-cn": "红米 2 联通/电信3G版",
+      "en-us": "Redmi 2 WCDMA",
+      "miui": "5.3.20",
+      "android": "4.4",
+      "recovery": "miui_HM2XWC_5.3.20_43d92e6e6d_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "code": "dior",
+      "zh-cn": "红米 Note 4G 单卡版",
+      "en-us": "Redmi Note 4G",
+      "miui": "5.3.20",
+      "android": "4.4",
+      "recovery": "miui_HMNoteLTE_5.3.20_cf64794a5e_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "code": "gucci",
+      "zh-cn": "红米 Note 4G 双卡版",
+      "en-us": "Redmi Note 1S 4G",
+      "miui": "5.3.20",
+      "android": "4.4",
+      "recovery": "miui_HMNote1S_5.3.20_e30d08f0bb_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "code": "cancro_lte_ct",
+      "zh-cn": "小米手机4 电信4G",
+      "en-us": "Mi 4 LTE CT",
+      "miui": "5.3.20",
+      "android": "4.4",
+      "recovery": "miui_MI4LTECT_5.3.20_8631f6b744_4.4.zip",
+      "fastboot": ""
+    },
+    {
+      "code": "wt96007",
+      "zh-cn": "红米 1S 移动4G版",
+      "en-us": "Redmi 1S LTE",
+      "miui": "5.3.20",
+      "android": "4.4",
+      "recovery": "miui_HM1SLTE_5.3.20_c581f7636a_4.4.zip",
+      "fastboot": ""
+    }
+  ],
+  "tpd": [],
+  "addons": [
+    {
+      "zh-cn": "升级说明",
+      "en-us": "Update instruction",
+      "details": [
+        {
+          "zh-cn": "MIUI V5 / MIUI 6开发版可以直接 OTA 升级（方法：系统更新 - 检查更新 - 选择最新版本升级）",
+          "en-us": ""
+        },
+        {
+          "zh-cn": "较老版本的 MIUI 可通过刷 MIUI V5 / MIUI 6 最新完整包快速升级（方法：小米手机可通过系统更新 - Menu - 选择安装包进行升级，第三方机型需手动进入 Recovery 选择完整包进行升级）",
+          "en-us": ""
+        },
+        {
+          "zh-cn": "跨版本进行升级时（如稳定版刷开发版）需要清除所有数据，以避免因数据冲突出现个例问题；清除数据前务必主动备份数据，以免丢失（方法：设置 - 备份和重置 - 本地备份）",
+          "en-us": ""
+        },
+        {
+          "zh-cn": "其它品牌手机首次刷 MIUI ROM 请严格按照刷机教程进行刷机",
+          "en-us": ""
+        }
+      ]
+    },
+    {
+      "zh-cn": "版本说明",
+      "en-us": "Version Information",
+      "details": [
+        {
+          "zh-cn": "MIUI6 5.3.20 已发布！",
+          "en-us": ""
+        },
+        {
+          "zh-cn": "红米1S TD 3G版升级 MIUI 6 时，需要先升级至最新的稳定版JHFCNBL27.0，再进行升级操作（最好清除全部数据），否则将会导致系统兼容性问题。",
+          "en-us": ""
+        }
+      ]
+    }
+  ],
+  "logs": [
+    {
+      "zh-cn": "第229周开发版日志",
+      "en-us": "",
+      "log": [
+        {
+          "zh-cn": "本周推荐",
+          "en-us": "本周推荐",
+          "changes": [
+            {
+              "zh-cn": "新增 全新图片编辑",
+              "en-us": "新增 全新图片编辑"
+            },
+            {
+              "zh-cn": "新增 日历支持订阅大学生课程表",
+              "en-us": "新增 日历支持订阅大学生课程表"
+            },
+            {
+              "zh-cn": "新增 骚扰拦截黑白名单支持云同步",
+              "en-us": "新增 骚扰拦截黑白名单支持云同步"
+            },
+            {
+              "zh-cn": "新增 录音机支持打点标记功能",
+              "en-us": "新增 录音机支持打点标记功能"
+            }
+          ]
+        },
+        {
+          "zh-cn": "系统",
+          "en-us": "系统",
+          "changes": [
+            {
+              "zh-cn": "优化 阳光屏效果（米4）",
+              "en-us": "优化 阳光屏效果（米4）"
+            },
+            {
+              "zh-cn": "修复 启动过程中蓝屏问题（米3W）",
+              "en-us": "修复 启动过程中蓝屏问题（米3W）"
+            },
+            {
+              "zh-cn": "修复 小米4红外发射的高低电平数目限制问题（米4）",
+              "en-us": "修复 小米4红外发射的高低电平数目限制问题（米4）"
+            }
+          ]
+        },
+        {
+          "zh-cn": "锁屏、状态栏、通知栏",
+          "en-us": "锁屏、状态栏、通知栏",
+          "changes": [
+            {
+              "zh-cn": "优化 “防误触模式”默认设为关闭",
+              "en-us": "优化 “防误触模式”默认设为关闭"
+            },
+            {
+              "zh-cn": "删除 锁屏长按返回键启动相机的设置项",
+              "en-us": "删除 锁屏长按返回键启动相机的设置项"
+            }
+          ]
+        },
+        {
+          "zh-cn": "桌面",
+          "en-us": "桌面",
+          "changes": [
+            {
+              "zh-cn": "修复 某些情况下近期任务页一片空白的问题",
+              "en-us": "修复 某些情况下近期任务页一片空白的问题"
+            }
+          ]
+        },
+        {
+          "zh-cn": "图库",
+          "en-us": "图库",
+          "changes": [
+            {
+              "zh-cn": "新增 全新图片编辑",
+              "en-us": "新增 全新图片编辑"
+            },
+            {
+              "zh-cn": "修复 无法删除视频的问题",
+              "en-us": "修复 无法删除视频的问题"
+            },
+            {
+              "zh-cn": "修复 首页滑动浏览图片时闪退的问题",
+              "en-us": "修复 首页滑动浏览图片时闪退的问题"
+            }
+          ]
+        },
+        {
+          "zh-cn": "录音机",
+          "en-us": "录音机",
+          "changes": [
+            {
+              "zh-cn": "新增 支持打点标记功能",
+              "en-us": "新增 支持打点标记功能"
+            }
+          ]
+        },
+        {
+          "zh-cn": "日历",
+          "en-us": "日历",
+          "changes": [
+            {
+              "zh-cn": "新增 支持大学生课程表的订阅",
+              "en-us": "新增 支持大学生课程表的订阅"
+            }
+          ]
+        },
+        {
+          "zh-cn": "骚扰拦截",
+          "en-us": "骚扰拦截",
+          "changes": [
+            {
+              "zh-cn": "新增 黑白名单同步功能",
+              "en-us": "新增 黑白名单同步功能"
+            }
+          ]
+        },
+        {
+          "zh-cn": "语音助手",
+          "en-us": "语音助手",
+          "changes": [
+            {
+              "zh-cn": "修复 无响应及打开联系人失败的问题",
+              "en-us": "修复 无响应及打开联系人失败的问题"
+            }
+          ]
+        },
+        {
+          "zh-cn": "生活黄页",
+          "en-us": "生活黄页",
+          "changes": [
+            {
+              "zh-cn": "新增 在线买车险服务（汽车服务-汽车保险），保险业务由中国平安提供",
+              "en-us": "新增 在线买车险服务（汽车服务-汽车保险），保险业务由中国平安提供"
+            }
+          ]
+        },
+        {
+          "zh-cn": "银行卡",
+          "en-us": "银行卡",
+          "changes": [
+            {
+              "zh-cn": "优化 货币基金在网络错误时的界面显示",
+              "en-us": "优化 货币基金在网络错误时的界面显示"
+            },
+            {
+              "zh-cn": "视频演示：",
+              "en-us": "视频演示："
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
