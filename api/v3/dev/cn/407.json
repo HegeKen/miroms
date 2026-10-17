@@ -586,7 +586,7 @@
       ],
       "安全中心": [
         "修复 红包助手战绩分享失败的问题",
-        "【小米钱包】(小米8/小米MIX 3/小米8屏幕指纹版/小米8透明探索版)",
+        "小米钱包】(小米8/小米MIX 3/小米8屏幕指纹版/小米8透明探索版)",
         "优化 小米公交卡片异常提示的用户体验",
         "修复 银联“碰一碰”支付付款页面加载不出来的问题",
         "修复 Mi Pay在线支付限额无返回数据的问题",
@@ -599,6 +599,11 @@
     "logs_zh_tw": {
       "桌面": [
         "修復 WhatsApp 桌面角標顯示異常的問題"
+      ],
+      "遊戲加速": [
+        "新增 電話懸浮視窗功能，支援遊戲中接通的電話使用懸浮視窗顯示接通狀態",
+        "新增 體驗優化功能，支援進入遊戲關閉自動亮度、三指截圖、護眼模式",
+        "優化 遊戲工具箱喚醒方式調整為頂部側邊滑出"
       ]
     },
     "logs_en": {
@@ -612,93 +617,183 @@
       ]
     },
     "logs_ja": {
-      "Home screen": [
-        "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
+      "ホーム画面": [
+        "WhatsApp アイコンの通知バッジが正しく表示されない問題を修正しました。"
+      ],
+      "ゲーム加速": [
+        "新機能: ゲーム中の着信通話をフローティングウィンドウで表示",
+        "新規 ゲーム体験の最適化機能を追加：ゲーム起動時に自動輝度調整、3本指スクリーンショット、読書モードをオフにできます",
+        "最適化: 画面の上端からスワイプしてゲームツールボックスを開けるようになりました"
       ]
     },
     "logs_ko": {
-      "Home screen": [
-        "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
+      "홈 화면": [
+        "WhatsApp 아이콘에 알림 배지가 잘못 표시되는 문제를 수정했습니다."
+      ],
+      "게임 가속": [
+        "새 기능: 게임 중 수신 전화를 플로팅 창으로 표시",
+        "새 기능: 게임 환경 최적화 기능 추가 - 게임 진입 시 자동 밝기, 세 손가락 스크린샷, 눈 보호 모드를 끌 수 있습니다",
+        "최적화: 화면 상단에서 스와이프하여 게임 도구 상자를 열 수 있습니다"
       ]
     },
     "logs_ru": {
       "Рабочий стол": [
         "Исправлено: Уведомления на значке приложения WhatsApp отображались неправильно"
+      ],
+      "Ускорение приложений": [
+        "Новое: Всплывающее окно с уведомлением о входящем вызове во время игры",
+        "Добавлено: оптимизация игрового процесса — при входе в игру можно отключить автоматическую яркость, снимок тремя пальцами и режим чтения.",
+        "Оптимизация: Проведите вниз от верхней части экрана, чтобы открыть игровые инструменты"
       ]
     },
     "logs_uk": {
-      "Home screen": [
-        "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
+      "Головний екран": [
+        "Виправлено: значки сповіщень неправильно відображалися на значку WhatsApp."
+      ],
+      "Прискорення ігор": [
+        "Нове: Плаваючі вікна для вхідних викликів під час ігор",
+        "Додано: оптимізація ігрового процесу — під час входу в гру можна вимкнути автоматичну яскравість, знімок трьома пальцями та режим читання.",
+        "Оптимізація: Проведіть від верхньої частини екрана, щоб відкрити ігрові інструменти"
       ]
     },
     "logs_pl": {
-      "Home screen": [
-        "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
+      "Ekran główny": [
+        "Naprawiono: odznaki powiadomień były nieprawidłowo wyświetlane na ikonie WhatsApp."
+      ],
+      "Przyspieszanie gier": [
+        "Nowość: Pływające okna dla połączeń przychodzących podczas gier",
+        "Nowość: optymalizacja doświadczenia w grach — po wejściu do gry można wyłączyć automatyczną jasność, zrzut ekranu trzema palcami i tryb czytania.",
+        "Optymalizacja: Możesz otworzyć skrzynkę narzędzi do gier, przesuwając palcem od górnej krawędzi ekranu"
       ]
     },
     "logs_de": {
-      "Home screen": [
-        "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
+      "Startbildschirm": [
+        "Behoben: Benachrichtigungs-Badges wurden auf dem WhatsApp-Symbol falsch angezeigt."
+      ],
+      "Spielbeschleunigung": [
+        "Neu: Schwebende Fenster für eingehende Anrufe während Spielen",
+        "Neu: Optimierte Spielerfahrung – beim Starten eines Spiels können automatische Helligkeit, Drei-Finger-Screenshot und Lesemodus deaktiviert werden.",
+        "Optimierung: Du kannst die Gaming-Toolbox durch Wischen vom oberen Bildschirmrand öffnen"
       ]
     },
     "logs_fr": {
-      "Home screen": [
-        "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
+      "Écran d'accueil": [
+        "Correction : les badges de notification s’affichaient incorrectement sur l’icône WhatsApp."
+      ],
+      "Booster de vitesse de jeu": [
+        "Nouveau: Fenêtres flottantes pour les appels entrants pendant les jeux",
+        "Nouveau : expérience de jeu optimisée — lors de l'entrée dans un jeu, la luminosité automatique, la capture d'écran à trois doigts et le mode lecture peuvent être désactivés.",
+        "Optimisation: Vous pouvez ouvrir la boîte à outils de jeu en faisant glisser votre doigt depuis le haut de l'écran"
       ]
     },
     "logs_it": {
       "Schermata Home": [
-        "Risolto: I badge di notifica erano visualizzati in modo errato sull^icona di WhatsApp"
+        "Risolto: I badge di notifica erano visualizzati in modo errato sull'icona di WhatsApp"
+      ],
+      "Turbo Videogiochi": [
+        "Nuovo: Finestre a comparsa per le chiamate in arrivo durante il gioco",
+        "Novità: esperienza di gioco ottimizzata — all'ingresso in un gioco è possibile disattivare luminosità automatica, screenshot con tre dita e modalità lettura.",
+        "Ottimizzazione: Puoi aprire gli strumenti di gioco scorrendo dal lato superiore dello schermo"
       ]
     },
     "logs_es": {
       "Pantalla de inicio": [
         "Reparado: Los iconos de notificaciones fueron mostrados de forma incorrecta en el icono de WhatsApp"
+      ],
+      "Acelerador de juegos": [
+        "Nuevo: Ventanas flotantes para llamadas entrantes durante juegos",
+        "Nuevo: experiencia de juego optimizada: al entrar en un juego se pueden desactivar el brillo automático, la captura de pantalla con tres dedos y el modo lectura.",
+        "Optimización: Puedes abrir la caja de herramientas de juegos deslizando desde la parte superior de la pantalla"
       ]
     },
     "logs_pt": {
-      "Home screen": [
-        "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
+      "Ecrã inicial": [
+        "Correção: os badges de notificação eram exibidos incorretamente no ícone do WhatsApp."
+      ],
+      "Acelerador de jogos": [
+        "Novo: Janelas flutuantes para chamadas recebidas durante jogos",
+        "Novo: experiência de jogo otimizada — ao entrar em um jogo, é possível desativar o brilho automático, a captura de tela com três dedos e o modo leitura.",
+        "Otimização: Você pode abrir a caixa de ferramentas de jogos ao deslizar a partir da parte superior da tela"
       ]
     },
     "logs_tr": {
       "Ana ekran": [
         "Onarım: Bildirim rozetleri WhatsApp simgesinde yanlış görüntülendi"
+      ],
+      "Oyun hız artırıcı": [
+        "Yeni: Oyunlar sırasında gelen aramalar için kayan pencereler",
+        "Yeni: Oyun deneyimi optimizasyonu — oyuna girişte otomatik parlaklık, üç parmakla ekran görüntüsü ve okuma modu kapatılabilir.",
+        "Optimizasyon: Oyun araç kutusunu, ekranın en üstünden itibaren kaydırarak açabilirsiniz"
       ]
     },
     "logs_id": {
-      "Home screen": [
-        "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
+      "Layar Utama": [
+        "Perbaikan: Lencana notifikasi ditampilkan secara tidak benar pada ikon WhatsApp."
+      ],
+      "Peningkat kecepatan permainan": [
+        "Baru: Jendela mengambang untuk panggilan masuk saat bermain permainan",
+        "Baru: Optimasi pengalaman bermain game — saat masuk game, kecerahan otomatis, tangkapan layar tiga jari, dan mode baca dapat dimatikan.",
+        "Pengoptimalan: Toolbox permainan dapat dibuka dengan menggeser ke bawah dari bagian atas layar"
       ]
     },
     "logs_vi": {
-      "Home screen": [
-        "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
+      "Màn hình chính": [
+        "Sửa lỗi: huy hiệu thông báo hiển thị không chính xác trên biểu tượng WhatsApp."
+      ],
+      "Tăng tốc trò chơi": [
+        "Mới: Cửa sổ nổi cho cuộc gọi đến trong khi chơi game",
+        "Mới: Tối ưu trải nghiệm chơi game — khi vào game có thể tắt độ sáng tự động, chụp màn hình bằng ba ngón tay và chế độ đọc.",
+        "Tối ưu hóa: Bạn có thể mở hộp công cụ chơi game bằng cách vuốt từ cạnh trên màn hình"
       ]
     },
     "logs_th": {
-      "Home screen": [
-        "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
+      "หน้าจอหลัก": [
+        "แก้ไข: การแสดงสัญลักษณ์การแจ้งเตือนบนไอคอน WhatsApp ไม่ถูกต้อง"
+      ],
+      "ตัวเร่งความเร็วเกม": [
+        "ใหม่: ฟีเจอร์หน้าต่างลอยสำหรับการโทร รองรับการแสดงสถานะการเชื่อมต่อผ่านหน้าต่างลอยสำหรับสายที่รับระหว่างเล่นเกม",
+        "ใหม่: เพิ่มฟีเจอร์ปรับปรุงประสบการณ์การเล่นเกม รองรับการปิดความสว่างอัตโนมัติ การจับภาพหน้าจอด้วยสามนิ้ว และโหมดถนอมสายตาเมื่อเข้าสู่เกม",
+        "ปรับปรุง: เปลี่ยนวิธีเรียกใช้กล่องเครื่องมือเกมเป็นการปัดจากด้านบน"
       ]
     },
     "logs_ar": {
-      "Home screen": [
-        "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
+      "الشاشة الرئيسية": [
+        "إصلاح: عرض شارات الإشعارات بشكل غير صحيح على أيقونة WhatsApp"
+      ],
+      "تسريع الألعاب": [
+        "جديد: ميزة النافذة العائمة للمكالمات، وتدعم عرض حالة الاتصال في نافذة عائمة للمكالمات التي يتم الرد عليها أثناء الألعاب",
+        "جديد: تحسين تجربة الألعاب - يمكن إيقاف السطوع التلقائي ولقطة الشاشة بثلاثة أصابع ووضع القراءة عند الدخول إلى اللعبة.",
+        "تحسين: تم تغيير طريقة استدعاء صندوق أدوات الألعاب إلى السحب من الجانب العلوي"
       ]
     },
     "logs_in": {
-      "Home screen": [
-        "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
+      "होम स्क्रीन": [
+        "WhatsApp आइकन पर नोटिफ़िकेशन बैज गलत तरीके से दिखने की समस्या ठीक की गई।"
+      ],
+      "गेम गति बूस्टर": [
+        "नया: फ़ोन फ़्लोटिंग विंडो सुविधा, गेम के दौरान कनेक्ट होने वाले कॉल का कनेक्टेड स्टेटस फ़्लोटिंग विंडो में दिखाने का समर्थन करती है।",
+        "नया: गेमिंग अनुभव अनुकूलन — गेम में प्रवेश करते समय ऑटो ब्राइटनेस, तीन-उंगली स्क्रीनशॉट और रीडिंग मोड बंद किए जा सकते हैं।",
+        "अनुकूलन: गेम टूलबॉक्स खोलने का तरीका बदलकर स्क्रीन के ऊपरी किनारे से स्वाइप करना किया गया"
       ]
     },
     "logs_ug": {
-      "Home screen": [
+      "باش ئېكران": [
         "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
+      ],
+      "ئويۇن تېزلىتىش": [
+        "New: Floating windows for incoming calls during games",
+        "يېڭى: ئويۇن تەجرىبىسىنى ئەلالاشتۇرۇش ئىقتىدارى قوشۇلدى — ئويۇنغا كىرگەندە ئاپتوماتىك يورۇقلۇق، ئۈچ بارماق ئېكران رەسىمى ۋە ئوقۇش ھالىتىنى تاقىغىلى بولىدۇ.",
+        "Optimization: You can open the gaming toolbox by swiping from the top side of the screen"
       ]
     },
     "logs_bo": {
       "Home screen": [
         "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
+      ],
+      "Game speed booster": [
+        "New: Floating windows for incoming calls during games",
+        "གསར་པ། རྩེད་མོའི་ཉམས་མྱོང་ཡར་རྒྱས་གཏོང་བའི་ནུས་པ་ཁ་སྣོན་བྱས་པ་དང་། རྩེད་མོའི་ནང་དུ་འཛུལ་སྐབས་རང་འགུལ་གྱི་འོད་སྟོབས་དང་། མཚོན་ཐེག་གསུམ་གྱིས་གཏེར་བཤུས། མིག་སྲུང་མ་དང་བཅས་བརྒྱུད་འགོད་བྱེད་ཐུབ།",
+        "Optimization: You can open the gaming toolbox by swiping from the top side of the screen"
       ]
     }
   },

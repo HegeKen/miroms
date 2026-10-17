@@ -1,63 +1,94 @@
 {
   "logs_zh": {
     "录音机": [
+      "修复 暂停录音后无法及时更新到状态栏的问题",
       "修复 暂停录音后无法及时更新到状态栏的问题"
+    ],
+    "系统": [
+      "修复 更新Android安全补丁"
+    ],
+    "电话": [
+      "修复 视频通话下功能区“切换摄像头”可能显示不完整的问题"
+    ],
+    "锁屏、状态栏、通知栏": [
+      "修复 返回通话和时间重叠",
+      "修复 通知无法关闭悬浮",
+      "修复 耳机图标偶尔不显示的问题"
     ]
   },
   "logs_en": {
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused",
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
+    ],
+    "System": [
+      "Fix: Updated Android Security Patch"
+    ],
+    "Phone": [
+      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Fix: The button that returns you to an ongoing call overlapped with time",
+      "Fix: Couldn't restrict floating notifications",
+      "Fix: The earphone icon sometimes disappeared"
     ]
   },
   "logs_zh_tw": {
+    "錄音機": [
+      "修復 暫停錄音後無法即時更新到狀態欄的問題",
+      "修復 暫停錄音後無法即時更新到狀態欄的問題"
+    ],
     "系統": [
       "修復 更新Android安全性修補程式等級"
     ],
     "電話": [
-      "修復 視訊電話下功能區^切換鏡頭^可能顯示不完整的問題"
+      "修復 視訊電話下功能區'切換鏡頭'可能顯示不完整的問題"
     ],
     "解鎖畫面、狀態欄、通知欄": [
       "修復 返回通話和時間重疊",
       "修復 通知無法關閉懸浮",
       "修復 耳機圖示偶爾不顯示的問題"
-    ],
-    "錄音機": [
-      "修復 暫停錄音後無法即時更新到狀態欄的問題"
     ]
   },
   "logs_ja": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "レコーダー": [
+      "修正: 録音を一時停止した際、通知シェードの録音状態が更新されない問題",
+      "修正: 録音を一時停止した際、通知シェードの録音状態が更新されない問題"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly"
+    "システム": [
+      "修正: Androidセキュリティパッチを更新"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: The earphone icon sometimes disappeared"
+    "電話": [
+      "ビデオ通話時の機能エリアの「カメラ切り替え」が不完全に表示される問題を修正しました。"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "ロック画面、ステータスバー、通知バー": [
+      "修正: 通話中画面に戻るボタンが時刻と重なる問題。",
+      "修正: フローティング通知をオフにできない問題",
+      "修正: イヤホンアイコンが時々表示されない問題"
     ]
   },
   "logs_ko": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "녹음기": [
+      "수정: 녹음을 일시중지했을 때 알림 창의 녹음 상태가 업데이트되지 않던 문제",
+      "수정: 녹음을 일시중지했을 때 알림 창의 녹음 상태가 업데이트되지 않던 문제"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly"
+    "시스템": [
+      "수정: Android 보안 패치 업데이트"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: The earphone icon sometimes disappeared"
+    "전화": [
+      "화상 통화 중 기능 영역의 '카메라 전환'이 불완전하게 표시될 수 있는 문제를 수정했습니다."
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "잠금 화면, 상태 표시줄, 알림 표시줄": [
+      "수정: 진행 중인 통화로 돌아가는 버튼이 시간과 겹치는 문제.",
+      "수정: 플로팅 알림을 끌 수 없는 문제",
+      "수정: 이어폰 아이콘이 간혹 표시되지 않는 문제"
     ]
   },
   "logs_ru": {
+    "Диктофон": [
+      "Fix: Факт остановки записи не отображался в строке состояния вовремя",
+      "Fix: Факт остановки записи не отображался в строке состояния вовремя"
+    ],
     "Система": [
       "Fix: Обновление патча безопасности Android"
     ],
@@ -65,252 +96,264 @@
       "Fix: Подпись кнопки для переключения между камерами во время видео-звонков отображалась не полностью"
     ],
     "Экран блокировки, строка состояния, шторка уведомлений": [
-      "Fix: Кнопка ^Назад^ перекрывала время",
+      "Fix: Кнопка \"Назад\" перекрывала время",
       "Fix: Не удавалось ограничить всплывающие уведомления",
       "Fix: Значок наушников появлялся не всегда"
-    ],
-    "Диктофон": [
-      "Fix: Факт остановки записи не отображался в строке состояния вовремя"
     ]
   },
   "logs_uk": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Диктофон": [
+      "Виправлено: стан запису не оновлювався в панелі сповіщень під час паузи запису",
+      "Виправлено: стан запису не оновлювався в панелі сповіщень під час паузи запису"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly"
+    "Система": [
+      "Виправлення: оновлено патч безпеки Android"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: The earphone icon sometimes disappeared"
+    "Телефон": [
+      "Виправлено: Кнопка «Перемкнути камеру» в області функцій під час відеовикликів могла відображатися неповністю."
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Екран блокування, рядок стану, рядок сповіщень": [
+      "Виправлено: кнопка повернення до поточного виклику перекривала час.",
+      "Виправлено: не вдавалося вимкнути плаваючі сповіщення",
+      "Виправлено: Іноді не відображалася піктограма навушників"
     ]
   },
   "logs_pl": {
+    "Rejestrator": [
+      "Poprawka: stan nagrywania nie był aktualizowany na pasku powiadomień po wstrzymaniu nagrywania",
+      "Poprawka: stan nagrywania nie był aktualizowany na pasku powiadomień po wstrzymaniu nagrywania"
+    ],
     "System": [
-      "Fix: Updated Android Security Patch"
+      "Poprawka: zaktualizowano poprawkę bezpieczeństwa Android"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly"
+    "Telefon": [
+      "Poprawka: Przycisk „Przełącz kamerę” w obszarze funkcji podczas rozmów wideo mógł być wyświetlany niekompletnie."
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: The earphone icon sometimes disappeared"
-    ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Ekran blokady, pasek stanu, pasek powiadomień": [
+      "Naprawiono: przycisk powrotu do trwającego połączenia nachodził na godzinę.",
+      "Naprawiono: nie można było wyłączyć powiadomień pływających",
+      "Poprawka: Ikona słuchawek czasami nie była wyświetlana"
     ]
   },
   "logs_de": {
+    "Rekorder": [
+      "Behoben: Der Aufnahmestatus wurde in der Benachrichtigungsleiste nicht aktualisiert, wenn eine Aufnahme pausiert wurde",
+      "Behoben: Der Aufnahmestatus wurde in der Benachrichtigungsleiste nicht aktualisiert, wenn eine Aufnahme pausiert wurde"
+    ],
     "System": [
-      "Fix: Updated Android Security Patch"
+      "Behoben: Android-Sicherheitspatch aktualisiert"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly"
+    "Telefon": [
+      "Behebung: Die Schaltfläche „Kamera wechseln“ im Funktionsbereich bei Videoanrufen wurde möglicherweise unvollständig angezeigt."
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: The earphone icon sometimes disappeared"
-    ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
+      "Behoben: Die Schaltfläche zum Zurückkehren zu einem laufenden Anruf überlappte sich mit der Uhrzeit.",
+      "Behoben: Floating-Benachrichtigungen ließen sich nicht deaktivieren",
+      "Behoben: Das Kopfhörer-Symbol wurde manchmal nicht angezeigt"
     ]
   },
   "logs_fr": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Enregistreur": [
+      "Correction : l’état d’enregistrement n’était pas mis à jour dans la barre de notifications lors d’une pause",
+      "Correction : l’état d’enregistrement n’était pas mis à jour dans la barre de notifications lors d’une pause"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly"
+    "Système": [
+      "Correction : Correctif de sécurité Android mis à jour"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: The earphone icon sometimes disappeared"
+    "Téléphone": [
+      "Correction : Le bouton « Changer de caméra » dans la zone de fonctions lors des appels vidéo pouvait s'afficher de manière incomplète."
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Écran de verrouillage, barre d’état, barre de notifications": [
+      "Correction : le bouton permettant de revenir à un appel en cours chevauchait l’heure.",
+      "Correction : impossible de désactiver les notifications flottantes",
+      "Correction : L’icône des écouteurs ne s’affichait parfois pas"
     ]
   },
   "logs_it": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Registratore": [
+      "Correzione: lo stato di registrazione non veniva aggiornato nella barra delle notifiche quando una registrazione veniva messa in pausa",
+      "Correzione: lo stato di registrazione non veniva aggiornato nella barra delle notifiche quando una registrazione veniva messa in pausa"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly"
+    "Sistema": [
+      "Correzione: patch di sicurezza Android aggiornata"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: The earphone icon sometimes disappeared"
+    "Telefono": [
+      "Correzione: il pulsante \"Cambia fotocamera\" nell'area funzioni durante le videochiamate potrebbe essere visualizzato in modo incompleto."
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Schermata di blocco, barra di stato, barra delle notifiche": [
+      "Corretto: il pulsante per tornare a una chiamata in corso si sovrapponeva all'ora.",
+      "Corretto: impossibile disattivare le notifiche flottanti",
+      "Correzione: L'icona delle cuffie a volte non veniva visualizzata"
     ]
   },
   "logs_es": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Grabadora": [
+      "Corrección: El estado de grabación no se actualizaba en la barra de notificaciones al pausar una grabación",
+      "Corrección: El estado de grabación no se actualizaba en la barra de notificaciones al pausar una grabación"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly"
+    "Sistema": [
+      "Corrección: parche de seguridad de Android actualizado"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: The earphone icon sometimes disappeared"
+    "Teléfono": [
+      "Corrección: El botón «Cambiar cámara» del área de funciones durante las videollamadas podía mostrarse de forma incompleta."
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Corregido: el botón para volver a una llamada en curso se superponía con la hora.",
+      "Corregido: no se podían desactivar las notificaciones flotantes",
+      "Corrección: El icono de los auriculares a veces no aparecía"
     ]
   },
   "logs_pt": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Gravador": [
+      "Correção: o estado da gravação não era atualizado na barra de notificações ao pausar uma gravação",
+      "Correção: o estado da gravação não era atualizado na barra de notificações ao pausar uma gravação"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly"
+    "Sistema": [
+      "Correção: patch de segurança do Android atualizado"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: The earphone icon sometimes disappeared"
+    "Telefone": [
+      "Correção: O botão \"Alternar câmera\" na área de funções durante chamadas de vídeo podia ser exibido de forma incompleta."
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Tela de bloqueio, barra de status, barra de notificações": [
+      "Corrigido: o botão para voltar a uma chamada em andamento sobrepunha-se à hora.",
+      "Corrigido: não era possível desativar notificações flutuantes",
+      "Correção: O ícone do fone de ouvido às vezes não aparecia"
     ]
   },
   "logs_tr": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Kayıt Cihazı": [
+      "Düzeltme: Kayıt duraklatıldığında kayıt durumu bildirim çubuğunda güncellenmiyordu",
+      "Düzeltme: Kayıt duraklatıldığında kayıt durumu bildirim çubuğunda güncellenmiyordu"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly"
+    "Sistem": [
+      "Düzeltme: Android güvenlik yaması güncellendi"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: The earphone icon sometimes disappeared"
+    "Telefon": [
+      "Düzeltme: Görüntülü aramalar sırasında işlev alanındaki \"Kamerayı değiştir\" düğmesi eksik görüntülenebiliyordu."
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Düzeltme: Devam eden aramaya dönme düğmesi saatle çakışıyordu.",
+      "Düzeltme: Yüzen bildirimler kapatılamıyordu",
+      "Düzeltme: Kulaklık simgesi bazen görünmüyordu"
     ]
   },
   "logs_id": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Perekam": [
+      "Perbaikan: Status perekaman tidak diperbarui di bilah notifikasi saat perekaman dijeda",
+      "Perbaikan: Status perekaman tidak diperbarui di bilah notifikasi saat perekaman dijeda"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly"
+    "Sistem": [
+      "Perbaikan: Patch keamanan Android diperbarui"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: The earphone icon sometimes disappeared"
+    "Telepon": [
+      "Perbaikan: Tombol “Ganti kamera” di area fungsi saat panggilan video mungkin ditampilkan tidak lengkap."
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Layar kunci, bilah status, bilah notifikasi": [
+      "Diperbaiki: tombol untuk kembali ke panggilan berlangsung tumpang tindih dengan waktu.",
+      "Perbaikan: notifikasi mengambang tidak dapat dimatikan",
+      "Perbaikan: Ikon earphone terkadang tidak muncul"
     ]
   },
   "logs_vi": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Máy ghi âm": [
+      "Đã sửa: Trạng thái ghi âm không được cập nhật kịp thời trên thanh thông báo khi tạm dừng ghi âm",
+      "Đã sửa: Trạng thái ghi âm không được cập nhật kịp thời trên thanh thông báo khi tạm dừng ghi âm"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly"
+    "Hệ thống": [
+      "Sửa lỗi: Đã cập nhật bản vá bảo mật Android"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: The earphone icon sometimes disappeared"
+    "Điện thoại": [
+      "Sửa lỗi: Nút \"Chuyển camera\" trong vùng chức năng khi gọi video có thể hiển thị không đầy đủ."
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Đã sửa: nút quay lại cuộc gọi đang diễn ra bị chồng lên thời gian.",
+      "Đã sửa: không thể tắt thông báo nổi",
+      "Sửa lỗi: Biểu tượng tai nghe đôi khi không hiển thị"
     ]
   },
   "logs_th": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "เครื่องบันทึกเสียง": [
+      "แก้ไข: สถานะการบันทึกเสียงไม่ได้รับการอัปเดตในแถบการแจ้งเตือนเมื่อหยุดการบันทึกชั่วคราว",
+      "แก้ไข: สถานะการบันทึกเสียงไม่ได้รับการอัปเดตในแถบการแจ้งเตือนเมื่อหยุดการบันทึกชั่วคราว"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly"
+    "ระบบ": [
+      "แก้ไข: อัปเดตแพตช์ความปลอดภัย Android แล้ว"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: The earphone icon sometimes disappeared"
+    "โทรศัพท์": [
+      "แก้ไข: ปุ่ม \"สลับกล้อง\" ในพื้นที่ฟังก์ชันระหว่างการสนทนาทางวิดีโออาจแสดงไม่สมบูรณ์"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
+      "แก้ไข: ปุ่มกลับไปยังสายที่กำลังดำเนินอยู่ทับซ้อนกับเวลา",
+      "แก้ไข: ไม่สามารถปิดการแจ้งเตือนแบบลอยได้",
+      "แก้ไข: ไอคอนหูฟังบางครั้งไม่แสดง"
     ]
   },
   "logs_ar": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "مسجل": [
+      "إصلاح: لم يتم تحديث حالة التسجيل في شريط الإشعارات عند إيقاف التسجيل مؤقتًا",
+      "إصلاح: لم يتم تحديث حالة التسجيل في شريط الإشعارات عند إيقاف التسجيل مؤقتًا"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly"
+    "النظام": [
+      "إصلاح: تحديث تصحيح أمان Android"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: The earphone icon sometimes disappeared"
+    "هاتف": [
+      "إصلاح: قد يظهر زر \"تبديل الكاميرا\" في منطقة الوظائف أثناء مكالمات الفيديو بشكل غير مكتمل."
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "شاشة القفل، شريط الحالة، شريط الإشعارات": [
+      "إصلاح: زر العودة إلى مكالمة جارية يتداخل مع الوقت.",
+      "إصلاح: تعذّر إيقاف الإشعارات العائمة",
+      "إصلاح: أيقونة سماعة الأذن لا تظهر أحيانًا"
     ]
   },
   "logs_in": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "रिकॉर्डर": [
+      "समस्या ठीक की गई: रिकॉर्डिंग पॉज़ करने पर नोटिफ़िकेशन शेड में स्थिति तुरंत अपडेट नहीं होती थी",
+      "समस्या ठीक की गई: रिकॉर्डिंग पॉज़ करने पर नोटिफ़िकेशन शेड में स्थिति तुरंत अपडेट नहीं होती थी"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly"
+    "सिस्टम": [
+      "सुधार: Android सुरक्षा पैच अपडेट किया गया"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: The earphone icon sometimes disappeared"
+    "फ़ोन": [
+      "वीडियो कॉल के दौरान फ़ंक्शन क्षेत्र में “कैमरा बदलें” के अधूरा दिखाए जाने की समस्या ठीक की गई"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
+      "ठीक किया गया: चालू कॉल पर वापस जाने वाला बटन समय के साथ ओवरलैप हो रहा था।",
+      "ठीक किया गया: फ़्लोटिंग सूचनाएँ बंद नहीं की जा सकती थीं",
+      "ठीक किया गया: ईयरफ़ोन आइकन कभी-कभी नहीं दिखाई देता था"
     ]
   },
   "logs_ug": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "ئاۋاز ئالغۇ": [
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused",
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly"
+    "سىستېما": [
+      "تۈزىتىش: Android بىخەتەرلىك يامىقى يېڭىلاندى"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: The earphone icon sometimes disappeared"
+    "تېلېفون": [
+      "سىنلىق سۆھبەت جەريانىدا ئىقتىدار رايونىدىكى «كامېرا ئالماشتۇرۇش» تولۇق كۆرسىتىلمەسلىك مەسىلىسى تۈزىتىلدى"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "قۇلۇپ ئېكرانى، ھالەت بالدىقى، ئۇقتۇرۇش بالدىقى": [
+      "قوڭغۇراققا قايتىش كۇنۇپكىسى بىلەن ۋاقىتنىڭ ئۈستى-ئۈستىگە چۈشۈشى تۈزىتىلدى",
+      "Fix: Couldn't restrict floating notifications",
+      "ئاڭشىغۇچ سىنبەلگىسىنىڭ ئاندا-ساندا كۆرۈنمەسلىك مەسىلىسى تۈزىتىلدى."
     ]
   },
   "logs_bo": {
-    "System": [
+    "སྒྲ་འཇུག་ཆས": [
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused",
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
+    ],
+    "མ་ལག": [
       "Fix: Updated Android Security Patch"
     ],
-    "Phone": [
+    "ཁ་པར": [
       "Fix: UI elements for switching between cameras during video calls were displayed incorrectly"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
+    "Lockscreen, status bar, Notification shade": [
       "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
+      "Fix: Couldn't restrict floating notifications",
       "Fix: The earphone icon sometimes disappeared"
-    ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
     ]
   }
 }

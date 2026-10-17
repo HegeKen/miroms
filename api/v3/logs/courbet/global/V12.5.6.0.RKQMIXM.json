@@ -2,6 +2,10 @@
   "logs_zh": {
     "锁屏": [
       "新增 指纹是否应用于锁屏开关的功能",
+      "修复 进入密码输入页面，人脸与指纹同时检测解锁时有概率出现崩溃的问题",
+      "新增 指纹是否应用于锁屏开关的功能",
+      "修复 进入密码输入页面，人脸与指纹同时检测解锁时有概率出现崩溃的问题",
+      "新增 指纹是否应用于锁屏开关的功能",
       "修复 进入密码输入页面，人脸与指纹同时检测解锁时有概率出现崩溃的问题"
     ],
     "状态栏、通知栏": [
@@ -15,34 +19,95 @@
       "修复 悬浮通知圆角缺失的异常",
       "修复 三方主题下收到悬浮通知时，偶现背景异常的问题",
       "修复 抬起亮屏时偶现锁屏通知抖动的异常",
+      "修复 深色模式下，通知按钮偶现显示异常的问题",
+      "优化 通知中心与三方主题的适配",
+      "优化 通知消息与深色模式的适配",
+      "修复 应用锁导致通知大小背景不一致的异常",
+      "修复 一键清理动画掉帧的问题",
+      "修复 锁屏时无法下拉通知栏的问题",
+      "修复 播放音乐时，通知栏偶现不显示媒体控制面板的异常",
+      "修复 抬起亮屏时偶现锁屏通知抖动的异常",
+      "修复 深色模式下，通知按钮偶现显示异常的问题",
+      "优化 通知中心与三方主题的适配",
+      "优化 通知消息与深色模式的适配",
+      "修复 应用锁导致通知大小背景不一致的异常",
+      "修复 一键清理动画掉帧的问题",
+      "修复 锁屏时无法下拉通知栏的问题",
+      "修复 播放音乐时，通知栏偶现不显示媒体控制面板的异常",
+      "修复 抬起亮屏时偶现锁屏通知抖动的异常",
       "修复 深色模式下，通知按钮偶现显示异常的问题"
     ]
   },
   "logs_en": {
     "Lock screen": [
       "New: New fingerprint options",
+      "Fix: Using Face unlock and Fingerprint unlock simultaneously led to crashes in some cases",
+      "New: New fingerprint options",
+      "Fix: Using Face unlock and Fingerprint unlock simultaneously led to crashes in some cases",
+      "New: New fingerprint options",
       "Fix: Using Face unlock and Fingerprint unlock simultaneously led to crashes in some cases"
+    ],
+    "status bar, Notification shade": [
+      "Optimization: Third party theme compatibility for Notification shade",
+      "Optimization: Dark mode adjustments for notifications",
+      "Fix: Notifications weren't displayed correctly when App lock was used",
+      "Fix: Cleaner animations weren't displayed correctly",
+      "Fix: Notification shade couldn't be opened in some cases",
+      "Fix: Floating notifications flashed when Second space was used",
+      "Fix: Player controls weren't always displayed in the Notification shade",
+      "Fix: Notification badges didn't always appear",
+      "Fix: Backgrounds weren't displayed correctly when notifications arrived and third party themes were used",
+      "Fix: Notifications weren't always displayed correctly when \"Raise to wake\" was used",
+      "Fix: Buttons weren't always displayed correctly on the notifications when Dark mode was on"
     ],
     "Status bar, Notification shade": [
       "Optimization: Third party theme compatibility for Notification shade",
       "Optimization: Dark mode adjustments for notifications",
-      "Fix: Notifications weren^t displayed correctly when App lock was used",
-      "Fix: Cleaner animations weren^t displayed correctly",
-      "Fix: Notification shade couldn^t be opened in some cases",
-      "Fix: Player controls weren^t always displayed in the Notification shade",
-      "Fix: Notifications weren^t always displayed correctly when ^Raise to wake^ was used",
-      "Fix: Buttons weren^t always displayed correctly on the notifications when Dark mode was on"
+      "Fix: Notifications weren't displayed correctly when App lock was used",
+      "Fix: Cleaner animations weren't displayed correctly",
+      "Fix: Notification shade couldn't be opened in some cases",
+      "Fix: Player controls weren't always displayed in the Notification shade",
+      "Fix: Notifications weren't always displayed correctly when \"Raise to wake\" was used",
+      "Fix: Buttons weren't always displayed correctly on the notifications when Dark mode was on",
+      "Optimization: Third party theme compatibility for Notification shade",
+      "Optimization: Dark mode adjustments for notifications",
+      "Fix: Notifications weren't displayed correctly when App lock was used",
+      "Fix: Cleaner animations weren't displayed correctly",
+      "Fix: Notification shade couldn't be opened in some cases",
+      "Fix: Player controls weren't always displayed in the Notification shade",
+      "Fix: Notifications weren't always displayed correctly when \"Raise to wake\" was used",
+      "Fix: Buttons weren't always displayed correctly on the notifications when Dark mode was on"
     ]
   },
   "logs_zh_tw": {
-    "系統": [
-      "更新Android安全性修補程式等級（2021#09），提升系統安全性"
-    ],
     "鎖屏": [
+      "新增: 指紋是否應用於螢幕鎖定開關的功能",
+      "修復: 進入密碼輸入頁面，人臉與指紋同時檢測解鎖時有概率出現錯誤的問題",
+      "新增: 指紋是否應用於螢幕鎖定開關的功能",
+      "修復: 進入密碼輸入頁面，人臉與指紋同時檢測解鎖時有概率出現錯誤的問題",
       "新增: 指紋是否應用於螢幕鎖定開關的功能",
       "修復: 進入密碼輸入頁面，人臉與指紋同時檢測解鎖時有概率出現錯誤的問題"
     ],
     "狀態欄、通知欄": [
+      "優化: 通知中心與第三方主題的相容性",
+      "優化: 通知提醒與深色模式的相容",
+      "修復: 應用鎖導致通知大小背景不一致的異常",
+      "修復: 一鍵清理動畫掉幀的問題",
+      "修復: 螢幕鎖定時無法下拉通知欄的問題",
+      "修復: 分身空間導致的懸浮通知異常閃爍問題",
+      "修復: 播放音樂時，通知欄偶發不顯示媒體控制面板的異常",
+      "修復: 懸浮通知圓角缺失的異常",
+      "修復: 第三方主題下收到懸浮通知時，偶現背景異常的問題",
+      "修復: 抬起螢幕亮起時偶現鎖定螢幕通知閃動的異常",
+      "修復: 深色模式下，通知按鈕偶發顯示異常的問題",
+      "優化: 通知中心與第三方主題的相容性",
+      "優化: 通知提醒與深色模式的相容",
+      "修復: 應用鎖導致通知大小背景不一致的異常",
+      "修復: 一鍵清理動畫掉幀的問題",
+      "修復: 螢幕鎖定時無法下拉通知欄的問題",
+      "修復: 播放音樂時，通知欄偶發不顯示媒體控制面板的異常",
+      "修復: 抬起螢幕亮起時偶現鎖定螢幕通知閃動的異常",
+      "修復: 深色模式下，通知按鈕偶發顯示異常的問題",
       "優化: 通知中心與第三方主題的相容性",
       "優化: 通知提醒與深色模式的相容",
       "修復: 應用鎖導致通知大小背景不一致的異常",
@@ -54,10 +119,11 @@
     ]
   },
   "logs_ja": {
-    "システム": [
-      "Androidのセキュリティパッチを2021年9月にアップデートしました。システムのセキュリティを強化しました。"
-    ],
     "ロック画面": [
+      "新機能: 指紋認証の新しいオプション",
+      "修正: 顔認証と指紋認証を同時に使用するとクラッシュする場合がある問題",
+      "新機能: 指紋認証の新しいオプション",
+      "修正: 顔認証と指紋認証を同時に使用するとクラッシュする場合がある問題",
       "新機能: 指紋認証の新しいオプション",
       "修正: 顔認証と指紋認証を同時に使用するとクラッシュする場合がある問題"
     ],
@@ -68,15 +134,24 @@
       "修正: クリーナーのアニメーションが正しく表示されない問題",
       "修正: 通知シェードが開けない場合がある問題",
       "修正: プレイヤーのコントロールが通知シェードに表示されないことがある問題",
-      "修正: ^持ち上げてスリープ解除^実行時に通知が正しく表示されない場合がある問題",
+      "修正: '持ち上げてスリープ解除'実行時に通知が正しく表示されない場合がある問題",
+      "修正: ダークモードがオンの場合、通知にボタンが正しく表示されないことがある問題",
+      "最適化: 通知シェードのサードパーティ製テーマへの対応",
+      "最適化: 通知のダークモード調整",
+      "修正: アプリロックを使用時に通知が正しく表示されない問題",
+      "修正: クリーナーのアニメーションが正しく表示されない問題",
+      "修正: 通知シェードが開けない場合がある問題",
+      "修正: プレイヤーのコントロールが通知シェードに表示されないことがある問題",
+      "修正: '持ち上げてスリープ解除'実行時に通知が正しく表示されない場合がある問題",
       "修正: ダークモードがオンの場合、通知にボタンが正しく表示されないことがある問題"
     ]
   },
   "logs_ko": {
-    "시스템": [
-      "Android 보안패치 (2021#09) 업데이트됨. 시스템 보안이 향상되었습니다."
-    ],
     "잠금화면": [
+      "New: 새 지문 옵션",
+      "수정: 일부 상황에서 안면 인식 잠금해제와 지문 잠금해제를 동시에 사용 시 충돌이 발생하는 문제",
+      "New: 새 지문 옵션",
+      "수정: 일부 상황에서 안면 인식 잠금해제와 지문 잠금해제를 동시에 사용 시 충돌이 발생하는 문제",
       "New: 새 지문 옵션",
       "수정: 일부 상황에서 안면 인식 잠금해제와 지문 잠금해제를 동시에 사용 시 충돌이 발생하는 문제"
     ],
@@ -86,35 +161,77 @@
       "수정: 앱 잠금을 사용 중일 시 알림이 제대로 표시되지 않는 문제",
       "수정: 클리너 애니메이션이 제대로 표시되지 않는 문제",
       "수정: 일부 상황에서 알림 바가 열리지 않는 문제",
+      "수정: 보조 공간 사용 시 플로팅 창이 점멸하는 문제",
       "수정: 플레이어의 컨트롤이 알림바에 표시되지 않을 수있는 문제",
-      "수정: ^손목 올려 켜기^ 사용 시에 알림이 제대로 표시되지 않는 문제",
+      "수정: 알림 배지가 표시되지 않는 문제",
+      "수정: 타사 테마 사용 중에 알림 수신 시 배경이 제대로 표시되지 않는 문제",
+      "수정: \"손목 올려 켜기\" 사용 시에 알림이 제대로 표시되지 않는 문제",
+      "수정: 다크 모드가 켜져있는 경우 알림에 버튼이 제대로 표시되지 않는 문제",
+      "최적화: 알림 바와 타사 테마의 호환성",
+      "최적화: 알림을 위한 다크 모드 조정",
+      "수정: 앱 잠금을 사용 중일 시 알림이 제대로 표시되지 않는 문제",
+      "수정: 클리너 애니메이션이 제대로 표시되지 않는 문제",
+      "수정: 일부 상황에서 알림 바가 열리지 않는 문제",
+      "수정: 플레이어의 컨트롤이 알림바에 표시되지 않을 수있는 문제",
+      "수정: \"손목 올려 켜기\" 사용 시에 알림이 제대로 표시되지 않는 문제",
+      "수정: 다크 모드가 켜져있는 경우 알림에 버튼이 제대로 표시되지 않는 문제",
+      "최적화: 알림 바와 타사 테마의 호환성",
+      "최적화: 알림을 위한 다크 모드 조정",
+      "수정: 앱 잠금을 사용 중일 시 알림이 제대로 표시되지 않는 문제",
+      "수정: 클리너 애니메이션이 제대로 표시되지 않는 문제",
+      "수정: 일부 상황에서 알림 바가 열리지 않는 문제",
+      "수정: 플레이어의 컨트롤이 알림바에 표시되지 않을 수있는 문제",
+      "수정: \"손목 올려 켜기\" 사용 시에 알림이 제대로 표시되지 않는 문제",
       "수정: 다크 모드가 켜져있는 경우 알림에 버튼이 제대로 표시되지 않는 문제"
     ]
   },
   "logs_ru": {
-    "Система": [
-      "Обновление системы безопасности Android (сентябрь 2021 года). Улучшена безопасность системы."
-    ],
     "Экран блокировки": [
       "Новое: Новый параметры для отпечатков пальцев",
+      "Исправлено: В редких случаях одновременное использование разблокировки по лицу и при помощи отпечатка пальца могло приводить к ошибкам",
+      "Новое: Новый параметры для отпечатков пальцев",
+      "Исправлено: В редких случаях одновременное использование разблокировки по лицу и при помощи отпечатка пальца могло приводить к ошибкам",
+      "Новое: Новый параметры для отпечатков пальцев",
       "Исправлено: В редких случаях одновременное использование разблокировки по лицу и при помощи отпечатка пальца могло приводить к ошибкам"
+    ],
+    "строка состояния, шторка уведомлений": [
+      "Оптимизация: Совместимость сторонних тем со шторкой уведомлений",
+      "Оптимизация: Оптимизация отображения уведомлений в темном режиме",
+      "Исправлено: При использовании защиты приложений уведомления могли отображаться неправильно",
+      "Исправлено: Исправлено некорректное отображение анимации \"Очистки\"",
+      "Исправлено: В некоторых случаях шторка уведомлений могла не открываться",
+      "Исправлено: При использовании второго пространства всплывающие уведомления могли мерцать",
+      "Исправлено: Виджет управления воспроизведением музыки мог не отображаться в шторке уведомлений",
+      "Исправлено: В некоторых случаях могли не появляться метки уведомлений",
+      "Исправлено: Фон отображался неправильно при получении уведомлений и использовании сторонних тем",
+      "Исправлено: При использовании функции \"Поднять для активации\" уведомления могли отображаться неправильно",
+      "Исправлено: При активации темного режима некоторые кнопки на уведомлениях могли не отображаться"
     ],
     "Строка состояния, шторка уведомлений": [
       "Оптимизация: Совместимость сторонних тем со шторкой уведомлений",
       "Оптимизация: Оптимизация отображения уведомлений в темном режиме",
       "Исправлено: При использовании защиты приложений уведомления могли отображаться неправильно",
-      "Исправлено: Исправлено некорректное отображение анимации ^Очистки^",
+      "Исправлено: Исправлено некорректное отображение анимации \"Очистки\"",
       "Исправлено: В некоторых случаях шторка уведомлений могла не открываться",
       "Исправлено: Виджет управления воспроизведением музыки мог не отображаться в шторке уведомлений",
-      "Исправлено: При использовании функции ^Поднять для активации^ уведомления могли отображаться неправильно",
+      "Исправлено: При использовании функции \"Поднять для активации\" уведомления могли отображаться неправильно",
+      "Исправлено: При активации темного режима некоторые кнопки на уведомлениях могли не отображаться",
+      "Оптимизация: Совместимость сторонних тем со шторкой уведомлений",
+      "Оптимизация: Оптимизация отображения уведомлений в темном режиме",
+      "Исправлено: При использовании защиты приложений уведомления могли отображаться неправильно",
+      "Исправлено: Исправлено некорректное отображение анимации \"Очистки\"",
+      "Исправлено: В некоторых случаях шторка уведомлений могла не открываться",
+      "Исправлено: Виджет управления воспроизведением музыки мог не отображаться в шторке уведомлений",
+      "Исправлено: При использовании функции \"Поднять для активации\" уведомления могли отображаться неправильно",
       "Исправлено: При активации темного режима некоторые кнопки на уведомлениях могли не отображаться"
     ]
   },
   "logs_uk": {
-    "Система": [
-      "Оновлено патч безпеки Android за вересень 2021 року. Збільшено безпеку системи."
-    ],
     "Екран блокування": [
+      "Нове: Нові параметри для відбитків пальців",
+      "Виправлено: У деяких випадках одночасне використання розблокування за допомогою обличчя і за допомогою відбитка пальця могло призводити до помилок",
+      "Нове: Нові параметри для відбитків пальців",
+      "Виправлено: У деяких випадках одночасне використання розблокування за допомогою обличчя і за допомогою відбитка пальця могло призводити до помилок",
       "Нове: Нові параметри для відбитків пальців",
       "Виправлено: У деяких випадках одночасне використання розблокування за допомогою обличчя і за допомогою відбитка пальця могло призводити до помилок"
     ],
@@ -122,22 +239,52 @@
       "Оптимізація: Сумісність сторонніх тем із панеллю сповіщень",
       "Оптимізація: Оптимізація відображення сповіщень у темному режимі",
       "Виправлено: Під час використання захисту програм сповіщення могли відображатися неправильно",
-      "Виправлено: Виправлено некоректне відображення анімації ^Очищення^",
+      "Виправлено: Виправлено некоректне відображення анімації \"Очищення\"",
       "Виправлено: В деяких випадках панель сповіщень могла не відкриватися",
       "Виправлено: Віджет керування відтворенням музиик міг не відображатися у панелі сповіщень",
-      "Виправлено: Під час використання функції ^Підняти для активації^ сповіщення могли відображатися неправильно",
+      "Виправлено: Під час використання функції \"Підняти для активації\" сповіщення могли відображатися неправильно",
+      "Виправлено: Під час активації темного режиму деякі кнопки на сповіщеннях могли не відображатися",
+      "Оптимізація: Сумісність сторонніх тем із панеллю сповіщень",
+      "Оптимізація: Оптимізація відображення сповіщень у темному режимі",
+      "Виправлено: Під час використання захисту програм сповіщення могли відображатися неправильно",
+      "Виправлено: Виправлено некоректне відображення анімації \"Очищення\"",
+      "Виправлено: В деяких випадках панель сповіщень могла не відкриватися",
+      "Виправлено: Віджет керування відтворенням музиик міг не відображатися у панелі сповіщень",
+      "Виправлено: Під час використання функції \"Підняти для активації\" сповіщення могли відображатися неправильно",
       "Виправлено: Під час активації темного режиму деякі кнопки на сповіщеннях могли не відображатися"
     ]
   },
   "logs_pl": {
-    "System": [
-      "Zaktualizowano Pakiet Bezpieczeństwa Android do września 2021 r. Zwiększono bezpieczeństwo systemu."
-    ],
     "Ekran blokady": [
+      "Nowe: Nowe opcje odcisków palców",
+      "Naprawiono: Jednoczesne używanie rozpoznawania twarzy i odblokowywania odciskiem palca w niektórych przypadkach powodowało awarie",
+      "Nowe: Nowe opcje odcisków palców",
+      "Naprawiono: Jednoczesne używanie rozpoznawania twarzy i odblokowywania odciskiem palca w niektórych przypadkach powodowało awarie",
       "Nowe: Nowe opcje odcisków palców",
       "Naprawiono: Jednoczesne używanie rozpoznawania twarzy i odblokowywania odciskiem palca w niektórych przypadkach powodowało awarie"
     ],
+    "pasek powiadomień,panel powiadomień": [
+      "Zoptymalizowano: Kompatybilność motywów stron trzecich dla odcienia powiadomień",
+      "Zoptymalizowano: Dostosowanie Trybu ciemnego do powiadomień",
+      "Naprawiono: Powiadomienia nie były wyświetlane poprawnie po użyciu blokady aplikacji",
+      "Naprawiono: Czystsze animacje nie były wyświetlane poprawnie",
+      "Naprawiono: W niektórych przypadkach nie można było otworzyć obszaru powiadomień",
+      "Naprawiono: Pływające powiadomienia migały podczas używania Drugiej przestrzeni",
+      "Naprawiono: Kontrolki odtwarzacza nie zawsze były wyświetlane w Panelu powiadomień",
+      "Naprawiono: Symbole powiadomień nie zawsze się pojawiały",
+      "Naprawiono: Gdy używano motywów firm zewnętrznych, tło nie było wyświetlane poprawnie podczas otrzymywania powiadomień",
+      "Naprawiono: Powiadomienia nie zawsze były wyświetlane poprawnie, gdy użyto opcji „Podnieś, aby się obudzić”",
+      "Naprawiono: Przyciski w Powiadomieniach nie zawsze były wyświetlane poprawnie w Trybie ciemnym"
+    ],
     "Pasek powiadomień, Panel powiadomień": [
+      "Zoptymalizowano: Kompatybilność motywów stron trzecich dla odcienia powiadomień",
+      "Zoptymalizowano: Dostosowanie Trybu ciemnego do powiadomień",
+      "Naprawiono: Powiadomienia nie były wyświetlane poprawnie po użyciu blokady aplikacji",
+      "Naprawiono: Czystsze animacje nie były wyświetlane poprawnie",
+      "Naprawiono: W niektórych przypadkach nie można było otworzyć obszaru powiadomień",
+      "Naprawiono: Kontrolki odtwarzacza nie zawsze były wyświetlane w Panelu powiadomień",
+      "Naprawiono: Powiadomienia nie zawsze były wyświetlane poprawnie, gdy użyto opcji „Podnieś, aby się obudzić”",
+      "Naprawiono: Przyciski w Powiadomieniach nie zawsze były wyświetlane poprawnie w Trybie ciemnym",
       "Zoptymalizowano: Kompatybilność motywów stron trzecich dla odcienia powiadomień",
       "Zoptymalizowano: Dostosowanie Trybu ciemnego do powiadomień",
       "Naprawiono: Powiadomienia nie były wyświetlane poprawnie po użyciu blokady aplikacji",
@@ -149,69 +296,147 @@
     ]
   },
   "logs_de": {
-    "System": [
-      "Updated Android Security Patch to September 2021. Increased system security."
+    "Sperrbildschirm": [
+      "Neu: Neue Fingerabdruck-Optionen",
+      "Behoben: Die gleichzeitige Nutzung von Gesichts- und Fingerabdruckentsperrung führte in manchen Fällen zu Abstürzen",
+      "Neu: Neue Fingerabdruck-Optionen",
+      "Behoben: Die gleichzeitige Nutzung von Gesichts- und Fingerabdruckentsperrung führte in manchen Fällen zu Abstürzen",
+      "Neu: Neue Fingerabdruck-Optionen",
+      "Behoben: Die gleichzeitige Nutzung von Gesichts- und Fingerabdruckentsperrung führte in manchen Fällen zu Abstürzen"
     ],
-    "Lock screen": [
-      "New: New fingerprint options",
-      "Fix: Using Face unlock and Fingerprint unlock simultaneously led to crashes in some cases"
+    "Statusleiste, Benachrichtigungsfeld": [
+      "Optimierung: Kompatibilität von Drittanbieter-Themes mit dem Benachrichtigungsbereich",
+      "Optimierung: Anpassung des Dunkelmodus für Benachrichtigungen",
+      "Behoben: Bei aktiver App-Sperre wurden Benachrichtigungen nicht korrekt angezeigt",
+      "Behoben: Die Animationen des Reinigers wurden nicht korrekt angezeigt",
+      "Behoben: Der Benachrichtigungsbereich ließ sich in manchen Fällen nicht öffnen",
+      "Behebung: Schwebende Benachrichtigungen blinkten bei Verwendung des Zweiten Bereichs",
+      "Behoben: Wiedergabesteuerung wurde nicht immer in der Benachrichtigungsleiste angezeigt",
+      "Behebung: Benachrichtigungs-Badges wurden nicht immer angezeigt",
+      "Behebung: Hintergründe wurden bei eingehenden Benachrichtigungen mit Drittanbieter-Themes nicht korrekt angezeigt",
+      "Fix: Notifications weren't always displayed correctly when \"Raise to wake\" was used",
+      "Behoben: Schaltflächen wurden bei aktiviertem Dunkelmodus nicht immer korrekt in den Benachrichtigungen angezeigt"
     ],
-    "Status bar, Notification shade": [
-      "Optimization: Third party theme compatibility for Notification shade",
-      "Optimization: Dark mode adjustments for notifications",
-      "Fix: Notifications weren^t displayed correctly when App lock was used",
-      "Fix: Cleaner animations weren^t displayed correctly",
-      "Fix: Notification shade couldn^t be opened in some cases",
-      "Fix: Player controls weren^t always displayed in the Notification shade",
-      "Fix: Notifications weren^t always displayed correctly when ^Raise to wake^ was used",
-      "Fix: Buttons weren^t always displayed correctly on the notifications when Dark mode was on"
+    "Statusleiste, Benachrichtigungsleiste": [
+      "Optimierung: Kompatibilität von Drittanbieter-Themes mit dem Benachrichtigungsbereich",
+      "Optimierung: Anpassung des Dunkelmodus für Benachrichtigungen",
+      "Behoben: Bei aktiver App-Sperre wurden Benachrichtigungen nicht korrekt angezeigt",
+      "Behoben: Die Animationen des Reinigers wurden nicht korrekt angezeigt",
+      "Behoben: Der Benachrichtigungsbereich ließ sich in manchen Fällen nicht öffnen",
+      "Behoben: Wiedergabesteuerung wurde nicht immer in der Benachrichtigungsleiste angezeigt",
+      "Fix: Notifications weren't always displayed correctly when \"Raise to wake\" was used",
+      "Behoben: Schaltflächen wurden bei aktiviertem Dunkelmodus nicht immer korrekt in den Benachrichtigungen angezeigt",
+      "Optimierung: Kompatibilität von Drittanbieter-Themes mit dem Benachrichtigungsbereich",
+      "Optimierung: Anpassung des Dunkelmodus für Benachrichtigungen",
+      "Behoben: Bei aktiver App-Sperre wurden Benachrichtigungen nicht korrekt angezeigt",
+      "Behoben: Die Animationen des Reinigers wurden nicht korrekt angezeigt",
+      "Behoben: Der Benachrichtigungsbereich ließ sich in manchen Fällen nicht öffnen",
+      "Behoben: Wiedergabesteuerung wurde nicht immer in der Benachrichtigungsleiste angezeigt",
+      "Fix: Notifications weren't always displayed correctly when \"Raise to wake\" was used",
+      "Behoben: Schaltflächen wurden bei aktiviertem Dunkelmodus nicht immer korrekt in den Benachrichtigungen angezeigt"
     ]
   },
   "logs_fr": {
-    "Système": [
-      "Patch de Sécurité Android mis à jour pour septembre 2021. Amélioration du système de sécurité."
-    ],
     "Écran de verrouillage": [
-      "Nouveau: Nouvelles options d^empreintes digitales",
-      "Réparé: L^utilisation simultanée du déverrouillage du visage et du déverrouillage des empreintes digitales a entraîné des plantages dans certains cas"
+      "Nouveau: Nouvelles options d'empreintes digitales",
+      "Réparé: L'utilisation simultanée du déverrouillage du visage et du déverrouillage des empreintes digitales a entraîné des plantages dans certains cas",
+      "Nouveau: Nouvelles options d'empreintes digitales",
+      "Réparé: L'utilisation simultanée du déverrouillage du visage et du déverrouillage des empreintes digitales a entraîné des plantages dans certains cas",
+      "Nouveau: Nouvelles options d'empreintes digitales",
+      "Réparé: L'utilisation simultanée du déverrouillage du visage et du déverrouillage des empreintes digitales a entraîné des plantages dans certains cas"
     ],
     "Barre d'état, Panneau de notification": [
       "Optimisation: Compatibilité des thèmes tiers pour le panneau de notification",
       "Optimisation: Réglages du mode sombre pour les notifications",
-      "Réparé: Les notifications ne s^affichaient pas correctement lorsque le verrouillage de l^application était utilisé",
-      "Réparé: Les animations plus propres ne s^affichaient pas correctement",
-      "Réparé: Le volet de notification n^a pas pu être ouvert dans certains cas",
-      "Réparé: Les commandes du lecteur n^étaient pas toujours affichées dans le Panneau de notification",
-      "Réparé: Les notifications ne s^affichaient pas toujours correctement lorsque ^Lever pour activer^ était utilisé",
-      "Réparé: Les boutons ne s^affichaient pas toujours correctement sur les notifications lorsque le mode sombre était activé"
+      "Réparé: Les notifications ne s'affichaient pas correctement lorsque le verrouillage de l'application était utilisé",
+      "Réparé: Les animations plus propres ne s'affichaient pas correctement",
+      "Réparé: Le volet de notification n'a pas pu être ouvert dans certains cas",
+      "Réparé: Les notifications flottantes ont clignoté lorsque le deuxième espace a été utilisé",
+      "Réparé: Les commandes du lecteur n'étaient pas toujours affichées dans le Panneau de notification",
+      "Réparé: Les badges de notification n'apparaissaient pas toujours",
+      "Réparé: Les arrière-plans ne s'affichaient pas correctement lorsque les notifications arrivaient et que des thèmes tiers étaient utilisés",
+      "Réparé: Les notifications ne s'affichaient pas toujours correctement lorsque \"Lever pour activer\" était utilisé",
+      "Réparé: Les boutons ne s'affichaient pas toujours correctement sur les notifications lorsque le mode sombre était activé",
+      "Optimisation: Compatibilité des thèmes tiers pour le panneau de notification",
+      "Optimisation: Réglages du mode sombre pour les notifications",
+      "Réparé: Les notifications ne s'affichaient pas correctement lorsque le verrouillage de l'application était utilisé",
+      "Réparé: Les animations plus propres ne s'affichaient pas correctement",
+      "Réparé: Le volet de notification n'a pas pu être ouvert dans certains cas",
+      "Réparé: Les commandes du lecteur n'étaient pas toujours affichées dans le Panneau de notification",
+      "Réparé: Les notifications ne s'affichaient pas toujours correctement lorsque \"Lever pour activer\" était utilisé",
+      "Réparé: Les boutons ne s'affichaient pas toujours correctement sur les notifications lorsque le mode sombre était activé",
+      "Optimisation: Compatibilité des thèmes tiers pour le panneau de notification",
+      "Optimisation: Réglages du mode sombre pour les notifications",
+      "Réparé: Les notifications ne s'affichaient pas correctement lorsque le verrouillage de l'application était utilisé",
+      "Réparé: Les animations plus propres ne s'affichaient pas correctement",
+      "Réparé: Le volet de notification n'a pas pu être ouvert dans certains cas",
+      "Réparé: Les commandes du lecteur n'étaient pas toujours affichées dans le Panneau de notification",
+      "Réparé: Les notifications ne s'affichaient pas toujours correctement lorsque \"Lever pour activer\" était utilisé",
+      "Réparé: Les boutons ne s'affichaient pas toujours correctement sur les notifications lorsque le mode sombre était activé"
     ]
   },
   "logs_it": {
-    "Sistema": [
-      "Patch di sicurezza Android aggiornata a settembre 2021. Maggiore sicurezza del sistema."
-    ],
     "Schermata di blocco": [
       "Nuovo: Nuove opzioni per le impronte digitali",
-      "Risolto: L^uso simultaneo di riconoscimento facciale e sblocco tramite impronta causava arresti anomali in alcuni casi"
+      "Risolto: L'uso simultaneo di riconoscimento facciale e sblocco tramite impronta causava arresti anomali in alcuni casi",
+      "Nuovo: Nuove opzioni per le impronte digitali",
+      "Risolto: L'uso simultaneo di riconoscimento facciale e sblocco tramite impronta causava arresti anomali in alcuni casi",
+      "Nuovo: Nuove opzioni per le impronte digitali",
+      "Risolto: L'uso simultaneo di riconoscimento facciale e sblocco tramite impronta causava arresti anomali in alcuni casi"
     ],
-    "Barra di stato, Area delle notifiche": [
-      "Ottimizzazione: Compatibilità dei temi di terze parti per l^area delle notifiche",
+    "barra di stato, area delle notifiche": [
+      "Ottimizzazione: Compatibilità dei temi di terze parti per l'area delle notifiche",
       "Ottimizzazione: Miglioramenti della modalità scura per le notifiche",
       "Risolto: Le notifiche non venivano visualizzate correttamente quando veniva utilizzato il blocco app",
       "Risolto: Le animazioni di Pulitore non venivano visualizzate correttamente",
-      "Risolto: Non era possibile aprire l^area delle notifiche in alcuni casi",
-      "Risolto: I controlli del giocatore non venivano sempre visualizzati nell^area delle notifiche",
-      "Risolto: Le notifiche non venivano sempre visualizzate correttamente durante l^utilizzo di ^Solleva per attivare^",
+      "Risolto: Non era possibile aprire l'area delle notifiche in alcuni casi",
+      "Risolto: Le notifiche a comparsa lampeggiavano durante l'utilizzo di Secondo spazio",
+      "Risolto: I controlli del giocatore non venivano sempre visualizzati nell'area delle notifiche",
+      "Risolto: I badge di notifica non apparivano sempre",
+      "Risolto: Gli sfondi non venivano visualizzati correttamente durante la ricezione di notifiche e l'utilizzo di temi di terze parti",
+      "Risolto: Le notifiche non venivano sempre visualizzate correttamente durante l'utilizzo di \"Solleva per attivare\"",
+      "Risolto: I pulsanti non venivano sempre visualizzati correttamente nelle notifiche con la modalità scura attiva"
+    ],
+    "Barra di stato, Area delle notifiche": [
+      "Ottimizzazione: Compatibilità dei temi di terze parti per l'area delle notifiche",
+      "Ottimizzazione: Miglioramenti della modalità scura per le notifiche",
+      "Risolto: Le notifiche non venivano visualizzate correttamente quando veniva utilizzato il blocco app",
+      "Risolto: Le animazioni di Pulitore non venivano visualizzate correttamente",
+      "Risolto: Non era possibile aprire l'area delle notifiche in alcuni casi",
+      "Risolto: I controlli del giocatore non venivano sempre visualizzati nell'area delle notifiche",
+      "Risolto: Le notifiche non venivano sempre visualizzate correttamente durante l'utilizzo di \"Solleva per attivare\"",
+      "Risolto: I pulsanti non venivano sempre visualizzati correttamente nelle notifiche con la modalità scura attiva",
+      "Ottimizzazione: Compatibilità dei temi di terze parti per l'area delle notifiche",
+      "Ottimizzazione: Miglioramenti della modalità scura per le notifiche",
+      "Risolto: Le notifiche non venivano visualizzate correttamente quando veniva utilizzato il blocco app",
+      "Risolto: Le animazioni di Pulitore non venivano visualizzate correttamente",
+      "Risolto: Non era possibile aprire l'area delle notifiche in alcuni casi",
+      "Risolto: I controlli del giocatore non venivano sempre visualizzati nell'area delle notifiche",
+      "Risolto: Le notifiche non venivano sempre visualizzate correttamente durante l'utilizzo di \"Solleva per attivare\"",
       "Risolto: I pulsanti non venivano sempre visualizzati correttamente nelle notifiche con la modalità scura attiva"
     ]
   },
   "logs_es": {
-    "Sistema": [
-      "Parche de seguridad de Android actualizado a septiembre de 2021. Seguridad del sistema incrementada."
-    ],
     "Pantalla de bloqueo": [
       "Nuevo: Nuevas opciones de huella dactilar",
+      "Reparado: En algunos casos usar el desbloqueo facial y el desbloqueo con huella dactilar simultáneamente provocaba bloqueos",
+      "Nuevo: Nuevas opciones de huella dactilar",
+      "Reparado: En algunos casos usar el desbloqueo facial y el desbloqueo con huella dactilar simultáneamente provocaba bloqueos",
+      "Nuevo: Nuevas opciones de huella dactilar",
       "Reparado: En algunos casos usar el desbloqueo facial y el desbloqueo con huella dactilar simultáneamente provocaba bloqueos"
+    ],
+    "barra de estado, barra de notificaciones": [
+      "Optimización: Compatibilidad de temas de terceros para la Barra de notificaciones",
+      "Optimización: Ajustes del Modo oscuro para notificaciones",
+      "Reparado: Las notificaciones no se mostraban correctamente cuando se usaba el Bloqueo de aplicaciones",
+      "Reparado: Las animaciones del Limpiador no se mostraban correctamente",
+      "Reparado: La barra de notificaciones no se podía abrir en algunos casos",
+      "Reparado: Las notificaciones flotantes parpadeaban cuando se usaba el Segundo espacio",
+      "Reparado: Los controles del reproductor no siempre se mostraban en la Barra de notificaciones",
+      "Reparado: Los iconos de notificaciones no siempre aparecían",
+      "Reparado: Los fondos no se mostraban correctamente cuando llegaban las notificaciones y se usaban temas de terceros",
+      "Reparado: Las notificaciones no siempre se mostraban correctamente cuando se usaba \"Levantar para activar\"",
+      "Reparado: Los botones no siempre se mostraban correctamente en las notificaciones cuando el Modo oscuro estaba activado"
     ],
     "Barra de estado, Barra de notificaciones": [
       "Optimización: Compatibilidad de temas de terceros para la Barra de notificaciones",
@@ -220,17 +445,39 @@
       "Reparado: Las animaciones del Limpiador no se mostraban correctamente",
       "Reparado: La barra de notificaciones no se podía abrir en algunos casos",
       "Reparado: Los controles del reproductor no siempre se mostraban en la Barra de notificaciones",
-      "Reparado: Las notificaciones no siempre se mostraban correctamente cuando se usaba ^Levantar para activar^",
+      "Reparado: Las notificaciones no siempre se mostraban correctamente cuando se usaba \"Levantar para activar\"",
+      "Reparado: Los botones no siempre se mostraban correctamente en las notificaciones cuando el Modo oscuro estaba activado",
+      "Optimización: Compatibilidad de temas de terceros para la Barra de notificaciones",
+      "Optimización: Ajustes del Modo oscuro para notificaciones",
+      "Reparado: Las notificaciones no se mostraban correctamente cuando se usaba el Bloqueo de aplicaciones",
+      "Reparado: Las animaciones del Limpiador no se mostraban correctamente",
+      "Reparado: La barra de notificaciones no se podía abrir en algunos casos",
+      "Reparado: Los controles del reproductor no siempre se mostraban en la Barra de notificaciones",
+      "Reparado: Las notificaciones no siempre se mostraban correctamente cuando se usaba \"Levantar para activar\"",
       "Reparado: Los botones no siempre se mostraban correctamente en las notificaciones cuando el Modo oscuro estaba activado"
     ]
   },
   "logs_pt": {
-    "Sistema": [
-      "Patch de Segurança do Android atualizado para Setembro de 2021. Segurança do sistema aprimorada."
-    ],
     "Tela de bloqueio": [
       "Novo: Novas opções de impressão digital",
+      "Correção: Usar o desbloqueio facial e o desbloqueio por impressão digital simultaneamente causava travamentos em alguns casos",
+      "Novo: Novas opções de impressão digital",
+      "Correção: Usar o desbloqueio facial e o desbloqueio por impressão digital simultaneamente causava travamentos em alguns casos",
+      "Novo: Novas opções de impressão digital",
       "Correção: Usar o desbloqueio facial e o desbloqueio por impressão digital simultaneamente causava travamentos em alguns casos"
+    ],
+    "Barra de status e Área de notificações": [
+      "Otimização: Compatibilidade com temas de terceiros para a Área de notificações",
+      "Otimização: Ajuste no Modo Escuro para notificações",
+      "Correção: As notificações não eram exibidas corretamente com o Bloqueio de apps em uso",
+      "Correção: As animações da Limpeza não eram exibidas corretamente",
+      "Correção: A Área de notificações não abria em alguns casos",
+      "Correção: As notificações flutuantes piscavam quando o Segundo Espaço era usado",
+      "Correção: Os controles de reprodução não eram sempre exibidos na Área de notificações",
+      "Correção: Emblemas de notificação não desapareciam em alguns casos",
+      "Correção: Os fundos não eram exibidos corretamente ao receber notificações em temas de terceiros",
+      "Correção: As notificações não eram exibidas corretamente quando o \"Levantar para ligar a tela\" era usado",
+      "Correção: Os botões não eram sempre exibidos corretamente nas notificações quando o Modo Escuro estava ativado"
     ],
     "Barra de status, Área de notificações": [
       "Otimização: Compatibilidade com temas de terceiros para a Área de notificações",
@@ -239,17 +486,39 @@
       "Correção: As animações da Limpeza não eram exibidas corretamente",
       "Correção: A Área de notificações não abria em alguns casos",
       "Correção: Os controles de reprodução não eram sempre exibidos na Área de notificações",
-      "Correção: As notificações não eram exibidas corretamente quando o ^Levantar para ligar a tela^ era usado",
+      "Correção: As notificações não eram exibidas corretamente quando o \"Levantar para ligar a tela\" era usado",
+      "Correção: Os botões não eram sempre exibidos corretamente nas notificações quando o Modo Escuro estava ativado",
+      "Otimização: Compatibilidade com temas de terceiros para a Área de notificações",
+      "Otimização: Ajuste no Modo Escuro para notificações",
+      "Correção: As notificações não eram exibidas corretamente com o Bloqueio de apps em uso",
+      "Correção: As animações da Limpeza não eram exibidas corretamente",
+      "Correção: A Área de notificações não abria em alguns casos",
+      "Correção: Os controles de reprodução não eram sempre exibidos na Área de notificações",
+      "Correção: As notificações não eram exibidas corretamente quando o \"Levantar para ligar a tela\" era usado",
       "Correção: Os botões não eram sempre exibidos corretamente nas notificações quando o Modo Escuro estava ativado"
     ]
   },
   "logs_tr": {
-    "Sistem": [
-      "Android Güvenlik Patch^i Eylül 2021^de güncellendi. Sistem güvenliği arttırıldı."
-    ],
     "Kilit ekranı": [
       "Yeni: Yeni parmak izi seçenekleri",
+      "Onarım: Yüz ile kilit açmayı ve Parmak izi ile kilit açmayı aynı anda kullanmak bazı durumlarda çökmelere yol açtı",
+      "Yeni: Yeni parmak izi seçenekleri",
+      "Onarım: Yüz ile kilit açmayı ve Parmak izi ile kilit açmayı aynı anda kullanmak bazı durumlarda çökmelere yol açtı",
+      "Yeni: Yeni parmak izi seçenekleri",
       "Onarım: Yüz ile kilit açmayı ve Parmak izi ile kilit açmayı aynı anda kullanmak bazı durumlarda çökmelere yol açtı"
+    ],
+    "durum çubuğu, Bildirim çubuğu": [
+      "Optimizasyon: Bildirim çubuğu için üçüncü taraf tema uyumluluğu",
+      "Optimizasyon: Bildirimler için Karanlık mod ayarlamaları",
+      "Onarım: Uygulama kilidi kullanıldığında bildirimler düzgün bir şekilde görüntülenmedi",
+      "Onarım: Temizleyici animasyonları doğru bir şekilde görüntülenmedi",
+      "Onarım: Bildirim çubuğu bazı durumlarda açılamadı",
+      "Onarım: İkinci alan kullanıldığında kayan bildirimler yanıp söndü",
+      "Onarım: Oynatıcı kontrolleri Bildirim Çubuğu'nda her zaman görüntülenmedi",
+      "Onarım: Bildirim rozetleri her zaman görünmedi",
+      "Onarım: Bildirimler alındığında ve üçüncü taraf temaları kullanıldığında arka planlar düzgün bir şekilde görüntülenmedi",
+      "Onarım: \"Uyandırmak için kaldır\" kullanıldığında bildirimler hiçbir zaman düzgün bir şekilde görüntülenmedi",
+      "Onarım: Karanlık mod açık olduğunda tuşlar bildirimlerde her zaman düzgün bir şekilde görüntülenmedi"
     ],
     "Durum çubuğu, Bildirim çubuğu": [
       "Optimizasyon: Bildirim çubuğu için üçüncü taraf tema uyumluluğu",
@@ -257,18 +526,40 @@
       "Onarım: Uygulama kilidi kullanıldığında bildirimler düzgün bir şekilde görüntülenmedi",
       "Onarım: Temizleyici animasyonları doğru bir şekilde görüntülenmedi",
       "Onarım: Bildirim çubuğu bazı durumlarda açılamadı",
-      "Onarım: Oynatıcı kontrolleri Bildirim Çubuğu^nda her zaman görüntülenmedi",
-      "Onarım: ^^Uyandırmak için kaldır^^ kullanıldığında bildirimler hiçbir zaman düzgün bir şekilde görüntülenmedi",
+      "Onarım: Oynatıcı kontrolleri Bildirim Çubuğu'nda her zaman görüntülenmedi",
+      "Onarım: \"Uyandırmak için kaldır\" kullanıldığında bildirimler hiçbir zaman düzgün bir şekilde görüntülenmedi",
+      "Onarım: Karanlık mod açık olduğunda tuşlar bildirimlerde her zaman düzgün bir şekilde görüntülenmedi",
+      "Optimizasyon: Bildirim çubuğu için üçüncü taraf tema uyumluluğu",
+      "Optimizasyon: Bildirimler için Karanlık mod ayarlamaları",
+      "Onarım: Uygulama kilidi kullanıldığında bildirimler düzgün bir şekilde görüntülenmedi",
+      "Onarım: Temizleyici animasyonları doğru bir şekilde görüntülenmedi",
+      "Onarım: Bildirim çubuğu bazı durumlarda açılamadı",
+      "Onarım: Oynatıcı kontrolleri Bildirim Çubuğu'nda her zaman görüntülenmedi",
+      "Onarım: \"Uyandırmak için kaldır\" kullanıldığında bildirimler hiçbir zaman düzgün bir şekilde görüntülenmedi",
       "Onarım: Karanlık mod açık olduğunda tuşlar bildirimlerde her zaman düzgün bir şekilde görüntülenmedi"
     ]
   },
   "logs_id": {
-    "Sistem": [
-      "Patch Keamanan Android diperbarui (September 2021). Keamanan sistem ditingkatkan."
-    ],
     "Layar kunci": [
       "Baru: Pilihan penggunaan sidik jari baru",
+      "Perbaikan: Menggunakan Buka kunci dengan wajah dan Buka kunci dengan sidik jari secara bersamaan menyebabkan layar tertutup tiba-tiba dalam beberapa kasus",
+      "Baru: Pilihan penggunaan sidik jari baru",
+      "Perbaikan: Menggunakan Buka kunci dengan wajah dan Buka kunci dengan sidik jari secara bersamaan menyebabkan layar tertutup tiba-tiba dalam beberapa kasus",
+      "Baru: Pilihan penggunaan sidik jari baru",
       "Perbaikan: Menggunakan Buka kunci dengan wajah dan Buka kunci dengan sidik jari secara bersamaan menyebabkan layar tertutup tiba-tiba dalam beberapa kasus"
+    ],
+    "bar status, layar notifikasi": [
+      "Pengoptimalan: Kompatibilitas tema pihak ketiga untuk Layar notifikasi",
+      "Pengoptimalan: Penyesuaian mode Gelap untuk notifikasi",
+      "Perbaikan: Notifikasi tidak ditampilkan dengan benar saat fitur Kunci aplikasi digunakan",
+      "Perbaikan: Animasi fitur Pembersih tidak ditampilkan dengan benar",
+      "Perbaikan: Layar notifikasi tidak dapat dibuka dalam beberapa kasus",
+      "Perbaikan: Notifikasi mengambang muncul saat Ruang kedua digunakan",
+      "Perbaikan: Kontrol pemutar tidak selalu ditampilkan di Layar notifikasi",
+      "Perbaikan: Lencana notifikasi tidak selalu muncul",
+      "Perbaikan: Latar belakang tidak ditampilkan dengan benar saat notifikasi tiba dan tema pihak ketiga digunakan",
+      "Perbaikan: Notifikasi tidak selalu ditampilkan dengan benar saat \"Angkat untuk bangunkan\" digunakan",
+      "Perbaikan: Tombol tidak selalu ditampilkan dengan benar di notifikasi saat mode Gelap dihidupkan"
     ],
     "Bar status, Layar notiifikasi": [
       "Pengoptimalan: Kompatibilitas tema pihak ketiga untuk Layar notifikasi",
@@ -277,15 +568,24 @@
       "Perbaikan: Animasi fitur Pembersih tidak ditampilkan dengan benar",
       "Perbaikan: Layar notifikasi tidak dapat dibuka dalam beberapa kasus",
       "Perbaikan: Kontrol pemutar tidak selalu ditampilkan di Layar notifikasi",
-      "Perbaikan: Notifikasi tidak selalu ditampilkan dengan benar saat ^Angkat untuk bangunkan^ digunakan",
+      "Perbaikan: Notifikasi tidak selalu ditampilkan dengan benar saat \"Angkat untuk bangunkan\" digunakan",
+      "Perbaikan: Tombol tidak selalu ditampilkan dengan benar di notifikasi saat mode Gelap dihidupkan",
+      "Pengoptimalan: Kompatibilitas tema pihak ketiga untuk Layar notifikasi",
+      "Pengoptimalan: Penyesuaian mode Gelap untuk notifikasi",
+      "Perbaikan: Notifikasi tidak ditampilkan dengan benar saat fitur Kunci aplikasi digunakan",
+      "Perbaikan: Animasi fitur Pembersih tidak ditampilkan dengan benar",
+      "Perbaikan: Layar notifikasi tidak dapat dibuka dalam beberapa kasus",
+      "Perbaikan: Kontrol pemutar tidak selalu ditampilkan di Layar notifikasi",
+      "Perbaikan: Notifikasi tidak selalu ditampilkan dengan benar saat \"Angkat untuk bangunkan\" digunakan",
       "Perbaikan: Tombol tidak selalu ditampilkan dengan benar di notifikasi saat mode Gelap dihidupkan"
     ]
   },
   "logs_vi": {
-    "Hệ thống": [
-      "Cập nhật Bản vá bảo mật Android đến tháng 9 năm 2021. Tăng cường bảo mật hệ thống."
-    ],
     "Màn hình khóa": [
+      "Mới: Tùy chọn vân tay mới",
+      "Sửa: Sử dụng Mở khóa bằng khuôn mặt và Mở khóa vân tay đồng thời dẫn đến sự cố trong một số trường hợp",
+      "Mới: Tùy chọn vân tay mới",
+      "Sửa: Sử dụng Mở khóa bằng khuôn mặt và Mở khóa vân tay đồng thời dẫn đến sự cố trong một số trường hợp",
       "Mới: Tùy chọn vân tay mới",
       "Sửa: Sử dụng Mở khóa bằng khuôn mặt và Mở khóa vân tay đồng thời dẫn đến sự cố trong một số trường hợp"
     ],
@@ -296,15 +596,24 @@
       "Sửa: Hoạt ảnh dọn dẹp không hiển thị chính xác",
       "Sửa: Không thể mở Thanh thông báo trong một số trường hợp",
       "Sửa: Điều khiển trình phát không luôn hiển thị trong Thanh thông báo",
-      "Sửa: Thông báo không hiển thị chính xác khi ^Nâng lên để đánh thức^ được sử dụng",
+      "Sửa: Thông báo không hiển thị chính xác khi \"Nâng lên để đánh thức\" được sử dụng",
+      "Sửa: Phím không hiển thị chính xác trên thanh thông báo khi Chế độ nền tối bật",
+      "Tối ưu: Chủ đề bên thứ ba tương thích với Thanh thông báo",
+      "Tối ưu: Điều chỉnh chế độ nền tối cho thông báo",
+      "Sửa: Thông báo không hiển thị chính xác khi Khóa ứng dụng được sử dụng",
+      "Sửa: Hoạt ảnh dọn dẹp không hiển thị chính xác",
+      "Sửa: Không thể mở Thanh thông báo trong một số trường hợp",
+      "Sửa: Điều khiển trình phát không luôn hiển thị trong Thanh thông báo",
+      "Sửa: Thông báo không hiển thị chính xác khi \"Nâng lên để đánh thức\" được sử dụng",
       "Sửa: Phím không hiển thị chính xác trên thanh thông báo khi Chế độ nền tối bật"
     ]
   },
   "logs_th": {
-    "ระบบ": [
-      "อัปเดตแพทช์ความปลอดภัยของแอนดรอยด์เป็นกันยายน 2021 เพิ่มความปลอดภัยของระบบ"
-    ],
     "ล็อคหน้าจอ": [
+      "ใหม่: ตัวเลือกลายนิ้วมือใหม่",
+      "แก้ไข: การใช้การปลดล็อกด้วยใบหน้าและการปลดล็อกด้วยลายนิ้วมือพร้อมกันทำให้เกิดข้อขัดข้องในบางกรณี",
+      "ใหม่: ตัวเลือกลายนิ้วมือใหม่",
+      "แก้ไข: การใช้การปลดล็อกด้วยใบหน้าและการปลดล็อกด้วยลายนิ้วมือพร้อมกันทำให้เกิดข้อขัดข้องในบางกรณี",
       "ใหม่: ตัวเลือกลายนิ้วมือใหม่",
       "แก้ไข: การใช้การปลดล็อกด้วยใบหน้าและการปลดล็อกด้วยลายนิ้วมือพร้อมกันทำให้เกิดข้อขัดข้องในบางกรณี"
     ],
@@ -315,17 +624,39 @@
       "แก้ไข: แอนิเมชั่นตัวทำความสะอาดแสดงไม่ถูกต้อง",
       "แก้ไข: ไม่สามารถเปิดหน้าต่างแจ้งเตือนได้ในบางกรณี",
       "แก้ไข: การควบคุมเครื่องเล่นเพลงไม่ได้แสดงในแถบการแจ้งเตือนทุกครั้ง",
-      "แก้ไข: การแจ้งเตือนแสดงไม่ถูกต้องทุกครั้งเมื่อใช้ ^ยกขึ้นเพื่อปลุก^",
+      "แก้ไข: การแจ้งเตือนแสดงไม่ถูกต้องทุกครั้งเมื่อใช้ \"ยกขึ้นเพื่อปลุก\"",
+      "แก้ไข: ปุ่มต่างๆ แสดงไม่ถูกต้องในการแจ้งเตือนทุกครั้งเมื่อเปิดโหมดมืด",
+      "การเพิ่มประสิทธิภาพ: ความเข้ากันได้ของธีมของบุคคลที่สามสำหรับหน้าต่างแจ้งเตือน",
+      "การเพิ่มประสิทธิภาพ: การปรับโหมดมืดสำหรับการแจ้งเตือน",
+      "แก้ไข: การแจ้งเตือนแสดงไม่ถูกต้องเมื่อใช้ ล็อกแอป",
+      "แก้ไข: แอนิเมชั่นตัวทำความสะอาดแสดงไม่ถูกต้อง",
+      "แก้ไข: ไม่สามารถเปิดหน้าต่างแจ้งเตือนได้ในบางกรณี",
+      "แก้ไข: การควบคุมเครื่องเล่นเพลงไม่ได้แสดงในแถบการแจ้งเตือนทุกครั้ง",
+      "แก้ไข: การแจ้งเตือนแสดงไม่ถูกต้องทุกครั้งเมื่อใช้ \"ยกขึ้นเพื่อปลุก\"",
       "แก้ไข: ปุ่มต่างๆ แสดงไม่ถูกต้องในการแจ้งเตือนทุกครั้งเมื่อเปิดโหมดมืด"
     ]
   },
   "logs_ar": {
-    "النظام": [
-      "تم تحديث تصحيح أمان الأندرويد إلى سبتمبر 2021 لزيادة أمان النظام."
-    ],
     "شاشة القفل": [
       "الجديد: خيارات جديدة لبصمات الأصابع",
+      "الإصلاح: مشكلة حدوث تعطل الجهاز احيانا عند استخدام ميزات التعرف على الوجه وإلغاء القفل ببصمة الإصبع في نفس الوقت",
+      "الجديد: خيارات جديدة لبصمات الأصابع",
+      "الإصلاح: مشكلة حدوث تعطل الجهاز احيانا عند استخدام ميزات التعرف على الوجه وإلغاء القفل ببصمة الإصبع في نفس الوقت",
+      "الجديد: خيارات جديدة لبصمات الأصابع",
       "الإصلاح: مشكلة حدوث تعطل الجهاز احيانا عند استخدام ميزات التعرف على الوجه وإلغاء القفل ببصمة الإصبع في نفس الوقت"
+    ],
+    "وشريط الإشعارات، ومركز الإشعارات": [
+      "التحسين: توافق ثيمات الجهات الخارجية مع مركز الإشعارات",
+      "التحسين: زيادة توافق الوضع الداكن مع الإشعارات",
+      "الإصلاح: مشكلة عدم عرض الإشعارات عند استخدام قفل التطبيقات",
+      "الإصلاح: مشكلة عدم ظهور الرسوم المتحركة للمنظف بشكل صحيح",
+      "الإصلاح: مشكلة عدم إمكانية سحب مركز الإشعارات لإسفل عند قفل الشاشة",
+      "الإصلاح: مشكلة وميض الإشعارات المنبثقة عند استخدام الواجهة الثانية",
+      "الإصلاح: مشكلة عدم ظهور عناصر تحكم مشغل الموسيقى في مركز الإشعارات",
+      "الإصلاح: عدم ظهور شارات الإشعارات دائما",
+      "الإصلاح: عدم عرض الخلفيات بشكل صحيح عند تلقي الإشعارات واستخدام ثيمات جهات خارجية",
+      "الإصلاح: مشكلة عدم عرض الإشعارات بشكل صحيح عند استخدام ميزة \"رفع الجهاز لإيقاظه\"",
+      "الإصلاح: مشكلة عدم عرض الأزرار بشكل صحيح في الإشعارات عند تشغيل الوضع الداكن"
     ],
     "شريط الحالة ومركز الإشعارات": [
       "التحسين: توافق ثيمات الجهات الخارجية مع مركز الإشعارات",
@@ -334,15 +665,24 @@
       "الإصلاح: مشكلة عدم ظهور الرسوم المتحركة للمنظف بشكل صحيح",
       "الإصلاح: مشكلة عدم إمكانية سحب مركز الإشعارات لإسفل عند قفل الشاشة",
       "الإصلاح: مشكلة عدم ظهور عناصر تحكم مشغل الموسيقى في مركز الإشعارات",
-      "الإصلاح: مشكلة عدم عرض الإشعارات بشكل صحيح عند استخدام ميزة ^رفع الجهاز لإيقاظه^",
+      "الإصلاح: مشكلة عدم عرض الإشعارات بشكل صحيح عند استخدام ميزة \"رفع الجهاز لإيقاظه\"",
+      "الإصلاح: مشكلة عدم عرض الأزرار بشكل صحيح في الإشعارات عند تشغيل الوضع الداكن",
+      "التحسين: توافق ثيمات الجهات الخارجية مع مركز الإشعارات",
+      "التحسين: زيادة توافق الوضع الداكن مع الإشعارات",
+      "الإصلاح: مشكلة عدم عرض الإشعارات عند استخدام قفل التطبيقات",
+      "الإصلاح: مشكلة عدم ظهور الرسوم المتحركة للمنظف بشكل صحيح",
+      "الإصلاح: مشكلة عدم إمكانية سحب مركز الإشعارات لإسفل عند قفل الشاشة",
+      "الإصلاح: مشكلة عدم ظهور عناصر تحكم مشغل الموسيقى في مركز الإشعارات",
+      "الإصلاح: مشكلة عدم عرض الإشعارات بشكل صحيح عند استخدام ميزة \"رفع الجهاز لإيقاظه\"",
       "الإصلاح: مشكلة عدم عرض الأزرار بشكل صحيح في الإشعارات عند تشغيل الوضع الداكن"
     ]
   },
   "logs_in": {
-    "सिस्टम": [
-      "Android सुरक्षा पैच को सितंबर 2021 से अपडेट किया गया. सिस्टम की सुरक्षा बढ़ा दी गई है."
-    ],
     "लॉक स्क्रीन": [
+      "नया फिंगरप्रिंट के नए विकल्प",
+      "ठीक करें चेहरा अनलॉक और फ़िंगरप्रिंट अनलॉक का एक साथ उपयोग करने से कुछ मामलों में क्रैश हो रहा था",
+      "नया फिंगरप्रिंट के नए विकल्प",
+      "ठीक करें चेहरा अनलॉक और फ़िंगरप्रिंट अनलॉक का एक साथ उपयोग करने से कुछ मामलों में क्रैश हो रहा था",
       "नया फिंगरप्रिंट के नए विकल्प",
       "ठीक करें चेहरा अनलॉक और फ़िंगरप्रिंट अनलॉक का एक साथ उपयोग करने से कुछ मामलों में क्रैश हो रहा था"
     ],
@@ -352,47 +692,108 @@
       "ठीक करें ऐप्प लॉक का उपयोग किए जाने पर सूचनाएं सही ढंग से नहीं दिख रहीं थीं",
       "ठीक करें क्लीनर एनिमेशन सही ढंग से नहीं दिख रहे थे",
       "ठीक करें कुछ मामलों में सूचना शेड नहीं खुल रहा था",
+      "ठीक करें दूसरे स्थान का इस्तेमाल किए जाने पर फ़्लोटिंग सूचनाएं फ़्लैश हो रही थी",
       "ठीक करें सूचना शेड में खिलाड़ी के नियंत्रण हमेशा नहीं दिखाई दे रहे थे",
-      "ठीक करें ^जगाने के लिए उठाएं^ का उपयोग किए जाने पर सूचनाएं सही ढंग से नहीं दिख रहीं थीं",
+      "ठीक करें सूचना बैज हमेशा दिखाई नहीं देते थे",
+      "ठीक करें सूचनाएं आने और तृतीय पक्ष के थीम्स का उपयोग किए जाने पर बैकग्राउंड ठीक से नहीं दिख रहे थे",
+      "ठीक करें \"जगाने के लिए उठाएं\" का उपयोग किए जाने पर सूचनाएं सही ढंग से नहीं दिख रहीं थीं",
+      "ठीक करें डार्क मोड चालू होने पर सूचनाओं पर बटन हमेशा सही ढंग से नहीं दिखाई दे रहे थे",
+      "ऑप्टिमाइज़ेशन सूचना शेड के लिए तृतीय पक्ष थीम संगतता",
+      "ऑप्टिमाइज़ेशन सूचनाओं के लिए डार्क मोड एडजस्टमेंट",
+      "ठीक करें ऐप्प लॉक का उपयोग किए जाने पर सूचनाएं सही ढंग से नहीं दिख रहीं थीं",
+      "ठीक करें क्लीनर एनिमेशन सही ढंग से नहीं दिख रहे थे",
+      "ठीक करें कुछ मामलों में सूचना शेड नहीं खुल रहा था",
+      "ठीक करें सूचना शेड में खिलाड़ी के नियंत्रण हमेशा नहीं दिखाई दे रहे थे",
+      "ठीक करें \"जगाने के लिए उठाएं\" का उपयोग किए जाने पर सूचनाएं सही ढंग से नहीं दिख रहीं थीं",
+      "ठीक करें डार्क मोड चालू होने पर सूचनाओं पर बटन हमेशा सही ढंग से नहीं दिखाई दे रहे थे"
+    ],
+    "स्टेटस बार, नोटिफिकेशन शेड": [
+      "ऑप्टिमाइज़ेशन सूचना शेड के लिए तृतीय पक्ष थीम संगतता",
+      "ऑप्टिमाइज़ेशन सूचनाओं के लिए डार्क मोड एडजस्टमेंट",
+      "ठीक करें ऐप्प लॉक का उपयोग किए जाने पर सूचनाएं सही ढंग से नहीं दिख रहीं थीं",
+      "ठीक करें क्लीनर एनिमेशन सही ढंग से नहीं दिख रहे थे",
+      "ठीक करें कुछ मामलों में सूचना शेड नहीं खुल रहा था",
+      "ठीक करें सूचना शेड में खिलाड़ी के नियंत्रण हमेशा नहीं दिखाई दे रहे थे",
+      "ठीक करें \"जगाने के लिए उठाएं\" का उपयोग किए जाने पर सूचनाएं सही ढंग से नहीं दिख रहीं थीं",
       "ठीक करें डार्क मोड चालू होने पर सूचनाओं पर बटन हमेशा सही ढंग से नहीं दिखाई दे रहे थे"
     ]
   },
   "logs_ug": {
-    "System": [
-      "Updated Android Security Patch to September 2021. Increased system security."
-    ],
     "Lock screen": [
+      "New: New fingerprint options",
+      "Fix: Using Face unlock and Fingerprint unlock simultaneously led to crashes in some cases",
+      "New: New fingerprint options",
+      "Fix: Using Face unlock and Fingerprint unlock simultaneously led to crashes in some cases",
       "New: New fingerprint options",
       "Fix: Using Face unlock and Fingerprint unlock simultaneously led to crashes in some cases"
     ],
     "Status bar, Notification shade": [
       "Optimization: Third party theme compatibility for Notification shade",
       "Optimization: Dark mode adjustments for notifications",
-      "Fix: Notifications weren^t displayed correctly when App lock was used",
-      "Fix: Cleaner animations weren^t displayed correctly",
-      "Fix: Notification shade couldn^t be opened in some cases",
-      "Fix: Player controls weren^t always displayed in the Notification shade",
-      "Fix: Notifications weren^t always displayed correctly when ^Raise to wake^ was used",
-      "Fix: Buttons weren^t always displayed correctly on the notifications when Dark mode was on"
+      "Fix: Notifications weren't displayed correctly when App lock was used",
+      "Fix: Cleaner animations weren't displayed correctly",
+      "Fix: Notification shade couldn't be opened in some cases",
+      "Fix: Floating notifications flashed when Second space was used",
+      "Fix: Player controls weren't always displayed in the Notification shade",
+      "Fix: Notification badges didn't always appear",
+      "Fix: Backgrounds weren't displayed correctly when notifications arrived and third party themes were used",
+      "Fix: Notifications weren't always displayed correctly when \"Raise to wake\" was used",
+      "Fix: Buttons weren't always displayed correctly on the notifications when Dark mode was on",
+      "Optimization: Third party theme compatibility for Notification shade",
+      "Optimization: Dark mode adjustments for notifications",
+      "Fix: Notifications weren't displayed correctly when App lock was used",
+      "Fix: Cleaner animations weren't displayed correctly",
+      "Fix: Notification shade couldn't be opened in some cases",
+      "Fix: Player controls weren't always displayed in the Notification shade",
+      "Fix: Notifications weren't always displayed correctly when \"Raise to wake\" was used",
+      "Fix: Buttons weren't always displayed correctly on the notifications when Dark mode was on",
+      "Optimization: Third party theme compatibility for Notification shade",
+      "Optimization: Dark mode adjustments for notifications",
+      "Fix: Notifications weren't displayed correctly when App lock was used",
+      "Fix: Cleaner animations weren't displayed correctly",
+      "Fix: Notification shade couldn't be opened in some cases",
+      "Fix: Player controls weren't always displayed in the Notification shade",
+      "Fix: Notifications weren't always displayed correctly when \"Raise to wake\" was used",
+      "Fix: Buttons weren't always displayed correctly on the notifications when Dark mode was on"
     ]
   },
   "logs_bo": {
-    "System": [
-      "Updated Android Security Patch to September 2021. Increased system security."
-    ],
     "Lock screen": [
+      "New: New fingerprint options",
+      "Fix: Using Face unlock and Fingerprint unlock simultaneously led to crashes in some cases",
+      "New: New fingerprint options",
+      "Fix: Using Face unlock and Fingerprint unlock simultaneously led to crashes in some cases",
       "New: New fingerprint options",
       "Fix: Using Face unlock and Fingerprint unlock simultaneously led to crashes in some cases"
     ],
     "Status bar, Notification shade": [
       "Optimization: Third party theme compatibility for Notification shade",
       "Optimization: Dark mode adjustments for notifications",
-      "Fix: Notifications weren^t displayed correctly when App lock was used",
-      "Fix: Cleaner animations weren^t displayed correctly",
-      "Fix: Notification shade couldn^t be opened in some cases",
-      "Fix: Player controls weren^t always displayed in the Notification shade",
-      "Fix: Notifications weren^t always displayed correctly when ^Raise to wake^ was used",
-      "Fix: Buttons weren^t always displayed correctly on the notifications when Dark mode was on"
+      "Fix: Notifications weren't displayed correctly when App lock was used",
+      "Fix: Cleaner animations weren't displayed correctly",
+      "Fix: Notification shade couldn't be opened in some cases",
+      "Fix: Floating notifications flashed when Second space was used",
+      "Fix: Player controls weren't always displayed in the Notification shade",
+      "Fix: Notification badges didn't always appear",
+      "Fix: Backgrounds weren't displayed correctly when notifications arrived and third party themes were used",
+      "Fix: Notifications weren't always displayed correctly when \"Raise to wake\" was used",
+      "Fix: Buttons weren't always displayed correctly on the notifications when Dark mode was on",
+      "Optimization: Third party theme compatibility for Notification shade",
+      "Optimization: Dark mode adjustments for notifications",
+      "Fix: Notifications weren't displayed correctly when App lock was used",
+      "Fix: Cleaner animations weren't displayed correctly",
+      "Fix: Notification shade couldn't be opened in some cases",
+      "Fix: Player controls weren't always displayed in the Notification shade",
+      "Fix: Notifications weren't always displayed correctly when \"Raise to wake\" was used",
+      "Fix: Buttons weren't always displayed correctly on the notifications when Dark mode was on",
+      "Optimization: Third party theme compatibility for Notification shade",
+      "Optimization: Dark mode adjustments for notifications",
+      "Fix: Notifications weren't displayed correctly when App lock was used",
+      "Fix: Cleaner animations weren't displayed correctly",
+      "Fix: Notification shade couldn't be opened in some cases",
+      "Fix: Player controls weren't always displayed in the Notification shade",
+      "Fix: Notifications weren't always displayed correctly when \"Raise to wake\" was used",
+      "Fix: Buttons weren't always displayed correctly on the notifications when Dark mode was on"
     ]
   }
 }

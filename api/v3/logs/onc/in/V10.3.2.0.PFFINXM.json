@@ -1,15 +1,43 @@
 {
   "logs_zh": {
     "相机": [
+      "修复 录像下退出重新进入必现相机闪退",
       "修复 录像下退出重新进入必现相机闪退"
+    ],
+    "系统": [
+      "优化 更新谷歌安全补丁（2019#4），提升系统安全性"
+    ],
+    "电话": [
+      "修复 来电悬浮条和通话绿条同时存在情况",
+      "修复 挂断电话慢问题"
+    ],
+    "锁屏、状态栏、通知栏": [
+      "新增 锁屏页面支持禁止下拉通知栏",
+      "新增 人脸解锁成功后停留在屏幕选项",
+      "优化 人脸解锁资料录制过快的问题",
+      "优化 人脸解锁成功率",
+      "修复 横向萤幕情况下低电量通知不悬浮显示",
+      "修复 通话时间气泡与通知图标重叠的问题",
+      "修复 人脸解锁提示未即时消失"
     ]
   },
   "logs_en": {
     "Camera": [
       "Fix: Camera force closed when the app was closed and opened again in the Video mode"
+    ],
+    "System": [
+      "Optimization: Updated Android Security Patch to April 2019. Increased system security."
+    ],
+    "Phone": [
+      "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
+      "Fix: Ending calls took longer time than expected"
     ]
   },
   "logs_zh_tw": {
+    "相機": [
+      "修復 錄像下退出重新進入必現相機閃退",
+      "修復 錄像下退出重新進入必現相機閃退"
+    ],
     "系統": [
       "優化 更新Android安全性修補程式等級(2019#4)，提升系統安全性"
     ],
@@ -25,54 +53,57 @@
       "修復 橫向螢幕情況下低電量通知不懸浮顯示",
       "修復 通話時間氣泡與通知圖示重疊",
       "修復 人臉解鎖提示未即時消失"
-    ],
-    "相機": [
-      "修復 錄像下退出重新進入必現相機閃退"
     ]
   },
   "logs_ja": {
-    "System": [
-      "Optimization: Updated Android Security Patch to April 2019. Increased system security."
+    "カメラ": [
+      "修正: ビデオモードで終了して再度開くとカメラが強制終了する問題",
+      "動画撮影中に終了して再度開くと必ずカメラがクラッシュする問題を修正"
     ],
-    "Phone": [
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Ending calls took longer time than expected"
+    "システム": [
+      "最適化: Android セキュリティパッチを 2019 年 4 月に更新しました。システムの安全性が向上しました。"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "New: You can stay on the Lock screen after using Face unlock",
-      "Optimization: Face data was recorded too fast",
-      "Optimization: Face unlock efficiency",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Face unlock prompts didn^t disappear on time"
+    "電話": [
+      "修正: 着信のフローティングバーと通話の緑色バーが同時に表示される問題。",
+      "修正: 通話終了に想定より時間がかかる問題"
     ],
-    "Camera": [
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
+    "ロック画面、ステータスバー、通知シェード": [
+      "新規: ロック画面で通知シェードを下にスワイプして開くことを禁止できるようになりました",
+      "新規: 顔認証によるロック解除に成功した後、ロック画面に留まるオプション",
+      "顔認証データの登録が速すぎる問題を最適化",
+      "最適化：顔認証の成功率",
+      "修正: 横向きモードで低バッテリー警告が表示されない問題を修正",
+      "修正: 通話時間のバブルが通知アイコンと重なる問題",
+      "顔認証のプロンプトがすぐに消えない問題を修正"
     ]
   },
   "logs_ko": {
-    "System": [
-      "Optimization: Updated Android Security Patch to April 2019. Increased system security."
+    "카메라": [
+      "수정: 동영상 모드에서 앱을 종료했다가 다시 열면 카메라가 강제 종료되는 문제",
+      "동영상 촬영 중 종료 후 다시 진입하면 항상 카메라가 강제 종료되는 문제 수정"
     ],
-    "Phone": [
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Ending calls took longer time than expected"
+    "시스템": [
+      "최적화: Android 보안 패치를 2019년 4월로 업데이트했습니다. 시스템 보안이 향상되었습니다."
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "New: You can stay on the Lock screen after using Face unlock",
-      "Optimization: Face data was recorded too fast",
-      "Optimization: Face unlock efficiency",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Face unlock prompts didn^t disappear on time"
+    "전화": [
+      "수정: 수신 전화 플로팅 바와 통화 녹색 바가 동시에 표시되는 문제.",
+      "수정: 통화 종료가 예상보다 오래 걸리는 문제"
     ],
-    "Camera": [
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
+    "잠금화면, 상태 바, 알림 바": [
+      "새 기능: 잠금 화면에서 알림 패널을 아래로 내려 여는 것을 금지할 수 있습니다",
+      "새 기능: 얼굴 잠금 해제 성공 후 잠금 화면에 유지되는 옵션",
+      "얼굴 잠금 해제 데이터 기록이 너무 빠른 문제 최적화",
+      "얼굴 잠금 해제 성공률 최적화",
+      "수정: 가로 모드에서 배터리 부족 경고가 표시되지 않는 문제 수정",
+      "수정: 통화 시간 버블이 알림 아이콘과 겹치는 문제",
+      "얼굴 잠금 해제 안내가 즉시 사라지지 않는 문제를 수정"
     ]
   },
   "logs_ru": {
+    "Камера": [
+      "Исправлено: Некорректное завершение работы приложения Камера в режиме видеосъемки при закрытии приложения и его повторном открытии",
+      "Исправлено: Некорректное завершение работы приложения Камера в режиме видеосъемки при закрытии приложения и его повторном открытии"
+    ],
     "Система": [
       "Оптимизация: Обновление системы безопасности Android (апреля 2019 года). Улучшена безопасность системы."
     ],
@@ -88,96 +119,101 @@
       "Исправлено: Предупреждение о низком уровне заряда аккумулятора не отображалось в ландшафтном режиме",
       "Исправлено: Время продолжительности вызова перекрывалось значками уведомлений",
       "Исправлено: Подсказки во время разблокировки по лицу не исчезали вовремя"
-    ],
-    "Камера": [
-      "Исправлено: Некорректное завершение работы приложения Камера в режиме видеосъемки при закрытии приложения и его повторном открытии"
     ]
   },
   "logs_uk": {
-    "System": [
-      "Optimization: Updated Android Security Patch to April 2019. Increased system security."
+    "Камера": [
+      "Виправлено: Камера аварійно закривається після виходу та повторного входу в режимі відео",
+      "Виправлено збій камери, який щоразу виникав під час виходу та повторного входу в режим відеозапису"
     ],
-    "Phone": [
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Ending calls took longer time than expected"
+    "Система": [
+      "Оптимізація: оновлено патч безпеки Google (2019#4), підвищено безпеку системи."
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "New: You can stay on the Lock screen after using Face unlock",
-      "Optimization: Face data was recorded too fast",
-      "Optimization: Face unlock efficiency",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Face unlock prompts didn^t disappear on time"
+    "Телефон": [
+      "Виправлено: плаваюча панель вхідного виклику та зелена смуга виклику відображалися одночасно.",
+      "Виправлено: завершення викликів тривало довше, ніж очікувалося"
     ],
-    "Camera": [
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
+    "Екран блокування, рядок стану, панель сповіщень": [
+      "Нове: додано підтримку заборони відкриття панелі сповіщень на екрані блокування",
+      "Нове: опція залишатися на екрані блокування після успішного розблокування обличчям",
+      "Оптимізовано проблему занадто швидкого запису даних розблокування обличчям",
+      "Оптимізація успішності розблокування за обличчям",
+      "Виправлення: Попередження про низький заряд батареї не відображалося в альбомному режимі",
+      "Виправлено: бульбашка тривалості виклику перекривалася з іконками сповіщень",
+      "Виправлено проблему, коли підказка розблокування обличчям не зникала одразу"
     ]
   },
   "logs_pl": {
+    "Aparat": [
+      "Naprawiono: Aparat zamyka się awaryjnie przy wyjściu i ponownym wejściu w tryb wideo",
+      "Naprawiono awarię aparatu występującą za każdym razem przy wyjściu i ponownym wejściu w tryb nagrywania wideo"
+    ],
     "System": [
-      "Optimization: Updated Android Security Patch to April 2019. Increased system security."
+      "Optymalizacja: Zaktualizowano poprawkę zabezpieczeń Androida do kwietnia 2019. Zwiększono bezpieczeństwo systemu."
     ],
-    "Phone": [
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Ending calls took longer time than expected"
+    "Telefon": [
+      "Poprawka: pływający pasek połączenia przychodzącego i zielony pasek połączenia wyświetlały się jednocześnie.",
+      "Naprawiono: Zakończenie połączeń trwało dłużej niż oczekiwano"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "New: You can stay on the Lock screen after using Face unlock",
-      "Optimization: Face data was recorded too fast",
-      "Optimization: Face unlock efficiency",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Face unlock prompts didn^t disappear on time"
-    ],
-    "Camera": [
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
+    "Ekran blokady, pasek powiadomień,panel powiadomień": [
+      "Nowość: można teraz zablokować otwieranie panelu powiadomień na ekranie blokady",
+      "Nowość: opcja pozostania na ekranie blokady po pomyślnym odblokowaniu twarzą",
+      "Zoptymalizowano problem zbyt szybkiego rejestrowania danych odblokowywania twarzą",
+      "Optymalizacja skuteczności odblokowywania twarzą",
+      "Poprawka: Ostrzeżenie o niskim poziomie baterii nie wyświetlało się w trybie poziomym",
+      "Naprawiono: bąbelek czasu połączenia nakładał się na ikony powiadomień",
+      "Naprawiono problem, w którym monit odblokowywania twarzą nie znikał natychmiast"
     ]
   },
   "logs_de": {
+    "Kamera": [
+      "Behoben: Kamera stürzt ab, wenn man im Video-Modus die App verlässt und erneut öffnet",
+      "Behoben: Kamera-Absturz beim Verlassen und erneuten Öffnen im Video-Modus"
+    ],
     "System": [
-      "Optimization: Updated Android Security Patch to April 2019. Increased system security."
+      "Optimierung: Android-Sicherheitspatch auf April 2019 aktualisiert. Systemsicherheit erhöht."
     ],
-    "Phone": [
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Ending calls took longer time than expected"
+    "Telefon": [
+      "Behebung: Die schwebende Leiste für eingehende Anrufe und der grüne Anrufbalken wurden gleichzeitig angezeigt.",
+      "Behoben: Anrufe beenden dauerte länger als erwartet"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "New: You can stay on the Lock screen after using Face unlock",
-      "Optimization: Face data was recorded too fast",
-      "Optimization: Face unlock efficiency",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Face unlock prompts didn^t disappear on time"
-    ],
-    "Camera": [
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
+      "Neu: Öffnen der Benachrichtigungsleiste auf dem Sperrbildschirm kann jetzt gesperrt werden",
+      "Neu: Option, nach erfolgreicher Gesichtserkennung auf dem Sperrbildschirm zu bleiben",
+      "Problem mit zu schneller Aufzeichnung der Face-Unlock-Daten behoben",
+      "Optimierung: Gesichtserkennung erfolgreicher",
+      "Behebung: Warnung bei niedrigem Akkustand wurde im Querformat nicht angezeigt",
+      "Behoben: Überlappung zwischen Anrufzeit-Blase und Benachrichtigungssymbolen",
+      "Behoben: Hinweis zur Gesichtsentriegelung verschwindet nicht sofort"
     ]
   },
   "logs_fr": {
-    "System": [
-      "Optimization: Updated Android Security Patch to April 2019. Increased system security."
+    "Appareil photo": [
+      "Correction : l'appareil photo plante lorsqu'on quitte puis rouvre l'app en mode Vidéo",
+      "Correction du plantage de l'appareil photo à chaque sortie puis réouverture en mode vidéo"
     ],
-    "Phone": [
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Ending calls took longer time than expected"
+    "Système": [
+      "Optimisation : Correctif de sécurité Android mis à jour vers avril 2019. Sécurité du système améliorée."
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "New: You can stay on the Lock screen after using Face unlock",
-      "Optimization: Face data was recorded too fast",
-      "Optimization: Face unlock efficiency",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Face unlock prompts didn^t disappear on time"
+    "Téléphone": [
+      "Correction : la barre flottante d’appel entrant et la barre verte d’appel s’affichaient en même temps.",
+      "Correction : la fin des appels prenait plus de temps que prévu"
     ],
-    "Camera": [
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
+    "Écran de verrouillage, Barre d'état, Panneau de notification": [
+      "Nouveau : il est désormais possible d’interdire l’ouverture du panneau de notifications sur l’écran de verrouillage",
+      "Nouveau : option pour rester sur l’écran de verrouillage après un déverrouillage facial réussi",
+      "Correction du problème d’enregistrement trop rapide des données de déverrouillage facial",
+      "Optimisation du taux de réussite du déverrouillage facial",
+      "Correction : L'avertissement de batterie faible ne s'affichait pas en mode paysage",
+      "Corrigé : chevauchement entre la bulle de durée d’appel et les icônes de notification",
+      "Correction : l’invite de déverrouillage facial ne disparaît pas immédiatement"
     ]
   },
   "logs_it": {
+    "Fotocamera": [
+      "Risolvi: Chiusura forzata della Fotocamera quando la app era chiusa e aperta di nuovo in modalità Video",
+      "Risolto: Chiusura forzata della Fotocamera quando la app era chiusa e aperta di nuovo in modalità Video"
+    ],
     "Sistema": [
       "Ottimizzazione: Aggiornamento della patch di sicurezza Android a Abril 2019. Maggiore sicurezza del sistema."
     ],
@@ -186,19 +222,20 @@
       "Risolto: Terminare le chiamate richiedeva più tempo del previsto"
     ],
     "Schermata di blocco, barra di stato, area delle notifiche": [
-      "Nuovo: È ora possibile limitare l^apertura dell^area delle notifiche sulla schermata di blocco",
+      "Nuovo: È ora possibile limitare l'apertura dell'area delle notifiche sulla schermata di blocco",
       "Nuovo: È possibile rimanere sulla schermata di blocco dopo aver usato il Riconoscimento facciale",
       "Ottimizzazione: I dati del volto venivano registrati troppo in fretta",
       "Ottimizzazione: Efficienza del Riconoscimento facciale",
       "Risolto: Gli avvisi di batteria scarica non apparivano in modalità Orizzontale",
-      "Risolto: L^icona della durata di chiamata si sovrapponeva alle icone di notifica",
+      "Risolto: L'icona della durata di chiamata si sovrapponeva alle icone di notifica",
       "Risolto: Gli avvisi di Riconoscimento facciale non apparivano in tempo"
-    ],
-    "Fotocamera": [
-      "Risolto: Chiusura forzata della Fotocamera quando la app era chiusa e aperta di nuovo in modalità Video"
     ]
   },
   "logs_es": {
+    "Cámara": [
+      "Reparar: La Cámara se cerró de forma forzosa cuando la aplicación fue cerrada y se volvió a abrir en el Modo vídeo",
+      "Reparado: La Cámara se cerró de forma forzosa cuando la aplicación fue cerrada y se volvió a abrir en el Modo vídeo"
+    ],
     "Sistema": [
       "Optimización: Parche de seguridad de Android actualizado a Abril de 2019. Seguridad del sistema incrementada."
     ],
@@ -214,33 +251,35 @@
       "Reparado: El aviso de batería baja no apareció en el Modo paisaje",
       "Reparado: La burbuja de la duración de llamada se superpuso con los iconos de notificaciones",
       "Reparado: Los avisos de Desbloqueo facial no desaparecieron a tiempo"
-    ],
-    "Cámara": [
-      "Reparado: La Cámara se cerró de forma forzosa cuando la aplicación fue cerrada y se volvió a abrir en el Modo vídeo"
     ]
   },
   "logs_pt": {
-    "System": [
-      "Optimization: Updated Android Security Patch to April 2019. Increased system security."
+    "Câmera": [
+      "Correção: a câmera fecha forçadamente ao sair e reabrir no modo Vídeo",
+      "Corrigida falha da câmera que sempre ocorria ao sair e voltar ao modo de gravação de vídeo"
     ],
-    "Phone": [
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Ending calls took longer time than expected"
+    "Sistema": [
+      "Otimização: Patch de segurança do Android atualizado para abril de 2019. Segurança do sistema aprimorada."
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "New: You can stay on the Lock screen after using Face unlock",
-      "Optimization: Face data was recorded too fast",
-      "Optimization: Face unlock efficiency",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Face unlock prompts didn^t disappear on time"
+    "Telefone": [
+      "Correção: a barra flutuante de chamada recebida e a barra verde de chamada apareciam ao mesmo tempo.",
+      "Correção: encerrar chamadas demorava mais do que o esperado"
     ],
-    "Camera": [
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
+    "Tela de bloqueio, Barra de status e Área de notificações": [
+      "Novo: agora é possível impedir a abertura do painel de notificações na tela de bloqueio",
+      "Novo: opção de permanecer na tela de bloqueio após o desbloqueio facial bem-sucedido",
+      "Otimizado o problema de registro muito rápido dos dados de desbloqueio facial",
+      "Otimizar a taxa de sucesso do desbloqueio facial",
+      "Correção: O aviso de bateria fraca não aparecia no modo paisagem",
+      "Correção: o balão de duração da chamada se sobrepunha aos ícones de notificação",
+      "Corrigido problema em que o aviso de desbloqueio facial não desaparecia imediatamente"
     ]
   },
   "logs_tr": {
+    "Kamera": [
+      "Onar: Uygulama kapatıldığında Kamera kapanmaya zorlandı ve Video modunda tekrar açıldı",
+      "Onarım: Uygulama kapatıldığında Kamera kapanmaya zorlandı ve Video modunda tekrar açıldı"
+    ],
     "Sistem": [
       "Optimizasyon: Android Güvenlik Yaması Nisan 2019 sürümüne güncellendi. Sistem güvenliği artırıldı."
     ],
@@ -256,142 +295,150 @@
       "Onarım: Manzara modunda düşük pil uyarıları gösterilmedi",
       "Onarım: Arama süresi penceresi bildirim simgeleriyle üst üste bindi",
       "Onarım: Yüz ile kilit açma pencereleri zamanında kaybolmadı"
-    ],
-    "Kamera": [
-      "Onarım: Uygulama kapatıldığında Kamera kapanmaya zorlandı ve Video modunda tekrar açıldı"
     ]
   },
   "logs_id": {
-    "System": [
-      "Optimization: Updated Android Security Patch to April 2019. Increased system security."
+    "Kamera": [
+      "Perbaikan: Kamera menutup paksa saat keluar dan masuk kembali ke mode Video",
+      "Perbaikan crash kamera yang selalu terjadi saat keluar dan masuk kembali dalam mode rekam video"
     ],
-    "Phone": [
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Ending calls took longer time than expected"
+    "Sistem": [
+      "Optimisasi: Patch keamanan Android diperbarui ke April 2019. Keamanan sistem ditingkatkan."
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "New: You can stay on the Lock screen after using Face unlock",
-      "Optimization: Face data was recorded too fast",
-      "Optimization: Face unlock efficiency",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Face unlock prompts didn^t disappear on time"
+    "Telepon": [
+      "Perbaikan: Bilah mengambang panggilan masuk dan bilah hijau panggilan muncul bersamaan.",
+      "Perbaikan: Mengakhiri panggilan membutuhkan waktu lebih lama dari yang diharapkan"
     ],
-    "Camera": [
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
+    "Layar kunci, bar status, layar notifikasi": [
+      "Baru: Dukungan untuk mencegah membuka panel notifikasi di layar kunci",
+      "Baru: opsi untuk tetap di layar kunci setelah pembukaan kunci wajah berhasil",
+      "Mengoptimalkan masalah perekaman data buka kunci wajah yang terlalu cepat",
+      "Optimalkan tingkat keberhasilan buka kunci wajah",
+      "Perbaikan: Peringatan baterai lemah tidak muncul dalam mode lanskap",
+      "Perbaikan: gelembung durasi panggilan tumpang tindih dengan ikon notifikasi",
+      "Memperbaiki masalah prompt buka kunci wajah tidak segera hilang"
     ]
   },
   "logs_vi": {
-    "System": [
-      "Optimization: Updated Android Security Patch to April 2019. Increased system security."
+    "Máy ảnh": [
+      "Sửa lỗi: Camera bị buộc dừng khi thoát và vào lại ở chế độ Quay video",
+      "Sửa lỗi camera luôn bị thoát khi thoát ra và vào lại trong chế độ quay video"
     ],
-    "Phone": [
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Ending calls took longer time than expected"
+    "Hệ thống": [
+      "Tối ưu hóa: Đã cập nhật bản vá bảo mật Google (2019#4), tăng cường bảo mật hệ thống."
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "New: You can stay on the Lock screen after using Face unlock",
-      "Optimization: Face data was recorded too fast",
-      "Optimization: Face unlock efficiency",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Face unlock prompts didn^t disappear on time"
+    "Điện thoại": [
+      "Sửa: Thanh nổi cuộc gọi đến và thanh màu xanh cuộc gọi xuất hiện cùng lúc.",
+      "Đã sửa: Việc kết thúc cuộc gọi mất nhiều thời gian hơn dự kiến"
     ],
-    "Camera": [
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Mới: Hỗ trợ chặn kéo xuống bảng thông báo trên màn hình khóa",
+      "Mới: tùy chọn ở lại màn hình khóa sau khi mở khóa bằng khuôn mặt thành công",
+      "Tối ưu hóa vấn đề ghi dữ liệu mở khóa bằng khuôn mặt quá nhanh",
+      "Tối ưu tỷ lệ mở khóa bằng khuôn mặt thành công",
+      "Sửa lỗi: Cảnh báo pin yếu không hiển thị ở chế độ ngang",
+      "Đã sửa: bong bóng thời gian gọi bị chồng lên biểu tượng thông báo",
+      "Khắc phục lỗi gợi ý mở khóa bằng khuôn mặt không biến mất ngay"
     ]
   },
   "logs_th": {
-    "System": [
-      "Optimization: Updated Android Security Patch to April 2019. Increased system security."
+    "กล้อง": [
+      "แก้ไข: กล้องหยุดทำงานเมื่อออกแล้วกลับเข้าโหมดวิดีโออีกครั้ง",
+      "แก้ไขปัญหาแอปกล้องแครชทุกครั้งเมื่อออกแล้วกลับเข้าโหมดบันทึกวิดีโอ"
     ],
-    "Phone": [
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Ending calls took longer time than expected"
+    "ระบบ": [
+      "การเพิ่มประสิทธิภาพ: อัปเดตแพตช์ความปลอดภัยของ Google (2019#4) เพื่อเพิ่มความปลอดภัยของระบบ"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "New: You can stay on the Lock screen after using Face unlock",
-      "Optimization: Face data was recorded too fast",
-      "Optimization: Face unlock efficiency",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Face unlock prompts didn^t disappear on time"
+    "โทรศัพท์": [
+      "แก้ไข: แถบลอยของการโทรเข้าและแถบสีเขียวของการโทรแสดงพร้อมกัน",
+      "แก้ไข: การวางสายใช้เวลานานกว่าที่คาดไว้"
     ],
-    "Camera": [
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
+    "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
+      "ใหม่: รองรับการห้ามเลื่อนลงเพื่อเปิดแผงการแจ้งเตือนบนหน้าจอล็อก",
+      "ใหม่: ตัวเลือกให้อยู่ในหน้าจอล็อกหลังปลดล็อกด้วยใบหน้าสำเร็จ",
+      "ปรับปรุงปัญหาการบันทึกข้อมูลปลดล็อกด้วยใบหน้าที่เร็วเกินไป",
+      "ปรับปรุงอัตราความสำเร็จในการปลดล็อกด้วยใบหน้า",
+      "แก้ไข: คำเตือนแบตเตอรี่ต่ำไม่แสดงในโหมดแนวนอน",
+      "แก้ไข: ฟองเวลาการโทรทับซ้อนกับไอคอนการแจ้งเตือน",
+      "แก้ไขปัญหาคำแนะนำการปลดล็อกด้วยใบหน้าไม่หายทันที"
     ]
   },
   "logs_ar": {
-    "System": [
-      "Optimization: Updated Android Security Patch to April 2019. Increased system security."
+    "كاميرا": [
+      "إصلاح: تعطل الكاميرا عند الخروج وإعادة الدخول في وضع الفيديو"
     ],
-    "Phone": [
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Ending calls took longer time than expected"
+    "النظام": [
+      "تحسين: تحديث تصحيح أمان Google (2019#4)، لتعزيز أمان النظام."
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "New: You can stay on the Lock screen after using Face unlock",
-      "Optimization: Face data was recorded too fast",
-      "Optimization: Face unlock efficiency",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Face unlock prompts didn^t disappear on time"
+    "هاتف": [
+      "إصلاح: ظهور شريط المكالمة العائم والشريط الأخضر للمكالمة في الوقت نفسه.",
+      "إصلاح: استغرق إنهاء المكالمات وقتًا أطول من المتوقع"
     ],
-    "Camera": [
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
+    "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
+      "جديد: دعم منع سحب لوحة الإشعارات على شاشة القفل",
+      "جديد: خيار البقاء على شاشة القفل بعد نجاح فتح القفل بالوجه",
+      "تحسين مشكلة تسجيل بيانات فتح القفل بالوجه بسرعة كبيرة",
+      "تحسين معدل نجاح فتح القفل بالوجه",
+      "إصلاح: إشعار انخفاض البطارية لم يظهر في الوضع الأفقي",
+      "إصلاح: تداخل فقاعة مدة المكالمة مع أيقونات الإشعارات",
+      "إصلاح مشكلة عدم اختفاء إشعار فتح القفل بالوجه فورًا"
+    ],
+    "الكاميرا": [
+      "إصلاح تعطل الكاميرا دائمًا عند الخروج وإعادة الدخول في وضع تسجيل الفيديو"
     ]
   },
   "logs_in": {
-    "System": [
-      "Optimization: Updated Android Security Patch to April 2019. Increased system security."
+    "कैमरा": [
+      "ठीक किया गया: वीडियो मोड में बाहर निकलकर फिर से प्रवेश करने पर कैमरा बलपूर्वक बंद हो जाता था",
+      "वीडियो रिकॉर्डिंग में बाहर निकलकर फिर से प्रवेश करने पर हमेशा होने वाले कैमरा क्रैश को ठीक किया गया"
     ],
-    "Phone": [
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Ending calls took longer time than expected"
+    "सिस्टम": [
+      "अनुकूलन: Google सुरक्षा पैच (2019#4) अपडेट किया गया, सिस्टम सुरक्षा बढ़ाई गई।"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "New: You can stay on the Lock screen after using Face unlock",
-      "Optimization: Face data was recorded too fast",
-      "Optimization: Face unlock efficiency",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Face unlock prompts didn^t disappear on time"
+    "फ़ोन": [
+      "फ़िक्स: इनकमिंग कॉल फ़्लोटिंग बार और कॉल ग्रीन बार का एक ही समय पर दिखना।",
+      "ठीक किया गया: कॉल समाप्त करने में अपेक्षा से अधिक समय लगा"
     ],
-    "Camera": [
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
+      "नया: लॉक स्क्रीन पर नोटिफ़िकेशन शेड को नीचे खींचकर खोलने से रोकें",
+      "नया: चेहरा अनलॉक सफल होने के बाद लॉक स्क्रीन पर रहने का विकल्प",
+      "फेस अनलॉक डेटा रिकॉर्डिंग के बहुत तेज़ होने की समस्या को ठीक किया",
+      "फेस अनलॉक सफलता दर को अनुकूलित करें",
+      "ठीक करें: लैंडस्केप मोड में कम बैटरी चेतावनी प्रदर्शित नहीं हुई",
+      "ठीक किया गया: कॉल अवधि बबल नोटिफ़िकेशन आइकन के साथ ओवरलैप हो रहा था",
+      "फेस अनलॉक संकेत तुरंत गायब न होने की समस्या ठीक की गई"
     ]
   },
   "logs_ug": {
-    "System": [
+    "كامېرا": [
+      "Fix: Camera force closed when the app was closed and opened again in the Video mode",
+      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
+    ],
+    "سىستېما": [
       "Optimization: Updated Android Security Patch to April 2019. Increased system security."
     ],
-    "Phone": [
+    "تېلېفون": [
       "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
       "Fix: Ending calls took longer time than expected"
     ],
     "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "New: You can stay on the Lock screen after using Face unlock",
+      "يېڭى: قۇلۇپ ئېكرانى بېتىدە ئۇقتۇرۇش تاختىسىنى تۆۋەن تارتىشنى چەكلەشنى قوللايدۇ",
+      "يېڭى: يۈز ئارقىلىق قۇلۇپ ئېچىش ئۇتۇقلۇق بولغاندىن كېيىن قۇلۇپ ئېكرانىدا تۇرۇش تاللانمىسى قوشۇلدى",
       "Optimization: Face data was recorded too fast",
-      "Optimization: Face unlock efficiency",
-      "Fix: Low battery warning didn^t appear in landscape mode",
+      "يۈز ئارقىلىق قۇلۇپ ئېچىش مۇۋەپپەقىيەت نىسبىتىنى ياخشىلاش",
+      "Fix: Low battery warning didn't appear in landscape mode",
       "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Face unlock prompts didn^t disappear on time"
-    ],
-    "Camera": [
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
+      "يۈز ئارقىلىق قۇلۇپ ئېچىش ئەسكەرتىشى دەرھال يوقالمىغان مەسىلىنى تۈزىتىش"
     ]
   },
   "logs_bo": {
-    "System": [
+    "པར་ཆས": [
+      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
+    ],
+    "རིམ་ལུགས": [
       "Optimization: Updated Android Security Patch to April 2019. Increased system security."
     ],
-    "Phone": [
+    "ཁ་པར": [
       "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
       "Fix: Ending calls took longer time than expected"
     ],
@@ -400,9 +447,9 @@
       "New: You can stay on the Lock screen after using Face unlock",
       "Optimization: Face data was recorded too fast",
       "Optimization: Face unlock efficiency",
-      "Fix: Low battery warning didn^t appear in landscape mode",
+      "Fix: Low battery warning didn't appear in landscape mode",
       "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Face unlock prompts didn^t disappear on time"
+      "Fix: Face unlock prompts didn't disappear on time"
     ],
     "Camera": [
       "Fix: Camera force closed when the app was closed and opened again in the Video mode"

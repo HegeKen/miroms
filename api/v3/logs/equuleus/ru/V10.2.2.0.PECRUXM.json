@@ -1,21 +1,57 @@
 {
   "logs_zh": {
     "录音机": [
+      "修复 暂停录音后无法及时更新到状态栏的问题",
       "修复 暂停录音后无法及时更新到状态栏的问题"
+    ],
+    "系统": [
+      "修复 更新Android安全补丁",
+      "系统Android版本升级为Android 9.0"
+    ],
+    "电话": [
+      "修复 视频通话下功能区“切换摄像头”可能显示不完整的问题",
+      "修复 电话会议时无法发送短信"
+    ],
+    "锁屏、状态栏、通知栏": [
+      "修复 返回通话和时间重叠",
+      "修复 通知无法关闭悬浮",
+      "修复 通话锁屏界面无法指纹解锁",
+      "修复 耳机图标偶尔不显示的问题",
+      "修复 长截屏无法下拉到底"
     ]
   },
   "logs_en": {
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused",
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
+    ],
+    "System": [
+      "Fix: Updated Android Security Patch",
+      "Android 9.0 update"
+    ],
+    "Phone": [
+      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
+      "Fix: Couldn't sent SMS during conference calls"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Fix: The button that returns you to an ongoing call overlapped with time",
+      "Fix: Couldn't restrict floating notifications",
+      "Fix: Couldn't use fingerprint to unlock the device when it was locked during a call",
+      "Fix: The earphone icon sometimes disappeared",
+      "Fix: Scrolling screenshots didn't always work properly"
     ]
   },
   "logs_zh_tw": {
+    "錄音機": [
+      "修復 暫停錄音後無法即時更新到狀態欄的問題",
+      "修復 暫停錄音後無法即時更新到狀態欄的問題"
+    ],
     "系統": [
       "修復 更新Android安全性修補程式等級",
       "系統Android版本更新為Android 9.0"
     ],
     "電話": [
-      "修復 視訊電話下功能區^切換鏡頭^可能顯示不完整的問題",
+      "修復 視訊電話下功能區'切換鏡頭'可能顯示不完整的問題",
       "修復 電話會議時無法發送簡訊"
     ],
     "解鎖畫面、狀態欄、通知欄": [
@@ -24,52 +60,55 @@
       "修復 通話螢幕鎖定介面無法指紋解鎖",
       "修復 耳機圖示偶爾不顯示的問題",
       "修復 長截圖無法下拉到底"
-    ],
-    "錄音機": [
-      "修復 暫停錄音後無法即時更新到狀態欄的問題"
     ]
   },
   "logs_ja": {
-    "System": [
-      "Fix: Updated Android Security Patch",
-      "Android 9.0 update"
+    "レコーダー": [
+      "修正: 録音を一時停止した際、通知シェードの録音状態が更新されない問題",
+      "修正: 録音を一時停止した際、通知シェードの録音状態が更新されない問題"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "システム": [
+      "修正: Androidセキュリティパッチを更新",
+      "Android 9.0 へのアップデート"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly"
+    "電話": [
+      "ビデオ通話時の機能エリアの「カメラ切り替え」が不完全に表示される問題を修正しました。",
+      "修正: 電話会議中に SMS を送信できない問題"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "ロック画面、ステータスバー、通知バー": [
+      "修正: 通話中画面に戻るボタンが時刻と重なる問題。",
+      "修正: フローティング通知をオフにできない問題",
+      "修正: 通話中にロックされた際、指紋認証でデバイスのロックを解除できない問題",
+      "修正: イヤホンアイコンが時々表示されない問題",
+      "長いスクリーンショットで最後までスクロールできない問題を修正"
     ]
   },
   "logs_ko": {
-    "System": [
-      "Fix: Updated Android Security Patch",
-      "Android 9.0 update"
+    "녹음기": [
+      "수정: 녹음을 일시중지했을 때 알림 창의 녹음 상태가 업데이트되지 않던 문제",
+      "수정: 녹음을 일시중지했을 때 알림 창의 녹음 상태가 업데이트되지 않던 문제"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "시스템": [
+      "수정: Android 보안 패치 업데이트",
+      "Android 9.0 업데이트"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly"
+    "전화": [
+      "화상 통화 중 기능 영역의 '카메라 전환'이 불완전하게 표시될 수 있는 문제를 수정했습니다.",
+      "수정: 전화 회의 중 SMS를 보낼 수 없는 문제"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "잠금 화면, 상태 표시줄, 알림 표시줄": [
+      "수정: 진행 중인 통화로 돌아가는 버튼이 시간과 겹치는 문제.",
+      "수정: 플로팅 알림을 끌 수 없는 문제",
+      "수정: 통화 중 잠긴 상태에서 지문으로 기기 잠금을 해제할 수 없는 문제",
+      "수정: 이어폰 아이콘이 간혹 표시되지 않는 문제",
+      "긴 스크린샷에서 끝까지 스크롤되지 않던 문제를 수정"
     ]
   },
   "logs_ru": {
+    "Диктофон": [
+      "Fix: Факт остановки записи не отображался в строке состояния вовремя",
+      "Fix: Факт остановки записи не отображался в строке состояния вовремя"
+    ],
     "Система": [
       "Fix: Обновление патча безопасности Android",
       "Обновление Android до версии 9.0"
@@ -79,314 +118,326 @@
       "Fix: Не удавалось отправить SMS во время конференц-вызова"
     ],
     "Экран блокировки, строка состояния, шторка уведомлений": [
-      "Fix: Кнопка ^Назад^ перекрывала время",
+      "Fix: Кнопка \"Назад\" перекрывала время",
       "Fix: Не удавалось ограничить всплывающие уведомления",
       "Fix: Не удавалось разблокировать устройство отпечатком пальца после блокировки во время разговора",
       "Fix: Значок наушников появлялся не всегда",
       "Fix: Длинные скриншоты работали некорректно"
-    ],
-    "Диктофон": [
-      "Fix: Факт остановки записи не отображался в строке состояния вовремя"
     ]
   },
   "logs_uk": {
-    "System": [
-      "Fix: Updated Android Security Patch",
-      "Android 9.0 update"
+    "Диктофон": [
+      "Виправлено: стан запису не оновлювався в панелі сповіщень під час паузи запису",
+      "Виправлено: стан запису не оновлювався в панелі сповіщень під час паузи запису"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Система": [
+      "Виправлення: оновлено патч безпеки Android",
+      "Оновлення до Android 9.0"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly"
+    "Телефон": [
+      "Виправлено: Кнопка «Перемкнути камеру» в області функцій під час відеовикликів могла відображатися неповністю.",
+      "Виправлено: не вдавалося надіслати SMS під час телефонних конференцій"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Екран блокування, рядок стану, рядок сповіщень": [
+      "Виправлено: кнопка повернення до поточного виклику перекривала час.",
+      "Виправлено: не вдавалося вимкнути плаваючі сповіщення",
+      "Виправлено: Неможливо було використати відбиток пальця для розблокування пристрою, коли він був заблокований під час виклику",
+      "Виправлено: Іноді не відображалася піктограма навушників",
+      "Виправлено: прокручуваний знімок екрана не прокручувався до кінця"
     ]
   },
   "logs_pl": {
+    "Rejestrator": [
+      "Poprawka: stan nagrywania nie był aktualizowany na pasku powiadomień po wstrzymaniu nagrywania",
+      "Poprawka: stan nagrywania nie był aktualizowany na pasku powiadomień po wstrzymaniu nagrywania"
+    ],
     "System": [
-      "Fix: Updated Android Security Patch",
-      "Android 9.0 update"
+      "Poprawka: zaktualizowano poprawkę bezpieczeństwa Android",
+      "Aktualizacja do Android 9.0"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Telefon": [
+      "Poprawka: Przycisk „Przełącz kamerę” w obszarze funkcji podczas rozmów wideo mógł być wyświetlany niekompletnie.",
+      "Poprawka: Nie można było wysyłać SMS-ów podczas konferencji telefonicznych"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly"
-    ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Ekran blokady, pasek stanu, pasek powiadomień": [
+      "Naprawiono: przycisk powrotu do trwającego połączenia nachodził na godzinę.",
+      "Naprawiono: nie można było wyłączyć powiadomień pływających",
+      "Poprawka: Nie można było użyć odcisku palca do odblokowania urządzenia, gdy było zablokowane podczas połączenia",
+      "Poprawka: Ikona słuchawek czasami nie była wyświetlana",
+      "Naprawiono: przewijany zrzut ekranu nie pozwalał przewinąć do końca"
     ]
   },
   "logs_de": {
+    "Rekorder": [
+      "Behoben: Der Aufnahmestatus wurde in der Benachrichtigungsleiste nicht aktualisiert, wenn eine Aufnahme pausiert wurde",
+      "Behoben: Der Aufnahmestatus wurde in der Benachrichtigungsleiste nicht aktualisiert, wenn eine Aufnahme pausiert wurde"
+    ],
     "System": [
-      "Fix: Updated Android Security Patch",
-      "Android 9.0 update"
+      "Behoben: Android-Sicherheitspatch aktualisiert",
+      "Android 9.0-Update"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Telefon": [
+      "Behebung: Die Schaltfläche „Kamera wechseln“ im Funktionsbereich bei Videoanrufen wurde möglicherweise unvollständig angezeigt.",
+      "Behoben: Während Telefonkonferenzen konnten keine SMS gesendet werden"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly"
-    ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
+      "Behoben: Die Schaltfläche zum Zurückkehren zu einem laufenden Anruf überlappte sich mit der Uhrzeit.",
+      "Behoben: Floating-Benachrichtigungen ließen sich nicht deaktivieren",
+      "Behoben: Fingerabdruck-Entsperrung bei gesperrtem Gerät während eines Anrufs nicht möglich",
+      "Behoben: Das Kopfhörer-Symbol wurde manchmal nicht angezeigt",
+      "Behoben: Scroll-Screenshot konnte nicht bis zum Ende gescrollt werden"
     ]
   },
   "logs_fr": {
-    "System": [
-      "Fix: Updated Android Security Patch",
-      "Android 9.0 update"
+    "Enregistreur": [
+      "Correction : l’état d’enregistrement n’était pas mis à jour dans la barre de notifications lors d’une pause",
+      "Correction : l’état d’enregistrement n’était pas mis à jour dans la barre de notifications lors d’une pause"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Système": [
+      "Correction : Correctif de sécurité Android mis à jour",
+      "Mise à jour vers Android 9.0"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly"
+    "Téléphone": [
+      "Correction : Le bouton « Changer de caméra » dans la zone de fonctions lors des appels vidéo pouvait s'afficher de manière incomplète.",
+      "Correction : impossible d’envoyer des SMS pendant les conférences téléphoniques"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Écran de verrouillage, barre d’état, barre de notifications": [
+      "Correction : le bouton permettant de revenir à un appel en cours chevauchait l’heure.",
+      "Correction : impossible de désactiver les notifications flottantes",
+      "Correction : Impossible d'utiliser l'empreinte digitale pour déverrouiller l'appareil lorsqu'il était verrouillé pendant un appel",
+      "Correction : L’icône des écouteurs ne s’affichait parfois pas",
+      "Correction : la capture d'écran défilante ne permettait pas d'aller jusqu'en bas"
     ]
   },
   "logs_it": {
-    "System": [
-      "Fix: Updated Android Security Patch",
-      "Android 9.0 update"
+    "Registratore": [
+      "Correzione: lo stato di registrazione non veniva aggiornato nella barra delle notifiche quando una registrazione veniva messa in pausa",
+      "Correzione: lo stato di registrazione non veniva aggiornato nella barra delle notifiche quando una registrazione veniva messa in pausa"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Sistema": [
+      "Correzione: patch di sicurezza Android aggiornata",
+      "Aggiornamento ad Android 9.0"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly"
+    "Telefono": [
+      "Correzione: il pulsante \"Cambia fotocamera\" nell'area funzioni durante le videochiamate potrebbe essere visualizzato in modo incompleto.",
+      "Correzione: impossibile inviare SMS durante le chiamate conference"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Schermata di blocco, barra di stato, barra delle notifiche": [
+      "Corretto: il pulsante per tornare a una chiamata in corso si sovrapponeva all'ora.",
+      "Corretto: impossibile disattivare le notifiche flottanti",
+      "Correzione: Impossibile utilizzare l'impronta digitale per sbloccare il dispositivo quando era bloccato durante una chiamata",
+      "Correzione: L'icona delle cuffie a volte non veniva visualizzata",
+      "Corretto: lo screenshot scorrevole non permetteva di scorrere fino in fondo"
     ]
   },
   "logs_es": {
-    "System": [
-      "Fix: Updated Android Security Patch",
-      "Android 9.0 update"
+    "Grabadora": [
+      "Corrección: El estado de grabación no se actualizaba en la barra de notificaciones al pausar una grabación",
+      "Corrección: El estado de grabación no se actualizaba en la barra de notificaciones al pausar una grabación"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Sistema": [
+      "Corrección: parche de seguridad de Android actualizado",
+      "Actualización a Android 9.0"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly"
+    "Teléfono": [
+      "Corrección: El botón «Cambiar cámara» del área de funciones durante las videollamadas podía mostrarse de forma incompleta.",
+      "Corregido: No se podía enviar SMS durante las conferencias telefónicas"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Corregido: el botón para volver a una llamada en curso se superponía con la hora.",
+      "Corregido: no se podían desactivar las notificaciones flotantes",
+      "Corrección: No se podía usar la huella digital para desbloquear el dispositivo cuando estaba bloqueado durante una llamada",
+      "Corrección: El icono de los auriculares a veces no aparecía",
+      "Corregido: la captura de pantalla desplazable no permitía bajar hasta el final"
     ]
   },
   "logs_pt": {
-    "System": [
-      "Fix: Updated Android Security Patch",
-      "Android 9.0 update"
+    "Gravador": [
+      "Correção: o estado da gravação não era atualizado na barra de notificações ao pausar uma gravação",
+      "Correção: o estado da gravação não era atualizado na barra de notificações ao pausar uma gravação"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Sistema": [
+      "Correção: patch de segurança do Android atualizado",
+      "Atualização para Android 9.0"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly"
+    "Telefone": [
+      "Correção: O botão \"Alternar câmera\" na área de funções durante chamadas de vídeo podia ser exibido de forma incompleta.",
+      "Correção: não era possível enviar SMS durante chamadas em conferência"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Tela de bloqueio, barra de status, barra de notificações": [
+      "Corrigido: o botão para voltar a uma chamada em andamento sobrepunha-se à hora.",
+      "Corrigido: não era possível desativar notificações flutuantes",
+      "Correção: Não era possível usar a impressão digital para desbloquear o dispositivo quando estava bloqueado durante uma chamada",
+      "Correção: O ícone do fone de ouvido às vezes não aparecia",
+      "Corrigido: a captura de tela rolável não permitia rolar até o fim"
     ]
   },
   "logs_tr": {
-    "System": [
-      "Fix: Updated Android Security Patch",
-      "Android 9.0 update"
+    "Kayıt Cihazı": [
+      "Düzeltme: Kayıt duraklatıldığında kayıt durumu bildirim çubuğunda güncellenmiyordu",
+      "Düzeltme: Kayıt duraklatıldığında kayıt durumu bildirim çubuğunda güncellenmiyordu"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Sistem": [
+      "Düzeltme: Android güvenlik yaması güncellendi",
+      "Android 9.0 güncellemesi"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly"
+    "Telefon": [
+      "Düzeltme: Görüntülü aramalar sırasında işlev alanındaki \"Kamerayı değiştir\" düğmesi eksik görüntülenebiliyordu.",
+      "Düzeltme: Telefon konferansları sırasında SMS gönderilemiyordu"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Düzeltme: Devam eden aramaya dönme düğmesi saatle çakışıyordu.",
+      "Düzeltme: Yüzen bildirimler kapatılamıyordu",
+      "Düzeltme: Arama sırasında kilitliyken cihazın parmak iziyle kilidinin açılamaması sorunu giderildi",
+      "Düzeltme: Kulaklık simgesi bazen görünmüyordu",
+      "Düzeltme: kaydırmalı ekran görüntüsü sona kadar kaydırılamıyordu"
     ]
   },
   "logs_id": {
-    "System": [
-      "Fix: Updated Android Security Patch",
-      "Android 9.0 update"
+    "Perekam": [
+      "Perbaikan: Status perekaman tidak diperbarui di bilah notifikasi saat perekaman dijeda",
+      "Perbaikan: Status perekaman tidak diperbarui di bilah notifikasi saat perekaman dijeda"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Sistem": [
+      "Perbaikan: Patch keamanan Android diperbarui",
+      "Pembaruan Android 9.0"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly"
+    "Telepon": [
+      "Perbaikan: Tombol “Ganti kamera” di area fungsi saat panggilan video mungkin ditampilkan tidak lengkap.",
+      "Perbaikan: Tidak dapat mengirim SMS selama panggilan konferensi"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Layar kunci, bilah status, bilah notifikasi": [
+      "Diperbaiki: tombol untuk kembali ke panggilan berlangsung tumpang tindih dengan waktu.",
+      "Perbaikan: notifikasi mengambang tidak dapat dimatikan",
+      "Perbaikan: Tidak dapat menggunakan sidik jari untuk membuka kunci perangkat saat terkunci selama panggilan",
+      "Perbaikan: Ikon earphone terkadang tidak muncul",
+      "Perbaikan: tangkapan layar bergulir tidak dapat digulir hingga bawah"
     ]
   },
   "logs_vi": {
-    "System": [
-      "Fix: Updated Android Security Patch",
-      "Android 9.0 update"
+    "Máy ghi âm": [
+      "Đã sửa: Trạng thái ghi âm không được cập nhật kịp thời trên thanh thông báo khi tạm dừng ghi âm",
+      "Đã sửa: Trạng thái ghi âm không được cập nhật kịp thời trên thanh thông báo khi tạm dừng ghi âm"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Hệ thống": [
+      "Sửa lỗi: Đã cập nhật bản vá bảo mật Android",
+      "Cập nhật Android 9.0"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly"
+    "Điện thoại": [
+      "Sửa lỗi: Nút \"Chuyển camera\" trong vùng chức năng khi gọi video có thể hiển thị không đầy đủ.",
+      "Sửa lỗi: Không thể gửi SMS trong cuộc gọi hội nghị"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Đã sửa: nút quay lại cuộc gọi đang diễn ra bị chồng lên thời gian.",
+      "Đã sửa: không thể tắt thông báo nổi",
+      "Sửa lỗi: Không thể sử dụng vân tay để mở khóa thiết bị khi bị khóa trong cuộc gọi",
+      "Sửa lỗi: Biểu tượng tai nghe đôi khi không hiển thị",
+      "Đã sửa: ảnh chụp màn hình cuộn không thể cuộn xuống cuối"
     ]
   },
   "logs_th": {
-    "System": [
-      "Fix: Updated Android Security Patch",
-      "Android 9.0 update"
+    "เครื่องบันทึกเสียง": [
+      "แก้ไข: สถานะการบันทึกเสียงไม่ได้รับการอัปเดตในแถบการแจ้งเตือนเมื่อหยุดการบันทึกชั่วคราว",
+      "แก้ไข: สถานะการบันทึกเสียงไม่ได้รับการอัปเดตในแถบการแจ้งเตือนเมื่อหยุดการบันทึกชั่วคราว"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "ระบบ": [
+      "แก้ไข: อัปเดตแพตช์ความปลอดภัย Android แล้ว",
+      "อัปเดต Android 9.0"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly"
+    "โทรศัพท์": [
+      "แก้ไข: ปุ่ม \"สลับกล้อง\" ในพื้นที่ฟังก์ชันระหว่างการสนทนาทางวิดีโออาจแสดงไม่สมบูรณ์",
+      "แก้ไข: ไม่สามารถส่ง SMS ระหว่างการประชุมทางโทรศัพท์ได้"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
+      "แก้ไข: ปุ่มกลับไปยังสายที่กำลังดำเนินอยู่ทับซ้อนกับเวลา",
+      "แก้ไข: ไม่สามารถปิดการแจ้งเตือนแบบลอยได้",
+      "แก้ไข: ไม่สามารถใช้ลายนิ้วมือปลดล็อกอุปกรณ์เมื่อถูกล็อกระหว่างการโทร",
+      "แก้ไข: ไอคอนหูฟังบางครั้งไม่แสดง",
+      "แก้ไข: ภาพหน้าจอแบบเลื่อนไม่สามารถเลื่อนลงไปจนสุดได้"
     ]
   },
   "logs_ar": {
-    "System": [
-      "Fix: Updated Android Security Patch",
-      "Android 9.0 update"
+    "مسجل": [
+      "إصلاح: لم يتم تحديث حالة التسجيل في شريط الإشعارات عند إيقاف التسجيل مؤقتًا",
+      "إصلاح: لم يتم تحديث حالة التسجيل في شريط الإشعارات عند إيقاف التسجيل مؤقتًا"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "النظام": [
+      "إصلاح: تحديث تصحيح أمان Android",
+      "تحديث Android 9.0"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly"
+    "هاتف": [
+      "إصلاح: قد يظهر زر \"تبديل الكاميرا\" في منطقة الوظائف أثناء مكالمات الفيديو بشكل غير مكتمل.",
+      "إصلاح: تعذّر إرسال SMS أثناء المكالمات الجماعية"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "شاشة القفل، شريط الحالة، شريط الإشعارات": [
+      "إصلاح: زر العودة إلى مكالمة جارية يتداخل مع الوقت.",
+      "إصلاح: تعذّر إيقاف الإشعارات العائمة",
+      "إصلاح: تعذر استخدام بصمة الإصبع لفتح قفل الجهاز عندما كان مقفلاً أثناء مكالمة",
+      "إصلاح: أيقونة سماعة الأذن لا تظهر أحيانًا",
+      "إصلاح: تعذّر التمرير إلى الأسفل في لقطة الشاشة الطويلة"
     ]
   },
   "logs_in": {
-    "System": [
-      "Fix: Updated Android Security Patch",
-      "Android 9.0 update"
+    "रिकॉर्डर": [
+      "समस्या ठीक की गई: रिकॉर्डिंग पॉज़ करने पर नोटिफ़िकेशन शेड में स्थिति तुरंत अपडेट नहीं होती थी",
+      "समस्या ठीक की गई: रिकॉर्डिंग पॉज़ करने पर नोटिफ़िकेशन शेड में स्थिति तुरंत अपडेट नहीं होती थी"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "सिस्टम": [
+      "सुधार: Android सुरक्षा पैच अपडेट किया गया",
+      "Android 9.0 अपडेट"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly"
+    "फ़ोन": [
+      "वीडियो कॉल के दौरान फ़ंक्शन क्षेत्र में “कैमरा बदलें” के अधूरा दिखाए जाने की समस्या ठीक की गई",
+      "ठीक किया गया: कॉन्फ़्रेंस कॉल के दौरान SMS भेजने में असमर्थ"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
+      "ठीक किया गया: चालू कॉल पर वापस जाने वाला बटन समय के साथ ओवरलैप हो रहा था।",
+      "ठीक किया गया: फ़्लोटिंग सूचनाएँ बंद नहीं की जा सकती थीं",
+      "ठीक करें: कॉल के दौरान लॉक होने पर फिंगरप्रिंट से डिवाइस अनलॉक नहीं हो सका",
+      "ठीक किया गया: ईयरफ़ोन आइकन कभी-कभी नहीं दिखाई देता था",
+      "ठीक किया गया: लंबे स्क्रीनशॉट में नीचे तक स्क्रॉल नहीं हो पाता था"
     ]
   },
   "logs_ug": {
-    "System": [
-      "Fix: Updated Android Security Patch",
-      "Android 9.0 update"
+    "ئاۋاز ئالغۇ": [
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused",
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "سىستېما": [
+      "تۈزىتىش: Android بىخەتەرلىك يامىقى يېڭىلاندى",
+      "Android سىستېما نەشرى Android 9.0 غا يېڭىلاندى."
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly"
+    "تېلېفون": [
+      "سىنلىق سۆھبەت جەريانىدا ئىقتىدار رايونىدىكى «كامېرا ئالماشتۇرۇش» تولۇق كۆرسىتىلمەسلىك مەسىلىسى تۈزىتىلدى",
+      "تېلېفون يىغىنىدا قىسقا ئۇچۇر ئەۋەتەلمەسلىك مەسىلىسى تۈزىتىلدى."
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "قۇلۇپ ئېكرانى، ھالەت بالدىقى، ئۇقتۇرۇش بالدىقى": [
+      "قوڭغۇراققا قايتىش كۇنۇپكىسى بىلەن ۋاقىتنىڭ ئۈستى-ئۈستىگە چۈشۈشى تۈزىتىلدى",
+      "Fix: Couldn't restrict floating notifications",
+      "قوڭغۇراق جەريانىدا قۇلۇپ ئېكرانىدا بارماق ئىزى بىلەن قۇلۇپ ئېچىلمايدىغان مەسىلە تۈزىتىلدى.",
+      "ئاڭشىغۇچ سىنبەلگىسىنىڭ ئاندا-ساندا كۆرۈنمەسلىك مەسىلىسى تۈزىتىلدى.",
+      "Fix: Scrolling screenshots didn't always work properly"
     ]
   },
   "logs_bo": {
-    "System": [
+    "སྒྲ་འཇུག་ཆས": [
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused",
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
+    ],
+    "མ་ལག": [
       "Fix: Updated Android Security Patch",
-      "Android 9.0 update"
+      "Android རིམ་ལུགས་ཀྱི་ཐོན་རིམ་ Android 9.0 ལ་ཡར་བསྐྱེད་བྱས།"
     ],
-    "Phone": [
+    "ཁ་པར": [
       "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+      "Fix: Couldn't sent SMS during conference calls"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
+    "Lockscreen, status bar, Notification shade": [
       "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
+      "Fix: Couldn't restrict floating notifications",
+      "Fix: Couldn't use fingerprint to unlock the device when it was locked during a call",
       "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly"
-    ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Fix: Scrolling screenshots didn't always work properly"
     ]
   }
 }

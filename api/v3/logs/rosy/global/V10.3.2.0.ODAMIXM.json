@@ -1,34 +1,57 @@
 {
   "logs_zh": {
     "系统": [
-      "优化 更新谷歌安全补丁（2019#6），提升系统安全性"
+      "优化 更新谷歌安全补丁（2019#6），提升系统安全性",
+      "优化 更新谷歌安全补丁（2019#6），提升系统安全性",
+      "安卓版本升级为Android Oreo"
     ],
     "电话": [
+      "修复 挂断电话慢问题",
       "修复 挂断电话慢问题"
     ],
     "锁屏、状态栏、通知栏": [
       "新增 系统主题下，锁屏时钟支持三种自定义样式，可在锁屏高级设置中修改",
       "优化 调节图形密码中圆点的触发区域，提升复杂图形密码绘制的成功率",
       "修复 横屏状态下未及时展示低电量悬浮通知的问题",
+      "修复 收到通知后媒体音量没有恢复的问题",
+      "新增 系统主题下，锁屏时钟支持三种自定义样式，可在锁屏高级设置中修改",
+      "优化 状态栏电量样式调整为数字样式",
+      "优化 调节图形密码中圆点的触发区域，提升复杂图形密码绘制的成功率",
+      "修复 通话锁屏界面无法指纹解锁",
+      "修复 耳机图标偶尔不显示的问题",
+      "修复 长截屏无法下拉到底",
+      "修复 返回通话和时间重叠",
+      "修复 横屏状态下未及时展示低电量悬浮通知的问题",
+      "修复 下拉状态栏开启或关闭同步，同步界面不刷新问题",
+      "修复 萤幕锁定画面下拉通知栏，来讯息界面萤幕出不来",
       "修复 收到通知后媒体音量没有恢复的问题"
     ],
     "相机": [
-      "修复 前摄开启年龄检测后人脸识别框无法出现问题"
+      "修复 前摄开启年龄检测后人脸识别框无法出现问题",
+      "修复 前镜头开启年龄检测后人脸辨识框无法出现的问题"
     ],
     "设置": [
       "优化 WLAN列表调整为按信号强度排序",
-      "优化 大字体界面的显示效果"
+      "优化 大字体界面的显示效果",
+      "优化 WiFi列表排序策略，以信号强度排序",
+      "优化 大字体界面的显示效果",
+      "修复 设置手机名称为最大长度，热点无法打开的问题"
     ],
     "录音机": [
+      "修复 暂停录音后无法及时更新到状态栏的问题",
       "修复 暂停录音后无法及时更新到状态栏的问题"
     ],
     "游戏加速": [
+      "新增 电话悬浮窗功能，支持游戏中接通的电话使用悬浮窗显示接通状态",
+      "优化 游戏工具箱呼出方式调整为顶部侧边划出",
       "新增 电话悬浮窗功能，支持游戏中接通的电话使用悬浮窗显示接通状态",
       "优化 游戏工具箱呼出方式调整为顶部侧边划出"
     ],
     "小米云服务": [
       "优化 云服务新版首页，云空间信息显示更清晰",
-      "优化 多设备之间数据同步的及时性"
+      "优化 多设备之间数据同步的及时性",
+      "优化 云服务首页重新设计，可用空间显示更加直观",
+      "优化 多设备之间数据同步及时性"
     ]
   },
   "logs_en": {
@@ -36,42 +59,53 @@
       "Optimization: Updated Android Security Patch to June 2019. Increased system security."
     ],
     "Phone": [
+      "Fix: Ending calls took longer time than expected",
       "Fix: Ending calls took longer time than expected"
     ],
     "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
       "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
-      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode",
-      "Fix: Media volume couldn^t be restored after receiving a notification"
+      "Fix: Battery-related floating notifications weren't displayed correctly in landscape mode",
+      "Fix: Media volume couldn't be restored after receiving a notification"
     ],
     "Camera": [
-      "Fix: Face detection frame didn^t appear after the age recognition option had been turned on"
+      "Fix: Face detection frame didn't appear after the age recognition option had been turned on"
     ],
     "Settings": [
       "Optimization: Sorting principles for Wi-Fi networks",
       "Optimization: Big fonts are displayed better now"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the status bar when a recording was paused"
+      "Fix: Recording status wasn't updated in the status bar when a recording was paused"
     ],
     "Game speed booster": [
+      "New: Floating windows for incoming calls during games",
+      "Optimization: You can open the gaming toolbox by swiping from the top side of the screen",
       "New: Floating windows for incoming calls during games",
       "Optimization: You can open the gaming toolbox by swiping from the top side of the screen"
     ],
     "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
+      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!",
+      "Optimization: Improved sync across multiple devices",
+      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!",
       "Optimization: Improved sync across multiple devices"
     ]
   },
   "logs_zh_tw": {
     "系統": [
       "優化 更新Android安全性修補程式等級(2019#6)，提升系統安全性",
+      "優化 更新Android安全性修補程式等級(2019#6)，提升系統安全性",
       "系統Android版本更新為Android Oreo"
     ],
     "電話": [
+      "修復 掛斷電話較慢的問題",
       "修復 掛斷電話較慢的問題"
     ],
     "解鎖畫面、狀態欄、通知欄": [
+      "新增 系統主題下，鎖屏時鐘支援三種自訂型式，可在鎖屏進階設定中修改",
+      "優化 調節圖型密碼中圓點的觸發區域，提升複雜圖型密碼繪製的成功率",
+      "修復 橫向螢幕狀況下未即時顯示低電量懸浮通知的問題",
+      "修復 收到通知後媒體音量沒有恢復的問題",
       "新增 系統主題下，鎖屏時鐘支援三種自訂型式，可在鎖屏進階設定中修改",
       "優化 狀態欄電量樣式調整為數字樣式",
       "優化 調節圖型密碼中圓點的觸發區域，提升複雜圖型密碼繪製的成功率",
@@ -85,349 +119,481 @@
       "修復 收到通知後媒體音量沒有恢復的問題"
     ],
     "相機": [
+      "修復 前鏡頭開啟年齡偵測後人臉辨識框無法出現的問題",
       "修復 前鏡頭開啟年齡檢測後人臉辨識框無法出現的問題"
     ],
     "設定": [
+      "優化 Wi-Fi清單排列策略，以信號的強度排列",
+      "優化 大字體介面的顯示效果",
       "優化 Wi-Fi清單調整為按信號強度排列",
       "優化 大字體介面的顯示效果",
       "修復 設定手機名稱為最大長度，熱點無法開啟的問題"
     ],
     "錄音機": [
+      "修正暫停錄音後無法及時更新到狀態列的問題",
       "修復 暫停錄音後無法即時更新到狀態欄的問題"
     ],
     "遊戲加速": [
+      "新增 電話懸浮視窗功能，支援遊戲中接通的電話使用懸浮視窗顯示接通狀態",
+      "優化 遊戲工具箱喚醒方式調整為頂部側邊滑出",
       "新增 電話懸浮視窗功能，支援遊戲中接通的電話使用懸浮視窗顯示接通狀態",
       "優化 遊戲工具箱喚醒方式調整為頂部側邊滑出"
     ],
     "小米雲服務": [
       "優化 雲服務首頁重新設計，雲端可用空間顯示更加直觀",
+      "優化 多裝置之間數據同步即時性",
+      "優化 雲服務首頁重新設計，雲端可用空間顯示更加直觀",
       "優化 多裝置之間數據同步即時性"
     ]
   },
   "logs_ja": {
-    "System": [
-      "Optimization: Updated Android Security Patch to June 2019. Increased system security.",
-      "Android Oreo update"
+    "システム": [
+      "最適化: Android セキュリティパッチを 2019 年 6 月版に更新しました。システムの安全性が向上しました。",
+      "最適化: Android セキュリティパッチを 2019 年 6 月版に更新しました。システムの安全性が向上しました。",
+      "Android Oreo へのアップデート"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected"
+    "電話": [
+      "修正: 通話終了に予想以上に時間がかかる問題",
+      "修正: 通話終了に予想以上に時間がかかる問題"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "Optimization: Battery percentage format for the status bar",
-      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly",
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received",
-      "Fix: Media volume couldn^t be restored after receiving a notification"
+    "ロック画面、ステータスバー、通知シェード": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "最適化: ロック解除パターンのドットの感応領域を調整",
+      "横画面時に低バッテリーのフローティング通知が適時に表示されない問題を修正",
+      "修正: 通知を受信した後にメディア音量が元に戻らない問題",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "最適化: ステータスバーのバッテリー表示を数値スタイルに調整",
+      "最適化: ロック解除パターンのドットの感応領域を調整",
+      "Fix: Couldn't use fingerprint to unlock the device when it was locked during a call",
+      "ヘッドホンアイコンが時々表示されない問題を修正",
+      "Fix: Scrolling screenshots didn't always work properly",
+      "「通話に戻る」と時刻の重なりを修正",
+      "横画面時に低バッテリーのフローティング通知が適時に表示されない問題を修正",
+      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade",
+      "ロック画面で通知シェードを下ろした際に、受信メッセージ画面が表示されない問題を修正しました",
+      "修正: 通知を受信した後にメディア音量が元に戻らない問題"
     ],
-    "Camera": [
-      "Fix: Face detection frame didn^t appear after the age recognition option had been turned on"
+    "カメラ": [
+      "修正: フロントカメラで年齢検出を有効にした後、顔認識枠が表示されない問題",
+      "Fix: Face detection frame didn't appear after the age recognition option had been turned on"
     ],
-    "Settings": [
+    "設定": [
+      "最適化: WLANリストを電波強度順に並べ替えるように調整",
+      "最適化: 大きなフォントの表示が改善されました",
       "Optimization: Sorting principles for Wi-Fi networks",
-      "Optimization: Big fonts are displayed better now",
-      "Fix: Couldn^t turn on portable hotspot when device name was set to maximum length"
+      "最適化: 大きなフォントの表示が改善されました",
+      "修正: デバイス名を最大長に設定すると、ポータブルホットスポットをオンにできませんでした"
+    ],
+    "レコーダー": [
+      "録音を一時停止した後、ステータスバーにすぐに更新されない問題を修正"
+    ],
+    "ゲーム加速": [
+      "新機能: ゲーム中の着信通話をフローティングウィンドウで表示",
+      "最適化: 画面の上端からスワイプしてゲームツールボックスを開けるようになりました",
+      "新機能: ゲーム中の着信通話をフローティングウィンドウで表示",
+      "最適化: 画面の上端からスワイプしてゲームツールボックスを開けるようになりました"
+    ],
+    "Xiaomi クラウドサービス": [
+      "最適化：Mi Cloudのスタートページを再設計しました。より見やすくなりました",
+      "最適化: 複数デバイス間のデータ同期の即時性を向上",
+      "最適化: クラウドサービスのホームページを再設計し、空き容量がより分かりやすく表示されるようになりました。",
+      "最適化: 複数デバイス間のデータ同期を改善"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the status bar when a recording was paused"
-    ],
-    "Game speed booster": [
-      "New: Floating windows for incoming calls during games",
-      "Optimization: You can open the gaming toolbox by swiping from the top side of the screen"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
-      "Optimization: Improved sync across multiple devices"
+      "Fix: Recording status wasn't updated in the status bar when a recording was paused"
     ]
   },
   "logs_ko": {
-    "System": [
-      "Optimization: Updated Android Security Patch to June 2019. Increased system security.",
-      "Android Oreo update"
+    "시스템": [
+      "최적화: Android 보안 패치를 2019년 6월로 업데이트했습니다. 시스템 보안이 향상되었습니다.",
+      "최적화: Android 보안 패치를 2019년 6월로 업데이트했습니다. 시스템 보안이 향상되었습니다.",
+      "Android Oreo 업데이트"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected"
+    "전화": [
+      "수정: 통화 종료가 예상보다 오래 걸리는 문제",
+      "수정: 통화 종료가 예상보다 오래 걸리는 문제"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "Optimization: Battery percentage format for the status bar",
-      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly",
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received",
-      "Fix: Media volume couldn^t be restored after receiving a notification"
+    "잠금화면, 상태 바, 알림 바": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "최적화: 잠금 해제 패턴의 점 감응 영역 조정",
+      "가로 모드에서 배터리 부족 플로팅 알림이 제때 표시되지 않던 문제를 수정",
+      "수정: 알림을 받은 후 미디어 볼륨이 복원되지 않는 문제",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "최적화: 상태 표시줄 배터리 스타일을 숫자 스타일로 조정",
+      "최적화: 잠금 해제 패턴의 점 감응 영역 조정",
+      "Fix: Couldn't use fingerprint to unlock the device when it was locked during a call",
+      "헤드폰 아이콘이 간헐적으로 표시되지 않는 문제를 수정했습니다",
+      "Fix: Scrolling screenshots didn't always work properly",
+      "통화로 돌아가기와 시간이 겹치는 문제 수정",
+      "가로 모드에서 배터리 부족 플로팅 알림이 제때 표시되지 않던 문제를 수정",
+      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade",
+      "잠금 화면에서 알림창을 내렸을 때 수신 메시지 화면이 표시되지 않는 문제를 수정했습니다",
+      "수정: 알림을 받은 후 미디어 볼륨이 복원되지 않는 문제"
     ],
-    "Camera": [
-      "Fix: Face detection frame didn^t appear after the age recognition option had been turned on"
+    "카메라": [
+      "수정: 전면 카메라에서 나이 감지를 켠 후 얼굴 인식 프레임이 표시되지 않는 문제",
+      "Fix: Face detection frame didn't appear after the age recognition option had been turned on"
     ],
-    "Settings": [
+    "설정": [
+      "최적화: WLAN 목록이 신호 강도에 따라 정렬되도록 조정",
+      "최적화: 큰 글꼴이 더 잘 표시됩니다",
       "Optimization: Sorting principles for Wi-Fi networks",
-      "Optimization: Big fonts are displayed better now",
-      "Fix: Couldn^t turn on portable hotspot when device name was set to maximum length"
+      "최적화: 큰 글꼴이 더 잘 표시됩니다",
+      "수정: 기기 이름을 최대 길이로 설정하면 휴대용 핫스팟을 켤 수 없었습니다"
+    ],
+    "녹음기": [
+      "녹음을 일시중지한 후 상태 표시줄에 적시에 업데이트되지 않는 문제를 수정"
+    ],
+    "게임 가속": [
+      "새 기능: 게임 중 수신 전화를 플로팅 창으로 표시",
+      "최적화: 화면 상단에서 스와이프하여 게임 도구 상자를 열 수 있습니다",
+      "새 기능: 게임 중 수신 전화를 플로팅 창으로 표시",
+      "최적화: 화면 상단에서 스와이프하여 게임 도구 상자를 열 수 있습니다"
+    ],
+    "Xiaomi 클라우드 서비스": [
+      "최적화: Mi Cloud 새 홈페이지가 최적화되어 클라우드 공간 정보가 더 명확하게 표시됩니다.",
+      "최적화: 여러 기기 간 데이터 동기화 즉시성 향상",
+      "최적화: 클라우드 서비스 홈페이지를 재설계하여 사용 가능한 공간이 더 직관적으로 표시됩니다.",
+      "최적화: 여러 기기 간 데이터 동기화 개선"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the status bar when a recording was paused"
-    ],
-    "Game speed booster": [
-      "New: Floating windows for incoming calls during games",
-      "Optimization: You can open the gaming toolbox by swiping from the top side of the screen"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
-      "Optimization: Improved sync across multiple devices"
+      "Fix: Recording status wasn't updated in the status bar when a recording was paused"
     ]
   },
   "logs_ru": {
     "Система": [
       "Оптимизация: Обновление системы безопасности Android (июнь 2019 года). Улучшена безопасность системы.",
+      "Оптимизация: Обновление системы безопасности Android (июнь 2019 года). Улучшена безопасность системы.",
       "Обновление Android до версии Oreo"
     ],
     "Телефон": [
+      "Исправлено: Завершение вызова выполнялось слишком долго",
       "Исправлено: Завершение вызова выполнялось слишком долго"
     ],
     "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Новое: Добавлены настраиваемые часы для экрана блокировки (Настройки > Блокировка и защита > Расширенные настройки). Новые часы для экрана блокировки несовместимы со сторонними темами",
+      "Оптимизация: Отрегулированы чувствительные зоны вокруг точек ввода графического ключа",
+      "Исправлено: Всплывающие уведомления, связанные с аккумулятором, не отображались правильно в режиме альбомной ориентации",
+      "Исправлено: Громкость мультимедиа не восстанавливалась после получения уведомлений",
       "Новое: Добавлены настраиваемые часы для экрана блокировки (Настройки > Блокировка и защита > Расширенные настройки). Новые часы для экрана блокировки несовместимы со сторонними темами",
       "Оптимизация: Формат отображения уровня заряда батареи в строке состояния",
       "Оптимизация: Отрегулированы чувствительные зоны вокруг точек ввода графического ключа",
       "Исправлено: Не удавалось разблокировать устройство отпечатком пальца после блокировки во время разговора",
       "Исправлено: Значок наушников появлялся не всегда",
       "Исправлено: Длинные скриншоты работали некорректно",
-      "Исправлено: Кнопка ^Назад^ перекрывала время",
+      "Исправлено: Кнопка \"Назад\" перекрывала время",
       "Исправлено: Всплывающие уведомления, связанные с аккумулятором, не отображались правильно в режиме альбомной ориентации",
       "Исправлено: Страница синхронизации не обновлялась всякий раз, когда синхронизация была включена или отключена через Шторку уведомлений",
       "Исправлено: Шторка уведомлений становилась черной на экране блокировки при получении новых уведомлений",
       "Исправлено: Громкость мультимедиа не восстанавливалась после получения уведомлений"
     ],
     "Камера": [
+      "Исправление: После включения определения возраста на фронтальной камере не отображалась рамка распознавания лица",
       "Исправлено: Рамка распознавания лица не появлялась после включения функции определения возраста"
     ],
     "Настройки": [
       "Оптимизация: Принцип сортировки сетей Wi-Fi",
       "Оптимизация: Теперь шрифт большого размера отображается лучше",
+      "Оптимизация: Принцип сортировки сетей Wi-Fi",
+      "Оптимизация: Теперь шрифт большого размера отображается лучше",
       "Исправлено: Не удавалось включить точку доступа, если имя устройства содержало максимальное количество символов"
     ],
     "Диктофон": [
+      "Исправлена проблема, из-за которой после приостановки записи статус-бар не обновлялся своевременно.",
       "Исправлено: Факт остановки записи не отображался в строке состояния вовремя"
     ],
     "Ускорение приложений": [
       "Новое: Всплывающее окно с уведомлением о входящем вызове во время игры",
+      "Оптимизация: Проведите вниз от верхней части экрана, чтобы открыть игровые инструменты",
+      "Новое: Всплывающее окно с уведомлением о входящем вызове во время игры",
       "Оптимизация: Проведите вниз от верхней части экрана, чтобы открыть игровые инструменты"
     ],
-    "Mi Cloud": [
+    "Облачный сервис Xiaomi": [
+      "Оптимизация: Мы переработали начальную страницу Mi Cloud. Теперь она выглядит намного лучше!",
+      "Оптимизация: Улучшена синхронизация данных между несколькими  устройствами",
       "Оптимизация: Мы переработали начальную страницу Mi Cloud. Теперь она выглядит намного лучше!",
       "Оптимизация: Улучшена синхронизация данных между несколькими  устройствами"
     ]
   },
   "logs_uk": {
-    "System": [
+    "Система": [
       "Optimization: Updated Android Security Patch to June 2019. Increased system security.",
-      "Android Oreo update"
+      "Optimization: Updated Android Security Patch to June 2019. Increased system security.",
+      "Оновлення до Android Oreo"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected"
+    "Телефон": [
+      "Виправлено: Завершення викликів тривало довше, ніж очікувалося",
+      "Виправлено: Завершення викликів тривало довше, ніж очікувалося"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "Optimization: Battery percentage format for the status bar",
-      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly",
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received",
-      "Fix: Media volume couldn^t be restored after receiving a notification"
+    "Екран блокування, рядок стану, панель сповіщень": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Оптимізація: Відрегульовано чутливі зони для точок графічного ключа",
+      "Виправлено проблему, коли плаваюче сповіщення про низький заряд батареї не відображалося вчасно в горизонтальному режимі",
+      "Виправлено: Гучність медіа не відновлювалася після отримання сповіщення",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Оптимізація: стиль батареї в рядку стану змінено на числовий стиль",
+      "Оптимізація: Відрегульовано чутливі зони для точок графічного ключа",
+      "Fix: Couldn't use fingerprint to unlock the device when it was locked during a call",
+      "Виправлено проблему, коли іноді не відображалася іконка навушників",
+      "Fix: Scrolling screenshots didn't always work properly",
+      "Виправлено накладання «Повернутися до виклику» та часу",
+      "Виправлено проблему, коли плаваюче сповіщення про низький заряд батареї не відображалося вчасно в горизонтальному режимі",
+      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade",
+      "Виправлено: під час розгортання панелі сповіщень на екрані блокування екран вхідних повідомлень не з'являвся",
+      "Виправлено: Гучність медіа не відновлювалася після отримання сповіщення"
     ],
-    "Camera": [
-      "Fix: Face detection frame didn^t appear after the age recognition option had been turned on"
+    "Камера": [
+      "Виправлення: Після ввімкнення визначення віку на фронтальній камері не з’являлася рамка розпізнавання обличчя",
+      "Fix: Face detection frame didn't appear after the age recognition option had been turned on"
     ],
-    "Settings": [
+    "Налаштування": [
+      "Оптимізація: список WLAN сортується за силою сигналу",
+      "Оптимізація: великі шрифти тепер відображаються краще",
       "Optimization: Sorting principles for Wi-Fi networks",
-      "Optimization: Big fonts are displayed better now",
-      "Fix: Couldn^t turn on portable hotspot when device name was set to maximum length"
+      "Оптимізація: великі шрифти тепер відображаються краще",
+      "Виправлено: не вдалося ввімкнути портативну точку доступу, коли ім’я пристрою встановлено на максимальну довжину"
+    ],
+    "Диктофон": [
+      "Виправлено проблему, через яку після призупинення запису рядок стану не оновлювався вчасно."
+    ],
+    "Прискорення ігор": [
+      "Нове: Плаваючі вікна для вхідних викликів під час ігор",
+      "Оптимізація: Проведіть від верхньої частини екрана, щоб відкрити ігрові інструменти",
+      "Нове: Плаваючі вікна для вхідних викликів під час ігор",
+      "Оптимізація: Проведіть від верхньої частини екрана, щоб відкрити ігрові інструменти"
+    ],
+    "Хмарний сервіс Xiaomi": [
+      "Оптимізація: оптимізовано нову головну сторінку Mi Cloud, інформація про хмарний простір відображається чіткіше.",
+      "Оптимізація: Покращено синхронізацію між кількома пристроями",
+      "Оптимізація: головну сторінку хмарного сервісу перероблено, доступний простір тепер відображається більш наочно.",
+      "Оптимізація: Покращено синхронізацію даних між кількома пристроями"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the status bar when a recording was paused"
-    ],
-    "Game speed booster": [
-      "New: Floating windows for incoming calls during games",
-      "Optimization: You can open the gaming toolbox by swiping from the top side of the screen"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
-      "Optimization: Improved sync across multiple devices"
+      "Fix: Recording status wasn't updated in the status bar when a recording was paused"
     ]
   },
   "logs_pl": {
     "System": [
       "Optimization: Updated Android Security Patch to June 2019. Increased system security.",
-      "Android Oreo update"
+      "Optimization: Updated Android Security Patch to June 2019. Increased system security.",
+      "Aktualizacja do Android Oreo"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected"
+    "Telefon": [
+      "Poprawka: Zakończenie połączeń trwało dłużej niż oczekiwano",
+      "Poprawka: Zakończenie połączeń trwało dłużej niż oczekiwano"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "Optimization: Battery percentage format for the status bar",
-      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly",
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received",
-      "Fix: Media volume couldn^t be restored after receiving a notification"
+    "Ekran blokady, pasek powiadomień,panel powiadomień": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Optymalizacja: Dostosowano obszary wrażliwe dla kropek we wzorze odblokowania",
+      "Naprawiono problem z nieterminowym wyświetlaniem pływającego powiadomienia o niskim poziomie baterii w trybie poziomym",
+      "Poprawiono: Głośność multimediów nie wracała po otrzymaniu powiadomienia",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Optymalizacja: Dostosowano styl baterii na pasku stanu do stylu liczbowego",
+      "Optymalizacja: Dostosowano obszary wrażliwe dla kropek we wzorze odblokowania",
+      "Fix: Couldn't use fingerprint to unlock the device when it was locked during a call",
+      "Naprawiono problem z okazjonalnym brakiem wyświetlania ikony słuchawek",
+      "Fix: Scrolling screenshots didn't always work properly",
+      "Naprawiono nakładanie się przycisku „Wróć do połączenia” i godziny",
+      "Naprawiono problem z nieterminowym wyświetlaniem pływającego powiadomienia o niskim poziomie baterii w trybie poziomym",
+      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade",
+      "Naprawiono: rozwinięcie panelu powiadomień na ekranie blokady powodowało, że ekran wiadomości przychodzących się nie pojawiał",
+      "Poprawiono: Głośność multimediów nie wracała po otrzymaniu powiadomienia"
     ],
-    "Camera": [
-      "Fix: Face detection frame didn^t appear after the age recognition option had been turned on"
+    "Aparat": [
+      "Poprawka: Ramka rozpoznawania twarzy nie pojawiała się po włączeniu wykrywania wieku w przednim aparacie",
+      "Fix: Face detection frame didn't appear after the age recognition option had been turned on"
     ],
-    "Settings": [
+    "Ustawienia": [
+      "Optymalizacja: lista WLAN sortowana według siły sygnału",
+      "Optymalizacja: duże czcionki są teraz lepiej wyświetlane",
       "Optimization: Sorting principles for Wi-Fi networks",
-      "Optimization: Big fonts are displayed better now",
-      "Fix: Couldn^t turn on portable hotspot when device name was set to maximum length"
+      "Optymalizacja: duże czcionki są teraz lepiej wyświetlane",
+      "Naprawiono: Nie można było włączyć hotspotu przenośnego, gdy nazwa urządzenia miała maksymalną długość"
+    ],
+    "Rejestrator": [
+      "Naprawiono problem z nieterminową aktualizacją paska stanu po wstrzymaniu nagrywania."
+    ],
+    "Przyspieszanie gier": [
+      "Nowość: Pływające okna dla połączeń przychodzących podczas gier",
+      "Optymalizacja: Możesz otworzyć skrzynkę narzędzi do gier, przesuwając palcem od górnej krawędzi ekranu",
+      "Nowość: Pływające okna dla połączeń przychodzących podczas gier",
+      "Optymalizacja: Możesz otworzyć skrzynkę narzędzi do gier, przesuwając palcem od górnej krawędzi ekranu"
+    ],
+    "Usługa w chmurze Xiaomi": [
+      "Optymalizacja: zoptymalizowano nową stronę główną Mi Cloud, informacje o przestrzeni w chmurze są wyświetlane wyraźniej.",
+      "Optymalizacja: Ulepszona synchronizacja między wieloma urządzeniami",
+      "Optymalizacja: przeprojektowano stronę główną usługi w chmurze; dostępna przestrzeń jest teraz wyświetlana bardziej intuicyjnie.",
+      "Optymalizacja: Poprawiono synchronizację między wieloma urządzeniami"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the status bar when a recording was paused"
-    ],
-    "Game speed booster": [
-      "New: Floating windows for incoming calls during games",
-      "Optimization: You can open the gaming toolbox by swiping from the top side of the screen"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
-      "Optimization: Improved sync across multiple devices"
+      "Fix: Recording status wasn't updated in the status bar when a recording was paused"
     ]
   },
   "logs_de": {
     "System": [
-      "Optimization: Updated Android Security Patch to June 2019. Increased system security.",
-      "Android Oreo update"
+      "Optimierung: Android-Sicherheitspatch auf Juni 2019 aktualisiert. Systemsicherheit verbessert.",
+      "Optimierung: Android-Sicherheitspatch auf Juni 2019 aktualisiert. Systemsicherheit verbessert.",
+      "Android Oreo-Update"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected"
+    "Telefon": [
+      "Behoben: Das Beenden von Anrufen dauerte länger als erwartet",
+      "Behoben: Das Beenden von Anrufen dauerte länger als erwartet"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "Optimization: Battery percentage format for the status bar",
-      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly",
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received",
-      "Fix: Media volume couldn^t be restored after receiving a notification"
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
+      "Neu: Anpassbare Uhr auf dem Sperrbildschirm (Einstellungen > Sperrbildschirm & Passwort > Erweiterte Einstellungen)",
+      "Optimierung: Empfindliche Bereiche für die Punkte im Entsperrmuster angepasst",
+      "Behebung: Bei niedrigem Akkustand wurde im Querformat die schwebende Benachrichtigung nicht rechtzeitig angezeigt",
+      "Behoben: Die Medienlautstärke wurde nach Erhalt einer Benachrichtigung nicht wiederhergestellt",
+      "Neu: Anpassbare Uhr auf dem Sperrbildschirm (Einstellungen > Sperrbildschirm & Passwort > Erweiterte Einstellungen)",
+      "Optimierung: Akkustil in der Statusleiste auf Zahlenstil umgestellt",
+      "Optimierung: Empfindliche Bereiche für die Punkte im Entsperrmuster angepasst",
+      "Fix: Couldn't use fingerprint to unlock the device when it was locked during a call",
+      "Problem behoben, dass das Kopfhörersymbol gelegentlich nicht angezeigt wurde",
+      "Fix: Scrolling screenshots didn't always work properly",
+      "Überlappung von „Zurück zum Anruf“ und Uhrzeit behoben",
+      "Behebung: Bei niedrigem Akkustand wurde im Querformat die schwebende Benachrichtigung nicht rechtzeitig angezeigt",
+      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade",
+      "Behoben: Beim Herunterziehen der Benachrichtigungsleiste auf dem Sperrbildschirm wurde die Oberfläche für eingehende Nachrichten nicht angezeigt",
+      "Behoben: Die Medienlautstärke wurde nach Erhalt einer Benachrichtigung nicht wiederhergestellt"
     ],
-    "Camera": [
-      "Fix: Face detection frame didn^t appear after the age recognition option had been turned on"
+    "Kamera": [
+      "Fix: Der Gesichtserkennungsrahmen wurde nach Aktivieren der Alterserkennung an der Frontkamera nicht angezeigt",
+      "Fix: Face detection frame didn't appear after the age recognition option had been turned on"
     ],
-    "Settings": [
+    "Einstellungen": [
+      "Optimierung: WLAN-Liste wird nach Signalstärke sortiert",
+      "Optimierung: Große Schriftarten werden jetzt besser angezeigt",
       "Optimization: Sorting principles for Wi-Fi networks",
-      "Optimization: Big fonts are displayed better now",
-      "Fix: Couldn^t turn on portable hotspot when device name was set to maximum length"
+      "Optimierung: Große Schriftarten werden jetzt besser angezeigt",
+      "Behoben: Mobiler Hotspot konnte nicht aktiviert werden, wenn der Gerätename auf die maximale Länge gesetzt war"
+    ],
+    "Rekorder": [
+      "Problem behoben, bei dem die Statusleiste nach dem Pausieren einer Aufnahme nicht rechtzeitig aktualisiert wurde."
+    ],
+    "Spielbeschleunigung": [
+      "Neu: Schwebende Fenster für eingehende Anrufe während Spielen",
+      "Optimierung: Du kannst die Gaming-Toolbox durch Wischen vom oberen Bildschirmrand öffnen",
+      "Neu: Schwebende Fenster für eingehende Anrufe während Spielen",
+      "Optimierung: Du kannst die Gaming-Toolbox durch Wischen vom oberen Bildschirmrand öffnen"
+    ],
+    "Xiaomi Cloud-Dienst": [
+      "Optimierung: Wir haben die Startseite von Mi Cloud neu gestaltet. Sie sieht jetzt viel besser aus",
+      "Optimierung: Verbesserte Synchronisierung zwischen mehreren Geräten",
+      "Optimierung: Die Startseite des Cloud-Dienstes wurde neu gestaltet; der verfügbare Speicher wird jetzt intuitiver angezeigt.",
+      "Optimierung: Verbesserte Synchronisierung zwischen mehreren Geräten"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the status bar when a recording was paused"
-    ],
-    "Game speed booster": [
-      "New: Floating windows for incoming calls during games",
-      "Optimization: You can open the gaming toolbox by swiping from the top side of the screen"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
-      "Optimization: Improved sync across multiple devices"
+      "Fix: Recording status wasn't updated in the status bar when a recording was paused"
     ]
   },
   "logs_fr": {
     "Système": [
-      "Optimisation Mise à jour du correctif de sécurité Android jusqu^en juin 2019. Sécurité accrue du système.",
+      "Optimisation Mise à jour du correctif de sécurité Android jusqu'en juin 2019. Sécurité accrue du système.",
+      "Optimisation Mise à jour du correctif de sécurité Android jusqu'en juin 2019. Sécurité accrue du système.",
       "Mise à jour Android Oreo"
     ],
     "Téléphone": [
-      "Réparé Mettre fin aux appels a pris plus de temps que prévu"
+      "Réparé: Mettre fin aux appels a pris plus de temps que prévu",
+      "Réparé: Mettre fin aux appels a pris plus de temps que prévu"
     ],
     "Écran de verrouillage, Barre d'état, Panneau de notification": [
-      "Nouveau Présentation de l’horloge de l’écran de verrouillage personnalisable (Paramètres> Écran de verrouillage et mot de passe> Paramètres avancés). La nouvelle horloge de l^écran de verrouillage ne fonctionne pas avec les thèmes tiers.",
-      "Optimisation Format de pourcentage de batterie pour la barre d^état",
-      "Optimisation Zones sensibles réajustées pour les points du schéma de déverrouillage",
-      "Réparé Impossible d^utiliser l^empreinte digitale pour déverrouiller l^appareil lorsqu^il était verrouillé pendant un appel",
+      "Nouveau Présentation de l’horloge de l’écran de verrouillage personnalisable (Paramètres> Écran de verrouillage et mot de passe> Paramètres avancés). La nouvelle horloge de l'écran de verrouillage ne fonctionne pas avec les thèmes tiers.",
+      "Optimisation: Zones sensibles réajustées pour les points du schéma de déverrouillage",
+      "Réparé: Les notifications flottantes relatives à la batterie n'étaient pas affichées correctement en mode paysage",
+      "Réparé Le volume du média n'a pas pu être restauré après avoir reçu une notification",
+      "Nouveau Présentation de l’horloge de l’écran de verrouillage personnalisable (Paramètres> Écran de verrouillage et mot de passe> Paramètres avancés). La nouvelle horloge de l'écran de verrouillage ne fonctionne pas avec les thèmes tiers.",
+      "Optimisation Format de pourcentage de batterie pour la barre d'état",
+      "Optimisation: Zones sensibles réajustées pour les points du schéma de déverrouillage",
+      "Réparé Impossible d'utiliser l'empreinte digitale pour déverrouiller l'appareil lorsqu'il était verrouillé pendant un appel",
       "Réparé L’icône des écouteurs a parfois disparu",
-      "Réparé Les captures d^écran défilantes ne fonctionnaient pas toujours correctement",
+      "Réparé Les captures d'écran défilantes ne fonctionnaient pas toujours correctement",
       "Réparé Le bouton qui vous ramène à un appel en cours chevauché par le temps",
-      "Réparé Les notifications flottantes relatives à la batterie n^étaient pas affichées correctement en mode paysage",
+      "Réparé: Les notifications flottantes relatives à la batterie n'étaient pas affichées correctement en mode paysage",
       "Réparé La page de synchronisation ne peut pas être régénérée chaque fois que la synchronisation est activée ou désactivée dans le panneau de Notifications",
-      "Réparé La nuance des notifications est devenue noire sur l^écran de verrouillage lorsque de nouvelles notifications ont été reçues",
-      "Réparé Le volume du média n^a pas pu être restauré après avoir reçu une notification"
+      "Réparé La nuance des notifications est devenue noire sur l'écran de verrouillage lorsque de nouvelles notifications ont été reçues",
+      "Réparé Le volume du média n'a pas pu être restauré après avoir reçu une notification"
     ],
-    "Appareil Photo": [
-      "Réparé Le cadre de détection de visage n^apparaît pas après l^activation de l^option de reconnaissance de l^âge"
+    "Appareil photo": [
+      "Correction : Le cadre de reconnaissance faciale n'apparaissait pas après l'activation de la détection d'âge sur la caméra frontale"
     ],
     "Paramètres": [
+      "Optimisation : tri de la liste WLAN par intensité du signal",
+      "Optimisation Les grosses polices sont mieux affichées maintenant",
       "Optimisation Principes de tri pour les réseaux Wi-Fi",
       "Optimisation Les grosses polices sont mieux affichées maintenant",
-      "Réparé Impossible d^activer le point d^accès portable lorsque le nom du périphérique a été défini sur une longueur maximale"
+      "Réparé Impossible d'activer le point d'accès portable lorsque le nom du périphérique a été défini sur une longueur maximale"
     ],
     "Enregistreur": [
-      "Réparé L^état de l^enregistrement n^a pas été mis à jour dans l^ombre de notification lorsqu^un enregistrement a été mis en pause"
+      "Correction du problème de mise à jour tardive de la barre d'état après la pause d'un enregistrement.",
+      "Réparé L'état de l'enregistrement n'a pas été mis à jour dans l'ombre de notification lorsqu'un enregistrement a été mis en pause"
     ],
     "Booster de vitesse de jeu": [
-      "Nouveau Fenêtres flottantes pour les appels entrants pendant les jeux",
-      "Optimisation Vous pouvez ouvrir la boîte à outils de jeu en faisant glisser votre doigt depuis le haut de l^écran"
+      "Nouveau: Fenêtres flottantes pour les appels entrants pendant les jeux",
+      "Optimisation: Vous pouvez ouvrir la boîte à outils de jeu en faisant glisser votre doigt depuis le haut de l'écran",
+      "Nouveau: Fenêtres flottantes pour les appels entrants pendant les jeux",
+      "Optimisation: Vous pouvez ouvrir la boîte à outils de jeu en faisant glisser votre doigt depuis le haut de l'écran"
     ],
-    "Mi Cloud": [
-      "Optimisation Nous avons repensé la page de démarrage de Mi Cloud. Ça a l^air beaucoup mieux maintenant!",
+    "Service cloud Xiaomi": [
+      "Optimisation : la nouvelle page d’accueil de Mi Cloud a été optimisée, les informations sur l’espace cloud s’affichent plus clairement.",
+      "Optimisation Amélioration de la synchronisation sur plusieurs appareils",
+      "Optimisation: Nous avons repensé la page de démarrage de Mi Cloud. Ça a l'air beaucoup mieux maintenant!",
       "Optimisation Amélioration de la synchronisation sur plusieurs appareils"
+    ],
+    "Appareil Photo": [
+      "Réparé Le cadre de détection de visage n'apparaît pas après l'activation de l'option de reconnaissance de l'âge"
     ]
   },
   "logs_it": {
     "Sistema": [
       "Ottimizzazione: Aggiornamento della patch di sicurezza Android a giugno 2019. Maggiore sicurezza del sistema.",
+      "Ottimizzazione: Aggiornamento della patch di sicurezza Android a giugno 2019. Maggiore sicurezza del sistema.",
       "Aggiornamento Android Oreo"
     ],
     "Telefono": [
+      "Risolto: Terminare le chiamate richiedeva più tempo del previsto",
       "Risolto: Terminare le chiamate richiedeva più tempo del previsto"
     ],
     "Schermata di blocco, barra di stato, area delle notifiche": [
-      "Nuovo: Introdotto l^orologio personalizzabile per la schermata di blocco (Impostazioni > Schermata di blocco e password > Impostazioni avanzate). Il nuovo orologio della schermata di blocco non funziona con temi di terze parti.",
+      "Nuovo: Introdotto l'orologio personalizzabile per la schermata di blocco (Impostazioni > Schermata di blocco e password > Impostazioni avanzate). Il nuovo orologio della schermata di blocco non funziona con temi di terze parti.",
+      "Ottimizzazione: Riadattate le aree sensibili per i punti nella sequenza di sblocco",
+      "Risolto: Le notifiche a comparsa relative alla batteria non erano visualizzate correttamente in modalità orizzontale",
+      "Risolto: Il volume multimediale non poteva essere ripristinato dopo aver ricevuto una notifica",
+      "Nuovo: Introdotto l'orologio personalizzabile per la schermata di blocco (Impostazioni > Schermata di blocco e password > Impostazioni avanzate). Il nuovo orologio della schermata di blocco non funziona con temi di terze parti.",
       "Ottimizzazione: Formato della percentuale di batteria nella barra di stato",
       "Ottimizzazione: Riadattate le aree sensibili per i punti nella sequenza di sblocco",
-      "Risolto: Impossibile utilizzare l^impronta digitale per sbloccare il dispositivo quando era bloccato durante una chiamata",
-      "Risolto: L^icona degli auricolari a volte scompariva",
+      "Risolto: Impossibile utilizzare l'impronta digitale per sbloccare il dispositivo quando era bloccato durante una chiamata",
+      "Risolto: L'icona degli auricolari a volte scompariva",
       "Risolto: Gli screenshot a scorrimento non funzionavano sempre correttamente",
-      "Risolto: Il pulsante che ti riporta a una chiamata in corso era sovrapposto all^orario",
+      "Risolto: Il pulsante che ti riporta a una chiamata in corso era sovrapposto all'orario",
       "Risolto: Le notifiche a comparsa relative alla batteria non erano visualizzate correttamente in modalità orizzontale",
-      "Risolto: La pagina di sincronizzazione non poteva essere aggiornata quando la sincronizzazione era attiva o disattivata nell^area delle notifiche",
-      "Risolto: L^area delle notifiche diventava nera nella schermata di blocco quando venivano ricevute nuove notifiche",
+      "Risolto: La pagina di sincronizzazione non poteva essere aggiornata quando la sincronizzazione era attiva o disattivata nell'area delle notifiche",
+      "Risolto: L'area delle notifiche diventava nera nella schermata di blocco quando venivano ricevute nuove notifiche",
       "Risolto: Il volume multimediale non poteva essere ripristinato dopo aver ricevuto una notifica"
     ],
     "Fotocamera": [
-      "Risolto: La cornice per il rilevamento del volto non appariva quando era attiva l^opzione di riconoscimento dell^età"
+      "Correzione: Il riquadro di riconoscimento del viso non appariva dopo aver attivato il rilevamento dell'età sulla fotocamera frontale",
+      "Risolto: La cornice per il rilevamento del volto non appariva quando era attiva l'opzione di riconoscimento dell'età"
     ],
     "Impostazioni": [
+      "Ottimizzazione: Principi di ordinamento delle reti Wi-Fi",
+      "Ottimizzazione: I caratteri di grandi dimensioni sono ora visualizzati meglio",
       "Ottimizzazione: Principi di ordinamento per le reti Wi-Fi",
       "Ottimizzazione: I caratteri di grandi dimensioni sono ora visualizzati meglio",
-      "Risolto: Impossibile attivare l^hotspot personale quando il nome del dispositivo era impostato sulla lunghezza massima"
+      "Risolto: Impossibile attivare l'hotspot personale quando il nome del dispositivo era impostato sulla lunghezza massima"
     ],
     "Registratore": [
+      "Risolvi: Lo stato della registrazione non era aggiornato nell'area delle notifiche quando una registrazione era messa in pausa",
       "Risolto: Lo stato della registrazione non era aggiornato nella barra di stato quando una registrazione veniva messa in pausa"
     ],
     "Turbo Videogiochi": [
       "Nuovo: Finestre a comparsa per le chiamate in arrivo durante il gioco",
+      "Ottimizzazione: Puoi aprire gli strumenti di gioco scorrendo dal lato superiore dello schermo",
+      "Nuovo: Finestre a comparsa per le chiamate in arrivo durante il gioco",
       "Ottimizzazione: Puoi aprire gli strumenti di gioco scorrendo dal lato superiore dello schermo"
     ],
-    "Mi Cloud": [
+    "Servizio cloud Xiaomi": [
+      "Ottimizzazione: Abbiamo ridisegnato la pagina iniziale di Mi Cloud. Ora è molto meglio!",
+      "Ottimizzazione: Sincronizzazione migliorata su più dispositivi",
       "Ottimizzazione: Abbiamo ridisegnato la pagina iniziale di Mi Cloud. Ora è molto meglio!",
       "Ottimizzazione: Sincronizzazione migliorata su più dispositivi"
     ]
@@ -435,12 +601,18 @@
   "logs_es": {
     "Sistema": [
       "Optimización: Parche de seguridad de Android actualizado a junio de 2019. Seguridad del sistema incrementada.",
+      "Optimización: Parche de seguridad de Android actualizado a junio de 2019. Seguridad del sistema incrementada.",
       "Actualización a Android Oreo"
     ],
     "Teléfono": [
+      "Reparado: Terminar las llamadas llevó más tiempo de lo esperado",
       "Reparado: Terminar las llamadas llevó más tiempo de lo esperado"
     ],
     "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Nuevo: Introducción de un reloj personalizable en la Pantalla de bloqueo (Ajustes > Pantalla de bloqueo y contraseña > Ajustes avanzados). El nuevo reloj de la Pantalla de bloqueo no funciona con temas de terceros.",
+      "Optimización: Áreas sensitivas de los puntos reajustadas en el patrón de desbloqueo",
+      "Reparado: Las notificaciones flotantes relacionadas con la batería no se mostraban correctamente en el modo paisaje",
+      "Reparado: El volumen medio no pudo ser restaurado después de recibir una notificación",
       "Nuevo: Introducción de un reloj personalizable en la Pantalla de bloqueo (Ajustes > Pantalla de bloqueo y contraseña > Ajustes avanzados). El nuevo reloj de la Pantalla de bloqueo no funciona con temas de terceros.",
       "Optimización: Formato del porcentaje de la batería para la barra de estado",
       "Optimización: Áreas sensitivas de los puntos reajustadas en el patrón de desbloqueo",
@@ -454,21 +626,29 @@
       "Reparado: El volumen medio no pudo ser restaurado después de recibir una notificación"
     ],
     "Cámara": [
+      "Corrección: El marco de reconocimiento facial no aparecía tras activar la detección de edad en la cámara frontal",
       "Reparado: El marco de detección facial no aparecía después de activar la opción de reconocimiento de edad"
     ],
     "Ajustes": [
       "Optimización: Los valores de redes Wi-Fi son ordenados",
       "Optimización: Las fuentes grandes ahora se muestran mejor",
+      "Optimización: Los valores de redes Wi-Fi son ordenados",
+      "Optimización: Las fuentes grandes ahora se muestran mejor",
       "Reparado: No se pudo activar el punto de acceso portátil cuando el nombre del dispositivo fue establecido a la máxima longitud"
     ],
     "Grabadora": [
+      "Reparar: El estado de la grabación no fue actualizado en la Barra de notificaciones cuando la grabación fue pausada",
       "Reparado: El estado de la grabación no fue actualizado en la Barra de notificaciones cuando la grabación fue pausada"
     ],
     "Acelerador de juegos": [
       "Nuevo: Ventanas flotantes para llamadas entrantes durante juegos",
+      "Optimización: Puedes abrir la caja de herramientas de juegos deslizando desde la parte superior de la pantalla",
+      "Nuevo: Ventanas flotantes para llamadas entrantes durante juegos",
       "Optimización: Puedes abrir la caja de herramientas de juegos deslizando desde la parte superior de la pantalla"
     ],
-    "Mi Cloud": [
+    "Servicio en la nube de Xiaomi": [
+      "Optimización: Hemos rediseñado la página de inicio de Mi Nube. ¡Ahora tiene mucho mejor aspecto!",
+      "Optimización: Sincronización entre múltiples dispositivos mejorada",
       "Optimización: Hemos rediseñado la página de inicio de Mi Nube. ¡Ahora tiene mucho mejor aspecto!",
       "Optimización: Sincronización entre múltiples dispositivos mejorada"
     ]
@@ -476,53 +656,73 @@
   "logs_pt": {
     "Sistema": [
       "Otimização Atualização do Patch de Segurança do Android para Junho de 2019. Segurança do sistema aprimorada.",
+      "Otimização Atualização do Patch de Segurança do Android para Junho de 2019. Segurança do sistema aprimorada.",
       "Atualização para o Android Oreo"
     ],
     "Telefone": [
-      "Correção Encerrar chamadas levava mais tempo que o esperado"
+      "Correção: Encerrar chamadas levava mais tempo que o esperado",
+      "Correção: Encerrar chamadas levava mais tempo que o esperado"
     ],
     "Tela de bloqueio, Barra de status e Área de notificações": [
       "Novo Introduzindo o Relógio personalizável na Tela de bloqueio (Configurar > Bloqueio de tela e senhas > Configurações avançadas). O novo relógio da Tela de bloqueio não funciona com temas de terceiros.",
+      "Otimização: Reajuste nas áreas sensíveis dos pontos do padrão de desbloqueio",
+      "Correção: Notificações flutuantes sobre a bateria não eram exibidas corretamente em modo paisagem",
+      "Correção O volume de mídia não podia ser restaurado após receber uma notificação",
+      "Novo Introduzindo o Relógio personalizável na Tela de bloqueio (Configurar > Bloqueio de tela e senhas > Configurações avançadas). O novo relógio da Tela de bloqueio não funciona com temas de terceiros.",
       "Otimização Formato do percentual da bateria na barra de status",
-      "Otimização Reajuste nas áreas sensíveis dos pontos do padrão de desbloqueio",
+      "Otimização: Reajuste nas áreas sensíveis dos pontos do padrão de desbloqueio",
       "Correção Não era possível usar a impressão digital para desbloquear o dispositivo quando ele estava bloqueado durante uma chamada",
       "Correção Em alguns casos, o ícone dos fones de ouvido desaparecia",
       "Correção As capturas de tela estendidas não funcionavam totalmente em alguns casos",
       "Correção O botão que retorna para uma chamada em andamento era sobreposto ao indicador de duração",
-      "Correção Notificações flutuantes sobre a bateria não eram exibidas corretamente em modo paisagem",
+      "Correção: Notificações flutuantes sobre a bateria não eram exibidas corretamente em modo paisagem",
       "Correção A página de sincronização não podia ser recarregada quando a sincronização era ativada ou desativada na Área de notificações",
       "Correção A Área de notificações ficava preta na Tela de bloqueio quando novas notificações eram recebidas",
       "Correção O volume de mídia não podia ser restaurado após receber uma notificação"
     ],
     "Câmera": [
+      "Correção: A moldura de reconhecimento facial não aparecia após ativar a detecção de idade na câmera frontal",
       "Correção O quadro da detecção facial não aparecia depois que a opção de reconhecimento de idade era ativada"
     ],
     "Configurações": [
+      "Otimização: lista WLAN ajustada para classificar por intensidade do sinal",
+      "Otimização Fontes grandes são exibidas melhor agora",
       "Otimização Ordenação de redes Wi-Fi salvas",
       "Otimização Fontes grandes são exibidas melhor agora",
       "Correção Não era possível ativar o hotspot portátil quando o nome do dispositivo era definido para o comprimento máximo"
     ],
     "Gravador": [
+      "Corrigido o problema em que a barra de status não era atualizada a tempo após pausar a gravação.",
       "Correção O status da gravação não era atualizado na Área de notificações quando uma gravação era pausada"
     ],
     "Acelerador de jogos": [
-      "Novo Janelas flutuantes para chamadas recebidas durante jogos",
-      "Otimização Você pode abrir a caixa de ferramentas de jogos ao deslizar a partir da parte superior da tela"
+      "Novo: Janelas flutuantes para chamadas recebidas durante jogos",
+      "Otimização: Você pode abrir a caixa de ferramentas de jogos ao deslizar a partir da parte superior da tela",
+      "Novo: Janelas flutuantes para chamadas recebidas durante jogos",
+      "Otimização: Você pode abrir a caixa de ferramentas de jogos ao deslizar a partir da parte superior da tela"
     ],
-    "Mi Cloud": [
-      "Otimização Nós redesenhamos a página inicial da Mi Cloud. Ela está muito melhor agora!",
+    "Serviço de nuvem Xiaomi": [
+      "Otimização: nova página inicial do Mi Cloud otimizada, informações de armazenamento em nuvem exibidas com mais clareza.",
+      "Otimização Sincronização otimizada entre vários dispositivos",
+      "Otimização: Nós redesenhamos a página inicial da Mi Cloud. Ela está muito melhor agora!",
       "Otimização Sincronização otimizada entre vários dispositivos"
     ]
   },
   "logs_tr": {
     "Sistem": [
       "Optimizasyon: Android Güvenlik Yaması Haziran 2019 sürümüne güncellendi. Sistem güvenliği artırıldı.",
+      "Optimizasyon: Android Güvenlik Yaması Haziran 2019 sürümüne güncellendi. Sistem güvenliği artırıldı.",
       "Android Oreo güncellemesi"
     ],
     "Telefon": [
+      "Onarım: Aramaları sonlandırmak beklenenden daha uzun sürdü",
       "Onarım: Aramaları sonlandırmak beklenenden daha uzun sürdü"
     ],
     "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Yeni: Özelleştirilebilir Kilit ekranı saati (Ayarlar > Kilit ekranı & şifre > Gelişmiş ayarlar). Yeni kilit ekranı saati üçüncü parti temaları ile çalışmaz.",
+      "Optimizasyon: Kilit açma desenindeki noktalar için hassas bölgeler yeniden ayarlandı",
+      "Onarım: Pille ilgili kayan bildirimler, manzara modunda doğru görüntülenmedi",
+      "Onarım: Medya sesi, bildirim alındıktan sonra geri alınamadı",
       "Yeni: Özelleştirilebilir Kilit ekranı saati (Ayarlar > Kilit ekranı & şifre > Gelişmiş ayarlar). Yeni kilit ekranı saati üçüncü parti temaları ile çalışmaz.",
       "Optimizasyon: Durum çubuğuna pil yüzdesi formatı eklendi",
       "Optimizasyon: Kilit açma desenindeki noktalar için hassas bölgeler yeniden ayarlandı",
@@ -536,310 +736,440 @@
       "Onarım: Medya sesi, bildirim alındıktan sonra geri alınamadı"
     ],
     "Kamera": [
+      "Düzeltme: Ön kamerada yaş algılama açıldıktan sonra yüz tanıma çerçevesi görünmüyordu",
       "Onarım: Yaş tanımlama seçeneği etkinleştirildikten sonra yüz tanıma karesi belirmedi"
     ],
     "Ayarlar": [
+      "Optimizasyon: Wi-Fi ağları için sıralama ilkeleri",
+      "Optimizasyon: Büyük yazı biçimleri şimdi daha iyi görüntüleniyor",
       "Optimizasyon: Wi-Fi ağlar için sıralama prensipleri",
       "Optimizasyon: Büyük yazı biçimleri şimdi daha iyi görüntüleniyor",
       "Onarım: Cihaz adı maksimum uzunlukta oluşturulduğunda kişisel bağlantı noktası açılamadı"
     ],
-    "Ses kaydedici": [
-      "Onarım: Bir kayıt durdurulduğunda, kayıt durumu Bildirim çubuğunda güncellenmedi"
+    "Kayıt Cihazı": [
+      "Fix: Bir kayıt durdurulduğunda, kayıt durumu Bildirim çubuğunda güncellenmedi"
     ],
     "Oyun hız artırıcı": [
       "Yeni: Oyunlar sırasında gelen aramalar için kayan pencereler",
+      "Optimizasyon: Oyun araç kutusunu, ekranın en üstünden itibaren kaydırarak açabilirsiniz",
+      "Yeni: Oyunlar sırasında gelen aramalar için kayan pencereler",
       "Optimizasyon: Oyun araç kutusunu, ekranın en üstünden itibaren kaydırarak açabilirsiniz"
     ],
-    "Mi Cloud": [
-      "Optimizasyon: Mi Cloud^un ana sayfasını yeniden tasarladık, artık çok daha iyi görünüyor!",
+    "Xiaomi Bulut Hizmeti": [
+      "Optimizasyon: Mi Cloud'un ana sayfasını yeniden tasarladık, artık çok daha iyi görünüyor!",
+      "Optimizasyon: Birkaç cihaz arasında geliştirilmiş senkronizasyon",
+      "Optimizasyon: Mi Cloud'un ana sayfasını yeniden tasarladık, artık çok daha iyi görünüyor!",
       "Optimizasyon: Birkaç cihaz arasında geliştirilmiş senkronizasyon"
+    ],
+    "Ses kaydedici": [
+      "Onarım: Bir kayıt durdurulduğunda, kayıt durumu Bildirim çubuğunda güncellenmedi"
     ]
   },
   "logs_id": {
     "Sistem": [
       "Pengoptimalan Patch Keamanan Android diperbarui hingga Juni 2019. Keamanan sistem ditingkatkan.",
+      "Pengoptimalan Patch Keamanan Android diperbarui hingga Juni 2019. Keamanan sistem ditingkatkan.",
       "Pembaruan ke Android Oreo"
     ],
     "Telepon": [
-      "Perbaikan Mematikan panggilan memakan waktu lebih lama dibanding seharusnya"
+      "Perbaikan: Mematikan panggilan memakan waktu lebih lama dibanding seharusnya",
+      "Perbaikan: Mematikan panggilan memakan waktu lebih lama dibanding seharusnya"
     ],
     "Layar kunci, bar status, layar notifikasi": [
       "Baru Memperkenalkan jam Layar kunci yang dapat dikustomisasi (Setelan > Kunci layar & sandi> Setelan lanjutan). Jam Layar kunci baru tidak berfungsi dalam tema pihak ketiga.",
+      "Pengoptimalan: Area sensitif yang disesuaikan untuk titik-titik dalam pola buka kunci",
+      "Perbaikan: Notifikasi mengambang yang berkaitan dengan baterai tidak ditampilkan saat dalam mode horisontal",
+      "Perbaikan Volume media tidak dapat dipulihkan setelah menerima notifikasi",
+      "Baru Memperkenalkan jam Layar kunci yang dapat dikustomisasi (Setelan > Kunci layar & sandi> Setelan lanjutan). Jam Layar kunci baru tidak berfungsi dalam tema pihak ketiga.",
       "Pengoptimalan Format persentase baterai pada bar status",
-      "Pengoptimalan Area sensitif yang disesuaikan untuk titik-titik dalam pola buka kunci",
+      "Pengoptimalan: Area sensitif yang disesuaikan untuk titik-titik dalam pola buka kunci",
       "Perbaikan Tidak dapat menggunakan sidik jari untuk membuka kunci perangkat saat perangkat terkunci selama ada panggilan",
       "Perbaikan Ikon earphone terkadang hilang",
       "Perbaikan Screenshot panjang tidak dapat bekerja dengan baik",
       "Perbaikan Tombol agar Anda dapat kembali ke panggilan yang sedang berlangsung tertimpa dengan bagian waktu",
-      "Perbaikan Notifikasi mengambang yang berkaitan dengan baterai tidak ditampilkan saat dalam mode horisontal",
+      "Perbaikan: Notifikasi mengambang yang berkaitan dengan baterai tidak ditampilkan saat dalam mode horisontal",
       "Perbaikan Halaman sinkron tidak dapat disegarkan kembali setiap kali sinkron dihidupkan atau dimatikan di Layar notifikasi",
       "Perbaikan Layar notifikasi menjadi hitam di Layar kunci saat notifikasi baru diterima",
       "Perbaikan Volume media tidak dapat dipulihkan setelah menerima notifikasi"
     ],
     "Kamera": [
+      "Perbaikan: Bingkai pengenalan wajah tidak muncul setelah deteksi usia di kamera depan diaktifkan",
       "Perbaikan Bingkai deteksi wajah tidak muncul setelah fitur pengenalan usia dihidupkan"
+    ],
+    "Pengaturan": [
+      "Optimasi: Daftar WLAN diurutkan berdasarkan kekuatan sinyal",
+      "Pengoptimalan Ukuran huruf besar dapat ditampilkan dengan lebih baik"
+    ],
+    "Perekam": [
+      "Memperbaiki masalah status bar tidak diperbarui tepat waktu setelah rekaman dijeda.",
+      "Perbaikan Status rekaman tidak diperbarui di Layar notifikasi saat perekaman dijeda"
+    ],
+    "Peningkat kecepatan permainan": [
+      "Baru: Jendela mengambang untuk panggilan masuk saat bermain permainan",
+      "Pengoptimalan: Toolbox permainan dapat dibuka dengan menggeser ke bawah dari bagian atas layar",
+      "Baru: Jendela mengambang untuk panggilan masuk saat bermain permainan",
+      "Pengoptimalan: Toolbox permainan dapat dibuka dengan menggeser ke bawah dari bagian atas layar"
+    ],
+    "Layanan Cloud Xiaomi": [
+      "Optimasi: Halaman utama baru Mi Cloud telah dioptimalkan, informasi ruang cloud ditampilkan lebih jelas.",
+      "Pengoptimalan Sinkronisasi ditingkatkan di beberapa perangkat",
+      "Pengoptimalan: Halaman awal Mi Cloud didesain ulang. Sekarang semakin terlihat lebih baik!",
+      "Pengoptimalan Sinkronisasi ditingkatkan di beberapa perangkat"
     ],
     "Setelan": [
       "Pengoptimalan Pengurutan daftar Wi-Fi berdasarkan kekuatan sinyal",
       "Pengoptimalan Ukuran huruf besar dapat ditampilkan dengan lebih baik",
       "Perbaikan Tidak dapat menghidupkan hotspot portabel saat nama perangkat disetel ke panjang maksimal"
-    ],
-    "Perekam": [
-      "Perbaikan Status rekaman tidak diperbarui di Layar notifikasi saat perekaman dijeda"
-    ],
-    "Peningkat kecepatan permainan": [
-      "Baru Jendela mengambang untuk panggilan masuk saat bermain permainan",
-      "Pengoptimalan Toolbox permainan dapat dibuka dengan menggeser ke bawah dari bagian atas layar"
-    ],
-    "Mi Cloud": [
-      "Pengoptimalan Halaman awal Mi Cloud didesain ulang. Sekarang semakin terlihat lebih baik!",
-      "Pengoptimalan Sinkronisasi ditingkatkan di beberapa perangkat"
     ]
   },
   "logs_vi": {
-    "System": [
+    "Hệ thống": [
       "Optimization: Updated Android Security Patch to June 2019. Increased system security.",
-      "Android Oreo update"
+      "Optimization: Updated Android Security Patch to June 2019. Increased system security.",
+      "Cập nhật lên Android Oreo"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected"
+    "Điện thoại": [
+      "Sửa lỗi: Kết thúc cuộc gọi mất nhiều thời gian hơn dự kiến",
+      "Sửa lỗi: Kết thúc cuộc gọi mất nhiều thời gian hơn dự kiến"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "Optimization: Battery percentage format for the status bar",
-      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly",
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received",
-      "Fix: Media volume couldn^t be restored after receiving a notification"
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Tối ưu hóa: Điều chỉnh vùng cảm ứng cho các điểm trong mẫu mở khóa",
+      "Sửa lỗi thông báo nổi pin yếu không được hiển thị kịp thời ở chế độ ngang",
+      "Fix: Media volume couldn't be restored after receiving a notification",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Tối ưu hóa: Điều chỉnh kiểu pin trên thanh trạng thái thành kiểu số",
+      "Tối ưu hóa: Điều chỉnh vùng cảm ứng cho các điểm trong mẫu mở khóa",
+      "Fix: Couldn't use fingerprint to unlock the device when it was locked during a call",
+      "Đã khắc phục sự cố biểu tượng tai nghe đôi khi không hiển thị",
+      "Fix: Scrolling screenshots didn't always work properly",
+      "Sửa lỗi chồng lấn giữa \"Quay lại cuộc gọi\" và thời gian",
+      "Sửa lỗi thông báo nổi pin yếu không được hiển thị kịp thời ở chế độ ngang",
+      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade",
+      "Đã khắc phục sự cố màn hình tin nhắn đến không hiển thị khi kéo thanh thông báo xuống ở màn hình khóa",
+      "Fix: Media volume couldn't be restored after receiving a notification"
+    ],
+    "Máy ảnh": [
+      "Sửa lỗi: Khung nhận diện khuôn mặt không hiển thị sau khi bật nhận diện tuổi trên camera trước"
+    ],
+    "Cài đặt": [
+      "Tối ưu hóa: Danh sách WLAN được sắp xếp theo cường độ tín hiệu",
+      "Tối ưu hóa: Phông chữ lớn hiện được hiển thị tốt hơn",
+      "Optimization: Sorting principles for Wi-Fi networks",
+      "Tối ưu hóa: Phông chữ lớn hiện được hiển thị tốt hơn",
+      "Sửa lỗi: Không thể bật điểm phát sóng di động khi tên thiết bị được đặt ở độ dài tối đa"
+    ],
+    "Máy ghi âm": [
+      "Sửa lỗi thanh trạng thái không được cập nhật kịp thời sau khi tạm dừng ghi âm."
+    ],
+    "Tăng tốc trò chơi": [
+      "Mới: Cửa sổ nổi cho cuộc gọi đến trong khi chơi game",
+      "Tối ưu hóa: Bạn có thể mở hộp công cụ chơi game bằng cách vuốt từ cạnh trên màn hình",
+      "Mới: Cửa sổ nổi cho cuộc gọi đến trong khi chơi game",
+      "Tối ưu hóa: Bạn có thể mở hộp công cụ chơi game bằng cách vuốt từ cạnh trên màn hình"
+    ],
+    "Dịch vụ đám mây Xiaomi": [
+      "Tối ưu hóa: Trang chủ mới của Mi Cloud đã được tối ưu, thông tin dung lượng đám mây hiển thị rõ ràng hơn.",
+      "Tối ưu hóa: Cải thiện đồng bộ hóa giữa nhiều thiết bị",
+      "Tối ưu hóa: Trang chủ dịch vụ đám mây được thiết kế lại, dung lượng khả dụng hiển thị trực quan hơn.",
+      "Tối ưu hóa: Cải thiện đồng bộ hóa giữa nhiều thiết bị"
     ],
     "Camera": [
-      "Fix: Face detection frame didn^t appear after the age recognition option had been turned on"
-    ],
-    "Settings": [
-      "Optimization: Sorting principles for Wi-Fi networks",
-      "Optimization: Big fonts are displayed better now",
-      "Fix: Couldn^t turn on portable hotspot when device name was set to maximum length"
+      "Fix: Face detection frame didn't appear after the age recognition option had been turned on"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the status bar when a recording was paused"
-    ],
-    "Game speed booster": [
-      "New: Floating windows for incoming calls during games",
-      "Optimization: You can open the gaming toolbox by swiping from the top side of the screen"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
-      "Optimization: Improved sync across multiple devices"
+      "Fix: Recording status wasn't updated in the status bar when a recording was paused"
     ]
   },
   "logs_th": {
-    "System": [
+    "ระบบ": [
+      "Optimization: Updated Android Security Patch to June 2019. Increased system security.",
       "Optimization: Updated Android Security Patch to June 2019. Increased system security.",
       "Android Oreo update"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected"
+    "โทรศัพท์": [
+      "แก้ไข: การวางสายใช้เวลานานกว่าที่ควร",
+      "แก้ไข: การวางสายใช้เวลานานกว่าที่ควร"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "Optimization: Battery percentage format for the status bar",
+    "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
       "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly",
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received",
-      "Fix: Media volume couldn^t be restored after receiving a notification"
+      "แก้ไขปัญหาการไม่แสดงการแจ้งเตือนแบบลอยสำหรับแบตเตอรี่ต่ำในโหมดแนวนอนอย่างทันท่วงที",
+      "Fix: Media volume couldn't be restored after receiving a notification",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "ปรับปรุง: ปรับสไตล์แบตเตอรี่ในแถบสถานะเป็นสไตล์ตัวเลข",
+      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
+      "Fix: Couldn't use fingerprint to unlock the device when it was locked during a call",
+      "แก้ไขปัญหาไอคอนหูฟังไม่แสดงในบางครั้ง",
+      "Fix: Scrolling screenshots didn't always work properly",
+      "แก้ไขการทับซ้อนของ \"กลับไปที่การโทร\" และเวลา",
+      "แก้ไขปัญหาการไม่แสดงการแจ้งเตือนแบบลอยสำหรับแบตเตอรี่ต่ำในโหมดแนวนอนอย่างทันท่วงที",
+      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade",
+      "แก้ไขปัญหาที่เมื่อเลื่อนแถบแจ้งเตือนลงบนหน้าจอล็อกแล้ว หน้าจอข้อความขาเข้าไม่แสดงขึ้นมา",
+      "Fix: Media volume couldn't be restored after receiving a notification"
     ],
-    "Camera": [
-      "Fix: Face detection frame didn^t appear after the age recognition option had been turned on"
+    "กล้อง": [
+      "แก้ไข: กรอบการจดจำใบหน้าไม่แสดงหลังเปิดการตรวจจับอายุบนกล้องหน้า",
+      "Fix: Face detection frame didn't appear after the age recognition option had been turned on"
     ],
-    "Settings": [
+    "การตั้งค่า": [
+      "การปรับให้เหมาะสม: ปรับรายการ WLAN ให้เรียงตามความแรงของสัญญาณ",
+      "การเพิ่มประสิทธิภาพ: ตัวอักษรขนาดใหญ่แสดงผลได้ดีขึ้นแล้ว",
       "Optimization: Sorting principles for Wi-Fi networks",
-      "Optimization: Big fonts are displayed better now",
-      "Fix: Couldn^t turn on portable hotspot when device name was set to maximum length"
+      "การเพิ่มประสิทธิภาพ: ตัวอักษรขนาดใหญ่แสดงผลได้ดีขึ้นแล้ว",
+      "แก้ไข: ไม่สามารถเปิดฮอตสปอตแบบพกพาได้เมื่อตั้งชื่ออุปกรณ์เป็นความยาวสูงสุด"
+    ],
+    "เครื่องบันทึกเสียง": [
+      "แก้ไขปัญหาที่แถบสถานะไม่อัปเดตทันเวลาหลังหยุดพักการบันทึกเสียง"
+    ],
+    "ตัวเร่งความเร็วเกม": [
+      "ใหม่: ฟีเจอร์หน้าต่างลอยสำหรับการโทร รองรับการแสดงสถานะการเชื่อมต่อผ่านหน้าต่างลอยสำหรับสายที่รับระหว่างเล่นเกม",
+      "ปรับปรุง: เปลี่ยนวิธีเรียกใช้กล่องเครื่องมือเกมเป็นการปัดจากด้านบน",
+      "ใหม่: ฟีเจอร์หน้าต่างลอยสำหรับการโทร รองรับการแสดงสถานะการเชื่อมต่อผ่านหน้าต่างลอยสำหรับสายที่รับระหว่างเล่นเกม",
+      "ปรับปรุง: เปลี่ยนวิธีเรียกใช้กล่องเครื่องมือเกมเป็นการปัดจากด้านบน"
+    ],
+    "บริการคลาวด์ Xiaomi": [
+      "ปรับปรุง: ปรับปรุงหน้าแรกใหม่ของ Mi Cloud ให้แสดงข้อมูลพื้นที่จัดเก็บบนคลาวด์ได้ชัดเจนขึ้น",
+      "Optimization: Improved sync across multiple devices",
+      "ปรับปรุง: ออกแบบหน้าหลักของบริการคลาวด์ใหม่ ทำให้แสดงพื้นที่ว่างได้ชัดเจนขึ้น",
+      "การปรับให้เหมาะสม: ปรับปรุงการซิงค์ระหว่างอุปกรณ์หลายเครื่อง"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the status bar when a recording was paused"
-    ],
-    "Game speed booster": [
-      "New: Floating windows for incoming calls during games",
-      "Optimization: You can open the gaming toolbox by swiping from the top side of the screen"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
-      "Optimization: Improved sync across multiple devices"
+      "Fix: Recording status wasn't updated in the status bar when a recording was paused"
     ]
   },
   "logs_ar": {
-    "System": [
+    "النظام": [
+      "Optimization: Updated Android Security Patch to June 2019. Increased system security.",
       "Optimization: Updated Android Security Patch to June 2019. Increased system security.",
       "Android Oreo update"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected"
+    "الهاتف": [
+      "إصلاح: استغرق إنهاء المكالمات وقتًا أطول من المتوقع",
+      "إصلاح: استغرق إنهاء المكالمات وقتًا أطول من المتوقع"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "Optimization: Battery percentage format for the status bar",
+    "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
       "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly",
+      "إصلاح: لم يتم عرض إشعار عائم خاص بانخفاض البطارية في الوقت المناسب في الوضع الأفقي",
+      "Fix: Media volume couldn't be restored after receiving a notification",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "تحسين: تم ضبط نمط البطارية في شريط الحالة على النمط الرقمي",
+      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
+      "Fix: Couldn't use fingerprint to unlock the device when it was locked during a call",
+      "تم إصلاح مشكلة عدم ظهور رمز سماعة الأذن أحيانًا",
+      "Fix: Scrolling screenshots didn't always work properly",
       "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received",
-      "Fix: Media volume couldn^t be restored after receiving a notification"
+      "إصلاح: لم يتم عرض إشعار عائم خاص بانخفاض البطارية في الوقت المناسب في الوضع الأفقي",
+      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade",
+      "إصلاح مشكلة عدم ظهور شاشة الرسائل الواردة عند سحب شريط الإشعارات في شاشة القفل",
+      "Fix: Media volume couldn't be restored after receiving a notification"
     ],
-    "Camera": [
-      "Fix: Face detection frame didn^t appear after the age recognition option had been turned on"
+    "كاميرا": [
+      "إصلاح: لم يظهر إطار التعرف على الوجه بعد تفعيل اكتشاف العمر في الكاميرا الأمامية"
     ],
-    "Settings": [
+    "الإعدادات": [
+      "تحسين: تعديل قائمة WLAN لتُرتب حسب قوة الإشارة",
+      "التحسين: يتم عرض الخطوط الكبيرة بشكل أفضل الآن",
       "Optimization: Sorting principles for Wi-Fi networks",
-      "Optimization: Big fonts are displayed better now",
-      "Fix: Couldn^t turn on portable hotspot when device name was set to maximum length"
+      "التحسين: يتم عرض الخطوط الكبيرة بشكل أفضل الآن",
+      "إصلاح: تعذّر تشغيل نقطة الاتصال المحمولة عند ضبط اسم الجهاز على الحد الأقصى للطول"
+    ],
+    "مسجل": [
+      "إصلاح مشكلة عدم تحديث شريط الحالة في الوقت المناسب بعد إيقاف التسجيل مؤقتًا."
+    ],
+    "تسريع الألعاب": [
+      "جديد: ميزة النافذة العائمة للمكالمات، وتدعم عرض حالة الاتصال في نافذة عائمة للمكالمات التي يتم الرد عليها أثناء الألعاب",
+      "تحسين: تم تغيير طريقة استدعاء صندوق أدوات الألعاب إلى السحب من الجانب العلوي",
+      "جديد: ميزة النافذة العائمة للمكالمات، وتدعم عرض حالة الاتصال في نافذة عائمة للمكالمات التي يتم الرد عليها أثناء الألعاب",
+      "تحسين: تم تغيير طريقة استدعاء صندوق أدوات الألعاب إلى السحب من الجانب العلوي"
+    ],
+    "خدمة Xiaomi السحابية": [
+      "تحسين: تم تحسين الصفحة الرئيسية الجديدة لـ Mi Cloud، وأصبحت معلومات التخزين السحابي أكثر وضوحًا.",
+      "Optimization: Improved sync across multiple devices",
+      "تحسين: إعادة تصميم الصفحة الرئيسية لخدمة السحابة، وعرض المساحة المتاحة بشكل أكثر وضوحًا",
+      "التحسين: تحسين المزامنة بين أجهزة متعددة"
+    ],
+    "الكاميرا": [
+      "Fix: Face detection frame didn't appear after the age recognition option had been turned on"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the status bar when a recording was paused"
-    ],
-    "Game speed booster": [
-      "New: Floating windows for incoming calls during games",
-      "Optimization: You can open the gaming toolbox by swiping from the top side of the screen"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
-      "Optimization: Improved sync across multiple devices"
+      "Fix: Recording status wasn't updated in the status bar when a recording was paused"
     ]
   },
   "logs_in": {
-    "System": [
+    "सिस्टम": [
+      "Optimization: Updated Android Security Patch to June 2019. Increased system security.",
       "Optimization: Updated Android Security Patch to June 2019. Increased system security.",
       "Android Oreo update"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected"
+    "फ़ोन": [
+      "ठीक किया गया: कॉल समाप्त करने में अपेक्षा से अधिक समय लगता था",
+      "ठीक किया गया: कॉल समाप्त करने में अपेक्षा से अधिक समय लगता था"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "Optimization: Battery percentage format for the status bar",
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
       "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly",
+      "लैंडस्केप मोड में कम बैटरी की फ़्लोटिंग सूचना समय पर न दिखने की समस्या ठीक की गई",
+      "Fix: Media volume couldn't be restored after receiving a notification",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Optimasi: Gaya baterai di bilah status diubah ke gaya angka",
+      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
+      "Fix: Couldn't use fingerprint to unlock the device when it was locked during a call",
+      "हेडफ़ोन आइकन कभी-कभी न दिखने की समस्या ठीक की गई",
+      "Fix: Scrolling screenshots didn't always work properly",
       "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received",
-      "Fix: Media volume couldn^t be restored after receiving a notification"
+      "लैंडस्केप मोड में कम बैटरी की फ़्लोटिंग सूचना समय पर न दिखने की समस्या ठीक की गई",
+      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade",
+      "Diperbaiki: Layar pesan masuk tidak muncul saat menarik panel notifikasi di layar kunci.",
+      "Fix: Media volume couldn't be restored after receiving a notification"
     ],
-    "Camera": [
-      "Fix: Face detection frame didn^t appear after the age recognition option had been turned on"
+    "कैमरा": [
+      "फ़िक्स: फ्रंट कैमरा पर आयु पहचान सक्षम करने के बाद चेहरा पहचान फ़्रेम नहीं दिखाई दे रहा था",
+      "Fix: Face detection frame didn't appear after the age recognition option had been turned on"
     ],
-    "Settings": [
+    "सेटिंग्स": [
+      "अनुकूलन: WLAN सूची को सिग्नल स्ट्रेंथ के अनुसार क्रमबद्ध किया गया",
+      "अनुकूलन: बड़े फ़ॉन्ट अब बेहतर प्रदर्शित होते हैं",
       "Optimization: Sorting principles for Wi-Fi networks",
-      "Optimization: Big fonts are displayed better now",
-      "Fix: Couldn^t turn on portable hotspot when device name was set to maximum length"
+      "अनुकूलन: बड़े फ़ॉन्ट अब बेहतर प्रदर्शित होते हैं",
+      "Perbaikan: Tidak dapat mengaktifkan hotspot portabel saat nama perangkat diatur ke panjang maksimum"
+    ],
+    "रिकॉर्डर": [
+      "रिकॉर्डिंग को पॉज़ करने के बाद स्टेटस बार समय पर अपडेट न होने की समस्या ठीक की गई।"
+    ],
+    "गेम गति बूस्टर": [
+      "नया: फ़ोन फ़्लोटिंग विंडो सुविधा, गेम के दौरान कनेक्ट होने वाले कॉल का कनेक्टेड स्टेटस फ़्लोटिंग विंडो में दिखाने का समर्थन करती है।",
+      "अनुकूलन: गेम टूलबॉक्स खोलने का तरीका बदलकर स्क्रीन के ऊपरी किनारे से स्वाइप करना किया गया",
+      "नया: फ़ोन फ़्लोटिंग विंडो सुविधा, गेम के दौरान कनेक्ट होने वाले कॉल का कनेक्टेड स्टेटस फ़्लोटिंग विंडो में दिखाने का समर्थन करती है।",
+      "अनुकूलन: गेम टूलबॉक्स खोलने का तरीका बदलकर स्क्रीन के ऊपरी किनारे से स्वाइप करना किया गया"
+    ],
+    "Xiaomi क्लाउड सेवा": [
+      "अनुकूलन: Mi Cloud के नए होमपेज को अनुकूलित किया गया, क्लाउड स्टोरेज की जानकारी अब और स्पष्ट दिखती है।",
+      "Optimization: Improved sync across multiple devices",
+      "अनुकूलन: क्लाउड सेवा के होमपेज को फिर से डिज़ाइन किया गया है, उपलब्ध स्थान अब और स्पष्ट रूप से दिखता है।",
+      "अनुकूलन: कई उपकरणों के बीच सिंक में सुधार"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the status bar when a recording was paused"
-    ],
-    "Game speed booster": [
-      "New: Floating windows for incoming calls during games",
-      "Optimization: You can open the gaming toolbox by swiping from the top side of the screen"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
-      "Optimization: Improved sync across multiple devices"
+      "Fix: Recording status wasn't updated in the status bar when a recording was paused"
     ]
   },
   "logs_ug": {
+    "سىستېما": [
+      "Optimization: Updated Android Security Patch to June 2019. Increased system security."
+    ],
+    "تېلېفون": [
+      "Fix: Ending calls took longer time than expected",
+      "Fix: Ending calls took longer time than expected"
+    ],
+    "Lockscreen, status bar, Notification shade": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
+      "Fix: Battery-related floating notifications weren't displayed correctly in landscape mode",
+      "Fix: Media volume couldn't be restored after receiving a notification",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Optimization: Battery percentage format for the status bar",
+      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
+      "Fix: Couldn't use fingerprint to unlock the device when it was locked during a call",
+      "تىڭشىغۇچ سىنبەلگىسىنىڭ بەزىدە كۆرۈنمەسلىك مەسىلىسى تۈزىتىلدى",
+      "Fix: Scrolling screenshots didn't always work properly",
+      "Fix: The button that returns you to an ongoing call overlapped with time",
+      "Fix: Battery-related floating notifications weren't displayed correctly in landscape mode",
+      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade",
+      "Fix: Notification shade went black on the Lock screen when new notifications were received",
+      "Fix: Media volume couldn't be restored after receiving a notification"
+    ],
+    "كامېرا": [
+      "تۈزىتىش: ئالدى كامېرىدا ياشنى تونۇش ئېچىلغاندىن كېيىن يۈز تونۇش رامكىسى كۆرۈنمەيدىغان مەسىلە",
+      "Fix: Face detection frame didn't appear after the age recognition option had been turned on"
+    ],
+    "تەڭشەك": [
+      "ياخشىلاش: WLAN تىزىملىكى سىگنال كۈچى بويىچە تەرتىپلىنىدۇ",
+      "Optimization: Big fonts are displayed better now"
+    ],
+    "ئويۇن تېزلىتىش": [
+      "New: Floating windows for incoming calls during games",
+      "Optimization: You can open the gaming toolbox by swiping from the top side of the screen",
+      "New: Floating windows for incoming calls during games",
+      "Optimization: You can open the gaming toolbox by swiping from the top side of the screen"
+    ],
+    "Xiaomi بۇلۇت مۇلازىمىتى": [
+      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!",
+      "Optimization: Improved sync across multiple devices",
+      "ياخشىلاندى: بۇلۇت مۇلازىمىتى باش بېتى قايتا لايىھەلەندى، ئىشلەتكىلى بولىدىغان بوشلۇق كۆرسىتىلىشى تېخىمۇ كۆرۈنەرلىك بولدى.",
+      "Optimization: Improved sync across multiple devices"
+    ],
     "System": [
       "Optimization: Updated Android Security Patch to June 2019. Increased system security.",
       "Android Oreo update"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected"
-    ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "Optimization: Battery percentage format for the status bar",
-      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly",
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received",
-      "Fix: Media volume couldn^t be restored after receiving a notification"
-    ],
-    "Camera": [
-      "Fix: Face detection frame didn^t appear after the age recognition option had been turned on"
-    ],
-    "Settings": [
+    "تەڭشەكلەر": [
       "Optimization: Sorting principles for Wi-Fi networks",
       "Optimization: Big fonts are displayed better now",
-      "Fix: Couldn^t turn on portable hotspot when device name was set to maximum length"
+      "ئوڭشاش: ئۈسكۈنىنىڭ نامى ئەڭ چوڭ ئۇزۇنلۇققا تەڭشەلگەندە كۆچمە ھوتسپوتنى ئاچقىلى بولمىدى"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the status bar when a recording was paused"
-    ],
-    "Game speed booster": [
-      "New: Floating windows for incoming calls during games",
-      "Optimization: You can open the gaming toolbox by swiping from the top side of the screen"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
-      "Optimization: Improved sync across multiple devices"
+      "Fix: Recording status wasn't updated in the status bar when a recording was paused"
     ]
   },
   "logs_bo": {
-    "System": [
-      "Optimization: Updated Android Security Patch to June 2019. Increased system security.",
-      "Android Oreo update"
+    "མ་ལག": [
+      "Optimization: Updated Android Security Patch to June 2019. Increased system security."
     ],
-    "Phone": [
+    "ཁ་པར": [
+      "Fix: Ending calls took longer time than expected",
       "Fix: Ending calls took longer time than expected"
     ],
     "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
+      "Fix: Battery-related floating notifications weren't displayed correctly in landscape mode",
+      "Fix: Media volume couldn't be restored after receiving a notification",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
       "Optimization: Battery percentage format for the status bar",
       "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
+      "Fix: Couldn't use fingerprint to unlock the device when it was locked during a call",
       "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly",
+      "Fix: Scrolling screenshots didn't always work properly",
       "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
+      "Fix: Battery-related floating notifications weren't displayed correctly in landscape mode",
+      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade",
       "Fix: Notification shade went black on the Lock screen when new notifications were received",
-      "Fix: Media volume couldn^t be restored after receiving a notification"
+      "Fix: Media volume couldn't be restored after receiving a notification"
     ],
-    "Camera": [
-      "Fix: Face detection frame didn^t appear after the age recognition option had been turned on"
+    "པར་ཆས": [
+      "Fix: Face detection frame didn't appear after the age recognition option had been turned on"
     ],
     "Settings": [
       "Optimization: Sorting principles for Wi-Fi networks",
-      "Optimization: Big fonts are displayed better now",
-      "Fix: Couldn^t turn on portable hotspot when device name was set to maximum length"
-    ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the status bar when a recording was paused"
+      "Optimization: Big fonts are displayed better now"
     ],
     "Game speed booster": [
+      "New: Floating windows for incoming calls during games",
+      "Optimization: You can open the gaming toolbox by swiping from the top side of the screen",
       "New: Floating windows for incoming calls during games",
       "Optimization: You can open the gaming toolbox by swiping from the top side of the screen"
     ],
     "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
+      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!",
+      "Optimization: Improved sync across multiple devices",
+      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!",
       "Optimization: Improved sync across multiple devices"
+    ],
+    "System": [
+      "Optimization: Updated Android Security Patch to June 2019. Increased system security.",
+      "Android Oreo update"
+    ],
+    "Camera": [
+      "Fix: Face detection frame didn't appear after the age recognition option had been turned on"
+    ],
+    "སྒྲིག་སྟངས": [
+      "Optimization: Sorting principles for Wi-Fi networks",
+      "Optimization: Big fonts are displayed better now",
+      "Fix: Couldn't turn on portable hotspot when device name was set to maximum length"
+    ],
+    "Recorder": [
+      "Fix: Recording status wasn't updated in the status bar when a recording was paused"
     ]
   }
 }

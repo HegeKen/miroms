@@ -1,20 +1,32 @@
 {
   "logs_zh": {
     "应用锁": [
+      "新增 支持通过人脸解锁应用",
       "新增 支持通过人脸解锁应用"
     ],
     "时钟": [
       "修复 计时器页面按钮点击闪烁的问题",
+      "修复 时钟在特殊日期出现闪退的问题",
+      "修复 计时器页面按钮点击闪烁的问题",
+      "修复 时钟在特殊日期出现闪退的问题",
+      "修复 计时器页面按钮点击闪烁的问题",
       "修复 时钟在特殊日期出现闪退的问题"
     ],
     "相册": [
+      "新增 AI智能照片优选，帮你选出相似照片中评分最高的一张",
       "新增 AI智能照片优选，帮你选出相似照片中评分最高的一张"
     ],
     "游戏加速": [
+      "新增 电话悬浮窗功能，支持游戏中接通的电话使用悬浮窗显示接通状态",
+      "新增 电话悬浮窗功能，支持游戏中接通的电话使用悬浮窗显示接通状态",
       "新增 电话悬浮窗功能，支持游戏中接通的电话使用悬浮窗显示接通状态"
     ],
     "全球上网": [
       "新增 “云流量”，支持云卡上网模式，可享受更全面的网络覆盖和更便宜的流量资费"
+    ],
+    "其他": [
+      "提高系统的稳定性",
+      "优化系统的流畅度"
     ]
   },
   "logs_en": {
@@ -23,157 +35,486 @@
     ],
     "Clock": [
       "Fix: Timer button started flashing after being tapped",
+      "Fix: Clock force closed on some specific dates",
+      "Fix: Timer button started flashing after being tapped",
       "Fix: Clock force closed on some specific dates"
     ],
     "Gallery": [
+      "New: AI can help you pick the best shot among the similar ones",
       "New: AI can help you pick the best shot among the similar ones"
     ],
     "Game speed booster": [
+      "New: Floating windows for incoming calls during games",
+      "New: Floating windows for incoming calls during games",
       "New: Floating windows for incoming calls during games"
+    ],
+    "Other": [
+      "Optimized system performance",
+      "Improved system security and stability"
+    ],
+    "App Lock": [
+      "New: Face unlock support"
     ]
   },
   "logs_zh_tw": {
     "應用鎖": [
+      "新增 支援使用人臉解應用鎖",
       "新增 支援使用人臉解應用鎖"
     ],
     "時鐘": [
       "修復 計時器頁面按鈕點擊閃爍的問題",
+      "修復 時鐘在特殊日期出現閃退的問題",
+      "修復 計時器頁面按鈕點擊閃爍的問題",
+      "修復 時鐘在特殊日期出現閃退的問題",
+      "修復 計時器頁面按鈕點擊閃爍的問題",
       "修復 時鐘在特殊日期出現閃退的問題"
     ],
     "遊戲加速": [
+      "新增 電話懸浮視窗功能，支援遊戲中接通的電話使用懸浮視窗顯示接通狀態",
+      "新增 電話懸浮視窗功能，支援遊戲中接通的電話使用懸浮視窗顯示接通狀態",
       "新增 電話懸浮視窗功能，支援遊戲中接通的電話使用懸浮視窗顯示接通狀態"
+    ],
+    "其他": [
+      "改善系統的穩定性",
+      "優化系統的流暢度"
     ]
   },
   "logs_ja": {
+    "アプリロック": [
+      "新規: 顔認証によるアプリのロック解除に対応",
+      "追加: 顔認証によるアプリのロック解除をサポート"
+    ],
+    "時計": [
+      "タイマーページのボタンをタップした際に点滅する問題を修正",
+      "特定の日付で時計が強制終了する問題を修正",
+      "タイマーページのボタンをタップした際に点滅する問題を修正",
+      "特定の日付で時計が強制終了する問題を修正",
+      "タイマーページでボタンをタップした際にチラつく問題を修正",
+      "特別な日付に時計がクラッシュする問題を修正"
+    ],
+    "ゲーム加速": [
+      "新機能: ゲーム中の着信通話をフローティングウィンドウで表示",
+      "新機能: ゲーム中の着信通話をフローティングウィンドウで表示"
+    ],
     "その他": [
       "システムパフォーマンスの最適化",
       "システムのセキュリティと安定性の向上"
+    ],
+    "ゲーム高速化": [
+      "新機能: ゲーム中の着信通話にフローティングウィンドウ"
     ]
   },
   "logs_ko": {
+    "앱 잠금": [
+      "신규: 얼굴 인식으로 앱 잠금 해제 지원",
+      "추가: 얼굴 인식으로 앱 잠금 해제 지원"
+    ],
+    "시계": [
+      "타이머 페이지에서 버튼을 탭할 때 깜박이는 문제를 수정했습니다",
+      "특정 날짜에 시계가 강제 종료되는 문제 수정",
+      "타이머 페이지에서 버튼을 탭할 때 깜박이는 문제를 수정했습니다",
+      "특정 날짜에 시계가 강제 종료되는 문제 수정",
+      "타이머 페이지에서 버튼을 탭할 때 깜빡이는 문제를 수정했습니다.",
+      "특정 날짜에 시계가 비정상 종료되는 문제를 수정했습니다"
+    ],
+    "게임 가속": [
+      "새 기능: 게임 중 수신 전화를 플로팅 창으로 표시",
+      "새 기능: 게임 중 수신 전화를 플로팅 창으로 표시"
+    ],
     "기타": [
       "시스템 성능 최적화",
       "시스템 보안 및 안정성 개선"
+    ],
+    "게임 속도 향상": [
+      "새 기능: 게임 중 수신 전화를 위한 플로팅 창"
     ]
   },
   "logs_ru": {
     "Защита приложений": [
+      "Новое: Поддержка разблокировки по лицу",
       "Новое: Поддержка разблокировки по лицу"
     ],
     "Часы": [
       "Исправлено: Кнопка таймера начинала мигать после нажатия",
+      "Исправлено: Некорректное завершение работы приложения Часы в определенные дни",
+      "Исправлено: Кнопка таймера начинала мигать после нажатия",
+      "Исправлено: Некорректное завершение работы приложения Часы в определенные дни",
+      "Исправлено: Кнопка таймера начинала мигать после нажатия",
       "Исправлено: Некорректное завершение работы приложения Часы в определенные дни"
     ],
     "Ускорение приложений": [
+      "Новое: Всплывающее окно с уведомлением о входящем вызове во время игры",
+      "Новое: Всплывающее окно с уведомлением о входящем вызове во время игры",
       "Новое: Всплывающее окно с уведомлением о входящем вызове во время игры"
+    ],
+    "Другое": [
+      "Оптимизация производительности системы",
+      "Улучшение безопасности и стабильности системы"
     ]
   },
   "logs_uk": {
+    "Блокування додатків": [
+      "Нове: Підтримка розблокування застосунків обличчям",
+      "Нове: Підтримка розблокування застосунків за допомогою розпізнавання обличчя"
+    ],
+    "Годинник": [
+      "Виправлено: кнопка на сторінці таймера блимає після натискання",
+      "Виправлено: Годинник аварійно завершував роботу в окремі дати",
+      "Виправлено: кнопка на сторінці таймера блимає після натискання",
+      "Виправлено: Годинник аварійно завершував роботу в окремі дати",
+      "Виправлено проблему мерехтіння кнопок на сторінці таймера під час натискання.",
+      "Виправлено проблему аварійного завершення роботи Годинника в особливі дати"
+    ],
+    "Прискорення ігор": [
+      "Нове: Плаваючі вікна для вхідних викликів під час ігор",
+      "Нове: Плаваючі вікна для вхідних викликів під час ігор",
+      "Нове: плаваюче вікно для вхідних дзвінків під час ігор"
+    ],
     "Інше": [
       "Оптимізація продуктивності системи",
       "Покращення безпеки та стабільності системи"
     ]
   },
   "logs_pl": {
+    "Blokada aplikacji": [
+      "Nowość: Odblokowywanie aplikacji za pomocą rozpoznawania twarzy",
+      "Nowość: Obsługa odblokowywania aplikacji przez rozpoznawanie twarzy"
+    ],
+    "Zegar": [
+      "Poprawka: przycisk na stronie minutnika miga po dotknięciu",
+      "Naprawiono: Zegar ulegał awarii w określonych datach",
+      "Poprawka: przycisk na stronie minutnika miga po dotknięciu",
+      "Naprawiono: Zegar ulegał awarii w określonych datach",
+      "Naprawiono migotanie przycisków na stronie timera po dotknięciu.",
+      "Naprawiono problem z awarią aplikacji Zegar w specjalne dni"
+    ],
+    "Przyspieszanie gier": [
+      "Nowość: Pływające okna dla połączeń przychodzących podczas gier",
+      "Nowość: Pływające okna dla połączeń przychodzących podczas gier",
+      "Nowość: pływające okno dla połączeń przychodzących podczas gier"
+    ],
     "Inne": [
       "Zoptymalizowana wydajność systemu",
       "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
   "logs_de": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "App-Sperre": [
+      "Neu: Apps per Gesichtserkennung entsperren",
+      "Neu: Apps per Gesichtserkennung entsperren"
+    ],
+    "Uhr": [
+      "Behebung: Schaltfläche auf der Timer-Seite blinkt nach dem Antippen",
+      "Behoben: Uhr stürzte an bestimmten Daten ab",
+      "Behebung: Schaltfläche auf der Timer-Seite blinkt nach dem Antippen",
+      "Behoben: Uhr stürzte an bestimmten Daten ab",
+      "Behebt das Flackern der Schaltflächen auf der Timer-Seite beim Antippen.",
+      "Behebung des Problems, dass die Uhr an besonderen Tagen abstürzt"
+    ],
+    "Spielbeschleunigung": [
+      "Neu: Schwebende Fenster für eingehende Anrufe während Spielen",
+      "Neu: Schwebende Fenster für eingehende Anrufe während Spielen",
+      "Neu: Schwebefenster für eingehende Anrufe in Spielen"
+    ],
+    "Sonstiges": [
+      "Systemleistung optimiert",
+      "Systemsicherheit und -stabilität verbessert"
     ]
   },
   "logs_fr": {
+    "Verrouillage de l'application": [
+      "Nouveau: Fonction de reconnaissance facial"
+    ],
+    "Horloge": [
+      "Correction : le bouton de la page Minuteur clignote après un appui",
+      "Correction : l'horloge plantait à certaines dates",
+      "Correction : le bouton de la page Minuteur clignote après un appui",
+      "Correction : l'horloge plantait à certaines dates",
+      "Correction du clignotement des boutons de la page Minuteur lors d’un appui.",
+      "Correction du problème de fermeture inattendue de l'application Horloge à certaines dates"
+    ],
+    "Booster de vitesse de jeu": [
+      "Nouveau: Fenêtres flottantes pour les appels entrants pendant les jeux",
+      "Nouveau: Fenêtres flottantes pour les appels entrants pendant les jeux"
+    ],
     "Autre": [
       "Performances système optimisées",
       "Sécurité et stabilité du système améliorées"
+    ],
+    "Verrouillage des applications": [
+      "Nouveau : déverrouillage des applications par reconnaissance faciale"
+    ],
+    "Accélération des jeux": [
+      "Nouveau : fenêtre flottante pour les appels entrants pendant les jeux"
     ]
   },
   "logs_it": {
     "Blocco app": [
+      "Nuovo: Supporto per Riconoscimento facciale",
       "Nuovo: Supporto per Riconoscimento facciale"
     ],
     "Orologio": [
+      "Risolvi: Il pulsante del timer cominciava a lampeggiare quando veniva premuto",
+      "Risolvi: Chiusura forzata di Orologio in alcune date specifiche",
+      "Risolvi: Il pulsante del timer cominciava a lampeggiare quando veniva premuto",
+      "Risolvi: Chiusura forzata di Orologio in alcune date specifiche",
       "Risolto: Il pulsante del timer cominciava a lampeggiare quando veniva premuto",
       "Risolto: Chiusura forzata di Orologio in alcune date specifiche"
     ],
     "Turbo Videogiochi": [
+      "Nuovo: Finestre a comparsa per le chiamate in arrivo durante il gioco",
+      "Nuovo: Finestre a comparsa per le chiamate in arrivo durante il gioco",
       "Nuovo: Finestre a comparsa per le chiamate in arrivo durante il gioco"
+    ],
+    "Altro": [
+      "Prestazioni di sistema ottimizzate",
+      "Maggiore sicurezza e stabilità di sistema"
     ]
   },
   "logs_es": {
     "Bloqueo de aplicaciones": [
+      "Nuevo: Soporte para el Desbloqueo facial",
       "Nuevo: Soporte para el Desbloqueo facial"
     ],
     "Reloj": [
+      "Reparar: El botón del temporizador comenzó a parpadear después de ser pulsado",
+      "Reparar: Cierre forzoso del Reloj en algunas fechas específicas",
+      "Reparar: El botón del temporizador comenzó a parpadear después de ser pulsado",
+      "Reparar: Cierre forzoso del Reloj en algunas fechas específicas",
       "Reparado: El botón del temporizador comenzó a parpadear después de ser pulsado",
       "Reparado: Cierre forzoso del Reloj en algunas fechas específicas"
     ],
     "Acelerador de juegos": [
+      "Nuevo: Ventanas flotantes para llamadas entrantes durante juegos",
+      "Nuevo: Ventanas flotantes para llamadas entrantes durante juegos",
       "Nuevo: Ventanas flotantes para llamadas entrantes durante juegos"
+    ],
+    "Otros": [
+      "Rendimiento del sistema optimizado",
+      "Estabilidad y seguridad del sistema mejorada"
     ]
   },
   "logs_pt": {
+    "Bloqueio de apps": [
+      "Novo: Suporte a desbloqueio facial"
+    ],
+    "Relógio": [
+      "Correção: o botão da página do temporizador pisca ao ser tocado",
+      "Correção: o Relógio fechava à força em datas específicas",
+      "Correção: o botão da página do temporizador pisca ao ser tocado",
+      "Correção: o Relógio fechava à força em datas específicas",
+      "Corrigido o problema de os botões da página do timer piscarem ao tocar.",
+      "Corrigido o problema de fechamento inesperado do Relógio em datas especiais"
+    ],
+    "Acelerador de jogos": [
+      "Novo: Janelas flutuantes para chamadas recebidas durante jogos",
+      "Novo: Janelas flutuantes para chamadas recebidas durante jogos",
+      "Novo: janela flutuante para chamadas recebidas durante jogos"
+    ],
     "Outros": [
       "Desempenho do sistema aprimorado",
       "Segurança e estabilidade do sistema aprimoradas"
+    ],
+    "Bloqueio de aplicativos": [
+      "Novo: Suporte para desbloquear apps com reconhecimento facial"
     ]
   },
   "logs_tr": {
     "Uygulama kilidi": [
+      "Yeni: Yüz ile kilit açma desteği",
       "Yeni: Yüz ile kilit açma desteği"
     ],
     "Saat": [
+      "Onar: Zamanlayıcı tuşu, dokunulduktan sonra yanmaya başladı",
+      "Onar: Saat, belirli tarihlerde kapanmaya zorlandı",
+      "Onar: Zamanlayıcı tuşu, dokunulduktan sonra yanmaya başladı",
+      "Onar: Saat, belirli tarihlerde kapanmaya zorlandı",
       "Onarım: Zamanlayıcı tuşu, dokunulduktan sonra yanmaya başladı",
       "Onarım: Saat, belirli tarihlerde kapanmaya zorlandı"
     ],
     "Oyun hız artırıcı": [
+      "Yeni: Oyunlar sırasında gelen aramalar için kayan pencereler",
+      "Yeni: Oyunlar sırasında gelen aramalar için kayan pencereler",
       "Yeni: Oyunlar sırasında gelen aramalar için kayan pencereler"
+    ],
+    "Diğer": [
+      "Sistem performansı optimize edildi",
+      "Sistem güvenliği ve kararlılığı geliştirildi"
     ]
   },
   "logs_id": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "Kunci aplikasi": [
+      "Baru: Mendukung Buka kunci perangkat dengan wajah (Face unlock)",
+      "Baru: Dukungan membuka kunci aplikasi dengan pengenalan wajah"
+    ],
+    "Jam": [
+      "Perbaikan: tombol di halaman pengatur waktu berkedip saat diketuk",
+      "Perbaikan: Jam mengalami force close pada tanggal tertentu",
+      "Perbaikan: tombol di halaman pengatur waktu berkedip saat diketuk",
+      "Perbaikan: Jam mengalami force close pada tanggal tertentu",
+      "Memperbaiki masalah tombol di halaman Timer berkedip saat diketuk.",
+      "Memperbaiki masalah aplikasi Jam yang force close pada tanggal khusus"
+    ],
+    "Peningkat kecepatan permainan": [
+      "Baru: Jendela mengambang untuk panggilan masuk saat bermain permainan",
+      "Baru: Jendela mengambang untuk panggilan masuk saat bermain permainan"
+    ],
+    "Lainnya": [
+      "Performa sistem dioptimalkan",
+      "Keamanan dan stabilitas sistem ditingkatkan"
+    ],
+    "Pemercepat game": [
+      "Baru: jendela mengambang untuk panggilan masuk saat bermain game"
     ]
   },
   "logs_vi": {
+    "Khóa ứng dụng": [
+      "Mới: Hỗ trợ mở khóa ứng dụng bằng khuôn mặt",
+      "Mới: Hỗ trợ mở khóa ứng dụng bằng nhận diện khuôn mặt"
+    ],
+    "Đồng hồ": [
+      "Sửa lỗi: nút trên trang hẹn giờ nhấp nháy khi được nhấn",
+      "Sửa lỗi: Đồng hồ bị buộc dừng vào một số ngày cụ thể",
+      "Sửa lỗi: nút trên trang hẹn giờ nhấp nháy khi được nhấn",
+      "Sửa lỗi: Đồng hồ bị buộc dừng vào một số ngày cụ thể",
+      "Đã khắc phục lỗi nhấp nháy nút trên trang Hẹn giờ khi chạm.",
+      "Sửa lỗi ứng dụng Đồng hồ bị thoát đột ngột vào những ngày đặc biệt"
+    ],
+    "Tăng tốc trò chơi": [
+      "Mới: Cửa sổ nổi cho cuộc gọi đến trong khi chơi game",
+      "Mới: Cửa sổ nổi cho cuộc gọi đến trong khi chơi game",
+      "Mới: cửa sổ nổi cho cuộc gọi đến khi chơi game"
+    ],
     "Khác": [
       "Tối ưu hiệu suất hệ thống",
       "Cải thiện tính ổn định và bảo mật hệ thống"
     ]
   },
   "logs_th": {
+    "ล็อกแอป": [
+      "เพิ่มใหม่: รองรับการปลดล็อกแอปด้วยใบหน้า",
+      "ใหม่: รองรับการปลดล็อกแอปด้วยการจดจำใบหน้า"
+    ],
+    "นาฬิกา": [
+      "แก้ไขปัญหาปุ่มในหน้าตัวจับเวลากระพริบเมื่อแตะ",
+      "แก้ไขปัญหานาฬิกาหยุดทำงานในวันที่เฉพาะเจาะจง",
+      "แก้ไขปัญหาปุ่มในหน้าตัวจับเวลากระพริบเมื่อแตะ",
+      "แก้ไขปัญหานาฬิกาหยุดทำงานในวันที่เฉพาะเจาะจง",
+      "แก้ไขปัญหาปุ่มในหน้า Timer กระพริบเมื่อแตะ",
+      "แก้ไขปัญหานาฬิกาหยุดทำงานในวันที่พิเศษ"
+    ],
+    "ตัวเร่งความเร็วเกม": [
+      "ใหม่: ฟีเจอร์หน้าต่างลอยสำหรับการโทร รองรับการแสดงสถานะการเชื่อมต่อผ่านหน้าต่างลอยสำหรับสายที่รับระหว่างเล่นเกม",
+      "ใหม่: ฟีเจอร์หน้าต่างลอยสำหรับการโทร รองรับการแสดงสถานะการเชื่อมต่อผ่านหน้าต่างลอยสำหรับสายที่รับระหว่างเล่นเกม"
+    ],
     "อื่นๆ": [
       "เพิ่มประสิทธิภาพของระบบ",
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
+    ],
+    "เพิ่มความเร็วเกม": [
+      "ใหม่: หน้าต่างลอยสำหรับสายเรียกเข้าขณะเล่นเกม"
     ]
   },
   "logs_ar": {
+    "قفل التطبيقات": [
+      "جديد: دعم فتح التطبيقات عبر التعرف على الوجه",
+      "جديد: دعم فتح التطبيقات عبر التعرف على الوجه"
+    ],
+    "الساعة": [
+      "إصلاح مشكلة وميض زر صفحة المؤقت عند النقر عليه",
+      "إصلاح مشكلة تعطل تطبيق الساعة في تواريخ محددة",
+      "إصلاح مشكلة وميض زر صفحة المؤقت عند النقر عليه",
+      "إصلاح مشكلة تعطل تطبيق الساعة في تواريخ محددة"
+    ],
+    "تسريع الألعاب": [
+      "جديد: ميزة النافذة العائمة للمكالمات، وتدعم عرض حالة الاتصال في نافذة عائمة للمكالمات التي يتم الرد عليها أثناء الألعاب",
+      "جديد: ميزة النافذة العائمة للمكالمات، وتدعم عرض حالة الاتصال في نافذة عائمة للمكالمات التي يتم الرد عليها أثناء الألعاب"
+    ],
     "أخرى": [
       "تحسين أداء النظام",
       "تحسين أمن واستقرار النظام"
+    ],
+    "ساعة": [
+      "إصلاح مشكلة وميض أزرار صفحة المؤقت عند النقر عليها.",
+      "إصلاح مشكلة تعطل تطبيق الساعة في التواريخ الخاصة"
+    ],
+    "مسرّع الألعاب": [
+      "جديد: نوافذ عائمة للمكالمات الواردة أثناء الألعاب"
     ]
   },
   "logs_in": {
+    "ऐप लॉक": [
+      "नया: चेहरा पहचान से ऐप्स अनलॉक करने की सुविधा",
+      "नया: चेहरा पहचान से ऐप्स अनलॉक करने का समर्थन"
+    ],
+    "घड़ी": [
+      "टाइमर पेज पर बटन टैप करने पर झिलमिलाने की समस्या ठीक की गई",
+      "कुछ खास तारीखों पर घड़ी के क्रैश होने की समस्या ठीक की गई",
+      "टाइमर पेज पर बटन टैप करने पर झिलमिलाने की समस्या ठीक की गई",
+      "कुछ खास तारीखों पर घड़ी के क्रैश होने की समस्या ठीक की गई",
+      "टाइमर पेज पर बटन क्लिक करने पर होने वाली झिलमिलाहट की समस्या ठीक की गई।",
+      "विशेष तिथियों पर घड़ी के क्रैश होने की समस्या ठीक की गई"
+    ],
+    "गेम गति बूस्टर": [
+      "नया: फ़ोन फ़्लोटिंग विंडो सुविधा, गेम के दौरान कनेक्ट होने वाले कॉल का कनेक्टेड स्टेटस फ़्लोटिंग विंडो में दिखाने का समर्थन करती है।",
+      "नया: फ़ोन फ़्लोटिंग विंडो सुविधा, गेम के दौरान कनेक्ट होने वाले कॉल का कनेक्टेड स्टेटस फ़्लोटिंग विंडो में दिखाने का समर्थन करती है।"
+    ],
     "अन्य": [
       "सिस्टम परफ़ॉर्मेंस ऑप्टिमाइज़ किया गया है",
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
+    ],
+    "गेम स्पीड बूस्टर": [
+      "नया: गेम के दौरान आने वाली कॉल के लिए फ़्लोटिंग विंडो"
     ]
   },
   "logs_ug": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "ئەپ قۇلۇپى": [
+      "يېڭى: ئەپ قۇلۇپىنى يۈز ئارقىلىق ئېچىشنى قوللايدۇ",
+      "يېڭى: يۈز تونۇش ئارقىلىق ئەپلەرنىڭ قۇلۇپىنى ئېچىشنى قوللاش"
+    ],
+    "سائەت": [
+      "تایمېر بېتىدىكى كۇنۇپكىنى باسقاندا پارقىراش مەسىلىسىنى تۈزەت",
+      "سائەت ئالاھىدە چېسلاردا مەجبۇرىي تاقىلىپ قېلىش مەسىلىسى تۈزىتىلدى",
+      "تایمېر بېتىدىكى كۇنۇپكىنى باسقاندا پارقىراش مەسىلىسىنى تۈزەت",
+      "سائەت ئالاھىدە چېسلاردا مەجبۇرىي تاقىلىپ قېلىش مەسىلىسى تۈزىتىلدى",
+      "Timer بېتىدىكى كۇنۇپكىلارنى چەككەندە پارقىراش مەسىلىسى تۈزىتىلدى.",
+      "Fix: Clock force closed on some specific dates"
+    ],
+    "ئويۇن تېزلىتىش": [
+      "New: Floating windows for incoming calls during games",
+      "New: Floating windows for incoming calls during games",
+      "New: Floating windows for incoming calls during games"
+    ],
+    "باشقىلىرى": [
+      "سىستېمىنىڭ مۇقىملىقىنى ئاشۇرۇش",
+      "سىستېما راۋانلىقىنى ئەلالاشتۇرۇش"
     ]
   },
   "logs_bo": {
-    "Other": [
+    "App lock": [
+      "New: Face unlock support"
+    ],
+    "ཆུ་ཚོད།": [
+      "Fix: Timer button started flashing after being tapped",
+      "Fix: Clock force closed on some specific dates",
+      "Fix: Timer button started flashing after being tapped",
+      "Fix: Clock force closed on some specific dates"
+    ],
+    "Game speed booster": [
+      "New: Floating windows for incoming calls during games",
+      "New: Floating windows for incoming calls during games",
+      "New: Floating windows for incoming calls during games"
+    ],
+    "གཞན།": [
       "Optimized system performance",
       "Improved system security and stability"
+    ],
+    "མཉེན་ཆས་སྒོ་ལྕགས": [
+      "New: Face unlock support"
+    ],
+    "ཆུ་ཚོད": [
+      "Fix: Timer button started flashing after being tapped",
+      "Fix: Clock force closed on some specific dates"
     ]
   }
 }

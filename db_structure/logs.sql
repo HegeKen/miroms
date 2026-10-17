@@ -2,8 +2,11 @@ DROP TABLE IF EXISTS `logs`;
 CREATE TABLE `logs` (
   `id` bigint NOT NULL AUTO_INCREMENT COMMENT '自增主键（同一日志的各语言版本共用一行）',
   `type` varchar(8) COLLATE utf8mb4_bin NOT NULL COMMENT '日志类型：module=模块名 / log=日志条目',
-  `content` text COLLATE utf8mb4_bin NOT NULL COMMENT '主内容（简体中文；无中文时取最早出现的原文），去重依据',
-  `content_hash` char(32) COLLATE utf8mb4_bin NOT NULL COMMENT 'content 的 MD5（hex），用于去重查找',
+  `content` text COLLATE utf8mb4_bin NOT NULL COMMENT '主内容（简体中文；无中文时取英文，再取最早出现的原文），去重依据',
+  `content_hash` char(32) COLLATE utf8mb4_bin NOT NULL COMMENT 'content 的 MD5（hex），查专用索引（同内容可因译文冲突存在多行）',
+  `proofed` tinyint(1) NOT NULL DEFAULT 0 COMMENT 'AI 校对通过（内容一致）；后续校对跳过',
+  `complete` tinyint(1) NOT NULL DEFAULT 0 COMMENT '所有语言齐全且 proofed=1',
+  `lang_issues` json DEFAULT NULL COMMENT 'AI 标注：语言列文本与列语言不符的明细（JSON）',
   `logs_zh` longtext COLLATE utf8mb4_bin COMMENT '简体中文（zh_CN，与 content 同值）',
   `logs_zh_tw` longtext COLLATE utf8mb4_bin COMMENT '繁体中文（zh_TW）',
   `logs_en` longtext COLLATE utf8mb4_bin COMMENT '英文（en_US）',
@@ -26,8 +29,7 @@ CREATE TABLE `logs` (
   `logs_ug` longtext COLLATE utf8mb4_bin COMMENT '维吾尔文（ug_CN）',
   `logs_bo` longtext COLLATE utf8mb4_bin COMMENT '藏文（bo_CN）',
   PRIMARY KEY (`id`),
-  UNIQUE KEY `uq_type_hash` (`type`, `content_hash`),
-  KEY `idx_logs_type` (`type`)
+  KEY `idx_type_hash` (`type`, `content_hash`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
 -- 说明：同一句日志的不同语言版本存放在同一行。

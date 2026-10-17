@@ -3,9 +3,12 @@
     "系统": [
       "优化 锁屏误触问题，避免手机在口袋中发生屏幕误操作",
       "优化 更新谷歌安全补丁（2019#6），提升系统安全性",
-      "修复 可能导致远程执行代码的安全漏洞"
+      "修复 可能导致远程执行代码的安全漏洞",
+      "优化 锁屏误触问题，避免手机在口袋中发生屏幕误操作",
+      "优化 更新谷歌安全补丁（2019#6），提升系统安全性"
     ],
     "联系人": [
+      "修复 SIM联系人无法删除问题",
       "修复 SIM联系人无法删除问题"
     ],
     "锁屏、状态栏、通知栏": [
@@ -14,38 +17,70 @@
       "新增 人脸解锁成功并停留在锁屏上时，可通过指纹进入桌面的功能",
       "修复 息屏设置页面，双时钟预览图数字折行的问题",
       "修复 锁屏上来电时偶现屏幕无法亮起的问题",
+      "修复 收到通知后媒体音量没有恢复的问题",
+      "新增 系统主题下，锁屏时钟支持三种自定义样式，可在锁屏高级设置中修改",
+      "新增 多种彩色息屏时钟与24小时息屏时钟",
+      "新增 人脸解锁成功并停留在锁屏上时，可通过指纹进入桌面的功能",
+      "修复 息屏设置页面，双时钟预览图数字折行的问题",
+      "修复 锁屏上来电时偶现屏幕无法亮起的问题",
       "修复 收到通知后媒体音量没有恢复的问题"
     ],
     "设置": [
-      "优化 WiFi列表排序策略，以信号强度排序"
+      "优化 WiFi列表排序策略，以信号强度排序",
+      "优化 WLAN列表调整为按信号强度排序"
+    ],
+    "其他": [
+      "提高系统的稳定性",
+      "优化系统的流畅度"
     ]
   },
   "logs_en": {
     "System": [
       "Optimization: Lock screen pocket mode",
+      "Optimization: Updated Android Security Patch to June 2019. Increased system security.",
+      "Fix: A security leak allowed to run the code remotely",
+      "Optimization: Lock screen pocket mode",
       "Optimization: Updated Android Security Patch to June 2019. Increased system security."
     ],
     "Contacts": [
-      "Fix: Contacts couldn^t be deleted from SIM cards in some cases"
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+    "Lockscreen, Status Bar, Notification Bar": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
       "New: More clock formats for Ambient display",
       "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
       "Fix: Issues with overlapping in Dual Clock settings",
-      "Fix: Screen didn^t always light up for notifications",
-      "Fix: Media volume couldn^t be restored after receiving a notification"
+      "Fix: Screen didn't always light up for notifications",
+      "Fix: Media volume couldn't be restored after receiving a notification"
     ],
     "Settings": [
+      "Optimization: Sorting principles for Wi-Fi networks",
       "Optimization: Sorting principles for Wi-Fi networks"
+    ],
+    "Lockscreen, status bar, Notification shade": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "New: More clock formats for Ambient display",
+      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
+      "Fix: Issues with overlapping in Dual Clock settings",
+      "Fix: Screen didn't always light up for notifications",
+      "Fix: Media volume couldn't be restored after receiving a notification"
+    ],
+    "Other": [
+      "Optimized system performance",
+      "Improved system security and stability"
     ]
   },
   "logs_zh_tw": {
     "系統": [
       "優化 鎖屏誤觸問題，避免手機在口袋中發生螢幕誤操作",
+      "優化 更新Android安全性修補程式等級(2019#6)，提升系統安全性",
+      "修復 可能導致遠端執行代碼的安全性漏洞",
+      "優化 鎖屏誤觸問題，避免手機在口袋中發生螢幕誤操作",
       "優化 更新Android安全性修補程式等級(2019#6)，提升系統安全性"
     ],
     "聯絡人": [
+      "修復 SIM聯絡人無法刪除的問題",
       "修復 SIM聯絡人無法刪除的問題"
     ],
     "解鎖畫面、狀態欄、通知欄": [
@@ -54,19 +89,53 @@
       "新增 人臉解鎖成功並停留在鎖屏上時，可通過指紋進入桌面的功能",
       "修復 螢幕鎖定設定頁面，雙時鐘預覽圖數字折行的問題",
       "修復 螢幕鎖定上來電時偶現螢幕無法亮起的問題",
+      "修復 收到通知後媒體音量沒有恢復的問題",
+      "新增 系統主題下，鎖屏時鐘支援三種自訂型式，可在鎖屏進階設定中修改",
+      "新增 多種彩色熄滅螢幕的時鐘與24小時熄滅螢幕的時鐘",
+      "新增 人臉解鎖成功並停留在鎖屏上時，可通過指紋進入桌面的功能",
+      "修復 螢幕鎖定設定頁面，雙時鐘預覽圖數字折行的問題",
+      "修復 螢幕鎖定上來電時偶現螢幕無法亮起的問題",
       "修復 收到通知後媒體音量沒有恢復的問題"
     ],
     "設定": [
+      "優化 Wi-Fi清單排列策略，以信號的強度排列",
       "優化 Wi-Fi清單排列策略，以信號的強度排列"
+    ],
+    "其他": [
+      "改善系統的穩定性",
+      "優化系統的流暢度"
     ]
   },
   "logs_ja": {
+    "連絡先": [
+      "修正: SIMカードの連絡先を削除できない場合がある問題",
+      "修正: SIMカードの連絡先を削除できない場合がある問題"
+    ],
+    "設定": [
+      "Optimization: Sorting principles for Wi-Fi networks"
+    ],
+    "システム": [
+      "最適化: ロック画面のポケットモード",
+      "最適化: Android セキュリティパッチを 2019 年 6 月版に更新しました。システムの安全性が向上しました。"
+    ],
     "その他": [
       "システムパフォーマンスの最適化",
       "システムのセキュリティと安定性の向上"
     ]
   },
   "logs_ko": {
+    "연락처": [
+      "수정: 일부 상황에서 SIM 카드의 연락처를 삭제할 수 없는 문제",
+      "수정: 일부 상황에서 SIM 카드의 연락처를 삭제할 수 없는 문제"
+    ],
+    "설정": [
+      "Optimization: Sorting principles for Wi-Fi networks",
+      "최적화: WLAN 목록이 신호 강도에 따라 정렬되도록 조정"
+    ],
+    "시스템": [
+      "최적화: 잠금화면 시의 주머니 내 접촉 오작동 문제",
+      "최적화: Android 보안 패치를 2019년 6월로 업데이트했습니다. 시스템 보안이 향상되었습니다."
+    ],
     "기타": [
       "시스템 성능 최적화",
       "시스템 보안 및 안정성 개선"
@@ -74,10 +143,14 @@
   },
   "logs_ru": {
     "Система": [
-      "Оптимизация: Режим ^В кармане^",
+      "Оптимизация: Режим \"В кармане\"",
+      "Оптимизация: Обновление системы безопасности Android (июнь 2019 года). Улучшена безопасность системы.",
+      "Исправлено: Уязвимость в системе безопасности позволяла выполнять код удаленно",
+      "Оптимизация: Режим \"В кармане\"",
       "Оптимизация: Обновление системы безопасности Android (июнь 2019 года). Улучшена безопасность системы."
     ],
     "Контакты": [
+      "Исправлено: В некоторых случаях контакты не могли быть удалены с SIM-карты",
       "Исправлено: В некоторых случаях контакты не могли быть удалены с SIM-карты"
     ],
     "Экран блокировки, строка состояния, шторка уведомлений": [
@@ -86,31 +159,108 @@
       "Новое: Используйте отпечаток пальца, чтобы перейти на рабочий стол после того, как вы разблокировали устройство при помощи данных лица и остались на экране блокировки",
       "Исправлено: Проблемы с перекрыванием в настройках двойных часов",
       "Исправлено: Экран не всегда включался при получении новых уведомлений",
+      "Исправлено: Громкость мультимедиа не восстанавливалась после получения уведомлений",
+      "Новое: Добавлены настраиваемые часы для экрана блокировки (Настройки > Блокировка и защита > Расширенные настройки). Новые часы для экрана блокировки несовместимы со сторонними темами",
+      "Новое: Больше форматов часов для автоматического включения дисплея",
+      "Новое: Используйте отпечаток пальца, чтобы перейти на рабочий стол после того, как вы разблокировали устройство при помощи данных лица и остались на экране блокировки",
+      "Исправлено: Проблемы с перекрыванием в настройках двойных часов",
+      "Исправлено: Экран не всегда включался при получении новых уведомлений",
       "Исправлено: Громкость мультимедиа не восстанавливалась после получения уведомлений"
     ],
     "Настройки": [
+      "Оптимизация: Принцип сортировки сетей Wi-Fi",
       "Оптимизация: Принцип сортировки сетей Wi-Fi"
+    ],
+    "Другое": [
+      "Оптимизация производительности системы",
+      "Улучшение безопасности и стабильности системы"
     ]
   },
   "logs_uk": {
+    "Контакти": [
+      "Виправлено: У деяких випадках контакти не вдавалося видалити з SIM-картки",
+      "Виправлено: У деяких випадках контакти не вдавалося видалити з SIM-картки"
+    ],
+    "Налаштування": [
+      "Optimization: Sorting principles for Wi-Fi networks"
+    ],
+    "Система": [
+      "Оптимізація: Режим «У кишені»",
+      "Optimization: Updated Android Security Patch to June 2019. Increased system security."
+    ],
     "Інше": [
       "Оптимізація продуктивності системи",
       "Покращення безпеки та стабільності системи"
     ]
   },
   "logs_pl": {
+    "Kontakty": [
+      "Poprawiono: W niektórych przypadkach nie można było usunąć kontaktów z karty SIM",
+      "Poprawiono: W niektórych przypadkach nie można było usunąć kontaktów z karty SIM"
+    ],
+    "Ustawienia": [
+      "Optimization: Sorting principles for Wi-Fi networks",
+      "Optymalizacja: lista WLAN sortowana według siły sygnału"
+    ],
+    "System": [
+      "Zoptymalizowano: Tryb blokady ekranu w kieszeni",
+      "Optimization: Updated Android Security Patch to June 2019. Increased system security."
+    ],
     "Inne": [
       "Zoptymalizowana wydajność systemu",
       "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
   "logs_de": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "Kontakte": [
+      "Behoben: Kontakte konnten in manchen Fällen nicht von SIM-Karten gelöscht werden",
+      "Behoben: Kontakte konnten in manchen Fällen nicht von SIM-Karten gelöscht werden"
+    ],
+    "Einstellungen": [
+      "Optimierung: Sortierung der WLAN-Netzwerke",
+      "Optimierung: WLAN-Liste wird nach Signalstärke sortiert"
+    ],
+    "System": [
+      "Optimierung: Sperrbildschirm-Taschenmodus",
+      "Optimierung: Android-Sicherheitspatch auf Juni 2019 aktualisiert. Systemsicherheit verbessert."
+    ],
+    "Sonstiges": [
+      "Systemleistung optimiert",
+      "Systemsicherheit und -stabilität verbessert"
     ]
   },
   "logs_fr": {
+    "Système": [
+      "Optimisation Verrouiller le mode poche",
+      "Optimisation Mise à jour du correctif de sécurité Android jusqu'en juin 2019. Sécurité accrue du système.",
+      "Réparé: Une fuite de sécurité a permis d'exécuter le code à distance",
+      "Optimisation: Verrouiller le mode poche",
+      "Optimisation Mise à jour du correctif de sécurité Android jusqu'en juin 2019. Sécurité accrue du système."
+    ],
+    "Contacts": [
+      "Réparé Les contacts ne pouvaient pas être supprimés des cartes SIM dans certains cas",
+      "Réparé Les contacts ne pouvaient pas être supprimés des cartes SIM dans certains cas"
+    ],
+    "Écran de verrouillage, barre d’état, barre de notifications": [
+      "Nouveau Présentation de l’horloge de l’écran de verrouillage personnalisable (Paramètres> Écran de verrouillage et mot de passe> Paramètres avancés). La nouvelle horloge de l'écran de verrouillage ne fonctionne pas avec les thèmes tiers.",
+      "Nouveau Plus de formats d'horloge pour l'affichage en Mode veille",
+      "Nouveau Utilisez votre empreinte digitale pour ouvrir l'écran d'accueil une fois que vous avez déverrouillé l'appareil à l'aide des données du visage et que vous êtes resté sur l'écran de verrouillage",
+      "Réparé: Problèmes de chevauchement dans les paramètres de double horloge",
+      "Réparé L'écran ne s'allume pas toujours pour les notifications",
+      "Réparé Le volume du média n'a pas pu être restauré après avoir reçu une notification"
+    ],
+    "Paramètres": [
+      "Optimisation Principes de tri pour les réseaux Wi-Fi",
+      "Optimisation : tri de la liste WLAN par intensité du signal"
+    ],
+    "Écran de verrouillage, Barre d'état, Panneau de notification": [
+      "Nouveau : sous les thèmes système, l’horloge de l’écran de verrouillage prend en charge trois styles personnalisés, modifiables dans les paramètres avancés de l’écran de verrouillage.",
+      "Nouveau Plus de formats d'horloge pour l'affichage en Mode veille",
+      "Nouveau Utilisez votre empreinte digitale pour ouvrir l'écran d'accueil une fois que vous avez déverrouillé l'appareil à l'aide des données du visage et que vous êtes resté sur l'écran de verrouillage",
+      "Correction : problème de retour à la ligne des chiffres dans l’aperçu de la double horloge sur la page de réglages de l’écran toujours activé",
+      "Corrigé : L'écran ne s'allumait pas toujours pour les notifications",
+      "Réparé Le volume du média n'a pas pu être restauré après avoir reçu une notification"
+    ],
     "Autre": [
       "Performances système optimisées",
       "Sécurité et stabilité du système améliorées"
@@ -119,29 +269,50 @@
   "logs_it": {
     "Sistema": [
       "Ottimizzazione: Modalità Tasca schermata di blocco",
+      "Ottimizzazione: Aggiornamento della patch di sicurezza Android a giugno 2019. Maggiore sicurezza del sistema.",
+      "Risolto: Una falla nella sicurezza consentiva di eseguire il codice da remoto",
+      "Ottimizzazione: Modalità Tasca schermata di blocco",
       "Ottimizzazione: Aggiornamento della patch di sicurezza Android a giugno 2019. Maggiore sicurezza del sistema."
     ],
     "Contatti": [
+      "Risolto: In alcuni casi, i contatti non potevano essere eliminati dalle schede SIM",
       "Risolto: In alcuni casi, i contatti non potevano essere eliminati dalle schede SIM"
     ],
-    "Schermata di blocco, barra di stato, area delle notifiche": [
-      "Nuovo: Introdotto l^orologio personalizzabile per la schermata di blocco (Impostazioni > Schermata di blocco e password > Impostazioni avanzate). Il nuovo orologio della schermata di blocco non funziona con temi di terze parti.",
+    "Schermata di blocco, barra di stato, barra delle notifiche": [
+      "Nuovo: Introdotto l'orologio personalizzabile per la schermata di blocco (Impostazioni > Schermata di blocco e password > Impostazioni avanzate). Il nuovo orologio della schermata di blocco non funziona con temi di terze parti.",
       "Nuovo: Altri formati di orologio per Ambient display",
-      "Nuovo: Accedi alla schermata Home usando l^impronta digitale dopo aver sbloccato il dispositivo con i dati del volto restando sulla schermata di blocco.",
+      "Nuovo: Accedi alla schermata Home usando l'impronta digitale dopo aver sbloccato il dispositivo con i dati del volto restando sulla schermata di blocco.",
       "Risolto: Problemi di sovrapposizione nelle impostazioni di Doppio orologio",
       "Risolto: Lo schermo non sempre si accendeva per mostrare le notifiche",
       "Risolto: Il volume multimediale non poteva essere ripristinato dopo aver ricevuto una notifica"
     ],
     "Impostazioni": [
+      "Ottimizzazione: Principi di ordinamento delle reti Wi-Fi",
       "Ottimizzazione: Principi di ordinamento delle reti Wi-Fi"
+    ],
+    "Schermata di blocco, barra di stato, area delle notifiche": [
+      "Nuovo: Introdotto l'orologio personalizzabile per la schermata di blocco (Impostazioni > Schermata di blocco e password > Impostazioni avanzate). Il nuovo orologio della schermata di blocco non funziona con temi di terze parti.",
+      "Nuovo: Altri formati di orologio per Ambient display",
+      "Nuovo: Accedi alla schermata Home usando l'impronta digitale dopo aver sbloccato il dispositivo con i dati del volto restando sulla schermata di blocco.",
+      "Risolto: Problemi di sovrapposizione nelle impostazioni di Doppio orologio",
+      "Risolto: Lo schermo non sempre si accendeva per mostrare le notifiche",
+      "Risolto: Il volume multimediale non poteva essere ripristinato dopo aver ricevuto una notifica"
+    ],
+    "Altro": [
+      "Prestazioni di sistema ottimizzate",
+      "Maggiore sicurezza e stabilità di sistema"
     ]
   },
   "logs_es": {
     "Sistema": [
       "Optimización: Pantalla de bloqueo en Modo bolsillo",
+      "Optimización: Parche de seguridad de Android actualizado a junio de 2019. Seguridad del sistema incrementada.",
+      "Reparado: Un fallo de seguridad permitía ejecutar el código de forma remota",
+      "Optimización: Pantalla de bloqueo en Modo bolsillo",
       "Optimización: Parche de seguridad de Android actualizado a junio de 2019. Seguridad del sistema incrementada."
     ],
     "Contactos": [
+      "Reparado: Los contactos no podían ser eliminados de las tarjetas SIM en algunos casos",
       "Reparado: Los contactos no podían ser eliminados de las tarjetas SIM en algunos casos"
     ],
     "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
@@ -150,13 +321,55 @@
       "Nuevo: Usa tu huella dactilar para abrir la Pantalla de inicio después de haber desbloqueado el dispositivo usando tus datos faciales y haber permanecido en la Pantalla de bloqueo",
       "Reparado: Problemas de superposición en los ajustes del Reloj dual",
       "Reparado: La pantalla no siempre se encendía con las notificaciones",
+      "Reparado: El volumen medio no pudo ser restaurado después de recibir una notificación",
+      "Nuevo: Introducción de un reloj personalizable en la Pantalla de bloqueo (Ajustes > Pantalla de bloqueo y contraseña > Ajustes avanzados). El nuevo reloj de la Pantalla de bloqueo no funciona con temas de terceros.",
+      "Nuevo: Más formatos de reloj para la Pantalla ambiente",
+      "Nuevo: Usa tu huella dactilar para abrir la Pantalla de inicio después de haber desbloqueado el dispositivo usando tus datos faciales y haber permanecido en la Pantalla de bloqueo",
+      "Reparado: Problemas de superposición en los ajustes del Reloj dual",
+      "Reparado: La pantalla no siempre se encendía con las notificaciones",
       "Reparado: El volumen medio no pudo ser restaurado después de recibir una notificación"
     ],
     "Ajustes": [
+      "Optimización: Los valores de redes Wi-Fi son ordenados",
       "Optimización: Los valores de redes Wi-Fi son ordenados"
+    ],
+    "Otros": [
+      "Rendimiento del sistema optimizado",
+      "Estabilidad y seguridad del sistema mejorada"
     ]
   },
   "logs_pt": {
+    "Sistema": [
+      "Otimização Modo de bolso para a Tela de bloqueio",
+      "Otimização Atualização do Patch de Segurança do Android para Junho de 2019. Segurança do sistema aprimorada.",
+      "Correção: Um vazamento de segurança permitia a execução remota de códigos",
+      "Otimização: Modo de bolso para a Tela de bloqueio",
+      "Otimização Atualização do Patch de Segurança do Android para Junho de 2019. Segurança do sistema aprimorada."
+    ],
+    "Contatos": [
+      "Correção Contatos não podiam ser excluídos de cartões SIM em alguns casos",
+      "Correção Contatos não podiam ser excluídos de cartões SIM em alguns casos"
+    ],
+    "Tela de bloqueio, barra de status, barra de notificações": [
+      "Novo Introduzindo o Relógio personalizável na Tela de bloqueio (Configurar > Bloqueio de tela e senhas > Configurações avançadas). O novo relógio da Tela de bloqueio não funciona com temas de terceiros.",
+      "Novo Mais formatos de relógio na Exibição de ambiente",
+      "Novo Use sua impressão digital para abrir a Tela inicial quando você desbloquear o dispositivo usando o desbloqueio facial e ficar na Tela de bloqueio",
+      "Correção: Problemas de sobreposição nas configurações de Relógio duplo",
+      "Correção Em alguns casos, a tela não acendia para notificações recebidas",
+      "Correção O volume de mídia não podia ser restaurado após receber uma notificação"
+    ],
+    "Configurações": [
+      "Otimização Ordenação de redes Wi-Fi salvas",
+      "Otimização: lista WLAN ajustada para classificar por intensidade do sinal"
+    ],
+    "Tela de bloqueio, Barra de status e Área de notificações": [
+      "Novo: nos temas do sistema, o relógio da tela de bloqueio suporta três estilos personalizados, que podem ser alterados nas configurações avançadas da tela de bloqueio.",
+      "Novo Mais formatos de relógio na Exibição de ambiente",
+      "Novo Use sua impressão digital para abrir a Tela inicial quando você desbloquear o dispositivo usando o desbloqueio facial e ficar na Tela de bloqueio",
+      "Correção: problema de quebra de linha dos números na prévia do Relógio duplo na página de configurações da tela sempre ativa",
+      "Fix: Screen didn't always light up for notifications",
+      "Correção O volume de mídia não podia ser restaurado após receber uma notificação"
+    ],
     "Outros": [
       "Desempenho do sistema aprimorado",
       "Segurança e estabilidade do sistema aprimoradas"
@@ -165,9 +378,13 @@
   "logs_tr": {
     "Sistem": [
       "Optimizasyon: Kilit ekranı cep modu",
+      "Optimizasyon: Android Güvenlik Yaması Haziran 2019 sürümüne güncellendi. Sistem güvenliği artırıldı.",
+      "Onarım: Kodun uzaktan çalışmasını sağlayan bir güvenlik açığı",
+      "Optimizasyon: Kilit ekranı cep modu",
       "Optimizasyon: Android Güvenlik Yaması Haziran 2019 sürümüne güncellendi. Sistem güvenliği artırıldı."
     ],
     "Kişiler": [
+      "Onarım: Kişilerin bazı durumlarda silinememesi sorunu giderildi",
       "Onarım: Kişilerin bazı durumlarda silinememesi sorunu giderildi"
     ],
     "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
@@ -176,50 +393,161 @@
       "Yeni: Cihazın kilidini yüz verilerini kullanarak açtıktan ve Kilit ekranında kaldıktan sonra Ana ekranı açmak için parmak izinizi kullanın",
       "Onarım: Çift Saat ayarlarında üst üste binme sorunları",
       "Onarım: Bazen bildirimler için ekran açılmadı",
+      "Onarım: Medya sesi, bildirim alındıktan sonra geri alınamadı",
+      "Yeni: Özelleştirilebilir Kilit ekranı saati (Ayarlar > Kilit ekranı & şifre > Gelişmiş ayarlar). Yeni kilit ekranı saati üçüncü parti temaları ile çalışmaz.",
+      "Yeni: Ortam ekranı için daha fazla saat biçimi",
+      "Yeni: Cihazın kilidini yüz verilerini kullanarak açtıktan ve Kilit ekranında kaldıktan sonra Ana ekranı açmak için parmak izinizi kullanın",
+      "Onarım: Çift Saat ayarlarında üst üste binme sorunları",
+      "Onarım: Bazen bildirimler için ekran açılmadı",
       "Onarım: Medya sesi, bildirim alındıktan sonra geri alınamadı"
     ],
     "Ayarlar": [
+      "Optimizasyon: Wi-Fi ağları için sıralama ilkeleri",
       "Optimizasyon: Wi-Fi ağları için sıralama ilkeleri"
+    ],
+    "Diğer": [
+      "Sistem performansı optimize edildi",
+      "Sistem güvenliği ve kararlılığı geliştirildi"
     ]
   },
   "logs_id": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "Sistem": [
+      "Pengoptimalan Mode saku Layar kunci",
+      "Pengoptimalan Patch Keamanan Android diperbarui hingga Juni 2019. Keamanan sistem ditingkatkan.",
+      "Perbaikan: Kebocoran keamanan yang memungkinkan kode dijalankan dari jarak jauh",
+      "Pengoptimalan: Mode saku Layar kunci",
+      "Pengoptimalan Patch Keamanan Android diperbarui hingga Juni 2019. Keamanan sistem ditingkatkan."
+    ],
+    "Kontak": [
+      "Perbaikan Kontak tidak dapat dihapus dari kartu SIM di beberapa kasus",
+      "Perbaikan Kontak tidak dapat dihapus dari kartu SIM di beberapa kasus"
+    ],
+    "Layar kunci, bilah status, bilah notifikasi": [
+      "Baru Memperkenalkan jam Layar kunci yang dapat dikustomisasi (Setelan > Kunci layar & sandi> Setelan lanjutan). Jam Layar kunci baru tidak berfungsi dalam tema pihak ketiga.",
+      "Baru Lebih banyak pilihan format jam untuk Tampilan ambien",
+      "Baru Menggunakan sidik jari untuk membuka Layar utama saat Anda membuka kunci perangkat dengan data wajah dan tetap berada di Layar kunci",
+      "Perbaikan: Masalah tumpang tindih pada setelan Jam ganda",
+      "Perbaikan Layar tidak selalu menyala saat ada notifikasi",
+      "Perbaikan Volume media tidak dapat dipulihkan setelah menerima notifikasi"
+    ],
+    "Pengaturan": [
+      "Pengoptimalan Pengurutan daftar Wi-Fi berdasarkan kekuatan sinyal"
+    ],
+    "Layar kunci, bar status, layar notifikasi": [
+      "Baru: Pada tema sistem, jam layar kunci mendukung tiga gaya kustom, dapat diubah di pengaturan lanjutan layar kunci.",
+      "Baru Lebih banyak pilihan format jam untuk Tampilan ambien",
+      "Baru Menggunakan sidik jari untuk membuka Layar utama saat Anda membuka kunci perangkat dengan data wajah dan tetap berada di Layar kunci",
+      "Perbaikan: Masalah angka terlipat pada pratinjau Jam Ganda di halaman pengaturan Layar Selalu Aktif",
+      "Fix: Screen didn't always light up for notifications",
+      "Perbaikan Volume media tidak dapat dipulihkan setelah menerima notifikasi"
+    ],
+    "Lainnya": [
+      "Performa sistem dioptimalkan",
+      "Keamanan dan stabilitas sistem ditingkatkan"
     ]
   },
   "logs_vi": {
+    "Danh bạ": [
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases"
+    ],
+    "Cài đặt": [
+      "Optimization: Sorting principles for Wi-Fi networks"
+    ],
+    "Hệ thống": [
+      "Tối ưu: Chế độ túi cho màn hình khóa",
+      "Optimization: Updated Android Security Patch to June 2019. Increased system security."
+    ],
     "Khác": [
       "Tối ưu hiệu suất hệ thống",
       "Cải thiện tính ổn định và bảo mật hệ thống"
     ]
   },
   "logs_th": {
+    "รายชื่อ": [
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases"
+    ],
+    "การตั้งค่า": [
+      "Optimization: Sorting principles for Wi-Fi networks"
+    ],
+    "ระบบ": [
+      "เพิ่มประสิทธิภาพ: โหมดในกระเป๋าบนหน้าจอล็อก",
+      "Optimization: Updated Android Security Patch to June 2019. Increased system security."
+    ],
     "อื่นๆ": [
       "เพิ่มประสิทธิภาพของระบบ",
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
     ]
   },
   "logs_ar": {
+    "جهات الاتصال": [
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases"
+    ],
+    "الإعدادات": [
+      "Optimization: Sorting principles for Wi-Fi networks",
+      "تحسين: تعديل قائمة WLAN لتُرتب حسب قوة الإشارة"
+    ],
+    "النظام": [
+      "محسن وضع شاشة القفل في الجيب",
+      "Optimization: Updated Android Security Patch to June 2019. Increased system security."
+    ],
     "أخرى": [
       "تحسين أداء النظام",
       "تحسين أمن واستقرار النظام"
     ]
   },
   "logs_in": {
+    "संपर्क": [
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases"
+    ],
+    "सेटिंग्स": [
+      "Optimization: Sorting principles for Wi-Fi networks",
+      "अनुकूलन: WLAN सूची को सिग्नल स्ट्रेंथ के अनुसार क्रमबद्ध किया गया"
+    ],
+    "सिस्टम": [
+      "अनुकूलन: लॉक स्क्रीन पॉकेट मोड",
+      "Optimization: Updated Android Security Patch to June 2019. Increased system security."
+    ],
     "अन्य": [
       "सिस्टम परफ़ॉर्मेंस ऑप्टिमाइज़ किया गया है",
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
     ]
   },
   "logs_ug": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "Contacts": [
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases"
+    ],
+    "تەڭشەك": [
+      "Optimization: Sorting principles for Wi-Fi networks",
+      "ياخشىلاش: WLAN تىزىملىكى سىگنال كۈچى بويىچە تەرتىپلىنىدۇ"
+    ],
+    "سىستېما": [
+      "Optimization: Lock screen pocket mode",
+      "Optimization: Updated Android Security Patch to June 2019. Increased system security."
+    ],
+    "باشقىلىرى": [
+      "سىستېمىنىڭ مۇقىملىقىنى ئاشۇرۇش",
+      "سىستېما راۋانلىقىنى ئەلالاشتۇرۇش"
     ]
   },
   "logs_bo": {
-    "Other": [
+    "Contacts": [
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases"
+    ],
+    "Settings": [
+      "Optimization: Sorting principles for Wi-Fi networks",
+      "Optimization: Sorting principles for Wi-Fi networks"
+    ],
+    "རིམ་ལུགས": [
+      "Optimization: Lock screen pocket mode",
+      "Optimization: Updated Android Security Patch to June 2019. Increased system security."
+    ],
+    "གཞན།": [
       "Optimized system performance",
       "Improved system security and stability"
     ]

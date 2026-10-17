@@ -2,9 +2,13 @@
   "logs_zh": {
     "系统": [
       "优化 更新谷歌安全补丁（2019#5），提升系统安全性",
+      "系统Android版本升级为Android 9.0",
+      "优化 更新谷歌安全补丁（2019#5），提升系统安全性",
       "系统Android版本升级为Android 9.0"
     ],
     "电话": [
+      "修复 挂断电话慢问题",
+      "修复 来电悬浮条和通话绿条同时存在情况",
       "修复 挂断电话慢问题",
       "修复 来电悬浮条和通话绿条同时存在情况"
     ],
@@ -13,59 +17,75 @@
       "优化 “每72小时需要输入一次密码”的功能文案",
       "修复 低电量时呼吸灯不闪烁的bug",
       "修复 横屏下低电量通知不悬浮显示",
-      "修复 锁屏上动态壁纸偶现黑屏的问题"
+      "修复 锁屏上动态壁纸偶现黑屏的问题",
+      "新增 锁屏页面支持禁止下拉通知栏",
+      "修复 低电量时呼吸灯不闪烁的bug",
+      "修复 横向萤幕情况下低电量通知不悬浮显示"
     ],
     "桌面": [
+      "修复 WhatsApp 桌面角标显示异常的问题",
       "修复 WhatsApp 桌面角标显示异常的问题"
     ],
     "设置": [
-      "修复 下拉状态栏打开或关闭同步, 同步界面不刷新问题"
+      "修复 下拉状态栏打开或关闭同步, 同步界面不刷新问题",
+      "修复 下拉状态栏开启或关闭同步，同步界面不刷新问题"
     ],
     "小米云服务": [
       "优化 云服务开机引导开启状态可以分项配置",
-      "优化 云服务首页重新设计，可用空间显示更加直观"
+      "优化 云服务首页重新设计，可用空间显示更加直观",
+      "优化 云服务新版首页，云空间信息显示更清晰"
     ]
   },
   "logs_en": {
     "System": [
       "Optimization: Updated Android Security Patch to May 2019. Increased system security.",
+      "Android 9.0 update",
+      "Optimization: Updated Android Security Patch to May 2019. Increased system security.",
       "Android 9.0 update"
     ],
     "Phone": [
       "Fix: Ending calls took longer time than expected",
+      "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
+      "Fix: Ending calls took longer time than expected",
       "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
+    ],
+    "Home screen": [
+      "Fix: Notification badges were displayed incorrectly on the WhatsApp icon",
+      "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
     ],
     "Lockscreen, status bar, Notification shade": [
       "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode"
-    ],
-    "Home screen": [
-      "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
+      "Fix: LED light didn't blink when battery was low",
+      "Fix: Low battery warning didn't appear in landscape mode"
     ],
     "Settings": [
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
+      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade"
     ],
     "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!"
     ]
   },
   "logs_zh_tw": {
     "系統": [
       "優化 更新Android安全性修補程式等級(2019#5)，提升系統安全性",
+      "系統Android版本更新為Android 9.0",
+      "優化 更新Android安全性修補程式等級(2019#5)，提升系統安全性",
       "系統Android版本更新為Android 9.0"
     ],
     "電話": [
       "修復 掛斷電話較慢的問題",
+      "修復 來電懸浮條和通話綠條同時存在的情況",
+      "修復 掛斷電話較慢的問題",
       "修復 來電懸浮條和通話綠條同時存在的情況"
+    ],
+    "桌面": [
+      "修復 WhatsApp 桌面角標顯示異常的問題",
+      "修復 WhatsApp 桌面角標顯示異常的問題"
     ],
     "解鎖畫面、狀態欄、通知欄": [
       "新增 螢幕鎖定畫面支援禁止下拉狀態欄",
       "修復 低電量時呼吸燈不閃爍的問題",
       "修復 橫向螢幕情況下低電量通知不懸浮顯示"
-    ],
-    "桌面": [
-      "修復 WhatsApp 桌面角標顯示異常的問題"
     ],
     "設定": [
       "修復 下拉狀態欄開啟或關閉同步，同步介面不刷新問題"
@@ -75,435 +95,529 @@
     ]
   },
   "logs_ja": {
-    "System": [
-      "Optimization: Updated Android Security Patch to May 2019. Increased system security.",
-      "Android 9.0 update"
+    "システム": [
+      "最適化: Google セキュリティ パッチ（2019#5）を更新し、システムの安全性を向上。",
+      "Android 9.0 へのアップデート",
+      "最適化: Google セキュリティ パッチ（2019#5）を更新し、システムの安全性を向上。",
+      "Android 9.0 アップデート"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
+    "電話": [
+      "修正: 通話終了に予想以上に時間がかかる問題",
+      "修正: 着信のフローティングバーと通話の緑色バーが同時に表示される問題。",
+      "修正: 通話終了に想定より時間がかかる問題",
+      "修正: 着信のフローティングバーと通話の緑色バーが同時に表示される問題。"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode"
+    "ホーム画面": [
+      "WhatsApp アイコンの通知バッジが正しく表示されない問題を修正しました。",
+      "WhatsApp アイコンの通知バッジが正しく表示されない問題を修正しました。"
     ],
-    "Home screen": [
-      "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
+    "ロック画面、ステータスバー、通知シェード": [
+      "新規: ロック画面で通知シェードを下にスワイプして開くことを禁止できるようになりました",
+      "修正: バッテリー残量が少ないときに通知LEDが点滅しない不具合。",
+      "修正: 横向きモードで低バッテリー警告が表示されない問題を修正"
     ],
-    "Settings": [
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
+    "設定": [
+      "修正: 通知シェードで同期をオン/オフにした際、同期画面が更新されない問題"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "Xiaomi クラウドサービス": [
+      "最適化：Mi Cloudのスタートページを再設計しました。より見やすくなりました"
     ]
   },
   "logs_ko": {
-    "System": [
-      "Optimization: Updated Android Security Patch to May 2019. Increased system security.",
-      "Android 9.0 update"
+    "시스템": [
+      "최적화: Google 보안 패치(2019#5) 업데이트, 시스템 보안 강화.",
+      "Android 9.0 업데이트",
+      "최적화: Google 보안 패치(2019#5) 업데이트, 시스템 보안 강화.",
+      "Android 9.0 업데이트"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
+    "전화": [
+      "수정: 통화 종료가 예상보다 오래 걸리는 문제",
+      "수정: 수신 전화 플로팅 바와 통화 녹색 바가 동시에 표시되는 문제.",
+      "수정: 통화 종료가 예상보다 오래 걸리는 문제",
+      "수정: 수신 전화 플로팅 바와 통화 녹색 바가 동시에 표시되는 문제."
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode"
+    "홈 화면": [
+      "WhatsApp 아이콘에 알림 배지가 잘못 표시되는 문제를 수정했습니다.",
+      "WhatsApp 아이콘에 알림 배지가 잘못 표시되는 문제를 수정했습니다."
     ],
-    "Home screen": [
-      "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
+    "잠금화면, 상태 바, 알림 바": [
+      "새 기능: 잠금 화면에서 알림 패널을 아래로 내려 여는 것을 금지할 수 있습니다",
+      "수정: 배터리가 부족할 때 알림 LED가 깜박이지 않던 버그.",
+      "수정: 가로 모드에서 배터리 부족 경고가 표시되지 않는 문제 수정"
     ],
-    "Settings": [
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
+    "설정": [
+      "수정: 알림창에서 동기화를 켜거나 끌 때 동기화 화면이 새로 고쳐지지 않던 문제"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "Xiaomi 클라우드 서비스": [
+      "최적화: Mi Cloud 새 홈페이지가 최적화되어 클라우드 공간 정보가 더 명확하게 표시됩니다."
     ]
   },
   "logs_ru": {
     "Система": [
       "Оптимизация: Обновление системы безопасности Android (может 2019 года). Улучшена безопасность системы.",
+      "Обновление Android до версии 9.0",
+      "Оптимизация: Обновление системы безопасности Android (может 2019 года). Улучшена безопасность системы.",
       "Обновление Android до версии 9.0"
     ],
     "Телефон": [
       "Исправлено: Завершение вызова выполнялось слишком долго",
+      "Исправлено: Значки в строке состояния и всплывающее уведомление вызовов появлялись одновременно",
+      "Исправлено: Завершение вызова выполнялось слишком долго",
       "Исправлено: Значки в строке состояния и всплывающее уведомление вызовов появлялись одновременно"
+    ],
+    "Рабочий стол": [
+      "Исправлено: Уведомления на значке приложения WhatsApp отображались неправильно",
+      "Исправлено: Уведомления на значке приложения WhatsApp отображались неправильно"
     ],
     "Экран блокировки, строка состояния, шторка уведомлений": [
       "Новое: Теперь вы можете ограничить открытие Шторки уведомлений на экране блокировки",
       "Исправлено: LED индикатор не загорался при низком уровне заряда аккумулятора",
       "Исправлено: Предупреждение о низком уровне заряда аккумулятора не отображалось в ландшафтном режиме"
     ],
-    "Рабочий стол": [
-      "Исправлено: Уведомления на значке приложения WhatsApp отображались неправильно"
-    ],
     "Настройки": [
       "Исправлено: Страница синхронизации не обновлялась всякий раз, когда синхронизация была включена или отключена через Шторку уведомлений"
     ],
-    "Mi Cloud": [
+    "Облачный сервис Xiaomi": [
       "Оптимизация: Мы переработали начальную страницу Mi Cloud. Теперь она выглядит намного лучше!"
     ]
   },
   "logs_uk": {
-    "System": [
-      "Optimization: Updated Android Security Patch to May 2019. Increased system security.",
-      "Android 9.0 update"
+    "Система": [
+      "Оптимізація: Оновлено патч безпеки Google (2019#5), підвищено безпеку системи.",
+      "Оновлення до Android 9.0",
+      "Оптимізація: Оновлено патч безпеки Google (2019#5), підвищено безпеку системи.",
+      "Оновлення Android до версії 9.0"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
+    "Телефон": [
+      "Виправлено: Завершення викликів тривало довше, ніж очікувалося",
+      "Виправлено: плаваюча панель вхідного виклику та зелена смуга виклику відображалися одночасно.",
+      "Виправлено: завершення викликів тривало довше, ніж очікувалося",
+      "Виправлено: плаваюча панель вхідного виклику та зелена смуга виклику відображалися одночасно."
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode"
+    "Головний екран": [
+      "Виправлено: значки сповіщень неправильно відображалися на значку WhatsApp.",
+      "Виправлено: значки сповіщень неправильно відображалися на значку WhatsApp."
     ],
-    "Home screen": [
-      "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
+    "Екран блокування, рядок стану, панель сповіщень": [
+      "Нове: додано підтримку заборони відкриття панелі сповіщень на екрані блокування",
+      "Виправлено: світлодіод сповіщень не блимав, коли заряд батареї був низьким.",
+      "Виправлення: Попередження про низький заряд батареї не відображалося в альбомному режимі"
     ],
-    "Settings": [
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
+    "Налаштування": [
+      "Виправлено: сторінка синхронізації не оновлювалася, коли синхронізацію вмикали або вимикали в панелі сповіщень"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "Хмарний сервіс Xiaomi": [
+      "Оптимізація: оптимізовано нову головну сторінку Mi Cloud, інформація про хмарний простір відображається чіткіше."
     ]
   },
   "logs_pl": {
     "System": [
-      "Optimization: Updated Android Security Patch to May 2019. Increased system security.",
-      "Android 9.0 update"
+      "Optymalizacja: Zaktualizowano poprawkę zabezpieczeń Google (2019#5), zwiększono bezpieczeństwo systemu.",
+      "Aktualizacja do Android 9.0",
+      "Optymalizacja: Zaktualizowano poprawkę zabezpieczeń Google (2019#5), zwiększono bezpieczeństwo systemu.",
+      "Aktualizacja Android 9.0"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
+    "Telefon": [
+      "Poprawka: Zakończenie połączeń trwało dłużej niż oczekiwano",
+      "Poprawka: pływający pasek połączenia przychodzącego i zielony pasek połączenia wyświetlały się jednocześnie.",
+      "Naprawiono: Zakończenie połączeń trwało dłużej niż oczekiwano",
+      "Poprawka: pływający pasek połączenia przychodzącego i zielony pasek połączenia wyświetlały się jednocześnie."
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode"
+    "Ekran główny": [
+      "Naprawiono: odznaki powiadomień były nieprawidłowo wyświetlane na ikonie WhatsApp.",
+      "Naprawiono: odznaki powiadomień były nieprawidłowo wyświetlane na ikonie WhatsApp."
     ],
-    "Home screen": [
-      "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
+    "Ekran blokady, pasek powiadomień,panel powiadomień": [
+      "Nowość: można teraz zablokować otwieranie panelu powiadomień na ekranie blokady",
+      "Poprawka: dioda powiadomień nie migała przy niskim poziomie baterii.",
+      "Poprawka: Ostrzeżenie o niskim poziomie baterii nie wyświetlało się w trybie poziomym"
     ],
-    "Settings": [
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
+    "Ustawienia": [
+      "Poprawka: strona synchronizacji nie odświeżała się po włączeniu lub wyłączeniu synchronizacji z panelu powiadomień"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "Usługa w chmurze Xiaomi": [
+      "Optymalizacja: zoptymalizowano nową stronę główną Mi Cloud, informacje o przestrzeni w chmurze są wyświetlane wyraźniej."
     ]
   },
   "logs_de": {
     "System": [
-      "Optimization: Updated Android Security Patch to May 2019. Increased system security.",
-      "Android 9.0 update"
+      "Optimierung: Google-Sicherheitspatch (2019#5) aktualisiert, Systemsicherheit verbessert.",
+      "Android 9.0-Update",
+      "Optimierung: Google-Sicherheitspatch (2019#5) aktualisiert, Systemsicherheit verbessert.",
+      "Android 9.0-Update"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
+    "Telefon": [
+      "Behoben: Das Beenden von Anrufen dauerte länger als erwartet",
+      "Behebung: Die schwebende Leiste für eingehende Anrufe und der grüne Anrufbalken wurden gleichzeitig angezeigt.",
+      "Behoben: Anrufe beenden dauerte länger als erwartet",
+      "Behebung: Die schwebende Leiste für eingehende Anrufe und der grüne Anrufbalken wurden gleichzeitig angezeigt."
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode"
+    "Startbildschirm": [
+      "Behoben: Benachrichtigungs-Badges wurden auf dem WhatsApp-Symbol falsch angezeigt.",
+      "Behoben: Benachrichtigungs-Badges wurden auf dem WhatsApp-Symbol falsch angezeigt."
     ],
-    "Home screen": [
-      "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
+      "Neu: Öffnen der Benachrichtigungsleiste auf dem Sperrbildschirm kann jetzt gesperrt werden",
+      "Fehler behoben: Benachrichtigungs-LED blinkte bei niedrigem Akkustand nicht.",
+      "Behebung: Warnung bei niedrigem Akkustand wurde im Querformat nicht angezeigt"
     ],
-    "Settings": [
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
+    "Einstellungen": [
+      "Behoben: Die Synchronisierungsseite wurde nicht aktualisiert, wenn die Synchronisierung in der Benachrichtigungsleiste ein- oder ausgeschaltet wurde"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "Xiaomi Cloud-Dienst": [
+      "Optimierung: Wir haben die Startseite von Mi Cloud neu gestaltet. Sie sieht jetzt viel besser aus"
     ]
   },
   "logs_fr": {
-    "System": [
-      "Optimization: Updated Android Security Patch to May 2019. Increased system security.",
-      "Android 9.0 update"
+    "Système": [
+      "Optimisation : Mise à jour du correctif de sécurité Google (2019#5), amélioration de la sécurité du système.",
+      "Mise à jour vers Android 9.0",
+      "Optimisation : Mise à jour du correctif de sécurité Google (2019#5), amélioration de la sécurité du système.",
+      "Mise à jour Android 9.0"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
+    "Téléphone": [
+      "Réparé: Mettre fin aux appels a pris plus de temps que prévu",
+      "Correction : la barre flottante d’appel entrant et la barre verte d’appel s’affichaient en même temps.",
+      "Correction : la fin des appels prenait plus de temps que prévu",
+      "Correction : la barre flottante d’appel entrant et la barre verte d’appel s’affichaient en même temps."
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode"
+    "Écran d'accueil": [
+      "Correction : les badges de notification s’affichaient incorrectement sur l’icône WhatsApp.",
+      "Correction : les badges de notification s’affichaient incorrectement sur l’icône WhatsApp."
     ],
-    "Home screen": [
-      "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
+    "Écran de verrouillage, Barre d'état, Panneau de notification": [
+      "Nouveau : il est désormais possible d’interdire l’ouverture du panneau de notifications sur l’écran de verrouillage",
+      "Correction : la LED de notification ne clignotait pas lorsque la batterie était faible.",
+      "Correction : L'avertissement de batterie faible ne s'affichait pas en mode paysage"
     ],
-    "Settings": [
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
+    "Paramètres": [
+      "Correction : la page de synchronisation ne s’actualisait pas lorsqu’on activait ou désactivait la synchronisation depuis le panneau de notifications"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "Service cloud Xiaomi": [
+      "Optimisation : la nouvelle page d’accueil de Mi Cloud a été optimisée, les informations sur l’espace cloud s’affichent plus clairement."
     ]
   },
   "logs_it": {
     "Sistema": [
       "Ottimizzazione: Aggiornamento della patch di sicurezza Android a Maggio 2019. Maggiore sicurezza del sistema.",
+      "Aggiornamento ad Android 9.0",
+      "Ottimizzazione: Aggiornamento della patch di sicurezza Android a Maggio 2019. Maggiore sicurezza del sistema.",
       "Aggiornamento di Android 9.0"
     ],
     "Telefono": [
       "Risolto: Terminare le chiamate richiedeva più tempo del previsto",
+      "Risolto: I collegamenti della barra di stato e le notifiche a comparsa per le chiamate apparivano contemporaneamente",
+      "Risolto: Terminare le chiamate richiedeva più tempo del previsto",
       "Risolto: I collegamenti della barra di stato e le notifiche a comparsa per le chiamate apparivano contemporaneamente"
     ],
+    "Schermata Home": [
+      "Risolto: I badge di notifica erano visualizzati in modo errato sull'icona di WhatsApp",
+      "Risolto: I badge di notifica erano visualizzati in modo errato sull'icona di WhatsApp"
+    ],
     "Schermata di blocco, barra di stato, area delle notifiche": [
-      "Nuovo: È ora possibile limitare l^apertura dell^area delle notifiche sulla schermata di blocco",
+      "Nuovo: È ora possibile limitare l'apertura dell'area delle notifiche sulla schermata di blocco",
       "Risolto: Il LED non si illuminava quando la batteria era scarica",
       "Risolto: Gli avvisi di batteria scarica non apparivano in modalità Orizzontale"
     ],
-    "Schermata Home": [
-      "Risolto: I badge di notifica erano visualizzati in modo errato sull^icona di WhatsApp"
-    ],
     "Impostazioni": [
-      "Risolto: La pagina di sincronizzazione non poteva essere aggiornata quando la sincronizzazione era attiva o disattivata nell^area delle notifiche"
+      "Risolto: La pagina di sincronizzazione non poteva essere aggiornata quando la sincronizzazione era attiva o disattivata nell'area delle notifiche"
     ],
-    "Mi Cloud": [
+    "Servizio cloud Xiaomi": [
       "Ottimizzazione: Abbiamo ridisegnato la pagina iniziale di Mi Cloud. Ora è molto meglio!"
     ]
   },
   "logs_es": {
     "Sistema": [
       "Optimización: Parche de seguridad de Android actualizado a Mayo de 2019. Seguridad del sistema incrementada.",
+      "Actualización a Android 9.0",
+      "Optimización: Parche de seguridad de Android actualizado a Mayo de 2019. Seguridad del sistema incrementada.",
       "Actualización de Android 9.0"
     ],
     "Teléfono": [
       "Reparado: Terminar las llamadas llevó más tiempo de lo esperado",
+      "Reparado: El acceso directo a la Barra de estado y notificaciones flotantes para llamadas aparecieron al mismo tiempo",
+      "Reparado: Terminar las llamadas llevó más tiempo de lo esperado",
       "Reparado: El acceso directo a la Barra de estado y notificaciones flotantes para llamadas aparecieron al mismo tiempo"
+    ],
+    "Pantalla de inicio": [
+      "Reparado: Los iconos de notificaciones fueron mostrados de forma incorrecta en el icono de WhatsApp",
+      "Reparado: Los iconos de notificaciones fueron mostrados de forma incorrecta en el icono de WhatsApp"
     ],
     "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
       "Nuevo: Ahora puedes restringir abrir la Barra de notificaciones en la Pantalla de bloqueo",
       "Reparado: La luz LED no parpadeó cuando la batería estaba baja",
       "Reparado: El aviso de batería baja no apareció en el Modo paisaje"
     ],
-    "Pantalla de inicio": [
-      "Reparado: Los iconos de notificaciones fueron mostrados de forma incorrecta en el icono de WhatsApp"
-    ],
     "Ajustes": [
       "Reparado: La página de sincronización no pudo ser refrescada cuando la sincronización fue activada o desactivada en la Barra de notificaciones"
     ],
-    "Mi Cloud": [
+    "Servicio en la nube de Xiaomi": [
       "Optimización: Hemos rediseñado la página de inicio de Mi Nube. ¡Ahora tiene mucho mejor aspecto!"
     ]
   },
   "logs_pt": {
-    "System": [
-      "Optimization: Updated Android Security Patch to May 2019. Increased system security.",
-      "Android 9.0 update"
+    "Sistema": [
+      "Otimização: Atualizado o patch de segurança do Google (2019#5), melhorando a segurança do sistema.",
+      "Atualização para Android 9.0",
+      "Otimização: Atualizado o patch de segurança do Google (2019#5), melhorando a segurança do sistema.",
+      "Atualização do Android 9.0"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
+    "Telefone": [
+      "Correção: Encerrar chamadas levava mais tempo que o esperado",
+      "Correção: a barra flutuante de chamada recebida e a barra verde de chamada apareciam ao mesmo tempo.",
+      "Correção: encerrar chamadas demorava mais do que o esperado",
+      "Correção: a barra flutuante de chamada recebida e a barra verde de chamada apareciam ao mesmo tempo."
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode"
+    "Ecrã inicial": [
+      "Correção: os badges de notificação eram exibidos incorretamente no ícone do WhatsApp.",
+      "Correção: os badges de notificação eram exibidos incorretamente no ícone do WhatsApp."
     ],
-    "Home screen": [
-      "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
+    "Tela de bloqueio, Barra de status e Área de notificações": [
+      "Novo: agora é possível impedir a abertura do painel de notificações na tela de bloqueio",
+      "Correção: o LED de notificação não piscava quando a bateria estava fraca.",
+      "Correção: O aviso de bateria fraca não aparecia no modo paisagem"
     ],
-    "Settings": [
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
+    "Configurações": [
+      "Correção: a página de sincronização não era atualizada ao ativar ou desativar a sincronização no painel de notificações"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "Serviço de nuvem Xiaomi": [
+      "Otimização: nova página inicial do Mi Cloud otimizada, informações de armazenamento em nuvem exibidas com mais clareza."
     ]
   },
   "logs_tr": {
     "Sistem": [
       "Optimizasyon: Android Güvenlik Yaması Mayıs 2019 sürümüne güncellendi. Sistem güvenliği artırıldı.",
+      "Android 9.0 güncellemesi",
+      "Optimizasyon: Android Güvenlik Yaması Mayıs 2019 sürümüne güncellendi. Sistem güvenliği artırıldı.",
       "Android 9.0 güncellemesi"
     ],
     "Telefon": [
       "Onarım: Aramaları sonlandırmak beklenenden daha uzun sürdü",
+      "Onarım: Durum çubuğu kısayolu ve aramalar için kayan bildirimler aynı anda belirdi",
+      "Onarım: Aramaları sonlandırmak beklenenden daha uzun sürdü",
       "Onarım: Durum çubuğu kısayolu ve aramalar için kayan bildirimler aynı anda belirdi"
+    ],
+    "Ana ekran": [
+      "Onarım: Bildirim rozetleri WhatsApp simgesinde yanlış görüntülendi",
+      "Onarım: Bildirim rozetleri WhatsApp simgesinde yanlış görüntülendi"
     ],
     "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
       "Yeni: Kilit ekranında Bildirim çubuğunun açılmasını kısıtlayabilirsiniz",
       "Onarım: Pil seviyesi düşükken LED ışık yanıp sönmedi",
       "Onarım: Manzara modunda düşük pil uyarıları gösterilmedi"
     ],
-    "Ana ekran": [
-      "Onarım: Bildirim rozetleri WhatsApp simgesinde yanlış görüntülendi"
-    ],
     "Ayarlar": [
       "Onarım: Senkronizasyon Bildirim çubuğunda açıldığında veya kapatıldığında senkronizasyon sayfası yenilenemedi"
     ],
-    "Mi Cloud": [
-      "Optimizasyon: Mi Cloud^un ana sayfasını yeniden tasarladık, artık çok daha iyi görünüyor!"
+    "Xiaomi Bulut Hizmeti": [
+      "Optimizasyon: Mi Cloud'un ana sayfasını yeniden tasarladık, artık çok daha iyi görünüyor!"
     ]
   },
   "logs_id": {
-    "System": [
-      "Optimization: Updated Android Security Patch to May 2019. Increased system security.",
-      "Android 9.0 update"
+    "Sistem": [
+      "Optimasi: Memperbarui patch keamanan Google (2019#5), meningkatkan keamanan sistem.",
+      "Pembaruan Android 9.0",
+      "Optimasi: Memperbarui patch keamanan Google (2019#5), meningkatkan keamanan sistem.",
+      "Pembaruan Android 9.0"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
+    "Telepon": [
+      "Perbaikan: Mematikan panggilan memakan waktu lebih lama dibanding seharusnya",
+      "Perbaikan: Bilah mengambang panggilan masuk dan bilah hijau panggilan muncul bersamaan.",
+      "Perbaikan: Mengakhiri panggilan membutuhkan waktu lebih lama dari yang diharapkan",
+      "Perbaikan: Bilah mengambang panggilan masuk dan bilah hijau panggilan muncul bersamaan."
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode"
+    "Layar Utama": [
+      "Perbaikan: Lencana notifikasi ditampilkan secara tidak benar pada ikon WhatsApp.",
+      "Perbaikan: Lencana notifikasi ditampilkan secara tidak benar pada ikon WhatsApp."
     ],
-    "Home screen": [
-      "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
+    "Layar kunci, bar status, layar notifikasi": [
+      "Baru: Dukungan untuk mencegah membuka panel notifikasi di layar kunci",
+      "Perbaikan: Lampu notifikasi tidak berkedip saat baterai lemah.",
+      "Perbaikan: Peringatan baterai lemah tidak muncul dalam mode lanskap"
     ],
-    "Settings": [
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
+    "Pengaturan": [
+      "Perbaikan: Halaman sinkronisasi tidak diperbarui saat sinkronisasi diaktifkan atau dinonaktifkan dari panel notifikasi"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "Layanan Cloud Xiaomi": [
+      "Optimasi: Halaman utama baru Mi Cloud telah dioptimalkan, informasi ruang cloud ditampilkan lebih jelas."
     ]
   },
   "logs_vi": {
-    "System": [
-      "Optimization: Updated Android Security Patch to May 2019. Increased system security.",
-      "Android 9.0 update"
+    "Hệ thống": [
+      "Tối ưu hóa: Đã cập nhật bản vá bảo mật Google (2019#5), nâng cao bảo mật hệ thống.",
+      "Cập nhật Android 9.0",
+      "Tối ưu hóa: Đã cập nhật bản vá bảo mật Google (2019#5), nâng cao bảo mật hệ thống.",
+      "Cập nhật Android 9.0"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
+    "Điện thoại": [
+      "Sửa lỗi: Kết thúc cuộc gọi mất nhiều thời gian hơn dự kiến",
+      "Sửa: Thanh nổi cuộc gọi đến và thanh màu xanh cuộc gọi xuất hiện cùng lúc.",
+      "Đã sửa: Việc kết thúc cuộc gọi mất nhiều thời gian hơn dự kiến",
+      "Sửa: Thanh nổi cuộc gọi đến và thanh màu xanh cuộc gọi xuất hiện cùng lúc."
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode"
+    "Màn hình chính": [
+      "Sửa lỗi: huy hiệu thông báo hiển thị không chính xác trên biểu tượng WhatsApp.",
+      "Sửa lỗi: huy hiệu thông báo hiển thị không chính xác trên biểu tượng WhatsApp."
     ],
-    "Home screen": [
-      "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Mới: Hỗ trợ chặn kéo xuống bảng thông báo trên màn hình khóa",
+      "Sửa lỗi: đèn thông báo không nhấp nháy khi pin yếu.",
+      "Sửa lỗi: Cảnh báo pin yếu không hiển thị ở chế độ ngang"
     ],
-    "Settings": [
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
+    "Cài đặt": [
+      "Sửa lỗi: Trang đồng bộ không làm mới khi bật hoặc tắt đồng bộ từ bảng thông báo"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "Dịch vụ đám mây Xiaomi": [
+      "Tối ưu hóa: Trang chủ mới của Mi Cloud đã được tối ưu, thông tin dung lượng đám mây hiển thị rõ ràng hơn."
     ]
   },
   "logs_th": {
-    "System": [
-      "Optimization: Updated Android Security Patch to May 2019. Increased system security.",
-      "Android 9.0 update"
+    "ระบบ": [
+      "ปรับปรุง: อัปเดตแพตช์ความปลอดภัยของ Google (2019#5) เพิ่มความปลอดภัยของระบบ",
+      "อัปเดต Android 9.0",
+      "ปรับปรุง: อัปเดตแพตช์ความปลอดภัยของ Google (2019#5) เพิ่มความปลอดภัยของระบบ",
+      "อัปเดต Android 9.0"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
+    "โทรศัพท์": [
+      "แก้ไข: การวางสายใช้เวลานานกว่าที่ควร",
+      "แก้ไข: แถบลอยของการโทรเข้าและแถบสีเขียวของการโทรแสดงพร้อมกัน",
+      "แก้ไข: การวางสายใช้เวลานานกว่าที่คาดไว้",
+      "แก้ไข: แถบลอยของการโทรเข้าและแถบสีเขียวของการโทรแสดงพร้อมกัน"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode"
+    "หน้าจอหลัก": [
+      "แก้ไข: การแสดงสัญลักษณ์การแจ้งเตือนบนไอคอน WhatsApp ไม่ถูกต้อง",
+      "แก้ไข: การแสดงสัญลักษณ์การแจ้งเตือนบนไอคอน WhatsApp ไม่ถูกต้อง"
     ],
-    "Home screen": [
-      "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
+    "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
+      "ใหม่: รองรับการห้ามเลื่อนลงเพื่อเปิดแผงการแจ้งเตือนบนหน้าจอล็อก",
+      "แก้ไข: ไฟแจ้งเตือนไม่กะพริบเมื่อแบตเตอรี่ต่ำ",
+      "แก้ไข: คำเตือนแบตเตอรี่ต่ำไม่แสดงในโหมดแนวนอน"
     ],
-    "Settings": [
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
+    "การตั้งค่า": [
+      "แก้ไข: หน้าการซิงค์ไม่รีเฟรชเมื่อเปิดหรือปิดการซิงค์จากแผงการแจ้งเตือน"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "บริการคลาวด์ Xiaomi": [
+      "ปรับปรุง: ปรับปรุงหน้าแรกใหม่ของ Mi Cloud ให้แสดงข้อมูลพื้นที่จัดเก็บบนคลาวด์ได้ชัดเจนขึ้น"
     ]
   },
   "logs_ar": {
-    "System": [
-      "Optimization: Updated Android Security Patch to May 2019. Increased system security.",
-      "Android 9.0 update"
+    "النظام": [
+      "تحسين: تحديث رقعة أمان Google (2019#5)، مما يعزز أمان النظام.",
+      "تحديث Android 9.0",
+      "تحسين: تحديث رقعة أمان Google (2019#5)، مما يعزز أمان النظام.",
+      "تحديث Android 9.0"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
+    "الهاتف": [
+      "إصلاح: استغرق إنهاء المكالمات وقتًا أطول من المتوقع",
+      "إصلاح: ظهور شريط المكالمة العائم والشريط الأخضر للمكالمة في الوقت نفسه."
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode"
+    "الشاشة الرئيسية": [
+      "إصلاح: عرض شارات الإشعارات بشكل غير صحيح على أيقونة WhatsApp",
+      "إصلاح: عرض شارات الإشعارات بشكل غير صحيح على أيقونة WhatsApp"
     ],
-    "Home screen": [
-      "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
+    "هاتف": [
+      "إصلاح: استغرق إنهاء المكالمات وقتًا أطول من المتوقع",
+      "إصلاح: ظهور شريط المكالمة العائم والشريط الأخضر للمكالمة في الوقت نفسه."
     ],
-    "Settings": [
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
+    "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
+      "جديد: دعم منع سحب لوحة الإشعارات على شاشة القفل",
+      "إصلاح: لم يكن مؤشر الإشعارات يومض عند انخفاض البطارية.",
+      "إصلاح: إشعار انخفاض البطارية لم يظهر في الوضع الأفقي"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "الإعدادات": [
+      "إصلاح: تعذّر تحديث صفحة المزامنة عند تشغيل المزامنة أو إيقافها من لوحة الإشعارات"
+    ],
+    "خدمة Xiaomi السحابية": [
+      "تحسين: تم تحسين الصفحة الرئيسية الجديدة لـ Mi Cloud، وأصبحت معلومات التخزين السحابي أكثر وضوحًا."
     ]
   },
   "logs_in": {
-    "System": [
-      "Optimization: Updated Android Security Patch to May 2019. Increased system security.",
-      "Android 9.0 update"
+    "सिस्टम": [
+      "अनुकूलन: Google सुरक्षा पैच (2019#5) अपडेट किया गया, सिस्टम सुरक्षा में सुधार।",
+      "Android 9.0 अपडेट",
+      "अनुकूलन: Google सुरक्षा पैच (2019#5) अपडेट किया गया, सिस्टम सुरक्षा में सुधार।",
+      "Android 9.0 अपडेट"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
+    "फ़ोन": [
+      "ठीक किया गया: कॉल समाप्त करने में अपेक्षा से अधिक समय लगता था",
+      "फ़िक्स: इनकमिंग कॉल फ़्लोटिंग बार और कॉल ग्रीन बार का एक ही समय पर दिखना।",
+      "ठीक किया गया: कॉल समाप्त करने में अपेक्षा से अधिक समय लगा",
+      "फ़िक्स: इनकमिंग कॉल फ़्लोटिंग बार और कॉल ग्रीन बार का एक ही समय पर दिखना।"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode"
+    "होम स्क्रीन": [
+      "WhatsApp आइकन पर नोटिफ़िकेशन बैज गलत तरीके से दिखने की समस्या ठीक की गई।",
+      "WhatsApp आइकन पर नोटिफ़िकेशन बैज गलत तरीके से दिखने की समस्या ठीक की गई।"
     ],
-    "Home screen": [
-      "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
+      "नया: लॉक स्क्रीन पर नोटिफ़िकेशन शेड को नीचे खींचकर खोलने से रोकें",
+      "ठीक किया गया: बैटरी कम होने पर सूचना LED नहीं ब्लिंक होती थी।",
+      "ठीक करें: लैंडस्केप मोड में कम बैटरी चेतावनी प्रदर्शित नहीं हुई"
     ],
-    "Settings": [
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
+    "सेटिंग्स": [
+      "फ़िक्स: नोटिफ़िकेशन शेड से सिंक चालू या बंद करने पर सिंक पेज रीफ़्रेश नहीं होता था"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "Xiaomi क्लाउड सेवा": [
+      "अनुकूलन: Mi Cloud के नए होमपेज को अनुकूलित किया गया, क्लाउड स्टोरेज की जानकारी अब और स्पष्ट दिखती है।"
     ]
   },
   "logs_ug": {
-    "System": [
+    "سىستېما": [
       "Optimization: Updated Android Security Patch to May 2019. Increased system security.",
-      "Android 9.0 update"
+      "Android سىستېما نەشرى Android 9.0 غا يېڭىلاندى.",
+      "Optimization: Updated Android Security Patch to May 2019. Increased system security.",
+      "سىستېمىنىڭ Android نەشرى Android 9.0 غا يېڭىلاندى"
     ],
-    "Phone": [
+    "تېلېفون": [
+      "Fix: Ending calls took longer time than expected",
+      "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
       "Fix: Ending calls took longer time than expected",
       "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode"
-    ],
-    "Home screen": [
+    "باش ئېكران": [
+      "Fix: Notification badges were displayed incorrectly on the WhatsApp icon",
       "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
     ],
-    "Settings": [
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
+    "Lockscreen, status bar, Notification shade": [
+      "يېڭى: قۇلۇپ ئېكرانى بېتىدە ئۇقتۇرۇش تاختىسىنى تۆۋەن تارتىشنى چەكلەشنى قوللايدۇ",
+      "Fix: LED light didn't blink when battery was low",
+      "Fix: Low battery warning didn't appear in landscape mode"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "تەڭشەكلەر": [
+      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade"
+    ],
+    "Xiaomi بۇلۇت مۇلازىمىتى": [
+      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!"
     ]
   },
   "logs_bo": {
-    "System": [
+    "མ་ལག": [
       "Optimization: Updated Android Security Patch to May 2019. Increased system security.",
-      "Android 9.0 update"
+      "Android རིམ་ལུགས་ཀྱི་ཐོན་རིམ་ Android 9.0 ལ་ཡར་བསྐྱེད་བྱས།"
     ],
-    "Phone": [
+    "ཁ་པར": [
+      "Fix: Ending calls took longer time than expected",
+      "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
       "Fix: Ending calls took longer time than expected",
       "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode"
-    ],
     "Home screen": [
+      "Fix: Notification badges were displayed incorrectly on the WhatsApp icon",
       "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
     ],
-    "Settings": [
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
+    "རིམ་ལུགས": [
+      "Optimization: Updated Android Security Patch to May 2019. Increased system security.",
+      "Android 9.0 update"
+    ],
+    "Lockscreen, status bar, Notification shade": [
+      "New: You can restrict opening Notification shade on the Lock screen now",
+      "Fix: LED light didn't blink when battery was low",
+      "Fix: Low battery warning didn't appear in landscape mode"
+    ],
+    "སྒྲིག་བཀོད": [
+      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade"
     ],
     "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!"
     ]
   }
 }

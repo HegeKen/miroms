@@ -1,7 +1,10 @@
 {
   "logs_zh": {
     "系统": [
-      "更新谷歌安全补丁（2020#12），提升系统安全性"
+      "更新谷歌安全补丁（2020#12），提升系统安全性",
+      "新增 控制中心点击空白处收起",
+      "优化 横屏时控制中心的布局设计",
+      "修复 控制中心横屏显示宽度异常问题"
     ],
     "控制中心": [
       "新增 控制中心点击空白处收起",
@@ -11,17 +14,23 @@
   },
   "logs_en": {
     "System": [
-      "Updated Android Security Patch to December 2020. Increased system security."
+      "Updated Android Security Patch to December 2020. Increased system security.",
+      "New: Tapping a blank spot in Control center closes it now",
+      "Optimization: Control center layout in landscape mode",
+      "Fix: Control center wasn't always displayed correctly in landscape mode"
     ],
     "Control center": [
       "New: Tapping a blank spot in Control center closes it now",
       "Optimization: Control center layout in landscape mode",
-      "Fix: Control center wasn^t always displayed correctly in landscape mode"
+      "Fix: Control center wasn't always displayed correctly in landscape mode"
     ]
   },
   "logs_zh_tw": {
     "系統": [
-      "更新Android安全性修補程式等級（2020#12），提升系統安全性"
+      "更新Android安全性修補程式等級（2020#12），提升系統安全性",
+      "新增: 控制中心點擊空白處收起",
+      "優化: 橫向畫面時控制中心的布局設計",
+      "修復: 控制中心橫向螢幕顯示寬度異常問題"
     ],
     "控制中心": [
       "新增: 控制中心點擊空白處收起",
@@ -30,153 +39,228 @@
     ]
   },
   "logs_ja": {
-    "コントロールセンター": [
+    "システム": [
+      "Androidのセキュリティパッチを2020年12月にアップデートしました。システムのセキュリティを強化しました。",
       "新機能: コントロールセンターの空白部分をタップすると閉じるようになりました",
       "最適化: 横向きモードでのコントロールセンターレイアウト",
       "修正: コントロールセンターが横向きモードで正しく表示されない問題"
     ],
-    "システム": [
-      "Androidのセキュリティパッチを2020年12月にアップデートしました。システムのセキュリティを強化しました。"
+    "コントロールセンター": [
+      "新機能: コントロールセンターの空白部分をタップすると閉じるようになりました",
+      "最適化: 横向きモードでのコントロールセンターレイアウト",
+      "修正: コントロールセンターが横向きモードで正しく表示されない問題"
     ]
   },
   "logs_ko": {
-    "제어 센터": [
+    "시스템": [
+      "Android 보안패치 (2020#12) 업데이트됨. 시스템 보안이 향상되었습니다.",
       "New: 빈 곳을 탭하여 제어 센터 종료",
       "최적화: 풍경 모드에서 제어 센터 레이아웃",
       "수정: 풍경 모드에서 제어 센터가 제대로 표시되지 않는 현상"
     ],
-    "시스템": [
-      "Android 보안패치 (2020#12) 업데이트됨. 시스템 보안이 향상되었습니다."
+    "제어 센터": [
+      "New: 빈 곳을 탭하여 제어 센터 종료",
+      "최적화: 풍경 모드에서 제어 센터 레이아웃",
+      "수정: 풍경 모드에서 제어 센터가 제대로 표시되지 않는 현상"
     ]
   },
   "logs_ru": {
-    "Центр управления": [
+    "Система": [
+      "Обновление системы безопасности Android (декабрь 2020 года). Улучшена безопасность системы.",
       "Новое: Нажмите на свободное пространство в Центре управления, чтобы закрыть его",
       "Оптимизация: Разметка Центра управления в альбомной ориентации",
       "Исправлено: Центр управления не всегда отображался правильно в альбомном режиме"
     ],
-    "Система": [
-      "Обновление системы безопасности Android (декабрь 2020 года). Улучшена безопасность системы."
+    "Центр управления": [
+      "Новое: Нажмите на свободное пространство в Центре управления, чтобы закрыть его",
+      "Оптимизация: Разметка Центра управления в альбомной ориентации",
+      "Исправлено: Центр управления не всегда отображался правильно в альбомном режиме"
     ]
   },
   "logs_uk": {
-    "Центр керування": [
+    "Система": [
+      "Оновлено патч безпеки Android за грудень 2020 року. Збільшено безпеку системи.",
       "Нове: Натисніть на вільний простір в Центрі управління, щоб закрити його",
       "Оптимізація: Розмітка Центру керування в альбомній орієнтації",
       "Виправлено: Центр керування відображався неправильно у альбомній орієнтації"
     ],
-    "Система": [
-      "Оновлено патч безпеки Android за грудень 2020 року. Збільшено безпеку системи."
+    "Центр керування": [
+      "Нове: Натисніть на вільний простір в Центрі управління, щоб закрити його",
+      "Оптимізація: Розмітка Центру керування в альбомній орієнтації",
+      "Виправлено: Центр керування відображався неправильно у альбомній орієнтації"
     ]
   },
   "logs_pl": {
-    "Centrum kontroli": [
+    "System": [
+      "Zaktualizowano Pakiet Bezpieczeństwa Android do grudnia 2020 r. Zwiększono bezpieczeństwo systemu.",
       "Nowe: Dotknięcie pustego miejsca w Centrum kontroli powoduje jego zamknięcie",
       "Zoptymalizowano: Układ Centrum kontroli w trybie poziomym",
       "Naprawiono: Centrum kontroli nie zawsze było poprawnie wyświetlane w trybie poziomym"
     ],
+    "Centrum kontroli": [
+      "Nowe: Dotknięcie pustego miejsca w Centrum kontroli powoduje jego zamknięcie",
+      "Zoptymalizowano: Układ Centrum kontroli w trybie poziomym",
+      "Naprawiono: Centrum kontroli nie zawsze było poprawnie wyświetlane w trybie poziomym"
+    ]
+  },
+  "logs_de": {
     "System": [
-      "Zaktualizowano Pakiet Bezpieczeństwa Android do grudnia 2020 r. Zwiększono bezpieczeństwo systemu."
+      "Android-Sicherheitspatch auf Dezember 2020 aktualisiert. Systemsicherheit erhöht."
+    ],
+    "Kontrollzentrum": [
+      "Neu: Durch Tippen auf eine leere Stelle im Kontrollzentrum wird es jetzt geschlossen",
+      "Optimierung: Layout des Kontrollzentrums im Querformat",
+      "Fix: Das Kontrollzentrum wurde im Querformat nicht immer korrekt angezeigt"
     ]
   },
   "logs_fr": {
+    "Système": [
+      "Patch de Sécurité Android mis à jour pour décembre 2020. Amélioration du système de sécurité.",
+      "Nouveau: Taper sur un espace vide dans le Centre de contrôle le ferme maintenant",
+      "Optimisation: Disposition du centre de contrôle en mode paysage",
+      "Réparé: Le centre de contrôle ne s'affichait pas toujours correctement en mode paysage"
+    ],
     "Centre de contrôle": [
       "Nouveau: Taper sur un espace vide dans le Centre de contrôle le ferme maintenant",
       "Optimisation: Disposition du centre de contrôle en mode paysage",
-      "Réparé: Le centre de contrôle ne s^affichait pas toujours correctement en mode paysage"
-    ],
-    "Système": [
-      "Patch de Sécurité Android mis à jour pour décembre 2020. Amélioration du système de sécurité."
+      "Réparé: Le centre de contrôle ne s'affichait pas toujours correctement en mode paysage"
     ]
   },
   "logs_it": {
-    "Centro di controllo": [
+    "Sistema": [
+      "Patch di sicurezza Android aggiornata a dicembre 2020. Maggiore sicurezza del sistema.",
       "Nuovo: Ora basta toccare un punto vuoto sul Centro di controllo per chiuderlo",
       "Ottimizzazione: Layout del Centro di controllo in modalità orizzontale",
       "Risolto: Il Centro di controllo non veniva sempre visualizzato correttamente in modalità orizzontale"
     ],
-    "Sistema": [
-      "Patch di sicurezza Android aggiornata a dicembre 2020. Maggiore sicurezza del sistema."
+    "Centro di controllo": [
+      "Nuovo: Ora basta toccare un punto vuoto sul Centro di controllo per chiuderlo",
+      "Ottimizzazione: Layout del Centro di controllo in modalità orizzontale",
+      "Risolto: Il Centro di controllo non veniva sempre visualizzato correttamente in modalità orizzontale"
     ]
   },
   "logs_es": {
-    "Centro de control": [
+    "Sistema": [
+      "Parche de seguridad de Android actualizado a diciembre de 2020. Seguridad del sistema incrementada.",
       "Nuevo: Ahora pulsar sobre un espacio en blanco en el Centro de control lo cierra",
       "Optimización: Disposición del Centro de control en el modo paisaje",
       "Reparado: El Centro de control no siempre se mostraba correctamente en el modo paisaje"
     ],
-    "Sistema": [
-      "Parche de seguridad de Android actualizado a diciembre de 2020. Seguridad del sistema incrementada."
+    "Centro de control": [
+      "Nuevo: Ahora pulsar sobre un espacio en blanco en el Centro de control lo cierra",
+      "Optimización: Disposición del Centro de control en el modo paisaje",
+      "Reparado: El Centro de control no siempre se mostraba correctamente en el modo paisaje"
     ]
   },
   "logs_pt": {
-    "Centro de controle": [
+    "Sistema": [
+      "Patch de Segurança do Android atualizado para Dezembro de 2020. Segurança do sistema aprimorada.",
       "Novo: Tocar em um ponto vazio no Centro de controle agora o fecha",
       "Otimização: Layout do Centro de controle em modo paisagem",
       "Correção: O Centro de Controle não era exibido sempre da forma correta no modo paisagem"
     ],
-    "Sistema": [
-      "Patch de Segurança do Android atualizado para Dezembro de 2020. Segurança do sistema aprimorada."
+    "Centro de controle": [
+      "Novo: Tocar em um ponto vazio no Centro de controle agora o fecha",
+      "Otimização: Layout do Centro de controle em modo paisagem",
+      "Correção: O Centro de Controle não era exibido sempre da forma correta no modo paisagem"
     ]
   },
   "logs_tr": {
-    "Kontrol merkezi": [
+    "Sistem": [
+      "Android Güvenlik Patch'i Aralık 2020'de güncellendi. Sistem güvenliği arttırıldı.",
       "Yeni: Kontrol merkezinde boş bir noktaya dokunmak onu şimdi kapatır",
       "Optimizasyon: Manzara modunda Kontrol merkezi düzeni",
       "Onarım: Kontrol merkezi, manzara modunda doğru bir şekilde görüntülenmedi"
     ],
-    "Sistem": [
-      "Android Güvenlik Patch^i Aralık 2020^de güncellendi. Sistem güvenliği arttırıldı."
+    "Kontrol merkezi": [
+      "Yeni: Kontrol merkezinde boş bir noktaya dokunmak onu şimdi kapatır",
+      "Optimizasyon: Manzara modunda Kontrol merkezi düzeni",
+      "Onarım: Kontrol merkezi, manzara modunda doğru bir şekilde görüntülenmedi"
     ]
   },
   "logs_id": {
-    "Pusat kontrol": [
+    "Sistem": [
+      "Patch Keamanan Android diperbarui (Desember 2020). Keamanan sistem ditingkatkan.",
       "Baru: Sekarang, untuk menutup Pusat kontrol, Anda dapat mengetuk daerah kosong di Pusat kontrol",
       "Pengoptimalan: Tata letak Pusat kontral di mode lanskap",
       "Perbaikan: Pusat kontrol tidak selalu ditampilkan dengan benar saat mode horisontal"
     ],
-    "Sistem": [
-      "Patch Keamanan Android diperbarui (Desember 2020). Keamanan sistem ditingkatkan."
+    "Pusat kontrol": [
+      "Baru: Sekarang, untuk menutup Pusat kontrol, Anda dapat mengetuk daerah kosong di Pusat kontrol",
+      "Pengoptimalan: Tata letak Pusat kontral di mode lanskap",
+      "Perbaikan: Pusat kontrol tidak selalu ditampilkan dengan benar saat mode horisontal"
     ]
   },
   "logs_vi": {
+    "Hệ thống": [
+      "Cập nhật Bản vá bảo mật Android đến tháng 12 năm 2020. Tăng cường bảo mật hệ thống.",
+      "Mới: Chạm vào một chỗ trống trong Trung tâm điều khiển để đóng lại",
+      "Tối ưu: Bố cục trung tâm điều khiển trong chế độ nằm ngang",
+      "Sửa: Trung tâm điều khiển không phải lúc nào cũng hiển thị chính xác ở chế độ ngang"
+    ],
     "Trung tâm điều khiển": [
       "Mới: Chạm vào một chỗ trống trong Trung tâm điều khiển để đóng lại",
       "Tối ưu: Bố cục trung tâm điều khiển trong chế độ nằm ngang",
-      "Sửa: Kontrol merkezi, manzara modunda doğru bir şekilde görüntülenmedi"
-    ],
-    "Hệ thống": [
-      "Cập nhật Bản vá bảo mật Android đến tháng 12 năm 2020. Tăng cường bảo mật hệ thống."
+      "Sửa: Trung tâm điều khiển không phải lúc nào cũng hiển thị chính xác ở chế độ ngang"
     ]
   },
   "logs_th": {
-    "ศูนย์กลางการควบคุม": [
+    "ระบบ": [
+      "อัปเดตแพทช์ความปลอดภัยของแอนดรอยด์เป็นธันวาคม 2020 เพิ่มความปลอดภัยของระบบ",
       "ใหม่: ตอนนี้การแตะที่จุดว่างในศูนย์ควบคุมจะเป็นการปิด",
       "การเพิ่มประสิทธิภาพ: รูปแบบศูนย์ควบคุมในโหมดแนวนอน",
       "แก้ไข: ศูนย์ควบคุมไม่ได้แสดงอย่างถูกต้องทุกครั้งในโหมดแนวนอน"
     ],
-    "ระบบ": [
-      "อัปเดตแพทช์ความปลอดภัยของแอนดรอยด์เป็นธันวาคม 2020 เพิ่มความปลอดภัยของระบบ"
+    "ศูนย์กลางการควบคุม": [
+      "ใหม่: ตอนนี้การแตะที่จุดว่างในศูนย์ควบคุมจะเป็นการปิด",
+      "การเพิ่มประสิทธิภาพ: รูปแบบศูนย์ควบคุมในโหมดแนวนอน",
+      "แก้ไข: ศูนย์ควบคุมไม่ได้แสดงอย่างถูกต้องทุกครั้งในโหมดแนวนอน"
     ]
   },
   "logs_ar": {
-    "مركز التحكم": [
+    "النظام": [
+      "تم تحديث تصحيح أمان الأندرويد إلى ديسمبر 2020 لزيادة أمان النظام.",
       ":الجديد يمكنك الآن النقر على أي مساحة فارغة في مركز التحكم لإغلاقة",
       ":التحسين تصميم تخطيط مركز التحكم في الوضع الأفقي",
       ":الإصلاح لا يظهر مركز التحكم بشكل صحيح في الوضع الأفقي"
     ],
-    "النظام": [
-      "تم تحديث تصحيح أمان الأندرويد إلى ديسمبر 2020 لزيادة أمان النظام."
+    "مركز التحكم": [
+      ":الجديد يمكنك الآن النقر على أي مساحة فارغة في مركز التحكم لإغلاقة",
+      ":التحسين تصميم تخطيط مركز التحكم في الوضع الأفقي",
+      ":الإصلاح لا يظهر مركز التحكم بشكل صحيح في الوضع الأفقي"
     ]
   },
   "logs_in": {
-    "कंट्रोल सेंटर": [
+    "सिस्टम": [
+      "Android सुरक्षा पैच को दिसंबर 2020 से अपडेट किया गया. सिस्टम की सुरक्षा बढ़ा दी गई है.",
       "नया कंट्रोल सेंटर में किसी khआली जगह पर टैप करने से अब वह बंद हो जाता है",
       "ऑप्टिमाइज़ेशन लैंडस्केप मोड में कंट्रोल सेंटर लेआउट",
       "ठीक करें कंट्रोल सेंटर, लैंडस्केप मोड में को हमेशा सही ढंग से  नहीं दिखाता है"
     ],
-    "सिस्टम": [
-      "Android सुरक्षा पैच को दिसंबर 2020 से अपडेट किया गया. सिस्टम की सुरक्षा बढ़ा दी गई है."
+    "कंट्रोल सेंटर": [
+      "नया कंट्रोल सेंटर में किसी khआली जगह पर टैप करने से अब वह बंद हो जाता है",
+      "ऑप्टिमाइज़ेशन लैंडस्केप मोड में कंट्रोल सेंटर लेआउट",
+      "ठीक करें कंट्रोल सेंटर, लैंडस्केप मोड में को हमेशा सही ढंग से  नहीं दिखाता है"
+    ]
+  },
+  "logs_ug": {
+    "سىستېما": [
+      "Updated Android Security Patch to December 2020. Increased system security."
+    ],
+    "Control center": [
+      "New: Tapping a blank spot in Control center closes it now",
+      "Optimization: Control center layout in landscape mode",
+      "Fix: Control center wasn't always displayed correctly in landscape mode"
+    ]
+  },
+  "logs_bo": {
+    "མ་ལག": [
+      "Updated Android Security Patch to December 2020. Increased system security."
+    ],
+    "Control center": [
+      "New: Tapping a blank spot in Control center closes it now",
+      "Optimization: Control center layout in landscape mode",
+      "Fix: Control center wasn't always displayed correctly in landscape mode"
     ]
   }
 }

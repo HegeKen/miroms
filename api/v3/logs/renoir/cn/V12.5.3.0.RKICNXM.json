@@ -3,26 +3,49 @@
     "状态栏、通知栏": [
       "修复 进度条通知异常闪烁问题",
       "修复 横屏模式下收到悬浮通知位置显示异常",
+      "修复 锁屏状态下收到通知桌面角标不更新",
+      "修复 进度条通知异常闪烁问题",
+      "修复 横屏模式下收到悬浮通知位置显示异常",
       "修复 锁屏状态下收到通知桌面角标不更新"
     ],
     "其他优化及调整": [
       "优化 视频显示效果",
       "优化 部分场景发热体验",
       "修复 低概率屏幕亮度变化慢问题"
+    ],
+    "其他": [
+      "提高系统的稳定性",
+      "优化系统的流畅度"
     ]
   },
   "logs_en": {
+    "status bar, Notification shade": [
+      "Fix: Notifications flashed in some cases",
+      "Fix: Floating notifications weren't displayed correctly in landscape mode",
+      "Fix: Notification badges weren't updated for incoming notifications on a locked device"
+    ],
     "Status bar, Notification shade": [
       "Fix: Notifications flashed in some cases",
-      "Fix: Floating notifications weren^t displayed correctly in landscape mode",
-      "Fix: Notification badges weren^t updated for incoming notifications on a locked device"
+      "Fix: Floating notifications weren't displayed correctly in landscape mode",
+      "Fix: Notification badges weren't updated for incoming notifications on a locked device"
+    ],
+    "Other": [
+      "Optimized system performance",
+      "Improved system security and stability"
     ]
   },
   "logs_zh_tw": {
     "狀態欄、通知欄": [
       "修復: 進度條通知異常閃爍問題",
       "修復: 橫向螢幕模式下收到懸浮通知位置顯示異常",
+      "修復: 鎖定螢幕狀態下收到通知桌面角標不更新",
+      "修復: 進度條通知異常閃爍問題",
+      "修復: 橫向螢幕模式下收到懸浮通知位置顯示異常",
       "修復: 鎖定螢幕狀態下收到通知桌面角標不更新"
+    ],
+    "其他": [
+      "改善系統的穩定性",
+      "優化系統的流暢度"
     ]
   },
   "logs_ja": {
@@ -30,20 +53,40 @@
       "修正: 通知が点滅する場合がある問題",
       "修正: 横向きモードでフローティング通知が正しく表示されない問題",
       "修正: デバイスがロックされた状態で通知を受信すると通知バッジが更新されない問題"
+    ],
+    "その他": [
+      "システムパフォーマンスの最適化",
+      "システムのセキュリティと安定性の向上"
     ]
   },
   "logs_ko": {
     "상태 바, 알림 바": [
       "수정: 일부 상황에서 알림이 점멸하는 문제",
       "수정: 가로 모드에서 플로팅 알림이 올바르게 표시되지 않는 현상",
+      "수정: 잠긴 기기에 수신되는 알림에 대한 알림 배지가 갱신되지 않는 현상",
+      "수정: 일부 상황에서 알림이 점멸하는 문제",
+      "수정: 가로 모드에서 플로팅 알림이 올바르게 표시되지 않는 현상",
       "수정: 잠긴 기기에 수신되는 알림에 대한 알림 배지가 갱신되지 않는 현상"
+    ],
+    "기타": [
+      "시스템 성능 최적화",
+      "시스템 보안 및 안정성 개선"
     ]
   },
   "logs_ru": {
+    "строка состояния, шторка уведомлений": [
+      "Исправлено: В некоторых случаях уведомления могли мерцать",
+      "Исправлено: В альбомной ориентации всплывающие уведомления могли отображаться неправильно",
+      "Исправлено: Значки уведомлений не обновлялись после входящих уведомлений, когда устройство было заблокировано"
+    ],
     "Строка состояния, шторка уведомлений": [
       "Исправлено: В некоторых случаях уведомления могли мерцать",
       "Исправлено: В альбомной ориентации всплывающие уведомления могли отображаться неправильно",
       "Исправлено: Значки уведомлений не обновлялись после входящих уведомлений, когда устройство было заблокировано"
+    ],
+    "Другое": [
+      "Оптимизация производительности системы",
+      "Улучшение безопасности и стабильности системы"
     ]
   },
   "logs_uk": {
@@ -51,60 +94,136 @@
       "Виправлено: В деяких випадках сповіщення могли мерехтіти",
       "Виправлено: У альбомній орієнтації спливаючі сповіщення могли відображатися неправильно",
       "Виправлено: Значки сповіщень не оновлювалися після вхідних сповіщень, коли пристрій було розблоковано"
+    ],
+    "Інше": [
+      "Оптимізація продуктивності системи",
+      "Покращення безпеки та стабільності системи"
     ]
   },
   "logs_pl": {
+    "pasek powiadomień,panel powiadomień": [
+      "Naprawiono: Powiadomienia błyskały w niektórych przypadkach",
+      "Naprawiono: Powiadomienia pływające nie były wyświetlane poprawnie w trybie poziomym",
+      "Naprawiono: Plakietki powiadomień nie zostały zaktualizowane dla powiadomień przychodzących na zablokowanym urządzeniu"
+    ],
     "Pasek powiadomień, Panel powiadomień": [
       "Naprawiono: Powiadomienia błyskały w niektórych przypadkach",
       "Naprawiono: Powiadomienia pływające nie były wyświetlane poprawnie w trybie poziomym",
       "Naprawiono: Plakietki powiadomień nie zostały zaktualizowane dla powiadomień przychodzących na zablokowanym urządzeniu"
+    ],
+    "Inne": [
+      "Zoptymalizowana wydajność systemu",
+      "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
   "logs_de": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "Statusleiste, Benachrichtigungsfeld": [
+      "Behoben: Benachrichtigungen blinkten in einigen Fällen auf",
+      "Behoben: Schwebende Benachrichtigungen wurden im Querformat nicht korrekt angezeigt",
+      "Behoben: Benachrichtigungs-Badges wurden bei eingehenden Benachrichtigungen auf einem gesperrten Gerät nicht aktualisiert"
+    ],
+    "Statusleiste, Benachrichtigungsleiste": [
+      "Behoben: Benachrichtigungen blinkten in einigen Fällen auf",
+      "Behoben: Schwebende Benachrichtigungen wurden im Querformat nicht korrekt angezeigt",
+      "Behoben: Benachrichtigungs-Badges wurden bei eingehenden Benachrichtigungen auf einem gesperrten Gerät nicht aktualisiert"
+    ],
+    "Sonstiges": [
+      "Systemleistung optimiert",
+      "Systemsicherheit und -stabilität verbessert"
     ]
   },
   "logs_fr": {
     "Barre d'état, Panneau de notification": [
       "Réparé: Les notifications ont clignoté dans certains cas",
-      "Réparé: Les notifications flottantes ne s^affichaient pas correctement en mode paysage",
-      "Réparé: Les badges de notification n^étaient pas mis à jour pour les notifications entrantes sur un appareil verrouillé"
+      "Réparé: Les notifications flottantes ne s'affichaient pas correctement en mode paysage",
+      "Réparé: Les badges de notification n'étaient pas mis à jour pour les notifications entrantes sur un appareil verrouillé",
+      "Réparé: Les notifications ont clignoté dans certains cas",
+      "Réparé: Les notifications flottantes ne s'affichaient pas correctement en mode paysage",
+      "Réparé: Les badges de notification n'étaient pas mis à jour pour les notifications entrantes sur un appareil verrouillé"
+    ],
+    "Autre": [
+      "Performances système optimisées",
+      "Sécurité et stabilité du système améliorées"
     ]
   },
   "logs_it": {
+    "barra di stato, area delle notifiche": [
+      "Risolto: Le notifiche lampeggiavano in alcuni casi",
+      "Risolto: Le notifiche a comparsa non venivano visualizzate correttamente in modalità orizzontale",
+      "Risolto: I badge di notifica non erano aggiornati per le notifiche in arrivo su un dispositivo bloccato"
+    ],
     "Barra di stato, Area delle notifiche": [
       "Risolto: Le notifiche lampeggiavano in alcuni casi",
       "Risolto: Le notifiche a comparsa non venivano visualizzate correttamente in modalità orizzontale",
       "Risolto: I badge di notifica non erano aggiornati per le notifiche in arrivo su un dispositivo bloccato"
+    ],
+    "Altro": [
+      "Prestazioni di sistema ottimizzate",
+      "Maggiore sicurezza e stabilità di sistema"
     ]
   },
   "logs_es": {
+    "barra de estado, barra de notificaciones": [
+      "Reparado: Las notificaciones parpadeaban en algunos casos",
+      "Reparado: Las notificaciones flotantes no se mostraban correctamente en el modo apaisado",
+      "Reparado: Los iconos de notificaciones no se actualizaban para las notificaciones entrantes en un dispositivo bloqueado"
+    ],
     "Barra de estado, Barra de notificaciones": [
       "Reparado: Las notificaciones parpadeaban en algunos casos",
       "Reparado: Las notificaciones flotantes no se mostraban correctamente en el modo apaisado",
       "Reparado: Los iconos de notificaciones no se actualizaban para las notificaciones entrantes en un dispositivo bloqueado"
+    ],
+    "Otros": [
+      "Rendimiento del sistema optimizado",
+      "Estabilidad y seguridad del sistema mejorada"
     ]
   },
   "logs_pt": {
+    "Barra de status e Área de notificações": [
+      "Correção: As notificações piscavam em alguns casos",
+      "Correção: As notificações flutuantes não eram exibidas corretamente em modo paisagem",
+      "Correção: Emblemas de notificação não eram atualizados para notificações recebidas em um dispositivo bloqueado"
+    ],
     "Barra de status, Área de notificações": [
       "Correção: As notificações piscavam em alguns casos",
       "Correção: As notificações flutuantes não eram exibidas corretamente em modo paisagem",
       "Correção: Emblemas de notificação não eram atualizados para notificações recebidas em um dispositivo bloqueado"
+    ],
+    "Outros": [
+      "Desempenho do sistema aprimorado",
+      "Segurança e estabilidade do sistema aprimoradas"
     ]
   },
   "logs_tr": {
+    "durum çubuğu, Bildirim çubuğu": [
+      "Onarım: Bildirimler bazı durumlarda yanıp söndü",
+      "Onarım: Kayan bildirimler manzara modunda doğru bir şekilde görüntülenmedi",
+      "Onarım: Bildirim rozetleri, kilitli bir cihazda gelen bildirimler için güncellenmedi"
+    ],
     "Durum çubuğu, Bildirim çubuğu": [
       "Onarım: Bildirimler bazı durumlarda yanıp söndü",
       "Onarım: Kayan bildirimler manzara modunda doğru bir şekilde görüntülenmedi",
       "Onarım: Bildirim rozetleri, kilitli bir cihazda gelen bildirimler için güncellenmedi"
+    ],
+    "Diğer": [
+      "Sistem performansı optimize edildi",
+      "Sistem güvenliği ve kararlılığı geliştirildi"
     ]
   },
   "logs_id": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "bar status, layar notifikasi": [
+      "Perbaikan: Notifikasi berkedip dalam beberapa kasus",
+      "Perbaikan: Notifikasi mengambang tidak ditampilkan dengan benar dalam mode horisontal",
+      "Perbaikan: Lencana notifikasi tidak diperbarui jika ada notifikasi masuk pada perangkat yang terkunci"
+    ],
+    "Bar status, Layar notiifikasi": [
+      "Perbaikan: Notifikasi berkedip dalam beberapa kasus",
+      "Perbaikan: Notifikasi mengambang tidak ditampilkan dengan benar dalam mode horisontal",
+      "Perbaikan: Lencana notifikasi tidak diperbarui jika ada notifikasi masuk pada perangkat yang terkunci"
+    ],
+    "Lainnya": [
+      "Performa sistem dioptimalkan",
+      "Keamanan dan stabilitas sistem ditingkatkan"
     ]
   },
   "logs_vi": {
@@ -112,6 +231,10 @@
       "Sửa: Thông báo nhấp nháy trong một số trường hợp",
       "Sửa: Thông báo nổi không hiển thị chính xác ở chế độ màn hình ngang",
       "Sửa: Thẻ thông báo không cập nhật thông tin thông báo đến trên thiết bị đang khóa"
+    ],
+    "Khác": [
+      "Tối ưu hiệu suất hệ thống",
+      "Cải thiện tính ổn định và bảo mật hệ thống"
     ]
   },
   "logs_th": {
@@ -119,30 +242,66 @@
       "แก้ไข: การแจ้งเตือนกระพริบในบางกรณี",
       "แก้ไข: การแจ้งเตือนแบบลอยแสดงผลไม่ถูกต้องในโหมดแนวนอน",
       "แก้ไข: ป้ายแจ้งเตือนไม่ได้รับการอัปเดตสำหรับการแจ้งเตือนที่เข้ามาบนอุปกรณ์ที่ล็อค"
+    ],
+    "อื่นๆ": [
+      "เพิ่มประสิทธิภาพของระบบ",
+      "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
     ]
   },
   "logs_ar": {
+    "وشريط الإشعارات، ومركز الإشعارات": [
+      "الإصلاح: مشكلة وميض الإشعارات في بعض الحالات",
+      "الإصلاح: مشكلة عدم عرض الإشعارات المنبثقة بشكل صحيح في الوضع الأفقي",
+      "الإصلاح: مشكلة عدم تحديث شارات الإشعارات للإشعارات الجديدة على جهاز مقفل"
+    ],
     "شريط الحالة ومركز الإشعارات": [
       "الإصلاح: مشكلة وميض الإشعارات في بعض الحالات",
       "الإصلاح: مشكلة عدم عرض الإشعارات المنبثقة بشكل صحيح في الوضع الأفقي",
       "الإصلاح: مشكلة عدم تحديث شارات الإشعارات للإشعارات الجديدة على جهاز مقفل"
+    ],
+    "أخرى": [
+      "تحسين أداء النظام",
+      "تحسين أمن واستقرار النظام"
     ]
   },
   "logs_in": {
     "स्टेटस बार, सूचना शेड": [
       "ठीक करें कुछ मामलों में सूचनाएं फ़्लैश हो रही थी",
       "ठीक करें लैंडस्केप मोड में फ़्लोटिंग सूचनाएं ठीक से नहीं दिख रही थीं",
+      "ठीक करें लॉक किए हुए डिवाइस पर सूचना बैज में आनेवाली सूचनाएं अपडेट नहीं हो रही थी",
+      "ठीक करें कुछ मामलों में सूचनाएं फ़्लैश हो रही थी",
+      "ठीक करें लैंडस्केप मोड में फ़्लोटिंग सूचनाएं ठीक से नहीं दिख रही थीं",
       "ठीक करें लॉक किए हुए डिवाइस पर सूचना बैज में आनेवाली सूचनाएं अपडेट नहीं हो रही थी"
+    ],
+    "अन्य": [
+      "सिस्टम परफ़ॉर्मेंस ऑप्टिमाइज़ किया गया है",
+      "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
     ]
   },
   "logs_ug": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "Status bar, Notification shade": [
+      "Fix: Notifications flashed in some cases",
+      "Fix: Floating notifications weren't displayed correctly in landscape mode",
+      "Fix: Notification badges weren't updated for incoming notifications on a locked device",
+      "Fix: Notifications flashed in some cases",
+      "Fix: Floating notifications weren't displayed correctly in landscape mode",
+      "Fix: Notification badges weren't updated for incoming notifications on a locked device"
+    ],
+    "باشقىلىرى": [
+      "سىستېمىنىڭ مۇقىملىقىنى ئاشۇرۇش",
+      "سىستېما راۋانلىقىنى ئەلالاشتۇرۇش"
     ]
   },
   "logs_bo": {
-    "Other": [
+    "Status bar, Notification shade": [
+      "Fix: Notifications flashed in some cases",
+      "Fix: Floating notifications weren't displayed correctly in landscape mode",
+      "Fix: Notification badges weren't updated for incoming notifications on a locked device",
+      "Fix: Notifications flashed in some cases",
+      "Fix: Floating notifications weren't displayed correctly in landscape mode",
+      "Fix: Notification badges weren't updated for incoming notifications on a locked device"
+    ],
+    "གཞན།": [
       "Optimized system performance",
       "Improved system security and stability"
     ]

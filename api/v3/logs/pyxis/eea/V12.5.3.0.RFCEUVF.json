@@ -17,91 +17,274 @@
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄的问题",
       "修复 部分应用的帐号无法同步到“帐号与同步”中的问题",
       "修复 在“应用管理-默认打开链接”页面中选择“地图”选项时页面崩溃的问题"
+    ],
+    "系统": [
+      "更新谷歌安全补丁（2021#09），提升系统安全性"
     ]
   },
   "logs_en": {
+    "Lock screen": [
+      "Fix: Screen flashed after locking when Super wallpapers were used",
+      "Fix: Wallpapers flashed when Fingerprint unlock was used in some cases",
+      "Fix: Fingerprint icon appeared too bright after reboots",
+      "Fix: Fingerprint icon didn't disappear after unlocking",
+      "Fix: Display abnormalities occurred when Fingerprint unlock was used with games",
+      "Fix: Issues with the fingerprint animation in several scenes",
+      "Fix: Fingerprint and Face unlock were turned off after a SIM card was installed",
+      "Fix: The screen flashed when Fingerprint unlock was used with Super wallpapers in some cases",
+      "Fix: Lock screen notifications didn't disappear on time when Fingerprint or Face unlock was used in some cases",
+      "Fix: Screen flashed when Fingerprint unlock was used in some cases",
+      "Fix: No items except for the status bar were shown on the screen after using Fingerprint unlock"
+    ],
+    "Settings": [
+      "Fix: UI issues that appeared while adding corporate Wi-Fi networks",
+      "Fix: Some accounts couldn't be synced",
+      "Fix: Crashes occurred when the default map was selected"
+    ],
     "System": [
       "Updated Android Security Patch to September 2021. Increased system security."
     ]
   },
   "logs_zh_tw": {
+    "鎖屏": [
+      "修復: 使用超級壁紙，鎖屏界面螢幕熄滅時偶現閃黑的問題",
+      "修復: 個別界面螢幕熄滅指紋解鎖時出現壁紙閃現的問題",
+      "修復: 錄入指紋重啟手機後，指紋異常閃高亮的問題",
+      "修復: 解鎖後指紋圖標依舊可點擊，並顯示動畫震動的問題",
+      "修復: 在遊戲頁面時，指紋解鎖有概率螢幕出現雪花畫面的問題",
+      "修復: 指紋解鎖時，個別界面熄滅螢幕後快速指紋解鎖出現動畫不對問題",
+      "修復: 在插入SIM卡後有概率出現指紋和人臉功能失效問題",
+      "修復: 使用超級壁紙時，螢幕熄滅狀態下指紋解鎖進入個別界面閃黑問題",
+      "修復: 個別界面人臉或是指紋解鎖時，解鎖過程中螢幕鎖定畫面訊息消失慢的問題",
+      "修復: 修復螢幕熄滅後立即進行指紋解鎖有概率閃黑問題",
+      "修復: 指紋解鎖之後一直顯示黑色畫面，只顯示狀態欄問題"
+    ],
+    "設定": [
+      "修復: Wi-Fi 增加網路時選擇“企業級加密”會導致域名框太窄的問題",
+      "修復: 部分應用的帳號無法同步到“帳號與同步”中的問題",
+      "修復: 在“應用管理-默認打開鏈接”頁面中選擇“地圖”選項時頁面崩潰的問題"
+    ],
     "系統": [
       "更新Android安全性修補程式等級（2021#09），提升系統安全性"
     ]
   },
   "logs_ja": {
+    "設定": [
+      "修正: 企業のWi-Fiネットワークを追加する際に表示されるUIの問題",
+      "修正: 一部のアカウントが同期できない問題",
+      "修正: デフォルトの地図を選択するとクラッシュする問題"
+    ],
     "システム": [
       "Androidのセキュリティパッチを2021年9月にアップデートしました。システムのセキュリティを強化しました。"
     ]
   },
   "logs_ko": {
+    "설정": [
+      "수정: 기업 Wi-Fi 네트워크 추가 시에 발생하는 UI 문제",
+      "수정: 일부 계정이 동기화되지 않는 문제",
+      "수정: 기본 맵 선택 시 발생하는 충돌 문제"
+    ],
     "시스템": [
       "Android 보안패치 (2021#09) 업데이트됨. 시스템 보안이 향상되었습니다."
     ]
   },
   "logs_ru": {
+    "Настройки": [
+      "Исправлено: Ошибки интерфейса, которые появились при добавлении корпоративных сетей Wi-Fi",
+      "Исправлено: Сбои синхронизации некоторых аккаунтов",
+      "Исправлено: Сбои в работе системы при выборе карт по умолчанию"
+    ],
     "Система": [
       "Обновление системы безопасности Android (сентябрь 2021 года). Улучшена безопасность системы."
     ]
   },
   "logs_uk": {
+    "Налаштування": [
+      "Виправлено: Помилки інтерфейсу, які з'явилися під час додавання корпоративних мереж Wi-Fi",
+      "Виправлено: Помилки синхронізації деяких акаунтів",
+      "Виправлено: Посилки в роботі системи під час вибору карт за замовчуванням"
+    ],
     "Система": [
       "Оновлено патч безпеки Android за вересень 2021 року. Збільшено безпеку системи."
     ]
   },
   "logs_pl": {
+    "Ustawienia": [
+      "Naprawiono: Problemy w interfejsem, które pojawiały się podczas dodawania firmowych sieci Wi-Fi",
+      "Naprawiono: Nie udało się zsynchronizować niektórych kont",
+      "Naprawiono: Po wybraniu domyślnej mapy występowały awarie"
+    ],
     "System": [
       "Zaktualizowano Pakiet Bezpieczeństwa Android do września 2021 r. Zwiększono bezpieczeństwo systemu."
     ]
   },
+  "logs_de": {
+    "Sperrbildschirm": [
+      "Behebung: Bildschirm flackerte nach dem Sperren bei Verwendung von Super-Hintergründen",
+      "Behebung: Hintergrundbilder flackerten bei Fingerabdruck-Entsperrung in einigen Fällen",
+      "Behoben: Fingerabdruck-Symbol erschien nach Neustart zu hell",
+      "Behoben: Das Fingerabdruck-Symbol verschwand nach dem Entsperren nicht",
+      "Behebung: Anzeigefehler bei Verwendung der Fingerabdruck-Entsperrung in Spielen",
+      "Behebung: Probleme mit der Fingerabdruck-Animation in mehreren Szenen",
+      "Behebung: Fingerabdruck- und Gesichtsentsperrung wurden nach dem Einlegen einer SIM-Karte deaktiviert",
+      "Behoben: Der Bildschirm flackerte in einigen Fällen bei der Verwendung der Fingerabdruckentsperrung mit Super-Hintergründen",
+      "Behoben: Sperrbildschirm-Benachrichtigungen verschwanden in einigen Fällen bei Verwendung der Fingerabdruck- oder Gesichtsentsperrung nicht rechtzeitig",
+      "Behoben: In einigen Fällen flackerte der Bildschirm bei der Verwendung der Fingerabdruckentsperrung",
+      "Behoben: Nach der Fingerabdruckentsperrung wurden außer der Statusleiste keine Elemente auf dem Bildschirm angezeigt"
+    ],
+    "Einstellungen": [
+      "Behebung: UI-Probleme beim Hinzufügen von Firmen-WLAN-Netzwerken",
+      "Behebung: Einige Konten konnten nicht synchronisiert werden",
+      "Behebung: Abstürze bei Auswahl der Standardkarte"
+    ],
+    "System": [
+      "Android-Sicherheitspatch auf September 2021 aktualisiert. Systemsicherheit erhöht."
+    ]
+  },
   "logs_fr": {
+    "Paramètres": [
+      "Réparé: Problèmes d'interface utilisateur apparus lors de l'ajout de réseaux Wi-Fi d'entreprise",
+      "Réparé: Certains comptes n'ont pas pu être synchronisés",
+      "Réparé: Des plantages se sont produits lorsque la carte par défaut a été sélectionnée"
+    ],
     "Système": [
       "Patch de Sécurité Android mis à jour pour septembre 2021. Amélioration du système de sécurité."
     ]
   },
   "logs_it": {
+    "Impostazioni": [
+      "Risolto: Problemi di interfaccia utente che comparivano durante l'aggiunta di reti Wi-Fi aziendali",
+      "Risolto: Alcuni account non potevano essere sincronizzati",
+      "Risolto: Si verificavano arresti anomali quando veniva selezionata la mappa predefinita"
+    ],
     "Sistema": [
       "Patch di sicurezza Android aggiornata a settembre 2021. Maggiore sicurezza del sistema."
     ]
   },
   "logs_es": {
+    "Ajustes": [
+      "Reparado: Problemas de la interfaz de usuario que aparecían al añadir redes Wi-Fi corporativas",
+      "Reparado: Algunas cuentas no podían ser sincronizadas",
+      "Reparado: Se producían bloqueos cuando se seleccionaba el mapa predeterminado"
+    ],
     "Sistema": [
       "Parche de seguridad de Android actualizado a septiembre de 2021. Seguridad del sistema incrementada."
     ]
   },
   "logs_pt": {
+    "Configurações": [
+      "Correção: Problemas na IU que apareciam ao adicionar redes Wi-Fi corporativas",
+      "Correção: Algumas contas não podiam ser sincronizadas",
+      "Correção: Travamentos ocorriam quando o mapa padrão era selecionado"
+    ],
     "Sistema": [
       "Patch de Segurança do Android atualizado para Setembro de 2021. Segurança do sistema aprimorada."
     ]
   },
   "logs_tr": {
+    "Ayarlar": [
+      "Onarım: Kurumsal Wi-Fi ağları ekleniyorken görünen kullanıcı arayüzü sorunları",
+      "Onarım: Bazı hesaplar senkronize edilemedi",
+      "Onarım: Varsayılan harita seçildiğinde çökmeler oluştu"
+    ],
     "Sistem": [
-      "Android Güvenlik Patch^i Eylül 2021^de güncellendi. Sistem güvenliği arttırıldı."
+      "Android Güvenlik Patch'i Eylül 2021'de güncellendi. Sistem güvenliği arttırıldı."
     ]
   },
   "logs_id": {
+    "Pengaturan": [
+      "Perbaikan: Masalah antarmuka (UI) yang timbul saat menambahkan jaringan Wi-Fi perusahaan",
+      "Perbaikan: Beberapa akun tidak disinkronkan",
+      "Perbaikan: Tutup paksa terjadi saat peta default dipilih"
+    ],
     "Sistem": [
       "Patch Keamanan Android diperbarui (September 2021). Keamanan sistem ditingkatkan."
     ]
   },
   "logs_vi": {
+    "Cài đặt": [
+      "Sửa: Sự cố giao diện người dùng xuất hiện khi thêm mạng Wi-Fi doanh nghiệp",
+      "Sửa: Một vài tài khoản không thể đồng bộ",
+      "Sửa: Xảy ra lỗi khi bản đồ mặc định được chọn"
+    ],
     "Hệ thống": [
       "Cập nhật Bản vá bảo mật Android đến tháng 9 năm 2021. Tăng cường bảo mật hệ thống."
     ]
   },
   "logs_th": {
+    "การตั้งค่า": [
+      "แก้ไข: ปัญหา UI ที่ปรากฏขึ้นขณะเพิ่มเครือข่าย Wi-Fi ขององค์กร",
+      "แก้ไข: ไม่สามารถซิงค์บางบัญชีได้",
+      "แก้ไข: เกิดปัญหาเมื่อเลือกแผนที่เริ่มต้น"
+    ],
     "ระบบ": [
       "อัปเดตแพทช์ความปลอดภัยของแอนดรอยด์เป็นกันยายน 2021 เพิ่มความปลอดภัยของระบบ"
     ]
   },
   "logs_ar": {
+    "الإعدادات": [
+      "الإصلاح: مشاكل واجهة المستخدم أثناء إضافة شبكات Wi-Fi للشركات",
+      "الإصلاح: مشكلة عدم مزامنة بعض الحسابات",
+      "الإصلاح: تعطل النظام عند تحديد الخريطة الافتراضية"
+    ],
     "النظام": [
       "تم تحديث تصحيح أمان الأندرويد إلى سبتمبر 2021 لزيادة أمان النظام."
     ]
   },
   "logs_in": {
+    "सेटिंग्स": [
+      "ठीक करें कॉर्पोरेट वाई-फ़ाई नेटवर्क जोड़ते समय दिखाई देने वाली UI समस्याएं",
+      "ठीक करें कुछ खाते सिंक नहीं किए जा सके",
+      "ठीक करें डिफ़ॉल्ट मैप को चुने जाने पर क्रैश हो रहे थे"
+    ],
     "सिस्टम": [
       "Android सुरक्षा पैच को सितंबर 2021 से अपडेट किया गया. सिस्टम की सुरक्षा बढ़ा दी गई है."
+    ]
+  },
+  "logs_ug": {
+    "Lock screen": [
+      "Fix: Screen flashed after locking when Super wallpapers were used",
+      "Fix: Wallpapers flashed when Fingerprint unlock was used in some cases",
+      "Fix: Fingerprint icon appeared too bright after reboots",
+      "Fix: Fingerprint icon didn't disappear after unlocking",
+      "Fix: Display abnormalities occurred when Fingerprint unlock was used with games",
+      "Fix: Issues with the fingerprint animation in several scenes",
+      "Fix: Fingerprint and Face unlock were turned off after a SIM card was installed",
+      "Fix: The screen flashed when Fingerprint unlock was used with Super wallpapers in some cases",
+      "Fix: Lock screen notifications didn't disappear on time when Fingerprint or Face unlock was used in some cases",
+      "Fix: Screen flashed when Fingerprint unlock was used in some cases",
+      "Fix: No items except for the status bar were shown on the screen after using Fingerprint unlock"
+    ],
+    "تەڭشەك": [
+      "Fix: UI issues that appeared while adding corporate Wi-Fi networks",
+      "Fix: Some accounts couldn't be synced",
+      "Fix: Crashes occurred when the default map was selected"
+    ],
+    "سىستېما": [
+      "Updated Android Security Patch to September 2021. Increased system security."
+    ]
+  },
+  "logs_bo": {
+    "Lock screen": [
+      "Fix: Screen flashed after locking when Super wallpapers were used",
+      "Fix: Wallpapers flashed when Fingerprint unlock was used in some cases",
+      "Fix: Fingerprint icon appeared too bright after reboots",
+      "Fix: Fingerprint icon didn't disappear after unlocking",
+      "Fix: Display abnormalities occurred when Fingerprint unlock was used with games",
+      "Fix: Issues with the fingerprint animation in several scenes",
+      "Fix: Fingerprint and Face unlock were turned off after a SIM card was installed",
+      "Fix: The screen flashed when Fingerprint unlock was used with Super wallpapers in some cases",
+      "Fix: Lock screen notifications didn't disappear on time when Fingerprint or Face unlock was used in some cases",
+      "Fix: Screen flashed when Fingerprint unlock was used in some cases",
+      "Fix: No items except for the status bar were shown on the screen after using Fingerprint unlock"
+    ],
+    "Settings": [
+      "Fix: UI issues that appeared while adding corporate Wi-Fi networks",
+      "Fix: Some accounts couldn't be synced",
+      "Fix: Crashes occurred when the default map was selected"
+    ],
+    "རིམ་ལུགས": [
+      "Updated Android Security Patch to September 2021. Increased system security."
     ]
   }
 }

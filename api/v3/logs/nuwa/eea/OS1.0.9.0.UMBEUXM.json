@@ -7,6 +7,10 @@
     ],
     "自由窗口": [
       "修复 横竖屏切换时，小窗视频应用显示异常的问题",
+      "修复 部分游戏场景下，迷你窗挂起后尺寸异常的问题",
+      "修复 横竖屏切换时，小窗视频应用显示异常的问题",
+      "修复 部分游戏场景下，迷你窗挂起后尺寸异常的问题",
+      "修复 横竖屏切换时，小窗视频应用显示异常的问题",
       "修复 部分游戏场景下，迷你窗挂起后尺寸异常的问题"
     ],
     "桌面": [
@@ -16,13 +20,22 @@
       "优化 融合设备中心设备发现速度"
     ],
     "锁屏": [
+      "新增 “长按锁屏编辑样式”开关，关闭后在锁屏长按将不会触发锁屏编辑",
+      "新增 “长按锁屏编辑样式”开关，关闭后在锁屏长按将不会触发锁屏编辑",
       "新增 “长按锁屏编辑样式”开关，关闭后在锁屏长按将不会触发锁屏编辑"
     ],
     "时钟": [
+      "修复 闹钟设置重复周期时，切换深色模式出现勾选异常问题",
+      "修复 闹钟设置重复周期时，切换深色模式出现勾选异常问题",
       "修复 闹钟设置重复周期时，切换深色模式出现勾选异常问题"
     ],
     "状态栏、通知栏": [
       "修复 在不同语言下，部分场景出现的文案及通知显示异常问题"
+    ],
+    "系統": [
+      "优化 启动动画策略，提升应用启动速度",
+      "修复 部分游戏闪退问题",
+      "合入2024年8月安全补丁，增强系统安全"
     ]
   },
   "logs_en": {
@@ -32,7 +45,11 @@
       "Updated the security patch to August 2024. Increased system security."
     ],
     "Floating windows": [
-      "Fix: Video apps weren^t displayed correctly when switching screen orientation",
+      "Fix: Video apps weren't displayed correctly when switching screen orientation",
+      "Fix: The size of pinned floating windows for some games was incorrect",
+      "Fix: Video apps weren't displayed correctly when switching screen orientation",
+      "Fix: The size of pinned floating windows for some games was incorrect",
+      "Fix: Video apps weren't displayed correctly when switching screen orientation",
       "Fix: The size of pinned floating windows for some games was incorrect"
     ],
     "Home screen": [
@@ -42,9 +59,13 @@
       "Optimization: Discovering devices in Xiaomi Smart Hub is faster now"
     ],
     "Lock screen": [
+      "New: A switch for a feature that allows long pressing Home screen to edit it",
+      "New: A switch for a feature that allows long pressing Home screen to edit it",
       "New: A switch for a feature that allows long pressing Home screen to edit it"
     ],
     "Clock": [
+      "Fix: When setting alarm repetition, the checkbox was displayed abnormally when switching to Dark mode",
+      "Fix: When setting alarm repetition, the checkbox was displayed abnormally when switching to Dark mode",
       "Fix: When setting alarm repetition, the checkbox was displayed abnormally when switching to Dark mode"
     ],
     "Status bar, Notification shade": [
@@ -55,322 +76,627 @@
     "系統": [
       "優化: 啟動動畫策略，提升應用程式啟動速度",
       "修復: 部分遊戲閃退問題",
+      "合入2024年8月安全修補程式，增強系統安全",
+      "優化: 啟動動畫策略，提升應用程式啟動速度",
+      "修復: 部分遊戲閃退問題",
       "合入2024年8月安全修補程式，增強系統安全"
     ],
     "自由視窗": [
       "修復: 橫豎螢幕切換時，小窗影片應用程式顯示異常的問題",
+      "修復: 部分遊戲場景下，迷你窗掛起後尺寸異常的問題",
+      "修復: 橫豎螢幕切換時，小窗影片應用程式顯示異常的問題",
+      "修復: 部分遊戲場景下，迷你窗掛起後尺寸異常的問題",
+      "修復: 橫豎螢幕切換時，小窗影片應用程式顯示異常的問題",
       "修復: 部分遊戲場景下，迷你窗掛起後尺寸異常的問題"
     ],
+    "桌面": [
+      "修復: 部分場景下，分身空間桌面佈局出現空位的問題"
+    ],
+    "跨端智聯": [
+      "優化: 融合裝置中心裝置發現速度"
+    ],
     "鎖屏": [
+      "新增: 長按鎖定螢幕編輯樣式開關，關閉後在鎖定螢幕長按將不會觸發鎖定螢幕編輯",
+      "新增: 長按鎖定螢幕編輯樣式開關，關閉後在鎖定螢幕長按將不會觸發鎖定螢幕編輯",
       "新增: 長按鎖定螢幕編輯樣式開關，關閉後在鎖定螢幕長按將不會觸發鎖定螢幕編輯"
     ],
     "時鐘": [
+      "修復: 鬧鐘設定重複週期時，切換深色模式出現勾選異常問題",
+      "修復: 鬧鐘設定重複週期時，切換深色模式出現勾選異常問題",
       "修復: 鬧鐘設定重複週期時，切換深色模式出現勾選異常問題"
+    ],
+    "狀態欄、通知欄": [
+      "修復: 在不同語言下，部分場景出現的文案及通知顯示異常問題"
     ]
   },
   "logs_ja": {
-    "フローティングウィンドウ": [
-      "修正: 画面の向きを切り替えると、ビデオアプリが正しく表示されない問題",
-      "修正: 一部のゲームで、固定されたフローティングウィンドウのサイズが正しくない問題"
-    ],
     "システム": [
+      "最適化: 新しい起動アニメーション戦略によりアプリの起動が高速化",
+      "修正: 一部のゲームがクラッシュする問題",
+      "セキュリティパッチを 2024 年 8 月にアップデートしました。システムのセキュリティが強化されました。",
       "最適化: 新しい起動アニメーション戦略によりアプリの起動が高速化",
       "修正: 一部のゲームがクラッシュする問題",
       "セキュリティパッチを 2024 年 8 月にアップデートしました。システムのセキュリティが強化されました。"
     ],
+    "フローティングウィンドウ": [
+      "修正: 画面の向きを切り替えると、ビデオアプリが正しく表示されない問題",
+      "修正: 一部のゲームで、固定されたフローティングウィンドウのサイズが正しくない問題",
+      "修正: 画面の向きを切り替えると、ビデオアプリが正しく表示されない問題",
+      "修正: 一部のゲームで、固定されたフローティングウィンドウのサイズが正しくない問題",
+      "修正: 画面の向きを切り替えると、ビデオアプリが正しく表示されない問題",
+      "修正: 一部のゲームで、固定されたフローティングウィンドウのサイズが正しくない問題"
+    ],
+    "端末間のインテリジェント接続": [
+      "最適化: Discovering devices in Xiaomi Smart Hub is faster now"
+    ],
     "ロック画面": [
+      "新機能: ホーム画面を長押しして編集できる機能のスイッチ",
+      "新機能: ホーム画面を長押しして編集できる機能のスイッチ",
       "新機能: ホーム画面を長押しして編集できる機能のスイッチ"
     ],
     "時計": [
+      "修正: アラームの繰り返しを設定する際に、ダークモードに切り替えるとチェックボックスが異常に表示される問題",
+      "修正: アラームの繰り返しを設定する際に、ダークモードに切り替えるとチェックボックスが異常に表示される問題",
       "修正: アラームの繰り返しを設定する際に、ダークモードに切り替えるとチェックボックスが異常に表示される問題"
+    ],
+    "ステータスバー、通知シェード": [
+      "修正: 特定の状況下で、一部の言語でテキストと通知が正しく表示されない問題"
     ]
   },
   "logs_ko": {
-    "플로팅 창": [
-      "수정: 화면 방향을 전환하면 동영상 앱이 제대로 표시되지 않는 문제",
-      "수정: 일부 게임에서 고정된 플로팅 창 크기가 올바르지 않은 문제"
-    ],
     "시스템": [
+      "최적화: 새로운 시작 애니메이션 전략으로 앱 시작 속도 향상",
+      "수정: 일부 게임이 충돌하는 문제",
+      "보안패치 (2024#8) 업데이트됨. 시스템 보안이 향상되었습니다.",
       "최적화: 새로운 시작 애니메이션 전략으로 앱 시작 속도 향상",
       "수정: 일부 게임이 충돌하는 문제",
       "보안패치 (2024#8) 업데이트됨. 시스템 보안이 향상되었습니다."
     ],
+    "플로팅 창": [
+      "수정: 화면 방향을 전환하면 동영상 앱이 제대로 표시되지 않는 문제",
+      "수정: 일부 게임에서 고정된 플로팅 창 크기가 올바르지 않은 문제",
+      "수정: 화면 방향을 전환하면 동영상 앱이 제대로 표시되지 않는 문제",
+      "수정: 일부 게임에서 고정된 플로팅 창 크기가 올바르지 않은 문제",
+      "수정: 화면 방향을 전환하면 동영상 앱이 제대로 표시되지 않는 문제",
+      "수정: 일부 게임에서 고정된 플로팅 창 크기가 올바르지 않은 문제"
+    ],
+    "기기 간 지능형 연결": [
+      "최적화: Discovering devices in Xiaomi Smart Hub is faster now"
+    ],
     "잠금화면": [
+      "New: 홈 화면을 길게 눌러 편집할 수 있는 기능 스위치",
+      "New: 홈 화면을 길게 눌러 편집할 수 있는 기능 스위치",
       "New: 홈 화면을 길게 눌러 편집할 수 있는 기능 스위치"
     ],
     "시계": [
+      "수정: 알람 반복 설정 시 다크모드로 전환하면 확인란이 비정상적으로 출력되는 문제",
+      "수정: 알람 반복 설정 시 다크모드로 전환하면 확인란이 비정상적으로 출력되는 문제",
       "수정: 알람 반복 설정 시 다크모드로 전환하면 확인란이 비정상적으로 출력되는 문제"
+    ],
+    "상태 바, 알림 바": [
+      "수정: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ]
   },
   "logs_ru": {
-    "Плавающие окна": [
-      "Исправлено: Видеоприложения отображались некорректно при смене ориентации экрана",
-      "Исправлено: Размер закрепленных плавающих окон для некоторых игр мог быть неправильным"
-    ],
     "Система": [
+      "Оптимизация: Новая логика анимации позволила ускорить запуск приложений",
+      "Исправлено: В некоторых играх могли происходить сбои",
+      "Обновление системы безопасности (август 2024 года). Улучшена безопасность системы.",
       "Оптимизация: Новая логика анимации позволила ускорить запуск приложений",
       "Исправлено: В некоторых играх могли происходить сбои",
       "Обновление системы безопасности (август 2024 года). Улучшена безопасность системы."
     ],
+    "Плавающие окна": [
+      "Исправлено: Видеоприложения отображались некорректно при смене ориентации экрана",
+      "Исправлено: Размер закрепленных плавающих окон для некоторых игр мог быть неправильным",
+      "Исправлено: Видеоприложения отображались некорректно при смене ориентации экрана",
+      "Исправлено: Размер закрепленных плавающих окон для некоторых игр мог быть неправильным",
+      "Исправлено: Видеоприложения отображались некорректно при смене ориентации экрана",
+      "Исправлено: Размер закрепленных плавающих окон для некоторых игр мог быть неправильным"
+    ],
+    "Интеллектуальная связь между устройствами": [
+      "Оптимизация: Discovering devices in Xiaomi Smart Hub is faster now"
+    ],
     "Экран блокировки": [
+      "Новое: Добавлен переключатель для функции, позволяющей редактировать рабочий стол при длительном нажатии",
+      "Новое: Добавлен переключатель для функции, позволяющей редактировать рабочий стол при длительном нажатии",
       "Новое: Добавлен переключатель для функции, позволяющей редактировать рабочий стол при длительном нажатии"
     ],
     "Часы": [
+      "Исправлено: Во время настройки повтора будильника флажок отображался неправильно при переключении в темный режим",
+      "Исправлено: Во время настройки повтора будильника флажок отображался неправильно при переключении в темный режим",
       "Исправлено: Во время настройки повтора будильника флажок отображался неправильно при переключении в темный режим"
+    ],
+    "Строка состояния, шторка уведомлений": [
+      "Исправлено: В некоторых ситуациях текст и уведомления отображались некорректно для некоторых языков"
     ]
   },
   "logs_uk": {
-    "Спливаючі вікна": [
-      "Виправлено: Відеопрограми відображалися некоректно при зміні орієнтації екрана",
-      "Виправлено: Розмір закріплених плаваючих вікон для деяких ігор міг бути неправильним"
-    ],
     "Система": [
+      "Оптимізація: Нова логіка анімації дозволила прискорити запуск програм",
+      "Виправлено: Деякі ігри зависали",
+      "Оновлено патч безпеки за серпень 2024 року. Збільшено безпеку системи.",
       "Оптимізація: Нова логіка анімації дозволила прискорити запуск програм",
       "Виправлено: Деякі ігри зависали",
       "Оновлено патч безпеки за серпень 2024 року. Збільшено безпеку системи."
     ],
+    "Спливаючі вікна": [
+      "Виправлено: Відеопрограми відображалися некоректно при зміні орієнтації екрана",
+      "Виправлено: Розмір закріплених плаваючих вікон для деяких ігор міг бути неправильним",
+      "Виправлено: Відеопрограми відображалися некоректно при зміні орієнтації екрана",
+      "Виправлено: Розмір закріплених плаваючих вікон для деяких ігор міг бути неправильним",
+      "Виправлено: Відеопрограми відображалися некоректно при зміні орієнтації екрана",
+      "Виправлено: Розмір закріплених плаваючих вікон для деяких ігор міг бути неправильним"
+    ],
+    "Інтелектуальний зв'язок між пристроями": [
+      "Оптимізація: Discovering devices in Xiaomi Smart Hub is faster now"
+    ],
     "Екран блокування": [
+      "Нове: Додано перемикач для функції, що дозволяє редагувати робочий стіл при тривалому натисканні",
+      "Нове: Додано перемикач для функції, що дозволяє редагувати робочий стіл при тривалому натисканні",
       "Нове: Додано перемикач для функції, що дозволяє редагувати робочий стіл при тривалому натисканні"
     ],
     "Годинник": [
+      "Виправлено: Під час налаштування портору будильника прапорець відображався неправильно при переході в темний режим",
+      "Виправлено: Під час налаштування портору будильника прапорець відображався неправильно при переході в темний режим",
       "Виправлено: Під час налаштування портору будильника прапорець відображався неправильно при переході в темний режим"
+    ],
+    "Рядок стану, Панель сповіщень": [
+      "Виправлено: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ]
   },
   "logs_pl": {
-    "Pływające okna": [
-      "Naprawiono: Aplikacje wideo nie były wyświetlane poprawnie podczas zmiany orientacji ekranu",
-      "Naprawiono: Rozmiar przypiętych, pływających okien w niektórych grach był nieprawidłowy"
-    ],
     "System": [
+      "Zoptymalizowano: Nowa strategia animacji uruchamiania sprawia, że ​​aplikacje uruchamiają się szybciej",
+      "Naprawiono: Niektóre gry ulegały awarii",
+      "Zaktualizowano Pakiet Bezpieczeństwa do sierpnia 2024 r. Zwiększono bezpieczeństwo systemu.",
       "Zoptymalizowano: Nowa strategia animacji uruchamiania sprawia, że ​​aplikacje uruchamiają się szybciej",
       "Naprawiono: Niektóre gry ulegały awarii",
       "Zaktualizowano Pakiet Bezpieczeństwa do sierpnia 2024 r. Zwiększono bezpieczeństwo systemu."
     ],
+    "Pływające okna": [
+      "Naprawiono: Aplikacje wideo nie były wyświetlane poprawnie podczas zmiany orientacji ekranu",
+      "Naprawiono: Rozmiar przypiętych, pływających okien w niektórych grach był nieprawidłowy",
+      "Naprawiono: Aplikacje wideo nie były wyświetlane poprawnie podczas zmiany orientacji ekranu",
+      "Naprawiono: Rozmiar przypiętych, pływających okien w niektórych grach był nieprawidłowy",
+      "Naprawiono: Aplikacje wideo nie były wyświetlane poprawnie podczas zmiany orientacji ekranu",
+      "Naprawiono: Rozmiar przypiętych, pływających okien w niektórych grach był nieprawidłowy"
+    ],
+    "Inteligentna łączność między urządzeniami": [
+      "Zoptymalizowano: Discovering devices in Xiaomi Smart Hub is faster now"
+    ],
     "Ekran blokady": [
+      "Nowe: Przełącznik funkcji, która umożliwia długie naciśnięcie Ekranu głównego w celu jej edycji",
+      "Nowe: Przełącznik funkcji, która umożliwia długie naciśnięcie Ekranu głównego w celu jej edycji",
       "Nowe: Przełącznik funkcji, która umożliwia długie naciśnięcie Ekranu głównego w celu jej edycji"
     ],
     "Zegar": [
+      "Naprawiono: Podczas ustawiania powtarzania alarmu pole wyboru jest wyświetlane nieprawidłowo po przełączeniu na tryb ciemny",
+      "Naprawiono: Podczas ustawiania powtarzania alarmu pole wyboru jest wyświetlane nieprawidłowo po przełączeniu na tryb ciemny",
       "Naprawiono: Podczas ustawiania powtarzania alarmu pole wyboru jest wyświetlane nieprawidłowo po przełączeniu na tryb ciemny"
+    ],
+    "Pasek powiadomień, Panel powiadomień": [
+      "Naprawiono: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ]
   },
   "logs_de": {
     "System": [
       "Optimization: New startup animation strategy makes apps launch faster",
       "Fix: Some games crashed",
+      "Updated the security patch to August 2024. Increased system security.",
+      "Optimization: New startup animation strategy makes apps launch faster",
+      "Fix: Some games crashed",
       "Updated the security patch to August 2024. Increased system security."
     ],
-    "Floating windows": [
-      "Fix: Video apps weren^t displayed correctly when switching screen orientation",
+    "Schwebende Fenster": [
+      "Sicherheitspatch auf August 2024 aktualisiert. Systemsicherheit erhöht.",
+      "Fix: The size of pinned floating windows for some games was incorrect",
+      "Sicherheitspatch auf August 2024 aktualisiert. Systemsicherheit erhöht.",
+      "Fix: The size of pinned floating windows for some games was incorrect",
+      "Sicherheitspatch auf August 2024 aktualisiert. Systemsicherheit erhöht.",
       "Fix: The size of pinned floating windows for some games was incorrect"
     ],
-    "Lock screen": [
-      "New: A switch for a feature that allows long pressing Home screen to edit it"
+    "Sperrbildschirm": [
+      "Sicherheitspatch auf Juli 2024 aktualisiert. Systemsicherheit erhöht.",
+      "Sicherheitspatch auf Juli 2024 aktualisiert. Systemsicherheit erhöht.",
+      "Sicherheitspatch auf Juli 2024 aktualisiert. Systemsicherheit erhöht."
     ],
-    "Clock": [
+    "Uhr": [
+      "Fix: When setting alarm repetition, the checkbox was displayed abnormally when switching to Dark mode",
       "Fix: When setting alarm repetition, the checkbox was displayed abnormally when switching to Dark mode"
     ]
   },
   "logs_fr": {
-    "Fenêtres flottantes": [
-      "Réparé: Les applications vidéo n’étaient pas affichées correctement lors du changement d’orientation de l’écran",
-      "Réparé: La taille des fenêtres flottantes épinglées pour certains jeux était incorrecte"
-    ],
     "Système": [
+      "Optimisation: Une nouvelle stratégie d’animation de démarrage accélère le lancement des applications",
+      "Réparé: Certains jeux se sont plantés",
+      "Mise à jour du correctif de sécurité en août 2024. Sécurité accrue du système.",
       "Optimisation: Une nouvelle stratégie d’animation de démarrage accélère le lancement des applications",
       "Réparé: Certains jeux se sont plantés",
       "Mise à jour du correctif de sécurité en août 2024. Sécurité accrue du système."
     ],
+    "Fenêtres flottantes": [
+      "Réparé: Les applications vidéo n’étaient pas affichées correctement lors du changement d’orientation de l’écran",
+      "Réparé: La taille des fenêtres flottantes épinglées pour certains jeux était incorrecte",
+      "Réparé: Les applications vidéo n’étaient pas affichées correctement lors du changement d’orientation de l’écran",
+      "Réparé: La taille des fenêtres flottantes épinglées pour certains jeux était incorrecte",
+      "Réparé: Les applications vidéo n’étaient pas affichées correctement lors du changement d’orientation de l’écran",
+      "Réparé: La taille des fenêtres flottantes épinglées pour certains jeux était incorrecte"
+    ],
+    "Connectivité intelligente inter-appareils": [
+      "Optimisation: Discovering devices in Xiaomi Smart Hub is faster now"
+    ],
     "Écran de verrouillage": [
-      "Nouveau: Un commutateur pour une fonctionnalité qui permet de le modifier en appuyant longuement sur l’Écran d^accueil"
+      "Nouveau: Un commutateur pour une fonctionnalité qui permet de le modifier en appuyant longuement sur l’Écran d'accueil",
+      "Nouveau: Un commutateur pour une fonctionnalité qui permet de le modifier en appuyant longuement sur l’Écran d'accueil",
+      "Nouveau: Un commutateur pour une fonctionnalité qui permet de le modifier en appuyant longuement sur l’Écran d'accueil"
     ],
     "Horloge": [
-      "Réparé: Lors du réglage de la répétition de l^alarme, la case à cocher était affichée anormalement lors du passage en Mode sombre"
+      "Réparé: Lors du réglage de la répétition de l'alarme, la case à cocher était affichée anormalement lors du passage en Mode sombre",
+      "Réparé: Lors du réglage de la répétition de l'alarme, la case à cocher était affichée anormalement lors du passage en Mode sombre",
+      "Réparé: Lors du réglage de la répétition de l'alarme, la case à cocher était affichée anormalement lors du passage en Mode sombre"
+    ],
+    "Barre d'état, Panneau de notification": [
+      "Réparé: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ]
   },
   "logs_it": {
-    "Finestre a comparsa": [
-      "Risolto: I video non venivano visualizzati correttamente cambiando l^orientamento dello schermo",
-      "Risolto: La dimensione delle finestre a comparsa non era corretta per alcuni giochi"
-    ],
     "Sistema": [
+      "Ottimizzazione: La nuova strategia di animazione di avviamento consente un avvio più rapido delle app",
+      "Risolto: Alcuni giochi si bloccavano",
+      "Patch di sicurezza aggiornata ad agosto 2024. Maggiore sicurezza del sistema.",
       "Ottimizzazione: La nuova strategia di animazione di avviamento consente un avvio più rapido delle app",
       "Risolto: Alcuni giochi si bloccavano",
       "Patch di sicurezza aggiornata ad agosto 2024. Maggiore sicurezza del sistema."
     ],
+    "Finestre a comparsa": [
+      "Risolto: I video non venivano visualizzati correttamente cambiando l'orientamento dello schermo",
+      "Risolto: La dimensione delle finestre a comparsa non era corretta per alcuni giochi",
+      "Risolto: I video non venivano visualizzati correttamente cambiando l'orientamento dello schermo",
+      "Risolto: La dimensione delle finestre a comparsa non era corretta per alcuni giochi",
+      "Risolto: I video non venivano visualizzati correttamente cambiando l'orientamento dello schermo",
+      "Risolto: La dimensione delle finestre a comparsa non era corretta per alcuni giochi"
+    ],
+    "Connettività intelligente tra dispositivi": [
+      "Ottimizzazione: Discovering devices in Xiaomi Smart Hub is faster now"
+    ],
     "Schermata di blocco": [
+      "Nuovo: Un interruttore per una funzionalità che consente di tenere premuta la schermata Home per modificarla",
+      "Nuovo: Un interruttore per una funzionalità che consente di tenere premuta la schermata Home per modificarla",
       "Nuovo: Un interruttore per una funzionalità che consente di tenere premuta la schermata Home per modificarla"
     ],
     "Orologio": [
+      "Risolto: Impostando la ripetizione delle sveglie, la casella di spunta veniva visualizzata in modo anomalo quando si passava alla modalità scura",
+      "Risolto: Impostando la ripetizione delle sveglie, la casella di spunta veniva visualizzata in modo anomalo quando si passava alla modalità scura",
       "Risolto: Impostando la ripetizione delle sveglie, la casella di spunta veniva visualizzata in modo anomalo quando si passava alla modalità scura"
+    ],
+    "Barra di stato, Area delle notifiche": [
+      "Risolto: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ]
   },
   "logs_es": {
-    "Ventanas flotantes": [
-      "Reparado: Las aplicaciones de vídeo no se mostraban correctamente al cambiar la orientación de la pantalla",
-      "Reparado: El tamaño de las ventanas flotantes fijadas para algunos juegos era incorrecto"
-    ],
     "Sistema": [
+      "Optimización: Una nueva estrategia de animación de inicio hace que las aplicaciones se ejecuten más rápido",
+      "Reparado: Algunos juegos se bloqueaban",
+      "Parche de seguridad actualizado a agosto de 2024. Seguridad del sistema incrementada.",
       "Optimización: Una nueva estrategia de animación de inicio hace que las aplicaciones se ejecuten más rápido",
       "Reparado: Algunos juegos se bloqueaban",
       "Parche de seguridad actualizado a agosto de 2024. Seguridad del sistema incrementada."
     ],
+    "Ventanas flotantes": [
+      "Reparado: Las aplicaciones de vídeo no se mostraban correctamente al cambiar la orientación de la pantalla",
+      "Reparado: El tamaño de las ventanas flotantes fijadas para algunos juegos era incorrecto",
+      "Reparado: Las aplicaciones de vídeo no se mostraban correctamente al cambiar la orientación de la pantalla",
+      "Reparado: El tamaño de las ventanas flotantes fijadas para algunos juegos era incorrecto",
+      "Reparado: Las aplicaciones de vídeo no se mostraban correctamente al cambiar la orientación de la pantalla",
+      "Reparado: El tamaño de las ventanas flotantes fijadas para algunos juegos era incorrecto"
+    ],
+    "Conectividad inteligente entre dispositivos": [
+      "Optimización: Discovering devices in Xiaomi Smart Hub is faster now"
+    ],
     "Pantalla de bloqueo": [
+      "Nuevo: Un interruptor para una función que permite presionar prolongadamente la Pantalla de inicio para editarla",
+      "Nuevo: Un interruptor para una función que permite presionar prolongadamente la Pantalla de inicio para editarla",
       "Nuevo: Un interruptor para una función que permite presionar prolongadamente la Pantalla de inicio para editarla"
     ],
     "Reloj": [
+      "Reparado: Al configurar la repetición de la alarma, la casilla de verificación se mostraba de manera anormal al cambiar al Modo oscuro",
+      "Reparado: Al configurar la repetición de la alarma, la casilla de verificación se mostraba de manera anormal al cambiar al Modo oscuro",
       "Reparado: Al configurar la repetición de la alarma, la casilla de verificación se mostraba de manera anormal al cambiar al Modo oscuro"
+    ],
+    "Barra de estado, Barra de notificaciones": [
+      "Reparado: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ]
   },
   "logs_pt": {
-    "Janelas flutuantes": [
-      "Correção: Apps de vídeo não eram exibidos corretamente ao alterar a orientação da tela",
-      "Correção: O tamanho de janelas flutuantes fixadas para alguns jogos estava incorreto"
-    ],
     "Sistema": [
+      "Otimização: Nova estratégia de animação de inicialização reduz os atrasos na inicialização de apps",
+      "Correção: Alguns jogos travavam",
+      "Patch de segurança atualizado para agosto de 2024. Segurança do sistema aprimorada.",
       "Otimização: Nova estratégia de animação de inicialização reduz os atrasos na inicialização de apps",
       "Correção: Alguns jogos travavam",
       "Patch de segurança atualizado para agosto de 2024. Segurança do sistema aprimorada."
     ],
+    "Janelas flutuantes": [
+      "Correção: Apps de vídeo não eram exibidos corretamente ao alterar a orientação da tela",
+      "Correção: O tamanho de janelas flutuantes fixadas para alguns jogos estava incorreto",
+      "Correção: Apps de vídeo não eram exibidos corretamente ao alterar a orientação da tela",
+      "Correção: O tamanho de janelas flutuantes fixadas para alguns jogos estava incorreto",
+      "Correção: Apps de vídeo não eram exibidos corretamente ao alterar a orientação da tela",
+      "Correção: O tamanho de janelas flutuantes fixadas para alguns jogos estava incorreto"
+    ],
+    "Conectividade inteligente entre dispositivos": [
+      "Otimização: Discovering devices in Xiaomi Smart Hub is faster now"
+    ],
     "Tela de bloqueio": [
+      "Novo: Um seletor para um recurso que permite o pressionamento longo na Tela inicial para editar",
+      "Novo: Um seletor para um recurso que permite o pressionamento longo na Tela inicial para editar",
       "Novo: Um seletor para um recurso que permite o pressionamento longo na Tela inicial para editar"
     ],
     "Relógio": [
+      "Correção: Ao definir a repetição de alarmes, a caixa de seleção era exibida anormalmente ao alterar para o Modo escuro",
+      "Correção: Ao definir a repetição de alarmes, a caixa de seleção era exibida anormalmente ao alterar para o Modo escuro",
       "Correção: Ao definir a repetição de alarmes, a caixa de seleção era exibida anormalmente ao alterar para o Modo escuro"
+    ],
+    "Barra de status, Área de notificações": [
+      "Correção: O texto e notificações eram exibidos incorretamente para alguns idiomas em condições específicas"
     ]
   },
   "logs_tr": {
-    "Kayan pencereler": [
-      "Onarım: Ekran döndürmeyi değiştirirken video uygulamaları doğru bir şekilde görüntülenmedi",
-      "Onarım: Bazı oyunlar için sabitlenmiş kayan pencerelerin boyutu yanlıştı"
-    ],
     "Sistem": [
       "Optimizasyon: Yeni başlangıç animasyonu stratejisi, uygulama başlatmayı hızlandırır",
       "Onarım: Bazı oyunlar çöktü",
-      "Güvenlik patch^i Ağustos 2024^te güncellendi. Sistem güvenliği arttırıldı."
+      "Güvenlik patch'i Ağustos 2024'te güncellendi. Sistem güvenliği arttırıldı.",
+      "Optimizasyon: Yeni başlangıç animasyonu stratejisi, uygulama başlatmayı hızlandırır",
+      "Onarım: Bazı oyunlar çöktü",
+      "Güvenlik patch'i Ağustos 2024'te güncellendi. Sistem güvenliği arttırıldı."
+    ],
+    "Kayan pencereler": [
+      "Onarım: Ekran döndürmeyi değiştirirken video uygulamaları doğru bir şekilde görüntülenmedi",
+      "Onarım: Bazı oyunlar için sabitlenmiş kayan pencerelerin boyutu yanlıştı",
+      "Onarım: Ekran döndürmeyi değiştirirken video uygulamaları doğru bir şekilde görüntülenmedi",
+      "Onarım: Bazı oyunlar için sabitlenmiş kayan pencerelerin boyutu yanlıştı",
+      "Onarım: Ekran döndürmeyi değiştirirken video uygulamaları doğru bir şekilde görüntülenmedi",
+      "Onarım: Bazı oyunlar için sabitlenmiş kayan pencerelerin boyutu yanlıştı"
+    ],
+    "Cihazlar arası akıllı bağlantı": [
+      "Optimizasyon: Discovering devices in Xiaomi Smart Hub is faster now"
     ],
     "Kilit ekranı": [
+      "Yeni: Ana ekranı düzenlemek için uzun süre basılmasını sağlayan bir özelliğe yönelik anahtar",
+      "Yeni: Ana ekranı düzenlemek için uzun süre basılmasını sağlayan bir özelliğe yönelik anahtar",
       "Yeni: Ana ekranı düzenlemek için uzun süre basılmasını sağlayan bir özelliğe yönelik anahtar"
     ],
     "Saat": [
+      "Onarım: Alarm tekrarlamayı ayarlarken Karanlık moda geçildiğinde onay kutusu anormal şekilde görüntülendi",
+      "Onarım: Alarm tekrarlamayı ayarlarken Karanlık moda geçildiğinde onay kutusu anormal şekilde görüntülendi",
       "Onarım: Alarm tekrarlamayı ayarlarken Karanlık moda geçildiğinde onay kutusu anormal şekilde görüntülendi"
+    ],
+    "Durum çubuğu, Bildirim çubuğu": [
+      "Onarım: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ]
   },
   "logs_id": {
-    "Jendela mengambang": [
-      "Perbaikan: Aplikasi video tidak ditampilkan dengan benar saat mengganti orientasi layar",
-      "Perbaikan: Ukuran jendela mengambang yang disematkan untuk beberapa permainan tidak benar"
-    ],
     "Sistem": [
+      "Pengoptimalan: Strategi animasi pemulaian baru membuat aplikasi diluncurkan lebih cepat",
+      "Perbaikan: Beberapa permainan tidak dapat dimainkan",
+      "Patch keamanan diperbarui (Agustus 2024). Keamanan sistem ditingkatkan.",
       "Pengoptimalan: Strategi animasi pemulaian baru membuat aplikasi diluncurkan lebih cepat",
       "Perbaikan: Beberapa permainan tidak dapat dimainkan",
       "Patch keamanan diperbarui (Agustus 2024). Keamanan sistem ditingkatkan."
     ],
+    "Jendela mengambang": [
+      "Perbaikan: Aplikasi video tidak ditampilkan dengan benar saat mengganti orientasi layar",
+      "Perbaikan: Ukuran jendela mengambang yang disematkan untuk beberapa permainan tidak benar",
+      "Perbaikan: Aplikasi video tidak ditampilkan dengan benar saat mengganti orientasi layar",
+      "Perbaikan: Ukuran jendela mengambang yang disematkan untuk beberapa permainan tidak benar",
+      "Perbaikan: Aplikasi video tidak ditampilkan dengan benar saat mengganti orientasi layar",
+      "Perbaikan: Ukuran jendela mengambang yang disematkan untuk beberapa permainan tidak benar"
+    ],
     "Layar kunci": [
-      "Baru: Ada pilihan untuk mematikan/menghidupkan fitur yang memungkinkan Anda dapat mengedit tata letak Layar utama dengan menekan lama pada layar"
+      "Patch keamanan diperbarui (Juli 2024). Keamanan sistem ditingkatkan.",
+      "Patch keamanan diperbarui (Juli 2024). Keamanan sistem ditingkatkan.",
+      "Patch keamanan diperbarui (Juli 2024). Keamanan sistem ditingkatkan."
     ],
     "Jam": [
+      "Perbaikan: Saat mengatur pengulangan alarm, kotak centang ditampilkan secara tidak normal saat beralih ke mode Gelap",
+      "Perbaikan: Saat mengatur pengulangan alarm, kotak centang ditampilkan secara tidak normal saat beralih ke mode Gelap",
       "Perbaikan: Saat mengatur pengulangan alarm, kotak centang ditampilkan secara tidak normal saat beralih ke mode Gelap"
     ]
   },
   "logs_vi": {
-    "Cửa sổ nổi": [
-      "Sửa: Ứng dụng video không hiển thị chính xác khi chuyển hướng màn hình",
-      "Sửa: Kích thước của cửa sổ nổi được ghim đối với một số trò chơi không chính xác"
-    ],
     "Hệ thống": [
+      "Tối ưu: Chiến lược hoạt ảnh khởi động mới giúp ứng dụng khởi chạy nhanh hơn",
+      "Sửa: Một số game bị sự cố",
+      "Cập nhật bản vá bảo mật đến tháng 8 năm 2024. Tăng cường bảo mật hệ thống.",
       "Tối ưu: Chiến lược hoạt ảnh khởi động mới giúp ứng dụng khởi chạy nhanh hơn",
       "Sửa: Một số game bị sự cố",
       "Cập nhật bản vá bảo mật đến tháng 8 năm 2024. Tăng cường bảo mật hệ thống."
     ],
+    "Cửa sổ nổi": [
+      "Sửa: Ứng dụng video không hiển thị chính xác khi chuyển hướng màn hình",
+      "Sửa: Kích thước của cửa sổ nổi được ghim đối với một số trò chơi không chính xác",
+      "Sửa: Ứng dụng video không hiển thị chính xác khi chuyển hướng màn hình",
+      "Sửa: Kích thước của cửa sổ nổi được ghim đối với một số trò chơi không chính xác",
+      "Sửa: Ứng dụng video không hiển thị chính xác khi chuyển hướng màn hình",
+      "Sửa: Kích thước của cửa sổ nổi được ghim đối với một số trò chơi không chính xác"
+    ],
+    "Kết nối thông minh đa thiết bị": [
+      "Tối ưu: Discovering devices in Xiaomi Smart Hub is faster now"
+    ],
     "Màn hình khóa": [
+      "Mới: Công tắc dành cho tính năng cho phép bấm giữ Màn hình chính để chỉnh sửa",
+      "Mới: Công tắc dành cho tính năng cho phép bấm giữ Màn hình chính để chỉnh sửa",
       "Mới: Công tắc dành cho tính năng cho phép bấm giữ Màn hình chính để chỉnh sửa"
     ],
     "Đồng hồ": [
+      "Sửa: Khi cài đặt lặp lại báo thức, hộp chọn hiển thị bất thường khi chuyển sang Chế độ nền tối",
+      "Sửa: Khi cài đặt lặp lại báo thức, hộp chọn hiển thị bất thường khi chuyển sang Chế độ nền tối",
       "Sửa: Khi cài đặt lặp lại báo thức, hộp chọn hiển thị bất thường khi chuyển sang Chế độ nền tối"
+    ],
+    "Thanh trạng thái, Thanh thông báo": [
+      "Sửa: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ]
   },
   "logs_th": {
-    "หน้าต่างแบบลอย": [
-      "แก้ไข: แอปวิดีโอแสดงไม่ถูกต้องเมื่อสลับการวางแนวหน้าจอ",
-      "แก้ไข: ขนาดของหน้าต่างลอยที่ปักหมุดไว้สำหรับบางเกมไม่ถูกต้อง"
-    ],
     "ระบบ": [
+      "การเพิ่มประสิทธิภาพ: กลยุทธ์แอนิเมชั่นเริ่มต้นใหม่ทำให้แอปเปิดเร็วขึ้น",
+      "แก้ไข: เกมบางเกมปิดตัวเอง",
+      "อัปเดตแพตช์ความปลอดภัยเป็นเดือนสิงหาคม 2024 เพิ่มความปลอดภัยของระบบ",
       "การเพิ่มประสิทธิภาพ: กลยุทธ์แอนิเมชั่นเริ่มต้นใหม่ทำให้แอปเปิดเร็วขึ้น",
       "แก้ไข: เกมบางเกมปิดตัวเอง",
       "อัปเดตแพตช์ความปลอดภัยเป็นเดือนสิงหาคม 2024 เพิ่มความปลอดภัยของระบบ"
     ],
+    "หน้าต่างแบบลอย": [
+      "แก้ไข: แอปวิดีโอแสดงไม่ถูกต้องเมื่อสลับการวางแนวหน้าจอ",
+      "แก้ไข: ขนาดของหน้าต่างลอยที่ปักหมุดไว้สำหรับบางเกมไม่ถูกต้อง",
+      "แก้ไข: แอปวิดีโอแสดงไม่ถูกต้องเมื่อสลับการวางแนวหน้าจอ",
+      "แก้ไข: ขนาดของหน้าต่างลอยที่ปักหมุดไว้สำหรับบางเกมไม่ถูกต้อง",
+      "แก้ไข: แอปวิดีโอแสดงไม่ถูกต้องเมื่อสลับการวางแนวหน้าจอ",
+      "แก้ไข: ขนาดของหน้าต่างลอยที่ปักหมุดไว้สำหรับบางเกมไม่ถูกต้อง"
+    ],
+    "การเชื่อมต่ออัจฉริยะข้ามอุปกรณ์": [
+      "การเพิ่มประสิทธิภาพ: Discovering devices in Xiaomi Smart Hub is faster now"
+    ],
     "ล็อคหน้าจอ": [
+      "ใหม่: สวิตช์สำหรับคุณสมบัติที่ช่วยให้กดหน้าจอหลักค้างไว้เพื่อแก้ไขได้",
+      "ใหม่: สวิตช์สำหรับคุณสมบัติที่ช่วยให้กดหน้าจอหลักค้างไว้เพื่อแก้ไขได้",
       "ใหม่: สวิตช์สำหรับคุณสมบัติที่ช่วยให้กดหน้าจอหลักค้างไว้เพื่อแก้ไขได้"
     ],
     "นาฬิกา": [
+      "แก้ไข: เมื่อตั้งค่าการเตือนซ้ำ ช่องกาเครื่องหมายจะแสดงผิดปกติเมื่อสลับไปที่โหมดมืด",
+      "แก้ไข: เมื่อตั้งค่าการเตือนซ้ำ ช่องกาเครื่องหมายจะแสดงผิดปกติเมื่อสลับไปที่โหมดมืด",
       "แก้ไข: เมื่อตั้งค่าการเตือนซ้ำ ช่องกาเครื่องหมายจะแสดงผิดปกติเมื่อสลับไปที่โหมดมืด"
+    ],
+    "แถบสถานะ, แถบแจ้งเตือน": [
+      "แก้ไข: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ]
   },
   "logs_ar": {
-    "النوافذ المنبثقة": [
-      "الإصلاح: لم يتم عرض تطبيقات الفيديو بشكل صحيح عند تبديل اتجاه الشاشة",
-      "الإصلاح: حجم النوافذ المنبثقة المثبتة لبعض الألعاب غير صحيح"
-    ],
     "النظام": [
+      "التحسين: تعمل إستراتيجية الرسوم المتحركة الجديدة لبدء التشغيل على تشغيل التطبيقات بشكل أسرع",
+      "الإصلاح: توقف بعض الألعاب عن التشغيل",
+      "تم تحديث تصحيح الأمان إلى أغسطس 2024 لزيادة أمان النظام.",
       "التحسين: تعمل إستراتيجية الرسوم المتحركة الجديدة لبدء التشغيل على تشغيل التطبيقات بشكل أسرع",
       "الإصلاح: توقف بعض الألعاب عن التشغيل",
       "تم تحديث تصحيح الأمان إلى أغسطس 2024 لزيادة أمان النظام."
     ],
+    "النوافذ المنبثقة": [
+      "الإصلاح: لم يتم عرض تطبيقات الفيديو بشكل صحيح عند تبديل اتجاه الشاشة",
+      "الإصلاح: حجم النوافذ المنبثقة المثبتة لبعض الألعاب غير صحيح",
+      "الإصلاح: لم يتم عرض تطبيقات الفيديو بشكل صحيح عند تبديل اتجاه الشاشة",
+      "الإصلاح: حجم النوافذ المنبثقة المثبتة لبعض الألعاب غير صحيح",
+      "الإصلاح: لم يتم عرض تطبيقات الفيديو بشكل صحيح عند تبديل اتجاه الشاشة",
+      "الإصلاح: حجم النوافذ المنبثقة المثبتة لبعض الألعاب غير صحيح"
+    ],
+    "التواصل الذكي بين الأجهزة": [
+      "التحسين: Discovering devices in Xiaomi Smart Hub is faster now"
+    ],
     "شاشة القفل": [
+      "الجديد: تمت إضافة مفتاح تبديل لميزة تسمح لك بتعديل الشاشة الرئيسية بضغطة طويلة",
+      "الجديد: تمت إضافة مفتاح تبديل لميزة تسمح لك بتعديل الشاشة الرئيسية بضغطة طويلة",
       "الجديد: تمت إضافة مفتاح تبديل لميزة تسمح لك بتعديل الشاشة الرئيسية بضغطة طويلة"
     ],
     "الساعة": [
+      "الإصلاح: عند ضبط تكرار المنبه، لم يتم عرض مربع الاختيار بشكل صحيح عند التبديل إلى الوضع الداكن",
+      "الإصلاح: عند ضبط تكرار المنبه، لم يتم عرض مربع الاختيار بشكل صحيح عند التبديل إلى الوضع الداكن"
+    ],
+    "شريط الحالة ومركز الإشعارات": [
+      "الإصلاح: Text and notifications were displayed incorrectly for some languages under specific conditions"
+    ],
+    "ساعة": [
       "الإصلاح: عند ضبط تكرار المنبه، لم يتم عرض مربع الاختيار بشكل صحيح عند التبديل إلى الوضع الداكن"
     ]
   },
   "logs_in": {
-    "फ़्लोटिंग विंडोज़": [
-      "ठीक करें स्क्रीन ओरिएंटेशन बदलते समय वीडियो ऐप्स सही तरीके से नहीं दिखाई दे रहे थे",
-      "ठीक करें कुछ गेम्स के लिए पिन किए गए फ़्लोटिंग विंडो का आकार ग़लत था"
-    ],
     "सिस्टम": [
+      "ऑप्टिमाइज़ेशन नई स्टार्टअप एनिमेशन कार्यनीति ऐप्स को तेज़ी से लॉन्च करती है",
+      "ठीक करें कुछ गेम्स क्रैश हो गए",
+      "सुरक्षा पैच को अगस्त 2024 से अपडेट किया गया है. सिस्टम की सुरक्षा बढ़ा दी गई है.",
       "ऑप्टिमाइज़ेशन नई स्टार्टअप एनिमेशन कार्यनीति ऐप्स को तेज़ी से लॉन्च करती है",
       "ठीक करें कुछ गेम्स क्रैश हो गए",
       "सुरक्षा पैच को अगस्त 2024 से अपडेट किया गया है. सिस्टम की सुरक्षा बढ़ा दी गई है."
     ],
+    "फ़्लोटिंग विंडोज़": [
+      "ठीक करें स्क्रीन ओरिएंटेशन बदलते समय वीडियो ऐप्स सही तरीके से नहीं दिखाई दे रहे थे",
+      "ठीक करें कुछ गेम्स के लिए पिन किए गए फ़्लोटिंग विंडो का आकार ग़लत था",
+      "ठीक करें स्क्रीन ओरिएंटेशन बदलते समय वीडियो ऐप्स सही तरीके से नहीं दिखाई दे रहे थे",
+      "ठीक करें कुछ गेम्स के लिए पिन किए गए फ़्लोटिंग विंडो का आकार ग़लत था"
+    ],
+    "क्रॉस-डिवाइस इंटेलिजेंट कनेक्टिविटी": [
+      "ऑप्टिमाइज़ेशन Discovering devices in Xiaomi Smart Hub is faster now"
+    ],
     "लॉक स्क्रीन": [
+      "नया फ़ीचर का स्विच जो होम स्क्रीन को लंबे समय तक दबाए रखने उसमें बदलाव करने की सुविधा देता है",
+      "नया फ़ीचर का स्विच जो होम स्क्रीन को लंबे समय तक दबाए रखने उसमें बदलाव करने की सुविधा देता है",
       "नया फ़ीचर का स्विच जो होम स्क्रीन को लंबे समय तक दबाए रखने उसमें बदलाव करने की सुविधा देता है"
     ],
     "घड़ी": [
+      "ठीक करें अलार्म के दोहराव सेट किए जाने के दौरान, डार्क मोड पर स्विच करने पर चेकबॉक्स असामान्य दिखाई दे रहे थे",
+      "ठीक करें अलार्म के दोहराव सेट किए जाने के दौरान, डार्क मोड पर स्विच करने पर चेकबॉक्स असामान्य दिखाई दे रहे थे",
       "ठीक करें अलार्म के दोहराव सेट किए जाने के दौरान, डार्क मोड पर स्विच करने पर चेकबॉक्स असामान्य दिखाई दे रहे थे"
+    ],
+    "स्टेटस बार, नोटिफिकेशन शेड": [
+      "ठीक करें Text and notifications were displayed incorrectly for some languages under specific conditions"
+    ],
+    "फ़्लोटिंग विंडोज़": [
+      "ठीक करें स्क्रीन ओरिएंटेशन बदलते समय वीडियो ऐप्स सही तरीके से नहीं दिखाई दे रहे थे",
+      "ठीक करें कुछ गेम्स के लिए पिन किए गए फ़्लोटिंग विंडो का आकार ग़लत था"
     ]
   },
   "logs_ug": {
-    "System": [
+    "سىستېما": [
+      "Optimization: New startup animation strategy makes apps launch faster",
+      "Fix: Some games crashed",
+      "Updated the security patch to August 2024. Increased system security.",
       "Optimization: New startup animation strategy makes apps launch faster",
       "Fix: Some games crashed",
       "Updated the security patch to August 2024. Increased system security."
     ],
     "Floating windows": [
-      "Fix: Video apps weren^t displayed correctly when switching screen orientation",
+      "Fix: Video apps weren't displayed correctly when switching screen orientation",
+      "Fix: The size of pinned floating windows for some games was incorrect",
+      "Fix: Video apps weren't displayed correctly when switching screen orientation",
+      "Fix: The size of pinned floating windows for some games was incorrect",
+      "Fix: Video apps weren't displayed correctly when switching screen orientation",
       "Fix: The size of pinned floating windows for some games was incorrect"
     ],
     "Lock screen": [
+      "New: A switch for a feature that allows long pressing Home screen to edit it",
+      "New: A switch for a feature that allows long pressing Home screen to edit it",
       "New: A switch for a feature that allows long pressing Home screen to edit it"
     ],
-    "Clock": [
+    "سائەت": [
+      "Fix: When setting alarm repetition, the checkbox was displayed abnormally when switching to Dark mode",
       "Fix: When setting alarm repetition, the checkbox was displayed abnormally when switching to Dark mode"
     ]
   },
   "logs_bo": {
-    "System": [
+    "མ་ལག": [
+      "Optimization: New startup animation strategy makes apps launch faster",
+      "Fix: Some games crashed",
+      "Updated the security patch to August 2024. Increased system security.",
       "Optimization: New startup animation strategy makes apps launch faster",
       "Fix: Some games crashed",
       "Updated the security patch to August 2024. Increased system security."
     ],
     "Floating windows": [
-      "Fix: Video apps weren^t displayed correctly when switching screen orientation",
+      "Fix: Video apps weren't displayed correctly when switching screen orientation",
+      "Fix: The size of pinned floating windows for some games was incorrect",
+      "Fix: Video apps weren't displayed correctly when switching screen orientation",
+      "Fix: The size of pinned floating windows for some games was incorrect",
+      "Fix: Video apps weren't displayed correctly when switching screen orientation",
       "Fix: The size of pinned floating windows for some games was incorrect"
     ],
     "Lock screen": [
+      "New: A switch for a feature that allows long pressing Home screen to edit it",
+      "New: A switch for a feature that allows long pressing Home screen to edit it",
       "New: A switch for a feature that allows long pressing Home screen to edit it"
     ],
-    "Clock": [
+    "ཆུ་ཚོད།": [
+      "Fix: When setting alarm repetition, the checkbox was displayed abnormally when switching to Dark mode"
+    ],
+    "ཆུ་ཚོད": [
       "Fix: When setting alarm repetition, the checkbox was displayed abnormally when switching to Dark mode"
     ]
   }

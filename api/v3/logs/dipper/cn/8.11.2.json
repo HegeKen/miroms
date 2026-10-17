@@ -9,6 +9,8 @@
     ],
     "文件管理器": [
       "修复 偶现分类页面搜索崩溃的问题",
+      "修复 搜索界面图标显示截断的问题",
+      "修复 偶现分类页面搜索崩溃的问题",
       "修复 搜索界面图标显示截断的问题"
     ],
     "录音机": [
@@ -17,9 +19,293 @@
     ]
   },
   "logs_en": {
+    "Attention": [
+      "Optimized system performance",
+      "Improved system security and stability"
+    ],
     "File Explorer": [
       "Restore Search in categories made the app crash",
+      "Restore Icons were truncated on the search page",
+      "Restore Search in categories made the app crash",
       "Restore Icons were truncated on the search page"
+    ],
+    "Recorder": [
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused",
+      "Restore Couldn't start recording  using Mi AI in some cases"
+    ]
+  },
+  "logs_zh_tw": {
+    "重要提示": [
+      "優化: 系統穩定性",
+      "修復: 部分場景偶現異常問題"
+    ],
+    "檔案管理員": [
+      "修復分類頁面搜尋偶現崩潰的問題",
+      "修復搜尋介面圖示顯示被截斷的問題",
+      "修復分類頁面搜尋偶現崩潰的問題",
+      "修復搜尋介面圖示顯示被截斷的問題"
+    ],
+    "錄音機": [
+      "修復 暫停錄音後無法即時更新到狀態欄的問題",
+      "修正 在某些情況下，無法透過小愛開始錄音的問題"
+    ]
+  },
+  "logs_ja": {
+    "注意": [
+      "最適化: システムの安定性",
+      "修正: エラーが発生する場合がある問題"
+    ],
+    "ファイルマネージャー": [
+      "カテゴリページの検索で時々クラッシュする問題を修正",
+      "検索画面でアイコンが途切れて表示される問題を修正",
+      "カテゴリページの検索で時々クラッシュする問題を修正",
+      "検索画面でアイコンが途切れて表示される問題を修正"
+    ],
+    "レコーダー": [
+      "修正: 録音を一時停止した際、通知シェードの録音状態が更新されない問題",
+      "一部の状況で Xiao AI 経由で録音を開始できない問題を修正"
+    ]
+  },
+  "logs_ko": {
+    "주의": [
+      "최적화: 시스템 안정성",
+      "수정: 일부 상황에서 오류가 발생하는 문제"
+    ],
+    "파일 관리자": [
+      "카테고리 페이지에서 검색 시 간헐적으로 충돌하는 문제를 수정했습니다",
+      "검색 화면에서 아이콘이 잘려 표시되는 문제를 수정",
+      "카테고리 페이지에서 검색 시 간헐적으로 충돌하는 문제를 수정했습니다",
+      "검색 화면에서 아이콘이 잘려 표시되는 문제를 수정"
+    ],
+    "녹음기": [
+      "수정: 녹음을 일시중지했을 때 알림 창의 녹음 상태가 업데이트되지 않던 문제",
+      "일부 상황에서 Xiao AI를 통해 녹음을 시작할 수 없는 문제를 수정"
+    ]
+  },
+  "logs_ru": {
+    "Предупреждения": [
+      "Оптимизация: Стабильность системы",
+      "Исправлено: В некоторых случаях могли возникать ошибки"
+    ],
+    "Файловый менеджер": [
+      "Исправлено периодическое падение при поиске на странице категорий",
+      "Исправлена проблема с обрезанным отображением значков на экране поиска",
+      "Исправлено периодическое падение при поиске на странице категорий",
+      "Исправлена проблема с обрезанным отображением значков на экране поиска"
+    ],
+    "Диктофон": [
+      "Fix: Факт остановки записи не отображался в строке состояния вовремя",
+      "Исправлена проблема, из-за которой в некоторых случаях не удавалось начать запись через Xiao AI."
+    ]
+  },
+  "logs_uk": {
+    "Попередження": [
+      "Оптимізація: Стабільність системи",
+      "Виправлено: В деяких випадках могли виникати помилки"
+    ],
+    "Файловий менеджер": [
+      "Виправлено випадкове падіння під час пошуку на сторінці категорії",
+      "Виправлено проблему з обрізаним відображенням значків на екрані пошуку",
+      "Виправлено випадкове падіння під час пошуку на сторінці категорії",
+      "Виправлено проблему з обрізаним відображенням значків на екрані пошуку"
+    ],
+    "Диктофон": [
+      "Виправлено: стан запису не оновлювався в панелі сповіщень під час паузи запису",
+      "Виправлено проблему, через яку в деяких випадках не вдавалося почати запис через Xiao AI."
+    ]
+  },
+  "logs_pl": {
+    "Powiadomienie": [
+      "Zoptymalizowano: Stabilność systemu",
+      "Naprawiono: W niektórych przypadkach występowały błędy"
+    ],
+    "Menedżer plików": [
+      "Naprawiono sporadyczne awarie podczas wyszukiwania na stronie kategorii",
+      "Naprawiono problem z przyciętym wyświetlaniem ikon na ekranie wyszukiwania",
+      "Naprawiono sporadyczne awarie podczas wyszukiwania na stronie kategorii",
+      "Naprawiono problem z przyciętym wyświetlaniem ikon na ekranie wyszukiwania"
+    ],
+    "Rejestrator": [
+      "Poprawka: stan nagrywania nie był aktualizowany na pasku powiadomień po wstrzymaniu nagrywania",
+      "Naprawiono problem z rozpoczęciem nagrywania przez Xiao AI w niektórych przypadkach."
+    ]
+  },
+  "logs_de": {
+    "Dateimanager": [
+      "Gelegentliche Abstürze bei der Suche auf der Kategorieseite behoben",
+      "Problem mit abgeschnittener Symbolanzeige auf dem Suchbildschirm behoben",
+      "Gelegentliche Abstürze bei der Suche auf der Kategorieseite behoben",
+      "Problem mit abgeschnittener Symbolanzeige auf dem Suchbildschirm behoben"
+    ],
+    "Rekorder": [
+      "Behoben: Der Aufnahmestatus wurde in der Benachrichtigungsleiste nicht aktualisiert, wenn eine Aufnahme pausiert wurde",
+      "Problem behoben, dass in manchen Fällen die Aufnahme über Xiao AI nicht gestartet werden konnte."
+    ]
+  },
+  "logs_fr": {
+    "Avertissement important": [
+      "Optimisation: Stabilité du système",
+      "Réparé: Des erreurs se sont produites dans certains cas"
+    ],
+    "Gestionnaire de fichiers": [
+      "Correction des plantages occasionnels lors de la recherche sur la page de catégorie",
+      "Correction du problème d’affichage tronqué des icônes sur l’écran de recherche",
+      "Correction des plantages occasionnels lors de la recherche sur la page de catégorie",
+      "Correction du problème d’affichage tronqué des icônes sur l’écran de recherche"
+    ],
+    "Enregistreur": [
+      "Correction : l’état d’enregistrement n’était pas mis à jour dans la barre de notifications lors d’une pause",
+      "Correction du problème empêchant de démarrer un enregistrement via Xiao AI dans certains cas."
+    ]
+  },
+  "logs_it": {
+    "Attenzione": [
+      "Ottimizzazione: Stabilità del sistema",
+      "Risolto: In alcuni casi si verificavano errori"
+    ],
+    "Gestione file": [
+      "Risolto il crash occasionale durante la ricerca nella pagina delle categorie",
+      "Risolto il problema di visualizzazione troncata delle icone nella schermata di ricerca",
+      "Risolto il crash occasionale durante la ricerca nella pagina delle categorie",
+      "Risolto il problema di visualizzazione troncata delle icone nella schermata di ricerca"
+    ],
+    "Registratore": [
+      "Correzione: lo stato di registrazione non veniva aggiornato nella barra delle notifiche quando una registrazione veniva messa in pausa",
+      "Risolto il problema che in alcuni casi impediva di avviare la registrazione tramite Xiao AI."
+    ]
+  },
+  "logs_es": {
+    "Atención": [
+      "Optimización: Estabilidad del sistema",
+      "Reparado: Se producían errores en algunos casos"
+    ],
+    "Administrador de archivos": [
+      "Corregido el fallo ocasional al buscar en la página de categorías",
+      "Se corrige el problema de visualización truncada de los iconos en la pantalla de búsqueda",
+      "Corregido el fallo ocasional al buscar en la página de categorías",
+      "Se corrige el problema de visualización truncada de los iconos en la pantalla de búsqueda"
+    ],
+    "Grabadora": [
+      "Corrección: El estado de grabación no se actualizaba en la barra de notificaciones al pausar una grabación",
+      "Se corrige el problema por el que en algunos casos no se podía iniciar la grabación con Xiao AI."
+    ]
+  },
+  "logs_pt": {
+    "Atenção": [
+      "Otimização: Estabilidade do sistema",
+      "Correção: Erros ocorriam em alguns casos"
+    ],
+    "Gerenciador de arquivos": [
+      "Corrigida a falha ocasional ao pesquisar na página de categorias",
+      "Corrigido o problema de exibição truncada dos ícones na tela de pesquisa",
+      "Corrigida a falha ocasional ao pesquisar na página de categorias",
+      "Corrigido o problema de exibição truncada dos ícones na tela de pesquisa"
+    ],
+    "Gravador": [
+      "Correção: o estado da gravação não era atualizado na barra de notificações ao pausar uma gravação",
+      "Corrigido o problema que, em alguns casos, impedia iniciar a gravação com Xiao AI."
+    ]
+  },
+  "logs_tr": {
+    "Uyarı": [
+      "Optimizasyon: Sistem kararlılığı",
+      "Onarım: Bazı durumlarda hatalar oluştu"
+    ],
+    "Dosya Yöneticisi": [
+      "Kategori sayfasındaki aramada ara sıra oluşan çökme sorunu giderildi",
+      "Arama ekranında simgelerin kesik görüntülenmesi sorunu giderildi",
+      "Kategori sayfasındaki aramada ara sıra oluşan çökme sorunu giderildi",
+      "Arama ekranında simgelerin kesik görüntülenmesi sorunu giderildi"
+    ],
+    "Kayıt Cihazı": [
+      "Düzeltme: Kayıt duraklatıldığında kayıt durumu bildirim çubuğunda güncellenmiyordu",
+      "Bazı durumlarda Xiao AI ile kaydın başlatılamaması sorunu giderildi."
+    ]
+  },
+  "logs_id": {
+    "Perhatian": [
+      "Pengoptimalan: Stabilitas sistem",
+      "Perbaikan: Kesalahan terjadi dalam beberapa kasus"
+    ],
+    "Pengelola File": [
+      "Memperbaiki crash sesekali saat mencari di halaman kategori",
+      "Memperbaiki masalah tampilan ikon terpotong di layar pencarian",
+      "Memperbaiki crash sesekali saat mencari di halaman kategori",
+      "Memperbaiki masalah tampilan ikon terpotong di layar pencarian"
+    ],
+    "Perekam": [
+      "Perbaikan: Status perekaman tidak diperbarui di bilah notifikasi saat perekaman dijeda",
+      "Memperbaiki masalah tidak dapat memulai rekaman melalui Xiao AI dalam beberapa kasus."
+    ]
+  },
+  "logs_vi": {
+    "Chú ý": [
+      "Tối ưu: Ổn định hệ thống",
+      "Sửa: Xảy ra lỗi trong một số trường hợp"
+    ],
+    "Trình quản lý tệp": [
+      "Đã sửa lỗi thỉnh thoảng ứng dụng bị treo khi tìm kiếm trên trang danh mục",
+      "Đã khắc phục sự cố biểu tượng bị cắt trên màn hình tìm kiếm",
+      "Đã sửa lỗi thỉnh thoảng ứng dụng bị treo khi tìm kiếm trên trang danh mục",
+      "Đã khắc phục sự cố biểu tượng bị cắt trên màn hình tìm kiếm"
+    ],
+    "Máy ghi âm": [
+      "Đã sửa: Trạng thái ghi âm không được cập nhật kịp thời trên thanh thông báo khi tạm dừng ghi âm",
+      "Đã khắc phục sự cố không thể bắt đầu ghi âm qua Xiao AI trong một số trường hợp."
+    ]
+  },
+  "logs_th": {
+    "โปรดทราบ": [
+      "การเพิ่มประสิทธิภาพ: ความเสถียรของระบบ",
+      "แก้ไข: เกิดข้อผิดพลาดในบางกรณี"
+    ],
+    "ตัวจัดการไฟล์": [
+      "แก้ไขปัญหาการค้นหาในหน้าหมวดหมู่ที่ทำให้แอปหยุดทำงานเป็นครั้งคราว",
+      "แก้ไขปัญหาการแสดงไอคอนถูกตัดในหน้าจอค้นหา",
+      "แก้ไขปัญหาการค้นหาในหน้าหมวดหมู่ที่ทำให้แอปหยุดทำงานเป็นครั้งคราว",
+      "แก้ไขปัญหาการแสดงไอคอนถูกตัดในหน้าจอค้นหา"
+    ],
+    "เครื่องบันทึกเสียง": [
+      "แก้ไข: สถานะการบันทึกเสียงไม่ได้รับการอัปเดตในแถบการแจ้งเตือนเมื่อหยุดการบันทึกชั่วคราว",
+      "แก้ไขปัญหาที่ในบางกรณีไม่สามารถเริ่มบันทึกเสียงผ่าน Xiao AI ได้"
+    ]
+  },
+  "logs_ar": {
+    "تنبية": [
+      "التحسين: استقرار النظام",
+      "الإصلاح: حدثت أخطاء في بعض الحالات"
+    ],
+    "مدير الملفات": [
+      "إصلاح مشكلة تعطل التطبيق أحيانًا عند البحث في صفحة الفئات",
+      "إصلاح مشكلة عرض الأيقونات مقتطعة في شاشة البحث",
+      "إصلاح مشكلة تعطل التطبيق أحيانًا عند البحث في صفحة الفئات",
+      "إصلاح مشكلة عرض الأيقونات مقتطعة في شاشة البحث"
+    ],
+    "مسجل": [
+      "إصلاح: لم يتم تحديث حالة التسجيل في شريط الإشعارات عند إيقاف التسجيل مؤقتًا",
+      "تم إصلاح مشكلة عدم إمكانية بدء التسجيل عبر Xiao AI في بعض الحالات."
+    ]
+  },
+  "logs_in": {
+    "ध्यान दें": [
+      "ऑप्टिमाइज़ेशन सिस्टम की स्थिरता",
+      "ठीक करें कुछ मामलों में त्रुटियां आ रही थीं"
+    ],
+    "फ़ाइल प्रबंधक": [
+      "श्रेणी पृष्ठ पर खोज के दौरान कभी-कभार होने वाले क्रैश की समस्या ठीक की गई",
+      "खोज स्क्रीन पर आइकन के कटे हुए प्रदर्शित होने की समस्या ठीक की गई",
+      "श्रेणी पृष्ठ पर खोज के दौरान कभी-कभार होने वाले क्रैश की समस्या ठीक की गई",
+      "खोज स्क्रीन पर आइकन के कटे हुए प्रदर्शित होने की समस्या ठीक की गई"
+    ],
+    "रिकॉर्डर": [
+      "समस्या ठीक की गई: रिकॉर्डिंग पॉज़ करने पर नोटिफ़िकेशन शेड में स्थिति तुरंत अपडेट नहीं होती थी",
+      "कुछ स्थितियों में Xiao AI के ज़रिए रिकॉर्डिंग शुरू न कर पाने की समस्या ठीक की गई।"
+    ]
+  },
+  "logs_ug": {
+    "ئاۋاز ئالغۇ": [
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused",
+      "بەزى ئەھۋاللاردا Xiao AI ئارقىلىق خاتىرىلەشنى باشلاشقا بولماسلىق مەسىلىسى تۈزىتىلدى."
     ]
   }
 }

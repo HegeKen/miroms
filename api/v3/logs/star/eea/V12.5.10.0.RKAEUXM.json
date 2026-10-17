@@ -1,6 +1,7 @@
 {
   "logs_zh": {
     "系统": [
+      "更新谷歌安全补丁（2021#09），提升系统安全性",
       "更新谷歌安全补丁（2021#09），提升系统安全性"
     ],
     "控制中心": [
@@ -41,7 +42,27 @@
       "修复 进入密码输入页面，人脸与指纹同时检测解锁时有概率出现崩溃的问题",
       "修复 挂断电话亮屏后锁屏信息全部消失的问题",
       "修复 使用主题后开启超级壁纸，锁屏页面内容不显示的偶现问题",
-      "修复 指纹解锁时偶现闪黑条的问题"
+      "修复 指纹解锁时偶现闪黑条的问题",
+      "新增 指纹是否应用于锁屏开关的功能",
+      "优化 锁屏负一屏功能的内存占用",
+      "修复 指纹解锁进入桌面之后，在任意显示图标的界面指纹动画会一直播放问题",
+      "修复 “指纹应用于锁屏”开关默认关闭，导致部分用户无法使用指纹解锁的问题",
+      "修复 指纹动画导致的崩溃问题",
+      "修复 横屏界面灭屏后指纹图标消失或错位的问题",
+      "修复 指纹解锁后自动黑屏跳转到锁屏，且锁屏壁纸为桌面壁纸的问题",
+      "修复 指纹解锁动画震动触感不对的问题",
+      "修复 个别应用在使用指纹验证时，跳回到锁屏界面的问题",
+      "修复 抬起亮屏功能失效的问题",
+      "修复 指纹解锁进入桌面之后，指纹图标依旧显示的问题",
+      "修复 指纹解锁进入桌面之后，指纹图标依旧显示，点击可播放动画的问题",
+      "修复 灭屏之后指纹快速解锁导致锁屏透明问题",
+      "修复 锁屏使用三方主题后，开启超级壁纸功能，锁屏时间信息不显示的问题",
+      "修复 充电动画显示时有概率内存异常的问题",
+      "修复 指纹解锁时闪现桌面壁纸，且未成功解锁的问题",
+      "修复 亮屏指纹解锁成功后又跳转到锁屏界面的问题",
+      "修复 进入密码输入页面，人脸与指纹同时检测解锁时有概率出现崩溃的问题",
+      "修复 挂断电话亮屏后锁屏信息全部消失的问题",
+      "修复 使用主题后开启超级壁纸，锁屏页面内容不显示的偶现问题"
     ],
     "状态栏、通知栏": [
       "优化 来电的悬浮通知屏蔽逻辑",
@@ -68,7 +89,22 @@
       "修复 三方主题下收到悬浮通知时，偶现背景异常的问题",
       "修复 抬起亮屏时偶现锁屏通知抖动的异常",
       "修复 深色模式下，通知按钮偶现显示异常的问题",
-      "修复 使用三方主题时，横屏下拉通知栏无法全屏的问题"
+      "修复 使用三方主题时，横屏下拉通知栏无法全屏的问题",
+      "优化 来电的悬浮通知屏蔽逻辑",
+      "优化 通知中心与三方主题的适配",
+      "优化 通知消息与深色模式的适配",
+      "修复 透明背景下，悬浮通知显示重叠的问题",
+      "修复 长按通知偶现权限弹窗重叠的异常",
+      "修复 应用锁导致通知大小背景不一致的异常",
+      "修复 一键清理动画掉帧的问题",
+      "修复 锁屏时无法下拉通知栏的问题",
+      "修复 未接来电悬浮通知偶现异常的问题",
+      "修复 未接来电悬浮权限开启失败的异常",
+      "修复 通知列表展开组通知，子通知背景模糊效果不更新问题",
+      "修复: 不同分辨率下萤幕锁定画面状态栏图标显示的问题",
+      "修复 播放音乐时，通知栏偶现不显示媒体控制面板的异常",
+      "修复 抬起亮屏时偶现锁屏通知抖动的异常",
+      "修复 深色模式下，通知按钮偶现显示异常的问题"
     ],
     "主题": [
       "修复 部分场景下关闭深色模式壁纸不生效的问题",
@@ -83,20 +119,36 @@
       "修复 部分场景下解锁时壁纸闪烁的问题",
       "修复 某些场景下的壁纸服务崩溃的问题",
       "修复 部分壁纸预览页显示异常的问题",
+      "修复 锁屏界面指纹解锁屏幕闪烁的问题",
+      "修复: 部分场景下关闭深色模式壁纸不生效的问题",
+      "修复 退出超级省电模式后，桌面壁纸变黑的问题",
+      "修复 无障碍模式下，超级壁纸点击下载时播报错误的问题",
+      "修复 地球超级壁纸文字显示不完整的问题",
+      "修复 设置-超级壁纸卡片文案与按钮重叠",
+      "修复 设置页超级壁纸底部导航栏显示不清楚的问题",
+      "修复 省电模式下，分身空间桌面壁纸与主空间相同的问题",
+      "修复 分身空间中设置桌面壁纸异常显示的问题",
+      "修复 大字体时，超级壁纸落地点选择页文字重叠的问题",
+      "修复 部分场景下解锁时壁纸闪烁的问题",
+      "修复 某些场景下的壁纸服务崩溃的问题",
+      "修复 部分壁纸预览页显示异常的问题",
       "修复 锁屏界面指纹解锁屏幕闪烁的问题"
     ],
     "设置": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄的问题",
       "修复 部分应用的帐号无法同步到“帐号与同步”中的问题",
       "修复 在“应用管理-默认打开链接”页面中选择“地图”选项时页面崩溃的问题"
-    ],
-    "手机管家": [
-      "设置应用中新增「安全」菜单"
     ]
   },
   "logs_en": {
     "System": [
+      "Updated Android Security Patch to September 2021. Increased system security.",
       "Updated Android Security Patch to September 2021. Increased system security."
+    ],
+    "Settings": [
+      "Fix: UI issues that appeared while adding corporate Wi-Fi networks",
+      "Fix: Some accounts couldn't be synced",
+      "Fix: Crashes occurred when the default map was selected"
     ],
     "Lock screen": [
       "New: New fingerprint options",
@@ -104,21 +156,21 @@
       "Fix: Fingerprint unlock animation kept playing after the device was unlocked",
       "Fix: Issues in the Settings deactivated Fingerprint unlock in some cases",
       "Fix: Fingerprint unlock animation led to crashes",
-      "Fix: Fingerprint icon didn^t appear or was displayed incorrectly when the screen was turned off in landscape mode",
+      "Fix: Fingerprint icon didn't appear or was displayed incorrectly when the screen was turned off in landscape mode",
       "Fix: The screen went black, device was locked, and Lock screen wallpaper was replaced with Home screen wallpaper after Fingerprint unlock was used",
       "Fix: Issues with Fingerprint unlock vibration",
       "Fix: Using fingerprints in some apps locked the device",
-      "Fix: ^Raise to wake^ turned off unexpectedly in some cases",
-      "Fix: Fingerprint icon didn^t disappear after the device was unlocked",
-      "Fix: Fingerprint icon didn^t disappear after the device was unlocked",
+      "Fix: \"Raise to wake\" turned off unexpectedly in some cases",
+      "Fix: Fingerprint icon didn't disappear after the device was unlocked",
+      "Fix: Fingerprint icon didn't disappear after the device was unlocked",
       "Fix: Lock screen went transparent after Fingerprint unlock was used in some cases",
       "Fix: Issues with the Lock screen clock when third party themes and super wallpapers were used",
       "Fix: Memory usage issues when charging animation was displayed",
-      "Fix: Wallpapers flashed when Fingerprint unlock was being used which didn^t allow to unlock the device",
+      "Fix: Wallpapers flashed when Fingerprint unlock was being used which didn't allow to unlock the device",
       "Fix: Device was locked again after successful Fingerprint unlock attempts",
       "Fix: Using Face unlock and Fingerprint unlock simultaneously led to crashes in some cases",
       "Fix: Lock screen notifications disappeared after an ended call",
-      "Fix: Lock screen items weren^t displayed when super wallpapers and themes were combined"
+      "Fix: Lock screen items weren't displayed when super wallpapers and themes were combined"
     ],
     "Status bar, Notification shade": [
       "Optimization: Algorithms for displaying incoming call notifications",
@@ -126,36 +178,42 @@
       "Optimization: Dark mode adjustments for notifications",
       "Fix: Floating notifications overlapped when the transparent background was used",
       "Fix: Permission dialog elements overlapped after a notification was long pressed",
-      "Fix: Notifications weren^t displayed correctly when App lock was used",
-      "Fix: Cleaner animations weren^t displayed correctly",
-      "Fix: Notification shade couldn^t be opened in some cases",
-      "Fix: Notifications weren^t displayed correctly after missed calls",
+      "Fix: Notifications weren't displayed correctly when App lock was used",
+      "Fix: Cleaner animations weren't displayed correctly",
+      "Fix: Notification shade couldn't be opened in some cases",
+      "Fix: Notifications weren't displayed correctly after missed calls",
       "Fix: Issues with permissions after missed calls",
       "Fix: Issues with displaying grouped notifications",
       "Fix: Displaying status bar icons in different resolutions",
-      "Fix: Player controls weren^t always displayed in the Notification shade",
-      "Fix: Notifications weren^t always displayed correctly when ^Raise to wake^ was used",
-      "Fix: Buttons weren^t always displayed correctly on the notifications when Dark mode was on"
+      "Fix: Player controls weren't always displayed in the Notification shade",
+      "Fix: Notifications weren't always displayed correctly when \"Raise to wake\" was used",
+      "Fix: Buttons weren't always displayed correctly on the notifications when Dark mode was on"
     ],
     "Themes": [
-      "Fix: Wallpapers didn^t appear after Dark mode was turned off in some cases",
+      "Fix: Wallpapers didn't appear after Dark mode was turned off in some cases",
       "Fix: Home screen background went black after Ultra battery saver was turned off",
       "Fix: Incorrect voice prompts for downloading super wallpapers in Accessibility mode",
       "Fix: Text truncation issues for super wallpapers",
       "Fix: UI elements overlapped in the super wallpaper settings",
-      "Fix: Navigation buttons weren^t displayed correctly in the super wallpaper settings",
+      "Fix: Navigation buttons weren't displayed correctly in the super wallpaper settings",
       "Fix: Wallpapers from First space were also applied in Second space when Battery saver was on",
-      "Fix: Wallpapers weren^t displayed correctly in Second space",
+      "Fix: Wallpapers weren't displayed correctly in Second space",
       "Fix: When system font size was set to large, super wallpaper descriptions overlapped during the setup process",
       "Fix: Wallpapers flashed while device was being unlocked in some cases",
       "Fix: Wallpaper services crashed in some cases",
-      "Fix: Some wallpaper previews weren^t displayed correctly",
+      "Fix: Some wallpaper previews weren't displayed correctly",
       "Fix: he screen flashed while Fingerprint unlock was being used"
     ]
   },
   "logs_zh_tw": {
     "系統": [
+      "更新谷歌安全補丁（2021#09），提升系統安全性",
       "更新Android安全性修補程式等級（2021#09），提升系統安全性"
+    ],
+    "設定": [
+      "修復: Wi-Fi 增加網路時選擇“企業級加密”會導致域名框太窄的問題",
+      "修復: 部分應用的帳號無法同步到“帳號與同步”中的問題",
+      "修復: 在“應用管理-默認打開鏈接”頁面中選擇“地圖”選項時頁面崩潰的問題"
     ],
     "鎖屏": [
       "新增: 指紋是否應用於螢幕鎖定開關的功能",
@@ -214,7 +272,13 @@
   },
   "logs_ja": {
     "システム": [
+      "Androidのセキュリティパッチを2021年9月にアップデートしました。システムのセキュリティを強化しました。",
       "Androidのセキュリティパッチを2021年9月にアップデートしました。システムのセキュリティを強化しました。"
+    ],
+    "設定": [
+      "修正: 企業のWi-Fiネットワークを追加する際に表示されるUIの問題",
+      "修正: 一部のアカウントが同期できない問題",
+      "修正: デフォルトの地図を選択するとクラッシュする問題"
     ],
     "ロック画面": [
       "新機能: 指紋認証の新しいオプション",
@@ -226,7 +290,7 @@
       "修正: 指紋認証でロック解除した後、画面が黒くなり、デバイスがロックされ、ロック画面の壁紙がホーム画面の壁紙に変わってしまう問題",
       "修正: 指紋認証のバイブレーションに関する問題",
       "修正: 一部のアプリで指紋認証を使用するとデバイスがロックされる問題",
-      "修正: ^持ち上げてスリープ解除^機能が予期せずオフになる場合がある問題",
+      "修正: '持ち上げてスリープ解除'機能が予期せずオフになる場合がある問題",
       "修正: ロックを解除しても指紋認証のアイコンが消えない問題",
       "修正: ロックを解除しても指紋認証のアイコンが消えない問題",
       "修正: 指紋認証を行うとロック画面が透明になる場合がある問題",
@@ -252,7 +316,7 @@
       "修正: グループ化された通知の表示に関する問題",
       "修正: ステータスバーのアイコンが異なる解像度で表示される問題",
       "修正: プレイヤーのコントロールが通知シェードに表示されないことがある問題",
-      "修正: ^持ち上げてスリープ解除^実行時に通知が正しく表示されない場合がある問題",
+      "修正: '持ち上げてスリープ解除'実行時に通知が正しく表示されない場合がある問題",
       "修正: ダークモードがオンの場合、通知にボタンが正しく表示されないことがある問題"
     ],
     "テーマ": [
@@ -273,7 +337,13 @@
   },
   "logs_ko": {
     "시스템": [
+      "Android 보안패치 (2021#09) 업데이트됨. 시스템 보안이 향상되었습니다.",
       "Android 보안패치 (2021#09) 업데이트됨. 시스템 보안이 향상되었습니다."
+    ],
+    "설정": [
+      "수정: 기업 Wi-Fi 네트워크 추가 시에 발생하는 UI 문제",
+      "수정: 일부 계정이 동기화되지 않는 문제",
+      "수정: 기본 맵 선택 시 발생하는 충돌 문제"
     ],
     "잠금화면": [
       "New: 새 지문 옵션",
@@ -285,7 +355,7 @@
       "수정: 지문 잠금해제를 사용한 후 화면이 검게 변하고 기기가 잠기며 잠금화면 배경화면이 홈 화면의 배경화면으로 교체되는 문제",
       "수정: 지문 잠금해제의 진동 문제",
       "수정: 일부 앱에서 지문을 사용하면 기기가 잠기는 문제",
-      "수정: 일부 상황에서 ^손목 올려 켜기^가 갑자기 꺼지는 문제",
+      "수정: 일부 상황에서 '손목 올려 켜기'가 갑자기 꺼지는 문제",
       "수정: 기기 잠금을 해제한 후에도 지문 아이콘이 사라지지 않는 문제",
       "수정: 기기 잠금을 해제한 후에도 지문 아이콘이 사라지지 않는 문제",
       "수정: 일부 상황에서 지문 잠금해제를 사용한 후 잠금화면이 투명해지는 문제",
@@ -311,7 +381,7 @@
       "수정: 그룹화된 알림 표시 문제",
       "수정: 상태 바의 아이콘이 다른 해상도로 표시되는 문제",
       "수정: 플레이어의 컨트롤이 알림바에 표시되지 않을 수있는 문제",
-      "수정: ^손목 올려 켜기^ 사용 시에 알림이 제대로 표시되지 않는 문제",
+      "수정: \"손목 올려 켜기\" 사용 시에 알림이 제대로 표시되지 않는 문제",
       "수정: 다크 모드가 켜져있는 경우 알림에 버튼이 제대로 표시되지 않는 문제"
     ],
     "테마": [
@@ -332,7 +402,13 @@
   },
   "logs_ru": {
     "Система": [
+      "Обновление системы безопасности Android (сентябрь 2021 года). Улучшена безопасность системы.",
       "Обновление системы безопасности Android (сентябрь 2021 года). Улучшена безопасность системы."
+    ],
+    "Настройки": [
+      "Исправлено: Ошибки интерфейса, которые появились при добавлении корпоративных сетей Wi-Fi",
+      "Исправлено: Сбои синхронизации некоторых аккаунтов",
+      "Исправлено: Сбои в работе системы при выборе карт по умолчанию"
     ],
     "Экран блокировки": [
       "Новое: Новый параметры для отпечатков пальцев",
@@ -344,7 +420,7 @@
       "Исправлено: После разблокировки при помощи отпечатка пальца экран мог погаснуть, устройство заблокироваться, а обои экрана блокировки могли быть заменены обоями рабочего стола",
       "Исправлено: Исправлены ошибки вибрации при разблокировке устройства отпечатком пальца",
       "Исправлено: Использование отпечатков пальцев в некоторых приложениях могло приводить к блокировке устройства",
-      "Исправлено: В некоторых случаях функция ^Поднять для активации^ могла отключаться",
+      "Исправлено: В некоторых случаях функция \"Поднять для активации\" могла отключаться",
       "Исправлено: Значок отпечатка пальца не исчезал после разблокировки устройства",
       "Исправлено: Значок отпечатка пальца не исчезал после разблокировки устройства",
       "Исправлено: В некоторых случаях после разблокировки при помощи отпечатка пальца экран блокировки мог стать прозрачным",
@@ -363,14 +439,14 @@
       "Исправлено: При использовании прозрачного фона всплывающие уведомления могли перекрываться",
       "Исправлено: Элементы диалогового окна предоставления разрешений перекрывались после долгого нажатия на уведомление",
       "Исправлено: При использовании защиты приложений уведомления могли отображаться неправильно",
-      "Исправлено: Исправлено некорректное отображение анимации ^Очистки^",
+      "Исправлено: Исправлено некорректное отображение анимации \"Очистки\"",
       "Исправлено: В некоторых случаях шторка уведомлений могла не открываться",
       "Исправлено: После пропущенных вызовов уведомления могли отображаться неправильно",
       "Исправлено: Исправлены ошибки разрешений, появлявшиеся после пропущенных вызовов",
       "Исправлено: Исправлено неправильное отображение сгруппированных уведомлений",
       "Исправлено: Исправлены ошибки отображения значков строки состояния для разных разрешений",
       "Исправлено: Виджет управления воспроизведением музыки мог не отображаться в шторке уведомлений",
-      "Исправлено: При использовании функции ^Поднять для активации^ уведомления могли отображаться неправильно",
+      "Исправлено: При использовании функции \"Поднять для активации\" уведомления могли отображаться неправильно",
       "Исправлено: При активации темного режима некоторые кнопки на уведомлениях могли не отображаться"
     ],
     "Темы": [
@@ -391,11 +467,17 @@
   },
   "logs_uk": {
     "Система": [
+      "Оновлено патч безпеки Android за вересень 2021 року. Збільшено безпеку системи.",
       "Оновлено патч безпеки Android за вересень 2021 року. Збільшено безпеку системи."
+    ],
+    "Налаштування": [
+      "Виправлено: Помилки інтерфейсу, які з'явилися під час додавання корпоративних мереж Wi-Fi",
+      "Виправлено: Помилки синхронізації деяких акаунтів",
+      "Виправлено: Посилки в роботі системи під час вибору карт за замовчуванням"
     ],
     "Екран блокування": [
       "Нове: Нові параметри для відбитків пальців",
-      "Оптимізація: Використання пам^яті Стрічкою віджетів, коли пристрій заблоковано",
+      "Оптимізація: Використання пам'яті Стрічкою віджетів, коли пристрій заблоковано",
       "Виправлено: Анімація розблокування за допомогою відбитка пальця не припиняла відображатися навіть після розблокування пристрою",
       "Виправлено: Виправлені проблеми програми Налаштування, через які могла вимикатися функція розблокування за допомогою відбитків пальців",
       "Виправлено: Анімація розблокування за допомогою відбитка пальця могла призводити до помилок",
@@ -403,17 +485,17 @@
       "Виправлено: Після розблокування за допомогою відбитка пальця екран міг згаснути, пристрій заблокуватися, а шпалери екрану блокування могли бути замінені шпалерами робочого столу",
       "Виправлено: Виправлені помилки вібрації під час розблокування пристрою за допомогою відбитка пальця",
       "Виправлено: Використання відбитків пальців в деяких програмах могло призводити до блокування пристрою",
-      "Виправлено: В деяких випадках функція ^Підняти для активації^ могла відключатися",
+      "Виправлено: В деяких випадках функція \"Підняти для активації\" могла відключатися",
       "Виправлено: Значок відбитка пальця не зникав після розблокування пристрою",
       "Виправлено: Значок відбитка пальця не зникав після розблокування пристрою",
       "Виправлено: У деяких випадках після розблокування за допомогою відбитка пальця екран блокування міг стати прозорим",
       "Виправлено: Виправлені помилки відображення віджета годинника на екрані блокування під час використання супершрплер та сторонніх тем",
-      "Виправлено: Використання пам^яті під час відображення анімації заряджання",
+      "Виправлено: Використання пам'яті під час відображення анімації заряджання",
       "Виправлено: У деяких випадках під час використання розблокування за допомогою відбитка пальця шпалери починали мерехтіти, що не дозволяло розблокувати пристрій",
       "Виправлено: Пристрій блокувався знову навіть після успішного розблокування за допомогою відбитка пальця",
       "Виправлено: У деяких випадках одночасне використання розблокування за допомогою обличчя і за допомогою відбитка пальця могло призводити до помилок",
       "Виправлено: Після завершення голосового виклику повідомлення на екрані блокування могли зникнути",
-      "Виправлено: Під час комбінування супершпалер та тем деякі об^єкти могли не відборажатися на екрані блокування"
+      "Виправлено: Під час комбінування супершпалер та тем деякі об'єкти могли не відборажатися на екрані блокування"
     ],
     "Рядок стану, Панель сповіщень": [
       "Оптимізація: Алгоритми відображення сповіщень про вхідні виклики",
@@ -422,14 +504,14 @@
       "Виправлено: Під час використання прозорого фону спливаючі сповіщення могли перекриватися",
       "Виправлено: Елементи діалогового вікна надання дозволів перекривалися після довгого натиснення на сповіщення",
       "Виправлено: Під час використання захисту програм сповіщення могли відображатися неправильно",
-      "Виправлено: Виправлено некоректне відображення анімації ^Очищення^",
+      "Виправлено: Виправлено некоректне відображення анімації \"Очищення\"",
       "Виправлено: В деяких випадках панель сповіщень могла не відкриватися",
       "Виправлено: Після пропущених викликів сповіщення могли відображатися неправильно",
-      "Виправлено: Виправлені помилки дозволів, які з^являлися після пропущених викликів",
+      "Виправлено: Виправлені помилки дозволів, які з'являлися після пропущених викликів",
       "Виправлено: Виправлено неправильне відображення згрупованих сповіщень",
       "Виправлено: Виправлені помилки відображення значків рядка стану для різної роздільної здатності",
       "Виправлено: Віджет керування відтворенням музиик міг не відображатися у панелі сповіщень",
-      "Виправлено: Під час використання функції ^Підняти для активації^ сповіщення могли відображатися неправильно",
+      "Виправлено: Під час використання функції \"Підняти для активації\" сповіщення могли відображатися неправильно",
       "Виправлено: Під час активації темного режиму деякі кнопки на сповіщеннях могли не відображатися"
     ],
     "Теми": [
@@ -450,7 +532,13 @@
   },
   "logs_pl": {
     "System": [
+      "Zaktualizowano Pakiet Bezpieczeństwa Android do września 2021 r. Zwiększono bezpieczeństwo systemu.",
       "Zaktualizowano Pakiet Bezpieczeństwa Android do września 2021 r. Zwiększono bezpieczeństwo systemu."
+    ],
+    "Ustawienia": [
+      "Naprawiono: Problemy w interfejsem, które pojawiały się podczas dodawania firmowych sieci Wi-Fi",
+      "Naprawiono: Nie udało się zsynchronizować niektórych kont",
+      "Naprawiono: Po wybraniu domyślnej mapy występowały awarie"
     ],
     "Ekran blokady": [
       "Nowe: Nowe opcje odcisków palców",
@@ -507,106 +595,150 @@
       "Naprawiono: Ekran migał podczas odblokowywania odciskiem palca"
     ]
   },
+  "logs_de": {
+    "Einstellungen": [
+      "Behebung: UI-Probleme beim Hinzufügen von Firmen-WLAN-Netzwerken",
+      "Behebung: Einige Konten konnten nicht synchronisiert werden",
+      "Behebung: Abstürze bei Auswahl der Standardkarte"
+    ],
+    "System": [
+      "Android-Sicherheitspatch auf September 2021 aktualisiert. Systemsicherheit erhöht."
+    ],
+    "Sperrbildschirm": [
+      "Neu: Neue Fingerabdruck-Optionen",
+      "Optimierung: Speicherverbrauch von App Vault bei gesperrtem Gerät",
+      "Behoben: Die Animation zum Entsperren per Fingerabdruck wurde nach dem Entsperren des Geräts weiterhin abgespielt.",
+      "Behebung: Probleme in den Einstellungen deaktivierten in manchen Fällen die Entsperrung per Fingerabdruck",
+      "Behoben: Abstürze durch die Fingerabdruck-Entsperr-Animation",
+      "Behoben: Fingerabdruck-Symbol wurde im Querformat nach dem Ausschalten des Bildschirms nicht angezeigt oder falsch dargestellt",
+      "Behoben: Nach dem Entsperren per Fingerabdruck wurde der Bildschirm schwarz, das Gerät gesperrt und das Sperrbildschirm-Hintergrundbild durch das Startbildschirm-Hintergrundbild ersetzt",
+      "Behoben: Probleme mit der Vibration bei der Fingerabdruck-Entsperrung",
+      "Behoben: Die Verwendung des Fingerabdrucks in einigen Apps sperrte das Gerät",
+      "Behoben: \"Zum Aufwecken anheben\" wurde in manchen Fällen unerwartet deaktiviert",
+      "Behoben: Das Fingerabdruck-Symbol verschwand nach dem Entsperren des Geräts nicht.",
+      "Behoben: Das Fingerabdruck-Symbol verschwand nach dem Entsperren des Geräts nicht.",
+      "Behoben: Der Sperrbildschirm wurde in einigen Fällen transparent, nachdem die Entsperrung per Fingerabdruck verwendet wurde.",
+      "Behoben: Probleme mit der Uhr auf dem Sperrbildschirm bei Verwendung von Drittanbieter-Themes und Super-Hintergründen",
+      "Behoben: Speichernutzungsprobleme bei der Anzeige der Ladeanimation",
+      "Behoben: Hintergrundbilder flackerten während der Fingerabdruck-Entsperrung, wodurch das Gerät nicht entsperrt werden konnte",
+      "Behoben: Das Gerät wurde nach erfolgreichen Fingerabdruck-Entsperrversuchen erneut gesperrt",
+      "Behoben: Die gleichzeitige Nutzung von Gesichts- und Fingerabdruckentsperrung führte in manchen Fällen zu Abstürzen",
+      "Behoben: Benachrichtigungen auf dem Sperrbildschirm verschwanden nach einem beendeten Anruf",
+      "Behoben: Sperrbildschirm-Elemente wurden nicht angezeigt, wenn Super-Hintergründe und Themes kombiniert wurden"
+    ]
+  },
   "logs_fr": {
     "Système": [
+      "Patch de Sécurité Android mis à jour pour septembre 2021. Amélioration du système de sécurité.",
       "Patch de Sécurité Android mis à jour pour septembre 2021. Amélioration du système de sécurité."
     ],
+    "Paramètres": [
+      "Réparé: Problèmes d'interface utilisateur apparus lors de l'ajout de réseaux Wi-Fi d'entreprise",
+      "Réparé: Certains comptes n'ont pas pu être synchronisés",
+      "Réparé: Des plantages se sont produits lorsque la carte par défaut a été sélectionnée"
+    ],
     "Écran de verrouillage": [
-      "Nouveau: Nouvelles options d^empreintes digitales",
-      "Optimisation: Utilisation de la mémoire du coffre d^applications lorsque l^appareil est verrouillé",
-      "Réparé: L^animation de déverrouillage des empreintes digitales a continué à jouer après le déverrouillage de l^appareil",
+      "Nouveau: Nouvelles options d'empreintes digitales",
+      "Optimisation: Utilisation de la mémoire du coffre d'applications lorsque l'appareil est verrouillé",
+      "Réparé: L'animation de déverrouillage des empreintes digitales a continué à jouer après le déverrouillage de l'appareil",
       "Réparé: Problèmes dans les paramètres désactivés Déverrouillage par empreinte digitale dans certains cas",
-      "Réparé: L^animation de déverrouillage des empreintes digitales a entraîné des plantages",
-      "Réparé: L^icône d^empreinte digitale n^apparaissait pas ou ne s^affichait pas correctement lorsque l^écran était éteint en mode paysage",
-      "Réparé: L^écran est devenu noir, l^appareil a été verrouillé et le fond d^écran de l^écran de verrouillage a été remplacé par le fond d^écran de l^écran d^accueil après l^utilisation du déverrouillage par empreinte digitale",
+      "Réparé: L'animation de déverrouillage des empreintes digitales a entraîné des plantages",
+      "Réparé: L'icône d'empreinte digitale n'apparaissait pas ou ne s'affichait pas correctement lorsque l'écran était éteint en mode paysage",
+      "Réparé: L'écran est devenu noir, l'appareil a été verrouillé et le fond d'écran de l'écran de verrouillage a été remplacé par le fond d'écran de l'écran d'accueil après l'utilisation du déverrouillage par empreinte digitale",
       "Réparé: Problèmes avec la vibration de déverrouillage par empreintes digitales",
-      "Réparé: L^utilisation d^empreintes digitales dans certaines applications a verrouillé l^appareil",
-      "Réparé: ^Lever pour activer^ désactivé de manière inattendue dans certains cas",
-      "Réparé: L^icône d^empreinte digitale n^a pas disparu après le déverrouillage de l^appareil",
-      "Réparé: L^icône d^empreinte digitale n^a pas disparu après le déverrouillage de l^appareil",
-      "Réparé: L^écran de verrouillage est devenu transparent après l^utilisation du déverrouillage par empreinte digitale dans certains cas",
-      "Réparé: Problèmes avec l^horloge de l^écran de verrouillage lorsque des thèmes tiers et des super fonds d^écran ont été utilisés",
-      "Réparé: Problèmes d^utilisation de la mémoire lors de l^affichage de l^animation de charge",
-      "Réparé: Les fonds d^écran ont clignoté lorsque le déverrouillage par empreinte digitale était utilisé, ce qui ne permettait pas de déverrouiller l^appareil",
-      "Réparé: L^appareil a été à nouveau verrouillé après des tentatives réussies de déverrouillage par empreinte digitale",
-      "Réparé: L^utilisation simultanée du déverrouillage du visage et du déverrouillage des empreintes digitales a entraîné des plantages dans certains cas",
-      "Réparé: Les notifications de l^écran de verrouillage ont disparu après un appel terminé",
-      "Réparé: Les éléments de l^écran de verrouillage ne s^affichaient pas lorsque les super fonds d^écran et les thèmes étaient combinés"
+      "Réparé: L'utilisation d'empreintes digitales dans certaines applications a verrouillé l'appareil",
+      "Réparé: \"Lever pour activer\" désactivé de manière inattendue dans certains cas",
+      "Réparé: L'icône d'empreinte digitale n'a pas disparu après le déverrouillage de l'appareil",
+      "Réparé: L'icône d'empreinte digitale n'a pas disparu après le déverrouillage de l'appareil",
+      "Réparé: L'écran de verrouillage est devenu transparent après l'utilisation du déverrouillage par empreinte digitale dans certains cas",
+      "Réparé: Problèmes avec l'horloge de l'écran de verrouillage lorsque des thèmes tiers et des super fonds d'écran ont été utilisés",
+      "Réparé: Problèmes d'utilisation de la mémoire lors de l'affichage de l'animation de charge",
+      "Réparé: Les fonds d'écran ont clignoté lorsque le déverrouillage par empreinte digitale était utilisé, ce qui ne permettait pas de déverrouiller l'appareil",
+      "Réparé: L'appareil a été à nouveau verrouillé après des tentatives réussies de déverrouillage par empreinte digitale",
+      "Réparé: L'utilisation simultanée du déverrouillage du visage et du déverrouillage des empreintes digitales a entraîné des plantages dans certains cas",
+      "Réparé: Les notifications de l'écran de verrouillage ont disparu après un appel terminé",
+      "Réparé: Les éléments de l'écran de verrouillage ne s'affichaient pas lorsque les super fonds d'écran et les thèmes étaient combinés"
     ],
     "Barre d'état, Panneau de notification": [
-      "Optimisation: Algorithmes d^affichage des notifications d^appels entrants",
+      "Optimisation: Algorithmes d'affichage des notifications d'appels entrants",
       "Optimisation: Compatibilité des thèmes tiers pour le panneau de notification",
       "Optimisation: Réglages du mode sombre pour les notifications",
-      "Réparé: Les notifications flottantes se chevauchaient lorsque l^arrière-plan transparent était utilisé",
-      "Réparé: Les éléments de la boîte de dialogue d^autorisation se chevauchent après un appui long sur une notification",
-      "Réparé: Les notifications ne s^affichaient pas correctement lorsque le verrouillage de l^application était utilisé",
-      "Réparé: Les animations plus propres ne s^affichaient pas correctement",
-      "Réparé: Le volet de notification n^a pas pu être ouvert dans certains cas",
-      "Réparé: Les notifications ne s^affichaient pas correctement après des appels manqués",
+      "Réparé: Les notifications flottantes se chevauchaient lorsque l'arrière-plan transparent était utilisé",
+      "Réparé: Les éléments de la boîte de dialogue d'autorisation se chevauchent après un appui long sur une notification",
+      "Réparé: Les notifications ne s'affichaient pas correctement lorsque le verrouillage de l'application était utilisé",
+      "Réparé: Les animations plus propres ne s'affichaient pas correctement",
+      "Réparé: Le volet de notification n'a pas pu être ouvert dans certains cas",
+      "Réparé: Les notifications ne s'affichaient pas correctement après des appels manqués",
       "Réparé: Problèmes avec les autorisations après des appels manqués",
-      "Réparé: Problèmes d^affichage des notifications groupées",
-      "Réparé: Affichage des icônes de la barre d^état dans différentes résolutions",
-      "Réparé: Les commandes du lecteur n^étaient pas toujours affichées dans le Panneau de notification",
-      "Réparé: Les notifications ne s^affichaient pas toujours correctement lorsque ^Lever pour activer^ était utilisé",
-      "Réparé: Les boutons ne s^affichaient pas toujours correctement sur les notifications lorsque le mode sombre était activé"
+      "Réparé: Problèmes d'affichage des notifications groupées",
+      "Réparé: Affichage des icônes de la barre d'état dans différentes résolutions",
+      "Réparé: Les commandes du lecteur n'étaient pas toujours affichées dans le Panneau de notification",
+      "Réparé: Les notifications ne s'affichaient pas toujours correctement lorsque \"Lever pour activer\" était utilisé",
+      "Réparé: Les boutons ne s'affichaient pas toujours correctement sur les notifications lorsque le mode sombre était activé"
     ],
     "Thèmes": [
-      "Réparé: Les fonds d^écran n^apparaissaient pas après la désactivation du mode sombre dans certains cas",
-      "Réparé: L^arrière-plan de l^écran d^accueil est devenu noir après la désactivation de l^économiseur de batterie ultra",
-      "Réparé: Invites vocales incorrectes pour le téléchargement de super fonds d^écran en mode Accessibilité",
-      "Réparé: Problèmes de troncature de texte pour les super fonds d^écran",
-      "Réparé: Les éléments de l^interface utilisateur se chevauchent dans les paramètres du super fond d^écran",
-      "Réparé: Les boutons de navigation ne s^affichaient pas correctement dans les paramètres du super fond d^écran",
-      "Réparé: Les fonds d^écran du premier espace ont également été appliqués dans le deuxième espace lorsque l^économiseur de batterie était activé",
-      "Réparé: Les fonds d^écran ne s^affichaient pas correctement dans le deuxième espace",
-      "Réparé: Lorsque la taille de la police du système était définie sur grande, les descriptions des super fonds d^écran se chevauchaient pendant le processus de configuration",
-      "Réparé: Les fonds d^écran ont clignoté pendant le déverrouillage de l^appareil dans certains cas",
+      "Réparé: Les fonds d'écran n'apparaissaient pas après la désactivation du mode sombre dans certains cas",
+      "Réparé: L'arrière-plan de l'écran d'accueil est devenu noir après la désactivation de l'économiseur de batterie ultra",
+      "Réparé: Invites vocales incorrectes pour le téléchargement de super fonds d'écran en mode Accessibilité",
+      "Réparé: Problèmes de troncature de texte pour les super fonds d'écran",
+      "Réparé: Les éléments de l'interface utilisateur se chevauchent dans les paramètres du super fond d'écran",
+      "Réparé: Les boutons de navigation ne s'affichaient pas correctement dans les paramètres du super fond d'écran",
+      "Réparé: Les fonds d'écran du premier espace ont également été appliqués dans le deuxième espace lorsque l'économiseur de batterie était activé",
+      "Réparé: Les fonds d'écran ne s'affichaient pas correctement dans le deuxième espace",
+      "Réparé: Lorsque la taille de la police du système était définie sur grande, les descriptions des super fonds d'écran se chevauchaient pendant le processus de configuration",
+      "Réparé: Les fonds d'écran ont clignoté pendant le déverrouillage de l'appareil dans certains cas",
       "Réparé: Les services de papier peint ont planté dans certains cas",
-      "Réparé: Certains aperçus de fond d^écran ne s^affichaient pas correctement",
-      "Réparé: L^écran a clignoté pendant que le déverrouillage par empreinte digitale était utilisé"
+      "Réparé: Certains aperçus de fond d'écran ne s'affichaient pas correctement",
+      "Réparé: L'écran a clignoté pendant que le déverrouillage par empreinte digitale était utilisé"
     ]
   },
   "logs_it": {
     "Sistema": [
+      "Patch di sicurezza Android aggiornata a settembre 2021. Maggiore sicurezza del sistema.",
       "Patch di sicurezza Android aggiornata a settembre 2021. Maggiore sicurezza del sistema."
+    ],
+    "Impostazioni": [
+      "Risolto: Problemi di interfaccia utente che comparivano durante l'aggiunta di reti Wi-Fi aziendali",
+      "Risolto: Alcuni account non potevano essere sincronizzati",
+      "Risolto: Si verificavano arresti anomali quando veniva selezionata la mappa predefinita"
     ],
     "Schermata di blocco": [
       "Nuovo: Nuove opzioni per le impronte digitali",
-      "Ottimizzazione: Utilizzo della memoria dell^assistente app quando il dispositivo è bloccato",
-      "Risolto: L^animazione di sblocco tramite impronta continuava a essere riprodotta dopo lo sblocco del dispositivo",
+      "Ottimizzazione: Utilizzo della memoria dell'assistente app quando il dispositivo è bloccato",
+      "Risolto: L'animazione di sblocco tramite impronta continuava a essere riprodotta dopo lo sblocco del dispositivo",
       "Risolto: Problemi nelle Impostazioni disattivavano lo sblocco tramite impronta in alcuni casi",
-      "Risolto: L^animazione dello sblocco tramite impronta causava arresti anomali",
-      "Risolto: L^icona dell^impronta digitale non appariva o veniva visualizzata in modo errato a schermo spento in modalità orizzontale",
+      "Risolto: L'animazione dello sblocco tramite impronta causava arresti anomali",
+      "Risolto: L'icona dell'impronta digitale non appariva o veniva visualizzata in modo errato a schermo spento in modalità orizzontale",
       "Risolto: Lo schermo diventava nero, il dispositivo veniva bloccato e lo sfondo della schermata di blocco veniva sostituito con lo sfondo della schermata Home dopo lo sblocco tramite impronta",
       "Risolto: Problemi con la vibrazione dello sblocco tramite impronta",
-      "Risolto: L^uso delle impronte digitali in alcune app bloccava il dispositivo",
-      "Risolto: ^Solleva per attivare^ veniva disattivato inaspettatamente in alcuni casi",
-      "Risolto: L^icona dell^impronta digitale non scompariva dopo lo sblocco del dispositivo",
-      "Risolto: L^icona dell^impronta digitale non scompariva dopo lo sblocco del dispositivo",
+      "Risolto: L'uso delle impronte digitali in alcune app bloccava il dispositivo",
+      "Risolto: \"Solleva per attivare\" veniva disattivato inaspettatamente in alcuni casi",
+      "Risolto: L'icona dell'impronta digitale non scompariva dopo lo sblocco del dispositivo",
+      "Risolto: L'icona dell'impronta digitale non scompariva dopo lo sblocco del dispositivo",
       "Risolto: La schermata di blocco diventava trasparente dopo lo sblocco tramite impronta in alcuni casi",
-      "Risolto: Problemi con l^orologio della schermata di blocco durante l^utilizzo di temi di terze parti e super sfondi",
-      "Risolto: Problemi di utilizzo della memoria durante la visualizzazione dell^animazione di ricarica",
+      "Risolto: Problemi con l'orologio della schermata di blocco durante l'utilizzo di temi di terze parti e super sfondi",
+      "Risolto: Problemi di utilizzo della memoria durante la visualizzazione dell'animazione di ricarica",
       "Risolto: Gli sfondi lampeggiavano durante lo sblocco tramite impronta, il che non consentiva di sbloccare il dispositivo",
       "Risolto: Il dispositivo veniva nuovamente bloccato dopo i tentativi di sblocco tramite impronta riusciti",
-      "Risolto: L^uso simultaneo di riconoscimento facciale e sblocco tramite impronta causava arresti anomali in alcuni casi",
+      "Risolto: L'uso simultaneo di riconoscimento facciale e sblocco tramite impronta causava arresti anomali in alcuni casi",
       "Risolto: Le notifiche sulla schermata di blocco scomparivano dopo una chiamata terminata",
       "Risolto: Gli elementi della schermata di blocco non venivano visualizzati quando si combinavano super sfondi e temi"
     ],
     "Barra di stato, Area delle notifiche": [
       "Ottimizzazione: Algoritmi per la visualizzazione delle notifiche delle chiamate in arrivo",
-      "Ottimizzazione: Compatibilità dei temi di terze parti per l^area delle notifiche",
+      "Ottimizzazione: Compatibilità dei temi di terze parti per l'area delle notifiche",
       "Ottimizzazione: Miglioramenti della modalità scura per le notifiche",
       "Risolto: Le notifiche a comparsa si sovrapponevano quando veniva utilizzato lo sfondo trasparente",
       "Risolto: Gli elementi della finestra di dialogo dei permessi si sovrapponevano quando una notifica era premuta a lungo",
       "Risolto: Le notifiche non venivano visualizzate correttamente quando veniva utilizzato il blocco app",
       "Risolto: Le animazioni di Pulitore non venivano visualizzate correttamente",
-      "Risolto: Non era possibile aprire l^area delle notifiche in alcuni casi",
+      "Risolto: Non era possibile aprire l'area delle notifiche in alcuni casi",
       "Risolto: Le notifiche non venivano visualizzate correttamente dopo le chiamate perse",
       "Risolto: Problemi con i permessi dopo le chiamate perse",
       "Risolto: Problemi con la visualizzazione delle notifiche raggruppate",
       "Risolto: Visualizzazione delle icone della barra di stato in diverse risoluzioni",
-      "Risolto: I controlli del giocatore non venivano sempre visualizzati nell^area delle notifiche",
-      "Risolto: Le notifiche non venivano sempre visualizzate correttamente durante l^utilizzo di ^Solleva per attivare^",
+      "Risolto: I controlli del giocatore non venivano sempre visualizzati nell'area delle notifiche",
+      "Risolto: Le notifiche non venivano sempre visualizzate correttamente durante l'utilizzo di \"Solleva per attivare\"",
       "Risolto: I pulsanti non venivano sempre visualizzati correttamente nelle notifiche con la modalità scura attiva"
     ],
     "Temi": [
@@ -614,7 +746,7 @@
       "Risolto: Lo sfondo della schermata Home diventava nero dopo la disattivazione di Super risparmio energetico",
       "Risolto: Messaggi vocali errati per il download di Super sfondi in modalità accessibilità",
       "Risolto: Problemi di troncamento del testo per i Super sfondi",
-      "Risolto: Gli elementi dell^interfaccia utente si sovrapponevano nelle impostazioni di Super sfondi",
+      "Risolto: Gli elementi dell'interfaccia utente si sovrapponevano nelle impostazioni di Super sfondi",
       "Risolto: I tasti di navigazione non venivano visualizzati correttamente nelle impostazioni di Super sfondi",
       "Risolto: Gli sfondi di Primo spazio erano applicati anche a Secondo spazio quando il risparmio energetico era attivo",
       "Risolto: Gli sfondi non venivano visualizzati correttamente in Secondo spazio",
@@ -622,12 +754,18 @@
       "Risolto: Gli sfondi lampeggiavano durante lo sblocco del dispositivo in alcuni casi",
       "Risolto: I servizi relativi agli sfondi si bloccavano in alcuni casi",
       "Risolto: Alcune anteprime degli sfondi non venivano visualizzate correttamente",
-      "Risolto: Lo schermo lampeggiava durante l^utilizzo dello sblocco tramite impronta"
+      "Risolto: Lo schermo lampeggiava durante l'utilizzo dello sblocco tramite impronta"
     ]
   },
   "logs_es": {
     "Sistema": [
+      "Parche de seguridad de Android actualizado a septiembre de 2021. Seguridad del sistema incrementada.",
       "Parche de seguridad de Android actualizado a septiembre de 2021. Seguridad del sistema incrementada."
+    ],
+    "Ajustes": [
+      "Reparado: Problemas de la interfaz de usuario que aparecían al añadir redes Wi-Fi corporativas",
+      "Reparado: Algunas cuentas no podían ser sincronizadas",
+      "Reparado: Se producían bloqueos cuando se seleccionaba el mapa predeterminado"
     ],
     "Pantalla de bloqueo": [
       "Nuevo: Nuevas opciones de huella dactilar",
@@ -639,7 +777,7 @@
       "Reparado: La pantalla se ponía negra, el dispositivo se bloqueba y el fondo de pantalla de la Pantalla de bloqueo se reemplazaba con el fondo de pantalla de la Pantalla inicio después de que se usase el desbloqueo con huella dactilar",
       "Reparado: Problemas con la vibración del desbloqueo con huella dactilar",
       "Reparado: El uso de la huella dactilar en algunas aplicaciones bloqueaba el dispositivo",
-      "Reparado: ^Levantar para activar^ se desactivaba inesperadamente en algunos casos",
+      "Reparado: \"Levantar para activar\" se desactivaba inesperadamente en algunos casos",
       "Reparado: El icono de huella dactilar no desaparecía después de desbloquear el dispositivo",
       "Reparado: El icono de huella dactilar no desaparecía después de desbloquear el dispositivo",
       "Reparado: En algunos casos la Pantalla de bloqueo se volvía transparente después de que se usase el desbloqueo con huella dactilar",
@@ -665,7 +803,7 @@
       "Reparado: Problemas con la visualización de notificaciones agrupadas",
       "Reparado: Visualización de iconos de la barra de estado en diferentes resoluciones",
       "Reparado: Los controles del reproductor no siempre se mostraban en la Barra de notificaciones",
-      "Reparado: Las notificaciones no siempre se mostraban correctamente cuando se usaba ^Levantar para activar^",
+      "Reparado: Las notificaciones no siempre se mostraban correctamente cuando se usaba \"Levantar para activar\"",
       "Reparado: Los botones no siempre se mostraban correctamente en las notificaciones cuando el Modo oscuro estaba activado"
     ],
     "Temas": [
@@ -686,7 +824,13 @@
   },
   "logs_pt": {
     "Sistema": [
+      "Patch de Segurança do Android atualizado para Setembro de 2021. Segurança do sistema aprimorada.",
       "Patch de Segurança do Android atualizado para Setembro de 2021. Segurança do sistema aprimorada."
+    ],
+    "Configurações": [
+      "Correção: Problemas na IU que apareciam ao adicionar redes Wi-Fi corporativas",
+      "Correção: Algumas contas não podiam ser sincronizadas",
+      "Correção: Travamentos ocorriam quando o mapa padrão era selecionado"
     ],
     "Tela de bloqueio": [
       "Novo: Novas opções de impressão digital",
@@ -698,7 +842,7 @@
       "Correção: A tela ficava preta, o dispositivo era bloqueado, e o plano de fundo da Tela de bloqueio era substituído pelo plano de fundo da Tela inicial após o desbloqueio por impressão digital ser usado",
       "Correção: Problemas com a vibração do desbloqueio por impressão digital",
       "Correção: Usar a impressão digital em alguns apps bloqueava o dispositivo",
-      "Correção: ^Levantar para ligar a tela^ desativava inesperadamente em alguns casos",
+      "Correção: \"Levantar para ligar a tela\" desativava inesperadamente em alguns casos",
       "Correção: O ícone de impressão digital não desaparecia após o dispositivo ser desbloqueado",
       "Correção: O ícone de impressão digital não desaparecia após o dispositivo ser desbloqueado",
       "Correção: A Tela de bloqueio ficava transparente após o desbloqueio por impressão digital ser usado em alguns casos",
@@ -724,7 +868,7 @@
       "Correção: Problemas com a exibição de notificações agrupadas",
       "Correção: Exibição de ícones da barra de status em diferentes resoluções",
       "Correção: Os controles de reprodução não eram sempre exibidos na Área de notificações",
-      "Correção: As notificações não eram exibidas corretamente quando o ^Levantar para ligar a tela^ era usado",
+      "Correção: As notificações não eram exibidas corretamente quando o \"Levantar para ligar a tela\" era usado",
       "Correção: Os botões não eram sempre exibidos corretamente nas notificações quando o Modo Escuro estava ativado"
     ],
     "Temas": [
@@ -745,19 +889,25 @@
   },
   "logs_tr": {
     "Sistem": [
-      "Android Güvenlik Patch^i Eylül 2021^de güncellendi. Sistem güvenliği arttırıldı."
+      "Android Güvenlik Patch'i Eylül 2021'de güncellendi. Sistem güvenliği arttırıldı.",
+      "Android Güvenlik Patch'i Eylül 2021'de güncellendi. Sistem güvenliği arttırıldı."
+    ],
+    "Ayarlar": [
+      "Onarım: Kurumsal Wi-Fi ağları ekleniyorken görünen kullanıcı arayüzü sorunları",
+      "Onarım: Bazı hesaplar senkronize edilemedi",
+      "Onarım: Varsayılan harita seçildiğinde çökmeler oluştu"
     ],
     "Kilit ekranı": [
       "Yeni: Yeni parmak izi seçenekleri",
       "Optimizasyon: Cihaz kilitlendiğinde Uygulama kasası belleği kullanımı",
       "Onarım: Cihaz kilidi açıldıktan sonra Parmak izi ile kilit açma animasyonu hareket etmeye devam etti",
-      "Onarım: Bazı durumlarda Parmak izi ile kilit açma özelliği devre dışı bırakıldığında Ayarlar^da sorunlar",
+      "Onarım: Bazı durumlarda Parmak izi ile kilit açma özelliği devre dışı bırakıldığında Ayarlar'da sorunlar",
       "Onarım: Parmak izi ile kilit açma animasyonu çökmelere yol açtı",
       "Onarım: Ekran Manzara modunda kapatıldıktan sonra Parmak izi simgesi görünmedi veya düzgün bir şekilde görüntülenmedi",
       "Onarım: Parmak izi ile kilit açma kullanıldıktan sonra ekran karardı, cihaz kilitlendi ve Kilit ekranı duvar kağıdı, Ana ekran duvar kağıdı ile yer değiştirdi",
       "Onarım: Parmak izi ile kilit açma titreşimi ile ilgili sorunlar",
       "Onarım: Bazı uygulamalarda parmak izi kullanmak cihazı kilitledi",
-      "Onarım: ^^Uyandırmak için kaldır^^ bazı durumlarda beklenmedik şekilde kapandı",
+      "Onarım: \"Uyandırmak için kaldır\" bazı durumlarda beklenmedik şekilde kapandı",
       "Onarım: Cihaz kilidi açıldıktan sonra parmak izi simgesi kaybolmadı",
       "Onarım: Cihaz kilidi açıldıktan sonra parmak izi simgesi kaybolmadı",
       "Onarım: Parmak izi ile kilit açma bazı durumlarda kullanıldıktan sonra Kilit ekranı şeffaflaştı",
@@ -782,8 +932,8 @@
       "Onarım: Cevapsız aramalardan sonra izinlerle ilgili sorunlar",
       "Onarım: Gruplandırılmış bildirimleri görüntülemekle ilgili sorunlar",
       "Onarım: Farklı çözünürlüklerde durum çubuğu simgelerini görüntüleme",
-      "Onarım: Oynatıcı kontrolleri Bildirim Çubuğu^nda her zaman görüntülenmedi",
-      "Onarım: ^^Uyandırmak için kaldır^^ kullanıldığında bildirimler hiçbir zaman düzgün bir şekilde görüntülenmedi",
+      "Onarım: Oynatıcı kontrolleri Bildirim Çubuğu'nda her zaman görüntülenmedi",
+      "Onarım: \"Uyandırmak için kaldır\" kullanıldığında bildirimler hiçbir zaman düzgün bir şekilde görüntülenmedi",
       "Onarım: Karanlık mod açık olduğunda tuşlar bildirimlerde her zaman düzgün bir şekilde görüntülenmedi"
     ],
     "Temalar": [
@@ -793,8 +943,8 @@
       "Onarım: Süper duvar kağıtları için metin kesme sorunları",
       "Onarım: Süper duvar kağıtları ayarlarında kullancı arayüzü ögeleri üst üste bindi",
       "Onarım: Süper duvar kağıtları ayarlarında navigasyon tuşları doğru görüntülenmedi",
-      "Onarım: Pil tasarrufu açık iken İlk alan^dan Duvar kağıtları İkinci alan^a da uygulandı",
-      "Onarım: İkinci alan^da duvar kağıdı doğru görüntülenmedi",
+      "Onarım: Pil tasarrufu açık iken İlk alan'dan Duvar kağıtları İkinci alan'a da uygulandı",
+      "Onarım: İkinci alan'da duvar kağıdı doğru görüntülenmedi",
       "Onarım: Sistem yazı tipi boyutu büyük olarak ayarlandığında, kurulum işlemi sırasında süper duvar kağıdı açıklamaları üst üste bindi",
       "Onarım: Cihaz kilidi açılıyorken bazı durumlarda duvar kağıdı yandı söndü",
       "Onarım: Duvar kağıdı hizmetleri bazı durumlarda çöktü",
@@ -804,7 +954,13 @@
   },
   "logs_id": {
     "Sistem": [
+      "Patch Keamanan Android diperbarui (September 2021). Keamanan sistem ditingkatkan.",
       "Patch Keamanan Android diperbarui (September 2021). Keamanan sistem ditingkatkan."
+    ],
+    "Pengaturan": [
+      "Perbaikan: Masalah antarmuka (UI) yang timbul saat menambahkan jaringan Wi-Fi perusahaan",
+      "Perbaikan: Beberapa akun tidak disinkronkan",
+      "Perbaikan: Tutup paksa terjadi saat peta default dipilih"
     ],
     "Layar kunci": [
       "Baru: Pilihan penggunaan sidik jari baru",
@@ -816,7 +972,7 @@
       "Perbaikan: Layar menjadi hitam, perangkat terkunci, dan wallpaper Layar kunci diganti dengan wallpaper Layar utama setelah buka kunci dengan sidik jari digunakan",
       "Perbaikan: Masalah dengan getaran pada Buka kunci dengan sidik jari",
       "Perbaikan: Menggunakan sidik jari di beberapa aplikasi, menyebabkan perangkat terkunci (ke bagian Layar kunci)",
-      "Perbaikan: ^Angkat untuk bangunkan^ mati secara tidak terduga dalam beberapa kasus",
+      "Perbaikan: \"Angkat untuk bangunkan\" mati secara tidak terduga dalam beberapa kasus",
       "Perbaikan: Ikon sidik jari tidak hilang setelah perangkat dibuka kuncinya",
       "Perbaikan: Ikon sidik jari tidak hilang setelah perangkat dibuka kuncinya",
       "Perbaikan: Layar kunci menjadi transparan setelah membuka kunci dengan sidik jari digunakan dalam beberapa kasus",
@@ -842,7 +998,7 @@
       "Perbaikan: Masalah dengan menampilkan notifikasi yang dikelompokkan",
       "Perbaikan: Ikon bilah status ditampilkan dalam resolusi yang berbeda",
       "Perbaikan: Kontrol pemutar tidak selalu ditampilkan di Layar notifikasi",
-      "Perbaikan: Notifikasi tidak selalu ditampilkan dengan benar saat ^Angkat untuk bangunkan^ digunakan",
+      "Perbaikan: Notifikasi tidak selalu ditampilkan dengan benar saat \"Angkat untuk bangunkan\" digunakan",
       "Perbaikan: Tombol tidak selalu ditampilkan dengan benar di notifikasi saat mode Gelap dihidupkan"
     ],
     "Tema": [
@@ -863,7 +1019,13 @@
   },
   "logs_vi": {
     "Hệ thống": [
+      "Cập nhật Bản vá bảo mật Android đến tháng 9 năm 2021. Tăng cường bảo mật hệ thống.",
       "Cập nhật Bản vá bảo mật Android đến tháng 9 năm 2021. Tăng cường bảo mật hệ thống."
+    ],
+    "Cài đặt": [
+      "Sửa: Sự cố giao diện người dùng xuất hiện khi thêm mạng Wi-Fi doanh nghiệp",
+      "Sửa: Một vài tài khoản không thể đồng bộ",
+      "Sửa: Xảy ra lỗi khi bản đồ mặc định được chọn"
     ],
     "Màn hình khóa": [
       "Mới: Tùy chọn vân tay mới",
@@ -875,7 +1037,7 @@
       "Sửa: Màn hình chuyển sang màu đen, thiết bị khóa và Hình nền màn hình khóa được thay thế bằng hình nền Màn hình chính sau khi sử dụng Mở khóa vân tay",
       "Sửa: Vấn đề với rung Mở khóa vân tay",
       "Sửa: Sử dụng vân tay trong một số ứng dụng khóa thiết bị",
-      "Sửa: ^Nâng lên để đánh thức^ bị tắt đột ngột trong một số trường hợp",
+      "Sửa: \"Nâng lên để đánh thức\" bị tắt đột ngột trong một số trường hợp",
       "Sửa: Biểu tượng vân tay không biến mất sau khi thiết bị được mở khóa",
       "Sửa: Biểu tượng vân tay không biến mất sau khi thiết bị được mở khóa",
       "Sửa: Màn hình khóa trở nên trong suốt sau khi sử dụng Mở khóa vân tay trong một số trường hợp",
@@ -901,7 +1063,7 @@
       "Sửa: Vấn đề với việc hiển thị thông báo nhóm",
       "Sửa: Hiển thị biểu tượng trên thanh trạng thái với độ phân giải khác nhau",
       "Sửa: Điều khiển trình phát không luôn hiển thị trong Thanh thông báo",
-      "Sửa: Thông báo không hiển thị chính xác khi ^Nâng lên để đánh thức^ được sử dụng",
+      "Sửa: Thông báo không hiển thị chính xác khi \"Nâng lên để đánh thức\" được sử dụng",
       "Sửa: Phím không hiển thị chính xác trên thanh thông báo khi Chế độ nền tối bật"
     ],
     "Chủ đề": [
@@ -922,7 +1084,13 @@
   },
   "logs_th": {
     "ระบบ": [
+      "อัปเดตแพทช์ความปลอดภัยของแอนดรอยด์เป็นกันยายน 2021 เพิ่มความปลอดภัยของระบบ",
       "อัปเดตแพทช์ความปลอดภัยของแอนดรอยด์เป็นกันยายน 2021 เพิ่มความปลอดภัยของระบบ"
+    ],
+    "การตั้งค่า": [
+      "แก้ไข: ปัญหา UI ที่ปรากฏขึ้นขณะเพิ่มเครือข่าย Wi-Fi ขององค์กร",
+      "แก้ไข: ไม่สามารถซิงค์บางบัญชีได้",
+      "แก้ไข: เกิดปัญหาเมื่อเลือกแผนที่เริ่มต้น"
     ],
     "ล็อคหน้าจอ": [
       "ใหม่: ตัวเลือกลายนิ้วมือใหม่",
@@ -934,7 +1102,7 @@
       "แก้ไข: หน้าจอเป็นสีดำ อุปกรณ์ถูกล็อก และภาพพื้นหลังหน้าจอล็อกถูกแทนที่ด้วยภาพพื้นหลังหน้าจอหลักหลังจากใช้การปลดล็อกด้วยลายนิ้วมือ",
       "แก้ไข: ปัญหาเกี่ยวกับการสั่นเมื่อปลดล็อกด้วยลายนิ้วมือ",
       "แก้ไข: การใช้ลายนิ้วมือในบางแอปจะล็อคเครื่อง",
-      "แก้ไข: ^ยกขึ้นเพื่อปลุก^ ถูกปิดโดยไม่คาดคิดในบางกรณี",
+      "แก้ไข: \"ยกขึ้นเพื่อปลุก\" ถูกปิดโดยไม่คาดคิดในบางกรณี",
       "แก้ไข: ไอคอนลายนิ้วมือไม่หายไปหลังจากปลดล็อกอุปกรณ์แล้ว",
       "แก้ไข: ไอคอนลายนิ้วมือไม่หายไปหลังจากปลดล็อกอุปกรณ์แล้ว",
       "แก้ไข: หน้าจอล็อกโปร่งใสหลังจากใช้การปลดล็อกด้วยลายนิ้วมือในบางกรณี",
@@ -960,7 +1128,7 @@
       "แก้ไข: ปัญหาเกี่ยวกับการแสดงการแจ้งเตือนแบบกลุ่ม",
       "แก้ไข: การแสดงไอคอนแถบสถานะในความละเอียดต่างๆ",
       "แก้ไข: การควบคุมเครื่องเล่นเพลงไม่ได้แสดงในแถบการแจ้งเตือนทุกครั้ง",
-      "แก้ไข: การแจ้งเตือนแสดงไม่ถูกต้องทุกครั้งเมื่อใช้ ^ยกขึ้นเพื่อปลุก^",
+      "แก้ไข: การแจ้งเตือนแสดงไม่ถูกต้องทุกครั้งเมื่อใช้ \"ยกขึ้นเพื่อปลุก\"",
       "แก้ไข: ปุ่มต่างๆ แสดงไม่ถูกต้องในการแจ้งเตือนทุกครั้งเมื่อเปิดโหมดมืด"
     ],
     "ธีม": [
@@ -981,7 +1149,13 @@
   },
   "logs_ar": {
     "النظام": [
+      "تم تحديث تصحيح أمان الأندرويد إلى سبتمبر 2021 لزيادة أمان النظام.",
       "تم تحديث تصحيح أمان الأندرويد إلى سبتمبر 2021 لزيادة أمان النظام."
+    ],
+    "الإعدادات": [
+      "الإصلاح: مشاكل واجهة المستخدم أثناء إضافة شبكات Wi-Fi للشركات",
+      "الإصلاح: مشكلة عدم مزامنة بعض الحسابات",
+      "الإصلاح: تعطل النظام عند تحديد الخريطة الافتراضية"
     ],
     "شاشة القفل": [
       "الجديد: خيارات جديدة لبصمات الأصابع",
@@ -993,7 +1167,7 @@
       "الإصلاح: مشكلة تغير الشاشة إلى اللون الأسود وقفل شاشة الجهاز واستبدال خلفية شاشة القفل بخلفية الشاشة الرئيسية بعد استخدام إلغاء القفل ببصمة الإصبع",
       "الإصلاح: مشاكل مع ميزة الاهتزاز لإلغاء القفل ببصمة الإصبع",
       "الإصلاح: مشكلة استخدام بصمة الإصبع في بعض التطبيقات يؤدي إلى قفل الشاشة",
-      "الإصلاح: مشكلة توقف ميزة ^رفع الجهاز لإيقاظه^ بشكل غير متوقع في بعض الحالات",
+      "الإصلاح: مشكلة توقف ميزة \"رفع الجهاز لإيقاظه\" بشكل غير متوقع في بعض الحالات",
       "الإصلاح: مشكلة عدم ظهور أيقونة بصمة الإصبع بعد فتح قفل الشاشة",
       "الإصلاح: مشكلة عدم ظهور أيقونة بصمة الإصبع بعد فتح قفل الشاشة",
       "الإصلاح: مشكلة ظهور شاشة القفل بشكل شفاف عند استخدام إلغاء القفل ببصمة الإصبع",
@@ -1019,7 +1193,7 @@
       "الإصلاح: مشاكل في ظهور الإشعارات الجماعية",
       "الإصلاح: مشكلة عرض أيقونات شريط الحالة بدقة مختلفة",
       "الإصلاح: مشكلة عدم ظهور عناصر تحكم مشغل الموسيقى في مركز الإشعارات",
-      "الإصلاح: مشكلة عدم عرض الإشعارات بشكل صحيح عند استخدام ميزة ^رفع الجهاز لإيقاظه^",
+      "الإصلاح: مشكلة عدم عرض الإشعارات بشكل صحيح عند استخدام ميزة \"رفع الجهاز لإيقاظه\"",
       "الإصلاح: مشكلة عدم عرض الأزرار بشكل صحيح في الإشعارات عند تشغيل الوضع الداكن"
     ],
     "السمات": [
@@ -1040,7 +1214,13 @@
   },
   "logs_in": {
     "सिस्टम": [
+      "Android सुरक्षा पैच को सितंबर 2021 से अपडेट किया गया. सिस्टम की सुरक्षा बढ़ा दी गई है.",
       "Android सुरक्षा पैच को सितंबर 2021 से अपडेट किया गया. सिस्टम की सुरक्षा बढ़ा दी गई है."
+    ],
+    "सेटिंग्स": [
+      "ठीक करें कॉर्पोरेट वाई-फ़ाई नेटवर्क जोड़ते समय दिखाई देने वाली UI समस्याएं",
+      "ठीक करें कुछ खाते सिंक नहीं किए जा सके",
+      "ठीक करें डिफ़ॉल्ट मैप को चुने जाने पर क्रैश हो रहे थे"
     ],
     "लॉक स्क्रीन": [
       "नया फिंगरप्रिंट के नए विकल्प",
@@ -1052,7 +1232,7 @@
       "ठीक करें फ़िंगरप्रिंट अनलॉक का उपयोग करने के बाद स्क्रीन काली पड़ रही थी, डिवाइस लॉक हो रहा था, और लॉक स्क्रीन वॉलपेपर की जगह होम स्क्रीन वॉलपेपर दिख रहा था",
       "ठीक करें फिंगरप्रिंट अनलॉक वाइब्रेशन से जुड़ी समस्याएं",
       "ठीक करें कुछ ऐप्स में फ़िंगरप्रिंट का उपयोग करने से डिवाइस लॉक हो जा रहा था",
-      "ठीक करें कुछ मामलों में ^जगाने के लिए उठाएं^ अचानक बंद हो जा रहा था",
+      "ठीक करें कुछ मामलों में \"जगाने के लिए उठाएं\" अचानक बंद हो जा रहा था",
       "ठीक करें डिवाइस के अनलॉक होने के बाद फ़िंगरप्रिंट आइकन गायब नहीं हो रहा था",
       "ठीक करें डिवाइस के अनलॉक होने के बाद फ़िंगरप्रिंट आइकन गायब नहीं हो रहा था",
       "ठीक करें कुछ मामलों में फ़िंगरप्रिंट अनलॉक का उपयोग करने के बाद लॉक स्क्रीन पारदर्शी हो जा रही थी",
@@ -1078,7 +1258,7 @@
       "ठीक करें समूहमें रखी गई सूचनाएं दिखाए जाने से जुड़ी समस्याएं",
       "ठीक करें विभिन्न रिज़ॉल्यूशन में स्टेटस बार आइकन दिखाना",
       "ठीक करें सूचना शेड में खिलाड़ी के नियंत्रण हमेशा नहीं दिखाई दे रहे थे",
-      "ठीक करें ^जगाने के लिए उठाएं^ का उपयोग किए जाने पर सूचनाएं सही ढंग से नहीं दिख रहीं थीं",
+      "ठीक करें \"जगाने के लिए उठाएं\" का उपयोग किए जाने पर सूचनाएं सही ढंग से नहीं दिख रहीं थीं",
       "ठीक करें डार्क मोड चालू होने पर सूचनाओं पर बटन हमेशा सही ढंग से नहीं दिखाई दे रहे थे"
     ],
     "थीम्स": [
@@ -1095,6 +1275,70 @@
       "ठीक करें कुछ मामलों में वॉलपेपर सेवाएं क्रैश हो रहे थे",
       "ठीक करें कुछ वॉलपेपर प्रीव्यू सही ढंग से नहीं दिखाई दे रहे थे",
       "ठीक करें फ़िंगरप्रिंट अनलॉक का उपयोग किए जाते समय स्क्रीन फ़्लैश हो रही थी"
+    ]
+  },
+  "logs_ug": {
+    "تەڭشەك": [
+      "Fix: UI issues that appeared while adding corporate Wi-Fi networks",
+      "Fix: Some accounts couldn't be synced",
+      "Fix: Crashes occurred when the default map was selected"
+    ],
+    "سىستېما": [
+      "Updated Android Security Patch to September 2021. Increased system security."
+    ],
+    "Lock screen": [
+      "New: New fingerprint options",
+      "Optimization: App vault memory usage when device is locked",
+      "Fix: Fingerprint unlock animation kept playing after the device was unlocked",
+      "Fix: Issues in the Settings deactivated Fingerprint unlock in some cases",
+      "Fix: Fingerprint unlock animation led to crashes",
+      "Fix: Fingerprint icon didn't appear or was displayed incorrectly when the screen was turned off in landscape mode",
+      "Fix: The screen went black, device was locked, and Lock screen wallpaper was replaced with Home screen wallpaper after Fingerprint unlock was used",
+      "Fix: Issues with Fingerprint unlock vibration",
+      "Fix: Using fingerprints in some apps locked the device",
+      "Fix: \"Raise to wake\" turned off unexpectedly in some cases",
+      "Fix: Fingerprint icon didn't disappear after the device was unlocked",
+      "Fix: Fingerprint icon didn't disappear after the device was unlocked",
+      "Fix: Lock screen went transparent after Fingerprint unlock was used in some cases",
+      "Fix: Issues with the Lock screen clock when third party themes and super wallpapers were used",
+      "Fix: Memory usage issues when charging animation was displayed",
+      "Fix: Wallpapers flashed when Fingerprint unlock was being used which didn't allow to unlock the device",
+      "Fix: Device was locked again after successful Fingerprint unlock attempts",
+      "Fix: Using Face unlock and Fingerprint unlock simultaneously led to crashes in some cases",
+      "Fix: Lock screen notifications disappeared after an ended call",
+      "Fix: Lock screen items weren't displayed when super wallpapers and themes were combined"
+    ]
+  },
+  "logs_bo": {
+    "Settings": [
+      "Fix: UI issues that appeared while adding corporate Wi-Fi networks",
+      "Fix: Some accounts couldn't be synced",
+      "Fix: Crashes occurred when the default map was selected"
+    ],
+    "རིམ་ལུགས": [
+      "Updated Android Security Patch to September 2021. Increased system security."
+    ],
+    "Lock screen": [
+      "New: New fingerprint options",
+      "Optimization: App vault memory usage when device is locked",
+      "Fix: Fingerprint unlock animation kept playing after the device was unlocked",
+      "Fix: Issues in the Settings deactivated Fingerprint unlock in some cases",
+      "Fix: Fingerprint unlock animation led to crashes",
+      "Fix: Fingerprint icon didn't appear or was displayed incorrectly when the screen was turned off in landscape mode",
+      "Fix: The screen went black, device was locked, and Lock screen wallpaper was replaced with Home screen wallpaper after Fingerprint unlock was used",
+      "Fix: Issues with Fingerprint unlock vibration",
+      "Fix: Using fingerprints in some apps locked the device",
+      "Fix: \"Raise to wake\" turned off unexpectedly in some cases",
+      "Fix: Fingerprint icon didn't disappear after the device was unlocked",
+      "Fix: Fingerprint icon didn't disappear after the device was unlocked",
+      "Fix: Lock screen went transparent after Fingerprint unlock was used in some cases",
+      "Fix: Issues with the Lock screen clock when third party themes and super wallpapers were used",
+      "Fix: Memory usage issues when charging animation was displayed",
+      "Fix: Wallpapers flashed when Fingerprint unlock was being used which didn't allow to unlock the device",
+      "Fix: Device was locked again after successful Fingerprint unlock attempts",
+      "Fix: Using Face unlock and Fingerprint unlock simultaneously led to crashes in some cases",
+      "Fix: Lock screen notifications disappeared after an ended call",
+      "Fix: Lock screen items weren't displayed when super wallpapers and themes were combined"
     ]
   }
 }

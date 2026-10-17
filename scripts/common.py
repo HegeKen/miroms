@@ -18,6 +18,15 @@ from miroms.recorder import DataRecorder
 from miroms.network import NetworkClient
 from miroms.changelog import ChangelogManager
 from miroms.logs_store import LogStore
+from miroms.logs_text import LogText
+from miroms.logs_maintenance import LogMaintenance
+from miroms.logs_proofread import LogProofreader
+from miroms.logs_lang_fix import LogLangFixer
+from miroms.logs_fill import LogFiller
+from miroms.logs_clean import LogPrefixCleaner
+from miroms.logs_restore import LogEscapeRestorer
+from miroms.logs_mixed import MixedTranslationFixer
+from miroms.deepseek import DeepSeekClient, DeepSeekError
 from miroms.validator import DataValidator
 from miroms.exporters import (exportV1, exportV2, exportV3, export_series_index, export_statistics,
 	export_dev, load_series_data)

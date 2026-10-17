@@ -8,14 +8,29 @@
       "修复 下拉通知栏后滑动页面偶现时间显示区域的异常抖动",
       "修复 悬浮通知圆角缺失的异常",
       "修复 三方主题下收到悬浮通知时，偶现背景异常的问题"
+    ],
+    "系统": [
+      "更新谷歌安全补丁（2021#09），提升系统安全性"
     ]
   },
   "logs_en": {
+    "status bar, Notification shade": [
+      "Fix: Floating notifications flashed when Second space was used",
+      "Fix: The clock wasn't always displayed correctly in the Notification shade",
+      "Fix: Notification badges didn't always appear",
+      "Fix: Backgrounds weren't displayed correctly when notifications arrived and third party themes were used"
+    ],
     "System": [
       "Updated Android Security Patch to September 2021. Increased system security."
     ]
   },
   "logs_zh_tw": {
+    "狀態欄、通知欄": [
+      "修復: 分身空間導致的懸浮通知異常閃爍問題",
+      "修復: 下拉通知欄後滑動頁面偶現時間顯示區域的異常抖動",
+      "修復: 懸浮通知圓角缺失的異常",
+      "修復: 第三方主題下收到懸浮通知時，偶現背景異常的問題"
+    ],
     "系統": [
       "更新Android安全性修補程式等級（2021#09），提升系統安全性"
     ]
@@ -26,11 +41,23 @@
     ]
   },
   "logs_ko": {
+    "상태 바, 알림 바": [
+      "수정: 보조 공간 사용 시 플로팅 창이 점멸하는 문제",
+      "수정: 알림 바의 시계가 제대로 표시되지 않는 문제",
+      "수정: 알림 배지가 표시되지 않는 문제",
+      "수정: 타사 테마 사용 중에 알림 수신 시 배경이 제대로 표시되지 않는 문제"
+    ],
     "시스템": [
       "Android 보안패치 (2021#09) 업데이트됨. 시스템 보안이 향상되었습니다."
     ]
   },
   "logs_ru": {
+    "строка состояния, шторка уведомлений": [
+      "Исправлено: При использовании второго пространства всплывающие уведомления могли мерцать",
+      "Исправлено: Часы в шторке уведомлений могли отображаться неправильно",
+      "Исправлено: В некоторых случаях могли не появляться метки уведомлений",
+      "Исправлено: Фон отображался неправильно при получении уведомлений и использовании сторонних тем"
+    ],
     "Система": [
       "Обновление системы безопасности Android (сентябрь 2021 года). Улучшена безопасность системы."
     ]
@@ -41,36 +68,89 @@
     ]
   },
   "logs_pl": {
+    "pasek powiadomień,panel powiadomień": [
+      "Naprawiono: Pływające powiadomienia migały podczas używania Drugiej przestrzeni",
+      "Naprawiono: Zegar nie zawsze był wyświetlany poprawnie w Panelu powiadomień",
+      "Naprawiono: Symbole powiadomień nie zawsze się pojawiały",
+      "Naprawiono: Gdy używano motywów firm zewnętrznych, tło nie było wyświetlane poprawnie podczas otrzymywania powiadomień"
+    ],
     "System": [
       "Zaktualizowano Pakiet Bezpieczeństwa Android do września 2021 r. Zwiększono bezpieczeństwo systemu."
     ]
   },
+  "logs_de": {
+    "Statusleiste, Benachrichtigungsfeld": [
+      "Behebung: Schwebende Benachrichtigungen blinkten bei Verwendung des Zweiten Bereichs",
+      "Behoben: Die Uhr wurde in den Benachrichtigungen nicht immer korrekt angezeigt",
+      "Behebung: Benachrichtigungs-Badges wurden nicht immer angezeigt",
+      "Behebung: Hintergründe wurden bei eingehenden Benachrichtigungen mit Drittanbieter-Themes nicht korrekt angezeigt"
+    ],
+    "System": [
+      "Android-Sicherheitspatch auf September 2021 aktualisiert. Systemsicherheit erhöht."
+    ]
+  },
   "logs_fr": {
+    "Barre d'état, Panneau de notification": [
+      "Réparé: Les notifications flottantes ont clignoté lorsque le deuxième espace a été utilisé",
+      "Réparé: La monte ne s'affichait pas toujours correctement dans le Panneau de notification",
+      "Réparé: Les badges de notification n'apparaissaient pas toujours",
+      "Réparé: Les arrière-plans ne s'affichaient pas correctement lorsque les notifications arrivaient et que des thèmes tiers étaient utilisés"
+    ],
     "Système": [
       "Patch de Sécurité Android mis à jour pour septembre 2021. Amélioration du système de sécurité."
     ]
   },
   "logs_it": {
+    "barra di stato, area delle notifiche": [
+      "Risolto: Le notifiche a comparsa lampeggiavano durante l'utilizzo di Secondo spazio",
+      "Risolto: L'orologio non veniva sempre visualizzato correttamente nell'area delle notifiche",
+      "Risolto: I badge di notifica non apparivano sempre",
+      "Risolto: Gli sfondi non venivano visualizzati correttamente durante la ricezione di notifiche e l'utilizzo di temi di terze parti"
+    ],
     "Sistema": [
       "Patch di sicurezza Android aggiornata a settembre 2021. Maggiore sicurezza del sistema."
     ]
   },
   "logs_es": {
+    "barra de estado, barra de notificaciones": [
+      "Reparado: Las notificaciones flotantes parpadeaban cuando se usaba el Segundo espacio",
+      "Reparado: El reloj no siempre se mostraba correctamente en la Barra de notificaciones",
+      "Reparado: Los iconos de notificaciones no siempre aparecían",
+      "Reparado: Los fondos no se mostraban correctamente cuando llegaban las notificaciones y se usaban temas de terceros"
+    ],
     "Sistema": [
       "Parche de seguridad de Android actualizado a septiembre de 2021. Seguridad del sistema incrementada."
     ]
   },
   "logs_pt": {
+    "Barra de status e Área de notificações": [
+      "Correção: As notificações flutuantes piscavam quando o Segundo Espaço era usado",
+      "Correção: O relógio não era sempre exibido corretamente na Área de notificações",
+      "Correção: Emblemas de notificação não desapareciam em alguns casos",
+      "Correção: Os fundos não eram exibidos corretamente ao receber notificações em temas de terceiros"
+    ],
     "Sistema": [
       "Patch de Segurança do Android atualizado para Setembro de 2021. Segurança do sistema aprimorada."
     ]
   },
   "logs_tr": {
+    "durum çubuğu, Bildirim çubuğu": [
+      "Onarım: İkinci alan kullanıldığında kayan bildirimler yanıp söndü",
+      "Onarım: Saat, Bildirim Çubuğu'nda her zaman düzgün bir şekilde görüntülenmedi",
+      "Onarım: Bildirim rozetleri her zaman görünmedi",
+      "Onarım: Bildirimler alındığında ve üçüncü taraf temaları kullanıldığında arka planlar düzgün bir şekilde görüntülenmedi"
+    ],
     "Sistem": [
-      "Android Güvenlik Patch^i Eylül 2021^de güncellendi. Sistem güvenliği arttırıldı."
+      "Android Güvenlik Patch'i Eylül 2021'de güncellendi. Sistem güvenliği arttırıldı."
     ]
   },
   "logs_id": {
+    "bar status, layar notifikasi": [
+      "Perbaikan: Notifikasi mengambang muncul saat Ruang kedua digunakan",
+      "Perbaikan: Jam tidak selalu ditampilkan dengan benar di Layar notifikasi",
+      "Perbaikan: Lencana notifikasi tidak selalu muncul",
+      "Perbaikan: Latar belakang tidak ditampilkan dengan benar saat notifikasi tiba dan tema pihak ketiga digunakan"
+    ],
     "Sistem": [
       "Patch Keamanan Android diperbarui (September 2021). Keamanan sistem ditingkatkan."
     ]
@@ -86,13 +166,47 @@
     ]
   },
   "logs_ar": {
+    "وشريط الإشعارات، ومركز الإشعارات": [
+      "الإصلاح: مشكلة وميض الإشعارات المنبثقة عند استخدام الواجهة الثانية",
+      "الإصلاح: مشكلة عدم ظهور الساعة بشكل صحيح دائما في مركز الإشعارات",
+      "الإصلاح: عدم ظهور شارات الإشعارات دائما",
+      "الإصلاح: عدم عرض الخلفيات بشكل صحيح عند تلقي الإشعارات واستخدام ثيمات جهات خارجية"
+    ],
     "النظام": [
       "تم تحديث تصحيح أمان الأندرويد إلى سبتمبر 2021 لزيادة أمان النظام."
     ]
   },
   "logs_in": {
+    "स्टेटस बार, सूचना शेड": [
+      "ठीक करें दूसरे स्थान का इस्तेमाल किए जाने पर फ़्लोटिंग सूचनाएं फ़्लैश हो रही थी",
+      "ठीक करें सूचना शेड में घड़ी हमेशा सही ढंग से नहीं दिखाई दे रही थी",
+      "ठीक करें सूचना बैज हमेशा दिखाई नहीं देते थे",
+      "ठीक करें सूचनाएं आने और तृतीय पक्ष के थीम्स का उपयोग किए जाने पर बैकग्राउंड ठीक से नहीं दिख रहे थे"
+    ],
     "सिस्टम": [
       "Android सुरक्षा पैच को सितंबर 2021 से अपडेट किया गया. सिस्टम की सुरक्षा बढ़ा दी गई है."
+    ]
+  },
+  "logs_ug": {
+    "Status bar, Notification shade": [
+      "Fix: Floating notifications flashed when Second space was used",
+      "Fix: The clock wasn't always displayed correctly in the Notification shade",
+      "Fix: Notification badges didn't always appear",
+      "Fix: Backgrounds weren't displayed correctly when notifications arrived and third party themes were used"
+    ],
+    "سىستېما": [
+      "Updated Android Security Patch to September 2021. Increased system security."
+    ]
+  },
+  "logs_bo": {
+    "Status bar, Notification shade": [
+      "Fix: Floating notifications flashed when Second space was used",
+      "Fix: The clock wasn't always displayed correctly in the Notification shade",
+      "Fix: Notification badges didn't always appear",
+      "Fix: Backgrounds weren't displayed correctly when notifications arrived and third party themes were used"
+    ],
+    "རིམ་ལུགས": [
+      "Updated Android Security Patch to September 2021. Increased system security."
     ]
   }
 }

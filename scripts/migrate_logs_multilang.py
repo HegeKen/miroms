@@ -266,7 +266,7 @@ def fix_auto_increment(dry_run: bool = False) -> int:
 
 def verify(limit: int, idmap: dict) -> int:
 	"""抽查新 roms.logs 解出的中英文日志是否与旧列一致"""
-	LogStore._groups = None
+	LogStore.refresh_cache()
 	has_zh = column_exists('roms', 'logs_zh')
 	select = "SELECT `id`, `logs`, `logs_zh`, `logs_en` FROM `roms`" if has_zh else \
 		"SELECT `id`, `logs`, NULL, NULL FROM `roms`"

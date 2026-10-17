@@ -1,12 +1,15 @@
 {
   "logs_zh": {
     "系统": [
+      "更新谷歌安全补丁（2019#6），提升系统安全性",
       "更新谷歌安全补丁（2019#6），提升系统安全性"
     ],
     "联系人": [
+      "修复 SIM联系人无法删除问题",
       "修复 SIM联系人无法删除问题"
     ],
     "锁屏、状态栏、通知栏": [
+      "修复 重启未解锁前，来彩信不显示通知问题",
       "修复 重启未解锁前，来彩信不显示通知问题"
     ],
     "小米云服务": [
@@ -15,13 +18,16 @@
   },
   "logs_en": {
     "System": [
+      "Updated Android Security Patch to June 2019. Increased system security.",
       "Updated Android Security Patch to June 2019. Increased system security."
     ],
     "Contacts": [
-      "Fix: Contacts couldn^t be deleted from SIM cards in some cases"
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases"
     ],
     "Lockscreen, status bar, Notification shade": [
-      "Fix: Notifications about incoming MMS weren^t displayed before device was unlocked after a reboot"
+      "Fix: Notifications about incoming MMS weren't displayed before device was unlocked after a reboot",
+      "Fix: Notifications about incoming MMS weren't displayed before device was unlocked after a reboot"
     ],
     "Mi Cloud": [
       "Optimization: Improved sync across multiple devices"
@@ -29,57 +35,271 @@
   },
   "logs_zh_tw": {
     "系統": [
+      "更新Android安全性修補程式等級(2019#6)，提升系統安全性",
       "更新Android安全性修補程式等級(2019#6)，提升系統安全性"
     ],
     "聯絡人": [
+      "修復 SIM聯絡人無法刪除的問題",
       "修復 SIM聯絡人無法刪除的問題"
     ],
     "解鎖畫面、狀態欄、通知欄": [
+      "修復 重啟未解鎖前，來MMS不顯示通知問題",
       "修復 重啟未解鎖前，來MMS不顯示通知問題"
+    ],
+    "小米雲服務": [
+      "優化 多裝置之間數據同步即時性"
+    ]
+  },
+  "logs_ja": {
+    "システム": [
+      "Androidセキュリティパッチを2019年6月に更新しました。システムの安全性が向上しました。",
+      "Androidセキュリティパッチを2019年6月に更新しました。システムの安全性が向上しました。"
+    ],
+    "連絡先": [
+      "修正: SIMカードの連絡先を削除できない場合がある問題",
+      "修正: SIMカードの連絡先を削除できない場合がある問題"
+    ],
+    "Xiaomi クラウドサービス": [
+      "最適化: 複数デバイス間のデータ同期を改善"
+    ]
+  },
+  "logs_ko": {
+    "시스템": [
+      "Android 보안 패치를 2019년 6월로 업데이트했습니다. 시스템 보안이 강화되었습니다.",
+      "Android 보안 패치를 2019년 6월로 업데이트했습니다. 시스템 보안이 강화되었습니다."
+    ],
+    "연락처": [
+      "수정: 일부 상황에서 SIM 카드의 연락처를 삭제할 수 없는 문제",
+      "수정: 일부 상황에서 SIM 카드의 연락처를 삭제할 수 없는 문제"
+    ],
+    "Xiaomi 클라우드 서비스": [
+      "최적화: 여러 기기 간 데이터 동기화 개선"
     ]
   },
   "logs_ru": {
     "Система": [
+      "Обновление системы безопасности Android (июнь 2019 года). Улучшена безопасность системы.",
       "Обновление системы безопасности Android (июнь 2019 года). Улучшена безопасность системы."
     ],
     "Контакты": [
+      "Исправлено: В некоторых случаях контакты не могли быть удалены с SIM-карты",
       "Исправлено: В некоторых случаях контакты не могли быть удалены с SIM-карты"
     ],
     "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Исправлено: После перезагрузки устройства уведомления о входящих MMS не отображались до разблокировки устройства",
       "Исправлено: После перезагрузки устройства уведомления о входящих MMS не отображались до разблокировки устройства"
+    ],
+    "Облачный сервис Xiaomi": [
+      "Оптимизация: Улучшена синхронизация данных между несколькими  устройствами"
+    ]
+  },
+  "logs_uk": {
+    "Система": [
+      "Оновлено патч безпеки Android до червня 2019 року. Підвищено безпеку системи.",
+      "Оновлено патч безпеки Android до червня 2019 року. Підвищено безпеку системи."
+    ],
+    "Контакти": [
+      "Виправлено: У деяких випадках контакти не вдавалося видалити з SIM-картки",
+      "Виправлено: У деяких випадках контакти не вдавалося видалити з SIM-картки"
+    ],
+    "Хмарний сервіс Xiaomi": [
+      "Оптимізація: Покращено синхронізацію даних між кількома пристроями"
+    ]
+  },
+  "logs_pl": {
+    "System": [
+      "Zaktualizowano poprawkę zabezpieczeń Androida do czerwca 2019 r. Zwiększono bezpieczeństwo systemu.",
+      "Zaktualizowano poprawkę zabezpieczeń Androida do czerwca 2019 r. Zwiększono bezpieczeństwo systemu."
+    ],
+    "Kontakty": [
+      "Poprawiono: W niektórych przypadkach nie można było usunąć kontaktów z karty SIM",
+      "Poprawiono: W niektórych przypadkach nie można było usunąć kontaktów z karty SIM"
+    ],
+    "Usługa w chmurze Xiaomi": [
+      "Optymalizacja: Poprawiono synchronizację między wieloma urządzeniami"
+    ]
+  },
+  "logs_de": {
+    "System": [
+      "Android-Sicherheitspatch auf Juni 2019 aktualisiert. Systemsicherheit verbessert.",
+      "Android-Sicherheitspatch auf Juni 2019 aktualisiert. Systemsicherheit verbessert."
+    ],
+    "Kontakte": [
+      "Behoben: Kontakte konnten in manchen Fällen nicht von SIM-Karten gelöscht werden",
+      "Behoben: Kontakte konnten in manchen Fällen nicht von SIM-Karten gelöscht werden"
+    ],
+    "Xiaomi Cloud-Dienst": [
+      "Optimierung: Verbesserte Synchronisierung zwischen mehreren Geräten"
+    ]
+  },
+  "logs_fr": {
+    "Système": [
+      "Correctif de sécurité Android mis à jour à juin 2019. Sécurité du système renforcée.",
+      "Correctif de sécurité Android mis à jour à juin 2019. Sécurité du système renforcée."
+    ],
+    "Contacts": [
+      "Réparé Les contacts ne pouvaient pas être supprimés des cartes SIM dans certains cas",
+      "Réparé Les contacts ne pouvaient pas être supprimés des cartes SIM dans certains cas"
+    ],
+    "Service cloud Xiaomi": [
+      "Optimisation Amélioration de la synchronisation sur plusieurs appareils"
     ]
   },
   "logs_it": {
     "Sistema": [
+      "Aggiornamento della patch di sicurezza Android a giugno 2019. Maggiore sicurezza del sistema.",
       "Aggiornamento della patch di sicurezza Android a giugno 2019. Maggiore sicurezza del sistema."
     ],
     "Contatti": [
+      "Risolto: In alcuni casi, i contatti non potevano essere eliminati dalle schede SIM",
       "Risolto: In alcuni casi, i contatti non potevano essere eliminati dalle schede SIM"
     ],
     "Schermata di blocco, barra di stato, area delle notifiche": [
+      "Risolto: Le notifiche sugli MMS in entrata non venivano visualizzate prima che il dispositivo fosse sbloccato dopo un riavvio",
       "Risolto: Le notifiche sugli MMS in entrata non venivano visualizzate prima che il dispositivo fosse sbloccato dopo un riavvio"
+    ],
+    "Servizio cloud Xiaomi": [
+      "Ottimizzazione: Sincronizzazione migliorata su più dispositivi"
     ]
   },
   "logs_es": {
     "Sistema": [
-      "Parche de seguridad de Android actualizado a Junio de 2019. Seguridad del sistema incrementada."
+      "Parche de seguridad de Android actualizado a junio de 2019. Seguridad del sistema incrementada.",
+      "Parche de seguridad de Android actualizado a junio de 2019. Seguridad del sistema incrementada."
     ],
     "Contactos": [
+      "Reparado: Los contactos no podían ser eliminados de las tarjetas SIM en algunos casos",
       "Reparado: Los contactos no podían ser eliminados de las tarjetas SIM en algunos casos"
     ],
     "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Reparado: Las notificaciones acerca de MMS entrantes no eran mostrados antes de desbloquear el dispositivo después de un reinicio",
       "Reparado: Las notificaciones acerca de MMS entrantes no eran mostrados antes de desbloquear el dispositivo después de un reinicio"
+    ],
+    "Servicio en la nube de Xiaomi": [
+      "Optimización: Sincronización entre múltiples dispositivos mejorada"
+    ]
+  },
+  "logs_pt": {
+    "Sistema": [
+      "Patch de segurança do Android atualizado para junho de 2019. Segurança do sistema aprimorada.",
+      "Patch de segurança do Android atualizado para junho de 2019. Segurança do sistema aprimorada."
+    ],
+    "Contatos": [
+      "Correção Contatos não podiam ser excluídos de cartões SIM em alguns casos",
+      "Correção Contatos não podiam ser excluídos de cartões SIM em alguns casos"
+    ],
+    "Serviço de nuvem Xiaomi": [
+      "Otimização Sincronização otimizada entre vários dispositivos"
     ]
   },
   "logs_tr": {
     "Sistem": [
+      "Android Güvenlik Yaması Haziran 2019 sürümüne güncellendi. Sistem güvenliği artırıldı.",
       "Android Güvenlik Yaması Haziran 2019 sürümüne güncellendi. Sistem güvenliği artırıldı."
     ],
     "Kişiler": [
+      "Onarım: Kişilerin bazı durumlarda silinememesi sorunu giderildi",
       "Onarım: Kişilerin bazı durumlarda silinememesi sorunu giderildi"
     ],
     "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Onarım: Gelen MMS bildirimlerinin cihazın yeniden başlatılmasından sonraki görüntülenmeme sorunu giderildi",
       "Onarım: Gelen MMS bildirimlerinin cihazın yeniden başlatılmasından sonraki görüntülenmeme sorunu giderildi"
+    ],
+    "Xiaomi Bulut Hizmeti": [
+      "Optimizasyon: Birkaç cihaz arasında geliştirilmiş senkronizasyon"
+    ]
+  },
+  "logs_id": {
+    "Sistem": [
+      "Patch keamanan Android diperbarui ke Juni 2019. Keamanan sistem ditingkatkan.",
+      "Patch keamanan Android diperbarui ke Juni 2019. Keamanan sistem ditingkatkan."
+    ],
+    "Kontak": [
+      "Perbaikan Kontak tidak dapat dihapus dari kartu SIM di beberapa kasus",
+      "Perbaikan Kontak tidak dapat dihapus dari kartu SIM di beberapa kasus"
+    ],
+    "Layanan Cloud Xiaomi": [
+      "Pengoptimalan Sinkronisasi ditingkatkan di beberapa perangkat"
+    ]
+  },
+  "logs_vi": {
+    "Hệ thống": [
+      "Đã cập nhật bản vá bảo mật Android đến tháng 6 năm 2019. Tăng cường bảo mật hệ thống.",
+      "Đã cập nhật bản vá bảo mật Android đến tháng 6 năm 2019. Tăng cường bảo mật hệ thống."
+    ],
+    "Danh bạ": [
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases"
+    ],
+    "Dịch vụ đám mây Xiaomi": [
+      "Tối ưu hóa: Cải thiện đồng bộ hóa giữa nhiều thiết bị"
+    ]
+  },
+  "logs_th": {
+    "ระบบ": [
+      "อัปเดตแพตช์ความปลอดภัย Android เป็นเดือนมิถุนายน 2019 เพิ่มความปลอดภัยของระบบ",
+      "อัปเดตแพตช์ความปลอดภัย Android เป็นเดือนมิถุนายน 2019 เพิ่มความปลอดภัยของระบบ"
+    ],
+    "รายชื่อ": [
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases"
+    ],
+    "บริการคลาวด์ Xiaomi": [
+      "การปรับให้เหมาะสม: ปรับปรุงการซิงค์ระหว่างอุปกรณ์หลายเครื่อง"
+    ]
+  },
+  "logs_ar": {
+    "النظام": [
+      "تم تحديث تصحيح أمان Android إلى يونيو 2019. زيادة أمان النظام.",
+      "تم تحديث تصحيح أمان Android إلى يونيو 2019. زيادة أمان النظام."
+    ],
+    "جهات الاتصال": [
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases"
+    ],
+    "خدمة Xiaomi السحابية": [
+      "التحسين: تحسين المزامنة بين أجهزة متعددة"
+    ]
+  },
+  "logs_in": {
+    "सिस्टम": [
+      "Android सुरक्षा पैच को जून 2019 में अपडेट किया गया। सिस्टम सुरक्षा बढ़ाई गई।",
+      "Android सुरक्षा पैच को जून 2019 में अपडेट किया गया। सिस्टम सुरक्षा बढ़ाई गई।"
+    ],
+    "संपर्क": [
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases"
+    ],
+    "Xiaomi क्लाउड सेवा": [
+      "अनुकूलन: कई उपकरणों के बीच सिंक में सुधार"
+    ]
+  },
+  "logs_ug": {
+    "سىستېما": [
+      "Updated Android Security Patch to June 2019. Increased system security.",
+      "Updated Android Security Patch to June 2019. Increased system security."
+    ],
+    "Contacts": [
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases"
+    ],
+    "Xiaomi بۇلۇت مۇلازىمىتى": [
+      "Optimization: Improved sync across multiple devices"
+    ]
+  },
+  "logs_bo": {
+    "མ་ལག": [
+      "Updated Android Security Patch to June 2019. Increased system security."
+    ],
+    "Contacts": [
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases"
+    ],
+    "Mi Cloud": [
+      "Optimization: Improved sync across multiple devices"
+    ],
+    "རིམ་ལུགས": [
+      "Updated Android Security Patch to June 2019. Increased system security."
     ]
   }
 }

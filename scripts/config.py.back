@@ -1,6 +1,21 @@
-deploy_url = ""
+api="https://api.cloudflare.com/client/v4/pages/webhooks/deploy_hooks/"
+ids=[
+      "", #HUB
+      "", #HyperOS.fans
+      ""] #MIUIer
 user=''
 password=''
 host=''
 port=3306
 database=''
+
+# ==================== DeepSeek（日志 AI 校对 / 补译，可选） ====================
+# 也可以不放文件里，改用环境变量 DEEPSEEK_API_KEY（优先于这里）；其余项可用
+# DEEPSEEK_BASE_URL / DEEPSEEK_MODEL 覆盖。
+deepseek_api_key = ""
+deepseek_base_url = "https://api.deepseek.com"
+deepseek_model = "deepseek-flash"
+deepseek_reasoning_effort = "low"  # low / high / max；批量校对用 low 更快
+deepseek_timeout = 60
+deepseek_ca_bundle = ""  # 可选：自定义 CA bundle；留空则自动用 certifi
+deepseek_max_calls = 200

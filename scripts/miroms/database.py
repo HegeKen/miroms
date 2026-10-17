@@ -1,6 +1,7 @@
+import contextlib
 import logging
 from pymysql import Connection
-from typing import Set, List, Tuple, Dict, Any, Optional, Union
+from typing import Iterator, Set, List, Tuple, Dict, Any, Optional, Union
 import config
 
 logger = logging.getLogger(__name__)
@@ -163,6 +164,29 @@ class DatabaseManager:
 				"""查询所有记录（参数化安全版）"""
 				result = cls.execute(sql, params=params, fetch_one=False)
 				return result if result else []
+
+		@classmethod
+		@contextlib.contextmanager
+		def transaction(cls) -> Iterator[Connection]:
+				"""把一段多条语句的操作包成一个事务（异常回滚）
+
+				连接是复用的、默认 autocommit=True，所以这里先关掉自动提交再 begin()；
+				退出时按需 commit / rollback，并把 autocommit 恢复原状。
+				适合「改 id + 重写引用」这类必须同时成功或同时失败的操作。
+				"""
+				cnx = cls._get_connection()
+				previous = cnx.get_autocommit()
+				cnx.autocommit(False)
+				try:
+						cnx.begin()
+						yield cnx
+				except Exception:
+						cnx.rollback()
+						raise
+				else:
+						cnx.commit()
+				finally:
+						cnx.autocommit(previous)
 
 		@classmethod
 		def check_and_update(

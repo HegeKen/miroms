@@ -41,10 +41,14 @@ roms 表只保留一列 `logs`，存 ID 引用结构：
     写入：LogStore.write_logs({'logs_zh': zh_obj, 'logs_en': en_obj})   # -> roms.logs 的值
     导出：LogStore.build_localized(parsed)                              # -> {'logs_zh': {...}, 'logs_en': {...}}
 """
+import contextlib
+import fcntl
 import hashlib
 import json
 import logging
-from typing import Any, Dict, List, Optional, Sequence, Tuple
+import os
+import tempfile
+from typing import Any, Dict, Iterator, List, Optional, Sequence, Tuple
 
 from miroms.constants import CHANGELOG_LOCALES
 from miroms.database import DatabaseManager
@@ -59,7 +63,7 @@ class _RowIndex:
 	- 只有在**所有语言都不冲突**（该行对应语言为空或文本相同）时才复用同一行。
 	"""
 
-	__slots__ = ('rows', 'buckets', 'by_content', 'splits', 'conflicts')
+	__slots__ = ('rows', 'buckets', 'by_content', 'splits', 'conflicts', 'max_id')
 
 	def __init__(self) -> None:
 		self.rows: List[Dict[str, Any]] = []
@@ -67,10 +71,13 @@ class _RowIndex:
 		self.by_content: Dict[Tuple[str, str], List[int]] = {}
 		self.splits = 0
 		self.conflicts: List[Tuple[str, str, str, str, str]] = []
+		# 载入行池时的最大 id，用于发现其它进程在自己之后插入的新行
+		self.max_id = 0
 
 	def seed(self, rows: List[Dict[str, Any]]) -> None:
 		"""把数据库中已有的行灌进行池（保留 id），使写入侧与导出侧共用同一套匹配逻辑"""
 		for row in rows:
+			self.max_id = max(self.max_id, int(row['id']))
 			self.rows.append({
 				'id': int(row['id']),
 				'type': row['type'],
@@ -214,6 +221,8 @@ class LogStore:
 	_table_ensured = False
 	# 整表行池：写入侧用它做「语言不冲突即可复用」的匹配
 	_index: Optional['_RowIndex'] = None
+	# 跨进程写入锁：并发抓取脚本各自持有行池快照，若不串行化会在同一时刻各插一份相同的行
+	_LOCK_PATH = os.path.join(tempfile.gettempdir(), 'miroms_logs_write.lock')
 	# id -> {'type', 'texts'}，导出侧缓存
 	_groups: Optional[Dict[int, Dict[str, Any]]] = None
 	# 最近一次写入的冲突拆行统计
@@ -234,6 +243,9 @@ class LogStore:
 			f"  `type` varchar(8) COLLATE utf8mb4_bin NOT NULL COMMENT '日志类型：module=模块名 / log=日志条目',\n"
 			f"  `content` text COLLATE utf8mb4_bin NOT NULL COMMENT '主内容（简体中文；无中文时取英文，再取最早出现的原文）',\n"
 			f"  `content_hash` char(32) COLLATE utf8mb4_bin NOT NULL COMMENT 'content 的 MD5（hex），查专用索引（同内容可因译文冲突存在多行）',\n"
+			f"  `proofed` tinyint(1) NOT NULL DEFAULT 0 COMMENT 'AI 校对通过（内容一致）；后续校对跳过',\n"
+			f"  `complete` tinyint(1) NOT NULL DEFAULT 0 COMMENT '所有语言齐全且 proofed=1',\n"
+			f"  `lang_issues` json DEFAULT NULL COMMENT 'AI 标注：语言列文本与列语言不符的明细（JSON）',\n"
 			f"{langs}\n"
 			f"  PRIMARY KEY (`id`),\n"
 			f"  KEY `idx_type_hash` (`type`, `content_hash`)\n"
@@ -252,9 +264,13 @@ class LogStore:
 		"""主内容归一化：去掉首尾空白（接口原文常带前导空格与尾随空格，归一化后才能正确去重）"""
 		return str(content if content is not None else '').strip()
 
-	@staticmethod
-	def _hash(content: str) -> str:
-		return hashlib.md5(content.encode('utf-8')).hexdigest()
+	@classmethod
+	def hash_text(cls, content: str) -> str:
+		"""content 的 MD5（hex），写入 content_hash 时使用"""
+		return hashlib.md5(cls.normalize(content).encode('utf-8')).hexdigest()
+
+	# 旧名字保留（维护脚本曾直接调用）
+	_hash = hash_text
 
 	@classmethod
 	def signature(cls, log_type: str, content: str, texts: Dict[str, str]) -> str:
@@ -295,7 +311,7 @@ class LogStore:
 	# ==================== 写入侧 ====================
 
 	@staticmethod
-	def _primary(texts: Dict[str, str]) -> str:
+	def primary_text(texts: Dict[str, str]) -> str:
 		"""一个分组的「主内容」：优先简体中文，其次英文，最后任一语言"""
 		for column in (LogStore.ZH_COLUMN, LogStore.EN_COLUMN):
 			value = LogStore.normalize(texts.get(column))
@@ -307,8 +323,11 @@ class LogStore:
 				return value
 		return ''
 
+	# 旧名字保留
+	_primary = primary_text
+
 	@classmethod
-	def _items(cls, obj: Any) -> List[Tuple[str, List[str]]]:
+	def items_of(cls, obj: Any) -> List[Tuple[str, List[str]]]:
 		"""把一个语言结构规整为 [(模块, [条目, ...]), ...]（去掉空模块）"""
 		items: List[Tuple[str, List[str]]] = []
 		for module, lines in (obj or {}).items():
@@ -318,6 +337,9 @@ class LogStore:
 				lines = [lines]
 			items.append((str(module).strip(), [str(x) for x in lines]))
 		return items
+
+	# 旧名字保留
+	_items = items_of
 
 	@classmethod
 	def shape(cls, obj: Any) -> Tuple[int, ...]:
@@ -434,7 +456,7 @@ class LogStore:
 		return wanted - found
 
 	@classmethod
-	def _fetch_all_rows(cls) -> List[Dict[str, Any]]:
+	def fetch_rows(cls) -> List[Dict[str, Any]]:
 		"""整表载入（id / type / content / texts），作为写入侧的行池来源"""
 		columns = ', '.join(f'`{c}`' for c in cls.LANG_COLUMNS)
 		rows = DatabaseManager.query_all(
@@ -444,6 +466,9 @@ class LogStore:
 			texts = {column: row[3 + i] for i, column in enumerate(cls.LANG_COLUMNS) if row[3 + i]}
 			found.append({'id': int(row[0]), 'type': row[1], 'content': row[2], 'texts': texts})
 		return found
+
+	# 旧名字保留
+	_fetch_all_rows = fetch_rows
 
 	@classmethod
 	def load_index(cls, force: bool = False) -> '_RowIndex':
@@ -460,6 +485,37 @@ class LogStore:
 			cls._index = index
 			logger.info(f"logs 行池已载入: {len(index.rows)} 条")
 		return cls._index
+
+	@classmethod
+	@contextlib.contextmanager
+	def write_lock(cls) -> Iterator[None]:
+		"""跨进程互斥锁（flock）
+
+		多个抓取脚本会同时写 logs：各自 load_index 得到行池快照后再插入，彼此看不到对方
+		新插的行，于是同一日志被重复存成多行。这里把「载入行池 → 匹配 → 落库」整体串行化。
+		维护脚本（去重 / 压缩 id / 批量补语言）也复用它，避免与抓取脚本交错写入。
+		"""
+		with open(cls._LOCK_PATH, 'a+') as handle:
+			fcntl.flock(handle.fileno(), fcntl.LOCK_EX)
+			try:
+				yield
+			finally:
+				fcntl.flock(handle.fileno(), fcntl.LOCK_UN)
+
+	# 旧名字保留
+	_write_lock = write_lock
+
+	@classmethod
+	def _sync_index(cls) -> '_RowIndex':
+		"""取行池；若其它进程在本次载入后又插入过新行，则重新载入以参与去重"""
+		index = cls.load_index()
+		row = DatabaseManager.query_one("SELECT MAX(`id`) FROM `logs`")
+		latest = int(row[0]) if row and row[0] is not None else 0
+		if latest > index.max_id:
+			old_max = index.max_id
+			index = cls.load_index(force=True)
+			logger.info(f"检测到其它进程新增的日志行（max id {old_max} -> {latest}），行池已重新载入")
+		return index
 
 	@classmethod
 	def _insert_row(cls, row: Dict[str, Any]) -> int:
@@ -488,7 +544,7 @@ class LogStore:
 			return
 		DatabaseManager.execute(
 			"UPDATE `logs` SET " + ', '.join(f'`{c}` = COALESCE(`{c}`, %s)' for c in sets)
-			+ " WHERE `id` = %s",
+			+ ", `proofed` = 0, `complete` = 0, `lang_issues` = NULL WHERE `id` = %s",
 			params=tuple([texts[c] for c in sets] + [group_id]), raise_on_error=True,
 		)
 
@@ -500,17 +556,18 @@ class LogStore:
 		"""
 		if not rows:
 			return []
-		index = cls.load_index()
-		result: List[Optional[int]] = []
-		for row in rows:
-			row['sig'] = cls.signature(row['type'], row['content'], row['texts'])
-			found = index.resolve(row['type'], row['texts'])
-			if found is None:
-				raise RuntimeError(f"logs 行解析失败: {row['content'][:40]!r}")
-			index.rows[found]['content'] = row['content']
-			result.append(found)
-		index.flush()
-		return [int(index.rows[i]['id']) for i in result]
+		with cls._write_lock():
+			index = cls._sync_index()
+			result: List[Optional[int]] = []
+			for row in rows:
+				row['sig'] = cls.signature(row['type'], row['content'], row['texts'])
+				found = index.resolve(row['type'], row['texts'])
+				if found is None:
+					raise RuntimeError(f"logs 行解析失败: {row['content'][:40]!r}")
+				index.rows[found]['content'] = row['content']
+				result.append(found)
+			index.flush()
+			return [int(index.rows[i]['id']) for i in result]
 
 	@classmethod
 	def encode_refs(cls, refs: List[List[Any]], ids: Sequence[int]) -> str:
@@ -533,15 +590,16 @@ class LogStore:
 		这样复用了库里已有多语言分组时，能顺带拿到中英文之外的其他译文。
 		"""
 		positions = cls.compose(langs or {})
-		index = cls.load_index()
-		_, refs = cls.build_rows(positions, index)
-		if dry_run:
-			ids = [r['id'] if r.get('id') is not None else i + 1 for i, r in enumerate(index.rows)]
-			return cls._encode_refs(refs, ids, expand_mask, index.rows)
+		with cls._write_lock():
+			index = cls._sync_index()
+			_, refs = cls.build_rows(positions, index)
+			if dry_run:
+				ids = [r['id'] if r.get('id') is not None else i + 1 for i, r in enumerate(index.rows)]
+				return cls._encode_refs(refs, ids, expand_mask, index.rows)
 
-		index.flush()
-		ids = [int(r['id']) for r in index.rows]
-		return cls._encode_refs(refs, ids, expand_mask, index.rows)
+			index.flush()
+			ids = [int(r['id']) for r in index.rows]
+			return cls._encode_refs(refs, ids, expand_mask, index.rows)
 
 	@classmethod
 	def _encode_refs(cls, refs: List[List[Any]], ids: List[int], expand_mask: bool,
@@ -717,7 +775,7 @@ class LogStore:
 		if not sets:
 			return 0
 		DatabaseManager.execute(
-			f"UPDATE `logs` SET {', '.join(sets)} WHERE `id` = %s",
+			f"UPDATE `logs` SET {', '.join(sets)}, `proofed` = 0, `complete` = 0, `lang_issues` = NULL WHERE `id` = %s",
 			params=tuple(params + [group_id]), raise_on_error=True,
 		)
 		cls._groups = None

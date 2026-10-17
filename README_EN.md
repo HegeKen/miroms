@@ -56,7 +56,13 @@ the [hub.miuier.com](https://hub.miuier.com) website, the admin panel and variou
 │   ├── exporter.py                   #   main export script (v1 / v2 / v3 + site auxiliary endpoints)
 │   ├── migrate_logs_multilang.py     #   logs table rebuild + roms.logs migration
 │   ├── dedup_logs.py                 #   logs dedup audit / merge duplicate groups / prune orphan rows
-│   ├── resequence_ids.py             #   renumber roms / dev ids (remove AUTO_INCREMENT gaps)
+│   ├── maintain_logs.py              #   unified logs maintenance: audit / content / masks / ids / orphans / counter
+│   ├── proofread_logs.py             #   multilingual log proofreading: rule scan + DeepSeek review + safe writes
+│   ├── fix_lang_issues.py            #   fix wrong-language columns from logs.lang_issues / clean mask bits
+│   ├── fill_missing_logs.py         #   AI-translate missing languages on proofed rows
+│   ├── restore_log_escapes.py       #   restore legacy JSON escapes ^ / $$
+│   ├── fix_mixed_translations.py    #   two-step mixed_translations repair
+│   ├── resequence_ids.py             #   renumber roms / dev / logs ids (remove AUTO_INCREMENT gaps)
 │   ├── rebuild_roms_logs.py          #   rebuild roms.logs from the backup DB (fix dangling references)
 │   ├── import_dev_week.py            #   import dev (weekly) data into dev table
 │   ├── import_sitelog.py             #   import both sites' site logs into the sitelog table
@@ -65,9 +71,9 @@ the [hub.miuier.com](https://hub.miuier.com) website, the admin panel and variou
 │   ├── sync_devices.py               #   sync device list
 │   ├── fix_missing_tag_mappings.py   #   fix missing tag mappings
 │   ├── common.py                     #   backward-compat entry (re-exports the miroms package)
-│   ├── config.py                     #   DB connection config + deploy hook
-│   ├── push.py                       #   one-shot export → commit & push → deploy
-│   ├── deploy.py                     #   trigger Cloudflare Pages deploy
+│   ├── config.py                     #   DB connection config + deploy config (api + ids)
+│   ├── push.py                       #   one-shot export → commit & push → deploy all sites
+│   ├── deploy.py                     #   trigger Cloudflare Pages deploys for config.ids
 │   ├── *.py                          #   various fetch scripts (see "Fetch / Deploy Scripts")
 │   └── miroms/                       #   core package (constants/utils/fetch/export, etc.)
 │       ├── exporters.py              #     exportV1 / exportV2 / exportV3 / export_dev
@@ -288,8 +294,220 @@ per run and now does a lookup followed by `UPDATE`).
 ```bash
 python3 scripts/resequence_ids.py                 # report gaps in roms
 python3 scripts/resequence_ids.py --table dev     # report gaps in dev
+python3 scripts/resequence_ids.py --table logs    # report gaps in logs (renumbering rewrites references)
 python3 scripts/resequence_ids.py --apply         # renumber roms and reset the counter
+python3 scripts/resequence_ids.py --table logs --apply
 python3 scripts/resequence_ids.py --verify        # verify density only
+```
+
+`logs.id` is referenced by `roms.logs` / `dev.logs`, so it cannot be renumbered like `roms` / `dev`.
+`--table logs` uses `LogMaintenance.compact_ids`: inside a single transaction it shifts every id by
++1000000, assigns `ROW_NUMBER()`, rewrites all references from the old→new map and resets the counter.
+The whole run happens under the cross-process write lock, and the logs table plus all references are
+backed up to JSON before writing (`--no-backup` skips it).
+
+#### Log maintenance (dedup / content / masks / ids / orphans)
+
+The shared logic lives in `LogMaintenance` (`scripts/miroms/logs_maintenance.py`) and the text
+predicates in `LogText` (`scripts/miroms/logs_text.py`); the CLI only parses arguments and prints:
+
+```bash
+python3 scripts/maintain_logs.py                        # read-only audit: duplicates, dangling refs,
+                                                        # bad JSON, orphans, content mismatch,
+                                                        # stale hashes, masks, id gaps
+python3 scripts/maintain_logs.py --report /tmp/audit.json
+python3 scripts/maintain_logs.py content --apply        # rebuild content / content_hash from logs_zh
+python3 scripts/maintain_logs.py masks --apply          # new mask = old mask | common language mask
+python3 scripts/maintain_logs.py masks --clean-invalid --apply  # drop mask bits whose module text is gone
+python3 scripts/maintain_logs.py prefix --apply          # strip leading whitespace/punctuation (except `*`)
+python3 scripts/maintain_logs.py ids --apply            # compact logs ids + rewrite refs (auto backup)
+python3 scripts/maintain_logs.py unused --apply         # delete unreferenced log rows
+python3 scripts/maintain_logs.py auto-increment --apply # reset logs.AUTO_INCREMENT to MAX(id)+1
+python3 scripts/maintain_logs.py merge --groups "11040:1" --apply  # explicit group merge (rewrites refs)
+python3 scripts/maintain_logs.py snapshot --out /tmp/logs_before.json.gz
+python3 scripts/maintain_logs.py compare --before /tmp/logs_before.json.gz
+```
+
+Every action is a dry-run unless `--apply` is given. Mask filling only adds bits, so no ROM's export
+can regress; `ids` / `unused` are destructive and refresh the export cache afterwards.
+
+`merge` covers the cases the automatic dedup cannot decide: the same Chinese log, but one side's
+foreign text is only an English fallback (equal to that row's `logs_en`, e.g. `id=1` has
+`logs_de='Other'`) while the other side has a real translation (e.g. `id=11040` has
+`logs_de='Sonstiges'`). The strict rule treats the fallback as a conflict; `merge_groups` prefers the
+real translation, fills the remaining gaps with fallbacks, and rewrites references to the
+representative row.
+
+`snapshot` exports the localized logs of every `roms` / `dev` row (gzipped by default, ~80–90 MB);
+run `compare` after dedup / mask filling / id compaction to diff "added / removed texts, languages and
+module names" per row. It exits with code 1 when content is lost (a text disappears, a language
+disappears or a whole row disappears), which is the same export-regression check the earlier one-off
+scripts used, but repeatable.
+
+Pure logic (text predicates, dedup plan, reference remapping, content / mask / orphan checks) has
+unit tests that need no database:
+
+```bash
+python3 scripts/test_logs_maintenance.py
+```
+
+#### AI proofreading (DeepSeek, optional)
+
+Different language structures of one ROM are stored as a "Chinese cluster + extra language clusters".
+The earlier heuristic that filled Chinese by module name / entry count could fill the wrong name:
+`id=11036` (`Interkonnektivität`) and `id=11038` (`Datenschutz und Sicherheit`) were both labelled
+"其他", while the real "other" is `id=11040` (`Sonstiges`). This creates duplicate Chinese modules in
+one ROM and duplicated lines in the zh export. `proofread_logs.py` turns the repair into a repeatable
+pipeline (dry-run by default):
+
+```bash
+# 1) check specific logs.id (does not change content; marks proofed when verdict=ok)
+python3 scripts/proofread_logs.py check --ids 11036
+python3 scripts/proofread_logs.py check --ids 11036,11038
+python3 scripts/proofread_logs.py check --ids 3788 --no-ai          # rules only (fallbacks / swapped columns)
+python3 scripts/proofread_logs.py check --ids 2998 --json /tmp/check.json
+
+# 2) full scan → AI review → plan → write
+python3 scripts/proofread_logs.py scan --report /tmp/proofread_scan.json
+python3 scripts/proofread_logs.py review --scan /tmp/proofread_scan.json \
+        --cache /tmp/proofread_cache.json --decisions /tmp/proofread_decisions.json
+python3 scripts/proofread_logs.py apply --decisions /tmp/proofread_decisions.json --allow-clear
+python3 scripts/proofread_logs.py apply --decisions /tmp/proofread_decisions.json --allow-clear --apply
+```
+
+`check` is the single-row check (content untouched; only the proofed flag is updated): it prints `content` / `zh` / all language texts, English
+fallback columns, suspected swapped columns, the Chinese module names seen in the same ROM, then the AI
+`verdict` (ok / wrong_zh / mixed_translations / extra_module), suggested Chinese, confidence and reason.
+Add `--decisions /tmp/fix.json` to save module `wrong_zh` verdicts as a decisions file for `apply`
+(dry-run by default).
+
+Batch proofreading has three tiers; all of them **estimate only** unless `--run` is passed:
+
+```bash
+# tier 1: conflict families only (recommended first; ~0.6M tokens)
+python3 scripts/proofread_logs.py review --limit 0 --decisions /tmp/f_decisions.json
+
+# tier 2: every multilingual row, 10 rows per call (~2.5–3.0M tokens, ~400 calls)
+python3 scripts/proofread_logs.py batch-review --batch-size 10
+python3 scripts/proofread_logs.py batch-review --batch-size 10 --run
+
+# tier 3: one row per call over all rows (not recommended: 11–20M tokens, ~11k calls;
+#         includes 7,156 single-language rows that cannot be cross-checked)
+python3 scripts/proofread_logs.py batch-review --batch-size 1 --all
+python3 scripts/proofread_logs.py batch-review --batch-size 1 --all --run --allow-expensive
+```
+
+`batch-review` behaviour:
+
+- by default only rows with **≥2 languages** (3,918 rows); `--all` includes single-language rows;
+- prints rows / batches / prompt / completion / total token estimates and ETA first; without `--run`
+  nothing is sent;
+- above 8M tokens or 5,000 calls it requires `--run --allow-expensive`;
+- `--limit-rows N` to sample, `--cache` to resume, `--types module,log` to restrict;
+- results go to `--decisions` for `apply`; **log-entry Chinese is report-only** and never auto-written;
+- AI findings are persisted **after every batch** (`lang_issues` / `proofed`), so an interrupted 11k-row run keeps its progress.
+
+`proofed` flag: `review` / `batch-review` / `check` mark `proofed=1` only when `verdict=ok` **and there is
+no language mismatch**; later scans skip it. Any content change (language fill, merge, content rebuild,
+`apply` rename/clear) resets `proofed`, `complete` and `lang_issues`, so the row is re-audited.
+
+`complete`: 1 only when **all language columns are present and `proofed=1`**; reset to 0 when proofed is
+cleared, languages are changed/removed, or any language is missing. Recompute with
+`python3 scripts/maintain_logs.py complete --apply`.
+
+Language check: every AI review also checks, per non-empty language column, whether the text is really in
+that language (mapping in `LogProofreader.LANG_NAMES`). Mismatches go into `logs.lang_issues`; in addition,
+a non-English column whose value is identical to `logs_en` is annotated as an English fallback with
+confidence 0.75 (an explicit AI finding wins). Rows with `lang_issues` are never marked `proofed=1`.
+`check` prints annotations like `logs_de 实际='英文' (0.98) ...`. Use `check --force` to re-audit a marked
+row, and `--no-mark` to write nothing at all.
+
+Restore legacy escapes:
+
+```bash
+python3 scripts/restore_log_escapes.py            # preview
+python3 scripts/restore_log_escapes.py --apply    # write (backup first)
+```
+
+The old writer turned `'` / `"` into `^` and `%` into `$$`; column storage no longer needs it.
+Examples: `won^t → won't`, `l^écran → l'écran`, `^Service & feedback^ → "Service & feedback"`,
+`^^text^^ → "text"`, `5$$ → 5%`. Proofed / complete / lang_issues are kept by default.
+
+Fill missing languages on proofed rows:
+
+```bash
+python3 scripts/fill_missing_logs.py                    # list gaps + token estimate
+python3 scripts/fill_missing_logs.py --ids 23           # one row only
+python3 scripts/fill_missing_logs.py --expected owners  # only languages present in refs
+python3 scripts/fill_missing_logs.py --run              # AI preview, no writes
+python3 scripts/fill_missing_logs.py --apply            # AI translate + write (backup first)
+python3 scripts/fill_missing_logs.py --apply --keep-proofed
+
+# chunked: --offset / --limit (one process per chunk)
+python3 scripts/fill_missing_logs.py --offset 0 --limit 20 --apply --keep-proofed --max-calls 20
+```
+
+- Expected languages default to all columns; `--expected owners` limits to languages present in the
+  row's `roms` / `dev` masks;
+- Translates from `logs_zh` / `content` / `logs_en`; results below `--min-confidence` (0.8) are skipped;
+- A translation identical to the English source is rejected (avoids writing English fallback again);
+- with `--apply`, each row is written **immediately after its translation arrives**; `--atomic` writes
+  only after the whole run;
+- `proofed` is reset to 0 after filling (new text needs review); `--keep-proofed` keeps it when no
+  `lang_issues` remain;
+- Filled columns are removed from `lang_issues`, set to NULL when empty; cache supports resume.
+
+Fix language columns from the annotations:
+
+```bash
+python3 scripts/fix_lang_issues.py                       # preview every annotated row
+python3 scripts/fix_lang_issues.py --ids 1,165           # specific logs.id only
+python3 scripts/fix_lang_issues.py --apply               # replace with AI `correct` (no correct = keep)
+python3 scripts/fix_lang_issues.py --mode translate --apply # AI-translate entries without correct (writes each row immediately)
+python3 scripts/fix_lang_issues.py --mode hybrid --apply # clear only when there is no correct
+python3 scripts/fix_lang_issues.py --mode clear --apply  # explicitly NULL wrong-language cells
+python3 scripts/fix_lang_issues.py --mode move --apply   # move to an empty correct column
+python3 scripts/fix_lang_issues.py --clean-masks --apply # also drop mask bits
+```
+
+- Default `--mode correct`: replace only when the annotation has `correct` and
+  `confidence >= --min-confidence` (default 0.8); without a correct value the original text is kept
+  and the annotation remains — nothing is deleted;
+- `--mode hybrid` clears only when there is no correct value; `--mode clear` is explicit deletion;
+- `logs_zh` / `logs_en` are untouched unless `--allow-core` (replacing/clearing a core column rebuilds
+  `content` / `content_hash`);
+- fixed entries are removed from `lang_issues`; when everything is fixed the column is explicitly set to `NULL`, and `proofed` is reset to 0;
+- `--clean-masks` removes the cleared languages from `roms` / `dev` reference masks;
+- a backup is written before applying; run `maintain_logs.py snapshot` / `compare` to review export impact.
+
+- `scan`: rules only, no AI. Finds families where one ROM has several module rows with the same Chinese
+  name but conflicting real translations (English fallbacks equal to the row's `logs_en` are ignored);
+  also reports suspected swapped language columns using "translation → Chinese" co-occurrence.
+- `review`: one DeepSeek call per family; the model first returns a `verdict`:
+  `ok` / `wrong_zh` (Chinese is wrong and all real translations point to another Chinese name) /
+  `mixed_translations` (Chinese may be right, but translations of different languages belong to
+  different modules = misaligned/swapped columns) / `extra_module`. `wrong_zh` may only pick a Chinese
+  name present in that ROM; `extra_module` returns null. Prompts are cached by content hash and resumable.
+- `apply`: `rename` fixes full rows (with `logs_en` and many languages); `clear` removes Chinese from
+  narrow extra-cluster rows (no `logs_en`, ≤6 languages) and drops the zh mask bit; `mixed_translations`
+  is report-only (swapping columns needs a separate repair); low-confidence / conflicting / non-allowed
+  actions are only reported. Rows with many languages but no `logs_en` (possibly legitimate clusters) are
+  report-only even if the AI flags them: clearing such rows was measured to drop Chinese entry texts that
+  only exist in some ROMs. A backup is written before any write; then run `maintain_logs.py audit` and
+  `snapshot` / `compare`.
+
+API key (environment variable wins):
+
+```bash
+export DEEPSEEK_API_KEY=sk-...
+# or set deepseek_api_key in data/scripts/config.py (plus deepseek_base_url / deepseek_model)
+```
+
+Cost control: `review --limit N`, `--max-calls N`, `--cache`; pass `--all` to review non-priority
+families as well (by default only "narrow row / missing en" high-risk families are reviewed).
+
+```bash
+python3 scripts/test_logs_proofread.py
 ```
 
 #### Log deduplication (always verified)
@@ -300,14 +518,21 @@ existing group is reused whenever its language texts do not conflict — so the 
 the primary content differs (`#25 content=相册` vs `#27 content=Gallery`), unlike the early implementation that
 only looked rows up by `content_hash`.
 
-Three independent guards now report duplicates and fail loudly:
+The following guards report duplicates and fail loudly:
 
 | Where | What |
 | --- | --- |
 | `python3 scripts/dedup_logs.py` | Lists mergeable groups; `--apply` merges, `--prune-unused` removes orphan rows |
-| `python3 scripts/resequence_ids.py` | Renumber `roms` / `dev` ids into a dense sequence and reset their AUTO_INCREMENT counter; samples 20 s to make sure nobody is writing and dumps the old→new id map to `.backup/*_id_map_*.csv`. `logs.id` is referenced by `roms.logs` / `dev.logs`, so it is deliberately not allowed |
+| `python3 scripts/maintain_logs.py` | One-shot read-only audit: duplicate groups, dangling refs, bad JSON, orphans, content mismatch / stale hashes, extendable / invalid mask bits, id gaps |
 | `import_dev_week.py` / `migrate_logs_multilang.py` | Call `LogStore.duplicate_report()` at the end and exit non-zero when duplicates are found |
 | Admin `/logs` page → "dedup audit" | `GET /api/logs/audit`: duplicate groups, duplicate rows, unreferenced rows |
+
+The duplicate predicate is "same Chinese log text, same type, no conflicting language texts".
+`dedup_logs.py` is only the CLI for `LogMaintenance.duplicate_plan` / `apply_duplicates`, and the admin
+audit uses the same algorithm (`findDuplicateLogGroups` in `app/admin/server/utils/logs.ts`), so the
+CLI, the admin page and the Python maintenance class always agree.
+Merging unions the language texts, so `maintain_logs.py masks --apply` can afterwards add the newly
+common language bits to the masks (add-only).
 
 Rule: same type, no conflicting language text, at least one shared language text → they are the same row.
 Merging only unions texts and rewrites references; language masks stay untouched, so every ROM still exports
@@ -440,7 +665,7 @@ MySQL (InnoDB, utf8mb4); table structure and field meanings are in `db_structure
   `ctelecom` / `cmobile` / `cunicom` / `others`), changelog (`logs`, a single language-neutral ID structure
   `[[moduleId,[entryId,...],langMask],...]`), developer week (`dev_week`), security patch date (`aspatch`)
 - **`logs.sql`** — changelogs: one row per log shared by every language version (`type` module/log, `content`
-  primary text with Chinese first, `content_hash`, plus 21 `logs_xx` language columns)
+  primary text with Chinese first, `content_hash`, `proofed` (1 = AI-verified consistent; scans skip it), `complete` (all language columns present and proofed=1), `lang_issues` (JSON annotations such as `{"logs_de":{"detected":"英文","confidence":0.98}}`; rows with annotations are never proofed), plus 21 `logs_xx` language columns)
 - **`dev.sql`** — developer (weekly) releases: unique on `week` + `region` (cn / global), holding the announcement,
   upgrade notes, device/ROM lists and the language-neutral `logs` ID structure
 - **`branches.sql`** — branches: branch type, zh/en names, tag (`tag`), code suffix (`code`), version code
@@ -462,6 +687,14 @@ MySQL (InnoDB, utf8mb4); table structure and field meanings are in `db_structure
 | --- | --- |
 | `exporter.py` | Entry script: iterates `common.fullDevices`, runs `exportV1` / `exportV2` / `exportV3`, then `export_dev()` for `api/v3/dev/**` and `export_v1_extras()` / `export_v2_extras()` for the two reference sites' auxiliary endpoints (see "V1 / V2 auxiliary files") plus `export_hub_extras()` for `api/v3/sitelog.json` / `api/v3/tools.json`, then invokes `app/web/scripts/generate-index.mjs` (Node.js) to regenerate `api/v3/index.json`, `api/v3/stats.json`, `api/v3/roms/*.json` and `api/v3/releases/*.json` |
 | `migrate_logs_multilang.py` | Migrate the 21 `roms.logs_*` columns into the multilingual `logs` table plus a single language-neutral `roms.logs`; the old table is kept as `logs_legacy` |
+| `resequence_ids.py` | Renumber `roms` / `dev` / `logs` ids into a dense sequence and reset their AUTO_INCREMENT counter; roms / dev sample 20 s to make sure nobody is writing and dump the old→new id map to `.backup/*_id_map_*.csv`; `logs` goes through `LogMaintenance.compact_ids` (transactional id shift + reference rewrite) and backs the table and references up to JSON first |
+| `dedup_logs.py` | Dedup audit and merge for `logs`: merges groups that hold the same log, rewriting `roms.logs` / `dev.logs` references (masks unchanged, exports unaffected); `--apply` merges (auto backup), `--prune-unused` also removes orphan rows |
+| `maintain_logs.py` | Unified `logs` maintenance entry point: `audit` (default, read-only) / `complete` (recompute the complete flag) / `prefix` (strip leading whitespace/punctuation from content/language columns, except `*`) / `content` (rebuild content from `logs_zh`) / `masks` (fill language masks, add-only) / `ids` (compact ids + rewrite references) / `unused` (prune orphan rows) / `auto-increment` / `merge` (explicit group merge; real translations win over English fallbacks) / `snapshot` (export snapshot) / `compare` (diff snapshots, detect content loss); dry-run unless `--apply` |
+| `fix_mixed_translations.py` | Two-step `mixed_translations` repair: scan current rows or validated decisions; step 1 translates to English, finds similar rows and AI-compares them (merge on match); step 2 AI-clusters languages, creates new rows and routes refs by mask-language intersection, skipping ambiguous positions; read-only unless `--apply-merges` / `--apply-splits` |
+| `restore_log_escapes.py` | Restore legacy JSON-storage escapes: `^`→`'`/`"`, `$$`→`%`; keeps `proofed` / `complete` / `lang_issues` by default, `--reset-flags` resets them; backup before `--apply` |
+| `fill_missing_logs.py` | Find missing languages on `proofed=1` rows and AI-translate them back: estimate-only by default, `--run` preview, `--apply` writes (with backup); `--expected all\|owners`, `--langs`, `--min-confidence`; resets `proofed=0` unless `--keep-proofed` |
+| `fix_lang_issues.py` | Fix language columns from `logs.lang_issues`: default `correct` (replace with the AI `correct` translation; no correct/low confidence keeps the original); `--mode translate` AI-translates entries without `correct` and clears each fixed annotation; `--mode hybrid` clears only when no correct, `--mode clear` explicit deletion, `--mode move` to an empty correct column, `--clean-masks` drops mask bits; core columns require `--allow-core`; dry-run with backup |
+| `proofread_logs.py` | Multilingual proofreading: `check --ids` audits specific logs.id (content untouched; marks proofed when ok); `scan` finds module-name conflicts by rules; `review` asks DeepSeek which Chinese module each row really maps to (only names present in that ROM, or null = extra module); `apply` renames or clears extra-module Chinese and updates mask bits, confidence-gated; `batch-review` audits all multilingual rows in batches (estimate only unless `--run`; ok rows are marked proofed); no content changes except the proofed flag |
 | `import_dev_week.py` | Import developer (weekly) data into `dev` and backfill `roms.dev_week` (`--source hyperos\|nuxtmr\|miuiroms`, `--all`, `--weeks`, `--region`, `--dry-run`, `--backfill-roms`) |
 | `import_sitelog.py` | Import the NuxtMR / HyperOS.fans site logs (`sitelog.json`) into the `sitelog` table (`--source nuxtmr\|hyperos`, `--all`, `--root`, `--dry-run`); it updates in place by unique key, so it is idempotent and burns no AUTO_INCREMENT ids |
 | `import_hub_sitelog.py` | Derive hub's own changelogs (`hub.web` = `app/web`, `hub.admin` = `app/admin`) from git history and write them into the `sitelog` table: versions are numbered `V0.1.0`… by commit date; `--site`, `--drop-types chore,build,docs`, `--dry-run` |
@@ -469,10 +702,10 @@ MySQL (InnoDB, utf8mb4); table structure and field meanings are in `db_structure
 | `sync_devices.py` | Syncs the device list from `devices` / `roms` into `miroms/data.py` (`fullDevices`, `currentStable`, `flags`) |
 | `fix_missing_tag_mappings.py` | Fixes missing device+tag mappings in `devices` (the V3 exporter matches branches by tag; missing ones lose ROMs); prints SQL to stdout or applies it directly with `--apply` |
 | `common.py` | Backward-compat entry re-exporting the full public API of the `miroms` package, keeping module-level constants like `fullDevices`, `currentStable`, `flags` |
-| `config.py` | DB connection config (host / port / user / password / database) + Cloudflare Pages deploy hook (`deploy_url`) |
-| `push.py` | One-shot pipeline: run `exporter.py` → commit & push inside the `data` sub-repo (commit message = current datetime) → call `deploy.py` to trigger deployment |
-| `deploy.py` | Deploy only: POSTs `config.deploy_url` (Cloudflare Pages deploy hook) and prints the deploy ID |
-| `miroms/` | Core package: `constants.py` (constants, SDK versions, Android codenames, branch tables), `data.py` (device list), `database.py` (DB access), `network.py` / `crypto.py` / `firmware.py` (Xiaomi server fetch & decryption), `recorder.py` (data recording), `changelog.py` (changelogs), `sitelog_store.py` (site-log persistence), `validator.py` (validation), `exporters.py` (V1/V2/V3 exporters), `legacy_exporters.py` (site auxiliary endpoint exports for api/v1 = NuxtMR, api/v2 = HyperOS.fans, api/v3 = hub's own site endpoints), `utils.py` (helpers) |
+| `config.py` | DB connection config (host / port / user / password / database) + Cloudflare Pages deploy config (`api` base URL + `ids` list of site hooks; default: HUB / HyperOS.fans / MIUIer) + DeepSeek proofreading config (`deepseek_api_key` / `deepseek_model` / `deepseek_base_url` / `deepseek_reasoning_effort`; the key can also come from `DEEPSEEK_API_KEY`) |
+| `push.py` | One-shot pipeline: run `exporter.py` → commit & push inside the `data` sub-repo (commit message = current datetime) → call `deploy.py` to deploy every site in `config.ids` (10 s pause between sites by default); exits non-zero if any deployment fails |
+| `deploy.py` | Deploy only: POSTs `{config.api}/{id}` for each id in `config.ids` (Cloudflare Pages deploy hooks) and prints each site name, deploy ID / short_id / URL, waiting 10 s after each hook before triggering the next site (`--interval` overrides it, 0 = no wait); pass site names or hook-id prefixes to deploy a subset (e.g. `python3 scripts/deploy.py HUB`), `--list` only prints the targets; exit code 0 only if all succeed |
+| `miroms/` | Core package: `constants.py` (constants, SDK versions, Android codenames, branch tables), `data.py` (device list), `database.py` (DB access + transactions), `network.py` / `crypto.py` / `firmware.py` (Xiaomi server fetch & decryption), `recorder.py` (data recording), `changelog.py` (changelogs), `logs_store.py` (multilingual log groups), `logs_text.py` (text predicates + traditional→simplified), `logs_maintenance.py` (dedup / reference rewrite / content consistency / language masks / id compaction / audit), `logs_proofread.py` (multilingual proofreading / AI review), `deepseek.py` (DeepSeek API client), `sitelog_store.py` (site-log persistence), `validator.py` (validation), `exporters.py` (V1/V2/V3 exporters), `legacy_exporters.py` (site auxiliary endpoint exports for api/v1 = NuxtMR, api/v2 = HyperOS.fans, api/v3 = hub's own site endpoints), `utils.py` (helpers) |
 
 ### Fetch / Deploy Scripts
 
@@ -504,9 +737,11 @@ MySQL database (miroms: devices / roms / logs / dev / branches / series)
         │  python3 scripts/exporter.py            → export api/v1|v2|v3 + dev + index.json / series.json
         ▼
 JSON data (api/)
-        │  python3 scripts/push.py (export → git commit & push → trigger deploy)
+        │  python3 scripts/push.py (export → git commit & push → deploy every id in config.ids)
         ▼
-Cloudflare Pages (deploy hook) auto-deploy → api.miuier.com (CNAME, see the root CNAME file)
+Cloudflare Pages (deploy hooks) auto-deploy
+        → api.miuier.com (CNAME, see the root CNAME file)
+        → HUB / HyperOS.fans / MIUIer sites
 ```
 
 ---

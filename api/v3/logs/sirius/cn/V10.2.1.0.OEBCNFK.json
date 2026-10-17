@@ -6,7 +6,8 @@
     "相机": [
       "新增 合影优选模式",
       "修复 偶现的自动连拍问题",
-      "修复 相机闪退问题"
+      "修复 相机闪退问题",
+      "修复 偶现的自动连拍问题"
     ],
     "相册": [
       "新增 图片编辑的相框功能，让你的照片更具艺术感"
@@ -22,6 +23,10 @@
     ],
     "网络助手": [
       "新增 日租卡/无限流量卡模式，可设置大王卡、米粉卡、天神卡等套餐类型，流量校正更准确"
+    ],
+    "其他": [
+      "提高系统的稳定性",
+      "优化系统的流畅度"
     ]
   },
   "logs_en": {
@@ -31,7 +36,8 @@
     "Camera": [
       "Add Optimized group selfies",
       "Restore Burst shots were made accidentally",
-      "Restore Camera crashed in some cases"
+      "Restore Camera crashed in some cases",
+      "Fix: Burst shots were made accidentally"
     ],
     "Gallery": [
       "Add Turn your photos into masterpieces using our new photo frames"
@@ -43,121 +49,552 @@
       "Restore Icons on the search page were displayed incorrectly"
     ],
     "Recorder": [
-      "Restore Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Restore Recording status wasn't updated in the Notification shade when a recording was paused"
     ],
     "Data Usage": [
       "Add More data plans available"
+    ],
+    "Other": [
+      "Optimized system performance",
+      "Improved system security and stability"
     ]
   },
   "logs_zh_tw": {
+    "解鎖畫面、狀態欄、通知欄": [
+      "新增 狀態列支援顯示通知圖示，前往「設定-通知和狀態列-來通知時顯示圖示」開啟"
+    ],
     "相機": [
+      "新增 合影優選模式",
+      "修正 偶發的自動連拍問題",
+      "修復 相機閃退問題",
       "修復 偶現的自動連拍問題"
+    ],
+    "相簿": [
+      "新增圖片編輯的相框功能，讓你的照片更具藝術感"
+    ],
+    "系統更新": [
+      "新增 桌面捷徑功能，可在更新設定中開啟"
+    ],
+    "檔案管理員": [
+      "修復搜尋介面圖示顯示異常的問題"
+    ],
+    "錄音機": [
+      "修復 暫停錄音後無法即時更新到狀態欄的問題"
+    ],
+    "網路助手": [
+      "新增 日租卡/無限流量卡模式，可設定大王卡、米粉卡、天神卡等套餐類型，流量校正更準確"
+    ],
+    "其他": [
+      "改善系統的穩定性",
+      "優化系統的流暢度"
     ]
   },
   "logs_ja": {
+    "ロック画面、ステータスバー、通知バー": [
+      "追加：ステータスバーで通知アイコンの表示に対応。「設定 – 通知とステータスバー – 通知受信時にアイコンを表示」からオンにしてください。"
+    ],
+    "カメラ": [
+      "集合写真の最適化モードを追加",
+      "偶発的な自動連写の問題を修正",
+      "カメラがクラッシュする問題を修正",
+      "偶発的な自動連写の問題を修正"
+    ],
+    "ギャラリー": [
+      "画像編集のフレーム機能を追加し、写真をよりアートに"
+    ],
+    "アップデーター": [
+      "ホーム画面ショートカット機能を追加、アップデート設定で有効にできます"
+    ],
+    "ファイルマネージャー": [
+      "検索画面のアイコンが正しく表示されない問題を修正"
+    ],
+    "レコーダー": [
+      "修正: 録音を一時停止すると、通知シェードの録音ステータスが更新されませんでした"
+    ],
+    "データ使用量": [
+      "日租カード/無制限データカードモードを追加。大王卡、米粉卡、天神卡などのプランタイプを設定でき、データ通信量の補正がより正確になります"
+    ],
     "その他": [
       "システムパフォーマンスの最適化",
       "システムのセキュリティと安定性の向上"
     ]
   },
   "logs_ko": {
+    "잠금 화면, 상태 표시줄, 알림 표시줄": [
+      "추가: 상태 표시줄에서 알림 아이콘 표시를 지원합니다. 「설정 – 알림 및 상태 표시줄 – 알림 수신 시 아이콘 표시」에서 켜세요."
+    ],
+    "카메라": [
+      "단체 사진 최적화 모드 추가",
+      "간헐적인 자동 연사 문제 수정",
+      "카메라 강제 종료 문제 수정",
+      "간헐적인 자동 연사 문제 수정"
+    ],
+    "갤러리": [
+      "이미지 편집의 프레임 기능 추가로 사진을 더 예술적으로"
+    ],
+    "업데이터": [
+      "홈 화면 바로가기 기능 추가, 업데이트 설정에서 활성화할 수 있습니다"
+    ],
+    "파일 관리자": [
+      "검색 화면의 아이콘이 비정상적으로 표시되는 문제를 수정했습니다"
+    ],
+    "녹음기": [
+      "수정: 녹음을 일시 중지하면 알림 창의 녹음 상태가 업데이트되지 않았습니다"
+    ],
+    "데이터 사용량": [
+      "일일 요금제/무제한 데이터 카드 모드 추가. 大王卡, 米粉卡, 天神卡 등 요금제 유형을 설정할 수 있으며 데이터 보정이 더 정확해집니다"
+    ],
     "기타": [
       "시스템 성능 최적화",
       "시스템 보안 및 안정성 개선"
     ]
   },
   "logs_ru": {
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Добавлено: поддержка отображения значков уведомлений в строке состояния. Включите в «Настройки – Уведомления и строка состояния – Показывать значки при получении уведомлений»."
+    ],
+    "Камера": [
+      "Добавлен режим оптимизации групповых селфи",
+      "Исправлена периодическая проблема с автоматической серийной съёмкой",
+      "Исправлена проблема с вылетом Камеры",
+      "Исправлена проблема со случайной автоматической серийной съёмкой"
+    ],
+    "Галерея": [
+      "Добавлена функция рамок в редакторе изображений — сделайте фото более художественными"
+    ],
+    "Обновление": [
+      "Добавлена функция ярлыка на главном экране; можно включить в настройках обновления."
+    ],
+    "Файловый менеджер": [
+      "Исправлена проблема с неправильным отображением значков в интерфейсе поиска"
+    ],
+    "Диктофон": [
+      "Исправлено: Факт остановки записи не отображался в строке состояния вовремя"
+    ],
+    "Трафик": [
+      "Добавлен режим дневной карты/карты безлимитного трафика; можно выбрать тарифы 大王卡, 米粉卡, 天神卡 и др., коррекция трафика стала точнее"
+    ],
     "Другое": [
       "Оптимизация производительности системы",
       "Улучшение безопасности и стабильности системы"
     ]
   },
   "logs_uk": {
+    "Екран блокування, рядок стану, рядок сповіщень": [
+      "Додано: підтримка відображення значків сповіщень у рядку стану. Увімкніть у «Налаштування – Сповіщення та рядок стану – Показувати значки під час отримання сповіщень»."
+    ],
+    "Камера": [
+      "Додано режим оптимізації групових селфі",
+      "Виправлено періодичну проблему з автоматичною серійною зйомкою",
+      "Виправлено проблему з аварійним завершенням роботи Камери",
+      "Виправлено проблему з випадковою автоматичною серійною зйомкою"
+    ],
+    "Галерея": [
+      "Додано функцію рамок у редакторі зображень — зробіть фото більш мистецькими"
+    ],
+    "Оновлення": [
+      "Додано функцію ярлика на головному екрані; можна ввімкнути в налаштуваннях оновлення."
+    ],
+    "Файловий менеджер": [
+      "Виправлено проблему з неправильним відображенням значків в інтерфейсі пошуку"
+    ],
+    "Диктофон": [
+      "Виправлено проблему, коли стан запису не оновлювався в рядку стану вчасно після призупинення запису"
+    ],
+    "Передача даних": [
+      "Додано режим денної картки/картки безлімітного трафіку; можна вибрати тарифи 大王卡, 米粉卡, 天神卡 тощо, коригування трафіку точніше"
+    ],
     "Інше": [
       "Оптимізація продуктивності системи",
       "Покращення безпеки та стабільності системи"
     ]
   },
   "logs_pl": {
+    "Ekran blokady, pasek stanu, pasek powiadomień": [
+      "Dodano: obsługę wyświetlania ikon powiadomień na pasku stanu. Włącz w „Ustawienia – Powiadomienia i pasek stanu – Pokazuj ikony przy otrzymywaniu powiadomień”."
+    ],
+    "Aparat": [
+      "Dodano tryb optymalizacji zdjęć grupowych",
+      "Naprawiono sporadyczny problem z automatyczną serią zdjęć",
+      "Naprawiono problem z awarią Aparatu",
+      "Naprawiono problem z przypadkową automatyczną serią zdjęć"
+    ],
+    "Galeria": [
+      "Dodano funkcję ramek w edytorze zdjęć, aby nadać zdjęciom bardziej artystyczny charakter"
+    ],
+    "Aktualizacje": [
+      "Dodano funkcję skrótu na ekranie głównym; można włączyć w ustawieniach aktualizacji."
+    ],
+    "Menedżer plików": [
+      "Naprawiono problem z nieprawidłowym wyświetlaniem ikon w interfejsie wyszukiwania"
+    ],
+    "Rejestrator": [
+      "Naprawiono: Status nagrywania nie był aktualizowany w panelu powiadomień po wstrzymaniu nagrywania"
+    ],
+    "Użycie danych": [
+      "Dodano tryb karty dziennej/karty z nielimitowanym transferem; można ustawić typy planów, np. 大王卡, 米粉卡, 天神卡, a korekta danych jest dokładniejsza"
+    ],
     "Inne": [
       "Zoptymalizowana wydajność systemu",
       "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
   "logs_de": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
+      "Neu: Unterstützung für die Anzeige von Benachrichtigungssymbolen in der Statusleiste. Aktiviere „Einstellungen – Benachrichtigungen und Statusleiste – Symbole bei Benachrichtigung anzeigen“."
+    ],
+    "Kamera": [
+      "Optimierter Gruppen-Selfie-Modus hinzugefügt",
+      "Gelegentliches Problem mit automatischer Serienaufnahme behoben",
+      "Problem mit Absturz der Kamera behoben",
+      "Problem mit gelegentlichen automatischen Serienaufnahmen behoben"
+    ],
+    "Galerie": [
+      "Neue Rahmenfunktion im Bildeditor für künstlerischere Fotos"
+    ],
+    "Updater": [
+      "Funktion für Startbildschirm-Verknüpfung hinzugefügt; in den Update-Einstellungen aktivierbar."
+    ],
+    "Dateimanager": [
+      "Problem mit der falschen Anzeige von Symbolen in der Suchoberfläche behoben"
+    ],
+    "Rekorder": [
+      "Behoben: Der Aufnahmestatus wurde bei pausierter Aufnahme nicht in der Benachrichtigungsleiste aktualisiert"
+    ],
+    "Datennutzung": [
+      "Modus für Tageskarte/Unlimited-Datenkarte hinzugefügt; Tariftypen wie 大王卡, 米粉卡, 天神卡 können festgelegt werden, Datenkorrektur genauer"
+    ],
+    "Sonstiges": [
+      "Systemleistung optimiert",
+      "Systemsicherheit und -stabilität verbessert"
     ]
   },
   "logs_fr": {
+    "Écran de verrouillage, barre d’état, barre de notifications": [
+      "Ajout : prise en charge de l’affichage des icônes de notification dans la barre d’état. Activez dans « Paramètres – Notifications et barre d’état – Afficher les icônes lors des notifications »."
+    ],
+    "Appareil photo": [
+      "Ajout du mode selfie de groupe optimisé",
+      "Correction du problème intermittent de prise de vue en rafale automatique",
+      "Correction du problème de plantage de l'Appareil photo"
+    ],
+    "Galerie": [
+      "Ajout de cadres dans l’éditeur d’images pour des photos plus artistiques"
+    ],
+    "Mises à jour": [
+      "Ajout d'une fonction de raccourci sur l'écran d'accueil ; activable dans les paramètres de mise à jour."
+    ],
+    "Gestionnaire de fichiers": [
+      "Correction du problème d'affichage incorrect des icônes dans l'interface de recherche"
+    ],
+    "Enregistreur": [
+      "Correction : L'état d'enregistrement n'était pas mis à jour dans le panneau de notifications lorsque l'enregistrement était en pause"
+    ],
+    "Utilisation des données": [
+      "Ajout du mode carte journalière/carte data illimitée ; possibilité de définir des forfaits comme 大王卡, 米粉卡, 天神卡, correction des données plus précise"
+    ],
     "Autre": [
       "Performances système optimisées",
       "Sécurité et stabilité du système améliorées"
+    ],
+    "Appareil Photo": [
+      "Correction du problème intermittent de rafale automatique"
     ]
   },
   "logs_it": {
+    "Schermata di blocco, barra di stato, barra delle notifiche": [
+      "Aggiunto: supporto per la visualizzazione delle icone delle notifiche nella barra di stato. Attiva in «Impostazioni – Notifiche e barra di stato – Mostra icone alla ricezione delle notifiche»."
+    ],
+    "Fotocamera": [
+      "Aggiunta modalità selfie di gruppo ottimizzata",
+      "Risolto il problema intermittente della raffica automatica",
+      "Risolto il problema di arresto anomalo della Fotocamera",
+      "Risolto il problema degli scatti in raffica automatici occasionali"
+    ],
+    "Galleria": [
+      "Aggiunta la funzione cornici nell'editor di immagini per foto più artistiche"
+    ],
+    "Aggiornamenti": [
+      "Aggiunta funzione di collegamento alla schermata Home; attivabile nelle impostazioni aggiornamento."
+    ],
+    "Gestione file": [
+      "Risolto il problema di visualizzazione errata delle icone nell'interfaccia di ricerca"
+    ],
+    "Registratore": [
+      "Risolto: Lo stato della registrazione non era aggiornato nell'area delle notifiche quando una registrazione veniva messa in pausa"
+    ],
+    "Utilizzo dei dati": [
+      "Aggiunta modalità carta giornaliera/carta dati illimitata; puoi impostare piani come 大王卡, 米粉卡, 天神卡, correzione dati più precisa"
+    ],
     "Altro": [
       "Prestazioni di sistema ottimizzate",
       "Maggiore sicurezza e stabilità di sistema"
     ]
   },
   "logs_es": {
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Añadido: compatibilidad con la visualización de iconos de notificación en la barra de estado. Actívalo en «Ajustes – Notificaciones y barra de estado – Mostrar iconos al recibir notificaciones»."
+    ],
+    "Cámara": [
+      "Añadido modo optimizado para selfies grupales",
+      "Se corrige el problema intermitente de ráfaga automática",
+      "Corregido el problema de cierre inesperado de Cámara",
+      "Corregido el problema de ráfaga automática ocasional"
+    ],
+    "Galería": [
+      "Añadida la función de marcos en el editor de imágenes para dar un toque más artístico a tus fotos"
+    ],
+    "Actualizador": [
+      "Se añade la función de acceso directo en la pantalla de inicio; se puede activar en los ajustes de actualización."
+    ],
+    "Administrador de archivos": [
+      "Solucionado el problema de visualización incorrecta de los iconos en la interfaz de búsqueda"
+    ],
+    "Grabadora": [
+      "Reparado: El estado de la grabación no fue actualizado en la Barra de notificaciones cuando la grabación fue pausada"
+    ],
+    "Uso de datos": [
+      "Se añade el modo tarjeta diaria/tarjeta de datos ilimitados; permite configurar planes como 大王卡, 米粉卡, 天神卡, corrección de datos más precisa"
+    ],
     "Otros": [
       "Rendimiento del sistema optimizado",
       "Estabilidad y seguridad del sistema mejorada"
     ]
   },
   "logs_pt": {
+    "Tela de bloqueio, barra de status, barra de notificações": [
+      "Adicionado: suporte para exibir ícones de notificação na barra de status. Ative em «Configurações – Notificações e barra de status – Mostrar ícones ao receber notificações»."
+    ],
+    "Câmera": [
+      "Adicionado modo otimizado para selfies em grupo",
+      "Corrigido o problema intermitente de captura em rajada automática",
+      "Corrigido o problema de fecho inesperado da Câmara",
+      "Corrigido o problema de disparo em rajada automático ocasional"
+    ],
+    "Galeria": [
+      "Adicionada a função de molduras no editor de imagens para fotos mais artísticas"
+    ],
+    "Atualizações": [
+      "Adicionada função de atalho no ecrã inicial; pode ser ativada nas definições de atualização."
+    ],
+    "Gerenciador de arquivos": [
+      "Corrigido o problema de exibição incorreta dos ícones na interface de pesquisa"
+    ],
+    "Gravador": [
+      "Corrigido o problema de o estado da gravação não ser atualizado na barra de status em tempo hábil após pausar a gravação"
+    ],
+    "Uso de dados": [
+      "Adicionado modo cartão diário/cartão de dados ilimitados; permite definir planos como 大王卡, 米粉卡, 天神卡, correção de dados mais precisa"
+    ],
     "Outros": [
       "Desempenho do sistema aprimorado",
       "Segurança e estabilidade do sistema aprimoradas"
     ]
   },
   "logs_tr": {
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Eklendi: Durum çubuğunda bildirim simgelerinin gösterilmesi desteği. «Ayarlar – Bildirimler ve durum çubuğu – Bildirim geldiğinde simgeleri göster» bölümünden açın."
+    ],
+    "Kamera": [
+      "Grup özçekimi optimizasyon modu eklendi",
+      "Ara sıra oluşan otomatik seri çekim sorunu giderildi",
+      "Kamera çökme sorunu giderildi",
+      "Ara sıra otomatik seri çekim sorunu düzeltildi"
+    ],
+    "Galeri": [
+      "Görsel düzenleyiciye fotoğraflarınıza sanatsal bir hava katan çerçeve özelliği eklendi"
+    ],
+    "Güncelleyici": [
+      "Ana ekran kısayolu özelliği eklendi; güncelleme ayarlarından etkinleştirilebilir."
+    ],
+    "Dosya Yöneticisi": [
+      "Arama arayüzündeki simgelerin yanlış görüntülenmesi sorunu giderildi"
+    ],
+    "Kayıt Cihazı": [
+      "Onarım: Bir kayıt durdurulduğunda, kayıt durumu Bildirim çubuğunda güncellenmedi"
+    ],
+    "Veri kullanımı": [
+      "Günlük kart/sınırsız veri kartı modu eklendi; 大王卡, 米粉卡, 天神卡 gibi paket türleri ayarlanabilir, veri düzeltmesi daha doğru"
+    ],
     "Diğer": [
       "Sistem performansı optimize edildi",
       "Sistem güvenliği ve kararlılığı geliştirildi"
     ]
   },
   "logs_id": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "Layar kunci, bilah status, bilah notifikasi": [
+      "Ditambahkan: dukungan menampilkan ikon notifikasi di bilah status. Aktifkan di «Setelan – Notifikasi dan bilah status – Tampilkan ikon saat menerima notifikasi»."
+    ],
+    "Kamera": [
+      "Menambahkan mode selfie grup yang dioptimalkan",
+      "Memperbaiki masalah pengambilan foto burst otomatis yang terkadang terjadi",
+      "Memperbaiki masalah Kamera yang force close",
+      "Memperbaiki masalah burst shot otomatis yang kadang terjadi"
+    ],
+    "Galeri": [
+      "Menambahkan fitur bingkai di editor gambar agar foto lebih artistik"
+    ],
+    "Pembaruan sistem": [
+      "Menambahkan fitur pintasan layar Utama; dapat diaktifkan di pengaturan pembaruan."
+    ],
+    "Pengelola File": [
+      "Memperbaiki masalah ikon di antarmuka pencarian yang ditampilkan secara tidak normal"
+    ],
+    "Perekam": [
+      "Memperbaiki masalah status perekaman yang tidak diperbarui tepat waktu di bilah status setelah perekaman dijeda"
+    ],
+    "Penggunaan data": [
+      "Menambahkan mode kartu harian/kartu data tak terbatas; dapat mengatur jenis paket seperti 大王卡, 米粉卡, 天神卡, koreksi data lebih akurat"
+    ],
+    "Lainnya": [
+      "Performa sistem dioptimalkan",
+      "Keamanan dan stabilitas sistem ditingkatkan"
     ]
   },
   "logs_vi": {
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Đã thêm: hỗ trợ hiển thị biểu tượng thông báo trên thanh trạng thái. Bật trong «Cài đặt – Thông báo và thanh trạng thái – Hiển thị biểu tượng khi nhận thông báo»."
+    ],
+    "Máy ảnh": [
+      "Thêm chế độ tối ưu ảnh selfie nhóm",
+      "Khắc phục sự cố chụp liên tiếp tự động không thường xuyên",
+      "Khắc phục sự cố Camera bị thoát đột ngột"
+    ],
+    "Thư viện": [
+      "Thêm tính năng khung trong trình chỉnh sửa ảnh để ảnh mang tính nghệ thuật hơn"
+    ],
+    "Trình cập nhật": [
+      "Thêm tính năng lối tắt màn hình chính; có thể bật trong cài đặt cập nhật."
+    ],
+    "Trình quản lý tệp": [
+      "Đã sửa lỗi biểu tượng trong giao diện tìm kiếm hiển thị không đúng"
+    ],
+    "Máy ghi âm": [
+      "Sửa lỗi trạng thái ghi âm không được cập nhật kịp thời trên thanh trạng thái sau khi tạm dừng ghi âm"
+    ],
+    "Sử dụng dữ liệu": [
+      "Thêm chế độ thẻ ngày/thẻ dữ liệu không giới hạn; có thể đặt loại gói như 大王卡, 米粉卡, 天神卡, hiệu chỉnh dữ liệu chính xác hơn"
+    ],
     "Khác": [
       "Tối ưu hiệu suất hệ thống",
       "Cải thiện tính ổn định và bảo mật hệ thống"
+    ],
+    "Camera": [
+      "Sửa lỗi đôi khi tự động chụp liên tiếp"
     ]
   },
   "logs_th": {
+    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
+      "เพิ่ม: รองรับการแสดงไอคอนการแจ้งเตือนในแถบสถานะ เปิดใช้งานได้ที่ «การตั้งค่า – การแจ้งเตือนและแถบสถานะ – แสดงไอคอนเมื่อมีการแจ้งเตือน»"
+    ],
+    "กล้อง": [
+      "เพิ่มโหมดปรับแต่งเซลฟี่กลุ่มให้เหมาะสม",
+      "แก้ไขปัญหาการถ่ายภาพต่อเนื่องอัตโนมัติที่เกิดขึ้นเป็นครั้งคราว",
+      "แก้ไขปัญหากล้องหยุดทำงานกะทันหัน",
+      "แก้ไขปัญหาการถ่ายภาพต่อเนื่องอัตโนมัติเป็นครั้งคราว"
+    ],
+    "คลังภาพ": [
+      "เพิ่มฟีเจอร์กรอบในตัวแก้ไขรูปภาพ ให้รูปของคุณดูมีศิลปะมากขึ้น"
+    ],
+    "ตัวอัปเดต": [
+      "เพิ่มฟีเจอร์ทางลัดหน้าจอหลัก เปิดใช้งานได้ในการตั้งค่าอัปเดต"
+    ],
+    "ตัวจัดการไฟล์": [
+      "แก้ไขปัญหาการแสดงไอคอนในหน้าค้นหาผิดปกติ"
+    ],
+    "เครื่องบันทึกเสียง": [
+      "แก้ไขปัญหาสถานะการบันทึกเสียงไม่ได้รับการอัปเดตในแถบสถานะอย่างทันท่วงทีหลังจากหยุดการบันทึกชั่วคราว"
+    ],
+    "การใช้ข้อมูล": [
+      "เพิ่มโหมดการ์ดรายวัน/การ์ดข้อมูลไม่จำกัด สามารถตั้งค่าประเภทแพ็กเกจ เช่น 大王卡, 米粉卡, 天神卡 การแก้ไขข้อมูลแม่นยำขึ้น"
+    ],
     "อื่นๆ": [
       "เพิ่มประสิทธิภาพของระบบ",
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
     ]
   },
   "logs_ar": {
+    "شاشة القفل، شريط الحالة، شريط الإشعارات": [
+      "تمت الإضافة: دعم عرض رموز الإشعارات في شريط الحالة. فعّله من «الإعدادات – الإشعارات وشريط الحالة – إظهار الرموز عند تلقي الإشعارات»."
+    ],
+    "كاميرا": [
+      "إضافة وضع تحسين صور السيلفي الجماعية",
+      "إصلاح مشكلة التصوير المتتابع التلقائي العرضية",
+      "إصلاح مشكلة تعطل الكاميرا"
+    ],
+    "المعرض": [
+      "إضافة ميزة الإطارات في محرر الصور لجعل صورك أكثر فنية"
+    ],
+    "المحدث": [
+      "إضافة ميزة اختصار الشاشة الرئيسية؛ يمكن تفعيلها في إعدادات التحديث."
+    ],
+    "مدير الملفات": [
+      "تم إصلاح مشكلة عرض الأيقونات بشكل غير صحيح في واجهة البحث"
+    ],
+    "مسجل": [
+      "إصلاح مشكلة عدم تحديث حالة التسجيل في شريط الحالة في الوقت المناسب بعد إيقاف التسجيل مؤقتًا"
+    ],
+    "استخدام البيانات": [
+      "إضافة وضع بطاقة يومية/بطاقة بيانات غير محدودة؛ يمكن تعيين أنواع خطط مثل 大王卡 و米粉卡 و天神卡، وتصحيح البيانات أكثر دقة"
+    ],
     "أخرى": [
       "تحسين أداء النظام",
       "تحسين أمن واستقرار النظام"
+    ],
+    "الكاميرا": [
+      "إصلاح مشكلة التصوير المتتابع التلقائي العرضي"
     ]
   },
   "logs_in": {
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
+      "जोड़ा गया: स्टेटस बार में सूचना आइकन दिखाने का समर्थन। «सेटिंग्स – सूचनाएं और स्टेटस बार – सूचना आने पर आइकन दिखाएं» में सक्षम करें।"
+    ],
+    "कैमरा": [
+      "समूह सेल्फी अनुकूलन मोड जोड़ा गया",
+      "कभी-कभार होने वाली स्वचालित बर्स्ट शॉट समस्या ठीक की गई",
+      "कैमरा क्रैश होने की समस्या ठीक की गई",
+      "कभी-कभार स्वचालित बर्स्ट शॉट की समस्या ठीक की गई"
+    ],
+    "गैलरी": [
+      "इमेज एडिटर में फ़्रेम सुविधा जोड़ी गई, ताकि आपकी तस्वीरें और कलात्मक लगें"
+    ],
+    "अपडेटर": [
+      "होम स्क्रीन शॉर्टकट सुविधा जोड़ी गई; इसे अपडेट सेटिंग्स में सक्षम किया जा सकता है।"
+    ],
+    "फ़ाइल प्रबंधक": [
+      "खोज इंटरफ़ेस में आइकन के गलत प्रदर्शित होने की समस्या ठीक की गई"
+    ],
+    "रिकॉर्डर": [
+      "रिकॉर्डिंग को पॉज़ करने के बाद स्टेटस बार में रिकॉर्डिंग स्थिति समय पर अपडेट न होने की समस्या ठीक की गई"
+    ],
+    "डेटा उपयोग": [
+      "दैनिक कार्ड/असीमित डेटा कार्ड मोड जोड़ा गया; 大王卡, 米粉卡, 天神卡 जैसे प्लान प्रकार सेट किए जा सकते हैं, डेटा सुधार अधिक सटीक"
+    ],
     "अन्य": [
       "सिस्टम परफ़ॉर्मेंस ऑप्टिमाइज़ किया गया है",
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
     ]
   },
   "logs_ug": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "قۇلۇپ ئېكرانى، ھالەت بالدىقى، ئۇقتۇرۇش بالدىقى": [
+      "يېڭى قوشۇلدى: ھالەت ستونىدا ئۇقتۇرۇش سىنبەلگىسىنى كۆرسىتىشنى قوللايدۇ. «تەڭشەكلەر – ئۇقتۇرۇشلار ۋە ھالەت ستونى – ئۇقتۇرۇش كەلگەندە سىنبەلگىنى كۆرسەت» ئارقىلىق ئېچىڭ."
+    ],
+    "ھۆججەت باشقۇرغۇچ": [
+      "ئىزدەش كۆرۈنمە يۈزىدىكى سىنبەلگىلەرنىڭ خاتا كۆرسىتىلىش مەسىلىسى تۈزىتىلدى"
+    ],
+    "ئاۋاز ئالغۇ": [
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
+    ],
+    "باشقىلىرى": [
+      "سىستېمىنىڭ مۇقىملىقىنى ئاشۇرۇش",
+      "سىستېما راۋانلىقىنى ئەلالاشتۇرۇش"
     ]
   },
   "logs_bo": {
-    "Other": [
+    "སྒྲ་འཇུག་ཆས": [
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
+    ],
+    "གཞན།": [
       "Optimized system performance",
       "Improved system security and stability"
     ]

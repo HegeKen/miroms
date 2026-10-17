@@ -2,7 +2,9 @@
   "logs_zh": {
     "系统": [
       "修复 公司门户应用无法使用问题",
-      "更新谷歌安全补丁（2023#01），提升系统安全性"
+      "更新谷歌安全补丁（2023#01），提升系统安全性",
+      "优化 手柄快连弹窗，提升使用体验",
+      "修复 解决部分场景杂音问题"
     ],
     "相机": [
       "新增 拍照、录像、文档模式后置2X快捷变焦"
@@ -10,17 +12,21 @@
   },
   "logs_en": {
     "System": [
-      "Fix: Couldn^t use Intune in some cases",
-      "Updated Android Security Patch to January 2023. Increased system security."
+      "Fix: Couldn't use Intune in some cases",
+      "Updated Android Security Patch to January 2023. Increased system security.",
+      "Optimization: A prompt now appears when grip is connected",
+      "Fix: Problems with noise that appeared in some cases"
     ],
     "Camera": [
-      "New: 2X quick zoom for the rear camera in the ^Photo^, ^Video^, and ^Documents^ modes"
+      "New: 2X quick zoom for the rear camera in the \"Photo\", \"Video\", and \"Documents\" modes"
     ]
   },
   "logs_zh_tw": {
     "系統": [
       "修復: 公司門戶應用程式無法使用問題",
-      "更新谷歌安全修補程式（2023#01），提升系統安全性"
+      "更新谷歌安全修補程式（2023#01），提升系統安全性",
+      "優化: 手柄快連彈窗，提升使用體驗",
+      "修復: 解決部分場景雜音問題"
     ],
     "相機": [
       "新增: 拍照、錄影、文件模式後置2X快捷變焦"
@@ -34,12 +40,16 @@
   },
   "logs_ko": {
     "시스템": [
+      "Android 11 기반의 MIUI 안정화 버전",
+      "MIUI는 더 적은 메모리를 사용하고 장시간 사용에도 원활하고 신속한 반응을 유지합니다.",
       "수정: 일부 상황에서 Intune을 사용할 수 없는 문제",
       "Android 보안패치 (2023#01) 업데이트됨. 시스템 보안이 향상되었습니다."
     ]
   },
   "logs_ru": {
     "Система": [
+      "Стабильная версия MIUI на базе Android 11",
+      "Теперь MIUI использует меньше оперативной памяти и остается быстрой в течение гораздо более продолжительного времени.",
       "Исправлено: В некоторых случаях не удавалось использовать Intune",
       "Обновление системы безопасности Android (январь 2023 года). Улучшена безопасность системы."
     ]
@@ -52,50 +62,64 @@
   },
   "logs_pl": {
     "System": [
+      "Stabilny MIUI oparty na Android 11",
+      "MIUI zajmuje teraz mniej miejsca i pozostaje szybki i responsywny przez znacznie dłuższy czas.",
       "Naprawiono: W niektórych przypadkach nie można było korzystać z Intune",
       "Zaktualizowano Pakiet Bezpieczeństwa Android do stycznia 2023 r. Zwiększono bezpieczeństwo systemu."
     ]
   },
   "logs_de": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "System": [
+      "Optimierte Systemleistung",
+      "Verbesserte Systemsicherheit und -stabilität"
     ]
   },
   "logs_fr": {
     "Système": [
-      "Réparé: Impossible d^utiliser Intune dans certains cas",
-      "Mise à jour du correctif de sécurité Android jusqu^en janvier 2023. Sécurité du système accrue."
+      "MIUI Stable basé sur Android 11",
+      "MIUI utilise moins de mémoire maintenant et continue d'être rapide et réactif sur des périodes beaucoup plus longues.",
+      "Réparé: Impossible d'utiliser Intune dans certains cas",
+      "Mise à jour du correctif de sécurité Android jusqu'en janvier 2023. Sécurité du système accrue."
     ]
   },
   "logs_it": {
     "Sistema": [
+      "MIUI Stable basata su Android 11",
+      "MIUI ora utilizza meno memoria e continua a essere rapida e reattiva per periodi ancora più lunghi.",
       "Risolto: In alcuni casi non era possibile utilizzare Intune",
       "Patch di sicurezza Android aggiornata a gennaio 2023. Maggiore sicurezza del sistema."
     ]
   },
   "logs_es": {
     "Sistema": [
+      "MIUI estable basado en Android 11",
+      "Ahora MIUI utiliza menos memoria y continúa siendo rápido y con capacidad de respuesta a lo largo de mayores periodos de tiempo.",
       "Reparado: En algunos casos no se podía usar Intune",
       "Parche de seguridad de Android actualizado a enero de 2023. Seguridad del sistema incrementada."
     ]
   },
   "logs_pt": {
     "Sistema": [
+      "O MIUI Estável baseado no Android 11",
+      "Agora o MIUI utiliza menos memória e continua sendo rápido e responsivo por períodos muito maiores.",
       "Correção: Não era possível utilizar o Intune em alguns casos",
       "Patch de Segurança do Android atualizado para Janeiro de 2023. Segurança do sistema aprimorada."
     ]
   },
   "logs_tr": {
     "Sistem": [
+      "Android 11 tabanlı stabil MIUI",
+      "MIUI artık daha az bellek kullanıyor ve çok daha uzun süreler boyunca hızlı ve duyarlı olmaya devam ediyor.",
       "Onarım: Intune bazı durumlarda kullanılamadı",
-      "Android Güvenlik Patch^i Ocak 2023^te güncellendi. Sistem güvenliği arttırıldı."
+      "Android Güvenlik Patch'i Ocak 2023'te güncellendi. Sistem güvenliği arttırıldı."
     ]
   },
   "logs_id": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "Sistem": [
+      "Performa sistem dioptimalkan",
+      "MIUI menggunakan lebih sedikit memori sekarang, tetap cepat dan responsif dalam waktu yang jauh lebih lama.",
+      "Performa sistem dioptimalkan",
+      "Keamanan dan stabilitas sistem ditingkatkan"
     ]
   },
   "logs_vi": {
@@ -112,6 +136,8 @@
   },
   "logs_ar": {
     "النظام": [
+      "نسخة مستقرة من MIUI على أساس Android 11",
+      "تستخدم MIUI الآن ذاكرة أقل لجهازك وتظل سريعة ومستجيبة لفترة أطول.",
       "الإصلاح: لا يمكن استخدام Intune في بعض الحالات",
       "تم تحديث تصحيح أمان الأندرويد إلى يناير 2023 لزيادة أمان النظام."
     ]

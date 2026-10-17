@@ -5,163 +5,677 @@
       "修复 偶现系统卡顿的问题"
     ],
     "电话": [
+      "优化 双卡场景下掉卡后的处理策略",
       "优化 双卡场景下掉卡后的处理策略"
     ],
     "联系人": [
-      "修复 设置里VoLTE电话会议显示错误的问题"
+      "修复 设置里VoLTE电话会议显示错误的问题",
+      "修复 设置里VoLTE电话会议显示错误"
     ],
     "锁屏、状态栏、通知栏": [
+      "修复 双击不重要通知时，通知与快捷开关重叠的问题",
       "修复 双击不重要通知时，通知与快捷开关重叠的问题"
     ],
     "备份": [
+      "修复 从U盘恢复手机中未安装应用，图标显示异常的问题",
       "修复 从U盘恢复手机中未安装应用，图标显示异常的问题"
     ],
     "设置": [
       "修复 巨无霸字体下，设置显示错位的问题",
       "修复 设置同步显示两个添加个人账户选项的问题",
-      "[设置]-[我的设备]-[使用说明] 更改为 [重要安全信息]"
+      "设置]-[我的设备]-[使用说明] 更改为 [重要安全信息]",
+      "修复 设置同步显示两个添加个人账户选项的问题",
+      "设置]-[我的设备]-[使用说明] 更改为 [重要安全信息]"
     ],
     "文件管理器": [
+      "修复 重命名或者解密后的文件无法搜索的问题",
       "修复 重命名或者解密后的文件无法搜索的问题"
     ],
     "录音机": [
+      "修复 设置图标显示异常的问题",
       "修复 设置图标显示异常的问题"
+    ],
+    "其他": [
+      "提高系统的稳定性",
+      "优化系统的流畅度"
     ]
   },
   "logs_en": {
     "Phone": [
+      "Optimize Algorithm for restoring connection after signal was lost in Dual SIM mode",
       "Optimize Algorithm for restoring connection after signal was lost in Dual SIM mode"
     ],
     "Contacts": [
-      "Restore VoLTE conference calls weren^t shown correctly in the Settings"
+      "Restore VoLTE conference calls weren't shown correctly in the Settings",
+      "Restore VoLTE conference calls weren't shown correctly in the Settings"
     ],
     "Lockscreen, Status Bar, Notification Bar": [
+      "Restore UI elements overlapped when you double tapped an unimportant notification",
       "Restore UI elements overlapped when you double tapped an unimportant notification"
     ],
     "Backup": [
-      "Restore App icons weren^t displayed correctly when apps that weren^t installed were restored from a USB device"
+      "Restore App icons weren't displayed correctly when apps that weren't installed were restored from a USB device",
+      "Restore App icons weren't displayed correctly when apps that weren't installed were restored from a USB device"
+    ],
+    "File Explorer": [
+      "Restore Couldn't find renamed or decrypted items using search",
+      "Restore Couldn't find renamed or decrypted items using search"
+    ],
+    "Recorder": [
+      "Restore The settings icon wasn't displayed correctly",
+      "Restore The settings icon wasn't displayed correctly"
     ],
     "Settings": [
       "Restore Two options for adding personal accounts were shown in the Settings",
       "Introducing important safety information in Settings > About phone"
     ],
-    "File Explorer": [
-      "Restore Couldn^t find renamed or decrypted items using search"
-    ],
-    "Recorder": [
-      "Restore The settings icon wasn^t displayed correctly"
+    "Other": [
+      "Optimized system performance",
+      "Improved system security and stability"
     ]
   },
   "logs_zh_tw": {
+    "電話": [
+      "優化雙卡場景下掉卡後的處理策略",
+      "優化雙卡場景下掉卡後的處理策略"
+    ],
+    "聯絡人": [
+      "修復 設定裡 VoLTE 電話會議顯示錯誤的問題",
+      "修正 設定中 VoLTE 電話會議顯示錯誤"
+    ],
+    "解鎖畫面、狀態欄、通知欄": [
+      "修正 雙擊不重要通知時，通知與快捷開關重疊的問題",
+      "修正 雙擊不重要通知時，通知與快捷開關重疊的問題"
+    ],
+    "備份": [
+      "修復從 USB 隨身碟還原手機中未安裝的應用程式時，圖示顯示異常的問題",
+      "修復從 USB 隨身碟還原手機中未安裝的應用程式時，圖示顯示異常的問題"
+    ],
+    "檔案管理員": [
+      "修正 重新命名或解密後檔案無法搜尋的問題",
+      "修正 重新命名或解密後檔案無法搜尋的問題"
+    ],
+    "錄音機": [
+      "修復 設定圖示顯示異常的問題",
+      "修復 設定圖示顯示異常的問題"
+    ],
+    "設定": [
+      "修復 設定同步顯示兩個新增個人帳戶選項的問題",
+      "設定]-[我的裝置]-[使用說明] 更改為 [重要安全資訊]"
+    ],
     "其他": [
       "改善系統的穩定性",
       "優化系統的流暢度"
     ]
   },
   "logs_ja": {
+    "電話": [
+      "デュアルSIM環境でSIMカードが切断された後の処理ポリシーを最適化",
+      "デュアルSIM環境でSIMカードが切断された後の処理ポリシーを最適化"
+    ],
+    "連絡先": [
+      "設定で VoLTE 会議通話が正しく表示されない問題を修正",
+      "設定でVoLTE会議通話が正しく表示されない問題を修正"
+    ],
+    "ロック画面、ステータスバー、通知バー": [
+      "重要でない通知をダブルタップした際に、通知とクイック設定が重なる問題を修正",
+      "重要でない通知をダブルタップした際に、通知とクイック設定が重なる問題を修正"
+    ],
+    "バックアップ": [
+      "USBドライブからスマートフォンに未インストールのアプリを復元する際、アイコンが正しく表示されない問題を修正",
+      "USBドライブからスマートフォンに未インストールのアプリを復元する際、アイコンが正しく表示されない問題を修正"
+    ],
+    "ファイルマネージャー": [
+      "名前を変更したファイルまたは復号したファイルを検索できない問題を修正",
+      "名前を変更したファイルまたは復号したファイルを検索できない問題を修正"
+    ],
+    "レコーダー": [
+      "設定アイコンが正しく表示されない問題を修正",
+      "設定アイコンが正しく表示されない問題を修正"
+    ],
+    "設定": [
+      "設定の同期で個人アカウントを追加するオプションが2つ表示される問題を修正",
+      "設定]-[デバイス情報]-[使用説明] を [重要な安全情報] に変更"
+    ],
     "その他": [
       "システムパフォーマンスの最適化",
       "システムのセキュリティと安定性の向上"
     ]
   },
   "logs_ko": {
+    "전화": [
+      "듀얼 SIM 환경에서 SIM 카드가 끊긴 후 처리 전략 최적화",
+      "듀얼 SIM 환경에서 SIM 카드가 끊긴 후 처리 전략 최적화"
+    ],
+    "연락처": [
+      "설정에서 VoLTE 회의 통화가 잘못 표시되는 문제를 수정",
+      "설정에서 VoLTE 회의 통화가 잘못 표시되는 문제를 수정"
+    ],
+    "잠금 화면, 상태 표시줄, 알림 표시줄": [
+      "중요하지 않은 알림을 두 번 탭할 때 알림과 빠른 설정이 겹치는 문제를 수정",
+      "중요하지 않은 알림을 두 번 탭할 때 알림과 빠른 설정이 겹치는 문제를 수정"
+    ],
+    "백업": [
+      "USB 드라이브에서 휴대폰에 설치되지 않은 앱을 복원할 때 아이콘이 비정상적으로 표시되는 문제를 수정했습니다",
+      "USB 드라이브에서 휴대폰에 설치되지 않은 앱을 복원할 때 아이콘이 비정상적으로 표시되는 문제를 수정했습니다"
+    ],
+    "파일 관리자": [
+      "이름이 변경되었거나 복호화된 파일을 검색할 수 없는 문제를 수정했습니다",
+      "이름이 변경되었거나 복호화된 파일을 검색할 수 없는 문제를 수정했습니다"
+    ],
+    "녹음기": [
+      "설정 아이콘이 비정상적으로 표시되는 문제 수정",
+      "설정 아이콘이 비정상적으로 표시되는 문제 수정"
+    ],
+    "설정": [
+      "설정 동기화에서 개인 계정 추가 옵션이 두 개 표시되는 문제 수정",
+      "설정]-[내 기기]-[사용 설명]을 [중요 안전 정보]로 변경"
+    ],
     "기타": [
       "시스템 성능 최적화",
       "시스템 보안 및 안정성 개선"
     ]
   },
   "logs_ru": {
+    "Телефон": [
+      "Оптимизировать стратегию обработки после потери SIM-карты в режиме двух SIM-карт",
+      "Оптимизировать стратегию обработки после потери SIM-карты в режиме двух SIM-карт"
+    ],
+    "Контакты": [
+      "Исправлена проблема с неправильным отображением конференц-вызовов VoLTE в настройках",
+      "Исправлено неправильное отображение конференц-вызовов VoLTE в настройках"
+    ],
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Исправлена проблема наложения уведомлений и быстрых настроек при двойном нажатии на неважное уведомление",
+      "Исправлена проблема наложения уведомлений и быстрых настроек при двойном нажатии на неважное уведомление"
+    ],
+    "Резервное копирование": [
+      "Исправлена проблема с некорректным отображением значков при восстановлении из USB-накопителя приложений, не установленных на телефоне.",
+      "Исправлена проблема с некорректным отображением значков при восстановлении из USB-накопителя приложений, не установленных на телефоне."
+    ],
+    "Файловый менеджер": [
+      "Исправлена проблема, из-за которой не удавалось найти переименованные или расшифрованные файлы",
+      "Исправлена проблема, из-за которой не удавалось найти переименованные или расшифрованные файлы"
+    ],
+    "Диктофон": [
+      "Исправлена проблема с некорректным отображением значка настроек",
+      "Исправлена проблема с некорректным отображением значка настроек"
+    ],
+    "Настройки": [
+      "Исправлена проблема, из-за которой в синхронизации настроек отображались два параметра добавления личной учетной записи.",
+      "Настройки]-[Мое устройство]-[Инструкция] изменено на [Важная информация о безопасности]"
+    ],
     "Другое": [
       "Оптимизация производительности системы",
       "Улучшение безопасности и стабильности системы"
     ]
   },
   "logs_uk": {
+    "Телефон": [
+      "Оптимізувати стратегію обробки після втрати SIM-картки в режимі двох SIM-карток",
+      "Оптимізувати стратегію обробки після втрати SIM-картки в режимі двох SIM-карток"
+    ],
+    "Контакти": [
+      "Виправлено проблему з неправильним відображенням конференц-викликів VoLTE у налаштуваннях",
+      "Виправлено неправильне відображення конференц-викликів VoLTE у налаштуваннях"
+    ],
+    "Екран блокування, рядок стану, рядок сповіщень": [
+      "Виправлено проблему накладання сповіщень і швидких налаштувань під час подвійного натискання на неважливе сповіщення",
+      "Виправлено проблему накладання сповіщень і швидких налаштувань під час подвійного натискання на неважливе сповіщення"
+    ],
+    "Резервне копіювання": [
+      "Виправлено проблему з неправильним відображенням значків під час відновлення з USB-накопичувача програм, не встановлених на телефоні.",
+      "Виправлено проблему з неправильним відображенням значків під час відновлення з USB-накопичувача програм, не встановлених на телефоні."
+    ],
+    "Файловий менеджер": [
+      "Виправлено проблему, через яку не вдавалося знайти перейменовані або розшифровані файли",
+      "Виправлено проблему, через яку не вдавалося знайти перейменовані або розшифровані файли"
+    ],
+    "Диктофон": [
+      "Виправлено проблему з нерозпізнаним відображенням значка налаштувань",
+      "Виправлено проблему з нерозпізнаним відображенням значка налаштувань"
+    ],
+    "Налаштування": [
+      "Виправлено проблему, через яку в синхронізації налаштувань відображалися два параметри додавання особистого облікового запису.",
+      "Налаштування]-[Мій пристрій]-[Інструкція] змінено на [Важлива інформація про безпеку]"
+    ],
     "Інше": [
       "Оптимізація продуктивності системи",
       "Покращення безпеки та стабільності системи"
     ]
   },
   "logs_pl": {
+    "Telefon": [
+      "Optymalizacja strategii obsługi po utracie karty SIM w trybie dual SIM",
+      "Optymalizacja strategii obsługi po utracie karty SIM w trybie dual SIM"
+    ],
+    "Kontakty": [
+      "Naprawiono problem z nieprawidłowym wyświetlaniem połączeń konferencyjnych VoLTE w Ustawieniach",
+      "Naprawiono nieprawidłowe wyświetlanie połączeń konferencyjnych VoLTE w Ustawieniach"
+    ],
+    "Ekran blokady, pasek stanu, pasek powiadomień": [
+      "Naprawiono problem nakładania się powiadomień i szybkich ustawień po dwukrotnym dotknięciu nieistotnego powiadomienia",
+      "Naprawiono problem nakładania się powiadomień i szybkich ustawień po dwukrotnym dotknięciu nieistotnego powiadomienia"
+    ],
+    "Kopia zapasowa": [
+      "Naprawiono problem z nieprawidłowym wyświetlaniem ikon podczas przywracania z dysku USB aplikacji niezainstalowanych na telefonie.",
+      "Naprawiono problem z nieprawidłowym wyświetlaniem ikon podczas przywracania z dysku USB aplikacji niezainstalowanych na telefonie."
+    ],
+    "Menedżer plików": [
+      "Naprawiono problem, przez który nie można było wyszukać plików o zmienionej nazwie lub odszyfrowanych",
+      "Naprawiono problem, przez który nie można było wyszukać plików o zmienionej nazwie lub odszyfrowanych"
+    ],
+    "Rejestrator": [
+      "Naprawiono problem z nieprawidłowym wyświetlaniem ikony ustawień",
+      "Naprawiono problem z nieprawidłowym wyświetlaniem ikony ustawień"
+    ],
+    "Ustawienia": [
+      "Naprawiono problem z wyświetlaniem dwóch opcji dodawania konta osobistego w synchronizacji ustawień.",
+      "Ustawienia]-[Moje urządzenie]-[Instrukcja] zmieniono na [Ważne informacje o bezpieczeństwie]"
+    ],
     "Inne": [
       "Zoptymalizowana wydajność systemu",
       "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
   "logs_de": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "Telefon": [
+      "Optimierung der Verarbeitungsstrategie nach SIM-Kartenverlust im Dual-SIM-Modus",
+      "Optimierung der Verarbeitungsstrategie nach SIM-Kartenverlust im Dual-SIM-Modus"
+    ],
+    "Kontakte": [
+      "Problem behoben, bei dem VoLTE-Telefonkonferenzen in den Einstellungen falsch angezeigt wurden",
+      "Fehlerhafte Anzeige von VoLTE-Konferenzanrufen in den Einstellungen behoben"
+    ],
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
+      "Das Überlappen von Benachrichtigungen und Schnelleinstellungen beim Doppeltippen einer unwichtigen Benachrichtigung wurde behoben.",
+      "Das Überlappen von Benachrichtigungen und Schnelleinstellungen beim Doppeltippen einer unwichtigen Benachrichtigung wurde behoben."
+    ],
+    "Sicherung": [
+      "Problem behoben, bei dem App-Symbole falsch angezeigt wurden, wenn nicht auf dem Telefon installierte Apps von einem USB-Laufwerk wiederhergestellt wurden.",
+      "Problem behoben, bei dem App-Symbole falsch angezeigt wurden, wenn nicht auf dem Telefon installierte Apps von einem USB-Laufwerk wiederhergestellt wurden."
+    ],
+    "Dateimanager": [
+      "Problem behoben, bei dem umbenannte oder entschlüsselte Dateien nicht durchsucht werden konnten",
+      "Problem behoben, bei dem umbenannte oder entschlüsselte Dateien nicht durchsucht werden konnten"
+    ],
+    "Rekorder": [
+      "Problem mit der fehlerhaften Anzeige des Einstellungssymbols behoben",
+      "Problem mit der fehlerhaften Anzeige des Einstellungssymbols behoben"
+    ],
+    "Einstellungen": [
+      "Das Problem wurde behoben, dass in der Einstellungssynchronisierung zwei Optionen zum Hinzufügen eines persönlichen Kontos angezeigt wurden.",
+      "Einstellungen]-[Mein Gerät]-[Anleitung] geändert zu [Wichtige Sicherheitsinformationen]"
+    ],
+    "Sonstiges": [
+      "Systemleistung optimiert",
+      "Systemsicherheit und -stabilität verbessert"
     ]
   },
   "logs_fr": {
+    "Téléphone": [
+      "Optimisation de la stratégie de traitement après perte de carte SIM en mode double SIM",
+      "Optimisation de la stratégie de traitement après perte de carte SIM en mode double SIM"
+    ],
+    "Contacts": [
+      "Correction du problème d’affichage incorrect des conférences téléphoniques VoLTE dans les Paramètres",
+      "Correction de l’affichage incorrect des appels conférence VoLTE dans les Paramètres"
+    ],
+    "Écran de verrouillage, barre d’état, barre de notifications": [
+      "Correction du chevauchement entre les notifications et les raccourcis lors d'un double appui sur une notification non importante.",
+      "Correction du chevauchement entre les notifications et les raccourcis lors d'un double appui sur une notification non importante."
+    ],
+    "Sauvegarde": [
+      "Correction du problème d’affichage incorrect des icônes lors de la restauration depuis une clé USB d’applications non installées sur le téléphone.",
+      "Correction du problème d’affichage incorrect des icônes lors de la restauration depuis une clé USB d’applications non installées sur le téléphone."
+    ],
+    "Gestionnaire de fichiers": [
+      "Correction du problème empêchant la recherche des fichiers renommés ou déchiffrés",
+      "Correction du problème empêchant la recherche des fichiers renommés ou déchiffrés"
+    ],
+    "Enregistreur": [
+      "Correction du problème d'affichage anormal de l'icône Paramètres",
+      "Correction du problème d'affichage anormal de l'icône Paramètres"
+    ],
+    "Paramètres": [
+      "Correction du problème où deux options d'ajout de compte personnel s'affichaient dans la synchronisation des paramètres.",
+      "Paramètres]-[Mon appareil]-[Instructions] remplacé par [Informations de sécurité importantes]"
+    ],
     "Autre": [
       "Performances système optimisées",
       "Sécurité et stabilité du système améliorées"
     ]
   },
   "logs_it": {
+    "Telefono": [
+      "Ottimizzazione della strategia di gestione dopo la perdita della scheda SIM in modalità dual SIM",
+      "Ottimizzazione della strategia di gestione dopo la perdita della scheda SIM in modalità dual SIM"
+    ],
+    "Contatti": [
+      "Risolto il problema di visualizzazione errata delle conference call VoLTE nelle Impostazioni",
+      "Corretta la visualizzazione errata delle chiamate conference VoLTE nelle Impostazioni"
+    ],
+    "Schermata di blocco, barra di stato, barra delle notifiche": [
+      "Risolto il problema di sovrapposizione tra notifiche e scorciatoie quando si tocca due volte una notifica non importante.",
+      "Risolto il problema di sovrapposizione tra notifiche e scorciatoie quando si tocca due volte una notifica non importante."
+    ],
+    "Gestione file": [
+      "Risolto il problema per cui i file rinominati o decifrati non erano ricercabili",
+      "Risolto il problema per cui i file rinominati o decifrati non erano ricercabili"
+    ],
+    "Registratore": [
+      "Risolto il problema di visualizzazione anomala dell'icona Impostazioni",
+      "Risolto il problema di visualizzazione anomala dell'icona Impostazioni"
+    ],
+    "Impostazioni": [
+      "Risolto il problema per cui nella sincronizzazione delle impostazioni venivano mostrate due opzioni per aggiungere un account personale.",
+      "Impostazioni]-[Il mio dispositivo]-[Istruzioni] modificato in [Informazioni importanti sulla sicurezza]"
+    ],
     "Altro": [
       "Prestazioni di sistema ottimizzate",
       "Maggiore sicurezza e stabilità di sistema"
     ]
   },
   "logs_es": {
+    "Teléfono": [
+      "Optimización de la estrategia de gestión tras la pérdida de la tarjeta SIM en modo dual SIM",
+      "Optimización de la estrategia de gestión tras la pérdida de la tarjeta SIM en modo dual SIM"
+    ],
+    "Contactos": [
+      "Se corrigió el problema de visualización incorrecta de las llamadas de conferencia VoLTE en Ajustes",
+      "Corregida la visualización incorrecta de las llamadas de conferencia VoLTE en Ajustes"
+    ],
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Se corrige el problema de superposición entre notificaciones y accesos rápidos al doble tocar una notificación no importante.",
+      "Se corrige el problema de superposición entre notificaciones y accesos rápidos al doble tocar una notificación no importante."
+    ],
+    "Copia de seguridad": [
+      "Se corrigió el problema de visualización incorrecta de los iconos al restaurar desde una unidad USB aplicaciones no instaladas en el teléfono.",
+      "Se corrigió el problema de visualización incorrecta de los iconos al restaurar desde una unidad USB aplicaciones no instaladas en el teléfono."
+    ],
+    "Administrador de archivos": [
+      "Se corrigió el problema por el que no se podían buscar archivos renombrados o descifrados",
+      "Se corrigió el problema por el que no se podían buscar archivos renombrados o descifrados"
+    ],
+    "Grabadora": [
+      "Se corrigió el problema de visualización anómala del icono de Ajustes",
+      "Se corrigió el problema de visualización anómala del icono de Ajustes"
+    ],
+    "Ajustes": [
+      "Se ha corregido el problema por el que se mostraban dos opciones para añadir una cuenta personal en la sincronización de ajustes.",
+      "Ajustes]-[Mi dispositivo]-[Instrucciones] cambiado a [Información importante de seguridad]"
+    ],
     "Otros": [
       "Rendimiento del sistema optimizado",
       "Estabilidad y seguridad del sistema mejorada"
     ]
   },
   "logs_pt": {
+    "Telefone": [
+      "Otimização da estratégia de tratamento após perda do cartão SIM no modo dual SIM",
+      "Otimização da estratégia de tratamento após perda do cartão SIM no modo dual SIM"
+    ],
+    "Contatos": [
+      "Corrigido o problema de exibição incorreta de chamadas em conferência VoLTE nas Configurações",
+      "Corrigida a exibição incorreta das chamadas em conferência VoLTE nas Configurações"
+    ],
+    "Tela de bloqueio, barra de status, barra de notificações": [
+      "Corrigido o problema de sobreposição entre notificações e atalhos rápidos ao tocar duas vezes em uma notificação não importante.",
+      "Corrigido o problema de sobreposição entre notificações e atalhos rápidos ao tocar duas vezes em uma notificação não importante."
+    ],
+    "Cópia de segurança": [
+      "Corrigido o problema de exibição incorreta dos ícones ao restaurar de uma unidade USB aplicativos não instalados no telefone.",
+      "Corrigido o problema de exibição incorreta dos ícones ao restaurar de uma unidade USB aplicativos não instalados no telefone."
+    ],
+    "Gerenciador de arquivos": [
+      "Corrigido o problema que impedia pesquisar arquivos renomeados ou descriptografados",
+      "Corrigido o problema que impedia pesquisar arquivos renomeados ou descriptografados"
+    ],
+    "Gravador": [
+      "Corrigido o problema de exibição anormal do ícone de Configurações",
+      "Corrigido o problema de exibição anormal do ícone de Configurações"
+    ],
+    "Configurações": [
+      "Corrigido o problema em que duas opções de adicionar conta pessoal eram exibidas na sincronização de configurações.",
+      "Configurações]-[Meu dispositivo]-[Instruções] alterado para [Informações importantes de segurança]"
+    ],
     "Outros": [
       "Desempenho do sistema aprimorado",
       "Segurança e estabilidade do sistema aprimoradas"
     ]
   },
   "logs_tr": {
+    "Telefon": [
+      "Çift SIM modunda SIM kart kaybı sonrası işlem stratejisi optimize edildi",
+      "Çift SIM modunda SIM kart kaybı sonrası işlem stratejisi optimize edildi"
+    ],
+    "Kişiler": [
+      "Ayarlar'da VoLTE konferans aramalarının yanlış görüntülenmesi sorunu giderildi",
+      "Ayarlar'da VoLTE konferans aramalarının yanlış görünmesi düzeltildi"
+    ],
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Önemsiz bir bildirime çift dokunulduğunda bildirimlerle hızlı ayarların üst üste binmesi sorunu giderildi.",
+      "Önemsiz bir bildirime çift dokunulduğunda bildirimlerle hızlı ayarların üst üste binmesi sorunu giderildi."
+    ],
+    "Yedekleme": [
+      "USB sürücüsünden telefonda yüklü olmayan uygulamalar geri yüklenirken simgelerin yanlış görüntülenmesi sorunu giderildi.",
+      "USB sürücüsünden telefonda yüklü olmayan uygulamalar geri yüklenirken simgelerin yanlış görüntülenmesi sorunu giderildi."
+    ],
+    "Dosya Yöneticisi": [
+      "Yeniden adlandırılan veya şifresi çözülen dosyaların aranamaması sorunu giderildi",
+      "Yeniden adlandırılan veya şifresi çözülen dosyaların aranamaması sorunu giderildi"
+    ],
+    "Kayıt Cihazı": [
+      "Ayarlar simgesinin hatalı görüntülenmesi sorunu düzeltildi",
+      "Ayarlar simgesinin hatalı görüntülenmesi sorunu düzeltildi"
+    ],
+    "Ayarlar": [
+      "Ayarlar senkronizasyonunda iki kişisel hesap ekleme seçeneği gösterilmesi sorunu düzeltildi.",
+      "Ayarlar]-[Cihazım]-[Kullanım talimatları] [Önemli güvenlik bilgileri] olarak değiştirildi"
+    ],
     "Diğer": [
       "Sistem performansı optimize edildi",
       "Sistem güvenliği ve kararlılığı geliştirildi"
     ]
   },
   "logs_id": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "Telepon": [
+      "Mengoptimalkan strategi penanganan setelah kartu SIM hilang dalam mode dual SIM",
+      "Mengoptimalkan strategi penanganan setelah kartu SIM hilang dalam mode dual SIM"
+    ],
+    "Kontak": [
+      "Memperbaiki masalah tampilan panggilan konferensi VoLTE yang salah di Pengaturan",
+      "Memperbaiki tampilan panggilan konferensi VoLTE yang salah di Pengaturan"
+    ],
+    "Layar kunci, bilah status, bilah notifikasi": [
+      "Memperbaiki masalah tumpang tindih antara notifikasi dan tombol cepat saat mengetuk dua kali notifikasi tidak penting.",
+      "Memperbaiki masalah tumpang tindih antara notifikasi dan tombol cepat saat mengetuk dua kali notifikasi tidak penting."
+    ],
+    "Cadangan": [
+      "Memperbaiki masalah ikon yang ditampilkan secara tidak normal saat memulihkan aplikasi yang tidak terpasang di ponsel dari drive USB.",
+      "Memperbaiki masalah ikon yang ditampilkan secara tidak normal saat memulihkan aplikasi yang tidak terpasang di ponsel dari drive USB."
+    ],
+    "Pengelola File": [
+      "Memperbaiki masalah file yang diganti nama atau didekripsi tidak dapat dicari",
+      "Memperbaiki masalah file yang diganti nama atau didekripsi tidak dapat dicari"
+    ],
+    "Perekam": [
+      "Memperbaiki masalah ikon Pengaturan yang tidak tampil dengan benar",
+      "Memperbaiki masalah ikon Pengaturan yang tidak tampil dengan benar"
+    ],
+    "Pengaturan": [
+      "Memperbaiki masalah di mana dua opsi untuk menambahkan akun pribadi ditampilkan di sinkronisasi Pengaturan.",
+      "Setelan]-[Perangkat saya]-[Petunjuk penggunaan] diubah menjadi [Informasi keamanan penting]"
+    ],
+    "Lainnya": [
+      "Performa sistem dioptimalkan",
+      "Keamanan dan stabilitas sistem ditingkatkan"
     ]
   },
   "logs_vi": {
+    "Điện thoại": [
+      "Tối ưu hóa chiến lược xử lý sau khi mất thẻ SIM ở chế độ hai SIM",
+      "Tối ưu hóa chiến lược xử lý sau khi mất thẻ SIM ở chế độ hai SIM"
+    ],
+    "Danh bạ": [
+      "Đã sửa lỗi hiển thị sai cuộc gọi hội nghị VoLTE trong Cài đặt",
+      "Đã sửa lỗi hiển thị sai cuộc gọi hội nghị VoLTE trong Cài đặt"
+    ],
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Đã sửa lỗi thông báo và công tắc nhanh bị chồng lên nhau khi nhấn đúp vào thông báo không quan trọng.",
+      "Đã sửa lỗi thông báo và công tắc nhanh bị chồng lên nhau khi nhấn đúp vào thông báo không quan trọng."
+    ],
+    "Sao lưu": [
+      "Đã khắc phục sự cố biểu tượng hiển thị không đúng khi khôi phục ứng dụng chưa cài đặt trên điện thoại từ ổ USB.",
+      "Đã khắc phục sự cố biểu tượng hiển thị không đúng khi khôi phục ứng dụng chưa cài đặt trên điện thoại từ ổ USB."
+    ],
+    "Trình quản lý tệp": [
+      "Khắc phục sự cố không thể tìm kiếm tệp đã đổi tên hoặc đã giải mã",
+      "Khắc phục sự cố không thể tìm kiếm tệp đã đổi tên hoặc đã giải mã"
+    ],
+    "Máy ghi âm": [
+      "Khắc phục sự cố biểu tượng Cài đặt hiển thị bất thường",
+      "Khắc phục sự cố biểu tượng Cài đặt hiển thị bất thường"
+    ],
+    "Cài đặt": [
+      "Đã sửa lỗi hiển thị hai tùy chọn thêm tài khoản cá nhân trong đồng bộ hóa Cài đặt.",
+      "Cài đặt]-[Thiết bị của tôi]-[Hướng dẫn sử dụng] đổi thành [Thông tin an toàn quan trọng]"
+    ],
     "Khác": [
       "Tối ưu hiệu suất hệ thống",
       "Cải thiện tính ổn định và bảo mật hệ thống"
     ]
   },
   "logs_th": {
+    "โทรศัพท์": [
+      "เพิ่มประสิทธิภาพกลยุทธ์การจัดการเมื่อ SIM หลุดในโหมด Dual SIM",
+      "เพิ่มประสิทธิภาพกลยุทธ์การจัดการเมื่อ SIM หลุดในโหมด Dual SIM"
+    ],
+    "รายชื่อ": [
+      "แก้ไขปัญหาการแสดงผลการโทรประชุม VoLTE ไม่ถูกต้องในการตั้งค่า",
+      "แก้ไขการแสดงผลการโทรประชุม VoLTE ที่ไม่ถูกต้องในการตั้งค่า"
+    ],
+    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
+      "แก้ไขปัญหาการซ้อนทับกันระหว่างการแจ้งเตือนและปุ่มลัดเมื่อแตะสองครั้งที่การแจ้งเตือนที่ไม่สำคัญ",
+      "แก้ไขปัญหาการซ้อนทับกันระหว่างการแจ้งเตือนและปุ่มลัดเมื่อแตะสองครั้งที่การแจ้งเตือนที่ไม่สำคัญ"
+    ],
+    "สำรองข้อมูล": [
+      "แก้ไขปัญหาการแสดงไอคอนผิดปกติเมื่อกู้คืนแอปที่ยังไม่ได้ติดตั้งบนโทรศัพท์จากไดรฟ์ USB",
+      "แก้ไขปัญหาการแสดงไอคอนผิดปกติเมื่อกู้คืนแอปที่ยังไม่ได้ติดตั้งบนโทรศัพท์จากไดรฟ์ USB"
+    ],
+    "ตัวจัดการไฟล์": [
+      "แก้ไขปัญหาที่ไม่สามารถค้นหาไฟล์ที่เปลี่ยนชื่อหรือถอดรหัสแล้วได้",
+      "แก้ไขปัญหาที่ไม่สามารถค้นหาไฟล์ที่เปลี่ยนชื่อหรือถอดรหัสแล้วได้"
+    ],
+    "เครื่องบันทึกเสียง": [
+      "แก้ไขปัญหาไอคอนการตั้งค่าแสดงผลผิดปกติ",
+      "แก้ไขปัญหาไอคอนการตั้งค่าแสดงผลผิดปกติ"
+    ],
+    "การตั้งค่า": [
+      "แก้ไขปัญหาที่การซิงค์การตั้งค่าแสดงตัวเลือกเพิ่มบัญชีส่วนตัวสองรายการ",
+      "การตั้งค่า]-[อุปกรณ์ของฉัน]-[คำแนะนำการใช้งาน] เปลี่ยนเป็น [ข้อมูลความปลอดภัยที่สำคัญ]"
+    ],
     "อื่นๆ": [
       "เพิ่มประสิทธิภาพของระบบ",
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
     ]
   },
   "logs_ar": {
+    "الهاتف": [
+      "تحسين استراتيجية المعالجة بعد فقدان بطاقة SIM في وضع الشريحتين",
+      "تحسين استراتيجية المعالجة بعد فقدان بطاقة SIM في وضع الشريحتين"
+    ],
+    "جهات الاتصال": [
+      "إصلاح مشكلة عرض مكالمات مؤتمر VoLTE بشكل خاطئ في الإعدادات",
+      "إصلاح عرض مكالمات مؤتمر VoLTE بشكل غير صحيح في الإعدادات"
+    ],
+    "شاشة القفل، شريط الحالة، شريط الإشعارات": [
+      "إصلاح مشكلة تداخل الإشعارات مع مفاتيح الاختصار عند النقر المزدوج على إشعار غير مهم",
+      "إصلاح مشكلة تداخل الإشعارات مع مفاتيح الاختصار عند النقر المزدوج على إشعار غير مهم"
+    ],
+    "النسخ الاحتياطي": [
+      "إصلاح مشكلة عرض الرموز بشكل غير صحيح عند استعادة التطبيقات غير المثبّتة على الهاتف من محرك أقراص USB.",
+      "إصلاح مشكلة عرض الرموز بشكل غير صحيح عند استعادة التطبيقات غير المثبّتة على الهاتف من محرك أقراص USB."
+    ],
+    "مدير الملفات": [
+      "إصلاح مشكلة تعذّر البحث عن الملفات التي أُعيدت تسميتها أو فُكّ تشفيرها",
+      "إصلاح مشكلة تعذّر البحث عن الملفات التي أُعيدت تسميتها أو فُكّ تشفيرها"
+    ],
+    "مسجل": [
+      "إصلاح مشكلة عرض أيقونة الإعدادات بشكل غير طبيعي",
+      "إصلاح مشكلة عرض أيقونة الإعدادات بشكل غير طبيعي"
+    ],
+    "الإعدادات": [
+      "تم إصلاح مشكلة ظهور خيارين لإضافة حساب شخصي في مزامنة الإعدادات.",
+      "الإعدادات]-[جهازي]-[تعليمات الاستخدام] تم التغيير إلى [معلومات أمان مهمة]"
+    ],
     "أخرى": [
       "تحسين أداء النظام",
       "تحسين أمن واستقرار النظام"
     ]
   },
   "logs_in": {
+    "फ़ोन": [
+      "डुअल SIM मोड में SIM कार्ड खोने के बाद प्रसंस्करण रणनीति को अनुकूलित करें",
+      "डुअल SIM मोड में SIM कार्ड खोने के बाद प्रसंस्करण रणनीति को अनुकूलित करें"
+    ],
+    "संपर्क": [
+      "सेटिंग्स में VoLTE कॉन्फ़्रेंस कॉल गलत तरीके से दिखने की समस्या ठीक की गई",
+      "सेटिंग्स में VoLTE कॉन्फ़्रेंस कॉल का गलत प्रदर्शन ठीक किया गया"
+    ],
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
+      "महत्वहीन सूचना पर डबल टैप करने पर सूचना और त्वरित टॉगल के ओवरलैप होने की समस्या ठीक की गई",
+      "महत्वहीन सूचना पर डबल टैप करने पर सूचना और त्वरित टॉगल के ओवरलैप होने की समस्या ठीक की गई"
+    ],
+    "बैकअप": [
+      "फ़ोन पर इंस्टॉल न किए गए ऐप्स को USB ड्राइव से बहाल करते समय आइकन गलत तरीके से दिखने की समस्या ठीक की गई।",
+      "फ़ोन पर इंस्टॉल न किए गए ऐप्स को USB ड्राइव से बहाल करते समय आइकन गलत तरीके से दिखने की समस्या ठीक की गई।"
+    ],
+    "फ़ाइल प्रबंधक": [
+      "नाम बदली या डिक्रिप्ट की गई फ़ाइलों को खोज न पाने की समस्या ठीक की गई",
+      "नाम बदली या डिक्रिप्ट की गई फ़ाइलों को खोज न पाने की समस्या ठीक की गई"
+    ],
+    "रिकॉर्डर": [
+      "सेटिंग्स आइकन के अनियमित रूप से प्रदर्शित होने की समस्या ठीक की गई",
+      "सेटिंग्स आइकन के अनियमित रूप से प्रदर्शित होने की समस्या ठीक की गई"
+    ],
+    "सेटिंग्स": [
+      "सेटिंग्स सिंक में व्यक्तिगत खाता जोड़ने के दो विकल्प दिखने की समस्या ठीक की गई।",
+      "सेटिंग्स]-[मेरा डिवाइस]-[निर्देश] को [महत्वपूर्ण सुरक्षा जानकारी] में बदला गया"
+    ],
     "अन्य": [
       "सिस्टम परफ़ॉर्मेंस ऑप्टिमाइज़ किया गया है",
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
     ]
   },
   "logs_ug": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "تېلېفون": [
+      "قوش كارتا شارائىتىدا كارتا ئۈزۈلۈپ قېلىشتىن كېيىنكى بىر تەرەپ قىلىش ئىستراتېگىيىسىنى ئەلالاشتۇرۇش",
+      "قوش كارتا شارائىتىدا كارتا ئۈزۈلۈپ قېلىشتىن كېيىنكى بىر تەرەپ قىلىش ئىستراتېگىيىسىنى ئەلالاشتۇرۇش"
+    ],
+    "قۇلۇپ ئېكرانى، ھالەت بالدىقى، ئۇقتۇرۇش بالدىقى": [
+      "مۇھىم بولمىغان ئۇقتۇرۇشنى قوش چېكىشكەندە ئۇقتۇرۇش بىلەن تېز تەڭشەك ئالمىشىپ قېلىش مەسىلىسى تۈزىتىلدى.",
+      "مۇھىم بولمىغان ئۇقتۇرۇشنى قوش چېكىشكەندە ئۇقتۇرۇش بىلەن تېز تەڭشەك ئالمىشىپ قېلىش مەسىلىسى تۈزىتىلدى."
+    ],
+    "ھۆججەت باشقۇرغۇچ": [
+      "ئاتى ئۆزگەرتىلگەن ياكى شىفىرى يېشىلغان ھۆججەتلەرنى ئىزدەشكە بولمايدىغان مەسىلە ئوڭشالدى",
+      "ئاتى ئۆزگەرتىلگەن ياكى شىفىرى يېشىلغان ھۆججەتلەرنى ئىزدەشكە بولمايدىغان مەسىلە ئوڭشالدى"
+    ],
+    "ئاۋاز ئالغۇ": [
+      "تەڭشەك سىنبەلگىسىنىڭ نورمالسىز كۆرۈنۈش مەسىلىسى تۈزىتىلدى",
+      "تەڭشەك سىنبەلگىسىنىڭ نورمالسىز كۆرۈنۈش مەسىلىسى تۈزىتىلدى"
+    ],
+    "باشقىلىرى": [
+      "سىستېمىنىڭ مۇقىملىقىنى ئاشۇرۇش",
+      "سىستېما راۋانلىقىنى ئەلالاشتۇرۇش"
     ]
   },
   "logs_bo": {
-    "Other": [
+    "སྒྲ་འཇུག་ཆས": [
+      "སྒྲིག་འཛུགས་ངོ་རྟགས་རྒྱུན་མིན་ངང་མངོན་པའི་གནད་དོན་བཅོས་ཟིན།",
+      "སྒྲིག་འཛུགས་ངོ་རྟགས་རྒྱུན་མིན་ངང་མངོན་པའི་གནད་དོན་བཅོས་ཟིན།"
+    ],
+    "གཞན།": [
       "Optimized system performance",
       "Improved system security and stability"
     ]

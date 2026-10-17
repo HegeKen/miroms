@@ -2,10 +2,20 @@
   "logs_zh": {
     "MIUI12.5 增强版": [
       "全面流畅，更低功耗",
-      "【焦点计算】 依据场景的智能算力调度机制，提升全机型流畅度",
-      "【原子内存】 超精细内存管理机制，应用驻留全面提升",
-      "【液态存储】 灵敏且高效的文件存储机制，提升系统抗老化能力",
-      "【智能均衡】 对旗舰硬件性能的智能调配"
+      "焦点计算】 依据场景的智能算力调度机制，提升全机型流畅度",
+      "原子内存】 超精细内存管理机制，应用驻留全面提升",
+      "液态存储】 灵敏且高效的文件存储机制，提升系统抗老化能力",
+      "智能均衡】 对旗舰硬件性能的智能调配",
+      "全面流畅，更低功耗",
+      "焦点计算】 依据场景的智能算力调度机制，提升全机型流畅度",
+      "原子内存】 超精细内存管理机制，应用驻留全面提升",
+      "液态存储】 灵敏且高效的文件存储机制，提升系统抗老化能力",
+      "智能均衡】 对旗舰硬件性能的智能调配",
+      "全面流畅，更低功耗",
+      "焦点计算】 依据场景的智能算力调度机制，提升全机型流畅度",
+      "原子内存】 超精细内存管理机制，应用驻留全面提升",
+      "液态存储】 灵敏且高效的文件存储机制，提升系统抗老化能力",
+      "智能均衡】 对旗舰硬件性能的智能调配"
     ],
     "锁屏": [
       "优化 锁屏负一屏功能的内存占用",
@@ -19,11 +29,28 @@
       "修复 个别界面人脸或是指纹解锁时，解锁过程中锁屏信息消失慢的问题",
       "修复 修复灭屏后立即进行指纹解锁有概率闪黑问题",
       "修复 指纹解锁之后一直黑屏，只显示状态栏问题",
+      "修复 锁屏使用三方主题后，开启超级壁纸功能，锁屏时间信息不显示的问题",
+      "优化 锁屏负一屏功能的内存占用",
+      "修复 抬起亮屏功能失效的问题",
+      "修复 锁屏使用三方主题后，开启超级壁纸功能，锁屏时间信息不显示的问题",
+      "优化 锁屏负一屏功能的内存占用",
+      "修复 抬起亮屏功能失效的问题",
+      "修复 锁屏使用三方主题后，开启超级壁纸功能，锁屏时间信息不显示的问题",
+      "优化 锁屏负一屏功能的内存占用",
+      "修复 抬起亮屏功能失效的问题",
       "修复 锁屏使用三方主题后，开启超级壁纸功能，锁屏时间信息不显示的问题"
     ],
     "状态栏、通知栏": [
       "优化 来电的悬浮通知屏蔽逻辑",
       "优化 闹钟提醒通知的展示",
+      "修复 透明背景下，悬浮通知显示重叠的问题",
+      "修复 长按通知偶现权限弹窗重叠的异常",
+      "修复 未接来电悬浮通知偶现异常的问题",
+      "优化 来电的悬浮通知屏蔽逻辑",
+      "修复 透明背景下，悬浮通知显示重叠的问题",
+      "修复 长按通知偶现权限弹窗重叠的异常",
+      "修复 未接来电悬浮通知偶现异常的问题",
+      "优化 来电的悬浮通知屏蔽逻辑",
       "修复 透明背景下，悬浮通知显示重叠的问题",
       "修复 长按通知偶现权限弹窗重叠的异常",
       "修复 未接来电悬浮通知偶现异常的问题"
@@ -32,6 +59,15 @@
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄的问题",
       "修复 部分应用的帐号无法同步到“帐号与同步”中的问题",
       "修复 在“应用管理-默认打开链接”页面中选择“地图”选项时页面崩溃的问题"
+    ],
+    "小米云服务": [
+      "优化 来电的悬浮通知屏蔽逻辑",
+      "修复 透明背景下，悬浮通知显示重叠的问题",
+      "修复 长按通知偶现权限弹窗重叠的异常",
+      "修复 未接来电悬浮通知偶现异常的问题"
+    ],
+    "系統": [
+      "更新谷歌安全补丁（2021#09），提升系统安全性"
     ]
   },
   "logs_en": {
@@ -40,321 +76,1253 @@
       "Focused algorithms: Our new algorithms will dynamically allocate system resources based on specific scenes, ensuring smooth experience on all models.",
       "Atomized memory: Ultra-fine memory management mechanism will make RAM usage more efficient.",
       "Liquid storage: New sensitive storage mechanisms will keep your system vibrant and responsive as time goes by.",
-      "Smart balance: Core system improvements allow your device to make the best of the flagship hardware specs."
-    ],
-    "Lock screen": [
-      "Optimization: App vault memory usage when device is locked",
-      "Fix: ^Raise to wake^ turned off unexpectedly in some cases",
-      "Fix: Issues with the Lock screen clock when third party themes and super wallpapers were used"
-    ],
-    "Status bar, Notification shade": [
-      "Optimization: Algorithms for displaying incoming call notifications",
-      "Fix: Floating notifications overlapped when the transparent background was used",
-      "Fix: Permission dialog elements overlapped after a notification was long pressed",
-      "Fix: Notifications weren^t displayed correctly after missed calls"
-    ]
-  },
-  "logs_zh_tw": {
-    "MIUI12.5 增強版": [
-      "全面流暢，更低功耗",
-      "【焦點計算】 依據場景的智慧演算力調度機制，提升全機型流暢度",
-      "【原子記憶體】 超精細記憶體管理機制，應用駐留全面提升",
-      "【液態存儲】 靈敏且高效的檔案儲存機制，提升系統抗老化能力",
-      "【智慧均衡】 對旗艦硬體性能的智慧調整"
-    ],
-    "系統": [
-      "更新Android安全性修補程式等級（2021#09），提升系統安全性",
-      "更新Android安全性修補程式等級（2021#09），提升系統安全性"
-    ],
-    "鎖屏": [
-      "優化: 鎖定螢幕畫面左側畫面的記憶體佔用",
-      "修復: 抬起喚醒螢幕功能失效的問題",
-      "修復: 螢幕鎖定使用第三方主題後，開啟超級壁紙功能，螢幕鎖定頁面時間資訊不顯示的問題"
-    ],
-    "狀態欄、通知欄": [
-      "優化: 來電的懸浮通知屏蔽邏輯",
-      "修復: 透明背景下，懸浮通知顯示重疊的問題",
-      "修復: 長按通知偶現權限彈窗重疊的異常",
-      "修復: 未接來電懸浮通知偶現異常的問題"
-    ]
-  },
-  "logs_ja": {
-    "システム": [
-      "Androidのセキュリティパッチを2021年9月にアップデートしました。システムのセキュリティを強化しました。",
-      "Androidのセキュリティパッチを2021年9月にアップデートしました。システムのセキュリティを強化しました。"
-    ],
-    "ロック画面": [
-      "最適化: デバイスがロックされているときのアプリ保管庫のメモリ使用量",
-      "修正: ^持ち上げてスリープ解除^機能が予期せずオフになる場合がある問題",
-      "修正: サードパーティ製のテーマやスーパー壁紙を使用した際のロック画面の時計に関する問題"
-    ],
-    "ステータスバー、通知シェード": [
-      "最適化: 着信通知を表示するアルゴリズム",
-      "修正: 透明な背景を使用した際にフローティング通知の表示が重なる問題",
-      "修正: 通知を長押しするとアクセス許可のダイアログと表示が重なってしまう問題",
-      "修正: 不在着信後に通知が正しく表示されない問題"
-    ]
-  },
-  "logs_ko": {
-    "시스템": [
-      "Android 보안패치 (2021#09) 업데이트됨. 시스템 보안이 향상되었습니다.",
-      "Android 보안패치 (2021#09) 업데이트됨. 시스템 보안이 향상되었습니다."
-    ],
-    "잠금화면": [
-      "최적화: 기기가 잠겨 있을 시의 앱 서랍 메모리 점유",
-      "수정: 일부 상황에서 ^손목 올려 켜기^가 갑자기 꺼지는 문제",
-      "수정: 타사 테마 및 슈퍼 배경화면을 사용 중일 시 잠금화면 시계가 제대로 표시되지 않는 문제"
-    ],
-    "상태 바, 알림 바": [
-      "최적화: 수신 통화 알림 표시를 위한 알고리즘",
-      "수정: 투명 배경화면 사용 시 플로팅 창이 겹치는 문제",
-      "수정: 알림을 오래 누르면 발생할 수 있는 권한 다이얼로그 요소가 겹치는 문제",
-      "수정: 부재중 통화 후의 알림이 제대로 표시되지 않는 문제"
-    ]
-  },
-  "logs_ru": {
-    "Система": [
-      "Обновление системы безопасности Android (сентябрь 2021 года). Улучшена безопасность системы.",
-      "Обновление системы безопасности Android (сентябрь 2021 года). Улучшена безопасность системы."
-    ],
-    "Экран блокировки": [
-      "Оптимизация: Использование памяти Лентой виджетов, когда устройство заблокировано",
-      "Исправлено: В некоторых случаях функция ^Поднять для активации^ могла отключаться",
-      "Исправлено: Исправлены ошибки отображения виджета часов на экране блокировки при использовании суперобоев и сторонних тем"
-    ],
-    "Строка состояния, шторка уведомлений": [
-      "Оптимизация: Алгоритмы отображения уведомлений о входящих вызовах",
-      "Исправлено: При использовании прозрачного фона всплывающие уведомления могли перекрываться",
-      "Исправлено: Элементы диалогового окна предоставления разрешений перекрывались после долгого нажатия на уведомление",
-      "Исправлено: После пропущенных вызовов уведомления могли отображаться неправильно"
-    ]
-  },
-  "logs_uk": {
-    "Система": [
-      "Оновлено патч безпеки Android за вересень 2021 року. Збільшено безпеку системи.",
-      "Оновлено патч безпеки Android за вересень 2021 року. Збільшено безпеку системи."
-    ],
-    "Екран блокування": [
-      "Оптимізація: Використання пам^яті Стрічкою віджетів, коли пристрій заблоковано",
-      "Виправлено: В деяких випадках функція ^Підняти для активації^ могла відключатися",
-      "Виправлено: Виправлені помилки відображення віджета годинника на екрані блокування під час використання супершрплер та сторонніх тем"
-    ],
-    "Рядок стану, Панель сповіщень": [
-      "Оптимізація: Алгоритми відображення сповіщень про вхідні виклики",
-      "Виправлено: Під час використання прозорого фону спливаючі сповіщення могли перекриватися",
-      "Виправлено: Елементи діалогового вікна надання дозволів перекривалися після довгого натиснення на сповіщення",
-      "Виправлено: Після пропущених викликів сповіщення могли відображатися неправильно"
-    ]
-  },
-  "logs_pl": {
-    "System": [
-      "Zaktualizowano Pakiet Bezpieczeństwa Android do września 2021 r. Zwiększono bezpieczeństwo systemu.",
-      "Zaktualizowano Pakiet Bezpieczeństwa Android do września 2021 r. Zwiększono bezpieczeństwo systemu."
-    ],
-    "Ekran blokady": [
-      "Zoptymalizowano: Wykorzystanie pamięci skarbca aplikacji, gdy urządzenie jest zablokowane",
-      "Naprawiono: W niektórych przypadkach funkcja „Podnieś, by się obudzić” została niespodziewanie wyłączona",
-      "Naprawiono: Problemy z zegarem na ekranie blokady, gdy używane były motywy i super tapety innych firm"
-    ],
-    "Pasek powiadomień, Panel powiadomień": [
-      "Zoptymalizowano: Algorytmy wyświetlania powiadomień o połączeniach przychodzących",
-      "Naprawiono: Powiadomienia pływające nakładały się, gdy używane było przezroczyste tło",
-      "Naprawiono: Elementy okna dialogowego uprawnień nakładały się po długim naciśnięciu powiadomienia",
-      "Naprawiono: Powiadomienia nie wyświetlały się poprawnie po nieodebranych połączeniach"
-    ]
-  },
-  "logs_de": {
-    "MIUI12.5 Enhanced": [
+      "Smart balance: Core system improvements allow your device to make the best of the flagship hardware specs.",
+      "Swift performance. More life between the charges.",
+      "Focused algorithms: Our new algorithms will dynamically allocate system resources based on specific scenes, ensuring smooth experience on all models.",
+      "Atomized memory: Ultra-fine memory management mechanism will make RAM usage more efficient.",
+      "Liquid storage: New sensitive storage mechanisms will keep your system vibrant and responsive as time goes by.",
+      "Smart balance: Core system improvements allow your device to make the best of the flagship hardware specs.",
       "Swift performance. More life between the charges.",
       "Focused algorithms: Our new algorithms will dynamically allocate system resources based on specific scenes, ensuring smooth experience on all models.",
       "Atomized memory: Ultra-fine memory management mechanism will make RAM usage more efficient.",
       "Liquid storage: New sensitive storage mechanisms will keep your system vibrant and responsive as time goes by.",
       "Smart balance: Core system improvements allow your device to make the best of the flagship hardware specs."
     ],
-    "System": [
-      "Updated Android Security Patch to September 2021. Increased system security.",
-      "Updated Android Security Patch to September 2021. Increased system security."
-    ],
     "Lock screen": [
       "Optimization: App vault memory usage when device is locked",
-      "Fix: ^Raise to wake^ turned off unexpectedly in some cases",
+      "Fix: Screen flashed after locking when Super wallpapers were used",
+      "Fix: Wallpapers flashed when Fingerprint unlock was used in some cases",
+      "Fix: Display abnormalities occurred when Fingerprint unlock was used with games",
+      "Fix: Issues with the fingerprint animation in several scenes",
+      "Fix: Fingerprint and Face unlock were turned off after a SIM card was installed",
+      "Fix: The screen flashed when Fingerprint unlock was used with Super wallpapers in some cases",
+      "Fix: \"Raise to wake\" turned off unexpectedly in some cases",
+      "Fix: Lock screen notifications didn't disappear on time when Fingerprint or Face unlock was used in some cases",
+      "Fix: Screen flashed when Fingerprint unlock was used in some cases",
+      "Fix: No items except for the status bar were shown on the screen after using Fingerprint unlock",
+      "Fix: Issues with the Lock screen clock when third party themes and super wallpapers were used",
+      "Optimization: App vault memory usage when device is locked",
+      "Fix: \"Raise to wake\" turned off unexpectedly in some cases",
+      "Fix: Issues with the Lock screen clock when third party themes and super wallpapers were used",
+      "Optimization: App vault memory usage when device is locked",
+      "Fix: \"Raise to wake\" turned off unexpectedly in some cases",
+      "Fix: Issues with the Lock screen clock when third party themes and super wallpapers were used",
+      "Optimization: App vault memory usage when device is locked",
+      "Fix: \"Raise to wake\" turned off unexpectedly in some cases",
       "Fix: Issues with the Lock screen clock when third party themes and super wallpapers were used"
+    ],
+    "status bar, Notification shade": [
+      "Optimization: Algorithms for displaying incoming call notifications",
+      "Optimization: Alarm notifications",
+      "Fix: Floating notifications overlapped when the transparent background was used",
+      "Fix: Permission dialog elements overlapped after a notification was long pressed",
+      "Fix: Notifications weren't displayed correctly after missed calls",
+      "Optimization: Algorithms for displaying incoming call notifications",
+      "Fix: Floating notifications overlapped when the transparent background was used",
+      "Fix: Permission dialog elements overlapped after a notification was long pressed",
+      "Fix: Notifications weren't displayed correctly after missed calls"
+    ],
+    "Settings": [
+      "Fix: UI issues that appeared while adding corporate Wi-Fi networks",
+      "Fix: Some accounts couldn't be synced",
+      "Fix: Crashes occurred when the default map was selected"
     ],
     "Status bar, Notification shade": [
       "Optimization: Algorithms for displaying incoming call notifications",
       "Fix: Floating notifications overlapped when the transparent background was used",
       "Fix: Permission dialog elements overlapped after a notification was long pressed",
-      "Fix: Notifications weren^t displayed correctly after missed calls"
+      "Fix: Notifications weren't displayed correctly after missed calls"
+    ],
+    "Mi Cloud": [
+      "Optimization: Algorithms for displaying incoming call notifications",
+      "Fix: Floating notifications overlapped when the transparent background was used",
+      "Fix: Permission dialog elements overlapped after a notification was long pressed",
+      "Fix: Notifications weren't displayed correctly after missed calls"
+    ]
+  },
+  "logs_zh_tw": {
+    "MIUI12.5 增強版": [
+      "全面流暢，更低功耗",
+      "焦點計算】 依據場景的智慧演算力調度機制，提升全機型流暢度",
+      "原子記憶體】 超精細記憶體管理機制，應用駐留全面提升",
+      "液態存儲】 靈敏且高效的檔案儲存機制，提升系統抗老化能力",
+      "智慧均衡】 對旗艦硬體性能的智慧調整",
+      "全面流暢，更低功耗",
+      "焦點計算】 依據場景的智慧演算力調度機制，提升全機型流暢度",
+      "原子記憶體】 超精細記憶體管理機制，應用駐留全面提升",
+      "液態存儲】 靈敏且高效的檔案儲存機制，提升系統抗老化能力",
+      "智慧均衡】 對旗艦硬體性能的智慧調整",
+      "全面流暢，更低功耗",
+      "焦點計算】 依據場景的智慧演算力調度機制，提升全機型流暢度",
+      "原子記憶體】 超精細記憶體管理機制，應用駐留全面提升",
+      "液態存儲】 靈敏且高效的檔案儲存機制，提升系統抗老化能力",
+      "智慧均衡】 對旗艦硬體性能的智慧調整"
+    ],
+    "鎖屏": [
+      "優化: 鎖定螢幕畫面左側畫面的記憶體佔用",
+      "修復: 使用超級壁紙，鎖屏界面螢幕熄滅時偶現閃黑的問題",
+      "修復: 個別界面螢幕熄滅指紋解鎖時出現壁紙閃現的問題",
+      "修復: 在遊戲頁面時，指紋解鎖有概率螢幕出現雪花畫面的問題",
+      "修復: 指紋解鎖時，個別界面熄滅螢幕後快速指紋解鎖出現動畫不對問題",
+      "修復: 在插入SIM卡後有概率出現指紋和人臉功能失效問題",
+      "修復: 使用超級壁紙時，螢幕熄滅狀態下指紋解鎖進入個別界面閃黑問題",
+      "修復: 抬起喚醒螢幕功能失效的問題",
+      "修復: 個別界面人臉或是指紋解鎖時，解鎖過程中螢幕鎖定畫面訊息消失慢的問題",
+      "修復: 修復螢幕熄滅後立即進行指紋解鎖有概率閃黑問題",
+      "修復: 指紋解鎖之後一直顯示黑色畫面，只顯示狀態欄問題",
+      "修復: 螢幕鎖定使用第三方主題後，開啟超級壁紙功能，螢幕鎖定頁面時間資訊不顯示的問題",
+      "優化: 鎖定螢幕畫面左側畫面的記憶體佔用",
+      "修復: 抬起喚醒螢幕功能失效的問題",
+      "修復: 螢幕鎖定使用第三方主題後，開啟超級壁紙功能，螢幕鎖定頁面時間資訊不顯示的問題",
+      "優化: 鎖定螢幕畫面左側畫面的記憶體佔用",
+      "修復: 抬起喚醒螢幕功能失效的問題",
+      "修復: 螢幕鎖定使用第三方主題後，開啟超級壁紙功能，螢幕鎖定頁面時間資訊不顯示的問題",
+      "優化: 鎖定螢幕畫面左側畫面的記憶體佔用",
+      "修復: 抬起喚醒螢幕功能失效的問題",
+      "修復: 螢幕鎖定使用第三方主題後，開啟超級壁紙功能，螢幕鎖定頁面時間資訊不顯示的問題"
+    ],
+    "狀態欄、通知欄": [
+      "優化: 來電的懸浮通知屏蔽邏輯",
+      "優化: 鬧鐘提醒通知的展示",
+      "修復: 透明背景下，懸浮通知顯示重疊的問題",
+      "修復: 長按通知偶現權限彈窗重疊的異常",
+      "修復: 未接來電懸浮通知偶現異常的問題",
+      "優化: 來電的懸浮通知屏蔽邏輯",
+      "修復: 透明背景下，懸浮通知顯示重疊的問題",
+      "修復: 長按通知偶現權限彈窗重疊的異常",
+      "修復: 未接來電懸浮通知偶現異常的問題",
+      "優化: 來電的懸浮通知屏蔽邏輯",
+      "修復: 透明背景下，懸浮通知顯示重疊的問題",
+      "修復: 長按通知偶現權限彈窗重疊的異常",
+      "修復: 未接來電懸浮通知偶現異常的問題"
+    ],
+    "設定": [
+      "修復: Wi-Fi 增加網路時選擇“企業級加密”會導致域名框太窄的問題",
+      "修復: 部分應用的帳號無法同步到“帳號與同步”中的問題",
+      "修復: 在“應用管理-默認打開鏈接”頁面中選擇“地圖”選項時頁面崩潰的問題"
+    ],
+    "小米雲服務": [
+      "優化: 來電的懸浮通知屏蔽邏輯",
+      "修復: 透明背景下，懸浮通知顯示重疊的問題",
+      "修復: 長按通知偶現權限彈窗重疊的異常",
+      "修復: 未接來電懸浮通知偶現異常的問題"
+    ],
+    "系統": [
+      "更新Android安全性修補程式等級（2021#09），提升系統安全性"
+    ]
+  },
+  "logs_ja": {
+    "MIUI12.5 強化版": [
+      "流れるようなパフォーマンス。パワーアップしたバッテリー持ち。",
+      "フォーカスアルゴリズム：新しいアルゴリズムは、特定のシーンに基づいてシステムリソースを動的に割り当て、すべてのモデルでスムーズな操作性を実現します。",
+      "アトマイズメモリ：超微細なメモリ管理メカニズムにより、RAMの使用をより効率的にします。",
+      "液体ストレージ：新しい高感度なストレージメカニズムにより、時間が経過してもシステムの効率性と応答性が保たれます。",
+      "スマートバランス：コアシステムの改善により、フラッグシップハードウェアのスペックを最大限に活かすことができます。",
+      "流れるようなパフォーマンス。パワーアップしたバッテリー持ち。",
+      "フォーカスアルゴリズム：新しいアルゴリズムは、特定のシーンに基づいてシステムリソースを動的に割り当て、すべてのモデルでスムーズな操作性を実現します。",
+      "アトマイズメモリ：超微細なメモリ管理メカニズムにより、RAMの使用をより効率的にします。",
+      "液体ストレージ：新しい高感度なストレージメカニズムにより、時間が経過してもシステムの効率性と応答性が保たれます。",
+      "スマートバランス：コアシステムの改善により、フラッグシップハードウェアのスペックを最大限に活かすことができます。",
+      "流れるようなパフォーマンス。パワーアップしたバッテリー持ち。",
+      "フォーカスアルゴリズム：新しいアルゴリズムは、特定のシーンに基づいてシステムリソースを動的に割り当て、すべてのモデルでスムーズな操作性を実現します。",
+      "アトマイズメモリ：超微細なメモリ管理メカニズムにより、RAMの使用をより効率的にします。",
+      "液体ストレージ：新しい高感度なストレージメカニズムにより、時間が経過してもシステムの効率性と応答性が保たれます。",
+      "スマートバランス：コアシステムの改善により、フラッグシップハードウェアのスペックを最大限に活かすことができます。"
+    ],
+    "ロック画面": [
+      "最適化: デバイスがロックされているときのアプリ保管庫のメモリ使用量",
+      "修正: スーパー壁紙を使用するとロック後に画面が点滅する問題",
+      "修正: 指紋認証によるロック解除時に壁紙が点滅する場合がある問題",
+      "修正: ゲームで指紋認証を使用すると表示異常が発生する問題",
+      "修正: いくつかのシーンでの指紋アニメーションに関する問題",
+      "修正: SIMカードを挿入後、指紋認証と顔認証がオフになる問題",
+      "修正: スーパー壁紙を使用して指紋認証を行うと画面が点滅する場合がある問題",
+      "修正: '持ち上げてスリープ解除'機能が予期せずオフになる場合がある問題",
+      "修正: 指紋認証や顔認証を使用したときに、ロック画面の通知が時間通りに消えないことがある問題",
+      "修正: 指紋認証によるロック解除時に画面が点滅する場合がある問題",
+      "修正: 指紋認証後の画面にステータスバー以外のアイテムが表示されない問題",
+      "修正: サードパーティ製のテーマやスーパー壁紙を使用した際のロック画面の時計に関する問題",
+      "最適化: デバイスがロックされているときのアプリ保管庫のメモリ使用量",
+      "修正: '持ち上げてスリープ解除'機能が予期せずオフになる場合がある問題",
+      "修正: サードパーティ製のテーマやスーパー壁紙を使用した際のロック画面の時計に関する問題",
+      "最適化: デバイスがロックされているときのアプリ保管庫のメモリ使用量",
+      "修正: '持ち上げてスリープ解除'機能が予期せずオフになる場合がある問題",
+      "修正: サードパーティ製のテーマやスーパー壁紙を使用した際のロック画面の時計に関する問題",
+      "最適化: デバイスがロックされているときのアプリ保管庫のメモリ使用量",
+      "修正: '持ち上げてスリープ解除'機能が予期せずオフになる場合がある問題",
+      "修正: サードパーティ製のテーマやスーパー壁紙を使用した際のロック画面の時計に関する問題"
+    ],
+    "設定": [
+      "修正: 企業のWi-Fiネットワークを追加する際に表示されるUIの問題",
+      "修正: 一部のアカウントが同期できない問題",
+      "修正: デフォルトの地図を選択するとクラッシュする問題"
+    ],
+    "ステータスバー、通知シェード": [
+      "最適化: 着信通知を表示するアルゴリズム",
+      "修正: 透明な背景を使用した際にフローティング通知の表示が重なる問題",
+      "修正: 通知を長押しするとアクセス許可のダイアログと表示が重なってしまう問題",
+      "修正: 不在着信後に通知が正しく表示されない問題"
+    ],
+    "Xiaomi クラウドサービス": [
+      "最適化: 着信通知を表示するアルゴリズム",
+      "修正: 透明な背景を使用した際にフローティング通知の表示が重なる問題",
+      "修正: 通知を長押しするとアクセス許可のダイアログと表示が重なってしまう問題",
+      "修正: 不在着信後に通知が正しく表示されない問題"
+    ],
+    "システム": [
+      "Androidのセキュリティパッチを2021年9月にアップデートしました。システムのセキュリティを強化しました。"
+    ]
+  },
+  "logs_ko": {
+    "MIUI12.5 강화버전": [
+      "더욱 원활한 성능. 전력 소비가 더 낮아졌습니다.",
+      "집중 알고리즘: 새로운 알고리즘은 특정 시나리오를 기반으로 시스템 리소스를 동적으로 할당하여 모든 기종에서 원활한 경험을 보장합니다.",
+      "원자 메모리: 초정밀 메모리 관리 메커니즘으로 RAM을 더 효율적으로 사용하실 수 있습니다.",
+      "리퀴드 스토리지: 시스템의 노후화를 방지하는 민감하고 효율적인 파일 저장 메커니즘을 지원합니다.",
+      "스마트 밸런스: 코어 시스템 개선으로 플래그십 하드웨어 사양을 최대한 활용할 수 있습니다.",
+      "더욱 원활한 성능. 전력 소비가 더 낮아졌습니다.",
+      "집중 알고리즘: 새로운 알고리즘은 특정 시나리오를 기반으로 시스템 리소스를 동적으로 할당하여 모든 기종에서 원활한 경험을 보장합니다.",
+      "원자 메모리: 초정밀 메모리 관리 메커니즘으로 RAM을 더 효율적으로 사용하실 수 있습니다.",
+      "리퀴드 스토리지: 시스템의 노후화를 방지하는 민감하고 효율적인 파일 저장 메커니즘을 지원합니다.",
+      "스마트 밸런스: 코어 시스템 개선으로 플래그십 하드웨어 사양을 최대한 활용할 수 있습니다.",
+      "더욱 원활한 성능. 전력 소비가 더 낮아졌습니다.",
+      "집중 알고리즘: 새로운 알고리즘은 특정 시나리오를 기반으로 시스템 리소스를 동적으로 할당하여 모든 기종에서 원활한 경험을 보장합니다.",
+      "원자 메모리: 초정밀 메모리 관리 메커니즘으로 RAM을 더 효율적으로 사용하실 수 있습니다.",
+      "리퀴드 스토리지: 시스템의 노후화를 방지하는 민감하고 효율적인 파일 저장 메커니즘을 지원합니다.",
+      "스마트 밸런스: 코어 시스템 개선으로 플래그십 하드웨어 사양을 최대한 활용할 수 있습니다."
+    ],
+    "잠금화면": [
+      "최적화: 기기가 잠겨 있을 시의 앱 서랍 메모리 점유",
+      "수정: 슈퍼 배경화면 사용 중에 잠금을 해제한 후 화면이 깜빡이는 문제",
+      "수정: 일부 상황에서 지문 잠금해제를 사용 시 배경화면이 깜빡이는 문제",
+      "수정: 게이밍 중 지문 잠금해제를 사용 시 화면에 오류가 발생하는 문제",
+      "수정: 여러 상황에서 발생하는 지문 애니메이션 오류 문제",
+      "수정: SIM 카드를 장착한 후 지문 잠금해제 및 안면 인식 잠금해제가 꺼지는 문제",
+      "수정: 슈퍼 배경화면에서 지문 잠금해제를 사용하는 중에 발생하는 화면이 깜빡이는 문제",
+      "수정: 일부 상황에서 '손목 올려 켜기'가 갑자기 꺼지는 문제",
+      "수정: 일부 상황에서 지문 잠금해제 또는 안면 인식 잠금해제 사용 시 적시에 잠금화면 알림이 사라지지 않는 문제",
+      "수정: 일부 상황에서 지문 잠금해제를 사용 시 화면이 깜빡이는 문제",
+      "수정: 지문 잠금해제를 사용한 후 화면에 상태 바를 제외한 다른 항목이 표시되지 않는 문제",
+      "수정: 타사 테마 및 슈퍼 배경화면을 사용 중일 시 잠금화면 시계가 제대로 표시되지 않는 문제",
+      "최적화: 기기가 잠겨 있을 시의 앱 서랍 메모리 점유",
+      "수정: 일부 상황에서 '손목 올려 켜기'가 갑자기 꺼지는 문제",
+      "수정: 타사 테마 및 슈퍼 배경화면을 사용 중일 시 잠금화면 시계가 제대로 표시되지 않는 문제",
+      "최적화: 기기가 잠겨 있을 시의 앱 서랍 메모리 점유",
+      "수정: 일부 상황에서 '손목 올려 켜기'가 갑자기 꺼지는 문제",
+      "수정: 타사 테마 및 슈퍼 배경화면을 사용 중일 시 잠금화면 시계가 제대로 표시되지 않는 문제",
+      "최적화: 기기가 잠겨 있을 시의 앱 서랍 메모리 점유",
+      "수정: 일부 상황에서 '손목 올려 켜기'가 갑자기 꺼지는 문제",
+      "수정: 타사 테마 및 슈퍼 배경화면을 사용 중일 시 잠금화면 시계가 제대로 표시되지 않는 문제"
+    ],
+    "상태 바, 알림 바": [
+      "최적화: 수신 통화 알림 표시를 위한 알고리즘",
+      "최적화: 알람 알림 표시",
+      "수정: 투명 배경화면 사용 시 플로팅 창이 겹치는 문제",
+      "수정: 알림을 오래 누르면 발생할 수 있는 권한 다이얼로그 요소가 겹치는 문제",
+      "수정: 부재중 통화 후의 알림이 제대로 표시되지 않는 문제",
+      "최적화: 수신 통화 알림 표시를 위한 알고리즘",
+      "수정: 투명 배경화면 사용 시 플로팅 창이 겹치는 문제",
+      "수정: 알림을 오래 누르면 발생할 수 있는 권한 다이얼로그 요소가 겹치는 문제",
+      "수정: 부재중 통화 후의 알림이 제대로 표시되지 않는 문제",
+      "최적화: 수신 통화 알림 표시를 위한 알고리즘",
+      "수정: 투명 배경화면 사용 시 플로팅 창이 겹치는 문제",
+      "수정: 알림을 오래 누르면 발생할 수 있는 권한 다이얼로그 요소가 겹치는 문제",
+      "수정: 부재중 통화 후의 알림이 제대로 표시되지 않는 문제"
+    ],
+    "설정": [
+      "수정: 기업 Wi-Fi 네트워크 추가 시에 발생하는 UI 문제",
+      "수정: 일부 계정이 동기화되지 않는 문제",
+      "수정: 기본 맵 선택 시 발생하는 충돌 문제"
+    ],
+    "Xiaomi 클라우드 서비스": [
+      "최적화: 수신 통화 알림 표시를 위한 알고리즘",
+      "수정: 투명 배경화면 사용 시 플로팅 창이 겹치는 문제",
+      "수정: 알림을 오래 누르면 발생할 수 있는 권한 다이얼로그 요소가 겹치는 문제",
+      "수정: 부재중 통화 후의 알림이 제대로 표시되지 않는 문제"
+    ],
+    "시스템": [
+      "Android 보안패치 (2021#09) 업데이트됨. 시스템 보안이 향상되었습니다."
+    ]
+  },
+  "logs_ru": {
+    "MIUI12.5 Улучшенная версия": [
+      "Высочайшая производительность. Низкое энергопотребление.",
+      "Адаптивные алгоритмы: новые алгоритмы динамически распределяют системные ресурсы на основе конкретных сценариев использования, обеспечивая бесперебойную работу всех поддерживаемых устройств.",
+      "Атомизированная память: сверхгибкий механизм управления обеспечивает еще более эффективное использование оперативной памяти.",
+      "Гибкое хранилище: новые чувствительные механизмы управления памятью обеспечивают надежную работу системы даже с течением времени.",
+      "Смарт-баланс: улучшение основных модулей системы позволит вашему устройству максимально эффективно использовать все возможности флагманского оборудования.",
+      "Высочайшая производительность. Низкое энергопотребление.",
+      "Адаптивные алгоритмы: новые алгоритмы динамически распределяют системные ресурсы на основе конкретных сценариев использования, обеспечивая бесперебойную работу всех поддерживаемых устройств.",
+      "Атомизированная память: сверхгибкий механизм управления обеспечивает еще более эффективное использование оперативной памяти.",
+      "Гибкое хранилище: новые чувствительные механизмы управления памятью обеспечивают надежную работу системы даже с течением времени.",
+      "Смарт-баланс: улучшение основных модулей системы позволит вашему устройству максимально эффективно использовать все возможности флагманского оборудования.",
+      "Высочайшая производительность. Низкое энергопотребление.",
+      "Адаптивные алгоритмы: новые алгоритмы динамически распределяют системные ресурсы на основе конкретных сценариев использования, обеспечивая бесперебойную работу всех поддерживаемых устройств.",
+      "Атомизированная память: сверхгибкий механизм управления обеспечивает еще более эффективное использование оперативной памяти.",
+      "Гибкое хранилище: новые чувствительные механизмы управления памятью обеспечивают надежную работу системы даже с течением времени.",
+      "Смарт-баланс: улучшение основных модулей системы позволит вашему устройству максимально эффективно использовать все возможности флагманского оборудования."
+    ],
+    "Экран блокировки": [
+      "Оптимизация: Использование памяти Лентой виджетов, когда устройство заблокировано",
+      "Исправлено: При использовании Суперобоев после блокировки экран устройства мог мерцать",
+      "Исправлено: В некоторых случаях после разблокировки отпечатком пальца обои могли начать мерцать",
+      "Исправлено: При разблокировке отпечатком пальца в играх могли появляться визуальные артефакты",
+      "Исправлено: Неправильное отображение анимации отпечатка пальца",
+      "Исправлено: После установки SIM-карты могла отключаться разблокировка по лицу и отпечатком пальца",
+      "Исправлено: В некоторых случаях при использовании Суперобоев и разблокировки отпечатком пальца экран устройства мог мерцать",
+      "Исправлено: В некоторых случаях функция \"Поднять для активации\" могла отключаться",
+      "Исправлено: В некоторых случаях при использовании разблокировки по лицу или отпечатком пальца уведомления на экране блокировки не исчезали вовремя.",
+      "Исправлено: В некоторых случаях после разблокировки отпечатком пальца экран устройства мог начать мерцать",
+      "Исправлено: После разблокировки отпечатком пальца на экране могли отображаться только объекты строки состояния",
+      "Исправлено: Исправлены ошибки отображения виджета часов на экране блокировки при использовании суперобоев и сторонних тем",
+      "Оптимизация: Использование памяти Лентой виджетов, когда устройство заблокировано",
+      "Исправлено: В некоторых случаях функция \"Поднять для активации\" могла отключаться",
+      "Исправлено: Исправлены ошибки отображения виджета часов на экране блокировки при использовании суперобоев и сторонних тем",
+      "Оптимизация: Использование памяти Лентой виджетов, когда устройство заблокировано",
+      "Исправлено: В некоторых случаях функция \"Поднять для активации\" могла отключаться",
+      "Исправлено: Исправлены ошибки отображения виджета часов на экране блокировки при использовании суперобоев и сторонних тем",
+      "Оптимизация: Использование памяти Лентой виджетов, когда устройство заблокировано",
+      "Исправлено: В некоторых случаях функция \"Поднять для активации\" могла отключаться",
+      "Исправлено: Исправлены ошибки отображения виджета часов на экране блокировки при использовании суперобоев и сторонних тем"
+    ],
+    "строка состояния, шторка уведомлений": [
+      "Оптимизация: Алгоритмы отображения уведомлений о входящих вызовах",
+      "Оптимизация: Уведомления будильника",
+      "Исправлено: При использовании прозрачного фона всплывающие уведомления могли перекрываться",
+      "Исправлено: Элементы диалогового окна предоставления разрешений перекрывались после долгого нажатия на уведомление",
+      "Исправлено: После пропущенных вызовов уведомления могли отображаться неправильно",
+      "Оптимизация: Алгоритмы отображения уведомлений о входящих вызовах",
+      "Исправлено: При использовании прозрачного фона всплывающие уведомления могли перекрываться",
+      "Исправлено: Элементы диалогового окна предоставления разрешений перекрывались после долгого нажатия на уведомление",
+      "Исправлено: После пропущенных вызовов уведомления могли отображаться неправильно"
+    ],
+    "Настройки": [
+      "Исправлено: Ошибки интерфейса, которые появились при добавлении корпоративных сетей Wi-Fi",
+      "Исправлено: Сбои синхронизации некоторых аккаунтов",
+      "Исправлено: Сбои в работе системы при выборе карт по умолчанию"
+    ],
+    "Строка состояния, шторка уведомлений": [
+      "Оптимизация: Алгоритмы отображения уведомлений о входящих вызовах",
+      "Исправлено: При использовании прозрачного фона всплывающие уведомления могли перекрываться",
+      "Исправлено: Элементы диалогового окна предоставления разрешений перекрывались после долгого нажатия на уведомление",
+      "Исправлено: После пропущенных вызовов уведомления могли отображаться неправильно"
+    ],
+    "Облачный сервис Xiaomi": [
+      "Оптимизация: Алгоритмы отображения уведомлений о входящих вызовах",
+      "Исправлено: При использовании прозрачного фона всплывающие уведомления могли перекрываться",
+      "Исправлено: Элементы диалогового окна предоставления разрешений перекрывались после долгого нажатия на уведомление",
+      "Исправлено: После пропущенных вызовов уведомления могли отображаться неправильно"
+    ],
+    "Система": [
+      "Обновление системы безопасности Android (сентябрь 2021 года). Улучшена безопасность системы."
+    ]
+  },
+  "logs_uk": {
+    "MIUI12.5 Покращена версія": [
+      "Надвисока продуктивність. Низьке енергоспоживання.",
+      "Адаптовані алгоритми: нові алгоритми динамічно розподіляють системні ресурси на основі конкретних сценаріїв використання, забезпечуючи постійну роботу всіх пристроїв, що підтримуються.",
+      "Атомізована пам’ять: надшвидкий механізм керування забезпечує ще більш ефективне використання оперативної пам’яті.",
+      "Гнучке сховище: нові чутливі механізми керування пам’яттю забезпечують надійну роботу системи навіть з плином часу.",
+      "Смарт-баланс: покращення основних модулів системи дозволить вашому пристрою максимально ефективно використовувати всі можливості флагманського обладнання.",
+      "Надвисока продуктивність. Низьке енергоспоживання.",
+      "Адаптовані алгоритми: нові алгоритми динамічно розподіляють системні ресурси на основі конкретних сценаріїв використання, забезпечуючи постійну роботу всіх пристроїв, що підтримуються.",
+      "Атомізована пам’ять: надшвидкий механізм керування забезпечує ще більш ефективне використання оперативної пам’яті.",
+      "Гнучке сховище: нові чутливі механізми керування пам’яттю забезпечують надійну роботу системи навіть з плином часу.",
+      "Смарт-баланс: покращення основних модулів системи дозволить вашому пристрою максимально ефективно використовувати всі можливості флагманського обладнання.",
+      "Надвисока продуктивність. Низьке енергоспоживання.",
+      "Адаптовані алгоритми: нові алгоритми динамічно розподіляють системні ресурси на основі конкретних сценаріїв використання, забезпечуючи постійну роботу всіх пристроїв, що підтримуються.",
+      "Атомізована пам’ять: надшвидкий механізм керування забезпечує ще більш ефективне використання оперативної пам’яті.",
+      "Гнучке сховище: нові чутливі механізми керування пам’яттю забезпечують надійну роботу системи навіть з плином часу.",
+      "Смарт-баланс: покращення основних модулів системи дозволить вашому пристрою максимально ефективно використовувати всі можливості флагманського обладнання."
+    ],
+    "Екран блокування": [
+      "Оптимізація: Використання пам'яті Стрічкою віджетів, коли пристрій заблоковано",
+      "Виправлено: Під час використання Супершпадкр екран пристрою міг мерехтіти після блокування",
+      "Виправлено: В деяких випадках після розблокування відбитком пальця шпалери могли мерехтіти",
+      "Виправлено: Під час розблокування відбитком пальця в іграх могли з’явитися візуальні артефакти",
+      "Виправлено: Неправильне відображення анімації відбитка пальця",
+      "Виправлено: Після встановлення SIM-карти могла відключатися функція розблокування за допомогою обличчя або відбитком пальця",
+      "Виправлено: В деяких випадках під час використання Супершпалер та розблокування за допомогою відбитка пальця екран пристрою міг мерехтіти",
+      "Виправлено: В деяких випадках функція \"Підняти для активації\" могла відключатися",
+      "Виправлено: В деяких випадках під час використання розблокування за допомогою обличчя або відбитком пальця сповіщення на екрані блокування не зникали",
+      "Виправлено: В деяких випадках після розблокування відбитком пальця екран міг мерехтіти",
+      "Виправлено: Під час розблокування відбитком пальця на екрані могли відображатися тільки об’єкти рядку стану",
+      "Виправлено: Виправлені помилки відображення віджета годинника на екрані блокування під час використання супершрплер та сторонніх тем",
+      "Оптимізація: Використання пам'яті Стрічкою віджетів, коли пристрій заблоковано",
+      "Виправлено: В деяких випадках функція \"Підняти для активації\" могла відключатися",
+      "Виправлено: Виправлені помилки відображення віджета годинника на екрані блокування під час використання супершрплер та сторонніх тем",
+      "Оптимізація: Використання пам'яті Стрічкою віджетів, коли пристрій заблоковано",
+      "Виправлено: В деяких випадках функція \"Підняти для активації\" могла відключатися",
+      "Виправлено: Виправлені помилки відображення віджета годинника на екрані блокування під час використання супершрплер та сторонніх тем",
+      "Оптимізація: Використання пам'яті Стрічкою віджетів, коли пристрій заблоковано",
+      "Виправлено: В деяких випадках функція \"Підняти для активації\" могла відключатися",
+      "Виправлено: Виправлені помилки відображення віджета годинника на екрані блокування під час використання супершрплер та сторонніх тем"
+    ],
+    "Налаштування": [
+      "Виправлено: Помилки інтерфейсу, які з'явилися під час додавання корпоративних мереж Wi-Fi",
+      "Виправлено: Помилки синхронізації деяких акаунтів",
+      "Виправлено: Посилки в роботі системи під час вибору карт за замовчуванням"
+    ],
+    "Рядок стану, Панель сповіщень": [
+      "Оптимізація: Алгоритми відображення сповіщень про вхідні виклики",
+      "Виправлено: Під час використання прозорого фону спливаючі сповіщення могли перекриватися",
+      "Виправлено: Елементи діалогового вікна надання дозволів перекривалися після довгого натиснення на сповіщення",
+      "Виправлено: Після пропущених викликів сповіщення могли відображатися неправильно"
+    ],
+    "Хмарний сервіс Xiaomi": [
+      "Оптимізація: Алгоритми відображення сповіщень про вхідні виклики",
+      "Виправлено: Під час використання прозорого фону спливаючі сповіщення могли перекриватися",
+      "Виправлено: Елементи діалогового вікна надання дозволів перекривалися після довгого натиснення на сповіщення",
+      "Виправлено: Після пропущених викликів сповіщення могли відображатися неправильно"
+    ],
+    "Система": [
+      "Оновлено патч безпеки Android за вересень 2021 року. Збільшено безпеку системи."
+    ]
+  },
+  "logs_pl": {
+    "Ulepszony MIUI12.5": [
+      "Szybka wydajność. Dłuższa żywotność między ładowaniami.",
+      "Skoncentrowane algorytmy: nasze nowe algorytmy będą dynamicznie przydzielać zasoby systemowe w oparciu o określone sceny, zapewniając płynne działanie we wszystkich modelach.",
+      "Pamięć atomizowana: bardzo precyzyjny mechanizm zarządzania pamięcią sprawi, że wykorzystanie pamięci RAM będzie bardziej wydajne.",
+      "Przechowywanie w płynie: nowe wrażliwe mechanizmy przechowywania sprawią, że Twój system będzie żywy i responsywny w miarę upływu czasu.",
+      "Inteligentna równowaga: ulepszenia systemu podstawowego umożliwiają Twojemu urządzeniu maksymalne wykorzystanie flagowych specyfikacji sprzętowych.",
+      "Szybka wydajność. Dłuższa żywotność między ładowaniami.",
+      "Skoncentrowane algorytmy: nasze nowe algorytmy będą dynamicznie przydzielać zasoby systemowe w oparciu o określone sceny, zapewniając płynne działanie we wszystkich modelach.",
+      "Pamięć atomizowana: bardzo precyzyjny mechanizm zarządzania pamięcią sprawi, że wykorzystanie pamięci RAM będzie bardziej wydajne.",
+      "Przechowywanie w płynie: nowe wrażliwe mechanizmy przechowywania sprawią, że Twój system będzie żywy i responsywny w miarę upływu czasu.",
+      "Inteligentna równowaga: ulepszenia systemu podstawowego umożliwiają Twojemu urządzeniu maksymalne wykorzystanie flagowych specyfikacji sprzętowych.",
+      "Szybka wydajność. Dłuższa żywotność między ładowaniami.",
+      "Skoncentrowane algorytmy: nasze nowe algorytmy będą dynamicznie przydzielać zasoby systemowe w oparciu o określone sceny, zapewniając płynne działanie we wszystkich modelach.",
+      "Pamięć atomizowana: bardzo precyzyjny mechanizm zarządzania pamięcią sprawi, że wykorzystanie pamięci RAM będzie bardziej wydajne.",
+      "Przechowywanie w płynie: nowe wrażliwe mechanizmy przechowywania sprawią, że Twój system będzie żywy i responsywny w miarę upływu czasu.",
+      "Inteligentna równowaga: ulepszenia systemu podstawowego umożliwiają Twojemu urządzeniu maksymalne wykorzystanie flagowych specyfikacji sprzętowych."
+    ],
+    "Ekran blokady": [
+      "Zoptymalizowano: Wykorzystanie pamięci skarbca aplikacji, gdy urządzenie jest zablokowane",
+      "Naprawiono: Podczas używania Super tapet ekran błyskał po zablokowaniu",
+      "Naprawiono: W niektórych przypadkach przy odblokowywaniu odciskiem palca tapety błyskały",
+      "Naprawiono: Nieprawidłowości w wyświetlaniu pojawiały się przy oblokowywaniu za pomocą odcisku palca podczas grania",
+      "Naprawiono: Problemy z animacją odcisku palca w niektórych sytuacjach",
+      "Naprawiono: Odblokowywanie przy pomocy odcisku palca i rozpoznawania twarzy były wyłączane po włożeniu karty SIM",
+      "Naprawiono: W niektórych przypadkach podczas używania Super tapet, ekran błyskał przy odblokowywaniu za pomocą odcisku palca",
+      "Naprawiono: W niektórych przypadkach funkcja „Podnieś, by się obudzić” została niespodziewanie wyłączona",
+      "Naprawiono: W niektórych przypadkach powiadomienia na Ekranie blokady nie znikały podczas odblokowywania za pomocą odcisku palca lub przez rozpoznawanie twarzy",
+      "Naprawiono: W niektórych przypadkach ekran migał podczas odblokowywania za pomocą odcisku palca",
+      "Naprawiono: Po odblokowywaniu za pomocą odcisku palca wszystkie elementy, poza Paskiem statusu, nie wyświetlały się na ekranie",
+      "Naprawiono: Problemy z zegarem na ekranie blokady, gdy używane były motywy i super tapety innych firm",
+      "Zoptymalizowano: Wykorzystanie pamięci skarbca aplikacji, gdy urządzenie jest zablokowane",
+      "Naprawiono: W niektórych przypadkach funkcja „Podnieś, by się obudzić” została niespodziewanie wyłączona",
+      "Naprawiono: Problemy z zegarem na ekranie blokady, gdy używane były motywy i super tapety innych firm",
+      "Zoptymalizowano: Wykorzystanie pamięci skarbca aplikacji, gdy urządzenie jest zablokowane",
+      "Naprawiono: W niektórych przypadkach funkcja „Podnieś, by się obudzić” została niespodziewanie wyłączona",
+      "Naprawiono: Problemy z zegarem na ekranie blokady, gdy używane były motywy i super tapety innych firm",
+      "Zoptymalizowano: Wykorzystanie pamięci skarbca aplikacji, gdy urządzenie jest zablokowane",
+      "Naprawiono: W niektórych przypadkach funkcja „Podnieś, by się obudzić” została niespodziewanie wyłączona",
+      "Naprawiono: Problemy z zegarem na ekranie blokady, gdy używane były motywy i super tapety innych firm"
+    ],
+    "pasek powiadomień,panel powiadomień": [
+      "Zoptymalizowano: Algorytmy wyświetlania powiadomień o połączeniach przychodzących",
+      "Zoptymalizowano: Powiadomienia Alarmu",
+      "Naprawiono: Powiadomienia pływające nakładały się, gdy używane było przezroczyste tło",
+      "Naprawiono: Elementy okna dialogowego uprawnień nakładały się po długim naciśnięciu powiadomienia",
+      "Naprawiono: Powiadomienia nie wyświetlały się poprawnie po nieodebranych połączeniach",
+      "Zoptymalizowano: Algorytmy wyświetlania powiadomień o połączeniach przychodzących",
+      "Naprawiono: Powiadomienia pływające nakładały się, gdy używane było przezroczyste tło",
+      "Naprawiono: Elementy okna dialogowego uprawnień nakładały się po długim naciśnięciu powiadomienia",
+      "Naprawiono: Powiadomienia nie wyświetlały się poprawnie po nieodebranych połączeniach"
+    ],
+    "Ustawienia": [
+      "Naprawiono: Problemy w interfejsem, które pojawiały się podczas dodawania firmowych sieci Wi-Fi",
+      "Naprawiono: Nie udało się zsynchronizować niektórych kont",
+      "Naprawiono: Po wybraniu domyślnej mapy występowały awarie"
+    ],
+    "Pasek powiadomień, Panel powiadomień": [
+      "Zoptymalizowano: Algorytmy wyświetlania powiadomień o połączeniach przychodzących",
+      "Naprawiono: Powiadomienia pływające nakładały się, gdy używane było przezroczyste tło",
+      "Naprawiono: Elementy okna dialogowego uprawnień nakładały się po długim naciśnięciu powiadomienia",
+      "Naprawiono: Powiadomienia nie wyświetlały się poprawnie po nieodebranych połączeniach"
+    ],
+    "Usługa w chmurze Xiaomi": [
+      "Zoptymalizowano: Algorytmy wyświetlania powiadomień o połączeniach przychodzących",
+      "Naprawiono: Powiadomienia pływające nakładały się, gdy używane było przezroczyste tło",
+      "Naprawiono: Elementy okna dialogowego uprawnień nakładały się po długim naciśnięciu powiadomienia",
+      "Naprawiono: Powiadomienia nie wyświetlały się poprawnie po nieodebranych połączeniach"
+    ],
+    "System": [
+      "Zaktualizowano Pakiet Bezpieczeństwa Android do września 2021 r. Zwiększono bezpieczeństwo systemu."
+    ]
+  },
+  "logs_de": {
+    "MIUI12.5 Enhanced": [
+      "Schnelle Leistung. Mehr Ausdauer zwischen den Ladevorgängen.",
+      "Fokussierte Algorithmen: Unsere neuen Algorithmen weisen Systemressourcen dynamisch anhand bestimmter Szenen zu und sorgen für ein flüssiges Erlebnis auf allen Modellen.",
+      "Atomisierter Speicher: Der ultrafeine Speicherverwaltungsmechanismus macht die RAM-Nutzung effizienter.",
+      "Flüssiger Speicher: Neue sensible Speichermechanismen halten Ihr System im Laufe der Zeit lebendig und reaktionsschnell.",
+      "Intelligente Balance: Verbesserungen am Systemkern ermöglichen es deinem Gerät, die Flagship-Hardware optimal zu nutzen.",
+      "Schnelle Leistung. Mehr Ausdauer zwischen den Ladevorgängen.",
+      "Fokussierte Algorithmen: Unsere neuen Algorithmen weisen Systemressourcen dynamisch anhand bestimmter Szenen zu und sorgen für ein flüssiges Erlebnis auf allen Modellen.",
+      "Atomisierter Speicher: Der ultrafeine Speicherverwaltungsmechanismus macht die RAM-Nutzung effizienter.",
+      "Flüssiger Speicher: Neue sensible Speichermechanismen halten Ihr System im Laufe der Zeit lebendig und reaktionsschnell.",
+      "Intelligente Balance: Verbesserungen am Systemkern ermöglichen es deinem Gerät, die Flagship-Hardware optimal zu nutzen.",
+      "Schnelle Leistung. Mehr Ausdauer zwischen den Ladevorgängen.",
+      "Fokussierte Algorithmen: Unsere neuen Algorithmen weisen Systemressourcen dynamisch anhand bestimmter Szenen zu und sorgen für ein flüssiges Erlebnis auf allen Modellen.",
+      "Atomisierter Speicher: Der ultrafeine Speicherverwaltungsmechanismus macht die RAM-Nutzung effizienter.",
+      "Flüssiger Speicher: Neue sensible Speichermechanismen halten Ihr System im Laufe der Zeit lebendig und reaktionsschnell.",
+      "Intelligente Balance: Verbesserungen am Systemkern ermöglichen es deinem Gerät, die Flagship-Hardware optimal zu nutzen."
+    ],
+    "Sperrbildschirm": [
+      "Optimierung: Speicherverbrauch von App Vault bei gesperrtem Gerät",
+      "Behebung: Bildschirm flackerte nach dem Sperren bei Verwendung von Super-Hintergründen",
+      "Behebung: Hintergrundbilder flackerten bei Fingerabdruck-Entsperrung in einigen Fällen",
+      "Behebung: Anzeigefehler bei Verwendung der Fingerabdruck-Entsperrung in Spielen",
+      "Behebung: Probleme mit der Fingerabdruck-Animation in mehreren Szenen",
+      "Behebung: Fingerabdruck- und Gesichtsentsperrung wurden nach dem Einlegen einer SIM-Karte deaktiviert",
+      "Behoben: Der Bildschirm flackerte in einigen Fällen bei der Verwendung der Fingerabdruckentsperrung mit Super-Hintergründen",
+      "Behoben: \"Zum Aufwecken anheben\" wurde in manchen Fällen unerwartet deaktiviert",
+      "Behoben: Sperrbildschirm-Benachrichtigungen verschwanden in einigen Fällen bei Verwendung der Fingerabdruck- oder Gesichtsentsperrung nicht rechtzeitig",
+      "Behoben: In einigen Fällen flackerte der Bildschirm bei der Verwendung der Fingerabdruckentsperrung",
+      "Behoben: Nach der Fingerabdruckentsperrung wurden außer der Statusleiste keine Elemente auf dem Bildschirm angezeigt",
+      "Behoben: Probleme mit der Uhr auf dem Sperrbildschirm bei Verwendung von Drittanbieter-Themes und Super-Hintergründen",
+      "Optimierung: Speicherverbrauch von App Vault bei gesperrtem Gerät",
+      "Behoben: \"Zum Aufwecken anheben\" wurde in manchen Fällen unerwartet deaktiviert",
+      "Behoben: Probleme mit der Uhr auf dem Sperrbildschirm bei Verwendung von Drittanbieter-Themes und Super-Hintergründen",
+      "Optimierung: Speicherverbrauch von App Vault bei gesperrtem Gerät",
+      "Behoben: \"Zum Aufwecken anheben\" wurde in manchen Fällen unerwartet deaktiviert",
+      "Behoben: Probleme mit der Uhr auf dem Sperrbildschirm bei Verwendung von Drittanbieter-Themes und Super-Hintergründen",
+      "Optimierung: Speicherverbrauch von App Vault bei gesperrtem Gerät",
+      "Behoben: \"Zum Aufwecken anheben\" wurde in manchen Fällen unerwartet deaktiviert",
+      "Behoben: Probleme mit der Uhr auf dem Sperrbildschirm bei Verwendung von Drittanbieter-Themes und Super-Hintergründen"
+    ],
+    "Statusleiste, Benachrichtigungsfeld": [
+      "Optimierung: Algorithmen zur Anzeige von Benachrichtigungen über eingehende Anrufe",
+      "Optimierung: Weckerbenachrichtigungen",
+      "Behoben: Schwebende Benachrichtigungen überschnitten sich bei Verwendung eines transparenten Hintergrunds.",
+      "Behoben: Elemente des Berechtigungsdialogs überlappten sich nach langem Drücken auf eine Benachrichtigung",
+      "Behoben: Benachrichtigungen wurden nach verpassten Anrufen nicht korrekt angezeigt",
+      "Optimierung: Algorithmen zur Anzeige von Benachrichtigungen über eingehende Anrufe",
+      "Behoben: Schwebende Benachrichtigungen überschnitten sich bei Verwendung eines transparenten Hintergrunds.",
+      "Behoben: Elemente des Berechtigungsdialogs überlappten sich nach langem Drücken auf eine Benachrichtigung",
+      "Behoben: Benachrichtigungen wurden nach verpassten Anrufen nicht korrekt angezeigt"
+    ],
+    "Einstellungen": [
+      "Behebung: UI-Probleme beim Hinzufügen von Firmen-WLAN-Netzwerken",
+      "Behebung: Einige Konten konnten nicht synchronisiert werden",
+      "Behebung: Abstürze bei Auswahl der Standardkarte"
+    ],
+    "Statusleiste, Benachrichtigungsleiste": [
+      "Optimierung: Algorithmen zur Anzeige von Benachrichtigungen über eingehende Anrufe",
+      "Behoben: Schwebende Benachrichtigungen überschnitten sich bei Verwendung eines transparenten Hintergrunds.",
+      "Behoben: Elemente des Berechtigungsdialogs überlappten sich nach langem Drücken auf eine Benachrichtigung",
+      "Behoben: Benachrichtigungen wurden nach verpassten Anrufen nicht korrekt angezeigt"
+    ],
+    "System": [
+      "Android-Sicherheitspatch auf September 2021 aktualisiert. Systemsicherheit erhöht."
     ]
   },
   "logs_fr": {
-    "Système": [
-      "Patch de Sécurité Android mis à jour pour septembre 2021. Amélioration du système de sécurité.",
-      "Patch de Sécurité Android mis à jour pour septembre 2021. Amélioration du système de sécurité."
+    "MIUI12.5 amélioré": [
+      "Une performance rapide. Une faible consommation d'énergie.",
+      "Algorithmes ciblés : nos nouveaux algorithmes alloueront dynamiquement les ressources système en fonction de scènes spécifiques, garantissant une expérience fluide sur tous les modèles.",
+      "Mémoire atomisée : un mécanisme de gestion de mémoire ultra-fin rendra l'utilisation de la RAM plus efficace.",
+      "Stockage liquide : de nouveaux mécanismes de stockage sensibles maintiendront votre système dynamique et réactif au fil du temps.",
+      "Équilibre intelligent : les améliorations du système central permettent à votre appareil de tirer le meilleur parti des caractéristiques du matériel haut de gamme.",
+      "Une performance rapide. Une faible consommation d'énergie.",
+      "Algorithmes ciblés : nos nouveaux algorithmes alloueront dynamiquement les ressources système en fonction de scènes spécifiques, garantissant une expérience fluide sur tous les modèles.",
+      "Mémoire atomisée : un mécanisme de gestion de mémoire ultra-fin rendra l'utilisation de la RAM plus efficace.",
+      "Stockage liquide : de nouveaux mécanismes de stockage sensibles maintiendront votre système dynamique et réactif au fil du temps.",
+      "Équilibre intelligent : les améliorations du système central permettent à votre appareil de tirer le meilleur parti des caractéristiques du matériel haut de gamme.",
+      "Une performance rapide. Une faible consommation d'énergie.",
+      "Algorithmes ciblés : nos nouveaux algorithmes alloueront dynamiquement les ressources système en fonction de scènes spécifiques, garantissant une expérience fluide sur tous les modèles.",
+      "Mémoire atomisée : un mécanisme de gestion de mémoire ultra-fin rendra l'utilisation de la RAM plus efficace.",
+      "Stockage liquide : de nouveaux mécanismes de stockage sensibles maintiendront votre système dynamique et réactif au fil du temps.",
+      "Équilibre intelligent : les améliorations du système central permettent à votre appareil de tirer le meilleur parti des caractéristiques du matériel haut de gamme."
     ],
     "Écran de verrouillage": [
-      "Optimisation: Utilisation de la mémoire du coffre d^applications lorsque l^appareil est verrouillé",
-      "Réparé: ^Lever pour activer^ désactivé de manière inattendue dans certains cas",
-      "Réparé: Problèmes avec l^horloge de l^écran de verrouillage lorsque des thèmes tiers et des super fonds d^écran ont été utilisés"
+      "Optimisation: Utilisation de la mémoire du coffre d'applications lorsque l'appareil est verrouillé",
+      "Réparé: L'écran a clignoté après le verrouillage lorsque les fonds d'écran Super ont été utilisés",
+      "Réparé: Les fonds d'écran clignotaient lorsque le déverrouillage par empreinte digitale était utilisé dans certains cas",
+      "Réparé: Des anomalies d'affichage se sont produites lorsque le déverrouillage par Empreinte digitale a été utilisé avec des jeux",
+      "Réparé: Problèmes avec l'animation des empreintes digitales dans plusieurs scènes",
+      "Réparé: Les empreintes digitales et le Déverrouillage facial ont été désactivés après l'installation d'une carte SIM",
+      "Réparé: L'écran a clignoté lorsque le déverrouillage par empreinte digitale était utilisé avec les fonds d'écran Super dans certains cas",
+      "Réparé: \"Lever pour activer\" désactivé de manière inattendue dans certains cas",
+      "Réparé: Les notifications de l'écran de verrouillage ne disparaissaient pas à temps lorsque le déverrouillage par empreinte digitale ou facial était utilisé dans certains cas",
+      "Réparé: L'écran clignotait lorsque le déverrouillage par empreinte digitale était utilisé dans certains cas",
+      "Réparé: Aucun élément, à l'exception de la barre d'état, n'était affiché à l'écran après avoir utilisé le déverrouillage par empreinte digitale",
+      "Réparé: Problèmes avec l'horloge de l'écran de verrouillage lorsque des thèmes tiers et des super fonds d'écran ont été utilisés",
+      "Optimisation: Utilisation de la mémoire du coffre d'applications lorsque l'appareil est verrouillé",
+      "Réparé: \"Lever pour activer\" désactivé de manière inattendue dans certains cas",
+      "Réparé: Problèmes avec l'horloge de l'écran de verrouillage lorsque des thèmes tiers et des super fonds d'écran ont été utilisés",
+      "Optimisation: Utilisation de la mémoire du coffre d'applications lorsque l'appareil est verrouillé",
+      "Réparé: \"Lever pour activer\" désactivé de manière inattendue dans certains cas",
+      "Réparé: Problèmes avec l'horloge de l'écran de verrouillage lorsque des thèmes tiers et des super fonds d'écran ont été utilisés",
+      "Optimisation: Utilisation de la mémoire du coffre d'applications lorsque l'appareil est verrouillé",
+      "Réparé: \"Lever pour activer\" désactivé de manière inattendue dans certains cas",
+      "Réparé: Problèmes avec l'horloge de l'écran de verrouillage lorsque des thèmes tiers et des super fonds d'écran ont été utilisés"
     ],
     "Barre d'état, Panneau de notification": [
-      "Optimisation: Algorithmes d^affichage des notifications d^appels entrants",
-      "Réparé: Les notifications flottantes se chevauchaient lorsque l^arrière-plan transparent était utilisé",
-      "Réparé: Les éléments de la boîte de dialogue d^autorisation se chevauchent après un appui long sur une notification",
-      "Réparé: Les notifications ne s^affichaient pas correctement après des appels manqués"
+      "Optimisation: Algorithmes d'affichage des notifications d'appels entrants",
+      "Optimisation: Notifications d'alarme",
+      "Réparé: Les notifications flottantes se chevauchaient lorsque l'arrière-plan transparent était utilisé",
+      "Réparé: Les éléments de la boîte de dialogue d'autorisation se chevauchent après un appui long sur une notification",
+      "Réparé: Les notifications ne s'affichaient pas correctement après des appels manqués",
+      "Optimisation: Algorithmes d'affichage des notifications d'appels entrants",
+      "Réparé: Les notifications flottantes se chevauchaient lorsque l'arrière-plan transparent était utilisé",
+      "Réparé: Les éléments de la boîte de dialogue d'autorisation se chevauchent après un appui long sur une notification",
+      "Réparé: Les notifications ne s'affichaient pas correctement après des appels manqués",
+      "Optimisation: Algorithmes d'affichage des notifications d'appels entrants",
+      "Réparé: Les notifications flottantes se chevauchaient lorsque l'arrière-plan transparent était utilisé",
+      "Réparé: Les éléments de la boîte de dialogue d'autorisation se chevauchent après un appui long sur une notification",
+      "Réparé: Les notifications ne s'affichaient pas correctement après des appels manqués"
+    ],
+    "Paramètres": [
+      "Réparé: Problèmes d'interface utilisateur apparus lors de l'ajout de réseaux Wi-Fi d'entreprise",
+      "Réparé: Certains comptes n'ont pas pu être synchronisés",
+      "Réparé: Des plantages se sont produits lorsque la carte par défaut a été sélectionnée"
+    ],
+    "Service cloud Xiaomi": [
+      "Optimisation: Algorithmes d'affichage des notifications d'appels entrants",
+      "Réparé: Les notifications flottantes se chevauchaient lorsque l'arrière-plan transparent était utilisé",
+      "Réparé: Les éléments de la boîte de dialogue d'autorisation se chevauchent après un appui long sur une notification",
+      "Réparé: Les notifications ne s'affichaient pas correctement après des appels manqués"
+    ],
+    "Système": [
+      "Patch de Sécurité Android mis à jour pour septembre 2021. Amélioration du système de sécurité."
     ]
   },
   "logs_it": {
-    "Sistema": [
-      "Patch di sicurezza Android aggiornata a settembre 2021. Maggiore sicurezza del sistema.",
-      "Patch di sicurezza Android aggiornata a settembre 2021. Maggiore sicurezza del sistema."
+    "MIUI12.5 Migliorata": [
+      "Prestazioni rapide. Più tempo tra una ricarica e l'altra.",
+      "Algoritmi mirati: i nostri nuovi algoritmi sono in grado di allocare dinamicamente le risorse di sistema in base a scenari specifici, garantendo un'esperienza fluida su tutti i modelli.",
+      "Memoria atomizzata: il meccanismo di gestione della memoria ultrafine renderà l'utilizzo della RAM più efficiente.",
+      "Archiviazione fluida: nuovi meccanismi di archiviazione sensibili manterranno il tuo sistema veloce e reattivo nel tempo.",
+      "Bilanciamento intelligente: i miglioramenti di sistema consentono al tuo dispositivo di sfruttare al meglio tutte le funzionalità hardware di ultima generazione.",
+      "Prestazioni rapide. Più tempo tra una ricarica e l'altra.",
+      "Algoritmi mirati: i nostri nuovi algoritmi sono in grado di allocare dinamicamente le risorse di sistema in base a scenari specifici, garantendo un'esperienza fluida su tutti i modelli.",
+      "Memoria atomizzata: il meccanismo di gestione della memoria ultrafine renderà l'utilizzo della RAM più efficiente.",
+      "Archiviazione fluida: nuovi meccanismi di archiviazione sensibili manterranno il tuo sistema veloce e reattivo nel tempo.",
+      "Bilanciamento intelligente: i miglioramenti di sistema consentono al tuo dispositivo di sfruttare al meglio tutte le funzionalità hardware di ultima generazione.",
+      "Prestazioni rapide. Più tempo tra una ricarica e l'altra.",
+      "Algoritmi mirati: i nostri nuovi algoritmi sono in grado di allocare dinamicamente le risorse di sistema in base a scenari specifici, garantendo un'esperienza fluida su tutti i modelli.",
+      "Memoria atomizzata: il meccanismo di gestione della memoria ultrafine renderà l'utilizzo della RAM più efficiente.",
+      "Archiviazione fluida: nuovi meccanismi di archiviazione sensibili manterranno il tuo sistema veloce e reattivo nel tempo.",
+      "Bilanciamento intelligente: i miglioramenti di sistema consentono al tuo dispositivo di sfruttare al meglio tutte le funzionalità hardware di ultima generazione."
     ],
     "Schermata di blocco": [
-      "Ottimizzazione: Utilizzo della memoria dell^assistente app quando il dispositivo è bloccato",
-      "Risolto: ^Solleva per attivare^ veniva disattivato inaspettatamente in alcuni casi",
-      "Risolto: Problemi con l^orologio della schermata di blocco durante l^utilizzo di temi di terze parti e super sfondi"
+      "Ottimizzazione: Utilizzo della memoria dell'assistente app quando il dispositivo è bloccato",
+      "Risolto: Lo schermo lampeggiava dopo il blocco durante l'utilizzo dei Super sfondi",
+      "Risolto: Gli sfondi lampeggiavano durante l'utilizzo dello sblocco tramite impronta in alcuni casi",
+      "Risolto: Si verificavano anomalie di visualizzazione durante l'utilizzo dello sblocco tramite impronta con i giochi",
+      "Risolto: Problemi con l'animazione delle impronte digitali in diversi scenari",
+      "Risolto: L'impronta digitale e il riconoscimento facciale venivano disattivati dopo l'installazione di una scheda SIM",
+      "Risolto: Lo schermo lampeggiava durante l'utilizzo dello sblocco tramite impronta con i Super sfondi in alcuni casi",
+      "Risolto: \"Solleva per attivare\" veniva disattivato inaspettatamente in alcuni casi",
+      "Risolto: Le notifiche sulla schermata di blocco non scomparivano in tempo durante l'utilizzo dello sblocco tramite impronta o del riconoscimento facciale in alcuni casi",
+      "Risolto: Lo schermo lampeggiava durante l'utilizzo dello sblocco tramite impronta in alcuni casi",
+      "Risolto: Dopo lo sblocco tramite impronta non veniva mostrato nessun elemento sullo schermo tranne barra di stato",
+      "Risolto: Problemi con l'orologio della schermata di blocco durante l'utilizzo di temi di terze parti e super sfondi",
+      "Ottimizzazione: Utilizzo della memoria dell'assistente app quando il dispositivo è bloccato",
+      "Risolto: \"Solleva per attivare\" veniva disattivato inaspettatamente in alcuni casi",
+      "Risolto: Problemi con l'orologio della schermata di blocco durante l'utilizzo di temi di terze parti e super sfondi",
+      "Ottimizzazione: Utilizzo della memoria dell'assistente app quando il dispositivo è bloccato",
+      "Risolto: \"Solleva per attivare\" veniva disattivato inaspettatamente in alcuni casi",
+      "Risolto: Problemi con l'orologio della schermata di blocco durante l'utilizzo di temi di terze parti e super sfondi",
+      "Ottimizzazione: Utilizzo della memoria dell'assistente app quando il dispositivo è bloccato",
+      "Risolto: \"Solleva per attivare\" veniva disattivato inaspettatamente in alcuni casi",
+      "Risolto: Problemi con l'orologio della schermata di blocco durante l'utilizzo di temi di terze parti e super sfondi"
+    ],
+    "barra di stato, area delle notifiche": [
+      "Ottimizzazione: Algoritmi per la visualizzazione delle notifiche delle chiamate in arrivo",
+      "Ottimizzazione: Notifiche sveglia",
+      "Risolto: Le notifiche a comparsa si sovrapponevano quando veniva utilizzato lo sfondo trasparente",
+      "Risolto: Gli elementi della finestra di dialogo dei permessi si sovrapponevano quando una notifica era premuta a lungo",
+      "Risolto: Le notifiche non venivano visualizzate correttamente dopo le chiamate perse",
+      "Ottimizzazione: Algoritmi per la visualizzazione delle notifiche delle chiamate in arrivo",
+      "Risolto: Le notifiche a comparsa si sovrapponevano quando veniva utilizzato lo sfondo trasparente",
+      "Risolto: Gli elementi della finestra di dialogo dei permessi si sovrapponevano quando una notifica era premuta a lungo",
+      "Risolto: Le notifiche non venivano visualizzate correttamente dopo le chiamate perse"
+    ],
+    "Impostazioni": [
+      "Risolto: Problemi di interfaccia utente che comparivano durante l'aggiunta di reti Wi-Fi aziendali",
+      "Risolto: Alcuni account non potevano essere sincronizzati",
+      "Risolto: Si verificavano arresti anomali quando veniva selezionata la mappa predefinita"
     ],
     "Barra di stato, Area delle notifiche": [
       "Ottimizzazione: Algoritmi per la visualizzazione delle notifiche delle chiamate in arrivo",
       "Risolto: Le notifiche a comparsa si sovrapponevano quando veniva utilizzato lo sfondo trasparente",
       "Risolto: Gli elementi della finestra di dialogo dei permessi si sovrapponevano quando una notifica era premuta a lungo",
       "Risolto: Le notifiche non venivano visualizzate correttamente dopo le chiamate perse"
+    ],
+    "Servizio cloud Xiaomi": [
+      "Ottimizzazione: Algoritmi per la visualizzazione delle notifiche delle chiamate in arrivo",
+      "Risolto: Le notifiche a comparsa si sovrapponevano quando veniva utilizzato lo sfondo trasparente",
+      "Risolto: Gli elementi della finestra di dialogo dei permessi si sovrapponevano quando una notifica era premuta a lungo",
+      "Risolto: Le notifiche non venivano visualizzate correttamente dopo le chiamate perse"
+    ],
+    "Sistema": [
+      "Patch di sicurezza Android aggiornata a settembre 2021. Maggiore sicurezza del sistema."
     ]
   },
   "logs_es": {
-    "Sistema": [
-      "Parche de seguridad de Android actualizado a septiembre de 2021. Seguridad del sistema incrementada.",
-      "Parche de seguridad de Android actualizado a septiembre de 2021. Seguridad del sistema incrementada."
+    "MIUI12.5 Mejorado": [
+      "Gran rendimiento. Más vida entre cargas.",
+      "Algoritmos centralizados: nuestros nuevos algoritmos asignarán dinámicamente los recursos del sistema en función de escenarios específicos, lo que garantiza una experiencia fluida en todos los modelos.",
+      "Memoria atomizada: mecanismo de gestión de memoria ultrasensible para que el uso de la RAM sea más eficiente.",
+      "Almacenamiento fluido: los nuevos mecanismos de almacenamiento sensibles mantendrán tu sistema activo y receptivo a medida que pase el tiempo.",
+      "Equilibrio inteligente: las mejoras del sistema principal permiten que tu dispositivo aproveche al máximo las especificaciones del hardware insignia.",
+      "Gran rendimiento. Más vida entre cargas.",
+      "Algoritmos centralizados: nuestros nuevos algoritmos asignarán dinámicamente los recursos del sistema en función de escenarios específicos, lo que garantiza una experiencia fluida en todos los modelos.",
+      "Memoria atomizada: mecanismo de gestión de memoria ultrasensible para que el uso de la RAM sea más eficiente.",
+      "Almacenamiento fluido: los nuevos mecanismos de almacenamiento sensibles mantendrán tu sistema activo y receptivo a medida que pase el tiempo.",
+      "Equilibrio inteligente: las mejoras del sistema principal permiten que tu dispositivo aproveche al máximo las especificaciones del hardware insignia.",
+      "Gran rendimiento. Más vida entre cargas.",
+      "Algoritmos centralizados: nuestros nuevos algoritmos asignarán dinámicamente los recursos del sistema en función de escenarios específicos, lo que garantiza una experiencia fluida en todos los modelos.",
+      "Memoria atomizada: mecanismo de gestión de memoria ultrasensible para que el uso de la RAM sea más eficiente.",
+      "Almacenamiento fluido: los nuevos mecanismos de almacenamiento sensibles mantendrán tu sistema activo y receptivo a medida que pase el tiempo.",
+      "Equilibrio inteligente: las mejoras del sistema principal permiten que tu dispositivo aproveche al máximo las especificaciones del hardware insignia."
     ],
     "Pantalla de bloqueo": [
       "Optimización: Uso de la memoria de la Bóveda de aplicaciones cuando el dispositivo estaba bloqueado",
-      "Reparado: ^Levantar para activar^ se desactivaba inesperadamente en algunos casos",
+      "Reparado: La pantalla parpadeaba después del bloqueo cuando se usaban los Superfondos de pantalla",
+      "Reparado: En algunos casos los fondos de pantalla parpadeaban cuando se usaba el Desbloqueo con huella dactilar",
+      "Reparado: Se producían anomalías en la pantalla cuando se utilizaba el Desbloqueo con huella dactilar con videojuegos",
+      "Reparado: Problemas con la animación de la huella dactilar en varias escenas",
+      "Reparado: La huella dactilar y el Desbloqueo facial se desactivaban después de instalar una tarjeta SIM",
+      "Reparado: En algunos casos la pantalla parpadeaba cuando se usaba el Desbloqueo con huella dactilar con los Superfondos de pantalla",
+      "Reparado: \"Levantar para activar\" se desactivaba inesperadamente en algunos casos",
+      "Reparado: En algunos casos las notificaciones de la Pantalla de bloqueo no desaparecían a tiempo cuando se usaba la huella dactilar o el Desbloqueo facial",
+      "Reparado: En algunos casos la pantalla parpadeaba cuando se usaba el Desbloqueo con huella dactilar",
+      "Reparado: No se mostraba ningún elemento en la pantalla excepto la barra de estado después de usar el Desbloqueo con huella dactilar",
+      "Reparado: Problemas con el reloj de la Pantalla de bloqueo cuando se utilizaban temas de terceros y superfondos de pantalla",
+      "Optimización: Uso de la memoria de la Bóveda de aplicaciones cuando el dispositivo estaba bloqueado",
+      "Reparado: \"Levantar para activar\" se desactivaba inesperadamente en algunos casos",
+      "Reparado: Problemas con el reloj de la Pantalla de bloqueo cuando se utilizaban temas de terceros y superfondos de pantalla",
+      "Optimización: Uso de la memoria de la Bóveda de aplicaciones cuando el dispositivo estaba bloqueado",
+      "Reparado: \"Levantar para activar\" se desactivaba inesperadamente en algunos casos",
+      "Reparado: Problemas con el reloj de la Pantalla de bloqueo cuando se utilizaban temas de terceros y superfondos de pantalla",
+      "Optimización: Uso de la memoria de la Bóveda de aplicaciones cuando el dispositivo estaba bloqueado",
+      "Reparado: \"Levantar para activar\" se desactivaba inesperadamente en algunos casos",
       "Reparado: Problemas con el reloj de la Pantalla de bloqueo cuando se utilizaban temas de terceros y superfondos de pantalla"
+    ],
+    "barra de estado, barra de notificaciones": [
+      "Optimización: Algoritmos para mostrar notificaciones de llamadas entrantes",
+      "Optimización: Notificaciones de alarmas",
+      "Reparado: Las notificaciones flotantes se superponían cuando se usaba el fondo transparente",
+      "Reparado: Los elementos del diálogo de permisos se superponían después de presionar una notificación durante mucho tiempo",
+      "Reparado: Las notificaciones no se mostraban correctamente después de recibir llamadas perdidas",
+      "Optimización: Algoritmos para mostrar notificaciones de llamadas entrantes",
+      "Reparado: Las notificaciones flotantes se superponían cuando se usaba el fondo transparente",
+      "Reparado: Los elementos del diálogo de permisos se superponían después de presionar una notificación durante mucho tiempo",
+      "Reparado: Las notificaciones no se mostraban correctamente después de recibir llamadas perdidas"
+    ],
+    "Ajustes": [
+      "Reparado: Problemas de la interfaz de usuario que aparecían al añadir redes Wi-Fi corporativas",
+      "Reparado: Algunas cuentas no podían ser sincronizadas",
+      "Reparado: Se producían bloqueos cuando se seleccionaba el mapa predeterminado"
     ],
     "Barra de estado, Barra de notificaciones": [
       "Optimización: Algoritmos para mostrar notificaciones de llamadas entrantes",
       "Reparado: Las notificaciones flotantes se superponían cuando se usaba el fondo transparente",
       "Reparado: Los elementos del diálogo de permisos se superponían después de presionar una notificación durante mucho tiempo",
       "Reparado: Las notificaciones no se mostraban correctamente después de recibir llamadas perdidas"
+    ],
+    "Servicio en la nube de Xiaomi": [
+      "Optimización: Algoritmos para mostrar notificaciones de llamadas entrantes",
+      "Reparado: Las notificaciones flotantes se superponían cuando se usaba el fondo transparente",
+      "Reparado: Los elementos del diálogo de permisos se superponían después de presionar una notificación durante mucho tiempo",
+      "Reparado: Las notificaciones no se mostraban correctamente después de recibir llamadas perdidas"
+    ],
+    "Sistema": [
+      "Parche de seguridad de Android actualizado a septiembre de 2021. Seguridad del sistema incrementada."
     ]
   },
   "logs_pt": {
-    "Sistema": [
-      "Patch de Segurança do Android atualizado para Setembro de 2021. Segurança do sistema aprimorada.",
-      "Patch de Segurança do Android atualizado para Setembro de 2021. Segurança do sistema aprimorada."
+    "MIUI12.5 Aprimorado": [
+      "Rápido desempenho. Mais vida entre as cargas.",
+      "Algoritmos focalizados: Nossos novos algoritmos alocarão dinamicamente recursos de sistema com base em cenários específicos, garantindo uma experiência suave em todos os modelos.",
+      "Memória atomizada: Mecanismo de gerenciamento de memória ultra sensível tornará o gerenciamento da RAM mais eficiente.",
+      "Armazenamento fluido: Novos mecanismos sensíveis de armazenamento manterão seu sistema rápido e responsivo como se fosse o primeiro dia de uso.",
+      "Equilíbrio inteligente: As melhorias do sistema principal permitem que o seu dispositivo tire o melhor proveito das especificações do hardware de última geração.",
+      "Rápido desempenho. Mais vida entre as cargas.",
+      "Algoritmos focalizados: Nossos novos algoritmos alocarão dinamicamente recursos de sistema com base em cenários específicos, garantindo uma experiência suave em todos os modelos.",
+      "Memória atomizada: Mecanismo de gerenciamento de memória ultra sensível tornará o gerenciamento da RAM mais eficiente.",
+      "Armazenamento fluido: Novos mecanismos sensíveis de armazenamento manterão seu sistema rápido e responsivo como se fosse o primeiro dia de uso.",
+      "Equilíbrio inteligente: As melhorias do sistema principal permitem que o seu dispositivo tire o melhor proveito das especificações do hardware de última geração.",
+      "Rápido desempenho. Mais vida entre as cargas.",
+      "Algoritmos focalizados: Nossos novos algoritmos alocarão dinamicamente recursos de sistema com base em cenários específicos, garantindo uma experiência suave em todos os modelos.",
+      "Memória atomizada: Mecanismo de gerenciamento de memória ultra sensível tornará o gerenciamento da RAM mais eficiente.",
+      "Armazenamento fluido: Novos mecanismos sensíveis de armazenamento manterão seu sistema rápido e responsivo como se fosse o primeiro dia de uso.",
+      "Equilíbrio inteligente: As melhorias do sistema principal permitem que o seu dispositivo tire o melhor proveito das especificações do hardware de última geração."
     ],
     "Tela de bloqueio": [
       "Otimização: Uso de memória do App vault com o dispositivo bloqueado",
-      "Correção: ^Levantar para ligar a tela^ desativava inesperadamente em alguns casos",
+      "Correção: A tela piscava após ser bloqueada quando os Super planos de fundo estavam em uso",
+      "Correção: Os planos de fundo piscavam quando o Desbloqueio por impressão digital era usado em alguns casos",
+      "Correção: Problemas de exibição ocorriam quando o Desbloqueio por impressão digital era usado em jogos",
+      "Correção: Problemas com a animação de impressão digital em vários cenários",
+      "Correção: Desbloqueio por impressão digital ou facial eram desativados após um cartão SIM ser instalado",
+      "Correção: A tela piscava quando o Desbloqueio por impressão digital era usado com os Super planos de fundo em alguns casos",
+      "Correção: \"Levantar para ligar a tela\" desativava inesperadamente em alguns casos",
+      "Correção: Notificações na Tela de bloqueio não desapareciam a tempo quando o Desbloqueio facial ou por impressão digital era usado em alguns casos",
+      "Correção: A tela piscava quando o Desbloqueio por impressão digital era usado em alguns casos",
+      "Correção: Nenhum item exceto pela barra de status eram exibidos na tela após usar o Desbloqueio por impressão digital",
+      "Correção: Problemas com o relógio da Tela de bloqueio quando temas de terceiros e super planos de fundo eram usados",
+      "Otimização: Uso de memória do App vault com o dispositivo bloqueado",
+      "Correção: \"Levantar para ligar a tela\" desativava inesperadamente em alguns casos",
+      "Correção: Problemas com o relógio da Tela de bloqueio quando temas de terceiros e super planos de fundo eram usados",
+      "Otimização: Uso de memória do App vault com o dispositivo bloqueado",
+      "Correção: \"Levantar para ligar a tela\" desativava inesperadamente em alguns casos",
+      "Correção: Problemas com o relógio da Tela de bloqueio quando temas de terceiros e super planos de fundo eram usados",
+      "Otimização: Uso de memória do App vault com o dispositivo bloqueado",
+      "Correção: \"Levantar para ligar a tela\" desativava inesperadamente em alguns casos",
       "Correção: Problemas com o relógio da Tela de bloqueio quando temas de terceiros e super planos de fundo eram usados"
+    ],
+    "Barra de status e Área de notificações": [
+      "Otimização: Algoritmo para exibição de notificações de chamada recebida",
+      "Otimização: Notificações de alarme",
+      "Correção: As notificações flutuantes eram sobrepostas quando planos de fundo transparentes eram usados",
+      "Correção: Elementos da caixa de diálogo de permissões se sobrepunham quando uma notificação era pressionada longamente",
+      "Correção: As notificações não eram exibidas corretamente após chamadas perdidas",
+      "Otimização: Algoritmo para exibição de notificações de chamada recebida",
+      "Correção: As notificações flutuantes eram sobrepostas quando planos de fundo transparentes eram usados",
+      "Correção: Elementos da caixa de diálogo de permissões se sobrepunham quando uma notificação era pressionada longamente",
+      "Correção: As notificações não eram exibidas corretamente após chamadas perdidas"
+    ],
+    "Configurações": [
+      "Correção: Problemas na IU que apareciam ao adicionar redes Wi-Fi corporativas",
+      "Correção: Algumas contas não podiam ser sincronizadas",
+      "Correção: Travamentos ocorriam quando o mapa padrão era selecionado"
     ],
     "Barra de status, Área de notificações": [
       "Otimização: Algoritmo para exibição de notificações de chamada recebida",
       "Correção: As notificações flutuantes eram sobrepostas quando planos de fundo transparentes eram usados",
       "Correção: Elementos da caixa de diálogo de permissões se sobrepunham quando uma notificação era pressionada longamente",
       "Correção: As notificações não eram exibidas corretamente após chamadas perdidas"
+    ],
+    "Serviço de nuvem Xiaomi": [
+      "Otimização: Algoritmo para exibição de notificações de chamada recebida",
+      "Correção: As notificações flutuantes eram sobrepostas quando planos de fundo transparentes eram usados",
+      "Correção: Elementos da caixa de diálogo de permissões se sobrepunham quando uma notificação era pressionada longamente",
+      "Correção: As notificações não eram exibidas corretamente após chamadas perdidas"
+    ],
+    "Sistema": [
+      "Patch de Segurança do Android atualizado para Setembro de 2021. Segurança do sistema aprimorada."
     ]
   },
   "logs_tr": {
-    "Sistem": [
-      "Android Güvenlik Patch^i Eylül 2021^de güncellendi. Sistem güvenliği arttırıldı.",
-      "Android Güvenlik Patch^i Eylül 2021^de güncellendi. Sistem güvenliği arttırıldı."
+    "MIUI12.5 Geliştirilmiş": [
+      "Hızlı performans. Görevler arasında daha fazla yaşam.",
+      "Odaklanmış algoritmalar: Yeni algoritmalarımız, tüm modellerde sorunsuz deneyimi garantilemek için belirli senaryolara dayalı sistem kaynaklarını dinamik olarak tahsis edecektir.",
+      "Atomize bellek: Ultra iyi bellek yönetimi mekanizması, RAM kullanımını daha verimli hale getirecektir.",
+      "Sıvı depolama: Yeni hassas depolama mekanizmaları zaman geçtikçe sisteminizi canlı ve duyarlı tutacaktır.",
+      "Akıllı bakiye. Temel sistem iyileştirmeleri, cihazınızın amiral gemisi donanım özelliklerinden en iyi şekilde yararlanmasını sağlar.",
+      "Hızlı performans. Görevler arasında daha fazla yaşam.",
+      "Odaklanmış algoritmalar: Yeni algoritmalarımız, tüm modellerde sorunsuz deneyimi garantilemek için belirli senaryolara dayalı sistem kaynaklarını dinamik olarak tahsis edecektir.",
+      "Atomize bellek: Ultra iyi bellek yönetimi mekanizması, RAM kullanımını daha verimli hale getirecektir.",
+      "Sıvı depolama: Yeni hassas depolama mekanizmaları zaman geçtikçe sisteminizi canlı ve duyarlı tutacaktır.",
+      "Akıllı bakiye. Temel sistem iyileştirmeleri, cihazınızın amiral gemisi donanım özelliklerinden en iyi şekilde yararlanmasını sağlar.",
+      "Hızlı performans. Görevler arasında daha fazla yaşam.",
+      "Odaklanmış algoritmalar: Yeni algoritmalarımız, tüm modellerde sorunsuz deneyimi garantilemek için belirli senaryolara dayalı sistem kaynaklarını dinamik olarak tahsis edecektir.",
+      "Atomize bellek: Ultra iyi bellek yönetimi mekanizması, RAM kullanımını daha verimli hale getirecektir.",
+      "Sıvı depolama: Yeni hassas depolama mekanizmaları zaman geçtikçe sisteminizi canlı ve duyarlı tutacaktır.",
+      "Akıllı bakiye. Temel sistem iyileştirmeleri, cihazınızın amiral gemisi donanım özelliklerinden en iyi şekilde yararlanmasını sağlar."
     ],
     "Kilit ekranı": [
       "Optimizasyon: Cihaz kilitlendiğinde Uygulama kasası belleği kullanımı",
-      "Onarım: ^^Uyandırmak için kaldır^^ bazı durumlarda beklenmedik şekilde kapandı",
+      "Onarım: Süper duvar kağıtları kullanıldığında kilit açtıktan sonra ekran yanıp söndü",
+      "Onarım: Parmak izi ile kilit açma kullanıldığı bazı durumlarda duvar kağıtları yanıp söndü",
+      "Onarım: Parmak izi ile kilit açma, oyunlar ile kullanıldığında ekran anormallikleri oluştu",
+      "Onarım: Birkaç sahnedeki parmak izi animasyonu ile ilgili sorunlar",
+      "Onarım: SIM kart takıldıktan sonra Parmak izi ve Yüz ile kilit açma kapatıldı",
+      "Onarım: Parmak izi ile kilit açma, Süper duvar kağıtları ile kullanıldığı bazı durumlarda ekran yanıp söndü",
+      "Onarım: \"Uyandırmak için kaldır\" bazı durumlarda beklenmedik şekilde kapandı",
+      "Onarım: Parmak izi veya Yüz ile kilit açma kullanıldığı bazı durumlarda Kilit ekranı bildirimleri zamanında kaybolmadı",
+      "Onarım: Parmak izi ile kilit açma kullanıldığı bazı durumlarda ekran yanıp söndü",
+      "Onarım: Parmak izi ile kilit açma kullanıldıktan sonra ekranda durum çubuğundan başka öge gösterilmedi",
+      "Onarım: Üçüncü taraf temaları ve süper duvar kağıtları kullanıldığında Kilit ekranı saati ile ilgili sorunlar",
+      "Optimizasyon: Cihaz kilitlendiğinde Uygulama kasası belleği kullanımı",
+      "Onarım: \"Uyandırmak için kaldır\" bazı durumlarda beklenmedik şekilde kapandı",
+      "Onarım: Üçüncü taraf temaları ve süper duvar kağıtları kullanıldığında Kilit ekranı saati ile ilgili sorunlar",
+      "Optimizasyon: Cihaz kilitlendiğinde Uygulama kasası belleği kullanımı",
+      "Onarım: \"Uyandırmak için kaldır\" bazı durumlarda beklenmedik şekilde kapandı",
+      "Onarım: Üçüncü taraf temaları ve süper duvar kağıtları kullanıldığında Kilit ekranı saati ile ilgili sorunlar",
+      "Optimizasyon: Cihaz kilitlendiğinde Uygulama kasası belleği kullanımı",
+      "Onarım: \"Uyandırmak için kaldır\" bazı durumlarda beklenmedik şekilde kapandı",
       "Onarım: Üçüncü taraf temaları ve süper duvar kağıtları kullanıldığında Kilit ekranı saati ile ilgili sorunlar"
+    ],
+    "durum çubuğu, Bildirim çubuğu": [
+      "Optimizasyon: Gelen arama bildirimlerini görüntülemek için algoritmalar",
+      "Optimizasyon: Alarm bildirimleri",
+      "Onarım: Şeffaf arka plan kullanıldığında Kayan bildirimler üst üste bindi",
+      "Onarım: Bir bildirime uzun süre basıldıktan sonra İzinler diyaloğu ögeleri üst üste bindi",
+      "Onarım: Cevapsız aramalardan sonra bildirimler düzgün bir şekilde görüntülenmedi",
+      "Optimizasyon: Gelen arama bildirimlerini görüntülemek için algoritmalar",
+      "Onarım: Şeffaf arka plan kullanıldığında Kayan bildirimler üst üste bindi",
+      "Onarım: Bir bildirime uzun süre basıldıktan sonra İzinler diyaloğu ögeleri üst üste bindi",
+      "Onarım: Cevapsız aramalardan sonra bildirimler düzgün bir şekilde görüntülenmedi"
+    ],
+    "Ayarlar": [
+      "Onarım: Kurumsal Wi-Fi ağları ekleniyorken görünen kullanıcı arayüzü sorunları",
+      "Onarım: Bazı hesaplar senkronize edilemedi",
+      "Onarım: Varsayılan harita seçildiğinde çökmeler oluştu"
     ],
     "Durum çubuğu, Bildirim çubuğu": [
       "Optimizasyon: Gelen arama bildirimlerini görüntülemek için algoritmalar",
       "Onarım: Şeffaf arka plan kullanıldığında Kayan bildirimler üst üste bindi",
       "Onarım: Bir bildirime uzun süre basıldıktan sonra İzinler diyaloğu ögeleri üst üste bindi",
       "Onarım: Cevapsız aramalardan sonra bildirimler düzgün bir şekilde görüntülenmedi"
+    ],
+    "Xiaomi Bulut Hizmeti": [
+      "Optimizasyon: Gelen arama bildirimlerini görüntülemek için algoritmalar",
+      "Onarım: Şeffaf arka plan kullanıldığında Kayan bildirimler üst üste bindi",
+      "Onarım: Bir bildirime uzun süre basıldıktan sonra İzinler diyaloğu ögeleri üst üste bindi",
+      "Onarım: Cevapsız aramalardan sonra bildirimler düzgün bir şekilde görüntülenmedi"
+    ],
+    "Sistem": [
+      "Android Güvenlik Patch'i Eylül 2021'de güncellendi. Sistem güvenliği arttırıldı."
     ]
   },
   "logs_id": {
-    "Sistem": [
-      "Patch Keamanan Android diperbarui (September 2021). Keamanan sistem ditingkatkan.",
-      "Patch Keamanan Android diperbarui (September 2021). Keamanan sistem ditingkatkan."
+    "MIUI12.5 Ditingkatkan": [
+      "Performa yang cepat. Mengonsumsi lebih sedikit daya baterai.",
+      "Algoritme terfokus: Algoritme baru kami akan secara dinamis mengalokasikan sumber daya sistem berdasarkan kondisi tertentu, memastikan pengalaman yang lancar pada semua model.",
+      "Memori terbagi menjadi bagian-bagian (atomized): Mekanisme manajemen memori ultra-halus akan membuat penggunaan RAM lebih efisien.",
+      "Penyimpanan yang bersifat seperti cairan: Mekanisme penyimpanan sensitif baru akan membuat sistem Anda tetap hidup dan responsif seiring berjalannya waktu.",
+      "Keseimbangan cerdas: Peningkatan sistem inti memungkinkan performa fitur dari perangkat flagship yang ada, dapat mencapai level yang terbaik.",
+      "Performa yang cepat. Mengonsumsi lebih sedikit daya baterai.",
+      "Algoritme terfokus: Algoritme baru kami akan secara dinamis mengalokasikan sumber daya sistem berdasarkan kondisi tertentu, memastikan pengalaman yang lancar pada semua model.",
+      "Memori terbagi menjadi bagian-bagian (atomized): Mekanisme manajemen memori ultra-halus akan membuat penggunaan RAM lebih efisien.",
+      "Penyimpanan yang bersifat seperti cairan: Mekanisme penyimpanan sensitif baru akan membuat sistem Anda tetap hidup dan responsif seiring berjalannya waktu.",
+      "Keseimbangan cerdas: Peningkatan sistem inti memungkinkan performa fitur dari perangkat flagship yang ada, dapat mencapai level yang terbaik.",
+      "Performa yang cepat. Mengonsumsi lebih sedikit daya baterai.",
+      "Algoritme terfokus: Algoritme baru kami akan secara dinamis mengalokasikan sumber daya sistem berdasarkan kondisi tertentu, memastikan pengalaman yang lancar pada semua model.",
+      "Memori terbagi menjadi bagian-bagian (atomized): Mekanisme manajemen memori ultra-halus akan membuat penggunaan RAM lebih efisien.",
+      "Penyimpanan yang bersifat seperti cairan: Mekanisme penyimpanan sensitif baru akan membuat sistem Anda tetap hidup dan responsif seiring berjalannya waktu.",
+      "Keseimbangan cerdas: Peningkatan sistem inti memungkinkan performa fitur dari perangkat flagship yang ada, dapat mencapai level yang terbaik."
     ],
     "Layar kunci": [
       "Pengoptimalan: Penggunaan memori App vault saat perangkat terkunci",
-      "Perbaikan: ^Angkat untuk bangunkan^ mati secara tidak terduga dalam beberapa kasus",
+      "Perbaikan: Layar berkedip setelah dikunci saat Wallpaper super digunakan",
+      "Perbaikan: Wallpaper berkedip saat Buka kunci dengan sidik jari digunakan dalam beberapa kasus",
+      "Perbaikan: Ada masalah dengan tampilan, saat Buka kunci dengan sidik jari digunakan di halaman permainan",
+      "Perbaikan: Masalah dengan animasi sidik jari di beberapa kondisi",
+      "Perbaikan: Buka kunci dengan sidik jari dan wajah dimatikan setelah kartu SIM dipasang",
+      "Perbaikan: Layar berkedip saat Buka kunci dengan sidik jari digunakan di Wallpaper super dalam beberapa kasus",
+      "Perbaikan: \"Angkat untuk bangunkan\" mati secara tidak terduga dalam beberapa kasus",
+      "Perbaikan: Notifikasi Layar kunci tidak hilang tepat waktu, saat Buka kunci dengan sidik jari atau wajah digunakan dalam beberapa kasus",
+      "Perbaikan: Layar berkedip saat Buka kunci dengan sidik jari digunakan dalam beberapa kasus",
+      "Perbaikan: Tidak ada item kecuali bilah status yang ditampilkan di layar setelah menggunakan Buka kunci dengan sidik jari",
+      "Perbaikan: Masalah dengan jam Layar Kunci saat tema pihak ketiga dan wallpaper super digunakan",
+      "Pengoptimalan: Penggunaan memori App vault saat perangkat terkunci",
+      "Perbaikan: \"Angkat untuk bangunkan\" mati secara tidak terduga dalam beberapa kasus",
+      "Perbaikan: Masalah dengan jam Layar Kunci saat tema pihak ketiga dan wallpaper super digunakan",
+      "Pengoptimalan: Penggunaan memori App vault saat perangkat terkunci",
+      "Perbaikan: \"Angkat untuk bangunkan\" mati secara tidak terduga dalam beberapa kasus",
+      "Perbaikan: Masalah dengan jam Layar Kunci saat tema pihak ketiga dan wallpaper super digunakan",
+      "Pengoptimalan: Penggunaan memori App vault saat perangkat terkunci",
+      "Perbaikan: \"Angkat untuk bangunkan\" mati secara tidak terduga dalam beberapa kasus",
       "Perbaikan: Masalah dengan jam Layar Kunci saat tema pihak ketiga dan wallpaper super digunakan"
+    ],
+    "bar status, layar notifikasi": [
+      "Pengoptimalan: Algoritma untuk menampilkan notifikasi panggilan masuk",
+      "Pengoptimalan: Notifikasi alarm",
+      "Perbaikan: Notifikasi mengambang tumpang tindih saat latar belakang transparan digunakan",
+      "Perbaikan: Elemen dialog perizinan tumpang tindih setelah notifikasi ditekan lama",
+      "Perbaikan: Notifikasi tidak ditampilkan dengan benar setelah ada panggilan tak terjawab",
+      "Pengoptimalan: Algoritma untuk menampilkan notifikasi panggilan masuk",
+      "Perbaikan: Notifikasi mengambang tumpang tindih saat latar belakang transparan digunakan",
+      "Perbaikan: Elemen dialog perizinan tumpang tindih setelah notifikasi ditekan lama",
+      "Perbaikan: Notifikasi tidak ditampilkan dengan benar setelah ada panggilan tak terjawab"
+    ],
+    "Pengaturan": [
+      "Perbaikan: Masalah antarmuka (UI) yang timbul saat menambahkan jaringan Wi-Fi perusahaan",
+      "Perbaikan: Beberapa akun tidak disinkronkan",
+      "Perbaikan: Tutup paksa terjadi saat peta default dipilih"
     ],
     "Bar status, Layar notiifikasi": [
       "Pengoptimalan: Algoritma untuk menampilkan notifikasi panggilan masuk",
       "Perbaikan: Notifikasi mengambang tumpang tindih saat latar belakang transparan digunakan",
       "Perbaikan: Elemen dialog perizinan tumpang tindih setelah notifikasi ditekan lama",
       "Perbaikan: Notifikasi tidak ditampilkan dengan benar setelah ada panggilan tak terjawab"
+    ],
+    "Layanan Cloud Xiaomi": [
+      "Pengoptimalan: Algoritma untuk menampilkan notifikasi panggilan masuk",
+      "Perbaikan: Notifikasi mengambang tumpang tindih saat latar belakang transparan digunakan",
+      "Perbaikan: Elemen dialog perizinan tumpang tindih setelah notifikasi ditekan lama",
+      "Perbaikan: Notifikasi tidak ditampilkan dengan benar setelah ada panggilan tak terjawab"
+    ],
+    "Sistem": [
+      "Patch Keamanan Android diperbarui (September 2021). Keamanan sistem ditingkatkan."
     ]
   },
   "logs_vi": {
-    "Hệ thống": [
-      "Cập nhật Bản vá bảo mật Android đến tháng 9 năm 2021. Tăng cường bảo mật hệ thống.",
-      "Cập nhật Bản vá bảo mật Android đến tháng 9 năm 2021. Tăng cường bảo mật hệ thống."
+    "MIUI12.5 Nâng cấp": [
+      "Trải nghiệm mượt mà - Hiệu suất tối ưu",
+      "Thuật toán tập trung: Thuật toán mới sẽ phân bổ động tài nguyên hệ thống dựa trên bối cảnh cụ thể, đảm bảo trải nghiệm mượt mà trên tất cả mẫu thiết bị.",
+      "Bộ nhớ nguyên tử hóa: Cơ chế quản lý bộ nhớ siêu tốt sẽ giúp việc sử dụng RAM hiệu quả hơn.",
+      "Lưu trữ trạng thái lỏng: Cơ chế lưu trữ nhạy cảm mới sẽ giúp hệ thống luôn vận hành mượt mà và phản hồi nhanh theo thời gian.",
+      "Cân bằng thông minh: Cải thiện hệ thống lõi để thiết bị phát huy tối đa thông số kỹ thuật phần cứng flagship.",
+      "Trải nghiệm mượt mà - Hiệu suất tối ưu",
+      "Thuật toán tập trung: Thuật toán mới sẽ phân bổ động tài nguyên hệ thống dựa trên bối cảnh cụ thể, đảm bảo trải nghiệm mượt mà trên tất cả mẫu thiết bị.",
+      "Bộ nhớ nguyên tử hóa: Cơ chế quản lý bộ nhớ siêu tốt sẽ giúp việc sử dụng RAM hiệu quả hơn.",
+      "Lưu trữ trạng thái lỏng: Cơ chế lưu trữ nhạy cảm mới sẽ giúp hệ thống luôn vận hành mượt mà và phản hồi nhanh theo thời gian.",
+      "Cân bằng thông minh: Cải thiện hệ thống lõi để thiết bị phát huy tối đa thông số kỹ thuật phần cứng flagship.",
+      "Trải nghiệm mượt mà - Hiệu suất tối ưu",
+      "Thuật toán tập trung: Thuật toán mới sẽ phân bổ động tài nguyên hệ thống dựa trên bối cảnh cụ thể, đảm bảo trải nghiệm mượt mà trên tất cả mẫu thiết bị.",
+      "Bộ nhớ nguyên tử hóa: Cơ chế quản lý bộ nhớ siêu tốt sẽ giúp việc sử dụng RAM hiệu quả hơn.",
+      "Lưu trữ trạng thái lỏng: Cơ chế lưu trữ nhạy cảm mới sẽ giúp hệ thống luôn vận hành mượt mà và phản hồi nhanh theo thời gian.",
+      "Cân bằng thông minh: Cải thiện hệ thống lõi để thiết bị phát huy tối đa thông số kỹ thuật phần cứng flagship."
     ],
     "Màn hình khóa": [
       "Tối ưu: App vault chiếm dụng bộ nhớ khi thiết bị khóa",
-      "Sửa: ^Nâng lên để đánh thức^ bị tắt đột ngột trong một số trường hợp",
+      "Sửa: Màn hình nhấp nháy sau khi khóa khi Siêu hình nền được sử dụng",
+      "Sửa: Hình nền nhấp nháy khi sử dụng Mở khóa vân tay trong một số trường hợp",
+      "Sửa: Màn hình bất thường khi sử dụng Mở khóa vân tay với trò chơi",
+      "Sửa: Vấn đề với hoạt ảnh vân tay trong một số trường hợp",
+      "Sửa: Mở khóa bằng vân tay và khuôn mặt bị tắt sau khi lắp thẻ SIM",
+      "Sửa: Màn hình nhấp nháy khi Mở khóa vân tay được sử dụng với Siêu hình nền trong một số trường hợp",
+      "Sửa: \"Nâng lên để đánh thức\" bị tắt đột ngột trong một số trường hợp",
+      "Sửa: Thông báo Màn hình khóa không biến mất khi Mở khóa bằng vân tay hoặc khuôn mặt được sử dụng trong một số trường hợp",
+      "Sửa: Màn hình nhấp nháy khi sử dụng Mở khóa vân tay trong một số trường hợp",
+      "Sửa: Không có mục nào ngoại trừ thanh trạng thái được hiển thị trên màn hình sau khi sử dụng Mở khóa vân tay",
+      "Sửa: Vấn đề đồng hồ Màn hình khóa khi chủ đề bên thứ ba và siêu hình nền được sử dụng",
+      "Tối ưu: App vault chiếm dụng bộ nhớ khi thiết bị khóa",
+      "Sửa: \"Nâng lên để đánh thức\" bị tắt đột ngột trong một số trường hợp",
+      "Sửa: Vấn đề đồng hồ Màn hình khóa khi chủ đề bên thứ ba và siêu hình nền được sử dụng",
+      "Tối ưu: App vault chiếm dụng bộ nhớ khi thiết bị khóa",
+      "Sửa: \"Nâng lên để đánh thức\" bị tắt đột ngột trong một số trường hợp",
+      "Sửa: Vấn đề đồng hồ Màn hình khóa khi chủ đề bên thứ ba và siêu hình nền được sử dụng",
+      "Tối ưu: App vault chiếm dụng bộ nhớ khi thiết bị khóa",
+      "Sửa: \"Nâng lên để đánh thức\" bị tắt đột ngột trong một số trường hợp",
       "Sửa: Vấn đề đồng hồ Màn hình khóa khi chủ đề bên thứ ba và siêu hình nền được sử dụng"
+    ],
+    "Cài đặt": [
+      "Sửa: Sự cố giao diện người dùng xuất hiện khi thêm mạng Wi-Fi doanh nghiệp",
+      "Sửa: Một vài tài khoản không thể đồng bộ",
+      "Sửa: Xảy ra lỗi khi bản đồ mặc định được chọn"
     ],
     "Thanh trạng thái, Thanh thông báo": [
       "Tối ưu: Thuật toán thông báo cuộc gọi đến",
       "Sửa: Thông báo nổi bị chồng lấn khi hình nền trong suốt được sử dụng",
       "Sửa: Hộp thoại quyền bị chồng lấn sau khi bấm giữ thông báo",
       "Sửa: Thông báo không hiển thị chính xác sau khi lỡ cuộc gọi"
+    ],
+    "Dịch vụ đám mây Xiaomi": [
+      "Tối ưu: Thuật toán thông báo cuộc gọi đến",
+      "Sửa: Thông báo nổi bị chồng lấn khi hình nền trong suốt được sử dụng",
+      "Sửa: Hộp thoại quyền bị chồng lấn sau khi bấm giữ thông báo",
+      "Sửa: Thông báo không hiển thị chính xác sau khi lỡ cuộc gọi"
+    ],
+    "Hệ thống": [
+      "Cập nhật Bản vá bảo mật Android đến tháng 9 năm 2021. Tăng cường bảo mật hệ thống."
     ]
   },
   "logs_th": {
-    "ระบบ": [
-      "อัปเดตแพทช์ความปลอดภัยของแอนดรอยด์เป็นกันยายน 2021 เพิ่มความปลอดภัยของระบบ",
-      "อัปเดตแพทช์ความปลอดภัยของแอนดรอยด์เป็นกันยายน 2021 เพิ่มความปลอดภัยของระบบ"
+    "MIUI12.5 ที่ปรับปรุงแล้ว": [
+      "ประสิทธิภาพเพิ่มขึ้น ใช้งานได้นานขึ้นในทุกการชาร์จ",
+      "อัลกอริธึมที่มุ่งเน้น: อัลกอริธึมใหม่ของเราจะจัดสรรทรัพยากรระบบแบบไดนามิกตามฉากเฉพาะ ทำให้มั่นใจได้ว่าจะได้รับประสบการณ์ที่ราบรื่นในทุกรุ่น",
+      "หน่วยความจำ Atomized: กลไกการจัดการหน่วยความจำแบบ Ultra-fine จะทำให้การใช้แรมมีประสิทธิภาพมากขึ้น",
+      "พื้นที่จัดเก็บแบบของเหลว: กลไกการจัดเก็บข้อมูลที่ละเอียดอ่อนใหม่จะทำให้ระบบของคุณมีชีวิตชีวาและตอบสนองเมื่อเวลาผ่านไป",
+      "สมดุลสมาร์ท: การปรับปรุงระบบหลักช่วยให้อุปกรณ์ของคุณใช้ข้อกำหนดฮาร์ดแวร์รุ่นเรือธงได้ดีที่สุด",
+      "ประสิทธิภาพเพิ่มขึ้น ใช้งานได้นานขึ้นในทุกการชาร์จ",
+      "อัลกอริธึมที่มุ่งเน้น: อัลกอริธึมใหม่ของเราจะจัดสรรทรัพยากรระบบแบบไดนามิกตามฉากเฉพาะ ทำให้มั่นใจได้ว่าจะได้รับประสบการณ์ที่ราบรื่นในทุกรุ่น",
+      "หน่วยความจำ Atomized: กลไกการจัดการหน่วยความจำแบบ Ultra-fine จะทำให้การใช้แรมมีประสิทธิภาพมากขึ้น",
+      "พื้นที่จัดเก็บแบบของเหลว: กลไกการจัดเก็บข้อมูลที่ละเอียดอ่อนใหม่จะทำให้ระบบของคุณมีชีวิตชีวาและตอบสนองเมื่อเวลาผ่านไป",
+      "สมดุลสมาร์ท: การปรับปรุงระบบหลักช่วยให้อุปกรณ์ของคุณใช้ข้อกำหนดฮาร์ดแวร์รุ่นเรือธงได้ดีที่สุด",
+      "ประสิทธิภาพเพิ่มขึ้น ใช้งานได้นานขึ้นในทุกการชาร์จ",
+      "อัลกอริธึมที่มุ่งเน้น: อัลกอริธึมใหม่ของเราจะจัดสรรทรัพยากรระบบแบบไดนามิกตามฉากเฉพาะ ทำให้มั่นใจได้ว่าจะได้รับประสบการณ์ที่ราบรื่นในทุกรุ่น",
+      "หน่วยความจำ Atomized: กลไกการจัดการหน่วยความจำแบบ Ultra-fine จะทำให้การใช้แรมมีประสิทธิภาพมากขึ้น",
+      "พื้นที่จัดเก็บแบบของเหลว: กลไกการจัดเก็บข้อมูลที่ละเอียดอ่อนใหม่จะทำให้ระบบของคุณมีชีวิตชีวาและตอบสนองเมื่อเวลาผ่านไป",
+      "สมดุลสมาร์ท: การปรับปรุงระบบหลักช่วยให้อุปกรณ์ของคุณใช้ข้อกำหนดฮาร์ดแวร์รุ่นเรือธงได้ดีที่สุด"
     ],
     "ล็อคหน้าจอ": [
       "การเพิ่มประสิทธิภาพ: การใช้หน่วยความจำ App vault เมื่ออุปกรณ์ถูกล็อค",
-      "แก้ไข: ^ยกขึ้นเพื่อปลุก^ ถูกปิดโดยไม่คาดคิดในบางกรณี",
+      "แก้ไข: หน้าจอกะพริบหลังจากล็อคเมื่อใช้สุดยอดภาพพื้นหลัง",
+      "แก้ไข: ภาพพื้นหลังกะพริบเมื่อใช้การปลดล็อกด้วยลายนิ้วมือในบางกรณี",
+      "แก้ไข: แสดงความผิดปกติที่เกิดขึ้นเมื่อใช้การปลดล็อกด้วยลายนิ้วมือกับเกม",
+      "แก้ไข: ปัญหาเกี่ยวกับแอนิเมชั่นลายนิ้วมือในหลายฉาก",
+      "แก้ไข: ปลดล็อกด้วยลายนิ้วมือและใบหน้าถูกปิดหลังจากติดตั้งซิมการ์ด",
+      "แก้ไข: หน้าจอกะพริบเมื่อใช้การปลดล็อกด้วยลายนิ้วมือกับสุดยอดภาพพื้นหลังในบางกรณี",
+      "แก้ไข: \"ยกขึ้นเพื่อปลุก\" ถูกปิดโดยไม่คาดคิดในบางกรณี",
+      "แก้ไข: การแจ้งเตือนหน้าจอล็อกไม่หายไปตามเวลาเมื่อปลดล็อกด้วยลายนิ้วมือหรือใบหน้าในบางกรณี",
+      "แก้ไข: หน้าจอกะพริบเมื่อใช้การปลดล็อกด้วยลายนิ้วมือในบางกรณี",
+      "แก้ไข: ไม่มีรายการยกเว้นแถบสถานะปรากฏบนหน้าจอหลังจากใช้การปลดล็อกด้วยลายนิ้วมือ",
+      "แก้ไข: ปัญหาเกี่ยวกับนาฬิกาหน้าจอล็อกเมื่อใช้ธีมของบุคคลที่สามและสุดยอดภาพพื้นหลัง",
+      "การเพิ่มประสิทธิภาพ: การใช้หน่วยความจำ App vault เมื่ออุปกรณ์ถูกล็อค",
+      "แก้ไข: \"ยกขึ้นเพื่อปลุก\" ถูกปิดโดยไม่คาดคิดในบางกรณี",
+      "แก้ไข: ปัญหาเกี่ยวกับนาฬิกาหน้าจอล็อกเมื่อใช้ธีมของบุคคลที่สามและสุดยอดภาพพื้นหลัง",
+      "การเพิ่มประสิทธิภาพ: การใช้หน่วยความจำ App vault เมื่ออุปกรณ์ถูกล็อค",
+      "แก้ไข: \"ยกขึ้นเพื่อปลุก\" ถูกปิดโดยไม่คาดคิดในบางกรณี",
+      "แก้ไข: ปัญหาเกี่ยวกับนาฬิกาหน้าจอล็อกเมื่อใช้ธีมของบุคคลที่สามและสุดยอดภาพพื้นหลัง",
+      "การเพิ่มประสิทธิภาพ: การใช้หน่วยความจำ App vault เมื่ออุปกรณ์ถูกล็อค",
+      "แก้ไข: \"ยกขึ้นเพื่อปลุก\" ถูกปิดโดยไม่คาดคิดในบางกรณี",
       "แก้ไข: ปัญหาเกี่ยวกับนาฬิกาหน้าจอล็อกเมื่อใช้ธีมของบุคคลที่สามและสุดยอดภาพพื้นหลัง"
+    ],
+    "การตั้งค่า": [
+      "แก้ไข: ปัญหา UI ที่ปรากฏขึ้นขณะเพิ่มเครือข่าย Wi-Fi ขององค์กร",
+      "แก้ไข: ไม่สามารถซิงค์บางบัญชีได้",
+      "แก้ไข: เกิดปัญหาเมื่อเลือกแผนที่เริ่มต้น"
     ],
     "แถบสถานะ, แถบแจ้งเตือน": [
       "การเพิ่มประสิทธิภาพ: อัลกอริทึมสำหรับการแสดงการแจ้งเตือนสายเรียกเข้า",
       "แก้ไข: การแจ้งเตือนแบบลอยซ้อนทับกันเมื่อใช้พื้นหลังโปร่งใส",
       "แก้ไข: องค์ประกอบข้อความการอนุญาตซ้อนทับกันหลังจากกดการแจ้งเตือนค้างไว้",
       "แก้ไข: การแจ้งเตือนแสดงไม่ถูกต้องหลังสายที่ไม่ได้รับ"
+    ],
+    "บริการคลาวด์ Xiaomi": [
+      "การเพิ่มประสิทธิภาพ: อัลกอริทึมสำหรับการแสดงการแจ้งเตือนสายเรียกเข้า",
+      "แก้ไข: การแจ้งเตือนแบบลอยซ้อนทับกันเมื่อใช้พื้นหลังโปร่งใส",
+      "แก้ไข: องค์ประกอบข้อความการอนุญาตซ้อนทับกันหลังจากกดการแจ้งเตือนค้างไว้",
+      "แก้ไข: การแจ้งเตือนแสดงไม่ถูกต้องหลังสายที่ไม่ได้รับ"
+    ],
+    "ระบบ": [
+      "อัปเดตแพทช์ความปลอดภัยของแอนดรอยด์เป็นกันยายน 2021 เพิ่มความปลอดภัยของระบบ"
     ]
   },
   "logs_ar": {
-    "النظام": [
-      "تم تحديث تصحيح أمان الأندرويد إلى سبتمبر 2021 لزيادة أمان النظام.",
-      "تم تحديث تصحيح أمان الأندرويد إلى سبتمبر 2021 لزيادة أمان النظام."
+    "MIUI12.5 تحسينات": [
+      "أداء سريع واستهلاك أقل للطاقة.",
+      "الخوارزميات المركزة: ستخصص خوارزمياتنا الجديدة موارد النظام ديناميكيا بناءً على مشاهد محددة، مما يجعل تجربتك مع جميع النماذج على أعلى مستوى.",
+      "الذاكرة الصغيرة: تعمل آلية إدارة الذاكرة فائقة الدقة على تحسين استخدام ذاكرة الوصول العشوائي.",
+      "تخزين السائل: تحافظ آليات التخزين الحساسة الجديدة على استجابة ومرونة نظامك على الرغم من مدمرات الوقت.",
+      "التوازن الذكي: تتيح لك التحسينات المدخلة على النظام الأساسي تحقيق أقصى استفادة من مواصفات معدات جهازك الرئيسية.",
+      "أداء سريع واستهلاك أقل للطاقة.",
+      "الخوارزميات المركزة: ستخصص خوارزمياتنا الجديدة موارد النظام ديناميكيا بناءً على مشاهد محددة، مما يجعل تجربتك مع جميع النماذج على أعلى مستوى.",
+      "الذاكرة الصغيرة: تعمل آلية إدارة الذاكرة فائقة الدقة على تحسين استخدام ذاكرة الوصول العشوائي.",
+      "تخزين السائل: تحافظ آليات التخزين الحساسة الجديدة على استجابة ومرونة نظامك على الرغم من مدمرات الوقت.",
+      "التوازن الذكي: تتيح لك التحسينات المدخلة على النظام الأساسي تحقيق أقصى استفادة من مواصفات معدات جهازك الرئيسية.",
+      "أداء سريع واستهلاك أقل للطاقة.",
+      "الخوارزميات المركزة: ستخصص خوارزمياتنا الجديدة موارد النظام ديناميكيا بناءً على مشاهد محددة، مما يجعل تجربتك مع جميع النماذج على أعلى مستوى.",
+      "الذاكرة الصغيرة: تعمل آلية إدارة الذاكرة فائقة الدقة على تحسين استخدام ذاكرة الوصول العشوائي.",
+      "تخزين السائل: تحافظ آليات التخزين الحساسة الجديدة على استجابة ومرونة نظامك على الرغم من مدمرات الوقت.",
+      "التوازن الذكي: تتيح لك التحسينات المدخلة على النظام الأساسي تحقيق أقصى استفادة من مواصفات معدات جهازك الرئيسية."
     ],
     "شاشة القفل": [
       "التحسين: استخدام منصة التطبيقات للذاكرة عند قفل شاشة الجهاز",
-      "الإصلاح: مشكلة توقف ميزة ^رفع الجهاز لإيقاظه^ بشكل غير متوقع في بعض الحالات",
+      "الإصلاح: وميض الشاشة بعد قفلها عند استخدام خلفيات سوبر",
+      "الإصلاح: مشكلة وميض خلفيات الشاشة عند استخدام فتح قفل الشاشة ببصمة الإصبع في بعض الحالات",
+      "الإصلاح: حدوث مشاكل غير طبيعية في العرض عند استخدام فتح قفل الشاشة ببصمة الإصبع مع الألعاب",
+      "الإصلاح: مشاكل حركة بصمة الإصبع في بعض المشاهد",
+      "الإصلاح: توقف ميزة بصمة الإصبع والتعرف على الوجه بعد إدخال بطاقة SIM",
+      "الإصلاح: مشكلة وميض الشاشة عند فتح قفل الشاشة عند استخدام خلفيات سوبر في بعض الأحيان",
+      "الإصلاح: مشكلة توقف ميزة \"رفع الجهاز لإيقاظه\" بشكل غير متوقع في بعض الحالات",
+      "الإصلاح: عدم ظهور إشعارات شاشة القفل في الوقت المحدد عند استخدام بصمة الإصبع أو التعرف على الوجه في بعض الحالات",
+      "الإصلاح: مشكلة وميض الشاشة عند استخدام فتح قفل الشاشة ببصمة الإصبع في بعض الحالات",
+      "الإصلاح: عدم ظهور أي عناصر على الشاشة على الشاشة باستثناء شريط الحالة بعد استخدام فتح قفل الشاشة ببصمة الإصبع",
+      "الإصلاح: مشاكل ساعة شاشة القفل عند استخدام ثيمات جهة خارجية وخلفيات سوبر",
+      "التحسين: استخدام منصة التطبيقات للذاكرة عند قفل شاشة الجهاز",
+      "الإصلاح: مشكلة توقف ميزة \"رفع الجهاز لإيقاظه\" بشكل غير متوقع في بعض الحالات",
+      "الإصلاح: مشاكل ساعة شاشة القفل عند استخدام ثيمات جهة خارجية وخلفيات سوبر",
+      "التحسين: استخدام منصة التطبيقات للذاكرة عند قفل شاشة الجهاز",
+      "الإصلاح: مشكلة توقف ميزة \"رفع الجهاز لإيقاظه\" بشكل غير متوقع في بعض الحالات",
+      "الإصلاح: مشاكل ساعة شاشة القفل عند استخدام ثيمات جهة خارجية وخلفيات سوبر",
+      "التحسين: استخدام منصة التطبيقات للذاكرة عند قفل شاشة الجهاز",
+      "الإصلاح: مشكلة توقف ميزة \"رفع الجهاز لإيقاظه\" بشكل غير متوقع في بعض الحالات",
       "الإصلاح: مشاكل ساعة شاشة القفل عند استخدام ثيمات جهة خارجية وخلفيات سوبر"
+    ],
+    "وشريط الإشعارات، ومركز الإشعارات": [
+      "التحسين: خوارزمية لعرض إشعارات المكالمات الواردة",
+      "التحسين: إشعارات المنبه",
+      "الإصلاح: مشكلة تداخل الإشعارات المنبثقة عند استخدام خلفية شفافة",
+      "الإصلاح: مشكلة تداخل عناصر مربع الإذن بعد الضغط لفترة طويلة على الإشعار",
+      "الإصلاح: مشكلة عدم ظهور الإشعارات بشكل صحيح بعد المكالمات الفائتة",
+      "التحسين: خوارزمية لعرض إشعارات المكالمات الواردة",
+      "الإصلاح: مشكلة تداخل الإشعارات المنبثقة عند استخدام خلفية شفافة",
+      "الإصلاح: مشكلة تداخل عناصر مربع الإذن بعد الضغط لفترة طويلة على الإشعار",
+      "الإصلاح: مشكلة عدم ظهور الإشعارات بشكل صحيح بعد المكالمات الفائتة"
+    ],
+    "الإعدادات": [
+      "الإصلاح: مشاكل واجهة المستخدم أثناء إضافة شبكات Wi-Fi للشركات",
+      "الإصلاح: مشكلة عدم مزامنة بعض الحسابات",
+      "الإصلاح: تعطل النظام عند تحديد الخريطة الافتراضية"
     ],
     "شريط الحالة ومركز الإشعارات": [
       "التحسين: خوارزمية لعرض إشعارات المكالمات الواردة",
       "الإصلاح: مشكلة تداخل الإشعارات المنبثقة عند استخدام خلفية شفافة",
       "الإصلاح: مشكلة تداخل عناصر مربع الإذن بعد الضغط لفترة طويلة على الإشعار",
       "الإصلاح: مشكلة عدم ظهور الإشعارات بشكل صحيح بعد المكالمات الفائتة"
+    ],
+    "خدمة Xiaomi السحابية": [
+      "التحسين: خوارزمية لعرض إشعارات المكالمات الواردة",
+      "الإصلاح: مشكلة تداخل الإشعارات المنبثقة عند استخدام خلفية شفافة",
+      "الإصلاح: مشكلة تداخل عناصر مربع الإذن بعد الضغط لفترة طويلة على الإشعار",
+      "الإصلاح: مشكلة عدم ظهور الإشعارات بشكل صحيح بعد المكالمات الفائتة"
+    ],
+    "النظام": [
+      "تم تحديث تصحيح أمان الأندرويد إلى سبتمبر 2021 لزيادة أمان النظام."
     ]
   },
   "logs_in": {
-    "सिस्टम": [
-      "Android सुरक्षा पैच को सितंबर 2021 से अपडेट किया गया. सिस्टम की सुरक्षा बढ़ा दी गई है.",
-      "Android सुरक्षा पैच को सितंबर 2021 से अपडेट किया गया. सिस्टम की सुरक्षा बढ़ा दी गई है."
+    "MIUI12.5 एन्हांस्ड": [
+      "तेज़ परफ़ॉर्मेंस. चार्ज होने के दौरान अधिक जीवन.",
+      "केंद्रित एल्गोरिदम: हमारे नए एल्गोरिदम खास सीन्स के आधार पर सिस्टम के संसाधनों को डायनैमिक तरीके से बांटेंगे, ताकि सभी मॉडलों पर सहज अनुभव पक्का किया जा सके.",
+      "एटमाइज्ड मेमोरी: अल्ट्रा-फाइन मेमोरी मैनेजमेंट मैकेनिज्म रैम के उपयोग को और अधिक कुशल बनाएगा.",
+      "लिक्विड स्टोरेज: नया संवेदनशील स्टोरेज मैकेनिज़्म के इस्तेमाल की वजह से आपका सिस्टम गुजरते समय के साथ जीवंत और जल्द प्रतिक्रिया देने वाला बना रहेगा.",
+      "स्मार्ट संतुलन: कोर सिस्टम में किए गए सुधारों की बदौलत आपका डिवाइस फ्लैगशिप हार्डवेयर स्पेक्स में सर्वश्रेष्ठ बन गया है.",
+      "तेज़ परफ़ॉर्मेंस. चार्ज होने के दौरान अधिक जीवन.",
+      "केंद्रित एल्गोरिदम: हमारे नए एल्गोरिदम खास सीन्स के आधार पर सिस्टम के संसाधनों को डायनैमिक तरीके से बांटेंगे, ताकि सभी मॉडलों पर सहज अनुभव पक्का किया जा सके.",
+      "एटमाइज्ड मेमोरी: अल्ट्रा-फाइन मेमोरी मैनेजमेंट मैकेनिज्म रैम के उपयोग को और अधिक कुशल बनाएगा.",
+      "लिक्विड स्टोरेज: नया संवेदनशील स्टोरेज मैकेनिज़्म के इस्तेमाल की वजह से आपका सिस्टम गुजरते समय के साथ जीवंत और जल्द प्रतिक्रिया देने वाला बना रहेगा.",
+      "स्मार्ट संतुलन: कोर सिस्टम में किए गए सुधारों की बदौलत आपका डिवाइस फ्लैगशिप हार्डवेयर स्पेक्स में सर्वश्रेष्ठ बन गया है.",
+      "तेज़ परफ़ॉर्मेंस. चार्ज होने के दौरान अधिक जीवन.",
+      "केंद्रित एल्गोरिदम: हमारे नए एल्गोरिदम खास सीन्स के आधार पर सिस्टम के संसाधनों को डायनैमिक तरीके से बांटेंगे, ताकि सभी मॉडलों पर सहज अनुभव पक्का किया जा सके.",
+      "एटमाइज्ड मेमोरी: अल्ट्रा-फाइन मेमोरी मैनेजमेंट मैकेनिज्म रैम के उपयोग को और अधिक कुशल बनाएगा.",
+      "लिक्विड स्टोरेज: नया संवेदनशील स्टोरेज मैकेनिज़्म के इस्तेमाल की वजह से आपका सिस्टम गुजरते समय के साथ जीवंत और जल्द प्रतिक्रिया देने वाला बना रहेगा.",
+      "स्मार्ट संतुलन: कोर सिस्टम में किए गए सुधारों की बदौलत आपका डिवाइस फ्लैगशिप हार्डवेयर स्पेक्स में सर्वश्रेष्ठ बन गया है."
     ],
     "लॉक स्क्रीन": [
       "ऑप्टिमाइज़ेशन डीवाइस लॉक होने के दौरान ऐप्प तिजोरी मेमोरी उपयोग",
-      "ठीक करें कुछ मामलों में ^जगाने के लिए उठाएं^ अचानक बंद हो जा रहा था",
+      "ठीक करें सुपर वॉलपेपर का उपयोग किए जाने पर लॉक होने के बाद स्क्रीन फ़्लैश हो रही थी",
+      "ठीक करें कुछ मामलों में फ़िंगरप्रिंट अनलॉक का उपयोग किए जाने पर वॉलपेपर फ़्लैश हो रहे थे",
+      "ठीक करें गेम्स के साथ फ़िंगरप्रिंट अनलॉक का उपयोग किए जाने पर डिस्पले में असामान्यताएं आ रही थी",
+      "ठीक करें कई सीन्स में फ़िंगरप्रिंट एनिमेशन ठीक से काम नहीं कर रही थी",
+      "ठीक करें सिम कार्ड इंस्टॉल किए जाने के बाद, फ़िंगरप्रिंट और चेहरा अनलॉक बंद हो जा रहे थे",
+      "ठीक करें जब कुछ मामलों में सुपर वॉलपेपर के साथ फ़िंगरप्रिंट अनलॉक का उपयोग किए जाने पर स्क्रीन फ़्लैश हो रही थी",
+      "ठीक करें कुछ मामलों में \"जगाने के लिए उठाएं\" अचानक बंद हो जा रहा था",
+      "ठीक करें कुछ मामलों में फ़िंगरप्रिंट या चेहरा अनलॉक का उपयोग किए जाने पर लॉक स्क्रीन सूचनाएं समय पर नहीं हट रहीं थी",
+      "ठीक करें कुछ मामलों में फ़िंगरप्रिंट अनलॉक का उपयोग किए जाने पर स्क्रीन फ़्लैश हो रही थी",
+      "ठीक करें फ़िंगरप्रिंट अनलॉक का उपयोग करने के बाद स्क्रीन पर स्टेटस बार को छोड़कर कोई भी आइटम नहीं दिख रहा था",
+      "ठीक करें तृतीय पक्ष थीम्स और सुपर वॉलपेपर का उपयोग किए जाने पर लॉक स्क्रीन घड़ी में होने वाली समस्याएं",
+      "ऑप्टिमाइज़ेशन डीवाइस लॉक होने के दौरान ऐप्प तिजोरी मेमोरी उपयोग",
+      "ठीक करें कुछ मामलों में \"जगाने के लिए उठाएं\" अचानक बंद हो जा रहा था",
+      "ठीक करें तृतीय पक्ष थीम्स और सुपर वॉलपेपर का उपयोग किए जाने पर लॉक स्क्रीन घड़ी में होने वाली समस्याएं",
+      "ऑप्टिमाइज़ेशन डीवाइस लॉक होने के दौरान ऐप्प तिजोरी मेमोरी उपयोग",
+      "ठीक करें कुछ मामलों में \"जगाने के लिए उठाएं\" अचानक बंद हो जा रहा था",
+      "ठीक करें तृतीय पक्ष थीम्स और सुपर वॉलपेपर का उपयोग किए जाने पर लॉक स्क्रीन घड़ी में होने वाली समस्याएं",
+      "ऑप्टिमाइज़ेशन डीवाइस लॉक होने के दौरान ऐप्प तिजोरी मेमोरी उपयोग",
+      "ठीक करें कुछ मामलों में \"जगाने के लिए उठाएं\" अचानक बंद हो जा रहा था",
       "ठीक करें तृतीय पक्ष थीम्स और सुपर वॉलपेपर का उपयोग किए जाने पर लॉक स्क्रीन घड़ी में होने वाली समस्याएं"
     ],
     "स्टेटस बार, सूचना शेड": [
       "ऑप्टिमाइज़ेशन इनकमिंग कॉल सूचनाएं दिखाने के लिए एल्गोरिदम",
+      "ऑप्टिमाइज़ेशन अलार्म सूचनाएं",
+      "ठीक करें पारदर्शी बैकग्राउंड का उपयोग किए जाने पर फ़्लोटिंग सूचनाएं ओवरलैप हो रही थीं",
+      "ठीक करें सूचना को देर तक दबाए जाने के बाद अनुमति डायलॉग एलिमेन्ट ओवरलैप हो रहे थे",
+      "ठीक करें कॉलें छूट जाने पर सूचनाएं सही ढंग से नहीं दिख रहीं थीं",
+      "ऑप्टिमाइज़ेशन इनकमिंग कॉल सूचनाएं दिखाने के लिए एल्गोरिदम",
       "ठीक करें पारदर्शी बैकग्राउंड का उपयोग किए जाने पर फ़्लोटिंग सूचनाएं ओवरलैप हो रही थीं",
       "ठीक करें सूचना को देर तक दबाए जाने के बाद अनुमति डायलॉग एलिमेन्ट ओवरलैप हो रहे थे",
       "ठीक करें कॉलें छूट जाने पर सूचनाएं सही ढंग से नहीं दिख रहीं थीं"
+    ],
+    "सेटिंग्स": [
+      "ठीक करें कॉर्पोरेट वाई-फ़ाई नेटवर्क जोड़ते समय दिखाई देने वाली UI समस्याएं",
+      "ठीक करें कुछ खाते सिंक नहीं किए जा सके",
+      "ठीक करें डिफ़ॉल्ट मैप को चुने जाने पर क्रैश हो रहे थे"
+    ],
+    "स्टेटस बार, नोटिफिकेशन शेड": [
+      "ऑप्टिमाइज़ेशन इनकमिंग कॉल सूचनाएं दिखाने के लिए एल्गोरिदम",
+      "ठीक करें पारदर्शी बैकग्राउंड का उपयोग किए जाने पर फ़्लोटिंग सूचनाएं ओवरलैप हो रही थीं",
+      "ठीक करें सूचना को देर तक दबाए जाने के बाद अनुमति डायलॉग एलिमेन्ट ओवरलैप हो रहे थे",
+      "ठीक करें कॉलें छूट जाने पर सूचनाएं सही ढंग से नहीं दिख रहीं थीं"
+    ],
+    "Xiaomi क्लाउड सेवा": [
+      "ऑप्टिमाइज़ेशन इनकमिंग कॉल सूचनाएं दिखाने के लिए एल्गोरिदम",
+      "ठीक करें पारदर्शी बैकग्राउंड का उपयोग किए जाने पर फ़्लोटिंग सूचनाएं ओवरलैप हो रही थीं",
+      "ठीक करें सूचना को देर तक दबाए जाने के बाद अनुमति डायलॉग एलिमेन्ट ओवरलैप हो रहे थे",
+      "ठीक करें कॉलें छूट जाने पर सूचनाएं सही ढंग से नहीं दिख रहीं थीं"
+    ],
+    "सिस्टम": [
+      "Android सुरक्षा पैच को सितंबर 2021 से अपडेट किया गया. सिस्टम की सुरक्षा बढ़ा दी गई है."
     ]
   },
   "logs_ug": {
@@ -363,22 +1331,63 @@
       "Focused algorithms: Our new algorithms will dynamically allocate system resources based on specific scenes, ensuring smooth experience on all models.",
       "Atomized memory: Ultra-fine memory management mechanism will make RAM usage more efficient.",
       "Liquid storage: New sensitive storage mechanisms will keep your system vibrant and responsive as time goes by.",
+      "Smart balance: Core system improvements allow your device to make the best of the flagship hardware specs.",
+      "Swift performance. More life between the charges.",
+      "Focused algorithms: Our new algorithms will dynamically allocate system resources based on specific scenes, ensuring smooth experience on all models.",
+      "Atomized memory: Ultra-fine memory management mechanism will make RAM usage more efficient.",
+      "Liquid storage: New sensitive storage mechanisms will keep your system vibrant and responsive as time goes by.",
+      "Smart balance: Core system improvements allow your device to make the best of the flagship hardware specs.",
+      "Swift performance. More life between the charges.",
+      "Focused algorithms: Our new algorithms will dynamically allocate system resources based on specific scenes, ensuring smooth experience on all models.",
+      "Atomized memory: Ultra-fine memory management mechanism will make RAM usage more efficient.",
+      "Liquid storage: New sensitive storage mechanisms will keep your system vibrant and responsive as time goes by.",
       "Smart balance: Core system improvements allow your device to make the best of the flagship hardware specs."
-    ],
-    "System": [
-      "Updated Android Security Patch to September 2021. Increased system security.",
-      "Updated Android Security Patch to September 2021. Increased system security."
     ],
     "Lock screen": [
       "Optimization: App vault memory usage when device is locked",
-      "Fix: ^Raise to wake^ turned off unexpectedly in some cases",
+      "Fix: Screen flashed after locking when Super wallpapers were used",
+      "Fix: Wallpapers flashed when Fingerprint unlock was used in some cases",
+      "Fix: Display abnormalities occurred when Fingerprint unlock was used with games",
+      "Fix: Issues with the fingerprint animation in several scenes",
+      "Fix: Fingerprint and Face unlock were turned off after a SIM card was installed",
+      "Fix: The screen flashed when Fingerprint unlock was used with Super wallpapers in some cases",
+      "Fix: \"Raise to wake\" turned off unexpectedly in some cases",
+      "Fix: Lock screen notifications didn't disappear on time when Fingerprint or Face unlock was used in some cases",
+      "Fix: Screen flashed when Fingerprint unlock was used in some cases",
+      "Fix: No items except for the status bar were shown on the screen after using Fingerprint unlock",
+      "Fix: Issues with the Lock screen clock when third party themes and super wallpapers were used",
+      "Optimization: App vault memory usage when device is locked",
+      "Fix: \"Raise to wake\" turned off unexpectedly in some cases",
+      "Fix: Issues with the Lock screen clock when third party themes and super wallpapers were used",
+      "Optimization: App vault memory usage when device is locked",
+      "Fix: \"Raise to wake\" turned off unexpectedly in some cases",
+      "Fix: Issues with the Lock screen clock when third party themes and super wallpapers were used",
+      "Optimization: App vault memory usage when device is locked",
+      "Fix: \"Raise to wake\" turned off unexpectedly in some cases",
       "Fix: Issues with the Lock screen clock when third party themes and super wallpapers were used"
     ],
     "Status bar, Notification shade": [
       "Optimization: Algorithms for displaying incoming call notifications",
+      "Optimization: Alarm notifications",
       "Fix: Floating notifications overlapped when the transparent background was used",
       "Fix: Permission dialog elements overlapped after a notification was long pressed",
-      "Fix: Notifications weren^t displayed correctly after missed calls"
+      "Fix: Notifications weren't displayed correctly after missed calls",
+      "Optimization: Algorithms for displaying incoming call notifications",
+      "Fix: Floating notifications overlapped when the transparent background was used",
+      "Fix: Permission dialog elements overlapped after a notification was long pressed",
+      "Fix: Notifications weren't displayed correctly after missed calls",
+      "Optimization: Algorithms for displaying incoming call notifications",
+      "Fix: Floating notifications overlapped when the transparent background was used",
+      "Fix: Permission dialog elements overlapped after a notification was long pressed",
+      "Fix: Notifications weren't displayed correctly after missed calls"
+    ],
+    "تەڭشەك": [
+      "Fix: UI issues that appeared while adding corporate Wi-Fi networks",
+      "Fix: Some accounts couldn't be synced",
+      "Fix: Crashes occurred when the default map was selected"
+    ],
+    "سىستېما": [
+      "Updated Android Security Patch to September 2021. Increased system security."
     ]
   },
   "logs_bo": {
@@ -387,22 +1396,63 @@
       "Focused algorithms: Our new algorithms will dynamically allocate system resources based on specific scenes, ensuring smooth experience on all models.",
       "Atomized memory: Ultra-fine memory management mechanism will make RAM usage more efficient.",
       "Liquid storage: New sensitive storage mechanisms will keep your system vibrant and responsive as time goes by.",
+      "Smart balance: Core system improvements allow your device to make the best of the flagship hardware specs.",
+      "Swift performance. More life between the charges.",
+      "Focused algorithms: Our new algorithms will dynamically allocate system resources based on specific scenes, ensuring smooth experience on all models.",
+      "Atomized memory: Ultra-fine memory management mechanism will make RAM usage more efficient.",
+      "Liquid storage: New sensitive storage mechanisms will keep your system vibrant and responsive as time goes by.",
+      "Smart balance: Core system improvements allow your device to make the best of the flagship hardware specs.",
+      "Swift performance. More life between the charges.",
+      "Focused algorithms: Our new algorithms will dynamically allocate system resources based on specific scenes, ensuring smooth experience on all models.",
+      "Atomized memory: Ultra-fine memory management mechanism will make RAM usage more efficient.",
+      "Liquid storage: New sensitive storage mechanisms will keep your system vibrant and responsive as time goes by.",
       "Smart balance: Core system improvements allow your device to make the best of the flagship hardware specs."
-    ],
-    "System": [
-      "Updated Android Security Patch to September 2021. Increased system security.",
-      "Updated Android Security Patch to September 2021. Increased system security."
     ],
     "Lock screen": [
       "Optimization: App vault memory usage when device is locked",
-      "Fix: ^Raise to wake^ turned off unexpectedly in some cases",
+      "Fix: Screen flashed after locking when Super wallpapers were used",
+      "Fix: Wallpapers flashed when Fingerprint unlock was used in some cases",
+      "Fix: Display abnormalities occurred when Fingerprint unlock was used with games",
+      "Fix: Issues with the fingerprint animation in several scenes",
+      "Fix: Fingerprint and Face unlock were turned off after a SIM card was installed",
+      "Fix: The screen flashed when Fingerprint unlock was used with Super wallpapers in some cases",
+      "Fix: \"Raise to wake\" turned off unexpectedly in some cases",
+      "Fix: Lock screen notifications didn't disappear on time when Fingerprint or Face unlock was used in some cases",
+      "Fix: Screen flashed when Fingerprint unlock was used in some cases",
+      "Fix: No items except for the status bar were shown on the screen after using Fingerprint unlock",
+      "Fix: Issues with the Lock screen clock when third party themes and super wallpapers were used",
+      "Optimization: App vault memory usage when device is locked",
+      "Fix: \"Raise to wake\" turned off unexpectedly in some cases",
+      "Fix: Issues with the Lock screen clock when third party themes and super wallpapers were used",
+      "Optimization: App vault memory usage when device is locked",
+      "Fix: \"Raise to wake\" turned off unexpectedly in some cases",
+      "Fix: Issues with the Lock screen clock when third party themes and super wallpapers were used",
+      "Optimization: App vault memory usage when device is locked",
+      "Fix: \"Raise to wake\" turned off unexpectedly in some cases",
       "Fix: Issues with the Lock screen clock when third party themes and super wallpapers were used"
     ],
     "Status bar, Notification shade": [
       "Optimization: Algorithms for displaying incoming call notifications",
+      "Optimization: Alarm notifications",
       "Fix: Floating notifications overlapped when the transparent background was used",
       "Fix: Permission dialog elements overlapped after a notification was long pressed",
-      "Fix: Notifications weren^t displayed correctly after missed calls"
+      "Fix: Notifications weren't displayed correctly after missed calls",
+      "Optimization: Algorithms for displaying incoming call notifications",
+      "Fix: Floating notifications overlapped when the transparent background was used",
+      "Fix: Permission dialog elements overlapped after a notification was long pressed",
+      "Fix: Notifications weren't displayed correctly after missed calls",
+      "Optimization: Algorithms for displaying incoming call notifications",
+      "Fix: Floating notifications overlapped when the transparent background was used",
+      "Fix: Permission dialog elements overlapped after a notification was long pressed",
+      "Fix: Notifications weren't displayed correctly after missed calls"
+    ],
+    "Settings": [
+      "Fix: UI issues that appeared while adding corporate Wi-Fi networks",
+      "Fix: Some accounts couldn't be synced",
+      "Fix: Crashes occurred when the default map was selected"
+    ],
+    "མ་ལག": [
+      "Updated Android Security Patch to September 2021. Increased system security."
     ]
   }
 }

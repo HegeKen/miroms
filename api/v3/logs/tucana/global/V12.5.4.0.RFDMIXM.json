@@ -18,10 +18,10 @@
     ],
     "Lock screen": [
       "Fix: Fingerprint unlock animation led to crashes",
-      "Fix: Fingerprint icon didn^t appear or was displayed incorrectly when the screen was turned off in landscape mode",
+      "Fix: Fingerprint icon didn't appear or was displayed incorrectly when the screen was turned off in landscape mode",
       "Fix: The screen went black, device was locked, and Lock screen wallpaper was replaced with Home screen wallpaper after Fingerprint unlock was used",
       "Fix: Using fingerprints in some apps locked the device",
-      "Fix: Wallpapers flashed when Fingerprint unlock was being used which didn^t allow to unlock the device",
+      "Fix: Wallpapers flashed when Fingerprint unlock was being used which didn't allow to unlock the device",
       "Fix: Device was locked again after successful Fingerprint unlock attempts"
     ]
   },
@@ -103,17 +103,30 @@
       "Naprawiono: Urządzenie zostało ponownie zablokowane po udanych próbach odblokowania odciskiem palca"
     ]
   },
+  "logs_de": {
+    "System": [
+      "Optimierung: Android-Sicherheitspatch auf August 2021 aktualisiert. Systemsicherheit erhöht."
+    ],
+    "Sperrbildschirm": [
+      "Behoben: Abstürze durch die Fingerabdruck-Entsperr-Animation",
+      "Behoben: Fingerabdruck-Symbol wurde im Querformat nach dem Ausschalten des Bildschirms nicht angezeigt oder falsch dargestellt",
+      "Behoben: Nach dem Entsperren per Fingerabdruck wurde der Bildschirm schwarz, das Gerät gesperrt und das Sperrbildschirm-Hintergrundbild durch das Startbildschirm-Hintergrundbild ersetzt",
+      "Behoben: Die Verwendung des Fingerabdrucks in einigen Apps sperrte das Gerät",
+      "Behoben: Hintergrundbilder flackerten während der Fingerabdruck-Entsperrung, wodurch das Gerät nicht entsperrt werden konnte",
+      "Behoben: Das Gerät wurde nach erfolgreichen Fingerabdruck-Entsperrversuchen erneut gesperrt"
+    ]
+  },
   "logs_fr": {
     "Système": [
-      "Optimisation: Mise à jour du correctif de sécurité Android jusqu^en août 2021. Sécurité du système accrue."
+      "Optimisation: Mise à jour du correctif de sécurité Android jusqu'en août 2021. Sécurité du système accrue."
     ],
     "Écran de verrouillage": [
-      "Réparé: L^animation de déverrouillage des empreintes digitales a entraîné des plantages",
-      "Réparé: L^icône d^empreinte digitale n^apparaissait pas ou ne s^affichait pas correctement lorsque l^écran était éteint en mode paysage",
-      "Réparé: L^écran est devenu noir, l^appareil a été verrouillé et le fond d^écran de l^écran de verrouillage a été remplacé par le fond d^écran de l^écran d^accueil après l^utilisation du déverrouillage par empreinte digitale",
-      "Réparé: L^utilisation d^empreintes digitales dans certaines applications a verrouillé l^appareil",
-      "Réparé: Les fonds d^écran ont clignoté lorsque le déverrouillage par empreinte digitale était utilisé, ce qui ne permettait pas de déverrouiller l^appareil",
-      "Réparé: L^appareil a été à nouveau verrouillé après des tentatives réussies de déverrouillage par empreinte digitale"
+      "Réparé: L'animation de déverrouillage des empreintes digitales a entraîné des plantages",
+      "Réparé: L'icône d'empreinte digitale n'apparaissait pas ou ne s'affichait pas correctement lorsque l'écran était éteint en mode paysage",
+      "Réparé: L'écran est devenu noir, l'appareil a été verrouillé et le fond d'écran de l'écran de verrouillage a été remplacé par le fond d'écran de l'écran d'accueil après l'utilisation du déverrouillage par empreinte digitale",
+      "Réparé: L'utilisation d'empreintes digitales dans certaines applications a verrouillé l'appareil",
+      "Réparé: Les fonds d'écran ont clignoté lorsque le déverrouillage par empreinte digitale était utilisé, ce qui ne permettait pas de déverrouiller l'appareil",
+      "Réparé: L'appareil a été à nouveau verrouillé après des tentatives réussies de déverrouillage par empreinte digitale"
     ]
   },
   "logs_it": {
@@ -121,10 +134,10 @@
       "Ottimizzazione: Patch di sicurezza Android aggiornata ad agosto 2021. Maggiore sicurezza del sistema."
     ],
     "Schermata di blocco": [
-      "Risolto: L^animazione dello sblocco tramite impronta causava arresti anomali",
-      "Risolto: L^icona dell^impronta digitale non appariva o veniva visualizzata in modo errato a schermo spento in modalità orizzontale",
+      "Risolto: L'animazione dello sblocco tramite impronta causava arresti anomali",
+      "Risolto: L'icona dell'impronta digitale non appariva o veniva visualizzata in modo errato a schermo spento in modalità orizzontale",
       "Risolto: Lo schermo diventava nero, il dispositivo veniva bloccato e lo sfondo della schermata di blocco veniva sostituito con lo sfondo della schermata Home dopo lo sblocco tramite impronta",
-      "Risolto: L^uso delle impronte digitali in alcune app bloccava il dispositivo",
+      "Risolto: L'uso delle impronte digitali in alcune app bloccava il dispositivo",
       "Risolto: Gli sfondi lampeggiavano durante lo sblocco tramite impronta, il che non consentiva di sbloccare il dispositivo",
       "Risolto: Il dispositivo veniva nuovamente bloccato dopo i tentativi di sblocco tramite impronta riusciti"
     ]
@@ -157,7 +170,7 @@
   },
   "logs_tr": {
     "Sistem": [
-      "Optimizasyon: Android Güvenlik Patch^i Ağustos 2021^de güncellendi. Sistem güvenliği arttırıldı."
+      "Optimizasyon: Android Güvenlik Patch'i Ağustos 2021'de güncellendi. Sistem güvenliği arttırıldı."
     ],
     "Kilit ekranı": [
       "Onarım: Parmak izi ile kilit açma animasyonu çökmelere yol açtı",
@@ -231,6 +244,32 @@
       "ठीक करें कुछ ऐप्स में फ़िंगरप्रिंट का उपयोग करने से डिवाइस लॉक हो जा रहा था",
       "ठीक करें फ़िंगरप्रिंट अनलॉक का उपयोग किए जाने पर वॉलपेपर फ़्लैश हो रहे थे, इस वजह से डिवाइस अनलॉक नहीं हो रहा था",
       "ठीक करें फ़िंगरप्रिंट अनलॉक के सफल प्रयासों के बाद डिवाइस फिर से लॉक हो जा रहा था"
+    ]
+  },
+  "logs_ug": {
+    "سىستېما": [
+      "Optimization: Updated Android Security Patch to August 2021. Increased system security."
+    ],
+    "Lock screen": [
+      "Fix: Fingerprint unlock animation led to crashes",
+      "Fix: Fingerprint icon didn't appear or was displayed incorrectly when the screen was turned off in landscape mode",
+      "Fix: The screen went black, device was locked, and Lock screen wallpaper was replaced with Home screen wallpaper after Fingerprint unlock was used",
+      "Fix: Using fingerprints in some apps locked the device",
+      "Fix: Wallpapers flashed when Fingerprint unlock was being used which didn't allow to unlock the device",
+      "Fix: Device was locked again after successful Fingerprint unlock attempts"
+    ]
+  },
+  "logs_bo": {
+    "རིམ་ལུགས": [
+      "Optimization: Updated Android Security Patch to August 2021. Increased system security."
+    ],
+    "Lock screen": [
+      "Fix: Fingerprint unlock animation led to crashes",
+      "Fix: Fingerprint icon didn't appear or was displayed incorrectly when the screen was turned off in landscape mode",
+      "Fix: The screen went black, device was locked, and Lock screen wallpaper was replaced with Home screen wallpaper after Fingerprint unlock was used",
+      "Fix: Using fingerprints in some apps locked the device",
+      "Fix: Wallpapers flashed when Fingerprint unlock was being used which didn't allow to unlock the device",
+      "Fix: Device was locked again after successful Fingerprint unlock attempts"
     ]
   }
 }

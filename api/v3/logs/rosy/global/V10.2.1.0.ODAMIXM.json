@@ -1,29 +1,88 @@
 {
   "logs_zh": {
     "相机": [
-      "修复 前摄开启年龄检测后人脸识别框无法出现问题"
+      "修复 前摄开启年龄检测后人脸识别框无法出现问题",
+      "修复 相机稳定性问题",
+      "修复 前镜头开启年龄检测后人脸辨识框无法出现的问题"
     ],
     "录音机": [
       "修复 暂停录音后无法及时更新到状态栏的问题",
+      "修复 暂停录音后无法及时更新到状态栏的问题",
       "修复 暂停录音后无法及时更新到状态栏的问题"
+    ],
+    "系統": [
+      "优化 更新谷歌安全补丁（2019#3），提升系统安全性",
+      "安卓版本升级为Android Oreo"
+    ],
+    "电话": [
+      "修复 视频通话下功能区“切换摄像头”可能显示不完整的问题",
+      "修复 视频通话下功能区“切换摄像头”可能显示不完整的问题"
+    ],
+    "锁屏、状态栏、通知栏": [
+      "新增 状态栏新增SOS模式",
+      "优化 状态栏电量样式调整为数字样式",
+      "修复 通知无法关闭悬浮",
+      "修复 通话锁屏界面无法指纹解锁",
+      "修复 耳机图标偶尔不显示的问题",
+      "修复 长截屏无法下拉到底",
+      "修复 返回通话和时间重叠",
+      "修复 萤幕锁定画面下拉通知栏，来讯息界面萤幕出不来",
+      "修复 萤幕锁定界面没有充电图示",
+      "新增 状态栏新增SOS模式",
+      "优化 状态栏电量样式调整为数字样式",
+      "修复 通知无法关闭悬浮",
+      "修复 通话锁屏界面无法指纹解锁",
+      "修复 耳机图标偶尔不显示的问题",
+      "修复 长截屏无法下拉到底",
+      "修复 返回通话和时间重叠",
+      "修复 萤幕锁定画面下拉通知栏，来讯息界面萤幕出不来",
+      "修复 萤幕锁定界面没有充电图示"
+    ],
+    "設定": [
+      "修复 设定手机名称为最大长度，热点无法开启的问题"
+    ],
+    "系统": [
+      "优化 更新谷歌安全补丁（2019#3），提升系统安全性"
+    ],
+    "设置": [
+      "修复 设定手机名称为最大长度，热点无法开启的问题"
     ]
   },
   "logs_en": {
     "Camera": [
-      "Fix: Face detection frame didn^t appear after the age recognition option had been turned on"
+      "Fix: Face detection frame didn't appear after the age recognition option had been turned on"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused",
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused",
+      "Restore Pausing the ongoing recording wasn't reflected in the status bar",
+      "Fix the issue where the status bar does not update in time after pausing recording"
+    ],
+    "System": [
+      "Optimization: Updated Android Security Patch to March 2019. Increased system security."
+    ],
+    "Phone": [
+      "Fix an issue where “Switch camera” in the function area might be displayed incompletely during video calls"
     ]
   },
   "logs_zh_tw": {
+    "相機": [
+      "修復 前鏡頭開啟年齡偵測後人臉辨識框無法出現的問題",
+      "修復 相機穩定性問題",
+      "修復 前鏡頭開啟年齡檢測後人臉辨識框無法出現的問題"
+    ],
+    "錄音機": [
+      "修復 暫停錄音後無法即時更新到狀態欄的問題",
+      "修復 暫停錄音後無法即時更新到狀態欄的問題",
+      "修復 暫停錄音後無法及時更新到狀態欄的問題"
+    ],
     "系統": [
       "優化 更新Android安全性修補程式等級(2019#3)，提升系統安全性",
-      "系統Android版本升級到Android Oreo"
+      "系統Android版本升級到Android Oreo",
+      "優化 更新Android安全性修補程式等級(2019#3)，提升系統安全性"
     ],
     "電話": [
-      "修復 視訊電話下功能區^切換鏡頭^可能顯示不完整的問題"
+      "修復 視訊電話下功能區'切換鏡頭'可能顯示不完整的問題",
+      "修正 視訊通話下功能區「切換相機」可能顯示不完整的問題"
     ],
     "解鎖畫面、狀態欄、通知欄": [
       "新增 狀態欄新增SOS模式",
@@ -34,333 +93,532 @@
       "修復 長截圖無法下拉到底",
       "修復 返回通話和時間重疊",
       "修復 螢幕鎖定畫面下拉通知欄，來訊息介面螢幕出不來",
-      "修復 螢幕鎖定介面沒有充電圖示"
-    ],
-    "相機": [
-      "修復 相機穩定性問題",
-      "修復 前鏡頭開啟年齡檢測後人臉辨識框無法出現的問題"
+      "修復 螢幕鎖定介面沒有充電圖示",
+      "新增 狀態欄新增SOS模式",
+      "優化 狀態欄電量樣式調整為數字樣式",
+      "修復 通知無法關閉懸浮",
+      "修復 通話鎖屏介面無法指紋解鎖",
+      "修復耳機圖示偶爾不顯示的問題",
+      "修復長截屏無法下拉到底",
+      "修復 返回通話和時間重疊",
+      "修正 鎖定螢幕下拉通知欄時，來訊畫面無法顯示",
+      "修正 螢幕鎖定介面沒有充電圖示"
     ],
     "設定": [
+      "修復 設定手機名稱為最大長度，熱點無法開啟的問題",
       "修復 設定手機名稱為最大長度，熱點無法開啟的問題"
-    ],
-    "錄音機": [
-      "修復 暫停錄音後無法即時更新到狀態欄的問題",
-      "修復 暫停錄音後無法即時更新到狀態欄的問題"
     ]
   },
   "logs_ja": {
-    "System": [
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security.",
-      "Android Oreo update"
+    "カメラ": [
+      "修正: フロントカメラで年齢検出を有効にした後、顔認識枠が表示されない問題",
+      "カメラの安定性の問題を修正",
+      "フロントカメラで年齢検出を有効にした後、顔認識枠が表示されない問題を修正しました。"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly"
+    "レコーダー": [
+      "修正: 録音を一時停止した際、通知シェードの録音状態が更新されない問題"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: SOS mode for the status bar",
-      "Optimization: Battery percentage format for the status bar",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly",
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received",
-      "Fix: The icon showing that the device is charging wasn^t displayed on the Lock screen"
+    "システム": [
+      "最適化: Google セキュリティパッチ（2019#3）を更新し、システムの安全性を向上しました。",
+      "Android Oreo にアップデート",
+      "最適化: Google セキュリティパッチ（2019#3）を更新し、システムの安全性を向上しました。"
     ],
-    "Camera": [
-      "Fix: Camera^s stability issues",
-      "Fix: Face detection frame didn^t appear after the age recognition option had been turned on"
+    "電話": [
+      "ビデオ通話中に機能エリアの「カメラを切り替え」が不完全に表示される場合がある問題を修正",
+      "ビデオ通話時、機能エリアの「カメラを切り替え」が不完全に表示されることがある問題を修正"
     ],
-    "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name was set to maximum length"
+    "ロック画面、ステータスバー、通知バー": [
+      "ステータスバーにSOSモードを追加",
+      "最適化: ステータスバーのバッテリー表示を数字表示に調整",
+      "通知からフローティングウィンドウを閉じられない問題を修正",
+      "通話ロック画面で指紋認証によるロック解除ができない問題を修正",
+      "ヘッドホンアイコンが時々表示されない問題を修正しました。",
+      "長いスクリーンショットで最後までスクロールできない問題を修正",
+      "通話に戻ると時刻の重なりを修正",
+      "ロック画面で通知シェードを下にスワイプした際、受信メッセージ画面が表示されない問題を修正",
+      "ロック画面に充電アイコンが表示されない問題を修正"
+    ],
+    "設定": [
+      "修正: 端末名を最大長に設定した際、ポータブルホットスポットをオンにできない問題",
+      "修正: デバイス名を最大長に設定すると、ポータブルホットスポットをオンにできませんでした"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused",
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "録音を一時停止した後、ステータスバーにすぐ反映されない問題を修正",
+      "録音を一時停止した後、ステータスバーにすぐに更新されない問題を修正"
+    ],
+    "ロック画面、ステータスバー、通知シェード": [
+      "ステータスバーにSOSモードを追加",
+      "最適化: ステータスバーのバッテリー表示を数字表示に調整",
+      "通知のフローティングを閉じられない問題を修正",
+      "通話中のロック画面で指紋認証によるロック解除ができない問題を修正",
+      "ヘッドセットアイコンが時々表示されない問題を修正しました",
+      "長いスクリーンショットを一番下までスクロールできない問題を修正",
+      "通話復帰と時間の重なりを修正",
+      "ロック画面で通知パネルを下にスワイプした際に、受信メッセージ画面が表示されない問題を修正",
+      "ロック画面に充電アイコンが表示されない問題を修正"
     ]
   },
   "logs_ko": {
-    "System": [
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security.",
-      "Android Oreo update"
+    "카메라": [
+      "수정: 전면 카메라에서 나이 감지를 켠 후 얼굴 인식 프레임이 표시되지 않는 문제",
+      "카메라 안정성 문제 수정",
+      "전면 카메라에서 연령 감지 활성화 후 얼굴 인식 프레임이 표시되지 않는 문제를 수정했습니다."
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly"
+    "녹음기": [
+      "수정: 녹음을 일시중지했을 때 알림 창의 녹음 상태가 업데이트되지 않던 문제"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: SOS mode for the status bar",
-      "Optimization: Battery percentage format for the status bar",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly",
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received",
-      "Fix: The icon showing that the device is charging wasn^t displayed on the Lock screen"
+    "시스템": [
+      "최적화: Google 보안 패치(2019#3)를 업데이트하여 시스템 보안을 향상했습니다.",
+      "Android Oreo로 업데이트",
+      "최적화: Google 보안 패치(2019#3)를 업데이트하여 시스템 보안을 향상했습니다."
     ],
-    "Camera": [
-      "Fix: Camera^s stability issues",
-      "Fix: Face detection frame didn^t appear after the age recognition option had been turned on"
+    "전화": [
+      "영상 통화 중 기능 영역의 \"카메라 전환\"이 불완전하게 표시될 수 있는 문제를 수정했습니다",
+      "영상 통화 중 기능 영역의 “카메라 전환”이 불완전하게 표시될 수 있는 문제를 수정"
     ],
-    "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name was set to maximum length"
+    "잠금 화면, 상태 표시줄, 알림 표시줄": [
+      "상태 표시줄에 SOS 모드 추가",
+      "최적화: 상태 표시줄 배터리 스타일을 숫자 스타일로 조정",
+      "알림에서 플로팅 창을 닫을 수 없는 문제를 수정",
+      "통화 잠금 화면에서 지문으로 잠금 해제가 안 되는 문제 수정",
+      "헤드폰 아이콘이 가끔 표시되지 않는 문제를 수정했습니다.",
+      "긴 스크린샷에서 끝까지 스크롤할 수 없는 문제 수정",
+      "통화로 돌아가기와 시간 겹침 수정",
+      "잠금 화면에서 알림 창을 아래로 내릴 때 수신 메시지 화면이 표시되지 않는 문제를 수정",
+      "잠금 화면에 충전 아이콘이 표시되지 않는 문제를 수정"
+    ],
+    "설정": [
+      "휴대폰 이름을 최대 길이로 설정했을 때 핫스팟을 켤 수 없던 문제를 수정",
+      "수정: 기기 이름을 최대 길이로 설정하면 휴대용 핫스팟을 켤 수 없었습니다"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused",
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "녹음을 일시중지한 후 상태 표시줄에 제때 반영되지 않는 문제를 수정",
+      "녹음을 일시 중지한 후 상태 표시줄에 적시에 업데이트되지 않는 문제를 수정"
+    ],
+    "잠금화면, 상태 바, 알림 바": [
+      "상태 표시줄에 SOS 모드 추가",
+      "최적화: 상태 표시줄 배터리 스타일을 숫자 스타일로 조정",
+      "알림 플로팅을 닫을 수 없는 문제 수정",
+      "통화 중 잠금 화면에서 지문으로 잠금 해제할 수 없는 문제 수정",
+      "헤드셋 아이콘이 간헐적으로 표시되지 않는 문제를 수정했습니다",
+      "긴 스크린샷을 끝까지 스크롤할 수 없는 문제 수정",
+      "통화 복귀와 시간 겹침 수정",
+      "잠금 화면에서 알림창을 아래로 내렸을 때 수신 메시지 화면이 표시되지 않는 문제를 수정",
+      "잠금 화면에 충전 아이콘이 표시되지 않는 문제를 수정"
     ]
   },
   "logs_ru": {
+    "Камера": [
+      "Исправление: После включения определения возраста на фронтальной камере не отображалась рамка распознавания лица"
+    ],
+    "Диктофон": [
+      "Fix: Факт остановки записи не отображался в строке состояния вовремя",
+      "Исправлено: Факт остановки записи не отображался в строке состояния вовремя"
+    ],
     "Система": [
+      "Оптимизация: Обновление системы безопасности Android (март 2019 года). Улучшена безопасность системы.",
+      "Обновление до Android Oreo",
       "Оптимизация: Обновление системы безопасности Android (март 2019 года). Улучшена безопасность системы."
     ],
     "Телефон": [
+      "Исправлена проблема, из-за которой «Переключить камеру» в области функций во время видеовызовов мог отображаться не полностью",
       "Исправлено: Подпись кнопки для переключения между камерами во время видео-звонков отображалась не полностью"
     ],
     "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Новое: Режим SOS в строке состояния",
+      "Оптимизация: Формат отображения уровня заряда батареи в строке состояния",
+      "Исправлено: невозможно закрыть плавающее окно из уведомления",
+      "Исправлено: Не удавалось разблокировать устройство отпечатком пальца после блокировки во время разговора",
+      "Исправлено: Значок наушников появлялся не всегда",
+      "Fix: Scrolling screenshots didn't always work properly",
+      "Fix: The button that returns you to an ongoing call overlapped with time",
+      "Fix: Шторка уведомлений становилась черной на экране блокировки при получении новых уведомлений",
+      "Исправлено: Значок, показывающий, что устройство заряжается, не отображался на экране блокировки",
       "Новое: Режим SOS в строке состояния",
       "Оптимизация: Формат отображения уровня заряда батареи в строке состояния",
       "Исправлено: Не удавалось ограничить всплывающие уведомления",
       "Исправлено: Не удавалось разблокировать устройство отпечатком пальца после блокировки во время разговора",
       "Исправлено: Значок наушников появлялся не всегда",
       "Исправлено: Длинные скриншоты работали некорректно",
-      "Исправлено: Кнопка ^Назад^ перекрывала время",
+      "Исправлено: Кнопка \"Назад\" перекрывала время",
       "Исправлено: Шторка уведомлений становилась черной на экране блокировки при получении новых уведомлений",
       "Исправлено: Значок, показывающий, что устройство заряжается, не отображался на экране блокировки"
     ],
     "Настройки": [
+      "Fix: Не удавалось включить точку доступа, если имя устройства содержало максимальное количество символов",
       "Исправлено: Не удавалось включить точку доступа, если имя устройства содержало максимальное количество символов"
     ],
-    "Диктофон": [
-      "Исправлено: Факт остановки записи не отображался в строке состояния вовремя",
-      "Исправлено: Факт остановки записи не отображался в строке состояния вовремя"
+    "Recorder": [
+      "Исправлена проблема, из-за которой строка состояния не обновлялась вовремя после приостановки записи"
     ]
   },
   "logs_uk": {
-    "System": [
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security.",
-      "Android Oreo update"
+    "Камера": [
+      "Виправлення: Після ввімкнення визначення віку на фронтальній камері не з’являлася рамка розпізнавання обличчя",
+      "Виправлено проблему зі стабільністю камери",
+      "Виправлено проблему, через яку рамка розпізнавання обличчя не з'являлася після ввімкнення визначення віку на фронтальній камері."
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly"
+    "Диктофон": [
+      "Виправлено: стан запису не оновлювався в панелі сповіщень під час паузи запису"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: SOS mode for the status bar",
-      "Optimization: Battery percentage format for the status bar",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly",
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received",
-      "Fix: The icon showing that the device is charging wasn^t displayed on the Lock screen"
+    "Система": [
+      "Оптимізація: Оновлено патч безпеки Google (2019#3) для підвищення безпеки системи.",
+      "Версію Android оновлено до Android Oreo.",
+      "Оптимізація: Оновлено патч безпеки Google (2019#3) для підвищення безпеки системи."
     ],
-    "Camera": [
-      "Fix: Camera^s stability issues",
-      "Fix: Face detection frame didn^t appear after the age recognition option had been turned on"
+    "Телефон": [
+      "Виправлено проблему, через яку «Перемкнути камеру» в області функцій під час відеовикликів могло відображатися не повністю",
+      "Виправлено проблему, коли під час відеовиклику “Перемкнути камеру” в області функцій могло відображатися неповністю"
     ],
-    "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name was set to maximum length"
+    "Екран блокування, рядок стану, рядок сповіщень": [
+      "Додано режим SOS у рядок стану",
+      "Оптимізація: стиль батареї в рядку стану змінено на числовий стиль",
+      "Виправлено: неможливо закрити плаваюче вікно зі сповіщення",
+      "Виправлено неможливість розблокування відбитком пальця на екрані блокування виклику",
+      "Виправлено проблему, через яку значок навушників іноді не відображався.",
+      "Виправлено: не вдається прокрутити довгий знімок екрана до кінця",
+      "Виправлено накладання повернення до виклику та часу",
+      "Виправлено: під час опускання панелі сповіщень на екрані блокування не з’являвся екран інтерфейсу вхідних повідомлень.",
+      "Виправлено відсутність значка заряджання на екрані блокування"
+    ],
+    "Налаштування": [
+      "Виправлено проблему, через яку не вдавалося ввімкнути точку доступу, коли ім’я телефона було встановлено на максимальну довжину",
+      "Виправлено проблему, через яку точка доступу не вмикалася, коли назву телефона встановлено на максимальну довжину."
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused",
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Виправлено проблему, через яку рядок стану не оновлювався вчасно після призупинення запису",
+      "Виправлено проблему, коли після призупинення запису рядок стану не оновлювався вчасно"
+    ],
+    "Екран блокування, рядок стану, панель сповіщень": [
+      "Додано режим SOS у рядок стану",
+      "Оптимізація: стиль батареї в рядку стану змінено на числовий стиль",
+      "Виправлено неможливість закрити плаваюче сповіщення",
+      "Виправлено: неможливо розблокувати за допомогою відбитка на екрані блокування під час виклику",
+      "Виправлено проблему, коли значок навушників іноді не відображається",
+      "Виправлено проблему, коли довгий знімок екрана не прокручується донизу",
+      "Виправлено перекриття між поверненням до виклику та часом",
+      "Виправлено проблему, коли під час опускання панелі сповіщень на екрані блокування не з’являвся екран вхідного повідомлення",
+      "Виправлено відсутність значка заряджання на екрані блокування"
     ]
   },
   "logs_pl": {
+    "Aparat": [
+      "Poprawka: Ramka rozpoznawania twarzy nie pojawiała się po włączeniu wykrywania wieku w przednim aparacie",
+      "Naprawiono problem ze stabilnością aparatu",
+      "Naprawiono problem z niewyświetlaniem ramki rozpoznawania twarzy po włączeniu wykrywania wieku w przednim aparacie."
+    ],
+    "Rejestrator": [
+      "Poprawka: stan nagrywania nie był aktualizowany na pasku powiadomień po wstrzymaniu nagrywania"
+    ],
     "System": [
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security.",
-      "Android Oreo update"
+      "Optymalizacja: Zaktualizowano poprawkę bezpieczeństwa Google (2019#3), zwiększając bezpieczeństwo systemu.",
+      "Wersja Androida zaktualizowana do Android Oreo.",
+      "Optymalizacja: Zaktualizowano poprawkę bezpieczeństwa Google (2019#3), zwiększając bezpieczeństwo systemu."
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly"
+    "Telefon": [
+      "Naprawiono problem, w którym „Przełącz kamerę” w obszarze funkcji podczas połączeń wideo mógł być wyświetlany niekompletnie",
+      "Naprawiono problem, w którym podczas rozmów wideo opcja „Przełącz kamerę” w obszarze funkcji mogła być wyświetlana niekompletnie"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: SOS mode for the status bar",
-      "Optimization: Battery percentage format for the status bar",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly",
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received",
-      "Fix: The icon showing that the device is charging wasn^t displayed on the Lock screen"
+    "Ekran blokady, pasek stanu, pasek powiadomień": [
+      "Dodano tryb SOS na pasku stanu",
+      "Optymalizacja: styl baterii na pasku stanu dostosowano do stylu liczbowego",
+      "Naprawiono: nie można było zamknąć okna pływającego z powiadomienia",
+      "Naprawiono brak możliwości odblokowania odciskiem palca na ekranie blokady połączenia",
+      "Naprawiono problem, w którym ikona słuchawek czasami nie była wyświetlana.",
+      "Naprawiono: nie można przewinąć do końca w długim zrzucie ekranu",
+      "Naprawiono nakładanie się powrotu do połączenia i czasu",
+      "Naprawiono: ekran interfejsu wiadomości przychodzących nie pojawiał się po rozwinięciu panelu powiadomień na ekranie blokady.",
+      "Naprawiono brak ikony ładowania na ekranie blokady"
     ],
-    "Camera": [
-      "Fix: Camera^s stability issues",
-      "Fix: Face detection frame didn^t appear after the age recognition option had been turned on"
-    ],
-    "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name was set to maximum length"
+    "Ustawienia": [
+      "Naprawiono problem z niemożliwością włączenia hotspota, gdy nazwa telefonu była ustawiona na maksymalną długość",
+      "Naprawiono: Nie można było włączyć hotspotu przenośnego, gdy nazwa urządzenia miała maksymalną długość"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused",
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Naprawiono problem z nieterminową aktualizacją paska stanu po wstrzymaniu nagrywania",
+      "Naprawiono problem z nieterminową aktualizacją paska stanu po wstrzymaniu nagrywania"
+    ],
+    "Ekran blokady, pasek powiadomień,panel powiadomień": [
+      "Dodano tryb SOS na pasku stanu",
+      "Optymalizacja: styl baterii na pasku stanu dostosowano do stylu liczbowego",
+      "Naprawiono brak możliwości zamknięcia powiadomienia pływającego",
+      "Naprawiono: brak możliwości odblokowania odciskiem palca na ekranie blokady podczas połączenia",
+      "Naprawiono problem, w którym ikona słuchawek czasami się nie wyświetla",
+      "Naprawiono problem z przewijaniem długiego zrzutu ekranu do dołu",
+      "Naprawiono nakładanie się powrotu do połączenia i czasu",
+      "Naprawiono problem, w którym po rozwinięciu panelu powiadomień na ekranie blokady nie pojawiał się ekran przychodzącej wiadomości",
+      "Naprawiono brak ikony ładowania na ekranie blokady"
     ]
   },
   "logs_de": {
+    "Kamera": [
+      "Fix: Der Gesichtserkennungsrahmen wurde nach Aktivieren der Alterserkennung an der Frontkamera nicht angezeigt",
+      "Kamera-Stabilitätsproblem behoben",
+      "Behebung des Problems, dass der Gesichtserkennungsrahmen nach Aktivierung der Alterserkennung an der Frontkamera nicht angezeigt wird."
+    ],
+    "Rekorder": [
+      "Behoben: Der Aufnahmestatus wurde in der Benachrichtigungsleiste nicht aktualisiert, wenn eine Aufnahme pausiert wurde"
+    ],
     "System": [
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security.",
-      "Android Oreo update"
+      "Optimierung: Android-Sicherheitspatch auf März 2019 aktualisiert. Systemsicherheit erhöht.",
+      "Android Oreo-Update",
+      "Optimierung: Android-Sicherheitspatch auf März 2019 aktualisiert. Systemsicherheit erhöht."
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly"
+    "Telefon": [
+      "Behebung eines Problems, bei dem „Kamera wechseln“ im Funktionsbereich während Videoanrufen möglicherweise unvollständig angezeigt wurde",
+      "Problem behoben, bei dem „Kamera wechseln“ im Funktionsbereich während Videoanrufen unvollständig angezeigt werden konnte"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: SOS mode for the status bar",
-      "Optimization: Battery percentage format for the status bar",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly",
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received",
-      "Fix: The icon showing that the device is charging wasn^t displayed on the Lock screen"
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
+      "Neu: SOS-Modus für die Statusleiste",
+      "Optimierung: Akkuanzeige in der Statusleiste im Prozentformat",
+      "Behoben: Schwebefenster ließ sich nicht über die Benachrichtigung schließen",
+      "Problem behoben, dass der Anruf-Sperrbildschirm nicht per Fingerabdruck entsperrt werden konnte",
+      "Problem behoben, bei dem das Headset-Symbol gelegentlich nicht angezeigt wurde.",
+      "Behoben: Beim langen Screenshot kann nicht bis zum Ende gescrollt werden",
+      "Überlappung zwischen Rückkehr zum Anruf und Uhrzeit behoben",
+      "Behoben: Auf dem Sperrbildschirm wurde beim Herunterziehen der Benachrichtigungsleiste die Oberfläche für eingehende Nachrichten nicht angezeigt.",
+      "Behoben: Das Ladesymbol wurde auf dem Sperrbildschirm nicht angezeigt"
     ],
-    "Camera": [
-      "Fix: Camera^s stability issues",
-      "Fix: Face detection frame didn^t appear after the age recognition option had been turned on"
-    ],
-    "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name was set to maximum length"
+    "Einstellungen": [
+      "Behebung des Problems, dass der Hotspot nicht aktiviert werden konnte, wenn der Gerätename auf die maximale Länge gesetzt wurde",
+      "Behoben: Mobiler Hotspot konnte nicht aktiviert werden, wenn der Gerätename auf die maximale Länge gesetzt war"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused",
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Behebt das Problem, dass die Statusleiste nach dem Pausieren einer Aufnahme nicht rechtzeitig aktualisiert wurde",
+      "Behebt das Problem, dass die Statusleiste nach dem Pausieren der Aufnahme nicht rechtzeitig aktualisiert wird"
+    ],
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
+      "Neu: SOS-Modus für die Statusleiste",
+      "Optimierung: Akkuanzeige in der Statusleiste im Prozentformat",
+      "Behoben: Schwebende Benachrichtigung lässt sich nicht schließen",
+      "Behoben: Entsperren per Fingerabdruck auf dem Anruf-Sperrbildschirm nicht möglich",
+      "Problem behoben, bei dem das Headset-Symbol gelegentlich nicht angezeigt wird",
+      "Problem behoben, bei dem ein langer Screenshot nicht bis zum Ende gescrollt werden kann",
+      "Überlappung zwischen Rückruf und Uhrzeit behoben",
+      "Problem behoben, bei dem auf dem Sperrbildschirm beim Herunterziehen der Benachrichtigungsleiste der Bildschirm für eingehende Nachrichten nicht angezeigt wurde",
+      "Fehlendes Ladesymbol auf dem Sperrbildschirm behoben"
     ]
   },
   "logs_fr": {
-    "System": [
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security.",
-      "Android Oreo update"
+    "Appareil photo": [
+      "Correction : Le cadre de reconnaissance faciale n'apparaissait pas après l'activation de la détection d'âge sur la caméra frontale",
+      "Correction du problème de stabilité de l’appareil photo",
+      "Correction du problème où le cadre de reconnaissance faciale n'apparaît pas après l'activation de la détection d'âge sur la caméra frontale."
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly"
+    "Enregistreur": [
+      "Correction : l’état d’enregistrement n’était pas mis à jour dans la barre de notifications lors d’une pause"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: SOS mode for the status bar",
-      "Optimization: Battery percentage format for the status bar",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly",
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received",
-      "Fix: The icon showing that the device is charging wasn^t displayed on the Lock screen"
+    "Système": [
+      "Optimisation : mise à jour du correctif de sécurité Android de mars 2019. Sécurité du système renforcée.",
+      "Mise à jour vers Android Oreo",
+      "Optimisation : mise à jour du correctif de sécurité Android de mars 2019. Sécurité du système renforcée."
     ],
-    "Camera": [
-      "Fix: Camera^s stability issues",
-      "Fix: Face detection frame didn^t appear after the age recognition option had been turned on"
+    "Téléphone": [
+      "Correction d’un problème où « Changer d’appareil photo » dans la zone de fonctions pendant les appels vidéo pouvait s’afficher de manière incomplète",
+      "Correction d’un problème où « Changer de caméra » dans la zone de fonctions pouvait s’afficher de manière incomplète lors des appels vidéo"
     ],
-    "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name was set to maximum length"
+    "Écran de verrouillage, barre d’état, barre de notifications": [
+      "Nouveau : mode SOS dans la barre d'état",
+      "Optimisation : style de batterie de la barre d’état ajusté au style numérique",
+      "Corrigé : impossible de fermer la fenêtre flottante depuis la notification",
+      "Correction : impossible de déverrouiller par empreinte digitale sur l'écran de verrouillage d'appel",
+      "Correction du problème où l'icône du casque ne s'affichait parfois pas.",
+      "Corrigé : impossible de faire défiler jusqu'en bas lors d'une capture d'écran longue",
+      "Correction du chevauchement entre le retour à l'appel et l'heure",
+      "Corrigé : l’écran de l’interface des messages entrants ne s’affichait pas lors du déroulement de la barre de notifications sur l’écran de verrouillage.",
+      "Correction de l'absence d'icône de charge sur l'écran de verrouillage"
+    ],
+    "Paramètres": [
+      "Correction du problème où le point d’accès ne pouvait pas être activé lorsque le nom du téléphone était défini à la longueur maximale",
+      "Correction du problème empêchant l'activation du point d'accès lorsque le nom du téléphone est défini à la longueur maximale."
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused",
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Correction du problème de mise à jour tardive de la barre d’état après la mise en pause d’un enregistrement",
+      "Correction du problème de mise à jour tardive de la barre d’état après la mise en pause de l’enregistrement"
+    ],
+    "Écran de verrouillage, Barre d'état, Panneau de notification": [
+      "Nouveau : mode SOS dans la barre d'état",
+      "Optimisation : style de batterie de la barre d’état ajusté au style numérique",
+      "Correction : impossible de fermer la notification flottante",
+      "Correction : impossible de déverrouiller par empreinte digitale sur l'écran de verrouillage pendant un appel",
+      "Correction du problème où l'icône du casque ne s'affichait parfois pas",
+      "Correction du problème empêchant de faire défiler une capture d'écran longue jusqu'en bas",
+      "Correction du chevauchement entre le retour d'appel et l'heure",
+      "Correction d’un problème où l’écran du message entrant ne s’affichait pas lors du déroulement du panneau de notifications sur l’écran de verrouillage",
+      "Correction de l'icône de charge manquante sur l'écran de verrouillage"
     ]
   },
   "logs_it": {
-    "System": [
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security.",
-      "Android Oreo update"
+    "Fotocamera": [
+      "Correzione: Il riquadro di riconoscimento del viso non appariva dopo aver attivato il rilevamento dell'età sulla fotocamera frontale",
+      "Risolto problema di stabilità della fotocamera",
+      "Risolto il problema per cui la cornice di riconoscimento del viso non appare dopo aver attivato il rilevamento dell'età sulla fotocamera anteriore."
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly"
+    "Registratore": [
+      "Correzione: lo stato di registrazione non veniva aggiornato nella barra delle notifiche quando una registrazione veniva messa in pausa",
+      "Risolto: Lo stato della registrazione non era aggiornato nell'area delle notifiche quando una registrazione era messa in pausa"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: SOS mode for the status bar",
-      "Optimization: Battery percentage format for the status bar",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly",
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received",
-      "Fix: The icon showing that the device is charging wasn^t displayed on the Lock screen"
+    "Sistema": [
+      "Ottimizzazione: Aggiornata la patch di sicurezza Google (2019#3) per migliorare la sicurezza del sistema.",
+      "Versione Android aggiornata ad Android Oreo.",
+      "Ottimizzazione: Aggiornata la patch di sicurezza Google (2019#3) per migliorare la sicurezza del sistema."
     ],
-    "Camera": [
-      "Fix: Camera^s stability issues",
-      "Fix: Face detection frame didn^t appear after the age recognition option had been turned on"
+    "Telefono": [
+      "Risolto un problema per cui \"Cambia fotocamera\" nell'area funzioni durante le videochiamate poteva essere visualizzato in modo incompleto",
+      "Risolto un problema per cui “Cambia fotocamera” nell’area funzioni poteva essere visualizzato in modo incompleto durante le videochiamate"
     ],
-    "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name was set to maximum length"
+    "Schermata di blocco, barra di stato, barra delle notifiche": [
+      "Aggiunta modalità SOS nella barra di stato",
+      "Ottimizzazione: stile batteria della barra di stato impostato su stile numerico",
+      "Corretto: impossibile chiudere la finestra flottante dalla notifica",
+      "Risolto: impossibile sbloccare con impronta digitale sulla schermata di blocco chiamata",
+      "Risolto il problema per cui l'icona delle cuffie a volte non veniva visualizzata.",
+      "Corretto: impossibile scorrere fino in fondo nella cattura schermata lunga",
+      "Corretta la sovrapposizione tra ritorno alla chiamata e ora",
+      "Risolto: la schermata dell'interfaccia dei messaggi in arrivo non veniva visualizzata trascinando verso il basso la barra delle notifiche nella schermata di blocco.",
+      "Risolto il problema dell'icona di ricarica assente nella schermata di blocco"
+    ],
+    "Impostazioni": [
+      "Risolto il problema per cui l'hotspot non poteva essere attivato quando il nome del telefono era impostato alla lunghezza massima",
+      "Risolto il problema che impediva l'attivazione dell'hotspot quando il nome del telefono è impostato alla lunghezza massima."
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused",
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Risolve il problema per cui la barra di stato non veniva aggiornata tempestivamente dopo la pausa della registrazione"
+    ],
+    "Schermata di blocco, barra di stato, area delle notifiche": [
+      "Aggiunta modalità SOS nella barra di stato",
+      "Ottimizzazione: stile batteria della barra di stato impostato su stile numerico",
+      "Risolto: impossibile chiudere la notifica flottante",
+      "Risolto: impossibile sbloccare con impronta digitale nella schermata di blocco durante una chiamata",
+      "Risolto il problema per cui l'icona delle cuffie a volte non veniva visualizzata",
+      "Risolto il problema che impediva di scorrere uno screenshot lungo fino in fondo",
+      "Risolto sovrapposizione tra richiamata e ora",
+      "Risolto un problema per cui, scorrendo verso il basso il pannello delle notifiche sulla schermata di blocco, la schermata del messaggio in arrivo non veniva visualizzata",
+      "Risolto problema icona di ricarica mancante nella schermata di blocco"
     ]
   },
   "logs_es": {
-    "System": [
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security.",
-      "Android Oreo update"
+    "Cámara": [
+      "Corrección: El marco de reconocimiento facial no aparecía tras activar la detección de edad en la cámara frontal",
+      "Corregido problema de estabilidad de la cámara",
+      "Corrección del problema por el que el marco de reconocimiento facial no aparece tras activar la detección de edad en la cámara frontal."
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly"
+    "Grabadora": [
+      "Corrección: El estado de grabación no se actualizaba en la barra de notificaciones al pausar una grabación",
+      "Se corrige el problema por el que la barra de estado no se actualizaba a tiempo tras pausar la grabación"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: SOS mode for the status bar",
-      "Optimization: Battery percentage format for the status bar",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly",
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received",
-      "Fix: The icon showing that the device is charging wasn^t displayed on the Lock screen"
+    "Sistema": [
+      "Optimización: Se actualizó el parche de seguridad de Google (2019#3) para mejorar la seguridad del sistema.",
+      "Versión de Android actualizada a Android Oreo.",
+      "Optimización: Se actualizó el parche de seguridad de Google (2019#3) para mejorar la seguridad del sistema."
     ],
-    "Camera": [
-      "Fix: Camera^s stability issues",
-      "Fix: Face detection frame didn^t appear after the age recognition option had been turned on"
+    "Teléfono": [
+      "Se ha corregido un problema por el que \"Cambiar cámara\" en el área de funciones durante las videollamadas podía mostrarse de forma incompleta",
+      "Se corrigió un problema por el que “Cambiar cámara” en el área de funciones podía mostrarse incompleto durante las videollamadas"
     ],
-    "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name was set to maximum length"
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Añadido modo SOS en la barra de estado",
+      "Optimización: estilo de batería de la barra de estado ajustado al estilo numérico",
+      "Corregido: no se podía cerrar la ventana flotante desde la notificación",
+      "Corregido: no se puede desbloquear con huella dactilar en la pantalla de bloqueo de llamadas",
+      "Se corrigió el problema por el que el icono de los auriculares no se mostraba ocasionalmente.",
+      "Corregido: no se puede desplazar hasta el final en la captura de pantalla larga",
+      "Corregida la superposición entre volver a la llamada y la hora",
+      "Corregido: la pantalla de la interfaz de mensajes entrantes no aparecía al desplegar la barra de notificaciones en la pantalla de bloqueo.",
+      "Corregido: no se mostraba el icono de carga en la pantalla de bloqueo",
+      "Añadido modo SOS en la barra de estado",
+      "Optimización: estilo de batería de la barra de estado ajustado al estilo numérico",
+      "Corregido: no se puede cerrar la notificación flotante",
+      "Corregido: no se puede desbloquear con huella en la pantalla de bloqueo durante una llamada",
+      "Se ha corregido el problema por el que el icono de los auriculares a veces no se mostraba",
+      "Corregido el problema que impedía desplazar una captura de pantalla larga hasta abajo",
+      "Corregida la superposición entre llamada de retorno y hora",
+      "Se corrigió un problema por el que la pantalla del mensaje entrante no aparecía al desplegar el panel de notificaciones en la pantalla de bloqueo",
+      "Corregido el icono de carga que faltaba en la pantalla de bloqueo"
+    ],
+    "Ajustes": [
+      "Se corrige el problema por el que no se podía activar el punto de acceso cuando el nombre del teléfono se establecía en la longitud máxima",
+      "Corregido el problema por el que el punto de acceso no se podía activar al establecer el nombre del teléfono con la longitud máxima."
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused",
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Corrige el problema por el que la barra de estado no se actualizaba a tiempo tras pausar la grabación"
     ]
   },
   "logs_pt": {
-    "System": [
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security.",
-      "Android Oreo update"
+    "Câmera": [
+      "Correção: A moldura de reconhecimento facial não aparecia após ativar a detecção de idade na câmera frontal",
+      "Corrigido problema de estabilidade da câmera",
+      "Correção do problema em que a moldura de reconhecimento facial não aparecia após ativar a detecção de idade na câmera frontal."
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly"
+    "Gravador": [
+      "Correção: o estado da gravação não era atualizado na barra de notificações ao pausar uma gravação"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: SOS mode for the status bar",
-      "Optimization: Battery percentage format for the status bar",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly",
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received",
-      "Fix: The icon showing that the device is charging wasn^t displayed on the Lock screen"
+    "Sistema": [
+      "Otimização: Atualizado o patch de segurança do Google (2019#3) para aumentar a segurança do sistema.",
+      "Versão do Android atualizada para Android Oreo.",
+      "Otimização: Atualizado o patch de segurança do Google (2019#3) para aumentar a segurança do sistema."
     ],
-    "Camera": [
-      "Fix: Camera^s stability issues",
-      "Fix: Face detection frame didn^t appear after the age recognition option had been turned on"
+    "Telefone": [
+      "Corrigido o problema em que \"Alternar câmera\" na área de funções durante chamadas de vídeo podia ser exibido de forma incompleta",
+      "Corrigido um problema em que “Alternar câmera” na área de funções podia ser exibido de forma incompleta durante chamadas de vídeo"
     ],
-    "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name was set to maximum length"
+    "Tela de bloqueio, barra de status, barra de notificações": [
+      "Adicionado modo SOS na barra de status",
+      "Otimização: estilo da bateria na barra de status ajustado para o estilo numérico",
+      "Corrigido: não era possível fechar a janela flutuante pela notificação",
+      "Corrigido: não é possível desbloquear com impressão digital na tela de bloqueio de chamada",
+      "Corrigido o problema em que o ícone do fone de ouvido ocasionalmente não era exibido.",
+      "Corrigido: não é possível rolar até o fim na captura de tela longa",
+      "Corrigida a sobreposição entre retornar à chamada e hora",
+      "Corrigido: a tela da interface de mensagens recebidas não aparecia ao puxar a barra de notificações na tela de bloqueio.",
+      "Corrigido o problema de o ícone de carregamento não aparecer no ecrã de bloqueio"
+    ],
+    "Configurações": [
+      "Corrigido o problema em que o hotspot não podia ser ativado quando o nome do telefone era definido com o comprimento máximo",
+      "Corrigido o problema em que o hotspot não podia ser ativado quando o nome do telefone era definido com o comprimento máximo."
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused",
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Corrige o problema de a barra de status não ser atualizada a tempo após pausar a gravação",
+      "Corrigido o problema de a barra de status não ser atualizada a tempo após pausar a gravação"
+    ],
+    "Tela de bloqueio, Barra de status e Área de notificações": [
+      "Adicionado modo SOS na barra de status",
+      "Otimização: estilo da bateria na barra de status ajustado para o estilo numérico",
+      "Corrigido: não é possível fechar a notificação flutuante",
+      "Corrigido: não era possível desbloquear com impressão digital na tela de bloqueio durante chamada",
+      "Corrigido o problema em que o ícone dos fones de ouvido às vezes não era exibido",
+      "Corrigido o problema em que a captura de tela longa não rolava até o final",
+      "Corrigida a sobreposição entre retorno de chamada e hora",
+      "Corrigido um problema em que a tela da mensagem recebida não aparecia ao abrir o painel de notificações na tela de bloqueio",
+      "Corrigido ícone de carregamento ausente na tela de bloqueio"
     ]
   },
   "logs_tr": {
+    "Kamera": [
+      "Düzeltme: Ön kamerada yaş algılama açıldıktan sonra yüz tanıma çerçevesi görünmüyordu"
+    ],
+    "Kayıt Cihazı": [
+      "Düzeltme: Kayıt duraklatıldığında kayıt durumu bildirim çubuğunda güncellenmiyordu"
+    ],
     "Sistem": [
+      "Optimizasyon: Android Güvenlik Yaması Mart 2019 sürümüne güncellendi. Sistem güvenliği artırıldı.",
+      "Android sürümü Android Oreo'ya yükseltildi.",
       "Optimizasyon: Android Güvenlik Yaması Mart 2019 sürümüne güncellendi. Sistem güvenliği artırıldı."
     ],
     "Telefon": [
+      "Görüntülü aramalar sırasında işlev alanındaki \"Kamerayı değiştir\" öğesinin eksik görüntülenebilmesi sorunu giderildi",
       "Onar: Video aramaları sırasında kameralar arasında geçiş yapmak amaçlı kullanıcı arayüzü elemanları yanlış sergilendi"
     ],
     "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Yeni: Durum çubuğuna SOS modu eklendi",
+      "Optimizasyon: Durum çubuğuna pil yüzdesi formatı eklendi",
+      "Düzeltildi: bildirimden yüzen pencere kapatılamıyordu",
+      "Onarım: Bir arama sırasında kilitliyken cihaz kilidi parmak izi kullanılarak açılamadı",
+      "Onarım: Kulaklık simgesi bazen kayboldu",
+      "Düzeltme: Uzun ekran görüntüsünde sona kadar kaydırılamıyor",
+      "Aramaya dön ve saat arasındaki örtüşme düzeltildi",
+      "Düzeltme: Kilit ekranında bildirim paneli aşağı çekildiğinde gelen mesaj arayüzü ekranı görünmüyordu.",
+      "Onarım: Kilit ekranında cihazın şarj edildiğini belirten simge görüntülenmeye başlandı",
       "Yeni: Durum çubuğuna SOS modu eklendi",
       "Optimizasyon: Durum çubuğuna pil yüzdesi formatı eklendi",
       "Onar: Kayan bildirimler kısıtlanamadı",
@@ -372,228 +630,338 @@
       "Onar: Kilit ekranında cihazın şarj edildiğini belirten simge görüntülenmeye başlandı"
     ],
     "Ayarlar": [
+      "Telefon adı maksimum uzunluğa ayarlandığında hotspot'un açılamaması sorunu giderildi",
       "Onar: Cihaz adı maksimum uzunlukta oluşturulduğunda kişisel bağlantı noktası açılamadı"
     ],
+    "Recorder": [
+      "Kaydı duraklattıktan sonra durum çubuğunun zamanında güncellenmemesi sorunu düzeltildi"
+    ],
     "Ses kaydedici": [
-      "Onar: Bir kayıt durdurulduğunda, kayıt durumu Bildirim çubuğunda güncellenmedi",
       "Onar: Bir kayıt durdurulduğunda, kayıt durumu Bildirim çubuğunda güncellenmedi"
     ]
   },
   "logs_id": {
-    "System": [
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security.",
-      "Android Oreo update"
+    "Kamera": [
+      "Perbaikan: Bingkai pengenalan wajah tidak muncul setelah deteksi usia di kamera depan diaktifkan",
+      "Memperbaiki masalah stabilitas kamera",
+      "Memperbaiki masalah bingkai pengenalan wajah tidak muncul setelah mengaktifkan deteksi usia pada kamera depan."
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly"
+    "Perekam": [
+      "Perbaikan: Status perekaman tidak diperbarui di bilah notifikasi saat perekaman dijeda"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: SOS mode for the status bar",
-      "Optimization: Battery percentage format for the status bar",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly",
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received",
-      "Fix: The icon showing that the device is charging wasn^t displayed on the Lock screen"
+    "Sistem": [
+      "Optimasi: Memperbarui patch keamanan Google (2019#3) untuk meningkatkan keamanan sistem.",
+      "Versi Android ditingkatkan ke Android Oreo.",
+      "Optimasi: Memperbarui patch keamanan Google (2019#3) untuk meningkatkan keamanan sistem."
     ],
-    "Camera": [
-      "Fix: Camera^s stability issues",
-      "Fix: Face detection frame didn^t appear after the age recognition option had been turned on"
+    "Telepon": [
+      "Memperbaiki masalah di mana \"Ganti kamera\" di area fungsi selama panggilan video mungkin ditampilkan tidak lengkap",
+      "Memperbaiki masalah yang menyebabkan “Ganti kamera” di area fungsi dapat ditampilkan tidak lengkap selama panggilan video"
     ],
-    "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name was set to maximum length"
+    "Layar kunci, bilah status, bilah notifikasi": [
+      "Menambahkan mode SOS di bilah status",
+      "Optimasi: gaya baterai bilah status disesuaikan ke gaya angka",
+      "Diperbaiki: jendela mengambang tidak dapat ditutup dari notifikasi",
+      "Perbaikan tidak dapat membuka kunci dengan sidik jari di layar kunci panggilan",
+      "Memperbaiki masalah ikon headset yang terkadang tidak muncul.",
+      "Memperbaiki tangkapan layar panjang tidak bisa digulir sampai bawah",
+      "Memperbaiki tumpang tindih antara kembali ke panggilan dan waktu",
+      "Memperbaiki masalah layar antarmuka pesan masuk tidak muncul saat menarik panel notifikasi pada layar kunci.",
+      "Memperbaiki ikon pengisian daya yang tidak muncul di layar kunci"
+    ],
+    "Pengaturan": [
+      "Memperbaiki masalah hotspot tidak dapat diaktifkan saat nama ponsel diatur ke panjang maksimum"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused",
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Memperbaiki masalah status bar tidak diperbarui tepat waktu setelah rekaman dijeda",
+      "Memperbaiki masalah bilah status tidak diperbarui tepat waktu setelah rekaman dijeda"
+    ],
+    "Layar kunci, bar status, layar notifikasi": [
+      "Menambahkan mode SOS di bilah status",
+      "Optimasi: gaya baterai bilah status disesuaikan ke gaya angka",
+      "Memperbaiki notifikasi mengambang yang tidak dapat ditutup",
+      "Memperbaiki: tidak dapat membuka kunci dengan sidik jari di layar kunci saat panggilan",
+      "Memperbaiki masalah ikon headset yang terkadang tidak muncul",
+      "Memperbaiki masalah tangkapan layar panjang yang tidak bisa digulir ke bawah",
+      "Perbaikan tumpang tindih antara panggilan kembali dan waktu",
+      "Memperbaiki masalah di mana layar pesan masuk tidak muncul saat menarik panel notifikasi di layar kunci",
+      "Memperbaiki ikon pengisian daya yang hilang di layar kunci"
+    ],
+    "Setelan": [
+      "Memperbaiki masalah hotspot tidak dapat diaktifkan saat nama ponsel diatur ke panjang maksimum."
     ]
   },
   "logs_vi": {
-    "System": [
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security.",
-      "Android Oreo update"
+    "Máy ảnh": [
+      "Sửa lỗi: Khung nhận diện khuôn mặt không hiển thị sau khi bật nhận diện tuổi trên camera trước",
+      "Đã khắc phục sự cố ổn định của camera",
+      "Đã khắc phục sự cố khung nhận diện khuôn mặt không xuất hiện sau khi bật phát hiện độ tuổi trên camera trước."
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly"
+    "Máy ghi âm": [
+      "Đã sửa: Trạng thái ghi âm không được cập nhật kịp thời trên thanh thông báo khi tạm dừng ghi âm"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: SOS mode for the status bar",
-      "Optimization: Battery percentage format for the status bar",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly",
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received",
-      "Fix: The icon showing that the device is charging wasn^t displayed on the Lock screen"
+    "Hệ thống": [
+      "Tối ưu hóa: Đã cập nhật bản vá bảo mật Google (2019#3) để nâng cao bảo mật hệ thống.",
+      "Phiên bản Android đã được nâng cấp lên Android Oreo.",
+      "Tối ưu hóa: Đã cập nhật bản vá bảo mật Google (2019#3) để nâng cao bảo mật hệ thống."
     ],
-    "Camera": [
-      "Fix: Camera^s stability issues",
-      "Fix: Face detection frame didn^t appear after the age recognition option had been turned on"
+    "Điện thoại": [
+      "Đã khắc phục sự cố \"Chuyển camera\" trong khu vực chức năng khi gọi video có thể hiển thị không đầy đủ",
+      "Đã khắc phục sự cố “Chuyển camera” trong khu vực chức năng có thể hiển thị không đầy đủ khi gọi video"
     ],
-    "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name was set to maximum length"
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Đã thêm chế độ SOS vào thanh trạng thái",
+      "Tối ưu: đã điều chỉnh kiểu pin trên thanh trạng thái sang kiểu số",
+      "Đã sửa: không thể đóng cửa sổ nổi từ thông báo",
+      "Đã sửa lỗi không thể mở khóa bằng vân tay trên màn hình khóa cuộc gọi",
+      "Đã khắc phục sự cố đôi khi biểu tượng tai nghe không hiển thị.",
+      "Đã sửa: không thể cuộn xuống cuối trong ảnh chụp màn hình dài",
+      "Đã sửa lỗi chồng chéo giữa quay lại cuộc gọi và thời gian",
+      "Đã sửa: màn hình giao diện tin nhắn đến không hiển thị khi kéo thanh thông báo xuống trên màn hình khóa.",
+      "Đã sửa lỗi không hiển thị biểu tượng sạc trên màn hình khóa",
+      "Đã thêm chế độ SOS vào thanh trạng thái",
+      "Tối ưu: đã điều chỉnh kiểu pin trên thanh trạng thái sang kiểu số",
+      "Sửa lỗi không thể đóng thông báo nổi",
+      "Đã sửa: không thể mở khóa bằng vân tay trên màn hình khóa khi đang gọi",
+      "Đã khắc phục sự cố đôi khi biểu tượng tai nghe không hiển thị",
+      "Sửa lỗi không thể cuộn ảnh chụp màn hình dài xuống cuối",
+      "Sửa lỗi chồng chéo giữa gọi lại và thời gian",
+      "Đã khắc phục sự cố màn hình tin nhắn đến không hiển thị khi kéo xuống bảng thông báo trên màn hình khóa",
+      "Đã sửa lỗi thiếu biểu tượng sạc trên màn hình khóa"
+    ],
+    "Cài đặt": [
+      "Khắc phục sự cố không thể bật điểm phát sóng khi tên điện thoại được đặt ở độ dài tối đa",
+      "Đã sửa lỗi không thể bật điểm phát sóng khi đặt tên điện thoại ở độ dài tối đa."
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused",
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Khắc phục sự cố thanh trạng thái không được cập nhật kịp thời sau khi tạm dừng ghi âm",
+      "Khắc phục sự cố thanh trạng thái không cập nhật kịp thời sau khi tạm dừng ghi âm"
     ]
   },
   "logs_th": {
-    "System": [
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security.",
-      "Android Oreo update"
+    "กล้อง": [
+      "แก้ไข: กรอบการจดจำใบหน้าไม่แสดงหลังเปิดการตรวจจับอายุบนกล้องหน้า",
+      "แก้ไขปัญหาความเสถียรของกล้อง",
+      "แก้ไขปัญหาที่กรอบการจดจำใบหน้าไม่แสดงขึ้นหลังจากเปิดการตรวจจับอายุบนกล้องหน้า"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly"
+    "เครื่องบันทึกเสียง": [
+      "แก้ไข: สถานะการบันทึกเสียงไม่ได้รับการอัปเดตในแถบการแจ้งเตือนเมื่อหยุดการบันทึกชั่วคราว"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: SOS mode for the status bar",
-      "Optimization: Battery percentage format for the status bar",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly",
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received",
-      "Fix: The icon showing that the device is charging wasn^t displayed on the Lock screen"
+    "ระบบ": [
+      "การปรับให้เหมาะสม: อัปเดตแพตช์ความปลอดภัยของ Google (2019#3) เพื่อเพิ่มความปลอดภัยของระบบ",
+      "อัปเกรดเวอร์ชัน Android เป็น Android Oreo",
+      "การปรับให้เหมาะสม: อัปเดตแพตช์ความปลอดภัยของ Google (2019#3) เพื่อเพิ่มความปลอดภัยของระบบ"
     ],
-    "Camera": [
-      "Fix: Camera^s stability issues",
-      "Fix: Face detection frame didn^t appear after the age recognition option had been turned on"
+    "โทรศัพท์": [
+      "แก้ไขปัญหาที่ \"สลับกล้อง\" ในพื้นที่ฟังก์ชันระหว่างการโทรวิดีโออาจแสดงไม่สมบูรณ์",
+      "แก้ไขปัญหาที่ “สลับกล้อง” ในพื้นที่ฟังก์ชันอาจแสดงไม่ครบถ้วนระหว่างการโทรวิดีโอ"
     ],
-    "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name was set to maximum length"
+    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
+      "เพิ่มโหมด SOS ในแถบสถานะ",
+      "การปรับปรุง: ปรับรูปแบบแบตเตอรี่ในแถบสถานะเป็นรูปแบบตัวเลข",
+      "แก้ไข: ไม่สามารถปิดหน้าต่างลอยจากการแจ้งเตือน",
+      "แก้ไขปัญหาไม่สามารถปลดล็อกด้วยลายนิ้วมือบนหน้าจอล็อกการโทร",
+      "แก้ไขปัญหาบางครั้งไอคอนหูฟังไม่แสดง",
+      "แก้ไขปัญหาไม่สามารถเลื่อนลงจนสุดในการจับภาพหน้าจอยาว",
+      "แก้ไขการทับซ้อนระหว่างการกลับไปที่การโทรและเวลา",
+      "แก้ไขหน้าจออินเทอร์เฟซข้อความขาเข้าไม่แสดงเมื่อดึงแถบการแจ้งเตือนลงบนหน้าจอล็อก",
+      "แก้ไขปัญหาไอคอนชาร์จไม่แสดงบนหน้าจอล็อก"
+    ],
+    "การตั้งค่า": [
+      "แก้ไขปัญหาที่ไม่สามารถเปิดฮอตสปอตได้เมื่อตั้งชื่อโทรศัพท์เป็นความยาวสูงสุด",
+      "แก้ไขปัญหาที่เปิดฮอตสปอตไม่ได้เมื่อตั้งชื่อโทรศัพท์เป็นความยาวสูงสุด"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused",
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "แก้ไขปัญหาที่แถบสถานะไม่ได้รับการอัปเดตทันเวลาหลังหยุดบันทึกชั่วคราว",
+      "แก้ไขปัญหาแถบสถานะไม่อัปเดตทันเวลาหลังหยุดการบันทึกชั่วคราว"
+    ],
+    "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
+      "เพิ่มโหมด SOS ในแถบสถานะ",
+      "การปรับปรุง: ปรับรูปแบบแบตเตอรี่ในแถบสถานะเป็นรูปแบบตัวเลข",
+      "แก้ไขปัญหาการไม่สามารถปิดการแจ้งเตือนแบบลอยได้",
+      "แก้ไข: ไม่สามารถปลดล็อกด้วยลายนิ้วมือบนหน้าจอล็อกขณะโทร",
+      "แก้ไขปัญหาบางครั้งไอคอนหูฟังไม่แสดง",
+      "แก้ไขปัญหาภาพหน้าจอยาวไม่สามารถเลื่อนลงไปด้านล่างสุดได้",
+      "แก้ไขการทับซ้อนระหว่างการกลับไปที่การโทรและเวลา",
+      "แก้ไขปัญหาที่หน้าจอข้อความขาเข้าไม่แสดงเมื่อเลื่อนแผงการแจ้งเตือนลงบนหน้าจอล็อก",
+      "แก้ไขไอคอนชาร์จที่หายไปบนหน้าจอล็อก"
     ]
   },
   "logs_ar": {
-    "System": [
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security.",
-      "Android Oreo update"
+    "كاميرا": [
+      "إصلاح: لم يظهر إطار التعرف على الوجه بعد تفعيل اكتشاف العمر في الكاميرا الأمامية",
+      "إصلاح مشكلة استقرار الكاميرا",
+      "إصلاح مشكلة عدم ظهور إطار التعرّف على الوجه بعد تفعيل اكتشاف العمر في الكاميرا الأمامية"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly"
+    "مسجل": [
+      "إصلاح: لم يتم تحديث حالة التسجيل في شريط الإشعارات عند إيقاف التسجيل مؤقتًا"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: SOS mode for the status bar",
-      "Optimization: Battery percentage format for the status bar",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly",
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received",
-      "Fix: The icon showing that the device is charging wasn^t displayed on the Lock screen"
+    "النظام": [
+      "تحسين: تم تحديث تصحيح أمان Google (2019#3) لتحسين أمان النظام.",
+      "تمت ترقية إصدار Android إلى Android Oreo.",
+      "تحسين: تم تحديث تصحيح أمان Google (2019#3) لتحسين أمان النظام."
     ],
-    "Camera": [
-      "Fix: Camera^s stability issues",
-      "Fix: Face detection frame didn^t appear after the age recognition option had been turned on"
+    "الهاتف": [
+      "إصلاح مشكلة قد تؤدي إلى عرض زر \"تبديل الكاميرا\" في منطقة الوظائف أثناء مكالمات الفيديو بشكل غير مكتمل"
     ],
-    "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name was set to maximum length"
+    "شاشة القفل، شريط الحالة، شريط الإشعارات": [
+      "إضافة وضع SOS في شريط الحالة",
+      "تحسين: تم ضبط نمط البطارية في شريط الحالة على النمط الرقمي",
+      "تم الإصلاح: تعذّر إغلاق النافذة العائمة من الإشعار",
+      "إصلاح تعذر فتح القفل ببصمة الإصبع على شاشة قفل المكالمة",
+      "تم إصلاح مشكلة عدم ظهور أيقونة السماعات أحيانًا.",
+      "تم الإصلاح: تعذّر التمرير إلى الأسفل في لقطة الشاشة الطويلة",
+      "إصلاح تداخل العودة إلى المكالمة والوقت",
+      "إصلاح: عدم ظهور شاشة واجهة الرسائل الواردة عند سحب لوحة الإشعارات لأسفل على شاشة القفل",
+      "إصلاح عدم ظهور أيقونة الشحن في شاشة القفل"
+    ],
+    "الإعدادات": [
+      "إصلاح مشكلة عدم إمكانية تشغيل نقطة الاتصال الساخنة عند ضبط اسم الهاتف على الحد الأقصى للطول",
+      "إصلاح مشكلة تعذّر تشغيل نقطة الاتصال عند ضبط اسم الهاتف على الحد الأقصى للطول."
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused",
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "إصلاح مشكلة عدم تحديث شريط الحالة في الوقت المناسب بعد إيقاف التسجيل مؤقتًا",
+      "إصلاح مشكلة عدم تحديث شريط الحالة في الوقت المناسب بعد إيقاف التسجيل مؤقتًا"
+    ],
+    "هاتف": [
+      "إصلاح مشكلة قد يظهر فيها “تبديل الكاميرا” في منطقة الوظائف بشكل غير مكتمل أثناء مكالمات الفيديو"
+    ],
+    "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
+      "إضافة وضع SOS في شريط الحالة",
+      "تحسين: تم ضبط نمط البطارية في شريط الحالة على النمط الرقمي",
+      "إصلاح تعذر إغلاق الإشعار العائم",
+      "إصلاح: تعذّر فتح القفل ببصمة الإصبع في شاشة القفل أثناء المكالمة",
+      "تم إصلاح مشكلة عدم ظهور أيقونة سماعة الرأس أحيانًا",
+      "إصلاح مشكلة تعذّر تمرير لقطة الشاشة الطويلة إلى الأسفل",
+      "إصلاح تداخل العودة إلى المكالمة والوقت",
+      "تم إصلاح مشكلة عدم ظهور شاشة الرسالة الواردة عند سحب لوحة الإشعارات على شاشة القفل",
+      "إصلاح عدم ظهور أيقونة الشحن على شاشة القفل"
     ]
   },
   "logs_in": {
-    "System": [
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security.",
-      "Android Oreo update"
+    "कैमरा": [
+      "फ़िक्स: फ्रंट कैमरा पर आयु पहचान सक्षम करने के बाद चेहरा पहचान फ़्रेम नहीं दिखाई दे रहा था",
+      "कैमरा स्थिरता समस्या ठीक की गई",
+      "फ्रंट कैमरा पर आयु पहचान सक्षम करने के बाद चेहरा पहचान फ़्रेम न दिखने की समस्या ठीक की गई।"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly"
+    "रिकॉर्डर": [
+      "समस्या ठीक की गई: रिकॉर्डिंग पॉज़ करने पर नोटिफ़िकेशन शेड में स्थिति तुरंत अपडेट नहीं होती थी"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: SOS mode for the status bar",
-      "Optimization: Battery percentage format for the status bar",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly",
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received",
-      "Fix: The icon showing that the device is charging wasn^t displayed on the Lock screen"
+    "सिस्टम": [
+      "अनुकूलन: Google सुरक्षा पैच (2019#3) अपडेट किया गया, सिस्टम सुरक्षा में सुधार।",
+      "Android संस्करण को Android Oreo में अपग्रेड किया गया",
+      "अनुकूलन: Google सुरक्षा पैच (2019#3) अपडेट किया गया, सिस्टम सुरक्षा में सुधार।"
     ],
-    "Camera": [
-      "Fix: Camera^s stability issues",
-      "Fix: Face detection frame didn^t appear after the age recognition option had been turned on"
+    "फ़ोन": [
+      "वीडियो कॉल के दौरान फ़ंक्शन क्षेत्र में \"कैमरा बदलें\" के अधूरा दिखाए जाने की समस्या को ठीक किया गया",
+      "वीडियो कॉल के दौरान फ़ंक्शन क्षेत्र में “कैमरा बदलें” के अपूर्ण रूप से प्रदर्शित होने की समस्या ठीक की गई"
     ],
-    "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name was set to maximum length"
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
+      "स्टेटस बार में SOS मोड जोड़ा गया",
+      "अनुकूलन: स्टेटस बार की बैटरी शैली को संख्यात्मक शैली में समायोजित किया गया",
+      "ठीक किया गया: सूचना से फ़्लोटिंग विंडो बंद नहीं हो सकती थी",
+      "कॉल लॉक स्क्रीन पर फ़िंगरप्रिंट से अनलॉक न होने की समस्या ठीक की गई",
+      "हैडफ़ोन आइकन कभी-कभी न दिखने की समस्या ठीक की गई।",
+      "ठीक किया गया: लंबे स्क्रीनशॉट में नीचे तक स्क्रॉल नहीं किया जा सकता",
+      "कॉल पर वापस जाने और समय के ओवरलैप को ठीक किया गया",
+      "ठीक किया गया: लॉक स्क्रीन पर सूचना पैनल को नीचे खींचने पर आने वाले संदेश की इंटरफ़ेस स्क्रीन नहीं दिख रही थी",
+      "लॉक स्क्रीन पर चार्जिंग आइकन न दिखने की समस्या ठीक की गई"
+    ],
+    "सेटिंग्स": [
+      "फ़ोन का नाम अधिकतम लंबाई पर सेट होने पर हॉटस्पॉट चालू न होने की समस्या ठीक की गई",
+      "फ़ोन का नाम अधिकतम लंबाई पर सेट होने पर हॉटस्पॉट चालू न होने की समस्या ठीक की गई।"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused",
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "रिकॉर्डिंग पॉज़ करने के बाद स्टेटस बार समय पर अपडेट न होने की समस्या ठीक की गई",
+      "रिकॉर्डिंग को पॉज़ करने के बाद स्टेटस बार समय पर अपडेट न होने की समस्या ठीक की गई"
+    ],
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
+      "स्टेटस बार में SOS मोड जोड़ा गया",
+      "अनुकूलन: स्टेटस बार की बैटरी शैली को संख्यात्मक शैली में समायोजित किया गया",
+      "फ़्लोटिंग सूचना बंद न होने की समस्या ठीक की गई",
+      "ठीक किया गया: कॉल लॉक स्क्रीन पर फ़िंगरप्रिंट से अनलॉक नहीं हो पा रहा था",
+      "हेडसेट आइकन कभी-कभी न दिखने की समस्या ठीक की गई",
+      "लंबे स्क्रीनशॉट को नीचे तक स्क्रॉल न कर पाने की समस्या ठीक की गई",
+      "कॉल पर वापसी और समय के ओवरलैप को ठीक करें",
+      "लॉक स्क्रीन पर सूचना पैनल को नीचे खींचने पर आने वाले संदेश की स्क्रीन न दिखने की समस्या ठीक की गई",
+      "लॉक स्क्रीन पर चार्जिंग आइकन गायब होने की समस्या ठीक की गई।"
     ]
   },
   "logs_ug": {
-    "System": [
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security.",
-      "Android Oreo update"
+    "كامېرا": [
+      "تۈزىتىش: ئالدى كامېرىدا ياشنى تونۇش ئېچىلغاندىن كېيىن يۈز تونۇش رامكىسى كۆرۈنمەيدىغان مەسىلە",
+      "كامېرا مۇقىملىق مەسىلىسىنى ئوڭشالدى",
+      "ئالدى كامېرىدا ياشنى ئېنىقلاشنى ئاچقاندىن كېيىن يۈز تونۇش رامكىسىنىڭ كۆرۈنمەسلىك مەسىلىسى تۈزىتىلدى."
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly"
+    "ئاۋاز ئالغۇ": [
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: SOS mode for the status bar",
-      "Optimization: Battery percentage format for the status bar",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
+    "سىستېما": [
+      "ئەلالاشتۇرۇش: Google بىخەتەرلىك يامىقى يېڭىلاندى (2019#3)، سىستېما بىخەتەرلىكى ئاشۇرۇلدى.",
+      "Android نەشرى Android Oreo غا يېڭىلاندى.",
+      "ئەلالاشتۇرۇش: Google بىخەتەرلىك يامىقى يېڭىلاندى (2019#3)، سىستېما بىخەتەرلىكى ئاشۇرۇلدى."
+    ],
+    "تېلېفون": [
+      "سىنلىق سۆھبەت جەريانىدا ئىقتىدار رايونىدىكى «كامېرا ئالماشتۇرۇش» تولۇق كۆرسىتىلمەسلىك مەسىلىسىنى تۈزەتتى.",
+      "سىنلىق سۆزلىشىش جەريانىدا ئىقتىدار رايونىدىكى «كامېرا ئالماشتۇرۇش» تولۇق كۆرسىتىلمەسلىك مەسىلىسى تۈزىتىلدى"
+    ],
+    "قۇلۇپ ئېكرانى، ھالەت بالدىقى، ئۇقتۇرۇش بالدىقى": [
+      "يېڭى: ھالەت بالدىقىغا SOS ھالىتى قوشۇلدى.",
+      "ئەلالاشتۇرۇش: ھالەت ستونىدىكى باتارېيە ئۇسلۇبى سان ئۇسلۇبىغا تەڭشەلدى",
+      "Fix: Couldn't restrict floating notifications",
+      "Fix: Couldn't use fingerprint to unlock the device when it was locked during a call",
       "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly",
+      "ئۇزۇن ئېكران رەسىمىنى تۆۋەنگە تارتىپ ئاخىرىغىچە يەتكۈزگىلى بولماسلىق مەسىلىسى تۈزىتىلدى",
       "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received",
-      "Fix: The icon showing that the device is charging wasn^t displayed on the Lock screen"
+      "قۇلۇپ ئېكرانىدا ئۇقتۇرۇش تاختىسىنى تارتقاندا، كەلگەن ئۇچۇر كۆرۈنمە يۈزىنىڭ ئېكراندا چىقماسلىقى تۈزىتىلدى.",
+      "قۇلۇپ ئېكرانى كۆرۈنۈشىدە زەرەتلىش سىنبەلگىسى كۆرۈنمەيدىغان مەسىلە تۈزىتىلدى."
     ],
-    "Camera": [
-      "Fix: Camera^s stability issues",
-      "Fix: Face detection frame didn^t appear after the age recognition option had been turned on"
-    ],
-    "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name was set to maximum length"
+    "تەڭشەكلەر": [
+      "تېلېفون نامىنى ئەڭ چوڭ ئۇزۇنلۇققا تەڭشىگەندە، Hotspot نى ئاچقىلى بولمايدىغان مەسىلە تۈزىتىلدى.",
+      "تېلېفون نامىنى ئەڭ چوڭ ئۇزۇنلۇققا بەلگىلىگەندە ھوتسپوت ئېچىلمايدىغان مەسىلىنى تۈزىتىش"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused",
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
     ]
   },
   "logs_bo": {
-    "System": [
+    "པར་ཆས": [
+      "Fix: Face detection frame didn't appear after the age recognition option had been turned on",
+      "Fix: Camera's stability issues",
+      "Fix: Face detection frame didn't appear after the age recognition option had been turned on"
+    ],
+    "སྒྲ་འཇུག་ཆས": [
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
+    ],
+    "མ་ལག": [
       "Optimization: Updated Android Security Patch to March 2019. Increased system security.",
       "Android Oreo update"
     ],
-    "Phone": [
+    "ཁ་པར": [
       "Fix: UI elements for switching between cameras during video calls were displayed incorrectly"
     ],
     "Lockscreen, status bar, Notification shade": [
       "New: SOS mode for the status bar",
       "Optimization: Battery percentage format for the status bar",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
+      "Fix: Couldn't restrict floating notifications",
+      "Fix: Couldn't use fingerprint to unlock the device when it was locked during a call",
       "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly",
+      "Fix: Scrolling screenshots didn't always work properly",
       "Fix: The button that returns you to an ongoing call overlapped with time",
       "Fix: Notification shade went black on the Lock screen when new notifications were received",
-      "Fix: The icon showing that the device is charging wasn^t displayed on the Lock screen"
+      "Fix: The icon showing that the device is charging wasn't displayed on the Lock screen"
     ],
-    "Camera": [
-      "Fix: Camera^s stability issues",
-      "Fix: Face detection frame didn^t appear after the age recognition option had been turned on"
-    ],
-    "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name was set to maximum length"
+    "སྒྲིག་བཀོད": [
+      "Fix: Couldn't turn on portable hotspot when device name was set to maximum length"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused",
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
+    ],
+    "རིམ་ལུགས": [
+      "Optimization: Updated Android Security Patch to March 2019. Increased system security."
+    ],
+    "སྒྲིག་སྟངས": [
+      "Fix: Couldn't turn on portable hotspot when device name was set to maximum length"
     ]
   }
 }

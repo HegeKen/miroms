@@ -1,6 +1,7 @@
 {
   "logs_zh": {
     "锁屏、状态栏、通知栏": [
+      "修复 锁屏时充电球与预计充电时间显示重叠的问题",
       "修复 锁屏时充电球与预计充电时间显示重叠的问题"
     ],
     "相机": [
@@ -13,13 +14,18 @@
     "文件管理器": [
       "修复 私密文件夹中剪切图片视频后打开文件异常的问题",
       "修复 在某些情况下，缩略图刷新不及时的问题",
-      "修复 搜索界面图标显示异常的问题"
+      "修复 搜索界面图标显示异常的问题",
+      "修复 私密文件夹中剪切图片视频后打开文件异常的问题"
     ],
     "录音机": [
       "修复 暂停录音后无法及时更新到状态栏的问题"
     ],
     "网络助手": [
       "新增 日租卡/无限流量卡模式，可设置大王卡、米粉卡、天神卡等套餐类型，流量校正更准确"
+    ],
+    "其他": [
+      "提高系统的稳定性",
+      "优化系统的流畅度"
     ]
   },
   "logs_en": {
@@ -31,7 +37,7 @@
       "New: You can shoot 960fps videos now"
     ],
     "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name was set to maximum length"
+      "Fix: Couldn't turn on portable hotspot when device name was set to maximum length"
     ],
     "File Explorer": [
       "Fix: Errors occured after videos from the folder with hidden files were edited",
@@ -39,124 +45,581 @@
       "Fix: Icons on the search page were displayed incorrectly"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
     ],
     "Data Usage": [
       "New: More data plans available"
+    ],
+    "Other": [
+      "Optimized system performance",
+      "Improved system security and stability"
+    ],
+    "Lock screen, status bar, notification shade": [
+      "Fix: Lock screen UI elements overlapped when the device was charging"
+    ],
+    "File Manager": [
+      "Fix: Errors occured after videos from the folder with hidden files were edited"
     ]
   },
   "logs_zh_tw": {
     "解鎖畫面、狀態欄、通知欄": [
+      "修復 螢幕鎖定時充電球與預計充電時間顯示重疊的問題",
       "修復 螢幕鎖定時充電球與預計充電時間顯示重疊的問題"
+    ],
+    "相機": [
+      "新增 支援手持超級夜景拍照功能",
+      "新增 支援 960 FPS 慢動作錄影功能"
+    ],
+    "設定": [
+      "修復 設定手機名稱為最大長度，熱點無法開啟的問題"
+    ],
+    "檔案管理員": [
+      "修復 私密資料夾中剪切圖片影片後開啟檔案異常的問題",
+      "修正 在某些情況下，縮圖未及時更新的問題",
+      "修正 搜尋介面圖示顯示異常的問題"
+    ],
+    "錄音機": [
+      "修復 暫停錄音後無法即時更新到狀態欄的問題"
+    ],
+    "網路助手": [
+      "新增 日租卡/無限流量卡模式，可設定大王卡、米粉卡、天神卡等套餐類型，流量校正更準確"
+    ],
+    "其他": [
+      "改善系統的穩定性",
+      "優化系統的流暢度"
     ],
     "檔案管理器": [
       "修復 私密資料夾中剪切圖片影片後開啟檔案異常的問題"
     ]
   },
   "logs_ja": {
+    "ロック画面、ステータスバー、通知バー": [
+      "ロック画面で充電ボールと予想充電時間の表示が重なる問題を修正"
+    ],
+    "カメラ": [
+      "新機能: 強化された低照度モード",
+      "新機能: 960fpsのスローモーション動画を撮影できます"
+    ],
+    "設定": [
+      "修正: デバイス名を最大長に設定すると、ポータブルホットスポットをオンにできませんでした"
+    ],
+    "ファイルマネージャー": [
+      "プライベートフォルダで画像や動画を切り取った後にファイルを開く際の異常を修正",
+      "一部の場合でサムネイルの更新が間に合わない問題を修正",
+      "検索画面のアイコンが正しく表示されない問題を修正",
+      "プライベートフォルダで画像や動画を切り取った後にファイルを開く際の異常を修正"
+    ],
+    "レコーダー": [
+      "修正: 録音を一時停止した際、通知シェードの録音状態が更新されない問題"
+    ],
+    "データ使用量": [
+      "日租卡/無制限データカードモードを追加。大王卡・米粉卡・天神卡などのプランタイプを設定でき、通信量補正がより正確に。"
+    ],
     "その他": [
       "システムパフォーマンスの最適化",
       "システムのセキュリティと安定性の向上"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "ロック画面で充電ボールと予想充電時間の表示が重なる問題を修正"
     ]
   },
   "logs_ko": {
+    "잠금 화면, 상태 표시줄, 알림 표시줄": [
+      "잠금 화면에서 충전 볼과 예상 충전 시간 표시가 겹치는 문제를 수정"
+    ],
+    "카메라": [
+      "새로운 기능: 향상된 저조도 모드",
+      "새로운 기능: 960fps 슬로모션 동영상을 촬영할 수 있습니다"
+    ],
+    "설정": [
+      "수정: 기기 이름을 최대 길이로 설정하면 휴대용 핫스팟을 켤 수 없었습니다"
+    ],
+    "파일 관리자": [
+      "비공개 폴더에서 사진 및 동영상을 잘라낸 후 파일을 여는 오류를 수정",
+      "일부 상황에서 썸네일이 제때 새로고침되지 않는 문제를 수정했습니다",
+      "검색 화면의 아이콘이 비정상적으로 표시되는 문제를 수정",
+      "비공개 폴더에서 사진 및 동영상을 잘라낸 후 파일을 여는 오류를 수정"
+    ],
+    "녹음기": [
+      "수정: 녹음을 일시중지했을 때 알림 창의 녹음 상태가 업데이트되지 않던 문제"
+    ],
+    "데이터 사용량": [
+      "일일 요금제/무제한 데이터 카드 모드 추가. 大王卡, 米粉卡, 天神卡 등 요금제 유형을 설정할 수 있어 데이터 보정이 더 정확해집니다."
+    ],
     "기타": [
       "시스템 성능 최적화",
       "시스템 보안 및 안정성 개선"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "잠금 화면에서 충전 볼과 예상 충전 시간 표시가 겹치는 문제를 수정"
     ]
   },
   "logs_ru": {
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Исправлено наложение индикатора зарядки и предполагаемого времени зарядки на экране блокировки"
+    ],
+    "Камера": [
+      "New: Улучшенный режим съемки при низком освещении",
+      "New: Поддержка видеосъемки с 960 кадрами в секунду"
+    ],
+    "Настройки": [
+      "Исправлено: Не удавалось включить точку доступа, если имя устройства содержало максимальное количество символов"
+    ],
+    "Файловый менеджер": [
+      "Исправлена ошибка открытия файлов после вырезания изображений и видео в приватной папке",
+      "Исправлена проблема, из-за которой в некоторых случаях миниатюры не обновлялись вовремя",
+      "Исправлена проблема с неправильным отображением значков на экране поиска",
+      "Исправлена ошибка открытия файлов после вырезания изображений и видео в приватной папке"
+    ],
+    "Диктофон": [
+      "Fix: Факт остановки записи не отображался в строке состояния вовремя"
+    ],
+    "Трафик": [
+      "Добавлен режим дневной карты/карты безлимитного трафика. Можно настроить типы тарифов, такие как 大王卡, 米粉卡 и 天神卡; коррекция трафика стала точнее."
+    ],
     "Другое": [
       "Оптимизация производительности системы",
       "Улучшение безопасности и стабильности системы"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Исправлено наложение индикатора зарядки и предполагаемого времени зарядки на экране блокировки"
     ]
   },
   "logs_uk": {
+    "Екран блокування, рядок стану, рядок сповіщень": [
+      "Виправлено накладання індикатора заряджання та орієнтовного часу заряджання на екрані блокування"
+    ],
+    "Камера": [
+      "Нове: Підтримка зйомки в супернічному режимі з рук",
+      "Нове: Тепер можна знімати відео в режимі сповільненої зйомки 960 fps"
+    ],
+    "Налаштування": [
+      "Виправлено: не вдалося ввімкнути портативну точку доступу, коли ім’я пристрою встановлено на максимальну довжину"
+    ],
+    "Файловий менеджер": [
+      "Виправлено помилку відкриття файлів після вирізання зображень і відео в приватній папці",
+      "Виправлено проблему, через яку в деяких випадках мініатюри не оновлювалися вчасно",
+      "Виправлено проблему з неправильним відображенням значків на екрані пошуку",
+      "Виправлено помилку відкриття файлів після вирізання зображень і відео в приватній папці"
+    ],
+    "Диктофон": [
+      "Виправлено: стан запису не оновлювався в панелі сповіщень під час паузи запису"
+    ],
+    "Передача даних": [
+      "Додано режим денної картки/картки безлімітного трафіку. Можна налаштувати типи тарифів, як-от 大王卡, 米粉卡 і 天神卡; коригування трафіку стало точнішим."
+    ],
     "Інше": [
       "Оптимізація продуктивності системи",
       "Покращення безпеки та стабільності системи"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Виправлено накладання індикатора заряджання та орієнтовного часу заряджання на екрані блокування"
     ]
   },
   "logs_pl": {
+    "Ekran blokady, pasek stanu, pasek powiadomień": [
+      "Naprawiono nakładanie się wskaźnika ładowania i szacowanego czasu ładowania na ekranie blokady"
+    ],
+    "Aparat": [
+      "Nowość: Obsługa zdjęć w trybie Super Noc z ręki",
+      "Nowość: Możesz teraz nagrywać filmy w zwolnionym tempie 960 fps"
+    ],
+    "Ustawienia": [
+      "Naprawiono: Nie można było włączyć hotspotu przenośnego, gdy nazwa urządzenia miała maksymalną długość"
+    ],
+    "Menedżer plików": [
+      "Naprawiono błąd otwierania plików po wycięciu zdjęć i filmów w folderze prywatnym",
+      "Naprawiono problem, w którym w niektórych przypadkach miniatury nie odświeżały się na czas",
+      "Naprawiono problem z nieprawidłowym wyświetlaniem ikon na ekranie wyszukiwania",
+      "Naprawiono błąd otwierania plików po wycięciu zdjęć i filmów w folderze prywatnym"
+    ],
+    "Rejestrator": [
+      "Poprawka: stan nagrywania nie był aktualizowany na pasku powiadomień po wstrzymaniu nagrywania"
+    ],
+    "Użycie danych": [
+      "Dodano tryb karty dziennej/karty z nielimitowanym transferem. Można ustawić typy planów, takie jak 大王卡, 米粉卡 i 天神卡; korekcja danych jest dokładniejsza."
+    ],
     "Inne": [
       "Zoptymalizowana wydajność systemu",
       "Większe bezpieczeństwo i stabilność systemu"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Naprawiono nakładanie się wskaźnika ładowania i szacowanego czasu ładowania na ekranie blokady"
     ]
   },
   "logs_de": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
+      "Problem behoben, bei dem sich Ladeball und geschätzte Ladezeit auf dem Sperrbildschirm überlappen"
+    ],
+    "Kamera": [
+      "Neu: Verbesserter Low-Light-Modus",
+      "Neu: Videos mit 960 fps können jetzt aufgenommen werden"
+    ],
+    "Einstellungen": [
+      "Behoben: Mobiler Hotspot konnte nicht aktiviert werden, wenn der Gerätename auf die maximale Länge gesetzt war"
+    ],
+    "Dateimanager": [
+      "Fehler beim Öffnen von Dateien nach dem Ausschneiden von Bildern und Videos im privaten Ordner behoben",
+      "Problem behoben, bei dem Miniaturansichten in manchen Fällen nicht rechtzeitig aktualisiert wurden",
+      "Problem mit der fehlerhaften Anzeige von Symbolen auf dem Suchbildschirm behoben",
+      "Fehler beim Öffnen von Dateien nach dem Ausschneiden von Bildern und Videos im privaten Ordner behoben"
+    ],
+    "Rekorder": [
+      "Behoben: Der Aufnahmestatus wurde in der Benachrichtigungsleiste nicht aktualisiert, wenn eine Aufnahme pausiert wurde"
+    ],
+    "Datennutzung": [
+      "Neu: Modus für Tageskarte/Unlimited-Datenkarte. Tariftypen wie 大王卡, 米粉卡 und 天神卡 können eingestellt werden; Datenkorrektur ist genauer."
+    ],
+    "Sonstiges": [
+      "Systemleistung optimiert",
+      "Systemsicherheit und -stabilität verbessert"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Problem behoben, bei dem sich Ladeball und geschätzte Ladezeit auf dem Sperrbildschirm überlappen"
     ]
   },
   "logs_fr": {
+    "Écran de verrouillage, barre d’état, barre de notifications": [
+      "Correction du chevauchement entre la boule de charge et le temps de charge estimé sur l’écran de verrouillage"
+    ],
+    "Appareil photo": [
+      "Nouveau : Mode basse lumière amélioré",
+      "Nouveau : Vous pouvez filmer des vidéos à 960 ips"
+    ],
+    "Paramètres": [
+      "Réparé Impossible d'activer le point d'accès portable lorsque le nom du périphérique a été défini sur une longueur maximale"
+    ],
+    "Gestionnaire de fichiers": [
+      "Correction du problème d'ouverture des fichiers après avoir coupé des images et vidéos dans le dossier privé",
+      "Correction du problème où les vignettes ne se rafraîchissaient pas à temps dans certains cas",
+      "Correction du problème d’affichage incorrect des icônes sur l’écran de recherche",
+      "Correction du problème d'ouverture des fichiers après avoir coupé des images et vidéos dans le dossier privé"
+    ],
+    "Enregistreur": [
+      "Correction : l’état d’enregistrement n’était pas mis à jour dans la barre de notifications lors d’une pause"
+    ],
+    "Utilisation des données": [
+      "Nouveau : mode carte journalière/carte data illimitée. Types de forfaits comme 大王卡, 米粉卡 et 天神卡 configurables ; calibration des données plus précise."
+    ],
     "Autre": [
       "Performances système optimisées",
       "Sécurité et stabilité du système améliorées"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Correction du chevauchement entre la boule de charge et le temps de charge estimé sur l’écran de verrouillage"
     ]
   },
   "logs_it": {
+    "Schermata di blocco, barra di stato, barra delle notifiche": [
+      "Risolto il problema della sovrapposizione tra pallina di ricarica e tempo di ricarica stimato nella schermata di blocco"
+    ],
+    "Fotocamera": [
+      "Novità: Supporto alla fotografia notturna avanzata a mano",
+      "Novità: Ora puoi registrare video a 960 fps"
+    ],
+    "Impostazioni": [
+      "Risolto: Impossibile attivare l'hotspot personale quando il nome del dispositivo era impostato sulla lunghezza massima"
+    ],
+    "Gestione file": [
+      "Risolto il problema di apertura dei file dopo il taglio di immagini e video nella cartella privata",
+      "Risolto il problema per cui in alcuni casi le miniature non si aggiornavano in tempo",
+      "Risolto il problema di visualizzazione errata delle icone nella schermata di ricerca"
+    ],
+    "Registratore": [
+      "Correzione: lo stato di registrazione non veniva aggiornato nella barra delle notifiche quando una registrazione veniva messa in pausa"
+    ],
+    "Utilizzo dei dati": [
+      "Nuovo: modalità scheda giornaliera/scheda dati illimitati. È possibile impostare tipi di piano come 大王卡, 米粉卡 e 天神卡; calibrazione dati più precisa."
+    ],
     "Altro": [
       "Prestazioni di sistema ottimizzate",
       "Maggiore sicurezza e stabilità di sistema"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Risolto il problema della sovrapposizione tra pallina di ricarica e tempo di ricarica stimato nella schermata di blocco"
+    ],
+    "Gestore file": [
+      "Risolto il problema di apertura dei file dopo il taglio di immagini e video nella cartella privata"
     ]
   },
   "logs_es": {
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Se corrige la superposición entre el indicador de carga y el tiempo estimado de carga en la pantalla de bloqueo"
+    ],
+    "Cámara": [
+      "Nuevo: Compatibilidad con fotografía nocturna avanzada a mano",
+      "Nuevo: Ahora puedes grabar vídeos a 960 fps"
+    ],
+    "Ajustes": [
+      "Reparado: No se pudo activar el punto de acceso portátil cuando el nombre del dispositivo fue establecido a la máxima longitud"
+    ],
+    "Administrador de archivos": [
+      "Se corrigió el problema de apertura de archivos tras cortar imágenes y vídeos en la carpeta privada",
+      "Se corrige el problema por el que, en algunos casos, las miniaturas no se actualizaban a tiempo",
+      "Se corrigió el problema de visualización incorrecta de los iconos en la pantalla de búsqueda",
+      "Se corrigió el problema de apertura de archivos tras cortar imágenes y vídeos en la carpeta privada"
+    ],
+    "Grabadora": [
+      "Corrección: El estado de grabación no se actualizaba en la barra de notificaciones al pausar una grabación"
+    ],
+    "Uso de datos": [
+      "Nuevo: modo tarjeta diaria/tarjeta de datos ilimitados. Se pueden configurar tipos de plan como 大王卡, 米粉卡 y 天神卡; calibración de datos más precisa."
+    ],
     "Otros": [
       "Rendimiento del sistema optimizado",
       "Estabilidad y seguridad del sistema mejorada"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Se corrige la superposición entre el indicador de carga y el tiempo estimado de carga en la pantalla de bloqueo"
     ]
   },
   "logs_pt": {
+    "Tela de bloqueio, barra de status, barra de notificações": [
+      "Corrigido a sobreposição entre o indicador de carregamento e o tempo estimado de carregamento na tela de bloqueio"
+    ],
+    "Câmera": [
+      "Novo: Suporte para captura noturna avançada à mão",
+      "Novo: Agora você pode gravar vídeos a 960 fps"
+    ],
+    "Configurações": [
+      "Correção Não era possível ativar o hotspot portátil quando o nome do dispositivo era definido para o comprimento máximo"
+    ],
+    "Gerenciador de arquivos": [
+      "Corrigido o problema de abertura de arquivos após recortar imagens e vídeos na pasta privada",
+      "Corrigido o problema em que, em alguns casos, as miniaturas não eram atualizadas a tempo",
+      "Corrigido o problema de exibição incorreta dos ícones na tela de pesquisa",
+      "Corrigido o problema de abertura de arquivos após recortar imagens e vídeos na pasta privada"
+    ],
+    "Gravador": [
+      "Correção: o estado da gravação não era atualizado na barra de notificações ao pausar uma gravação"
+    ],
+    "Uso de dados": [
+      "Novo: modo cartão diário/cartão de dados ilimitados. É possível definir tipos de plano como 大王卡, 米粉卡 e 天神卡; calibração de dados mais precisa."
+    ],
     "Outros": [
       "Desempenho do sistema aprimorado",
       "Segurança e estabilidade do sistema aprimoradas"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Corrigido a sobreposição entre o indicador de carregamento e o tempo estimado de carregamento na tela de bloqueio"
     ]
   },
   "logs_tr": {
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Kilit ekranında şarj göstergesi ile tahmini şarj süresinin üst üste binmesi sorunu düzeltildi"
+    ],
+    "Kamera": [
+      "Yeni: Elde süper gece çekimi desteği",
+      "Yeni: Artık 960fps video çekebilirsiniz"
+    ],
+    "Ayarlar": [
+      "Onarım: Cihaz adı maksimum uzunlukta oluşturulduğunda kişisel bağlantı noktası açılamadı"
+    ],
+    "Dosya Yöneticisi": [
+      "Gizli klasördeki görselleri ve videoları kestikten sonra dosyaların açılması sorunu düzeltildi",
+      "Bazı durumlarda küçük resimlerin zamanında yenilenmemesi sorunu giderildi",
+      "Arama ekranındaki simgelerin yanlış görüntülenmesi sorunu giderildi",
+      "Gizli klasördeki görselleri ve videoları kestikten sonra dosyaların açılması sorunu düzeltildi"
+    ],
+    "Kayıt Cihazı": [
+      "Düzeltme: Kayıt duraklatıldığında kayıt durumu bildirim çubuğunda güncellenmiyordu"
+    ],
+    "Veri kullanımı": [
+      "Yeni: Günlük kart/sınırsız veri kartı modu. 大王卡, 米粉卡, 天神卡 gibi paket türleri ayarlanabilir; veri kalibrasyonu daha doğru."
+    ],
     "Diğer": [
       "Sistem performansı optimize edildi",
       "Sistem güvenliği ve kararlılığı geliştirildi"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Kilit ekranında şarj göstergesi ile tahmini şarj süresinin üst üste binmesi sorunu düzeltildi"
     ]
   },
   "logs_id": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "Layar kunci, bilah status, bilah notifikasi": [
+      "Memperbaiki tampilan bola pengisian daya dan perkiraan waktu pengisian daya yang tumpang tindih di layar kunci"
+    ],
+    "Kamera": [
+      "Baru: Dukungan pengambilan foto mode malam super dengan tangan",
+      "Baru: Sekarang Anda dapat merekam video 960fps"
+    ],
+    "Pengaturan": [
+      "Perbaikan Tidak dapat menghidupkan hotspot portabel saat nama perangkat disetel ke panjang maksimal"
+    ],
+    "Pengelola File": [
+      "Memperbaiki masalah pembukaan file setelah memotong gambar dan video di folder privat",
+      "Memperbaiki masalah thumbnail tidak diperbarui tepat waktu dalam beberapa kasus",
+      "Memperbaiki masalah ikon yang ditampilkan secara tidak normal di layar pencarian"
+    ],
+    "Perekam": [
+      "Perbaikan: Status perekaman tidak diperbarui di bilah notifikasi saat perekaman dijeda"
+    ],
+    "Penggunaan data": [
+      "Baru: Mode kartu harian/kartu data tak terbatas. Jenis paket seperti 大王卡, 米粉卡, dan 天神卡 dapat diatur; kalibrasi data lebih akurat."
+    ],
+    "Lainnya": [
+      "Performa sistem dioptimalkan",
+      "Keamanan dan stabilitas sistem ditingkatkan"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Memperbaiki tampilan bola pengisian daya dan perkiraan waktu pengisian daya yang tumpang tindih di layar kunci"
+    ],
+    "Pengelola Berkas": [
+      "Memperbaiki masalah pembukaan file setelah memotong gambar dan video di folder privat"
     ]
   },
   "logs_vi": {
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Đã sửa lỗi chồng lấn giữa bóng sạc và thời gian sạc dự kiến trên màn hình khóa"
+    ],
+    "Máy ảnh": [
+      "Mới: Hỗ trợ chụp ảnh chế độ ban đêm siêu nét bằng tay",
+      "Mới: Bạn có thể quay video 960fps"
+    ],
+    "Cài đặt": [
+      "Sửa lỗi: Không thể bật điểm phát sóng di động khi tên thiết bị được đặt ở độ dài tối đa"
+    ],
+    "Trình quản lý tệp": [
+      "Đã sửa lỗi mở tệp sau khi cắt ảnh và video trong thư mục riêng tư",
+      "Đã khắc phục sự cố hình thu nhỏ không được làm mới kịp thời trong một số trường hợp",
+      "Đã khắc phục sự cố biểu tượng hiển thị bất thường trên màn hình tìm kiếm",
+      "Đã sửa lỗi mở tệp sau khi cắt ảnh và video trong thư mục riêng tư"
+    ],
+    "Máy ghi âm": [
+      "Đã sửa: Trạng thái ghi âm không được cập nhật kịp thời trên thanh thông báo khi tạm dừng ghi âm"
+    ],
+    "Sử dụng dữ liệu": [
+      "Mới: Chế độ thẻ ngày/thẻ dữ liệu không giới hạn. Có thể đặt loại gói như 大王卡, 米粉卡, 天神卡; hiệu chỉnh dữ liệu chính xác hơn."
+    ],
     "Khác": [
       "Tối ưu hiệu suất hệ thống",
       "Cải thiện tính ổn định và bảo mật hệ thống"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Đã sửa lỗi chồng lấn giữa bóng sạc và thời gian sạc dự kiến trên màn hình khóa"
     ]
   },
   "logs_th": {
+    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
+      "แก้ไขปัญหาวงกลมชาร์จและเวลาชาร์จโดยประมาณแสดงทับซ้อนกันบนหน้าจอล็อก"
+    ],
+    "กล้อง": [
+      "ใหม่: รองรับการถ่ายภาพโหมดกลางคืนซูเปอร์แบบถือด้วยมือ",
+      "ใหม่: คุณสามารถถ่ายวิดีโอสโลว์โมชัน 960fps ได้แล้ว"
+    ],
+    "การตั้งค่า": [
+      "แก้ไข: ไม่สามารถเปิดฮอตสปอตแบบพกพาได้เมื่อตั้งชื่ออุปกรณ์เป็นความยาวสูงสุด"
+    ],
+    "ตัวจัดการไฟล์": [
+      "แก้ไขปัญหาการเปิดไฟล์ผิดปกติหลังจากตัดรูปภาพและวิดีโอในโฟลเดอร์ส่วนตัว",
+      "แก้ไขปัญหาที่ในบางกรณีรูปย่อไม่รีเฟรชทันเวลา",
+      "แก้ไขปัญหาการแสดงไอคอนบนหน้าจอค้นหาผิดปกติ",
+      "แก้ไขปัญหาการเปิดไฟล์ผิดปกติหลังจากตัดรูปภาพและวิดีโอในโฟลเดอร์ส่วนตัว"
+    ],
+    "เครื่องบันทึกเสียง": [
+      "แก้ไข: สถานะการบันทึกเสียงไม่ได้รับการอัปเดตในแถบการแจ้งเตือนเมื่อหยุดการบันทึกชั่วคราว"
+    ],
+    "การใช้ข้อมูล": [
+      "เพิ่มโหมดการ์ดรายวัน/การ์ดข้อมูลไม่จำกัด ตั้งค่าประเภทแพ็กเกจ เช่น 大王卡, 米粉卡, 天神卡 ได้ การปรับเทียบข้อมูลแม่นยำขึ้น"
+    ],
     "อื่นๆ": [
       "เพิ่มประสิทธิภาพของระบบ",
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "แก้ไขปัญหาวงกลมชาร์จและเวลาชาร์จโดยประมาณแสดงทับซ้อนกันบนหน้าจอล็อก"
     ]
   },
   "logs_ar": {
+    "شاشة القفل، شريط الحالة، شريط الإشعارات": [
+      "إصلاح مشكلة تداخل كرة الشحن ووقت الشحن المتوقع على شاشة القفل"
+    ],
+    "كاميرا": [
+      "جديد: دعم تصوير الوضع الليلي الفائق بالحمل باليد",
+      "جديد: يمكنك الآن تصوير مقاطع فيديو بالحركة البطيئة بمعدل 960 إطارًا في الثانية"
+    ],
+    "الإعدادات": [
+      "إصلاح: تعذّر تشغيل نقطة الاتصال المحمولة عند ضبط اسم الجهاز على الحد الأقصى للطول"
+    ],
+    "مدير الملفات": [
+      "إصلاح مشكلة فتح الملفات بشكل غير طبيعي بعد قص الصور ومقاطع الفيديو في المجلد الخاص",
+      "إصلاح مشكلة عدم تحديث الصور المصغرة في الوقت المناسب في بعض الحالات",
+      "إصلاح مشكلة عرض الأيقونات بشكل غير طبيعي في شاشة البحث",
+      "إصلاح مشكلة فتح الملفات بشكل غير طبيعي بعد قص الصور ومقاطع الفيديو في المجلد الخاص"
+    ],
+    "مسجل": [
+      "إصلاح: لم يتم تحديث حالة التسجيل في شريط الإشعارات عند إيقاف التسجيل مؤقتًا"
+    ],
+    "استخدام البيانات": [
+      "جديد: وضع بطاقة يومية/بطاقة بيانات غير محدودة. يمكن ضبط أنواع الباقات مثل 大王卡 و米粉卡 و天神卡؛ تصحيح البيانات أكثر دقة."
+    ],
     "أخرى": [
       "تحسين أداء النظام",
       "تحسين أمن واستقرار النظام"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "إصلاح مشكلة تداخل كرة الشحن ووقت الشحن المتوقع على شاشة القفل"
     ]
   },
   "logs_in": {
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
+      "लॉक स्क्रीन पर चार्जिंग बॉल और अनुमानित चार्जिंग समय के ओवरलैप होने की समस्या ठीक की गई"
+    ],
+    "कैमरा": [
+      "नया: हैंडहेल्ड सुपर नाइट शूटिंग फ़ंक्शन के लिए समर्थन",
+      "नया: अब आप 960fps वीडियो शूट कर सकते हैं"
+    ],
+    "सेटिंग्स": [
+      "Perbaikan: Tidak dapat mengaktifkan hotspot portabel saat nama perangkat diatur ke panjang maksimum"
+    ],
+    "फ़ाइल प्रबंधक": [
+      "निजी फ़ोल्डर में छवियों और वीडियो को काटने के बाद फ़ाइलें खोलने की समस्या ठीक की गई",
+      "कुछ स्थितियों में थंबनेल समय पर रीफ़्रेश न होने की समस्या ठीक की गई",
+      "खोज स्क्रीन पर आइकन के गलत तरीके से प्रदर्शित होने की समस्या ठीक की गई",
+      "निजी फ़ोल्डर में छवियों और वीडियो को काटने के बाद फ़ाइलें खोलने की समस्या ठीक की गई"
+    ],
+    "रिकॉर्डर": [
+      "समस्या ठीक की गई: रिकॉर्डिंग पॉज़ करने पर नोटिफ़िकेशन शेड में स्थिति तुरंत अपडेट नहीं होती थी"
+    ],
+    "डेटा उपयोग": [
+      "नया: दैनिक कार्ड/असीमित डेटा कार्ड मोड। 大王卡, 米粉卡, 天神卡 जैसे प्लान प्रकार सेट किए जा सकते हैं; डेटा कैलिब्रेशन अधिक सटीक।"
+    ],
     "अन्य": [
       "सिस्टम परफ़ॉर्मेंस ऑप्टिमाइज़ किया गया है",
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "लॉक स्क्रीन पर चार्जिंग बॉल और अनुमानित चार्जिंग समय के ओवरलैप होने की समस्या ठीक की गई"
     ]
   },
   "logs_ug": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "كامېرا": [
+      "يېڭى: قولدا تۇتۇپ ئالىي كېچە كۆرۈنۈشىنى سۈرەتكە تارتىش ئىقتىدارى قوشۇلدى",
+      "يېڭى: 960 كادرلىق ئاستا ھەرىكەتلىك سىن ئېلىش ئىقتىدارى قوشۇلدى"
+    ],
+    "تەڭشەك": [
+      "ئوڭشاش: ئۈسكۈنىنىڭ نامى ئەڭ چوڭ ئۇزۇنلۇققا تەڭشەلگەندە كۆچمە ھوتسپوتنى ئاچقىلى بولمىدى"
+    ],
+    "ئاۋاز ئالغۇ": [
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
+    ],
+    "باشقىلىرى": [
+      "سىستېمىنىڭ مۇقىملىقىنى ئاشۇرۇش",
+      "سىستېما راۋانلىقىنى ئەلالاشتۇرۇش"
     ]
   },
   "logs_bo": {
-    "Other": [
+    "པར་ཆས": [
+      "New: Enhanced low light mode",
+      "New: You can shoot 960fps videos now"
+    ],
+    "Settings": [
+      "Fix: Couldn't turn on portable hotspot when device name was set to maximum length"
+    ],
+    "སྒྲ་འཇུག་ཆས": [
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
+    ],
+    "གཞན།": [
       "Optimized system performance",
       "Improved system security and stability"
     ]

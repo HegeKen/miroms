@@ -1,335 +1,404 @@
 {
   "logs_zh": {
     "录音机": [
+      "修复 暂停录音后无法及时更新到状态栏的问题",
       "修复 暂停录音后无法及时更新到状态栏的问题"
+    ],
+    "系統": [
+      "修复 更新Android安全补丁"
+    ],
+    "电话": [
+      "修复 视频通话下功能区“切换摄像头”可能显示不完整的问题",
+      "修复 电话会议时无法发送短信"
+    ],
+    "锁屏、状态栏、通知栏": [
+      "修复 返回通话和时间重叠",
+      "修复 通知无法关闭悬浮",
+      "修复 长截屏无法下拉到底"
     ]
   },
   "logs_en": {
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused",
+      "Restore Pausing the ongoing recording wasn't reflected in the status bar"
     ]
   },
   "logs_zh_tw": {
+    "錄音機": [
+      "修復 暫停錄音後無法即時更新到狀態欄的問題",
+      "修復 暫停錄音後無法即時更新到狀態欄的問題"
+    ],
     "系統": [
       "修復 更新Android安全性修補程式等級"
     ],
     "電話": [
-      "修復 視訊電話下功能區^切換鏡頭^可能顯示不完整的問題",
+      "修復 視訊電話下功能區'切換鏡頭'可能顯示不完整的問題",
       "修復 電話會議時無法發送簡訊"
     ],
     "解鎖畫面、狀態欄、通知欄": [
       "修復 返回通話和時間重疊",
       "修復 通知無法關閉懸浮",
       "修復 長截圖無法下拉到底"
-    ],
-    "錄音機": [
-      "修復 暫停錄音後無法即時更新到狀態欄的問題"
     ]
   },
   "logs_ja": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "レコーダー": [
+      "修正: 録音を一時停止した際、通知シェードの録音状態が更新されない問題"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "システム": [
+      "修正: Android セキュリティパッチを更新"
+    ],
+    "電話": [
+      "ビデオ通話中に機能エリアの「カメラを切り替え」が不完全に表示される場合がある問題を修正",
+      "電話会議中にSMSを送信できない問題を修正しました。"
     ],
     "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Scrolling screenshots didn^t always work properly"
+      "通話に戻ると時刻の重なりを修正",
+      "通知からフローティングウィンドウを閉じられない問題を修正",
+      "長いスクリーンショットで最後までスクロールできない問題を修正"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "録音を一時停止した後、ステータスバーにすぐ反映されない問題を修正"
     ]
   },
   "logs_ko": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "녹음기": [
+      "수정: 녹음을 일시중지했을 때 알림 창의 녹음 상태가 업데이트되지 않던 문제"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "시스템": [
+      "수정: Android 보안 패치 업데이트"
+    ],
+    "전화": [
+      "영상 통화 중 기능 영역의 \"카메라 전환\"이 불완전하게 표시될 수 있는 문제를 수정했습니다",
+      "전화 회의 중 SMS를 보낼 수 없는 문제를 수정했습니다."
     ],
     "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Scrolling screenshots didn^t always work properly"
+      "통화로 돌아가기와 시간 겹침 수정",
+      "알림에서 플로팅 창을 닫을 수 없는 문제를 수정",
+      "긴 스크린샷에서 끝까지 스크롤할 수 없는 문제 수정"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "녹음을 일시중지한 후 상태 표시줄에 제때 반영되지 않는 문제를 수정"
     ]
   },
   "logs_ru": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Диктофон": [
+      "Fix: Факт остановки записи не отображался в строке состояния вовремя"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Система": [
+      "Исправление: обновлён патч безопасности Android"
+    ],
+    "Телефон": [
+      "Исправлена проблема, из-за которой «Переключить камеру» в области функций во время видеовызовов мог отображаться не полностью",
+      "Исправлена проблема, из-за которой не удавалось отправить SMS во время конференц-звонков."
     ],
     "Lockscreen, Status Bar, Notification Bar": [
       "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Scrolling screenshots didn^t always work properly"
+      "Исправлено: невозможно закрыть плавающее окно из уведомления",
+      "Fix: Scrolling screenshots didn't always work properly"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Исправлена проблема, из-за которой строка состояния не обновлялась вовремя после приостановки записи"
     ]
   },
   "logs_uk": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Диктофон": [
+      "Виправлено: стан запису не оновлювався в панелі сповіщень під час паузи запису"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Система": [
+      "Виправлено: оновлено патч безпеки Android"
+    ],
+    "Телефон": [
+      "Виправлено проблему, через яку «Перемкнути камеру» в області функцій під час відеовикликів могло відображатися не повністю",
+      "Виправлено проблему, через яку не вдавалося надіслати SMS під час конференц-дзвінків."
     ],
     "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Scrolling screenshots didn^t always work properly"
+      "Виправлено накладання повернення до виклику та часу",
+      "Виправлено: неможливо закрити плаваюче вікно зі сповіщення",
+      "Виправлено: не вдається прокрутити довгий знімок екрана до кінця"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Виправлено проблему, через яку рядок стану не оновлювався вчасно після призупинення запису"
     ]
   },
   "logs_pl": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Rejestrator": [
+      "Poprawka: stan nagrywania nie był aktualizowany na pasku powiadomień po wstrzymaniu nagrywania"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "System": [
+      "Naprawiono: zaktualizowano poprawkę zabezpieczeń Android"
+    ],
+    "Telefon": [
+      "Naprawiono problem, w którym „Przełącz kamerę” w obszarze funkcji podczas połączeń wideo mógł być wyświetlany niekompletnie",
+      "Naprawiono problem z wysyłaniem SMS-ów podczas konferencji telefonicznych."
     ],
     "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Scrolling screenshots didn^t always work properly"
+      "Naprawiono nakładanie się powrotu do połączenia i czasu",
+      "Naprawiono: nie można było zamknąć okna pływającego z powiadomienia",
+      "Naprawiono: nie można przewinąć do końca w długim zrzucie ekranu"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Naprawiono problem z nieterminową aktualizacją paska stanu po wstrzymaniu nagrywania"
     ]
   },
   "logs_de": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Rekorder": [
+      "Behoben: Der Aufnahmestatus wurde in der Benachrichtigungsleiste nicht aktualisiert, wenn eine Aufnahme pausiert wurde"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "System": [
+      "Behoben: Android-Sicherheitspatch aktualisiert"
+    ],
+    "Telefon": [
+      "Behebung eines Problems, bei dem „Kamera wechseln“ im Funktionsbereich während Videoanrufen möglicherweise unvollständig angezeigt wurde",
+      "Behoben: SMS konnte während Telefonkonferenzen nicht gesendet werden."
     ],
     "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Scrolling screenshots didn^t always work properly"
+      "Überlappung zwischen Rückkehr zum Anruf und Uhrzeit behoben",
+      "Behoben: Schwebefenster ließ sich nicht über die Benachrichtigung schließen",
+      "Behoben: Beim langen Screenshot kann nicht bis zum Ende gescrollt werden"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Behebt das Problem, dass die Statusleiste nach dem Pausieren einer Aufnahme nicht rechtzeitig aktualisiert wurde"
     ]
   },
   "logs_fr": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Enregistreur": [
+      "Correction : l’état d’enregistrement n’était pas mis à jour dans la barre de notifications lors d’une pause"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Système": [
+      "Correction : correctif de sécurité Android mis à jour"
+    ],
+    "Téléphone": [
+      "Correction d’un problème où « Changer d’appareil photo » dans la zone de fonctions pendant les appels vidéo pouvait s’afficher de manière incomplète",
+      "Correction du problème empêchant l’envoi de SMS lors des conférences téléphoniques."
     ],
     "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Scrolling screenshots didn^t always work properly"
+      "Correction du chevauchement entre le retour à l'appel et l'heure",
+      "Corrigé : impossible de fermer la fenêtre flottante depuis la notification",
+      "Corrigé : impossible de faire défiler jusqu'en bas lors d'une capture d'écran longue"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Correction du problème de mise à jour tardive de la barre d’état après la mise en pause d’un enregistrement"
     ]
   },
   "logs_it": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Registratore": [
+      "Correzione: lo stato di registrazione non veniva aggiornato nella barra delle notifiche quando una registrazione veniva messa in pausa"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Sistema": [
+      "Corretto: aggiornata la patch di sicurezza Android"
+    ],
+    "Telefono": [
+      "Risolto un problema per cui \"Cambia fotocamera\" nell'area funzioni durante le videochiamate poteva essere visualizzato in modo incompleto",
+      "Risolto il problema che impediva l'invio di SMS durante le chiamate conference."
     ],
     "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Scrolling screenshots didn^t always work properly"
+      "Corretta la sovrapposizione tra ritorno alla chiamata e ora",
+      "Corretto: impossibile chiudere la finestra flottante dalla notifica",
+      "Corretto: impossibile scorrere fino in fondo nella cattura schermata lunga"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Risolve il problema per cui la barra di stato non veniva aggiornata tempestivamente dopo la pausa della registrazione"
     ]
   },
   "logs_es": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Grabadora": [
+      "Corrección: El estado de grabación no se actualizaba en la barra de notificaciones al pausar una grabación"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Sistema": [
+      "Corrección: parche de seguridad de Android actualizado"
+    ],
+    "Teléfono": [
+      "Se ha corregido un problema por el que \"Cambiar cámara\" en el área de funciones durante las videollamadas podía mostrarse de forma incompleta",
+      "Se ha corregido el problema que impedía enviar SMS durante las llamadas de conferencia."
     ],
     "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Scrolling screenshots didn^t always work properly"
+      "Corregida la superposición entre volver a la llamada y la hora",
+      "Corregido: no se podía cerrar la ventana flotante desde la notificación",
+      "Corregido: no se puede desplazar hasta el final en la captura de pantalla larga"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Corrige el problema por el que la barra de estado no se actualizaba a tiempo tras pausar la grabación"
     ]
   },
   "logs_pt": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Gravador": [
+      "Correção: o estado da gravação não era atualizado na barra de notificações ao pausar uma gravação"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Sistema": [
+      "Correção: patch de segurança do Android atualizado"
+    ],
+    "Telefone": [
+      "Corrigido o problema em que \"Alternar câmera\" na área de funções durante chamadas de vídeo podia ser exibido de forma incompleta",
+      "Corrigido o problema que impedia o envio de SMS durante chamadas em conferência."
     ],
     "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Scrolling screenshots didn^t always work properly"
+      "Corrigida a sobreposição entre retornar à chamada e hora",
+      "Corrigido: não era possível fechar a janela flutuante pela notificação",
+      "Corrigido: não é possível rolar até o fim na captura de tela longa"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Corrige o problema de a barra de status não ser atualizada a tempo após pausar a gravação"
     ]
   },
   "logs_tr": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Kayıt Cihazı": [
+      "Düzeltme: Kayıt duraklatıldığında kayıt durumu bildirim çubuğunda güncellenmiyordu"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Sistem": [
+      "Düzeltme: Android güvenlik yaması güncellendi"
+    ],
+    "Telefon": [
+      "Görüntülü aramalar sırasında işlev alanındaki \"Kamerayı değiştir\" öğesinin eksik görüntülenebilmesi sorunu giderildi",
+      "Konferans görüşmeleri sırasında SMS gönderilememesi sorunu giderildi."
     ],
     "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Scrolling screenshots didn^t always work properly"
+      "Aramaya dön ve saat arasındaki örtüşme düzeltildi",
+      "Düzeltildi: bildirimden yüzen pencere kapatılamıyordu",
+      "Düzeltme: Uzun ekran görüntüsünde sona kadar kaydırılamıyor"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Kaydı duraklattıktan sonra durum çubuğunun zamanında güncellenmemesi sorunu düzeltildi"
     ]
   },
   "logs_id": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Perekam": [
+      "Perbaikan: Status perekaman tidak diperbarui di bilah notifikasi saat perekaman dijeda"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Sistem": [
+      "Perbaikan: Patch keamanan Android diperbarui"
+    ],
+    "Telepon": [
+      "Memperbaiki masalah di mana \"Ganti kamera\" di area fungsi selama panggilan video mungkin ditampilkan tidak lengkap",
+      "Memperbaiki masalah tidak dapat mengirim SMS saat panggilan konferensi."
     ],
     "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Scrolling screenshots didn^t always work properly"
+      "Memperbaiki tumpang tindih antara kembali ke panggilan dan waktu",
+      "Diperbaiki: jendela mengambang tidak dapat ditutup dari notifikasi",
+      "Memperbaiki tangkapan layar panjang tidak bisa digulir sampai bawah"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Memperbaiki masalah status bar tidak diperbarui tepat waktu setelah rekaman dijeda"
     ]
   },
   "logs_vi": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Máy ghi âm": [
+      "Đã sửa: Trạng thái ghi âm không được cập nhật kịp thời trên thanh thông báo khi tạm dừng ghi âm"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Hệ thống": [
+      "Đã sửa: Đã cập nhật bản vá bảo mật Android"
+    ],
+    "Điện thoại": [
+      "Đã khắc phục sự cố \"Chuyển camera\" trong khu vực chức năng khi gọi video có thể hiển thị không đầy đủ",
+      "Đã khắc phục sự cố không thể gửi SMS trong cuộc gọi hội nghị."
     ],
     "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Scrolling screenshots didn^t always work properly"
+      "Đã sửa lỗi chồng chéo giữa quay lại cuộc gọi và thời gian",
+      "Đã sửa: không thể đóng cửa sổ nổi từ thông báo",
+      "Đã sửa: không thể cuộn xuống cuối trong ảnh chụp màn hình dài"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Khắc phục sự cố thanh trạng thái không được cập nhật kịp thời sau khi tạm dừng ghi âm"
     ]
   },
   "logs_th": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "เครื่องบันทึกเสียง": [
+      "แก้ไข: สถานะการบันทึกเสียงไม่ได้รับการอัปเดตในแถบการแจ้งเตือนเมื่อหยุดการบันทึกชั่วคราว"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "ระบบ": [
+      "แก้ไข: อัปเดตแพตช์ความปลอดภัย Android แล้ว"
+    ],
+    "โทรศัพท์": [
+      "แก้ไขปัญหาที่ \"สลับกล้อง\" ในพื้นที่ฟังก์ชันระหว่างการโทรวิดีโออาจแสดงไม่สมบูรณ์",
+      "แก้ไขปัญหาไม่สามารถส่ง SMS ระหว่างการประชุมทางโทรศัพท์ได้"
     ],
     "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Scrolling screenshots didn^t always work properly"
+      "แก้ไขการทับซ้อนระหว่างการกลับไปที่การโทรและเวลา",
+      "แก้ไข: ไม่สามารถปิดหน้าต่างลอยจากการแจ้งเตือน",
+      "แก้ไขปัญหาไม่สามารถเลื่อนลงจนสุดในการจับภาพหน้าจอยาว"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "แก้ไขปัญหาที่แถบสถานะไม่ได้รับการอัปเดตทันเวลาหลังหยุดบันทึกชั่วคราว"
     ]
   },
   "logs_ar": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "مسجل": [
+      "إصلاح: لم يتم تحديث حالة التسجيل في شريط الإشعارات عند إيقاف التسجيل مؤقتًا"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "النظام": [
+      "إصلاح: تم تحديث تصحيح أمان Android"
+    ],
+    "الهاتف": [
+      "إصلاح مشكلة قد تؤدي إلى عرض زر \"تبديل الكاميرا\" في منطقة الوظائف أثناء مكالمات الفيديو بشكل غير مكتمل",
+      "إصلاح مشكلة عدم إمكانية إرسال رسائل SMS أثناء المكالمات الجماعية."
     ],
     "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Scrolling screenshots didn^t always work properly"
+      "إصلاح تداخل العودة إلى المكالمة والوقت",
+      "تم الإصلاح: تعذّر إغلاق النافذة العائمة من الإشعار",
+      "تم الإصلاح: تعذّر التمرير إلى الأسفل في لقطة الشاشة الطويلة"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "إصلاح مشكلة عدم تحديث شريط الحالة في الوقت المناسب بعد إيقاف التسجيل مؤقتًا"
     ]
   },
   "logs_in": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "रिकॉर्डर": [
+      "समस्या ठीक की गई: रिकॉर्डिंग पॉज़ करने पर नोटिफ़िकेशन शेड में स्थिति तुरंत अपडेट नहीं होती थी"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "सिस्टम": [
+      "ठीक किया गया: Android सुरक्षा पैच अपडेट किया गया"
+    ],
+    "फ़ोन": [
+      "वीडियो कॉल के दौरान फ़ंक्शन क्षेत्र में \"कैमरा बदलें\" के अधूरा दिखाए जाने की समस्या को ठीक किया गया",
+      "कॉन्फ़्रेंस कॉल के दौरान SMS न भेज पाने की समस्या ठीक की गई।"
     ],
     "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Scrolling screenshots didn^t always work properly"
+      "कॉल पर वापस जाने और समय के ओवरलैप को ठीक किया गया",
+      "ठीक किया गया: सूचना से फ़्लोटिंग विंडो बंद नहीं हो सकती थी",
+      "ठीक किया गया: लंबे स्क्रीनशॉट में नीचे तक स्क्रॉल नहीं किया जा सकता"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "रिकॉर्डिंग पॉज़ करने के बाद स्टेटस बार समय पर अपडेट न होने की समस्या ठीक की गई"
     ]
   },
   "logs_ug": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "ئاۋاز ئالغۇ": [
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "سىستېما": [
+      "Android بىخەتەرلىك ياماقىنى يېڭىلاشنى تۈزىتىش"
+    ],
+    "تېلېفون": [
+      "سىنلىق سۆھبەت جەريانىدا ئىقتىدار رايونىدىكى «كامېرا ئالماشتۇرۇش» تولۇق كۆرسىتىلمەسلىك مەسىلىسىنى تۈزەتتى.",
+      "تېلېفون يىغىنى جەريانىدا SMS ئەۋەتەلمەسلىك مەسىلىسى تۈزىتىلدى."
     ],
     "Lockscreen, Status Bar, Notification Bar": [
       "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Scrolling screenshots didn^t always work properly"
+      "Fix: Couldn't restrict floating notifications",
+      "ئۇزۇن ئېكران رەسىمىنى تۆۋەنگە تارتىپ ئاخىرىغىچە يەتكۈزگىلى بولماسلىق مەسىلىسى تۈزىتىلدى"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
     ]
   },
   "logs_bo": {
-    "System": [
+    "སྒྲ་འཇུག་ཆས": [
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
+    ],
+    "མ་ལག": [
       "Fix: Updated Android Security Patch"
     ],
-    "Phone": [
+    "ཁ་པར": [
       "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+      "ཁ་པར་ཚོགས་འདུའི་སྐབས་སུ་འཕྲིན་ཐུང་གཏོང་མི་ཐུབ་པ་སྐྱོན་བཟོས།"
     ],
     "Lockscreen, Status Bar, Notification Bar": [
       "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Scrolling screenshots didn^t always work properly"
+      "Fix: Couldn't restrict floating notifications",
+      "Fix: Scrolling screenshots didn't always work properly"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
     ]
   }
 }

@@ -1,6 +1,7 @@
 {
   "logs_zh": {
     "电话": [
+      "修复 挂断电话慢问题",
       "修复 挂断电话慢问题"
     ],
     "锁屏、状态栏、通知栏": [
@@ -11,49 +12,81 @@
       "修复 来电悬浮条和通话绿条同时存在情况",
       "修复 个别情况下人脸提示未及时消失的问题",
       "修复 人脸解锁数据录入过快问题",
+      "修复 横屏状态下未及时展示低电量悬浮通知的问题",
+      "新增 人脸解锁成功并停留在锁屏上时，可通过指纹进入桌面的功能",
+      "新增 系统主题下，锁屏时钟支持三种自定义样式，可在锁屏高级设置中修改",
+      "新增 人脸解锁成功后停留在萤幕锁定的功能，可在设定页面的'人脸资料管理'中开启",
+      "新增 锁屏页面支持禁止下拉通知栏",
+      "优化 人脸解锁成功率",
+      "修复 来电悬浮条和通话绿条同时存在情况",
+      "修复 下拉状态栏开启或关闭同步，同步界面不刷新问题",
+      "修复 个别情况下人脸提示未即时消失的问题",
+      "修复 人脸解锁资料录制过快的问题",
       "修复 横屏状态下未及时展示低电量悬浮通知的问题"
     ],
     "相机": [
       "新增 AI相机场景：月亮模式、塔、合影",
+      "修复 录像下退出重新进入必现相机闪退",
+      "新增 AI相机场景：月亮模式、塔、合影",
       "修复 录像下退出重新进入必现相机闪退"
     ],
     "小米云服务": [
-      "优化 云服务首页重新设计，可用空间显示更加直观"
+      "优化 云服务首页重新设计，可用空间显示更加直观",
+      "优化 云服务新版首页，云空间信息显示更清晰"
+    ],
+    "系统": [
+      "优化 更新谷歌安全补丁（2019#5），提升系统安全性"
     ]
   },
   "logs_en": {
     "Phone": [
+      "Fix: Ending calls took longer time than expected",
       "Fix: Ending calls took longer time than expected"
     ],
     "Lockscreen, status bar, Notification shade": [
       "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
       "New: You can stay on the Lock screen after your face has been recognized. You can turn on this feature in Settings > Lock screen & password > Manage face data.",
       "New: You can restrict opening Notification shade on the Lock screen now",
       "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Face unlock prompts didn^t disappear on time in some cases",
+      "Fix: Face unlock prompts didn't disappear on time in some cases",
       "Fix: Face data was recorded too fast",
-      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode"
+      "Fix: Battery-related floating notifications weren't displayed correctly in landscape mode"
     ],
     "Camera": [
       "New: New modes for AI camera",
       "Fix: Camera force closed when the app was closed and opened again in the Video mode"
     ],
     "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!",
+      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!"
+    ],
+    "System": [
+      "Optimization: Updated Android Security Patch to May 2019. Increased system security."
     ]
   },
   "logs_zh_tw": {
+    "電話": [
+      "修復 掛斷電話較慢的問題",
+      "修復 掛斷電話較慢的問題"
+    ],
+    "相機": [
+      "新增 AI相機場景：月亮模式、高塔、合影",
+      "修復 錄像下退出重新進入必現相機閃退",
+      "新增 AI相機場景：月亮模式、高塔、合影",
+      "修復 錄像下退出重新進入必現相機閃退"
+    ],
+    "小米雲服務": [
+      "優化 雲服務首頁重新設計，雲端可用空間顯示更加直觀",
+      "優化 雲服務首頁重新設計，雲端可用空間顯示更加直觀"
+    ],
     "系統": [
       "優化 更新Android安全性修補程式等級(2019#5)，提升系統安全性"
-    ],
-    "電話": [
-      "修復 掛斷電話較慢的問題"
     ],
     "解鎖畫面、狀態欄、通知欄": [
       "新增 人臉解鎖成功並停留在鎖屏上時，可通過指紋進入桌面的功能",
       "新增 系統主題下，鎖屏時鐘支援三種自訂型式，可在鎖屏進階設定中修改",
-      "新增 人臉解鎖成功後停留在螢幕鎖定的功能，可在設定頁面的^人臉資料管理^中開啟",
+      "新增 人臉解鎖成功後停留在螢幕鎖定的功能，可在設定頁面的'人臉資料管理'中開啟",
       "新增 螢幕鎖定畫面支援禁止下拉狀態欄",
       "優化 人臉解鎖成功率",
       "修復 來電懸浮條和通話綠條同時存在的情況",
@@ -61,75 +94,87 @@
       "修復 個別情況下人臉提示未即時消失的問題",
       "修復 人臉解鎖資料錄製過快的問題",
       "修復 橫向螢幕狀況下未即時顯示低電量懸浮通知的問題"
-    ],
-    "相機": [
-      "新增 AI相機場景：月亮模式、高塔、合影",
-      "修復 錄像下退出重新進入必現相機閃退"
-    ],
-    "小米雲服務": [
-      "優化 雲服務首頁重新設計，雲端可用空間顯示更加直觀"
     ]
   },
   "logs_ja": {
-    "System": [
-      "Optimization: Updated Android Security Patch to May 2019. Increased system security."
+    "電話": [
+      "修正: 通話終了に予想以上に時間がかかる問題",
+      "修正: 通話終了に想定より時間がかかる問題"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected"
+    "カメラ": [
+      "AIカメラの新シーン：月モード、塔、集合写真",
+      "修正: ビデオモードで終了して再度開くとカメラが強制終了する問題",
+      "AIカメラの新シーン：月モード、塔、集合写真",
+      "動画撮影中に終了して再度開くと必ずカメラがクラッシュする問題を修正"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+    "Xiaomi クラウドサービス": [
+      "最適化: クラウドサービスのホームページを再設計し、空き容量がより分かりやすく表示されるようになりました。",
+      "最適化：Mi Cloudのスタートページを再設計しました。より見やすくなりました"
+    ],
+    "システム": [
+      "最適化: Google セキュリティ パッチ（2019#5）を更新し、システムの安全性を向上。"
+    ],
+    "ロック画面、ステータスバー、通知シェード": [
+      "新機能: 顔認証でロック解除に成功しロック画面に留まった場合、指紋でホーム画面に進めるようになりました",
+      "新規: システムテーマでは、ロック画面の時計が3種類のカスタムスタイルに対応し、ロック画面の詳細設定で変更できます。",
       "New: You can stay on the Lock screen after your face has been recognized. You can turn on this feature in Settings > Lock screen & password > Manage face data.",
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Optimization: Face unlock efficiency",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Face unlock prompts didn^t disappear on time in some cases",
+      "新規: ロック画面で通知シェードを下にスワイプして開くことを禁止できるようになりました",
+      "最適化：顔認証の成功率",
+      "修正: 着信のフローティングバーと通話の緑色バーが同時に表示される問題。",
+      "修正: 通知シェードで同期をオン/オフにした際、同期画面が更新されない問題",
+      "Fix: Face unlock prompts didn't disappear on time in some cases",
       "Fix: Face data was recorded too fast",
-      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode"
-    ],
-    "Camera": [
-      "New: New modes for AI camera",
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+      "横向き時に低バッテリーのフローティング通知がすぐに表示されない問題を修正"
     ]
   },
   "logs_ko": {
-    "System": [
-      "Optimization: Updated Android Security Patch to May 2019. Increased system security."
+    "전화": [
+      "수정: 통화 종료가 예상보다 오래 걸리는 문제",
+      "수정: 통화 종료가 예상보다 오래 걸리는 문제"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected"
+    "카메라": [
+      "AI 카메라 새 장면: 달 모드, 탑, 단체 사진",
+      "수정: 동영상 모드에서 앱을 종료했다가 다시 열면 카메라가 강제 종료되는 문제",
+      "AI 카메라 새 장면: 달 모드, 탑, 단체 사진",
+      "동영상 촬영 중 종료 후 다시 진입하면 항상 카메라가 강제 종료되는 문제 수정"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+    "Xiaomi 클라우드 서비스": [
+      "최적화: 클라우드 서비스 홈페이지를 재설계하여 사용 가능한 공간이 더 직관적으로 표시됩니다.",
+      "최적화: Mi Cloud 새 홈페이지가 최적화되어 클라우드 공간 정보가 더 명확하게 표시됩니다."
+    ],
+    "시스템": [
+      "최적화: Google 보안 패치(2019#5) 업데이트, 시스템 보안 강화."
+    ],
+    "잠금화면, 상태 바, 알림 바": [
+      "새 기능: 얼굴 인식으로 잠금 해제에 성공한 후 잠금 화면에 머무를 때 지문으로 홈 화면에 들어갈 수 있습니다",
+      "새 기능: 시스템 테마에서 잠금 화면 시계가 3가지 사용자 지정 스타일을 지원하며, 잠금 화면 고급 설정에서 변경할 수 있습니다.",
       "New: You can stay on the Lock screen after your face has been recognized. You can turn on this feature in Settings > Lock screen & password > Manage face data.",
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Optimization: Face unlock efficiency",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Face unlock prompts didn^t disappear on time in some cases",
+      "새 기능: 잠금 화면에서 알림 패널을 아래로 내려 여는 것을 금지할 수 있습니다",
+      "얼굴 잠금 해제 성공률 최적화",
+      "수정: 수신 전화 플로팅 바와 통화 녹색 바가 동시에 표시되는 문제.",
+      "수정: 알림창에서 동기화를 켜거나 끌 때 동기화 화면이 새로 고쳐지지 않던 문제",
+      "Fix: Face unlock prompts didn't disappear on time in some cases",
       "Fix: Face data was recorded too fast",
-      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode"
-    ],
-    "Camera": [
-      "New: New modes for AI camera",
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+      "가로 모드에서 배터리 부족 플로팅 알림이 제때 표시되지 않는 문제 수정"
     ]
   },
   "logs_ru": {
+    "Телефон": [
+      "Исправлено: Завершение вызова выполнялось слишком долго",
+      "Исправлено: Завершение вызова выполнялось слишком долго"
+    ],
+    "Камера": [
+      "Новое: Поддержка новых режимов камеры с ИИ",
+      "Исправлено: Некорректное завершение работы приложения Камера в режиме видеосъемки при закрытии приложения и его повторном открытии",
+      "Новое: Поддержка новых режимов камеры с ИИ",
+      "Исправлено: Некорректное завершение работы приложения Камера в режиме видеосъемки при закрытии приложения и его повторном открытии"
+    ],
+    "Облачный сервис Xiaomi": [
+      "Оптимизация: Мы переработали начальную страницу Mi Cloud. Теперь она выглядит намного лучше!",
+      "Оптимизация: Мы переработали начальную страницу Mi Cloud. Теперь она выглядит намного лучше!"
+    ],
     "Система": [
       "Оптимизация: Обновление системы безопасности Android (может 2019 года). Улучшена безопасность системы."
-    ],
-    "Телефон": [
-      "Исправлено: Завершение вызова выполнялось слишком долго"
     ],
     "Экран блокировки, строка состояния, шторка уведомлений": [
       "Новое: Используйте отпечаток пальца, чтобы перейти на рабочий стол после того, как вы разблокировали устройство при помощи данных лица и остались на экране блокировки",
@@ -142,156 +187,180 @@
       "Исправлено: В некоторых случаях подсказки при разблокировке по лицу не исчезали вовремя",
       "Исправлено: Данные лица записывались слишком быстро",
       "Исправлено: Всплывающие уведомления, связанные с аккумулятором, не отображались правильно в режиме альбомной ориентации"
-    ],
-    "Камера": [
-      "Новое: Поддержка новых режимов камеры с ИИ",
-      "Исправлено: Некорректное завершение работы приложения Камера в режиме видеосъемки при закрытии приложения и его повторном открытии"
-    ],
-    "Mi Cloud": [
-      "Оптимизация: Мы переработали начальную страницу Mi Cloud. Теперь она выглядит намного лучше!"
     ]
   },
   "logs_uk": {
-    "System": [
-      "Optimization: Updated Android Security Patch to May 2019. Increased system security."
+    "Телефон": [
+      "Виправлено: Завершення викликів тривало довше, ніж очікувалося",
+      "Виправлено: завершення викликів тривало довше, ніж очікувалося"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected"
+    "Камера": [
+      "Нові сцени AI-камери: режим Місяця, вежа, групове фото",
+      "Виправлено: Камера аварійно закривається після виходу та повторного входу в режимі відео",
+      "Нові сцени AI-камери: режим Місяця, вежа, групове фото",
+      "Виправлено збій камери, який щоразу виникав під час виходу та повторного входу в режим відеозапису"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+    "Хмарний сервіс Xiaomi": [
+      "Оптимізація: головну сторінку хмарного сервісу перероблено, доступний простір тепер відображається більш наочно.",
+      "Оптимізація: оптимізовано нову головну сторінку Mi Cloud, інформація про хмарний простір відображається чіткіше."
+    ],
+    "Система": [
+      "Оптимізація: Оновлено патч безпеки Google (2019#5), підвищено безпеку системи."
+    ],
+    "Екран блокування, рядок стану, панель сповіщень": [
+      "Нове: Використовувати відбиток пальця для переходу на головний екран після успішного розблокування обличчям із затримкою на екрані блокування",
+      "Нове: у системних темах годинник екрана блокування підтримує три власні стилі, які можна змінити в розширених налаштуваннях екрана блокування.",
       "New: You can stay on the Lock screen after your face has been recognized. You can turn on this feature in Settings > Lock screen & password > Manage face data.",
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Optimization: Face unlock efficiency",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Face unlock prompts didn^t disappear on time in some cases",
+      "Нове: додано підтримку заборони відкриття панелі сповіщень на екрані блокування",
+      "Оптимізація успішності розблокування за обличчям",
+      "Виправлено: плаваюча панель вхідного виклику та зелена смуга виклику відображалися одночасно.",
+      "Виправлено: сторінка синхронізації не оновлювалася, коли синхронізацію вмикали або вимикали в панелі сповіщень",
+      "Fix: Face unlock prompts didn't disappear on time in some cases",
       "Fix: Face data was recorded too fast",
-      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode"
-    ],
-    "Camera": [
-      "New: New modes for AI camera",
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+      "Виправлено проблему, коли плаваюче сповіщення про низький заряд батареї не відображалося вчасно в горизонтальному режимі"
     ]
   },
   "logs_pl": {
+    "Telefon": [
+      "Poprawka: Zakończenie połączeń trwało dłużej niż oczekiwano",
+      "Naprawiono: Zakończenie połączeń trwało dłużej niż oczekiwano"
+    ],
+    "Aparat": [
+      "Nowe sceny aparatu AI: tryb Księżyca, wieża, zdjęcie grupowe",
+      "Naprawiono: Aparat zamyka się awaryjnie przy wyjściu i ponownym wejściu w tryb wideo",
+      "Nowe sceny aparatu AI: tryb Księżyca, wieża, zdjęcie grupowe",
+      "Naprawiono awarię aparatu występującą za każdym razem przy wyjściu i ponownym wejściu w tryb nagrywania wideo"
+    ],
+    "Usługa w chmurze Xiaomi": [
+      "Optymalizacja: przeprojektowano stronę główną usługi w chmurze; dostępna przestrzeń jest teraz wyświetlana bardziej intuicyjnie.",
+      "Optymalizacja: zoptymalizowano nową stronę główną Mi Cloud, informacje o przestrzeni w chmurze są wyświetlane wyraźniej."
+    ],
     "System": [
-      "Optimization: Updated Android Security Patch to May 2019. Increased system security."
+      "Optymalizacja: Zaktualizowano poprawkę zabezpieczeń Google (2019#5), zwiększono bezpieczeństwo systemu."
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected"
-    ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+    "Ekran blokady, pasek powiadomień,panel powiadomień": [
+      "Nowość: Po pomyślnym odblokowaniu twarzą i pozostaniu na ekranie blokady można użyć odcisku palca, aby przejść do ekranu głównego",
+      "Nowość: w motywach systemowych zegar ekranu blokady obsługuje trzy niestandardowe style, które można zmienić w zaawansowanych ustawieniach ekranu blokady.",
       "New: You can stay on the Lock screen after your face has been recognized. You can turn on this feature in Settings > Lock screen & password > Manage face data.",
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Optimization: Face unlock efficiency",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Face unlock prompts didn^t disappear on time in some cases",
+      "Nowość: można teraz zablokować otwieranie panelu powiadomień na ekranie blokady",
+      "Optymalizacja skuteczności odblokowywania twarzą",
+      "Poprawka: pływający pasek połączenia przychodzącego i zielony pasek połączenia wyświetlały się jednocześnie.",
+      "Poprawka: strona synchronizacji nie odświeżała się po włączeniu lub wyłączeniu synchronizacji z panelu powiadomień",
+      "Fix: Face unlock prompts didn't disappear on time in some cases",
       "Fix: Face data was recorded too fast",
-      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode"
-    ],
-    "Camera": [
-      "New: New modes for AI camera",
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+      "Naprawiono problem z nieterminowym wyświetlaniem powiadomienia o niskim poziomie baterii w trybie poziomym"
     ]
   },
   "logs_de": {
+    "Telefon": [
+      "Behoben: Das Beenden von Anrufen dauerte länger als erwartet",
+      "Behoben: Anrufe beenden dauerte länger als erwartet"
+    ],
+    "Kamera": [
+      "Neue Szenen für AI-Kamera: Mondmodus, Turm, Gruppenfoto",
+      "Behoben: Kamera stürzt ab, wenn man im Video-Modus die App verlässt und erneut öffnet",
+      "Neue Szenen für AI-Kamera: Mondmodus, Turm, Gruppenfoto",
+      "Behoben: Kamera-Absturz beim Verlassen und erneuten Öffnen im Video-Modus"
+    ],
+    "Xiaomi Cloud-Dienst": [
+      "Optimierung: Die Startseite des Cloud-Dienstes wurde neu gestaltet; der verfügbare Speicher wird jetzt intuitiver angezeigt.",
+      "Optimierung: Wir haben die Startseite von Mi Cloud neu gestaltet. Sie sieht jetzt viel besser aus"
+    ],
     "System": [
-      "Optimization: Updated Android Security Patch to May 2019. Increased system security."
+      "Optimierung: Google-Sicherheitspatch (2019#5) aktualisiert, Systemsicherheit verbessert."
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected"
-    ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
+      "Neu: Fingerabdruck zum Öffnen des Startbildschirms verwenden, wenn das Gerät per Gesichtserkennung entsperrt wurde und auf dem Sperrbildschirm bleibt",
+      "Neu: Im Systemdesign unterstützt die Sperrbildschirm-Uhr drei benutzerdefinierte Stile, die in den erweiterten Sperrbildschirm-Einstellungen geändert werden können.",
       "New: You can stay on the Lock screen after your face has been recognized. You can turn on this feature in Settings > Lock screen & password > Manage face data.",
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Optimization: Face unlock efficiency",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Face unlock prompts didn^t disappear on time in some cases",
+      "Neu: Öffnen der Benachrichtigungsleiste auf dem Sperrbildschirm kann jetzt gesperrt werden",
+      "Optimierung: Gesichtserkennung erfolgreicher",
+      "Behebung: Die schwebende Leiste für eingehende Anrufe und der grüne Anrufbalken wurden gleichzeitig angezeigt.",
+      "Behoben: Die Synchronisierungsseite wurde nicht aktualisiert, wenn die Synchronisierung in der Benachrichtigungsleiste ein- oder ausgeschaltet wurde",
+      "Fix: Face unlock prompts didn't disappear on time in some cases",
       "Fix: Face data was recorded too fast",
-      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode"
-    ],
-    "Camera": [
-      "New: New modes for AI camera",
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+      "Behebung des Problems, dass die schwebende Benachrichtigung bei niedrigem Akkustand im Querformat nicht rechtzeitig angezeigt wird"
     ]
   },
   "logs_fr": {
-    "System": [
-      "Optimization: Updated Android Security Patch to May 2019. Increased system security."
+    "Téléphone": [
+      "Réparé: Mettre fin aux appels a pris plus de temps que prévu",
+      "Correction : la fin des appels prenait plus de temps que prévu"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected"
+    "Appareil photo": [
+      "Nouvelles scènes de l'appareil photo AI : mode Lune, tour, photo de groupe",
+      "Correction : l'appareil photo plante lorsqu'on quitte puis rouvre l'app en mode Vidéo",
+      "Nouvelles scènes de l'appareil photo AI : mode Lune, tour, photo de groupe",
+      "Correction du plantage de l'appareil photo à chaque sortie puis réouverture en mode vidéo"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+    "Service cloud Xiaomi": [
+      "Optimisation: Nous avons repensé la page de démarrage de Mi Cloud. Ça a l'air beaucoup mieux maintenant!",
+      "Optimisation : la nouvelle page d’accueil de Mi Cloud a été optimisée, les informations sur l’espace cloud s’affichent plus clairement."
+    ],
+    "Système": [
+      "Optimisation : Mise à jour du correctif de sécurité Google (2019#5), amélioration de la sécurité du système."
+    ],
+    "Écran de verrouillage, Barre d'état, Panneau de notification": [
+      "Nouveau : Utiliser l'empreinte digitale pour accéder à l'écran d'accueil après un déverrouillage facial réussi et un maintien sur l'écran de verrouillage",
+      "Nouveau : sous les thèmes système, l’horloge de l’écran de verrouillage prend en charge trois styles personnalisés, modifiables dans les paramètres avancés de l’écran de verrouillage.",
       "New: You can stay on the Lock screen after your face has been recognized. You can turn on this feature in Settings > Lock screen & password > Manage face data.",
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Optimization: Face unlock efficiency",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Face unlock prompts didn^t disappear on time in some cases",
+      "Nouveau : il est désormais possible d’interdire l’ouverture du panneau de notifications sur l’écran de verrouillage",
+      "Optimisation du taux de réussite du déverrouillage facial",
+      "Correction : la barre flottante d’appel entrant et la barre verte d’appel s’affichaient en même temps.",
+      "Correction : la page de synchronisation ne s’actualisait pas lorsqu’on activait ou désactivait la synchronisation depuis le panneau de notifications",
+      "Fix: Face unlock prompts didn't disappear on time in some cases",
       "Fix: Face data was recorded too fast",
-      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode"
-    ],
-    "Camera": [
-      "New: New modes for AI camera",
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+      "Correction du problème où la notification flottante de batterie faible ne s'affiche pas rapidement en mode paysage"
     ]
   },
   "logs_it": {
-    "Sistema": [
-      "Ottimizzazione: Aggiornamento della patch di sicurezza Android a Maggio 2019. Maggiore sicurezza del sistema."
-    ],
     "Telefono": [
+      "Risolto: Terminare le chiamate richiedeva più tempo del previsto",
       "Risolto: Terminare le chiamate richiedeva più tempo del previsto"
-    ],
-    "Schermata di blocco, barra di stato, area delle notifiche": [
-      "Nuovo: Accedi alla schermata Home usando l^impronta digitale dopo aver sbloccato il dispositivo con i dati del volto restando sulla schermata di blocco.",
-      "Nuovo: Introdotto l^orologio personalizzabile per la schermata di blocco (Impostazioni > Schermata di blocco e password > Impostazioni avanzate). Il nuovo orologio della schermata di blocco non funziona con temi di terze parti.",
-      "Nuovo: Puoi rimanere nella schermata di blocco dopo che il tuo volto è stato riconosciuto. Puoi attivare questa funzione in Impostazioni > Schermata di blocco e password > Gestisci i dati del volto.",
-      "Nuovo: È ora possibile limitare l^apertura dell^area delle notifiche sulla schermata di blocco",
-      "Ottimizzazione: Efficienza del Riconoscimento facciale",
-      "Risolto: I collegamenti della barra di stato e le notifiche a comparsa per le chiamate apparivano contemporaneamente",
-      "Risolto: La pagina di sincronizzazione non poteva essere aggiornata quando la sincronizzazione era attiva o disattivata nell^area delle notifiche",
-      "Risolto: In alcuni casi, le notifiche di sblocco con il volto non scomparivano in tempo",
-      "Risolto: I dati del volto venivano registrati troppo in fretta",
-      "Risolto: Le notifiche a comparsa relative alla batteria non erano visualizzate correttamente in modalità orizzontale"
     ],
     "Fotocamera": [
       "Nuovo: Nuove modalità per la fotocamera AI",
+      "Risolvi: Chiusura forzata della Fotocamera quando la app era chiusa e aperta di nuovo in modalità Video",
+      "Nuovo: Nuove modalità per la fotocamera AI",
       "Risolto: Chiusura forzata della Fotocamera quando la app era chiusa e aperta di nuovo in modalità Video"
     ],
-    "Mi Cloud": [
+    "Servizio cloud Xiaomi": [
+      "Ottimizzazione: Abbiamo ridisegnato la pagina iniziale di Mi Cloud. Ora è molto meglio!",
       "Ottimizzazione: Abbiamo ridisegnato la pagina iniziale di Mi Cloud. Ora è molto meglio!"
+    ],
+    "Sistema": [
+      "Ottimizzazione: Aggiornamento della patch di sicurezza Android a Maggio 2019. Maggiore sicurezza del sistema."
+    ],
+    "Schermata di blocco, barra di stato, area delle notifiche": [
+      "Nuovo: Accedi alla schermata Home usando l'impronta digitale dopo aver sbloccato il dispositivo con i dati del volto restando sulla schermata di blocco.",
+      "Nuovo: Introdotto l'orologio personalizzabile per la schermata di blocco (Impostazioni > Schermata di blocco e password > Impostazioni avanzate). Il nuovo orologio della schermata di blocco non funziona con temi di terze parti.",
+      "Nuovo: Puoi rimanere nella schermata di blocco dopo che il tuo volto è stato riconosciuto. Puoi attivare questa funzione in Impostazioni > Schermata di blocco e password > Gestisci i dati del volto.",
+      "Nuovo: È ora possibile limitare l'apertura dell'area delle notifiche sulla schermata di blocco",
+      "Ottimizzazione: Efficienza del Riconoscimento facciale",
+      "Risolto: I collegamenti della barra di stato e le notifiche a comparsa per le chiamate apparivano contemporaneamente",
+      "Risolto: La pagina di sincronizzazione non poteva essere aggiornata quando la sincronizzazione era attiva o disattivata nell'area delle notifiche",
+      "Risolto: In alcuni casi, le notifiche di sblocco con il volto non scomparivano in tempo",
+      "Risolto: I dati del volto venivano registrati troppo in fretta",
+      "Risolto: Le notifiche a comparsa relative alla batteria non erano visualizzate correttamente in modalità orizzontale"
     ]
   },
   "logs_es": {
+    "Teléfono": [
+      "Reparado: Terminar las llamadas llevó más tiempo de lo esperado",
+      "Reparado: Terminar las llamadas llevó más tiempo de lo esperado"
+    ],
+    "Cámara": [
+      "Nuevo: Nuevo modos para la cámara IA",
+      "Reparar: La Cámara se cerró de forma forzosa cuando la aplicación fue cerrada y se volvió a abrir en el Modo vídeo",
+      "Nuevo: Nuevo modos para la cámara IA",
+      "Reparado: La Cámara se cerró de forma forzosa cuando la aplicación fue cerrada y se volvió a abrir en el Modo vídeo"
+    ],
+    "Servicio en la nube de Xiaomi": [
+      "Optimización: Hemos rediseñado la página de inicio de Mi Nube. ¡Ahora tiene mucho mejor aspecto!",
+      "Optimización: Hemos rediseñado la página de inicio de Mi Nube. ¡Ahora tiene mucho mejor aspecto!"
+    ],
     "Sistema": [
       "Optimización: Parche de seguridad de Android actualizado a Mayo de 2019. Seguridad del sistema incrementada."
-    ],
-    "Teléfono": [
-      "Reparado: Terminar las llamadas llevó más tiempo de lo esperado"
     ],
     "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
       "Nuevo: Usa tu huella dactilar para abrir la Pantalla de inicio después de haber desbloqueado el dispositivo usando tus datos faciales y haber permanecido en la Pantalla de bloqueo",
@@ -304,48 +373,56 @@
       "Reparado: Los avisos de desbloqueo facial no desaparecían a tiempo en algunos casos",
       "Reparado: Los datos faciales fueron guardados demasiado rápido",
       "Reparado: Las notificaciones flotantes relacionadas con la batería no se mostraban correctamente en el modo paisaje"
-    ],
-    "Cámara": [
-      "Nuevo: Nuevo modos para la cámara IA",
-      "Reparado: La Cámara se cerró de forma forzosa cuando la aplicación fue cerrada y se volvió a abrir en el Modo vídeo"
-    ],
-    "Mi Cloud": [
-      "Optimización: Hemos rediseñado la página de inicio de Mi Nube. ¡Ahora tiene mucho mejor aspecto!"
     ]
   },
   "logs_pt": {
-    "System": [
-      "Optimization: Updated Android Security Patch to May 2019. Increased system security."
+    "Telefone": [
+      "Correção: Encerrar chamadas levava mais tempo que o esperado",
+      "Correção: encerrar chamadas demorava mais do que o esperado"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected"
+    "Câmera": [
+      "Novas cenas da câmera AI: modo Lua, torre, foto em grupo",
+      "Correção: a câmera fecha forçadamente ao sair e reabrir no modo Vídeo",
+      "Novas cenas da câmera AI: modo Lua, torre, foto em grupo",
+      "Corrigida falha da câmera que sempre ocorria ao sair e voltar ao modo de gravação de vídeo"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+    "Serviço de nuvem Xiaomi": [
+      "Otimização: Nós redesenhamos a página inicial da Mi Cloud. Ela está muito melhor agora!",
+      "Otimização: nova página inicial do Mi Cloud otimizada, informações de armazenamento em nuvem exibidas com mais clareza."
+    ],
+    "Sistema": [
+      "Otimização: Atualizado o patch de segurança do Google (2019#5), melhorando a segurança do sistema."
+    ],
+    "Tela de bloqueio, Barra de status e Área de notificações": [
+      "Novo: Usar a impressão digital para abrir a tela inicial após desbloquear com o rosto e permanecer na tela de bloqueio",
+      "Novo: nos temas do sistema, o relógio da tela de bloqueio suporta três estilos personalizados, que podem ser alterados nas configurações avançadas da tela de bloqueio.",
       "New: You can stay on the Lock screen after your face has been recognized. You can turn on this feature in Settings > Lock screen & password > Manage face data.",
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Optimization: Face unlock efficiency",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Face unlock prompts didn^t disappear on time in some cases",
+      "Novo: agora é possível impedir a abertura do painel de notificações na tela de bloqueio",
+      "Otimizar a taxa de sucesso do desbloqueio facial",
+      "Correção: a barra flutuante de chamada recebida e a barra verde de chamada apareciam ao mesmo tempo.",
+      "Correção: a página de sincronização não era atualizada ao ativar ou desativar a sincronização no painel de notificações",
+      "Fix: Face unlock prompts didn't disappear on time in some cases",
       "Fix: Face data was recorded too fast",
-      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode"
-    ],
-    "Camera": [
-      "New: New modes for AI camera",
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+      "Corrigido o problema em que a notificação flutuante de bateria fraca não era exibida prontamente no modo paisagem"
     ]
   },
   "logs_tr": {
+    "Telefon": [
+      "Onarım: Aramaları sonlandırmak beklenenden daha uzun sürdü",
+      "Onarım: Aramaları sonlandırmak beklenenden daha uzun sürdü"
+    ],
+    "Kamera": [
+      "Yeni: AI kamera için yeni modlar",
+      "Onar: Uygulama kapatıldığında Kamera kapanmaya zorlandı ve Video modunda tekrar açıldı",
+      "Yeni: AI kamera için yeni modlar",
+      "Onarım: Uygulama kapatıldığında Kamera kapanmaya zorlandı ve Video modunda tekrar açıldı"
+    ],
+    "Xiaomi Bulut Hizmeti": [
+      "Optimizasyon: Mi Cloud'un ana sayfasını yeniden tasarladık, artık çok daha iyi görünüyor!",
+      "Optimizasyon: Mi Cloud'un ana sayfasını yeniden tasarladık, artık çok daha iyi görünüyor!"
+    ],
     "Sistem": [
       "Optimizasyon: Android Güvenlik Yaması Mayıs 2019 sürümüne güncellendi. Sistem güvenliği artırıldı."
-    ],
-    "Telefon": [
-      "Onarım: Aramaları sonlandırmak beklenenden daha uzun sürdü"
     ],
     "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
       "Yeni: Cihazın kilidini yüz verilerini kullanarak açtıktan ve Kilit ekranında kaldıktan sonra Ana ekranı açmak için parmak izinizi kullanın",
@@ -358,202 +435,229 @@
       "Onarım: Yüzle kilit açma pencereleri bazı durumlarda kaybolmadı",
       "Onarım: Yüz verileri çok hızlı kaydedildi",
       "Onarım: Pille ilgili kayan bildirimler, manzara modunda doğru görüntülenmedi"
-    ],
-    "Kamera": [
-      "Yeni: AI kamera için yeni modlar",
-      "Onarım: Uygulama kapatıldığında Kamera kapanmaya zorlandı ve Video modunda tekrar açıldı"
-    ],
-    "Mi Cloud": [
-      "Optimizasyon: Mi Cloud^un ana sayfasını yeniden tasarladık, artık çok daha iyi görünüyor!"
     ]
   },
   "logs_id": {
-    "System": [
-      "Optimization: Updated Android Security Patch to May 2019. Increased system security."
+    "Telepon": [
+      "Perbaikan: Mematikan panggilan memakan waktu lebih lama dibanding seharusnya",
+      "Perbaikan: Mengakhiri panggilan membutuhkan waktu lebih lama dari yang diharapkan"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected"
+    "Kamera": [
+      "Skena baru kamera AI: mode Bulan, menara, foto grup",
+      "Perbaikan: Kamera menutup paksa saat keluar dan masuk kembali ke mode Video",
+      "Skena baru kamera AI: mode Bulan, menara, foto grup",
+      "Perbaikan crash kamera yang selalu terjadi saat keluar dan masuk kembali dalam mode rekam video"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+    "Layanan Cloud Xiaomi": [
+      "Pengoptimalan: Halaman awal Mi Cloud didesain ulang. Sekarang semakin terlihat lebih baik!",
+      "Optimasi: Halaman utama baru Mi Cloud telah dioptimalkan, informasi ruang cloud ditampilkan lebih jelas."
+    ],
+    "Sistem": [
+      "Optimasi: Memperbarui patch keamanan Google (2019#5), meningkatkan keamanan sistem."
+    ],
+    "Layar kunci, bar status, layar notifikasi": [
+      "Baru: Gunakan sidik jari untuk membuka Layar utama setelah berhasil membuka kunci dengan wajah dan tetap di layar kunci",
+      "Baru: Pada tema sistem, jam layar kunci mendukung tiga gaya kustom, dapat diubah di pengaturan lanjutan layar kunci.",
       "New: You can stay on the Lock screen after your face has been recognized. You can turn on this feature in Settings > Lock screen & password > Manage face data.",
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Optimization: Face unlock efficiency",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Face unlock prompts didn^t disappear on time in some cases",
+      "Baru: Dukungan untuk mencegah membuka panel notifikasi di layar kunci",
+      "Optimalkan tingkat keberhasilan buka kunci wajah",
+      "Perbaikan: Bilah mengambang panggilan masuk dan bilah hijau panggilan muncul bersamaan.",
+      "Perbaikan: Halaman sinkronisasi tidak diperbarui saat sinkronisasi diaktifkan atau dinonaktifkan dari panel notifikasi",
+      "Fix: Face unlock prompts didn't disappear on time in some cases",
       "Fix: Face data was recorded too fast",
-      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode"
-    ],
-    "Camera": [
-      "New: New modes for AI camera",
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+      "Perbaikan masalah notifikasi mengambang baterai lemah tidak tampil tepat waktu dalam mode lanskap"
     ]
   },
   "logs_vi": {
-    "System": [
-      "Optimization: Updated Android Security Patch to May 2019. Increased system security."
+    "Điện thoại": [
+      "Sửa lỗi: Kết thúc cuộc gọi mất nhiều thời gian hơn dự kiến",
+      "Đã sửa: Việc kết thúc cuộc gọi mất nhiều thời gian hơn dự kiến"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected"
+    "Máy ảnh": [
+      "Cảnh mới cho camera AI: chế độ Mặt Trăng, tòa tháp, ảnh nhóm",
+      "Sửa lỗi: Camera bị buộc dừng khi thoát và vào lại ở chế độ Quay video",
+      "Cảnh mới cho camera AI: chế độ Mặt Trăng, tòa tháp, ảnh nhóm",
+      "Sửa lỗi camera luôn bị thoát khi thoát ra và vào lại trong chế độ quay video"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+    "Dịch vụ đám mây Xiaomi": [
+      "Tối ưu hóa: Trang chủ dịch vụ đám mây được thiết kế lại, dung lượng khả dụng hiển thị trực quan hơn.",
+      "Tối ưu hóa: Trang chủ mới của Mi Cloud đã được tối ưu, thông tin dung lượng đám mây hiển thị rõ ràng hơn."
+    ],
+    "Hệ thống": [
+      "Tối ưu hóa: Đã cập nhật bản vá bảo mật Google (2019#5), nâng cao bảo mật hệ thống."
+    ],
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Mới: Dùng vân tay để mở Màn hình chính sau khi mở khóa bằng khuôn mặt thành công và vẫn ở màn hình khóa",
+      "Mới: Trong chủ đề hệ thống, đồng hồ màn hình khóa hỗ trợ ba kiểu tùy chỉnh, có thể thay đổi trong cài đặt nâng cao của màn hình khóa.",
       "New: You can stay on the Lock screen after your face has been recognized. You can turn on this feature in Settings > Lock screen & password > Manage face data.",
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Optimization: Face unlock efficiency",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Face unlock prompts didn^t disappear on time in some cases",
+      "Mới: Hỗ trợ chặn kéo xuống bảng thông báo trên màn hình khóa",
+      "Tối ưu tỷ lệ mở khóa bằng khuôn mặt thành công",
+      "Sửa: Thanh nổi cuộc gọi đến và thanh màu xanh cuộc gọi xuất hiện cùng lúc.",
+      "Sửa lỗi: Trang đồng bộ không làm mới khi bật hoặc tắt đồng bộ từ bảng thông báo",
+      "Fix: Face unlock prompts didn't disappear on time in some cases",
       "Fix: Face data was recorded too fast",
-      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode"
-    ],
-    "Camera": [
-      "New: New modes for AI camera",
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+      "Khắc phục sự cố thông báo nổi pin yếu không hiển thị kịp thời ở chế độ ngang"
     ]
   },
   "logs_th": {
-    "System": [
-      "Optimization: Updated Android Security Patch to May 2019. Increased system security."
+    "โทรศัพท์": [
+      "แก้ไข: การวางสายใช้เวลานานกว่าที่ควร",
+      "แก้ไข: การวางสายใช้เวลานานกว่าที่คาดไว้"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected"
+    "กล้อง": [
+      "ฉากใหม่ของกล้อง AI: โหมดพระจันทร์, หอคอย, ภาพหมู่",
+      "แก้ไข: กล้องหยุดทำงานเมื่อออกแล้วกลับเข้าโหมดวิดีโออีกครั้ง",
+      "ฉากใหม่ของกล้อง AI: โหมดพระจันทร์, หอคอย, ภาพหมู่",
+      "แก้ไขปัญหาแอปกล้องแครชทุกครั้งเมื่อออกแล้วกลับเข้าโหมดบันทึกวิดีโอ"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+    "บริการคลาวด์ Xiaomi": [
+      "ปรับปรุง: ออกแบบหน้าหลักของบริการคลาวด์ใหม่ ทำให้แสดงพื้นที่ว่างได้ชัดเจนขึ้น",
+      "ปรับปรุง: ปรับปรุงหน้าแรกใหม่ของ Mi Cloud ให้แสดงข้อมูลพื้นที่จัดเก็บบนคลาวด์ได้ชัดเจนขึ้น"
+    ],
+    "ระบบ": [
+      "ปรับปรุง: อัปเดตแพตช์ความปลอดภัยของ Google (2019#5) เพิ่มความปลอดภัยของระบบ"
+    ],
+    "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
+      "ใหม่: ใช้ลายนิ้วมือเข้าสู่หน้าจอหลักเมื่อปลดล็อกด้วยใบหน้าสำเร็จและยังคงอยู่บนหน้าจอล็อก",
+      "ใหม่: ภายใต้ธีมระบบ นาฬิกาหน้าจอล็อกรองรับรูปแบบกำหนดเอง 3 แบบ สามารถแก้ไขได้ในการตั้งค่าขั้นสูงของหน้าจอล็อก",
       "New: You can stay on the Lock screen after your face has been recognized. You can turn on this feature in Settings > Lock screen & password > Manage face data.",
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Optimization: Face unlock efficiency",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Face unlock prompts didn^t disappear on time in some cases",
+      "ใหม่: รองรับการห้ามเลื่อนลงเพื่อเปิดแผงการแจ้งเตือนบนหน้าจอล็อก",
+      "ปรับปรุงอัตราความสำเร็จในการปลดล็อกด้วยใบหน้า",
+      "แก้ไข: แถบลอยของการโทรเข้าและแถบสีเขียวของการโทรแสดงพร้อมกัน",
+      "แก้ไข: หน้าการซิงค์ไม่รีเฟรชเมื่อเปิดหรือปิดการซิงค์จากแผงการแจ้งเตือน",
+      "Fix: Face unlock prompts didn't disappear on time in some cases",
       "Fix: Face data was recorded too fast",
-      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode"
-    ],
-    "Camera": [
-      "New: New modes for AI camera",
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+      "แก้ไขปัญหาการไม่แสดงการแจ้งเตือนแบบลอยเรื่องแบตเตอรี่ต่ำในโหมดแนวนอนอย่างทันท่วงที"
     ]
   },
   "logs_ar": {
-    "System": [
-      "Optimization: Updated Android Security Patch to May 2019. Increased system security."
+    "الهاتف": [
+      "إصلاح: استغرق إنهاء المكالمات وقتًا أطول من المتوقع"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected"
+    "كاميرا": [
+      "مشاهد جديدة لكاميرا AI: وضع القمر، البرج، صورة جماعية",
+      "إصلاح: تعطل الكاميرا عند الخروج وإعادة الدخول في وضع الفيديو"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+    "خدمة Xiaomi السحابية": [
+      "تحسين: إعادة تصميم الصفحة الرئيسية لخدمة السحابة، وعرض المساحة المتاحة بشكل أكثر وضوحًا",
+      "تحسين: تم تحسين الصفحة الرئيسية الجديدة لـ Mi Cloud، وأصبحت معلومات التخزين السحابي أكثر وضوحًا."
+    ],
+    "النظام": [
+      "تحسين: تحديث رقعة أمان Google (2019#5)، مما يعزز أمان النظام."
+    ],
+    "هاتف": [
+      "إصلاح: استغرق إنهاء المكالمات وقتًا أطول من المتوقع"
+    ],
+    "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
+      "جديد: استخدام بصمة الإصبع للدخول إلى الشاشة الرئيسية بعد نجاح فتح القفل بالوجه والبقاء على شاشة القفل",
+      "جديد: ضمن سمات النظام، تدعم ساعة شاشة القفل ثلاثة أنماط مخصصة، ويمكن تعديلها في الإعدادات المتقدمة لشاشة القفل.",
       "New: You can stay on the Lock screen after your face has been recognized. You can turn on this feature in Settings > Lock screen & password > Manage face data.",
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Optimization: Face unlock efficiency",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Face unlock prompts didn^t disappear on time in some cases",
+      "جديد: دعم منع سحب لوحة الإشعارات على شاشة القفل",
+      "تحسين معدل نجاح فتح القفل بالوجه",
+      "إصلاح: ظهور شريط المكالمة العائم والشريط الأخضر للمكالمة في الوقت نفسه.",
+      "إصلاح: تعذّر تحديث صفحة المزامنة عند تشغيل المزامنة أو إيقافها من لوحة الإشعارات",
+      "Fix: Face unlock prompts didn't disappear on time in some cases",
       "Fix: Face data was recorded too fast",
-      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode"
+      "إصلاح مشكلة عدم عرض إشعار عائم لانخفاض البطارية في الوقت المناسب في وضع الشاشة الأفقية"
     ],
-    "Camera": [
-      "New: New modes for AI camera",
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "الكاميرا": [
+      "مشاهد جديدة لكاميرا AI: وضع القمر، البرج، صورة جماعية",
+      "إصلاح تعطل الكاميرا دائمًا عند الخروج وإعادة الدخول في وضع تسجيل الفيديو"
     ]
   },
   "logs_in": {
-    "System": [
-      "Optimization: Updated Android Security Patch to May 2019. Increased system security."
+    "फ़ोन": [
+      "ठीक किया गया: कॉल समाप्त करने में अपेक्षा से अधिक समय लगता था",
+      "ठीक किया गया: कॉल समाप्त करने में अपेक्षा से अधिक समय लगा"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected"
+    "कैमरा": [
+      "नए AI कैमरा दृश्य: चंद्रमा मोड, टावर, ग्रुप फोटो",
+      "ठीक किया गया: वीडियो मोड में बाहर निकलकर फिर से प्रवेश करने पर कैमरा बलपूर्वक बंद हो जाता था",
+      "नए AI कैमरा दृश्य: चंद्रमा मोड, टावर, ग्रुप फोटो",
+      "वीडियो रिकॉर्डिंग में बाहर निकलकर फिर से प्रवेश करने पर हमेशा होने वाले कैमरा क्रैश को ठीक किया गया"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+    "Xiaomi क्लाउड सेवा": [
+      "अनुकूलन: क्लाउड सेवा के होमपेज को फिर से डिज़ाइन किया गया है, उपलब्ध स्थान अब और स्पष्ट रूप से दिखता है।",
+      "अनुकूलन: Mi Cloud के नए होमपेज को अनुकूलित किया गया, क्लाउड स्टोरेज की जानकारी अब और स्पष्ट दिखती है।"
+    ],
+    "सिस्टम": [
+      "अनुकूलन: Google सुरक्षा पैच (2019#5) अपडेट किया गया, सिस्टम सुरक्षा में सुधार।"
+    ],
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
+      "नया: चेहरे से अनलॉक सफल होने और लॉक स्क्रीन पर रहने पर फ़िंगरप्रिंट से होम स्क्रीन खोलें",
+      "नया: सिस्टम थीम के अंतर्गत, लॉक स्क्रीन घड़ी तीन कस्टम शैलियों का समर्थन करती है, जिन्हें लॉक स्क्रीन की उन्नत सेटिंग्स में बदला जा सकता है।",
       "New: You can stay on the Lock screen after your face has been recognized. You can turn on this feature in Settings > Lock screen & password > Manage face data.",
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Optimization: Face unlock efficiency",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Face unlock prompts didn^t disappear on time in some cases",
+      "नया: लॉक स्क्रीन पर नोटिफ़िकेशन शेड को नीचे खींचकर खोलने से रोकें",
+      "फेस अनलॉक सफलता दर को अनुकूलित करें",
+      "फ़िक्स: इनकमिंग कॉल फ़्लोटिंग बार और कॉल ग्रीन बार का एक ही समय पर दिखना।",
+      "फ़िक्स: नोटिफ़िकेशन शेड से सिंक चालू या बंद करने पर सिंक पेज रीफ़्रेश नहीं होता था",
+      "Fix: Face unlock prompts didn't disappear on time in some cases",
       "Fix: Face data was recorded too fast",
-      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode"
-    ],
-    "Camera": [
-      "New: New modes for AI camera",
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+      "लैंडस्केप मोड में कम बैटरी की फ़्लोटिंग सूचना समय पर न दिखने की समस्या ठीक की गई"
     ]
   },
   "logs_ug": {
-    "System": [
-      "Optimization: Updated Android Security Patch to May 2019. Increased system security."
-    ],
-    "Phone": [
+    "تېلېفون": [
+      "Fix: Ending calls took longer time than expected",
       "Fix: Ending calls took longer time than expected"
+    ],
+    "كامېرا": [
+      "يېڭىدىن قوشۇلدى: AI كامېرا كۆرۈنۈشلىرى: ئاي ھالىتى، مۇنار، گۇرۇپپا سۈرەت",
+      "Fix: Camera force closed when the app was closed and opened again in the Video mode",
+      "يېڭىدىن قوشۇلدى: AI كامېرا كۆرۈنۈشلىرى: ئاي ھالىتى، مۇنار، گۇرۇپپا سۈرەت",
+      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
+    ],
+    "Xiaomi بۇلۇت مۇلازىمىتى": [
+      "ياخشىلاندى: بۇلۇت مۇلازىمىتى باش بېتى قايتا لايىھەلەندى، ئىشلەتكىلى بولىدىغان بوشلۇق كۆرسىتىلىشى تېخىمۇ كۆرۈنەرلىك بولدى.",
+      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!"
+    ],
+    "سىستېما": [
+      "Optimization: Updated Android Security Patch to May 2019. Increased system security."
     ],
     "Lockscreen, status bar, Notification shade": [
       "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
       "New: You can stay on the Lock screen after your face has been recognized. You can turn on this feature in Settings > Lock screen & password > Manage face data.",
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Optimization: Face unlock efficiency",
+      "يېڭى: قۇلۇپ ئېكرانى بېتىدە ئۇقتۇرۇش تاختىسىنى تۆۋەن تارتىشنى چەكلەشنى قوللايدۇ",
+      "يۈز ئارقىلىق قۇلۇپ ئېچىش مۇۋەپپەقىيەت نىسبىتىنى ياخشىلاش",
       "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Face unlock prompts didn^t disappear on time in some cases",
+      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade",
+      "Fix: Face unlock prompts didn't disappear on time in some cases",
       "Fix: Face data was recorded too fast",
-      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode"
-    ],
-    "Camera": [
-      "New: New modes for AI camera",
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+      "Fix: Battery-related floating notifications weren't displayed correctly in landscape mode"
     ]
   },
   "logs_bo": {
-    "System": [
-      "Optimization: Updated Android Security Patch to May 2019. Increased system security."
-    ],
-    "Phone": [
+    "ཁ་པར": [
+      "Fix: Ending calls took longer time than expected",
       "Fix: Ending calls took longer time than expected"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "New: You can stay on the Lock screen after your face has been recognized. You can turn on this feature in Settings > Lock screen & password > Manage face data.",
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Optimization: Face unlock efficiency",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Face unlock prompts didn^t disappear on time in some cases",
-      "Fix: Face data was recorded too fast",
-      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode"
-    ],
-    "Camera": [
+    "པར་ཆས": [
       "New: New modes for AI camera",
       "Fix: Camera force closed when the app was closed and opened again in the Video mode"
     ],
     "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!",
+      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!"
+    ],
+    "རིམ་ལུགས": [
+      "Optimization: Updated Android Security Patch to May 2019. Increased system security."
+    ],
+    "Lockscreen, status bar, Notification shade": [
+      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "New: You can stay on the Lock screen after your face has been recognized. You can turn on this feature in Settings > Lock screen & password > Manage face data.",
+      "New: You can restrict opening Notification shade on the Lock screen now",
+      "Optimization: Face unlock efficiency",
+      "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
+      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade",
+      "Fix: Face unlock prompts didn't disappear on time in some cases",
+      "Fix: Face data was recorded too fast",
+      "Fix: Battery-related floating notifications weren't displayed correctly in landscape mode"
+    ],
+    "Camera": [
+      "New: New modes for AI camera",
+      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
     ]
   }
 }

@@ -5,9 +5,12 @@
     ],
     "自由窗口": [
       "修复 横竖屏切换时，小窗视频应用显示异常的问题",
+      "修复 部分游戏场景下，迷你窗挂起后尺寸异常的问题",
+      "修复 横竖屏切换时，小窗视频应用显示异常的问题",
       "修复 部分游戏场景下，迷你窗挂起后尺寸异常的问题"
     ],
     "锁屏": [
+      "新增 “长按锁屏编辑样式”开关，关闭后在锁屏长按将不会触发锁屏编辑",
       "新增 “长按锁屏编辑样式”开关，关闭后在锁屏长按将不会触发锁屏编辑"
     ],
     "设置": [
@@ -17,6 +20,10 @@
       "优化 CarWith 导航体验，支持地图导航全屏显示，新增导航悬浮胶囊",
       "修复 车机作热点时，因手机未自动连接无网络的热点，导致 CarWith 无法自动连接问题",
       "修复 因将车辆判断为蓝牙设备，引发 CarWith 的断连问题"
+    ],
+    "其他": [
+      "提高系统的稳定性",
+      "优化系统的流畅度"
     ]
   },
   "logs_en": {
@@ -24,19 +31,26 @@
       "Updated the security patch to August 2024. Increased system security."
     ],
     "Floating windows": [
-      "Fix: Video apps weren^t displayed correctly when switching screen orientation",
+      "Fix: Video apps weren't displayed correctly when switching screen orientation",
+      "Fix: The size of pinned floating windows for some games was incorrect",
+      "Fix: Video apps weren't displayed correctly when switching screen orientation",
       "Fix: The size of pinned floating windows for some games was incorrect"
     ],
     "Lock screen": [
+      "New: A switch for a feature that allows long pressing Home screen to edit it",
       "New: A switch for a feature that allows long pressing Home screen to edit it"
     ],
     "Settings": [
-      "New: A major update to CarWith^s visual experience, with redesigned styles for 6 different horizontal and vertical car system screen sizes. This update includes new cards for maps and music, and Mi AI conversation styles.",
+      "New: A major update to CarWith's visual experience, with redesigned styles for 6 different horizontal and vertical car system screen sizes. This update includes new cards for maps and music, and Mi AI conversation styles.",
       "New: CarWith now offers enhanced personalization options, including wallpapers, backgrounds, card sorting, widgets, and more",
       "New: Improved connection stability for CarWith and added support for more car models via EasyConnection",
       "Optimization: Enhanced CarWith navigation experience by supporting fullscreen map navigation and introducing a new floating navigation window",
-      "Fix: CarWith couldn^t automatically connect when the car system was used as a hotspot, due to the phone not automatically connecting to a hotspot without an internet connection",
+      "Fix: CarWith couldn't automatically connect when the car system was used as a hotspot, due to the phone not automatically connecting to a hotspot without an internet connection",
       "Fix: CarWith would disconnect because the vehicle was incorrectly identified as a Bluetooth device"
+    ],
+    "Other": [
+      "Optimized system performance",
+      "Improved system security and stability"
     ]
   },
   "logs_zh_tw": {
@@ -45,9 +59,12 @@
     ],
     "自由視窗": [
       "修復: 橫豎螢幕切換時，小窗影片應用程式顯示異常的問題",
+      "修復: 部分遊戲場景下，迷你窗掛起後尺寸異常的問題",
+      "修復: 橫豎螢幕切換時，小窗影片應用程式顯示異常的問題",
       "修復: 部分遊戲場景下，迷你窗掛起後尺寸異常的問題"
     ],
     "鎖屏": [
+      "新增: 長按鎖定螢幕編輯樣式開關，關閉後在鎖定螢幕長按將不會觸發鎖定螢幕編輯",
       "新增: 長按鎖定螢幕編輯樣式開關，關閉後在鎖定螢幕長按將不會觸發鎖定螢幕編輯"
     ],
     "設定": [
@@ -57,196 +74,352 @@
       "優化: CarWith 導航體驗，支援地圖導航全螢幕顯示，新增導航懸浮膠囊",
       "修復: 車機作熱點時，因手機未自動連接無網路的熱點，導致 CarWith 無法自動連接問題",
       "修復: 因將車輛判斷為藍牙裝置，引發 CarWith 的斷連問題"
+    ],
+    "其他": [
+      "改善系統的穩定性",
+      "優化系統的流暢度"
     ]
   },
   "logs_ja": {
-    "フローティングウィンドウ": [
-      "修正: 画面の向きを切り替えると、ビデオアプリが正しく表示されない問題",
-      "修正: 一部のゲームで、固定されたフローティングウィンドウのサイズが正しくない問題"
-    ],
     "システム": [
       "セキュリティパッチを 2024 年 8 月にアップデートしました。システムのセキュリティが強化されました。"
     ],
+    "フローティングウィンドウ": [
+      "修正: 画面の向きを切り替えると、ビデオアプリが正しく表示されない問題",
+      "修正: 一部のゲームで、固定されたフローティングウィンドウのサイズが正しくない問題",
+      "修正: 画面の向きを切り替えると、ビデオアプリが正しく表示されない問題",
+      "修正: 一部のゲームで、固定されたフローティングウィンドウのサイズが正しくない問題"
+    ],
     "ロック画面": [
+      "新機能: ホーム画面を長押しして編集できる機能のスイッチ",
       "新機能: ホーム画面を長押しして編集できる機能のスイッチ"
+    ],
+    "その他": [
+      "システムパフォーマンスの最適化",
+      "システムのセキュリティと安定性の向上"
     ]
   },
   "logs_ko": {
-    "플로팅 창": [
-      "수정: 화면 방향을 전환하면 동영상 앱이 제대로 표시되지 않는 문제",
-      "수정: 일부 게임에서 고정된 플로팅 창 크기가 올바르지 않은 문제"
-    ],
     "시스템": [
       "보안패치 (2024#8) 업데이트됨. 시스템 보안이 향상되었습니다."
     ],
+    "플로팅 창": [
+      "수정: 화면 방향을 전환하면 동영상 앱이 제대로 표시되지 않는 문제",
+      "수정: 일부 게임에서 고정된 플로팅 창 크기가 올바르지 않은 문제",
+      "수정: 화면 방향을 전환하면 동영상 앱이 제대로 표시되지 않는 문제",
+      "수정: 일부 게임에서 고정된 플로팅 창 크기가 올바르지 않은 문제"
+    ],
     "잠금화면": [
+      "New: 홈 화면을 길게 눌러 편집할 수 있는 기능 스위치",
       "New: 홈 화면을 길게 눌러 편집할 수 있는 기능 스위치"
+    ],
+    "기타": [
+      "시스템 성능 최적화",
+      "시스템 보안 및 안정성 개선"
     ]
   },
   "logs_ru": {
-    "Плавающие окна": [
-      "Исправлено: Видеоприложения отображались некорректно при смене ориентации экрана",
-      "Исправлено: Размер закрепленных плавающих окон для некоторых игр мог быть неправильным"
-    ],
     "Система": [
       "Обновление системы безопасности (август 2024 года). Улучшена безопасность системы."
     ],
+    "Плавающие окна": [
+      "Исправлено: Видеоприложения отображались некорректно при смене ориентации экрана",
+      "Исправлено: Размер закрепленных плавающих окон для некоторых игр мог быть неправильным",
+      "Исправлено: Видеоприложения отображались некорректно при смене ориентации экрана",
+      "Исправлено: Размер закрепленных плавающих окон для некоторых игр мог быть неправильным"
+    ],
     "Экран блокировки": [
+      "Новое: Добавлен переключатель для функции, позволяющей редактировать рабочий стол при длительном нажатии",
       "Новое: Добавлен переключатель для функции, позволяющей редактировать рабочий стол при длительном нажатии"
+    ],
+    "Другое": [
+      "Оптимизация производительности системы",
+      "Улучшение безопасности и стабильности системы"
     ]
   },
   "logs_uk": {
-    "Спливаючі вікна": [
-      "Виправлено: Відеопрограми відображалися некоректно при зміні орієнтації екрана",
-      "Виправлено: Розмір закріплених плаваючих вікон для деяких ігор міг бути неправильним"
-    ],
     "Система": [
       "Оновлено патч безпеки за серпень 2024 року. Збільшено безпеку системи."
     ],
+    "Спливаючі вікна": [
+      "Виправлено: Відеопрограми відображалися некоректно при зміні орієнтації екрана",
+      "Виправлено: Розмір закріплених плаваючих вікон для деяких ігор міг бути неправильним",
+      "Виправлено: Відеопрограми відображалися некоректно при зміні орієнтації екрана",
+      "Виправлено: Розмір закріплених плаваючих вікон для деяких ігор міг бути неправильним"
+    ],
     "Екран блокування": [
+      "Нове: Додано перемикач для функції, що дозволяє редагувати робочий стіл при тривалому натисканні",
       "Нове: Додано перемикач для функції, що дозволяє редагувати робочий стіл при тривалому натисканні"
+    ],
+    "Інше": [
+      "Оптимізація продуктивності системи",
+      "Покращення безпеки та стабільності системи"
     ]
   },
   "logs_pl": {
-    "Pływające okna": [
-      "Naprawiono: Aplikacje wideo nie były wyświetlane poprawnie podczas zmiany orientacji ekranu",
-      "Naprawiono: Rozmiar przypiętych, pływających okien w niektórych grach był nieprawidłowy"
-    ],
     "System": [
       "Zaktualizowano Pakiet Bezpieczeństwa do sierpnia 2024 r. Zwiększono bezpieczeństwo systemu."
     ],
+    "Pływające okna": [
+      "Naprawiono: Aplikacje wideo nie były wyświetlane poprawnie podczas zmiany orientacji ekranu",
+      "Naprawiono: Rozmiar przypiętych, pływających okien w niektórych grach był nieprawidłowy",
+      "Naprawiono: Aplikacje wideo nie były wyświetlane poprawnie podczas zmiany orientacji ekranu",
+      "Naprawiono: Rozmiar przypiętych, pływających okien w niektórych grach był nieprawidłowy"
+    ],
     "Ekran blokady": [
+      "Nowe: Przełącznik funkcji, która umożliwia długie naciśnięcie Ekranu głównego w celu jej edycji",
       "Nowe: Przełącznik funkcji, która umożliwia długie naciśnięcie Ekranu głównego w celu jej edycji"
+    ],
+    "Inne": [
+      "Zoptymalizowana wydajność systemu",
+      "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
   "logs_de": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "System": [
+      "Updated the security patch to August 2024. Increased system security."
+    ],
+    "Schwebende Fenster": [
+      "Sicherheitspatch auf August 2024 aktualisiert. Systemsicherheit erhöht.",
+      "Fix: The size of pinned floating windows for some games was incorrect",
+      "Sicherheitspatch auf August 2024 aktualisiert. Systemsicherheit erhöht.",
+      "Fix: The size of pinned floating windows for some games was incorrect"
+    ],
+    "Sperrbildschirm": [
+      "Sicherheitspatch auf Juli 2024 aktualisiert. Systemsicherheit erhöht.",
+      "Sicherheitspatch auf Juli 2024 aktualisiert. Systemsicherheit erhöht."
+    ],
+    "Sonstiges": [
+      "Systemleistung optimiert",
+      "Systemsicherheit und -stabilität verbessert"
     ]
   },
   "logs_fr": {
-    "Fenêtres flottantes": [
-      "Réparé: Les applications vidéo n’étaient pas affichées correctement lors du changement d’orientation de l’écran",
-      "Réparé: La taille des fenêtres flottantes épinglées pour certains jeux était incorrecte"
-    ],
     "Système": [
       "Mise à jour du correctif de sécurité en août 2024. Sécurité accrue du système."
     ],
+    "Fenêtres flottantes": [
+      "Réparé: Les applications vidéo n’étaient pas affichées correctement lors du changement d’orientation de l’écran",
+      "Réparé: La taille des fenêtres flottantes épinglées pour certains jeux était incorrecte",
+      "Réparé: Les applications vidéo n’étaient pas affichées correctement lors du changement d’orientation de l’écran",
+      "Réparé: La taille des fenêtres flottantes épinglées pour certains jeux était incorrecte"
+    ],
     "Écran de verrouillage": [
-      "Nouveau: Un commutateur pour une fonctionnalité qui permet de le modifier en appuyant longuement sur l’Écran d^accueil"
+      "Nouveau: Un commutateur pour une fonctionnalité qui permet de le modifier en appuyant longuement sur l’Écran d'accueil",
+      "Nouveau: Un commutateur pour une fonctionnalité qui permet de le modifier en appuyant longuement sur l’Écran d'accueil"
+    ],
+    "Autre": [
+      "Performances système optimisées",
+      "Sécurité et stabilité du système améliorées"
     ]
   },
   "logs_it": {
-    "Finestre a comparsa": [
-      "Risolto: I video non venivano visualizzati correttamente cambiando l^orientamento dello schermo",
-      "Risolto: La dimensione delle finestre a comparsa non era corretta per alcuni giochi"
-    ],
     "Sistema": [
       "Patch di sicurezza aggiornata ad agosto 2024. Maggiore sicurezza del sistema."
     ],
+    "Finestre a comparsa": [
+      "Risolto: I video non venivano visualizzati correttamente cambiando l'orientamento dello schermo",
+      "Risolto: La dimensione delle finestre a comparsa non era corretta per alcuni giochi",
+      "Risolto: I video non venivano visualizzati correttamente cambiando l'orientamento dello schermo",
+      "Risolto: La dimensione delle finestre a comparsa non era corretta per alcuni giochi"
+    ],
     "Schermata di blocco": [
+      "Nuovo: Un interruttore per una funzionalità che consente di tenere premuta la schermata Home per modificarla",
       "Nuovo: Un interruttore per una funzionalità che consente di tenere premuta la schermata Home per modificarla"
+    ],
+    "Altro": [
+      "Prestazioni di sistema ottimizzate",
+      "Maggiore sicurezza e stabilità di sistema"
     ]
   },
   "logs_es": {
-    "Ventanas flotantes": [
-      "Reparado: Las aplicaciones de vídeo no se mostraban correctamente al cambiar la orientación de la pantalla",
-      "Reparado: El tamaño de las ventanas flotantes fijadas para algunos juegos era incorrecto"
-    ],
     "Sistema": [
       "Parche de seguridad actualizado a agosto de 2024. Seguridad del sistema incrementada."
     ],
+    "Ventanas flotantes": [
+      "Reparado: Las aplicaciones de vídeo no se mostraban correctamente al cambiar la orientación de la pantalla",
+      "Reparado: El tamaño de las ventanas flotantes fijadas para algunos juegos era incorrecto",
+      "Reparado: Las aplicaciones de vídeo no se mostraban correctamente al cambiar la orientación de la pantalla",
+      "Reparado: El tamaño de las ventanas flotantes fijadas para algunos juegos era incorrecto"
+    ],
     "Pantalla de bloqueo": [
+      "Nuevo: Un interruptor para una función que permite presionar prolongadamente la Pantalla de inicio para editarla",
       "Nuevo: Un interruptor para una función que permite presionar prolongadamente la Pantalla de inicio para editarla"
+    ],
+    "Otros": [
+      "Rendimiento del sistema optimizado",
+      "Estabilidad y seguridad del sistema mejorada"
     ]
   },
   "logs_pt": {
-    "Janelas flutuantes": [
-      "Correção: Apps de vídeo não eram exibidos corretamente ao alterar a orientação da tela",
-      "Correção: O tamanho de janelas flutuantes fixadas para alguns jogos estava incorreto"
-    ],
     "Sistema": [
       "Patch de segurança atualizado para agosto de 2024. Segurança do sistema aprimorada."
     ],
+    "Janelas flutuantes": [
+      "Correção: Apps de vídeo não eram exibidos corretamente ao alterar a orientação da tela",
+      "Correção: O tamanho de janelas flutuantes fixadas para alguns jogos estava incorreto",
+      "Correção: Apps de vídeo não eram exibidos corretamente ao alterar a orientação da tela",
+      "Correção: O tamanho de janelas flutuantes fixadas para alguns jogos estava incorreto"
+    ],
     "Tela de bloqueio": [
+      "Novo: Um seletor para um recurso que permite o pressionamento longo na Tela inicial para editar",
       "Novo: Um seletor para um recurso que permite o pressionamento longo na Tela inicial para editar"
+    ],
+    "Outros": [
+      "Desempenho do sistema aprimorado",
+      "Segurança e estabilidade do sistema aprimoradas"
     ]
   },
   "logs_tr": {
+    "Sistem": [
+      "Güvenlik patch'i Ağustos 2024'te güncellendi. Sistem güvenliği arttırıldı."
+    ],
     "Kayan pencereler": [
+      "Onarım: Ekran döndürmeyi değiştirirken video uygulamaları doğru bir şekilde görüntülenmedi",
+      "Onarım: Bazı oyunlar için sabitlenmiş kayan pencerelerin boyutu yanlıştı",
       "Onarım: Ekran döndürmeyi değiştirirken video uygulamaları doğru bir şekilde görüntülenmedi",
       "Onarım: Bazı oyunlar için sabitlenmiş kayan pencerelerin boyutu yanlıştı"
     ],
-    "Sistem": [
-      "Güvenlik patch^i Ağustos 2024^te güncellendi. Sistem güvenliği arttırıldı."
-    ],
     "Kilit ekranı": [
+      "Yeni: Ana ekranı düzenlemek için uzun süre basılmasını sağlayan bir özelliğe yönelik anahtar",
       "Yeni: Ana ekranı düzenlemek için uzun süre basılmasını sağlayan bir özelliğe yönelik anahtar"
+    ],
+    "Diğer": [
+      "Sistem performansı optimize edildi",
+      "Sistem güvenliği ve kararlılığı geliştirildi"
     ]
   },
   "logs_id": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "Sistem": [
+      "Patch keamanan diperbarui (Agustus 2024). Keamanan sistem ditingkatkan."
+    ],
+    "Jendela mengambang": [
+      "Perbaikan: Aplikasi video tidak ditampilkan dengan benar saat mengganti orientasi layar",
+      "Perbaikan: Ukuran jendela mengambang yang disematkan untuk beberapa permainan tidak benar",
+      "Perbaikan: Aplikasi video tidak ditampilkan dengan benar saat mengganti orientasi layar",
+      "Perbaikan: Ukuran jendela mengambang yang disematkan untuk beberapa permainan tidak benar"
+    ],
+    "Layar kunci": [
+      "Patch keamanan diperbarui (Juli 2024). Keamanan sistem ditingkatkan.",
+      "Patch keamanan diperbarui (Juli 2024). Keamanan sistem ditingkatkan."
+    ],
+    "Lainnya": [
+      "Performa sistem dioptimalkan",
+      "Keamanan dan stabilitas sistem ditingkatkan"
     ]
   },
   "logs_vi": {
-    "Cửa sổ nổi": [
-      "Sửa: Ứng dụng video không hiển thị chính xác khi chuyển hướng màn hình",
-      "Sửa: Kích thước của cửa sổ nổi được ghim đối với một số trò chơi không chính xác"
-    ],
     "Hệ thống": [
       "Cập nhật bản vá bảo mật đến tháng 8 năm 2024. Tăng cường bảo mật hệ thống."
     ],
+    "Cửa sổ nổi": [
+      "Sửa: Ứng dụng video không hiển thị chính xác khi chuyển hướng màn hình",
+      "Sửa: Kích thước của cửa sổ nổi được ghim đối với một số trò chơi không chính xác",
+      "Sửa: Ứng dụng video không hiển thị chính xác khi chuyển hướng màn hình",
+      "Sửa: Kích thước của cửa sổ nổi được ghim đối với một số trò chơi không chính xác"
+    ],
     "Màn hình khóa": [
+      "Mới: Công tắc dành cho tính năng cho phép bấm giữ Màn hình chính để chỉnh sửa",
       "Mới: Công tắc dành cho tính năng cho phép bấm giữ Màn hình chính để chỉnh sửa"
+    ],
+    "Khác": [
+      "Tối ưu hiệu suất hệ thống",
+      "Cải thiện tính ổn định và bảo mật hệ thống"
     ]
   },
   "logs_th": {
-    "หน้าต่างแบบลอย": [
-      "แก้ไข: แอปวิดีโอแสดงไม่ถูกต้องเมื่อสลับการวางแนวหน้าจอ",
-      "แก้ไข: ขนาดของหน้าต่างลอยที่ปักหมุดไว้สำหรับบางเกมไม่ถูกต้อง"
-    ],
     "ระบบ": [
       "อัปเดตแพตช์ความปลอดภัยเป็นเดือนสิงหาคม 2024 เพิ่มความปลอดภัยของระบบ"
     ],
+    "หน้าต่างแบบลอย": [
+      "แก้ไข: แอปวิดีโอแสดงไม่ถูกต้องเมื่อสลับการวางแนวหน้าจอ",
+      "แก้ไข: ขนาดของหน้าต่างลอยที่ปักหมุดไว้สำหรับบางเกมไม่ถูกต้อง",
+      "แก้ไข: แอปวิดีโอแสดงไม่ถูกต้องเมื่อสลับการวางแนวหน้าจอ",
+      "แก้ไข: ขนาดของหน้าต่างลอยที่ปักหมุดไว้สำหรับบางเกมไม่ถูกต้อง"
+    ],
     "ล็อคหน้าจอ": [
+      "ใหม่: สวิตช์สำหรับคุณสมบัติที่ช่วยให้กดหน้าจอหลักค้างไว้เพื่อแก้ไขได้",
       "ใหม่: สวิตช์สำหรับคุณสมบัติที่ช่วยให้กดหน้าจอหลักค้างไว้เพื่อแก้ไขได้"
+    ],
+    "อื่นๆ": [
+      "เพิ่มประสิทธิภาพของระบบ",
+      "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
     ]
   },
   "logs_ar": {
-    "النوافذ المنبثقة": [
-      "الإصلاح: لم يتم عرض تطبيقات الفيديو بشكل صحيح عند تبديل اتجاه الشاشة",
-      "الإصلاح: حجم النوافذ المنبثقة المثبتة لبعض الألعاب غير صحيح"
-    ],
     "النظام": [
       "تم تحديث تصحيح الأمان إلى أغسطس 2024 لزيادة أمان النظام."
     ],
+    "النوافذ المنبثقة": [
+      "الإصلاح: لم يتم عرض تطبيقات الفيديو بشكل صحيح عند تبديل اتجاه الشاشة",
+      "الإصلاح: حجم النوافذ المنبثقة المثبتة لبعض الألعاب غير صحيح",
+      "الإصلاح: لم يتم عرض تطبيقات الفيديو بشكل صحيح عند تبديل اتجاه الشاشة",
+      "الإصلاح: حجم النوافذ المنبثقة المثبتة لبعض الألعاب غير صحيح"
+    ],
     "شاشة القفل": [
+      "الجديد: تمت إضافة مفتاح تبديل لميزة تسمح لك بتعديل الشاشة الرئيسية بضغطة طويلة",
       "الجديد: تمت إضافة مفتاح تبديل لميزة تسمح لك بتعديل الشاشة الرئيسية بضغطة طويلة"
+    ],
+    "أخرى": [
+      "تحسين أداء النظام",
+      "تحسين أمن واستقرار النظام"
     ]
   },
   "logs_in": {
+    "सिस्टम": [
+      "सुरक्षा पैच को अगस्त 2024 से अपडेट किया गया है. सिस्टम की सुरक्षा बढ़ा दी गई है."
+    ],
+    "फ़्लोटिंग विंडोज़": [
+      "ठीक करें स्क्रीन ओरिएंटेशन बदलते समय वीडियो ऐप्स सही तरीके से नहीं दिखाई दे रहे थे",
+      "ठीक करें कुछ गेम्स के लिए पिन किए गए फ़्लोटिंग विंडो का आकार ग़लत था"
+    ],
+    "लॉक स्क्रीन": [
+      "नया फ़ीचर का स्विच जो होम स्क्रीन को लंबे समय तक दबाए रखने उसमें बदलाव करने की सुविधा देता है",
+      "नया फ़ीचर का स्विच जो होम स्क्रीन को लंबे समय तक दबाए रखने उसमें बदलाव करने की सुविधा देता है"
+    ],
     "फ़्लोटिंग विंडोज़": [
       "ठीक करें स्क्रीन ओरिएंटेशन बदलते समय वीडियो ऐप्स सही तरीके से नहीं दिखाई दे रहे थे",
       "ठीक करें कुछ गेम्स के लिए पिन किए गए फ़्लोटिंग विंडो का आकार ग़लत था"
     ],
-    "सिस्टम": [
-      "सुरक्षा पैच को अगस्त 2024 से अपडेट किया गया है. सिस्टम की सुरक्षा बढ़ा दी गई है."
-    ],
-    "लॉक स्क्रीन": [
-      "नया फ़ीचर का स्विच जो होम स्क्रीन को लंबे समय तक दबाए रखने उसमें बदलाव करने की सुविधा देता है"
+    "अन्य": [
+      "सिस्टम परफ़ॉर्मेंस ऑप्टिमाइज़ किया गया है",
+      "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
     ]
   },
   "logs_ug": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "سىستېما": [
+      "Updated the security patch to August 2024. Increased system security."
+    ],
+    "Floating windows": [
+      "Fix: Video apps weren't displayed correctly when switching screen orientation",
+      "Fix: The size of pinned floating windows for some games was incorrect",
+      "Fix: Video apps weren't displayed correctly when switching screen orientation",
+      "Fix: The size of pinned floating windows for some games was incorrect"
+    ],
+    "Lock screen": [
+      "New: A switch for a feature that allows long pressing Home screen to edit it",
+      "New: A switch for a feature that allows long pressing Home screen to edit it"
+    ],
+    "باشقىلىرى": [
+      "سىستېمىنىڭ مۇقىملىقىنى ئاشۇرۇش",
+      "سىستېما راۋانلىقىنى ئەلالاشتۇرۇش"
     ]
   },
   "logs_bo": {
-    "Other": [
+    "མ་ལག": [
+      "Updated the security patch to August 2024. Increased system security."
+    ],
+    "Floating windows": [
+      "Fix: Video apps weren't displayed correctly when switching screen orientation",
+      "Fix: The size of pinned floating windows for some games was incorrect",
+      "Fix: Video apps weren't displayed correctly when switching screen orientation",
+      "Fix: The size of pinned floating windows for some games was incorrect"
+    ],
+    "Lock screen": [
+      "New: A switch for a feature that allows long pressing Home screen to edit it",
+      "New: A switch for a feature that allows long pressing Home screen to edit it"
+    ],
+    "གཞན།": [
       "Optimized system performance",
       "Improved system security and stability"
     ]

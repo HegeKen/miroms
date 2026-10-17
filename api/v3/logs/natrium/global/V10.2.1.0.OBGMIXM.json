@@ -1,15 +1,39 @@
 {
   "logs_zh": {
     "录音机": [
+      "修复 暂停录音后无法及时更新到状态栏的问题",
       "修复 暂停录音后无法及时更新到状态栏的问题"
+    ],
+    "系统": [
+      "修复 更新Android安全补丁"
+    ],
+    "应用锁": [
+      "修复 开启应用锁后，按电源键熄灭萤幕后，直接进入简讯界面"
+    ],
+    "锁屏、状态栏、通知栏": [
+      "修复 通知无法关闭悬浮",
+      "修复 萤幕锁定的界面下拉通知栏，来讯息后界面一片黑"
+    ],
+    "相机": [
+      "修复 拍照时手机自动锁定",
+      "修复 切换相机模式时出现相机停止执行问题",
+      "修复 影片镜像开启的情况下影片中拍照没有迳向的问题"
     ]
   },
   "logs_en": {
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused",
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
+    ],
+    "System": [
+      "Fix: Updated Android Security Patch"
     ]
   },
   "logs_zh_tw": {
+    "錄音機": [
+      "修復 暫停錄音後無法即時更新到狀態欄的問題",
+      "修復 暫停錄音後無法即時更新到狀態欄的問題"
+    ],
     "系統": [
       "修復 更新Android安全性修補程式等級"
     ],
@@ -24,52 +48,55 @@
       "修復 拍照時手機自動鎖定",
       "修復 切換相機模式時出現相機停止執行問題",
       "修復 影片鏡像開啟的情況下影片中拍照沒有逕向的問題"
-    ],
-    "錄音機": [
-      "修復 暫停錄音後無法即時更新到狀態欄的問題"
     ]
   },
   "logs_ja": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "レコーダー": [
+      "修正: 録音を一時停止した際、通知シェードの録音状態が更新されない問題",
+      "修正: 録音を一時停止した際、通知シェードの録音状態が更新されない問題"
     ],
-    "App Lock": [
-      "Fix: App lock couldn^t be applied instantly in some cases"
+    "システム": [
+      "修正: Androidセキュリティパッチを更新"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received"
+    "アプリロック": [
+      "修正: アプリロックを有効にした後、電源ボタンで画面を消すとメッセージ画面に直接移動する問題。"
     ],
-    "Camera": [
-      "Fix: Phone locked automatically while making a photo",
-      "Fix: Camera stopped working after switching modes",
-      "Fix: Front camera couldn^t be mirrored for videos"
+    "ロック画面、ステータスバー、通知バー": [
+      "修正: フローティング通知をオフにできない問題",
+      "修正: ロック画面で通知シェードを開いた際、新着通知があると画面が真っ暗になりました"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "カメラ": [
+      "修正: 写真撮影中に端末が自動的にロックされました",
+      "修正: モードを切り替えるとカメラが動作を停止しました",
+      "修正: 動画でフロントカメラをミラー表示できませんでした"
     ]
   },
   "logs_ko": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "녹음기": [
+      "수정: 녹음을 일시중지했을 때 알림 창의 녹음 상태가 업데이트되지 않던 문제",
+      "수정: 녹음을 일시중지했을 때 알림 창의 녹음 상태가 업데이트되지 않던 문제"
     ],
-    "App Lock": [
-      "Fix: App lock couldn^t be applied instantly in some cases"
+    "시스템": [
+      "수정: Android 보안 패치 업데이트"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received"
+    "앱 잠금": [
+      "수정: 앱 잠금을 켠 후 전원 버튼으로 화면을 끄면 메시지 화면으로 바로 이동하는 문제."
     ],
-    "Camera": [
-      "Fix: Phone locked automatically while making a photo",
-      "Fix: Camera stopped working after switching modes",
-      "Fix: Front camera couldn^t be mirrored for videos"
+    "잠금 화면, 상태 표시줄, 알림 표시줄": [
+      "수정: 플로팅 알림을 끌 수 없는 문제",
+      "수정: 잠금 화면에서 알림창을 아래로 내린 후 메시지가 오면 화면이 검게 변하는 문제"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "카메라": [
+      "사진 촬영 시 휴대폰이 자동으로 잠기는 문제를 수정했습니다",
+      "카메라 모드를 전환할 때 카메라가 중지되는 문제를 수정했습니다.",
+      "동영상 미러가 켜진 상태에서 동영상 촬영 중 찍은 사진이 반전되지 않는 문제를 수정했습니다."
     ]
   },
   "logs_ru": {
+    "Диктофон": [
+      "Fix: Факт остановки записи не отображался в строке состояния вовремя",
+      "Fix: Факт остановки записи не отображался в строке состояния вовремя"
+    ],
     "Система": [
       "Fix: Обновление патча безопасности Android"
     ],
@@ -84,309 +111,321 @@
       "Fix: Автоматическая блокировка телефона во время съемки фото",
       "Fix: Камера прекращала работать после смены режима съемки",
       "Fix: Ошибка при использовании фронтальной камера для съемки видео"
-    ],
-    "Диктофон": [
-      "Fix: Факт остановки записи не отображался в строке состояния вовремя"
     ]
   },
   "logs_uk": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Диктофон": [
+      "Виправлено: стан запису не оновлювався в панелі сповіщень під час паузи запису",
+      "Виправлено: стан запису не оновлювався в панелі сповіщень під час паузи запису"
     ],
-    "App Lock": [
-      "Fix: App lock couldn^t be applied instantly in some cases"
+    "Система": [
+      "Виправлення: оновлено патч безпеки Android"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received"
+    "Блокування програм": [
+      "Виправлено: після ввімкнення блокування програм вимкнення екрана кнопкою живлення призводило до прямого переходу в інтерфейс Повідомлень."
     ],
-    "Camera": [
-      "Fix: Phone locked automatically while making a photo",
-      "Fix: Camera stopped working after switching modes",
-      "Fix: Front camera couldn^t be mirrored for videos"
+    "Екран блокування, рядок стану, рядок сповіщень": [
+      "Виправлено: не вдавалося вимкнути плаваючі сповіщення",
+      "Виправлено: під час відкриття панелі сповіщень на екрані блокування екран ставав чорним після отримання повідомлення."
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Камера": [
+      "Виправлено автоматичне блокування телефона під час фотографування",
+      "Виправлено проблему, коли камера зупинялася під час перемикання режимів камери.",
+      "Виправлено: коли дзеркало відео ввімкнено, фото, зроблені під час запису відео, не віддзеркалювалися."
     ]
   },
   "logs_pl": {
+    "Rejestrator": [
+      "Poprawka: stan nagrywania nie był aktualizowany na pasku powiadomień po wstrzymaniu nagrywania",
+      "Poprawka: stan nagrywania nie był aktualizowany na pasku powiadomień po wstrzymaniu nagrywania"
+    ],
     "System": [
-      "Fix: Updated Android Security Patch"
+      "Poprawka: zaktualizowano poprawkę bezpieczeństwa Android"
     ],
-    "App Lock": [
-      "Fix: App lock couldn^t be applied instantly in some cases"
+    "Blokada aplikacji": [
+      "Naprawiono: po włączeniu blokady aplikacji wyłączenie ekranu przyciskiem zasilania powodowało przejście bezpośrednio do interfejsu Wiadomości."
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received"
+    "Ekran blokady, pasek stanu, pasek powiadomień": [
+      "Naprawiono: nie można było wyłączyć powiadomień pływających",
+      "Poprawka: po rozwinięciu panelu powiadomień na ekranie blokady ekran stawał się czarny po otrzymaniu wiadomości."
     ],
-    "Camera": [
-      "Fix: Phone locked automatically while making a photo",
-      "Fix: Camera stopped working after switching modes",
-      "Fix: Front camera couldn^t be mirrored for videos"
-    ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Aparat": [
+      "Naprawiono automatyczne blokowanie telefonu podczas robienia zdjęć",
+      "Naprawiono problem zatrzymywania się aparatu podczas przełączania trybów aparatu.",
+      "Naprawiono problem: przy włączonym lustrze wideo zdjęcia wykonane podczas nagrywania nie były odbijane."
     ]
   },
   "logs_de": {
+    "Rekorder": [
+      "Behoben: Der Aufnahmestatus wurde in der Benachrichtigungsleiste nicht aktualisiert, wenn eine Aufnahme pausiert wurde",
+      "Behoben: Der Aufnahmestatus wurde in der Benachrichtigungsleiste nicht aktualisiert, wenn eine Aufnahme pausiert wurde"
+    ],
     "System": [
-      "Fix: Updated Android Security Patch"
+      "Behoben: Android-Sicherheitspatch aktualisiert"
     ],
-    "App Lock": [
-      "Fix: App lock couldn^t be applied instantly in some cases"
+    "App-Sperre": [
+      "Behoben: Nach Aktivieren der App-Sperre öffnete sich nach dem Ausschalten des Bildschirms über die Ein-/Aus-Taste direkt die Nachrichten-App."
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received"
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
+      "Behoben: Floating-Benachrichtigungen ließen sich nicht deaktivieren",
+      "Behoben: Die Benachrichtigungsleiste wurde auf dem Sperrbildschirm bei neuen Benachrichtigungen schwarz"
     ],
-    "Camera": [
-      "Fix: Phone locked automatically while making a photo",
-      "Fix: Camera stopped working after switching modes",
-      "Fix: Front camera couldn^t be mirrored for videos"
-    ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Kamera": [
+      "Behoben: Das Telefon wurde beim Fotografieren automatisch gesperrt",
+      "Behoben: Die Kamera funktionierte nach dem Wechsel des Modus nicht mehr",
+      "Behoben: Die Frontkamera konnte bei Videos nicht gespiegelt werden"
     ]
   },
   "logs_fr": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Enregistreur": [
+      "Correction : l’état d’enregistrement n’était pas mis à jour dans la barre de notifications lors d’une pause",
+      "Correction : l’état d’enregistrement n’était pas mis à jour dans la barre de notifications lors d’une pause"
     ],
-    "App Lock": [
-      "Fix: App lock couldn^t be applied instantly in some cases"
+    "Système": [
+      "Correction : Correctif de sécurité Android mis à jour"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received"
+    "Verrouillage d'application": [
+      "Corrigé : après activation du verrouillage des applis, l’extinction de l’écran via le bouton d’alimentation ouvrait directement l’interface Messages."
     ],
-    "Camera": [
-      "Fix: Phone locked automatically while making a photo",
-      "Fix: Camera stopped working after switching modes",
-      "Fix: Front camera couldn^t be mirrored for videos"
+    "Écran de verrouillage, barre d’état, barre de notifications": [
+      "Correction : impossible de désactiver les notifications flottantes",
+      "Correction : lors du déploiement du panneau de notifications sur l’écran de verrouillage, l’écran devenait noir après la réception d’un message."
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Appareil photo": [
+      "Correction du verrouillage automatique du téléphone lors de la prise de photos",
+      "Correction du problème d’arrêt de l’appareil photo lors du changement de mode.",
+      "Correction : lorsque le miroir vidéo est activé, les photos prises pendant l’enregistrement vidéo n’étaient pas reflétées."
     ]
   },
   "logs_it": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Registratore": [
+      "Correzione: lo stato di registrazione non veniva aggiornato nella barra delle notifiche quando una registrazione veniva messa in pausa",
+      "Correzione: lo stato di registrazione non veniva aggiornato nella barra delle notifiche quando una registrazione veniva messa in pausa"
     ],
-    "App Lock": [
-      "Fix: App lock couldn^t be applied instantly in some cases"
+    "Sistema": [
+      "Correzione: patch di sicurezza Android aggiornata"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received"
+    "Blocco app": [
+      "Corretto: dopo aver attivato il blocco app, spegnendo lo schermo con il tasto di accensione si apriva direttamente l'interfaccia Messaggi."
     ],
-    "Camera": [
-      "Fix: Phone locked automatically while making a photo",
-      "Fix: Camera stopped working after switching modes",
-      "Fix: Front camera couldn^t be mirrored for videos"
+    "Schermata di blocco, barra di stato, barra delle notifiche": [
+      "Corretto: impossibile disattivare le notifiche flottanti",
+      "Correzione: scorrendo verso il basso il pannello notifiche nella schermata di blocco, lo schermo diventava nero dopo l'arrivo di un messaggio."
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Fotocamera": [
+      "Risolto il blocco automatico del telefono durante lo scatto di foto",
+      "Corretto il problema per cui la fotocamera si arrestava durante il cambio di modalità.",
+      "Correzione: con lo specchio video attivo, le foto scattate durante la registrazione non venivano specchiate."
     ]
   },
   "logs_es": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Grabadora": [
+      "Corrección: El estado de grabación no se actualizaba en la barra de notificaciones al pausar una grabación",
+      "Corrección: El estado de grabación no se actualizaba en la barra de notificaciones al pausar una grabación"
     ],
-    "App Lock": [
-      "Fix: App lock couldn^t be applied instantly in some cases"
+    "Sistema": [
+      "Corrección: parche de seguridad de Android actualizado"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received"
+    "Bloqueo de aplicaciones": [
+      "Corregido: tras activar el bloqueo de apps, al apagar la pantalla con el botón de encendido se abría directamente la interfaz de Mensajes."
     ],
-    "Camera": [
-      "Fix: Phone locked automatically while making a photo",
-      "Fix: Camera stopped working after switching modes",
-      "Fix: Front camera couldn^t be mirrored for videos"
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Corregido: no se podían desactivar las notificaciones flotantes",
+      "Corrección: al desplegar el panel de notificaciones en la pantalla de bloqueo, la pantalla se quedaba en negro tras recibir un mensaje."
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Cámara": [
+      "Se corrigió el bloqueo automático del teléfono al hacer fotos",
+      "Corregido el problema por el que la cámara dejaba de funcionar al cambiar de modo.",
+      "Corrección: al activar el espejo de vídeo, las fotos tomadas durante la grabación no se reflejaban."
     ]
   },
   "logs_pt": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Gravador": [
+      "Correção: o estado da gravação não era atualizado na barra de notificações ao pausar uma gravação",
+      "Correção: o estado da gravação não era atualizado na barra de notificações ao pausar uma gravação"
     ],
-    "App Lock": [
-      "Fix: App lock couldn^t be applied instantly in some cases"
+    "Sistema": [
+      "Correção: patch de segurança do Android atualizado"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received"
+    "Bloqueio de aplicativos": [
+      "Corrigido: após ativar o bloqueio de apps, ao desligar a tela com o botão liga/desliga, abria diretamente a interface Mensagens."
     ],
-    "Camera": [
-      "Fix: Phone locked automatically while making a photo",
-      "Fix: Camera stopped working after switching modes",
-      "Fix: Front camera couldn^t be mirrored for videos"
+    "Tela de bloqueio, barra de status, barra de notificações": [
+      "Corrigido: não era possível desativar notificações flutuantes",
+      "Correção: ao abrir o painel de notificações na tela de bloqueio, a tela ficava preta após receber uma mensagem."
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Câmera": [
+      "Corrigido o bloqueio automático do telefone ao tirar fotos",
+      "Corrigido o problema em que a câmera parava ao alternar entre modos da câmera.",
+      "Correção: com o espelhamento de vídeo ativado, as fotos tiradas durante a gravação não eram espelhadas."
     ]
   },
   "logs_tr": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Kayıt Cihazı": [
+      "Düzeltme: Kayıt duraklatıldığında kayıt durumu bildirim çubuğunda güncellenmiyordu",
+      "Düzeltme: Kayıt duraklatıldığında kayıt durumu bildirim çubuğunda güncellenmiyordu"
     ],
-    "App Lock": [
-      "Fix: App lock couldn^t be applied instantly in some cases"
+    "Sistem": [
+      "Düzeltme: Android güvenlik yaması güncellendi"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received"
+    "Uygulama kilidi": [
+      "Düzeltildi: Uygulama kilidi açıldıktan sonra güç düğmesiyle ekran kapatıldığında doğrudan Mesajlar arayüzüne girilmesi sorunu giderildi."
     ],
-    "Camera": [
-      "Fix: Phone locked automatically while making a photo",
-      "Fix: Camera stopped working after switching modes",
-      "Fix: Front camera couldn^t be mirrored for videos"
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Düzeltme: Yüzen bildirimler kapatılamıyordu",
+      "Düzeltme: Kilit ekranında bildirim panelini aşağı çekince mesaj geldikten sonra ekranın siyah olması sorunu giderildi."
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Kamera": [
+      "Fotoğraf çekerken telefonun otomatik kilitlenmesi sorunu giderildi",
+      "Kamera modları arasında geçiş yaparken kameranın durması sorunu giderildi.",
+      "Düzeltme: video aynası açıkken video kaydı sırasında çekilen fotoğraflar yansıtılmıyordu."
     ]
   },
   "logs_id": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Perekam": [
+      "Perbaikan: Status perekaman tidak diperbarui di bilah notifikasi saat perekaman dijeda",
+      "Perbaikan: Status perekaman tidak diperbarui di bilah notifikasi saat perekaman dijeda"
     ],
-    "App Lock": [
-      "Fix: App lock couldn^t be applied instantly in some cases"
+    "Sistem": [
+      "Perbaikan: Patch keamanan Android diperbarui"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received"
+    "Kunci aplikasi": [
+      "Diperbaiki: setelah mengaktifkan kunci aplikasi, menekan tombol daya untuk mematikan layar langsung membuka antarmuka Pesan."
     ],
-    "Camera": [
-      "Fix: Phone locked automatically while making a photo",
-      "Fix: Camera stopped working after switching modes",
-      "Fix: Front camera couldn^t be mirrored for videos"
+    "Layar kunci, bilah status, bilah notifikasi": [
+      "Perbaikan: notifikasi mengambang tidak dapat dimatikan",
+      "Perbaikan: menurunkan panel notifikasi di layar kunci membuat layar menjadi hitam setelah pesan masuk."
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Kamera": [
+      "Memperbaiki kunci otomatis ponsel saat mengambil foto",
+      "Memperbaiki masalah kamera berhenti saat beralih mode kamera.",
+      "Perbaikan: saat cermin video aktif, foto yang diambil selama perekaman video tidak dicerminkan."
     ]
   },
   "logs_vi": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Máy ghi âm": [
+      "Đã sửa: Trạng thái ghi âm không được cập nhật kịp thời trên thanh thông báo khi tạm dừng ghi âm",
+      "Đã sửa: Trạng thái ghi âm không được cập nhật kịp thời trên thanh thông báo khi tạm dừng ghi âm"
     ],
-    "App Lock": [
-      "Fix: App lock couldn^t be applied instantly in some cases"
+    "Hệ thống": [
+      "Sửa lỗi: Đã cập nhật bản vá bảo mật Android"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received"
+    "Khóa ứng dụng": [
+      "Đã sửa: sau khi bật khóa ứng dụng, nhấn nút nguồn để tắt màn hình sẽ vào thẳng giao diện Tin nhắn."
     ],
-    "Camera": [
-      "Fix: Phone locked automatically while making a photo",
-      "Fix: Camera stopped working after switching modes",
-      "Fix: Front camera couldn^t be mirrored for videos"
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Đã sửa: không thể tắt thông báo nổi",
+      "Sửa lỗi: kéo xuống bảng thông báo trên màn hình khóa khiến màn hình bị đen sau khi có tin nhắn đến."
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Máy ảnh": [
+      "Đã sửa lỗi điện thoại tự động khóa khi chụp ảnh",
+      "Đã khắc phục sự cố camera dừng hoạt động khi chuyển chế độ camera.",
+      "Sửa lỗi: khi bật gương video, ảnh chụp trong lúc quay video không bị phản chiếu."
     ]
   },
   "logs_th": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "เครื่องบันทึกเสียง": [
+      "แก้ไข: สถานะการบันทึกเสียงไม่ได้รับการอัปเดตในแถบการแจ้งเตือนเมื่อหยุดการบันทึกชั่วคราว",
+      "แก้ไข: สถานะการบันทึกเสียงไม่ได้รับการอัปเดตในแถบการแจ้งเตือนเมื่อหยุดการบันทึกชั่วคราว"
     ],
-    "App Lock": [
-      "Fix: App lock couldn^t be applied instantly in some cases"
+    "ระบบ": [
+      "แก้ไข: อัปเดตแพตช์ความปลอดภัย Android แล้ว"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received"
+    "ล็อกแอป": [
+      "แก้ไข: หลังจากเปิดใช้การล็อกแอป เมื่อกดปุ่มเปิด/ปิดเครื่องเพื่อปิดหน้าจอ จะเข้าสู่หน้าจอข้อความโดยตรง"
     ],
-    "Camera": [
-      "Fix: Phone locked automatically while making a photo",
-      "Fix: Camera stopped working after switching modes",
-      "Fix: Front camera couldn^t be mirrored for videos"
+    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
+      "แก้ไข: ไม่สามารถปิดการแจ้งเตือนแบบลอยได้",
+      "แก้ไข: เมื่อเลื่อนแผงการแจ้งเตือนลงบนหน้าจอล็อก หน้าจอจะกลายเป็นสีดำหลังจากมีข้อความเข้ามา"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "กล้อง": [
+      "แก้ไขปัญหามือถือล็อกอัตโนมัติขณะถ่ายรูป",
+      "แก้ไขปัญหากล้องหยุดทำงานเมื่อสลับโหมดกล้อง",
+      "แก้ไขปัญหาภาพถ่ายระหว่างการบันทึกวิดีโอไม่ถูกสะท้อนเมื่อเปิดกระจกวิดีโอ"
     ]
   },
   "logs_ar": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "مسجل": [
+      "إصلاح: لم يتم تحديث حالة التسجيل في شريط الإشعارات عند إيقاف التسجيل مؤقتًا",
+      "إصلاح: لم يتم تحديث حالة التسجيل في شريط الإشعارات عند إيقاف التسجيل مؤقتًا"
     ],
-    "App Lock": [
-      "Fix: App lock couldn^t be applied instantly in some cases"
+    "النظام": [
+      "إصلاح: تحديث تصحيح أمان Android"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received"
+    "قفل التطبيقات": [
+      "تم الإصلاح: بعد تفعيل قفل التطبيقات، أدى إطفاء الشاشة بزر الطاقة إلى الدخول مباشرة إلى واجهة الرسائل."
     ],
-    "Camera": [
-      "Fix: Phone locked automatically while making a photo",
-      "Fix: Camera stopped working after switching modes",
-      "Fix: Front camera couldn^t be mirrored for videos"
+    "شاشة القفل، شريط الحالة، شريط الإشعارات": [
+      "إصلاح: تعذّر إيقاف الإشعارات العائمة",
+      "إصلاح: عند سحب لوحة الإشعارات لأسفل على شاشة القفل، تصبح الشاشة سوداء بعد وصول رسالة."
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "الكاميرا": [
+      "تم إصلاح قفل الهاتف تلقائيًا أثناء التقاط الصور",
+      "إصلاح مشكلة توقف الكاميرا عن العمل عند تبديل أوضاع الكاميرا",
+      "إصلاح مشكلة عدم انعكاس الصور الملتقطة أثناء تسجيل الفيديو عند تفعيل مرآة الفيديو."
     ]
   },
   "logs_in": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "रिकॉर्डर": [
+      "समस्या ठीक की गई: रिकॉर्डिंग पॉज़ करने पर नोटिफ़िकेशन शेड में स्थिति तुरंत अपडेट नहीं होती थी",
+      "समस्या ठीक की गई: रिकॉर्डिंग पॉज़ करने पर नोटिफ़िकेशन शेड में स्थिति तुरंत अपडेट नहीं होती थी"
     ],
-    "App Lock": [
-      "Fix: App lock couldn^t be applied instantly in some cases"
+    "सिस्टम": [
+      "सुधार: Android सुरक्षा पैच अपडेट किया गया"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received"
+    "ऐप लॉक": [
+      "ठीक किया गया: ऐप लॉक सक्षम करने के बाद पावर बटन से स्क्रीन बंद करने पर सीधे संदेश इंटरफ़ेस में प्रवेश करने की समस्या."
     ],
-    "Camera": [
-      "Fix: Phone locked automatically while making a photo",
-      "Fix: Camera stopped working after switching modes",
-      "Fix: Front camera couldn^t be mirrored for videos"
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
+      "ठीक किया गया: फ़्लोटिंग सूचनाएँ बंद नहीं की जा सकती थीं",
+      "ठीक किया गया: लॉक स्क्रीन पर सूचना शेड नीचे खींचने के बाद संदेश आने पर स्क्रीन काली हो जाती थी।"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "कैमरा": [
+      "फ़ोटो लेते समय फ़ोन के अपने आप लॉक होने की समस्या ठीक की गई",
+      "कैमरा मोड बदलने पर कैमरा बंद होने की समस्या ठीक की गई।",
+      "सुधार: वीडियो मिरर चालू होने पर वीडियो रिकॉर्डिंग के दौरान ली गई तस्वीरें मिरर नहीं होती थीं।"
     ]
   },
   "logs_ug": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "ئاۋاز ئالغۇ": [
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused",
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
     ],
-    "App Lock": [
-      "Fix: App lock couldn^t be applied instantly in some cases"
+    "سىستېما": [
+      "تۈزىتىش: Android بىخەتەرلىك يامىقى يېڭىلاندى"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Notification shade went black on the Lock screen when new notifications were received"
+    "ئەپ قۇلۇپى": [
+      "ئەپ قۇلۇپىنى ئاچقاندىن كېيىن، توك كۇنۇپكىسىنى بېسىپ ئېكراننى ئۆچۈرگەندىن كېيىن، بىۋاسىتە ئۇچۇر كۆرۈنمە يۈزىگە كىرىپ كېتىش مەسىلىسى تۈزىتىلدى."
     ],
-    "Camera": [
-      "Fix: Phone locked automatically while making a photo",
-      "Fix: Camera stopped working after switching modes",
-      "Fix: Front camera couldn^t be mirrored for videos"
+    "قۇلۇپ ئېكرانى، ھالەت بالدىقى، ئۇقتۇرۇش بالدىقى": [
+      "Fix: Couldn't restrict floating notifications",
+      "قۇلۇپلانغان ئېكران كۆرۈنۈشىدە ئۇقتۇرۇش تاختىسىنى تۆۋەنگە سۆرەپ چۈشۈرگەندە، ئۇچۇر كەلگەندىن كېيىن كۆرۈنۈشنىڭ پۈتۈنلەي قارىيىپ قېلىش مەسىلىسى تۈزىتىلدى."
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "كامېرا": [
+      "رەسىم تارتىۋاتقاندا تېلېفوننىڭ ئۆزلۈكىدىن قۇلۇپلىنىش مەسىلىسى تۈزىتىلدى",
+      "كامېرا ھالىتىنى ئالماشتۇرغاندا كامېرنىڭ ئىجرا بولۇشتىن توختاپ قېلىش مەسىلىسى تۈزىتىلدى.",
+      "Fix: Front camera couldn't be mirrored for videos"
     ]
   },
   "logs_bo": {
-    "System": [
+    "སྒྲ་འཇུག་ཆས": [
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused",
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
+    ],
+    "མ་ལག": [
       "Fix: Updated Android Security Patch"
     ],
     "App Lock": [
-      "Fix: App lock couldn^t be applied instantly in some cases"
+      "Fix: App lock couldn't be applied instantly in some cases"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: Couldn^t restrict floating notifications",
+    "Lockscreen, status bar, Notification shade": [
+      "Fix: Couldn't restrict floating notifications",
       "Fix: Notification shade went black on the Lock screen when new notifications were received"
     ],
-    "Camera": [
+    "པར་ཆས": [
       "Fix: Phone locked automatically while making a photo",
       "Fix: Camera stopped working after switching modes",
-      "Fix: Front camera couldn^t be mirrored for videos"
-    ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Fix: Front camera couldn't be mirrored for videos"
     ]
   }
 }

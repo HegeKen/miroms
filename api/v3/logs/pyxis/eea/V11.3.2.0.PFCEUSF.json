@@ -1,9 +1,11 @@
 {
   "logs_zh": {
     "系统": [
-      "更新谷歌安全补丁（2020#02），提升系统安全性"
+      "更新谷歌安全补丁（2020#02），提升系统安全性",
+      "修复 长截屏底部画面重叠的问题"
     ],
     "状态栏、通知栏": [
+      "修复 手机分身中，无法通过通知栏进入应用通知设置页的问题",
       "修复 手机分身中，无法通过通知栏进入应用通知设置页的问题"
     ],
     "安全中心": [
@@ -15,10 +17,12 @@
   },
   "logs_en": {
     "System": [
-      "Updated Android Security Patch to February 2020. Increased system security."
+      "Updated Android Security Patch to February 2020. Increased system security.",
+      "Fix: Images overlapped in scrolling screenshots"
     ],
     "Status bar, Notification shade": [
-      "Fix: Couldn^t open notification settings in the Notification shade in Second space"
+      "Fix: Couldn't open notification settings in the Notification shade in Second space",
+      "Fix: Couldn't open notification settings in the Notification shade in Second space"
     ],
     "Security": [
       "Optimization: Localized payment security icon for India"
@@ -29,13 +33,15 @@
   },
   "logs_zh_tw": {
     "系統": [
-      "更新Android安全性修補程式等級（2020#02），提升系統安全性"
+      "更新Android安全性修補程式等級（2020#02），提升系統安全性",
+      "修復: 長截圖底部畫面重疊的問題"
     ],
     "狀態欄、通知欄": [
+      "修復: 手機分身中，無法通過通知列進入應用通知設定頁的問題",
       "修復: 手機分身中，無法通過通知列進入應用通知設定頁的問題"
     ],
     "安全中心": [
-      "優化: 安全支付圖示新增印度貨幣樣式"
+      "優化 安全支付圖示新增印度貨幣樣式"
     ],
     "其他": [
       "修復: 長截圖底部畫面重疊的問題"
@@ -43,10 +49,15 @@
   },
   "logs_ja": {
     "システム": [
-      "Androidセキュリティパッチを2020年2月にアップデートしました。システムセキュリティが向上しました。"
+      "Androidセキュリティパッチを2020年2月にアップデートしました。システムセキュリティが向上しました。",
+      "修正: スクロールスクリーンショットで画像が重なる問題"
     ],
     "ステータスバー、通知シェード": [
+      "修正: セカンド・スペースの通知シェードで通知設定を開けない問題",
       "修正: セカンド・スペースの通知シェードで通知設定を開けない問題"
+    ],
+    "セキュリティ": [
+      "最適化: インド向けにローカライズした決済セキュリティアイコン"
     ],
     "その他": [
       "修正: スクロールスクリーンショットで画像が重なる問題"
@@ -54,9 +65,11 @@
   },
   "logs_ko": {
     "시스템": [
-      "Android 보안패치 (2020#02) 업데이트됨. 시스템 보안이 향상되었습니다."
+      "Android 보안패치 (2020#02) 업데이트됨. 시스템 보안이 향상되었습니다.",
+      "수정: 스크롤 스크린샷의 이미지가 겹쳐지는 문제"
     ],
     "상태 바, 알림 바": [
+      "수정: 보조 공간의 알림 바에서 알림 설정을 열 수 없는 문제",
       "수정: 보조 공간의 알림 바에서 알림 설정을 열 수 없는 문제"
     ],
     "보안": [
@@ -68,9 +81,11 @@
   },
   "logs_ru": {
     "Система": [
-      "Обновление системы безопасности Android (февраль 2020 года). Улучшена безопасность системы."
+      "Обновление системы безопасности Android (февраль 2020 года). Улучшена безопасность системы.",
+      "Исправлено: Изображения перекрывались на снимках экрана с прокруткой"
     ],
     "Строка состояния, шторка уведомлений": [
+      "Исправлено: Исправлена ошибка, из-за которой не удавалось открыть настройки уведомлений через шторку уведомлений во втором пространстве",
       "Исправлено: Исправлена ошибка, из-за которой не удавалось открыть настройки уведомлений через шторку уведомлений во втором пространстве"
     ],
     "Безопасность": [
@@ -82,13 +97,15 @@
   },
   "logs_uk": {
     "Система": [
-      "Оновлення системи безпеки Android (лютий 2020 року). Збільшена безпека системи."
+      "Оновлення системи безпеки Android (лютий 2020 року). Збільшена безпека системи.",
+      "Виправлено: Зображення накладаються одне на одне під час прокручування скріншотів"
     ],
     "Рядок стану, Панель сповіщень": [
+      "Виправлено: Не вдається відкрити налаштування сповіщень у Панелі сповіщень у Другому сховищі",
       "Виправлено: Не вдається відкрити налаштування сповіщень у Панелі сповіщень у Другому сховищі"
     ],
     "Безпека": [
-      "Оптимізація: Додана локалізація значка безпеки платежів для Індії"
+      "Оптимізація Додана локалізація значка безпеки платежів для Індії"
     ],
     "Інше": [
       "Виправлено: Зображення накладаються одне на одне під час прокручування скріншотів"
@@ -96,41 +113,63 @@
   },
   "logs_pl": {
     "System": [
-      "Zaktualizowano Pakiet Bezpieczeństwa Android do lutego 2020 r. Zwiększono bezpieczeństwo systemu."
+      "Zaktualizowano Pakiet Bezpieczeństwa Android do lutego 2020 r. Zwiększono bezpieczeństwo systemu.",
+      "Naprawiono: Obrazy nakładały się na siebie podczas przewijania zrzutów ekranu"
     ],
     "Pasek powiadomień, Panel powiadomień": [
+      "Naprawiono: Nie można było otworzyć ustawień powiadomień w Pasku powiadomień drugiej przestrzeni",
       "Naprawiono: Nie można było otworzyć ustawień powiadomień w Pasku powiadomień drugiej przestrzeni"
     ],
-    "Panel sterowania": [
+    "Bezpieczeństwo": [
       "Zoptymalizowano: Dodano ikonę bezpiecznej płatności dla Indii"
     ],
     "Inne": [
       "Naprawiono: Obrazy nakładały się na siebie podczas przewijania zrzutów ekranu"
     ]
   },
+  "logs_de": {
+    "System": [
+      "Android-Sicherheitspatch auf Februar 2020 aktualisiert. Systemsicherheit erhöht.",
+      "Behoben: Bilder überlappten sich in Scroll-Screenshots"
+    ],
+    "Statusleiste, Benachrichtigungsleiste": [
+      "Behoben: Benachrichtigungseinstellungen konnten im Zweiten Space nicht über die Benachrichtigungsleiste geöffnet werden",
+      "Behoben: Benachrichtigungseinstellungen konnten im Zweiten Space nicht über die Benachrichtigungsleiste geöffnet werden"
+    ],
+    "Sicherheit": [
+      "Optimierung: Lokalisiertes Sicherheitssymbol für Zahlungen für Indien"
+    ],
+    "Sonstiges": [
+      "Behoben: Bilder überlappten sich in Scroll-Screenshots"
+    ]
+  },
   "logs_fr": {
     "Système": [
-      "Mise à jour du correctif de sécurité Android jusqu^en février 2020. Augmentation de la sécurité du système."
+      "Mise à jour du correctif de sécurité Android jusqu'en février 2020. Augmentation de la sécurité du système.",
+      "Réparé: Les images se sont superposées dans le défilement des captures d'écran"
     ],
     "Barre d'état, Panneau de notification": [
-      "Réparé: Impossible d^ouvrir les paramètres dans le panneau de notification du Second espace"
+      "Réparé: Impossible d'ouvrir les paramètres dans le panneau de notification du Second espace",
+      "Réparé: Impossible d'ouvrir les paramètres dans le panneau de notification du Second espace"
     ],
     "Sécurité": [
-      "Optimisation: Icône de sécurité de paiement localisée pour l^Inde"
+      "Optimisation: Icône de sécurité de paiement localisée pour l'Inde"
     ],
     "Autre": [
-      "Réparé: Les images se sont superposées dans le défilement des captures d^écran"
+      "Réparé: Les images se sont superposées dans le défilement des captures d'écran"
     ]
   },
   "logs_it": {
     "Sistema": [
-      "Patch di sicurezza Android aggiornata a febbraio 2020. Maggiore sicurezza del sistema."
+      "Patch di sicurezza Android aggiornata a febbraio 2020. Maggiore sicurezza del sistema.",
+      "Risolto: Le immagini erano sovrapposte negli screenshot a scorrimento"
     ],
     "Barra di stato, Area delle notifiche": [
-      "Risolto: Impossibile aprire le impostazioni di notifica nell^area delle notifiche in Secondo spazio"
+      "Risolto: Impossibile aprire le impostazioni di notifica nell'area delle notifiche in Secondo spazio",
+      "Risolto: Impossibile aprire le impostazioni di notifica nell'area delle notifiche in Secondo spazio"
     ],
     "Sicurezza": [
-      "Ottimizzazione: Icona di sicurezza di pagamento specifica per l^India"
+      "Ottimizzazione: Icona di sicurezza di pagamento specifica per l'India"
     ],
     "Altro": [
       "Risolto: Le immagini erano sovrapposte negli screenshot a scorrimento"
@@ -138,9 +177,11 @@
   },
   "logs_es": {
     "Sistema": [
-      "Parche de seguridad de Android actualizado a febrero de 2020. Seguridad del sistema incrementada."
+      "Parche de seguridad de Android actualizado a febrero de 2020. Seguridad del sistema incrementada.",
+      "Reparado: Imágenes superpuestas en las capturas de pantalla desplazables"
     ],
     "Barra de estado, Barra de notificaciones": [
+      "Reparado: No se podía abrir los ajustes de notificaciones en la Barra de notificaciones en el Segundo espacio",
       "Reparado: No se podía abrir los ajustes de notificaciones en la Barra de notificaciones en el Segundo espacio"
     ],
     "Seguridad": [
@@ -152,9 +193,11 @@
   },
   "logs_pt": {
     "Sistema": [
-      "Atualização do Patch de Segurança do Android para Fevereiro de 2020. Segurança do sistema aprimorada."
+      "Atualização do Patch de Segurança do Android para Fevereiro de 2020. Segurança do sistema aprimorada.",
+      "Correção: Imagens em capturas de tela estendidas eram sobrepostas"
     ],
     "Barra de status, Área de notificações": [
+      "Correção: Não era possível abrir as configurações de notificações na Área de notificações do Segundo Espaço",
       "Correção: Não era possível abrir as configurações de notificações na Área de notificações do Segundo Espaço"
     ],
     "Segurança": [
@@ -166,9 +209,11 @@
   },
   "logs_tr": {
     "Sistem": [
-      "Android Güvenlik Patch^i Şubat 2020^de güncellendi. Sistem güvenliği artırıldı."
+      "Android Güvenlik Patch'i Şubat 2020'de güncellendi. Sistem güvenliği artırıldı.",
+      "Onarım: Kaydırılan ekran görüntülerinde üst üste binen resimler"
     ],
     "Durum çubuğu, Bildirim çubuğu": [
+      "Onarım: Bildirim çubuğunda, ikinci bir alanda bildirim ayarları açılamadı",
       "Onarım: Bildirim çubuğunda, ikinci bir alanda bildirim ayarları açılamadı"
     ],
     "Güvenlik": [
@@ -180,9 +225,11 @@
   },
   "logs_id": {
     "Sistem": [
-      "Patch Keamanan Android diperbarui (Februari 2020). Keamanan sistem ditingkatkan."
+      "Patch Keamanan Android diperbarui (Februari 2020). Keamanan sistem ditingkatkan.",
+      "Perbaikan: Gambar tumpang tindih di screenshot bergulir"
     ],
     "Bar status, Layar notiifikasi": [
+      "Perbaikan: Tidak dapat membuka setelan notifikasi di Layar notifikasi pada Ruang kedua",
       "Perbaikan: Tidak dapat membuka setelan notifikasi di Layar notifikasi pada Ruang kedua"
     ],
     "Keamanan": [
@@ -194,10 +241,15 @@
   },
   "logs_vi": {
     "Hệ thống": [
-      "Cập nhật Bản vá Bảo mật Android đến tháng 2 năm 2020. Tăng cường bảo mật hệ thống."
+      "Cập nhật Bản vá Bảo mật Android đến tháng 2 năm 2020. Tăng cường bảo mật hệ thống.",
+      "Sửa: Ảnh bị chồng khi chụp ảnh màn hình kéo dài"
     ],
     "Thanh trạng thái, Thanh thông báo": [
+      "Sửa: Không thể mở cài đặt thông báo trong Thanh thông báo trên Không gian thứ 2",
       "Sửa: Không thể mở cài đặt thông báo trong Thanh thông báo trên Không gian thứ 2"
+    ],
+    "Bảo mật": [
+      "Optimization: Localized payment security icon for India"
     ],
     "Khác": [
       "Sửa: Ảnh bị chồng khi chụp ảnh màn hình kéo dài"
@@ -205,10 +257,15 @@
   },
   "logs_th": {
     "ระบบ": [
-      "อัปเดตแพทช์ความปลอดภัยของแอนดรอยด์ เป็นเดือนกุมภาพันธ์ 2020 เพิ่มความปลอดภัยของระบบ"
+      "อัปเดตแพทช์ความปลอดภัยของแอนดรอยด์ เป็นเดือนกุมภาพันธ์ 2020 เพิ่มความปลอดภัยของระบบ",
+      "แก้ไข: ภาพซ้อนทับในการเลื่อนการบันทึกหน้าจอ"
     ],
     "แถบสถานะ, แถบแจ้งเตือน": [
+      "แก้ไข: ไม่สามารถเปิดการตั้งค่าการแจ้งเตือนในแถบแจ้งเตือนในพื้นที่ทับซ้อน",
       "แก้ไข: ไม่สามารถเปิดการตั้งค่าการแจ้งเตือนในแถบแจ้งเตือนในพื้นที่ทับซ้อน"
+    ],
+    "ความปลอดภัย": [
+      "Optimization: Localized payment security icon for India"
     ],
     "อื่นๆ": [
       "แก้ไข: ภาพซ้อนทับในการเลื่อนการบันทึกหน้าจอ"
@@ -216,16 +273,68 @@
   },
   "logs_ar": {
     "النظام": [
-      "تم تحديث تصحيح أمان Android إلى  فبراير 2020 لزيادة أمان النظام."
+      "تم تحديث تصحيح أمان Android إلى  فبراير 2020 لزيادة أمان النظام.",
+      ":الإصلاح تداخل الصور في لقطات الشاشة القابلة للتمرير"
     ],
     "شريط الحالة ومركز الإشعارات": [
+      ":الإصلاح لا يمكن فتح إعدادات الإشعارات من مركز الإشعارات في الواجهة الثانية",
       ":الإصلاح لا يمكن فتح إعدادات الإشعارات من مركز الإشعارات في الواجهة الثانية"
     ],
-    "الحماية": [
-      ":التحسين إضافة أيقونة الدفع الآمن خاصة بالهند"
+    "الأمان": [
+      "التحسين إضافة أيقونة الدفع الآمن خاصة بالهند"
     ],
     "أخرى": [
       ":الإصلاح تداخل الصور في لقطات الشاشة القابلة للتمرير"
+    ]
+  },
+  "logs_in": {
+    "सिस्टम": [
+      "Android सुरक्षा पैच फ़रवरी 2020 में अपडेट किया गया। सिस्टम सुरक्षा बढ़ाई गई।",
+      "Fix: Images overlapped in scrolling screenshots"
+    ],
+    "स्टेटस बार, नोटिफिकेशन शेड": [
+      "Fix: Couldn't open notification settings in the Notification shade in Second space",
+      "Fix: Couldn't open notification settings in the Notification shade in Second space"
+    ],
+    "सुरक्षा": [
+      "Optimization: Localized payment security icon for India"
+    ],
+    "अन्य": [
+      "Fix: Images overlapped in scrolling screenshots"
+    ]
+  },
+  "logs_ug": {
+    "سىستېما": [
+      "Updated Android Security Patch to February 2020. Increased system security.",
+      "Fix: Images overlapped in scrolling screenshots"
+    ],
+    "Status bar, Notification shade": [
+      "Fix: Couldn't open notification settings in the Notification shade in Second space",
+      "Fix: Couldn't open notification settings in the Notification shade in Second space"
+    ],
+    "بىخەتەرلىك مەركىزى": [
+      "Optimization: Localized payment security icon for India"
+    ],
+    "باشقا": [
+      "Fix: Images overlapped in scrolling screenshots"
+    ]
+  },
+  "logs_bo": {
+    "རིམ་ལུགས": [
+      "Updated Android Security Patch to February 2020. Increased system security."
+    ],
+    "Status bar, Notification shade": [
+      "Fix: Couldn't open notification settings in the Notification shade in Second space",
+      "Fix: Couldn't open notification settings in the Notification shade in Second space"
+    ],
+    "བདེ་འཇགས་ལྟེ་གནས": [
+      "Optimization: Localized payment security icon for India"
+    ],
+    "གཞན་པ": [
+      "Fix: Images overlapped in scrolling screenshots"
+    ],
+    "མ་ལག": [
+      "Fix: Images overlapped in scrolling screenshots"
     ]
   }
 }

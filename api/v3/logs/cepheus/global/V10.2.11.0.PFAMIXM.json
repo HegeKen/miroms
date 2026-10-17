@@ -2,7 +2,9 @@
   "logs_zh": {
     "系统": [
       "优化 锁屏误触问题，避免手机在口袋中发生屏幕误操作",
-      "更新谷歌安全补丁（2019#5），提升系统安全性"
+      "更新谷歌安全补丁（2019#5），提升系统安全性",
+      "更新谷歌安全补丁（2019#6），提升系统安全性",
+      "更新谷歌安全补丁（2019#6），提升系统安全性"
     ],
     "锁屏、状态栏、通知栏": [
       "新增 系统主题下，锁屏时钟支持三种自定义样式，可在锁屏高级设置中修改",
@@ -11,28 +13,68 @@
       "修复 横屏状态下无法正常打开指纹快捷功能的问题",
       "修复 息屏下偶现指纹解锁失败的问题",
       "修复 锁屏上来电时偶现屏幕无法亮起的问题",
+      "修复 锁屏上动态壁纸偶现黑屏的问题",
+      "新增 系统主题下，锁屏时钟支持三种自定义样式，可在锁屏高级设置中修改",
+      "优化 人脸解锁成功后可用指纹进入桌面",
+      "修复 解锁进入横屏界面时有异常闪亮的问题",
+      "修复 横屏状态下无法正常打开指纹快捷功能的问题",
+      "修复 息屏下偶现指纹解锁失败的问题",
+      "修复 锁屏上来电时偶现屏幕无法亮起的问题",
+      "修复 锁屏上动态壁纸偶现黑屏的问题",
+      "新增 萤幕熄灭时显示支援不显示指纹图标，但指纹可用",
+      "新增 系统主题下，锁屏时钟支持三种自定义样式，可在锁屏高级设置中修改",
+      "优化 人脸解锁成功后可用指纹进入桌面",
+      "修复 解锁进入横屏界面时有异常闪亮的问题",
+      "修复 横屏状态下无法正常打开指纹快捷功能的问题",
+      "修复 息屏下偶现指纹解锁失败的问题",
+      "修复 锁屏上来电时偶现屏幕无法亮起的问题",
       "修复 锁屏上动态壁纸偶现黑屏的问题"
+    ],
+    "设置": [
+      "新增 萤幕熄灭时显示支援不显示指纹图标，但指纹可用"
     ]
   },
   "logs_en": {
     "System": [
+      "Optimization: Lock screen pocket mode",
+      "Updated Android Security Patch to May 2019. Increased system security.",
+      "Updated Android Security Patch to May 2019. Increased system security.",
       "Updated Android Security Patch to May 2019. Increased system security."
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+    "Lockscreen, Status Bar, Notification Bar": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
       "Optimization: You can open Home screen using your fingerprint after your face data is verified",
       "Fix: Errors occurred after unlocking device in landscape mode",
-      "Fix: Fingerprint shortcuts didn^t work in landscape orientation",
-      "Fix: Fingerprint unlock didn^t always work with the screen off",
-      "Fix: Screen didn^t always light up for notifications",
+      "Optimized system performance",
+      "Improved system security and stability",
+      "Fix: Screen didn't always light up for notifications",
+      "Fix: Screen went black in some cases when video wallpapers were used"
+    ],
+    "Lockscreen, status bar, Notification shade": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Optimization: You can open Home screen using your fingerprint after your face data is verified",
+      "Fix: Errors occurred after unlocking device in landscape mode",
+      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
+      "Fix: Fingerprint unlock didn't always work with the screen off",
+      "Fix: Screen didn't always light up for notifications",
       "Fix: Screen went black in some cases when video wallpapers were used"
     ]
   },
   "logs_zh_tw": {
     "系統": [
+      "優化 鎖屏誤觸問題，避免手機在口袋中發生螢幕誤操作",
+      "更新Android安全性修補程式等級(2019#5)，提升系統安全性",
+      "更新Android安全性修補程式等級(2019#5)，提升系統安全性",
       "更新Android安全性修補程式等級(2019#5)，提升系統安全性"
     ],
     "解鎖畫面、狀態欄、通知欄": [
+      "新增 系統主題下，鎖屏時鐘支援三種自訂型式，可在鎖屏進階設定中修改",
+      "優化 人臉解鎖成功後可用指紋進入桌面",
+      "修復 解鎖進入橫向螢幕介面時有異常閃亮的問題",
+      "修復 橫向螢幕狀態下無法正常打開指紋快捷功能的問題",
+      "修復 螢幕熄滅下偶現指紋解鎖失敗的問題",
+      "修復 螢幕鎖定上來電時偶現螢幕無法亮起的問題",
+      "修復 螢幕鎖定上動態壁紙偶現黑屏的問題",
       "新增 螢幕熄滅時顯示支援不顯示指紋圖標，但指紋可用",
       "新增 系統主題下，鎖屏時鐘支援三種自訂型式，可在鎖屏進階設定中修改",
       "優化 人臉解鎖成功後可用指紋進入桌面",
@@ -47,46 +89,72 @@
     ]
   },
   "logs_ja": {
-    "System": [
-      "Updated Android Security Patch to May 2019. Increased system security."
+    "システム": [
+      "Android セキュリティパッチを 2019 年 5 月に更新しました。システムの安全性が向上しました。",
+      "Android セキュリティパッチを 2019 年 5 月に更新しました。システムの安全性が向上しました。"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally.",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "Optimization: You can open Home screen using your fingerprint after your face data is verified",
+    "ロック画面、ステータスバー、通知シェード": [
+      "新規: システムテーマでは、ロック画面の時計が3種類のカスタムスタイルに対応し、ロック画面の詳細設定で変更できます。",
+      "最適化: 顔認証に成功した後、指紋でホーム画面に進めるようになりました",
       "Fix: Errors occurred after unlocking device in landscape mode",
-      "Fix: Fingerprint shortcuts didn^t work in landscape orientation",
-      "Fix: Fingerprint unlock didn^t always work with the screen off",
-      "Fix: Screen didn^t always light up for notifications",
+      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
+      "Fix: Fingerprint unlock didn't always work with the screen off",
+      "Fix: Screen didn't always light up for notifications",
+      "Fix: Screen went black in some cases when video wallpapers were used",
+      "追加: 画面オフ時に指紋アイコンを非表示にしても、指紋認証を利用できるようサポート",
+      "新規: システムテーマでは、ロック画面の時計が3種類のカスタムスタイルに対応し、ロック画面の詳細設定で変更できます。",
+      "最適化: 顔認証に成功した後、指紋でホーム画面に進めるようになりました",
+      "Fix: Errors occurred after unlocking device in landscape mode",
+      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
+      "Fix: Fingerprint unlock didn't always work with the screen off",
+      "Fix: Screen didn't always light up for notifications",
       "Fix: Screen went black in some cases when video wallpapers were used"
     ],
-    "Settings": [
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally."
+    "設定": [
+      "追加: 画面オフ時に指紋アイコンを非表示にしても、指紋認証を利用できるようサポート"
     ]
   },
   "logs_ko": {
-    "System": [
-      "Updated Android Security Patch to May 2019. Increased system security."
+    "시스템": [
+      "Android 보안 패치를 2019년 5월로 업데이트했습니다. 시스템 보안이 향상되었습니다.",
+      "Android 보안 패치를 2019년 5월로 업데이트했습니다. 시스템 보안이 향상되었습니다."
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally.",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "Optimization: You can open Home screen using your fingerprint after your face data is verified",
+    "잠금화면, 상태 바, 알림 바": [
+      "새 기능: 시스템 테마에서 잠금 화면 시계가 3가지 사용자 지정 스타일을 지원하며, 잠금 화면 고급 설정에서 변경할 수 있습니다.",
+      "최적화: 얼굴 인증 성공 후 지문으로 홈 화면에 들어갈 수 있습니다",
       "Fix: Errors occurred after unlocking device in landscape mode",
-      "Fix: Fingerprint shortcuts didn^t work in landscape orientation",
-      "Fix: Fingerprint unlock didn^t always work with the screen off",
-      "Fix: Screen didn^t always light up for notifications",
+      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
+      "Fix: Fingerprint unlock didn't always work with the screen off",
+      "Fix: Screen didn't always light up for notifications",
+      "Fix: Screen went black in some cases when video wallpapers were used",
+      "추가: 화면 꺼짐 시 지문 아이콘을 표시하지 않아도 지문을 사용할 수 있도록 지원",
+      "새 기능: 시스템 테마에서 잠금 화면 시계가 3가지 사용자 지정 스타일을 지원하며, 잠금 화면 고급 설정에서 변경할 수 있습니다.",
+      "최적화: 얼굴 인증 성공 후 지문으로 홈 화면에 들어갈 수 있습니다",
+      "Fix: Errors occurred after unlocking device in landscape mode",
+      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
+      "Fix: Fingerprint unlock didn't always work with the screen off",
+      "Fix: Screen didn't always light up for notifications",
       "Fix: Screen went black in some cases when video wallpapers were used"
     ],
-    "Settings": [
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally."
+    "설정": [
+      "추가: 화면 꺼짐 시 지문 아이콘을 표시하지 않아도 지문을 사용할 수 있도록 지원"
     ]
   },
   "logs_ru": {
     "Система": [
+      "Оптимизация: Режим \"В кармане\"",
+      "Обновление системы безопасности Android (может 2019 года). Улучшена безопасность системы.",
+      "Обновление системы безопасности Android (может 2019 года). Улучшена безопасность системы.",
       "Обновление системы безопасности Android (может 2019 года). Улучшена безопасность системы."
     ],
     "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Новое: Добавлены настраиваемые часы для экрана блокировки (Настройки > Блокировка и защита > Расширенные настройки). Новые часы для экрана блокировки несовместимы со сторонними темами",
+      "Оптимизация: После того как данные вашего лица были подтверждены, вы можете перейти на рабочий стол при помощи отпечатка пальца",
+      "Исправлено: При разблокировке устройства в альбомной ориентации могли происходить различные ошибки",
+      "Исправлено: Жесты сканера отпечатков пальцев не работали в альбомной ориентации",
+      "Исправлено: Сканер отпечатков пальцев не всегда работал при выключенном экране",
+      "Исправлено: Экран не всегда включался при получении новых уведомлений",
+      "Исправлено: В некоторых случаях при использовании видеообоев экран мог становиться черным",
       "Новое: Вы можете отключить отображение значка отпечатка пальца на заблокированном экране. Вы по-прежнему сможете воспользоваться разблокировкой при помощи отпечатка пальца",
       "Новое: Добавлены настраиваемые часы для экрана блокировки (Настройки > Блокировка и защита > Расширенные настройки). Новые часы для экрана блокировки несовместимы со сторонними темами",
       "Оптимизация: После того как данные вашего лица были подтверждены, вы можете перейти на рабочий стол при помощи отпечатка пальца",
@@ -101,85 +169,127 @@
     ]
   },
   "logs_uk": {
-    "System": [
+    "Система": [
+      "Updated Android Security Patch to May 2019. Increased system security.",
       "Updated Android Security Patch to May 2019. Increased system security."
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally.",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "Optimization: You can open Home screen using your fingerprint after your face data is verified",
+    "Екран блокування, рядок стану, панель сповіщень": [
+      "Нове: у системних темах годинник екрана блокування підтримує три власні стилі, які можна змінити в розширених налаштуваннях екрана блокування.",
+      "Оптимізація: після успішного розблокування обличчям можна увійти на головний екран за допомогою відбитка пальця",
       "Fix: Errors occurred after unlocking device in landscape mode",
-      "Fix: Fingerprint shortcuts didn^t work in landscape orientation",
-      "Fix: Fingerprint unlock didn^t always work with the screen off",
-      "Fix: Screen didn^t always light up for notifications",
+      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
+      "Fix: Fingerprint unlock didn't always work with the screen off",
+      "Fix: Screen didn't always light up for notifications",
+      "Fix: Screen went black in some cases when video wallpapers were used",
+      "Додано: підтримка приховування значка відбитка пальця при вимкненому екрані, відбиток пальця залишається доступним",
+      "Нове: у системних темах годинник екрана блокування підтримує три власні стилі, які можна змінити в розширених налаштуваннях екрана блокування.",
+      "Оптимізація: після успішного розблокування обличчям можна увійти на головний екран за допомогою відбитка пальця",
+      "Fix: Errors occurred after unlocking device in landscape mode",
+      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
+      "Fix: Fingerprint unlock didn't always work with the screen off",
+      "Fix: Screen didn't always light up for notifications",
       "Fix: Screen went black in some cases when video wallpapers were used"
     ],
-    "Settings": [
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally."
+    "Налаштування": [
+      "Додано: підтримка приховування значка відбитка пальця при вимкненому екрані, відбиток пальця залишається доступним"
     ]
   },
   "logs_pl": {
     "System": [
+      "Updated Android Security Patch to May 2019. Increased system security.",
       "Updated Android Security Patch to May 2019. Increased system security."
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally.",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "Optimization: You can open Home screen using your fingerprint after your face data is verified",
+    "Ekran blokady, pasek powiadomień,panel powiadomień": [
+      "Nowość: w motywach systemowych zegar ekranu blokady obsługuje trzy niestandardowe style, które można zmienić w zaawansowanych ustawieniach ekranu blokady.",
+      "Optymalizacja: po pomyślnym odblokowaniu twarzą można wejść na ekran główny za pomocą odcisku palca",
       "Fix: Errors occurred after unlocking device in landscape mode",
-      "Fix: Fingerprint shortcuts didn^t work in landscape orientation",
-      "Fix: Fingerprint unlock didn^t always work with the screen off",
-      "Fix: Screen didn^t always light up for notifications",
+      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
+      "Fix: Fingerprint unlock didn't always work with the screen off",
+      "Fix: Screen didn't always light up for notifications",
+      "Fix: Screen went black in some cases when video wallpapers were used",
+      "Dodano: obsługa ukrywania ikony odcisku palca przy wyłączonym ekranie z zachowaniem działania odcisku palca",
+      "Nowość: w motywach systemowych zegar ekranu blokady obsługuje trzy niestandardowe style, które można zmienić w zaawansowanych ustawieniach ekranu blokady.",
+      "Optymalizacja: po pomyślnym odblokowaniu twarzą można wejść na ekran główny za pomocą odcisku palca",
+      "Fix: Errors occurred after unlocking device in landscape mode",
+      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
+      "Fix: Fingerprint unlock didn't always work with the screen off",
+      "Fix: Screen didn't always light up for notifications",
       "Fix: Screen went black in some cases when video wallpapers were used"
     ],
-    "Settings": [
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally."
+    "Ustawienia": [
+      "Dodano: obsługa ukrywania ikony odcisku palca przy wyłączonym ekranie z zachowaniem działania odcisku palca"
     ]
   },
   "logs_de": {
     "System": [
-      "Updated Android Security Patch to May 2019. Increased system security."
+      "Android-Sicherheitspatch auf Mai 2019 aktualisiert. Systemischerheit erhöht.",
+      "Android-Sicherheitspatch auf Mai 2019 aktualisiert. Systemischerheit erhöht."
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally.",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "Optimization: You can open Home screen using your fingerprint after your face data is verified",
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
+      "Neu: Im Systemdesign unterstützt die Sperrbildschirm-Uhr drei benutzerdefinierte Stile, die in den erweiterten Sperrbildschirm-Einstellungen geändert werden können.",
+      "Optimierung: Nach erfolgreicher Gesichtserkennung kann per Fingerabdruck der Startbildschirm geöffnet werden",
       "Fix: Errors occurred after unlocking device in landscape mode",
-      "Fix: Fingerprint shortcuts didn^t work in landscape orientation",
-      "Fix: Fingerprint unlock didn^t always work with the screen off",
-      "Fix: Screen didn^t always light up for notifications",
-      "Fix: Screen went black in some cases when video wallpapers were used"
+      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
+      "Fix: Fingerprint unlock didn't always work with the screen off",
+      "Behoben: Bildschirm leuchtete bei Benachrichtigungen nicht immer auf",
+      "Behoben: Bei Videohintergründen wurde der Bildschirm in manchen Fällen schwarz",
+      "Neu: Unterstützung, das Fingerabdruck-Symbol bei ausgeschaltetem Bildschirm auszublenden, während der Fingerabdruck weiterhin funktioniert",
+      "Neu: Im Systemdesign unterstützt die Sperrbildschirm-Uhr drei benutzerdefinierte Stile, die in den erweiterten Sperrbildschirm-Einstellungen geändert werden können.",
+      "Optimierung: Nach erfolgreicher Gesichtserkennung kann per Fingerabdruck der Startbildschirm geöffnet werden",
+      "Fix: Errors occurred after unlocking device in landscape mode",
+      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
+      "Fix: Fingerprint unlock didn't always work with the screen off",
+      "Behoben: Bildschirm leuchtete bei Benachrichtigungen nicht immer auf",
+      "Behoben: Bei Videohintergründen wurde der Bildschirm in manchen Fällen schwarz"
     ],
-    "Settings": [
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally."
+    "Einstellungen": [
+      "Neu: Unterstützung, das Fingerabdruck-Symbol bei ausgeschaltetem Bildschirm auszublenden, während der Fingerabdruck weiterhin funktioniert"
     ]
   },
   "logs_fr": {
-    "System": [
-      "Updated Android Security Patch to May 2019. Increased system security."
+    "Système": [
+      "Correctif de sécurité Android mis à jour à mai 2019. Sécurité du système renforcée.",
+      "Correctif de sécurité Android mis à jour à mai 2019. Sécurité du système renforcée."
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally.",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "Optimization: You can open Home screen using your fingerprint after your face data is verified",
+    "Écran de verrouillage, Barre d'état, Panneau de notification": [
+      "Nouveau : sous les thèmes système, l’horloge de l’écran de verrouillage prend en charge trois styles personnalisés, modifiables dans les paramètres avancés de l’écran de verrouillage.",
+      "Optimisation : après le déverrouillage facial, vous pouvez accéder à l’écran d’accueil avec votre empreinte digitale",
       "Fix: Errors occurred after unlocking device in landscape mode",
-      "Fix: Fingerprint shortcuts didn^t work in landscape orientation",
-      "Fix: Fingerprint unlock didn^t always work with the screen off",
-      "Fix: Screen didn^t always light up for notifications",
-      "Fix: Screen went black in some cases when video wallpapers were used"
+      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
+      "Fix: Fingerprint unlock didn't always work with the screen off",
+      "Corrigé : L'écran ne s'allumait pas toujours pour les notifications",
+      "Corrigé : L'écran devenait noir dans certains cas avec les fonds d'écran vidéo",
+      "Ajout : prise en charge du masquage de l’icône d’empreinte digitale lorsque l’écran est éteint, tout en gardant l’empreinte utilisable",
+      "Nouveau : sous les thèmes système, l’horloge de l’écran de verrouillage prend en charge trois styles personnalisés, modifiables dans les paramètres avancés de l’écran de verrouillage.",
+      "Optimisation : après le déverrouillage facial, vous pouvez accéder à l’écran d’accueil avec votre empreinte digitale",
+      "Fix: Errors occurred after unlocking device in landscape mode",
+      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
+      "Fix: Fingerprint unlock didn't always work with the screen off",
+      "Corrigé : L'écran ne s'allumait pas toujours pour les notifications",
+      "Corrigé : L'écran devenait noir dans certains cas avec les fonds d'écran vidéo"
     ],
-    "Settings": [
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally."
+    "Paramètres": [
+      "Ajout : prise en charge du masquage de l’icône d’empreinte digitale lorsque l’écran est éteint, tout en gardant l’empreinte utilisable"
     ]
   },
   "logs_it": {
     "Sistema": [
+      "Ottimizzazione: Modalità Tasca schermata di blocco",
+      "Aggiornamento della patch di sicurezza Android a Maggio 2019. Maggiore sicurezza del sistema.",
+      "Aggiornamento della patch di sicurezza Android a Maggio 2019. Maggiore sicurezza del sistema.",
       "Aggiornamento della patch di sicurezza Android a Maggio 2019. Maggiore sicurezza del sistema."
     ],
     "Schermata di blocco, barra di stato, area delle notifiche": [
-      "Nuovo: Puoi scegliere di non mostrare l^icona dell^impronta digitale a schermo spento. Lo sblocco con l^impronta digitale continuerà a funzionare normalmente.",
-      "Nuovo: Introdotto l^orologio personalizzabile per la schermata di blocco (Impostazioni > Schermata di blocco e password > Impostazioni avanzate). Il nuovo orologio della schermata di blocco non funziona con temi di terze parti.",
-      "Ottimizzazione: Puoi aprire la schermata Home utilizzando l^impronta digitale dopo aver verificato i dati del viso",
+      "Nuovo: Introdotto l'orologio personalizzabile per la schermata di blocco (Impostazioni > Schermata di blocco e password > Impostazioni avanzate). Il nuovo orologio della schermata di blocco non funziona con temi di terze parti.",
+      "Ottimizzazione: Puoi aprire la schermata Home utilizzando l'impronta digitale dopo aver verificato i dati del viso",
+      "Risolto: Si verificavano degli errori dopo lo sblocco del dispositivo in modalità orizzontale",
+      "Risolto: I collegamenti delle impronte digitali non funzionavano in modalità orizzontale",
+      "Risolto: Lo sblocco con impronta digitale non sempre funzionava a schermo spento",
+      "Risolto: Lo schermo non sempre si accendeva per mostrare le notifiche",
+      "Risolto: Lo schermo diventava nero in alcuni casi quando venivano utilizzati gli sfondi video",
+      "Nuovo: Puoi scegliere di non mostrare l'icona dell'impronta digitale a schermo spento. Lo sblocco con l'impronta digitale continuerà a funzionare normalmente.",
+      "Nuovo: Introdotto l'orologio personalizzabile per la schermata di blocco (Impostazioni > Schermata di blocco e password > Impostazioni avanzate). Il nuovo orologio della schermata di blocco non funziona con temi di terze parti.",
+      "Ottimizzazione: Puoi aprire la schermata Home utilizzando l'impronta digitale dopo aver verificato i dati del viso",
       "Risolto: Si verificavano degli errori dopo lo sblocco del dispositivo in modalità orizzontale",
       "Risolto: I collegamenti delle impronte digitali non funzionavano in modalità orizzontale",
       "Risolto: Lo sblocco con impronta digitale non sempre funzionava a schermo spento",
@@ -187,14 +297,24 @@
       "Risolto: Lo schermo diventava nero in alcuni casi quando venivano utilizzati gli sfondi video"
     ],
     "Impostazioni": [
-      "Nuovo: Puoi scegliere di non mostrare l^icona dell^impronta digitale a schermo spento. Lo sblocco con l^impronta digitale continuerà a funzionare normalmente."
+      "Nuovo: Puoi scegliere di non mostrare l'icona dell'impronta digitale a schermo spento. Lo sblocco con l'impronta digitale continuerà a funzionare normalmente."
     ]
   },
   "logs_es": {
     "Sistema": [
+      "Optimización: Pantalla de bloqueo en Modo bolsillo",
+      "Parche de seguridad de Android actualizado a Mayo de 2019. Seguridad del sistema incrementada.",
+      "Parche de seguridad de Android actualizado a Mayo de 2019. Seguridad del sistema incrementada.",
       "Parche de seguridad de Android actualizado a Mayo de 2019. Seguridad del sistema incrementada."
     ],
     "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Nuevo: Introducción de un reloj personalizable en la Pantalla de bloqueo (Ajustes > Pantalla de bloqueo y contraseña > Ajustes avanzados). El nuevo reloj de la Pantalla de bloqueo no funciona con temas de terceros.",
+      "Optimización: Puedes abrir la Pantalla de inicio usando tu huella dactilar después de verificar tus datos faciales",
+      "Reparado: Ocurrían errores después de desbloquear el dispositivo en el modo paisaje",
+      "Reparado: Los accesos directos de la huella dactilar no funcionaban en orientación apaisada",
+      "Reparado: El desbloqueo con huella dactilar no siempre funcionaba con la pantalla apagada",
+      "Reparado: La pantalla no siempre se encendía con las notificaciones",
+      "Reparado: La pantalla se volvía negra en algunos casos cuando se usaban fondos de pantalla de vídeo",
       "Nuevo: Puedes elegir no mostrar el icono de huella dactilar con la pantalla apagada. El desbloqueo funcionará con normalidad.",
       "Nuevo: Introducción de un reloj personalizable en la Pantalla de bloqueo (Ajustes > Pantalla de bloqueo y contraseña > Ajustes avanzados). El nuevo reloj de la Pantalla de bloqueo no funciona con temas de terceros.",
       "Optimización: Puedes abrir la Pantalla de inicio usando tu huella dactilar después de verificar tus datos faciales",
@@ -209,28 +329,46 @@
     ]
   },
   "logs_pt": {
-    "System": [
+    "Sistema": [
+      "Updated Android Security Patch to May 2019. Increased system security.",
       "Updated Android Security Patch to May 2019. Increased system security."
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally.",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "Optimization: You can open Home screen using your fingerprint after your face data is verified",
+    "Tela de bloqueio, Barra de status e Área de notificações": [
+      "Novo: nos temas do sistema, o relógio da tela de bloqueio suporta três estilos personalizados, que podem ser alterados nas configurações avançadas da tela de bloqueio.",
+      "Otimização: após o desbloqueio facial bem-sucedido, você pode acessar a tela inicial com a impressão digital",
       "Fix: Errors occurred after unlocking device in landscape mode",
-      "Fix: Fingerprint shortcuts didn^t work in landscape orientation",
-      "Fix: Fingerprint unlock didn^t always work with the screen off",
-      "Fix: Screen didn^t always light up for notifications",
+      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
+      "Fix: Fingerprint unlock didn't always work with the screen off",
+      "Fix: Screen didn't always light up for notifications",
+      "Fix: Screen went black in some cases when video wallpapers were used",
+      "Novo: suporte para ocultar o ícone de impressão digital com a tela desligada, mantendo a impressão digital utilizável",
+      "Novo: nos temas do sistema, o relógio da tela de bloqueio suporta três estilos personalizados, que podem ser alterados nas configurações avançadas da tela de bloqueio.",
+      "Otimização: após o desbloqueio facial bem-sucedido, você pode acessar a tela inicial com a impressão digital",
+      "Fix: Errors occurred after unlocking device in landscape mode",
+      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
+      "Fix: Fingerprint unlock didn't always work with the screen off",
+      "Fix: Screen didn't always light up for notifications",
       "Fix: Screen went black in some cases when video wallpapers were used"
     ],
-    "Settings": [
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally."
+    "Configurações": [
+      "Novo: suporte para ocultar o ícone de impressão digital com a tela desligada, mantendo a impressão digital utilizável"
     ]
   },
   "logs_tr": {
     "Sistem": [
+      "Optimizasyon: Kilit ekranı cep modu",
+      "Android Güvenlik Yaması Mayıs 2019 sürümüne güncellendi. Sistem güvenliği artırıldı.",
+      "Android Güvenlik Yaması Mayıs 2019 sürümüne güncellendi. Sistem güvenliği artırıldı.",
       "Android Güvenlik Yaması Mayıs 2019 sürümüne güncellendi. Sistem güvenliği artırıldı."
     ],
     "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Yeni: Özelleştirilebilir Kilit ekranı saati (Ayarlar > Kilit ekranı & şifre > Gelişmiş ayarlar). Yeni kilit ekranı saati üçüncü parti temaları ile çalışmaz.",
+      "Optimizasyon: Yüz veriniz doğrulandıktan sonra Ana ekranı parmak izinizi kullanarak açabilirsiniz",
+      "Onarım: Manzara modunda cihaz kilidi açıldıktan sonra hata oluştu",
+      "Onarım: Manzara düzeninde parmak izi kısayolları çalışmadı",
+      "Onarım: Ekran kapalıyken parmak izi ile kilit açma her zaman çalışmadı",
+      "Onarım: Bazen bildirimler için ekran açılmadı",
+      "Onarım: Video duvar kağıtları kullanıldığında, bazı durumlarda ekran karardı",
       "Yeni: Parmak izi simgesini kapanma ekranında göstermemeyi seçebilirsiniz. Parmak izi ile kilit açma işlevi normal bir şekilde çalışmaya devam edecektir.",
       "Yeni: Özelleştirilebilir Kilit ekranı saati (Ayarlar > Kilit ekranı & şifre > Gelişmiş ayarlar). Yeni kilit ekranı saati üçüncü parti temaları ile çalışmaz.",
       "Optimizasyon: Yüz veriniz doğrulandıktan sonra Ana ekranı parmak izinizi kullanarak açabilirsiniz",
@@ -245,128 +383,184 @@
     ]
   },
   "logs_id": {
-    "System": [
+    "Sistem": [
+      "Updated Android Security Patch to May 2019. Increased system security.",
       "Updated Android Security Patch to May 2019. Increased system security."
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally.",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "Optimization: You can open Home screen using your fingerprint after your face data is verified",
+    "Layar kunci, bar status, layar notifikasi": [
+      "Baru: Pada tema sistem, jam layar kunci mendukung tiga gaya kustom, dapat diubah di pengaturan lanjutan layar kunci.",
+      "Optimasi: Setelah verifikasi wajah berhasil, Anda dapat masuk ke layar Utama menggunakan sidik jari",
       "Fix: Errors occurred after unlocking device in landscape mode",
-      "Fix: Fingerprint shortcuts didn^t work in landscape orientation",
-      "Fix: Fingerprint unlock didn^t always work with the screen off",
-      "Fix: Screen didn^t always light up for notifications",
+      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
+      "Fix: Fingerprint unlock didn't always work with the screen off",
+      "Fix: Screen didn't always light up for notifications",
+      "Fix: Screen went black in some cases when video wallpapers were used",
+      "Baru: Dukungan untuk menyembunyikan ikon sidik jari saat layar mati, tetapi sidik jari tetap dapat digunakan",
+      "Baru: Pada tema sistem, jam layar kunci mendukung tiga gaya kustom, dapat diubah di pengaturan lanjutan layar kunci.",
+      "Optimasi: Setelah verifikasi wajah berhasil, Anda dapat masuk ke layar Utama menggunakan sidik jari",
+      "Fix: Errors occurred after unlocking device in landscape mode",
+      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
+      "Fix: Fingerprint unlock didn't always work with the screen off",
+      "Fix: Screen didn't always light up for notifications",
       "Fix: Screen went black in some cases when video wallpapers were used"
     ],
-    "Settings": [
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally."
+    "Pengaturan": [
+      "Baru: Dukungan untuk menyembunyikan ikon sidik jari saat layar mati, tetapi sidik jari tetap dapat digunakan"
     ]
   },
   "logs_vi": {
-    "System": [
+    "Hệ thống": [
+      "Updated Android Security Patch to May 2019. Increased system security.",
       "Updated Android Security Patch to May 2019. Increased system security."
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally.",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "Optimization: You can open Home screen using your fingerprint after your face data is verified",
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Mới: Trong chủ đề hệ thống, đồng hồ màn hình khóa hỗ trợ ba kiểu tùy chỉnh, có thể thay đổi trong cài đặt nâng cao của màn hình khóa.",
+      "Tối ưu: Sau khi nhận diện khuôn mặt thành công, có thể dùng vân tay để vào màn hình chính",
       "Fix: Errors occurred after unlocking device in landscape mode",
-      "Fix: Fingerprint shortcuts didn^t work in landscape orientation",
-      "Fix: Fingerprint unlock didn^t always work with the screen off",
-      "Fix: Screen didn^t always light up for notifications",
+      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
+      "Fix: Fingerprint unlock didn't always work with the screen off",
+      "Fix: Screen didn't always light up for notifications",
+      "Fix: Screen went black in some cases when video wallpapers were used",
+      "Mới: hỗ trợ ẩn biểu tượng vân tay khi tắt màn hình nhưng vẫn sử dụng được vân tay",
+      "Mới: Trong chủ đề hệ thống, đồng hồ màn hình khóa hỗ trợ ba kiểu tùy chỉnh, có thể thay đổi trong cài đặt nâng cao của màn hình khóa.",
+      "Tối ưu: Sau khi nhận diện khuôn mặt thành công, có thể dùng vân tay để vào màn hình chính",
+      "Fix: Errors occurred after unlocking device in landscape mode",
+      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
+      "Fix: Fingerprint unlock didn't always work with the screen off",
+      "Fix: Screen didn't always light up for notifications",
       "Fix: Screen went black in some cases when video wallpapers were used"
     ],
-    "Settings": [
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally."
+    "Cài đặt": [
+      "Mới: hỗ trợ ẩn biểu tượng vân tay khi tắt màn hình nhưng vẫn sử dụng được vân tay"
     ]
   },
   "logs_th": {
-    "System": [
+    "ระบบ": [
+      "Updated Android Security Patch to May 2019. Increased system security.",
       "Updated Android Security Patch to May 2019. Increased system security."
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally.",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "Optimization: You can open Home screen using your fingerprint after your face data is verified",
+    "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
+      "ใหม่: ภายใต้ธีมระบบ นาฬิกาหน้าจอล็อกรองรับรูปแบบกำหนดเอง 3 แบบ สามารถแก้ไขได้ในการตั้งค่าขั้นสูงของหน้าจอล็อก",
+      "การปรับปรุง: หลังจากปลดล็อกด้วยใบหน้าสำเร็จ สามารถใช้ลายนิ้วมือเข้าสู่หน้าจอหลักได้",
       "Fix: Errors occurred after unlocking device in landscape mode",
-      "Fix: Fingerprint shortcuts didn^t work in landscape orientation",
-      "Fix: Fingerprint unlock didn^t always work with the screen off",
-      "Fix: Screen didn^t always light up for notifications",
+      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
+      "Fix: Fingerprint unlock didn't always work with the screen off",
+      "Fix: Screen didn't always light up for notifications",
+      "Fix: Screen went black in some cases when video wallpapers were used",
+      "เพิ่ม: รองรับการไม่แสดงไอคอนลายนิ้วมือเมื่อหน้าจอดับ โดยยังใช้งานลายนิ้วมือได้",
+      "ใหม่: ภายใต้ธีมระบบ นาฬิกาหน้าจอล็อกรองรับรูปแบบกำหนดเอง 3 แบบ สามารถแก้ไขได้ในการตั้งค่าขั้นสูงของหน้าจอล็อก",
+      "การปรับปรุง: หลังจากปลดล็อกด้วยใบหน้าสำเร็จ สามารถใช้ลายนิ้วมือเข้าสู่หน้าจอหลักได้",
+      "Fix: Errors occurred after unlocking device in landscape mode",
+      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
+      "Fix: Fingerprint unlock didn't always work with the screen off",
+      "Fix: Screen didn't always light up for notifications",
       "Fix: Screen went black in some cases when video wallpapers were used"
     ],
-    "Settings": [
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally."
+    "การตั้งค่า": [
+      "เพิ่ม: รองรับการไม่แสดงไอคอนลายนิ้วมือเมื่อหน้าจอดับ โดยยังใช้งานลายนิ้วมือได้"
     ]
   },
   "logs_ar": {
-    "System": [
+    "النظام": [
+      "Updated Android Security Patch to May 2019. Increased system security.",
       "Updated Android Security Patch to May 2019. Increased system security."
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally.",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "Optimization: You can open Home screen using your fingerprint after your face data is verified",
+    "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
+      "جديد: ضمن سمات النظام، تدعم ساعة شاشة القفل ثلاثة أنماط مخصصة، ويمكن تعديلها في الإعدادات المتقدمة لشاشة القفل.",
+      "تحسين: بعد نجاح فتح القفل بالوجه، يمكن استخدام بصمة الإصبع للدخول إلى الشاشة الرئيسية",
       "Fix: Errors occurred after unlocking device in landscape mode",
-      "Fix: Fingerprint shortcuts didn^t work in landscape orientation",
-      "Fix: Fingerprint unlock didn^t always work with the screen off",
-      "Fix: Screen didn^t always light up for notifications",
+      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
+      "Fix: Fingerprint unlock didn't always work with the screen off",
+      "Fix: Screen didn't always light up for notifications",
+      "Fix: Screen went black in some cases when video wallpapers were used",
+      "إضافة: دعم عدم عرض أيقونة بصمة الإصبع عند إطفاء الشاشة مع بقاء بصمة الإصبع قابلة للاستخدام",
+      "جديد: ضمن سمات النظام، تدعم ساعة شاشة القفل ثلاثة أنماط مخصصة، ويمكن تعديلها في الإعدادات المتقدمة لشاشة القفل.",
+      "تحسين: بعد نجاح فتح القفل بالوجه، يمكن استخدام بصمة الإصبع للدخول إلى الشاشة الرئيسية",
+      "Fix: Errors occurred after unlocking device in landscape mode",
+      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
+      "Fix: Fingerprint unlock didn't always work with the screen off",
+      "Fix: Screen didn't always light up for notifications",
       "Fix: Screen went black in some cases when video wallpapers were used"
     ],
-    "Settings": [
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally."
+    "الإعدادات": [
+      "إضافة: دعم عدم عرض أيقونة بصمة الإصبع عند إطفاء الشاشة مع بقاء بصمة الإصبع قابلة للاستخدام"
     ]
   },
   "logs_in": {
-    "System": [
+    "सिस्टम": [
+      "Updated Android Security Patch to May 2019. Increased system security.",
       "Updated Android Security Patch to May 2019. Increased system security."
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally.",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "Optimization: You can open Home screen using your fingerprint after your face data is verified",
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
+      "नया: सिस्टम थीम के अंतर्गत, लॉक स्क्रीन घड़ी तीन कस्टम शैलियों का समर्थन करती है, जिन्हें लॉक स्क्रीन की उन्नत सेटिंग्स में बदला जा सकता है।",
+      "अनुकूलन: चेहरा सत्यापित होने के बाद उंगली की छाप से होम स्क्रीन खोल सकते हैं",
       "Fix: Errors occurred after unlocking device in landscape mode",
-      "Fix: Fingerprint shortcuts didn^t work in landscape orientation",
-      "Fix: Fingerprint unlock didn^t always work with the screen off",
-      "Fix: Screen didn^t always light up for notifications",
+      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
+      "Fix: Fingerprint unlock didn't always work with the screen off",
+      "Fix: Screen didn't always light up for notifications",
+      "Fix: Screen went black in some cases when video wallpapers were used",
+      "नया: स्क्रीन बंद होने पर फ़िंगरप्रिंट आइकन छिपाने का समर्थन, लेकिन फ़िंगरप्रिंट उपलब्ध रहेगा",
+      "नया: सिस्टम थीम के अंतर्गत, लॉक स्क्रीन घड़ी तीन कस्टम शैलियों का समर्थन करती है, जिन्हें लॉक स्क्रीन की उन्नत सेटिंग्स में बदला जा सकता है।",
+      "अनुकूलन: चेहरा सत्यापित होने के बाद उंगली की छाप से होम स्क्रीन खोल सकते हैं",
+      "Fix: Errors occurred after unlocking device in landscape mode",
+      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
+      "Fix: Fingerprint unlock didn't always work with the screen off",
+      "Fix: Screen didn't always light up for notifications",
       "Fix: Screen went black in some cases when video wallpapers were used"
     ],
-    "Settings": [
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally."
+    "सेटिंग्स": [
+      "नया: स्क्रीन बंद होने पर फ़िंगरप्रिंट आइकन छिपाने का समर्थन, लेकिन फ़िंगरप्रिंट उपलब्ध रहेगा"
     ]
   },
   "logs_ug": {
-    "System": [
+    "سىستېما": [
+      "Updated Android Security Patch to May 2019. Increased system security.",
       "Updated Android Security Patch to May 2019. Increased system security."
     ],
     "Lockscreen, status bar, Notification shade": [
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally.",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
       "Optimization: You can open Home screen using your fingerprint after your face data is verified",
       "Fix: Errors occurred after unlocking device in landscape mode",
-      "Fix: Fingerprint shortcuts didn^t work in landscape orientation",
-      "Fix: Fingerprint unlock didn^t always work with the screen off",
-      "Fix: Screen didn^t always light up for notifications",
+      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
+      "Fix: Fingerprint unlock didn't always work with the screen off",
+      "Fix: Screen didn't always light up for notifications",
+      "Fix: Screen went black in some cases when video wallpapers were used",
+      "قوشۇلدى: ئېكران ئۆچكەندە بارماق ئىزى سىنبەلگىسىنى كۆرسەتمەسلىكنى قوللايدۇ، ئەمما بارماق ئىزى ئىشلىتىلىدۇ",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Optimization: You can open Home screen using your fingerprint after your face data is verified",
+      "Fix: Errors occurred after unlocking device in landscape mode",
+      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
+      "Fix: Fingerprint unlock didn't always work with the screen off",
+      "Fix: Screen didn't always light up for notifications",
       "Fix: Screen went black in some cases when video wallpapers were used"
     ],
-    "Settings": [
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally."
+    "تەڭشەكلەر": [
+      "قوشۇلدى: ئېكران ئۆچكەندە بارماق ئىزى سىنبەلگىسىنى كۆرسەتمەسلىكنى قوللايدۇ، ئەمما بارماق ئىزى ئىشلىتىلىدۇ"
     ]
   },
   "logs_bo": {
-    "System": [
+    "རིམ་ལུགས": [
+      "Updated Android Security Patch to May 2019. Increased system security.",
       "Updated Android Security Patch to May 2019. Increased system security."
     ],
     "Lockscreen, status bar, Notification shade": [
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally.",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
       "Optimization: You can open Home screen using your fingerprint after your face data is verified",
       "Fix: Errors occurred after unlocking device in landscape mode",
-      "Fix: Fingerprint shortcuts didn^t work in landscape orientation",
-      "Fix: Fingerprint unlock didn^t always work with the screen off",
-      "Fix: Screen didn^t always light up for notifications",
+      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
+      "Fix: Fingerprint unlock didn't always work with the screen off",
+      "Fix: Screen didn't always light up for notifications",
+      "Fix: Screen went black in some cases when video wallpapers were used",
+      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally.",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Optimization: You can open Home screen using your fingerprint after your face data is verified",
+      "Fix: Errors occurred after unlocking device in landscape mode",
+      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
+      "Fix: Fingerprint unlock didn't always work with the screen off",
+      "Fix: Screen didn't always light up for notifications",
       "Fix: Screen went black in some cases when video wallpapers were used"
     ],
-    "Settings": [
+    "སྒྲིག་བཀོད": [
       "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally."
     ]
   }

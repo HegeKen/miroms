@@ -5,9 +5,11 @@
       "合入2024年11月安全补丁，增强系统安全"
     ],
     "时钟": [
+      "修复 闹钟设置重复周期时，切换深色模式出现勾选异常问题",
       "修复 闹钟设置重复周期时，切换深色模式出现勾选异常问题"
     ],
     "计算器": [
+      "修复 分屏时切换横竖屏，房贷选择框显示不全的问题",
       "修复 分屏时切换横竖屏，房贷选择框显示不全的问题"
     ],
     "屏幕时间管理": [
@@ -17,10 +19,9 @@
       "新增 CarWith 视觉体验的更新，重绘 6 种横竖尺寸车机样式，包含全新地图卡片、音乐卡片、小爱同学对话样式，提升界面美观度",
       "新增 CarWith 个性化定制，支持设置车机壁纸、更换背景效果、自定义卡片排序、添加小部件等功能",
       "优化 CarWith 导航体验，支持地图导航全屏显示，新增导航悬浮胶囊",
-      "优化 CarWith 的连接体验和稳定性"
-    ],
-    "手机管家": [
-      "修复 自然灾害预警订阅选项异常消失的问题"
+      "优化 CarWith 的连接体验和稳定性",
+      "新增 CarWith 个性化选项：壁纸、背景、卡片排序、小组件等",
+      "优化 CarWith 导航体验，支持地图导航全屏显示，新增导航悬浮胶囊"
     ],
     "状态栏、通知栏": [
       "修复 在不同语言下，部分场景出现的文案及通知显示异常问题"
@@ -30,6 +31,19 @@
     ],
     "其他优化及调整": [
       "通过本次更新，系统将默认开启“安全守护”模式，在应用安装过程中进行安全性检测，阻止风险应用的安装，保障系统运行环境的安全"
+    ],
+    "更多功能": [
+      "修复 部分情况下偶现闪退的问题"
+    ],
+    "小米云服务": [
+      "修复 在不同语言下，部分场景出现的文案及通知显示异常问题"
+    ],
+    "手机管家": [
+      "修复 自然灾害预警订阅选项异常消失的问题"
+    ],
+    "其他": [
+      "提高系统的稳定性",
+      "优化系统的流畅度"
     ]
   },
   "logs_en": {
@@ -38,22 +52,21 @@
       "Updated the security patch to November 2024. Increased system security."
     ],
     "Clock": [
+      "Fix: When setting alarm repetition, the checkbox was displayed abnormally when switching to Dark mode",
       "Fix: When setting alarm repetition, the checkbox was displayed abnormally when switching to Dark mode"
     ],
     "Calculator": [
-      "Fix: Mortgage loan calculator wasn^t displayed correctly when switching screen orientation in Split screen"
+      "Fix: Mortgage loan calculator wasn't displayed correctly when switching screen orientation in Split screen",
+      "Fix: Mortgage loan calculator wasn't displayed correctly when switching screen orientation in Split screen"
     ],
     "Screen Time": [
-      "Fix: On rare occasions, time stats weren^t displayed in Screen time"
+      "Fix: On rare occasions, time stats weren't displayed in Screen time"
     ],
     "Settings": [
-      "New: A major update to CarWith^s visual experience, with redesigned styles for 6 different horizontal and vertical car system screen sizes. This update includes new cards for maps and music, and Mi AI conversation styles.",
+      "New: A major update to CarWith's visual experience, with redesigned styles for 6 different horizontal and vertical car system screen sizes. This update includes new cards for maps and music, and Mi AI conversation styles.",
       "New: CarWith now offers enhanced personalization options, including wallpapers, backgrounds, card sorting, widgets, and more",
       "Optimization: Enhanced CarWith navigation experience by supporting fullscreen map navigation and introducing a new floating navigation window",
       "Optimization: CarWith connectivity and overall stability"
-    ],
-    "Security": [
-      "Fix: Disaster warning subscribed locations disappeared in some cases"
     ],
     "Status bar, Notification shade": [
       "Fix: Text and notifications were displayed incorrectly for some languages under specific conditions"
@@ -63,6 +76,19 @@
     ],
     "Other improvements and optimizations": [
       "With this update, Mi Protect will be turned on automatically. It will check apps during installation, block risky apps, and keep your system safe."
+    ],
+    "More features": [
+      "Fix: Crashes occurred in some cases"
+    ],
+    "Mi Cloud": [
+      "Fix: Text and notifications were displayed incorrectly for some languages under specific conditions"
+    ],
+    "Security": [
+      "Fix: Disaster warning subscribed locations disappeared in some cases"
+    ],
+    "Other": [
+      "Optimized system performance",
+      "Improved system security and stability"
     ]
   },
   "logs_zh_tw": {
@@ -71,9 +97,11 @@
       "合入2024年11月安全修補程式，增強系統安全"
     ],
     "時鐘": [
+      "修復: 鬧鐘設定重複週期時，切換深色模式出現勾選異常問題",
       "修復: 鬧鐘設定重複週期時，切換深色模式出現勾選異常問題"
     ],
     "計算機": [
+      "修復: 分割畫面時切換橫豎螢幕，房貸選擇框顯示不全的問題",
       "修復: 分割畫面時切換橫豎螢幕，房貸選擇框顯示不全的問題"
     ],
     "荧幕時間管理": [
@@ -85,9 +113,6 @@
       "優化: CarWith 導航體驗，支援地圖導航全螢幕顯示，新增導航懸浮膠囊",
       "優化: CarWith 的連接體驗與穩定性"
     ],
-    "手機管家": [
-      "修復: 自然災害預警訂閱選項異常消失的問題"
-    ],
     "狀態欄、通知欄": [
       "修復: 在不同語言下，部分場景出現的文案及通知顯示異常問題"
     ],
@@ -96,24 +121,39 @@
     ],
     "其他優化及調整": [
       "透過本次更新，系統將預設開啟「安全守護」模式，在應用程式安裝過程中進行安全性偵測，阻止風險應用程式的安裝，並保障系統運作環境的安全"
+    ],
+    "更多功能": [
+      "修復: 部分情況下偶現閃退的問題，提升系統穩定性"
+    ],
+    "小米雲服務": [
+      "修復: 在不同語言下，部分場景出現的文案及通知顯示異常問題"
+    ],
+    "手機管家": [
+      "修復: 自然災害預警訂閱選項異常消失的問題"
+    ],
+    "其他": [
+      "改善系統的穩定性",
+      "優化系統的流暢度"
     ]
   },
   "logs_ja": {
-    "その他の機能": [
-      "修正: Scrolling screenshots were solid black if taken while searching for items"
+    "時計": [
+      "修正: アラームの繰り返しを設定する際に、ダークモードに切り替えるとチェックボックスが異常に表示される問題",
+      "修正: アラームの繰り返しを設定する際に、ダークモードに切り替えるとチェックボックスが異常に表示される問題"
     ],
-    "システム": [
-      "最適化: 新しい起動アニメーション戦略によりアプリの起動が高速化",
-      "セキュリティパッチを2024年11月にアップデートしました。システムセキュリティが強化されました。"
+    "電卓": [
+      "修正: Mortgage loan calculator wasn't displayed correctly when switching screen orientation in Split screen",
+      "修正: Mortgage loan calculator wasn't displayed correctly when switching screen orientation in Split screen"
     ],
     "ステータスバー、通知シェード": [
       "修正: 特定の状況下で、一部の言語でテキストと通知が正しく表示されない問題"
     ],
-    "時計": [
-      "修正: アラームの繰り返しを設定する際に、ダークモードに切り替えるとチェックボックスが異常に表示される問題"
+    "その他の機能": [
+      "セキュリティパッチを 2024 年 9 月にアップデートしました。システムのセキュリティが強化されました。",
+      "修正: Scrolling screenshots were solid black if taken while searching for items"
     ],
-    "電卓": [
-      "修正: Mortgage loan calculator wasn^t displayed correctly when switching screen orientation in Split screen"
+    "Xiaomi クラウドサービス": [
+      "修正: 特定の状況下で、一部の言語でテキストと通知が正しく表示されない問題"
     ],
     "設定": [
       "新機能: CarWith now offers enhanced personalization options, including wallpapers, backgrounds, card sorting, widgets, and more",
@@ -121,24 +161,34 @@
     ],
     "セキュリティ": [
       "修正: Disaster warning subscribed locations disappeared in some cases"
+    ],
+    "その他": [
+      "システムパフォーマンスの最適化",
+      "システムのセキュリティと安定性の向上"
     ]
   },
   "logs_ko": {
-    "더 많은 기능": [
-      "수정: Scrolling screenshots were solid black if taken while searching for items"
-    ],
     "시스템": [
       "최적화: 새로운 시작 애니메이션 전략으로 앱 시작 속도 향상",
-      "보안패치 (2024#11) 업데이트됨. 시스템 보안이 향상되었습니다."
+      "Android 보안패치 (2023#05) 업데이트됨. 시스템 보안이 향상되었습니다."
+    ],
+    "시계": [
+      "수정: 알람 반복 설정 시 다크모드로 전환하면 확인란이 비정상적으로 출력되는 문제",
+      "수정: 알람 반복 설정 시 다크모드로 전환하면 확인란이 비정상적으로 출력되는 문제"
+    ],
+    "계산기": [
+      "수정: Mortgage loan calculator wasn't displayed correctly when switching screen orientation in Split screen",
+      "수정: Mortgage loan calculator wasn't displayed correctly when switching screen orientation in Split screen"
     ],
     "상태 바, 알림 바": [
       "수정: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ],
-    "시계": [
-      "수정: 알람 반복 설정 시 다크모드로 전환하면 확인란이 비정상적으로 출력되는 문제"
+    "더 많은 기능": [
+      "보안패치 (2024#09) 업데이트됨. 시스템 보안이 향상되었습니다.",
+      "수정: Scrolling screenshots were solid black if taken while searching for items"
     ],
-    "계산기": [
-      "수정: Mortgage loan calculator wasn^t displayed correctly when switching screen orientation in Split screen"
+    "Xiaomi 클라우드 서비스": [
+      "수정: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ],
     "설정": [
       "New: CarWith now offers enhanced personalization options, including wallpapers, backgrounds, card sorting, widgets, and more",
@@ -146,24 +196,34 @@
     ],
     "보안": [
       "수정: Disaster warning subscribed locations disappeared in some cases"
+    ],
+    "기타": [
+      "시스템 성능 최적화",
+      "시스템 보안 및 안정성 개선"
     ]
   },
   "logs_ru": {
-    "Другие функции": [
-      "Исправлено: Scrolling screenshots were solid black if taken while searching for items"
-    ],
     "Система": [
       "Оптимизация: Новая логика анимации позволила ускорить запуск приложений",
-      "Обновление системы безопасности (ноябрь 2024 года). Улучшена безопасность системы."
+      "Обновление системы безопасности Android (май 2023 года). Улучшена безопасность системы."
+    ],
+    "Часы": [
+      "Исправлено: Во время настройки повтора будильника флажок отображался неправильно при переключении в темный режим",
+      "Исправлено: Во время настройки повтора будильника флажок отображался неправильно при переключении в темный режим"
+    ],
+    "Калькулятор": [
+      "Исправлено: Mortgage loan calculator wasn't displayed correctly when switching screen orientation in Split screen",
+      "Исправлено: Mortgage loan calculator wasn't displayed correctly when switching screen orientation in Split screen"
     ],
     "Строка состояния, шторка уведомлений": [
       "Исправлено: В некоторых ситуациях текст и уведомления отображались некорректно для некоторых языков"
     ],
-    "Часы": [
-      "Исправлено: Во время настройки повтора будильника флажок отображался неправильно при переключении в темный режим"
+    "Другие функции": [
+      "Обновление системы безопасности (сентябрь 2024 года). Улучшена безопасность системы.",
+      "Исправлено: Scrolling screenshots were solid black if taken while searching for items"
     ],
-    "Калькулятор": [
-      "Исправлено: Mortgage loan calculator wasn^t displayed correctly when switching screen orientation in Split screen"
+    "Облачный сервис Xiaomi": [
+      "Исправлено: В некоторых ситуациях текст и уведомления отображались некорректно для некоторых языков"
     ],
     "Настройки": [
       "Новое: CarWith now offers enhanced personalization options, including wallpapers, backgrounds, card sorting, widgets, and more",
@@ -171,24 +231,30 @@
     ],
     "Безопасность": [
       "Исправлено: Disaster warning subscribed locations disappeared in some cases"
+    ],
+    "Другое": [
+      "Оптимизация производительности системы",
+      "Улучшение безопасности и стабильности системы"
     ]
   },
   "logs_uk": {
-    "Інші функції": [
-      "Виправлено: Scrolling screenshots were solid black if taken while searching for items"
+    "Годинник": [
+      "Виправлено: Під час налаштування портору будильника прапорець відображався неправильно при переході в темний режим",
+      "Виправлено: Під час налаштування портору будильника прапорець відображався неправильно при переході в темний режим"
     ],
-    "Система": [
-      "Оптимізація: Нова логіка анімації дозволила прискорити запуск програм",
-      "Оновлено патч безпеки за листопад 2024 року. Збільшено безпеку системи."
+    "Калькулятор": [
+      "Виправлено: Mortgage loan calculator wasn't displayed correctly when switching screen orientation in Split screen",
+      "Виправлено: Mortgage loan calculator wasn't displayed correctly when switching screen orientation in Split screen"
     ],
     "Рядок стану, Панель сповіщень": [
       "Виправлено: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ],
-    "Годинник": [
-      "Виправлено: Під час налаштування портору будильника прапорець відображався неправильно при переході в темний режим"
+    "Інші функції": [
+      "Оновлено патч безпеки за вересень 2024 року. Збільшено безпеку системи.",
+      "Виправлено: Scrolling screenshots were solid black if taken while searching for items"
     ],
-    "Калькулятор": [
-      "Виправлено: Mortgage loan calculator wasn^t displayed correctly when switching screen orientation in Split screen"
+    "Хмарний сервіс Xiaomi": [
+      "Виправлено: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ],
     "Налаштування": [
       "Нове: CarWith now offers enhanced personalization options, including wallpapers, backgrounds, card sorting, widgets, and more",
@@ -196,24 +262,34 @@
     ],
     "Безпека": [
       "Виправлено: Disaster warning subscribed locations disappeared in some cases"
+    ],
+    "Інше": [
+      "Оптимізація продуктивності системи",
+      "Покращення безпеки та стабільності системи"
     ]
   },
   "logs_pl": {
-    "Więcej funkcji": [
-      "Naprawiono: Scrolling screenshots were solid black if taken while searching for items"
-    ],
     "System": [
       "Zoptymalizowano: Nowa strategia animacji uruchamiania sprawia, że ​​aplikacje uruchamiają się szybciej",
-      "Zaktualizowano Pakiet Bezpieczeństwa do listopada 2024 r. Zwiększono bezpieczeństwo systemu."
+      "Zaktualizowano Pakiet Bezpieczeństwa Android do maja 2023 r. Zwiększono bezpieczeństwo systemu."
+    ],
+    "Zegar": [
+      "Naprawiono: Podczas ustawiania powtarzania alarmu pole wyboru jest wyświetlane nieprawidłowo po przełączeniu na tryb ciemny",
+      "Naprawiono: Podczas ustawiania powtarzania alarmu pole wyboru jest wyświetlane nieprawidłowo po przełączeniu na tryb ciemny"
+    ],
+    "Kalkulator": [
+      "Naprawiono: Mortgage loan calculator wasn't displayed correctly when switching screen orientation in Split screen",
+      "Naprawiono: Mortgage loan calculator wasn't displayed correctly when switching screen orientation in Split screen"
     ],
     "Pasek powiadomień, Panel powiadomień": [
       "Naprawiono: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ],
-    "Zegar": [
-      "Naprawiono: Podczas ustawiania powtarzania alarmu pole wyboru jest wyświetlane nieprawidłowo po przełączeniu na tryb ciemny"
+    "Więcej funkcji": [
+      "Zaktualizowano Pakiet Bezpieczeństwa do września 2024 r. Zwiększono bezpieczeństwo systemu.",
+      "Naprawiono: Scrolling screenshots were solid black if taken while searching for items"
     ],
-    "Kalkulator": [
-      "Naprawiono: Mortgage loan calculator wasn^t displayed correctly when switching screen orientation in Split screen"
+    "Usługa w chmurze Xiaomi": [
+      "Naprawiono: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ],
     "Ustawienia": [
       "Nowe: CarWith now offers enhanced personalization options, including wallpapers, backgrounds, card sorting, widgets, and more",
@@ -221,30 +297,50 @@
     ],
     "Panel sterowania": [
       "Naprawiono: Disaster warning subscribed locations disappeared in some cases"
+    ],
+    "Inne": [
+      "Zoptymalizowana wydajność systemu",
+      "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
   "logs_de": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "System": [
+      "Optimization: New startup animation strategy makes apps launch faster",
+      "Sicherheitspatch vom November 2024. Systemsicherheit verbessert."
+    ],
+    "Uhr": [
+      "Fix: When setting alarm repetition, the checkbox was displayed abnormally when switching to Dark mode"
+    ],
+    "Weitere Funktionen": [
+      "Fix: Crashes occurred in some cases"
+    ],
+    "Sonstiges": [
+      "Systemleistung optimiert",
+      "Systemsicherheit und -stabilität verbessert"
     ]
   },
   "logs_fr": {
-    "Plus de fonctionnalités": [
-      "Réparé: Scrolling screenshots were solid black if taken while searching for items"
-    ],
     "Système": [
       "Optimisation: Une nouvelle stratégie d’animation de démarrage accélère le lancement des applications",
-      "Mise à jour du correctif de sécurité en novembre 2024. Sécurité accrue du système."
+      "Mise à jour du correctif de sécurité Android jusqu'en mai 2023. Augmentation de la sécurité du système."
+    ],
+    "Horloge": [
+      "Réparé: Lors du réglage de la répétition de l'alarme, la case à cocher était affichée anormalement lors du passage en Mode sombre",
+      "Réparé: Lors du réglage de la répétition de l'alarme, la case à cocher était affichée anormalement lors du passage en Mode sombre"
+    ],
+    "Calculette": [
+      "Réparé: Mortgage loan calculator wasn't displayed correctly when switching screen orientation in Split screen",
+      "Réparé: Mortgage loan calculator wasn't displayed correctly when switching screen orientation in Split screen"
     ],
     "Barre d'état, Panneau de notification": [
       "Réparé: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ],
-    "Horloge": [
-      "Réparé: Lors du réglage de la répétition de l^alarme, la case à cocher était affichée anormalement lors du passage en Mode sombre"
+    "Plus de fonctionnalités": [
+      "Mise à jour du correctif de sécurité en septembre 2024. Sécurité accrue du système.",
+      "Réparé: Scrolling screenshots were solid black if taken while searching for items"
     ],
-    "Calculette": [
-      "Réparé: Mortgage loan calculator wasn^t displayed correctly when switching screen orientation in Split screen"
+    "Service cloud Xiaomi": [
+      "Réparé: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ],
     "Paramètres": [
       "Nouveau: CarWith now offers enhanced personalization options, including wallpapers, backgrounds, card sorting, widgets, and more",
@@ -252,24 +348,34 @@
     ],
     "Sécurité": [
       "Réparé: Disaster warning subscribed locations disappeared in some cases"
+    ],
+    "Autre": [
+      "Performances système optimisées",
+      "Sécurité et stabilité du système améliorées"
     ]
   },
   "logs_it": {
-    "Altre funzionalità": [
-      "Risolto: Scrolling screenshots were solid black if taken while searching for items"
-    ],
     "Sistema": [
       "Ottimizzazione: La nuova strategia di animazione di avviamento consente un avvio più rapido delle app",
-      "Patch di sicurezza aggiornata a novembre 2024. Maggiore sicurezza del sistema."
+      "Patch di sicurezza Android aggiornata a maggio 2023. Maggiore sicurezza del sistema."
+    ],
+    "Orologio": [
+      "Risolto: Impostando la ripetizione delle sveglie, la casella di spunta veniva visualizzata in modo anomalo quando si passava alla modalità scura",
+      "Risolto: Impostando la ripetizione delle sveglie, la casella di spunta veniva visualizzata in modo anomalo quando si passava alla modalità scura"
+    ],
+    "Calcolatrice": [
+      "Risolto: Mortgage loan calculator wasn't displayed correctly when switching screen orientation in Split screen",
+      "Risolto: Mortgage loan calculator wasn't displayed correctly when switching screen orientation in Split screen"
     ],
     "Barra di stato, Area delle notifiche": [
       "Risolto: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ],
-    "Orologio": [
-      "Risolto: Impostando la ripetizione delle sveglie, la casella di spunta veniva visualizzata in modo anomalo quando si passava alla modalità scura"
+    "Altre funzionalità": [
+      "Patch di sicurezza aggiornata a settembre 2024. Maggiore sicurezza del sistema.",
+      "Risolto: Scrolling screenshots were solid black if taken while searching for items"
     ],
-    "Calcolatrice": [
-      "Risolto: Mortgage loan calculator wasn^t displayed correctly when switching screen orientation in Split screen"
+    "Servizio cloud Xiaomi": [
+      "Risolto: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ],
     "Impostazioni": [
       "Nuovo: CarWith now offers enhanced personalization options, including wallpapers, backgrounds, card sorting, widgets, and more",
@@ -277,24 +383,34 @@
     ],
     "Sicurezza": [
       "Risolto: Disaster warning subscribed locations disappeared in some cases"
+    ],
+    "Altro": [
+      "Prestazioni di sistema ottimizzate",
+      "Maggiore sicurezza e stabilità di sistema"
     ]
   },
   "logs_es": {
-    "Más funciones": [
-      "Reparado: Scrolling screenshots were solid black if taken while searching for items"
-    ],
     "Sistema": [
       "Optimización: Una nueva estrategia de animación de inicio hace que las aplicaciones se ejecuten más rápido",
-      "Parche de seguridad actualizado a noviembre de 2024. Seguridad del sistema incrementada."
+      "Parche de seguridad de Android actualizado a mayo de 2023. Seguridad del sistema incrementada."
+    ],
+    "Reloj": [
+      "Reparado: Al configurar la repetición de la alarma, la casilla de verificación se mostraba de manera anormal al cambiar al Modo oscuro",
+      "Reparado: Al configurar la repetición de la alarma, la casilla de verificación se mostraba de manera anormal al cambiar al Modo oscuro"
+    ],
+    "Calculadora": [
+      "Reparado: Mortgage loan calculator wasn't displayed correctly when switching screen orientation in Split screen",
+      "Reparado: Mortgage loan calculator wasn't displayed correctly when switching screen orientation in Split screen"
     ],
     "Barra de estado, Barra de notificaciones": [
       "Reparado: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ],
-    "Reloj": [
-      "Reparado: Al configurar la repetición de la alarma, la casilla de verificación se mostraba de manera anormal al cambiar al Modo oscuro"
+    "Más funciones": [
+      "Parche de seguridad actualizado a septiembre de 2024. Seguridad del sistema incrementada.",
+      "Reparado: Scrolling screenshots were solid black if taken while searching for items"
     ],
-    "Calculadora": [
-      "Reparado: Mortgage loan calculator wasn^t displayed correctly when switching screen orientation in Split screen"
+    "Servicio en la nube de Xiaomi": [
+      "Reparado: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ],
     "Ajustes": [
       "Nuevo: CarWith now offers enhanced personalization options, including wallpapers, backgrounds, card sorting, widgets, and more",
@@ -302,24 +418,34 @@
     ],
     "Seguridad": [
       "Reparado: Disaster warning subscribed locations disappeared in some cases"
+    ],
+    "Otros": [
+      "Rendimiento del sistema optimizado",
+      "Estabilidad y seguridad del sistema mejorada"
     ]
   },
   "logs_pt": {
-    "Mais recursos": [
-      "Correção: Scrolling screenshots were solid black if taken while searching for items"
-    ],
     "Sistema": [
       "Otimização: Nova estratégia de animação de inicialização reduz os atrasos na inicialização de apps",
-      "Atualização do patch de segurança para novembro de 2024. Segurança do sistema aprimorada."
+      "Patch de Segurança do Android atualizado para Maio de 2023. Segurança do sistema aprimorada."
+    ],
+    "Relógio": [
+      "Correção: Ao definir a repetição de alarmes, a caixa de seleção era exibida anormalmente ao alterar para o Modo escuro",
+      "Correção: Ao definir a repetição de alarmes, a caixa de seleção era exibida anormalmente ao alterar para o Modo escuro"
+    ],
+    "Calculadora": [
+      "Correção: Mortgage loan calculator wasn't displayed correctly when switching screen orientation in Split screen",
+      "Correção: Mortgage loan calculator wasn't displayed correctly when switching screen orientation in Split screen"
     ],
     "Barra de status, Área de notificações": [
       "Correção: O texto e notificações eram exibidos incorretamente para alguns idiomas em condições específicas"
     ],
-    "Relógio": [
-      "Correção: Ao definir a repetição de alarmes, a caixa de seleção era exibida anormalmente ao alterar para o Modo escuro"
+    "Mais recursos": [
+      "Patch de segurança atualizado para setembro de 2024. Segurança do sistema aprimorada.",
+      "Correção: Scrolling screenshots were solid black if taken while searching for items"
     ],
-    "Calculadora": [
-      "Correção: Mortgage loan calculator wasn^t displayed correctly when switching screen orientation in Split screen"
+    "Serviço de nuvem Xiaomi": [
+      "Correção: O texto e notificações eram exibidos incorretamente para alguns idiomas em condições específicas"
     ],
     "Configurações": [
       "Novo: CarWith now offers enhanced personalization options, including wallpapers, backgrounds, card sorting, widgets, and more",
@@ -327,24 +453,34 @@
     ],
     "Segurança": [
       "Correção: Disaster warning subscribed locations disappeared in some cases"
+    ],
+    "Outros": [
+      "Desempenho do sistema aprimorado",
+      "Segurança e estabilidade do sistema aprimoradas"
     ]
   },
   "logs_tr": {
-    "Daha fazla özellik": [
-      "Onarım: Scrolling screenshots were solid black if taken while searching for items"
-    ],
     "Sistem": [
       "Optimizasyon: Yeni başlangıç animasyonu stratejisi, uygulama başlatmayı hızlandırır",
-      "Güvenlik Patch^i Kasım 2024^te güncellendi. Sistem güvenliği artırıldı."
+      "Android Güvenlik Patch'i Mayıs 2023'de güncellendi. Sistem güvenliği arttırıldı."
+    ],
+    "Saat": [
+      "Onarım: Alarm tekrarlamayı ayarlarken Karanlık moda geçildiğinde onay kutusu anormal şekilde görüntülendi",
+      "Onarım: Alarm tekrarlamayı ayarlarken Karanlık moda geçildiğinde onay kutusu anormal şekilde görüntülendi"
+    ],
+    "Hesaplayıcı": [
+      "Onarım: Mortgage loan calculator wasn't displayed correctly when switching screen orientation in Split screen",
+      "Onarım: Mortgage loan calculator wasn't displayed correctly when switching screen orientation in Split screen"
     ],
     "Durum çubuğu, Bildirim çubuğu": [
       "Onarım: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ],
-    "Saat": [
-      "Onarım: Alarm tekrarlamayı ayarlarken Karanlık moda geçildiğinde onay kutusu anormal şekilde görüntülendi"
+    "Daha fazla özellik": [
+      "Güvenlik patch'i Eylül 2024'te güncellendi. Sistem güvenliği arttırıldı.",
+      "Onarım: Scrolling screenshots were solid black if taken while searching for items"
     ],
-    "Hesaplayıcı": [
-      "Onarım: Mortgage loan calculator wasn^t displayed correctly when switching screen orientation in Split screen"
+    "Xiaomi Bulut Hizmeti": [
+      "Onarım: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ],
     "Ayarlar": [
       "Yeni: CarWith now offers enhanced personalization options, including wallpapers, backgrounds, card sorting, widgets, and more",
@@ -352,30 +488,52 @@
     ],
     "Güvenlik": [
       "Onarım: Disaster warning subscribed locations disappeared in some cases"
+    ],
+    "Diğer": [
+      "Sistem performansı optimize edildi",
+      "Sistem güvenliği ve kararlılığı geliştirildi"
     ]
   },
   "logs_id": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "Sistem": [
+      "Pengoptimalan: Strategi animasi pemulaian baru membuat aplikasi diluncurkan lebih cepat",
+      "Patch keamanan diperbarui ke November 2024. Keamanan sistem ditingkatkan."
+    ],
+    "Jam": [
+      "Perbaikan: Saat mengatur pengulangan alarm, kotak centang ditampilkan secara tidak normal saat beralih ke mode Gelap",
+      "Perbaikan: Saat mengatur pengulangan alarm, kotak centang ditampilkan secara tidak normal saat beralih ke mode Gelap"
+    ],
+    "Kalkulator": [
+      "Perbaikan: Mortgage loan calculator wasn't displayed correctly when switching screen orientation in Split screen",
+      "Perbaikan: Mortgage loan calculator wasn't displayed correctly when switching screen orientation in Split screen"
+    ],
+    "Fitur lainnya": [
+      "Patch keamanan diperbarui (September 2024). Keamanan sistem ditingkatkan.",
+      "Perbaikan: Scrolling screenshots were solid black if taken while searching for items"
+    ],
+    "Lainnya": [
+      "Performa sistem dioptimalkan",
+      "Keamanan dan stabilitas sistem ditingkatkan"
     ]
   },
   "logs_vi": {
-    "Thêm tính năng": [
-      "Sửa: Scrolling screenshots were solid black if taken while searching for items"
+    "Đồng hồ": [
+      "Sửa: Khi cài đặt lặp lại báo thức, hộp chọn hiển thị bất thường khi chuyển sang Chế độ nền tối",
+      "Sửa: Khi cài đặt lặp lại báo thức, hộp chọn hiển thị bất thường khi chuyển sang Chế độ nền tối"
     ],
-    "Hệ thống": [
-      "Tối ưu: Chiến lược hoạt ảnh khởi động mới giúp ứng dụng khởi chạy nhanh hơn",
-      "Cập nhật bản vá bảo mật đến tháng 11 năm 2024. Tăng cường bảo mật hệ thống."
+    "Máy tính": [
+      "Sửa: Mortgage loan calculator wasn't displayed correctly when switching screen orientation in Split screen",
+      "Sửa: Mortgage loan calculator wasn't displayed correctly when switching screen orientation in Split screen"
     ],
     "Thanh trạng thái, Thanh thông báo": [
       "Sửa: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ],
-    "Đồng hồ": [
-      "Sửa: Khi cài đặt lặp lại báo thức, hộp chọn hiển thị bất thường khi chuyển sang Chế độ nền tối"
+    "Thêm tính năng": [
+      "Cập nhật bản vá bảo mật đến tháng 9 năm 2024. Tăng cường bảo mật hệ thống.",
+      "Sửa: Scrolling screenshots were solid black if taken while searching for items"
     ],
-    "Máy tính": [
-      "Sửa: Mortgage loan calculator wasn^t displayed correctly when switching screen orientation in Split screen"
+    "Dịch vụ đám mây Xiaomi": [
+      "Sửa: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ],
     "Cài đặt": [
       "Mới: CarWith now offers enhanced personalization options, including wallpapers, backgrounds, card sorting, widgets, and more",
@@ -383,24 +541,30 @@
     ],
     "Bảo mật": [
       "Sửa: Disaster warning subscribed locations disappeared in some cases"
+    ],
+    "Khác": [
+      "Tối ưu hiệu suất hệ thống",
+      "Cải thiện tính ổn định và bảo mật hệ thống"
     ]
   },
   "logs_th": {
-    "คุณลักษณะเพิ่มเติม": [
-      "แก้ไข: Scrolling screenshots were solid black if taken while searching for items"
+    "นาฬิกา": [
+      "แก้ไข: เมื่อตั้งค่าการเตือนซ้ำ ช่องกาเครื่องหมายจะแสดงผิดปกติเมื่อสลับไปที่โหมดมืด",
+      "แก้ไข: เมื่อตั้งค่าการเตือนซ้ำ ช่องกาเครื่องหมายจะแสดงผิดปกติเมื่อสลับไปที่โหมดมืด"
     ],
-    "ระบบ": [
-      "การเพิ่มประสิทธิภาพ: กลยุทธ์แอนิเมชั่นเริ่มต้นใหม่ทำให้แอปเปิดเร็วขึ้น",
-      "อัปเดตแพตช์ความปลอดภัยเป็นเดือนพฤศจิกายน 2024 เพิ่มความปลอดภัยของระบบ"
+    "เครื่องคิดเลข": [
+      "แก้ไข: Mortgage loan calculator wasn't displayed correctly when switching screen orientation in Split screen",
+      "แก้ไข: Mortgage loan calculator wasn't displayed correctly when switching screen orientation in Split screen"
     ],
     "แถบสถานะ, แถบแจ้งเตือน": [
       "แก้ไข: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ],
-    "นาฬิกา": [
-      "แก้ไข: เมื่อตั้งค่าการเตือนซ้ำ ช่องกาเครื่องหมายจะแสดงผิดปกติเมื่อสลับไปที่โหมดมืด"
+    "คุณลักษณะเพิ่มเติม": [
+      "อัปเดตแพตช์ความปลอดภัยเป็นเดือนกันยายน 2024 เพิ่มความปลอดภัยของระบบ",
+      "แก้ไข: Scrolling screenshots were solid black if taken while searching for items"
     ],
-    "เครื่องคิดเลข": [
-      "แก้ไข: Mortgage loan calculator wasn^t displayed correctly when switching screen orientation in Split screen"
+    "บริการคลาวด์ Xiaomi": [
+      "แก้ไข: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ],
     "การตั้งค่า": [
       "ใหม่: CarWith now offers enhanced personalization options, including wallpapers, backgrounds, card sorting, widgets, and more",
@@ -408,24 +572,34 @@
     ],
     "ความปลอดภัย": [
       "แก้ไข: Disaster warning subscribed locations disappeared in some cases"
+    ],
+    "อื่นๆ": [
+      "เพิ่มประสิทธิภาพของระบบ",
+      "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
     ]
   },
   "logs_ar": {
-    "مزيد من الميزات": [
-      "الإصلاح: Scrolling screenshots were solid black if taken while searching for items"
-    ],
     "النظام": [
       "التحسين: تعمل إستراتيجية الرسوم المتحركة الجديدة لبدء التشغيل على تشغيل التطبيقات بشكل أسرع",
-      "تم تحديث تصحيح الأمان إلى نوفمبر 2024 لزيادة أمان النظام."
+      "تم تحديث تصحيح أمان الأندرويد إلى مايو 2023 لزيادة أمان النظام."
+    ],
+    "الساعة": [
+      "الإصلاح: عند ضبط تكرار المنبه، لم يتم عرض مربع الاختيار بشكل صحيح عند التبديل إلى الوضع الداكن",
+      "الإصلاح: عند ضبط تكرار المنبه، لم يتم عرض مربع الاختيار بشكل صحيح عند التبديل إلى الوضع الداكن"
+    ],
+    "الآلة الحاسبة": [
+      "الإصلاح: Mortgage loan calculator wasn't displayed correctly when switching screen orientation in Split screen",
+      "الإصلاح: Mortgage loan calculator wasn't displayed correctly when switching screen orientation in Split screen"
     ],
     "شريط الحالة ومركز الإشعارات": [
       "الإصلاح: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ],
-    "الساعة": [
-      "الإصلاح: عند ضبط تكرار المنبه، لم يتم عرض مربع الاختيار بشكل صحيح عند التبديل إلى الوضع الداكن"
+    "مزيد من الميزات": [
+      "تم تحديث تصحيح الأمان إلى سبتمبر 2024 لزيادة أمان النظام.",
+      "الإصلاح: Scrolling screenshots were solid black if taken while searching for items"
     ],
-    "الآلة الحاسبة": [
-      "الإصلاح: Mortgage loan calculator wasn^t displayed correctly when switching screen orientation in Split screen"
+    "خدمة Xiaomi السحابية": [
+      "الإصلاح: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ],
     "الإعدادات": [
       "الجديد: CarWith now offers enhanced personalization options, including wallpapers, backgrounds, card sorting, widgets, and more",
@@ -433,24 +607,30 @@
     ],
     "الحماية": [
       "الإصلاح: Disaster warning subscribed locations disappeared in some cases"
+    ],
+    "أخرى": [
+      "تحسين أداء النظام",
+      "تحسين أمن واستقرار النظام"
     ]
   },
   "logs_in": {
-    "ज़्यादा फ़ीचर": [
-      "ठीक करें Scrolling screenshots were solid black if taken while searching for items"
-    ],
-    "सिस्टम": [
-      "ऑप्टिमाइज़ेशन नई स्टार्टअप एनिमेशन कार्यनीति ऐप्स को तेज़ी से लॉन्च करती है",
-      "सुरक्षा पैच को नवंबर 2024 से अपडेट किया गया है. सिस्टम की सुरक्षा बढ़ा दी गई है."
-    ],
-    "स्टेटस बार, सूचना शेड": [
-      "ठीक करें Text and notifications were displayed incorrectly for some languages under specific conditions"
-    ],
     "घड़ी": [
+      "ठीक करें अलार्म के दोहराव सेट किए जाने के दौरान, डार्क मोड पर स्विच करने पर चेकबॉक्स असामान्य दिखाई दे रहे थे",
       "ठीक करें अलार्म के दोहराव सेट किए जाने के दौरान, डार्क मोड पर स्विच करने पर चेकबॉक्स असामान्य दिखाई दे रहे थे"
     ],
     "कैल्क्युलेटर": [
-      "ठीक करें Mortgage loan calculator wasn^t displayed correctly when switching screen orientation in Split screen"
+      "ठीक करें Mortgage loan calculator wasn't displayed correctly when switching screen orientation in Split screen",
+      "ठीक करें Mortgage loan calculator wasn't displayed correctly when switching screen orientation in Split screen"
+    ],
+    "स्टेटस बार, नोटिफिकेशन शेड": [
+      "ठीक करें Text and notifications were displayed incorrectly for some languages under specific conditions"
+    ],
+    "ज़्यादा फ़ीचर": [
+      "सुरक्षा पैच को सितंबर 2024 से अपडेट किया गया है. सिस्टम की सुरक्षा बढ़ा दी गई है.",
+      "ठीक करें Scrolling screenshots were solid black if taken while searching for items"
+    ],
+    "Xiaomi क्लाउड सेवा": [
+      "ठीक करें Text and notifications were displayed incorrectly for some languages under specific conditions"
     ],
     "सेटिंग्स": [
       "नया CarWith now offers enhanced personalization options, including wallpapers, backgrounds, card sorting, widgets, and more",
@@ -458,16 +638,37 @@
     ],
     "सुरक्षा": [
       "ठीक करें Disaster warning subscribed locations disappeared in some cases"
+    ],
+    "अन्य": [
+      "सिस्टम परफ़ॉर्मेंस ऑप्टिमाइज़ किया गया है",
+      "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
     ]
   },
   "logs_ug": {
-    "Other": [
-      "Optimized system performance",
+    "سىستېما": [
+      "Optimization: New startup animation strategy makes apps launch faster",
       "Improved system security and stability"
+    ],
+    "سائەت": [
+      "Fix: When setting alarm repetition, the checkbox was displayed abnormally when switching to Dark mode"
+    ],
+    "تېخىمۇ كۆپ ئىقتىدارلار": [
+      "Fix: Crashes occurred in some cases"
+    ],
+    "باشقىلىرى": [
+      "سىستېمىنىڭ مۇقىملىقىنى ئاشۇرۇش",
+      "سىستېما راۋانلىقىنى ئەلالاشتۇرۇش"
     ]
   },
   "logs_bo": {
-    "Other": [
+    "མ་ལག": [
+      "Optimization: New startup animation strategy makes apps launch faster",
+      "Improved system security and stability"
+    ],
+    "ཆུ་ཚོད།": [
+      "Fix: When setting alarm repetition, the checkbox was displayed abnormally when switching to Dark mode"
+    ],
+    "གཞན།": [
       "Optimized system performance",
       "Improved system security and stability"
     ]

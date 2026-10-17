@@ -6,21 +6,26 @@ resequence_ids.py - 把指定表的 id 重排成连续自增（消除 AUTO_INCRE
 本脚本把 id 按现有顺序重排成 1..N，并把 AUTO_INCREMENT 重置为 N+1。
 
 安全性：
-* 只允许 **id 不被其它表引用** 的表（见 SAFE_TABLES）：
+* `roms` / `dev` 的 id 没人引用，可直接重排：
   - `roms.id`：没有任何表 / 导出 JSON / API 引用（导出用 device + version 标识，
     后台表格用 id 只是页面临时行号）；
   - `dev.id`：主键，无人引用（`roms.dev_week` 存的是周数，不是 dev.id）。
-  **`logs.id` 不可重排** —— `roms.logs` / `dev.logs` 按 id 引用它。
-* 重排前会把「旧 id → 新 id」映射写到 `.backup/<表名>_id_map_<时间>.csv`，可据此回滚；
-* 重排前会先采样 `AUTO_INCREMENT` / `MAX(id)`，确认没有并发写入（三个项目的抓取脚本
+* `logs.id` **被 `roms.logs` / `dev.logs` 引用**，重排时必须同步重写引用：
+  这里交给 `LogMaintenance.compact_ids`（同一事务内改 id + 重写引用 + 归位计数器，
+  且在跨进程写锁内执行），不要再手工重排。
+* roms / dev 重排前会把「旧 id → 新 id」映射写到 `.backup/<表名>_id_map_<时间>.csv`，可据此回滚；
+  logs 重排前会把整表与引用结构备份成 JSON（`--no-backup` 可跳过）。
+* roms / dev 重排前会先采样 `AUTO_INCREMENT` / `MAX(id)`，确认没有并发写入（三个项目的抓取脚本
   共用同一个 miroms 库），并列出仍在运行的抓取进程；
-* 采用「先整体 +1000000，再赋 ROW_NUMBER()」两段式更新，避免主键中途撞号。
+  采用「先整体 +1000000，再赋 ROW_NUMBER()」两段式更新，避免主键中途撞号。
 
 用法：
     python3 data/scripts/resequence_ids.py                    # 只看 roms 空档
     python3 data/scripts/resequence_ids.py --table dev        # 只看 dev 空档
+    python3 data/scripts/resequence_ids.py --table logs       # 只看 logs 空档（压缩 id + 重写引用）
     python3 data/scripts/resequence_ids.py --apply            # 实际重排 roms
     python3 data/scripts/resequence_ids.py --table dev --apply
+    python3 data/scripts/resequence_ids.py --table logs --apply
     python3 data/scripts/resequence_ids.py --verify           # 只校验是否连续
 """
 import argparse
@@ -34,6 +39,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 from miroms.database import DatabaseManager
+from miroms.logs_maintenance import LogMaintenance
 
 # 重排期间必须没有其它写入者。注意：HyperOS.fans / NuxtMR / hub.miuier.com
 # 三个项目的抓取脚本共用同一个 miroms 库（各自的 scripts/config.py 都指向它），
@@ -42,13 +48,14 @@ BUSY_PATTERNS = (
 	'fetch_changelog.py', 'get_new_branch.py', 'ota_former.py', 'ota_full.py',
 	'xfu_full.py', 'mgc_fastboot.py', 'get_current_fastboot.py', 'aspatch.py',
 	'run_all_jobs.py', 'import_dev_week.py', 'migrate_logs_multilang.py',
-	'dedup_logs.py', 'rebuild_roms_logs.py',
+	'dedup_logs.py', 'rebuild_roms_logs.py', 'fix_non_zh_logs.py', 'maintain_logs.py',
 )
 OFFSET = 1_000_000
 PROBE_SECONDS = 20      # 采样窗口：这段时间内 AUTO_INCREMENT / MAX(id) 不变才认为没人在写
 
-# 允许重排的表（id 不被任何表引用的才能进来；logs.id 被 roms.logs / dev.logs 引用，禁止）
+# 允许直接重排（id 不被任何表引用）的表；logs 走 LogMaintenance.compact_ids
 SAFE_TABLES = ('roms', 'dev')
+ALL_TABLES = SAFE_TABLES + ('logs',)
 TABLE = 'roms'
 
 
@@ -147,16 +154,96 @@ def resequence() -> None:
 	DatabaseManager.execute(f"ALTER TABLE `{TABLE}` AUTO_INCREMENT = {current['max'] + 1}", raise_on_error=True)
 
 
+def resequence_logs(args) -> None:
+	"""logs：压缩 id 空档 + 同步重写 roms.logs / dev.logs 引用
+
+	重排 / 重写 / 归位计数器由 LogMaintenance.compact_ids 在同一事务 + 跨进程写锁内完成；
+	这里只做采样、并发提示与结果打印。
+	"""
+	before = LogMaintenance.table_stats('logs')
+	counter = LogMaintenance.auto_increment('logs')
+	print(f"[{ts()}] logs：{before['rows']} 行，id {before['min']} ~ {before['max']}，"
+		  f"空档 {before['gaps']} 处 / 共 {before['missing']} 个，AUTO_INCREMENT {counter}")
+
+	if args.verify:
+		if before['gaps']:
+			print('✖ id 不连续：', LogMaintenance.id_gaps('logs')[:10])
+			sys.exit(1)
+		print('✓ id 连续')
+		return
+
+	if not before['gaps']:
+		if args.apply and counter > before['max'] + 1:
+			DatabaseManager.execute(
+				"ALTER TABLE `logs` AUTO_INCREMENT = %s", params=(before['max'] + 1,),
+				raise_on_error=True)
+			print(f"[{ts()}] id 已连续；自增计数器 {counter} → {before['max'] + 1} 已归位")
+		elif counter > before['max'] + 1:
+			print(f"[{ts()}] id 已连续；自增计数器为 {counter}（下一个 id 会跳到 {counter}，"
+				  f"加 --apply 归位到 {before['max'] + 1}）")
+		else:
+			print(f"[{ts()}] id 连续、计数器正常（{counter}），无需处理")
+		return
+
+	if not args.apply:
+		print('空档位置（前 10）：', LogMaintenance.id_gaps('logs')[:10])
+		print('加 --apply 执行重排（会同步重写 roms.logs / dev.logs 引用并自动备份）')
+		return
+
+	print(f"[{ts()}] 采样 {PROBE_SECONDS} 秒确认没有并发写入 ...")
+	if write_activity():
+		print('✖ 有人在写 logs（可能是三个项目之一的定时任务），等它结束再重排')
+		sys.exit(1)
+	print('   ✓ 采样期间无写入')
+
+	busy = running_jobs()
+	if busy:
+		print(f"[{ts()}] 提示：检测到 {len(busy)} 个抓取进程（三个项目共用 miroms 库）：")
+		for line in busy[:5]:
+			print('   ', line.rsplit('/data/scripts/', 1)[-1] if '/data/scripts/' in line else line)
+		if not args.force:
+			print('   ✖ 它们随时可能写入，确认无进展后加 --force 继续')
+			sys.exit(1)
+		print('   ⚠ --force：已确认采样期内无写入，继续重排')
+
+	result = LogMaintenance.compact_ids(apply=True, backup=not args.no_backup)
+	if result.get('backup'):
+		print(f"[{ts()}] 备份已写入 {result['backup']}")
+	print(f"[{ts()}] 完成：压缩 {result['changed']} 个 id，"
+		  f"重写 roms {result.get('refs', {}).get('roms', 0)} 行 / "
+		  f"dev {result.get('refs', {}).get('dev', 0)} 行，"
+		  f"AUTO_INCREMENT → {result.get('auto_increment_after')}")
+
+	after = LogMaintenance.table_stats('logs')
+	left = LogMaintenance.id_gaps('logs')
+	print(f"[{ts()}] 重排完成：{after['rows']} 行，id {after['min']} ~ {after['max']}，"
+		  f"剩余空档 {len(left)} 处")
+	if left:
+		print('✖ 仍有空档：', left[:10])
+		sys.exit(1)
+	audit = LogMaintenance.audit()
+	if audit['refs']['dangling_items']:
+		print(f"✖ 重写后仍有悬空引用 {audit['refs']['dangling_items']} 处")
+		sys.exit(1)
+	print('✓ id 已连续，引用无悬空')
+
+
 def main() -> None:
 	parser = argparse.ArgumentParser(description='重排表 id 为连续自增（默认 roms）')
-	parser.add_argument('--table', default='roms', choices=SAFE_TABLES,
-						help='要重排的表（仅限 id 未被引用的表）')
+	parser.add_argument('--table', default='roms', choices=ALL_TABLES,
+						help='要重排的表：roms / dev（id 无引用）或 logs（重排时同步重写引用）')
 	parser.add_argument('--apply', action='store_true', help='实际执行重排（默认只看空档）')
 	parser.add_argument('--verify', action='store_true', help='只校验 id 是否连续')
 	parser.add_argument('--force', action='store_true', help='即使检测到抓取 / 导入脚本在跑也继续')
+	parser.add_argument('--no-backup', action='store_true',
+						help='logs 重排前不做 JSON 备份（默认备份到系统临时目录）')
 	args = parser.parse_args()
 	global TABLE
 	TABLE = args.table
+
+	if TABLE == 'logs':
+		resequence_logs(args)
+		return
 
 	before = stats()
 	found = gaps()

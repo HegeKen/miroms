@@ -16,6 +16,8 @@
       "修复 指纹解锁之后一直黑屏，只显示状态栏问题",
       "修复 锁屏使用三方主题后，开启超级壁纸功能，锁屏时间信息不显示的问题",
       "修复 充电动画显示时有概率内存异常的问题",
+      "修复 进入密码输入页面，人脸与指纹同时检测解锁时有概率出现崩溃的问题",
+      "修复 进入密码输入页面，人脸与指纹同时检测解锁时有概率出现崩溃的问题",
       "修复 进入密码输入页面，人脸与指纹同时检测解锁时有概率出现崩溃的问题"
     ],
     "设置": [
@@ -24,159 +26,202 @@
     ]
   },
   "logs_en": {
+    "Settings": [
+      "Fix: UI issues that appeared while adding corporate Wi-Fi networks",
+      "Fix: Some accounts couldn't be synced"
+    ],
     "Lock screen": [
+      "Fix: Using Face unlock and Fingerprint unlock simultaneously led to crashes in some cases",
       "Fix: Using Face unlock and Fingerprint unlock simultaneously led to crashes in some cases"
     ]
   },
   "logs_zh_tw": {
-    "系統": [
-      "優化: 更新Android安全性修補程式等級（2021#08），提升系統安全性"
+    "設定": [
+      "修復: Wi-Fi 增加網路時選擇“企業級加密”會導致域名框太窄的問題",
+      "修復: 部分應用的帳號無法同步到“帳號與同步”中的問題"
     ],
     "鎖屏": [
+      "修復: 進入密碼輸入頁面，人臉與指紋同時檢測解鎖時有概率出現錯誤的問題",
       "修復: 進入密碼輸入頁面，人臉與指紋同時檢測解鎖時有概率出現錯誤的問題"
     ]
   },
   "logs_ja": {
-    "システム": [
-      "最適化: Androidのセキュリティパッチを2021年8月にアップデートしました。システムのセキュリティが強化されました。"
+    "設定": [
+      "修正: 企業のWi-Fiネットワークを追加する際に表示されるUIの問題",
+      "修正: 一部のアカウントが同期できない問題"
     ],
     "ロック画面": [
+      "修正: 顔認証と指紋認証を同時に使用するとクラッシュする場合がある問題",
       "修正: 顔認証と指紋認証を同時に使用するとクラッシュする場合がある問題"
     ]
   },
   "logs_ko": {
-    "시스템": [
-      "최적화: Android 보안패치 (2021#08) 업데이트됨. 시스템 보안이 향상되었습니다."
+    "설정": [
+      "수정: 기업 Wi-Fi 네트워크 추가 시에 발생하는 UI 문제",
+      "수정: 일부 계정이 동기화되지 않는 문제"
     ],
     "잠금화면": [
+      "수정: 일부 상황에서 안면 인식 잠금해제와 지문 잠금해제를 동시에 사용 시 충돌이 발생하는 문제",
       "수정: 일부 상황에서 안면 인식 잠금해제와 지문 잠금해제를 동시에 사용 시 충돌이 발생하는 문제"
     ]
   },
   "logs_ru": {
-    "Система": [
-      "Оптимизация: Обновление системы безопасности Android (август 2021 года). Улучшена безопасность системы."
+    "Настройки": [
+      "Исправлено: Ошибки интерфейса, которые появились при добавлении корпоративных сетей Wi-Fi",
+      "Исправлено: Сбои синхронизации некоторых аккаунтов"
     ],
     "Экран блокировки": [
+      "Исправлено: В редких случаях одновременное использование разблокировки по лицу и при помощи отпечатка пальца могло приводить к ошибкам",
       "Исправлено: В редких случаях одновременное использование разблокировки по лицу и при помощи отпечатка пальца могло приводить к ошибкам"
     ]
   },
   "logs_uk": {
-    "Система": [
-      "Оптимізація: Оновлено патч безпеки Android за серпень 2021 року. Збільшено безпеку системи."
+    "Налаштування": [
+      "Виправлено: Помилки інтерфейсу, які з'явилися під час додавання корпоративних мереж Wi-Fi",
+      "Виправлено: Помилки синхронізації деяких акаунтів"
     ],
     "Екран блокування": [
+      "Виправлено: У деяких випадках одночасне використання розблокування за допомогою обличчя і за допомогою відбитка пальця могло призводити до помилок",
       "Виправлено: У деяких випадках одночасне використання розблокування за допомогою обличчя і за допомогою відбитка пальця могло призводити до помилок"
     ]
   },
   "logs_pl": {
-    "System": [
-      "Zoptymalizowano: Zaktualizowano Pakiet Bezpieczeństwa Android do sierpnia 2021 r. Zwiększono bezpieczeństwo systemu."
+    "Ustawienia": [
+      "Naprawiono: Problemy w interfejsem, które pojawiały się podczas dodawania firmowych sieci Wi-Fi",
+      "Naprawiono: Nie udało się zsynchronizować niektórych kont"
     ],
     "Ekran blokady": [
+      "Naprawiono: Jednoczesne używanie rozpoznawania twarzy i odblokowywania odciskiem palca w niektórych przypadkach powodowało awarie",
       "Naprawiono: Jednoczesne używanie rozpoznawania twarzy i odblokowywania odciskiem palca w niektórych przypadkach powodowało awarie"
     ]
   },
   "logs_de": {
-    "System": [
-      "Optimization: Updated Android Security Patch to August 2021. Increased system security."
+    "Einstellungen": [
+      "Behebung: UI-Probleme beim Hinzufügen von Firmen-WLAN-Netzwerken",
+      "Behebung: Einige Konten konnten nicht synchronisiert werden"
     ],
-    "Lock screen": [
-      "Fix: Using Face unlock and Fingerprint unlock simultaneously led to crashes in some cases"
+    "Sperrbildschirm": [
+      "Behoben: Die gleichzeitige Nutzung von Gesichts- und Fingerabdruckentsperrung führte in manchen Fällen zu Abstürzen",
+      "Behoben: Die gleichzeitige Nutzung von Gesichts- und Fingerabdruckentsperrung führte in manchen Fällen zu Abstürzen"
     ]
   },
   "logs_fr": {
-    "Système": [
-      "Optimisation: Mise à jour du correctif de sécurité Android jusqu^en août 2021. Sécurité du système accrue."
+    "Paramètres": [
+      "Réparé: Problèmes d'interface utilisateur apparus lors de l'ajout de réseaux Wi-Fi d'entreprise",
+      "Réparé: Certains comptes n'ont pas pu être synchronisés"
     ],
     "Écran de verrouillage": [
-      "Réparé: L^utilisation simultanée du déverrouillage du visage et du déverrouillage des empreintes digitales a entraîné des plantages dans certains cas"
+      "Réparé: L'utilisation simultanée du déverrouillage du visage et du déverrouillage des empreintes digitales a entraîné des plantages dans certains cas",
+      "Réparé: L'utilisation simultanée du déverrouillage du visage et du déverrouillage des empreintes digitales a entraîné des plantages dans certains cas"
     ]
   },
   "logs_it": {
-    "Sistema": [
-      "Ottimizzazione: Patch di sicurezza Android aggiornata ad agosto 2021. Maggiore sicurezza del sistema."
+    "Impostazioni": [
+      "Risolto: Problemi di interfaccia utente che comparivano durante l'aggiunta di reti Wi-Fi aziendali",
+      "Risolto: Alcuni account non potevano essere sincronizzati"
     ],
     "Schermata di blocco": [
-      "Risolto: L^uso simultaneo di riconoscimento facciale e sblocco tramite impronta causava arresti anomali in alcuni casi"
+      "Risolto: L'uso simultaneo di riconoscimento facciale e sblocco tramite impronta causava arresti anomali in alcuni casi",
+      "Risolto: L'uso simultaneo di riconoscimento facciale e sblocco tramite impronta causava arresti anomali in alcuni casi"
     ]
   },
   "logs_es": {
-    "Sistema": [
-      "Optimización: Parche de seguridad de Android actualizado a agosto de 2021. Seguridad del sistema incrementada."
+    "Ajustes": [
+      "Reparado: Problemas de la interfaz de usuario que aparecían al añadir redes Wi-Fi corporativas",
+      "Reparado: Algunas cuentas no podían ser sincronizadas"
     ],
     "Pantalla de bloqueo": [
+      "Reparado: En algunos casos usar el desbloqueo facial y el desbloqueo con huella dactilar simultáneamente provocaba bloqueos",
       "Reparado: En algunos casos usar el desbloqueo facial y el desbloqueo con huella dactilar simultáneamente provocaba bloqueos"
     ]
   },
   "logs_pt": {
-    "Sistema": [
-      "Otimização: Patch de Segurança do Android Atualizado para Agosto de 2021. Segurança do sistema aprimorada."
+    "Configurações": [
+      "Correção: Problemas na IU que apareciam ao adicionar redes Wi-Fi corporativas",
+      "Correção: Algumas contas não podiam ser sincronizadas"
     ],
     "Tela de bloqueio": [
+      "Correção: Usar o desbloqueio facial e o desbloqueio por impressão digital simultaneamente causava travamentos em alguns casos",
       "Correção: Usar o desbloqueio facial e o desbloqueio por impressão digital simultaneamente causava travamentos em alguns casos"
     ]
   },
   "logs_tr": {
-    "Sistem": [
-      "Optimizasyon: Android Güvenlik Patch^i Ağustos 2021^de güncellendi. Sistem güvenliği arttırıldı."
+    "Ayarlar": [
+      "Onarım: Kurumsal Wi-Fi ağları ekleniyorken görünen kullanıcı arayüzü sorunları",
+      "Onarım: Bazı hesaplar senkronize edilemedi"
     ],
     "Kilit ekranı": [
+      "Onarım: Yüz ile kilit açmayı ve Parmak izi ile kilit açmayı aynı anda kullanmak bazı durumlarda çökmelere yol açtı",
       "Onarım: Yüz ile kilit açmayı ve Parmak izi ile kilit açmayı aynı anda kullanmak bazı durumlarda çökmelere yol açtı"
     ]
   },
   "logs_id": {
-    "Sistem": [
-      "Pengoptimalan: Patch Keamanan Android diperbarui (Agustus 2021). Keamanan sistem ditingkatkan."
+    "Pengaturan": [
+      "Perbaikan: Masalah antarmuka (UI) yang timbul saat menambahkan jaringan Wi-Fi perusahaan",
+      "Perbaikan: Beberapa akun tidak disinkronkan"
     ],
     "Layar kunci": [
+      "Perbaikan: Menggunakan Buka kunci dengan wajah dan Buka kunci dengan sidik jari secara bersamaan menyebabkan layar tertutup tiba-tiba dalam beberapa kasus",
       "Perbaikan: Menggunakan Buka kunci dengan wajah dan Buka kunci dengan sidik jari secara bersamaan menyebabkan layar tertutup tiba-tiba dalam beberapa kasus"
     ]
   },
   "logs_vi": {
-    "Hệ thống": [
-      "Tối ưu: Cập nhật Bản vá bảo mật Android đến tháng 8 năm 2021. Tăng cường bảo mật hệ thống."
+    "Cài đặt": [
+      "Sửa: Sự cố giao diện người dùng xuất hiện khi thêm mạng Wi-Fi doanh nghiệp",
+      "Sửa: Một vài tài khoản không thể đồng bộ"
     ],
     "Màn hình khóa": [
+      "Sửa: Sử dụng Mở khóa bằng khuôn mặt và Mở khóa vân tay đồng thời dẫn đến sự cố trong một số trường hợp",
       "Sửa: Sử dụng Mở khóa bằng khuôn mặt và Mở khóa vân tay đồng thời dẫn đến sự cố trong một số trường hợp"
     ]
   },
   "logs_th": {
-    "ระบบ": [
-      "การเพิ่มประสิทธิภาพ: อัปเดตแพทช์ความปลอดภัยของแอนดรอยด์เป็นสิงหาคม 2021 เพิ่มความปลอดภัยของระบบ"
+    "การตั้งค่า": [
+      "แก้ไข: ปัญหา UI ที่ปรากฏขึ้นขณะเพิ่มเครือข่าย Wi-Fi ขององค์กร",
+      "แก้ไข: ไม่สามารถซิงค์บางบัญชีได้"
     ],
     "ล็อคหน้าจอ": [
+      "แก้ไข: การใช้การปลดล็อกด้วยใบหน้าและการปลดล็อกด้วยลายนิ้วมือพร้อมกันทำให้เกิดข้อขัดข้องในบางกรณี",
       "แก้ไข: การใช้การปลดล็อกด้วยใบหน้าและการปลดล็อกด้วยลายนิ้วมือพร้อมกันทำให้เกิดข้อขัดข้องในบางกรณี"
     ]
   },
   "logs_ar": {
-    "النظام": [
-      "التحسين: تم تحديث تصحيح أمان الأندرويد إلى أغسطس 2021 لزيادة أمان النظام."
+    "الإعدادات": [
+      "الإصلاح: مشاكل واجهة المستخدم أثناء إضافة شبكات Wi-Fi للشركات",
+      "الإصلاح: مشكلة عدم مزامنة بعض الحسابات"
     ],
     "شاشة القفل": [
+      "الإصلاح: مشكلة حدوث تعطل الجهاز احيانا عند استخدام ميزات التعرف على الوجه وإلغاء القفل ببصمة الإصبع في نفس الوقت",
       "الإصلاح: مشكلة حدوث تعطل الجهاز احيانا عند استخدام ميزات التعرف على الوجه وإلغاء القفل ببصمة الإصبع في نفس الوقت"
     ]
   },
   "logs_in": {
-    "सिस्टम": [
-      "ऑप्टिमाइज़ेशन Android सुरक्षा पैच को अगस्त 2021 से अपडेट किया गया. सिस्टम की सुरक्षा बढ़ा दी गई है."
+    "सेटिंग्स": [
+      "ठीक करें कॉर्पोरेट वाई-फ़ाई नेटवर्क जोड़ते समय दिखाई देने वाली UI समस्याएं",
+      "ठीक करें कुछ खाते सिंक नहीं किए जा सके"
     ],
     "लॉक स्क्रीन": [
+      "ठीक करें चेहरा अनलॉक और फ़िंगरप्रिंट अनलॉक का एक साथ उपयोग करने से कुछ मामलों में क्रैश हो रहा था",
       "ठीक करें चेहरा अनलॉक और फ़िंगरप्रिंट अनलॉक का एक साथ उपयोग करने से कुछ मामलों में क्रैश हो रहा था"
     ]
   },
   "logs_ug": {
-    "System": [
-      "Optimization: Updated Android Security Patch to August 2021. Increased system security."
+    "تەڭشەك": [
+      "Fix: UI issues that appeared while adding corporate Wi-Fi networks",
+      "Fix: Some accounts couldn't be synced"
     ],
     "Lock screen": [
+      "Fix: Using Face unlock and Fingerprint unlock simultaneously led to crashes in some cases",
       "Fix: Using Face unlock and Fingerprint unlock simultaneously led to crashes in some cases"
     ]
   },
   "logs_bo": {
-    "System": [
-      "Optimization: Updated Android Security Patch to August 2021. Increased system security."
+    "Settings": [
+      "Fix: UI issues that appeared while adding corporate Wi-Fi networks",
+      "Fix: Some accounts couldn't be synced"
     ],
     "Lock screen": [
+      "Fix: Using Face unlock and Fingerprint unlock simultaneously led to crashes in some cases",
       "Fix: Using Face unlock and Fingerprint unlock simultaneously led to crashes in some cases"
     ]
   }

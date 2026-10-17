@@ -1,11 +1,49 @@
 {
-  "generatedAt": "2026-10-16 23:36:25",
+  "generatedAt": "2026-10-18 03:33:17",
   "sites": {
     "hub.web": {
       "site": "hub.web",
-      "latest": "V0.17.0",
-      "count": 17,
+      "latest": "V0.18.0",
+      "count": 18,
       "logs": [
+        {
+          "ver": "V0.18.0",
+          "date": "2026-10-18",
+          "log": [
+            {
+              "zh": "feat: 日志校对接入 DeepSeek，支持批量复核、语言不符标注与 proofed 标记",
+              "en": ""
+            },
+            {
+              "zh": "feat: 新增 proofed 行缺失语言 AI 翻译回填与 complete 完整度标记",
+              "en": ""
+            },
+            {
+              "zh": "feat: 语言不符支持 correct 正确译文，高置信度自动替换、低置信度保留原值",
+              "en": ""
+            },
+            {
+              "zh": "feat: 新增日志开头空格/标点整理、无效掩码清理与旧 JSON 转义还原",
+              "en": ""
+            },
+            {
+              "zh": "fix: 批量校对改为每批即时落库，达到调用上限时提前停止并保留已完成进度",
+              "en": ""
+            },
+            {
+              "zh": "fix: 日志校对达到 max_calls 后不再逐批报错，缓存可断点续跑",
+              "en": ""
+            },
+            {
+              "zh": "chore: logs 表新增 proofed/complete/lang_issues 字段并同步迁移脚本",
+              "en": ""
+            },
+            {
+              "zh": "docs: 更新日志维护、AI 翻译回填与导出复查说明",
+              "en": ""
+            }
+          ]
+        },
         {
           "ver": "V0.17.0",
           "date": "2026-10-16",

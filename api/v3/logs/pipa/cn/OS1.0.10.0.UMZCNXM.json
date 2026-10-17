@@ -5,6 +5,8 @@
     ],
     "自由窗口": [
       "修复 横竖屏切换时，小窗视频应用显示异常的问题",
+      "修复 部分游戏场景下，迷你窗挂起后尺寸异常的问题",
+      "修复 横竖屏切换时，小窗视频应用显示异常的问题",
       "修复 部分游戏场景下，迷你窗挂起后尺寸异常的问题"
     ],
     "桌面": [
@@ -12,6 +14,16 @@
     ],
     "状态栏、通知栏": [
       "修复 在不同语言下，部分场景出现的文案及通知显示异常问题"
+    ],
+    "小米云服务": [
+      "修复 在不同语言下，部分场景出现的文案及通知显示异常问题"
+    ],
+    "最近任务": [
+      "修复 第二空间桌面布局偶尔出现空白的问题"
+    ],
+    "其他": [
+      "提高系统的稳定性",
+      "优化系统的流畅度"
     ]
   },
   "logs_en": {
@@ -19,7 +31,9 @@
       "Updated the security patch to September 2024. Increased system security."
     ],
     "Floating windows": [
-      "Fix: Video apps weren^t displayed correctly when switching screen orientation",
+      "Fix: Video apps weren't displayed correctly when switching screen orientation",
+      "Fix: The size of pinned floating windows for some games was incorrect",
+      "Fix: Video apps weren't displayed correctly when switching screen orientation",
       "Fix: The size of pinned floating windows for some games was incorrect"
     ],
     "Home screen": [
@@ -27,6 +41,13 @@
     ],
     "Status bar, Notification shade": [
       "Fix: Text and notifications were displayed incorrectly for some languages under specific conditions"
+    ],
+    "Mi Cloud": [
+      "Fix: Text and notifications were displayed incorrectly for some languages under specific conditions"
+    ],
+    "Other": [
+      "Optimized system performance",
+      "Improved system security and stability"
     ]
   },
   "logs_zh_tw": {
@@ -35,6 +56,8 @@
     ],
     "自由視窗": [
       "修復: 橫豎螢幕切換時，小窗影片應用程式顯示異常的問題",
+      "修復: 部分遊戲場景下，迷你窗掛起後尺寸異常的問題",
+      "修復: 橫豎螢幕切換時，小窗影片應用程式顯示異常的問題",
       "修復: 部分遊戲場景下，迷你窗掛起後尺寸異常的問題"
     ],
     "桌面": [
@@ -42,238 +65,409 @@
     ],
     "狀態欄、通知欄": [
       "修復: 在不同語言下，部分場景出現的文案及通知顯示異常問題"
+    ],
+    "小米雲服務": [
+      "修復: 在不同語言下，部分場景出現的文案及通知顯示異常問題"
+    ],
+    "其他": [
+      "改善系統的穩定性",
+      "優化系統的流暢度"
     ]
   },
   "logs_ja": {
+    "システム": [
+      "修正: Crashes occurred in some cases"
+    ],
     "フローティングウィンドウ": [
       "修正: 画面の向きを切り替えると、ビデオアプリが正しく表示されない問題",
+      "修正: 一部のゲームで、固定されたフローティングウィンドウのサイズが正しくない問題",
+      "修正: 画面の向きを切り替えると、ビデオアプリが正しく表示されない問題",
       "修正: 一部のゲームで、固定されたフローティングウィンドウのサイズが正しくない問題"
-    ],
-    "システム": [
-      "セキュリティパッチを 2024 年 9 月にアップデートしました。システムのセキュリティが強化されました。"
     ],
     "ステータスバー、通知シェード": [
       "修正: 特定の状況下で、一部の言語でテキストと通知が正しく表示されない問題"
     ],
-    "ホーム画面": [
+    "Xiaomi クラウドサービス": [
+      "修正: 特定の状況下で、一部の言語でテキストと通知が正しく表示されない問題"
+    ],
+    "Recents": [
       "修正: セカンド・スペースのホーム画面レイアウトに空白が生じる場合がある問題"
+    ],
+    "その他": [
+      "システムパフォーマンスの最適化",
+      "システムのセキュリティと安定性の向上"
     ]
   },
   "logs_ko": {
+    "시스템": [
+      "수정: Crashes occurred in some cases"
+    ],
     "플로팅 창": [
       "수정: 화면 방향을 전환하면 동영상 앱이 제대로 표시되지 않는 문제",
+      "수정: 일부 게임에서 고정된 플로팅 창 크기가 올바르지 않은 문제",
+      "수정: 화면 방향을 전환하면 동영상 앱이 제대로 표시되지 않는 문제",
       "수정: 일부 게임에서 고정된 플로팅 창 크기가 올바르지 않은 문제"
-    ],
-    "시스템": [
-      "보안패치 (2024#09) 업데이트됨. 시스템 보안이 향상되었습니다."
     ],
     "상태 바, 알림 바": [
       "수정: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ],
-    "홈 화면": [
+    "Xiaomi 클라우드 서비스": [
+      "수정: Text and notifications were displayed incorrectly for some languages under specific conditions"
+    ],
+    "Recents": [
       "수정: 보조 공간의 홈 화면 레이아웃에 공백이 발생할 수 있는 문제"
+    ],
+    "기타": [
+      "시스템 성능 최적화",
+      "시스템 보안 및 안정성 개선"
     ]
   },
   "logs_ru": {
+    "Система": [
+      "Исправлено: Crashes occurred in some cases"
+    ],
     "Плавающие окна": [
       "Исправлено: Видеоприложения отображались некорректно при смене ориентации экрана",
+      "Исправлено: Размер закрепленных плавающих окон для некоторых игр мог быть неправильным",
+      "Исправлено: Видеоприложения отображались некорректно при смене ориентации экрана",
       "Исправлено: Размер закрепленных плавающих окон для некоторых игр мог быть неправильным"
-    ],
-    "Система": [
-      "Обновление системы безопасности (сентябрь 2024 года). Улучшена безопасность системы."
     ],
     "Строка состояния, шторка уведомлений": [
       "Исправлено: В некоторых ситуациях текст и уведомления отображались некорректно для некоторых языков"
     ],
-    "Рабочий стол": [
+    "Облачный сервис Xiaomi": [
+      "Исправлено: В некоторых ситуациях текст и уведомления отображались некорректно для некоторых языков"
+    ],
+    "Недавнее": [
       "Исправлено: В некоторых случаях на рабочем столе второго пространства появлялись пустые места"
+    ],
+    "Другое": [
+      "Оптимизация производительности системы",
+      "Улучшение безопасности и стабильности системы"
     ]
   },
   "logs_uk": {
+    "Система": [
+      "Виправлено: Crashes occurred in some cases"
+    ],
     "Спливаючі вікна": [
       "Виправлено: Відеопрограми відображалися некоректно при зміні орієнтації екрана",
+      "Виправлено: Розмір закріплених плаваючих вікон для деяких ігор міг бути неправильним",
+      "Виправлено: Відеопрограми відображалися некоректно при зміні орієнтації екрана",
       "Виправлено: Розмір закріплених плаваючих вікон для деяких ігор міг бути неправильним"
-    ],
-    "Система": [
-      "Оновлено патч безпеки за вересень 2024 року. Збільшено безпеку системи."
     ],
     "Рядок стану, Панель сповіщень": [
       "Виправлено: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ],
-    "Робочий стіл": [
-      "Виправлено: У деяких випадках на робочому столі Другого простору з^являлися порожні місця"
+    "Хмарний сервіс Xiaomi": [
+      "Виправлено: Text and notifications were displayed incorrectly for some languages under specific conditions"
+    ],
+    "Recents": [
+      "Виправлено: У деяких випадках на робочому столі Другого простору з'являлися порожні місця"
+    ],
+    "Інше": [
+      "Оптимізація продуктивності системи",
+      "Покращення безпеки та стабільності системи"
     ]
   },
   "logs_pl": {
+    "System": [
+      "Naprawiono: Crashes occurred in some cases"
+    ],
     "Pływające okna": [
       "Naprawiono: Aplikacje wideo nie były wyświetlane poprawnie podczas zmiany orientacji ekranu",
+      "Naprawiono: Rozmiar przypiętych, pływających okien w niektórych grach był nieprawidłowy",
+      "Naprawiono: Aplikacje wideo nie były wyświetlane poprawnie podczas zmiany orientacji ekranu",
       "Naprawiono: Rozmiar przypiętych, pływających okien w niektórych grach był nieprawidłowy"
-    ],
-    "System": [
-      "Zaktualizowano Pakiet Bezpieczeństwa do września 2024 r. Zwiększono bezpieczeństwo systemu."
     ],
     "Pasek powiadomień, Panel powiadomień": [
       "Naprawiono: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ],
-    "Ekran główny": [
+    "Usługa w chmurze Xiaomi": [
+      "Naprawiono: Text and notifications were displayed incorrectly for some languages under specific conditions"
+    ],
+    "Recents": [
       "Naprawiono: W niektórych przypadkach w układzie Ekranu głównego drugiej przestrzeni pojawiały się puste miejsca"
+    ],
+    "Inne": [
+      "Zoptymalizowana wydajność systemu",
+      "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
   "logs_de": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "System": [
+      "Updated the security patch to September 2024. Increased system security."
+    ],
+    "Schwebende Fenster": [
+      "Sicherheitspatch auf August 2024 aktualisiert. Systemsicherheit erhöht.",
+      "Fix: The size of pinned floating windows for some games was incorrect",
+      "Sicherheitspatch auf August 2024 aktualisiert. Systemsicherheit erhöht.",
+      "Fix: The size of pinned floating windows for some games was incorrect"
+    ],
+    "Sonstiges": [
+      "Systemleistung optimiert",
+      "Systemsicherheit und -stabilität verbessert"
     ]
   },
   "logs_fr": {
+    "Système": [
+      "Réparé: Crashes occurred in some cases"
+    ],
     "Fenêtres flottantes": [
       "Réparé: Les applications vidéo n’étaient pas affichées correctement lors du changement d’orientation de l’écran",
+      "Réparé: La taille des fenêtres flottantes épinglées pour certains jeux était incorrecte",
+      "Réparé: Les applications vidéo n’étaient pas affichées correctement lors du changement d’orientation de l’écran",
       "Réparé: La taille des fenêtres flottantes épinglées pour certains jeux était incorrecte"
-    ],
-    "Système": [
-      "Mise à jour du correctif de sécurité en septembre 2024. Sécurité accrue du système."
     ],
     "Barre d'état, Panneau de notification": [
       "Réparé: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ],
-    "Écran d'accueil": [
+    "Service cloud Xiaomi": [
+      "Réparé: Text and notifications were displayed incorrectly for some languages under specific conditions"
+    ],
+    "Recents": [
       "Réparé: Des espaces vides sont apparus dans la mise en page de l’écran d’accueil du Second espace dans certains cas"
+    ],
+    "Autre": [
+      "Performances système optimisées",
+      "Sécurité et stabilité du système améliorées"
     ]
   },
   "logs_it": {
-    "Finestre a comparsa": [
-      "Risolto: I video non venivano visualizzati correttamente cambiando l^orientamento dello schermo",
-      "Risolto: La dimensione delle finestre a comparsa non era corretta per alcuni giochi"
-    ],
     "Sistema": [
-      "Patch di sicurezza aggiornata a settembre 2024. Maggiore sicurezza del sistema."
+      "Risolto: Crashes occurred in some cases"
+    ],
+    "Finestre a comparsa": [
+      "Risolto: I video non venivano visualizzati correttamente cambiando l'orientamento dello schermo",
+      "Risolto: La dimensione delle finestre a comparsa non era corretta per alcuni giochi",
+      "Risolto: I video non venivano visualizzati correttamente cambiando l'orientamento dello schermo",
+      "Risolto: La dimensione delle finestre a comparsa non era corretta per alcuni giochi"
     ],
     "Barra di stato, Area delle notifiche": [
       "Risolto: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ],
-    "Schermata Home": [
+    "Servizio cloud Xiaomi": [
+      "Risolto: Text and notifications were displayed incorrectly for some languages under specific conditions"
+    ],
+    "Recenti": [
       "Risolto: In alcuni casi apparivano spazi vuoti nel layout della schermata Home di Secondo spazio"
+    ],
+    "Altro": [
+      "Prestazioni di sistema ottimizzate",
+      "Maggiore sicurezza e stabilità di sistema"
     ]
   },
   "logs_es": {
+    "Sistema": [
+      "Reparado: Crashes occurred in some cases"
+    ],
     "Ventanas flotantes": [
       "Reparado: Las aplicaciones de vídeo no se mostraban correctamente al cambiar la orientación de la pantalla",
+      "Reparado: El tamaño de las ventanas flotantes fijadas para algunos juegos era incorrecto",
+      "Reparado: Las aplicaciones de vídeo no se mostraban correctamente al cambiar la orientación de la pantalla",
       "Reparado: El tamaño de las ventanas flotantes fijadas para algunos juegos era incorrecto"
-    ],
-    "Sistema": [
-      "Parche de seguridad actualizado a septiembre de 2024. Seguridad del sistema incrementada."
     ],
     "Barra de estado, Barra de notificaciones": [
       "Reparado: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ],
-    "Pantalla de inicio": [
+    "Servicio en la nube de Xiaomi": [
+      "Reparado: Text and notifications were displayed incorrectly for some languages under specific conditions"
+    ],
+    "Recientes": [
       "Reparado: En algunos casos aparecían espacios vacíos en el diseño de la Pantalla de inicio del Segundo espacio"
+    ],
+    "Otros": [
+      "Rendimiento del sistema optimizado",
+      "Estabilidad y seguridad del sistema mejorada"
     ]
   },
   "logs_pt": {
+    "Sistema": [
+      "Correção: Crashes occurred in some cases"
+    ],
     "Janelas flutuantes": [
       "Correção: Apps de vídeo não eram exibidos corretamente ao alterar a orientação da tela",
+      "Correção: O tamanho de janelas flutuantes fixadas para alguns jogos estava incorreto",
+      "Correção: Apps de vídeo não eram exibidos corretamente ao alterar a orientação da tela",
       "Correção: O tamanho de janelas flutuantes fixadas para alguns jogos estava incorreto"
-    ],
-    "Sistema": [
-      "Patch de segurança atualizado para setembro de 2024. Segurança do sistema aprimorada."
     ],
     "Barra de status, Área de notificações": [
       "Correção: O texto e notificações eram exibidos incorretamente para alguns idiomas em condições específicas"
     ],
-    "Tela inicial": [
+    "Serviço de nuvem Xiaomi": [
+      "Correção: O texto e notificações eram exibidos incorretamente para alguns idiomas em condições específicas"
+    ],
+    "Recents": [
       "Correção: Locais em branco apareciam no layout da Tela inicial do Segundo Espaço em alguns casos"
+    ],
+    "Outros": [
+      "Desempenho do sistema aprimorado",
+      "Segurança e estabilidade do sistema aprimoradas"
     ]
   },
   "logs_tr": {
+    "Sistem": [
+      "Onarım: Crashes occurred in some cases"
+    ],
     "Kayan pencereler": [
       "Onarım: Ekran döndürmeyi değiştirirken video uygulamaları doğru bir şekilde görüntülenmedi",
+      "Onarım: Bazı oyunlar için sabitlenmiş kayan pencerelerin boyutu yanlıştı",
+      "Onarım: Ekran döndürmeyi değiştirirken video uygulamaları doğru bir şekilde görüntülenmedi",
       "Onarım: Bazı oyunlar için sabitlenmiş kayan pencerelerin boyutu yanlıştı"
-    ],
-    "Sistem": [
-      "Güvenlik patch^i Eylül 2024^te güncellendi. Sistem güvenliği arttırıldı."
     ],
     "Durum çubuğu, Bildirim çubuğu": [
       "Onarım: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ],
-    "Ana ekran": [
+    "Xiaomi Bulut Hizmeti": [
+      "Onarım: Text and notifications were displayed incorrectly for some languages under specific conditions"
+    ],
+    "Son kullanılanlar": [
       "Onarım: Bazı durumlarda İkinci alan Ana ekran düzeninde boş alanlar göründü"
+    ],
+    "Diğer": [
+      "Sistem performansı optimize edildi",
+      "Sistem güvenliği ve kararlılığı geliştirildi"
     ]
   },
   "logs_id": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "Sistem": [
+      "Perbaikan: Crashes occurred in some cases"
+    ],
+    "Jendela mengambang": [
+      "Perbaikan: Aplikasi video tidak ditampilkan dengan benar saat mengganti orientasi layar",
+      "Perbaikan: Ukuran jendela mengambang yang disematkan untuk beberapa permainan tidak benar",
+      "Perbaikan: Aplikasi video tidak ditampilkan dengan benar saat mengganti orientasi layar",
+      "Perbaikan: Ukuran jendela mengambang yang disematkan untuk beberapa permainan tidak benar"
+    ],
+    "Lainnya": [
+      "Performa sistem dioptimalkan",
+      "Keamanan dan stabilitas sistem ditingkatkan"
     ]
   },
   "logs_vi": {
+    "Hệ thống": [
+      "Sửa: Crashes occurred in some cases"
+    ],
     "Cửa sổ nổi": [
       "Sửa: Ứng dụng video không hiển thị chính xác khi chuyển hướng màn hình",
+      "Sửa: Kích thước của cửa sổ nổi được ghim đối với một số trò chơi không chính xác",
+      "Sửa: Ứng dụng video không hiển thị chính xác khi chuyển hướng màn hình",
       "Sửa: Kích thước của cửa sổ nổi được ghim đối với một số trò chơi không chính xác"
-    ],
-    "Hệ thống": [
-      "Cập nhật bản vá bảo mật đến tháng 9 năm 2024. Tăng cường bảo mật hệ thống."
     ],
     "Thanh trạng thái, Thanh thông báo": [
       "Sửa: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ],
-    "Màn hình chính": [
+    "Dịch vụ đám mây Xiaomi": [
+      "Sửa: Text and notifications were displayed incorrectly for some languages under specific conditions"
+    ],
+    "Recents": [
       "Sửa: Các điểm trống xuất hiện trong bố trí Màn hình chính của Không gian thứ hai trong một số trường hợp"
+    ],
+    "Khác": [
+      "Tối ưu hiệu suất hệ thống",
+      "Cải thiện tính ổn định và bảo mật hệ thống"
     ]
   },
   "logs_th": {
+    "ระบบ": [
+      "แก้ไข: Crashes occurred in some cases"
+    ],
     "หน้าต่างแบบลอย": [
       "แก้ไข: แอปวิดีโอแสดงไม่ถูกต้องเมื่อสลับการวางแนวหน้าจอ",
+      "แก้ไข: ขนาดของหน้าต่างลอยที่ปักหมุดไว้สำหรับบางเกมไม่ถูกต้อง",
+      "แก้ไข: แอปวิดีโอแสดงไม่ถูกต้องเมื่อสลับการวางแนวหน้าจอ",
       "แก้ไข: ขนาดของหน้าต่างลอยที่ปักหมุดไว้สำหรับบางเกมไม่ถูกต้อง"
-    ],
-    "ระบบ": [
-      "อัปเดตแพตช์ความปลอดภัยเป็นเดือนกันยายน 2024 เพิ่มความปลอดภัยของระบบ"
     ],
     "แถบสถานะ, แถบแจ้งเตือน": [
       "แก้ไข: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ],
-    "หน้าจอหลัก": [
+    "บริการคลาวด์ Xiaomi": [
+      "แก้ไข: Text and notifications were displayed incorrectly for some languages under specific conditions"
+    ],
+    "Recents": [
       "แก้ไข: จุดว่างปรากฏขึ้นในรูปแบบหน้าจอหลักของพื้นที่ที่สองในบางกรณี"
+    ],
+    "อื่นๆ": [
+      "เพิ่มประสิทธิภาพของระบบ",
+      "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
     ]
   },
   "logs_ar": {
+    "النظام": [
+      "الإصلاح: Crashes occurred in some cases"
+    ],
     "النوافذ المنبثقة": [
       "الإصلاح: لم يتم عرض تطبيقات الفيديو بشكل صحيح عند تبديل اتجاه الشاشة",
+      "الإصلاح: حجم النوافذ المنبثقة المثبتة لبعض الألعاب غير صحيح",
+      "الإصلاح: لم يتم عرض تطبيقات الفيديو بشكل صحيح عند تبديل اتجاه الشاشة",
       "الإصلاح: حجم النوافذ المنبثقة المثبتة لبعض الألعاب غير صحيح"
-    ],
-    "النظام": [
-      "تم تحديث تصحيح الأمان إلى سبتمبر 2024 لزيادة أمان النظام."
     ],
     "شريط الحالة ومركز الإشعارات": [
       "الإصلاح: Text and notifications were displayed incorrectly for some languages under specific conditions"
     ],
-    "الشاشة الرئيسية": [
+    "خدمة Xiaomi السحابية": [
+      "الإصلاح: Text and notifications were displayed incorrectly for some languages under specific conditions"
+    ],
+    "Recents": [
       "الإصلاح: ظهور مساحات فارغة على تنسيق الشاشة الرئيسية للواجهة الثانية في بعض الحالات"
+    ],
+    "أخرى": [
+      "تحسين أداء النظام",
+      "تحسين أمن واستقرار النظام"
     ]
   },
   "logs_in": {
+    "सिस्टम": [
+      "ठीक करें Crashes occurred in some cases"
+    ],
+    "फ़्लोटिंग विंडोज़": [
+      "ठीक करें स्क्रीन ओरिएंटेशन बदलते समय वीडियो ऐप्स सही तरीके से नहीं दिखाई दे रहे थे",
+      "ठीक करें कुछ गेम्स के लिए पिन किए गए फ़्लोटिंग विंडो का आकार ग़लत था"
+    ],
+    "स्टेटस बार, नोटिफिकेशन शेड": [
+      "ठीक करें Text and notifications were displayed incorrectly for some languages under specific conditions"
+    ],
     "फ़्लोटिंग विंडोज़": [
       "ठीक करें स्क्रीन ओरिएंटेशन बदलते समय वीडियो ऐप्स सही तरीके से नहीं दिखाई दे रहे थे",
       "ठीक करें कुछ गेम्स के लिए पिन किए गए फ़्लोटिंग विंडो का आकार ग़लत था"
     ],
-    "सिस्टम": [
-      "सुरक्षा पैच को सितंबर 2024 से अपडेट किया गया है. सिस्टम की सुरक्षा बढ़ा दी गई है."
-    ],
-    "स्टेटस बार, सूचना शेड": [
+    "Xiaomi क्लाउड सेवा": [
       "ठीक करें Text and notifications were displayed incorrectly for some languages under specific conditions"
     ],
-    "होम स्क्रीन": [
+    "Recents": [
       "ठीक करें कुछ मामलों में, दूसरे स्थान के होम स्क्रीन लेआउट में खाली धब्बे दिखाई दे रहे थे"
+    ],
+    "अन्य": [
+      "सिस्टम परफ़ॉर्मेंस ऑप्टिमाइज़ किया गया है",
+      "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
     ]
   },
   "logs_ug": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "سىستېما": [
+      "Updated the security patch to September 2024. Increased system security."
+    ],
+    "Floating windows": [
+      "Fix: Video apps weren't displayed correctly when switching screen orientation",
+      "Fix: The size of pinned floating windows for some games was incorrect",
+      "Fix: Video apps weren't displayed correctly when switching screen orientation",
+      "Fix: The size of pinned floating windows for some games was incorrect"
+    ],
+    "باشقىلىرى": [
+      "سىستېمىنىڭ مۇقىملىقىنى ئاشۇرۇش",
+      "سىستېما راۋانلىقىنى ئەلالاشتۇرۇش"
     ]
   },
   "logs_bo": {
-    "Other": [
+    "མ་ལག": [
+      "Updated the security patch to September 2024. Increased system security."
+    ],
+    "Floating windows": [
+      "Fix: Video apps weren't displayed correctly when switching screen orientation",
+      "Fix: The size of pinned floating windows for some games was incorrect",
+      "Fix: Video apps weren't displayed correctly when switching screen orientation",
+      "Fix: The size of pinned floating windows for some games was incorrect"
+    ],
+    "གཞན།": [
       "Optimized system performance",
       "Improved system security and stability"
     ]

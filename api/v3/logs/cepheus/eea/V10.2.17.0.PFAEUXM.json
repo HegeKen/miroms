@@ -18,7 +18,7 @@
     "Lockscreen, status bar, Notification shade": [
       "New: You can stay on the Lock screen after using Face unlock",
       "New: Fingerprint unlock option on the Lock screen",
-      "Fix: Face unlock prompts didn^t disappear on time",
+      "Fix: Face unlock prompts didn't disappear on time",
       "Fix: Password form flashed black whenever a notification was tapped on the Lock screen",
       "Fix: Call time bubble overlapped with notification icons"
     ]
@@ -35,6 +35,30 @@
       "修復 通話時間氣泡與通知圖示重疊"
     ]
   },
+  "logs_ja": {
+    "システム": [
+      "最適化: Android セキュリティパッチを2019年3月に更新。システムの安全性が向上しました。"
+    ],
+    "ロック画面、ステータスバー、通知シェード": [
+      "新規: 顔認証によるロック解除に成功した後、ロック画面に留まるオプション",
+      "新機能: ロック画面のパスワード画面に画面内指紋認証のロック解除方式を追加",
+      "顔認証のヒントが時間どおりに消えない問題を修正",
+      "ロック画面で通知をタップした後、パスワード画面で指紋認証すると黒い画面のちらつきが発生する問題を修正",
+      "修正: 通話時間のバブルが通知アイコンと重なる問題"
+    ]
+  },
+  "logs_ko": {
+    "시스템": [
+      "최적화: Android 보안 패치를 2019년 3월로 업데이트했습니다. 시스템 보안이 향상되었습니다."
+    ],
+    "잠금화면, 상태 바, 알림 바": [
+      "새 기능: 얼굴 잠금 해제 성공 후 잠금 화면에 유지되는 옵션",
+      "새 기능: 잠금 화면 비밀번호 화면에 디스플레이 내장 지문 잠금 해제 방식 추가",
+      "얼굴 인식 안내가 제때 사라지지 않는 문제 수정",
+      "잠금 화면에서 알림을 탭한 후 비밀번호 화면에서 지문으로 잠금 해제할 때 검은 화면 깜박임이 발생하는 문제를 수정",
+      "수정: 통화 시간 버블이 알림 아이콘과 겹치는 문제"
+    ]
+  },
   "logs_ru": {
     "Система": [
       "Оптимизация: Обновление системы безопасности Android (март 2019 года). Улучшена безопасность системы."
@@ -47,16 +71,64 @@
       "Исправлено: Время продолжительности вызова перекрывалось значками уведомлений"
     ]
   },
+  "logs_uk": {
+    "Система": [
+      "Оптимізація: Оновлено патч безпеки Android до березня 2019 року. Безпеку системи підвищено."
+    ],
+    "Екран блокування, рядок стану, панель сповіщень": [
+      "Нове: опція залишатися на екрані блокування після успішного розблокування обличчям",
+      "Додано: на екрані введення пароля блокування додано розблокування піддисплейним сканером відбитків пальців",
+      "Виправлено: підказка розпізнавання обличчя не зникала вчасно",
+      "Виправлено проблему з чорним мерехтінням екрана під час розблокування відбитком на екрані пароля після натискання сповіщення на екрані блокування",
+      "Виправлено: бульбашка часу виклику перекривалася зі значками сповіщень"
+    ]
+  },
+  "logs_pl": {
+    "System": [
+      "Optymalizacja: Zaktualizowano poprawkę zabezpieczeń Androida do marca 2019 r. Zwiększono bezpieczeństwo systemu."
+    ],
+    "Ekran blokady, pasek powiadomień,panel powiadomień": [
+      "Nowość: opcja pozostania na ekranie blokady po pomyślnym odblokowaniu twarzą",
+      "Nowość: na ekranie hasła blokady dodano odblokowywanie podekranowym czytnikiem odcisków palców",
+      "Poprawiono: monit o rozpoznawaniu twarzy nie znikał na czas",
+      "Naprawiono problem czarnego migotania ekranu podczas odblokowywania odciskiem palca na ekranie hasła po dotknięciu powiadomienia na ekranie blokady",
+      "Poprawka: bąbel czasu połączenia nakładał się na ikony powiadomień"
+    ]
+  },
+  "logs_de": {
+    "System": [
+      "Optimierung: Android-Sicherheitspatch auf März 2019 aktualisiert. Systemsicherheit verbessert."
+    ],
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
+      "Neu: Option, nach erfolgreicher Gesichtserkennung auf dem Sperrbildschirm zu bleiben",
+      "Neu: Entsperren per Fingerabdruck unter dem Display auf dem Passwortbildschirm hinzugefügt",
+      "Behoben: Hinweis zur Gesichtserkennung verschwand nicht rechtzeitig",
+      "Problem behoben: Schwarzes Flackern auf dem Passwortbildschirm beim Entsperren per Fingerabdruck, nachdem auf dem Sperrbildschirm eine Benachrichtigung angetippt wurde",
+      "Behoben: Überschneidung der Anrufzeit-Blase mit Benachrichtigungssymbolen"
+    ]
+  },
+  "logs_fr": {
+    "Système": [
+      "Optimisation : Correctif de sécurité Android mis à jour vers mars 2019. Sécurité du système renforcée."
+    ],
+    "Écran de verrouillage, Barre d'état, Panneau de notification": [
+      "Nouveau : option pour rester sur l’écran de verrouillage après un déverrouillage facial réussi",
+      "Nouveau : ajout du déverrouillage par empreinte digitale sous l'écran sur l'écran de mot de passe de verrouillage",
+      "Correction : l’invite de reconnaissance faciale ne disparaissait pas à temps",
+      "Correction du clignotement noir sur l’écran de mot de passe lors du déverrouillage par empreinte après avoir touché une notification sur l’écran de verrouillage",
+      "Correction : la bulle de durée d’appel chevauchait les icônes de notification"
+    ]
+  },
   "logs_it": {
     "Sistema": [
       "Ottimizzazione: Aggiornamento della patch di sicurezza Android a marzo 2019. Maggiore sicurezza del sistema."
     ],
     "Schermata di blocco, barra di stato, area delle notifiche": [
       "Nuovo: È possibile rimanere sulla schermata di blocco dopo aver usato il Riconoscimento facciale",
-      "Nuovo: Opzione di sblocco con l^impronta digitale sulla schermata di blocco",
+      "Nuovo: Opzione di sblocco con l'impronta digitale sulla schermata di blocco",
       "Risolvi: Gli avvisi di Riconoscimento facciale non apparivano in tempo",
       "Risolvi: Il modulo di inserimento della password lampeggiava in nero ogni volta che veniva toccata una notifica sulla schermata di blocco",
-      "Risolvi: L^icona della durata di chiamata si sovrapponeva alle icone di notifica"
+      "Risolvi: L'icona della durata di chiamata si sovrapponeva alle icone di notifica"
     ]
   },
   "logs_es": {
@@ -71,6 +143,18 @@
       "Reparar: La burbuja de la duración de llamada se superpuso con los iconos de notificaciones"
     ]
   },
+  "logs_pt": {
+    "Sistema": [
+      "Otimização: Patch de segurança do Android atualizado para março de 2019. Segurança do sistema melhorada."
+    ],
+    "Tela de bloqueio, Barra de status e Área de notificações": [
+      "Novo: opção de permanecer na tela de bloqueio após o desbloqueio facial bem-sucedido",
+      "Novo: desbloqueio por impressão digital sob a tela adicionado à tela de senha de bloqueio",
+      "Correção: o aviso de reconhecimento facial não desaparecia a tempo",
+      "Correção do piscar preto na tela de senha ao desbloquear com impressão digital após tocar em uma notificação na tela de bloqueio",
+      "Correção: o balão de duração da chamada se sobrepunha aos ícones de notificação"
+    ]
+  },
   "logs_tr": {
     "Sistem": [
       "Optimizasyon: Android Güvenlik Yaması Mart 2019 sürümüne güncellendi. Sistem güvenliği artırıldı."
@@ -81,6 +165,76 @@
       "Onar: Yüz ile kilit açma penceresi zamanında kaybolmadı",
       "Onar: Kilit ekranında bir bildirime dokunulduğunda şifre biçimi karardı",
       "Onar: Arama süresi penceresi bildirim simgeleriyle üst üste bindi"
+    ]
+  },
+  "logs_id": {
+    "Sistem": [
+      "Optimasi: Patch keamanan Android diperbarui ke Maret 2019. Keamanan sistem ditingkatkan."
+    ],
+    "Layar kunci, bar status, layar notifikasi": [
+      "Baru: opsi untuk tetap di layar kunci setelah pembukaan kunci wajah berhasil",
+      "Baru: Ditambahkan opsi buka kunci sidik jari di bawah layar pada layar kata sandi kunci",
+      "Perbaikan: petunjuk pengenalan wajah tidak hilang tepat waktu",
+      "Perbaikan masalah layar berkedip hitam di layar kata sandi saat membuka kunci dengan sidik jari setelah mengetuk notifikasi di layar kunci",
+      "Perbaikan: gelembung durasi panggilan bertumpang tindih dengan ikon notifikasi"
+    ]
+  },
+  "logs_vi": {
+    "Hệ thống": [
+      "Tối ưu: Đã cập nhật bản vá bảo mật Android lên tháng 3 năm 2019. Tăng cường bảo mật hệ thống."
+    ],
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Mới: tùy chọn ở lại màn hình khóa sau khi mở khóa bằng khuôn mặt thành công",
+      "Mới: Đã thêm phương thức mở khóa bằng vân tay dưới màn hình trên màn hình mật khẩu khóa máy",
+      "Đã sửa: lời nhắc nhận diện khuôn mặt không biến mất đúng lúc",
+      "Sửa lỗi màn hình nhấp nháy đen ở màn hình mật khẩu khi mở khóa bằng vân tay sau khi nhấn thông báo trên màn hình khóa",
+      "Đã sửa: bong bóng thời gian gọi chồng lên biểu tượng thông báo"
+    ]
+  },
+  "logs_th": {
+    "ระบบ": [
+      "เพิ่มประสิทธิภาพ: อัปเดตแพตช์ความปลอดภัย Android เป็นเดือนมีนาคม 2019 เพิ่มความปลอดภัยของระบบ"
+    ],
+    "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
+      "ใหม่: ตัวเลือกให้อยู่ในหน้าจอล็อกหลังปลดล็อกด้วยใบหน้าสำเร็จ",
+      "ใหม่: เพิ่มวิธีปลดล็อกด้วยลายนิ้วมือใต้หน้าจอในหน้าจอรหัสผ่านล็อกหน้าจอ",
+      "แก้ไข: ข้อความแจ้งการจดจำใบหน้าไม่หายไปตามเวลา",
+      "แก้ไขปัญหาหน้าจอกระพริบเป็นสีดำในหน้าจอรหัสผ่านเมื่อปลดล็อกด้วยลายนิ้วมือหลังจากแตะการแจ้งเตือนบนหน้าจอล็อก",
+      "แก้ไข: ฟองเวลาการโทรทับซ้อนกับไอคอนการแจ้งเตือน"
+    ]
+  },
+  "logs_ar": {
+    "النظام": [
+      "التحسين: تحديث تصحيح أمان Android إلى مارس 2019. تحسين أمان النظام."
+    ],
+    "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
+      "جديد: خيار البقاء على شاشة القفل بعد نجاح فتح القفل بالوجه",
+      "جديد: إضافة طريقة فتح القفل ببصمة الإصبع تحت الشاشة في شاشة كلمة مرور قفل الشاشة",
+      "إصلاح: لم تختفِ رسالة التعرف على الوجه في الوقت المناسب",
+      "إصلاح مشكلة وميض الشاشة باللون الأسود في شاشة كلمة المرور عند فتح القفل ببصمة الإصبع بعد النقر على إشعار في شاشة القفل",
+      "إصلاح: تداخل فقاعة وقت المكالمة مع أيقونات الإشعارات"
+    ]
+  },
+  "logs_in": {
+    "सिस्टम": [
+      "अनुकूलन: Android सुरक्षा पैच को मार्च 2019 में अपडेट किया गया। सिस्टम सुरक्षा में सुधार।"
+    ],
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
+      "नया: चेहरा अनलॉक सफल होने के बाद लॉक स्क्रीन पर रहने का विकल्प",
+      "नया: लॉक स्क्रीन पासवर्ड स्क्रीन पर अंडर-डिस्प्ले फिंगरप्रिंट अनलॉक विकल्प जोड़ा गया",
+      "सुधार: चेहरा पहचानने का संकेत समय पर गायब नहीं होता था",
+      "लॉक स्क्रीन पर सूचना टैप करने के बाद पासवर्ड स्क्रीन पर फ़िंगरप्रिंट से अनलॉक करते समय काली झिलमिलाहट की समस्या ठीक की गई",
+      "सुधार: कॉल अवधि बबल नोटिफ़िकेशन आइकनों के साथ ओवरलैप हो रहा था"
+    ]
+  },
+  "logs_ug": {
+    "سىستېما": [
+      "ئەلالاشتۇرۇش: Google بىخەتەرلىك يامىقى يېڭىلاندى (2019#3)، سىستېما بىخەتەرلىكى ئاشۇرۇلدى."
+    ]
+  },
+  "logs_bo": {
+    "རིམ་ལུགས": [
+      "Optimization: Updated Android Security Patch to March 2019. Increased system security."
     ]
   }
 }

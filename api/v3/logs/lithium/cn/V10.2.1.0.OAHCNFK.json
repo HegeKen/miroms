@@ -1,11 +1,13 @@
 {
   "logs_zh": {
     "锁屏、状态栏、通知栏": [
+      "修复 锁屏时充电球与预计充电时间显示重叠的问题",
       "修复 锁屏时充电球与预计充电时间显示重叠的问题"
     ],
     "相机": [
       "修复 偶现的自动连拍问题",
-      "修复 全面屏下相机参考线问题"
+      "修复 全面屏下相机参考线问题",
+      "修复 偶现的自动连拍问题"
     ],
     "系统更新": [
       "新增 桌面快捷方式功能，可以在更新设置中开启"
@@ -18,12 +20,17 @@
       "新增 日租卡/无限流量卡模式，可设置大王卡、米粉卡、天神卡等套餐类型，流量校正更准确"
     ],
     "小米帐号": [
+      "修复 小米账号登陆页面语言显示错误的问题",
       "修复 小米账号登陆页面语言显示错误的问题"
     ],
     "小米钱包": [
       "新增 小米公交优惠券页面",
       "优化 小米公交充值界面的交互体验",
       "优化 小米公交“更多操作“页面的用户体验"
+    ],
+    "其他": [
+      "提高系统的稳定性",
+      "优化系统的流畅度"
     ]
   },
   "logs_en": {
@@ -32,142 +39,663 @@
     ],
     "Camera": [
       "Fix: Burst shots were made accidentally",
-      "Fix: Issues with gridlines in the fullscreen mode"
+      "Fix: Issues with gridlines in the fullscreen mode",
+      "Fix: Burst shots were made accidentally"
     ],
     "Updater": [
       "New: A Home screen shortcut option"
     ],
     "File Manager": [
-      "Fix: Cleaner wasn^t sidplayed correctly in Split screen",
+      "Fix: Cleaner wasn't sidplayed correctly in Split screen",
       "Fix: Icons on the search page were displayed incorrectly"
     ],
-    "Data usage": [
+    "Data Usage": [
       "New: More data plans available"
     ],
     "Mi Account": [
+      "Fix: Issues with the languages on the Mi Account sign-in page",
       "Fix: Issues with the languages on the Mi Account sign-in page"
     ],
     "MI Wallet": [
       "New: New page for transport card coupons",
       "Optimization: Improved the page for topping up transport cards",
-      "Optimization: Revamped the ^More^ page for transport cards"
+      "Optimization: Revamped the \"More\" page for transport cards"
+    ],
+    "Other": [
+      "Optimized system performance",
+      "Improved system security and stability"
+    ],
+    "Lock screen, status bar, notification shade": [
+      "Fix: Lock screen UI elements overlapped when the device was charging"
     ]
   },
   "logs_zh_tw": {
     "解鎖畫面、狀態欄、通知欄": [
+      "修復 螢幕鎖定時充電球與預計充電時間顯示重疊的問題",
       "修復 螢幕鎖定時充電球與預計充電時間顯示重疊的問題"
     ],
     "相機": [
+      "修復 偶現的自動連拍問題",
+      "修復 全面屏下相機參考線問題",
       "修復 偶現的自動連拍問題"
     ],
+    "系統更新": [
+      "新增 桌面捷徑功能，可在更新設定中開啟"
+    ],
+    "檔案管理器": [
+      "修復分屏模式下垃圾清理頁面顯示異常的問題",
+      "修正 搜尋介面圖示顯示異常的問題"
+    ],
+    "網路助手": [
+      "新增 日租卡/無限流量卡模式，可設定大王卡、米粉卡、天神卡等套餐類型，流量校正更準確"
+    ],
     "小米帳號": [
+      "修復 小米帳號登入頁面語言顯示錯誤的問題",
       "修復 小米帳號登入頁面語言顯示錯誤的問題"
+    ],
+    "小米錢包": [
+      "新增 小米公交優惠券頁面",
+      "最佳化 小米公車儲值介面的互動體驗",
+      "優化 小米公交「更多操作」頁面的使用者體驗"
+    ],
+    "其他": [
+      "改善系統的穩定性",
+      "優化系統的流暢度"
     ]
   },
   "logs_ja": {
+    "ロック画面、ステータスバー、通知シェード": [
+      "ロック画面で充電ボールと予想充電時間の表示が重なる問題を修正"
+    ],
+    "カメラ": [
+      "偶発的な自動連写の問題を修正",
+      "全画面表示時のカメラグリッド線の問題を修正",
+      "偶発的な自動連写の問題を修正"
+    ],
+    "アップデーター": [
+      "追加: ホーム画面ショートカット機能。アップデート設定で有効にできます。"
+    ],
+    "ファイルマネージャー": [
+      "分割画面モードでクリーナーページが正しく表示されない問題を修正",
+      "検索画面のアイコンが正しく表示されない問題を修正"
+    ],
+    "データ使用量": [
+      "日租卡/無制限データカードモードを追加。大王卡・米粉卡・天神卡などのプランタイプを設定でき、通信量補正がより正確に。"
+    ],
+    "Mi アカウント": [
+      "Mi アカウントのログインページで言語が正しく表示されない問題を修正",
+      "Mi アカウントのログインページで言語が正しく表示されない問題を修正"
+    ],
+    "MIウォレット": [
+      "追加: Xiaomi交通カードのクーポンページ",
+      "最適化: Xiaomi交通系ICカードのチャージ画面の操作性を改善",
+      "Xiaomi 交通カードの「その他の操作」ページのユーザー体験を最適化"
+    ],
     "その他": [
       "システムパフォーマンスの最適化",
       "システムのセキュリティと安定性の向上"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "ロック画面で充電ボールと予想充電時間の表示が重なる問題を修正"
     ]
   },
   "logs_ko": {
+    "잠금화면, 상태 바, 알림 바": [
+      "잠금 화면에서 충전 볼과 예상 충전 시간 표시가 겹치는 문제를 수정"
+    ],
+    "카메라": [
+      "간헐적인 자동 연사 문제 수정",
+      "전체 화면 모드에서 카메라 격자선 문제 수정",
+      "간헐적인 자동 연사 문제 수정"
+    ],
+    "업데이터": [
+      "추가: 홈 화면 바로가기 기능. 업데이트 설정에서 활성화할 수 있습니다."
+    ],
+    "파일 관리자": [
+      "분할 화면 모드에서 클리너 페이지가 비정상적으로 표시되는 문제를 수정했습니다",
+      "검색 화면의 아이콘이 비정상적으로 표시되는 문제를 수정"
+    ],
+    "데이터 사용량": [
+      "일일 요금제/무제한 데이터 카드 모드 추가. 大王卡, 米粉卡, 天神卡 등 요금제 유형을 설정할 수 있어 데이터 보정이 더 정확해집니다."
+    ],
+    "Mi 계정": [
+      "Mi 계정 로그인 페이지에서 언어가 잘못 표시되는 문제를 수정",
+      "Mi 계정 로그인 페이지에서 언어가 잘못 표시되는 문제를 수정"
+    ],
+    "MI 월렛": [
+      "추가: Xiaomi 교통카드 쿠폰 페이지",
+      "최적화: Xiaomi 교통카드 충전 화면의 조작 환경 개선",
+      "Xiaomi 교통카드의 “추가 작업” 페이지 사용자 경험 최적화"
+    ],
     "기타": [
       "시스템 성능 최적화",
       "시스템 보안 및 안정성 개선"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "잠금 화면에서 충전 볼과 예상 충전 시간 표시가 겹치는 문제를 수정"
     ]
   },
   "logs_ru": {
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Исправлено наложение индикатора зарядки и предполагаемого времени зарядки на экране блокировки"
+    ],
+    "Камера": [
+      "Исправлена проблема со случайной автоматической серийной съёмкой",
+      "Исправление: проблемы с сеткой камеры в полноэкранном режиме",
+      "Исправлена проблема со случайной автоматической серийной съёмкой"
+    ],
+    "Обновление": [
+      "Добавлено: функция ярлыка на главном экране. Можно включить в настройках обновления."
+    ],
+    "Файловый менеджер": [
+      "Исправлена проблема с неправильным отображением страницы очистки в режиме разделённого экрана",
+      "Исправлена проблема с неправильным отображением значков на экране поиска"
+    ],
+    "Трафик": [
+      "Добавлен режим дневной карты/карты безлимитного трафика. Можно настроить типы тарифов, такие как 大王卡, 米粉卡 и 天神卡; коррекция трафика стала точнее."
+    ],
+    "Аккаунт Mi": [
+      "Исправлена проблема с неправильным отображением языка на странице входа Mi Account",
+      "Исправлена проблема с неправильным отображением языка на странице входа Mi Account"
+    ],
+    "MI Кошелек": [
+      "Добавлено: страница купонов Xiaomi Transit",
+      "Оптимизация: улучшено взаимодействие с интерфейсом пополнения транспортной карты Xiaomi",
+      "Оптимизирован пользовательский опыт страницы «Дополнительные действия» транспортной карты Xiaomi"
+    ],
     "Другое": [
       "Оптимизация производительности системы",
       "Улучшение безопасности и стабильности системы"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Исправлено наложение индикатора зарядки и предполагаемого времени зарядки на экране блокировки"
     ]
   },
   "logs_uk": {
+    "Екран блокування, рядок стану, панель сповіщень": [
+      "Виправлено накладання індикатора заряджання та орієнтовного часу заряджання на екрані блокування"
+    ],
+    "Камера": [
+      "Виправлено проблему з випадковою автоматичною серійною зйомкою",
+      "Виправлення: проблеми з сіткою камери в повноекранному режимі",
+      "Виправлено проблему з випадковою автоматичною серійною зйомкою"
+    ],
+    "Оновлення": [
+      "Додано: функція ярлика на головному екрані. Можна ввімкнути в налаштуваннях оновлення."
+    ],
+    "Файловий менеджер": [
+      "Виправлено проблему з неправильним відображенням сторінки очищення в режимі розділеного екрана",
+      "Виправлено проблему з неправильним відображенням значків на екрані пошуку"
+    ],
+    "Передача даних": [
+      "Додано режим денної картки/картки безлімітного трафіку. Можна налаштувати типи тарифів, як-от 大王卡, 米粉卡 і 天神卡; коригування трафіку стало точнішим."
+    ],
+    "Обліковий запис Mi": [
+      "Виправлено проблему з неправильним відображенням мови на сторінці входу Mi Account",
+      "Виправлено проблему з неправильним відображенням мови на сторінці входу Mi Account"
+    ],
+    "MI Гаманець": [
+      "Додано: сторінка купонів Xiaomi Transit",
+      "Оптимізація: покращено взаємодію з інтерфейсом поповнення транспортної картки Xiaomi",
+      "Оптимізовано взаємодію користувача на сторінці «Додаткові дії» транспортної картки Xiaomi"
+    ],
     "Інше": [
       "Оптимізація продуктивності системи",
       "Покращення безпеки та стабільності системи"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Виправлено накладання індикатора заряджання та орієнтовного часу заряджання на екрані блокування"
     ]
   },
   "logs_pl": {
+    "Ekran blokady, pasek powiadomień,panel powiadomień": [
+      "Naprawiono nakładanie się wskaźnika ładowania i szacowanego czasu ładowania na ekranie blokady"
+    ],
+    "Aparat": [
+      "Naprawiono problem z przypadkową automatyczną serią zdjęć",
+      "Poprawka: problemy z liniami siatki w trybie pełnoekranowym",
+      "Naprawiono problem z przypadkową automatyczną serią zdjęć"
+    ],
+    "Aktualizacje": [
+      "Dodano: funkcję skrótu na ekranie głównym. Można włączyć w ustawieniach aktualizacji."
+    ],
+    "Menedżer plików": [
+      "Naprawiono problem z nieprawidłowym wyświetlaniem strony oczyszczania w trybie podzielonego ekranu",
+      "Naprawiono problem z nieprawidłowym wyświetlaniem ikon na ekranie wyszukiwania"
+    ],
+    "Użycie danych": [
+      "Dodano tryb karty dziennej/karty z nielimitowanym transferem. Można ustawić typy planów, takie jak 大王卡, 米粉卡 i 天神卡; korekcja danych jest dokładniejsza."
+    ],
+    "Konto Mi": [
+      "Naprawiono problem z nieprawidłowym wyświetlaniem języka na stronie logowania Mi Account",
+      "Naprawiono problem z nieprawidłowym wyświetlaniem języka na stronie logowania Mi Account"
+    ],
+    "MI Portfel": [
+      "Dodano: strona kuponów Xiaomi Transit",
+      "Optymalizacja: ulepszono obsługę ekranu doładowania karty transportowej Xiaomi",
+      "Optymalizacja doświadczeń użytkownika na stronie „Więcej działań” karty transportowej Xiaomi"
+    ],
     "Inne": [
       "Zoptymalizowana wydajność systemu",
       "Większe bezpieczeństwo i stabilność systemu"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Naprawiono nakładanie się wskaźnika ładowania i szacowanego czasu ładowania na ekranie blokady"
     ]
   },
   "logs_de": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
+      "Problem behoben, bei dem sich Ladeball und geschätzte Ladezeit auf dem Sperrbildschirm überlappen"
+    ],
+    "Kamera": [
+      "Problem mit gelegentlichen automatischen Serienaufnahmen behoben",
+      "Behebung: Probleme mit Rasterlinien im Vollbildmodus der Kamera",
+      "Problem mit gelegentlichen automatischen Serienaufnahmen behoben"
+    ],
+    "Updater": [
+      "Neu: Funktion für Startbildschirm-Verknüpfung. Kann in den Update-Einstellungen aktiviert werden."
+    ],
+    "Dateimanager": [
+      "Problem behoben, bei dem die Cleaner-Seite im geteilten Bildschirm nicht korrekt angezeigt wurde",
+      "Problem mit der fehlerhaften Anzeige von Symbolen auf dem Suchbildschirm behoben"
+    ],
+    "Datennutzung": [
+      "Neu: Modus für Tageskarte/Unlimited-Datenkarte. Tariftypen wie 大王卡, 米粉卡 und 天神卡 können eingestellt werden; Datenkorrektur ist genauer."
+    ],
+    "Mi-Konto": [
+      "Problem mit falscher Sprachanzeige auf der Mi Account-Anmeldeseite behoben",
+      "Problem mit falscher Sprachanzeige auf der Mi Account-Anmeldeseite behoben"
+    ],
+    "MI Geldbörse": [
+      "Neu: Gutscheinseite für Xiaomi Transit",
+      "Optimierung: Bedienung der Oberfläche zum Aufladen der Xiaomi Verkehrskarte verbessert",
+      "Optimierung der Benutzererfahrung auf der Seite „Weitere Aktionen“ der Xiaomi-Transportkarte"
+    ],
+    "Sonstiges": [
+      "Systemleistung optimiert",
+      "Systemsicherheit und -stabilität verbessert"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Problem behoben, bei dem sich Ladeball und geschätzte Ladezeit auf dem Sperrbildschirm überlappen"
     ]
   },
   "logs_fr": {
+    "Écran de verrouillage, Barre d'état, Panneau de notification": [
+      "Correction du chevauchement entre la boule de charge et le temps de charge estimé sur l’écran de verrouillage"
+    ],
+    "Appareil photo": [
+      "Correction du problème intermittent de rafale automatique",
+      "Correction : problèmes de lignes de grille en mode plein écran"
+    ],
+    "Mises à jour": [
+      "Nouveau : fonction de raccourci sur l'écran d'accueil. Peut être activée dans les paramètres de mise à jour."
+    ],
+    "Gestionnaire de fichiers": [
+      "Correction du problème d’affichage incorrect de la page de nettoyage en mode écran partagé",
+      "Correction du problème d’affichage incorrect des icônes sur l’écran de recherche"
+    ],
+    "Utilisation des données": [
+      "Nouveau : mode carte journalière/carte data illimitée. Types de forfaits comme 大王卡, 米粉卡 et 天神卡 configurables ; calibration des données plus précise."
+    ],
+    "Compte Mi": [
+      "Correction du problème d'affichage incorrect de la langue sur la page de connexion Mi Account",
+      "Correction du problème d'affichage incorrect de la langue sur la page de connexion Mi Account"
+    ],
+    "MI Portefeuille": [
+      "Nouveau : page de coupons Xiaomi Transit",
+      "Optimisation : amélioration de l'expérience d'utilisation de l'interface de rechargement de la carte de transport Xiaomi",
+      "Optimisation de l’expérience utilisateur de la page « Plus d’actions » de la carte de transport Xiaomi"
+    ],
     "Autre": [
       "Performances système optimisées",
       "Sécurité et stabilité du système améliorées"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Correction du chevauchement entre la boule de charge et le temps de charge estimé sur l’écran de verrouillage"
+    ],
+    "Appareil Photo": [
+      "Correction du problème intermittent de rafale automatique"
     ]
   },
   "logs_it": {
+    "Schermata di blocco, barra di stato, area delle notifiche": [
+      "Risolto il problema della sovrapposizione tra pallina di ricarica e tempo di ricarica stimato nella schermata di blocco"
+    ],
+    "Fotocamera": [
+      "Risolto il problema degli scatti in raffica automatici occasionali",
+      "Correzione: problemi con le linee della griglia in modalità a schermo intero",
+      "Risolto il problema degli scatti in raffica automatici occasionali"
+    ],
+    "Aggiornamenti": [
+      "Novità: funzione di scorciatoia nella schermata Home. Si può attivare nelle impostazioni di aggiornamento."
+    ],
+    "Gestore file": [
+      "Risolto il problema di visualizzazione errata della pagina di pulizia in modalità schermo diviso",
+      "Risolto il problema di visualizzazione errata delle icone nella schermata di ricerca"
+    ],
+    "Utilizzo dei dati": [
+      "Nuovo: modalità scheda giornaliera/scheda dati illimitati. È possibile impostare tipi di piano come 大王卡, 米粉卡 e 天神卡; calibrazione dati più precisa."
+    ],
+    "Account Mi": [
+      "Risolto il problema di visualizzazione errata della lingua nella pagina di accesso a Mi Account",
+      "Risolto il problema di visualizzazione errata della lingua nella pagina di accesso a Mi Account"
+    ],
+    "MI Portafoglio": [
+      "Novità: pagina coupon Xiaomi Transit",
+      "Ottimizzazione: migliorata l'esperienza d'uso dell'interfaccia di ricarica della carta trasporti Xiaomi",
+      "Ottimizzazione dell’esperienza utente della pagina “Altre azioni” della carta trasporti Xiaomi"
+    ],
     "Altro": [
       "Prestazioni di sistema ottimizzate",
       "Maggiore sicurezza e stabilità di sistema"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Risolto il problema della sovrapposizione tra pallina di ricarica e tempo di ricarica stimato nella schermata di blocco"
     ]
   },
   "logs_es": {
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Se corrige la superposición entre el indicador de carga y el tiempo estimado de carga en la pantalla de bloqueo"
+    ],
+    "Cámara": [
+      "Corregido el problema de ráfaga automática ocasional",
+      "Corrección: problemas con las líneas de cuadrícula en el modo de pantalla completa",
+      "Corregido el problema de ráfaga automática ocasional"
+    ],
+    "Actualizador": [
+      "Nuevo: función de acceso directo en la pantalla de inicio. Se puede activar en los ajustes de actualización."
+    ],
+    "Administrador de archivos": [
+      "Se corrigió el problema de visualización incorrecta de la página de limpieza en modo de pantalla dividida",
+      "Se corrigió el problema de visualización incorrecta de los iconos en la pantalla de búsqueda"
+    ],
+    "Uso de datos": [
+      "Nuevo: modo tarjeta diaria/tarjeta de datos ilimitados. Se pueden configurar tipos de plan como 大王卡, 米粉卡 y 天神卡; calibración de datos más precisa."
+    ],
+    "Cuenta Mi": [
+      "Se corrigió el problema de visualización incorrecta del idioma en la página de inicio de sesión de Mi Account",
+      "Se corrigió el problema de visualización incorrecta del idioma en la página de inicio de sesión de Mi Account"
+    ],
+    "MI Cartera": [
+      "Nuevo: página de cupones de Xiaomi Transit",
+      "Optimización: mejorada la experiencia de uso de la interfaz de recarga de la tarjeta de transporte de Xiaomi",
+      "Optimización de la experiencia de usuario de la página “Más acciones” de la tarjeta de transporte Xiaomi"
+    ],
     "Otros": [
       "Rendimiento del sistema optimizado",
       "Estabilidad y seguridad del sistema mejorada"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Se corrige la superposición entre el indicador de carga y el tiempo estimado de carga en la pantalla de bloqueo"
     ]
   },
   "logs_pt": {
+    "Tela de bloqueio, Barra de status e Área de notificações": [
+      "Corrigido a sobreposição entre o indicador de carregamento e o tempo estimado de carregamento na tela de bloqueio"
+    ],
+    "Câmera": [
+      "Corrigido o problema de disparo em rajada automático ocasional",
+      "Correção: problemas com linhas de grade no modo de tela cheia",
+      "Corrigido o problema de disparo em rajada automático ocasional"
+    ],
+    "Atualizações": [
+      "Novo: função de atalho na tela inicial. Pode ser ativada nas configurações de atualização."
+    ],
+    "Gerenciador de arquivos": [
+      "Corrigido o problema de exibição incorreta da página de limpeza no modo de tela dividida",
+      "Corrigido o problema de exibição incorreta dos ícones na tela de pesquisa"
+    ],
+    "Uso de dados": [
+      "Novo: modo cartão diário/cartão de dados ilimitados. É possível definir tipos de plano como 大王卡, 米粉卡 e 天神卡; calibração de dados mais precisa."
+    ],
+    "Conta Mi": [
+      "Corrigido o problema de exibição incorreta do idioma na página de login da Mi Account",
+      "Corrigido o problema de exibição incorreta do idioma na página de login da Mi Account"
+    ],
+    "MI Carteira": [
+      "Novo: página de cupons do Xiaomi Transit",
+      "Otimização: melhorada a experiência de utilização da interface de carregamento do cartão de transporte Xiaomi",
+      "Otimização da experiência do usuário na página “Mais ações” do cartão de transporte Xiaomi"
+    ],
     "Outros": [
       "Desempenho do sistema aprimorado",
       "Segurança e estabilidade do sistema aprimoradas"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Corrigido a sobreposição entre o indicador de carregamento e o tempo estimado de carregamento na tela de bloqueio"
     ]
   },
   "logs_tr": {
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Kilit ekranında şarj göstergesi ile tahmini şarj süresinin üst üste binmesi sorunu düzeltildi"
+    ],
+    "Kamera": [
+      "Ara sıra otomatik seri çekim sorunu düzeltildi",
+      "Düzeltme: Tam ekran modunda kamera ızgara çizgileri sorunu",
+      "Ara sıra otomatik seri çekim sorunu düzeltildi"
+    ],
+    "Güncelleyici": [
+      "Yeni: Ana ekran kısayolu özelliği. Güncelleme ayarlarından etkinleştirilebilir."
+    ],
+    "Dosya Yöneticisi": [
+      "Bölünmüş ekran modunda Temizleyici sayfasının yanlış görüntülenmesi sorunu giderildi",
+      "Arama ekranındaki simgelerin yanlış görüntülenmesi sorunu giderildi"
+    ],
+    "Veri kullanımı": [
+      "Yeni: Günlük kart/sınırsız veri kartı modu. 大王卡, 米粉卡, 天神卡 gibi paket türleri ayarlanabilir; veri kalibrasyonu daha doğru."
+    ],
+    "Mi Hesabı": [
+      "Mi Account giriş sayfasında dilin yanlış görüntülenmesi sorunu düzeltildi",
+      "Mi Account giriş sayfasında dilin yanlış görüntülenmesi sorunu düzeltildi"
+    ],
+    "MI Cüzdan": [
+      "Yeni: Xiaomi Transit kupon sayfası",
+      "İyileştirme: Xiaomi ulaşım kartı yükleme arayüzünün kullanım deneyimi geliştirildi",
+      "Xiaomi ulaşım kartının “Diğer işlemler” sayfasında kullanıcı deneyimi iyileştirildi"
+    ],
     "Diğer": [
       "Sistem performansı optimize edildi",
       "Sistem güvenliği ve kararlılığı geliştirildi"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Kilit ekranında şarj göstergesi ile tahmini şarj süresinin üst üste binmesi sorunu düzeltildi"
     ]
   },
   "logs_id": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "Layar kunci, bar status, layar notifikasi": [
+      "Memperbaiki tampilan bola pengisian daya dan perkiraan waktu pengisian daya yang tumpang tindih di layar kunci"
+    ],
+    "Kamera": [
+      "Memperbaiki masalah burst shot otomatis yang kadang terjadi",
+      "Perbaikan: masalah garis kisi pada mode layar penuh",
+      "Memperbaiki masalah burst shot otomatis yang kadang terjadi"
+    ],
+    "Pembaruan sistem": [
+      "Baru: Fitur pintasan layar Utama. Dapat diaktifkan di pengaturan pembaruan."
+    ],
+    "Pengelola Berkas": [
+      "Memperbaiki masalah tampilan halaman Pembersih yang tidak normal dalam mode layar terbagi",
+      "Memperbaiki masalah ikon yang ditampilkan secara tidak normal di layar pencarian"
+    ],
+    "Penggunaan data": [
+      "Baru: Mode kartu harian/kartu data tak terbatas. Jenis paket seperti 大王卡, 米粉卡, dan 天神卡 dapat diatur; kalibrasi data lebih akurat."
+    ],
+    "Akun Mi": [
+      "Memperbaiki masalah tampilan bahasa yang salah di halaman masuk Mi Account",
+      "Memperbaiki masalah tampilan bahasa yang salah di halaman masuk Mi Account"
+    ],
+    "MI Dompet": [
+      "Baru: halaman kupon Xiaomi Transit",
+      "Optimasi: pengalaman interaksi antarmuka isi ulang kartu transportasi Xiaomi ditingkatkan",
+      "Optimalisasi pengalaman pengguna halaman “Tindakan lainnya” kartu transportasi Xiaomi"
+    ],
+    "Lainnya": [
+      "Performa sistem dioptimalkan",
+      "Keamanan dan stabilitas sistem ditingkatkan"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Memperbaiki tampilan bola pengisian daya dan perkiraan waktu pengisian daya yang tumpang tindih di layar kunci"
     ]
   },
   "logs_vi": {
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Đã sửa lỗi chồng lấn giữa bóng sạc và thời gian sạc dự kiến trên màn hình khóa"
+    ],
+    "Máy ảnh": [
+      "Sửa lỗi đôi khi tự động chụp liên tiếp",
+      "Sửa lỗi: vấn đề đường lưới camera ở chế độ toàn màn hình"
+    ],
+    "Trình cập nhật": [
+      "Mới: Tính năng lối tắt trên màn hình chính. Có thể bật trong cài đặt cập nhật."
+    ],
+    "Trình quản lý tệp": [
+      "Đã sửa lỗi trang Dọn dẹp hiển thị không bình thường ở chế độ chia đôi màn hình",
+      "Đã khắc phục sự cố biểu tượng hiển thị bất thường trên màn hình tìm kiếm"
+    ],
+    "Sử dụng dữ liệu": [
+      "Mới: Chế độ thẻ ngày/thẻ dữ liệu không giới hạn. Có thể đặt loại gói như 大王卡, 米粉卡, 天神卡; hiệu chỉnh dữ liệu chính xác hơn."
+    ],
+    "Tài khoản Mi": [
+      "Đã sửa lỗi hiển thị sai ngôn ngữ trên trang đăng nhập Mi Account",
+      "Đã sửa lỗi hiển thị sai ngôn ngữ trên trang đăng nhập Mi Account"
+    ],
+    "MI Ví": [
+      "Mới: trang mã ưu đãi Xiaomi Transit",
+      "Tối ưu hóa: cải thiện trải nghiệm tương tác giao diện nạp tiền thẻ giao thông Xiaomi",
+      "Tối ưu hóa trải nghiệm người dùng trang “Thao tác khác” của thẻ giao thông Xiaomi"
+    ],
     "Khác": [
       "Tối ưu hiệu suất hệ thống",
       "Cải thiện tính ổn định và bảo mật hệ thống"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Đã sửa lỗi chồng lấn giữa bóng sạc và thời gian sạc dự kiến trên màn hình khóa"
+    ],
+    "Camera": [
+      "Sửa lỗi đôi khi tự động chụp liên tiếp"
     ]
   },
   "logs_th": {
+    "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
+      "แก้ไขปัญหาวงกลมชาร์จและเวลาชาร์จโดยประมาณแสดงทับซ้อนกันบนหน้าจอล็อก"
+    ],
+    "กล้อง": [
+      "แก้ไขปัญหาการถ่ายภาพต่อเนื่องอัตโนมัติเป็นครั้งคราว",
+      "แก้ไข: ปัญหาเส้นตารางกล้องในโหมดเต็มหน้าจอ",
+      "แก้ไขปัญหาการถ่ายภาพต่อเนื่องอัตโนมัติเป็นครั้งคราว"
+    ],
+    "ตัวอัปเดต": [
+      "ใหม่: ฟีเจอร์ทางลัดบนหน้าจอหลัก เปิดใช้งานได้ในการตั้งค่าการอัปเดต"
+    ],
+    "ตัวจัดการไฟล์": [
+      "แก้ไขปัญหาหน้าล้างข้อมูลแสดงผลผิดปกติในโหมดแบ่งหน้าจอ",
+      "แก้ไขปัญหาการแสดงไอคอนบนหน้าจอค้นหาผิดปกติ"
+    ],
+    "การใช้ข้อมูล": [
+      "เพิ่มโหมดการ์ดรายวัน/การ์ดข้อมูลไม่จำกัด ตั้งค่าประเภทแพ็กเกจ เช่น 大王卡, 米粉卡, 天神卡 ได้ การปรับเทียบข้อมูลแม่นยำขึ้น"
+    ],
+    "บัญชี Mi": [
+      "แก้ไขปัญหาการแสดงภาษาที่ไม่ถูกต้องในหน้าเข้าสู่ระบบ Mi Account",
+      "แก้ไขปัญหาการแสดงภาษาที่ไม่ถูกต้องในหน้าเข้าสู่ระบบ Mi Account"
+    ],
+    "MI กระเป๋าเงิน": [
+      "ใหม่: หน้าคูปอง Xiaomi Transit",
+      "ปรับให้เหมาะสม: ปรับปรุงประสบการณ์การใช้งานหน้าจอเติมเงินบัตรโดยสาร Xiaomi",
+      "ปรับปรุงประสบการณ์ผู้ใช้ของหน้า “การดำเนินการเพิ่มเติม” ของบัตรขนส่ง Xiaomi"
+    ],
     "อื่นๆ": [
       "เพิ่มประสิทธิภาพของระบบ",
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "แก้ไขปัญหาวงกลมชาร์จและเวลาชาร์จโดยประมาณแสดงทับซ้อนกันบนหน้าจอล็อก"
     ]
   },
   "logs_ar": {
+    "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
+      "إصلاح مشكلة تداخل كرة الشحن ووقت الشحن المتوقع على شاشة القفل"
+    ],
+    "كاميرا": [
+      "إصلاح مشكلة التصوير المتتابع التلقائي العرضي",
+      "إصلاح: مشكلة خطوط الشبكة في وضع ملء الشاشة للكاميرا"
+    ],
+    "المحدث": [
+      "جديد: ميزة اختصار الشاشة الرئيسية. يمكن تفعيلها في إعدادات التحديث."
+    ],
+    "مدير الملفات": [
+      "إصلاح مشكلة عرض صفحة التنظيف بشكل غير صحيح في وضع تقسيم الشاشة",
+      "إصلاح مشكلة عرض الأيقونات بشكل غير طبيعي في شاشة البحث"
+    ],
+    "استخدام البيانات": [
+      "جديد: وضع بطاقة يومية/بطاقة بيانات غير محدودة. يمكن ضبط أنواع الباقات مثل 大王卡 و米粉卡 و天神卡؛ تصحيح البيانات أكثر دقة."
+    ],
+    "حساب Mi": [
+      "إصلاح مشكلة عرض اللغة بشكل غير صحيح في صفحة تسجيل الدخول إلى Mi Account",
+      "إصلاح مشكلة عرض اللغة بشكل غير صحيح في صفحة تسجيل الدخول إلى Mi Account"
+    ],
+    "MI محفظة": [
+      "جديد: صفحة قسائم Xiaomi Transit",
+      "تحسين: تحسين تجربة التفاعل مع واجهة تعبئة بطاقة النقل من Xiaomi",
+      "تحسين تجربة المستخدم لصفحة “إجراءات أخرى” لبطاقة النقل Xiaomi"
+    ],
     "أخرى": [
       "تحسين أداء النظام",
       "تحسين أمن واستقرار النظام"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "إصلاح مشكلة تداخل كرة الشحن ووقت الشحن المتوقع على شاشة القفل"
+    ],
+    "الكاميرا": [
+      "إصلاح مشكلة التصوير المتتابع التلقائي العرضي"
     ]
   },
   "logs_in": {
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
+      "लॉक स्क्रीन पर चार्जिंग बॉल और अनुमानित चार्जिंग समय के ओवरलैप होने की समस्या ठीक की गई"
+    ],
+    "कैमरा": [
+      "कभी-कभार स्वचालित बर्स्ट शॉट की समस्या ठीक की गई",
+      "सुधार: फ़ुलस्क्रीन मोड में कैमरा ग्रिड लाइनों की समस्या",
+      "कभी-कभार स्वचालित बर्स्ट शॉट की समस्या ठीक की गई"
+    ],
+    "अपडेटर": [
+      "नया: होम स्क्रीन शॉर्टकट सुविधा। अपडेट सेटिंग्स में सक्षम किया जा सकता है।"
+    ],
+    "फ़ाइल प्रबंधक": [
+      "स्प्लिट स्क्रीन मोड में क्लीनर पेज के गलत तरीके से प्रदर्शित होने की समस्या ठीक की गई",
+      "खोज स्क्रीन पर आइकन के गलत तरीके से प्रदर्शित होने की समस्या ठीक की गई"
+    ],
+    "डेटा उपयोग": [
+      "नया: दैनिक कार्ड/असीमित डेटा कार्ड मोड। 大王卡, 米粉卡, 天神卡 जैसे प्लान प्रकार सेट किए जा सकते हैं; डेटा कैलिब्रेशन अधिक सटीक।"
+    ],
+    "Mi खाता": [
+      "Mi Account साइन-इन पेज पर भाषा के गलत प्रदर्शन की समस्या ठीक की गई",
+      "Mi Account साइन-इन पेज पर भाषा के गलत प्रदर्शन की समस्या ठीक की गई"
+    ],
+    "MI वॉलेट": [
+      "नया: Xiaomi Transit कूपन पृष्ठ",
+      "अनुकूलन: Xiaomi ट्रांज़िट कार्ड रीचार्ज इंटरफ़ेस का उपयोग अनुभव बेहतर किया गया",
+      "Xiaomi ट्रांसपोर्ट कार्ड के “अधिक क्रियाएँ” पेज पर उपयोगकर्ता अनुभव का अनुकूलन किया गया"
+    ],
     "अन्य": [
       "सिस्टम परफ़ॉर्मेंस ऑप्टिमाइज़ किया गया है",
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "लॉक स्क्रीन पर चार्जिंग बॉल और अनुमानित चार्जिंग समय के ओवरलैप होने की समस्या ठीक की गई"
     ]
   },
   "logs_ug": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "Updater": [
+      "يېڭى: باش ئېكران تېز يوللانمىسى ئىقتىدارى. يېڭىلاش تەڭشەكلىرىدە قوزغىتىشقا بولىدۇ."
+    ],
+    "باشقىلىرى": [
+      "سىستېمىنىڭ مۇقىملىقىنى ئاشۇرۇش",
+      "سىستېما راۋانلىقىنى ئەلالاشتۇرۇش"
     ]
   },
   "logs_bo": {
-    "Other": [
+    "གཞན།": [
       "Optimized system performance",
       "Improved system security and stability"
     ]

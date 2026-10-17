@@ -4,9 +4,12 @@
       "新增 全新的截屏体验，简化截屏编辑、分享、长截图流程",
       "新增 全面屏设置中的水滴屏形状切换开关",
       "优化 取消定时关闭勿扰后的声音提示",
-      "修复 长截屏引导弹出多次的问题"
+      "修复 长截屏引导弹出多次的问题",
+      "新增 全面屏设置中的水滴屏形状切换开关",
+      "优化 取消定时关闭勿扰后的声音提示"
     ],
     "电话": [
+      "修复 挂断电话慢问题",
       "修复 挂断电话慢问题"
     ],
     "应用锁": [
@@ -29,17 +32,30 @@
       "修复 息屏下偶现指纹解锁失败的问题",
       "修复 息屏时偶现屏下指纹无法解锁的问题",
       "修复 息屏显示不能定时关闭的问题",
-      "修复 通话过程中误触通知栏的问题"
+      "修复 通话过程中误触通知栏的问题",
+      "新增 系统主题下，锁屏时钟支持三种自定义样式，可在锁屏高级设置中修改",
+      "新增 数据 SIM 卡切换快捷方式",
+      "修复 解锁进入横屏界面时有异常闪亮的问题",
+      "修复 锁屏上来电时偶现屏幕无法亮起的问题",
+      "修复 息屏设置页面，双时钟预览图数字折行的问题",
+      "修复 横屏状态下无法正常打开指纹快捷功能的问题",
+      "修复 息屏下偶现指纹解锁失败的问题",
+      "修复 部分场景下息屏时屏下指纹无法使用的问题",
+      "修复 息屏显示不能定时关闭的问题"
     ],
     "时钟": [
       "新增 在时钟设置中自由选择黑色或白色背景的功能",
       "修复 计时器页面按钮点击闪烁的问题",
       "修复 时钟在特殊日期出现闪退的问题",
-      "提示：本次更新后时钟的背景颜色为白色"
+      "提示：本次更新后时钟的背景颜色为白色",
+      "修复 计时器页面按钮点击闪烁的问题",
+      "修复 时钟在特殊日期出现闪退的问题"
     ],
     "设置": [
       "新增 快捷回复功能，支持使用悬浮窗打开即时通讯类应用通知",
-      "优化 WiFi列表排序策略，以信号强度排序"
+      "优化 WiFi列表排序策略，以信号强度排序",
+      "新增 快捷回复功能，支持使用悬浮窗打开即时通讯类应用通知",
+      "优化 WLAN列表调整为按信号强度排序"
     ],
     "最近任务": [
       "新增 模糊最近任务中的部分应用预览图的功能"
@@ -53,7 +69,8 @@
     "安全中心": [
       "新增 骚扰拦截适配Darkmode",
       "修复 手机重启后双开APP消失的bug",
-      "修复 优化加速功能中加锁应用个数显示错误的bug"
+      "修复 优化加速功能中加锁应用个数显示错误的bug",
+      "修复 手机重启后双开APP消失的bug"
     ],
     "小米云服务": [
       "新增 用户详情页",
@@ -70,7 +87,13 @@
       "修复 界面长文字显示问题",
       "修复 同步按钮显示不正常的问题",
       "修复 通过设置搜索进入查找手机，查找手机开启状态显示错误问题",
-      "修复 同步状态显示问题"
+      "修复 同步状态显示问题",
+      "优化 云服务首页重新设计，可用空间显示更加直观",
+      "优化 多设备之间数据同步及时性",
+      "优化 同步及时性，提升同步效率",
+      "修复 点击立即同步按钮没有反应的问题",
+      "修复 退出小米帐号时，提示云服务停止运行的问题",
+      "修复 在设置中搜索进入查找设备时状态显示异常的问题"
     ],
     "其他优化及调整": [
       "优化 充电动画的消失效果",
@@ -80,45 +103,472 @@
     ]
   },
   "logs_en": {
+    "Phone": [
+      "Fix: Ending calls took longer time than expected",
+      "Fix: Ending calls took longer time than expected"
+    ],
+    "App lock": [
+      "新增 支持人脸和指纹同时解锁",
+      "Fix: Issues with the App lock password form on some devices"
+    ],
+    "Settings": [
+      "New: Quick replies for messaging apps",
+      "Optimization: Sorting principles for Wi-Fi networks",
+      "New: Quick replies for messaging apps",
+      "Optimization: Sorting principles for Wi-Fi networks"
+    ],
+    "Recents": [
+      "New: You can blur the previews of some apps in Recents now"
+    ],
     "System": [
       "New: An option for smoothening notch curves on full screen devices",
       "Optimization: Removed unnecessary sound notifications for DND mode"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected"
-    ],
-    "App lock": [
-      "Fix: Issues with the App lock password form on some devices"
-    ],
     "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
       "New: A shortcut for switchong between data SIM cards",
       "Fix: Errors occurred after unlocking device in landscape mode",
-      "Fix: Screen didn^t always light up for notifications",
+      "Fix: Screen didn't always light up for notifications",
       "Fix: Issues with overlapping in Dual Clock settings",
-      "Fix: Fingerprint shortcuts didn^t work in landscape orientation",
-      "Fix: Fingerprint unlock didn^t always work with the screen off",
-      "Fix: In-screen fingerprint scanner didn^t work when the screen was turned off in some cases",
-      "Fix: Displaying items on the turned off screen couldn^t be turned off on time in some cases"
+      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
+      "Fix: Fingerprint unlock didn't always work with the screen off",
+      "Fix: In-screen fingerprint scanner didn't work when the screen was turned off in some cases",
+      "Fix: Displaying items on the turned off screen couldn't be turned off on time in some cases"
     ],
     "Clock": [
       "Fix: Timer button started flashing after being tapped",
       "Fix: Clock force closed on some specific dates"
     ],
-    "Settings": [
-      "New: Quick replies for messaging apps",
-      "Optimization: Sorting principles for Wi-Fi networks"
-    ],
     "Security": [
       "Fix: Dual apps disappeared after a reboot"
     ],
     "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
+      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!",
       "Optimization: Improved sync across multiple devices",
       "Optimization: Improved sync efficiency",
-      "Fix: The Sync button didn^t always respond",
+      "Fix: The Sync button didn't always respond",
       "Fix: Mi Cloud services stopped working when the users signed out of their Mi Account",
-      "Fix: Find device status wasn^t displayed correctly when this feature was accessed through search in the Settings"
+      "Fix: Find device status wasn't displayed correctly when this feature was accessed through search in the Settings"
+    ]
+  },
+  "logs_zh_tw": {
+    "電話": [
+      "修復 掛斷電話較慢的問題",
+      "修復 掛斷電話較慢的問題"
+    ],
+    "設定": [
+      "新增 快捷回覆功能，支援使用懸浮窗開啟即時通訊類應用通知",
+      "優化 Wi-Fi清單排列策略，以信號的強度排列",
+      "優化 股票卡片優化",
+      "優化 Wi-Fi清單排列策略，以信號的強度排列"
+    ],
+    "近期任務": [
+      "新增: 模糊最近任務中的部分應用預覽圖的功能"
+    ],
+    "時鐘": [
+      "修復 計時器頁面按鈕點擊閃爍的問題",
+      "修復 時鐘在特殊日期出現閃退的問題"
+    ],
+    "安全中心": [
+      "修復 手機重啟後雙開APP消失了bug"
+    ]
+  },
+  "logs_ja": {
+    "電話": [
+      "修正: 通話終了に予想以上に時間がかかる問題",
+      "修正: 通話終了に想定より時間がかかる問題"
+    ],
+    "設定": [
+      "新機能: メッセージアプリのクイック返信",
+      "Optimization: Sorting principles for Wi-Fi networks",
+      "最適化: 株価カードを改善しました",
+      "最適化: WLANリストを電波強度順に並べ替えるように調整"
+    ],
+    "システム": [
+      "新規: 全画面設定に水滴型ノッチの形状を切り替えるスイッチを追加",
+      "最適化: スケジュールされたサイレントモード解除後の通知音を削除"
+    ],
+    "時計": [
+      "タイマーページのボタンをタップした際に点滅する問題を修正",
+      "特定の日付で時計が強制終了する問題を修正"
+    ],
+    "セキュリティ": [
+      "修正: 再起動後にデュアルアプリが消える問題"
+    ]
+  },
+  "logs_ko": {
+    "전화": [
+      "수정: 통화 종료가 예상보다 오래 걸리는 문제",
+      "수정: 통화 종료가 예상보다 오래 걸리는 문제"
+    ],
+    "설정": [
+      "수정: 앱이 갑자기 강제로 종료되는 문제",
+      "Optimization: Sorting principles for Wi-Fi networks",
+      "최적화: 주식 카드 최적화됨",
+      "최적화: WLAN 목록이 신호 강도에 따라 정렬되도록 조정"
+    ],
+    "시스템": [
+      "새로 추가: 전체 화면 설정에 물방울 노치 모양 전환 스위치 추가",
+      "최적화: 방해금지 모드에서의 불필요한 알림음 제거됨"
+    ],
+    "시계": [
+      "타이머 페이지에서 버튼을 탭할 때 깜박이는 문제를 수정했습니다",
+      "특정 날짜에 시계가 강제 종료되는 문제 수정"
+    ],
+    "보안": [
+      "수정: 재부팅 후 듀얼 앱이 사라지는 문제"
+    ]
+  },
+  "logs_ru": {
+    "Телефон": [
+      "Исправлено: Завершение вызова выполнялось слишком долго",
+      "Исправлено: Завершение вызова выполнялось слишком долго"
+    ],
+    "Настройки": [
+      "Новое: Быстрые ответы для мессенджеров",
+      "Оптимизация: Принцип сортировки сетей Wi-Fi",
+      "Оптимизация: Улучшена карточка \"Акции\"",
+      "Оптимизация: Принцип сортировки сетей Wi-Fi"
+    ],
+    "Часы": [
+      "Исправлено: Кнопка таймера начинала мигать после нажатия",
+      "Исправлено: Некорректное завершение работы приложения Часы в определенные дни"
+    ],
+    "Безопасность": [
+      "Исправлено: Клоны приложений исчезали после перезагрузки"
+    ]
+  },
+  "logs_uk": {
+    "Телефон": [
+      "Виправлено: Завершення викликів тривало довше, ніж очікувалося",
+      "Виправлено: завершення викликів тривало довше, ніж очікувалося"
+    ],
+    "Налаштування": [
+      "Нове: Швидкі відповіді для месенджерів",
+      "Optimization: Sorting principles for Wi-Fi networks",
+      "Оптимізація: Покращено картку акцій",
+      "Оптимізація: список WLAN сортується за силою сигналу"
+    ],
+    "Система": [
+      "Нове: перемикач форми краплеподібного вирізу в налаштуваннях повноекранного режиму",
+      "Оптимізація: Вилучено звукове сповіщення після запланованого вимкнення режиму «Не турбувати»"
+    ],
+    "Годинник": [
+      "Виправлено: кнопка на сторінці таймера блимає після натискання",
+      "Виправлено: Годинник аварійно завершував роботу в окремі дати"
+    ],
+    "Безпека": [
+      "Виправлено: Клони програм зникали після перезавантаження"
+    ]
+  },
+  "logs_pl": {
+    "Telefon": [
+      "Poprawka: Zakończenie połączeń trwało dłużej niż oczekiwano",
+      "Naprawiono: Zakończenie połączeń trwało dłużej niż oczekiwano"
+    ],
+    "Ustawienia": [
+      "Naprawiono: W niektórych przypadkach wymuszono zamknięcie aplikacji",
+      "Optimization: Sorting principles for Wi-Fi networks",
+      "Zoptymalizowano: Ulepszyliśmy kartę \"Akcje\"",
+      "Optymalizacja: lista WLAN sortowana według siły sygnału"
+    ],
+    "System": [
+      "Nowość: przełącznik kształtu notcha kropli wody w ustawieniach pełnego ekranu",
+      "Zoptymalizowano: Usunięto niepotrzebne sygnały dźwiękowe dla trybu nie przeszkadzać"
+    ],
+    "Zegar": [
+      "Poprawka: przycisk na stronie minutnika miga po dotknięciu",
+      "Naprawiono: Zegar ulegał awarii w określonych datach"
+    ],
+    "Bezpieczeństwo": [
+      "Poprawiono: Aplikacje dualne znikały po ponownym uruchomieniu"
+    ]
+  },
+  "logs_de": {
+    "Telefon": [
+      "Behoben: Das Beenden von Anrufen dauerte länger als erwartet",
+      "Behoben: Anrufe beenden dauerte länger als erwartet"
+    ],
+    "Einstellungen": [
+      "Neu: Schnellantworten für Messaging-Apps",
+      "Optimierung: Sortierung der WLAN-Netzwerke",
+      "Optimierung: Aktien-Karte verbessert",
+      "Optimierung: WLAN-Liste wird nach Signalstärke sortiert"
+    ],
+    "System": [
+      "Neu: Schalter zum Ändern der Waterdrop-Notch-Form in den Vollbild-Einstellungen",
+      "Optimierung: Tonbenachrichtigung nach zeitgesteuerter Deaktivierung des Nicht-Stören-Modus entfernt"
+    ],
+    "Uhr": [
+      "Behebung: Schaltfläche auf der Timer-Seite blinkt nach dem Antippen",
+      "Behoben: Uhr stürzte an bestimmten Daten ab"
+    ],
+    "Sicherheit": [
+      "Behoben: Duale Apps verschwanden nach einem Neustart"
+    ]
+  },
+  "logs_fr": {
+    "Téléphone": [
+      "Réparé: Mettre fin aux appels a pris plus de temps que prévu",
+      "Correction : la fin des appels prenait plus de temps que prévu"
+    ],
+    "Paramètres": [
+      "Nouveau: Réponses rapides pour les applications de messagerie",
+      "Optimisation Principes de tri pour les réseaux Wi-Fi",
+      "Optimisation: Amélioré la carte \"Stocks\"",
+      "Optimisation : tri de la liste WLAN par intensité du signal"
+    ],
+    "Système": [
+      "Nouveau : option pour changer la forme de l’encoche goutte d’eau dans les paramètres plein écran",
+      "Optimisation: A retiré les sons de notifications inutiles pour le mode DND"
+    ],
+    "Horloge": [
+      "Correction : le bouton de la page Minuteur clignote après un appui",
+      "Correction : l'horloge plantait à certaines dates"
+    ],
+    "Sécurité": [
+      "Corrigé : Les applications duales disparaissaient après un redémarrage"
+    ]
+  },
+  "logs_it": {
+    "Telefono": [
+      "Risolto: Terminare le chiamate richiedeva più tempo del previsto",
+      "Risolto: Terminare le chiamate richiedeva più tempo del previsto"
+    ],
+    "Impostazioni": [
+      "Nuovo: Risposte rapide per le app di messaggistica",
+      "Ottimizzazione: Principi di ordinamento delle reti Wi-Fi",
+      "Ottimizzazione: Migliorata la scheda \"Azioni\"",
+      "Ottimizzazione: Principi di ordinamento delle reti Wi-Fi"
+    ],
+    "Orologio": [
+      "Risolvi: Il pulsante del timer cominciava a lampeggiare quando veniva premuto",
+      "Risolvi: Chiusura forzata di Orologio in alcune date specifiche"
+    ],
+    "Sicurezza": [
+      "Risolto: Le app clonate sparivano dopo il riavvio"
+    ]
+  },
+  "logs_es": {
+    "Teléfono": [
+      "Reparado: Terminar las llamadas llevó más tiempo de lo esperado",
+      "Reparado: Terminar las llamadas llevó más tiempo de lo esperado"
+    ],
+    "Ajustes": [
+      "Nuevo: Respuestas rápidas para aplicaciones de mensajería",
+      "Optimización: Los valores de redes Wi-Fi son ordenados",
+      "Optimización: Mejorada la tarjeta de \"Acciones\"",
+      "Optimización: Los valores de redes Wi-Fi son ordenados"
+    ],
+    "Reloj": [
+      "Reparar: El botón del temporizador comenzó a parpadear después de ser pulsado",
+      "Reparar: Cierre forzoso del Reloj en algunas fechas específicas"
+    ],
+    "Seguridad": [
+      "Reparado: Las aplicaciones duales desaparecían después de reiniciar el teléfono"
+    ]
+  },
+  "logs_pt": {
+    "Telefone": [
+      "Correção: Encerrar chamadas levava mais tempo que o esperado",
+      "Correção: encerrar chamadas demorava mais do que o esperado"
+    ],
+    "Configurações": [
+      "Novo: Respostas rápidas para apps mensageiros",
+      "Otimização Ordenação de redes Wi-Fi salvas",
+      "Otimização: Melhoria no cartão de \"Ações\"",
+      "Otimização: lista WLAN ajustada para classificar por intensidade do sinal"
+    ],
+    "Sistema": [
+      "Novo: opção para alternar o formato do notch em gota d'água nas configurações de tela cheia",
+      "Otimização: Sons de notificação desnecessários removidos do modo Não perturbe"
+    ],
+    "Relógio": [
+      "Correção: o botão da página do temporizador pisca ao ser tocado",
+      "Correção: o Relógio fechava à força em datas específicas"
+    ],
+    "Segurança": [
+      "Correção: Os apps duplos desapareciam após reiniciar"
+    ]
+  },
+  "logs_tr": {
+    "Telefon": [
+      "Onarım: Aramaları sonlandırmak beklenenden daha uzun sürdü",
+      "Onarım: Aramaları sonlandırmak beklenenden daha uzun sürdü"
+    ],
+    "Ayarlar": [
+      "Yeni: Mesajlaşma uygulamaları için hızlı yanıtlar",
+      "Optimizasyon: Wi-Fi ağları için sıralama ilkeleri",
+      "Optimizasyon: Geliştirilmiş “Hisse“ kartı",
+      "Optimizasyon: Wi-Fi ağları için sıralama ilkeleri"
+    ],
+    "Saat": [
+      "Onar: Zamanlayıcı tuşu, dokunulduktan sonra yanmaya başladı",
+      "Onar: Saat, belirli tarihlerde kapanmaya zorlandı"
+    ],
+    "Güvenlik": [
+      "Onarım: Çift uygulamaların cihazın yeniden başlatılmasından sonraki görüntülenmeme sorunu"
+    ]
+  },
+  "logs_id": {
+    "Telepon": [
+      "Perbaikan: Mematikan panggilan memakan waktu lebih lama dibanding seharusnya",
+      "Perbaikan: Mengakhiri panggilan membutuhkan waktu lebih lama dari yang diharapkan"
+    ],
+    "Pengaturan": [
+      "Baru: Balasan cepat pada aplikasi Pesan",
+      "Pengoptimalan Pengurutan daftar Wi-Fi berdasarkan kekuatan sinyal",
+      "Pengoptimalan: Kartu \"Saham\" ditingkatkan",
+      "Optimasi: Daftar WLAN diurutkan berdasarkan kekuatan sinyal"
+    ],
+    "Sistem": [
+      "Baru: Tombol untuk mengganti bentuk notch tetes air di pengaturan layar penuh",
+      "Pengoptimalan: Notifikasi suara yang tidak dibutuhkan untuk mode Jangan ganggu dihapus"
+    ],
+    "Jam": [
+      "Perbaikan: tombol di halaman pengatur waktu berkedip saat diketuk",
+      "Perbaikan: Jam mengalami force close pada tanggal tertentu"
+    ],
+    "Keamanan": [
+      "Perbaikan: Aplikasi ganda menghilang setelah reboot"
+    ]
+  },
+  "logs_vi": {
+    "Điện thoại": [
+      "Sửa lỗi: Kết thúc cuộc gọi mất nhiều thời gian hơn dự kiến",
+      "Đã sửa: Việc kết thúc cuộc gọi mất nhiều thời gian hơn dự kiến"
+    ],
+    "Cài đặt": [
+      "Mới: Trả lời nhanh cho ứng dụng nhắn tin",
+      "Optimization: Sorting principles for Wi-Fi networks",
+      "Tối ưu: Cải thiện thẻ cổ phiếu",
+      "Tối ưu hóa: Danh sách WLAN được sắp xếp theo cường độ tín hiệu"
+    ],
+    "Hệ thống": [
+      "Mới: tùy chọn chuyển đổi hình dạng notch giọt nước trong cài đặt toàn màn hình",
+      "Tối ưu hóa: Đã xóa âm báo sau khi tắt chế độ Không làm phiền theo lịch"
+    ],
+    "Đồng hồ": [
+      "Sửa lỗi: nút trên trang hẹn giờ nhấp nháy khi được nhấn",
+      "Sửa lỗi: Đồng hồ bị buộc dừng vào một số ngày cụ thể"
+    ],
+    "Bảo mật": [
+      "Đã sửa: Ứng dụng kép biến mất sau khi khởi động lại"
+    ]
+  },
+  "logs_th": {
+    "โทรศัพท์": [
+      "แก้ไข: การวางสายใช้เวลานานกว่าที่ควร",
+      "แก้ไข: การวางสายใช้เวลานานกว่าที่คาดไว้"
+    ],
+    "การตั้งค่า": [
+      "New: Quick replies for messaging apps",
+      "Optimization: Sorting principles for Wi-Fi networks",
+      "Optimization: Improved the \"Stocks\" card",
+      "การปรับให้เหมาะสม: ปรับรายการ WLAN ให้เรียงตามความแรงของสัญญาณ"
+    ],
+    "ระบบ": [
+      "ใหม่: สวิตช์สลับรูปทรงรอยบากแบบหยดน้ำในการตั้งค่าหน้าจอเต็ม",
+      "การปรับปรุง: ลบการแจ้งเตือนเสียงหลังปิดโหมดห้ามรบกวนตามกำหนดเวลา"
+    ],
+    "นาฬิกา": [
+      "แก้ไขปัญหาปุ่มในหน้าตัวจับเวลากระพริบเมื่อแตะ",
+      "แก้ไขปัญหานาฬิกาหยุดทำงานในวันที่เฉพาะเจาะจง"
+    ],
+    "ความปลอดภัย": [
+      "แก้ไข: แอปคู่หายไปหลังรีสตาร์ท"
+    ]
+  },
+  "logs_ar": {
+    "الهاتف": [
+      "إصلاح: استغرق إنهاء المكالمات وقتًا أطول من المتوقع",
+      "إصلاح: استغرق إنهاء المكالمات وقتًا أطول من المتوقع"
+    ],
+    "الإعدادات": [
+      "إصلاح الخروج الإجباري للتطبيق في بعض الحالات",
+      "Optimization: Sorting principles for Wi-Fi networks",
+      "محسن تحسين بطاقة \"الأسهم\"",
+      "تحسين: تعديل قائمة WLAN لتُرتب حسب قوة الإشارة"
+    ],
+    "النظام": [
+      "جديد: مفتاح تبديل شكل النوتش على شكل قطرة في إعدادات ملء الشاشة",
+      "محسن إزالة إشعارات الصوت غير ضرورية لوضع عدم الإزعاج"
+    ],
+    "الساعة": [
+      "إصلاح مشكلة وميض زر صفحة المؤقت عند النقر عليه",
+      "إصلاح مشكلة تعطل تطبيق الساعة في تواريخ محددة"
+    ],
+    "الأمان": [
+      "إصلاح: اختفت التطبيقات المزدوجة بعد إعادة التشغيل"
+    ]
+  },
+  "logs_in": {
+    "फ़ोन": [
+      "ठीक किया गया: कॉल समाप्त करने में अपेक्षा से अधिक समय लगता था",
+      "ठीक किया गया: कॉल समाप्त करने में अपेक्षा से अधिक समय लगा"
+    ],
+    "सेटिंग्स": [
+      "New: Quick replies for messaging apps",
+      "Optimization: Sorting principles for Wi-Fi networks",
+      "Optimization: Improved the \"Stocks\" card",
+      "अनुकूलन: WLAN सूची को सिग्नल स्ट्रेंथ के अनुसार क्रमबद्ध किया गया"
+    ],
+    "सिस्टम": [
+      "नया: फुल स्क्रीन सेटिंग्स में वॉटरड्रॉप नॉच आकार बदलने का टॉगल",
+      "अनुकूलन: शेड्यूल किए गए डू नॉट डिस्टर्ब बंद होने के बाद की ध्वनि सूचना हटाई गई"
+    ],
+    "घड़ी": [
+      "टाइमर पेज पर बटन टैप करने पर झिलमिलाने की समस्या ठीक की गई",
+      "कुछ खास तारीखों पर घड़ी के क्रैश होने की समस्या ठीक की गई"
+    ],
+    "सुरक्षा": [
+      "ठीक किया गया: रीस्टार्ट के बाद डुअल ऐप्स गायब हो जाते थे"
+    ]
+  },
+  "logs_ug": {
+    "تېلېفون": [
+      "Fix: Ending calls took longer time than expected",
+      "Fix: Ending calls took longer time than expected"
+    ],
+    "تەڭشەك": [
+      "New: Quick replies for messaging apps",
+      "Optimization: Sorting principles for Wi-Fi networks",
+      "Optimization: Improved the \"Stocks\" card",
+      "ياخشىلاش: WLAN تىزىملىكى سىگنال كۈچى بويىچە تەرتىپلىنىدۇ"
+    ],
+    "سىستېما": [
+      "New: An option for smoothening notch curves on full screen devices",
+      "Optimization: Removed unnecessary sound notifications for DND mode"
+    ],
+    "سائەت": [
+      "تایمېر بېتىدىكى كۇنۇپكىنى باسقاندا پارقىراش مەسىلىسىنى تۈزەت",
+      "سائەت ئالاھىدە چېسلاردا مەجبۇرىي تاقىلىپ قېلىش مەسىلىسى تۈزىتىلدى"
+    ],
+    "بىخەتەرلىك مەركىزى": [
+      "Fix: Dual apps disappeared after a reboot"
+    ]
+  },
+  "logs_bo": {
+    "ཁ་པར": [
+      "Fix: Ending calls took longer time than expected",
+      "Fix: Ending calls took longer time than expected"
+    ],
+    "Settings": [
+      "New: Quick replies for messaging apps",
+      "Optimization: Sorting principles for Wi-Fi networks",
+      "Optimization: Improved the \"Stocks\" card",
+      "Optimization: Sorting principles for Wi-Fi networks"
+    ],
+    "རིམ་ལུགས": [
+      "New: An option for smoothening notch curves on full screen devices",
+      "Optimization: Removed unnecessary sound notifications for DND mode"
+    ],
+    "ཆུ་ཚོད།": [
+      "Fix: Timer button started flashing after being tapped",
+      "Fix: Clock force closed on some specific dates"
+    ],
+    "བདེ་འཇགས་ལྟེ་གནས": [
+      "Fix: Dual apps disappeared after a reboot"
     ]
   }
 }

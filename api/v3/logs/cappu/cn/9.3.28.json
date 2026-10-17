@@ -2,6 +2,8 @@
   "logs_zh": {
     "锁屏、状态栏、通知栏": [
       "修复 锁屏下拉通知栏、充电球不消失的问题",
+      "修复 息屏状态下直接通过指纹解锁,可能出现锁屏通知栏不消失的问题",
+      "修复 锁屏下拉通知栏、充电球不消失的问题",
       "修复 息屏状态下直接通过指纹解锁,可能出现锁屏通知栏不消失的问题"
     ],
     "系统更新": [
@@ -9,9 +11,173 @@
     ]
   },
   "logs_en": {
-    "Lockscreen, status bar, Notification shade": [
-      "Fix: Battery indicator didn^t disappear when the Notification shade was opened on the Lock screen",
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Fix: Battery indicator didn't disappear when the Notification shade was opened on the Lock screen",
       "Fix: Issues with displaying notifications on the Lock screen"
+    ],
+    "Lockscreen, status bar, Notification shade": [
+      "Fix: Battery indicator didn't disappear when the Notification shade was opened on the Lock screen",
+      "Fix: Issues with displaying notifications on the Lock screen"
+    ]
+  },
+  "logs_zh_tw": {
+    "解鎖畫面、狀態欄、通知欄": [
+      "修復 鎖定螢幕下拉通知欄、充電球未消失的問題",
+      "修正 螢幕關閉狀態下直接以指紋解鎖時，鎖定畫面的通知列可能不會消失的問題",
+      "修復 鎖定螢幕下拉通知欄、充電球未消失的問題",
+      "修正 螢幕關閉狀態下直接以指紋解鎖時，鎖定畫面的通知列可能不會消失的問題"
+    ]
+  },
+  "logs_ja": {
+    "ロック画面、ステータスバー、通知バー": [
+      "ロック画面で通知シェードを下ろした際に、充電ボールが消えない問題を修正",
+      "画面オフの状態で指紋認証により直接ロック解除した際、ロック画面の通知バーが消えない場合がある問題を修正"
+    ],
+    "ロック画面、ステータスバー、通知シェード": [
+      "ロック画面で通知シェードを下ろした際に、充電ボールが消えない問題を修正",
+      "画面オフの状態で指紋認証により直接ロック解除した際、ロック画面の通知バーが消えない場合がある問題を修正"
+    ]
+  },
+  "logs_ko": {
+    "잠금 화면, 상태 표시줄, 알림 표시줄": [
+      "잠금 화면에서 알림창을 내렸을 때 충전 볼이 사라지지 않는 문제를 수정",
+      "화면 꺼짐 상태에서 지문으로 바로 잠금 해제 시 잠금 화면 알림 표시줄이 사라지지 않을 수 있는 문제를 수정"
+    ],
+    "잠금화면, 상태 바, 알림 바": [
+      "잠금 화면에서 알림창을 내렸을 때 충전 볼이 사라지지 않는 문제를 수정",
+      "화면 꺼짐 상태에서 지문으로 바로 잠금 해제 시 잠금 화면 알림 표시줄이 사라지지 않을 수 있는 문제를 수정"
+    ]
+  },
+  "logs_ru": {
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Исправлена проблема, из-за которой индикатор зарядки не исчезал при открытии панели уведомлений на экране блокировки",
+      "Исправлена проблема, при которой после разблокировки отпечатком пальца при выключенном экране панель уведомлений на экране блокировки могла не исчезать",
+      "Исправлена проблема, из-за которой индикатор зарядки не исчезал при открытии панели уведомлений на экране блокировки",
+      "Исправлена проблема, при которой после разблокировки отпечатком пальца при выключенном экране панель уведомлений на экране блокировки могла не исчезать"
+    ]
+  },
+  "logs_uk": {
+    "Екран блокування, рядок стану, рядок сповіщень": [
+      "Виправлено проблему, через яку індикатор заряджання не зникав під час відкриття панелі сповіщень на екрані блокування",
+      "Виправлено проблему, коли після розблокування відбитком пальця у вимкненому стані екрана панель сповіщень на екрані блокування могла не зникати"
+    ],
+    "Екран блокування, рядок стану, панель сповіщень": [
+      "Виправлено проблему, через яку індикатор заряджання не зникав під час відкриття панелі сповіщень на екрані блокування",
+      "Виправлено проблему, коли після розблокування відбитком пальця у вимкненому стані екрана панель сповіщень на екрані блокування могла не зникати"
+    ]
+  },
+  "logs_pl": {
+    "Ekran blokady, pasek stanu, pasek powiadomień": [
+      "Naprawiono problem, w którym wskaźnik ładowania nie znikał po rozwinięciu panelu powiadomień na ekranie blokady",
+      "Naprawiono problem, w którym po odblokowaniu odciskiem palca przy wyłączonym ekranie pasek powiadomień na ekranie blokady mógł nie znikać"
+    ],
+    "Ekran blokady, pasek powiadomień,panel powiadomień": [
+      "Naprawiono problem, w którym wskaźnik ładowania nie znikał po rozwinięciu panelu powiadomień na ekranie blokady",
+      "Naprawiono problem, w którym po odblokowaniu odciskiem palca przy wyłączonym ekranie pasek powiadomień na ekranie blokady mógł nie znikać"
+    ]
+  },
+  "logs_de": {
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
+      "Problem behoben, bei dem die Ladeanzeige nicht verschwand, wenn auf dem Sperrbildschirm die Benachrichtigungsleiste geöffnet wurde",
+      "Problem behoben, bei dem die Benachrichtigungsleiste auf dem Sperrbildschirm nach dem direkten Entsperren per Fingerabdruck bei ausgeschaltetem Bildschirm ggf. nicht verschwindet"
+    ],
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
+      "Problem behoben, bei dem die Ladeanzeige nicht verschwand, wenn auf dem Sperrbildschirm die Benachrichtigungsleiste geöffnet wurde",
+      "Problem behoben, bei dem die Benachrichtigungsleiste auf dem Sperrbildschirm nach dem direkten Entsperren per Fingerabdruck bei ausgeschaltetem Bildschirm ggf. nicht verschwindet"
+    ]
+  },
+  "logs_fr": {
+    "Écran de verrouillage, barre d’état, barre de notifications": [
+      "Correction du problème où l’indicateur de charge ne disparaissait pas lors de l’ouverture du panneau de notifications sur l’écran de verrouillage",
+      "Correction du problème où la barre de notifications de l’écran de verrouillage pouvait ne pas disparaître après un déverrouillage direct par empreinte digitale lorsque l’écran est éteint"
+    ],
+    "Écran de verrouillage, Barre d'état, Panneau de notification": [
+      "Correction du problème où l’indicateur de charge ne disparaissait pas lors de l’ouverture du panneau de notifications sur l’écran de verrouillage",
+      "Correction du problème où la barre de notifications de l’écran de verrouillage pouvait ne pas disparaître après un déverrouillage direct par empreinte digitale lorsque l’écran est éteint"
+    ]
+  },
+  "logs_it": {
+    "Schermata di blocco, barra di stato, barra delle notifiche": [
+      "Risolto il problema per cui l'indicatore di ricarica non scompariva quando si apriva il pannello delle notifiche sulla schermata di blocco",
+      "Risolto il problema per cui la barra delle notifiche nella schermata di blocco poteva non scomparire dopo lo sblocco diretto tramite impronta digitale a schermo spento"
+    ],
+    "Schermata di blocco, barra di stato, area delle notifiche": [
+      "Risolto il problema per cui l'indicatore di ricarica non scompariva quando si apriva il pannello delle notifiche sulla schermata di blocco",
+      "Risolto il problema per cui la barra delle notifiche nella schermata di blocco poteva non scomparire dopo lo sblocco diretto tramite impronta digitale a schermo spento"
+    ]
+  },
+  "logs_es": {
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Se corrigió el problema por el que el indicador de carga no desaparecía al abrir el panel de notificaciones en la pantalla de bloqueo",
+      "Se corrige el problema por el que la barra de notificaciones de la pantalla de bloqueo podía no desaparecer al desbloquear directamente con huella dactilar con la pantalla apagada",
+      "Se corrigió el problema por el que el indicador de carga no desaparecía al abrir el panel de notificaciones en la pantalla de bloqueo",
+      "Se corrige el problema por el que la barra de notificaciones de la pantalla de bloqueo podía no desaparecer al desbloquear directamente con huella dactilar con la pantalla apagada"
+    ]
+  },
+  "logs_pt": {
+    "Tela de bloqueio, barra de status, barra de notificações": [
+      "Corrigido o problema em que o indicador de carregamento não desaparecia ao abrir o painel de notificações na tela de bloqueio",
+      "Corrigido o problema em que a barra de notificações da tela de bloqueio podia não desaparecer ao desbloquear diretamente com impressão digital com a tela desligada"
+    ],
+    "Tela de bloqueio, Barra de status e Área de notificações": [
+      "Corrigido o problema em que o indicador de carregamento não desaparecia ao abrir o painel de notificações na tela de bloqueio",
+      "Corrigido o problema em que a barra de notificações da tela de bloqueio podia não desaparecer ao desbloquear diretamente com impressão digital com a tela desligada"
+    ]
+  },
+  "logs_tr": {
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Kilit ekranında bildirim paneli açıldığında şarj göstergesinin kaybolmaması sorunu düzeltildi",
+      "Ekran kapalıyken parmak iziyle doğrudan kilit açıldığında kilit ekranı bildirim çubuğunun kaybolmaması sorunu düzeltildi",
+      "Kilit ekranında bildirim paneli açıldığında şarj göstergesinin kaybolmaması sorunu düzeltildi",
+      "Ekran kapalıyken parmak iziyle doğrudan kilit açıldığında kilit ekranı bildirim çubuğunun kaybolmaması sorunu düzeltildi"
+    ]
+  },
+  "logs_id": {
+    "Layar kunci, bilah status, bilah notifikasi": [
+      "Memperbaiki masalah indikator pengisian daya tidak hilang saat panel notifikasi dibuka di layar kunci",
+      "Memperbaiki masalah bilah notifikasi layar kunci yang mungkin tidak hilang saat membuka kunci langsung dengan sidik jari dalam keadaan layar mati"
+    ],
+    "Layar kunci, bar status, layar notifikasi": [
+      "Memperbaiki masalah indikator pengisian daya tidak hilang saat panel notifikasi dibuka di layar kunci",
+      "Memperbaiki masalah bilah notifikasi layar kunci yang mungkin tidak hilang saat membuka kunci langsung dengan sidik jari dalam keadaan layar mati"
+    ]
+  },
+  "logs_vi": {
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Đã sửa lỗi chỉ báo sạc không biến mất khi mở bảng thông báo trên màn hình khóa",
+      "Đã sửa lỗi thanh thông báo màn hình khóa có thể không biến mất khi mở khóa trực tiếp bằng vân tay trong trạng thái tắt màn hình",
+      "Đã sửa lỗi chỉ báo sạc không biến mất khi mở bảng thông báo trên màn hình khóa",
+      "Đã sửa lỗi thanh thông báo màn hình khóa có thể không biến mất khi mở khóa trực tiếp bằng vân tay trong trạng thái tắt màn hình"
+    ]
+  },
+  "logs_th": {
+    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
+      "แก้ไขปัญหาตัวบ่งชี้การชาร์จไม่หายไปเมื่อเปิดแผงการแจ้งเตือนบนหน้าจอล็อก",
+      "แก้ไขปัญหาที่แถบการแจ้งเตือนบนหน้าจอล็อกอาจไม่หายไปเมื่อปลดล็อกด้วยลายนิ้วมือโดยตรงในขณะที่หน้าจอดับ"
+    ],
+    "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
+      "แก้ไขปัญหาตัวบ่งชี้การชาร์จไม่หายไปเมื่อเปิดแผงการแจ้งเตือนบนหน้าจอล็อก",
+      "แก้ไขปัญหาที่แถบการแจ้งเตือนบนหน้าจอล็อกอาจไม่หายไปเมื่อปลดล็อกด้วยลายนิ้วมือโดยตรงในขณะที่หน้าจอดับ"
+    ]
+  },
+  "logs_ar": {
+    "شاشة القفل، شريط الحالة، شريط الإشعارات": [
+      "إصلاح مشكلة عدم اختفاء مؤشر الشحن عند فتح لوحة الإشعارات على شاشة القفل",
+      "إصلاح مشكلة احتمال عدم اختفاء شريط الإشعارات في شاشة القفل عند إلغاء القفل مباشرةً ببصمة الإصبع أثناء إيقاف الشاشة"
+    ],
+    "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
+      "إصلاح مشكلة عدم اختفاء مؤشر الشحن عند فتح لوحة الإشعارات على شاشة القفل",
+      "إصلاح مشكلة احتمال عدم اختفاء شريط الإشعارات في شاشة القفل عند إلغاء القفل مباشرةً ببصمة الإصبع أثناء إيقاف الشاشة"
+    ]
+  },
+  "logs_in": {
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
+      "लॉक स्क्रीन पर सूचना शेड खोलने पर चार्जिंग इंडिकेटर के गायब न होने की समस्या ठीक की गई",
+      "स्क्रीन बंद होने पर सीधे फ़िंगरप्रिंट से अनलॉक करते समय लॉक स्क्रीन की सूचना पट्टी के गायब न होने की समस्या ठीक की गई"
+    ],
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
+      "लॉक स्क्रीन पर सूचना शेड खोलने पर चार्जिंग इंडिकेटर के गायब न होने की समस्या ठीक की गई",
+      "स्क्रीन बंद होने पर सीधे फ़िंगरप्रिंट से अनलॉक करते समय लॉक स्क्रीन की सूचना पट्टी के गायब न होने की समस्या ठीक की गई"
     ]
   }
 }

@@ -2,7 +2,8 @@
   "logs_zh": {
     "系统": [
       "新增 全面屏设置中的水滴屏形状切换开关",
-      "修复 影响系统安全性与稳定性的若干问题"
+      "修复 影响系统安全性与稳定性的若干问题",
+      "新增 全面屏设置中的水滴屏形状切换开关"
     ],
     "锁屏、状态栏、通知栏": [
       "新增 夜间使用指纹解锁时，降低指纹区域亮度以防刺眼",
@@ -10,17 +11,26 @@
       "优化 “每72小时需要输入一次密码”功能的提示文案",
       "修复 关闭“灭屏显示指纹”设置项以后，在少数情况下指纹依然显示",
       "修复 通话中通话时间与通知图标重叠的问题",
+      "修复 息屏状态下直接通过指纹解锁,可能出现锁屏通知栏不消失的问题",
       "修复 息屏状态下直接通过指纹解锁,可能出现锁屏通知栏不消失的问题"
     ],
     "相机": [
       "新增 微距拍摄功能",
       "优化  三方应用程序在人脸场景的亮度",
+      "优化 拍照和视频的图像质量",
+      "新增 微距拍摄功能",
+      "优化 三方应用程序在人脸场景的亮度",
+      "优化 拍照和视频的图像质量",
+      "新增 微距拍摄功能",
+      "优化 三方应用程序在人脸场景的亮度",
       "优化 拍照和视频的图像质量"
     ],
     "其他": [
       "优化 微信朋友圈图片显示清晰度",
       "修复 减少游戏模式网络延迟的问题",
-      "修复 特殊基站下，用户使用4G快速切换2G时，概率信号断线的问题"
+      "修复 特殊基站下，用户使用4G快速切换2G时，概率信号断线的问题",
+      "提高系统的稳定性",
+      "优化系统的流畅度"
     ]
   },
   "logs_en": {
@@ -33,126 +43,381 @@
     "Camera": [
       "New: Introducing Macro mode",
       "Optimization: Brightness adjustments for human faces in third party apps",
+      "Optimization: Image quality for photos and videos",
+      "New: Introducing Macro mode",
+      "Optimization: Brightness adjustments for human faces in third party apps",
       "Optimization: Image quality for photos and videos"
+    ],
+    "Other": [
+      "Optimized system performance",
+      "Improved system security and stability"
     ]
   },
   "logs_zh_tw": {
+    "解鎖畫面、狀態欄、通知欄": [
+      "修正 螢幕關閉狀態下直接以指紋解鎖時，鎖定畫面的通知列可能不會消失的問題"
+    ],
     "相機": [
       "新增 微距拍攝功能",
       "優化 第三方應用程式在人臉場景的亮度",
+      "優化 拍照和錄影的圖像品質",
+      "新增 微距拍攝功能",
+      "優化 第三方應用程式在人臉場景的亮度",
       "優化 拍照和錄影的圖像品質"
+    ],
+    "其他": [
+      "改善系統的穩定性",
+      "優化系統的流暢度"
     ]
   },
   "logs_ja": {
+    "システム": [
+      "新規: 全画面設定に水滴型ノッチの形状を切り替えるスイッチを追加"
+    ],
+    "ロック画面、ステータスバー、通知シェード": [
+      "画面オフの状態で指紋認証により直接ロック解除した際、ロック画面の通知バーが消えない場合がある問題を修正"
+    ],
+    "カメラ": [
+      "新機能：マクロ撮影機能を追加",
+      "最適化: サードパーティアプリでの顔の明るさ調整",
+      "最適化: 写真と動画の画質",
+      "新機能：マクロ撮影機能を追加",
+      "最適化: サードパーティアプリでの顔の明るさ調整",
+      "最適化: 写真と動画の画質"
+    ],
     "その他": [
       "システムパフォーマンスの最適化",
       "システムのセキュリティと安定性の向上"
     ]
   },
   "logs_ko": {
+    "시스템": [
+      "새로 추가: 전체 화면 설정에 물방울 노치 모양 전환 스위치 추가"
+    ],
+    "잠금화면, 상태 바, 알림 바": [
+      "화면 꺼짐 상태에서 지문으로 바로 잠금 해제 시 잠금 화면 알림 표시줄이 사라지지 않을 수 있는 문제를 수정"
+    ],
+    "카메라": [
+      "새 기능: 접사 촬영 기능 추가",
+      "최적화: 타사 앱에서 얼굴 밝기 조정",
+      "최적화: 사진 및 동영상 이미지 품질",
+      "새 기능: 접사 촬영 기능 추가",
+      "최적화: 타사 앱에서 얼굴 밝기 조정",
+      "최적화: 사진 및 동영상 이미지 품질"
+    ],
     "기타": [
       "시스템 성능 최적화",
       "시스템 보안 및 안정성 개선"
     ]
   },
   "logs_ru": {
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Исправлена проблема, при которой после разблокировки отпечатком пальца при выключенном экране панель уведомлений на экране блокировки могла не исчезать"
+    ],
     "Камера": [
       "Новое: Добавлен режим Макро",
       "Оптимизация: Регулировка яркости лиц в сторонних приложениях",
+      "Оптимизация: Качество изображения фото и видео",
+      "Новое: Добавлен режим Макро",
+      "Оптимизация: Регулировка яркости лиц в сторонних приложениях",
       "Оптимизация: Качество изображения фото и видео"
+    ],
+    "Другое": [
+      "Оптимизация производительности системы",
+      "Улучшение безопасности и стабильности системы"
     ]
   },
   "logs_uk": {
+    "Система": [
+      "Нове: перемикач форми краплеподібного вирізу в налаштуваннях повноекранного режиму"
+    ],
+    "Екран блокування, рядок стану, панель сповіщень": [
+      "Виправлено проблему, коли після розблокування відбитком пальця у вимкненому стані екрана панель сповіщень на екрані блокування могла не зникати"
+    ],
+    "Камера": [
+      "Нове: Додано режим макрозйомки",
+      "Оптимізація: яскравість облич у сторонніх застосунках",
+      "Оптимізація: якість зображення для фото та відео",
+      "Нове: Додано режим макрозйомки",
+      "Оптимізація: яскравість облич у сторонніх застосунках",
+      "Оптимізація: якість зображення для фото та відео"
+    ],
     "Інше": [
       "Оптимізація продуктивності системи",
       "Покращення безпеки та стабільності системи"
     ]
   },
   "logs_pl": {
+    "System": [
+      "Nowość: przełącznik kształtu notcha kropli wody w ustawieniach pełnego ekranu"
+    ],
+    "Ekran blokady, pasek powiadomień,panel powiadomień": [
+      "Naprawiono problem, w którym po odblokowaniu odciskiem palca przy wyłączonym ekranie pasek powiadomień na ekranie blokady mógł nie znikać"
+    ],
+    "Aparat": [
+      "Nowość: Dodano tryb makro",
+      "Optymalizacja: dostosowanie jasności twarzy w aplikacjach innych firm",
+      "Optymalizacja: jakość obrazu zdjęć i filmów",
+      "Nowość: Dodano tryb makro",
+      "Optymalizacja: dostosowanie jasności twarzy w aplikacjach innych firm",
+      "Optymalizacja: jakość obrazu zdjęć i filmów"
+    ],
     "Inne": [
       "Zoptymalizowana wydajność systemu",
       "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
   "logs_de": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "System": [
+      "Neu: Schalter zum Ändern der Waterdrop-Notch-Form in den Vollbild-Einstellungen"
+    ],
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
+      "Problem behoben, bei dem die Benachrichtigungsleiste auf dem Sperrbildschirm nach dem direkten Entsperren per Fingerabdruck bei ausgeschaltetem Bildschirm ggf. nicht verschwindet"
+    ],
+    "Kamera": [
+      "Neu: Makroaufnahme hinzugefügt",
+      "Optimierung: Helligkeit für Gesichter in Drittanbieter-Apps",
+      "Optimierung: Bildqualität für Fotos und Videos",
+      "Neu: Makroaufnahme hinzugefügt",
+      "Optimierung: Helligkeit für Gesichter in Drittanbieter-Apps",
+      "Optimierung: Bildqualität für Fotos und Videos"
+    ],
+    "Sonstiges": [
+      "Systemleistung optimiert",
+      "Systemsicherheit und -stabilität verbessert"
     ]
   },
   "logs_fr": {
+    "Système": [
+      "Nouveau : option pour changer la forme de l’encoche goutte d’eau dans les paramètres plein écran"
+    ],
+    "Écran de verrouillage, Barre d'état, Panneau de notification": [
+      "Correction du problème où la barre de notifications de l’écran de verrouillage pouvait ne pas disparaître après un déverrouillage direct par empreinte digitale lorsque l’écran est éteint"
+    ],
+    "Appareil photo": [
+      "Nouveau : Ajout du mode macro",
+      "Optimisation : réglage de la luminosité des visages dans les applications tierces",
+      "Optimisation : qualité d’image des photos et vidéos"
+    ],
     "Autre": [
       "Performances système optimisées",
       "Sécurité et stabilité du système améliorées"
+    ],
+    "Appareil Photo": [
+      "Nouveau : Ajout du mode macro",
+      "Optimisation : réglage de la luminosité des visages dans les applications tierces",
+      "Optimisation : qualité d’image des photos et vidéos"
     ]
   },
   "logs_it": {
+    "Schermata di blocco, barra di stato, area delle notifiche": [
+      "Risolto il problema per cui la barra delle notifiche nella schermata di blocco poteva non scomparire dopo lo sblocco diretto tramite impronta digitale a schermo spento"
+    ],
     "Fotocamera": [
       "Nuovo: Aggiunta la modalità Macro",
       "Ottimizzazione: Regolazione della luminosità del viso nelle app di terze parti",
-      "Ottimizzazione: Qualità dell^immagine di foto e video"
+      "Ottimizzazione: Qualità dell'immagine di foto e video",
+      "Nuovo: Aggiunta la modalità Macro",
+      "Ottimizzazione: Regolazione della luminosità del viso nelle app di terze parti",
+      "Ottimizzazione: Qualità dell'immagine di foto e video"
+    ],
+    "Altro": [
+      "Prestazioni di sistema ottimizzate",
+      "Maggiore sicurezza e stabilità di sistema"
     ]
   },
   "logs_es": {
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Se corrige el problema por el que la barra de notificaciones de la pantalla de bloqueo podía no desaparecer al desbloquear directamente con huella dactilar con la pantalla apagada"
+    ],
     "Cámara": [
       "Nuevo: Introducción del Modo macro",
       "Optimización: Ajustes de brillo para rostros humanos en aplicaciones de terceros",
+      "Optimización: Calidad de imagen para fotos y vídeos",
+      "Nuevo: Introducción del Modo macro",
+      "Optimización: Ajustes de brillo para rostros humanos en aplicaciones de terceros",
       "Optimización: Calidad de imagen para fotos y vídeos"
+    ],
+    "Otros": [
+      "Rendimiento del sistema optimizado",
+      "Estabilidad y seguridad del sistema mejorada"
     ]
   },
   "logs_pt": {
+    "Sistema": [
+      "Novo: opção para alternar o formato do notch em gota d'água nas configurações de tela cheia"
+    ],
+    "Tela de bloqueio, Barra de status e Área de notificações": [
+      "Corrigido o problema em que a barra de notificações da tela de bloqueio podia não desaparecer ao desbloquear diretamente com impressão digital com a tela desligada"
+    ],
+    "Câmera": [
+      "Novidade: Adicionado modo macro",
+      "Otimização: ajuste de brilho para rostos em apps de terceiros",
+      "Otimização: qualidade de imagem de fotos e vídeos",
+      "Novidade: Adicionado modo macro",
+      "Otimização: ajuste de brilho para rostos em apps de terceiros",
+      "Otimização: qualidade de imagem de fotos e vídeos"
+    ],
     "Outros": [
       "Desempenho do sistema aprimorado",
       "Segurança e estabilidade do sistema aprimoradas"
     ]
   },
   "logs_tr": {
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Ekran kapalıyken parmak iziyle doğrudan kilit açıldığında kilit ekranı bildirim çubuğunun kaybolmaması sorunu düzeltildi"
+    ],
     "Kamera": [
       "Yeni: Makro modu tanıtıyoruz",
       "Optimizasyon: Üçüncü taraf uygulamardaki insan yüzleri için parlaklık ayarları",
+      "Optimizasyon: Fotoğraflar ve videolar için görüntü kalitesi",
+      "Yeni: Makro modu tanıtıyoruz",
+      "Optimizasyon: Üçüncü taraf uygulamardaki insan yüzleri için parlaklık ayarları",
       "Optimizasyon: Fotoğraflar ve videolar için görüntü kalitesi"
+    ],
+    "Diğer": [
+      "Sistem performansı optimize edildi",
+      "Sistem güvenliği ve kararlılığı geliştirildi"
     ]
   },
   "logs_id": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "Sistem": [
+      "Baru: Tombol untuk mengganti bentuk notch tetes air di pengaturan layar penuh"
+    ],
+    "Layar kunci, bar status, layar notifikasi": [
+      "Memperbaiki masalah bilah notifikasi layar kunci yang mungkin tidak hilang saat membuka kunci langsung dengan sidik jari dalam keadaan layar mati"
+    ],
+    "Kamera": [
+      "Baru: Menambahkan mode makro",
+      "Optimasi: penyesuaian kecerahan wajah di aplikasi pihak ketiga",
+      "Optimasi: Kualitas gambar untuk foto dan video",
+      "Baru: Menambahkan mode makro",
+      "Optimasi: penyesuaian kecerahan wajah di aplikasi pihak ketiga",
+      "Optimasi: Kualitas gambar untuk foto dan video"
+    ],
+    "Lainnya": [
+      "Performa sistem dioptimalkan",
+      "Keamanan dan stabilitas sistem ditingkatkan"
     ]
   },
   "logs_vi": {
+    "Hệ thống": [
+      "Mới: tùy chọn chuyển đổi hình dạng notch giọt nước trong cài đặt toàn màn hình"
+    ],
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Đã sửa lỗi thanh thông báo màn hình khóa có thể không biến mất khi mở khóa trực tiếp bằng vân tay trong trạng thái tắt màn hình"
+    ],
+    "Máy ảnh": [
+      "Mới: Bổ sung chế độ chụp cận cảnh",
+      "Tối ưu hóa: độ sáng khuôn mặt trong ứng dụng bên thứ ba",
+      "Tối ưu hóa: Chất lượng hình ảnh cho ảnh và video"
+    ],
     "Khác": [
       "Tối ưu hiệu suất hệ thống",
       "Cải thiện tính ổn định và bảo mật hệ thống"
+    ],
+    "Camera": [
+      "Mới: Bổ sung chế độ chụp cận cảnh",
+      "Tối ưu hóa: độ sáng khuôn mặt trong ứng dụng bên thứ ba",
+      "Tối ưu hóa: Chất lượng hình ảnh cho ảnh và video"
     ]
   },
   "logs_th": {
+    "ระบบ": [
+      "ใหม่: สวิตช์สลับรูปทรงรอยบากแบบหยดน้ำในการตั้งค่าหน้าจอเต็ม"
+    ],
+    "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
+      "แก้ไขปัญหาที่แถบการแจ้งเตือนบนหน้าจอล็อกอาจไม่หายไปเมื่อปลดล็อกด้วยลายนิ้วมือโดยตรงในขณะที่หน้าจอดับ"
+    ],
+    "กล้อง": [
+      "ใหม่: เพิ่มโหมดถ่ายภาพมาโคร",
+      "ปรับปรุง: การปรับความสว่างของใบหน้าในแอปบุคคลที่สาม",
+      "ปรับให้เหมาะสม: คุณภาพภาพของภาพถ่ายและวิดีโอ",
+      "ใหม่: เพิ่มโหมดถ่ายภาพมาโคร",
+      "ปรับปรุง: การปรับความสว่างของใบหน้าในแอปบุคคลที่สาม",
+      "ปรับให้เหมาะสม: คุณภาพภาพของภาพถ่ายและวิดีโอ"
+    ],
     "อื่นๆ": [
       "เพิ่มประสิทธิภาพของระบบ",
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
     ]
   },
   "logs_ar": {
+    "النظام": [
+      "جديد: مفتاح تبديل شكل النوتش على شكل قطرة في إعدادات ملء الشاشة"
+    ],
+    "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
+      "إصلاح مشكلة احتمال عدم اختفاء شريط الإشعارات في شاشة القفل عند إلغاء القفل مباشرةً ببصمة الإصبع أثناء إيقاف الشاشة"
+    ],
+    "كاميرا": [
+      "جديد: إضافة وضع التصوير المقرب (ماكرو)",
+      "تحسين: سطوع الوجوه في تطبيقات الطرف الثالث",
+      "تحسين: جودة الصور في الصور ومقاطع الفيديو"
+    ],
     "أخرى": [
       "تحسين أداء النظام",
       "تحسين أمن واستقرار النظام"
+    ],
+    "الكاميرا": [
+      "جديد: إضافة وضع التصوير المقرب (ماكرو)",
+      "تحسين: سطوع الوجوه في تطبيقات الطرف الثالث",
+      "تحسين: جودة الصور في الصور ومقاطع الفيديو"
     ]
   },
   "logs_in": {
+    "सिस्टम": [
+      "नया: फुल स्क्रीन सेटिंग्स में वॉटरड्रॉप नॉच आकार बदलने का टॉगल"
+    ],
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
+      "स्क्रीन बंद होने पर सीधे फ़िंगरप्रिंट से अनलॉक करते समय लॉक स्क्रीन की सूचना पट्टी के गायब न होने की समस्या ठीक की गई"
+    ],
+    "कैमरा": [
+      "नया: मैक्रो मोड जोड़ा गया",
+      "अनुकूलन: तृतीय-पक्ष ऐप्स में चेहरों की चमक",
+      "अनुकूलन: फ़ोटो और वीडियो की छवि गुणवत्ता",
+      "नया: मैक्रो मोड जोड़ा गया",
+      "अनुकूलन: तृतीय-पक्ष ऐप्स में चेहरों की चमक",
+      "अनुकूलन: फ़ोटो और वीडियो की छवि गुणवत्ता"
+    ],
     "अन्य": [
       "सिस्टम परफ़ॉर्मेंस ऑप्टिमाइज़ किया गया है",
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
     ]
   },
   "logs_ug": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "سىستېما": [
+      "New: An option for smoothening notch curves on full screen devices"
+    ],
+    "كامېرا": [
+      "يېڭى: ماكرو سۈرەتكە تارتىش ئىقتىدارى قوشۇلدى",
+      "ئۈچىنچى تەرەپ ئەپلىرىدە يۈز كۆرۈنۈشىدىكى يورۇقلۇقنى ئەلالاشتۇرۇش",
+      "Optimization: Image quality for photos and videos",
+      "يېڭى: ماكرو سۈرەتكە تارتىش ئىقتىدارى قوشۇلدى",
+      "ئۈچىنچى تەرەپ ئەپلىرىدە يۈز كۆرۈنۈشىدىكى يورۇقلۇقنى ئەلالاشتۇرۇش",
+      "Optimization: Image quality for photos and videos"
+    ],
+    "باشقىلىرى": [
+      "سىستېمىنىڭ مۇقىملىقىنى ئاشۇرۇش",
+      "سىستېما راۋانلىقىنى ئەلالاشتۇرۇش"
     ]
   },
   "logs_bo": {
-    "Other": [
+    "རིམ་ལུགས": [
+      "New: An option for smoothening notch curves on full screen devices"
+    ],
+    "པར་ཆས": [
+      "New: Introducing Macro mode",
+      "Optimization: Brightness adjustments for human faces in third party apps",
+      "Optimization: Image quality for photos and videos"
+    ],
+    "གཞན།": [
       "Optimized system performance",
       "Improved system security and stability"
+    ],
+    "Camera": [
+      "New: Introducing Macro mode",
+      "Optimization: Brightness adjustments for human faces in third party apps",
+      "Optimization: Image quality for photos and videos"
     ]
   }
 }

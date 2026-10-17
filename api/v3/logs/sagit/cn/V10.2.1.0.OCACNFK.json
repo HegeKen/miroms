@@ -4,144 +4,470 @@
       "修复 通过快捷键打开手电筒失效的问题"
     ],
     "相机": [
+      "修复 偶现的自动连拍问题",
+      "修复 偶现的自动连拍问题",
       "修复 偶现的自动连拍问题"
     ],
     "文件管理器": [
+      "修复 搜索界面图标显示异常的问题",
       "修复 搜索界面图标显示异常的问题"
     ],
     "录音机": [
+      "修复 暂停录音后无法及时更新到状态栏的问题",
       "修复 暂停录音后无法及时更新到状态栏的问题"
     ],
     "网络助手": [
+      "新增 日租卡/无限流量卡模式，可设置大王卡、米粉卡、天神卡等套餐类型，流量校正更准确",
       "新增 日租卡/无限流量卡模式，可设置大王卡、米粉卡、天神卡等套餐类型，流量校正更准确"
     ],
     "小米帐号": [
       "修复 登陆页面字体显示错误的问题"
+    ],
+    "其他": [
+      "提高系统的稳定性",
+      "优化系统的流畅度"
     ]
   },
   "logs_en": {
     "Camera": [
-      "Restore Burst shots were made accidentally"
+      "Fix: Burst shots were made accidentally",
+      "Restore Burst shots were made accidentally",
+      "Fix: Burst shots were made accidentally"
     ],
     "File Explorer": [
+      "Restore Icons on the search page were displayed incorrectly",
       "Restore Icons on the search page were displayed incorrectly"
     ],
     "Recorder": [
-      "Restore Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused",
+      "Restore Recording status wasn't updated in the Notification shade when a recording was paused"
     ],
     "Data Usage": [
+      "Add More data plans available",
       "Add More data plans available"
+    ],
+    "Other": [
+      "Optimized system performance",
+      "Improved system security and stability"
     ]
   },
   "logs_zh_tw": {
     "相機": [
+      "修復 偶現的自動連拍問題",
+      "修正 偶發的自動連拍問題",
       "修復 偶現的自動連拍問題"
+    ],
+    "檔案管理員": [
+      "修復搜尋介面圖示顯示異常的問題",
+      "修復搜尋介面圖示顯示異常的問題"
+    ],
+    "錄音機": [
+      "修復 暫停錄音後無法即時更新到狀態欄的問題",
+      "修復 暫停錄音後無法即時更新到狀態欄的問題"
+    ],
+    "網路助手": [
+      "新增 日租卡/無限流量卡模式，可設定大王卡、米粉卡、天神卡等套餐類型，流量校正更準確",
+      "新增 日租卡/無限流量卡模式，可設定大王卡、米粉卡、天神卡等套餐類型，流量校正更準確"
+    ],
+    "其他": [
+      "改善系統的穩定性",
+      "優化系統的流暢度"
     ]
   },
   "logs_ja": {
+    "カメラ": [
+      "偶発的な自動連写の問題を修正",
+      "偶発的な自動連写の問題を修正",
+      "偶発的な自動連写の問題を修正"
+    ],
+    "ファイルマネージャー": [
+      "検索画面のアイコンが正しく表示されない問題を修正",
+      "検索画面のアイコンが正しく表示されない問題を修正"
+    ],
+    "レコーダー": [
+      "修正: 録音を一時停止した際、通知シェードの録音状態が更新されない問題",
+      "修正: 録音を一時停止すると、通知シェードの録音ステータスが更新されませんでした"
+    ],
+    "データ使用量": [
+      "日租カード/無制限データカードモードを追加。大王卡、米粉卡、天神卡などのプランタイプを設定でき、データ通信量の補正がより正確になります",
+      "日租カード/無制限データカードモードを追加。大王卡、米粉卡、天神卡などのプランタイプを設定でき、データ通信量の補正がより正確になります"
+    ],
     "その他": [
       "システムパフォーマンスの最適化",
       "システムのセキュリティと安定性の向上"
     ]
   },
   "logs_ko": {
+    "카메라": [
+      "간헐적인 자동 연사 문제 수정",
+      "간헐적인 자동 연사 문제 수정",
+      "간헐적인 자동 연사 문제 수정"
+    ],
+    "파일 관리자": [
+      "검색 화면의 아이콘이 비정상적으로 표시되는 문제를 수정했습니다",
+      "검색 화면의 아이콘이 비정상적으로 표시되는 문제를 수정했습니다"
+    ],
+    "녹음기": [
+      "수정: 녹음을 일시중지했을 때 알림 창의 녹음 상태가 업데이트되지 않던 문제",
+      "수정: 녹음을 일시 중지하면 알림 창의 녹음 상태가 업데이트되지 않았습니다"
+    ],
+    "데이터 사용량": [
+      "일일 요금제/무제한 데이터 카드 모드 추가. 大王卡, 米粉卡, 天神卡 등 요금제 유형을 설정할 수 있으며 데이터 보정이 더 정확해집니다",
+      "일일 요금제/무제한 데이터 카드 모드 추가. 大王卡, 米粉卡, 天神卡 등 요금제 유형을 설정할 수 있으며 데이터 보정이 더 정확해집니다"
+    ],
     "기타": [
       "시스템 성능 최적화",
       "시스템 보안 및 안정성 개선"
     ]
   },
   "logs_ru": {
+    "Камера": [
+      "Исправлена проблема со случайной автоматической серийной съёмкой",
+      "Исправлена периодическая проблема с автоматической серийной съёмкой",
+      "Исправлена проблема со случайной автоматической серийной съёмкой"
+    ],
+    "Файловый менеджер": [
+      "Исправлена проблема с неправильным отображением значков в интерфейсе поиска",
+      "Исправлена проблема с неправильным отображением значков в интерфейсе поиска"
+    ],
+    "Диктофон": [
+      "Fix: Факт остановки записи не отображался в строке состояния вовремя",
+      "Исправлено: Факт остановки записи не отображался в строке состояния вовремя"
+    ],
+    "Трафик": [
+      "Добавлен режим дневной карты/карты безлимитного трафика; можно выбрать тарифы 大王卡, 米粉卡, 天神卡 и др., коррекция трафика стала точнее",
+      "Добавлен режим дневной карты/карты безлимитного трафика; можно выбрать тарифы 大王卡, 米粉卡, 天神卡 и др., коррекция трафика стала точнее"
+    ],
     "Другое": [
       "Оптимизация производительности системы",
       "Улучшение безопасности и стабильности системы"
     ]
   },
   "logs_uk": {
+    "Камера": [
+      "Виправлено проблему з випадковою автоматичною серійною зйомкою",
+      "Виправлено періодичну проблему з автоматичною серійною зйомкою",
+      "Виправлено проблему з випадковою автоматичною серійною зйомкою"
+    ],
+    "Файловий менеджер": [
+      "Виправлено проблему з неправильним відображенням значків в інтерфейсі пошуку",
+      "Виправлено проблему з неправильним відображенням значків в інтерфейсі пошуку"
+    ],
+    "Диктофон": [
+      "Виправлено: стан запису не оновлювався в панелі сповіщень під час паузи запису",
+      "Виправлено проблему, коли стан запису не оновлювався в рядку стану вчасно після призупинення запису"
+    ],
+    "Передача даних": [
+      "Додано режим денної картки/картки безлімітного трафіку; можна вибрати тарифи 大王卡, 米粉卡, 天神卡 тощо, коригування трафіку точніше",
+      "Додано режим денної картки/картки безлімітного трафіку; можна вибрати тарифи 大王卡, 米粉卡, 天神卡 тощо, коригування трафіку точніше"
+    ],
     "Інше": [
       "Оптимізація продуктивності системи",
       "Покращення безпеки та стабільності системи"
     ]
   },
   "logs_pl": {
+    "Aparat": [
+      "Naprawiono problem z przypadkową automatyczną serią zdjęć",
+      "Naprawiono sporadyczny problem z automatyczną serią zdjęć",
+      "Naprawiono problem z przypadkową automatyczną serią zdjęć"
+    ],
+    "Menedżer plików": [
+      "Naprawiono problem z nieprawidłowym wyświetlaniem ikon w interfejsie wyszukiwania",
+      "Naprawiono problem z nieprawidłowym wyświetlaniem ikon w interfejsie wyszukiwania"
+    ],
+    "Rejestrator": [
+      "Poprawka: stan nagrywania nie był aktualizowany na pasku powiadomień po wstrzymaniu nagrywania",
+      "Naprawiono: Status nagrywania nie był aktualizowany w panelu powiadomień po wstrzymaniu nagrywania"
+    ],
+    "Użycie danych": [
+      "Dodano tryb karty dziennej/karty z nielimitowanym transferem; można ustawić typy planów, np. 大王卡, 米粉卡, 天神卡, a korekta danych jest dokładniejsza",
+      "Dodano tryb karty dziennej/karty z nielimitowanym transferem; można ustawić typy planów, np. 大王卡, 米粉卡, 天神卡, a korekta danych jest dokładniejsza"
+    ],
     "Inne": [
       "Zoptymalizowana wydajność systemu",
       "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
   "logs_de": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "Kamera": [
+      "Problem mit gelegentlichen automatischen Serienaufnahmen behoben",
+      "Gelegentliches Problem mit automatischer Serienaufnahme behoben",
+      "Problem mit gelegentlichen automatischen Serienaufnahmen behoben"
+    ],
+    "Dateimanager": [
+      "Problem mit der falschen Anzeige von Symbolen in der Suchoberfläche behoben",
+      "Problem mit der falschen Anzeige von Symbolen in der Suchoberfläche behoben"
+    ],
+    "Rekorder": [
+      "Behoben: Der Aufnahmestatus wurde in der Benachrichtigungsleiste nicht aktualisiert, wenn eine Aufnahme pausiert wurde",
+      "Behoben: Der Aufnahmestatus wurde bei pausierter Aufnahme nicht in der Benachrichtigungsleiste aktualisiert"
+    ],
+    "Datennutzung": [
+      "Modus für Tageskarte/Unlimited-Datenkarte hinzugefügt; Tariftypen wie 大王卡, 米粉卡, 天神卡 können festgelegt werden, Datenkorrektur genauer",
+      "Modus für Tageskarte/Unlimited-Datenkarte hinzugefügt; Tariftypen wie 大王卡, 米粉卡, 天神卡 können festgelegt werden, Datenkorrektur genauer"
+    ],
+    "Sonstiges": [
+      "Systemleistung optimiert",
+      "Systemsicherheit und -stabilität verbessert"
     ]
   },
   "logs_fr": {
+    "Appareil photo": [
+      "Correction du problème intermittent de rafale automatique",
+      "Correction du problème intermittent de prise de vue en rafale automatique"
+    ],
+    "Gestionnaire de fichiers": [
+      "Correction du problème d'affichage incorrect des icônes dans l'interface de recherche",
+      "Correction du problème d'affichage incorrect des icônes dans l'interface de recherche"
+    ],
+    "Enregistreur": [
+      "Correction : l’état d’enregistrement n’était pas mis à jour dans la barre de notifications lors d’une pause",
+      "Correction : L'état d'enregistrement n'était pas mis à jour dans le panneau de notifications lorsque l'enregistrement était en pause"
+    ],
+    "Utilisation des données": [
+      "Ajout du mode carte journalière/carte data illimitée ; possibilité de définir des forfaits comme 大王卡, 米粉卡, 天神卡, correction des données plus précise",
+      "Ajout du mode carte journalière/carte data illimitée ; possibilité de définir des forfaits comme 大王卡, 米粉卡, 天神卡, correction des données plus précise"
+    ],
     "Autre": [
       "Performances système optimisées",
       "Sécurité et stabilité du système améliorées"
+    ],
+    "Appareil Photo": [
+      "Correction du problème intermittent de rafale automatique"
     ]
   },
   "logs_it": {
+    "Fotocamera": [
+      "Risolto il problema degli scatti in raffica automatici occasionali",
+      "Risolto il problema intermittente della raffica automatica",
+      "Risolto il problema degli scatti in raffica automatici occasionali"
+    ],
+    "Gestione file": [
+      "Risolto il problema di visualizzazione errata delle icone nell'interfaccia di ricerca",
+      "Risolto il problema di visualizzazione errata delle icone nell'interfaccia di ricerca"
+    ],
+    "Registratore": [
+      "Correzione: lo stato di registrazione non veniva aggiornato nella barra delle notifiche quando una registrazione veniva messa in pausa",
+      "Risolto: Lo stato della registrazione non era aggiornato nell'area delle notifiche quando una registrazione veniva messa in pausa"
+    ],
+    "Utilizzo dei dati": [
+      "Aggiunta modalità carta giornaliera/carta dati illimitata; puoi impostare piani come 大王卡, 米粉卡, 天神卡, correzione dati più precisa",
+      "Aggiunta modalità carta giornaliera/carta dati illimitata; puoi impostare piani come 大王卡, 米粉卡, 天神卡, correzione dati più precisa"
+    ],
     "Altro": [
       "Prestazioni di sistema ottimizzate",
       "Maggiore sicurezza e stabilità di sistema"
     ]
   },
   "logs_es": {
+    "Cámara": [
+      "Corregido el problema de ráfaga automática ocasional",
+      "Se corrige el problema intermitente de ráfaga automática",
+      "Corregido el problema de ráfaga automática ocasional"
+    ],
+    "Administrador de archivos": [
+      "Solucionado el problema de visualización incorrecta de los iconos en la interfaz de búsqueda",
+      "Solucionado el problema de visualización incorrecta de los iconos en la interfaz de búsqueda"
+    ],
+    "Grabadora": [
+      "Corrección: El estado de grabación no se actualizaba en la barra de notificaciones al pausar una grabación",
+      "Reparado: El estado de la grabación no fue actualizado en la Barra de notificaciones cuando la grabación fue pausada"
+    ],
+    "Uso de datos": [
+      "Se añade el modo tarjeta diaria/tarjeta de datos ilimitados; permite configurar planes como 大王卡, 米粉卡, 天神卡, corrección de datos más precisa",
+      "Se añade el modo tarjeta diaria/tarjeta de datos ilimitados; permite configurar planes como 大王卡, 米粉卡, 天神卡, corrección de datos más precisa"
+    ],
     "Otros": [
       "Rendimiento del sistema optimizado",
       "Estabilidad y seguridad del sistema mejorada"
     ]
   },
   "logs_pt": {
+    "Câmera": [
+      "Corrigido o problema de disparo em rajada automático ocasional",
+      "Corrigido o problema intermitente de captura em rajada automática",
+      "Corrigido o problema de disparo em rajada automático ocasional"
+    ],
+    "Gerenciador de arquivos": [
+      "Corrigido o problema de exibição incorreta dos ícones na interface de pesquisa",
+      "Corrigido o problema de exibição incorreta dos ícones na interface de pesquisa"
+    ],
+    "Gravador": [
+      "Correção: o estado da gravação não era atualizado na barra de notificações ao pausar uma gravação",
+      "Corrigido o problema de o estado da gravação não ser atualizado na barra de status em tempo hábil após pausar a gravação"
+    ],
+    "Uso de dados": [
+      "Adicionado modo cartão diário/cartão de dados ilimitados; permite definir planos como 大王卡, 米粉卡, 天神卡, correção de dados mais precisa",
+      "Adicionado modo cartão diário/cartão de dados ilimitados; permite definir planos como 大王卡, 米粉卡, 天神卡, correção de dados mais precisa"
+    ],
     "Outros": [
       "Desempenho do sistema aprimorado",
       "Segurança e estabilidade do sistema aprimoradas"
     ]
   },
   "logs_tr": {
+    "Kamera": [
+      "Ara sıra otomatik seri çekim sorunu düzeltildi",
+      "Ara sıra oluşan otomatik seri çekim sorunu giderildi",
+      "Ara sıra otomatik seri çekim sorunu düzeltildi"
+    ],
+    "Dosya Yöneticisi": [
+      "Arama arayüzündeki simgelerin yanlış görüntülenmesi sorunu giderildi",
+      "Arama arayüzündeki simgelerin yanlış görüntülenmesi sorunu giderildi"
+    ],
+    "Kayıt Cihazı": [
+      "Düzeltme: Kayıt duraklatıldığında kayıt durumu bildirim çubuğunda güncellenmiyordu",
+      "Onarım: Bir kayıt durdurulduğunda, kayıt durumu Bildirim çubuğunda güncellenmedi"
+    ],
+    "Veri kullanımı": [
+      "Günlük kart/sınırsız veri kartı modu eklendi; 大王卡, 米粉卡, 天神卡 gibi paket türleri ayarlanabilir, veri düzeltmesi daha doğru",
+      "Günlük kart/sınırsız veri kartı modu eklendi; 大王卡, 米粉卡, 天神卡 gibi paket türleri ayarlanabilir, veri düzeltmesi daha doğru"
+    ],
     "Diğer": [
       "Sistem performansı optimize edildi",
       "Sistem güvenliği ve kararlılığı geliştirildi"
     ]
   },
   "logs_id": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "Kamera": [
+      "Memperbaiki masalah burst shot otomatis yang kadang terjadi",
+      "Memperbaiki masalah pengambilan foto burst otomatis yang terkadang terjadi",
+      "Memperbaiki masalah burst shot otomatis yang kadang terjadi"
+    ],
+    "Pengelola File": [
+      "Memperbaiki masalah ikon di antarmuka pencarian yang ditampilkan secara tidak normal",
+      "Memperbaiki masalah ikon di antarmuka pencarian yang ditampilkan secara tidak normal"
+    ],
+    "Perekam": [
+      "Perbaikan: Status perekaman tidak diperbarui di bilah notifikasi saat perekaman dijeda",
+      "Memperbaiki masalah status perekaman yang tidak diperbarui tepat waktu di bilah status setelah perekaman dijeda"
+    ],
+    "Penggunaan data": [
+      "Menambahkan mode kartu harian/kartu data tak terbatas; dapat mengatur jenis paket seperti 大王卡, 米粉卡, 天神卡, koreksi data lebih akurat",
+      "Menambahkan mode kartu harian/kartu data tak terbatas; dapat mengatur jenis paket seperti 大王卡, 米粉卡, 天神卡, koreksi data lebih akurat"
+    ],
+    "Lainnya": [
+      "Performa sistem dioptimalkan",
+      "Keamanan dan stabilitas sistem ditingkatkan"
     ]
   },
   "logs_vi": {
+    "Máy ảnh": [
+      "Sửa lỗi đôi khi tự động chụp liên tiếp",
+      "Khắc phục sự cố chụp liên tiếp tự động không thường xuyên"
+    ],
+    "Trình quản lý tệp": [
+      "Đã sửa lỗi biểu tượng trong giao diện tìm kiếm hiển thị không đúng",
+      "Đã sửa lỗi biểu tượng trong giao diện tìm kiếm hiển thị không đúng"
+    ],
+    "Máy ghi âm": [
+      "Đã sửa: Trạng thái ghi âm không được cập nhật kịp thời trên thanh thông báo khi tạm dừng ghi âm",
+      "Sửa lỗi trạng thái ghi âm không được cập nhật kịp thời trên thanh trạng thái sau khi tạm dừng ghi âm"
+    ],
+    "Sử dụng dữ liệu": [
+      "Thêm chế độ thẻ ngày/thẻ dữ liệu không giới hạn; có thể đặt loại gói như 大王卡, 米粉卡, 天神卡, hiệu chỉnh dữ liệu chính xác hơn",
+      "Thêm chế độ thẻ ngày/thẻ dữ liệu không giới hạn; có thể đặt loại gói như 大王卡, 米粉卡, 天神卡, hiệu chỉnh dữ liệu chính xác hơn"
+    ],
     "Khác": [
       "Tối ưu hiệu suất hệ thống",
       "Cải thiện tính ổn định và bảo mật hệ thống"
+    ],
+    "Camera": [
+      "Sửa lỗi đôi khi tự động chụp liên tiếp"
     ]
   },
   "logs_th": {
+    "กล้อง": [
+      "แก้ไขปัญหาการถ่ายภาพต่อเนื่องอัตโนมัติเป็นครั้งคราว",
+      "แก้ไขปัญหาการถ่ายภาพต่อเนื่องอัตโนมัติที่เกิดขึ้นเป็นครั้งคราว",
+      "แก้ไขปัญหาการถ่ายภาพต่อเนื่องอัตโนมัติเป็นครั้งคราว"
+    ],
+    "ตัวจัดการไฟล์": [
+      "แก้ไขปัญหาการแสดงไอคอนในหน้าค้นหาผิดปกติ",
+      "แก้ไขปัญหาการแสดงไอคอนในหน้าค้นหาผิดปกติ"
+    ],
+    "เครื่องบันทึกเสียง": [
+      "แก้ไข: สถานะการบันทึกเสียงไม่ได้รับการอัปเดตในแถบการแจ้งเตือนเมื่อหยุดการบันทึกชั่วคราว",
+      "แก้ไขปัญหาสถานะการบันทึกเสียงไม่ได้รับการอัปเดตในแถบสถานะอย่างทันท่วงทีหลังจากหยุดการบันทึกชั่วคราว"
+    ],
+    "การใช้ข้อมูล": [
+      "เพิ่มโหมดการ์ดรายวัน/การ์ดข้อมูลไม่จำกัด สามารถตั้งค่าประเภทแพ็กเกจ เช่น 大王卡, 米粉卡, 天神卡 การแก้ไขข้อมูลแม่นยำขึ้น",
+      "เพิ่มโหมดการ์ดรายวัน/การ์ดข้อมูลไม่จำกัด สามารถตั้งค่าประเภทแพ็กเกจ เช่น 大王卡, 米粉卡, 天神卡 การแก้ไขข้อมูลแม่นยำขึ้น"
+    ],
     "อื่นๆ": [
       "เพิ่มประสิทธิภาพของระบบ",
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
     ]
   },
   "logs_ar": {
+    "كاميرا": [
+      "إصلاح مشكلة التصوير المتتابع التلقائي العرضي",
+      "إصلاح مشكلة التصوير المتتابع التلقائي العرضية"
+    ],
+    "مدير الملفات": [
+      "تم إصلاح مشكلة عرض الأيقونات بشكل غير صحيح في واجهة البحث",
+      "تم إصلاح مشكلة عرض الأيقونات بشكل غير صحيح في واجهة البحث"
+    ],
+    "مسجل": [
+      "إصلاح: لم يتم تحديث حالة التسجيل في شريط الإشعارات عند إيقاف التسجيل مؤقتًا",
+      "إصلاح مشكلة عدم تحديث حالة التسجيل في شريط الحالة في الوقت المناسب بعد إيقاف التسجيل مؤقتًا"
+    ],
+    "استخدام البيانات": [
+      "إضافة وضع بطاقة يومية/بطاقة بيانات غير محدودة؛ يمكن تعيين أنواع خطط مثل 大王卡 و米粉卡 و天神卡، وتصحيح البيانات أكثر دقة",
+      "إضافة وضع بطاقة يومية/بطاقة بيانات غير محدودة؛ يمكن تعيين أنواع خطط مثل 大王卡 و米粉卡 و天神卡، وتصحيح البيانات أكثر دقة"
+    ],
     "أخرى": [
       "تحسين أداء النظام",
       "تحسين أمن واستقرار النظام"
+    ],
+    "الكاميرا": [
+      "إصلاح مشكلة التصوير المتتابع التلقائي العرضي"
     ]
   },
   "logs_in": {
+    "कैमरा": [
+      "कभी-कभार स्वचालित बर्स्ट शॉट की समस्या ठीक की गई",
+      "कभी-कभार होने वाली स्वचालित बर्स्ट शॉट समस्या ठीक की गई",
+      "कभी-कभार स्वचालित बर्स्ट शॉट की समस्या ठीक की गई"
+    ],
+    "फ़ाइल प्रबंधक": [
+      "खोज इंटरफ़ेस में आइकन के गलत प्रदर्शित होने की समस्या ठीक की गई",
+      "खोज इंटरफ़ेस में आइकन के गलत प्रदर्शित होने की समस्या ठीक की गई"
+    ],
+    "रिकॉर्डर": [
+      "समस्या ठीक की गई: रिकॉर्डिंग पॉज़ करने पर नोटिफ़िकेशन शेड में स्थिति तुरंत अपडेट नहीं होती थी",
+      "रिकॉर्डिंग को पॉज़ करने के बाद स्टेटस बार में रिकॉर्डिंग स्थिति समय पर अपडेट न होने की समस्या ठीक की गई"
+    ],
+    "डेटा उपयोग": [
+      "दैनिक कार्ड/असीमित डेटा कार्ड मोड जोड़ा गया; 大王卡, 米粉卡, 天神卡 जैसे प्लान प्रकार सेट किए जा सकते हैं, डेटा सुधार अधिक सटीक",
+      "दैनिक कार्ड/असीमित डेटा कार्ड मोड जोड़ा गया; 大王卡, 米粉卡, 天神卡 जैसे प्लान प्रकार सेट किए जा सकते हैं, डेटा सुधार अधिक सटीक"
+    ],
     "अन्य": [
       "सिस्टम परफ़ॉर्मेंस ऑप्टिमाइज़ किया गया है",
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
     ]
   },
   "logs_ug": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "ھۆججەت باشقۇرغۇچ": [
+      "ئىزدەش كۆرۈنمە يۈزىدىكى سىنبەلگىلەرنىڭ خاتا كۆرسىتىلىش مەسىلىسى تۈزىتىلدى",
+      "ئىزدەش كۆرۈنمە يۈزىدىكى سىنبەلگىلەرنىڭ خاتا كۆرسىتىلىش مەسىلىسى تۈزىتىلدى"
+    ],
+    "ئاۋاز ئالغۇ": [
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused",
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
+    ],
+    "باشقىلىرى": [
+      "سىستېمىنىڭ مۇقىملىقىنى ئاشۇرۇش",
+      "سىستېما راۋانلىقىنى ئەلالاشتۇرۇش"
     ]
   },
   "logs_bo": {
-    "Other": [
+    "སྒྲ་འཇུག་ཆས": [
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused",
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
+    ],
+    "གཞན།": [
       "Optimized system performance",
       "Improved system security and stability"
     ]

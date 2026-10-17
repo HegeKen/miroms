@@ -3,6 +3,22 @@
     "其他": [
       "提高系统的稳定性",
       "优化系统的流畅度"
+    ],
+    "系統": [
+      "新增 支持通过人脸解锁应用",
+      "修复 更新Android安全补丁"
+    ],
+    "电话": [
+      "修复 视频通话下功能区“切换摄像头”可能显示不完整的问题",
+      "修复 电话会议时无法发送短信"
+    ],
+    "相机": [
+      "修复 从前置进入人像模式时HDR未关闭导致相机故障的问题",
+      "修复 短影片录影中退出相机不能储存的问题"
+    ],
+    "设置": [
+      "修复 设定手机名称为最大长度，热点无法开启",
+      "修复 通知无法关闭悬浮"
     ]
   },
   "logs_en": {
@@ -12,12 +28,16 @@
     ]
   },
   "logs_zh_tw": {
+    "其他": [
+      "改善系統的穩定性",
+      "優化系統的流暢度"
+    ],
     "系統": [
       "新增 支援人臉辨識解鎖",
       "修復 更新Android 安全性修補程式等級"
     ],
     "電話": [
-      "修復 視訊電話下功能區^切換鏡頭^可能顯示不完整的問題",
+      "修復 視訊電話下功能區'切換鏡頭'可能顯示不完整的問題",
       "修復 電話會議時無法發送簡訊"
     ],
     "相機": [
@@ -30,327 +50,399 @@
     ]
   },
   "logs_ja": {
-    "System": [
-      "New: Face unlock support",
-      "Fix: Updated Android Security Patch"
+    "その他": [
+      "システムパフォーマンスの最適化",
+      "システムのセキュリティと安定性の向上"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "システム": [
+      "追加: 顔認証によるアプリのロック解除に対応",
+      "修正: Android セキュリティ パッチを更新"
     ],
-    "Camera": [
-      "Fix: Camera crashed after switching to Portrait mode on the front camera with HDR on",
-      "Fix: Couldn^t save short videos if Camera was closed during shooting"
+    "電話": [
+      "ビデオ通話中に機能エリアの「カメラを切り替え」が不完全に表示される場合がある問題を修正",
+      "電話会議中にSMSを送信できない問題を修正しました。"
     ],
-    "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name reached its character limit",
-      "Fix: Couldn^t restrict floating notifications"
+    "カメラ": [
+      "フロントカメラからポートレートモードに入るときにHDRがオフにならず、カメラが故障する問題を修正",
+      "短い動画の録画中にカメラを終了すると保存できない問題を修正"
+    ],
+    "設定": [
+      "端末名を最大長に設定するとホットスポットを有効にできなかった問題を修正",
+      "通知からフローティングウィンドウを閉じられない問題を修正"
     ]
   },
   "logs_ko": {
-    "System": [
-      "New: Face unlock support",
-      "Fix: Updated Android Security Patch"
+    "기타": [
+      "시스템 성능 최적화",
+      "시스템 보안 및 안정성 개선"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "시스템": [
+      "추가: 얼굴 인식으로 앱 잠금 해제 지원",
+      "수정: Android 보안 패치 업데이트"
     ],
-    "Camera": [
-      "Fix: Camera crashed after switching to Portrait mode on the front camera with HDR on",
-      "Fix: Couldn^t save short videos if Camera was closed during shooting"
+    "전화": [
+      "영상 통화 중 기능 영역의 \"카메라 전환\"이 불완전하게 표시될 수 있는 문제를 수정했습니다",
+      "전화 회의 중 SMS를 보낼 수 없는 문제를 수정했습니다."
     ],
-    "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name reached its character limit",
-      "Fix: Couldn^t restrict floating notifications"
+    "카메라": [
+      "전면 카메라에서 인물 모드로 전환할 때 HDR이 꺼지지 않아 카메라 오류가 발생하는 문제를 수정했습니다",
+      "짧은 동영상 녹화 중 카메라를 종료하면 저장되지 않는 문제 수정"
+    ],
+    "설정": [
+      "휴대폰 이름을 최대 길이로 설정하면 핫스팟을 켤 수 없던 문제 수정",
+      "알림에서 플로팅 창을 닫을 수 없는 문제를 수정"
     ]
   },
   "logs_ru": {
-    "System": [
-      "New: Face unlock support",
-      "Fix: Updated Android Security Patch"
+    "Другое": [
+      "Оптимизация производительности системы",
+      "Улучшение безопасности и стабильности системы"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Система": [
+      "Добавлено: разблокировка приложений с помощью распознавания лица",
+      "Исправлено: обновлён патч безопасности Android"
     ],
-    "Camera": [
-      "Fix: Camera crashed after switching to Portrait mode on the front camera with HDR on",
-      "Fix: Couldn^t save short videos if Camera was closed during shooting"
+    "Телефон": [
+      "Исправлена проблема, из-за которой «Переключить камеру» в области функций во время видеовызовов мог отображаться не полностью",
+      "Исправлена проблема, из-за которой не удавалось отправить SMS во время конференц-звонков."
     ],
-    "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name reached its character limit",
-      "Fix: Couldn^t restrict floating notifications"
+    "Камера": [
+      "Исправлена неисправность камеры из-за того, что HDR не отключался при переходе в режим «Портрет» с фронтальной камеры",
+      "Исправлена проблема с невозможностью сохранения при выходе из камеры во время записи короткого видео"
+    ],
+    "Настройки": [
+      "Исправлено: не удавалось включить точку доступа, если имя телефона имело максимальную длину.",
+      "Исправлено: невозможно закрыть плавающее окно из уведомления"
     ]
   },
   "logs_uk": {
-    "System": [
-      "New: Face unlock support",
-      "Fix: Updated Android Security Patch"
+    "Інше": [
+      "Оптимізація продуктивності системи",
+      "Покращення безпеки та стабільності системи"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Система": [
+      "Додано: підтримка розблокування застосунків за допомогою розпізнавання обличчя",
+      "Виправлено: оновлено патч безпеки Android"
     ],
-    "Camera": [
-      "Fix: Camera crashed after switching to Portrait mode on the front camera with HDR on",
-      "Fix: Couldn^t save short videos if Camera was closed during shooting"
+    "Телефон": [
+      "Виправлено проблему, через яку «Перемкнути камеру» в області функцій під час відеовикликів могло відображатися не повністю",
+      "Виправлено проблему, через яку не вдавалося надіслати SMS під час конференц-дзвінків."
     ],
-    "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name reached its character limit",
-      "Fix: Couldn^t restrict floating notifications"
+    "Камера": [
+      "Виправлено несправність камери через те, що HDR не вимикався під час переходу в режим «Портрет» із фронтальної камери",
+      "Виправлено проблему, через яку не вдавалося зберегти під час виходу з камери під час запису короткого відео"
+    ],
+    "Налаштування": [
+      "Виправлено: не вдавалося ввімкнути точку доступу, якщо ім’я телефону мало максимальну довжину.",
+      "Виправлено: неможливо закрити плаваюче вікно зі сповіщення"
     ]
   },
   "logs_pl": {
+    "Inne": [
+      "Zoptymalizowana wydajność systemu",
+      "Większe bezpieczeństwo i stabilność systemu"
+    ],
     "System": [
-      "New: Face unlock support",
-      "Fix: Updated Android Security Patch"
+      "Nowość: odblokowywanie aplikacji przez rozpoznawanie twarzy",
+      "Naprawiono: zaktualizowano poprawkę zabezpieczeń Android"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Telefon": [
+      "Naprawiono problem, w którym „Przełącz kamerę” w obszarze funkcji podczas połączeń wideo mógł być wyświetlany niekompletnie",
+      "Naprawiono problem z wysyłaniem SMS-ów podczas konferencji telefonicznych."
     ],
-    "Camera": [
-      "Fix: Camera crashed after switching to Portrait mode on the front camera with HDR on",
-      "Fix: Couldn^t save short videos if Camera was closed during shooting"
+    "Aparat": [
+      "Naprawiono problem z aparatem powodowany przez niewyłączony HDR przy przechodzeniu do trybu Portret z przedniego aparatu",
+      "Naprawiono problem z zapisem po wyjściu z aparatu podczas nagrywania krótkiego wideo"
     ],
-    "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name reached its character limit",
-      "Fix: Couldn^t restrict floating notifications"
+    "Ustawienia": [
+      "Naprawiono: nie można było włączyć hotspota, gdy nazwa telefonu miała maksymalną długość.",
+      "Naprawiono: nie można było zamknąć okna pływającego z powiadomienia"
     ]
   },
   "logs_de": {
+    "Sonstiges": [
+      "Systemleistung optimiert",
+      "Systemsicherheit und -stabilität verbessert"
+    ],
     "System": [
-      "New: Face unlock support",
-      "Fix: Updated Android Security Patch"
+      "Neu: Apps per Gesichtserkennung entsperren",
+      "Behoben: Android-Sicherheitspatch aktualisiert"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Telefon": [
+      "Behebung eines Problems, bei dem „Kamera wechseln“ im Funktionsbereich während Videoanrufen möglicherweise unvollständig angezeigt wurde",
+      "Behoben: SMS konnte während Telefonkonferenzen nicht gesendet werden."
     ],
-    "Camera": [
-      "Fix: Camera crashed after switching to Portrait mode on the front camera with HDR on",
-      "Fix: Couldn^t save short videos if Camera was closed during shooting"
+    "Kamera": [
+      "Behoben: Kamerafehler, weil HDR beim Wechsel von der Frontkamera in den Porträtmodus nicht deaktiviert wurde",
+      "Problem behoben, dass beim Verlassen der Kamera während einer Kurzvideoaufnahme nicht gespeichert werden konnte"
     ],
-    "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name reached its character limit",
-      "Fix: Couldn^t restrict floating notifications"
+    "Einstellungen": [
+      "Behoben: Der Hotspot konnte nicht aktiviert werden, wenn der Gerätename auf die maximale Länge gesetzt war.",
+      "Behoben: Schwebefenster ließ sich nicht über die Benachrichtigung schließen"
     ]
   },
   "logs_fr": {
-    "System": [
-      "New: Face unlock support",
-      "Fix: Updated Android Security Patch"
+    "Autre": [
+      "Performances système optimisées",
+      "Sécurité et stabilité du système améliorées"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Système": [
+      "Nouveau : déverrouillage des applications par reconnaissance faciale",
+      "Corrigé : mise à jour du correctif de sécurité Android"
     ],
-    "Camera": [
-      "Fix: Camera crashed after switching to Portrait mode on the front camera with HDR on",
-      "Fix: Couldn^t save short videos if Camera was closed during shooting"
+    "Téléphone": [
+      "Correction d’un problème où « Changer d’appareil photo » dans la zone de fonctions pendant les appels vidéo pouvait s’afficher de manière incomplète",
+      "Correction du problème empêchant l’envoi de SMS lors des conférences téléphoniques."
     ],
-    "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name reached its character limit",
-      "Fix: Couldn^t restrict floating notifications"
+    "Appareil photo": [
+      "Correction du dysfonctionnement de l’appareil photo dû au fait que HDR n’était pas désactivé lors du passage de la caméra frontale au mode Portrait",
+      "Correction du problème empêchant l'enregistrement lors de la sortie de l'appareil photo pendant l'enregistrement d'une courte vidéo"
+    ],
+    "Paramètres": [
+      "Correction : le point d'accès ne pouvait pas être activé lorsque le nom du téléphone était défini sur la longueur maximale.",
+      "Corrigé : impossible de fermer la fenêtre flottante depuis la notification"
     ]
   },
   "logs_it": {
-    "System": [
-      "New: Face unlock support",
-      "Fix: Updated Android Security Patch"
+    "Altro": [
+      "Prestazioni di sistema ottimizzate",
+      "Maggiore sicurezza e stabilità di sistema"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Sistema": [
+      "Novità: sblocco delle app tramite riconoscimento facciale",
+      "Corretto: aggiornamento della patch di sicurezza Android"
     ],
-    "Camera": [
-      "Fix: Camera crashed after switching to Portrait mode on the front camera with HDR on",
-      "Fix: Couldn^t save short videos if Camera was closed during shooting"
+    "Telefono": [
+      "Risolto un problema per cui \"Cambia fotocamera\" nell'area funzioni durante le videochiamate poteva essere visualizzato in modo incompleto",
+      "Risolto il problema che impediva l'invio di SMS durante le chiamate conference."
     ],
-    "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name reached its character limit",
-      "Fix: Couldn^t restrict floating notifications"
+    "Fotocamera": [
+      "Risolto il problema della fotocamera causato dal mancato spegnimento dell'HDR quando si passa alla modalità Ritratto dalla fotocamera frontale",
+      "Corretto il problema che impediva il salvataggio all'uscita dalla fotocamera durante la registrazione di un video breve"
+    ],
+    "Impostazioni": [
+      "Corretto: non era possibile attivare l'hotspot quando il nome del telefono era impostato alla lunghezza massima.",
+      "Corretto: impossibile chiudere la finestra flottante dalla notifica"
     ]
   },
   "logs_es": {
-    "System": [
-      "New: Face unlock support",
-      "Fix: Updated Android Security Patch"
+    "Otros": [
+      "Rendimiento del sistema optimizado",
+      "Estabilidad y seguridad del sistema mejorada"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Sistema": [
+      "Nuevo: Desbloqueo de apps con reconocimiento facial",
+      "Corregido: parche de seguridad de Android actualizado"
     ],
-    "Camera": [
-      "Fix: Camera crashed after switching to Portrait mode on the front camera with HDR on",
-      "Fix: Couldn^t save short videos if Camera was closed during shooting"
+    "Teléfono": [
+      "Se ha corregido un problema por el que \"Cambiar cámara\" en el área de funciones durante las videollamadas podía mostrarse de forma incompleta",
+      "Se ha corregido el problema que impedía enviar SMS durante las llamadas de conferencia."
     ],
-    "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name reached its character limit",
-      "Fix: Couldn^t restrict floating notifications"
+    "Cámara": [
+      "Se corrigió el fallo de la cámara porque HDR no se desactivaba al entrar en modo Retrato desde la cámara frontal",
+      "Se ha corregido el problema que impedía guardar al salir de la cámara durante la grabación de un vídeo corto"
+    ],
+    "Ajustes": [
+      "Corregido: no se podía activar el punto de acceso cuando el nombre del teléfono se establecía en la longitud máxima.",
+      "Corregido: no se podía cerrar la ventana flotante desde la notificación"
     ]
   },
   "logs_pt": {
-    "System": [
-      "New: Face unlock support",
-      "Fix: Updated Android Security Patch"
+    "Outros": [
+      "Desempenho do sistema aprimorado",
+      "Segurança e estabilidade do sistema aprimoradas"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Sistema": [
+      "Novo: desbloqueio de apps por reconhecimento facial",
+      "Corrigido: atualização do patch de segurança do Android"
     ],
-    "Camera": [
-      "Fix: Camera crashed after switching to Portrait mode on the front camera with HDR on",
-      "Fix: Couldn^t save short videos if Camera was closed during shooting"
+    "Telefone": [
+      "Corrigido o problema em que \"Alternar câmera\" na área de funções durante chamadas de vídeo podia ser exibido de forma incompleta",
+      "Corrigido o problema que impedia o envio de SMS durante chamadas em conferência."
     ],
-    "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name reached its character limit",
-      "Fix: Couldn^t restrict floating notifications"
+    "Câmera": [
+      "Corrigido o problema da câmera causado pelo HDR não ser desativado ao entrar no modo Retrato pela câmera frontal",
+      "Corrigido o problema de não ser possível guardar ao sair da câmara durante a gravação de vídeo curto"
+    ],
+    "Configurações": [
+      "Corrigido: não era possível ativar o hotspot quando o nome do telefone era definido para o comprimento máximo.",
+      "Corrigido: não era possível fechar a janela flutuante pela notificação"
     ]
   },
   "logs_tr": {
-    "System": [
-      "New: Face unlock support",
-      "Fix: Updated Android Security Patch"
+    "Diğer": [
+      "Sistem performansı optimize edildi",
+      "Sistem güvenliği ve kararlılığı geliştirildi"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Sistem": [
+      "Yeni: Uygulamaların yüz tanımayla kilidini açma desteği",
+      "Düzeltildi: Android güvenlik yaması güncellendi"
     ],
-    "Camera": [
-      "Fix: Camera crashed after switching to Portrait mode on the front camera with HDR on",
-      "Fix: Couldn^t save short videos if Camera was closed during shooting"
+    "Telefon": [
+      "Görüntülü aramalar sırasında işlev alanındaki \"Kamerayı değiştir\" öğesinin eksik görüntülenebilmesi sorunu giderildi",
+      "Konferans görüşmeleri sırasında SMS gönderilememesi sorunu giderildi."
     ],
-    "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name reached its character limit",
-      "Fix: Couldn^t restrict floating notifications"
+    "Kamera": [
+      "Ön kameradan Portre moduna geçerken HDR kapatılmadığı için kameranın arızalanması sorunu düzeltildi",
+      "Kısa video kaydı sırasında kameradan çıkıldığında kaydedilememe sorunu giderildi"
+    ],
+    "Ayarlar": [
+      "Düzeltildi: Telefon adı maksimum uzunluğa ayarlandığında hotspot açılamıyordu.",
+      "Düzeltildi: bildirimden yüzen pencere kapatılamıyordu"
     ]
   },
   "logs_id": {
-    "System": [
-      "New: Face unlock support",
-      "Fix: Updated Android Security Patch"
+    "Lainnya": [
+      "Performa sistem dioptimalkan",
+      "Keamanan dan stabilitas sistem ditingkatkan"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Sistem": [
+      "Baru: Dukungan membuka kunci aplikasi melalui pengenalan wajah",
+      "Perbaikan: pembaruan patch keamanan Android"
     ],
-    "Camera": [
-      "Fix: Camera crashed after switching to Portrait mode on the front camera with HDR on",
-      "Fix: Couldn^t save short videos if Camera was closed during shooting"
+    "Telepon": [
+      "Memperbaiki masalah di mana \"Ganti kamera\" di area fungsi selama panggilan video mungkin ditampilkan tidak lengkap",
+      "Memperbaiki masalah tidak dapat mengirim SMS saat panggilan konferensi."
     ],
-    "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name reached its character limit",
-      "Fix: Couldn^t restrict floating notifications"
+    "Kamera": [
+      "Memperbaiki masalah kamera karena HDR tidak dinonaktifkan saat masuk mode Potret dari kamera depan",
+      "Memperbaiki masalah tidak dapat menyimpan saat keluar dari kamera selama merekam video pendek"
+    ],
+    "Pengaturan": [
+      "Memperbaiki: hotspot tidak dapat diaktifkan saat nama ponsel diatur ke panjang maksimum.",
+      "Diperbaiki: jendela mengambang tidak dapat ditutup dari notifikasi"
     ]
   },
   "logs_vi": {
-    "System": [
-      "New: Face unlock support",
-      "Fix: Updated Android Security Patch"
+    "Khác": [
+      "Tối ưu hiệu suất hệ thống",
+      "Cải thiện tính ổn định và bảo mật hệ thống"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Hệ thống": [
+      "Mới: Hỗ trợ mở khóa ứng dụng bằng nhận diện khuôn mặt",
+      "Đã sửa: cập nhật bản vá bảo mật Android"
     ],
-    "Camera": [
-      "Fix: Camera crashed after switching to Portrait mode on the front camera with HDR on",
-      "Fix: Couldn^t save short videos if Camera was closed during shooting"
+    "Điện thoại": [
+      "Đã khắc phục sự cố \"Chuyển camera\" trong khu vực chức năng khi gọi video có thể hiển thị không đầy đủ",
+      "Đã khắc phục sự cố không thể gửi SMS trong cuộc gọi hội nghị."
     ],
-    "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name reached its character limit",
-      "Fix: Couldn^t restrict floating notifications"
+    "Máy ảnh": [
+      "Đã sửa lỗi camera gặp sự cố do HDR không được tắt khi chuyển từ camera trước sang chế độ Chân dung",
+      "Đã khắc phục sự cố không thể lưu khi thoát khỏi camera trong lúc quay video ngắn"
+    ],
+    "Cài đặt": [
+      "Đã sửa: không thể bật hotspot khi tên điện thoại được đặt ở độ dài tối đa.",
+      "Đã sửa: không thể đóng cửa sổ nổi từ thông báo"
     ]
   },
   "logs_th": {
-    "System": [
-      "New: Face unlock support",
-      "Fix: Updated Android Security Patch"
+    "อื่นๆ": [
+      "เพิ่มประสิทธิภาพของระบบ",
+      "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "ระบบ": [
+      "เพิ่ม: รองรับการปลดล็อกแอปด้วยการจดจำใบหน้า",
+      "แก้ไข: อัปเดตแพตช์ความปลอดภัย Android"
     ],
-    "Camera": [
-      "Fix: Camera crashed after switching to Portrait mode on the front camera with HDR on",
-      "Fix: Couldn^t save short videos if Camera was closed during shooting"
+    "โทรศัพท์": [
+      "แก้ไขปัญหาที่ \"สลับกล้อง\" ในพื้นที่ฟังก์ชันระหว่างการโทรวิดีโออาจแสดงไม่สมบูรณ์",
+      "แก้ไขปัญหาไม่สามารถส่ง SMS ระหว่างการประชุมทางโทรศัพท์ได้"
     ],
-    "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name reached its character limit",
-      "Fix: Couldn^t restrict floating notifications"
+    "กล้อง": [
+      "แก้ไขปัญหากล้องขัดข้องเนื่องจาก HDR ไม่ปิดเมื่อเข้าสู่โหมดภาพบุคคลจากกล้องหน้า",
+      "แก้ไขปัญหาที่ไม่สามารถบันทึกได้เมื่อออกจากกล้องระหว่างการบันทึกวิดีโอสั้น"
+    ],
+    "การตั้งค่า": [
+      "แก้ไข: ไม่สามารถเปิดฮอตสปอตได้เมื่อตั้งชื่อโทรศัพท์เป็นความยาวสูงสุด",
+      "แก้ไข: ไม่สามารถปิดหน้าต่างลอยจากการแจ้งเตือน"
     ]
   },
   "logs_ar": {
-    "System": [
-      "New: Face unlock support",
-      "Fix: Updated Android Security Patch"
+    "أخرى": [
+      "تحسين أداء النظام",
+      "تحسين أمن واستقرار النظام"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "النظام": [
+      "إضافة: دعم فتح التطبيقات عبر التعرف على الوجه",
+      "إصلاح: تحديث تصحيح الأمان في Android"
     ],
-    "Camera": [
-      "Fix: Camera crashed after switching to Portrait mode on the front camera with HDR on",
-      "Fix: Couldn^t save short videos if Camera was closed during shooting"
+    "الهاتف": [
+      "إصلاح مشكلة قد تؤدي إلى عرض زر \"تبديل الكاميرا\" في منطقة الوظائف أثناء مكالمات الفيديو بشكل غير مكتمل",
+      "إصلاح مشكلة عدم إمكانية إرسال رسائل SMS أثناء المكالمات الجماعية."
     ],
-    "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name reached its character limit",
-      "Fix: Couldn^t restrict floating notifications"
+    "كاميرا": [
+      "إصلاح مشكلة تعطل الكاميرا بسبب عدم إيقاف HDR عند الانتقال إلى وضع البورتريه من الكاميرا الأمامية",
+      "إصلاح مشكلة عدم إمكانية الحفظ عند الخروج من الكاميرا أثناء تسجيل فيديو قصير"
+    ],
+    "الإعدادات": [
+      "تم الإصلاح: تعذّر تشغيل نقطة الاتصال عند ضبط اسم الهاتف على الحد الأقصى للطول.",
+      "تم الإصلاح: تعذّر إغلاق النافذة العائمة من الإشعار"
     ]
   },
   "logs_in": {
-    "System": [
-      "New: Face unlock support",
-      "Fix: Updated Android Security Patch"
+    "अन्य": [
+      "सिस्टम परफ़ॉर्मेंस ऑप्टिमाइज़ किया गया है",
+      "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "सिस्टम": [
+      "नया: चेहरे की पहचान से ऐप्स अनलॉक करने का समर्थन",
+      "ठीक किया गया: Android सुरक्षा पैच अपडेट किया गया"
     ],
-    "Camera": [
-      "Fix: Camera crashed after switching to Portrait mode on the front camera with HDR on",
-      "Fix: Couldn^t save short videos if Camera was closed during shooting"
+    "फ़ोन": [
+      "वीडियो कॉल के दौरान फ़ंक्शन क्षेत्र में \"कैमरा बदलें\" के अधूरा दिखाए जाने की समस्या को ठीक किया गया",
+      "कॉन्फ़्रेंस कॉल के दौरान SMS न भेज पाने की समस्या ठीक की गई।"
     ],
-    "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name reached its character limit",
-      "Fix: Couldn^t restrict floating notifications"
+    "कैमरा": [
+      "फ्रंट कैमरा से पोर्ट्रेट मोड में जाने पर HDR बंद न होने से कैमरा खराब होने की समस्या ठीक की गई",
+      "शॉर्ट वीडियो रिकॉर्डिंग के दौरान कैमरा से बाहर निकलने पर सेव न होने की समस्या ठीक की गई"
+    ],
+    "सेटिंग्स": [
+      "ठीक किया गया: फ़ोन का नाम अधिकतम लंबाई पर सेट होने पर हॉटस्पॉट चालू नहीं हो पाता था।",
+      "ठीक किया गया: सूचना से फ़्लोटिंग विंडो बंद नहीं हो सकती थी"
     ]
   },
   "logs_ug": {
-    "System": [
-      "New: Face unlock support",
-      "Fix: Updated Android Security Patch"
+    "باشقىلىرى": [
+      "سىستېمىنىڭ مۇقىملىقىنى ئاشۇرۇش",
+      "سىستېما راۋانلىقىنى ئەلالاشتۇرۇش"
     ],
-    "Phone": [
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "سىستېما": [
+      "قوشۇلدى: ئەپلەرنى يۈز تونۇش ئارقىلىق قۇلۇپتىن ئېچىشنى قوللاش",
+      "تۈزىتىلدى: Android بىخەتەرلىك يامىقى يېڭىلاندى"
     ],
-    "Camera": [
-      "Fix: Camera crashed after switching to Portrait mode on the front camera with HDR on",
-      "Fix: Couldn^t save short videos if Camera was closed during shooting"
+    "تېلېفون": [
+      "سىنلىق سۆھبەت جەريانىدا ئىقتىدار رايونىدىكى «كامېرا ئالماشتۇرۇش» تولۇق كۆرسىتىلمەسلىك مەسىلىسىنى تۈزەتتى.",
+      "تېلېفون يىغىنى جەريانىدا SMS ئەۋەتەلمەسلىك مەسىلىسى تۈزىتىلدى."
     ],
-    "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name reached its character limit",
-      "Fix: Couldn^t restrict floating notifications"
+    "كامېرا": [
+      "ئالدى كامېرادىن پورترېت ھالىتىگە كىرگەندە HDR تاقالمىغانلىقتىن كامېرا بۇزۇلۇش مەسىلىسى تۈزىتىلدى.",
+      "قىسقا سىن ئۈنئېلىش جەريانىدا كامېرادىن چېكىنىپ چىققاندا ساقلاشقا بولمايدىغان مەسىلە ئوڭشالدى."
+    ],
+    "تەڭشەك": [
+      "تېلېفون نامىنى ئەڭ چوڭ ئۇزۇنلۇققا تەڭشىگەندە، Hotspot ئېچىلمايدىغان مەسىلە ئوڭشالدى.",
+      "Fix: Couldn't restrict floating notifications"
     ]
   },
   "logs_bo": {
-    "System": [
-      "New: Face unlock support",
+    "གཞན།": [
+      "Optimized system performance",
+      "Improved system security and stability"
+    ],
+    "མ་ལག": [
+      "གསར་སྣོན། མི་ངོས་བརྒྱུད་ནས་བཀོལ་སྤྱོད་སྒོ་འབྱེད་པར་རྒྱབ་སྐྱོར།",
       "Fix: Updated Android Security Patch"
     ],
-    "Phone": [
+    "ཁ་པར": [
       "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+      "ཁ་པར་ཚོགས་འདུའི་སྐབས་སུ་འཕྲིན་ཐུང་གཏོང་མི་ཐུབ་པ་སྐྱོན་བཟོས།"
     ],
-    "Camera": [
+    "པར་ཆས": [
       "Fix: Camera crashed after switching to Portrait mode on the front camera with HDR on",
-      "Fix: Couldn^t save short videos if Camera was closed during shooting"
+      "Fix: Couldn't save short videos if Camera was closed during shooting"
     ],
     "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name reached its character limit",
-      "Fix: Couldn^t restrict floating notifications"
+      "ཁ་པར་གྱི་མིང་རིང་ཚད་མང་ཤོས་སུ་བཀོད་པའི་སྐབས་ Hotspot ཁ་ཕྱེ་མི་ཐུབ་པའི་སྐྱོན་བཅོས་བྱས།",
+      "Fix: Couldn't restrict floating notifications"
     ]
   }
 }

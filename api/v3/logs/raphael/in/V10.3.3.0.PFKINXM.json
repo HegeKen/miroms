@@ -6,6 +6,8 @@
     ],
     "锁屏、状态栏、通知栏": [
       "新增 系统主题下，锁屏时钟支持三种自定义样式，可在锁屏高级设置中修改",
+      "修复 收到通知后媒体音量没有恢复的问题",
+      "新增 系统主题下，锁屏时钟支持三种自定义样式，可在锁屏高级设置中修改",
       "修复 收到通知后媒体音量没有恢复的问题"
     ],
     "相机": [
@@ -13,6 +15,7 @@
       "优化 拍照、人像和短视频模式统一美颜滤镜入口"
     ],
     "小米云服务": [
+      "修复 退出小米账户时闪退",
       "修复 退出小米账户时闪退"
     ]
   },
@@ -22,14 +25,17 @@
       "Optimization: Updated Android Security Patch to June 2019. Increased system security."
     ],
     "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "Fix: Media volume couldn^t be restored after receiving a notification"
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Fix: Media volume couldn't be restored after receiving a notification",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Fix: Media volume couldn't be restored after receiving a notification"
     ],
     "Camera": [
       "Optimization: UI for Beautify and filters",
       "Optimization: Same set of filters works for photos, portraits, and short videos"
     ],
     "Mi Cloud": [
+      "Fix: The app force closed after signing out of Mi Account",
       "Fix: The app force closed after signing out of Mi Account"
     ]
   },
@@ -40,6 +46,8 @@
     ],
     "解鎖畫面、狀態欄、通知欄": [
       "新增 系統主題下，鎖屏時鐘支援三種自訂型式，可在鎖屏進階設定中修改",
+      "修復 收到通知後媒體音量沒有恢復的問題",
+      "新增 系統主題下，鎖屏時鐘支援三種自訂型式，可在鎖屏進階設定中修改",
       "修復 收到通知後媒體音量沒有恢復的問題"
     ],
     "相機": [
@@ -47,7 +55,40 @@
       "優化 拍照、人像和短影片模式統一美顏濾鏡入口"
     ],
     "小米雲服務": [
+      "修復 退出小米帳戶時閃退",
       "修復 退出小米帳戶時閃退"
+    ]
+  },
+  "logs_ja": {
+    "システム": [
+      "新機能: 24 時間壁紙",
+      "最適化: Android セキュリティパッチを 2019 年 6 月版に更新しました。システムの安全性が向上しました。"
+    ],
+    "ロック画面、ステータスバー、通知シェード": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "修正: 通知を受信した後にメディア音量が元に戻らない問題",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "修正: 通知を受信した後にメディア音量が元に戻らない問題"
+    ],
+    "カメラ": [
+      "システムパフォーマンスの最適化",
+      "システムのセキュリティと安定性の向上"
+    ]
+  },
+  "logs_ko": {
+    "시스템": [
+      "New: 24시간 배경화면",
+      "최적화: Android 보안 패치를 2019년 6월로 업데이트했습니다. 시스템 보안이 향상되었습니다."
+    ],
+    "잠금화면, 상태 바, 알림 바": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "수정: 알림을 받은 후 미디어 볼륨이 복원되지 않는 문제",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "수정: 알림을 받은 후 미디어 볼륨이 복원되지 않는 문제"
+    ],
+    "카메라": [
+      "시스템 성능 최적화",
+      "시스템 보안 및 안정성 개선"
     ]
   },
   "logs_ru": {
@@ -57,27 +98,85 @@
     ],
     "Экран блокировки, строка состояния, шторка уведомлений": [
       "Новое: Добавлены настраиваемые часы для экрана блокировки (Настройки > Блокировка и защита > Расширенные настройки). Новые часы для экрана блокировки несовместимы со сторонними темами",
+      "Исправлено: Громкость мультимедиа не восстанавливалась после получения уведомлений",
+      "Новое: Добавлены настраиваемые часы для экрана блокировки (Настройки > Блокировка и защита > Расширенные настройки). Новые часы для экрана блокировки несовместимы со сторонними темами",
       "Исправлено: Громкость мультимедиа не восстанавливалась после получения уведомлений"
     ],
     "Камера": [
-      "Оптимизация: Интерфейс ^Улучшения^ и фильтров",
+      "Оптимизация: Интерфейс \"Улучшения\" и фильтров",
       "Оптимизация: Один набор фильтров можно применять для фото, портретов и видеоклипов"
     ],
-    "Mi Cloud": [
+    "Облачный сервис Xiaomi": [
+      "Исправлено: Неправильная работа приложений после выхода из Mi аккаунта",
       "Исправлено: Неправильная работа приложений после выхода из Mi аккаунта"
+    ]
+  },
+  "logs_uk": {
+    "Система": [
+      "Нове: 24-годинні шпалери",
+      "Optimization: Updated Android Security Patch to June 2019. Increased system security."
+    ],
+    "Екран блокування, рядок стану, панель сповіщень": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Виправлено: Гучність медіа не відновлювалася після отримання сповіщення",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Виправлено: Гучність медіа не відновлювалася після отримання сповіщення"
+    ],
+    "Камера": [
+      "Оптимізація продуктивності системи",
+      "Покращення безпеки та стабільності системи"
+    ]
+  },
+  "logs_pl": {
+    "System": [
+      "Nowe: 24-godzinna tapeta",
+      "Optimization: Updated Android Security Patch to June 2019. Increased system security."
+    ],
+    "Ekran blokady, pasek powiadomień,panel powiadomień": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Poprawiono: Głośność multimediów nie wracała po otrzymaniu powiadomienia",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Poprawiono: Głośność multimediów nie wracała po otrzymaniu powiadomienia"
+    ],
+    "Aparat": [
+      "Zoptymalizowana wydajność systemu",
+      "Większe bezpieczeństwo i stabilność systemu"
+    ]
+  },
+  "logs_de": {
+    "System": [
+      "Neu: 24-Stunden-Hintergrundbild",
+      "Optimierung: Android-Sicherheitspatch auf Juni 2019 aktualisiert. Systemsicherheit verbessert."
+    ],
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
+      "Neu: Anpassbare Uhr auf dem Sperrbildschirm (Einstellungen > Sperrbildschirm & Passwort > Erweiterte Einstellungen)",
+      "Behoben: Die Medienlautstärke wurde nach Erhalt einer Benachrichtigung nicht wiederhergestellt",
+      "Neu: Anpassbare Uhr auf dem Sperrbildschirm (Einstellungen > Sperrbildschirm & Passwort > Erweiterte Einstellungen)",
+      "Behoben: Die Medienlautstärke wurde nach Erhalt einer Benachrichtigung nicht wiederhergestellt"
+    ],
+    "Kamera": [
+      "Optimierung: Benutzeroberfläche für Beauty-Modus und Filter",
+      "Verbesserte Systemsicherheit und -stabilität"
     ]
   },
   "logs_fr": {
     "Système": [
-      "Nouveau Fond d^écran de 24 heures",
-      "Optimisation Mise à jour du correctif de sécurité Android jusqu^en juin 2019. Sécurité accrue du système."
+      "Nouveau: Fond d'écran de 24 heures",
+      "Optimisation Mise à jour du correctif de sécurité Android jusqu'en juin 2019. Sécurité accrue du système."
     ],
     "Écran de verrouillage, Barre d'état, Panneau de notification": [
-      "Nouveau Présentation de l’horloge de l’écran de verrouillage personnalisable (Paramètres> Écran de verrouillage et mot de passe> Paramètres avancés). La nouvelle horloge de l^écran de verrouillage ne fonctionne pas avec les thèmes tiers.",
-      "Réparé Le volume du média n^a pas pu être restauré après avoir reçu une notification"
+      "Nouveau Présentation de l’horloge de l’écran de verrouillage personnalisable (Paramètres> Écran de verrouillage et mot de passe> Paramètres avancés). La nouvelle horloge de l'écran de verrouillage ne fonctionne pas avec les thèmes tiers.",
+      "Réparé Le volume du média n'a pas pu être restauré après avoir reçu une notification",
+      "Nouveau Présentation de l’horloge de l’écran de verrouillage personnalisable (Paramètres> Écran de verrouillage et mot de passe> Paramètres avancés). La nouvelle horloge de l'écran de verrouillage ne fonctionne pas avec les thèmes tiers.",
+      "Réparé Le volume du média n'a pas pu être restauré après avoir reçu une notification"
     ],
-    "Mi Cloud": [
-      "Réparé La force de l^application fermée après la fermeture du compte Mi"
+    "Appareil photo": [
+      "Performances système optimisées",
+      "Sécurité et stabilité du système améliorées"
+    ],
+    "Service cloud Xiaomi": [
+      "Réparé La force de l'application fermée après la fermeture du compte Mi",
+      "Réparé La force de l'application fermée après la fermeture du compte Mi"
     ]
   },
   "logs_it": {
@@ -86,14 +185,17 @@
       "Ottimizzazione: Aggiornamento della patch di sicurezza Android a giugno 2019. Maggiore sicurezza del sistema."
     ],
     "Schermata di blocco, barra di stato, area delle notifiche": [
-      "Nuovo: Introdotto l^orologio personalizzabile per la schermata di blocco (Impostazioni > Schermata di blocco e password > Impostazioni avanzate). Il nuovo orologio della schermata di blocco non funziona con temi di terze parti.",
+      "Nuovo: Introdotto l'orologio personalizzabile per la schermata di blocco (Impostazioni > Schermata di blocco e password > Impostazioni avanzate). Il nuovo orologio della schermata di blocco non funziona con temi di terze parti.",
+      "Risolto: Il volume multimediale non poteva essere ripristinato dopo aver ricevuto una notifica",
+      "Nuovo: Introdotto l'orologio personalizzabile per la schermata di blocco (Impostazioni > Schermata di blocco e password > Impostazioni avanzate). Il nuovo orologio della schermata di blocco non funziona con temi di terze parti.",
       "Risolto: Il volume multimediale non poteva essere ripristinato dopo aver ricevuto una notifica"
     ],
     "Fotocamera": [
       "Ottimizzazione: Interfaccia utente per modalità Bellezza e filtri",
       "Ottimizzazione: Lo stesso set di filtri funziona per foto, ritratti e brevi video"
     ],
-    "Mi Cloud": [
+    "Servizio cloud Xiaomi": [
+      "Risolto: Si verificava una chiusura forzata della app dopo aver disconnesso il Mi Account",
       "Risolto: Si verificava una chiusura forzata della app dopo aver disconnesso il Mi Account"
     ]
   },
@@ -104,26 +206,36 @@
     ],
     "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
       "Nuevo: Introducción de un reloj personalizable en la Pantalla de bloqueo (Ajustes > Pantalla de bloqueo y contraseña > Ajustes avanzados). El nuevo reloj de la Pantalla de bloqueo no funciona con temas de terceros.",
+      "Reparado: El volumen medio no pudo ser restaurado después de recibir una notificación",
+      "Nuevo: Introducción de un reloj personalizable en la Pantalla de bloqueo (Ajustes > Pantalla de bloqueo y contraseña > Ajustes avanzados). El nuevo reloj de la Pantalla de bloqueo no funciona con temas de terceros.",
       "Reparado: El volumen medio no pudo ser restaurado después de recibir una notificación"
     ],
     "Cámara": [
       "Optimización: Interfaz de usuario para el Modo belleza y filtros",
       "Optimización: El mismo conjunto de filtros funciona para fotos, retratos y vídeos cortos"
     ],
-    "Mi Cloud": [
+    "Servicio en la nube de Xiaomi": [
+      "Reparado: La aplicación se cerraba de forma forzosa después de cerrar sesión en la Cuenta Mi",
       "Reparado: La aplicación se cerraba de forma forzosa después de cerrar sesión en la Cuenta Mi"
     ]
   },
   "logs_pt": {
     "Sistema": [
-      "Novo Plano de fundo 24 horas",
+      "Novo: Plano de fundo 24 horas",
       "Otimização Atualização do Patch de Segurança do Android para Junho de 2019. Segurança do sistema aprimorada."
     ],
     "Tela de bloqueio, Barra de status e Área de notificações": [
       "Novo Introduzindo o Relógio personalizável na Tela de bloqueio (Configurar > Bloqueio de tela e senhas > Configurações avançadas). O novo relógio da Tela de bloqueio não funciona com temas de terceiros.",
+      "Correção O volume de mídia não podia ser restaurado após receber uma notificação",
+      "Novo Introduzindo o Relógio personalizável na Tela de bloqueio (Configurar > Bloqueio de tela e senhas > Configurações avançadas). O novo relógio da Tela de bloqueio não funciona com temas de terceiros.",
       "Correção O volume de mídia não podia ser restaurado após receber uma notificação"
     ],
-    "Mi Cloud": [
+    "Câmera": [
+      "Desempenho do sistema aprimorado",
+      "Segurança e estabilidade do sistema aprimoradas"
+    ],
+    "Serviço de nuvem Xiaomi": [
+      "Correção O app fechava forçadamente ao sair da Conta Mi",
       "Correção O app fechava forçadamente ao sair da Conta Mi"
     ]
   },
@@ -134,27 +246,133 @@
     ],
     "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
       "Yeni: Özelleştirilebilir Kilit ekranı saati (Ayarlar > Kilit ekranı & şifre > Gelişmiş ayarlar). Yeni kilit ekranı saati üçüncü parti temaları ile çalışmaz.",
+      "Onarım: Medya sesi, bildirim alındıktan sonra geri alınamadı",
+      "Yeni: Özelleştirilebilir Kilit ekranı saati (Ayarlar > Kilit ekranı & şifre > Gelişmiş ayarlar). Yeni kilit ekranı saati üçüncü parti temaları ile çalışmaz.",
       "Onarım: Medya sesi, bildirim alındıktan sonra geri alınamadı"
     ],
     "Kamera": [
       "Optimizasyon: Güzelleştirme ve filtreler için kullanıcı arayüzü",
       "Optimizasyon: Aynı filtre grupları fotoğraflar, portreler ve kısa videolar için kullanılabilir"
     ],
-    "Mi Cloud": [
+    "Xiaomi Bulut Hizmeti": [
+      "Onarım: Mi Hesabında oturum kapatıldıktan sonra uygulama zorla kapandı",
       "Onarım: Mi Hesabında oturum kapatıldıktan sonra uygulama zorla kapandı"
     ]
   },
   "logs_id": {
     "Sistem": [
-      "Baru Wallpaper 24 jam",
+      "Baru: Wallpaper 24 jam",
       "Pengoptimalan Patch Keamanan Android diperbarui hingga Juni 2019. Keamanan sistem ditingkatkan."
     ],
     "Layar kunci, bar status, layar notifikasi": [
       "Baru Memperkenalkan jam Layar kunci yang dapat dikustomisasi (Setelan > Kunci layar & sandi> Setelan lanjutan). Jam Layar kunci baru tidak berfungsi dalam tema pihak ketiga.",
+      "Perbaikan Volume media tidak dapat dipulihkan setelah menerima notifikasi",
+      "Baru Memperkenalkan jam Layar kunci yang dapat dikustomisasi (Setelan > Kunci layar & sandi> Setelan lanjutan). Jam Layar kunci baru tidak berfungsi dalam tema pihak ketiga.",
       "Perbaikan Volume media tidak dapat dipulihkan setelah menerima notifikasi"
     ],
-    "Mi Cloud": [
+    "Kamera": [
+      "Pengoptimalan: UI untuk Mode Kecantikan dan filter",
+      "Keamanan dan stabilitas sistem ditingkatkan"
+    ],
+    "Layanan Cloud Xiaomi": [
+      "Perbaikan Aplikasi ditutup secara paksa setelah keluar dari Akun Mi",
       "Perbaikan Aplikasi ditutup secara paksa setelah keluar dari Akun Mi"
+    ]
+  },
+  "logs_vi": {
+    "Hệ thống": [
+      "Mới: Hình nền 24 giờ",
+      "Optimization: Updated Android Security Patch to June 2019. Increased system security."
+    ],
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Fix: Media volume couldn't be restored after receiving a notification",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Fix: Media volume couldn't be restored after receiving a notification"
+    ],
+    "Máy ảnh": [
+      "Tối ưu hiệu suất hệ thống",
+      "Cải thiện tính ổn định và bảo mật hệ thống"
+    ]
+  },
+  "logs_th": {
+    "ระบบ": [
+      "New: 24-hour wallpaper",
+      "Optimization: Updated Android Security Patch to June 2019. Increased system security."
+    ],
+    "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Fix: Media volume couldn't be restored after receiving a notification",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Fix: Media volume couldn't be restored after receiving a notification"
+    ],
+    "กล้อง": [
+      "เพิ่มประสิทธิภาพของระบบ",
+      "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
+    ]
+  },
+  "logs_ar": {
+    "النظام": [
+      "جديد خلفيات 24 ساعة",
+      "Optimization: Updated Android Security Patch to June 2019. Increased system security."
+    ],
+    "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Fix: Media volume couldn't be restored after receiving a notification",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Fix: Media volume couldn't be restored after receiving a notification"
+    ],
+    "الكاميرا": [
+      "تحسين أداء النظام",
+      "تحسين أمن واستقرار النظام"
+    ]
+  },
+  "logs_in": {
+    "सिस्टम": [
+      "New: 24-hour wallpaper",
+      "Optimization: Updated Android Security Patch to June 2019. Increased system security."
+    ],
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Fix: Media volume couldn't be restored after receiving a notification",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Fix: Media volume couldn't be restored after receiving a notification"
+    ],
+    "कैमरा": [
+      "सिस्टम परफ़ॉर्मेंस ऑप्टिमाइज़ किया गया है",
+      "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
+    ]
+  },
+  "logs_ug": {
+    "سىستېما": [
+      "New: 24-hour wallpaper",
+      "Optimization: Updated Android Security Patch to June 2019. Increased system security."
+    ],
+    "Lockscreen, status bar, Notification shade": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Fix: Media volume couldn't be restored after receiving a notification",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Fix: Media volume couldn't be restored after receiving a notification"
+    ],
+    "كامېرا": [
+      "Optimized system performance",
+      "Improved system security and stability"
+    ]
+  },
+  "logs_bo": {
+    "རིམ་ལུགས": [
+      "New: 24-hour wallpaper",
+      "Optimization: Updated Android Security Patch to June 2019. Increased system security."
+    ],
+    "Lockscreen, status bar, Notification shade": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Fix: Media volume couldn't be restored after receiving a notification",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Fix: Media volume couldn't be restored after receiving a notification"
+    ],
+    "Camera": [
+      "Optimized system performance",
+      "Improved system security and stability"
     ]
   }
 }

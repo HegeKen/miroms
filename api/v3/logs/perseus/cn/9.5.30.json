@@ -1,9 +1,11 @@
 {
   "logs_zh": {
     "系统": [
+      "优化 取消定时关闭勿扰后的声音提示",
       "优化 取消定时关闭勿扰后的声音提示"
     ],
     "锁屏、状态栏、通知栏": [
+      "优化 息屏显示的稳定性",
       "优化 息屏显示的稳定性"
     ],
     "相册": [
@@ -30,15 +32,217 @@
     "小米云服务": [
       "优化 多设备之间数据同步及时性",
       "修复 偶现在系统设置中登录帐号后，云服务闪退的问题",
-      "修复 在未登录账号时进入云服务，偶现闪退的问题"
+      "修复 在未登录账号时进入云服务，偶现闪退的问题",
+      "优化 多设备之间数据同步及时性"
     ]
   },
   "logs_en": {
     "System": [
+      "Optimization: Removed unnecessary sound notifications for DND mode",
       "Optimization: Removed unnecessary sound notifications for DND mode"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Optimization: Always on display stability"
+    ],
+    "Blocklist": [
+      "Optimization: Improved blocklist functionality"
     ],
     "Lockscreen, status bar, Notification shade": [
       "Optimization: Always on display stability"
+    ],
+    "Mi Cloud": [
+      "Optimization: Improved sync across multiple devices"
+    ]
+  },
+  "logs_zh_tw": {
+    "系統": [
+      "優化 取消定時關閉勿擾後的聲音提示",
+      "優化 取消定時關閉勿擾後的聲音提示"
+    ],
+    "防打擾": [
+      "優化 簡訊頭部攔截功能增強，支援+號增加"
+    ],
+    "小米雲服務": [
+      "優化 多裝置之間數據同步即時性"
+    ]
+  },
+  "logs_ja": {
+    "システム": [
+      "最適化: スケジュールされたサイレントモード解除後の通知音を削除",
+      "最適化: スケジュールされたサイレントモード解除後の通知音を削除"
+    ],
+    "Xiaomi クラウドサービス": [
+      "最適化: 複数デバイス間のデータ同期を改善"
+    ]
+  },
+  "logs_ko": {
+    "시스템": [
+      "최적화: 방해금지 모드에서의 불필요한 알림음 제거됨",
+      "최적화: 방해금지 모드에서의 불필요한 알림음 제거됨"
+    ],
+    "Xiaomi 클라우드 서비스": [
+      "최적화: 여러 기기 간 데이터 동기화 개선"
+    ]
+  },
+  "logs_ru": {
+    "Система": [
+      "Оптимизация: Устранены звуковые уведомления в режиме Не беспокоить",
+      "Оптимизация: Устранены звуковые уведомления в режиме Не беспокоить"
+    ],
+    "Черный список": [
+      "Оптимизация: Улучшена функциональность черного списка"
+    ],
+    "Облачный сервис Xiaomi": [
+      "Оптимизация: Улучшена синхронизация данных между несколькими  устройствами"
+    ]
+  },
+  "logs_uk": {
+    "Система": [
+      "Оптимізація: Вилучено звукове сповіщення після запланованого вимкнення режиму «Не турбувати»",
+      "Оптимізація: Вилучено звукове сповіщення після запланованого вимкнення режиму «Не турбувати»"
+    ],
+    "Хмарний сервіс Xiaomi": [
+      "Оптимізація: Покращено синхронізацію даних між кількома пристроями"
+    ]
+  },
+  "logs_pl": {
+    "System": [
+      "Zoptymalizowano: Usunięto niepotrzebne sygnały dźwiękowe dla trybu nie przeszkadzać",
+      "Zoptymalizowano: Usunięto niepotrzebne sygnały dźwiękowe dla trybu nie przeszkadzać"
+    ],
+    "Usługa w chmurze Xiaomi": [
+      "Optymalizacja: Poprawiono synchronizację między wieloma urządzeniami"
+    ]
+  },
+  "logs_de": {
+    "System": [
+      "Optimierung: Tonbenachrichtigung nach zeitgesteuerter Deaktivierung des Nicht-Stören-Modus entfernt",
+      "Optimierung: Tonbenachrichtigung nach zeitgesteuerter Deaktivierung des Nicht-Stören-Modus entfernt"
+    ],
+    "Xiaomi Cloud-Dienst": [
+      "Optimierung: Verbesserte Synchronisierung zwischen mehreren Geräten"
+    ]
+  },
+  "logs_fr": {
+    "Système": [
+      "Optimisation: A retiré les sons de notifications inutiles pour le mode DND",
+      "Optimisation: A retiré les sons de notifications inutiles pour le mode DND"
+    ],
+    "Liste noire": [
+      "Optimisation: Amélioration de la fonctionnalité de liste noire"
+    ],
+    "Service cloud Xiaomi": [
+      "Optimisation Amélioration de la synchronisation sur plusieurs appareils"
+    ]
+  },
+  "logs_it": {
+    "Sistema": [
+      "Ottimizzazione: Rimosse notifiche audio non necessarie per la modalità Non Disturbare",
+      "Ottimizzazione: Rimosse notifiche audio non necessarie per la modalità Non Disturbare"
+    ],
+    "Lista Blocchi": [
+      "Ottimizzazione: Funzionalità Lista blocchi migliorata"
+    ],
+    "Servizio cloud Xiaomi": [
+      "Ottimizzazione: Sincronizzazione migliorata su più dispositivi"
+    ]
+  },
+  "logs_es": {
+    "Sistema": [
+      "Optimización: Las notificaciones con sonido innecesarias han sido eliminadas del Modo no molestar",
+      "Optimización: Las notificaciones con sonido innecesarias han sido eliminadas del Modo no molestar"
+    ],
+    "Lista de bloqueo": [
+      "Optimización: Funciones de la Lista negra mejoradas"
+    ],
+    "Servicio en la nube de Xiaomi": [
+      "Optimización: Sincronización entre múltiples dispositivos mejorada"
+    ]
+  },
+  "logs_pt": {
+    "Sistema": [
+      "Otimização: Sons de notificação desnecessários removidos do modo Não perturbe",
+      "Otimização: Sons de notificação desnecessários removidos do modo Não perturbe"
+    ],
+    "Lista de bloqueio": [
+      "Otimização: Melhoria da funcionalidade da lista de bloqueio"
+    ],
+    "Serviço de nuvem Xiaomi": [
+      "Otimização Sincronização otimizada entre vários dispositivos"
+    ]
+  },
+  "logs_tr": {
+    "Sistem": [
+      "Optimizasyon: Rahatsız Etme modu için gereksiz sesli bildirimler kaldırıldı",
+      "Optimizasyon: Rahatsız Etme modu için gereksiz sesli bildirimler kaldırıldı"
+    ],
+    "Engelli listesi": [
+      "Optimizasyon: Engelli listesi işlevselliği artırıldı"
+    ],
+    "Xiaomi Bulut Hizmeti": [
+      "Optimizasyon: Birkaç cihaz arasında geliştirilmiş senkronizasyon"
+    ]
+  },
+  "logs_id": {
+    "Sistem": [
+      "Pengoptimalan: Notifikasi suara yang tidak dibutuhkan untuk mode Jangan ganggu dihapus",
+      "Pengoptimalan: Notifikasi suara yang tidak dibutuhkan untuk mode Jangan ganggu dihapus"
+    ],
+    "Layanan Cloud Xiaomi": [
+      "Pengoptimalan Sinkronisasi ditingkatkan di beberapa perangkat"
+    ]
+  },
+  "logs_vi": {
+    "Hệ thống": [
+      "Tối ưu hóa: Đã xóa âm báo sau khi tắt chế độ Không làm phiền theo lịch",
+      "Tối ưu hóa: Đã xóa âm báo sau khi tắt chế độ Không làm phiền theo lịch"
+    ],
+    "Dịch vụ đám mây Xiaomi": [
+      "Tối ưu hóa: Cải thiện đồng bộ hóa giữa nhiều thiết bị"
+    ]
+  },
+  "logs_th": {
+    "ระบบ": [
+      "การปรับปรุง: ลบการแจ้งเตือนเสียงหลังปิดโหมดห้ามรบกวนตามกำหนดเวลา",
+      "การปรับปรุง: ลบการแจ้งเตือนเสียงหลังปิดโหมดห้ามรบกวนตามกำหนดเวลา"
+    ],
+    "บริการคลาวด์ Xiaomi": [
+      "การปรับให้เหมาะสม: ปรับปรุงการซิงค์ระหว่างอุปกรณ์หลายเครื่อง"
+    ]
+  },
+  "logs_ar": {
+    "النظام": [
+      "محسن إزالة إشعارات الصوت غير ضرورية لوضع عدم الإزعاج",
+      "محسن إزالة إشعارات الصوت غير ضرورية لوضع عدم الإزعاج"
+    ],
+    "خدمة Xiaomi السحابية": [
+      "التحسين: تحسين المزامنة بين أجهزة متعددة"
+    ]
+  },
+  "logs_in": {
+    "सिस्टम": [
+      "अनुकूलन: शेड्यूल किए गए डू नॉट डिस्टर्ब बंद होने के बाद की ध्वनि सूचना हटाई गई",
+      "अनुकूलन: शेड्यूल किए गए डू नॉट डिस्टर्ब बंद होने के बाद की ध्वनि सूचना हटाई गई"
+    ],
+    "Xiaomi क्लाउड सेवा": [
+      "अनुकूलन: कई उपकरणों के बीच सिंक में सुधार"
+    ]
+  },
+  "logs_ug": {
+    "سىستېما": [
+      "Optimization: Removed unnecessary sound notifications for DND mode",
+      "Optimization: Removed unnecessary sound notifications for DND mode"
+    ],
+    "Xiaomi بۇلۇت مۇلازىمىتى": [
+      "Optimization: Improved sync across multiple devices"
+    ]
+  },
+  "logs_bo": {
+    "མ་ལག": [
+      "Optimization: Removed unnecessary sound notifications for DND mode"
+    ],
+    "རིམ་ལུགས": [
+      "Optimization: Removed unnecessary sound notifications for DND mode"
     ],
     "Mi Cloud": [
       "Optimization: Improved sync across multiple devices"

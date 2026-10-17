@@ -1,50 +1,79 @@
 {
   "logs_zh": {
     "系统": [
-      "更新谷歌安全补丁（2019#5），提升系统安全性"
+      "更新谷歌安全补丁（2019#5），提升系统安全性",
+      "优化 更新谷歌安全补丁（2019#3），提升系统安全性",
+      "更新谷歌安全补丁（2019#6），提升系统安全性"
     ],
     "锁屏、状态栏、通知栏": [
       "新增 系统主题下，锁屏时钟支持三种自定义样式，可在锁屏高级设置中修改",
-      "修复 低电量时呼吸灯不闪烁的bug"
+      "修复 低电量时呼吸灯不闪烁的bug",
+      "新增 系统主题下，锁屏时钟支持三种自定义样式，可在锁屏高级设置中修改",
+      "新增 锁屏页面支持禁止下拉通知栏",
+      "修复 低电量时呼吸灯不闪烁的bug",
+      "修复 横向萤幕情况下低电量通知不悬浮显示",
+      "修复 通话时间气泡与通知图标重叠的问题"
     ],
     "设置": [
-      "优化 WiFi列表排序策略，以信号强度排序"
+      "优化 WiFi列表排序策略，以信号强度排序",
+      "优化 WLAN列表调整为按信号强度排序",
+      "修复 下拉状态栏开启或关闭同步，同步界面不刷新问题"
     ],
     "安全中心": [
+      "修复 手机重启后双开APP消失的bug",
       "修复 手机重启后双开APP消失的bug"
     ],
     "小米云服务": [
-      "优化 云服务首页重新设计，可用空间显示更加直观"
+      "优化 云服务首页重新设计，可用空间显示更加直观",
+      "优化 云服务新版首页，云空间信息显示更清晰"
+    ],
+    "电话": [
+      "修复 挂断电话慢问题",
+      "修复 来电悬浮条和通话绿条同时存在情况"
     ]
   },
   "logs_en": {
     "System": [
+      "Updated Android Security Patch to May 2019. Increased system security.",
+      "Optimization: Updated Android Security Patch to March 2019. Increased system security.",
       "Updated Android Security Patch to May 2019. Increased system security."
     ],
     "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "Fix: LED light didn^t blink when battery was low"
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Fix: LED light didn't blink when battery was low",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "New: You can restrict opening Notification shade on the Lock screen now",
+      "Fix: LED light didn't blink when battery was low",
+      "Fix: Low battery warning didn't appear in landscape mode",
+      "Fix: Call time bubble overlapped with notification icons"
     ],
     "Settings": [
-      "Optimization: Sorting principles for Wi-Fi networks"
+      "Optimization: Sorting principles for Wi-Fi networks",
+      "Optimization: Sorting principles for Wi-Fi networks",
+      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade"
     ],
     "Security": [
+      "Fix: Dual apps disappeared after a reboot",
       "Fix: Dual apps disappeared after a reboot"
     ],
     "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!",
+      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!"
+    ],
+    "Phone": [
+      "Fix: Ending calls took longer time than expected",
+      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
     ]
   },
   "logs_zh_tw": {
     "系統": [
+      "更新Android安全性修補程式等級(2019#5)，提升系統安全性",
       "優化 更新Android安全性修補程式等級(2019#3)，提升系統安全性",
       "更新Android安全性修補程式等級(2019#5)，提升系統安全性"
     ],
-    "電話": [
-      "修復 掛斷電話較慢的問題",
-      "修復 來電懸浮條和通話綠條同時存在的情況"
-    ],
     "解鎖畫面、狀態欄、通知欄": [
+      "新增 系統主題下，鎖屏時鐘支援三種自訂型式，可在鎖屏進階設定中修改",
+      "修復 低電量時呼吸燈不閃爍的問題",
       "新增 系統主題下，鎖屏時鐘支援三種自訂型式，可在鎖屏進階設定中修改",
       "新增 螢幕鎖定畫面支援禁止下拉狀態欄",
       "修復 低電量時呼吸燈不閃爍的問題",
@@ -53,79 +82,95 @@
     ],
     "設定": [
       "優化 Wi-Fi清單排列策略，以信號的強度排列",
+      "優化 Wi-Fi清單排列策略，以信號的強度排列",
       "修復 下拉狀態欄開啟或關閉同步，同步介面不刷新問題"
     ],
     "安全中心": [
+      "修復 手機重啟後雙開APP消失了bug",
       "修復 手機重啟後雙開APP消失了bug"
     ],
     "小米雲服務": [
+      "優化 雲服務首頁重新設計，雲端可用空間顯示更加直觀",
       "優化 雲服務首頁重新設計，雲端可用空間顯示更加直觀"
+    ],
+    "電話": [
+      "修復 掛斷電話較慢的問題",
+      "修復 來電懸浮條和通話綠條同時存在的情況"
     ]
   },
   "logs_ja": {
-    "System": [
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security.",
-      "Updated Android Security Patch to May 2019. Increased system security."
+    "ロック画面、ステータスバー、通知シェード": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "修正: バッテリー残量が少ないときに通知LEDが点滅しない不具合。",
+      "新規: システムテーマでは、ロック画面の時計が3種類のカスタムスタイルに対応し、ロック画面の詳細設定で変更できます。",
+      "新規: ロック画面で通知シェードを下にスワイプして開くことを禁止できるようになりました",
+      "修正: バッテリー残量が少ないときに通知LEDが点滅しない不具合。",
+      "修正: 横向きモードで低バッテリー警告が表示されない問題を修正",
+      "修正: 通話時間のバブルが通知アイコンと重なる問題"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
-    ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons"
-    ],
-    "Settings": [
+    "設定": [
       "Optimization: Sorting principles for Wi-Fi networks",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
+      "最適化: WLANリストを電波強度順に並べ替えるように調整",
+      "修正: 通知シェードで同期をオン/オフにした際、同期画面が更新されない問題"
     ],
-    "Security": [
-      "Fix: Dual apps disappeared after a reboot"
+    "セキュリティ": [
+      "修正: 再起動後にデュアルアプリが消える問題",
+      "修正: 再起動後にデュアルアプリが消える問題"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "Xiaomi クラウドサービス": [
+      "最適化: クラウドサービスのホームページを再設計し、空き容量がより分かりやすく表示されるようになりました。",
+      "最適化：Mi Cloudのスタートページを再設計しました。より見やすくなりました"
+    ],
+    "システム": [
+      "最適化: Android セキュリティパッチを2019年3月に更新。システムの安全性が向上しました。",
+      "Android セキュリティパッチを 2019 年 5 月に更新しました。システムの安全性が向上しました。"
+    ],
+    "電話": [
+      "修正: 通話終了に想定より時間がかかる問題",
+      "修正: 着信のフローティングバーと通話の緑色バーが同時に表示される問題。"
     ]
   },
   "logs_ko": {
-    "System": [
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security.",
-      "Updated Android Security Patch to May 2019. Increased system security."
+    "잠금화면, 상태 바, 알림 바": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "수정: 배터리가 부족할 때 알림 LED가 깜박이지 않던 버그.",
+      "새 기능: 시스템 테마에서 잠금 화면 시계가 3가지 사용자 지정 스타일을 지원하며, 잠금 화면 고급 설정에서 변경할 수 있습니다.",
+      "새 기능: 잠금 화면에서 알림 패널을 아래로 내려 여는 것을 금지할 수 있습니다",
+      "수정: 배터리가 부족할 때 알림 LED가 깜박이지 않던 버그.",
+      "수정: 가로 모드에서 배터리 부족 경고가 표시되지 않는 문제 수정",
+      "수정: 통화 시간 버블이 알림 아이콘과 겹치는 문제"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
-    ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons"
-    ],
-    "Settings": [
+    "설정": [
       "Optimization: Sorting principles for Wi-Fi networks",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
+      "최적화: WLAN 목록이 신호 강도에 따라 정렬되도록 조정",
+      "수정: 알림창에서 동기화를 켜거나 끌 때 동기화 화면이 새로 고쳐지지 않던 문제"
     ],
-    "Security": [
-      "Fix: Dual apps disappeared after a reboot"
+    "보안": [
+      "수정: 재부팅 후 듀얼 앱이 사라지는 문제",
+      "수정: 재부팅 후 듀얼 앱이 사라지는 문제"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "Xiaomi 클라우드 서비스": [
+      "최적화: 클라우드 서비스 홈페이지를 재설계하여 사용 가능한 공간이 더 직관적으로 표시됩니다.",
+      "최적화: Mi Cloud 새 홈페이지가 최적화되어 클라우드 공간 정보가 더 명확하게 표시됩니다."
+    ],
+    "시스템": [
+      "최적화: Android 보안 패치를 2019년 3월로 업데이트했습니다. 시스템 보안이 향상되었습니다.",
+      "Android 보안 패치를 2019년 5월로 업데이트했습니다. 시스템 보안이 향상되었습니다."
+    ],
+    "전화": [
+      "수정: 통화 종료가 예상보다 오래 걸리는 문제",
+      "수정: 수신 전화 플로팅 바와 통화 녹색 바가 동시에 표시되는 문제."
     ]
   },
   "logs_ru": {
     "Система": [
+      "Обновление системы безопасности Android (может 2019 года). Улучшена безопасность системы.",
       "Оптимизация: Обновление системы безопасности Android (март 2019 года). Улучшена безопасность системы.",
       "Обновление системы безопасности Android (может 2019 года). Улучшена безопасность системы."
     ],
-    "Телефон": [
-      "Исправлено: Завершение вызова выполнялось слишком долго",
-      "Исправлено: Значки в строке состояния и всплывающее уведомление вызовов появлялись одновременно"
-    ],
     "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Новое: Добавлены настраиваемые часы для экрана блокировки (Настройки > Блокировка и защита > Расширенные настройки). Новые часы для экрана блокировки несовместимы со сторонними темами",
+      "Исправлено: LED индикатор не загорался при низком уровне заряда аккумулятора",
       "Новое: Добавлены настраиваемые часы для экрана блокировки (Настройки > Блокировка и защита > Расширенные настройки). Новые часы для экрана блокировки несовместимы со сторонними темами",
       "Новое: Теперь вы можете ограничить открытие Шторки уведомлений на экране блокировки",
       "Исправлено: LED индикатор не загорался при низком уровне заряда аккумулятора",
@@ -134,160 +179,192 @@
     ],
     "Настройки": [
       "Оптимизация: Принцип сортировки сетей Wi-Fi",
+      "Оптимизация: Принцип сортировки сетей Wi-Fi",
       "Исправлено: Страница синхронизации не обновлялась всякий раз, когда синхронизация была включена или отключена через Шторку уведомлений"
     ],
     "Безопасность": [
+      "Исправлено: Клоны приложений исчезали после перезагрузки",
       "Исправлено: Клоны приложений исчезали после перезагрузки"
     ],
-    "Mi Cloud": [
+    "Облачный сервис Xiaomi": [
+      "Оптимизация: Мы переработали начальную страницу Mi Cloud. Теперь она выглядит намного лучше!",
       "Оптимизация: Мы переработали начальную страницу Mi Cloud. Теперь она выглядит намного лучше!"
+    ],
+    "Телефон": [
+      "Исправлено: Завершение вызова выполнялось слишком долго",
+      "Исправлено: Значки в строке состояния и всплывающее уведомление вызовов появлялись одновременно"
     ]
   },
   "logs_uk": {
-    "System": [
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security.",
+    "Екран блокування, рядок стану, панель сповіщень": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Виправлено: світлодіод сповіщень не блимав, коли заряд батареї був низьким.",
+      "Нове: у системних темах годинник екрана блокування підтримує три власні стилі, які можна змінити в розширених налаштуваннях екрана блокування.",
+      "Нове: додано підтримку заборони відкриття панелі сповіщень на екрані блокування",
+      "Виправлено: світлодіод сповіщень не блимав, коли заряд батареї був низьким.",
+      "Виправлення: Попередження про низький заряд батареї не відображалося в альбомному режимі",
+      "Виправлено: бульбашка тривалості виклику перекривалася з іконками сповіщень"
+    ],
+    "Налаштування": [
+      "Optimization: Sorting principles for Wi-Fi networks",
+      "Оптимізація: список WLAN сортується за силою сигналу",
+      "Виправлено: сторінка синхронізації не оновлювалася, коли синхронізацію вмикали або вимикали в панелі сповіщень"
+    ],
+    "Безпека": [
+      "Виправлено: Клони програм зникали після перезавантаження",
+      "Виправлено: Клони програм зникали після перезавантаження"
+    ],
+    "Хмарний сервіс Xiaomi": [
+      "Оптимізація: головну сторінку хмарного сервісу перероблено, доступний простір тепер відображається більш наочно.",
+      "Оптимізація: оптимізовано нову головну сторінку Mi Cloud, інформація про хмарний простір відображається чіткіше."
+    ],
+    "Система": [
+      "Оптимізація: Оновлено патч безпеки Android до березня 2019 року. Безпеку системи підвищено.",
       "Updated Android Security Patch to May 2019. Increased system security."
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
-    ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons"
-    ],
-    "Settings": [
-      "Optimization: Sorting principles for Wi-Fi networks",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
-    ],
-    "Security": [
-      "Fix: Dual apps disappeared after a reboot"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "Телефон": [
+      "Виправлено: завершення викликів тривало довше, ніж очікувалося",
+      "Виправлено: плаваюча панель вхідного виклику та зелена смуга виклику відображалися одночасно."
     ]
   },
   "logs_pl": {
+    "Ekran blokady, pasek powiadomień,panel powiadomień": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Poprawka: dioda powiadomień nie migała przy niskim poziomie baterii.",
+      "Nowość: w motywach systemowych zegar ekranu blokady obsługuje trzy niestandardowe style, które można zmienić w zaawansowanych ustawieniach ekranu blokady.",
+      "Nowość: można teraz zablokować otwieranie panelu powiadomień na ekranie blokady",
+      "Poprawka: dioda powiadomień nie migała przy niskim poziomie baterii.",
+      "Poprawka: Ostrzeżenie o niskim poziomie baterii nie wyświetlało się w trybie poziomym",
+      "Naprawiono: bąbelek czasu połączenia nakładał się na ikony powiadomień"
+    ],
+    "Ustawienia": [
+      "Optimization: Sorting principles for Wi-Fi networks",
+      "Optymalizacja: lista WLAN sortowana według siły sygnału",
+      "Poprawka: strona synchronizacji nie odświeżała się po włączeniu lub wyłączeniu synchronizacji z panelu powiadomień"
+    ],
+    "Bezpieczeństwo": [
+      "Poprawiono: Aplikacje dualne znikały po ponownym uruchomieniu",
+      "Poprawiono: Aplikacje dualne znikały po ponownym uruchomieniu"
+    ],
+    "Usługa w chmurze Xiaomi": [
+      "Optymalizacja: przeprojektowano stronę główną usługi w chmurze; dostępna przestrzeń jest teraz wyświetlana bardziej intuicyjnie.",
+      "Optymalizacja: zoptymalizowano nową stronę główną Mi Cloud, informacje o przestrzeni w chmurze są wyświetlane wyraźniej."
+    ],
     "System": [
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security.",
+      "Optymalizacja: Zaktualizowano poprawkę zabezpieczeń Androida do marca 2019 r. Zwiększono bezpieczeństwo systemu.",
       "Updated Android Security Patch to May 2019. Increased system security."
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
-    ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons"
-    ],
-    "Settings": [
-      "Optimization: Sorting principles for Wi-Fi networks",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
-    ],
-    "Security": [
-      "Fix: Dual apps disappeared after a reboot"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "Telefon": [
+      "Naprawiono: Zakończenie połączeń trwało dłużej niż oczekiwano",
+      "Poprawka: pływający pasek połączenia przychodzącego i zielony pasek połączenia wyświetlały się jednocześnie."
     ]
   },
   "logs_de": {
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
+      "Neu: Anpassbare Uhr auf dem Sperrbildschirm (Einstellungen > Sperrbildschirm & Passwort > Erweiterte Einstellungen)",
+      "Fehler behoben: Benachrichtigungs-LED blinkte bei niedrigem Akkustand nicht.",
+      "Neu: Im Systemdesign unterstützt die Sperrbildschirm-Uhr drei benutzerdefinierte Stile, die in den erweiterten Sperrbildschirm-Einstellungen geändert werden können.",
+      "Neu: Öffnen der Benachrichtigungsleiste auf dem Sperrbildschirm kann jetzt gesperrt werden",
+      "Fehler behoben: Benachrichtigungs-LED blinkte bei niedrigem Akkustand nicht.",
+      "Behebung: Warnung bei niedrigem Akkustand wurde im Querformat nicht angezeigt",
+      "Behoben: Überlappung zwischen Anrufzeit-Blase und Benachrichtigungssymbolen"
+    ],
+    "Einstellungen": [
+      "Optimierung: Sortierung der WLAN-Netzwerke",
+      "Optimierung: WLAN-Liste wird nach Signalstärke sortiert",
+      "Behoben: Die Synchronisierungsseite wurde nicht aktualisiert, wenn die Synchronisierung in der Benachrichtigungsleiste ein- oder ausgeschaltet wurde"
+    ],
+    "Sicherheit": [
+      "Behoben: Duale Apps verschwanden nach einem Neustart",
+      "Behoben: Duale Apps verschwanden nach einem Neustart"
+    ],
+    "Xiaomi Cloud-Dienst": [
+      "Optimierung: Die Startseite des Cloud-Dienstes wurde neu gestaltet; der verfügbare Speicher wird jetzt intuitiver angezeigt.",
+      "Optimierung: Wir haben die Startseite von Mi Cloud neu gestaltet. Sie sieht jetzt viel besser aus"
+    ],
     "System": [
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security.",
-      "Updated Android Security Patch to May 2019. Increased system security."
+      "Optimierung: Android-Sicherheitspatch auf März 2019 aktualisiert. Systemsicherheit verbessert.",
+      "Android-Sicherheitspatch auf Mai 2019 aktualisiert. Systemischerheit erhöht."
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
-    ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons"
-    ],
-    "Settings": [
-      "Optimization: Sorting principles for Wi-Fi networks",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
-    ],
-    "Security": [
-      "Fix: Dual apps disappeared after a reboot"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "Telefon": [
+      "Behoben: Anrufe beenden dauerte länger als erwartet",
+      "Behebung: Die schwebende Leiste für eingehende Anrufe und der grüne Anrufbalken wurden gleichzeitig angezeigt."
     ]
   },
   "logs_fr": {
-    "System": [
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security.",
-      "Updated Android Security Patch to May 2019. Increased system security."
+    "Écran de verrouillage, Barre d'état, Panneau de notification": [
+      "Nouveau Présentation de l’horloge de l’écran de verrouillage personnalisable (Paramètres> Écran de verrouillage et mot de passe> Paramètres avancés). La nouvelle horloge de l'écran de verrouillage ne fonctionne pas avec les thèmes tiers.",
+      "Correction : la LED de notification ne clignotait pas lorsque la batterie était faible.",
+      "Nouveau : sous les thèmes système, l’horloge de l’écran de verrouillage prend en charge trois styles personnalisés, modifiables dans les paramètres avancés de l’écran de verrouillage.",
+      "Nouveau : il est désormais possible d’interdire l’ouverture du panneau de notifications sur l’écran de verrouillage",
+      "Correction : la LED de notification ne clignotait pas lorsque la batterie était faible.",
+      "Correction : L'avertissement de batterie faible ne s'affichait pas en mode paysage",
+      "Corrigé : chevauchement entre la bulle de durée d’appel et les icônes de notification"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
+    "Paramètres": [
+      "Optimisation Principes de tri pour les réseaux Wi-Fi",
+      "Optimisation : tri de la liste WLAN par intensité du signal",
+      "Correction : la page de synchronisation ne s’actualisait pas lorsqu’on activait ou désactivait la synchronisation depuis le panneau de notifications"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons"
+    "Sécurité": [
+      "Corrigé : Les applications duales disparaissaient après un redémarrage",
+      "Corrigé : Les applications duales disparaissaient après un redémarrage"
     ],
-    "Settings": [
-      "Optimization: Sorting principles for Wi-Fi networks",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
+    "Service cloud Xiaomi": [
+      "Optimisation: Nous avons repensé la page de démarrage de Mi Cloud. Ça a l'air beaucoup mieux maintenant!",
+      "Optimisation : la nouvelle page d’accueil de Mi Cloud a été optimisée, les informations sur l’espace cloud s’affichent plus clairement."
     ],
-    "Security": [
-      "Fix: Dual apps disappeared after a reboot"
+    "Système": [
+      "Optimisation : Correctif de sécurité Android mis à jour vers mars 2019. Sécurité du système renforcée.",
+      "Correctif de sécurité Android mis à jour à mai 2019. Sécurité du système renforcée."
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "Téléphone": [
+      "Correction : la fin des appels prenait plus de temps que prévu",
+      "Correction : la barre flottante d’appel entrant et la barre verte d’appel s’affichaient en même temps."
     ]
   },
   "logs_it": {
     "Sistema": [
+      "Aggiornamento della patch di sicurezza Android a Maggio 2019. Maggiore sicurezza del sistema.",
       "Ottimizzazione: Aggiornamento della patch di sicurezza Android a marzo 2019. Maggiore sicurezza del sistema.",
       "Aggiornamento della patch di sicurezza Android a Maggio 2019. Maggiore sicurezza del sistema."
+    ],
+    "Schermata di blocco, barra di stato, area delle notifiche": [
+      "Nuovo: Introdotto l'orologio personalizzabile per la schermata di blocco (Impostazioni > Schermata di blocco e password > Impostazioni avanzate). Il nuovo orologio della schermata di blocco non funziona con temi di terze parti.",
+      "Risolto: Il LED non si illuminava quando la batteria era scarica",
+      "Nuovo: Introdotto l'orologio personalizzabile per la schermata di blocco (Impostazioni > Schermata di blocco e password > Impostazioni avanzate). Il nuovo orologio della schermata di blocco non funziona con temi di terze parti.",
+      "Nuovo: È ora possibile limitare l'apertura dell'area delle notifiche sulla schermata di blocco",
+      "Risolto: Il LED non si illuminava quando la batteria era scarica",
+      "Risolto: Gli avvisi di batteria scarica non apparivano in modalità Orizzontale",
+      "Risolto: L'icona della durata di chiamata si sovrapponeva alle icone di notifica"
+    ],
+    "Impostazioni": [
+      "Ottimizzazione: Principi di ordinamento delle reti Wi-Fi",
+      "Ottimizzazione: Principi di ordinamento delle reti Wi-Fi",
+      "Risolto: La pagina di sincronizzazione non poteva essere aggiornata quando la sincronizzazione era attiva o disattivata nell'area delle notifiche"
+    ],
+    "Sicurezza": [
+      "Risolto: Le app clonate sparivano dopo il riavvio",
+      "Risolto: Le app clonate sparivano dopo il riavvio"
+    ],
+    "Servizio cloud Xiaomi": [
+      "Ottimizzazione: Abbiamo ridisegnato la pagina iniziale di Mi Cloud. Ora è molto meglio!",
+      "Ottimizzazione: Abbiamo ridisegnato la pagina iniziale di Mi Cloud. Ora è molto meglio!"
     ],
     "Telefono": [
       "Risolto: Terminare le chiamate richiedeva più tempo del previsto",
       "Risolto: I collegamenti della barra di stato e le notifiche a comparsa per le chiamate apparivano contemporaneamente"
-    ],
-    "Schermata di blocco, barra di stato, area delle notifiche": [
-      "Nuovo: Introdotto l^orologio personalizzabile per la schermata di blocco (Impostazioni > Schermata di blocco e password > Impostazioni avanzate). Il nuovo orologio della schermata di blocco non funziona con temi di terze parti.",
-      "Nuovo: È ora possibile limitare l^apertura dell^area delle notifiche sulla schermata di blocco",
-      "Risolto: Il LED non si illuminava quando la batteria era scarica",
-      "Risolto: Gli avvisi di batteria scarica non apparivano in modalità Orizzontale",
-      "Risolto: L^icona della durata di chiamata si sovrapponeva alle icone di notifica"
-    ],
-    "Impostazioni": [
-      "Ottimizzazione: Principi di ordinamento delle reti Wi-Fi",
-      "Risolto: La pagina di sincronizzazione non poteva essere aggiornata quando la sincronizzazione era attiva o disattivata nell^area delle notifiche"
-    ],
-    "Sicurezza": [
-      "Risolto: Le app clonate sparivano dopo il riavvio"
-    ],
-    "Mi Cloud": [
-      "Ottimizzazione: Abbiamo ridisegnato la pagina iniziale di Mi Cloud. Ora è molto meglio!"
     ]
   },
   "logs_es": {
     "Sistema": [
+      "Parche de seguridad de Android actualizado a Mayo de 2019. Seguridad del sistema incrementada.",
       "Optimización: Parche de seguridad de Android actualizado a marzo de 2019. Seguridad del sistema incrementada.",
       "Parche de seguridad de Android actualizado a Mayo de 2019. Seguridad del sistema incrementada."
     ],
-    "Teléfono": [
-      "Reparado: Terminar las llamadas llevó más tiempo de lo esperado",
-      "Reparado: El acceso directo a la Barra de estado y notificaciones flotantes para llamadas aparecieron al mismo tiempo"
-    ],
     "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Nuevo: Introducción de un reloj personalizable en la Pantalla de bloqueo (Ajustes > Pantalla de bloqueo y contraseña > Ajustes avanzados). El nuevo reloj de la Pantalla de bloqueo no funciona con temas de terceros.",
+      "Reparado: La luz LED no parpadeó cuando la batería estaba baja",
       "Nuevo: Introducción de un reloj personalizable en la Pantalla de bloqueo (Ajustes > Pantalla de bloqueo y contraseña > Ajustes avanzados). El nuevo reloj de la Pantalla de bloqueo no funciona con temas de terceros.",
       "Nuevo: Ahora puedes restringir abrir la Barra de notificaciones en la Pantalla de bloqueo",
       "Reparado: La luz LED no parpadeó cuando la batería estaba baja",
@@ -296,52 +373,63 @@
     ],
     "Ajustes": [
       "Optimización: Los valores de redes Wi-Fi son ordenados",
+      "Optimización: Los valores de redes Wi-Fi son ordenados",
       "Reparado: La página de sincronización no pudo ser refrescada cuando la sincronización fue activada o desactivada en la Barra de notificaciones"
     ],
     "Seguridad": [
+      "Reparado: Las aplicaciones duales desaparecían después de reiniciar el teléfono",
       "Reparado: Las aplicaciones duales desaparecían después de reiniciar el teléfono"
     ],
-    "Mi Cloud": [
+    "Servicio en la nube de Xiaomi": [
+      "Optimización: Hemos rediseñado la página de inicio de Mi Nube. ¡Ahora tiene mucho mejor aspecto!",
       "Optimización: Hemos rediseñado la página de inicio de Mi Nube. ¡Ahora tiene mucho mejor aspecto!"
+    ],
+    "Teléfono": [
+      "Reparado: Terminar las llamadas llevó más tiempo de lo esperado",
+      "Reparado: El acceso directo a la Barra de estado y notificaciones flotantes para llamadas aparecieron al mismo tiempo"
     ]
   },
   "logs_pt": {
-    "System": [
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security.",
+    "Tela de bloqueio, Barra de status e Área de notificações": [
+      "Novo Introduzindo o Relógio personalizável na Tela de bloqueio (Configurar > Bloqueio de tela e senhas > Configurações avançadas). O novo relógio da Tela de bloqueio não funciona com temas de terceiros.",
+      "Correção: o LED de notificação não piscava quando a bateria estava fraca.",
+      "Novo: nos temas do sistema, o relógio da tela de bloqueio suporta três estilos personalizados, que podem ser alterados nas configurações avançadas da tela de bloqueio.",
+      "Novo: agora é possível impedir a abertura do painel de notificações na tela de bloqueio",
+      "Correção: o LED de notificação não piscava quando a bateria estava fraca.",
+      "Correção: O aviso de bateria fraca não aparecia no modo paisagem",
+      "Correção: o balão de duração da chamada se sobrepunha aos ícones de notificação"
+    ],
+    "Configurações": [
+      "Otimização Ordenação de redes Wi-Fi salvas",
+      "Otimização: lista WLAN ajustada para classificar por intensidade do sinal",
+      "Correção: a página de sincronização não era atualizada ao ativar ou desativar a sincronização no painel de notificações"
+    ],
+    "Segurança": [
+      "Correção: Os apps duplos desapareciam após reiniciar",
+      "Correção: Os apps duplos desapareciam após reiniciar"
+    ],
+    "Serviço de nuvem Xiaomi": [
+      "Otimização: Nós redesenhamos a página inicial da Mi Cloud. Ela está muito melhor agora!",
+      "Otimização: nova página inicial do Mi Cloud otimizada, informações de armazenamento em nuvem exibidas com mais clareza."
+    ],
+    "Sistema": [
+      "Otimização: Patch de segurança do Android atualizado para março de 2019. Segurança do sistema melhorada.",
       "Updated Android Security Patch to May 2019. Increased system security."
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
-    ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons"
-    ],
-    "Settings": [
-      "Optimization: Sorting principles for Wi-Fi networks",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
-    ],
-    "Security": [
-      "Fix: Dual apps disappeared after a reboot"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "Telefone": [
+      "Correção: encerrar chamadas demorava mais do que o esperado",
+      "Correção: a barra flutuante de chamada recebida e a barra verde de chamada apareciam ao mesmo tempo."
     ]
   },
   "logs_tr": {
     "Sistem": [
+      "Android Güvenlik Yaması Mayıs 2019 sürümüne güncellendi. Sistem güvenliği artırıldı.",
       "Optimizasyon: Android Güvenlik Yaması Mart 2019 sürümüne güncellendi. Sistem güvenliği artırıldı.",
       "Android Güvenlik Yaması Mayıs 2019 sürümüne güncellendi. Sistem güvenliği artırıldı."
     ],
-    "Telefon": [
-      "Onarım: Aramaları sonlandırmak beklenenden daha uzun sürdü",
-      "Onarım: Durum çubuğu kısayolu ve aramalar için kayan bildirimler aynı anda belirdi"
-    ],
     "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Yeni: Özelleştirilebilir Kilit ekranı saati (Ayarlar > Kilit ekranı & şifre > Gelişmiş ayarlar). Yeni kilit ekranı saati üçüncü parti temaları ile çalışmaz.",
+      "Onarım: Pil seviyesi düşükken LED ışık yanıp sönmedi",
       "Yeni: Özelleştirilebilir Kilit ekranı saati (Ayarlar > Kilit ekranı & şifre > Gelişmiş ayarlar). Yeni kilit ekranı saati üçüncü parti temaları ile çalışmaz.",
       "Yeni: Kilit ekranında Bildirim çubuğunun açılmasını kısıtlayabilirsiniz",
       "Onarım: Pil seviyesi düşükken LED ışık yanıp sönmedi",
@@ -350,202 +438,252 @@
     ],
     "Ayarlar": [
       "Optimizasyon: Wi-Fi ağları için sıralama ilkeleri",
+      "Optimizasyon: Wi-Fi ağları için sıralama ilkeleri",
       "Onarım: Senkronizasyon Bildirim çubuğunda açıldığında veya kapatıldığında senkronizasyon sayfası yenilenemedi"
     ],
     "Güvenlik": [
+      "Onarım: Çift uygulamaların cihazın yeniden başlatılmasından sonraki görüntülenmeme sorunu",
       "Onarım: Çift uygulamaların cihazın yeniden başlatılmasından sonraki görüntülenmeme sorunu"
     ],
-    "Mi Cloud": [
-      "Optimizasyon: Mi Cloud^un ana sayfasını yeniden tasarladık, artık çok daha iyi görünüyor!"
+    "Xiaomi Bulut Hizmeti": [
+      "Optimizasyon: Mi Cloud'un ana sayfasını yeniden tasarladık, artık çok daha iyi görünüyor!",
+      "Optimizasyon: Mi Cloud'un ana sayfasını yeniden tasarladık, artık çok daha iyi görünüyor!"
+    ],
+    "Telefon": [
+      "Onarım: Aramaları sonlandırmak beklenenden daha uzun sürdü",
+      "Onarım: Durum çubuğu kısayolu ve aramalar için kayan bildirimler aynı anda belirdi"
     ]
   },
   "logs_id": {
-    "System": [
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security.",
+    "Layar kunci, bar status, layar notifikasi": [
+      "Baru Memperkenalkan jam Layar kunci yang dapat dikustomisasi (Setelan > Kunci layar & sandi> Setelan lanjutan). Jam Layar kunci baru tidak berfungsi dalam tema pihak ketiga.",
+      "Perbaikan: Lampu notifikasi tidak berkedip saat baterai lemah.",
+      "Baru: Pada tema sistem, jam layar kunci mendukung tiga gaya kustom, dapat diubah di pengaturan lanjutan layar kunci.",
+      "Baru: Dukungan untuk mencegah membuka panel notifikasi di layar kunci",
+      "Perbaikan: Lampu notifikasi tidak berkedip saat baterai lemah.",
+      "Perbaikan: Peringatan baterai lemah tidak muncul dalam mode lanskap",
+      "Perbaikan: gelembung durasi panggilan tumpang tindih dengan ikon notifikasi"
+    ],
+    "Pengaturan": [
+      "Pengoptimalan Pengurutan daftar Wi-Fi berdasarkan kekuatan sinyal",
+      "Optimasi: Daftar WLAN diurutkan berdasarkan kekuatan sinyal",
+      "Perbaikan: Halaman sinkronisasi tidak diperbarui saat sinkronisasi diaktifkan atau dinonaktifkan dari panel notifikasi"
+    ],
+    "Keamanan": [
+      "Perbaikan: Aplikasi ganda menghilang setelah reboot",
+      "Perbaikan: Aplikasi ganda menghilang setelah reboot"
+    ],
+    "Layanan Cloud Xiaomi": [
+      "Pengoptimalan: Halaman awal Mi Cloud didesain ulang. Sekarang semakin terlihat lebih baik!",
+      "Optimasi: Halaman utama baru Mi Cloud telah dioptimalkan, informasi ruang cloud ditampilkan lebih jelas."
+    ],
+    "Sistem": [
+      "Optimasi: Patch keamanan Android diperbarui ke Maret 2019. Keamanan sistem ditingkatkan.",
       "Updated Android Security Patch to May 2019. Increased system security."
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
-    ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons"
-    ],
-    "Settings": [
-      "Optimization: Sorting principles for Wi-Fi networks",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
-    ],
-    "Security": [
-      "Fix: Dual apps disappeared after a reboot"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "Telepon": [
+      "Perbaikan: Mengakhiri panggilan membutuhkan waktu lebih lama dari yang diharapkan",
+      "Perbaikan: Bilah mengambang panggilan masuk dan bilah hijau panggilan muncul bersamaan."
     ]
   },
   "logs_vi": {
-    "System": [
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security.",
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Sửa lỗi: đèn thông báo không nhấp nháy khi pin yếu.",
+      "Mới: Trong chủ đề hệ thống, đồng hồ màn hình khóa hỗ trợ ba kiểu tùy chỉnh, có thể thay đổi trong cài đặt nâng cao của màn hình khóa.",
+      "Mới: Hỗ trợ chặn kéo xuống bảng thông báo trên màn hình khóa",
+      "Sửa lỗi: đèn thông báo không nhấp nháy khi pin yếu.",
+      "Sửa lỗi: Cảnh báo pin yếu không hiển thị ở chế độ ngang",
+      "Đã sửa: bong bóng thời gian gọi bị chồng lên biểu tượng thông báo"
+    ],
+    "Cài đặt": [
+      "Optimization: Sorting principles for Wi-Fi networks",
+      "Tối ưu hóa: Danh sách WLAN được sắp xếp theo cường độ tín hiệu",
+      "Sửa lỗi: Trang đồng bộ không làm mới khi bật hoặc tắt đồng bộ từ bảng thông báo"
+    ],
+    "Bảo mật": [
+      "Đã sửa: Ứng dụng kép biến mất sau khi khởi động lại",
+      "Đã sửa: Ứng dụng kép biến mất sau khi khởi động lại"
+    ],
+    "Dịch vụ đám mây Xiaomi": [
+      "Tối ưu hóa: Trang chủ dịch vụ đám mây được thiết kế lại, dung lượng khả dụng hiển thị trực quan hơn.",
+      "Tối ưu hóa: Trang chủ mới của Mi Cloud đã được tối ưu, thông tin dung lượng đám mây hiển thị rõ ràng hơn."
+    ],
+    "Hệ thống": [
+      "Tối ưu: Đã cập nhật bản vá bảo mật Android lên tháng 3 năm 2019. Tăng cường bảo mật hệ thống.",
       "Updated Android Security Patch to May 2019. Increased system security."
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
-    ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons"
-    ],
-    "Settings": [
-      "Optimization: Sorting principles for Wi-Fi networks",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
-    ],
-    "Security": [
-      "Fix: Dual apps disappeared after a reboot"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "Điện thoại": [
+      "Đã sửa: Việc kết thúc cuộc gọi mất nhiều thời gian hơn dự kiến",
+      "Sửa: Thanh nổi cuộc gọi đến và thanh màu xanh cuộc gọi xuất hiện cùng lúc."
     ]
   },
   "logs_th": {
-    "System": [
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security.",
+    "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "แก้ไข: ไฟแจ้งเตือนไม่กะพริบเมื่อแบตเตอรี่ต่ำ",
+      "ใหม่: ภายใต้ธีมระบบ นาฬิกาหน้าจอล็อกรองรับรูปแบบกำหนดเอง 3 แบบ สามารถแก้ไขได้ในการตั้งค่าขั้นสูงของหน้าจอล็อก",
+      "ใหม่: รองรับการห้ามเลื่อนลงเพื่อเปิดแผงการแจ้งเตือนบนหน้าจอล็อก",
+      "แก้ไข: ไฟแจ้งเตือนไม่กะพริบเมื่อแบตเตอรี่ต่ำ",
+      "แก้ไข: คำเตือนแบตเตอรี่ต่ำไม่แสดงในโหมดแนวนอน",
+      "แก้ไข: ฟองเวลาการโทรทับซ้อนกับไอคอนการแจ้งเตือน"
+    ],
+    "การตั้งค่า": [
+      "Optimization: Sorting principles for Wi-Fi networks",
+      "การปรับให้เหมาะสม: ปรับรายการ WLAN ให้เรียงตามความแรงของสัญญาณ",
+      "แก้ไข: หน้าการซิงค์ไม่รีเฟรชเมื่อเปิดหรือปิดการซิงค์จากแผงการแจ้งเตือน"
+    ],
+    "ความปลอดภัย": [
+      "แก้ไข: แอปคู่หายไปหลังรีสตาร์ท",
+      "แก้ไข: แอปคู่หายไปหลังรีสตาร์ท"
+    ],
+    "บริการคลาวด์ Xiaomi": [
+      "ปรับปรุง: ออกแบบหน้าหลักของบริการคลาวด์ใหม่ ทำให้แสดงพื้นที่ว่างได้ชัดเจนขึ้น",
+      "ปรับปรุง: ปรับปรุงหน้าแรกใหม่ของ Mi Cloud ให้แสดงข้อมูลพื้นที่จัดเก็บบนคลาวด์ได้ชัดเจนขึ้น"
+    ],
+    "ระบบ": [
+      "เพิ่มประสิทธิภาพ: อัปเดตแพตช์ความปลอดภัย Android เป็นเดือนมีนาคม 2019 เพิ่มความปลอดภัยของระบบ",
       "Updated Android Security Patch to May 2019. Increased system security."
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
-    ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons"
-    ],
-    "Settings": [
-      "Optimization: Sorting principles for Wi-Fi networks",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
-    ],
-    "Security": [
-      "Fix: Dual apps disappeared after a reboot"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "โทรศัพท์": [
+      "แก้ไข: การวางสายใช้เวลานานกว่าที่คาดไว้",
+      "แก้ไข: แถบลอยของการโทรเข้าและแถบสีเขียวของการโทรแสดงพร้อมกัน"
     ]
   },
   "logs_ar": {
-    "System": [
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security.",
+    "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "إصلاح: لم يكن مؤشر الإشعارات يومض عند انخفاض البطارية.",
+      "جديد: ضمن سمات النظام، تدعم ساعة شاشة القفل ثلاثة أنماط مخصصة، ويمكن تعديلها في الإعدادات المتقدمة لشاشة القفل.",
+      "جديد: دعم منع سحب لوحة الإشعارات على شاشة القفل",
+      "إصلاح: لم يكن مؤشر الإشعارات يومض عند انخفاض البطارية.",
+      "إصلاح: إشعار انخفاض البطارية لم يظهر في الوضع الأفقي",
+      "إصلاح: تداخل فقاعة مدة المكالمة مع أيقونات الإشعارات"
+    ],
+    "الإعدادات": [
+      "Optimization: Sorting principles for Wi-Fi networks",
+      "تحسين: تعديل قائمة WLAN لتُرتب حسب قوة الإشارة",
+      "إصلاح: تعذّر تحديث صفحة المزامنة عند تشغيل المزامنة أو إيقافها من لوحة الإشعارات"
+    ],
+    "الأمان": [
+      "إصلاح: اختفت التطبيقات المزدوجة بعد إعادة التشغيل",
+      "إصلاح: اختفت التطبيقات المزدوجة بعد إعادة التشغيل"
+    ],
+    "خدمة Xiaomi السحابية": [
+      "تحسين: إعادة تصميم الصفحة الرئيسية لخدمة السحابة، وعرض المساحة المتاحة بشكل أكثر وضوحًا",
+      "تحسين: تم تحسين الصفحة الرئيسية الجديدة لـ Mi Cloud، وأصبحت معلومات التخزين السحابي أكثر وضوحًا."
+    ],
+    "النظام": [
+      "التحسين: تحديث تصحيح أمان Android إلى مارس 2019. تحسين أمان النظام.",
       "Updated Android Security Patch to May 2019. Increased system security."
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
-    ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons"
-    ],
-    "Settings": [
-      "Optimization: Sorting principles for Wi-Fi networks",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
-    ],
-    "Security": [
-      "Fix: Dual apps disappeared after a reboot"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "هاتف": [
+      "إصلاح: استغرق إنهاء المكالمات وقتًا أطول من المتوقع",
+      "إصلاح: ظهور شريط المكالمة العائم والشريط الأخضر للمكالمة في الوقت نفسه."
     ]
   },
   "logs_in": {
-    "System": [
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security.",
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "ठीक किया गया: बैटरी कम होने पर सूचना LED नहीं ब्लिंक होती थी।",
+      "नया: सिस्टम थीम के अंतर्गत, लॉक स्क्रीन घड़ी तीन कस्टम शैलियों का समर्थन करती है, जिन्हें लॉक स्क्रीन की उन्नत सेटिंग्स में बदला जा सकता है।",
+      "नया: लॉक स्क्रीन पर नोटिफ़िकेशन शेड को नीचे खींचकर खोलने से रोकें",
+      "ठीक किया गया: बैटरी कम होने पर सूचना LED नहीं ब्लिंक होती थी।",
+      "ठीक करें: लैंडस्केप मोड में कम बैटरी चेतावनी प्रदर्शित नहीं हुई",
+      "ठीक किया गया: कॉल अवधि बबल नोटिफ़िकेशन आइकन के साथ ओवरलैप हो रहा था"
+    ],
+    "सेटिंग्स": [
+      "Optimization: Sorting principles for Wi-Fi networks",
+      "अनुकूलन: WLAN सूची को सिग्नल स्ट्रेंथ के अनुसार क्रमबद्ध किया गया",
+      "फ़िक्स: नोटिफ़िकेशन शेड से सिंक चालू या बंद करने पर सिंक पेज रीफ़्रेश नहीं होता था"
+    ],
+    "सुरक्षा": [
+      "ठीक किया गया: रीस्टार्ट के बाद डुअल ऐप्स गायब हो जाते थे",
+      "ठीक किया गया: रीस्टार्ट के बाद डुअल ऐप्स गायब हो जाते थे"
+    ],
+    "Xiaomi क्लाउड सेवा": [
+      "अनुकूलन: क्लाउड सेवा के होमपेज को फिर से डिज़ाइन किया गया है, उपलब्ध स्थान अब और स्पष्ट रूप से दिखता है।",
+      "अनुकूलन: Mi Cloud के नए होमपेज को अनुकूलित किया गया, क्लाउड स्टोरेज की जानकारी अब और स्पष्ट दिखती है।"
+    ],
+    "सिस्टम": [
+      "अनुकूलन: Android सुरक्षा पैच को मार्च 2019 में अपडेट किया गया। सिस्टम सुरक्षा में सुधार।",
       "Updated Android Security Patch to May 2019. Increased system security."
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
-    ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons"
-    ],
-    "Settings": [
-      "Optimization: Sorting principles for Wi-Fi networks",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
-    ],
-    "Security": [
-      "Fix: Dual apps disappeared after a reboot"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "फ़ोन": [
+      "ठीक किया गया: कॉल समाप्त करने में अपेक्षा से अधिक समय लगा",
+      "फ़िक्स: इनकमिंग कॉल फ़्लोटिंग बार और कॉल ग्रीन बार का एक ही समय पर दिखना।"
     ]
   },
   "logs_ug": {
-    "System": [
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security.",
+    "Lockscreen, status bar, Notification shade": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Fix: LED light didn't blink when battery was low",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "يېڭى: قۇلۇپ ئېكرانى بېتىدە ئۇقتۇرۇش تاختىسىنى تۆۋەن تارتىشنى چەكلەشنى قوللايدۇ",
+      "Fix: LED light didn't blink when battery was low",
+      "Fix: Low battery warning didn't appear in landscape mode",
+      "Fix: Call time bubble overlapped with notification icons"
+    ],
+    "تەڭشەك": [
+      "Optimization: Sorting principles for Wi-Fi networks"
+    ],
+    "بىخەتەرلىك مەركىزى": [
+      "Fix: Dual apps disappeared after a reboot"
+    ],
+    "Xiaomi بۇلۇت مۇلازىمىتى": [
+      "ياخشىلاندى: بۇلۇت مۇلازىمىتى باش بېتى قايتا لايىھەلەندى، ئىشلەتكىلى بولىدىغان بوشلۇق كۆرسىتىلىشى تېخىمۇ كۆرۈنەرلىك بولدى.",
+      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!"
+    ],
+    "سىستېما": [
+      "ئەلالاشتۇرۇش: Google بىخەتەرلىك يامىقى يېڭىلاندى (2019#3)، سىستېما بىخەتەرلىكى ئاشۇرۇلدى.",
       "Updated Android Security Patch to May 2019. Increased system security."
     ],
-    "Phone": [
+    "تېلېفون": [
       "Fix: Ending calls took longer time than expected",
       "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons"
-    ],
-    "Settings": [
-      "Optimization: Sorting principles for Wi-Fi networks",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
+    "تەڭشەكلەر": [
+      "ياخشىلاش: WLAN تىزىملىكى سىگنال كۈچى بويىچە تەرتىپلىنىدۇ",
+      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade"
     ],
     "Security": [
       "Fix: Dual apps disappeared after a reboot"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
     ]
   },
   "logs_bo": {
-    "System": [
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security.",
-      "Updated Android Security Patch to May 2019. Increased system security."
-    ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
-    ],
     "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Fix: LED light didn't blink when battery was low",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
       "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode",
+      "Fix: LED light didn't blink when battery was low",
+      "Fix: Low battery warning didn't appear in landscape mode",
       "Fix: Call time bubble overlapped with notification icons"
     ],
     "Settings": [
-      "Optimization: Sorting principles for Wi-Fi networks",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
+      "Optimization: Sorting principles for Wi-Fi networks"
     ],
-    "Security": [
+    "བདེ་འཇགས་ལྟེ་གནས": [
       "Fix: Dual apps disappeared after a reboot"
     ],
     "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!",
+      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!"
+    ],
+    "རིམ་ལུགས": [
+      "Optimization: Updated Android Security Patch to March 2019. Increased system security.",
+      "Updated Android Security Patch to May 2019. Increased system security."
+    ],
+    "ཁ་པར": [
+      "Fix: Ending calls took longer time than expected",
+      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
+    ],
+    "སྒྲིག་བཀོད": [
+      "Optimization: Sorting principles for Wi-Fi networks",
+      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade"
+    ],
+    "Security": [
+      "Fix: Dual apps disappeared after a reboot"
     ]
   }
 }

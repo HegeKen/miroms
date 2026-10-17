@@ -6,14 +6,22 @@
     "系统": [
       "新增 预装SenseAR平台，支持王者荣耀AR相机",
       "修复 人脸解锁失灵与成功率低的问题",
-      "修复 微信界面锁屏解锁后，快捷按键区域显示异常的问题"
+      "修复 微信界面锁屏解锁后，快捷按键区域显示异常的问题",
+      "修复 人脸解锁相关的问题",
+      "修复 使用微信时锁屏，解锁后快捷方式异常的问题"
     ],
     "锁屏、状态栏、通知栏": [
       "新增 状态栏支持显示通知图标，前往「设置-通知和状态栏-来通知时显示图标」开启",
       "修复 使用数字电池样式后，电池图标显示异常的问题",
       "修复 锁屏时收到不重要通知不亮屏的问题",
       "修复 锁屏时充电球与预计充电时间显示重叠的问题",
-      "修复 偶现亮屏息屏时屏幕闪烁的问题"
+      "修复 偶现亮屏息屏时屏幕闪烁的问题",
+      "新增 状态栏支持显示通知图标，前往「设置-通知和状态栏-来通知时显示图标」开启",
+      "修复 使用数字电池样式后，电池图标显示异常的问题",
+      "修复 锁屏时收到不重要通知不亮屏的问题",
+      "修复 锁屏时充电球与预计充电时间显示重叠的问题",
+      "修复 偶现亮屏息屏时屏幕闪烁的问题",
+      "修复 锁屏时充电球与预计充电时间显示重叠的问题"
     ],
     "相机": [
       "新增 合影优选模式",
@@ -21,192 +29,1390 @@
       "新增 支持手持超级夜景拍摄功能",
       "修复 全面屏下相机参考线问题",
       "修复 相机闪退问题",
+      "修复 偶现的自动连拍问题",
+      "新增 合影优选模式",
+      "新增 支持960帧慢动作拍摄功能",
+      "新增 支持手持超级夜景拍摄功能",
+      "修复 全面屏下相机参考线问题",
+      "修复 相机闪退问题",
+      "修复 偶现的自动连拍问题",
       "修复 偶现的自动连拍问题"
     ],
     "备份": [
+      "修复 从U盘恢复手机中未安装应用，图标显示异常的问题",
       "修复 从U盘恢复手机中未安装应用，图标显示异常的问题"
     ],
     "设置": [
-      "修复 设置同步显示两个添加个人账户选项的问题"
+      "修复 设置同步显示两个添加个人账户选项的问题",
+      "修复 设置中出现两个添加个人账户选项的问题"
     ],
     "系统更新": [
+      "新增 桌面快捷方式功能，可以在更新设置中开启",
       "新增 桌面快捷方式功能，可以在更新设置中开启"
     ],
     "文件管理器": [
       "修复 重命名或者解密后的文件无法搜索的问题",
       "修复 在某些情况下，缩略图刷新不及时的问题",
       "修复 分屏模式下，垃圾清理页面显示异常的问题",
+      "修复 私密文件夹中剪切图片视频后打开文件异常的问题",
+      "修复 重命名或者解密后的文件无法搜索的问题",
+      "修复 在某些情况下，缩略图刷新不及时的问题",
+      "修复 分屏模式下，垃圾清理页面显示异常的问题",
+      "修复 私密文件夹中剪切图片视频后打开文件异常的问题",
       "修复 私密文件夹中剪切图片视频后打开文件异常的问题"
     ],
     "录音机": [
       "修复 设置图标显示异常的问题",
+      "修复 暂停录音后无法及时更新到状态栏的问题",
+      "修复 设置图标显示异常的问题",
       "修复 暂停录音后无法及时更新到状态栏的问题"
     ],
     "小米帐号": [
-      "修复 小米账号登陆页面语言显示错误的问题"
+      "修复 小米账号登陆页面语言显示错误的问题",
+      "修复 小米账号登陆页面语言显示错误的问题",
+      "修复 小米账号登入叶面语言显示错误的问题"
+    ],
+    "其他": [
+      "提高系统的稳定性",
+      "优化系统的流畅度"
     ]
   },
   "logs_en": {
-    "System": [
-      "Fix: Issues with Face unlock",
-      "Fix: Issues with shortcuts after unlocking the screen that was locked while using WeChat"
-    ],
     "Lockscreen, Status Bar, Notification Bar": [
+      "Add Option for showing notification icons (Settings > Notifications & status bar)",
+      "Fix: Battery icon wasn't displayed correctly when percentage was shown",
+      "Restore Screen didn't light up for unimportant notifications when the device was locked",
+      "Fix: Lock screen UI elements overlapped when the device was charging",
+      "Fix: Screen flashed after lighting up in some cases",
       "New: Option for showing notification icons (Settings > Notifications & status bar)",
-      "Fix: Battery icon wasn^t displayed correctly when percentage was shown",
-      "Fix: Screen didn^t light up for unimportant notifications when the device was locked",
+      "Fix: Battery icon wasn't displayed correctly when percentage was shown",
+      "Fix: Screen didn't light up for unimportant notifications when the device was locked",
       "Fix: Lock screen UI elements overlapped when the device was charging",
       "Fix: Screen flashed after lighting up in some cases"
     ],
     "Camera": [
+      "Add Optimized group selfies",
+      "New: You can shoot 960fps videos now",
+      "New: Enhanced low light mode",
+      "Fix: Issues with gridlines in the fullscreen mode",
+      "Restore Camera crashed in some cases",
+      "Fix: Burst shots were made accidentally",
       "New: Optimized group selfies",
       "New: You can shoot 960fps videos now",
       "New: Enhanced low light mode",
       "Fix: Issues with gridlines in the fullscreen mode",
       "Fix: Camera crashed in some cases",
+      "Fix: Burst shots were made accidentally",
       "Fix: Burst shots were made accidentally"
     ],
     "Backup": [
-      "Fix: App icons weren^t displayed correctly when apps that weren^t installed were restored from a USB device"
+      "Restore App icons weren't displayed correctly when apps that weren't installed were restored from a USB device",
+      "Fix: App icons weren't displayed correctly when apps that weren't installed were restored from a USB device"
     ],
     "Settings": [
+      "Restore Two options for adding personal accounts were shown in the Settings",
       "Fix: Two options for adding personal accounts were shown in the Settings"
     ],
     "Updater": [
+      "Add A Home screen shortcut option",
       "New: A Home screen shortcut option"
     ],
     "File Explorer": [
-      "Fix: Couldn^t find renamed or decrypted items using search",
+      "Restore Couldn't find renamed or decrypted items using search",
       "Fix: Sometimes it took too long for the thumbnails to refresh",
-      "Fix: Cleaner wasn^t sidplayed correctly in Split screen",
+      "Fix: Cleaner wasn't sidplayed correctly in Split screen",
+      "Fix: Errors occured after videos from the folder with hidden files were edited",
+      "Fix: Couldn't find renamed or decrypted items using search",
+      "Fix: Sometimes it took too long for the thumbnails to refresh",
+      "Fix: Cleaner wasn't sidplayed correctly in Split screen",
       "Fix: Errors occured after videos from the folder with hidden files were edited"
     ],
     "Recorder": [
-      "Fix: The settings icon wasn^t displayed correctly",
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Restore The settings icon wasn't displayed correctly",
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused",
+      "Fix: The settings icon wasn't displayed correctly",
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
     ],
     "Mi Account": [
+      "Fix: Issues with the languages on the Mi Account sign-in page",
       "Fix: Issues with the languages on the Mi Account sign-in page"
+    ],
+    "System": [
+      "Fix: Issues with Face unlock",
+      "Fix: Issues with shortcuts after unlocking the screen that was locked while using WeChat"
+    ],
+    "Other": [
+      "Optimized system performance",
+      "Improved system security and stability"
+    ],
+    "Lock screen, status bar, notification shade": [
+      "Fix: Lock screen UI elements overlapped when the device was charging"
+    ],
+    "File Manager": [
+      "Fix: Errors occured after videos from the folder with hidden files were edited"
     ]
   },
   "logs_zh_tw": {
     "解鎖畫面、狀態欄、通知欄": [
+      "新增 狀態列支援顯示通知圖示，前往「設定-通知和狀態列-來通知時顯示圖示」開啟",
+      "修正 使用數字電池樣式後，電池圖示顯示異常的問題",
+      "修復 鎖屏時收到不重要通知不亮屏的問題",
+      "修復 螢幕鎖定時充電球與預計充電時間顯示重疊的問題",
+      "修復 偶現亮屏息屏時螢幕閃爍的問題",
+      "新增 狀態列支援顯示通知圖示，前往「設定-通知和狀態列-收到通知時顯示圖示」開啟",
+      "修正 使用數字電池樣式後，電池圖示顯示異常的問題",
+      "修正 鎖定螢幕時收到不重要通知不亮螢幕的問題",
+      "修復 螢幕鎖定時充電球與預計充電時間顯示重疊的問題",
+      "修復 偶現亮屏息屏時螢幕閃爍的問題",
       "修復 螢幕鎖定時充電球與預計充電時間顯示重疊的問題"
     ],
     "相機": [
+      "新增 合影優選模式",
+      "新增 支援 960 FPS 慢動作錄影功能",
+      "新增 支援手持超級夜景拍照功能",
+      "修復 全面屏下相機參考線問題",
+      "修復 相機閃退問題",
+      "修復 偶現的自動連拍問題",
+      "新增 合影優選模式",
+      "新增 支援 960 FPS 慢動作錄影功能",
+      "新增: 超級夜景功能",
+      "修復 全面屏下相機參考線問題",
+      "修復 相機閃退問題",
+      "修復 偶現的自動連拍問題",
       "修復 偶現的自動連拍問題"
+    ],
+    "備份": [
+      "修復從 USB 隨身碟還原手機中未安裝的應用程式時，圖示顯示異常的問題",
+      "修復從 USB 隨身碟還原手機中未安裝的應用程式時，圖示顯示異常的問題"
+    ],
+    "設定": [
+      "修復 設定同步顯示兩個新增個人帳戶選項的問題",
+      "修復 設定中出現兩個新增個人帳戶選項的問題"
+    ],
+    "系統更新": [
+      "新增 桌面捷徑功能，可在更新設定中開啟",
+      "新增 桌面捷徑功能，可在更新設定中開啟"
+    ],
+    "檔案管理員": [
+      "修正 重新命名或解密後檔案無法搜尋的問題",
+      "修正 在某些情況下，縮圖未及時更新的問題",
+      "修復分屏模式下垃圾清理頁面顯示異常的問題",
+      "修復 私密資料夾中剪切圖片影片後開啟檔案異常的問題",
+      "修復重新命名或解密後的檔案無法搜尋的問題",
+      "修正 在某些情況下，縮圖未及時更新的問題",
+      "修復分屏模式下垃圾清理頁面顯示異常的問題",
+      "修復 私密資料夾中剪切圖片影片後開啟檔案異常的問題"
+    ],
+    "錄音機": [
+      "修復 設定圖示顯示異常的問題",
+      "修復 暫停錄音後無法即時更新到狀態欄的問題",
+      "修復設定圖示顯示異常的問題",
+      "修復 暫停錄音後無法即時更新到狀態欄的問題"
+    ],
+    "小米帳號": [
+      "修復 小米帳號登入頁面語言顯示錯誤的問題",
+      "修復 小米帳號登入頁面語言顯示錯誤的問題",
+      "修復 小米帳號登入葉面語言顯示錯誤的問題"
+    ],
+    "系統": [
+      "修復 人臉解鎖相關的問題",
+      "修復使用微信時鎖屏，解鎖後捷徑異常的問題"
+    ],
+    "其他": [
+      "改善系統的穩定性",
+      "優化系統的流暢度"
     ],
     "檔案管理器": [
       "修復 私密資料夾中剪切圖片影片後開啟檔案異常的問題"
-    ],
-    "小米帳號": [
-      "修復 小米帳號登入葉面語言顯示錯誤的問題"
     ]
   },
   "logs_ja": {
+    "ロック画面、ステータスバー、通知バー": [
+      "追加：ステータスバーで通知アイコンの表示に対応。「設定 – 通知とステータスバー – 通知受信時にアイコンを表示」からオンにしてください。",
+      "数字バッテリースタイル使用後、バッテリーアイコンが正しく表示されない問題を修正",
+      "ロック画面で重要でない通知を受信したときに画面が点灯しない問題を修正",
+      "ロック画面で充電ボールと予想充電時間の表示が重なる問題を修正",
+      "画面の点灯・消灯時にまれに画面がちらつく問題を修正",
+      "追加: ステータスバーで通知アイコンを表示できるようになりました。「設定 > 通知とステータスバー > 通知受信時にアイコンを表示」からオンにしてください。",
+      "数字バッテリースタイル使用後、バッテリーアイコンが正しく表示されない問題を修正",
+      "ロック画面時に重要でない通知を受信しても画面が点灯しない問題を修正",
+      "ロック画面で充電ボールと予想充電時間の表示が重なる問題を修正",
+      "画面の点灯・消灯時にまれに画面がちらつく問題を修正"
+    ],
+    "カメラ": [
+      "集合写真の最適化モードを追加",
+      "新機能: 960fpsのスローモーション動画を撮影できます",
+      "新機能: 強化された低照度モード",
+      "全画面表示時のカメラグリッド線の問題を修正",
+      "カメラがクラッシュする問題を修正",
+      "偶発的な自動連写の問題を修正",
+      "新規 集合写真の最適化モード",
+      "新機能: 960fpsのスローモーション動画を撮影できます",
+      "新機能: 強化された低光量モード",
+      "全画面表示時のカメラグリッド線の問題を修正",
+      "カメラの強制終了問題を修正",
+      "偶発的な自動連写の問題を修正",
+      "偶発的な自動連写の問題を修正"
+    ],
+    "バックアップ": [
+      "USBドライブからスマートフォンに未インストールのアプリを復元する際、アイコンが正しく表示されない問題を修正",
+      "USBメモリから未インストールのアプリを復元した際、アイコンが正しく表示されない問題を修正"
+    ],
+    "設定": [
+      "設定の同期で個人アカウントを追加するオプションが2つ表示される問題を修正",
+      "設定に個人アカウントを追加する項目が2つ表示される問題を修正"
+    ],
+    "アップデーター": [
+      "ホーム画面ショートカット機能を追加、アップデート設定で有効にできます",
+      "追加: ホーム画面ショートカット機能。アップデート設定で有効にできます。"
+    ],
+    "ファイルマネージャー": [
+      "名前を変更したファイルまたは復号したファイルを検索できない問題を修正",
+      "一部の場合でサムネイルの更新が間に合わない問題を修正",
+      "分割画面モードでクリーナーページが正しく表示されない問題を修正",
+      "プライベートフォルダで画像や動画を切り取った後にファイルを開く際の異常を修正",
+      "名前変更または復号したファイルが検索できない問題を修正",
+      "一部の場合でサムネイルの更新が間に合わない問題を修正",
+      "分割画面モードでクリーナーページが正しく表示されない問題を修正",
+      "プライベートフォルダで画像や動画を切り取った後にファイルを開く際の異常を修正",
+      "プライベートフォルダで画像や動画を切り取った後にファイルを開く際の異常を修正"
+    ],
+    "レコーダー": [
+      "設定アイコンが正しく表示されない問題を修正",
+      "修正: 録音を一時停止した際、通知シェードの録音状態が更新されない問題",
+      "設定アイコンが正しく表示されない問題を修正",
+      "修正: 録音を一時停止した際、通知シェードの録音状態が更新されない問題"
+    ],
+    "Mi アカウント": [
+      "Mi アカウントのログインページで言語が正しく表示されない問題を修正",
+      "Mi アカウントのログインページで言語が正しく表示されない問題を修正"
+    ],
+    "システム": [
+      "顔認証に関する問題を修正",
+      "WeChat使用中に画面をロックし、ロック解除後にショートカットが異常になる問題を修正"
+    ],
     "その他": [
       "システムパフォーマンスの最適化",
       "システムのセキュリティと安定性の向上"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "ロック画面で充電ボールと予想充電時間の表示が重なる問題を修正"
     ]
   },
   "logs_ko": {
+    "잠금 화면, 상태 표시줄, 알림 표시줄": [
+      "추가: 상태 표시줄에서 알림 아이콘 표시를 지원합니다. 「설정 – 알림 및 상태 표시줄 – 알림 수신 시 아이콘 표시」에서 켜세요.",
+      "숫자 배터리 스타일 사용 후 배터리 아이콘이 비정상적으로 표시되는 문제 수정",
+      "잠금 화면에서 중요하지 않은 알림을 받을 때 화면이 켜지지 않는 문제 수정",
+      "잠금 화면에서 충전 볼과 예상 충전 시간 표시가 겹치는 문제를 수정",
+      "화면 켜짐/꺼짐 시 간헐적으로 화면이 깜빡이는 문제를 수정",
+      "추가: 상태 표시줄에서 알림 아이콘 표시를 지원합니다. '설정 > 알림 및 상태 표시줄 > 알림 수신 시 아이콘 표시'에서 켜세요.",
+      "숫자 배터리 스타일 사용 후 배터리 아이콘이 비정상적으로 표시되는 문제 수정",
+      "잠금 화면에서 중요하지 않은 알림을 받아도 화면이 켜지지 않는 문제 수정",
+      "잠금 화면에서 충전 볼과 예상 충전 시간 표시가 겹치는 문제를 수정",
+      "화면 켜짐/꺼짐 시 간헐적으로 화면이 깜빡이는 문제를 수정"
+    ],
+    "카메라": [
+      "단체 사진 최적화 모드 추가",
+      "새로운 기능: 960fps 슬로모션 동영상을 촬영할 수 있습니다",
+      "새로운 기능: 향상된 저조도 모드",
+      "전체 화면 모드에서 카메라 격자선 문제 수정",
+      "카메라 강제 종료 문제 수정",
+      "간헐적인 자동 연사 문제 수정",
+      "추가: 단체 사진 최적화 모드",
+      "새로운 기능: 960fps 슬로모션 동영상을 촬영할 수 있습니다",
+      "New: 저조도 모드 강화됨",
+      "전체 화면 모드에서 카메라 격자선 문제 수정",
+      "카메라 강제 종료 문제 수정",
+      "간헐적인 자동 연사 문제 수정",
+      "간헐적인 자동 연사 문제 수정"
+    ],
+    "백업": [
+      "USB 드라이브에서 휴대폰에 설치되지 않은 앱을 복원할 때 아이콘이 비정상적으로 표시되는 문제를 수정했습니다",
+      "USB 드라이브에서 설치되지 않은 앱을 복원할 때 아이콘이 올바르게 표시되지 않는 문제 수정"
+    ],
+    "설정": [
+      "설정 동기화에서 개인 계정 추가 옵션이 두 개 표시되는 문제 수정",
+      "설정에 개인 계정 추가 옵션이 두 개 표시되는 문제를 수정"
+    ],
+    "업데이터": [
+      "홈 화면 바로가기 기능 추가, 업데이트 설정에서 활성화할 수 있습니다",
+      "추가: 홈 화면 바로가기 기능. 업데이트 설정에서 활성화할 수 있습니다."
+    ],
+    "파일 관리자": [
+      "이름이 변경되었거나 복호화된 파일을 검색할 수 없는 문제를 수정했습니다",
+      "일부 상황에서 썸네일이 제때 새로고침되지 않는 문제를 수정했습니다",
+      "분할 화면 모드에서 클리너 페이지가 비정상적으로 표시되는 문제를 수정했습니다",
+      "비공개 폴더에서 사진 및 동영상을 잘라낸 후 파일을 여는 오류를 수정",
+      "이름 변경 또는 복호화된 파일을 검색할 수 없는 문제 수정",
+      "일부 상황에서 썸네일이 제때 새로고침되지 않는 문제를 수정했습니다",
+      "분할 화면 모드에서 클리너 페이지가 비정상적으로 표시되는 문제를 수정했습니다",
+      "비공개 폴더에서 사진 및 동영상을 잘라낸 후 파일을 여는 오류를 수정",
+      "비공개 폴더에서 사진 및 동영상을 잘라낸 후 파일을 여는 오류를 수정"
+    ],
+    "녹음기": [
+      "설정 아이콘이 비정상적으로 표시되는 문제 수정",
+      "수정: 녹음을 일시중지했을 때 알림 창의 녹음 상태가 업데이트되지 않던 문제",
+      "설정 아이콘이 비정상적으로 표시되는 문제를 수정했습니다",
+      "수정: 녹음을 일시중지했을 때 알림 창의 녹음 상태가 업데이트되지 않던 문제"
+    ],
+    "Mi 계정": [
+      "Mi 계정 로그인 페이지에서 언어가 잘못 표시되는 문제를 수정",
+      "Mi 계정 로그인 페이지에서 언어가 잘못 표시되는 문제를 수정"
+    ],
+    "시스템": [
+      "얼굴 인식 관련 문제 수정",
+      "WeChat 사용 중 화면을 잠근 후 잠금 해제 시 바로가기가 비정상인 문제 수정"
+    ],
     "기타": [
       "시스템 성능 최적화",
       "시스템 보안 및 안정성 개선"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "잠금 화면에서 충전 볼과 예상 충전 시간 표시가 겹치는 문제를 수정"
     ]
   },
   "logs_ru": {
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Добавлено: поддержка отображения значков уведомлений в строке состояния. Включите в «Настройки – Уведомления и строка состояния – Показывать значки при получении уведомлений».",
+      "Исправлена проблема с неправильным отображением значка батареи после использования цифрового стиля батареи",
+      "Исправлена проблема с невключением экрана при получении неважных уведомлений на экране блокировки",
+      "Исправлено наложение индикатора зарядки и предполагаемого времени зарядки на экране блокировки",
+      "Исправлена проблема с периодическим мерцанием экрана при включении и выключении экрана",
+      "Добавлено: поддержка отображения значков уведомлений в строке состояния. Включите в «Настройки > Уведомления и строка состояния > Показывать значки при получении уведомлений».",
+      "Исправлена проблема с неправильным отображением значка батареи после использования цифрового стиля батареи",
+      "Исправлена проблема, из-за которой экран не включался при получении неважных уведомлений на экране блокировки",
+      "Исправлено наложение индикатора зарядки и предполагаемого времени зарядки на экране блокировки",
+      "Исправлена проблема с периодическим мерцанием экрана при включении и выключении экрана"
+    ],
+    "Камера": [
+      "Добавлен режим оптимизации групповых селфи",
+      "New: Поддержка видеосъемки с 960 кадрами в секунду",
+      "New: Улучшенный режим съемки при низком освещении",
+      "Исправление: проблемы с сеткой камеры в полноэкранном режиме",
+      "Исправлена проблема с вылетом Камеры",
+      "Исправлена проблема со случайной автоматической серийной съёмкой",
+      "Новое: режим оптимизации групповых фото",
+      "New: Поддержка видеосъемки с 960 кадрами в секунду",
+      "Новое: Улучшенный режим ночной съемки",
+      "Исправление: проблемы с сеткой камеры в полноэкранном режиме",
+      "Исправлена проблема с вылетом камеры",
+      "Исправлена проблема со случайной автоматической серийной съёмкой",
+      "Исправлена проблема со случайной автоматической серийной съёмкой"
+    ],
+    "Резервное копирование": [
+      "Исправлена проблема с некорректным отображением значков при восстановлении из USB-накопителя приложений, не установленных на телефоне.",
+      "Исправлена проблема с неправильным отображением значков при восстановлении из USB-накопителя приложений, не установленных на телефоне"
+    ],
+    "Настройки": [
+      "Исправлена проблема, из-за которой в синхронизации настроек отображались два параметра добавления личной учетной записи.",
+      "Исправлено: в настройках отображались два варианта добавления личного аккаунта"
+    ],
+    "Обновление": [
+      "Добавлена функция ярлыка на главном экране; можно включить в настройках обновления.",
+      "Добавлено: функция ярлыка на главном экране. Можно включить в настройках обновления."
+    ],
+    "Файловый менеджер": [
+      "Исправлена проблема, из-за которой не удавалось найти переименованные или расшифрованные файлы",
+      "Исправлена проблема, из-за которой в некоторых случаях миниатюры не обновлялись вовремя",
+      "Исправлена проблема с неправильным отображением страницы очистки в режиме разделённого экрана",
+      "Исправлена ошибка открытия файлов после вырезания изображений и видео в приватной папке",
+      "Исправлена проблема с невозможностью поиска переименованных или расшифрованных файлов",
+      "Исправлена проблема, из-за которой в некоторых случаях миниатюры не обновлялись вовремя",
+      "Исправлена проблема с неправильным отображением страницы очистки в режиме разделённого экрана",
+      "Исправлена ошибка открытия файлов после вырезания изображений и видео в приватной папке",
+      "Исправлена ошибка открытия файлов после вырезания изображений и видео в приватной папке"
+    ],
+    "Диктофон": [
+      "Исправлена проблема с некорректным отображением значка настроек",
+      "Fix: Факт остановки записи не отображался в строке состояния вовремя",
+      "Исправлена проблема с неправильным отображением значка настроек",
+      "Fix: Факт остановки записи не отображался в строке состояния вовремя"
+    ],
+    "Аккаунт Mi": [
+      "Исправлена проблема с неправильным отображением языка на странице входа Mi Account",
+      "Исправлена проблема с неправильным отображением языка на странице входа Mi Account"
+    ],
+    "Система": [
+      "Исправление проблем с разблокировкой по лицу",
+      "Исправлена проблема с некорректной работой ярлыков после разблокировки экрана, заблокированного во время использования WeChat."
+    ],
     "Другое": [
       "Оптимизация производительности системы",
       "Улучшение безопасности и стабильности системы"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Исправлено наложение индикатора зарядки и предполагаемого времени зарядки на экране блокировки"
     ]
   },
   "logs_uk": {
+    "Екран блокування, рядок стану, рядок сповіщень": [
+      "Додано: підтримка відображення значків сповіщень у рядку стану. Увімкніть у «Налаштування – Сповіщення та рядок стану – Показувати значки під час отримання сповіщень».",
+      "Виправлено проблему з неправильним відображенням значка батареї після використання цифрового стилю батареї",
+      "Виправлено проблему з неввімкненням екрана під час отримання неважливих сповіщень на екрані блокування",
+      "Виправлено накладання індикатора заряджання та орієнтовного часу заряджання на екрані блокування",
+      "Виправлено проблему з періодичним мерехтінням екрана під час увімкнення та вимкнення екрана",
+      "Додано: підтримка відображення значків сповіщень у рядку стану. Увімкніть у «Налаштування > Сповіщення та рядок стану > Показувати значки під час отримання сповіщень».",
+      "Виправлено проблему з неправильним відображенням значка батареї після використання цифрового стилю батареї",
+      "Виправлено проблему, через яку екран не вмикався під час отримання неважливих сповіщень на екрані блокування",
+      "Виправлено накладання індикатора заряджання та орієнтовного часу заряджання на екрані блокування",
+      "Виправлено проблему з періодичним мерехтінням екрана під час увімкнення та вимкнення екрана"
+    ],
+    "Камера": [
+      "Додано режим оптимізації групових селфі",
+      "Нове: Тепер можна знімати відео в режимі сповільненої зйомки 960 fps",
+      "Нове: Підтримка зйомки в супернічному режимі з рук",
+      "Виправлення: проблеми з сіткою камери в повноекранному режимі",
+      "Виправлено проблему з аварійним завершенням роботи Камери",
+      "Виправлено проблему з випадковою автоматичною серійною зйомкою",
+      "Нове: режим оптимізації групових фото",
+      "Нове: Тепер можна знімати відео в режимі сповільненої зйомки 960 fps",
+      "Нове: Покращений Нічний режим",
+      "Виправлення: проблеми з сіткою камери в повноекранному режимі",
+      "Виправлено проблему з вильотом камери",
+      "Виправлено проблему з випадковою автоматичною серійною зйомкою",
+      "Виправлено проблему з випадковою автоматичною серійною зйомкою"
+    ],
+    "Резервне копіювання": [
+      "Виправлено проблему з неправильним відображенням значків під час відновлення з USB-накопичувача програм, не встановлених на телефоні.",
+      "Виправлено проблему з неправильним відображенням значків під час відновлення з USB-носія програм, не встановлених на телефоні"
+    ],
+    "Налаштування": [
+      "Виправлено проблему, через яку в синхронізації налаштувань відображалися два параметри додавання особистого облікового запису.",
+      "Виправлено: у налаштуваннях відображалися два варіанти додавання особистого облікового запису"
+    ],
+    "Оновлення": [
+      "Додано функцію ярлика на головному екрані; можна ввімкнути в налаштуваннях оновлення.",
+      "Додано: функція ярлика на головному екрані. Можна ввімкнути в налаштуваннях оновлення."
+    ],
+    "Файловий менеджер": [
+      "Виправлено проблему, через яку не вдавалося знайти перейменовані або розшифровані файли",
+      "Виправлено проблему, через яку в деяких випадках мініатюри не оновлювалися вчасно",
+      "Виправлено проблему з неправильним відображенням сторінки очищення в режимі розділеного екрана",
+      "Виправлено помилку відкриття файлів після вирізання зображень і відео в приватній папці",
+      "Виправлено проблему з неможливістю пошуку перейменованих або розшифрованих файлів",
+      "Виправлено проблему, через яку в деяких випадках мініатюри не оновлювалися вчасно",
+      "Виправлено проблему з неправильним відображенням сторінки очищення в режимі розділеного екрана",
+      "Виправлено помилку відкриття файлів після вирізання зображень і відео в приватній папці",
+      "Виправлено помилку відкриття файлів після вирізання зображень і відео в приватній папці"
+    ],
+    "Диктофон": [
+      "Виправлено проблему з нерозпізнаним відображенням значка налаштувань",
+      "Виправлено: стан запису не оновлювався в панелі сповіщень під час паузи запису",
+      "Виправлено проблему з неправильним відображенням значка налаштувань",
+      "Виправлено: стан запису не оновлювався в панелі сповіщень під час паузи запису"
+    ],
+    "Обліковий запис Mi": [
+      "Виправлено проблему з неправильним відображенням мови на сторінці входу Mi Account",
+      "Виправлено проблему з неправильним відображенням мови на сторінці входу Mi Account"
+    ],
+    "Система": [
+      "Виправлено проблеми з розблокуванням обличчям",
+      "Виправлено проблему з ненормальною роботою ярликів після розблокування екрана, заблокованого під час використання WeChat."
+    ],
     "Інше": [
       "Оптимізація продуктивності системи",
       "Покращення безпеки та стабільності системи"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Виправлено накладання індикатора заряджання та орієнтовного часу заряджання на екрані блокування"
     ]
   },
   "logs_pl": {
+    "Ekran blokady, pasek stanu, pasek powiadomień": [
+      "Dodano: obsługę wyświetlania ikon powiadomień na pasku stanu. Włącz w „Ustawienia – Powiadomienia i pasek stanu – Pokazuj ikony przy otrzymywaniu powiadomień”.",
+      "Naprawiono problem z nieprawidłowym wyświetlaniem ikony baterii po użyciu cyfrowego stylu baterii",
+      "Naprawiono problem z niezaświecaniem ekranu przy otrzymywaniu nieistotnych powiadomień na ekranie blokady",
+      "Naprawiono nakładanie się wskaźnika ładowania i szacowanego czasu ładowania na ekranie blokady",
+      "Naprawiono problem z okresowym migotaniem ekranu podczas włączania i wyłączania ekranu",
+      "Dodano: obsługa wyświetlania ikon powiadomień na pasku stanu. Włącz w «Ustawienia > Powiadomienia i pasek stanu > Pokazuj ikony przy powiadomieniach».",
+      "Naprawiono problem z nieprawidłowym wyświetlaniem ikony baterii po użyciu cyfrowego stylu baterii",
+      "Naprawiono problem z niebudzeniem ekranu przy otrzymywaniu nieistotnych powiadomień na ekranie blokady",
+      "Naprawiono nakładanie się wskaźnika ładowania i szacowanego czasu ładowania na ekranie blokady",
+      "Naprawiono problem z okresowym migotaniem ekranu podczas włączania i wyłączania ekranu"
+    ],
+    "Aparat": [
+      "Dodano tryb optymalizacji zdjęć grupowych",
+      "Nowość: Możesz teraz nagrywać filmy w zwolnionym tempie 960 fps",
+      "Nowość: Obsługa zdjęć w trybie Super Noc z ręki",
+      "Poprawka: problemy z liniami siatki w trybie pełnoekranowym",
+      "Naprawiono problem z awarią Aparatu",
+      "Naprawiono problem z przypadkową automatyczną serią zdjęć",
+      "Nowe: tryb optymalizacji zdjęć grupowych",
+      "Nowość: Możesz teraz nagrywać filmy w zwolnionym tempie 960 fps",
+      "Nowe: Ulepszony tryb delikatnego oświetlenia",
+      "Poprawka: problemy z liniami siatki w trybie pełnoekranowym",
+      "Naprawiono problem z awarią aparatu",
+      "Naprawiono problem z przypadkową automatyczną serią zdjęć",
+      "Naprawiono problem z przypadkową automatyczną serią zdjęć"
+    ],
+    "Kopia zapasowa": [
+      "Naprawiono problem z nieprawidłowym wyświetlaniem ikon podczas przywracania z dysku USB aplikacji niezainstalowanych na telefonie.",
+      "Naprawiono problem z nieprawidłowym wyświetlaniem ikon podczas przywracania z nośnika USB aplikacji niezainstalowanych na telefonie"
+    ],
+    "Ustawienia": [
+      "Naprawiono problem z wyświetlaniem dwóch opcji dodawania konta osobistego w synchronizacji ustawień.",
+      "Poprawiono: w Ustawieniach wyświetlały się dwie opcje dodawania konta osobistego"
+    ],
+    "Aktualizacje": [
+      "Dodano funkcję skrótu na ekranie głównym; można włączyć w ustawieniach aktualizacji.",
+      "Dodano: funkcję skrótu na ekranie głównym. Można włączyć w ustawieniach aktualizacji."
+    ],
+    "Menedżer plików": [
+      "Naprawiono problem, przez który nie można było wyszukać plików o zmienionej nazwie lub odszyfrowanych",
+      "Naprawiono problem, w którym w niektórych przypadkach miniatury nie odświeżały się na czas",
+      "Naprawiono problem z nieprawidłowym wyświetlaniem strony oczyszczania w trybie podzielonego ekranu",
+      "Naprawiono błąd otwierania plików po wycięciu zdjęć i filmów w folderze prywatnym",
+      "Naprawiono problem z wyszukiwaniem plików o zmienionej nazwie lub odszyfrowanych",
+      "Naprawiono problem, w którym w niektórych przypadkach miniatury nie odświeżały się na czas",
+      "Naprawiono problem z nieprawidłowym wyświetlaniem strony oczyszczania w trybie podzielonego ekranu",
+      "Naprawiono błąd otwierania plików po wycięciu zdjęć i filmów w folderze prywatnym",
+      "Naprawiono błąd otwierania plików po wycięciu zdjęć i filmów w folderze prywatnym"
+    ],
+    "Rejestrator": [
+      "Naprawiono problem z nieprawidłowym wyświetlaniem ikony ustawień",
+      "Poprawka: stan nagrywania nie był aktualizowany na pasku powiadomień po wstrzymaniu nagrywania",
+      "Naprawiono problem z nieprawidłowym wyświetlaniem ikony ustawień",
+      "Poprawka: stan nagrywania nie był aktualizowany na pasku powiadomień po wstrzymaniu nagrywania"
+    ],
+    "Konto Mi": [
+      "Naprawiono problem z nieprawidłowym wyświetlaniem języka na stronie logowania Mi Account",
+      "Naprawiono problem z nieprawidłowym wyświetlaniem języka na stronie logowania Mi Account"
+    ],
+    "System": [
+      "Naprawiono problemy z odblokowywaniem twarzą",
+      "Naprawiono problem z nieprawidłowym działaniem skrótów po odblokowaniu ekranu zablokowanego podczas korzystania z WeChat."
+    ],
     "Inne": [
       "Zoptymalizowana wydajność systemu",
       "Większe bezpieczeństwo i stabilność systemu"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Naprawiono nakładanie się wskaźnika ładowania i szacowanego czasu ładowania na ekranie blokady"
     ]
   },
   "logs_de": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
+      "Neu: Unterstützung für die Anzeige von Benachrichtigungssymbolen in der Statusleiste. Aktiviere „Einstellungen – Benachrichtigungen und Statusleiste – Symbole bei Benachrichtigung anzeigen“.",
+      "Problem behoben, bei dem das Batteriesymbol nach Verwendung des numerischen Batteriestils falsch angezeigt wurde",
+      "Problem behoben, dass der Bildschirm bei unwichtigen Benachrichtigungen im Sperrbildschirm nicht aufleuchtet",
+      "Problem behoben, bei dem sich Ladeball und geschätzte Ladezeit auf dem Sperrbildschirm überlappen",
+      "Problem behoben, bei dem der Bildschirm beim Ein- und Ausschalten gelegentlich flackerte",
+      "Neu: Statusleiste kann Benachrichtigungssymbole anzeigen. Aktiviere dies unter «Einstellungen > Benachrichtigungen & Statusleiste > Symbole bei Benachrichtigungen anzeigen».",
+      "Problem behoben, bei dem das Batteriesymbol nach Verwendung des numerischen Batteriestils falsch angezeigt wurde",
+      "Problem behoben, dass der Bildschirm bei unwichtigen Benachrichtigungen im Sperrbildschirm nicht aufleuchtete",
+      "Problem behoben, bei dem sich Ladeball und geschätzte Ladezeit auf dem Sperrbildschirm überlappen",
+      "Problem behoben, bei dem der Bildschirm beim Ein- und Ausschalten gelegentlich flackerte"
+    ],
+    "Kamera": [
+      "Optimierter Gruppen-Selfie-Modus hinzugefügt",
+      "Neu: Videos mit 960 fps können jetzt aufgenommen werden",
+      "Neu: Verbesserter Low-Light-Modus",
+      "Behebung: Probleme mit Rasterlinien im Vollbildmodus der Kamera",
+      "Problem mit Absturz der Kamera behoben",
+      "Problem mit gelegentlichen automatischen Serienaufnahmen behoben",
+      "Problem mit gelegentlichen automatischen Serienaufnahmen behoben"
+    ],
+    "Sicherung": [
+      "Problem behoben, bei dem App-Symbole falsch angezeigt wurden, wenn nicht auf dem Telefon installierte Apps von einem USB-Laufwerk wiederhergestellt wurden.",
+      "Problem behoben, bei dem App-Symbole falsch angezeigt wurden, wenn nicht installierte Apps von einem USB-Gerät wiederhergestellt wurden"
+    ],
+    "Einstellungen": [
+      "Das Problem wurde behoben, dass in der Einstellungssynchronisierung zwei Optionen zum Hinzufügen eines persönlichen Kontos angezeigt wurden.",
+      "Fehler behoben: In den Einstellungen wurden zwei Optionen zum Hinzufügen persönlicher Konten angezeigt"
+    ],
+    "Updater": [
+      "Funktion für Startbildschirm-Verknüpfung hinzugefügt; in den Update-Einstellungen aktivierbar.",
+      "Neu: Funktion für Startbildschirm-Verknüpfung. Kann in den Update-Einstellungen aktiviert werden."
+    ],
+    "Dateimanager": [
+      "Problem behoben, bei dem umbenannte oder entschlüsselte Dateien nicht durchsucht werden konnten",
+      "Problem behoben, bei dem Miniaturansichten in manchen Fällen nicht rechtzeitig aktualisiert wurden",
+      "Problem behoben, bei dem die Cleaner-Seite im geteilten Bildschirm nicht korrekt angezeigt wurde",
+      "Fehler beim Öffnen von Dateien nach dem Ausschneiden von Bildern und Videos im privaten Ordner behoben",
+      "Problem behoben, bei dem umbenannte oder entschlüsselte Dateien nicht gefunden werden konnten",
+      "Problem behoben, bei dem Miniaturansichten in manchen Fällen nicht rechtzeitig aktualisiert wurden",
+      "Problem behoben, bei dem die Cleaner-Seite im geteilten Bildschirm nicht korrekt angezeigt wurde",
+      "Fehler beim Öffnen von Dateien nach dem Ausschneiden von Bildern und Videos im privaten Ordner behoben",
+      "Fehler beim Öffnen von Dateien nach dem Ausschneiden von Bildern und Videos im privaten Ordner behoben"
+    ],
+    "Rekorder": [
+      "Problem mit der fehlerhaften Anzeige des Einstellungssymbols behoben",
+      "Behoben: Der Aufnahmestatus wurde in der Benachrichtigungsleiste nicht aktualisiert, wenn eine Aufnahme pausiert wurde",
+      "Problem mit der fehlerhaften Anzeige des Einstellungssymbols behoben",
+      "Behoben: Der Aufnahmestatus wurde in der Benachrichtigungsleiste nicht aktualisiert, wenn eine Aufnahme pausiert wurde"
+    ],
+    "Mi-Konto": [
+      "Problem mit falscher Sprachanzeige auf der Mi Account-Anmeldeseite behoben",
+      "Problem mit falscher Sprachanzeige auf der Mi Account-Anmeldeseite behoben"
+    ],
+    "System": [
+      "Behebung von Problemen mit der Gesichtserkennung",
+      "Problem mit fehlerhaften Verknüpfungen nach dem Entsperren des Bildschirms, der während der Nutzung von WeChat gesperrt wurde, behoben."
+    ],
+    "Sonstiges": [
+      "Systemleistung optimiert",
+      "Systemsicherheit und -stabilität verbessert"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Problem behoben, bei dem sich Ladeball und geschätzte Ladezeit auf dem Sperrbildschirm überlappen"
     ]
   },
   "logs_fr": {
+    "Écran de verrouillage, barre d’état, barre de notifications": [
+      "Ajout : prise en charge de l’affichage des icônes de notification dans la barre d’état. Activez dans « Paramètres – Notifications et barre d’état – Afficher les icônes lors des notifications ».",
+      "Correction du problème d'affichage anormal de l'icône de batterie après l'utilisation du style numérique",
+      "Correction du problème d'écran qui ne s'allume pas lors de la réception de notifications non importantes sur l'écran verrouillé",
+      "Correction du chevauchement entre la boule de charge et le temps de charge estimé sur l’écran de verrouillage",
+      "Correction du problème de scintillement occasionnel de l'écran lors de l'allumage/extinction",
+      "Nouveau : affichage des icônes de notification dans la barre d’état. Activez-le dans « Paramètres > Notifications et barre d’état > Afficher les icônes lors des notifications ».",
+      "Correction du problème d'affichage anormal de l'icône de batterie après l'utilisation du style numérique",
+      "Correction du problème où l’écran ne s’allumait pas lors de la réception de notifications non importantes en mode verrouillé",
+      "Correction du chevauchement entre la boule de charge et le temps de charge estimé sur l’écran de verrouillage",
+      "Correction du problème de scintillement occasionnel de l'écran lors de l'allumage/extinction"
+    ],
+    "Appareil photo": [
+      "Ajout du mode selfie de groupe optimisé",
+      "Nouveau : Vous pouvez filmer des vidéos à 960 ips",
+      "Nouveau : Mode basse lumière amélioré",
+      "Correction : problèmes de lignes de grille en mode plein écran",
+      "Correction du problème de plantage de l'Appareil photo",
+      "Correction du problème intermittent de rafale automatique",
+      "Nouveau : mode d’optimisation des photos de groupe",
+      "Nouveau : Vous pouvez filmer des vidéos à 960 ips",
+      "Nouveau: Mode faible luminosité amélioré",
+      "Correction : problèmes de lignes de grille en mode plein écran",
+      "Correction du problème de plantage de l'appareil photo",
+      "Correction du problème intermittent de rafale automatique"
+    ],
+    "Sauvegarde": [
+      "Correction du problème d’affichage incorrect des icônes lors de la restauration depuis une clé USB d’applications non installées sur le téléphone.",
+      "Correction du problème d’affichage incorrect des icônes lors de la restauration d’applications non installées depuis un périphérique USB"
+    ],
+    "Paramètres": [
+      "Correction du problème où deux options d'ajout de compte personnel s'affichaient dans la synchronisation des paramètres.",
+      "Correction : deux options d’ajout de compte personnel s’affichaient dans Paramètres"
+    ],
+    "Mises à jour": [
+      "Ajout d'une fonction de raccourci sur l'écran d'accueil ; activable dans les paramètres de mise à jour.",
+      "Nouveau : fonction de raccourci sur l'écran d'accueil. Peut être activée dans les paramètres de mise à jour."
+    ],
+    "Gestionnaire de fichiers": [
+      "Correction du problème empêchant la recherche des fichiers renommés ou déchiffrés",
+      "Correction du problème où les vignettes ne se rafraîchissaient pas à temps dans certains cas",
+      "Correction du problème d’affichage incorrect de la page de nettoyage en mode écran partagé",
+      "Correction du problème d'ouverture des fichiers après avoir coupé des images et vidéos dans le dossier privé",
+      "Correction du problème empêchant la recherche des fichiers renommés ou déchiffrés",
+      "Correction du problème où les vignettes ne se rafraîchissaient pas à temps dans certains cas",
+      "Correction du problème d’affichage incorrect de la page de nettoyage en mode écran partagé",
+      "Correction du problème d'ouverture des fichiers après avoir coupé des images et vidéos dans le dossier privé",
+      "Correction du problème d'ouverture des fichiers après avoir coupé des images et vidéos dans le dossier privé"
+    ],
+    "Enregistreur": [
+      "Correction du problème d'affichage anormal de l'icône Paramètres",
+      "Correction : l’état d’enregistrement n’était pas mis à jour dans la barre de notifications lors d’une pause",
+      "Correction du problème d’affichage incorrect de l’icône Paramètres",
+      "Correction : l’état d’enregistrement n’était pas mis à jour dans la barre de notifications lors d’une pause"
+    ],
+    "Compte Mi": [
+      "Correction du problème d'affichage incorrect de la langue sur la page de connexion Mi Account",
+      "Correction du problème d'affichage incorrect de la langue sur la page de connexion Mi Account"
+    ],
+    "Système": [
+      "Correction des problèmes liés au déverrouillage par reconnaissance faciale",
+      "Correction du problème de raccourcis anormaux après le déverrouillage de l’écran verrouillé pendant l’utilisation de WeChat."
+    ],
     "Autre": [
       "Performances système optimisées",
       "Sécurité et stabilité du système améliorées"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Correction du chevauchement entre la boule de charge et le temps de charge estimé sur l’écran de verrouillage"
+    ],
+    "Appareil Photo": [
+      "Correction du problème intermittent de rafale automatique"
     ]
   },
   "logs_it": {
+    "Schermata di blocco, barra di stato, barra delle notifiche": [
+      "Aggiunto: supporto per la visualizzazione delle icone delle notifiche nella barra di stato. Attiva in «Impostazioni – Notifiche e barra di stato – Mostra icone alla ricezione delle notifiche».",
+      "Risolto il problema di visualizzazione anomala dell'icona della batteria dopo l'uso dello stile numerico",
+      "Risolto il problema dello schermo che non si accende quando si ricevono notifiche non importanti sulla schermata di blocco",
+      "Risolto il problema della sovrapposizione tra pallina di ricarica e tempo di ricarica stimato nella schermata di blocco",
+      "Risolto il problema del tremolio occasionale dello schermo durante l'accensione/spegnimento",
+      "Novità: supporto alla visualizzazione delle icone di notifica nella barra di stato. Attivalo in «Impostazioni > Notifiche e barra di stato > Mostra icone quando arrivano notifiche».",
+      "Risolto il problema di visualizzazione anomala dell'icona della batteria dopo l'uso dello stile numerico",
+      "Risolto il problema per cui lo schermo non si accendeva alla ricezione di notifiche non importanti durante il blocco",
+      "Risolto il problema della sovrapposizione tra pallina di ricarica e tempo di ricarica stimato nella schermata di blocco",
+      "Risolto il problema del tremolio occasionale dello schermo durante l'accensione/spegnimento"
+    ],
+    "Fotocamera": [
+      "Aggiunta modalità selfie di gruppo ottimizzata",
+      "Novità: Ora puoi registrare video a 960 fps",
+      "Novità: Supporto alla fotografia notturna avanzata a mano",
+      "Correzione: problemi con le linee della griglia in modalità a schermo intero",
+      "Risolto il problema di arresto anomalo della Fotocamera",
+      "Risolto il problema degli scatti in raffica automatici occasionali",
+      "Novità: modalità di ottimizzazione delle foto di gruppo",
+      "Novità: Ora puoi registrare video a 960 fps",
+      "Nuovo: Migliorata la modalità luce scarsa",
+      "Correzione: problemi con le linee della griglia in modalità a schermo intero",
+      "Risolto il problema di crash della fotocamera",
+      "Risolto il problema degli scatti in raffica automatici occasionali",
+      "Risolto il problema degli scatti in raffica automatici occasionali"
+    ],
+    "Impostazioni": [
+      "Risolto il problema per cui nella sincronizzazione delle impostazioni venivano mostrate due opzioni per aggiungere un account personale.",
+      "Corretto: in Impostazioni venivano mostrate due opzioni per aggiungere un account personale"
+    ],
+    "Aggiornamenti": [
+      "Aggiunta funzione di collegamento alla schermata Home; attivabile nelle impostazioni aggiornamento.",
+      "Novità: funzione di scorciatoia nella schermata Home. Si può attivare nelle impostazioni di aggiornamento."
+    ],
+    "Gestione file": [
+      "Risolto il problema per cui i file rinominati o decifrati non erano ricercabili",
+      "Risolto il problema per cui in alcuni casi le miniature non si aggiornavano in tempo",
+      "Risolto il problema di visualizzazione errata della pagina di pulizia in modalità schermo diviso",
+      "Risolto il problema di apertura dei file dopo il taglio di immagini e video nella cartella privata",
+      "Risolto il problema che impediva la ricerca dei file rinominati o decifrati",
+      "Risolto il problema per cui in alcuni casi le miniature non si aggiornavano in tempo",
+      "Risolto il problema di visualizzazione errata della pagina di pulizia in modalità schermo diviso",
+      "Risolto il problema di apertura dei file dopo il taglio di immagini e video nella cartella privata"
+    ],
+    "Registratore": [
+      "Risolto il problema di visualizzazione anomala dell'icona Impostazioni",
+      "Correzione: lo stato di registrazione non veniva aggiornato nella barra delle notifiche quando una registrazione veniva messa in pausa",
+      "Risolto il problema di visualizzazione errata dell’icona Impostazioni",
+      "Correzione: lo stato di registrazione non veniva aggiornato nella barra delle notifiche quando una registrazione veniva messa in pausa"
+    ],
+    "Account Mi": [
+      "Risolto il problema di visualizzazione errata della lingua nella pagina di accesso a Mi Account",
+      "Risolto il problema di visualizzazione errata della lingua nella pagina di accesso a Mi Account"
+    ],
+    "Sistema": [
+      "Risolti i problemi con lo sblocco tramite volto",
+      "Risolto il problema delle scorciatoie anomale dopo lo sblocco dello schermo bloccato durante l'uso di WeChat."
+    ],
     "Altro": [
       "Prestazioni di sistema ottimizzate",
       "Maggiore sicurezza e stabilità di sistema"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Risolto il problema della sovrapposizione tra pallina di ricarica e tempo di ricarica stimato nella schermata di blocco"
+    ],
+    "Gestore file": [
+      "Risolto il problema di apertura dei file dopo il taglio di immagini e video nella cartella privata"
     ]
   },
   "logs_es": {
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Añadido: compatibilidad con la visualización de iconos de notificación en la barra de estado. Actívalo en «Ajustes – Notificaciones y barra de estado – Mostrar iconos al recibir notificaciones».",
+      "Corregido el problema de visualización anómala del icono de batería tras usar el estilo numérico",
+      "Se corrige el problema de que la pantalla no se encienda al recibir notificaciones no importantes con el dispositivo bloqueado",
+      "Se corrige la superposición entre el indicador de carga y el tiempo estimado de carga en la pantalla de bloqueo",
+      "Se corrige el problema de parpadeo ocasional de la pantalla al encenderla/apagarla",
+      "Novedad: la barra de estado admite mostrar iconos de notificación. Actívalo en «Ajustes > Notificaciones y barra de estado > Mostrar iconos al recibir notificaciones».",
+      "Corregido el problema de visualización anómala del icono de batería tras usar el estilo numérico",
+      "Corregido el problema por el que la pantalla no se encendía al recibir notificaciones poco importantes con el dispositivo bloqueado",
+      "Se corrige la superposición entre el indicador de carga y el tiempo estimado de carga en la pantalla de bloqueo",
+      "Se corrige el problema de parpadeo ocasional de la pantalla al encenderla/apagarla"
+    ],
+    "Cámara": [
+      "Añadido modo optimizado para selfies grupales",
+      "Nuevo: Ahora puedes grabar vídeos a 960 fps",
+      "Nuevo: Compatibilidad con fotografía nocturna avanzada a mano",
+      "Corrección: problemas con las líneas de cuadrícula en el modo de pantalla completa",
+      "Corregido el problema de cierre inesperado de Cámara",
+      "Corregido el problema de ráfaga automática ocasional",
+      "Nuevo: modo de optimización de fotos grupales",
+      "Nuevo: Ahora puedes grabar vídeos a 960 fps",
+      "Nuevo: Modo luz baja mejorado",
+      "Corrección: problemas con las líneas de cuadrícula en el modo de pantalla completa",
+      "Corregido el problema de cierre inesperado de la cámara",
+      "Corregido el problema de ráfaga automática ocasional",
+      "Corregido el problema de ráfaga automática ocasional"
+    ],
+    "Copia de seguridad": [
+      "Se corrigió el problema de visualización incorrecta de los iconos al restaurar desde una unidad USB aplicaciones no instaladas en el teléfono.",
+      "Se corrigió el problema de visualización incorrecta de los iconos al restaurar desde un dispositivo USB aplicaciones no instaladas"
+    ],
+    "Ajustes": [
+      "Se ha corregido el problema por el que se mostraban dos opciones para añadir una cuenta personal en la sincronización de ajustes.",
+      "Corregido: en Ajustes se mostraban dos opciones para añadir una cuenta personal"
+    ],
+    "Actualizador": [
+      "Se añade la función de acceso directo en la pantalla de inicio; se puede activar en los ajustes de actualización.",
+      "Nuevo: función de acceso directo en la pantalla de inicio. Se puede activar en los ajustes de actualización."
+    ],
+    "Administrador de archivos": [
+      "Se corrigió el problema por el que no se podían buscar archivos renombrados o descifrados",
+      "Se corrige el problema por el que, en algunos casos, las miniaturas no se actualizaban a tiempo",
+      "Se corrigió el problema de visualización incorrecta de la página de limpieza en modo de pantalla dividida",
+      "Se corrigió el problema de apertura de archivos tras cortar imágenes y vídeos en la carpeta privada",
+      "Corregido el problema por el que no se podían buscar archivos renombrados o descifrados",
+      "Se corrige el problema por el que, en algunos casos, las miniaturas no se actualizaban a tiempo",
+      "Se corrigió el problema de visualización incorrecta de la página de limpieza en modo de pantalla dividida",
+      "Se corrigió el problema de apertura de archivos tras cortar imágenes y vídeos en la carpeta privada",
+      "Se corrigió el problema de apertura de archivos tras cortar imágenes y vídeos en la carpeta privada"
+    ],
+    "Grabadora": [
+      "Se corrigió el problema de visualización anómala del icono de Ajustes",
+      "Corrección: El estado de grabación no se actualizaba en la barra de notificaciones al pausar una grabación",
+      "Se corrigió el problema de visualización incorrecta del icono de Ajustes",
+      "Corrección: El estado de grabación no se actualizaba en la barra de notificaciones al pausar una grabación"
+    ],
+    "Cuenta Mi": [
+      "Se corrigió el problema de visualización incorrecta del idioma en la página de inicio de sesión de Mi Account",
+      "Se corrigió el problema de visualización incorrecta del idioma en la página de inicio de sesión de Mi Account"
+    ],
+    "Sistema": [
+      "Corrección de problemas con el desbloqueo facial",
+      "Se corrige el problema de accesos directos anómalos tras desbloquear la pantalla bloqueada mientras se usaba WeChat."
+    ],
     "Otros": [
       "Rendimiento del sistema optimizado",
       "Estabilidad y seguridad del sistema mejorada"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Se corrige la superposición entre el indicador de carga y el tiempo estimado de carga en la pantalla de bloqueo"
     ]
   },
   "logs_pt": {
+    "Tela de bloqueio, barra de status, barra de notificações": [
+      "Adicionado: suporte para exibir ícones de notificação na barra de status. Ative em «Configurações – Notificações e barra de status – Mostrar ícones ao receber notificações».",
+      "Corrigido o problema de exibição anormal do ícone da bateria após usar o estilo numérico",
+      "Corrigido o problema de a tela não acender ao receber notificações não importantes na tela de bloqueio",
+      "Corrigido a sobreposição entre o indicador de carregamento e o tempo estimado de carregamento na tela de bloqueio",
+      "Corrigido o problema de cintilação ocasional da tela ao ligar/desligar",
+      "Novo: suporte para mostrar ícones de notificação na barra de status. Ative em «Configurações > Notificações e barra de status > Mostrar ícones ao receber notificações».",
+      "Corrigido o problema de exibição anormal do ícone da bateria após usar o estilo numérico",
+      "Corrigido o problema em que a tela não acendia ao receber notificações não importantes com o dispositivo bloqueado",
+      "Corrigido a sobreposição entre o indicador de carregamento e o tempo estimado de carregamento na tela de bloqueio",
+      "Corrigido o problema de cintilação ocasional da tela ao ligar/desligar"
+    ],
+    "Câmera": [
+      "Adicionado modo otimizado para selfies em grupo",
+      "Novo: Agora você pode gravar vídeos a 960 fps",
+      "Novo: Suporte para captura noturna avançada à mão",
+      "Correção: problemas com linhas de grade no modo de tela cheia",
+      "Corrigido o problema de fecho inesperado da Câmara",
+      "Corrigido o problema de disparo em rajada automático ocasional",
+      "Novo: modo de otimização de fotos em grupo",
+      "Novo: Agora você pode gravar vídeos a 960 fps",
+      "Novo: Modo de pouca luz aprimorado",
+      "Correção: problemas com linhas de grade no modo de tela cheia",
+      "Corrigido o problema de encerramento inesperado da câmera",
+      "Corrigido o problema de disparo em rajada automático ocasional",
+      "Corrigido o problema de disparo em rajada automático ocasional"
+    ],
+    "Cópia de segurança": [
+      "Corrigido o problema de exibição incorreta dos ícones ao restaurar de uma unidade USB aplicativos não instalados no telefone.",
+      "Corrigido o problema de exibição incorreta dos ícones ao restaurar de um dispositivo USB aplicativos não instalados"
+    ],
+    "Configurações": [
+      "Corrigido o problema em que duas opções de adicionar conta pessoal eram exibidas na sincronização de configurações.",
+      "Corrigido: duas opções para adicionar conta pessoal eram exibidas nas Configurações"
+    ],
+    "Atualizações": [
+      "Adicionada função de atalho no ecrã inicial; pode ser ativada nas definições de atualização.",
+      "Novo: função de atalho na tela inicial. Pode ser ativada nas configurações de atualização."
+    ],
+    "Gerenciador de arquivos": [
+      "Corrigido o problema que impedia pesquisar arquivos renomeados ou descriptografados",
+      "Corrigido o problema em que, em alguns casos, as miniaturas não eram atualizadas a tempo",
+      "Corrigido o problema de exibição incorreta da página de limpeza no modo de tela dividida",
+      "Corrigido o problema de abertura de arquivos após recortar imagens e vídeos na pasta privada",
+      "Corrigido o problema em que arquivos renomeados ou descriptografados não podiam ser pesquisados",
+      "Corrigido o problema em que, em alguns casos, as miniaturas não eram atualizadas a tempo",
+      "Corrigido o problema de exibição incorreta da página de limpeza no modo de tela dividida",
+      "Corrigido o problema de abertura de arquivos após recortar imagens e vídeos na pasta privada",
+      "Corrigido o problema de abertura de arquivos após recortar imagens e vídeos na pasta privada"
+    ],
+    "Gravador": [
+      "Corrigido o problema de exibição anormal do ícone de Configurações",
+      "Correção: o estado da gravação não era atualizado na barra de notificações ao pausar uma gravação",
+      "Corrigido o problema de exibição incorreta do ícone de Configurações",
+      "Correção: o estado da gravação não era atualizado na barra de notificações ao pausar uma gravação"
+    ],
+    "Conta Mi": [
+      "Corrigido o problema de exibição incorreta do idioma na página de login da Mi Account",
+      "Corrigido o problema de exibição incorreta do idioma na página de login da Mi Account"
+    ],
+    "Sistema": [
+      "Correção de problemas com o desbloqueio facial",
+      "Corrigido o problema de atalhos anormais após desbloquear a tela bloqueada durante o uso do WeChat."
+    ],
     "Outros": [
       "Desempenho do sistema aprimorado",
       "Segurança e estabilidade do sistema aprimoradas"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Corrigido a sobreposição entre o indicador de carregamento e o tempo estimado de carregamento na tela de bloqueio"
     ]
   },
   "logs_tr": {
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Eklendi: Durum çubuğunda bildirim simgelerinin gösterilmesi desteği. «Ayarlar – Bildirimler ve durum çubuğu – Bildirim geldiğinde simgeleri göster» bölümünden açın.",
+      "Sayısal pil stili kullanıldıktan sonra pil simgesinin anormal görüntülenmesi sorunu giderildi",
+      "Kilit ekranındayken önemsiz bildirimler alındığında ekranın yanmaması sorunu düzeltildi",
+      "Kilit ekranında şarj göstergesi ile tahmini şarj süresinin üst üste binmesi sorunu düzeltildi",
+      "Ekran açılırken/kapanırken ara sıra ekranın titremesi sorunu giderildi",
+      "Yeni: Durum çubuğunda bildirim simgelerini gösterme desteği. «Ayarlar > Bildirimler ve durum çubuğu > Bildirim geldiğinde simgeleri göster» bölümünden etkinleştirin.",
+      "Sayısal pil stili kullanıldıktan sonra pil simgesinin anormal görüntülenmesi sorunu giderildi",
+      "Kilit ekranındayken önemsiz bildirimler alındığında ekranın yanmaması sorunu düzeltildi",
+      "Kilit ekranında şarj göstergesi ile tahmini şarj süresinin üst üste binmesi sorunu düzeltildi",
+      "Ekran açılırken/kapanırken ara sıra ekranın titremesi sorunu giderildi"
+    ],
+    "Kamera": [
+      "Grup özçekimi optimizasyon modu eklendi",
+      "Yeni: Artık 960fps video çekebilirsiniz",
+      "Yeni: Elde süper gece çekimi desteği",
+      "Düzeltme: Tam ekran modunda kamera ızgara çizgileri sorunu",
+      "Kamera çökme sorunu giderildi",
+      "Ara sıra otomatik seri çekim sorunu düzeltildi",
+      "Yeni: grup fotoğrafı optimizasyon modu",
+      "Yeni: Artık 960fps video çekebilirsiniz",
+      "Yeni: Gelişmiş düşük ışık modu",
+      "Düzeltme: Tam ekran modunda kamera ızgara çizgileri sorunu",
+      "Kamera çökme sorunu giderildi",
+      "Ara sıra otomatik seri çekim sorunu düzeltildi",
+      "Ara sıra otomatik seri çekim sorunu düzeltildi"
+    ],
+    "Yedekleme": [
+      "USB sürücüsünden telefonda yüklü olmayan uygulamalar geri yüklenirken simgelerin yanlış görüntülenmesi sorunu giderildi.",
+      "USB aygıtından yüklü olmayan uygulamalar geri yüklenirken simgelerin yanlış görüntülenmesi sorunu giderildi"
+    ],
+    "Ayarlar": [
+      "Ayarlar senkronizasyonunda iki kişisel hesap ekleme seçeneği gösterilmesi sorunu düzeltildi.",
+      "Düzeltme: Ayarlar'da kişisel hesap eklemek için iki seçenek görünüyordu"
+    ],
+    "Güncelleyici": [
+      "Ana ekran kısayolu özelliği eklendi; güncelleme ayarlarından etkinleştirilebilir.",
+      "Yeni: Ana ekran kısayolu özelliği. Güncelleme ayarlarından etkinleştirilebilir."
+    ],
+    "Dosya Yöneticisi": [
+      "Yeniden adlandırılan veya şifresi çözülen dosyaların aranamaması sorunu giderildi",
+      "Bazı durumlarda küçük resimlerin zamanında yenilenmemesi sorunu giderildi",
+      "Bölünmüş ekran modunda Temizleyici sayfasının yanlış görüntülenmesi sorunu giderildi",
+      "Gizli klasördeki görselleri ve videoları kestikten sonra dosyaların açılması sorunu düzeltildi",
+      "Yeniden adlandırılan veya şifresi çözülen dosyaların aranamaması sorunu giderildi",
+      "Bazı durumlarda küçük resimlerin zamanında yenilenmemesi sorunu giderildi",
+      "Bölünmüş ekran modunda Temizleyici sayfasının yanlış görüntülenmesi sorunu giderildi",
+      "Gizli klasördeki görselleri ve videoları kestikten sonra dosyaların açılması sorunu düzeltildi",
+      "Gizli klasördeki görselleri ve videoları kestikten sonra dosyaların açılması sorunu düzeltildi"
+    ],
+    "Kayıt Cihazı": [
+      "Ayarlar simgesinin hatalı görüntülenmesi sorunu düzeltildi",
+      "Düzeltme: Kayıt duraklatıldığında kayıt durumu bildirim çubuğunda güncellenmiyordu",
+      "Ayarlar simgesinin yanlış görüntülenmesi sorunu giderildi",
+      "Düzeltme: Kayıt duraklatıldığında kayıt durumu bildirim çubuğunda güncellenmiyordu"
+    ],
+    "Mi Hesabı": [
+      "Mi Account giriş sayfasında dilin yanlış görüntülenmesi sorunu düzeltildi",
+      "Mi Account giriş sayfasında dilin yanlış görüntülenmesi sorunu düzeltildi"
+    ],
+    "Sistem": [
+      "Yüz ile kilit açma sorunları giderildi",
+      "WeChat kullanırken kilitlenen ekranın kilidi açıldıktan sonra kısayolların anormal çalışması sorunu düzeltildi."
+    ],
     "Diğer": [
       "Sistem performansı optimize edildi",
       "Sistem güvenliği ve kararlılığı geliştirildi"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Kilit ekranında şarj göstergesi ile tahmini şarj süresinin üst üste binmesi sorunu düzeltildi"
     ]
   },
   "logs_id": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "Layar kunci, bilah status, bilah notifikasi": [
+      "Ditambahkan: dukungan menampilkan ikon notifikasi di bilah status. Aktifkan di «Setelan – Notifikasi dan bilah status – Tampilkan ikon saat menerima notifikasi».",
+      "Memperbaiki masalah ikon baterai yang tampil tidak normal setelah menggunakan gaya baterai numerik",
+      "Memperbaiki masalah layar tidak menyala saat menerima notifikasi tidak penting dalam keadaan terkunci",
+      "Memperbaiki tampilan bola pengisian daya dan perkiraan waktu pengisian daya yang tumpang tindih di layar kunci",
+      "Memperbaiki masalah layar berkedip sesekali saat layar menyala/mati",
+      "Baru: Dukungan menampilkan ikon notifikasi di bilah status. Aktifkan di «Pengaturan > Notifikasi dan bilah status > Tampilkan ikon saat ada notifikasi».",
+      "Memperbaiki masalah ikon baterai yang tampil tidak normal setelah menggunakan gaya baterai numerik",
+      "Memperbaiki masalah layar tidak menyala saat menerima notifikasi tidak penting ketika perangkat terkunci",
+      "Memperbaiki tampilan bola pengisian daya dan perkiraan waktu pengisian daya yang tumpang tindih di layar kunci",
+      "Memperbaiki masalah layar berkedip sesekali saat layar menyala/mati"
+    ],
+    "Kamera": [
+      "Menambahkan mode selfie grup yang dioptimalkan",
+      "Baru: Sekarang Anda dapat merekam video 960fps",
+      "Baru: Dukungan pengambilan foto mode malam super dengan tangan",
+      "Perbaikan: masalah garis kisi pada mode layar penuh",
+      "Memperbaiki masalah Kamera yang force close",
+      "Memperbaiki masalah burst shot otomatis yang kadang terjadi",
+      "Memperbaiki masalah burst shot otomatis yang kadang terjadi"
+    ],
+    "Cadangan": [
+      "Memperbaiki masalah ikon yang ditampilkan secara tidak normal saat memulihkan aplikasi yang tidak terpasang di ponsel dari drive USB.",
+      "Memperbaiki masalah ikon aplikasi yang tidak ditampilkan dengan benar saat memulihkan aplikasi yang belum terinstal dari perangkat USB"
+    ],
+    "Pengaturan": [
+      "Memperbaiki masalah di mana dua opsi untuk menambahkan akun pribadi ditampilkan di sinkronisasi Pengaturan.",
+      "Perbaikan: dua opsi untuk menambahkan akun pribadi muncul di Pengaturan"
+    ],
+    "Pembaruan sistem": [
+      "Menambahkan fitur pintasan layar Utama; dapat diaktifkan di pengaturan pembaruan.",
+      "Baru: Fitur pintasan layar Utama. Dapat diaktifkan di pengaturan pembaruan."
+    ],
+    "Pengelola File": [
+      "Memperbaiki masalah file yang diganti nama atau didekripsi tidak dapat dicari",
+      "Memperbaiki masalah thumbnail tidak diperbarui tepat waktu dalam beberapa kasus",
+      "Memperbaiki masalah tampilan halaman Pembersih yang tidak normal dalam mode layar terbagi",
+      "Memperbaiki masalah pembukaan file setelah memotong gambar dan video di folder privat",
+      "Memperbaiki masalah file yang diganti nama atau didekripsi tidak dapat dicari",
+      "Memperbaiki masalah thumbnail tidak diperbarui tepat waktu dalam beberapa kasus",
+      "Memperbaiki masalah tampilan halaman Pembersih yang tidak normal dalam mode layar terbagi",
+      "Memperbaiki masalah pembukaan file setelah memotong gambar dan video di folder privat"
+    ],
+    "Perekam": [
+      "Memperbaiki masalah ikon Pengaturan yang tidak tampil dengan benar",
+      "Perbaikan: Status perekaman tidak diperbarui di bilah notifikasi saat perekaman dijeda",
+      "Memperbaiki masalah ikon Pengaturan yang tidak tampil dengan benar",
+      "Perbaikan: Status perekaman tidak diperbarui di bilah notifikasi saat perekaman dijeda"
+    ],
+    "Akun Mi": [
+      "Memperbaiki masalah tampilan bahasa yang salah di halaman masuk Mi Account",
+      "Memperbaiki masalah tampilan bahasa yang salah di halaman masuk Mi Account"
+    ],
+    "Sistem": [
+      "Perbaikan masalah buka kunci wajah",
+      "Memperbaiki masalah pintasan yang tidak normal setelah membuka kunci layar yang dikunci saat menggunakan WeChat."
+    ],
+    "Lainnya": [
+      "Performa sistem dioptimalkan",
+      "Keamanan dan stabilitas sistem ditingkatkan"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Memperbaiki tampilan bola pengisian daya dan perkiraan waktu pengisian daya yang tumpang tindih di layar kunci"
+    ],
+    "Pengelola Berkas": [
+      "Memperbaiki masalah pembukaan file setelah memotong gambar dan video di folder privat"
     ]
   },
   "logs_vi": {
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Đã thêm: hỗ trợ hiển thị biểu tượng thông báo trên thanh trạng thái. Bật trong «Cài đặt – Thông báo và thanh trạng thái – Hiển thị biểu tượng khi nhận thông báo».",
+      "Đã sửa lỗi biểu tượng pin hiển thị bất thường sau khi dùng kiểu pin dạng số",
+      "Khắc phục sự cố màn hình không sáng khi nhận thông báo không quan trọng trong trạng thái khóa",
+      "Đã sửa lỗi chồng lấn giữa bóng sạc và thời gian sạc dự kiến trên màn hình khóa",
+      "Sửa lỗi màn hình thỉnh thoảng nhấp nháy khi bật/tắt màn hình",
+      "Mới: Hỗ trợ hiển thị biểu tượng thông báo trên thanh trạng thái. Bật tại «Cài đặt > Thông báo và thanh trạng thái > Hiển thị biểu tượng khi có thông báo».",
+      "Đã sửa lỗi biểu tượng pin hiển thị bất thường sau khi dùng kiểu pin dạng số",
+      "Đã khắc phục sự cố màn hình không sáng khi nhận thông báo không quan trọng lúc khóa máy",
+      "Đã sửa lỗi chồng lấn giữa bóng sạc và thời gian sạc dự kiến trên màn hình khóa",
+      "Sửa lỗi màn hình thỉnh thoảng nhấp nháy khi bật/tắt màn hình"
+    ],
+    "Máy ảnh": [
+      "Thêm chế độ tối ưu ảnh selfie nhóm",
+      "Mới: Bạn có thể quay video 960fps",
+      "Mới: Hỗ trợ chụp ảnh chế độ ban đêm siêu nét bằng tay",
+      "Sửa lỗi: vấn đề đường lưới camera ở chế độ toàn màn hình",
+      "Khắc phục sự cố Camera bị thoát đột ngột",
+      "Sửa lỗi đôi khi tự động chụp liên tiếp",
+      "Mới: chế độ tối ưu ảnh nhóm",
+      "Mới: Bạn có thể quay video 960fps",
+      "Mới: Tăng cường chế độ thiếu sáng",
+      "Sửa lỗi: vấn đề đường lưới camera ở chế độ toàn màn hình",
+      "Đã sửa lỗi camera bị thoát đột ngột",
+      "Sửa lỗi đôi khi tự động chụp liên tiếp"
+    ],
+    "Sao lưu": [
+      "Đã khắc phục sự cố biểu tượng hiển thị không đúng khi khôi phục ứng dụng chưa cài đặt trên điện thoại từ ổ USB.",
+      "Đã khắc phục sự cố biểu tượng ứng dụng hiển thị không đúng khi khôi phục ứng dụng chưa cài đặt từ thiết bị USB"
+    ],
+    "Cài đặt": [
+      "Đã sửa lỗi hiển thị hai tùy chọn thêm tài khoản cá nhân trong đồng bộ hóa Cài đặt.",
+      "Đã sửa: hai tùy chọn thêm tài khoản cá nhân hiển thị trong Cài đặt"
+    ],
+    "Trình cập nhật": [
+      "Thêm tính năng lối tắt màn hình chính; có thể bật trong cài đặt cập nhật.",
+      "Mới: Tính năng lối tắt trên màn hình chính. Có thể bật trong cài đặt cập nhật."
+    ],
+    "Trình quản lý tệp": [
+      "Khắc phục sự cố không thể tìm kiếm tệp đã đổi tên hoặc đã giải mã",
+      "Đã khắc phục sự cố hình thu nhỏ không được làm mới kịp thời trong một số trường hợp",
+      "Đã sửa lỗi trang Dọn dẹp hiển thị không bình thường ở chế độ chia đôi màn hình",
+      "Đã sửa lỗi mở tệp sau khi cắt ảnh và video trong thư mục riêng tư",
+      "Đã khắc phục sự cố không thể tìm kiếm tệp đã đổi tên hoặc giải mã",
+      "Đã khắc phục sự cố hình thu nhỏ không được làm mới kịp thời trong một số trường hợp",
+      "Đã sửa lỗi trang Dọn dẹp hiển thị không bình thường ở chế độ chia đôi màn hình",
+      "Đã sửa lỗi mở tệp sau khi cắt ảnh và video trong thư mục riêng tư",
+      "Đã sửa lỗi mở tệp sau khi cắt ảnh và video trong thư mục riêng tư"
+    ],
+    "Máy ghi âm": [
+      "Khắc phục sự cố biểu tượng Cài đặt hiển thị bất thường",
+      "Đã sửa: Trạng thái ghi âm không được cập nhật kịp thời trên thanh thông báo khi tạm dừng ghi âm",
+      "Đã khắc phục sự cố biểu tượng Cài đặt hiển thị không đúng",
+      "Đã sửa: Trạng thái ghi âm không được cập nhật kịp thời trên thanh thông báo khi tạm dừng ghi âm"
+    ],
+    "Tài khoản Mi": [
+      "Đã sửa lỗi hiển thị sai ngôn ngữ trên trang đăng nhập Mi Account",
+      "Đã sửa lỗi hiển thị sai ngôn ngữ trên trang đăng nhập Mi Account"
+    ],
+    "Hệ thống": [
+      "Sửa lỗi liên quan đến mở khóa bằng khuôn mặt",
+      "Đã sửa lỗi lối tắt bất thường sau khi mở khóa màn hình bị khóa khi đang dùng WeChat."
+    ],
     "Khác": [
       "Tối ưu hiệu suất hệ thống",
       "Cải thiện tính ổn định và bảo mật hệ thống"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Đã sửa lỗi chồng lấn giữa bóng sạc và thời gian sạc dự kiến trên màn hình khóa"
+    ],
+    "Camera": [
+      "Sửa lỗi đôi khi tự động chụp liên tiếp"
     ]
   },
   "logs_th": {
+    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
+      "เพิ่ม: รองรับการแสดงไอคอนการแจ้งเตือนในแถบสถานะ เปิดใช้งานได้ที่ «การตั้งค่า – การแจ้งเตือนและแถบสถานะ – แสดงไอคอนเมื่อมีการแจ้งเตือน»",
+      "แก้ไขปัญหาการแสดงไอคอนแบตเตอรี่ผิดปกติหลังจากใช้สไตล์แบตเตอรี่แบบตัวเลข",
+      "แก้ไขปัญหาหน้าจอไม่สว่างเมื่อได้รับการแจ้งเตือนที่ไม่สำคัญขณะล็อกหน้าจอ",
+      "แก้ไขปัญหาวงกลมชาร์จและเวลาชาร์จโดยประมาณแสดงทับซ้อนกันบนหน้าจอล็อก",
+      "แก้ไขปัญหาหน้าจอกะพริบเป็นครั้งคราวเมื่อเปิด/ปิดหน้าจอ",
+      "ใหม่: รองรับการแสดงไอคอนการแจ้งเตือนบนแถบสถานะ เปิดใช้งานได้ที่ «การตั้งค่า > การแจ้งเตือนและแถบสถานะ > แสดงไอคอนเมื่อมีการแจ้งเตือน»",
+      "แก้ไขปัญหาการแสดงไอคอนแบตเตอรี่ผิดปกติหลังจากใช้สไตล์แบตเตอรี่แบบตัวเลข",
+      "แก้ไขปัญหาหน้าจอไม่สว่างเมื่อได้รับการแจ้งเตือนที่ไม่สำคัญขณะล็อกหน้าจอ",
+      "แก้ไขปัญหาวงกลมชาร์จและเวลาชาร์จโดยประมาณแสดงทับซ้อนกันบนหน้าจอล็อก",
+      "แก้ไขปัญหาหน้าจอกะพริบเป็นครั้งคราวเมื่อเปิด/ปิดหน้าจอ"
+    ],
+    "กล้อง": [
+      "เพิ่มโหมดปรับแต่งเซลฟี่กลุ่มให้เหมาะสม",
+      "ใหม่: คุณสามารถถ่ายวิดีโอสโลว์โมชัน 960fps ได้แล้ว",
+      "ใหม่: รองรับการถ่ายภาพโหมดกลางคืนซูเปอร์แบบถือด้วยมือ",
+      "แก้ไข: ปัญหาเส้นตารางกล้องในโหมดเต็มหน้าจอ",
+      "แก้ไขปัญหากล้องหยุดทำงานกะทันหัน",
+      "แก้ไขปัญหาการถ่ายภาพต่อเนื่องอัตโนมัติเป็นครั้งคราว",
+      "ใหม่: โหมดเพิ่มประสิทธิภาพภาพถ่ายหมู่",
+      "ใหม่: คุณสามารถถ่ายวิดีโอสโลว์โมชัน 960fps ได้แล้ว",
+      "ใหม่: ปรับปรุงโหมดแสงน้อย",
+      "แก้ไข: ปัญหาเส้นตารางกล้องในโหมดเต็มหน้าจอ",
+      "แก้ไขปัญหากล้องหยุดทำงานกะทันหัน",
+      "แก้ไขปัญหาการถ่ายภาพต่อเนื่องอัตโนมัติเป็นครั้งคราว",
+      "แก้ไขปัญหาการถ่ายภาพต่อเนื่องอัตโนมัติเป็นครั้งคราว"
+    ],
+    "สำรองข้อมูล": [
+      "แก้ไขปัญหาการแสดงไอคอนผิดปกติเมื่อกู้คืนแอปที่ยังไม่ได้ติดตั้งบนโทรศัพท์จากไดรฟ์ USB",
+      "แก้ไขปัญหาการแสดงไอคอนแอปไม่ถูกต้องเมื่อกู้คืนแอปที่ยังไม่ได้ติดตั้งจากอุปกรณ์ USB"
+    ],
+    "การตั้งค่า": [
+      "แก้ไขปัญหาที่การซิงค์การตั้งค่าแสดงตัวเลือกเพิ่มบัญชีส่วนตัวสองรายการ",
+      "แก้ไข: มีตัวเลือกเพิ่มบัญชีส่วนตัวสองรายการแสดงในการตั้งค่า"
+    ],
+    "ตัวอัปเดต": [
+      "เพิ่มฟีเจอร์ทางลัดหน้าจอหลัก เปิดใช้งานได้ในการตั้งค่าอัปเดต",
+      "ใหม่: ฟีเจอร์ทางลัดบนหน้าจอหลัก เปิดใช้งานได้ในการตั้งค่าการอัปเดต"
+    ],
+    "ตัวจัดการไฟล์": [
+      "แก้ไขปัญหาที่ไม่สามารถค้นหาไฟล์ที่เปลี่ยนชื่อหรือถอดรหัสแล้วได้",
+      "แก้ไขปัญหาที่ในบางกรณีรูปย่อไม่รีเฟรชทันเวลา",
+      "แก้ไขปัญหาหน้าล้างข้อมูลแสดงผลผิดปกติในโหมดแบ่งหน้าจอ",
+      "แก้ไขปัญหาการเปิดไฟล์ผิดปกติหลังจากตัดรูปภาพและวิดีโอในโฟลเดอร์ส่วนตัว",
+      "แก้ไขปัญหาที่ไม่สามารถค้นหาไฟล์ที่เปลี่ยนชื่อหรือถอดรหัสแล้วได้",
+      "แก้ไขปัญหาที่ในบางกรณีรูปย่อไม่รีเฟรชทันเวลา",
+      "แก้ไขปัญหาหน้าล้างข้อมูลแสดงผลผิดปกติในโหมดแบ่งหน้าจอ",
+      "แก้ไขปัญหาการเปิดไฟล์ผิดปกติหลังจากตัดรูปภาพและวิดีโอในโฟลเดอร์ส่วนตัว",
+      "แก้ไขปัญหาการเปิดไฟล์ผิดปกติหลังจากตัดรูปภาพและวิดีโอในโฟลเดอร์ส่วนตัว"
+    ],
+    "เครื่องบันทึกเสียง": [
+      "แก้ไขปัญหาไอคอนการตั้งค่าแสดงผลผิดปกติ",
+      "แก้ไข: สถานะการบันทึกเสียงไม่ได้รับการอัปเดตในแถบการแจ้งเตือนเมื่อหยุดการบันทึกชั่วคราว",
+      "แก้ไขปัญหาการแสดงไอคอนการตั้งค่าผิดปกติ",
+      "แก้ไข: สถานะการบันทึกเสียงไม่ได้รับการอัปเดตในแถบการแจ้งเตือนเมื่อหยุดการบันทึกชั่วคราว"
+    ],
+    "บัญชี Mi": [
+      "แก้ไขปัญหาการแสดงภาษาที่ไม่ถูกต้องในหน้าเข้าสู่ระบบ Mi Account",
+      "แก้ไขปัญหาการแสดงภาษาที่ไม่ถูกต้องในหน้าเข้าสู่ระบบ Mi Account"
+    ],
+    "ระบบ": [
+      "แก้ไขปัญหาการปลดล็อกด้วยใบหน้า",
+      "แก้ไขปัญหาทางลัดทำงานผิดปกติหลังจากปลดล็อกหน้าจอที่ล็อกขณะใช้งาน WeChat"
+    ],
     "อื่นๆ": [
       "เพิ่มประสิทธิภาพของระบบ",
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "แก้ไขปัญหาวงกลมชาร์จและเวลาชาร์จโดยประมาณแสดงทับซ้อนกันบนหน้าจอล็อก"
     ]
   },
   "logs_ar": {
+    "شاشة القفل، شريط الحالة، شريط الإشعارات": [
+      "تمت الإضافة: دعم عرض رموز الإشعارات في شريط الحالة. فعّله من «الإعدادات – الإشعارات وشريط الحالة – إظهار الرموز عند تلقي الإشعارات».",
+      "إصلاح مشكلة عرض أيقونة البطارية بشكل غير طبيعي بعد استخدام نمط البطارية الرقمي",
+      "إصلاح مشكلة عدم إضاءة الشاشة عند تلقي إشعارات غير مهمة أثناء قفل الشاشة",
+      "إصلاح مشكلة تداخل كرة الشحن ووقت الشحن المتوقع على شاشة القفل",
+      "إصلاح مشكلة وميض الشاشة أحيانًا عند تشغيل/إيقاف الشاشة",
+      "جديد: دعم عرض رموز الإشعارات في شريط الحالة. فعّله من «الإعدادات > الإشعارات وشريط الحالة > إظهار الرموز عند وصول الإشعارات».",
+      "إصلاح مشكلة عرض أيقونة البطارية بشكل غير طبيعي بعد استخدام نمط البطارية الرقمي",
+      "إصلاح مشكلة عدم إضاءة الشاشة عند تلقي إشعارات غير مهمة أثناء قفل الجهاز",
+      "إصلاح مشكلة تداخل كرة الشحن ووقت الشحن المتوقع على شاشة القفل",
+      "إصلاح مشكلة وميض الشاشة أحيانًا عند تشغيل/إيقاف الشاشة"
+    ],
+    "كاميرا": [
+      "إضافة وضع تحسين صور السيلفي الجماعية",
+      "جديد: يمكنك الآن تصوير مقاطع فيديو بالحركة البطيئة بمعدل 960 إطارًا في الثانية",
+      "جديد: دعم تصوير الوضع الليلي الفائق بالحمل باليد",
+      "إصلاح: مشكلة خطوط الشبكة في وضع ملء الشاشة للكاميرا",
+      "إصلاح مشكلة تعطل الكاميرا",
+      "إصلاح مشكلة التصوير المتتابع التلقائي العرضي",
+      "جديد: وضع تحسين صور المجموعة",
+      "جديد: يمكنك الآن تصوير مقاطع فيديو بالحركة البطيئة بمعدل 960 إطارًا في الثانية",
+      ":الجديد تحسينات في وضع الإضاءة الخافتة",
+      "إصلاح: مشكلة خطوط الشبكة في وضع ملء الشاشة للكاميرا",
+      "إصلاح مشكلة تعطل الكاميرا",
+      "إصلاح مشكلة التصوير المتتابع التلقائي العرضي"
+    ],
+    "النسخ الاحتياطي": [
+      "إصلاح مشكلة عرض الرموز بشكل غير صحيح عند استعادة التطبيقات غير المثبّتة على الهاتف من محرك أقراص USB.",
+      "تم إصلاح مشكلة عرض أيقونات التطبيقات بشكل غير صحيح عند استعادة التطبيقات غير المثبتة من جهاز USB"
+    ],
+    "الإعدادات": [
+      "تم إصلاح مشكلة ظهور خيارين لإضافة حساب شخصي في مزامنة الإعدادات.",
+      "إصلاح: ظهور خيارين لإضافة حساب شخصي في الإعدادات"
+    ],
+    "المحدث": [
+      "إضافة ميزة اختصار الشاشة الرئيسية؛ يمكن تفعيلها في إعدادات التحديث.",
+      "جديد: ميزة اختصار الشاشة الرئيسية. يمكن تفعيلها في إعدادات التحديث."
+    ],
+    "مدير الملفات": [
+      "إصلاح مشكلة تعذّر البحث عن الملفات التي أُعيدت تسميتها أو فُكّ تشفيرها",
+      "إصلاح مشكلة عدم تحديث الصور المصغرة في الوقت المناسب في بعض الحالات",
+      "إصلاح مشكلة عرض صفحة التنظيف بشكل غير صحيح في وضع تقسيم الشاشة",
+      "إصلاح مشكلة فتح الملفات بشكل غير طبيعي بعد قص الصور ومقاطع الفيديو في المجلد الخاص",
+      "إصلاح مشكلة عدم إمكانية البحث عن الملفات المعاد تسميتها أو التي تم فك تشفيرها",
+      "إصلاح مشكلة عدم تحديث الصور المصغرة في الوقت المناسب في بعض الحالات",
+      "إصلاح مشكلة عرض صفحة التنظيف بشكل غير صحيح في وضع تقسيم الشاشة",
+      "إصلاح مشكلة فتح الملفات بشكل غير طبيعي بعد قص الصور ومقاطع الفيديو في المجلد الخاص",
+      "إصلاح مشكلة فتح الملفات بشكل غير طبيعي بعد قص الصور ومقاطع الفيديو في المجلد الخاص"
+    ],
+    "مسجل": [
+      "إصلاح مشكلة عرض أيقونة الإعدادات بشكل غير طبيعي",
+      "إصلاح: لم يتم تحديث حالة التسجيل في شريط الإشعارات عند إيقاف التسجيل مؤقتًا",
+      "تم إصلاح مشكلة عرض أيقونة الإعدادات بشكل غير صحيح",
+      "إصلاح: لم يتم تحديث حالة التسجيل في شريط الإشعارات عند إيقاف التسجيل مؤقتًا"
+    ],
+    "حساب Mi": [
+      "إصلاح مشكلة عرض اللغة بشكل غير صحيح في صفحة تسجيل الدخول إلى Mi Account",
+      "إصلاح مشكلة عرض اللغة بشكل غير صحيح في صفحة تسجيل الدخول إلى Mi Account"
+    ],
+    "النظام": [
+      "إصلاح المشكلات المتعلقة بفتح القفل بالوجه",
+      "إصلاح مشكلة اختصارات غير طبيعية بعد إلغاء قفل الشاشة التي تم قفلها أثناء استخدام WeChat."
+    ],
     "أخرى": [
       "تحسين أداء النظام",
       "تحسين أمن واستقرار النظام"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "إصلاح مشكلة تداخل كرة الشحن ووقت الشحن المتوقع على شاشة القفل"
+    ],
+    "الكاميرا": [
+      "إصلاح مشكلة التصوير المتتابع التلقائي العرضي"
     ]
   },
   "logs_in": {
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
+      "जोड़ा गया: स्टेटस बार में सूचना आइकन दिखाने का समर्थन। «सेटिंग्स – सूचनाएं और स्टेटस बार – सूचना आने पर आइकन दिखाएं» में सक्षम करें।",
+      "संख्यात्मक बैटरी शैली का उपयोग करने के बाद बैटरी आइकन के असामान्य रूप से प्रदर्शित होने की समस्या ठीक की गई",
+      "लॉक स्क्रीन पर अप्रमुख सूचनाएं मिलने पर स्क्रीन न जलने की समस्या ठीक की गई",
+      "लॉक स्क्रीन पर चार्जिंग बॉल और अनुमानित चार्जिंग समय के ओवरलैप होने की समस्या ठीक की गई",
+      "स्क्रीन चालू/बंद करते समय कभी-कभी स्क्रीन झिलमिलाने की समस्या ठीक की गई",
+      "नया: स्टेटस बार में सूचना आइकन दिखाने का समर्थन। इसे «सेटिंग्स > सूचनाएं और स्टेटस बार > सूचना आने पर आइकन दिखाएं» में सक्षम करें।",
+      "संख्यात्मक बैटरी शैली का उपयोग करने के बाद बैटरी आइकन के असामान्य रूप से प्रदर्शित होने की समस्या ठीक की गई",
+      "लॉक स्क्रीन पर महत्वहीन सूचनाएं मिलने पर स्क्रीन न चमकने की समस्या ठीक की गई",
+      "लॉक स्क्रीन पर चार्जिंग बॉल और अनुमानित चार्जिंग समय के ओवरलैप होने की समस्या ठीक की गई",
+      "स्क्रीन चालू/बंद करते समय कभी-कभी स्क्रीन झिलमिलाने की समस्या ठीक की गई"
+    ],
+    "कैमरा": [
+      "समूह सेल्फी अनुकूलन मोड जोड़ा गया",
+      "नया: अब आप 960fps वीडियो शूट कर सकते हैं",
+      "नया: हैंडहेल्ड सुपर नाइट शूटिंग फ़ंक्शन के लिए समर्थन",
+      "सुधार: फ़ुलस्क्रीन मोड में कैमरा ग्रिड लाइनों की समस्या",
+      "कैमरा क्रैश होने की समस्या ठीक की गई",
+      "कभी-कभार स्वचालित बर्स्ट शॉट की समस्या ठीक की गई",
+      "नया: ग्रुप फ़ोटो ऑप्टिमाइज़ेशन मोड",
+      "नया: अब आप 960fps वीडियो शूट कर सकते हैं",
+      "नया बेहतर कम रोशनी वाला मोड",
+      "सुधार: फ़ुलस्क्रीन मोड में कैमरा ग्रिड लाइनों की समस्या",
+      "कैमरा क्रैश होने की समस्या ठीक की गई",
+      "कभी-कभार स्वचालित बर्स्ट शॉट की समस्या ठीक की गई",
+      "कभी-कभार स्वचालित बर्स्ट शॉट की समस्या ठीक की गई"
+    ],
+    "बैकअप": [
+      "फ़ोन पर इंस्टॉल न किए गए ऐप्स को USB ड्राइव से बहाल करते समय आइकन गलत तरीके से दिखने की समस्या ठीक की गई।",
+      "USB डिवाइस से फ़ोन में इंस्टॉल न किए गए ऐप्स को रीस्टोर करते समय ऐप आइकन सही ढंग से न दिखने की समस्या ठीक की गई"
+    ],
+    "सेटिंग्स": [
+      "सेटिंग्स सिंक में व्यक्तिगत खाता जोड़ने के दो विकल्प दिखने की समस्या ठीक की गई।",
+      "ठीक किया गया: सेटिंग्स में व्यक्तिगत खाता जोड़ने के दो विकल्प दिखाई दे रहे थे"
+    ],
+    "अपडेटर": [
+      "होम स्क्रीन शॉर्टकट सुविधा जोड़ी गई; इसे अपडेट सेटिंग्स में सक्षम किया जा सकता है।",
+      "नया: होम स्क्रीन शॉर्टकट सुविधा। अपडेट सेटिंग्स में सक्षम किया जा सकता है।"
+    ],
+    "फ़ाइल प्रबंधक": [
+      "नाम बदली या डिक्रिप्ट की गई फ़ाइलों को खोज न पाने की समस्या ठीक की गई",
+      "कुछ स्थितियों में थंबनेल समय पर रीफ़्रेश न होने की समस्या ठीक की गई",
+      "स्प्लिट स्क्रीन मोड में क्लीनर पेज के गलत तरीके से प्रदर्शित होने की समस्या ठीक की गई",
+      "निजी फ़ोल्डर में छवियों और वीडियो को काटने के बाद फ़ाइलें खोलने की समस्या ठीक की गई",
+      "नाम बदली या डिक्रिप्ट की गई फ़ाइलों को खोज न पाने की समस्या ठीक की गई",
+      "कुछ स्थितियों में थंबनेल समय पर रीफ़्रेश न होने की समस्या ठीक की गई",
+      "स्प्लिट स्क्रीन मोड में क्लीनर पेज के गलत तरीके से प्रदर्शित होने की समस्या ठीक की गई",
+      "निजी फ़ोल्डर में छवियों और वीडियो को काटने के बाद फ़ाइलें खोलने की समस्या ठीक की गई",
+      "निजी फ़ोल्डर में छवियों और वीडियो को काटने के बाद फ़ाइलें खोलने की समस्या ठीक की गई"
+    ],
+    "रिकॉर्डर": [
+      "सेटिंग्स आइकन के अनियमित रूप से प्रदर्शित होने की समस्या ठीक की गई",
+      "समस्या ठीक की गई: रिकॉर्डिंग पॉज़ करने पर नोटिफ़िकेशन शेड में स्थिति तुरंत अपडेट नहीं होती थी",
+      "सेटिंग्स आइकन के गलत तरीके से प्रदर्शित होने की समस्या ठीक की गई",
+      "समस्या ठीक की गई: रिकॉर्डिंग पॉज़ करने पर नोटिफ़िकेशन शेड में स्थिति तुरंत अपडेट नहीं होती थी"
+    ],
+    "Mi खाता": [
+      "Mi Account साइन-इन पेज पर भाषा के गलत प्रदर्शन की समस्या ठीक की गई",
+      "Mi Account साइन-इन पेज पर भाषा के गलत प्रदर्शन की समस्या ठीक की गई"
+    ],
+    "सिस्टम": [
+      "फ़ेस अनलॉक से जुड़ी समस्याओं को ठीक किया गया",
+      "WeChat का उपयोग करते समय लॉक हुई स्क्रीन को अनलॉक करने के बाद शॉर्टकट के असामान्य होने की समस्या ठीक की गई."
+    ],
     "अन्य": [
       "सिस्टम परफ़ॉर्मेंस ऑप्टिमाइज़ किया गया है",
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "लॉक स्क्रीन पर चार्जिंग बॉल और अनुमानित चार्जिंग समय के ओवरलैप होने की समस्या ठीक की गई"
     ]
   },
   "logs_ug": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "تەڭشەك": [
+      "تەڭشەك синخروزلاشتا شەخسىي ھېسابات قوشۇش تاللانمىسىنىڭ ئىككى قېتىم كۆرۈنۈش مەسىلىسى تۈزىتىلدى."
+    ],
+    "ئاۋاز ئالغۇ": [
+      "تەڭشەك سىنبەلگىسىنىڭ نورمالسىز كۆرۈنۈش مەسىلىسى تۈزىتىلدى",
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
+    ],
+    "Updater": [
+      "يېڭى: باش ئېكران تېز يوللانمىسى ئىقتىدارى. يېڭىلاش تەڭشەكلىرىدە قوزغىتىشقا بولىدۇ."
+    ],
+    "باشقىلىرى": [
+      "سىستېمىنىڭ مۇقىملىقىنى ئاشۇرۇش",
+      "سىستېما راۋانلىقىنى ئەلالاشتۇرۇش"
     ]
   },
   "logs_bo": {
-    "Other": [
+    "Settings": [
+      "སྒྲིག་འཛུགས་མཉམ་སྦྲེལ་ནང་སྒེར་གྱི་རྩིས་ཐོ་གཉིས་ཁ་སྣོན་བྱེད་པའི་གདམ་ཀ་གཉིས་མངོན་པའི་གནད་དོན་བཅོས་ཡོད།"
+    ],
+    "སྒྲ་འཇུག་ཆས": [
+      "སྒྲིག་འཛུགས་ངོ་རྟགས་རྒྱུན་མིན་ངང་མངོན་པའི་གནད་དོན་བཅོས་ཟིན།",
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
+    ],
+    "གཞན།": [
       "Optimized system performance",
       "Improved system security and stability"
     ]

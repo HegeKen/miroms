@@ -54,7 +54,13 @@
 │   ├── exporter.py                   #   主导出脚本（v1 / v2 / v3 + 站点附属接口）
 │   ├── migrate_logs_multilang.py     #   日志多语言分组迁移（logs 重建 + roms.logs 回写）
 │   ├── dedup_logs.py                 #   logs 去重体检 / 合并重复分组 / 清理孤儿行
-│   ├── resequence_ids.py             #   重排 roms / dev 的 id（消除自增空档）
+│   ├── maintain_logs.py              #   logs 统一维护：体检 / content / 掩码 / id / 孤儿行 / 计数器
+│   ├── proofread_logs.py             #   日志多语言校对：规则扫描 + DeepSeek 复核 + 安全写回
+│   ├── fix_lang_issues.py            #   按 logs.lang_issues 修正错误语言列 / 清理掩码位
+│   ├── fill_missing_logs.py         #   proofed 行缺失语言 AI 翻译回填
+│   ├── restore_log_escapes.py       #   还原旧 JSON 转义 ^ / $$（一次性）
+│   ├── fix_mixed_translations.py    #   mixed_translations 两步修复（规划 / merge / split）
+│   ├── resequence_ids.py             #   重排 roms / dev / logs 的 id（消除自增空档）
 │   ├── rebuild_roms_logs.py          #   按备份库重建 roms.logs（修复悬空引用）
 │   ├── import_dev_week.py            #   导入开发版周更数据（dev 表 + roms.dev_week）
 │   ├── import_sitelog.py             #   导入两个站点的站点日志到 sitelog 表
@@ -63,9 +69,9 @@
 │   ├── sync_devices.py               #   同步设备列表
 │   ├── fix_missing_tag_mappings.py   #   修复缺失 tag 映射
 │   ├── common.py                     #   向后兼容入口（重新导出 miroms 包）
-│   ├── config.py                     #   数据库连接配置 + 部署 hook
-│   ├── push.py                       #   一键导出 → 提交推送 → 部署
-│   ├── deploy.py                     #   触发 Cloudflare Pages 部署
+│   ├── config.py                     #   数据库连接配置 + 部署配置（api + ids）
+│   ├── push.py                       #   一键导出 → 提交推送 → 依次部署全部站点
+│   ├── deploy.py                     #   按 config.ids 逐个触发 Cloudflare Pages 部署
 │   ├── *.py                          #   各类抓取脚本（见下文「抓取 / 部署脚本」）
 │   └── miroms/                       #   核心包（常量/工具/抓取/导出等）
 │       ├── exporters.py              #     exportV1 / exportV2 / exportV3 / export_dev
@@ -285,8 +291,234 @@ InnoDB 的 `AUTO_INCREMENT` 在**插入失败 / 事务回滚**时不会回收（
 ```bash
 python3 scripts/resequence_ids.py                 # 只看 roms 的空档
 python3 scripts/resequence_ids.py --table dev     # 只看 dev
+python3 scripts/resequence_ids.py --table logs    # 只看 logs（重排会同步重写引用）
 python3 scripts/resequence_ids.py --apply         # 重排 roms 并归位计数器
+python3 scripts/resequence_ids.py --table logs --apply
 python3 scripts/resequence_ids.py --verify        # 只校验是否连续
+```
+
+`logs.id` 被 `roms.logs` / `dev.logs` 引用，不能像 `roms` / `dev` 那样直接重排：
+`--table logs` 会走 `LogMaintenance.compact_ids`，在**同一个事务**里「整体 +1000000 →
+赋 ROW_NUMBER()」，随后按旧→新映射重写全部引用并归位计数器；整段在跨进程写锁内执行，
+写库前自动把 logs 全表与引用结构备份成 JSON（`--no-backup` 可跳过）。
+
+#### 日志维护（去重 / content / 掩码 / id / 孤儿行）
+
+通用逻辑收敛在 `scripts/miroms/logs_maintenance.py` 的 `LogMaintenance`，
+文本判定收敛在 `logs_text.py` 的 `LogText`；脚本只做参数解析与打印：
+
+```bash
+python3 scripts/maintain_logs.py                        # 体检（只读）：重复、悬空引用、坏 JSON、
+                                                        # 孤儿行、content 不一致、哈希过期、掩码、id 空档
+python3 scripts/maintain_logs.py --report /tmp/audit.json
+python3 scripts/maintain_logs.py content --apply        # 以 logs_zh 为准重建 content / content_hash
+python3 scripts/maintain_logs.py masks --apply          # 补齐掩码（新掩码 = 原掩码 | 公共语言掩码）
+python3 scripts/maintain_logs.py masks --clean-invalid --apply  # 删除「模块行已无该语言」的无效掩码位
+python3 scripts/maintain_logs.py prefix --apply          # 去掉 content/语言列开头的空白和标点（* 除外）
+python3 scripts/maintain_logs.py ids --apply            # 压缩 logs id + 重写引用（自动备份）
+python3 scripts/maintain_logs.py unused --apply         # 删除未被引用的日志行
+python3 scripts/maintain_logs.py auto-increment --apply # logs.AUTO_INCREMENT 归位到 MAX(id)+1
+python3 scripts/maintain_logs.py merge --groups "11040:1" --apply  # 按显式分组合并（引用自动重写）
+python3 scripts/maintain_logs.py snapshot --out /tmp/logs_before.json.gz
+python3 scripts/maintain_logs.py compare --before /tmp/logs_before.json.gz
+```
+
+所有动作默认 dry-run，只有 `--apply` 才写库。掩码补齐「只增不减」，不会让任何 ROM 的导出结果回退；
+`ids` / `unused` 属于破坏性操作，都会先刷新导出缓存。
+
+`merge` 用于「自动去重无法判定」的场景：两行中文相同，但一方的某门外语其实只是英文回落
+（值等于本行 `logs_en`，如 `id=1` 的 `logs_de='Other'`），另一方有真实译文（如 `id=11040`
+的 `logs_de='Sonstiges'`）。严格规则会把回落值当冲突而漏合并；`merge_groups` 会优先保留真实译文、
+再用回落值补空缺，并按代表行重写引用。
+
+`snapshot` 会把每个 `roms` / `dev` 行解出的多语言日志拍成快照（默认 gzip，约 80–90 MB）；
+在去重 / 补掩码 / 压缩 id 之后再跑 `compare`，逐条对比「新增 / 消失的文本、语言与模块名」，
+检测到内容丢失（文本减少、语言减少或整行消失）时退出码为 1——比抽样检查可靠，和以前一次性脚本的
+「导出回归」口径一致。
+
+纯逻辑（文本判定、去重计划、引用重排、content / 掩码 / 孤儿行体检）有单元测试，不连数据库：
+
+```bash
+python3 scripts/test_logs_maintenance.py
+```
+
+#### 日志 AI 校对（DeepSeek，可选）
+
+同一 ROM 的不同语言结构会被拆成「中文簇 + 附加语言簇」。早期按模块名 / 条目数猜测补译的脚本
+可能把中文填错，例如 `id=11036`（德文 `Interkonnektivität`）和 `id=11038`
+（`Datenschutz und Sicherheit`）都被填成了「其他」，而真正的「其他」是 `id=11040`
+（`Sonstiges`）。这类问题会同时制造「同一 ROM 多个同名中文模块」和「导出中文重复」。
+`proofread_logs.py` 把它做成可重复的流程，默认全程 dry-run：
+
+```bash
+# 1) 只校对某几个 logs.id（不改日志内容；verdict=ok 时写 proofed 标记）
+python3 scripts/proofread_logs.py check --ids 11036
+python3 scripts/proofread_logs.py check --ids 11036,11038
+python3 scripts/proofread_logs.py check --ids 3788 --no-ai          # 只做规则检查
+python3 scripts/proofread_logs.py check --ids 2998 --json /tmp/check.json
+
+# 2) 全库扫描 → AI 复核 → 计划 → 写库
+python3 scripts/proofread_logs.py scan --report /tmp/proofread_scan.json
+python3 scripts/proofread_logs.py review --scan /tmp/proofread_scan.json \
+        --cache /tmp/proofread_cache.json --decisions /tmp/proofread_decisions.json
+python3 scripts/proofread_logs.py apply --decisions /tmp/proofread_decisions.json --allow-clear
+python3 scripts/proofread_logs.py apply --decisions /tmp/proofread_decisions.json --allow-clear --apply
+```
+
+`check` 是单条校对（不改日志内容，只更新 proofed）：打印该行的 `content` / `zh` / 各语言文本、英文回落列、疑似译文错列、
+同 ROM 的中文模块名，然后给出 AI 的 `verdict`（ok / wrong_zh / mixed_translations / extra_module）、
+建议中文、置信度和理由。加 `--decisions /tmp/fix.json` 可以把 module 的 wrong_zh 结论写成 decisions，
+再交给 `apply` 执行（默认 dry-run）。
+
+批量校对有三档，默认都**只估算、不调用 API**，加 `--run` 才真正执行：
+
+```bash
+# 档 1：只跑冲突 family（推荐先做，约 60 万 tokens）
+python3 scripts/proofread_logs.py review --limit 0 --decisions /tmp/f_decisions.json
+
+# 档 2：全部多语言行，10 条/批（约 250–300 万 tokens，约 400 次调用）
+python3 scripts/proofread_logs.py batch-review --batch-size 10
+python3 scripts/proofread_logs.py batch-review --batch-size 10 --run
+
+# 档 3：逐条全量（不推荐：1,100–2,000 万 tokens、1 万次调用；
+#        含 7,156 条只有一种语言的行，没有跨语言校对价值）
+python3 scripts/proofread_logs.py batch-review --batch-size 1 --all
+python3 scripts/proofread_logs.py batch-review --batch-size 1 --all --run --allow-expensive
+```
+
+`batch-review` 的特点：
+
+- 默认只选 **≥2 种语言** 的行（3,918 行），`--all` 才包含单语言行；
+- 先打印行数、批次数、Prompt / Completion / 合计 token 和预计耗时，**不加 `--run` 不会花钱**；
+- 超过 800 万 tokens 或 5,000 次调用时，必须 `--run --allow-expensive` 双重确认；
+- `--limit-rows N` 可先抽样；`--cache` 断点续跑；`--types module,log` 可只审一类；
+- 结果写入 `--decisions`，再交给 `apply`；**log 条目的改法不会自动写库**，只报告；
+- AI 结论**每批立即落库**（`lang_issues` / `proofed`），11k 行跑到一半中断也不会丢已完成的标注。
+
+单条校对：
+
+```bash
+python3 scripts/proofread_logs.py check --ids 11036
+```
+
+- `scan`：纯规则，不调用 AI。找出「同一 ROM 内多个 module 中文名相同、真实外文却不同」的
+  family（排除等于本行 `logs_en` 的英文回落）；同时用「译文 → 中文」共现统计报告疑似译文错列
+  （只报告，不自动改）。
+`proofed` 标记：`review` / `batch-review` / `check` 拿到 `verdict=ok` **且没有任何语言不符**时，
+才把该行 `proofed` 置 1；之后的扫描 / 复核默认跳过这些行。任何内容改动（补语言、合并、`content` 重建、
+`apply` 改名/清空）都会把 `proofed`、`complete` 和 `lang_issues` 一起重置，需要重新校对。
+
+`complete` 标记：只有**全部语言列都有内容且 `proofed=1`** 时才为 1；`proofed` 被重置、语言列被
+清空/修改，或仍有缺失语言时为 0。可用 `python3 scripts/maintain_logs.py complete --apply`
+按现有数据重算。
+
+语言核查：每次 AI 校对会逐语言判断「该列文本是否真的属于这门语言」（列对照见
+`LogProofreader.LANG_NAMES`），不符的列写入 `logs.lang_issues`；另外「某列值与 `logs_en` 完全相同」
+会以 0.75 置信度自动标注为英文回落（AI 的明确判断优先）。有 `lang_issues` 的行不置 `proofed=1`。
+`check` 会逐条打印 `logs_de 实际='英文' (0.98) ...` 这样的标注。要强制复查已标记的行，用
+`check --force`；`--no-mark` 则完全不写 `proofed` / `lang_issues`。
+
+mixed_translations 两步修复：
+
+```bash
+# 只扫描指定行（推荐先小样本）
+python3 scripts/fix_mixed_translations.py --ids 760,1483,1611
+
+# 扫描当前全部多语言行（耗时/耗 token）
+python3 scripts/fix_mixed_translations.py --scan --limit 500
+
+# 复用已校验的 decisions
+python3 scripts/fix_mixed_translations.py --decisions /tmp/proofread_batch_decisions.json
+
+# 执行合并 / 拆分（默认只读；写前备份）
+python3 scripts/fix_mixed_translations.py --ids 760 --apply-merges
+python3 scripts/fix_mixed_translations.py --ids 1611 --apply-splits
+```
+
+第一步：中文翻英文 → 找相似行 → AI 判断是否同一内容 → 合并并重写引用。
+第二步：AI 按语义把语言聚簇 → 每簇新建一行并 AI 补齐缺失语言 → 按引用掩码与簇原始语言的交集路由；
+交集并列/为 0 的位置保留原行并标记待人工，不自动拆。
+
+旧转义还原：
+
+```bash
+python3 scripts/restore_log_escapes.py            # 预览
+python3 scripts/restore_log_escapes.py --apply    # 写库（写前备份）
+```
+
+旧代码把 `'` / `"` 写成 `^`、`%` 写成 `$$`；现在列存储不再需要。还原规则：
+`won^t → won't`、`l^écran → l'écran`、`^Service & feedback^ → "Service & feedback"`、
+`^^文本^^ → "文本"`、`5$$ → 5%`。默认保留 proofed / complete / lang_issues（机械还原不改语义）。
+
+proofed 行缺失语言回填：
+
+```bash
+python3 scripts/fill_missing_logs.py                    # 盘点 proofed 行缺口 + token 估算
+python3 scripts/fill_missing_logs.py --ids 23           # 只看指定行
+python3 scripts/fill_missing_logs.py --expected owners  # 只补引用里实际出现过的语言
+python3 scripts/fill_missing_logs.py --run              # 调 AI 预览译文，不写库
+python3 scripts/fill_missing_logs.py --apply            # 调 AI 并写库（写前备份）
+python3 scripts/fill_missing_logs.py --apply --keep-proofed
+
+# 分批：--offset / --limit（每批独立进程，避免单次调用过多）
+python3 scripts/fill_missing_logs.py --offset 0 --limit 20 --apply --keep-proofed --max-calls 20
+```
+
+- 默认期望语言是全部语言列；`--expected owners` 只补该行在 `roms` / `dev` 掩码里实际出现过的语言；
+- 以 `logs_zh` / `content` / `logs_en` 为源翻译；置信度低于 `--min-confidence`（默认 0.8）不写；
+- 译文与英文源完全相同视为无效，避免又写回英文回落；
+- 默认 `--apply` **每行拿到译文就立即写库**，中断不会丢已完成行；`--atomic` 则全部跑完再统一写；
+- 回填后默认 `proofed=0`（新增译文需要重新校对）；`--keep-proofed` 且无剩余 `lang_issues` 时保留 1；
+- 回填列会从 `lang_issues` 移除，全部移除后置 NULL；缓存可断点续跑。
+
+按标注修正语言列：
+
+```bash
+python3 scripts/fix_lang_issues.py                       # 预览全部有标注的行
+python3 scripts/fix_lang_issues.py --ids 1,165           # 只处理指定 logs.id
+python3 scripts/fix_lang_issues.py --apply               # 用 AI 的 correct 替换（无 correct 保留原值）
+python3 scripts/fix_lang_issues.py --mode translate --apply # 没有 correct 的条目调用 AI 翻译回填（每行即时写库）
+python3 scripts/fix_lang_issues.py --mode hybrid --apply # 无 correct 时才清空
+python3 scripts/fix_lang_issues.py --mode clear --apply  # 显式清空错误语言列
+python3 scripts/fix_lang_issues.py --mode move --apply   # 能映射到空语言列时移动
+python3 scripts/fix_lang_issues.py --clean-masks --apply # 同步去掉引用掩码里的对应位
+```
+
+- 默认 `--mode correct`：`lang_issues` 里 `correct` 非空且 `confidence >= --min-confidence`（默认 0.8）
+  才替换；没有 `correct` 或置信度不足时**保留原值并继续标注，不删除**；
+- `--mode hybrid` 才会在无正确译文时清空，`--mode clear` 是显式删除；
+- `logs_zh` / `logs_en` 不动（除非 `--allow-core`，替换/清空核心列时会自动重建
+  `content` / `content_hash`）；
+- 修正后从 `lang_issues` 移除已处理项；全部处理完时显式 `UPDATE ... lang_issues = NULL`，`proofed` 重置为 0；
+- `--clean-masks` 会把 module 行被清空的语言从 `roms` / `dev` 引用掩码里去掉；
+- 写库前可选备份（默认系统临时目录），建议先 `maintain_logs.py snapshot` 再 `compare`。
+
+- `review`：每个 family 调一次 DeepSeek，先判定 `verdict`：
+  `ok`（当前中文正确）/ `wrong_zh`（中文确实填错，译文一致指向另一个中文名）/
+  `mixed_translations`（中文可能正确，但不同语言译文指向不同模块 = 译文错列 / 互换）/
+  `extra_module`（中文结构里没有的额外模块）。`wrong_zh` 只能从该 ROM 已有的中文模块名里选，
+  `extra_module` 返回 null；prompt 按内容哈希缓存，中断后可续跑。
+- `apply`：`rename` 改正完整行（带 logs_en 且语言多）的中文；`clear` 清掉附加语言簇窄行
+  （无 logs_en、语言 ≤6）的中文并同步去掉引用掩码的中文位；`mixed_translations` 只报告，
+  不自动改（译文换列需要另一套修复）；低置信度 / 意见冲突 / 未加 `--allow-clear` 的也只报告。
+  语言很多但没有 logs_en 的行（可能是合法语言簇）即使 AI 判为中文错误也只报告——实测清空这类行
+  会丢掉部分 ROM 独有的中文条目译文。
+  写库前自动备份，写后建议再跑 `maintain_logs.py audit` 与 `snapshot` / `compare`。
+
+API key 二选一（环境变量优先）：
+
+```bash
+export DEEPSEEK_API_KEY=sk-...
+# 或填写 data/scripts/config.py 的 deepseek_api_key（另有 deepseek_base_url / deepseek_model）
+```
+
+成本控制：`review --limit N` 限制 family 数，`--max-calls N` 限制请求数，`--cache` 复用结果；
+`--all` 才会复核非 priority 候选（默认只处理「窄行 / 无英文」这类高风险 family）。
+
+校对逻辑的纯函数（扫描、prompt 构造、AI 返回校验、动作计划）有单元测试，不连库、不调用真实 API：
+
+```bash
+python3 scripts/test_logs_proofread.py
 ```
 
 #### 日志去重（必须校验）
@@ -296,22 +528,26 @@ python3 scripts/resequence_ids.py --verify        # 只校验是否连续
 认领已有分组，冲突时另起一行。这样同一日志即使主内容不同（`#25 content=相册` 与
 `#27 content=Gallery`）也能合并，不会像早期实现那样只按 `content_hash` 找候选而漏掉。
 
-配套的兜底校验（三处都会跑，发现重复即报错退出）：
+配套的兜底校验（以下位置发现重复即报错退出）：
 
 | 位置 | 说明 |
 | --- | --- |
 | `python3 scripts/dedup_logs.py` | 体检并列出可合并分组；`--apply` 合并、`--prune-unused` 清理孤儿行 |
+| `python3 scripts/maintain_logs.py` | 一次性体检：重复分组、悬空引用、坏 JSON、孤儿行、content 不一致 / 哈希过期、掩码可补位 / 无效位、id 空档 |
 | `import_dev_week.py` / `migrate_logs_multilang.py` | 导入 / 迁移结束后自动调用 `LogStore.duplicate_report()`，有重复即退出码 1 |
 | 管理后台 `/logs` 页「去重体检」 | `GET /api/logs/audit`：重复分组、重复行数、未被 `roms`/`dev` 引用的孤儿行数 |
 
 判定标准：类型相同、各语言文本互不冲突、且至少共享一门语言文本 → 本应是同一行。
 合并只做「并集 + 重写引用」，语言掩码保持不变，因此各 ROM 的导出结果与合并前逐字一致。
+算法实现在 `LogMaintenance.duplicate_plan`（中文分桶 + 桶内逐对兼容合并），
+`dedup_logs.py` 只是它的命令行入口，其他脚本可直接复用同一套计划 / 执行方法。
+合并会把各语言文本取并集，因此合并后可以用 `maintain_logs.py masks --apply` 再把新出现的公共语言位补进掩码。
 
 #### 日志存储结构（同一日志多语言共用一行）
 
 原先 `roms` 表有 21 个 `logs_*` 列（一门语言一列），同一句日志的不同语言版本各自去重、互不关联。现在改为：
 
-* **`logs` 表** —— 同一日志的各语言版本共用一行：`id` / `type`（`module` 模块名、`log` 条目）/ `content`（主内容，中文优先；无中文时取英文）/ `content_hash`（`md5(content)`，查专用索引）/ `logs_zh`、`logs_zh_tw`、`logs_en` … `logs_bo`（各语言原文，一门语言一列）。
+* **`logs` 表** —— 同一日志的各语言版本共用一行：`id` / `type`（`module` 模块名、`log` 条目）/ `content`（主内容，中文优先；无中文时取英文）/ `content_hash`（`md5(content)`，查专用索引）/ `proofed`（AI 校对通过标记：`1` 表示该行内容已被 AI 判为一致，后续 `scan` / `review` / `batch-review` / `check` 默认跳过）/ `complete`（全部语言列都有内容且 `proofed=1`）/ `lang_issues`（AI 语言标注 JSON，如 `{"logs_de":{"detected":"英文","confidence":0.98}}`，有标注的行不会置 `proofed=1`）/ `logs_zh`、`logs_zh_tw`、`logs_en` … `logs_bo`（各语言原文，一门语言一列）。
 * **`roms.logs`** —— 单一的语言中性 ID 引用结构：`[[模块ID, [条目ID, ...], 语言掩码], ...]`。语言掩码为 21 位整数（第 i 位对应 `CHANGELOG_LOCALES` 第 i 个语言列），表示该位置属于本 ROM 的哪几门语言。`roms` 不再有 `logs_*` 列，新增语种也不必再改 `roms`。
 
 两个关键设计（都在 `scripts/miroms/logs_store.py`）：
@@ -421,8 +657,14 @@ python3 scripts/import_hub_sitelog.py --drop-types chore,build,docs   # 只保�
 | --- | --- |
 | `exporter.py` | 入口脚本：遍历 `common.fullDevices` 依次执行 `exportV1` / `exportV2` / `exportV3`，再执行 `export_dev()` 导出 `api/v3/dev/**`、`export_v1_extras()` / `export_v2_extras()` 导出两个参考站点的附属接口（见「V1 / V2 附属文件」）与 `export_hub_extras()` 导出 `api/v3/sitelog.json` / `api/v3/tools.json`，完成后调用 `app/web/scripts/generate-index.mjs`（Node.js）重新生成 `api/v3/index.json`、`api/v3/stats.json`、`api/v3/roms/*.json` 与 `api/v3/releases/*.json` |
 | `migrate_logs_multilang.py` | 把 `roms` 的 21 个 `logs_*` 列迁移为「`logs` 多语言分组 + `roms.logs` 单列」；旧表保留为 `logs_legacy`，`--dry-run` 只统计，`--verify N` 抽查中英文一致性；结束时自动跑去重体检 |
-| `resequence_ids.py` | 把 `roms` / `dev` 的 id 重排成连续自增并归位自增计数器（消除 `AUTO_INCREMENT` 空档）；先采样 20 秒确认无人写入，并把「旧 id → 新 id」映射写到 `.backup/*_id_map_*.csv`。`logs.id` 被 `roms.logs` / `dev.logs` 引用，**不可重排**，所以不在允许列表里 |
-| `dedup_logs.py` | `logs` 去重体检与合并：把「同一日志被拆成多行」的分组并成一行，同步重写 `roms.logs` / `dev.logs` 引用（掩码不变，导出结果不受影响）；`--apply` 实际合并，`--prune-unused` 顺带清理孤儿行 |
+| `resequence_ids.py` | 把 `roms` / `dev` / `logs` 的 id 重排成连续自增并归位自增计数器（消除 `AUTO_INCREMENT` 空档）；roms / dev 先采样 20 秒确认无人写入，并把「旧 id → 新 id」映射写到 `.backup/*_id_map_*.csv`；`logs` 走 `LogMaintenance.compact_ids`，在事务内改 id + 重写 `roms.logs` / `dev.logs` 引用，写库前备份 logs 全表与引用为 JSON |
+| `dedup_logs.py` | `logs` 去重体检与合并：把「同一日志被拆成多行」的分组并成一行，同步重写 `roms.logs` / `dev.logs` 引用（掩码不变，导出结果不受影响）；`--apply` 实际合并（自动备份）、`--prune-unused` 顺带清理孤儿行 |
+| `maintain_logs.py` | `logs` 统一维护入口：`audit`（默认，只读体检）/ `complete`（重算 complete 标记）/ `prefix`（去掉 content/语言列开头的空白和标点，`*` 除外）/ `content`（以 `logs_zh` 为准重建 content）/ `masks`（补齐语言掩码，只增不减）/ `ids`（压缩 id + 重写引用）/ `unused`（清理孤儿行）/ `auto-increment` / `merge`（按显式分组合并，回落值让位于真实译文）/ `snapshot`（导出快照）/ `compare`（对比快照，检测内容丢失）；默认 dry-run，写库加 `--apply` |
+| `fix_mixed_translations.py` | `mixed_translations` 两步修复：扫描当前行或复用 decisions；第一步翻译英文、找相似行、AI 对比后合并；第二步 AI 语言聚簇、拆成新行并按掩码语言交集路由引用，歧义位置跳过；默认只读，`--apply-merges` / `--apply-splits` 才写库 |
+| `restore_log_escapes.py` | 还原旧 JSON 存储时代的转义：`^`→`'`/`"`、`$$`→`%`；默认保留 `proofed` / `complete` / `lang_issues`，`--reset-flags` 则重置；`--apply` 写前备份 |
+| `fill_missing_logs.py` | 对 `proofed=1` 的行排查缺失语言并用 AI 翻译回填：默认只盘点/估算；`--run` 预览；`--apply` 写库（写前备份）；`--expected all\|owners`、`--langs`、`--min-confidence`；默认回填后 `proofed=0`，`--keep-proofed` 可保留 |
+| `fix_lang_issues.py` | 按 `logs.lang_issues` 修正语言列：默认 `correct`（用 AI 的 `correct` 正确译文替换，无 correct/低置信度保留原值）；`--mode translate` 对没有 correct 的标注调用 AI 翻译回填并逐条清除 lang_issues；`--mode hybrid` 无译文才清空，`--mode clear` 显式删除，`--mode move` 移到正确空列，`--clean-masks` 同步去掉引用掩码位；核心列需 `--allow-core`；默认 dry-run，写前备份 |
+| `proofread_logs.py` | 日志多语言校对：`check --ids` 校对指定 logs.id（不改内容，ok 时写 proofed）；`scan` 用规则找「同一 ROM 多个同名中文模块但外文含义不同」的候选；`review` 调 DeepSeek 判断每行真正对应的中文模块名（只能从该 ROM 的中文模块名里选，或 null = 额外模块）；`apply` 按置信度改名 / 清空额外模块中文并清理掩码中文位；`batch-review` 批量/逐条审全部多语言行（默认只估算，`--run` 才调用，ok 行自动 proofed）；除 proofed 标记外不改日志内容 |
 | `rebuild_roms_logs.py` | 以迁移前的备份库为权威来源重建 `roms.logs`（修复人工改动 `logs` 表造成的悬空引用），并复核「无悬空引用」 |
 | `import_dev_week.py` | 导入开发版（周更）数据到 `dev` 表并回填 `roms.dev_week`；支持 `--source hyperos\|nuxtmr\|miuiroms`、`--all`、`--weeks 619-652`、`--region global`、`--dry-run`、`--backfill-roms` |
 | `import_sitelog.py` | 把 NuxtMR / HyperOS.fans 两个站点的站点日志（`sitelog.json`）导入 `sitelog` 表，`--source nuxtmr\|hyperos`、`--all`、`--root`、`--dry-run`；按唯一键原地更新，幂等且不烧自增 id |
@@ -431,10 +673,10 @@ python3 scripts/import_hub_sitelog.py --drop-types chore,build,docs   # 只保�
 | `sync_devices.py` | 从 `devices` / `roms` 表同步设备列表到 `miroms/data.py`（`fullDevices`、`currentStable`、`flags`） |
 | `fix_missing_tag_mappings.py` | 修复 `devices` 表中缺失的 device+tag 映射（V3 导出器按 tag 匹配分支，缺失会导致 ROM 丢失），输出 SQL 到 stdout 或 `--apply` 直接执行 |
 | `common.py` | 向后兼容入口，重新导出 `miroms` 包全部公共 API，并保留 `fullDevices`、`currentStable`、`flags` 等模块级常量 |
-| `config.py` | 数据库连接配置（host / port / user / password / database）+ Cloudflare Pages 部署 hook（`deploy_url`） |
-| `push.py` | 一键全流程：运行 `exporter.py` 导出 → 在 `data` 子仓库提交并推送（commit message 为当前日期时间）→ 调用 `deploy.py` 触发站点部署 |
-| `deploy.py` | 仅触发部署：POST `config.deploy_url`（Cloudflare Pages deploy hook）并打印部署 ID |
-| `miroms/` | 核心包：`constants.py`（常量、SDK 版本、Android 代号、分支表、语种表）、`data.py`（设备列表）、`database.py`（数据库访问）、`network.py` / `crypto.py` / `firmware.py`（小米服务器抓取与解密）、`recorder.py`（数据录入）、`changelog.py`（更新日志）、`logs_store.py`（日志多语言分组读写）、`sitelog_store.py`（站点日志落库）、`validator.py`（校验）、`exporters.py`（V1/V2/V3 + 开发版导出器）、`legacy_exporters.py`（api/v1 = NuxtMR、api/v2 = HyperOS.fans、api/v3 = hub 自身的站点附属接口导出）、`utils.py`（工具函数） |
+| `config.py` | 数据库连接配置（host / port / user / password / database）+ Cloudflare Pages 部署配置（`api` 基础地址 + `ids` 站点钩子列表，默认三个站点：HUB / HyperOS.fans / MIUIer）+ DeepSeek 校对配置（`deepseek_api_key` / `deepseek_model` / `deepseek_base_url` / `deepseek_reasoning_effort`；key 也可用环境变量 `DEEPSEEK_API_KEY` 提供） |
+| `push.py` | 一键全流程：运行 `exporter.py` 导出 → 在 `data` 子仓库提交并推送（commit message 为当前日期时间）→ 调用 `deploy.py` 依次部署 `config.ids` 中的所有站点（站点之间默认停留 10 秒），任一站点失败即以非 0 退出码结束 |
+| `deploy.py` | 仅触发部署：按 `config.ids` 顺序 POST `{config.api}/{id}`（Cloudflare Pages deploy hook），逐个打印站点名、部署 ID / short_id / URL，每个 hook 触发后默认停留 10 秒再触发下一个站点（`--interval` 可调，0 表示不等待）；可传站点名或 hook id 前缀只部署指定站点（如 `python3 scripts/deploy.py HUB`），`--list` 只列出目标；全部成功退出码为 0，否则为 1 |
+| `miroms/` | 核心包：`constants.py`（常量、SDK 版本、Android 代号、分支表、语种表）、`data.py`（设备列表）、`database.py`（数据库访问 + 事务）、`network.py` / `crypto.py` / `firmware.py`（小米服务器抓取与解密）、`recorder.py`（数据录入）、`changelog.py`（更新日志）、`logs_store.py`（日志多语言分组读写）、`logs_text.py`（文本判定 + 繁简转换）、`logs_maintenance.py`（日志去重 / 引用重写 / content 一致性 / 语言掩码 / id 压缩 / 体检）、`logs_proofread.py`（日志多语言校对 / AI 复核）、`deepseek.py`（DeepSeek API 客户端）、`sitelog_store.py`（站点日志落库）、`validator.py`（校验）、`exporters.py`（V1/V2/V3 + 开发版导出器）、`legacy_exporters.py`（api/v1 = NuxtMR、api/v2 = HyperOS.fans、api/v3 = hub 自身的站点附属接口导出）、`utils.py`（工具函数） |
 
 ### 抓取 / 部署脚本
 
@@ -463,13 +705,16 @@ MySQL 数据库 (miroms: devices / roms / logs / dev / branches / series)
         │  python3 scripts/fix_missing_tag_mappings.py --apply（必要时）
         │  python3 scripts/migrate_logs_multilang.py        → 日志多语言分组（一次性）
         │  python3 scripts/dedup_logs.py --apply --prune-unused  → 日志去重体检 / 合并 / 清理
+        │  python3 scripts/maintain_logs.py（定期）      → 日志体检 / content / 掩码 / id 空档
         │  python3 scripts/import_dev_week.py --all         → 开发版周更数据（dev 表）
         │  python3 scripts/exporter.py            → 导出 api/v1|v2|v3 + dev + index.json / series.json
         ▼
 JSON 数据（api/）
-        │  python3 scripts/push.py（导出 → git commit & push → 触发部署）
+        │  python3 scripts/push.py（导出 → git commit & push → 按 config.ids 触发部署）
         ▼
-Cloudflare Pages（deploy hook）自动部署 → api.miuier.com（CNAME，见根目录 CNAME 文件）
+Cloudflare Pages（deploy hook）自动部署
+        → api.miuier.com（CNAME，见根目录 CNAME 文件）
+        → HUB / HyperOS.fans / MIUIer 三个站点
 ```
 
 ---

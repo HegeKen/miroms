@@ -1,13 +1,15 @@
 {
   "logs_zh": {
     "锁屏、状态栏、通知栏": [
+      "修复 锁屏时充电球与预计充电时间显示重叠的问题",
       "修复 锁屏时充电球与预计充电时间显示重叠的问题"
     ],
     "相机": [
       "新增 合影优选模式",
       "修复 相机闪退问题",
       "修复 偶现的自动连拍问题",
-      "修复 全面屏下相机参考线问题"
+      "修复 全面屏下相机参考线问题",
+      "修复 偶现的自动连拍问题"
     ],
     "相册": [
       "新增 图片编辑的相框功能，让你的照片更具艺术感"
@@ -21,7 +23,12 @@
     "文件管理器": [
       "修复 私密文件夹中剪切图片视频后打开文件异常的问题",
       "修复 分屏模式下，垃圾清理页面显示异常的问题",
-      "修复 搜索界面图标显示异常的问题"
+      "修复 搜索界面图标显示异常的问题",
+      "修复 私密文件夹中剪切图片视频后打开文件异常的问题"
+    ],
+    "其他": [
+      "提高系统的稳定性",
+      "优化系统的流畅度"
     ]
   },
   "logs_en": {
@@ -32,138 +39,639 @@
       "New: Optimized group selfies",
       "Fix: Camera crashed in some cases",
       "Fix: Burst shots were made accidentally",
-      "Fix: Issues with gridlines in the fullscreen mode"
+      "Fix: Issues with gridlines in the fullscreen mode",
+      "Fix: Burst shots were made accidentally"
     ],
     "Gallery": [
       "New: Turn your photos into masterpieces using our new photo frames"
     ],
     "Settings": [
-      "Fix: Couldn^t turn on portable hotspot when device name was set to maximum length"
+      "Fix: Couldn't turn on portable hotspot when device name was set to maximum length"
     ],
     "Updater": [
       "New: A Home screen shortcut option"
     ],
     "File Explorer": [
       "Fix: Errors occured after videos from the folder with hidden files were edited",
-      "Fix: Cleaner wasn^t sidplayed correctly in Split screen",
+      "Fix: Cleaner wasn't sidplayed correctly in Split screen",
       "Fix: Icons on the search page were displayed incorrectly"
+    ],
+    "Other": [
+      "Optimized system performance",
+      "Improved system security and stability"
+    ],
+    "Lock screen, status bar, notification shade": [
+      "Fix: Lock screen UI elements overlapped when the device was charging"
+    ],
+    "File Manager": [
+      "Fix: Errors occured after videos from the folder with hidden files were edited"
     ]
   },
   "logs_zh_tw": {
     "解鎖畫面、狀態欄、通知欄": [
+      "修復 螢幕鎖定時充電球與預計充電時間顯示重疊的問題",
       "修復 螢幕鎖定時充電球與預計充電時間顯示重疊的問題"
     ],
     "相機": [
+      "新增 合影優選模式",
+      "修復 相機閃退問題",
+      "修復 偶現的自動連拍問題",
+      "修復 全面屏下相機參考線問題",
       "修復 偶現的自動連拍問題"
+    ],
+    "相簿": [
+      "新增 圖片編輯的相框功能，讓你的照片更具藝術感"
+    ],
+    "設定": [
+      "修復 設定手機名稱為最大長度，熱點無法開啟的問題"
+    ],
+    "系統更新": [
+      "新增 桌面捷徑功能，可在更新設定中開啟"
+    ],
+    "檔案管理員": [
+      "修復 私密資料夾中剪切圖片影片後開啟檔案異常的問題",
+      "修復分屏模式下垃圾清理頁面顯示異常的問題",
+      "修正 搜尋介面圖示顯示異常的問題"
+    ],
+    "其他": [
+      "改善系統的穩定性",
+      "優化系統的流暢度"
     ],
     "檔案管理器": [
       "修復 私密資料夾中剪切圖片影片後開啟檔案異常的問題"
     ]
   },
   "logs_ja": {
+    "ロック画面、ステータスバー、通知バー": [
+      "ロック画面で充電ボールと予想充電時間の表示が重なる問題を修正"
+    ],
+    "カメラ": [
+      "新規 集合写真の最適化モード",
+      "カメラの強制終了問題を修正",
+      "偶発的な自動連写の問題を修正",
+      "全画面表示時のカメラグリッド線の問題を修正",
+      "偶発的な自動連写の問題を修正"
+    ],
+    "ギャラリー": [
+      "新機能：画像編集のフレーム機能を追加し、写真をより芸術的にします"
+    ],
+    "設定": [
+      "修正: デバイス名を最大長に設定すると、ポータブルホットスポットをオンにできませんでした"
+    ],
+    "アップデーター": [
+      "追加: ホーム画面ショートカット機能。アップデート設定で有効にできます。"
+    ],
+    "ファイルマネージャー": [
+      "プライベートフォルダで画像や動画を切り取った後にファイルを開く際の異常を修正",
+      "分割画面モードでクリーナーページが正しく表示されない問題を修正",
+      "検索画面のアイコンが正しく表示されない問題を修正",
+      "プライベートフォルダで画像や動画を切り取った後にファイルを開く際の異常を修正"
+    ],
     "その他": [
       "システムパフォーマンスの最適化",
       "システムのセキュリティと安定性の向上"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "ロック画面で充電ボールと予想充電時間の表示が重なる問題を修正"
     ]
   },
   "logs_ko": {
+    "잠금 화면, 상태 표시줄, 알림 표시줄": [
+      "잠금 화면에서 충전 볼과 예상 충전 시간 표시가 겹치는 문제를 수정"
+    ],
+    "카메라": [
+      "추가: 단체 사진 최적화 모드",
+      "카메라 강제 종료 문제 수정",
+      "간헐적인 자동 연사 문제 수정",
+      "전체 화면 모드에서 카메라 격자선 문제 수정",
+      "간헐적인 자동 연사 문제 수정"
+    ],
+    "갤러리": [
+      "새 기능: 이미지 편집 액자 기능이 추가되어 사진이 더 예술적으로 변합니다"
+    ],
+    "설정": [
+      "수정: 기기 이름을 최대 길이로 설정하면 휴대용 핫스팟을 켤 수 없었습니다"
+    ],
+    "업데이터": [
+      "추가: 홈 화면 바로가기 기능. 업데이트 설정에서 활성화할 수 있습니다."
+    ],
+    "파일 관리자": [
+      "비공개 폴더에서 사진 및 동영상을 잘라낸 후 파일을 여는 오류를 수정",
+      "분할 화면 모드에서 클리너 페이지가 비정상적으로 표시되는 문제를 수정했습니다",
+      "검색 화면의 아이콘이 비정상적으로 표시되는 문제를 수정",
+      "비공개 폴더에서 사진 및 동영상을 잘라낸 후 파일을 여는 오류를 수정"
+    ],
     "기타": [
       "시스템 성능 최적화",
       "시스템 보안 및 안정성 개선"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "잠금 화면에서 충전 볼과 예상 충전 시간 표시가 겹치는 문제를 수정"
     ]
   },
   "logs_ru": {
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Исправлено наложение индикатора зарядки и предполагаемого времени зарядки на экране блокировки"
+    ],
+    "Камера": [
+      "Новое: режим оптимизации групповых фото",
+      "Исправлена проблема с вылетом камеры",
+      "Исправлена проблема со случайной автоматической серийной съёмкой",
+      "Исправление: проблемы с сеткой камеры в полноэкранном режиме",
+      "Исправлена проблема со случайной автоматической серийной съёмкой"
+    ],
+    "Галерея": [
+      "Добавлено: функция рамки в редакторе изображений сделает ваши фото более художественными"
+    ],
+    "Настройки": [
+      "Исправлено: Не удавалось включить точку доступа, если имя устройства содержало максимальное количество символов"
+    ],
+    "Обновление": [
+      "Добавлено: функция ярлыка на главном экране. Можно включить в настройках обновления."
+    ],
+    "Файловый менеджер": [
+      "Исправлена ошибка открытия файлов после вырезания изображений и видео в приватной папке",
+      "Исправлена проблема с неправильным отображением страницы очистки в режиме разделённого экрана",
+      "Исправлена проблема с неправильным отображением значков на экране поиска",
+      "Исправлена ошибка открытия файлов после вырезания изображений и видео в приватной папке"
+    ],
     "Другое": [
       "Оптимизация производительности системы",
       "Улучшение безопасности и стабильности системы"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Исправлено наложение индикатора зарядки и предполагаемого времени зарядки на экране блокировки"
     ]
   },
   "logs_uk": {
+    "Екран блокування, рядок стану, рядок сповіщень": [
+      "Виправлено накладання індикатора заряджання та орієнтовного часу заряджання на екрані блокування"
+    ],
+    "Камера": [
+      "Нове: режим оптимізації групових фото",
+      "Виправлено проблему з вильотом камери",
+      "Виправлено проблему з випадковою автоматичною серійною зйомкою",
+      "Виправлення: проблеми з сіткою камери в повноекранному режимі",
+      "Виправлено проблему з випадковою автоматичною серійною зйомкою"
+    ],
+    "Галерея": [
+      "Додано: функція рамки в редакторі зображень зробить ваші фото більш мистецькими"
+    ],
+    "Налаштування": [
+      "Виправлено: не вдалося ввімкнути портативну точку доступу, коли ім’я пристрою встановлено на максимальну довжину"
+    ],
+    "Оновлення": [
+      "Додано: функція ярлика на головному екрані. Можна ввімкнути в налаштуваннях оновлення."
+    ],
+    "Файловий менеджер": [
+      "Виправлено помилку відкриття файлів після вирізання зображень і відео в приватній папці",
+      "Виправлено проблему з неправильним відображенням сторінки очищення в режимі розділеного екрана",
+      "Виправлено проблему з неправильним відображенням значків на екрані пошуку",
+      "Виправлено помилку відкриття файлів після вирізання зображень і відео в приватній папці"
+    ],
     "Інше": [
       "Оптимізація продуктивності системи",
       "Покращення безпеки та стабільності системи"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Виправлено накладання індикатора заряджання та орієнтовного часу заряджання на екрані блокування"
     ]
   },
   "logs_pl": {
+    "Ekran blokady, pasek stanu, pasek powiadomień": [
+      "Naprawiono nakładanie się wskaźnika ładowania i szacowanego czasu ładowania na ekranie blokady"
+    ],
+    "Aparat": [
+      "Nowe: tryb optymalizacji zdjęć grupowych",
+      "Naprawiono problem z awarią aparatu",
+      "Naprawiono problem z przypadkową automatyczną serią zdjęć",
+      "Poprawka: problemy z liniami siatki w trybie pełnoekranowym",
+      "Naprawiono problem z przypadkową automatyczną serią zdjęć"
+    ],
+    "Galeria": [
+      "Dodano: funkcja ramki w edytorze zdjęć, dzięki której zdjęcia są bardziej artystyczne"
+    ],
+    "Ustawienia": [
+      "Naprawiono: Nie można było włączyć hotspotu przenośnego, gdy nazwa urządzenia miała maksymalną długość"
+    ],
+    "Aktualizacje": [
+      "Dodano: funkcję skrótu na ekranie głównym. Można włączyć w ustawieniach aktualizacji."
+    ],
+    "Menedżer plików": [
+      "Naprawiono błąd otwierania plików po wycięciu zdjęć i filmów w folderze prywatnym",
+      "Naprawiono problem z nieprawidłowym wyświetlaniem strony oczyszczania w trybie podzielonego ekranu",
+      "Naprawiono problem z nieprawidłowym wyświetlaniem ikon na ekranie wyszukiwania",
+      "Naprawiono błąd otwierania plików po wycięciu zdjęć i filmów w folderze prywatnym"
+    ],
     "Inne": [
       "Zoptymalizowana wydajność systemu",
       "Większe bezpieczeństwo i stabilność systemu"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Naprawiono nakładanie się wskaźnika ładowania i szacowanego czasu ładowania na ekranie blokady"
     ]
   },
   "logs_de": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
+      "Problem behoben, bei dem sich Ladeball und geschätzte Ladezeit auf dem Sperrbildschirm überlappen"
+    ],
+    "Kamera": [
+      "Neu: Modus für optimierte Gruppenfotos",
+      "Kamera-Absturz behoben",
+      "Problem mit gelegentlichen automatischen Serienaufnahmen behoben",
+      "Behebung: Probleme mit Rasterlinien im Vollbildmodus der Kamera",
+      "Problem mit gelegentlichen automatischen Serienaufnahmen behoben"
+    ],
+    "Galerie": [
+      "Neu: Rahmenfunktion im Bildeditor für kunstvollere Fotos"
+    ],
+    "Einstellungen": [
+      "Behoben: Mobiler Hotspot konnte nicht aktiviert werden, wenn der Gerätename auf die maximale Länge gesetzt war"
+    ],
+    "Updater": [
+      "Neu: Funktion für Startbildschirm-Verknüpfung. Kann in den Update-Einstellungen aktiviert werden."
+    ],
+    "Dateimanager": [
+      "Fehler beim Öffnen von Dateien nach dem Ausschneiden von Bildern und Videos im privaten Ordner behoben",
+      "Problem behoben, bei dem die Cleaner-Seite im geteilten Bildschirm nicht korrekt angezeigt wurde",
+      "Problem mit der fehlerhaften Anzeige von Symbolen auf dem Suchbildschirm behoben",
+      "Fehler beim Öffnen von Dateien nach dem Ausschneiden von Bildern und Videos im privaten Ordner behoben"
+    ],
+    "Sonstiges": [
+      "Systemleistung optimiert",
+      "Systemsicherheit und -stabilität verbessert"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Problem behoben, bei dem sich Ladeball und geschätzte Ladezeit auf dem Sperrbildschirm überlappen"
     ]
   },
   "logs_fr": {
+    "Écran de verrouillage, barre d’état, barre de notifications": [
+      "Correction du chevauchement entre la boule de charge et le temps de charge estimé sur l’écran de verrouillage"
+    ],
+    "Appareil photo": [
+      "Nouveau : mode d’optimisation des photos de groupe",
+      "Correction du problème de plantage de l'appareil photo",
+      "Correction du problème intermittent de rafale automatique",
+      "Correction : problèmes de lignes de grille en mode plein écran"
+    ],
+    "Galerie": [
+      "Nouveau : fonction cadre dans l’éditeur d’images pour des photos plus artistiques"
+    ],
+    "Paramètres": [
+      "Réparé Impossible d'activer le point d'accès portable lorsque le nom du périphérique a été défini sur une longueur maximale"
+    ],
+    "Mises à jour": [
+      "Nouveau : fonction de raccourci sur l'écran d'accueil. Peut être activée dans les paramètres de mise à jour."
+    ],
+    "Gestionnaire de fichiers": [
+      "Correction du problème d'ouverture des fichiers après avoir coupé des images et vidéos dans le dossier privé",
+      "Correction du problème d’affichage incorrect de la page de nettoyage en mode écran partagé",
+      "Correction du problème d’affichage incorrect des icônes sur l’écran de recherche",
+      "Correction du problème d'ouverture des fichiers après avoir coupé des images et vidéos dans le dossier privé"
+    ],
     "Autre": [
       "Performances système optimisées",
       "Sécurité et stabilité du système améliorées"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Correction du chevauchement entre la boule de charge et le temps de charge estimé sur l’écran de verrouillage"
+    ],
+    "Appareil Photo": [
+      "Correction du problème intermittent de rafale automatique"
     ]
   },
   "logs_it": {
+    "Schermata di blocco, barra di stato, barra delle notifiche": [
+      "Risolto il problema della sovrapposizione tra pallina di ricarica e tempo di ricarica stimato nella schermata di blocco"
+    ],
+    "Fotocamera": [
+      "Novità: modalità di ottimizzazione delle foto di gruppo",
+      "Risolto il problema di crash della fotocamera",
+      "Risolto il problema degli scatti in raffica automatici occasionali",
+      "Correzione: problemi con le linee della griglia in modalità a schermo intero",
+      "Risolto il problema degli scatti in raffica automatici occasionali"
+    ],
+    "Galleria": [
+      "Novità: funzione cornice nell'editor di immagini per foto più artistiche"
+    ],
+    "Impostazioni": [
+      "Risolto: Impossibile attivare l'hotspot personale quando il nome del dispositivo era impostato sulla lunghezza massima"
+    ],
+    "Aggiornamenti": [
+      "Novità: funzione di scorciatoia nella schermata Home. Si può attivare nelle impostazioni di aggiornamento."
+    ],
+    "Gestione file": [
+      "Risolto il problema di apertura dei file dopo il taglio di immagini e video nella cartella privata",
+      "Risolto il problema di visualizzazione errata della pagina di pulizia in modalità schermo diviso",
+      "Risolto il problema di visualizzazione errata delle icone nella schermata di ricerca"
+    ],
     "Altro": [
       "Prestazioni di sistema ottimizzate",
       "Maggiore sicurezza e stabilità di sistema"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Risolto il problema della sovrapposizione tra pallina di ricarica e tempo di ricarica stimato nella schermata di blocco"
+    ],
+    "Gestore file": [
+      "Risolto il problema di apertura dei file dopo il taglio di immagini e video nella cartella privata"
     ]
   },
   "logs_es": {
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Se corrige la superposición entre el indicador de carga y el tiempo estimado de carga en la pantalla de bloqueo"
+    ],
+    "Cámara": [
+      "Nuevo: modo de optimización de fotos grupales",
+      "Corregido el problema de cierre inesperado de la cámara",
+      "Corregido el problema de ráfaga automática ocasional",
+      "Corrección: problemas con las líneas de cuadrícula en el modo de pantalla completa",
+      "Corregido el problema de ráfaga automática ocasional"
+    ],
+    "Galería": [
+      "Nuevo: función de marco en el editor de imágenes para dar un toque más artístico a tus fotos"
+    ],
+    "Ajustes": [
+      "Reparado: No se pudo activar el punto de acceso portátil cuando el nombre del dispositivo fue establecido a la máxima longitud"
+    ],
+    "Actualizador": [
+      "Nuevo: función de acceso directo en la pantalla de inicio. Se puede activar en los ajustes de actualización."
+    ],
+    "Administrador de archivos": [
+      "Se corrigió el problema de apertura de archivos tras cortar imágenes y vídeos en la carpeta privada",
+      "Se corrigió el problema de visualización incorrecta de la página de limpieza en modo de pantalla dividida",
+      "Se corrigió el problema de visualización incorrecta de los iconos en la pantalla de búsqueda",
+      "Se corrigió el problema de apertura de archivos tras cortar imágenes y vídeos en la carpeta privada"
+    ],
     "Otros": [
       "Rendimiento del sistema optimizado",
       "Estabilidad y seguridad del sistema mejorada"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Se corrige la superposición entre el indicador de carga y el tiempo estimado de carga en la pantalla de bloqueo"
     ]
   },
   "logs_pt": {
+    "Tela de bloqueio, barra de status, barra de notificações": [
+      "Corrigido a sobreposição entre o indicador de carregamento e o tempo estimado de carregamento na tela de bloqueio"
+    ],
+    "Câmera": [
+      "Novo: modo de otimização de fotos em grupo",
+      "Corrigido o problema de encerramento inesperado da câmera",
+      "Corrigido o problema de disparo em rajada automático ocasional",
+      "Correção: problemas com linhas de grade no modo de tela cheia",
+      "Corrigido o problema de disparo em rajada automático ocasional"
+    ],
+    "Galeria": [
+      "Novo: função de moldura no editor de imagens para fotos mais artísticas"
+    ],
+    "Configurações": [
+      "Correção Não era possível ativar o hotspot portátil quando o nome do dispositivo era definido para o comprimento máximo"
+    ],
+    "Atualizações": [
+      "Novo: função de atalho na tela inicial. Pode ser ativada nas configurações de atualização."
+    ],
+    "Gerenciador de arquivos": [
+      "Corrigido o problema de abertura de arquivos após recortar imagens e vídeos na pasta privada",
+      "Corrigido o problema de exibição incorreta da página de limpeza no modo de tela dividida",
+      "Corrigido o problema de exibição incorreta dos ícones na tela de pesquisa",
+      "Corrigido o problema de abertura de arquivos após recortar imagens e vídeos na pasta privada"
+    ],
     "Outros": [
       "Desempenho do sistema aprimorado",
       "Segurança e estabilidade do sistema aprimoradas"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Corrigido a sobreposição entre o indicador de carregamento e o tempo estimado de carregamento na tela de bloqueio"
     ]
   },
   "logs_tr": {
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Kilit ekranında şarj göstergesi ile tahmini şarj süresinin üst üste binmesi sorunu düzeltildi"
+    ],
+    "Kamera": [
+      "Yeni: grup fotoğrafı optimizasyon modu",
+      "Kamera çökme sorunu giderildi",
+      "Ara sıra otomatik seri çekim sorunu düzeltildi",
+      "Düzeltme: Tam ekran modunda kamera ızgara çizgileri sorunu",
+      "Ara sıra otomatik seri çekim sorunu düzeltildi"
+    ],
+    "Galeri": [
+      "Yeni: Fotoğraflarınızı daha sanatsal yapmak için görsel düzenleyicide çerçeve özelliği"
+    ],
+    "Ayarlar": [
+      "Onarım: Cihaz adı maksimum uzunlukta oluşturulduğunda kişisel bağlantı noktası açılamadı"
+    ],
+    "Güncelleyici": [
+      "Yeni: Ana ekran kısayolu özelliği. Güncelleme ayarlarından etkinleştirilebilir."
+    ],
+    "Dosya Yöneticisi": [
+      "Gizli klasördeki görselleri ve videoları kestikten sonra dosyaların açılması sorunu düzeltildi",
+      "Bölünmüş ekran modunda Temizleyici sayfasının yanlış görüntülenmesi sorunu giderildi",
+      "Arama ekranındaki simgelerin yanlış görüntülenmesi sorunu giderildi",
+      "Gizli klasördeki görselleri ve videoları kestikten sonra dosyaların açılması sorunu düzeltildi"
+    ],
     "Diğer": [
       "Sistem performansı optimize edildi",
       "Sistem güvenliği ve kararlılığı geliştirildi"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Kilit ekranında şarj göstergesi ile tahmini şarj süresinin üst üste binmesi sorunu düzeltildi"
     ]
   },
   "logs_id": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "Layar kunci, bilah status, bilah notifikasi": [
+      "Memperbaiki tampilan bola pengisian daya dan perkiraan waktu pengisian daya yang tumpang tindih di layar kunci"
+    ],
+    "Kamera": [
+      "Baru: mode optimasi foto grup",
+      "Memperbaiki masalah crash kamera",
+      "Memperbaiki masalah burst shot otomatis yang kadang terjadi",
+      "Perbaikan: masalah garis kisi pada mode layar penuh",
+      "Memperbaiki masalah burst shot otomatis yang kadang terjadi"
+    ],
+    "Galeri": [
+      "Baru: fitur bingkai di editor gambar agar foto lebih artistik"
+    ],
+    "Pengaturan": [
+      "Perbaikan Tidak dapat menghidupkan hotspot portabel saat nama perangkat disetel ke panjang maksimal"
+    ],
+    "Pembaruan sistem": [
+      "Baru: Fitur pintasan layar Utama. Dapat diaktifkan di pengaturan pembaruan."
+    ],
+    "Pengelola File": [
+      "Memperbaiki masalah pembukaan file setelah memotong gambar dan video di folder privat",
+      "Memperbaiki masalah tampilan halaman Pembersih yang tidak normal dalam mode layar terbagi",
+      "Memperbaiki masalah ikon yang ditampilkan secara tidak normal di layar pencarian"
+    ],
+    "Lainnya": [
+      "Performa sistem dioptimalkan",
+      "Keamanan dan stabilitas sistem ditingkatkan"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Memperbaiki tampilan bola pengisian daya dan perkiraan waktu pengisian daya yang tumpang tindih di layar kunci"
+    ],
+    "Pengelola Berkas": [
+      "Memperbaiki masalah pembukaan file setelah memotong gambar dan video di folder privat"
     ]
   },
   "logs_vi": {
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Đã sửa lỗi chồng lấn giữa bóng sạc và thời gian sạc dự kiến trên màn hình khóa"
+    ],
+    "Máy ảnh": [
+      "Mới: chế độ tối ưu ảnh nhóm",
+      "Đã sửa lỗi camera bị thoát đột ngột",
+      "Sửa lỗi đôi khi tự động chụp liên tiếp",
+      "Sửa lỗi: vấn đề đường lưới camera ở chế độ toàn màn hình"
+    ],
+    "Thư viện": [
+      "Mới: Tính năng khung trong trình chỉnh sửa ảnh giúp ảnh nghệ thuật hơn"
+    ],
+    "Cài đặt": [
+      "Sửa lỗi: Không thể bật điểm phát sóng di động khi tên thiết bị được đặt ở độ dài tối đa"
+    ],
+    "Trình cập nhật": [
+      "Mới: Tính năng lối tắt trên màn hình chính. Có thể bật trong cài đặt cập nhật."
+    ],
+    "Trình quản lý tệp": [
+      "Đã sửa lỗi mở tệp sau khi cắt ảnh và video trong thư mục riêng tư",
+      "Đã sửa lỗi trang Dọn dẹp hiển thị không bình thường ở chế độ chia đôi màn hình",
+      "Đã khắc phục sự cố biểu tượng hiển thị bất thường trên màn hình tìm kiếm",
+      "Đã sửa lỗi mở tệp sau khi cắt ảnh và video trong thư mục riêng tư"
+    ],
     "Khác": [
       "Tối ưu hiệu suất hệ thống",
       "Cải thiện tính ổn định và bảo mật hệ thống"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Đã sửa lỗi chồng lấn giữa bóng sạc và thời gian sạc dự kiến trên màn hình khóa"
+    ],
+    "Camera": [
+      "Sửa lỗi đôi khi tự động chụp liên tiếp"
     ]
   },
   "logs_th": {
+    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
+      "แก้ไขปัญหาวงกลมชาร์จและเวลาชาร์จโดยประมาณแสดงทับซ้อนกันบนหน้าจอล็อก"
+    ],
+    "กล้อง": [
+      "ใหม่: โหมดเพิ่มประสิทธิภาพภาพถ่ายหมู่",
+      "แก้ไขปัญหากล้องหยุดทำงานกะทันหัน",
+      "แก้ไขปัญหาการถ่ายภาพต่อเนื่องอัตโนมัติเป็นครั้งคราว",
+      "แก้ไข: ปัญหาเส้นตารางกล้องในโหมดเต็มหน้าจอ",
+      "แก้ไขปัญหาการถ่ายภาพต่อเนื่องอัตโนมัติเป็นครั้งคราว"
+    ],
+    "คลังภาพ": [
+      "ใหม่: ฟีเจอร์กรอบในตัวแก้ไขรูปภาพ ช่วยให้รูปภาพดูมีศิลปะมากขึ้น"
+    ],
+    "การตั้งค่า": [
+      "แก้ไข: ไม่สามารถเปิดฮอตสปอตแบบพกพาได้เมื่อตั้งชื่ออุปกรณ์เป็นความยาวสูงสุด"
+    ],
+    "ตัวอัปเดต": [
+      "ใหม่: ฟีเจอร์ทางลัดบนหน้าจอหลัก เปิดใช้งานได้ในการตั้งค่าการอัปเดต"
+    ],
+    "ตัวจัดการไฟล์": [
+      "แก้ไขปัญหาการเปิดไฟล์ผิดปกติหลังจากตัดรูปภาพและวิดีโอในโฟลเดอร์ส่วนตัว",
+      "แก้ไขปัญหาหน้าล้างข้อมูลแสดงผลผิดปกติในโหมดแบ่งหน้าจอ",
+      "แก้ไขปัญหาการแสดงไอคอนบนหน้าจอค้นหาผิดปกติ",
+      "แก้ไขปัญหาการเปิดไฟล์ผิดปกติหลังจากตัดรูปภาพและวิดีโอในโฟลเดอร์ส่วนตัว"
+    ],
     "อื่นๆ": [
       "เพิ่มประสิทธิภาพของระบบ",
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "แก้ไขปัญหาวงกลมชาร์จและเวลาชาร์จโดยประมาณแสดงทับซ้อนกันบนหน้าจอล็อก"
     ]
   },
   "logs_ar": {
+    "شاشة القفل، شريط الحالة، شريط الإشعارات": [
+      "إصلاح مشكلة تداخل كرة الشحن ووقت الشحن المتوقع على شاشة القفل"
+    ],
+    "كاميرا": [
+      "جديد: وضع تحسين صور المجموعة",
+      "إصلاح مشكلة تعطل الكاميرا",
+      "إصلاح مشكلة التصوير المتتابع التلقائي العرضي",
+      "إصلاح: مشكلة خطوط الشبكة في وضع ملء الشاشة للكاميرا"
+    ],
+    "المعرض": [
+      "جديد: ميزة الإطار في محرر الصور لجعل صورك أكثر فنية"
+    ],
+    "الإعدادات": [
+      "إصلاح: تعذّر تشغيل نقطة الاتصال المحمولة عند ضبط اسم الجهاز على الحد الأقصى للطول"
+    ],
+    "المحدث": [
+      "جديد: ميزة اختصار الشاشة الرئيسية. يمكن تفعيلها في إعدادات التحديث."
+    ],
+    "مدير الملفات": [
+      "إصلاح مشكلة فتح الملفات بشكل غير طبيعي بعد قص الصور ومقاطع الفيديو في المجلد الخاص",
+      "إصلاح مشكلة عرض صفحة التنظيف بشكل غير صحيح في وضع تقسيم الشاشة",
+      "إصلاح مشكلة عرض الأيقونات بشكل غير طبيعي في شاشة البحث",
+      "إصلاح مشكلة فتح الملفات بشكل غير طبيعي بعد قص الصور ومقاطع الفيديو في المجلد الخاص"
+    ],
     "أخرى": [
       "تحسين أداء النظام",
       "تحسين أمن واستقرار النظام"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "إصلاح مشكلة تداخل كرة الشحن ووقت الشحن المتوقع على شاشة القفل"
+    ],
+    "الكاميرا": [
+      "إصلاح مشكلة التصوير المتتابع التلقائي العرضي"
     ]
   },
   "logs_in": {
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
+      "लॉक स्क्रीन पर चार्जिंग बॉल और अनुमानित चार्जिंग समय के ओवरलैप होने की समस्या ठीक की गई"
+    ],
+    "कैमरा": [
+      "नया: ग्रुप फ़ोटो ऑप्टिमाइज़ेशन मोड",
+      "कैमरा क्रैश होने की समस्या ठीक की गई",
+      "कभी-कभार स्वचालित बर्स्ट शॉट की समस्या ठीक की गई",
+      "सुधार: फ़ुलस्क्रीन मोड में कैमरा ग्रिड लाइनों की समस्या",
+      "कभी-कभार स्वचालित बर्स्ट शॉट की समस्या ठीक की गई"
+    ],
+    "गैलरी": [
+      "नया: इमेज एडिटर में फ़्रेम फ़ीचर, जिससे आपकी तस्वीरें और कलात्मक लगें"
+    ],
+    "सेटिंग्स": [
+      "Perbaikan: Tidak dapat mengaktifkan hotspot portabel saat nama perangkat diatur ke panjang maksimum"
+    ],
+    "अपडेटर": [
+      "नया: होम स्क्रीन शॉर्टकट सुविधा। अपडेट सेटिंग्स में सक्षम किया जा सकता है।"
+    ],
+    "फ़ाइल प्रबंधक": [
+      "निजी फ़ोल्डर में छवियों और वीडियो को काटने के बाद फ़ाइलें खोलने की समस्या ठीक की गई",
+      "स्प्लिट स्क्रीन मोड में क्लीनर पेज के गलत तरीके से प्रदर्शित होने की समस्या ठीक की गई",
+      "खोज स्क्रीन पर आइकन के गलत तरीके से प्रदर्शित होने की समस्या ठीक की गई",
+      "निजी फ़ोल्डर में छवियों और वीडियो को काटने के बाद फ़ाइलें खोलने की समस्या ठीक की गई"
+    ],
     "अन्य": [
       "सिस्टम परफ़ॉर्मेंस ऑप्टिमाइज़ किया गया है",
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "लॉक स्क्रीन पर चार्जिंग बॉल और अनुमानित चार्जिंग समय के ओवरलैप होने की समस्या ठीक की गई"
     ]
   },
   "logs_ug": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "تەڭشەك": [
+      "ئوڭشاش: ئۈسكۈنىنىڭ نامى ئەڭ چوڭ ئۇزۇنلۇققا تەڭشەلگەندە كۆچمە ھوتسپوتنى ئاچقىلى بولمىدى"
+    ],
+    "Updater": [
+      "يېڭى: باش ئېكران تېز يوللانمىسى ئىقتىدارى. يېڭىلاش تەڭشەكلىرىدە قوزغىتىشقا بولىدۇ."
+    ],
+    "باشقىلىرى": [
+      "سىستېمىنىڭ مۇقىملىقىنى ئاشۇرۇش",
+      "سىستېما راۋانلىقىنى ئەلالاشتۇرۇش"
     ]
   },
   "logs_bo": {
-    "Other": [
+    "Settings": [
+      "Fix: Couldn't turn on portable hotspot when device name was set to maximum length"
+    ],
+    "གཞན།": [
       "Optimized system performance",
       "Improved system security and stability"
     ]

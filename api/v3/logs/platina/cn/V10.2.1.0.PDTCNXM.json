@@ -4,155 +4,663 @@
       "小米手机8青春版发布基于 Android P 深度定制的 MIUI 稳定版"
     ],
     "锁屏、状态栏、通知栏": [
+      "新增 状态栏支持显示通知图标，前往「设置-通知和状态栏-来通知时显示图标」开启",
       "新增 状态栏支持显示通知图标，前往「设置-通知和状态栏-来通知时显示图标」开启"
     ],
     "相机": [
+      "修复 偶现的自动连拍问题",
+      "修复 偶现的自动连拍问题",
       "修复 偶现的自动连拍问题"
     ],
     "相册": [
+      "新增 图片编辑的相框功能，让你的照片更具艺术感",
       "新增 图片编辑的相框功能，让你的照片更具艺术感"
     ],
     "系统更新": [
+      "新增 桌面快捷方式功能，可以在更新设置中开启",
       "新增 桌面快捷方式功能，可以在更新设置中开启"
     ],
     "文件管理器": [
       "修复 搜索界面图标显示异常的问题",
+      "修复 在某些情况下，缩略图刷新不及时的问题",
+      "修复 搜索界面图标显示异常的问题",
       "修复 在某些情况下，缩略图刷新不及时的问题"
     ],
     "录音机": [
+      "修复 暂停录音后无法及时更新到状态栏的问题",
       "修复 暂停录音后无法及时更新到状态栏的问题"
+    ],
+    "其他": [
+      "提高系统的稳定性",
+      "优化系统的流畅度"
     ]
   },
   "logs_en": {
     "Lockscreen, Status Bar, Notification Bar": [
+      "Add Option for showing notification icons (Settings > Notifications & status bar)",
       "New: Option for showing notification icons (Settings > Notifications & status bar)"
     ],
     "Camera": [
+      "Fix: Burst shots were made accidentally",
+      "Fix: Burst shots were made accidentally",
       "Fix: Burst shots were made accidentally"
     ],
     "Gallery": [
+      "Add Turn your photos into masterpieces using our new photo frames",
       "New: Turn your photos into masterpieces using our new photo frames"
     ],
     "Updater": [
+      "Add A Home screen shortcut option",
       "New: A Home screen shortcut option"
     ],
     "File Explorer": [
+      "Restore Icons on the search page were displayed incorrectly",
+      "Fix: Sometimes it took too long for the thumbnails to refresh",
       "Fix: Icons on the search page were displayed incorrectly",
       "Fix: Sometimes it took too long for the thumbnails to refresh"
     ],
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused",
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
+    ],
+    "Other": [
+      "Optimized system performance",
+      "Improved system security and stability"
     ]
   },
   "logs_zh_tw": {
+    "解鎖畫面、狀態欄、通知欄": [
+      "新增 狀態列支援顯示通知圖示，前往「設定-通知和狀態列-來通知時顯示圖示」開啟",
+      "新增 狀態列支援顯示通知圖示，前往「設定-通知和狀態列-收到通知時顯示圖示」開啟"
+    ],
     "相機": [
+      "修復 偶現的自動連拍問題",
+      "修復 偶現的自動連拍問題",
       "修復 偶現的自動連拍問題"
+    ],
+    "相簿": [
+      "新增圖片編輯的相框功能，讓你的照片更具藝術感",
+      "新增 圖片編輯的相框功能，讓你的照片更具藝術感"
+    ],
+    "系統更新": [
+      "新增 桌面捷徑功能，可在更新設定中開啟",
+      "新增 桌面捷徑功能，可在更新設定中開啟"
+    ],
+    "檔案管理員": [
+      "修復搜尋介面圖示顯示異常的問題",
+      "修正 在某些情況下，縮圖未及時更新的問題",
+      "修正 搜尋介面圖示顯示異常的問題",
+      "修正 在某些情況下，縮圖未及時更新的問題"
+    ],
+    "錄音機": [
+      "修復 暫停錄音後無法即時更新到狀態欄的問題",
+      "修復 暫停錄音後無法即時更新到狀態欄的問題"
+    ],
+    "其他": [
+      "改善系統的穩定性",
+      "優化系統的流暢度"
     ]
   },
   "logs_ja": {
+    "ロック画面、ステータスバー、通知バー": [
+      "追加：ステータスバーで通知アイコンの表示に対応。「設定 – 通知とステータスバー – 通知受信時にアイコンを表示」からオンにしてください。",
+      "追加: ステータスバーで通知アイコンを表示できるようになりました。「設定 > 通知とステータスバー > 通知受信時にアイコンを表示」からオンにしてください。"
+    ],
+    "カメラ": [
+      "偶発的な自動連写の問題を修正",
+      "偶発的な自動連写の問題を修正",
+      "偶発的な自動連写の問題を修正"
+    ],
+    "ギャラリー": [
+      "画像編集のフレーム機能を追加し、写真をよりアートに",
+      "新機能：画像編集のフレーム機能を追加し、写真をより芸術的にします"
+    ],
+    "アップデーター": [
+      "ホーム画面ショートカット機能を追加、アップデート設定で有効にできます",
+      "追加: ホーム画面ショートカット機能。アップデート設定で有効にできます。"
+    ],
+    "ファイルマネージャー": [
+      "検索画面のアイコンが正しく表示されない問題を修正",
+      "一部の場合でサムネイルの更新が間に合わない問題を修正",
+      "検索画面のアイコンが正しく表示されない問題を修正",
+      "一部の場合でサムネイルの更新が間に合わない問題を修正"
+    ],
+    "レコーダー": [
+      "修正: 録音を一時停止した際、通知シェードの録音状態が更新されない問題",
+      "修正: 録音を一時停止した際、通知シェードの録音状態が更新されない問題"
+    ],
     "その他": [
       "システムパフォーマンスの最適化",
       "システムのセキュリティと安定性の向上"
     ]
   },
   "logs_ko": {
+    "잠금 화면, 상태 표시줄, 알림 표시줄": [
+      "추가: 상태 표시줄에서 알림 아이콘 표시를 지원합니다. 「설정 – 알림 및 상태 표시줄 – 알림 수신 시 아이콘 표시」에서 켜세요.",
+      "추가: 상태 표시줄에서 알림 아이콘 표시를 지원합니다. '설정 > 알림 및 상태 표시줄 > 알림 수신 시 아이콘 표시'에서 켜세요."
+    ],
+    "카메라": [
+      "간헐적인 자동 연사 문제 수정",
+      "간헐적인 자동 연사 문제 수정",
+      "간헐적인 자동 연사 문제 수정"
+    ],
+    "갤러리": [
+      "이미지 편집의 프레임 기능 추가로 사진을 더 예술적으로",
+      "새 기능: 이미지 편집 액자 기능이 추가되어 사진이 더 예술적으로 변합니다"
+    ],
+    "업데이터": [
+      "홈 화면 바로가기 기능 추가, 업데이트 설정에서 활성화할 수 있습니다",
+      "추가: 홈 화면 바로가기 기능. 업데이트 설정에서 활성화할 수 있습니다."
+    ],
+    "파일 관리자": [
+      "검색 화면의 아이콘이 비정상적으로 표시되는 문제를 수정했습니다",
+      "일부 상황에서 썸네일이 제때 새로고침되지 않는 문제를 수정했습니다",
+      "검색 화면의 아이콘이 비정상적으로 표시되는 문제를 수정",
+      "일부 상황에서 썸네일이 제때 새로고침되지 않는 문제를 수정했습니다"
+    ],
+    "녹음기": [
+      "수정: 녹음을 일시중지했을 때 알림 창의 녹음 상태가 업데이트되지 않던 문제",
+      "수정: 녹음을 일시중지했을 때 알림 창의 녹음 상태가 업데이트되지 않던 문제"
+    ],
     "기타": [
       "시스템 성능 최적화",
       "시스템 보안 및 안정성 개선"
     ]
   },
   "logs_ru": {
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Добавлено: поддержка отображения значков уведомлений в строке состояния. Включите в «Настройки – Уведомления и строка состояния – Показывать значки при получении уведомлений».",
+      "Добавлено: поддержка отображения значков уведомлений в строке состояния. Включите в «Настройки > Уведомления и строка состояния > Показывать значки при получении уведомлений»."
+    ],
+    "Камера": [
+      "Исправлена проблема со случайной автоматической серийной съёмкой",
+      "Исправлена проблема со случайной автоматической серийной съёмкой",
+      "Исправлена проблема со случайной автоматической серийной съёмкой"
+    ],
+    "Галерея": [
+      "Добавлена функция рамок в редакторе изображений — сделайте фото более художественными",
+      "Добавлено: функция рамки в редакторе изображений сделает ваши фото более художественными"
+    ],
+    "Обновление": [
+      "Добавлена функция ярлыка на главном экране; можно включить в настройках обновления.",
+      "Добавлено: функция ярлыка на главном экране. Можно включить в настройках обновления."
+    ],
+    "Файловый менеджер": [
+      "Исправлена проблема с неправильным отображением значков в интерфейсе поиска",
+      "Исправлена проблема, из-за которой в некоторых случаях миниатюры не обновлялись вовремя",
+      "Исправлена проблема с неправильным отображением значков на экране поиска",
+      "Исправлена проблема, из-за которой в некоторых случаях миниатюры не обновлялись вовремя"
+    ],
+    "Диктофон": [
+      "Fix: Факт остановки записи не отображался в строке состояния вовремя",
+      "Fix: Факт остановки записи не отображался в строке состояния вовремя"
+    ],
     "Другое": [
       "Оптимизация производительности системы",
       "Улучшение безопасности и стабильности системы"
     ]
   },
   "logs_uk": {
+    "Екран блокування, рядок стану, рядок сповіщень": [
+      "Додано: підтримка відображення значків сповіщень у рядку стану. Увімкніть у «Налаштування – Сповіщення та рядок стану – Показувати значки під час отримання сповіщень».",
+      "Додано: підтримка відображення значків сповіщень у рядку стану. Увімкніть у «Налаштування > Сповіщення та рядок стану > Показувати значки під час отримання сповіщень»."
+    ],
+    "Камера": [
+      "Виправлено проблему з випадковою автоматичною серійною зйомкою",
+      "Виправлено проблему з випадковою автоматичною серійною зйомкою",
+      "Виправлено проблему з випадковою автоматичною серійною зйомкою"
+    ],
+    "Галерея": [
+      "Додано функцію рамок у редакторі зображень — зробіть фото більш мистецькими",
+      "Додано: функція рамки в редакторі зображень зробить ваші фото більш мистецькими"
+    ],
+    "Оновлення": [
+      "Додано функцію ярлика на головному екрані; можна ввімкнути в налаштуваннях оновлення.",
+      "Додано: функція ярлика на головному екрані. Можна ввімкнути в налаштуваннях оновлення."
+    ],
+    "Файловий менеджер": [
+      "Виправлено проблему з неправильним відображенням значків в інтерфейсі пошуку",
+      "Виправлено проблему, через яку в деяких випадках мініатюри не оновлювалися вчасно",
+      "Виправлено проблему з неправильним відображенням значків на екрані пошуку",
+      "Виправлено проблему, через яку в деяких випадках мініатюри не оновлювалися вчасно"
+    ],
+    "Диктофон": [
+      "Виправлено: стан запису не оновлювався в панелі сповіщень під час паузи запису",
+      "Виправлено: стан запису не оновлювався в панелі сповіщень під час паузи запису"
+    ],
     "Інше": [
       "Оптимізація продуктивності системи",
       "Покращення безпеки та стабільності системи"
     ]
   },
   "logs_pl": {
+    "Ekran blokady, pasek stanu, pasek powiadomień": [
+      "Dodano: obsługę wyświetlania ikon powiadomień na pasku stanu. Włącz w „Ustawienia – Powiadomienia i pasek stanu – Pokazuj ikony przy otrzymywaniu powiadomień”.",
+      "Dodano: obsługa wyświetlania ikon powiadomień na pasku stanu. Włącz w «Ustawienia > Powiadomienia i pasek stanu > Pokazuj ikony przy powiadomieniach»."
+    ],
+    "Aparat": [
+      "Naprawiono problem z przypadkową automatyczną serią zdjęć",
+      "Naprawiono problem z przypadkową automatyczną serią zdjęć",
+      "Naprawiono problem z przypadkową automatyczną serią zdjęć"
+    ],
+    "Galeria": [
+      "Dodano funkcję ramek w edytorze zdjęć, aby nadać zdjęciom bardziej artystyczny charakter",
+      "Dodano: funkcja ramki w edytorze zdjęć, dzięki której zdjęcia są bardziej artystyczne"
+    ],
+    "Aktualizacje": [
+      "Dodano funkcję skrótu na ekranie głównym; można włączyć w ustawieniach aktualizacji.",
+      "Dodano: funkcję skrótu na ekranie głównym. Można włączyć w ustawieniach aktualizacji."
+    ],
+    "Menedżer plików": [
+      "Naprawiono problem z nieprawidłowym wyświetlaniem ikon w interfejsie wyszukiwania",
+      "Naprawiono problem, w którym w niektórych przypadkach miniatury nie odświeżały się na czas",
+      "Naprawiono problem z nieprawidłowym wyświetlaniem ikon na ekranie wyszukiwania",
+      "Naprawiono problem, w którym w niektórych przypadkach miniatury nie odświeżały się na czas"
+    ],
+    "Rejestrator": [
+      "Poprawka: stan nagrywania nie był aktualizowany na pasku powiadomień po wstrzymaniu nagrywania",
+      "Poprawka: stan nagrywania nie był aktualizowany na pasku powiadomień po wstrzymaniu nagrywania"
+    ],
     "Inne": [
       "Zoptymalizowana wydajność systemu",
       "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
   "logs_de": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
+      "Neu: Unterstützung für die Anzeige von Benachrichtigungssymbolen in der Statusleiste. Aktiviere „Einstellungen – Benachrichtigungen und Statusleiste – Symbole bei Benachrichtigung anzeigen“.",
+      "Neu: Statusleiste kann Benachrichtigungssymbole anzeigen. Aktiviere dies unter «Einstellungen > Benachrichtigungen & Statusleiste > Symbole bei Benachrichtigungen anzeigen»."
+    ],
+    "Kamera": [
+      "Problem mit gelegentlichen automatischen Serienaufnahmen behoben",
+      "Problem mit gelegentlichen automatischen Serienaufnahmen behoben",
+      "Problem mit gelegentlichen automatischen Serienaufnahmen behoben"
+    ],
+    "Galerie": [
+      "Neue Rahmenfunktion im Bildeditor für künstlerischere Fotos",
+      "Neu: Rahmenfunktion im Bildeditor für kunstvollere Fotos"
+    ],
+    "Updater": [
+      "Funktion für Startbildschirm-Verknüpfung hinzugefügt; in den Update-Einstellungen aktivierbar.",
+      "Neu: Funktion für Startbildschirm-Verknüpfung. Kann in den Update-Einstellungen aktiviert werden."
+    ],
+    "Dateimanager": [
+      "Problem mit der falschen Anzeige von Symbolen in der Suchoberfläche behoben",
+      "Problem behoben, bei dem Miniaturansichten in manchen Fällen nicht rechtzeitig aktualisiert wurden",
+      "Problem mit der fehlerhaften Anzeige von Symbolen auf dem Suchbildschirm behoben",
+      "Problem behoben, bei dem Miniaturansichten in manchen Fällen nicht rechtzeitig aktualisiert wurden"
+    ],
+    "Rekorder": [
+      "Behoben: Der Aufnahmestatus wurde in der Benachrichtigungsleiste nicht aktualisiert, wenn eine Aufnahme pausiert wurde",
+      "Behoben: Der Aufnahmestatus wurde in der Benachrichtigungsleiste nicht aktualisiert, wenn eine Aufnahme pausiert wurde"
+    ],
+    "Sonstiges": [
+      "Systemleistung optimiert",
+      "Systemsicherheit und -stabilität verbessert"
     ]
   },
   "logs_fr": {
+    "Écran de verrouillage, barre d’état, barre de notifications": [
+      "Ajout : prise en charge de l’affichage des icônes de notification dans la barre d’état. Activez dans « Paramètres – Notifications et barre d’état – Afficher les icônes lors des notifications ».",
+      "Nouveau : affichage des icônes de notification dans la barre d’état. Activez-le dans « Paramètres > Notifications et barre d’état > Afficher les icônes lors des notifications »."
+    ],
+    "Appareil photo": [
+      "Correction du problème intermittent de rafale automatique",
+      "Correction du problème intermittent de rafale automatique"
+    ],
+    "Galerie": [
+      "Ajout de cadres dans l’éditeur d’images pour des photos plus artistiques",
+      "Nouveau : fonction cadre dans l’éditeur d’images pour des photos plus artistiques"
+    ],
+    "Mises à jour": [
+      "Ajout d'une fonction de raccourci sur l'écran d'accueil ; activable dans les paramètres de mise à jour.",
+      "Nouveau : fonction de raccourci sur l'écran d'accueil. Peut être activée dans les paramètres de mise à jour."
+    ],
+    "Gestionnaire de fichiers": [
+      "Correction du problème d'affichage incorrect des icônes dans l'interface de recherche",
+      "Correction du problème où les vignettes ne se rafraîchissaient pas à temps dans certains cas",
+      "Correction du problème d’affichage incorrect des icônes sur l’écran de recherche",
+      "Correction du problème où les vignettes ne se rafraîchissaient pas à temps dans certains cas"
+    ],
+    "Enregistreur": [
+      "Correction : l’état d’enregistrement n’était pas mis à jour dans la barre de notifications lors d’une pause",
+      "Correction : l’état d’enregistrement n’était pas mis à jour dans la barre de notifications lors d’une pause"
+    ],
     "Autre": [
       "Performances système optimisées",
       "Sécurité et stabilité du système améliorées"
+    ],
+    "Appareil Photo": [
+      "Correction du problème intermittent de rafale automatique"
     ]
   },
   "logs_it": {
+    "Schermata di blocco, barra di stato, barra delle notifiche": [
+      "Aggiunto: supporto per la visualizzazione delle icone delle notifiche nella barra di stato. Attiva in «Impostazioni – Notifiche e barra di stato – Mostra icone alla ricezione delle notifiche».",
+      "Novità: supporto alla visualizzazione delle icone di notifica nella barra di stato. Attivalo in «Impostazioni > Notifiche e barra di stato > Mostra icone quando arrivano notifiche»."
+    ],
+    "Fotocamera": [
+      "Risolto il problema degli scatti in raffica automatici occasionali",
+      "Risolto il problema degli scatti in raffica automatici occasionali",
+      "Risolto il problema degli scatti in raffica automatici occasionali"
+    ],
+    "Galleria": [
+      "Aggiunta la funzione cornici nell'editor di immagini per foto più artistiche",
+      "Novità: funzione cornice nell'editor di immagini per foto più artistiche"
+    ],
+    "Aggiornamenti": [
+      "Aggiunta funzione di collegamento alla schermata Home; attivabile nelle impostazioni aggiornamento.",
+      "Novità: funzione di scorciatoia nella schermata Home. Si può attivare nelle impostazioni di aggiornamento."
+    ],
+    "Gestione file": [
+      "Risolto il problema di visualizzazione errata delle icone nell'interfaccia di ricerca",
+      "Risolto il problema per cui in alcuni casi le miniature non si aggiornavano in tempo",
+      "Risolto il problema di visualizzazione errata delle icone nella schermata di ricerca",
+      "Risolto il problema per cui in alcuni casi le miniature non si aggiornavano in tempo"
+    ],
+    "Registratore": [
+      "Correzione: lo stato di registrazione non veniva aggiornato nella barra delle notifiche quando una registrazione veniva messa in pausa",
+      "Correzione: lo stato di registrazione non veniva aggiornato nella barra delle notifiche quando una registrazione veniva messa in pausa"
+    ],
     "Altro": [
       "Prestazioni di sistema ottimizzate",
       "Maggiore sicurezza e stabilità di sistema"
     ]
   },
   "logs_es": {
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Añadido: compatibilidad con la visualización de iconos de notificación en la barra de estado. Actívalo en «Ajustes – Notificaciones y barra de estado – Mostrar iconos al recibir notificaciones».",
+      "Novedad: la barra de estado admite mostrar iconos de notificación. Actívalo en «Ajustes > Notificaciones y barra de estado > Mostrar iconos al recibir notificaciones»."
+    ],
+    "Cámara": [
+      "Corregido el problema de ráfaga automática ocasional",
+      "Corregido el problema de ráfaga automática ocasional",
+      "Corregido el problema de ráfaga automática ocasional"
+    ],
+    "Galería": [
+      "Añadida la función de marcos en el editor de imágenes para dar un toque más artístico a tus fotos",
+      "Nuevo: función de marco en el editor de imágenes para dar un toque más artístico a tus fotos"
+    ],
+    "Actualizador": [
+      "Se añade la función de acceso directo en la pantalla de inicio; se puede activar en los ajustes de actualización.",
+      "Nuevo: función de acceso directo en la pantalla de inicio. Se puede activar en los ajustes de actualización."
+    ],
+    "Administrador de archivos": [
+      "Solucionado el problema de visualización incorrecta de los iconos en la interfaz de búsqueda",
+      "Se corrige el problema por el que, en algunos casos, las miniaturas no se actualizaban a tiempo",
+      "Se corrigió el problema de visualización incorrecta de los iconos en la pantalla de búsqueda",
+      "Se corrige el problema por el que, en algunos casos, las miniaturas no se actualizaban a tiempo"
+    ],
+    "Grabadora": [
+      "Corrección: El estado de grabación no se actualizaba en la barra de notificaciones al pausar una grabación",
+      "Corrección: El estado de grabación no se actualizaba en la barra de notificaciones al pausar una grabación"
+    ],
     "Otros": [
       "Rendimiento del sistema optimizado",
       "Estabilidad y seguridad del sistema mejorada"
     ]
   },
   "logs_pt": {
+    "Tela de bloqueio, barra de status, barra de notificações": [
+      "Adicionado: suporte para exibir ícones de notificação na barra de status. Ative em «Configurações – Notificações e barra de status – Mostrar ícones ao receber notificações».",
+      "Novo: suporte para mostrar ícones de notificação na barra de status. Ative em «Configurações > Notificações e barra de status > Mostrar ícones ao receber notificações»."
+    ],
+    "Câmera": [
+      "Corrigido o problema de disparo em rajada automático ocasional",
+      "Corrigido o problema de disparo em rajada automático ocasional",
+      "Corrigido o problema de disparo em rajada automático ocasional"
+    ],
+    "Galeria": [
+      "Adicionada a função de molduras no editor de imagens para fotos mais artísticas",
+      "Novo: função de moldura no editor de imagens para fotos mais artísticas"
+    ],
+    "Atualizações": [
+      "Adicionada função de atalho no ecrã inicial; pode ser ativada nas definições de atualização.",
+      "Novo: função de atalho na tela inicial. Pode ser ativada nas configurações de atualização."
+    ],
+    "Gerenciador de arquivos": [
+      "Corrigido o problema de exibição incorreta dos ícones na interface de pesquisa",
+      "Corrigido o problema em que, em alguns casos, as miniaturas não eram atualizadas a tempo",
+      "Corrigido o problema de exibição incorreta dos ícones na tela de pesquisa",
+      "Corrigido o problema em que, em alguns casos, as miniaturas não eram atualizadas a tempo"
+    ],
+    "Gravador": [
+      "Correção: o estado da gravação não era atualizado na barra de notificações ao pausar uma gravação",
+      "Correção: o estado da gravação não era atualizado na barra de notificações ao pausar uma gravação"
+    ],
     "Outros": [
       "Desempenho do sistema aprimorado",
       "Segurança e estabilidade do sistema aprimoradas"
     ]
   },
   "logs_tr": {
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Eklendi: Durum çubuğunda bildirim simgelerinin gösterilmesi desteği. «Ayarlar – Bildirimler ve durum çubuğu – Bildirim geldiğinde simgeleri göster» bölümünden açın.",
+      "Yeni: Durum çubuğunda bildirim simgelerini gösterme desteği. «Ayarlar > Bildirimler ve durum çubuğu > Bildirim geldiğinde simgeleri göster» bölümünden etkinleştirin."
+    ],
+    "Kamera": [
+      "Ara sıra otomatik seri çekim sorunu düzeltildi",
+      "Ara sıra otomatik seri çekim sorunu düzeltildi",
+      "Ara sıra otomatik seri çekim sorunu düzeltildi"
+    ],
+    "Galeri": [
+      "Görsel düzenleyiciye fotoğraflarınıza sanatsal bir hava katan çerçeve özelliği eklendi",
+      "Yeni: Fotoğraflarınızı daha sanatsal yapmak için görsel düzenleyicide çerçeve özelliği"
+    ],
+    "Güncelleyici": [
+      "Ana ekran kısayolu özelliği eklendi; güncelleme ayarlarından etkinleştirilebilir.",
+      "Yeni: Ana ekran kısayolu özelliği. Güncelleme ayarlarından etkinleştirilebilir."
+    ],
+    "Dosya Yöneticisi": [
+      "Arama arayüzündeki simgelerin yanlış görüntülenmesi sorunu giderildi",
+      "Bazı durumlarda küçük resimlerin zamanında yenilenmemesi sorunu giderildi",
+      "Arama ekranındaki simgelerin yanlış görüntülenmesi sorunu giderildi",
+      "Bazı durumlarda küçük resimlerin zamanında yenilenmemesi sorunu giderildi"
+    ],
+    "Kayıt Cihazı": [
+      "Düzeltme: Kayıt duraklatıldığında kayıt durumu bildirim çubuğunda güncellenmiyordu",
+      "Düzeltme: Kayıt duraklatıldığında kayıt durumu bildirim çubuğunda güncellenmiyordu"
+    ],
     "Diğer": [
       "Sistem performansı optimize edildi",
       "Sistem güvenliği ve kararlılığı geliştirildi"
     ]
   },
   "logs_id": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "Layar kunci, bilah status, bilah notifikasi": [
+      "Ditambahkan: dukungan menampilkan ikon notifikasi di bilah status. Aktifkan di «Setelan – Notifikasi dan bilah status – Tampilkan ikon saat menerima notifikasi».",
+      "Baru: Dukungan menampilkan ikon notifikasi di bilah status. Aktifkan di «Pengaturan > Notifikasi dan bilah status > Tampilkan ikon saat ada notifikasi»."
+    ],
+    "Kamera": [
+      "Memperbaiki masalah burst shot otomatis yang kadang terjadi",
+      "Memperbaiki masalah burst shot otomatis yang kadang terjadi",
+      "Memperbaiki masalah burst shot otomatis yang kadang terjadi"
+    ],
+    "Galeri": [
+      "Menambahkan fitur bingkai di editor gambar agar foto lebih artistik",
+      "Baru: fitur bingkai di editor gambar agar foto lebih artistik"
+    ],
+    "Pembaruan sistem": [
+      "Menambahkan fitur pintasan layar Utama; dapat diaktifkan di pengaturan pembaruan.",
+      "Baru: Fitur pintasan layar Utama. Dapat diaktifkan di pengaturan pembaruan."
+    ],
+    "Pengelola File": [
+      "Memperbaiki masalah ikon di antarmuka pencarian yang ditampilkan secara tidak normal",
+      "Memperbaiki masalah thumbnail tidak diperbarui tepat waktu dalam beberapa kasus",
+      "Memperbaiki masalah ikon yang ditampilkan secara tidak normal di layar pencarian",
+      "Memperbaiki masalah thumbnail tidak diperbarui tepat waktu dalam beberapa kasus"
+    ],
+    "Perekam": [
+      "Perbaikan: Status perekaman tidak diperbarui di bilah notifikasi saat perekaman dijeda",
+      "Perbaikan: Status perekaman tidak diperbarui di bilah notifikasi saat perekaman dijeda"
+    ],
+    "Lainnya": [
+      "Performa sistem dioptimalkan",
+      "Keamanan dan stabilitas sistem ditingkatkan"
     ]
   },
   "logs_vi": {
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Đã thêm: hỗ trợ hiển thị biểu tượng thông báo trên thanh trạng thái. Bật trong «Cài đặt – Thông báo và thanh trạng thái – Hiển thị biểu tượng khi nhận thông báo».",
+      "Mới: Hỗ trợ hiển thị biểu tượng thông báo trên thanh trạng thái. Bật tại «Cài đặt > Thông báo và thanh trạng thái > Hiển thị biểu tượng khi có thông báo»."
+    ],
+    "Máy ảnh": [
+      "Sửa lỗi đôi khi tự động chụp liên tiếp",
+      "Sửa lỗi đôi khi tự động chụp liên tiếp"
+    ],
+    "Thư viện": [
+      "Thêm tính năng khung trong trình chỉnh sửa ảnh để ảnh mang tính nghệ thuật hơn",
+      "Mới: Tính năng khung trong trình chỉnh sửa ảnh giúp ảnh nghệ thuật hơn"
+    ],
+    "Trình cập nhật": [
+      "Thêm tính năng lối tắt màn hình chính; có thể bật trong cài đặt cập nhật.",
+      "Mới: Tính năng lối tắt trên màn hình chính. Có thể bật trong cài đặt cập nhật."
+    ],
+    "Trình quản lý tệp": [
+      "Đã sửa lỗi biểu tượng trong giao diện tìm kiếm hiển thị không đúng",
+      "Đã khắc phục sự cố hình thu nhỏ không được làm mới kịp thời trong một số trường hợp",
+      "Đã khắc phục sự cố biểu tượng hiển thị bất thường trên màn hình tìm kiếm",
+      "Đã khắc phục sự cố hình thu nhỏ không được làm mới kịp thời trong một số trường hợp"
+    ],
+    "Máy ghi âm": [
+      "Đã sửa: Trạng thái ghi âm không được cập nhật kịp thời trên thanh thông báo khi tạm dừng ghi âm",
+      "Đã sửa: Trạng thái ghi âm không được cập nhật kịp thời trên thanh thông báo khi tạm dừng ghi âm"
+    ],
     "Khác": [
       "Tối ưu hiệu suất hệ thống",
       "Cải thiện tính ổn định và bảo mật hệ thống"
+    ],
+    "Camera": [
+      "Sửa lỗi đôi khi tự động chụp liên tiếp"
     ]
   },
   "logs_th": {
+    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
+      "เพิ่ม: รองรับการแสดงไอคอนการแจ้งเตือนในแถบสถานะ เปิดใช้งานได้ที่ «การตั้งค่า – การแจ้งเตือนและแถบสถานะ – แสดงไอคอนเมื่อมีการแจ้งเตือน»",
+      "ใหม่: รองรับการแสดงไอคอนการแจ้งเตือนบนแถบสถานะ เปิดใช้งานได้ที่ «การตั้งค่า > การแจ้งเตือนและแถบสถานะ > แสดงไอคอนเมื่อมีการแจ้งเตือน»"
+    ],
+    "กล้อง": [
+      "แก้ไขปัญหาการถ่ายภาพต่อเนื่องอัตโนมัติเป็นครั้งคราว",
+      "แก้ไขปัญหาการถ่ายภาพต่อเนื่องอัตโนมัติเป็นครั้งคราว",
+      "แก้ไขปัญหาการถ่ายภาพต่อเนื่องอัตโนมัติเป็นครั้งคราว"
+    ],
+    "คลังภาพ": [
+      "เพิ่มฟีเจอร์กรอบในตัวแก้ไขรูปภาพ ให้รูปของคุณดูมีศิลปะมากขึ้น",
+      "ใหม่: ฟีเจอร์กรอบในตัวแก้ไขรูปภาพ ช่วยให้รูปภาพดูมีศิลปะมากขึ้น"
+    ],
+    "ตัวอัปเดต": [
+      "เพิ่มฟีเจอร์ทางลัดหน้าจอหลัก เปิดใช้งานได้ในการตั้งค่าอัปเดต",
+      "ใหม่: ฟีเจอร์ทางลัดบนหน้าจอหลัก เปิดใช้งานได้ในการตั้งค่าการอัปเดต"
+    ],
+    "ตัวจัดการไฟล์": [
+      "แก้ไขปัญหาการแสดงไอคอนในหน้าค้นหาผิดปกติ",
+      "แก้ไขปัญหาที่ในบางกรณีรูปย่อไม่รีเฟรชทันเวลา",
+      "แก้ไขปัญหาการแสดงไอคอนบนหน้าจอค้นหาผิดปกติ",
+      "แก้ไขปัญหาที่ในบางกรณีรูปย่อไม่รีเฟรชทันเวลา"
+    ],
+    "เครื่องบันทึกเสียง": [
+      "แก้ไข: สถานะการบันทึกเสียงไม่ได้รับการอัปเดตในแถบการแจ้งเตือนเมื่อหยุดการบันทึกชั่วคราว",
+      "แก้ไข: สถานะการบันทึกเสียงไม่ได้รับการอัปเดตในแถบการแจ้งเตือนเมื่อหยุดการบันทึกชั่วคราว"
+    ],
     "อื่นๆ": [
       "เพิ่มประสิทธิภาพของระบบ",
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
     ]
   },
   "logs_ar": {
+    "شاشة القفل، شريط الحالة، شريط الإشعارات": [
+      "تمت الإضافة: دعم عرض رموز الإشعارات في شريط الحالة. فعّله من «الإعدادات – الإشعارات وشريط الحالة – إظهار الرموز عند تلقي الإشعارات».",
+      "جديد: دعم عرض رموز الإشعارات في شريط الحالة. فعّله من «الإعدادات > الإشعارات وشريط الحالة > إظهار الرموز عند وصول الإشعارات»."
+    ],
+    "كاميرا": [
+      "إصلاح مشكلة التصوير المتتابع التلقائي العرضي",
+      "إصلاح مشكلة التصوير المتتابع التلقائي العرضي"
+    ],
+    "المعرض": [
+      "إضافة ميزة الإطارات في محرر الصور لجعل صورك أكثر فنية",
+      "جديد: ميزة الإطار في محرر الصور لجعل صورك أكثر فنية"
+    ],
+    "المحدث": [
+      "إضافة ميزة اختصار الشاشة الرئيسية؛ يمكن تفعيلها في إعدادات التحديث.",
+      "جديد: ميزة اختصار الشاشة الرئيسية. يمكن تفعيلها في إعدادات التحديث."
+    ],
+    "مدير الملفات": [
+      "تم إصلاح مشكلة عرض الأيقونات بشكل غير صحيح في واجهة البحث",
+      "إصلاح مشكلة عدم تحديث الصور المصغرة في الوقت المناسب في بعض الحالات",
+      "إصلاح مشكلة عرض الأيقونات بشكل غير طبيعي في شاشة البحث",
+      "إصلاح مشكلة عدم تحديث الصور المصغرة في الوقت المناسب في بعض الحالات"
+    ],
+    "مسجل": [
+      "إصلاح: لم يتم تحديث حالة التسجيل في شريط الإشعارات عند إيقاف التسجيل مؤقتًا",
+      "إصلاح: لم يتم تحديث حالة التسجيل في شريط الإشعارات عند إيقاف التسجيل مؤقتًا"
+    ],
     "أخرى": [
       "تحسين أداء النظام",
       "تحسين أمن واستقرار النظام"
+    ],
+    "الكاميرا": [
+      "إصلاح مشكلة التصوير المتتابع التلقائي العرضي"
     ]
   },
   "logs_in": {
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
+      "जोड़ा गया: स्टेटस बार में सूचना आइकन दिखाने का समर्थन। «सेटिंग्स – सूचनाएं और स्टेटस बार – सूचना आने पर आइकन दिखाएं» में सक्षम करें।",
+      "नया: स्टेटस बार में सूचना आइकन दिखाने का समर्थन। इसे «सेटिंग्स > सूचनाएं और स्टेटस बार > सूचना आने पर आइकन दिखाएं» में सक्षम करें।"
+    ],
+    "कैमरा": [
+      "कभी-कभार स्वचालित बर्स्ट शॉट की समस्या ठीक की गई",
+      "कभी-कभार स्वचालित बर्स्ट शॉट की समस्या ठीक की गई",
+      "कभी-कभार स्वचालित बर्स्ट शॉट की समस्या ठीक की गई"
+    ],
+    "गैलरी": [
+      "इमेज एडिटर में फ़्रेम सुविधा जोड़ी गई, ताकि आपकी तस्वीरें और कलात्मक लगें",
+      "नया: इमेज एडिटर में फ़्रेम फ़ीचर, जिससे आपकी तस्वीरें और कलात्मक लगें"
+    ],
+    "अपडेटर": [
+      "होम स्क्रीन शॉर्टकट सुविधा जोड़ी गई; इसे अपडेट सेटिंग्स में सक्षम किया जा सकता है।",
+      "नया: होम स्क्रीन शॉर्टकट सुविधा। अपडेट सेटिंग्स में सक्षम किया जा सकता है।"
+    ],
+    "फ़ाइल प्रबंधक": [
+      "खोज इंटरफ़ेस में आइकन के गलत प्रदर्शित होने की समस्या ठीक की गई",
+      "कुछ स्थितियों में थंबनेल समय पर रीफ़्रेश न होने की समस्या ठीक की गई",
+      "खोज स्क्रीन पर आइकन के गलत तरीके से प्रदर्शित होने की समस्या ठीक की गई",
+      "कुछ स्थितियों में थंबनेल समय पर रीफ़्रेश न होने की समस्या ठीक की गई"
+    ],
+    "रिकॉर्डर": [
+      "समस्या ठीक की गई: रिकॉर्डिंग पॉज़ करने पर नोटिफ़िकेशन शेड में स्थिति तुरंत अपडेट नहीं होती थी",
+      "समस्या ठीक की गई: रिकॉर्डिंग पॉज़ करने पर नोटिफ़िकेशन शेड में स्थिति तुरंत अपडेट नहीं होती थी"
+    ],
     "अन्य": [
       "सिस्टम परफ़ॉर्मेंस ऑप्टिमाइज़ किया गया है",
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
     ]
   },
   "logs_ug": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "قۇلۇپ ئېكرانى، ھالەت بالدىقى، ئۇقتۇرۇش بالدىقى": [
+      "يېڭى قوشۇلدى: ھالەت ستونىدا ئۇقتۇرۇش سىنبەلگىسىنى كۆرسىتىشنى قوللايدۇ. «تەڭشەكلەر – ئۇقتۇرۇشلار ۋە ھالەت ستونى – ئۇقتۇرۇش كەلگەندە سىنبەلگىنى كۆرسەت» ئارقىلىق ئېچىڭ."
+    ],
+    "ھۆججەت باشقۇرغۇچ": [
+      "ئىزدەش كۆرۈنمە يۈزىدىكى سىنبەلگىلەرنىڭ خاتا كۆرسىتىلىش مەسىلىسى تۈزىتىلدى",
+      "بەزى ئەھۋاللاردا كىچىك سۈرەتلەرنىڭ ۋاقتىدا يېڭىلانماسلىق مەسىلىسى تۈزىتىلدى"
+    ],
+    "ئاۋاز ئالغۇ": [
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused",
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
+    ],
+    "Updater": [
+      "يېڭى: باش ئېكران تېز يوللانمىسى ئىقتىدارى. يېڭىلاش تەڭشەكلىرىدە قوزغىتىشقا بولىدۇ."
+    ],
+    "باشقىلىرى": [
+      "سىستېمىنىڭ مۇقىملىقىنى ئاشۇرۇش",
+      "سىستېما راۋانلىقىنى ئەلالاشتۇرۇش"
     ]
   },
   "logs_bo": {
-    "Other": [
+    "སྒྲ་འཇུག་ཆས": [
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused",
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
+    ],
+    "གཞན།": [
       "Optimized system performance",
       "Improved system security and stability"
     ]

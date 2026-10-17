@@ -1,153 +1,626 @@
 {
   "logs_zh": {
     "系统": [
-      "修复 截长屏不能下拉到底的问题"
+      "修复 截长屏不能下拉到底的问题",
+      "修复 长截屏无法下拉到底"
     ],
     "电话": [
+      "优化 双卡场景下掉卡后的处理策略",
       "优化 双卡场景下掉卡后的处理策略"
     ],
     "锁屏、状态栏、通知栏": [
       "修复 偶现关闭悬浮通知，悬浮通知依然显示的问题",
+      "修复 锁屏时充电球与预计充电时间显示重叠的问题",
+      "修复 锁屏时充电球与预计充电时间显示重叠的问题",
       "修复 锁屏时充电球与预计充电时间显示重叠的问题"
     ],
     "设置": [
       "修复 同步页面点击立即同步无效的问题",
+      "修复 设置手机名称为最大长度，热点无法打开的问题",
+      "修复 同步页面点击立即同步无效的问题",
       "修复 设置手机名称为最大长度，热点无法打开的问题"
     ],
     "文件管理器": [
+      "修复 私密文件夹中剪切图片视频后打开文件异常的问题",
+      "修复 私密文件夹中剪切图片视频后打开文件异常的问题",
       "修复 私密文件夹中剪切图片视频后打开文件异常的问题"
+    ],
+    "其他": [
+      "提高系统的稳定性",
+      "优化系统的流畅度"
     ]
   },
   "logs_en": {
     "System": [
-      "Fix: Scrolling screenshots didn^t always work properly"
+      "Fix: Scrolling screenshots didn't always work properly",
+      "Fix: Scrolling screenshots didn't always work properly"
     ],
     "Phone": [
+      "Optimize Algorithm for restoring connection after signal was lost in Dual SIM mode",
       "Optimization: Algorithm for restoring connection after signal was lost in Dual SIM mode"
+    ],
+    "Settings": [
+      "Fix: The \"Sync now\" button didn't always work",
+      "Fix: Couldn't turn on portable hotspot when device name was set to maximum length",
+      "Fix: The \"Sync now\" button didn't always work",
+      "Fix: Couldn't turn on portable hotspot when device name was set to maximum length"
+    ],
+    "File Explorer": [
+      "Fix: Errors occured after videos from the folder with hidden files were edited",
+      "Fix: Errors occured after videos from the folder with hidden files were edited"
     ],
     "Lockscreen, Status Bar, Notification Bar": [
       "Fix: Lock screen UI elements overlapped when the device was charging"
     ],
-    "Settings": [
-      "Fix: The ^Sync now^ button didn^t always work",
-      "Fix: Couldn^t turn on portable hotspot when device name was set to maximum length"
+    "Other": [
+      "Optimized system performance",
+      "Improved system security and stability"
     ],
-    "File Explorer": [
+    "Lock screen, status bar, notification shade": [
+      "Fix: Lock screen UI elements overlapped when the device was charging"
+    ],
+    "File Manager": [
       "Fix: Errors occured after videos from the folder with hidden files were edited"
     ]
   },
   "logs_zh_tw": {
+    "系統": [
+      "修復 截長屏不能下拉到底的問題",
+      "修復 長截圖無法下拉到底"
+    ],
+    "電話": [
+      "優化雙卡場景下掉卡後的處理策略",
+      "優化 雙卡情境下掉卡後的處理策略"
+    ],
+    "檔案管理員": [
+      "修復 私密資料夾中剪切圖片影片後開啟檔案異常的問題",
+      "修復 私密資料夾中剪切圖片影片後開啟檔案異常的問題"
+    ],
     "解鎖畫面、狀態欄、通知欄": [
+      "修復 螢幕鎖定時充電球與預計充電時間顯示重疊的問題",
       "修復 螢幕鎖定時充電球與預計充電時間顯示重疊的問題"
+    ],
+    "其他": [
+      "改善系統的穩定性",
+      "優化系統的流暢度"
     ],
     "檔案管理器": [
       "修復 私密資料夾中剪切圖片影片後開啟檔案異常的問題"
     ]
   },
   "logs_ja": {
+    "システム": [
+      "長いスクリーンショットが最後までスクロールできない問題を修正",
+      "長いスクリーンショットで最後までスクロールできない問題を修正"
+    ],
+    "電話": [
+      "デュアルSIM環境でSIMカードが切断された後の処理ポリシーを最適化",
+      "最適化: デュアルSIM時のSIMカード喪失後の処理ポリシー"
+    ],
+    "設定": [
+      "修正: 「今すぐ同期」ボタンが機能しないことがある問題",
+      "修正: デバイス名を最大長に設定すると、ポータブルホットスポットをオンにできませんでした",
+      "修正: 「今すぐ同期」ボタンが機能しないことがある問題",
+      "修正: デバイス名を最大長に設定すると、ポータブルホットスポットをオンにできませんでした"
+    ],
+    "ファイルマネージャー": [
+      "プライベートフォルダで画像や動画を切り取った後にファイルを開く際の異常を修正",
+      "プライベートフォルダで画像や動画を切り取った後にファイルを開く際の異常を修正",
+      "プライベートフォルダで画像や動画を切り取った後にファイルを開く際の異常を修正"
+    ],
+    "ロック画面、ステータスバー、通知バー": [
+      "ロック画面で充電ボールと予想充電時間の表示が重なる問題を修正"
+    ],
     "その他": [
       "システムパフォーマンスの最適化",
       "システムのセキュリティと安定性の向上"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "ロック画面で充電ボールと予想充電時間の表示が重なる問題を修正"
     ]
   },
   "logs_ko": {
+    "시스템": [
+      "스크롤 스크린샷이 끝까지 내려가지 않는 문제 수정",
+      "긴 스크린샷에서 끝까지 스크롤되지 않던 문제를 수정"
+    ],
+    "전화": [
+      "듀얼 SIM 환경에서 SIM 카드가 끊긴 후 처리 전략 최적화",
+      "최적화: 듀얼 SIM 환경에서 SIM 카드가 인식되지 않을 때의 처리 전략"
+    ],
+    "설정": [
+      "수정: \"지금 동기화\" 버튼이 항상 작동하지 않던 문제",
+      "수정: 기기 이름을 최대 길이로 설정하면 휴대용 핫스팟을 켤 수 없었습니다",
+      "수정: \"지금 동기화\" 버튼이 항상 작동하지 않던 문제",
+      "수정: 기기 이름을 최대 길이로 설정하면 휴대용 핫스팟을 켤 수 없었습니다"
+    ],
+    "파일 관리자": [
+      "비공개 폴더에서 사진 및 동영상을 잘라낸 후 파일을 여는 오류를 수정",
+      "비공개 폴더에서 사진 및 동영상을 잘라낸 후 파일을 여는 오류를 수정",
+      "비공개 폴더에서 사진 및 동영상을 잘라낸 후 파일을 여는 오류를 수정"
+    ],
+    "잠금 화면, 상태 표시줄, 알림 표시줄": [
+      "잠금 화면에서 충전 볼과 예상 충전 시간 표시가 겹치는 문제를 수정"
+    ],
     "기타": [
       "시스템 성능 최적화",
       "시스템 보안 및 안정성 개선"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "잠금 화면에서 충전 볼과 예상 충전 시간 표시가 겹치는 문제를 수정"
     ]
   },
   "logs_ru": {
+    "Система": [
+      "Исправлено: длинный скриншот не прокручивался до конца",
+      "Fix: Длинные скриншоты работали некорректно"
+    ],
+    "Телефон": [
+      "Оптимизировать стратегию обработки после потери SIM-карты в режиме двух SIM-карт",
+      "Оптимизация: стратегия обработки после потери SIM-карты в режиме двух SIM-карт"
+    ],
+    "Настройки": [
+      "Улучшение безопасности и стабильности системы",
+      "Исправлено: Не удавалось включить точку доступа, если имя устройства содержало максимальное количество символов",
+      "Улучшение безопасности и стабильности системы",
+      "Исправлено: Не удавалось включить точку доступа, если имя устройства содержало максимальное количество символов"
+    ],
+    "Файловый менеджер": [
+      "Исправлена ошибка открытия файлов после вырезания изображений и видео в приватной папке",
+      "Исправлена ошибка открытия файлов после вырезания изображений и видео в приватной папке",
+      "Исправлена ошибка открытия файлов после вырезания изображений и видео в приватной папке"
+    ],
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Исправлено наложение индикатора зарядки и предполагаемого времени зарядки на экране блокировки"
+    ],
     "Другое": [
       "Оптимизация производительности системы",
       "Улучшение безопасности и стабильности системы"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Исправлено наложение индикатора зарядки и предполагаемого времени зарядки на экране блокировки"
     ]
   },
   "logs_uk": {
+    "Система": [
+      "Виправлено: довгий знімок екрана не прокручувався до кінця",
+      "Виправлено: прокручуваний знімок екрана не прокручувався до кінця"
+    ],
+    "Телефон": [
+      "Оптимізувати стратегію обробки після втрати SIM-картки в режимі двох SIM-карток",
+      "Оптимізація: стратегія обробки після втрати SIM-картки в режимі двох SIM-карток"
+    ],
+    "Налаштування": [
+      "Виправлено: кнопка \"Синхронізувати зараз\" не завжди працювала",
+      "Виправлено: не вдалося ввімкнути портативну точку доступу, коли ім’я пристрою встановлено на максимальну довжину",
+      "Виправлено: кнопка \"Синхронізувати зараз\" не завжди працювала",
+      "Виправлено: не вдалося ввімкнути портативну точку доступу, коли ім’я пристрою встановлено на максимальну довжину"
+    ],
+    "Файловий менеджер": [
+      "Виправлено помилку відкриття файлів після вирізання зображень і відео в приватній папці",
+      "Виправлено помилку відкриття файлів після вирізання зображень і відео в приватній папці",
+      "Виправлено помилку відкриття файлів після вирізання зображень і відео в приватній папці"
+    ],
+    "Екран блокування, рядок стану, рядок сповіщень": [
+      "Виправлено накладання індикатора заряджання та орієнтовного часу заряджання на екрані блокування"
+    ],
     "Інше": [
       "Оптимізація продуктивності системи",
       "Покращення безпеки та стабільності системи"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Виправлено накладання індикатора заряджання та орієнтовного часу заряджання на екрані блокування"
     ]
   },
   "logs_pl": {
+    "System": [
+      "Poprawiono: zrzut ekranu z przewijaniem nie przewijał się do końca",
+      "Naprawiono: przewijany zrzut ekranu nie pozwalał przewinąć do końca"
+    ],
+    "Telefon": [
+      "Optymalizacja strategii obsługi po utracie karty SIM w trybie dual SIM",
+      "Optymalizacja: strategia obsługi po utracie karty SIM w trybie Dual SIM"
+    ],
+    "Ustawienia": [
+      "Poprawka: przycisk „Synchronizuj teraz” nie zawsze działał",
+      "Naprawiono: Nie można było włączyć hotspotu przenośnego, gdy nazwa urządzenia miała maksymalną długość",
+      "Poprawka: przycisk „Synchronizuj teraz” nie zawsze działał",
+      "Naprawiono: Nie można było włączyć hotspotu przenośnego, gdy nazwa urządzenia miała maksymalną długość"
+    ],
+    "Menedżer plików": [
+      "Naprawiono błąd otwierania plików po wycięciu zdjęć i filmów w folderze prywatnym",
+      "Naprawiono błąd otwierania plików po wycięciu zdjęć i filmów w folderze prywatnym",
+      "Naprawiono błąd otwierania plików po wycięciu zdjęć i filmów w folderze prywatnym"
+    ],
+    "Ekran blokady, pasek stanu, pasek powiadomień": [
+      "Naprawiono nakładanie się wskaźnika ładowania i szacowanego czasu ładowania na ekranie blokady"
+    ],
     "Inne": [
       "Zoptymalizowana wydajność systemu",
       "Większe bezpieczeństwo i stabilność systemu"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Naprawiono nakładanie się wskaźnika ładowania i szacowanego czasu ładowania na ekranie blokady"
     ]
   },
   "logs_de": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "System": [
+      "Behebung: Scroll-Screenshot ließ sich nicht bis zum Ende scrollen",
+      "Behoben: Scroll-Screenshot konnte nicht bis zum Ende gescrollt werden"
+    ],
+    "Telefon": [
+      "Optimierung der Verarbeitungsstrategie nach SIM-Kartenverlust im Dual-SIM-Modus",
+      "Optimierung: Strategie zur Behandlung bei SIM-Kartenverlust im Dual-SIM-Modus"
+    ],
+    "Einstellungen": [
+      "Behoben: Die Schaltfläche „Jetzt synchronisieren“ funktionierte nicht immer",
+      "Behoben: Mobiler Hotspot konnte nicht aktiviert werden, wenn der Gerätename auf die maximale Länge gesetzt war",
+      "Behoben: Die Schaltfläche „Jetzt synchronisieren“ funktionierte nicht immer",
+      "Behoben: Mobiler Hotspot konnte nicht aktiviert werden, wenn der Gerätename auf die maximale Länge gesetzt war"
+    ],
+    "Dateimanager": [
+      "Fehler beim Öffnen von Dateien nach dem Ausschneiden von Bildern und Videos im privaten Ordner behoben",
+      "Fehler beim Öffnen von Dateien nach dem Ausschneiden von Bildern und Videos im privaten Ordner behoben",
+      "Fehler beim Öffnen von Dateien nach dem Ausschneiden von Bildern und Videos im privaten Ordner behoben"
+    ],
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
+      "Problem behoben, bei dem sich Ladeball und geschätzte Ladezeit auf dem Sperrbildschirm überlappen"
+    ],
+    "Sonstiges": [
+      "Systemleistung optimiert",
+      "Systemsicherheit und -stabilität verbessert"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Problem behoben, bei dem sich Ladeball und geschätzte Ladezeit auf dem Sperrbildschirm überlappen"
     ]
   },
   "logs_fr": {
+    "Système": [
+      "Correction : la capture d'écran défilante ne défilait pas jusqu'en bas",
+      "Correction : la capture d'écran défilante ne permettait pas d'aller jusqu'en bas"
+    ],
+    "Téléphone": [
+      "Optimisation de la stratégie de traitement après perte de carte SIM en mode double SIM",
+      "Optimisation : stratégie de gestion après perte de carte SIM en mode double SIM"
+    ],
+    "Paramètres": [
+      "Correction : le bouton « Synchroniser maintenant » ne fonctionnait pas toujours",
+      "Réparé Impossible d'activer le point d'accès portable lorsque le nom du périphérique a été défini sur une longueur maximale",
+      "Correction : le bouton « Synchroniser maintenant » ne fonctionnait pas toujours",
+      "Réparé Impossible d'activer le point d'accès portable lorsque le nom du périphérique a été défini sur une longueur maximale"
+    ],
+    "Gestionnaire de fichiers": [
+      "Correction du problème d'ouverture des fichiers après avoir coupé des images et vidéos dans le dossier privé",
+      "Correction du problème d'ouverture des fichiers après avoir coupé des images et vidéos dans le dossier privé",
+      "Correction du problème d'ouverture des fichiers après avoir coupé des images et vidéos dans le dossier privé"
+    ],
+    "Écran de verrouillage, barre d’état, barre de notifications": [
+      "Correction du chevauchement entre la boule de charge et le temps de charge estimé sur l’écran de verrouillage"
+    ],
     "Autre": [
       "Performances système optimisées",
       "Sécurité et stabilité du système améliorées"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Correction du chevauchement entre la boule de charge et le temps de charge estimé sur l’écran de verrouillage"
     ]
   },
   "logs_it": {
+    "Sistema": [
+      "Corretto: lo screenshot a scorrimento non scorreva fino in fondo",
+      "Corretto: lo screenshot scorrevole non permetteva di scorrere fino in fondo"
+    ],
+    "Telefono": [
+      "Ottimizzazione della strategia di gestione dopo la perdita della scheda SIM in modalità dual SIM",
+      "Ottimizzazione: strategia di gestione in caso di perdita della SIM in modalità dual SIM"
+    ],
+    "Impostazioni": [
+      "Correzione: il pulsante \"Sincronizza ora\" non funzionava sempre",
+      "Risolto: Impossibile attivare l'hotspot personale quando il nome del dispositivo era impostato sulla lunghezza massima",
+      "Correzione: il pulsante \"Sincronizza ora\" non funzionava sempre",
+      "Risolto: Impossibile attivare l'hotspot personale quando il nome del dispositivo era impostato sulla lunghezza massima"
+    ],
+    "Gestione file": [
+      "Risolto il problema di apertura dei file dopo il taglio di immagini e video nella cartella privata",
+      "Risolto il problema di apertura dei file dopo il taglio di immagini e video nella cartella privata"
+    ],
+    "Schermata di blocco, barra di stato, barra delle notifiche": [
+      "Risolto il problema della sovrapposizione tra pallina di ricarica e tempo di ricarica stimato nella schermata di blocco"
+    ],
     "Altro": [
       "Prestazioni di sistema ottimizzate",
       "Maggiore sicurezza e stabilità di sistema"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Risolto il problema della sovrapposizione tra pallina di ricarica e tempo di ricarica stimato nella schermata di blocco"
+    ],
+    "Gestore file": [
+      "Risolto il problema di apertura dei file dopo il taglio di immagini e video nella cartella privata"
     ]
   },
   "logs_es": {
+    "Sistema": [
+      "Corrección: la captura de pantalla desplazable no llegaba hasta el final",
+      "Corregido: la captura de pantalla desplazable no permitía bajar hasta el final"
+    ],
+    "Teléfono": [
+      "Optimización de la estrategia de gestión tras la pérdida de la tarjeta SIM en modo dual SIM",
+      "Optimización: estrategia de gestión tras la pérdida de la tarjeta SIM en modo dual SIM"
+    ],
+    "Ajustes": [
+      "Corrección: El botón \"Sincronizar ahora\" no siempre funcionaba",
+      "Reparado: No se pudo activar el punto de acceso portátil cuando el nombre del dispositivo fue establecido a la máxima longitud",
+      "Corrección: El botón \"Sincronizar ahora\" no siempre funcionaba",
+      "Reparado: No se pudo activar el punto de acceso portátil cuando el nombre del dispositivo fue establecido a la máxima longitud"
+    ],
+    "Administrador de archivos": [
+      "Se corrigió el problema de apertura de archivos tras cortar imágenes y vídeos en la carpeta privada",
+      "Se corrigió el problema de apertura de archivos tras cortar imágenes y vídeos en la carpeta privada",
+      "Se corrigió el problema de apertura de archivos tras cortar imágenes y vídeos en la carpeta privada"
+    ],
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Se corrige la superposición entre el indicador de carga y el tiempo estimado de carga en la pantalla de bloqueo"
+    ],
     "Otros": [
       "Rendimiento del sistema optimizado",
       "Estabilidad y seguridad del sistema mejorada"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Se corrige la superposición entre el indicador de carga y el tiempo estimado de carga en la pantalla de bloqueo"
     ]
   },
   "logs_pt": {
+    "Sistema": [
+      "Correção: a captura de tela rolável não rolava até o final",
+      "Corrigido: a captura de tela rolável não permitia rolar até o fim"
+    ],
+    "Telefone": [
+      "Otimização da estratégia de tratamento após perda do cartão SIM no modo dual SIM",
+      "Otimização: estratégia de tratamento após perda do cartão SIM no modo dual SIM"
+    ],
+    "Configurações": [
+      "Correção: o botão \"Sincronizar agora\" nem sempre funcionava",
+      "Correção Não era possível ativar o hotspot portátil quando o nome do dispositivo era definido para o comprimento máximo",
+      "Correção: o botão \"Sincronizar agora\" nem sempre funcionava",
+      "Correção Não era possível ativar o hotspot portátil quando o nome do dispositivo era definido para o comprimento máximo"
+    ],
+    "Gerenciador de arquivos": [
+      "Corrigido o problema de abertura de arquivos após recortar imagens e vídeos na pasta privada",
+      "Corrigido o problema de abertura de arquivos após recortar imagens e vídeos na pasta privada",
+      "Corrigido o problema de abertura de arquivos após recortar imagens e vídeos na pasta privada"
+    ],
+    "Tela de bloqueio, barra de status, barra de notificações": [
+      "Corrigido a sobreposição entre o indicador de carregamento e o tempo estimado de carregamento na tela de bloqueio"
+    ],
     "Outros": [
       "Desempenho do sistema aprimorado",
       "Segurança e estabilidade do sistema aprimoradas"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Corrigido a sobreposição entre o indicador de carregamento e o tempo estimado de carregamento na tela de bloqueio"
     ]
   },
   "logs_tr": {
+    "Sistem": [
+      "Düzeltme: Kaydırmalı ekran görüntüsü sona kadar kaydırılamıyordu",
+      "Düzeltme: kaydırmalı ekran görüntüsü sona kadar kaydırılamıyordu"
+    ],
+    "Telefon": [
+      "Çift SIM modunda SIM kart kaybı sonrası işlem stratejisi optimize edildi",
+      "Optimizasyon: Çift SIM modunda SIM kart kaybı sonrası işleme stratejisi"
+    ],
+    "Ayarlar": [
+      "Düzeltme: \"Şimdi senkronize et\" düğmesi her zaman çalışmıyordu",
+      "Onarım: Cihaz adı maksimum uzunlukta oluşturulduğunda kişisel bağlantı noktası açılamadı",
+      "Düzeltme: \"Şimdi senkronize et\" düğmesi her zaman çalışmıyordu",
+      "Onarım: Cihaz adı maksimum uzunlukta oluşturulduğunda kişisel bağlantı noktası açılamadı"
+    ],
+    "Dosya Yöneticisi": [
+      "Gizli klasördeki görselleri ve videoları kestikten sonra dosyaların açılması sorunu düzeltildi",
+      "Gizli klasördeki görselleri ve videoları kestikten sonra dosyaların açılması sorunu düzeltildi",
+      "Gizli klasördeki görselleri ve videoları kestikten sonra dosyaların açılması sorunu düzeltildi"
+    ],
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Kilit ekranında şarj göstergesi ile tahmini şarj süresinin üst üste binmesi sorunu düzeltildi"
+    ],
     "Diğer": [
       "Sistem performansı optimize edildi",
       "Sistem güvenliği ve kararlılığı geliştirildi"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Kilit ekranında şarj göstergesi ile tahmini şarj süresinin üst üste binmesi sorunu düzeltildi"
     ]
   },
   "logs_id": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "Sistem": [
+      "Perbaikan: tangkapan layar gulir tidak bisa digulir sampai bawah",
+      "Perbaikan: tangkapan layar bergulir tidak dapat digulir hingga bawah"
+    ],
+    "Telepon": [
+      "Mengoptimalkan strategi penanganan setelah kartu SIM hilang dalam mode dual SIM",
+      "Optimasi: strategi penanganan setelah kartu SIM hilang dalam mode dual SIM"
+    ],
+    "Pengaturan": [
+      "Perbaikan: Tombol \"Sinkronkan sekarang\" tidak selalu berfungsi",
+      "Perbaikan Tidak dapat menghidupkan hotspot portabel saat nama perangkat disetel ke panjang maksimal",
+      "Perbaikan: Tombol \"Sinkronkan sekarang\" tidak selalu berfungsi",
+      "Perbaikan Tidak dapat menghidupkan hotspot portabel saat nama perangkat disetel ke panjang maksimal"
+    ],
+    "Pengelola File": [
+      "Memperbaiki masalah pembukaan file setelah memotong gambar dan video di folder privat",
+      "Memperbaiki masalah pembukaan file setelah memotong gambar dan video di folder privat"
+    ],
+    "Layar kunci, bilah status, bilah notifikasi": [
+      "Memperbaiki tampilan bola pengisian daya dan perkiraan waktu pengisian daya yang tumpang tindih di layar kunci"
+    ],
+    "Lainnya": [
+      "Performa sistem dioptimalkan",
+      "Keamanan dan stabilitas sistem ditingkatkan"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Memperbaiki tampilan bola pengisian daya dan perkiraan waktu pengisian daya yang tumpang tindih di layar kunci"
+    ],
+    "Pengelola Berkas": [
+      "Memperbaiki masalah pembukaan file setelah memotong gambar dan video di folder privat"
     ]
   },
   "logs_vi": {
+    "Hệ thống": [
+      "Sửa lỗi: ảnh chụp màn hình cuộn không cuộn xuống được cuối",
+      "Đã sửa: ảnh chụp màn hình cuộn không thể cuộn xuống cuối"
+    ],
+    "Điện thoại": [
+      "Tối ưu hóa chiến lược xử lý sau khi mất thẻ SIM ở chế độ hai SIM",
+      "Tối ưu hóa: chiến lược xử lý sau khi mất thẻ SIM ở chế độ hai SIM"
+    ],
+    "Cài đặt": [
+      "Sửa lỗi: nút \"Đồng bộ ngay\" không phải lúc nào cũng hoạt động",
+      "Sửa lỗi: Không thể bật điểm phát sóng di động khi tên thiết bị được đặt ở độ dài tối đa",
+      "Sửa lỗi: nút \"Đồng bộ ngay\" không phải lúc nào cũng hoạt động",
+      "Sửa lỗi: Không thể bật điểm phát sóng di động khi tên thiết bị được đặt ở độ dài tối đa"
+    ],
+    "Trình quản lý tệp": [
+      "Đã sửa lỗi mở tệp sau khi cắt ảnh và video trong thư mục riêng tư",
+      "Đã sửa lỗi mở tệp sau khi cắt ảnh và video trong thư mục riêng tư",
+      "Đã sửa lỗi mở tệp sau khi cắt ảnh và video trong thư mục riêng tư"
+    ],
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Đã sửa lỗi chồng lấn giữa bóng sạc và thời gian sạc dự kiến trên màn hình khóa"
+    ],
     "Khác": [
       "Tối ưu hiệu suất hệ thống",
       "Cải thiện tính ổn định và bảo mật hệ thống"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Đã sửa lỗi chồng lấn giữa bóng sạc và thời gian sạc dự kiến trên màn hình khóa"
     ]
   },
   "logs_th": {
+    "ระบบ": [
+      "แก้ไข: ภาพหน้าจอแบบเลื่อนไม่สามารถเลื่อนลงไปจนสุดได้",
+      "แก้ไข: ภาพหน้าจอแบบเลื่อนไม่สามารถเลื่อนลงไปจนสุดได้"
+    ],
+    "โทรศัพท์": [
+      "เพิ่มประสิทธิภาพกลยุทธ์การจัดการเมื่อ SIM หลุดในโหมด Dual SIM",
+      "การปรับให้เหมาะสม: กลยุทธ์การจัดการเมื่อซิมหายในโหมดสองซิม"
+    ],
+    "การตั้งค่า": [
+      "แก้ไข: ปุ่ม \"ซิงค์ทันที\" ไม่ทำงานในบางครั้ง",
+      "แก้ไข: ไม่สามารถเปิดฮอตสปอตแบบพกพาได้เมื่อตั้งชื่ออุปกรณ์เป็นความยาวสูงสุด",
+      "แก้ไข: ปุ่ม \"ซิงค์ทันที\" ไม่ทำงานในบางครั้ง",
+      "แก้ไข: ไม่สามารถเปิดฮอตสปอตแบบพกพาได้เมื่อตั้งชื่ออุปกรณ์เป็นความยาวสูงสุด"
+    ],
+    "ตัวจัดการไฟล์": [
+      "แก้ไขปัญหาการเปิดไฟล์ผิดปกติหลังจากตัดรูปภาพและวิดีโอในโฟลเดอร์ส่วนตัว",
+      "แก้ไขปัญหาการเปิดไฟล์ผิดปกติหลังจากตัดรูปภาพและวิดีโอในโฟลเดอร์ส่วนตัว",
+      "แก้ไขปัญหาการเปิดไฟล์ผิดปกติหลังจากตัดรูปภาพและวิดีโอในโฟลเดอร์ส่วนตัว"
+    ],
+    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
+      "แก้ไขปัญหาวงกลมชาร์จและเวลาชาร์จโดยประมาณแสดงทับซ้อนกันบนหน้าจอล็อก"
+    ],
     "อื่นๆ": [
       "เพิ่มประสิทธิภาพของระบบ",
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "แก้ไขปัญหาวงกลมชาร์จและเวลาชาร์จโดยประมาณแสดงทับซ้อนกันบนหน้าจอล็อก"
     ]
   },
   "logs_ar": {
+    "النظام": [
+      "إصلاح: لقطة الشاشة الطويلة لا تصل إلى الأسفل",
+      "إصلاح: تعذّر التمرير إلى الأسفل في لقطة الشاشة الطويلة"
+    ],
+    "الهاتف": [
+      "تحسين استراتيجية المعالجة بعد فقدان بطاقة SIM في وضع الشريحتين",
+      "التحسين: استراتيجية المعالجة بعد فقدان بطاقة SIM في وضع الشريحتين"
+    ],
+    "الإعدادات": [
+      "إصلاح: زر \"المزامنة الآن\" لم يعمل في بعض الأحيان",
+      "إصلاح: تعذّر تشغيل نقطة الاتصال المحمولة عند ضبط اسم الجهاز على الحد الأقصى للطول",
+      "إصلاح: زر \"المزامنة الآن\" لم يعمل في بعض الأحيان",
+      "إصلاح: تعذّر تشغيل نقطة الاتصال المحمولة عند ضبط اسم الجهاز على الحد الأقصى للطول"
+    ],
+    "مدير الملفات": [
+      "إصلاح مشكلة فتح الملفات بشكل غير طبيعي بعد قص الصور ومقاطع الفيديو في المجلد الخاص",
+      "إصلاح مشكلة فتح الملفات بشكل غير طبيعي بعد قص الصور ومقاطع الفيديو في المجلد الخاص",
+      "إصلاح مشكلة فتح الملفات بشكل غير طبيعي بعد قص الصور ومقاطع الفيديو في المجلد الخاص"
+    ],
+    "شاشة القفل، شريط الحالة، شريط الإشعارات": [
+      "إصلاح مشكلة تداخل كرة الشحن ووقت الشحن المتوقع على شاشة القفل"
+    ],
     "أخرى": [
       "تحسين أداء النظام",
       "تحسين أمن واستقرار النظام"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "إصلاح مشكلة تداخل كرة الشحن ووقت الشحن المتوقع على شاشة القفل"
     ]
   },
   "logs_in": {
+    "सिस्टम": [
+      "सुधार: स्क्रॉलिंग स्क्रीनशॉट नीचे तक स्क्रॉल नहीं होता था",
+      "ठीक किया गया: लंबे स्क्रीनशॉट में नीचे तक स्क्रॉल नहीं हो पाता था"
+    ],
+    "फ़ोन": [
+      "डुअल SIM मोड में SIM कार्ड खोने के बाद प्रसंस्करण रणनीति को अनुकूलित करें",
+      "अनुकूलन: डुअल SIM मोड में SIM कार्ड खोने के बाद प्रबंधन रणनीति"
+    ],
+    "सेटिंग्स": [
+      "ठीक करें: \"अभी सिंक करें\" बटन हमेशा काम नहीं करता था",
+      "Perbaikan: Tidak dapat mengaktifkan hotspot portabel saat nama perangkat diatur ke panjang maksimum",
+      "ठीक करें: \"अभी सिंक करें\" बटन हमेशा काम नहीं करता था",
+      "Perbaikan: Tidak dapat mengaktifkan hotspot portabel saat nama perangkat diatur ke panjang maksimum"
+    ],
+    "फ़ाइल प्रबंधक": [
+      "निजी फ़ोल्डर में छवियों और वीडियो को काटने के बाद फ़ाइलें खोलने की समस्या ठीक की गई",
+      "निजी फ़ोल्डर में छवियों और वीडियो को काटने के बाद फ़ाइलें खोलने की समस्या ठीक की गई",
+      "निजी फ़ोल्डर में छवियों और वीडियो को काटने के बाद फ़ाइलें खोलने की समस्या ठीक की गई"
+    ],
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
+      "लॉक स्क्रीन पर चार्जिंग बॉल और अनुमानित चार्जिंग समय के ओवरलैप होने की समस्या ठीक की गई"
+    ],
     "अन्य": [
       "सिस्टम परफ़ॉर्मेंस ऑप्टिमाइज़ किया गया है",
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "लॉक स्क्रीन पर चार्जिंग बॉल और अनुमानित चार्जिंग समय के ओवरलैप होने की समस्या ठीक की गई"
     ]
   },
   "logs_ug": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "تېلېفون": [
+      "قوش كارتا شارائىتىدا كارتا ئۈزۈلۈپ قېلىشتىن كېيىنكى بىر تەرەپ قىلىش ئىستراتېگىيىسىنى ئەلالاشتۇرۇش"
+    ],
+    "تەڭشەك": [
+      "سىنخلاشتۇرۇش بېتىدە «دەرھال سىنخلاشتۇر»نى باسقاندا ئىشلىمەيدىغان مەسىلە تۈزىتىلدى",
+      "ئوڭشاش: ئۈسكۈنىنىڭ نامى ئەڭ چوڭ ئۇزۇنلۇققا تەڭشەلگەندە كۆچمە ھوتسپوتنى ئاچقىلى بولمىدى",
+      "سىنخلاشتۇرۇش بېتىدە «دەرھال سىنخلاشتۇر»نى باسقاندا ئىشلىمەيدىغان مەسىلە تۈزىتىلدى",
+      "ئوڭشاش: ئۈسكۈنىنىڭ نامى ئەڭ چوڭ ئۇزۇنلۇققا تەڭشەلگەندە كۆچمە ھوتسپوتنى ئاچقىلى بولمىدى"
+    ],
+    "ھۆججەت باشقۇرغۇچ": [
+      "شەخسىي قىسقۇچتىكى رەسىم ۋە سىنلارنى كېسكەندىن كېيىن ھۆججەتنى ئېچىشتىكى كاشىلا ئوڭشالدى",
+      "شەخسىي قىسقۇچتىكى رەسىم ۋە سىنلارنى كېسكەندىن كېيىن ھۆججەتنى ئېچىشتىكى كاشىلا ئوڭشالدى"
+    ],
+    "سىستېما": [
+      "Fix: Scrolling screenshots didn't always work properly"
+    ],
+    "باشقىلىرى": [
+      "سىستېمىنىڭ مۇقىملىقىنى ئاشۇرۇش",
+      "سىستېما راۋانلىقىنى ئەلالاشتۇرۇش"
     ]
   },
   "logs_bo": {
-    "Other": [
+    "Settings": [
+      "Improved system security and stability",
+      "Fix: Couldn't turn on portable hotspot when device name was set to maximum length",
+      "Improved system security and stability",
+      "Fix: Couldn't turn on portable hotspot when device name was set to maximum length"
+    ],
+    "རིམ་ལུགས": [
+      "Fix: Scrolling screenshots didn't always work properly"
+    ],
+    "གཞན།": [
       "Optimized system performance",
       "Improved system security and stability"
     ]

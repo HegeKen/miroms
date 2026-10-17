@@ -17,102 +17,326 @@
     "其他优化及调整": [
       "优化 提升系统稳定性",
       "优化 部分场景下的音频体验"
+    ],
+    "其他": [
+      "提高系统的稳定性",
+      "优化系统的流畅度"
     ]
   },
   "logs_en": {
+    "Lock screen": [
+      "New: New fingerprint options",
+      "Fix: Memory usage issues when charging animation was displayed",
+      "Fix: Lock screen notifications disappeared after an ended call"
+    ],
+    "status bar, Notification shade": [
+      "Optimization: Algorithms for displaying incoming call notifications",
+      "Fix: Permission dialog elements overlapped after a notification was long pressed",
+      "Fix: Cleaner animations weren't displayed correctly",
+      "Fix: Notifications weren't always displayed correctly when \"Raise to wake\" was used"
+    ],
     "Other": [
       "Optimized system performance",
       "Improved system security and stability"
     ]
   },
   "logs_zh_tw": {
+    "鎖屏": [
+      "新增: 指紋是否應用於螢幕鎖定開關的功能",
+      "修復: 充電動畫顯示時有概率記憶體異常的問題",
+      "修復: 掛斷電話螢幕亮起後螢幕鎖定畫面訊息全部消失的問題"
+    ],
+    "狀態欄、通知欄": [
+      "優化: 來電的懸浮通知屏蔽邏輯",
+      "修復: 長按通知偶現權限彈窗重疊的異常",
+      "修復: 一鍵清理動畫掉幀的問題",
+      "修復: 抬起螢幕亮起時偶現鎖定螢幕通知閃動的異常"
+    ],
     "其他": [
       "改善系統的穩定性",
       "優化系統的流暢度"
     ]
   },
   "logs_ja": {
+    "ロック画面": [
+      "新機能: 指紋認証の新しいオプション",
+      "修正: 充電アニメーション表示時のメモリ使用量の問題",
+      "修正: 通話終了後にロック画面の通知が消えてしまう問題"
+    ],
     "その他": [
       "システムパフォーマンスの最適化",
       "システムのセキュリティと安定性の向上"
     ]
   },
   "logs_ko": {
+    "잠금화면": [
+      "New: 새 지문 옵션",
+      "수정: 충전 애니메이션 표시 시 메모리에 이상이 발생하는 문제",
+      "수정: 통화 종료 후에 잠금화면 알림이 사라지는 문제"
+    ],
+    "상태 바, 알림 바": [
+      "최적화: 수신 통화 알림 표시를 위한 알고리즘",
+      "수정: 알림을 오래 누르면 발생할 수 있는 권한 다이얼로그 요소가 겹치는 문제",
+      "수정: 클리너 애니메이션이 제대로 표시되지 않는 문제",
+      "수정: \"손목 올려 켜기\" 사용 시에 알림이 제대로 표시되지 않는 문제"
+    ],
     "기타": [
       "시스템 성능 최적화",
       "시스템 보안 및 안정성 개선"
     ]
   },
   "logs_ru": {
+    "Экран блокировки": [
+      "Новое: Новый параметры для отпечатков пальцев",
+      "Исправлено: Использование памяти при отображении анимации зарядки",
+      "Исправлено: После завершения голосового вызова уведомления на экране блокировки могли исчезнуть"
+    ],
+    "строка состояния, шторка уведомлений": [
+      "Оптимизация: Алгоритмы отображения уведомлений о входящих вызовах",
+      "Исправлено: Элементы диалогового окна предоставления разрешений перекрывались после долгого нажатия на уведомление",
+      "Исправлено: Исправлено некорректное отображение анимации \"Очистки\"",
+      "Исправлено: При использовании функции \"Поднять для активации\" уведомления могли отображаться неправильно"
+    ],
     "Другое": [
       "Оптимизация производительности системы",
       "Улучшение безопасности и стабильности системы"
     ]
   },
   "logs_uk": {
+    "Екран блокування": [
+      "Нове: Нові параметри для відбитків пальців",
+      "Виправлено: Використання пам'яті під час відображення анімації заряджання",
+      "Виправлено: Після завершення голосового виклику повідомлення на екрані блокування могли зникнути"
+    ],
     "Інше": [
       "Оптимізація продуктивності системи",
       "Покращення безпеки та стабільності системи"
     ]
   },
   "logs_pl": {
+    "Ekran blokady": [
+      "Nowe: Nowe opcje odcisków palców",
+      "Naprawiono: Problemy z wykorzystaniem pamięci podczas wyświetlania animacji ładowania",
+      "Naprawiono: Powiadomienia na ekranie blokady znikały po zakończonej rozmowie"
+    ],
+    "pasek powiadomień,panel powiadomień": [
+      "Zoptymalizowano: Algorytmy wyświetlania powiadomień o połączeniach przychodzących",
+      "Naprawiono: Elementy okna dialogowego uprawnień nakładały się po długim naciśnięciu powiadomienia",
+      "Naprawiono: Czystsze animacje nie były wyświetlane poprawnie",
+      "Naprawiono: Powiadomienia nie zawsze były wyświetlane poprawnie, gdy użyto opcji „Podnieś, aby się obudzić”"
+    ],
     "Inne": [
       "Zoptymalizowana wydajność systemu",
       "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
+  "logs_de": {
+    "Sperrbildschirm": [
+      "Neu: Neue Fingerabdruck-Optionen",
+      "Behoben: Speichernutzungsprobleme bei der Anzeige der Ladeanimation",
+      "Behoben: Benachrichtigungen auf dem Sperrbildschirm verschwanden nach einem beendeten Anruf"
+    ],
+    "Statusleiste, Benachrichtigungsfeld": [
+      "Optimierung: Algorithmen zur Anzeige von Benachrichtigungen über eingehende Anrufe",
+      "Behoben: Elemente des Berechtigungsdialogs überlappten sich nach langem Drücken auf eine Benachrichtigung",
+      "Behoben: Die Animationen des Reinigers wurden nicht korrekt angezeigt",
+      "Fix: Notifications weren't always displayed correctly when \"Raise to wake\" was used"
+    ],
+    "Sonstiges": [
+      "Systemleistung optimiert",
+      "Systemsicherheit und -stabilität verbessert"
+    ]
+  },
   "logs_fr": {
+    "Écran de verrouillage": [
+      "Nouveau: Nouvelles options d'empreintes digitales",
+      "Réparé: Problèmes d'utilisation de la mémoire lors de l'affichage de l'animation de charge",
+      "Réparé: Les notifications de l'écran de verrouillage ont disparu après un appel terminé"
+    ],
+    "Barre d'état, Panneau de notification": [
+      "Optimisation: Algorithmes d'affichage des notifications d'appels entrants",
+      "Réparé: Les éléments de la boîte de dialogue d'autorisation se chevauchent après un appui long sur une notification",
+      "Réparé: Les animations plus propres ne s'affichaient pas correctement",
+      "Réparé: Les notifications ne s'affichaient pas toujours correctement lorsque \"Lever pour activer\" était utilisé"
+    ],
     "Autre": [
       "Performances système optimisées",
       "Sécurité et stabilité du système améliorées"
     ]
   },
   "logs_it": {
+    "Schermata di blocco": [
+      "Nuovo: Nuove opzioni per le impronte digitali",
+      "Risolto: Problemi di utilizzo della memoria durante la visualizzazione dell'animazione di ricarica",
+      "Risolto: Le notifiche sulla schermata di blocco scomparivano dopo una chiamata terminata"
+    ],
+    "barra di stato, area delle notifiche": [
+      "Ottimizzazione: Algoritmi per la visualizzazione delle notifiche delle chiamate in arrivo",
+      "Risolto: Gli elementi della finestra di dialogo dei permessi si sovrapponevano quando una notifica era premuta a lungo",
+      "Risolto: Le animazioni di Pulitore non venivano visualizzate correttamente",
+      "Risolto: Le notifiche non venivano sempre visualizzate correttamente durante l'utilizzo di \"Solleva per attivare\""
+    ],
     "Altro": [
       "Prestazioni di sistema ottimizzate",
       "Maggiore sicurezza e stabilità di sistema"
     ]
   },
   "logs_es": {
+    "Pantalla de bloqueo": [
+      "Nuevo: Nuevas opciones de huella dactilar",
+      "Reparado: Problemas de uso de la memoria cuando se mostraba la animación de carga",
+      "Reparado: Las notificaciones de la Pantalla de bloqueo desaparecían después de finalizar una llamada"
+    ],
+    "barra de estado, barra de notificaciones": [
+      "Optimización: Algoritmos para mostrar notificaciones de llamadas entrantes",
+      "Reparado: Los elementos del diálogo de permisos se superponían después de presionar una notificación durante mucho tiempo",
+      "Reparado: Las animaciones del Limpiador no se mostraban correctamente",
+      "Reparado: Las notificaciones no siempre se mostraban correctamente cuando se usaba \"Levantar para activar\""
+    ],
     "Otros": [
       "Rendimiento del sistema optimizado",
       "Estabilidad y seguridad del sistema mejorada"
     ]
   },
   "logs_pt": {
+    "Tela de bloqueio": [
+      "Novo: Novas opções de impressão digital",
+      "Correção: Problema de uso de memória quando a animação de carregamento era exibida",
+      "Correção: As notificações na Tela de bloqueio desaparecia após encerrar uma chamada"
+    ],
+    "Barra de status e Área de notificações": [
+      "Otimização: Algoritmo para exibição de notificações de chamada recebida",
+      "Correção: Elementos da caixa de diálogo de permissões se sobrepunham quando uma notificação era pressionada longamente",
+      "Correção: As animações da Limpeza não eram exibidas corretamente",
+      "Correção: As notificações não eram exibidas corretamente quando o \"Levantar para ligar a tela\" era usado"
+    ],
     "Outros": [
       "Desempenho do sistema aprimorado",
       "Segurança e estabilidade do sistema aprimoradas"
     ]
   },
   "logs_tr": {
+    "Kilit ekranı": [
+      "Yeni: Yeni parmak izi seçenekleri",
+      "Onarım: Şarj animasyonu görüntülendiğinde bellek kullanımı sorunları",
+      "Onarım: Biten bir aramanın ardından Kilit ekranı bildirimleri kayboldu"
+    ],
+    "durum çubuğu, Bildirim çubuğu": [
+      "Optimizasyon: Gelen arama bildirimlerini görüntülemek için algoritmalar",
+      "Onarım: Bir bildirime uzun süre basıldıktan sonra İzinler diyaloğu ögeleri üst üste bindi",
+      "Onarım: Temizleyici animasyonları doğru bir şekilde görüntülenmedi",
+      "Onarım: \"Uyandırmak için kaldır\" kullanıldığında bildirimler hiçbir zaman düzgün bir şekilde görüntülenmedi"
+    ],
     "Diğer": [
       "Sistem performansı optimize edildi",
       "Sistem güvenliği ve kararlılığı geliştirildi"
     ]
   },
+  "logs_id": {
+    "Layar kunci": [
+      "Baru: Pilihan penggunaan sidik jari baru",
+      "Perbaikan: Masalah penggunaan memori saat animasi pengisian daya ditampilkan",
+      "Perbaikan: Notifikasi Layar kunci menghilang setelah panggilan berakhir"
+    ],
+    "bar status, layar notifikasi": [
+      "Pengoptimalan: Algoritma untuk menampilkan notifikasi panggilan masuk",
+      "Perbaikan: Elemen dialog perizinan tumpang tindih setelah notifikasi ditekan lama",
+      "Perbaikan: Animasi fitur Pembersih tidak ditampilkan dengan benar",
+      "Perbaikan: Notifikasi tidak selalu ditampilkan dengan benar saat \"Angkat untuk bangunkan\" digunakan"
+    ],
+    "Lainnya": [
+      "Performa sistem dioptimalkan",
+      "Keamanan dan stabilitas sistem ditingkatkan"
+    ]
+  },
   "logs_vi": {
+    "Màn hình khóa": [
+      "Mới: Tùy chọn vân tay mới",
+      "Sửa: Vấn đề sử dụng bộ nhớ khi hoạt ảnh được hiển thị",
+      "Sửa: Thông báo Màn hình khóa biến mất sao khi kết thúc cuộc gọi"
+    ],
     "Khác": [
       "Tối ưu hiệu suất hệ thống",
       "Cải thiện tính ổn định và bảo mật hệ thống"
     ]
   },
   "logs_th": {
+    "ล็อคหน้าจอ": [
+      "ใหม่: ตัวเลือกลายนิ้วมือใหม่",
+      "แก้ไข: ปัญหาการใช้หน่วยความจำเมื่อแสดงภาพเคลื่อนไหวการชาร์จ",
+      "แก้ไข: การแจ้งเตือนหน้าจอล็อกหายไปหลังจากวางสาย"
+    ],
     "อื่นๆ": [
       "เพิ่มประสิทธิภาพของระบบ",
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
     ]
   },
   "logs_ar": {
+    "شاشة القفل": [
+      "الجديد: خيارات جديدة لبصمات الأصابع",
+      "الإصلاح: مشاكل استخدام الذاكرة عند عرض الرسوم المتحركة للشحن",
+      "الإصلاح: مشكلة اختفاء إشعارات شاشة القفل بعد انهاء المكالمة"
+    ],
+    "وشريط الإشعارات، ومركز الإشعارات": [
+      "التحسين: خوارزمية لعرض إشعارات المكالمات الواردة",
+      "الإصلاح: مشكلة تداخل عناصر مربع الإذن بعد الضغط لفترة طويلة على الإشعار",
+      "الإصلاح: مشكلة عدم ظهور الرسوم المتحركة للمنظف بشكل صحيح",
+      "الإصلاح: مشكلة عدم عرض الإشعارات بشكل صحيح عند استخدام ميزة \"رفع الجهاز لإيقاظه\""
+    ],
     "أخرى": [
       "تحسين أداء النظام",
       "تحسين أمن واستقرار النظام"
     ]
   },
   "logs_in": {
+    "लॉक स्क्रीन": [
+      "नया फिंगरप्रिंट के नए विकल्प",
+      "ठीक करें चार्ज होने का संकेत देने वाले एनिमेशन दिखाए जाते समय मेमोरी उपयोग से जुड़ी समस्याएं",
+      "ठीक करें कॉल समाप्त होने के बाद लॉक स्क्रीन सूचनाएं नहीं दिख रही थी"
+    ],
+    "स्टेटस बार, सूचना शेड": [
+      "ऑप्टिमाइज़ेशन इनकमिंग कॉल सूचनाएं दिखाने के लिए एल्गोरिदम",
+      "ठीक करें सूचना को देर तक दबाए जाने के बाद अनुमति डायलॉग एलिमेन्ट ओवरलैप हो रहे थे",
+      "ठीक करें क्लीनर एनिमेशन सही ढंग से नहीं दिख रहे थे",
+      "ठीक करें \"जगाने के लिए उठाएं\" का उपयोग किए जाने पर सूचनाएं सही ढंग से नहीं दिख रहीं थीं"
+    ],
     "अन्य": [
       "सिस्टम परफ़ॉर्मेंस ऑप्टिमाइज़ किया गया है",
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
+    ]
+  },
+  "logs_ug": {
+    "Lock screen": [
+      "New: New fingerprint options",
+      "Fix: Memory usage issues when charging animation was displayed",
+      "Fix: Lock screen notifications disappeared after an ended call"
+    ],
+    "Status bar, Notification shade": [
+      "Optimization: Algorithms for displaying incoming call notifications",
+      "Fix: Permission dialog elements overlapped after a notification was long pressed",
+      "Fix: Cleaner animations weren't displayed correctly",
+      "Fix: Notifications weren't always displayed correctly when \"Raise to wake\" was used"
+    ],
+    "باشقىلىرى": [
+      "سىستېمىنىڭ مۇقىملىقىنى ئاشۇرۇش",
+      "سىستېما راۋانلىقىنى ئەلالاشتۇرۇش"
+    ]
+  },
+  "logs_bo": {
+    "Lock screen": [
+      "New: New fingerprint options",
+      "Fix: Memory usage issues when charging animation was displayed",
+      "Fix: Lock screen notifications disappeared after an ended call"
+    ],
+    "Status bar, Notification shade": [
+      "Optimization: Algorithms for displaying incoming call notifications",
+      "Fix: Permission dialog elements overlapped after a notification was long pressed",
+      "Fix: Cleaner animations weren't displayed correctly",
+      "Fix: Notifications weren't always displayed correctly when \"Raise to wake\" was used"
+    ],
+    "གཞན།": [
+      "Optimized system performance",
+      "Improved system security and stability"
     ]
   }
 }

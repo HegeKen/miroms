@@ -88,8 +88,9 @@ class ChangelogManager:
 								if v and not (isinstance(v, str) and v.isspace())
 						]
 				elif isinstance(d, str):
-						return d.replace('\b', '').replace('\t', '').replace('%', '$$')\
-										 .replace('"', '^').replace("'", "^").replace('\n', '')
+						# 日志已按语言列存储，不再把 " / ' 转义成 ^，也不再处理 %；
+						# 只移除会破坏文本的控制字符。
+						return d.replace('\b', '').replace('\t', '').replace('\n', '')
 				return d
 
 		@staticmethod

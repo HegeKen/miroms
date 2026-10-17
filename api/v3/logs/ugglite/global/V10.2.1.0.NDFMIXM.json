@@ -1,21 +1,55 @@
 {
   "logs_zh": {
     "录音机": [
+      "修复 暂停录音后无法及时更新到状态栏的问题",
       "修复 暂停录音后无法及时更新到状态栏的问题"
+    ],
+    "系统": [
+      "修复 更新Android安全补丁"
+    ],
+    "电话": [
+      "修复 视讯模式下，来电通之5秒消失的问题",
+      "修复 视频通话下功能区“切换摄像头”可能显示不完整的问题",
+      "修复 电话会议时无法发送短信"
+    ],
+    "锁屏、状态栏、通知栏": [
+      "修复 返回通话和时间重叠",
+      "修复 通知无法关闭悬浮",
+      "修复 通话锁屏界面无法指纹解锁",
+      "修复 耳机图标偶尔不显示的问题",
+      "修复 长截屏无法下拉到底"
+    ],
+    "設定": [
+      "修复 勿扰模式下未接来电通知不震动"
     ]
   },
   "logs_en": {
     "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused",
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
+    ],
+    "System": [
+      "Fix: Updated Android Security Patch"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Fix: The button that returns you to an ongoing call overlapped with time",
+      "Fix: Couldn't restrict floating notifications",
+      "Fix: Couldn't use fingerprint to unlock the device when it was locked during a call",
+      "Fix: The earphone icon sometimes disappeared",
+      "Fix: Scrolling screenshots didn't always work properly"
     ]
   },
   "logs_zh_tw": {
+    "錄音機": [
+      "修復 暫停錄音後無法即時更新到狀態欄的問題",
+      "修復 暫停錄音後無法即時更新到狀態欄的問題"
+    ],
     "系統": [
       "修復 更新Android安全性修補程式等級"
     ],
     "電話": [
       "修復 視訊模式下，來電通之5秒消失的問題",
-      "修復 視訊電話下功能區^切換鏡頭^可能顯示不完整的問題",
+      "修復 視訊電話下功能區'切換鏡頭'可能顯示不完整的問題",
       "修復 電話會議時無法發送簡訊"
     ],
     "解鎖畫面、狀態欄、通知欄": [
@@ -27,58 +61,61 @@
     ],
     "設定": [
       "修復 勿擾模式下未接來電通知不震動"
-    ],
-    "錄音機": [
-      "修復 暫停錄音後無法即時更新到狀態欄的問題"
     ]
   },
   "logs_ja": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "レコーダー": [
+      "修正: 録音を一時停止した際、通知シェードの録音状態が更新されない問題",
+      "修正: 録音を一時停止した際、通知シェードの録音状態が更新されない問題"
     ],
-    "Phone": [
-      "Fix: Notifications about incoming calls disappeared after 5 seconds during video calls",
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "システム": [
+      "修正: Androidセキュリティパッチを更新"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly"
+    "電話": [
+      "修正: ビデオ通話モードで、着信通知が5秒後に消える問題",
+      "ビデオ通話時の機能エリアの「カメラ切り替え」が不完全に表示される問題を修正しました。",
+      "修正: 電話会議中に SMS を送信できない問題"
     ],
-    "Settings": [
-      "Fix: Notifications about missed calls came without vibration if they weren^t tapped in DND mode"
+    "ロック画面、ステータスバー、通知バー": [
+      "修正: 通話中画面に戻るボタンが時刻と重なる問題。",
+      "修正: フローティング通知をオフにできない問題",
+      "修正: 通話中にロックされた際、指紋認証でデバイスのロックを解除できない問題",
+      "修正: イヤホンアイコンが時々表示されない問題",
+      "長いスクリーンショットで最後までスクロールできない問題を修正"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "設定": [
+      "修正：サイレントモードで不在着信の通知が振動しない問題"
     ]
   },
   "logs_ko": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "녹음기": [
+      "수정: 녹음을 일시중지했을 때 알림 창의 녹음 상태가 업데이트되지 않던 문제",
+      "수정: 녹음을 일시중지했을 때 알림 창의 녹음 상태가 업데이트되지 않던 문제"
     ],
-    "Phone": [
-      "Fix: Notifications about incoming calls disappeared after 5 seconds during video calls",
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "시스템": [
+      "수정: Android 보안 패치 업데이트"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly"
+    "전화": [
+      "수정: 영상 통화 모드에서 수신 전화 알림이 5초 후 사라지는 문제",
+      "화상 통화 중 기능 영역의 '카메라 전환'이 불완전하게 표시될 수 있는 문제를 수정했습니다.",
+      "수정: 전화 회의 중 SMS를 보낼 수 없는 문제"
     ],
-    "Settings": [
-      "Fix: Notifications about missed calls came without vibration if they weren^t tapped in DND mode"
+    "잠금 화면, 상태 표시줄, 알림 표시줄": [
+      "수정: 진행 중인 통화로 돌아가는 버튼이 시간과 겹치는 문제.",
+      "수정: 플로팅 알림을 끌 수 없는 문제",
+      "수정: 통화 중 잠긴 상태에서 지문으로 기기 잠금을 해제할 수 없는 문제",
+      "수정: 이어폰 아이콘이 간혹 표시되지 않는 문제",
+      "긴 스크린샷에서 끝까지 스크롤되지 않던 문제를 수정"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "설정": [
+      "수정: 방해 금지 모드에서 부재중 전화 알림이 진동하지 않는 문제"
     ]
   },
   "logs_ru": {
+    "Диктофон": [
+      "Fix: Факт остановки записи не отображался в строке состояния вовремя",
+      "Fix: Факт остановки записи не отображался в строке состояния вовремя"
+    ],
     "Система": [
       "Fix: Обновление патча безопасности Android"
     ],
@@ -88,362 +125,374 @@
       "Fix: Не удавалось отправить SMS во время конференц-вызова"
     ],
     "Экран блокировки, строка состояния, шторка уведомлений": [
-      "Fix: Кнопка ^Назад^ перекрывала время",
+      "Fix: Кнопка \"Назад\" перекрывала время",
       "Fix: Не удавалось ограничить всплывающие уведомления",
       "Fix: Не удавалось разблокировать устройство отпечатком пальца после блокировки во время разговора",
       "Fix: Значок наушников появлялся не всегда",
       "Fix: Длинные скриншоты работали некорректно"
     ],
     "Настройки": [
-      "Fix: В режиме ^Не беспокоить^ уведомления о пропущенных вызовах приходили без вибрации, если они не были нажаты"
-    ],
-    "Диктофон": [
-      "Fix: Факт остановки записи не отображался в строке состояния вовремя"
+      "Fix: В режиме \"Не беспокоить\" уведомления о пропущенных вызовах приходили без вибрации, если они не были нажаты"
     ]
   },
   "logs_uk": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Диктофон": [
+      "Виправлено: стан запису не оновлювався в панелі сповіщень під час паузи запису",
+      "Виправлено: стан запису не оновлювався в панелі сповіщень під час паузи запису"
     ],
-    "Phone": [
-      "Fix: Notifications about incoming calls disappeared after 5 seconds during video calls",
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Система": [
+      "Виправлення: оновлено патч безпеки Android"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly"
+    "Телефон": [
+      "Виправлено: у режимі відеовиклику сповіщення про вхідний виклик зникає через 5 секунд.",
+      "Виправлено: Кнопка «Перемкнути камеру» в області функцій під час відеовикликів могла відображатися неповністю.",
+      "Виправлено: не вдавалося надіслати SMS під час телефонних конференцій"
     ],
-    "Settings": [
-      "Fix: Notifications about missed calls came without vibration if they weren^t tapped in DND mode"
+    "Екран блокування, рядок стану, рядок сповіщень": [
+      "Виправлено: кнопка повернення до поточного виклику перекривала час.",
+      "Виправлено: не вдавалося вимкнути плаваючі сповіщення",
+      "Виправлено: Неможливо було використати відбиток пальця для розблокування пристрою, коли він був заблокований під час виклику",
+      "Виправлено: Іноді не відображалася піктограма навушників",
+      "Виправлено: прокручуваний знімок екрана не прокручувався до кінця"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Налаштування": [
+      "Виправлено: сповіщення про пропущений виклик не вібрує в режимі «Не турбувати»"
     ]
   },
   "logs_pl": {
+    "Rejestrator": [
+      "Poprawka: stan nagrywania nie był aktualizowany na pasku powiadomień po wstrzymaniu nagrywania",
+      "Poprawka: stan nagrywania nie był aktualizowany na pasku powiadomień po wstrzymaniu nagrywania"
+    ],
     "System": [
-      "Fix: Updated Android Security Patch"
+      "Poprawka: zaktualizowano poprawkę bezpieczeństwa Android"
     ],
-    "Phone": [
-      "Fix: Notifications about incoming calls disappeared after 5 seconds during video calls",
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Telefon": [
+      "Poprawka: w trybie połączenia wideo powiadomienie o połączeniu przychodzącym znika po 5 sekundach.",
+      "Poprawka: Przycisk „Przełącz kamerę” w obszarze funkcji podczas rozmów wideo mógł być wyświetlany niekompletnie.",
+      "Poprawka: Nie można było wysyłać SMS-ów podczas konferencji telefonicznych"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly"
+    "Ekran blokady, pasek stanu, pasek powiadomień": [
+      "Naprawiono: przycisk powrotu do trwającego połączenia nachodził na godzinę.",
+      "Naprawiono: nie można było wyłączyć powiadomień pływających",
+      "Poprawka: Nie można było użyć odcisku palca do odblokowania urządzenia, gdy było zablokowane podczas połączenia",
+      "Poprawka: Ikona słuchawek czasami nie była wyświetlana",
+      "Naprawiono: przewijany zrzut ekranu nie pozwalał przewinąć do końca"
     ],
-    "Settings": [
-      "Fix: Notifications about missed calls came without vibration if they weren^t tapped in DND mode"
-    ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Ustawienia": [
+      "Poprawiono: powiadomienie o nieodebranym połączeniu nie wibruje w trybie Nie przeszkadzać"
     ]
   },
   "logs_de": {
+    "Rekorder": [
+      "Behoben: Der Aufnahmestatus wurde in der Benachrichtigungsleiste nicht aktualisiert, wenn eine Aufnahme pausiert wurde",
+      "Behoben: Der Aufnahmestatus wurde in der Benachrichtigungsleiste nicht aktualisiert, wenn eine Aufnahme pausiert wurde"
+    ],
     "System": [
-      "Fix: Updated Android Security Patch"
+      "Behoben: Android-Sicherheitspatch aktualisiert"
     ],
-    "Phone": [
-      "Fix: Notifications about incoming calls disappeared after 5 seconds during video calls",
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Telefon": [
+      "Behebt: Im Videoanrufmodus verschwindet die eingehende Anrufbenachrichtigung nach 5 Sekunden.",
+      "Behebung: Die Schaltfläche „Kamera wechseln“ im Funktionsbereich bei Videoanrufen wurde möglicherweise unvollständig angezeigt.",
+      "Behoben: Während Telefonkonferenzen konnten keine SMS gesendet werden"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly"
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
+      "Behoben: Die Schaltfläche zum Zurückkehren zu einem laufenden Anruf überlappte sich mit der Uhrzeit.",
+      "Behoben: Floating-Benachrichtigungen ließen sich nicht deaktivieren",
+      "Behoben: Fingerabdruck-Entsperrung bei gesperrtem Gerät während eines Anrufs nicht möglich",
+      "Behoben: Das Kopfhörer-Symbol wurde manchmal nicht angezeigt",
+      "Behoben: Scroll-Screenshot konnte nicht bis zum Ende gescrollt werden"
     ],
-    "Settings": [
-      "Fix: Notifications about missed calls came without vibration if they weren^t tapped in DND mode"
-    ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Einstellungen": [
+      "Behoben: Benachrichtigung über verpasste Anrufe vibriert im Nicht-stören-Modus nicht"
     ]
   },
   "logs_fr": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Enregistreur": [
+      "Correction : l’état d’enregistrement n’était pas mis à jour dans la barre de notifications lors d’une pause",
+      "Correction : l’état d’enregistrement n’était pas mis à jour dans la barre de notifications lors d’une pause"
     ],
-    "Phone": [
-      "Fix: Notifications about incoming calls disappeared after 5 seconds during video calls",
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Système": [
+      "Correction : Correctif de sécurité Android mis à jour"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly"
+    "Téléphone": [
+      "Correction : en mode appel vidéo, la notification d'appel entrant disparaît après 5 secondes.",
+      "Correction : Le bouton « Changer de caméra » dans la zone de fonctions lors des appels vidéo pouvait s'afficher de manière incomplète.",
+      "Correction : impossible d’envoyer des SMS pendant les conférences téléphoniques"
     ],
-    "Settings": [
-      "Fix: Notifications about missed calls came without vibration if they weren^t tapped in DND mode"
+    "Écran de verrouillage, barre d’état, barre de notifications": [
+      "Correction : le bouton permettant de revenir à un appel en cours chevauchait l’heure.",
+      "Correction : impossible de désactiver les notifications flottantes",
+      "Correction : Impossible d'utiliser l'empreinte digitale pour déverrouiller l'appareil lorsqu'il était verrouillé pendant un appel",
+      "Correction : L’icône des écouteurs ne s’affichait parfois pas",
+      "Correction : la capture d'écran défilante ne permettait pas d'aller jusqu'en bas"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Paramètres": [
+      "Corrigé : la notification d'appel manqué ne vibre pas en mode Ne pas déranger"
     ]
   },
   "logs_it": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Registratore": [
+      "Correzione: lo stato di registrazione non veniva aggiornato nella barra delle notifiche quando una registrazione veniva messa in pausa",
+      "Correzione: lo stato di registrazione non veniva aggiornato nella barra delle notifiche quando una registrazione veniva messa in pausa"
     ],
-    "Phone": [
-      "Fix: Notifications about incoming calls disappeared after 5 seconds during video calls",
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Sistema": [
+      "Correzione: patch di sicurezza Android aggiornata"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly"
+    "Telefono": [
+      "Corretto: in modalità videochiamata, la notifica di chiamata in arrivo scompare dopo 5 secondi.",
+      "Correzione: il pulsante \"Cambia fotocamera\" nell'area funzioni durante le videochiamate potrebbe essere visualizzato in modo incompleto.",
+      "Correzione: impossibile inviare SMS durante le chiamate conference"
     ],
-    "Settings": [
-      "Fix: Notifications about missed calls came without vibration if they weren^t tapped in DND mode"
+    "Schermata di blocco, barra di stato, barra delle notifiche": [
+      "Corretto: il pulsante per tornare a una chiamata in corso si sovrapponeva all'ora.",
+      "Corretto: impossibile disattivare le notifiche flottanti",
+      "Correzione: Impossibile utilizzare l'impronta digitale per sbloccare il dispositivo quando era bloccato durante una chiamata",
+      "Correzione: L'icona delle cuffie a volte non veniva visualizzata",
+      "Corretto: lo screenshot scorrevole non permetteva di scorrere fino in fondo"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Impostazioni": [
+      "Risolto: la notifica di chiamata persa non vibra in modalità Non disturbare"
     ]
   },
   "logs_es": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Grabadora": [
+      "Corrección: El estado de grabación no se actualizaba en la barra de notificaciones al pausar una grabación",
+      "Corrección: El estado de grabación no se actualizaba en la barra de notificaciones al pausar una grabación"
     ],
-    "Phone": [
-      "Fix: Notifications about incoming calls disappeared after 5 seconds during video calls",
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Sistema": [
+      "Corrección: parche de seguridad de Android actualizado"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly"
+    "Teléfono": [
+      "Corregido: en modo videollamada, la notificación de llamada entrante desaparece a los 5 segundos.",
+      "Corrección: El botón «Cambiar cámara» del área de funciones durante las videollamadas podía mostrarse de forma incompleta.",
+      "Corregido: No se podía enviar SMS durante las conferencias telefónicas"
     ],
-    "Settings": [
-      "Fix: Notifications about missed calls came without vibration if they weren^t tapped in DND mode"
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Corregido: el botón para volver a una llamada en curso se superponía con la hora.",
+      "Corregido: no se podían desactivar las notificaciones flotantes",
+      "Corrección: No se podía usar la huella digital para desbloquear el dispositivo cuando estaba bloqueado durante una llamada",
+      "Corrección: El icono de los auriculares a veces no aparecía",
+      "Corregido: la captura de pantalla desplazable no permitía bajar hasta el final"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Ajustes": [
+      "Corregido: la notificación de llamada perdida no vibra en modo No molestar"
     ]
   },
   "logs_pt": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Gravador": [
+      "Correção: o estado da gravação não era atualizado na barra de notificações ao pausar uma gravação",
+      "Correção: o estado da gravação não era atualizado na barra de notificações ao pausar uma gravação"
     ],
-    "Phone": [
-      "Fix: Notifications about incoming calls disappeared after 5 seconds during video calls",
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Sistema": [
+      "Correção: patch de segurança do Android atualizado"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly"
+    "Telefone": [
+      "Corrigido: no modo videochamada, a notificação de chamada recebida desaparece após 5 segundos.",
+      "Correção: O botão \"Alternar câmera\" na área de funções durante chamadas de vídeo podia ser exibido de forma incompleta.",
+      "Correção: não era possível enviar SMS durante chamadas em conferência"
     ],
-    "Settings": [
-      "Fix: Notifications about missed calls came without vibration if they weren^t tapped in DND mode"
+    "Tela de bloqueio, barra de status, barra de notificações": [
+      "Corrigido: o botão para voltar a uma chamada em andamento sobrepunha-se à hora.",
+      "Corrigido: não era possível desativar notificações flutuantes",
+      "Correção: Não era possível usar a impressão digital para desbloquear o dispositivo quando estava bloqueado durante uma chamada",
+      "Correção: O ícone do fone de ouvido às vezes não aparecia",
+      "Corrigido: a captura de tela rolável não permitia rolar até o fim"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Configurações": [
+      "Corrigido: a notificação de chamada perdida não vibra no modo Não perturbe"
     ]
   },
   "logs_tr": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Kayıt Cihazı": [
+      "Düzeltme: Kayıt duraklatıldığında kayıt durumu bildirim çubuğunda güncellenmiyordu",
+      "Düzeltme: Kayıt duraklatıldığında kayıt durumu bildirim çubuğunda güncellenmiyordu"
     ],
-    "Phone": [
-      "Fix: Notifications about incoming calls disappeared after 5 seconds during video calls",
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Sistem": [
+      "Düzeltme: Android güvenlik yaması güncellendi"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly"
+    "Telefon": [
+      "Düzeltme: Görüntülü arama modunda gelen arama bildirimi 5 saniye sonra kayboluyor.",
+      "Düzeltme: Görüntülü aramalar sırasında işlev alanındaki \"Kamerayı değiştir\" düğmesi eksik görüntülenebiliyordu.",
+      "Düzeltme: Telefon konferansları sırasında SMS gönderilemiyordu"
     ],
-    "Settings": [
-      "Fix: Notifications about missed calls came without vibration if they weren^t tapped in DND mode"
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Düzeltme: Devam eden aramaya dönme düğmesi saatle çakışıyordu.",
+      "Düzeltme: Yüzen bildirimler kapatılamıyordu",
+      "Düzeltme: Arama sırasında kilitliyken cihazın parmak iziyle kilidinin açılamaması sorunu giderildi",
+      "Düzeltme: Kulaklık simgesi bazen görünmüyordu",
+      "Düzeltme: kaydırmalı ekran görüntüsü sona kadar kaydırılamıyordu"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Ayarlar": [
+      "Düzeltme: Rahatsız Etmeyin modunda cevapsız arama bildirimi titremiyor"
     ]
   },
   "logs_id": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Perekam": [
+      "Perbaikan: Status perekaman tidak diperbarui di bilah notifikasi saat perekaman dijeda",
+      "Perbaikan: Status perekaman tidak diperbarui di bilah notifikasi saat perekaman dijeda"
     ],
-    "Phone": [
-      "Fix: Notifications about incoming calls disappeared after 5 seconds during video calls",
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Sistem": [
+      "Perbaikan: Patch keamanan Android diperbarui"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly"
+    "Telepon": [
+      "Perbaikan: dalam mode panggilan video, notifikasi panggilan masuk hilang setelah 5 detik.",
+      "Perbaikan: Tombol “Ganti kamera” di area fungsi saat panggilan video mungkin ditampilkan tidak lengkap.",
+      "Perbaikan: Tidak dapat mengirim SMS selama panggilan konferensi"
     ],
-    "Settings": [
-      "Fix: Notifications about missed calls came without vibration if they weren^t tapped in DND mode"
+    "Layar kunci, bilah status, bilah notifikasi": [
+      "Diperbaiki: tombol untuk kembali ke panggilan berlangsung tumpang tindih dengan waktu.",
+      "Perbaikan: notifikasi mengambang tidak dapat dimatikan",
+      "Perbaikan: Tidak dapat menggunakan sidik jari untuk membuka kunci perangkat saat terkunci selama panggilan",
+      "Perbaikan: Ikon earphone terkadang tidak muncul",
+      "Perbaikan: tangkapan layar bergulir tidak dapat digulir hingga bawah"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Pengaturan": [
+      "Perbaikan: notifikasi panggilan tak terjawab tidak bergetar dalam mode Jangan Ganggu"
     ]
   },
   "logs_vi": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "Máy ghi âm": [
+      "Đã sửa: Trạng thái ghi âm không được cập nhật kịp thời trên thanh thông báo khi tạm dừng ghi âm",
+      "Đã sửa: Trạng thái ghi âm không được cập nhật kịp thời trên thanh thông báo khi tạm dừng ghi âm"
     ],
-    "Phone": [
-      "Fix: Notifications about incoming calls disappeared after 5 seconds during video calls",
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "Hệ thống": [
+      "Sửa lỗi: Đã cập nhật bản vá bảo mật Android"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly"
+    "Điện thoại": [
+      "Đã sửa: ở chế độ gọi video, thông báo cuộc gọi đến biến mất sau 5 giây.",
+      "Sửa lỗi: Nút \"Chuyển camera\" trong vùng chức năng khi gọi video có thể hiển thị không đầy đủ.",
+      "Sửa lỗi: Không thể gửi SMS trong cuộc gọi hội nghị"
     ],
-    "Settings": [
-      "Fix: Notifications about missed calls came without vibration if they weren^t tapped in DND mode"
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Đã sửa: nút quay lại cuộc gọi đang diễn ra bị chồng lên thời gian.",
+      "Đã sửa: không thể tắt thông báo nổi",
+      "Sửa lỗi: Không thể sử dụng vân tay để mở khóa thiết bị khi bị khóa trong cuộc gọi",
+      "Sửa lỗi: Biểu tượng tai nghe đôi khi không hiển thị",
+      "Đã sửa: ảnh chụp màn hình cuộn không thể cuộn xuống cuối"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "Cài đặt": [
+      "Đã sửa: thông báo cuộc gọi nhỡ không rung ở chế độ Không làm phiền"
     ]
   },
   "logs_th": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "เครื่องบันทึกเสียง": [
+      "แก้ไข: สถานะการบันทึกเสียงไม่ได้รับการอัปเดตในแถบการแจ้งเตือนเมื่อหยุดการบันทึกชั่วคราว",
+      "แก้ไข: สถานะการบันทึกเสียงไม่ได้รับการอัปเดตในแถบการแจ้งเตือนเมื่อหยุดการบันทึกชั่วคราว"
     ],
-    "Phone": [
-      "Fix: Notifications about incoming calls disappeared after 5 seconds during video calls",
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "ระบบ": [
+      "แก้ไข: อัปเดตแพตช์ความปลอดภัย Android แล้ว"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly"
+    "โทรศัพท์": [
+      "แก้ไข: ในโหมดวิดีโอคอล การแจ้งเตือนสายเรียกเข้าหายไปหลังจาก 5 วินาที",
+      "แก้ไข: ปุ่ม \"สลับกล้อง\" ในพื้นที่ฟังก์ชันระหว่างการสนทนาทางวิดีโออาจแสดงไม่สมบูรณ์",
+      "แก้ไข: ไม่สามารถส่ง SMS ระหว่างการประชุมทางโทรศัพท์ได้"
     ],
-    "Settings": [
-      "Fix: Notifications about missed calls came without vibration if they weren^t tapped in DND mode"
+    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
+      "แก้ไข: ปุ่มกลับไปยังสายที่กำลังดำเนินอยู่ทับซ้อนกับเวลา",
+      "แก้ไข: ไม่สามารถปิดการแจ้งเตือนแบบลอยได้",
+      "แก้ไข: ไม่สามารถใช้ลายนิ้วมือปลดล็อกอุปกรณ์เมื่อถูกล็อกระหว่างการโทร",
+      "แก้ไข: ไอคอนหูฟังบางครั้งไม่แสดง",
+      "แก้ไข: ภาพหน้าจอแบบเลื่อนไม่สามารถเลื่อนลงไปจนสุดได้"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "การตั้งค่า": [
+      "แก้ไข: การแจ้งเตือนสายที่ไม่ได้รับไม่สั่นในโหมดห้ามรบกวน"
     ]
   },
   "logs_ar": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "مسجل": [
+      "إصلاح: لم يتم تحديث حالة التسجيل في شريط الإشعارات عند إيقاف التسجيل مؤقتًا",
+      "إصلاح: لم يتم تحديث حالة التسجيل في شريط الإشعارات عند إيقاف التسجيل مؤقتًا"
     ],
-    "Phone": [
-      "Fix: Notifications about incoming calls disappeared after 5 seconds during video calls",
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "النظام": [
+      "إصلاح: تحديث تصحيح أمان Android"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly"
+    "هاتف": [
+      "إصلاح: في وضع مكالمة الفيديو، يختفي إشعار المكالمة الواردة بعد 5 ثوانٍ.",
+      "إصلاح: قد يظهر زر \"تبديل الكاميرا\" في منطقة الوظائف أثناء مكالمات الفيديو بشكل غير مكتمل.",
+      "إصلاح: تعذّر إرسال SMS أثناء المكالمات الجماعية"
     ],
-    "Settings": [
-      "Fix: Notifications about missed calls came without vibration if they weren^t tapped in DND mode"
+    "شاشة القفل، شريط الحالة، شريط الإشعارات": [
+      "إصلاح: زر العودة إلى مكالمة جارية يتداخل مع الوقت.",
+      "إصلاح: تعذّر إيقاف الإشعارات العائمة",
+      "إصلاح: تعذر استخدام بصمة الإصبع لفتح قفل الجهاز عندما كان مقفلاً أثناء مكالمة",
+      "إصلاح: أيقونة سماعة الأذن لا تظهر أحيانًا",
+      "إصلاح: تعذّر التمرير إلى الأسفل في لقطة الشاشة الطويلة"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "الإعدادات": [
+      "إصلاح: إشعار المكالمات الفائتة لا يهتز في وضع عدم الإزعاج"
     ]
   },
   "logs_in": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "रिकॉर्डर": [
+      "समस्या ठीक की गई: रिकॉर्डिंग पॉज़ करने पर नोटिफ़िकेशन शेड में स्थिति तुरंत अपडेट नहीं होती थी",
+      "समस्या ठीक की गई: रिकॉर्डिंग पॉज़ करने पर नोटिफ़िकेशन शेड में स्थिति तुरंत अपडेट नहीं होती थी"
     ],
-    "Phone": [
-      "Fix: Notifications about incoming calls disappeared after 5 seconds during video calls",
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "सिस्टम": [
+      "सुधार: Android सुरक्षा पैच अपडेट किया गया"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly"
+    "फ़ोन": [
+      "ठीक किया गया: वीडियो कॉल मोड में, इनकमिंग कॉल सूचना 5 सेकंड बाद गायब हो जाती है।",
+      "वीडियो कॉल के दौरान फ़ंक्शन क्षेत्र में “कैमरा बदलें” के अधूरा दिखाए जाने की समस्या ठीक की गई",
+      "ठीक किया गया: कॉन्फ़्रेंस कॉल के दौरान SMS भेजने में असमर्थ"
     ],
-    "Settings": [
-      "Fix: Notifications about missed calls came without vibration if they weren^t tapped in DND mode"
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
+      "ठीक किया गया: चालू कॉल पर वापस जाने वाला बटन समय के साथ ओवरलैप हो रहा था।",
+      "ठीक किया गया: फ़्लोटिंग सूचनाएँ बंद नहीं की जा सकती थीं",
+      "ठीक करें: कॉल के दौरान लॉक होने पर फिंगरप्रिंट से डिवाइस अनलॉक नहीं हो सका",
+      "ठीक किया गया: ईयरफ़ोन आइकन कभी-कभी नहीं दिखाई देता था",
+      "ठीक किया गया: लंबे स्क्रीनशॉट में नीचे तक स्क्रॉल नहीं हो पाता था"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "सेटिंग्स": [
+      "ठीक किया गया: परेशान न करें मोड में छूटी कॉल की सूचना कंपन नहीं करती"
     ]
   },
   "logs_ug": {
-    "System": [
-      "Fix: Updated Android Security Patch"
+    "ئاۋاز ئالغۇ": [
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused",
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
     ],
-    "Phone": [
-      "Fix: Notifications about incoming calls disappeared after 5 seconds during video calls",
-      "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+    "سىستېما": [
+      "تۈزىتىش: Android بىخەتەرلىك يامىقى يېڭىلاندى"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
-      "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly"
+    "تېلېفون": [
+      "سىن ھالىتىدە تېلېفون كەلگەنلىك ئۇقتۇرۇشىنىڭ 5 سېكۇنتتىن كېيىن يوقىلىش مەسىلىسى تۈزىتىلدى.",
+      "سىنلىق سۆھبەت جەريانىدا ئىقتىدار رايونىدىكى «كامېرا ئالماشتۇرۇش» تولۇق كۆرسىتىلمەسلىك مەسىلىسى تۈزىتىلدى",
+      "تېلېفون يىغىنىدا قىسقا ئۇچۇر ئەۋەتەلمەسلىك مەسىلىسى تۈزىتىلدى."
     ],
-    "Settings": [
-      "Fix: Notifications about missed calls came without vibration if they weren^t tapped in DND mode"
+    "قۇلۇپ ئېكرانى، ھالەت بالدىقى، ئۇقتۇرۇش بالدىقى": [
+      "قوڭغۇراققا قايتىش كۇنۇپكىسى بىلەن ۋاقىتنىڭ ئۈستى-ئۈستىگە چۈشۈشى تۈزىتىلدى",
+      "Fix: Couldn't restrict floating notifications",
+      "قوڭغۇراق جەريانىدا قۇلۇپ ئېكرانىدا بارماق ئىزى بىلەن قۇلۇپ ئېچىلمايدىغان مەسىلە تۈزىتىلدى.",
+      "ئاڭشىغۇچ سىنبەلگىسىنىڭ ئاندا-ساندا كۆرۈنمەسلىك مەسىلىسى تۈزىتىلدى.",
+      "Fix: Scrolling screenshots didn't always work properly"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "تەڭشەكلەر": [
+      "Fix: Notifications about missed calls came without vibration if they weren't tapped in DND mode"
     ]
   },
   "logs_bo": {
-    "System": [
+    "སྒྲ་འཇུག་ཆས": [
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused",
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
+    ],
+    "མ་ལག": [
       "Fix: Updated Android Security Patch"
     ],
-    "Phone": [
+    "ཁ་པར": [
       "Fix: Notifications about incoming calls disappeared after 5 seconds during video calls",
       "Fix: UI elements for switching between cameras during video calls were displayed incorrectly",
-      "Fix: Couldn^t sent SMS during conference calls"
+      "Fix: Couldn't sent SMS during conference calls"
     ],
-    "Lockscreen, Status Bar, Notification Bar": [
+    "Lockscreen, status bar, Notification shade": [
       "Fix: The button that returns you to an ongoing call overlapped with time",
-      "Fix: Couldn^t restrict floating notifications",
-      "Fix: Couldn^t use fingerprint to unlock the device when it was locked during a call",
+      "Fix: Couldn't restrict floating notifications",
+      "Fix: Couldn't use fingerprint to unlock the device when it was locked during a call",
       "Fix: The earphone icon sometimes disappeared",
-      "Fix: Scrolling screenshots didn^t always work properly"
+      "Fix: Scrolling screenshots didn't always work properly"
     ],
-    "Settings": [
-      "Fix: Notifications about missed calls came without vibration if they weren^t tapped in DND mode"
-    ],
-    "Recorder": [
-      "Fix: Recording status wasn^t updated in the Notification shade when a recording was paused"
+    "སྒྲིག་བཀོད": [
+      "Fix: Notifications about missed calls came without vibration if they weren't tapped in DND mode"
     ]
   }
 }

@@ -2,7 +2,10 @@
   "logs_zh": {
     "系统": [
       "新增 支持一键清空剪贴板",
-      "优化 蓝牙状态栏图标显示逻辑"
+      "优化 蓝牙状态栏图标显示逻辑",
+      "新增 手电筒光亮调节页",
+      "新增 支持闪光灯亮度调节",
+      "新增 手电筒使用的焦点通知"
     ],
     "自由窗口": [
       "新增 通话工具箱视频美颜入口提示"
@@ -15,17 +18,22 @@
       "新增 支持闪光灯亮度调节",
       "新增 手电筒使用的焦点通知"
     ],
-    "Xiaomi HyperConnect": [
+    "超级小爱": [
       "新增 支持不同小米账号设备互传文件",
-      "优化 融合设备中心卡片展开动画"
+      "优化 融合设备中心卡片展开动画",
+      "新增 支持不同小米账号设备互传文件"
     ],
     "相册": [
+      "优化 相册栏目展示样式",
+      "优化 相册支持长按删除和屏蔽",
+      "优化 时间与地点关键词的搜索效果",
       "优化 相册栏目展示样式",
       "优化 相册支持长按删除和屏蔽",
       "优化 时间与地点关键词的搜索效果"
     ],
     "最近任务": [
-      "修复 部分情况下最近任务清理功能无响应的问题"
+      "修复 部分情况下最近任务清理功能无响应的问题",
+      "新增 关闭桌面搜索框后支持 4 × 6 布局选项"
     ],
     "更多功能与优化": [
       "优化 小米画报在锁屏负一屏的壁纸设置流程"
@@ -49,15 +57,20 @@
     ],
     "Xiaomi HyperConnect": [
       "New: Support for file transfers between different devices using different Xiaomi Accounts",
-      "Optimization: Animations for expanding cards in Xiaomi Smart Hub"
+      "Optimization: Animations for expanding cards in Xiaomi Smart Hub",
+      "New: Support for file transfers between different devices using different Xiaomi Accounts"
     ],
     "Gallery": [
+      "Optimization: Display layouts for Gallery items",
+      "Optimization: Gallery now supports deleting and hiding items via long pressing",
+      "Optimization: Search results for time and location keywords",
       "Optimization: Display layouts for Gallery items",
       "Optimization: Gallery now supports deleting and hiding items via long pressing",
       "Optimization: Search results for time and location keywords"
     ],
     "Recents": [
-      "Fix: Recents couldn^t be cleared in some cases"
+      "Fix: Recents couldn't be cleared in some cases",
+      "New: After turning off the Home screen search bar, a 4×6 layout option becomes available"
     ],
     "More features and improvements": [
       "Optimization: Swipe right on your Lock screen when Wallpaper Carousel is on to find revamped wallpaper settings"
@@ -81,326 +94,508 @@
     ],
     "Xiaomi HyperConnect": [
       "新增: 支援不同小米帳號裝置互傳檔案",
-      "優化: 融合裝置中心卡片展開動畫"
+      "優化: 融合裝置中心卡片展開動畫",
+      "新增: 支援不同小米帳號裝置互傳檔案"
     ],
     "相簿": [
+      "優化: 相簿欄顯示樣式",
+      "優化: 相簿支援長按刪除和隱藏",
+      "優化: 時間與地點關鍵字的搜尋效果",
       "優化: 相簿欄顯示樣式",
       "優化: 相簿支援長按刪除和隱藏",
       "優化: 時間與地點關鍵字的搜尋效果"
     ],
     "近期任務": [
-      "修復: 部分情況下最近任務清理功能無回應的問題"
+      "修復: 部分情況下最近任務清理功能無回應的問題",
+      "新增: 關閉桌面搜尋框後支援 4 × 6 佈局選項"
     ],
     "更多功能與優化": [
       "優化: 小米畫報在鎖定螢幕資訊助手的桌布設定流程"
     ]
   },
   "logs_ja": {
-    "コントロールセンター": [
+    "システム": [
+      "新機能: ワンタップでのクリップボード消去に対応します",
+      "最適化: Bluetoothステータスバーアイコン",
       "新機能: 懐中電灯の明るさ調整ページ",
       "新機能: 一部のデバイスで懐中電灯の明るさを調整できるようになりました",
       "新機能: 懐中電灯の通知スポットライト"
     ],
-    "システム": [
-      "新機能: ワンタップでのクリップボード消去に対応します",
-      "最適化: Bluetoothステータスバーアイコン"
-    ],
-    "Xiaomi HyperConnect": [
-      "新機能: 異なる Xiaomi アカウントを使用するデバイス間のファイル転送に対応します"
-    ],
     "ホーム画面": [
       "新機能: ホーム画面の検索バーをオフにすると、4×6のレイアウトオプションが利用可能になります。"
+    ],
+    "コントロールセンター": [
+      "新機能: 懐中電灯の明るさ調整ページ",
+      "新機能: 一部のデバイスで懐中電灯の明るさを調整できるようになりました",
+      "新機能: アプリを素早く開いたり閉じたりすると、複数のアプリアニメーションが同時に表示されます"
     ],
     "ギャラリー": [
       "最適化: ギャラリーアイテムの表示レイアウト",
       "最適化: ギャラリーが長押しによるアイテムの削除と非表示に対応するようになりました",
+      "最適化: 時間と場所のキーワードの検索結果",
+      "最適化: ギャラリーアイテムの表示レイアウト",
+      "最適化: ギャラリーが長押しによるアイテムの削除と非表示に対応するようになりました",
       "最適化: 時間と場所のキーワードの検索結果"
+    ],
+    "Xiaomi HyperConnect": [
+      "新機能: 異なる Xiaomi アカウントを使用するデバイス間のファイル転送に対応します"
+    ],
+    "Recents": [
+      "新機能: ホーム画面の検索バーをオフにすると、4×6のレイアウトオプションが利用可能になります。"
     ]
   },
   "logs_ko": {
-    "제어 센터": [
+    "시스템": [
+      "New: 한 번의 탭으로 클립보드 지우기 지원",
+      "최적화: 블루투스 상태 바 아이콘",
       "New: 손전등 밝기 조절 페이지",
       "New: 일부 기기에 손전등 밝기 조절 기능 지원",
       "New: 손전등에 대한 알림 스포트라이트"
     ],
-    "시스템": [
-      "New: 한 번의 탭으로 클립보드 지우기 지원",
-      "최적화: 블루투스 상태 바 아이콘"
-    ],
-    "Xiaomi HyperConnect": [
-      "New: 서로 다른 Xiaomi 계정을 사용하는 기기 간 파일 전송 지원"
-    ],
     "홈 화면": [
       "New: 홈 화면 검색 창을 끄면 4×6 레이아웃 옵션 사용 가능"
+    ],
+    "제어 센터": [
+      "New: 손전등 밝기 조절 페이지",
+      "New: 일부 기기에 손전등 밝기 조절 기능 지원",
+      "New: 앱을 빠르게 열고 닫을 때 여러 앱 애니메이션을 동시에 표시"
     ],
     "갤러리": [
       "최적화: 갤러리 항목의 디스플레이 레이아웃",
       "최적화: 갤러리에 길게 눌러 삭제 기능 추가됨",
+      "최적화: 시간 및 위치 키워드에 대한 검색 결과",
+      "최적화: 갤러리 항목의 디스플레이 레이아웃",
+      "최적화: 갤러리에 길게 눌러 삭제 기능 추가됨",
       "최적화: 시간 및 위치 키워드에 대한 검색 결과"
+    ],
+    "Xiaomi HyperConnect": [
+      "New: 서로 다른 Xiaomi 계정을 사용하는 기기 간 파일 전송 지원"
+    ],
+    "Recents": [
+      "New: 홈 화면 검색 창을 끄면 4×6 레이아웃 옵션 사용 가능"
     ]
   },
   "logs_ru": {
-    "Центр управления": [
+    "Система": [
+      "Новое: Поддержка очистки буфера обмена одним касанием",
+      "Оптимизация: Значок в строке состояния Bluetooth",
       "Новое: Страница регулировки яркости фонарика",
       "Новое: Некоторые устройства теперь поддерживают регулировку яркости фонарика",
       "Новое: Световой индикатор уведомлений для фонарика"
     ],
-    "Система": [
-      "Новое: Поддержка очистки буфера обмена одним касанием",
-      "Оптимизация: Значок в строке состояния Bluetooth"
-    ],
-    "Xiaomi HyperConnect": [
-      "Новое: Поддержка передачи файлов между различными устройствами с использованием разных аккаунтов Xiaomi"
-    ],
     "Рабочий стол": [
       "Новое: После отключения панели поиска на Рабочем столе, становится доступен вариант макета 4×6"
+    ],
+    "Центр управления": [
+      "Новое: Страница регулировки яркости фонарика",
+      "Новое: Некоторые устройства теперь поддерживают регулировку яркости фонарика",
+      "Новое: При быстром открытии и закрытии приложений одновременно отображается несколько анимаций приложений"
     ],
     "Галерея": [
       "Оптимизация: Макеты отображения элементов Галереи",
       "Оптимизация: Галерея теперь поддерживает удаление и сокрытие элементов при длительном нажатии",
+      "Оптимизация: Результаты поиска по ключевым словам времени и местоположения",
+      "Оптимизация: Макеты отображения элементов Галереи",
+      "Оптимизация: Галерея теперь поддерживает удаление и сокрытие элементов при длительном нажатии",
       "Оптимизация: Результаты поиска по ключевым словам времени и местоположения"
+    ],
+    "Xiaomi HyperConnect": [
+      "Новое: Поддержка передачи файлов между различными устройствами с использованием разных аккаунтов Xiaomi"
+    ],
+    "Недавнее": [
+      "Новое: После отключения панели поиска на Рабочем столе, становится доступен вариант макета 4×6"
     ]
   },
   "logs_uk": {
-    "Центр керування": [
+    "Система": [
+      "Нове: Підтримка очищення буфера обміну одним дотиком",
+      "Оптимізація: Значок рядка стану Bluetooth",
       "Нове: Сторінка налаштування яскравості ліхтарика",
       "Нове: Деякі пристрої тепер підтримують регулювання яскравості ліхтарика",
       "Нове: Підсвічування сповіщень для ліхтарика"
     ],
-    "Система": [
-      "Нове: Підтримка очищення буфера обміну одним дотиком",
-      "Оптимізація: Значок рядка стану Bluetooth"
-    ],
-    "Xiaomi HyperConnect": [
-      "Нове: Підтримка передачі файлів між різними пристроями за допомогою різних Xiaomi акаунтів"
-    ],
-    "Робочий стіл": [
+    "Головний екран": [
       "Нове: Після вимкнення панелі пошуку на Робочому столі стає доступним варіант макета 4×6"
+    ],
+    "Центр керування": [
+      "Нове: Сторінка налаштування яскравості ліхтарика",
+      "Нове: Деякі пристрої тепер підтримують регулювання яскравості ліхтарика",
+      "Нове: Під час швидкого відкриття та закриття програм одночасно відображаються анімації кількох програм"
     ],
     "Галерея": [
       "Оптимізація: Відображати макети для елементів Галереї",
       "Оптимізація: Галерея тепер підтримує видалення та приховування елементів за допомогою тривалого натискання",
+      "Оптимізація: Результати пошуку за ключовими словами часу та місця",
+      "Оптимізація: Відображати макети для елементів Галереї",
+      "Оптимізація: Галерея тепер підтримує видалення та приховування елементів за допомогою тривалого натискання",
       "Оптимізація: Результати пошуку за ключовими словами часу та місця"
+    ],
+    "Xiaomi HyperConnect": [
+      "Нове: Підтримка передачі файлів між різними пристроями за допомогою різних Xiaomi акаунтів"
+    ],
+    "Recents": [
+      "Нове: Після вимкнення панелі пошуку на Робочому столі стає доступним варіант макета 4×6"
     ]
   },
   "logs_pl": {
-    "Centrum kontroli": [
+    "System": [
+      "Nowe: Możliwość wyczyszczenia schowka jednym dotknięciem",
+      "Zoptymalizowano: Ikona paska stanu Bluetooth",
       "Nowe: Strona regulacji jasności latarki",
       "Nowe: Niektóre urządzenia umożliwiają teraz regulację jasności latarki",
       "Nowe: Oświetlenie powiadomień latarki"
     ],
-    "System": [
-      "Nowe: Możliwość wyczyszczenia schowka jednym dotknięciem",
-      "Zoptymalizowano: Ikona paska stanu Bluetooth"
-    ],
-    "Xiaomi HyperConnect": [
-      "Nowe: Możliwość przesyłania plików między różnymi urządzeniami korzystającymi z różnych kont Xiaomi"
-    ],
     "Ekran główny": [
       "Nowe: Po wyłączeniu paska wyszukiwania na ekranie głównym zyskasz możliwość wyboru układu 4×6"
+    ],
+    "Centrum kontroli": [
+      "Nowe: Strona regulacji jasności latarki",
+      "Nowe: Niektóre urządzenia umożliwiają teraz regulację jasności latarki",
+      "Nowe: Przy szybkim otwieraniu i zamykaniu aplikacji wyświetla się wiele animacji naraz"
     ],
     "Galeria": [
       "Zoptymalizowano: Układy wyświetlania elementów galerii",
       "Zoptymalizowano: Galeria umożliwia teraz usuwanie i ukrywanie elementów poprzez przytrzymanie na nich palca",
+      "Zoptymalizowano: Wyniki wyszukiwania słów kluczowych dotyczących czasu i lokalizacji",
+      "Zoptymalizowano: Układy wyświetlania elementów galerii",
+      "Zoptymalizowano: Galeria umożliwia teraz usuwanie i ukrywanie elementów poprzez przytrzymanie na nich palca",
       "Zoptymalizowano: Wyniki wyszukiwania słów kluczowych dotyczących czasu i lokalizacji"
+    ],
+    "Xiaomi HyperConnect": [
+      "Nowe: Możliwość przesyłania plików między różnymi urządzeniami korzystającymi z różnych kont Xiaomi"
+    ],
+    "Recents": [
+      "Nowe: Po wyłączeniu paska wyszukiwania na ekranie głównym zyskasz możliwość wyboru układu 4×6"
+    ]
+  },
+  "logs_de": {
+    "Startbildschirm": [
+      "New: After turning off the Home screen search bar, a 4×6 layout option becomes available"
+    ],
+    "Kontrollzentrum": [
+      "New: Flashlight brightness adjustment page",
+      "New: Certain devices now support adjustable flashlight brightness",
+      "New: Notification spotlight for flashlight"
     ]
   },
   "logs_fr": {
-    "Centre de contrôle": [
+    "Système": [
+      "Nouveau: Prise en charge de l'effacement du presse-papiers d'un seul coup",
+      "Optimisation: Icône de la barre d'état Bluetooth",
       "Nouveau: Page de réglage de la luminosité de la lampe de poche",
       "Nouveau: Certains appareils permettent désormais de régler la luminosité de la lampe de poche",
       "Nouveau: Notification de voyant pour la lampe de poche"
     ],
-    "Système": [
-      "Nouveau: Prise en charge de l^effacement du presse-papiers d^un seul coup",
-      "Optimisation: Icône de la barre d^état Bluetooth"
+    "Écran d'accueil": [
+      "Nouveau: Après avoir désactivé la barre de recherche de l'Écran d'accueil, l'option de disposition 4×6 est disponible."
+    ],
+    "Centre de contrôle": [
+      "Nouveau: Page de réglage de la luminosité de la lampe de poche",
+      "Nouveau: Certains appareils permettent désormais de régler la luminosité de la lampe de poche",
+      "Nouveau: Lors de l'ouverture et de la fermeture rapides d'applications, plusieurs animations d'applications sont affichées simultanément"
+    ],
+    "Galerie": [
+      "Optimisation: Afficher les dispositions pour les éléments de la Galerie",
+      "Optimisation: La Galerie permet désormais la suppression et le masquage d'éléments par pression longue",
+      "Optimisation: Résultats de la recherche pour les mots-clés concernant le temps et les lieux",
+      "Optimisation: Afficher les dispositions pour les éléments de la Galerie",
+      "Optimisation: La Galerie permet désormais la suppression et le masquage d'éléments par pression longue",
+      "Optimisation: Résultats de la recherche pour les mots-clés concernant le temps et les lieux"
     ],
     "Xiaomi HyperConnect": [
       "Nouveau: Prise en charge du transfert de fichiers entre différents appareils utilisant des comptes Xiaomi différents"
     ],
-    "Écran d'accueil": [
-      "Nouveau: Après avoir désactivé la barre de recherche de l^Écran d^accueil, l^option de disposition 4×6 est disponible."
-    ],
-    "Galerie": [
-      "Optimisation: Afficher les dispositions pour les éléments de la Galerie",
-      "Optimisation: La Galerie permet désormais la suppression et le masquage d^éléments par pression longue",
-      "Optimisation: Résultats de la recherche pour les mots-clés concernant le temps et les lieux"
+    "Recents": [
+      "Nouveau: Après avoir désactivé la barre de recherche de l'Écran d'accueil, l'option de disposition 4×6 est disponible."
     ]
   },
   "logs_it": {
-    "Centro di controllo": [
+    "Sistema": [
+      "Nuovo: Supporto per eliminare gli appunti con un solo tocco",
+      "Ottimizzazione: Icona della barra di stato del Bluetooth",
       "Nuovo: Pagina di regolazione della luminosità della torcia",
       "Nuovo: Alcuni dispositivi ora supportano la luminosità regolabile della torcia",
       "Nuovo: Notifiche in evidenza per la torcia"
     ],
-    "Sistema": [
-      "Nuovo: Supporto per eliminare gli appunti con un solo tocco",
-      "Ottimizzazione: Icona della barra di stato del Bluetooth"
+    "Schermata Home": [
+      "Nuovo: Dopo aver disattivato la barra di ricerca della schermata Home, sarà disponibile un'opzione di layout 4×6"
+    ],
+    "Centro di controllo": [
+      "Nuovo: Pagina di regolazione della luminosità della torcia",
+      "Nuovo: Alcuni dispositivi ora supportano la luminosità regolabile della torcia",
+      "Nuovo: Quando si aprono e chiudono rapidamente le app, verranno mostrate simultaneamente più animazioni di app"
+    ],
+    "Galleria": [
+      "Ottimizzazione: Layout di visualizzazione per gli elementi della Galleria",
+      "Ottimizzazione: La Galleria ora supporta l'eliminazione e la possibilità di nascondere gli elementi tramite pressione prolungata",
+      "Ottimizzazione: Risultati della ricerca per le parole chiave relative all'ora e alla posizione",
+      "Ottimizzazione: Layout di visualizzazione per gli elementi della Galleria",
+      "Ottimizzazione: La Galleria ora supporta l'eliminazione e la possibilità di nascondere gli elementi tramite pressione prolungata",
+      "Ottimizzazione: Risultati della ricerca per le parole chiave relative all'ora e alla posizione"
     ],
     "Xiaomi HyperConnect": [
       "Nuovo: Supporto per il trasferimento di file tra dispositivi differenti utilizzando diversi Xiaomi Account"
     ],
-    "Schermata Home": [
-      "Nuovo: Dopo aver disattivato la barra di ricerca della schermata Home, sarà disponibile un^opzione di layout 4×6"
-    ],
-    "Galleria": [
-      "Ottimizzazione: Layout di visualizzazione per gli elementi della Galleria",
-      "Ottimizzazione: La Galleria ora supporta l^eliminazione e la possibilità di nascondere gli elementi tramite pressione prolungata",
-      "Ottimizzazione: Risultati della ricerca per le parole chiave relative all^ora e alla posizione"
+    "Recenti": [
+      "Nuovo: Dopo aver disattivato la barra di ricerca della schermata Home, sarà disponibile un'opzione di layout 4×6"
     ]
   },
   "logs_es": {
-    "Centro de control": [
+    "Sistema": [
+      "Nuevo: Compatibilidad con el borrado del portapapeles con un toque",
+      "Optimización: Icono de la barra de estado de Bluetooth",
       "Nuevo: Página de ajuste del brillo de la linterna",
       "Nuevo: Ahora ciertos dispositivos admiten el brillo ajustable de la linterna",
       "Nuevo: Destacado de notificaciones para la linterna"
     ],
-    "Sistema": [
-      "Nuevo: Compatibilidad con el borrado del portapapeles con un toque",
-      "Optimización: Icono de la barra de estado de Bluetooth"
-    ],
-    "Xiaomi HyperConnect": [
-      "Nuevo: Compatibilidad con transferencias de archivos entre dispositivos diferentes utilizando distintas Cuentas Xiaomi"
-    ],
     "Pantalla de inicio": [
       "Nuevo: Después de desactivar la barra de búsqueda de la Pantalla de inicio, está disponible una opción de disposición de 4×6"
+    ],
+    "Centro de control": [
+      "Nuevo: Página de ajuste del brillo de la linterna",
+      "Nuevo: Ahora ciertos dispositivos admiten el brillo ajustable de la linterna",
+      "Nuevo: Cuando abres y cierras aplicaciones rápidamente, se muestran varias animaciones de las aplicaciones simultáneamente"
     ],
     "Galería": [
       "Optimización: Disposiciones de visualización para los elementos de la Galería",
       "Optimización: Ahora la Galería admite eliminar y ocultar elementos mediante una pulsación larga",
+      "Optimización: Resultados de búsqueda para las palabras claves de tiempo y ubicación",
+      "Optimización: Disposiciones de visualización para los elementos de la Galería",
+      "Optimización: Ahora la Galería admite eliminar y ocultar elementos mediante una pulsación larga",
       "Optimización: Resultados de búsqueda para las palabras claves de tiempo y ubicación"
+    ],
+    "Xiaomi HyperConnect": [
+      "Nuevo: Compatibilidad con transferencias de archivos entre dispositivos diferentes utilizando distintas Cuentas Xiaomi"
+    ],
+    "Recientes": [
+      "Nuevo: Después de desactivar la barra de búsqueda de la Pantalla de inicio, está disponible una opción de disposición de 4×6"
     ]
   },
   "logs_pt": {
-    "Centro de controle": [
+    "Sistema": [
+      "Novo: Suporte para limpeza da área de transferência com um toque",
+      "Otimização: Ícone da barra de status do Bluetooth",
       "Novo: Página de ajuste de brilho da lanterna",
       "Novo: Certos dispositivos agora permitem brilho ajustável da lanterna",
       "Novo: Destaque de notificação para lanterna"
     ],
-    "Sistema": [
-      "Novo: Suporte para limpeza da área de transferência com um toque",
-      "Otimização: Ícone da barra de status do Bluetooth"
-    ],
-    "Xiaomi HyperConnect": [
-      "Novo: Suporte a transferências de arquivos entre diferentes dispositivos usando diferentes contas Xiaomi"
-    ],
-    "Tela inicial": [
+    "Ecrã inicial": [
       "Novo: Após desligar a barra de pesquisa da tela inicial, uma opção de layout 4×6 é disponibilizada"
+    ],
+    "Centro de controle": [
+      "Novo: Página de ajuste de brilho da lanterna",
+      "Novo: Certos dispositivos agora permitem brilho ajustável da lanterna",
+      "Novo: Quando aplicativos são abertos e fechados rapidamente, várias animações de aplicativos são exibidas simultaneamente"
     ],
     "Galeria": [
       "Otimização: Exibir layouts para itens da Galeria",
       "Otimização: A Galeria agora permite a exclusão e ocultação de itens, ao pressionar e segurar",
+      "Otimização: Resultados da pesquisa por palavras-chave de horário e local",
+      "Otimização: Exibir layouts para itens da Galeria",
+      "Otimização: A Galeria agora permite a exclusão e ocultação de itens, ao pressionar e segurar",
       "Otimização: Resultados da pesquisa por palavras-chave de horário e local"
+    ],
+    "Xiaomi HyperConnect": [
+      "Novo: Suporte a transferências de arquivos entre diferentes dispositivos usando diferentes contas Xiaomi"
+    ],
+    "Recents": [
+      "Novo: Após desligar a barra de pesquisa da tela inicial, uma opção de layout 4×6 é disponibilizada"
     ]
   },
   "logs_tr": {
-    "Kontrol merkezi": [
+    "Sistem": [
+      "Yeni: Tek dokunuşla pano temizleme desteği",
+      "Optimizasyon: Bluetooth durum çubuğu simgesi",
       "Yeni: El feneri parlaklık ayarlama sayfası",
       "Yeni: Bazı cihazlar artık ayarlanabilir el feneri parlaklığını destekliyor",
       "Yeni: El feneri için Bildirim spot ışığı"
     ],
-    "Sistem": [
-      "Yeni: Tek dokunuşla pano temizleme desteği",
-      "Optimizasyon: Bluetooth durum çubuğu simgesi"
-    ],
-    "Xiaomi HyperConnect": [
-      "Yeni: Farklı Xiaomi Hesapları kullanan cihazlar arasında dosya transferi desteği"
-    ],
     "Ana ekran": [
       "Yeni: Ana ekran arama çubuğunu kapattıktan sonra, 4×6 düzen seçeneği kullanılabilir hale gelir"
+    ],
+    "Kontrol merkezi": [
+      "Yeni: El feneri parlaklık ayarlama sayfası",
+      "Yeni: Bazı cihazlar artık ayarlanabilir el feneri parlaklığını destekliyor",
+      "Yeni: Uygulamaları hızlı bir şekilde açıp kapatırken, birden fazla uygulama animasyonu aynı anda görüntülenir"
     ],
     "Galeri": [
       "Optimizasyon: Galeri öğeleri için görüntüleme düzenleri",
       "Optimizasyon: Galeri artık öğeleri uzun süre basarak silmeyi ve gizlemeyi destekliyor",
+      "Optimizasyon: Zaman ve konum anahtar kelimeleri için arama sonuçları",
+      "Optimizasyon: Galeri öğeleri için görüntüleme düzenleri",
+      "Optimizasyon: Galeri artık öğeleri uzun süre basarak silmeyi ve gizlemeyi destekliyor",
       "Optimizasyon: Zaman ve konum anahtar kelimeleri için arama sonuçları"
+    ],
+    "Xiaomi HyperConnect": [
+      "Yeni: Farklı Xiaomi Hesapları kullanan cihazlar arasında dosya transferi desteği"
+    ],
+    "Son kullanılanlar": [
+      "Yeni: Ana ekran arama çubuğunu kapattıktan sonra, 4×6 düzen seçeneği kullanılabilir hale gelir"
+    ]
+  },
+  "logs_id": {
+    "Layar Utama": [
+      "Baru: Setelah menonaktifkan bilah pencarian Layar utama, opsi tata letak 4×6 menjadi tersedia"
+    ],
+    "Galeri": [
+      "Pengoptimalan: Tata letak tampilan untuk item Galeri",
+      "Pengoptimalan: Galeri kini mendukung penghapusan dan penyembunyian item dengan menekan lama",
+      "Pengoptimalan: Hasil pencarian untuk kata kunci waktu dan lokasi",
+      "Pengoptimalan: Tata letak tampilan untuk item Galeri",
+      "Pengoptimalan: Galeri kini mendukung penghapusan dan penyembunyian item dengan menekan lama",
+      "Pengoptimalan: Hasil pencarian untuk kata kunci waktu dan lokasi"
+    ],
+    "Sistem": [
+      "Baru: Halaman penyesuaian kecerahan senter",
+      "Baru: Perangkat tertentu kini mendukung kecerahan senter yang dapat disesuaikan",
+      "Baru: Sorotan notifikasi untuk senter"
+    ],
+    "Recents": [
+      "Baru: Setelah menonaktifkan bilah pencarian Layar utama, opsi tata letak 4×6 menjadi tersedia"
     ]
   },
   "logs_vi": {
-    "Trung tâm điều khiển": [
+    "Hệ thống": [
+      "Mới: Hỗ trợ xóa bộ nhớ tạm chỉ với một lần chạm",
+      "Tối ưu: Biểu tượng thanh trạng thái Bluetooth",
       "Mới: Trang điều chỉnh độ sáng đèn Flash",
       "Mới: Một số thiết bị hiện đã hỗ trợ điều chỉnh độ sáng đèn Flash",
       "Mới: Tiêu điểm thông báo cho đèn Flash"
     ],
-    "Hệ thống": [
-      "Mới: Hỗ trợ xóa bộ nhớ tạm chỉ với một lần chạm",
-      "Tối ưu: Biểu tượng thanh trạng thái Bluetooth"
-    ],
-    "Xiaomi HyperConnect": [
-      "Mới: Hỗ trợ chuyển tập tin giữa các thiết bị sử dụng các tài khoản Xiaomi khác nhau"
-    ],
     "Màn hình chính": [
       "Mới: Sau khi tắt thanh tìm kiếm trên Màn hình chính, tùy chọn bố cục 4×6 sẽ khả dụng"
+    ],
+    "Trung tâm điều khiển": [
+      "Mới: Trang điều chỉnh độ sáng đèn Flash",
+      "Mới: Một số thiết bị hiện đã hỗ trợ điều chỉnh độ sáng đèn Flash",
+      "Mới: Khi mở và đóng ứng dụng nhanh, nhiều hoạt ảnh của ứng dụng sẽ hiển thị đồng thời"
     ],
     "Thư viện": [
       "Tối ưu: Bố cục hiển thị cho các mục trong Thư viện",
       "Tối ưu: Thư viện hiện đã hỗ trợ xóa và ẩn mục bằng thao tác nhấn giữ",
+      "Tối ưu: Kết quả tìm kiếm cho từ khóa về thời gian và địa điểm",
+      "Tối ưu: Bố cục hiển thị cho các mục trong Thư viện",
+      "Tối ưu: Thư viện hiện đã hỗ trợ xóa và ẩn mục bằng thao tác nhấn giữ",
       "Tối ưu: Kết quả tìm kiếm cho từ khóa về thời gian và địa điểm"
+    ],
+    "Xiaomi HyperConnect": [
+      "Mới: Hỗ trợ chuyển tập tin giữa các thiết bị sử dụng các tài khoản Xiaomi khác nhau"
+    ],
+    "Recents": [
+      "Mới: Sau khi tắt thanh tìm kiếm trên Màn hình chính, tùy chọn bố cục 4×6 sẽ khả dụng"
     ]
   },
   "logs_th": {
-    "ศูนย์กลางการควบคุม": [
+    "ระบบ": [
+      "ใหม่: การรองรับสำหรับการล้างคลิปบอร์ดด้วยการแตะเพียงครั้งเดียว",
+      "การเพิ่มประสิทธิภาพ: ไอคอนแถบสถานะบลูทูธ",
       "ใหม่: หน้าการปรับความสว่างของไฟฉาย",
       "ใหม่: อุปกรณ์บางอย่างรองรับความสว่างของไฟฉายที่ปรับได้",
       "ใหม่: สปอตไลท์การแจ้งเตือนสำหรับไฟฉาย"
     ],
-    "ระบบ": [
-      "ใหม่: การรองรับสำหรับการล้างคลิปบอร์ดด้วยการแตะเพียงครั้งเดียว",
-      "การเพิ่มประสิทธิภาพ: ไอคอนแถบสถานะบลูทูธ"
-    ],
-    "Xiaomi HyperConnect": [
-      "ใหม่: การรองรับการถ่ายโอนไฟล์ระหว่างอุปกรณ์ต่างๆ โดยใช้บัญชี Xiaomi ที่แตกต่างกัน"
-    ],
     "หน้าจอหลัก": [
       "ใหม่: หลังจากที่ปิดแถบค้นหาบนหน้าจอหลัก ตัวเลือกเค้าโครง 4×6 จะพร้อมใช้งาน"
+    ],
+    "ศูนย์กลางการควบคุม": [
+      "ใหม่: หน้าการปรับความสว่างของไฟฉาย",
+      "ใหม่: อุปกรณ์บางอย่างรองรับความสว่างของไฟฉายที่ปรับได้",
+      "ใหม่: เมื่อเปิดและปิดแอปอย่างรวดเร็ว ภาพเคลื่อนไหวของแอปหลายรายการจะแสดงพร้อมกัน"
     ],
     "คลังภาพ": [
       "การเพิ่มประสิทธิภาพ: เค้าโครงการแสดงผลสำหรับรายการในคลังภาพ",
       "การเพิ่มประสิทธิภาพ: คลังภาพรองรับการลบและการซ่อนรายการโดยการกดค้างไว้แล้วในขณะนี้",
+      "การเพิ่มประสิทธิภาพ: ผลลัพธ์การค้นหาสำหรับคำสำคัญเกี่ยวกับเวลาและสถานที่",
+      "การเพิ่มประสิทธิภาพ: เค้าโครงการแสดงผลสำหรับรายการในคลังภาพ",
+      "การเพิ่มประสิทธิภาพ: คลังภาพรองรับการลบและการซ่อนรายการโดยการกดค้างไว้แล้วในขณะนี้",
       "การเพิ่มประสิทธิภาพ: ผลลัพธ์การค้นหาสำหรับคำสำคัญเกี่ยวกับเวลาและสถานที่"
+    ],
+    "Xiaomi HyperConnect": [
+      "ใหม่: การรองรับการถ่ายโอนไฟล์ระหว่างอุปกรณ์ต่างๆ โดยใช้บัญชี Xiaomi ที่แตกต่างกัน"
+    ],
+    "Recents": [
+      "ใหม่: หลังจากที่ปิดแถบค้นหาบนหน้าจอหลัก ตัวเลือกเค้าโครง 4×6 จะพร้อมใช้งาน"
     ]
   },
   "logs_ar": {
-    "مركز التحكم": [
+    "النظام": [
+      "الجديد: دعم مسح الحافظة بنقرة واحدة",
+      "التحسين: أيقونة شريط حالة البلوتوث",
       "الجديد: صفحة ضبط سطوع ضوء الفلاش",
       "الجديد: تدعم بعض الأجهزة الآن إمكانية تعديل سطوع ضوء الفلاش",
       "الجديد: تمييز الإشعارات الخاصة بضوء الفلاش"
     ],
-    "النظام": [
-      "الجديد: دعم مسح الحافظة بنقرة واحدة",
-      "التحسين: أيقونة شريط حالة البلوتوث"
-    ],
-    "Xiaomi HyperConnect": [
-      "الجديد: دعم نقل الملفات بين أجهزة مختلفة باستخدام حسابات Mi مختلفة"
-    ],
     "الشاشة الرئيسية": [
       "الجديد: بعد إيقاف تشغيل شريط البحث في الشاشة الرئيسية، يصبح خيار التخطيط 4×6 متاحًا"
+    ],
+    "مركز التحكم": [
+      "الجديد: صفحة ضبط سطوع ضوء الفلاش",
+      "الجديد: تدعم بعض الأجهزة الآن إمكانية تعديل سطوع ضوء الفلاش",
+      "الجديد: عند فتح التطبيقات وإغلاقها بسرعة، يتم عرض رسوم متحركة متعددة خاصة بالتطبيق في نفس الوقت"
     ],
     "المعرض": [
       "التحسين: تخطيطات العرض لعناصر المعرض",
       "التحسين: يدعم المعرض الآن حذف العناصر وإخفاءها عن طريق الضغط لفترة طويلة",
+      "التحسين: نتائج البحث عن الكلمات المفتاحية المتعلقة بالوقت والموقع",
+      "التحسين: تخطيطات العرض لعناصر المعرض",
+      "التحسين: يدعم المعرض الآن حذف العناصر وإخفاءها عن طريق الضغط لفترة طويلة",
       "التحسين: نتائج البحث عن الكلمات المفتاحية المتعلقة بالوقت والموقع"
+    ],
+    "Xiaomi HyperConnect": [
+      "الجديد: دعم نقل الملفات بين أجهزة مختلفة باستخدام حسابات Mi مختلفة"
+    ],
+    "Recents": [
+      "الجديد: بعد إيقاف تشغيل شريط البحث في الشاشة الرئيسية، يصبح خيار التخطيط 4×6 متاحًا"
     ]
   },
   "logs_in": {
+    "सिस्टम": [
+      "नया एक-टैप क्लिपबोर्ड समाशोधन का समर्थन",
+      "ऑप्टिमाइज़ेशन ब्लुटूथ स्टेटस बार आइकन",
+      "नया फ़्लैशलाइट चमक एडजस्टमेंट पेज",
+      "नया कुछ डिवाइस अब एडजस्टमेंट योग्य फ़्लैशलाइट चमक का समर्थन करते हैं",
+      "नया फ़्लैशलाइट के लिए सूचना स्पॉटलाइट"
+    ],
+    "होम स्क्रीन": [
+      "नया होम स्क्रीन खोज बार को बंद करने के बाद, एक 4×6 लेआउट विकल्प उपलब्ध हो जाता है"
+    ],
     "कंट्रोल सेंटर": [
       "नया फ़्लैशलाइट चमक एडजस्टमेंट पेज",
       "नया कुछ डिवाइस अब एडजस्टमेंट योग्य फ़्लैशलाइट चमक का समर्थन करते हैं",
       "नया फ़्लैशलाइट के लिए सूचना स्पॉटलाइट"
     ],
-    "सिस्टम": [
-      "नया एक-टैप क्लिपबोर्ड समाशोधन का समर्थन",
-      "ऑप्टिमाइज़ेशन ब्लुटूथ स्टेटस बार आइकन"
+    "गैलरी": [
+      "ऑप्टिमाइज़ेशन गैलरी आइटम्स के लिए डिस्प्ले लेआउट",
+      "ऑप्टिमाइज़ेशन गैलरी अब देर तक दबाने के ज़रिए आइटम को हटाने और छिपाने का समर्थन करती है",
+      "ऑप्टिमाइज़ेशन समय और स्थान कीवर्ड के लिए खोज परिणाम",
+      "ऑप्टिमाइज़ेशन गैलरी आइटम्स के लिए डिस्प्ले लेआउट",
+      "ऑप्टिमाइज़ेशन गैलरी अब देर तक दबाने के ज़रिए आइटम को हटाने और छिपाने का समर्थन करती है",
+      "ऑप्टिमाइज़ेशन समय और स्थान कीवर्ड के लिए खोज परिणाम"
     ],
     "Xiaomi HyperConnect": [
       "नया विभिन्न Xiaomi खातों का उपयोग करते हुए विभिन्न डिवाइसों के बीच फ़ाइल ट्रांसफर का समर्थन"
     ],
-    "होम स्क्रीन": [
+    "Recents": [
       "नया होम स्क्रीन खोज बार को बंद करने के बाद, एक 4×6 लेआउट विकल्प उपलब्ध हो जाता है"
+    ]
+  },
+  "logs_ug": {
+    "باش ئېكران": [
+      "New: After turning off the Home screen search bar, a 4×6 layout option becomes available"
     ],
-    "गैलरी": [
-      "ऑप्टिमाइज़ेशन गैलरी आइटम्स के लिए डिस्प्ले लेआउट",
-      "ऑप्टिमाइज़ेशन गैलरी अब देर तक दबाने के ज़रिए आइटम को हटाने और छिपाने का समर्थन करती है",
-      "ऑप्टिमाइज़ेशन समय और स्थान कीवर्ड के लिए खोज परिणाम"
+    "Control center": [
+      "New: Flashlight brightness adjustment page",
+      "New: Certain devices now support adjustable flashlight brightness",
+      "New: Notification spotlight for flashlight"
+    ]
+  },
+  "logs_bo": {
+    "Home screen": [
+      "New: After turning off the Home screen search bar, a 4×6 layout option becomes available"
+    ],
+    "Control center": [
+      "New: Flashlight brightness adjustment page",
+      "New: Certain devices now support adjustable flashlight brightness",
+      "New: Notification spotlight for flashlight"
     ]
   }
 }

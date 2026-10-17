@@ -1,14 +1,44 @@
 {
   "logs_zh": {
+    "锁屏、状态栏、通知栏": [
+      "优化 切换手机分身时，提升壁纸的加载速度",
+      "优化 指纹解锁体验：通过双击通知消息等方式解锁手机时，可优先使用指纹（而不是密码）进行解锁",
+      "修复 密码界面人脸解锁成功后动画不流畅的问题",
+      "修复 息屏设置页面，双时钟预览图数字折行的问题",
+      "修复 状态栏电池电量刷新不及时问题"
+    ],
+    "时钟": [
+      "优化 生活早报相关页面"
+    ],
+    "计算器": [
+      "新增 普通计算器新增小窗功能"
+    ],
+    "主题": [
+      "优化 应用字体不需要重启"
+    ],
+    "设置": [
+      "新增 屏幕使用时间，前往设置->屏幕使用时间体验",
+      "新增 WIFI探针防护功能"
+    ],
+    "安全中心": [
+      "修复 小爱同学开关红包助手异常",
+      "修复 红包助手悬浮窗开启和关闭异常的问题"
+    ],
     "其他": [
-      "提高系统的稳定性",
-      "优化系统的流畅度"
+      "修复 开机引导中，操作按钮的颜色、大小不一致的问题"
     ]
   },
   "logs_en": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Optimization: Wallpaper loads faster in Second space now",
+      "Optimization: More fingerprint unlock options (e.g. through a Lock screen notification) are available now",
+      "Fix: Face unlock animation didn't work properly",
+      "Fix: Issues with overlapping in Dual Clock settings",
+      "Fix: Battery info in the status bar was updated with a delay"
+    ],
+    "Security": [
+      "Optimization: The same set of filters and Beautify options works in Photo, Portrait, and Short video modes now",
+      "Fix: Couldn't turn Red envelope assistant on and off"
     ]
   }
 }

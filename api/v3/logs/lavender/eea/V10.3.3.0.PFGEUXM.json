@@ -17,15 +17,51 @@
       "修復 螢幕熄滅的狀況下直接通過指紋解鎖，可能出現鎖屏通知欄不消失的問題"
     ]
   },
+  "logs_ja": {
+    "ロック画面、ステータスバー、通知シェード": [
+      "新機能: 顔認証でロック解除後、ロック画面に留まっている場合に指紋でホーム画面へ進める機能",
+      "画面オフの状態で指紋認証により直接ロック解除した際、ロック画面の通知バーが消えない場合がある問題を修正"
+    ]
+  },
+  "logs_ko": {
+    "잠금화면, 상태 바, 알림 바": [
+      "새 기능: 얼굴 인식으로 잠금 해제 후 잠금 화면에 머무를 때 지문으로 홈 화면에 진입하는 기능",
+      "화면 꺼짐 상태에서 지문으로 바로 잠금 해제할 때 잠금 화면 알림 표시줄이 사라지지 않을 수 있는 문제를 수정"
+    ]
+  },
   "logs_ru": {
     "Экран блокировки, строка состояния, шторка уведомлений": [
       "Новое: Используйте отпечаток пальца, чтобы перейти на рабочий стол после того, как вы разблокировали устройство при помощи данных лица и остались на экране блокировки",
       "Исправлено: Проблемы с отображением уведомлений на экране блокировки"
     ]
   },
+  "logs_uk": {
+    "Екран блокування, рядок стану, панель сповіщень": [
+      "Нове: Перехід на головний екран відбитком пальця, якщо пристрій розблоковано обличчям і залишено на екрані блокування",
+      "Виправлено проблему, коли під час прямого розблокування відбитком пальця в режимі вимкненого екрана панель сповіщень на екрані блокування могла не зникати"
+    ]
+  },
+  "logs_pl": {
+    "Ekran blokady, pasek powiadomień,panel powiadomień": [
+      "Nowość: Możliwość przejścia do ekranu głównego odciskiem palca po odblokowaniu twarzą i pozostaniu na ekranie blokady",
+      "Naprawiono problem, w którym przy bezpośrednim odblokowaniu odciskiem palca przy wyłączonym ekranie pasek powiadomień ekranu blokady mógł nie znikać"
+    ]
+  },
+  "logs_de": {
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
+      "Neu: Nach erfolgreicher Gesichtserkennung auf dem Sperrbildschirm per Fingerabdruck zum Startbildschirm wechseln",
+      "Behebung eines Problems, bei dem die Benachrichtigungsleiste auf dem Sperrbildschirm beim direkten Entsperren per Fingerabdruck bei ausgeschaltetem Bildschirm möglicherweise nicht verschwindet"
+    ]
+  },
+  "logs_fr": {
+    "Écran de verrouillage, Barre d'état, Panneau de notification": [
+      "Nouveau Utilisez votre empreinte digitale pour ouvrir l'écran d'accueil une fois que vous avez déverrouillé l'appareil à l'aide des données du visage et que vous êtes resté sur l'écran de verrouillage",
+      "Correction du problème où la barre de notifications de l’écran de verrouillage pouvait ne pas disparaître lors d’un déverrouillage direct par empreinte digitale en mode écran éteint"
+    ]
+  },
   "logs_it": {
     "Schermata di blocco, barra di stato, area delle notifiche": [
-      "Nuovo: Accedi alla schermata Home usando l^impronta digitale dopo aver sbloccato il dispositivo con i dati del volto restando sulla schermata di blocco.",
+      "Nuovo: Accedi alla schermata Home usando l'impronta digitale dopo aver sbloccato il dispositivo con i dati del volto restando sulla schermata di blocco.",
       "Risolto: Problemi con la visualizzazione delle notifiche sulla schermata di blocco"
     ]
   },
@@ -35,10 +71,52 @@
       "Reparado: Problemas con la visualización de notificaciones en la Pantalla de bloqueo"
     ]
   },
+  "logs_pt": {
+    "Tela de bloqueio, Barra de status e Área de notificações": [
+      "Novo Use sua impressão digital para abrir a Tela inicial quando você desbloquear o dispositivo usando o desbloqueio facial e ficar na Tela de bloqueio",
+      "Correção do problema em que a barra de notificações da tela de bloqueio podia não desaparecer ao desbloquear diretamente com impressão digital com a tela desligada"
+    ]
+  },
   "logs_tr": {
     "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
       "Yeni: Cihazın kilidini yüz verilerini kullanarak açtıktan ve Kilit ekranında kaldıktan sonra Ana ekranı açmak için parmak izinizi kullanın",
       "Onarım: Bildirimlerin Kilit ekranında görüntülenmesi ile ilgili sorunlar"
+    ]
+  },
+  "logs_id": {
+    "Layar kunci, bar status, layar notifikasi": [
+      "Baru Menggunakan sidik jari untuk membuka Layar utama saat Anda membuka kunci perangkat dengan data wajah dan tetap berada di Layar kunci",
+      "Perbaikan masalah bilah notifikasi di layar kunci yang terkadang tidak hilang saat membuka kunci langsung dengan sidik jari dalam keadaan layar mati"
+    ]
+  },
+  "logs_vi": {
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Mới: Dùng vân tay để vào Màn hình chính khi đã mở khóa bằng khuôn mặt và vẫn ở màn hình khóa",
+      "Sửa lỗi thanh thông báo trên màn hình khóa đôi khi không biến mất khi mở khóa trực tiếp bằng vân tay trong trạng thái tắt màn hình"
+    ]
+  },
+  "logs_th": {
+    "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
+      "ใหม่: สามารถใช้ลายนิ้วมือเข้าสู่หน้าจอหลักได้เมื่อปลดล็อกด้วยใบหน้าและยังคงอยู่ที่หน้าจอล็อก",
+      "แก้ไขปัญหาที่แถบการแจ้งเตือนบนหน้าจอล็อกอาจไม่หายไปเมื่อปลดล็อกด้วยลายนิ้วมือโดยตรงในสถานะปิดหน้าจอ"
+    ]
+  },
+  "logs_ar": {
+    "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
+      "جديد: استخدام بصمة الإصبع للانتقال إلى الشاشة الرئيسية عند نجاح فتح القفل بالوجه والبقاء على شاشة القفل",
+      "إصلاح مشكلة عدم اختفاء شريط الإشعارات على شاشة القفل أحيانًا عند إلغاء القفل مباشرةً ببصمة الإصبع في حالة إيقاف الشاشة"
+    ]
+  },
+  "logs_in": {
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
+      "नया: चेहरे से अनलॉक होने और लॉक स्क्रीन पर रहने पर फ़िंगरप्रिंट से होम स्क्रीन पर जाने की सुविधा",
+      "स्क्रीन बंद होने की स्थिति में सीधे फ़िंगरप्रिंट से अनलॉक करते समय लॉक स्क्रीन की सूचना पट्टी के गायब न होने की समस्या ठीक की गई"
+    ]
+  },
+  "logs_ug": {
+    "Lockscreen, status bar, Notification shade": [
+      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
+      "ئېكران ئۆچۈك ھالەتتە بىۋاسىتە بارماق ئىزى بىلەن قۇلۇپنى ئېچىشتا قۇلۇپ ئېكرانى ئۇقتۇرۇش بالدىقىنىڭ يوقالماسلىق مەسىلىسى تۈزىتىلدى"
     ]
   }
 }

@@ -2,37 +2,67 @@
   "logs_zh": {
     "锁屏、状态栏、通知栏": [
       "修复 低电量时呼吸灯不闪烁的bug",
+      "修复 媒体音播放过程中来通知，声音变小后不恢复的问题",
+      "新增 锁屏页面支持禁止下拉通知栏",
+      "修复 低电量时呼吸灯不闪烁的bug",
+      "修复 横向萤幕情况下低电量通知不悬浮显示",
+      "修复 通话时间气泡与通知图标重叠的问题",
       "修复 媒体音播放过程中来通知，声音变小后不恢复的问题"
     ],
     "时钟": [
+      "修复 计时器页面按钮点击闪烁的问题",
+      "修复 时钟在特殊日期出现闪退的问题",
       "修复 计时器页面按钮点击闪烁的问题",
       "修复 时钟在特殊日期出现闪退的问题"
     ],
     "相机": [
       "新增 AI相机场景：月亮模式、塔、合影",
       "修复 录像下退出重新进入必现相机闪退",
+      "修复 短信调用相机拍照时点击取消，再次选择相机出现相机故障",
+      "新增 支援4K@60FPS 影片录制",
+      "新增 AI相机场景：月亮模式、塔、合影",
+      "修复 录像下退出重新进入必现相机闪退",
       "修复 短信调用相机拍照时点击取消，再次选择相机出现相机故障"
     ],
     "设置": [
-      "优化 大字体界面的显示效果"
+      "优化 大字体界面的显示效果",
+      "修复 下拉状态栏开启或关闭同步，同步界面不刷新问题"
     ],
     "最近任务": [
+      "优化 应用名称的显示长度，优化大字体的显示效果",
       "优化 应用名称的显示长度，优化大字体的显示效果"
     ],
     "游戏加速": [
+      "新增 电话悬浮窗功能，支持游戏中接通的电话使用悬浮窗显示接通状态",
       "新增 电话悬浮窗功能，支持游戏中接通的电话使用悬浮窗显示接通状态"
     ],
     "小米云服务": [
-      "优化 云服务首页重新设计，可用空间显示更加直观"
+      "优化 云服务首页重新设计，可用空间显示更加直观",
+      "优化 云服务新版首页，云空间信息显示更清晰"
     ],
     "其他": [
       "修复 息屏显示不能定时关闭的问题"
+    ],
+    "系统": [
+      "新增 支援Widevine L1",
+      "新增 游戏加速功能，提升系统级游戏优化",
+      "优化 更新谷歌安全补丁（2019#3），提升系统安全性"
+    ],
+    "电话": [
+      "修复 挂断电话慢问题",
+      "修复 来电悬浮条和通话绿条同时存在情况"
+    ],
+    "桌面": [
+      "修复 WhatsApp 桌面角标显示异常的问题"
+    ],
+    "推荐": [
+      "修复 微光萤幕显示不能定时关闭的问题"
     ]
   },
   "logs_en": {
     "Lockscreen, status bar, Notification shade": [
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Media playback volume couldn^t be restored after it was lowered by an incoming notification"
+      "Fix: LED light didn't blink when battery was low",
+      "Fix: Media playback volume couldn't be restored after it was lowered by an incoming notification"
     ],
     "Clock": [
       "Fix: Timer button started flashing after being tapped",
@@ -44,22 +74,76 @@
       "Fix: When the user canceled making a photo using a shortcut in Messaging and then tapped the Camera shortcut again, Camera crashed"
     ],
     "Settings": [
-      "Optimization: Big fonts are displayed better now"
+      "Optimization: Big fonts are displayed better now",
+      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade"
     ],
     "Recents": [
+      "Optimization: App names were truncated when texts size was set to large",
       "Optimization: App names were truncated when texts size was set to large"
     ],
     "Game speed booster": [
+      "New: Floating windows for incoming calls during games",
       "New: Floating windows for incoming calls during games"
     ],
     "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!",
+      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!"
     ],
     "Other": [
-      "Fix: Displaying items on the turned off screen couldn^t be turned off on time in some cases"
+      "Fix: Displaying items on the turned off screen couldn't be turned off on time in some cases"
+    ],
+    "Phone": [
+      "Fix: Ending calls took longer time than expected",
+      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
+    ],
+    "Home screen": [
+      "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
     ]
   },
   "logs_zh_tw": {
+    "解鎖畫面、狀態欄、通知欄": [
+      "修復 低電量時呼吸燈不閃爍的問題",
+      "修復 媒體音播放過程中來通知，聲音變小後不恢復的問題",
+      "新增 螢幕鎖定畫面支援禁止下拉狀態欄",
+      "修復 低電量時呼吸燈不閃爍的問題",
+      "修復 橫向螢幕情況下低電量通知不懸浮顯示",
+      "修復 通話時間氣泡與通知圖示重疊",
+      "修復 媒體音播放過程中來通知，聲音變小後不恢復的問題"
+    ],
+    "時鐘": [
+      "修復 計時器頁面按鈕點擊閃爍的問題",
+      "修復 時鐘在特殊日期出現閃退的問題",
+      "修復 計時器頁面按鈕點擊閃爍的問題",
+      "修復 時鐘在特殊日期出現閃退的問題"
+    ],
+    "相機": [
+      "新增 AI相機場景：月亮模式、高塔、合影",
+      "修復 錄像下退出重新進入必現相機閃退",
+      "修復 簡訊調用相機拍照時點擊取消，再次選擇相機出現相機故障",
+      "新增 支援4K@60FPS 影片錄製",
+      "新增 AI相機場景：月亮模式、高塔、合影",
+      "修復 錄像下退出重新進入必現相機閃退",
+      "修復 簡訊調用相機拍照時點擊取消，再次選擇相機出現相機故障"
+    ],
+    "設定": [
+      "優化 大字體介面的顯示效果",
+      "修復 下拉狀態欄開啟或關閉同步，同步介面不刷新問題"
+    ],
+    "近期任務": [
+      "優化 應用名稱的顯示長度，改良大字體的顯示效果",
+      "優化 應用名稱的顯示長度，改良大字體的顯示效果"
+    ],
+    "遊戲加速": [
+      "新增 電話懸浮視窗功能，支援遊戲中接通的電話使用懸浮視窗顯示接通狀態",
+      "新增 電話懸浮視窗功能，支援遊戲中接通的電話使用懸浮視窗顯示接通狀態"
+    ],
+    "小米雲服務": [
+      "優化 雲服務首頁重新設計，雲端可用空間顯示更加直觀",
+      "優化 雲服務首頁重新設計，雲端可用空間顯示更加直觀"
+    ],
+    "其他": [
+      "修復息屏顯示無法定時關閉的問題"
+    ],
     "系統": [
       "新增 支援Widevine L1",
       "新增 遊戲加速功能，提升系統級遊戲優化",
@@ -69,135 +153,178 @@
       "修復 掛斷電話較慢的問題",
       "修復 來電懸浮條和通話綠條同時存在的情況"
     ],
-    "解鎖畫面、狀態欄、通知欄": [
-      "新增 螢幕鎖定畫面支援禁止下拉狀態欄",
-      "修復 低電量時呼吸燈不閃爍的問題",
-      "修復 橫向螢幕情況下低電量通知不懸浮顯示",
-      "修復 通話時間氣泡與通知圖示重疊",
-      "修復 媒體音播放過程中來通知，聲音變小後不恢復的問題"
-    ],
     "桌面": [
       "修復 WhatsApp 桌面角標顯示異常的問題"
-    ],
-    "時鐘": [
-      "修復 計時器頁面按鈕點擊閃爍的問題",
-      "修復 時鐘在特殊日期出現閃退的問題"
-    ],
-    "相機": [
-      "新增 支援4K@60FPS 影片錄製",
-      "新增 AI相機場景：月亮模式、高塔、合影",
-      "修復 錄像下退出重新進入必現相機閃退",
-      "修復 簡訊調用相機拍照時點擊取消，再次選擇相機出現相機故障"
-    ],
-    "設定": [
-      "修復 下拉狀態欄開啟或關閉同步，同步介面不刷新問題"
-    ],
-    "近期任務": [
-      "優化 應用名稱的顯示長度，改良大字體的顯示效果"
-    ],
-    "遊戲加速": [
-      "新增 電話懸浮視窗功能，支援遊戲中接通的電話使用懸浮視窗顯示接通狀態"
-    ],
-    "小米雲服務": [
-      "優化 雲服務首頁重新設計，雲端可用空間顯示更加直觀"
-    ],
-    "其他": [
-      "修復 微光螢幕顯示不能定時關閉的問題"
     ]
   },
   "logs_ja": {
-    "System": [
-      "New: Widevine L1 support",
-      "New: Introducing Game Turbo. Boost your gaming experience!",
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security."
+    "ロック画面、ステータスバー、通知シェード": [
+      "修正: バッテリー残量が少ないときに通知LEDが点滅しない不具合。",
+      "修正: 通知が届いてメディアの音量が下がった後、元に戻らない問題",
+      "新規: ロック画面で通知シェードを下にスワイプして開くことを禁止できるようになりました",
+      "修正: バッテリー残量が少ないときに通知LEDが点滅しない不具合。",
+      "修正: 横向きモードで低バッテリー警告が表示されない問題を修正",
+      "修正: 通話時間のバブルが通知アイコンと重なる問題",
+      "メディア音声の再生中に通知が届いて音量が下がった後、元に戻らない問題を修正"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
+    "時計": [
+      "タイマーページのボタンをタップした際に点滅する問題を修正",
+      "特定の日付で時計が強制終了する問題を修正",
+      "タイマーページでボタンをタップした際にチラつく問題を修正",
+      "特別な日付に時計がクラッシュする問題を修正"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Media playback volume couldn^t be restored after it was lowered by an incoming notification"
+    "カメラ": [
+      "AIカメラの新シーン：月モード、塔、集合写真",
+      "修正: ビデオモードで終了して再度開くとカメラが強制終了する問題",
+      "修正: メッセージでカメラを起動して写真を撮影する際、キャンセルをタップしてから再びカメラを選択すると、カメラの不具合が発生する問題。",
+      "4K@60FPSの動画撮影に対応しました",
+      "AIカメラの新シーン：月モード、塔、集合写真",
+      "動画撮影中に終了して再度開くと必ずカメラがクラッシュする問題を修正",
+      "SMS からカメラを呼び出して撮影する際、キャンセルをタップした後に再びカメラを選択するとカメラエラーが発生する問題を修正"
     ],
-    "Home screen": [
-      "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
-    ],
-    "Clock": [
-      "Fix: Timer button started flashing after being tapped",
-      "Fix: Clock force closed on some specific dates"
-    ],
-    "Camera": [
-      "New: You can shoot 4K videos at 60fps now",
-      "New: New modes for AI camera",
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode",
-      "Fix: When the user canceled making a photo using a shortcut in Messaging and then tapped the Camera shortcut again, Camera crashed"
-    ],
-    "Settings": [
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
+    "設定": [
+      "最適化: 大きなフォントの表示が改善されました",
+      "修正: 通知シェードで同期をオン/オフにした際、同期画面が更新されない問題"
     ],
     "Recents": [
-      "Optimization: App names were truncated when texts size was set to large"
+      "最適化：テキストサイズを大きくするとアプリ名が切り詰められる問題",
+      "最適化：テキストサイズを大きくするとアプリ名が切り詰められる問題"
     ],
-    "Game speed booster": [
-      "New: Floating windows for incoming calls during games"
+    "ゲーム加速": [
+      "新機能: ゲーム中の着信通話をフローティングウィンドウで表示"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "Xiaomi クラウドサービス": [
+      "最適化: クラウドサービスのホームページを再設計し、空き容量がより分かりやすく表示されるようになりました。",
+      "最適化：Mi Cloudのスタートページを再設計しました。より見やすくなりました"
     ],
-    "Other": [
-      "Fix: Displaying items on the turned off screen couldn^t be turned off on time in some cases"
+    "その他": [
+      "常時表示を定時にオフにできない問題を修正"
+    ],
+    "システム": [
+      "新機能：Widevine L1 に対応",
+      "ゲーム加速機能を追加し、システムレベルのゲーム最適化を向上させました。",
+      "最適化: Android セキュリティパッチを2019年3月に更新。システムの安全性が向上しました。"
+    ],
+    "電話": [
+      "修正: 通話終了に想定より時間がかかる問題",
+      "修正: 着信のフローティングバーと通話の緑色バーが同時に表示される問題。"
+    ],
+    "ホーム画面": [
+      "WhatsApp アイコンの通知バッジが正しく表示されない問題を修正しました。"
+    ],
+    "ゲーム高速化": [
+      "新機能: ゲーム中の着信通話にフローティングウィンドウ"
+    ],
+    "Mi スマートハブ": [
+      "暗い画面表示が時間指定でオフにできない問題を修正しました"
     ]
   },
   "logs_ko": {
-    "System": [
-      "New: Widevine L1 support",
-      "New: Introducing Game Turbo. Boost your gaming experience!",
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security."
+    "잠금화면, 상태 바, 알림 바": [
+      "수정: 배터리가 부족할 때 알림 LED가 깜박이지 않던 버그.",
+      "수정: 미디어 재생 중 알림이 오면 소리가 작아진 후 복구되지 않는 문제",
+      "새 기능: 잠금 화면에서 알림 패널을 아래로 내려 여는 것을 금지할 수 있습니다",
+      "수정: 배터리가 부족할 때 알림 LED가 깜박이지 않던 버그.",
+      "수정: 가로 모드에서 배터리 부족 경고가 표시되지 않는 문제 수정",
+      "수정: 통화 시간 버블이 알림 아이콘과 겹치는 문제",
+      "미디어 오디오 재생 중 알림이 오면 볼륨이 줄어든 후 복원되지 않는 문제를 수정"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
+    "시계": [
+      "타이머 페이지에서 버튼을 탭할 때 깜박이는 문제를 수정했습니다",
+      "특정 날짜에 시계가 강제 종료되는 문제 수정",
+      "타이머 페이지에서 버튼을 탭할 때 깜빡이는 문제를 수정했습니다.",
+      "특정 날짜에 시계가 비정상 종료되는 문제를 수정했습니다"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Media playback volume couldn^t be restored after it was lowered by an incoming notification"
+    "카메라": [
+      "AI 카메라 새 장면: 달 모드, 탑, 단체 사진",
+      "수정: 동영상 모드에서 앱을 종료했다가 다시 열면 카메라가 강제 종료되는 문제",
+      "수정: 메시지에서 카메라를 호출해 사진을 촬영할 때 취소를 누른 후 다시 카메라를 선택하면 카메라 오류가 발생하던 문제.",
+      "4K@60FPS 동영상 녹화 지원 추가",
+      "AI 카메라 새 장면: 달 모드, 탑, 단체 사진",
+      "동영상 촬영 중 종료 후 다시 진입하면 항상 카메라가 강제 종료되는 문제 수정",
+      "SMS에서 카메라를 호출해 사진 촬영 중 취소를 누른 후 다시 카메라를 선택하면 카메라 오류가 발생하는 문제 수정"
     ],
-    "Home screen": [
-      "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
-    ],
-    "Clock": [
-      "Fix: Timer button started flashing after being tapped",
-      "Fix: Clock force closed on some specific dates"
-    ],
-    "Camera": [
-      "New: You can shoot 4K videos at 60fps now",
-      "New: New modes for AI camera",
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode",
-      "Fix: When the user canceled making a photo using a shortcut in Messaging and then tapped the Camera shortcut again, Camera crashed"
-    ],
-    "Settings": [
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
+    "설정": [
+      "최적화: 큰 글꼴이 더 잘 표시됩니다",
+      "수정: 알림창에서 동기화를 켜거나 끌 때 동기화 화면이 새로 고쳐지지 않던 문제"
     ],
     "Recents": [
-      "Optimization: App names were truncated when texts size was set to large"
+      "최적화: 텍스트 크기를 크게 설정하면 앱 이름이 잘리던 문제",
+      "최적화: 텍스트 크기를 크게 설정하면 앱 이름이 잘리던 문제"
     ],
-    "Game speed booster": [
-      "New: Floating windows for incoming calls during games"
+    "게임 가속": [
+      "새 기능: 게임 중 수신 전화를 플로팅 창으로 표시"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "Xiaomi 클라우드 서비스": [
+      "최적화: 클라우드 서비스 홈페이지를 재설계하여 사용 가능한 공간이 더 직관적으로 표시됩니다.",
+      "최적화: Mi Cloud 새 홈페이지가 최적화되어 클라우드 공간 정보가 더 명확하게 표시됩니다."
     ],
-    "Other": [
-      "Fix: Displaying items on the turned off screen couldn^t be turned off on time in some cases"
+    "기타": [
+      "상시 표시를 예약 시간에 끌 수 없는 문제를 수정"
+    ],
+    "시스템": [
+      "Widevine L1 지원 추가",
+      "게임 가속 기능을 추가하여 시스템 수준의 게임 최적화를 향상했습니다.",
+      "최적화: Android 보안 패치를 2019년 3월로 업데이트했습니다. 시스템 보안이 향상되었습니다."
+    ],
+    "전화": [
+      "수정: 통화 종료가 예상보다 오래 걸리는 문제",
+      "수정: 수신 전화 플로팅 바와 통화 녹색 바가 동시에 표시되는 문제."
+    ],
+    "홈 화면": [
+      "WhatsApp 아이콘에 알림 배지가 잘못 표시되는 문제를 수정했습니다."
+    ],
+    "게임 속도 향상": [
+      "새 기능: 게임 중 수신 전화를 위한 플로팅 창"
+    ],
+    "Mi 스마트허브": [
+      "어두운 화면 표시가 예약된 시간에 꺼지지 않는 문제를 수정했습니다"
     ]
   },
   "logs_ru": {
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Исправлено: LED индикатор не загорался при низком уровне заряда аккумулятора",
+      "Fix: Громкость воспроизведения медиа-файлов не восстанавливалась после автоматического понижения входящим уведомлением",
+      "Новое: Теперь вы можете ограничить открытие Шторки уведомлений на экране блокировки",
+      "Исправлено: LED индикатор не загорался при низком уровне заряда аккумулятора",
+      "Исправлено: Предупреждение о низком уровне заряда аккумулятора не отображалось в ландшафтном режиме",
+      "Исправлено: Время продолжительности вызова перекрывалось значками уведомлений",
+      "Исправлено: Громкость воспроизведения медиафайлов не восстанавливалась после автоматического понижения входящим уведомлением"
+    ],
+    "Часы": [
+      "Исправлено: Кнопка таймера начинала мигать после нажатия",
+      "Исправлено: Некорректное завершение работы приложения Часы в определенные дни",
+      "Исправлено: Кнопка таймера начинала мигать после нажатия",
+      "Исправлено: Некорректное завершение работы приложения Часы в определенные дни"
+    ],
+    "Камера": [
+      "Новое: Поддержка новых режимов камеры с ИИ",
+      "Исправлено: Некорректное завершение работы приложения Камера в режиме видеосъемки при закрытии приложения и его повторном открытии",
+      "Исправлено: Некорректное завершение работы приложения Камера в случаях, когда пользователь отменял съемку фото при помощи ярлыка в приложении Сообщения, а затем нажимал на значок камеры снова",
+      "Новое: Поддержка съемки 4K видео c частотой 60 кадров в секунду",
+      "Новое: Поддержка новых режимов камеры с ИИ",
+      "Исправлено: Некорректное завершение работы приложения Камера в режиме видеосъемки при закрытии приложения и его повторном открытии",
+      "Исправлено: Некорректное завершение работы приложения Камера в случаях, когда пользователь отменял съемку фото при помощи ярлыка в приложении Сообщения, а затем нажимал на значок камеры снова"
+    ],
+    "Настройки": [
+      "Оптимизация: Теперь шрифт большого размера отображается лучше",
+      "Исправлено: Страница синхронизации не обновлялась всякий раз, когда синхронизация была включена или отключена через Шторку уведомлений"
+    ],
+    "Недавнее": [
+      "Оптимизация: Имена приложений отображались не полностью, когда был выбран большой размер текста",
+      "Оптимизация: Имена приложений отображались не полностью, когда был выбран большой размер текста"
+    ],
+    "Ускорение приложений": [
+      "Новое: Всплывающее окно с уведомлением о входящем вызове во время игры",
+      "Новое: Всплывающее окно с уведомлением о входящем вызове во время игры"
+    ],
+    "Облачный сервис Xiaomi": [
+      "Оптимизация: Мы переработали начальную страницу Mi Cloud. Теперь она выглядит намного лучше!",
+      "Оптимизация: Мы переработали начальную страницу Mi Cloud. Теперь она выглядит намного лучше!"
+    ],
+    "Другое": [
+      "Исправлена проблема, из-за которой Always-on display не отключался по расписанию"
+    ],
     "Система": [
       "Новое: Поддержка Widevine L1",
       "Новое: Представляем вам Game Turbo, специальную систему для оптимизации производительности в играх.",
@@ -207,227 +334,292 @@
       "Исправлено: Завершение вызова выполнялось слишком долго",
       "Исправлено: Значки в строке состояния и всплывающее уведомление вызовов появлялись одновременно"
     ],
-    "Экран блокировки, строка состояния, шторка уведомлений": [
-      "Новое: Теперь вы можете ограничить открытие Шторки уведомлений на экране блокировки",
-      "Исправлено: LED индикатор не загорался при низком уровне заряда аккумулятора",
-      "Исправлено: Предупреждение о низком уровне заряда аккумулятора не отображалось в ландшафтном режиме",
-      "Исправлено: Время продолжительности вызова перекрывалось значками уведомлений",
-      "Исправлено: Громкость воспроизведения медиафайлов не восстанавливалась после автоматического понижения входящим уведомлением"
-    ],
     "Рабочий стол": [
       "Исправлено: Уведомления на значке приложения WhatsApp отображались неправильно"
     ],
-    "Часы": [
-      "Исправлено: Кнопка таймера начинала мигать после нажатия",
-      "Исправлено: Некорректное завершение работы приложения Часы в определенные дни"
-    ],
-    "Камера": [
-      "Новое: Поддержка съемки 4K видео c частотой 60 кадров в секунду",
-      "Новое: Поддержка новых режимов камеры с ИИ",
-      "Исправлено: Некорректное завершение работы приложения Камера в режиме видеосъемки при закрытии приложения и его повторном открытии",
-      "Исправлено: Некорректное завершение работы приложения Камера в случаях, когда пользователь отменял съемку фото при помощи ярлыка в приложении Сообщения, а затем нажимал на значок камеры снова"
-    ],
-    "Настройки": [
-      "Исправлено: Страница синхронизации не обновлялась всякий раз, когда синхронизация была включена или отключена через Шторку уведомлений"
-    ],
-    "Недавнее": [
-      "Оптимизация: Имена приложений отображались не полностью, когда был выбран большой размер текста"
-    ],
-    "Ускорение приложений": [
-      "Новое: Всплывающее окно с уведомлением о входящем вызове во время игры"
-    ],
-    "Mi Cloud": [
-      "Оптимизация: Мы переработали начальную страницу Mi Cloud. Теперь она выглядит намного лучше!"
-    ],
-    "Другое": [
+    "Mi Smart Hub": [
       "Исправлено: В некоторых случаях отображаемые на экране элементы нельзя было своевременно закрыть"
     ]
   },
   "logs_uk": {
-    "System": [
-      "New: Widevine L1 support",
-      "New: Introducing Game Turbo. Boost your gaming experience!",
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security."
+    "Екран блокування, рядок стану, панель сповіщень": [
+      "Виправлено: світлодіод сповіщень не блимав, коли заряд батареї був низьким.",
+      "Виправлено: Гучність медіа не відновлювалася після зниження через сповіщення",
+      "Нове: додано підтримку заборони відкриття панелі сповіщень на екрані блокування",
+      "Виправлено: світлодіод сповіщень не блимав, коли заряд батареї був низьким.",
+      "Виправлення: Попередження про низький заряд батареї не відображалося в альбомному режимі",
+      "Виправлено: бульбашка тривалості виклику перекривалася з іконками сповіщень",
+      "Виправлено проблему, коли гучність не відновлювалася після зниження через сповіщення під час відтворення медіааудіо"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
+    "Годинник": [
+      "Виправлено: кнопка на сторінці таймера блимає після натискання",
+      "Виправлено: Годинник аварійно завершував роботу в окремі дати",
+      "Виправлено проблему мерехтіння кнопок на сторінці таймера під час натискання.",
+      "Виправлено проблему аварійного завершення роботи Годинника в особливі дати"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Media playback volume couldn^t be restored after it was lowered by an incoming notification"
+    "Камера": [
+      "Нові сцени AI-камери: режим Місяця, вежа, групове фото",
+      "Виправлено: Камера аварійно закривається після виходу та повторного входу в режимі відео",
+      "Виправлено: Під час виклику камери в Повідомленнях для фото, після натискання «Скасувати» й повторного вибору камери виникала помилка камери.",
+      "Додано підтримку запису відео 4K@60FPS",
+      "Нові сцени AI-камери: режим Місяця, вежа, групове фото",
+      "Виправлено збій камери, який щоразу виникав під час виходу та повторного входу в режим відеозапису",
+      "Виправлено збій камери, що виникав після повторного вибору камери після скасування зйомки, коли SMS викликає камеру для фото"
     ],
-    "Home screen": [
-      "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
-    ],
-    "Clock": [
-      "Fix: Timer button started flashing after being tapped",
-      "Fix: Clock force closed on some specific dates"
-    ],
-    "Camera": [
-      "New: You can shoot 4K videos at 60fps now",
-      "New: New modes for AI camera",
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode",
-      "Fix: When the user canceled making a photo using a shortcut in Messaging and then tapped the Camera shortcut again, Camera crashed"
-    ],
-    "Settings": [
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
+    "Налаштування": [
+      "Оптимізація: великі шрифти тепер відображаються краще",
+      "Виправлено: сторінка синхронізації не оновлювалася, коли синхронізацію вмикали або вимикали в панелі сповіщень"
     ],
     "Recents": [
-      "Optimization: App names were truncated when texts size was set to large"
+      "Оптимізовано довжину відображення назв застосунків і ефект відображення великого шрифту",
+      "Оптимізовано довжину відображення назв застосунків і ефект відображення великого шрифту"
     ],
-    "Game speed booster": [
-      "New: Floating windows for incoming calls during games"
+    "Прискорення ігор": [
+      "Нове: Плаваючі вікна для вхідних викликів під час ігор",
+      "Нове: плаваюче вікно для вхідних дзвінків під час ігор"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "Хмарний сервіс Xiaomi": [
+      "Оптимізація: головну сторінку хмарного сервісу перероблено, доступний простір тепер відображається більш наочно.",
+      "Оптимізація: оптимізовано нову головну сторінку Mi Cloud, інформація про хмарний простір відображається чіткіше."
     ],
-    "Other": [
-      "Fix: Displaying items on the turned off screen couldn^t be turned off on time in some cases"
+    "Інше": [
+      "Виправлено проблему, через яку Always-on display не вимикався за розкладом"
+    ],
+    "Система": [
+      "Додано підтримку Widevine L1",
+      "Додано функцію прискорення ігор, покращено оптимізацію ігор на системному рівні.",
+      "Оптимізація: Оновлено патч безпеки Android до березня 2019 року. Безпеку системи підвищено."
+    ],
+    "Телефон": [
+      "Виправлено: завершення викликів тривало довше, ніж очікувалося",
+      "Виправлено: плаваюча панель вхідного виклику та зелена смуга виклику відображалися одночасно."
+    ],
+    "Головний екран": [
+      "Виправлено: значки сповіщень неправильно відображалися на значку WhatsApp."
+    ],
+    "Mi Smart Hub": [
+      "Виправлено проблему, через яку відображення тьмяного екрана не вимикалося за розкладом"
     ]
   },
   "logs_pl": {
-    "System": [
-      "New: Widevine L1 support",
-      "New: Introducing Game Turbo. Boost your gaming experience!",
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security."
+    "Ekran blokady, pasek powiadomień,panel powiadomień": [
+      "Poprawka: dioda powiadomień nie migała przy niskim poziomie baterii.",
+      "Poprawiono: Głośność multimediów nie wracała po obniżeniu przez powiadomienie",
+      "Nowość: można teraz zablokować otwieranie panelu powiadomień na ekranie blokady",
+      "Poprawka: dioda powiadomień nie migała przy niskim poziomie baterii.",
+      "Poprawka: Ostrzeżenie o niskim poziomie baterii nie wyświetlało się w trybie poziomym",
+      "Naprawiono: bąbelek czasu połączenia nakładał się na ikony powiadomień",
+      "Naprawiono problem, w którym po otrzymaniu powiadomienia podczas odtwarzania multimediów głośność pozostawała obniżona i nie wracała do normy"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
+    "Zegar": [
+      "Poprawka: przycisk na stronie minutnika miga po dotknięciu",
+      "Naprawiono: Zegar ulegał awarii w określonych datach",
+      "Naprawiono migotanie przycisków na stronie timera po dotknięciu.",
+      "Naprawiono problem z awarią aplikacji Zegar w specjalne dni"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Media playback volume couldn^t be restored after it was lowered by an incoming notification"
+    "Aparat": [
+      "Nowe sceny aparatu AI: tryb Księżyca, wieża, zdjęcie grupowe",
+      "Naprawiono: Aparat zamyka się awaryjnie przy wyjściu i ponownym wejściu w tryb wideo",
+      "Naprawiono: Po wywołaniu aparatu z Wiadomości w celu zrobienia zdjęcia, dotknięciu Anuluj i ponownym wybraniu aparatu występował błąd aparatu.",
+      "Dodano obsługę nagrywania wideo 4K@60FPS",
+      "Nowe sceny aparatu AI: tryb Księżyca, wieża, zdjęcie grupowe",
+      "Naprawiono awarię aparatu występującą za każdym razem przy wyjściu i ponownym wejściu w tryb nagrywania wideo",
+      "Naprawiono problem z aparatem pojawiający się po ponownym wybraniu aparatu po anulowaniu zdjęcia wywołanego z SMS-ów"
     ],
-    "Home screen": [
-      "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
-    ],
-    "Clock": [
-      "Fix: Timer button started flashing after being tapped",
-      "Fix: Clock force closed on some specific dates"
-    ],
-    "Camera": [
-      "New: You can shoot 4K videos at 60fps now",
-      "New: New modes for AI camera",
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode",
-      "Fix: When the user canceled making a photo using a shortcut in Messaging and then tapped the Camera shortcut again, Camera crashed"
-    ],
-    "Settings": [
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
+    "Ustawienia": [
+      "Optymalizacja: duże czcionki są teraz lepiej wyświetlane",
+      "Poprawka: strona synchronizacji nie odświeżała się po włączeniu lub wyłączeniu synchronizacji z panelu powiadomień"
     ],
     "Recents": [
-      "Optimization: App names were truncated when texts size was set to large"
+      "Zoptymalizowano długość wyświetlania nazw aplikacji i efekt wyświetlania dużych czcionek",
+      "Zoptymalizowano długość wyświetlania nazw aplikacji i efekt wyświetlania dużych czcionek"
     ],
-    "Game speed booster": [
-      "New: Floating windows for incoming calls during games"
+    "Przyspieszanie gier": [
+      "Nowość: Pływające okna dla połączeń przychodzących podczas gier",
+      "Nowość: pływające okno dla połączeń przychodzących podczas gier"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "Usługa w chmurze Xiaomi": [
+      "Optymalizacja: przeprojektowano stronę główną usługi w chmurze; dostępna przestrzeń jest teraz wyświetlana bardziej intuicyjnie.",
+      "Optymalizacja: zoptymalizowano nową stronę główną Mi Cloud, informacje o przestrzeni w chmurze są wyświetlane wyraźniej."
     ],
-    "Other": [
-      "Fix: Displaying items on the turned off screen couldn^t be turned off on time in some cases"
+    "Inne": [
+      "Naprawiono problem, przez który Always-on display nie wyłączał się o zaplanowanej porze"
+    ],
+    "System": [
+      "Dodano obsługę Widevine L1",
+      "Dodano funkcję przyspieszania gier, poprawiając optymalizację gier na poziomie systemu.",
+      "Optymalizacja: Zaktualizowano poprawkę zabezpieczeń Androida do marca 2019 r. Zwiększono bezpieczeństwo systemu."
+    ],
+    "Telefon": [
+      "Naprawiono: Zakończenie połączeń trwało dłużej niż oczekiwano",
+      "Poprawka: pływający pasek połączenia przychodzącego i zielony pasek połączenia wyświetlały się jednocześnie."
+    ],
+    "Ekran główny": [
+      "Naprawiono: odznaki powiadomień były nieprawidłowo wyświetlane na ikonie WhatsApp."
+    ],
+    "Mi Smart Hub": [
+      "Naprawiono problem z niemożnością wyłączenia wyświetlania przyciemnionego ekranu według harmonogramu"
     ]
   },
   "logs_de": {
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
+      "Fehler behoben: Benachrichtigungs-LED blinkte bei niedrigem Akkustand nicht.",
+      "Behoben: Medienlautstärke wurde nach einer Benachrichtigung nicht wiederhergestellt",
+      "Neu: Öffnen der Benachrichtigungsleiste auf dem Sperrbildschirm kann jetzt gesperrt werden",
+      "Fehler behoben: Benachrichtigungs-LED blinkte bei niedrigem Akkustand nicht.",
+      "Behebung: Warnung bei niedrigem Akkustand wurde im Querformat nicht angezeigt",
+      "Behoben: Überlappung zwischen Anrufzeit-Blase und Benachrichtigungssymbolen",
+      "Problem behoben, bei dem die Lautstärke nach einer Benachrichtigung während der Medienwiedergabe verringert blieb und nicht wiederhergestellt wurde"
+    ],
+    "Uhr": [
+      "Behebung: Schaltfläche auf der Timer-Seite blinkt nach dem Antippen",
+      "Behoben: Uhr stürzte an bestimmten Daten ab",
+      "Behebt das Flackern der Schaltflächen auf der Timer-Seite beim Antippen.",
+      "Behebung des Problems, dass die Uhr an besonderen Tagen abstürzt"
+    ],
+    "Kamera": [
+      "Neue Szenen für AI-Kamera: Mondmodus, Turm, Gruppenfoto",
+      "Behoben: Kamera stürzt ab, wenn man im Video-Modus die App verlässt und erneut öffnet",
+      "Behoben: Wenn man in Nachrichten die Kamera zum Fotografieren öffnete, auf Abbrechen tippte und dann erneut Kamera auswählte, trat ein Kamerafehler auf.",
+      "Unterstützung für 4K@60FPS-Videoaufnahme hinzugefügt",
+      "Neue Szenen für AI-Kamera: Mondmodus, Turm, Gruppenfoto",
+      "Behoben: Kamera-Absturz beim Verlassen und erneuten Öffnen im Video-Modus",
+      "Behoben: Kamerafehler beim erneuten Auswählen der Kamera nach dem Abbrechen, wenn SMS die Kamera zum Fotografieren aufruft"
+    ],
+    "Einstellungen": [
+      "Optimierung: Große Schriftarten werden jetzt besser angezeigt",
+      "Behoben: Die Synchronisierungsseite wurde nicht aktualisiert, wenn die Synchronisierung in der Benachrichtigungsleiste ein- oder ausgeschaltet wurde"
+    ],
+    "Spielbeschleunigung": [
+      "Neu: Schwebende Fenster für eingehende Anrufe während Spielen",
+      "Neu: Schwebefenster für eingehende Anrufe in Spielen"
+    ],
+    "Xiaomi Cloud-Dienst": [
+      "Optimierung: Die Startseite des Cloud-Dienstes wurde neu gestaltet; der verfügbare Speicher wird jetzt intuitiver angezeigt.",
+      "Optimierung: Wir haben die Startseite von Mi Cloud neu gestaltet. Sie sieht jetzt viel besser aus"
+    ],
+    "Sonstiges": [
+      "Problem behoben: Always-on-Display ließ sich nicht zeitgesteuert ausschalten"
+    ],
     "System": [
-      "New: Widevine L1 support",
-      "New: Introducing Game Turbo. Boost your gaming experience!",
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security."
+      "Neu: Widevine L1-Unterstützung",
+      "Spielbeschleunigungsfunktion hinzugefügt; verbessert die Spieloptimierung auf Systemebene.",
+      "Optimierung: Android-Sicherheitspatch auf März 2019 aktualisiert. Systemsicherheit verbessert."
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
+    "Telefon": [
+      "Behoben: Anrufe beenden dauerte länger als erwartet",
+      "Behebung: Die schwebende Leiste für eingehende Anrufe und der grüne Anrufbalken wurden gleichzeitig angezeigt."
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Media playback volume couldn^t be restored after it was lowered by an incoming notification"
-    ],
-    "Home screen": [
-      "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
-    ],
-    "Clock": [
-      "Fix: Timer button started flashing after being tapped",
-      "Fix: Clock force closed on some specific dates"
-    ],
-    "Camera": [
-      "New: You can shoot 4K videos at 60fps now",
-      "New: New modes for AI camera",
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode",
-      "Fix: When the user canceled making a photo using a shortcut in Messaging and then tapped the Camera shortcut again, Camera crashed"
-    ],
-    "Settings": [
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
+    "Startbildschirm": [
+      "Behoben: Benachrichtigungs-Badges wurden auf dem WhatsApp-Symbol falsch angezeigt."
     ],
     "Recents": [
-      "Optimization: App names were truncated when texts size was set to large"
-    ],
-    "Game speed booster": [
-      "New: Floating windows for incoming calls during games"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
-    ],
-    "Other": [
-      "Fix: Displaying items on the turned off screen couldn^t be turned off on time in some cases"
+      "Optimierung: App-Namen wurden abgeschnitten, wenn die Textgröße auf groß eingestellt war"
     ]
   },
   "logs_fr": {
-    "System": [
-      "New: Widevine L1 support",
-      "New: Introducing Game Turbo. Boost your gaming experience!",
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security."
+    "Écran de verrouillage, Barre d'état, Panneau de notification": [
+      "Correction : la LED de notification ne clignotait pas lorsque la batterie était faible.",
+      "Correction : Le volume des médias ne revenait pas à son niveau après une notification",
+      "Nouveau : il est désormais possible d’interdire l’ouverture du panneau de notifications sur l’écran de verrouillage",
+      "Correction : la LED de notification ne clignotait pas lorsque la batterie était faible.",
+      "Correction : L'avertissement de batterie faible ne s'affichait pas en mode paysage",
+      "Corrigé : chevauchement entre la bulle de durée d’appel et les icônes de notification",
+      "Correction du problème où le volume restait réduit après une notification pendant la lecture multimédia et ne revenait pas à la normale"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
+    "Horloge": [
+      "Correction : le bouton de la page Minuteur clignote après un appui",
+      "Correction : l'horloge plantait à certaines dates",
+      "Correction du clignotement des boutons de la page Minuteur lors d’un appui.",
+      "Correction du problème de fermeture inattendue de l'application Horloge à certaines dates"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Media playback volume couldn^t be restored after it was lowered by an incoming notification"
+    "Appareil photo": [
+      "Nouvelles scènes de l'appareil photo AI : mode Lune, tour, photo de groupe",
+      "Correction : l'appareil photo plante lorsqu'on quitte puis rouvre l'app en mode Vidéo",
+      "Correction : Dans Messages, après avoir lancé l’appareil photo pour prendre une photo, appuyé sur Annuler puis sélectionné de nouveau l’appareil photo, une erreur de l’appareil photo survenait.",
+      "Ajout de la prise en charge de l’enregistrement vidéo 4K@60FPS",
+      "Nouvelles scènes de l'appareil photo AI : mode Lune, tour, photo de groupe",
+      "Correction du plantage de l'appareil photo à chaque sortie puis réouverture en mode vidéo",
+      "Correction de l’erreur de l’appareil photo lors de la sélection à nouveau de l’appareil photo après avoir appuyé sur Annuler quand SMS appelle l’appareil photo pour prendre une photo"
     ],
-    "Home screen": [
-      "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
-    ],
-    "Clock": [
-      "Fix: Timer button started flashing after being tapped",
-      "Fix: Clock force closed on some specific dates"
-    ],
-    "Camera": [
-      "New: You can shoot 4K videos at 60fps now",
-      "New: New modes for AI camera",
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode",
-      "Fix: When the user canceled making a photo using a shortcut in Messaging and then tapped the Camera shortcut again, Camera crashed"
-    ],
-    "Settings": [
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
+    "Paramètres": [
+      "Optimisation Les grosses polices sont mieux affichées maintenant",
+      "Correction : la page de synchronisation ne s’actualisait pas lorsqu’on activait ou désactivait la synchronisation depuis le panneau de notifications"
     ],
     "Recents": [
-      "Optimization: App names were truncated when texts size was set to large"
+      "Optimisation : Les noms d'applications étaient tronqués lorsque la taille du texte était définie sur grande",
+      "Optimisation : Les noms d'applications étaient tronqués lorsque la taille du texte était définie sur grande"
     ],
-    "Game speed booster": [
-      "New: Floating windows for incoming calls during games"
+    "Booster de vitesse de jeu": [
+      "Nouveau: Fenêtres flottantes pour les appels entrants pendant les jeux"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "Service cloud Xiaomi": [
+      "Optimisation: Nous avons repensé la page de démarrage de Mi Cloud. Ça a l'air beaucoup mieux maintenant!",
+      "Optimisation : la nouvelle page d’accueil de Mi Cloud a été optimisée, les informations sur l’espace cloud s’affichent plus clairement."
     ],
-    "Other": [
-      "Fix: Displaying items on the turned off screen couldn^t be turned off on time in some cases"
+    "Autre": [
+      "Problème corrigé : l'écran Always-on ne s'éteignait pas à l'heure programmée"
+    ],
+    "Système": [
+      "Nouveau : prise en charge de Widevine L1",
+      "Ajout de la fonction d'accélération des jeux, amélioration de l'optimisation des jeux au niveau du système.",
+      "Optimisation : Correctif de sécurité Android mis à jour vers mars 2019. Sécurité du système renforcée."
+    ],
+    "Téléphone": [
+      "Correction : la fin des appels prenait plus de temps que prévu",
+      "Correction : la barre flottante d’appel entrant et la barre verte d’appel s’affichaient en même temps."
+    ],
+    "Écran d'accueil": [
+      "Correction : les badges de notification s’affichaient incorrectement sur l’icône WhatsApp."
+    ],
+    "Accélération des jeux": [
+      "Nouveau : fenêtre flottante pour les appels entrants pendant les jeux"
     ]
   },
   "logs_it": {
+    "Schermata di blocco, barra di stato, area delle notifiche": [
+      "Risolto: Il LED non si illuminava quando la batteria era scarica",
+      "Correzione: Il volume dei media non tornava al livello originale dopo una notifica",
+      "Nuovo: È ora possibile limitare l'apertura dell'area delle notifiche sulla schermata di blocco",
+      "Risolto: Il LED non si illuminava quando la batteria era scarica",
+      "Risolto: Gli avvisi di batteria scarica non apparivano in modalità Orizzontale",
+      "Risolto: L'icona della durata di chiamata si sovrapponeva alle icone di notifica",
+      "Risolto: Il volume di riproduzione multimediale non poteva essere ripristinato dopo che era stato abbassato da una notifica in arrivo"
+    ],
+    "Orologio": [
+      "Risolvi: Il pulsante del timer cominciava a lampeggiare quando veniva premuto",
+      "Risolvi: Chiusura forzata di Orologio in alcune date specifiche",
+      "Risolto: Il pulsante del timer cominciava a lampeggiare quando veniva premuto",
+      "Risolto: Chiusura forzata di Orologio in alcune date specifiche"
+    ],
+    "Fotocamera": [
+      "Nuovo: Nuove modalità per la fotocamera AI",
+      "Risolvi: Chiusura forzata della Fotocamera quando la app era chiusa e aperta di nuovo in modalità Video",
+      "Risolvi: Quando l'utente annullava lo scatto di una foto tramite collegamento nei Messaggi e poi toccava il collegamento Fotocamera di nuovo, la Fotocamera si arrestava in modo anomalo",
+      "Nuovo: Ora puoi registrare video 4K a 60fps",
+      "Nuovo: Nuove modalità per la fotocamera AI",
+      "Risolto: Chiusura forzata della Fotocamera quando la app era chiusa e aperta di nuovo in modalità Video",
+      "Risolto: Quando l'utente annullava lo scatto di una foto tramite collegamento nei Messaggi e poi toccava il collegamento Fotocamera di nuovo, la Fotocamera si arrestava in modo anomalo"
+    ],
+    "Impostazioni": [
+      "Ottimizzazione: I caratteri di grandi dimensioni sono ora visualizzati meglio",
+      "Risolto: La pagina di sincronizzazione non poteva essere aggiornata quando la sincronizzazione era attiva o disattivata nell'area delle notifiche"
+    ],
+    "Recenti": [
+      "Ottimizzazione: I nomi delle app venivano troncati quando la dimensione del testo era impostata su L",
+      "Ottimizzazione: I nomi delle app venivano troncati quando la dimensione del testo era impostata su L"
+    ],
+    "Turbo Videogiochi": [
+      "Nuovo: Finestre a comparsa per le chiamate in arrivo durante il gioco",
+      "Nuovo: Finestre a comparsa per le chiamate in arrivo durante il gioco"
+    ],
+    "Servizio cloud Xiaomi": [
+      "Ottimizzazione: Abbiamo ridisegnato la pagina iniziale di Mi Cloud. Ora è molto meglio!",
+      "Ottimizzazione: Abbiamo ridisegnato la pagina iniziale di Mi Cloud. Ora è molto meglio!"
+    ],
+    "Altro": [
+      "Corretto: il display Always-on non si spegneva all'orario programmato"
+    ],
     "Sistema": [
       "Nuovo: Supporto Widevine L1",
       "Nuovo: Presentazione di Turbo Videogiochi. Potenzia la tua esperienza di gioco!",
@@ -437,43 +629,57 @@
       "Risolto: Terminare le chiamate richiedeva più tempo del previsto",
       "Risolto: I collegamenti della barra di stato e le notifiche a comparsa per le chiamate apparivano contemporaneamente"
     ],
-    "Schermata di blocco, barra di stato, area delle notifiche": [
-      "Nuovo: È ora possibile limitare l^apertura dell^area delle notifiche sulla schermata di blocco",
-      "Risolto: Il LED non si illuminava quando la batteria era scarica",
-      "Risolto: Gli avvisi di batteria scarica non apparivano in modalità Orizzontale",
-      "Risolto: L^icona della durata di chiamata si sovrapponeva alle icone di notifica",
-      "Risolto: Il volume di riproduzione multimediale non poteva essere ripristinato dopo che era stato abbassato da una notifica in arrivo"
-    ],
     "Schermata Home": [
-      "Risolto: I badge di notifica erano visualizzati in modo errato sull^icona di WhatsApp"
+      "Risolto: I badge di notifica erano visualizzati in modo errato sull'icona di WhatsApp"
     ],
-    "Orologio": [
-      "Risolto: Il pulsante del timer cominciava a lampeggiare quando veniva premuto",
-      "Risolto: Chiusura forzata di Orologio in alcune date specifiche"
-    ],
-    "Fotocamera": [
-      "Nuovo: Ora puoi registrare video 4K a 60fps",
-      "Nuovo: Nuove modalità per la fotocamera AI",
-      "Risolto: Chiusura forzata della Fotocamera quando la app era chiusa e aperta di nuovo in modalità Video",
-      "Risolto: Quando l^utente annullava lo scatto di una foto tramite collegamento nei Messaggi e poi toccava il collegamento Fotocamera di nuovo, la Fotocamera si arrestava in modo anomalo"
-    ],
-    "Impostazioni": [
-      "Risolto: La pagina di sincronizzazione non poteva essere aggiornata quando la sincronizzazione era attiva o disattivata nell^area delle notifiche"
-    ],
-    "Recenti": [
-      "Ottimizzazione: I nomi delle app venivano troncati quando la dimensione del testo era impostata su L"
-    ],
-    "Turbo Videogiochi": [
-      "Nuovo: Finestre a comparsa per le chiamate in arrivo durante il gioco"
-    ],
-    "Mi Cloud": [
-      "Ottimizzazione: Abbiamo ridisegnato la pagina iniziale di Mi Cloud. Ora è molto meglio!"
-    ],
-    "Altro": [
+    "Mi Smart Hub": [
       "Risolto: La visualizzazione degli elementi a schermo spento non poteva essere disattivata in tempo in alcuni casi"
     ]
   },
   "logs_es": {
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Reparado: La luz LED no parpadeó cuando la batería estaba baja",
+      "Corrección: El volumen multimedia no se restauraba tras bajar por una notificación",
+      "Nuevo: Ahora puedes restringir abrir la Barra de notificaciones en la Pantalla de bloqueo",
+      "Reparado: La luz LED no parpadeó cuando la batería estaba baja",
+      "Reparado: El aviso de batería baja no apareció en el Modo paisaje",
+      "Reparado: La burbuja de la duración de llamada se superpuso con los iconos de notificaciones",
+      "Reparado: El volumen de la reproducción multimedia no pudo ser restaurado después de ser bajado por una notificación entrante"
+    ],
+    "Reloj": [
+      "Reparar: El botón del temporizador comenzó a parpadear después de ser pulsado",
+      "Reparar: Cierre forzoso del Reloj en algunas fechas específicas",
+      "Reparado: El botón del temporizador comenzó a parpadear después de ser pulsado",
+      "Reparado: Cierre forzoso del Reloj en algunas fechas específicas"
+    ],
+    "Cámara": [
+      "Nuevo: Nuevo modos para la cámara IA",
+      "Reparar: La Cámara se cerró de forma forzosa cuando la aplicación fue cerrada y se volvió a abrir en el Modo vídeo",
+      "Reparar: Cuando el usuario canceló al hacer una foto usando un acceso directo en Mensajería y después volvió a pulsar el acceso directo, la Cámara se bloqueó",
+      "Nuevo: Ahora puedes grabar vídeos 4K a 60 fps",
+      "Nuevo: Nuevo modos para la cámara IA",
+      "Reparado: La Cámara se cerró de forma forzosa cuando la aplicación fue cerrada y se volvió a abrir en el Modo vídeo",
+      "Reparado: Cuando el usuario canceló al hacer una foto usando un acceso directo en Mensajería y después volvió a pulsar el acceso directo, la Cámara se bloqueó"
+    ],
+    "Ajustes": [
+      "Optimización: Las fuentes grandes ahora se muestran mejor",
+      "Reparado: La página de sincronización no pudo ser refrescada cuando la sincronización fue activada o desactivada en la Barra de notificaciones"
+    ],
+    "Recientes": [
+      "Optimización: Los nombres de aplicaciones fueron reducidos cuando el tamaño del texto fue establecido como grande",
+      "Optimización: Los nombres de aplicaciones fueron reducidos cuando el tamaño del texto fue establecido como grande"
+    ],
+    "Acelerador de juegos": [
+      "Nuevo: Ventanas flotantes para llamadas entrantes durante juegos",
+      "Nuevo: Ventanas flotantes para llamadas entrantes durante juegos"
+    ],
+    "Servicio en la nube de Xiaomi": [
+      "Optimización: Hemos rediseñado la página de inicio de Mi Nube. ¡Ahora tiene mucho mejor aspecto!",
+      "Optimización: Hemos rediseñado la página de inicio de Mi Nube. ¡Ahora tiene mucho mejor aspecto!"
+    ],
+    "Otros": [
+      "Corregido: la pantalla Always-on no se apagaba a la hora programada"
+    ],
     "Sistema": [
       "Nuevo: Compatible con Widevine L1",
       "Nuevo: Introducción a Game Turbo. ¡Mejora tu experiencia de juego!",
@@ -483,431 +689,540 @@
       "Reparado: Terminar las llamadas llevó más tiempo de lo esperado",
       "Reparado: El acceso directo a la Barra de estado y notificaciones flotantes para llamadas aparecieron al mismo tiempo"
     ],
-    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
-      "Nuevo: Ahora puedes restringir abrir la Barra de notificaciones en la Pantalla de bloqueo",
-      "Reparado: La luz LED no parpadeó cuando la batería estaba baja",
-      "Reparado: El aviso de batería baja no apareció en el Modo paisaje",
-      "Reparado: La burbuja de la duración de llamada se superpuso con los iconos de notificaciones",
-      "Reparado: El volumen de la reproducción multimedia no pudo ser restaurado después de ser bajado por una notificación entrante"
-    ],
     "Pantalla de inicio": [
       "Reparado: Los iconos de notificaciones fueron mostrados de forma incorrecta en el icono de WhatsApp"
     ],
-    "Reloj": [
-      "Reparado: El botón del temporizador comenzó a parpadear después de ser pulsado",
-      "Reparado: Cierre forzoso del Reloj en algunas fechas específicas"
-    ],
-    "Cámara": [
-      "Nuevo: Ahora puedes grabar vídeos 4K a 60 fps",
-      "Nuevo: Nuevo modos para la cámara IA",
-      "Reparado: La Cámara se cerró de forma forzosa cuando la aplicación fue cerrada y se volvió a abrir en el Modo vídeo",
-      "Reparado: Cuando el usuario canceló al hacer una foto usando un acceso directo en Mensajería y después volvió a pulsar el acceso directo, la Cámara se bloqueó"
-    ],
-    "Ajustes": [
-      "Reparado: La página de sincronización no pudo ser refrescada cuando la sincronización fue activada o desactivada en la Barra de notificaciones"
-    ],
-    "Recientes": [
-      "Optimización: Los nombres de aplicaciones fueron reducidos cuando el tamaño del texto fue establecido como grande"
-    ],
-    "Acelerador de juegos": [
-      "Nuevo: Ventanas flotantes para llamadas entrantes durante juegos"
-    ],
-    "Mi Cloud": [
-      "Optimización: Hemos rediseñado la página de inicio de Mi Nube. ¡Ahora tiene mucho mejor aspecto!"
-    ],
-    "Otros": [
+    "Mi Smart Hub": [
       "Reparado: Mostrar elementos en la pantalla apagada no pudo ser desactivado en algunos casos"
     ]
   },
   "logs_pt": {
-    "System": [
-      "New: Widevine L1 support",
-      "New: Introducing Game Turbo. Boost your gaming experience!",
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security."
+    "Tela de bloqueio, Barra de status e Área de notificações": [
+      "Correção: o LED de notificação não piscava quando a bateria estava fraca.",
+      "Correção: O volume de mídia não era restaurado após ser reduzido por uma notificação",
+      "Novo: agora é possível impedir a abertura do painel de notificações na tela de bloqueio",
+      "Correção: o LED de notificação não piscava quando a bateria estava fraca.",
+      "Correção: O aviso de bateria fraca não aparecia no modo paisagem",
+      "Correção: o balão de duração da chamada se sobrepunha aos ícones de notificação",
+      "Corrigido o problema em que o volume não era restaurado após diminuir ao receber uma notificação durante a reprodução de áudio de mídia"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
+    "Relógio": [
+      "Correção: o botão da página do temporizador pisca ao ser tocado",
+      "Correção: o Relógio fechava à força em datas específicas",
+      "Corrigido o problema de os botões da página do timer piscarem ao tocar.",
+      "Corrigido o problema de fechamento inesperado do Relógio em datas especiais"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Media playback volume couldn^t be restored after it was lowered by an incoming notification"
+    "Câmera": [
+      "Novas cenas da câmera AI: modo Lua, torre, foto em grupo",
+      "Correção: a câmera fecha forçadamente ao sair e reabrir no modo Vídeo",
+      "Correção: Ao abrir a Câmera nas Mensagens para tirar uma foto, tocar em Cancelar e selecionar a Câmera novamente, ocorria uma falha da Câmera.",
+      "Adicionado suporte para gravação de vídeo 4K@60FPS",
+      "Novas cenas da câmera AI: modo Lua, torre, foto em grupo",
+      "Corrigida falha da câmera que sempre ocorria ao sair e voltar ao modo de gravação de vídeo",
+      "Corrigido erro da câmera ao selecionar a câmera novamente após cancelar a captura quando o SMS chama a câmera para tirar foto"
     ],
-    "Home screen": [
-      "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
-    ],
-    "Clock": [
-      "Fix: Timer button started flashing after being tapped",
-      "Fix: Clock force closed on some specific dates"
-    ],
-    "Camera": [
-      "New: You can shoot 4K videos at 60fps now",
-      "New: New modes for AI camera",
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode",
-      "Fix: When the user canceled making a photo using a shortcut in Messaging and then tapped the Camera shortcut again, Camera crashed"
-    ],
-    "Settings": [
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
+    "Configurações": [
+      "Otimização Fontes grandes são exibidas melhor agora",
+      "Correção: a página de sincronização não era atualizada ao ativar ou desativar a sincronização no painel de notificações"
     ],
     "Recents": [
-      "Optimization: App names were truncated when texts size was set to large"
+      "Otimizado o comprimento de exibição dos nomes dos apps e o efeito de exibição de fontes grandes",
+      "Otimizado o comprimento de exibição dos nomes dos apps e o efeito de exibição de fontes grandes"
     ],
-    "Game speed booster": [
-      "New: Floating windows for incoming calls during games"
+    "Acelerador de jogos": [
+      "Novo: Janelas flutuantes para chamadas recebidas durante jogos",
+      "Novo: janela flutuante para chamadas recebidas durante jogos"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "Serviço de nuvem Xiaomi": [
+      "Otimização: Nós redesenhamos a página inicial da Mi Cloud. Ela está muito melhor agora!",
+      "Otimização: nova página inicial do Mi Cloud otimizada, informações de armazenamento em nuvem exibidas com mais clareza."
     ],
-    "Other": [
-      "Fix: Displaying items on the turned off screen couldn^t be turned off on time in some cases"
+    "Outros": [
+      "Corrigido: a tela Always-on não desligava no horário programado"
+    ],
+    "Sistema": [
+      "Adicionado suporte para Widevine L1",
+      "Adicionada função de aceleração de jogos, melhorando a otimização de jogos em nível de sistema.",
+      "Otimização: Patch de segurança do Android atualizado para março de 2019. Segurança do sistema melhorada."
+    ],
+    "Telefone": [
+      "Correção: encerrar chamadas demorava mais do que o esperado",
+      "Correção: a barra flutuante de chamada recebida e a barra verde de chamada apareciam ao mesmo tempo."
+    ],
+    "Ecrã inicial": [
+      "Correção: os badges de notificação eram exibidos incorretamente no ícone do WhatsApp."
+    ],
+    "Mi Smart Hub": [
+      "Corrigido o problema em que a exibição da tela com brilho baixo não podia ser desativada por agendamento"
     ]
   },
   "logs_tr": {
-    "Sistem": [
-      "Yeni: Widevine L1 desteği",
-      "Yeni: Game Turbo^yu sunuyoruz. Oyun deneyiminizi geliştirin!",
-      "Optimizasyon: Android Güvenlik Yaması Mart 2019 sürümüne güncellendi. Sistem güvenliği artırıldı."
-    ],
-    "Telefon": [
-      "Onarım: Aramaları sonlandırmak beklenenden daha uzun sürdü",
-      "Onarım: Durum çubuğu kısayolu ve aramalar için kayan bildirimler aynı anda belirdi"
-    ],
     "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Onarım: Pil seviyesi düşükken LED ışık yanıp sönmedi",
+      "Düzeltme: Bildirim geldiğinde kısılan medya sesi eski haline dönmüyordu",
       "Yeni: Kilit ekranında Bildirim çubuğunun açılmasını kısıtlayabilirsiniz",
       "Onarım: Pil seviyesi düşükken LED ışık yanıp sönmedi",
       "Onarım: Manzara modunda düşük pil uyarıları gösterilmedi",
       "Onarım: Arama süresi penceresi bildirim simgeleriyle üst üste bindi",
       "Onarım: Medya oynatma sesi, gelen bir bildirim tarafından kısıldıktan sonra geri alınamadı"
     ],
-    "Ana ekran": [
-      "Onarım: Bildirim rozetleri WhatsApp simgesinde yanlış görüntülendi"
-    ],
     "Saat": [
+      "Onar: Zamanlayıcı tuşu, dokunulduktan sonra yanmaya başladı",
+      "Onar: Saat, belirli tarihlerde kapanmaya zorlandı",
       "Onarım: Zamanlayıcı tuşu, dokunulduktan sonra yanmaya başladı",
       "Onarım: Saat, belirli tarihlerde kapanmaya zorlandı"
     ],
     "Kamera": [
-      "Yeni: Şimdi 60fps^de 4K videolar çekebilirsiniz",
+      "Yeni: AI kamera için yeni modlar",
+      "Onar: Uygulama kapatıldığında Kamera kapanmaya zorlandı ve Video modunda tekrar açıldı",
+      "Onar: Kullanıcı, Mesajlaşma uygulamasında bir kısayol kullanarak bir fotoğraf oluşturma işlemini iptal edip, Kamera kısayoluna tekrar dokunduğunda, Kamera uygulaması çöktü",
+      "Yeni: Şimdi 60fps'de 4K videolar çekebilirsiniz",
       "Yeni: AI kamera için yeni modlar",
       "Onarım: Uygulama kapatıldığında Kamera kapanmaya zorlandı ve Video modunda tekrar açıldı",
       "Onarım: Kullanıcı, Mesajlaşma uygulamasında bir kısayol kullanarak bir fotoğraf oluşturma işlemini iptal edip, Kamera kısayoluna tekrar dokunduğunda, Kamera uygulaması çöktü"
     ],
     "Ayarlar": [
+      "Optimizasyon: Büyük yazı biçimleri şimdi daha iyi görüntüleniyor",
       "Onarım: Senkronizasyon Bildirim çubuğunda açıldığında veya kapatıldığında senkronizasyon sayfası yenilenemedi"
     ],
     "Son kullanılanlar": [
+      "Optimizasyon: Metinlerin boyutu büyük olarak ayarlandığında uygulama adları kesildi",
       "Optimizasyon: Metinlerin boyutu büyük olarak ayarlandığında uygulama adları kesildi"
     ],
     "Oyun hız artırıcı": [
+      "Yeni: Oyunlar sırasında gelen aramalar için kayan pencereler",
       "Yeni: Oyunlar sırasında gelen aramalar için kayan pencereler"
     ],
-    "Mi Cloud": [
-      "Optimizasyon: Mi Cloud^un ana sayfasını yeniden tasarladık, artık çok daha iyi görünüyor!"
+    "Xiaomi Bulut Hizmeti": [
+      "Optimizasyon: Mi Cloud'un ana sayfasını yeniden tasarladık, artık çok daha iyi görünüyor!",
+      "Optimizasyon: Mi Cloud'un ana sayfasını yeniden tasarladık, artık çok daha iyi görünüyor!"
     ],
     "Diğer": [
+      "Düzeltme: Always-on ekranı zamanlanan saatte kapanmıyordu"
+    ],
+    "Sistem": [
+      "Yeni: Widevine L1 desteği",
+      "Yeni: Game Turbo'yu sunuyoruz. Oyun deneyiminizi geliştirin!",
+      "Optimizasyon: Android Güvenlik Yaması Mart 2019 sürümüne güncellendi. Sistem güvenliği artırıldı."
+    ],
+    "Telefon": [
+      "Onarım: Aramaları sonlandırmak beklenenden daha uzun sürdü",
+      "Onarım: Durum çubuğu kısayolu ve aramalar için kayan bildirimler aynı anda belirdi"
+    ],
+    "Ana ekran": [
+      "Onarım: Bildirim rozetleri WhatsApp simgesinde yanlış görüntülendi"
+    ],
+    "Mi Smart Hub": [
       "Onarım: Kapalı ekranda ögelerin görüntülenmesi bazı durumlarda açılabilir veya kapatılabilir hale getirildi"
     ]
   },
   "logs_id": {
-    "System": [
-      "New: Widevine L1 support",
-      "New: Introducing Game Turbo. Boost your gaming experience!",
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security."
+    "Layar kunci, bar status, layar notifikasi": [
+      "Perbaikan: Lampu notifikasi tidak berkedip saat baterai lemah.",
+      "Perbaikan: Volume media tidak kembali setelah dikecilkan oleh notifikasi masuk",
+      "Baru: Dukungan untuk mencegah membuka panel notifikasi di layar kunci",
+      "Perbaikan: Lampu notifikasi tidak berkedip saat baterai lemah.",
+      "Perbaikan: Peringatan baterai lemah tidak muncul dalam mode lanskap",
+      "Perbaikan: gelembung durasi panggilan tumpang tindih dengan ikon notifikasi",
+      "Memperbaiki masalah volume tidak kembali normal setelah turun saat menerima notifikasi selama pemutaran audio media"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
+    "Jam": [
+      "Perbaikan: tombol di halaman pengatur waktu berkedip saat diketuk",
+      "Perbaikan: Jam mengalami force close pada tanggal tertentu",
+      "Memperbaiki masalah tombol di halaman Timer berkedip saat diketuk.",
+      "Memperbaiki masalah aplikasi Jam yang force close pada tanggal khusus"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Media playback volume couldn^t be restored after it was lowered by an incoming notification"
+    "Kamera": [
+      "Skena baru kamera AI: mode Bulan, menara, foto grup",
+      "Perbaikan: Kamera menutup paksa saat keluar dan masuk kembali ke mode Video",
+      "Perbaikan: Saat membuka Kamera dari Pesan untuk mengambil foto, mengetuk Batal, lalu memilih Kamera lagi menyebabkan gangguan Kamera.",
+      "Menambahkan dukungan perekaman video 4K@60FPS",
+      "Skena baru kamera AI: mode Bulan, menara, foto grup",
+      "Perbaikan crash kamera yang selalu terjadi saat keluar dan masuk kembali dalam mode rekam video",
+      "Perbaikan kamera bermasalah saat memilih kamera lagi setelah mengetuk Batal ketika SMS memanggil kamera untuk memotret"
     ],
-    "Home screen": [
-      "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
-    ],
-    "Clock": [
-      "Fix: Timer button started flashing after being tapped",
-      "Fix: Clock force closed on some specific dates"
-    ],
-    "Camera": [
-      "New: You can shoot 4K videos at 60fps now",
-      "New: New modes for AI camera",
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode",
-      "Fix: When the user canceled making a photo using a shortcut in Messaging and then tapped the Camera shortcut again, Camera crashed"
-    ],
-    "Settings": [
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
+    "Pengaturan": [
+      "Pengoptimalan Ukuran huruf besar dapat ditampilkan dengan lebih baik",
+      "Perbaikan: Halaman sinkronisasi tidak diperbarui saat sinkronisasi diaktifkan atau dinonaktifkan dari panel notifikasi"
     ],
     "Recents": [
-      "Optimization: App names were truncated when texts size was set to large"
+      "Mengoptimalkan panjang tampilan nama aplikasi dan efek tampilan font besar",
+      "Mengoptimalkan panjang tampilan nama aplikasi dan efek tampilan font besar"
     ],
-    "Game speed booster": [
-      "New: Floating windows for incoming calls during games"
+    "Peningkat kecepatan permainan": [
+      "Baru: Jendela mengambang untuk panggilan masuk saat bermain permainan"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "Layanan Cloud Xiaomi": [
+      "Pengoptimalan: Halaman awal Mi Cloud didesain ulang. Sekarang semakin terlihat lebih baik!",
+      "Optimasi: Halaman utama baru Mi Cloud telah dioptimalkan, informasi ruang cloud ditampilkan lebih jelas."
     ],
-    "Other": [
-      "Fix: Displaying items on the turned off screen couldn^t be turned off on time in some cases"
+    "Lainnya": [
+      "Perbaikan: layar Always-on tidak dapat dimatikan sesuai jadwal"
+    ],
+    "Sistem": [
+      "Menambahkan dukungan Widevine L1",
+      "Menambahkan fitur akselerasi game, meningkatkan optimasi game tingkat sistem.",
+      "Optimasi: Patch keamanan Android diperbarui ke Maret 2019. Keamanan sistem ditingkatkan."
+    ],
+    "Telepon": [
+      "Perbaikan: Mengakhiri panggilan membutuhkan waktu lebih lama dari yang diharapkan",
+      "Perbaikan: Bilah mengambang panggilan masuk dan bilah hijau panggilan muncul bersamaan."
+    ],
+    "Layar Utama": [
+      "Perbaikan: Lencana notifikasi ditampilkan secara tidak benar pada ikon WhatsApp."
+    ],
+    "Pemercepat game": [
+      "Baru: jendela mengambang untuk panggilan masuk saat bermain game"
     ]
   },
   "logs_vi": {
-    "System": [
-      "New: Widevine L1 support",
-      "New: Introducing Game Turbo. Boost your gaming experience!",
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security."
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Sửa lỗi: đèn thông báo không nhấp nháy khi pin yếu.",
+      "Sửa lỗi: Âm lượng phát media không khôi phục sau khi bị giảm do thông báo đến",
+      "Mới: Hỗ trợ chặn kéo xuống bảng thông báo trên màn hình khóa",
+      "Sửa lỗi: đèn thông báo không nhấp nháy khi pin yếu.",
+      "Sửa lỗi: Cảnh báo pin yếu không hiển thị ở chế độ ngang",
+      "Đã sửa: bong bóng thời gian gọi bị chồng lên biểu tượng thông báo",
+      "Khắc phục sự cố âm lượng không trở lại sau khi giảm khi nhận thông báo trong lúc phát âm thanh đa phương tiện"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
+    "Đồng hồ": [
+      "Sửa lỗi: nút trên trang hẹn giờ nhấp nháy khi được nhấn",
+      "Sửa lỗi: Đồng hồ bị buộc dừng vào một số ngày cụ thể",
+      "Đã khắc phục lỗi nhấp nháy nút trên trang Hẹn giờ khi chạm.",
+      "Sửa lỗi ứng dụng Đồng hồ bị thoát đột ngột vào những ngày đặc biệt"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Media playback volume couldn^t be restored after it was lowered by an incoming notification"
+    "Máy ảnh": [
+      "Cảnh mới cho camera AI: chế độ Mặt Trăng, tòa tháp, ảnh nhóm",
+      "Sửa lỗi: Camera bị buộc dừng khi thoát và vào lại ở chế độ Quay video",
+      "Sửa: Khi mở Camera từ Tin nhắn để chụp ảnh, nhấn Hủy rồi chọn lại Camera gây lỗi Camera.",
+      "Thêm hỗ trợ quay video 4K@60FPS",
+      "Cảnh mới cho camera AI: chế độ Mặt Trăng, tòa tháp, ảnh nhóm",
+      "Sửa lỗi camera luôn bị thoát khi thoát ra và vào lại trong chế độ quay video",
+      "Sửa lỗi camera gặp sự cố khi chọn lại camera sau khi nhấn hủy lúc SMS gọi camera để chụp ảnh"
     ],
-    "Home screen": [
-      "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
-    ],
-    "Clock": [
-      "Fix: Timer button started flashing after being tapped",
-      "Fix: Clock force closed on some specific dates"
-    ],
-    "Camera": [
-      "New: You can shoot 4K videos at 60fps now",
-      "New: New modes for AI camera",
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode",
-      "Fix: When the user canceled making a photo using a shortcut in Messaging and then tapped the Camera shortcut again, Camera crashed"
-    ],
-    "Settings": [
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
+    "Cài đặt": [
+      "Tối ưu hóa: Phông chữ lớn hiện được hiển thị tốt hơn",
+      "Sửa lỗi: Trang đồng bộ không làm mới khi bật hoặc tắt đồng bộ từ bảng thông báo"
     ],
     "Recents": [
-      "Optimization: App names were truncated when texts size was set to large"
+      "Tối ưu hóa độ dài hiển thị tên ứng dụng và hiệu ứng hiển thị phông chữ lớn",
+      "Tối ưu hóa độ dài hiển thị tên ứng dụng và hiệu ứng hiển thị phông chữ lớn"
     ],
-    "Game speed booster": [
-      "New: Floating windows for incoming calls during games"
+    "Tăng tốc trò chơi": [
+      "Mới: Cửa sổ nổi cho cuộc gọi đến trong khi chơi game",
+      "Mới: cửa sổ nổi cho cuộc gọi đến khi chơi game"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "Dịch vụ đám mây Xiaomi": [
+      "Tối ưu hóa: Trang chủ dịch vụ đám mây được thiết kế lại, dung lượng khả dụng hiển thị trực quan hơn.",
+      "Tối ưu hóa: Trang chủ mới của Mi Cloud đã được tối ưu, thông tin dung lượng đám mây hiển thị rõ ràng hơn."
     ],
-    "Other": [
-      "Fix: Displaying items on the turned off screen couldn^t be turned off on time in some cases"
+    "Khác": [
+      "Đã sửa: màn hình Always-on không thể tắt theo lịch"
+    ],
+    "Hệ thống": [
+      "Đã thêm hỗ trợ Widevine L1",
+      "Thêm tính năng tăng tốc trò chơi, nâng cao tối ưu hóa trò chơi ở cấp hệ thống.",
+      "Tối ưu: Đã cập nhật bản vá bảo mật Android lên tháng 3 năm 2019. Tăng cường bảo mật hệ thống."
+    ],
+    "Điện thoại": [
+      "Đã sửa: Việc kết thúc cuộc gọi mất nhiều thời gian hơn dự kiến",
+      "Sửa: Thanh nổi cuộc gọi đến và thanh màu xanh cuộc gọi xuất hiện cùng lúc."
+    ],
+    "Màn hình chính": [
+      "Sửa lỗi: huy hiệu thông báo hiển thị không chính xác trên biểu tượng WhatsApp."
+    ],
+    "Mi Smart Hub": [
+      "Khắc phục sự cố không thể tắt hiển thị màn hình mờ theo lịch"
     ]
   },
   "logs_th": {
-    "System": [
-      "New: Widevine L1 support",
-      "New: Introducing Game Turbo. Boost your gaming experience!",
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security."
+    "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
+      "แก้ไข: ไฟแจ้งเตือนไม่กะพริบเมื่อแบตเตอรี่ต่ำ",
+      "แก้ไข: ระดับเสียงสื่อไม่กลับมาหลังจากลดลงเมื่อมีการแจ้งเตือน",
+      "ใหม่: รองรับการห้ามเลื่อนลงเพื่อเปิดแผงการแจ้งเตือนบนหน้าจอล็อก",
+      "แก้ไข: ไฟแจ้งเตือนไม่กะพริบเมื่อแบตเตอรี่ต่ำ",
+      "แก้ไข: คำเตือนแบตเตอรี่ต่ำไม่แสดงในโหมดแนวนอน",
+      "แก้ไข: ฟองเวลาการโทรทับซ้อนกับไอคอนการแจ้งเตือน",
+      "แก้ไขปัญหาที่ระดับเสียงไม่กลับคืนหลังลดลงเมื่อมีการแจ้งเตือนระหว่างเล่นเสียงมีเดีย"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
+    "นาฬิกา": [
+      "แก้ไขปัญหาปุ่มในหน้าตัวจับเวลากระพริบเมื่อแตะ",
+      "แก้ไขปัญหานาฬิกาหยุดทำงานในวันที่เฉพาะเจาะจง",
+      "แก้ไขปัญหาปุ่มในหน้า Timer กระพริบเมื่อแตะ",
+      "แก้ไขปัญหานาฬิกาหยุดทำงานในวันที่พิเศษ"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Media playback volume couldn^t be restored after it was lowered by an incoming notification"
+    "กล้อง": [
+      "ฉากใหม่ของกล้อง AI: โหมดพระจันทร์, หอคอย, ภาพหมู่",
+      "แก้ไข: กล้องหยุดทำงานเมื่อออกแล้วกลับเข้าโหมดวิดีโออีกครั้ง",
+      "แก้ไข: เมื่อเรียกใช้กล้องจากข้อความเพื่อถ่ายรูป แล้วแตะยกเลิกและเลือกกล้องอีกครั้ง เกิดข้อผิดพลาดของกล้อง",
+      "เพิ่มการรองรับการบันทึกวิดีโอ 4K@60FPS",
+      "ฉากใหม่ของกล้อง AI: โหมดพระจันทร์, หอคอย, ภาพหมู่",
+      "แก้ไขปัญหาแอปกล้องแครชทุกครั้งเมื่อออกแล้วกลับเข้าโหมดบันทึกวิดีโอ",
+      "แก้ไขปัญหากล้องขัดข้องเมื่อเลือกกล้องอีกครั้งหลังจากกดยกเลิกขณะ SMS เรียกใช้กล้องเพื่อถ่ายรูป"
     ],
-    "Home screen": [
-      "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
-    ],
-    "Clock": [
-      "Fix: Timer button started flashing after being tapped",
-      "Fix: Clock force closed on some specific dates"
-    ],
-    "Camera": [
-      "New: You can shoot 4K videos at 60fps now",
-      "New: New modes for AI camera",
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode",
-      "Fix: When the user canceled making a photo using a shortcut in Messaging and then tapped the Camera shortcut again, Camera crashed"
-    ],
-    "Settings": [
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
+    "การตั้งค่า": [
+      "การเพิ่มประสิทธิภาพ: ตัวอักษรขนาดใหญ่แสดงผลได้ดีขึ้นแล้ว",
+      "แก้ไข: หน้าการซิงค์ไม่รีเฟรชเมื่อเปิดหรือปิดการซิงค์จากแผงการแจ้งเตือน"
     ],
     "Recents": [
-      "Optimization: App names were truncated when texts size was set to large"
+      "ปรับความยาวการแสดงชื่อแอปและเอฟเฟกต์การแสดงผลฟอนต์ขนาดใหญ่ให้เหมาะสม",
+      "ปรับความยาวการแสดงชื่อแอปและเอฟเฟกต์การแสดงผลฟอนต์ขนาดใหญ่ให้เหมาะสม"
     ],
-    "Game speed booster": [
-      "New: Floating windows for incoming calls during games"
+    "ตัวเร่งความเร็วเกม": [
+      "ใหม่: ฟีเจอร์หน้าต่างลอยสำหรับการโทร รองรับการแสดงสถานะการเชื่อมต่อผ่านหน้าต่างลอยสำหรับสายที่รับระหว่างเล่นเกม"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "บริการคลาวด์ Xiaomi": [
+      "ปรับปรุง: ออกแบบหน้าหลักของบริการคลาวด์ใหม่ ทำให้แสดงพื้นที่ว่างได้ชัดเจนขึ้น",
+      "ปรับปรุง: ปรับปรุงหน้าแรกใหม่ของ Mi Cloud ให้แสดงข้อมูลพื้นที่จัดเก็บบนคลาวด์ได้ชัดเจนขึ้น"
     ],
-    "Other": [
-      "Fix: Displaying items on the turned off screen couldn^t be turned off on time in some cases"
+    "อื่นๆ": [
+      "แก้ไข: หน้าจอ Always-on ไม่สามารถปิดตามกำหนดเวลาได้"
+    ],
+    "ระบบ": [
+      "เพิ่มการรองรับ Widevine L1",
+      "เพิ่มฟีเจอร์เร่งความเร็วเกม ช่วยปรับปรุงการปรับแต่งเกมระดับระบบ",
+      "เพิ่มประสิทธิภาพ: อัปเดตแพตช์ความปลอดภัย Android เป็นเดือนมีนาคม 2019 เพิ่มความปลอดภัยของระบบ"
+    ],
+    "โทรศัพท์": [
+      "แก้ไข: การวางสายใช้เวลานานกว่าที่คาดไว้",
+      "แก้ไข: แถบลอยของการโทรเข้าและแถบสีเขียวของการโทรแสดงพร้อมกัน"
+    ],
+    "หน้าจอหลัก": [
+      "แก้ไข: การแสดงสัญลักษณ์การแจ้งเตือนบนไอคอน WhatsApp ไม่ถูกต้อง"
+    ],
+    "เพิ่มความเร็วเกม": [
+      "ใหม่: หน้าต่างลอยสำหรับสายเรียกเข้าขณะเล่นเกม"
+    ],
+    "Mi Smart Hub": [
+      "แก้ไขปัญหาการแสดงผลหน้าจอสลัวที่ไม่สามารถปิดตามกำหนดเวลาได้"
     ]
   },
   "logs_ar": {
-    "System": [
-      "New: Widevine L1 support",
-      "New: Introducing Game Turbo. Boost your gaming experience!",
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security."
+    "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
+      "إصلاح: لم يكن مؤشر الإشعارات يومض عند انخفاض البطارية.",
+      "إصلاح: لم يستعد صوت الوسائط مستواه بعد خفضه عند وصول إشعار",
+      "جديد: دعم منع سحب لوحة الإشعارات على شاشة القفل",
+      "إصلاح: لم يكن مؤشر الإشعارات يومض عند انخفاض البطارية.",
+      "إصلاح: إشعار انخفاض البطارية لم يظهر في الوضع الأفقي",
+      "إصلاح: تداخل فقاعة مدة المكالمة مع أيقونات الإشعارات",
+      "إصلاح مشكلة عدم استعادة مستوى الصوت بعد انخفاضه عند وصول إشعار أثناء تشغيل صوت الوسائط"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
+    "الساعة": [
+      "إصلاح مشكلة وميض زر صفحة المؤقت عند النقر عليه",
+      "إصلاح مشكلة تعطل تطبيق الساعة في تواريخ محددة"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Media playback volume couldn^t be restored after it was lowered by an incoming notification"
+    "كاميرا": [
+      "مشاهد جديدة لكاميرا AI: وضع القمر، البرج، صورة جماعية",
+      "إصلاح: تعطل الكاميرا عند الخروج وإعادة الدخول في وضع الفيديو",
+      "إصلاح: عند فتح الكاميرا من الرسائل لالتقاط صورة، ثم الضغط على إلغاء واختيار الكاميرا مرة أخرى، كان يحدث خطأ في الكاميرا."
     ],
-    "Home screen": [
-      "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
-    ],
-    "Clock": [
-      "Fix: Timer button started flashing after being tapped",
-      "Fix: Clock force closed on some specific dates"
-    ],
-    "Camera": [
-      "New: You can shoot 4K videos at 60fps now",
-      "New: New modes for AI camera",
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode",
-      "Fix: When the user canceled making a photo using a shortcut in Messaging and then tapped the Camera shortcut again, Camera crashed"
-    ],
-    "Settings": [
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
+    "الإعدادات": [
+      "التحسين: يتم عرض الخطوط الكبيرة بشكل أفضل الآن",
+      "إصلاح: تعذّر تحديث صفحة المزامنة عند تشغيل المزامنة أو إيقافها من لوحة الإشعارات"
     ],
     "Recents": [
-      "Optimization: App names were truncated when texts size was set to large"
+      "تحسين طول عرض أسماء التطبيقات، وتحسين تأثير عرض الخط الكبير",
+      "تحسين طول عرض أسماء التطبيقات، وتحسين تأثير عرض الخط الكبير"
     ],
-    "Game speed booster": [
-      "New: Floating windows for incoming calls during games"
+    "تسريع الألعاب": [
+      "جديد: ميزة النافذة العائمة للمكالمات، وتدعم عرض حالة الاتصال في نافذة عائمة للمكالمات التي يتم الرد عليها أثناء الألعاب"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "خدمة Xiaomi السحابية": [
+      "تحسين: إعادة تصميم الصفحة الرئيسية لخدمة السحابة، وعرض المساحة المتاحة بشكل أكثر وضوحًا",
+      "تحسين: تم تحسين الصفحة الرئيسية الجديدة لـ Mi Cloud، وأصبحت معلومات التخزين السحابي أكثر وضوحًا."
     ],
-    "Other": [
-      "Fix: Displaying items on the turned off screen couldn^t be turned off on time in some cases"
+    "أخرى": [
+      "إصلاح: تعذّر إيقاف شاشة Always-on في الوقت المحدد"
+    ],
+    "النظام": [
+      "إضافة دعم Widevine L1",
+      "تمت إضافة ميزة تسريع الألعاب لتحسين أداء الألعاب على مستوى النظام.",
+      "التحسين: تحديث تصحيح أمان Android إلى مارس 2019. تحسين أمان النظام."
+    ],
+    "هاتف": [
+      "إصلاح: استغرق إنهاء المكالمات وقتًا أطول من المتوقع",
+      "إصلاح: ظهور شريط المكالمة العائم والشريط الأخضر للمكالمة في الوقت نفسه."
+    ],
+    "الشاشة الرئيسية": [
+      "إصلاح: عرض شارات الإشعارات بشكل غير صحيح على أيقونة WhatsApp"
+    ],
+    "ساعة": [
+      "إصلاح مشكلة وميض أزرار صفحة المؤقت عند النقر عليها.",
+      "إصلاح مشكلة تعطل تطبيق الساعة في التواريخ الخاصة"
+    ],
+    "الكاميرا": [
+      "تمت إضافة دعم تسجيل فيديو بدقة 4K@60FPS",
+      "مشاهد جديدة لكاميرا AI: وضع القمر، البرج، صورة جماعية",
+      "إصلاح تعطل الكاميرا دائمًا عند الخروج وإعادة الدخول في وضع تسجيل الفيديو",
+      "إصلاح خطأ الكاميرا عند اختيار الكاميرا مرة أخرى بعد الضغط على إلغاء أثناء استدعاء الرسائل للكاميرا لالتقاط صورة"
+    ],
+    "مسرّع الألعاب": [
+      "جديد: نوافذ عائمة للمكالمات الواردة أثناء الألعاب"
+    ],
+    "Mi Smart Hub": [
+      "إصلاح مشكلة عدم إمكانية إغلاق عرض الشاشة الخافتة في الوقت المحدد"
     ]
   },
   "logs_in": {
-    "System": [
-      "New: Widevine L1 support",
-      "New: Introducing Game Turbo. Boost your gaming experience!",
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security."
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
+      "ठीक किया गया: बैटरी कम होने पर सूचना LED नहीं ब्लिंक होती थी।",
+      "ठीक किया गया: सूचना आने पर मीडिया की आवाज़ कम होने के बाद बहाल नहीं होती थी",
+      "नया: लॉक स्क्रीन पर नोटिफ़िकेशन शेड को नीचे खींचकर खोलने से रोकें",
+      "ठीक किया गया: बैटरी कम होने पर सूचना LED नहीं ब्लिंक होती थी।",
+      "ठीक करें: लैंडस्केप मोड में कम बैटरी चेतावनी प्रदर्शित नहीं हुई",
+      "ठीक किया गया: कॉल अवधि बबल नोटिफ़िकेशन आइकन के साथ ओवरलैप हो रहा था",
+      "मीडिया ऑडियो चलने के दौरान सूचना आने पर आवाज़ कम होने के बाद बहाल न होने की समस्या ठीक की गई"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
+    "घड़ी": [
+      "टाइमर पेज पर बटन टैप करने पर झिलमिलाने की समस्या ठीक की गई",
+      "कुछ खास तारीखों पर घड़ी के क्रैश होने की समस्या ठीक की गई",
+      "टाइमर पेज पर बटन क्लिक करने पर होने वाली झिलमिलाहट की समस्या ठीक की गई।",
+      "विशेष तिथियों पर घड़ी के क्रैश होने की समस्या ठीक की गई"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Media playback volume couldn^t be restored after it was lowered by an incoming notification"
+    "कैमरा": [
+      "नए AI कैमरा दृश्य: चंद्रमा मोड, टावर, ग्रुप फोटो",
+      "ठीक किया गया: वीडियो मोड में बाहर निकलकर फिर से प्रवेश करने पर कैमरा बलपूर्वक बंद हो जाता था",
+      "ठीक किया गया: संदेश में फ़ोटो लेने के लिए कैमरा खोलने पर रद्द करें पर टैप करने और फिर कैमरा चुनने से कैमरा खराबी आती थी।",
+      "4K@60FPS वीडियो रिकॉर्डिंग के समर्थन को जोड़ा गया",
+      "नए AI कैमरा दृश्य: चंद्रमा मोड, टावर, ग्रुप फोटो",
+      "वीडियो रिकॉर्डिंग में बाहर निकलकर फिर से प्रवेश करने पर हमेशा होने वाले कैमरा क्रैश को ठीक किया गया",
+      "सुधार: SMS से कैमरा खोलकर फोटो लेते समय रद्द पर टैप करने के बाद दोबारा कैमरा चुनने पर कैमरा खराब होने की समस्या ठीक की गई"
     ],
-    "Home screen": [
-      "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
-    ],
-    "Clock": [
-      "Fix: Timer button started flashing after being tapped",
-      "Fix: Clock force closed on some specific dates"
-    ],
-    "Camera": [
-      "New: You can shoot 4K videos at 60fps now",
-      "New: New modes for AI camera",
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode",
-      "Fix: When the user canceled making a photo using a shortcut in Messaging and then tapped the Camera shortcut again, Camera crashed"
-    ],
-    "Settings": [
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
+    "सेटिंग्स": [
+      "अनुकूलन: बड़े फ़ॉन्ट अब बेहतर प्रदर्शित होते हैं",
+      "फ़िक्स: नोटिफ़िकेशन शेड से सिंक चालू या बंद करने पर सिंक पेज रीफ़्रेश नहीं होता था"
     ],
     "Recents": [
-      "Optimization: App names were truncated when texts size was set to large"
+      "ऐप नामों की प्रदर्शन लंबाई और बड़े फ़ॉन्ट के प्रदर्शन प्रभाव को अनुकूलित किया गया",
+      "ऐप नामों की प्रदर्शन लंबाई और बड़े फ़ॉन्ट के प्रदर्शन प्रभाव को अनुकूलित किया गया"
     ],
-    "Game speed booster": [
-      "New: Floating windows for incoming calls during games"
+    "गेम गति बूस्टर": [
+      "नया: फ़ोन फ़्लोटिंग विंडो सुविधा, गेम के दौरान कनेक्ट होने वाले कॉल का कनेक्टेड स्टेटस फ़्लोटिंग विंडो में दिखाने का समर्थन करती है।"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
+    "Xiaomi क्लाउड सेवा": [
+      "अनुकूलन: क्लाउड सेवा के होमपेज को फिर से डिज़ाइन किया गया है, उपलब्ध स्थान अब और स्पष्ट रूप से दिखता है।",
+      "अनुकूलन: Mi Cloud के नए होमपेज को अनुकूलित किया गया, क्लाउड स्टोरेज की जानकारी अब और स्पष्ट दिखती है।"
     ],
-    "Other": [
-      "Fix: Displaying items on the turned off screen couldn^t be turned off on time in some cases"
+    "अन्य": [
+      "ठीक किया गया: Always-on डिस्प्ले निर्धारित समय पर बंद नहीं हो रहा था"
+    ],
+    "सिस्टम": [
+      "Widevine L1 के लिए समर्थन जोड़ा गया",
+      "गेम त्वरण सुविधा जोड़ी गई, सिस्टम-स्तरीय गेम अनुकूलन में सुधार।",
+      "अनुकूलन: Android सुरक्षा पैच को मार्च 2019 में अपडेट किया गया। सिस्टम सुरक्षा में सुधार।"
+    ],
+    "फ़ोन": [
+      "ठीक किया गया: कॉल समाप्त करने में अपेक्षा से अधिक समय लगा",
+      "फ़िक्स: इनकमिंग कॉल फ़्लोटिंग बार और कॉल ग्रीन बार का एक ही समय पर दिखना।"
+    ],
+    "होम स्क्रीन": [
+      "WhatsApp आइकन पर नोटिफ़िकेशन बैज गलत तरीके से दिखने की समस्या ठीक की गई।"
+    ],
+    "गेम स्पीड बूस्टर": [
+      "नया: गेम के दौरान आने वाली कॉल के लिए फ़्लोटिंग विंडो"
+    ],
+    "Mi स्मार्ट हब": [
+      "डिम स्क्रीन प्रदर्शन को निर्धारित समय पर बंद न किए जाने की समस्या ठीक की गई"
     ]
   },
   "logs_ug": {
-    "System": [
-      "New: Widevine L1 support",
-      "New: Introducing Game Turbo. Boost your gaming experience!",
-      "Optimization: Updated Android Security Patch to March 2019. Increased system security."
-    ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
-    ],
     "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode",
+      "Fix: LED light didn't blink when battery was low",
+      "مېدىيا ئاۋازى قويۇلۇۋاتقاندا ئۇقتۇرۇش كەلگەندە، ئاۋاز كىچىكلەپ قالغاندىن كېيىن ئەسلىگە قايتمايدىغان مەسىلە ئوڭشالدى.",
+      "يېڭى: قۇلۇپ ئېكرانى بېتىدە ئۇقتۇرۇش تاختىسىنى تۆۋەن تارتىشنى چەكلەشنى قوللايدۇ",
+      "Fix: LED light didn't blink when battery was low",
+      "Fix: Low battery warning didn't appear in landscape mode",
       "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Media playback volume couldn^t be restored after it was lowered by an incoming notification"
+      "مېدىيا ئاۋازى قويۇلۇۋاتقاندا ئۇقتۇرۇش كەلگەندە ئاۋاز كىچىكلەپ، ئەسلىگە قايتمايدىغان مەسىلە تۈزىتىلدى."
     ],
-    "Home screen": [
-      "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
-    ],
-    "Clock": [
-      "Fix: Timer button started flashing after being tapped",
+    "سائەت": [
+      "تایمېر بېتىدىكى كۇنۇپكىنى باسقاندا پارقىراش مەسىلىسىنى تۈزەت",
+      "سائەت ئالاھىدە چېسلاردا مەجبۇرىي تاقىلىپ قېلىش مەسىلىسى تۈزىتىلدى",
+      "Timer بېتىدىكى كۇنۇپكىلارنى چەككەندە پارقىراش مەسىلىسى تۈزىتىلدى.",
       "Fix: Clock force closed on some specific dates"
     ],
-    "Camera": [
+    "كامېرا": [
+      "يېڭىدىن قوشۇلدى: AI كامېرا كۆرۈنۈشلىرى: ئاي ھالىتى، مۇنار، گۇرۇپپا سۈرەت",
+      "Fix: Camera force closed when the app was closed and opened again in the Video mode",
+      "Fix: When the user canceled making a photo using a shortcut in Messaging and then tapped the Camera shortcut again, Camera crashed",
       "New: You can shoot 4K videos at 60fps now",
-      "New: New modes for AI camera",
+      "يېڭىدىن قوشۇلدى: AI كامېرا كۆرۈنۈشلىرى: ئاي ھالىتى، مۇنار، گۇرۇپپا سۈرەت",
       "Fix: Camera force closed when the app was closed and opened again in the Video mode",
       "Fix: When the user canceled making a photo using a shortcut in Messaging and then tapped the Camera shortcut again, Camera crashed"
     ],
-    "Settings": [
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
+    "تەڭشەك": [
+      "Optimization: Big fonts are displayed better now"
+    ],
+    "ئويۇن تېزلىتىش": [
+      "New: Floating windows for incoming calls during games",
+      "New: Floating windows for incoming calls during games"
+    ],
+    "Xiaomi بۇلۇت مۇلازىمىتى": [
+      "ياخشىلاندى: بۇلۇت مۇلازىمىتى باش بېتى قايتا لايىھەلەندى، ئىشلەتكىلى بولىدىغان بوشلۇق كۆرسىتىلىشى تېخىمۇ كۆرۈنەرلىك بولدى.",
+      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!"
+    ],
+    "سىستېما": [
+      "Widevine L1 قوللاش قوشۇلدى",
+      "ئويۇن تېزلىتىش ئىقتىدارى قوشۇلدى، سىستېما دەرىجىسىدىكى ئويۇن ئوپتىماللاشتۇرۇش ياخشىلاندى",
+      "ئەلالاشتۇرۇش: Google بىخەتەرلىك يامىقى يېڭىلاندى (2019#3)، سىستېما بىخەتەرلىكى ئاشۇرۇلدى."
+    ],
+    "تېلېفون": [
+      "Fix: Ending calls took longer time than expected",
+      "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
+    ],
+    "باش ئېكران": [
+      "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
+    ],
+    "تەڭشەكلەر": [
+      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade"
     ],
     "Recents": [
       "Optimization: App names were truncated when texts size was set to large"
-    ],
-    "Game speed booster": [
-      "New: Floating windows for incoming calls during games"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
-    ],
-    "Other": [
-      "Fix: Displaying items on the turned off screen couldn^t be turned off on time in some cases"
     ]
   },
   "logs_bo": {
-    "System": [
+    "Lockscreen, status bar, Notification shade": [
+      "Fix: LED light didn't blink when battery was low",
+      "Fix: Media playback volume couldn't be restored after it was lowered by an incoming notification",
+      "New: You can restrict opening Notification shade on the Lock screen now",
+      "Fix: LED light didn't blink when battery was low",
+      "Fix: Low battery warning didn't appear in landscape mode",
+      "Fix: Call time bubble overlapped with notification icons",
+      "Fix: Media playback volume couldn't be restored after it was lowered by an incoming notification"
+    ],
+    "ཆུ་ཚོད།": [
+      "Fix: Timer button started flashing after being tapped",
+      "Fix: Clock force closed on some specific dates"
+    ],
+    "པར་ཆས": [
+      "New: New modes for AI camera",
+      "Fix: Camera force closed when the app was closed and opened again in the Video mode",
+      "Fix: When the user canceled making a photo using a shortcut in Messaging and then tapped the Camera shortcut again, Camera crashed"
+    ],
+    "Settings": [
+      "Optimization: Big fonts are displayed better now"
+    ],
+    "Game speed booster": [
+      "New: Floating windows for incoming calls during games",
+      "New: Floating windows for incoming calls during games"
+    ],
+    "Mi Cloud": [
+      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!",
+      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!"
+    ],
+    "རིམ་ལུགས": [
       "New: Widevine L1 support",
       "New: Introducing Game Turbo. Boost your gaming experience!",
       "Optimization: Updated Android Security Patch to March 2019. Increased system security."
     ],
-    "Phone": [
+    "ཁ་པར": [
       "Fix: Ending calls took longer time than expected",
       "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
-    ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: You can restrict opening Notification shade on the Lock screen now",
-      "Fix: LED light didn^t blink when battery was low",
-      "Fix: Low battery warning didn^t appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Media playback volume couldn^t be restored after it was lowered by an incoming notification"
     ],
     "Home screen": [
       "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
     ],
-    "Clock": [
+    "ཆུ་ཚོད": [
       "Fix: Timer button started flashing after being tapped",
       "Fix: Clock force closed on some specific dates"
     ],
@@ -917,20 +1232,11 @@
       "Fix: Camera force closed when the app was closed and opened again in the Video mode",
       "Fix: When the user canceled making a photo using a shortcut in Messaging and then tapped the Camera shortcut again, Camera crashed"
     ],
-    "Settings": [
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade"
+    "སྒྲིག་བཀོད": [
+      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade"
     ],
     "Recents": [
       "Optimization: App names were truncated when texts size was set to large"
-    ],
-    "Game speed booster": [
-      "New: Floating windows for incoming calls during games"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!"
-    ],
-    "Other": [
-      "Fix: Displaying items on the turned off screen couldn^t be turned off on time in some cases"
     ]
   }
 }

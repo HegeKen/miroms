@@ -3,10 +3,14 @@
     "锁屏、状态栏、通知栏": [
       "优化 状态栏GPS图标显示",
       "修复 横屏状态下未及时展示低电量悬浮通知的问题",
+      "修复 锁屏通知栏双重显示问题",
+      "优化 状态栏GPS图标显示",
+      "修复 横屏状态下未及时展示低电量悬浮通知的问题",
       "修复 锁屏通知栏双重显示问题"
     ],
     "最近任务": [
       "新增 使用小爱同学清理最近任务的能力",
+      "优化 最近任务卡片删除流畅性",
       "优化 最近任务卡片删除流畅性"
     ],
     "游戏加速": [
@@ -14,13 +18,260 @@
     ]
   },
   "logs_en": {
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Optimization: GPS icon in the status bar",
+      "Fix: Battery-related floating notifications weren't displayed correctly in landscape mode",
+      "Fix: Overlapping items in the Notification shade"
+    ],
     "Lockscreen, status bar, Notification shade": [
       "Optimization: GPS icon in the status bar",
-      "Fix: Battery-related floating notifications weren^t displayed correctly in landscape mode",
+      "Fix: Battery-related floating notifications weren't displayed correctly in landscape mode",
       "Fix: Overlapping items in the Notification shade"
     ],
     "Recents": [
       "Optimization: Recents are cleared faster now"
+    ]
+  },
+  "logs_zh_tw": {
+    "解鎖畫面、狀態欄、通知欄": [
+      "優化: 狀態列GPS圖示顯示",
+      "修復 橫向螢幕狀況下未即時顯示低電量懸浮通知的問題",
+      "修復 鎖定螢幕通知欄雙重顯示問題",
+      "優化: 狀態列GPS圖示顯示",
+      "修復 橫向螢幕狀況下未即時顯示低電量懸浮通知的問題",
+      "修復 鎖定螢幕通知欄雙重顯示問題"
+    ],
+    "近期任務": [
+      "最佳化：最近任務卡片刪除更流暢"
+    ]
+  },
+  "logs_ja": {
+    "ロック画面、ステータスバー、通知バー": [
+      "最適化: ステータスバーのGPSアイコン",
+      "横画面時に低バッテリーのフローティング通知が適時に表示されない問題を修正",
+      "ロック画面の通知シェードで重複表示される問題を修正"
+    ],
+    "ロック画面、ステータスバー、通知シェード": [
+      "最適化: ステータスバーのGPSアイコン",
+      "横画面時に低バッテリーのフローティング通知が適時に表示されない問題を修正",
+      "ロック画面の通知シェードで重複表示される問題を修正"
+    ],
+    "Recents": [
+      "最適化: 最近タスクのカード削除がスムーズになりました"
+    ]
+  },
+  "logs_ko": {
+    "잠금 화면, 상태 표시줄, 알림 표시줄": [
+      "최적화: 상태 바의 GPS 아이콘",
+      "가로 모드에서 배터리 부족 플로팅 알림이 제때 표시되지 않던 문제를 수정",
+      "잠금 화면 알림 패널 중복 표시 문제 수정"
+    ],
+    "잠금화면, 상태 바, 알림 바": [
+      "최적화: 상태 바의 GPS 아이콘",
+      "가로 모드에서 배터리 부족 플로팅 알림이 제때 표시되지 않던 문제를 수정",
+      "잠금 화면 알림 패널 중복 표시 문제 수정"
+    ],
+    "Recents": [
+      "최적화: 최근 작업 카드 삭제가 더 원활해졌습니다"
+    ]
+  },
+  "logs_ru": {
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Оптимизация: Значок GPS в строке состояния",
+      "Исправлено: Всплывающие уведомления, связанные с аккумулятором, не отображались правильно в режиме альбомной ориентации",
+      "Исправлено двойное отображение в панели уведомлений на экране блокировки",
+      "Оптимизация: Значок GPS в строке состояния",
+      "Исправлено: Всплывающие уведомления, связанные с аккумулятором, не отображались правильно в режиме альбомной ориентации",
+      "Исправлено двойное отображение в панели уведомлений на экране блокировки"
+    ],
+    "Недавнее": [
+      "Оптимизация: карточки недавних задач удаляются быстрее"
+    ]
+  },
+  "logs_uk": {
+    "Екран блокування, рядок стану, рядок сповіщень": [
+      "Оптимізація: Іконка GPS у рядку стану",
+      "Виправлено проблему, коли плаваюче сповіщення про низький заряд батареї не відображалося вчасно в горизонтальному режимі",
+      "Виправлено подвійне відображення в панелі сповіщень на екрані блокування"
+    ],
+    "Екран блокування, рядок стану, панель сповіщень": [
+      "Оптимізація: Іконка GPS у рядку стану",
+      "Виправлено проблему, коли плаваюче сповіщення про низький заряд батареї не відображалося вчасно в горизонтальному режимі",
+      "Виправлено подвійне відображення в панелі сповіщень на екрані блокування"
+    ],
+    "Recents": [
+      "Оптимізація: картки недавніх завдань видаляються швидше"
+    ]
+  },
+  "logs_pl": {
+    "Ekran blokady, pasek stanu, pasek powiadomień": [
+      "Zoptymalizowano: Ikona GPS na pasku statusu",
+      "Naprawiono problem z nieterminowym wyświetlaniem pływającego powiadomienia o niskim poziomie baterii w trybie poziomym",
+      "Naprawiono podwójne wyświetlanie w panelu powiadomień na ekranie blokady"
+    ],
+    "Ekran blokady, pasek powiadomień,panel powiadomień": [
+      "Zoptymalizowano: Ikona GPS na pasku statusu",
+      "Naprawiono problem z nieterminowym wyświetlaniem pływającego powiadomienia o niskim poziomie baterii w trybie poziomym",
+      "Naprawiono podwójne wyświetlanie w panelu powiadomień na ekranie blokady"
+    ],
+    "Recents": [
+      "Optymalizacja: płynniejsze usuwanie kart ostatnich zadań"
+    ]
+  },
+  "logs_de": {
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
+      "Optimierung: GPS-Symbol in der Statusleiste",
+      "Behebung: Bei niedrigem Akkustand wurde im Querformat die schwebende Benachrichtigung nicht rechtzeitig angezeigt",
+      "Doppelte Anzeige in der Benachrichtigungsleiste auf dem Sperrbildschirm behoben"
+    ],
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
+      "Optimierung: GPS-Symbol in der Statusleiste",
+      "Behebung: Bei niedrigem Akkustand wurde im Querformat die schwebende Benachrichtigung nicht rechtzeitig angezeigt",
+      "Doppelte Anzeige in der Benachrichtigungsleiste auf dem Sperrbildschirm behoben"
+    ]
+  },
+  "logs_fr": {
+    "Écran de verrouillage, barre d’état, barre de notifications": [
+      "Optimisation: Icône GPS dans la barre d'état",
+      "Réparé: Les notifications flottantes relatives à la batterie n'étaient pas affichées correctement en mode paysage",
+      "Correction du double affichage dans le volet de notifications de l’écran verrouillé"
+    ],
+    "Écran de verrouillage, Barre d'état, Panneau de notification": [
+      "Optimisation: Icône GPS dans la barre d'état",
+      "Réparé: Les notifications flottantes relatives à la batterie n'étaient pas affichées correctement en mode paysage",
+      "Correction du double affichage dans le volet de notifications de l’écran verrouillé"
+    ],
+    "Recents": [
+      "Optimisation : suppression plus fluide des cartes des tâches récentes"
+    ]
+  },
+  "logs_it": {
+    "Schermata di blocco, barra di stato, barra delle notifiche": [
+      "Ottimizzazione: Icona del GPS nella barra di stato",
+      "Risolto: Le notifiche a comparsa relative alla batteria non erano visualizzate correttamente in modalità orizzontale",
+      "Corretta la doppia visualizzazione nel pannello notifiche della schermata di blocco"
+    ],
+    "Schermata di blocco, barra di stato, area delle notifiche": [
+      "Ottimizzazione: Icona del GPS nella barra di stato",
+      "Risolto: Le notifiche a comparsa relative alla batteria non erano visualizzate correttamente in modalità orizzontale",
+      "Corretta la doppia visualizzazione nel pannello notifiche della schermata di blocco"
+    ],
+    "Recenti": [
+      "Ottimizzazione: eliminazione più fluida delle schede delle attività recenti"
+    ]
+  },
+  "logs_es": {
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Optimización: Icono del GPS en la barra de estado",
+      "Reparado: Las notificaciones flotantes relacionadas con la batería no se mostraban correctamente en el modo paisaje",
+      "Corregida la doble visualización en el panel de notificaciones de la pantalla de bloqueo",
+      "Optimización: Icono del GPS en la barra de estado",
+      "Reparado: Las notificaciones flotantes relacionadas con la batería no se mostraban correctamente en el modo paisaje",
+      "Corregida la doble visualización en el panel de notificaciones de la pantalla de bloqueo"
+    ],
+    "Recientes": [
+      "Optimización: eliminación más fluida de las tarjetas de tareas recientes"
+    ]
+  },
+  "logs_pt": {
+    "Tela de bloqueio, barra de status, barra de notificações": [
+      "Otimização: Ícone do GPS na barra de status",
+      "Correção: Notificações flutuantes sobre a bateria não eram exibidas corretamente em modo paisagem",
+      "Corrigida a exibição dupla no painel de notificações da tela de bloqueio"
+    ],
+    "Tela de bloqueio, Barra de status e Área de notificações": [
+      "Otimização: Ícone do GPS na barra de status",
+      "Correção: Notificações flutuantes sobre a bateria não eram exibidas corretamente em modo paisagem",
+      "Corrigida a exibição dupla no painel de notificações da tela de bloqueio"
+    ],
+    "Recents": [
+      "Otimização: exclusão mais fluida dos cartões de tarefas recentes"
+    ]
+  },
+  "logs_tr": {
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Optimizasyon: Durum çubuğunda GPS simgesi",
+      "Onarım: Pille ilgili kayan bildirimler, manzara modunda doğru görüntülenmedi",
+      "Kilit ekranı bildirim panelindeki çift görünüm düzeltildi",
+      "Optimizasyon: Durum çubuğunda GPS simgesi",
+      "Onarım: Pille ilgili kayan bildirimler, manzara modunda doğru görüntülenmedi",
+      "Kilit ekranı bildirim panelindeki çift görünüm düzeltildi"
+    ],
+    "Son kullanılanlar": [
+      "Optimizasyon: Son görev kartlarını silme akıcılığı iyileştirildi"
+    ]
+  },
+  "logs_id": {
+    "Layar kunci, bilah status, bilah notifikasi": [
+      "Pengoptimalan: Ikon GPS di bilah status",
+      "Perbaikan: Notifikasi mengambang yang berkaitan dengan baterai tidak ditampilkan saat dalam mode horisontal",
+      "Memperbaiki tampilan ganda di panel notifikasi layar kunci"
+    ],
+    "Layar kunci, bar status, layar notifikasi": [
+      "Pengoptimalan: Ikon GPS di bilah status",
+      "Perbaikan: Notifikasi mengambang yang berkaitan dengan baterai tidak ditampilkan saat dalam mode horisontal",
+      "Memperbaiki tampilan ganda di panel notifikasi layar kunci"
+    ],
+    "Recents": [
+      "Optimasi: penghapusan kartu tugas terbaru lebih lancar"
+    ]
+  },
+  "logs_vi": {
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Tối ưu: Biểu tượng GPS trên thanh trạng thái",
+      "Sửa lỗi thông báo nổi pin yếu không được hiển thị kịp thời ở chế độ ngang",
+      "Đã sửa lỗi hiển thị trùng lặp trong bảng thông báo trên màn hình khóa",
+      "Tối ưu: Biểu tượng GPS trên thanh trạng thái",
+      "Sửa lỗi thông báo nổi pin yếu không được hiển thị kịp thời ở chế độ ngang",
+      "Đã sửa lỗi hiển thị trùng lặp trong bảng thông báo trên màn hình khóa"
+    ],
+    "Recents": [
+      "Tối ưu hóa: xóa thẻ tác vụ gần đây mượt mà hơn"
+    ]
+  },
+  "logs_th": {
+    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
+      "การเพิ่มประสิทธิภาพ: ไอคอน GPS บนแถบสถานะ",
+      "แก้ไขปัญหาการไม่แสดงการแจ้งเตือนแบบลอยสำหรับแบตเตอรี่ต่ำในโหมดแนวนอนอย่างทันท่วงที",
+      "แก้ไขปัญหาการแสดงซ้ำในแผงการแจ้งเตือนบนหน้าจอล็อก"
+    ],
+    "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
+      "การเพิ่มประสิทธิภาพ: ไอคอน GPS บนแถบสถานะ",
+      "แก้ไขปัญหาการไม่แสดงการแจ้งเตือนแบบลอยสำหรับแบตเตอรี่ต่ำในโหมดแนวนอนอย่างทันท่วงที",
+      "แก้ไขปัญหาการแสดงซ้ำในแผงการแจ้งเตือนบนหน้าจอล็อก"
+    ],
+    "Recents": [
+      "ปรับแต่ง: การลบการ์ดงานล่าสุดลื่นไหลขึ้น"
+    ]
+  },
+  "logs_ar": {
+    "شاشة القفل، شريط الحالة، شريط الإشعارات": [
+      "التحسين: أيقونة GPS في شريط الحالة",
+      "إصلاح: لم يتم عرض إشعار عائم خاص بانخفاض البطارية في الوقت المناسب في الوضع الأفقي",
+      "إصلاح العرض المزدوج في لوحة الإشعارات على شاشة القفل"
+    ],
+    "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
+      "التحسين: أيقونة GPS في شريط الحالة",
+      "إصلاح: لم يتم عرض إشعار عائم خاص بانخفاض البطارية في الوقت المناسب في الوضع الأفقي",
+      "إصلاح العرض المزدوج في لوحة الإشعارات على شاشة القفل"
+    ],
+    "Recents": [
+      "تحسين: سلاسة حذف بطاقات المهام الأخيرة"
+    ]
+  },
+  "logs_in": {
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
+      "ऑप्टिमाइज़ेशन स्टेटस बार में जीपीएस आइकन",
+      "लैंडस्केप मोड में कम बैटरी की फ़्लोटिंग सूचना समय पर न दिखने की समस्या ठीक की गई",
+      "लॉक स्क्रीन सूचना शेड में दोहरा प्रदर्शन ठीक किया गया"
+    ],
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
+      "ऑप्टिमाइज़ेशन स्टेटस बार में जीपीएस आइकन",
+      "लैंडस्केप मोड में कम बैटरी की फ़्लोटिंग सूचना समय पर न दिखने की समस्या ठीक की गई",
+      "लॉक स्क्रीन सूचना शेड में दोहरा प्रदर्शन ठीक किया गया"
+    ],
+    "Recents": [
+      "अनुकूलन: हाल के कार्य कार्ड हटाने की सहजता में सुधार"
     ]
   }
 }

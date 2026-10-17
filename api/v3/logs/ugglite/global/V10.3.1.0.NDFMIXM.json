@@ -1,25 +1,36 @@
 {
   "logs_zh": {
     "系统": [
+      "更新谷歌安全补丁（2019#6），提升系统安全性",
       "更新谷歌安全补丁（2019#6），提升系统安全性"
     ],
     "电话": [
+      "修复 挂断电话慢问题",
       "修复 挂断电话慢问题"
     ],
     "联系人": [
+      "修复 SIM联系人无法删除问题",
       "修复 SIM联系人无法删除问题"
     ],
     "锁屏、状态栏、通知栏": [
       "新增 系统主题下，锁屏时钟支持三种自定义样式，可在锁屏高级设置中修改",
       "优化 调节图形密码中圆点的触发区域，提升复杂图形密码绘制的成功率",
       "修复 来电悬浮条和通话绿条同时存在情况",
+      "修复 收到通知后媒体音量没有恢复的问题",
+      "新增 系统主题下，锁屏时钟支持三种自定义样式，可在锁屏高级设置中修改",
+      "优化 调节图形密码中圆点的触发区域，提升复杂图形密码绘制的成功率",
+      "修复 来电悬浮条和通话绿条同时存在情况",
+      "修复 下拉状态栏开启或关闭同步，同步界面不刷新问题",
       "修复 收到通知后媒体音量没有恢复的问题"
     ],
     "设置": [
+      "优化 大字体界面的显示效果",
       "优化 大字体界面的显示效果"
     ],
     "小米云服务": [
       "优化 云服务新版首页，云空间信息显示更清晰",
+      "优化 多设备之间数据同步及时性",
+      "优化 云服务首页重新设计，可用空间显示更加直观",
       "优化 多设备之间数据同步及时性"
     ]
   },
@@ -28,36 +39,48 @@
       "Updated Android Security Patch to June 2019. Increased system security."
     ],
     "Phone": [
+      "Fix: Ending calls took longer time than expected",
       "Fix: Ending calls took longer time than expected"
     ],
     "Contacts": [
-      "Fix: Contacts couldn^t be deleted from SIM cards in some cases"
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases"
     ],
     "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
       "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
       "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Media volume couldn^t be restored after receiving a notification"
+      "Fix: Media volume couldn't be restored after receiving a notification"
     ],
     "Settings": [
+      "Optimization: Big fonts are displayed better now",
       "Optimization: Big fonts are displayed better now"
     ],
     "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
+      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!",
+      "Optimization: Improved sync across multiple devices",
+      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!",
       "Optimization: Improved sync across multiple devices"
     ]
   },
   "logs_zh_tw": {
     "系統": [
+      "更新Android安全性修補程式等級(2019#6)，提升系統安全性",
       "更新Android安全性修補程式等級(2019#6)，提升系統安全性"
     ],
     "電話": [
+      "修復 掛斷電話較慢的問題",
       "修復 掛斷電話較慢的問題"
     ],
     "聯絡人": [
+      "修復 SIM聯絡人無法刪除的問題",
       "修復 SIM聯絡人無法刪除的問題"
     ],
     "解鎖畫面、狀態欄、通知欄": [
+      "新增 系統主題下，鎖屏時鐘支援三種自訂型式，可在鎖屏進階設定中修改",
+      "優化 調節圖型密碼中圓點的觸發區域，提升複雜圖型密碼繪製的成功率",
+      "修復 來電懸浮條和通話綠條同時存在的情況",
+      "修復 收到通知後媒體音量沒有恢復的問題",
       "新增 系統主題下，鎖屏時鐘支援三種自訂型式，可在鎖屏進階設定中修改",
       "優化 調節圖型密碼中圓點的觸發區域，提升複雜圖型密碼繪製的成功率",
       "修復 來電懸浮條和通話綠條同時存在的情況",
@@ -65,74 +88,104 @@
       "修復 收到通知後媒體音量沒有恢復的問題"
     ],
     "設定": [
+      "優化 大字體介面的顯示效果",
       "優化 大字體介面的顯示效果"
     ],
     "小米雲服務": [
+      "優化 雲服務首頁重新設計，雲端可用空間顯示更加直觀",
+      "優化 多裝置之間數據同步即時性",
       "優化 雲服務首頁重新設計，雲端可用空間顯示更加直觀",
       "優化 多裝置之間數據同步即時性"
     ]
   },
   "logs_ja": {
-    "System": [
-      "Updated Android Security Patch to June 2019. Increased system security."
+    "システム": [
+      "Androidセキュリティパッチを2019年6月に更新しました。システムの安全性が向上しました。",
+      "Android セキュリティパッチを 2019 年 6 月に更新しました。システムの安全性が向上しました。"
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected"
+    "電話": [
+      "修正: 通話終了に予想以上に時間がかかる問題",
+      "修正: 通話終了に予想以上に時間がかかる問題"
     ],
-    "Contacts": [
-      "Fix: Contacts couldn^t be deleted from SIM cards in some cases"
+    "連絡先": [
+      "修正: SIMカードの連絡先を削除できない場合がある問題",
+      "修正: SIMカードの連絡先を削除できない場合がある問題"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
+    "ロック画面、ステータスバー、通知シェード": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "最適化: ロック解除パターンのドットの感応領域を調整",
+      "修正: 着信のフローティングバーと通話の緑色バーが同時に表示される問題。",
+      "修正: 通知を受信した後にメディア音量が元に戻らない問題",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "最適化: ロック解除パターンのドットの感応領域を調整",
       "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Media volume couldn^t be restored after receiving a notification"
+      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade",
+      "修正: 通知を受信した後にメディア音量が元に戻らない問題"
     ],
-    "Settings": [
-      "Optimization: Big fonts are displayed better now"
+    "設定": [
+      "最適化: 大きなフォントの表示が改善されました",
+      "最適化: 大きなフォントの表示が改善されました"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
-      "Optimization: Improved sync across multiple devices"
+    "Xiaomi クラウドサービス": [
+      "最適化：Mi Cloudのスタートページを再設計しました。より見やすくなりました",
+      "最適化: 複数デバイス間のデータ同期を改善",
+      "最適化: クラウドサービスのホームページを再設計し、空き容量がより分かりやすく表示されるようになりました。",
+      "最適化: 複数デバイス間のデータ同期を改善"
     ]
   },
   "logs_ko": {
-    "System": [
-      "Updated Android Security Patch to June 2019. Increased system security."
+    "시스템": [
+      "Android 보안 패치를 2019년 6월로 업데이트했습니다. 시스템 보안이 강화되었습니다.",
+      "Android 보안 패치를 2019년 6월로 업데이트했습니다. 시스템 보안이 향상되었습니다."
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected"
+    "전화": [
+      "수정: 통화 종료가 예상보다 오래 걸리는 문제",
+      "수정: 통화 종료가 예상보다 오래 걸리는 문제"
     ],
-    "Contacts": [
-      "Fix: Contacts couldn^t be deleted from SIM cards in some cases"
+    "연락처": [
+      "수정: 일부 상황에서 SIM 카드의 연락처를 삭제할 수 없는 문제",
+      "수정: 일부 상황에서 SIM 카드의 연락처를 삭제할 수 없는 문제"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
+    "잠금화면, 상태 바, 알림 바": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "최적화: 잠금 해제 패턴의 점 감응 영역 조정",
+      "수정: 수신 전화 플로팅 바와 통화 녹색 바가 동시에 표시되는 문제.",
+      "수정: 알림을 받은 후 미디어 볼륨이 복원되지 않는 문제",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "최적화: 잠금 해제 패턴의 점 감응 영역 조정",
       "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Media volume couldn^t be restored after receiving a notification"
+      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade",
+      "수정: 알림을 받은 후 미디어 볼륨이 복원되지 않는 문제"
     ],
-    "Settings": [
-      "Optimization: Big fonts are displayed better now"
+    "설정": [
+      "최적화: 큰 글꼴이 더 잘 표시됩니다",
+      "최적화: 큰 글꼴이 더 잘 표시됩니다"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
-      "Optimization: Improved sync across multiple devices"
+    "Xiaomi 클라우드 서비스": [
+      "최적화: Mi Cloud 새 홈페이지가 최적화되어 클라우드 공간 정보가 더 명확하게 표시됩니다.",
+      "최적화: 여러 기기 간 데이터 동기화 개선",
+      "최적화: 클라우드 서비스 홈페이지를 재설계하여 사용 가능한 공간이 더 직관적으로 표시됩니다.",
+      "최적화: 여러 기기 간 데이터 동기화 개선"
     ]
   },
   "logs_ru": {
     "Система": [
+      "Обновление системы безопасности Android (июнь 2019 года). Улучшена безопасность системы.",
       "Обновление системы безопасности Android (июнь 2019 года). Улучшена безопасность системы."
     ],
     "Телефон": [
+      "Исправлено: Завершение вызова выполнялось слишком долго",
       "Исправлено: Завершение вызова выполнялось слишком долго"
     ],
     "Контакты": [
+      "Исправлено: В некоторых случаях контакты не могли быть удалены с SIM-карты",
       "Исправлено: В некоторых случаях контакты не могли быть удалены с SIM-карты"
     ],
     "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Новое: Добавлены настраиваемые часы для экрана блокировки (Настройки > Блокировка и защита > Расширенные настройки). Новые часы для экрана блокировки несовместимы со сторонними темами",
+      "Оптимизация: Отрегулированы чувствительные зоны вокруг точек ввода графического ключа",
+      "Исправлено: Значки в строке состояния и всплывающее уведомление вызовов появлялись одновременно",
+      "Исправлено: Громкость мультимедиа не восстанавливалась после получения уведомлений",
       "Новое: Добавлены настраиваемые часы для экрана блокировки (Настройки > Блокировка и защита > Расширенные настройки). Новые часы для экрана блокировки несовместимы со сторонними темами",
       "Оптимизация: Отрегулированы чувствительные зоны вокруг точек ввода графического ключа",
       "Исправлено: Значки в строке состояния и всплывающее уведомление вызовов появлялись одновременно",
@@ -140,149 +193,209 @@
       "Исправлено: Громкость мультимедиа не восстанавливалась после получения уведомлений"
     ],
     "Настройки": [
+      "Оптимизация: Теперь шрифт большого размера отображается лучше",
       "Оптимизация: Теперь шрифт большого размера отображается лучше"
     ],
-    "Mi Cloud": [
+    "Облачный сервис Xiaomi": [
+      "Оптимизация: Мы переработали начальную страницу Mi Cloud. Теперь она выглядит намного лучше!",
+      "Оптимизация: Улучшена синхронизация данных между несколькими  устройствами",
       "Оптимизация: Мы переработали начальную страницу Mi Cloud. Теперь она выглядит намного лучше!",
       "Оптимизация: Улучшена синхронизация данных между несколькими  устройствами"
     ]
   },
   "logs_uk": {
-    "System": [
-      "Updated Android Security Patch to June 2019. Increased system security."
+    "Система": [
+      "Оновлено патч безпеки Android до червня 2019 року. Підвищено безпеку системи.",
+      "Оновлено патч безпеки Android до червня 2019 року. Підвищено безпеку системи."
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected"
+    "Телефон": [
+      "Виправлено: Завершення викликів тривало довше, ніж очікувалося",
+      "Виправлено: Завершення викликів тривало довше, ніж очікувалося"
     ],
-    "Contacts": [
-      "Fix: Contacts couldn^t be deleted from SIM cards in some cases"
+    "Контакти": [
+      "Виправлено: У деяких випадках контакти не вдавалося видалити з SIM-картки",
+      "Виправлено: У деяких випадках контакти не вдавалося видалити з SIM-картки"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
+    "Екран блокування, рядок стану, панель сповіщень": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Оптимізація: Відрегульовано чутливі зони для точок графічного ключа",
+      "Виправлено: плаваюча панель вхідного виклику та зелена смуга виклику відображалися одночасно.",
+      "Виправлено: Гучність медіа не відновлювалася після отримання сповіщення",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Оптимізація: Відрегульовано чутливі зони для точок графічного ключа",
       "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Media volume couldn^t be restored after receiving a notification"
+      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade",
+      "Виправлено: Гучність медіа не відновлювалася після отримання сповіщення"
     ],
-    "Settings": [
-      "Optimization: Big fonts are displayed better now"
+    "Налаштування": [
+      "Оптимізація: великі шрифти тепер відображаються краще",
+      "Оптимізація: великі шрифти тепер відображаються краще"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
-      "Optimization: Improved sync across multiple devices"
+    "Хмарний сервіс Xiaomi": [
+      "Оптимізація: оптимізовано нову головну сторінку Mi Cloud, інформація про хмарний простір відображається чіткіше.",
+      "Оптимізація: Покращено синхронізацію даних між кількома пристроями",
+      "Оптимізація: головну сторінку хмарного сервісу перероблено, доступний простір тепер відображається більш наочно.",
+      "Оптимізація: Покращено синхронізацію даних між кількома пристроями"
     ]
   },
   "logs_pl": {
     "System": [
-      "Updated Android Security Patch to June 2019. Increased system security."
+      "Zaktualizowano poprawkę zabezpieczeń Androida do czerwca 2019 r. Zwiększono bezpieczeństwo systemu.",
+      "Zaktualizowano poprawkę zabezpieczeń Androida do czerwca 2019. Zwiększono bezpieczeństwo systemu."
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected"
+    "Telefon": [
+      "Poprawka: Zakończenie połączeń trwało dłużej niż oczekiwano",
+      "Poprawka: Zakończenie połączeń trwało dłużej niż oczekiwano"
     ],
-    "Contacts": [
-      "Fix: Contacts couldn^t be deleted from SIM cards in some cases"
+    "Kontakty": [
+      "Poprawiono: W niektórych przypadkach nie można było usunąć kontaktów z karty SIM",
+      "Poprawiono: W niektórych przypadkach nie można było usunąć kontaktów z karty SIM"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
+    "Ekran blokady, pasek powiadomień,panel powiadomień": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Optymalizacja: Dostosowano obszary wrażliwe dla kropek we wzorze odblokowania",
+      "Poprawka: pływający pasek połączenia przychodzącego i zielony pasek połączenia wyświetlały się jednocześnie.",
+      "Poprawiono: Głośność multimediów nie wracała po otrzymaniu powiadomienia",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Optymalizacja: Dostosowano obszary wrażliwe dla kropek we wzorze odblokowania",
       "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Media volume couldn^t be restored after receiving a notification"
+      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade",
+      "Poprawiono: Głośność multimediów nie wracała po otrzymaniu powiadomienia"
     ],
-    "Settings": [
-      "Optimization: Big fonts are displayed better now"
+    "Ustawienia": [
+      "Optymalizacja: duże czcionki są teraz lepiej wyświetlane",
+      "Optymalizacja: duże czcionki są teraz lepiej wyświetlane"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
-      "Optimization: Improved sync across multiple devices"
+    "Usługa w chmurze Xiaomi": [
+      "Optymalizacja: zoptymalizowano nową stronę główną Mi Cloud, informacje o przestrzeni w chmurze są wyświetlane wyraźniej.",
+      "Optymalizacja: Poprawiono synchronizację między wieloma urządzeniami",
+      "Optymalizacja: przeprojektowano stronę główną usługi w chmurze; dostępna przestrzeń jest teraz wyświetlana bardziej intuicyjnie.",
+      "Optymalizacja: Poprawiono synchronizację między wieloma urządzeniami"
     ]
   },
   "logs_de": {
     "System": [
-      "Updated Android Security Patch to June 2019. Increased system security."
+      "Android-Sicherheitspatch auf Juni 2019 aktualisiert. Systemsicherheit verbessert.",
+      "Android-Sicherheitspatch auf Juni 2019 aktualisiert. Systemsicherheit verbessert."
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected"
+    "Telefon": [
+      "Behoben: Das Beenden von Anrufen dauerte länger als erwartet",
+      "Behoben: Das Beenden von Anrufen dauerte länger als erwartet"
     ],
-    "Contacts": [
-      "Fix: Contacts couldn^t be deleted from SIM cards in some cases"
+    "Kontakte": [
+      "Behoben: Kontakte konnten in manchen Fällen nicht von SIM-Karten gelöscht werden",
+      "Behoben: Kontakte konnten in manchen Fällen nicht von SIM-Karten gelöscht werden"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
+      "Neu: Anpassbare Uhr auf dem Sperrbildschirm (Einstellungen > Sperrbildschirm & Passwort > Erweiterte Einstellungen)",
+      "Optimierung: Empfindliche Bereiche für die Punkte im Entsperrmuster angepasst",
+      "Behebung: Die schwebende Leiste für eingehende Anrufe und der grüne Anrufbalken wurden gleichzeitig angezeigt.",
+      "Behoben: Die Medienlautstärke wurde nach Erhalt einer Benachrichtigung nicht wiederhergestellt",
+      "Neu: Anpassbare Uhr auf dem Sperrbildschirm (Einstellungen > Sperrbildschirm & Passwort > Erweiterte Einstellungen)",
+      "Optimierung: Empfindliche Bereiche für die Punkte im Entsperrmuster angepasst",
       "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Media volume couldn^t be restored after receiving a notification"
+      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade",
+      "Behoben: Die Medienlautstärke wurde nach Erhalt einer Benachrichtigung nicht wiederhergestellt"
     ],
-    "Settings": [
-      "Optimization: Big fonts are displayed better now"
+    "Einstellungen": [
+      "Optimierung: Große Schriftarten werden jetzt besser angezeigt",
+      "Optimierung: Große Schriftarten werden jetzt besser angezeigt"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
-      "Optimization: Improved sync across multiple devices"
+    "Xiaomi Cloud-Dienst": [
+      "Optimierung: Wir haben die Startseite von Mi Cloud neu gestaltet. Sie sieht jetzt viel besser aus",
+      "Optimierung: Verbesserte Synchronisierung zwischen mehreren Geräten",
+      "Optimierung: Die Startseite des Cloud-Dienstes wurde neu gestaltet; der verfügbare Speicher wird jetzt intuitiver angezeigt.",
+      "Optimierung: Verbesserte Synchronisierung zwischen mehreren Geräten"
     ]
   },
   "logs_fr": {
     "Système": [
-      "Mise à jour du correctif de sécurité Android jusqu^en juin 2019. Sécurité accrue du système."
+      "Correctif de sécurité Android mis à jour à juin 2019. Sécurité du système renforcée.",
+      "Mise à jour du correctif de sécurité Android jusqu'en juin 2019. Sécurité accrue du système."
     ],
     "Téléphone": [
-      "Réparé Mettre fin aux appels a pris plus de temps que prévu"
+      "Réparé: Mettre fin aux appels a pris plus de temps que prévu",
+      "Réparé: Mettre fin aux appels a pris plus de temps que prévu"
     ],
     "Contacts": [
+      "Réparé Les contacts ne pouvaient pas être supprimés des cartes SIM dans certains cas",
       "Réparé Les contacts ne pouvaient pas être supprimés des cartes SIM dans certains cas"
     ],
     "Écran de verrouillage, Barre d'état, Panneau de notification": [
-      "Nouveau Présentation de l’horloge de l’écran de verrouillage personnalisable (Paramètres> Écran de verrouillage et mot de passe> Paramètres avancés). La nouvelle horloge de l^écran de verrouillage ne fonctionne pas avec les thèmes tiers.",
-      "Optimisation Zones sensibles réajustées pour les points du schéma de déverrouillage",
-      "Réparé Le raccourci de la barre d^état et la notification flottante pour les appels sont apparus en même temps",
+      "Nouveau Présentation de l’horloge de l’écran de verrouillage personnalisable (Paramètres> Écran de verrouillage et mot de passe> Paramètres avancés). La nouvelle horloge de l'écran de verrouillage ne fonctionne pas avec les thèmes tiers.",
+      "Optimisation: Zones sensibles réajustées pour les points du schéma de déverrouillage",
+      "Correction : la barre flottante d’appel entrant et la barre verte d’appel s’affichaient en même temps.",
+      "Réparé Le volume du média n'a pas pu être restauré après avoir reçu une notification",
+      "Nouveau Présentation de l’horloge de l’écran de verrouillage personnalisable (Paramètres> Écran de verrouillage et mot de passe> Paramètres avancés). La nouvelle horloge de l'écran de verrouillage ne fonctionne pas avec les thèmes tiers.",
+      "Optimisation: Zones sensibles réajustées pour les points du schéma de déverrouillage",
+      "Réparé Le raccourci de la barre d'état et la notification flottante pour les appels sont apparus en même temps",
       "Réparé La page de synchronisation ne peut pas être régénérée chaque fois que la synchronisation est activée ou désactivée dans le panneau de Notifications",
-      "Réparé Le volume du média n^a pas pu être restauré après avoir reçu une notification"
+      "Réparé Le volume du média n'a pas pu être restauré après avoir reçu une notification"
     ],
     "Paramètres": [
+      "Optimisation Les grosses polices sont mieux affichées maintenant",
       "Optimisation Les grosses polices sont mieux affichées maintenant"
     ],
-    "Mi Cloud": [
-      "Optimisation Nous avons repensé la page de démarrage de Mi Cloud. Ça a l^air beaucoup mieux maintenant!",
+    "Service cloud Xiaomi": [
+      "Optimisation : la nouvelle page d’accueil de Mi Cloud a été optimisée, les informations sur l’espace cloud s’affichent plus clairement.",
+      "Optimisation Amélioration de la synchronisation sur plusieurs appareils",
+      "Optimisation: Nous avons repensé la page de démarrage de Mi Cloud. Ça a l'air beaucoup mieux maintenant!",
       "Optimisation Amélioration de la synchronisation sur plusieurs appareils"
     ]
   },
   "logs_it": {
     "Sistema": [
+      "Aggiornamento della patch di sicurezza Android a giugno 2019. Maggiore sicurezza del sistema.",
       "Aggiornamento della patch di sicurezza Android a giugno 2019. Maggiore sicurezza del sistema."
     ],
     "Telefono": [
+      "Risolto: Terminare le chiamate richiedeva più tempo del previsto",
       "Risolto: Terminare le chiamate richiedeva più tempo del previsto"
     ],
     "Contatti": [
+      "Risolto: In alcuni casi, i contatti non potevano essere eliminati dalle schede SIM",
       "Risolto: In alcuni casi, i contatti non potevano essere eliminati dalle schede SIM"
     ],
     "Schermata di blocco, barra di stato, area delle notifiche": [
-      "Nuovo: Introdotto l^orologio personalizzabile per la schermata di blocco (Impostazioni > Schermata di blocco e password > Impostazioni avanzate). Il nuovo orologio della schermata di blocco non funziona con temi di terze parti.",
+      "Nuovo: Introdotto l'orologio personalizzabile per la schermata di blocco (Impostazioni > Schermata di blocco e password > Impostazioni avanzate). Il nuovo orologio della schermata di blocco non funziona con temi di terze parti.",
       "Ottimizzazione: Riadattate le aree sensibili per i punti nella sequenza di sblocco",
       "Risolto: I collegamenti della barra di stato e le notifiche a comparsa per le chiamate apparivano contemporaneamente",
-      "Risolto: La pagina di sincronizzazione non poteva essere aggiornata quando la sincronizzazione era attiva o disattivata nell^area delle notifiche",
+      "Risolto: Il volume multimediale non poteva essere ripristinato dopo aver ricevuto una notifica",
+      "Nuovo: Introdotto l'orologio personalizzabile per la schermata di blocco (Impostazioni > Schermata di blocco e password > Impostazioni avanzate). Il nuovo orologio della schermata di blocco non funziona con temi di terze parti.",
+      "Ottimizzazione: Riadattate le aree sensibili per i punti nella sequenza di sblocco",
+      "Risolto: I collegamenti della barra di stato e le notifiche a comparsa per le chiamate apparivano contemporaneamente",
+      "Risolto: La pagina di sincronizzazione non poteva essere aggiornata quando la sincronizzazione era attiva o disattivata nell'area delle notifiche",
       "Risolto: Il volume multimediale non poteva essere ripristinato dopo aver ricevuto una notifica"
     ],
     "Impostazioni": [
+      "Ottimizzazione: I caratteri di grandi dimensioni sono ora visualizzati meglio",
       "Ottimizzazione: I caratteri di grandi dimensioni sono ora visualizzati meglio"
     ],
-    "Mi Cloud": [
+    "Servizio cloud Xiaomi": [
+      "Ottimizzazione: Abbiamo ridisegnato la pagina iniziale di Mi Cloud. Ora è molto meglio!",
+      "Ottimizzazione: Sincronizzazione migliorata su più dispositivi",
       "Ottimizzazione: Abbiamo ridisegnato la pagina iniziale di Mi Cloud. Ora è molto meglio!",
       "Ottimizzazione: Sincronizzazione migliorata su più dispositivi"
     ]
   },
   "logs_es": {
     "Sistema": [
+      "Parche de seguridad de Android actualizado a junio de 2019. Seguridad del sistema incrementada.",
       "Parche de seguridad de Android actualizado a junio de 2019. Seguridad del sistema incrementada."
     ],
     "Teléfono": [
+      "Reparado: Terminar las llamadas llevó más tiempo de lo esperado",
       "Reparado: Terminar las llamadas llevó más tiempo de lo esperado"
     ],
     "Contactos": [
+      "Reparado: Los contactos no podían ser eliminados de las tarjetas SIM en algunos casos",
       "Reparado: Los contactos no podían ser eliminados de las tarjetas SIM en algunos casos"
     ],
     "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Nuevo: Introducción de un reloj personalizable en la Pantalla de bloqueo (Ajustes > Pantalla de bloqueo y contraseña > Ajustes avanzados). El nuevo reloj de la Pantalla de bloqueo no funciona con temas de terceros.",
+      "Optimización: Áreas sensitivas de los puntos reajustadas en el patrón de desbloqueo",
+      "Reparado: El acceso directo a la Barra de estado y notificaciones flotantes para llamadas aparecieron al mismo tiempo",
+      "Reparado: El volumen medio no pudo ser restaurado después de recibir una notificación",
       "Nuevo: Introducción de un reloj personalizable en la Pantalla de bloqueo (Ajustes > Pantalla de bloqueo y contraseña > Ajustes avanzados). El nuevo reloj de la Pantalla de bloqueo no funciona con temas de terceros.",
       "Optimización: Áreas sensitivas de los puntos reajustadas en el patrón de desbloqueo",
       "Reparado: El acceso directo a la Barra de estado y notificaciones flotantes para llamadas aparecieron al mismo tiempo",
@@ -290,49 +403,69 @@
       "Reparado: El volumen medio no pudo ser restaurado después de recibir una notificación"
     ],
     "Ajustes": [
+      "Optimización: Las fuentes grandes ahora se muestran mejor",
       "Optimización: Las fuentes grandes ahora se muestran mejor"
     ],
-    "Mi Cloud": [
+    "Servicio en la nube de Xiaomi": [
+      "Optimización: Hemos rediseñado la página de inicio de Mi Nube. ¡Ahora tiene mucho mejor aspecto!",
+      "Optimización: Sincronización entre múltiples dispositivos mejorada",
       "Optimización: Hemos rediseñado la página de inicio de Mi Nube. ¡Ahora tiene mucho mejor aspecto!",
       "Optimización: Sincronización entre múltiples dispositivos mejorada"
     ]
   },
   "logs_pt": {
     "Sistema": [
+      "Patch de segurança do Android atualizado para junho de 2019. Segurança do sistema aprimorada.",
       "Atualização do Patch de Segurança do Android para Junho de 2019. Segurança do sistema aprimorada."
     ],
     "Telefone": [
-      "Correção Encerrar chamadas levava mais tempo que o esperado"
+      "Correção: Encerrar chamadas levava mais tempo que o esperado",
+      "Correção: Encerrar chamadas levava mais tempo que o esperado"
     ],
     "Contatos": [
+      "Correção Contatos não podiam ser excluídos de cartões SIM em alguns casos",
       "Correção Contatos não podiam ser excluídos de cartões SIM em alguns casos"
     ],
     "Tela de bloqueio, Barra de status e Área de notificações": [
       "Novo Introduzindo o Relógio personalizável na Tela de bloqueio (Configurar > Bloqueio de tela e senhas > Configurações avançadas). O novo relógio da Tela de bloqueio não funciona com temas de terceiros.",
-      "Otimização Reajuste nas áreas sensíveis dos pontos do padrão de desbloqueio",
+      "Otimização: Reajuste nas áreas sensíveis dos pontos do padrão de desbloqueio",
+      "Correção: a barra flutuante de chamada recebida e a barra verde de chamada apareciam ao mesmo tempo.",
+      "Correção O volume de mídia não podia ser restaurado após receber uma notificação",
+      "Novo Introduzindo o Relógio personalizável na Tela de bloqueio (Configurar > Bloqueio de tela e senhas > Configurações avançadas). O novo relógio da Tela de bloqueio não funciona com temas de terceiros.",
+      "Otimização: Reajuste nas áreas sensíveis dos pontos do padrão de desbloqueio",
       "Correção O atalho da barra de status e a notificação flutuante para chamadas apareciam ao mesmo tempo",
       "Correção A página de sincronização não podia ser recarregada quando a sincronização era ativada ou desativada na Área de notificações",
       "Correção O volume de mídia não podia ser restaurado após receber uma notificação"
     ],
     "Configurações": [
+      "Otimização Fontes grandes são exibidas melhor agora",
       "Otimização Fontes grandes são exibidas melhor agora"
     ],
-    "Mi Cloud": [
-      "Otimização Nós redesenhamos a página inicial da Mi Cloud. Ela está muito melhor agora!",
+    "Serviço de nuvem Xiaomi": [
+      "Otimização: nova página inicial do Mi Cloud otimizada, informações de armazenamento em nuvem exibidas com mais clareza.",
+      "Otimização Sincronização otimizada entre vários dispositivos",
+      "Otimização: Nós redesenhamos a página inicial da Mi Cloud. Ela está muito melhor agora!",
       "Otimização Sincronização otimizada entre vários dispositivos"
     ]
   },
   "logs_tr": {
     "Sistem": [
+      "Android Güvenlik Yaması Haziran 2019 sürümüne güncellendi. Sistem güvenliği artırıldı.",
       "Android Güvenlik Yaması Haziran 2019 sürümüne güncellendi. Sistem güvenliği artırıldı."
     ],
     "Telefon": [
+      "Onarım: Aramaları sonlandırmak beklenenden daha uzun sürdü",
       "Onarım: Aramaları sonlandırmak beklenenden daha uzun sürdü"
     ],
     "Kişiler": [
+      "Onarım: Kişilerin bazı durumlarda silinememesi sorunu giderildi",
       "Onarım: Kişilerin bazı durumlarda silinememesi sorunu giderildi"
     ],
     "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Yeni: Özelleştirilebilir Kilit ekranı saati (Ayarlar > Kilit ekranı & şifre > Gelişmiş ayarlar). Yeni kilit ekranı saati üçüncü parti temaları ile çalışmaz.",
+      "Optimizasyon: Kilit açma desenindeki noktalar için hassas bölgeler yeniden ayarlandı",
+      "Onarım: Durum çubuğu kısayolu ve aramalar için kayan bildirimler aynı anda belirdi",
+      "Onarım: Medya sesi, bildirim alındıktan sonra geri alınamadı",
       "Yeni: Özelleştirilebilir Kilit ekranı saati (Ayarlar > Kilit ekranı & şifre > Gelişmiş ayarlar). Yeni kilit ekranı saati üçüncü parti temaları ile çalışmaz.",
       "Optimizasyon: Kilit açma desenindeki noktalar için hassas bölgeler yeniden ayarlandı",
       "Onarım: Durum çubuğu kısayolu ve aramalar için kayan bildirimler aynı anda belirdi",
@@ -340,186 +473,269 @@
       "Onarım: Medya sesi, bildirim alındıktan sonra geri alınamadı"
     ],
     "Ayarlar": [
+      "Optimizasyon: Büyük yazı biçimleri şimdi daha iyi görüntüleniyor",
       "Optimizasyon: Büyük yazı biçimleri şimdi daha iyi görüntüleniyor"
     ],
-    "Mi Cloud": [
-      "Optimizasyon: Mi Cloud^un ana sayfasını yeniden tasarladık, artık çok daha iyi görünüyor!",
+    "Xiaomi Bulut Hizmeti": [
+      "Optimizasyon: Mi Cloud'un ana sayfasını yeniden tasarladık, artık çok daha iyi görünüyor!",
+      "Optimizasyon: Birkaç cihaz arasında geliştirilmiş senkronizasyon",
+      "Optimizasyon: Mi Cloud'un ana sayfasını yeniden tasarladık, artık çok daha iyi görünüyor!",
       "Optimizasyon: Birkaç cihaz arasında geliştirilmiş senkronizasyon"
     ]
   },
   "logs_id": {
     "Sistem": [
+      "Patch keamanan Android diperbarui ke Juni 2019. Keamanan sistem ditingkatkan.",
       "Patch Keamanan Android diperbarui hingga Juni 2019. Keamanan sistem ditingkatkan."
     ],
     "Telepon": [
-      "Perbaikan Mematikan panggilan memakan waktu lebih lama dibanding seharusnya"
+      "Perbaikan: Mematikan panggilan memakan waktu lebih lama dibanding seharusnya",
+      "Perbaikan: Mematikan panggilan memakan waktu lebih lama dibanding seharusnya"
     ],
     "Kontak": [
+      "Perbaikan Kontak tidak dapat dihapus dari kartu SIM di beberapa kasus",
       "Perbaikan Kontak tidak dapat dihapus dari kartu SIM di beberapa kasus"
     ],
     "Layar kunci, bar status, layar notifikasi": [
       "Baru Memperkenalkan jam Layar kunci yang dapat dikustomisasi (Setelan > Kunci layar & sandi> Setelan lanjutan). Jam Layar kunci baru tidak berfungsi dalam tema pihak ketiga.",
-      "Pengoptimalan Area sensitif yang disesuaikan untuk titik-titik dalam pola buka kunci",
+      "Pengoptimalan: Area sensitif yang disesuaikan untuk titik-titik dalam pola buka kunci",
+      "Perbaikan: Bilah mengambang panggilan masuk dan bilah hijau panggilan muncul bersamaan.",
+      "Perbaikan Volume media tidak dapat dipulihkan setelah menerima notifikasi",
+      "Baru Memperkenalkan jam Layar kunci yang dapat dikustomisasi (Setelan > Kunci layar & sandi> Setelan lanjutan). Jam Layar kunci baru tidak berfungsi dalam tema pihak ketiga.",
+      "Pengoptimalan: Area sensitif yang disesuaikan untuk titik-titik dalam pola buka kunci",
       "Perbaikan Pintasan bar status dan notifikasi mengambang untuk panggilan muncul di waktu yang bersamaan",
       "Perbaikan Halaman sinkron tidak dapat disegarkan kembali setiap kali sinkron dihidupkan atau dimatikan di Layar notifikasi",
       "Perbaikan Volume media tidak dapat dipulihkan setelah menerima notifikasi"
     ],
-    "Setelan": [
+    "Pengaturan": [
       "Pengoptimalan Ukuran huruf besar dapat ditampilkan dengan lebih baik"
     ],
-    "Mi Cloud": [
-      "Pengoptimalan Halaman awal Mi Cloud didesain ulang. Sekarang semakin terlihat lebih baik!",
+    "Layanan Cloud Xiaomi": [
+      "Optimasi: Halaman utama baru Mi Cloud telah dioptimalkan, informasi ruang cloud ditampilkan lebih jelas.",
+      "Pengoptimalan Sinkronisasi ditingkatkan di beberapa perangkat",
+      "Pengoptimalan: Halaman awal Mi Cloud didesain ulang. Sekarang semakin terlihat lebih baik!",
       "Pengoptimalan Sinkronisasi ditingkatkan di beberapa perangkat"
+    ],
+    "Setelan": [
+      "Pengoptimalan Ukuran huruf besar dapat ditampilkan dengan lebih baik"
     ]
   },
   "logs_vi": {
-    "System": [
-      "Updated Android Security Patch to June 2019. Increased system security."
+    "Hệ thống": [
+      "Đã cập nhật bản vá bảo mật Android đến tháng 6 năm 2019. Tăng cường bảo mật hệ thống.",
+      "Đã cập nhật bản vá bảo mật Android lên tháng 6 năm 2019. Tăng cường bảo mật hệ thống."
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected"
+    "Điện thoại": [
+      "Sửa lỗi: Kết thúc cuộc gọi mất nhiều thời gian hơn dự kiến",
+      "Sửa lỗi: Kết thúc cuộc gọi mất nhiều thời gian hơn dự kiến"
     ],
-    "Contacts": [
-      "Fix: Contacts couldn^t be deleted from SIM cards in some cases"
+    "Danh bạ": [
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
-      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Tối ưu hóa: Điều chỉnh vùng cảm ứng cho các điểm trong mẫu mở khóa",
+      "Sửa: Thanh nổi cuộc gọi đến và thanh màu xanh cuộc gọi xuất hiện cùng lúc.",
+      "Fix: Media volume couldn't be restored after receiving a notification",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Tối ưu hóa: Điều chỉnh vùng cảm ứng cho các điểm trong mẫu mở khóa",
       "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Media volume couldn^t be restored after receiving a notification"
+      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade",
+      "Fix: Media volume couldn't be restored after receiving a notification"
     ],
-    "Settings": [
-      "Optimization: Big fonts are displayed better now"
+    "Cài đặt": [
+      "Tối ưu hóa: Phông chữ lớn hiện được hiển thị tốt hơn",
+      "Tối ưu hóa: Phông chữ lớn hiện được hiển thị tốt hơn"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
-      "Optimization: Improved sync across multiple devices"
+    "Dịch vụ đám mây Xiaomi": [
+      "Tối ưu hóa: Trang chủ mới của Mi Cloud đã được tối ưu, thông tin dung lượng đám mây hiển thị rõ ràng hơn.",
+      "Tối ưu hóa: Cải thiện đồng bộ hóa giữa nhiều thiết bị",
+      "Tối ưu hóa: Trang chủ dịch vụ đám mây được thiết kế lại, dung lượng khả dụng hiển thị trực quan hơn.",
+      "Tối ưu hóa: Cải thiện đồng bộ hóa giữa nhiều thiết bị"
     ]
   },
   "logs_th": {
-    "System": [
+    "ระบบ": [
+      "อัปเดตแพตช์ความปลอดภัย Android เป็นเดือนมิถุนายน 2019 เพิ่มความปลอดภัยของระบบ",
       "Updated Android Security Patch to June 2019. Increased system security."
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected"
+    "โทรศัพท์": [
+      "แก้ไข: การวางสายใช้เวลานานกว่าที่ควร",
+      "แก้ไข: การวางสายใช้เวลานานกว่าที่ควร"
     ],
-    "Contacts": [
-      "Fix: Contacts couldn^t be deleted from SIM cards in some cases"
+    "รายชื่อ": [
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+    "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
+      "แก้ไข: แถบลอยของการโทรเข้าและแถบสีเขียวของการโทรแสดงพร้อมกัน",
+      "Fix: Media volume couldn't be restored after receiving a notification",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
       "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
       "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Media volume couldn^t be restored after receiving a notification"
+      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade",
+      "Fix: Media volume couldn't be restored after receiving a notification"
     ],
-    "Settings": [
-      "Optimization: Big fonts are displayed better now"
+    "การตั้งค่า": [
+      "การเพิ่มประสิทธิภาพ: ตัวอักษรขนาดใหญ่แสดงผลได้ดีขึ้นแล้ว",
+      "การเพิ่มประสิทธิภาพ: ตัวอักษรขนาดใหญ่แสดงผลได้ดีขึ้นแล้ว"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
-      "Optimization: Improved sync across multiple devices"
+    "บริการคลาวด์ Xiaomi": [
+      "ปรับปรุง: ปรับปรุงหน้าแรกใหม่ของ Mi Cloud ให้แสดงข้อมูลพื้นที่จัดเก็บบนคลาวด์ได้ชัดเจนขึ้น",
+      "การปรับให้เหมาะสม: ปรับปรุงการซิงค์ระหว่างอุปกรณ์หลายเครื่อง",
+      "ปรับปรุง: ออกแบบหน้าหลักของบริการคลาวด์ใหม่ ทำให้แสดงพื้นที่ว่างได้ชัดเจนขึ้น",
+      "การปรับให้เหมาะสม: ปรับปรุงการซิงค์ระหว่างอุปกรณ์หลายเครื่อง"
     ]
   },
   "logs_ar": {
-    "System": [
+    "النظام": [
+      "تم تحديث تصحيح أمان Android إلى يونيو 2019. زيادة أمان النظام.",
       "Updated Android Security Patch to June 2019. Increased system security."
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected"
+    "الهاتف": [
+      "إصلاح: استغرق إنهاء المكالمات وقتًا أطول من المتوقع",
+      "إصلاح: استغرق إنهاء المكالمات وقتًا أطول من المتوقع"
     ],
-    "Contacts": [
-      "Fix: Contacts couldn^t be deleted from SIM cards in some cases"
+    "جهات الاتصال": [
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+    "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
+      "إصلاح: ظهور شريط المكالمة العائم والشريط الأخضر للمكالمة في الوقت نفسه.",
+      "Fix: Media volume couldn't be restored after receiving a notification",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
       "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
       "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Media volume couldn^t be restored after receiving a notification"
+      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade",
+      "Fix: Media volume couldn't be restored after receiving a notification"
     ],
-    "Settings": [
-      "Optimization: Big fonts are displayed better now"
+    "الإعدادات": [
+      "التحسين: يتم عرض الخطوط الكبيرة بشكل أفضل الآن",
+      "التحسين: يتم عرض الخطوط الكبيرة بشكل أفضل الآن"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
-      "Optimization: Improved sync across multiple devices"
+    "خدمة Xiaomi السحابية": [
+      "تحسين: تم تحسين الصفحة الرئيسية الجديدة لـ Mi Cloud، وأصبحت معلومات التخزين السحابي أكثر وضوحًا.",
+      "التحسين: تحسين المزامنة بين أجهزة متعددة",
+      "تحسين: إعادة تصميم الصفحة الرئيسية لخدمة السحابة، وعرض المساحة المتاحة بشكل أكثر وضوحًا",
+      "التحسين: تحسين المزامنة بين أجهزة متعددة"
     ]
   },
   "logs_in": {
-    "System": [
+    "सिस्टम": [
+      "Android सुरक्षा पैच को जून 2019 में अपडेट किया गया। सिस्टम सुरक्षा बढ़ाई गई।",
       "Updated Android Security Patch to June 2019. Increased system security."
     ],
-    "Phone": [
-      "Fix: Ending calls took longer time than expected"
+    "फ़ोन": [
+      "ठीक किया गया: कॉल समाप्त करने में अपेक्षा से अधिक समय लगता था",
+      "ठीक किया गया: कॉल समाप्त करने में अपेक्षा से अधिक समय लगता था"
     ],
-    "Contacts": [
-      "Fix: Contacts couldn^t be deleted from SIM cards in some cases"
+    "संपर्क": [
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
+      "फ़िक्स: इनकमिंग कॉल फ़्लोटिंग बार और कॉल ग्रीन बार का एक ही समय पर दिखना।",
+      "Fix: Media volume couldn't be restored after receiving a notification",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
       "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
       "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Media volume couldn^t be restored after receiving a notification"
+      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade",
+      "Fix: Media volume couldn't be restored after receiving a notification"
     ],
-    "Settings": [
-      "Optimization: Big fonts are displayed better now"
+    "सेटिंग्स": [
+      "अनुकूलन: बड़े फ़ॉन्ट अब बेहतर प्रदर्शित होते हैं",
+      "अनुकूलन: बड़े फ़ॉन्ट अब बेहतर प्रदर्शित होते हैं"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
-      "Optimization: Improved sync across multiple devices"
+    "Xiaomi क्लाउड सेवा": [
+      "अनुकूलन: Mi Cloud के नए होमपेज को अनुकूलित किया गया, क्लाउड स्टोरेज की जानकारी अब और स्पष्ट दिखती है।",
+      "अनुकूलन: कई उपकरणों के बीच सिंक में सुधार",
+      "अनुकूलन: क्लाउड सेवा के होमपेज को फिर से डिज़ाइन किया गया है, उपलब्ध स्थान अब और स्पष्ट रूप से दिखता है।",
+      "अनुकूलन: कई उपकरणों के बीच सिंक में सुधार"
     ]
   },
   "logs_ug": {
-    "System": [
+    "سىستېما": [
       "Updated Android Security Patch to June 2019. Increased system security."
     ],
-    "Phone": [
+    "تېلېفون": [
+      "Fix: Ending calls took longer time than expected",
       "Fix: Ending calls took longer time than expected"
     ],
     "Contacts": [
-      "Fix: Contacts couldn^t be deleted from SIM cards in some cases"
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases"
     ],
     "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
       "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
       "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Media volume couldn^t be restored after receiving a notification"
+      "Fix: Media volume couldn't be restored after receiving a notification",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
+      "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
+      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade",
+      "Fix: Media volume couldn't be restored after receiving a notification"
     ],
-    "Settings": [
+    "تەڭشەك": [
       "Optimization: Big fonts are displayed better now"
     ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
+    "Xiaomi بۇلۇت مۇلازىمىتى": [
+      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!",
+      "Optimization: Improved sync across multiple devices",
+      "ياخشىلاندى: بۇلۇت مۇلازىمىتى باش بېتى قايتا لايىھەلەندى، ئىشلەتكىلى بولىدىغان بوشلۇق كۆرسىتىلىشى تېخىمۇ كۆرۈنەرلىك بولدى.",
       "Optimization: Improved sync across multiple devices"
+    ],
+    "System": [
+      "Updated Android Security Patch to June 2019. Increased system security."
+    ],
+    "تەڭشەكلەر": [
+      "Optimization: Big fonts are displayed better now"
     ]
   },
   "logs_bo": {
-    "System": [
+    "མ་ལག": [
       "Updated Android Security Patch to June 2019. Increased system security."
     ],
-    "Phone": [
+    "ཁ་པར": [
+      "Fix: Ending calls took longer time than expected",
       "Fix: Ending calls took longer time than expected"
     ],
     "Contacts": [
-      "Fix: Contacts couldn^t be deleted from SIM cards in some cases"
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases"
     ],
     "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn^t work with third party themes.",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
       "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
       "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Sync page couldn^t be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Media volume couldn^t be restored after receiving a notification"
+      "Fix: Media volume couldn't be restored after receiving a notification",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
+      "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
+      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade",
+      "Fix: Media volume couldn't be restored after receiving a notification"
     ],
     "Settings": [
       "Optimization: Big fonts are displayed better now"
     ],
     "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud^s start page. It looks much better now!",
+      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!",
+      "Optimization: Improved sync across multiple devices",
+      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!",
       "Optimization: Improved sync across multiple devices"
+    ],
+    "System": [
+      "Updated Android Security Patch to June 2019. Increased system security."
+    ],
+    "སྒྲིག་སྟངས": [
+      "Optimization: Big fonts are displayed better now"
     ]
   }
 }

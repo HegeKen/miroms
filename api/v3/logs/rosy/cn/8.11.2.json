@@ -2,15 +2,14 @@
   "logs_zh": {
     "重要提示": [
       "此版本暂不支持ROOT，已ROOT用户不受影响",
-      "已开启ROOT在升级后如遇到闪退问题，可使用更新完整ROM包的方式临时解决",
-      "此版本暂不支持ROOT，已ROOT用户不受影响",
       "已开启ROOT在升级后如遇到闪退问题，可使用更新完整ROM包的方式临时解决"
     ],
     "锁屏、状态栏、通知栏": [
       "优化 数字样式电池图标在充电时不显示数字的问题",
       "优化 电池数字样式下，数字显示在电池图标内",
       "修复 原生通知样式不重要通知的时间不会更新的问题",
-      "修复 下拉通知栏后，电池图标大小不正确的问题"
+      "修复 下拉通知栏后，电池图标大小不正确的问题",
+      "修复 原生通知样式不重要通知的时间不会更新的问题"
     ],
     "录音机": [
       "修复 暂停录音后无法及时更新到状态栏的问题",
@@ -18,8 +17,239 @@
     ]
   },
   "logs_en": {
+    "Attention": [
+      "Optimized system performance",
+      "Improved system security and stability"
+    ],
+    "Recorder": [
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused",
+      "Restore Couldn't start recording  using Mi AI in some cases"
+    ],
     "Lockscreen, Status Bar, Notification Bar": [
       "Restore Issues with Android-style notifications"
+    ]
+  },
+  "logs_zh_tw": {
+    "重要提示": [
+      "優化: 系統穩定性",
+      "修復: 部分場景偶現異常問題"
+    ],
+    "錄音機": [
+      "修復 暫停錄音後無法即時更新到狀態欄的問題",
+      "修正 在某些情況下，無法透過小愛開始錄音的問題"
+    ],
+    "解鎖畫面、狀態欄、通知欄": [
+      "修正原生通知樣式中不重要通知的時間不會更新的問題"
+    ]
+  },
+  "logs_ja": {
+    "注意": [
+      "最適化: システムの安定性",
+      "修正: エラーが発生する場合がある問題"
+    ],
+    "レコーダー": [
+      "修正: 録音を一時停止した際、通知シェードの録音状態が更新されない問題",
+      "一部の状況で Xiao AI 経由で録音を開始できない問題を修正"
+    ],
+    "ロック画面、ステータスバー、通知バー": [
+      "ネイティブ通知スタイルの重要でない通知の時刻が更新されない問題を修正"
+    ]
+  },
+  "logs_ko": {
+    "주의": [
+      "최적화: 시스템 안정성",
+      "수정: 일부 상황에서 오류가 발생하는 문제"
+    ],
+    "녹음기": [
+      "수정: 녹음을 일시중지했을 때 알림 창의 녹음 상태가 업데이트되지 않던 문제",
+      "일부 상황에서 Xiao AI를 통해 녹음을 시작할 수 없는 문제를 수정"
+    ],
+    "잠금 화면, 상태 표시줄, 알림 표시줄": [
+      "기본 알림 스타일의 중요하지 않은 알림 시간이 업데이트되지 않는 문제 수정"
+    ]
+  },
+  "logs_ru": {
+    "Предупреждения": [
+      "Оптимизация: Стабильность системы",
+      "Исправлено: В некоторых случаях могли возникать ошибки"
+    ],
+    "Диктофон": [
+      "Fix: Факт остановки записи не отображался в строке состояния вовремя",
+      "Исправлена проблема, из-за которой в некоторых случаях не удавалось начать запись через Xiao AI."
+    ],
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Исправлена проблема, из-за которой время неважных уведомлений в стиле системных уведомлений не обновлялось"
+    ]
+  },
+  "logs_uk": {
+    "Попередження": [
+      "Оптимізація: Стабільність системи",
+      "Виправлено: В деяких випадках могли виникати помилки"
+    ],
+    "Диктофон": [
+      "Виправлено: стан запису не оновлювався в панелі сповіщень під час паузи запису",
+      "Виправлено проблему, через яку в деяких випадках не вдавалося почати запис через Xiao AI."
+    ],
+    "Екран блокування, рядок стану, рядок сповіщень": [
+      "Виправлено проблему, через яку час неважливих сповіщень у стилі системних сповіщень не оновлювався"
+    ]
+  },
+  "logs_pl": {
+    "Powiadomienie": [
+      "Zoptymalizowano: Stabilność systemu",
+      "Naprawiono: W niektórych przypadkach występowały błędy"
+    ],
+    "Rejestrator": [
+      "Poprawka: stan nagrywania nie był aktualizowany na pasku powiadomień po wstrzymaniu nagrywania",
+      "Naprawiono problem z rozpoczęciem nagrywania przez Xiao AI w niektórych przypadkach."
+    ],
+    "Ekran blokady, pasek stanu, pasek powiadomień": [
+      "Naprawiono problem z nieaktualizującym się czasem nieistotnych powiadomień w stylu systemowym"
+    ]
+  },
+  "logs_de": {
+    "Rekorder": [
+      "Behoben: Der Aufnahmestatus wurde in der Benachrichtigungsleiste nicht aktualisiert, wenn eine Aufnahme pausiert wurde",
+      "Problem behoben, dass in manchen Fällen die Aufnahme über Xiao AI nicht gestartet werden konnte."
+    ],
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
+      "Problem behoben, dass die Uhrzeit unwichtiger Benachrichtigungen im Systembenachrichtigungsstil nicht aktualisiert wurde"
+    ]
+  },
+  "logs_fr": {
+    "Avertissement important": [
+      "Optimisation: Stabilité du système",
+      "Réparé: Des erreurs se sont produites dans certains cas"
+    ],
+    "Enregistreur": [
+      "Correction : l’état d’enregistrement n’était pas mis à jour dans la barre de notifications lors d’une pause",
+      "Correction du problème empêchant de démarrer un enregistrement via Xiao AI dans certains cas."
+    ],
+    "Écran de verrouillage, barre d’état, barre de notifications": [
+      "Correction du problème où l’heure des notifications non importantes dans le style de notification natif ne se mettait pas à jour"
+    ]
+  },
+  "logs_it": {
+    "Attenzione": [
+      "Ottimizzazione: Stabilità del sistema",
+      "Risolto: In alcuni casi si verificavano errori"
+    ],
+    "Registratore": [
+      "Correzione: lo stato di registrazione non veniva aggiornato nella barra delle notifiche quando una registrazione veniva messa in pausa",
+      "Risolto il problema che in alcuni casi impediva di avviare la registrazione tramite Xiao AI."
+    ],
+    "Schermata di blocco, barra di stato, barra delle notifiche": [
+      "Risolto il problema per cui l'ora delle notifiche non importanti nello stile notifiche di sistema non veniva aggiornata"
+    ]
+  },
+  "logs_es": {
+    "Atención": [
+      "Optimización: Estabilidad del sistema",
+      "Reparado: Se producían errores en algunos casos"
+    ],
+    "Grabadora": [
+      "Corrección: El estado de grabación no se actualizaba en la barra de notificaciones al pausar una grabación",
+      "Se corrige el problema por el que en algunos casos no se podía iniciar la grabación con Xiao AI."
+    ],
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Se corrigió el problema por el que la hora de las notificaciones no importantes en el estilo de notificación nativo no se actualizaba"
+    ]
+  },
+  "logs_pt": {
+    "Atenção": [
+      "Otimização: Estabilidade do sistema",
+      "Correção: Erros ocorriam em alguns casos"
+    ],
+    "Gravador": [
+      "Correção: o estado da gravação não era atualizado na barra de notificações ao pausar uma gravação",
+      "Corrigido o problema que, em alguns casos, impedia iniciar a gravação com Xiao AI."
+    ],
+    "Tela de bloqueio, barra de status, barra de notificações": [
+      "Corrigido o problema em que a hora das notificações não importantes no estilo de notificação nativo não era atualizada"
+    ]
+  },
+  "logs_tr": {
+    "Uyarı": [
+      "Optimizasyon: Sistem kararlılığı",
+      "Onarım: Bazı durumlarda hatalar oluştu"
+    ],
+    "Kayıt Cihazı": [
+      "Düzeltme: Kayıt duraklatıldığında kayıt durumu bildirim çubuğunda güncellenmiyordu",
+      "Bazı durumlarda Xiao AI ile kaydın başlatılamaması sorunu giderildi."
+    ],
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Yerel bildirim stilindeki önemsiz bildirimlerin saatinin güncellenmemesi sorunu giderildi"
+    ]
+  },
+  "logs_id": {
+    "Perhatian": [
+      "Pengoptimalan: Stabilitas sistem",
+      "Perbaikan: Kesalahan terjadi dalam beberapa kasus"
+    ],
+    "Perekam": [
+      "Perbaikan: Status perekaman tidak diperbarui di bilah notifikasi saat perekaman dijeda",
+      "Memperbaiki masalah tidak dapat memulai rekaman melalui Xiao AI dalam beberapa kasus."
+    ],
+    "Layar kunci, bilah status, bilah notifikasi": [
+      "Memperbaiki masalah waktu notifikasi tidak penting pada gaya notifikasi bawaan yang tidak diperbarui"
+    ]
+  },
+  "logs_vi": {
+    "Chú ý": [
+      "Tối ưu: Ổn định hệ thống",
+      "Sửa: Xảy ra lỗi trong một số trường hợp"
+    ],
+    "Máy ghi âm": [
+      "Đã sửa: Trạng thái ghi âm không được cập nhật kịp thời trên thanh thông báo khi tạm dừng ghi âm",
+      "Đã khắc phục sự cố không thể bắt đầu ghi âm qua Xiao AI trong một số trường hợp."
+    ],
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Đã khắc phục sự cố thời gian của thông báo không quan trọng trong kiểu thông báo gốc không được cập nhật"
+    ]
+  },
+  "logs_th": {
+    "โปรดทราบ": [
+      "การเพิ่มประสิทธิภาพ: ความเสถียรของระบบ",
+      "แก้ไข: เกิดข้อผิดพลาดในบางกรณี"
+    ],
+    "เครื่องบันทึกเสียง": [
+      "แก้ไข: สถานะการบันทึกเสียงไม่ได้รับการอัปเดตในแถบการแจ้งเตือนเมื่อหยุดการบันทึกชั่วคราว",
+      "แก้ไขปัญหาที่ในบางกรณีไม่สามารถเริ่มบันทึกเสียงผ่าน Xiao AI ได้"
+    ],
+    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
+      "แก้ไขปัญหาที่เวลาของการแจ้งเตือนที่ไม่สำคัญในสไตล์การแจ้งเตือนแบบเนทีฟไม่ได้รับการอัปเดต"
+    ]
+  },
+  "logs_ar": {
+    "تنبية": [
+      "التحسين: استقرار النظام",
+      "الإصلاح: حدثت أخطاء في بعض الحالات"
+    ],
+    "مسجل": [
+      "إصلاح: لم يتم تحديث حالة التسجيل في شريط الإشعارات عند إيقاف التسجيل مؤقتًا",
+      "تم إصلاح مشكلة عدم إمكانية بدء التسجيل عبر Xiao AI في بعض الحالات."
+    ],
+    "شاشة القفل، شريط الحالة، شريط الإشعارات": [
+      "إصلاح مشكلة عدم تحديث وقت الإشعارات غير المهمة في نمط الإشعارات الأصلي"
+    ]
+  },
+  "logs_in": {
+    "ध्यान दें": [
+      "ऑप्टिमाइज़ेशन सिस्टम की स्थिरता",
+      "ठीक करें कुछ मामलों में त्रुटियां आ रही थीं"
+    ],
+    "रिकॉर्डर": [
+      "समस्या ठीक की गई: रिकॉर्डिंग पॉज़ करने पर नोटिफ़िकेशन शेड में स्थिति तुरंत अपडेट नहीं होती थी",
+      "कुछ स्थितियों में Xiao AI के ज़रिए रिकॉर्डिंग शुरू न कर पाने की समस्या ठीक की गई।"
+    ],
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
+      "मूल नोटिफिकेशन शैली में महत्वहीन सूचनाओं का समय अपडेट न होने की समस्या ठीक की गई"
+    ]
+  },
+  "logs_ug": {
+    "ئاۋاز ئالغۇ": [
+      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused",
+      "بەزى ئەھۋاللاردا Xiao AI ئارقىلىق خاتىرىلەشنى باشلاشقا بولماسلىق مەسىلىسى تۈزىتىلدى."
     ]
   }
 }

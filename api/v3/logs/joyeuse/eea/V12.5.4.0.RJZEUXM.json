@@ -1,6 +1,7 @@
 {
   "logs_zh": {
     "系统": [
+      "更新谷歌安全补丁（2021#10），提升系统安全性",
       "更新谷歌安全补丁（2021#10），提升系统安全性"
     ],
     "锁屏": [
@@ -21,6 +22,22 @@
       "修复 锁屏有概率不显示左下角锁屏画报入口，右滑无法进入锁屏画报的问题",
       "修复 锁屏时钟显示时内存异常的问题",
       "修复 充电动画显示时有概率内存异常的问题",
+      "修复 进入密码输入页面，人脸与指纹同时检测解锁时有概率出现崩溃的问题",
+      "新增 指纹是否应用于锁屏开关的功能",
+      "优化 锁屏负一屏功能的内存占用",
+      "修复 使用超级壁纸，锁屏界面灭屏偶现闪黑的问题",
+      "修复 个别界面灭屏指纹解锁时出现壁纸闪现的问题",
+      "修复 在游戏页面时，指纹解锁有概率屏幕出现花屏的问题",
+      "修复 指纹解锁时，个别界面灭屏后快速指纹解锁出现动画不对问题",
+      "修复 在插入SIM卡后有概率出现指纹和人脸功能失效问题",
+      "修复 使用超级壁纸时，灭屏指纹解锁进入个别界面闪黑问题",
+      "修复 抬起亮屏功能失效的问题",
+      "修复 个别界面人脸或是指纹解锁时，解锁过程中锁屏信息消失慢的问题",
+      "修复 修复灭屏后立即进行指纹解锁有概率闪黑问题",
+      "修复 指纹解锁之后一直黑屏，只显示状态栏问题",
+      "修复 锁屏使用三方主题后，开启超级壁纸功能，锁屏时间信息不显示的问题",
+      "修复: 萤幕锁定画面时钟显示时内存异常的问题",
+      "修复 充电动画显示时有概率内存异常的问题",
       "修复 进入密码输入页面，人脸与指纹同时检测解锁时有概率出现崩溃的问题"
     ],
     "状态栏、通知栏": [
@@ -33,19 +50,31 @@
       "修复 通知栏一键清除按钮显示异常的问题",
       "修复 通知列表展开组通知，子通知背景模糊效果不更新问题",
       "修复 使用三方主题时，横屏下拉通知栏无法全屏的问题",
-      "去除 「隐藏后状态栏在刘海外」的隐藏屏幕刘海选项"
+      "去除 「隐藏后状态栏在刘海外」的隐藏屏幕刘海选项",
+      "修复: 状态栏通知图标显示为黑色的问题",
+      "修复 音乐控制面板偶现不显示的问题",
+      "修复: 应用通知开关不生效的问题",
+      "修复: 通知栏一键清除按钮显示异常的问题",
+      "修复 通知列表展开组通知，子通知背景模糊效果不更新问题",
+      "去除 “隐藏后状态栏在刘海外”的隐藏萤幕刘海选项"
     ],
     "设置": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄的问题",
+      "修复 部分应用的帐号无法同步到“帐号与同步”中的问题",
+      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄的问题",
       "修复 部分应用的帐号无法同步到“帐号与同步”中的问题"
-    ],
-    "手机管家": [
-      "设置应用中新增「安全」菜单"
     ]
   },
   "logs_en": {
     "System": [
+      "Updated Android Security Patch to October 2021. Increased system security.",
       "Updated Android Security Patch to October 2021. Increased system security."
+    ],
+    "Settings": [
+      "Fix: UI issues that appeared while adding corporate Wi-Fi networks",
+      "Fix: Some accounts couldn't be synced",
+      "Fix: UI issues that appeared while adding corporate Wi-Fi networks",
+      "Fix: Some accounts couldn't be synced"
     ],
     "Lock screen": [
       "New: New fingerprint options",
@@ -56,8 +85,8 @@
       "Fix: Issues with the fingerprint animation in several scenes",
       "Fix: Fingerprint and Face unlock were turned off after a SIM card was installed",
       "Fix: The screen flashed when Fingerprint unlock was used with Super wallpapers in some cases",
-      "Fix: ^Raise to wake^ turned off unexpectedly in some cases",
-      "Fix: Lock screen notifications didn^t disappear on time when Fingerprint or Face unlock was used in some cases",
+      "Fix: \"Raise to wake\" turned off unexpectedly in some cases",
+      "Fix: Lock screen notifications didn't disappear on time when Fingerprint or Face unlock was used in some cases",
       "Fix: Screen flashed when Fingerprint unlock was used in some cases",
       "Fix: No items except for the status bar were shown on the screen after using Fingerprint unlock",
       "Fix: Issues with the Lock screen clock when third party themes and super wallpapers were used",
@@ -67,20 +96,23 @@
     ],
     "Status bar, Notification shade": [
       "Fix: Status bar icons turned black in some cases",
-      "Fix: Music player controls weren^t displayed in some cases",
-      "Fix: App notification switches didn^t always work",
-      "Fix: The button for clearing memory wasn^t always displayed correctly in the Notification shade",
+      "Fix: Music player controls weren't displayed in some cases",
+      "Fix: App notification switches didn't always work",
+      "Fix: The button for clearing memory wasn't always displayed correctly in the Notification shade",
       "Fix: Issues with displaying grouped notifications",
       "Adjustments for the notch-related options"
-    ],
-    "Settings": [
-      "Fix: UI issues that appeared while adding corporate Wi-Fi networks",
-      "Fix: Some accounts couldn^t be synced"
     ]
   },
   "logs_zh_tw": {
     "系統": [
+      "更新谷歌安全修補程式（2021#10），提升系統安全性",
       "更新谷歌安全修補程式（2021#10），提升系統安全性"
+    ],
+    "設定": [
+      "修復: Wi-Fi 增加網路時選擇“企業級加密”會導致域名框太窄的問題",
+      "修復: 部分應用的帳號無法同步到“帳號與同步”中的問題",
+      "修復: Wi-Fi 增加網路時選擇“企業級加密”會導致域名框太窄的問題",
+      "修復: 部分應用的帳號無法同步到“帳號與同步”中的問題"
     ],
     "鎖屏": [
       "新增: 指紋是否應用於螢幕鎖定開關的功能",
@@ -107,15 +139,18 @@
       "修復: 通知欄一鍵清除按鈕顯示異常的問題",
       "修復: 通知列表展開組通知，子通知背景模糊效果不更新問題",
       "去除 「隱藏後狀態欄在劉海外」的隱藏螢幕劉海選項"
-    ],
-    "設定": [
-      "修復: Wi-Fi 增加網路時選擇“企業級加密”會導致域名框太窄的問題",
-      "修復: 部分應用的帳號無法同步到“帳號與同步”中的問題"
     ]
   },
   "logs_ja": {
     "システム": [
+      "Androidのセキュリティパッチを2021年10月にアップデートしました。システムのセキュリティを強化しました。",
       "Androidのセキュリティパッチを2021年10月にアップデートしました。システムのセキュリティを強化しました。"
+    ],
+    "設定": [
+      "修正: 企業のWi-Fiネットワークを追加する際に表示されるUIの問題",
+      "修正: 一部のアカウントが同期できない問題",
+      "修正: 企業のWi-Fiネットワークを追加する際に表示されるUIの問題",
+      "修正: 一部のアカウントが同期できない問題"
     ],
     "ロック画面": [
       "新機能: 指紋認証の新しいオプション",
@@ -126,7 +161,7 @@
       "修正: いくつかのシーンでの指紋アニメーションに関する問題",
       "修正: SIMカードを挿入後、指紋認証と顔認証がオフになる問題",
       "修正: スーパー壁紙を使用して指紋認証を行うと画面が点滅する場合がある問題",
-      "修正: ^持ち上げてスリープ解除^機能が予期せずオフになる場合がある問題",
+      "修正: '持ち上げてスリープ解除'機能が予期せずオフになる場合がある問題",
       "修正: 指紋認証や顔認証を使用したときに、ロック画面の通知が時間通りに消えないことがある問題",
       "修正: 指紋認証によるロック解除時に画面が点滅する場合がある問題",
       "修正: 指紋認証後の画面にステータスバー以外のアイテムが表示されない問題",
@@ -142,15 +177,18 @@
       "修正: 通知シェードにメモリ消去ボタンが正しく表示されないことがある問題",
       "修正: グループ化された通知の表示に関する問題",
       "ノッチ関連オプションの調整"
-    ],
-    "設定": [
-      "修正: 企業のWi-Fiネットワークを追加する際に表示されるUIの問題",
-      "修正: 一部のアカウントが同期できない問題"
     ]
   },
   "logs_ko": {
     "시스템": [
+      "Android 보안패치 (2021#10) 업데이트됨. 시스템 보안이 향상되었습니다.",
       "Android 보안패치 (2021#10) 업데이트됨. 시스템 보안이 향상되었습니다."
+    ],
+    "설정": [
+      "수정: 기업 Wi-Fi 네트워크 추가 시에 발생하는 UI 문제",
+      "수정: 일부 계정이 동기화되지 않는 문제",
+      "수정: 기업 Wi-Fi 네트워크 추가 시에 발생하는 UI 문제",
+      "수정: 일부 계정이 동기화되지 않는 문제"
     ],
     "잠금화면": [
       "New: 새 지문 옵션",
@@ -161,7 +199,7 @@
       "수정: 여러 상황에서 발생하는 지문 애니메이션 오류 문제",
       "수정: SIM 카드를 장착한 후 지문 잠금해제 및 안면 인식 잠금해제가 꺼지는 문제",
       "수정: 슈퍼 배경화면에서 지문 잠금해제를 사용하는 중에 발생하는 화면이 깜빡이는 문제",
-      "수정: 일부 상황에서 ^손목 올려 켜기^가 갑자기 꺼지는 문제",
+      "수정: 일부 상황에서 '손목 올려 켜기'가 갑자기 꺼지는 문제",
       "수정: 일부 상황에서 지문 잠금해제 또는 안면 인식 잠금해제 사용 시 적시에 잠금화면 알림이 사라지지 않는 문제",
       "수정: 일부 상황에서 지문 잠금해제를 사용 시 화면이 깜빡이는 문제",
       "수정: 지문 잠금해제를 사용한 후 화면에 상태 바를 제외한 다른 항목이 표시되지 않는 문제",
@@ -177,15 +215,18 @@
       "수정: 알림 바에 메모리 정리 버튼 제대로 표시되지 않는 문제",
       "수정: 그룹화된 알림 표시 문제",
       "노치 관련 옵션 조정"
-    ],
-    "설정": [
-      "수정: 기업 Wi-Fi 네트워크 추가 시에 발생하는 UI 문제",
-      "수정: 일부 계정이 동기화되지 않는 문제"
     ]
   },
   "logs_ru": {
     "Система": [
+      "Обновление системы безопасности Android (октябрь 2021 года). Улучшена безопасность системы.",
       "Обновление системы безопасности Android (октябрь 2021 года). Улучшена безопасность системы."
+    ],
+    "Настройки": [
+      "Исправлено: Ошибки интерфейса, которые появились при добавлении корпоративных сетей Wi-Fi",
+      "Исправлено: Сбои синхронизации некоторых аккаунтов",
+      "Исправлено: Ошибки интерфейса, которые появились при добавлении корпоративных сетей Wi-Fi",
+      "Исправлено: Сбои синхронизации некоторых аккаунтов"
     ],
     "Экран блокировки": [
       "Новое: Новый параметры для отпечатков пальцев",
@@ -196,7 +237,7 @@
       "Исправлено: Неправильное отображение анимации отпечатка пальца",
       "Исправлено: После установки SIM-карты могла отключаться разблокировка по лицу и отпечатком пальца",
       "Исправлено: В некоторых случаях при использовании Суперобоев и разблокировки отпечатком пальца экран устройства мог мерцать",
-      "Исправлено: В некоторых случаях функция ^Поднять для активации^ могла отключаться",
+      "Исправлено: В некоторых случаях функция \"Поднять для активации\" могла отключаться",
       "Исправлено: В некоторых случаях при использовании разблокировки по лицу или отпечатком пальца уведомления на экране блокировки не исчезали вовремя.",
       "Исправлено: В некоторых случаях после разблокировки отпечатком пальца экран устройства мог начать мерцать",
       "Исправлено: После разблокировки отпечатком пальца на экране могли отображаться только объекты строки состояния",
@@ -212,32 +253,35 @@
       "Исправлено: Кнопка очистки памяти в шторке уведомлений могла отображаться неправильно",
       "Исправлено: Исправлено неправильное отображение сгруппированных уведомлений",
       "Изменения параметров, связанных с вырезом на экране"
-    ],
-    "Настройки": [
-      "Исправлено: Ошибки интерфейса, которые появились при добавлении корпоративных сетей Wi-Fi",
-      "Исправлено: Сбои синхронизации некоторых аккаунтов"
     ]
   },
   "logs_uk": {
     "Система": [
+      "Оновлено патч безпеки Android за жовтень 2021 року. Збільшено безпеку системи.",
       "Оновлено патч безпеки Android за жовтень 2021 року. Збільшено безпеку системи."
+    ],
+    "Налаштування": [
+      "Виправлено: Помилки інтерфейсу, які з'явилися під час додавання корпоративних мереж Wi-Fi",
+      "Виправлено: Помилки синхронізації деяких акаунтів",
+      "Виправлено: Помилки інтерфейсу, які з'явилися під час додавання корпоративних мереж Wi-Fi",
+      "Виправлено: Помилки синхронізації деяких акаунтів"
     ],
     "Екран блокування": [
       "Нове: Нові параметри для відбитків пальців",
-      "Оптимізація: Використання пам^яті Стрічкою віджетів, коли пристрій заблоковано",
+      "Оптимізація: Використання пам'яті Стрічкою віджетів, коли пристрій заблоковано",
       "Виправлено: Під час використання Супершпадкр екран пристрою міг мерехтіти після блокування",
       "Виправлено: В деяких випадках після розблокування відбитком пальця шпалери могли мерехтіти",
       "Виправлено: Під час розблокування відбитком пальця в іграх могли з’явитися візуальні артефакти",
       "Виправлено: Неправильне відображення анімації відбитка пальця",
       "Виправлено: Після встановлення SIM-карти могла відключатися функція розблокування за допомогою обличчя або відбитком пальця",
       "Виправлено: В деяких випадках під час використання Супершпалер та розблокування за допомогою відбитка пальця екран пристрою міг мерехтіти",
-      "Виправлено: В деяких випадках функція ^Підняти для активації^ могла відключатися",
+      "Виправлено: В деяких випадках функція \"Підняти для активації\" могла відключатися",
       "Виправлено: В деяких випадках під час використання розблокування за допомогою обличчя або відбитком пальця сповіщення на екрані блокування не зникали",
       "Виправлено: В деяких випадках після розблокування відбитком пальця екран міг мерехтіти",
       "Виправлено: Під час розблокування відбитком пальця на екрані могли відображатися тільки об’єкти рядку стану",
       "Виправлено: Виправлені помилки відображення віджета годинника на екрані блокування під час використання супершрплер та сторонніх тем",
-      "Виправлено: Виправлені помилки пам^яті під час відображення подвійого годинника",
-      "Виправлено: Використання пам^яті під час відображення анімації заряджання",
+      "Виправлено: Виправлені помилки пам'яті під час відображення подвійого годинника",
+      "Виправлено: Використання пам'яті під час відображення анімації заряджання",
       "Виправлено: У деяких випадках одночасне використання розблокування за допомогою обличчя і за допомогою відбитка пальця могло призводити до помилок"
     ],
     "Рядок стану, Панель сповіщень": [
@@ -247,15 +291,18 @@
       "Виправлено: Кнопка очищення памяті у панелі сповіщень могла відображатися неправильно",
       "Виправлено: Виправлено неправильне відображення згрупованих сповіщень",
       "Зміни параметрів, які пов’язані з вирізом на екрані"
-    ],
-    "Налаштування": [
-      "Виправлено: Помилки інтерфейсу, які з^явилися під час додавання корпоративних мереж Wi-Fi",
-      "Виправлено: Помилки синхронізації деяких акаунтів"
     ]
   },
   "logs_pl": {
     "System": [
+      "Zaktualizowano Pakiet Bezpieczeństwa Android do października 2021 r. Zwiększono bezpieczeństwo systemu.",
       "Zaktualizowano Pakiet Bezpieczeństwa Android do października 2021 r. Zwiększono bezpieczeństwo systemu."
+    ],
+    "Ustawienia": [
+      "Naprawiono: Problemy w interfejsem, które pojawiały się podczas dodawania firmowych sieci Wi-Fi",
+      "Naprawiono: Nie udało się zsynchronizować niektórych kont",
+      "Naprawiono: Problemy w interfejsem, które pojawiały się podczas dodawania firmowych sieci Wi-Fi",
+      "Naprawiono: Nie udało się zsynchronizować niektórych kont"
     ],
     "Ekran blokady": [
       "Nowe: Nowe opcje odcisków palców",
@@ -282,85 +329,124 @@
       "Naprawiono: Przycisk do czyszczenia pamięci nie zawsze był wyświetlany poprawnie w Panelu powiadomień",
       "Naprawiono: Problemy z wyświetlaniem grupowych powiadomień",
       "Korekty dla opcji związanych z wycięciem"
+    ]
+  },
+  "logs_de": {
+    "System": [
+      "Android-Sicherheitspatch auf Oktober 2021 aktualisiert. Systemsicherheit erhöht.",
+      "Android-Sicherheitspatch auf Oktober 2021 aktualisiert. Systemsicherheit erhöht."
     ],
-    "Ustawienia": [
-      "Naprawiono: Problemy w interfejsem, które pojawiały się podczas dodawania firmowych sieci Wi-Fi",
-      "Naprawiono: Nie udało się zsynchronizować niektórych kont"
+    "Einstellungen": [
+      "Behebung: UI-Probleme beim Hinzufügen von Firmen-WLAN-Netzwerken",
+      "Behebung: Einige Konten konnten nicht synchronisiert werden",
+      "Behebung: UI-Probleme beim Hinzufügen von Firmen-WLAN-Netzwerken",
+      "Behebung: Einige Konten konnten nicht synchronisiert werden"
+    ],
+    "Sperrbildschirm": [
+      "Neu: Neue Fingerabdruck-Optionen",
+      "Optimierung: Speicherverbrauch von App Vault bei gesperrtem Gerät",
+      "Behebung: Bildschirm flackerte nach dem Sperren bei Verwendung von Super-Hintergründen",
+      "Behebung: Hintergrundbilder flackerten bei Fingerabdruck-Entsperrung in einigen Fällen",
+      "Behebung: Anzeigefehler bei Verwendung der Fingerabdruck-Entsperrung in Spielen",
+      "Behebung: Probleme mit der Fingerabdruck-Animation in mehreren Szenen",
+      "Behebung: Fingerabdruck- und Gesichtsentsperrung wurden nach dem Einlegen einer SIM-Karte deaktiviert",
+      "Behoben: Der Bildschirm flackerte in einigen Fällen bei der Verwendung der Fingerabdruckentsperrung mit Super-Hintergründen",
+      "Behoben: \"Zum Aufwecken anheben\" wurde in manchen Fällen unerwartet deaktiviert",
+      "Behoben: Sperrbildschirm-Benachrichtigungen verschwanden in einigen Fällen bei Verwendung der Fingerabdruck- oder Gesichtsentsperrung nicht rechtzeitig",
+      "Behoben: In einigen Fällen flackerte der Bildschirm bei der Verwendung der Fingerabdruckentsperrung",
+      "Behoben: Nach der Fingerabdruckentsperrung wurden außer der Statusleiste keine Elemente auf dem Bildschirm angezeigt",
+      "Behoben: Probleme mit der Uhr auf dem Sperrbildschirm bei Verwendung von Drittanbieter-Themes und Super-Hintergründen",
+      "Behoben: Speicherprobleme bei Anzeige der Doppeluhr",
+      "Behoben: Speichernutzungsprobleme bei der Anzeige der Ladeanimation",
+      "Behoben: Die gleichzeitige Nutzung von Gesichts- und Fingerabdruckentsperrung führte in manchen Fällen zu Abstürzen"
     ]
   },
   "logs_fr": {
     "Système": [
+      "Patch de Sécurité Android mis à jour pour octobre 2021. Amélioration du système de sécurité.",
       "Patch de Sécurité Android mis à jour pour octobre 2021. Amélioration du système de sécurité."
     ],
+    "Paramètres": [
+      "Réparé: Problèmes d'interface utilisateur apparus lors de l'ajout de réseaux Wi-Fi d'entreprise",
+      "Réparé: Certains comptes n'ont pas pu être synchronisés",
+      "Réparé: Problèmes d'interface utilisateur apparus lors de l'ajout de réseaux Wi-Fi d'entreprise",
+      "Réparé: Certains comptes n'ont pas pu être synchronisés"
+    ],
     "Écran de verrouillage": [
-      "Nouveau: Nouvelles options d^empreintes digitales",
-      "Optimisation: Utilisation de la mémoire du coffre d^applications lorsque l^appareil est verrouillé",
-      "Réparé: L^écran a clignoté après le verrouillage lorsque les fonds d^écran Super ont été utilisés",
-      "Réparé: Les fonds d^écran clignotaient lorsque le déverrouillage par empreinte digitale était utilisé dans certains cas",
-      "Réparé: Des anomalies d^affichage se sont produites lorsque le déverrouillage par Empreinte digitale a été utilisé avec des jeux",
-      "Réparé: Problèmes avec l^animation des empreintes digitales dans plusieurs scènes",
-      "Réparé: Les empreintes digitales et le Déverrouillage facial ont été désactivés après l^installation d^une carte SIM",
-      "Réparé: L^écran a clignoté lorsque le déverrouillage par empreinte digitale était utilisé avec les fonds d^écran Super dans certains cas",
-      "Réparé: ^Lever pour activer^ désactivé de manière inattendue dans certains cas",
-      "Réparé: Les notifications de l^écran de verrouillage ne disparaissaient pas à temps lorsque le déverrouillage par empreinte digitale ou facial était utilisé dans certains cas",
-      "Réparé: L^écran clignotait lorsque le déverrouillage par empreinte digitale était utilisé dans certains cas",
-      "Réparé: Aucun élément, à l^exception de la barre d^état, n^était affiché à l^écran après avoir utilisé le déverrouillage par empreinte digitale",
-      "Réparé: Problèmes avec l^horloge de l^écran de verrouillage lorsque des thèmes tiers et des super fonds d^écran ont été utilisés",
-      "Réparé: Problèmes de mémoire lors de l^affichage de l^horloge clone",
-      "Réparé: Problèmes d^utilisation de la mémoire lors de l^affichage de l^animation de charge",
-      "Réparé: L^utilisation simultanée du déverrouillage du visage et du déverrouillage des empreintes digitales a entraîné des plantages dans certains cas"
+      "Nouveau: Nouvelles options d'empreintes digitales",
+      "Optimisation: Utilisation de la mémoire du coffre d'applications lorsque l'appareil est verrouillé",
+      "Réparé: L'écran a clignoté après le verrouillage lorsque les fonds d'écran Super ont été utilisés",
+      "Réparé: Les fonds d'écran clignotaient lorsque le déverrouillage par empreinte digitale était utilisé dans certains cas",
+      "Réparé: Des anomalies d'affichage se sont produites lorsque le déverrouillage par Empreinte digitale a été utilisé avec des jeux",
+      "Réparé: Problèmes avec l'animation des empreintes digitales dans plusieurs scènes",
+      "Réparé: Les empreintes digitales et le Déverrouillage facial ont été désactivés après l'installation d'une carte SIM",
+      "Réparé: L'écran a clignoté lorsque le déverrouillage par empreinte digitale était utilisé avec les fonds d'écran Super dans certains cas",
+      "Réparé: \"Lever pour activer\" désactivé de manière inattendue dans certains cas",
+      "Réparé: Les notifications de l'écran de verrouillage ne disparaissaient pas à temps lorsque le déverrouillage par empreinte digitale ou facial était utilisé dans certains cas",
+      "Réparé: L'écran clignotait lorsque le déverrouillage par empreinte digitale était utilisé dans certains cas",
+      "Réparé: Aucun élément, à l'exception de la barre d'état, n'était affiché à l'écran après avoir utilisé le déverrouillage par empreinte digitale",
+      "Réparé: Problèmes avec l'horloge de l'écran de verrouillage lorsque des thèmes tiers et des super fonds d'écran ont été utilisés",
+      "Réparé: Problèmes de mémoire lors de l'affichage de l'horloge clone",
+      "Réparé: Problèmes d'utilisation de la mémoire lors de l'affichage de l'animation de charge",
+      "Réparé: L'utilisation simultanée du déverrouillage du visage et du déverrouillage des empreintes digitales a entraîné des plantages dans certains cas"
     ],
     "Barre d'état, Panneau de notification": [
-      "Réparé: Les icônes de la barre d^état sont devenues noires dans certains cas",
-      "Réparé: Les commandes du lecteur de musique ne s^affichaient pas dans certains cas",
-      "Réparé: Les commutateurs de notification d^application ne fonctionnaient pas toujours",
-      "Réparé: Le bouton d^effacement de la mémoire ne s^affichait pas toujours correctement dans le volet Notification",
-      "Réparé: Problèmes d^affichage des notifications groupées",
-      "Ajustements pour les options liées à l^encoche"
-    ],
-    "Paramètres": [
-      "Réparé: Problèmes d^interface utilisateur apparus lors de l^ajout de réseaux Wi-Fi d^entreprise",
-      "Réparé: Certains comptes n^ont pas pu être synchronisés"
+      "Réparé: Les icônes de la barre d'état sont devenues noires dans certains cas",
+      "Réparé: Les commandes du lecteur de musique ne s'affichaient pas dans certains cas",
+      "Réparé: Les commutateurs de notification d'application ne fonctionnaient pas toujours",
+      "Réparé: Le bouton d'effacement de la mémoire ne s'affichait pas toujours correctement dans le volet Notification",
+      "Réparé: Problèmes d'affichage des notifications groupées",
+      "Ajustements pour les options liées à l'encoche"
     ]
   },
   "logs_it": {
     "Sistema": [
+      "Patch di sicurezza Android aggiornata a ottobre 2021. Maggiore sicurezza del sistema.",
       "Patch di sicurezza Android aggiornata a ottobre 2021. Maggiore sicurezza del sistema."
+    ],
+    "Impostazioni": [
+      "Risolto: Problemi di interfaccia utente che comparivano durante l'aggiunta di reti Wi-Fi aziendali",
+      "Risolto: Alcuni account non potevano essere sincronizzati",
+      "Risolto: Problemi di interfaccia utente che comparivano durante l'aggiunta di reti Wi-Fi aziendali",
+      "Risolto: Alcuni account non potevano essere sincronizzati"
     ],
     "Schermata di blocco": [
       "Nuovo: Nuove opzioni per le impronte digitali",
-      "Ottimizzazione: Utilizzo della memoria dell^assistente app quando il dispositivo è bloccato",
-      "Risolto: Lo schermo lampeggiava dopo il blocco durante l^utilizzo dei Super sfondi",
-      "Risolto: Gli sfondi lampeggiavano durante l^utilizzo dello sblocco tramite impronta in alcuni casi",
-      "Risolto: Si verificavano anomalie di visualizzazione durante l^utilizzo dello sblocco tramite impronta con i giochi",
-      "Risolto: Problemi con l^animazione delle impronte digitali in diversi scenari",
-      "Risolto: L^impronta digitale e il riconoscimento facciale venivano disattivati dopo l^installazione di una scheda SIM",
-      "Risolto: Lo schermo lampeggiava durante l^utilizzo dello sblocco tramite impronta con i Super sfondi in alcuni casi",
-      "Risolto: ^Solleva per attivare^ veniva disattivato inaspettatamente in alcuni casi",
-      "Risolto: Le notifiche sulla schermata di blocco non scomparivano in tempo durante l^utilizzo dello sblocco tramite impronta o del riconoscimento facciale in alcuni casi",
-      "Risolto: Lo schermo lampeggiava durante l^utilizzo dello sblocco tramite impronta in alcuni casi",
+      "Ottimizzazione: Utilizzo della memoria dell'assistente app quando il dispositivo è bloccato",
+      "Risolto: Lo schermo lampeggiava dopo il blocco durante l'utilizzo dei Super sfondi",
+      "Risolto: Gli sfondi lampeggiavano durante l'utilizzo dello sblocco tramite impronta in alcuni casi",
+      "Risolto: Si verificavano anomalie di visualizzazione durante l'utilizzo dello sblocco tramite impronta con i giochi",
+      "Risolto: Problemi con l'animazione delle impronte digitali in diversi scenari",
+      "Risolto: L'impronta digitale e il riconoscimento facciale venivano disattivati dopo l'installazione di una scheda SIM",
+      "Risolto: Lo schermo lampeggiava durante l'utilizzo dello sblocco tramite impronta con i Super sfondi in alcuni casi",
+      "Risolto: \"Solleva per attivare\" veniva disattivato inaspettatamente in alcuni casi",
+      "Risolto: Le notifiche sulla schermata di blocco non scomparivano in tempo durante l'utilizzo dello sblocco tramite impronta o del riconoscimento facciale in alcuni casi",
+      "Risolto: Lo schermo lampeggiava durante l'utilizzo dello sblocco tramite impronta in alcuni casi",
       "Risolto: Dopo lo sblocco tramite impronta non veniva mostrato nessun elemento sullo schermo tranne barra di stato",
-      "Risolto: Problemi con l^orologio della schermata di blocco durante l^utilizzo di temi di terze parti e super sfondi",
+      "Risolto: Problemi con l'orologio della schermata di blocco durante l'utilizzo di temi di terze parti e super sfondi",
       "Risolto: Problemi di memoria quando veniva visualizzato il doppio orologio",
-      "Risolto: Problemi di utilizzo della memoria durante la visualizzazione dell^animazione di ricarica",
-      "Risolto: L^uso simultaneo di riconoscimento facciale e sblocco tramite impronta causava arresti anomali in alcuni casi"
+      "Risolto: Problemi di utilizzo della memoria durante la visualizzazione dell'animazione di ricarica",
+      "Risolto: L'uso simultaneo di riconoscimento facciale e sblocco tramite impronta causava arresti anomali in alcuni casi"
     ],
     "Barra di stato, Area delle notifiche": [
       "Risolto: Le icone della barra di stato diventavano nere in alcuni casi",
       "Risolto: I controlli del lettore musicale non venivano visualizzati in alcuni casi",
       "Risolto: Gli interruttori delle notifiche app non sempre funzionavano",
-      "Risolto: Il pulsante per svuotare la memoria non veniva sempre visualizzato correttamente nell^area delle notifiche",
+      "Risolto: Il pulsante per svuotare la memoria non veniva sempre visualizzato correttamente nell'area delle notifiche",
       "Risolto: Problemi con la visualizzazione delle notifiche raggruppate",
       "Modifiche alle opzioni relative al notch"
-    ],
-    "Impostazioni": [
-      "Risolto: Problemi di interfaccia utente che comparivano durante l^aggiunta di reti Wi-Fi aziendali",
-      "Risolto: Alcuni account non potevano essere sincronizzati"
     ]
   },
   "logs_es": {
     "Sistema": [
+      "Parche de seguridad de Android actualizado a octubre de 2021. Seguridad del sistema incrementada.",
       "Parche de seguridad de Android actualizado a octubre de 2021. Seguridad del sistema incrementada."
+    ],
+    "Ajustes": [
+      "Reparado: Problemas de la interfaz de usuario que aparecían al añadir redes Wi-Fi corporativas",
+      "Reparado: Algunas cuentas no podían ser sincronizadas",
+      "Reparado: Problemas de la interfaz de usuario que aparecían al añadir redes Wi-Fi corporativas",
+      "Reparado: Algunas cuentas no podían ser sincronizadas"
     ],
     "Pantalla de bloqueo": [
       "Nuevo: Nuevas opciones de huella dactilar",
@@ -371,7 +457,7 @@
       "Reparado: Problemas con la animación de la huella dactilar en varias escenas",
       "Reparado: La huella dactilar y el Desbloqueo facial se desactivaban después de instalar una tarjeta SIM",
       "Reparado: En algunos casos la pantalla parpadeaba cuando se usaba el Desbloqueo con huella dactilar con los Superfondos de pantalla",
-      "Reparado: ^Levantar para activar^ se desactivaba inesperadamente en algunos casos",
+      "Reparado: \"Levantar para activar\" se desactivaba inesperadamente en algunos casos",
       "Reparado: En algunos casos las notificaciones de la Pantalla de bloqueo no desaparecían a tiempo cuando se usaba la huella dactilar o el Desbloqueo facial",
       "Reparado: En algunos casos la pantalla parpadeaba cuando se usaba el Desbloqueo con huella dactilar",
       "Reparado: No se mostraba ningún elemento en la pantalla excepto la barra de estado después de usar el Desbloqueo con huella dactilar",
@@ -387,15 +473,18 @@
       "Reparado: El botón para limpiar la memoria no siempre se mostraba correctamente en la Barra de notificaciones",
       "Reparado: Problemas con la visualización de notificaciones agrupadas",
       "Ajustes para las opciones relacionadas con el notch"
-    ],
-    "Ajustes": [
-      "Reparado: Problemas de la interfaz de usuario que aparecían al añadir redes Wi-Fi corporativas",
-      "Reparado: Algunas cuentas no podían ser sincronizadas"
     ]
   },
   "logs_pt": {
     "Sistema": [
+      "Patch de Segurança do Android atualizado para Outubro de 2021. Segurança do sistema aprimorada.",
       "Patch de Segurança do Android atualizado para Outubro de 2021. Segurança do sistema aprimorada."
+    ],
+    "Configurações": [
+      "Correção: Problemas na IU que apareciam ao adicionar redes Wi-Fi corporativas",
+      "Correção: Algumas contas não podiam ser sincronizadas",
+      "Correção: Problemas na IU que apareciam ao adicionar redes Wi-Fi corporativas",
+      "Correção: Algumas contas não podiam ser sincronizadas"
     ],
     "Tela de bloqueio": [
       "Novo: Novas opções de impressão digital",
@@ -406,7 +495,7 @@
       "Correção: Problemas com a animação de impressão digital em vários cenários",
       "Correção: Desbloqueio por impressão digital ou facial eram desativados após um cartão SIM ser instalado",
       "Correção: A tela piscava quando o Desbloqueio por impressão digital era usado com os Super planos de fundo em alguns casos",
-      "Correção: ^Levantar para ligar a tela^ desativava inesperadamente em alguns casos",
+      "Correção: \"Levantar para ligar a tela\" desativava inesperadamente em alguns casos",
       "Correção: Notificações na Tela de bloqueio não desapareciam a tempo quando o Desbloqueio facial ou por impressão digital era usado em alguns casos",
       "Correção: A tela piscava quando o Desbloqueio por impressão digital era usado em alguns casos",
       "Correção: Nenhum item exceto pela barra de status eram exibidos na tela após usar o Desbloqueio por impressão digital",
@@ -422,15 +511,18 @@
       "Correção: O botão para limpar a memória não era sempre exibido corretamente na Área de notificações",
       "Correção: Problemas com a exibição de notificações agrupadas",
       "Ajuste para opções relacionadas ao entalhe"
-    ],
-    "Configurações": [
-      "Correção: Problemas na IU que apareciam ao adicionar redes Wi-Fi corporativas",
-      "Correção: Algumas contas não podiam ser sincronizadas"
     ]
   },
   "logs_tr": {
     "Sistem": [
-      "Android Güvenlik Patch^i Ekim 2021^de güncellendi. Sistem güvenliği arttırıldı."
+      "Android Güvenlik Patch'i Ekim 2021'de güncellendi. Sistem güvenliği arttırıldı.",
+      "Android Güvenlik Patch'i Ekim 2021'de güncellendi. Sistem güvenliği arttırıldı."
+    ],
+    "Ayarlar": [
+      "Onarım: Kurumsal Wi-Fi ağları ekleniyorken görünen kullanıcı arayüzü sorunları",
+      "Onarım: Bazı hesaplar senkronize edilemedi",
+      "Onarım: Kurumsal Wi-Fi ağları ekleniyorken görünen kullanıcı arayüzü sorunları",
+      "Onarım: Bazı hesaplar senkronize edilemedi"
     ],
     "Kilit ekranı": [
       "Yeni: Yeni parmak izi seçenekleri",
@@ -441,7 +533,7 @@
       "Onarım: Birkaç sahnedeki parmak izi animasyonu ile ilgili sorunlar",
       "Onarım: SIM kart takıldıktan sonra Parmak izi ve Yüz ile kilit açma kapatıldı",
       "Onarım: Parmak izi ile kilit açma, Süper duvar kağıtları ile kullanıldığı bazı durumlarda ekran yanıp söndü",
-      "Onarım: ^^Uyandırmak için kaldır^^ bazı durumlarda beklenmedik şekilde kapandı",
+      "Onarım: \"Uyandırmak için kaldır\" bazı durumlarda beklenmedik şekilde kapandı",
       "Onarım: Parmak izi veya Yüz ile kilit açma kullanıldığı bazı durumlarda Kilit ekranı bildirimleri zamanında kaybolmadı",
       "Onarım: Parmak izi ile kilit açma kullanıldığı bazı durumlarda ekran yanıp söndü",
       "Onarım: Parmak izi ile kilit açma kullanıldıktan sonra ekranda durum çubuğundan başka öge gösterilmedi",
@@ -454,18 +546,19 @@
       "Onarım: Durum çubuğu simgesi bazı durumlarda siyaha döndü",
       "Onarım: Müzik çalar kontrolleri bazı durumlarda görüntülenmedi",
       "Onarım: Uygulama bildirimleri değişimleri her zaman çalışmadı",
-      "Onarım: Belleği temizleme tuşu Bildirim Çubuğu^nda her zaman düzgün bir şekilde görüntülenmedi",
+      "Onarım: Belleği temizleme tuşu Bildirim Çubuğu'nda her zaman düzgün bir şekilde görüntülenmedi",
       "Onarım: Gruplandırılmış bildirimleri görüntülemekle ilgili sorunlar",
       "Çentikle ilgili seçenekler için ayarlamalar"
-    ],
-    "Ayarlar": [
-      "Onarım: Kurumsal Wi-Fi ağları ekleniyorken görünen kullanıcı arayüzü sorunları",
-      "Onarım: Bazı hesaplar senkronize edilemedi"
     ]
   },
   "logs_id": {
     "Sistem": [
+      "Patch Keamanan Android diperbarui (Oktober 2021). Keamanan sistem ditingkatkan.",
       "Patch Keamanan Android diperbarui (Oktober 2021). Keamanan sistem ditingkatkan."
+    ],
+    "Pengaturan": [
+      "Perbaikan: Masalah antarmuka (UI) yang timbul saat menambahkan jaringan Wi-Fi perusahaan",
+      "Perbaikan: Beberapa akun tidak disinkronkan"
     ],
     "Layar kunci": [
       "Baru: Pilihan penggunaan sidik jari baru",
@@ -476,7 +569,7 @@
       "Perbaikan: Masalah dengan animasi sidik jari di beberapa kondisi",
       "Perbaikan: Buka kunci dengan sidik jari dan wajah dimatikan setelah kartu SIM dipasang",
       "Perbaikan: Layar berkedip saat Buka kunci dengan sidik jari digunakan di Wallpaper super dalam beberapa kasus",
-      "Perbaikan: ^Angkat untuk bangunkan^ mati secara tidak terduga dalam beberapa kasus",
+      "Perbaikan: \"Angkat untuk bangunkan\" mati secara tidak terduga dalam beberapa kasus",
       "Perbaikan: Notifikasi Layar kunci tidak hilang tepat waktu, saat Buka kunci dengan sidik jari atau wajah digunakan dalam beberapa kasus",
       "Perbaikan: Layar berkedip saat Buka kunci dengan sidik jari digunakan dalam beberapa kasus",
       "Perbaikan: Tidak ada item kecuali bilah status yang ditampilkan di layar setelah menggunakan Buka kunci dengan sidik jari",
@@ -500,7 +593,14 @@
   },
   "logs_vi": {
     "Hệ thống": [
+      "Cập nhật Bản vá bảo mật Android đến tháng 10 năm 2021. Tăng cường bảo mật hệ thống.",
       "Cập nhật Bản vá bảo mật Android đến tháng 10 năm 2021. Tăng cường bảo mật hệ thống."
+    ],
+    "Cài đặt": [
+      "Sửa: Sự cố giao diện người dùng xuất hiện khi thêm mạng Wi-Fi doanh nghiệp",
+      "Sửa: Một vài tài khoản không thể đồng bộ",
+      "Sửa: Sự cố giao diện người dùng xuất hiện khi thêm mạng Wi-Fi doanh nghiệp",
+      "Sửa: Một vài tài khoản không thể đồng bộ"
     ],
     "Màn hình khóa": [
       "Mới: Tùy chọn vân tay mới",
@@ -511,7 +611,7 @@
       "Sửa: Vấn đề với hoạt ảnh vân tay trong một số trường hợp",
       "Sửa: Mở khóa bằng vân tay và khuôn mặt bị tắt sau khi lắp thẻ SIM",
       "Sửa: Màn hình nhấp nháy khi Mở khóa vân tay được sử dụng với Siêu hình nền trong một số trường hợp",
-      "Sửa: ^Nâng lên để đánh thức^ bị tắt đột ngột trong một số trường hợp",
+      "Sửa: \"Nâng lên để đánh thức\" bị tắt đột ngột trong một số trường hợp",
       "Sửa: Thông báo Màn hình khóa không biến mất khi Mở khóa bằng vân tay hoặc khuôn mặt được sử dụng trong một số trường hợp",
       "Sửa: Màn hình nhấp nháy khi sử dụng Mở khóa vân tay trong một số trường hợp",
       "Sửa: Không có mục nào ngoại trừ thanh trạng thái được hiển thị trên màn hình sau khi sử dụng Mở khóa vân tay",
@@ -527,15 +627,18 @@
       "Sửa: Nút xóa bộ nhớ không phải lúc nào cũng được hiển thị chính xác trong Thanh thông báo",
       "Sửa: Vấn đề với việc hiển thị thông báo nhóm",
       "Điều chỉnh cho các tùy chọn liên quan đến tai thỏ"
-    ],
-    "Cài đặt": [
-      "Sửa: Sự cố giao diện người dùng xuất hiện khi thêm mạng Wi-Fi doanh nghiệp",
-      "Sửa: Một vài tài khoản không thể đồng bộ"
     ]
   },
   "logs_th": {
     "ระบบ": [
+      "อัปเดตแพทช์ความปลอดภัยของแอนดรอยด์เป็นตุลาคม 2021 เพิ่มความปลอดภัยของระบบ",
       "อัปเดตแพทช์ความปลอดภัยของแอนดรอยด์เป็นตุลาคม 2021 เพิ่มความปลอดภัยของระบบ"
+    ],
+    "การตั้งค่า": [
+      "แก้ไข: ปัญหา UI ที่ปรากฏขึ้นขณะเพิ่มเครือข่าย Wi-Fi ขององค์กร",
+      "แก้ไข: ไม่สามารถซิงค์บางบัญชีได้",
+      "แก้ไข: ปัญหา UI ที่ปรากฏขึ้นขณะเพิ่มเครือข่าย Wi-Fi ขององค์กร",
+      "แก้ไข: ไม่สามารถซิงค์บางบัญชีได้"
     ],
     "ล็อคหน้าจอ": [
       "ใหม่: ตัวเลือกลายนิ้วมือใหม่",
@@ -546,7 +649,7 @@
       "แก้ไข: ปัญหาเกี่ยวกับแอนิเมชั่นลายนิ้วมือในหลายฉาก",
       "แก้ไข: ปลดล็อกด้วยลายนิ้วมือและใบหน้าถูกปิดหลังจากติดตั้งซิมการ์ด",
       "แก้ไข: หน้าจอกะพริบเมื่อใช้การปลดล็อกด้วยลายนิ้วมือกับสุดยอดภาพพื้นหลังในบางกรณี",
-      "แก้ไข: ^ยกขึ้นเพื่อปลุก^ ถูกปิดโดยไม่คาดคิดในบางกรณี",
+      "แก้ไข: \"ยกขึ้นเพื่อปลุก\" ถูกปิดโดยไม่คาดคิดในบางกรณี",
       "แก้ไข: การแจ้งเตือนหน้าจอล็อกไม่หายไปตามเวลาเมื่อปลดล็อกด้วยลายนิ้วมือหรือใบหน้าในบางกรณี",
       "แก้ไข: หน้าจอกะพริบเมื่อใช้การปลดล็อกด้วยลายนิ้วมือในบางกรณี",
       "แก้ไข: ไม่มีรายการยกเว้นแถบสถานะปรากฏบนหน้าจอหลังจากใช้การปลดล็อกด้วยลายนิ้วมือ",
@@ -562,15 +665,18 @@
       "แก้ไข: ปุ่มสำหรับล้างหน่วยความจำไม่ได้แสดงอย่างถูกต้องในแถบการแจ้งเตือนทุกครั้ง",
       "แก้ไข: ปัญหาเกี่ยวกับการแสดงการแจ้งเตือนแบบกลุ่ม",
       "การปรับเปลี่ยนตัวเลือกที่เกี่ยวข้องกับรอยบาก"
-    ],
-    "การตั้งค่า": [
-      "แก้ไข: ปัญหา UI ที่ปรากฏขึ้นขณะเพิ่มเครือข่าย Wi-Fi ขององค์กร",
-      "แก้ไข: ไม่สามารถซิงค์บางบัญชีได้"
     ]
   },
   "logs_ar": {
     "النظام": [
+      "تم تحديث تصحيح أمان الأندرويد إلى اكتوبر 2021 لزيادة أمان النظام.",
       "تم تحديث تصحيح أمان الأندرويد إلى اكتوبر 2021 لزيادة أمان النظام."
+    ],
+    "الإعدادات": [
+      "الإصلاح: مشاكل واجهة المستخدم أثناء إضافة شبكات Wi-Fi للشركات",
+      "الإصلاح: مشكلة عدم مزامنة بعض الحسابات",
+      "الإصلاح: مشاكل واجهة المستخدم أثناء إضافة شبكات Wi-Fi للشركات",
+      "الإصلاح: مشكلة عدم مزامنة بعض الحسابات"
     ],
     "شاشة القفل": [
       "الجديد: خيارات جديدة لبصمات الأصابع",
@@ -581,7 +687,7 @@
       "الإصلاح: مشاكل حركة بصمة الإصبع في بعض المشاهد",
       "الإصلاح: توقف ميزة بصمة الإصبع والتعرف على الوجه بعد إدخال بطاقة SIM",
       "الإصلاح: مشكلة وميض الشاشة عند فتح قفل الشاشة عند استخدام خلفيات سوبر في بعض الأحيان",
-      "الإصلاح: مشكلة توقف ميزة ^رفع الجهاز لإيقاظه^ بشكل غير متوقع في بعض الحالات",
+      "الإصلاح: مشكلة توقف ميزة \"رفع الجهاز لإيقاظه\" بشكل غير متوقع في بعض الحالات",
       "الإصلاح: عدم ظهور إشعارات شاشة القفل في الوقت المحدد عند استخدام بصمة الإصبع أو التعرف على الوجه في بعض الحالات",
       "الإصلاح: مشكلة وميض الشاشة عند استخدام فتح قفل الشاشة ببصمة الإصبع في بعض الحالات",
       "الإصلاح: عدم ظهور أي عناصر على الشاشة على الشاشة باستثناء شريط الحالة بعد استخدام فتح قفل الشاشة ببصمة الإصبع",
@@ -597,15 +703,18 @@
       "الإصلاح: مشكلة عدم ظهور زر مسح الذاكرة بشكل صحيح في مركز الإشعارات",
       "الإصلاح: مشاكل في ظهور الإشعارات الجماعية",
       "تعديلات الخيارات المرتبطة بالنتوء"
-    ],
-    "الإعدادات": [
-      "الإصلاح: مشاكل واجهة المستخدم أثناء إضافة شبكات Wi-Fi للشركات",
-      "الإصلاح: مشكلة عدم مزامنة بعض الحسابات"
     ]
   },
   "logs_in": {
     "सिस्टम": [
+      "Android सुरक्षा पैच को अक्टूबर 2021 से अपडेट किया गया. सिस्टम की सुरक्षा बढ़ा दी गई है.",
       "Android सुरक्षा पैच को अक्टूबर 2021 से अपडेट किया गया. सिस्टम की सुरक्षा बढ़ा दी गई है."
+    ],
+    "सेटिंग्स": [
+      "ठीक करें कॉर्पोरेट वाई-फ़ाई नेटवर्क जोड़ते समय दिखाई देने वाली UI समस्याएं",
+      "ठीक करें कुछ खाते सिंक नहीं किए जा सके",
+      "ठीक करें कॉर्पोरेट वाई-फ़ाई नेटवर्क जोड़ते समय दिखाई देने वाली UI समस्याएं",
+      "ठीक करें कुछ खाते सिंक नहीं किए जा सके"
     ],
     "लॉक स्क्रीन": [
       "नया फिंगरप्रिंट के नए विकल्प",
@@ -616,7 +725,7 @@
       "ठीक करें कई सीन्स में फ़िंगरप्रिंट एनिमेशन ठीक से काम नहीं कर रही थी",
       "ठीक करें सिम कार्ड इंस्टॉल किए जाने के बाद, फ़िंगरप्रिंट और चेहरा अनलॉक बंद हो जा रहे थे",
       "ठीक करें जब कुछ मामलों में सुपर वॉलपेपर के साथ फ़िंगरप्रिंट अनलॉक का उपयोग किए जाने पर स्क्रीन फ़्लैश हो रही थी",
-      "ठीक करें कुछ मामलों में ^जगाने के लिए उठाएं^ अचानक बंद हो जा रहा था",
+      "ठीक करें कुछ मामलों में \"जगाने के लिए उठाएं\" अचानक बंद हो जा रहा था",
       "ठीक करें कुछ मामलों में फ़िंगरप्रिंट या चेहरा अनलॉक का उपयोग किए जाने पर लॉक स्क्रीन सूचनाएं समय पर नहीं हट रहीं थी",
       "ठीक करें कुछ मामलों में फ़िंगरप्रिंट अनलॉक का उपयोग किए जाने पर स्क्रीन फ़्लैश हो रही थी",
       "ठीक करें फ़िंगरप्रिंट अनलॉक का उपयोग करने के बाद स्क्रीन पर स्टेटस बार को छोड़कर कोई भी आइटम नहीं दिख रहा था",
@@ -632,10 +741,70 @@
       "ठीक करें सूचना शेड में मेमोरी साफ़ करने का बटन हमेशा सही ढंग से नहीं दिखाई दे रहा था",
       "ठीक करें समूहमें रखी गई सूचनाएं दिखाए जाने से जुड़ी समस्याएं",
       "नौच से संबंधित विकल्पों के लिए एडजस्टमेंट"
+    ]
+  },
+  "logs_ug": {
+    "سىستېما": [
+      "Updated Android Security Patch to October 2021. Increased system security.",
+      "Updated Android Security Patch to October 2021. Increased system security."
     ],
-    "सेटिंग्स": [
-      "ठीक करें कॉर्पोरेट वाई-फ़ाई नेटवर्क जोड़ते समय दिखाई देने वाली UI समस्याएं",
-      "ठीक करें कुछ खाते सिंक नहीं किए जा सके"
+    "تەڭشەك": [
+      "Fix: UI issues that appeared while adding corporate Wi-Fi networks",
+      "Fix: Some accounts couldn't be synced"
+    ],
+    "Lock screen": [
+      "New: New fingerprint options",
+      "Optimization: App vault memory usage when device is locked",
+      "Fix: Screen flashed after locking when Super wallpapers were used",
+      "Fix: Wallpapers flashed when Fingerprint unlock was used in some cases",
+      "Fix: Display abnormalities occurred when Fingerprint unlock was used with games",
+      "Fix: Issues with the fingerprint animation in several scenes",
+      "Fix: Fingerprint and Face unlock were turned off after a SIM card was installed",
+      "Fix: The screen flashed when Fingerprint unlock was used with Super wallpapers in some cases",
+      "Fix: \"Raise to wake\" turned off unexpectedly in some cases",
+      "Fix: Lock screen notifications didn't disappear on time when Fingerprint or Face unlock was used in some cases",
+      "Fix: Screen flashed when Fingerprint unlock was used in some cases",
+      "Fix: No items except for the status bar were shown on the screen after using Fingerprint unlock",
+      "Fix: Issues with the Lock screen clock when third party themes and super wallpapers were used",
+      "Fix: Memory issues when dual clock was displayed",
+      "Fix: Memory usage issues when charging animation was displayed",
+      "Fix: Using Face unlock and Fingerprint unlock simultaneously led to crashes in some cases"
+    ],
+    "Settings": [
+      "Fix: UI issues that appeared while adding corporate Wi-Fi networks",
+      "Fix: Some accounts couldn't be synced"
+    ]
+  },
+  "logs_bo": {
+    "མ་ལག": [
+      "Updated Android Security Patch to October 2021. Increased system security."
+    ],
+    "Settings": [
+      "Fix: UI issues that appeared while adding corporate Wi-Fi networks",
+      "Fix: Some accounts couldn't be synced",
+      "Fix: UI issues that appeared while adding corporate Wi-Fi networks",
+      "Fix: Some accounts couldn't be synced"
+    ],
+    "རིམ་ལུགས": [
+      "Updated Android Security Patch to October 2021. Increased system security."
+    ],
+    "Lock screen": [
+      "New: New fingerprint options",
+      "Optimization: App vault memory usage when device is locked",
+      "Fix: Screen flashed after locking when Super wallpapers were used",
+      "Fix: Wallpapers flashed when Fingerprint unlock was used in some cases",
+      "Fix: Display abnormalities occurred when Fingerprint unlock was used with games",
+      "Fix: Issues with the fingerprint animation in several scenes",
+      "Fix: Fingerprint and Face unlock were turned off after a SIM card was installed",
+      "Fix: The screen flashed when Fingerprint unlock was used with Super wallpapers in some cases",
+      "Fix: \"Raise to wake\" turned off unexpectedly in some cases",
+      "Fix: Lock screen notifications didn't disappear on time when Fingerprint or Face unlock was used in some cases",
+      "Fix: Screen flashed when Fingerprint unlock was used in some cases",
+      "Fix: No items except for the status bar were shown on the screen after using Fingerprint unlock",
+      "Fix: Issues with the Lock screen clock when third party themes and super wallpapers were used",
+      "Fix: Memory issues when dual clock was displayed",
+      "Fix: Memory usage issues when charging animation was displayed",
+      "Fix: Using Face unlock and Fingerprint unlock simultaneously led to crashes in some cases"
     ]
   }
 }

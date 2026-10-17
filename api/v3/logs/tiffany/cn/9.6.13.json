@@ -7,9 +7,11 @@
     ],
     "锁屏、状态栏、通知栏": [
       "新增 快捷开关中切换sim卡上网功能",
-      "修复 通话过程中误触通知栏的问题"
+      "修复 通话过程中误触通知栏的问题",
+      "新增 数据 SIM 卡切换快捷方式"
     ],
     "设置": [
+      "新增 快捷回复功能，支持使用悬浮窗打开即时通讯类应用通知",
       "新增 快捷回复功能，支持使用悬浮窗打开即时通讯类应用通知"
     ],
     "骚扰拦截": [
@@ -19,13 +21,14 @@
     ],
     "游戏加速": [
       "新增 手势连续滑动唤出游戏工具箱二级菜单功能",
+      "优化 横屏下游戏加速设置及游戏添加界面显示风格",
+      "新增 手势连续滑动唤出游戏工具箱二级菜单功能",
       "优化 横屏下游戏加速设置及游戏添加界面显示风格"
-    ],
-    "省电优化": [
-      "新增 全新改版，增加省电首页，优化部分界面体验"
     ],
     "小米云服务": [
       "新增 用户关闭查找手机时，提示MiPay银行卡和虚拟门卡将被删除",
+      "优化 同步及时性，提升同步效率",
+      "修复 退出小米帐号时，提示云服务停止运行的问题",
       "优化 同步及时性，提升同步效率",
       "修复 退出小米帐号时，提示云服务停止运行的问题"
     ],
@@ -34,19 +37,248 @@
     ]
   },
   "logs_en": {
-    "Lockscreen, status bar, Notification shade": [
-      "New: A shortcut for switchong between data SIM cards"
-    ],
     "Settings": [
+      "New: Quick replies for messaging apps",
       "New: Quick replies for messaging apps"
     ],
     "Game speed booster": [
       "New: Continuous swiping opens an additional menu in Game Turbo now",
+      "Optimization: Improved display options for landscape orientation",
+      "New: Continuous swiping opens an additional menu in Game Turbo now",
       "Optimization: Improved display options for landscape orientation"
+    ],
+    "Lockscreen, status bar, Notification shade": [
+      "New: A shortcut for switchong between data SIM cards"
     ],
     "Mi Cloud": [
       "Optimization: Improved sync efficiency",
       "Fix: Mi Cloud services stopped working when the users signed out of their Mi Account"
+    ]
+  },
+  "logs_zh_tw": {
+    "設定": [
+      "新增 快捷回覆功能，支援使用懸浮窗開啟即時通訊類應用通知",
+      "優化 股票卡片優化"
+    ],
+    "遊戲加速": [
+      "新增 手勢連續滑動喚出遊戲工具箱二級菜單功能",
+      "優化 橫向螢幕下遊戲加速設定及遊戲增加介面顯示風格",
+      "新增 手勢連續滑動喚出遊戲工具箱二級菜單功能",
+      "優化 橫向螢幕下遊戲加速設定及遊戲增加介面顯示風格"
+    ]
+  },
+  "logs_ja": {
+    "設定": [
+      "新機能: メッセージアプリのクイック返信",
+      "最適化: 株価カードを改善しました"
+    ],
+    "ゲーム加速": [
+      "New: Continuous swiping opens an additional menu in Game Turbo now",
+      "Optimization: Improved display options for landscape orientation",
+      "New: Continuous swiping opens an additional menu in Game Turbo now",
+      "Optimization: Improved display options for landscape orientation"
+    ]
+  },
+  "logs_ko": {
+    "설정": [
+      "수정: 앱이 갑자기 강제로 종료되는 문제",
+      "최적화: 주식 카드 최적화됨"
+    ],
+    "게임 가속": [
+      "New: Continuous swiping opens an additional menu in Game Turbo now",
+      "Optimization: Improved display options for landscape orientation",
+      "New: 지속적인 스와이프로 게임 터보의 추가 메뉴 실행",
+      "Optimization: Improved display options for landscape orientation"
+    ]
+  },
+  "logs_ru": {
+    "Настройки": [
+      "Новое: Быстрые ответы для мессенджеров",
+      "Оптимизация: Улучшена карточка \"Акции\""
+    ],
+    "Ускорение приложений": [
+      "Новое: Непрерывное пролистывание открывает дополнительное меню в Ускорении игр",
+      "Оптимизация: Улучшено отображение элементов в ландшафтном режиме",
+      "Новое: Непрерывное пролистывание открывает дополнительное меню в Ускорении игр",
+      "Оптимизация: Улучшено отображение элементов в ландшафтном режиме"
+    ]
+  },
+  "logs_uk": {
+    "Налаштування": [
+      "Нове: Швидкі відповіді для месенджерів",
+      "Оптимізація: Покращено картку акцій"
+    ],
+    "Прискорення ігор": [
+      "New: Continuous swiping opens an additional menu in Game Turbo now",
+      "Optimization: Improved display options for landscape orientation"
+    ]
+  },
+  "logs_pl": {
+    "Ustawienia": [
+      "Naprawiono: W niektórych przypadkach wymuszono zamknięcie aplikacji",
+      "Zoptymalizowano: Ulepszyliśmy kartę \"Akcje\""
+    ],
+    "Przyspieszanie gier": [
+      "New: Continuous swiping opens an additional menu in Game Turbo now",
+      "Optimization: Improved display options for landscape orientation",
+      "Nowe: Ciągłe przesuwanie otwiera dodatkowe menu Game Turbo",
+      "Optimization: Improved display options for landscape orientation"
+    ]
+  },
+  "logs_de": {
+    "Einstellungen": [
+      "Neu: Schnellantworten für Messaging-Apps",
+      "Optimierung: Aktien-Karte verbessert"
+    ],
+    "Spielbeschleunigung": [
+      "Neu: Kontinuierliches Wischen öffnet jetzt ein zusätzliches Menü in Game Turbo",
+      "Optimierung: Verbesserte Anzeigeoptionen im Querformat",
+      "New: Continuous swiping opens an additional menu in Game Turbo now",
+      "Optimierung: Verbesserte Anzeigeoptionen im Querformat"
+    ]
+  },
+  "logs_fr": {
+    "Paramètres": [
+      "Nouveau: Réponses rapides pour les applications de messagerie",
+      "Optimisation: Amélioré la carte \"Stocks\""
+    ],
+    "Booster de vitesse de jeu": [
+      "Nouveau: Le balayage continue ouvre un menu additionel dans Game Turbo maintenant",
+      "Optimisation: A amélioré les options d'affichage pour l'orientation de paysage",
+      "Nouveau: Le balayage continue ouvre un menu additionel dans Game Turbo maintenant",
+      "Optimisation: A amélioré les options d'affichage pour l'orientation de paysage"
+    ]
+  },
+  "logs_it": {
+    "Impostazioni": [
+      "Nuovo: Risposte rapide per le app di messaggistica",
+      "Ottimizzazione: Migliorata la scheda \"Azioni\""
+    ],
+    "Turbo Videogiochi": [
+      "Nuovo: Lo scorrimento continuo apre ora un menu aggiuntivo in Turbo videogiochi",
+      "Ottimizzazione: Opzioni di visualizzazione migliorate per l'orientamento orizzontale",
+      "Nuovo: Lo scorrimento continuo apre ora un menu aggiuntivo in Turbo videogiochi",
+      "Ottimizzazione: Opzioni di visualizzazione migliorate per l'orientamento orizzontale"
+    ]
+  },
+  "logs_es": {
+    "Ajustes": [
+      "Nuevo: Respuestas rápidas para aplicaciones de mensajería",
+      "Optimización: Mejorada la tarjeta de \"Acciones\""
+    ],
+    "Acelerador de juegos": [
+      "Nuevo: Deslizar de forma reperida ahora abre un menú adicional en Game Turbo",
+      "Optimización: Opciones de visualización mejoradas para la orientación apaisada",
+      "Nuevo: Deslizar de forma reperida ahora abre un menú adicional en Game Turbo",
+      "Optimización: Opciones de visualización mejoradas para la orientación apaisada"
+    ]
+  },
+  "logs_pt": {
+    "Configurações": [
+      "Novo: Respostas rápidas para apps mensageiros",
+      "Otimização: Melhoria no cartão de \"Ações\""
+    ],
+    "Acelerador de jogos": [
+      "Novo: Agora um menu adicional do Game Turbo é aberto ao deslizar continuamente",
+      "Otimização: Melhoria das opções de exibição na orientação paisagem",
+      "Novo: Agora um menu adicional do Game Turbo é aberto ao deslizar continuamente",
+      "Otimização: Melhoria das opções de exibição na orientação paisagem"
+    ]
+  },
+  "logs_tr": {
+    "Ayarlar": [
+      "Yeni: Mesajlaşma uygulamaları için hızlı yanıtlar",
+      "Optimizasyon: Geliştirilmiş “Hisse“ kartı"
+    ],
+    "Oyun hız artırıcı": [
+      "Yeni: Devamlı kaydırma şimdi Game Turbo'da ek bir menü açıyor",
+      "Optimizasyon: Manzara yönlendirimlesi için görüntüleme seçenekleri artırıldı",
+      "Yeni: Devamlı kaydırma şimdi Game Turbo'da ek bir menü açıyor",
+      "Optimizasyon: Manzara yönlendirimlesi için görüntüleme seçenekleri artırıldı"
+    ]
+  },
+  "logs_id": {
+    "Pengaturan": [
+      "Baru: Balasan cepat pada aplikasi Pesan",
+      "Pengoptimalan: Kartu \"Saham\" ditingkatkan"
+    ],
+    "Peningkat kecepatan permainan": [
+      "Baru: Ada menu tambahan di Game Turbo jika Anda terus menggeser halaman",
+      "Pengoptimalan: Pilihan tampilan saat ponsel berada dalam posisi horisontal ditingkatkan",
+      "Baru: Ada menu tambahan di Game Turbo jika Anda terus menggeser halaman",
+      "Pengoptimalan: Pilihan tampilan saat ponsel berada dalam posisi horisontal ditingkatkan"
+    ]
+  },
+  "logs_vi": {
+    "Cài đặt": [
+      "Mới: Trả lời nhanh cho ứng dụng nhắn tin",
+      "Tối ưu: Cải thiện thẻ cổ phiếu"
+    ],
+    "Tăng tốc trò chơi": [
+      "New: Continuous swiping opens an additional menu in Game Turbo now",
+      "Optimization: Improved display options for landscape orientation",
+      "New: Continuous swiping opens an additional menu in Game Turbo now",
+      "Optimization: Improved display options for landscape orientation"
+    ]
+  },
+  "logs_th": {
+    "การตั้งค่า": [
+      "New: Quick replies for messaging apps",
+      "Optimization: Improved the \"Stocks\" card"
+    ],
+    "ตัวเร่งความเร็วเกม": [
+      "New: Continuous swiping opens an additional menu in Game Turbo now",
+      "Optimization: Improved display options for landscape orientation",
+      "New: Continuous swiping opens an additional menu in Game Turbo now",
+      "Optimization: Improved display options for landscape orientation"
+    ]
+  },
+  "logs_ar": {
+    "الإعدادات": [
+      "إصلاح الخروج الإجباري للتطبيق في بعض الحالات",
+      "محسن تحسين بطاقة \"الأسهم\""
+    ],
+    "تسريع الألعاب": [
+      "New: Continuous swiping opens an additional menu in Game Turbo now",
+      "Optimization: Improved display options for landscape orientation",
+      "الجديد يفتح التمرير المستمر قائمة إضافية في مسرع الألعاب الآن",
+      "Optimization: Improved display options for landscape orientation"
+    ]
+  },
+  "logs_in": {
+    "सेटिंग्स": [
+      "New: Quick replies for messaging apps",
+      "Optimization: Improved the \"Stocks\" card"
+    ],
+    "गेम गति बूस्टर": [
+      "New: Continuous swiping opens an additional menu in Game Turbo now",
+      "Optimization: Improved display options for landscape orientation",
+      "New: Continuous swiping opens an additional menu in Game Turbo now",
+      "Optimization: Improved display options for landscape orientation"
+    ]
+  },
+  "logs_ug": {
+    "تەڭشەك": [
+      "New: Quick replies for messaging apps",
+      "Optimization: Improved the \"Stocks\" card"
+    ],
+    "ئويۇن تېزلىتىش": [
+      "New: Continuous swiping opens an additional menu in Game Turbo now",
+      "Optimization: Improved display options for landscape orientation",
+      "New: Continuous swiping opens an additional menu in Game Turbo now",
+      "Optimization: Improved display options for landscape orientation"
+    ]
+  },
+  "logs_bo": {
+    "Settings": [
+      "New: Quick replies for messaging apps",
+      "Optimization: Improved the \"Stocks\" card"
+    ],
+    "Game speed booster": [
+      "New: Continuous swiping opens an additional menu in Game Turbo now",
+      "Optimization: Improved display options for landscape orientation",
+      "New: Continuous swiping opens an additional menu in Game Turbo now",
+      "Optimization: Improved display options for landscape orientation"
     ]
   }
 }

@@ -1,49 +1,103 @@
 {
   "logs_zh": {
     "系统": [
+      "优化 锁屏误触问题，避免手机在口袋中发生屏幕误操作",
       "优化 锁屏误触问题，避免手机在口袋中发生屏幕误操作"
     ],
     "联系人": [
+      "修复 SIM联系人无法删除问题",
+      "修复 SIM联系人无法删除问题",
       "修复 SIM联系人无法删除问题"
     ],
     "锁屏、状态栏、通知栏": [
       "修复 部分场景下MiPay不能验证指纹的问题",
+      "修复 锁屏上来电时偶现屏幕无法亮起的问题",
+      "修复 锁屏上来电时偶现屏幕无法亮起的问题",
+      "修复 部分场景下MiPay不能验证指纹的问题",
       "修复 锁屏上来电时偶现屏幕无法亮起的问题"
     ],
-    "省电优化": [
-      "优化 提升夜间待机时长"
+    "其他": [
+      "提高系统的稳定性",
+      "优化系统的流畅度"
+    ],
+    "系統": [
+      "优化 锁屏误触问题，避免手机在口袋中发生屏幕误操作"
     ]
   },
   "logs_en": {
     "System": [
+      "Optimization: Lock screen pocket mode",
       "Optimization: Lock screen pocket mode"
     ],
     "Contacts": [
-      "Fix: Contacts couldn^t be deleted from SIM cards in some cases"
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases"
     ],
     "Lockscreen, status bar, Notification shade": [
-      "Fix: Screen didn^t always light up for notifications"
+      "Fix: Screen didn't always light up for notifications"
+    ],
+    "Other": [
+      "Optimized system performance",
+      "Improved system security and stability"
     ]
   },
   "logs_zh_tw": {
     "系統": [
+      "優化 鎖屏誤觸問題，避免手機在口袋中發生螢幕誤操作",
+      "優化 鎖屏誤觸問題，避免手機在口袋中發生螢幕誤操作",
       "優化 鎖屏誤觸問題，避免手機在口袋中發生螢幕誤操作"
     ],
     "聯絡人": [
+      "修復 SIM聯絡人無法刪除的問題",
+      "修復 SIM聯絡人無法刪除的問題",
       "修復 SIM聯絡人無法刪除的問題"
     ],
     "解鎖畫面、狀態欄、通知欄": [
       "修復 部分場景下MiPay不能驗證指紋的問題",
+      "修復 螢幕鎖定上來電時偶現螢幕無法亮起的問題",
+      "修復 螢幕鎖定上來電時偶現螢幕無法亮起的問題",
+      "修復 部分場景下MiPay不能驗證指紋的問題",
       "修復 螢幕鎖定上來電時偶現螢幕無法亮起的問題"
+    ],
+    "其他": [
+      "改善系統的穩定性",
+      "優化系統的流暢度"
     ]
   },
   "logs_ja": {
+    "システム": [
+      "Optimization: Lock screen pocket mode",
+      "最適化: ロック画面のポケットモード",
+      "最適化: ロック画面のポケットモード"
+    ],
+    "連絡先": [
+      "修正: SIMカードの連絡先を削除できない場合がある問題",
+      "修正: SIMカードの連絡先を削除できない場合がある問題",
+      "修正: SIMカードの連絡先を削除できない場合がある問題"
+    ],
+    "ロック画面、ステータスバー、通知シェード": [
+      "Fix: Screen didn't always light up for notifications"
+    ],
     "その他": [
       "システムパフォーマンスの最適化",
       "システムのセキュリティと安定性の向上"
     ]
   },
   "logs_ko": {
+    "시스템": [
+      "Optimization: Lock screen pocket mode",
+      "최적화: 잠금화면 시의 주머니 내 접촉 오작동 문제",
+      "최적화: 잠금 화면 주머니 모드"
+    ],
+    "연락처": [
+      "수정: 일부 상황에서 SIM 카드의 연락처를 삭제할 수 없는 문제",
+      "수정: 일부 상황에서 SIM 카드의 연락처를 삭제할 수 없는 문제",
+      "수정: 일부 상황에서 SIM 카드의 연락처를 삭제할 수 없는 문제"
+    ],
+    "잠금화면, 상태 바, 알림 바": [
+      "Fix: Screen didn't always light up for notifications"
+    ],
     "기타": [
       "시스템 성능 최적화",
       "시스템 보안 및 안정성 개선"
@@ -51,34 +105,94 @@
   },
   "logs_ru": {
     "Система": [
-      "Оптимизация: Режим ^В кармане^"
+      "Оптимизация: Режим \"В кармане\"",
+      "Оптимизация: Режим \"В кармане\"",
+      "Оптимизация: Режим \"В кармане\""
     ],
     "Контакты": [
+      "Исправлено: В некоторых случаях контакты не могли быть удалены с SIM-карты",
+      "Исправлено: В некоторых случаях контакты не могли быть удалены с SIM-карты",
       "Исправлено: В некоторых случаях контакты не могли быть удалены с SIM-карты"
     ],
     "Экран блокировки, строка состояния, шторка уведомлений": [
       "Исправлено: Экран не всегда включался при получении новых уведомлений"
+    ],
+    "Другое": [
+      "Оптимизация производительности системы",
+      "Улучшение безопасности и стабильности системы"
     ]
   },
   "logs_uk": {
+    "Система": [
+      "Optimization: Lock screen pocket mode",
+      "Оптимізація: Режим «У кишені»",
+      "Оптимізація: Режим «У кишені» екрана блокування"
+    ],
+    "Контакти": [
+      "Виправлено: У деяких випадках контакти не вдавалося видалити з SIM-картки",
+      "Виправлено: У деяких випадках контакти не вдавалося видалити з SIM-картки",
+      "Виправлено: У деяких випадках контакти не вдавалося видалити з SIM-картки"
+    ],
+    "Екран блокування, рядок стану, панель сповіщень": [
+      "Fix: Screen didn't always light up for notifications"
+    ],
     "Інше": [
       "Оптимізація продуктивності системи",
       "Покращення безпеки та стабільності системи"
     ]
   },
   "logs_pl": {
+    "System": [
+      "Optimization: Lock screen pocket mode",
+      "Zoptymalizowano: Tryb blokady ekranu w kieszeni",
+      "Optymalizacja: Tryb kieszeniowy ekranu blokady"
+    ],
+    "Kontakty": [
+      "Poprawiono: W niektórych przypadkach nie można było usunąć kontaktów z karty SIM",
+      "Poprawiono: W niektórych przypadkach nie można było usunąć kontaktów z karty SIM",
+      "Poprawiono: W niektórych przypadkach nie można było usunąć kontaktów z karty SIM"
+    ],
+    "Ekran blokady, pasek powiadomień,panel powiadomień": [
+      "Fix: Screen didn't always light up for notifications"
+    ],
     "Inne": [
       "Zoptymalizowana wydajność systemu",
       "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
   "logs_de": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "System": [
+      "Optimization: Lock screen pocket mode",
+      "Optimierung: Sperrbildschirm-Taschenmodus",
+      "Optimierung: Taschenmodus für den Sperrbildschirm"
+    ],
+    "Kontakte": [
+      "Behoben: Kontakte konnten in manchen Fällen nicht von SIM-Karten gelöscht werden",
+      "Behoben: Kontakte konnten in manchen Fällen nicht von SIM-Karten gelöscht werden",
+      "Behoben: Kontakte konnten in manchen Fällen nicht von SIM-Karten gelöscht werden"
+    ],
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
+      "Behoben: Bildschirm leuchtete bei Benachrichtigungen nicht immer auf"
+    ],
+    "Sonstiges": [
+      "Systemleistung optimiert",
+      "Systemsicherheit und -stabilität verbessert"
     ]
   },
   "logs_fr": {
+    "Système": [
+      "Optimisation Verrouiller le mode poche",
+      "Optimisation: Verrouiller le mode poche",
+      "Optimisation : Mode poche de l'écran de verrouillage"
+    ],
+    "Contacts": [
+      "Réparé Les contacts ne pouvaient pas être supprimés des cartes SIM dans certains cas",
+      "Réparé Les contacts ne pouvaient pas être supprimés des cartes SIM dans certains cas",
+      "Réparé Les contacts ne pouvaient pas être supprimés des cartes SIM dans certains cas"
+    ],
+    "Écran de verrouillage, Barre d'état, Panneau de notification": [
+      "Corrigé : L'écran ne s'allumait pas toujours pour les notifications"
+    ],
     "Autre": [
       "Performances système optimisées",
       "Sécurité et stabilité du système améliorées"
@@ -86,27 +200,56 @@
   },
   "logs_it": {
     "Sistema": [
+      "Ottimizzazione: Modalità Tasca schermata di blocco",
+      "Ottimizzazione: Modalità Tasca schermata di blocco",
       "Ottimizzazione: Modalità Tasca schermata di blocco"
     ],
     "Contatti": [
+      "Risolto: In alcuni casi, i contatti non potevano essere eliminati dalle schede SIM",
+      "Risolto: In alcuni casi, i contatti non potevano essere eliminati dalle schede SIM",
       "Risolto: In alcuni casi, i contatti non potevano essere eliminati dalle schede SIM"
     ],
     "Schermata di blocco, barra di stato, area delle notifiche": [
       "Risolto: Lo schermo non sempre si accendeva per mostrare le notifiche"
+    ],
+    "Altro": [
+      "Prestazioni di sistema ottimizzate",
+      "Maggiore sicurezza e stabilità di sistema"
     ]
   },
   "logs_es": {
     "Sistema": [
+      "Optimización: Pantalla de bloqueo en Modo bolsillo",
+      "Optimización: Pantalla de bloqueo en Modo bolsillo",
       "Optimización: Pantalla de bloqueo en Modo bolsillo"
     ],
     "Contactos": [
+      "Reparado: Los contactos no podían ser eliminados de las tarjetas SIM en algunos casos",
+      "Reparado: Los contactos no podían ser eliminados de las tarjetas SIM en algunos casos",
       "Reparado: Los contactos no podían ser eliminados de las tarjetas SIM en algunos casos"
     ],
     "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
       "Reparado: La pantalla no siempre se encendía con las notificaciones"
+    ],
+    "Otros": [
+      "Rendimiento del sistema optimizado",
+      "Estabilidad y seguridad del sistema mejorada"
     ]
   },
   "logs_pt": {
+    "Sistema": [
+      "Otimização Modo de bolso para a Tela de bloqueio",
+      "Otimização: Modo de bolso para a Tela de bloqueio",
+      "Otimização: Modo bolso da tela de bloqueio"
+    ],
+    "Contatos": [
+      "Correção Contatos não podiam ser excluídos de cartões SIM em alguns casos",
+      "Correção Contatos não podiam ser excluídos de cartões SIM em alguns casos",
+      "Correção Contatos não podiam ser excluídos de cartões SIM em alguns casos"
+    ],
+    "Tela de bloqueio, Barra de status e Área de notificações": [
+      "Fix: Screen didn't always light up for notifications"
+    ],
     "Outros": [
       "Desempenho do sistema aprimorado",
       "Segurança e estabilidade do sistema aprimoradas"
@@ -114,53 +257,154 @@
   },
   "logs_tr": {
     "Sistem": [
+      "Optimizasyon: Kilit ekranı cep modu",
+      "Optimizasyon: Kilit ekranı cep modu",
       "Optimizasyon: Kilit ekranı cep modu"
     ],
     "Kişiler": [
+      "Onarım: Kişilerin bazı durumlarda silinememesi sorunu giderildi",
+      "Onarım: Kişilerin bazı durumlarda silinememesi sorunu giderildi",
       "Onarım: Kişilerin bazı durumlarda silinememesi sorunu giderildi"
     ],
     "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
       "Onarım: Bazen bildirimler için ekran açılmadı"
+    ],
+    "Diğer": [
+      "Sistem performansı optimize edildi",
+      "Sistem güvenliği ve kararlılığı geliştirildi"
     ]
   },
   "logs_id": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "Sistem": [
+      "Pengoptimalan Mode saku Layar kunci",
+      "Pengoptimalan: Mode saku Layar kunci",
+      "Optimasi: Mode saku layar kunci"
+    ],
+    "Kontak": [
+      "Perbaikan Kontak tidak dapat dihapus dari kartu SIM di beberapa kasus",
+      "Perbaikan Kontak tidak dapat dihapus dari kartu SIM di beberapa kasus",
+      "Perbaikan Kontak tidak dapat dihapus dari kartu SIM di beberapa kasus"
+    ],
+    "Layar kunci, bar status, layar notifikasi": [
+      "Fix: Screen didn't always light up for notifications"
+    ],
+    "Lainnya": [
+      "Performa sistem dioptimalkan",
+      "Keamanan dan stabilitas sistem ditingkatkan"
     ]
   },
   "logs_vi": {
+    "Hệ thống": [
+      "Optimization: Lock screen pocket mode",
+      "Tối ưu: Chế độ túi cho màn hình khóa",
+      "Optimization: Lock screen pocket mode"
+    ],
+    "Danh bạ": [
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases"
+    ],
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Fix: Screen didn't always light up for notifications"
+    ],
     "Khác": [
       "Tối ưu hiệu suất hệ thống",
       "Cải thiện tính ổn định và bảo mật hệ thống"
     ]
   },
   "logs_th": {
+    "ระบบ": [
+      "Optimization: Lock screen pocket mode",
+      "เพิ่มประสิทธิภาพ: โหมดในกระเป๋าบนหน้าจอล็อก",
+      "Optimization: Lock screen pocket mode"
+    ],
+    "รายชื่อ": [
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases"
+    ],
+    "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
+      "Fix: Screen didn't always light up for notifications"
+    ],
     "อื่นๆ": [
       "เพิ่มประสิทธิภาพของระบบ",
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
     ]
   },
   "logs_ar": {
+    "النظام": [
+      "Optimization: Lock screen pocket mode",
+      "محسن وضع شاشة القفل في الجيب",
+      "Optimization: Lock screen pocket mode"
+    ],
+    "جهات الاتصال": [
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases"
+    ],
+    "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
+      "Fix: Screen didn't always light up for notifications"
+    ],
     "أخرى": [
       "تحسين أداء النظام",
       "تحسين أمن واستقرار النظام"
     ]
   },
   "logs_in": {
+    "सिस्टम": [
+      "Optimization: Lock screen pocket mode",
+      "अनुकूलन: लॉक स्क्रीन पॉकेट मोड",
+      "Optimization: Lock screen pocket mode"
+    ],
+    "संपर्क": [
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases"
+    ],
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
+      "Fix: Screen didn't always light up for notifications"
+    ],
     "अन्य": [
       "सिस्टम परफ़ॉर्मेंस ऑप्टिमाइज़ किया गया है",
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
     ]
   },
   "logs_ug": {
-    "Other": [
-      "Optimized system performance",
-      "Improved system security and stability"
+    "سىستېما": [
+      "Optimization: Lock screen pocket mode",
+      "Optimization: Lock screen pocket mode",
+      "Optimization: Lock screen pocket mode"
+    ],
+    "Contacts": [
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases"
+    ],
+    "Lockscreen, status bar, Notification shade": [
+      "Fix: Screen didn't always light up for notifications"
+    ],
+    "باشقىلىرى": [
+      "سىستېمىنىڭ مۇقىملىقىنى ئاشۇرۇش",
+      "سىستېما راۋانلىقىنى ئەلالاشتۇرۇش"
     ]
   },
   "logs_bo": {
-    "Other": [
+    "མ་ལག": [
+      "Optimization: Lock screen pocket mode",
+      "Optimization: Lock screen pocket mode"
+    ],
+    "Contacts": [
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
+      "Fix: Contacts couldn't be deleted from SIM cards in some cases"
+    ],
+    "རིམ་ལུགས": [
+      "Optimization: Lock screen pocket mode"
+    ],
+    "Lockscreen, status bar, Notification shade": [
+      "Fix: Screen didn't always light up for notifications"
+    ],
+    "གཞན།": [
       "Optimized system performance",
       "Improved system security and stability"
     ]

@@ -3,12 +3,14 @@
     "系统": [
       "新增 全新的截屏体验，简化截屏编辑、分享、长截图流程",
       "优化 取消定时关闭勿扰后的声音提示",
-      "修复 长截屏引导弹出多次的问题"
+      "修复 长截屏引导弹出多次的问题",
+      "优化 取消定时关闭勿扰后的声音提示"
     ],
     "锁屏、状态栏、通知栏": [
       "修复 通话过程中误触通知栏的问题"
     ],
     "设置": [
+      "新增 快捷回复功能，支持使用悬浮窗打开即时通讯类应用通知",
       "新增 快捷回复功能，支持使用悬浮窗打开即时通讯类应用通知"
     ],
     "最近任务": [
@@ -19,21 +21,203 @@
       "优化 同步及时性，提升同步效率",
       "优化 多设备之间数据同步及时性",
       "修复 点击立即同步按钮没有反应的问题",
+      "修复 退出小米帐号时，提示云服务停止运行的问题",
+      "优化 同步及时性，提升同步效率",
+      "优化 多设备之间数据同步及时性",
+      "修复 点击立即同步按钮没有反应的问题",
       "修复 退出小米帐号时，提示云服务停止运行的问题"
     ]
   },
   "logs_en": {
+    "Settings": [
+      "New: Quick replies for messaging apps",
+      "New: Quick replies for messaging apps"
+    ],
+    "Recents": [
+      "New: You can blur the previews of some apps in Recents now"
+    ],
     "System": [
       "Optimization: Removed unnecessary sound notifications for DND mode"
-    ],
-    "Settings": [
-      "New: Quick replies for messaging apps"
     ],
     "Mi Cloud": [
       "Optimization: Improved sync efficiency",
       "Optimization: Improved sync across multiple devices",
-      "Fix: The Sync button didn^t always respond",
+      "Fix: The Sync button didn't always respond",
       "Fix: Mi Cloud services stopped working when the users signed out of their Mi Account"
+    ]
+  },
+  "logs_zh_tw": {
+    "設定": [
+      "新增 快捷回覆功能，支援使用懸浮窗開啟即時通訊類應用通知",
+      "優化 股票卡片優化"
+    ],
+    "近期任務": [
+      "新增: 模糊最近任務中的部分應用預覽圖的功能"
+    ],
+    "系統": [
+      "優化 取消定時關閉勿擾後的聲音提示"
+    ]
+  },
+  "logs_ja": {
+    "設定": [
+      "新機能: メッセージアプリのクイック返信",
+      "最適化: 株価カードを改善しました"
+    ],
+    "システム": [
+      "最適化: スケジュールされたサイレントモード解除後の通知音を削除"
+    ]
+  },
+  "logs_ko": {
+    "설정": [
+      "수정: 앱이 갑자기 강제로 종료되는 문제",
+      "최적화: 주식 카드 최적화됨"
+    ],
+    "시스템": [
+      "최적화: 방해금지 모드에서의 불필요한 알림음 제거됨"
+    ]
+  },
+  "logs_ru": {
+    "Настройки": [
+      "Новое: Быстрые ответы для мессенджеров",
+      "Оптимизация: Улучшена карточка \"Акции\""
+    ],
+    "Система": [
+      "Оптимизация: Устранены звуковые уведомления в режиме Не беспокоить"
+    ]
+  },
+  "logs_uk": {
+    "Налаштування": [
+      "Нове: Швидкі відповіді для месенджерів",
+      "Оптимізація: Покращено картку акцій"
+    ],
+    "Система": [
+      "Оптимізація: Вилучено звукове сповіщення після запланованого вимкнення режиму «Не турбувати»"
+    ]
+  },
+  "logs_pl": {
+    "Ustawienia": [
+      "Naprawiono: W niektórych przypadkach wymuszono zamknięcie aplikacji",
+      "Zoptymalizowano: Ulepszyliśmy kartę \"Akcje\""
+    ],
+    "System": [
+      "Zoptymalizowano: Usunięto niepotrzebne sygnały dźwiękowe dla trybu nie przeszkadzać"
+    ]
+  },
+  "logs_de": {
+    "Einstellungen": [
+      "Neu: Schnellantworten für Messaging-Apps",
+      "Optimierung: Aktien-Karte verbessert"
+    ],
+    "System": [
+      "Optimierung: Tonbenachrichtigung nach zeitgesteuerter Deaktivierung des Nicht-Stören-Modus entfernt"
+    ]
+  },
+  "logs_fr": {
+    "Paramètres": [
+      "Nouveau: Réponses rapides pour les applications de messagerie",
+      "Optimisation: Amélioré la carte \"Stocks\""
+    ],
+    "Système": [
+      "Optimisation: A retiré les sons de notifications inutiles pour le mode DND"
+    ]
+  },
+  "logs_it": {
+    "Impostazioni": [
+      "Nuovo: Risposte rapide per le app di messaggistica",
+      "Ottimizzazione: Migliorata la scheda \"Azioni\""
+    ],
+    "Sistema": [
+      "Ottimizzazione: Rimosse notifiche audio non necessarie per la modalità Non Disturbare"
+    ]
+  },
+  "logs_es": {
+    "Ajustes": [
+      "Nuevo: Respuestas rápidas para aplicaciones de mensajería",
+      "Optimización: Mejorada la tarjeta de \"Acciones\""
+    ],
+    "Sistema": [
+      "Optimización: Las notificaciones con sonido innecesarias han sido eliminadas del Modo no molestar"
+    ]
+  },
+  "logs_pt": {
+    "Configurações": [
+      "Novo: Respostas rápidas para apps mensageiros",
+      "Otimização: Melhoria no cartão de \"Ações\""
+    ],
+    "Sistema": [
+      "Otimização: Sons de notificação desnecessários removidos do modo Não perturbe"
+    ]
+  },
+  "logs_tr": {
+    "Ayarlar": [
+      "Yeni: Mesajlaşma uygulamaları için hızlı yanıtlar",
+      "Optimizasyon: Geliştirilmiş “Hisse“ kartı"
+    ],
+    "Sistem": [
+      "Optimizasyon: Rahatsız Etme modu için gereksiz sesli bildirimler kaldırıldı"
+    ]
+  },
+  "logs_id": {
+    "Pengaturan": [
+      "Baru: Balasan cepat pada aplikasi Pesan",
+      "Pengoptimalan: Kartu \"Saham\" ditingkatkan"
+    ],
+    "Sistem": [
+      "Pengoptimalan: Notifikasi suara yang tidak dibutuhkan untuk mode Jangan ganggu dihapus"
+    ]
+  },
+  "logs_vi": {
+    "Cài đặt": [
+      "Mới: Trả lời nhanh cho ứng dụng nhắn tin",
+      "Tối ưu: Cải thiện thẻ cổ phiếu"
+    ],
+    "Hệ thống": [
+      "Tối ưu hóa: Đã xóa âm báo sau khi tắt chế độ Không làm phiền theo lịch"
+    ]
+  },
+  "logs_th": {
+    "การตั้งค่า": [
+      "New: Quick replies for messaging apps",
+      "Optimization: Improved the \"Stocks\" card"
+    ],
+    "ระบบ": [
+      "การปรับปรุง: ลบการแจ้งเตือนเสียงหลังปิดโหมดห้ามรบกวนตามกำหนดเวลา"
+    ]
+  },
+  "logs_ar": {
+    "الإعدادات": [
+      "إصلاح الخروج الإجباري للتطبيق في بعض الحالات",
+      "محسن تحسين بطاقة \"الأسهم\""
+    ],
+    "النظام": [
+      "محسن إزالة إشعارات الصوت غير ضرورية لوضع عدم الإزعاج"
+    ]
+  },
+  "logs_in": {
+    "सेटिंग्स": [
+      "New: Quick replies for messaging apps",
+      "Optimization: Improved the \"Stocks\" card"
+    ],
+    "सिस्टम": [
+      "अनुकूलन: शेड्यूल किए गए डू नॉट डिस्टर्ब बंद होने के बाद की ध्वनि सूचना हटाई गई"
+    ]
+  },
+  "logs_ug": {
+    "تەڭشەك": [
+      "New: Quick replies for messaging apps",
+      "Optimization: Improved the \"Stocks\" card"
+    ],
+    "سىستېما": [
+      "Optimization: Removed unnecessary sound notifications for DND mode"
+    ]
+  },
+  "logs_bo": {
+    "Settings": [
+      "New: Quick replies for messaging apps",
+      "Optimization: Improved the \"Stocks\" card"
+    ],
+    "རིམ་ལུགས": [
+      "Optimization: Removed unnecessary sound notifications for DND mode"
     ]
   }
 }
