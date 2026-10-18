@@ -58,6 +58,7 @@
 │   ├── proofread_logs.py             #   日志多语言校对：规则扫描 + DeepSeek 复核 + 安全写回
 │   ├── fix_lang_issues.py            #   按 logs.lang_issues 修正错误语言列 / 清理掩码位
 │   ├── fill_missing_logs.py         #   proofed 行缺失语言 AI 翻译回填
+│   ├── local_translate.py           #   LM Studio（Hunyuan-MT-7B）逐条校对 / 补写翻译
 │   ├── restore_log_escapes.py       #   还原旧 JSON 转义 ^ / $$（一次性）
 │   ├── fix_mixed_translations.py    #   mixed_translations 两步修复（规划 / merge / split）
 │   ├── resequence_ids.py             #   重排 roms / dev / logs 的 id（消除自增空档）
@@ -521,6 +522,31 @@ export DEEPSEEK_API_KEY=sk-...
 python3 scripts/test_logs_proofread.py
 ```
 
+#### 本地校对 / 补译（LM Studio + Hunyuan-MT-7B）
+
+Hunyuan-MT-7B 是纯翻译模型，适合逐条补写缺失语言，并用「重译对比」校对现有译文。
+在 LM Studio 里加载模型并 Start Server（默认 `http://127.0.0.1:1234`）后即可使用，
+默认走 LM Studio 原生接口 `POST /api/v1/chat`（`system_prompt` 放翻译指令、`input` 放源文本），
+不需要 API key：
+
+```bash
+python3 scripts/local_translate.py check --probe              # 服务 / 模型 / 试翻
+python3 scripts/local_translate.py fill --limit 50            # 盘点缺口（不调模型）
+python3 scripts/local_translate.py fill --ids 146 --run       # 预览补译
+python3 scripts/local_translate.py fill --ids 146 --apply     # 补译写库（写前备份）
+python3 scripts/local_translate.py review --langs logs_en --limit 200 --run
+python3 scripts/local_translate.py review --langs logs_en --ids 146 --fix
+python3 scripts/local_translate.py all --limit 200 --apply --fix
+```
+
+- 接口切换：默认原生 `/api/v1/chat`；如改用 OpenAI 兼容端点，加 `--api openai`（或设置
+  `LMSTUDIO_API=openai` / `config.py` 的 `lmstudio_api`），地址仍填服务根地址即可
+  （`http://127.0.0.1:1234/v1` 也会自动识别）；
+- 提示词用官方模板：中文方向 `把下面的文本翻译成<目标语言>，不要额外解释。`，其余方向英文模板；
+- 译文校验：占位符（`%s` / `{0}`）、提示词回显、非中文列混入汉字、目标语言特征文字（俄 / 乌 / 阿 / 维 / 藏 / 泰 / 印地 / 日 / 韩）；
+- 校对：把源文本重译后与现有译文做相似度比较，长文本低于 `--ratio`（默认 0.75）、短文本低于 `--short-ratio`（默认 0.45）判为可疑，`--fix` 才用重译结果替换；
+- 写库复用 `LogFiller.apply()`：自动备份、清理 `lang_issues`、`proofed` 重置为 0；`--expected owners` 只补引用里出现过的语言，`--workers` 并发，`--cache` 复用结果。
+
 #### 日志去重（必须校验）
 
 `logs` 表按内容跨 ROM 复用分组，**写入侧只做「语言不冲突即可复用」的匹配**：
@@ -663,6 +689,7 @@ python3 scripts/import_hub_sitelog.py --drop-types chore,build,docs   # 只保�
 | `fix_mixed_translations.py` | `mixed_translations` 两步修复：扫描当前行或复用 decisions；第一步翻译英文、找相似行、AI 对比后合并；第二步 AI 语言聚簇、拆成新行并按掩码语言交集路由引用，歧义位置跳过；默认只读，`--apply-merges` / `--apply-splits` 才写库 |
 | `restore_log_escapes.py` | 还原旧 JSON 存储时代的转义：`^`→`'`/`"`、`$$`→`%`；默认保留 `proofed` / `complete` / `lang_issues`，`--reset-flags` 则重置；`--apply` 写前备份 |
 | `fill_missing_logs.py` | 对 `proofed=1` 的行排查缺失语言并用 AI 翻译回填：默认只盘点/估算；`--run` 预览；`--apply` 写库（写前备份）；`--expected all\|owners`、`--langs`、`--min-confidence`；默认回填后 `proofed=0`，`--keep-proofed` 可保留 |
+| `local_translate.py` | 用 LM Studio 本地 Hunyuan-MT-7B 逐条补写缺失语言 / 校对现有译文：`check` 检查服务与模型；`fill` 补译（`--apply` 写库）；`review` 重译对比（`--ratio` / `--short-ratio`，`--fix` 才替换）；`all` 同时处理；提示词用官方模板，校验占位符 / 提示词回显 / 目标语言文字；写库复用 `LogFiller.apply`（备份、清 `lang_issues`、`proofed=0`） |
 | `fix_lang_issues.py` | 按 `logs.lang_issues` 修正语言列：默认 `correct`（用 AI 的 `correct` 正确译文替换，无 correct/低置信度保留原值）；`--mode translate` 对没有 correct 的标注调用 AI 翻译回填并逐条清除 lang_issues；`--mode hybrid` 无译文才清空，`--mode clear` 显式删除，`--mode move` 移到正确空列，`--clean-masks` 同步去掉引用掩码位；核心列需 `--allow-core`；默认 dry-run，写前备份 |
 | `proofread_logs.py` | 日志多语言校对：`check --ids` 校对指定 logs.id（不改内容，ok 时写 proofed）；`scan` 用规则找「同一 ROM 多个同名中文模块但外文含义不同」的候选；`review` 调 DeepSeek 判断每行真正对应的中文模块名（只能从该 ROM 的中文模块名里选，或 null = 额外模块）；`apply` 按置信度改名 / 清空额外模块中文并清理掩码中文位；`batch-review` 批量/逐条审全部多语言行（默认只估算，`--run` 才调用，ok 行自动 proofed）；除 proofed 标记外不改日志内容 |
 | `rebuild_roms_logs.py` | 以迁移前的备份库为权威来源重建 `roms.logs`（修复人工改动 `logs` 表造成的悬空引用），并复核「无悬空引用」 |
@@ -673,10 +700,10 @@ python3 scripts/import_hub_sitelog.py --drop-types chore,build,docs   # 只保�
 | `sync_devices.py` | 从 `devices` / `roms` 表同步设备列表到 `miroms/data.py`（`fullDevices`、`currentStable`、`flags`） |
 | `fix_missing_tag_mappings.py` | 修复 `devices` 表中缺失的 device+tag 映射（V3 导出器按 tag 匹配分支，缺失会导致 ROM 丢失），输出 SQL 到 stdout 或 `--apply` 直接执行 |
 | `common.py` | 向后兼容入口，重新导出 `miroms` 包全部公共 API，并保留 `fullDevices`、`currentStable`、`flags` 等模块级常量 |
-| `config.py` | 数据库连接配置（host / port / user / password / database）+ Cloudflare Pages 部署配置（`api` 基础地址 + `ids` 站点钩子列表，默认三个站点：HUB / HyperOS.fans / MIUIer）+ DeepSeek 校对配置（`deepseek_api_key` / `deepseek_model` / `deepseek_base_url` / `deepseek_reasoning_effort`；key 也可用环境变量 `DEEPSEEK_API_KEY` 提供） |
+| `config.py` | 数据库连接配置（host / port / user / password / database）+ Cloudflare Pages 部署配置（`api` 基础地址 + `ids` 站点钩子列表，默认三个站点：HUB / HyperOS.fans / MIUIer）+ DeepSeek 校对配置（`deepseek_api_key` / `deepseek_model` / `deepseek_base_url` / `deepseek_reasoning_effort`；key 也可用环境变量 `DEEPSEEK_API_KEY` 提供）+ LM Studio 本地翻译配置（`lmstudio_base_url` / `lmstudio_model` / `lmstudio_timeout`） |
 | `push.py` | 一键全流程：运行 `exporter.py` 导出 → 在 `data` 子仓库提交并推送（commit message 为当前日期时间）→ 调用 `deploy.py` 依次部署 `config.ids` 中的所有站点（站点之间默认停留 10 秒），任一站点失败即以非 0 退出码结束 |
 | `deploy.py` | 仅触发部署：按 `config.ids` 顺序 POST `{config.api}/{id}`（Cloudflare Pages deploy hook），逐个打印站点名、部署 ID / short_id / URL，每个 hook 触发后默认停留 10 秒再触发下一个站点（`--interval` 可调，0 表示不等待）；可传站点名或 hook id 前缀只部署指定站点（如 `python3 scripts/deploy.py HUB`），`--list` 只列出目标；全部成功退出码为 0，否则为 1 |
-| `miroms/` | 核心包：`constants.py`（常量、SDK 版本、Android 代号、分支表、语种表）、`data.py`（设备列表）、`database.py`（数据库访问 + 事务）、`network.py` / `crypto.py` / `firmware.py`（小米服务器抓取与解密）、`recorder.py`（数据录入）、`changelog.py`（更新日志）、`logs_store.py`（日志多语言分组读写）、`logs_text.py`（文本判定 + 繁简转换）、`logs_maintenance.py`（日志去重 / 引用重写 / content 一致性 / 语言掩码 / id 压缩 / 体检）、`logs_proofread.py`（日志多语言校对 / AI 复核）、`deepseek.py`（DeepSeek API 客户端）、`sitelog_store.py`（站点日志落库）、`validator.py`（校验）、`exporters.py`（V1/V2/V3 + 开发版导出器）、`legacy_exporters.py`（api/v1 = NuxtMR、api/v2 = HyperOS.fans、api/v3 = hub 自身的站点附属接口导出）、`utils.py`（工具函数） |
+| `miroms/` | 核心包：`constants.py`（常量、SDK 版本、Android 代号、分支表、语种表）、`data.py`（设备列表）、`database.py`（数据库访问 + 事务）、`network.py` / `crypto.py` / `firmware.py`（小米服务器抓取与解密）、`recorder.py`（数据录入）、`changelog.py`（更新日志）、`logs_store.py`（日志多语言分组读写）、`logs_text.py`（文本判定 + 繁简转换）、`logs_maintenance.py`（日志去重 / 引用重写 / content 一致性 / 语言掩码 / id 压缩 / 体检）、`logs_proofread.py`（日志多语言校对 / AI 复核）、`deepseek.py`（DeepSeek API 客户端）、`local_mt.py`（LM Studio 本地翻译客户端 + Hunyuan-MT 提示词 / 译文校验）、`sitelog_store.py`（站点日志落库）、`validator.py`（校验）、`exporters.py`（V1/V2/V3 + 开发版导出器）、`legacy_exporters.py`（api/v1 = NuxtMR、api/v2 = HyperOS.fans、api/v3 = hub 自身的站点附属接口导出）、`utils.py`（工具函数） |
 
 ### 抓取 / 部署脚本
 

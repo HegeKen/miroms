@@ -21,3 +21,10 @@ deepseek_reasoning_effort = "low"  # low / high / max；批量校对用 low 更�
 deepseek_timeout = 60
 deepseek_ca_bundle = ""  # 可选：自定义 CA bundle；留空则自动用 certifi
 deepseek_max_calls = 200
+
+# ==================== LM Studio 本地翻译（Hunyuan-MT-7B，可选） ====================
+# 用于 local_translate.py 的本地校对 / 补译；也可用环境变量
+# LMSTUDIO_BASE_URL / LMSTUDIO_MODEL / LMSTUDIO_TIMEOUT 覆盖。
+lmstudio_base_url = "http://127.0.0.1:1234/v1"
+lmstudio_model = ""  # 留空自动选 /v1/models 里的 Hunyuan 模型
+lmstudio_timeout = 120

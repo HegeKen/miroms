@@ -21,6 +21,7 @@ miroms - 小米 ROM 数据管理包
     logs_restore - 还原旧 JSON 转义 ^ / $$ (LogEscapeRestorer)
     logs_mixed - mixed_translations 两步修复 (MixedTranslationFixer)
     deepseek    - DeepSeek Chat API 客户端 (DeepSeekClient)
+    local_mt    - LM Studio 本地翻译客户端 (LocalMTClient / Hunyuan-MT)
     validator   - 数据校验 (DataValidator)
     exporters   - 数据导出 (exportV1, exportV2, exportV3)
     legacy_exporters - 参考站点附属导出 (api/v1 = NuxtMR、api/v2 = HyperOS.fans)
@@ -49,6 +50,7 @@ from miroms.logs_clean import LogPrefixCleaner
 from miroms.logs_restore import LogEscapeRestorer
 from miroms.logs_mixed import MixedTranslationFixer
 from miroms.deepseek import DeepSeekClient, DeepSeekError
+from miroms.local_mt import LocalMTClient, LocalMTError
 from miroms.validator import DataValidator
 from miroms.exporters import exportV1, exportV2, exportV3, export_dev
 from miroms.legacy_exporters import (
@@ -73,6 +75,7 @@ __all__ = [
 	'FirmwareParser', 'DataRecorder', 'NetworkClient',
 	'ChangelogManager', 'DataValidator', 'LogStore',
 	'LogText', 'LogMaintenance', 'LogProofreader', 'LogLangFixer', 'LogFiller', 'DeepSeekClient', 'DeepSeekError',
+	'LocalMTClient', 'LocalMTError',
 	# 导出
 	'exportV1', 'exportV2', 'exportV3', 'export_dev',
 	# 参考站点附属导出（api/v1 = NuxtMR、api/v2 = HyperOS.fans）

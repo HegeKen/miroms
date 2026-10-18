@@ -60,6 +60,7 @@ the [hub.miuier.com](https://hub.miuier.com) website, the admin panel and variou
 │   ├── proofread_logs.py             #   multilingual log proofreading: rule scan + DeepSeek review + safe writes
 │   ├── fix_lang_issues.py            #   fix wrong-language columns from logs.lang_issues / clean mask bits
 │   ├── fill_missing_logs.py         #   AI-translate missing languages on proofed rows
+│   ├── local_translate.py           #   LM Studio (Hunyuan-MT-7B) proofread / fill translations
 │   ├── restore_log_escapes.py       #   restore legacy JSON escapes ^ / $$
 │   ├── fix_mixed_translations.py    #   two-step mixed_translations repair
 │   ├── resequence_ids.py             #   renumber roms / dev / logs ids (remove AUTO_INCREMENT gaps)
@@ -510,6 +511,32 @@ families as well (by default only "narrow row / missing en" high-risk families a
 python3 scripts/test_logs_proofread.py
 ```
 
+#### Local proofreading / filling (LM Studio + Hunyuan-MT-7B)
+
+Hunyuan-MT-7B is a pure translation model: use it to fill missing languages one entry at a time,
+and to proofread existing translations by re-translating and comparing. Load the model in LM Studio,
+click Start Server (default `http://127.0.0.1:1234`); the script uses LM Studio's native
+`POST /api/v1/chat` (`system_prompt` carries the instruction, `input` carries the source text)
+and needs no API key:
+
+```bash
+python3 scripts/local_translate.py check --probe              # server / model / smoke test
+python3 scripts/local_translate.py fill --limit 50            # inventory only (no model calls)
+python3 scripts/local_translate.py fill --ids 146 --run       # preview fills
+python3 scripts/local_translate.py fill --ids 146 --apply     # write fills (backup first)
+python3 scripts/local_translate.py review --langs logs_en --limit 200 --run
+python3 scripts/local_translate.py review --langs logs_en --ids 146 --fix
+python3 scripts/local_translate.py all --limit 200 --apply --fix
+```
+
+- API mode: native `/api/v1/chat` by default; pass `--api openai` (or set `LMSTUDIO_API=openai` /
+  `lmstudio_api` in `config.py`) for the OpenAI-compatible `/v1/chat/completions`; the base URL always
+  points at the server root (`http://127.0.0.1:1234/v1` is also recognised);
+- Prompts follow the official templates: Chinese directions use `把下面的文本翻译成<目标语言>，不要额外解释。`, other directions use the English template;
+- Output validation: placeholders (`%s` / `{0}`), prompt echo, Han characters in non-Chinese columns, target-script characters (ru / uk / ar / ug / bo / th / hi / ja / ko);
+- Proofreading: re-translate the source and compare with the existing translation; long text below `--ratio` (0.75) or short text below `--short-ratio` (0.45) is flagged, and only `--fix` replaces it;
+- Writes go through `LogFiller.apply()`: automatic backup, `lang_issues` cleanup, `proofed` reset to 0; `--expected owners` fills only languages referenced by ROMs, `--workers` adds concurrency, `--cache` reuses results.
+
 #### Log deduplication (always verified)
 
 `logs` rows are shared across ROMs, and the write path matches by **"same type + no language conflict"**:
@@ -693,6 +720,7 @@ MySQL (InnoDB, utf8mb4); table structure and field meanings are in `db_structure
 | `fix_mixed_translations.py` | Two-step `mixed_translations` repair: scan current rows or validated decisions; step 1 translates to English, finds similar rows and AI-compares them (merge on match); step 2 AI-clusters languages, creates new rows and routes refs by mask-language intersection, skipping ambiguous positions; read-only unless `--apply-merges` / `--apply-splits` |
 | `restore_log_escapes.py` | Restore legacy JSON-storage escapes: `^`→`'`/`"`, `$$`→`%`; keeps `proofed` / `complete` / `lang_issues` by default, `--reset-flags` resets them; backup before `--apply` |
 | `fill_missing_logs.py` | Find missing languages on `proofed=1` rows and AI-translate them back: estimate-only by default, `--run` preview, `--apply` writes (with backup); `--expected all\|owners`, `--langs`, `--min-confidence`; resets `proofed=0` unless `--keep-proofed` |
+| `local_translate.py` | Local proofreading / filling with LM Studio Hunyuan-MT-7B: `check` verifies server and model; `fill` translates missing languages (`--apply` writes); `review` re-translates and compares (`--ratio` / `--short-ratio`, `--fix` replaces); `all` does both; prompts follow the official templates and outputs are validated for placeholders / prompt echo / target script; writes reuse `LogFiller.apply` (backup, `lang_issues` cleanup, `proofed=0`) |
 | `fix_lang_issues.py` | Fix language columns from `logs.lang_issues`: default `correct` (replace with the AI `correct` translation; no correct/low confidence keeps the original); `--mode translate` AI-translates entries without `correct` and clears each fixed annotation; `--mode hybrid` clears only when no correct, `--mode clear` explicit deletion, `--mode move` to an empty correct column, `--clean-masks` drops mask bits; core columns require `--allow-core`; dry-run with backup |
 | `proofread_logs.py` | Multilingual proofreading: `check --ids` audits specific logs.id (content untouched; marks proofed when ok); `scan` finds module-name conflicts by rules; `review` asks DeepSeek which Chinese module each row really maps to (only names present in that ROM, or null = extra module); `apply` renames or clears extra-module Chinese and updates mask bits, confidence-gated; `batch-review` audits all multilingual rows in batches (estimate only unless `--run`; ok rows are marked proofed); no content changes except the proofed flag |
 | `import_dev_week.py` | Import developer (weekly) data into `dev` and backfill `roms.dev_week` (`--source hyperos\|nuxtmr\|miuiroms`, `--all`, `--weeks`, `--region`, `--dry-run`, `--backfill-roms`) |
@@ -702,10 +730,10 @@ MySQL (InnoDB, utf8mb4); table structure and field meanings are in `db_structure
 | `sync_devices.py` | Syncs the device list from `devices` / `roms` into `miroms/data.py` (`fullDevices`, `currentStable`, `flags`) |
 | `fix_missing_tag_mappings.py` | Fixes missing device+tag mappings in `devices` (the V3 exporter matches branches by tag; missing ones lose ROMs); prints SQL to stdout or applies it directly with `--apply` |
 | `common.py` | Backward-compat entry re-exporting the full public API of the `miroms` package, keeping module-level constants like `fullDevices`, `currentStable`, `flags` |
-| `config.py` | DB connection config (host / port / user / password / database) + Cloudflare Pages deploy config (`api` base URL + `ids` list of site hooks; default: HUB / HyperOS.fans / MIUIer) + DeepSeek proofreading config (`deepseek_api_key` / `deepseek_model` / `deepseek_base_url` / `deepseek_reasoning_effort`; the key can also come from `DEEPSEEK_API_KEY`) |
+| `config.py` | DB connection config (host / port / user / password / database) + Cloudflare Pages deploy config (`api` base URL + `ids` list of site hooks; default: HUB / HyperOS.fans / MIUIer) + DeepSeek proofreading config (`deepseek_api_key` / `deepseek_model` / `deepseek_base_url` / `deepseek_reasoning_effort`; the key can also come from `DEEPSEEK_API_KEY`) + LM Studio local translation settings (`lmstudio_base_url` / `lmstudio_model` / `lmstudio_timeout`) |
 | `push.py` | One-shot pipeline: run `exporter.py` → commit & push inside the `data` sub-repo (commit message = current datetime) → call `deploy.py` to deploy every site in `config.ids` (10 s pause between sites by default); exits non-zero if any deployment fails |
 | `deploy.py` | Deploy only: POSTs `{config.api}/{id}` for each id in `config.ids` (Cloudflare Pages deploy hooks) and prints each site name, deploy ID / short_id / URL, waiting 10 s after each hook before triggering the next site (`--interval` overrides it, 0 = no wait); pass site names or hook-id prefixes to deploy a subset (e.g. `python3 scripts/deploy.py HUB`), `--list` only prints the targets; exit code 0 only if all succeed |
-| `miroms/` | Core package: `constants.py` (constants, SDK versions, Android codenames, branch tables), `data.py` (device list), `database.py` (DB access + transactions), `network.py` / `crypto.py` / `firmware.py` (Xiaomi server fetch & decryption), `recorder.py` (data recording), `changelog.py` (changelogs), `logs_store.py` (multilingual log groups), `logs_text.py` (text predicates + traditional→simplified), `logs_maintenance.py` (dedup / reference rewrite / content consistency / language masks / id compaction / audit), `logs_proofread.py` (multilingual proofreading / AI review), `deepseek.py` (DeepSeek API client), `sitelog_store.py` (site-log persistence), `validator.py` (validation), `exporters.py` (V1/V2/V3 exporters), `legacy_exporters.py` (site auxiliary endpoint exports for api/v1 = NuxtMR, api/v2 = HyperOS.fans, api/v3 = hub's own site endpoints), `utils.py` (helpers) |
+| `miroms/` | Core package: `constants.py` (constants, SDK versions, Android codenames, branch tables), `data.py` (device list), `database.py` (DB access + transactions), `network.py` / `crypto.py` / `firmware.py` (Xiaomi server fetch & decryption), `recorder.py` (data recording), `changelog.py` (changelogs), `logs_store.py` (multilingual log groups), `logs_text.py` (text predicates + traditional→simplified), `logs_maintenance.py` (dedup / reference rewrite / content consistency / language masks / id compaction / audit), `logs_proofread.py` (multilingual proofreading / AI review), `deepseek.py` (DeepSeek API client), `local_mt.py` (LM Studio local translation client + Hunyuan-MT prompts / output validation), `sitelog_store.py` (site-log persistence), `validator.py` (validation), `exporters.py` (V1/V2/V3 exporters), `legacy_exporters.py` (site auxiliary endpoint exports for api/v1 = NuxtMR, api/v2 = HyperOS.fans, api/v3 = hub's own site endpoints), `utils.py` (helpers) |
 
 ### Fetch / Deploy Scripts
 
