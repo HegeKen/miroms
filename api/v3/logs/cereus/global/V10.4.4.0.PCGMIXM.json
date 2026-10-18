@@ -10,8 +10,7 @@
     ],
     "锁屏、状态栏、通知栏": [
       "新增 人脸解锁成功并停留在锁屏上时，可通过指纹进入桌面的功能",
-      "修复 无不重要通知，但显示了「不重要通知」入口的问题",
-      "修复 通话时间气泡与通知图标重叠的问题"
+      "修复 通话时间气泡与通知图标重叠"
     ],
     "游戏加速": [
       "新增 手势连续滑动唤出游戏工具箱二级菜单功能",
@@ -41,7 +40,6 @@
     ],
     "Lockscreen, status bar, Notification shade": [
       "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
-      "Fix: Folder with unimportant notification was displayed even all the incoming notifications were important",
       "Fix: Call time bubble overlapped with notification icons"
     ],
     "Game speed booster": [
@@ -72,8 +70,7 @@
     ],
     "解鎖畫面、狀態欄、通知欄": [
       "新增 人臉解鎖成功並停留在鎖屏上時，可通過指紋進入桌面的功能",
-      "修復 通話時間氣泡與通知圖示重疊",
-      "修復 下拉狀態欄開啟或關閉同步，同步介面不刷新問題"
+      "修復 通話時間氣泡與通知圖示重疊"
     ],
     "遊戲加速": [
       "新增 手勢連續滑動喚出遊戲工具箱二級菜單功能",
@@ -94,63 +91,61 @@
   },
   "logs_ja": {
     "システム": [
-      "Optimization: Updated Android Security Patch to September 2019. Increased system security.",
-      "Stable MIUI based on Android Pie"
+      "最適化: Google セキュリティパッチ（2019#9）を更新し、システムの安全性を向上しました。",
+      "Android Pをベースに深くカスタマイズしたMIUI安定版をリリース"
     ],
     "アプリロック": [
       "新規: 顔認証によるアプリのロック解除に対応",
-      "New: Locking Google contacts is available now"
+      "新規: Google 連絡先のロックが可能になりました"
     ],
     "ロック画面、ステータスバー、通知シェード": [
-      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade"
+      "新機能: 顔認証でロック解除後、ロック画面に留まっている場合に指紋でホーム画面へ移動できる機能",
+      "修正: 通話時間のバブルが通知アイコンと重なる問題"
     ],
     "ゲーム加速": [
-      "New: Continuous swiping opens an additional menu in Game Turbo now",
+      "新機能: ジェスチャーの連続スワイプでGame Turboのサブメニューを呼び出せるようになりました",
       "新機能: ゲーム中の着信通話をフローティングウィンドウで表示",
-      "New: You can create a Home screen shortcut for Game Turbo now",
-      "Optimization: Improved display options for landscape orientation",
+      "新規: Game Turbo のホーム画面ショートカットを作成できるようになりました",
+      "最適化: 横向き時のゲームターボ設定およびゲーム追加画面の表示スタイルを改善",
       "最適化: 画面の上端からスワイプしてゲームツールボックスを開けるようになりました",
-      "Optimization: Prompts about turning on Game Turbo",
-      "Fix: Hands-free call duration wasn't displayed correctly in Game Turbo",
+      "最適化: Game Turbo モードを有効にする際の通知方法",
+      "Game Turbo でハンズフリー通話の通話時間が正しく表示されない問題を修正",
       "Game Turbo のスタートページが刷新されました",
       "Game Turbo オン時に、自動輝度調整、3本指スクリーンショット、読書モードを自動でオフにできます",
       "Game Turbo のツールボックスを大幅にアップグレード: 画面オフ時の自動プレイやデータSIMの切り替えが可能になりました"
     ],
     "Xiaomi クラウドサービス": [
-      "New: Xiaomi Cloud items can appear in the search results of the Settings app",
+      "新規: 設定アプリの検索結果にXiaomi Cloudの項目が表示されます",
       "修正: 同期状態が常に正しく表示されない問題"
     ]
   },
   "logs_ko": {
     "시스템": [
-      "Optimization: Updated Android Security Patch to September 2019. Increased system security.",
-      "Stable MIUI based on Android Pie"
+      "최적화: Google 보안 패치(2019#9) 업데이트, 시스템 보안 강화.",
+      "Android P 기반으로 심층 커스터마이징한 MIUI 안정 버전 출시"
     ],
     "앱 잠금": [
       "신규: 얼굴 인식으로 앱 잠금 해제 지원",
-      "New: Locking Google contacts is available now"
+      "새로운 기능: Google 연락처 잠금 지원"
     ],
     "잠금화면, 상태 바, 알림 바": [
-      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade"
+      "새 기능: 얼굴 잠금 해제 성공 후 잠금 화면에 있는 상태에서 지문으로 홈 화면에 진입하는 기능",
+      "수정: 통화 시간 버블이 알림 아이콘과 겹치는 문제"
     ],
     "게임 가속": [
-      "New: Continuous swiping opens an additional menu in Game Turbo now",
+      "새 기능: 제스처 연속 스와이프로 Game Turbo 보조 메뉴를 열 수 있습니다",
       "새 기능: 게임 중 수신 전화를 플로팅 창으로 표시",
-      "New: You can create a Home screen shortcut for Game Turbo now",
-      "Optimization: Improved display options for landscape orientation",
+      "새 기능: 이제 Game Turbo의 홈 화면 바로가기를 만들 수 있습니다",
+      "최적화: 가로 모드에서 게임 터보 설정 및 게임 추가 화면 표시 스타일 개선",
       "최적화: 화면 상단에서 스와이프하여 게임 도구 상자를 열 수 있습니다",
-      "Optimization: Prompts about turning on Game Turbo",
-      "Fix: Hands-free call duration wasn't displayed correctly in Game Turbo",
+      "최적화: Game Turbo 모드 활성화 안내 방식",
+      "Game Turbo에서 핸즈프리 통화의 통화 시간이 올바르게 표시되지 않던 문제를 수정했습니다",
       "게임 터보 시작 페이지가 새로워졌습니다",
       "Game Turbo가 켜져 있을 때 자동 밝기, 세 손가락 스크린샷, 읽기 모드를 자동으로 끌 수 있습니다",
       "게임 터보 도구 상자 대폭 업그레이드: 화면 꺼짐 상태 자동 실행 및 데이터 SIM 전환 지원"
     ],
     "Xiaomi 클라우드 서비스": [
-      "New: Xiaomi Cloud items can appear in the search results of the Settings app",
+      "새 기능: 설정 앱 검색 결과에 Xiaomi Cloud 항목이 표시됩니다",
       "수정: 동기화 상태가 항상 올바르게 표시되지 않는 문제"
     ]
   },
@@ -165,8 +160,7 @@
     ],
     "Экран блокировки, строка состояния, шторка уведомлений": [
       "Новое: Используйте отпечаток пальца, чтобы перейти на рабочий стол после того, как вы разблокировали устройство при помощи данных лица и остались на экране блокировки",
-      "Исправлено: Время продолжительности вызова перекрывалось значками уведомлений",
-      "Исправлено: Страница синхронизации не обновлялась всякий раз, когда синхронизация была включена или отключена через Шторку уведомлений"
+      "Исправлено: Время продолжительности вызова перекрывалось значками уведомлений"
     ],
     "Ускорение приложений": [
       "Новое: Непрерывное пролистывание открывает дополнительное меню в Ускорении игр",
@@ -187,94 +181,91 @@
   },
   "logs_uk": {
     "Система": [
-      "Optimization: Updated Android Security Patch to September 2019. Increased system security.",
-      "Stable MIUI based on Android Pie"
+      "Оптимізація: Оновлено патч безпеки Google (2019#9). Підвищено безпеку системи.",
+      "Вийшла стабільна версія MIUI з глибоким налаштуванням на базі Android P"
     ],
     "Блокування додатків": [
       "Нове: Підтримка розблокування застосунків обличчям",
-      "New: Locking Google contacts is available now"
+      "Нове: підтримка блокування контактів Google"
     ],
     "Екран блокування, рядок стану, панель сповіщень": [
-      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade"
+      "Нове: Після успішного розблокування обличчям із залишенням на екрані блокування можна перейти на головний екран за допомогою відбитка пальця",
+      "Виправлено: бульбашка часу виклику перекривалася зі значками сповіщень"
     ],
     "Прискорення ігор": [
-      "New: Continuous swiping opens an additional menu in Game Turbo now",
+      "Нове: безперервний жест свайпу відкриває додаткове меню в Game Turbo",
       "Нове: Плаваючі вікна для вхідних викликів під час ігор",
-      "New: You can create a Home screen shortcut for Game Turbo now",
-      "Optimization: Improved display options for landscape orientation",
+      "Нове: Тепер можна створити ярлик Game Turbo на головному екрані",
+      "Оптимізація: покращено стиль відображення налаштувань Game Turbo та інтерфейсу додавання ігор у горизонтальній орієнтації",
       "Оптимізація: Проведіть від верхньої частини екрана, щоб відкрити ігрові інструменти",
-      "Optimization: Prompts about turning on Game Turbo",
-      "Fix: Hands-free call duration wasn't displayed correctly in Game Turbo",
+      "Оптимізація: Спосіб сповіщення про ввімкнення режиму Game Turbo",
+      "Виправлено: тривалість гучномовного виклику в Game Turbo відображалася неправильно",
       "Оновлено початкову сторінку Game Turbo",
       "Коли Game Turbo увімкнено, можна автоматично вимкнути автоматичну яскравість, скріншот трьома пальцями та режим читання",
       "Важливе оновлення інструментів Game Turbo: тепер доступні автовідтворення та перемикання між SIM-картами даних"
     ],
     "Хмарний сервіс Xiaomi": [
-      "New: Xiaomi Cloud items can appear in the search results of the Settings app",
+      "Нове: у полі пошуку вгорі системних налаштувань можна шукати функції хмарного сервісу",
       "Виправлено: Неправильне відображення статусу синхронізації"
     ]
   },
   "logs_pl": {
     "System": [
-      "Optimization: Updated Android Security Patch to September 2019. Increased system security.",
-      "Stable MIUI based on Android Pie"
+      "Optymalizacja: Zaktualizowano poprawkę zabezpieczeń Google (2019#9). Zwiększono bezpieczeństwo systemu.",
+      "Wydano stabilną, głęboko dostosowaną wersję MIUI opartą na Android P"
     ],
     "Blokada aplikacji": [
       "Nowość: Odblokowywanie aplikacji za pomocą rozpoznawania twarzy",
-      "New: Locking Google contacts is available now"
+      "Nowość: można blokować kontakty Google"
     ],
     "Ekran blokady, pasek powiadomień,panel powiadomień": [
-      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade"
+      "Nowość: Po odblokowaniu twarzą i pozostaniu na ekranie blokady można przejść do ekranu głównego za pomocą odcisku palca",
+      "Poprawka: bąbel czasu połączenia nakładał się na ikony powiadomień"
     ],
     "Przyspieszanie gier": [
-      "New: Continuous swiping opens an additional menu in Game Turbo now",
+      "Nowość: ciągłe przesunięcie gestem otwiera dodatkowe menu w Game Turbo",
       "Nowość: Pływające okna dla połączeń przychodzących podczas gier",
-      "New: You can create a Home screen shortcut for Game Turbo now",
-      "Optimization: Improved display options for landscape orientation",
+      "Nowość: Możesz teraz utworzyć skrót na ekranie głównym do Game Turbo",
+      "Optymalizacja: Ulepszono styl wyświetlania ustawień Game Turbo i ekranu dodawania gier w orientacji poziomej",
       "Optymalizacja: Możesz otworzyć skrzynkę narzędzi do gier, przesuwając palcem od górnej krawędzi ekranu",
-      "Optimization: Prompts about turning on Game Turbo",
-      "Fix: Hands-free call duration wasn't displayed correctly in Game Turbo",
+      "Optymalizacja: Sposób wyświetlania monitu o włączenie trybu Game Turbo",
+      "Naprawiono: czas połączenia głośnomówiącego w Game Turbo był wyświetlany nieprawidłowo",
       "Odświeżono stronę startową Game Turbo",
       "Po włączeniu Game Turbo można automatycznie wyłączyć automatyczną jasność, zrzut ekranu trzema palcami i tryb czytania",
       "Duża aktualizacja przybornika w Game Turbo: dostępne są teraz autoodtwarzanie i przełączanie kart SIM z danymi"
     ],
     "Usługa w chmurze Xiaomi": [
-      "New: Xiaomi Cloud items can appear in the search results of the Settings app",
+      "Nowość: Elementy Xiaomi Cloud mogą pojawiać się w wynikach wyszukiwania aplikacji Ustawienia",
       "Naprawiono: Nieprawidłowe wyświetlanie stanu synchronizacji"
     ]
   },
   "logs_de": {
     "System": [
-      "Optimization: Updated Android Security Patch to September 2019. Increased system security.",
-      "Stable MIUI based on Android Pie"
+      "Optimierung: Google-Sicherheitspatch auf September 2019 aktualisiert. Systemsicherheit verbessert.",
+      "Stabile MIUI-Version auf Basis von Android P veröffentlicht"
     ],
     "App-Sperre": [
       "Neu: Apps per Gesichtserkennung entsperren",
-      "New: Locking Google contacts is available now"
+      "Neu: Google-Kontakte können jetzt gesperrt werden"
     ],
     "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
-      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade"
+      "Neu: Nach erfolgreicher Gesichtserkennung auf dem Sperrbildschirm per Fingerabdruck zum Startbildschirm wechseln",
+      "Behoben: Überschneidung der Anrufzeit-Blase mit Benachrichtigungssymbolen"
     ],
     "Spielbeschleunigung": [
       "Neu: Kontinuierliches Wischen öffnet jetzt ein zusätzliches Menü in Game Turbo",
       "Neu: Schwebende Fenster für eingehende Anrufe während Spielen",
-      "New: You can create a Home screen shortcut for Game Turbo now",
+      "Neu: Du kannst jetzt eine Startbildschirmverknüpfung für Game Turbo erstellen",
       "Optimierung: Verbesserte Anzeigeoptionen im Querformat",
       "Optimierung: Du kannst die Gaming-Toolbox durch Wischen vom oberen Bildschirmrand öffnen",
-      "Optimization: Prompts about turning on Game Turbo",
-      "Fix: Hands-free call duration wasn't displayed correctly in Game Turbo",
+      "Optimierung: Art der Aufforderung zum Aktivieren des Game-Turbo-Modus",
+      "Behoben: Die Dauer von Freisprechanrufen wurde in Game Turbo nicht korrekt angezeigt.",
       "Startseite von Game Turbo überarbeitet",
       "Automatische Helligkeit, Drei-Finger-Screenshot und Lesemodus können bei aktiviertem Game Turbo automatisch deaktiviert werden",
       "Großes Update für die Toolbox in Game Turbo: Autoplay und Wechsel zwischen Daten-SIM-Karten jetzt verfügbar"
     ],
     "Xiaomi Cloud-Dienst": [
-      "New: Xiaomi Cloud items can appear in the search results of the Settings app",
+      "Neu: Xiaomi-Cloud-Einträge können in den Suchergebnissen der Einstellungen-App erscheinen",
       "Behoben: Synchronisierungsstatus wurde nicht immer korrekt angezeigt"
     ]
   },
@@ -289,8 +280,7 @@
     ],
     "Écran de verrouillage, Barre d'état, Panneau de notification": [
       "Nouveau: Utilisez votre empreinte digitale pour ouvrir l'écran d'accueil une fois que vous avez déverrouillé l'appareil à l'aide des données du visage et que vous êtes resté sur l'écran de verrouillage",
-      "Réparé: La bulle de temps d'appel chevauchait avec les icônes de notification",
-      "Réparé: La page de synchronisation ne peut pas être régénérée chaque fois que la synchronisation est activée ou désactivée dans le panneau de Notifications"
+      "Correction : la bulle de durée d’appel chevauchait les icônes de notification"
     ],
     "Booster de vitesse de jeu": [
       "Nouveau: Le balayage continue ouvre un menu additionel dans Game Turbo maintenant",
@@ -320,8 +310,7 @@
     ],
     "Schermata di blocco, barra di stato, area delle notifiche": [
       "Nuovo: Accedi alla schermata Home usando l'impronta digitale dopo aver sbloccato il dispositivo con i dati del volto restando sulla schermata di blocco.",
-      "Risolto: L'icona della durata di chiamata si sovrapponeva alle icone di notifica",
-      "Risolto: La pagina di sincronizzazione non poteva essere aggiornata quando la sincronizzazione era attiva o disattivata nell'area delle notifiche"
+      "Risolvi: L'icona della durata di chiamata si sovrapponeva alle icone di notifica"
     ],
     "Turbo Videogiochi": [
       "Nuovo: Lo scorrimento continuo apre ora un menu aggiuntivo in Turbo videogiochi",
@@ -351,8 +340,7 @@
     ],
     "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
       "Nuevo: Usa tu huella dactilar para abrir la Pantalla de inicio después de haber desbloqueado el dispositivo usando tus datos faciales y haber permanecido en la Pantalla de bloqueo",
-      "Reparado: La burbuja de la duración de llamada se superpuso con los iconos de notificaciones",
-      "Reparado: La página de sincronización no pudo ser refrescada cuando la sincronización fue activada o desactivada en la Barra de notificaciones"
+      "Reparar: La burbuja de la duración de llamada se superpuso con los iconos de notificaciones"
     ],
     "Acelerador de juegos": [
       "Nuevo: Deslizar de forma reperida ahora abre un menú adicional en Game Turbo",
@@ -382,8 +370,7 @@
     ],
     "Tela de bloqueio, Barra de status e Área de notificações": [
       "Novo: Use sua impressão digital para abrir a Tela inicial quando você desbloquear o dispositivo usando o desbloqueio facial e ficar na Tela de bloqueio",
-      "Correção: Bolha de tempo de chamada sobrepunha ícones de notificações",
-      "Correção: A página de sincronização não podia ser recarregada quando a sincronização era ativada ou desativada na Área de notificações"
+      "Correção: o balão de duração da chamada se sobrepunha aos ícones de notificação"
     ],
     "Acelerador de jogos": [
       "Novo: Agora um menu adicional do Game Turbo é aberto ao deslizar continuamente",
@@ -413,8 +400,7 @@
     ],
     "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
       "Yeni: Cihazın kilidini yüz verilerini kullanarak açtıktan ve Kilit ekranında kaldıktan sonra Ana ekranı açmak için parmak izinizi kullanın",
-      "Onarım: Arama süresi penceresi bildirim simgeleriyle üst üste bindi",
-      "Onarım: Senkronizasyon Bildirim çubuğunda açıldığında veya kapatıldığında senkronizasyon sayfası yenilenemedi"
+      "Onar: Arama süresi penceresi bildirim simgeleriyle üst üste bindi"
     ],
     "Oyun hız artırıcı": [
       "Yeni: Devamlı kaydırma şimdi Game Turbo'da ek bir menü açıyor",
@@ -444,8 +430,7 @@
     ],
     "Layar kunci, bar status, layar notifikasi": [
       "Baru: Menggunakan sidik jari untuk membuka Layar utama saat Anda membuka kunci perangkat dengan data wajah dan tetap berada di Layar kunci",
-      "Perbaikan: Kotak yang menunjukkan durasi panggilan tertumpang tindih dengan ikon notifikasi",
-      "Perbaikan: Halaman sinkron tidak dapat disegarkan kembali setiap kali sinkron dihidupkan atau dimatikan di Layar notifikasi"
+      "Perbaikan: gelembung durasi panggilan bertumpang tindih dengan ikon notifikasi"
     ],
     "Peningkat kecepatan permainan": [
       "Baru: Ada menu tambahan di Game Turbo jika Anda terus menggeser halaman",
@@ -466,152 +451,147 @@
   },
   "logs_vi": {
     "Hệ thống": [
-      "Optimization: Updated Android Security Patch to September 2019. Increased system security.",
-      "Stable MIUI based on Android Pie"
+      "Tối ưu hóa: Đã cập nhật bản vá bảo mật Google (2019#9). Tăng cường bảo mật hệ thống.",
+      "Phát hành bản MIUI ổn định tùy biến sâu dựa trên Android P"
     ],
     "Khóa ứng dụng": [
       "Mới: Hỗ trợ mở khóa ứng dụng bằng khuôn mặt",
-      "New: Locking Google contacts is available now"
+      "Mới: Hỗ trợ khóa danh bạ Google"
     ],
     "Màn hình khóa, thanh trạng thái, thanh thông báo": [
-      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade"
+      "Mới: Sau khi mở khóa bằng khuôn mặt thành công và vẫn ở màn hình khóa, có thể dùng vân tay để vào màn hình chính",
+      "Đã sửa: bong bóng thời gian gọi chồng lên biểu tượng thông báo"
     ],
     "Tăng tốc trò chơi": [
-      "New: Continuous swiping opens an additional menu in Game Turbo now",
+      "Mới: vuốt liên tục bằng cử chỉ để mở menu phụ của Game Turbo",
       "Mới: Cửa sổ nổi cho cuộc gọi đến trong khi chơi game",
-      "New: You can create a Home screen shortcut for Game Turbo now",
-      "Optimization: Improved display options for landscape orientation",
+      "Mới: Bạn có thể tạo lối tắt Game Turbo trên màn hình chính",
+      "Tối ưu hóa: Cải thiện kiểu hiển thị của cài đặt Game Turbo và giao diện thêm trò chơi ở chế độ ngang",
       "Tối ưu hóa: Bạn có thể mở hộp công cụ chơi game bằng cách vuốt từ cạnh trên màn hình",
-      "Optimization: Prompts about turning on Game Turbo",
-      "Fix: Hands-free call duration wasn't displayed correctly in Game Turbo",
+      "Tối ưu hóa: Cách nhắc bật chế độ Game Turbo",
+      "Đã sửa: thời lượng cuộc gọi rảnh tay trong Game Turbo hiển thị không chính xác",
       "Làm mới trang khởi đầu của Game Turbo",
       "Khi bật Game Turbo, có thể tự động tắt độ sáng tự động, chụp màn hình bằng ba ngón tay và chế độ đọc",
       "Nâng cấp lớn cho hộp công cụ trong Game Turbo: đã có tự động chơi và chuyển đổi giữa các thẻ SIM dữ liệu"
     ],
     "Dịch vụ đám mây Xiaomi": [
-      "New: Xiaomi Cloud items can appear in the search results of the Settings app",
+      "Mới: Các mục Xiaomi Cloud có thể xuất hiện trong kết quả tìm kiếm của ứng dụng Cài đặt",
       "Đã sửa: Trạng thái đồng bộ không phải lúc nào cũng hiển thị chính xác"
     ]
   },
   "logs_th": {
     "ระบบ": [
-      "Optimization: Updated Android Security Patch to September 2019. Increased system security.",
-      "Stable MIUI based on Android Pie"
+      "ปรับปรุง: อัปเดตแพตช์ความปลอดภัยของ Google (2019#9) เพิ่มความปลอดภัยของระบบ",
+      "เปิดตัว MIUI เวอร์ชันเสถียรที่ปรับแต่งอย่างล้ำลึกบนพื้นฐาน Android P"
     ],
     "ล็อกแอป": [
       "เพิ่มใหม่: รองรับการปลดล็อกแอปด้วยใบหน้า",
-      "New: Locking Google contacts is available now"
+      "ใหม่: รองรับการล็อกรายชื่อผู้ติดต่อ Google"
     ],
     "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
-      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade"
+      "ใหม่: เมื่อปลดล็อกด้วยใบหน้าสำเร็จและยังอยู่บนหน้าจอล็อก สามารถใช้นิ้วมือเข้าสู่หน้าจอหลักได้",
+      "แก้ไข: ฟองเวลาการโทรทับซ้อนกับไอคอนการแจ้งเตือน"
     ],
     "ตัวเร่งความเร็วเกม": [
-      "New: Continuous swiping opens an additional menu in Game Turbo now",
+      "ใหม่: ปัดต่อเนื่องด้วยท่าทางเพื่อเปิดเมนูย่อยของ Game Turbo",
       "ใหม่: ฟีเจอร์หน้าต่างลอยสำหรับการโทร รองรับการแสดงสถานะการเชื่อมต่อผ่านหน้าต่างลอยสำหรับสายที่รับระหว่างเล่นเกม",
-      "New: You can create a Home screen shortcut for Game Turbo now",
-      "Optimization: Improved display options for landscape orientation",
+      "ใหม่: คุณสามารถสร้างทางลัดหน้าจอหลักสำหรับ Game Turbo ได้แล้ว",
+      "ปรับปรุง: ปรับปรุงสไตล์การแสดงผลของการตั้งค่า Game Turbo และหน้าจอเพิ่มเกมในโหมดแนวนอน",
       "ปรับปรุง: เปลี่ยนวิธีเรียกใช้กล่องเครื่องมือเกมเป็นการปัดจากด้านบน",
-      "Optimization: Prompts about turning on Game Turbo",
-      "Fix: Hands-free call duration wasn't displayed correctly in Game Turbo",
+      "การปรับปรุง: วิธีแจ้งเตือนการเปิดโหมด Game Turbo",
+      "แก้ไข: ระยะเวลาการโทรแบบแฮนด์ฟรีใน Game Turbo แสดงไม่ถูกต้อง",
       "หน้าแรกของ Game Turbo เวอร์ชันใหม่ รูปแบบอินเทอร์เฟซใหม่ทั้งหมด",
       "เมื่อเปิด Game Turbo สามารถปิดความสว่างอัตโนมัติ การจับภาพหน้าจอด้วยสามนิ้ว และโหมดอ่านหนังสือโดยอัตโนมัติได้",
       "อัปเกรดกล่องเครื่องมือเกมครั้งใหญ่ รองรับการเล่นอัตโนมัติขณะปิดหน้าจอและการสลับซิมอินเทอร์เน็ตด้วยการแตะครั้งเดียว เป็นต้น"
     ],
     "บริการคลาวด์ Xiaomi": [
-      "New: Xiaomi Cloud items can appear in the search results of the Settings app",
+      "ใหม่: รายการ Xiaomi Cloud สามารถแสดงในผลการค้นหาของแอปการตั้งค่า",
       "แก้ไข: สถานะการซิงค์แสดงไม่ถูกต้อง"
     ]
   },
   "logs_ar": {
     "النظام": [
-      "Optimization: Updated Android Security Patch to September 2019. Increased system security.",
-      "Stable MIUI based on Android Pie"
+      "تحسين: تحديث تصحيح الأمان من Google (2019#9). تحسين أمان النظام.",
+      "إصدار MIUI المستقر المخصص بعمق بناءً على Android P"
     ],
     "قفل التطبيقات": [
       "جديد: دعم فتح التطبيقات عبر التعرف على الوجه",
-      "New: Locking Google contacts is available now"
+      "جديد: دعم قفل جهات اتصال Google"
     ],
     "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
-      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade"
+      "جديد: إمكانية استخدام بصمة الإصبع للانتقال إلى الشاشة الرئيسية بعد نجاح فتح القفل بالوجه والبقاء على شاشة القفل",
+      "إصلاح: تداخل فقاعة وقت المكالمة مع أيقونات الإشعارات"
     ],
     "تسريع الألعاب": [
-      "New: Continuous swiping opens an additional menu in Game Turbo now",
+      "جديد: فتح القائمة الثانوية لـ Game Turbo بالسحب المتواصل بالإيماءات",
       "جديد: ميزة النافذة العائمة للمكالمات، وتدعم عرض حالة الاتصال في نافذة عائمة للمكالمات التي يتم الرد عليها أثناء الألعاب",
-      "New: You can create a Home screen shortcut for Game Turbo now",
-      "Optimization: Improved display options for landscape orientation",
+      "جديد: يمكنك الآن إنشاء اختصار لـ Game Turbo على الشاشة الرئيسية",
+      "تحسين: تحسين أسلوب عرض إعدادات تسريع الألعاب وواجهة إضافة الألعاب في الوضع الأفقي",
       "تحسين: تم تغيير طريقة استدعاء صندوق أدوات الألعاب إلى السحب من الجانب العلوي",
-      "Optimization: Prompts about turning on Game Turbo",
-      "Fix: Hands-free call duration wasn't displayed correctly in Game Turbo",
+      "تحسين: طريقة التنبيه لتفعيل وضع Game Turbo",
+      "إصلاح: لم تُعرض مدة مكالمة مكبر الصوت بشكل صحيح في Game Turbo",
       "الصفحة الرئيسية الجديدة لـ Game Turbo، بتصميم واجهة متجدد بالكامل",
       "يمكن إيقاف السطوع التلقائي ولقطة الشاشة بثلاثة أصابع ووضع القراءة تلقائيًا عند تفعيل Game Turbo",
       "ترقية شاملة لصندوق أدوات الألعاب، مع دعم التشغيل التلقائي أثناء إيقاف الشاشة والتبديل بلمسة واحدة لبطاقة البيانات وغيرها"
     ],
     "خدمة Xiaomi السحابية": [
-      "New: Xiaomi Cloud items can appear in the search results of the Settings app",
+      "جديد: يمكن أن تظهر عناصر Xiaomi Cloud في نتائج البحث في تطبيق الإعدادات",
       "إصلاح: خطأ في عرض حالة المزامنة"
     ]
   },
   "logs_in": {
     "सिस्टम": [
-      "Optimization: Updated Android Security Patch to September 2019. Increased system security.",
-      "Stable MIUI based on Android Pie"
+      "अनुकूलन: Google सुरक्षा पैच (2019#9) अपडेट किया गया, सिस्टम सुरक्षा में सुधार।",
+      "Android P पर आधारित गहन अनुकूलित MIUI स्थिर संस्करण जारी किया गया"
     ],
     "ऐप लॉक": [
       "नया: चेहरा पहचान से ऐप्स अनलॉक करने की सुविधा",
-      "New: Locking Google contacts is available now"
+      "नया: Google संपर्कों को लॉक करने का समर्थन"
     ],
     "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
-      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade"
+      "नया: चेहरे से अनलॉक होने और लॉक स्क्रीन पर रहने पर फ़िंगरप्रिंट से होम स्क्रीन पर जाने की सुविधा",
+      "सुधार: कॉल अवधि बबल नोटिफ़िकेशन आइकनों के साथ ओवरलैप हो रहा था"
     ],
     "गेम गति बूस्टर": [
-      "New: Continuous swiping opens an additional menu in Game Turbo now",
+      "नया: निरंतर स्वाइप से Game Turbo का द्वितीयक मेनू खोलें",
       "नया: फ़ोन फ़्लोटिंग विंडो सुविधा, गेम के दौरान कनेक्ट होने वाले कॉल का कनेक्टेड स्टेटस फ़्लोटिंग विंडो में दिखाने का समर्थन करती है।",
-      "New: You can create a Home screen shortcut for Game Turbo now",
-      "Optimization: Improved display options for landscape orientation",
+      "नया: अब आप Game Turbo के लिए होम स्क्रीन शॉर्टकट बना सकते हैं",
+      "अनुकूलन: लैंडस्केप में गेम टर्बो सेटिंग्स और गेम जोड़ने के इंटरफ़ेस की प्रदर्शन शैली में सुधार",
       "अनुकूलन: गेम टूलबॉक्स खोलने का तरीका बदलकर स्क्रीन के ऊपरी किनारे से स्वाइप करना किया गया",
-      "Optimization: Prompts about turning on Game Turbo",
-      "Fix: Hands-free call duration wasn't displayed correctly in Game Turbo",
+      "अनुकूलन: Game Turbo मोड सक्षम करने के संकेत का तरीका",
+      "ठीक किया गया: Game Turbo में हैंड्स-फ़्री कॉल की अवधि सही ढंग से प्रदर्शित नहीं हो रही थी",
       "Game Turbo का नया होम पेज, इंटरफ़ेस शैली पूरी तरह नई",
       "Game Turbo चालू होने पर ऑटो ब्राइटनेस, तीन-उंगली स्क्रीनशॉट और रीडिंग मोड अपने आप बंद हो सकते हैं",
       "गेम टूलबॉक्स का पूर्ण अपग्रेड, स्क्रीन बंद होने पर ऑटोप्ले और एक टैप में डेटा SIM स्विच करने आदि सुविधाओं के साथ"
     ],
     "Xiaomi क्लाउड सेवा": [
-      "New: Xiaomi Cloud items can appear in the search results of the Settings app",
+      "नया: Xiaomi Cloud आइटम सेटिंग्स ऐप के खोज परिणामों में दिख सकते हैं",
       "ठीक किया गया: सिंक स्थिति सही ढंग से प्रदर्शित नहीं होती थी"
     ]
   },
   "logs_ug": {
-    "System": [
-      "Optimization: Updated Android Security Patch to September 2019. Increased system security.",
+    "سىستېما": [
+      "ياخشىلاش: Google بىخەتەرلىك يامىقى (2019#9) يېڭىلاندى، سىستېما بىخەتەرلىكى ئاشۇرۇلدى.",
       "Stable MIUI based on Android Pie"
     ],
     "ئەپ قۇلۇپى": [
       "يېڭى: ئەپ قۇلۇپىنى يۈز ئارقىلىق ئېچىشنى قوللايدۇ",
-      "New: Locking Google contacts is available now"
+      "يېڭى: Google ئالاقە ئۇچۇرلىرىنى قۇلۇپلاشنى قوللايدۇ"
     ],
     "Lockscreen, status bar, Notification shade": [
-      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade"
+      "يېڭىلىق: يۈز ئارقىلىق قۇلۇپ ئېچىش مۇۋەپپەقىيەتلىك بولۇپ قۇلۇپ ئېكرانىدا تۇرۇپ قالغاندا، بارماق ئىزى ئارقىلىق ئۈستەل يۈزىگە كىرىش ئىقتىدارى قوشۇلدى.",
+      "قوڭغۇراق ۋاقتى كۆپچىكى بىلەن ئۇقتۇرۇش سىنبەلگىسىنىڭ ئۈستى-ئۈستىگە چۈشۈشىنى تۈزەت"
     ],
     "ئويۇن تېزلىتىش": [
-      "New: Continuous swiping opens an additional menu in Game Turbo now",
-      "New: Floating windows for incoming calls during games",
+      "قوشۇلدى: ئىشارەت ئارقىلىق ئۇدا سىيرىش ئارقىلىق Game Turbo نىڭ ئىككىنچى دەرىجىلىك تىزىملىكىنى چىقىرىش ئىقتىدارى.",
+      "يېڭى: تېلېفون لەيلىمە كۆزنەك ئىقتىدارى قوشۇلدى، ئويۇن جەريانىدا ئۇلىنىلغان تېلېفونلارنىڭ ئۇلىنىش ھالىتىنى لەيلىمە كۆزنەكتە كۆرسىتىشنى قوللايدۇ",
       "New: You can create a Home screen shortcut for Game Turbo now",
-      "Optimization: Improved display options for landscape orientation",
-      "Optimization: You can open the gaming toolbox by swiping from the top side of the screen",
+      "ئەلالاشتۇرۇش: ياتا يۆنىلىشتە ئويۇن تېزلىتىش تەڭشىكى ۋە ئويۇن قوشۇش كۆرۈنۈشىنىڭ كۆرسىتىش ئۇسلۇبى ياخشىلاندى.",
+      "ئەلالاشتۇرۇش: ئويۇن قورالى ساندۇقىنى چاقىرىش ئۇسۇلى يۇقىرى تەرەپتىن سىيرىپ چىقىرىش قىلىپ تەڭشەلدى.",
       "Optimization: Prompts about turning on Game Turbo",
-      "Fix: Hands-free call duration wasn't displayed correctly in Game Turbo",
-      "Refreshed start page of Game Turbo",
-      "Auto brightness, screenshot gestures, and Reading mode can be turned off automatically when Game Turbo is on",
+      "ئويۇن ئىچىدە قولسىز تېلېفونغا جاۋاب بەرگەندە سۆزلىشىش ۋاقتى خاتا كۆرسىتىلىدىغان مەسىلە تۈزىتىلدى.",
+      "Game Turbo نىڭ يېڭى نەشرىدىكى باش بېتى، كۆرۈنۈش ئۇسلۇبى پۈتۈنلەي يېڭىلاندى.",
+      "ئويۇنغا كىرگەندە ئاپتوماتىك يورۇقلۇق، ئۈچ بارماق بىلەن ئېكران كۆچۈرۈش ۋە كۆزنى قوغداش ھالىتىنى ئايرىم تاقاشنى قوللايدۇ.",
       "ئويۇن قورال ساندۇقى ئومۇميۈزلۈك يېڭىلاندى، ئېكران ئۆچكەندە ئاپتوماتىك ئوينىتىش ۋە بىر كۇنۇپكا بىلەن تور كارتىسىنى ئالماشتۇرۇش قاتارلىق ئىقتىدارلارنى قوللايدۇ"
     ],
     "Xiaomi بۇلۇت مۇلازىمىتى": [
@@ -620,7 +600,7 @@
     ]
   },
   "logs_bo": {
-    "System": [
+    "མ་ལག": [
       "Optimization: Updated Android Security Patch to September 2019. Increased system security.",
       "Stable MIUI based on Android Pie"
     ],
@@ -630,8 +610,7 @@
     ],
     "Lockscreen, status bar, Notification shade": [
       "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
-      "Fix: Call time bubble overlapped with notification icons",
-      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade"
+      "Fix: Call time bubble overlapped with notification icons"
     ],
     "Game speed booster": [
       "New: Continuous swiping opens an additional menu in Game Turbo now",
@@ -640,14 +619,14 @@
       "Optimization: Improved display options for landscape orientation",
       "Optimization: You can open the gaming toolbox by swiping from the top side of the screen",
       "Optimization: Prompts about turning on Game Turbo",
-      "Fix: Hands-free call duration wasn't displayed correctly in Game Turbo",
+      "རྩེད་མོའི་ནང་ལག་མེད་ཁ་པར་ལན་འདེབས་བྱེད་སྐབས་ཁ་པར་གྱི་དུས་ཚོད་བསྟན་པ་ནོར་བའི་གནད་དོན་བཅོས་པ།",
       "Refreshed start page of Game Turbo",
       "Auto brightness, screenshot gestures, and Reading mode can be turned off automatically when Game Turbo is on",
       "A major upgrade for the toolbox in Game Turbo: autoplay and switching between data SIM cards are available now"
     ],
     "Mi Cloud": [
       "New: Xiaomi Cloud items can appear in the search results of the Settings app",
-      "Fix: Sync status wasn't always displayed correctly"
+      "མཉམ་འབྲེལ་གནས་ཚུལ་ནོར་འཁྲུལ་ངང་སྟོན་པའི་གནད་དོན་བཅོས་པ།"
     ]
   }
 }

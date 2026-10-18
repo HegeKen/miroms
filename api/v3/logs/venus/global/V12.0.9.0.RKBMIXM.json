@@ -1,17 +1,15 @@
 {
   "logs_zh": {
     "系统": [
-      "优化 在锁屏闹钟页面屏蔽全面屏手势的功能",
+      "新功能：从左上角向下滑动打开通知栏，从右上角向下滑动打开控制中心",
       "优化 个别三方APP兼容性问题, 以及内存分配异常导致无响应问题",
       "修复 微信弹窗询问权限场景的无响应问题",
       "更新谷歌安全补丁（2021#03），提升系统安全性",
-      "更新谷歌安全补丁（2021#04），提升系统安全性",
-      "新增 桌面左侧下滑显示通知中心，右侧下滑显示控制中心",
-      "更新谷歌安全补丁（2021#04），提升系统安全性"
+      "新增 桌面左侧下滑显示通知中心，右侧下滑显示控制中心"
     ],
     "控制中心": [
       "新增 桌面左侧下滑显示通知中心，右侧下滑显示控制中心",
-      "新增 锁屏禁止下拉控制中心的设置项"
+      "新增 锁屏页面支持禁止下拉通知栏"
     ],
     "状态栏、通知栏": [
       "新增 在媒体通知中切换播放设备的功能"
@@ -22,17 +20,15 @@
   },
   "logs_en": {
     "System": [
-      "Optimization: Full screen gestures are now ignored on the Lock screen alarm page",
+      "New: Swipe down from the top left corner to open the notification shade and from the top right corner to open Control Center",
       "Optimization: Some third party apps didn't respond due to compatibility issues and RAM allocation errors",
       "Fix: The device stopped responding when WeChat asked for permissions",
       "Updated Android Security Patch to March 2021. Increased system security.",
-      "Updated Android Security Patch to April 2021. Increased system security.",
-      "New: Swipe down from the upper left corner to open Notification shade and from the upper right corner to open Control center",
-      "Updated Android Security Patch to April 2021. Increased system security."
+      "New: Swipe down from the upper left corner to open Notification shade and from the upper right corner to open Control center"
     ],
     "Control center": [
       "New: Swipe down from the upper left corner to open Notification shade and from the upper right corner to open Control center",
-      "New: An option that allows you to restrict opening Control center while on the Lock screen"
+      "New: You can restrict opening Notification shade on the Lock screen now"
     ],
     "Status bar, Notification shade": [
       "New: An option to switch between connected devices in the notification about media playback"
@@ -43,17 +39,15 @@
   },
   "logs_zh_tw": {
     "系統": [
-      "優化: 在螢幕鎖定鬧鐘頁面屏蔽全面屏手勢的功能",
+      "New: Swipe down from the top left corner to open the notification shade and from the top right corner to open Control Center",
       "優化: 個別第三方 App 因為相容性，以及記憶體分配異常導致沒有回應問題",
       "修復: 微信彈窗瀏覽權限場景的無回應問題",
       "更新Android安全性修補程式等級（2021#03），提升系統安全性",
-      "更新Android安全性修補程式等級（2021#04），提升系統安全性",
-      "新增: 桌面左側下滑顯示通知中心，右側下滑顯示控制中心",
-      "更新Android安全性修補程式等級（2021#04），提升系統安全性"
+      "新增: 桌面左側下滑顯示通知中心，右側下滑顯示控制中心"
     ],
     "控制中心": [
       "新增: 桌面左側下滑顯示通知中心，右側下滑顯示控制中心",
-      "新增: 螢幕鎖定禁止下拉控制中心的設定項"
+      "新增 螢幕鎖定畫面支援禁止下拉狀態欄"
     ],
     "狀態欄、通知欄": [
       "新增: 在媒體通知中切換播放裝置的功能"
@@ -67,14 +61,11 @@
       "新機能: 左上から下にスワイプして通知シェードを開き、右上から下にスワイプしてコントロールセンターを開きます",
       "最適化: 一部のサードパーティ製アプリが、互換性の問題やRAMの割り当てエラーにより応答しなかった問題",
       "修正: WeChatが許可を求めた際にデバイスが応答を停止した問題",
-      "Androidのセキュリティパッチを2021年3月にアップデートしました。システムのセキュリティを強化しました。",
-      "新機能: ロック画面上でコントロールセンターを開くことを制限するオプション",
-      "新機能: 左上から下にスワイプして通知シェードを開き、右上から下にスワイプしてコントロールセンターを開きます",
-      "新機能: ロック画面上でコントロールセンターを開くことを制限するオプション"
+      "Androidのセキュリティパッチを2021年3月にアップデートしました。システムのセキュリティを強化しました。"
     ],
     "コントロールセンター": [
       "新機能: 左上から下にスワイプして通知シェードを開き、右上から下にスワイプしてコントロールセンターを開きます",
-      "Androidのセキュリティパッチを2021年4月にアップデートしました。システムのセキュリティを強化しました。"
+      "新規: ロック画面で通知シェードを下にスワイプして開くことを禁止できるようになりました"
     ],
     "ステータスバー、通知シェード": [
       "新機能: メディア再生に関する通知の中で接続されているデバイスを切り替えるオプション"
@@ -88,14 +79,11 @@
       "New: 홈 화면 좌측에서 아래로 스와이프하여 알림 바 표시, 우측에서 아래로 스와이프하여 제어 센터 표시",
       "최적화: 호환성 문제 및 RAM 할당 오류로 인해 일부 타사 앱이 응답하지 않는 문제",
       "수정: WeChat이 권한을 요청했을 때 기기 응답이 중지되는 문제",
-      "Android 보안패치 (2021#03) 업데이트됨. 시스템 보안이 향상되었습니다.",
-      "New: 잠금화면에서 제어 센터 실행을 제한할 수 있는 옵션",
-      "New: 홈 화면 좌측에서 아래로 스와이프하여 알림 바 표시, 우측에서 아래로 스와이프하여 제어 센터 표시",
-      "New: 잠금화면에서 제어 센터 실행을 제한할 수 있는 옵션"
+      "Android 보안패치 (2021#03) 업데이트됨. 시스템 보안이 향상되었습니다."
     ],
     "제어 센터": [
       "New: 홈 화면 좌측에서 아래로 스와이프하여 알림 바 표시, 우측에서 아래로 스와이프하여 제어 센터 표시",
-      "Android 보안패치 (2021#04) 업데이트됨. 시스템 보안이 향상되었습니다."
+      "새 기능: 잠금 화면에서 알림 패널을 아래로 내려 여는 것을 금지할 수 있습니다"
     ],
     "상태 바, 알림 바": [
       "New: 미디어 재생에 대한 알림에서 연결된 기기 간에 전환할 수 있는 옵션"
@@ -109,14 +97,11 @@
       "Новое: Смахните вниз от левого верхнего угла, чтобы открыть Шторку уведомлений, или от правого верхнего угла, чтобы открыть Центр управления",
       "Оптимизация: Некоторые сторонние приложения могли работать неправильно из-за проблем совместимости и ошибок распределения оперативной памяти",
       "Исправлено: Устройство переставало реагировать на действия пользователя после запроса разрешений для WeChat",
-      "Обновление системы безопасности Android (март 2021 года). Улучшена безопасность системы.",
-      "Новое: Возможность ограничивать открытие Центра управления с экрана блокировки",
-      "Новое: Смахните вниз от левого верхнего угла, чтобы открыть Шторку уведомлений, или от правого верхнего угла, чтобы открыть Центр управления",
-      "Новое: Возможность ограничивать открытие Центра управления с экрана блокировки"
+      "Обновление системы безопасности Android (март 2021 года). Улучшена безопасность системы."
     ],
     "Центр управления": [
       "Новое: Смахните вниз от левого верхнего угла, чтобы открыть Шторку уведомлений, или от правого верхнего угла, чтобы открыть Центр управления",
-      "Обновление системы безопасности Android (апрель 2021 года). Улучшена безопасность системы."
+      "Новое: Теперь вы можете ограничить открытие Шторки уведомлений на экране блокировки"
     ],
     "Строка состояния, шторка уведомлений": [
       "Новое: Возможность переключения между подключенными устройствами в уведомлениях о воспроизведении мультимедиа"
@@ -130,14 +115,11 @@
       "Нове: Проведіть вниз від верхнього лівого кута, щоб відкрити Панель сповіщень і від верхнього правого кута, щоб відкрити Центр управління",
       "Оптимізація: Деякі сторонні програми не відповідали через проблеми з сумісністю і виділенням оперативної пам'яті",
       "Виправлено: Пристрій припиняв реагувати на дії користувача, коли WeChat запитував надання дозволів",
-      "Оновлено патч безпеки Android за березень 2021 року. Збільшено безпеку системи.",
-      "Нове: Можливість обмежувати відкриття Центру кеоування на екрані блокування",
-      "Нове: Проведіть вниз від верхнього лівого кута, щоб відкрити Панель сповіщень і від верхнього правого кута, щоб відкрити Центр управління",
-      "Нове: Можливість обмежувати відкриття Центру кеоування на екрані блокування"
+      "Оновлено патч безпеки Android за березень 2021 року. Збільшено безпеку системи."
     ],
     "Центр керування": [
       "Нове: Проведіть вниз від верхнього лівого кута, щоб відкрити Панель сповіщень і від верхнього правого кута, щоб відкрити Центр управління",
-      "Оновлено патч безпеки Android за квітень 2021 року. Збільшено безпеку системи."
+      "Нове: додано підтримку заборони відкриття панелі сповіщень на екрані блокування"
     ],
     "Рядок стану, Панель сповіщень": [
       "Нове: Можливість перемикання між підключеними пристроями у сповіщенні про відтворення мультимедіа"
@@ -151,14 +133,11 @@
       "Nowe: Przesuń palcem w dół od lewego górnego rogu, aby otworzyć Pasek powiadomień, i od prawego górnego rogu, aby otworzyć Centrum kontroli",
       "Zoptymalizowano: Niektóre aplikacje innych firm nie reagowały z powodu problemów ze zgodnością i alokacją pamięci RAM",
       "Naprawiono: Urządzenie przestało odpowiadać, gdy WeChat poprosił o uprawnienia",
-      "Zaktualizowano Pakiet Bezpieczeństwa Android do marca 2021 r. Zwiększono bezpieczeństwo systemu.",
-      "Nowe: Opcja, która pozwala ograniczyć otwieranie Centrum kontroli na ekranie blokady",
-      "Nowe: Przesuń palcem w dół od lewego górnego rogu, aby otworzyć Pasek powiadomień, i od prawego górnego rogu, aby otworzyć Centrum kontroli",
-      "Nowe: Opcja, która pozwala ograniczyć otwieranie Centrum kontroli na ekranie blokady"
+      "Zaktualizowano Pakiet Bezpieczeństwa Android do marca 2021 r. Zwiększono bezpieczeństwo systemu."
     ],
     "Centrum kontroli": [
       "Nowe: Przesuń palcem w dół od lewego górnego rogu, aby otworzyć Pasek powiadomień, i od prawego górnego rogu, aby otworzyć Centrum kontroli",
-      "Zaktualizowano Pakiet Bezpieczeństwa Android do kwietnia 2021 r. Zwiększono bezpieczeństwo systemu."
+      "Nowość: można teraz zablokować otwieranie panelu powiadomień na ekranie blokady"
     ],
     "Pasek powiadomień, Panel powiadomień": [
       "Nowe: Możliwość przełączania się między podłączonymi urządzeniami w powiadomieniu o odtwarzaniu multimediów"
@@ -172,14 +151,11 @@
       "Nouveau: Glissez vers le bas depuis le côté gauche en haut pour ouvrir le Panneau de notification et depuis le côté droit en haut pour ouvrir le Centre de contrôle",
       "Optimisation: Certaines applications tierces n'ont pas répondu en raison de problèmes de compatibilité et d'erreurs d'allocation de RAM",
       "Réparé: L'appareil a cessé de répondre lorsque WeChat a demandé des autorisations",
-      "Mise à jour du correctif de sécurité Android jusqu'en Mars 2021. Augmentation de la sécurité du système.",
-      "Nouveau: Une option qui vous permet de restreindre l'ouverture du Centre de contrôle lorsque vous êtes sur l'écran de verrouillage",
-      "Nouveau: Glissez vers le bas depuis le côté gauche en haut pour ouvrir le Panneau de notification et depuis le côté droit en haut pour ouvrir le Centre de contrôle",
-      "Nouveau: Une option qui vous permet de restreindre l'ouverture du Centre de contrôle lorsque vous êtes sur l'écran de verrouillage"
+      "Mise à jour du correctif de sécurité Android jusqu'en Mars 2021. Augmentation de la sécurité du système."
     ],
     "Centre de contrôle": [
       "Nouveau: Glissez vers le bas depuis le côté gauche en haut pour ouvrir le Panneau de notification et depuis le côté droit en haut pour ouvrir le Centre de contrôle",
-      "Mise à jour du correctif de sécurité Android jusqu'en avril 2021. Augmentation de la sécurité du système."
+      "Nouveau : il est désormais possible d’interdire l’ouverture du panneau de notifications sur l’écran de verrouillage"
     ],
     "Barre d'état, Panneau de notification": [
       "Nouveau: Une option pour basculer entre les appareils connectés dans la notification sur la lecture multimédia"
@@ -193,14 +169,11 @@
       "Nuovo: Scorri verso il basso dall'angolo in alto a sinistra per aprire l'area delle notifiche e dall'angolo in alto a destra per aprire Centro di controllo",
       "Ottimizzazione: Alcune app di terze parti non rispondevano a causa di problemi di compatibilità ed errori di allocazione della RAM",
       "Risolto: Il dispositivo smetteva di rispondere quando WeChat chiedeva i permessi",
-      "Patch di sicurezza Android aggiornata a marzo 2021. Maggiore sicurezza del sistema.",
-      "Nuovo: Opzione per limitare l'apertura del centro di controllo nella schermata di blocco",
-      "Nuovo: Scorri verso il basso dall'angolo in alto a sinistra per aprire l'area delle notifiche e dall'angolo in alto a destra per aprire Centro di controllo",
-      "Nuovo: Opzione per limitare l'apertura del centro di controllo nella schermata di blocco"
+      "Patch di sicurezza Android aggiornata a marzo 2021. Maggiore sicurezza del sistema."
     ],
     "Centro di controllo": [
       "Nuovo: Scorri verso il basso dall'angolo in alto a sinistra per aprire l'area delle notifiche e dall'angolo in alto a destra per aprire Centro di controllo",
-      "Patch di sicurezza Android aggiornata ad aprile 2021. Maggiore sicurezza del sistema."
+      "Nuovo: È ora possibile limitare l'apertura dell'area delle notifiche sulla schermata di blocco"
     ],
     "Barra di stato, Area delle notifiche": [
       "Nuovo: Opzione per passare da un dispositivo connesso all'altro nella notifica sulla riproduzione multimediale"
@@ -214,14 +187,11 @@
       "Nuevo: Desliza hacia abajo desde la esquina superior izquierda para abrir la Barra de notificaciones y desde la esquina superior derecha para abrir el Centro de control",
       "Optimización: Algunas aplicaciones de terceros no respondían debido a problemas de compatibilidad y errores de asignación de la RAM",
       "Reparado: El dispositivo dejaba de responder cuando WeChat solicitaba permisos",
-      "Parche de seguridad de Android actualizado a marzo de 2021. Seguridad del sistema incrementada.",
-      "Nuevo: Una opción que te permite restringir la apertura del Centro de control mientras estás en la Pantalla de bloqueo",
-      "Nuevo: Desliza hacia abajo desde la esquina superior izquierda para abrir la Barra de notificaciones y desde la esquina superior derecha para abrir el Centro de control",
-      "Nuevo: Una opción que te permite restringir la apertura del Centro de control mientras estás en la Pantalla de bloqueo"
+      "Parche de seguridad de Android actualizado a marzo de 2021. Seguridad del sistema incrementada."
     ],
     "Centro de control": [
       "Nuevo: Desliza hacia abajo desde la esquina superior izquierda para abrir la Barra de notificaciones y desde la esquina superior derecha para abrir el Centro de control",
-      "Parche de seguridad de Android actualizado a abril de 2021. Seguridad del sistema incrementada."
+      "Nuevo: Ahora puedes restringir abrir la Barra de notificaciones en la Pantalla de bloqueo"
     ],
     "Barra de estado, Barra de notificaciones": [
       "Nuevo: Una opción para cambiar entre dispositivos conectados en la notificación sobre la reproducción multimedia"
@@ -235,14 +205,11 @@
       "Novo: Deslize para baixo a partir do canto superior esquerdo para abrir a Área de notificações e a partir do canto superior direito para abrir o Centro de controle",
       "Otimização: Alguns apps de terceiros não respondiam devido a problemas de compatibilidade e de alocação de RAM",
       "Correção: O dispositivo parava de responder quando o WeChat pedia por permissões",
-      "Patch de Segurança do Android atualizado para Março de 2021. Segurança do sistema aprimorada.",
-      "Novo: Uma opção que permite restringir o Centro de controle na Tela de bloqueio",
-      "Novo: Deslize para baixo a partir do canto superior esquerdo para abrir a Área de notificações e a partir do canto superior direito para abrir o Centro de controle",
-      "Novo: Uma opção que permite restringir o Centro de controle na Tela de bloqueio"
+      "Patch de Segurança do Android atualizado para Março de 2021. Segurança do sistema aprimorada."
     ],
     "Centro de controle": [
       "Novo: Deslize para baixo a partir do canto superior esquerdo para abrir a Área de notificações e a partir do canto superior direito para abrir o Centro de controle",
-      "Patch de Segurança do Android atualizado para Abril de 2021. Segurança do sistema aprimorada."
+      "Novo: agora é possível impedir a abertura do painel de notificações na tela de bloqueio"
     ],
     "Barra de status, Área de notificações": [
       "Novo: Uma opção para alternar entre dispositivos conectados na notificação de reprodução de mídia"
@@ -256,14 +223,11 @@
       "Yeni: Bildirim çubuğunu açmak için sol üst köşeden aşağı kaydırın ve Kontrol merkezini açmak için sağ üst köşeden aşağı kaydırın",
       "Optimizasyon: Uyumluluk sorunları ve RAM ayırma hatalarından dolayı bazı üçüncü taraf uygulamalar yanıt vermedi",
       "Onarım: WeChat izinleri istediğinde cihaz yanıt vermeyi durdurdu",
-      "Android Güvenlik Patch'i Mart 2021'de güncellendi. Sistem güvenliği arttırıldı.",
-      "Yeni: Kilit ekranındayken Kontrol merkezini açmayı kısıtlamanızı sağlayan bir seçenek",
-      "Yeni: Bildirim çubuğunu açmak için sol üst köşeden aşağı kaydırın ve Kontrol merkezini açmak için sağ üst köşeden aşağı kaydırın",
-      "Yeni: Kilit ekranındayken Kontrol merkezini açmayı kısıtlamanızı sağlayan bir seçenek"
+      "Android Güvenlik Patch'i Mart 2021'de güncellendi. Sistem güvenliği arttırıldı."
     ],
     "Kontrol merkezi": [
       "Yeni: Bildirim çubuğunu açmak için sol üst köşeden aşağı kaydırın ve Kontrol merkezini açmak için sağ üst köşeden aşağı kaydırın",
-      "Android Güvenlik Patch'i Nisan 2021'de güncellendi. Sistem güvenliği arttırıldı."
+      "Yeni: Kilit ekranında Bildirim çubuğunun açılmasını kısıtlayabilirsiniz"
     ],
     "Durum çubuğu, Bildirim çubuğu": [
       "Yeni: Medya oynatma hakkındaki bildirimlerde bağlı cihazlar arasında geçiş yapmak için bir seçenek"
@@ -277,14 +241,11 @@
       "Baru: Geser ke bawah dari sudut kiri atas untuk membuka Layar notifikasi dan dari sudut kanan atas untuk membuka Pusat kontrol",
       "Pengoptimalan: Beberapa aplikasi pihak ketiga tidak merespons karena masalah kompatibilitas dan kesalahan alokasi RAM",
       "Perbaikan: Perangkat berhenti merespons saat WeChat meminta izin",
-      "Patch Keamanan Android diperbarui (Maret 2021). Keamanan sistem ditingkatkan.",
-      "Baru: Pilihan yang memperbolehkan Anda untuk membatasi membuka Pusat kontrol pada Layar kunci",
-      "Baru: Geser ke bawah dari sudut kiri atas untuk membuka Layar notifikasi dan dari sudut kanan atas untuk membuka Pusat kontrol",
-      "Baru: Pilihan yang memperbolehkan Anda untuk membatasi membuka Pusat kontrol pada Layar kunci"
+      "Patch Keamanan Android diperbarui (Maret 2021). Keamanan sistem ditingkatkan."
     ],
     "Pusat kontrol": [
       "Baru: Geser ke bawah dari sudut kiri atas untuk membuka Layar notifikasi dan dari sudut kanan atas untuk membuka Pusat kontrol",
-      "Patch Keamanan Android diperbarui (April 2021). Keamanan sistem ditingkatkan."
+      "Baru: Dukungan untuk mencegah membuka panel notifikasi di layar kunci"
     ],
     "Bar status, Layar notiifikasi": [
       "Baru: Pilihan untuk berganti antar perangkat yang terhubung pada notifikasi tentang media pemutaran"
@@ -298,14 +259,11 @@
       "Mới: Trượt xuống từ góc trên bên trái để mở Thanh thông báo và từ góc trên bên phải để mở Trung tâm điều khiển",
       "Tối ưu: Một số ứng dụng bên thứ ba không phản hồi do sự cố tương thích và lỗi phân bổ RAM",
       "Sửa: Thiết bị dừng phản hồi khi WeChat yêu cầu quyền",
-      "Cập nhật Bản vá bảo mật Android đến tháng 3 năm 2021. Tăng cường bảo mật hệ thống.",
-      "Mới: Tùy chọn cho phép bạn chặn mở Trung tâm điều khiển khi ở trên Màn hình khóa",
-      "Mới: Trượt xuống từ góc trên bên trái để mở Thanh thông báo và từ góc trên bên phải để mở Trung tâm điều khiển",
-      "Mới: Tùy chọn cho phép bạn chặn mở Trung tâm điều khiển khi ở trên Màn hình khóa"
+      "Cập nhật Bản vá bảo mật Android đến tháng 3 năm 2021. Tăng cường bảo mật hệ thống."
     ],
     "Trung tâm điều khiển": [
       "Mới: Trượt xuống từ góc trên bên trái để mở Thanh thông báo và từ góc trên bên phải để mở Trung tâm điều khiển",
-      "Cập nhật Bản vá bảo mật Android đến tháng 4 năm 2021. Tăng cường bảo mật hệ thống."
+      "Mới: Hỗ trợ chặn kéo xuống bảng thông báo trên màn hình khóa"
     ],
     "Thanh trạng thái, Thanh thông báo": [
       "Mới: Tùy chọn chuyển đổi giữa các thiết bị được kết nối trong thông báo về phát phương tiện"
@@ -319,14 +277,11 @@
       "ใหม่: กวาดนิ้วลงจากมุมซ้ายบนเพื่อเปิดแถบแจ้งเตือนและจากมุมขวาบนเพื่อเปิดศูนย์ควบคุม",
       "การเพิ่มประสิทธิภาพ: แอปของบุคคลที่สามบางแอปไม่ตอบสนองเนื่องจากปัญหาความเข้ากันได้และข้อผิดพลาดในการจัดสรรแรม",
       "แก้ไข: อุปกรณ์หยุดตอบสนองเมื่อ WeChat ขอการอนุญาต",
-      "อัปเดตแพทช์ความปลอดภัยของแอนดรอยด์ถึงมีนาคม 2021 เพิ่มความปลอดภัยของระบบ",
-      "ใหม่: ตัวเลือกที่ช่วยให้คุณจำกัดการเปิดศูนย์ควบคุมในขณะที่อยู่บนหน้าจอล็อก",
-      "ใหม่: กวาดนิ้วลงจากมุมซ้ายบนเพื่อเปิดแถบแจ้งเตือนและจากมุมขวาบนเพื่อเปิดศูนย์ควบคุม",
-      "ใหม่: ตัวเลือกที่ช่วยให้คุณจำกัดการเปิดศูนย์ควบคุมในขณะที่อยู่บนหน้าจอล็อก"
+      "อัปเดตแพทช์ความปลอดภัยของแอนดรอยด์ถึงมีนาคม 2021 เพิ่มความปลอดภัยของระบบ"
     ],
     "ศูนย์กลางการควบคุม": [
       "ใหม่: กวาดนิ้วลงจากมุมซ้ายบนเพื่อเปิดแถบแจ้งเตือนและจากมุมขวาบนเพื่อเปิดศูนย์ควบคุม",
-      "อัปเดตแพทช์ความปลอดภัยของแอนดรอยด์ถึงเมษายน 2021 เพิ่มความปลอดภัยของระบบ"
+      "ใหม่: รองรับการห้ามเลื่อนลงเพื่อเปิดแผงการแจ้งเตือนบนหน้าจอล็อก"
     ],
     "แถบสถานะ, แถบแจ้งเตือน": [
       "ใหม่: ตัวเลือกในการสลับระหว่างอุปกรณ์ที่เชื่อมต่อในการแจ้งเตือนเกี่ยวกับการเล่นสื่อ"
@@ -340,14 +295,11 @@
       ":الجديد يمكنك السحب لأسفل من أعلى يسارالشاشة لفتح مركز الإشعارات، والسحب لأسفل من أعلى يمين الشاشة لفتح مركز التحكم",
       ":التحسين عدم استجابه بعض تطبيقات الجهات الخارجية بسبب مشكلات التوافق وأخطاء تخصيص ذاكرة الوصول العشوائي",
       ":الإصلاح توقف الجهاز عن الاستجابة عندما طلب WeChat الأذونات",
-      "تم تحديث تصحيح أمان الأندرويد إلى مارس 2021 لزيادة أمان النظام.",
-      ":الجديد خيار للحد من فتح مركز التحكم على شاشة القفل",
-      ":الجديد يمكنك السحب لأسفل من أعلى يسارالشاشة لفتح مركز الإشعارات، والسحب لأسفل من أعلى يمين الشاشة لفتح مركز التحكم",
-      ":الجديد خيار للحد من فتح مركز التحكم على شاشة القفل"
+      "تم تحديث تصحيح أمان الأندرويد إلى مارس 2021 لزيادة أمان النظام."
     ],
     "مركز التحكم": [
       ":الجديد يمكنك السحب لأسفل من أعلى يسارالشاشة لفتح مركز الإشعارات، والسحب لأسفل من أعلى يمين الشاشة لفتح مركز التحكم",
-      "تم تحديث تصحيح أمان الأندرويد إلى أبريل 2021 لزيادة أمان النظام."
+      "جديد: دعم منع سحب لوحة الإشعارات على شاشة القفل"
     ],
     "شريط الحالة ومركز الإشعارات": [
       ":الجديد خيار للتبديل بين الأجهزة المتصلة في إشعارات تشغيل الوسائط"
@@ -361,14 +313,11 @@
       "नया सूचना शेड को खोलने के लिए ऊपरी बाएं कोने से और कंट्रोल सेंटर को खोलने के लिए ऊपरी दाएं कोने से नीचे की ओर स्वाइप करें",
       "ऑप्टिमाइज़ेशन कुछ तृतीय पक्ष ऐप्स ने संगतता समस्याओं और रैम आवंटन त्रुटियों के कारण प्रतिक्रिया नहीं दे रहीं थी",
       "ठीक करें WeChat द्वारा अनुमति मांगे जाने पर डिवाइस प्रतिक्रिया नहीं दे रहा था",
-      "Android सुरक्षा पैच को मार्च 2021 से अपडेट किया गया. सिस्टम की सुरक्षा बढ़ा दी गई है.",
-      "नया एक विकल्प जो आपको लॉक स्क्रीन पर रहते हुए कंट्रोल सेंटर खोलने की अनुमति देता है",
-      "नया सूचना शेड को खोलने के लिए ऊपरी बाएं कोने से और कंट्रोल सेंटर को खोलने के लिए ऊपरी दाएं कोने से नीचे की ओर स्वाइप करें",
-      "नया एक विकल्प जो आपको लॉक स्क्रीन पर रहते हुए कंट्रोल सेंटर खोलने की अनुमति देता है"
+      "Android सुरक्षा पैच को मार्च 2021 से अपडेट किया गया. सिस्टम की सुरक्षा बढ़ा दी गई है."
     ],
     "कंट्रोल सेंटर": [
       "नया सूचना शेड को खोलने के लिए ऊपरी बाएं कोने से और कंट्रोल सेंटर को खोलने के लिए ऊपरी दाएं कोने से नीचे की ओर स्वाइप करें",
-      "Android सुरक्षा पैच को अप्रैल 2021 से अपडेट किया गया. सिस्टम की सुरक्षा बढ़ा दी गई है."
+      "नया: लॉक स्क्रीन पर नोटिफ़िकेशन शेड को नीचे खींचकर खोलने से रोकें"
     ],
     "स्टेटस बार, नोटिफिकेशन शेड": [
       "नया मीडिया प्लेबैक से जुड़े सूचना में कनेक्ट किए गए डिवाइसों के बीच स्विच करने का विकल्प"

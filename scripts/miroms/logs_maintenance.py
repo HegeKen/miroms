@@ -630,6 +630,12 @@ class LogMaintenance:
 		result: Dict[str, List[Dict[str, Any]]] = {
 			'dangling': [], 'extendable': [], 'invalid': []}
 		for (table, owner_id), refs in owners.items():
+			# 本 ROM / 开发版自己声明过的语言并集；补位不得越过它
+			# （行池里的行可能被别的 ROM 补齐了全部译文，越界补位会把别人的语言写进掩码）
+			owner_mask = 0
+			for item in refs:
+				if isinstance(item, list) and len(item) > 2 and isinstance(item[2], int):
+					owner_mask |= int(item[2])
 			for position, item in enumerate(refs):
 				if not (isinstance(item, list) and len(item) >= 2):
 					continue
@@ -652,6 +658,8 @@ class LogMaintenance:
 				for entry_id in entries:
 					common &= set(rows[entry_id]['texts'])
 				common_mask = LogStore.mask_of(common)
+				if owner_mask:
+					common_mask &= owner_mask
 				if common_mask & ~effective:
 					result['extendable'].append({
 						'table': table, 'id': owner_id, 'position': position,
@@ -758,6 +766,11 @@ class LogMaintenance:
 		added_bits = 0
 		samples: List[Dict[str, Any]] = []
 		for (table, owner_id), original in owners.items():
+			# 本 ROM / 开发版自己声明过的语言并集；补位不得越过它，避免把别的 ROM 的译文带进掩码
+			owner_mask = 0
+			for item in original:
+				if isinstance(item, list) and len(item) > 2 and isinstance(item[2], int):
+					owner_mask |= int(item[2])
 			# 只在真的要改时才复制，避免改到调用方传进来的 owners（dry-run 必须无副作用）
 			refs = None
 			for position, item in enumerate(original):
@@ -779,11 +792,13 @@ class LogMaintenance:
 					common &= set(rows[entry_id]['texts'])
 				common_mask = LogStore.mask_of(common)
 				missing = common_mask & ~mask
+				if owner_mask:
+					missing &= owner_mask
 				if not missing:
 					continue
 				if refs is None:
 					refs = copy.deepcopy(original)
-				new_mask = mask | common_mask
+				new_mask = mask | missing
 				refs[position][2] = new_mask
 				added_items += 1
 				added_bits += len(LogStore.columns_of(missing))

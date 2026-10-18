@@ -2,8 +2,6 @@
   "logs_zh": {
     "系统": [
       "优化 锁屏误触问题，避免手机在口袋中发生屏幕误操作",
-      "优化 更新谷歌安全补丁（2019#6），提升系统安全性",
-      "优化 锁屏误触问题，避免手机在口袋中发生屏幕误操作",
       "优化 更新谷歌安全补丁（2019#6），提升系统安全性"
     ],
     "联系人": [
@@ -14,21 +12,15 @@
       "新增 系统主题下，锁屏时钟支持三种自定义样式，可在锁屏高级设置中修改",
       "新增 人脸解锁成功并停留在锁屏上时，可通过指纹进入桌面的功能",
       "修复 锁屏上来电时偶现屏幕无法亮起的问题",
-      "新增 萤幕熄灭时显示支援不显示指纹图标，但指纹可用",
-      "新增 系统主题下，锁屏时钟支持三种自定义样式，可在锁屏高级设置中修改",
-      "新增 人脸解锁成功并停留在锁屏上时，可通过指纹进入桌面的功能",
-      "修复 锁屏上来电时偶现屏幕无法亮起的问题"
+      "新增 萤幕熄灭时显示支援不显示指纹图标，但指纹可用"
     ]
   },
   "logs_en": {
     "System": [
       "Optimization: Lock screen pocket mode",
-      "Optimization: Updated Android Security Patch to June 2019. Increased system security.",
-      "Optimization: Lock screen pocket mode",
       "Optimization: Updated Android Security Patch to June 2019. Increased system security."
     ],
     "Contacts": [
-      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
       "Fix: Contacts couldn't be deleted from SIM cards in some cases"
     ],
     "Lockscreen, status bar, Notification shade": [
@@ -40,404 +32,292 @@
   "logs_zh_tw": {
     "系統": [
       "優化 鎖屏誤觸問題，避免手機在口袋中發生螢幕誤操作",
-      "優化 更新Android安全性修補程式等級(2019#6)，提升系統安全性",
-      "優化 鎖屏誤觸問題，避免手機在口袋中發生螢幕誤操作",
       "優化 更新Android安全性修補程式等級(2019#6)，提升系統安全性"
     ],
     "聯絡人": [
-      "修復 SIM聯絡人無法刪除的問題",
       "修復 SIM聯絡人無法刪除的問題"
     ],
     "解鎖畫面、狀態欄、通知欄": [
       "新增 系統主題下，鎖屏時鐘支援三種自訂型式，可在鎖屏進階設定中修改",
       "新增 人臉解鎖成功並停留在鎖屏上時，可通過指紋進入桌面的功能",
       "修復 螢幕鎖定上來電時偶現螢幕無法亮起的問題",
-      "新增 螢幕熄滅時顯示支援不顯示指紋圖標，但指紋可用",
-      "新增 系統主題下，鎖屏時鐘支援三種自訂型式，可在鎖屏進階設定中修改",
-      "新增 人臉解鎖成功並停留在鎖屏上時，可通過指紋進入桌面的功能",
-      "修復 螢幕鎖定上來電時偶現螢幕無法亮起的問題"
+      "新增 螢幕熄滅時顯示支援不顯示指紋圖標，但指紋可用"
     ]
   },
   "logs_ja": {
     "システム": [
-      "Optimization: Lock screen pocket mode",
-      "最適化: Android セキュリティパッチを 2019 年 6 月版に更新しました。システムの安全性が向上しました。",
-      "Optimization: Lock screen pocket mode",
+      "最適化: ロック画面の誤タッチ問題を改善し、ポケット内での画面の誤操作を防止",
       "最適化: Android セキュリティパッチを 2019 年 6 月版に更新しました。システムの安全性が向上しました。"
     ],
     "連絡先": [
-      "修正: SIMカードの連絡先を削除できない場合がある問題",
       "修正: SIMカードの連絡先を削除できない場合がある問題"
     ],
     "ロック画面、ステータスバー、通知シェード": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "新規: システムテーマで、ロック画面の時計が3種類のカスタムスタイルに対応し、ロック画面の詳細設定で変更できます。",
       "新機能: 顔認証でロック解除後、ロック画面に留まっている場合に指紋でホーム画面へ進める機能",
-      "Fix: Screen didn't always light up for notifications",
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally.",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
-      "新機能: 顔認証でロック解除後、ロック画面に留まっている場合に指紋でホーム画面へ進める機能",
-      "Fix: Screen didn't always light up for notifications"
+      "ロック画面での着信時に画面が点灯しないことがある問題を修正",
+      "追加: 画面消灯時に指紋アイコンを非表示にできるよう対応。指紋は引き続き利用可能です"
     ]
   },
   "logs_ko": {
     "시스템": [
-      "Optimization: Lock screen pocket mode",
-      "최적화: Android 보안 패치를 2019년 6월로 업데이트했습니다. 시스템 보안이 향상되었습니다.",
-      "Optimization: Lock screen pocket mode",
+      "최적화: 잠금 화면 오터치 문제를 개선하여 주머니 속에서 화면 오작동 방지",
       "최적화: Android 보안 패치를 2019년 6월로 업데이트했습니다. 시스템 보안이 향상되었습니다."
     ],
     "연락처": [
-      "수정: 일부 상황에서 SIM 카드의 연락처를 삭제할 수 없는 문제",
       "수정: 일부 상황에서 SIM 카드의 연락처를 삭제할 수 없는 문제"
     ],
     "잠금화면, 상태 바, 알림 바": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "새로운 기능: 시스템 테마에서 잠금 화면 시계가 3가지 사용자 지정 스타일을 지원하며, 잠금 화면 고급 설정에서 변경할 수 있습니다.",
       "새 기능: 얼굴 인식으로 잠금 해제 후 잠금 화면에 머무를 때 지문으로 홈 화면에 진입하는 기능",
-      "Fix: Screen didn't always light up for notifications",
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally.",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
-      "새 기능: 얼굴 인식으로 잠금 해제 후 잠금 화면에 머무를 때 지문으로 홈 화면에 진입하는 기능",
-      "Fix: Screen didn't always light up for notifications"
+      "잠금 화면에서 전화 수신 시 화면이 켜지지 않는 문제를 수정했습니다",
+      "추가: 화면이 꺼져 있을 때 지문 아이콘을 표시하지 않도록 지원하며, 지문은 계속 사용할 수 있습니다"
     ]
   },
   "logs_ru": {
     "Система": [
       "Оптимизация: Режим \"В кармане\"",
-      "Оптимизация: Обновление системы безопасности Android (июнь 2019 года). Улучшена безопасность системы.",
-      "Оптимизация: Режим \"В кармане\"",
       "Оптимизация: Обновление системы безопасности Android (июнь 2019 года). Улучшена безопасность системы."
     ],
     "Контакты": [
-      "Исправлено: В некоторых случаях контакты не могли быть удалены с SIM-карты",
       "Исправлено: В некоторых случаях контакты не могли быть удалены с SIM-карты"
     ],
     "Экран блокировки, строка состояния, шторка уведомлений": [
       "Новое: Добавлены настраиваемые часы для экрана блокировки (Настройки > Блокировка и защита > Расширенные настройки). Новые часы для экрана блокировки несовместимы со сторонними темами",
       "Новое: Используйте отпечаток пальца, чтобы перейти на рабочий стол после того, как вы разблокировали устройство при помощи данных лица и остались на экране блокировки",
       "Исправлено: Экран не всегда включался при получении новых уведомлений",
-      "Новое: Вы можете отключить отображение значка отпечатка пальца на заблокированном экране. Вы по-прежнему сможете воспользоваться разблокировкой при помощи отпечатка пальца",
-      "Новое: Добавлены настраиваемые часы для экрана блокировки (Настройки > Блокировка и защита > Расширенные настройки). Новые часы для экрана блокировки несовместимы со сторонними темами",
-      "Новое: Используйте отпечаток пальца, чтобы перейти на рабочий стол после того, как вы разблокировали устройство при помощи данных лица и остались на экране блокировки",
-      "Исправлено: Экран не всегда включался при получении новых уведомлений"
+      "Новое: Вы можете отключить отображение значка отпечатка пальца на заблокированном экране. Вы по-прежнему сможете воспользоваться разблокировкой при помощи отпечатка пальца"
     ]
   },
   "logs_uk": {
     "Система": [
-      "Optimization: Lock screen pocket mode",
-      "Optimization: Updated Android Security Patch to June 2019. Increased system security.",
-      "Optimization: Lock screen pocket mode",
-      "Optimization: Updated Android Security Patch to June 2019. Increased system security."
+      "Оптимізація: проблеми випадкових торкань екрана блокування, щоб уникнути помилкових дій на екрані, коли телефон у кишені",
+      "Оптимізація: Оновлено патч безпеки Google (2019#6), підвищено безпеку системи."
     ],
     "Контакти": [
-      "Виправлено: У деяких випадках контакти не вдавалося видалити з SIM-картки",
       "Виправлено: У деяких випадках контакти не вдавалося видалити з SIM-картки"
     ],
     "Екран блокування, рядок стану, панель сповіщень": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Нове: У системній темі годинник екрана блокування підтримує три користувацькі стилі, які можна змінити в розширених налаштуваннях екрана блокування.",
       "Нове: Перехід на головний екран відбитком пальця, якщо пристрій розблоковано обличчям і залишено на екрані блокування",
-      "Fix: Screen didn't always light up for notifications",
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally.",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
-      "Нове: Перехід на головний екран відбитком пальця, якщо пристрій розблоковано обличчям і залишено на екрані блокування",
-      "Fix: Screen didn't always light up for notifications"
+      "Виправлено: екран іноді не вмикався під час вхідного виклику на екрані блокування",
+      "Додано: підтримка приховування значка відбитка пальця при вимкненому екрані, але відбиток пальця залишається доступним"
     ]
   },
   "logs_pl": {
     "System": [
-      "Optimization: Lock screen pocket mode",
-      "Optimization: Updated Android Security Patch to June 2019. Increased system security.",
-      "Optimization: Lock screen pocket mode",
-      "Optimization: Updated Android Security Patch to June 2019. Increased system security."
+      "Optymalizacja: problem przypadkowych dotknięć ekranu blokady, aby uniknąć błędnych operacji na ekranie w kieszeni",
+      "Optymalizacja: Zaktualizowano poprawkę zabezpieczeń Google (2019#6), zwiększono bezpieczeństwo systemu."
     ],
     "Kontakty": [
-      "Poprawiono: W niektórych przypadkach nie można było usunąć kontaktów z karty SIM",
       "Poprawiono: W niektórych przypadkach nie można było usunąć kontaktów z karty SIM"
     ],
     "Ekran blokady, pasek powiadomień,panel powiadomień": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Nowość: W motywie systemowym zegar ekranu blokady obsługuje trzy niestandardowe style, które można zmienić w ustawieniach zaawansowanych ekranu blokady.",
       "Nowość: Możliwość przejścia do ekranu głównego odciskiem palca po odblokowaniu twarzą i pozostaniu na ekranie blokady",
-      "Fix: Screen didn't always light up for notifications",
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally.",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
-      "Nowość: Możliwość przejścia do ekranu głównego odciskiem palca po odblokowaniu twarzą i pozostaniu na ekranie blokady",
-      "Fix: Screen didn't always light up for notifications"
+      "Naprawiono: ekran czasami nie włączał się przy połączeniu przychodzącym na ekranie blokady",
+      "Dodano: możliwość niewyświetlania ikony odcisku palca przy wygaszonym ekranie, ale odcisk palca pozostaje dostępny"
     ]
   },
   "logs_de": {
     "System": [
-      "Optimization: Lock screen pocket mode",
-      "Optimierung: Android-Sicherheitspatch auf Juni 2019 aktualisiert. Systemsicherheit verbessert.",
-      "Optimization: Lock screen pocket mode",
+      "Optimierung: Problem mit versehentlicher Berührung des Sperrbildschirms behoben, um Fehlbedienungen des Bildschirms in der Tasche zu vermeiden",
       "Optimierung: Android-Sicherheitspatch auf Juni 2019 aktualisiert. Systemsicherheit verbessert."
     ],
     "Kontakte": [
-      "Behoben: Kontakte konnten in manchen Fällen nicht von SIM-Karten gelöscht werden",
       "Behoben: Kontakte konnten in manchen Fällen nicht von SIM-Karten gelöscht werden"
     ],
     "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
       "Neu: Anpassbare Uhr auf dem Sperrbildschirm (Einstellungen > Sperrbildschirm & Passwort > Erweiterte Einstellungen)",
       "Neu: Nach erfolgreicher Gesichtserkennung auf dem Sperrbildschirm per Fingerabdruck zum Startbildschirm wechseln",
-      "Fix: Screen didn't always light up for notifications",
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally.",
-      "Neu: Anpassbare Uhr auf dem Sperrbildschirm (Einstellungen > Sperrbildschirm & Passwort > Erweiterte Einstellungen)",
-      "Neu: Nach erfolgreicher Gesichtserkennung auf dem Sperrbildschirm per Fingerabdruck zum Startbildschirm wechseln",
-      "Fix: Screen didn't always light up for notifications"
+      "Behoben: Bildschirm leuchtete bei Benachrichtigungen nicht immer auf",
+      "Neu: Bei ausgeschaltetem Bildschirm kann das Fingerabdruck-Symbol ausgeblendet werden, der Fingerabdruck bleibt nutzbar"
     ]
   },
   "logs_fr": {
     "Système": [
       "Optimisation Verrouiller le mode poche",
-      "Optimisation Mise à jour du correctif de sécurité Android jusqu'en juin 2019. Sécurité accrue du système.",
-      "Optimisation Verrouiller le mode poche",
       "Optimisation Mise à jour du correctif de sécurité Android jusqu'en juin 2019. Sécurité accrue du système."
     ],
     "Contacts": [
-      "Réparé Les contacts ne pouvaient pas être supprimés des cartes SIM dans certains cas",
       "Réparé Les contacts ne pouvaient pas être supprimés des cartes SIM dans certains cas"
     ],
     "Écran de verrouillage, Barre d'état, Panneau de notification": [
       "Nouveau Présentation de l’horloge de l’écran de verrouillage personnalisable (Paramètres> Écran de verrouillage et mot de passe> Paramètres avancés). La nouvelle horloge de l'écran de verrouillage ne fonctionne pas avec les thèmes tiers.",
       "Nouveau Utilisez votre empreinte digitale pour ouvrir l'écran d'accueil une fois que vous avez déverrouillé l'appareil à l'aide des données du visage et que vous êtes resté sur l'écran de verrouillage",
-      "Réparé L'écran ne s'allume pas toujours pour les notifications",
-      "Nouveau Vous pouvez choisir de ne pas afficher l'icône d'empreinte digitale sur l'écran éteint. Le déverrouillage par empreinte digitale fonctionnera toujours normalement.",
-      "Nouveau Présentation de l’horloge de l’écran de verrouillage personnalisable (Paramètres> Écran de verrouillage et mot de passe> Paramètres avancés). La nouvelle horloge de l'écran de verrouillage ne fonctionne pas avec les thèmes tiers.",
-      "Nouveau Utilisez votre empreinte digitale pour ouvrir l'écran d'accueil une fois que vous avez déverrouillé l'appareil à l'aide des données du visage et que vous êtes resté sur l'écran de verrouillage",
-      "Réparé L'écran ne s'allume pas toujours pour les notifications"
+      "Corrigé : L'écran ne s'allumait pas toujours pour les notifications",
+      "Nouveau Vous pouvez choisir de ne pas afficher l'icône d'empreinte digitale sur l'écran éteint. Le déverrouillage par empreinte digitale fonctionnera toujours normalement."
     ]
   },
   "logs_it": {
     "Sistema": [
       "Ottimizzazione: Modalità Tasca schermata di blocco",
-      "Ottimizzazione: Aggiornamento della patch di sicurezza Android a giugno 2019. Maggiore sicurezza del sistema.",
-      "Ottimizzazione: Modalità Tasca schermata di blocco",
       "Ottimizzazione: Aggiornamento della patch di sicurezza Android a giugno 2019. Maggiore sicurezza del sistema."
     ],
     "Contatti": [
-      "Risolto: In alcuni casi, i contatti non potevano essere eliminati dalle schede SIM",
       "Risolto: In alcuni casi, i contatti non potevano essere eliminati dalle schede SIM"
     ],
     "Schermata di blocco, barra di stato, area delle notifiche": [
       "Nuovo: Introdotto l'orologio personalizzabile per la schermata di blocco (Impostazioni > Schermata di blocco e password > Impostazioni avanzate). Il nuovo orologio della schermata di blocco non funziona con temi di terze parti.",
       "Nuovo: Accedi alla schermata Home usando l'impronta digitale dopo aver sbloccato il dispositivo con i dati del volto restando sulla schermata di blocco.",
       "Risolto: Lo schermo non sempre si accendeva per mostrare le notifiche",
-      "Nuovo: Puoi scegliere di non mostrare l'icona dell'impronta digitale a schermo spento. Lo sblocco con l'impronta digitale continuerà a funzionare normalmente.",
-      "Nuovo: Introdotto l'orologio personalizzabile per la schermata di blocco (Impostazioni > Schermata di blocco e password > Impostazioni avanzate). Il nuovo orologio della schermata di blocco non funziona con temi di terze parti.",
-      "Nuovo: Accedi alla schermata Home usando l'impronta digitale dopo aver sbloccato il dispositivo con i dati del volto restando sulla schermata di blocco.",
-      "Risolto: Lo schermo non sempre si accendeva per mostrare le notifiche"
+      "Nuovo: Puoi scegliere di non mostrare l'icona dell'impronta digitale a schermo spento. Lo sblocco con l'impronta digitale continuerà a funzionare normalmente."
     ]
   },
   "logs_es": {
     "Sistema": [
       "Optimización: Pantalla de bloqueo en Modo bolsillo",
-      "Optimización: Parche de seguridad de Android actualizado a junio de 2019. Seguridad del sistema incrementada.",
-      "Optimización: Pantalla de bloqueo en Modo bolsillo",
       "Optimización: Parche de seguridad de Android actualizado a junio de 2019. Seguridad del sistema incrementada."
     ],
     "Contactos": [
-      "Reparado: Los contactos no podían ser eliminados de las tarjetas SIM en algunos casos",
       "Reparado: Los contactos no podían ser eliminados de las tarjetas SIM en algunos casos"
     ],
     "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
       "Nuevo: Introducción de un reloj personalizable en la Pantalla de bloqueo (Ajustes > Pantalla de bloqueo y contraseña > Ajustes avanzados). El nuevo reloj de la Pantalla de bloqueo no funciona con temas de terceros.",
       "Nuevo: Usa tu huella dactilar para abrir la Pantalla de inicio después de haber desbloqueado el dispositivo usando tus datos faciales y haber permanecido en la Pantalla de bloqueo",
       "Reparado: La pantalla no siempre se encendía con las notificaciones",
-      "Nuevo: Puedes elegir no mostrar el icono de huella dactilar con la pantalla apagada. El desbloqueo funcionará con normalidad.",
-      "Nuevo: Introducción de un reloj personalizable en la Pantalla de bloqueo (Ajustes > Pantalla de bloqueo y contraseña > Ajustes avanzados). El nuevo reloj de la Pantalla de bloqueo no funciona con temas de terceros.",
-      "Nuevo: Usa tu huella dactilar para abrir la Pantalla de inicio después de haber desbloqueado el dispositivo usando tus datos faciales y haber permanecido en la Pantalla de bloqueo",
-      "Reparado: La pantalla no siempre se encendía con las notificaciones"
+      "Nuevo: Puedes elegir no mostrar el icono de huella dactilar con la pantalla apagada. El desbloqueo funcionará con normalidad."
     ]
   },
   "logs_pt": {
     "Sistema": [
       "Otimização Modo de bolso para a Tela de bloqueio",
-      "Otimização Atualização do Patch de Segurança do Android para Junho de 2019. Segurança do sistema aprimorada.",
-      "Otimização Modo de bolso para a Tela de bloqueio",
       "Otimização Atualização do Patch de Segurança do Android para Junho de 2019. Segurança do sistema aprimorada."
     ],
     "Contatos": [
-      "Correção Contatos não podiam ser excluídos de cartões SIM em alguns casos",
       "Correção Contatos não podiam ser excluídos de cartões SIM em alguns casos"
     ],
     "Tela de bloqueio, Barra de status e Área de notificações": [
       "Novo Introduzindo o Relógio personalizável na Tela de bloqueio (Configurar > Bloqueio de tela e senhas > Configurações avançadas). O novo relógio da Tela de bloqueio não funciona com temas de terceiros.",
       "Novo Use sua impressão digital para abrir a Tela inicial quando você desbloquear o dispositivo usando o desbloqueio facial e ficar na Tela de bloqueio",
-      "Correção Em alguns casos, a tela não acendia para notificações recebidas",
-      "Novo Você pode optar por não exibir o ícone de impressão digital com a tela desligada. O desbloqueio por impressão digital ainda funcionará normalmente.",
-      "Novo Introduzindo o Relógio personalizável na Tela de bloqueio (Configurar > Bloqueio de tela e senhas > Configurações avançadas). O novo relógio da Tela de bloqueio não funciona com temas de terceiros.",
-      "Novo Use sua impressão digital para abrir a Tela inicial quando você desbloquear o dispositivo usando o desbloqueio facial e ficar na Tela de bloqueio",
-      "Correção Em alguns casos, a tela não acendia para notificações recebidas"
+      "Correção: a tela às vezes não acendia ao receber chamadas na tela de bloqueio",
+      "Novo Você pode optar por não exibir o ícone de impressão digital com a tela desligada. O desbloqueio por impressão digital ainda funcionará normalmente."
     ]
   },
   "logs_tr": {
     "Sistem": [
       "Optimizasyon: Kilit ekranı cep modu",
-      "Optimizasyon: Android Güvenlik Yaması Haziran 2019 sürümüne güncellendi. Sistem güvenliği artırıldı.",
-      "Optimizasyon: Kilit ekranı cep modu",
       "Optimizasyon: Android Güvenlik Yaması Haziran 2019 sürümüne güncellendi. Sistem güvenliği artırıldı."
     ],
     "Kişiler": [
-      "Onarım: Kişilerin bazı durumlarda silinememesi sorunu giderildi",
       "Onarım: Kişilerin bazı durumlarda silinememesi sorunu giderildi"
     ],
     "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
       "Yeni: Özelleştirilebilir Kilit ekranı saati (Ayarlar > Kilit ekranı & şifre > Gelişmiş ayarlar). Yeni kilit ekranı saati üçüncü parti temaları ile çalışmaz.",
       "Yeni: Cihazın kilidini yüz verilerini kullanarak açtıktan ve Kilit ekranında kaldıktan sonra Ana ekranı açmak için parmak izinizi kullanın",
       "Onarım: Bazen bildirimler için ekran açılmadı",
-      "Yeni: Parmak izi simgesini kapanma ekranında göstermemeyi seçebilirsiniz. Parmak izi ile kilit açma işlevi normal bir şekilde çalışmaya devam edecektir.",
-      "Yeni: Özelleştirilebilir Kilit ekranı saati (Ayarlar > Kilit ekranı & şifre > Gelişmiş ayarlar). Yeni kilit ekranı saati üçüncü parti temaları ile çalışmaz.",
-      "Yeni: Cihazın kilidini yüz verilerini kullanarak açtıktan ve Kilit ekranında kaldıktan sonra Ana ekranı açmak için parmak izinizi kullanın",
-      "Onarım: Bazen bildirimler için ekran açılmadı"
+      "Yeni: Parmak izi simgesini kapanma ekranında göstermemeyi seçebilirsiniz. Parmak izi ile kilit açma işlevi normal bir şekilde çalışmaya devam edecektir."
     ]
   },
   "logs_id": {
     "Sistem": [
       "Pengoptimalan Mode saku Layar kunci",
-      "Pengoptimalan Patch Keamanan Android diperbarui hingga Juni 2019. Keamanan sistem ditingkatkan.",
-      "Pengoptimalan Mode saku Layar kunci",
       "Pengoptimalan Patch Keamanan Android diperbarui hingga Juni 2019. Keamanan sistem ditingkatkan."
     ],
     "Kontak": [
-      "Perbaikan Kontak tidak dapat dihapus dari kartu SIM di beberapa kasus",
       "Perbaikan Kontak tidak dapat dihapus dari kartu SIM di beberapa kasus"
     ],
     "Layar kunci, bar status, layar notifikasi": [
       "Baru Memperkenalkan jam Layar kunci yang dapat dikustomisasi (Setelan > Kunci layar & sandi> Setelan lanjutan). Jam Layar kunci baru tidak berfungsi dalam tema pihak ketiga.",
       "Baru Menggunakan sidik jari untuk membuka Layar utama saat Anda membuka kunci perangkat dengan data wajah dan tetap berada di Layar kunci",
-      "Perbaikan Layar tidak selalu menyala saat ada notifikasi",
-      "Baru Anda dapat memilih untuk tidak menampilkan ikon sidik jari saat layar dimatikan. Buka kunci dengan sidik jari tetap dapat bekerja dengan normal.",
-      "Baru Memperkenalkan jam Layar kunci yang dapat dikustomisasi (Setelan > Kunci layar & sandi> Setelan lanjutan). Jam Layar kunci baru tidak berfungsi dalam tema pihak ketiga.",
-      "Baru Menggunakan sidik jari untuk membuka Layar utama saat Anda membuka kunci perangkat dengan data wajah dan tetap berada di Layar kunci",
-      "Perbaikan Layar tidak selalu menyala saat ada notifikasi"
+      "Perbaikan: Layar terkadang tidak menyala saat ada panggilan masuk di layar kunci",
+      "Baru Anda dapat memilih untuk tidak menampilkan ikon sidik jari saat layar dimatikan. Buka kunci dengan sidik jari tetap dapat bekerja dengan normal."
     ]
   },
   "logs_vi": {
     "Hệ thống": [
-      "Optimization: Lock screen pocket mode",
-      "Optimization: Updated Android Security Patch to June 2019. Increased system security.",
-      "Optimization: Lock screen pocket mode",
-      "Optimization: Updated Android Security Patch to June 2019. Increased system security."
+      "Tối ưu: khắc phục lỗi chạm nhầm màn hình khóa, tránh thao tác nhầm trên màn hình khi điện thoại trong túi",
+      "Tối ưu hóa: Đã cập nhật bản vá bảo mật Google (2019#6), tăng cường bảo mật hệ thống."
     ],
     "Danh bạ": [
-      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
-      "Fix: Contacts couldn't be deleted from SIM cards in some cases"
+      "Sửa lỗi không thể xóa danh bạ trên SIM",
+      "Khắc phục lỗi không thể xóa danh bạ trên SIM"
     ],
     "Màn hình khóa, thanh trạng thái, thanh thông báo": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Mới: Trong chủ đề hệ thống, đồng hồ màn hình khóa hỗ trợ ba kiểu tùy chỉnh, có thể sửa trong cài đặt nâng cao của màn hình khóa.",
       "Mới: Dùng vân tay để vào Màn hình chính khi đã mở khóa bằng khuôn mặt và vẫn ở màn hình khóa",
-      "Fix: Screen didn't always light up for notifications",
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally.",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
-      "Mới: Dùng vân tay để vào Màn hình chính khi đã mở khóa bằng khuôn mặt và vẫn ở màn hình khóa",
-      "Fix: Screen didn't always light up for notifications"
+      "Sửa lỗi: Màn hình đôi khi không sáng khi có cuộc gọi đến trên màn hình khóa",
+      "Mới: Hỗ trợ ẩn biểu tượng vân tay khi màn hình tắt nhưng vẫn có thể dùng vân tay"
     ]
   },
   "logs_th": {
     "ระบบ": [
-      "Optimization: Lock screen pocket mode",
-      "Optimization: Updated Android Security Patch to June 2019. Increased system security.",
-      "Optimization: Lock screen pocket mode",
-      "Optimization: Updated Android Security Patch to June 2019. Increased system security."
+      "ปรับปรุง: แก้ปัญหาการสัมผัสหน้าจอล็อกโดยไม่ตั้งใจ เพื่อหลีกเลี่ยงการทำงานผิดพลาดของหน้าจอขณะโทรศัพท์อยู่ในกระเป๋า",
+      "การปรับให้เหมาะสม: อัปเดตแพตช์ความปลอดภัยของ Google (2019#6) เพิ่มความปลอดภัยของระบบ"
     ],
     "รายชื่อ": [
-      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
-      "Fix: Contacts couldn't be deleted from SIM cards in some cases"
+      "แก้ไขปัญหาที่ไม่สามารถลบรายชื่อติดต่อใน SIM ได้",
+      "แก้ไขปัญหาที่ไม่สามารถลบรายชื่อผู้ติดต่อใน SIM ได้"
     ],
     "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "ใหม่: ภายใต้ธีมระบบ นาฬิกาหน้าจอล็อกรองรับรูปแบบกำหนดเองสามแบบ สามารถแก้ไขได้ในการตั้งค่าขั้นสูงของหน้าจอล็อก",
       "ใหม่: สามารถใช้ลายนิ้วมือเข้าสู่หน้าจอหลักได้เมื่อปลดล็อกด้วยใบหน้าและยังคงอยู่ที่หน้าจอล็อก",
-      "Fix: Screen didn't always light up for notifications",
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally.",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
-      "ใหม่: สามารถใช้ลายนิ้วมือเข้าสู่หน้าจอหลักได้เมื่อปลดล็อกด้วยใบหน้าและยังคงอยู่ที่หน้าจอล็อก",
-      "Fix: Screen didn't always light up for notifications"
+      "แก้ไขปัญหาหน้าจอบางครั้งไม่ติดเมื่อมีสายเข้าในหน้าจอล็อก",
+      "เพิ่ม: รองรับการไม่แสดงไอคอนลายนิ้วมือเมื่อหน้าจอดับ แต่ยังใช้งานลายนิ้วมือได้"
     ]
   },
   "logs_ar": {
     "النظام": [
-      "Optimization: Lock screen pocket mode",
-      "Optimization: Updated Android Security Patch to June 2019. Increased system security.",
-      "Optimization: Lock screen pocket mode",
-      "Optimization: Updated Android Security Patch to June 2019. Increased system security."
+      "تحسين: مشكلة اللمس العرضي على شاشة القفل لتجنب تفاعل الشاشة غير المقصود أثناء وجود الهاتف في الجيب",
+      "تحسين: تحديث تصحيح أمان Google (2019#6) لتحسين أمان النظام."
     ],
     "جهات الاتصال": [
-      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
-      "Fix: Contacts couldn't be deleted from SIM cards in some cases"
+      "إصلاح مشكلة عدم إمكانية حذف جهات اتصال SIM",
+      "إصلاح مشكلة تعذّر حذف جهات اتصال SIM"
     ],
     "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "جديد: ضمن السمة النظامية، تدعم ساعة شاشة القفل ثلاثة أنماط مخصصة، ويمكن تعديلها في الإعدادات المتقدمة لشاشة القفل.",
       "جديد: استخدام بصمة الإصبع للانتقال إلى الشاشة الرئيسية عند نجاح فتح القفل بالوجه والبقاء على شاشة القفل",
-      "Fix: Screen didn't always light up for notifications",
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally.",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
-      "جديد: استخدام بصمة الإصبع للانتقال إلى الشاشة الرئيسية عند نجاح فتح القفل بالوجه والبقاء على شاشة القفل",
-      "Fix: Screen didn't always light up for notifications"
+      "إصلاح: تعذّر إضاءة الشاشة أحيانًا عند ورود مكالمة على شاشة القفل",
+      "إضافة: دعم عدم عرض أيقونة بصمة الإصبع عند إطفاء الشاشة، مع بقاء بصمة الإصبع قابلة للاستخدام"
     ]
   },
   "logs_in": {
     "सिस्टम": [
-      "Optimization: Lock screen pocket mode",
-      "Optimization: Updated Android Security Patch to June 2019. Increased system security.",
-      "Optimization: Lock screen pocket mode",
-      "Optimization: Updated Android Security Patch to June 2019. Increased system security."
+      "अनुकूलन: लॉक स्क्रीन पर गलत टच की समस्या, जेब में फ़ोन रहने पर स्क्रीन के गलत संचालन से बचाव",
+      "अनुकूलन: Google सुरक्षा पैच (2019#6) अपडेट किया गया, सिस्टम की सुरक्षा बढ़ाई गई।"
     ],
     "संपर्क": [
-      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
-      "Fix: Contacts couldn't be deleted from SIM cards in some cases"
+      "SIM संपर्कों को हटाया न जा सकने की समस्या ठीक करें",
+      "सुधार: SIM से संपर्क हटाने में असमर्थता की समस्या ठीक की गई"
     ],
     "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "नया: सिस्टम थीम के अंतर्गत, लॉक स्क्रीन घड़ी तीन कस्टम शैलियों का समर्थन करती है, जिन्हें लॉक स्क्रीन की उन्नत सेटिंग्स में बदला जा सकता है।",
       "नया: चेहरे से अनलॉक होने और लॉक स्क्रीन पर रहने पर फ़िंगरप्रिंट से होम स्क्रीन पर जाने की सुविधा",
-      "Fix: Screen didn't always light up for notifications",
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally.",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
-      "नया: चेहरे से अनलॉक होने और लॉक स्क्रीन पर रहने पर फ़िंगरप्रिंट से होम स्क्रीन पर जाने की सुविधा",
-      "Fix: Screen didn't always light up for notifications"
+      "लॉक स्क्रीन पर आने वाली कॉल के दौरान स्क्रीन कभी-कभी नहीं जलने की समस्या ठीक की गई",
+      "नया: स्क्रीन बंद होने पर फ़िंगरप्रिंट आइकन न दिखाने का समर्थन, लेकिन फ़िंगरप्रिंट उपलब्ध रहता है"
     ]
   },
   "logs_ug": {
     "سىستېما": [
-      "Optimization: Lock screen pocket mode",
-      "Optimization: Updated Android Security Patch to June 2019. Increased system security."
+      "ئەلالاشتۇرۇش: قۇلۇپ ئېكراننىڭ خاتا تېگىش مەسىلىسىنى ئەلالاشتۇرۇش، تېلېفون خالتىدا ئېكرانغا خاتا مەشغۇلات قىلىشتىن ساقلىنىش",
+      "ياخشىلاش: گوگل بىخەتەرلىك ياماقىنى (2019#6) يېڭىلاش، سىستېما بىخەتەرلىكىنى ئاشۇرۇش."
     ],
-    "Contacts": [
-      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
-      "Fix: Contacts couldn't be deleted from SIM cards in some cases"
+    "ئالاقە": [
+      "SIM ئالاقە ئۇچۇرلىرىنى ئۆچۈرەلمەسلىك مەسىلىسى تۈزىتىلدى.",
+      "SIM ئالاقىداشلىرىنى ئۆچۈرگىلى بولماسلىق مەسىلىسى تۈزىتىلدى"
     ],
     "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
-      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
-      "Fix: Screen didn't always light up for notifications",
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally.",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
-      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
-      "Fix: Screen didn't always light up for notifications"
-    ],
-    "System": [
-      "Optimization: Lock screen pocket mode",
-      "Optimization: Updated Android Security Patch to June 2019. Increased system security."
+      "يېڭىلىق: سىستېما تېمىسى ئاستىدا قۇلۇپ ئېكران سائىتى ئۈچ خىل ئىختىيارىي ئۇسلۇبنى قوللايدۇ، قۇلۇپ ئېكراننىڭ ئالىي تەڭشەكلىرىدە ئۆزگەرتكىلى بولىدۇ.",
+      "يېڭى: يۈزنى تونۇش ئارقىلىق قۇلۇپنى ئېچىپ قۇلۇپ ئېكرانىدا تۇرۇۋاتقاندا، بارماق ئىزى ئارقىلىق باش ئېكرانغا كىرىش ئىقتىدارى قوشۇلدى.",
+      "قۇلۇپ ئېكرانىدا تېلېفون كەلگەندە ئېكراننىڭ ئاندا-ساندا يورۇپ كەتمەسلىك مەسىلىسى ئوڭشالدى.",
+      "قوشۇلدى: ئېكران ئۆچكەندە بارماق ئىزى سىنبەلگىسىنى كۆرسەتمەسلىك قوللىنىدۇ، ئەمما بارماق ئىزى ئىشلىتىلىدۇ"
     ]
   },
   "logs_bo": {
     "མ་ལག": [
       "Optimization: Lock screen pocket mode",
-      "Optimization: Updated Android Security Patch to June 2019. Increased system security."
+      "ལེགས་བཅོས། Google བདེ་འཇགས་ཁ་གསབ་(2019#6) གསར་སྒྱུར་བྱས་ཏེ། རྒྱུད་ཁོངས་ཀྱི་བདེ་འཇགས་ཡར་རྒྱས་བཏང་།"
     ],
     "Contacts": [
-      "Fix: Contacts couldn't be deleted from SIM cards in some cases",
-      "Fix: Contacts couldn't be deleted from SIM cards in some cases"
+      "SIM མིང་ཐོ་བསུབ་མི་ཐུབ་པའི་གནད་དོན་བཅོས་ཟིན།",
+      "SIM འབྲེལ་གཏུགས་བསུབ་མི་ཐུབ་པའི་གནད་དོན་བཅོས་བྱས།"
     ],
     "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
-      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
+      "གསར་སྣོན། རྒྱུད་ཁོངས་ཀྱི་བརྗོད་གཞིའི་འོག་སྒོ་སྒྲིག་ཆུ་ཚོད་ལ་རང་མོས་ཀྱི་བཀོད་ཚུལ་གསུམ་རྒྱབ་སྐྱོར་བྱེད་པ་དང་། སྒོ་སྒྲིག་གི་མཐོ་རིམ་སྒྲིག་གཞིའི་ནང་བསྒྱུར་བཅོས་བྱེད་ཐུབ།",
+      "གསར་སྣོན། གདོང་པའི་གཞི་གྲངས་ཀྱིས་ཆས་གསལ་འབྱེད་བྱས་ཏེ་སྒོ་ལྕགས་འཆར་ངོས་སུ་གནས་པའི་སྐབས། སོར་རྒྱུད་ཀྱིས་གཙོ་ངོས་ཕྱེ་བའི་ནུས་པ།",
       "Fix: Screen didn't always light up for notifications",
-      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally.",
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
-      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
-      "Fix: Screen didn't always light up for notifications"
-    ],
-    "System": [
-      "Optimization: Lock screen pocket mode",
-      "Optimization: Updated Android Security Patch to June 2019. Increased system security."
+      "New: You can choose not to show the fingerprint icon on the turned off screen. Fingerprint unlock will still work normally."
     ]
   }
 }

@@ -1,7 +1,6 @@
 {
   "logs_zh": {
     "电话": [
-      "修复 挂断电话慢问题",
       "修复 挂断电话慢问题"
     ],
     "锁屏、状态栏、通知栏": [
@@ -12,19 +11,13 @@
       "修复 来电悬浮条和通话绿条同时存在情况",
       "修复 个别情况下人脸提示未及时消失的问题",
       "修复 人脸解锁数据录入过快问题",
-      "新增 人脸解锁成功并停留在锁屏上时，可通过指纹进入桌面的功能",
       "新增 人脸解锁成功后停留在萤幕锁定的功能，可在设定页面的'人脸资料管理'中开启",
-      "新增 锁屏页面支持禁止下拉通知栏",
       "优化 人脸解锁成功率",
-      "修复 横屏状态下未及时展示低电量悬浮通知的问题",
-      "修复 来电悬浮条和通话绿条同时存在情况",
       "修复 下拉状态栏开启或关闭同步，同步界面不刷新问题",
       "修复 个别情况下人脸提示未即时消失的问题",
       "修复 人脸解锁资料录制过快的问题"
     ],
     "相机": [
-      "新增 AI相机场景：月亮模式、塔、合影",
-      "修复 录像下退出重新进入必现相机闪退",
       "新增 AI相机场景：月亮模式、塔、合影",
       "修复 录像下退出重新进入必现相机闪退"
     ],
@@ -38,7 +31,6 @@
   },
   "logs_en": {
     "Phone": [
-      "Fix: Ending calls took longer time than expected",
       "Fix: Ending calls took longer time than expected"
     ],
     "Lockscreen, status bar, Notification shade": [
@@ -55,7 +47,6 @@
       "Fix: Camera force closed when the app was closed and opened again in the Video mode"
     ],
     "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!",
       "Optimization: We redesigned Mi Cloud's start page. It looks much better now!"
     ],
     "System": [
@@ -64,17 +55,13 @@
   },
   "logs_zh_tw": {
     "電話": [
-      "修復 掛斷電話較慢的問題",
       "修復 掛斷電話較慢的問題"
     ],
     "相機": [
       "新增 AI相機場景：月亮模式、高塔、合影",
-      "修復 錄像下退出重新進入必現相機閃退",
-      "新增 AI相機場景：月亮模式、高塔、合影",
       "修復 錄像下退出重新進入必現相機閃退"
     ],
     "小米雲服務": [
-      "優化 雲服務首頁重新設計，雲端可用空間顯示更加直觀",
       "優化 雲服務首頁重新設計，雲端可用空間顯示更加直觀"
     ],
     "系統": [
@@ -100,7 +87,6 @@
     "カメラ": [
       "AIカメラの新シーン：月モード、塔、集合写真",
       "修正: ビデオモードで終了して再度開くとカメラが強制終了する問題",
-      "AIカメラの新シーン：月モード、塔、集合写真",
       "動画撮影中に終了して再度開くと必ずカメラがクラッシュする問題を修正"
     ],
     "Xiaomi クラウドサービス": [
@@ -112,25 +98,23 @@
     ],
     "ロック画面、ステータスバー、通知シェード": [
       "新機能: 顔認証でロック解除に成功しロック画面に留まった場合、指紋でホーム画面に進めるようになりました",
-      "New: You can stay on the Lock screen after your face has been recognized. You can turn on this feature in Settings > Lock screen & password > Manage face data.",
+      "顔認証によるロック解除成功後も画面ロックに留まる機能を追加。設定ページの「顔データ管理」で有効にできます。",
       "新規: ロック画面で通知シェードを下にスワイプして開くことを禁止できるようになりました",
       "最適化：顔認証の成功率",
       "横向き時に低バッテリーのフローティング通知がすぐに表示されない問題を修正",
       "修正: 着信のフローティングバーと通話の緑色バーが同時に表示される問題。",
       "修正: 通知シェードで同期をオン/オフにした際、同期画面が更新されない問題",
-      "Fix: Face unlock prompts didn't disappear on time in some cases",
-      "Fix: Face data was recorded too fast"
+      "一部の場合に顔のヒントがすぐに消えない問題を修正しました。",
+      "顔認証データの記録が速すぎる問題を修正しました"
     ]
   },
   "logs_ko": {
     "전화": [
-      "수정: 통화 종료가 예상보다 오래 걸리는 문제",
       "수정: 통화 종료가 예상보다 오래 걸리는 문제"
     ],
     "카메라": [
       "AI 카메라 새 장면: 달 모드, 탑, 단체 사진",
       "수정: 동영상 모드에서 앱을 종료했다가 다시 열면 카메라가 강제 종료되는 문제",
-      "AI 카메라 새 장면: 달 모드, 탑, 단체 사진",
       "동영상 촬영 중 종료 후 다시 진입하면 항상 카메라가 강제 종료되는 문제 수정"
     ],
     "Xiaomi 클라우드 서비스": [
@@ -142,29 +126,25 @@
     ],
     "잠금화면, 상태 바, 알림 바": [
       "새 기능: 얼굴 인식으로 잠금 해제에 성공한 후 잠금 화면에 머무를 때 지문으로 홈 화면에 들어갈 수 있습니다",
-      "New: You can stay on the Lock screen after your face has been recognized. You can turn on this feature in Settings > Lock screen & password > Manage face data.",
+      "얼굴 잠금 해제 성공 후 화면 잠금 상태를 유지하는 기능이 추가되었습니다. 설정 페이지의 '얼굴 데이터 관리'에서 켤 수 있습니다.",
       "새 기능: 잠금 화면에서 알림 패널을 아래로 내려 여는 것을 금지할 수 있습니다",
       "얼굴 잠금 해제 성공률 최적화",
       "가로 모드에서 배터리 부족 플로팅 알림이 제때 표시되지 않는 문제 수정",
       "수정: 수신 전화 플로팅 바와 통화 녹색 바가 동시에 표시되는 문제.",
       "수정: 알림창에서 동기화를 켜거나 끌 때 동기화 화면이 새로 고쳐지지 않던 문제",
-      "Fix: Face unlock prompts didn't disappear on time in some cases",
-      "Fix: Face data was recorded too fast"
+      "일부 상황에서 얼굴 안내가 즉시 사라지지 않던 문제를 수정했습니다.",
+      "얼굴 잠금 해제 데이터 기록이 너무 빠른 문제를 수정했습니다"
     ]
   },
   "logs_ru": {
     "Телефон": [
-      "Исправлено: Завершение вызова выполнялось слишком долго",
       "Исправлено: Завершение вызова выполнялось слишком долго"
     ],
     "Камера": [
       "Новое: Поддержка новых режимов камеры с ИИ",
-      "Исправлено: Некорректное завершение работы приложения Камера в режиме видеосъемки при закрытии приложения и его повторном открытии",
-      "Новое: Поддержка новых режимов камеры с ИИ",
       "Исправлено: Некорректное завершение работы приложения Камера в режиме видеосъемки при закрытии приложения и его повторном открытии"
     ],
     "Облачный сервис Xiaomi": [
-      "Оптимизация: Мы переработали начальную страницу Mi Cloud. Теперь она выглядит намного лучше!",
       "Оптимизация: Мы переработали начальную страницу Mi Cloud. Теперь она выглядит намного лучше!"
     ],
     "Система": [
@@ -190,7 +170,6 @@
     "Камера": [
       "Нові сцени AI-камери: режим Місяця, вежа, групове фото",
       "Виправлено: Камера аварійно закривається після виходу та повторного входу в режимі відео",
-      "Нові сцени AI-камери: режим Місяця, вежа, групове фото",
       "Виправлено збій камери, який щоразу виникав під час виходу та повторного входу в режим відеозапису"
     ],
     "Хмарний сервіс Xiaomi": [
@@ -202,14 +181,14 @@
     ],
     "Екран блокування, рядок стану, панель сповіщень": [
       "Нове: Використовувати відбиток пальця для переходу на головний екран після успішного розблокування обличчям із затримкою на екрані блокування",
-      "New: You can stay on the Lock screen after your face has been recognized. You can turn on this feature in Settings > Lock screen & password > Manage face data.",
+      "Додано функцію залишатися на екрані блокування після успішного розблокування обличчям; її можна ввімкнути на сторінці Налаштування «Керування даними обличчя».",
       "Нове: додано підтримку заборони відкриття панелі сповіщень на екрані блокування",
       "Оптимізація успішності розблокування за обличчям",
       "Виправлено проблему, коли плаваюче сповіщення про низький заряд батареї не відображалося вчасно в горизонтальному режимі",
       "Виправлено: плаваюча панель вхідного виклику та зелена смуга виклику відображалися одночасно.",
       "Виправлено: сторінка синхронізації не оновлювалася, коли синхронізацію вмикали або вимикали в панелі сповіщень",
-      "Fix: Face unlock prompts didn't disappear on time in some cases",
-      "Fix: Face data was recorded too fast"
+      "Виправлено проблему, коли підказка про обличчя в окремих випадках не зникала одразу.",
+      "Виправлено проблему занадто швидкого запису даних розблокування обличчям"
     ]
   },
   "logs_pl": {
@@ -220,7 +199,6 @@
     "Aparat": [
       "Nowe sceny aparatu AI: tryb Księżyca, wieża, zdjęcie grupowe",
       "Naprawiono: Aparat zamyka się awaryjnie przy wyjściu i ponownym wejściu w tryb wideo",
-      "Nowe sceny aparatu AI: tryb Księżyca, wieża, zdjęcie grupowe",
       "Naprawiono awarię aparatu występującą za każdym razem przy wyjściu i ponownym wejściu w tryb nagrywania wideo"
     ],
     "Usługa w chmurze Xiaomi": [
@@ -232,14 +210,14 @@
     ],
     "Ekran blokady, pasek powiadomień,panel powiadomień": [
       "Nowość: Po pomyślnym odblokowaniu twarzą i pozostaniu na ekranie blokady można użyć odcisku palca, aby przejść do ekranu głównego",
-      "New: You can stay on the Lock screen after your face has been recognized. You can turn on this feature in Settings > Lock screen & password > Manage face data.",
+      "Dodano funkcję pozostawania na ekranie blokady po udanym odblokowaniu twarzą; można ją włączyć na stronie Ustawienia „Zarządzanie danymi twarzy”.",
       "Nowość: można teraz zablokować otwieranie panelu powiadomień na ekranie blokady",
       "Optymalizacja skuteczności odblokowywania twarzą",
       "Naprawiono problem z nieterminowym wyświetlaniem powiadomienia o niskim poziomie baterii w trybie poziomym",
       "Poprawka: pływający pasek połączenia przychodzącego i zielony pasek połączenia wyświetlały się jednocześnie.",
       "Poprawka: strona synchronizacji nie odświeżała się po włączeniu lub wyłączeniu synchronizacji z panelu powiadomień",
-      "Fix: Face unlock prompts didn't disappear on time in some cases",
-      "Fix: Face data was recorded too fast"
+      "Naprawiono problem, w którym podpowiedź dotycząca twarzy w niektórych przypadkach nie znikała natychmiast.",
+      "Naprawiono problem zbyt szybkiego zapisu danych odblokowywania twarzą"
     ]
   },
   "logs_de": {
@@ -250,7 +228,6 @@
     "Kamera": [
       "Neue Szenen für AI-Kamera: Mondmodus, Turm, Gruppenfoto",
       "Behoben: Kamera stürzt ab, wenn man im Video-Modus die App verlässt und erneut öffnet",
-      "Neue Szenen für AI-Kamera: Mondmodus, Turm, Gruppenfoto",
       "Behoben: Kamera-Absturz beim Verlassen und erneuten Öffnen im Video-Modus"
     ],
     "Xiaomi Cloud-Dienst": [
@@ -262,14 +239,14 @@
     ],
     "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
       "Neu: Fingerabdruck zum Öffnen des Startbildschirms verwenden, wenn das Gerät per Gesichtserkennung entsperrt wurde und auf dem Sperrbildschirm bleibt",
-      "New: You can stay on the Lock screen after your face has been recognized. You can turn on this feature in Settings > Lock screen & password > Manage face data.",
+      "Neue Funktion: Nach erfolgreicher Gesichtsentriegelung bleibt der Bildschirm gesperrt; kann auf der Einstellungsseite „Gesichtsdatenverwaltung“ aktiviert werden.",
       "Neu: Öffnen der Benachrichtigungsleiste auf dem Sperrbildschirm kann jetzt gesperrt werden",
       "Optimierung: Gesichtserkennung erfolgreicher",
       "Behebung des Problems, dass die schwebende Benachrichtigung bei niedrigem Akkustand im Querformat nicht rechtzeitig angezeigt wird",
       "Behebung: Die schwebende Leiste für eingehende Anrufe und der grüne Anrufbalken wurden gleichzeitig angezeigt.",
       "Behoben: Die Synchronisierungsseite wurde nicht aktualisiert, wenn die Synchronisierung in der Benachrichtigungsleiste ein- oder ausgeschaltet wurde",
-      "Fix: Face unlock prompts didn't disappear on time in some cases",
-      "Fix: Face data was recorded too fast"
+      "Behebung eines Problems, bei dem der Gesichtshinweis in einigen Fällen nicht sofort ausgeblendet wurde.",
+      "Behoben: Gesichtsdaten für die Entsperrung wurden zu schnell aufgezeichnet"
     ]
   },
   "logs_fr": {
@@ -280,7 +257,6 @@
     "Appareil photo": [
       "Nouvelles scènes de l'appareil photo AI : mode Lune, tour, photo de groupe",
       "Correction : l'appareil photo plante lorsqu'on quitte puis rouvre l'app en mode Vidéo",
-      "Nouvelles scènes de l'appareil photo AI : mode Lune, tour, photo de groupe",
       "Correction du plantage de l'appareil photo à chaque sortie puis réouverture en mode vidéo"
     ],
     "Service cloud Xiaomi": [
@@ -292,29 +268,26 @@
     ],
     "Écran de verrouillage, Barre d'état, Panneau de notification": [
       "Nouveau : Utiliser l'empreinte digitale pour accéder à l'écran d'accueil après un déverrouillage facial réussi et un maintien sur l'écran de verrouillage",
-      "New: You can stay on the Lock screen after your face has been recognized. You can turn on this feature in Settings > Lock screen & password > Manage face data.",
+      "Ajout d'une fonction permettant de rester sur l'écran de verrouillage après un déverrouillage facial réussi, activable dans la page Paramètres « Gestion des données faciales ».",
       "Nouveau : il est désormais possible d’interdire l’ouverture du panneau de notifications sur l’écran de verrouillage",
       "Optimisation du taux de réussite du déverrouillage facial",
       "Correction du problème où la notification flottante de batterie faible ne s'affiche pas rapidement en mode paysage",
       "Correction : la barre flottante d’appel entrant et la barre verte d’appel s’affichaient en même temps.",
       "Correction : la page de synchronisation ne s’actualisait pas lorsqu’on activait ou désactivait la synchronisation depuis le panneau de notifications",
-      "Fix: Face unlock prompts didn't disappear on time in some cases",
-      "Fix: Face data was recorded too fast"
+      "Correction d’un problème où l’indication de visage ne disparaissait pas immédiatement dans certains cas.",
+      "Correction du problème d’enregistrement trop rapide des données de déverrouillage facial"
     ]
   },
   "logs_it": {
     "Telefono": [
-      "Risolto: Terminare le chiamate richiedeva più tempo del previsto",
       "Risolto: Terminare le chiamate richiedeva più tempo del previsto"
     ],
     "Fotocamera": [
       "Nuovo: Nuove modalità per la fotocamera AI",
       "Risolvi: Chiusura forzata della Fotocamera quando la app era chiusa e aperta di nuovo in modalità Video",
-      "Nuovo: Nuove modalità per la fotocamera AI",
       "Risolto: Chiusura forzata della Fotocamera quando la app era chiusa e aperta di nuovo in modalità Video"
     ],
     "Servizio cloud Xiaomi": [
-      "Ottimizzazione: Abbiamo ridisegnato la pagina iniziale di Mi Cloud. Ora è molto meglio!",
       "Ottimizzazione: Abbiamo ridisegnato la pagina iniziale di Mi Cloud. Ora è molto meglio!"
     ],
     "Sistema": [
@@ -334,17 +307,14 @@
   },
   "logs_es": {
     "Teléfono": [
-      "Reparado: Terminar las llamadas llevó más tiempo de lo esperado",
       "Reparado: Terminar las llamadas llevó más tiempo de lo esperado"
     ],
     "Cámara": [
       "Nuevo: Nuevo modos para la cámara IA",
       "Reparar: La Cámara se cerró de forma forzosa cuando la aplicación fue cerrada y se volvió a abrir en el Modo vídeo",
-      "Nuevo: Nuevo modos para la cámara IA",
       "Reparado: La Cámara se cerró de forma forzosa cuando la aplicación fue cerrada y se volvió a abrir en el Modo vídeo"
     ],
     "Servicio en la nube de Xiaomi": [
-      "Optimización: Hemos rediseñado la página de inicio de Mi Nube. ¡Ahora tiene mucho mejor aspecto!",
       "Optimización: Hemos rediseñado la página de inicio de Mi Nube. ¡Ahora tiene mucho mejor aspecto!"
     ],
     "Sistema": [
@@ -370,7 +340,6 @@
     "Câmera": [
       "Novas cenas da câmera AI: modo Lua, torre, foto em grupo",
       "Correção: a câmera fecha forçadamente ao sair e reabrir no modo Vídeo",
-      "Novas cenas da câmera AI: modo Lua, torre, foto em grupo",
       "Corrigida falha da câmera que sempre ocorria ao sair e voltar ao modo de gravação de vídeo"
     ],
     "Serviço de nuvem Xiaomi": [
@@ -382,29 +351,26 @@
     ],
     "Tela de bloqueio, Barra de status e Área de notificações": [
       "Novo: Usar a impressão digital para abrir a tela inicial após desbloquear com o rosto e permanecer na tela de bloqueio",
-      "New: You can stay on the Lock screen after your face has been recognized. You can turn on this feature in Settings > Lock screen & password > Manage face data.",
+      "Adicionada função de permanecer na tela de bloqueio após o desbloqueio facial bem-sucedido, que pode ser ativada na página Configurações 'Gerenciamento de dados faciais'.",
       "Novo: agora é possível impedir a abertura do painel de notificações na tela de bloqueio",
       "Otimizar a taxa de sucesso do desbloqueio facial",
       "Corrigido o problema em que a notificação flutuante de bateria fraca não era exibida prontamente no modo paisagem",
       "Correção: a barra flutuante de chamada recebida e a barra verde de chamada apareciam ao mesmo tempo.",
       "Correção: a página de sincronização não era atualizada ao ativar ou desativar a sincronização no painel de notificações",
-      "Fix: Face unlock prompts didn't disappear on time in some cases",
-      "Fix: Face data was recorded too fast"
+      "Corrigido o problema em que a indicação facial não desaparecia imediatamente em alguns casos.",
+      "Corrigido o problema de gravação demasiado rápida dos dados de desbloqueio facial"
     ]
   },
   "logs_tr": {
     "Telefon": [
-      "Onarım: Aramaları sonlandırmak beklenenden daha uzun sürdü",
       "Onarım: Aramaları sonlandırmak beklenenden daha uzun sürdü"
     ],
     "Kamera": [
       "Yeni: AI kamera için yeni modlar",
       "Onar: Uygulama kapatıldığında Kamera kapanmaya zorlandı ve Video modunda tekrar açıldı",
-      "Yeni: AI kamera için yeni modlar",
       "Onarım: Uygulama kapatıldığında Kamera kapanmaya zorlandı ve Video modunda tekrar açıldı"
     ],
     "Xiaomi Bulut Hizmeti": [
-      "Optimizasyon: Mi Cloud'un ana sayfasını yeniden tasarladık, artık çok daha iyi görünüyor!",
       "Optimizasyon: Mi Cloud'un ana sayfasını yeniden tasarladık, artık çok daha iyi görünüyor!"
     ],
     "Sistem": [
@@ -430,7 +396,6 @@
     "Kamera": [
       "Skena baru kamera AI: mode Bulan, menara, foto grup",
       "Perbaikan: Kamera menutup paksa saat keluar dan masuk kembali ke mode Video",
-      "Skena baru kamera AI: mode Bulan, menara, foto grup",
       "Perbaikan crash kamera yang selalu terjadi saat keluar dan masuk kembali dalam mode rekam video"
     ],
     "Layanan Cloud Xiaomi": [
@@ -442,14 +407,14 @@
     ],
     "Layar kunci, bar status, layar notifikasi": [
       "Baru: Gunakan sidik jari untuk membuka Layar utama setelah berhasil membuka kunci dengan wajah dan tetap di layar kunci",
-      "New: You can stay on the Lock screen after your face has been recognized. You can turn on this feature in Settings > Lock screen & password > Manage face data.",
+      "Menambahkan fitur tetap di layar kunci setelah buka kunci wajah berhasil, dapat diaktifkan di halaman Pengaturan 'Kelola data wajah'.",
       "Baru: Dukungan untuk mencegah membuka panel notifikasi di layar kunci",
       "Optimalkan tingkat keberhasilan buka kunci wajah",
       "Perbaikan masalah notifikasi mengambang baterai lemah tidak tampil tepat waktu dalam mode lanskap",
       "Perbaikan: Bilah mengambang panggilan masuk dan bilah hijau panggilan muncul bersamaan.",
       "Perbaikan: Halaman sinkronisasi tidak diperbarui saat sinkronisasi diaktifkan atau dinonaktifkan dari panel notifikasi",
-      "Fix: Face unlock prompts didn't disappear on time in some cases",
-      "Fix: Face data was recorded too fast"
+      "Memperbaiki masalah di mana petunjuk wajah terkadang tidak langsung hilang.",
+      "Memperbaiki masalah perekaman data buka kunci wajah yang terlalu cepat"
     ]
   },
   "logs_vi": {
@@ -460,7 +425,6 @@
     "Máy ảnh": [
       "Cảnh mới cho camera AI: chế độ Mặt Trăng, tòa tháp, ảnh nhóm",
       "Sửa lỗi: Camera bị buộc dừng khi thoát và vào lại ở chế độ Quay video",
-      "Cảnh mới cho camera AI: chế độ Mặt Trăng, tòa tháp, ảnh nhóm",
       "Sửa lỗi camera luôn bị thoát khi thoát ra và vào lại trong chế độ quay video"
     ],
     "Dịch vụ đám mây Xiaomi": [
@@ -472,14 +436,14 @@
     ],
     "Màn hình khóa, thanh trạng thái, thanh thông báo": [
       "Mới: Dùng vân tay để mở Màn hình chính sau khi mở khóa bằng khuôn mặt thành công và vẫn ở màn hình khóa",
-      "New: You can stay on the Lock screen after your face has been recognized. You can turn on this feature in Settings > Lock screen & password > Manage face data.",
+      "Bổ sung tính năng giữ ở màn hình khóa sau khi mở khóa bằng khuôn mặt thành công, có thể bật trong trang Cài đặt 'Quản lý dữ liệu khuôn mặt'.",
       "Mới: Hỗ trợ chặn kéo xuống bảng thông báo trên màn hình khóa",
       "Tối ưu tỷ lệ mở khóa bằng khuôn mặt thành công",
       "Khắc phục sự cố thông báo nổi pin yếu không hiển thị kịp thời ở chế độ ngang",
       "Sửa: Thanh nổi cuộc gọi đến và thanh màu xanh cuộc gọi xuất hiện cùng lúc.",
       "Sửa lỗi: Trang đồng bộ không làm mới khi bật hoặc tắt đồng bộ từ bảng thông báo",
-      "Fix: Face unlock prompts didn't disappear on time in some cases",
-      "Fix: Face data was recorded too fast"
+      "Đã khắc phục sự cố gợi ý khuôn mặt đôi khi không biến mất ngay.",
+      "Đã sửa lỗi ghi dữ liệu mở khóa bằng khuôn mặt quá nhanh"
     ]
   },
   "logs_th": {
@@ -490,7 +454,6 @@
     "กล้อง": [
       "ฉากใหม่ของกล้อง AI: โหมดพระจันทร์, หอคอย, ภาพหมู่",
       "แก้ไข: กล้องหยุดทำงานเมื่อออกแล้วกลับเข้าโหมดวิดีโออีกครั้ง",
-      "ฉากใหม่ของกล้อง AI: โหมดพระจันทร์, หอคอย, ภาพหมู่",
       "แก้ไขปัญหาแอปกล้องแครชทุกครั้งเมื่อออกแล้วกลับเข้าโหมดบันทึกวิดีโอ"
     ],
     "บริการคลาวด์ Xiaomi": [
@@ -502,14 +465,14 @@
     ],
     "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
       "ใหม่: ใช้ลายนิ้วมือเข้าสู่หน้าจอหลักเมื่อปลดล็อกด้วยใบหน้าสำเร็จและยังคงอยู่บนหน้าจอล็อก",
-      "New: You can stay on the Lock screen after your face has been recognized. You can turn on this feature in Settings > Lock screen & password > Manage face data.",
+      "เพิ่มฟีเจอร์ให้คงอยู่ที่หน้าจอล็อกหลังปลดล็อกด้วยใบหน้าสำเร็จ สามารถเปิดได้ในหน้าการตั้งค่า 'จัดการข้อมูลใบหน้า'",
       "ใหม่: รองรับการห้ามเลื่อนลงเพื่อเปิดแผงการแจ้งเตือนบนหน้าจอล็อก",
       "ปรับปรุงอัตราความสำเร็จในการปลดล็อกด้วยใบหน้า",
       "แก้ไขปัญหาการไม่แสดงการแจ้งเตือนแบบลอยเรื่องแบตเตอรี่ต่ำในโหมดแนวนอนอย่างทันท่วงที",
       "แก้ไข: แถบลอยของการโทรเข้าและแถบสีเขียวของการโทรแสดงพร้อมกัน",
       "แก้ไข: หน้าการซิงค์ไม่รีเฟรชเมื่อเปิดหรือปิดการซิงค์จากแผงการแจ้งเตือน",
-      "Fix: Face unlock prompts didn't disappear on time in some cases",
-      "Fix: Face data was recorded too fast"
+      "แก้ไขปัญหาที่คำแนะนำเกี่ยวกับใบหน้าไม่หายไปทันทีในบางกรณี",
+      "แก้ไขปัญหาการบันทึกข้อมูลการปลดล็อกด้วยใบหน้าเร็วเกินไป"
     ]
   },
   "logs_ar": {
@@ -532,14 +495,14 @@
     ],
     "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
       "جديد: استخدام بصمة الإصبع للدخول إلى الشاشة الرئيسية بعد نجاح فتح القفل بالوجه والبقاء على شاشة القفل",
-      "New: You can stay on the Lock screen after your face has been recognized. You can turn on this feature in Settings > Lock screen & password > Manage face data.",
+      "إضافة ميزة البقاء على شاشة القفل بعد نجاح فتح القفل بالوجه، ويمكن تفعيلها من صفحة الإعدادات 'إدارة بيانات الوجه'.",
       "جديد: دعم منع سحب لوحة الإشعارات على شاشة القفل",
       "تحسين معدل نجاح فتح القفل بالوجه",
       "إصلاح مشكلة عدم عرض إشعار عائم لانخفاض البطارية في الوقت المناسب في وضع الشاشة الأفقية",
       "إصلاح: ظهور شريط المكالمة العائم والشريط الأخضر للمكالمة في الوقت نفسه.",
       "إصلاح: تعذّر تحديث صفحة المزامنة عند تشغيل المزامنة أو إيقافها من لوحة الإشعارات",
-      "Fix: Face unlock prompts didn't disappear on time in some cases",
-      "Fix: Face data was recorded too fast"
+      "إصلاح مشكلة عدم اختفاء تلميح الوجه فورًا في بعض الحالات.",
+      "تم إصلاح مشكلة تسجيل بيانات فتح القفل بالوجه بسرعة كبيرة"
     ],
     "الكاميرا": [
       "مشاهد جديدة لكاميرا AI: وضع القمر، البرج، صورة جماعية",
@@ -554,7 +517,6 @@
     "कैमरा": [
       "नए AI कैमरा दृश्य: चंद्रमा मोड, टावर, ग्रुप फोटो",
       "ठीक किया गया: वीडियो मोड में बाहर निकलकर फिर से प्रवेश करने पर कैमरा बलपूर्वक बंद हो जाता था",
-      "नए AI कैमरा दृश्य: चंद्रमा मोड, टावर, ग्रुप फोटो",
       "वीडियो रिकॉर्डिंग में बाहर निकलकर फिर से प्रवेश करने पर हमेशा होने वाले कैमरा क्रैश को ठीक किया गया"
     ],
     "Xiaomi क्लाउड सेवा": [
@@ -566,76 +528,72 @@
     ],
     "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
       "नया: चेहरे से अनलॉक सफल होने और लॉक स्क्रीन पर रहने पर फ़िंगरप्रिंट से होम स्क्रीन खोलें",
-      "New: You can stay on the Lock screen after your face has been recognized. You can turn on this feature in Settings > Lock screen & password > Manage face data.",
+      "फ़ेस अनलॉक सफल होने के बाद स्क्रीन लॉक पर रहने की सुविधा जोड़ी गई, जिसे सेटिंग्स पेज 'फ़ेस डेटा प्रबंधन' में सक्षम किया जा सकता है।",
       "नया: लॉक स्क्रीन पर नोटिफ़िकेशन शेड को नीचे खींचकर खोलने से रोकें",
       "फेस अनलॉक सफलता दर को अनुकूलित करें",
       "लैंडस्केप मोड में कम बैटरी की फ़्लोटिंग सूचना समय पर न दिखने की समस्या ठीक की गई",
       "फ़िक्स: इनकमिंग कॉल फ़्लोटिंग बार और कॉल ग्रीन बार का एक ही समय पर दिखना।",
       "फ़िक्स: नोटिफ़िकेशन शेड से सिंक चालू या बंद करने पर सिंक पेज रीफ़्रेश नहीं होता था",
-      "Fix: Face unlock prompts didn't disappear on time in some cases",
-      "Fix: Face data was recorded too fast"
+      "कुछ मामलों में चेहरे का संकेत तुरंत गायब न होने की समस्या को ठीक किया गया।",
+      "फेस अनलॉक डेटा रिकॉर्डिंग बहुत तेज़ होने की समस्या ठीक की गई"
     ]
   },
   "logs_ug": {
     "تېلېفون": [
-      "Fix: Ending calls took longer time than expected",
-      "Fix: Ending calls took longer time than expected"
+      "تېلېفوننى ئۈزۈش ئاستا بولۇش مەسىلىسى تۈزىتىلدى.",
+      "قوڭغۇراقنى ئۈزۈش ئاستا بولۇش مەسىلىسىنى تۈزىتىش"
     ],
     "كامېرا": [
       "يېڭىدىن قوشۇلدى: AI كامېرا كۆرۈنۈشلىرى: ئاي ھالىتى، مۇنار، گۇرۇپپا سۈرەت",
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode",
-      "يېڭىدىن قوشۇلدى: AI كامېرا كۆرۈنۈشلىرى: ئاي ھالىتى، مۇنار، گۇرۇپپا سۈرەت",
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
+      "تۈزىتىلدى: سىن ئېلىش ھالىتىدە چېكىنىپ قايتا كىرگەندە كامېرا چوقۇم تاقىلىپ قېلىش مەسىلىسى تۈزىتىلدى.",
+      "سىن ئېلىش جەريانىدا چېكىپ قايتا كىرگەندە چوقۇم كۆرۈلىدىغان كامېرا تۇيۇقسىز تاقىلىش مەسىلىسىنى تۈزەتتى"
     ],
     "Xiaomi بۇلۇت مۇلازىمىتى": [
       "ياخشىلاندى: بۇلۇت مۇلازىمىتى باش بېتى قايتا لايىھەلەندى، ئىشلەتكىلى بولىدىغان بوشلۇق كۆرسىتىلىشى تېخىمۇ كۆرۈنەرلىك بولدى.",
-      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!"
+      "ياخشىلاندى: بۇلۇت مۇلازىمىتىنىڭ يېڭى باش بېتى، بۇلۇت بوشلۇقى ئۇچۇرى تېخىمۇ ئېنىق كۆرسىتىلىدۇ."
     ],
     "سىستېما": [
-      "Optimization: Updated Android Security Patch to May 2019. Increased system security."
+      "ئەلالاشتۇرۇش: Google بىخەتەرلىك يامىقى (2019#5) يېڭىلاندى، سىستېما بىخەتەرلىكى ئاشۇرۇلدى."
     ],
     "Lockscreen, status bar, Notification shade": [
-      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
-      "New: You can stay on the Lock screen after your face has been recognized. You can turn on this feature in Settings > Lock screen & password > Manage face data.",
+      "يېڭىلىق: يۈز ئارقىلىق قۇلۇپ ئېچىش مۇۋەپپەقىيەتلىك بولۇپ، قۇلۇپ ئېكرانىدا تۇرۇۋاتقاندا، بارماق ئىزى ئارقىلىق ئاساسىي ئېكرانغا كىرىش ئىقتىدارى قوشۇلدى",
+      "يېڭىدىن قوشۇلدى: يۈز ئارقىلىق قۇلۇپ ئېچىش مۇۋەپپەقىيەتلىك بولغاندىن كېيىن ئېكران قۇلۇپىدا تۇرۇش ئىقتىدارى، تەڭشەك بېتىدىكى «يۈز ئۇچۇرىنى باشقۇرۇش» دىن ئاچقىلى بولىدۇ.",
       "يېڭى: قۇلۇپ ئېكرانى بېتىدە ئۇقتۇرۇش تاختىسىنى تۆۋەن تارتىشنى چەكلەشنى قوللايدۇ",
       "يۈز ئارقىلىق قۇلۇپ ئېچىش مۇۋەپپەقىيەت نىسبىتىنى ياخشىلاش",
-      "Fix: Battery-related floating notifications weren't displayed correctly in landscape mode",
+      "تەكشى ئېكران ھالىتىدە تۆۋەن باتارېيە لەۋلەپ ئۇچۇرنى ۋاقتىدا كۆرسەتمەسلىك مەسىلىسىنى تۈزەتتى",
       "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Face unlock prompts didn't disappear on time in some cases",
-      "Fix: Face data was recorded too fast"
+      "تۈزېتىش: ئۇقتۇرۇش ستونىنى تارتىپ چۈشۈرۈپ ماسقەدەملەشنى ئېچىش ياكى تاقاش ئارقىلىق ماسقەدەملەش كۆرۈنمە يۈزىنىڭ يېڭىلانماسلىق مەسىلىسى",
+      "بەزى ئەھۋاللاردا يۈز ئەسكەرتمىسىنىڭ دەرھال يوقىماسلىق مەسىلىسىنى تۈزەتتى.",
+      "يۈز ئارقىلىق قۇلۇپ ئېچىش ماتېرىيالىنى خاتىرىلەش بەك تېز بولۇش مەسىلىسى تۈزىتىلدى."
     ]
   },
   "logs_bo": {
     "ཁ་པར": [
-      "Fix: Ending calls took longer time than expected",
+      "ཁ་པར་གཅོད་པ་དལ་བའི་གནད་དོན་བཅོས་ཟིན།",
       "Fix: Ending calls took longer time than expected"
     ],
     "པར་ཆས": [
       "New: New modes for AI camera",
+      "གསོ་བཅོས། བརྙན་ལེན་གྱི་ཐབས་ལམ་ནས་ཕྱིར་ཐོན་ནས་ཡང་བསྐྱར་འཛུལ་བའི་སྐབས་སུ་པར་ཆས་ཐད་ཀར་ཚུལ་མིན་ཐོན་པ།",
       "Fix: Camera force closed when the app was closed and opened again in the Video mode"
     ],
     "Mi Cloud": [
       "Optimization: We redesigned Mi Cloud's start page. It looks much better now!",
-      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!"
+      "ལེགས་སུ་གཏོང་བ། སྤྲིན་ཞབས་ཞུའི་པར་གཞི་གསར་པའི་མདུན་ངོས་སུ་སྤྲིན་བར་སྟོང་གི་ཆ་འཕྲིན་དེ་བས་གསལ་པོར་མཐོང་ཐུབ།"
     ],
     "རིམ་ལུགས": [
       "Optimization: Updated Android Security Patch to May 2019. Increased system security."
     ],
     "Lockscreen, status bar, Notification shade": [
-      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
+      "གསར་སྣོན། གདོང་པའི་སྒོ་འབྱེད་ལེགས་གྲུབ་བྱས་ནས་ལྡེ་མིག་ཤོག་ངོས་སུ་གནས་པའི་སྐབས་སུ། མཛུབ་རྗེས་བརྒྱུད་ནས་ཌེསཀ་ཐོག་ཏུ་འཛུལ་ཆོག་པའི་ནུས་པ་གསར་སྣོན་བྱས་ཡོད།",
       "New: You can stay on the Lock screen after your face has been recognized. You can turn on this feature in Settings > Lock screen & password > Manage face data.",
       "New: You can restrict opening Notification shade on the Lock screen now",
       "Optimization: Face unlock efficiency",
       "Fix: Battery-related floating notifications weren't displayed correctly in landscape mode",
       "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
       "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade",
-      "Fix: Face unlock prompts didn't disappear on time in some cases",
+      "གནད་དོན་འགའ་ཞིག་གི་སྐབས་སུ་མི་གདོང་གི་བརྡ་སྟོན་དེ་དུས་སུ་མི་སོར་བའི་གནད་དོན་ལ་བཅོས་བྱས།",
       "Fix: Face data was recorded too fast"
-    ],
-    "Camera": [
-      "New: New modes for AI camera",
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
     ]
   }
 }

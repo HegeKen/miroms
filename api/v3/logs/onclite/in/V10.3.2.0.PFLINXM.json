@@ -2,12 +2,9 @@
   "logs_zh": {
     "时钟": [
       "修复 计时器页面按钮点击闪烁的问题",
-      "修复 时钟在特殊日期出现闪退的问题",
-      "修复 计时器页面按钮点击闪烁的问题",
       "修复 时钟在特殊日期出现闪退的问题"
     ],
     "相机": [
-      "修复 录像下退出重新进入必现相机闪退",
       "修复 录像下退出重新进入必现相机闪退"
     ],
     "系统": [
@@ -46,12 +43,9 @@
   "logs_zh_tw": {
     "時鐘": [
       "修復 計時器頁面按鈕點擊閃爍的問題",
-      "修復 時鐘在特殊日期出現閃退的問題",
-      "修復 計時器頁面按鈕點擊閃爍的問題",
       "修復 時鐘在特殊日期出現閃退的問題"
     ],
     "相機": [
-      "修復 錄像下退出重新進入必現相機閃退",
       "修復 錄像下退出重新進入必現相機閃退"
     ],
     "系統": [
@@ -130,12 +124,9 @@
   "logs_ru": {
     "Часы": [
       "Исправлено: Кнопка таймера начинала мигать после нажатия",
-      "Исправлено: Некорректное завершение работы приложения Часы в определенные дни",
-      "Исправлено: Кнопка таймера начинала мигать после нажатия",
       "Исправлено: Некорректное завершение работы приложения Часы в определенные дни"
     ],
     "Камера": [
-      "Исправлено: Некорректное завершение работы приложения Камера в режиме видеосъемки при закрытии приложения и его повторном открытии",
       "Исправлено: Некорректное завершение работы приложения Камера в режиме видеосъемки при закрытии приложения и его повторном открытии"
     ],
     "Система": [
@@ -528,35 +519,36 @@
       "تایمېر بېتىدىكى كۇنۇپكىنى باسقاندا پارقىراش مەسىلىسىنى تۈزەت",
       "سائەت ئالاھىدە چېسلاردا مەجبۇرىي تاقىلىپ قېلىش مەسىلىسى تۈزىتىلدى",
       "Timer بېتىدىكى كۇنۇپكىلارنى چەككەندە پارقىراش مەسىلىسى تۈزىتىلدى.",
-      "Fix: Clock force closed on some specific dates"
+      "سائەت ئالاھىدە كۈنلەردە يېپىلىپ قېلىش مەسىلىسى تۈزىتىلدى."
     ],
     "كامېرا": [
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode",
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
+      "تۈزىتىلدى: سىن ئېلىش ھالىتىدە چېكىنىپ قايتا كىرگەندە كامېرا چوقۇم تاقىلىپ قېلىش مەسىلىسى تۈزىتىلدى.",
+      "سىن ئېلىش جەريانىدا چېكىپ قايتا كىرگەندە چوقۇم كۆرۈلىدىغان كامېرا تۇيۇقسىز تاقىلىش مەسىلىسىنى تۈزەتتى"
     ],
     "سىستېما": [
-      "Optimization: Updated Android Security Patch to April 2019. Increased system security."
+      "ئەلالاشتۇرۇش: Google بىخەتەرلىك يامىقى (2019#4) يېڭىلاندى، سىستېما بىخەتەرلىكى يۇقىرى كۆتۈرۈلدى."
     ],
     "تېلېفون": [
       "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "Fix: Ending calls took longer time than expected"
+      "قوڭغۇراقنى ئۈزۈش ئاستا بولۇش مەسىلىسىنى تۈزىتىش"
     ],
     "Lockscreen, status bar, Notification shade": [
       "يېڭى: يۈز ئارقىلىق قۇلۇپ ئېچىش ئۇتۇقلۇق بولغاندىن كېيىن قۇلۇپ ئېكرانىدا تۇرۇش تاللانمىسى قوشۇلدى",
       "يېڭى: قۇلۇپ ئېكرانى بېتىدە ئۇقتۇرۇش تاختىسىنى تۆۋەن تارتىشنى چەكلەشنى قوللايدۇ",
-      "Optimization: Face data was recorded too fast",
+      "يۈز ئارقىلىق قۇلۇپ ئېچىش ماتېرىيالىنى خاتىرىلەش بەك تېز بولۇش مەسىلىسىنى ئەلالاشتۇرۇش",
       "يۈز ئارقىلىق قۇلۇپ ئېچىش مۇۋەپپەقىيەت نىسبىتىنى ياخشىلاش",
-      "يۈز ئارقىلىق قۇلۇپ ئېچىش ئەسكەرتىشى دەرھال يوقالمىغان مەسىلىنى تۈزىتىش",
-      "Fix: Low battery warning didn't appear in landscape mode",
-      "Fix: Call time bubble overlapped with notification icons"
+      "يۈز ئېچىش ئەسكەرتمىسىنىڭ دەرھال يوقالماسلىقى تۈزىتىلدى",
+      "تۈزىتىش: يان ئېكران ھالىتىدە تۆۋەن باتارېيە ئۇقتۇرۇشى لەۋلەپ كۆرۈنمەيدىغان مەسىلە تۈزىتىلدى.",
+      "قوڭغۇراق ۋاقتى كۆپچىكى بىلەن ئۇقتۇرۇش سىنبەلگىسىنىڭ ئۈستى-ئۈستىگە چۈشۈپ قېلىش مەسىلىسىنى تۈزىتىش"
     ]
   },
   "logs_bo": {
     "ཆུ་ཚོད།": [
       "Fix: Timer button started flashing after being tapped",
-      "Fix: Clock force closed on some specific dates"
+      "ཆུ་ཚོད་ཀྱིས་ཉིན་མོ་དམིགས་བསལ་ཁག་ཅིག་ལ་འཐོར་འགྲོ་བའི་གནད་དོན་བཅོས་སྒྲིག་བྱས་པ།"
     ],
     "པར་ཆས": [
+      "གསོ་བཅོས། བརྙན་ལེན་གྱི་ཐབས་ལམ་ནས་ཕྱིར་ཐོན་ནས་ཡང་བསྐྱར་འཛུལ་བའི་སྐབས་སུ་པར་ཆས་ཐད་ཀར་ཚུལ་མིན་ཐོན་པ།",
       "Fix: Camera force closed when the app was closed and opened again in the Video mode"
     ],
     "རིམ་ལུགས": [
@@ -569,18 +561,15 @@
     "Lockscreen, status bar, Notification shade": [
       "New: You can stay on the Lock screen after using Face unlock",
       "New: You can restrict opening Notification shade on the Lock screen now",
-      "Optimization: Face data was recorded too fast",
+      "ངོ་གདོང་སྒོ་འབྱེད་ཀྱི་གནས་ཚུལ་བསྡུ་ལེན་མགྱོགས་དྲགས་པའི་གནད་དོན་ལེགས་སུ་བཅོས་པ།",
       "Optimization: Face unlock efficiency",
       "Fix: Face unlock prompts didn't disappear on time",
       "Fix: Low battery warning didn't appear in landscape mode",
       "Fix: Call time bubble overlapped with notification icons"
     ],
     "ཆུ་ཚོད": [
-      "Fix: Timer button started flashing after being tapped",
+      "དུས་ཚོད་འཛིན་ཆས་ཀྱི་ཤོག་ངོས་སུ་མཐེབ་གནོན་ནོན་སྐབས་འཕྲོ་འཕྲོ་བྱེད་པའི་གནད་དོན་བཅོས་པ།",
       "Fix: Clock force closed on some specific dates"
-    ],
-    "Camera": [
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
     ]
   }
 }

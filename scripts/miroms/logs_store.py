@@ -437,7 +437,26 @@ class LogStore:
 					entry_indices.append(entry_index)
 			refs.append([module_index, entry_indices, int(position.get('mask', 0))])
 		cls.last_conflicts = index.conflicts
-		return index.rows, refs
+		return index.rows, cls.merge_refs(refs)
+
+	@classmethod
+	def merge_refs(cls, refs: List[List[Any]]) -> List[List[Any]]:
+		"""合并指向同一 (模块, 条目) 的重复位置，语言掩码取并集
+
+		多语言结构按指纹分簇时，附加语言簇会把与主簇相同的模块整组再生成一遍；
+		若两簇最终解析到同一批行，就会写出重复引用，导出时同一模块出现两份。
+		合并后顺序保持首次出现的位置。
+		"""
+		merged: Dict[Tuple[int, Tuple[int, ...]], int] = {}
+		order: List[Tuple[int, Tuple[int, ...]]] = []
+		for module_index, entry_indices, mask in refs:
+			key = (int(module_index), tuple(int(i) for i in entry_indices))
+			if key in merged:
+				merged[key] |= int(mask)
+			else:
+				merged[key] = int(mask)
+				order.append(key)
+		return [[key[0], list(key[1]), merged[key]] for key in order]
 
 	@classmethod
 	def _missing_ids(cls, ids: Sequence[int]) -> set:
@@ -611,8 +630,10 @@ class LogStore:
 			common = set(rows[module_index]['texts'])
 			for entry_index in entry_indices:
 				common &= set(rows[entry_index]['texts'])
-			new_mask = cls.mask_of([c for c in cls.LANG_COLUMNS if c in common])
-			pairs.append([ids[module_index], [ids[i] for i in entry_indices], new_mask or mask])
+			# 只在本位置自身声明的语言范围内补位：行池里的行可能被别的 ROM 补齐了全部译文，
+			# 直接按行文本取交集会把不属于本 ROM 的语言也写进掩码，导出时造成重复 / 串语言
+			new_mask = cls.mask_of([c for c in cls.LANG_COLUMNS if c in common]) & int(mask)
+			pairs.append([ids[module_index], [ids[i] for i in entry_indices], new_mask or int(mask)])
 		return json.dumps(pairs, ensure_ascii=False)
 	@classmethod
 	def encode_value(cls, value: Any, canonical_column: str = ZH_COLUMN) -> Any:
@@ -704,7 +725,12 @@ class LogStore:
 					if text:
 						lines.append(text)
 				# 空条目的模块也保留（上游日志里确实存在 {"基础体验": []} 这类空模块）
-				result.setdefault(column, {}).setdefault(module_text, []).extend(lines)
+				bucket = result.setdefault(column, {}).setdefault(module_text, [])
+				# 多语言簇可能把同一模块引用两次（历史上掩码被放大到全部语言时尤其明显），
+				# 导出侧按文本去重兜底，保证同一模块下不会出现重复条目
+				for line in lines:
+					if line not in bucket:
+						bucket.append(line)
 		# 语言键按 LANG_COLUMNS 顺序输出，保证导出文件稳定、diff 友好
 		return {column: result[column] for column in cls.LANG_COLUMNS if column in result}
 

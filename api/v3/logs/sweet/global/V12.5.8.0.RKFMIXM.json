@@ -1,7 +1,6 @@
 {
   "logs_zh": {
     "系统": [
-      "更新谷歌安全补丁（2021#09），提升系统安全性",
       "更新谷歌安全补丁（2021#09），提升系统安全性"
     ],
     "锁屏": [
@@ -24,12 +23,7 @@
       "修复 进入密码输入页面，人脸与指纹同时检测解锁时有概率出现崩溃的问题",
       "修复 挂断电话亮屏后锁屏信息全部消失的问题",
       "修复 使用主题后开启超级壁纸，锁屏页面内容不显示的偶现问题",
-      "修复 指纹解锁时偶现闪黑条的问题",
-      "新增 指纹是否应用于锁屏开关的功能",
-      "修复 充电动画显示时有概率内存异常的问题",
-      "修复 进入密码输入页面，人脸与指纹同时检测解锁时有概率出现崩溃的问题",
-      "修复 挂断电话亮屏后锁屏信息全部消失的问题",
-      "修复 使用主题后开启超级壁纸，锁屏页面内容不显示的偶现问题"
+      "修复 指纹解锁时偶现闪黑条的问题"
     ],
     "状态栏、通知栏": [
       "优化 来电的悬浮通知屏蔽逻辑",
@@ -48,26 +42,16 @@
       "修复 悬浮通知圆角缺失的异常",
       "修复 三方主题下收到悬浮通知时，偶现背景异常的问题",
       "修复 抬起亮屏时偶现锁屏通知抖动的异常",
-      "修复 深色模式下，通知按钮偶现显示异常的问题",
-      "优化 通知中心与三方主题的适配",
-      "优化 通知消息与深色模式的适配",
-      "修复 应用锁导致通知大小背景不一致的异常",
-      "修复 一键清理动画掉帧的问题",
-      "修复 锁屏时无法下拉通知栏的问题",
-      "修复 未接来电悬浮权限开启失败的异常",
-      "修复 播放音乐时，通知栏偶现不显示媒体控制面板的异常",
-      "修复 抬起亮屏时偶现锁屏通知抖动的异常",
       "修复 深色模式下，通知按钮偶现显示异常的问题"
     ],
     "设置": [
-      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄的问题",
-      "修复 部分应用的帐号无法同步到“帐号与同步”中的问题",
+      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
+      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
       "修复 在“应用管理-默认打开链接”页面中选择“地图”选项时页面崩溃的问题"
     ]
   },
   "logs_en": {
     "System": [
-      "Updated Android Security Patch to September 2021. Increased system security.",
       "Updated Android Security Patch to September 2021. Increased system security."
     ],
     "status bar, Notification shade": [
@@ -90,8 +74,8 @@
       "Fix: Buttons weren't always displayed correctly on the notifications when Dark mode was on"
     ],
     "Settings": [
-      "Fix: UI issues that appeared while adding corporate Wi-Fi networks",
-      "Fix: Some accounts couldn't be synced",
+      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
+      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
       "Fix: Crashes occurred when the default map was selected"
     ],
     "Lock screen": [
@@ -135,20 +119,11 @@
       "修復: 懸浮通知圓角缺失的異常",
       "修復: 第三方主題下收到懸浮通知時，偶現背景異常的問題",
       "修復: 抬起螢幕亮起時偶現鎖定螢幕通知閃動的異常",
-      "修復: 深色模式下，通知按鈕偶發顯示異常的問題",
-      "優化: 通知中心與第三方主題的相容性",
-      "優化: 通知提醒與深色模式的相容",
-      "修復: 應用鎖導致通知大小背景不一致的異常",
-      "修復: 一鍵清理動畫掉幀的問題",
-      "修復: 螢幕鎖定時無法下拉通知欄的問題",
-      "修復: 未接來電懸浮權限開啟失敗的異常",
-      "修復: 播放音樂時，通知欄偶發不顯示媒體控制面板的異常",
-      "修復: 抬起螢幕亮起時偶現鎖定螢幕通知閃動的異常",
       "修復: 深色模式下，通知按鈕偶發顯示異常的問題"
     ],
     "設定": [
-      "修復: Wi-Fi 增加網路時選擇“企業級加密”會導致域名框太窄的問題",
-      "修復: 部分應用的帳號無法同步到“帳號與同步”中的問題",
+      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
+      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
       "修復: 在“應用管理-默認打開鏈接”頁面中選擇“地圖”選項時頁面崩潰的問題"
     ],
     "鎖屏": [
@@ -161,12 +136,11 @@
   },
   "logs_ja": {
     "システム": [
-      "Androidのセキュリティパッチを2021年9月にアップデートしました。システムのセキュリティを強化しました。",
       "Androidのセキュリティパッチを2021年9月にアップデートしました。システムのセキュリティを強化しました。"
     ],
     "設定": [
-      "修正: 企業のWi-Fiネットワークを追加する際に表示されるUIの問題",
-      "修正: 一部のアカウントが同期できない問題",
+      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
+      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
       "修正: デフォルトの地図を選択するとクラッシュする問題"
     ],
     "ロック画面": [
@@ -190,7 +164,6 @@
   },
   "logs_ko": {
     "시스템": [
-      "Android 보안패치 (2021#09) 업데이트됨. 시스템 보안이 향상되었습니다.",
       "Android 보안패치 (2021#09) 업데이트됨. 시스템 보안이 향상되었습니다."
     ],
     "상태 바, 알림 바": [
@@ -210,20 +183,11 @@
       "수정: 알림 배지가 표시되지 않는 문제",
       "수정: 타사 테마 사용 중에 알림 수신 시 배경이 제대로 표시되지 않는 문제",
       "수정: \"손목 올려 켜기\" 사용 시에 알림이 제대로 표시되지 않는 문제",
-      "수정: 다크 모드가 켜져있는 경우 알림에 버튼이 제대로 표시되지 않는 문제",
-      "최적화: 알림 바와 타사 테마의 호환성",
-      "최적화: 알림을 위한 다크 모드 조정",
-      "수정: 앱 잠금을 사용 중일 시 알림이 제대로 표시되지 않는 문제",
-      "수정: 클리너 애니메이션이 제대로 표시되지 않는 문제",
-      "수정: 일부 상황에서 알림 바가 열리지 않는 문제",
-      "수정: 부재중 통화 후의 권한 문제",
-      "수정: 플레이어의 컨트롤이 알림바에 표시되지 않을 수있는 문제",
-      "수정: \"손목 올려 켜기\" 사용 시에 알림이 제대로 표시되지 않는 문제",
       "수정: 다크 모드가 켜져있는 경우 알림에 버튼이 제대로 표시되지 않는 문제"
     ],
     "설정": [
-      "수정: 기업 Wi-Fi 네트워크 추가 시에 발생하는 UI 문제",
-      "수정: 일부 계정이 동기화되지 않는 문제",
+      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
+      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
       "수정: 기본 맵 선택 시 발생하는 충돌 문제"
     ],
     "잠금화면": [
@@ -236,7 +200,6 @@
   },
   "logs_ru": {
     "Система": [
-      "Обновление системы безопасности Android (сентябрь 2021 года). Улучшена безопасность системы.",
       "Обновление системы безопасности Android (сентябрь 2021 года). Улучшена безопасность системы."
     ],
     "строка состояния, шторка уведомлений": [
@@ -259,8 +222,8 @@
       "Исправлено: При активации темного режима некоторые кнопки на уведомлениях могли не отображаться"
     ],
     "Настройки": [
-      "Исправлено: Ошибки интерфейса, которые появились при добавлении корпоративных сетей Wi-Fi",
-      "Исправлено: Сбои синхронизации некоторых аккаунтов",
+      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
+      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
       "Исправлено: Сбои в работе системы при выборе карт по умолчанию"
     ],
     "Экран блокировки": [
@@ -284,12 +247,11 @@
   },
   "logs_uk": {
     "Система": [
-      "Оновлено патч безпеки Android за вересень 2021 року. Збільшено безпеку системи.",
       "Оновлено патч безпеки Android за вересень 2021 року. Збільшено безпеку системи."
     ],
     "Налаштування": [
-      "Виправлено: Помилки інтерфейсу, які з'явилися під час додавання корпоративних мереж Wi-Fi",
-      "Виправлено: Помилки синхронізації деяких акаунтів",
+      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
+      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
       "Виправлено: Посилки в роботі системи під час вибору карт за замовчуванням"
     ],
     "Екран блокування": [
@@ -313,7 +275,6 @@
   },
   "logs_pl": {
     "System": [
-      "Zaktualizowano Pakiet Bezpieczeństwa Android do września 2021 r. Zwiększono bezpieczeństwo systemu.",
       "Zaktualizowano Pakiet Bezpieczeństwa Android do września 2021 r. Zwiększono bezpieczeństwo systemu."
     ],
     "pasek powiadomień,panel powiadomień": [
@@ -336,8 +297,8 @@
       "Naprawiono: Przyciski w Powiadomieniach nie zawsze były wyświetlane poprawnie w Trybie ciemnym"
     ],
     "Ustawienia": [
-      "Naprawiono: Problemy w interfejsem, które pojawiały się podczas dodawania firmowych sieci Wi-Fi",
-      "Naprawiono: Nie udało się zsynchronizować niektórych kont",
+      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
+      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
       "Naprawiono: Po wybraniu domyślnej mapy występowały awarie"
     ],
     "Ekran blokady": [
@@ -376,12 +337,12 @@
       "Behoben: Wiedergabesteuerung wurde nicht immer in der Benachrichtigungsleiste angezeigt",
       "Behebung: Benachrichtigungs-Badges wurden nicht immer angezeigt",
       "Behebung: Hintergründe wurden bei eingehenden Benachrichtigungen mit Drittanbieter-Themes nicht korrekt angezeigt",
-      "Fix: Notifications weren't always displayed correctly when \"Raise to wake\" was used",
+      "Behoben: Benachrichtigungen wurden bei Verwendung von „Zum Aufwecken anheben“ nicht immer korrekt angezeigt",
       "Behoben: Schaltflächen wurden bei aktiviertem Dunkelmodus nicht immer korrekt in den Benachrichtigungen angezeigt"
     ],
     "Einstellungen": [
-      "Behebung: UI-Probleme beim Hinzufügen von Firmen-WLAN-Netzwerken",
-      "Behebung: Einige Konten konnten nicht synchronisiert werden",
+      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
+      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
       "Behebung: Abstürze bei Auswahl der Standardkarte"
     ],
     "System": [
@@ -402,13 +363,12 @@
       "Behoben: Der Benachrichtigungsbereich ließ sich in manchen Fällen nicht öffnen",
       "Behoben: Probleme mit Berechtigungen nach verpassten Anrufen",
       "Behoben: Wiedergabesteuerung wurde nicht immer in der Benachrichtigungsleiste angezeigt",
-      "Fix: Notifications weren't always displayed correctly when \"Raise to wake\" was used",
+      "Behoben: Benachrichtigungen wurden bei Verwendung von „Zum Aufwecken anheben“ nicht immer korrekt angezeigt",
       "Behoben: Schaltflächen wurden bei aktiviertem Dunkelmodus nicht immer korrekt in den Benachrichtigungen angezeigt"
     ]
   },
   "logs_fr": {
     "Système": [
-      "Patch de Sécurité Android mis à jour pour septembre 2021. Amélioration du système de sécurité.",
       "Patch de Sécurité Android mis à jour pour septembre 2021. Amélioration du système de sécurité."
     ],
     "Barre d'état, Panneau de notification": [
@@ -428,20 +388,11 @@
       "Réparé: Les badges de notification n'apparaissaient pas toujours",
       "Réparé: Les arrière-plans ne s'affichaient pas correctement lorsque les notifications arrivaient et que des thèmes tiers étaient utilisés",
       "Réparé: Les notifications ne s'affichaient pas toujours correctement lorsque \"Lever pour activer\" était utilisé",
-      "Réparé: Les boutons ne s'affichaient pas toujours correctement sur les notifications lorsque le mode sombre était activé",
-      "Optimisation: Compatibilité des thèmes tiers pour le panneau de notification",
-      "Optimisation: Réglages du mode sombre pour les notifications",
-      "Réparé: Les notifications ne s'affichaient pas correctement lorsque le verrouillage de l'application était utilisé",
-      "Réparé: Les animations plus propres ne s'affichaient pas correctement",
-      "Réparé: Le volet de notification n'a pas pu être ouvert dans certains cas",
-      "Réparé: Problèmes avec les autorisations après des appels manqués",
-      "Réparé: Les commandes du lecteur n'étaient pas toujours affichées dans le Panneau de notification",
-      "Réparé: Les notifications ne s'affichaient pas toujours correctement lorsque \"Lever pour activer\" était utilisé",
       "Réparé: Les boutons ne s'affichaient pas toujours correctement sur les notifications lorsque le mode sombre était activé"
     ],
     "Paramètres": [
-      "Réparé: Problèmes d'interface utilisateur apparus lors de l'ajout de réseaux Wi-Fi d'entreprise",
-      "Réparé: Certains comptes n'ont pas pu être synchronisés",
+      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
+      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
       "Réparé: Des plantages se sont produits lorsque la carte par défaut a été sélectionnée"
     ],
     "Écran de verrouillage": [
@@ -454,7 +405,6 @@
   },
   "logs_it": {
     "Sistema": [
-      "Patch di sicurezza Android aggiornata a settembre 2021. Maggiore sicurezza del sistema.",
       "Patch di sicurezza Android aggiornata a settembre 2021. Maggiore sicurezza del sistema."
     ],
     "barra di stato, area delle notifiche": [
@@ -477,8 +427,8 @@
       "Risolto: I pulsanti non venivano sempre visualizzati correttamente nelle notifiche con la modalità scura attiva"
     ],
     "Impostazioni": [
-      "Risolto: Problemi di interfaccia utente che comparivano durante l'aggiunta di reti Wi-Fi aziendali",
-      "Risolto: Alcuni account non potevano essere sincronizzati",
+      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
+      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
       "Risolto: Si verificavano arresti anomali quando veniva selezionata la mappa predefinita"
     ],
     "Schermata di blocco": [
@@ -502,7 +452,6 @@
   },
   "logs_es": {
     "Sistema": [
-      "Parche de seguridad de Android actualizado a septiembre de 2021. Seguridad del sistema incrementada.",
       "Parche de seguridad de Android actualizado a septiembre de 2021. Seguridad del sistema incrementada."
     ],
     "barra de estado, barra de notificaciones": [
@@ -525,8 +474,8 @@
       "Reparado: Los botones no siempre se mostraban correctamente en las notificaciones cuando el Modo oscuro estaba activado"
     ],
     "Ajustes": [
-      "Reparado: Problemas de la interfaz de usuario que aparecían al añadir redes Wi-Fi corporativas",
-      "Reparado: Algunas cuentas no podían ser sincronizadas",
+      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
+      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
       "Reparado: Se producían bloqueos cuando se seleccionaba el mapa predeterminado"
     ],
     "Pantalla de bloqueo": [
@@ -550,7 +499,6 @@
   },
   "logs_pt": {
     "Sistema": [
-      "Patch de Segurança do Android atualizado para Setembro de 2021. Segurança do sistema aprimorada.",
       "Patch de Segurança do Android atualizado para Setembro de 2021. Segurança do sistema aprimorada."
     ],
     "Barra de status e Área de notificações": [
@@ -573,8 +521,8 @@
       "Correção: Os botões não eram sempre exibidos corretamente nas notificações quando o Modo Escuro estava ativado"
     ],
     "Configurações": [
-      "Correção: Problemas na IU que apareciam ao adicionar redes Wi-Fi corporativas",
-      "Correção: Algumas contas não podiam ser sincronizadas",
+      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
+      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
       "Correção: Travamentos ocorriam quando o mapa padrão era selecionado"
     ],
     "Tela de bloqueio": [
@@ -598,7 +546,6 @@
   },
   "logs_tr": {
     "Sistem": [
-      "Android Güvenlik Patch'i Eylül 2021'de güncellendi. Sistem güvenliği arttırıldı.",
       "Android Güvenlik Patch'i Eylül 2021'de güncellendi. Sistem güvenliği arttırıldı."
     ],
     "durum çubuğu, Bildirim çubuğu": [
@@ -621,8 +568,8 @@
       "Onarım: Karanlık mod açık olduğunda tuşlar bildirimlerde her zaman düzgün bir şekilde görüntülenmedi"
     ],
     "Ayarlar": [
-      "Onarım: Kurumsal Wi-Fi ağları ekleniyorken görünen kullanıcı arayüzü sorunları",
-      "Onarım: Bazı hesaplar senkronize edilemedi",
+      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
+      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
       "Onarım: Varsayılan harita seçildiğinde çökmeler oluştu"
     ],
     "Kilit ekranı": [
@@ -646,7 +593,6 @@
   },
   "logs_id": {
     "Sistem": [
-      "Patch Keamanan Android diperbarui (September 2021). Keamanan sistem ditingkatkan.",
       "Patch Keamanan Android diperbarui (September 2021). Keamanan sistem ditingkatkan."
     ],
     "bar status, layar notifikasi": [
@@ -669,8 +615,8 @@
       "Perbaikan: Tombol tidak selalu ditampilkan dengan benar di notifikasi saat mode Gelap dihidupkan"
     ],
     "Pengaturan": [
-      "Perbaikan: Masalah antarmuka (UI) yang timbul saat menambahkan jaringan Wi-Fi perusahaan",
-      "Perbaikan: Beberapa akun tidak disinkronkan",
+      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
+      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
       "Perbaikan: Tutup paksa terjadi saat peta default dipilih"
     ],
     "Layar kunci": [
@@ -694,12 +640,11 @@
   },
   "logs_vi": {
     "Hệ thống": [
-      "Cập nhật Bản vá bảo mật Android đến tháng 9 năm 2021. Tăng cường bảo mật hệ thống.",
       "Cập nhật Bản vá bảo mật Android đến tháng 9 năm 2021. Tăng cường bảo mật hệ thống."
     ],
     "Cài đặt": [
-      "Sửa: Sự cố giao diện người dùng xuất hiện khi thêm mạng Wi-Fi doanh nghiệp",
-      "Sửa: Một vài tài khoản không thể đồng bộ",
+      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
+      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
       "Sửa: Xảy ra lỗi khi bản đồ mặc định được chọn"
     ],
     "Màn hình khóa": [
@@ -723,12 +668,11 @@
   },
   "logs_th": {
     "ระบบ": [
-      "อัปเดตแพทช์ความปลอดภัยของแอนดรอยด์เป็นกันยายน 2021 เพิ่มความปลอดภัยของระบบ",
       "อัปเดตแพทช์ความปลอดภัยของแอนดรอยด์เป็นกันยายน 2021 เพิ่มความปลอดภัยของระบบ"
     ],
     "การตั้งค่า": [
-      "แก้ไข: ปัญหา UI ที่ปรากฏขึ้นขณะเพิ่มเครือข่าย Wi-Fi ขององค์กร",
-      "แก้ไข: ไม่สามารถซิงค์บางบัญชีได้",
+      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
+      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
       "แก้ไข: เกิดปัญหาเมื่อเลือกแผนที่เริ่มต้น"
     ],
     "ล็อคหน้าจอ": [
@@ -752,7 +696,6 @@
   },
   "logs_ar": {
     "النظام": [
-      "تم تحديث تصحيح أمان الأندرويد إلى سبتمبر 2021 لزيادة أمان النظام.",
       "تم تحديث تصحيح أمان الأندرويد إلى سبتمبر 2021 لزيادة أمان النظام."
     ],
     "وشريط الإشعارات، ومركز الإشعارات": [
@@ -775,8 +718,8 @@
       "الإصلاح: مشكلة عدم عرض الأزرار بشكل صحيح في الإشعارات عند تشغيل الوضع الداكن"
     ],
     "الإعدادات": [
-      "الإصلاح: مشاكل واجهة المستخدم أثناء إضافة شبكات Wi-Fi للشركات",
-      "الإصلاح: مشكلة عدم مزامنة بعض الحسابات",
+      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
+      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
       "الإصلاح: تعطل النظام عند تحديد الخريطة الافتراضية"
     ],
     "شاشة القفل": [
@@ -800,7 +743,6 @@
   },
   "logs_in": {
     "सिस्टम": [
-      "Android सुरक्षा पैच को सितंबर 2021 से अपडेट किया गया. सिस्टम की सुरक्षा बढ़ा दी गई है.",
       "Android सुरक्षा पैच को सितंबर 2021 से अपडेट किया गया. सिस्टम की सुरक्षा बढ़ा दी गई है."
     ],
     "स्टेटस बार, सूचना शेड": [
@@ -820,20 +762,11 @@
       "ठीक करें सूचना बैज हमेशा दिखाई नहीं देते थे",
       "ठीक करें सूचनाएं आने और तृतीय पक्ष के थीम्स का उपयोग किए जाने पर बैकग्राउंड ठीक से नहीं दिख रहे थे",
       "ठीक करें \"जगाने के लिए उठाएं\" का उपयोग किए जाने पर सूचनाएं सही ढंग से नहीं दिख रहीं थीं",
-      "ठीक करें डार्क मोड चालू होने पर सूचनाओं पर बटन हमेशा सही ढंग से नहीं दिखाई दे रहे थे",
-      "ऑप्टिमाइज़ेशन सूचना शेड के लिए तृतीय पक्ष थीम संगतता",
-      "ऑप्टिमाइज़ेशन सूचनाओं के लिए डार्क मोड एडजस्टमेंट",
-      "ठीक करें ऐप्प लॉक का उपयोग किए जाने पर सूचनाएं सही ढंग से नहीं दिख रहीं थीं",
-      "ठीक करें क्लीनर एनिमेशन सही ढंग से नहीं दिख रहे थे",
-      "ठीक करें कुछ मामलों में सूचना शेड नहीं खुल रहा था",
-      "ठीक करें छूटी कॉल के बाद अनुमतियों की समस्याएं",
-      "ठीक करें सूचना शेड में खिलाड़ी के नियंत्रण हमेशा नहीं दिखाई दे रहे थे",
-      "ठीक करें \"जगाने के लिए उठाएं\" का उपयोग किए जाने पर सूचनाएं सही ढंग से नहीं दिख रहीं थीं",
       "ठीक करें डार्क मोड चालू होने पर सूचनाओं पर बटन हमेशा सही ढंग से नहीं दिखाई दे रहे थे"
     ],
     "सेटिंग्स": [
-      "ठीक करें कॉर्पोरेट वाई-फ़ाई नेटवर्क जोड़ते समय दिखाई देने वाली UI समस्याएं",
-      "ठीक करें कुछ खाते सिंक नहीं किए जा सके",
+      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
+      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
       "ठीक करें डिफ़ॉल्ट मैप को चुने जाने पर क्रैश हो रहे थे"
     ],
     "लॉक स्क्रीन": [
@@ -862,20 +795,11 @@
       "Fix: Notification badges didn't always appear",
       "Fix: Backgrounds weren't displayed correctly when notifications arrived and third party themes were used",
       "Fix: Notifications weren't always displayed correctly when \"Raise to wake\" was used",
-      "Fix: Buttons weren't always displayed correctly on the notifications when Dark mode was on",
-      "Optimization: Third party theme compatibility for Notification shade",
-      "Optimization: Dark mode adjustments for notifications",
-      "Fix: Notifications weren't displayed correctly when App lock was used",
-      "Fix: Cleaner animations weren't displayed correctly",
-      "Fix: Notification shade couldn't be opened in some cases",
-      "Fix: Issues with permissions after missed calls",
-      "Fix: Player controls weren't always displayed in the Notification shade",
-      "Fix: Notifications weren't always displayed correctly when \"Raise to wake\" was used",
       "Fix: Buttons weren't always displayed correctly on the notifications when Dark mode was on"
     ],
     "تەڭشەك": [
-      "Fix: UI issues that appeared while adding corporate Wi-Fi networks",
-      "Fix: Some accounts couldn't be synced",
+      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
+      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
       "Fix: Crashes occurred when the default map was selected"
     ],
     "سىستېما": [
@@ -907,20 +831,11 @@
       "Fix: Notification badges didn't always appear",
       "Fix: Backgrounds weren't displayed correctly when notifications arrived and third party themes were used",
       "Fix: Notifications weren't always displayed correctly when \"Raise to wake\" was used",
-      "Fix: Buttons weren't always displayed correctly on the notifications when Dark mode was on",
-      "Optimization: Third party theme compatibility for Notification shade",
-      "Optimization: Dark mode adjustments for notifications",
-      "Fix: Notifications weren't displayed correctly when App lock was used",
-      "Fix: Cleaner animations weren't displayed correctly",
-      "Fix: Notification shade couldn't be opened in some cases",
-      "Fix: Issues with permissions after missed calls",
-      "Fix: Player controls weren't always displayed in the Notification shade",
-      "Fix: Notifications weren't always displayed correctly when \"Raise to wake\" was used",
       "Fix: Buttons weren't always displayed correctly on the notifications when Dark mode was on"
     ],
-    "Settings": [
-      "Fix: UI issues that appeared while adding corporate Wi-Fi networks",
-      "Fix: Some accounts couldn't be synced",
+    "སྒྲིག་སྟངས།": [
+      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
+      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
       "Fix: Crashes occurred when the default map was selected"
     ],
     "རིམ་ལུགས": [

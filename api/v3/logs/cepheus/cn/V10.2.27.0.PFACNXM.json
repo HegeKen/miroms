@@ -11,30 +11,23 @@
       "修复 横屏状态下无法正常打开指纹快捷功能的问题",
       "修复 息屏下偶现指纹解锁失败的问题",
       "修复 锁屏上来电时偶现屏幕无法亮起的问题",
-      "修复 锁屏上动态壁纸偶现黑屏的问题",
-      "修复 解锁进入横屏界面时有异常闪亮的问题",
-      "修复 息屏设置页面，双时钟预览图数字折行的问题",
-      "修复 横屏状态下无法正常打开指纹快捷功能的问题",
-      "修复 息屏下偶现指纹解锁失败的问题",
-      "修复 锁屏上来电时偶现屏幕无法亮起的问题",
       "修复 锁屏上动态壁纸偶现黑屏的问题"
     ],
     "其他": [
-      "提高系统的稳定性",
-      "优化系统的流畅度"
+      "提升系统的安全性和稳定性"
     ]
   },
   "logs_en": {
     "System": [
       "Optimization: Lock screen pocket mode",
       "Updated Android Security Patch to May 2019. Increased system security.",
-      "Updated Android Security Patch to May 2019. Increased system security."
+      "更新谷歌安全补丁（2019#6），提升系统安全性"
     ],
     "Lockscreen, Status Bar, Notification Bar": [
       "Fix: Errors occurred after unlocking device in landscape mode",
       "Fix: Issues with overlapping in Dual Clock settings",
-      "Optimized system performance",
-      "Improved system security and stability",
+      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
+      "Fix: Fingerprint unlock didn't always work with the screen off",
       "Fix: Screen didn't always light up for notifications",
       "Fix: Screen went black in some cases when video wallpapers were used"
     ],
@@ -47,7 +40,6 @@
       "Fix: Screen went black in some cases when video wallpapers were used"
     ],
     "Other": [
-      "Optimized system performance",
       "Improved system security and stability"
     ]
   },
@@ -55,7 +47,7 @@
     "系統": [
       "優化 鎖屏誤觸問題，避免手機在口袋中發生螢幕誤操作",
       "更新Android安全性修補程式等級(2019#5)，提升系統安全性",
-      "更新Android安全性修補程式等級(2019#5)，提升系統安全性"
+      "更新Android安全性修補程式等級(2019#6)，提升系統安全性"
     ],
     "解鎖畫面、狀態欄、通知欄": [
       "修復 解鎖進入橫向螢幕介面時有異常閃亮的問題",
@@ -66,41 +58,38 @@
       "修復 螢幕鎖定上動態壁紙偶現黑屏的問題"
     ],
     "其他": [
-      "改善系統的穩定性",
-      "優化系統的流暢度"
+      "Improved system security and stability"
     ]
   },
   "logs_ja": {
     "システム": [
-      "Android セキュリティパッチを 2019 年 5 月に更新しました。システムの安全性が向上しました。"
+      "Android セキュリティパッチを 2019 年 6 月に更新しました。システムの安全性が向上しました。"
     ],
     "ロック画面、ステータスバー、通知シェード": [
-      "Fix: Errors occurred after unlocking device in landscape mode",
+      "修正: ロック解除して横向き画面に入るときに異常なちらつきが発生する問題",
       "修正: 常時表示設定ページのデュアルクロックプレビューで数字が折り返される問題",
-      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
-      "Fix: Fingerprint unlock didn't always work with the screen off",
-      "Fix: Screen didn't always light up for notifications",
-      "Fix: Screen went black in some cases when video wallpapers were used"
+      "横向き時に指紋ショートカットが正常に開けない問題を修正",
+      "修正: 画面オフ時に指紋認証によるロック解除が失敗することがある問題",
+      "ロック画面での着信時に画面が点灯しないことがある問題を修正",
+      "ロック画面のライブ壁紙で画面が黒くなる場合がある問題を修正"
     ],
     "その他": [
-      "システムパフォーマンスの最適化",
       "システムのセキュリティと安定性の向上"
     ]
   },
   "logs_ko": {
     "시스템": [
-      "Android 보안 패치를 2019년 5월로 업데이트했습니다. 시스템 보안이 향상되었습니다."
+      "Android 보안 패치를 2019년 6월로 업데이트했습니다. 시스템 보안이 향상되었습니다."
     ],
     "잠금화면, 상태 바, 알림 바": [
-      "Fix: Errors occurred after unlocking device in landscape mode",
+      "수정: 잠금 해제 후 가로 화면으로 진입할 때 비정상적으로 깜빡이는 문제",
       "수정: 상시 표시 설정 페이지의 듀얼 클록 미리보기에서 숫자가 줄바꿈되는 문제",
-      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
-      "Fix: Fingerprint unlock didn't always work with the screen off",
-      "Fix: Screen didn't always light up for notifications",
-      "Fix: Screen went black in some cases when video wallpapers were used"
+      "가로 모드에서 지문 바로가기가 정상적으로 열리지 않던 문제를 수정",
+      "수정: 화면이 꺼진 상태에서 지문 잠금 해제가 간헐적으로 실패하는 문제",
+      "잠금 화면에서 전화 수신 시 화면이 켜지지 않는 문제를 수정했습니다",
+      "잠금 화면의 라이브 배경화면 사용 시 화면이 간헐적으로 검게 변하는 문제를 수정했습니다"
     ],
     "기타": [
-      "시스템 성능 최적화",
       "시스템 보안 및 안정성 개선"
     ]
   },
@@ -108,7 +97,7 @@
     "Система": [
       "Оптимизация: Режим \"В кармане\"",
       "Обновление системы безопасности Android (может 2019 года). Улучшена безопасность системы.",
-      "Обновление системы безопасности Android (может 2019 года). Улучшена безопасность системы."
+      "Обновление системы безопасности Android (июнь 2019 года). Улучшена безопасность системы."
     ],
     "Экран блокировки, строка состояния, шторка уведомлений": [
       "Исправлено: При разблокировке устройства в альбомной ориентации могли происходить различные ошибки",
@@ -119,75 +108,70 @@
       "Исправлено: В некоторых случаях при использовании видеообоев экран мог становиться черным"
     ],
     "Другое": [
-      "Оптимизация производительности системы",
       "Улучшение безопасности и стабильности системы"
     ]
   },
   "logs_uk": {
     "Система": [
-      "Updated Android Security Patch to May 2019. Increased system security."
+      "Оновлено патч безпеки Android до червня 2019 року. Підвищено безпеку системи."
     ],
     "Екран блокування, рядок стану, панель сповіщень": [
-      "Fix: Errors occurred after unlocking device in landscape mode",
+      "Виправлено: ненормальне мерехтіння під час розблокування та переходу до горизонтального інтерфейсу",
       "Виправлено: проблему з перенесенням цифр у попередньому перегляді подвійного годинника на сторінці налаштувань режиму завжди активного екрана",
-      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
-      "Fix: Fingerprint unlock didn't always work with the screen off",
-      "Fix: Screen didn't always light up for notifications",
-      "Fix: Screen went black in some cases when video wallpapers were used"
+      "Виправлено: ярлики відбитка пальця не працювали в альбомній орієнтації.",
+      "Виправлено: розблокування відбитком пальця іноді не працювало, коли екран вимкнено",
+      "Виправлено: екран іноді не вмикався під час вхідного виклику на екрані блокування",
+      "Виправлено: Екран іноді ставав чорним під час використання динамічних шпалер на екрані блокування"
     ],
     "Інше": [
-      "Оптимізація продуктивності системи",
       "Покращення безпеки та стабільності системи"
     ]
   },
   "logs_pl": {
     "System": [
-      "Updated Android Security Patch to May 2019. Increased system security."
+      "Zaktualizowano poprawkę zabezpieczeń Androida do czerwca 2019. Zwiększono bezpieczeństwo systemu."
     ],
     "Ekran blokady, pasek powiadomień,panel powiadomień": [
-      "Fix: Errors occurred after unlocking device in landscape mode",
+      "Naprawiono: Nieprawidłowe migotanie podczas odblokowywania i przechodzenia do interfejsu poziomego",
       "Poprawka: problem z zawijaniem cyfr w podglądzie podwójnego zegara na stronie ustawień ekranu Always-On",
-      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
-      "Fix: Fingerprint unlock didn't always work with the screen off",
-      "Fix: Screen didn't always light up for notifications",
-      "Fix: Screen went black in some cases when video wallpapers were used"
+      "Poprawka: skróty odcisku palca nie działały w orientacji poziomej.",
+      "Naprawiono: Odblokowywanie odciskiem palca czasami nie działało przy wyłączonym ekranie",
+      "Naprawiono: ekran czasami nie włączał się przy połączeniu przychodzącym na ekranie blokady",
+      "Naprawiono: Ekran czasami stawał się czarny podczas korzystania z dynamicznych tapet na ekranie blokady"
     ],
     "Inne": [
-      "Zoptymalizowana wydajność systemu",
       "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
   "logs_de": {
     "System": [
-      "Android-Sicherheitspatch auf Mai 2019 aktualisiert. Systemischerheit erhöht."
+      "Android-Sicherheitspatch auf Juni 2019 aktualisiert. Systemsicherheit verbessert."
     ],
     "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
-      "Fix: Errors occurred after unlocking device in landscape mode",
+      "Behebung: Ungewöhnliches Flackern beim Entsperren und Wechsel in die Querformat-Oberfläche",
       "Behebt: Zeilenumbruch der Ziffern in der Doppeluhr-Vorschau auf der Always-On-Display-Einstellungsseite",
-      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
-      "Fix: Fingerprint unlock didn't always work with the screen off",
+      "Fehler behoben: Fingerabdruck-Schnellfunktionen funktionierten im Querformat nicht.",
+      "Behoben: Fingerabdruckentsperrung schlug bei ausgeschaltetem Bildschirm gelegentlich fehl",
       "Behoben: Bildschirm leuchtete bei Benachrichtigungen nicht immer auf",
       "Behoben: Bei Videohintergründen wurde der Bildschirm in manchen Fällen schwarz"
     ],
     "Sonstiges": [
-      "Systemleistung optimiert",
       "Systemsicherheit und -stabilität verbessert"
     ]
   },
   "logs_fr": {
     "Système": [
-      "Correctif de sécurité Android mis à jour à mai 2019. Sécurité du système renforcée."
+      "Mise à jour du correctif de sécurité Android jusqu'en juin 2019. Sécurité accrue du système."
     ],
     "Écran de verrouillage, Barre d'état, Panneau de notification": [
-      "Fix: Errors occurred after unlocking device in landscape mode",
+      "Correction : scintillement anormal lors du déverrouillage et du passage à l’interface paysage",
       "Correction : problème de retour à la ligne des chiffres dans l’aperçu de la double horloge sur la page de réglages de l’écran toujours activé",
-      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
-      "Fix: Fingerprint unlock didn't always work with the screen off",
+      "Correction : les raccourcis d'empreinte digitale ne fonctionnaient pas en mode paysage.",
+      "Correction : le déverrouillage par empreinte digitale échouait parfois lorsque l'écran est éteint",
       "Corrigé : L'écran ne s'allumait pas toujours pour les notifications",
       "Corrigé : L'écran devenait noir dans certains cas avec les fonds d'écran vidéo"
     ],
     "Autre": [
-      "Performances système optimisées",
       "Sécurité et stabilité du système améliorées"
     ]
   },
@@ -195,7 +179,7 @@
     "Sistema": [
       "Ottimizzazione: Modalità Tasca schermata di blocco",
       "Aggiornamento della patch di sicurezza Android a Maggio 2019. Maggiore sicurezza del sistema.",
-      "Aggiornamento della patch di sicurezza Android a Maggio 2019. Maggiore sicurezza del sistema."
+      "Aggiornamento della patch di sicurezza Android a giugno 2019. Maggiore sicurezza del sistema."
     ],
     "Schermata di blocco, barra di stato, area delle notifiche": [
       "Risolto: Si verificavano degli errori dopo lo sblocco del dispositivo in modalità orizzontale",
@@ -206,7 +190,6 @@
       "Risolto: Lo schermo diventava nero in alcuni casi quando venivano utilizzati gli sfondi video"
     ],
     "Altro": [
-      "Prestazioni di sistema ottimizzate",
       "Maggiore sicurezza e stabilità di sistema"
     ]
   },
@@ -214,7 +197,7 @@
     "Sistema": [
       "Optimización: Pantalla de bloqueo en Modo bolsillo",
       "Parche de seguridad de Android actualizado a Mayo de 2019. Seguridad del sistema incrementada.",
-      "Parche de seguridad de Android actualizado a Mayo de 2019. Seguridad del sistema incrementada."
+      "Parche de seguridad de Android actualizado a junio de 2019. Seguridad del sistema incrementada."
     ],
     "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
       "Reparado: Ocurrían errores después de desbloquear el dispositivo en el modo paisaje",
@@ -225,24 +208,22 @@
       "Reparado: La pantalla se volvía negra en algunos casos cuando se usaban fondos de pantalla de vídeo"
     ],
     "Otros": [
-      "Rendimiento del sistema optimizado",
       "Estabilidad y seguridad del sistema mejorada"
     ]
   },
   "logs_pt": {
     "Sistema": [
-      "Updated Android Security Patch to May 2019. Increased system security."
+      "Atualização do Patch de Segurança do Android para Junho de 2019. Segurança do sistema aprimorada."
     ],
     "Tela de bloqueio, Barra de status e Área de notificações": [
-      "Fix: Errors occurred after unlocking device in landscape mode",
+      "Correção: cintilação anormal ao desbloquear e entrar na interface horizontal",
       "Correção: problema de quebra de linha dos números na prévia do Relógio duplo na página de configurações da tela sempre ativa",
-      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
-      "Fix: Fingerprint unlock didn't always work with the screen off",
-      "Fix: Screen didn't always light up for notifications",
-      "Fix: Screen went black in some cases when video wallpapers were used"
+      "Correção: os atalhos de impressão digital não funcionavam no modo paisagem.",
+      "Correção: o desbloqueio por impressão digital às vezes falhava com a tela desligada",
+      "Correção: a tela às vezes não acendia ao receber chamadas na tela de bloqueio",
+      "Correção: A tela ficava preta às vezes ao usar papéis de parede dinâmicos na tela de bloqueio"
     ],
     "Outros": [
-      "Desempenho do sistema aprimorado",
       "Segurança e estabilidade do sistema aprimoradas"
     ]
   },
@@ -250,7 +231,7 @@
     "Sistem": [
       "Optimizasyon: Kilit ekranı cep modu",
       "Android Güvenlik Yaması Mayıs 2019 sürümüne güncellendi. Sistem güvenliği artırıldı.",
-      "Android Güvenlik Yaması Mayıs 2019 sürümüne güncellendi. Sistem güvenliği artırıldı."
+      "Android Güvenlik Yaması Haziran 2019 sürümüne güncellendi. Sistem güvenliği artırıldı."
     ],
     "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
       "Onarım: Manzara modunda cihaz kilidi açıldıktan sonra hata oluştu",
@@ -261,115 +242,108 @@
       "Onarım: Video duvar kağıtları kullanıldığında, bazı durumlarda ekran karardı"
     ],
     "Diğer": [
-      "Sistem performansı optimize edildi",
       "Sistem güvenliği ve kararlılığı geliştirildi"
     ]
   },
   "logs_id": {
     "Sistem": [
-      "Updated Android Security Patch to May 2019. Increased system security."
+      "Patch Keamanan Android diperbarui hingga Juni 2019. Keamanan sistem ditingkatkan."
     ],
     "Layar kunci, bar status, layar notifikasi": [
-      "Fix: Errors occurred after unlocking device in landscape mode",
+      "Perbaikan: Kedipan tidak normal saat membuka kunci dan masuk ke antarmuka lanskap",
       "Perbaikan: Masalah angka terlipat pada pratinjau Jam Ganda di halaman pengaturan Layar Selalu Aktif",
-      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
-      "Fix: Fingerprint unlock didn't always work with the screen off",
-      "Fix: Screen didn't always light up for notifications",
-      "Fix: Screen went black in some cases when video wallpapers were used"
+      "Perbaikan: pintasan sidik jari tidak berfungsi dalam orientasi lanskap.",
+      "Perbaikan: Pembukaan kunci sidik jari terkadang gagal saat layar mati",
+      "Perbaikan: Layar terkadang tidak menyala saat ada panggilan masuk di layar kunci",
+      "Perbaikan: Layar terkadang menjadi hitam saat wallpaper dinamis digunakan di layar kunci"
     ],
     "Lainnya": [
-      "Performa sistem dioptimalkan",
       "Keamanan dan stabilitas sistem ditingkatkan"
     ]
   },
   "logs_vi": {
     "Hệ thống": [
-      "Updated Android Security Patch to May 2019. Increased system security."
+      "Đã cập nhật bản vá bảo mật Android lên tháng 6 năm 2019. Tăng cường bảo mật hệ thống."
     ],
     "Màn hình khóa, thanh trạng thái, thanh thông báo": [
-      "Fix: Errors occurred after unlocking device in landscape mode",
+      "Sửa: nhấp nháy bất thường khi mở khóa và vào giao diện ngang",
       "Sửa lỗi: Vấn đề số bị xuống dòng trong bản xem trước Đồng hồ kép tại trang cài đặt Màn hình luôn bật",
-      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
-      "Fix: Fingerprint unlock didn't always work with the screen off",
-      "Fix: Screen didn't always light up for notifications",
-      "Fix: Screen went black in some cases when video wallpapers were used"
+      "Sửa lỗi: phím tắt vân tay không hoạt động ở chế độ ngang.",
+      "Sửa lỗi: Mở khóa bằng vân tay đôi khi không thành công khi tắt màn hình",
+      "Sửa lỗi: Màn hình đôi khi không sáng khi có cuộc gọi đến trên màn hình khóa",
+      "Sửa lỗi: Màn hình đôi khi bị đen khi dùng hình nền động trên màn hình khóa"
     ],
     "Khác": [
-      "Tối ưu hiệu suất hệ thống",
       "Cải thiện tính ổn định và bảo mật hệ thống"
     ]
   },
   "logs_th": {
     "ระบบ": [
-      "Updated Android Security Patch to May 2019. Increased system security."
+      "อัปเดตแพตช์ความปลอดภัยของ Google (2019#6) เพื่อเพิ่มความปลอดภัยของระบบ"
     ],
     "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
-      "Fix: Errors occurred after unlocking device in landscape mode",
+      "แก้ไข: อาการกะพริบผิดปกติเมื่อปลดล็อกและเข้าสู่หน้าจอแนวนอน",
       "แก้ไข: ปัญหาตัวเลขตัดขึ้นบรรทัดใหม่ในตัวอย่างนาฬิกาคู่บนหน้าการตั้งค่าจอแสดงผลตลอดเวลา",
-      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
-      "Fix: Fingerprint unlock didn't always work with the screen off",
-      "Fix: Screen didn't always light up for notifications",
-      "Fix: Screen went black in some cases when video wallpapers were used"
+      "แก้ไข: ทางลัดลายนิ้วมือไม่ทำงานในโหมดแนวนอน",
+      "แก้ไข: การปลดล็อกด้วยลายนิ้วมือบางครั้งล้มเหลวเมื่อหน้าจอดับ",
+      "แก้ไขปัญหาหน้าจอบางครั้งไม่ติดเมื่อมีสายเข้าในหน้าจอล็อก",
+      "แก้ไข: หน้าจอเป็นสีดำเป็นครั้งคราวเมื่อใช้วอลเปเปอร์แบบไดนามิกบนหน้าจอล็อก"
     ],
     "อื่นๆ": [
-      "เพิ่มประสิทธิภาพของระบบ",
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
     ]
   },
   "logs_ar": {
     "النظام": [
-      "Updated Android Security Patch to May 2019. Increased system security."
+      "تحديث تصحيح أمان Google (2019#6) لتحسين أمان النظام"
     ],
     "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
-      "Fix: Errors occurred after unlocking device in landscape mode",
+      "إصلاح مشكلة الوميض غير الطبيعي عند فتح القفل والدخول إلى واجهة الوضع الأفقي",
       "إصلاح التفاف الأرقام في معاينة الساعة المزدوجة بصفحة إعدادات شاشة العرض الدائم",
-      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
-      "Fix: Fingerprint unlock didn't always work with the screen off",
-      "Fix: Screen didn't always light up for notifications",
-      "Fix: Screen went black in some cases when video wallpapers were used"
+      "إصلاح مشكلة عدم عمل اختصارات البصمة بشكل صحيح في الوضع الأفقي",
+      "إصلاح: فشل فتح القفل بالبصمة أحيانًا عند إطفاء الشاشة",
+      "إصلاح: تعذّر إضاءة الشاشة أحيانًا عند ورود مكالمة على شاشة القفل",
+      "إصلاح: تحول الشاشة إلى السوداء أحيانًا عند استخدام خلفيات متحركة على شاشة القفل"
     ],
     "أخرى": [
-      "تحسين أداء النظام",
       "تحسين أمن واستقرار النظام"
     ]
   },
   "logs_in": {
     "सिस्टम": [
-      "Updated Android Security Patch to May 2019. Increased system security."
+      "Google सुरक्षा पैच (2019#6) को अपडेट करके सिस्टम सुरक्षा बढ़ाएं।"
     ],
     "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
-      "Fix: Errors occurred after unlocking device in landscape mode",
+      "ठीक किया गया: अनलॉक करके लैंडस्केप इंटरफ़ेस में जाने पर असामान्य झिलमिलाहट की समस्या",
       "ठीक किया गया: ऑलवेज़-ऑन डिस्प्ले सेटिंग्स पेज पर डुअल क्लॉक प्रीव्यू में संख्याओं के रैपिंग की समस्या।",
-      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
-      "Fix: Fingerprint unlock didn't always work with the screen off",
-      "Fix: Screen didn't always light up for notifications",
-      "Fix: Screen went black in some cases when video wallpapers were used"
+      "सुधार: लैंडस्केप मोड में फिंगरप्रिंट शॉर्टकट ठीक से काम नहीं कर रहे थे।",
+      "सुधार: स्क्रीन बंद होने पर फ़िंगरप्रिंट अनलॉक कभी-कभी विफल होने की समस्या",
+      "लॉक स्क्रीन पर आने वाली कॉल के दौरान स्क्रीन कभी-कभी नहीं जलने की समस्या ठीक की गई",
+      "लॉक स्क्रीन पर डायनामिक वॉलपेपर उपयोग करते समय कभी-कभी स्क्रीन काली होने की समस्या ठीक की गई"
     ],
     "अन्य": [
-      "सिस्टम परफ़ॉर्मेंस ऑप्टिमाइज़ किया गया है",
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
     ]
   },
   "logs_ug": {
     "سىستېما": [
-      "Updated Android Security Patch to May 2019. Increased system security."
+      "Google بىخەتەرلىك ياماقىسىنى (2019#6) يېڭىلاپ، سىستېما بىخەتەرلىكىنى ئاشۇرۇش"
     ],
     "Lockscreen, status bar, Notification shade": [
-      "Fix: Errors occurred after unlocking device in landscape mode",
+      "قۇلۇپنى ئېچىپ تەتۈر ئېكران كۆرۈنۈشىگە كىرگەندە ئادەتتىن تاشقىرى پارلىشىش مەسىلىسى تۈزىتىلدى",
       "ئېكران ئۆچۈش تەڭشەكلىرى بېتىدىكى قوش سائەت ئالدىن كۆرۈنۈش رەسىمىدىكى سانلارنىڭ قۇر ئالمىشىش مەسىلىسىنى تۈزىتىش",
-      "Fix: Fingerprint shortcuts didn't work in landscape orientation",
-      "Fix: Fingerprint unlock didn't always work with the screen off",
-      "Fix: Screen didn't always light up for notifications",
-      "Fix: Screen went black in some cases when video wallpapers were used"
+      "يان تەرەپ ھالەتتە بارماق ئىزى تېز يوللارنى نورمال ئاچالماسلىق مەسىلىسى تۈزىتىلدى",
+      "ئېكران ئۆچۈپ تۇرغاندا بارماق ئىزى ئارقىلىق قۇلۇپ ئېچىش بەزىدە مەغلۇپ بولىدىغان مەسىلە تۈزىتىلدى",
+      "قۇلۇپ ئېكرانىدا تېلېفون كەلگەندە ئېكراننىڭ ئاندا-ساندا يورۇپ كەتمەسلىك مەسىلىسى ئوڭشالدى.",
+      "قۇلۇپ ئېكرانىدىكى ھەرىكەتچان تەگلىكتە بەزىدە قارا ئېكران كۆرۈلۈش مەسىلىسى تۈزىتىلدى."
     ],
     "باشقىلىرى": [
-      "سىستېمىنىڭ مۇقىملىقىنى ئاشۇرۇش",
-      "سىستېما راۋانلىقىنى ئەلالاشتۇرۇش"
+      "Improved system security and stability"
     ]
   },
   "logs_bo": {
     "རིམ་ལུགས": [
-      "Updated Android Security Patch to May 2019. Increased system security."
+      "Google བདེ་འཇགས་པེ་ཅི (2019#6) གསར་སྣོན་བྱས་ཏེ་མ་ལག་གི་བདེ་འཇགས་ཡར་རྒྱས་གཏོང་བ།"
     ],
     "Lockscreen, status bar, Notification shade": [
       "Fix: Errors occurred after unlocking device in landscape mode",
@@ -380,7 +354,6 @@
       "Fix: Screen went black in some cases when video wallpapers were used"
     ],
     "གཞན།": [
-      "Optimized system performance",
       "Improved system security and stability"
     ]
   }
