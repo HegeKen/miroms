@@ -165,34 +165,35 @@ def _roms_by_dev_week() -> Dict[Tuple[int, int], List[Tuple]]:
 	return grouped
 
 
-def _localized_logs(logs_value: Any) -> Dict[str, Dict[str, List[str]]]:
-	"""dev.logs 的 ID 引用结构 -> {语言列: {模块: [条目, ...]}}。"""
-	if not logs_value:
-		return {}
-	try:
-		return LogStore.build_localized(json.loads(logs_value))
-	except (json.JSONDecodeError, TypeError):
-		return {}
+def _paired_modules(logs_value: Any) -> List[Tuple[str, str, List[Tuple[str, str]]]]:
+	"""dev.logs 的 ID 引用结构 -> 按位置对齐的 [(模块zh, 模块en, [(条目zh, 条目en), ...]), ...]。
 
-
-def _pair_modules(
-	zh_modules: Dict[str, List[str]],
-	en_modules: Dict[str, List[str]],
-) -> List[Tuple[str, str, List[str], List[str]]]:
-	"""把中英模块按出现顺序配对，返回 [(模块zh, 模块en, 条目zh列表, 条目en列表), ...]。
-
-	中英模块名/条目数不一定对齐（例如中文有 4 个模块、英文只回落 1 个），
-	按下标配对、缺失处用中文兜底，保证两个参考站点的日志区块都能渲染。
+	直接按引用位置同时取中英文原文：位置的语言掩码未声明英文、或该行没有英文文本时，
+	英文返回空字符串，不再用中文兜底（否则英文位会重复出现中文，模块也可能错配）。
 	"""
-	zh_items = list(zh_modules.items())
-	en_items = list(en_modules.items())
-	paired: List[Tuple[str, str, List[str], List[str]]] = []
-	for index, (module_zh, entries_zh) in enumerate(zh_items):
-		if index < len(en_items):
-			module_en, entries_en = en_items[index]
-		else:
-			module_en, entries_en = module_zh, []
-		paired.append((module_zh, module_en, entries_zh, entries_en))
+	if not logs_value:
+		return []
+	try:
+		pairs = json.loads(logs_value)
+	except (json.JSONDecodeError, TypeError):
+		return []
+
+	en_bit = 1 << LogStore.LANG_INDEX[LogStore.EN_COLUMN]
+	paired: List[Tuple[str, str, List[Tuple[str, str]]]] = []
+	for module, entries, mask in LogStore.decode_structure(pairs):
+		module_zh = module['texts'].get(LogStore.ZH_COLUMN) or ''
+		if not module_zh:
+			continue
+		has_en = bool(mask & en_bit)
+		module_en = (module['texts'].get(LogStore.EN_COLUMN) or '') if has_en else ''
+		changes: List[Tuple[str, str]] = []
+		for entry in entries:
+			entry_zh = entry['texts'].get(LogStore.ZH_COLUMN) or ''
+			if not entry_zh:
+				continue
+			entry_en = (entry['texts'].get(LogStore.EN_COLUMN) or '') if has_en else ''
+			changes.append((entry_zh, entry_en))
+		paired.append((module_zh, module_en, changes))
 	return paired
 
 
@@ -415,17 +416,14 @@ def export_v1_weekly_weeks() -> int:
 				'fastboot': str(rom[7] or ''),
 			})
 
-		localized = _localized_logs(logs)
 		modules = []
-		for module_zh, module_en, entries_zh, entries_en in _pair_modules(
-			localized.get('logs_zh') or {}, localized.get('logs_en') or {}
-		):
+		for module_zh, module_en, changes in _paired_modules(logs):
 			modules.append({
 				'zh-cn': module_zh,
 				'en-us': module_en,
 				'changes': [
-					{'zh-cn': zh, 'en-us': entries_en[i] if i < len(entries_en) else zh}
-					for i, zh in enumerate(entries_zh)
+					{'zh-cn': zh, 'en-us': en}
+					for zh, en in changes
 				],
 			})
 
@@ -632,16 +630,13 @@ def export_v2_dev_weeks() -> int:
 				},
 			})
 
-		localized = _localized_logs(logs)
 		log_groups = []
-		for module_zh, module_en, entries_zh, entries_en in _pair_modules(
-			localized.get('logs_zh') or {}, localized.get('logs_en') or {}
-		):
+		for module_zh, module_en, changes in _paired_modules(logs):
 			log_groups.append({
 				'module': {'zh': module_zh, 'en': module_en},
 				'log': [
-					{'zh': zh, 'en': entries_en[i] if i < len(entries_en) else zh}
-					for i, zh in enumerate(entries_zh)
+					{'zh': zh, 'en': en}
+					for zh, en in changes
 				],
 			})
 
