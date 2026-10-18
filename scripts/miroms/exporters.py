@@ -1,7 +1,6 @@
 import json
 import logging
 import re
-from datetime import datetime
 from functools import cmp_to_key
 from pathlib import Path
 from typing import Set, List, Tuple, Dict, Any
@@ -10,7 +9,7 @@ from miroms.database import DatabaseManager
 from miroms.constants import branches
 from miroms.data import unreleased, DEVICE_NAME_ALIASES
 from miroms.logs_store import LogStore
-from miroms.utils import FileUtils
+from miroms.utils import FileUtils, beijing_now
 
 # 导出目录基准路径（使用绝对路径，避免 cwd 依赖）
 _EXPORT_BASE = Path(FileUtils.get_base_path()) / "data" / "api"
@@ -545,7 +544,7 @@ def export_dev() -> Dict[str, Any]:
 				})
 
 		index = {
-				"generatedAt": datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+				"generatedAt": beijing_now().strftime('%Y-%m-%d %H:%M:%S'),
 				"total": len(weeks),
 				"latest": weeks[0]["week"] if weeks else 0,
 				"oldest": weeks[-1]["week"] if weeks else 0,

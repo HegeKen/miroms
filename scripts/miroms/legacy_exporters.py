@@ -35,7 +35,7 @@ from typing import Any, Dict, List, Optional, Tuple
 
 from miroms.database import DatabaseManager
 from miroms.logs_store import LogStore
-from miroms.utils import FileUtils
+from miroms.utils import FileUtils, beijing_now
 
 logger = logging.getLogger(__name__)
 
@@ -330,7 +330,7 @@ def export_v1_index() -> Optional[Dict[str, Any]]:
 		'week': latest['week'],
 		'period': latest['period'],
 		'nextperiod': f'{next_monday}-{next_sunday}',
-		'date': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+		'date': beijing_now().strftime('%Y-%m-%d %H:%M:%S'),
 		'stable': latest['stable'],
 	}
 	_write_json(_EXPORT_BASE / 'v1' / 'index.json', payload)
@@ -695,7 +695,7 @@ def export_v2_index() -> Optional[Dict[str, Any]]:
 
 	payload = {
 		'recent': {
-			'time': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+			'time': beijing_now().strftime('%Y-%m-%d %H:%M:%S'),
 			'developing': 'no',
 			'roms': sorted_roms,
 		}
@@ -762,7 +762,7 @@ def export_hub_sitelog() -> Optional[Dict[str, Any]]:
 		return None
 
 	payload: Dict[str, Any] = {
-		'generatedAt': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+		'generatedAt': beijing_now().strftime('%Y-%m-%d %H:%M:%S'),
 		'sites': sites,
 	}
 	_write_json(_EXPORT_BASE / 'v3' / 'sitelog.json', payload)
@@ -812,7 +812,7 @@ def export_tools() -> Optional[Dict[str, Any]]:
 		})
 
 	payload: Dict[str, Any] = {
-		'generatedAt': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+		'generatedAt': beijing_now().strftime('%Y-%m-%d %H:%M:%S'),
 		'source': 'api/v1/tools.json',
 		'tools': tools,
 	}

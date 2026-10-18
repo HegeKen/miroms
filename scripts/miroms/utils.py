@@ -4,8 +4,23 @@ from sys import platform
 from datetime import datetime, timedelta, date
 from pathlib import Path
 from typing import List, Tuple, Dict, Optional
+from zoneinfo import ZoneInfo
 
 from miroms.constants import _const
+
+
+# ==================== 0. 时间工具 ====================
+
+BEIJING_TZ = ZoneInfo('Asia/Shanghai')
+
+
+def beijing_now() -> datetime:
+		"""当前北京时间（Asia/Shanghai）。
+
+		导出产物中的 generatedAt / date / time 等「生成时刻」统一用它，
+		避免依赖运行机器的系统时区（服务器可能是 UTC）。
+		"""
+		return datetime.now(BEIJING_TZ)
 
 
 # ==================== 1. 版本处理工具类 ====================
