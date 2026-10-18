@@ -9,6 +9,7 @@ maintain_logs.py - logs 表日常维护的统一入口（体检 / 内容 / 掩�
                      加 --clean-invalid 则删除「模块行已没有该语言文本」的无效位；
   * ids              把 logs.id 压成连续 1..N，并同步重写 roms.logs / dev.logs 引用；
   * unused           删除没有被任何 ROM / 开发版周报引用的日志行；
+  * dangling         删除引用里指向已不存在 logs 行的模块 / 条目（悬空引用）；
   * auto-increment   把 logs.AUTO_INCREMENT 归位到 MAX(id)+1；
   * merge            按显式分组把若干 id 合并成一行（真实译文优先，引用自动重写）；
   * snapshot         把当前所有 roms/dev 的多语言日志拍成 JSON 快照；
@@ -29,6 +30,7 @@ maintain_logs.py - logs 表日常维护的统一入口（体检 / 内容 / 掩�
     python3 scripts/maintain_logs.py ids                    # 只看会压缩多少个 id
     python3 scripts/maintain_logs.py ids --apply
     python3 scripts/maintain_logs.py unused --apply
+    python3 scripts/maintain_logs.py dangling --apply
     python3 scripts/maintain_logs.py auto-increment --apply
     python3 scripts/maintain_logs.py merge --groups "11040:1" --apply
     python3 scripts/maintain_logs.py snapshot --out /tmp/logs_before.json
@@ -47,7 +49,7 @@ from miroms.logs_maintenance import LogMaintenance
 from miroms.logs_store import LogStore
 
 ACTIONS = ('audit', 'complete', 'content', 'prefix', 'masks', 'ids', 'unused',
-		   'auto-increment', 'merge', 'snapshot', 'compare')
+		   'dangling', 'auto-increment', 'merge', 'snapshot', 'compare')
 
 
 def ts() -> str:
@@ -234,6 +236,25 @@ def run_unused(args) -> int:
 	return 0
 
 
+def run_dangling(args) -> int:
+	result = LogMaintenance.prune_dangling(apply=False)
+	print(f"[{ts()}] 悬空引用：{result['owners']} 条 roms/dev，涉及 "
+		  f"{result['missing_ids']} 个已删除 id；将删除 {result['positions']} 个模块位置 / "
+		  f"{result['entries']} 个条目（{result['owners_empty']} 条引用会被清空）")
+	if not args.apply or not result['owners']:
+		if result['owners']:
+			print('加 --apply 清理（写库前自动备份）')
+		return 0
+	result = LogMaintenance.prune_dangling(
+		apply=True, batch=args.batch, backup=not args.no_backup,
+		backup_path=args.backup)
+	if result.get('backup'):
+		print(f"[{ts()}] 备份已写入 {result['backup']}")
+	print(f"[{ts()}] 完成：重写 roms {result['refs'].get('roms', 0)} 行 / "
+		  f"dev {result['refs'].get('dev', 0)} 行")
+	return 0
+
+
 def run_auto_increment(args) -> int:
 	before = LogMaintenance.auto_increment('logs')
 	stats = LogMaintenance.table_stats('logs')
@@ -368,6 +389,8 @@ def main() -> int:
 		return run_ids(args)
 	if args.action == 'unused':
 		return run_unused(args)
+	if args.action == 'dangling':
+		return run_dangling(args)
 	if args.action == 'merge':
 		return run_merge(args)
 	if args.action == 'snapshot':

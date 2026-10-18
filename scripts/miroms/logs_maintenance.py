@@ -19,7 +19,7 @@ miroms.logs_maintenance - logs 表维护（去重 / 引用重写 / 内容一致�
 - 内容：``content_issues`` / ``repair_content``（以 logs_zh 为准重建 content）
 - 掩码：``mask_issues`` / ``fill_masks``（只增不减，新掩码 = 原掩码 | 公共语言掩码）
 - id：``table_stats`` / ``id_gaps`` / ``auto_increment`` / ``fix_auto_increment`` / ``compact_ids``
-- 清理：``prune_unused``
+- 清理：``prune_unused``（无人引用的行）/ ``prune_dangling``（指向已删除行的引用）
 - 对比：``export_snapshot`` / ``compare_snapshots``（维护前后导出逐字对比，检测内容丢失）
 - 体检：``audit``（重复 / 悬空引用 / 坏 JSON / 孤儿行 / 内容不一致 / 掩码 / id 空档）
 
@@ -288,6 +288,88 @@ class LogMaintenance:
 					on_progress(table, last_id, stats[table])
 		if any(stats.values()):
 			LogStore.refresh_cache()
+		return stats
+
+	@classmethod
+	def prune_dangling(cls, rows: Optional[Dict[int, Dict[str, Any]]] = None,
+					   apply: bool = False,
+					   batch: int = 500,
+					   backup: bool = True,
+					   backup_path: Optional[str] = None) -> Dict[str, Any]:
+		"""删除引用里指向已不存在 logs 行的模块 / 条目
+
+		prune_unused 处理的是「没人引用」的行；这里处理相反方向：历史维护曾直接
+		删行却没改写引用，留下指向不存在 id 的悬空位置。导出侧 build_localized
+		本来就静默跳过这些 id，因此清理不改变现有导出内容，只是让引用结构与
+		logs 表重新对齐。
+
+		模块 id 不存在时删除整个位置；条目 id 不存在时只删除对应条目；
+		位置被删空的 owner 写回 NULL。
+		"""
+		rows = rows if rows is not None else cls.load_rows()
+		owners = cls.load_owners()
+		stats: Dict[str, Any] = {
+			'owners': 0,
+			'positions': 0,
+			'entries': 0,
+			'owners_empty': 0,
+			'missing_ids': 0,
+			'refs': {table: 0 for table in REFERENCE_TABLES},
+			'backup': None,
+		}
+		missing_ids: Set[int] = set()
+		updates: Dict[str, List[Tuple[Optional[str], int]]] = {
+			table: [] for table in REFERENCE_TABLES}
+		for (table, owner_id), refs in owners.items():
+			output: List[Any] = []
+			dropped_positions = 0
+			dropped_entries = 0
+			for item in refs:
+				if not (isinstance(item, list) and len(item) >= 2):
+					output.append(item)
+					continue
+				try:
+					module_id = int(item[0])
+					entries = [int(x) for x in item[1]]
+				except (TypeError, ValueError):
+					output.append(item)
+					continue
+				if module_id not in rows:
+					missing_ids.add(module_id)
+					dropped_positions += 1
+					continue
+				kept: List[int] = []
+				for entry_id in entries:
+					if entry_id in rows:
+						kept.append(entry_id)
+					else:
+						missing_ids.add(entry_id)
+						dropped_entries += 1
+				output.append([module_id, kept] + list(item[2:]))
+			if not (dropped_positions or dropped_entries):
+				continue
+			stats['owners'] += 1
+			stats['positions'] += dropped_positions
+			stats['entries'] += dropped_entries
+			if not output:
+				stats['owners_empty'] += 1
+			if apply and table in updates:
+				updates[table].append((
+					json.dumps(output, ensure_ascii=False) if output else None, owner_id))
+		stats['missing_ids'] = len(missing_ids)
+		if not apply or not stats['owners']:
+			return stats
+		if backup:
+			stats['backup'] = cls.backup(backup_path)
+		for table, items in updates.items():
+			if table not in REFERENCE_TABLES:
+				continue
+			stats['refs'][table] = len(items)
+			for index in range(0, len(items), batch):
+				DatabaseManager.execute_many(
+					f"UPDATE `{table}` SET `logs` = %s WHERE `id` = %s",
+					items[index:index + batch], raise_on_error=True)
+		LogStore.refresh_cache()
 		return stats
 
 	# ==================== 去重 ====================
