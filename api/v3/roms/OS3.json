@@ -1629,7 +1629,7 @@
     "release": "2026-09-24",
     "aspatch": "2026-08-01",
     "recovery": "xuanyuan-ota_full-OS3.0.314.0.WOACNXM-user-16.0-9f74d1725b.zip",
-    "fastboot": ""
+    "fastboot": "xuanyuan_images_OS3.0.314.0.WOACNXM_20260911.0000.00_16.0_cn_de93edd1bb.tgz"
   },
   {
     "os": "OS3",
@@ -2519,7 +2519,7 @@
     "release": "2026-09-10",
     "aspatch": "2026-08-01",
     "recovery": "turner-ota_full-OS3.0.310.0.WAOCNXM-user-16.0-ec27187eb7.zip",
-    "fastboot": ""
+    "fastboot": "turner_images_OS3.0.310.0.WAOCNXM_20260903.0000.00_16.0_cn_8827084ffb.tgz"
   },
   {
     "os": "OS3",
@@ -4324,6 +4324,30 @@
     "release": "2026-06-30",
     "aspatch": "2026-06-01",
     "recovery": "chagall-ota_full-OS3.0.307.5.WPTCNXM-user-16.0-54f10a18f9.zip",
+    "fastboot": ""
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
+    "device": "fuxi",
+    "name": {
+      "zh": "小米 13",
+      "en": "Xiaomi 13"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "version": "OS3.0.307.0.WMCMIXM",
+    "android": "16.0",
+    "region": "global",
+    "zone": "2",
+    "branchName": {
+      "zh": "国际正式版",
+      "en": "Global Stable"
+    },
+    "release": "2026-10-16",
+    "aspatch": "2026-08-01",
+    "recovery": "fuxi_global-ota_full-OS3.0.307.0.WMCMIXM-user-16.0-9fc6b1672f.zip",
     "fastboot": ""
   },
   {
@@ -7710,6 +7734,30 @@
   {
     "os": "OS3",
     "bigver": "HyperOS 3",
+    "device": "aurora",
+    "name": {
+      "zh": "小米 14 Ultra / Ultra Ti",
+      "en": "Xiaomi 14 Ultra"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "version": "OS3.0.305.0.WNAMIXM",
+    "android": "16.0",
+    "region": "global",
+    "zone": "2",
+    "branchName": {
+      "zh": "国际正式版",
+      "en": "Global Stable"
+    },
+    "release": "2026-10-15",
+    "aspatch": "2026-08-01",
+    "recovery": "aurora_global-ota_full-OS3.0.305.0.WNAMIXM-user-16.0-aca7dbd69c.zip",
+    "fastboot": ""
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
     "device": "degas",
     "name": {
       "zh": "小米 14T",
@@ -7753,7 +7801,7 @@
     "release": "2026-10-10",
     "aspatch": "2026-09-01",
     "recovery": "amethyst_dc_global-ota_full-OS3.0.305.0.WOPMIDC-user-16.0-d840d7d005.zip",
-    "fastboot": ""
+    "fastboot": "amethyst_dc_global_images_OS3.0.305.0.WOPMIDC_20260917.0000.00_16.0_global_dc_13a52ccf12.tgz"
   },
   {
     "os": "OS3",
@@ -10503,6 +10551,54 @@
     "brand": [
       "Xiaomi"
     ],
+    "version": "OS3.0.304.0.WOSMIDC",
+    "android": "16.0",
+    "region": "global",
+    "zone": "2",
+    "branchName": {
+      "zh": "国际 DC 正式版",
+      "en": "Global DC Stable"
+    },
+    "release": "2026-10-20",
+    "aspatch": "2026-10-01",
+    "recovery": "klimt_dc_global-ota_full-OS3.0.304.0.WOSMIDC-user-16.0-bb7998f7ed.zip",
+    "fastboot": ""
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
+    "device": "brussels",
+    "name": {
+      "zh": "REDMI Note 17 Pro Max",
+      "en": "REDMI Note 17 Pro Max"
+    },
+    "brand": [
+      "REDMI"
+    ],
+    "version": "OS3.0.304.0.WDRMIDC",
+    "android": "16.0",
+    "region": "global",
+    "zone": "2",
+    "branchName": {
+      "zh": "国际 DC 正式版",
+      "en": "Global DC Stable"
+    },
+    "release": "2026-10-20",
+    "aspatch": "2026-08-01",
+    "recovery": "brussels_dc_global-ota_full-OS3.0.304.0.WDRMIDC-user-16.0-e8c87ca820.zip",
+    "fastboot": ""
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
+    "device": "klimt",
+    "name": {
+      "zh": "小米 15T Pro",
+      "en": "Xiaomi 15T Pro"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
     "version": "OS3.0.304.0.WOSMXAT",
     "android": "16.0",
     "region": "mx",
@@ -10514,6 +10610,30 @@
     "release": "2026-10-16",
     "aspatch": "2026-10-01",
     "recovery": "klimt_mx_at_global-ota_full-OS3.0.304.0.WOSMXAT-user-16.0-511e8a4be4.zip",
+    "fastboot": ""
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
+    "device": "dash",
+    "name": {
+      "zh": "REDMI Turbo 5 MAX",
+      "en": "REDMI Turbo 5 MAX"
+    },
+    "brand": [
+      "REDMI"
+    ],
+    "version": "OS3.0.304.0.WPLEUXM",
+    "android": "16.0",
+    "region": "eea",
+    "zone": "2",
+    "branchName": {
+      "zh": "欧洲EEA正式版",
+      "en": "Europe EEA Stable"
+    },
+    "release": "2026-10-16",
+    "aspatch": "2026-09-01",
+    "recovery": "dash_eea_global-ota_full-OS3.0.304.0.WPLEUXM-user-16.0-caedf0dab5.zip",
     "fastboot": ""
   },
   {
@@ -15062,6 +15182,30 @@
   {
     "os": "OS3",
     "bigver": "HyperOS 3",
+    "device": "sheng",
+    "name": {
+      "zh": "小米平板 6S Pro 12.4",
+      "en": "Xiaomi Pad 6S Pro 12.4"
+    },
+    "brand": [
+      "Xiaomi"
+    ],
+    "version": "OS3.0.303.0.WNXRUXM",
+    "android": "16.0",
+    "region": "ru",
+    "zone": "2",
+    "branchName": {
+      "zh": "俄罗斯正式版",
+      "en": "Russia Stable"
+    },
+    "release": "2026-10-13",
+    "aspatch": "2026-09-01",
+    "recovery": "sheng_ru_global-ota_full-OS3.0.303.0.WNXRUXM-user-16.0-e497805814.zip",
+    "fastboot": ""
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
     "device": "brussels",
     "name": {
       "zh": "REDMI Note 17 Pro Max",
@@ -16062,7 +16206,7 @@
     "release": "2026-09-30",
     "aspatch": "2026-08-01",
     "recovery": "zircon_global-ota_full-OS3.0.303.0.WNOMIXM-user-16.0-22a3670018.zip",
-    "fastboot": ""
+    "fastboot": "zircon_global_images_OS3.0.303.0.WNOMIXM_20260922.0000.00_16.0_global_da40a2ec41.tgz"
   },
   {
     "os": "OS3",
@@ -22446,6 +22590,30 @@
     "release": "2026-10-19",
     "aspatch": "2026-10-01",
     "recovery": "malachite_mx_at_global-ota_full-OS3.0.302.0.WOOMXAT-user-16.0-68f81d518f.zip",
+    "fastboot": ""
+  },
+  {
+    "os": "OS3",
+    "bigver": "HyperOS 3",
+    "device": "spinel",
+    "name": {
+      "zh": "REDMI Note 15 4G",
+      "en": "REDMI Note 15 4G"
+    },
+    "brand": [
+      "REDMI"
+    ],
+    "version": "OS3.0.302.0.WPGMIDC",
+    "android": "16.0",
+    "region": "global",
+    "zone": "2",
+    "branchName": {
+      "zh": "国际 DC 正式版",
+      "en": "Global DC Stable"
+    },
+    "release": "2026-10-16",
+    "aspatch": "2026-10-01",
+    "recovery": "spinel_dc_global-ota_full-OS3.0.302.0.WPGMIDC-user-16.0-022cf3a4ed.zip",
     "fastboot": ""
   },
   {
@@ -47144,7 +47312,7 @@
     "release": "2026-09-30",
     "aspatch": "2026-09-01",
     "recovery": "diting_global-ota_full-OS3.0.7.0.VLFMIXM-user-15.0-cfaa381681.zip",
-    "fastboot": ""
+    "fastboot": "diting_global_images_OS3.0.7.0.VLFMIXM_20260922.0000.00_15.0_global_8b2ce4e6dd.tgz"
   },
   {
     "os": "OS3",
@@ -48648,7 +48816,7 @@
     "release": "2026-09-30",
     "aspatch": "2026-09-01",
     "recovery": "diting_eea_global-ota_full-OS3.0.6.0.VLFEUXM-user-15.0-495c1db06b.zip",
-    "fastboot": ""
+    "fastboot": "diting_eea_global_images_OS3.0.6.0.VLFEUXM_20260922.0000.00_15.0_eea_63e476d0ff.tgz"
   },
   {
     "os": "OS3",
