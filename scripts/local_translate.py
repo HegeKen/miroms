@@ -214,6 +214,16 @@ def classify(task, args) -> str:
 	return 'ok'
 
 
+
+def to_traditional(text: str) -> str:
+	"""把模型输出的简体转成繁体（台湾用字）；OpenCC 缺失时原样返回"""
+	try:
+		from opencc import OpenCC
+
+		return OpenCC('s2twp').convert(text)
+	except Exception:  # noqa: BLE001 - 可选依赖
+		return text
+
 def run_one(task, client, args, cache):
 	key = task['key']
 	cached = cache.get(key)
@@ -227,6 +237,8 @@ def run_one(task, client, args, cache):
 		except LocalMTError as exc:
 			task['output'] = None
 			task['error'] = str(exc)[:300]
+	if task['output'] and not task['error'] and task['column'] == 'logs_zh_tw':
+		task['output'] = to_traditional(task['output'])
 	if task['output'] and not task['error']:
 		ok, reason = validate_translation(task['source'], task['output'], task['column'])
 		if not ok:

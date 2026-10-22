@@ -164,8 +164,8 @@
       "Fixed the text overlap issue on the Super Wallpaper landing point selection page when using large fonts."
     ],
     "Settings": [
-      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
-      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
+      "Fixed the issue where selecting “Enterprise-level encryption” when adding a WLAN network would result in the domain name field being too narrow.",
+      "Fixed an issue where some APP accounts could not be synchronized in the “Accounts and Sync” section.",
       "Fix: Crashes occurred when the default map was selected"
     ],
     "Lock screen": [
@@ -291,9 +291,9 @@
       "修復 分身空間中設定桌面壁紙異常顯示的問題",
       "修復 大字體時，超級桌布落點選擇頁文字重疊的問題"
     ],
-    "设置": [
-      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
-      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
+    "設定": [
+      "已修復以下問題：在通過 WLAN 新增網路時，如果選擇“企業級加密”（Enterprise-level encryption），會導致域名輸入框的寬度變得過窄（即使用者無法正常輸入域名）。",
+      "已修復部分應用程式賬號無法同步到“賬戶與同步”功能中的問題。",
       "修復: 在“應用管理-默認打開鏈接”頁面中選擇“地圖”選項時頁面崩潰的問題"
     ],
     "鎖屏": [
@@ -344,11 +344,6 @@
       "修復: 播放音樂時，通知欄偶發不顯示媒體控制面板的異常",
       "修復: 抬起螢幕亮起時偶現鎖定螢幕通知閃動的異常",
       "修復: 深色模式下，通知按鈕偶發顯示異常的問題"
-    ],
-    "設定": [
-      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
-      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
-      "修復: 在“應用管理-默認打開鏈接”頁面中選擇“地圖”選項時頁面崩潰的問題"
     ]
   },
   "logs_ja": {
@@ -397,8 +392,8 @@
       "修正: システムのフォントサイズを大に設定すると、セットアップ時にスーパー壁紙の説明が重なって表示される問題"
     ],
     "設定": [
-      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
-      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
+      "WLANのネットワーク追加時に「エンタープライズレベルの暗号化」を選択すると、ドメイン名入力欄が狭くなる問題を修正しました。",
+      "一部のアプリケーションのアカウントで、「アカウントと同期」機能にデータが同期されない問題を修正しました。",
       "修正: デフォルトの地図を選択するとクラッシュする問題"
     ],
     "ロック画面": [
@@ -411,7 +406,7 @@
       "修正: 再起動後に指紋アイコンが明るくなりすぎる問題",
       "修正: 指紋認証のアニメーションでクラッシュが発生する問題",
       "修正: 画面を横向きにして電源を切ったときに、指紋認証アイコンが表示されない、または正しく表示されない問題",
-      "Fix: Fingerprint icon didn't disappear after unlocking",
+      "アンロック後も指紋認証のアイコンがクリック可能であり、アニメーションや振動が表示される問題を修正しました。",
       "修正: ゲームで指紋認証を使用すると表示異常が発生する問題",
       "修正: いくつかのシーンでの指紋アニメーションに関する問題",
       "修正: SIMカードを挿入後、指紋認証と顔認証がオフになる問題",
@@ -496,8 +491,8 @@
       "수정: 시스템의 글꼴 크기를 크게 설정할 시, 설치 과정 중에 슈퍼 배경화면의 설명이 겹쳐 표시되는 문제"
     ],
     "설정": [
-      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
-      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
+      "WLAN 네트워크를 추가할 때 “엔터프라이즈급 암호화(Enterprise-level encryption)”를 선택하면 도메인 이름 입력 필드가 너무 좁아지는 문제가 수정되었습니다.",
+      "일부 앱 계정에서 “계정 및 동기화” 설정으로 데이터를 동기화할 수 없는 문제가 수정되었습니다.",
       "수정: 기본 맵 선택 시 발생하는 충돌 문제"
     ],
     "잠금화면": [
@@ -510,7 +505,7 @@
       "수정: 재부팅 후 지문 아이콘이 너무 밝게 표시되는 문제",
       "수정: 지문 잠금해제의 애니메이션에서 충돌이 발생하는 문제",
       "수정: 화면에서 가로 모드를 끈 후에 지문 아이콘이 나타나지 않거나 잘못 표시되는 문제",
-      "Fix: Fingerprint icon didn't disappear after unlocking",
+      "잠금 해제 후에도 지문 아이콘이 여전히 클릭 가능하며, 애니메이션과 함께 진동이 발생하는 문제를 수정했습니다.",
       "수정: 게이밍 중 지문 잠금해제를 사용 시 화면에 오류가 발생하는 문제",
       "수정: 여러 상황에서 발생하는 지문 애니메이션 오류 문제",
       "수정: SIM 카드를 장착한 후 지문 잠금해제 및 안면 인식 잠금해제가 꺼지는 문제",
@@ -595,8 +590,8 @@
       "Исправлено: Во время настройки суперобоев описание могло отображаться неправильно, если был выбран большой размер системного текста"
     ],
     "Настройки": [
-      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
-      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
+      "Исправлено: при добавлении сети по Wi-Fi и выборе варианта шифрования «Корпоративный уровень» окно для ввода доменного имени становится слишком узким.",
+      "Устранено проблему с некоторыми учетными записями приложений, которые не могут быть синхронизированы в разделе «Учетные записи и синхронизация».",
       "Исправлено: Сбои в работе системы при выборе карт по умолчанию"
     ],
     "Экран блокировки": [
@@ -609,7 +604,7 @@
       "Исправлено: После перезагрузки устройства значок отпечатка пальца отображался слишком ярко",
       "Исправлено: Анимация разблокировки при помощи отпечатка пальца могла приводить к ошибкам",
       "Исправлено: Значок отпечатка пальца не отображался или отображался неправильно, когда экран был выключен в альбомной ориентации",
-      "Fix: Fingerprint icon didn't disappear after unlocking",
+      "Устранено сообщение о том, что после разблокировки значок отпечатка пальца по-прежнему является доступным для клика и вызывает анимацию вибрации устройства.",
       "Исправлено: При разблокировке отпечатком пальца в играх могли появляться визуальные артефакты",
       "Исправлено: Неправильное отображение анимации отпечатка пальца",
       "Исправлено: После установки SIM-карты могла отключаться разблокировка по лицу и отпечатком пальца",
@@ -712,8 +707,8 @@
       "Виправлено: Під час налаштування супершпалер опис міг відображатися неправильно, якщо було вибрано великий розмір системного тексту"
     ],
     "Налаштування": [
-      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
-      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
+      "Виправлено проблему, коли під час додавання мережі через WLAN вибирається опція „Корпоративне шифрування“, що призводить до того, що поле для введення імені домену стає занадто вузьким.",
+      "Виправлено проблему з деякими обліковими записами додатків, які не можуть бути синхронізовані у розділі „Облікові записи та синхронізація“.",
       "Виправлено: Посилки в роботі системи під час вибору карт за замовчуванням"
     ],
     "Екран блокування": [
@@ -726,7 +721,7 @@
       "Виправлено: Після перезавантаження пристрою значок відбитка пальця відображався занадто яскраво",
       "Виправлено: Анімація розблокування за допомогою відбитка пальця могла призводити до помилок",
       "Виправлено: Значок відбитка пальця не відображався або відображався неправильно, коли екран був вимкнений в альбомній орієнтації",
-      "Fix: Fingerprint icon didn't disappear after unlocking",
+      "Виправлено проблему, коли після розблокування іконка відбитка пальця все ще може бути натиснута, при цьому відображається анімація та вібрація.",
       "Виправлено: Під час розблокування відбитком пальця в іграх могли з’явитися візуальні артефакти",
       "Виправлено: Неправильне відображення анімації відбитка пальця",
       "Виправлено: Після встановлення SIM-карти могла відключатися функція розблокування за допомогою обличчя або відбитком пальця",
@@ -829,8 +824,8 @@
       "Naprawiono: Gdy systemowy rozmiar czcionki został ustawiony na duży, opisy super tapet nakładały się podczas procesu konfiguracji"
     ],
     "Ustawienia": [
-      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
-      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
+      "Poprawiono problem, występujący podczas dodawania sieci over WiFi: wybór opcji „Kryptografia na poziomie korporacyjnym” powoduje, że pola dla adresu internetowego staje się zbyt wąskim.",
+      "Urzędnicy naprawili problemy z niektórymi kontami w aplikacjach, które nie mogły zostać synchronizowane w sekcji „Konta i synchronizacja”.",
       "Naprawiono: Po wybraniu domyślnej mapy występowały awarie"
     ],
     "Ekran blokady": [
@@ -843,7 +838,7 @@
       "Naprawiono: Po ponownym uruchomieniu ikona odcisku palca pojawiała się za jasna",
       "Naprawiono: Animacja odblokowania odciskiem palca doprowadziła do awarii",
       "Naprawiono: Ikona odcisku palca nie pojawiała się lub była wyświetlana nieprawidłowo, gdy ekran był wyłączony w trybie poziomym",
-      "Fix: Fingerprint icon didn't disappear after unlocking",
+      "Poprawiono problem, gdy po odblokowaniu ikona palca wskazującego nadal jest dostępna do kliknięcia, a wyświetla się animacja drżenia ekranu.",
       "Naprawiono: Nieprawidłowości w wyświetlaniu pojawiały się przy oblokowywaniu za pomocą odcisku palca podczas grania",
       "Naprawiono: Problemy z animacją odcisku palca w niektórych sytuacjach",
       "Naprawiono: Odblokowywanie przy pomocy odcisku palca i rozpoznawania twarzy były wyłączane po włożeniu karty SIM",
@@ -956,8 +951,8 @@
       "Das Problem überlappender Texte auf der Auswahlseite für den Landepunkt des Super-Hintergrunds bei großer Schrift wurde behoben."
     ],
     "Einstellungen": [
-      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
-      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
+      "Behebung des Problems: Wenn beim Hinzufügen eines WLAN-Netzwerks die Option „Unternehmensklasse-Verschlüsselung“ ausgewählt wird, wird das Feld für den Domainnamen zu schmal.",
+      "Behebung des Problems, bei dem einige APP-Konten nicht in der Rubrik „Konten und Synchronisierung“ synchronisiert werden können.",
       "Behebung: Abstürze bei Auswahl der Standardkarte"
     ],
     "Sperrbildschirm": [
@@ -1073,8 +1068,8 @@
       "Réparé: Lorsque la taille de la police du système était définie sur grande, les descriptions des super fonds d'écran se chevauchaient pendant le processus de configuration"
     ],
     "Paramètres": [
-      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
-      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
+      "Le problème a été résolu : lorsque l’on sélectionne « Chiffrement de niveau entreprise » lors de l’ajout d’un réseau Wi-Fi, la fenêtre destinée à saisir le nom de domaine devient trop étroite.",
+      "Problème résolu concernant certains comptes d'application qui ne pouvaient pas être synchronisés dans la section « Comptes et Synchronisation ».",
       "Réparé: Des plantages se sont produits lorsque la carte par défaut a été sélectionnée"
     ],
     "Écran de verrouillage": [
@@ -1087,7 +1082,7 @@
       "Réparé: L'icône d'empreinte digitale est apparue trop lumineuse après les redémarrages",
       "Réparé: L'animation de déverrouillage des empreintes digitales a entraîné des plantages",
       "Réparé: L'icône d'empreinte digitale n'apparaissait pas ou ne s'affichait pas correctement lorsque l'écran était éteint en mode paysage",
-      "Fix: Fingerprint icon didn't disappear after unlocking",
+      "Problème résolu : l’icône d’empreinte digitale reste clickable après déverrouillage, et une animation de vibration s’affiche toujours.",
       "Réparé: Des anomalies d'affichage se sont produites lorsque le déverrouillage par Empreinte digitale a été utilisé avec des jeux",
       "Réparé: Problèmes avec l'animation des empreintes digitales dans plusieurs scènes",
       "Réparé: Les empreintes digitales et le Déverrouillage facial ont été désactivés après l'installation d'une carte SIM",
@@ -1172,8 +1167,8 @@
       "Risolto: Quando la dimensione del carattere di sistema era impostata su grande, le descrizioni di Super sfondi si sovrapponevano durante il processo di installazione"
     ],
     "Impostazioni": [
-      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
-      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
+      "Risolto il problema: quando si aggiunge una rete tramite WLAN e si seleziona l’opzione “Crittografia a livello aziendale”, la casella per inserire il nome del dominio diventa troppo stretta.",
+      "Risolto il problema relativo ad alcuni account di app che non riescono a essere sincronizzati nella sezione “Account e Sincronizzazione”.",
       "Risolto: Si verificavano arresti anomali quando veniva selezionata la mappa predefinita"
     ],
     "Schermata di blocco": [
@@ -1186,7 +1181,7 @@
       "Risolto: L'icona dell'impronta digitale appariva troppo luminosa dopo il riavvio",
       "Risolto: L'animazione dello sblocco tramite impronta causava arresti anomali",
       "Risolto: L'icona dell'impronta digitale non appariva o veniva visualizzata in modo errato a schermo spento in modalità orizzontale",
-      "Fix: Fingerprint icon didn't disappear after unlocking",
+      "Risolto il problema per cui, anche dopo lo sblocco, l’icona relativa al rilevamento delle impronte digitali rimane cliccabile e visualizza un’animazione associata a una vibrazione.",
       "Risolto: Si verificavano anomalie di visualizzazione durante l'utilizzo dello sblocco tramite impronta con i giochi",
       "Risolto: Problemi con l'animazione delle impronte digitali in diversi scenari",
       "Risolto: L'impronta digitale e il riconoscimento facciale venivano disattivati dopo l'installazione di una scheda SIM",
@@ -1289,8 +1284,8 @@
       "Reparado: Cuando el tamaño de la fuente del sistema se establecía en grande, las descripciones de los superfondos de pantalla se superponían durante el proceso de configuración"
     ],
     "Configuración": [
-      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
-      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
+      "Se ha corregido el problema en el que, al agregar una red mediante WLAN y seleccionar la opción de «Cifrado a nivel empresarial», el cuadro para introducir el nombre del dominio se volvía demasiado estrecho.",
+      "Se ha corregido el problema de que algunos cuentas de aplicaciones no podían sincronizarse en la sección «Cuentas y Sincronización».",
       "Reparado: Se producían bloqueos cuando se seleccionaba el mapa predeterminado"
     ],
     "Pantalla de bloqueo": [
@@ -1303,7 +1298,7 @@
       "Reparado: El icono de la huella dactilar parecía demasiado brillante después de los reinicios",
       "Reparado: La animación de desbloqueo con huella dactilar provocaba bloqueos",
       "Reparado: El icono de huella dactilar no aparecía o se mostraba incorrectamente cuando la pantalla se apagaba en el modo apaisado",
-      "Fix: Fingerprint icon didn't disappear after unlocking",
+      "Se ha corregido el problema en el que, después de desbloquear el dispositivo, el icono del dedo digital sigue siendo clicable y se muestra una animación de vibración.",
       "Reparado: Se producían anomalías en la pantalla cuando se utilizaba el Desbloqueo con huella dactilar con videojuegos",
       "Reparado: Problemas con la animación de la huella dactilar en varias escenas",
       "Reparado: La huella dactilar y el Desbloqueo facial se desactivaban después de instalar una tarjeta SIM",
@@ -1361,8 +1356,8 @@
       "Reparado: Los botones no siempre se mostraban correctamente en las notificaciones cuando el Modo oscuro estaba activado"
     ],
     "Ajustes": [
-      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
-      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
+      "Se ha corregido el problema en el que, al agregar una red mediante WLAN y seleccionar la opción de «Cifrado a nivel empresarial», el cuadro para introducir el nombre del dominio se volvía demasiado estrecho.",
+      "Se ha corregido el problema de que algunos cuentas de aplicaciones no podían sincronizarse en la sección «Cuentas y Sincronización».",
       "Reparado: Se producían bloqueos cuando se seleccionaba el mapa predeterminado"
     ]
   },
@@ -1411,8 +1406,8 @@
       "Correção: Quando o tamanho da fonte do sistema era definida para grande, as descrições dos super planos de fundo sobrepunham durante o processo de configuração"
     ],
     "Configurações": [
-      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
-      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
+      "Corrigido o problema em que a seleção da opção “Encriptação de nível empresarial” ao adicionar uma rede via WLAN fazia com que a caixa para inserir o nome do domínio ficasse muito estreita.",
+      "Corrigido o problema em alguns contas de aplicativos que não conseguem ser sincronizados na seção “Contas e Sincronização”.",
       "Correção: Travamentos ocorriam quando o mapa padrão era selecionado"
     ],
     "Tela de bloqueio": [
@@ -1425,7 +1420,7 @@
       "Correção: O ícone de impressão digital aparecia muito claro após reinicializações",
       "Correção: As animações de desbloqueio por impressão digital ocasionavam travamentos",
       "Correção: O ícone da impressão digital não aparecia ou era exibido incorretamente quando a tela estava desligada no modo paisagem",
-      "Fix: Fingerprint icon didn't disappear after unlocking",
+      "Corrigido o problema em que, após a desbloqueação, o ícone do dedo digital ainda era clicável e exibia uma animação de vibração.",
       "Correção: Problemas de exibição ocorriam quando o Desbloqueio por impressão digital era usado em jogos",
       "Correção: Problemas com a animação de impressão digital em vários cenários",
       "Correção: Desbloqueio por impressão digital ou facial eram desativados após um cartão SIM ser instalado",
@@ -1528,8 +1523,8 @@
       "Onarım: Sistem yazı tipi boyutu büyük olarak ayarlandığında, kurulum işlemi sırasında süper duvar kağıdı açıklamaları üst üste bindi"
     ],
     "Ayarlar": [
-      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
-      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
+      "WLAN ağını eklerken “Kurumsal Düzeyde Şifreleme” seçeneğinin seçilmesi, alan adı kutusunun çok dar olmasına neden oluyor.",
+      "Bazı uygulama hesaplarında, “Hesaplar ve Senkronizasyon” bölümüne senkronize edilememe sorunu giderildi.",
       "Onarım: Varsayılan harita seçildiğinde çökmeler oluştu"
     ],
     "Kilit ekranı": [
@@ -1542,7 +1537,7 @@
       "Onarım: Yeniden başlatıldıktan sonra parmak izi simgesi çok parlak göründü",
       "Onarım: Parmak izi ile kilit açma animasyonu çökmelere yol açtı",
       "Onarım: Ekran Manzara modunda kapatıldıktan sonra Parmak izi simgesi görünmedi veya düzgün bir şekilde görüntülenmedi",
-      "Fix: Fingerprint icon didn't disappear after unlocking",
+      "Kilit açıldıktan sonra parmak izi simgesinin hala tıklanabilir olması ve animasyonlu bir titreşim göstermesi sorununu düzelttik.",
       "Onarım: Parmak izi ile kilit açma, oyunlar ile kullanıldığında ekran anormallikleri oluştu",
       "Onarım: Birkaç sahnedeki parmak izi animasyonu ile ilgili sorunlar",
       "Onarım: SIM kart takıldıktan sonra Parmak izi ve Yüz ile kilit açma kapatıldı",
@@ -1645,8 +1640,8 @@
       "Perbaikan: Ketika ukuran huruf sistem diatur ke ukuran besar, deskripsi wallpaper super akan tumpang tindih selama proses penyiapan"
     ],
     "Pengaturan": [
-      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
-      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
+      "Masalah telah diperbaiki: Ketika menambahkan jaringan menggunakan WLAN dan memilih opsi “Enkripsi Tingkat Perusahaan (Enterprise-Level Encryption)”, kotak untuk memasukkan nama domain menjadi terlalu sempit.",
+      "Masalah telah diperbaiki pada beberapa akun aplikasi yang tidak dapat disinkronkan ke bagian “Akun dan Sinkronisasi”.",
       "Perbaikan: Tutup paksa terjadi saat peta default dipilih"
     ],
     "Layar kunci": [
@@ -1659,7 +1654,7 @@
       "Perbaikan: Ikon sidik jari tampak terlalu terang setelah perangkat dimulai ulang",
       "Perbaikan: Animasi buka kunci dengan sidik jari menyebabkan layar tertutup tiba-tiba",
       "Perbaikan: Ikon sidik jari tidak muncul atau ditampilkan dengan tidak benar saat layar dimatikan dalam mode horisontal",
-      "Fix: Fingerprint icon didn't disappear after unlocking",
+      "Masalah telah diperbaiki: setelah kunci dibuka, ikon sidik jari masih dapat diklik dan menampilkan animasi getaran.",
       "Perbaikan: Ada masalah dengan tampilan, saat Buka kunci dengan sidik jari digunakan di halaman permainan",
       "Perbaikan: Masalah dengan animasi sidik jari di beberapa kondisi",
       "Perbaikan: Buka kunci dengan sidik jari dan wajah dimatikan setelah kartu SIM dipasang",
@@ -1717,8 +1712,8 @@
       "Perbaikan: Tombol tidak selalu ditampilkan dengan benar di notifikasi saat mode Gelap dihidupkan"
     ],
     "Setelan": [
-      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
-      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
+      "Masalah telah diperbaiki: Ketika menambahkan jaringan menggunakan WLAN dan memilih opsi “Enkripsi Tingkat Perusahaan (Enterprise-Level Encryption)”, kotak untuk memasukkan nama domain menjadi terlalu sempit.",
+      "Masalah telah diperbaiki pada beberapa akun aplikasi yang tidak dapat disinkronkan ke bagian “Akun dan Sinkronisasi”.",
       "Perbaikan: Tutup paksa terjadi saat peta default dipilih"
     ]
   },
@@ -1767,8 +1762,8 @@
       "Sửa: Khi kích thước phông chữ hệ thống được đặt thành lớn, mô tả siêu hình nền sẽ chồng lên nhau trong quá trình thiết lập"
     ],
     "Cài đặt": [
-      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
-      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
+      "Đã được sửa lỗi: Khi thêm một mạng WLAN và chọn tùy chọn “Mã hóa cấp doanh nghiệp”, khung hiển thị tên miền trở nên quá hẹp.",
+      "Đã sửa lỗi ở một số tài khoản ứng dụng, khiến chúng không thể được đồng bộ hóa với mục “Tài khoản và Đồng bộ hóa”.",
       "Sửa: Xảy ra lỗi khi bản đồ mặc định được chọn"
     ],
     "Màn hình khóa": [
@@ -1781,7 +1776,7 @@
       "Sửa: Biểu tượng vân tay xuất hiện quá sáng sau khi khởi động lại",
       "Sửa: Hoạt ảnh mở khóa vân tay gây ra lỗi",
       "Sửa: Biểu tượng vân tay không xuất hiện hoặc hiển thị không chính xác khi tắt màn hình ở chế độ nằm ngang",
-      "Fix: Fingerprint icon didn't disappear after unlocking",
+      "Đã được sửa lỗi: Biểu tượng vân tay vẫn có thể được nhấp vào sau khi màn hình được mở khóa, đồng thời hiển thị hiệu ứng chuyển động (vibration animation).",
       "Sửa: Màn hình bất thường khi sử dụng Mở khóa vân tay với trò chơi",
       "Sửa: Vấn đề với hoạt ảnh vân tay trong một số trường hợp",
       "Sửa: Mở khóa bằng vân tay và khuôn mặt bị tắt sau khi lắp thẻ SIM",
@@ -1886,8 +1881,8 @@
       "แก้ไข: เมื่อตั้งค่าขนาดแบบอักษรของระบบเป็นขนาดใหญ่ คำอธิบายสุดยอดภาพพื้นหลังจะซ้อนทับกันระหว่างขั้นตอนการตั้งค่า"
     ],
     "การตั้งค่า": [
-      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
-      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
+      "ได้แก้ไขปัญหาที่เมื่อเพิ่มเครือข่ายผ่าน WLAN และเลือกตัวเลือก “การเข้ารหัสระดับองค์กร” (Enterprise-level encryption) จะทำให้ช่องสำหรับป้อนชื่อโดเมนแคบเกินไป",
+      "ได้แก้ไขปัญหาของบัญชีแอปพลิเคชันบางรายการที่ไม่สามารถซิงโครไนซ์ข้อมูลเข้ากับหน้า “บัญชีและการซิงโครไนซ์” ได้",
       "แก้ไข: เกิดปัญหาเมื่อเลือกแผนที่เริ่มต้น"
     ],
     "ล็อคหน้าจอ": [
@@ -1900,7 +1895,7 @@
       "แก้ไข: ไอคอนลายนิ้วมือสว่างเกินไปหลังจากรีบูต",
       "แก้ไข: แอนิเมชั่นการปลดล็อกด้วยลายนิ้วมือทำให้เกิดข้อขัดข้อง",
       "แก้ไข: ไอคอนลายนิ้วมือไม่ปรากฏขึ้นหรือแสดงอย่างไม่ถูกต้องเมื่อปิดหน้าจอในโหมดแนวนอน",
-      "Fix: Fingerprint icon didn't disappear after unlocking",
+      "ได้แก้ไขปัญหาที่ไอคอนลายนิ้วมือยังสามารถคลิกได้แม้หลังจากทำการปลดล็อค และยังมีการแสดงอนิเมชันพร้อมการสั่นของอุปกรณ์อยู่",
       "แก้ไข: แสดงความผิดปกติที่เกิดขึ้นเมื่อใช้การปลดล็อกด้วยลายนิ้วมือกับเกม",
       "แก้ไข: ปัญหาเกี่ยวกับแอนิเมชั่นลายนิ้วมือในหลายฉาก",
       "แก้ไข: ปลดล็อกด้วยลายนิ้วมือและใบหน้าถูกปิดหลังจากติดตั้งซิมการ์ด",
@@ -2003,8 +1998,8 @@
       "الإصلاح: مشكلة تتداخل وصف خلفيات سوبر أثناء عملية إعداداها عند تعيين حجم خط النظام إلى كبير"
     ],
     "الإعدادات": [
-      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
-      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
+      "تم إصلاح المشكلة التي كانت تظهر عند إضافة شبكة WLAN واختيار خيار “التشفير على مستوى الشركات” (Enterprise-level encryption)، حيث كان يؤدي ذلك إلى جعل مربع اسم النطاق ضيّقًا للغاية.",
+      "تم إصلاح مشكلة بعض حسابات التطبيقات التي لا يمكن مزامنتها في قسم “الحسابات والمزامنة”.",
       "الإصلاح: تعطل النظام عند تحديد الخريطة الافتراضية"
     ],
     "شاشة القفل": [
@@ -2017,7 +2012,7 @@
       "الإصلاح: مشكلة سطوع عالي لأيقونة بصمة الإصبع بعد إعادة تشغيل الشاشة",
       "الإصلاح: مشكلة تسبب الرسم المتحرك لإلغاء القفل ببصمة الإصبع إلى تعطل في الجهاز",
       "الإصلاح: مشكلة عدم ظهور أيقونة بصمة الإصبع أو عرضها بشكل غير صحيح عند إيقاف تشغيل الوضع الأفقي",
-      "Fix: Fingerprint icon didn't disappear after unlocking",
+      "تم إصلاح المشكلة التي كانت تظهر فيها أيقونة بصمة الإصبع قابلة للنقر حتى بعد فك القفل، بالإضافة إلى ظهور رسوم متحركة واهتزازات.",
       "الإصلاح: حدوث مشاكل غير طبيعية في العرض عند استخدام فتح قفل الشاشة ببصمة الإصبع مع الألعاب",
       "الإصلاح: مشاكل حركة بصمة الإصبع في بعض المشاهد",
       "الإصلاح: توقف ميزة بصمة الإصبع والتعرف على الوجه بعد إدخال بطاقة SIM",
@@ -2120,8 +2115,8 @@
       "ठीक करें जब सिस्टम फ़ॉन्ट आकार को बड़ा पर सेट किया जा रहा था, तो सेटअप प्रक्रिया के दौरान सुपर वॉलपेपर विवरण ओवरलैप हो रहे थे"
     ],
     "सेटिंग्स": [
-      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
-      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
+      "WLAN नेटवर्क जोड़ते समय, “एंटरप्राइज़ लेवल एन्क्रिप्शन” (Enterprise Level Encryption) का चयन करने पर डोमेन नेम फील्ड बहुत संकीर्ण हो जाता है।",
+      "कुछ ऐप खातों में समस्या है; वे “खाते एवं सिंक्रनाइज़ेशन” (Accounts and Synchronization) विकल्प के अंतर्गत सिंक्रोनाइज़ नहीं हो पा रहे हैं।",
       "ठीक करें डिफ़ॉल्ट मैप को चुने जाने पर क्रैश हो रहे थे"
     ],
     "लॉक स्क्रीन": [
@@ -2134,7 +2129,7 @@
       "ठीक करें रीबूट के बाद फ़िंगरप्रिंट आइकन बहुत चमक रहे थे",
       "ठीक करें फ़िंगरप्रिंट अनलॉक एनिमेशन क्रैश हो रहे थे",
       "ठीक करें लैंडस्केप मोड में स्क्रीन बंद होने पर फ़िंगरप्रिंट आइकन नहीं दिख रहे थे या ठीक से नहीं दिख रहे थे",
-      "Fix: Fingerprint icon didn't disappear after unlocking",
+      "समस्या को ठीक कर दिया गया है: अनलॉक होने के बाद भी फिंगरप्रिंट आइकन पर क्लिक किया जा सकता है, एवं एनिमेशन के साथ झटका महसूस होता है।",
       "ठीक करें गेम्स के साथ फ़िंगरप्रिंट अनलॉक का उपयोग किए जाने पर डिस्पले में असामान्यताएं आ रही थी",
       "ठीक करें कई सीन्स में फ़िंगरप्रिंट एनिमेशन ठीक से काम नहीं कर रही थी",
       "ठीक करें सिम कार्ड इंस्टॉल किए जाने के बाद, फ़िंगरप्रिंट और चेहरा अनलॉक बंद हो जा रहे थे",
@@ -2237,8 +2232,8 @@
       "Fix: When system font size was set to large, super wallpaper descriptions overlapped during the setup process"
     ],
     "تەڭشەك": [
-      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
-      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
+      "WLAN تورى قوشۇلغاندا «كارخانا دەرىجىلىك شېفرلاشتۇرۇش» نى تال لىسا ، تور نامى كۆزنىكى بەك تار بولۇپ قالىدۇ.",
+      "بەزى APP ھېسابات لىرىدا كۆرۈلگەن مەسىلىلەرنى تۈزۈتۈپ ، بۇ ھېسابات لارنى « ھېساباتلار ۋە سىڭدۇرۇش » (Accounts and Synchronization) رايونىغا سىڭدۈرۈش مەسىلىسىنى ھەل قىلدۇق.",
       "Fix: Crashes occurred when the default map was selected"
     ],
     "Lock screen": [
@@ -2291,13 +2286,13 @@
       "Fix: Buttons weren't always displayed correctly on the notifications when Dark mode was on"
     ],
     "Settings": [
-      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
-      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
+      "WLAN تورى قوشۇلغاندا «كارخانا دەرىجىلىك شېفرلاشتۇرۇش» نى تال لىسا ، تور نامى كۆزنىكى بەك تار بولۇپ قالىدۇ.",
+      "بەزى APP ھېسابات لىرىدا كۆرۈلگەن مەسىلىلەرنى تۈزۈتۈپ ، بۇ ھېسابات لارنى « ھېساباتلار ۋە سىڭدۇرۇش » (Accounts and Synchronization) رايونىغا سىڭدۈرۈش مەسىلىسىنى ھەل قىلدۇق.",
       "Fix: Crashes occurred when the default map was selected"
     ],
     "تەڭشەكلەر": [
-      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
-      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
+      "WLAN تورى قوشۇلغاندا «كارخانا دەرىجىلىك شېفرلاشتۇرۇش» نى تال لىسا ، تور نامى كۆزنىكى بەك تار بولۇپ قالىدۇ.",
+      "بەزى APP ھېسابات لىرىدا كۆرۈلگەن مەسىلىلەرنى تۈزۈتۈپ ، بۇ ھېسابات لارنى « ھېساباتلار ۋە سىڭدۇرۇش » (Accounts and Synchronization) رايونىغا سىڭدۈرۈش مەسىلىسىنى ھەل قىلدۇق.",
       "Fix: Crashes occurred when the default map was selected"
     ]
   },
@@ -2346,8 +2341,8 @@
       "Fix: When system font size was set to large, super wallpaper descriptions overlapped during the setup process"
     ],
     "སྒྲིག་སྟངས།": [
-      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
-      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
+      "WLAN་དྲ་བར་ཞུགས་པའི་སྐབས “ཁེ་ལས་རིམ་པའི་གསང་སྦྱོར” (Enterprise-level encryption)་འདེམས་པས།ཡིག་རྟགས་མཚོན་པའི་ཡུལ་བུ་(domain name box)་ཧ་ཅང་ཆུང་དུ་འགྲོ་བ་རེད།",
+      "APP་ཡི་རྩིས་ཐོ་ཁ་ཤས་ཀྱི་གནད་དོན་བཅོས་བྱས་པ་དང་།དེ་དག་“རྩིས་ཐོ་དང་མཉམ་སྦྱོར”（Accounts and Sync）ཁྲོད་དུ་མཉམ་སྦྱོར་བྱེད་མི་ཐུབ།",
       "Fix: Crashes occurred when the default map was selected"
     ],
     "རིམ་ལུགས": [
@@ -2403,18 +2398,18 @@
       "Fix: Buttons weren't always displayed correctly on the notifications when Dark mode was on"
     ],
     "Settings": [
-      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
-      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
+      "WLAN་དྲ་བར་ཞུགས་པའི་སྐབས “ཁེ་ལས་རིམ་པའི་གསང་སྦྱོར” (Enterprise-level encryption)་འདེམས་པས།ཡིག་རྟགས་མཚོན་པའི་ཡུལ་བུ་(domain name box)་ཧ་ཅང་ཆུང་དུ་འགྲོ་བ་རེད།",
+      "APP་ཡི་རྩིས་ཐོ་ཁ་ཤས་ཀྱི་གནད་དོན་བཅོས་བྱས་པ་དང་།དེ་དག་“རྩིས་ཐོ་དང་མཉམ་སྦྱོར”（Accounts and Sync）ཁྲོད་དུ་མཉམ་སྦྱོར་བྱེད་མི་ཐུབ།",
       "Fix: Crashes occurred when the default map was selected"
     ],
     "སྒྲིག་བཀོད": [
-      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
-      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
+      "WLAN་དྲ་བར་ཞུགས་པའི་སྐབས “ཁེ་ལས་རིམ་པའི་གསང་སྦྱོར” (Enterprise-level encryption)་འདེམས་པས།ཡིག་རྟགས་མཚོན་པའི་ཡུལ་བུ་(domain name box)་ཧ་ཅང་ཆུང་དུ་འགྲོ་བ་རེད།",
+      "APP་ཡི་རྩིས་ཐོ་ཁ་ཤས་ཀྱི་གནད་དོན་བཅོས་བྱས་པ་དང་།དེ་དག་“རྩིས་ཐོ་དང་མཉམ་སྦྱོར”（Accounts and Sync）ཁྲོད་དུ་མཉམ་སྦྱོར་བྱེད་མི་ཐུབ།",
       "Fix: Crashes occurred when the default map was selected"
     ],
     "སྒྲིག་སྟངས": [
-      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
-      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
+      "WLAN་དྲ་བར་ཞུགས་པའི་སྐབས “ཁེ་ལས་རིམ་པའི་གསང་སྦྱོར” (Enterprise-level encryption)་འདེམས་པས།ཡིག་རྟགས་མཚོན་པའི་ཡུལ་བུ་(domain name box)་ཧ་ཅང་ཆུང་དུ་འགྲོ་བ་རེད།",
+      "APP་ཡི་རྩིས་ཐོ་ཁ་ཤས་ཀྱི་གནད་དོན་བཅོས་བྱས་པ་དང་།དེ་དག་“རྩིས་ཐོ་དང་མཉམ་སྦྱོར”（Accounts and Sync）ཁྲོད་དུ་མཉམ་སྦྱོར་བྱེད་མི་ཐུབ།",
       "Fix: Crashes occurred when the default map was selected"
     ]
   }

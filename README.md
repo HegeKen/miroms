@@ -538,6 +538,23 @@ python3 scripts/local_translate.py fill --ids 146 --apply     # 补译写库（�
 python3 scripts/local_translate.py review --langs logs_en --limit 200 --run
 python3 scripts/local_translate.py review --langs logs_en --ids 146 --fix
 python3 scripts/local_translate.py all --limit 200 --apply --fix
+
+本地语言校验（逐条判断译文是否真的使用该列语言）与本地模型替换：
+
+```bash
+python3 scripts/local_lang_check.py check --ids 5135,4444 --show 20   # 预览
+python3 scripts/local_lang_check.py check --all --apply               # 全量标注 lang_issues
+python3 scripts/local_lang_check.py check --all --report /tmp/langcheck.json
+python3 scripts/local_lang_check.py fix --ids 5135 --langs logs_ja --apply
+python3 scripts/local_lang_check.py fix --all --apply                 # 全量替换（耗时）
+```
+
+- `check`：规则层（文字体系 / 与 logs_en 相同 / 简繁转换 / 俄乌字母）+ 本地 fastText
+  `lid.176` 语种识别；只在高置信度时标注，短词与维吾尔/藏文交给文字体系规则，避免误报；
+- `fix`：对 `lang_issues` 列用 LM Studio 的 Hunyuan-MT 从中文重译并替换，复用
+  `LogFiller.apply`（备份、清 `lang_issues`、`proofed=0`）；
+- 依赖：`pip install fasttext-wheel`，模型 `~/.cache/langid/lid.176.ftz`
+  （可用环境变量 `LANGID_MODEL` 指定）。
 ```
 
 - 接口切换：默认原生 `/api/v1/chat`；如改用 OpenAI 兼容端点，加 `--api openai`（或设置
@@ -691,6 +708,7 @@ python3 scripts/import_hub_sitelog.py --drop-types chore,build,docs   # 只保�
 | `restore_log_escapes.py` | 还原旧 JSON 存储时代的转义：`^`→`'`/`"`、`$$`→`%`；默认保留 `proofed` / `complete` / `lang_issues`，`--reset-flags` 则重置；`--apply` 写前备份 |
 | `fill_missing_logs.py` | 对 `proofed=1` 的行排查缺失语言并用 AI 翻译回填：默认只盘点/估算；`--run` 预览；`--apply` 写库（写前备份）；`--expected all\|owners`、`--langs`、`--min-confidence`；默认回填后 `proofed=0`，`--keep-proofed` 可保留 |
 | `local_translate.py` | 用 LM Studio 本地 Hunyuan-MT-7B 逐条补写缺失语言 / 校对现有译文：`check` 检查服务与模型；`fill` 补译（`--apply` 写库）；`review` 重译对比（`--ratio` / `--short-ratio`，`--fix` 才替换）；`all` 同时处理；提示词用官方模板，校验占位符 / 提示词回显 / 目标语言文字；写库复用 `LogFiller.apply`（备份、清 `lang_issues`、`proofed=0`） |
+| `local_lang_check.py` | 本地语言校验：规则 + fastText `lid.176` 逐单元格判断译文语言，命中写 `lang_issues`；`fix` 用 Hunyuan-MT 从中文重译替换；`check --all --apply` 全量扫描 6.5 万单元格约 1–2 秒，`fix` 逐条调用模型较慢 |
 | `fix_lang_issues.py` | 按 `logs.lang_issues` 修正语言列：默认 `correct`（用 AI 的 `correct` 正确译文替换，无 correct/低置信度保留原值）；`--mode translate` 对没有 correct 的标注调用 AI 翻译回填并逐条清除 lang_issues；`--mode hybrid` 无译文才清空，`--mode clear` 显式删除，`--mode move` 移到正确空列，`--clean-masks` 同步去掉引用掩码位；核心列需 `--allow-core`；默认 dry-run，写前备份 |
 | `proofread_logs.py` | 日志多语言校对：`check --ids` 校对指定 logs.id（不改内容，ok 时写 proofed）；`scan` 用规则找「同一 ROM 多个同名中文模块但外文含义不同」的候选；`review` 调 DeepSeek 判断每行真正对应的中文模块名（只能从该 ROM 的中文模块名里选，或 null = 额外模块）；`apply` 按置信度改名 / 清空额外模块中文并清理掩码中文位；`batch-review` 批量/逐条审全部多语言行（默认只估算，`--run` 才调用，ok 行自动 proofed）；除 proofed 标记外不改日志内容 |
 | `rebuild_roms_logs.py` | 以迁移前的备份库为权威来源重建 `roms.logs`（修复人工改动 `logs` 表造成的悬空引用），并复核「无悬空引用」 |

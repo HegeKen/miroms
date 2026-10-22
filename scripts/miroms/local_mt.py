@@ -138,6 +138,35 @@ def build_instruction(target_language: str, source_is_chinese: bool = False) -> 
 	return template.format(target=target_language)
 
 
+BATCH_ZH_INSTRUCTION = '把下面的文本逐条翻译成{target}，保留每行开头的编号，每行一条，不要额外解释。'
+BATCH_EN_INSTRUCTION = ('Translate each numbered line into {target}. '
+						'Keep the numbering, one item per line, no explanations.')
+NUMBERED_LINE_RE = re.compile(r'^\s*(\d+)\s*[.、)]\s*(.*)$')
+
+
+def build_batch_instruction(target_language: str, source_is_chinese: bool = False) -> str:
+	"""批量翻译指令（带编号，便于把译文逐条对回原文）"""
+	template = (BATCH_ZH_INSTRUCTION
+				if (source_is_chinese or target_language in ('Chinese', 'Traditional Chinese'))
+				else BATCH_EN_INSTRUCTION)
+	return template.format(target=target_language)
+
+
+def parse_numbered_lines(output: str, count: int) -> List[str]:
+	"""解析「1. 译文」形式的多行输出；数量或编号缺失时返回 []，由调用方回退"""
+	items: Dict[int, str] = {}
+	for line in str(output or '').splitlines():
+		match = NUMBERED_LINE_RE.match(line)
+		if not match:
+			continue
+		index = int(match.group(1))
+		if 1 <= index <= count:
+			items[index] = match.group(2).strip()
+	if len(items) != count:
+		return []
+	return [items[index] for index in range(1, count + 1)]
+
+
 def clean_output(text: Any) -> str:
 	"""清理模型输出：去代码块 / 包裹引号 / 常见前缀"""
 	value = str(text or '').strip()
@@ -435,3 +464,54 @@ class LocalMTClient:
 				continue
 			return clean_output(content)
 		return ''
+
+	def translate_lines(self, lines: List[str], target_language: str,
+						source_is_chinese: bool = False) -> List[str]:
+		"""批量翻译：逐行编号送入模型，返回与输入等长的译文列表
+
+		解析失败（行数/编号不齐）时返回 []，由调用方回退到逐条翻译。
+		"""
+		texts = [str(item or '').replace('\n', ' ').strip() for item in lines]
+		if not texts:
+			return []
+		if len(texts) == 1:
+			return [self.translate(texts[0], target_language, source_is_chinese)]
+		source = '\n'.join(f'{index + 1}. {text}' for index, text in enumerate(texts))
+		instruction = build_batch_instruction(target_language, source_is_chinese)
+		budget = max(512, min(4096, sum(len(text) for text in texts) * 3))
+		if self.api == API_NATIVE:
+			path = 'chat'
+			payload: Dict[str, Any] = {
+				'model': self.model,
+				'system_prompt': instruction,
+				'input': source,
+				'temperature': self.temperature,
+				'top_p': self.top_p,
+				'max_output_tokens': budget,
+				'stream': False,
+			}
+		else:
+			path = 'chat/completions'
+			payload = {
+				'model': self.model,
+				'messages': [{'role': 'user', 'content': f'{instruction}\n\n{source}'}],
+				'temperature': self.temperature,
+				'top_p': self.top_p,
+				'max_tokens': budget,
+				'stream': False,
+			}
+		if self.top_k:
+			payload['top_k'] = self.top_k
+		if self.repeat_penalty:
+			payload['repeat_penalty'] = self.repeat_penalty
+		response = self._post(self._endpoint(path), payload)
+		if self.api == API_NATIVE:
+			content, _truncated = self._parse_native(response)
+			usage = response.get('stats') or {}
+		else:
+			content, _truncated = self._parse_openai(response)
+			usage = response.get('usage') or {}
+		with self._lock:
+			self.calls += 1
+			self.last_usage = usage
+		return parse_numbered_lines(clean_output(content), len(texts))
