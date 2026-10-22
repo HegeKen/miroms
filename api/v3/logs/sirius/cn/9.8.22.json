@@ -19,101 +19,368 @@
     ]
   },
   "logs_en": {
+    "System": [
+      "Added system-level screen casting, syncing your phone screen to TV in real time. Tap the “Cast” quick toggle in the notification shade for one-tap casting",
+      "Optimized: Upgraded system font for a better reading experience"
+    ],
+    "Settings": [
+      "Optimized printing experience",
+      "Fix: Previews for printed documents weren't displayed correctly"
+    ],
+    "Blocklist": [
+      "Fixed occasional failure of blacklist blocking when switching between single and dual SIM"
+    ],
+    "Mi Cloud": [
+      "Optimized the new storage management page with clearer information"
+    ],
     "Other": [
       "Improved system security and stability"
     ]
   },
   "logs_zh_tw": {
+    "系統": [
+      "新增 系統級投屏功能，將手機螢幕即時同步至電視。點擊通知列「投屏」快捷開關即可一鍵投屏",
+      "優化 升級系統字體，帶來更佳閱讀體驗"
+    ],
+    "设置": [
+      "優化 列印功能使用體驗",
+      "修復 列印文件預覽效果異常"
+    ],
+    "防打擾": [
+      "修復單雙卡切換時偶發性黑名單攔截失效"
+    ],
+    "小米雲服務": [
+      "優化 新版空間管理頁面，資訊更清晰明瞭"
+    ],
     "其他": [
       "Improved system security and stability"
     ]
   },
   "logs_ja": {
+    "システム": [
+      "システムレベルの画面キャスト機能を追加し、スマートフォンの画面をテレビにリアルタイムで同期します。通知シェードの「キャスト」クイック設定をタップするだけで、ワンタップでキャストできます",
+      "最適化: システムフォントをアップグレードし、より良い読書体験を提供"
+    ],
+    "設定": [
+      "印刷機能の使用体験を最適化",
+      "Fix: Previews for printed documents weren't displayed correctly"
+    ],
+    "迷惑電話ブロック": [
+      "シングルSIM/デュアルSIM切り替え時にブラックリストのブロックが時々機能しない問題を修正"
+    ],
+    "Xiaomi クラウドサービス": [
+      "新しいストレージ管理ページを最適化し、情報をよりわかりやすくしました"
+    ],
     "その他": [
       "システムのセキュリティと安定性の向上"
     ]
   },
   "logs_ko": {
+    "시스템": [
+      "시스템 수준 캐스트 기능이 추가되어 휴대폰 화면을 TV에 실시간으로 동기화합니다. 알림 패널의 “캐스트” 빠른 설정을 탭하면 한 번에 캐스트할 수 있습니다",
+      "최적화: 시스템 글꼴을 업그레이드하여 더 나은 읽기 경험을 제공합니다"
+    ],
+    "설정": [
+      "인쇄 기능 사용 경험 최적화",
+      "Fix: Previews for printed documents weren't displayed correctly"
+    ],
+    "스팸 차단": [
+      "단일/듀얼 SIM 전환 시 간헐적으로 블랙리스트 차단이 작동하지 않는 문제 수정"
+    ],
+    "Xiaomi 클라우드 서비스": [
+      "새 저장공간 관리 페이지를 최적화하여 정보가 더 명확해졌습니다"
+    ],
     "기타": [
       "시스템 보안 및 안정성 개선"
     ]
   },
   "logs_ru": {
+    "Система": [
+      "Добавлена системная функция трансляции экрана: экран телефона синхронизируется с телевизором в реальном времени. Нажмите переключатель «Трансляция» в панели уведомлений для трансляции одним касанием",
+      "Оптимизация: обновлен системный шрифт для улучшения чтения"
+    ],
+    "Настройки": [
+      "Оптимизирован опыт использования функции печати",
+      "Исправлено: Неправильное отображение превью распечатанных документов"
+    ],
+    "Черный список": [
+      "Исправлен периодический сбой блокировки из чёрного списка при переключении между одной и двумя SIM-картами"
+    ],
+    "Облачный сервис Xiaomi": [
+      "Оптимизирована новая страница управления хранилищем — информация стала понятнее"
+    ],
     "Другое": [
       "Улучшение безопасности и стабильности системы"
     ]
   },
   "logs_uk": {
+    "Система": [
+      "Додано системну функцію трансляції екрана: екран телефона синхронізується з телевізором у реальному часі. Натисніть перемикач «Трансляція» на панелі сповіщень, щоб транслювати одним дотиком",
+      "Оптимізація: оновлено системний шрифт для кращого досвіду читання"
+    ],
+    "Налаштування": [
+      "Оптимізовано досвід використання функції друку",
+      "Fix: Previews for printed documents weren't displayed correctly"
+    ],
+    "Блокування спаму": [
+      "Виправлено періодичну несправність блокування з чорного списку під час перемикання між однією та двома SIM-картами"
+    ],
+    "Хмарний сервіс Xiaomi": [
+      "Оптимізовано нову сторінку керування сховищем — інформація стала зрозумілішою"
+    ],
     "Інше": [
       "Покращення безпеки та стабільності системи"
     ]
   },
   "logs_pl": {
-    "Inne": [
+    "System": [
+      "Dodano systemową funkcję przesyłania ekranu, która synchronizuje ekran telefonu z telewizorem w czasie rzeczywistym. Dotknij przełącznika „Przesyłanie ekranu” w panelu powiadomień, aby przesłać ekran jednym dotknięciem",
+      "Optymalizacja: zaktualizowano czcionkę systemową, aby zapewnić lepsze wrażenia z czytania"
+    ],
+    "Ustawienia": [
+      "Zoptymalizowano komfort korzystania z funkcji drukowania",
+      "Fix: Previews for printed documents weren't displayed correctly"
+    ],
+    "Blokowanie spamu": [
+      "Naprawiono sporadyczne niedziałanie blokowania z czarnej listy podczas przełączania między jedną a dwiema kartami SIM"
+    ],
+    "Usługa w chmurze Xiaomi": [
+      "Zoptymalizowano nową stronę zarządzania pamięcią — informacje są czytelniejsze"
+    ],
+    "Reszt": [
       "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
   "logs_de": {
+    "System": [
+      "Systemweite Bildschirmübertragung hinzugefügt: Der Telefonbildschirm wird in Echtzeit mit dem Fernseher synchronisiert. Tippe auf den Schnellschalter „Übertragung“ in der Benachrichtigungsleiste, um mit einem Tippen zu übertragen",
+      "Optimierung: Systemschriftart aktualisiert für ein besseres Leseerlebnis"
+    ],
+    "Einstellungen": [
+      "Druckerlebnis optimiert",
+      "Fix: Previews for printed documents weren't displayed correctly"
+    ],
+    "Spam-Blockierung": [
+      "Gelegentliches Nichtfunktionieren der Blacklist-Sperre beim Wechsel zwischen Einzel- und Dual-SIM behoben"
+    ],
+    "Xiaomi Cloud-Dienst": [
+      "Neue Speicherverwaltungsseite optimiert – Informationen sind jetzt übersichtlicher"
+    ],
     "Sonstiges": [
       "Systemsicherheit und -stabilität verbessert"
     ]
   },
   "logs_fr": {
+    "Système": [
+      "Ajout de la diffusion d’écran au niveau système : l’écran du téléphone est synchronisé avec le téléviseur en temps réel. Appuyez sur le bouton rapide « Diffuser » dans le panneau de notifications pour diffuser en un seul geste",
+      "Optimisation : mise à niveau de la police système pour une meilleure expérience de lecture"
+    ],
+    "Paramètres": [
+      "Expérience d'impression optimisée",
+      "Réparé: Les aperçus des documents imprimés n'étaient pas affichés correctement"
+    ],
+    "Liste noire": [
+      "Correction de l'échec occasionnel du blocage par liste noire lors du passage entre SIM unique et double SIM"
+    ],
+    "Service cloud Xiaomi": [
+      "Optimisation de la nouvelle page de gestion du stockage pour des informations plus claires"
+    ],
     "Autre": [
       "Sécurité et stabilité du système améliorées"
     ]
   },
   "logs_it": {
+    "Sistema": [
+      "Aggiunta la trasmissione dello schermo a livello di sistema: lo schermo del telefono viene sincronizzato con il TV in tempo reale. Tocca l’interruttore rapido “Trasmetti” nel pannello notifiche per trasmettere con un tocco",
+      "Ottimizzazione: aggiornato il carattere di sistema per una migliore esperienza di lettura"
+    ],
+    "Impostazioni": [
+      "Esperienza di stampa ottimizzata",
+      "Risolto: Le anteprime per i documenti stampati non venivano visualizzate correttamente"
+    ],
+    "Lista Blocchi": [
+      "Risolto il mancato funzionamento occasionale del blocco della blacklist durante il passaggio tra SIM singola e doppia SIM"
+    ],
+    "Servizio cloud Xiaomi": [
+      "Ottimizzata la nuova pagina di gestione dello spazio, con informazioni più chiare"
+    ],
     "Altro": [
       "Maggiore sicurezza e stabilità di sistema"
     ]
   },
   "logs_es": {
+    "Sistema": [
+      "Se agregó la transmisión de pantalla a nivel del sistema: la pantalla del teléfono se sincroniza con el televisor en tiempo real. Toca el interruptor rápido «Transmitir» en el panel de notificaciones para transmitir con un solo toque",
+      "Optimización: fuente del sistema actualizada para una mejor experiencia de lectura"
+    ],
+    "Configuración": [
+      "Experiencia de impresión optimizada",
+      "Reparado: Las previsualizaciones de documentos impresos no eran mostradas correctamente"
+    ],
+    "Lista de bloqueo": [
+      "Corregido el fallo ocasional del bloqueo de la lista negra al cambiar entre SIM única y dual"
+    ],
+    "Servicio en la nube de Xiaomi": [
+      "Optimizada la nueva página de gestión de almacenamiento, con información más clara"
+    ],
     "Otros": [
       "Estabilidad y seguridad del sistema mejorada"
     ]
   },
   "logs_pt": {
+    "Sistema": [
+      "Adicionada transmissão de tela em nível de sistema: a tela do telefone é sincronizada com a TV em tempo real. Toque no atalho “Transmitir” no painel de notificações para transmitir com um toque",
+      "Otimização: fonte do sistema atualizada para uma melhor experiência de leitura"
+    ],
+    "Configurações": [
+      "Experiência de impressão otimizada",
+      "Correção: Pré-visualizações para documentos impressos não eram exibidas corretamente"
+    ],
+    "Lista de bloqueio": [
+      "Corrigida a falha ocasional do bloqueio da lista negra ao alternar entre SIM única e dual"
+    ],
+    "Serviço de nuvem Xiaomi": [
+      "Otimizada a nova página de gerenciamento de armazenamento, com informações mais claras"
+    ],
     "Outros": [
       "Segurança e estabilidade do sistema aprimoradas"
     ]
   },
   "logs_tr": {
+    "Sistem": [
+      "Sistem düzeyinde ekran yayınlama eklendi: telefon ekranı TV’ye gerçek zamanlı olarak yansıtılır. Bildirim panelindeki “Yayınla” hızlı ayarını kullanarak tek dokunuşla yayınlayın",
+      "Optimizasyon: daha iyi okuma deneyimi için sistem yazı tipi güncellendi"
+    ],
+    "Ayarlar": [
+      "Yazdırma deneyimi iyileştirildi",
+      "Onarım: Yazdırılan belgelerin önizlemelerinin düzgün görüntülenmeme sorunu giderildi"
+    ],
+    "Engelli listesi": [
+      "Tek/çift SIM geçişinde kara liste engellemesinin ara sıra çalışmaması düzeltildi"
+    ],
+    "Xiaomi Bulut Hizmeti": [
+      "Yeni depolama yönetimi sayfası optimize edildi; bilgiler artık daha net"
+    ],
     "Diğer": [
       "Sistem güvenliği ve kararlılığı geliştirildi"
     ]
   },
   "logs_id": {
+    "Sistem": [
+      "Menambahkan transmisi layar tingkat sistem: layar ponsel disinkronkan ke TV secara real-time. Ketuk tombol cepat “Transmisi” di panel notifikasi untuk transmisi satu ketuk",
+      "Optimasi: font sistem diperbarui untuk pengalaman membaca yang lebih baik"
+    ],
+    "Pengaturan": [
+      "Pengalaman mencetak dioptimalkan",
+      "Perbaikan: Pratinjau dokumen yang diprinter tidak dapat ditampilkan dengan benar"
+    ],
+    "Pemblokiran spam": [
+      "Memperbaiki kegagalan sesekali pemblokiran daftar hitam saat beralih antara SIM tunggal dan ganda"
+    ],
+    "Layanan Cloud Xiaomi": [
+      "Halaman manajemen penyimpanan baru dioptimalkan, informasi lebih jelas"
+    ],
     "Lainnya": [
       "Keamanan dan stabilitas sistem ditingkatkan"
     ]
   },
   "logs_vi": {
+    "Hệ thống": [
+      "Đã thêm tính năng truyền màn hình cấp hệ thống: đồng bộ màn hình điện thoại lên TV theo thời gian thực. Nhấn công tắc nhanh “Truyền màn hình” trong bảng thông báo để truyền chỉ với một chạm",
+      "Tối ưu hóa: Nâng cấp phông chữ hệ thống để có trải nghiệm đọc tốt hơn"
+    ],
+    "Cài đặt": [
+      "Tối ưu trải nghiệm sử dụng tính năng in",
+      "Fix: Previews for printed documents weren't displayed correctly"
+    ],
+    "Chặn spam": [
+      "Đã sửa lỗi thỉnh thoảng chặn danh sách đen không hoạt động khi chuyển đổi giữa SIM đơn và SIM kép"
+    ],
+    "Dịch vụ đám mây Xiaomi": [
+      "Tối ưu hóa trang quản lý dung lượng mới, thông tin rõ ràng hơn"
+    ],
     "Khác": [
       "Cải thiện tính ổn định và bảo mật hệ thống"
     ]
   },
   "logs_th": {
+    "ระบบ": [
+      "เพิ่มการแคสต์หน้าจอระดับระบบ โดยซิงค์หน้าจอโทรศัพท์กับทีวีแบบเรียลไทม์ แตะสวิตช์ลัด “แคสต์” ในแผงการแจ้งเตือนเพื่อแคสต์ได้ในแตะเดียว",
+      "การปรับแต่ง: อัปเกรดแบบอักษรระบบเพื่อประสบการณ์การอ่านที่ดีขึ้น"
+    ],
+    "การตั้งค่า": [
+      "ปรับประสบการณ์การใช้ฟังก์ชันพิมพ์ให้ดีขึ้น",
+      "Fix: Previews for printed documents weren't displayed correctly"
+    ],
+    "บล็อกสแปม": [
+      "แก้ไขปัญหาการบล็อกรายการดำไม่ทำงานเป็นครั้งคราวเมื่อสลับระหว่างซิมเดียวและซิมคู่"
+    ],
+    "บริการคลาวด์ Xiaomi": [
+      "ปรับแต่งหน้าจัดการพื้นที่จัดเก็บเวอร์ชันใหม่ ให้ข้อมูลชัดเจนยิ่งขึ้น"
+    ],
     "อื่นๆ": [
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
     ]
   },
   "logs_ar": {
-    "أخرى": [
+    "النظام": [
+      "تمت إضافة بث الشاشة على مستوى النظام، بحيث تتم مزامنة شاشة الهاتف مع التلفاز في الوقت الفعلي. اضغط على مفتاح «البث» السريع في لوحة الإشعارات للبث بلمسة واحدة",
+      "تحسين: ترقية خط النظام لتجربة قراءة أفضل"
+    ],
+    "الإعدادات": [
+      "تحسين تجربة استخدام وظيفة الطباعة",
+      "Fix: Previews for printed documents weren't displayed correctly"
+    ],
+    "حظر المضايقات": [
+      "إصلاح فشل حظر القائمة السوداء أحيانًا عند التبديل بين شريحة واحدة وشريحتين"
+    ],
+    "خدمة Xiaomi السحابية": [
+      "تحسين صفحة إدارة التخزين الجديدة لتصبح المعلومات أكثر وضوحًا"
+    ],
+    "آخرين": [
       "تحسين أمن واستقرار النظام"
     ]
   },
   "logs_in": {
+    "सिस्टम": [
+      "सिस्टम-स्तरीय स्क्रीन कास्टिंग जोड़ी गई, जो फ़ोन की स्क्रीन को TV पर रीयल-टाइम में सिंक करती है। एक-टैप कास्टिंग के लिए सूचना पैनल में “कास्ट” त्वरित टॉगल पर टैप करें",
+      "अनुकूलन: बेहतर पढ़ने के अनुभव के लिए सिस्टम फ़ॉन्ट अपग्रेड किया गया।"
+    ],
+    "सेटिंग्स": [
+      "प्रिंटिंग सुविधा के उपयोग का अनुभव अनुकूलित किया गया",
+      "Fix: Previews for printed documents weren't displayed correctly"
+    ],
+    "स्पैम ब्लॉक": [
+      "सिंगल और डुअल SIM के बीच स्विच करते समय ब्लैकलिस्ट ब्लॉकिंग के कभी-कभी विफल होने को ठीक किया गया"
+    ],
+    "Xiaomi क्लाउड सेवा": [
+      "नए स्टोरेज प्रबंधन पृष्ठ को अनुकूलित किया गया, जानकारी अब अधिक स्पष्ट है।"
+    ],
     "अन्य": [
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
     ]
   },
   "logs_ug": {
+    "سىستېما": [
+      "سىستېما دەرىجىلىك ئېكران تارقىتىش ئىقتىدارى قوشۇلدى، تېلېفون ئېكرانىنى تېلېۋىزورغا ھازىرقى ۋاقىتتا ماسلاشتۇرىدۇ. ئۇقتۇرۇش ستونىدىكى «ئېكران تارقىتىش» تېز كۇنۇپكىسىنى باسسىڭىز، بىر بېسىشتا ئېكران تارقىتىش ئەمەلگە ئاشىدۇ",
+      "ياخشىلاش: سىستېما خېتىنى يېڭىلاپ، تېخىمۇ ياخشى ئوقۇش تەجرىبىسى ئېلىپ كېلىندى."
+    ],
+    "تەڭشەك": [
+      "بېسىش ئىقتىدارىنى ئىشلىتىش تەجرىبىسىنى ئەلالاشتۇرۇش",
+      "Fix: Previews for printed documents weren't displayed correctly"
+    ],
+    "Xiaomi بۇلۇت مۇلازىمىتى": [
+      "يېڭى ساقلاش بوشلۇقى باشقۇرۇش بېتىنى ئەلالاشتۇرۇپ، ئۇچۇرلار تېخىمۇ ئېنىق بولدى"
+    ],
     "باشقىلىرى": [
       "Improved system security and stability"
     ]
   },
   "logs_bo": {
+    "སྒྲིག་སྟངས།": [
+      "པར་སྐྲོད་ནུས་པ་བེད་སྤྱོད་བྱེད་པའི་ཉམས་མྱོང་ལེགས་སུ་བཅོས་པ།",
+      "Fix: Previews for printed documents weren't displayed correctly"
+    ],
     "གཞན།": [
       "Improved system security and stability"
     ]

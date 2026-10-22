@@ -31,7 +31,8 @@
   "logs_en": {
     "System": [
       "Updated the security patch to August 2024. Increased system security.",
-      "Updated the security patch to July 2024. Increased system security."
+      "Updated the security patch to July 2024. Increased system security.",
+      "Optimization: New startup animation strategy reduces app launch delays"
     ],
     "Control center": [
       "修复 偶现部分快捷开关无法点击的问题"
@@ -191,6 +192,11 @@
       "Виправлено: Іконки у однорядкових сповіщеннях відображалися не повністю",
       "Виправлено: Могли з'являтися порожні сповіщення з відображенням тільки іконки",
       "Виправлено: Значок 5G у рядку стану відображався не повністю після зміни розміру шрифту або переходу на сторонній шрифт"
+    ],
+    "Рядок стану, панель сповіщень": [
+      "Виправлено: Іконки у однорядкових сповіщеннях відображалися не повністю",
+      "Виправлено: Могли з'являтися порожні сповіщення з відображенням тільки іконки",
+      "Виправлено: Значок 5G у рядку стану відображався не повністю після зміни розміру шрифту або переходу на сторонній шрифт"
     ]
   },
   "logs_pl": {
@@ -227,6 +233,7 @@
   "logs_de": {
     "System": [
       "Updated the security patch to August 2024. Increased system security.",
+      "Sicherheitspatch für Juli 2024 aktualisiert. Systemsicherheit erhöht.",
       "Optimierung: Neue Strategie für die Startanimation reduziert Verzögerungen beim App-Start"
     ],
     "Kontrollzentrum": [
@@ -239,6 +246,11 @@
       "Optimierung: Empfindlichkeit der Taschenrechner-Tasten verbessert"
     ],
     "Statusleiste, Benachrichtigungsleiste": [
+      "Behoben: Symbole in einzeiligen Benachrichtigungen wurden nicht vollständig angezeigt",
+      "Behoben: Leere Benachrichtigungen wurden nur mit dem Symbol angezeigt",
+      "Behoben: Das 5G-Symbol in der Statusleiste wurde nach Änderung der Schriftgröße oder nach Wechsel zu einer Drittanbieter-Schriftart nicht vollständig angezeigt"
+    ],
+    "Xiaomi Cloud-Dienst": [
       "Behoben: Symbole in einzeiligen Benachrichtigungen wurden nicht vollständig angezeigt",
       "Behoben: Leere Benachrichtigungen wurden nur mit dem Symbol angezeigt",
       "Behoben: Das 5G-Symbol in der Statusleiste wurde nach Änderung der Schriftgröße oder nach Wechsel zu einer Drittanbieter-Schriftart nicht vollständig angezeigt"
@@ -454,6 +466,11 @@
       "Sửa: Biểu tượng thông báo một dòng không được hiển thị đầy đủ",
       "Sửa: Thông báo trống xuất hiện chỉ với biểu tượng được hiển thị",
       "Sửa: Biểu tượng 5G trên thanh trạng thái không hiển thị đầy đủ sau khi chuyển cỡ chữ hoặc đổi sang phông chữ của bên thứ ba"
+    ],
+    "Thanh trạng thái, thanh thông báo": [
+      "Sửa: Biểu tượng thông báo một dòng không được hiển thị đầy đủ",
+      "Sửa: Thông báo trống xuất hiện chỉ với biểu tượng được hiển thị",
+      "Sửa: Biểu tượng 5G trên thanh trạng thái không hiển thị đầy đủ sau khi chuyển cỡ chữ hoặc đổi sang phông chữ của bên thứ ba"
     ]
   },
   "logs_th": {
@@ -477,6 +494,11 @@
       "แก้ไข: ไอคอน 5G ในแถบสถานะแสดงได้ไม่เต็มที่หลังจากเปลี่ยนขนาดตัวอักษรหรือเปลี่ยนเป็นแบบอักษรของบุคคลที่สาม"
     ],
     "บริการคลาวด์ Xiaomi": [
+      "แก้ไข: ไอคอนการแจ้งเตือนบรรทัดเดียวไม่แสดงทั้งหมด",
+      "แก้ไข: การแจ้งเตือนว่างเปล่าปรากฏขึ้นโดยแสดงเฉพาะไอคอนเท่านั้น",
+      "แก้ไข: ไอคอน 5G ในแถบสถานะแสดงได้ไม่เต็มที่หลังจากเปลี่ยนขนาดตัวอักษรหรือเปลี่ยนเป็นแบบอักษรของบุคคลที่สาม"
+    ],
+    "แถบสถานะ, แผงการแจ้งเตือน": [
       "แก้ไข: ไอคอนการแจ้งเตือนบรรทัดเดียวไม่แสดงทั้งหมด",
       "แก้ไข: การแจ้งเตือนว่างเปล่าปรากฏขึ้นโดยแสดงเฉพาะไอคอนเท่านั้น",
       "แก้ไข: ไอคอน 5G ในแถบสถานะแสดงได้ไม่เต็มที่หลังจากเปลี่ยนขนาดตัวอักษรหรือเปลี่ยนเป็นแบบอักษรของบุคคลที่สาม"
@@ -547,6 +569,7 @@
   "logs_ug": {
     "سىستېما": [
       "Updated the security patch to August 2024. Increased system security.",
+      "Updated the security patch to July 2024. Increased system security.",
       "Optimization: New startup animation strategy reduces app launch delays"
     ],
     "Control center": [
@@ -562,11 +585,17 @@
       "Fix: Single-line notification icons were not fully displayed",
       "Fix: Blank notifications appeared with only the icon displayed",
       "Fix: The 5G icon in the status bar wasn't fully displayed after switching font size or changing to a third party font"
+    ],
+    "Xiaomi بۇلۇت مۇلازىمىتى": [
+      "Fix: Single-line notification icons were not fully displayed",
+      "Fix: Blank notifications appeared with only the icon displayed",
+      "Fix: The 5G icon in the status bar wasn't fully displayed after switching font size or changing to a third party font"
     ]
   },
   "logs_bo": {
     "མ་ལག": [
       "Updated the security patch to August 2024. Increased system security.",
+      "Updated the security patch to July 2024. Increased system security.",
       "Optimization: New startup animation strategy reduces app launch delays"
     ],
     "Control center": [
@@ -579,6 +608,11 @@
       "Optimization: Improved the sensitivity of Calculator buttons"
     ],
     "Status bar, Notification shade": [
+      "Fix: Single-line notification icons were not fully displayed",
+      "Fix: Blank notifications appeared with only the icon displayed",
+      "Fix: The 5G icon in the status bar wasn't fully displayed after switching font size or changing to a third party font"
+    ],
+    "Mi Cloud": [
       "Fix: Single-line notification icons were not fully displayed",
       "Fix: Blank notifications appeared with only the icon displayed",
       "Fix: The 5G icon in the status bar wasn't fully displayed after switching font size or changing to a third party font"

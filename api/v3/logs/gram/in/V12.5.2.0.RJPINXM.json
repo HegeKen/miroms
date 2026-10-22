@@ -294,6 +294,47 @@
       "Fix: Notifications weren't always displayed correctly when \"Raise to wake\" was used",
       "Fix: Buttons weren't always displayed correctly on the notifications when Dark mode was on",
       "Adjustments for the notch-related options"
+    ],
+    "status bar, Notification shade": [
+      "New: Permanent Lock screen notifications in the DND mode",
+      "New: With the system theme, the lock screen clock supports three custom styles, which can be changed in Advanced lock screen settings.",
+      "New: Small animation after tapping a quick toggle icon",
+      "New: Added the ability to switch SIM cards in Quick Settings.",
+      "New: Adjusted the visual style of the notification shade",
+      "New: An option to switch between connected devices in the notification about media playback",
+      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
+      "Optimization: GPS icon in the status bar",
+      "Optimization: The UI for renaming fingerprints",
+      "Optimization: Readjusted touch-sensitive areas for Wallpaper Carousel",
+      "Optimization: Algorithms for displaying incoming call notifications",
+      "Optimization: Alarm notifications",
+      "Optimization: Third party theme compatibility for Notification shade",
+      "Optimization: Dark mode adjustments for notifications",
+      "Fix: Call time bubble overlapped with notification icons",
+      "Fix: Blank notification shade after expanding group notifications",
+      "Fix: Occasionally, the screen did not turn on for incoming calls on the lock screen",
+      "Fix: In landscape orientation, the lock screen password prompt was displayed incompletely",
+      "Fix: Accidental touches on the notification shade during calls",
+      "Fix: Media volume not restoring after receiving a notification",
+      "Fix: Brightness slider updated slowly when pulling down the notification shade after brightness had already changed",
+      "Fix: Some notification icons couldn't be displayed",
+      "Fix: Floating notifications overlapped when the transparent background was used",
+      "Fix: Permission dialog elements overlapped after a notification was long pressed",
+      "Fix: Notifications weren't displayed correctly when App lock was used",
+      "Fix: Cleaner animations weren't displayed correctly",
+      "Fix: Notification shade couldn't be opened in some cases",
+      "Fix: Notifications weren't displayed correctly after missed calls",
+      "Fix: Issues with permissions after missed calls",
+      "Fix: Status bar icons turned black in some cases",
+      "Fix: Music player controls weren't displayed in some cases",
+      "Fix: App notification switches didn't always work",
+      "Fix: The button for clearing memory wasn't always displayed correctly in the Notification shade",
+      "Fix: Issues with displaying grouped notifications",
+      "Fix: Player controls weren't always displayed in the Notification shade",
+      "Fix: Notifications weren't always displayed correctly when \"Raise to wake\" was used",
+      "Fix: Buttons weren't always displayed correctly on the notifications when Dark mode was on",
+      "Improved lock screen camera launch: press and hold the camera icon and swipe left.",
+      "Adjustments for the notch-related options"
     ]
   },
   "logs_zh_tw": {
@@ -342,7 +383,7 @@
       "修復: 掛斷電話螢幕亮起後螢幕鎖定畫面訊息全部消失的問題",
       "修復: 使用主題後開啟超級壁紙，螢幕鎖定頁面內容不顯示的偶發問題"
     ],
-    "設定": [
+    "设置": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
       "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
       "修復: 在“應用管理-默認打開鏈接”頁面中選擇“地圖”選項時頁面崩潰的問題"
@@ -376,6 +417,11 @@
       "修復: 抬起螢幕亮起時偶現鎖定螢幕通知閃動的異常",
       "修復: 深色模式下，通知按鈕偶發顯示異常的問題",
       "去除 「隱藏後狀態欄在劉海外」的隱藏螢幕劉海選項"
+    ],
+    "設定": [
+      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
+      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
+      "修復: 在“應用管理-默認打開鏈接”頁面中選擇“地圖”選項時頁面崩潰的問題"
     ],
     "狀態欄、通知欄": [
       "新增: 勿擾模式下的鎖屏常駐通知",
@@ -446,6 +492,10 @@
       "最適化: 横向きモードでのコントロールセンターレイアウト",
       "修正: コントロールセンターが横向きモードで正しく表示されない問題"
     ],
+    "最近のタスク": [
+      "追加: 最近のタスクで一部アプリのプレビューをぼかせるようになりました",
+      "プレビューが正しく表示されない問題を修正"
+    ],
     "ロック画面": [
       "新機能: 指紋認証の新しいオプション",
       "最適化: デバイスがロックされているときのアプリ保管庫のメモリ使用量",
@@ -501,6 +551,47 @@
       "修正: '持ち上げてスリープ解除'実行時に通知が正しく表示されない場合がある問題",
       "修正: ダークモードがオンの場合、通知にボタンが正しく表示されないことがある問題",
       "ノッチ関連オプションの調整"
+    ],
+    "ステータスバー、通知シェード": [
+      "新機能: DNDモードの永久的なロック画面通知",
+      "新機能: システムテーマでは、ロック画面の時計が3種類のカスタムスタイルに対応し、ロック画面の詳細設定で変更できます。",
+      "新機能: クイック設定のアイコンをタップした後の小さなアニメーション",
+      "新規: クイック設定でSIMカードを切り替える機能を追加",
+      "追加: 通知パネルのビジュアルスタイルを調整",
+      "新機能: メディア再生に関する通知の中で接続されているデバイスを切り替えるオプション",
+      "最適化: ロック解除パターンのドット部分の感度を再調整しました",
+      "最適化: ステータスバーのGPSアイコン",
+      "最適化: 指紋の名前を変更するUI",
+      "最適化: 壁紙カルーセルのタッチ感応エリアを再調整しました",
+      "最適化: 着信通知を表示するアルゴリズム",
+      "最適化: アラーム通知",
+      "最適化: 通知シェードのサードパーティ製テーマへの対応",
+      "最適化: 通知のダークモード調整",
+      "修正: 通話時間のバブルが通知アイコンと重なる問題",
+      "修正: グループ通知を展開した後、通知シェードが空白になる問題",
+      "修正: ロック画面で着信時に画面が点灯しないことがある問題",
+      "修正: 横向き画面の状態で、ロック画面のパスワード案内が不完全に表示される問題",
+      "修正: 通話中に通知シェードを誤ってタッチする問題",
+      "修正: 通知を受信した後にメディア音量が復元されない問題",
+      "修正: 明るさ変更後、通知シェードを下ろした際に明るさスライダーの更新が遅れる問題",
+      "修正: 一部の通知アイコンが表示されない問題",
+      "修正: 透明な背景を使用した際にフローティング通知の表示が重なる問題",
+      "修正: 通知を長押しするとアクセス許可のダイアログと表示が重なってしまう問題",
+      "修正: アプリロックを使用時に通知が正しく表示されない問題",
+      "修正: クリーナーのアニメーションが正しく表示されない問題",
+      "修正: 通知シェードが開けない場合がある問題",
+      "修正: 不在着信後に通知が正しく表示されない問題",
+      "修正: 不在着信後のアクセス許可に関する問題",
+      "修正: ステータスバーのアイコンが黒くなる場合がある問題",
+      "修正: 音楽プレーヤーのコントロールが表示されない場合がある問題",
+      "修正: アプリの通知スイッチが機能しないことがある問題",
+      "修正: 通知シェードにメモリ消去ボタンが正しく表示されないことがある問題",
+      "修正: グループ化された通知の表示に関する問題",
+      "修正: プレイヤーのコントロールが通知シェードに表示されないことがある問題",
+      "修正: '持ち上げてスリープ解除'実行時に通知が正しく表示されない場合がある問題",
+      "修正: ダークモードがオンの場合、通知にボタンが正しく表示されないことがある問題",
+      "ロック画面カメラの起動方法を改善：カメラアイコンを長押しして左にスワイプ",
+      "ノッチ関連オプションの調整"
     ]
   },
   "logs_ko": {
@@ -528,6 +619,10 @@
       "New: 빈 곳을 탭하여 제어 센터 종료",
       "최적화: 풍경 모드에서 제어 센터 레이아웃",
       "수정: 풍경 모드에서 제어 센터가 제대로 표시되지 않는 현상"
+    ],
+    "최근 작업": [
+      "추가: 최근 작업에서 일부 앱의 미리보기를 흐리게 표시할 수 있습니다",
+      "미리보기가 올바르게 표시되지 않는 문제 수정"
     ],
     "잠금화면": [
       "New: 새 지문 옵션",
@@ -584,6 +679,47 @@
       "수정: \"손목 올려 켜기\" 사용 시에 알림이 제대로 표시되지 않는 문제",
       "수정: 다크 모드가 켜져있는 경우 알림에 버튼이 제대로 표시되지 않는 문제",
       "노치 관련 옵션 조정"
+    ],
+    "상태 바, 알림 바": [
+      "New: 방해금지 모드를 위한 영구 잠금화면 알림",
+      "새로운 기능: 시스템 테마에서 잠금 화면 시계가 3가지 사용자 지정 스타일을 지원하며, 잠금 화면 고급 설정에서 변경할 수 있습니다.",
+      "새 기능: 빠른 설정 아이콘을 탭한 후 표시되는 작은 애니메이션",
+      "신규: 빠른 설정에서 SIM 카드를 전환하는 기능이 추가되었습니다.",
+      "추가: 알림창 시각 스타일 조정",
+      "New: 미디어 재생에 대한 알림에서 연결된 기기 간에 전환할 수 있는 옵션",
+      "최적화: 잠금해제 패턴의 점에 대한 민감 영역이 재조정됨",
+      "최적화: 상태 바의 GPS 아이콘",
+      "최적화: 지문 이름 변경을 위한 UI",
+      "최적화: 슬라이드형 배경화면를 위한 터치 감응 영역 재조정됨",
+      "최적화: 수신 통화 알림 표시를 위한 알고리즘",
+      "최적화: 알람 알림 표시",
+      "최적화: 알림 바와 타사 테마의 호환성",
+      "최적화: 알림을 위한 다크 모드 조정",
+      "수정: 통화 시간 버블이 알림 아이콘과 겹치는 문제",
+      "수정: 그룹 알림을 확장한 후 알림창이 비어 있는 문제",
+      "수정: 잠금 화면에서 전화 수신 시 화면이 켜지지 않는 문제",
+      "수정: 가로 화면 상태에서 잠금 화면 비밀번호 안내 문구가 불완전하게 표시되는 문제",
+      "수정: 통화 중 알림 창을 잘못 터치하는 문제",
+      "수정: 알림 수신 후 미디어 볼륨이 복원되지 않는 문제",
+      "수정: 밝기가 이미 변경된 후 알림 패널을 내릴 때 밝기 슬라이더가 느리게 업데이트되는 문제",
+      "수정: 일부 알림 아이콘이 표시되지 않는 문제",
+      "수정: 투명 배경화면 사용 시 플로팅 창이 겹치는 문제",
+      "수정: 알림을 오래 누르면 발생할 수 있는 권한 다이얼로그 요소가 겹치는 문제",
+      "수정: 앱 잠금을 사용 중일 시 알림이 제대로 표시되지 않는 문제",
+      "수정: 클리너 애니메이션이 제대로 표시되지 않는 문제",
+      "수정: 일부 상황에서 알림 바가 열리지 않는 문제",
+      "수정: 부재중 통화 후의 알림이 제대로 표시되지 않는 문제",
+      "수정: 부재중 통화 후의 권한 문제",
+      "수정: 일부 상황에서 상태 바 아이콘이 검게 변하는 문제",
+      "수정: 일부 상황에서 음악 플레이어 컨트롤이 제대로 표시되지 않는 문제",
+      "수정: 앱 알림 전환이 작동하지 않는 문제",
+      "수정: 알림 바에 메모리 정리 버튼 제대로 표시되지 않는 문제",
+      "수정: 그룹화된 알림 표시 문제",
+      "수정: 플레이어의 컨트롤이 알림바에 표시되지 않을 수있는 문제",
+      "수정: \"손목 올려 켜기\" 사용 시에 알림이 제대로 표시되지 않는 문제",
+      "수정: 다크 모드가 켜져있는 경우 알림에 버튼이 제대로 표시되지 않는 문제",
+      "잠금 화면 카메라 실행 방식 개선: 카메라 아이콘을 길게 누른 후 왼쪽으로 스와이프",
+      "노치 관련 옵션 조정"
     ]
   },
   "logs_ru": {
@@ -594,6 +730,10 @@
       "Гибкое хранилище: новые чувствительные механизмы управления памятью обеспечивают надежную работу системы даже с течением времени.",
       "Смарт-баланс: улучшение основных модулей системы позволит вашему устройству максимально эффективно использовать все возможности флагманского оборудования."
     ],
+    "Система": [
+      "Оптимизация: Устранены звуковые уведомления в режиме Не беспокоить",
+      "Оптимизация: Обновление системы безопасности Android (август 2021 года). Улучшена безопасность системы."
+    ],
     "Центр управления": [
       "Новое: Анимация, иллюстрирующая нажатие на большую карточку",
       "Новое: Теперь вы можете ограничить открытие Шторки уведомлений на экране блокировки",
@@ -602,9 +742,9 @@
       "Оптимизация: Разметка Центра управления в альбомной ориентации",
       "Исправлено: Центр управления не всегда отображался правильно в альбомном режиме"
     ],
-    "Система": [
-      "Оптимизация: Устранены звуковые уведомления в режиме Не беспокоить",
-      "Оптимизация: Обновление системы безопасности Android (август 2021 года). Улучшена безопасность системы."
+    "Недавнее": [
+      "Добавлено: можно размывать превью некоторых приложений в недавних задачах",
+      "Исправлено: предварительный просмотр не отображался корректно"
     ],
     "Экран блокировки": [
       "Новое: Новый параметры для отпечатков пальцев",
@@ -703,7 +843,46 @@
       "Изменения параметров, связанных с вырезом на экране"
     ],
     "строка состояния, шторка уведомлений": [
-      "Новое: Теперь вы можете размыть превью некоторых приложений в Меню приложений"
+      "Новое: Теперь вы можете размыть превью некоторых приложений в Меню приложений",
+      "Новое: Постоянные уведомления на экране блокировки в режиме Не беспокоить",
+      "Новое: В системной теме часы на экране блокировки поддерживают три настраиваемых стиля; их можно изменить в расширенных настройках экрана блокировки.",
+      "Добавлено: небольшая анимация после нажатия на значок быстрого переключателя",
+      "Новое: Добавлена возможность переключения SIM-карт в быстрых настройках.",
+      "Добавлено: скорректирован визуальный стиль панели уведомлений",
+      "Новое: Возможность переключения между подключенными устройствами в уведомлениях о воспроизведении мультимедиа",
+      "Оптимизация: Отрегулированы чувствительные зоны вокруг точек ввода графического ключа",
+      "Оптимизация: Значок GPS в строке состояния",
+      "Оптимизация: Интерфейс переименования отпечатков пальцев",
+      "Оптимизация: Калибровка сенсорной области в Карусели обоев",
+      "Оптимизация: Алгоритмы отображения уведомлений о входящих вызовах",
+      "Оптимизация: Уведомления будильника",
+      "Оптимизация: Совместимость сторонних тем со шторкой уведомлений",
+      "Оптимизация: Оптимизация отображения уведомлений в темном режиме",
+      "Исправлено: Время продолжительности вызова перекрывалось значками уведомлений",
+      "Исправлено: пустая панель уведомлений после раскрытия групповых уведомлений",
+      "Исправлено: экран иногда не включался при входящем вызове на экране блокировки",
+      "Исправлено: в горизонтальной ориентации подсказка пароля экрана блокировки отображалась не полностью",
+      "Исправлено: случайное касание панели уведомлений во время вызова",
+      "Исправлено: проблема с невосстановлением громкости мультимедиа после получения уведомления",
+      "Исправлено: ползунок яркости обновлялся с задержкой при открытии панели уведомлений после изменения яркости",
+      "Исправлено: Значки некоторых уведомлений могли не отображаться",
+      "Исправлено: При использовании прозрачного фона всплывающие уведомления могли перекрываться",
+      "Исправлено: Элементы диалогового окна предоставления разрешений перекрывались после долгого нажатия на уведомление",
+      "Исправлено: При использовании защиты приложений уведомления могли отображаться неправильно",
+      "Исправлено: Исправлено некорректное отображение анимации \"Очистки\"",
+      "Исправлено: В некоторых случаях шторка уведомлений могла не открываться",
+      "Исправлено: После пропущенных вызовов уведомления могли отображаться неправильно",
+      "Исправлено: Исправлены ошибки разрешений, появлявшиеся после пропущенных вызовов",
+      "Исправлено: В некоторых случаях значки в строке состояния могли отображаться черным цветом",
+      "Исправлено: В некоторых случаях виджет управления воспроизведением музыки мог не отображаться",
+      "Исправлено: В некоторых случаях переключатели на уведомлениях приложений могли не работать",
+      "Исправлено: Кнопка очистки памяти в шторке уведомлений могла отображаться неправильно",
+      "Исправлено: Исправлено неправильное отображение сгруппированных уведомлений",
+      "Исправлено: Виджет управления воспроизведением музыки мог не отображаться в шторке уведомлений",
+      "Исправлено: При использовании функции \"Поднять для активации\" уведомления могли отображаться неправильно",
+      "Исправлено: При активации темного режима некоторые кнопки на уведомлениях могли не отображаться",
+      "Улучшен способ запуска камеры с экрана блокировки: нажмите и удерживайте значок камеры и смахните влево.",
+      "Изменения параметров, связанных с вырезом на экране"
     ]
   },
   "logs_uk": {
@@ -732,6 +911,10 @@
       "Нове: Натисніть на вільний простір в Центрі управління, щоб закрити його",
       "Оптимізація: Розмітка Центру керування в альбомній орієнтації",
       "Виправлено: Центр керування відображався неправильно у альбомній орієнтації"
+    ],
+    "Останні завдання": [
+      "Додано: можна розмивати прев’ю деяких програм у нещодавніх задачах",
+      "Виправлено: попередній перегляд не відображався належним чином"
     ],
     "Екран блокування": [
       "Нове: Нові параметри для відбитків пальців",
@@ -788,6 +971,47 @@
       "Виправлено: Під час використання функції \"Підняти для активації\" сповіщення могли відображатися неправильно",
       "Виправлено: Під час активації темного режиму деякі кнопки на сповіщеннях могли не відображатися",
       "Зміни параметрів, які пов’язані з вирізом на екрані"
+    ],
+    "Рядок стану, панель сповіщень": [
+      "Нове: Постійні сповіщення на екрані блокування в режимі \"Не турбувати\"",
+      "Нове: У системній темі годинник на екрані блокування підтримує три настроювані стилі; їх можна змінити в розширених налаштуваннях екрана блокування.",
+      "Додано: невелика анімація після натискання на значок швидкого перемикача",
+      "Нове: Додано можливість перемикання SIM-карток у швидких налаштуваннях.",
+      "Додано: скориговано візуальний стиль панелі сповіщень",
+      "Нове: Можливість перемикання між підключеними пристроями у сповіщенні про відтворення мультимедіа",
+      "Оптимізація: Переналаштування чутливої області точок для введення графічного ключа",
+      "Оптимізація: Іконка GPS у рядку стану",
+      "Оптимізація: Інтерфейс перейменування відбитків пальців",
+      "Оптимізація: Оновлення сенсорної області в Каруселі шпалер",
+      "Оптимізація: Алгоритми відображення сповіщень про вхідні виклики",
+      "Оптимізація: Сповіщення будильника",
+      "Оптимізація: Сумісність сторонніх тем із панеллю сповіщень",
+      "Оптимізація: Оптимізація відображення сповіщень у темному режимі",
+      "Виправлено: бульбашка тривалості виклику перекривалася з іконками сповіщень",
+      "Виправлено: порожня панель сповіщень після розгортання групових сповіщень",
+      "Виправлено: екран іноді не вмикався під час вхідного виклику на екрані блокування",
+      "Виправлено: у горизонтальній орієнтації підказка пароля екрана блокування відображалася не повністю",
+      "Виправлено: випадковий дотик до панелі сповіщень під час виклику",
+      "Виправлено: проблема, коли гучність медіа не відновлюється після отримання сповіщення",
+      "Виправлено: повзунок яскравості повільно оновлювався під час відкриття панелі сповіщень після зміни яскравості",
+      "Виправлено: Деякі іконки сповіщень не відображалися",
+      "Виправлено: Під час використання прозорого фону спливаючі сповіщення могли перекриватися",
+      "Виправлено: Елементи діалогового вікна надання дозволів перекривалися після довгого натиснення на сповіщення",
+      "Виправлено: Під час використання захисту програм сповіщення могли відображатися неправильно",
+      "Виправлено: Виправлено некоректне відображення анімації \"Очищення\"",
+      "Виправлено: В деяких випадках панель сповіщень могла не відкриватися",
+      "Виправлено: Після пропущених викликів сповіщення могли відображатися неправильно",
+      "Виправлено: Виправлені помилки дозволів, які з'являлися після пропущених викликів",
+      "Виправлено: В деяких випадках іконки у рядку стану могли відображатися чорним кольором",
+      "Виправлено: В деяких випадках віджет керування відтворенням музики міг не відображатися",
+      "Виправлено: В деяких випадках перемикачі на сповіщеннях програм могли не працювати",
+      "Виправлено: Кнопка очищення памяті у панелі сповіщень могла відображатися неправильно",
+      "Виправлено: Виправлено неправильне відображення згрупованих сповіщень",
+      "Виправлено: Віджет керування відтворенням музиик міг не відображатися у панелі сповіщень",
+      "Виправлено: Під час використання функції \"Підняти для активації\" сповіщення могли відображатися неправильно",
+      "Виправлено: Під час активації темного режиму деякі кнопки на сповіщеннях могли не відображатися",
+      "Покращено спосіб запуску камери з екрана блокування: утримуйте значок камери та проведіть пальцем ліворуч.",
+      "Зміни параметрів, які пов’язані з вирізом на екрані"
     ]
   },
   "logs_pl": {
@@ -815,6 +1039,10 @@
       "Nowe: Dotknięcie pustego miejsca w Centrum kontroli powoduje jego zamknięcie",
       "Zoptymalizowano: Układ Centrum kontroli w trybie poziomym",
       "Naprawiono: Centrum kontroli nie zawsze było poprawnie wyświetlane w trybie poziomym"
+    ],
+    "Ostatnie zadania": [
+      "Dodano: możliwość rozmycia podglądu niektórych aplikacji w ostatnich zadaniach",
+      "Poprawiono: podglądy nie były wyświetlane prawidłowo"
     ],
     "Ekran blokady": [
       "Nowe: Nowe opcje odcisków palców",
@@ -871,6 +1099,47 @@
       "Naprawiono: Powiadomienia nie zawsze były wyświetlane poprawnie, gdy użyto opcji „Podnieś, aby się obudzić”",
       "Naprawiono: Przyciski w Powiadomieniach nie zawsze były wyświetlane poprawnie w Trybie ciemnym",
       "Korekty dla opcji związanych z wycięciem"
+    ],
+    "pasek powiadomień,panel powiadomień": [
+      "Nowe: Trwałe powiadomienie o ekranie blokady dla trybu Nie przeszkadzać",
+      "Nowość: W motywie systemowym zegar ekranu blokady obsługuje trzy niestandardowe style; można je zmienić w ustawieniach zaawansowanych ekranu blokady.",
+      "Dodano: mała animacja po naciśnięciu ikony szybkiego przełącznika",
+      "Nowość: Dodano możliwość przełączania kart SIM w szybkich ustawieniach.",
+      "Dodano: dostosowano styl wizualny panelu powiadomień",
+      "Nowe: Możliwość przełączania się między podłączonymi urządzeniami w powiadomieniu o odtwarzaniu multimediów",
+      "Zoptymalizowano: Ponownie wyregulowano wrażliwe obszary dla kropek we wzorze odblokowania",
+      "Zoptymalizowano: Ikona GPS na pasku statusu",
+      "Zoptymalizowano: Interfejs użytkownika do zmiany nazwy odcisków palców",
+      "Zoptymalizowano: Ponownie wyregulowane obszary wrażliwe na dotyk w Codziennych tapetach",
+      "Zoptymalizowano: Algorytmy wyświetlania powiadomień o połączeniach przychodzących",
+      "Zoptymalizowano: Powiadomienia Alarmu",
+      "Zoptymalizowano: Kompatybilność motywów stron trzecich dla odcienia powiadomień",
+      "Zoptymalizowano: Dostosowanie Trybu ciemnego do powiadomień",
+      "Naprawiono: bąbelek czasu połączenia nakładał się na ikony powiadomień",
+      "Poprawiono: pusty panel powiadomień po rozwinięciu powiadomień grupowych",
+      "Naprawiono: ekran czasami nie włączał się przy połączeniu przychodzącym na ekranie blokady",
+      "Poprawka: w orientacji poziomej podpowiedź hasła ekranu blokady była wyświetlana niekompletnie",
+      "Poprawiono: przypadkowe dotknięcie panelu powiadomień podczas połączenia",
+      "Poprawka: problem z nieprzywracaniem głośności multimediów po otrzymaniu powiadomienia",
+      "Naprawiono: opóźnione aktualizowanie suwaka jasności podczas opuszczania panelu powiadomień po zmianie jasności",
+      "Naprawiono: Nie można wyświetlić niektórych ikon powiadomień",
+      "Naprawiono: Powiadomienia pływające nakładały się, gdy używane było przezroczyste tło",
+      "Naprawiono: Elementy okna dialogowego uprawnień nakładały się po długim naciśnięciu powiadomienia",
+      "Naprawiono: Powiadomienia nie były wyświetlane poprawnie po użyciu blokady aplikacji",
+      "Naprawiono: Czystsze animacje nie były wyświetlane poprawnie",
+      "Naprawiono: W niektórych przypadkach nie można było otworzyć obszaru powiadomień",
+      "Naprawiono: Powiadomienia nie wyświetlały się poprawnie po nieodebranych połączeniach",
+      "Naprawiono: Problemy z uprawnieniami po nieodebranych połączeniach",
+      "Naprawiono: W niektórych przypadkach ikony Pasku statusu ciemniały",
+      "Naprawiono: W niektórych przypadkach kontrolki Odtwarzacza muzyki nie były wyświetlane",
+      "Naprawiono: Przełącznik Powiadomień aplikacji nie zawsze działał",
+      "Naprawiono: Przycisk do czyszczenia pamięci nie zawsze był wyświetlany poprawnie w Panelu powiadomień",
+      "Naprawiono: Problemy z wyświetlaniem grupowych powiadomień",
+      "Naprawiono: Kontrolki odtwarzacza nie zawsze były wyświetlane w Panelu powiadomień",
+      "Naprawiono: Powiadomienia nie zawsze były wyświetlane poprawnie, gdy użyto opcji „Podnieś, aby się obudzić”",
+      "Naprawiono: Przyciski w Powiadomieniach nie zawsze były wyświetlane poprawnie w Trybie ciemnym",
+      "Ulepszono uruchamianie aparatu z ekranu blokady: przytrzymaj ikonę aparatu i przesuń w lewo.",
+      "Korekty dla opcji związanych z wycięciem"
     ]
   },
   "logs_de": {
@@ -886,10 +1155,114 @@
       "Optimierung: Android-Sicherheitspatch auf August 2021 aktualisiert. Systemsicherheit erhöht.",
       "Optimierung: Unnötige Tonbenachrichtigungen für den Nicht-Stören-Modus entfernt"
     ],
+    "Kontrollzentrum": [
+      "Neu: Animation beim Antippen einer großen Karte",
+      "Neu: Öffnen der Benachrichtigungsleiste auf dem Sperrbildschirm kann jetzt gesperrt werden",
+      "Neu: Uhrzeit im Kontrollzentrum anzeigen",
+      "Neu: Durch Tippen auf eine leere Stelle im Kontrollzentrum wird es jetzt geschlossen",
+      "Optimierung: Layout des Kontrollzentrums im Querformat",
+      "Fix: Das Kontrollzentrum wurde im Querformat nicht immer korrekt angezeigt"
+    ],
+    "Letzte Aufgaben": [
+      "Neu: Vorschauen einiger Apps in „Zuletzt verwendet“ können jetzt unscharf dargestellt werden",
+      "Behoben: Vorschauen wurden nicht korrekt angezeigt"
+    ],
+    "Sperrbildschirm": [
+      "Neu: Neue Fingerabdruck-Optionen",
+      "Optimierung: Speicherverbrauch von App Vault bei gesperrtem Gerät",
+      "Behoben: Bildschirmflackern beim Entsperren aus dem Ruhezustand nach Aktivierung des Lesemodus.",
+      "Behebung: Bildschirm flackerte nach dem Sperren bei Verwendung von Super-Hintergründen",
+      "Behebung: Hintergrundbilder flackerten bei Fingerabdruck-Entsperrung in einigen Fällen",
+      "Behebung: Anzeigefehler bei Verwendung der Fingerabdruck-Entsperrung in Spielen",
+      "Behebung: Probleme mit der Fingerabdruck-Animation in mehreren Szenen",
+      "Behebung: Fingerabdruck- und Gesichtsentsperrung wurden nach dem Einlegen einer SIM-Karte deaktiviert",
+      "Behoben: Der Bildschirm flackerte in einigen Fällen bei der Verwendung der Fingerabdruckentsperrung mit Super-Hintergründen",
+      "Behoben: \"Zum Aufwecken anheben\" wurde in manchen Fällen unerwartet deaktiviert",
+      "Behoben: Sperrbildschirm-Benachrichtigungen verschwanden in einigen Fällen bei Verwendung der Fingerabdruck- oder Gesichtsentsperrung nicht rechtzeitig",
+      "Behoben: In einigen Fällen flackerte der Bildschirm bei der Verwendung der Fingerabdruckentsperrung",
+      "Behoben: Nach der Fingerabdruckentsperrung wurden außer der Statusleiste keine Elemente auf dem Bildschirm angezeigt",
+      "Behoben: Probleme mit der Uhr auf dem Sperrbildschirm bei Verwendung von Drittanbieter-Themes und Super-Hintergründen",
+      "Behoben: Speicherprobleme bei Anzeige der Doppeluhr",
+      "Behoben: Speichernutzungsprobleme bei der Anzeige der Ladeanimation",
+      "Behoben: Die gleichzeitige Nutzung von Gesichts- und Fingerabdruckentsperrung führte in manchen Fällen zu Abstürzen",
+      "Behoben: Benachrichtigungen auf dem Sperrbildschirm verschwanden nach einem beendeten Anruf",
+      "Behoben: Sperrbildschirm-Elemente wurden nicht angezeigt, wenn Super-Hintergründe und Themes kombiniert wurden"
+    ],
     "Einstellungen": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
       "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
       "Behebung: Abstürze bei Auswahl der Standardkarte"
+    ],
+    "Xiaomi Cloud-Dienst": [
+      "Neu: Dauerhafte Sperrbildschirm-Benachrichtigungen im Nicht-Stören-Modus",
+      "Neu: Eine Option, in der Benachrichtigung zur Medienwiedergabe zwischen verbundenen Geräten zu wechseln",
+      "Optimierung: Empfindliche Bereiche für die Punkte im Entsperrmuster angepasst",
+      "Optimierung: GPS-Symbol in der Statusleiste",
+      "Optimierung: Die Benutzeroberfläche zum Umbenennen von Fingerabdrücken",
+      "Optimierung: Touch-Bereiche für Wallpaper Carousel angepasst, um versehentliche Berührungen zu verringern.",
+      "Optimierung: Algorithmen zur Anzeige von Benachrichtigungen über eingehende Anrufe",
+      "Optimierung: Weckerbenachrichtigungen",
+      "Optimierung: Kompatibilität von Drittanbieter-Themes mit dem Benachrichtigungsbereich",
+      "Optimierung: Anpassung des Dunkelmodus für Benachrichtigungen",
+      "Behoben: Überlappung der Anrufzeit-Blase mit Benachrichtigungssymbolen",
+      "Behoben: Einige Benachrichtigungssymbole wurden im nativen Stil nicht angezeigt",
+      "Behoben: Schwebende Benachrichtigungen überschnitten sich bei Verwendung eines transparenten Hintergrunds.",
+      "Behoben: Elemente des Berechtigungsdialogs überlappten sich nach langem Drücken auf eine Benachrichtigung",
+      "Behoben: Bei aktiver App-Sperre wurden Benachrichtigungen nicht korrekt angezeigt",
+      "Behoben: Die Animationen des Reinigers wurden nicht korrekt angezeigt",
+      "Behoben: Der Benachrichtigungsbereich ließ sich in manchen Fällen nicht öffnen",
+      "Behoben: Benachrichtigungen wurden nach verpassten Anrufen nicht korrekt angezeigt",
+      "Behoben: Probleme mit Berechtigungen nach verpassten Anrufen",
+      "Behoben: Statusleisten-Symbole wurden in manchen Fällen schwarz",
+      "Behoben: Musik-Player-Steuerelemente wurden in manchen Fällen nicht angezeigt",
+      "Behoben: App-Benachrichtigungsschalter funktionierten nicht immer",
+      "Behebung: Die Schaltfläche zum Leeren des Arbeitsspeichers wurde in der Benachrichtigungsleiste nicht immer korrekt angezeigt",
+      "Behoben: Probleme bei der Anzeige gruppierter Benachrichtigungen",
+      "Behoben: Wiedergabesteuerung wurde nicht immer in der Benachrichtigungsleiste angezeigt",
+      "Behoben: Benachrichtigungen wurden bei Verwendung von „Zum Aufwecken anheben“ nicht immer korrekt angezeigt",
+      "Behoben: Schaltflächen wurden bei aktiviertem Dunkelmodus nicht immer korrekt in den Benachrichtigungen angezeigt",
+      "Entfernt die Option „Bildschirmaussparung ausblenden“, bei der die Statusleiste nach dem Ausblenden außerhalb der Aussparung liegt."
+    ],
+    "Statusleiste, Benachrichtigungsfeld": [
+      "Neu: Dauerhafte Sperrbildschirm-Benachrichtigungen im Nicht-Stören-Modus",
+      "Neu: Im Systemdesign unterstützt die Sperrbildschirm-Uhr drei benutzerdefinierte Stile, die in den erweiterten Sperrbildschirm-Einstellungen geändert werden können.",
+      "Neu: Kleine Animation nach Tippen auf ein Schnellschalter-Symbol",
+      "Neu: Möglichkeit zum Wechseln der SIM-Karte in den Schnelleinstellungen hinzugefügt.",
+      "Neu: Visueller Stil der Benachrichtigungsleiste angepasst",
+      "Neu: Eine Option, in der Benachrichtigung zur Medienwiedergabe zwischen verbundenen Geräten zu wechseln",
+      "Optimierung: Empfindliche Bereiche für die Punkte im Entsperrmuster angepasst",
+      "Optimierung: GPS-Symbol in der Statusleiste",
+      "Optimierung: Die Benutzeroberfläche zum Umbenennen von Fingerabdrücken",
+      "Optimierung: Touch-Bereiche für Wallpaper Carousel angepasst, um versehentliche Berührungen zu verringern.",
+      "Optimierung: Algorithmen zur Anzeige von Benachrichtigungen über eingehende Anrufe",
+      "Optimierung: Weckerbenachrichtigungen",
+      "Optimierung: Kompatibilität von Drittanbieter-Themes mit dem Benachrichtigungsbereich",
+      "Optimierung: Anpassung des Dunkelmodus für Benachrichtigungen",
+      "Behoben: Überlappung zwischen Anrufzeit-Blase und Benachrichtigungssymbolen",
+      "Behoben: Leere Benachrichtigungsleiste nach dem Erweitern von Gruppenbenachrichtigungen",
+      "Behoben: Der Bildschirm leuchtete bei eingehenden Anrufen auf dem Sperrbildschirm gelegentlich nicht auf",
+      "Behoben: Im Querformat wurde der Passworthinweis auf dem Sperrbildschirm unvollständig angezeigt",
+      "Behoben: Versehentliches Berühren der Benachrichtigungsleiste während Anrufen",
+      "Behoben: Medienlautstärke wird nach Erhalt einer Benachrichtigung nicht wiederhergestellt",
+      "Behoben: Helligkeitsregler wurde beim Öffnen des Benachrichtigungsfelds erst verzögert aktualisiert, nachdem die Helligkeit bereits geändert wurde",
+      "Behoben: Einige Benachrichtigungssymbole wurden im nativen Stil nicht angezeigt",
+      "Behoben: Schwebende Benachrichtigungen überschnitten sich bei Verwendung eines transparenten Hintergrunds.",
+      "Behoben: Elemente des Berechtigungsdialogs überlappten sich nach langem Drücken auf eine Benachrichtigung",
+      "Behoben: Bei aktiver App-Sperre wurden Benachrichtigungen nicht korrekt angezeigt",
+      "Behoben: Die Animationen des Reinigers wurden nicht korrekt angezeigt",
+      "Behoben: Der Benachrichtigungsbereich ließ sich in manchen Fällen nicht öffnen",
+      "Behoben: Benachrichtigungen wurden nach verpassten Anrufen nicht korrekt angezeigt",
+      "Behoben: Probleme mit Berechtigungen nach verpassten Anrufen",
+      "Behoben: Statusleisten-Symbole wurden in manchen Fällen schwarz",
+      "Behoben: Musik-Player-Steuerelemente wurden in manchen Fällen nicht angezeigt",
+      "Behoben: App-Benachrichtigungsschalter funktionierten nicht immer",
+      "Behebung: Die Schaltfläche zum Leeren des Arbeitsspeichers wurde in der Benachrichtigungsleiste nicht immer korrekt angezeigt",
+      "Behoben: Probleme bei der Anzeige gruppierter Benachrichtigungen",
+      "Behoben: Wiedergabesteuerung wurde nicht immer in der Benachrichtigungsleiste angezeigt",
+      "Behoben: Benachrichtigungen wurden bei Verwendung von „Zum Aufwecken anheben“ nicht immer korrekt angezeigt",
+      "Behoben: Schaltflächen wurden bei aktiviertem Dunkelmodus nicht immer korrekt in den Benachrichtigungen angezeigt",
+      "Start der Kamera vom Sperrbildschirm verbessert: Kamerasymbol gedrückt halten und nach links wischen.",
+      "Entfernt die Option „Bildschirmaussparung ausblenden“, bei der die Statusleiste nach dem Ausblenden außerhalb der Aussparung liegt."
     ]
   },
   "logs_fr": {
@@ -911,6 +1284,10 @@
       "Nouveau: Taper sur un espace vide dans le Centre de contrôle le ferme maintenant",
       "Optimisation: Disposition du centre de contrôle en mode paysage",
       "Réparé: Le centre de contrôle ne s'affichait pas toujours correctement en mode paysage"
+    ],
+    "Tâches récentes": [
+      "Nouveau : vous pouvez désormais flouter les aperçus de certaines applications dans les tâches récentes",
+      "Correction : les aperçus ne s'affichaient pas correctement"
     ],
     "Écran de verrouillage": [
       "Nouveau: Nouvelles options d'empreintes digitales",
@@ -1007,7 +1384,19 @@
       "Réparé: Les boutons ne s'affichaient pas toujours correctement sur les notifications lorsque le mode sombre était activé",
       "Appuyez et trainer le raccourcis de l'écran de vérouillage pour ouvrir la caméra",
       "Ajustements pour les options liées à l'encoche",
-      "Nouveau: Vous pouvez brouiller les aperçus de certaines applications dans Récents maintenant"
+      "Nouveau: Vous pouvez brouiller les aperçus de certaines applications dans Récents maintenant",
+      "Nouveau : Avec le thème système, l’horloge de l’écran de verrouillage prend en charge trois styles personnalisés, modifiables dans les paramètres avancés de l’écran de verrouillage.",
+      "Nouveau : petite animation après appui sur une icône de commutateur rapide",
+      "Nouveau : Ajout de la possibilité de changer de carte SIM dans les réglages rapides.",
+      "Nouveau : style visuel de la barre de notifications ajusté",
+      "Corrigé : chevauchement entre la bulle de durée d’appel et les icônes de notification",
+      "Correction : panneau de notifications vide après avoir développé les notifications groupées",
+      "Corrigé : l’écran ne s’allumait parfois pas lors d’un appel entrant sur l’écran de verrouillage",
+      "Correction : en mode paysage, l’invite de mot de passe de l’écran de verrouillage s’affichait de manière incomplète",
+      "Correction : toucher accidentel du panneau de notifications pendant les appels",
+      "Correction : le volume multimédia ne se rétablit pas après réception d'une notification",
+      "Correction : le curseur de luminosité ne se mettait à jour que lentement lors de l'ouverture du panneau de notifications après un changement de luminosité",
+      "Amélioration de l'ouverture de l'appareil photo depuis l'écran de verrouillage : maintenez l'icône de l'appareil photo enfoncée et balayez vers la gauche."
     ]
   },
   "logs_it": {
@@ -1018,6 +1407,10 @@
       "Archiviazione fluida: nuovi meccanismi di archiviazione sensibili manterranno il tuo sistema veloce e reattivo nel tempo.",
       "Bilanciamento intelligente: i miglioramenti di sistema consentono al tuo dispositivo di sfruttare al meglio tutte le funzionalità hardware di ultima generazione."
     ],
+    "Sistema": [
+      "Ottimizzazione: Rimosse notifiche audio non necessarie per la modalità Non Disturbare",
+      "Ottimizzazione: Patch di sicurezza Android aggiornata ad agosto 2021. Maggiore sicurezza del sistema."
+    ],
     "Centro di controllo": [
       "Nuovo: Animazione che illustra il tocco di una scheda più grande",
       "Nuovo: È ora possibile limitare l'apertura dell'area delle notifiche sulla schermata di blocco",
@@ -1026,9 +1419,9 @@
       "Ottimizzazione: Layout del Centro di controllo in modalità orizzontale",
       "Risolto: Il Centro di controllo non veniva sempre visualizzato correttamente in modalità orizzontale"
     ],
-    "Sistema": [
-      "Ottimizzazione: Rimosse notifiche audio non necessarie per la modalità Non Disturbare",
-      "Ottimizzazione: Patch di sicurezza Android aggiornata ad agosto 2021. Maggiore sicurezza del sistema."
+    "Recenti": [
+      "Novità: ora puoi sfocare le anteprime di alcune app nelle attività recenti",
+      "Corretto: le anteprime non venivano visualizzate correttamente"
     ],
     "Schermata di blocco": [
       "Nuovo: Nuove opzioni per le impronte digitali",
@@ -1127,7 +1520,46 @@
       "Modifiche alle opzioni relative al notch"
     ],
     "barra di stato, area delle notifiche": [
-      "Nuovo: Ora puoi sfocare le anteprime di alcune app in Recenti"
+      "Nuovo: Ora puoi sfocare le anteprime di alcune app in Recenti",
+      "Nuovo: Notifiche permanenti nella schermata di blocco in modalità Non Disturbare",
+      "Novità: Con il tema di sistema, l'orologio della schermata di blocco supporta tre stili personalizzati, modificabili nelle impostazioni avanzate della schermata di blocco.",
+      "Novità: piccola animazione dopo il tocco sull'icona di un interruttore rapido",
+      "Novità: Aggiunta la possibilità di cambiare scheda SIM nelle impostazioni rapide.",
+      "Novità: regolato lo stile visivo della barra delle notifiche",
+      "Nuovo: Opzione per passare da un dispositivo connesso all'altro nella notifica sulla riproduzione multimediale",
+      "Ottimizzazione: Riadattate le aree sensibili per i punti nella sequenza di sblocco",
+      "Ottimizzazione: Icona del GPS nella barra di stato",
+      "Ottimizzazione: Interfaccia utente per rinominare le impronte digitali",
+      "Ottimizzazione: Regolate le aree sensibili al tocco per Carosello Sfondi",
+      "Ottimizzazione: Algoritmi per la visualizzazione delle notifiche delle chiamate in arrivo",
+      "Ottimizzazione: Notifiche sveglia",
+      "Ottimizzazione: Compatibilità dei temi di terze parti per l'area delle notifiche",
+      "Ottimizzazione: Miglioramenti della modalità scura per le notifiche",
+      "Risolto: L'icona della durata di chiamata si sovrapponeva alle icone di notifica",
+      "Risolto: pannello notifiche vuoto dopo l'espansione delle notifiche di gruppo",
+      "Corretto: a volte lo schermo non si accendeva per le chiamate in arrivo sulla schermata di blocco",
+      "Corretto: in orientamento orizzontale, il suggerimento della password della schermata di blocco veniva visualizzato in modo incompleto",
+      "Corretto: tocco accidentale del pannello notifiche durante le chiamate",
+      "Correzione: il volume multimediale non viene ripristinato dopo aver ricevuto una notifica",
+      "Corretto: il cursore della luminosità si aggiornava lentamente all'apertura del pannello notifiche dopo che la luminosità era già cambiata",
+      "Risolto: Impossibile visualizzare alcune icone di notifica",
+      "Risolto: Le notifiche a comparsa si sovrapponevano quando veniva utilizzato lo sfondo trasparente",
+      "Risolto: Gli elementi della finestra di dialogo dei permessi si sovrapponevano quando una notifica era premuta a lungo",
+      "Risolto: Le notifiche non venivano visualizzate correttamente quando veniva utilizzato il blocco app",
+      "Risolto: Le animazioni di Pulitore non venivano visualizzate correttamente",
+      "Risolto: Non era possibile aprire l'area delle notifiche in alcuni casi",
+      "Risolto: Le notifiche non venivano visualizzate correttamente dopo le chiamate perse",
+      "Risolto: Problemi con i permessi dopo le chiamate perse",
+      "Risolto: Le icone della barra di stato diventavano nere in alcuni casi",
+      "Risolto: I controlli del lettore musicale non venivano visualizzati in alcuni casi",
+      "Risolto: Gli interruttori delle notifiche app non sempre funzionavano",
+      "Risolto: Il pulsante per svuotare la memoria non veniva sempre visualizzato correttamente nell'area delle notifiche",
+      "Risolto: Problemi con la visualizzazione delle notifiche raggruppate",
+      "Risolto: I controlli del giocatore non venivano sempre visualizzati nell'area delle notifiche",
+      "Risolto: Le notifiche non venivano sempre visualizzate correttamente durante l'utilizzo di \"Solleva per attivare\"",
+      "Risolto: I pulsanti non venivano sempre visualizzati correttamente nelle notifiche con la modalità scura attiva",
+      "Migliorato l'avvio della fotocamera dalla schermata di blocco: tieni premuta l'icona della fotocamera e scorri a sinistra.",
+      "Modifiche alle opzioni relative al notch"
     ]
   },
   "logs_es": {
@@ -1138,6 +1570,10 @@
       "Almacenamiento fluido: los nuevos mecanismos de almacenamiento sensibles mantendrán tu sistema activo y receptivo a medida que pase el tiempo.",
       "Equilibrio inteligente: las mejoras del sistema principal permiten que tu dispositivo aproveche al máximo las especificaciones del hardware insignia."
     ],
+    "Sistema": [
+      "Optimización: Las notificaciones con sonido innecesarias han sido eliminadas del Modo no molestar",
+      "Optimización: Parche de seguridad de Android actualizado a agosto de 2021. Seguridad del sistema incrementada."
+    ],
     "Centro de control": [
       "Nuevo: Animación que ilustra la pulsación sobre una tarjeta más grande",
       "Nuevo: Ahora puedes restringir abrir la Barra de notificaciones en la Pantalla de bloqueo",
@@ -1146,9 +1582,9 @@
       "Optimización: Disposición del Centro de control en el modo paisaje",
       "Reparado: El Centro de control no siempre se mostraba correctamente en el modo paisaje"
     ],
-    "Sistema": [
-      "Optimización: Las notificaciones con sonido innecesarias han sido eliminadas del Modo no molestar",
-      "Optimización: Parche de seguridad de Android actualizado a agosto de 2021. Seguridad del sistema incrementada."
+    "Recientes": [
+      "Novedad: ahora puedes difuminar las vistas previas de algunas apps en las tareas recientes",
+      "Corregido: las vistas previas no se mostraban correctamente"
     ],
     "Pantalla de bloqueo": [
       "Nuevo: Nuevas opciones de huella dactilar",
@@ -1171,7 +1607,7 @@
       "Reparado: Las notificaciones de la Pantalla de bloqueo desaparecían después de finalizar una llamada",
       "Reparado: Los elementos de la Pantalla de bloqueo no se mostraban cuando se combinaban los superfondos de pantalla y temas"
     ],
-    "Ajustes": [
+    "Configuración": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
       "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
       "Reparado: Se producían bloqueos cuando se seleccionaba el mapa predeterminado"
@@ -1205,6 +1641,11 @@
       "Reparado: Las notificaciones no siempre se mostraban correctamente cuando se usaba \"Levantar para activar\"",
       "Reparado: Los botones no siempre se mostraban correctamente en las notificaciones cuando el Modo oscuro estaba activado",
       "Ajustes para las opciones relacionadas con el notch"
+    ],
+    "Ajustes": [
+      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
+      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
+      "Reparado: Se producían bloqueos cuando se seleccionaba el mapa predeterminado"
     ],
     "Barra de estado, Barra de notificaciones": [
       "Nuevo: Notificaciones permanentes en la Pantalla de bloqueo en el Modo no molestar",
@@ -1247,7 +1688,46 @@
       "Ajustes para las opciones relacionadas con el notch"
     ],
     "barra de estado, barra de notificaciones": [
-      "Nuevo: Ahora puedes desenfocar la previsualización de algunas aplicaciones en Recientes"
+      "Nuevo: Ahora puedes desenfocar la previsualización de algunas aplicaciones en Recientes",
+      "Nuevo: Notificaciones permanentes en la Pantalla de bloqueo en el Modo no molestar",
+      "Novedad: Con el tema del sistema, el reloj de la pantalla de bloqueo admite tres estilos personalizados, que se pueden cambiar en la configuración avanzada de la pantalla de bloqueo.",
+      "Nuevo: pequeña animación al tocar el icono de un interruptor rápido",
+      "Novedad: Se ha añadido la posibilidad de cambiar de tarjeta SIM en los ajustes rápidos.",
+      "Nuevo: ajustado el estilo visual de la barra de notificaciones",
+      "Nuevo: Una opción para cambiar entre dispositivos conectados en la notificación sobre la reproducción multimedia",
+      "Optimización: Áreas sensitivas de los puntos reajustadas en el patrón de desbloqueo",
+      "Optimización: Icono del GPS en la barra de estado",
+      "Optimización: La interfaz de usuario para renombrar huellas dactilares",
+      "Optimización: Las áreas táctiles han sido reajustadas para el Carrusel de fondos de pantalla",
+      "Optimización: Algoritmos para mostrar notificaciones de llamadas entrantes",
+      "Optimización: Notificaciones de alarmas",
+      "Optimización: Compatibilidad de temas de terceros para la Barra de notificaciones",
+      "Optimización: Ajustes del Modo oscuro para notificaciones",
+      "Reparado: La burbuja de la duración de llamada se superpuso con los iconos de notificaciones",
+      "Corregido: panel de notificaciones vacío tras expandir las notificaciones grupales",
+      "Corregido: en ocasiones la pantalla no se encendía al recibir una llamada en la pantalla de bloqueo",
+      "Corrección: en orientación horizontal, el aviso de contraseña de la pantalla de bloqueo se mostraba de forma incompleta",
+      "Corregido: toque accidental de la barra de notificaciones durante llamadas",
+      "Corrección: el volumen multimedia no se restaura tras recibir una notificación",
+      "Corregido: el control deslizante de brillo se actualizaba lentamente al desplegar el panel de notificaciones después de que el brillo ya había cambiado",
+      "Reparado: Algunos iconos de notificaciones no podían ser mostrados",
+      "Reparado: Las notificaciones flotantes se superponían cuando se usaba el fondo transparente",
+      "Reparado: Los elementos del diálogo de permisos se superponían después de presionar una notificación durante mucho tiempo",
+      "Reparado: Las notificaciones no se mostraban correctamente cuando se usaba el Bloqueo de aplicaciones",
+      "Reparado: Las animaciones del Limpiador no se mostraban correctamente",
+      "Reparado: La barra de notificaciones no se podía abrir en algunos casos",
+      "Reparado: Las notificaciones no se mostraban correctamente después de recibir llamadas perdidas",
+      "Reparado: Problemas con los permisos después de recibir llamadas perdidas",
+      "Reparado: Los iconos de la barra de estado se volvían negros en algunos casos",
+      "Reparado: Los controles del reproductor de música no se mostraban en algunos casos",
+      "Reparado: Los interruptores de notificaciones de aplicaciones no siempre funcionaban",
+      "Reparado: El botón para limpiar la memoria no siempre se mostraba correctamente en la Barra de notificaciones",
+      "Reparado: Problemas con la visualización de notificaciones agrupadas",
+      "Reparado: Los controles del reproductor no siempre se mostraban en la Barra de notificaciones",
+      "Reparado: Las notificaciones no siempre se mostraban correctamente cuando se usaba \"Levantar para activar\"",
+      "Reparado: Los botones no siempre se mostraban correctamente en las notificaciones cuando el Modo oscuro estaba activado",
+      "Mejora al abrir la cámara desde la pantalla de bloqueo: mantén pulsado el icono de la cámara y desliza hacia la izquierda.",
+      "Ajustes para las opciones relacionadas con el notch"
     ]
   },
   "logs_pt": {
@@ -1269,6 +1749,10 @@
       "Novo: Tocar em um ponto vazio no Centro de controle agora o fecha",
       "Otimização: Layout do Centro de controle em modo paisagem",
       "Correção: O Centro de Controle não era exibido sempre da forma correta no modo paisagem"
+    ],
+    "Tarefas recentes": [
+      "Novo: agora é possível desfocar as prévias de alguns apps nas tarefas recentes",
+      "Corrigido: as pré-visualizações não eram exibidas corretamente"
     ],
     "Tela de bloqueio": [
       "Novo: Novas opções de impressão digital",
@@ -1367,7 +1851,46 @@
       "Ajuste para opções relacionadas ao entalhe"
     ],
     "Barra de status e Área de notificações": [
-      "Novo: Agora é possível desfocar a prévia de alguns apps nos Recentes"
+      "Novo: Agora é possível desfocar a prévia de alguns apps nos Recentes",
+      "Novo: Notificações permanentes na Tela de bloqueio no modo Não perturbe",
+      "Novidade: Com o tema do sistema, o relógio da tela de bloqueio suporta três estilos personalizados, que podem ser alterados nas configurações avançadas da tela de bloqueio.",
+      "Novo: pequena animação após tocar no ícone de um interruptor rápido",
+      "Novo: Adicionada a possibilidade de alternar entre cartões SIM nas configurações rápidas.",
+      "Novo: ajustado o estilo visual da barra de notificações",
+      "Novo: Uma opção para alternar entre dispositivos conectados na notificação de reprodução de mídia",
+      "Otimização: Reajuste nas áreas sensíveis dos pontos do padrão de desbloqueio",
+      "Otimização: Ícone do GPS na barra de status",
+      "Otimização: Interface para renomear impressões digitais",
+      "Otimização:  Áreas sensíveis ao toque reajustadas para o Carrossel de Planos de fundo",
+      "Otimização: Algoritmo para exibição de notificações de chamada recebida",
+      "Otimização: Notificações de alarme",
+      "Otimização: Compatibilidade com temas de terceiros para a Área de notificações",
+      "Otimização: Ajuste no Modo Escuro para notificações",
+      "Correção: o balão de duração da chamada se sobrepunha aos ícones de notificação",
+      "Corrigido: painel de notificações vazio após expandir notificações em grupo",
+      "Corrigido: às vezes a tela não acendia ao receber uma chamada na tela de bloqueio",
+      "Correção: no modo paisagem, a dica de senha da tela de bloqueio era exibida de forma incompleta",
+      "Corrigido: toque acidental no painel de notificações durante chamadas",
+      "Correção: o volume de mídia não é restaurado após receber uma notificação",
+      "Corrigido: o controle deslizante de brilho era atualizado lentamente ao abrir o painel de notificações depois que o brilho já havia sido alterado",
+      "Correção: Alguns ícones de notificações não eram exibidos",
+      "Correção: As notificações flutuantes eram sobrepostas quando planos de fundo transparentes eram usados",
+      "Correção: Elementos da caixa de diálogo de permissões se sobrepunham quando uma notificação era pressionada longamente",
+      "Correção: As notificações não eram exibidas corretamente com o Bloqueio de apps em uso",
+      "Correção: As animações da Limpeza não eram exibidas corretamente",
+      "Correção: A Área de notificações não abria em alguns casos",
+      "Correção: As notificações não eram exibidas corretamente após chamadas perdidas",
+      "Correção: Problemas com permissões após chamadas perdidas",
+      "Correção: Ícones da barra de status ficavam pretos em alguns casos",
+      "Correção: Os controles do reprodutor de músicas não era exibido em alguns casos",
+      "Correção: Seletores de notificação de apps não funcionavam em alguns casos",
+      "Correção: O botão para limpar a memória não era sempre exibido corretamente na Área de notificações",
+      "Correção: Problemas com a exibição de notificações agrupadas",
+      "Correção: Os controles de reprodução não eram sempre exibidos na Área de notificações",
+      "Correção: As notificações não eram exibidas corretamente quando o \"Levantar para ligar a tela\" era usado",
+      "Correção: Os botões não eram sempre exibidos corretamente nas notificações quando o Modo Escuro estava ativado",
+      "Melhoria na abertura da câmera da tela de bloqueio: mantenha o ícone da câmera pressionado e deslize para a esquerda.",
+      "Ajuste para opções relacionadas ao entalhe"
     ]
   },
   "logs_tr": {
@@ -1378,6 +1901,10 @@
       "Sıvı depolama: Yeni hassas depolama mekanizmaları zaman geçtikçe sisteminizi canlı ve duyarlı tutacaktır.",
       "Akıllı bakiye. Temel sistem iyileştirmeleri, cihazınızın amiral gemisi donanım özelliklerinden en iyi şekilde yararlanmasını sağlar."
     ],
+    "Sistem": [
+      "Optimizasyon: Rahatsız Etme modu için gereksiz sesli bildirimler kaldırıldı",
+      "Optimizasyon: Android Güvenlik Patch'i Ağustos 2021'de güncellendi. Sistem güvenliği arttırıldı."
+    ],
     "Kontrol merkezi": [
       "Yeni: Daha büyük bir karta dokunmayı gösteren animasyon",
       "Yeni: Kilit ekranında Bildirim çubuğunun açılmasını kısıtlayabilirsiniz",
@@ -1386,9 +1913,9 @@
       "Optimizasyon: Manzara modunda Kontrol merkezi düzeni",
       "Onarım: Kontrol merkezi, manzara modunda doğru bir şekilde görüntülenmedi"
     ],
-    "Sistem": [
-      "Optimizasyon: Rahatsız Etme modu için gereksiz sesli bildirimler kaldırıldı",
-      "Optimizasyon: Android Güvenlik Patch'i Ağustos 2021'de güncellendi. Sistem güvenliği arttırıldı."
+    "Son kullanılanlar": [
+      "Yeni: Son görevlerde bazı uygulamaların önizlemelerini artık bulanıklaştırabilirsiniz",
+      "Düzeltme: önizlemeler doğru şekilde görüntülenmiyordu"
     ],
     "Kilit ekranı": [
       "Yeni: Yeni parmak izi seçenekleri",
@@ -1487,7 +2014,46 @@
       "Çentikle ilgili seçenekler için ayarlamalar"
     ],
     "durum çubuğu, Bildirim çubuğu": [
-      "Yeni: Son kullanılanlardaki bazı ögelerin önizlemelerini artık bulanıklaştırabilirsiniz"
+      "Yeni: Son kullanılanlardaki bazı ögelerin önizlemelerini artık bulanıklaştırabilirsiniz",
+      "Yeni: Rahatsız Etme modunda kalıcı Kilit ekranı bildirimleri",
+      "Yeni: Sistem temasında kilit ekranı saati üç özel stili destekler; gelişmiş kilit ekranı ayarlarından değiştirilebilir.",
+      "Yeni: hızlı ayar simgesine dokunduktan sonra küçük animasyon",
+      "Yeni: Hızlı ayarlarda SIM kart değiştirme özelliği eklendi.",
+      "Yeni: bildirim çubuğu görsel stili ayarlandı",
+      "Yeni: Medya oynatma hakkındaki bildirimlerde bağlı cihazlar arasında geçiş yapmak için bir seçenek",
+      "Optimizasyon: Kilit açma desenindeki noktalar için hassas bölgeler yeniden ayarlandı",
+      "Optimizasyon: Durum çubuğunda GPS simgesi",
+      "Optimizasyon: Parmak izlerini yeniden adlandırmak için arayüz",
+      "Optimizasyon: Duvar kağıdı döngüsü için dokunmaya duyarlı alanlar yeniden ayarlandı",
+      "Optimizasyon: Gelen arama bildirimlerini görüntülemek için algoritmalar",
+      "Optimizasyon: Alarm bildirimleri",
+      "Optimizasyon: Bildirim çubuğu için üçüncü taraf tema uyumluluğu",
+      "Optimizasyon: Bildirimler için Karanlık mod ayarlamaları",
+      "Onarım: Arama süresi penceresi bildirim simgeleriyle üst üste bindi",
+      "Düzeltme: Grup bildirimleri genişletildikten sonra bildirim panelinin boş görünmesi",
+      "Düzeltildi: Kilit ekranında gelen aramada ekran bazen açılmıyordu",
+      "Düzeltme: Yatay ekran modunda kilit ekranı parola istemi eksik görüntüleniyordu",
+      "Düzeltme: arama sırasında bildirim paneliyle yanlışlıkla temas etme sorunu",
+      "Düzeltme: Bildirim alındıktan sonra medya ses düzeyi geri yüklenmiyor sorunu",
+      "Düzeltme: Parlaklık zaten değiştikten sonra bildirim paneli açıldığında parlaklık çubuğunun geç güncellenmesi sorunu",
+      "Onarım: Bazı bildirim simgeleri gösterilemedi",
+      "Onarım: Şeffaf arka plan kullanıldığında Kayan bildirimler üst üste bindi",
+      "Onarım: Bir bildirime uzun süre basıldıktan sonra İzinler diyaloğu ögeleri üst üste bindi",
+      "Onarım: Uygulama kilidi kullanıldığında bildirimler düzgün bir şekilde görüntülenmedi",
+      "Onarım: Temizleyici animasyonları doğru bir şekilde görüntülenmedi",
+      "Onarım: Bildirim çubuğu bazı durumlarda açılamadı",
+      "Onarım: Cevapsız aramalardan sonra bildirimler düzgün bir şekilde görüntülenmedi",
+      "Onarım: Cevapsız aramalardan sonra izinlerle ilgili sorunlar",
+      "Onarım: Durum çubuğu simgesi bazı durumlarda siyaha döndü",
+      "Onarım: Müzik çalar kontrolleri bazı durumlarda görüntülenmedi",
+      "Onarım: Uygulama bildirimleri değişimleri her zaman çalışmadı",
+      "Onarım: Belleği temizleme tuşu Bildirim Çubuğu'nda her zaman düzgün bir şekilde görüntülenmedi",
+      "Onarım: Gruplandırılmış bildirimleri görüntülemekle ilgili sorunlar",
+      "Onarım: Oynatıcı kontrolleri Bildirim Çubuğu'nda her zaman görüntülenmedi",
+      "Onarım: \"Uyandırmak için kaldır\" kullanıldığında bildirimler hiçbir zaman düzgün bir şekilde görüntülenmedi",
+      "Onarım: Karanlık mod açık olduğunda tuşlar bildirimlerde her zaman düzgün bir şekilde görüntülenmedi",
+      "Kilit ekranı kamerasını açma yöntemi iyileştirildi: kamera simgesini basılı tutup sola kaydırın.",
+      "Çentikle ilgili seçenekler için ayarlamalar"
     ]
   },
   "logs_id": {
@@ -1509,6 +2075,10 @@
       "Baru: Sekarang, untuk menutup Pusat kontrol, Anda dapat mengetuk daerah kosong di Pusat kontrol",
       "Pengoptimalan: Tata letak Pusat kontral di mode lanskap",
       "Perbaikan: Pusat kontrol tidak selalu ditampilkan dengan benar saat mode horisontal"
+    ],
+    "Tugas Terbaru": [
+      "Baru: Sekarang Anda dapat memburamkan pratinjau beberapa aplikasi di Tugas terbaru",
+      "Perbaikan: pratinjau tidak ditampilkan dengan benar"
     ],
     "Layar kunci": [
       "Baru: Pilihan penggunaan sidik jari baru",
@@ -1612,7 +2182,46 @@
       "Penyesuaian untuk opsi terkait dengan notch"
     ],
     "bar status, layar notifikasi": [
-      "Baru: Anda dapat membuat beberapa pratinjau aplikasi menjadi blur di bagian Terkini"
+      "Baru: Anda dapat membuat beberapa pratinjau aplikasi menjadi blur di bagian Terkini",
+      "Baru: Notifikasi Layar kunci permanen di mode Jangan ganggu",
+      "Baru: Dengan tema sistem, jam layar kunci mendukung tiga gaya khusus, dapat diubah di pengaturan lanjutan layar kunci.",
+      "Baru: animasi kecil setelah mengetuk ikon tombol cepat",
+      "Baru: Menambahkan kemampuan beralih kartu SIM di pengaturan cepat.",
+      "Baru: menyesuaikan gaya visual panel notifikasi",
+      "Baru: Pilihan untuk berganti antar perangkat yang terhubung pada notifikasi tentang media pemutaran",
+      "Pengoptimalan: Area sensitif yang disesuaikan untuk titik-titik dalam pola buka kunci",
+      "Pengoptimalan: Ikon GPS di bilah status",
+      "Pengoptimalan: Desain antarmuka (UI) untuk mengganti nama sidik jari",
+      "Pengoptimalan: Area sensitif sentuhan diatur kembali untuk Komedi putar Wallpaper",
+      "Pengoptimalan: Algoritma untuk menampilkan notifikasi panggilan masuk",
+      "Pengoptimalan: Notifikasi alarm",
+      "Pengoptimalan: Kompatibilitas tema pihak ketiga untuk Layar notifikasi",
+      "Pengoptimalan: Penyesuaian mode Gelap untuk notifikasi",
+      "Perbaikan: gelembung durasi panggilan tumpang tindih dengan ikon notifikasi",
+      "Perbaikan: panel notifikasi kosong setelah memperluas notifikasi grup",
+      "Perbaikan: Layar terkadang tidak menyala saat ada panggilan masuk di layar kunci",
+      "Perbaikan: Dalam mode lanskap, petunjuk kata sandi layar kunci ditampilkan tidak lengkap",
+      "Perbaikan: masalah sentuhan tidak sengaja pada panel notifikasi saat panggilan",
+      "Perbaikan: masalah volume media tidak kembali setelah menerima notifikasi",
+      "Perbaikan: penggeser kecerahan baru diperbarui secara lambat saat panel notifikasi ditarik turun setelah kecerahan sudah berubah",
+      "Perbaikan: Beberapa ikon notifikasi tidak muncul",
+      "Perbaikan: Notifikasi mengambang tumpang tindih saat latar belakang transparan digunakan",
+      "Perbaikan: Elemen dialog perizinan tumpang tindih setelah notifikasi ditekan lama",
+      "Perbaikan: Notifikasi tidak ditampilkan dengan benar saat fitur Kunci aplikasi digunakan",
+      "Perbaikan: Animasi fitur Pembersih tidak ditampilkan dengan benar",
+      "Perbaikan: Layar notifikasi tidak dapat dibuka dalam beberapa kasus",
+      "Perbaikan: Notifikasi tidak ditampilkan dengan benar setelah ada panggilan tak terjawab",
+      "Perbaikan: Masalah dengan izin setelah panggilan tak terjawab",
+      "Perbaikan: Ikon bilah status menjadi hitam dalam beberapa kasus",
+      "Perbaikan: Kontrol pemutar musik tidak ditampilkan dalam beberapa kasus",
+      "Perbaikan: Tombol untuk menghidupkan atau mematikan notifikasi aplikasi tidak selalu dapat berfungsi",
+      "Perbaikan: Tombol untuk membersihkan memori tidak selalu ditampilkan dengan benar di Layar notifikasi",
+      "Perbaikan: Masalah dengan menampilkan notifikasi yang dikelompokkan",
+      "Perbaikan: Kontrol pemutar tidak selalu ditampilkan di Layar notifikasi",
+      "Perbaikan: Notifikasi tidak selalu ditampilkan dengan benar saat \"Angkat untuk bangunkan\" digunakan",
+      "Perbaikan: Tombol tidak selalu ditampilkan dengan benar di notifikasi saat mode Gelap dihidupkan",
+      "Peningkatan cara membuka kamera di layar kunci: tekan dan tahan ikon kamera lalu geser ke kiri.",
+      "Penyesuaian untuk opsi terkait dengan notch"
     ]
   },
   "logs_vi": {
@@ -1641,6 +2250,10 @@
       "Mới: Chạm vào một chỗ trống trong Trung tâm điều khiển để đóng lại",
       "Tối ưu: Bố cục trung tâm điều khiển trong chế độ nằm ngang",
       "Sửa: Trung tâm điều khiển không phải lúc nào cũng hiển thị chính xác ở chế độ ngang"
+    ],
+    "Tác vụ gần đây": [
+      "Mới: Bạn có thể làm mờ bản xem trước của một số ứng dụng trong Tác vụ gần đây",
+      "Đã sửa: bản xem trước không hiển thị chính xác"
     ],
     "Màn hình khóa": [
       "Mới: Tùy chọn vân tay mới",
@@ -1697,6 +2310,47 @@
       "Sửa: Thông báo không hiển thị chính xác khi \"Nâng lên để đánh thức\" được sử dụng",
       "Sửa: Phím không hiển thị chính xác trên thanh thông báo khi Chế độ nền tối bật",
       "Điều chỉnh cho các tùy chọn liên quan đến tai thỏ"
+    ],
+    "Thanh trạng thái, thanh thông báo": [
+      "Mới: Thông báo màn hình khóa vĩnh viễn đối với chế độ Không làm phiền",
+      "Mới: Với chủ đề hệ thống, đồng hồ màn hình khóa hỗ trợ ba kiểu tùy chỉnh, có thể thay đổi trong cài đặt nâng cao của màn hình khóa.",
+      "Mới: hiệu ứng nhỏ sau khi nhấn biểu tượng công tắc nhanh",
+      "Mới: Đã thêm tính năng chuyển đổi thẻ SIM trong cài đặt nhanh.",
+      "Mới: điều chỉnh phong cách hiển thị của thanh thông báo",
+      "Mới: Tùy chọn chuyển đổi giữa các thiết bị được kết nối trong thông báo về phát phương tiện",
+      "Tối ưu: Điều chỉnh khu vực nhạy cảm đối với các điểm trong hình mở khóa",
+      "Tối ưu: Biểu tượng GPS trên thanh trạng thái",
+      "Tối ưu: Giao diện đổi tên vân tay",
+      "Tối ưu: Điều chỉnh khu vực cảm ứng đối với Khóa tạp chí",
+      "Tối ưu: Thuật toán thông báo cuộc gọi đến",
+      "Tối ưu: Thông báo báo thức",
+      "Tối ưu: Chủ đề bên thứ ba tương thích với Thanh thông báo",
+      "Tối ưu: Điều chỉnh chế độ nền tối cho thông báo",
+      "Đã sửa: bong bóng thời gian gọi bị chồng lên biểu tượng thông báo",
+      "Đã sửa: bảng thông báo trống sau khi mở rộng thông báo nhóm",
+      "Sửa: Đôi khi màn hình không sáng lên khi có cuộc gọi đến trên màn hình khóa",
+      "Sửa lỗi: Ở chế độ màn hình ngang, gợi ý mật khẩu màn hình khóa hiển thị không đầy đủ",
+      "Đã sửa: lỗi vô tình chạm vào bảng thông báo trong cuộc gọi",
+      "Sửa lỗi: âm lượng media không được khôi phục sau khi nhận thông báo",
+      "Sửa: thanh trượt độ sáng chỉ cập nhật chậm khi kéo xuống bảng thông báo sau khi độ sáng đã thay đổi",
+      "Sửa: Không thể hiển thị một số biểu tượng thông báo",
+      "Sửa: Thông báo nổi bị chồng lấn khi hình nền trong suốt được sử dụng",
+      "Sửa: Hộp thoại quyền bị chồng lấn sau khi bấm giữ thông báo",
+      "Sửa: Thông báo không hiển thị chính xác khi Khóa ứng dụng được sử dụng",
+      "Sửa: Hoạt ảnh dọn dẹp không hiển thị chính xác",
+      "Sửa: Không thể mở Thanh thông báo trong một số trường hợp",
+      "Sửa: Thông báo không hiển thị chính xác sau khi lỡ cuộc gọi",
+      "Sửa: Vấn đề về quyền sau khi có cuộc gọi nhỡ",
+      "Sửa: Biểu tượng trên thanh trạng thái chuyển sang màu đen trong một số trường hợp",
+      "Sửa: Điều khiển trình phát nhạc không hiển thị trong một số trường hợp",
+      "Sửa: Chuyển đổi thông báo ứng dụng không luôn hoạt động",
+      "Sửa: Nút xóa bộ nhớ không phải lúc nào cũng được hiển thị chính xác trong Thanh thông báo",
+      "Sửa: Vấn đề với việc hiển thị thông báo nhóm",
+      "Sửa: Điều khiển trình phát không luôn hiển thị trong Thanh thông báo",
+      "Sửa: Thông báo không hiển thị chính xác khi \"Nâng lên để đánh thức\" được sử dụng",
+      "Sửa: Phím không hiển thị chính xác trên thanh thông báo khi Chế độ nền tối bật",
+      "Cải thiện cách mở camera từ màn hình khóa: nhấn và giữ biểu tượng camera rồi vuốt sang trái.",
+      "Điều chỉnh cho các tùy chọn liên quan đến tai thỏ"
     ]
   },
   "logs_th": {
@@ -1725,6 +2379,10 @@
       "ใหม่: ตอนนี้การแตะที่จุดว่างในศูนย์ควบคุมจะเป็นการปิด",
       "การเพิ่มประสิทธิภาพ: รูปแบบศูนย์ควบคุมในโหมดแนวนอน",
       "แก้ไข: ศูนย์ควบคุมไม่ได้แสดงอย่างถูกต้องทุกครั้งในโหมดแนวนอน"
+    ],
+    "งานล่าสุด": [
+      "ใหม่: คุณสามารถเบลอตัวอย่างแอปบางแอปในงานล่าสุดได้แล้ว",
+      "แก้ไข: ตัวอย่างไม่แสดงอย่างถูกต้อง"
     ],
     "ล็อคหน้าจอ": [
       "ใหม่: ตัวเลือกลายนิ้วมือใหม่",
@@ -1781,6 +2439,47 @@
       "แก้ไข: การแจ้งเตือนแสดงไม่ถูกต้องทุกครั้งเมื่อใช้ \"ยกขึ้นเพื่อปลุก\"",
       "แก้ไข: ปุ่มต่างๆ แสดงไม่ถูกต้องในการแจ้งเตือนทุกครั้งเมื่อเปิดโหมดมืด",
       "การปรับเปลี่ยนตัวเลือกที่เกี่ยวข้องกับรอยบาก"
+    ],
+    "แถบสถานะ, แผงการแจ้งเตือน": [
+      "ใหม่: การแจ้งเตือนหน้าจอล็อกแบบถาวรสำหรับโหมดห้ามรบกวน",
+      "ใหม่: ภายใต้ธีมระบบ นาฬิกาหน้าจอล็อกรองรับรูปแบบกำหนดเองสามแบบ สามารถแก้ไขได้ในการตั้งค่าขั้นสูงของหน้าจอล็อก",
+      "ใหม่: แอนิเมชันเล็ก ๆ หลังจากแตะไอคอนสวิตช์ด่วน",
+      "ใหม่: เพิ่มความสามารถในการสลับซิมการ์ดในการตั้งค่าด่วน",
+      "ใหม่: ปรับสไตล์ภาพของแถบการแจ้งเตือน",
+      "ใหม่: ตัวเลือกในการสลับระหว่างอุปกรณ์ที่เชื่อมต่อในการแจ้งเตือนเกี่ยวกับการเล่นสื่อ",
+      "การเพิ่มประสิทธิภาพ: ปรับพื้นที่ที่ละเอียดอ่อนสำหรับจุดในรูปแบบการปลดล็อก",
+      "การเพิ่มประสิทธิภาพ: ไอคอน GPS บนแถบสถานะ",
+      "การเพิ่มประสิทธิภาพ: UI สำหรับการเปลี่ยนชื่อลายนิ้วมือ",
+      "การเพิ่มประสิทธิภาพ: ปรับพื้นที่ไวต่อการสัมผัสสำหรับ ภาพพื้นหลังรายวัน",
+      "การเพิ่มประสิทธิภาพ: อัลกอริทึมสำหรับการแสดงการแจ้งเตือนสายเรียกเข้า",
+      "การเพิ่มประสิทธิภาพ: การแจ้งเตือน",
+      "การเพิ่มประสิทธิภาพ: ความเข้ากันได้ของธีมของบุคคลที่สามสำหรับหน้าต่างแจ้งเตือน",
+      "การเพิ่มประสิทธิภาพ: การปรับโหมดมืดสำหรับการแจ้งเตือน",
+      "แก้ไข: ฟองเวลาการโทรทับซ้อนกับไอคอนการแจ้งเตือน",
+      "แก้ไข: แผงการแจ้งเตือนว่างเปล่าหลังขยายการแจ้งเตือนแบบกลุ่ม",
+      "แก้ไข: บางครั้งหน้าจอไม่สว่างขึ้นเมื่อมีสายเรียกเข้าขณะล็อกหน้าจอ",
+      "แก้ไข: ในโหมดแนวนอน ข้อความแจ้งรหัสผ่านหน้าจอล็อกแสดงไม่ครบถ้วน",
+      "แก้ไข: การสัมผัสแผงการแจ้งเตือนโดยไม่ตั้งใจระหว่างการโทร",
+      "แก้ไข: ปัญหาเสียงสื่อไม่กลับคืนหลังจากได้รับการแจ้งเตือน",
+      "แก้ไข: แถบเลื่อนความสว่างอัปเดตช้าเมื่อเลื่อนลงแผงการแจ้งเตือนหลังจากความสว่างเปลี่ยนแปลงแล้ว",
+      "แก้ไข: ไม่สามารถแสดงไอคอนการแจ้งเตือนบางรายการได้",
+      "แก้ไข: การแจ้งเตือนแบบลอยซ้อนทับกันเมื่อใช้พื้นหลังโปร่งใส",
+      "แก้ไข: องค์ประกอบข้อความการอนุญาตซ้อนทับกันหลังจากกดการแจ้งเตือนค้างไว้",
+      "แก้ไข: การแจ้งเตือนแสดงไม่ถูกต้องเมื่อใช้ ล็อกแอป",
+      "แก้ไข: แอนิเมชั่นตัวทำความสะอาดแสดงไม่ถูกต้อง",
+      "แก้ไข: ไม่สามารถเปิดหน้าต่างแจ้งเตือนได้ในบางกรณี",
+      "แก้ไข: การแจ้งเตือนแสดงไม่ถูกต้องหลังสายที่ไม่ได้รับ",
+      "แก้ไข: ปัญหาเกี่ยวกับการอนุญาตหลังจากไม่ได้รับสาย",
+      "แก้ไข: ไอคอนแถบสถานะเปลี่ยนเป็นสีดำในบางกรณี",
+      "แก้ไข: ในบางกรณีการควบคุมเครื่องเล่นเพลงไม่แสดง",
+      "แก้ไข: สวิตช์แจ้งเตือนแอปไม่ได้ทำงานทุกครั้ง",
+      "แก้ไข: ปุ่มสำหรับล้างหน่วยความจำไม่ได้แสดงอย่างถูกต้องในแถบการแจ้งเตือนทุกครั้ง",
+      "แก้ไข: ปัญหาเกี่ยวกับการแสดงการแจ้งเตือนแบบกลุ่ม",
+      "แก้ไข: การควบคุมเครื่องเล่นเพลงไม่ได้แสดงในแถบการแจ้งเตือนทุกครั้ง",
+      "แก้ไข: การแจ้งเตือนแสดงไม่ถูกต้องทุกครั้งเมื่อใช้ \"ยกขึ้นเพื่อปลุก\"",
+      "แก้ไข: ปุ่มต่างๆ แสดงไม่ถูกต้องในการแจ้งเตือนทุกครั้งเมื่อเปิดโหมดมืด",
+      "ปรับปรุงวิธีเปิดกล้องจากหน้าจอล็อก: กดไอคอนกล้องค้างไว้แล้วปัดไปทางซ้าย",
+      "การปรับเปลี่ยนตัวเลือกที่เกี่ยวข้องกับรอยบาก"
     ]
   },
   "logs_ar": {
@@ -1809,6 +2508,10 @@
       ":الجديد يمكنك الآن النقر على أي مساحة فارغة في مركز التحكم لإغلاقة",
       ":التحسين تصميم تخطيط مركز التحكم في الوضع الأفقي",
       ":الإصلاح لا يظهر مركز التحكم بشكل صحيح في الوضع الأفقي"
+    ],
+    "المهام الأخيرة": [
+      "جديد: يمكنك الآن تمويه معاينات بعض التطبيقات في المهام الأخيرة",
+      "إصلاح: لم يتم عرض المعاينات بشكل صحيح"
     ],
     "شاشة القفل": [
       "الجديد: خيارات جديدة لبصمات الأصابع",
@@ -1865,6 +2568,47 @@
       "الإصلاح: مشكلة عدم عرض الإشعارات بشكل صحيح عند استخدام ميزة \"رفع الجهاز لإيقاظه\"",
       "الإصلاح: مشكلة عدم عرض الأزرار بشكل صحيح في الإشعارات عند تشغيل الوضع الداكن",
       "تعديلات الخيارات المرتبطة بالنتوء"
+    ],
+    "وشريط الإشعارات، ومركز الإشعارات": [
+      ":الجديد إشعار شاشة القفل الدائم لوضع عدم الازعاج",
+      "جديد: ضمن سمة النظام، تدعم ساعة شاشة القفل ثلاثة أنماط مخصصة، ويمكن تعديلها في إعدادات شاشة القفل المتقدمة.",
+      "جديد: رسوم متحركة صغيرة بعد النقر على أيقونة مفتاح سريع",
+      "جديد: تمت إضافة إمكانية تبديل بطاقة SIM في الإعدادات السريعة.",
+      "جديد: تعديل النمط المرئي لشريط الإشعارات",
+      ":الجديد خيار للتبديل بين الأجهزة المتصلة في إشعارات تشغيل الوسائط",
+      "التحسين: إعادة ضبط حساسية النقاط في نقش إلغاء القفل",
+      "التحسين: أيقونة GPS في شريط الحالة",
+      "التحسين: واجهة المستخدم لإعادة تسمية بصمة الإصبع",
+      ":التحسين تم تعديل المناطق الحساسة للمس لخلفيات كاروسيل",
+      "التحسين: خوارزمية لعرض إشعارات المكالمات الواردة",
+      "التحسين: إشعارات المنبه",
+      "التحسين: توافق ثيمات الجهات الخارجية مع مركز الإشعارات",
+      "التحسين: زيادة توافق الوضع الداكن مع الإشعارات",
+      "إصلاح: تداخل فقاعة مدة المكالمة مع أيقونات الإشعارات",
+      "إصلاح: لوحة الإشعارات فارغة بعد توسيع إشعارات المجموعة",
+      "إصلاح: لم تكن الشاشة تضيء أحيانًا عند تلقي مكالمة على شاشة القفل",
+      "إصلاح: في الوضع الأفقي، يتم عرض تلميح كلمة مرور شاشة القفل بشكل غير مكتمل",
+      "إصلاح: مشكلة اللمس العرضي للوحة الإشعارات أثناء المكالمات",
+      "إصلاح: مشكلة عدم استعادة مستوى صوت الوسائط بعد تلقي إشعار",
+      "إصلاح: تحديث شريط التمرير للسطوع ببطء عند سحب لوحة الإشعارات بعد تغيّر السطوع بالفعل",
+      ":الإصلاح لا يتم عرض بعض أيقونات الإشعارات",
+      "الإصلاح: مشكلة تداخل الإشعارات المنبثقة عند استخدام خلفية شفافة",
+      "الإصلاح: مشكلة تداخل عناصر مربع الإذن بعد الضغط لفترة طويلة على الإشعار",
+      "الإصلاح: مشكلة عدم عرض الإشعارات عند استخدام قفل التطبيقات",
+      "الإصلاح: مشكلة عدم ظهور الرسوم المتحركة للمنظف بشكل صحيح",
+      "الإصلاح: مشكلة عدم إمكانية سحب مركز الإشعارات لإسفل عند قفل الشاشة",
+      "الإصلاح: مشكلة عدم ظهور الإشعارات بشكل صحيح بعد المكالمات الفائتة",
+      "الإصلاح: مشاكل مع الأذونات بعد المكالمات الفائتة",
+      "الإصلاح: مشكلة ظهور أيقونات شريط الحالة باللون الأسود في بعض الاحيان",
+      "الإصلاح: مشكلة عدم ظهور عناصر تحكم المشغل الموسيقى في بعض الاحيان",
+      "الإصلاح: مشكلة عدم عمل مفتاح تبديل إشعارات التطبيق",
+      "الإصلاح: مشكلة عدم ظهور زر مسح الذاكرة بشكل صحيح في مركز الإشعارات",
+      "الإصلاح: مشاكل في ظهور الإشعارات الجماعية",
+      "الإصلاح: مشكلة عدم ظهور عناصر تحكم مشغل الموسيقى في مركز الإشعارات",
+      "الإصلاح: مشكلة عدم عرض الإشعارات بشكل صحيح عند استخدام ميزة \"رفع الجهاز لإيقاظه\"",
+      "الإصلاح: مشكلة عدم عرض الأزرار بشكل صحيح في الإشعارات عند تشغيل الوضع الداكن",
+      "تم تحسين طريقة فتح الكاميرا من شاشة القفل: اضغط مع الاستمرار على رمز الكاميرا واسحب لليسار.",
+      "تعديلات الخيارات المرتبطة بالنتوء"
     ]
   },
   "logs_in": {
@@ -1893,6 +2637,10 @@
       "नया कंट्रोल सेंटर में किसी khआली जगह पर टैप करने से अब वह बंद हो जाता है",
       "ऑप्टिमाइज़ेशन लैंडस्केप मोड में कंट्रोल सेंटर लेआउट",
       "ठीक करें कंट्रोल सेंटर, लैंडस्केप मोड में को हमेशा सही ढंग से  नहीं दिखाता है"
+    ],
+    "हाल के कार्य": [
+      "नया: अब आप हाल के कार्यों में कुछ ऐप्स के पूर्वावलोकन को धुंधला कर सकते हैं",
+      "ठीक किया गया: पूर्वावलोकन सही ढंग से प्रदर्शित नहीं हो रहे थे"
     ],
     "लॉक स्क्रीन": [
       "नया फिंगरप्रिंट के नए विकल्प",
@@ -1948,6 +2696,47 @@
       "ठीक करें सूचना शेड में खिलाड़ी के नियंत्रण हमेशा नहीं दिखाई दे रहे थे",
       "ठीक करें \"जगाने के लिए उठाएं\" का उपयोग किए जाने पर सूचनाएं सही ढंग से नहीं दिख रहीं थीं",
       "ठीक करें डार्क मोड चालू होने पर सूचनाओं पर बटन हमेशा सही ढंग से नहीं दिखाई दे रहे थे",
+      "नौच से संबंधित विकल्पों के लिए एडजस्टमेंट"
+    ],
+    "स्टेटस बार, सूचना शेड": [
+      "नया डीएनडी मोड के लिए स्थायी लॉक स्क्रीन सूचना",
+      "नया: सिस्टम थीम के अंतर्गत, लॉक स्क्रीन घड़ी तीन कस्टम शैलियों का समर्थन करती है, जिन्हें लॉक स्क्रीन की उन्नत सेटिंग्स में बदला जा सकता है।",
+      "नया: त्वरित टॉगल आइकन पर टैप करने के बाद छोटा एनिमेशन",
+      "नया: त्वरित सेटिंग्स में SIM कार्ड बदलने की सुविधा जोड़ी गई.",
+      "नया: सूचना पैनल की दृश्य शैली समायोजित की गई",
+      "नया मीडिया प्लेबैक से जुड़े सूचना में कनेक्ट किए गए डिवाइसों के बीच स्विच करने का विकल्प",
+      "ऑप्टिमाइज़ेशन अनलॉक करने के पैटर्न में मौजूद बिंदुओं के लिए संवेदनशील क्षेत्रों को फिर से एडजस्ट किया गया है",
+      "ऑप्टिमाइज़ेशन स्टेटस बार में जीपीएस आइकन",
+      "ऑप्टिमाइज़ेशन फिंगरप्रिंट का नाम बदलने देने की सुविधा वाला यूआई",
+      "ऑप्टिमाइज़ेशन वॉलपेपर कैरॉसल से जुड़े छूने से संबंधित क्षेत्रों को फिर एडजस्ट करना",
+      "ऑप्टिमाइज़ेशन इनकमिंग कॉल सूचनाएं दिखाने के लिए एल्गोरिदम",
+      "ऑप्टिमाइज़ेशन अलार्म सूचनाएं",
+      "ऑप्टिमाइज़ेशन सूचना शेड के लिए तृतीय पक्ष थीम संगतता",
+      "ऑप्टिमाइज़ेशन सूचनाओं के लिए डार्क मोड एडजस्टमेंट",
+      "ठीक किया गया: कॉल अवधि बबल नोटिफ़िकेशन आइकन के साथ ओवरलैप हो रहा था",
+      "ठीक किया गया: समूह सूचनाएँ विस्तृत करने के बाद सूचना शेड खाली होने की समस्या",
+      "ठीक किया गया: लॉक स्क्रीन पर आने वाली कॉल के दौरान स्क्रीन कभी-कभी चालू नहीं होती थी",
+      "ठीक किया गया: लैंडस्केप स्थिति में, लॉक स्क्रीन पासवर्ड संकेत अपूर्ण रूप से प्रदर्शित होता था",
+      "ठीक किया गया: कॉल के दौरान सूचना पैनल को गलती से छूने की समस्या",
+      "ठीक किया गया: सूचना प्राप्त होने के बाद मीडिया वॉल्यूम बहाल न होने की समस्या",
+      "ठीक किया गया: चमक पहले ही बदल जाने के बाद सूचना पैनल नीचे खींचने पर चमक स्लाइडर धीरे अपडेट होने की समस्या",
+      "ठीक करें कुछ सूचना आइकन नहीं दिख रहे थे",
+      "ठीक करें पारदर्शी बैकग्राउंड का उपयोग किए जाने पर फ़्लोटिंग सूचनाएं ओवरलैप हो रही थीं",
+      "ठीक करें सूचना को देर तक दबाए जाने के बाद अनुमति डायलॉग एलिमेन्ट ओवरलैप हो रहे थे",
+      "ठीक करें ऐप्प लॉक का उपयोग किए जाने पर सूचनाएं सही ढंग से नहीं दिख रहीं थीं",
+      "ठीक करें क्लीनर एनिमेशन सही ढंग से नहीं दिख रहे थे",
+      "ठीक करें कुछ मामलों में सूचना शेड नहीं खुल रहा था",
+      "ठीक करें कॉलें छूट जाने पर सूचनाएं सही ढंग से नहीं दिख रहीं थीं",
+      "ठीक करें छूटी कॉल के बाद अनुमतियों की समस्याएं",
+      "ठीक करें कुछ मामलों में स्टेटस बार आइकन काले हो जा रहे थे",
+      "ठीक करें कुछ मामलों में म्यूजिक प्लेयर के नियंत्रण नहीं दिख रहे थे",
+      "ठीक करें ऐप्प सूचनाएं स्विच हमेशा काम नहीं कर रहे थे",
+      "ठीक करें सूचना शेड में मेमोरी साफ़ करने का बटन हमेशा सही ढंग से नहीं दिखाई दे रहा था",
+      "ठीक करें समूहमें रखी गई सूचनाएं दिखाए जाने से जुड़ी समस्याएं",
+      "ठीक करें सूचना शेड में खिलाड़ी के नियंत्रण हमेशा नहीं दिखाई दे रहे थे",
+      "ठीक करें \"जगाने के लिए उठाएं\" का उपयोग किए जाने पर सूचनाएं सही ढंग से नहीं दिख रहीं थीं",
+      "ठीक करें डार्क मोड चालू होने पर सूचनाओं पर बटन हमेशा सही ढंग से नहीं दिखाई दे रहे थे",
+      "लॉक स्क्रीन कैमरा खोलने का तरीका बेहतर किया गया: कैमरा आइकन को दबाकर रखें और बाईं ओर स्वाइप करें।",
       "नौच से संबंधित विकल्पों के लिए एडजस्टमेंट"
     ]
   },

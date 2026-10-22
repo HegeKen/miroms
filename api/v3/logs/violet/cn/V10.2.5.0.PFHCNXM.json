@@ -14,6 +14,15 @@
     ]
   },
   "logs_en": {
+    "System": [
+      "Fixed several issues affecting system security and stability."
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Fix brightness jump issue when entering unlock password after reboot"
+    ],
+    "Compass": [
+      "Fixed the abnormal aspect ratio in the compass preview interface"
+    ],
     "Other": [
       "Improved system security and stability"
     ]
@@ -22,96 +31,255 @@
     "系統": [
       "修復 影響系統安全性與穩定性的若干問題"
     ],
+    "解鎖畫面、狀態欄、通知欄": [
+      "修復 重啟後輸入解鎖密碼過程中的亮度跳變問題"
+    ],
+    "指南針": [
+      "修正 指南針預覽介面長寬比例異常的問題"
+    ],
     "其他": [
       "Improved system security and stability"
     ]
   },
   "logs_ja": {
+    "システム": [
+      "システムの安全性と安定性に影響するいくつかの問題を修正しました。"
+    ],
+    "ロック画面、ステータスバー、通知バー": [
+      "再起動後のロック解除パスワード入力時における明るさの跳ねを修正"
+    ],
+    "コンパス": [
+      "コンパスプレビュー画面のアスペクト比が異常になる問題を修正"
+    ],
     "その他": [
       "システムのセキュリティと安定性の向上"
     ]
   },
   "logs_ko": {
+    "시스템": [
+      "시스템 보안 및 안정성에 영향을 미치는 몇 가지 문제를 수정했습니다."
+    ],
+    "잠금 화면, 상태 표시줄, 알림 표시줄": [
+      "재부팅 후 잠금 해제 비밀번호 입력 중 밝기가 갑자기 변하는 문제를 수정"
+    ],
+    "나침반": [
+      "나침반 미리보기 화면의 가로세로 비율이 비정상인 문제를 수정"
+    ],
     "기타": [
       "시스템 보안 및 안정성 개선"
     ]
   },
   "logs_ru": {
+    "Система": [
+      "Исправлены некоторые проблемы, влияющие на безопасность и стабильность системы."
+    ],
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Исправлена проблема со скачком яркости при вводе пароля разблокировки после перезагрузки"
+    ],
+    "Компас": [
+      "Исправлена проблема с неправильным соотношением сторон в интерфейсе предпросмотра компаса"
+    ],
     "Другое": [
       "Улучшение безопасности и стабильности системы"
     ]
   },
   "logs_uk": {
+    "Система": [
+      "Виправлено кілька проблем, що впливають на безпеку та стабільність системи."
+    ],
+    "Екран блокування, рядок стану, рядок сповіщень": [
+      "Виправлено проблему зі стрибком яскравості під час введення пароля розблокування після перезавантаження"
+    ],
+    "Компас": [
+      "Виправлено проблему з ненормальним співвідношенням сторін у вікні попереднього перегляду компаса"
+    ],
     "Інше": [
       "Покращення безпеки та стабільності системи"
     ]
   },
   "logs_pl": {
-    "Inne": [
+    "System": [
+      "Naprawiono kilka problemów wpływających na bezpieczeństwo i stabilność systemu."
+    ],
+    "Ekran blokady, pasek stanu, pasek powiadomień": [
+      "Naprawiono problem skoków jasności podczas wpisywania hasła odblokowania po ponownym uruchomieniu"
+    ],
+    "Kompas": [
+      "Naprawiono problem z nieprawidłowym współczynnikiem proporcji w podglądzie kompasu"
+    ],
+    "Reszt": [
       "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
   "logs_de": {
+    "System": [
+      "Mehrere Probleme behoben, die die Systemsicherheit und -stabilität beeinträchtigen."
+    ],
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
+      "Problem mit Helligkeitssprung bei Eingabe des Entsperrungspassworts nach Neustart behoben"
+    ],
+    "Kompass": [
+      "Problem mit einem abnormalen Seitenverhältnis in der Kompassvorschau behoben"
+    ],
     "Sonstiges": [
       "Systemsicherheit und -stabilität verbessert"
     ]
   },
   "logs_fr": {
+    "Système": [
+      "Correction de plusieurs problèmes affectant la sécurité et la stabilité du système."
+    ],
+    "Écran de verrouillage, barre d’état, barre de notifications": [
+      "Correction du problème de saut de luminosité lors de la saisie du mot de passe de déverrouillage après redémarrage"
+    ],
+    "Boussole": [
+      "Correction du problème de rapport d’aspect anormal dans l’aperçu de la boussole"
+    ],
     "Autre": [
       "Sécurité et stabilité du système améliorées"
     ]
   },
   "logs_it": {
+    "Sistema": [
+      "Risolti diversi problemi che influiscono sulla sicurezza e sulla stabilità del sistema."
+    ],
+    "Schermata di blocco, barra di stato, barra delle notifiche": [
+      "Risolto il problema del salto di luminosità durante l'inserimento della password di sblocco dopo il riavvio"
+    ],
+    "Bussola": [
+      "Risolto il problema del rapporto d’aspetto anomalo nell’anteprima della bussola"
+    ],
     "Altro": [
       "Maggiore sicurezza e stabilità di sistema"
     ]
   },
   "logs_es": {
+    "Sistema": [
+      "Se corrigieron varios problemas que afectan la seguridad y la estabilidad del sistema."
+    ],
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Corregido el problema de salto de brillo al introducir la contraseña de desbloqueo tras reiniciar"
+    ],
+    "Brújula": [
+      "Se corrigió el problema de relación de aspecto anormal en la vista previa de la brújula"
+    ],
     "Otros": [
       "Estabilidad y seguridad del sistema mejorada"
     ]
   },
   "logs_pt": {
+    "Sistema": [
+      "Corrigidos vários problemas que afetam a segurança e a estabilidade do sistema."
+    ],
+    "Tela de bloqueio, barra de status, barra de notificações": [
+      "Corrigido o problema de salto de brilho ao inserir a senha de desbloqueio após reiniciar"
+    ],
+    "Bússola": [
+      "Corrigido o problema de proporção anormal na pré-visualização da bússola"
+    ],
     "Outros": [
       "Segurança e estabilidade do sistema aprimoradas"
     ]
   },
   "logs_tr": {
+    "Sistem": [
+      "Sistem güvenliğini ve kararlılığını etkileyen birkaç sorun düzeltildi."
+    ],
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Yeniden başlatma sonrası kilit açma parolası girilirken oluşan parlaklık sıçraması sorunu düzeltildi"
+    ],
+    "Pusula": [
+      "Pusula önizleme arayüzündeki anormal en-boy oranı sorunu düzeltildi"
+    ],
     "Diğer": [
       "Sistem güvenliği ve kararlılığı geliştirildi"
     ]
   },
   "logs_id": {
+    "Sistem": [
+      "Memperbaiki beberapa masalah yang memengaruhi keamanan dan stabilitas sistem."
+    ],
+    "Layar kunci, bilah status, bilah notifikasi": [
+      "Memperbaiki masalah kecerahan yang melonjak saat memasukkan sandi buka kunci setelah reboot"
+    ],
+    "Kompas": [
+      "Memperbaiki masalah rasio aspek yang tidak normal di antarmuka pratinjau kompas"
+    ],
     "Lainnya": [
       "Keamanan dan stabilitas sistem ditingkatkan"
     ]
   },
   "logs_vi": {
+    "Hệ thống": [
+      "Đã khắc phục một số vấn đề ảnh hưởng đến bảo mật và độ ổn định của hệ thống."
+    ],
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Khắc phục sự cố độ sáng bị nhảy khi nhập mật khẩu mở khóa sau khi khởi động lại"
+    ],
+    "La bàn": [
+      "Đã khắc phục sự cố tỷ lệ khung hình bất thường trong giao diện xem trước la bàn"
+    ],
     "Khác": [
       "Cải thiện tính ổn định và bảo mật hệ thống"
     ]
   },
   "logs_th": {
+    "ระบบ": [
+      "แก้ไขปัญหาหลายประการที่ส่งผลต่อความปลอดภัยและเสถียรภาพของระบบ"
+    ],
+    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
+      "แก้ไขปัญหาความสว่างกระโดดขณะป้อนรหัสผ่านปลดล็อกหลังรีบูต"
+    ],
+    "เข็มทิศ": [
+      "แก้ไขปัญหาอัตราส่วนภาพผิดปกติในหน้าตัวอย่างเข็มทิศ"
+    ],
     "อื่นๆ": [
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
     ]
   },
   "logs_ar": {
-    "أخرى": [
+    "النظام": [
+      "تم إصلاح عدة مشكلات تؤثر على أمان النظام واستقراره."
+    ],
+    "شاشة القفل، شريط الحالة، شريط الإشعارات": [
+      "إصلاح مشكلة قفزة السطوع أثناء إدخال كلمة مرور فتح القفل بعد إعادة التشغيل"
+    ],
+    "البوصلة": [
+      "تم إصلاح مشكلة نسبة العرض إلى الارتفاع غير الطبيعية في واجهة معاينة البوصلة"
+    ],
+    "آخرين": [
       "تحسين أمن واستقرار النظام"
     ]
   },
   "logs_in": {
+    "सिस्टम": [
+      "सिस्टम की सुरक्षा और स्थिरता को प्रभावित करने वाली कुछ समस्याओं को ठीक किया गया।"
+    ],
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
+      "रीबूट के बाद अनलॉक पासवर्ड दर्ज करते समय चमक के उछाल की समस्या ठीक की गई"
+    ],
+    "कंपास": [
+      "कंपास पूर्वावलोकन इंटरफ़ेस में असामान्य पहलू अनुपात की समस्या ठीक की गई"
+    ],
     "अन्य": [
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
     ]
   },
   "logs_ug": {
+    "سىستېما": [
+      "سىستېمىنىڭ بىخەتەرلىكى ۋە مۇقىملىقىغا تەسىر كۆرسىتىدىغان بىر قانچە مەسىلە تۈزىتىلدى."
+    ],
+    "كومپاس": [
+      "كومپاس ئالدىن كۆرۈش كۆرۈنمە يۈزىنىڭ ئۇزۇنلۇق-كەڭلىك نىسبىتىدىكى نورمالسىزلىق مەسىلىسى تۈزىتىلدى"
+    ],
     "باشقىلىرى": [
       "Improved system security and stability"
     ]
   },
   "logs_bo": {
+    "མ་ལག": [
+      "མ་ལག་གི་བདེ་འཇགས་དང་བརྟན་ལྷིང་ལ་ཤུགས་རྐྱེན་ཐེབས་པའི་གནད་དོན་འགའ་ཞིག་བཅོས་བྱས།"
+    ],
     "གཞན།": [
       "Improved system security and stability"
     ]

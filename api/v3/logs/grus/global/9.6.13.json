@@ -84,12 +84,24 @@
     ]
   },
   "logs_en": {
+    "System": [
+      "New: Editing, sharing, and customizing your screenshots is now much easier",
+      "New: An option for smoothening notch curves on full screen devices",
+      "Optimization: Removed unnecessary sound notifications for DND mode",
+      "Fixed an issue where the long screenshot guide popped up multiple times"
+    ],
     "Phone": [
       "Fix: Ending calls took longer time than expected"
     ],
     "App lock": [
       "New: Support simultaneous face and fingerprint unlock",
       "Fix: Issues with the App lock password form on some devices"
+    ],
+    "Clock": [
+      "Added the ability to freely choose black or white background in Clock settings",
+      "Fix: Timer button started flashing after being tapped",
+      "Fix: Clock force closed on some specific dates",
+      "Note: After this update, the clock background color is white."
     ],
     "Settings": [
       "New: Quick replies for messaging apps",
@@ -98,9 +110,40 @@
     "Recents": [
       "New: You can blur the previews of some apps in Recents now"
     ],
-    "System": [
-      "New: An option for smoothening notch curves on full screen devices",
-      "Optimization: Removed unnecessary sound notifications for DND mode"
+    "Calendar": [
+      "Added \"Remind Later\" feature for calendar notifications"
+    ],
+    "Blocklist": [
+      "Fixed an issue where responses were too slow or failed when blocking records in batches"
+    ],
+    "Security": [
+      "Added Dark mode support for spam blocking",
+      "Fix: Dual apps disappeared after a reboot",
+      "Fixed a bug where the number of locked apps was displayed incorrectly in Optimization & acceleration"
+    ],
+    "Mi Cloud": [
+      "Added User details page",
+      "Added: prompt when the user turns off Find My Device that MiPay bank cards and virtual door cards will be deleted",
+      "New: Search cloud service content in Settings",
+      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!",
+      "Optimization: Improved sync across multiple devices",
+      "Optimize scrolling display when the username is too long",
+      "Optimization: Improved sync efficiency",
+      "Optimize large font display on the Space management page",
+      "Fix: The Sync button didn't always respond",
+      "Fix: Mi Cloud services stopped working when the users signed out of their Mi Account",
+      "Fix incorrect page display when switching accounts",
+      "Fixed long text display issue in the interface",
+      "Fixed the issue where the sync button displayed abnormally",
+      "Fixed an issue where the Find Device enabled status was displayed incorrectly when entering Find Device via Settings search",
+      "Fix sync status display issue",
+      "Fix: Find device status wasn't displayed correctly when this feature was accessed through search in the Settings"
+    ],
+    "Other optimizations and adjustments": [
+      "Optimize the charging animation disappearance effect",
+      "Optimized the issue where the system charging animation could not be displayed on third-party lock screens",
+      "Fix the issue where the new charging animation displays abnormally in landscape mode",
+      "Remove the redundant “Fast charging” voice prompt when turning off the screen in Talkback mode"
     ],
     "Lockscreen, status bar, Notification shade": [
       "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
@@ -112,366 +155,1283 @@
       "Fix: Fingerprint unlock didn't always work with the screen off",
       "Fix: In-screen fingerprint scanner didn't work when the screen was turned off in some cases",
       "Fix: Displaying items on the turned off screen couldn't be turned off on time in some cases"
-    ],
-    "Clock": [
-      "Fix: Timer button started flashing after being tapped",
-      "Fix: Clock force closed on some specific dates"
-    ],
-    "Security": [
-      "Fix: Dual apps disappeared after a reboot"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!",
-      "Optimization: Improved sync across multiple devices",
-      "Optimization: Improved sync efficiency",
-      "Fix: The Sync button didn't always respond",
-      "Fix: Mi Cloud services stopped working when the users signed out of their Mi Account",
-      "Fix: Find device status wasn't displayed correctly when this feature was accessed through search in the Settings"
     ]
   },
   "logs_zh_tw": {
-    "電話": [
+    "系統": [
+      "新增 全新的截圖體驗，簡化截圖編輯、分享、長截圖流程",
+      "新增 全面屏設定中的水滴屏形狀切換開關",
+      "優化 取消定時關閉勿擾後的聲音提示",
+      "修復長截屏引導彈出多次的問題"
+    ],
+    "电话": [
       "修復 掛斷電話較慢的問題"
     ],
-    "設定": [
+    "應用鎖": [
+      "新增 支援人臉與指紋同時解鎖",
+      "修正部分機型應用鎖密碼輸入框顯示錯誤"
+    ],
+    "時鐘": [
+      "新增 在時鐘設定中自由選擇黑色或白色背景的功能",
+      "修復 計時器頁面按鈕點擊閃爍的問題",
+      "修復 時鐘在特殊日期出現閃退的問題",
+      "提示：本次更新後時鐘的背景顏色為白色"
+    ],
+    "设置": [
       "新增 快捷回覆功能，支援使用懸浮窗開啟即時通訊類應用通知",
       "優化 Wi-Fi清單排列策略，以信號的強度排列"
     ],
     "近期任務": [
       "新增: 模糊最近任務中的部分應用預覽圖的功能"
     ],
-    "時鐘": [
-      "修復 計時器頁面按鈕點擊閃爍的問題",
-      "修復 時鐘在特殊日期出現閃退的問題"
+    "日曆": [
+      "新增 日程通知「稍後提醒」功能"
+    ],
+    "防打擾": [
+      "修復 批次攔截記錄時回應時間過慢或失敗的問題"
     ],
     "安全中心": [
-      "修復 手機重啟後雙開APP消失了bug"
+      "新增 騷擾攔截支援 Dark mode",
+      "修復 手機重啟後雙開APP消失了bug",
+      "修復「最佳化加速」功能中鎖定應用程式數量顯示錯誤的問題"
+    ],
+    "小米雲服務": [
+      "新增 使用者詳情頁",
+      "新增 使用者關閉尋找手機時，提示 MiPay 銀行卡和虛擬門卡將被刪除",
+      "新增 設定可搜尋雲端服務內容",
+      "優化 雲服務首頁重新設計，雲端可用空間顯示更加直觀",
+      "優化 多裝置之間數據同步即時性",
+      "優化 使用者名稱過長時捲動顯示",
+      "優化 同步及時性，提升同步效率",
+      "優化 空間管理頁面大字體顯示",
+      "修復 點擊「立即同步」按鈕沒有反應的問題",
+      "修正 登出小米帳號時，提示雲端服務停止運行的問題",
+      "修正 更換帳號時頁面顯示不正確",
+      "修復 介面長文字顯示問題",
+      "修復同步按鈕顯示不正常的問題",
+      "修復透過設定搜尋進入尋找手機時，尋找手機開啟狀態顯示錯誤的問題",
+      "修復同步狀態顯示問題",
+      "修正 在設定中搜尋進入尋找裝置時狀態顯示異常的問題"
+    ],
+    "其他優化及調整": [
+      "優化 充電動畫的消失效果",
+      "優化 第三方鎖定畫面無法顯示系統充電動畫的問題",
+      "修復 新版充電動畫在橫屏下顯示異常的問題",
+      "刪除 Talkback 模式下，關閉螢幕會提示「快速充電」的多餘語音"
+    ],
+    "解鎖畫面、狀態欄、通知欄": [
+      "新增 系統主題下，鎖屏時鐘支援三種自訂型式，可在鎖屏進階設定中修改",
+      "新增 數據 SIM 卡切換捷徑",
+      "修復 解鎖進入橫向螢幕介面時有異常閃亮的問題",
+      "修復 螢幕鎖定上來電時偶現螢幕無法亮起的問題",
+      "修復 螢幕鎖定設定頁面，雙時鐘預覽圖數字折行的問題",
+      "修復 橫向螢幕狀態下無法正常打開指紋快捷功能的問題",
+      "修復 螢幕熄滅下偶現指紋解鎖失敗的問題",
+      "修復部分場景下關閉螢幕時螢幕下指紋無法使用的問題",
+      "修復息屏顯示無法定時關閉的問題"
     ]
   },
   "logs_ja": {
+    "システム": [
+      "追加: 新しいスクリーンショット体験。スクリーンショットの編集、共有、長いスクリーンショットの流れを簡素化",
+      "追加: 全画面設定に水滴型ノッチの形状切り替えスイッチ",
+      "最適化: スケジュールされたサイレントモード解除後の通知音を削除",
+      "長いスクリーンショットのガイドが複数回表示される問題を修正しました"
+    ],
     "電話": [
       "修正: 通話終了に予想以上に時間がかかる問題",
       "修正: 通話終了に想定より時間がかかる問題"
+    ],
+    "アプリロック": [
+      "追加: 顔と指紋の同時ロック解除に対応",
+      "一部の機種でアプリロックのパスワード入力欄が正しく表示されない問題を修正"
+    ],
+    "時計": [
+      "時計の設定で黒または白の背景を自由に選択できる機能を追加",
+      "タイマーページのボタンをタップした際に点滅する問題を修正",
+      "特定の日付で時計が強制終了する問題を修正",
+      "ヒント：今回のアップデート後、時計の背景色は白色になります。"
     ],
     "設定": [
       "新機能: メッセージアプリのクイック返信",
       "WiFiリストの並べ替えポリシーを最適化し、信号強度順に並べ替え",
       "最適化: WLANリストを電波強度順に並べ替えるように調整"
     ],
-    "システム": [
-      "追加: 全画面設定に水滴型ノッチの形状切り替えスイッチ",
-      "最適化: スケジュールされたサイレントモード解除後の通知音を削除"
+    "最近のタスク": [
+      "追加: 最近のタスクで一部アプリのプレビューをぼかせるようになりました"
     ],
-    "時計": [
-      "タイマーページのボタンをタップした際に点滅する問題を修正",
-      "特定の日付で時計が強制終了する問題を修正"
+    "カレンダー": [
+      "カレンダー通知の「後で通知」機能を追加"
+    ],
+    "迷惑電話ブロック": [
+      "記録を一括ブロックする際に応答が遅い、または失敗する問題を修正"
     ],
     "セキュリティ": [
-      "修正: 再起動後にデュアルアプリが消える問題"
+      "迷惑電話・メッセージのブロックのダークモード対応を追加",
+      "修正: 再起動後にデュアルアプリが消える問題",
+      "「最適化＆加速」機能でロック中のアプリ数が誤って表示される不具合を修正"
+    ],
+    "Xiaomi クラウドサービス": [
+      "ユーザー詳細ページを追加",
+      "追加 ユーザーが「デバイスを探す」をオフにした際、MiPayの銀行カードと仮想ドアカードが削除されることを通知",
+      "新規: 設定でクラウドサービスの内容を検索可能に",
+      "最適化: クラウドサービスのホームページを再設計し、空き容量がより分かりやすく表示されるようになりました。",
+      "最適化: 複数デバイス間のデータ同期を改善",
+      "最適化 ユーザー名が長すぎる場合のスクロール表示",
+      "最適化: 同期の適時性を向上し、同期効率を改善",
+      "スペース管理ページの大きなフォント表示を最適化",
+      "「今すぐ同期」ボタンをタップしても反応しない問題を修正",
+      "Xiaomi アカウントからサインアウトした際に、クラウドサービスが停止したと表示される問題を修正",
+      "アカウント切り替え時にページが正しく表示されない問題を修正",
+      "インターフェースの長いテキスト表示の問題を修正",
+      "同期ボタンが正常に表示されない問題を修正",
+      "設定の検索から「デバイスを探す」に入った際、「デバイスを探す」の有効状態が誤って表示される問題を修正",
+      "同期状態の表示の問題を修正",
+      "設定の検索から「デバイスを探す」を開いた際にステータスが正しく表示されない問題を修正"
+    ],
+    "その他の改善と最適化": [
+      "充電アニメーションの消えるエフェクトを最適化",
+      "サードパーティ製ロック画面でシステムの充電アニメーションが表示されない問題を最適化",
+      "新しい充電アニメーションが横向き時に異常表示される問題を修正",
+      "Talkbackモードで画面をオフにした際に「急速充電」と通知する余分な音声を削除"
+    ],
+    "ロック画面、ステータスバー、通知シェード": [
+      "新規: システムテーマでは、ロック画面の時計が3種類のカスタムスタイルに対応し、ロック画面の詳細設定で変更できます。",
+      "追加: データSIMカード切り替えショートカット",
+      "修正: ロック解除して横向き画面に入るときに異常なちらつきが発生する問題",
+      "ロック画面での着信時に画面が点灯しないことがある問題を修正",
+      "修正: 常時表示設定ページのデュアルクロックプレビューで数字が折り返される問題",
+      "横向き時に指紋ショートカットが正常に開けない問題を修正",
+      "修正: 画面オフ時に指紋認証によるロック解除が失敗することがある問題",
+      "一部の状況で画面オフ時に画面内指紋センサーが使用できない問題を修正",
+      "常時表示を定時にオフにできない問題を修正"
     ]
   },
   "logs_ko": {
+    "시스템": [
+      "New: 스크린샷 편집, 공유, 커스터마이징의 과정을 간소화",
+      "신규: 전체 화면 설정에 물방울 노치 모양 전환 스위치 추가",
+      "최적화: 방해금지 모드에서의 불필요한 알림음 제거됨",
+      "긴 스크린샷 안내가 여러 번 표시되는 문제를 수정했습니다"
+    ],
     "전화": [
       "수정: 통화 종료가 예상보다 오래 걸리는 문제"
+    ],
+    "앱 잠금": [
+      "추가: 얼굴과 지문 동시 잠금 해제 지원",
+      "일부 기기에서 앱 잠금 비밀번호 입력란 표시 오류 수정"
+    ],
+    "시계": [
+      "시계 설정에서 검은색 또는 흰색 배경을 자유롭게 선택할 수 있는 기능 추가",
+      "타이머 페이지에서 버튼을 탭할 때 깜박이는 문제를 수정했습니다",
+      "특정 날짜에 시계가 강제 종료되는 문제 수정",
+      "안내: 이번 업데이트 후 시계의 배경색이 흰색입니다."
     ],
     "설정": [
       "New: 메시지 앱의 빠른 답장 기능",
       "WiFi 목록 정렬 정책을 최적화하고 신호 강도 순으로 정렬",
       "최적화: WLAN 목록이 신호 강도에 따라 정렬되도록 조정"
     ],
-    "시스템": [
-      "신규: 전체 화면 설정에 물방울 노치 모양 전환 스위치 추가",
-      "최적화: 방해금지 모드에서의 불필요한 알림음 제거됨"
+    "최근 작업": [
+      "추가: 최근 작업에서 일부 앱의 미리보기를 흐리게 표시할 수 있습니다"
     ],
-    "시계": [
-      "타이머 페이지에서 버튼을 탭할 때 깜박이는 문제를 수정했습니다",
-      "특정 날짜에 시계가 강제 종료되는 문제 수정"
+    "캘린더": [
+      "일정 알림에 \"나중에 알림\" 기능 추가"
+    ],
+    "스팸 차단": [
+      "기록을 일괄 차단할 때 응답이 너무 느리거나 실패하는 문제를 수정"
     ],
     "보안": [
-      "수정: 재부팅 후 듀얼 앱이 사라지는 문제"
+      "스팸 차단 다크 모드 지원 추가",
+      "수정: 재부팅 후 듀얼 앱이 사라지는 문제",
+      "최적화 및 가속 기능에서 잠긴 앱 수가 잘못 표시되는 버그 수정"
+    ],
+    "Xiaomi 클라우드 서비스": [
+      "사용자 상세 페이지 추가",
+      "추가 사용자가 기기 찾기를 끌 때 MiPay 은행 카드 및 가상 도어 카드가 삭제된다는 안내",
+      "추가: 설정에서 클라우드 서비스 콘텐츠 검색 가능",
+      "최적화: 클라우드 서비스 홈페이지를 재설계하여 사용 가능한 공간이 더 직관적으로 표시됩니다.",
+      "최적화: 여러 기기 간 데이터 동기화 개선",
+      "최적화 사용자 이름이 너무 길 때 스크롤 표시",
+      "최적화: 동기화 적시성 개선 및 동기화 효율 향상",
+      "공간 관리 페이지의 큰 글꼴 표시 최적화",
+      "\"지금 동기화\" 버튼을 눌러도 반응이 없는 문제를 수정",
+      "Xiaomi 계정에서 로그아웃할 때 클라우드 서비스가 중지되었다는 알림이 표시되는 문제를 수정",
+      "계정 전환 시 페이지가 올바르게 표시되지 않는 문제 수정",
+      "인터페이스의 긴 텍스트 표시 문제를 수정",
+      "동기화 버튼이 비정상적으로 표시되는 문제를 수정했습니다",
+      "설정 검색에서 '기기 찾기'로 진입할 때 '기기 찾기' 활성화 상태가 잘못 표시되는 문제를 수정",
+      "동기화 상태 표시 문제 수정",
+      "설정에서 검색하여 기기 찾기에 진입할 때 상태가 비정상적으로 표시되는 문제를 수정"
+    ],
+    "기타 개선 및 최적화": [
+      "충전 애니메이션의 사라지는 효과를 최적화",
+      "타사 잠금 화면에서 시스템 충전 애니메이션이 표시되지 않는 문제를 최적화했습니다",
+      "새로운 충전 애니메이션이 가로 모드에서 비정상적으로 표시되는 문제 수정",
+      "Talkback 모드에서 화면을 끌 때 “빠른 충전”을 안내하는 불필요한 음성을 삭제"
+    ],
+    "잠금화면, 상태 바, 알림 바": [
+      "새 기능: 시스템 테마에서 잠금 화면 시계가 3가지 사용자 지정 스타일을 지원하며, 잠금 화면 고급 설정에서 변경할 수 있습니다.",
+      "추가: 데이터 SIM 카드 전환 바로가기",
+      "수정: 잠금 해제 후 가로 화면으로 진입할 때 비정상적으로 깜빡이는 문제",
+      "잠금 화면에서 전화 수신 시 화면이 켜지지 않는 문제를 수정했습니다",
+      "수정: 상시 표시 설정 페이지의 듀얼 클록 미리보기에서 숫자가 줄바꿈되는 문제",
+      "가로 모드에서 지문 바로가기가 정상적으로 열리지 않던 문제를 수정",
+      "수정: 화면이 꺼진 상태에서 지문 잠금 해제가 간헐적으로 실패하는 문제",
+      "일부 상황에서 화면이 꺼져 있을 때 화면 내 지문 인식이 작동하지 않던 문제를 수정",
+      "상시 표시를 예약 시간에 끌 수 없는 문제를 수정"
     ]
   },
   "logs_ru": {
+    "Система": [
+      "Новое: Редактировать и отправлять снимки экрана теперь намного проще",
+      "Новое: Функция сглаживания выреза для устройств с Безграничным экраном",
+      "Оптимизация: Устранены звуковые уведомления в режиме Не беспокоить",
+      "Исправлена проблема, из-за которой подсказка для длинного скриншота появлялась несколько раз"
+    ],
     "Телефон": [
       "Исправлено: Завершение вызова выполнялось слишком долго"
+    ],
+    "Защита приложений": [
+      "Добавлено: поддержка одновременной разблокировки по лицу и отпечатку пальца",
+      "Исправлена ошибка отображения поля ввода пароля блокировки приложений на некоторых устройствах"
+    ],
+    "Часы": [
+      "Добавлена возможность свободного выбора черного или белого фона в настройках часов",
+      "Исправлено: Кнопка таймера начинала мигать после нажатия",
+      "Исправлено: Некорректное завершение работы приложения Часы в определенные дни",
+      "Примечание: после этого обновления цвет фона часов — белый."
     ],
     "Настройки": [
       "Новое: Быстрые ответы для мессенджеров",
       "Оптимизация: Принцип сортировки сетей Wi-Fi"
     ],
-    "Часы": [
-      "Исправлено: Кнопка таймера начинала мигать после нажатия",
-      "Исправлено: Некорректное завершение работы приложения Часы в определенные дни"
+    "Недавнее": [
+      "Добавлено: можно размывать превью некоторых приложений в недавних задачах"
+    ],
+    "Календарь": [
+      "Добавлена функция «Напомнить позже» для уведомлений календаря"
+    ],
+    "Черный список": [
+      "Исправлена проблема слишком медленного отклика или сбоя при пакетной блокировке записей"
     ],
     "Безопасность": [
-      "Исправлено: Клоны приложений исчезали после перезагрузки"
+      "Добавлена поддержка тёмной темы для блокировки спама",
+      "Исправлено: Клоны приложений исчезали после перезагрузки",
+      "Исправлена ошибка отображения количества заблокированных приложений в функции «Оптимизация и ускорение»"
+    ],
+    "Облачный сервис Xiaomi": [
+      "Добавлена страница сведений о пользователе",
+      "Добавлено: при отключении пользователем «Поиска устройства» отображается предупреждение об удалении банковских карт MiPay и виртуальных дверных карт",
+      "Добавлено: поиск содержимого облачных сервисов в настройках",
+      "Оптимизация: Мы переработали начальную страницу Mi Cloud. Теперь она выглядит намного лучше!",
+      "Оптимизация: Улучшена синхронизация данных между несколькими  устройствами",
+      "Оптимизация отображения с прокруткой при слишком длинном имени пользователя",
+      "Оптимизация: повышена своевременность и эффективность синхронизации",
+      "Оптимизировано отображение крупного шрифта на странице управления пространством",
+      "Исправлена проблема, из-за которой кнопка «Синхронизировать сейчас» не реагировала на нажатие",
+      "Исправлена проблема с сообщением об остановке облачных сервисов при выходе из аккаунта Xiaomi",
+      "Исправлено некорректное отображение страницы при смене аккаунта",
+      "Исправлена проблема отображения длинного текста в интерфейсе",
+      "Исправлена проблема с неправильным отображением кнопки синхронизации",
+      "Исправлена ошибка, из-за которой при входе в «Поиск устройства» через поиск в настройках неверно отображался статус включения «Поиск устройства».",
+      "Исправлена проблема с отображением состояния синхронизации",
+      "Исправлена проблема с некорректным отображением статуса при переходе в «Поиск устройства» через поиск в настройках."
+    ],
+    "Другие оптимизации и настройки": [
+      "Оптимизирован эффект исчезновения анимации зарядки",
+      "Оптимизирована проблема, из-за которой на сторонних экранах блокировки не отображалась системная анимация зарядки",
+      "Исправлена проблема с неправильным отображением новой анимации зарядки в альбомной ориентации",
+      "Удалить лишнее голосовое уведомление «Быстрая зарядка» при выключении экрана в режиме Talkback"
+    ],
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Новое: Добавлены настраиваемые часы для экрана блокировки (Настройки > Блокировка и защита > Расширенные настройки). Новые часы для экрана блокировки несовместимы со сторонними темами",
+      "Добавлено: ярлык переключения SIM-карты для данных",
+      "Исправлено: При разблокировке устройства в альбомной ориентации могли происходить различные ошибки",
+      "Исправлено: Экран не всегда включался при получении новых уведомлений",
+      "Исправлено: Проблемы с перекрыванием в настройках двойных часов",
+      "Исправлено: Жесты сканера отпечатков пальцев не работали в альбомной ориентации",
+      "Исправлено: Сканер отпечатков пальцев не всегда работал при выключенном экране",
+      "Исправлена проблема, из-за которой в некоторых случаях подэкранный сканер отпечатков пальцев не работал при выключенном экране",
+      "Исправлена проблема, из-за которой Always-on display не отключался по расписанию"
     ]
   },
   "logs_uk": {
+    "Система": [
+      "Нове: Оновлений досвід роботи зі скріншотами, спрощено редагування, поширення та створення довгих скріншотів",
+      "Нове: Перемикач форми краплеподібного вирізу в налаштуваннях повноекранного режиму",
+      "Оптимізація: Вилучено звукове сповіщення після запланованого вимкнення режиму «Не турбувати»",
+      "Виправлено проблему, через яку підказка для довгого скриншота з’являлася кілька разів"
+    ],
     "Телефон": [
       "Виправлено: Завершення викликів тривало довше, ніж очікувалося",
       "Виправлено: завершення викликів тривало довше, ніж очікувалося"
+    ],
+    "Блокування додатків": [
+      "Додано: підтримка одночасного розблокування обличчям і відбитком пальця",
+      "Виправлено помилку відображення поля введення пароля блокування програм на деяких пристроях"
+    ],
+    "Годинник": [
+      "Додано можливість вільно вибирати чорний або білий фон у налаштуваннях годинника",
+      "Виправлено: кнопка на сторінці таймера блимає після натискання",
+      "Виправлено: Годинник аварійно завершував роботу в окремі дати",
+      "Підказка: після цього оновлення фон годинника стає білим."
     ],
     "Налаштування": [
       "New: Quick replies for messaging apps",
       "Оптимізація стратегії сортування списку WiFi, сортування за силою сигналу",
       "Оптимізація: список WLAN сортується за силою сигналу"
     ],
-    "Система": [
-      "Нове: Перемикач форми краплеподібного вирізу в налаштуваннях повноекранного режиму",
-      "Оптимізація: Вилучено звукове сповіщення після запланованого вимкнення режиму «Не турбувати»"
+    "Останні завдання": [
+      "Додано: можна розмивати прев’ю деяких програм у нещодавніх задачах"
     ],
-    "Годинник": [
-      "Виправлено: кнопка на сторінці таймера блимає після натискання",
-      "Виправлено: Годинник аварійно завершував роботу в окремі дати"
+    "Календар": [
+      "Додано функцію «Нагадати пізніше» для сповіщень календаря"
+    ],
+    "Блокування спаму": [
+      "Виправлено проблему занадто повільної відповіді або збою під час пакетного блокування записів"
     ],
     "Безпека": [
-      "Виправлено: Клони програм зникали після перезавантаження"
+      "Додано підтримку темної теми для блокування спаму",
+      "Виправлено: Клони програм зникали після перезавантаження",
+      "Виправлено помилку відображення кількості заблокованих програм у функції «Оптимізація й прискорення»"
+    ],
+    "Хмарний сервіс Xiaomi": [
+      "Додано сторінку відомостей про користувача",
+      "Додано: коли користувач вимикає «Пошук пристрою», показується попередження про видалення банківських карток MiPay і віртуальних карток дверей",
+      "Додано: пошук вмісту хмарних сервісів у налаштуваннях",
+      "Оптимізація: головну сторінку хмарного сервісу перероблено, доступний простір тепер відображається більш наочно.",
+      "Оптимізація: Покращено синхронізацію даних між кількома пристроями",
+      "Оптимізація прокручування, якщо ім'я користувача занадто довге",
+      "Оптимізація: покращено своєчасність і ефективність синхронізації",
+      "Оптимізовано відображення великого шрифту на сторінці керування простором",
+      "Виправлено проблему, через яку кнопка «Синхронізувати зараз» не реагувала на натискання",
+      "Виправлено проблему з повідомленням про зупинку хмарних сервісів під час виходу з облікового запису Xiaomi",
+      "Виправлено неправильне відображення сторінки під час зміни облікового запису",
+      "Виправлено проблему відображення довгого тексту в інтерфейсі",
+      "Виправлено проблему з неправильним відображенням кнопки синхронізації",
+      "Виправлено помилку, через яку під час входу в «Пошук пристрою» через пошук у налаштуваннях неправильно відображався стан увімкнення «Пошук пристрою».",
+      "Виправлено проблему з відображенням стану синхронізації",
+      "Виправлено проблему з неправильним відображенням статусу під час переходу до «Пошук пристрою» через пошук у налаштуваннях."
+    ],
+    "Інші оптимізації та налаштування": [
+      "Оптимізовано ефект зникнення анімації заряджання",
+      "Оптимізовано проблему, через яку на сторонніх екранах блокування не відображалася системна анімація заряджання",
+      "Виправлено проблему з ненормальним відображенням нової анімації заряджання в альбомній орієнтації",
+      "Видалити зайве голосове сповіщення «Швидка зарядка» під час вимкнення екрана в режимі Talkback"
+    ],
+    "Екран блокування, рядок стану, панель сповіщень": [
+      "Нове: у системних темах годинник екрана блокування підтримує три власні стилі, які можна змінити в розширених налаштуваннях екрана блокування.",
+      "Додано: ярлик перемикання SIM-картки для передавання даних",
+      "Виправлено: ненормальне мерехтіння під час розблокування та переходу до горизонтального інтерфейсу",
+      "Виправлено: екран іноді не вмикався під час вхідного виклику на екрані блокування",
+      "Виправлено: проблему з перенесенням цифр у попередньому перегляді подвійного годинника на сторінці налаштувань режиму завжди активного екрана",
+      "Виправлено: ярлики відбитка пальця не працювали в альбомній орієнтації.",
+      "Виправлено: розблокування відбитком пальця іноді не працювало, коли екран вимкнено",
+      "Виправлено проблему, через яку в деяких випадках підекранний сканер відбитків пальців не працював, коли екран вимкнено",
+      "Виправлено проблему, через яку Always-on display не вимикався за розкладом"
     ]
   },
   "logs_pl": {
+    "System": [
+      "Nowe: Edytowanie, przesyłanie i dostosowywanie Twoich zrzutów ekranu jest teraz znacznie łatwiejsze.",
+      "Nowość: Przełącznik kształtu notcha w kształcie kropli w ustawieniach pełnoekranowych",
+      "Zoptymalizowano: Usunięto niepotrzebne sygnały dźwiękowe dla trybu nie przeszkadzać",
+      "Naprawiono problem, w którym wskazówka dotycząca długiego zrzutu ekranu pojawiała się wielokrotnie"
+    ],
     "Telefon": [
       "Poprawka: Zakończenie połączeń trwało dłużej niż oczekiwano",
       "Naprawiono: Zakończenie połączeń trwało dłużej niż oczekiwano"
+    ],
+    "Blokada aplikacji": [
+      "Dodano: obsługa jednoczesnego odblokowywania twarzą i odciskiem palca",
+      "Naprawiono błąd wyświetlania pola hasła blokady aplikacji na niektórych urządzeniach"
+    ],
+    "Zegar": [
+      "Dodano możliwość swobodnego wyboru czarnego lub białego tła w ustawieniach zegara",
+      "Poprawka: przycisk na stronie minutnika miga po dotknięciu",
+      "Naprawiono: Zegar ulegał awarii w określonych datach",
+      "Wskazówka: po tej aktualizacji tło zegara jest białe."
     ],
     "Ustawienia": [
       "Nowe: Szybkie odpowiedzi dla komunikatorów",
       "Optymalizacja strategii sortowania listy WiFi, sortowanie według siły sygnału",
       "Optymalizacja: lista WLAN sortowana według siły sygnału"
     ],
-    "System": [
-      "Nowość: Przełącznik kształtu notcha w kształcie kropli w ustawieniach pełnoekranowych",
-      "Zoptymalizowano: Usunięto niepotrzebne sygnały dźwiękowe dla trybu nie przeszkadzać"
+    "Ostatnie zadania": [
+      "Dodano: możliwość rozmycia podglądu niektórych aplikacji w ostatnich zadaniach"
     ],
-    "Zegar": [
-      "Poprawka: przycisk na stronie minutnika miga po dotknięciu",
-      "Naprawiono: Zegar ulegał awarii w określonych datach"
+    "Kalendarz": [
+      "Dodano funkcję „Przypomnij później” w powiadomieniach kalendarza"
+    ],
+    "Blokowanie spamu": [
+      "Naprawiono problem zbyt wolnej odpowiedzi lub błędu podczas masowego blokowania rekordów"
     ],
     "Bezpieczeństwo": [
-      "Poprawiono: Aplikacje dualne znikały po ponownym uruchomieniu"
+      "Dodano obsługę trybu ciemnego dla blokowania spamu",
+      "Poprawiono: Aplikacje dualne znikały po ponownym uruchomieniu",
+      "Naprawiono błąd nieprawidłowego wyświetlania liczby zablokowanych aplikacji w funkcji Optymalizacja i przyspieszanie"
+    ],
+    "Usługa w chmurze Xiaomi": [
+      "Dodano stronę szczegółów użytkownika",
+      "Dodano: przy wyłączaniu przez użytkownika funkcji Znajdź urządzenie wyświetlane jest ostrzeżenie o usunięciu kart bankowych MiPay i wirtualnych kart drzwi",
+      "Dodano: wyszukiwanie zawartości usług w chmurze w Ustawieniach",
+      "Optymalizacja: przeprojektowano stronę główną usługi w chmurze; dostępna przestrzeń jest teraz wyświetlana bardziej intuicyjnie.",
+      "Optymalizacja: Poprawiono synchronizację między wieloma urządzeniami",
+      "Optymalizacja przewijania, gdy nazwa użytkownika jest zbyt długa",
+      "Optymalizacja: poprawiono terminowość i wydajność synchronizacji",
+      "Zoptymalizowano wyświetlanie dużych czcionek na stronie zarządzania przestrzenią",
+      "Naprawiono problem z brakiem reakcji po naciśnięciu przycisku „Synchronizuj teraz”",
+      "Naprawiono problem z komunikatem o zatrzymaniu usług w chmurze podczas wylogowywania z konta Xiaomi",
+      "Poprawiono nieprawidłowe wyświetlanie strony przy zmianie konta",
+      "Naprawiono problem z wyświetlaniem długiego tekstu w interfejsie",
+      "Naprawiono problem z nieprawidłowym wyświetlaniem przycisku synchronizacji",
+      "Naprawiono błąd, w którym po wejściu w „Znajdź urządzenie” przez wyszukiwanie w Ustawieniach stan włączenia był wyświetlany nieprawidłowo.",
+      "Naprawiono problem z wyświetlaniem stanu synchronizacji",
+      "Naprawiono problem z nieprawidłowym wyświetlaniem stanu przy przechodzeniu do „Znajdź urządzenie” przez wyszukiwanie w Ustawieniach."
+    ],
+    "Inne optymalizacje i modyfikacje": [
+      "Zoptymalizowano efekt znikania animacji ładowania",
+      "Zoptymalizowano problem z brakiem wyświetlania systemowej animacji ładowania na ekranach blokady firm trzecich",
+      "Naprawiono problem z nieprawidłowym wyświetlaniem nowej animacji ładowania w trybie poziomym",
+      "Usuń zbędne powiadomienie głosowe „Szybkie ładowanie” przy wyłączaniu ekranu w trybie Talkback"
+    ],
+    "Ekran blokady, pasek powiadomień,panel powiadomień": [
+      "Nowość: w motywach systemowych zegar ekranu blokady obsługuje trzy niestandardowe style, które można zmienić w zaawansowanych ustawieniach ekranu blokady.",
+      "Dodano: skrót do przełączania karty SIM danych",
+      "Naprawiono: Nieprawidłowe migotanie podczas odblokowywania i przechodzenia do interfejsu poziomego",
+      "Naprawiono: ekran czasami nie włączał się przy połączeniu przychodzącym na ekranie blokady",
+      "Poprawka: problem z zawijaniem cyfr w podglądzie podwójnego zegara na stronie ustawień ekranu Always-On",
+      "Poprawka: skróty odcisku palca nie działały w orientacji poziomej.",
+      "Naprawiono: Odblokowywanie odciskiem palca czasami nie działało przy wyłączonym ekranie",
+      "Naprawiono problem, w którym w niektórych sytuacjach czytnik linii papilarnych w ekranie nie działał przy wyłączonym ekranie",
+      "Naprawiono problem, przez który Always-on display nie wyłączał się o zaplanowanej porze"
     ]
   },
   "logs_de": {
+    "System": [
+      "Neu: Bearbeiten, Teilen und Anpassen von Screenshots ist jetzt viel einfacher",
+      "Neu: Schalter zum Ändern der Tropfen-Notch-Form in den Vollbild-Einstellungen",
+      "Optimierung: Tonbenachrichtigung nach zeitgesteuerter Deaktivierung des Nicht-Stören-Modus entfernt",
+      "Problem behoben, bei dem der Hinweis für lange Screenshots mehrfach angezeigt wurde"
+    ],
     "Telefon": [
       "Behoben: Das Beenden von Anrufen dauerte länger als erwartet",
       "Behoben: Anrufe beenden dauerte länger als erwartet"
+    ],
+    "App-Sperre": [
+      "Neu: Unterstützung für gleichzeitiges Entsperren mit Gesicht und Fingerabdruck",
+      "Fehlerhafte Anzeige des Passwortfelds der App-Sperre auf einigen Geräten behoben"
+    ],
+    "Uhr": [
+      "Funktion hinzugefügt, um in den Uhr-Einstellungen frei zwischen schwarzem oder weißem Hintergrund zu wählen",
+      "Behebung: Schaltfläche auf der Timer-Seite blinkt nach dem Antippen",
+      "Behoben: Uhr stürzte an bestimmten Daten ab",
+      "Hinweis: Nach diesem Update ist der Hintergrund der Uhr weiß."
     ],
     "Einstellungen": [
       "Neu: Schnellantworten für Messaging-Apps",
       "Optimierung: Sortierung der WLAN-Netzwerke",
       "Optimierung: WLAN-Liste wird nach Signalstärke sortiert"
     ],
-    "System": [
-      "Neu: Schalter zum Ändern der Tropfen-Notch-Form in den Vollbild-Einstellungen",
-      "Optimierung: Tonbenachrichtigung nach zeitgesteuerter Deaktivierung des Nicht-Stören-Modus entfernt"
+    "Letzte Aufgaben": [
+      "Neu: Vorschauen einiger Apps in „Zuletzt verwendet“ können jetzt unscharf dargestellt werden"
     ],
-    "Uhr": [
-      "Behebung: Schaltfläche auf der Timer-Seite blinkt nach dem Antippen",
-      "Behoben: Uhr stürzte an bestimmten Daten ab"
+    "Kalender": [
+      "Funktion „Später erinnern“ für Kalenderbenachrichtigungen hinzugefügt"
+    ],
+    "Spam-Blockierung": [
+      "Problem behoben, bei dem die Antwort beim Blockieren von Datensätzen in Stapeln zu langsam war oder fehlschlug"
     ],
     "Sicherheit": [
-      "Behoben: Duale Apps verschwanden nach einem Neustart"
+      "Dunkelmodus-Unterstützung für Spam-Blockierung hinzugefügt",
+      "Behoben: Duale Apps verschwanden nach einem Neustart",
+      "Fehler behoben: In „Optimierung & Beschleunigung“ wurde die Anzahl gesperrter Apps falsch angezeigt"
+    ],
+    "Xiaomi Cloud-Dienst": [
+      "Benutzerdetailseite hinzugefügt",
+      "Neu: Beim Deaktivieren von „Gerät finden“ wird ein Hinweis angezeigt, dass MiPay-Bankkarten und virtuelle Türkarten gelöscht werden",
+      "Neu: Cloud-Dienstinhalte in den Einstellungen durchsuchen",
+      "Optimierung: Die Startseite des Cloud-Dienstes wurde neu gestaltet; der verfügbare Speicher wird jetzt intuitiver angezeigt.",
+      "Optimierung: Verbesserte Synchronisierung zwischen mehreren Geräten",
+      "Optimierung: Scrollen bei zu langem Benutzernamen",
+      "Optimierung: Aktualität und Effizienz der Synchronisierung verbessert",
+      "Optimierte Anzeige großer Schrift auf der Speicherverwaltungsseite",
+      "Problem behoben, bei dem die Schaltfläche „Jetzt synchronisieren“ nicht reagierte",
+      "Behebung: Beim Abmelden vom Xiaomi-Konto wurde angezeigt, dass Cloud-Dienste nicht mehr ausgeführt werden",
+      "Die fehlerhafte Seitenanzeige beim Wechsel des Kontos wurde behoben",
+      "Problem mit der Anzeige von langem Text in der Benutzeroberfläche behoben",
+      "Problem mit der fehlerhaften Anzeige der Synchronisierungsschaltfläche behoben",
+      "Problem behoben, bei dem der Aktivierungsstatus von „Gerät finden“ beim Öffnen über die Suche in den Einstellungen falsch angezeigt wurde.",
+      "Problem mit der Anzeige des Synchronisierungsstatus behoben",
+      "Fehler behoben: Der Status von „Gerät finden“ wurde nicht korrekt angezeigt, wenn die Funktion über die Suche in den Einstellungen geöffnet wurde."
+    ],
+    "Weitere Optimierungen und Anpassungen": [
+      "Verschwindeeffekt der Ladeanimation optimiert",
+      "Das Problem wurde optimiert, dass die System-Ladeanimation auf Drittanbieter-Sperrbildschirmen nicht angezeigt werden konnte",
+      "Das Problem behoben, dass die neue Ladeanimation im Querformat fehlerhaft angezeigt wird",
+      "Entfernen Sie die überflüssige Sprachansage „Schnellladen“ beim Ausschalten des Bildschirms im Talkback-Modus"
+    ],
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
+      "Neu: Im Systemdesign unterstützt die Sperrbildschirm-Uhr drei benutzerdefinierte Stile, die in den erweiterten Sperrbildschirm-Einstellungen geändert werden können.",
+      "Neu: Verknüpfung zum Wechseln der Daten-SIM-Karte",
+      "Behebung: Ungewöhnliches Flackern beim Entsperren und Wechsel in die Querformat-Oberfläche",
+      "Behoben: Bildschirm leuchtete bei Benachrichtigungen nicht immer auf",
+      "Behebt: Zeilenumbruch der Ziffern in der Doppeluhr-Vorschau auf der Always-On-Display-Einstellungsseite",
+      "Fehler behoben: Fingerabdruck-Schnellfunktionen funktionierten im Querformat nicht.",
+      "Behoben: Fingerabdruckentsperrung schlug bei ausgeschaltetem Bildschirm gelegentlich fehl",
+      "Problem behoben: In einigen Fällen funktionierte der In-Display-Fingerabdrucksensor bei ausgeschaltetem Bildschirm nicht",
+      "Problem behoben: Always-on-Display ließ sich nicht zeitgesteuert ausschalten"
     ]
   },
   "logs_fr": {
+    "Système": [
+      "Nouveau: Editer, partager, et personnaliser vos captures d'écran est maintenant beaucoup plus facile",
+      "Nouveau: Une option pour lisser les courbes d'encoches sur les périphériques plein écran",
+      "Optimisation: A retiré les sons de notifications inutiles pour le mode DND",
+      "Correction du problème où l’astuce de capture d’écran longue s’affichait plusieurs fois"
+    ],
     "Téléphone": [
       "Réparé: Mettre fin aux appels a pris plus de temps que prévu",
       "Correction : la fin des appels prenait plus de temps que prévu"
+    ],
+    "Verrouillage de l'application": [
+      "Nouveau : prise en charge du déverrouillage simultané par visage et empreinte digitale",
+      "Correction de l'affichage incorrect du champ de mot de passe du verrouillage d'applications sur certains appareils"
+    ],
+    "Horloge": [
+      "Ajout de la possibilité de choisir librement entre un fond noir ou blanc dans les paramètres de l'horloge",
+      "Correction : le bouton de la page Minuteur clignote après un appui",
+      "Correction : l'horloge plantait à certaines dates",
+      "Remarque : après cette mise à jour, la couleur d’arrière-plan de l’horloge est blanche."
     ],
     "Paramètres": [
       "Nouveau: Réponses rapides pour les applications de messagerie",
       "Optimisation Principes de tri pour les réseaux Wi-Fi",
       "Optimisation : tri de la liste WLAN par intensité du signal"
     ],
-    "Système": [
-      "Nouveau: Une option pour lisser les courbes d'encoches sur les périphériques plein écran",
-      "Optimisation: A retiré les sons de notifications inutiles pour le mode DND"
+    "Tâches récentes": [
+      "Nouveau : vous pouvez désormais flouter les aperçus de certaines applications dans les tâches récentes"
     ],
-    "Horloge": [
-      "Correction : le bouton de la page Minuteur clignote après un appui",
-      "Correction : l'horloge plantait à certaines dates"
+    "Calendrier": [
+      "Ajout de la fonction « Rappeler plus tard » pour les notifications d’agenda"
+    ],
+    "Liste noire": [
+      "Correction d’un problème de réponse trop lente ou d’échec lors du blocage par lots des enregistrements"
     ],
     "Sécurité": [
-      "Corrigé : Les applications duales disparaissaient après un redémarrage"
+      "Ajout de la prise en charge du mode sombre pour le blocage du spam",
+      "Corrigé : Les applications duales disparaissaient après un redémarrage",
+      "Correction d’un bug : le nombre d’applications verrouillées s’affichait incorrectement dans Optimisation et accélération"
+    ],
+    "Service cloud Xiaomi": [
+      "Ajout de la page de détails de l'utilisateur",
+      "Ajout : lors de la désactivation de Localiser mon appareil, un avertissement indique que les cartes bancaires MiPay et les cartes de porte virtuelles seront supprimées",
+      "Nouveau : recherche du contenu des services cloud dans les Paramètres",
+      "Optimisation: Nous avons repensé la page de démarrage de Mi Cloud. Ça a l'air beaucoup mieux maintenant!",
+      "Optimisation Amélioration de la synchronisation sur plusieurs appareils",
+      "Optimisation : défilement lorsque le nom d’utilisateur est trop long",
+      "Optimisation : amélioration de la rapidité et de l'efficacité de la synchronisation",
+      "Optimisation de l’affichage des grandes polices sur la page de gestion de l’espace",
+      "Correction du problème où le bouton « Synchroniser maintenant » ne répondait pas",
+      "Correction : un message indiquait l’arrêt des services cloud lors de la déconnexion du compte Xiaomi",
+      "Correction de l'affichage incorrect de la page lors du changement de compte",
+      "Correction du problème d’affichage des textes longs dans l’interface",
+      "Correction du problème d’affichage anormal du bouton de synchronisation",
+      "Correction d’un problème où l’état d’activation de « Localiser mon appareil » s’affichait incorrectement lors de l’accès via la recherche dans les Paramètres.",
+      "Correction du problème d’affichage de l’état de synchronisation",
+      "Correction : l’état de « Localiser l’appareil » ne s’affichait pas correctement lors de l’accès via la recherche dans les Paramètres."
+    ],
+    "D’autres optimisations et ajustements": [
+      "Optimisation de l'effet de disparition de l'animation de charge",
+      "Optimisation du problème empêchant l'animation de charge système de s'afficher sur les écrans de verrouillage tiers",
+      "Correction du problème d'affichage anormal de la nouvelle animation de charge en mode paysage",
+      "Supprimer l’annonce vocale superflue « Charge rapide » lors de la désactivation de l’écran en mode Talkback"
+    ],
+    "Écran de verrouillage, Barre d'état, Panneau de notification": [
+      "Nouveau : sous les thèmes système, l’horloge de l’écran de verrouillage prend en charge trois styles personnalisés, modifiables dans les paramètres avancés de l’écran de verrouillage.",
+      "Nouveau : raccourci pour changer de carte SIM de données",
+      "Correction : scintillement anormal lors du déverrouillage et du passage à l’interface paysage",
+      "Corrigé : L'écran ne s'allumait pas toujours pour les notifications",
+      "Correction : problème de retour à la ligne des chiffres dans l’aperçu de la double horloge sur la page de réglages de l’écran toujours activé",
+      "Correction : les raccourcis d'empreinte digitale ne fonctionnaient pas en mode paysage.",
+      "Correction : le déverrouillage par empreinte digitale échouait parfois lorsque l'écran est éteint",
+      "Correction : dans certains cas, le lecteur d’empreintes sous l’écran ne fonctionnait pas lorsque l’écran était éteint",
+      "Problème corrigé : l'écran Always-on ne s'éteignait pas à l'heure programmée"
     ]
   },
   "logs_it": {
+    "Sistema": [
+      "Nuovo: Modificare, condividere e personalizzare i tuoi screenshot è ora molto più semplice",
+      "Nuovo: Opzione per uniformare le curve del notch sui dispositivi a schermo intero",
+      "Ottimizzazione: Rimosse notifiche audio non necessarie per la modalità Non Disturbare",
+      "Risolto il problema per cui il suggerimento per lo screenshot lungo compariva più volte"
+    ],
     "Telefono": [
       "Risolto: Terminare le chiamate richiedeva più tempo del previsto"
+    ],
+    "Blocco app": [
+      "Novità: supporto allo sblocco simultaneo con viso e impronta digitale",
+      "Corretto errore di visualizzazione del campo password del blocco app su alcuni dispositivi"
+    ],
+    "Orologio": [
+      "Aggiunta la possibilità di scegliere liberamente tra sfondo nero o bianco nelle impostazioni dell'orologio",
+      "Risolvi: Il pulsante del timer cominciava a lampeggiare quando veniva premuto",
+      "Risolvi: Chiusura forzata di Orologio in alcune date specifiche",
+      "Nota: dopo questo aggiornamento, il colore di sfondo dell'orologio è bianco."
     ],
     "Impostazioni": [
       "Nuovo: Risposte rapide per le app di messaggistica",
       "Ottimizzazione: Principi di ordinamento delle reti Wi-Fi"
     ],
-    "Orologio": [
-      "Risolvi: Il pulsante del timer cominciava a lampeggiare quando veniva premuto",
-      "Risolvi: Chiusura forzata di Orologio in alcune date specifiche"
+    "Recenti": [
+      "Novità: ora puoi sfocare le anteprime di alcune app nelle attività recenti"
+    ],
+    "Calendario": [
+      "Aggiunta funzione \"Ricorda più tardi\" per le notifiche del calendario"
+    ],
+    "Lista Blocchi": [
+      "Risolto un problema di risposta troppo lenta o non riuscita durante il blocco dei record in batch"
     ],
     "Sicurezza": [
-      "Risolto: Le app clonate sparivano dopo il riavvio"
+      "Aggiunto il supporto della modalità scura per il blocco dello spam",
+      "Risolto: Le app clonate sparivano dopo il riavvio",
+      "Corretto un bug: in Ottimizzazione e accelerazione il numero di app bloccate veniva visualizzato in modo errato"
+    ],
+    "Servizio cloud Xiaomi": [
+      "Aggiunta della pagina dei dettagli utente",
+      "Aggiunto: quando l'utente disattiva Trova dispositivo, viene mostrato un avviso che le carte bancarie MiPay e le carte porta virtuali verranno eliminate",
+      "Nuovo: ricerca dei contenuti dei servizi cloud nelle Impostazioni",
+      "Ottimizzazione: Abbiamo ridisegnato la pagina iniziale di Mi Cloud. Ora è molto meglio!",
+      "Ottimizzazione: Sincronizzazione migliorata su più dispositivi",
+      "Ottimizzazione: scorrimento quando il nome utente è troppo lungo",
+      "Ottimizzazione: migliorata la tempestività e l'efficienza della sincronizzazione",
+      "Ottimizzata la visualizzazione dei caratteri grandi nella pagina di gestione spazio",
+      "Risolto il problema per cui il pulsante \"Sincronizza ora\" non rispondeva",
+      "Correzione: all’uscita dall’account Xiaomi veniva mostrato che i servizi cloud si erano fermati",
+      "Risolto il problema di visualizzazione errata della pagina quando si cambia account",
+      "Risolto il problema di visualizzazione del testo lungo nell'interfaccia",
+      "Risolto il problema di visualizzazione anomala del pulsante di sincronizzazione",
+      "Risolto un problema per cui lo stato di attivazione di «Trova dispositivo» veniva visualizzato in modo errato accedendovi dalla ricerca nelle Impostazioni.",
+      "Risolto il problema di visualizzazione dello stato di sincronizzazione",
+      "Risolto: lo stato di «Trova dispositivo» non veniva visualizzato correttamente quando si accedeva tramite la ricerca nelle Impostazioni."
+    ],
+    "Altre ottimizzazioni e modifiche": [
+      "Ottimizzato l'effetto di scomparsa dell'animazione di ricarica",
+      "Ottimizzato il problema per cui l'animazione di ricarica di sistema non veniva visualizzata sulle schermate di blocco di terze parti",
+      "Risolto il problema di visualizzazione anomala della nuova animazione di ricarica in modalità orizzontale",
+      "Rimuovi l’annuncio vocale superfluo “Ricarica rapida” quando lo schermo viene spento in modalità Talkback"
+    ],
+    "Schermata di blocco, barra di stato, area delle notifiche": [
+      "Nuovo: Introdotto l'orologio personalizzabile per la schermata di blocco (Impostazioni > Schermata di blocco e password > Impostazioni avanzate). Il nuovo orologio della schermata di blocco non funziona con temi di terze parti.",
+      "Novità: scorciatoia per cambiare la SIM dati",
+      "Risolto: Si verificavano degli errori dopo lo sblocco del dispositivo in modalità orizzontale",
+      "Risolto: Lo schermo non sempre si accendeva per mostrare le notifiche",
+      "Risolto: Problemi di sovrapposizione nelle impostazioni di Doppio orologio",
+      "Risolto: I collegamenti delle impronte digitali non funzionavano in modalità orizzontale",
+      "Risolto: Lo sblocco con impronta digitale non sempre funzionava a schermo spento",
+      "Risolto: in alcune situazioni il sensore di impronte digitali sotto il display non funzionava a schermo spento",
+      "Corretto: il display Always-on non si spegneva all'orario programmato"
     ]
   },
   "logs_es": {
+    "Sistema": [
+      "Nuevo: Editar, compartir y personalizar tus capturas de pantalla ahora es mucho más fácil",
+      "Nuevo: Una opción para suavizar las curvas del notch en los dispositivos todo pantalla",
+      "Optimización: Las notificaciones con sonido innecesarias han sido eliminadas del Modo no molestar",
+      "Se corrigió el problema por el que el aviso de captura de pantalla larga aparecía varias veces"
+    ],
     "Teléfono": [
       "Reparado: Terminar las llamadas llevó más tiempo de lo esperado"
     ],
-    "Ajustes": [
+    "Bloqueo de aplicaciones": [
+      "Novedad: compatibilidad con desbloqueo simultáneo por rostro y huella digital",
+      "Corregido error de visualización del campo de contraseña del bloqueo de aplicaciones en algunos dispositivos"
+    ],
+    "Reloj": [
+      "Añadida la función para elegir libremente entre fondo negro o blanco en los ajustes del reloj",
+      "Reparar: El botón del temporizador comenzó a parpadear después de ser pulsado",
+      "Reparar: Cierre forzoso del Reloj en algunas fechas específicas",
+      "Aviso: después de esta actualización, el color de fondo del reloj es blanco."
+    ],
+    "Configuración": [
       "Nuevo: Respuestas rápidas para aplicaciones de mensajería",
       "Optimización: Los valores de redes Wi-Fi son ordenados"
     ],
-    "Reloj": [
-      "Reparar: El botón del temporizador comenzó a parpadear después de ser pulsado",
-      "Reparar: Cierre forzoso del Reloj en algunas fechas específicas"
+    "Recientes": [
+      "Novedad: ahora puedes difuminar las vistas previas de algunas apps en las tareas recientes"
+    ],
+    "Calendario": [
+      "Añadida la función \"Recordar más tarde\" para las notificaciones del calendario"
+    ],
+    "Lista de bloqueo": [
+      "Se corrigió el problema de respuesta demasiado lenta o fallida al bloquear registros por lotes"
     ],
     "Seguridad": [
-      "Reparado: Las aplicaciones duales desaparecían después de reiniciar el teléfono"
+      "Añadido el soporte del modo oscuro para el bloqueo de spam",
+      "Reparado: Las aplicaciones duales desaparecían después de reiniciar el teléfono",
+      "Se corrigió el error que mostraba incorrectamente el número de aplicaciones bloqueadas en Optimización y aceleración"
+    ],
+    "Servicio en la nube de Xiaomi": [
+      "Se añadió la página de detalles del usuario",
+      "Añadido: al desactivar Buscar dispositivo, se avisa de que se eliminarán las tarjetas bancarias de MiPay y las tarjetas de puerta virtuales",
+      "Nuevo: búsqueda de contenido de servicios en la nube en Ajustes",
+      "Optimización: Hemos rediseñado la página de inicio de Mi Nube. ¡Ahora tiene mucho mejor aspecto!",
+      "Optimización: Sincronización entre múltiples dispositivos mejorada",
+      "Optimización: desplazamiento cuando el nombre de usuario es demasiado largo",
+      "Optimización: mejorada la puntualidad y la eficiencia de la sincronización",
+      "Optimizada la visualización de fuente grande en la página de gestión de espacio",
+      "Se corrigió el problema por el que el botón \"Sincronizar ahora\" no respondía",
+      "Corrección: al cerrar sesión en la cuenta Xiaomi se mostraba que los servicios en la nube se detuvieron",
+      "Corregida la visualización incorrecta de la página al cambiar de cuenta",
+      "Corregido el problema de visualización de texto largo en la interfaz",
+      "Se corrigió el problema de visualización anómala del botón de sincronización",
+      "Se corrigió el problema por el que el estado de activación de «Buscar dispositivo» se mostraba incorrectamente al acceder desde la búsqueda de Ajustes.",
+      "Corregido el problema de visualización del estado de sincronización",
+      "Corrección: el estado de «Buscar dispositivo» no se mostraba correctamente al acceder mediante la búsqueda en Ajustes."
+    ],
+    "Otras optimizaciones y ajustes": [
+      "Optimizado el efecto de desaparición de la animación de carga",
+      "Optimizado el problema por el que la animación de carga del sistema no se mostraba en las pantallas de bloqueo de terceros",
+      "Se corrige el problema de visualización anómala de la nueva animación de carga en modo horizontal",
+      "Eliminar el aviso de voz innecesario “Carga rápida” al apagar la pantalla en modo Talkback"
+    ],
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Nuevo: Introducción de un reloj personalizable en la Pantalla de bloqueo (Ajustes > Pantalla de bloqueo y contraseña > Ajustes avanzados). El nuevo reloj de la Pantalla de bloqueo no funciona con temas de terceros.",
+      "Novedad: acceso directo para cambiar la SIM de datos",
+      "Reparado: Ocurrían errores después de desbloquear el dispositivo en el modo paisaje",
+      "Reparado: La pantalla no siempre se encendía con las notificaciones",
+      "Reparado: Problemas de superposición en los ajustes del Reloj dual",
+      "Reparado: Los accesos directos de la huella dactilar no funcionaban en orientación apaisada",
+      "Reparado: El desbloqueo con huella dactilar no siempre funcionaba con la pantalla apagada",
+      "Corrección: en algunos casos, el sensor de huellas bajo la pantalla no funcionaba con la pantalla apagada",
+      "Corregido: la pantalla Always-on no se apagaba a la hora programada"
     ]
   },
   "logs_pt": {
+    "Sistema": [
+      "Novo: Editar, compartilhar e personalizar suas capturas de tela está muito mais fácil agora",
+      "Novo: Opção para suavizar as curvas de entalhes em dispositivos com tela infinita",
+      "Otimização: Sons de notificação desnecessários removidos do modo Não perturbe",
+      "Corrigido o problema em que a dica de captura de tela longa aparecia várias vezes"
+    ],
     "Telefone": [
       "Correção: Encerrar chamadas levava mais tempo que o esperado",
       "Correção: encerrar chamadas demorava mais do que o esperado"
+    ],
+    "Bloqueio de apps": [
+      "Novo: suporte para desbloqueio simultâneo com rosto e impressão digital",
+      "Corrigido erro de exibição do campo de senha do bloqueio de aplicativos em alguns dispositivos"
+    ],
+    "Relógio": [
+      "Adicionada a possibilidade de escolher livremente entre fundo preto ou branco nas configurações do relógio",
+      "Correção: o botão da página do temporizador pisca ao ser tocado",
+      "Correção: o Relógio fechava à força em datas específicas",
+      "Aviso: após esta atualização, a cor de fundo do relógio é branca."
     ],
     "Configurações": [
       "Novo: Respostas rápidas para apps de mensagens",
       "Otimização Ordenação de redes Wi-Fi salvas",
       "Otimização: lista WLAN ajustada para classificar por intensidade do sinal"
     ],
-    "Sistema": [
-      "Novo: Opção para suavizar as curvas de entalhes em dispositivos com tela infinita",
-      "Otimização: Sons de notificação desnecessários removidos do modo Não perturbe"
+    "Tarefas recentes": [
+      "Novo: agora é possível desfocar as prévias de alguns apps nas tarefas recentes"
     ],
-    "Relógio": [
-      "Correção: o botão da página do temporizador pisca ao ser tocado",
-      "Correção: o Relógio fechava à força em datas específicas"
+    "Agenda": [
+      "Adicionada a função \"Lembrar mais tarde\" para notificações do calendário"
+    ],
+    "Lista de bloqueio": [
+      "Corrigido o problema de resposta muito lenta ou falha ao bloquear registros em lote"
     ],
     "Segurança": [
-      "Correção: Os apps duplos desapareciam após reiniciar"
+      "Adicionado suporte ao modo escuro para o bloqueio de spam",
+      "Correção: Os apps duplos desapareciam após reiniciar",
+      "Corrigido o bug em que o número de aplicativos bloqueados era exibido incorretamente em Otimização e aceleração"
+    ],
+    "Serviço de nuvem Xiaomi": [
+      "Adicionada a página de detalhes do usuário",
+      "Adicionado: ao desativar Localizar dispositivo, é exibido um aviso de que os cartões bancários MiPay e os cartões de porta virtuais serão excluídos",
+      "Novo: pesquisa de conteúdo de serviços na nuvem nas Configurações",
+      "Otimização: Nós redesenhamos a página inicial da Mi Cloud. Ela está muito melhor agora!",
+      "Otimização Sincronização otimizada entre vários dispositivos",
+      "Otimização: rolagem quando o nome de usuário é muito longo",
+      "Otimização: melhorada a pontualidade e a eficiência da sincronização",
+      "Otimizada a exibição de fonte grande na página de gerenciamento de espaço",
+      "Corrigido o problema em que o botão \"Sincronizar agora\" não respondia",
+      "Correção: ao sair da conta Xiaomi, era exibido que os serviços na nuvem pararam de funcionar",
+      "Corrigida a exibição incorreta da página ao trocar de conta",
+      "Corrigido o problema de exibição de texto longo na interface",
+      "Corrigido o problema de exibição anormal do botão de sincronização",
+      "Corrigido o problema em que o estado de ativação de «Localizar dispositivo» era exibido incorretamente ao acessar pela pesquisa das Configurações.",
+      "Corrigido o problema de exibição do estado de sincronização",
+      "Correção: o estado de «Localizar dispositivo» não era exibido corretamente ao acessar pela pesquisa nas Configurações."
+    ],
+    "Outras otimizações e ajustes": [
+      "Otimizado o efeito de desaparecimento da animação de carregamento",
+      "Otimizado o problema em que a animação de carregamento do sistema não era exibida em telas de bloqueio de terceiros",
+      "Corrigido o problema de exibição anormal da nova animação de carregamento no modo paisagem",
+      "Remover o aviso de voz desnecessário “Carregamento rápido” ao desligar a tela no modo Talkback"
+    ],
+    "Tela de bloqueio, Barra de status e Área de notificações": [
+      "Novo: nos temas do sistema, o relógio da tela de bloqueio suporta três estilos personalizados, que podem ser alterados nas configurações avançadas da tela de bloqueio.",
+      "Novo: atalho para alternar o SIM de dados",
+      "Correção: cintilação anormal ao desbloquear e entrar na interface horizontal",
+      "Correção: a tela às vezes não acendia ao receber chamadas na tela de bloqueio",
+      "Correção: problema de quebra de linha dos números na prévia do Relógio duplo na página de configurações da tela sempre ativa",
+      "Correção: os atalhos de impressão digital não funcionavam no modo paisagem.",
+      "Correção: o desbloqueio por impressão digital às vezes falhava com a tela desligada",
+      "Correção: em alguns casos, o sensor de impressões digitais sob a tela não funcionava com a tela desligada",
+      "Corrigido: a tela Always-on não desligava no horário programado"
     ]
   },
   "logs_tr": {
+    "Sistem": [
+      "Yeni: Ekran görüntülerinizi düzenleme, paylaşma ve özelleştirme artık çok daha kolay",
+      "Yeni: Tam ekran cihazlardaki çentik eğimini düzeltmek için bir seçenek",
+      "Optimizasyon: Rahatsız Etme modu için gereksiz sesli bildirimler kaldırıldı",
+      "Uzun ekran görüntüsü kılavuzunun birden çok kez açılması sorunu düzeltildi"
+    ],
     "Telefon": [
       "Onarım: Aramaları sonlandırmak beklenenden daha uzun sürdü"
+    ],
+    "Uygulama kilidi": [
+      "Yeni: Yüz ve parmak iziyle aynı anda kilit açma desteği",
+      "Bazı cihazlarda uygulama kilidi parola alanının hatalı görüntülenmesi düzeltildi"
+    ],
+    "Saat": [
+      "Saat ayarlarında siyah veya beyaz arka planı serbestçe seçme özelliği eklendi",
+      "Onar: Zamanlayıcı tuşu, dokunulduktan sonra yanmaya başladı",
+      "Onar: Saat, belirli tarihlerde kapanmaya zorlandı",
+      "İpucu: Bu güncellemeden sonra saatin arka plan rengi beyazdır."
     ],
     "Ayarlar": [
       "Yeni: Mesajlaşma uygulamaları için hızlı yanıtlar",
       "Optimizasyon: Wi-Fi ağları için sıralama ilkeleri"
     ],
-    "Saat": [
-      "Onar: Zamanlayıcı tuşu, dokunulduktan sonra yanmaya başladı",
-      "Onar: Saat, belirli tarihlerde kapanmaya zorlandı"
+    "Son kullanılanlar": [
+      "Yeni: Son görevlerde bazı uygulamaların önizlemelerini artık bulanıklaştırabilirsiniz"
+    ],
+    "Takvim": [
+      "Takvim bildirimleri için \"Daha sonra hatırlat\" özelliği eklendi"
+    ],
+    "Engelli listesi": [
+      "Kayıtları toplu engellerken yanıtın çok yavaş olması veya başarısız olması sorunu giderildi"
     ],
     "Güvenlik": [
-      "Onarım: Çift uygulamaların cihazın yeniden başlatılmasından sonraki görüntülenmeme sorunu"
+      "Spam engelleme için karanlık mod desteği eklendi",
+      "Onarım: Çift uygulamaların cihazın yeniden başlatılmasından sonraki görüntülenmeme sorunu",
+      "Optimizasyon ve hızlandırma özelliğinde kilitli uygulama sayısının yanlış gösterilmesi hatası giderildi"
+    ],
+    "Xiaomi Bulut Hizmeti": [
+      "Kullanıcı ayrıntıları sayfası eklendi",
+      "Eklendi: Kullanıcı Cihazımı Bul'u kapattığında MiPay banka kartlarının ve sanal kapı kartlarının silineceği uyarısı gösterilir",
+      "Yeni: Ayarlar'da bulut hizmeti içeriğinde arama",
+      "Optimizasyon: Mi Cloud'un ana sayfasını yeniden tasarladık, artık çok daha iyi görünüyor!",
+      "Optimizasyon: Birkaç cihaz arasında geliştirilmiş senkronizasyon",
+      "Optimizasyon: kullanıcı adı çok uzun olduğunda kaydırma",
+      "Optimizasyon: Senkronizasyon zamanlaması ve verimliliği iyileştirildi",
+      "Alan yönetimi sayfasında büyük yazı tipi gösterimi iyileştirildi",
+      "\"Şimdi senkronize et\" düğmesinin yanıt vermemesi sorunu giderildi",
+      "Düzeltme: Xiaomi hesabından çıkış yaparken bulut hizmetlerinin durduğu bildiriliyordu",
+      "Hesap değiştirirken sayfanın yanlış görüntülenmesi düzeltildi",
+      "Arayüzde uzun metin görüntüleme sorunu giderildi",
+      "Senkronizasyon düğmesinin anormal görüntülenmesi sorunu düzeltildi",
+      "Ayarlar aramasından «Cihazımı Bul»a girildiğinde etkinleştirme durumunun yanlış görünmesi sorunu giderildi.",
+      "Eşitleme durumu görüntüleme sorunu düzeltildi",
+      "Düzeltme: Ayarlar'da arama yoluyla „Cihazı bul” özelliğine girildiğinde durum düzgün görüntülenmiyordu."
+    ],
+    "Diğer optimizasyonlar ve ayarlamalar": [
+      "Şarj animasyonunun kaybolma efekti optimize edildi",
+      "Üçüncü taraf kilit ekranlarında sistem şarj animasyonunun görüntülenememesi sorunu optimize edildi",
+      "Yeni şarj animasyonunun yatay modda anormal görüntülenmesi sorunu düzeltildi",
+      "Talkback modunda ekran kapatıldığında “Hızlı şarj” sesli uyarısını kaldır"
+    ],
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Yeni: Özelleştirilebilir Kilit ekranı saati (Ayarlar > Kilit ekranı & şifre > Gelişmiş ayarlar). Yeni kilit ekranı saati üçüncü parti temaları ile çalışmaz.",
+      "Yeni: veri SIM kartı geçişi için kısayol",
+      "Onarım: Manzara modunda cihaz kilidi açıldıktan sonra hata oluştu",
+      "Onarım: Bazen bildirimler için ekran açılmadı",
+      "Onarım: Çift Saat ayarlarında üst üste binme sorunları",
+      "Onarım: Manzara düzeninde parmak izi kısayolları çalışmadı",
+      "Onarım: Ekran kapalıyken parmak izi ile kilit açma her zaman çalışmadı",
+      "Düzeltme: Bazı durumlarda ekran kapalıyken ekran içi parmak izi okuyucu çalışmıyordu",
+      "Düzeltme: Always-on ekranı zamanlanan saatte kapanmıyordu"
     ]
   },
   "logs_id": {
+    "Sistem": [
+      "Baru: Mengubah, berbagi, dan mengkustomisasi screenshot menjadi lebih mudah sekarang",
+      "Baru: Pilihan untuk memperhalus lekukan notch pada perangkat layar penuh",
+      "Pengoptimalan: Notifikasi suara yang tidak dibutuhkan untuk mode Jangan ganggu dihapus",
+      "Memperbaiki masalah panduan tangkapan layar panjang yang muncul beberapa kali"
+    ],
     "Telepon": [
       "Perbaikan: Mematikan panggilan memakan waktu lebih lama dibanding seharusnya",
       "Perbaikan: Mengakhiri panggilan membutuhkan waktu lebih lama dari yang diharapkan"
+    ],
+    "Kunci aplikasi": [
+      "Baru: Dukungan buka kunci bersamaan dengan wajah dan sidik jari",
+      "Memperbaiki kesalahan tampilan kolom kata sandi kunci aplikasi pada beberapa perangkat"
+    ],
+    "Jam": [
+      "Menambahkan fitur untuk memilih latar belakang hitam atau putih secara bebas di pengaturan Jam",
+      "Perbaikan: tombol di halaman pengatur waktu berkedip saat diketuk",
+      "Perbaikan: Jam mengalami force close pada tanggal tertentu",
+      "Petunjuk: setelah pembaruan ini, warna latar belakang jam adalah putih."
     ],
     "Pengaturan": [
       "Baru: Balasan cepat pada aplikasi pesan",
       "Pengoptimalan Pengurutan daftar Wi-Fi berdasarkan kekuatan sinyal",
       "Optimasi: Daftar WLAN diurutkan berdasarkan kekuatan sinyal"
     ],
-    "Sistem": [
-      "Baru: Pilihan untuk memperhalus lekukan notch pada perangkat layar penuh",
-      "Pengoptimalan: Notifikasi suara yang tidak dibutuhkan untuk mode Jangan ganggu dihapus"
+    "Tugas Terbaru": [
+      "Baru: Sekarang Anda dapat memburamkan pratinjau beberapa aplikasi di Tugas terbaru"
     ],
-    "Jam": [
-      "Perbaikan: tombol di halaman pengatur waktu berkedip saat diketuk",
-      "Perbaikan: Jam mengalami force close pada tanggal tertentu"
+    "Pemblokiran spam": [
+      "Memperbaiki masalah respons terlalu lambat atau gagal saat memblokir rekaman secara massal"
     ],
     "Keamanan": [
-      "Perbaikan: Aplikasi ganda menghilang setelah reboot"
+      "Menambahkan dukungan mode gelap untuk pemblokiran spam",
+      "Perbaikan: Aplikasi ganda menghilang setelah reboot",
+      "Memperbaiki bug jumlah aplikasi terkunci yang ditampilkan keliru di Optimasi & akselerasi"
+    ],
+    "Layanan Cloud Xiaomi": [
+      "Halaman detail pengguna ditambahkan",
+      "Ditambahkan: saat pengguna menonaktifkan Temukan Perangkat, muncul peringatan bahwa kartu bank MiPay dan kartu pintu virtual akan dihapus",
+      "Baru: pencarian konten layanan cloud di Pengaturan",
+      "Pengoptimalan: Halaman awal Mi Cloud didesain ulang. Sekarang semakin terlihat lebih baik!",
+      "Pengoptimalan Sinkronisasi ditingkatkan di beberapa perangkat",
+      "Optimasi: gulir saat nama pengguna terlalu panjang",
+      "Optimasi: meningkatkan ketepatan waktu dan efisiensi sinkronisasi",
+      "Mengoptimalkan tampilan font besar di halaman pengelolaan ruang",
+      "Memperbaiki masalah tombol \"Sinkronkan sekarang\" tidak merespons",
+      "Perbaikan: layanan cloud berhenti berjalan saat keluar dari akun Xiaomi",
+      "Memperbaiki tampilan halaman yang tidak tepat saat mengganti akun",
+      "Memperbaiki masalah tampilan teks panjang di antarmuka",
+      "Memperbaiki masalah tampilan tombol sinkronisasi yang tidak normal",
+      "Memperbaiki masalah status aktif «Temukan Perangkat» yang ditampilkan salah saat masuk melalui pencarian di Pengaturan.",
+      "Memperbaiki masalah tampilan status sinkronisasi",
+      "Perbaikan: status «Temukan perangkat» tidak ditampilkan dengan benar saat fitur diakses melalui pencarian di Pengaturan."
+    ],
+    "Optimisasi dan penyesuaian lainnya": [
+      "Mengoptimalkan efek hilangnya animasi pengisian daya",
+      "Masalah animasi pengisian daya sistem yang tidak muncul di layar kunci pihak ketiga telah dioptimalkan",
+      "Memperbaiki masalah tampilan animasi pengisian daya baru yang tidak normal dalam mode lanskap",
+      "Hapus suara pemberitahuan “Pengisian cepat” yang tidak perlu saat mematikan layar dalam mode Talkback"
+    ],
+    "Layar kunci, bar status, layar notifikasi": [
+      "Baru: Pada tema sistem, jam layar kunci mendukung tiga gaya kustom, dapat diubah di pengaturan lanjutan layar kunci.",
+      "Baru: pintasan untuk mengganti kartu SIM data",
+      "Perbaikan: Kedipan tidak normal saat membuka kunci dan masuk ke antarmuka lanskap",
+      "Perbaikan: Layar terkadang tidak menyala saat ada panggilan masuk di layar kunci",
+      "Perbaikan: Masalah angka terlipat pada pratinjau Jam Ganda di halaman pengaturan Layar Selalu Aktif",
+      "Perbaikan: pintasan sidik jari tidak berfungsi dalam orientasi lanskap.",
+      "Perbaikan: Pembukaan kunci sidik jari terkadang gagal saat layar mati",
+      "Perbaikan: Di beberapa situasi, sensor sidik jari dalam layar tidak berfungsi saat layar mati",
+      "Perbaikan: layar Always-on tidak dapat dimatikan sesuai jadwal"
     ]
   },
   "logs_vi": {
+    "Hệ thống": [
+      "Mới: Trải nghiệm chụp màn hình hoàn toàn mới, đơn giản hóa quy trình chỉnh sửa, chia sẻ và chụp ảnh màn hình dài",
+      "Mới: Công tắc chuyển đổi hình dạng notch giọt nước trong cài đặt toàn màn hình",
+      "Tối ưu hóa: Đã xóa âm báo sau khi tắt chế độ Không làm phiền theo lịch",
+      "Đã khắc phục sự cố hướng dẫn chụp ảnh màn hình dài hiển thị nhiều lần"
+    ],
     "Điện thoại": [
       "Sửa lỗi: Kết thúc cuộc gọi mất nhiều thời gian hơn dự kiến",
       "Đã sửa: Việc kết thúc cuộc gọi mất nhiều thời gian hơn dự kiến"
+    ],
+    "Khóa ứng dụng": [
+      "Mới: Hỗ trợ mở khóa đồng thời bằng khuôn mặt và vân tay",
+      "Sửa lỗi hiển thị trường mật khẩu khóa ứng dụng trên một số thiết bị"
+    ],
+    "Đồng hồ": [
+      "Đã thêm tính năng tự do chọn nền đen hoặc trắng trong cài đặt Đồng hồ",
+      "Sửa lỗi: nút trên trang hẹn giờ nhấp nháy khi được nhấn",
+      "Sửa lỗi: Đồng hồ bị buộc dừng vào một số ngày cụ thể",
+      "Lưu ý: sau bản cập nhật này, màu nền của đồng hồ là màu trắng."
     ],
     "Cài đặt": [
       "New: Quick replies for messaging apps",
       "Tối ưu hóa chiến lược sắp xếp danh sách WiFi, sắp xếp theo cường độ tín hiệu",
       "Tối ưu hóa: Danh sách WLAN được sắp xếp theo cường độ tín hiệu"
     ],
-    "Hệ thống": [
-      "Mới: Công tắc chuyển đổi hình dạng notch giọt nước trong cài đặt toàn màn hình",
-      "Tối ưu hóa: Đã xóa âm báo sau khi tắt chế độ Không làm phiền theo lịch"
+    "Tác vụ gần đây": [
+      "Mới: Bạn có thể làm mờ bản xem trước của một số ứng dụng trong Tác vụ gần đây"
     ],
-    "Đồng hồ": [
-      "Sửa lỗi: nút trên trang hẹn giờ nhấp nháy khi được nhấn",
-      "Sửa lỗi: Đồng hồ bị buộc dừng vào một số ngày cụ thể"
+    "Lịch": [
+      "Đã thêm tính năng \"Nhắc lại sau\" cho thông báo lịch"
     ],
-    "Bảo mật": [
-      "Đã sửa: Ứng dụng kép biến mất sau khi khởi động lại"
+    "Chặn spam": [
+      "Đã khắc phục sự cố phản hồi quá chậm hoặc thất bại khi chặn hàng loạt bản ghi"
+    ],
+    "Trung tâm An ninh": [
+      "Thêm hỗ trợ chế độ tối cho chặn spam",
+      "Đã sửa: Ứng dụng kép biến mất sau khi khởi động lại",
+      "Đã sửa lỗi hiển thị sai số lượng ứng dụng đã khóa trong Tối ưu & tăng tốc"
+    ],
+    "Dịch vụ đám mây Xiaomi": [
+      "Đã thêm trang chi tiết người dùng",
+      "Đã thêm: khi người dùng tắt Tìm thiết bị, hiển thị cảnh báo thẻ ngân hàng MiPay và thẻ cửa ảo sẽ bị xóa",
+      "Mới: tìm kiếm nội dung dịch vụ đám mây trong Cài đặt",
+      "Tối ưu hóa: Trang chủ dịch vụ đám mây được thiết kế lại, dung lượng khả dụng hiển thị trực quan hơn.",
+      "Tối ưu hóa: Cải thiện đồng bộ hóa giữa nhiều thiết bị",
+      "Tối ưu: cuộn khi tên người dùng quá dài",
+      "Tối ưu hóa: cải thiện tính kịp thời và hiệu quả đồng bộ hóa",
+      "Tối ưu hiển thị phông chữ lớn trên trang quản lý dung lượng",
+      "Đã sửa lỗi nút \"Đồng bộ ngay\" không phản hồi",
+      "Sửa lỗi: dịch vụ đám mây ngừng hoạt động khi đăng xuất khỏi tài khoản Xiaomi",
+      "Đã sửa lỗi hiển thị trang không chính xác khi chuyển tài khoản",
+      "Đã khắc phục sự cố hiển thị văn bản dài trong giao diện",
+      "Đã khắc phục sự cố nút đồng bộ hiển thị bất thường",
+      "Đã sửa lỗi trạng thái bật «Tìm thiết bị» hiển thị sai khi truy cập qua tìm kiếm trong Cài đặt.",
+      "Đã sửa lỗi hiển thị trạng thái đồng bộ",
+      "Sửa lỗi: trạng thái «Tìm thiết bị» không hiển thị chính xác khi truy cập qua tìm kiếm trong Cài đặt."
+    ],
+    "Các tối ưu hóa và điều chỉnh khác": [
+      "Tối ưu hiệu ứng biến mất của hoạt ảnh sạc",
+      "Tối ưu hóa vấn đề không hiển thị hoạt ảnh sạc hệ thống trên màn hình khóa của bên thứ ba",
+      "Khắc phục sự cố hiển thị bất thường của hoạt ảnh sạc mới ở chế độ ngang",
+      "Xóa thông báo bằng giọng nói “Sạc nhanh” không cần thiết khi tắt màn hình ở chế độ Talkback"
+    ],
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Mới: Trong chủ đề hệ thống, đồng hồ màn hình khóa hỗ trợ ba kiểu tùy chỉnh, có thể thay đổi trong cài đặt nâng cao của màn hình khóa.",
+      "Mới: lối tắt chuyển đổi SIM dữ liệu",
+      "Sửa: nhấp nháy bất thường khi mở khóa và vào giao diện ngang",
+      "Sửa lỗi: Màn hình đôi khi không sáng khi có cuộc gọi đến trên màn hình khóa",
+      "Sửa lỗi: Vấn đề số bị xuống dòng trong bản xem trước Đồng hồ kép tại trang cài đặt Màn hình luôn bật",
+      "Sửa lỗi: phím tắt vân tay không hoạt động ở chế độ ngang.",
+      "Sửa lỗi: Mở khóa bằng vân tay đôi khi không thành công khi tắt màn hình",
+      "Sửa lỗi: Trong một số trường hợp, cảm biến vân tay trong màn hình không hoạt động khi màn hình tắt",
+      "Đã sửa: màn hình Always-on không thể tắt theo lịch"
     ]
   },
   "logs_th": {
+    "ระบบ": [
+      "ใหม่: ประสบการณ์สกรีนช็อตใหม่ ช่วยให้การแก้ไข แชร์ และการจับภาพหน้าจอยาวง่ายขึ้น",
+      "ใหม่: สวิตช์สลับรูปทรงรอยบากแบบหยดน้ำในการตั้งค่าจอเต็มรูปแบบ",
+      "การปรับปรุง: ลบการแจ้งเตือนเสียงหลังปิดโหมดห้ามรบกวนตามกำหนดเวลา",
+      "แก้ไขปัญหาคู่มือการจับภาพหน้าจอยาวแสดงขึ้นหลายครั้ง"
+    ],
     "โทรศัพท์": [
       "แก้ไข: การวางสายใช้เวลานานกว่าที่ควร",
       "แก้ไข: การวางสายใช้เวลานานกว่าที่คาดไว้"
+    ],
+    "ล็อกแอป": [
+      "ใหม่: รองรับการปลดล็อกพร้อมกันด้วยใบหน้าและลายนิ้วมือ",
+      "แก้ไขข้อผิดพลาดการแสดงช่องรหัสผ่านล็อกแอปบนอุปกรณ์บางรุ่น"
+    ],
+    "นาฬิกา": [
+      "เพิ่มฟีเจอร์ให้เลือกพื้นหลังสีดำหรือสีขาวได้อย่างอิสระในการตั้งค่านาฬิกา",
+      "แก้ไขปัญหาปุ่มในหน้าตัวจับเวลากระพริบเมื่อแตะ",
+      "แก้ไขปัญหานาฬิกาหยุดทำงานในวันที่เฉพาะเจาะจง",
+      "คำแนะนำ: หลังการอัปเดตนี้ สีพื้นหลังของนาฬิกาเป็นสีขาว"
     ],
     "การตั้งค่า": [
       "New: Quick replies for messaging apps",
       "ปรับปรุงกลยุทธ์การเรียงลำดับรายการ WiFi โดยเรียงตามความแรงสัญญาณ",
       "การปรับให้เหมาะสม: ปรับรายการ WLAN ให้เรียงตามความแรงของสัญญาณ"
     ],
-    "ระบบ": [
-      "ใหม่: สวิตช์สลับรูปทรงรอยบากแบบหยดน้ำในการตั้งค่าจอเต็มรูปแบบ",
-      "การปรับปรุง: ลบการแจ้งเตือนเสียงหลังปิดโหมดห้ามรบกวนตามกำหนดเวลา"
+    "งานล่าสุด": [
+      "ใหม่: คุณสามารถเบลอตัวอย่างแอปบางแอปในงานล่าสุดได้แล้ว"
     ],
-    "นาฬิกา": [
-      "แก้ไขปัญหาปุ่มในหน้าตัวจับเวลากระพริบเมื่อแตะ",
-      "แก้ไขปัญหานาฬิกาหยุดทำงานในวันที่เฉพาะเจาะจง"
+    "ปฏิทิน": [
+      "เพิ่มฟีเจอร์ \"เตือนอีกครั้งภายหลัง\" สำหรับการแจ้งเตือนปฏิทิน"
+    ],
+    "บล็อกสแปม": [
+      "แก้ไขปัญหาการตอบสนองช้าเกินไปหรือล้มเหลวเมื่อบล็อกระเบียนเป็นชุด"
     ],
     "ความปลอดภัย": [
-      "แก้ไข: แอปคู่หายไปหลังรีสตาร์ท"
+      "เพิ่มการรองรับโหมดมืดสำหรับการบล็อกสแปม",
+      "แก้ไข: แอปคู่หายไปหลังรีสตาร์ท",
+      "แก้ไขข้อบกพร่องที่แสดงจำนวนแอปที่ล็อกไว้ไม่ถูกต้องในฟีเจอร์เพิ่มประสิทธิภาพและเร่งความเร็ว"
+    ],
+    "บริการคลาวด์ Xiaomi": [
+      "เพิ่มหน้ารายละเอียดผู้ใช้",
+      "เพิ่ม: เมื่อผู้ใช้ปิดค้นหาอุปกรณ์ จะแจ้งเตือนว่าบัตรธนาคาร MiPay และบัตรประตูเสมือนจะถูกลบ",
+      "ใหม่: ค้นหาเนื้อหาบริการคลาวด์ในการตั้งค่า",
+      "ปรับปรุง: ออกแบบหน้าหลักของบริการคลาวด์ใหม่ ทำให้แสดงพื้นที่ว่างได้ชัดเจนขึ้น",
+      "การปรับให้เหมาะสม: ปรับปรุงการซิงค์ระหว่างอุปกรณ์หลายเครื่อง",
+      "ปรับให้เหมาะสม: เลื่อนเมื่อชื่อผู้ใช้ยาวเกินไป",
+      "การเพิ่มประสิทธิภาพ: ปรับปรุงความทันเวลาและประสิทธิภาพการซิงค์",
+      "ปรับปรุงการแสดงผลฟอนต์ขนาดใหญ่ในหน้าจัดการพื้นที่",
+      "แก้ไขปัญหาที่ปุ่ม \"ซิงค์ทันที\" ไม่ตอบสนอง",
+      "แก้ไขปัญหาที่แสดงว่าบริการคลาวด์หยุดทำงานเมื่อออกจากบัญชี Xiaomi",
+      "แก้ไขการแสดงหน้าผิดพลาดเมื่อสลับบัญชี",
+      "แก้ไขปัญหาการแสดงข้อความยาวในอินเทอร์เฟซ",
+      "แก้ไขปัญหาปุ่มซิงค์แสดงผลผิดปกติ",
+      "แก้ไขปัญหาสถานะการเปิดใช้งาน «ค้นหาอุปกรณ์» แสดงไม่ถูกต้องเมื่อเข้าผ่านการค้นหาในการตั้งค่า",
+      "แก้ไขปัญหาการแสดงสถานะการซิงค์",
+      "แก้ไข: สถานะของ «ค้นหาอุปกรณ์» แสดงไม่ถูกต้องเมื่อเข้าถึงผ่านการค้นหาในการตั้งค่า"
+    ],
+    "การปรับปรุงและปรับแต่งอื่นๆ": [
+      "ปรับปรุงเอฟเฟกต์การหายไปของแอนิเมชันการชาร์จ",
+      "ปรับปรุงปัญหาไม่แสดงแอนิเมชันการชาร์จของระบบบนหน้าจอล็อกของบุคคลที่สาม",
+      "แก้ไขปัญหาการแสดงผลผิดปกติของแอนิเมชันการชาร์จใหม่ในโหมดแนวนอน",
+      "ลบเสียงแจ้งเตือน “ชาร์จเร็ว” ที่ไม่จำเป็นเมื่อปิดหน้าจอในโหมด Talkback"
+    ],
+    "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
+      "ใหม่: ภายใต้ธีมระบบ นาฬิกาหน้าจอล็อกรองรับรูปแบบกำหนดเอง 3 แบบ สามารถแก้ไขได้ในการตั้งค่าขั้นสูงของหน้าจอล็อก",
+      "ใหม่: ทางลัดสำหรับสลับซิมการ์ดข้อมูล",
+      "แก้ไข: อาการกะพริบผิดปกติเมื่อปลดล็อกและเข้าสู่หน้าจอแนวนอน",
+      "แก้ไขปัญหาหน้าจอบางครั้งไม่ติดเมื่อมีสายเข้าในหน้าจอล็อก",
+      "แก้ไข: ปัญหาตัวเลขตัดขึ้นบรรทัดใหม่ในตัวอย่างนาฬิกาคู่บนหน้าการตั้งค่าจอแสดงผลตลอดเวลา",
+      "แก้ไข: ทางลัดลายนิ้วมือไม่ทำงานในโหมดแนวนอน",
+      "แก้ไข: การปลดล็อกด้วยลายนิ้วมือบางครั้งล้มเหลวเมื่อหน้าจอดับ",
+      "แก้ไข: ในบางสถานการณ์ เซ็นเซอร์ลายนิ้วมือในหน้าจอไม่ทำงานเมื่อปิดหน้าจอ",
+      "แก้ไข: หน้าจอ Always-on ไม่สามารถปิดตามกำหนดเวลาได้"
     ]
   },
   "logs_ar": {
+    "النظام": [
+      "جديد أصبح تعديل ومشاركة وتخصيص لقطات الشاشة أسهل بكثير الآن",
+      "جديد: مفتاح لتبديل شكل الشق على شكل قطرة في إعدادات الشاشة الكاملة",
+      "محسن إزالة إشعارات الصوت غير ضرورية لوضع عدم الإزعاج",
+      "إصلاح مشكلة ظهور إرشاد لقطة الشاشة الطويلة عدة مرات"
+    ],
     "الهاتف": [
       "إصلاح: استغرق إنهاء المكالمات وقتًا أطول من المتوقع"
+    ],
+    "قفل التطبيقات": [
+      "جديد: دعم فتح القفل في الوقت نفسه بالوجه وبصمة الإصبع",
+      "إصلاح خطأ عرض حقل كلمة مرور قفل التطبيقات على بعض الأجهزة"
+    ],
+    "الساعة": [
+      "تمت إضافة ميزة اختيار الخلفية السوداء أو البيضاء بحرية في إعدادات الساعة",
+      "إصلاح مشكلة وميض زر صفحة المؤقت عند النقر عليه",
+      "إصلاح مشكلة تعطل تطبيق الساعة في تواريخ محددة",
+      "ملاحظة: بعد هذا التحديث، يصبح لون خلفية الساعة أبيض."
     ],
     "الإعدادات": [
       "جديد الردود السريعة على تطبيقات المراسلة",
       "تحسين استراتيجية ترتيب قائمة WiFi، للترتيب حسب قوة الإشارة",
       "تحسين: تعديل قائمة WLAN لتُرتب حسب قوة الإشارة"
     ],
-    "النظام": [
-      "جديد: مفتاح لتبديل شكل الشق على شكل قطرة في إعدادات الشاشة الكاملة",
-      "محسن إزالة إشعارات الصوت غير ضرورية لوضع عدم الإزعاج"
+    "المهام الأخيرة": [
+      "جديد: يمكنك الآن تمويه معاينات بعض التطبيقات في المهام الأخيرة"
     ],
-    "الساعة": [
-      "إصلاح مشكلة وميض زر صفحة المؤقت عند النقر عليه",
-      "إصلاح مشكلة تعطل تطبيق الساعة في تواريخ محددة"
+    "التقويم": [
+      "تمت إضافة ميزة \"التذكير لاحقًا\" لإشعارات التقويم"
+    ],
+    "حظر المضايقات": [
+      "تم إصلاح مشكلة بطء الاستجابة أو فشلها عند حظر السجلات دفعة واحدة"
     ],
     "الأمان": [
-      "إصلاح: اختفت التطبيقات المزدوجة بعد إعادة التشغيل"
+      "إضافة دعم الوضع الداكن لحظر الرسائل المزعجة",
+      "إصلاح: اختفت التطبيقات المزدوجة بعد إعادة التشغيل",
+      "إصلاح خلل عرض عدد التطبيقات المقفلة بشكل خاطئ في ميزة التحسين والتسريع"
+    ],
+    "خدمة Xiaomi السحابية": [
+      "تمت إضافة صفحة تفاصيل المستخدم",
+      "إضافة: عند إيقاف المستخدم \"العثور على الجهاز\"، تظهر رسالة تفيد بحذف بطاقات MiPay البنكية وبطاقات الأبواب الافتراضية",
+      "جديد: البحث في محتوى خدمات السحابة في الإعدادات",
+      "تحسين: إعادة تصميم الصفحة الرئيسية لخدمة السحابة، وعرض المساحة المتاحة بشكل أكثر وضوحًا",
+      "التحسين: تحسين المزامنة بين أجهزة متعددة",
+      "تحسين: التمرير عندما يكون اسم المستخدم طويلاً جدًا",
+      "التحسين: تحسين توقيت وكفاءة المزامنة",
+      "تحسين عرض الخط الكبير في صفحة إدارة المساحة",
+      "تم إصلاح مشكلة عدم استجابة زر \"المزامنة الآن\"",
+      "إصلاح: توقف خدمات السحابة عن العمل عند تسجيل الخروج من حساب Xiaomi",
+      "إصلاح عرض الصفحة بشكل غير صحيح عند تبديل الحساب",
+      "تم إصلاح مشكلة عرض النص الطويل في الواجهة",
+      "إصلاح مشكلة عرض زر المزامنة بشكل غير طبيعي",
+      "تم إصلاح مشكلة عرض حالة تفعيل «العثور على الجهاز» بشكل خاطئ عند الدخول إليه عبر البحث في الإعدادات.",
+      "إصلاح مشكلة عرض حالة المزامنة",
+      "إصلاح: لم تكن حالة العثور على الجهاز تُعرض بشكل صحيح عند الوصول إليها عبر البحث في الإعدادات."
+    ],
+    "تحسينات وتعديلات أخرى": [
+      "تحسين تأثير اختفاء حركة الشحن",
+      "تم تحسين مشكلة عدم إمكانية عرض رسوم متحركة شحن النظام على شاشات القفل التابعة لجهات خارجية",
+      "إصلاح مشكلة عرض رسوم متحركة الشحن الجديدة بشكل غير طبيعي في الوضع الأفقي",
+      "إزالة التنبيه الصوتي الزائد “شحن سريع” عند إيقاف الشاشة في وضع Talkback"
+    ],
+    "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
+      "جديد: ضمن سمات النظام، تدعم ساعة شاشة القفل ثلاثة أنماط مخصصة، ويمكن تعديلها في الإعدادات المتقدمة لشاشة القفل.",
+      "جديد: اختصار لتبديل بطاقة SIM للبيانات",
+      "إصلاح مشكلة الوميض غير الطبيعي عند فتح القفل والدخول إلى واجهة الوضع الأفقي",
+      "إصلاح: تعذّر إضاءة الشاشة أحيانًا عند ورود مكالمة على شاشة القفل",
+      "إصلاح التفاف الأرقام في معاينة الساعة المزدوجة بصفحة إعدادات شاشة العرض الدائم",
+      "إصلاح مشكلة عدم عمل اختصارات البصمة بشكل صحيح في الوضع الأفقي",
+      "إصلاح: فشل فتح القفل بالبصمة أحيانًا عند إطفاء الشاشة",
+      "إصلاح: في بعض الحالات، لم يعمل مستشعر البصمة الموجود أسفل الشاشة عند إيقاف تشغيل الشاشة",
+      "إصلاح: تعذّر إيقاف شاشة Always-on في الوقت المحدد"
     ]
   },
   "logs_in": {
+    "सिस्टम": [
+      "नया: स्क्रीनशॉट का नया अनुभव, संपादन, साझा करना और लंबे स्क्रीनशॉट की प्रक्रिया को आसान बनाता है",
+      "नया: फुल स्क्रीन सेटिंग्स में वॉटरड्रॉप नॉच आकार बदलने का टॉगल",
+      "अनुकूलन: शेड्यूल किए गए डू नॉट डिस्टर्ब बंद होने के बाद की ध्वनि सूचना हटाई गई",
+      "लंबे स्क्रीनशॉट के गाइड के कई बार दिखने की समस्या ठीक की गई"
+    ],
     "फ़ोन": [
       "ठीक किया गया: कॉल समाप्त करने में अपेक्षा से अधिक समय लगता था",
       "ठीक किया गया: कॉल समाप्त करने में अपेक्षा से अधिक समय लगा"
+    ],
+    "ऐप लॉक": [
+      "नया: चेहरे और फ़िंगरप्रिंट से एक साथ अनलॉक करने का समर्थन",
+      "कुछ डिवाइस पर ऐप लॉक पासवर्ड फ़ील्ड के प्रदर्शन की त्रुटि ठीक की गई"
+    ],
+    "घड़ी": [
+      "घड़ी सेटिंग्स में काले या सफेद बैकग्राउंड को स्वतंत्र रूप से चुनने की सुविधा जोड़ी गई",
+      "टाइमर पेज पर बटन टैप करने पर झिलमिलाने की समस्या ठीक की गई",
+      "कुछ खास तारीखों पर घड़ी के क्रैश होने की समस्या ठीक की गई",
+      "संकेत: इस अपडेट के बाद घड़ी का पृष्ठभूमि रंग सफ़ेद है।"
     ],
     "सेटिंग्स": [
       "New: Quick replies for messaging apps",
       "WiFi सूची की क्रमबद्धता नीति का अनुकूलन, सिग्नल शक्ति के अनुसार क्रमबद्ध करें",
       "अनुकूलन: WLAN सूची को सिग्नल स्ट्रेंथ के अनुसार क्रमबद्ध किया गया"
     ],
-    "सिस्टम": [
-      "नया: फुल स्क्रीन सेटिंग्स में वॉटरड्रॉप नॉच आकार बदलने का टॉगल",
-      "अनुकूलन: शेड्यूल किए गए डू नॉट डिस्टर्ब बंद होने के बाद की ध्वनि सूचना हटाई गई"
+    "हाल के कार्य": [
+      "नया: अब आप हाल के कार्यों में कुछ ऐप्स के पूर्वावलोकन को धुंधला कर सकते हैं"
     ],
-    "घड़ी": [
-      "टाइमर पेज पर बटन टैप करने पर झिलमिलाने की समस्या ठीक की गई",
-      "कुछ खास तारीखों पर घड़ी के क्रैश होने की समस्या ठीक की गई"
+    "कैलेंडर": [
+      "कैलेंडर सूचनाओं के लिए \"बाद में याद दिलाएं\" सुविधा जोड़ी गई"
+    ],
+    "स्पैम ब्लॉक": [
+      "रिकॉर्ड को बैच में ब्लॉक करते समय प्रतिक्रिया बहुत धीमी होने या विफल होने की समस्या ठीक की गई"
     ],
     "सुरक्षा": [
-      "ठीक किया गया: रीस्टार्ट के बाद डुअल ऐप्स गायब हो जाते थे"
+      "स्पैम ब्लॉकिंग के लिए डार्क मोड सपोर्ट जोड़ा गया",
+      "ठीक किया गया: रीस्टार्ट के बाद डुअल ऐप्स गायब हो जाते थे",
+      "अनुकूलन और त्वरण में लॉक किए गए ऐप्स की संख्या गलत दिखाने वाला बग ठीक किया गया"
+    ],
+    "Xiaomi क्लाउड सेवा": [
+      "उपयोगकर्ता विवरण पृष्ठ जोड़ा गया",
+      "जोड़ा गया: जब उपयोगकर्ता डिवाइस खोजें बंद करता है, तो MiPay बैंक कार्ड और वर्चुअल डोर कार्ड हटाए जाने का संकेत दिया जाता है",
+      "नया: सेटिंग्स में क्लाउड सेवा सामग्री खोजें",
+      "अनुकूलन: क्लाउड सेवा के होमपेज को फिर से डिज़ाइन किया गया है, उपलब्ध स्थान अब और स्पष्ट रूप से दिखता है।",
+      "अनुकूलन: कई उपकरणों के बीच सिंक में सुधार",
+      "अनुकूलन: उपयोगकर्ता नाम बहुत लंबा होने पर स्क्रॉल प्रदर्शन",
+      "अनुकूलन: सिंक समयबद्धता और दक्षता में सुधार",
+      "स्थान प्रबंधन पृष्ठ पर बड़े फ़ॉन्ट प्रदर्शन को अनुकूलित किया गया",
+      "\"अभी सिंक करें\" बटन के प्रतिक्रिया न देने की समस्या ठीक की गई",
+      "सुधार: Xiaomi खाते से साइन आउट करते समय क्लाउड सेवाएँ बंद होने का संदेश दिखना",
+      "खाता बदलते समय पेज का गलत तरीके से दिखना ठीक किया गया",
+      "इंटरफ़ेस में लंबे टेक्स्ट के प्रदर्शन की समस्या को ठीक किया गया",
+      "सिंक बटन के असामान्य प्रदर्शन की समस्या ठीक की गई",
+      "सेटिंग्स खोज से «डिवाइस खोजें» में प्रवेश करते समय «डिवाइस खोजें» की सक्षम स्थिति गलत दिखने की समस्या ठीक की गई।",
+      "सिंक स्थिति प्रदर्शन समस्या ठीक की गई",
+      "सुधार: सेटिंग्स में खोज के ज़रिए ‘डिवाइस खोजें’ पर जाने पर स्थिति सही ढंग से नहीं दिखाई दे रही थी।"
+    ],
+    "अन्य अनुकूलन (Optimizations) एवं समायोजन (Adjustments)": [
+      "चार्जिंग एनिमेशन के गायब होने के प्रभाव को अनुकूलित किया गया",
+      "तृतीय-पक्ष लॉक स्क्रीन पर सिस्टम चार्जिंग एनिमेशन दिखाई न देने की समस्या को अनुकूलित किया गया",
+      "नए चार्जिंग एनिमेशन के लैंडस्केप मोड में असामान्य रूप से प्रदर्शित होने की समस्या ठीक की गई",
+      "Talkback मोड में स्क्रीन बंद करते समय “तेज़ चार्जिंग” के अनावश्यक वॉइस संकेत को हटाएं"
+    ],
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
+      "नया: सिस्टम थीम के अंतर्गत, लॉक स्क्रीन घड़ी तीन कस्टम शैलियों का समर्थन करती है, जिन्हें लॉक स्क्रीन की उन्नत सेटिंग्स में बदला जा सकता है।",
+      "नया: डेटा SIM कार्ड बदलने के लिए शॉर्टकट",
+      "ठीक किया गया: अनलॉक करके लैंडस्केप इंटरफ़ेस में जाने पर असामान्य झिलमिलाहट की समस्या",
+      "लॉक स्क्रीन पर आने वाली कॉल के दौरान स्क्रीन कभी-कभी नहीं जलने की समस्या ठीक की गई",
+      "ठीक किया गया: ऑलवेज़-ऑन डिस्प्ले सेटिंग्स पेज पर डुअल क्लॉक प्रीव्यू में संख्याओं के रैपिंग की समस्या।",
+      "सुधार: लैंडस्केप मोड में फिंगरप्रिंट शॉर्टकट ठीक से काम नहीं कर रहे थे।",
+      "सुधार: स्क्रीन बंद होने पर फ़िंगरप्रिंट अनलॉक कभी-कभी विफल होने की समस्या",
+      "ठीक किया गया: कुछ स्थितियों में स्क्रीन बंद होने पर इन-स्क्रीन फ़िंगरप्रिंट स्कैनर काम नहीं करता था",
+      "ठीक किया गया: Always-on डिस्प्ले निर्धारित समय पर बंद नहीं हो रहा था"
     ]
   },
   "logs_ug": {
@@ -479,14 +1439,32 @@
       "تېلېفوننى ئۈزۈش ئاستا بولۇش مەسىلىسى تۈزىتىلدى.",
       "قوڭغۇراقنى ئۈزۈش ئاستا بولۇش مەسىلىسىنى تۈزىتىش"
     ],
+    "ئەپ قۇلۇپى": [
+      "يېڭى: چىراي ۋە بارماق ئىزى ئارقىلىق بىر ۋاقىتتا قۇلۇپ ئېچىشنى قوللايدۇ",
+      "بەزى ئۈسكۈنىلەردە ئەپ قۇلۇپى پارول كىرگۈزۈش رامكىسىنىڭ خاتا كۆرسىتىلىشى تۈزىتىلدى"
+    ],
     "تەڭشەك": [
       "New: Quick replies for messaging apps",
       "WiFi تىزىملىكىنى تەرتىپلەش ئىستراتېگىيەسىنى ئەلالاشتۇرۇش، سىگنال كۈچى بويىچە تەرتىپلەش",
       "ياخشىلاش: WLAN تىزىملىكى سىگنال كۈچى بويىچە تەرتىپلىنىدۇ"
     ],
+    "Calendar": [
+      "كالېندار ئۇقتۇرۇشىغا \"كېيىن ئەسكەرتىش\" ئىقتىدارى قوشۇلدى"
+    ],
     "سىستېما": [
       "New: An option for smoothening notch curves on full screen devices",
       "ئەلالاشتۇرۇش: ۋاقىتلىق ئاۋارە قىلماسلىق ھالىتى تاقالغاندىن كېيىنكى ئاۋاز ئەسكەرتىشىنى بىكار قىلىش"
+    ],
+    "Lockscreen, status bar, Notification shade": [
+      "يېڭى: سىستېما تېمىسىدا قۇلۇپ ئېكران سائەت ئۈچ خىل ئىختىيارى ئۇسلۇبنى قوللايدۇ، قۇلۇپ ئېكراننىڭ ئىلغار تەڭشەكلىرىدە ئۆزگەرتكىلى بولىدۇ.",
+      "يېڭى: سانلىق مەلۇمات SIM كارتىسىنى ئالماشتۇرۇش تېز يولى",
+      "قۇلۇپنى ئېچىپ تەتۈر ئېكران كۆرۈنۈشىگە كىرگەندە ئادەتتىن تاشقىرى پارلىشىش مەسىلىسى تۈزىتىلدى",
+      "قۇلۇپ ئېكرانىدا تېلېفون كەلگەندە ئېكراننىڭ ئاندا-ساندا يورۇپ كەتمەسلىك مەسىلىسى ئوڭشالدى.",
+      "ئېكران ئۆچۈش تەڭشەكلىرى بېتىدىكى قوش سائەت ئالدىن كۆرۈنۈش رەسىمىدىكى سانلارنىڭ قۇر ئالمىشىش مەسىلىسىنى تۈزىتىش",
+      "يان تەرەپ ھالەتتە بارماق ئىزى تېز يوللارنى نورمال ئاچالماسلىق مەسىلىسى تۈزىتىلدى",
+      "ئېكران ئۆچۈپ تۇرغاندا بارماق ئىزى ئارقىلىق قۇلۇپ ئېچىش بەزىدە مەغلۇپ بولىدىغان مەسىلە تۈزىتىلدى",
+      "تۈزىتىلدى: بەزى ئەھۋاللاردا ئېكران ئۆچۈرۈلگەندە ئېكران ئاستى بارماق ئىزى سكانېرى ئىشلىمەيدىغان مەسىلە",
+      "ئېكران ئۆچۈپ تۇرغاندا كۆرسىتىلىدىغان مەزمۇننى بەلگىلەنگەن ۋاقىتتا ئۆچۈرەلمەسلىك مەسىلىسى تۈزىتىلدى"
     ],
     "سائەت": [
       "تایمېر بېتىدىكى كۇنۇپكىنى باسقاندا پارقىراش مەسىلىسىنى تۈزەت",
@@ -504,6 +1482,9 @@
     "སྒྲིག་སྟངས།": [
       "New: Quick replies for messaging apps",
       "Optimization: Sorting principles for Wi-Fi networks"
+    ],
+    "ལོ་ཐོ": [
+      "ལོ་ཐོའི་བརྡ་ལན་ལ་\"ཕྱིས་སུ་དྲན་སྐུལ\"གྱི་ནུས་པ་གསར་དུ་བཀོད་པ།"
     ],
     "རིམ་ལུགས": [
       "New: An option for smoothening notch curves on full screen devices",

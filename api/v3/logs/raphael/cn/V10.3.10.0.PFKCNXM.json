@@ -18,6 +18,15 @@
     ]
   },
   "logs_en": {
+    "Themes": [
+      "New: Added wallpaper carousel feature",
+      "New: Added like feature",
+      "New: Added hashtag",
+      "Optimize: Optimize ringback tone settings interaction",
+      "Fix: Fixed the issue where incoming call show settings failed",
+      "Fix: Fix video wallpaper not adapting to screen",
+      "Fix stretched preview image on theme font details page"
+    ],
     "System": [
       "更新谷歌安全补丁（2019#6），提升系统安全性"
     ],
@@ -27,7 +36,17 @@
   },
   "logs_zh_tw": {
     "系統": [
+      "优化 遊戲下多指操作螢幕抖動的問題",
       "更新Android安全性修補程式等級(2019#6)，提升系統安全性"
+    ],
+    "主題": [
+      "新增 新增壁紙輪播功能",
+      "新增 新增按讚功能",
+      "新增 新增話題標籤",
+      "優化 優化來電答鈴設定互動",
+      "修復來電秀設定失敗問題",
+      "修復 修復視頻壁紙不適配螢幕問題",
+      "修復主題字體詳情頁預覽圖拉伸問題"
     ],
     "其他": [
       "Improved system security and stability"
@@ -35,7 +54,17 @@
   },
   "logs_ja": {
     "システム": [
+      "ゲームでのマルチタッチ操作時の画面のちらつきの問題を最適化",
       "Android セキュリティパッチを 2019 年 6 月に更新しました。システムの安全性が向上しました。"
+    ],
+    "テーマ": [
+      "新規: 壁紙カルーセル機能を追加",
+      "新規 いいね機能を追加",
+      "新規 ハッシュタグを追加",
+      "最適化 着信音設定のインタラクションを最適化",
+      "着信表示設定の失敗問題を修正",
+      "修正 ビデオ壁紙が画面に適合しない問題を修正",
+      "テーマフォント詳細ページのプレビュー画像が引き伸ばされる問題を修正"
     ],
     "その他": [
       "システムのセキュリティと安定性の向上"
@@ -43,7 +72,17 @@
   },
   "logs_ko": {
     "시스템": [
+      "게임에서 멀티터치 조작 시 화면이 떨리는 문제 최적화",
       "Android 보안 패치를 2019년 6월로 업데이트했습니다. 시스템 보안이 향상되었습니다."
+    ],
+    "테마": [
+      "새로 추가: 배경화면 캐러셀 기능 추가",
+      "신규: 좋아요 기능 추가",
+      "새 기능: 해시태그 추가",
+      "최적화 벨소리 설정 상호작용 최적화",
+      "수신 표시 설정 실패 문제 수정",
+      "수정 동영상 배경 화면이 화면에 맞지 않는 문제 수정",
+      "테마 글꼴 상세 페이지의 미리보기 이미지가 늘어나는 문제 수정"
     ],
     "기타": [
       "시스템 보안 및 안정성 개선"
@@ -51,7 +90,17 @@
   },
   "logs_ru": {
     "Система": [
+      "Оптимизирована проблема дрожания экрана при мультитач-управлении в играх",
       "Обновление системы безопасности Android (июнь 2019 года). Улучшена безопасность системы."
+    ],
+    "Темы": [
+      "Новое: Добавлена функция карусели обоев",
+      "Новое: Добавлена функция лайка",
+      "Новое: добавлен хештег",
+      "Оптимизация: оптимизировано взаимодействие при настройке гудка",
+      "Исправлена проблема с ошибкой настройки отображения входящего вызова",
+      "Исправлено: исправлена проблема с адаптацией видеообоев к экрану",
+      "Исправлено растяжение изображения предпросмотра на странице сведений о шрифте темы"
     ],
     "Другое": [
       "Улучшение безопасности и стабильности системы"
@@ -59,7 +108,17 @@
   },
   "logs_uk": {
     "Система": [
+      "Оптимізовано проблему тремтіння екрана під час мультитач-керування в іграх",
       "Оновлено патч безпеки Android до червня 2019 року. Підвищено безпеку системи."
+    ],
+    "Теми": [
+      "Нове: Додано функцію каруселі шпалер",
+      "Нове: Додано функцію вподобайки",
+      "Нове: додано хештег",
+      "Оптимізація: оптимізовано взаємодію під час налаштування гудка",
+      "Виправлено проблему з помилкою налаштування відображення вхідного виклику",
+      "Виправлено: виправлено проблему з адаптацією відеошпалер до екрана",
+      "Виправлено розтягування зображення попереднього перегляду на сторінці відомостей про шрифт теми"
     ],
     "Інше": [
       "Покращення безпеки та стабільності системи"
@@ -67,15 +126,35 @@
   },
   "logs_pl": {
     "System": [
+      "Zoptymalizowano problem drgania ekranu podczas obsługi wielopalcowej w grach",
       "Zaktualizowano poprawkę zabezpieczeń Androida do czerwca 2019. Zwiększono bezpieczeństwo systemu."
     ],
-    "Inne": [
+    "Motywy": [
+      "Nowość: Dodano funkcję karuzeli tapet",
+      "Nowość: Dodano funkcję polubień",
+      "Nowość: dodano hashtag",
+      "Optymalizacja: optymalizacja interakcji ustawień dzwonka",
+      "Naprawiono problem z niepowodzeniem ustawień wyświetlania połączeń przychodzących",
+      "Poprawiono: naprawiono problem z niedopasowaniem tapety wideo do ekranu",
+      "Naprawiono rozciąganie obrazu podglądu na stronie szczegółów czcionki motywu"
+    ],
+    "Reszt": [
       "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
   "logs_de": {
     "System": [
+      "Problem mit Bildschirmflackern bei Multitouch-Bedienung in Spielen optimiert",
       "Android-Sicherheitspatch auf Juni 2019 aktualisiert. Systemsicherheit verbessert."
+    ],
+    "Themen": [
+      "Neu: Wallpaper-Karussell-Funktion hinzugefügt",
+      "Neu: Like-Funktion hinzugefügt",
+      "Neu: Hashtag hinzugefügt",
+      "Optimierung: Optimierung der Interaktion bei der Klingelton-Einstellung",
+      "Problem behoben, bei dem die Einstellung der Anruf-Anzeige fehlschlug",
+      "Behoben: Problem mit der Anpassung von Video-Hintergrundbildern an den Bildschirm behoben",
+      "Problem mit gestrecktem Vorschaubild auf der Detailseite für Theme-Schriften behoben"
     ],
     "Sonstiges": [
       "Systemsicherheit und -stabilität verbessert"
@@ -83,7 +162,17 @@
   },
   "logs_fr": {
     "Système": [
+      "Optimisation du problème de tremblement de l'écran lors d'une utilisation multi-touch dans les jeux",
       "Mise à jour du correctif de sécurité Android jusqu'en juin 2019. Sécurité accrue du système."
+    ],
+    "Thèmes": [
+      "Nouveau : Ajout de la fonction carrousel de fonds d'écran",
+      "Nouveau : Ajout de la fonction J’aime",
+      "Nouveau : ajout du hashtag",
+      "Optimisation : optimisation de l'interaction des paramètres de sonnerie",
+      "Correction du problème d'échec des réglages d'affichage des appels entrants",
+      "Corrigé : correction du problème d'adaptation du fond d'écran vidéo à l'écran",
+      "Correction de l'étirement de l'image d'aperçu sur la page de détails de la police du thème"
     ],
     "Autre": [
       "Sécurité et stabilité du système améliorées"
@@ -91,7 +180,17 @@
   },
   "logs_it": {
     "Sistema": [
+      "Ottimizzato il problema di tremolio dello schermo durante l'uso multi-touch nei giochi",
       "Aggiornamento della patch di sicurezza Android a giugno 2019. Maggiore sicurezza del sistema."
+    ],
+    "Temi": [
+      "Nuovo: Aggiunta funzione carosello sfondi",
+      "Novità: Aggiunta funzione Mi piace",
+      "Nuovo: aggiunto hashtag",
+      "Ottimizzazione: ottimizzazione dell'interazione delle impostazioni della suoneria",
+      "Risolto il problema di impostazione della visualizzazione chiamate in entrata",
+      "Risolto: risolto il problema di adattamento dello sfondo video allo schermo",
+      "Risolto il problema dell'immagine di anteprima allungata nella pagina dei dettagli del font del tema"
     ],
     "Altro": [
       "Maggiore sicurezza e stabilità di sistema"
@@ -99,7 +198,17 @@
   },
   "logs_es": {
     "Sistema": [
+      "Se optimizó el problema de vibración de la pantalla al usar varios dedos en juegos",
       "Parche de seguridad de Android actualizado a junio de 2019. Seguridad del sistema incrementada."
+    ],
+    "Temas": [
+      "Nuevo: Añadida función de carrusel de fondos de pantalla",
+      "Nuevo: Se agregó la función Me gusta",
+      "Nuevo: se ha añadido hashtag",
+      "Optimización: optimización de la interacción de los ajustes de tono de llamada",
+      "Se corrige el problema de fallo en los ajustes de visualización de llamadas entrantes",
+      "Corregido: corregido el problema de adaptación del fondo de pantalla de vídeo a la pantalla",
+      "Corregido el problema de estiramiento de la imagen de vista previa en la página de detalles de la fuente del tema"
     ],
     "Otros": [
       "Estabilidad y seguridad del sistema mejorada"
@@ -107,7 +216,17 @@
   },
   "logs_pt": {
     "Sistema": [
+      "Otimizado o problema de tremor do ecrã durante o uso multitoque em jogos",
       "Atualização do Patch de Segurança do Android para Junho de 2019. Segurança do sistema aprimorada."
+    ],
+    "Temas": [
+      "Novo: Adicionada função de carrossel de papéis de parede",
+      "Novo: Adicionada a função Curtir",
+      "Novo: hashtag adicionado",
+      "Otimização: otimização da interação das configurações de toque",
+      "Corrigido o problema de falha nas configurações de exibição de chamadas recebidas",
+      "Corrigido: corrigido o problema de adaptação do papel de parede de vídeo à tela",
+      "Corrigido o problema de alongamento da imagem de pré-visualização na página de detalhes da fonte do tema"
     ],
     "Outros": [
       "Segurança e estabilidade do sistema aprimoradas"
@@ -115,7 +234,17 @@
   },
   "logs_tr": {
     "Sistem": [
+      "Oyunlarda çok parmaklı kullanım sırasında ekran titremesi sorunu iyileştirildi",
       "Android Güvenlik Yaması Haziran 2019 sürümüne güncellendi. Sistem güvenliği artırıldı."
+    ],
+    "Temalar": [
+      "Yeni: Duvar kağıdı karusel özelliği eklendi",
+      "Yeni: Beğenme özelliği eklendi",
+      "Yeni: hashtag eklendi",
+      "Optimizasyon: zil sesi ayarları etkileşimi optimizasyonu",
+      "Gelen arama görünümü ayarlarının başarısız olması sorunu düzeltildi",
+      "Düzeltildi: video duvar kağıdının ekrana uyum sağlamama sorunu düzeltildi",
+      "Tema yazı tipi ayrıntıları sayfasındaki önizleme görselinin gerilmesi sorunu düzeltildi"
     ],
     "Diğer": [
       "Sistem güvenliği ve kararlılığı geliştirildi"
@@ -123,7 +252,17 @@
   },
   "logs_id": {
     "Sistem": [
+      "Mengoptimalkan masalah layar bergetar saat penggunaan multi-jari dalam game",
       "Patch Keamanan Android diperbarui hingga Juni 2019. Keamanan sistem ditingkatkan."
+    ],
+    "Tema": [
+      "Baru: Fitur carousel wallpaper ditambahkan",
+      "Baru: Fitur suka ditambahkan",
+      "Baru: tagar ditambahkan",
+      "Optimasi: optimasi interaksi pengaturan nada dering",
+      "Memperbaiki masalah pengaturan tampilan panggilan masuk yang gagal",
+      "Diperbaiki: memperbaiki masalah wallpaper video yang tidak menyesuaikan layar",
+      "Memperbaiki masalah gambar pratinjau yang melar di halaman detail font tema"
     ],
     "Lainnya": [
       "Keamanan dan stabilitas sistem ditingkatkan"
@@ -131,7 +270,17 @@
   },
   "logs_vi": {
     "Hệ thống": [
+      "Tối ưu vấn đề màn hình rung khi thao tác đa điểm trong trò chơi",
       "Đã cập nhật bản vá bảo mật Android lên tháng 6 năm 2019. Tăng cường bảo mật hệ thống."
+    ],
+    "Chủ đề": [
+      "Mới: Đã thêm tính năng trình chiếu hình nền",
+      "Mới: Đã thêm tính năng thích",
+      "Mới: đã thêm hashtag",
+      "Tối ưu hóa: tối ưu hóa tương tác cài đặt nhạc chuông",
+      "Đã sửa lỗi cài đặt hiển thị cuộc gọi đến thất bại",
+      "Đã sửa: sửa lỗi hình nền video không thích ứng với màn hình",
+      "Đã sửa lỗi hình ảnh xem trước bị kéo giãn trên trang chi tiết phông chữ chủ đề"
     ],
     "Khác": [
       "Cải thiện tính ổn định và bảo mật hệ thống"
@@ -139,7 +288,17 @@
   },
   "logs_th": {
     "ระบบ": [
+      "ปรับปรุงปัญหาหน้าจอสั่นเมื่อใช้งานหลายนิ้วในเกม",
       "อัปเดตแพตช์ความปลอดภัยของ Google (2019#6) เพื่อเพิ่มความปลอดภัยของระบบ"
+    ],
+    "ธีม": [
+      "ใหม่: เพิ่มฟีเจอร์สไลด์โชว์วอลเปเปอร์",
+      "ใหม่: เพิ่มฟีเจอร์ถูกใจ",
+      "ใหม่: เพิ่มแฮชแท็ก",
+      "การเพิ่มประสิทธิภาพ: การเพิ่มประสิทธิภาพการโต้ตอบการตั้งค่าเสียงเรียกกลับ",
+      "แก้ไขปัญหาการตั้งค่าการแสดงสายเรียกเข้าไม่สำเร็จ",
+      "แก้ไข: แก้ไขปัญหาวอลเปเปอร์วิดีโอไม่ปรับให้เข้ากับหน้าจอ",
+      "แก้ไขปัญหาภาพตัวอย่างยืดบนหน้ารายละเอียดฟอนต์ธีม"
     ],
     "อื่นๆ": [
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
@@ -147,15 +306,35 @@
   },
   "logs_ar": {
     "النظام": [
+      "تحسين مشكلة اهتزاز الشاشة أثناء اللمس المتعدد في الألعاب",
       "تحديث تصحيح أمان Google (2019#6) لتحسين أمان النظام"
     ],
-    "أخرى": [
+    "السمات": [
+      "جديد: تمت إضافة ميزة عرض شرائح الخلفية",
+      "جديد: تمت إضافة ميزة الإعجاب",
+      "جديد: تمت إضافة هاشتاغ",
+      "تحسين: تحسين تفاعل إعدادات نغمة الرنين",
+      "إصلاح مشكلة فشل إعداد عرض المكالمات الواردة",
+      "تم الإصلاح: إصلاح مشكلة عدم تكيف خلفية الفيديو مع الشاشة",
+      "إصلاح مشكلة تمدد صورة المعاينة في صفحة تفاصيل خط السمة"
+    ],
+    "آخرين": [
       "تحسين أمن واستقرار النظام"
     ]
   },
   "logs_in": {
     "सिस्टम": [
+      "गेम में मल्टी-फिंगर ऑपरेशन के दौरान स्क्रीन कांपने की समस्या को अनुकूलित किया गया",
       "Google सुरक्षा पैच (2019#6) को अपडेट करके सिस्टम सुरक्षा बढ़ाएं।"
+    ],
+    "थीम्स": [
+      "नया: वॉलपेपर कैरोसेल सुविधा जोड़ी गई",
+      "नया: लाइक सुविधा जोड़ी गई",
+      "नया: हैशटैग जोड़ा गया",
+      "अनुकूलन: अनुकूलन रिंगबैक टोन सेटिंग्स इंटरैक्शन",
+      "इनकमिंग कॉल डिस्प्ले सेटिंग विफल होने की समस्या ठीक की गई",
+      "ठीक किया गया: वीडियो वॉलपेपर के स्क्रीन के अनुकूल न होने की समस्या ठीक की गई",
+      "थीम फ़ॉन्ट विवरण पृष्ठ पर पूर्वावलोकन छवि के खिंचाव की समस्या ठीक की गई"
     ],
     "अन्य": [
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
@@ -163,6 +342,7 @@
   },
   "logs_ug": {
     "سىستېما": [
+      "ئويۇندا كۆپ بارماق بىلەن مەشغۇلات قىلغاندا ئېكراننىڭ تەۋرىنىش مەسىلىسىنى ئەلالاشتۇرۇش",
       "Google بىخەتەرلىك ياماقىسىنى (2019#6) يېڭىلاپ، سىستېما بىخەتەرلىكىنى ئاشۇرۇش"
     ],
     "باشقىلىرى": [

@@ -31,7 +31,7 @@
       "帮你找：通过语音指令，快速查找超级小爱已记住的信息",
       "该功能需前往应用商店，将“超级小爱”升级至7.4及以上版本"
     ],
-    "桌面": [
+    "主屏幕": [
       "新增 桌面图标文字在壁纸浅色区域显示阴影效果"
     ],
     "智能助理": [
@@ -111,7 +111,7 @@
       "Use voice commands to quickly locate information Xiaomi Hyper XiaoAi has memorized.",
       "Update Xiaomi Hyper XiaoAi to version 7.4 or later in GetApps to use these features."
     ],
-    "Home screen": [
+    "desktop": [
       "New: Home screen icon text now displays shadows over light wallpaper areas for better readability"
     ],
     "Lock screen": [
@@ -150,7 +150,11 @@
       "Optimization: Adjusted the long-press gesture for the full screen indicator to reduce accidental wake-ups of Xiaomi Hyper XiaoAi",
       "Fix: Gestures didn't work properly in certain scenarios",
       "Fix: Issues with animations when opening or closing apps",
-      "Optimization: Tweaked the Storage refresh algorithm so it activates more often"
+      "Optimization: Tweaked the Storage refresh algorithm so it activates more often",
+      "Optimization: In certain screens, larger text sizes are now supported",
+      "Optimization: Stability of animations when opening and closing apps",
+      "Fix: Wallpapers disappeared in rare cases when opening or closing apps",
+      "Fix: Occasional display glitches when opening or closing apps"
     ],
     "App vault": [
       "New: Travel assistant now supports adding trips manually"
@@ -183,7 +187,7 @@
       "新增: 鎖定螢幕自訂快速功能",
       "優化: 支援設定蝴蝶、光波、漩渦等指紋解鎖動畫"
     ],
-    "設定": [
+    "设置": [
       "優化: 桌面設定中，系統導覽方式頁的快速功能入口"
     ],
     "狀態欄、通知欄": [
@@ -213,11 +217,11 @@
       "優化: 長按手勢提醒線互動，降低喚醒超級小愛誤觸率",
       "修復: 部分場景手勢失效問題",
       "修復: 開啟/關閉應用程式動畫顯示異常問題",
+      "優化: 煥新儲存觸發策略，提升觸發機率",
       "優化: 部分場景支援顯示更大字號的字體，提升大字模式體驗",
       "優化: 開啟/關閉應用程式動畫穩定性",
       "修復: 開啟/關閉應用程式偶現桌布遺失問題",
-      "修復: 開啟/關閉應用程式偶現應用程式顯示異常問題",
-      "優化: 煥新儲存觸發策略，提升觸發機率"
+      "修復: 開啟/關閉應用程式偶現應用程式顯示異常問題"
     ],
     "智慧助理": [
       "新增: 「出行助手」支援手動新增行程"
@@ -227,6 +231,9 @@
       "全新視覺語言：專業視覺風格，讓拍攝體驗更沉浸",
       "功能結構最佳化：精簡功能選單，最佳化設定頁面，拍攝操作更簡單",
       "豐富浮水印可玩性："
+    ],
+    "設定": [
+      "優化: 桌面設定中，系統導覽方式頁的快速功能入口"
     ]
   },
   "logs_ja": {
@@ -238,6 +245,11 @@
     ],
     "設定": [
       "最適化: ホーム画面の設定にシステムナビゲーション設定へのショートカットを追加しました"
+    ],
+    "ステータスバー、通知シェード": [
+      "新機能: 一部のステータスバーアイコンがカスタム表示をサポートするようになりました",
+      "最適化: カスタム通知が展開をサポートするようになりました",
+      "最適化: HD 信号アイコンがステータスバーに常時表示されなくなりました"
     ],
     "アクセシビリティ": [
       "修正: TalkBack モードでタッチジェスチャーが機能しない不具合",
@@ -261,11 +273,6 @@
       "·まったく新しいビジュアル言語: よりプロフェッショナルなビジュアルスタイルにより、撮影中にさらに深い没入感が得られます。",
       "· 構造の最適化: 機能メニューを合理化し、設定ページを最適化しました。",
       "強化された透かし機能:"
-    ],
-    "ステータスバー、通知シェード": [
-      "新機能: 一部のステータスバーアイコンがカスタム表示をサポートするようになりました",
-      "最適化: カスタム通知が展開をサポートするようになりました",
-      "最適化: HD 信号アイコンがステータスバーに常時表示されなくなりました"
     ],
     "基本的な使用体験": [
       "最適化: ストレージ更新アルゴリズムを調整し、より頻繁に起動するようにしました"
@@ -388,6 +395,11 @@
     "Налаштування": [
       "Оптимізація: Додано ярлик до «Способів навігації» в «Налаштуваннях робочого столу»"
     ],
+    "Рядок стану, панель сповіщень": [
+      "Нове: Деякі піктограми в рядку стану тепер підтримують користувацьке відображення",
+      "Оптимізація: Спеціальні сповіщення тепер підтримують розгортання",
+      "Оптимізація: Піктограма HD-сигналу більше не відображається постійно в рядку стану"
+    ],
     "Спеціальні можливості": [
       "Виправлено: Сенсорні жести перестали працювати в режимі TalkBack",
       "Виправлено: Кнопки гучності не працювали в режимі TalkBack",
@@ -505,6 +517,11 @@
       "Behoben: In mehreren Apps wurden einige Schaltflächen nicht angesagt, darunter Einstellungen, Kontrollzentrum, Nachrichten, Kontakte, Wetter, Notizen und Browser",
       "Weitere Barrierefreiheits-Korrekturen sind in der Xiaomi Community verfügbar"
     ],
+    "Systemanimationen": [
+      "Optimierung: Unterbrechungsanimation bei App-Übergängen",
+      "Optimierung: Unterbrechungsanimation beim Schließen von Apps im Querformat",
+      "Optimierung: Unterbrechungsanimation beim Öffnen von Unterseiten in Apps"
+    ],
     "System": [
       "Neu: Startbildschirm-Hintergrundbild unterstützt jetzt einen Unschärfeeffekt",
       "Optimierung: Immersiver Effekt der Vollbildanzeige in bestimmten Szenarien",
@@ -517,7 +534,8 @@
       "Optimierung: Auf bestimmten Bildschirmen werden jetzt größere Textgrößen unterstützt",
       "Optimierung: Stabilität der Animationen beim Öffnen und Schließen von Apps",
       "Behoben: In seltenen Fällen verschwanden Hintergrundbilder beim Öffnen oder Schließen von Apps",
-      "Behoben: Gelegentliche Anzeigefehler beim Öffnen oder Schließen von Apps"
+      "Behoben: Gelegentliche Anzeigefehler beim Öffnen oder Schließen von Apps",
+      "Optimierung: Speicher-Aktualisierungsalgorithmus angepasst, damit er häufiger ausgelöst wird"
     ],
     "Kamera": [
       "Neues Design",
@@ -616,14 +634,11 @@
       "Ottimizzazione: Interruzione dell'animazione quando si chiudono le app in modalità orizzontale",
       "Ottimizzazione: Interruzione dell'animazione durante l'accesso alle sottopagine all'interno delle app"
     ],
-    "Fotocamera": [
+    "macchina fotografica": [
       "Nuovo design",
       "Brand-new visual language: A more professional visual style provides a deeper sense of immersion while shooting.",
       "- Ottimizzazione della struttura: Abbiamo semplificato i menu delle funzionalità e ottimizzato la pagina delle impostazioni.",
-      "Enhanced watermark features:",
-      "Design completamente nuovo",
-      "Nuovo linguaggio visivo: uno stile visivo più professionale offre un’esperienza di ripresa ancora più coinvolgente.",
-      "Funzionalità della filigrana migliorate:"
+      "Enhanced watermark features:"
     ],
     "Barra di stato, Area delle notifiche": [
       "Nuovo: Alcune icone della barra di stato ora supportano la visualizzazione personalizzata",
@@ -636,6 +651,15 @@
     "Recenti": [
       "Nuovo: Il testo delle icone della schermata Home ora mostra ombre sulle zone chiare dello sfondo, per una migliore leggibilità"
     ],
+    "Fotocamera": [
+      "Nuovo design",
+      "Brand-new visual language: A more professional visual style provides a deeper sense of immersion while shooting.",
+      "- Ottimizzazione della struttura: Abbiamo semplificato i menu delle funzionalità e ottimizzato la pagina delle impostazioni.",
+      "Enhanced watermark features:",
+      "Design completamente nuovo",
+      "Nuovo linguaggio visivo: uno stile visivo più professionale offre un’esperienza di ripresa ancora più coinvolgente.",
+      "Funzionalità della filigrana migliorate:"
+    ],
     "Sistema": [
       "Ottimizzazione: Modificato l'algoritmo di aggiornamento dell‘archiviazione in modo che si attivi più spesso"
     ]
@@ -647,7 +671,7 @@
       "Nuevo: Accesos directos personalizables de la Pantalla de bloqueo",
       "Optimización: El desbloqueo con huella dactilar ahora admite nuevas animaciones"
     ],
-    "Ajustes": [
+    "Configuración": [
       "Optimización: Se agregó un acceso directo a la configuración de navegación del sistema en la configuración de la Pantalla de inicio"
     ],
     "barra de estado, barra de notificaciones": [
@@ -688,6 +712,9 @@
     ],
     "Recientes": [
       "Nuevo: El texto del icono de la Pantalla de inicio ahora muestra sombras sobre las áreas claras del fondo de pantalla para una mejor legibilidad"
+    ],
+    "Ajustes": [
+      "Optimización: Se agregó un acceso directo a la configuración de navegación del sistema en la configuración de la Pantalla de inicio"
     ],
     "Sistema": [
       "Optimización: Se ajustó el algoritmo de actualización del almacenamiento para que se active con más frecuencia"
@@ -864,6 +891,11 @@
     "Cài đặt": [
       "Tối ưu: Đã thêm lối tắt vào cài đặt điều hướng hệ thống trong cài đặt Màn hình chính"
     ],
+    "Thanh trạng thái, thanh thông báo": [
+      "Mới: Một số biểu tượng thanh trạng thái hiện hỗ trợ hiển thị tùy chỉnh",
+      "Tối ưu: Thông báo tùy chỉnh hiện hỗ trợ mở rộng",
+      "Tối ưu: Biểu tượng tín hiệu HD không còn hiển thị cố định trên thanh trạng thái"
+    ],
     "Khả năng truy cập": [
       "Sửa: Cử chỉ chạm đã dừng hoạt động ở chế độ TalkBack",
       "Sửa: Các phím âm lượng không hoạt động ở chế độ TalkBack",
@@ -913,6 +945,11 @@
     ],
     "การตั้งค่า": [
       "การเพิ่มประสิทธิภาพ: เพิ่มทางลัดไปยังการตั้งค่าการนำทางระบบในการตั้งค่าหน้าจอหลัก"
+    ],
+    "แถบสถานะ, แผงการแจ้งเตือน": [
+      "ใหม่: ไอคอนแถบสถานะบางรายการรองรับการแสดงผลแบบกำหนดเองแล้ว",
+      "การเพิ่มประสิทธิภาพ: การแจ้งเตือนแบบกำหนดเองรองรับการกางออกแล้ว",
+      "การเพิ่มประสิทธิภาพ: ไอคอนสัญญาณ HD จะไม่แสดงถาวรในแถบสถานะอีกต่อไป"
     ],
     "การเข้าถึง": [
       "แก้ไข: ท่าทางสัมผัสหยุดทำงานในโหมด TalkBack",
@@ -1065,7 +1102,7 @@
     ]
   },
   "logs_ug": {
-    "باش ئېكران": [
+    "ئۈستەل يۈزى": [
       "New: Home screen icon text now displays shadows over light wallpaper areas for better readability"
     ],
     "Lock screen": [
@@ -1090,6 +1127,11 @@
       "Fix: Some buttons weren't announced in several apps, including Settings, Control center, Messaging, Contacts, Weather, Notes, and Browser",
       "More accessibility fixes are available in Xiaomi Community"
     ],
+    "System animations": [
+      "Optimization: Interrupt animation during app transitions",
+      "Optimization: Interrupt animation when closing apps in Landscape mode",
+      "Optimization: Interrupt animation when entering subpages within apps"
+    ],
     "سىستېما": [
       "New: Home screen wallpaper now supports a blur effect",
       "Optimization: Immersive effect for full screen indicator in certain scenarios",
@@ -1102,9 +1144,10 @@
       "Optimization: In certain screens, larger text sizes are now supported",
       "Optimization: Stability of animations when opening and closing apps",
       "Fix: Wallpapers disappeared in rare cases when opening or closing apps",
-      "Fix: Occasional display glitches when opening or closing apps"
+      "Fix: Occasional display glitches when opening or closing apps",
+      "Optimization: Tweaked the Storage refresh algorithm so it activates more often"
     ],
-    "كامېرا": [
+    "فوتو ئاپپارات": [
       "All-new design",
       "Brand-new visual language: A more professional visual style provides a deeper sense of immersion while shooting.",
       "· Structure optimization: We streamlined the feature menus and optimized the settings page.",
@@ -1112,6 +1155,12 @@
     ],
     "Other": [
       "Optimization: Tweaked the Storage refresh algorithm so it activates more often"
+    ],
+    "كامېرا": [
+      "All-new design",
+      "Brand-new visual language: A more professional visual style provides a deeper sense of immersion while shooting.",
+      "· Structure optimization: We streamlined the feature menus and optimized the settings page.",
+      "Enhanced watermark features:"
     ],
     "Settings": [
       "Optimization: Added a shortcut to system navigation settings in Home screen settings"
@@ -1121,7 +1170,7 @@
     ]
   },
   "logs_bo": {
-    "Home screen": [
+    "ཅོག་ངོས": [
       "New: Home screen icon text now displays shadows over light wallpaper areas for better readability"
     ],
     "Lock screen": [
@@ -1146,6 +1195,11 @@
       "Fix: Some buttons weren't announced in several apps, including Settings, Control center, Messaging, Contacts, Weather, Notes, and Browser",
       "More accessibility fixes are available in Xiaomi Community"
     ],
+    "System animations": [
+      "Optimization: Interrupt animation during app transitions",
+      "Optimization: Interrupt animation when closing apps in Landscape mode",
+      "Optimization: Interrupt animation when entering subpages within apps"
+    ],
     "རིམ་ལུགས": [
       "New: Home screen wallpaper now supports a blur effect",
       "Optimization: Immersive effect for full screen indicator in certain scenarios",
@@ -1156,7 +1210,7 @@
       "Fix: Gestures didn't work properly in certain scenarios",
       "Fix: Issues with animations when opening or closing apps"
     ],
-    "པར་ཆས": [
+    "ཁ་མར།": [
       "All-new design",
       "Brand-new visual language: A more professional visual style provides a deeper sense of immersion while shooting.",
       "· Structure optimization: We streamlined the feature menus and optimized the settings page.",
@@ -1164,6 +1218,12 @@
     ],
     "Other": [
       "Optimization: Tweaked the Storage refresh algorithm so it activates more often"
+    ],
+    "པར་ཆས": [
+      "All-new design",
+      "Brand-new visual language: A more professional visual style provides a deeper sense of immersion while shooting.",
+      "· Structure optimization: We streamlined the feature menus and optimized the settings page.",
+      "Enhanced watermark features:"
     ],
     "Settings": [
       "Optimization: Added a shortcut to system navigation settings in Home screen settings"
@@ -1180,7 +1240,8 @@
       "Fix: Gestures didn't work properly in certain scenarios",
       "Fix: Issues with animations when opening or closing apps",
       "Fix: Wallpapers disappeared in rare cases when opening or closing apps",
-      "Fix: Occasional display glitches when opening or closing apps"
+      "Fix: Occasional display glitches when opening or closing apps",
+      "Optimization: Tweaked the Storage refresh algorithm so it activates more often"
     ],
     "Camera": [
       "All-new design",

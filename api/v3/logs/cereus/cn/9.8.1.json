@@ -6,7 +6,7 @@
     "锁屏、状态栏、通知栏": [
       "修复 状态栏左上角时间消失的问题"
     ],
-    "桌面": [
+    "主屏幕": [
       "新增 更新小米有品"
     ],
     "小爱同学": [
@@ -21,91 +21,343 @@
   "logs_en": {
     "System": [
       "Updated Android Security Patch to August 2019. Increased system security."
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Fixed the issue where the time in the upper-left corner of the status bar disappeared"
+    ],
+    "desktop": [
+      "Added: Update Xiaomi Youpin"
+    ],
+    "Mi AI voice assistant": [
+      "Added: Redmi 6 now supports voice wake-up with the screen on. After updating your phone system to the latest version, enable it in the Xiao AI app under Settings > Xiao AI Labs.",
+      "Added: more convenient APP operations, try saying \"Open 拼多多 bargain\";",
+      "Optimization: Optimized the unlock experience; Xiao AI will no longer block unlock operations!"
+    ],
+    "Security": [
+      "New: Fully redesigned WeChat Cleanup / QQ Cleanup"
     ]
   },
   "logs_zh_tw": {
     "系統": [
       "更新Android安全性修補程式等級(2019#8)，提升系統安全性"
+    ],
+    "解鎖畫面、狀態欄、通知欄": [
+      "修復狀態列左上角時間消失的問題"
+    ],
+    "桌面": [
+      "新增 更新小米有品"
+    ],
+    "小愛同學": [
+      "新增 紅米6上線亮屏語音喚醒，將手機系統更新到最新版本後，可到小愛同學App-設定-小愛實驗室開啟；",
+      "新增 更便捷的APP操作，試試說「打開拼多多砍價」；",
+      "優化 優化解鎖情況下體驗，小愛再也不會遮擋解鎖操作啦！"
+    ],
+    "安全中心": [
+      "新增：微信專清/QQ專清全新改版"
     ]
   },
   "logs_ja": {
     "システム": [
       "Android セキュリティパッチを 2019 年 8 月版に更新しました。システムの安全性を向上しました。"
+    ],
+    "ロック画面、ステータスバー、通知バー": [
+      "ステータスバー左上の時刻が消える問題を修正しました"
+    ],
+    "デスクトップ": [
+      "追加: Xiaomi Youpin を更新"
+    ],
+    "Mi AI音声アシスタント": [
+      "追加: Redmi 6 で画面点灯時の音声ウェイクアップが利用可能になりました。スマートフォンのシステムを最新バージョンに更新後、Xiao AI アプリの「設定」-「Xiao AI ラボ」で有効にできます。",
+      "追加 より便利なAPP操作、「拼多多の値引きを開く」と言ってみてください；",
+      "最適化 ロック解除時の体験を最適化し、Xiao AIがロック解除操作を妨げなくなりました！"
+    ],
+    "セキュリティ": [
+      "追加：WeChat専用クリーニング／QQ専用クリーニングを全面リニューアル"
     ]
   },
   "logs_ko": {
     "시스템": [
       "Android 보안 패치를 2019년 8월로 업데이트했습니다. 시스템 보안이 향상되었습니다."
+    ],
+    "잠금 화면, 상태 표시줄, 알림 표시줄": [
+      "상태 표시줄 왼쪽 상단의 시간이 사라지는 문제를 수정했습니다"
+    ],
+    "데스크톱": [
+      "추가: Xiaomi Youpin 업데이트"
+    ],
+    "Mi AI 음성 도우미": [
+      "추가: Redmi 6에서 화면 켜짐 상태의 음성 웨이크업을 지원합니다. 휴대폰 시스템을 최신 버전으로 업데이트한 후 Xiao AI 앱의 설정 > Xiao AI 랩에서 활성화할 수 있습니다.",
+      "추가 더 편리한 APP 조작, \"拼多多 가격 흥정 열기\"라고 말해보세요؛",
+      "최적화 잠금 해제 시 경험을 최적화하여 Xiao AI가 더 이상 잠금 해제 작업을 가리지 않습니다!"
+    ],
+    "보안": [
+      "추가: WeChat 전용 정리/QQ 전용 정리 전면 개편"
     ]
   },
   "logs_ru": {
     "Система": [
       "Обновление системы безопасности Android (август 2019 года). Улучшена безопасность системы."
+    ],
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Исправлена проблема, из-за которой время в левом верхнем углу строки состояния исчезало"
+    ],
+    "Рабочий стол": [
+      "Добавлено: обновление Xiaomi Youpin"
+    ],
+    "Голосовой помощник Mi AI": [
+      "Добавлено: Redmi 6 теперь поддерживает голосовую активацию при включенном экране. После обновления системы телефона до последней версии включите ее в приложении Xiao AI: Настройки > Xiao AI Labs.",
+      "Добавлено: более удобные операции с APP, попробуйте сказать \"Открыть 拼多多 торг\";",
+      "Оптимизация: Оптимизирован опыт при разблокировке; Xiao AI больше не будет блокировать операции разблокировки!"
+    ],
+    "Безопасность": [
+      "Добавлено: специальная очистка WeChat/QQ полностью переработана"
     ]
   },
   "logs_uk": {
     "Система": [
       "Оновлено патч безпеки Android до серпня 2019. Підвищено безпеку системи."
+    ],
+    "Екран блокування, рядок стану, рядок сповіщень": [
+      "Виправлено проблему, через яку час у лівому верхньому куті рядка стану зникав"
+    ],
+    "Робочий стіл": [
+      "Додано: оновлення Xiaomi Youpin"
+    ],
+    "Голосовий помічник Mi AI": [
+      "Додано: Redmi 6 тепер підтримує голосове пробудження з увімкненим екраном. Після оновлення системи телефона до останньої версії увімкніть його в застосунку Xiao AI: Налаштування > Xiao AI Labs.",
+      "Додано: зручніші операції з APP, спробуйте сказати \"Відкрити 拼多多 торг\";",
+      "Оптимізація: Оптимізовано досвід під час розблокування; Xiao AI більше не буде блокувати операції розблокування!"
+    ],
+    "Безпека": [
+      "Додано: спеціальне очищення WeChat/QQ повністю оновлено"
     ]
   },
   "logs_pl": {
     "System": [
       "Zaktualizowano poprawkę zabezpieczeń Androida do sierpnia 2019. Zwiększono bezpieczeństwo systemu."
+    ],
+    "Ekran blokady, pasek stanu, pasek powiadomień": [
+      "Naprawiono problem znikającego czasu w lewym górnym rogu paska stanu"
+    ],
+    "Biurko": [
+      "Dodano: aktualizacja Xiaomi Youpin"
+    ],
+    "Mi Inteligentny asystent głosowy": [
+      "Dodano: Redmi 6 obsługuje teraz wybudzanie głosowe przy włączonym ekranie. Po zaktualizowaniu systemu telefonu do najnowszej wersji włącz je w aplikacji Xiao AI: Ustawienia > Xiao AI Labs.",
+      "Dodano: wygodniejsze operacje w APP, spróbuj powiedzieć \"Otwórz 拼多多 targowanie\";",
+      "Optymalizacja: Zoptymalizowano doświadczenie podczas odblokowywania; Xiao AI nie będzie już blokować operacji odblokowywania!"
+    ],
+    "Bezpieczeństwo": [
+      "Dodano: gruntownie przebudowane czyszczenie WeChat i QQ"
     ]
   },
   "logs_de": {
     "System": [
       "Android-Sicherheitspatch auf August 2019 aktualisiert. Systemsicherheit verbessert."
+    ],
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
+      "Das Problem wurde behoben, dass die Uhrzeit oben links in der Statusleiste verschwindet"
+    ],
+    "Startbildschirm": [
+      "Hinzugefügt: Xiaomi Youpin aktualisieren"
+    ],
+    "Mi KI-Sprachassistent": [
+      "Neu: Redmi 6 unterstützt jetzt Sprachaktivierung bei eingeschaltetem Bildschirm. Aktualisiere das Telefonsystem auf die neueste Version und aktiviere sie dann in der Xiao AI App unter Einstellungen > Xiao AI Labs.",
+      "Neu: bequemere APP-Bedienung, sag mal \"Öffne 拼多多 Feilschen\";",
+      "Optimierung: Das Entsperrerlebnis wurde optimiert; Xiao AI blockiert nicht mehr die Entsperrung!"
+    ],
+    "Sicherheit": [
+      "Neu: WeChat-/QQ-Spezialbereinigung komplett überarbeitet"
     ]
   },
   "logs_fr": {
     "Système": [
       "Mise à jour du correctif de sécurité Android jusqu'en août 2019. Sécurité accrue du système."
+    ],
+    "Écran de verrouillage, barre d’état, barre de notifications": [
+      "Correction du problème de disparition de l’heure en haut à gauche de la barre d’état"
+    ],
+    "Bureau": [
+      "Ajout : mise à jour de Xiaomi Youpin"
+    ],
+    "Assistant vocal IA Mi": [
+      "Ajout : Redmi 6 prend désormais en charge l'activation vocale avec l'écran allumé. Après avoir mis à jour le système du téléphone vers la dernière version, activez-la dans l'application Xiao AI via Paramètres > Xiao AI Labs.",
+      "Ajout : opérations APP plus pratiques, essayez de dire « Ouvrir 拼多多 négociation » ;",
+      "Optimisation : Expérience de déverrouillage optimisée ; Xiao AI ne bloquera plus les opérations de déverrouillage !"
+    ],
+    "Sécurité": [
+      "Ajout : nettoyage dédié WeChat/QQ entièrement repensé"
     ]
   },
   "logs_it": {
     "Sistema": [
       "Aggiornamento della patch di sicurezza Android ad agosto 2019. Maggiore sicurezza del sistema."
+    ],
+    "Schermata di blocco, barra di stato, barra delle notifiche": [
+      "Risolto il problema della scomparsa dell'ora nell'angolo in alto a sinistra della barra di stato"
+    ],
+    "Desktop": [
+      "Aggiunto: aggiornamento di Xiaomi Youpin"
+    ],
+    "Assistente vocale Mi AI": [
+      "Aggiunto: Redmi 6 ora supporta l'attivazione vocale con lo schermo acceso. Dopo aver aggiornato il sistema del telefono all'ultima versione, attivala nell'app Xiao AI in Impostazioni > Xiao AI Labs.",
+      "Aggiunto: operazioni APP più comode, prova a dire \"Apri 拼多多 contrattazione\";",
+      "Ottimizzazione: Ottimizzata l'esperienza di sblocco; Xiao AI non bloccherà più le operazioni di sblocco!"
+    ],
+    "Sicurezza": [
+      "Aggiunto: pulizia dedicata WeChat/QQ completamente rinnovata"
     ]
   },
   "logs_es": {
     "Sistema": [
       "Parche de seguridad de Android actualizado a agosto de 2019. Seguridad del sistema incrementada."
+    ],
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Se corrigió el problema por el que desaparecía la hora en la esquina superior izquierda de la barra de estado"
+    ],
+    "Escritorio": [
+      "Añadido: actualización de Xiaomi Youpin"
+    ],
+    "Asistente de voz Mi IA": [
+      "Añadido: Redmi 6 ahora admite la activación por voz con la pantalla encendida. Tras actualizar el sistema del teléfono a la última versión, actívala en la app Xiao AI en Ajustes > Xiao AI Labs.",
+      "Añadido: operaciones de APP más cómodas, prueba a decir \"Abrir 拼多多 regateo\";",
+      "Optimización: Se ha optimizado la experiencia de desbloqueo; ¡Xiao AI ya no bloqueará las operaciones de desbloqueo!"
+    ],
+    "Seguridad": [
+      "Añadido: limpieza dedicada de WeChat/QQ totalmente renovada"
     ]
   },
   "logs_pt": {
     "Sistema": [
       "Atualização do Patch de Segurança do Android para Agosto de 2019. Segurança do sistema aprimorada."
+    ],
+    "Tela de bloqueio, barra de status, barra de notificações": [
+      "Corrigido o problema em que a hora no canto superior esquerdo da barra de status desaparecia"
+    ],
+    "Ecrã inicial": [
+      "Adicionado: atualização do Xiaomi Youpin"
+    ],
+    "Assistente de voz Mi AI": [
+      "Adicionado: o Redmi 6 agora suporta ativação por voz com a tela ligada. Após atualizar o sistema do telefone para a versão mais recente, ative-a no app Xiao AI em Configurações > Xiao AI Labs.",
+      "Adicionado: operações de APP mais convenientes, tente dizer \"Abrir 拼多多 pechincha\";",
+      "Otimização: Experiência de desbloqueio otimizada; o Xiao AI não bloqueará mais as operações de desbloqueio!"
+    ],
+    "Segurança": [
+      "Adicionado: limpeza dedicada do WeChat/QQ totalmente reformulada"
     ]
   },
   "logs_tr": {
     "Sistem": [
       "Android Güvenlik Yaması Ağustos 2019 sürümüne güncellendi. Sistem güvenliği artırıldı."
+    ],
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Durum çubuğunun sol üst köşesindeki saatin kaybolması sorunu giderildi"
+    ],
+    "Masaüstü": [
+      "Eklendi: Xiaomi Youpin güncellemesi"
+    ],
+    "Mi AI sesli yardımcı": [
+      "Eklendi: Redmi 6 artık ekran açıkken sesle uyandırmayı destekliyor. Telefon sistemini en son sürüme güncelledikten sonra Xiao AI uygulamasında Ayarlar > Xiao AI Labs bölümünden etkinleştirebilirsiniz.",
+      "Eklendi: daha kullanışlı APP işlemleri, \"拼多多 pazarlık aç\" demeyi deneyin;",
+      "Optimizasyon: Kilit açma deneyimi iyileştirildi; Xiao AI artık kilit açma işlemlerini engellemeyecek!"
+    ],
+    "Güvenlik": [
+      "Eklendi: WeChat/QQ özel temizliği tamamen yenilendi"
     ]
   },
   "logs_id": {
     "Sistem": [
       "Patch Keamanan Android diperbarui hingga Agustus 2019. Keamanan sistem ditingkatkan."
+    ],
+    "Layar kunci, bilah status, bilah notifikasi": [
+      "Memperbaiki masalah waktu di pojok kiri atas bilah status yang menghilang"
+    ],
+    "Desktop": [
+      "Ditambahkan: pembaruan Xiaomi Youpin"
+    ],
+    "Mi AI Asisten suara": [
+      "Baru: Redmi 6 kini mendukung aktivasi suara saat layar menyala. Setelah memperbarui sistem ponsel ke versi terbaru, aktifkan di aplikasi Xiao AI melalui Pengaturan > Xiao AI Labs.",
+      "Ditambahkan: operasi APP yang lebih nyaman, coba ucapkan \"Buka 拼多多 tawar\";",
+      "Optimasi: Pengalaman saat membuka kunci dioptimalkan; Xiao AI tidak akan lagi menghalangi operasi buka kunci!"
+    ],
+    "Keamanan": [
+      "Ditambahkan: pembersihan khusus WeChat/QQ sepenuhnya didesain ulang"
     ]
   },
   "logs_vi": {
     "Hệ thống": [
       "Đã cập nhật bản vá bảo mật Android lên tháng 8 năm 2019. Tăng cường bảo mật hệ thống."
+    ],
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Đã khắc phục sự cố thời gian ở góc trên bên trái thanh trạng thái biến mất"
+    ],
+    "Màn hình chính": [
+      "Đã thêm: cập nhật Xiaomi Youpin"
+    ],
+    "Trợ lý thoại Mi AI": [
+      "Mới: Redmi 6 hiện hỗ trợ đánh thức bằng giọng nói khi màn hình bật. Sau khi cập nhật hệ thống điện thoại lên phiên bản mới nhất, hãy bật tính năng này trong ứng dụng Xiao AI tại Cài đặt > Xiao AI Labs.",
+      "Đã thêm: thao tác APP tiện lợi hơn, thử nói \"Mở 拼多多 mặc cả\";",
+      "Tối ưu hóa: Tối ưu trải nghiệm khi mở khóa; Xiao AI sẽ không còn chặn thao tác mở khóa nữa!"
+    ],
+    "Trung tâm An ninh": [
+      "Đã thêm: tính năng dọn dẹp chuyên dụng WeChat/QQ được thiết kế lại hoàn toàn"
     ]
   },
   "logs_th": {
     "ระบบ": [
       "อัปเดตแพตช์ความปลอดภัย Android เป็นเดือนสิงหาคม 2019 เพิ่มความปลอดภัยของระบบ"
+    ],
+    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
+      "แก้ไขปัญหานาฬิกาที่มุมซ้ายบนของแถบสถานะหายไป"
+    ],
+    "โต๊ะทำงาน": [
+      "เพิ่ม: อัปเดต Xiaomi Youpin"
+    ],
+    "Mi AI สั่งงานด้วยเสียง": [
+      "เพิ่มใหม่: Redmi 6 รองรับการปลุกด้วยเสียงขณะเปิดหน้าจอแล้ว หลังจากอัปเดตระบบโทรศัพท์เป็นเวอร์ชันล่าสุด คุณสามารถเปิดใช้งานได้ในแอป Xiao AI ที่ การตั้งค่า > Xiao AI Labs",
+      "เพิ่มการใช้งาน APP ที่สะดวกยิ่งขึ้น ลองพูดว่า \"เปิด 拼多多 ต่อรองราคา\";",
+      "การปรับให้เหมาะสม: ปรับปรุงประสบการณ์เมื่อปลดล็อก; Xiao AI จะไม่บดบังการปลดล็อกอีกต่อไป!"
+    ],
+    "ความปลอดภัย": [
+      "เพิ่ม: ฟีเจอร์ล้างข้อมูลเฉพาะ WeChat/QQ ได้รับการออกแบบใหม่ทั้งหมด"
     ]
   },
   "logs_ar": {
     "النظام": [
       "تم تحديث تصحيح أمان Android إلى أغسطس 2019. تم تعزيز أمان النظام."
+    ],
+    "شاشة القفل، شريط الحالة، شريط الإشعارات": [
+      "تم إصلاح مشكلة اختفاء الوقت في الزاوية العلوية اليسرى من شريط الحالة"
+    ],
+    "سطح المكتب": [
+      "تمت الإضافة: تحديث Xiaomi Youpin"
+    ],
+    "مساعد الصوت Mi AI": [
+      "جديد: يدعم Redmi 6 الآن التنبيه الصوتي أثناء تشغيل الشاشة. بعد تحديث نظام الهاتف إلى أحدث إصدار، يمكنك تفعيله في تطبيق Xiao AI ضمن الإعدادات > Xiao AI Labs.",
+      "تمت الإضافة: عمليات APP أكثر ملاءمة، جرب أن تقول \"افتح 拼多多 مساومة\"؛",
+      "تحسين: تم تحسين تجربة فتح القفل؛ لن يقوم Xiao AI بإعاقة عمليات فتح القفل بعد الآن!"
+    ],
+    "الأمان": [
+      "أُضيف: تنظيف WeChat/QQ المخصص بتصميم جديد بالكامل"
     ]
   },
   "logs_in": {
     "सिस्टम": [
       "Android सुरक्षा पैच को अगस्त 2019 में अपडेट किया गया। सिस्टम सुरक्षा में सुधार हुआ।"
+    ],
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
+      "स्टेटस बार के ऊपर-बाएँ कोने में समय गायब होने की समस्या ठीक की गई"
+    ],
+    "डेस्कटॉप": [
+      "जोड़ा गया: Xiaomi Youpin अपडेट"
+    ],
+    "Mi AI वॉयस असिस्टेंट": [
+      "नया: Redmi 6 अब स्क्रीन चालू रहने पर वॉइस वेक-अप का समर्थन करता है। फ़ोन सिस्टम को नवीनतम संस्करण में अपडेट करने के बाद, आप Xiao AI ऐप में सेटिंग्स > Xiao AI Labs में इसे सक्षम कर सकते हैं।",
+      "जोड़ा गया: अधिक सुविधाजनक APP संचालन, \"拼多多 मोल-भाव खोलें\" कहकर देखें;",
+      "अनुकूलन: अनलॉक अनुभव को अनुकूलित किया गया; Xiao AI अब अनलॉक संचालन को ब्लॉक नहीं करेगा!"
+    ],
+    "सुरक्षा": [
+      "जोड़ा गया: WeChat/QQ विशेष सफ़ाई को पूरी तरह से नया रूप दिया गया"
     ]
   },
   "logs_bo": {

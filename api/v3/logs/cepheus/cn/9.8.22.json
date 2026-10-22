@@ -8,7 +8,7 @@
       "新增 系统级投屏功能，将手机屏幕实时同步至电视。点击通知栏“投屏”快捷开关即可实现一键投屏",
       "新增 系统分享入口新增小米互传功能"
     ],
-    "桌面": [
+    "主屏幕": [
       "新增 更新小米有品"
     ],
     "设置": [
@@ -27,154 +27,618 @@
       "修复 设备在线，但i.mi.com查找手机显示设备离线的问题"
     ],
     "注意事项": [
-      "系统更新时不会删除任何用户数据，但建议您在更新前做好数据备份",
+      "系统更新不会删除您的任何数据，但在更新之前最好先备份数据，以防万一。",
       "软件更新包会在更新完成后自动删除，不会占用您的存储空间",
-      "在使用过程中遇到任何问题，可以通过“服务与反馈”应用寻求帮助、进行问题反馈",
-      "更多小米澎湃OS使用技巧，欢迎进入社区讨论"
+      "如果您遇到任何问题，可以通过“服务与反馈”应用程序获得帮助或分享您的意见/建议。",
+      "在小米社区中，您可以了解更多关于 Xiaomi HyperOS 的信息。"
     ]
   },
   "logs_en": {
     "Attention": [
-      "System updates won't delete any of your data, but it's a good idea to back it up before updating, just in case.",
-      "The software update package will be deleted once the update is complete and won't occupy storage space on your device.",
-      "If you run into any issues, you can get help or share your feedback through the \"Service & feedback\" app.",
-      "Learn more about Xiaomi HyperOS in Xiaomi Community"
+      "Xiaomi Mi 9 releases the MIUI Developer ROM based on Android 10, with multiple optimizations and improvements. Salute to the Mi fans who bravely try new things!",
+      "Some third-party apps are not yet compatible with Android 10. See the forum announcement for details, and please upgrade with caution.",
+      "No user data will be deleted during the system update. However, it is recommended that you back up your data before the update.",
+      "The software update package will be automatically deleted after the update is completed, so it won’t take up any of your storage space.",
+      "If you encounter any issues during use, you can seek assistance or provide feedback by using the “Services and Feedback” app.",
+      "For more tips on using Xiaomi’s PuffOS, feel free to join the community for discussion."
+    ],
+    "System": [
+      "Added system-level screen casting, syncing your phone screen to TV in real time. Tap the “Cast” quick toggle in the notification shade for one-tap casting",
+      "Added Xiaomi Share to the system share menu"
+    ],
+    "desktop": [
+      "Added: Update Xiaomi Youpin"
+    ],
+    "Settings": [
+      "Added: Input method supports full-screen keyboard optimization",
+      "Optimized printing experience"
+    ],
+    "Blocklist": [
+      "Fixed occasional failure of blacklist blocking when switching between single and dual SIM"
+    ],
+    "Mi AI voice assistant": [
+      "Added: more convenient APP operations, try saying \"Open 拼多多 bargain\";",
+      "Optimization: Optimized the unlock experience; Xiao AI will no longer block unlock operations!",
+      "Optimized Xiao AI Shortcuts 2.0 with a brand-new redesign—better looking and more efficient! The most important information is on the card cover, ready to view anytime."
+    ],
+    "Mi Cloud": [
+      "Fix the issue where the device is online but Find Device on i.mi.com shows the device as offline"
     ]
   },
   "logs_zh_tw": {
+    "重要提示": [
+      "小米手機9發布基於Android 10 的 MIUI 開發版，多項最佳化與改進，向勇敢嘗鮮的米粉們致敬！",
+      "部分第三方應用暫未適配 Android 10 系統，詳見論壇公告，請謹慎升級"
+    ],
+    "系統": [
+      "新增 系統級投屏功能，將手機螢幕即時同步至電視。點擊通知列「投屏」快捷開關即可一鍵投屏",
+      "新增 系統分享入口新增小米互傳功能"
+    ],
+    "桌面": [
+      "新增 更新小米有品"
+    ],
+    "设置": [
+      "新增 輸入法支援全面屏鍵盤優化",
+      "優化 列印功能使用體驗"
+    ],
+    "防打擾": [
+      "修復單雙卡切換時偶發性黑名單攔截失效"
+    ],
+    "小愛同學": [
+      "新增 更便捷的APP操作，試試說「打開拼多多砍價」；",
+      "優化 優化解鎖情況下體驗，小愛再也不會遮擋解鎖操作啦！",
+      "優化 小愛捷徑2.0全新改版，更好看更高效！最關鍵的資訊都在卡片封面，隨時可查看。"
+    ],
+    "小米雲服務": [
+      "修復裝置在線，但 i.mi.com 尋找手機顯示裝置離線的問題"
+    ],
     "注意事項": [
-      "系統更新時不會刪除任何使用者資料，但建議您在更新前做好資料備份",
-      "軟體更新包會在更新完成後自動刪除，不會佔用您的儲存空間",
-      "使用過程中遇到任何問題，可以透過「服務與反饋」應用程式尋求協助、進行問題反饋",
+      "系统更新时不会删除任何用户数据，但我们建议您在更新前先进行数据备份。",
+      "软件更新包在更新完成后会自动被删除，因此不会占用您的存储空间。",
+      "在使用过程中遇到任何问题，都可以通过“服务与反馈”应用程序寻求帮助或提交问题反馈。",
       "更多小米澎湃OS使用技巧，歡迎進入社群討論"
     ]
   },
   "logs_ja": {
+    "注意": [
+      "Xiaomi Mi 9 が Android 10 ベースの MIUI 開発版をリリース。数多くの最適化と改善を行い、勇敢に新機能を試す Mi ファンに敬意を表します！",
+      "一部のサードパーティ製アプリはまだ Android 10 に対応していません。詳細はフォーラムのお知らせをご覧ください。アップグレードは慎重に行ってください。"
+    ],
+    "システム": [
+      "システムレベルの画面キャスト機能を追加し、スマートフォンの画面をテレビにリアルタイムで同期します。通知シェードの「キャスト」クイック設定をタップするだけで、ワンタップでキャストできます",
+      "システム共有メニューにXiaomi Share機能を追加しました"
+    ],
+    "デスクトップ": [
+      "追加: Xiaomi Youpin を更新"
+    ],
+    "設定": [
+      "追加: 入力メソッドが全画面キーボード最適化をサポート",
+      "印刷機能の使用体験を最適化"
+    ],
+    "迷惑電話ブロック": [
+      "シングルSIM/デュアルSIM切り替え時にブラックリストのブロックが時々機能しない問題を修正"
+    ],
+    "Mi AI音声アシスタント": [
+      "追加 より便利なAPP操作、「拼多多の値引きを開く」と言ってみてください；",
+      "最適化 ロック解除時の体験を最適化し、Xiao AIがロック解除操作を妨げなくなりました！",
+      "Xiao AI Shortcuts 2.0を全面刷新して最適化—より見やすく、より効率的に！最も重要な情報はカードの表紙にあり、いつでも確認できます。"
+    ],
+    "Xiaomi クラウドサービス": [
+      "デバイスがオンラインなのに、i.mi.com の「デバイスを探す」でオフラインと表示される問題を修正しました"
+    ],
     "注意事項": [
-      "システム更新時にユーザーデータが削除されることはありませんが、更新前にデータをバックアップすることをおすすめします。",
-      "ソフトウェアアップデートパッケージは更新完了後に自動的に削除され、ストレージ容量を消費しません。",
+      "システムのアップデート時にはユーザーデータは一切削除されませんが、アップデートする前にデータのバックアップを取ることをお勧めします。",
+      "ソフトウェアの更新パッケージは、更新が完了すると自動的に削除されますので、ストレージ容量を消費することはありません。",
       "使用中に問題が発生した場合は、「サービスとフィードバック」アプリからヘルプを求めたり、フィードバックを送信したりできます",
-      "Xiaomi HyperOSの活用のヒントをさらに知りたい方は、コミュニティでのディスカッションにご参加ください"
+      "Xiaomi Pangu OSのさらなる使い方に関するコツは、コミュニティでのディスカッションをお待ちしています。"
     ]
   },
   "logs_ko": {
+    "주의": [
+      "Xiaomi Mi 9가 Android 10 기반 MIUI 개발 버전을 출시했습니다. 다양한 최적화와 개선이 포함되었으며, 용감하게 새로운 것을 시도하는 Mi 팬들에게 경의를 표합니다!",
+      "일부 서드파티 앱은 아직 Android 10과 호환되지 않습니다. 자세한 내용은 포럼 공지를 확인하시고, 업그레이드 시 주의하세요."
+    ],
+    "시스템": [
+      "시스템 수준 캐스트 기능이 추가되어 휴대폰 화면을 TV에 실시간으로 동기화합니다. 알림 패널의 “캐스트” 빠른 설정을 탭하면 한 번에 캐스트할 수 있습니다",
+      "시스템 공유 메뉴에 Xiaomi Share 기능이 추가되었습니다"
+    ],
+    "데스크톱": [
+      "추가: Xiaomi Youpin 업데이트"
+    ],
+    "설정": [
+      "추가: 입력기가 전체 화면 키보드 최적화를 지원합니다",
+      "인쇄 기능 사용 경험 최적화"
+    ],
+    "스팸 차단": [
+      "단일/듀얼 SIM 전환 시 간헐적으로 블랙리스트 차단이 작동하지 않는 문제 수정"
+    ],
+    "Mi AI 음성 도우미": [
+      "추가 더 편리한 APP 조작, \"拼多多 가격 흥정 열기\"라고 말해보세요؛",
+      "최적화 잠금 해제 시 경험을 최적화하여 Xiao AI가 더 이상 잠금 해제 작업을 가리지 않습니다!",
+      "Xiao AI Shortcuts 2.0이 새롭게 개편되어 최적화되었습니다—더 보기 좋고 더 효율적입니다! 가장 중요한 정보는 카드 표지에 있어 언제든지 확인할 수 있습니다."
+    ],
+    "Xiaomi 클라우드 서비스": [
+      "기기가 온라인 상태이지만 i.mi.com의 기기 찾기에서 오프라인으로 표시되는 문제를 수정했습니다"
+    ],
     "주의사항": [
       "시스템 업데이트 시 사용자 데이터는 삭제되지 않지만, 업데이트 전에 데이터를 백업하는 것이 좋습니다.",
       "소프트웨어 업데이트 패키지는 업데이트 완료 후 자동으로 삭제되며 저장 공간을 차지하지 않습니다.",
       "사용 중 문제가 발생하면 '서비스 및 피드백' 앱을 통해 도움을 받거나 문제를 피드백할 수 있습니다",
-      "Xiaomi HyperOS 사용 팁을 더 알아보려면 커뮤니티 토론에 참여하세요."
+      "샤오미 펑파이 OS의 더 많은 사용 팁을 원하신다면, 커뮤니티에 참여하여 토론해 보세요!"
     ]
   },
   "logs_ru": {
-    "Внимание": [
+    "Предупреждения": [
+      "Xiaomi Mi 9 выпускает MIUI Developer ROM на базе Android 10, множество оптимизаций и улучшений. Привет смелым фанатам Mi, пробующим новое!",
+      "Некоторые сторонние приложения пока не адаптированы к Android 10. Подробности см. в объявлении на форуме; обновляйтесь с осторожностью."
+    ],
+    "Система": [
+      "Добавлена системная функция трансляции экрана: экран телефона синхронизируется с телевизором в реальном времени. Нажмите переключатель «Трансляция» в панели уведомлений для трансляции одним касанием",
+      "Добавлена функция Xiaomi Share в системное меню «Поделиться»"
+    ],
+    "Рабочий стол": [
+      "Добавлено: обновление Xiaomi Youpin"
+    ],
+    "Настройки": [
+      "Добавлено: Метод ввода поддерживает оптимизацию клавиатуры для полноэкранного режима",
+      "Оптимизирован опыт использования функции печати"
+    ],
+    "Черный список": [
+      "Исправлен периодический сбой блокировки из чёрного списка при переключении между одной и двумя SIM-картами"
+    ],
+    "Голосовой помощник Mi AI": [
+      "Добавлено: более удобные операции с APP, попробуйте сказать \"Открыть 拼多多 торг\";",
+      "Оптимизация: Оптимизирован опыт при разблокировке; Xiao AI больше не будет блокировать операции разблокировки!",
+      "Оптимизирован Xiao AI Shortcuts 2.0 с полностью новым дизайном — красивее и эффективнее! Самая важная информация на обложке карточки, доступна в любое время."
+    ],
+    "Облачный сервис Xiaomi": [
+      "Исправлена проблема, из-за которой устройство онлайн, но в «Поиске устройства» на i.mi.com отображается как офлайн"
+    ],
+    "Важные моменты, на которые следует обратить внимание:": [
       "При обновлении системы пользовательские данные не удаляются, но рекомендуется создать резервную копию данных перед обновлением.",
       "Пакет обновления программного обеспечения будет автоматически удален после завершения обновления и не займет место в хранилище.",
-      "Если во время использования возникнут проблемы, вы можете получить помощь или отправить отзыв через приложение «Сервис и обратная связь»",
-      "Узнайте больше о Xiaomi HyperOS и присоединяйтесь к обсуждению в сообществе."
+      "Если вы столкнулись с какими-либо проблемами в процессе использования продукта, вы можете обратиться за помощью или предоставить отзывы через приложение «Сервисы и обратная связь».",
+      "Для получения дополнительных советов по использованию операционной системы Xiaomi Pegasus OS приглашаем вас присоединиться к обсуждениям в нашем сообществе."
     ]
   },
   "logs_uk": {
-    "Увага": [
+    "Попередження": [
+      "Xiaomi Mi 9 випускає MIUI Developer ROM на базі Android 10, багато оптимізацій і покращень. Вітаємо смілих фанатів Mi, які пробують нове!",
+      "Деякі сторонні застосунки ще не адаптовані до Android 10. Докладніше див. в оголошенні на форумі; оновлюйтеся обережно."
+    ],
+    "Система": [
+      "Додано системну функцію трансляції екрана: екран телефона синхронізується з телевізором у реальному часі. Натисніть перемикач «Трансляція» на панелі сповіщень, щоб транслювати одним дотиком",
+      "Додано функцію Xiaomi Share у системне меню спільного доступу"
+    ],
+    "Робочий стіл": [
+      "Додано: оновлення Xiaomi Youpin"
+    ],
+    "Налаштування": [
+      "Додано: Метод введення підтримує оптимізацію клавіатури для повноекранного режиму",
+      "Оптимізовано досвід використання функції друку"
+    ],
+    "Блокування спаму": [
+      "Виправлено періодичну несправність блокування з чорного списку під час перемикання між однією та двома SIM-картами"
+    ],
+    "Голосовий помічник Mi AI": [
+      "Додано: зручніші операції з APP, спробуйте сказати \"Відкрити 拼多多 торг\";",
+      "Оптимізація: Оптимізовано досвід під час розблокування; Xiao AI більше не буде блокувати операції розблокування!",
+      "Оптимізовано Xiao AI Shortcuts 2.0 із цілком новим дизайном — красивіше й ефективніше! Найважливіша інформація на обкладинці картки, доступна будь-коли."
+    ],
+    "Хмарний сервіс Xiaomi": [
+      "Виправлено проблему, коли пристрій онлайн, але в «Пошуку пристрою» на i.mi.com він відображається як офлайн"
+    ],
+    "Зауваження": [
       "Під час оновлення системи дані користувача не видаляються, але рекомендується створити резервну копію даних перед оновленням.",
       "Пакет оновлення програмного забезпечення буде автоматично видалено після завершення оновлення, і він не займатиме місця в сховищі.",
-      "Якщо під час використання виникнуть проблеми, ви можете отримати допомогу або надіслати відгук через застосунок «Сервіс і зворотний зв’язок»",
-      "Дізнайтеся більше про Xiaomi HyperOS та долучайтеся до обговорення у спільноті."
+      "Якщо під час використання виникають будь-які проблеми, ви можете звернутися за допомогою або надіслати повідомлення про проблему через додаток „Сервіси та відгуки“.",
+      "Більше порад щодо використання операційної системи Xiaomi Pegasus OS – ласкаво просимо до спільноти для обговорень!"
     ]
   },
   "logs_pl": {
+    "Powiadomienie": [
+      "Xiaomi Mi 9 wydaje MIUI Developer ROM oparty na Android 10, z wieloma optymalizacjami i ulepszeniami. Ukłony dla odważnych fanów Mi, którzy testują nowości!",
+      "Niektóre aplikacje innych firm nie są jeszcze dostosowane do Android 10. Szczegóły w ogłoszeniu na forum; aktualizuj ostrożnie."
+    ],
+    "System": [
+      "Dodano systemową funkcję przesyłania ekranu, która synchronizuje ekran telefonu z telewizorem w czasie rzeczywistym. Dotknij przełącznika „Przesyłanie ekranu” w panelu powiadomień, aby przesłać ekran jednym dotknięciem",
+      "Dodano funkcję Xiaomi Share w systemowym menu udostępniania"
+    ],
+    "Biurko": [
+      "Dodano: aktualizacja Xiaomi Youpin"
+    ],
+    "Ustawienia": [
+      "Dodano: Metoda wprowadzania obsługuje optymalizację klawiatury pełnoekranowej",
+      "Zoptymalizowano komfort korzystania z funkcji drukowania"
+    ],
+    "Blokowanie spamu": [
+      "Naprawiono sporadyczne niedziałanie blokowania z czarnej listy podczas przełączania między jedną a dwiema kartami SIM"
+    ],
+    "Mi Inteligentny asystent głosowy": [
+      "Dodano: wygodniejsze operacje w APP, spróbuj powiedzieć \"Otwórz 拼多多 targowanie\";",
+      "Optymalizacja: Zoptymalizowano doświadczenie podczas odblokowywania; Xiao AI nie będzie już blokować operacji odblokowywania!",
+      "Zoptymalizowano Xiao AI Shortcuts 2.0 z zupełnie nowym wyglądem — ładniejszy i wydajniejszy! Najważniejsze informacje są na okładce karty, dostępne w każdej chwili."
+    ],
+    "Usługa w chmurze Xiaomi": [
+      "Naprawiono problem, w którym urządzenie jest online, ale w „Znajdź urządzenie” na i.mi.com wyświetla się jako offline"
+    ],
     "Uwagi": [
-      "Aktualizacja systemu nie usuwa żadnych danych użytkownika, ale zaleca się wykonanie kopii zapasowej danych przed aktualizacją.",
+      "Podczas aktualizacji systemu żadne dane użytkowników nie zostaną usunięte. Jednak zaleca się tworzenie kopii tych danych przed wykonaniem aktualizacji.",
       "Pakiet aktualizacji oprogramowania zostanie automatycznie usunięty po zakończeniu aktualizacji i nie zajmie miejsca w pamięci.",
-      "Jeśli podczas korzystania napotkasz problemy, możesz uzyskać pomoc lub zgłosić opinię za pośrednictwem aplikacji „Usługi i opinie”",
-      "Poznaj więcej wskazówek dotyczących Xiaomi HyperOS i dołącz do dyskusji w społeczności."
+      "Jeśli napotkasz na jakiekolwiek problemy podczas korzystania z produktu, możesz skorzystać z aplikacji „Usługi i opinie”, aby uzyskać pomoc lub zgłosić problem.",
+      "Aby zapoznać się z dodatkowymi poradami dotyczącymi obsługi systemu operacyjnego Xiaomi MIUI, zapraszamy do udziału w dyskusjach na forumie."
     ]
   },
   "logs_de": {
-    "Hinweise": [
-      "Systemupdates löschen keine Benutzerdaten, aber es wird empfohlen, vor dem Update eine Datensicherung durchzuführen.",
+    "Wichtiger Hinweis": [
+      "Xiaomi Mi 9 veröffentlicht MIUI Developer ROM auf Basis von Android 10 mit zahlreichen Optimierungen und Verbesserungen. Respekt an die mutigen Mi-Fans, die Neues ausprobieren!",
+      "Einige Apps von Drittanbietern sind noch nicht an Android 10 angepasst. Details siehe Forum-Ankündigung; bitte vorsichtig aktualisieren."
+    ],
+    "System": [
+      "Systemweite Bildschirmübertragung hinzugefügt: Der Telefonbildschirm wird in Echtzeit mit dem Fernseher synchronisiert. Tippe auf den Schnellschalter „Übertragung“ in der Benachrichtigungsleiste, um mit einem Tippen zu übertragen",
+      "Xiaomi Share zum Systemfreigabemenü hinzugefügt"
+    ],
+    "Startbildschirm": [
+      "Hinzugefügt: Xiaomi Youpin aktualisieren"
+    ],
+    "Einstellungen": [
+      "Hinzugefügt: Eingabemethode unterstützt Vollbild-Tastatur-Optimierung",
+      "Druckerlebnis optimiert"
+    ],
+    "Spam-Blockierung": [
+      "Gelegentliches Nichtfunktionieren der Blacklist-Sperre beim Wechsel zwischen Einzel- und Dual-SIM behoben"
+    ],
+    "Mi KI-Sprachassistent": [
+      "Neu: bequemere APP-Bedienung, sag mal \"Öffne 拼多多 Feilschen\";",
+      "Optimierung: Das Entsperrerlebnis wurde optimiert; Xiao AI blockiert nicht mehr die Entsperrung!",
+      "Xiao AI Shortcuts 2.0 optimiert und komplett neu gestaltet – schöner und effizienter! Die wichtigsten Informationen stehen auf der Kartenvorderseite und sind jederzeit abrufbar."
+    ],
+    "Xiaomi Cloud-Dienst": [
+      "Behebt das Problem, dass das Gerät online ist, aber „Gerät suchen“ auf i.mi.com das Gerät als offline anzeigt"
+    ],
+    "Hinweise und Vorsichtsmaßnahmen": [
+      "Während des Systemupdates werden keine Benutzerdaten gelöscht. Es wird jedoch empfohlen, vor dem Update eine Sicherung der Daten anzulegen.",
       "Das Software-Update-Paket wird nach Abschluss des Updates automatisch gelöscht und belegt keinen Speicherplatz.",
-      "Wenn bei der Nutzung Probleme auftreten, kannst du über die App „Dienste & Feedback“ Hilfe erhalten oder Feedback senden",
-      "Erfahren Sie mehr über Xiaomi HyperOS und diskutieren Sie mit in der Community."
+      "Falls Sie während der Nutzung Probleme haben, können Sie die App „Service und Feedback“ nutzen, um Hilfe zu erhalten oder Ihre Beschwerden mitzuteilen.",
+      "Weitere Tipps zur Nutzung des Xiaomi PaddleOS – willkommen in der Community, um dort zu diskutieren!"
     ]
   },
   "logs_fr": {
-    "Remarques": [
-      "Les mises à jour système ne suppriment aucune donnée utilisateur, mais il est recommandé de sauvegarder vos données avant de mettre à jour.",
-      "Le package de mise à jour logicielle sera automatiquement supprimé une fois la mise à jour terminée et n'occupera pas d'espace de stockage.",
+    "Avertissement important": [
+      "Xiaomi Mi 9 publie la ROM MIUI Developer basée sur Android 10, avec de nombreuses optimisations et améliorations. Salut aux fans Mi qui osent tester les nouveautés !",
+      "Certaines applications tierces ne sont pas encore adaptées à Android 10. Voir l’annonce du forum pour plus de détails ; veuillez mettre à jour avec prudence."
+    ],
+    "Système": [
+      "Ajout de la diffusion d’écran au niveau système : l’écran du téléphone est synchronisé avec le téléviseur en temps réel. Appuyez sur le bouton rapide « Diffuser » dans le panneau de notifications pour diffuser en un seul geste",
+      "Ajout de Xiaomi Share au menu de partage du système"
+    ],
+    "Bureau": [
+      "Ajout : mise à jour de Xiaomi Youpin"
+    ],
+    "Paramètres": [
+      "Ajout : La méthode de saisie prend en charge l'optimisation du clavier plein écran",
+      "Expérience d'impression optimisée"
+    ],
+    "Liste noire": [
+      "Correction de l'échec occasionnel du blocage par liste noire lors du passage entre SIM unique et double SIM"
+    ],
+    "Assistant vocal IA Mi": [
+      "Ajout : opérations APP plus pratiques, essayez de dire « Ouvrir 拼多多 négociation » ;",
+      "Optimisation : Expérience de déverrouillage optimisée ; Xiao AI ne bloquera plus les opérations de déverrouillage !",
+      "Optimisation de Xiao AI Shortcuts 2.0 avec une refonte complète — plus beau et plus efficace ! Les informations essentielles sont sur la couverture de la carte, consultables à tout moment."
+    ],
+    "Service cloud Xiaomi": [
+      "Correction du problème où l’appareil est en ligne, mais « Localiser l’appareil » sur i.mi.com l’affiche comme hors ligne"
+    ],
+    "Mémesures de précaution à prendre": [
+      "Aucun des données des utilisateurs n’est supprimé lors d’une mise à jour du système. Cependant, nous vous recommandons de faire une copie de sécurité de ces données avant la mise à jour.",
+      "Les paquets d’actualisation logiciels seront automatiquement supprimés après l’achèvement de la mise à jour et ne consommeront pas d’espace de stockage.",
       "En cas de problème pendant l’utilisation, vous pouvez obtenir de l’aide ou envoyer un commentaire via l’application « Services et commentaires »",
-      "Découvrez plus d'astuces Xiaomi HyperOS et rejoignez la discussion dans la communauté."
+      "Pour en savoir plus sur les astuces d’utilisation du système d’exploitation Xiaomi Mi Turbo OS, n’hésitez pas à rejoindre la communauté pour discuter."
     ]
   },
   "logs_it": {
+    "Attenzione": [
+      "Xiaomi Mi 9 rilascia la MIUI Developer ROM basata su Android 10, con numerose ottimizzazioni e miglioramenti. Onore ai fan Mi che osano provare le novità!",
+      "Alcune app di terze parti non sono ancora adattate ad Android 10. Per i dettagli, consulta l'annuncio sul forum; aggiorna con cautela."
+    ],
+    "Sistema": [
+      "Aggiunta la trasmissione dello schermo a livello di sistema: lo schermo del telefono viene sincronizzato con il TV in tempo reale. Tocca l’interruttore rapido “Trasmetti” nel pannello notifiche per trasmettere con un tocco",
+      "Aggiunta di Xiaomi Share al menu di condivisione di sistema"
+    ],
+    "Desktop": [
+      "Aggiunto: aggiornamento di Xiaomi Youpin"
+    ],
+    "Impostazioni": [
+      "Aggiunto: Il metodo di input supporta l'ottimizzazione della tastiera a schermo intero",
+      "Esperienza di stampa ottimizzata"
+    ],
+    "Lista Blocchi": [
+      "Risolto il mancato funzionamento occasionale del blocco della blacklist durante il passaggio tra SIM singola e doppia SIM"
+    ],
+    "Assistente vocale Mi AI": [
+      "Aggiunto: operazioni APP più comode, prova a dire \"Apri 拼多多 contrattazione\";",
+      "Ottimizzazione: Ottimizzata l'esperienza di sblocco; Xiao AI non bloccherà più le operazioni di sblocco!",
+      "Ottimizzato Xiao AI Shortcuts 2.0 con un restyling completo: più bello ed efficiente! Le informazioni più importanti sono sulla copertina della scheda, consultabili in qualsiasi momento."
+    ],
+    "Servizio cloud Xiaomi": [
+      "Risolto il problema per cui il dispositivo è online, ma \"Trova dispositivo\" su i.mi.com lo mostra come offline"
+    ],
     "Avvertenze": [
-      "Gli aggiornamenti di sistema non eliminano i dati utente, ma si consiglia di eseguire un backup dei dati prima dell'aggiornamento.",
-      "Il pacchetto di aggiornamento software verrà eliminato automaticamente al termine dell'aggiornamento e non occuperà spazio di archiviazione.",
+      "Durante l’aggiornamento del sistema, nessun dato degli utenti verrà cancellato; tuttavia vi consigliamo di effettuare un backup dei dati prima dell’aggiornamento stesso.",
+      "I pacchetti di aggiornamento del software verranno automaticamente eliminati una volta completata l’operazione di aggiornamento e non occuperanno lo spazio di archiviazione disponibile sul vostro dispositivo.",
       "Se durante l’utilizzo si verificano problemi, puoi ottenere assistenza o inviare feedback tramite l’app « Servizi e feedback »",
-      "Scopri altri suggerimenti su Xiaomi HyperOS e partecipa alla discussione nella community."
+      "Per saperne di più sui trucchi per utilizzare il sistema operativo Xiaomi Mi Turbo OS, sei invitato a partecipare alle discussioni nella comunità."
     ]
   },
   "logs_es": {
-    "Notas": [
+    "Atención": [
+      "Xiaomi Mi 9 lanza la MIUI Developer ROM basada en Android 10, con múltiples optimizaciones y mejoras. ¡Un saludo a los fans de Mi que se atreven a probar lo nuevo!",
+      "Algunas aplicaciones de terceros aún no son compatibles con Android 10. Consulta el anuncio del foro para obtener más información; actualiza con precaución."
+    ],
+    "Sistema": [
+      "Se agregó la transmisión de pantalla a nivel del sistema: la pantalla del teléfono se sincroniza con el televisor en tiempo real. Toca el interruptor rápido «Transmitir» en el panel de notificaciones para transmitir con un solo toque",
+      "Añadida función Xiaomi Share en el menú de compartir del sistema"
+    ],
+    "Escritorio": [
+      "Añadido: actualización de Xiaomi Youpin"
+    ],
+    "Configuración": [
+      "Añadido: El método de entrada admite la optimización del teclado de pantalla completa",
+      "Experiencia de impresión optimizada"
+    ],
+    "Lista de bloqueo": [
+      "Corregido el fallo ocasional del bloqueo de la lista negra al cambiar entre SIM única y dual"
+    ],
+    "Asistente de voz Mi IA": [
+      "Añadido: operaciones de APP más cómodas, prueba a decir \"Abrir 拼多多 regateo\";",
+      "Optimización: Se ha optimizado la experiencia de desbloqueo; ¡Xiao AI ya no bloqueará las operaciones de desbloqueo!",
+      "Optimizado Xiao AI Shortcuts 2.0 con un rediseño completo: ¡más atractivo y eficiente! La información más importante está en la portada de la tarjeta y se puede consultar en cualquier momento."
+    ],
+    "Servicio en la nube de Xiaomi": [
+      "Se corrige el problema por el que el dispositivo está en línea, pero \"Buscar dispositivo\" en i.mi.com lo muestra como desconectado"
+    ],
+    "Consideraciones importantes": [
       "Las actualizaciones del sistema no eliminan ningún dato de usuario, pero se recomienda hacer una copia de seguridad de los datos antes de actualizar.",
       "El paquete de actualización de software se eliminará automáticamente una vez completada la actualización y no ocupará espacio de almacenamiento.",
       "Si tienes algún problema durante el uso, puedes obtener ayuda o enviar comentarios a través de la aplicación «Servicios y comentarios»",
-      "Descubre más trucos de Xiaomi HyperOS y únete a la discusión en la comunidad."
+      "Para obtener más consejos sobre el uso de Xiaomi PaddleOS, ¡te invitamos a unirte a la comunidad y participar en las discusiones!"
     ]
   },
   "logs_pt": {
-    "Notas": [
-      "As atualizações do sistema não excluem nenhum dado do usuário, mas é recomendável fazer um backup dos dados antes de atualizar.",
+    "Atenção": [
+      "Xiaomi Mi 9 lança a MIUI Developer ROM baseada no Android 10, com várias otimizações e melhorias. Saudação aos fãs Mi que se atrevem a testar as novidades!",
+      "Alguns aplicativos de terceiros ainda não são compatíveis com o Android 10. Consulte o anúncio no fórum para obter detalhes; atualize com cautela."
+    ],
+    "Sistema": [
+      "Adicionada transmissão de tela em nível de sistema: a tela do telefone é sincronizada com a TV em tempo real. Toque no atalho “Transmitir” no painel de notificações para transmitir com um toque",
+      "Adicionada função Xiaomi Share ao menu de compartilhamento do sistema"
+    ],
+    "Ecrã inicial": [
+      "Adicionado: atualização do Xiaomi Youpin"
+    ],
+    "Configurações": [
+      "Adicionado: O método de entrada suporta otimização de teclado em tela cheia",
+      "Experiência de impressão otimizada"
+    ],
+    "Lista de bloqueio": [
+      "Corrigida a falha ocasional do bloqueio da lista negra ao alternar entre SIM única e dual"
+    ],
+    "Assistente de voz Mi AI": [
+      "Adicionado: operações de APP mais convenientes, tente dizer \"Abrir 拼多多 pechincha\";",
+      "Otimização: Experiência de desbloqueio otimizada; o Xiao AI não bloqueará mais as operações de desbloqueio!",
+      "Otimizado o Xiao AI Shortcuts 2.0 com um redesign completo — mais bonito e eficiente! As informações mais importantes estão na capa do cartão, disponíveis para consulta a qualquer momento."
+    ],
+    "Serviço de nuvem Xiaomi": [
+      "Corrigido o problema em que o dispositivo está online, mas \"Localizar dispositivo\" no i.mi.com o mostra como offline"
+    ],
+    "Precauções a ter em conta": [
+      "Durante a atualização do sistema, nenhum dado do utilizador será eliminado. No entanto, recomenda-se que você faça um backup dos dados antes da atualização.",
       "O pacote de atualização de software será excluído automaticamente após a conclusão da atualização e não ocupará espaço de armazenamento.",
       "Se tiver algum problema durante o uso, pode obter ajuda ou enviar feedback através da aplicação «Serviços e feedback»",
-      "Saiba mais sobre Xiaomi HyperOS e participe da discussão na comunidade."
+      "Mais dicas sobre como utilizar o Xiaomi PaddleOS? Bem-vindo a participar das discussões na comunidade!"
     ]
   },
   "logs_tr": {
-    "Notlar": [
+    "Uyarı": [
+      "Xiaomi Mi 9, Android 10 tabanlı MIUI Geliştirici ROM'u yayınladı; birçok optimizasyon ve iyileştirme içeriyor. Yenilikleri denemeye cesaret eden Mi hayranlarına selamlar!",
+      "Bazı üçüncü taraf uygulamalar henüz Android 10 ile uyumlu değil. Ayrıntılar için forum duyurusuna bakın; lütfen dikkatli bir şekilde yükseltin."
+    ],
+    "Sistem": [
+      "Sistem düzeyinde ekran yayınlama eklendi: telefon ekranı TV’ye gerçek zamanlı olarak yansıtılır. Bildirim panelindeki “Yayınla” hızlı ayarını kullanarak tek dokunuşla yayınlayın",
+      "Sistem paylaşım menüsüne Xiaomi Share özelliği eklendi"
+    ],
+    "Masaüstü": [
+      "Eklendi: Xiaomi Youpin güncellemesi"
+    ],
+    "Ayarlar": [
+      "Eklendi: Giriş yöntemi tam ekran klavye optimizasyonunu destekliyor",
+      "Yazdırma deneyimi iyileştirildi"
+    ],
+    "Engelli listesi": [
+      "Tek/çift SIM geçişinde kara liste engellemesinin ara sıra çalışmaması düzeltildi"
+    ],
+    "Mi AI sesli yardımcı": [
+      "Eklendi: daha kullanışlı APP işlemleri, \"拼多多 pazarlık aç\" demeyi deneyin;",
+      "Optimizasyon: Kilit açma deneyimi iyileştirildi; Xiao AI artık kilit açma işlemlerini engellemeyecek!",
+      "Xiao AI Shortcuts 2.0 yeni tasarımla optimize edildi—daha şık ve daha verimli! En önemli bilgiler kart kapağında, istediğiniz zaman görüntüleyin."
+    ],
+    "Xiaomi Bulut Hizmeti": [
+      "Cihaz çevrimiçi olmasına rağmen i.mi.com'daki \"Cihazı bul\" uygulamasında çevrimdışı görünmesi sorunu giderildi"
+    ],
+    "Dikkat Edilmesi Gereken Hususlar": [
       "Sistem güncellemeleri kullanıcı verilerini silmez, ancak güncellemeden önce verilerinizi yedeklemeniz önerilir.",
       "Yazılım güncelleme paketi güncelleme tamamlandıktan sonra otomatik olarak silinir ve depolama alanınızı kaplamaz.",
       "Kullanım sırasında herhangi bir sorunla karşılaşırsanız «Hizmetler ve geri bildirim» uygulaması üzerinden yardım alabilir veya geri bildirim gönderebilirsiniz",
-      "Xiaomi HyperOS ipuçlarını keşfedin ve toplulukta tartışmaya katılın."
+      "Xiaomi Mi Turbo OS kullanımıyla ilgili daha fazla ipucu için topluluk tartışmalarına katılmaktan çekinmeyin."
     ]
   },
   "logs_id": {
-    "Catatan": [
-      "Pembaruan sistem tidak akan menghapus data pengguna, tetapi disarankan untuk mencadangkan data sebelum memperbarui.",
+    "Perhatian": [
+      "Xiaomi Mi 9 merilis MIUI Developer ROM berbasis Android 10, dengan berbagai optimasi dan peningkatan. Salut untuk para penggemar Mi yang berani mencoba hal baru!",
+      "Beberapa aplikasi pihak ketiga belum kompatibel dengan Android 10. Lihat pengumuman forum untuk detailnya; harap berhati-hati saat meningkatkan."
+    ],
+    "Sistem": [
+      "Menambahkan transmisi layar tingkat sistem: layar ponsel disinkronkan ke TV secara real-time. Ketuk tombol cepat “Transmisi” di panel notifikasi untuk transmisi satu ketuk",
+      "Menambahkan fitur Xiaomi Share ke menu berbagi sistem"
+    ],
+    "Desktop": [
+      "Ditambahkan: pembaruan Xiaomi Youpin"
+    ],
+    "Pengaturan": [
+      "Ditambahkan: Metode input mendukung optimasi keyboard layar penuh",
+      "Pengalaman mencetak dioptimalkan"
+    ],
+    "Pemblokiran spam": [
+      "Memperbaiki kegagalan sesekali pemblokiran daftar hitam saat beralih antara SIM tunggal dan ganda"
+    ],
+    "Mi AI Asisten suara": [
+      "Ditambahkan: operasi APP yang lebih nyaman, coba ucapkan \"Buka 拼多多 tawar\";",
+      "Optimasi: Pengalaman saat membuka kunci dioptimalkan; Xiao AI tidak akan lagi menghalangi operasi buka kunci!",
+      "Optimasi Xiao AI Shortcuts 2.0 dengan desain baru—lebih menarik dan lebih efisien! Informasi terpenting ada di sampul kartu, dapat dilihat kapan saja."
+    ],
+    "Layanan Cloud Xiaomi": [
+      "Memperbaiki masalah saat perangkat online tetapi \"Temukan perangkat\" di i.mi.com menampilkan perangkat offline"
+    ],
+    "Pertimbangan yang Harus Diperhatikan": [
+      "Saat sistem diperbarui, tidak ada data pengguna yang akan dihapus. Namun, kami menyarankan Anda untuk membuat cadangan data terlebih dahulu sebelum proses pembaruan berlangsung.",
       "Paket pembaruan perangkat lunak akan dihapus secara otomatis setelah pembaruan selesai dan tidak akan memakan ruang penyimpanan.",
-      "Jika Anda mengalami masalah saat menggunakan, Anda dapat meminta bantuan atau mengirim masukan melalui aplikasi 'Layanan & masukan'",
-      "Pelajari lebih banyak tips Xiaomi HyperOS dan bergabunglah dalam diskusi di komunitas."
+      "Jika Anda mengalami masalah apa pun selama penggunaan produk tersebut, Anda dapat mencari bantuan atau memberikan umpan balik melalui aplikasi “Servis dan Umpan Balik”.",
+      "Untuk mendapatkan lebih banyak tips penggunaan sistem operasi Xiaomi Pegasus OS, selamat datang di komunitas untuk berdiskusi."
     ]
   },
   "logs_vi": {
-    "Lưu ý": [
-      "Cập nhật hệ thống sẽ không xóa dữ liệu người dùng, nhưng bạn nên sao lưu dữ liệu trước khi cập nhật.",
+    "Chú ý": [
+      "Xiaomi Mi 9 phát hành MIUI Developer ROM dựa trên Android 10, với nhiều tối ưu hóa và cải tiến. Xin chào các fan Mi dũng cảm trải nghiệm điều mới!",
+      "Một số ứng dụng bên thứ ba chưa tương thích với Android 10. Xem thông báo trên diễn đàn để biết chi tiết; vui lòng nâng cấp cẩn thận."
+    ],
+    "Hệ thống": [
+      "Đã thêm tính năng truyền màn hình cấp hệ thống: đồng bộ màn hình điện thoại lên TV theo thời gian thực. Nhấn công tắc nhanh “Truyền màn hình” trong bảng thông báo để truyền chỉ với một chạm",
+      "Đã thêm tính năng Xiaomi Share vào menu chia sẻ hệ thống"
+    ],
+    "Màn hình chính": [
+      "Đã thêm: cập nhật Xiaomi Youpin"
+    ],
+    "Cài đặt": [
+      "Đã thêm: Phương thức nhập hỗ trợ tối ưu hóa bàn phím toàn màn hình",
+      "Tối ưu trải nghiệm sử dụng tính năng in"
+    ],
+    "Chặn spam": [
+      "Đã sửa lỗi thỉnh thoảng chặn danh sách đen không hoạt động khi chuyển đổi giữa SIM đơn và SIM kép"
+    ],
+    "Trợ lý thoại Mi AI": [
+      "Đã thêm: thao tác APP tiện lợi hơn, thử nói \"Mở 拼多多 mặc cả\";",
+      "Tối ưu hóa: Tối ưu trải nghiệm khi mở khóa; Xiao AI sẽ không còn chặn thao tác mở khóa nữa!",
+      "Tối ưu Xiao AI Shortcuts 2.0 với thiết kế mới hoàn toàn—đẹp hơn và hiệu quả hơn! Thông tin quan trọng nhất nằm trên bìa thẻ, có thể xem bất cứ lúc nào."
+    ],
+    "Dịch vụ đám mây Xiaomi": [
+      "Khắc phục sự cố thiết bị đang trực tuyến nhưng \"Tìm thiết bị\" trên i.mi.com lại hiển thị thiết bị ngoại tuyến"
+    ],
+    "Những điều cần lưu ý": [
+      "Khi hệ thống được cập nhật, không có dữ liệu người dùng nào bị xóa. Tuy nhiên, chúng tôi khuyến nghị bạn nên sao lưu dữ liệu trước khi tiến hành cập nhật.",
       "Gói cập nhật phần mềm sẽ tự động bị xóa sau khi cập nhật hoàn tất và sẽ không chiếm dung lượng lưu trữ.",
       "Nếu gặp bất kỳ sự cố nào trong quá trình sử dụng, bạn có thể nhận trợ giúp hoặc gửi phản hồi qua ứng dụng 'Dịch vụ & phản hồi'",
-      "Khám phá thêm mẹo sử dụng Xiaomi HyperOS và tham gia thảo luận trong cộng đồng."
+      "Nhiều mẹo sử dụng hệ điều hành Xiaomi Pegasus OS hơn nữa! Bạn đang được chào đón để tham gia thảo luận trong cộng đồng."
     ]
   },
   "logs_th": {
+    "โปรดทราบ": [
+      "Xiaomi Mi 9 เปิดตัว MIUI Developer ROM ที่ใช้ Android 10 พร้อมการปรับแต่งและปรับปรุงหลายอย่าง ขอคารวะแฟน Mi ที่กล้าลองสิ่งใหม่!",
+      "แอปบุคคลที่สามบางแอปยังไม่รองรับ Android 10 ดูรายละเอียดได้ที่ประกาศในฟอรัม โปรดอัปเกรดอย่างระมัดระวัง"
+    ],
+    "ระบบ": [
+      "เพิ่มการแคสต์หน้าจอระดับระบบ โดยซิงค์หน้าจอโทรศัพท์กับทีวีแบบเรียลไทม์ แตะสวิตช์ลัด “แคสต์” ในแผงการแจ้งเตือนเพื่อแคสต์ได้ในแตะเดียว",
+      "เพิ่มฟีเจอร์ Xiaomi Share ในเมนูแชร์ของระบบ"
+    ],
+    "โต๊ะทำงาน": [
+      "เพิ่ม: อัปเดต Xiaomi Youpin"
+    ],
+    "การตั้งค่า": [
+      "เพิ่ม: วิธีการป้อนข้อมูลรองรับการปรับแต่งแป้นพิมพ์เต็มหน้าจอ",
+      "ปรับประสบการณ์การใช้ฟังก์ชันพิมพ์ให้ดีขึ้น"
+    ],
+    "บล็อกสแปม": [
+      "แก้ไขปัญหาการบล็อกรายการดำไม่ทำงานเป็นครั้งคราวเมื่อสลับระหว่างซิมเดียวและซิมคู่"
+    ],
+    "Mi AI สั่งงานด้วยเสียง": [
+      "เพิ่มการใช้งาน APP ที่สะดวกยิ่งขึ้น ลองพูดว่า \"เปิด 拼多多 ต่อรองราคา\";",
+      "การปรับให้เหมาะสม: ปรับปรุงประสบการณ์เมื่อปลดล็อก; Xiao AI จะไม่บดบังการปลดล็อกอีกต่อไป!",
+      "ปรับปรุง Xiao AI Shortcuts 2.0 ดีไซน์ใหม่ทั้งหมด—สวยขึ้นและมีประสิทธิภาพขึ้น! ข้อมูลสำคัญที่สุดอยู่บนปกการ์ด ดูได้ทุกเมื่อ"
+    ],
+    "บริการคลาวด์ Xiaomi": [
+      "แก้ไขปัญหาที่อุปกรณ์ออนไลน์ แต่ \"ค้นหาอุปกรณ์\" บน i.mi.com แสดงว่าอุปกรณ์ออฟไลน์"
+    ],
     "ข้อควรทราบ": [
-      "การอัปเดตระบบจะไม่ลบข้อมูลผู้ใช้ แต่แนะนำให้สำรองข้อมูลก่อนอัปเดต",
+      "ระหว่างการอัปเดตระบบ ข้อมูลของผู้ใช้จะไม่ถูกลบออกไปแต่อย่างใด อย่างไรก็ตาม เราขอแนะนำให้คุณสำรองข้อมูลไว้ก่อนที่จะทำการอัปเดต",
       "แพ็กเกจอัปเดตซอฟต์แวร์จะถูกลบโดยอัตโนมัติหลังจากอัปเดตเสร็จสิ้น และจะไม่ใช้พื้นที่จัดเก็บของคุณ",
       "หากพบปัญหาใด ๆ ระหว่างการใช้งาน คุณสามารถขอความช่วยเหลือหรือส่งความคิดเห็นผ่านแอป 'บริการและความคิดเห็น'",
-      "เรียนรู้เคล็ดลับ Xiaomi HyperOS เพิ่มเติมและร่วมพูดคุยในคอมมูนิตี้"
+      "หากต้องการเรียนรู้เทคนิคการใช้งาน Xiaomi PaddleOS เพิ่มเติม สามารถเข้าร่วมการอภิปรายในชุมชนได้เลยครับ"
     ]
   },
   "logs_ar": {
+    "تنبية": [
+      "يطلق Xiaomi Mi 9 إصدار MIUI Developer ROM المستند إلى Android 10، مع تحسينات وتطويرات متعددة. تحية إلى مشجعي Mi الشجعان الذين يجربون الجديد!",
+      "بعض تطبيقات الطرف الثالث لم تتوافق بعد مع Android 10. راجع إعلان المنتدى للتفاصيل، ويرجى الترقية بحذر."
+    ],
+    "النظام": [
+      "تمت إضافة بث الشاشة على مستوى النظام، بحيث تتم مزامنة شاشة الهاتف مع التلفاز في الوقت الفعلي. اضغط على مفتاح «البث» السريع في لوحة الإشعارات للبث بلمسة واحدة",
+      "إضافة ميزة Xiaomi Share إلى قائمة المشاركة في النظام"
+    ],
+    "سطح المكتب": [
+      "تمت الإضافة: تحديث Xiaomi Youpin"
+    ],
+    "الإعدادات": [
+      "تمت الإضافة: طريقة الإدخال تدعم تحسين لوحة المفاتيح بملء الشاشة",
+      "تحسين تجربة استخدام وظيفة الطباعة"
+    ],
+    "حظر المضايقات": [
+      "إصلاح فشل حظر القائمة السوداء أحيانًا عند التبديل بين شريحة واحدة وشريحتين"
+    ],
+    "مساعد الصوت Mi AI": [
+      "تمت الإضافة: عمليات APP أكثر ملاءمة، جرب أن تقول \"افتح 拼多多 مساومة\"؛",
+      "تحسين: تم تحسين تجربة فتح القفل؛ لن يقوم Xiao AI بإعاقة عمليات فتح القفل بعد الآن!",
+      "تحسين Xiao AI Shortcuts 2.0 بتصميم جديد كليًا، أجمل وأكثر كفاءة! أهم المعلومات موجودة على غلاف البطاقة ويمكن عرضها في أي وقت."
+    ],
+    "خدمة Xiaomi السحابية": [
+      "إصلاح مشكلة ظهور الجهاز متصلاً بالإنترنت ولكن \"العثور على الجهاز\" على i.mi.com يعرض الجهاز غير متصل"
+    ],
     "ملاحظات": [
-      "لن تؤدي تحديثات النظام إلى حذف أي بيانات للمستخدم، ولكن يُنصح بعمل نسخة احتياطية من البيانات قبل التحديث.",
+      "لا يتم حذف أي بيانات للمستخدمين أثناء تحديث النظام، ومع ذلك ننصحك بعمل نسخة احتياطية من البيانات قبل إجراء التحديث.",
       "سيتم حذف حزمة تحديث البرنامج تلقائيًا بعد اكتمال التحديث ولن تشغل مساحة التخزين.",
-      "إذا واجهت أي مشكلات أثناء الاستخدام، يمكنك الحصول على المساعدة أو إرسال ملاحظاتك عبر تطبيق «الخدمات والملاحظات»",
-      "اكتشف المزيد من نصائح Xiaomi HyperOS وانضم إلى النقاش في المجتمع."
+      "إذا واجهت أي مشكلة أثناء الاستخدام، يمكنك طلب المساعدة من خلال تطبيق “الخدمات والتعليقات”، أو تقديم تقرير عن المشكلة.",
+      "لمزيد من النصائح حول كيفية استخدام نظام تشغيل Xiaomi Mi Turbo OS، نرحب بكم للمشاركة في المناقشات داخل المجتمع."
     ]
   },
   "logs_in": {
     "ध्यान दें": [
+      "Xiaomi Mi 9 ने Android 10 पर आधारित MIUI Developer ROM जारी किया है, जिसमें कई अनुकूलन और सुधार हैं। नई चीज़ों को आज़माने वाले बहादुर Mi प्रशंसकों को सलाम!",
+      "कुछ तृतीय-पक्ष ऐप्स अभी तक Android 10 के अनुकूल नहीं हैं। विवरण के लिए फ़ोरम की घोषणा देखें; कृपया सावधानी से अपग्रेड करें।",
       "सिस्टम अपडेट से कोई भी उपयोगकर्ता डेटा नहीं मिटेगा, लेकिन अपडेट करने से पहले डेटा का बैकअप लेने की सलाह दी जाती है।",
       "सॉफ़्टवेयर अपडेट पैकेज अपडेट पूरा होने के बाद स्वचालित रूप से हटा दिया जाएगा और आपके संग्रहण स्थान पर कब्जा नहीं करेगा।",
-      "यदि उपयोग के दौरान कोई समस्या आती है, तो आप 'सेवाएं और फ़ीडबैक' ऐप के माध्यम से सहायता ले सकते हैं या फ़ीडबैक भेज सकते हैं",
-      "Xiaomi HyperOS के और टिप्स जानें और समुदाय में चर्चा में शामिल हों।"
+      "यदि उपयोग के दौरान कोई समस्या आती है, तो आप “सेवाएँ एवं प्रतिक्रियाएँ” (Services and Feedback) ऐप के माध्यम से मदद ले सकते हैं, या समस्या की जानकारी दे सकते हैं।",
+      "शाओमी पेंपाईओएस (Xiaomi PemaiOS) के उपयोग संबंधी अधिक टिप्स के लिए, समुदाय में जाकर चर्चा करने में आपका स्वागत है!"
+    ],
+    "सिस्टम": [
+      "सिस्टम-स्तरीय स्क्रीन कास्टिंग जोड़ी गई, जो फ़ोन की स्क्रीन को TV पर रीयल-टाइम में सिंक करती है। एक-टैप कास्टिंग के लिए सूचना पैनल में “कास्ट” त्वरित टॉगल पर टैप करें",
+      "सिस्टम शेयर मेनू में Xiaomi Share सुविधा जोड़ी गई"
+    ],
+    "डेस्कटॉप": [
+      "जोड़ा गया: Xiaomi Youpin अपडेट"
+    ],
+    "सेटिंग्स": [
+      "जोड़ा गया: इनपुट विधि फुल-स्क्रीन कीबोर्ड ऑप्टिमाइज़ेशन का समर्थन करती है",
+      "प्रिंटिंग सुविधा के उपयोग का अनुभव अनुकूलित किया गया"
+    ],
+    "स्पैम ब्लॉक": [
+      "सिंगल और डुअल SIM के बीच स्विच करते समय ब्लैकलिस्ट ब्लॉकिंग के कभी-कभी विफल होने को ठीक किया गया"
+    ],
+    "Mi AI वॉयस असिस्टेंट": [
+      "जोड़ा गया: अधिक सुविधाजनक APP संचालन, \"拼多多 मोल-भाव खोलें\" कहकर देखें;",
+      "अनुकूलन: अनलॉक अनुभव को अनुकूलित किया गया; Xiao AI अब अनलॉक संचालन को ब्लॉक नहीं करेगा!",
+      "Xiao AI Shortcuts 2.0 को नए सिरे से डिज़ाइन करके बेहतर बनाया गया—देखने में बेहतर और अधिक कुशल! सबसे ज़रूरी जानकारी कार्ड कवर पर है, कभी भी देख सकते हैं।"
+    ],
+    "Xiaomi क्लाउड सेवा": [
+      "उस समस्या को ठीक किया गया जहां डिवाइस ऑनलाइन है लेकिन i.mi.com पर \"डिवाइस खोजें\" डिवाइस को ऑफ़लाइन दिखाता है"
     ]
   }
 }

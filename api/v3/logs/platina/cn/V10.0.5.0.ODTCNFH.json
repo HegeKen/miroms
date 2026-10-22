@@ -1,14 +1,14 @@
 {
   "logs_zh": {
     "系统": [
-      "修复 微信界面锁屏解锁后，快捷按键区域显示异常的问题",
-      "修复 人脸解锁失灵与成功率低的问题"
+      "在解锁屏幕后（该屏幕在使用微信时被锁定了），快捷方式的功能出现了问题/无法正常使用。",
+      "关于面部解锁功能出现的问题（如无法正常使用或解锁失败等）……"
     ],
     "备份": [
-      "修复 从U盘恢复手机中未安装应用，图标显示异常的问题"
+      "当从 USB 设备中恢复那些并未实际安装在设备上的应用程序时，这些应用程序的图标无法被正确显示。"
     ],
     "文件管理器": [
-      "修复  重命名或者解密后的文件无法搜索的问题"
+      "恢复操作失败：无法通过搜索找到那些已被重命名的文件或已被解密的文件。"
     ],
     "其他": [
       "提升系统的安全性和稳定性"
@@ -16,14 +16,14 @@
   },
   "logs_en": {
     "System": [
-      "Restore Issues with shortcuts after unlocking the screen that was locked while using WeChat",
-      "Restore Issues with Face unlock"
+      "Fixed the issue where, after unlocking the WeChat interface from screen lock, the shortcut key area displayed incorrectly.",
+      "Fix the issues with face unlocking not working properly and having a low success rate."
     ],
     "Backup": [
-      "Restore App icons weren't displayed correctly when apps that weren't installed were restored from a USB device"
+      "Fixed the issue where applications not installed on the phone are displayed with abnormal icons when restored from a USB drive."
     ],
     "File Explorer": [
-      "Restore Couldn't find renamed or decrypted items using search"
+      "Fixed the issue where files that have been renamed or decrypted cannot be searched for."
     ],
     "Other": [
       "Improved system security and stability"
@@ -31,14 +31,14 @@
   },
   "logs_zh_tw": {
     "系統": [
-      "修復在微信介面鎖屏後解鎖時，快捷按鍵區域顯示異常的問題",
-      "修復 人臉解鎖失靈與成功率低的問題"
+      "修复了微信界面在锁屏状态解除后，快捷键区域显示异常的问题。",
+      "修复了人脸识别解锁功能失效以及识别成功率较低的问题。"
     ],
-    "備份": [
-      "修復從 USB 隨身碟還原手機中未安裝的應用程式時，圖示顯示異常的問題"
+    "备份（Backup）": [
+      "已修复从 U 盘恢复到手机上的应用程序时出现的以下问题：这些应用程序未被正确安装，其图标显示异常（即图标的形状或样式不正确）。"
     ],
-    "檔案管理員": [
-      "修復重新命名或解密後的檔案無法搜尋的問題"
+    "文件管理器": [
+      "修复了文件被重命名或解密后无法被搜索的问题。"
     ],
     "其他": [
       "Improved system security and stability"
@@ -46,14 +46,14 @@
   },
   "logs_ja": {
     "システム": [
-      "WeChat画面で画面ロック後にロック解除した際、ショートカットキー領域が異常表示される問題を修正",
+      "WeChatのインターフェースでロック画面から解除した後、ショートカットキー領域が異常に表示される問題を修正しました。",
       "顔認証が機能しない問題と成功率が低い問題を修正"
     ],
     "バックアップ": [
-      "USBドライブからスマートフォンに未インストールのアプリを復元する際、アイコンが正しく表示されない問題を修正"
+      "USBメモリからスマートフォンにアプリを復元した際に、インストールされていないアプリのアイコンが異常に表示される問題を修正しました。"
     ],
     "ファイルマネージャー": [
-      "名前変更または復号したファイルを検索できない問題を修正"
+      "ファイルの名前を変更したり復号化した後に、そのファイルが検索できなくなる問題を修正しました。"
     ],
     "その他": [
       "システムのセキュリティと安定性の向上"
@@ -61,14 +61,14 @@
   },
   "logs_ko": {
     "시스템": [
-      "WeChat 화면에서 화면 잠금 후 잠금 해제 시 바로가기 키 영역이 비정상적으로 표시되는 문제 수정",
-      "얼굴 인식이 작동하지 않고 인식 성공률이 낮은 문제를 수정"
+      "WeChat 인터페이스의 잠금 해제 후 단축키 영역이 비정상적으로 표시되는 문제를 수정했습니다.",
+      "얼굴 인식을 통한 잠금 해제 기능이 제대로 작동하지 않거나 성공률이 낮은 문제를 수정했습니다."
     ],
     "백업": [
       "USB 드라이브에서 휴대폰에 설치되지 않은 앱을 복원할 때 아이콘이 비정상적으로 표시되는 문제를 수정했습니다"
     ],
     "파일 관리자": [
-      "이름 변경 또는 암호 해제된 파일을 검색할 수 없는 문제 수정"
+      "이름을 바꾸거나 암호를 해제한 파일을 검색할 수 없는 문제가 수정되었습니다."
     ],
     "기타": [
       "시스템 보안 및 안정성 개선"
@@ -76,14 +76,14 @@
   },
   "logs_ru": {
     "Система": [
-      "Исправлена проблема с некорректным отображением области клавиш быстрого доступа после разблокировки экрана в WeChat",
-      "Исправлена проблема с неработающей разблокировкой по лицу и низкой успешностью распознавания"
+      "Исправлено поведение области быстрых клавиш после разблокировки экрана в WeChat: она отображалась некорректно.",
+      "Устранены проблемы с невозможностью разблокировки устройства по распознаванию лица, а также низким уровнем успешности этого процесса."
     ],
     "Резервное копирование": [
-      "Исправлена проблема с некорректным отображением значков при восстановлении из USB-накопителя приложений, не установленных на телефоне."
+      "Устранено неполадки при восстановлении приложений с флеш-накопителя на телефон: иконы приложений отображаются некорректно."
     ],
-    "Файловый менеджер": [
-      "Исправлена проблема с поиском переименованных или расшифрованных файлов."
+    "Проводник файлов": [
+      "Устранено проблему, при которой файлы после переименования или декриптирования не отображались в результатах поиска."
     ],
     "Другое": [
       "Улучшение безопасности и стабильности системы"
@@ -91,14 +91,14 @@
   },
   "logs_uk": {
     "Система": [
-      "Виправлено проблему з ненормальним відображенням області клавіш швидкого доступу після розблокування екрана в WeChat",
-      "Виправлено проблему з несправною розблокуванням обличчям і низьким відсотком успіху"
+      "Виправлено проблему з некоректним відображенням зони швидких клавіш після розблокування екрана у інтерфейсі WeChat.",
+      "Виправлено проблеми з некоректним функціонуванням розблокування за допомогою обличчя та низьким рівнем успішності цього процесу."
     ],
     "Резервне копіювання": [
-      "Виправлено проблему з неправильним відображенням значків під час відновлення з USB-накопичувача програм, не встановлених на телефоні."
+      "Виправлено проблему з відновленням додатків з флеш-накопичувача на телефон, коли додатки не були встановлені, а їх іконки відображалися некоректно."
     ],
-    "Файловий менеджер": [
-      "Виправлено проблему з пошуком перейменованих або розшифрованих файлів."
+    "Провідник файлів": [
+      "Виправлено проблему, коли файли після перейменування або декодування не можна було знайти під час пошуку."
     ],
     "Інше": [
       "Покращення безпеки та стабільності системи"
@@ -106,29 +106,29 @@
   },
   "logs_pl": {
     "System": [
-      "Naprawiono problem z nieprawidłowym wyświetlaniem obszaru skrótów po odblokowaniu ekranu w WeChat",
-      "Naprawiono problem z niedziałającym odblokowywaniem twarzą i niskim współczynnikiem sukcesu"
+      "Poprawiono problem z wyświetleniem elementów na panelu szybkiego dostępu po odblokowaniu ekranu w aplikacji WeChat.",
+      "Poprawiono problemy z nieefektywnym odkrywaniem oblicza przy rozszyfrowaniu oraz niskim stopniem skuteczności tego procesu."
     ],
     "Kopia zapasowa": [
-      "Naprawiono problem z nieprawidłowym wyświetlaniem ikon podczas przywracania z dysku USB aplikacji niezainstalowanych na telefonie."
+      "Poprawiono problem z przywracaniem aplikacji niezainstalowanych na telefonie z pendrive’a, w wyniku czego ikony te wyświetlały się niepoprawnie."
     ],
     "Menedżer plików": [
-      "Naprawiono problem z wyszukiwaniem plików po zmianie nazwy lub odszyfrowaniu."
+      "Poprawiono problem, gdy po przemianie nazwy lub dekrypcji pliku nie był możliwy jego wyszukiwanie."
     ],
-    "Inne": [
+    "Reszt": [
       "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
   "logs_de": {
     "System": [
-      "Problem mit fehlerhafter Anzeige des Schnellzugriffstastenbereichs nach dem Entsperren des Bildschirms in WeChat behoben",
-      "Problem mit nicht funktionierender Gesichtsentsperrung und niedriger Erfolgsrate behoben"
+      "Behebung des Problems, dass nach dem Entsperren des Bildschirms im WeChat-Interface der Bereich mit den Schnellzugriffstasten falsch angezeigt wird.",
+      "Behebung der Probleme mit fehlgeschlagenem Gesichtserkennungssystem zur Entsperrung sowie der niedrigen Erfolgsrate."
     ],
-    "Sicherung": [
-      "Problem behoben, bei dem App-Symbole falsch angezeigt wurden, wenn nicht auf dem Telefon installierte Apps von einem USB-Laufwerk wiederhergestellt wurden."
+    "Backup": [
+      "Behebung des Problems, bei dem nicht installierte Apps von einer USB-Stick auf das Handy zurückgeführt werden und deren Symbole fehlerhaft angezeigt werden."
     ],
     "Dateimanager": [
-      "Problem behoben, dass umbenannte oder entschlüsselte Dateien nicht gefunden werden konnten."
+      "Behebung des Problems, dass nach der Umbenennung oder Entschlüsselung von Dateien keine Suchfunktion mehr verfügbar ist."
     ],
     "Sonstiges": [
       "Systemsicherheit und -stabilität verbessert"
@@ -136,14 +136,14 @@
   },
   "logs_fr": {
     "Système": [
-      "Correction du problème d'affichage anormal de la zone des raccourcis après le déverrouillage de l'écran dans WeChat",
-      "Correction du problème de déverrouillage facial défaillant et de faible taux de réussite"
+      "Résolution du problème : après déverrouillage de l'écran verrouillé sur WeChat, la zone des raccourcis affiche un contenu anormal.",
+      "Réparation des problèmes de dysfonctionnement du déverrouillage par reconnaissance faciale ainsi que d'un taux de réussite trop bas."
     ],
-    "Sauvegarde": [
-      "Correction du problème d’affichage incorrect des icônes lors de la restauration depuis une clé USB d’applications non installées sur le téléphone."
+    "Copie de sécurité": [
+      "Résolution du problème : les applications qui n’ont pas été installées sur le téléphone et qui sont récupérées depuis une clé USB affichent des icônes anormales."
     ],
     "Gestionnaire de fichiers": [
-      "Correction du problème empêchant la recherche des fichiers renommés ou déchiffrés."
+      "Résolution du problème selon lequel les fichiers renommés ou déchiffrés ne peuvent pas être recherchés."
     ],
     "Autre": [
       "Sécurité et stabilité du système améliorées"
@@ -152,9 +152,12 @@
   "logs_it": {
     "Sistema": [
       "Risolto il problema di visualizzazione anomala dell'area dei tasti di scelta rapida dopo lo sblocco dello schermo in WeChat",
-      "Risolto il problema del riconoscimento facciale non funzionante e del basso tasso di successo"
+      "Risolto il problema del funzionamento errato del riconoscimento facciale per l’accesso e dell’elevata incidenza di fallimenti nel processo di sblocco."
     ],
-    "Gestione file": [
+    "Backup": [
+      "Risolto il problema relativo al recupero di applicazioni non installate dal telefono tramite chiavetta USB: gli iconi delle applicazioni venivano visualizzati in modo errato."
+    ],
+    "File Manager": [
       "Risolto il problema per cui i file rinominati o decifrati non potevano essere cercati."
     ],
     "Altro": [
@@ -163,14 +166,14 @@
   },
   "logs_es": {
     "Sistema": [
-      "Se corrigió el problema de visualización anómala del área de botones de acceso rápido tras desbloquear la pantalla en WeChat",
-      "Se corrigió el problema de desbloqueo facial que no funciona y la baja tasa de éxito"
+      "Se ha corregido el problema en la interfaz de WeChat: después de desbloquear la pantalla con el patrón, la zona de los botones rápidos no se muestra correctamente.",
+      "Se han corregido los problemas de fallo en el desbloqueo por reconocimiento facial, así como la baja tasa de éxito de este proceso."
     ],
-    "Copia de seguridad": [
-      "Se corrigió el problema de visualización incorrecta de los iconos al restaurar desde una unidad USB aplicaciones no instaladas en el teléfono."
+    "Reserva de datos": [
+      "Se ha corregido el problema en el que, al recuperar aplicaciones de un pendrive a un teléfono móvil y si dichas aplicaciones no están instaladas, sus iconos se muestran de manera anormal."
     ],
     "Administrador de archivos": [
-      "Se corrigió el problema que impedía buscar archivos renombrados o descifrados."
+      "Se ha corregido el problema de que los archivos renombrados o desencriptados no podían ser buscados."
     ],
     "Otros": [
       "Estabilidad y seguridad del sistema mejorada"
@@ -178,14 +181,14 @@
   },
   "logs_pt": {
     "Sistema": [
-      "Corrigido o problema de exibição anormal da área de teclas de atalho após desbloquear a tela no WeChat",
-      "Corrigido o problema de desbloqueio facial não funcionar e da baixa taxa de sucesso"
+      "Corrigido o problema em que, após desbloquear o ecrã bloqueado do WeChat, a área dos botões de atalho apresentava um comportamento anormal.",
+      "Corrigir os problemas de falha no desbloqueio por reconhecimento facial, bem como a baixa taxa de sucesso nesse processo."
     ],
     "Cópia de segurança": [
-      "Corrigido o problema de exibição incorreta dos ícones ao restaurar de uma unidade USB aplicativos não instalados no telefone."
+      "Corrigido o problema em que, ao recuperar aplicativos de um pen drive para um telemóvel e estes não estarem instalados, os ícones eram exibidos de forma anormal."
     ],
     "Gerenciador de arquivos": [
-      "Corrigido o problema que impedia pesquisar arquivos renomeados ou descriptografados."
+      "Corrigido o problema em que os ficheiros renomeados ou desencriptados não podiam ser pesquisados."
     ],
     "Outros": [
       "Segurança e estabilidade do sistema aprimoradas"
@@ -193,11 +196,11 @@
   },
   "logs_tr": {
     "Sistem": [
-      "WeChat ekranında ekran kilidi açıldıktan sonra kısayol tuşları alanının anormal görünmesi sorunu giderildi",
-      "Yüz kilidinin çalışmaması ve düşük başarı oranı sorunu düzeltildi"
+      "WeChat arayüzünün kilit ekranının açılmasından sonra, hızlı tuş alanında görülen anormallik sorunu düzeltildi.",
+      "Yüz tanıma ile kilidin açılmasında yaşanan sorunları ve düşük başarı oranlarını giderin."
     ],
     "Yedekleme": [
-      "USB sürücüsünden telefonda yüklü olmayan uygulamalar geri yüklenirken simgelerin yanlış görüntülenmesi sorunu giderildi."
+      "USB bellekten telefonunuza geri yüklediğinizde, telefonda yüklü olmayan uygulamaların simgelerinin yanlış şekilde görünmesi sorununu düzelttik."
     ],
     "Dosya Yöneticisi": [
       "Yeniden adlandırılan veya şifresi çözülen dosyaların aranamaması sorunu giderildi."
@@ -208,13 +211,13 @@
   },
   "logs_id": {
     "Sistem": [
-      "Memperbaiki masalah tampilan area tombol pintas yang tidak normal setelah membuka kunci layar di WeChat",
-      "Memperbaiki masalah buka kunci wajah yang tidak berfungsi dan tingkat keberhasilan rendah"
+      "Diperbaiki masalah di mana setelah layar WeChat terkunci dibuka kembali, area tombol pintas menampilkan tampilan yang tidak normal.",
+      "Memperbaiki masalah ketidakfungsian fitur pembukaan kunci berbasis wajah, serta tingkat keberhasilan yang rendah dalam proses tersebut."
     ],
     "Cadangan": [
-      "Memperbaiki masalah ikon yang ditampilkan secara tidak normal saat memulihkan aplikasi yang tidak terpasang di ponsel dari drive USB."
+      "Memperbaiki masalah di mana aplikasi yang tidak terinstal di ponsel tidak dapat dipulihkan dari flash disk (USB), dan ikonnya menampilkan tampilan yang tidak normal."
     ],
-    "Pengelola File": [
+    "File Manager": [
       "Memperbaiki masalah file yang diganti nama atau didekripsi tidak dapat dicari."
     ],
     "Lainnya": [
@@ -223,14 +226,14 @@
   },
   "logs_vi": {
     "Hệ thống": [
-      "Đã khắc phục sự cố vùng phím tắt hiển thị bất thường sau khi mở khóa màn hình trong WeChat",
-      "Đã khắc phục sự cố nhận diện khuôn mặt không hoạt động và tỷ lệ thành công thấp"
+      "Đã sửa lỗi: Sau khi màn hình của WeChat được khóa và sau khi màn hình được mở khóa, khu vực các phím tắt (shortcut keys) bị hiển thị không đúng như mong muốn.",
+      "Khắc phục các sự cố liên quan đến việc mở khóa bằng khuôn mặt không hoạt động đúng chức năng và tỷ lệ thành công thấp."
     ],
-    "Sao lưu": [
-      "Đã khắc phục sự cố biểu tượng hiển thị không đúng khi khôi phục ứng dụng chưa cài đặt trên điện thoại từ ổ USB."
+    "Dự phòng (Backup)": [
+      "Đã sửa lỗi: Khi khôi phục các ứng dụng từ thẻ nhớ USB vào điện thoại mà những ứng dụng đó chưa được cài đặt, biểu tượng của chúng hiển thị bất thường."
     ],
     "Trình quản lý tệp": [
-      "Đã khắc phục sự cố không thể tìm kiếm tệp đã đổi tên hoặc giải mã."
+      "Khắc phục sự cố khi các tệp tin sau khi được đổi tên hoặc giải mã không thể được tìm kiếm."
     ],
     "Khác": [
       "Cải thiện tính ổn định và bảo mật hệ thống"
@@ -238,11 +241,11 @@
   },
   "logs_th": {
     "ระบบ": [
-      "แก้ไขปัญหาพื้นที่ปุ่มลัดแสดงผลผิดปกติหลังจากปลดล็อกหน้าจอใน WeChat",
+      "แก้ไขปัญหาที่หน้าจอล็อคของ WeChat หลังจากปลดล็อคแล้ว พื้นที่ของปุ่มต่างๆ ไม่แสดงผลอย่างถูกต้อง",
       "แก้ไขปัญหาการปลดล็อกด้วยใบหน้าไม่ทำงานและอัตราความสำเร็จต่ำ"
     ],
     "สำรองข้อมูล": [
-      "แก้ไขปัญหาการแสดงไอคอนผิดปกติเมื่อกู้คืนแอปที่ยังไม่ได้ติดตั้งบนโทรศัพท์จากไดรฟ์ USB"
+      "แก้ไขปัญหาเมื่อพยายามคืนแอปพลิเคชันที่ไม่ได้ติดตั้งไว้ในโทรศัพท์จากแผ่น USB โดยไอคอนของแอปพลิเคชันแสดงผลอย่างผิดปกติ"
     ],
     "ตัวจัดการไฟล์": [
       "แก้ไขปัญหาการค้นหาไฟล์ที่เปลี่ยนชื่อหรือถอดรหัสแล้วไม่ได้"
@@ -253,40 +256,60 @@
   },
   "logs_ar": {
     "النظام": [
-      "إصلاح مشكلة عرض منطقة أزرار الاختصار بشكل غير طبيعي بعد إلغاء قفل الشاشة في WeChat",
-      "إصلاح مشكلة تعذر فتح القفل بالوجه وانخفاض معدل النجاح"
+      "تم إصلاح المشكلة التي كانت تظهر فيها منطقة الأزرار السريعة بشكل غير صحيح بعد فتح شاشة قفل ويتشات.",
+      "إصلاح مشاكل عدم فعالية نظام فتح القفل باستخدام بيانات الوجه، بالإضافة إلى انخفاض معدل نجاح هذا النظام."
     ],
     "النسخ الاحتياطي": [
-      "إصلاح مشكلة عرض الرموز بشكل غير صحيح عند استعادة التطبيقات غير المثبّتة على الهاتف من محرك أقراص USB."
+      "تم إصلاح المشكلة التي كانت تظهر فيها أيقونات التطبيقات غير المثبتة على الهاتف بشكل غير صحيح عند استعادتها من وحدة التخزين الخارجية (USB)."
     ],
     "مدير الملفات": [
       "إصلاح مشكلة عدم إمكانية البحث عن الملفات المعاد تسميتها أو التي تم فك تشفيرها."
     ],
-    "أخرى": [
+    "آخرين": [
       "تحسين أمن واستقرار النظام"
     ]
   },
   "logs_in": {
     "सिस्टम": [
-      "WeChat इंटरफ़ेस में स्क्रीन लॉक होने के बाद अनलॉक करने पर शॉर्टकट बटन क्षेत्र के असामान्य रूप से दिखने की समस्या ठीक की गई",
-      "चेहरा अनलॉक काम न करने और कम सफलता दर की समस्या ठीक की गई"
+      "व्हाइटसैप इंटरफेस की स्क्रीन-लॉक सुविधा को अनलॉक करने के बाद, शॉर्टकट बटनों का क्षेत्र असामान्य रूप से प्रदर्शित होने की समस्या को ठीक कर दिया गया है।",
+      "चेहरे की पहचान से लॉक खोलने की प्रक्रिया में होने वाली समस्याओं एवं कम सफलता दर को ठीक करें।"
     ],
     "बैकअप": [
-      "फ़ोन पर इंस्टॉल न किए गए ऐप्स को USB ड्राइव से बहाल करते समय आइकन गलत तरीके से दिखने की समस्या ठीक की गई।"
+      "समस्या का समाधान: जब आप यूडिस्क (USB Drive) के माध्यम से अपने फोन में ऐसे एप्लिकेशन वापस लाते हैं जो आपके फोन पर पहले से इंस्टॉल नहीं हैं, तो उन एप्लिकेशनों के आइकन असामान्य रूप से दिखाई देते हैं।"
     ],
     "फ़ाइल प्रबंधक": [
-      "नाम बदली या डिक्रिप्ट की गई फ़ाइलों को खोज न पाने की समस्या ठीक की गई।"
+      "उस समस्या को ठीक किया गया है जिसके कारण पुनर्नामित या डिक्रिप्ट किए गए फ़ाइलों की खोज नहीं हो पाती थी।"
     ],
     "अन्य": [
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
     ]
   },
   "logs_ug": {
+    "سىستېما": [
+      "WeChat ئىنتېرفېيسىدا قۇلۇپلىنىش ھالىتىدىن قۇلاق لانغاندىن كېيىن ، تېز ئىشلەتكۈچ كونۇپكا رايونىنىڭ نورمال كۆرسىتىل مەسلىك مەسىلىسىنى تۈزدۈق.",
+      "يۈز ئىمزا ئارقىلىق قۇلۇپ ئاچىش فۇنكسىيەسىنىڭ كاردىن چىقىشى ۋە مۇۋەپپەقىيەت نىسبىتىنىڭ تۆۋەن بولۇش مەسىلىسىنى ئوڭشايمىز."
+    ],
+    "زاپاس كۆپەيتمە": [
+      "USB فلەشنىڭ ياردىمى بىلەن تېلېفونغا قايتۇرۇلغان ، لېكىن تېلېفونغا ئورنىتىلمىغان دىتاللارنىڭ ئىكونى نورمال كۆرسىتىلمەيدىغان مەسىلىسىنى تۈزەش"
+    ],
+    "ھۆججەت باشقۇرغۇچ": [
+      "ئۆزگەرتىلگەن ، قايتا نام بېرىلگەن ياكى شىفىرى ئېچىلغان فايل لارنى ئىزدەش مۇمكىن بولماسلىق مەسىلىسىنى تۈزەتتۇق."
+    ],
     "باشقىلىرى": [
       "Improved system security and stability"
     ]
   },
   "logs_bo": {
+    "མ་ལག": [
+      "WeChat་ཡི་མཚོན་རྟེགས་ཀྱི་བཀག་སྒོ་ཕྱེ་རྗེས།མྱུར་སྤྱོད་ཚོད་མཐུད་ཁུལ་གྱི་མངོན་ཚུལ་ཡོངས་སུ་མི་འགྲིག་པའི་གནད་དོན་ཐག་གཅོད།",
+      "གདོང་བརྙན་ལ་བརྟེན་ནས་ཐེ་གཏོགས་བྱེད་པའི་མ་ལག་ཆག་པ་དང་།ཐེ་གཏོགས་བྱེད་པའི་རྒྱུགས་ཚད་དམའ་བ་བཅས་ཀྱི་གནད་དོན་ཐག་གཅོད་བྱེད།"
+    ],
+    "ཉར་གསོག": [
+      "U་Disk་ནས་ཁ་པར་ལ་ཕྱིར་གསོག་བྱས་པའི་དུས་བཀོལ་མེད་པའི་ཡིག་རྒྱུགས（Application）ཚན་པའི་རི་མོ（Icon）ཡོད་ཚད་རྒྱུན་ལྡན་མིན་པའི་གནད་དོན་ཐག་གཅོད།"
+    ],
+    "ཡིག་ཆའི་དོ་དམ་ཆས": [
+      "ཡིག་ཆ་བསྐྱར་མིང་འགོད་པའམ་གསང་གྲུབ་མེད་པར་བཟོས་རྗེས་འཚོལ་ཞིབ་བྱེད་མི་ཐུབ་པའི་གནད་དོན་ཐག་གཅོད།"
+    ],
     "གཞན།": [
       "Improved system security and stability"
     ]

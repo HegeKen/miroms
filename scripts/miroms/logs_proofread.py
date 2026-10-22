@@ -895,10 +895,12 @@ class LogProofreader:
 			   only_priority: bool = True, limit: int = 0,
 			   cache_path: Optional[str] = None,
 			   min_confidence: float = 0.0,
-			   on_progress=None) -> Dict[str, Any]:
+			   on_progress=None, on_decisions=None) -> Dict[str, Any]:
 		"""逐 family 调 DeepSeek，返回去重后的 decisions
 
 		cache_path 为 JSON 缓存：同一 prompt 不重复计费，可中断后续跑。
+		on_decisions 在每个 family 解析完成后收到本批被采纳的 decisions，
+		供调用方立即落库（proofed / lang_issues），避免长跑中断丢标注。
 		"""
 		cache: Dict[str, Any] = {}
 		cache_file = Path(cache_path) if cache_path else None
@@ -938,15 +940,19 @@ class LogProofreader:
 										  encoding='utf-8')
 			if on_progress:
 				on_progress(index, len(selected), family, cached)
+			accepted: List[Dict[str, Any]] = []
 			for decision in cls.parse_decisions(payload, family):
 				if decision['confidence'] < min_confidence:
 					continue
 				previous = decisions.get(decision['row_id'])
 				if previous is None or decision['confidence'] > previous['confidence']:
 					decisions[decision['row_id']] = decision
+					accepted.append(decision)
 				elif (decision['confidence'] == previous['confidence']
 					  and decision['suggested_zh'] != previous['suggested_zh']):
 					previous['conflict'] = True
+			if on_decisions and accepted:
+				on_decisions(accepted)
 		return {
 			'generated_at': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
 			'families': len(selected),

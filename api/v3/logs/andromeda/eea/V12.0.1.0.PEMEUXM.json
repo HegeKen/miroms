@@ -63,7 +63,8 @@
     "App lock": [
       "Optimization: App lock verification page",
       "Fix: Fingerprint icon wasn't shown in some cases",
-      "Fix: Status bar wasn't displayed correctly in some cases"
+      "Fix: Status bar wasn't displayed correctly in some cases",
+      "Fixed the abnormal status bar issue when quickly entering and exiting App lock"
     ],
     "Status bar, Notification shade": [
       "New: Screen lights up with an animation now",
@@ -72,7 +73,8 @@
     ],
     "Browser": [
       "New: Local search",
-      "New: Downloading videos from popular websites"
+      "New: Downloading videos from popular websites",
+      "Added support for downloading videos from popular websites"
     ],
     "Battery usage": [
       "New: Multiple optimizations for Battery saver",
@@ -107,7 +109,8 @@
     "應用鎖": [
       "優化: 應用鎖驗證頁顯示效果",
       "修復: 部分情況不顯示指紋圖示的問題",
-      "修復: 快速進入和關閉應用鎖的時候狀態列異常問題"
+      "修復: 快速進入和關閉應用鎖的時候狀態列異常問題",
+      "修復快速進入和關閉應用程式鎖時狀態列異常的問題"
     ],
     "狀態欄、通知欄": [
       "新增: 手機螢幕喚醒動畫特效",
@@ -116,7 +119,9 @@
     ],
     "瀏覽器": [
       "新增: 瀏覽器本地搜尋功能",
-      "新增: 熱門網站的影片下載功能"
+      "新增: 熱門網站的影片下載功能",
+      "新增 本機搜尋功能",
+      "新增 熱門網站影片下載功能"
     ],
     "省電優化": [
       "新增: 省電模式新增多項優化，如：關閉觸控反饋，抬起喚醒等",
@@ -144,6 +149,10 @@
     "ダークモード": [
       "最適化: ダークモード時の壁紙の明るさと色彩が改善されました"
     ],
+    "システム": [
+      "最適化: DNDモードの不要なサウンド通知を削除しました",
+      "Android セキュリティパッチを2020年7月に更新しました。システムの安全性を向上しました。"
+    ],
     "アプリロック": [
       "最適化: アプリロックの認証ページ",
       "修正: 指紋アイコンが表示されない場合がある問題",
@@ -153,6 +162,12 @@
       "新機能: 画面がアニメーションで点灯するようになりました",
       "新機能: ステータスバーのカラーグラデーションアニメーション",
       "修复 深色模式下部分场景状态栏显示异常的问题"
+    ],
+    "ブラウザー": [
+      "新機能: ブラウザのローカル検索",
+      "新規: 人気サイトからの動画ダウンロード機能",
+      "新機能: ローカル検索機能",
+      "新機能: 人気サイトの動画ダウンロード機能"
     ],
     "バッテリー使用量": [
       "新機能: バッテリーセーバーの複数の最適化",
@@ -167,10 +182,6 @@
       "最適化: 着信時にコントロールセンターが閉じられるようになりました",
       "最適化: 長押しリダイレクションオプション",
       "修正: コントロールセンターが横向きモードで正しく表示されない問題"
-    ],
-    "ブラウザー": [
-      "新機能: ローカル検索機能",
-      "新機能: 人気サイトの動画ダウンロード機能"
     ]
   },
   "logs_ko": {
@@ -184,6 +195,10 @@
     "다크 모드": [
       "최적화: 다크 모드 실행 중 배경화면의 밝기 및 색상 강화"
     ],
+    "시스템": [
+      "최적화: 방해금지 모드에서의 불필요한 알림음 제거됨",
+      "Android 보안 패치를 2020년 7월로 업데이트했습니다. 시스템 보안이 향상되었습니다."
+    ],
     "앱 잠금": [
       "최적화: 앱 잠금 인증 페이지",
       "수정: 일부 상황에서 지문 아이콘이 표시되지 않는 문제",
@@ -193,6 +208,12 @@
       "New: 애니메이션 효과에 화면 밝힘 효과 추가",
       "New: 상태 바 컬러 그라데이션 애니메이션",
       "修复 深色模式下部分场景状态栏显示异常的问题"
+    ],
+    "브라우저": [
+      "새 기능: 브라우저 로컬 검색",
+      "신규: 인기 사이트에서 동영상 다운로드 기능",
+      "New: 로컬 검색",
+      "New: 인기 웹사이트에서 동영상 다운로드"
     ],
     "배터리 사용량": [
       "New: 배터리 절약을 위한 여러 가지 최적화",
@@ -207,10 +228,6 @@
       "최적화: 통화가 수신되면 제어 센터를 종료",
       "최적화: 길게 눌러 리디렉션 옵션",
       "수정: 풍경 모드에서 제어 센터가 제대로 표시되지 않는 현상"
-    ],
-    "브라우저": [
-      "New: 로컬 검색",
-      "New: 인기 웹사이트에서 동영상 다운로드"
     ]
   },
   "logs_ru": {
@@ -224,6 +241,10 @@
     "Темный режим": [
       "Оптимизация: Оптимизация яркости и цветов для обоев в Темном режиме"
     ],
+    "Система": [
+      "Оптимизация: Устранены звуковые уведомления в режиме Не беспокоить",
+      "Патч безопасности Android обновлен до июля 2020 года. Повышена безопасность системы."
+    ],
     "Защита приложений": [
       "Оптимизация: Интерфейс защиты приложений",
       "Исправлено: В некоторых случаях мог не отображаться значок отпечатка пальца",
@@ -233,6 +254,12 @@
       "Новое: Добавлена новая анимация активации дисплея",
       "Новое: Анимация градиента строки состояния",
       "修复 深色模式下部分场景状态栏显示异常的问题"
+    ],
+    "Браузер": [
+      "Новое: локальный поиск в браузере",
+      "Новое: функция загрузки видео с популярных сайтов",
+      "Новое: Добавлен локальный поиск",
+      "Новое: Добавлена возможность загрузки видео с популярных платформ"
     ],
     "Потребление энергии": [
       "Новое: Несколько параметров оптимизации для \"Экономии энергии\"",
@@ -247,10 +274,6 @@
       "Оптимизация: Теперь Центр управления закрывается при получении входящих вызовов",
       "Оптимизация: Долгое нажатие для быстрого перехода",
       "Исправлено: Центр управления не всегда отображался правильно в альбомном режиме"
-    ],
-    "Браузер": [
-      "Новое: Добавлен локальный поиск",
-      "Новое: Добавлена возможность загрузки видео с популярных платформ"
     ]
   },
   "logs_uk": {
@@ -264,6 +287,10 @@
     "Темний режим": [
       "Оптимізація: Поліпшення яскравості і кольору для шпалер в Темному режимі"
     ],
+    "Система": [
+      "Оптимізація: Виделено непотрібні звукові сповіщення у режимі \"Не трубувати\"",
+      "Оновлено патч безпеки Android до липня 2020 року. Підвищено безпеку системи."
+    ],
     "Блокування програм": [
       "Оптимізація: Сторінка перевірки блокування додатків",
       "Виправлено: В деяких випадках міг не відображатися значок відбитка пальця",
@@ -273,6 +300,12 @@
       "Нове: Тепер екран вмикається разом з анімацією",
       "Нове: Анімація градієнта рядка стану",
       "修复 深色模式下部分场景状态栏显示异常的问题"
+    ],
+    "Браузер": [
+      "Нове: локальний пошук у браузері",
+      "Нове: функція завантаження відео з популярних сайтів",
+      "Нове: Локальний пошук",
+      "Нове: Завантаження відео з популярних веб-сайтів"
     ],
     "Живлення": [
       "Нове: Численні оптимізації для режиму енергозбереження",
@@ -292,10 +325,6 @@
       "Оптимізація: Сторінка перевірки блокування додатків",
       "Виправлено: В деяких випадках міг не відображатися значок відбитка пальця",
       "Виправлено: Рядок стану не відображався належним чином у деяких випадках"
-    ],
-    "Браузер": [
-      "Нове: Локальний пошук",
-      "Нове: Завантаження відео з популярних веб-сайтів"
     ]
   },
   "logs_pl": {
@@ -309,6 +338,10 @@
     "Tryb ciemny": [
       "Zoptymalizowano: Poprawa jasności i kolorów tapet w trybie ciemnym"
     ],
+    "System": [
+      "Zoptymalizowano: Usunięto niepotrzebne sygnały dźwiękowe dla trybu nie przeszkadzać",
+      "Zaktualizowano poprawkę zabezpieczeń Android do lipca 2020 r. Zwiększono bezpieczeństwo systemu."
+    ],
     "Blokada aplikacji": [
       "Zoptymalizowano: Strona weryfikacji Blokady aplikacji",
       "Naprawiono: W niektórych przypadkach ikona odcisku palca nie była wyświetlana",
@@ -318,6 +351,12 @@
       "Nowe: Ekran włącza się teraz z animacją",
       "Nowe: Animacja w kolorze gradientu na pasku statusu",
       "修复 深色模式下部分场景状态栏显示异常的问题"
+    ],
+    "Przeglądarka": [
+      "Nowość: wyszukiwanie lokalne w przeglądarce",
+      "Nowość: funkcja pobierania filmów z popularnych witryn",
+      "Nowe: Lokalne wyszukiwanie",
+      "Nowe: Pobieranie wideo z popularnych witryn internetowych"
     ],
     "Zużycie baterii": [
       "Nowe: Wiele optymalizacji Oszczędzania baterii",
@@ -337,10 +376,6 @@
       "Zoptymalizowano: Strona weryfikacji Blokady aplikacji",
       "Naprawiono: W niektórych przypadkach ikona odcisku palca nie była wyświetlana",
       "Naprawiono: W niektórych przypadkach pasek statusu nie był wyświetlany poprawnie"
-    ],
-    "Przeglądarka": [
-      "Nowe: Lokalne wyszukiwanie",
-      "Nowe: Pobieranie wideo z popularnych witryn internetowych"
     ]
   },
   "logs_de": {
@@ -350,10 +385,26 @@
     "Dunkelmodus": [
       "Optimierung: Verbesserte Helligkeit und Farben für Hintergrundbilder im Dunkelmodus."
     ],
+    "System": [
+      "Optimierung: Unnötige Tonbenachrichtigungen für den Nicht-Stören-Modus entfernt",
+      "Android-Sicherheitspatch auf Juli 2020 aktualisiert. Systemsicherheit erhöht."
+    ],
+    "App-Sperre": [
+      "Optimierung: Darstellung der Verifizierungsseite der App-Sperre",
+      "Behoben: Fingerabdrucksymbol wurde in manchen Fällen nicht angezeigt",
+      "Behebt ein Problem mit der Statusleiste beim schnellen Öffnen und Schließen der App-Sperre.",
+      "Statusleistenfehler beim schnellen Öffnen und Schließen der App-Sperre behoben"
+    ],
     "Statusleiste, Benachrichtigungsleiste": [
       "Neu: Der Bildschirm leuchtet jetzt mit einer Animation auf",
       "Neu: Farbverlaufsanimation der Statusleiste",
       "修复 深色模式下部分场景状态栏显示异常的问题"
+    ],
+    "Browser": [
+      "Neu: Lokale Suche im Browser",
+      "Neu: Videodownload von beliebten Websites",
+      "Neu: Lokale Suche",
+      "Videodownload von beliebten Websites hinzugefügt"
     ],
     "Kontrollzentrum": [
       "Neu: Streichen Sie von oben links nach unten, um das Mitteilungsfeld zu öffnen, und von oben rechts nach unten, um das Kontrollzentrum zu öffnen.",
@@ -374,6 +425,10 @@
     "Mode Sombre": [
       "Optimisation: Améliorations de la luminosité et de la couleur pour les fonds d' écrans en Mode sombre"
     ],
+    "Système": [
+      "Optimisation: A retiré les sons de notifications inutiles pour le mode DND",
+      "Correctif de sécurité Android mis à jour vers juillet 2020. Sécurité du système renforcée."
+    ],
     "Verrouillage d'application": [
       "Optimisation: Page de vérification du verrouillage de l'application",
       "Réparé: L'icône d'empreinte digitale n'était pas affichée dans certains cas",
@@ -383,6 +438,12 @@
       "Nouveau: L'écran s'allume avec une animation maintenant",
       "Nouveau: Animation couleur gradiente de la barre d'état",
       "修复 深色模式下部分场景状态栏显示异常的问题"
+    ],
+    "Navigateur": [
+      "Nouveau : recherche locale dans le navigateur",
+      "Nouveau : fonction de téléchargement de vidéos depuis des sites populaires",
+      "Nouveau: Recherche locale",
+      "Nouveau: Téléchargement de vidéos à partir de sites Web populaires"
     ],
     "Utilisation de la batterie": [
       "Nouveau: Optimisations multiples pour l'économiseur de batterie",
@@ -402,10 +463,6 @@
       "Optimisation: Page de vérification du verrouillage de l'application",
       "Réparé: L'icône d'empreinte digitale n'était pas affichée dans certains cas",
       "Réparé: La barre d'état ne s'affichait pas correctement dans certains cas"
-    ],
-    "Navigateur": [
-      "Nouveau: Recherche locale",
-      "Nouveau: Téléchargement de vidéos à partir de sites Web populaires"
     ]
   },
   "logs_it": {
@@ -419,6 +476,10 @@
     "Modalità Scura": [
       "Ottimizzazione: Luminosità e colore migliorati per gli sfondi in modalità Scura"
     ],
+    "Sistema": [
+      "Ottimizzazione: Rimosse notifiche audio non necessarie per la modalità Non Disturbare",
+      "Patch di sicurezza Android aggiornata a luglio 2020. Sicurezza del sistema migliorata."
+    ],
     "Blocco app": [
       "Ottimizzazione: Pagina di verifica del blocco app",
       "Risolto: L'icona dell'impronta digitale non veniva visualizzata in alcuni casi",
@@ -428,6 +489,12 @@
       "Nuovo: Ora lo schermo si illumina con un'animazione",
       "Nuovo: Animazione con sfumatura di colore per la barra di stato",
       "修复 深色模式下部分场景状态栏显示异常的问题"
+    ],
+    "Browser": [
+      "Novità: ricerca locale nel browser",
+      "Novità: funzione di download dei video dai siti più popolari",
+      "Nuovo: Ricerca locale",
+      "Nuovo: Download di video da siti Web popolari"
     ],
     "Utilizzo batteria": [
       "Nuovo: Molteplici ottimizzazioni per Risparmio energetico",
@@ -442,10 +509,6 @@
       "Ottimizzazione: Il Centro di controllo viene ora chiuso dalle chiamate in arrivo",
       "Ottimizzazione: Tieni premute le opzioni di reindirizzamento",
       "Risolto: Il Centro di controllo non veniva sempre visualizzato correttamente in modalità orizzontale"
-    ],
-    "Browser": [
-      "Nuovo: Ricerca locale",
-      "Nuovo: Download di video da siti Web popolari"
     ]
   },
   "logs_es": {
@@ -459,6 +522,10 @@
     "Modo oscuro": [
       "Optimización: Mejoras del brillo y del color para fondos de pantalla en el Modo oscuro"
     ],
+    "Sistema": [
+      "Optimización: Las notificaciones con sonido innecesarias han sido eliminadas del Modo no molestar",
+      "Parche de seguridad de Android actualizado a julio de 2020. Seguridad del sistema mejorada."
+    ],
     "Bloqueo de aplicaciones": [
       "Optimización: Página de verificación del Bloqueo de aplicaciones",
       "Reparado: El icono de huella dactilar no se mostraba en algunos casos",
@@ -468,6 +535,12 @@
       "Nuevo: Ahora la pantalla se enciende con una animación",
       "Nuevo: Animación de degradado de la barra de estado",
       "修复 深色模式下部分场景状态栏显示异常的问题"
+    ],
+    "Navegador": [
+      "Nuevo: búsqueda local en el navegador",
+      "Nuevo: función para descargar vídeos de sitios populares",
+      "Nuevo: Búsqueda local",
+      "Nuevo: Descarga de vídeos de sitios web populares"
     ],
     "Uso de la batería": [
       "Nuevo: Varias optimizaciones para el Ahorro de batería",
@@ -482,10 +555,6 @@
       "Optimización: El Centro de control ahora es cerrado por las llamadas entrantes",
       "Optimización: Mantén pulsadas las opciones de redirección",
       "Reparado: El Centro de control no siempre se mostraba correctamente en el modo paisaje"
-    ],
-    "Navegador": [
-      "Nuevo: Búsqueda local",
-      "Nuevo: Descarga de vídeos de sitios web populares"
     ]
   },
   "logs_pt": {
@@ -499,6 +568,10 @@
     "Modo Escuro": [
       "Otimização: Melhorias nas cores e no brilho para planos de fundo no Modo Escuro"
     ],
+    "Sistema": [
+      "Otimização: Sons de notificação desnecessários removidos do modo Não perturbe",
+      "Patch de segurança do Android atualizado para julho de 2020. Segurança do sistema aprimorada."
+    ],
     "Bloqueio de aplicativos": [
       "Otimização: Página de verificação do Bloqueio de apps",
       "Correção: O ícone de impressão digital não era exibido em alguns casos",
@@ -508,6 +581,12 @@
       "Novo: Agora a tela acende com animações",
       "Novo: Animação de cores em gradiente na barra de status",
       "修复 深色模式下部分场景状态栏显示异常的问题"
+    ],
+    "Navegador": [
+      "Novo: pesquisa local no navegador",
+      "Novo: função de download de vídeos de sites populares",
+      "Novo: Pesquisa local",
+      "Novo: Baixe vídeos de sites populares"
     ],
     "Uso de bateria": [
       "Novo: Várias otimizações para a Economia de bateria",
@@ -527,10 +606,6 @@
       "Otimização: Página de verificação do Bloqueio de apps",
       "Correção: O ícone de impressão digital não era exibido em alguns casos",
       "Correção: A Barra de status não é exibida corretamente em alguns casos"
-    ],
-    "Navegador": [
-      "Novo: Pesquisa local",
-      "Novo: Baixe vídeos de sites populares"
     ]
   },
   "logs_tr": {
@@ -544,6 +619,10 @@
     "Karanlık mod": [
       "Optimizasyon: Karanlık modda duvar kağıtları için parlaklık ve renk geliştirmeleri"
     ],
+    "Sistem": [
+      "Optimizasyon: Rahatsız Etme modu için gereksiz sesli bildirimler kaldırıldı",
+      "Android güvenlik yaması Temmuz 2020'ye güncellendi. Sistem güvenliği artırıldı."
+    ],
     "Uygulama kilidi": [
       "Optimizasyon: Uygulama kilidi doğrulama sayfası",
       "Onarım: Parmak izi simgesi bazı durumlarda gösterilmedi",
@@ -553,6 +632,12 @@
       "Yeni: Ekran şimdi bir animasyonla aydınlanıyor",
       "Yeni: Durum çubuğu renk düşüm animasyonu",
       "修复 深色模式下部分场景状态栏显示异常的问题"
+    ],
+    "Tarayıcı": [
+      "Yeni: tarayıcıda yerel arama",
+      "Yeni: popüler sitelerden video indirme özelliği",
+      "Yeni: Yerel arama",
+      "Yeni: Popüler internet sitelerinden videolar indiriliyor"
     ],
     "Pil kullanımı": [
       "Yeni: Pil tasarrufu için çoklu optimizasyon",
@@ -567,10 +652,6 @@
       "Optimizasyon: Kontrol merkezi şimdi gelen aramalarla kapatıldı",
       "Optimizasyon: Yönlendirme seçeneklerine basılı tutun",
       "Onarım: Kontrol merkezi, manzara modunda doğru bir şekilde görüntülenmedi"
-    ],
-    "Tarayıcı": [
-      "Yeni: Yerel arama",
-      "Yeni: Popüler internet sitelerinden videolar indiriliyor"
     ]
   },
   "logs_id": {
@@ -584,10 +665,26 @@
     "Mode Gelap": [
       "Pengoptimalan: Peningkatan kecerahan dan warna untuk wallpaper dalam mode Gelap"
     ],
+    "Sistem": [
+      "Pengoptimalan: Notifikasi suara yang tidak dibutuhkan untuk mode Jangan ganggu dihapus",
+      "Patch keamanan Android diperbarui ke Juli 2020. Keamanan sistem ditingkatkan."
+    ],
+    "Kunci aplikasi": [
+      "Pengoptimalan: Halaman verifikasi Kunci aplikasi",
+      "Perbaikan: Ikon sidik jari tidak muncul di beberapa kasus",
+      "Memperbaiki masalah status bar saat membuka dan menutup kunci aplikasi dengan cepat.",
+      "Perbaikan: Bilah status tidak ditampilkan dengan benar dalam beberapa kasus"
+    ],
     "Bar status, Layar notiifikasi": [
       "Baru: Ada animasi saat layar dihidupkan",
       "Baru: Animasi gradien warna bilah status",
       "修复 深色模式下部分场景状态栏显示异常的问题"
+    ],
+    "Browser": [
+      "Baru: pencarian lokal di browser",
+      "Baru: fitur unduh video dari situs populer",
+      "Baru: Pencarian lokal",
+      "Baru: Pengunduhan video dari situs web populer"
     ],
     "Konsumsi baterai": [
       "Baru: Beragam pengoptimalan untuk fitur Penghemat baterai",
@@ -602,15 +699,6 @@
       "Pengoptimalan: Pusat kontrol akan ditutup saat ada panggilan masuk",
       "Pengoptimalan: Tekan dan tahan opsi pengalihan",
       "Perbaikan: Pusat kontrol tidak selalu ditampilkan dengan benar saat mode horisontal"
-    ],
-    "Kunci aplikasi": [
-      "Pengoptimalan: Halaman verifikasi Kunci aplikasi",
-      "Perbaikan: Ikon sidik jari tidak muncul di beberapa kasus",
-      "Perbaikan: Bilah status tidak ditampilkan dengan benar dalam beberapa kasus"
-    ],
-    "Browser": [
-      "Baru: Pencarian lokal",
-      "Baru: Pengunduhan video dari situs web populer"
     ]
   },
   "logs_vi": {
@@ -624,6 +712,10 @@
     "Chế độ nền tối": [
       "Tối ưu: Cải thiện độ sáng và màu sắc cho hình nền ở Chế độ nền tối"
     ],
+    "Hệ thống": [
+      "Tối ưu: Xóa âm thanh thông báo không cần thiết trong chế độ không làm phiền",
+      "Đã cập nhật bản vá bảo mật Android lên tháng 7 năm 2020. Tăng cường bảo mật hệ thống."
+    ],
     "Khóa ứng dụng": [
       "Tối ưu: Trang xác minh khóa ứng dụng",
       "Sửa: Biểu tượng vân tay không hiển thị trong một số trường hợp",
@@ -633,6 +725,12 @@
       "Mới: Màn hình sáng lên với ảnh động",
       "Mới: Chuyển động color gradient thanh trạng thái",
       "修复 深色模式下部分场景状态栏显示异常的问题"
+    ],
+    "Trình duyệt": [
+      "Mới: tìm kiếm cục bộ trong trình duyệt",
+      "Mới: tính năng tải video từ các trang web phổ biến",
+      "Mới: Tìm kiếm trên máy",
+      "Mới: Tải xuống video từ các trang web phổ biến"
     ],
     "Sử dụng pin": [
       "Mới: Nhiều tối ưu cho Tiết kiệm pin",
@@ -647,10 +745,6 @@
       "Tối ưu: Trung tâm điều khiển hiện đang đóng bởi các cuộc gọi đến",
       "Tối ưu: Bấm và giữ các tùy chọn chuyển hướng",
       "Sửa: Trung tâm điều khiển không phải lúc nào cũng hiển thị chính xác ở chế độ ngang"
-    ],
-    "Trình duyệt": [
-      "Mới: Tìm kiếm trên máy",
-      "Mới: Tải xuống video từ các trang web phổ biến"
     ]
   },
   "logs_th": {
@@ -664,6 +758,10 @@
     "โหมดมืด": [
       "การเพิ่มประสิทธิภาพ: ปรับปรุงความสว่างและสีของวอลเปเปอร์ในโหมดมืด"
     ],
+    "ระบบ": [
+      "การเพิ่มประสิทธิภาพ: ลบการแจ้งเตือนด้วยเสียงที่ไม่จำเป็นสำหรับโหมด DND",
+      "อัปเดตแพตช์ความปลอดภัย Android เป็นกรกฎาคม 2020 แล้ว เพิ่มความปลอดภัยของระบบ"
+    ],
     "ล็อกแอป": [
       "การเพิ่มประสิทธิภาพ: หน้าการตรวจสอบการล็อกแอป",
       "แก้ไข: ไอคอนลายนิ้วมือไม่ปรากฏในบางกรณี",
@@ -673,6 +771,12 @@
       "ใหม่: หน้าจอสว่างขึ้นด้วยภาพเคลื่อนไหวแล้วตอนนี้",
       "ใหม่: ภาพเคลื่อนไหวการไล่ระดับสีของแถบสถานะ",
       "修复 深色模式下部分场景状态栏显示异常的问题"
+    ],
+    "เบราว์เซอร์": [
+      "ใหม่: การค้นหาในเครื่องของเบราว์เซอร์",
+      "ใหม่: ฟีเจอร์ดาวน์โหลดวิดีโอจากเว็บไซต์ยอดนิยม",
+      "ใหม่: ค้นในอุปกรณ์",
+      "ใหม่: ดาวน์โหลดวิดีโอจากเว็บไซต์ยอดนิยม"
     ],
     "การใช้แบตเตอรี่": [
       "ใหม่: การเพิ่มประสิทธิภาพหลายรายการสำหรับการประหยัดแบตเตอรี่",
@@ -687,10 +791,6 @@
       "การเพิ่มประสิทธิภาพ: ตอนนี้ศูนย์ควบคุมถูกปิดโดยสายเรียกเข้า",
       "การเพิ่มประสิทธิภาพ: กดตัวเลือกการเปลี่ยนเส้นทางค้างไว้",
       "แก้ไข: ศูนย์ควบคุมไม่ได้แสดงอย่างถูกต้องทุกครั้งในโหมดแนวนอน"
-    ],
-    "เบราว์เซอร์": [
-      "ใหม่: ค้นในอุปกรณ์",
-      "ใหม่: ดาวน์โหลดวิดีโอจากเว็บไซต์ยอดนิยม"
     ]
   },
   "logs_ar": {
@@ -704,6 +804,10 @@
     "وضع الظلام": [
       ":التحسين تحسين السطوع واللون لخلفيات الوضع الداكن"
     ],
+    "النظام": [
+      "التحسين: إزالة إشعارات الصوت غير ضرورية لوضع عدم الإزعاج",
+      "تم تحديث تصحيح أمان Android إلى يوليو 2020. تم تحسين أمان النظام."
+    ],
     "قفل التطبيقات": [
       ":التحسين صفحة مصادقة قفل التطبيق",
       ":الإصلاح مشكله ظهور أيقونة بصمة الإصبع بشكل غير صحيح في بعض الحالات",
@@ -714,6 +818,12 @@
       ":الجديد إضافة ميزة إضاءة الشاشة مع الرسوم المتحركة",
       ":الجديد تدرج لوني متحرك لشريط الحالة",
       "修复 深色模式下部分场景状态栏显示异常的问题"
+    ],
+    "المتصفح": [
+      "جديد: البحث المحلي في المتصفح",
+      "جديد: ميزة تنزيل الفيديوهات من المواقع الشائعة",
+      ":الجديد ميزة البحث المحلي",
+      ":الجديد ميزة تنزيل مقاطع الفيديو من المواقع المشهورة"
     ],
     "استخدام البطارية": [
       ":الجديد تحسينات متعددة لموفر البطارية",
@@ -728,10 +838,6 @@
       ":التحسين يمكن الآن إغلاق مركز التحكم عند تلقي المكالمات الواردة",
       ":التحسين الضغط باستمرار على خيارات إعادة التوجية",
       ":الإصلاح لا يظهر مركز التحكم بشكل صحيح في الوضع الأفقي"
-    ],
-    "المتصفح": [
-      ":الجديد ميزة البحث المحلي",
-      ":الجديد ميزة تنزيل مقاطع الفيديو من المواقع المشهورة"
     ]
   },
   "logs_in": {
@@ -752,7 +858,8 @@
     "ऐप लॉक": [
       "ऑप्टिमाइज़ेशन ऐप्प लॉक सत्यापन पेज",
       "ठीक करें कुछ स्थितियों में फ़िंगरप्रिंट आइकन नहीं दिख रहा था",
-      "ठीक करें कुछ स्थितियों में स्टेटस बार सही ढंग से नहीं दिख रहा था"
+      "ठीक करें कुछ स्थितियों में स्टेटस बार सही ढंग से नहीं दिख रहा था",
+      "ऐप लॉक में तेज़ी से प्रवेश और बाहर निकलने के दौरान स्टेटस बार की असामान्य समस्या ठीक की गई"
     ],
     "स्टेटस बार, सूचना शेड": [
       "नया अब एनिमेशन के साथ स्क्रीन जल उठता है",
@@ -761,7 +868,9 @@
     ],
     "ब्राउज़र": [
       "नया स्थानीय खोज",
-      "नया लोकप्रिय वेबसाइटों से वीडियो डाउनलोड करना"
+      "नया लोकप्रिय वेबसाइटों से वीडियो डाउनलोड करना",
+      "नया: स्थानीय खोज",
+      "लोकप्रिय वेबसाइटों से वीडियो डाउनलोड करने की सुविधा जोड़ी गई"
     ],
     "बैटरी उपयोग": [
       "नया बैटरी बचतकर्ता के लिए कई ऑप्टिमाइज़ेशन",
@@ -790,10 +899,20 @@
     "Dark mode": [
       "Optimization: Brightness and color improvements for wallpapers in Dark mode"
     ],
+    "سىستېما": [
+      "Optimization: Removed unnecessary sound notifications for DND mode",
+      "Android بىخەتەرلىك يامىقى 2020-يىلى 7-ئايغا يېڭىلاندى. سىستېما بىخەتەرلىكى ئاشۇرۇلدى."
+    ],
     "Status bar, Notification shade": [
       "New: Screen lights up with an animation now",
       "New: Status bar color gradient animation",
       "修复 深色模式下部分场景状态栏显示异常的问题"
+    ],
+    "Browser": [
+      "يېڭى: توركۆرگۈدە يەرلىك ئىزدەش",
+      "يېڭى: مەشھۇر تور بېكەتلىرىدىن سىن چۈشۈرۈش ئىقتىدارى",
+      "يېڭى: يەرلىك ئىزدەش",
+      "مەشھۇر تور بېكەتلىرىدىن سىن چۈشۈرۈش ئىقتىدارى قوشۇلدى"
     ],
     "Control center": [
       "New: Swipe down from the upper left corner to open Notification shade and from the upper right corner to open Control center",

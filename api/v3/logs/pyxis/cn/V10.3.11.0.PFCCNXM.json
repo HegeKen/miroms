@@ -31,27 +31,35 @@
     ]
   },
   "logs_en": {
+    "System": [
+      "Optimization: Fixed the issue of fingerprint unlock animation lag after enabling anti-flicker mode",
+      "Optimization: Updated Android Security Patch to July 2019. Increased system security.",
+      "Optimized occasional touch unresponsiveness during Honor of Kings gameplay",
+      "Fix: Fixed the issue where the notification breathing light did not light up for notifications with sound when Breathing light music mode was turned off",
+      "Fixed the issue where the fingerprint icon could not light up when the system was asleep"
+    ],
     "Lockscreen, Status Bar, Notification Bar": [
       "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
       "Fix: Fingerprint icon didn't always appear on the Lock screen",
       "Fix: Fingerprint icon didn't always disappear after unlocking"
     ],
     "Game speed booster": [
-      "Fix: Hands-free call duration wasn't displayed correctly in Game Turbo"
+      "Fix: Hands-free call duration wasn't displayed correctly in Game Turbo",
+      "Fixed an issue where the call duration was displayed incorrectly when answering a hands-free call while gaming."
     ],
     "Mi Cloud": [
       "Optimization: Improved sync across multiple devices"
     ],
-    "Other improvements and optimizations": [
+    "Other optimizations and adjustments": [
       "Fix: Fingerprint unlock didn't respond when the device was in the sleep mode"
-    ],
-    "System": [
-      "Optimization: Updated Android Security Patch to July 2019. Increased system security."
     ],
     "Lockscreen, status bar, Notification shade": [
       "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
       "Fix: Fingerprint icon didn't always appear on the Lock screen",
       "Fix: Fingerprint icon didn't always disappear after unlocking"
+    ],
+    "Other improvements and optimizations": [
+      "Fix: Fingerprint unlock didn't respond when the device was in the sleep mode"
     ],
     "Other": [
       "Improved system security and stability"
@@ -63,6 +71,15 @@
     ]
   },
   "logs_zh_tw": {
+    "系統": [
+      "優化 優化開啟防閃爍模式後指紋解鎖動畫卡頓的問題",
+      "優化 更新Android安全性修補程式等級 (2019#7)，提升系統安全性",
+      "優化 王者榮耀遊戲過程中偶現斷觸的問題",
+      "修復：修正呼吸燈音樂模式關閉時，有聲音的通知呼吸燈不亮的問題",
+      "修復 系統休眠時無法點亮指紋圖標問題",
+      "優化 更新Android安全性修補程式等級(2019#7)，提升系統安全性",
+      "優化 王者榮耀遊戲過程中偶現斷觸問題"
+    ],
     "解鎖畫面、狀態欄、通知欄": [
       "新增 人臉解鎖成功並停留在鎖屏上時，可通過指紋進入桌面的功能",
       "修復 偶而發生鎖屏不顯示指紋圖示的問題",
@@ -75,17 +92,24 @@
       "優化 多裝置之間數據同步即時性"
     ],
     "其他優化及調整": [
-      "修復 睡眠狀態下指紋解鎖沒有回應的問題"
-    ],
-    "系統": [
-      "優化 更新Android安全性修補程式等級(2019#7)，提升系統安全性",
-      "優化 王者榮耀遊戲過程中偶現斷觸問題"
+      "修復 睡眠狀態下指紋解鎖沒有回應的問題",
+      "修復睡眠模式下指紋解鎖無回應的問題"
     ],
     "其他": [
       "Improved system security and stability"
     ]
   },
   "logs_ja": {
+    "システム": [
+      "最適化 ちらつき防止モードを有効にした後の指紋認証解除アニメーションのカクつき問題を修正",
+      "最適化: Android セキュリティ パッチを 2019 年 7 月に更新しました。システムの安全性が向上しました。",
+      "Honor of Kings プレイ中に時々発生するタッチ反応不良を最適化",
+      "修正: 呼吸ライトの音楽モードがオフの場合、サウンド付き通知の呼吸ライトが点灯しない問題を修正しました",
+      "システムスリープ時に指紋アイコンが点灯できない問題を修正",
+      "最適化: Google セキュリティパッチ（2019#7）を更新し、システムの安全性を向上。",
+      "最適化: Android セキュリティパッチを 2019 年 7 月に更新しました。システムの安全性が向上しました。",
+      "『Honor of Kings』プレイ中のタッチ操作が時々反応しない問題を最適化"
+    ],
     "ロック画面、ステータスバー、通知バー": [
       "新機能: 顔認証でロック解除後、ロック画面に留まっている場合に指紋でホーム画面へ進める機能",
       "修正: ロック画面で指紋アイコンが表示されないことがある問題",
@@ -99,8 +123,9 @@
       "最適化: 複数デバイス間のデータ同期の即時性を向上",
       "最適化: 複数デバイス間のデータ同期を改善"
     ],
-    "システム": [
-      "最適化: Google セキュリティパッチ（2019#7）を更新し、システムの安全性を向上。"
+    "その他の改善と最適化": [
+      "スリープモード時に指紋認証によるロック解除が応答しない問題を修正",
+      "スリープモード時の指紋認証が反応しない問題を修正"
     ],
     "ロック画面、ステータスバー、通知シェード": [
       "新機能: 顔認証でロック解除後、ロック画面に留まっている場合に指紋でホーム画面へ移動できる機能",
@@ -120,6 +145,16 @@
     ]
   },
   "logs_ko": {
+    "시스템": [
+      "최적화 깜박임 방지 모드를 켠 후 지문 잠금 해제 애니메이션 끊김 문제 수정",
+      "최적화: Android 보안 패치를 2019년 7월로 업데이트했습니다. 시스템 보안이 향상되었습니다.",
+      "Honor of Kings 플레이 중 간헐적으로 발생하는 터치 끊김 문제를 최적화했습니다",
+      "수정: 호흡등 음악 모드가 꺼져 있을 때 소리가 있는 알림의 호흡등이 켜지지 않는 문제를 수정했습니다",
+      "시스템 절전 모드에서 지문 아이콘이 표시되지 않는 문제 수정",
+      "최적화: Google 보안 패치(2019#7) 업데이트, 시스템 보안 강화.",
+      "최적화: Android 보안패치 (2019#7) 업데이트됨. 시스템 보안이 향상되었습니다.",
+      "Honor of Kings 플레이 중 간헐적으로 터치가 끊기는 문제 최적화"
+    ],
     "잠금 화면, 상태 표시줄, 알림 표시줄": [
       "새 기능: 얼굴 인식으로 잠금 해제 후 잠금 화면에 머무를 때 지문으로 홈 화면에 진입하는 기능",
       "수정: 잠금화면에서 지문 아이콘이 표시되지 않는 문제",
@@ -134,13 +169,16 @@
       "최적화: 여러 기기 간 데이터 동기화의 적시성 개선",
       "최적화: 여러 기기 간 데이터 동기화 개선"
     ],
-    "시스템": [
-      "최적화: Google 보안 패치(2019#7) 업데이트, 시스템 보안 강화."
+    "기타 개선 및 최적화": [
+      "수면 모드에서 지문 잠금 해제가 응답하지 않던 문제를 수정했습니다."
     ],
     "잠금화면, 상태 바, 알림 바": [
       "새 기능: 얼굴 잠금 해제 성공 후 잠금 화면에 있는 상태에서 지문으로 홈 화면에 진입하는 기능",
       "수정: 잠금화면에서 지문 아이콘이 표시되지 않는 문제",
       "수정: 잠금해제 후 지문 아이콘이 없어지지 않는 문제"
+    ],
+    "기타 향상된 항목 및 최적화 항목": [
+      "슬립 모드에서 지문 잠금 해제가 응답하지 않는 문제를 수정했습니다"
     ],
     "기타": [
       "시스템 보안 및 안정성 개선"
@@ -155,6 +193,14 @@
     ]
   },
   "logs_ru": {
+    "Система": [
+      "Оптимизация: Исправлена проблема с подтормаживанием анимации разблокировки отпечатком после включения режима защиты от мерцания",
+      "Оптимизация: Обновление системы безопасности Android (июль 2019 года). Улучшена безопасность системы.",
+      "Оптимизирована проблема с периодическими сбоями сенсорного управления во время игры в Honor of Kings",
+      "Исправлено: дыхательная подсветка не загоралась для уведомлений со звуком, когда музыкальный режим дыхательной подсветки выключен",
+      "Исправлена проблема, из-за которой значок отпечатка пальца не отображался при спящем режиме системы",
+      "Оптимизирована проблема с периодическим пропаданием отклика сенсора во время игры в Honor of Kings"
+    ],
     "Экран блокировки, строка состояния, шторка уведомлений": [
       "Новое: Используйте отпечаток пальца, чтобы перейти на рабочий стол после того, как вы разблокировали устройство при помощи данных лица и остались на экране блокировки",
       "Исправлено: Значок отпечатка пальца не всегда отображался на экране блокировки",
@@ -166,11 +212,11 @@
     "Облачный сервис Xiaomi": [
       "Оптимизация: Улучшена синхронизация данных между несколькими  устройствами"
     ],
-    "Оптимизация и другие функции": [
+    "Другие оптимизации и настройки": [
       "Исправлено: Разблокировка по отпечатку пальца не работала, когда устройство находилось в спящем режиме"
     ],
-    "Система": [
-      "Оптимизация: Обновление системы безопасности Android (июль 2019 года). Улучшена безопасность системы."
+    "Оптимизация и другие функции": [
+      "Исправлено: Разблокировка по отпечатку пальца не работала, когда устройство находилось в спящем режиме"
     ],
     "Другое": [
       "Улучшение безопасности и стабильности системы"
@@ -182,6 +228,16 @@
     ]
   },
   "logs_uk": {
+    "Система": [
+      "Оптимізація: Виправлено проблему з підгальмовуванням анімації розблокування відбитком після ввімкнення режиму захисту від мерехтіння",
+      "Оптимізація: Оновлено патч безпеки Android до липня 2019. Підвищено безпеку системи.",
+      "Оптимізовано проблему з періодичними збоями сенсорного керування під час гри в Honor of Kings",
+      "Виправлення: Виправлено проблему, коли дихальне підсвічування не вмикалося для сповіщень зі звуком, якщо музичний режим дихального підсвічування вимкнено",
+      "Виправлено проблему, через яку значок відбитка пальця не відображався, коли система перебувала в режимі сну",
+      "Оптимізація: Оновлено патч безпеки Google (2019#7), підвищено безпеку системи.",
+      "Оптимізація: Оновлено патч безпеки Android до липня 2019 року. Підвищено безпеку системи.",
+      "Оптимізовано проблему з періодичним зникненням відгуку сенсора під час гри в Honor of Kings"
+    ],
     "Екран блокування, рядок стану, рядок сповіщень": [
       "Нове: Перехід на головний екран відбитком пальця, якщо пристрій розблоковано обличчям і залишено на екрані блокування",
       "Виправлено: значок відбитка пальця не завжди відображався на екрані блокування",
@@ -197,8 +253,8 @@
       "Оптимізація: покращено своєчасність синхронізації даних між кількома пристроями",
       "Оптимізація: Покращено синхронізацію даних між кількома пристроями"
     ],
-    "Система": [
-      "Оптимізація: Оновлено патч безпеки Google (2019#7), підвищено безпеку системи."
+    "Інші оптимізації та налаштування": [
+      "Виправлено проблему, коли розблокування відбитком пальця не реагувало в режимі сну."
     ],
     "Екран блокування, рядок стану, панель сповіщень": [
       "Нове: Після успішного розблокування обличчям із залишенням на екрані блокування можна перейти на головний екран за допомогою відбитка пальця",
@@ -206,11 +262,24 @@
       "Виправлено: іноді після успішного розблокування відбитком пальця значок відбитка не зникав одразу",
       "Нове: Використовувати відбиток пальця для переходу на головний екран після успішного розблокування обличчям із затримкою на екрані блокування"
     ],
+    "Оптимізація та інші покращення": [
+      "Виправлено проблему, коли розблокування відбитком пальця не реагувало в режимі сну"
+    ],
     "Інше": [
       "Покращення безпеки та стабільності системи"
     ]
   },
   "logs_pl": {
+    "System": [
+      "Optymalizacja: Naprawiono problem zacinania się animacji odblokowywania odciskiem palca po włączeniu trybu zapobiegania migotaniu",
+      "Optymalizacja: Zaktualizowano poprawkę zabezpieczeń Android do lipca 2019. Zwiększono bezpieczeństwo systemu.",
+      "Zoptymalizowano problem sporadycznych awarii dotyku podczas gry w Honor of Kings",
+      "Poprawka: Naprawiono problem, gdy przy wyłączonym trybie muzycznym podświetlenia oddychającego nie świeciło się ono dla powiadomień z dźwiękiem",
+      "Naprawiono problem z brakiem wyświetlania ikony odcisku palca, gdy system jest w uśpieniu",
+      "Optymalizacja: Zaktualizowano poprawkę zabezpieczeń Google (2019#7), zwiększono bezpieczeństwo systemu.",
+      "Zoptymalizowano: Zaktualizowano Pakiet Bezpieczeństwa Android do lipca 2019 r. Zwiększono bezpieczeństwo systemu.",
+      "Zoptymalizowano problem sporadycznej utraty reakcji dotyku podczas gry w Honor of Kings"
+    ],
     "Ekran blokady, pasek stanu, pasek powiadomień": [
       "Nowość: Możliwość przejścia do ekranu głównego odciskiem palca po odblokowaniu twarzą i pozostaniu na ekranie blokady",
       "Naprawiono: Ikona odcisku palca nie zawsze pojawia się na zablokowanym ekranie",
@@ -226,15 +295,18 @@
       "Optymalizacja: Poprawa terminowości synchronizacji danych między wieloma urządzeniami",
       "Optymalizacja: Poprawiono synchronizację między wieloma urządzeniami"
     ],
-    "System": [
-      "Optymalizacja: Zaktualizowano poprawkę zabezpieczeń Google (2019#7), zwiększono bezpieczeństwo systemu."
+    "Inne optymalizacje i modyfikacje": [
+      "Naprawiono problem z brakiem reakcji odblokowywania odciskiem palca w trybie uśpienia."
     ],
     "Ekran blokady, pasek powiadomień,panel powiadomień": [
       "Nowość: Po odblokowaniu twarzą i pozostaniu na ekranie blokady można przejść do ekranu głównego za pomocą odcisku palca",
       "Naprawiono: Ikona odcisku palca nie zawsze pojawia się na zablokowanym ekranie",
       "Naprawiono: Ikona odcisku palca nie zawsze znika z ekranu po odblokowaniu"
     ],
-    "Inne": [
+    "Inne ulepszenia i optymalizacje": [
+      "Naprawiono problem z brakiem reakcji odblokowywania odciskiem palca w trybie uśpienia"
+    ],
+    "Reszt": [
       "Większe bezpieczeństwo i stabilność systemu"
     ],
     "Ekran blokady, pasek stanu, panel powiadomień": [
@@ -244,6 +316,15 @@
     ]
   },
   "logs_de": {
+    "System": [
+      "Optimierung: Das Ruckeln der Animation zur Fingerabdruck-Entsperrung nach Aktivierung des Flimmern-Schutzmodus wurde behoben",
+      "Optimierung: Android-Sicherheitspatch auf Juli 2019 aktualisiert. Systemsicherheit erhöht.",
+      "Problem mit gelegentlichen Touch-Aussetzern während Honor of Kings wurde optimiert",
+      "Fix: Problem behoben, bei dem das Benachrichtigungslicht bei Benachrichtigungen mit Ton nicht leuchtete, wenn der Musikmodus des Benachrichtigungslichts deaktiviert war",
+      "Problem behoben, bei dem das Fingerabdruck-Symbol im Systemruhezustand nicht angezeigt wurde",
+      "Optimierung: Google-Sicherheitspatch (2019#7) aktualisiert, Systemsicherheit erhöht.",
+      "Gelegentliche Touch-Aussetzer während Honor of Kings optimiert"
+    ],
     "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
       "Neu: Nach erfolgreicher Gesichtserkennung auf dem Sperrbildschirm per Fingerabdruck zum Startbildschirm wechseln",
       "Behoben: Fingerabdrucksymbol wurde auf dem Sperrbildschirm nicht immer angezeigt",
@@ -258,13 +339,16 @@
       "Optimierung: Verbesserte Synchronisierung zwischen mehreren Geräten",
       "Optimierung: Verbesserte zeitnahe Datensynchronisierung zwischen mehreren Geräten"
     ],
-    "System": [
-      "Optimierung: Google-Sicherheitspatch (2019#7) aktualisiert, Systemsicherheit erhöht."
+    "Weitere Optimierungen und Anpassungen": [
+      "Fehler behoben: Fingerabdruck-Entsperrung reagierte im Ruhemodus nicht."
     ],
     "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
       "Neu: Nach erfolgreicher Gesichtserkennung auf dem Sperrbildschirm per Fingerabdruck zum Startbildschirm wechseln",
       "Behoben: Fingerabdrucksymbol wurde auf dem Sperrbildschirm nicht immer angezeigt",
       "Behoben: Das Fingerabdrucksymbol verschwand nach erfolgreicher Entsperrung nicht immer sofort."
+    ],
+    "Weitere Verbesserungen und Optimierungen": [
+      "Problem behoben: Fingerabdruckentsperrung reagierte im Schlafmodus nicht"
     ],
     "Sonstiges": [
       "Systemsicherheit und -stabilität verbessert"
@@ -276,6 +360,15 @@
     ]
   },
   "logs_fr": {
+    "Système": [
+      "Optimisation : Correction du problème de saccade de l'animation de déverrouillage par empreinte après activation du mode anti-scintillement",
+      "Optimisation Mise à jour du correctif de sécurité Android jusqu'en juillet 2019. Sécurité accrue du système.",
+      "Optimisation du problème de pertes occasionnelles de réactivité tactile pendant une partie de Honor of Kings",
+      "Correctif : Correction du problème où la lumière de notification ne s’allumait pas pour les notifications avec son lorsque le mode musique de la lumière respirante était désactivé",
+      "Correction du problème où l'icône d'empreinte digitale ne s'affichait pas lorsque le système était en veille",
+      "Optimisation: Mise à jour du correctif de sécurité Android jusqu'en juillet 2019. Sécurité accrue du système.",
+      "Optimisation des pertes occasionnelles de tactile pendant une partie de Honor of Kings"
+    ],
     "Écran de verrouillage, barre d’état, barre de notifications": [
       "Nouveau Utilisez votre empreinte digitale pour ouvrir l'écran d'accueil une fois que vous avez déverrouillé l'appareil à l'aide des données du visage et que vous êtes resté sur l'écran de verrouillage",
       "Réparé: L'îcône des empreintes digitales n'apparaissait pas toujours sur l'écran vérrouillé",
@@ -289,17 +382,16 @@
       "Optimisation Amélioration de la synchronisation sur plusieurs appareils",
       "Optimisation: Amélioration de la synchronisation sur plusieurs appareils"
     ],
-    "Autres améliorations et optimisations": [
-      "Réparé Le déverrouillage avec les empreintes digitales ne fonctionne pas lorsque l'appareil est en mode de veille prolongée",
-      "Réparé: Le déverrouillage avec les empreintes digitales ne fonctionne pas lorsque l'appareil est en mode de veille prolongée"
-    ],
-    "Système": [
-      "Optimisation: Mise à jour du correctif de sécurité Android jusqu'en juillet 2019. Sécurité accrue du système."
+    "D’autres optimisations et ajustements": [
+      "Réparé Le déverrouillage avec les empreintes digitales ne fonctionne pas lorsque l'appareil est en mode de veille prolongée"
     ],
     "Écran de verrouillage, Barre d'état, Panneau de notification": [
       "Nouveau: Utilisez votre empreinte digitale pour ouvrir l'écran d'accueil une fois que vous avez déverrouillé l'appareil à l'aide des données du visage et que vous êtes resté sur l'écran de verrouillage",
       "Réparé: L'îcône des empreintes digitales n'apparaissait pas toujours sur l'écran vérrouillé",
       "Réparé: L'îcône des empreintes digitales ne disparaissait pas toujours aprés le débloquage"
+    ],
+    "Autres améliorations et optimisations": [
+      "Réparé: Le déverrouillage avec les empreintes digitales ne fonctionne pas lorsque l'appareil est en mode de veille prolongée"
     ],
     "Autre": [
       "Sécurité et stabilité du système améliorées"
@@ -314,6 +406,14 @@
     ]
   },
   "logs_it": {
+    "Sistema": [
+      "Ottimizzazione: Risolto il problema di scatti dell'animazione di sblocco con impronta dopo l'attivazione della modalità anti-sfarfallio",
+      "Ottimizzazione: Aggiornamento della patch di sicurezza Android a luglio 2019. Maggiore sicurezza del sistema.",
+      "Ottimizzato il problema di intermittenti mancate risposte al tocco durante Honor of Kings",
+      "Correzione: Risolto il problema per cui la luce di notifica non si accendeva per le notifiche con suono quando la modalità musica della luce respirante era disattivata",
+      "Risolto il problema per cui l'icona dell'impronta digitale non veniva visualizzata quando il sistema era in sospensione",
+      "Ottimizzata la perdita occasionale del touch durante Honor of Kings"
+    ],
     "Schermata di blocco, barra di stato, barra delle notifiche": [
       "Nuovo: Accedi alla schermata Home usando l'impronta digitale dopo aver sbloccato il dispositivo con i dati del volto restando sulla schermata di blocco.",
       "Risolto: L'icona dell'impronta digitale non veniva sempre visualizzata sulla schermata di blocco",
@@ -325,16 +425,16 @@
     "Servizio cloud Xiaomi": [
       "Ottimizzazione: Sincronizzazione migliorata su più dispositivi"
     ],
-    "Altri miglioramenti e ottimizzazioni": [
+    "Altre ottimizzazioni e modifiche": [
       "Risolto: Lo sblocco con impronta non funzionava quando il dispositivo era in modalità sospensione"
-    ],
-    "Sistema": [
-      "Ottimizzazione: Aggiornamento della patch di sicurezza Android a luglio 2019. Maggiore sicurezza del sistema."
     ],
     "Schermata di blocco, barra di stato, area delle notifiche": [
       "Nuovo: Accedi alla schermata Home usando l'impronta digitale dopo aver sbloccato il dispositivo con i dati del volto restando sulla schermata di blocco.",
       "Risolto: L'icona dell'impronta digitale non veniva sempre visualizzata sulla schermata di blocco",
       "Risolto: L'icona dell'impronta digitale non scompariva sempre dopo lo sblocco"
+    ],
+    "Altri miglioramenti e ottimizzazioni": [
+      "Risolto: Lo sblocco con impronta non funzionava quando il dispositivo era in modalità sospensione"
     ],
     "Altro": [
       "Maggiore sicurezza e stabilità di sistema"
@@ -346,6 +446,14 @@
     ]
   },
   "logs_es": {
+    "Sistema": [
+      "Optimización: Se corrige el problema de fluidez de la animación de desbloqueo con huella tras activar el modo antiparpadeo",
+      "Optimización: Parche de seguridad de Android actualizado a julio de 2019. Seguridad del sistema incrementada.",
+      "Optimizado el problema de fallos táctiles ocasionales durante la partida en Honor of Kings",
+      "Corrección: Se solucionó el problema por el que la luz de notificación no se encendía para las notificaciones con sonido cuando el modo música de la luz respiratoria estaba desactivado",
+      "Se corrigió el problema por el que el icono de huella digital no se mostraba cuando el sistema estaba suspendido",
+      "Optimizado el fallo ocasional de respuesta táctil durante Honor of Kings"
+    ],
     "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
       "Nuevo: Usa tu huella dactilar para abrir la Pantalla de inicio después de haber desbloqueado el dispositivo usando tus datos faciales y haber permanecido en la Pantalla de bloqueo",
       "Reparado: El icono de la huella dactilar no siempre aparecía en la Pantalla de bloqueo",
@@ -357,11 +465,11 @@
     "Servicio en la nube de Xiaomi": [
       "Optimización: Sincronización entre múltiples dispositivos mejorada"
     ],
-    "Otras mejoras y optimizaciones": [
+    "Otras optimizaciones y ajustes": [
       "Reparado: El desbloqueo con huella dactilar no funcionaba en el Modo suspensión"
     ],
-    "Sistema": [
-      "Optimización: Parche de seguridad de Android actualizado a julio de 2019. Seguridad del sistema incrementada."
+    "Otras mejoras y optimizaciones": [
+      "Reparado: El desbloqueo con huella dactilar no funcionaba en el Modo suspensión"
     ],
     "Otros": [
       "Estabilidad y seguridad del sistema mejorada"
@@ -373,6 +481,15 @@
     ]
   },
   "logs_pt": {
+    "Sistema": [
+      "Otimização: Corrigido o problema de lentidão na animação de desbloqueio por impressão digital após ativar o modo anti-cintilação",
+      "Otimização Atualização do Patch de Segurança do Android para Julho de 2019. Segurança do sistema aprimorada.",
+      "Otimizado o problema de falhas ocasionais de toque durante o jogo Honor of Kings",
+      "Correção: Corrigido o problema em que a luz de notificação não acendia para notificações com som quando o modo música da luz respiratória estava desativado",
+      "Corrigido o problema em que o ícone de impressão digital não era exibido quando o sistema estava suspenso",
+      "Otimização: Atualização do Patch de Segurança do Android para Julho de 2019. Segurança do sistema aprimorada.",
+      "Otimizada a perda ocasional de resposta ao toque durante Honor of Kings"
+    ],
     "Tela de bloqueio, barra de status, barra de notificações": [
       "Novo Use sua impressão digital para abrir a Tela inicial quando você desbloquear o dispositivo usando o desbloqueio facial e ficar na Tela de bloqueio",
       "Correção: O ícone de impressão digital não aparecia na Tela de bloqueio",
@@ -386,17 +503,16 @@
       "Otimização Sincronização otimizada entre vários dispositivos",
       "Otimização: Sincronização otimizada entre vários dispositivos"
     ],
-    "Outras melhorias e otimizações": [
-      "Correção O desbloqueio por impressão digital não respondia corretamente com o dispositivo em suspensão",
-      "Correção: O desbloqueio por impressão digital não respondia corretamente com o dispositivo em suspensão"
-    ],
-    "Sistema": [
-      "Otimização: Atualização do Patch de Segurança do Android para Julho de 2019. Segurança do sistema aprimorada."
+    "Outras otimizações e ajustes": [
+      "Correção O desbloqueio por impressão digital não respondia corretamente com o dispositivo em suspensão"
     ],
     "Tela de bloqueio, Barra de status e Área de notificações": [
       "Novo: Use sua impressão digital para abrir a Tela inicial quando você desbloquear o dispositivo usando o desbloqueio facial e ficar na Tela de bloqueio",
       "Correção: O ícone de impressão digital não aparecia na Tela de bloqueio",
       "Correção: O ícone de impressão digital não desaparecia após o desbloqueio em alguns casos"
+    ],
+    "Outras melhorias e otimizações": [
+      "Correção: O desbloqueio por impressão digital não respondia corretamente com o dispositivo em suspensão"
     ],
     "Outros": [
       "Segurança e estabilidade do sistema aprimoradas"
@@ -408,6 +524,14 @@
     ]
   },
   "logs_tr": {
+    "Sistem": [
+      "Optimizasyon: Titreşim önleme modu açıldıktan sonra parmak izi kilit açma animasyonundaki takılma sorunu giderildi",
+      "Optimizasyon: Android Güvenlik Yaması Temmuz 2019 sürümüne güncellendi. Sistem güvenliği artırıldı.",
+      "Honor of Kings oynarken ara sıra oluşan dokunmatik tepkisizlik sorunu optimize edildi",
+      "Düzeltme: Nefes ışığı müzik modu kapalıyken sesli bildirimlerde bildirim ışığının yanmaması sorunu giderildi",
+      "Sistem uyku modundayken parmak izi simgesinin görüntülenememesi sorunu giderildi",
+      "Honor of Kings oynarken ara sıra oluşan dokunma tepkisi kaybı sorunu iyileştirildi"
+    ],
     "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
       "Yeni: Cihazın kilidini yüz verilerini kullanarak açtıktan ve Kilit ekranında kaldıktan sonra Ana ekranı açmak için parmak izinizi kullanın",
       "Onarım: Kilit ekranında parmak izi simgesinin belirmeme sorunu giderildi",
@@ -419,11 +543,8 @@
     "Xiaomi Bulut Hizmeti": [
       "Optimizasyon: Birkaç cihaz arasında geliştirilmiş senkronizasyon"
     ],
-    "Diğer iyileştirmeler ve optimizasyonlar": [
+    "Diğer optimizasyonlar ve ayarlamalar": [
       "Onarım: Cihaz uyku modundayken parmak izi ile kilit açmaya yanıt vermedi"
-    ],
-    "Sistem": [
-      "Optimizasyon: Android Güvenlik Yaması Temmuz 2019 sürümüne güncellendi. Sistem güvenliği artırıldı."
     ],
     "Diğer geliştirmeler ve optimizasyonlar": [
       "Onarım: Cihaz uyku modundayken parmak izi ile kilit açmaya yanıt vermedi"
@@ -438,6 +559,14 @@
     ]
   },
   "logs_id": {
+    "Sistem": [
+      "Optimasi: Memperbaiki masalah animasi buka kunci sidik jari yang tersendat setelah mengaktifkan mode anti-kedip",
+      "Pengoptimalan Patch Keamanan Android diperbarui hingga Juli 2019. Keamanan sistem ditingkatkan.",
+      "Mengoptimalkan masalah sentuhan yang terkadang tidak merespons saat bermain Honor of Kings",
+      "Perbaikan: Memperbaiki masalah lampu notifikasi tidak menyala untuk notifikasi dengan suara saat mode musik lampu bernapas dimatikan",
+      "Memperbaiki masalah ikon sidik jari tidak muncul saat sistem tertidur",
+      "Pengoptimalan: Patch Keamanan Android diperbarui hingga Juli 2019. Keamanan sistem ditingkatkan."
+    ],
     "Layar kunci, bilah status, bilah notifikasi": [
       "Baru Menggunakan sidik jari untuk membuka Layar utama saat Anda membuka kunci perangkat dengan data wajah dan tetap berada di Layar kunci",
       "Perbaikan: Ikon sidik jari tidak selalu muncul pada Layar kunci",
@@ -451,13 +580,16 @@
       "Pengoptimalan Sinkronisasi ditingkatkan di beberapa perangkat",
       "Pengoptimalan: Sinkronisasi ditingkatkan di beberapa perangkat"
     ],
-    "Sistem": [
-      "Pengoptimalan: Patch Keamanan Android diperbarui hingga Juli 2019. Keamanan sistem ditingkatkan."
+    "Optimisasi dan penyesuaian lainnya": [
+      "Perbaikan: Pembukaan kunci sidik jari tidak merespons saat perangkat dalam mode tidur."
     ],
     "Layar kunci, bar status, layar notifikasi": [
       "Baru: Menggunakan sidik jari untuk membuka Layar utama saat Anda membuka kunci perangkat dengan data wajah dan tetap berada di Layar kunci",
       "Perbaikan: Ikon sidik jari tidak selalu muncul pada Layar kunci",
       "Perbaikan: Ikon sidik jari tidak selalu muncul setelah perangkat dikunci"
+    ],
+    "Peningkatan dan optimalisasi lainnya": [
+      "Memperbaiki masalah pembukaan kunci sidik jari tidak merespons dalam mode tidur"
     ],
     "Lainnya": [
       "Keamanan dan stabilitas sistem ditingkatkan"
@@ -472,6 +604,16 @@
     ]
   },
   "logs_vi": {
+    "Hệ thống": [
+      "Tối ưu hóa: Đã khắc phục sự cố giật lag của hoạt ảnh mở khóa bằng vân tay sau khi bật chế độ chống nhấp nháy",
+      "Tối ưu hóa: Đã cập nhật bản vá bảo mật Android đến tháng 7 năm 2019. Tăng cường bảo mật hệ thống.",
+      "Tối ưu hóa vấn đề thỉnh thoảng mất cảm ứng khi chơi Honor of Kings",
+      "Sửa lỗi: Đã khắc phục sự cố đèn thông báo không sáng với thông báo có âm thanh khi chế độ nhạc của đèn thở bị tắt",
+      "Đã khắc phục sự cố không hiển thị biểu tượng vân tay khi hệ thống ở chế độ ngủ",
+      "Tối ưu hóa: Đã cập nhật bản vá bảo mật Google (2019#7), tăng cường bảo mật hệ thống.",
+      "Tối ưu: Cập nhật bản vá bảo mật Android lên tháng 7 năm 2019. Tăng cường bảo mật hệ thống.",
+      "Tối ưu lỗi thỉnh thoảng mất cảm ứng khi chơi Honor of Kings"
+    ],
     "Màn hình khóa, thanh trạng thái, thanh thông báo": [
       "Mới: Dùng vân tay để vào Màn hình chính khi đã mở khóa bằng khuôn mặt và vẫn ở màn hình khóa",
       "Sửa lỗi: Biểu tượng vân tay không phải lúc nào cũng hiển thị trên màn hình khóa",
@@ -487,8 +629,11 @@
       "Tối ưu hóa: Cải thiện đồng bộ hóa giữa nhiều thiết bị",
       "Tối ưu hóa: Cải thiện tính kịp thời của đồng bộ dữ liệu giữa nhiều thiết bị"
     ],
-    "Hệ thống": [
-      "Tối ưu hóa: Đã cập nhật bản vá bảo mật Google (2019#7), tăng cường bảo mật hệ thống."
+    "Các tối ưu hóa và điều chỉnh khác": [
+      "Đã khắc phục sự cố mở khóa bằng vân tay không phản hồi khi thiết bị ở chế độ ngủ."
+    ],
+    "Tối ưu và cải thiện khác": [
+      "Khắc phục sự cố mở khóa bằng vân tay không phản hồi ở chế độ ngủ"
     ],
     "Khác": [
       "Cải thiện tính ổn định và bảo mật hệ thống"
@@ -500,6 +645,16 @@
     ]
   },
   "logs_th": {
+    "ระบบ": [
+      "การเพิ่มประสิทธิภาพ: แก้ไขปัญหาอนิเมชันปลดล็อกด้วยลายนิ้วมือกระตุกหลังจากเปิดโหมดป้องกันการกะพริบ",
+      "การปรับให้เหมาะสม: อัปเดตแพตช์ความปลอดภัย Android เป็นกรกฎาคม 2019 เพิ่มความปลอดภัยของระบบ",
+      "ปรับแต่งปัญหาไม่ตอบสนองต่อการสัมผัสเป็นครั้งคราวระหว่างเล่น Honor of Kings",
+      "แก้ไข: แก้ไขปัญหาที่ไฟแจ้งเตือนไม่ติดสำหรับการแจ้งเตือนที่มีเสียงเมื่อโหมดเพลงของไฟหายใจปิดอยู่",
+      "แก้ไขปัญหาไอคอนลายนิ้วมือไม่แสดงเมื่อระบบเข้าสู่โหมดสลีป",
+      "ปรับให้เหมาะสม: อัปเดตแพตช์ความปลอดภัยของ Google (2019#7) เพิ่มความปลอดภัยของระบบ",
+      "Optimization: Updated Android Security Patch to July 2019. Increased system security.",
+      "ปรับปรุงปัญหาการสัมผัสขาดหายเป็นครั้งคราวระหว่างเล่น Honor of Kings"
+    ],
     "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
       "ใหม่: สามารถใช้ลายนิ้วมือเข้าสู่หน้าจอหลักได้เมื่อปลดล็อกด้วยใบหน้าและยังคงอยู่ที่หน้าจอล็อก",
       "แก้ไข: ไอคอนลายนิ้วมือไม่แสดงบนหน้าจอล็อกเป็นบางครั้ง",
@@ -514,13 +669,16 @@
       "การปรับให้เหมาะสม: ปรับปรุงความทันเวลาของการซิงค์ข้อมูลระหว่างอุปกรณ์หลายเครื่อง",
       "การปรับให้เหมาะสม: ปรับปรุงการซิงค์ระหว่างอุปกรณ์หลายเครื่อง"
     ],
-    "ระบบ": [
-      "ปรับให้เหมาะสม: อัปเดตแพตช์ความปลอดภัยของ Google (2019#7) เพิ่มความปลอดภัยของระบบ"
+    "การปรับปรุงและปรับแต่งอื่นๆ": [
+      "แก้ไขปัญหาการปลดล็อกด้วยลายนิ้วมือไม่ตอบสนองในโหมดสลีป"
     ],
     "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
       "ใหม่: เมื่อปลดล็อกด้วยใบหน้าสำเร็จและยังอยู่บนหน้าจอล็อก สามารถใช้นิ้วมือเข้าสู่หน้าจอหลักได้",
       "แก้ไข: ไอคอนลายนิ้วมือไม่แสดงบนหน้าจอล็อกเป็นบางครั้ง",
       "แก้ไข: บางครั้งไอคอนลายนิ้วมือไม่หายทันทีหลังปลดล็อกด้วยลายนิ้วมือสำเร็จ"
+    ],
+    "การปรับปรุงและการเพิ่มประสิทธิภาพอื่นๆ": [
+      "แก้ไขปัญหาการปลดล็อกด้วยลายนิ้วมือไม่ตอบสนองในโหมดสลีป"
     ],
     "อื่นๆ": [
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
@@ -535,6 +693,16 @@
     ]
   },
   "logs_ar": {
+    "النظام": [
+      "التحسين: تم إصلاح مشكلة تقطع حركة فتح القفل ببصمة الإصبع بعد تفعيل وضع منع الوميض",
+      "تحسين: تحديث تصحيح أمان Android إلى يوليو 2019. زيادة أمان النظام.",
+      "تم تحسين مشكلة انقطاع اللمس أحيانًا أثناء لعب Honor of Kings",
+      "إصلاح: تم إصلاح مشكلة عدم إضاءة ضوء التنبيه للإشعارات الصوتية عند إيقاف وضع الموسيقى لضوء التنفس",
+      "تم إصلاح مشكلة عدم إمكانية إضاءة أيقونة بصمة الإصبع عند سكون النظام",
+      "تحسين: تحديث تصحيحات أمان Google (2019#7) لتعزيز أمان النظام.",
+      "محسن تم تحديث تصحيح أمان Android إلى يوليو 2019 لزيادة أمان النظام.",
+      "تحسين مشكلة فقدان استجابة اللمس أحيانًا أثناء لعب Honor of Kings"
+    ],
     "شاشة القفل، شريط الحالة، شريط الإشعارات": [
       "جديد: استخدام بصمة الإصبع للانتقال إلى الشاشة الرئيسية عند نجاح فتح القفل بالوجه والبقاء على شاشة القفل",
       "إصلاح أيقونة بصمة الإصبع لا تظهر دائمًا على شاشة القفل",
@@ -548,15 +716,16 @@
       "تحسين: تحسين توقيت مزامنة البيانات بين الأجهزة المتعددة",
       "التحسين: تحسين المزامنة بين أجهزة متعددة"
     ],
-    "النظام": [
-      "تحسين: تحديث تصحيحات أمان Google (2019#7) لتعزيز أمان النظام."
+    "تحسينات وتعديلات أخرى": [
+      "إصلاح مشكلة عدم استجابة فتح القفل ببصمة الإصبع في وضع السكون.",
+      "إصلاح مشكلة عدم استجابة فتح القفل ببصمة الإصبع في وضع السكون"
     ],
     "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
       "جديد: إمكانية استخدام بصمة الإصبع للانتقال إلى الشاشة الرئيسية بعد نجاح فتح القفل بالوجه والبقاء على شاشة القفل",
       "إصلاح أيقونة بصمة الإصبع لا تظهر دائمًا على شاشة القفل",
       "إصلاح أيقونة بصمة الإصبع لا تختفي دائمًا بعد إلغاء القفل"
     ],
-    "أخرى": [
+    "آخرين": [
       "تحسين أمن واستقرار النظام"
     ],
     "شاشة القفل، شريط الحالة، لوحة الإشعارات": [
@@ -569,6 +738,16 @@
     ]
   },
   "logs_in": {
+    "सिस्टम": [
+      "अनुकूलन: एंटी-फ़्लिकर मोड सक्षम करने के बाद फ़िंगरप्रिंट अनलॉक एनिमेशन में रुकावट की समस्या ठीक की गई",
+      "अनुकूलन: Android सुरक्षा पैच को जुलाई 2019 में अपडेट किया गया। सिस्टम की सुरक्षा बढ़ाई गई।",
+      "Honor of Kings खेलते समय कभी-कभी होने वाली टच विफलता की समस्या को अनुकूलित किया गया",
+      "फ़िक्स: जब ब्रीदिंग लाइट का म्यूज़िक मोड बंद हो, तो ध्वनि वाली सूचनाओं के लिए नोटिफ़िकेशन ब्रीदिंग लाइट न जलने की समस्या ठीक की गई",
+      "सिस्टम के स्लीप मोड में होने पर फिंगरप्रिंट आइकन प्रदर्शित न होने की समस्या ठीक की गई",
+      "अनुकूलन: Google सुरक्षा पैच (2019#7) अपडेट किया गया, सिस्टम की सुरक्षा बढ़ाई गई।",
+      "Optimization: Updated Android Security Patch to July 2019. Increased system security.",
+      "Honor of Kings खेलते समय कभी-कभी होने वाली टच प्रतिक्रिया हानि की समस्या को अनुकूलित किया गया"
+    ],
     "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
       "नया: चेहरे से अनलॉक होने और लॉक स्क्रीन पर रहने पर फ़िंगरप्रिंट से होम स्क्रीन पर जाने की सुविधा",
       "फ़िक्स: लॉक स्क्रीन पर फ़िंगरप्रिंट आइकन हमेशा नहीं दिखता था",
@@ -583,14 +762,17 @@
       "अनुकूलन: कई डिवाइसों के बीच डेटा सिंक की समयबद्धता में सुधार",
       "अनुकूलन: कई उपकरणों के बीच सिंक में सुधार"
     ],
-    "सिस्टम": [
-      "अनुकूलन: Google सुरक्षा पैच (2019#7) अपडेट किया गया, सिस्टम की सुरक्षा बढ़ाई गई।"
+    "अन्य अनुकूलन (Optimizations) एवं समायोजन (Adjustments)": [
+      "स्लीप मोड में फिंगरप्रिंट अनलॉक के जवाब न देने की समस्या ठीक की गई।"
     ],
     "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
       "नया: चेहरे से अनलॉक होने और लॉक स्क्रीन पर रहने पर फ़िंगरप्रिंट से होम स्क्रीन पर जाने की सुविधा",
       "फ़िक्स: लॉक स्क्रीन पर फ़िंगरप्रिंट आइकन हमेशा नहीं दिखता था",
       "ठीक किया गया: फ़िंगरप्रिंट से अनलॉक सफल होने के बाद फ़िंगरप्रिंट आइकन हर बार तुरंत नहीं गायब होता था",
       "नया: चेहरे से अनलॉक सफल होने और लॉक स्क्रीन पर रहने पर फ़िंगरप्रिंट से होम स्क्रीन खोलें"
+    ],
+    "अन्य सुधार और ऑप्टिमाइज़ेशन": [
+      "स्लीप मोड में फ़िंगरप्रिंट अनलॉक के जवाब न देने की समस्या ठीक की गई"
     ],
     "अन्य": [
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
@@ -614,13 +796,21 @@
       "كۆپ ئۈسكۈنە ئارىسىدىكى سانلىق مەلۇمات ماسلاشتۇرۇشنىڭ ۋاقتىدا بولۇشىنى ئەلالاشتۇرۇش",
       "ئەلالاشتۇرۇش: كۆپ ئۈسكۈنىلەر ئارىسىدىكى سانلىق مەلۇمات ماسلاشتۇرۇشنىڭ ۋاقتىدا بولۇشى"
     ],
+    "باشقا ئەلالاشتۇرۇش ۋە تەڭشەشلەر": [
+      "ئۇخلاش ھالىتىدە بارماق ئىزى بىلەن قۇلۇپ ئېچىش ئىنكاس قايتۇرماسلىق مەسىلىسى تۈزىتىلدى."
+    ],
     "سىستېما": [
-      "ئەلالاشتۇرۇش: Google بىخەتەرلىك يامىقى (2019#7) يېڭىلاندى، سىستېما بىخەتەرلىكى ئۆستۈرۈلدى."
+      "ئەلالاشتۇرۇش: Google بىخەتەرلىك يامىقى (2019#7) يېڭىلاندى، سىستېما بىخەتەرلىكى ئۆستۈرۈلدى.",
+      "Optimization: Updated Android Security Patch to July 2019. Increased system security.",
+      "Honor of Kings ئويۇنى جەريانىدا ئاندا-ساندا كۆرۈلىدىغان سەزگۈر ئېكران كىرگۈزۈش ئۈزۈلۈش مەسىلىسىنى ياخشىلاش"
     ],
     "Lockscreen, status bar, Notification shade": [
       "يېڭىلىق: يۈز ئارقىلىق قۇلۇپ ئېچىش مۇۋەپپەقىيەتلىك بولۇپ قۇلۇپ ئېكرانىدا تۇرۇپ قالغاندا، بارماق ئىزى ئارقىلىق ئۈستەل يۈزىگە كىرىش ئىقتىدارى قوشۇلدى.",
       "قۇلۇپ ئېكرانى قۇلۇپلانغاندىن كېيىن بارماق ئىزى سىنبەلگىسىنىڭ بەزىدە كۆرۈنمەسلىك مەسىلىسىنى تۈزەتتى",
       "تۈزىتىلدى: بارماق ئىزى بىلەن قۇلۇپ ئېچىش مۇۋەپپەقىيەتلىك بولغاندىن كېيىن بارماق ئىزى سىنبەلگىسى دەرھال يوقىلىپ كەتمەيدىغان مەسىلە"
+    ],
+    "Other improvements and optimizations": [
+      "ئۇخلاش ھالىتىدە بارماق ئىزى بىلەن قۇلۇپ ئېچىش ئىنكاس قايتۇرماسلىق مەسىلىسىنى ئوڭشاش"
     ],
     "باشقىلىرى": [
       "Improved system security and stability"

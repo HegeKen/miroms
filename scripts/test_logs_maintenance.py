@@ -152,16 +152,26 @@ class MaskTest(unittest.TestCase):
 		self.rows = {
 			1: row(1, 'module', '设置', {'logs_zh': '设置', 'logs_en': 'Settings'}),
 			2: row(2, 'log', '关闭广告', {'logs_zh': '关闭广告', 'logs_en': 'Disable ads'}),
+			3: row(3, 'module', '音量', {'logs_zh': '音量', 'logs_en': 'Volume'}),
+			4: row(4, 'log', '修复问题', {'logs_zh': '修复问题', 'logs_en': 'Fix issue'}),
 		}
 
 	def test_extendable_mask(self):
-		owners = {('roms', 10): [[1, [2], self.zh]]}
+		# 本 ROM 在别处声明过 en，才允许补到只声明了 zh 的位置上
+		owners = {('roms', 10): [[1, [2], self.zh], [3, [4], self.zh | self.en]]}
 		issues = LogMaintenance.mask_issues(self.rows, owners)
 		self.assertEqual(1, len(issues['extendable']))
 		detail = issues['extendable'][0]
+		self.assertEqual(0, detail['position'])
 		self.assertEqual(self.zh, detail['old_mask'])
 		self.assertEqual(self.zh | self.en, detail['new_mask'])
 		self.assertEqual(['logs_en'], detail['added'])
+
+	def test_extendable_mask_stays_within_owner_languages(self):
+		# 共享行的 en 可能来自别的 ROM：本 ROM 从未声明 en 时不得补位
+		owners = {('roms', 10): [[1, [2], self.zh]]}
+		issues = LogMaintenance.mask_issues(self.rows, owners)
+		self.assertEqual([], issues['extendable'])
 
 	def test_invalid_bit(self):
 		owners = {('roms', 10): [[1, [2], self.zh | self.en | self.tw]]}
@@ -175,7 +185,7 @@ class MaskTest(unittest.TestCase):
 		self.assertEqual([999], issues['dangling'][0]['missing'])
 
 	def test_fill_masks_is_pure_on_dry_run(self):
-		owners = {('roms', 10): [[1, [2], self.zh]]}
+		owners = {('roms', 10): [[1, [2], self.zh], [3, [4], self.zh | self.en]]}
 		snapshot = copy.deepcopy(owners)
 		result = LogMaintenance.fill_masks(self.rows, owners, apply=False)
 		self.assertEqual(1, result['items'])
@@ -189,9 +199,19 @@ class MaskTest(unittest.TestCase):
 		self.assertEqual({'roms': 0, 'dev': 0}, result['by_table'])
 
 	def test_fill_masks_by_table(self):
-		owners = {('dev', 3): [[1, [2], self.zh]]}
+		owners = {('dev', 3): [[1, [2], self.zh], [3, [4], self.zh | self.en]]}
 		result = LogMaintenance.fill_masks(self.rows, owners, apply=False)
 		self.assertEqual({'roms': 0, 'dev': 1}, result['by_table'])
+
+	def test_fill_masks_stays_within_owner_languages(self):
+		# 共享行被别的 ROM 补齐了 en，但本 ROM 只声明过 zh → 不补，避免把别人的译文写进掩码
+		owners = {('roms', 10): [[1, [2], self.zh]]}
+		snapshot = copy.deepcopy(owners)
+		result = LogMaintenance.fill_masks(self.rows, owners, apply=False)
+		self.assertEqual(0, result['items'])
+		self.assertEqual(0, result['owners'])
+		self.assertEqual({'roms': 0, 'dev': 0}, result['by_table'])
+		self.assertEqual(snapshot, owners)
 
 	def test_clean_invalid_masks_dry_run(self):
 		owners = {('roms', 10): [[1, [2], self.zh | self.en | self.tw]]}

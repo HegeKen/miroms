@@ -18,117 +18,301 @@
     ]
   },
   "logs_en": {
+    "Accessibility": [
+      "Fixed the issue where the Accessibility page displayed abnormally after exiting split-screen mode."
+    ],
     "System": [
       "Fix: Noise could be heard when the screen was turned off in some cases",
       "Updated Android Security Patch to October 2020. Increased system security."
+    ],
+    "Camera": [
+      "Added: brand-new camera interface, all-new interaction experience and animation design",
+      "Added quick zoom via zoom-axis operation during video recording",
+      "Added: Support long-pressing the shutter button in photo mode to record video",
+      "Added full-screen shooting; supports first-screen function customization (minimum 2, maximum 10), sound effect customization (4 sets), and color customization (5 color schemes)",
+      "Optimized Menu tile style; resolution/aspect ratio selection is more convenient"
     ]
   },
   "logs_zh_tw": {
+    "無障礙服務": [
+      "修正 從分割畫面模式退出後，無障礙頁面顯示異常的問題"
+    ],
     "系統": [
       "修復: 部分使用場景在螢幕熄滅後有噪音",
       "更新Android安全性修補程式等級（2020#10），提升系統安全性"
+    ],
+    "相機": [
+      "新增 全新相機介面，全新互動體驗和動效設計",
+      "新增 錄影過程中變焦軸操作快速變焦",
+      "新增 支援拍照模式下長按拍照按鈕進行錄影操作",
+      "新增 全面屏拍攝，支援首屏功能自訂（最少2個，最多10個）、音效自訂（4套音效）、顏色自訂（5套配色）",
+      "最佳化 Menu 平鋪樣式、解析度/畫幅選擇操作更便捷"
     ]
   },
   "logs_ja": {
+    "アクセシビリティ": [
+      "分割画面モードを終了した後、ユーザー補助ページが正しく表示されない問題を修正しました。"
+    ],
     "システム": [
       "修正: 画面をオフにするとノイズが聞こえる場合がある",
       "Androidのセキュリティパッチを2020年10月にアップデートしました。システムのセキュリティを強化しました。"
+    ],
+    "カメラ": [
+      "追加：全新のカメラインターフェース、新しいインタラクション体験とモーション設計",
+      "動画撮影中のズーム軸操作によるクイックズームを追加",
+      "追加 写真モードでシャッターボタンを長押しして動画撮影をサポート",
+      "追加 全画面撮影、ファースト画面機能のカスタマイズ（最小2個、最大10個）、効果音のカスタマイズ（4種類）、色のカスタマイズ（5配色）に対応",
+      "Menuのタイル表示スタイルを最適化し、解像度/アスペクト比の選択操作がより便利になりました"
     ]
   },
   "logs_ko": {
+    "접근성": [
+      "분할 화면 모드 종료 후 접근성 페이지가 비정상적으로 표시되는 문제를 수정했습니다."
+    ],
     "시스템": [
       "수정: 일부 상황에서 화면이 꺼질 시 소음이 발생하는 문제",
       "Android 보안패치 (2020#10) 업데이트됨. 시스템 보안이 향상되었습니다."
+    ],
+    "카메라": [
+      "추가: 완전히 새로운 카메라 인터페이스, 새로운 상호작용 경험 및 모션 디자인",
+      "동영상 촬영 중 줌 축 조작으로 빠른 줌 추가",
+      "추가 사진 모드에서 셔터 버튼을 길게 눌러 동영상 촬영 지원",
+      "추가 전체 화면 촬영, 첫 화면 기능 사용자 지정(최소 2개, 최대 10개), 음향 효과 사용자 지정(4가지), 색상 사용자 지정(5가지 색상 구성) 지원",
+      "Menu 타일 스타일을 최적화하고 해상도/화면 비율 선택이 더 편리해졌습니다"
     ]
   },
   "logs_ru": {
+    "Специальные возможности": [
+      "Исправлена проблема с некорректным отображением страницы специальных возможностей после выхода из режима разделенного экрана."
+    ],
     "Система": [
       "Исправлено: В некоторых случаях после выключения экрана могли быть слышны посторонние звуки",
       "Обновление системы безопасности Android (октябрь 2020 года). Улучшена безопасность системы."
+    ],
+    "Камера": [
+      "Добавлено: совершенно новый интерфейс камеры, новый опыт взаимодействия и анимационный дизайн",
+      "Добавлено быстрое масштабирование с помощью оси зума при записи видео",
+      "Добавлено: Поддержка длительного нажатия кнопки спуска затвора в режиме фото для записи видео",
+      "Добавлена съемка на весь экран; поддержка настройки функций первого экрана (мин. 2, макс. 10), настройки звуковых эффектов (4 набора) и цветов (5 схем)",
+      "Оптимизирован плиточный стиль Menu; выбор разрешения/соотношения сторон стал удобнее"
     ]
   },
   "logs_uk": {
+    "Спеціальні можливості": [
+      "Виправлено проблему з ненормальним відображенням сторінки спеціальних можливостей після виходу з режиму розділеного екрана."
+    ],
     "Система": [
       "Виправлено: В деяких випадках після відключення екрана могли з'являтися сторонні звуки",
       "Оновлено патч безпеки Android за жовтень 2020 року. Збільшено безпеку системи."
+    ],
+    "Камера": [
+      "Додано: цілком новий інтерфейс камери, новий досвід взаємодії та анімаційний дизайн",
+      "Додано швидке масштабування за допомогою осі зуму під час запису відео",
+      "Додано: Підтримка довгого натискання кнопки спуску затвора в режимі фото для запису відео",
+      "Додано зйомку на весь екран; підтримка налаштування функцій першого екрана (мін. 2, макс. 10), налаштування звукових ефектів (4 набори) і кольорів (5 схем)",
+      "Оптимізовано плитковий стиль Menu; вибір роздільності/співвідношення сторін став зручнішим"
     ]
   },
   "logs_pl": {
+    "Dostępność": [
+      "Naprawiono problem z nieprawidłowym wyświetlaniem strony ułatwień dostępu po wyjściu z trybu podziału ekranu."
+    ],
     "System": [
       "Naprawiono: W niektórych przypadkach słychać było szum przy wyłączonym ekranie",
       "Zaktualizowano Pakiet Bezpieczeństwa Android do października 2020 r. Zwiększono bezpieczeństwo systemu."
+    ],
+    "Aparat": [
+      "Dodano: zupełnie nowy interfejs aparatu, nowe doświadczenie interakcji i projekt animacji",
+      "Dodano szybki zoom przez operację osi zoomu podczas nagrywania wideo",
+      "Dodano: Obsługa długiego naciśnięcia przycisku migawki w trybie zdjęć w celu nagrywania wideo",
+      "Dodano fotografowanie pełnoekranowe; obsługa dostosowywania funkcji pierwszego ekranu (min. 2, maks. 10), efektów dźwiękowych (4 zestawy) i kolorów (5 schematów)",
+      "Zoptymalizowano kafelkowy styl Menu; wybór rozdzielczości/proporcji jest wygodniejszy"
     ]
   },
   "logs_de": {
+    "Barrierefreiheit": [
+      "Problem behoben, bei dem die Seite für Barrierefreiheit nach dem Beenden des geteilten Bildschirms fehlerhaft angezeigt wurde."
+    ],
     "System": [
+      "Behoben: In einigen Szenarien war nach dem Ausschalten des Bildschirms ein Rauschen zu hören.",
+      "Android-Sicherheitspatch auf Oktober 2020 aktualisiert. Systemsicherheit erhöht.",
       "Behoben: In einigen Fällen war nach dem Ausschalten des Bildschirms ein Rauschen zu hören",
       "Android-Sicherheitspatch auf Oktober 2020 aktualisiert. Systemsicherheit verbessert."
+    ],
+    "Kamera": [
+      "Neu: völlig neue Kameraoberfläche, neuartige Interaktionserfahrung und Animationsdesign",
+      "Schneller Zoom über die Zoomachse während der Videoaufnahme hinzugefügt",
+      "Hinzugefügt: Unterstützung für langes Drücken der Auslösertaste im Fotomodus zur Videoaufnahme",
+      "Neu: Vollbildaufnahme; Anpassung der Funktionen des ersten Bildschirms (mind. 2, max. 10), Soundeffekte (4 Sets) und Farben (5 Farbschemata) werden unterstützt",
+      "Menu-Kachelstil optimiert; Auswahl von Auflösung/Seitenverhältnis ist jetzt komfortabler"
     ]
   },
   "logs_fr": {
+    "Accessibilité": [
+      "Correction d’un problème d’affichage anormal de la page Accessibilité après la sortie du mode écran partagé."
+    ],
     "Système": [
       "Réparé: On pouvait entendre le bruit lorsque l'écran était éteint dans certains cas",
       "Patch de Sécurité Android mis à jour pour octobre 2020. Amélioration du système de sécurité."
+    ],
+    "Appareil photo": [
+      "Ajout : toute nouvelle interface d'appareil photo, nouvelle expérience d'interaction et design d'animation",
+      "Ajout du zoom rapide via l’axe de zoom pendant l’enregistrement vidéo",
+      "Ajout : Prise en charge de l'appui long sur le bouton de déclenchement en mode photo pour enregistrer une vidéo",
+      "Ajout de la prise de vue plein écran ; prise en charge de la personnalisation des fonctions du premier écran (min. 2, max. 10), des effets sonores (4 ensembles) et des couleurs (5 thèmes)",
+      "Style de tuiles Menu optimisé ; sélection de la résolution/du format plus pratique"
     ]
   },
   "logs_it": {
+    "Accessibilità": [
+      "Risolto un problema per cui la pagina Accessibilità veniva visualizzata in modo anomalo dopo l'uscita dalla modalità schermo diviso."
+    ],
     "Sistema": [
       "Risolto: Si sentiva un rumore quando lo schermo era spento in alcuni casi",
       "Patch di sicurezza Android aggiornata a ottobre 2020. Maggiore sicurezza del sistema."
+    ],
+    "macchina fotografica": [
+      "Aggiunto: interfaccia fotocamera completamente nuova, nuova esperienza di interazione e design delle animazioni",
+      "Aggiunto zoom rapido tramite l'asse dello zoom durante la registrazione video",
+      "Aggiunto: Supporto per la pressione prolungata del pulsante di scatto in modalità foto per registrare video",
+      "Aggiunta ripresa a schermo intero; supporto alla personalizzazione delle funzioni della prima schermata (min 2, max 10), effetti sonori (4 set) e colori (5 combinazioni)",
+      "Ottimizzato lo stile a riquadri di Menu; selezione di risoluzione/proporzioni più comoda"
     ]
   },
   "logs_es": {
+    "Accesibilidad": [
+      "Se corrigió el problema por el que la página de Accesibilidad se mostraba de forma anómala tras salir del modo de pantalla dividida."
+    ],
     "Sistema": [
       "Reparado: Se podía escuchar ruido cuando la pantalla estaba apagada en algunos casos",
       "Parche de seguridad de Android actualizado a octubre de 2020. Seguridad del sistema incrementada."
+    ],
+    "Cámara": [
+      "Añadido: interfaz de cámara totalmente nueva, nueva experiencia de interacción y diseño de animaciones",
+      "Añadido zoom rápido mediante el eje de zoom durante la grabación de vídeo",
+      "Añadido: Soporte para mantener pulsado el botón de disparo en modo foto para grabar vídeo",
+      "Añadida captura a pantalla completa; compatibilidad con personalización de funciones de la primera pantalla (mín. 2, máx. 10), efectos de sonido (4 conjuntos) y colores (5 combinaciones)",
+      "Se optimizó el estilo de mosaico de Menu; la selección de resolución/proporción es más cómoda"
     ]
   },
   "logs_pt": {
+    "Acessibilidade": [
+      "Corrigido o problema em que a página de Acessibilidade era exibida de forma anormal após sair do modo de tela dividida."
+    ],
     "Sistema": [
       "Correção: Em alguns casos, era possível ouvir alguns ruídos quando a tela estava desligada",
       "Patch de Segurança do Android atualizado para Outubro de 2020. Segurança do sistema aprimorada."
+    ],
+    "Câmera": [
+      "Adicionado: interface da câmera totalmente nova, nova experiência de interação e design de animação",
+      "Adicionado zoom rápido através do eixo de zoom durante a gravação de vídeo",
+      "Adicionado: Suporte para pressionar e segurar o botão do obturador no modo foto para gravar vídeo",
+      "Adicionada captura em ecrã inteiro; suporte para personalização das funções do primeiro ecrã (mín. 2, máx. 10), efeitos sonoros (4 conjuntos) e cores (5 esquemas)",
+      "Estilo de mosaico do Menu otimizado; seleção de resolução/proporção mais conveniente"
     ]
   },
   "logs_tr": {
+    "Erişilebilirlik": [
+      "Bölünmüş ekran modundan çıkıldıktan sonra Erişilebilirlik sayfasının anormal görüntülenmesi sorunu düzeltildi."
+    ],
     "Sistem": [
       "Onarım: Bazı durumlarda ekran kapatıldığında gürültü duyuldu",
       "Android Güvenlik Patch'i Ekim 2020'de güncellendi. Sistem güvenliği arttırıldı."
+    ],
+    "Kamera": [
+      "Eklendi: tamamen yeni kamera arayüzü, yeni etkileşim deneyimi ve animasyon tasarımı",
+      "Video kaydı sırasında zoom ekseniyle hızlı yakınlaştırma eklendi",
+      "Eklendi: Fotoğraf modunda deklanşör düğmesine uzun basarak video kaydı desteği",
+      "Tam ekran çekim eklendi; ilk ekran işlevlerini özelleştirme (en az 2, en fazla 10), ses efektlerini (4 set) ve renkleri (5 renk şeması) özelleştirme desteği",
+      "Menu döşeme stili optimize edildi; çözünürlük/en-boy oranı seçimi daha kullanışlı"
     ]
   },
   "logs_id": {
+    "Aksesibilitas": [
+      "Memperbaiki masalah tampilan halaman Aksesibilitas yang tidak normal setelah keluar dari mode layar terpisah."
+    ],
     "Sistem": [
       "Perbaikan: Dalam beberapa kasus, saat layar dimatikan akan terdengar bunyi yang tidak seharusnya ada",
       "Patch Keamanan Android diperbarui (Oktober 2020). Keamanan sistem ditingkatkan.",
       "Perbaikan: Suara bising terdengar saat layar dimatikan dalam beberapa kasus",
       "Keamanan dan stabilitas sistem ditingkatkan"
+    ],
+    "Kamera": [
+      "Baru: antarmuka kamera sepenuhnya baru, pengalaman interaksi baru, dan desain animasi",
+      "Menambahkan zoom cepat melalui sumbu zoom saat merekam video",
+      "Ditambahkan: Dukungan menekan lama tombol rana di mode foto untuk merekam video",
+      "Ditambahkan pengambilan gambar layar penuh; mendukung penyesuaian fungsi layar pertama (min. 2, maks. 10), efek suara (4 set), dan warna (5 skema warna)",
+      "Gaya ubin Menu dioptimalkan; pemilihan resolusi/rasio aspek lebih mudah"
     ]
   },
   "logs_vi": {
+    "Khả năng truy cập": [
+      "Đã khắc phục sự cố trang Trợ năng hiển thị bất thường sau khi thoát khỏi chế độ chia đôi màn hình."
+    ],
     "Hệ thống": [
       "Sửa: Trong một số trường hợp có thể nghe thấy tiếng ồn khi màn hình tắt",
       "Cập nhật Bản vá bảo mật Android đến tháng 10 năm 2020. Tăng cường bảo mật hệ thống."
+    ],
+    "Máy ảnh": [
+      "Mới: giao diện camera hoàn toàn mới, trải nghiệm tương tác mới và thiết kế chuyển động",
+      "Thêm thu phóng nhanh bằng thao tác trục thu phóng khi quay video",
+      "Đã thêm: Hỗ trợ nhấn giữ nút chụp ở chế độ ảnh để quay video",
+      "Thêm chụp toàn màn hình; hỗ trợ tùy chỉnh chức năng màn hình đầu (tối thiểu 2, tối đa 10), hiệu ứng âm thanh (4 bộ) và màu sắc (5 bảng màu)",
+      "Tối ưu kiểu xếp lát Menu; thao tác chọn độ phân giải/tỷ lệ khung hình thuận tiện hơn"
     ]
   },
   "logs_th": {
+    "การเข้าถึง": [
+      "แก้ไขปัญหาหน้าต่างการช่วยการเข้าถึงแสดงผลผิดปกติหลังจากออกจากโหมดแยกหน้าจอ"
+    ],
     "ระบบ": [
       "แก้ไข: บางกรณีเมื่อปิดหน้าจอแล้วยังได้ยินเสียงอยู่",
       "อัปเดตแพทช์ความปลอดภัยของแอนดรอยด์เป็นตุลาคม 2020 เพิ่มความปลอดภัยของระบบ"
+    ],
+    "กล้อง": [
+      "เพิ่ม: อินเทอร์เฟซกล้องใหม่ทั้งหมด ประสบการณ์การโต้ตอบใหม่ และการออกแบบแอนิเมชัน",
+      "เพิ่มการซูมเร็วด้วยการใช้งานแกนซูมขณะบันทึกวิดีโอ",
+      "เพิ่มแล้ว: รองรับการกดปุ่มชัตเตอร์ค้างในโหมดถ่ายภาพเพื่อบันทึกวิดีโอ",
+      "เพิ่มการถ่ายภาพเต็มหน้าจอ รองรับการปรับแต่งฟังก์ชันหน้าจอแรก (ขั้นต่ำ 2 สูงสุด 10) ปรับแต่งเอฟเฟกต์เสียง (4 ชุด) และสี (5 ชุดสี)",
+      "ปรับปรุงสไตล์แบบกระเบื้องของ Menu; การเลือกความละเอียด/อัตราส่วนภาพสะดวกขึ้น"
     ]
   },
   "logs_ar": {
+    "إمكانية الوصول": [
+      "تم إصلاح مشكلة عرض صفحة إمكانية الوصول بشكل غير طبيعي بعد الخروج من وضع تقسيم الشاشة."
+    ],
     "النظام": [
       ":الإصلاح يصدر الهاتف صوت صفير/تنبيه عند إيقاف تشغيل الشاشة في بعض الحالات",
       "تم تحديث تصحيح أمان الأندرويد إلى اكتوبر 2020 لزيادة أمان النظام."
+    ],
+    "كاميرا": [
+      "جديد: واجهة كاميرا جديدة تمامًا، وتجربة تفاعل جديدة، وتصميم حركي",
+      "إضافة تكبير سريع عبر محور التكبير أثناء تسجيل الفيديو",
+      "تمت الإضافة: دعم الضغط المطول على زر الغالق في وضع الصور لتسجيل الفيديو",
+      "إضافة التصوير بملء الشاشة، ودعم تخصيص وظائف الشاشة الأولى (2 كحد أدنى، 10 كحد أقصى)، وتخصيص المؤثرات الصوتية (4 مجموعات) والألوان (5 مخططات ألوان)",
+      "تحسين نمط تجانب Menu؛ أصبح اختيار الدقة/نسبة العرض إلى الارتفاع أكثر ملاءمة"
     ]
   },
   "logs_in": {
+    "सरल उपयोग": [
+      "स्प्लिट-स्क्रीन मोड से बाहर निकलने के बाद एक्सेसिबिलिटी पेज के असामान्य रूप से प्रदर्शित होने की समस्या ठीक की गई।"
+    ],
     "सिस्टम": [
       "ठीक करें जब कुछ मामलों में स्क्रीन के बंद कर होने पर एक शोर सुनाई देता है",
       "Android सुरक्षा पैच को अक्टूबर 2020 से अपडेट किया गया. सिस्टम की सुरक्षा बढ़ा दी गई है."
+    ],
+    "कैमरा": [
+      "नया: बिल्कुल नया कैमरा इंटरफ़ेस, नया इंटरैक्शन अनुभव और मोशन डिज़ाइन",
+      "वीडियो रिकॉर्डिंग के दौरान ज़ूम अक्ष से तेज़ ज़ूम जोड़ा गया",
+      "जोड़ा गया: फोटो मोड में शटर बटन को देर तक दबाकर वीडियो रिकॉर्ड करने का समर्थन",
+      "पूर्ण स्क्रीन शूटिंग जोड़ी गई; पहली स्क्रीन के फ़ंक्शन को कस्टमाइज़ करने (कम से कम 2, अधिकतम 10), साउंड इफ़ेक्ट (4 सेट) और रंग (5 रंग योजनाएँ) को कस्टमाइज़ करने का समर्थन",
+      "Menu टाइल शैली अनुकूलित; रिज़ॉल्यूशन/पहलू अनुपात चयन अधिक सुविधाजनक"
     ]
   },
   "logs_ug": {
     "سىستېما": [
+      "تۈزىتىلدى: بەزى ئەھۋاللاردا ئېكران ئۆچكەندە شاۋقۇن ئاڭلىنىدۇ",
+      "Updated Android Security Patch to October 2020. Increased system security.",
       "Optimized system performance",
       "Improved system security and stability"
     ]

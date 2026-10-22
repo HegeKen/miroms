@@ -10,7 +10,7 @@
       "修复 横竖屏切换时，小窗视频应用显示异常的问题",
       "修复 部分游戏场景下，迷你窗挂起后尺寸异常的问题"
     ],
-    "桌面": [
+    "主屏幕": [
       "优化 桌面图标启动动画策略，提升应用启动速度",
       "修复 部分场景下，分身空间桌面布局出现空位的问题"
     ],
@@ -59,7 +59,7 @@
       "Fix: Video apps weren't displayed correctly when switching screen orientation",
       "Fix: The size of pinned floating windows for some games was incorrect"
     ],
-    "Home screen": [
+    "desktop": [
       "Optimization: New Home screen shortcut startup animation strategy makes apps launch faster",
       "Fix: Empty spots appeared in Second space Home screen layout in some cases"
     ],
@@ -304,6 +304,11 @@
       "Виправлено: Іконки у однорядкових сповіщеннях відображалися не повністю",
       "Виправлено: Могли з'являтися порожні сповіщення з відображенням тільки іконки",
       "Виправлено: Значок 5G у рядку стану відображався не повністю після зміни розміру шрифту або переходу на сторонній шрифт"
+    ],
+    "Рядок стану, панель сповіщень": [
+      "Виправлено: Іконки у однорядкових сповіщеннях відображалися не повністю",
+      "Виправлено: Могли з'являтися порожні сповіщення з відображенням тільки іконки",
+      "Виправлено: Значок 5G у рядку стану відображався не повністю після зміни розміру шрифту або переходу на сторонній шрифт"
     ]
   },
   "logs_pl": {
@@ -356,6 +361,7 @@
       "Optimierung: Verbesserte App-Vorladung für schnelleren App-Start",
       "Optimization: New startup animation strategy makes apps launch faster",
       "Updated the security patch to September 2024. Increased system security.",
+      "Sicherheitspatch für Juli 2024 aktualisiert. Systemsicherheit erhöht.",
       "Optimierung: Verbessertes App-Vorladen für schnelleren App-Start"
     ],
     "Schwebende Fenster": [
@@ -364,6 +370,9 @@
     ],
     "Kontrollzentrum": [],
     "Always-On-Display": [],
+    "Geräteübergreifende intelligente Konnektivität": [
+      "Optimierung: Geräteerkennung im Xiaomi Smart Hub ist jetzt schneller"
+    ],
     "Sperrbildschirm": [
       "New: A switch for a feature that allows long pressing Home screen to edit it"
     ],
@@ -372,6 +381,11 @@
     ],
     "Rechner": [
       "Optimierung: Empfindlichkeit der Taschenrechner-Tasten verbessert"
+    ],
+    "Xiaomi Cloud-Dienst": [
+      "Behoben: Symbole in einzeiligen Benachrichtigungen wurden nicht vollständig angezeigt",
+      "Behoben: Leere Benachrichtigungen wurden nur mit dem Symbol angezeigt",
+      "Behoben: Das 5G-Symbol in der Statusleiste wurde nach Änderung der Schriftgröße oder nach Wechsel zu einer Drittanbieter-Schriftart nicht vollständig angezeigt"
     ],
     "Statusleiste, Benachrichtigungsfeld": [
       "Behoben: Symbole in einzeiligen Benachrichtigungen wurden nicht vollständig angezeigt",
@@ -606,6 +620,9 @@
     ],
     "Pusat kontrol": [],
     "Tampilan selalu aktif (AOD)": [],
+    "Konektivitas cerdas lintas perangkat": [
+      "Optimasi: Penemuan perangkat di Xiaomi Smart Hub kini lebih cepat"
+    ],
     "Layar kunci": [
       "New: A switch for a feature that allows long pressing Home screen to edit it"
     ],
@@ -673,6 +690,11 @@
       "Sửa: Biểu tượng thông báo một dòng không được hiển thị đầy đủ",
       "Sửa: Thông báo trống xuất hiện chỉ với biểu tượng được hiển thị",
       "Sửa: Biểu tượng 5G trên thanh trạng thái không hiển thị đầy đủ sau khi chuyển cỡ chữ hoặc đổi sang phông chữ của bên thứ ba"
+    ],
+    "Thanh trạng thái, thanh thông báo": [
+      "Sửa: Biểu tượng thông báo một dòng không được hiển thị đầy đủ",
+      "Sửa: Thông báo trống xuất hiện chỉ với biểu tượng được hiển thị",
+      "Sửa: Biểu tượng 5G trên thanh trạng thái không hiển thị đầy đủ sau khi chuyển cỡ chữ hoặc đổi sang phông chữ của bên thứ ba"
     ]
   },
   "logs_th": {
@@ -710,6 +732,11 @@
       "แก้ไข: Crashes occurred in some cases"
     ],
     "บริการคลาวด์ Xiaomi": [
+      "แก้ไข: ไอคอนการแจ้งเตือนบรรทัดเดียวไม่แสดงทั้งหมด",
+      "แก้ไข: การแจ้งเตือนว่างเปล่าปรากฏขึ้นโดยแสดงเฉพาะไอคอนเท่านั้น",
+      "แก้ไข: ไอคอน 5G ในแถบสถานะแสดงได้ไม่เต็มที่หลังจากเปลี่ยนขนาดตัวอักษรหรือเปลี่ยนเป็นแบบอักษรของบุคคลที่สาม"
+    ],
+    "แถบสถานะ, แผงการแจ้งเตือน": [
       "แก้ไข: ไอคอนการแจ้งเตือนบรรทัดเดียวไม่แสดงทั้งหมด",
       "แก้ไข: การแจ้งเตือนว่างเปล่าปรากฏขึ้นโดยแสดงเฉพาะไอคอนเท่านั้น",
       "แก้ไข: ไอคอน 5G ในแถบสถานะแสดงได้ไม่เต็มที่หลังจากเปลี่ยนขนาดตัวอักษรหรือเปลี่ยนเป็นแบบอักษรของบุคคลที่สาม"
@@ -816,7 +843,8 @@
     "سىستېما": [
       "Optimization: Improved app preloading to enhance app startup speed",
       "Optimization: New startup animation strategy makes apps launch faster",
-      "Updated the security patch to September 2024. Increased system security."
+      "Updated the security patch to September 2024. Increased system security.",
+      "Updated the security patch to July 2024. Increased system security."
     ],
     "Floating windows": [
       "Fix: Video apps weren't displayed correctly when switching screen orientation",
@@ -833,6 +861,11 @@
     "ھېسابلىغۇچ": [
       "Optimization: Improved the sensitivity of Calculator buttons"
     ],
+    "Xiaomi بۇلۇت مۇلازىمىتى": [
+      "Fix: Single-line notification icons were not fully displayed",
+      "Fix: Blank notifications appeared with only the icon displayed",
+      "Fix: The 5G icon in the status bar wasn't fully displayed after switching font size or changing to a third party font"
+    ],
     "Status bar, Notification shade": [
       "Fix: Single-line notification icons were not fully displayed",
       "Fix: Blank notifications appeared with only the icon displayed",
@@ -843,7 +876,8 @@
     "མ་ལག": [
       "Optimization: Improved app preloading to enhance app startup speed",
       "Optimization: New startup animation strategy makes apps launch faster",
-      "Updated the security patch to September 2024. Increased system security."
+      "Updated the security patch to September 2024. Increased system security.",
+      "Updated the security patch to July 2024. Increased system security."
     ],
     "Floating windows": [
       "Fix: Video apps weren't displayed correctly when switching screen orientation",
@@ -859,6 +893,11 @@
     ],
     "རྩིས་འཁོར": [
       "Optimization: Improved the sensitivity of Calculator buttons"
+    ],
+    "Mi Cloud": [
+      "Fix: Single-line notification icons were not fully displayed",
+      "Fix: Blank notifications appeared with only the icon displayed",
+      "Fix: The 5G icon in the status bar wasn't fully displayed after switching font size or changing to a third party font"
     ],
     "ཆུ་ཚོད": [
       "Fix: When setting alarm repetition, the checkbox was displayed abnormally when switching to Dark mode"

@@ -22,7 +22,7 @@
       "优化 打开关闭应用动画稳定性",
       "优化 焕新存储触发策略，提升触发概率"
     ],
-    "桌面": [
+    "主屏幕": [
       "新增 桌面图标文字在壁纸浅色区域显示阴影效果"
     ],
     "锁屏": [
@@ -98,7 +98,7 @@
       "Updated the security patch to August 2025. Increased system security.",
       "Optimization: Tweaked the Storage refresh algorithm so it activates more often"
     ],
-    "Home screen": [
+    "desktop": [
       "New: Home screen icon text now displays shadows over light wallpaper areas for better readability"
     ],
     "Lock screen": [
@@ -166,7 +166,7 @@
       "新增: 鎖定螢幕桌布支援透鏡效果",
       "新增: 鎖定螢幕自訂快速功能"
     ],
-    "設定": [
+    "设置": [
       "優化: 桌面設定中，系統導覽方式頁的快速功能入口"
     ],
     "狀態欄、通知欄": [
@@ -185,6 +185,9 @@
       "優化: 進入應用程式二級頁時的打斷動畫效果",
       "優化: 應用程式跳轉時的打斷動畫效果",
       "優化: 關閉橫向應用程式時的打斷動畫效果"
+    ],
+    "設定": [
+      "優化: 桌面設定中，系統導覽方式頁的快速功能入口"
     ],
     "相機": [
       "煥新改版 全新上線",
@@ -226,6 +229,11 @@
     "設定": [
       "最適化: ホーム画面の設定にシステムナビゲーション設定へのショートカットを追加しました"
     ],
+    "ステータスバー、通知シェード": [
+      "新機能: 一部のステータスバーアイコンがカスタム表示をサポートするようになりました",
+      "最適化: カスタム通知が展開をサポートするようになりました",
+      "最適化: HD 信号アイコンがステータスバーに常時表示されなくなりました"
+    ],
     "アクセシビリティ": [
       "修正: TalkBack モードでタッチジェスチャーが機能しない不具合",
       "修正: TalkBack モードで音量ボタンが機能しない不具合",
@@ -252,11 +260,6 @@
       "修正: アプリを開いたり閉じたりすると時々表示が乱れる不具合",
       "セキュリティパッチを2025年8月にアップデートしました。システムのセキュリティが強化されました。",
       "最適化: ストレージ更新アルゴリズムを調整し、より頻繁に起動するようにしました"
-    ],
-    "ステータスバー、通知シェード": [
-      "新機能: 一部のステータスバーアイコンがカスタム表示をサポートするようになりました",
-      "最適化: カスタム通知が展開をサポートするようになりました",
-      "最適化: HD 信号アイコンがステータスバーに常時表示されなくなりました"
     ],
     "最近のタスク": [
       "新機能: ホーム画面のアイコンテキストが、明るい壁紙領域に影を表示して読みやすくなりました"
@@ -423,6 +426,11 @@
     "Налаштування": [
       "Оптимізація: Додано ярлик до «Способів навігації» в «Налаштуваннях робочого столу»"
     ],
+    "Рядок стану, панель сповіщень": [
+      "Нове: Деякі піктограми в рядку стану тепер підтримують користувацьке відображення",
+      "Оптимізація: Спеціальні сповіщення тепер підтримують розгортання",
+      "Оптимізація: Піктограма HD-сигналу більше не відображається постійно в рядку стану"
+    ],
     "Спеціальні можливості": [
       "Виправлено: Сенсорні жести перестали працювати в режимі TalkBack",
       "Виправлено: Кнопки гучності не працювали в режимі TalkBack",
@@ -541,7 +549,8 @@
       "Behoben: Probleme mit Animationen beim Öffnen oder Schließen von Apps",
       "Behoben: In seltenen Fällen verschwanden Hintergrundbilder beim Öffnen oder Schließen von Apps",
       "Behoben: Gelegentliche Anzeigefehler beim Öffnen oder Schließen von Apps",
-      "Sicherheitspatch auf August 2025 aktualisiert. Systemsicherheit erhöht."
+      "Sicherheitspatch auf August 2025 aktualisiert. Systemsicherheit erhöht.",
+      "Optimierung: Speicher-Aktualisierungsalgorithmus angepasst, damit er häufiger ausgelöst wird"
     ],
     "Startbildschirm": [
       "Neu: Die Textsymbole auf dem Startbildschirm zeigen jetzt Schatten über hellen Bereichen des Hintergrundbilds"
@@ -564,6 +573,11 @@
       "Behoben: Probleme, die verhinderten, dass der Rekorder TalkBack-Audio aufzeichnet",
       "Behoben: Probleme mit Ansagen für nicht ausgewählte Elemente in Kalender und anderen Apps",
       "Behoben: In mehreren Apps wurden einige Schaltflächen nicht angesagt, darunter Einstellungen, Kontrollzentrum, Nachrichten, Kontakte, Wetter, Notizen und Browser"
+    ],
+    "Systemanimationen": [
+      "Optimierung: Unterbrechungsanimation beim Öffnen von Unterseiten in Apps",
+      "Optimierung: Unterbrechungsanimation bei App-Übergängen",
+      "Optimierung: Unterbrechungsanimation beim Schließen von Apps im Querformat"
     ],
     "Statusleiste, Benachrichtigungsleiste": [
       "Neu: Einige Statusleisten-Symbole unterstützen jetzt benutzerdefinierte Anzeige.",
@@ -664,7 +678,7 @@
       "Nuovo: Gli sfondi della schermata di blocco ora supportano l'effetto obiettivo",
       "Nuovo: Collegamenti personalizzabili per la schermata di blocco"
     ],
-    "Fotocamera": [
+    "macchina fotografica": [
       "Design completamente nuovo",
       "Nuovo linguaggio visivo: uno stile visivo più professionale offre un’esperienza di ripresa ancora più coinvolgente.",
       "- Ottimizzazione della struttura: Abbiamo semplificato i menu delle funzionalità e ottimizzato la pagina delle impostazioni.",
@@ -680,8 +694,7 @@
       "The standard watermark supports custom positioning.",
       "Expanded personalization settings: Added support for multiple camera interface color schemes.",
       "· Modalità Regista ottimizzata: registrazione video professionale e configurazione multicam per riprese simultanee da angolazioni diverse.",
-      "La filigrana Fotogramma ora supporta sfondi neri o bianchi e viene visualizzata durante la riproduzione degli scatti dinamici.",
-      "Pro mode upgrade: Adjusted the interface layout and combined parameter options to reduce preview obstruction and help you focus on your creative process."
+      "La filigrana Fotogramma ora supporta sfondi neri o bianchi e viene visualizzata durante la riproduzione degli scatti dinamici."
     ],
     "Impostazioni": [
       "Ottimizzazione: Aggiunto un collegamento alle impostazioni di navigazione del sistema nelle impostazioni della schermata Home"
@@ -725,6 +738,20 @@
     ],
     "Recenti": [
       "Nuovo: Il testo delle icone della schermata Home ora mostra ombre sulle zone chiare dello sfondo, per una migliore leggibilità"
+    ],
+    "Fotocamera": [
+      "Design completamente nuovo",
+      "Nuovo linguaggio visivo: uno stile visivo più professionale offre un’esperienza di ripresa ancora più coinvolgente.",
+      "- Ottimizzazione della struttura: Abbiamo semplificato i menu delle funzionalità e ottimizzato la pagina delle impostazioni.",
+      "Modalità Pro aggiornata: layout dell'interfaccia ottimizzato e opzioni dei parametri combinate per ridurre l'ingombro dell'anteprima e aiutarti a concentrarti sul processo creativo.",
+      "· Modalità Regista ottimizzata: registrazione video professionale e configurazione multicam per riprese simultanee da angolazioni diverse.",
+      "Funzionalità della filigrana migliorate:",
+      "La filigrana Fotogramma ora supporta sfondi neri o bianchi e viene visualizzata durante la riproduzione degli scatti dinamici.",
+      "La filigrana standard supporta il posizionamento personalizzato.",
+      "Impostazioni di personalizzazione ampliate: aggiunto il supporto per più schemi di colore dell'interfaccia della fotocamera.",
+      "Pro mode upgrade: Adjusted the interface layout and combined parameter options to reduce preview obstruction and help you focus on your creative process.",
+      "· Director mode optimization: Professional video recording and multicam setup support simultaneous shooting from different angles.",
+      "Film frame watermark now supports black or white backgrounds and appears during dynamic shot playback."
     ]
   },
   "logs_es": {
@@ -752,7 +779,7 @@
       "La marca de agua del marco de película ahora admite fondos blancos o negros y aparece durante la reproducción de tomas dinámicas.",
       "Pro mode upgrade: Adjusted the interface layout and combined parameter options to reduce preview obstruction and help you focus on your creative process."
     ],
-    "Ajustes": [
+    "Configuración": [
       "Optimización: Se agregó un acceso directo a la configuración de navegación del sistema en la configuración de la Pantalla de inicio"
     ],
     "barra de estado, barra de notificaciones": [
@@ -794,6 +821,9 @@
     ],
     "Recientes": [
       "Nuevo: El texto del icono de la Pantalla de inicio ahora muestra sombras sobre las áreas claras del fondo de pantalla para una mejor legibilidad"
+    ],
+    "Ajustes": [
+      "Optimización: Se agregó un acceso directo a la configuración de navegación del sistema en la configuración de la Pantalla de inicio"
     ]
   },
   "logs_pt": {
@@ -1019,6 +1049,11 @@
     "Cài đặt": [
       "Tối ưu: Đã thêm lối tắt vào cài đặt điều hướng hệ thống trong cài đặt Màn hình chính"
     ],
+    "Thanh trạng thái, thanh thông báo": [
+      "Mới: Một số biểu tượng thanh trạng thái hiện hỗ trợ hiển thị tùy chỉnh",
+      "Tối ưu: Thông báo tùy chỉnh hiện hỗ trợ mở rộng",
+      "Tối ưu: Biểu tượng tín hiệu HD không còn hiển thị cố định trên thanh trạng thái"
+    ],
     "Khả năng truy cập": [
       "Sửa: Cử chỉ chạm đã dừng hoạt động ở chế độ TalkBack",
       "Sửa: Các phím âm lượng không hoạt động ở chế độ TalkBack",
@@ -1093,6 +1128,11 @@
     ],
     "การตั้งค่า": [
       "การเพิ่มประสิทธิภาพ: เพิ่มทางลัดไปยังการตั้งค่าการนำทางระบบในการตั้งค่าหน้าจอหลัก"
+    ],
+    "แถบสถานะ, แผงการแจ้งเตือน": [
+      "ใหม่: ไอคอนแถบสถานะบางรายการรองรับการแสดงผลแบบกำหนดเองแล้ว",
+      "การเพิ่มประสิทธิภาพ: การแจ้งเตือนแบบกำหนดเองรองรับการกางออกแล้ว",
+      "การเพิ่มประสิทธิภาพ: ไอคอนสัญญาณ HD จะไม่แสดงถาวรในแถบสถานะอีกต่อไป"
     ],
     "การเข้าถึง": [
       "แก้ไข: ท่าทางสัมผัสหยุดทำงานในโหมด TalkBack",
@@ -1294,9 +1334,10 @@
       "Fix: Issues with animations when opening or closing apps",
       "Fix: Wallpapers disappeared in rare cases when opening or closing apps",
       "Fix: Occasional display glitches when opening or closing apps",
-      "Updated the security patch to August 2025. Increased system security."
+      "Updated the security patch to August 2025. Increased system security.",
+      "Optimization: Tweaked the Storage refresh algorithm so it activates more often"
     ],
-    "باش ئېكران": [
+    "ئۈستەل يۈزى": [
       "New: Home screen icon text now displays shadows over light wallpaper areas for better readability"
     ],
     "Lock screen": [
@@ -1317,6 +1358,11 @@
       "Fix: Issues that prevented Recorder from capturing TalkBack audio",
       "Fix: Issues with announcements for unselected items in Calendar and other apps",
       "Fix: Some buttons weren't announced in several apps, including Settings, Control center, Messaging, Contacts, Weather, Notes, and Browser"
+    ],
+    "System animations": [
+      "Optimization: Interrupt animation when entering subpages within apps",
+      "Optimization: Interrupt animation during app transitions",
+      "Optimization: Interrupt animation when closing apps in Landscape mode"
     ],
     "Settings": [
       "Optimization: Added a shortcut to system navigation settings in Home screen settings"
@@ -1349,9 +1395,10 @@
       "Fix: Issues with animations when opening or closing apps",
       "Fix: Wallpapers disappeared in rare cases when opening or closing apps",
       "Fix: Occasional display glitches when opening or closing apps",
-      "Updated the security patch to August 2025. Increased system security."
+      "Updated the security patch to August 2025. Increased system security.",
+      "Optimization: Tweaked the Storage refresh algorithm so it activates more often"
     ],
-    "Home screen": [
+    "ཅོག་ངོས": [
       "New: Home screen icon text now displays shadows over light wallpaper areas for better readability"
     ],
     "Lock screen": [
@@ -1372,6 +1419,11 @@
       "Fix: Issues that prevented Recorder from capturing TalkBack audio",
       "Fix: Issues with announcements for unselected items in Calendar and other apps",
       "Fix: Some buttons weren't announced in several apps, including Settings, Control center, Messaging, Contacts, Weather, Notes, and Browser"
+    ],
+    "System animations": [
+      "Optimization: Interrupt animation when entering subpages within apps",
+      "Optimization: Interrupt animation during app transitions",
+      "Optimization: Interrupt animation when closing apps in Landscape mode"
     ],
     "Settings": [
       "Optimization: Added a shortcut to system navigation settings in Home screen settings"

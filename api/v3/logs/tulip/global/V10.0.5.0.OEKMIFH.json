@@ -1,23 +1,23 @@
 {
   "logs_zh": {
     "电话": [
-      "修复 无卡时锁屏左上角运营商名称显示问题"
+      "在某些情况下，即使没有安装 SIM 卡，设备仍会显示运营商的名称。"
     ],
     "其他": [
-      "修复 某些场景下导致系统崩溃的问题"
+      "在某些情况下，“Restore System”（系统恢复功能）会崩溃或无法正常使用。"
     ]
   },
   "logs_en": {
     "Phone": [
-      "Restore Carrier name was displayed with no SIM card installed in some cases"
+      "Fixed the issue where the carrier name was displayed in the upper left corner of the lock screen when no card was inserted."
     ],
     "Other": [
-      "Restore System crashed in some cases"
+      "Fixed the issue that caused the system to crash in certain scenarios."
     ]
   },
   "logs_zh_tw": {
-    "電話": [
-      "修復 無卡時鎖屏左上角運營商名稱顯示問題"
+    "电话": [
+      "修复了在没有手机卡的情况下，屏幕锁定时左上角无法显示运营商名称的问题。"
     ],
     "其他": [
       "修復 某些場景下導致系統崩潰的問題"
@@ -25,7 +25,7 @@
   },
   "logs_ja": {
     "電話": [
-      "SIMカード未挿入時にロック画面左上にキャリア名が表示される問題を修正"
+      "カードがない状態でロック画面の左上隅に表示される通信事業者名の問題を修正しました。"
     ],
     "その他": [
       "一部のシーンでシステムがクラッシュする問題を修正"
@@ -33,18 +33,18 @@
   },
   "logs_ko": {
     "전화": [
-      "SIM 카드가 없을 때 잠금 화면 왼쪽 상단에 통신사 이름이 표시되는 문제를 수정"
+      "카드가 없을 때 화면 잠금 상태에서 왼쪽 상단에 표시되는 통신사 이름의 문제를 수정했습니다."
     ],
     "기타": [
-      "일부 환경에서 시스템이 충돌하는 문제를 수정했습니다"
+      "특정 상황에서 시스템이 크래시하는 문제를 수정했습니다."
     ]
   },
   "logs_ru": {
     "Телефон": [
-      "Исправлена проблема отображения имени оператора в левом верхнем углу экрана блокировки без SIM-карты"
+      "Устранено ошибочное отображение названия оператора связи в верхнем левом углу экрана при блокировке устройства в случае отсутствия SIM-карты."
     ],
     "Другое": [
-      "Исправлена проблема, из-за которой система аварийно завершала работу в некоторых сценариях."
+      "Устранено ошибочное поведение системы в некоторых сценариях, приводившее к ее завершению (краху)."
     ]
   },
   "logs_uk": {
@@ -52,28 +52,28 @@
       "Виправлено проблему відображення назви оператора у верхньому лівому куті екрана блокування без SIM-картки"
     ],
     "Інше": [
-      "Виправлено проблему, через яку система аварійно завершувала роботу в деяких сценаріях."
+      "Виправлено проблему, яка при певних умовах призводила до збою системи."
     ]
   },
   "logs_pl": {
     "Telefon": [
-      "Naprawiono problem wyświetlania nazwy operatora w lewym górnym rogu ekranu blokady bez karty SIM"
+      "Poprawiono problem z wyświetlaniem nazwy operatora w górnym lewym rogu ekranu blokującego się telefonu w przypadku braku karty."
     ],
-    "Inne": [
-      "Naprawiono problem powodujący awarię systemu w niektórych scenariuszach."
+    "Reszt": [
+      "Poprawiono problem, który w niektórych scenariach powodował awarię systemu."
     ]
   },
   "logs_de": {
     "Telefon": [
-      "Problem behoben, bei dem der Netzbetreibername ohne SIM-Karte oben links auf dem Sperrbildschirm angezeigt wurde"
+      "Behebung des Problems: Der Name des Mobilfunkanbieters wird im oberen linken Eck des Bildschirms beim Einschalten des Displays ohne vorhandene SIM-Karte angezeigt."
     ],
     "Sonstiges": [
-      "Problem behoben, das in einigen Szenarien zu einem Systemabsturz führte."
+      "Behebung des Problems, das in bestimmten Szenarien zum Absturz des Systems führte."
     ]
   },
   "logs_fr": {
     "Téléphone": [
-      "Correction du problème d'affichage du nom de l'opérateur en haut à gauche de l'écran de verrouillage sans carte SIM"
+      "Correction du problème de visualisation du nom du fournisseur d’accès à Internet dans le coin supérieur gauche de l’écran de verrouillage lorsqu’il n’y a pas de carte SIM."
     ],
     "Autre": [
       "Correction du problème qui provoquait le plantage du système dans certains cas."
@@ -84,15 +84,15 @@
       "Risolto il problema di visualizzazione del nome dell'operatore in alto a sinistra nella schermata di blocco senza scheda SIM"
     ],
     "Altro": [
-      "Risolto il problema che causava l'arresto anomalo del sistema in alcune situazioni."
+      "Risolto il problema che, in alcune situazioni, causava il crash del sistema."
     ]
   },
   "logs_es": {
     "Teléfono": [
-      "Se corrigió el problema de visualización del nombre del operador en la esquina superior izquierda de la pantalla de bloqueo sin tarjeta SIM"
+      "Se ha corregido el problema de que, cuando no hay tarjeta disponible, se muestra el nombre del operador en la esquina superior izquierda de la pantalla de bloqueo."
     ],
     "Otros": [
-      "Se corrigió el problema que provocaba el bloqueo del sistema en algunos casos."
+      "Se ha corregido el problema que, en algunas situaciones, provocaba el colapso del sistema."
     ]
   },
   "logs_pt": {
@@ -100,7 +100,7 @@
       "Corrigido o problema de exibição do nome da operadora no canto superior esquerdo da tela de bloqueio sem cartão SIM"
     ],
     "Outros": [
-      "Corrigido o problema que causava falha do sistema em alguns cenários."
+      "Corrigir o problema que, em determinadas situações, causa a falha do sistema."
     ]
   },
   "logs_tr": {
@@ -113,7 +113,7 @@
   },
   "logs_id": {
     "Telepon": [
-      "Memperbaiki masalah nama operator yang ditampilkan di pojok kiri atas layar kunci saat tidak ada kartu SIM"
+      "Diperbaiki masalah penampilan nama operator di pojok kiri atas layar saat layar terkunci, yang terjadi ketika tidak ada kartu SIM yang terpasang."
     ],
     "Lainnya": [
       "Memperbaiki masalah yang menyebabkan sistem crash dalam beberapa skenario."
@@ -121,7 +121,7 @@
   },
   "logs_vi": {
     "Điện thoại": [
-      "Khắc phục sự cố hiển thị tên nhà mạng ở góc trên bên trái màn hình khóa khi không có thẻ SIM"
+      "Đã sửa lỗi hiển thị tên nhà mạng ở góc trên bên trái màn hình khi khóa màn hình trong trường hợp không có thẻ."
     ],
     "Khác": [
       "Đã khắc phục sự cố khiến hệ thống bị treo trong một số trường hợp."
@@ -137,18 +137,18 @@
   },
   "logs_ar": {
     "الهاتف": [
-      "تم إصلاح مشكلة عرض اسم المشغل في الزاوية العلوية اليسرى لشاشة القفل عند عدم وجود بطاقة SIM"
+      "تم إصلاح المشكلة المتعلقة بعرض اسم مزود الخدمة في الزاوية العليا اليسرى من شاشة القفل عندما لا يكون هناك بطاقة مثبتة."
     ],
-    "أخرى": [
+    "آخرين": [
       "تم إصلاح المشكلة التي تسببت في تعطل النظام في بعض الحالات."
     ]
   },
   "logs_in": {
     "फ़ोन": [
-      "SIM कार्ड न होने पर लॉक स्क्रीन के ऊपर-बाएँ कोने में ऑपरेटर का नाम दिखने की समस्या ठीक की गई"
+      "समस्या को ठीक कर दिया गया है: जब कोई कार्ड नहीं होता, तो स्क्रीन लॉक होने पर स्क्रीन के ऊपरी बाएँ कोने में ऑपरेटर का नाम दिखाई देता है।"
     ],
     "अन्य": [
-      "कुछ परिदृश्यों में सिस्टम क्रैश होने की समस्या ठीक की गई।"
+      "कुछ स्थितियों में सिस्टम के क्रैश होने की समस्या को ठीक कर दिया गया है."
     ]
   }
 }

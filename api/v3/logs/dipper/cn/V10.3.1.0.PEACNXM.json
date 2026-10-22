@@ -14,7 +14,7 @@
     "计算器": [
       "修复 未开启小爱同学情况下，计算器偶现崩溃的问题"
     ],
-    "相册": [
+    "画廊": [
       "新增 故事相册开关，一键控制是否展示你的相册故事卡片",
       "新增 照片文字水印编辑，添加多种文艺水印样式",
       "新增 AI智能故事相册，整理生活中感动你的故事",
@@ -63,6 +63,12 @@
     "Calculator": [
       "Fix: When Mi AI was off, Calculator crashed in some cases"
     ],
+    "Album": [
+      "New Stories album toggle to control whether your album story cards are shown with one tap",
+      "Added photo text watermark editing, with multiple artistic watermark styles",
+      "Added AI smart story album to organize touching stories from your life",
+      "Fix: When Mi AI was off, Calculator crashed in some cases"
+    ],
     "Weather": [
       "New: Animations for cloudy and smoggy weather",
       "Optimization: Adjustments for 15-day forecast curves",
@@ -74,20 +80,19 @@
     "Game speed booster": [
       "New: Floating windows for incoming calls during games"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: NFC shortcut in the Notification shade",
-      "Optimization: The height of status bar is equal to the height of the notch now"
-    ],
-    "Gallery": [
-      "Fix: When Mi AI was off, Calculator crashed in some cases"
-    ],
     "MI Wallet": [
       "New: Custopm top-up amounts for Beijing, Tianjin, and Hebei transport card",
       "New: Mi Home keycard features",
       "New: Mi Pay supports UnionPay quick NFC payments now",
       "Optimization: Solutions for network errors during payments",
+      "Optimize the user experience of Xiaomi Transit card error prompts",
+      "Optimize the interaction experience of the Xiaomi Transit recharge payment page",
       "Optimization: Revamped the page for topping up transport cards",
       "Added Mijia smart door lock key card feature"
+    ],
+    "Lockscreen, status bar, Notification shade": [
+      "New: NFC shortcut in the Notification shade",
+      "Optimization: The height of status bar is equal to the height of the notch now"
     ],
     "Other": [
       "Improved system security and stability"
@@ -112,29 +117,37 @@
     "計算機": [
       "新增 故事卡片與照片優選開關"
     ],
+    "相簿": [
+      "新增 故事相簿開關，一鍵控制是否顯示你的相簿故事卡片",
+      "新增 照片文字浮水印編輯，新增多種文藝浮水印樣式",
+      "新增 AI 智慧故事相簿，整理生活中感動你的故事",
+      "新增 故事卡片與照片優選開關"
+    ],
     "天氣": [
       "新增 陰天和霧霾動畫",
       "優化 15天趨勢介面適配",
       "優化 大字體和螢幕密度相關問題"
     ],
-    "設定": [
+    "设置": [
       "優化 設置頁的系統應用與更多應用的文案和圖標"
     ],
     "遊戲加速": [
       "新增 電話懸浮視窗功能，支援遊戲中接通的電話使用懸浮視窗顯示接通狀態"
-    ],
-    "相簿": [
-      "新增 故事卡片與照片優選開關"
     ],
     "小米錢包": [
       "新增 Xiaomi 公交京津冀互聯互通卡支援自訂金額儲值",
       "新增 米家智慧門鎖門卡功能",
       "新增 Mi Pay 支援「銀聯碰一碰」支付功能",
       "最佳化 Mi Pay 線上刷卡支付過程中斷網頁面的使用流程",
+      "優化 小米公交卡片異常提示的使用者體驗",
+      "優化 小米公交儲值支付頁面的互動體驗",
       "優化 交通卡儲值頁面煥新"
     ],
     "其他": [
       "Improved system security and stability"
+    ],
+    "設定": [
+      "優化 設置頁的系統應用與更多應用的文案和圖標"
     ]
   },
   "logs_ja": {
@@ -152,6 +165,11 @@
       "タイマーページでボタンをタップした際にチラつく問題を修正",
       "特別な日付に時計がクラッシュする問題を修正"
     ],
+    "アルバム": [
+      "ストーリーアルバムのスイッチを追加し、アルバムのストーリーカードを表示するかどうかをワンタップで制御できます",
+      "写真のテキスト透かし編集を追加し、多彩なアート系透かしスタイルを追加",
+      "AIスマートストーリーアルバムを追加し、生活の中で心を動かすストーリーを整理"
+    ],
     "天気": [
       "追加: 曇りとスモッグのアニメーション",
       "最適化: 15日間トレンド画面への適応",
@@ -163,17 +181,19 @@
     "ゲーム加速": [
       "新機能: ゲーム中の着信通話をフローティングウィンドウで表示"
     ],
-    "ロック画面、ステータスバー、通知シェード": [
-      "新規: 通知パネルにNFCショートカットを追加",
-      "最適化: ステータスバーの高さがノッチの高さと同じになりました"
-    ],
     "MIウォレット": [
       "新規: Xiaomi 交通「京津冀互联互通カード」の任意金額チャージに対応",
       "追加: Mi Home スマートドアロックのカードキー機能",
       "新機能：Mi Pay が「UnionPay QuickPass」決済に対応",
       "Mi Pay のオンラインカード支払い中のネットワーク切断画面の利用フローを最適化",
+      "Xiaomi Transitカードのエラー通知のユーザー体験を最適化",
+      "Xiaomi Transitのチャージ支払いページのインタラクション体験を最適化",
       "最適化: 交通系ICカードのチャージページを刷新",
       "Mijiaスマートドアロックのカードキー機能を追加"
+    ],
+    "ロック画面、ステータスバー、通知シェード": [
+      "新規: 通知パネルにNFCショートカットを追加",
+      "最適化: ステータスバーの高さがノッチの高さと同じになりました"
     ],
     "その他": [
       "システムのセキュリティと安定性の向上"
@@ -201,6 +221,11 @@
       "타이머 페이지에서 버튼을 탭할 때 깜빡이는 문제를 수정했습니다.",
       "특정 날짜에 시계가 비정상 종료되는 문제를 수정했습니다"
     ],
+    "앨범": [
+      "스토리 앨범 스위치 추가, 앨범 스토리 카드를 표시할지 원터치로 제어",
+      "사진 텍스트 워터마크 편집 추가, 다양한 예술적 워터마크 스타일 추가",
+      "AI 스마트 스토리 앨범을 추가하여 삶 속에서 감동적인 이야기를 정리"
+    ],
     "날씨": [
       "추가: 흐린 날씨와 스모그 애니메이션",
       "최적화: 15일 추세 화면 적응 조정",
@@ -212,17 +237,19 @@
     "게임 가속": [
       "새 기능: 게임 중 수신 전화를 플로팅 창으로 표시"
     ],
-    "잠금화면, 상태 바, 알림 바": [
-      "새로운 기능: 알림 창에 NFC 바로가기 추가",
-      "최적화: 상태 표시줄 높이가 노치 높이와 같아졌습니다"
-    ],
-    "MI 월렛": [
+    "샤오미 지갑": [
       "신규: Xiaomi 교통 징진지 호환 카드 사용자 지정 금액 충전 지원",
       "추가: Mi Home 스마트 도어록 키카드 기능",
       "신규: Mi Pay가 'UnionPay QuickPass' 결제를 지원합니다",
       "Mi Pay 온라인 카드 결제 중 네트워크 끊김 화면 사용 흐름 최적화",
+      "Xiaomi Transit 카드 오류 알림의 사용자 경험 최적화",
+      "Xiaomi Transit 충전 결제 페이지의 상호작용 경험 최적화",
       "최적화: 교통카드 충전 페이지 개편",
       "Mijia 스마트 도어록 카드 키 기능 추가"
+    ],
+    "잠금화면, 상태 바, 알림 바": [
+      "새로운 기능: 알림 창에 NFC 바로가기 추가",
+      "최적화: 상태 표시줄 높이가 노치 높이와 같아졌습니다"
     ],
     "기타": [
       "시스템 보안 및 안정성 개선"
@@ -247,6 +274,11 @@
       "Исправлено: Кнопка таймера начинала мигать после нажатия",
       "Исправлено: Некорректное завершение работы приложения Часы в определенные дни"
     ],
+    "Альбом": [
+      "Добавлен переключатель альбома историй для управления показом карточек историй в альбоме одним нажатием",
+      "Добавлено редактирование текстовых водяных знаков на фото и несколько художественных стилей водяных знаков",
+      "Добавлен умный AI-альбом историй для упорядочивания трогательных историй из жизни"
+    ],
     "Погода": [
       "Добавлено: анимации для пасмурной погоды и смога",
       "Оптимизация: адаптация интерфейса 15-дневного тренда",
@@ -260,6 +292,8 @@
       "Добавлено: функция ключ-карты для умного дверного замка Mi Home",
       "Новое: Mi Pay теперь поддерживает оплату UnionPay QuickPass",
       "Оптимизация сценария использования страницы отсутствия сети при онлайн-оплате картой в Mi Pay",
+      "Оптимизирован пользовательский опыт уведомлений об ошибках карты Xiaomi Transit",
+      "Оптимизировано взаимодействие на странице оплаты пополнения Xiaomi Transit",
       "Оптимизация: обновлённая страница пополнения транспортной карты",
       "Добавлена функция карты для умного дверного замка Mijia"
     ],
@@ -285,6 +319,11 @@
       "Виправлено проблему мерехтіння кнопок на сторінці таймера під час натискання.",
       "Виправлено проблему аварійного завершення роботи Годинника в особливі дати"
     ],
+    "Альбом": [
+      "Додано перемикач альбому історій для керування показом карток історій в альбомі одним дотиком",
+      "Додано редагування текстових водяних знаків на фото та кілька художніх стилів водяних знаків",
+      "Додано розумний AI-альбом історій для впорядкування зворушливих історій із життя"
+    ],
     "Погода": [
       "Додано: анімації для похмурої погоди та смогу",
       "Оптимізація: адаптація інтерфейсу 15-денного тренду",
@@ -297,6 +336,16 @@
       "Нове: Плаваючі вікна для вхідних викликів під час ігор",
       "Нове: плаваюче вікно для вхідних дзвінків під час ігор"
     ],
+    "MI Гаманець": [
+      "Додано: картка Xiaomi Transit для Пекіна, Тяньцзіня та Хебею підтримує поповнення на довільну суму",
+      "Додано: функція картки-ключа для розумного дверного замка Mi Home",
+      "Нове: Mi Pay тепер підтримує оплату UnionPay QuickPass",
+      "Оптимізація сценарію використання сторінки відсутності мережі під час онлайн-оплати карткою в Mi Pay",
+      "Оптимізовано взаємодію користувача з повідомленнями про помилки картки Xiaomi Transit",
+      "Оптимізовано взаємодію на сторінці оплати поповнення Xiaomi Transit",
+      "Оптимізація: оновлена сторінка поповнення транспортної картки",
+      "Додано функцію картки для розумного дверного замка Mijia"
+    ],
     "Екран блокування, рядок стану, панель сповіщень": [
       "Нове: ярлик NFC у панелі сповіщень",
       "Оптимізація: висота рядка стану тепер дорівнює висоті вирізу."
@@ -306,9 +355,6 @@
     ],
     "Блокування програм": [
       "Нове: Підтримка розблокування застосунків за допомогою розпізнавання обличчя"
-    ],
-    "MI Гаманець": [
-      "Додано функцію картки для розумного дверного замка Mijia"
     ]
   },
   "logs_pl": {
@@ -326,6 +372,11 @@
       "Naprawiono migotanie przycisków na stronie timera po dotknięciu.",
       "Naprawiono problem z awarią aplikacji Zegar w specjalne dni"
     ],
+    "Album": [
+      "Dodano przełącznik albumu historii umożliwiający jednym dotknięciem włączenie lub wyłączenie wyświetlania kart historii w albumie",
+      "Dodano edycję tekstowych znaków wodnych na zdjęciach i wiele artystycznych stylów znaków wodnych",
+      "Dodano inteligentny album historii AI do porządkowania wzruszających historii z życia"
+    ],
     "Pogoda": [
       "Dodano: animacje dla pochmurnej pogody i smogu",
       "Optymalizacja: dostosowanie interfejsu trendu 15-dniowego",
@@ -338,19 +389,21 @@
       "Nowość: Pływające okna dla połączeń przychodzących podczas gier",
       "Nowość: pływające okno dla połączeń przychodzących podczas gier"
     ],
-    "Ekran blokady, pasek powiadomień,panel powiadomień": [
-      "Nowość: skrót NFC w panelu powiadomień",
-      "Optymalizacja: wysokość paska stanu jest teraz równa wysokości notcha."
-    ],
     "MI Portfel": [
       "Nowość: karta Xiaomi Transport „Jing-Jin-Ji” obsługuje doładowanie dowolnej kwoty",
       "Dodano: funkcja karty klucza dla inteligentnego zamka Mi Home",
       "Nowość: Mi Pay obsługuje płatności UnionPay QuickPass",
       "Optymalizacja obsługi strony braku sieci podczas płatności kartą online w Mi Pay",
+      "Zoptymalizowano komfort użytkowania powiadomień o błędach karty Xiaomi Transit",
+      "Zoptymalizowano interakcję na stronie płatności za doładowanie Xiaomi Transit",
       "Optymalizacja: odświeżona strona doładowania karty transportowej",
       "Dodano funkcję karty do inteligentnego zamka do drzwi Mijia"
     ],
-    "Inne": [
+    "Ekran blokady, pasek powiadomień,panel powiadomień": [
+      "Nowość: skrót NFC w panelu powiadomień",
+      "Optymalizacja: wysokość paska stanu jest teraz równa wysokości notcha."
+    ],
+    "Reszt": [
       "Większe bezpieczeństwo i stabilność systemu"
     ],
     "Ekran blokady, pasek stanu, panel powiadomień": [
@@ -372,6 +425,11 @@
       "Behebt das Flackern der Schaltflächen auf der Timer-Seite beim Antippen.",
       "Behebung des Problems, dass die Uhr an besonderen Tagen abstürzt"
     ],
+    "Galerie": [
+      "Neuer Schalter für Story-Album: Steuere mit einem Tippen, ob deine Album-Story-Karten angezeigt werden",
+      "Textwasserzeichen-Bearbeitung für Fotos hinzugefügt, plus mehrere künstlerische Wasserzeichen-Stile",
+      "Smartes KI-Story-Album hinzugefügt, um berührende Geschichten aus deinem Leben zu ordnen"
+    ],
     "Wetter": [
       "Neu: Animationen für bewölktes und smogiges Wetter",
       "Optimierung: Anpassung der 15-Tage-Trendansicht",
@@ -384,17 +442,19 @@
       "Neu: Schwebende Fenster für eingehende Anrufe während Spielen",
       "Neu: Schwebefenster für eingehende Anrufe in Spielen"
     ],
-    "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
-      "Neu: NFC-Schnellschalter in der Benachrichtigungsleiste",
-      "Optimierung: Die Höhe der Statusleiste entspricht jetzt der Höhe der Notch."
-    ],
-    "MI Geldbörse": [
+    "Xiaomi Wallet": [
       "Neu: Benutzerdefinierte Aufladebeträge für Xiaomi Verkehrskarte „Jing-Jin-Ji“",
       "Neu: Schlüsselkartenfunktion für das intelligente Türschloss von Mi Home",
       "Neu: Mi Pay unterstützt jetzt UnionPay QuickPass-Zahlungen",
       "Optimierung des Nutzungsablaufs der Offline-Seite bei Online-Kartenzahlungen mit Mi Pay",
+      "Benutzererfahrung bei Fehlerhinweisen zur Xiaomi Transit-Karte optimiert",
+      "Interaktionserlebnis auf der Zahlungsseite zum Aufladen von Xiaomi Transit optimiert",
       "Optimierung: Überarbeitete Seite zum Aufladen von Verkehrskarten",
       "Kartenfunktion für Mijia Smart-Türschloss hinzugefügt"
+    ],
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
+      "Neu: NFC-Schnellschalter in der Benachrichtigungsleiste",
+      "Optimierung: Die Höhe der Statusleiste entspricht jetzt der Höhe der Notch."
     ],
     "Sonstiges": [
       "Systemsicherheit und -stabilität verbessert"
@@ -418,6 +478,11 @@
       "Correction du clignotement des boutons de la page Minuteur lors d’un appui.",
       "Correction du problème de fermeture inattendue de l'application Horloge à certaines dates"
     ],
+    "Album": [
+      "Ajout d'un interrupteur pour l'album de stories, permettant d'afficher ou non vos cartes de stories en un geste",
+      "Ajout de l’édition des filigranes texte sur photo et de plusieurs styles de filigranes artistiques",
+      "Ajout de l’album de récits intelligent IA pour organiser les récits émouvants de votre vie"
+    ],
     "Météo": [
       "Nouveau : animations pour temps couvert et smog",
       "Optimisation : adaptation de l'interface de tendance sur 15 jours",
@@ -429,17 +494,19 @@
     "Booster de vitesse de jeu": [
       "Nouveau: Fenêtres flottantes pour les appels entrants pendant les jeux"
     ],
-    "Écran de verrouillage, Barre d'état, Panneau de notification": [
-      "Nouveau : raccourci NFC dans le panneau de notifications",
-      "Optimisation : la hauteur de la barre d’état est désormais égale à celle de l’encoche."
-    ],
     "MI Portefeuille": [
       "Nouveau : montants de recharge personnalisés pour la carte Xiaomi Transport « Jing-Jin-Ji »",
       "Nouveau : fonction de carte-clé pour la serrure connectée Mi Home",
       "Nouveau : Mi Pay prend désormais en charge les paiements UnionPay QuickPass",
       "Optimisation du parcours d’utilisation de la page hors ligne lors des paiements par carte en ligne avec Mi Pay",
+      "Optimisation de l'expérience utilisateur des notifications d'erreur de la carte Xiaomi Transit",
+      "Optimisation de l’expérience d’interaction sur la page de paiement de recharge Xiaomi Transit",
       "Optimisation : page de recharge de carte de transport repensée",
       "Ajout de la fonction carte de la serrure intelligente Mijia"
+    ],
+    "Écran de verrouillage, Barre d'état, Panneau de notification": [
+      "Nouveau : raccourci NFC dans le panneau de notifications",
+      "Optimisation : la hauteur de la barre d’état est désormais égale à celle de l’encoche."
     ],
     "Autre": [
       "Sécurité et stabilité du système améliorées"
@@ -469,6 +536,11 @@
       "Risolto: Il pulsante del timer cominciava a lampeggiare quando veniva premuto",
       "Risolto: Chiusura forzata di Orologio in alcune date specifiche"
     ],
+    "Album": [
+      "Aggiunto l'interruttore album storie per controllare con un tocco se mostrare le card delle storie nell'album",
+      "Aggiunta la modifica delle filigrane di testo sulle foto e diversi stili di filigrana artistici",
+      "Aggiunto album di storie intelligente AI per organizzare storie commoventi della tua vita"
+    ],
     "Meteo": [
       "Nuovo: animazioni per tempo nuvoloso e smog",
       "Ottimizzazione: adattamento dell'interfaccia delle tendenze a 15 giorni",
@@ -480,17 +552,19 @@
     "Turbo Videogiochi": [
       "Nuovo: Finestre a comparsa per le chiamate in arrivo durante il gioco"
     ],
-    "Schermata di blocco, barra di stato, area delle notifiche": [
-      "Nuovo: Collegamenti NFC nell'area delle notifiche",
-      "Ottimizzazione: L'altezza della barra di stato è ora uguale all'altezza del notch"
-    ],
     "MI Portafoglio": [
       "Novità: importi di ricarica personalizzati per la carta Xiaomi Trasporti “Jing-Jin-Ji”",
       "Novità: funzione carta-chiave per la serratura intelligente Mi Home",
       "Novità: Mi Pay ora supporta i pagamenti UnionPay QuickPass",
       "Ottimizzazione del flusso della pagina di assenza rete durante i pagamenti con carta online con Mi Pay",
+      "Ottimizzata l'esperienza utente per gli avvisi di errore della carta Xiaomi Transit",
+      "Ottimizzata l'esperienza di interazione nella pagina di pagamento per la ricarica Xiaomi Transit",
       "Ottimizzazione: rinnovata la pagina di ricarica della carta trasporti",
       "Aggiunta della funzione carta per la serratura intelligente Mijia"
+    ],
+    "Schermata di blocco, barra di stato, area delle notifiche": [
+      "Nuovo: Collegamenti NFC nell'area delle notifiche",
+      "Ottimizzazione: L'altezza della barra di stato è ora uguale all'altezza del notch"
     ],
     "Altro": [
       "Maggiore sicurezza e stabilità di sistema"
@@ -514,22 +588,29 @@
       "Reparado: El botón del temporizador comenzó a parpadear después de ser pulsado",
       "Reparado: Cierre forzoso del Reloj en algunas fechas específicas"
     ],
+    "Álbum de fotos": [
+      "Se añade el interruptor de álbum de historias para controlar con un toque si se muestran las tarjetas de historias del álbum",
+      "Se agregó la edición de marcas de agua de texto en fotos y varios estilos artísticos de marca de agua",
+      "Se ha añadido el álbum de historias inteligente con IA para organizar historias conmovedoras de tu vida"
+    ],
     "Tiempo": [
       "Nuevo: animaciones para tiempo nublado y smog",
       "Optimización: adaptación de la interfaz de tendencia de 15 días",
       "Optimización: problemas relacionados con el tamaño de fuente grande y la densidad de pantalla"
     ],
-    "Ajustes": [
+    "Configuración": [
       "Optimización: Textos e iconos de Aplicaciones del sistema y Más aplicaciones en Ajustes"
     ],
     "Acelerador de juegos": [
       "Nuevo: Ventanas flotantes para llamadas entrantes durante juegos"
     ],
-    "MI Cartera": [
+    "Monedero de Xiaomi": [
       "Nuevo: importes de recarga personalizados para la tarjeta Xiaomi Transporte «Jing-Jin-Ji»",
       "Nuevo: función de tarjeta-llave para la cerradura inteligente de Mi Home",
       "Nuevo: Mi Pay ahora admite pagos UnionPay QuickPass",
       "Optimización del flujo de la página sin conexión durante los pagos con tarjeta en línea con Mi Pay",
+      "Optimizada la experiencia de usuario de los avisos de error de la tarjeta Xiaomi Transit",
+      "Optimizada la experiencia de interacción en la página de pago de recarga de Xiaomi Transit",
       "Optimización: página de recarga de la tarjeta de transporte renovada",
       "Añadida la función de tarjeta para la cerradura inteligente Mijia"
     ],
@@ -539,6 +620,9 @@
     "Pantalla de bloqueo, barra de estado, panel de notificaciones": [
       "Nuevo: Acceso directo al NFC en la Barra de notificaciones",
       "Optimización: Ahora la altura de la barra de estado es la misma que la altura del notch"
+    ],
+    "Ajustes": [
+      "Optimización: Textos e iconos de Aplicaciones del sistema y Más aplicaciones en Ajustes"
     ]
   },
   "logs_pt": {
@@ -555,6 +639,11 @@
       "Corrigido o problema de os botões da página do timer piscarem ao tocar.",
       "Corrigido o problema de fechamento inesperado do Relógio em datas especiais"
     ],
+    "Álbum": [
+      "Adicionado o interruptor do álbum de histórias para controlar com um toque se os cartões de histórias do álbum são exibidos",
+      "Adicionada a edição de marcas d'água de texto em fotos e vários estilos artísticos de marca d'água",
+      "Adicionado álbum de histórias inteligente com IA para organizar histórias emocionantes da sua vida"
+    ],
     "Clima": [
       "Novo: animações para tempo nublado e smog",
       "Otimização: adaptação da interface de tendência de 15 dias",
@@ -567,17 +656,19 @@
       "Novo: Janelas flutuantes para chamadas recebidas durante jogos",
       "Novo: janela flutuante para chamadas recebidas durante jogos"
     ],
-    "Tela de bloqueio, Barra de status e Área de notificações": [
-      "Novo: atalho NFC no painel de notificações",
-      "Otimização: a altura da barra de status agora é igual à altura do notch."
-    ],
     "MI Carteira": [
       "Novidade: valores de recarga personalizados para o cartão Xiaomi Transporte «Jing-Jin-Ji»",
       "Novo: função de cartão-chave para a fechadura inteligente Mi Home",
       "Novo: Mi Pay agora suporta pagamentos UnionPay QuickPass",
       "Otimização do fluxo da página sem rede durante pagamentos com cartão online com Mi Pay",
+      "Otimizada a experiência do usuário dos avisos de erro do cartão Xiaomi Transit",
+      "Otimizada a experiência de interação na página de pagamento de recarga do Xiaomi Transit",
       "Otimização: página de recarga do cartão de transporte renovada",
       "Adicionada a função de cartão para a fechadura inteligente Mijia"
+    ],
+    "Tela de bloqueio, Barra de status e Área de notificações": [
+      "Novo: atalho NFC no painel de notificações",
+      "Otimização: a altura da barra de status agora é igual à altura do notch."
     ],
     "Outros": [
       "Segurança e estabilidade do sistema aprimoradas"
@@ -604,6 +695,11 @@
       "Onarım: Zamanlayıcı tuşu, dokunulduktan sonra yanmaya başladı",
       "Onarım: Saat, belirli tarihlerde kapanmaya zorlandı"
     ],
+    "albüm": [
+      "Albüm hikâyeleri kartlarının gösterilip gösterilmeyeceğini tek dokunuşla kontrol eden hikâye albümü anahtarı eklendi",
+      "Fotoğraflarda metin filigranı düzenleme ve çeşitli sanatsal filigran stilleri eklendi",
+      "Hayatınızdaki dokunaklı hikâyeleri düzenlemek için AI akıllı hikâye albümü eklendi"
+    ],
     "Hava durumu": [
       "Yeni: bulutlu ve dumanlı hava animasyonları",
       "Optimizasyon: 15 günlük trend arayüzü uyarlaması",
@@ -620,6 +716,8 @@
       "Yeni: Mi Home akıllı kapı kilidi için anahtar kart özelliği",
       "Yeni: Mi Pay artık UnionPay QuickPass ödemelerini destekliyor",
       "Mi Pay çevrimiçi kart ödemeleri sırasında ağ bağlantısı yok sayfasının kullanım akışını optimize et",
+      "Xiaomi Transit kartı hata bildirimlerinde kullanıcı deneyimi iyileştirildi",
+      "Xiaomi Transit yükleme ödeme sayfasındaki etkileşim deneyimi iyileştirildi",
       "Optimizasyon: Ulaşım kartı yükleme sayfası yenilendi",
       "Mijia akıllı kapı kilidi kart özelliği eklendi"
     ],
@@ -646,6 +744,11 @@
       "Memperbaiki masalah tombol di halaman Timer berkedip saat diketuk.",
       "Memperbaiki masalah aplikasi Jam yang force close pada tanggal khusus"
     ],
+    "Album": [
+      "Menambahkan tombol album cerita untuk mengatur apakah kartu cerita album ditampilkan dengan sekali ketuk",
+      "Menambahkan pengeditan tanda air teks foto dan berbagai gaya tanda air artistik",
+      "Ditambahkan album cerita cerdas AI untuk mengatur cerita menyentuh dalam hidup Anda"
+    ],
     "Cuaca": [
       "Baru: animasi cuaca mendung dan smog",
       "Optimasi: penyesuaian antarmuka tren 15 hari",
@@ -657,17 +760,19 @@
     "Peningkat kecepatan permainan": [
       "Baru: Jendela mengambang untuk panggilan masuk saat bermain permainan"
     ],
-    "Layar kunci, bar status, layar notifikasi": [
-      "Baru: pintasan NFC di panel notifikasi",
-      "Optimasi: Tinggi bilah status sekarang sama dengan tinggi notch."
-    ],
-    "MI Dompet": [
+    "Xiaomi Wallet": [
       "Baru: isi ulang dengan nominal khusus untuk kartu Xiaomi Transportasi “Jing-Jin-Ji”",
       "Baru: fitur kartu kunci untuk kunci pintu pintar Mi Home",
       "Baru: Mi Pay kini mendukung pembayaran UnionPay QuickPass",
       "Optimalkan alur penggunaan halaman tanpa jaringan selama pembayaran kartu online Mi Pay",
+      "Optimalkan pengalaman pengguna notifikasi error kartu Xiaomi Transit",
+      "Mengoptimalkan pengalaman interaksi halaman pembayaran isi ulang Xiaomi Transit",
       "Optimasi: Halaman isi ulang kartu transportasi diperbarui",
       "Menambahkan fitur kartu kunci pintu pintar Mijia"
+    ],
+    "Layar kunci, bar status, layar notifikasi": [
+      "Baru: pintasan NFC di panel notifikasi",
+      "Optimasi: Tinggi bilah status sekarang sama dengan tinggi notch."
     ],
     "Lainnya": [
       "Keamanan dan stabilitas sistem ditingkatkan"
@@ -695,6 +800,11 @@
       "Đã khắc phục lỗi nhấp nháy nút trên trang Hẹn giờ khi chạm.",
       "Sửa lỗi ứng dụng Đồng hồ bị thoát đột ngột vào những ngày đặc biệt"
     ],
+    "Album": [
+      "Thêm công tắc album câu chuyện để bật/tắt hiển thị thẻ câu chuyện trong album chỉ với một lần chạm",
+      "Đã thêm chỉnh sửa hình mờ văn bản trên ảnh và nhiều kiểu hình mờ nghệ thuật",
+      "Đã thêm album câu chuyện thông minh AI để sắp xếp những câu chuyện cảm động trong cuộc sống"
+    ],
     "Thời tiết": [
       "Mới: hoạt ảnh thời tiết nhiều mây và khói bụi",
       "Tối ưu hóa: điều chỉnh giao diện xu hướng 15 ngày",
@@ -707,11 +817,13 @@
       "Mới: Cửa sổ nổi cho cuộc gọi đến trong khi chơi game",
       "Mới: cửa sổ nổi cho cuộc gọi đến khi chơi game"
     ],
-    "MI Ví": [
+    "Tiền túi Xiaomi": [
       "Mới: nạp tiền với số tiền tùy chỉnh cho thẻ Xiaomi Giao thông “Jing-Jin-Ji”",
       "Mới: tính năng thẻ khóa cho khóa cửa thông minh Mi Home",
       "Mới: Mi Pay hiện hỗ trợ thanh toán UnionPay QuickPass",
       "Tối ưu hóa quy trình sử dụng trang mất mạng khi thanh toán thẻ trực tuyến bằng Mi Pay",
+      "Tối ưu trải nghiệm người dùng với thông báo lỗi thẻ Xiaomi Transit",
+      "Tối ưu trải nghiệm tương tác trên trang thanh toán nạp tiền Xiaomi Transit",
       "Tối ưu hóa: Trang nạp tiền thẻ giao thông được làm mới",
       "Đã thêm tính năng thẻ cho khóa cửa thông minh Mijia"
     ],
@@ -738,6 +850,11 @@
       "แก้ไขปัญหาปุ่มในหน้า Timer กระพริบเมื่อแตะ",
       "แก้ไขปัญหานาฬิกาหยุดทำงานในวันที่พิเศษ"
     ],
+    "คลังภาพ": [
+      "เพิ่มสวิตช์อัลบั้มเรื่องราว เพื่อควบคุมการแสดงการ์ดเรื่องราวในอัลบั้มด้วยการแตะครั้งเดียว",
+      "เพิ่มการแก้ไขลายน้ำข้อความบนรูปภาพ และเพิ่มสไตล์ลายน้ำแบบศิลปะหลากหลาย",
+      "เพิ่มอัลบั้มเรื่องราวอัจฉริยะ AI เพื่อจัดระเบียบเรื่องราวที่ประทับใจในชีวิต"
+    ],
     "สภาพอากาศ": [
       "ใหม่: แอนิเมชันสภาพอากาศครึ้มและหมอกควัน",
       "การเพิ่มประสิทธิภาพ: การปรับอินเทอร์เฟซแนวโน้ม 15 วัน",
@@ -749,17 +866,19 @@
     "ตัวเร่งความเร็วเกม": [
       "ใหม่: ฟีเจอร์หน้าต่างลอยสำหรับการโทร รองรับการแสดงสถานะการเชื่อมต่อผ่านหน้าต่างลอยสำหรับสายที่รับระหว่างเล่นเกม"
     ],
-    "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
-      "ใหม่: ทางลัด NFC ในแผงการแจ้งเตือน",
-      "การปรับให้เหมาะสม: ความสูงของแถบสถานะเท่ากับความสูงของรอยบากแล้ว"
-    ],
     "MI กระเป๋าเงิน": [
       "ใหม่: รองรับการเติมเงินแบบกำหนดจำนวนเองสำหรับบัตร Xiaomi ขนส่ง “จิง-จิน-จี”",
       "ใหม่: ฟีเจอร์คีย์การ์ดสำหรับล็อกประตูอัจฉริยะ Mi Home",
       "ใหม่: Mi Pay รองรับการชำระเงิน UnionPay QuickPass แล้ว",
       "ปรับปรุงขั้นตอนการใช้งานหน้าขาดการเชื่อมต่อระหว่างการชำระเงินด้วยบัตรออนไลน์ของ Mi Pay",
+      "ปรับปรุงประสบการณ์ผู้ใช้สำหรับการแจ้งเตือนข้อผิดพลาดของบัตร Xiaomi Transit",
+      "ปรับปรุงประสบการณ์การโต้ตอบบนหน้าชำระเงินเติมเงิน Xiaomi Transit",
       "การปรับให้เหมาะสม: หน้าเติมเงินบัตรโดยสารได้รับการปรับปรุงใหม่",
       "เพิ่มฟีเจอร์การ์ดสำหรับล็อกประตูอัจฉริยะ Mijia"
+    ],
+    "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
+      "ใหม่: ทางลัด NFC ในแผงการแจ้งเตือน",
+      "การปรับให้เหมาะสม: ความสูงของแถบสถานะเท่ากับความสูงของรอยบากแล้ว"
     ],
     "อื่นๆ": [
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
@@ -784,6 +903,11 @@
       "إصلاح مشكلة وميض زر صفحة المؤقت عند النقر عليه",
       "إصلاح مشكلة تعطل تطبيق الساعة في تواريخ محددة"
     ],
+    "ألبوم الصور": [
+      "إضافة مفتاح ألبوم القصص للتحكم في عرض بطاقات قصص الألبوم بنقرة واحدة",
+      "تمت إضافة تحرير علامة مائية نصية للصور وإضافة أنماط متعددة لعلامات مائية فنية",
+      "تمت إضافة ألبوم قصص ذكي بالذكاء الاصطناعي لتنظيم القصص المؤثرة في حياتك"
+    ],
     "الطقس": [
       "جديد: رسوم متحركة للطقس الغائم والضباب الدخاني",
       "التحسين: تكييف واجهة اتجاه 15 يومًا",
@@ -795,19 +919,21 @@
     "تسريع الألعاب": [
       "جديد: ميزة النافذة العائمة للمكالمات، وتدعم عرض حالة الاتصال في نافذة عائمة للمكالمات التي يتم الرد عليها أثناء الألعاب"
     ],
-    "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
-      "جديد: اختصار NFC في لوحة الإشعارات",
-      "تحسين: أصبح ارتفاع شريط الحالة مساويًا لارتفاع النوتش"
-    ],
     "MI محفظة": [
       "جديد: مبالغ شحن مخصصة لبطاقة Xiaomi للنقل «Jing-Jin-Ji».",
       "جديد: ميزة بطاقة المفتاح لقفل الباب الذكي من Mi Home",
       "جديد: يدعم Mi Pay الآن مدفوعات UnionPay QuickPass",
       "تحسين مسار استخدام صفحة انقطاع الشبكة أثناء الدفع بالبطاقة عبر الإنترنت في Mi Pay",
+      "تحسين تجربة المستخدم لتنبيهات الأخطاء في بطاقة Xiaomi Transit",
+      "تحسين تجربة التفاعل في صفحة دفع شحن Xiaomi Transit",
       "التحسين: تجديد صفحة شحن بطاقة النقل",
       "تمت إضافة ميزة بطاقة قفل الباب الذكي Mijia"
     ],
-    "أخرى": [
+    "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
+      "جديد: اختصار NFC في لوحة الإشعارات",
+      "تحسين: أصبح ارتفاع شريط الحالة مساويًا لارتفاع النوتش"
+    ],
+    "آخرين": [
       "تحسين أمن واستقرار النظام"
     ],
     "شاشة القفل، شريط الحالة، لوحة الإشعارات": [
@@ -837,6 +963,11 @@
       "टाइमर पेज पर बटन क्लिक करने पर होने वाली झिलमिलाहट की समस्या ठीक की गई।",
       "विशेष तिथियों पर घड़ी के क्रैश होने की समस्या ठीक की गई"
     ],
+    "अल्बम": [
+      "स्टोरीज़ एल्बम स्विच जोड़ा गया, जिससे एक टैप में नियंत्रित करें कि आपके एल्बम स्टोरी कार्ड दिखें या नहीं",
+      "फ़ोटो टेक्स्ट वॉटरमार्क संपादन जोड़ा गया, साथ में कई कलात्मक वॉटरमार्क शैलियाँ जोड़ी गईं",
+      "AI स्मार्ट स्टोरी एल्बम जोड़ा गया, जिससे जीवन की भावुक कहानियों को व्यवस्थित किया जा सके"
+    ],
     "मौसम": [
       "नया: बादलों और स्मॉग वाले मौसम के एनिमेशन",
       "अनुकूलन: 15-दिवसीय रुझान इंटरफ़ेस अनुकूलन",
@@ -848,17 +979,19 @@
     "गेम गति बूस्टर": [
       "नया: फ़ोन फ़्लोटिंग विंडो सुविधा, गेम के दौरान कनेक्ट होने वाले कॉल का कनेक्टेड स्टेटस फ़्लोटिंग विंडो में दिखाने का समर्थन करती है।"
     ],
-    "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
-      "नया: सूचना शेड में NFC शॉर्टकट",
-      "अनुकूलन: स्टेटस बार की ऊंचाई अब नॉच की ऊंचाई के बराबर है।"
-    ],
     "MI वॉलेट": [
       "नया: Xiaomi ट्रांज़िट «जिंग-जिन-जी» कार्ड के लिए कस्टम राशि टॉप-अप।",
       "नया: Mi Home स्मार्ट डोर लॉक के लिए कीकार्ड सुविधा",
       "नया: Mi Pay अब UnionPay QuickPass भुगतान का समर्थन करता है",
       "Mi Pay ऑनलाइन कार्ड भुगतान के दौरान नेटवर्क बंद पेज के उपयोग प्रवाह को अनुकूलित करें",
+      "Xiaomi Transit कार्ड के त्रुटि संकेतों का उपयोगकर्ता अनुभव अनुकूलित किया गया",
+      "Xiaomi Transit रिचार्ज भुगतान पृष्ठ के इंटरैक्शन अनुभव को अनुकूलित किया गया",
       "अनुकूलन: परिवहन कार्ड टॉप-अप पृष्ठ का नवीनीकरण",
       "Mijia स्मार्ट डोर लॉक कार्ड सुविधा जोड़ी गई"
+    ],
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
+      "नया: सूचना शेड में NFC शॉर्टकट",
+      "अनुकूलन: स्टेटस बार की ऊंचाई अब नॉच की ऊंचाई के बराबर है।"
     ],
     "अन्य": [
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
@@ -892,6 +1025,14 @@
     "Lockscreen, status bar, Notification shade": [
       "NFC ئۇقتۇرۇش بالدىقىغا تېز كۇنۇپكا قوشۇلدى",
       "ئەلالاشتۇرۇش: ھالەت يولىنىڭ ئېگىزلىكىنى ئېكران كېسىكىنىڭ ئېگىزلىكىگە تەڭ قىلىپ تەڭشەش"
+    ],
+    "شىياۋمى پۇل قاپچۇقى": [
+      "يېڭىلىق: Xiaomi ئاممىۋى قاتناش بېيجىڭ-تيەنجىن-خېبېي ئۆزئارا تۇتىشىدىغان كارتىسىغا خالىغان مىقداردا پۇل قاچىلاشنى قوللايدۇ",
+      "يېڭىدىن قوشۇلدى: Mi Home ئەقلىي ئىشىك قۇلۇفىنىڭ كارتا ئىقتىدارى",
+      "يېڭىدىن قوشۇلدى: Mi Pay «UnionPay تەگكۈزۈپ تۆلەش» پۇل تۆلەش ئىقتىدارىنى قوللايدۇ",
+      "Mi Pay تورىدا كارتىلىق تۆلەم قىلىش جەريانىدا تور ئۈزۈلگەندە كۆرۈنىدىغان بەتنىڭ ئىشلىتىش جەريانىنى ياخشىلاش",
+      "ئەلالاشتۇرۇش: قاتناش كارتىسىغا پۇل قاچىلاش بېتى يېڭىلاندى",
+      "Mijia ئەقلىي ئىشىك قۇلۇپىنىڭ ئاچقۇچ كارتىسى ئىقتىدارى قوشۇلدى"
     ],
     "باشقىلىرى": [
       "Improved system security and stability"

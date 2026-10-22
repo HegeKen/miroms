@@ -4,7 +4,8 @@
       "优化 部分场景下的待机功耗",
       "优化 系统稳定性",
       "修复 无障碍模式下部分场景失效的问题",
-      "修复 “查找设备”在部分场景的权限问题"
+      "修复 “查找设备”在部分场景的权限问题",
+      "系统性能得到了优化。"
     ],
     "相机": [
       "优化 自拍场景的画质效果"
@@ -15,7 +16,8 @@
       "Optimization: Standby power consumption in some scenarios",
       "Optimization: System stability",
       "Fix: Accessibility features stopped working in some cases",
-      "Fix: Permission issues with Find device in certain situations"
+      "Fix: Permission issues with Find device in certain situations",
+      "This version does not currently support ROOT access. Users who already have ROOT access will not be affected."
     ],
     "Camera": [
       "Optimization: Image quality for selfies"
@@ -26,7 +28,8 @@
       "優化: 部分場景下的待機功耗",
       "優化: 系統穩定性",
       "修復: 無障礙模式下部分場景失效的問題",
-      "修復: 「尋找裝置」在部分場景的權限問題"
+      "修復: 「尋找裝置」在部分場景的權限問題",
+      "此版本目前不支持 ROOT 权限；已经获得 ROOT 权限的用户不会受到影响。"
     ],
     "相機": [
       "優化: 自拍場景的畫質效果"
@@ -34,12 +37,20 @@
   },
   "logs_ja": {
     "システム": [
-      "最適化: システムの安定性"
+      "最適化: 一部のシナリオにおける待機時消費電力",
+      "最適化: システムの安定性",
+      "修正: アクセシビリティ機能が一部のケースで動作しなくなりました",
+      "修正: 特定の状況における「デバイスを探す」の権限問題",
+      "このバージョンでは現時点でROOT権限のサポートは行っていませんが、すでにROOT権限を取得しているユーザーには影響ありません。"
     ]
   },
   "logs_ko": {
     "시스템": [
-      "최적화: 시스템 안정성"
+      "최적화: 일부 시나리오에서의 대기 전력 소모 문제",
+      "최적화: 시스템 안정성",
+      "수정: 일부 상황에서의 접근성 기능 중단 문제",
+      "수정: 특정 상황에서의 기기 찾기 권한 문제",
+      "이 버전은 현재 ROOT 기능을 지원하지 않으며, 이미 ROOT 권한을 가진 사용자들에게는 아무런 영향이 없습니다."
     ]
   },
   "logs_ru": {
@@ -47,17 +58,26 @@
       "Оптимизация: Исправлена ошибка, при которой в некоторых сценариях повышалось энергопотребление в режиме ожидания",
       "Оптимизация: Стабильность системы",
       "Исправлено: Исправлена ошибка, при которой в некоторых случаях переставали работать функции специальных возможностей",
-      "Исправлено: Исправлена ошибка, при которой в отдельных случаях возникали проблемы с разрешениями функции «Поиск устройства»"
+      "Исправлено: Исправлена ошибка, при которой в отдельных случаях возникали проблемы с разрешениями функции «Поиск устройства»",
+      "Данная версия в настоящее время не поддерживает функцию ROOT; пользователи, у которых уже активирована эта функция, не пострадают."
     ]
   },
   "logs_uk": {
     "Система": [
-      "Оптимізація: Стабільність системи"
+      "Оптимізація: Виправлена помилка, при якій в деяких сценаріях підвищувалося енергоспоживання в режимі очікування",
+      "Оптимізація: Стабільність системи",
+      "Виправлено: Виправлена помилка, при якій в деяких випадках переставали працювати функції спеціальних можливостей",
+      "Виправлено: Виправлена помилка, при якій в окремих випадках виникали проблеми з дозволами функції \"Пошук пристрою\"",
+      "Ця версія поки що не підтримує функцію ROOT; користувачі, у яких вже активована ця функція, не постраждають."
     ]
   },
   "logs_pl": {
     "System": [
-      "Zoptymalizowano: Stabilność systemu"
+      "Zoptymalizowano: Pobór mocy w trybie czuwania w niektórych trybach",
+      "Zoptymalizowano: Stabilność systemu",
+      "Naprawiono: Funkcje Dostępności przestają działać w niektórych sytuacjach",
+      "Naprawiono: Problemy z uprawnieniami funkcji Znajdź urządzenie w pewnych sytuacjach",
+      "Ta wersja nie obsługuje funkcji ROOT; użytkownicy, którzy już mają dostęp do tej funkcji, nie będą podlegać żadnym negatywnym wpływom."
     ]
   },
   "logs_fr": {
@@ -65,27 +85,44 @@
       "Optimisation: Consommation d'énergie en veille dans certains scénarios",
       "Sécurité et stabilité du système améliorées",
       "Réparé: Les fonctionnalités d'accessibilité ont cessé de fonctionner dans certains cas",
-      "Réparé: Problèmes d'autorisation avec Localiser l'appareil dans certaines situations"
+      "Réparé: Problèmes d'autorisation avec Localiser l'appareil dans certaines situations",
+      "Cette version ne prend pas en charge l’option ROOT pour l’instant. Les utilisateurs qui ont déjà activé l’option ROOT n’en seront pas affectés."
     ]
   },
   "logs_it": {
     "Sistema": [
-      "Ottimizzazione: Stabilità del sistema"
+      "Ottimizzazione: Consumo energetico in standby in alcuni scenari",
+      "Ottimizzazione: Stabilità del sistema",
+      "Risolto: Le funzioni di accessibilità non funzionavano più in alcuni casi",
+      "Risolto: Problemi di permessi per Trova dispositivo in determinate situazioni",
+      "Questa versione non supporta attualmente il livello di accesso “ROOT”; gli utenti che già possiedono tale privilegio non saranno influenzati."
     ]
   },
   "logs_es": {
     "Sistema": [
-      "Optimización: Estabilidad del sistema"
+      "Optimización: Consumo de energía en suspensión en algunos escenarios",
+      "Optimización: Estabilidad del sistema",
+      "Reparado: Las funciones de accesibilidad dejaron de funcionar en algunos casos",
+      "Reparado: Problemas de permisos con Encontrar dispositivo en determinadas situaciones",
+      "Esta versión no admite la función ROOT por el momento; los usuarios que ya cuentan con ella no se verán afectados."
     ]
   },
   "logs_pt": {
     "Sistema": [
-      "Otimização: Estabilidade do sistema"
+      "Otimização: Consumo de energia em standby em alguns casos",
+      "Otimização: Estabilidade do sistema",
+      "Correção: Recursos de acessibilidade param de funcionar em alguns casos",
+      "Correção: Problemas de permissão com o Encontrar dispositivo em algumas situações",
+      "Esta versão não suporta o modo ROOT por enquanto; os usuários que já têm o acesso ROOT não serão afetados."
     ]
   },
   "logs_tr": {
     "Sistem": [
-      "Optimizasyon: Sistem kararlılığı"
+      "Optimizasyon: Bazı senaryolarda bekleme modunda güç tüketimi",
+      "Optimizasyon: Sistem kararlılığı",
+      "Onarım: Erişilebilirlik özellikleri bazı durumlarda çalışmayı durdurdu",
+      "Onarım: Belirli senaryolarda Cihazı bul ile ilgili izin sorunları",
+      "Bu sürüm şu an için ROOT özelliğini desteklememektedir; zaten ROOT yetkisine sahip olan kullanıcılar bu durumdan etkilenmeyecektir."
     ]
   },
   "logs_id": {
@@ -93,22 +130,35 @@
       "Pengoptimalan: Konsumsi daya siaga dalam beberapa skenario",
       "Stabilitas sistem ditingkatkan",
       "Perbaikan: Fitur aksesibilitas berhenti berfungsi dalam beberapa kasus",
-      "Perbaikan: Masalah izin saat menggunakan fitur Cari perangkat dalam situasi tertentu"
+      "Perbaikan: Masalah izin saat menggunakan fitur Cari perangkat dalam situasi tertentu",
+      "Versi ini belum mendukung fitur ROOT. Pengguna yang sudah memiliki akses ROOT tidak akan terpengaruh oleh hal tersebut."
     ]
   },
   "logs_vi": {
     "Hệ thống": [
-      "Tối ưu: Ổn định hệ thống"
+      "Tối ưu: Tiêu thụ điện năng ở chế độ chờ trong một số trường hợp",
+      "Tối ưu: Ổn định hệ thống",
+      "Sửa: Tính năng Khả năng truy cập dừng hoạt động trong một số trường hợp",
+      "Sửa: Vấn đề quyền với Tìm thiết bị trong một số trường hợp nhất định",
+      "Phiên bản này tạm thời không hỗ trợ chức năng ROOT; những người dùng đã thiết lập quyền ROOT sẽ không bị ảnh hưởng."
     ]
   },
   "logs_th": {
     "ระบบ": [
-      "การเพิ่มประสิทธิภาพ: ความเสถียรของระบบ"
+      "การเพิ่มประสิทธิภาพ: การใช้พลังงานในโหมดสแตนด์บายในบางสถานการณ์",
+      "การเพิ่มประสิทธิภาพ: ความเสถียรของระบบ",
+      "แก้ไข: ในบางกรณี ฟังก์ชันการเข้าถึงหยุดทำงาน",
+      "แก้ไข: ปัญหาเรื่องสิทธิ์การเข้าถึงฟังก์ชัน \"ค้นหาอุปกรณ์\" ในบางสถานการณ์",
+      "เวอร์ชันนี้ยังไม่รองรับการตั้งค่า ROOT ดังนั้นผู้ใช้ที่ตั้งค่า ROOT ไว้แล้วจะไม่ได้รับผลกระทบใดๆ"
     ]
   },
   "logs_ar": {
     "النظام": [
-      "التحسين: استقرار النظام"
+      "التحسين: استهلاك الطاقة عند وضع الاستعداد في بعض الحالات",
+      "التحسين: استقرار النظام",
+      "الإصلاح: توقف ميزات إمكانية الوصول عن العمل في بعض الحالات",
+      "الإصلاح: مشاكل الأذونات في ميزة العثور على الجهاز في بعض الحالات",
+      "هذه النسخة لا تدعم خيار “ROOT” في الوقت الحالي، ولن يتأثر المستخدمون الذين قاموا بتفعيل خيار “ROOT” بهذا التغيير."
     ]
   },
   "logs_in": {
@@ -116,7 +166,8 @@
       "ऑप्टिमाइज़ेशन कुछ स्थितियों में स्टैंडबाय पावर की खपत",
       "ऑप्टिमाइज़ेशन सिस्टम की स्थिरता",
       "ठीक करें कुछ मामलों में सरल उपयोग फ़ीचर्स काम नहीं कर रहे हैं",
-      "ठीक करें कुछ स्थितियों में डिवाइस ढूंढें से संबंधित अनुमति समस्याएं"
+      "ठीक करें कुछ स्थितियों में डिवाइस ढूंढें से संबंधित अनुमति समस्याएं",
+      "यह संस्करण फिलहाल “ROOT” सुविधा का समर्थन नहीं करता है; इसलिए पहले से ही “ROOT” अधिकार प्राप्त उपयोगकर्ताओं पर कोई प्रभाव नहीं पड़ेगा।"
     ]
   }
 }

@@ -26,6 +26,14 @@
     ]
   },
   "logs_en": {
+    "System": [
+      "New: Editing, sharing, and customizing your screenshots is now much easier",
+      "Fixed an issue where the long screenshot guide popped up multiple times"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Added: switch SIM card for mobile data in Quick Settings",
+      "Fixed the issue of accidental touches on the notification shade during calls"
+    ],
     "Settings": [
       "New: Quick replies for messaging apps"
     ],
@@ -36,16 +44,26 @@
       "New: Continuous swiping opens an additional menu in Game Turbo now",
       "Optimization: Improved display options for landscape orientation"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: A shortcut for switchong between data SIM cards"
-    ],
     "Mi Cloud": [
+      "Added: prompt when the user turns off Find My Device that MiPay bank cards and virtual door cards will be deleted",
       "Fix: The Sync button didn't always respond",
       "Fix: Mi Cloud services stopped working when the users signed out of their Mi Account"
+    ],
+    "Lockscreen, status bar, Notification shade": [
+      "New: A shortcut for switchong between data SIM cards"
     ]
   },
   "logs_zh_tw": {
-    "設定": [
+    "系統": [
+      "新增 全新的截圖體驗，簡化截圖編輯、分享、長截圖流程",
+      "修復長截屏引導彈出多次的問題"
+    ],
+    "解鎖畫面、狀態欄、通知欄": [
+      "新增 快捷開關中切換SIM卡上網功能",
+      "修正 通話過程中誤觸通知欄的問題",
+      "新增 數據 SIM 卡切換捷徑"
+    ],
+    "设置": [
       "新增 快捷回覆功能，支援使用懸浮窗開啟即時通訊類應用通知"
     ],
     "近期任務": [
@@ -54,158 +72,459 @@
     "遊戲加速": [
       "新增 手勢連續滑動喚出遊戲工具箱二級菜單功能",
       "優化 橫向螢幕下遊戲加速設定及遊戲增加介面顯示風格"
+    ],
+    "小米雲服務": [
+      "新增 使用者關閉尋找手機時，提示 MiPay 銀行卡和虛擬門卡將被刪除",
+      "修復 點擊「立即同步」按鈕沒有反應的問題",
+      "修正 登出小米帳號時，提示雲端服務停止運行的問題"
     ]
   },
   "logs_ja": {
+    "システム": [
+      "追加: 新しいスクリーンショット体験。スクリーンショットの編集、共有、長いスクリーンショットの流れを簡素化",
+      "長いスクリーンショットのガイドが複数回表示される問題を修正しました"
+    ],
+    "ロック画面、ステータスバー、通知バー": [
+      "クイック設定でSIMカードのモバイルデータを切り替える機能を追加",
+      "通話中に通知シェードを誤ってタッチする問題を修正"
+    ],
     "設定": [
       "新機能: メッセージアプリのクイック返信"
+    ],
+    "最近のタスク": [
+      "追加: 最近のタスクで一部アプリのプレビューをぼかせるようになりました"
     ],
     "ゲーム加速": [
       "新機能: ジェスチャーの連続スワイプでGame Turboのサブメニューを呼び出せるようになりました",
       "最適化: 横向き時のゲームターボ設定およびゲーム追加画面の表示スタイルを改善",
       "New: Continuous swiping opens an additional menu in Game Turbo now"
+    ],
+    "Xiaomi クラウドサービス": [
+      "追加 ユーザーが「デバイスを探す」をオフにした際、MiPayの銀行カードと仮想ドアカードが削除されることを通知",
+      "「今すぐ同期」ボタンをタップしても反応しない問題を修正",
+      "Xiaomi アカウントからサインアウトした際に、クラウドサービスが停止したと表示される問題を修正"
+    ],
+    "ロック画面、ステータスバー、通知シェード": [
+      "追加: データSIMカード切り替えショートカット"
     ]
   },
   "logs_ko": {
+    "시스템": [
+      "New: 스크린샷 편집, 공유, 커스터마이징의 과정을 간소화",
+      "긴 스크린샷 안내가 여러 번 표시되는 문제를 수정했습니다"
+    ],
+    "잠금 화면, 상태 표시줄, 알림 표시줄": [
+      "빠른 설정에서 SIM 카드 모바일 데이터 전환 기능 추가",
+      "통화 중 알림창이 잘못 터치되는 문제를 수정"
+    ],
     "설정": [
       "New: 메시지 앱의 빠른 답장 기능"
+    ],
+    "최근 작업": [
+      "추가: 최근 작업에서 일부 앱의 미리보기를 흐리게 표시할 수 있습니다"
     ],
     "게임 가속": [
       "새 기능: 제스처 연속 스와이프로 Game Turbo 보조 메뉴를 열 수 있습니다",
       "최적화: 가로 모드에서 게임 터보 설정 및 게임 추가 화면 표시 스타일 개선",
       "New: 지속적인 스와이프로 게임 터보의 추가 메뉴 실행"
+    ],
+    "Xiaomi 클라우드 서비스": [
+      "추가 사용자가 기기 찾기를 끌 때 MiPay 은행 카드 및 가상 도어 카드가 삭제된다는 안내",
+      "\"지금 동기화\" 버튼을 눌러도 반응이 없는 문제를 수정",
+      "Xiaomi 계정에서 로그아웃할 때 클라우드 서비스가 중지되었다는 알림이 표시되는 문제를 수정"
+    ],
+    "잠금화면, 상태 바, 알림 바": [
+      "추가: 데이터 SIM 카드 전환 바로가기"
     ]
   },
   "logs_ru": {
+    "Система": [
+      "Новое: Редактировать и отправлять снимки экрана теперь намного проще",
+      "Исправлена проблема, из-за которой подсказка для длинного скриншота появлялась несколько раз"
+    ],
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Добавлена функция переключения SIM-карты для мобильного интернета в быстрых настройках",
+      "Исправлена проблема случайного касания панели уведомлений во время вызова",
+      "Добавлено: ярлык переключения SIM-карты для данных"
+    ],
     "Настройки": [
       "Новое: Быстрые ответы для мессенджеров"
+    ],
+    "Недавнее": [
+      "Добавлено: можно размывать превью некоторых приложений в недавних задачах"
     ],
     "Ускорение приложений": [
       "Новое: Непрерывное пролистывание открывает дополнительное меню в Ускорении игр",
       "Оптимизация: Улучшено отображение элементов в ландшафтном режиме"
+    ],
+    "Облачный сервис Xiaomi": [
+      "Добавлено: при отключении пользователем «Поиска устройства» отображается предупреждение об удалении банковских карт MiPay и виртуальных дверных карт",
+      "Исправлена проблема, из-за которой кнопка «Синхронизировать сейчас» не реагировала на нажатие",
+      "Исправлена проблема с сообщением об остановке облачных сервисов при выходе из аккаунта Xiaomi"
     ]
   },
   "logs_uk": {
+    "Система": [
+      "Нове: Оновлений досвід роботи зі скріншотами, спрощено редагування, поширення та створення довгих скріншотів",
+      "Виправлено проблему, через яку підказка для довгого скриншота з’являлася кілька разів"
+    ],
+    "Екран блокування, рядок стану, рядок сповіщень": [
+      "Додано функцію перемикання SIM-картки для мобільного інтернету в швидких налаштуваннях",
+      "Виправлено проблему випадкового торкання панелі сповіщень під час виклику"
+    ],
     "Налаштування": [
       "New: Quick replies for messaging apps"
+    ],
+    "Останні завдання": [
+      "Додано: можна розмивати прев’ю деяких програм у нещодавніх задачах"
     ],
     "Прискорення ігор": [
       "Нове: безперервний жест свайпу відкриває додаткове меню в Game Turbo",
       "Оптимізація: покращено стиль відображення налаштувань Game Turbo та інтерфейсу додавання ігор у горизонтальній орієнтації"
+    ],
+    "Хмарний сервіс Xiaomi": [
+      "Додано: коли користувач вимикає «Пошук пристрою», показується попередження про видалення банківських карток MiPay і віртуальних карток дверей",
+      "Виправлено проблему, через яку кнопка «Синхронізувати зараз» не реагувала на натискання",
+      "Виправлено проблему з повідомленням про зупинку хмарних сервісів під час виходу з облікового запису Xiaomi"
+    ],
+    "Екран блокування, рядок стану, панель сповіщень": [
+      "Додано: ярлик перемикання SIM-картки для передавання даних"
     ]
   },
   "logs_pl": {
+    "System": [
+      "Nowe: Edytowanie, przesyłanie i dostosowywanie Twoich zrzutów ekranu jest teraz znacznie łatwiejsze.",
+      "Naprawiono problem, w którym wskazówka dotycząca długiego zrzutu ekranu pojawiała się wielokrotnie"
+    ],
+    "Ekran blokady, pasek stanu, pasek powiadomień": [
+      "Dodano możliwość przełączania karty SIM dla danych mobilnych w szybkich ustawieniach",
+      "Naprawiono problem przypadkowego dotknięcia panelu powiadomień podczas połączenia"
+    ],
     "Ustawienia": [
       "Nowe: Szybkie odpowiedzi dla komunikatorów"
+    ],
+    "Ostatnie zadania": [
+      "Dodano: możliwość rozmycia podglądu niektórych aplikacji w ostatnich zadaniach"
     ],
     "Przyspieszanie gier": [
       "Nowość: ciągłe przesunięcie gestem otwiera dodatkowe menu w Game Turbo",
       "Optymalizacja: Ulepszono styl wyświetlania ustawień Game Turbo i ekranu dodawania gier w orientacji poziomej",
       "Nowe: Ciągłe przesuwanie otwiera dodatkowe menu Game Turbo"
+    ],
+    "Usługa w chmurze Xiaomi": [
+      "Dodano: przy wyłączaniu przez użytkownika funkcji Znajdź urządzenie wyświetlane jest ostrzeżenie o usunięciu kart bankowych MiPay i wirtualnych kart drzwi",
+      "Naprawiono problem z brakiem reakcji po naciśnięciu przycisku „Synchronizuj teraz”",
+      "Naprawiono problem z komunikatem o zatrzymaniu usług w chmurze podczas wylogowywania z konta Xiaomi"
+    ],
+    "Ekran blokady, pasek powiadomień,panel powiadomień": [
+      "Dodano: skrót do przełączania karty SIM danych"
     ]
   },
   "logs_de": {
+    "System": [
+      "Neu: Bearbeiten, Teilen und Anpassen von Screenshots ist jetzt viel einfacher",
+      "Problem behoben, bei dem der Hinweis für lange Screenshots mehrfach angezeigt wurde"
+    ],
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
+      "Funktion zum Wechseln der SIM-Karte für mobile Daten in den Schnelleinstellungen hinzugefügt",
+      "Das Problem versehentlicher Berührungen der Benachrichtigungsleiste während Anrufen wurde behoben"
+    ],
     "Einstellungen": [
       "Neu: Schnellantworten für Messaging-Apps"
+    ],
+    "Letzte Aufgaben": [
+      "Neu: Vorschauen einiger Apps in „Zuletzt verwendet“ können jetzt unscharf dargestellt werden"
     ],
     "Spielbeschleunigung": [
       "Neu: Kontinuierliches Wischen öffnet jetzt ein zusätzliches Menü in Game Turbo",
       "Optimierung: Verbesserte Anzeigeoptionen im Querformat",
       "New: Continuous swiping opens an additional menu in Game Turbo now"
+    ],
+    "Xiaomi Cloud-Dienst": [
+      "Neu: Beim Deaktivieren von „Gerät finden“ wird ein Hinweis angezeigt, dass MiPay-Bankkarten und virtuelle Türkarten gelöscht werden",
+      "Problem behoben, bei dem die Schaltfläche „Jetzt synchronisieren“ nicht reagierte",
+      "Behebung: Beim Abmelden vom Xiaomi-Konto wurde angezeigt, dass Cloud-Dienste nicht mehr ausgeführt werden"
+    ],
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
+      "Neu: Verknüpfung zum Wechseln der Daten-SIM-Karte"
     ]
   },
   "logs_fr": {
+    "Système": [
+      "Nouveau: Editer, partager, et personnaliser vos captures d'écran est maintenant beaucoup plus facile",
+      "Correction du problème où l’astuce de capture d’écran longue s’affichait plusieurs fois"
+    ],
+    "Écran de verrouillage, barre d’état, barre de notifications": [
+      "Ajout de la fonction de changement de carte SIM pour les données mobiles dans les réglages rapides",
+      "Correction du problème de toucher accidentel du panneau de notifications pendant les appels"
+    ],
     "Paramètres": [
       "Nouveau: Réponses rapides pour les applications de messagerie"
+    ],
+    "Tâches récentes": [
+      "Nouveau : vous pouvez désormais flouter les aperçus de certaines applications dans les tâches récentes"
     ],
     "Booster de vitesse de jeu": [
       "Nouveau: Le balayage continue ouvre un menu additionel dans Game Turbo maintenant",
       "Optimisation: A amélioré les options d'affichage pour l'orientation de paysage"
+    ],
+    "Service cloud Xiaomi": [
+      "Ajout : lors de la désactivation de Localiser mon appareil, un avertissement indique que les cartes bancaires MiPay et les cartes de porte virtuelles seront supprimées",
+      "Correction du problème où le bouton « Synchroniser maintenant » ne répondait pas",
+      "Correction : un message indiquait l’arrêt des services cloud lors de la déconnexion du compte Xiaomi"
+    ],
+    "Écran de verrouillage, Barre d'état, Panneau de notification": [
+      "Nouveau : raccourci pour changer de carte SIM de données"
     ]
   },
   "logs_it": {
+    "Sistema": [
+      "Nuovo: Modificare, condividere e personalizzare i tuoi screenshot è ora molto più semplice",
+      "Risolto il problema per cui il suggerimento per lo screenshot lungo compariva più volte"
+    ],
+    "Schermata di blocco, barra di stato, barra delle notifiche": [
+      "Aggiunta la funzione per cambiare scheda SIM per i dati mobili nelle impostazioni rapide",
+      "Risolto il problema dei tocchi accidentali sul pannello delle notifiche durante le chiamate"
+    ],
     "Impostazioni": [
       "Nuovo: Risposte rapide per le app di messaggistica"
+    ],
+    "Recenti": [
+      "Novità: ora puoi sfocare le anteprime di alcune app nelle attività recenti"
     ],
     "Turbo Videogiochi": [
       "Nuovo: Lo scorrimento continuo apre ora un menu aggiuntivo in Turbo videogiochi",
       "Ottimizzazione: Opzioni di visualizzazione migliorate per l'orientamento orizzontale"
+    ],
+    "Servizio cloud Xiaomi": [
+      "Aggiunto: quando l'utente disattiva Trova dispositivo, viene mostrato un avviso che le carte bancarie MiPay e le carte porta virtuali verranno eliminate",
+      "Risolto il problema per cui il pulsante \"Sincronizza ora\" non rispondeva",
+      "Correzione: all’uscita dall’account Xiaomi veniva mostrato che i servizi cloud si erano fermati"
+    ],
+    "Schermata di blocco, barra di stato, area delle notifiche": [
+      "Novità: scorciatoia per cambiare la SIM dati"
     ]
   },
   "logs_es": {
-    "Ajustes": [
+    "Sistema": [
+      "Nuevo: Editar, compartir y personalizar tus capturas de pantalla ahora es mucho más fácil",
+      "Se corrigió el problema por el que el aviso de captura de pantalla larga aparecía varias veces"
+    ],
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Añadida la función para cambiar la tarjeta SIM de datos móviles en los ajustes rápidos",
+      "Corregido el problema de toques accidentales en el panel de notificaciones durante las llamadas",
+      "Novedad: acceso directo para cambiar la SIM de datos"
+    ],
+    "Configuración": [
       "Nuevo: Respuestas rápidas para aplicaciones de mensajería"
+    ],
+    "Recientes": [
+      "Novedad: ahora puedes difuminar las vistas previas de algunas apps en las tareas recientes"
     ],
     "Acelerador de juegos": [
       "Nuevo: Deslizar de forma reperida ahora abre un menú adicional en Game Turbo",
       "Optimización: Opciones de visualización mejoradas para la orientación apaisada"
+    ],
+    "Servicio en la nube de Xiaomi": [
+      "Añadido: al desactivar Buscar dispositivo, se avisa de que se eliminarán las tarjetas bancarias de MiPay y las tarjetas de puerta virtuales",
+      "Se corrigió el problema por el que el botón \"Sincronizar ahora\" no respondía",
+      "Corrección: al cerrar sesión en la cuenta Xiaomi se mostraba que los servicios en la nube se detuvieron"
     ]
   },
   "logs_pt": {
+    "Sistema": [
+      "Novo: Editar, compartilhar e personalizar suas capturas de tela está muito mais fácil agora",
+      "Corrigido o problema em que a dica de captura de tela longa aparecia várias vezes"
+    ],
+    "Tela de bloqueio, barra de status, barra de notificações": [
+      "Adicionada a função de alternar o cartão SIM para dados móveis nas configurações rápidas",
+      "Corrigido o problema de toques acidentais no painel de notificações durante chamadas"
+    ],
     "Configurações": [
       "Novo: Respostas rápidas para apps de mensagens"
+    ],
+    "Tarefas recentes": [
+      "Novo: agora é possível desfocar as prévias de alguns apps nas tarefas recentes"
     ],
     "Acelerador de jogos": [
       "Novo: Agora um menu adicional do Game Turbo é aberto ao deslizar continuamente",
       "Otimização: Melhoria das opções de exibição na orientação paisagem"
+    ],
+    "Serviço de nuvem Xiaomi": [
+      "Adicionado: ao desativar Localizar dispositivo, é exibido um aviso de que os cartões bancários MiPay e os cartões de porta virtuais serão excluídos",
+      "Corrigido o problema em que o botão \"Sincronizar agora\" não respondia",
+      "Correção: ao sair da conta Xiaomi, era exibido que os serviços na nuvem pararam de funcionar"
+    ],
+    "Tela de bloqueio, Barra de status e Área de notificações": [
+      "Novo: atalho para alternar o SIM de dados"
     ]
   },
   "logs_tr": {
+    "Sistem": [
+      "Yeni: Ekran görüntülerinizi düzenleme, paylaşma ve özelleştirme artık çok daha kolay",
+      "Uzun ekran görüntüsü kılavuzunun birden çok kez açılması sorunu düzeltildi"
+    ],
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Hızlı ayarlarda mobil veri için SIM kart değiştirme özelliği eklendi",
+      "Görüşme sırasında bildirim paneline yanlışlıkla dokunma sorunu giderildi",
+      "Yeni: veri SIM kartı geçişi için kısayol"
+    ],
     "Ayarlar": [
       "Yeni: Mesajlaşma uygulamaları için hızlı yanıtlar"
+    ],
+    "Son kullanılanlar": [
+      "Yeni: Son görevlerde bazı uygulamaların önizlemelerini artık bulanıklaştırabilirsiniz"
     ],
     "Oyun hız artırıcı": [
       "Yeni: Devamlı kaydırma şimdi Game Turbo'da ek bir menü açıyor",
       "Optimizasyon: Manzara yönlendirimlesi için görüntüleme seçenekleri artırıldı"
+    ],
+    "Xiaomi Bulut Hizmeti": [
+      "Eklendi: Kullanıcı Cihazımı Bul'u kapattığında MiPay banka kartlarının ve sanal kapı kartlarının silineceği uyarısı gösterilir",
+      "\"Şimdi senkronize et\" düğmesinin yanıt vermemesi sorunu giderildi",
+      "Düzeltme: Xiaomi hesabından çıkış yaparken bulut hizmetlerinin durduğu bildiriliyordu"
     ]
   },
   "logs_id": {
+    "Sistem": [
+      "Baru: Mengubah, berbagi, dan mengkustomisasi screenshot menjadi lebih mudah sekarang",
+      "Memperbaiki masalah panduan tangkapan layar panjang yang muncul beberapa kali"
+    ],
+    "Layar kunci, bilah status, bilah notifikasi": [
+      "Menambahkan fitur beralih kartu SIM untuk data seluler di pengaturan cepat",
+      "Memperbaiki masalah sentuhan tidak sengaja pada panel notifikasi saat panggilan"
+    ],
     "Pengaturan": [
       "Baru: Balasan cepat pada aplikasi pesan"
+    ],
+    "Tugas Terbaru": [
+      "Baru: Sekarang Anda dapat memburamkan pratinjau beberapa aplikasi di Tugas terbaru"
     ],
     "Peningkat kecepatan permainan": [
       "Baru: Ada menu tambahan di Game Turbo jika Anda terus menggeser halaman",
       "Pengoptimalan: Pilihan tampilan saat ponsel berada dalam posisi horisontal ditingkatkan"
+    ],
+    "Layanan Cloud Xiaomi": [
+      "Ditambahkan: saat pengguna menonaktifkan Temukan Perangkat, muncul peringatan bahwa kartu bank MiPay dan kartu pintu virtual akan dihapus",
+      "Memperbaiki masalah tombol \"Sinkronkan sekarang\" tidak merespons",
+      "Perbaikan: layanan cloud berhenti berjalan saat keluar dari akun Xiaomi"
+    ],
+    "Layar kunci, bar status, layar notifikasi": [
+      "Baru: pintasan untuk mengganti kartu SIM data"
     ]
   },
   "logs_vi": {
+    "Hệ thống": [
+      "Mới: Trải nghiệm chụp màn hình hoàn toàn mới, đơn giản hóa quy trình chỉnh sửa, chia sẻ và chụp ảnh màn hình dài",
+      "Đã khắc phục sự cố hướng dẫn chụp ảnh màn hình dài hiển thị nhiều lần"
+    ],
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Đã thêm chức năng chuyển đổi SIM cho dữ liệu di động trong cài đặt nhanh",
+      "Đã khắc phục sự cố vô tình chạm vào bảng thông báo trong khi gọi",
+      "Mới: lối tắt chuyển đổi SIM dữ liệu"
+    ],
     "Cài đặt": [
       "New: Quick replies for messaging apps"
+    ],
+    "Tác vụ gần đây": [
+      "Mới: Bạn có thể làm mờ bản xem trước của một số ứng dụng trong Tác vụ gần đây"
     ],
     "Tăng tốc trò chơi": [
       "Mới: vuốt liên tục bằng cử chỉ để mở menu phụ của Game Turbo",
       "Tối ưu hóa: Cải thiện kiểu hiển thị của cài đặt Game Turbo và giao diện thêm trò chơi ở chế độ ngang",
       "New: Continuous swiping opens an additional menu in Game Turbo now"
+    ],
+    "Dịch vụ đám mây Xiaomi": [
+      "Đã thêm: khi người dùng tắt Tìm thiết bị, hiển thị cảnh báo thẻ ngân hàng MiPay và thẻ cửa ảo sẽ bị xóa",
+      "Đã sửa lỗi nút \"Đồng bộ ngay\" không phản hồi",
+      "Sửa lỗi: dịch vụ đám mây ngừng hoạt động khi đăng xuất khỏi tài khoản Xiaomi"
     ]
   },
   "logs_th": {
+    "ระบบ": [
+      "ใหม่: ประสบการณ์สกรีนช็อตใหม่ ช่วยให้การแก้ไข แชร์ และการจับภาพหน้าจอยาวง่ายขึ้น",
+      "แก้ไขปัญหาคู่มือการจับภาพหน้าจอยาวแสดงขึ้นหลายครั้ง"
+    ],
+    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
+      "เพิ่มฟังก์ชันสลับ SIM สำหรับข้อมูลมือถือในการตั้งค่าด่วน",
+      "แก้ไขปัญหาการแตะแผงการแจ้งเตือนโดยไม่ตั้งใจระหว่างการโทร"
+    ],
     "การตั้งค่า": [
       "New: Quick replies for messaging apps"
+    ],
+    "งานล่าสุด": [
+      "ใหม่: คุณสามารถเบลอตัวอย่างแอปบางแอปในงานล่าสุดได้แล้ว"
     ],
     "ตัวเร่งความเร็วเกม": [
       "ใหม่: ปัดต่อเนื่องด้วยท่าทางเพื่อเปิดเมนูย่อยของ Game Turbo",
       "ปรับปรุง: ปรับปรุงสไตล์การแสดงผลของการตั้งค่า Game Turbo และหน้าจอเพิ่มเกมในโหมดแนวนอน",
       "New: Continuous swiping opens an additional menu in Game Turbo now"
+    ],
+    "บริการคลาวด์ Xiaomi": [
+      "เพิ่ม: เมื่อผู้ใช้ปิดค้นหาอุปกรณ์ จะแจ้งเตือนว่าบัตรธนาคาร MiPay และบัตรประตูเสมือนจะถูกลบ",
+      "แก้ไขปัญหาที่ปุ่ม \"ซิงค์ทันที\" ไม่ตอบสนอง",
+      "แก้ไขปัญหาที่แสดงว่าบริการคลาวด์หยุดทำงานเมื่อออกจากบัญชี Xiaomi"
+    ],
+    "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
+      "ใหม่: ทางลัดสำหรับสลับซิมการ์ดข้อมูล"
     ]
   },
   "logs_ar": {
+    "النظام": [
+      "جديد أصبح تعديل ومشاركة وتخصيص لقطات الشاشة أسهل بكثير الآن",
+      "إصلاح مشكلة ظهور إرشاد لقطة الشاشة الطويلة عدة مرات"
+    ],
+    "شاشة القفل، شريط الحالة، شريط الإشعارات": [
+      "إضافة ميزة تبديل بطاقة SIM لبيانات الجوال في الإعدادات السريعة",
+      "إصلاح مشكلة اللمس العرضي للوحة الإشعارات أثناء المكالمات"
+    ],
     "الإعدادات": [
       "جديد الردود السريعة على تطبيقات المراسلة"
+    ],
+    "المهام الأخيرة": [
+      "جديد: يمكنك الآن تمويه معاينات بعض التطبيقات في المهام الأخيرة"
     ],
     "تسريع الألعاب": [
       "جديد: فتح القائمة الثانوية لـ Game Turbo بالسحب المتواصل بالإيماءات",
       "تحسين: تحسين أسلوب عرض إعدادات تسريع الألعاب وواجهة إضافة الألعاب في الوضع الأفقي",
       "الجديد يفتح التمرير المستمر قائمة إضافية في مسرع الألعاب الآن"
+    ],
+    "خدمة Xiaomi السحابية": [
+      "إضافة: عند إيقاف المستخدم \"العثور على الجهاز\"، تظهر رسالة تفيد بحذف بطاقات MiPay البنكية وبطاقات الأبواب الافتراضية",
+      "تم إصلاح مشكلة عدم استجابة زر \"المزامنة الآن\"",
+      "إصلاح: توقف خدمات السحابة عن العمل عند تسجيل الخروج من حساب Xiaomi"
+    ],
+    "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
+      "جديد: اختصار لتبديل بطاقة SIM للبيانات"
     ]
   },
   "logs_in": {
+    "सिस्टम": [
+      "नया: स्क्रीनशॉट का नया अनुभव, संपादन, साझा करना और लंबे स्क्रीनशॉट की प्रक्रिया को आसान बनाता है",
+      "लंबे स्क्रीनशॉट के गाइड के कई बार दिखने की समस्या ठीक की गई"
+    ],
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
+      "त्वरित सेटिंग्स में मोबाइल डेटा के लिए SIM कार्ड बदलने की सुविधा जोड़ी गई",
+      "कॉल के दौरान सूचना पैनल को गलती से छूने की समस्या ठीक की गई"
+    ],
     "सेटिंग्स": [
       "New: Quick replies for messaging apps"
+    ],
+    "हाल के कार्य": [
+      "नया: अब आप हाल के कार्यों में कुछ ऐप्स के पूर्वावलोकन को धुंधला कर सकते हैं"
     ],
     "गेम गति बूस्टर": [
       "नया: निरंतर स्वाइप से Game Turbo का द्वितीयक मेनू खोलें",
       "अनुकूलन: लैंडस्केप में गेम टर्बो सेटिंग्स और गेम जोड़ने के इंटरफ़ेस की प्रदर्शन शैली में सुधार",
       "New: Continuous swiping opens an additional menu in Game Turbo now"
+    ],
+    "Xiaomi क्लाउड सेवा": [
+      "जोड़ा गया: जब उपयोगकर्ता डिवाइस खोजें बंद करता है, तो MiPay बैंक कार्ड और वर्चुअल डोर कार्ड हटाए जाने का संकेत दिया जाता है",
+      "\"अभी सिंक करें\" बटन के प्रतिक्रिया न देने की समस्या ठीक की गई",
+      "सुधार: Xiaomi खाते से साइन आउट करते समय क्लाउड सेवाएँ बंद होने का संदेश दिखना"
+    ],
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
+      "नया: डेटा SIM कार्ड बदलने के लिए शॉर्टकट"
     ]
   },
   "logs_ug": {
@@ -216,6 +535,9 @@
       "قوشۇلدى: ئىشارەت ئارقىلىق ئۇدا سىيرىش ئارقىلىق Game Turbo نىڭ ئىككىنچى دەرىجىلىك تىزىملىكىنى چىقىرىش ئىقتىدارى.",
       "ئەلالاشتۇرۇش: ياتا يۆنىلىشتە ئويۇن تېزلىتىش تەڭشىكى ۋە ئويۇن قوشۇش كۆرۈنۈشىنىڭ كۆرسىتىش ئۇسلۇبى ياخشىلاندى.",
       "New: Continuous swiping opens an additional menu in Game Turbo now"
+    ],
+    "Lockscreen, status bar, Notification shade": [
+      "يېڭى: سانلىق مەلۇمات SIM كارتىسىنى ئالماشتۇرۇش تېز يولى"
     ]
   },
   "logs_bo": {

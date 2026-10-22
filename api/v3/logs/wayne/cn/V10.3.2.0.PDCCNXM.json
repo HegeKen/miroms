@@ -13,7 +13,7 @@
     "计算器": [
       "修复 未开启小爱同学情况下，计算器偶现崩溃的问题"
     ],
-    "相册": [
+    "画廊": [
       "新增 故事相册开关，一键控制是否展示你的相册故事卡片",
       "新增 照片文字水印编辑，添加多种文艺水印样式"
     ],
@@ -37,12 +37,19 @@
     "App lock": [
       "New: Face unlock support"
     ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Fixed the issue where microphone volume could not be adjusted after a game switched to landscape mode"
+    ],
     "Clock": [
       "Fix: Timer button started flashing after being tapped",
       "Fix: Clock force closed on some specific dates"
     ],
     "Calculator": [
       "Fix: When Mi AI was off, Calculator crashed in some cases"
+    ],
+    "Album": [
+      "New Stories album toggle to control whether your album story cards are shown with one tap",
+      "Added photo text watermark editing, with multiple artistic watermark styles"
     ],
     "Weather": [
       "New: Animations for cloudy and smoggy weather",
@@ -64,6 +71,9 @@
     "應用鎖": [
       "新增 支援使用人臉解應用鎖"
     ],
+    "解鎖畫面、狀態欄、通知欄": [
+      "修正遊戲橫屏後無法調節麥克風音量的問題"
+    ],
     "時鐘": [
       "修復 計時器頁面按鈕點擊閃爍的問題",
       "修復 時鐘在特殊日期出現閃退的問題"
@@ -71,12 +81,16 @@
     "計算機": [
       "新增 故事卡片與照片優選開關"
     ],
+    "相簿": [
+      "新增 故事相簿開關，一鍵控制是否顯示你的相簿故事卡片",
+      "新增 照片文字浮水印編輯，新增多種文藝浮水印樣式"
+    ],
     "天氣": [
       "新增 陰天和霧霾動畫",
       "優化 15天趨勢介面適配",
       "優化 大字體和螢幕密度相關問題"
     ],
-    "設定": [
+    "设置": [
       "優化 設置頁的系統應用與更多應用的文案和圖標",
       "修復 字體調節後，圖標顯示異常的問題"
     ],
@@ -85,17 +99,27 @@
     ],
     "其他": [
       "Improved system security and stability"
+    ],
+    "設定": [
+      "修復 字體調節後，圖標顯示異常的問題"
     ]
   },
   "logs_ja": {
     "アプリロック": [
       "新規: 顔認証によるアプリのロック解除に対応"
     ],
+    "ロック画面、ステータスバー、通知バー": [
+      "ゲームを横向きにした後、マイクの音量を調整できない問題を修正"
+    ],
     "時計": [
       "タイマーページのボタンをタップした際に点滅する問題を修正",
       "特定の日付で時計が強制終了する問題を修正",
       "タイマーページでボタンをタップした際にチラつく問題を修正",
       "特別な日付に時計がクラッシュする問題を修正"
+    ],
+    "アルバム": [
+      "ストーリーアルバムのスイッチを追加し、アルバムのストーリーカードを表示するかどうかをワンタップで制御できます",
+      "写真のテキスト透かし編集を追加し、多彩なアート系透かしスタイルを追加"
     ],
     "天気": [
       "追加: 曇りとスモッグのアニメーション",
@@ -117,11 +141,18 @@
     "앱 잠금": [
       "신규: 얼굴 인식으로 앱 잠금 해제 지원"
     ],
+    "잠금 화면, 상태 표시줄, 알림 표시줄": [
+      "게임을 가로 모드로 전환한 후 마이크 볼륨을 조절할 수 없는 문제를 수정했습니다"
+    ],
     "시계": [
       "타이머 페이지에서 버튼을 탭할 때 깜박이는 문제를 수정했습니다",
       "특정 날짜에 시계가 강제 종료되는 문제 수정",
       "타이머 페이지에서 버튼을 탭할 때 깜빡이는 문제를 수정했습니다.",
       "특정 날짜에 시계가 비정상 종료되는 문제를 수정했습니다"
+    ],
+    "앨범": [
+      "스토리 앨범 스위치 추가, 앨범 스토리 카드를 표시할지 원터치로 제어",
+      "사진 텍스트 워터마크 편집 추가, 다양한 예술적 워터마크 스타일 추가"
     ],
     "날씨": [
       "추가: 흐린 날씨와 스모그 애니메이션",
@@ -143,9 +174,16 @@
     "Защита приложений": [
       "Новое: Поддержка разблокировки по лицу"
     ],
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Исправлена проблема, из-за которой нельзя было регулировать громкость микрофона после переключения игры в альбомный режим"
+    ],
     "Часы": [
       "Исправлено: Кнопка таймера начинала мигать после нажатия",
       "Исправлено: Некорректное завершение работы приложения Часы в определенные дни"
+    ],
+    "Альбом": [
+      "Добавлен переключатель альбома историй для управления показом карточек историй в альбоме одним нажатием",
+      "Добавлено редактирование текстовых водяных знаков на фото и несколько художественных стилей водяных знаков"
     ],
     "Погода": [
       "Добавлено: анимации для пасмурной погоды и смога",
@@ -166,11 +204,18 @@
     "Блокування додатків": [
       "Нове: Підтримка розблокування застосунків обличчям"
     ],
+    "Екран блокування, рядок стану, рядок сповіщень": [
+      "Виправлено проблему, через яку не можна було регулювати гучність мікрофона після перемикання гри в альбомний режим"
+    ],
     "Годинник": [
       "Виправлено: кнопка на сторінці таймера блимає після натискання",
       "Виправлено: Годинник аварійно завершував роботу в окремі дати",
       "Виправлено проблему мерехтіння кнопок на сторінці таймера під час натискання.",
       "Виправлено проблему аварійного завершення роботи Годинника в особливі дати"
+    ],
+    "Альбом": [
+      "Додано перемикач альбому історій для керування показом карток історій в альбомі одним дотиком",
+      "Додано редагування текстових водяних знаків на фото та кілька художніх стилів водяних знаків"
     ],
     "Погода": [
       "Додано: анімації для похмурої погоди та смогу",
@@ -195,11 +240,18 @@
     "Blokada aplikacji": [
       "Nowość: Odblokowywanie aplikacji za pomocą rozpoznawania twarzy"
     ],
+    "Ekran blokady, pasek stanu, pasek powiadomień": [
+      "Naprawiono problem z brakiem możliwości regulacji głośności mikrofonu po przełączeniu gry na tryb poziomy"
+    ],
     "Zegar": [
       "Poprawka: przycisk na stronie minutnika miga po dotknięciu",
       "Naprawiono: Zegar ulegał awarii w określonych datach",
       "Naprawiono migotanie przycisków na stronie timera po dotknięciu.",
       "Naprawiono problem z awarią aplikacji Zegar w specjalne dni"
+    ],
+    "Album": [
+      "Dodano przełącznik albumu historii umożliwiający jednym dotknięciem włączenie lub wyłączenie wyświetlania kart historii w albumie",
+      "Dodano edycję tekstowych znaków wodnych na zdjęciach i wiele artystycznych stylów znaków wodnych"
     ],
     "Pogoda": [
       "Dodano: animacje dla pochmurnej pogody i smogu",
@@ -213,7 +265,7 @@
     "Przyspieszanie gier": [
       "Nowość: Pływające okna dla połączeń przychodzących podczas gier"
     ],
-    "Inne": [
+    "Reszt": [
       "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
@@ -221,11 +273,18 @@
     "App-Sperre": [
       "Neu: Apps per Gesichtserkennung entsperren"
     ],
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
+      "Problem behoben, dass die Mikrofonlautstärke nach dem Drehen eines Spiels ins Querformat nicht angepasst werden konnte"
+    ],
     "Uhr": [
       "Behebung: Schaltfläche auf der Timer-Seite blinkt nach dem Antippen",
       "Behoben: Uhr stürzte an bestimmten Daten ab",
       "Behebt das Flackern der Schaltflächen auf der Timer-Seite beim Antippen.",
       "Behebung des Problems, dass die Uhr an besonderen Tagen abstürzt"
+    ],
+    "Galerie": [
+      "Neuer Schalter für Story-Album: Steuere mit einem Tippen, ob deine Album-Story-Karten angezeigt werden",
+      "Textwasserzeichen-Bearbeitung für Fotos hinzugefügt, plus mehrere künstlerische Wasserzeichen-Stile"
     ],
     "Wetter": [
       "Neu: Animationen für bewölktes und smogiges Wetter",
@@ -247,11 +306,18 @@
     "Verrouillage de l'application": [
       "Nouveau: Fonction de reconnaissance facial"
     ],
+    "Écran de verrouillage, barre d’état, barre de notifications": [
+      "Correction du problème empêchant de régler le volume du micro après le passage d’un jeu en mode paysage"
+    ],
     "Horloge": [
       "Correction : le bouton de la page Minuteur clignote après un appui",
       "Correction : l'horloge plantait à certaines dates",
       "Correction du clignotement des boutons de la page Minuteur lors d’un appui.",
       "Correction du problème de fermeture inattendue de l'application Horloge à certaines dates"
+    ],
+    "Album": [
+      "Ajout d'un interrupteur pour l'album de stories, permettant d'afficher ou non vos cartes de stories en un geste",
+      "Ajout de l’édition des filigranes texte sur photo et de plusieurs styles de filigranes artistiques"
     ],
     "Météo": [
       "Nouveau : animations pour temps couvert et smog",
@@ -276,11 +342,18 @@
     "Blocco app": [
       "Nuovo: Supporto per Riconoscimento facciale"
     ],
+    "Schermata di blocco, barra di stato, barra delle notifiche": [
+      "Risolto il problema che impediva di regolare il volume del microfono dopo il passaggio di un gioco in orizzontale"
+    ],
     "Orologio": [
       "Risolvi: Il pulsante del timer cominciava a lampeggiare quando veniva premuto",
       "Risolvi: Chiusura forzata di Orologio in alcune date specifiche",
       "Risolto: Il pulsante del timer cominciava a lampeggiare quando veniva premuto",
       "Risolto: Chiusura forzata di Orologio in alcune date specifiche"
+    ],
+    "Album": [
+      "Aggiunto l'interruttore album storie per controllare con un tocco se mostrare le card delle storie nell'album",
+      "Aggiunta la modifica delle filigrane di testo sulle foto e diversi stili di filigrana artistici"
     ],
     "Meteo": [
       "Nuovo: animazioni per tempo nuvoloso e smog",
@@ -302,18 +375,25 @@
     "Bloqueo de aplicaciones": [
       "Nuevo: Soporte para el Desbloqueo facial"
     ],
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Se corrigió el problema que impedía ajustar el volumen del micrófono tras poner un juego en horizontal"
+    ],
     "Reloj": [
       "Reparar: El botón del temporizador comenzó a parpadear después de ser pulsado",
       "Reparar: Cierre forzoso del Reloj en algunas fechas específicas",
       "Reparado: El botón del temporizador comenzó a parpadear después de ser pulsado",
       "Reparado: Cierre forzoso del Reloj en algunas fechas específicas"
     ],
+    "Álbum de fotos": [
+      "Se añade el interruptor de álbum de historias para controlar con un toque si se muestran las tarjetas de historias del álbum",
+      "Se agregó la edición de marcas de agua de texto en fotos y varios estilos artísticos de marca de agua"
+    ],
     "Tiempo": [
       "Nuevo: animaciones para tiempo nublado y smog",
       "Optimización: adaptación de la interfaz de tendencia de 15 días",
       "Optimización: problemas relacionados con el tamaño de fuente grande y la densidad de pantalla"
     ],
-    "Ajustes": [
+    "Configuración": [
       "Optimización: Textos e iconos de Aplicaciones del sistema y Más aplicaciones en Ajustes",
       "Reparado: Los iconos no eran mostrados correctamente después de ajustar las fuentes"
     ],
@@ -322,17 +402,27 @@
     ],
     "Otros": [
       "Estabilidad y seguridad del sistema mejorada"
+    ],
+    "Ajustes": [
+      "Reparado: Los iconos no eran mostrados correctamente después de ajustar las fuentes"
     ]
   },
   "logs_pt": {
     "Bloqueio de apps": [
       "Novo: Suporte a desbloqueio facial"
     ],
+    "Tela de bloqueio, barra de status, barra de notificações": [
+      "Corrigido o problema que impedia ajustar o volume do microfone após colocar um jogo no modo paisagem"
+    ],
     "Relógio": [
       "Correção: o botão da página do temporizador pisca ao ser tocado",
       "Correção: o Relógio fechava à força em datas específicas",
       "Corrigido o problema de os botões da página do timer piscarem ao tocar.",
       "Corrigido o problema de fechamento inesperado do Relógio em datas especiais"
+    ],
+    "Álbum": [
+      "Adicionado o interruptor do álbum de histórias para controlar com um toque se os cartões de histórias do álbum são exibidos",
+      "Adicionada a edição de marcas d'água de texto em fotos e vários estilos artísticos de marca d'água"
     ],
     "Clima": [
       "Novo: animações para tempo nublado e smog",
@@ -357,11 +447,18 @@
     "Uygulama kilidi": [
       "Yeni: Yüz ile kilit açma desteği"
     ],
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Bir oyun yatay moda geçtikten sonra mikrofon ses düzeyinin ayarlanamaması sorunu düzeltildi"
+    ],
     "Saat": [
       "Onar: Zamanlayıcı tuşu, dokunulduktan sonra yanmaya başladı",
       "Onar: Saat, belirli tarihlerde kapanmaya zorlandı",
       "Onarım: Zamanlayıcı tuşu, dokunulduktan sonra yanmaya başladı",
       "Onarım: Saat, belirli tarihlerde kapanmaya zorlandı"
+    ],
+    "albüm": [
+      "Albüm hikâyeleri kartlarının gösterilip gösterilmeyeceğini tek dokunuşla kontrol eden hikâye albümü anahtarı eklendi",
+      "Fotoğraflarda metin filigranı düzenleme ve çeşitli sanatsal filigran stilleri eklendi"
     ],
     "Hava durumu": [
       "Yeni: bulutlu ve dumanlı hava animasyonları",
@@ -383,11 +480,18 @@
     "Kunci aplikasi": [
       "Baru: Mendukung Buka kunci perangkat dengan wajah (Face unlock)"
     ],
+    "Layar kunci, bilah status, bilah notifikasi": [
+      "Memperbaiki masalah volume mikrofon yang tidak dapat diatur setelah game beralih ke mode lanskap"
+    ],
     "Jam": [
       "Perbaikan: tombol di halaman pengatur waktu berkedip saat diketuk",
       "Perbaikan: Jam mengalami force close pada tanggal tertentu",
       "Memperbaiki masalah tombol di halaman Timer berkedip saat diketuk.",
       "Memperbaiki masalah aplikasi Jam yang force close pada tanggal khusus"
+    ],
+    "Album": [
+      "Menambahkan tombol album cerita untuk mengatur apakah kartu cerita album ditampilkan dengan sekali ketuk",
+      "Menambahkan pengeditan tanda air teks foto dan berbagai gaya tanda air artistik"
     ],
     "Cuaca": [
       "Baru: animasi cuaca mendung dan smog",
@@ -412,11 +516,18 @@
     "Khóa ứng dụng": [
       "Mới: Hỗ trợ mở khóa ứng dụng bằng khuôn mặt"
     ],
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Đã khắc phục sự cố không thể điều chỉnh âm lượng micrô sau khi trò chơi chuyển sang chế độ ngang"
+    ],
     "Đồng hồ": [
       "Sửa lỗi: nút trên trang hẹn giờ nhấp nháy khi được nhấn",
       "Sửa lỗi: Đồng hồ bị buộc dừng vào một số ngày cụ thể",
       "Đã khắc phục lỗi nhấp nháy nút trên trang Hẹn giờ khi chạm.",
       "Sửa lỗi ứng dụng Đồng hồ bị thoát đột ngột vào những ngày đặc biệt"
+    ],
+    "Album": [
+      "Thêm công tắc album câu chuyện để bật/tắt hiển thị thẻ câu chuyện trong album chỉ với một lần chạm",
+      "Đã thêm chỉnh sửa hình mờ văn bản trên ảnh và nhiều kiểu hình mờ nghệ thuật"
     ],
     "Thời tiết": [
       "Mới: hoạt ảnh thời tiết nhiều mây và khói bụi",
@@ -438,11 +549,18 @@
     "ล็อกแอป": [
       "เพิ่มใหม่: รองรับการปลดล็อกแอปด้วยใบหน้า"
     ],
+    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
+      "แก้ไขปัญหาที่ไม่สามารถปรับระดับเสียงไมโครโฟนได้หลังจากเกมอยู่ในโหมดแนวนอน"
+    ],
     "นาฬิกา": [
       "แก้ไขปัญหาปุ่มในหน้าตัวจับเวลากระพริบเมื่อแตะ",
       "แก้ไขปัญหานาฬิกาหยุดทำงานในวันที่เฉพาะเจาะจง",
       "แก้ไขปัญหาปุ่มในหน้า Timer กระพริบเมื่อแตะ",
       "แก้ไขปัญหานาฬิกาหยุดทำงานในวันที่พิเศษ"
+    ],
+    "คลังภาพ": [
+      "เพิ่มสวิตช์อัลบั้มเรื่องราว เพื่อควบคุมการแสดงการ์ดเรื่องราวในอัลบั้มด้วยการแตะครั้งเดียว",
+      "เพิ่มการแก้ไขลายน้ำข้อความบนรูปภาพ และเพิ่มสไตล์ลายน้ำแบบศิลปะหลากหลาย"
     ],
     "สภาพอากาศ": [
       "ใหม่: แอนิเมชันสภาพอากาศครึ้มและหมอกควัน",
@@ -464,11 +582,18 @@
     "قفل التطبيقات": [
       "جديد: دعم فتح التطبيقات عبر التعرف على الوجه"
     ],
+    "شاشة القفل، شريط الحالة، شريط الإشعارات": [
+      "تم إصلاح مشكلة عدم إمكانية ضبط مستوى صوت الميكروفون بعد تحويل اللعبة إلى الوضع الأفقي"
+    ],
     "الساعة": [
       "إصلاح مشكلة وميض زر صفحة المؤقت عند النقر عليه",
       "إصلاح مشكلة تعطل تطبيق الساعة في تواريخ محددة",
       "إصلاح مشكلة وميض أزرار صفحة المؤقت عند النقر عليها.",
       "إصلاح مشكلة تعطل تطبيق الساعة في التواريخ الخاصة"
+    ],
+    "ألبوم الصور": [
+      "إضافة مفتاح ألبوم القصص للتحكم في عرض بطاقات قصص الألبوم بنقرة واحدة",
+      "تمت إضافة تحرير علامة مائية نصية للصور وإضافة أنماط متعددة لعلامات مائية فنية"
     ],
     "الطقس": [
       "جديد: رسوم متحركة للطقس الغائم والضباب الدخاني",
@@ -482,7 +607,7 @@
     "تسريع الألعاب": [
       "جديد: ميزة النافذة العائمة للمكالمات، وتدعم عرض حالة الاتصال في نافذة عائمة للمكالمات التي يتم الرد عليها أثناء الألعاب"
     ],
-    "أخرى": [
+    "آخرين": [
       "تحسين أمن واستقرار النظام"
     ]
   },
@@ -490,11 +615,18 @@
     "ऐप लॉक": [
       "नया: चेहरा पहचान से ऐप्स अनलॉक करने की सुविधा"
     ],
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
+      "गेम के लैंडस्केप मोड में जाने के बाद माइक्रोफ़ोन वॉल्यूम समायोजित न होने की समस्या ठीक की गई"
+    ],
     "घड़ी": [
       "टाइमर पेज पर बटन टैप करने पर झिलमिलाने की समस्या ठीक की गई",
       "कुछ खास तारीखों पर घड़ी के क्रैश होने की समस्या ठीक की गई",
       "टाइमर पेज पर बटन क्लिक करने पर होने वाली झिलमिलाहट की समस्या ठीक की गई।",
       "विशेष तिथियों पर घड़ी के क्रैश होने की समस्या ठीक की गई"
+    ],
+    "अल्बम": [
+      "स्टोरीज़ एल्बम स्विच जोड़ा गया, जिससे एक टैप में नियंत्रित करें कि आपके एल्बम स्टोरी कार्ड दिखें या नहीं",
+      "फ़ोटो टेक्स्ट वॉटरमार्क संपादन जोड़ा गया, साथ में कई कलात्मक वॉटरमार्क शैलियाँ जोड़ी गईं"
     ],
     "मौसम": [
       "नया: बादलों और स्मॉग वाले मौसम के एनिमेशन",
@@ -515,6 +647,9 @@
   "logs_ug": {
     "ئەپ قۇلۇپى": [
       "يېڭى: ئەپ قۇلۇپىنى يۈز ئارقىلىق ئېچىشنى قوللايدۇ"
+    ],
+    "قۇلۇپ ئېكرانى، ھالەت بالدىقى، ئۇقتۇرۇش بالدىقى": [
+      "ئويۇن يانتۇ ئېكرانغا ئۆتكەندىن كېيىن مىكروفون ئاۋازىنى تەڭشىگىلى بولماسلىق مەسىلىسى تۈزىتىلدى"
     ],
     "سائەت": [
       "تایمېر بېتىدىكى كۇنۇپكىنى باسقاندا پارقىراش مەسىلىسىنى تۈزەت",

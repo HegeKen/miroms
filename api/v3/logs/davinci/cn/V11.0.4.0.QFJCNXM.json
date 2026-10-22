@@ -12,7 +12,7 @@
     "设置": [
       "修复 修复WiFi 偶现扫描失败问题"
     ],
-    "网络助手": [
+    "数据使用情况": [
       "修复 流量超额弹窗重复出现的问题",
       "修复 交换SIM卡后，联网控制规则异常的问题"
     ],
@@ -40,9 +40,15 @@
     "Settings": [
       "Fix: Couldn't find Wi-Fi networks in some cases"
     ],
-    "Data Usage": [
+    "Online Assistant": [
       "Fix: Data usage warning appeared multiple times",
       "Fix: Errors occurred after switching SIM cards"
+    ],
+    "Game speed booster": [
+      "Fixed an issue where popup content was not fully displayed after enabling app floating windows in games"
+    ],
+    "Security": [
+      "Fix: Red Packet Assistant does not show floating window in Second Space"
     ],
     "Other": [
       "Fix: Images overlapped in scrolling screenshots",
@@ -65,7 +71,7 @@
       "修復: 手機分身中，無法通過通知列進入應用通知設定頁的問題",
       "修復: 偶現通知欄無法下拉的問題"
     ],
-    "設定": [
+    "设置": [
       "修復: 修復WiFi 偶現掃描失敗問題"
     ],
     "網路助手": [
@@ -73,10 +79,19 @@
       "修復 交換SIM卡後，連網控制規則異常的問題",
       "修復: 交換SIM卡後，連網控制規則異常的問題"
     ],
+    "遊戲加速": [
+      "修復遊戲中開啟應用程式懸浮窗後，彈窗內容顯示不全的問題"
+    ],
+    "安全中心": [
+      "修復 紅包助手在分身空間不顯示懸浮窗"
+    ],
     "其他": [
       "修復 長截圖底部畫面重疊的問題",
       "修復: 長截圖底部畫面重疊的問題",
       "Improved system security and stability"
+    ],
+    "設定": [
+      "修復: 修復WiFi 偶現掃描失敗問題"
     ]
   },
   "logs_ja": {
@@ -85,16 +100,29 @@
       "Android 10ベースのMIUI安定版",
       "修正: スクロールスクリーンショットで画像が重なる問題"
     ],
+    "ステータスバー、通知シェード": [
+      "修正: セカンドスペースで通知シェードから通知設定を開けない問題",
+      "修正: 一部の状況で通知シェードを開けない問題",
+      "修正: セカンド・スペースの通知シェードで通知設定を開けない問題",
+      "修正: 通知シェードを開けない場合がある問題"
+    ],
     "設定": [
       "修正: Wi-Fiネットワークが見つからない場合がある問題"
+    ],
+    "ネットワークアシスタント": [
+      "修正: データ使用量の警告が複数回表示される問題",
+      "SIMカードを交換した後、ネットワーク制御ルールに異常が発生する問題を修正しました。",
+      "SIMカードを交換した後、通信制御ルールが異常になる問題を修正しました"
+    ],
+    "ゲーム加速": [
+      "ゲーム内でアプリのフローティングウィンドウを有効にした後、ポップアップの内容が完全に表示されない問題を修正しました"
+    ],
+    "セキュリティ": [
+      "修復: 紅包助手がセカンドスペースでフローティングウィンドウを表示しない問題を修正"
     ],
     "その他": [
       "修正: スクロールスクリーンショットで画像が重なる問題",
       "システムのセキュリティと安定性の向上"
-    ],
-    "ステータスバー、通知シェード": [
-      "修正: セカンド・スペースの通知シェードで通知設定を開けない問題",
-      "修正: 通知シェードを開けない場合がある問題"
     ]
   },
   "logs_ko": {
@@ -110,9 +138,15 @@
     "설정": [
       "수정: 일부 Wi-Fi 네트워크를 찾을 수 없는 문제"
     ],
-    "데이터 사용량": [
+    "네트워크 어시스턴트": [
       "수정: 데이터 사용량 경고가 중복해서 출현하는 현상",
       "수정: SIM 카드 전환 후의 오류 발생 문제"
+    ],
+    "게임 가속": [
+      "게임에서 앱 플로팅 창을 활성화한 후 팝업 내용이 완전히 표시되지 않는 문제를 수정했습니다"
+    ],
+    "보안": [
+      "수정: 홍바오 어시스턴트가 세컨드 스페이스에서 플로팅 창을 표시하지 않는 문제 수정"
     ],
     "기타": [
       "수정: 스크롤 스크린샷의 이미지가 겹쳐지는 문제",
@@ -132,9 +166,15 @@
     "Настройки": [
       "Исправлено: В некоторых случаях не удавалось обнаружить сети Wi-Fi"
     ],
-    "Трафик": [
+    "Интернет-ассистент": [
       "Исправлено: Предупреждение об использовании данных могло появляться несколько раз",
       "Исправлено: Ошибки, связанные со сменой SIM-карт"
+    ],
+    "Ускорение приложений": [
+      "Исправлена проблема, из-за которой содержимое всплывающего окна отображалось не полностью после включения плавающего окна приложения в играх."
+    ],
+    "Безопасность": [
+      "Исправлено: Помощник красных конвертов не отображает плавающее окно во Втором пространстве"
     ],
     "Другое": [
       "Исправлено: Изображения перекрывались на снимках экрана с прокруткой",
@@ -151,13 +191,23 @@
       "Стабільна версія MIUI на основі Android 10",
       "Виправлено: Зображення накладаються одне на одне під час прокручування скріншотів"
     ],
+    "Рядок стану, панель сповіщень": [
+      "Fix: Couldn't open notification settings in the Notification shade in Second space",
+      "Fix: Couldn't open the Notification shade in some cases"
+    ],
     "Налаштування": [
       "Виправлено: В деяких випадках не вдавалося знайти мережі Wi-Fi"
     ],
-    "Передача даних": [
+    "Інтернет-асистент": [
       "Виправлено: Попередження про використання даних могло з'являтися декілька разів",
       "Виправлено проблему з неправильними правилами керування мережею після заміни SIM-картки.",
       "Виправлено: Помилка, які пов'язані із перемиканням SIM-карт"
+    ],
+    "Прискорення ігор": [
+      "Виправлено проблему, через яку вміст спливного вікна відображався не повністю після ввімкнення плаваючого вікна застосунку в іграх."
+    ],
+    "Безпека": [
+      "Виправлено: Помічник червоних конвертів не відображає плаваюче вікно у Другому просторі"
     ],
     "Інше": [
       "Fix: Images overlapped in scrolling screenshots",
@@ -182,11 +232,17 @@
     "Ustawienia": [
       "Naprawiono: Nie udało się znaleźć sieci Wi-Fi w niektórych przypadkach"
     ],
-    "Użycie danych": [
+    "Asystent online": [
       "Naprawiono: Ostrzeżenie o zużyciu danych pojawiło się wiele razy",
       "Naprawiono: Wystąpiły błędy po zmianie kart SIM"
     ],
-    "Inne": [
+    "Przyspieszanie gier": [
+      "Naprawiono problem z niepełnym wyświetlaniem zawartości okna podręcznego po włączeniu okna pływającego aplikacji w grach."
+    ],
+    "Bezpieczeństwo": [
+      "Poprawka: Asystent czerwonych kopert nie wyświetla okna pływającego w Drugiej przestrzeni"
+    ],
+    "Reszt": [
       "Naprawiono: Obrazy nakładały się na siebie podczas przewijania zrzutów ekranu",
       "Większe bezpieczeństwo i stabilność systemu"
     ],
@@ -204,6 +260,20 @@
     "Statusleiste, Benachrichtigungsfeld": [
       "Behoben: Benachrichtigungseinstellungen im Zweiten Space ließen sich nicht über die Benachrichtigungsleiste öffnen",
       "Behoben: Benachrichtigungsleiste ließ sich in manchen Fällen nicht öffnen"
+    ],
+    "Einstellungen": [
+      "Behoben: Wi-Fi-Netzwerke wurden in einigen Fällen nicht gefunden"
+    ],
+    "Online-Assistent": [
+      "Behoben: Warnung zur Datennutzung erschien mehrfach",
+      "Fehler behoben: Nach dem SIM-Kartenwechsel waren die Regeln zur Netzwerksteuerung fehlerhaft.",
+      "Behebt das Problem, dass die Regeln zur Netzwerksteuerung nach dem SIM-Kartenwechsel fehlerhaft waren"
+    ],
+    "Spielbeschleunigung": [
+      "Problem behoben, bei dem Pop-up-Inhalte nach Aktivierung des schwebenden App-Fensters in Spielen nicht vollständig angezeigt wurden."
+    ],
+    "Sicherheit": [
+      "Behoben: Red Packet Assistant zeigt kein schwebendes Fenster im Second Space an"
     ],
     "Sonstiges": [
       "Behoben: Bilder überlappten sich bei scrollenden Screenshots",
@@ -228,9 +298,15 @@
     "Paramètres": [
       "Réparé: Impossible de trouver les réseaux Wi-Fi dans certains cas"
     ],
-    "Utilisation des données": [
+    "Assistant en ligne": [
       "Réparé: L'avertissement concernant l'utilisation des données est apparu plusieurs fois",
       "Réparé: Des erreurs se sont produites après le basculement des cartes SIM"
+    ],
+    "Booster de vitesse de jeu": [
+      "Correction du problème d’affichage incomplet du contenu des fenêtres contextuelles après l’activation de la fenêtre flottante d’application dans les jeux."
+    ],
+    "Sécurité": [
+      "Correction : L'assistant de paquets rouges n'affiche pas de fenêtre flottante dans le Second Space"
     ],
     "Autre": [
       "Réparé: Les images se sont superposées dans le défilement des captures d'écran",
@@ -250,9 +326,15 @@
     "Impostazioni": [
       "Risolto: Impossibile trovare le reti Wi-Fi in alcuni casi"
     ],
-    "Utilizzo dei dati": [
+    "Assistente online": [
       "Risolto: L'avviso sull'utilizzo dei dati appariva più volte",
       "Risolto: Si verificavano errori cambiando scheda SIM"
+    ],
+    "Turbo Videogiochi": [
+      "Risolto il problema della visualizzazione incompleta del contenuto dei popup dopo l'attivazione della finestra flottante dell'app nei giochi."
+    ],
+    "Sicurezza": [
+      "Corretto: L'assistente pacchetti rossi non mostra la finestra flottante nello Spazio secondario"
     ],
     "Altro": [
       "Risolto: Le immagini erano sovrapposte negli screenshot a scorrimento",
@@ -273,12 +355,18 @@
       "Reparado: No se podía abrir los ajustes de notificaciones en la Barra de notificaciones en el Segundo espacio",
       "Reparado: En algunos casos no se podía abrir la Barra de notificaciones"
     ],
-    "Ajustes": [
+    "Configuración": [
       "Reparado: En algunos casos no se podía encontrar redes Wi-Fi"
     ],
-    "Uso de datos": [
+    "Asistente de red": [
       "Reparado: El aviso de uso de datos aparecía varias veces",
       "Reparado: Se producían errores después de cambiar de tarjeta SIM"
+    ],
+    "Acelerador de juegos": [
+      "Se corrigió el problema por el que el contenido de las ventanas emergentes no se mostraba por completo tras activar la ventana flotante de la aplicación en juegos."
+    ],
+    "Seguridad": [
+      "Corrección: El asistente de sobres rojos no muestra la ventana flotante en el Segundo espacio"
     ],
     "Otros": [
       "Reparado: Imágenes superpuestas en las capturas de pantalla desplazables",
@@ -287,6 +375,9 @@
     "Barra de estado, Barra de notificaciones": [
       "Reparado: No se podía abrir los ajustes de notificaciones en la Barra de notificaciones en el Segundo espacio",
       "Reparado: En algunos casos no se podía abrir la Barra de notificaciones"
+    ],
+    "Ajustes": [
+      "Reparado: En algunos casos no se podía encontrar redes Wi-Fi"
     ]
   },
   "logs_pt": {
@@ -302,9 +393,15 @@
     "Configurações": [
       "Correção: Não era possível encontrar redes Wi-Fi em alguns casos"
     ],
-    "Uso de dados": [
+    "Assistente de Rede": [
       "Correção: O alerta de uso de dados aparecia várias vezes",
       "Correção: Ocorrência de erros ao trocar de cartões SIM"
+    ],
+    "Acelerador de jogos": [
+      "Corrigido o problema em que o conteúdo das janelas pop-up não era exibido por completo após ativar a janela flutuante do aplicativo em jogos."
+    ],
+    "Segurança": [
+      "Correção: O assistente de envelopes vermelhos não exibe a janela flutuante no Segundo espaço"
     ],
     "Outros": [
       "Correção: Imagens em capturas de tela estendidas eram sobrepostas",
@@ -328,9 +425,15 @@
     "Ayarlar": [
       "Onarım: Bazı durumlarda Wi-Fi ağları bulunamadı"
     ],
-    "Veri kullanımı": [
+    "Ağ Asistanı": [
       "Onarım: Veri kullanımı uyarısı birçok kez göründü",
       "Onarım: SIM kartları değiştirirken hata oluştu"
+    ],
+    "Oyun hız artırıcı": [
+      "Oyunlarda uygulama kayan penceresini etkinleştirdikten sonra açılır pencere içeriğinin tam olarak görüntülenmemesi sorunu giderildi."
+    ],
+    "Güvenlik": [
+      "Düzeltme: Kırmızı Paket Asistanı, İkinci Alanda yüzen pencereyi göstermiyor"
     ],
     "Diğer": [
       "Onarım: Kaydırılan ekran görüntülerinde üst üste binen resimler",
@@ -351,10 +454,19 @@
       "Perbaikan: Tidak dapat membuka setelan notifikasi di Layar notifikasi pada Ruang kedua",
       "Perbaikan: Tidak dapat membuka Layar notifikasi di beberapa kasus"
     ],
-    "Penggunaan data": [
+    "Pengaturan": [
+      "Perbaikan: Jaringan Wi-Fi tidak ditemukan dalam beberapa kasus"
+    ],
+    "Pembantu Jaringan": [
       "Perbaikan: Peringatan penggunaan data muncul berulang kali",
       "Perbaikan: Ada kesalahan terjadi saat menukar kartu SIM",
       "Memperbaiki masalah aturan kontrol jaringan yang tidak normal setelah mengganti kartu SIM"
+    ],
+    "Peningkat kecepatan permainan": [
+      "Memperbaiki masalah konten pop-up tidak ditampilkan sepenuhnya setelah mengaktifkan jendela mengambang aplikasi di game."
+    ],
+    "Keamanan": [
+      "Perbaikan: Asisten Angpao tidak menampilkan jendela melayang di Ruang Kedua"
     ],
     "Lainnya": [
       "Perbaikan: Gambar tumpang tindih di screenshot bergulir",
@@ -363,6 +475,9 @@
     "Bar status, Layar notiifikasi": [
       "Perbaikan: Tidak dapat membuka setelan notifikasi di Layar notifikasi pada Ruang kedua",
       "Perbaikan: Tidak dapat membuka Layar notifikasi di beberapa kasus"
+    ],
+    "Setelan": [
+      "Perbaikan: Jaringan Wi-Fi tidak ditemukan dalam beberapa kasus"
     ]
   },
   "logs_vi": {
@@ -371,8 +486,23 @@
       "Phiên bản ổn định MIUI dựa trên nền tảng Android 10",
       "Sửa: Ảnh bị chồng khi chụp ảnh màn hình kéo dài"
     ],
+    "Thanh trạng thái, thanh thông báo": [
+      "Fix: Couldn't open notification settings in the Notification shade in Second space",
+      "Fix: Couldn't open the Notification shade in some cases"
+    ],
     "Cài đặt": [
       "Sửa: Không tìm thấy mạng Wi-Fi trong một số trường hợp"
+    ],
+    "Trợ lý mạng": [
+      "Sửa: Cảnh báo sử dụng dữ liệu xuất hiện nhiều lần",
+      "Đã sửa lỗi quy tắc kiểm soát mạng bất thường sau khi đổi SIM.",
+      "Sửa lỗi quy tắc kiểm soát mạng bất thường sau khi đổi thẻ SIM"
+    ],
+    "Tăng tốc trò chơi": [
+      "Đã khắc phục sự cố nội dung cửa sổ bật lên không hiển thị đầy đủ sau khi bật cửa sổ nổi ứng dụng trong trò chơi."
+    ],
+    "Trung tâm An ninh": [
+      "Đã sửa: Trợ lý lì xì không hiển thị cửa sổ nổi trong Không gian thứ hai"
     ],
     "Khác": [
       "Fix: Images overlapped in scrolling screenshots",
@@ -390,8 +520,23 @@
       "MIUI เวอร์ชั่นเสถียรบน Android 10",
       "แก้ไข: ภาพซ้อนทับในการเลื่อนการบันทึกหน้าจอ"
     ],
+    "แถบสถานะ, แผงการแจ้งเตือน": [
+      "Fix: Couldn't open notification settings in the Notification shade in Second space",
+      "Fix: Couldn't open the Notification shade in some cases"
+    ],
     "การตั้งค่า": [
       "แก้ไข: ไม่พบเครือข่าย Wi-Fi ในบางกรณี"
+    ],
+    "ผู้ช่วยออนไลน์": [
+      "แก้ไข: คำเตือนการใช้ข้อมูลปรากฏหลายครั้ง",
+      "แก้ไขปัญหากฎการควบคุมเครือข่ายผิดปกติหลังจากสลับซิมการ์ด",
+      "แก้ไขปัญหากฎควบคุมเครือข่ายทำงานผิดปกติหลังสลับซิมการ์ด"
+    ],
+    "ตัวเร่งความเร็วเกม": [
+      "แก้ไขปัญหาการแสดงเนื้อหาป๊อปอัปไม่ครบถ้วนหลังจากเปิดหน้าต่างลอยของแอปในเกม"
+    ],
+    "ความปลอดภัย": [
+      "แก้ไข: ผู้ช่วยอั่งเปาไม่แสดงหน้าต่างลอยในพื้นที่ที่สอง"
     ],
     "อื่นๆ": [
       "Fix: Images overlapped in scrolling screenshots",
@@ -416,12 +561,18 @@
     "الإعدادات": [
       ":الإصلاح لا يمكن العثور على شبكة Wi-Fi في بعض الأحيان."
     ],
-    "استخدام البيانات": [
+    "مساعد الإنترنت": [
       ":الإصلاح ظهور تحذير استخدام البيانات عدة مرات",
       "الإصلاح حدوث أخطاء بعد تبديل بطاقات SIM",
       ":الإصلاح حدوث أخطاء بعد تبديل بطاقات SIM"
     ],
-    "أخرى": [
+    "تسريع الألعاب": [
+      "تم إصلاح مشكلة عدم عرض محتوى النافذة المنبثقة بالكامل بعد تمكين النافذة العائمة للتطبيق في الألعاب."
+    ],
+    "الأمان": [
+      "إصلاح: مساعد الحزم الحمراء لا يعرض النافذة العائمة في المساحة الثانية"
+    ],
+    "آخرين": [
       "إصلاح تداخل الصورفي لقطات الشاشة قابلة للتمرير",
       ":الإصلاح تداخل الصور في لقطات الشاشة القابلة للتمرير",
       "تحسين أمن واستقرار النظام"
@@ -440,6 +591,20 @@
     "स्टेटस बार, सूचना शेड": [
       "Fix: Couldn't open notification settings in the Notification shade in Second space",
       "Fix: Couldn't open the Notification shade in some cases"
+    ],
+    "सेटिंग्स": [
+      "ठीक किया गया: कुछ स्थितियों में Wi-Fi नेटवर्क नहीं मिले"
+    ],
+    "वर्चुअल असिस्टेंट": [
+      "ठीक करें: डेटा उपयोग चेतावनी कई बार दिखाई दी",
+      "SIM कार्ड बदलने के बाद नेटवर्क नियंत्रण नियमों के असामान्य होने की समस्या ठीक की गई।",
+      "SIM कार्ड बदलने के बाद नेटवर्क नियंत्रण नियमों में गड़बड़ी की समस्या ठीक की गई"
+    ],
+    "गेम गति बूस्टर": [
+      "गेम में ऐप फ़्लोटिंग विंडो सक्षम करने के बाद पॉपअप सामग्री पूरी तरह से प्रदर्शित न होने की समस्या ठीक की गई।"
+    ],
+    "सुरक्षा": [
+      "ठीक किया गया: रेड पैकेट सहायक दूसरे स्थान में फ़्लोटिंग विंडो नहीं दिखाता है"
     ],
     "अन्य": [
       "Fix: Images overlapped in scrolling screenshots",
@@ -460,9 +625,20 @@
       "Fix: Couldn't open notification settings in the Notification shade in Second space",
       "Fix: Couldn't open the Notification shade in some cases"
     ],
+    "تەڭشەك": [
+      "ئوڭشالدى: بەزى ئەھۋاللاردا Wi-Fi تورى تېپىلمىدى"
+    ],
+    "تور ياردەمچىسى": [
+      "Fix: Data usage warning appeared multiple times",
+      "SIM كارتىنى ئالماشتۇرغاندىن كېيىن تورغا ئۇلىنىش كونترول قائىدىسىدە كۆرۈلگەن مەسىلىنى تۈزىتىش",
+      "ئوڭشالدى: SIM كارتا ئالماشتۇرۇلغاندىن كېيىن تورغا چىقىش كونتروللۇق قائىدىلىرىدە كۆرۈلگەن نورمالسىزلىق مەسىلىسى"
+    ],
     "باشقىلىرى": [
       "Fix: Images overlapped in scrolling screenshots",
       "Improved system security and stability"
+    ],
+    "Settings": [
+      "ئوڭشالدى: بەزى ئەھۋاللاردا Wi-Fi تورى تېپىلمىدى"
     ]
   },
   "logs_bo": {

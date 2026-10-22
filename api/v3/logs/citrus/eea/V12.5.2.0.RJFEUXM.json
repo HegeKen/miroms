@@ -89,7 +89,10 @@
       "Fix: Incorrect voice prompts for downloading super wallpapers in Accessibility mode",
       "Fix: Text truncation issues in super wallpapers",
       "Fix: UI elements overlapped in the super wallpaper settings",
-      "Fix: When system font size was set to large, super wallpaper descriptions overlapped during the setup process"
+      "Fix: When system font size was set to large, super wallpaper descriptions overlapped during the setup process",
+      "Fixed an issue where setting the Home screen wallpaper in Second Space caused abnormal display.",
+      "Fixed incomplete text display in Earth Super Wallpaper",
+      "Fixed the text overlap issue on the Super Wallpaper landing point selection page when using large fonts."
     ]
   },
   "logs_zh_tw": {
@@ -120,12 +123,25 @@
       "修復: 某些場景下的壁紙服務出現錯誤",
       "修復: 部分壁紙預覽頁顯示異常",
       "修復: 螢幕鎖定畫面指紋解鎖螢幕閃爍",
-      "修復: 部分場景下關閉深色模式壁紙仍為深色效果",
+      "修復 部分場景下關閉深色模式壁紙仍為深色效果",
       "修復: 退出超級省電模式後，桌面壁紙變黑",
       "修復: 無障礙模式下，超級壁紙點擊下載時播報錯誤",
       "修復: 地球超級壁紙文字顯示不完整",
-      "修復: 設定-超級壁紙卡片文案與按鈕重疊",
-      "修復: 大字體時，超級壁紙落地點選擇頁文字重疊"
+      "修復: 超級壁紙卡片文案與按鈕重疊的問題",
+      "修復: 大字體時，超級壁紙落地點選擇頁文字重疊",
+      "修復: 設定頁面超級壁紙底部導航欄顯示不清楚的問題",
+      "修復: 省電模式下, 分身空間桌面壁紙與主空間相同的問題",
+      "修復 分身空間中設定桌面壁紙異常顯示的問題",
+      "修復: 部分場景下解鎖時壁紙閃爍的問題",
+      "修復: 某些場景下的壁紙服務崩潰的問題",
+      "修復: 部分壁紙預覽頁顯示異常的問題",
+      "修復: 螢幕鎖定介面指紋解鎖螢幕閃爍的問題",
+      "修復: 部分場景下關閉深色模式壁紙仍為深色效果",
+      "修復: 退出超級省電模式後，桌面壁紙變黑的問題",
+      "修復: 無障礙模式下，超級壁紙點擊下載時播報錯誤的問題",
+      "修復 地球超級壁紙文字顯示不完整的問題",
+      "修復 大字體時，超級桌布落點選擇頁文字重疊的問題",
+      "修復: 設定-超級壁紙卡片文案與按鈕重疊"
     ]
   },
   "logs_ja": {
@@ -275,10 +291,11 @@
       "Neu: Halte eine Skizze gedrückt, um die Striche automatisch anzupassen.",
       "Neu: Eine Gestenverknüpfung ermöglicht es, überall Notizen, Aufgaben und Auszüge zu erstellen.",
       "Neu: Auszüge speichern Text, URLs und Bilder mit wenigen Tipps in Notizen.",
-      "Neu: Dynamische Layouts bringen die Typografie in Notizen auf ein neues Niveau.",
+      "Neu: Dynamisches Rasterlayout schafft schöne Textordnung und lässt unterschiedliche Schriftgrößen gleichermaßen elegant wirken.",
       "Neu: Erstellen Sie Mindmaps mit komplexen Strukturen.",
       "Neu: Neue Werkzeuge zum Kritzeln und Skizzieren.",
-      "Ganz neue Notizen."
+      "Ganz neue Notizen.",
+      "Neu: Dynamische Layouts bringen die Typografie in Notizen auf ein neues Niveau."
     ],
     "Themen": [
       "Behoben: Die Navigationsschaltflächen wurden in den Super-Wallpaper-Einstellungen nicht korrekt angezeigt.",
@@ -288,12 +305,24 @@
       "Behoben: Der Hintergrundbilddienst stürzte in einigen Fällen ab.",
       "Behebung: Einige Wallpaper-Vorschauen wurden nicht korrekt angezeigt",
       "Behebung: Der Bildschirm flackerte bei der Entsperrung per Fingerabdruck",
-      "Behoben: In einigen Fällen blieben die Hintergrundbilder dunkel, nachdem der Dunkelmodus deaktiviert wurde.",
+      "Behoben: In einigen Fällen blieben Hintergrundbilder dunkel, nachdem der Dunkelmodus deaktiviert wurde",
       "Behebung: Der Startbildschirm-Hintergrund wurde schwarz, nachdem der Ultra-Energiesparmodus deaktiviert wurde",
       "Behebung: Falsche Sprachansagen beim Herunterladen von Super-Wallpapers im Barrierefreiheitsmodus",
       "Behebung: Text wurde in Super-Wallpapers abgeschnitten",
-      "Behebung: UI-Elemente überlappten sich in den Super-Wallpaper-Einstellungen",
-      "Behebung: Bei großer Schrift überlappten sich Super-Wallpaper-Beschreibungen während der Einrichtung"
+      "Behoben: Überlappung von Text und Schaltfläche auf der Super-Wallpaper-Karte in den Einstellungen",
+      "Behebung: Bei großer Schrift überlappten sich Super-Wallpaper-Beschreibungen während der Einrichtung",
+      "Behoben: Navigationsschaltflächen wurden in den Einstellungen für Super-Hintergrundbilder nicht korrekt angezeigt.",
+      "Behoben: Fehlerhafte Anzeige beim Festlegen des Startbildschirm-Hintergrunds im Zweiten Bereich.",
+      "Behoben: In manchen Fällen flackerten die Hintergrundbilder beim Entsperren des Geräts.",
+      "Behoben: In manchen Fällen stürzten die Hintergrundbilddienste ab.",
+      "Behoben: Einige Vorschauen von Hintergrundbildern wurden nicht korrekt angezeigt.",
+      "Behoben: Der Bildschirm flackerte während der Verwendung der Fingerabdruck-Entsperrung",
+      "Behoben: In einigen Fällen blieben die Hintergrundbilder dunkel, nachdem der Dunkelmodus deaktiviert wurde.",
+      "Behoben: Nach dem Deaktivieren des Ultra-Energiesparmodus wurde der Startbildschirmhintergrund schwarz.",
+      "Behoben: Falsche Sprachansagen beim Herunterladen von Super-Hintergrundbildern im Barrierefreiheitsmodus.",
+      "Fehler behoben, bei dem Text im Earth Super Wallpaper unvollständig angezeigt wurde",
+      "Das Problem überlappender Texte auf der Auswahlseite für den Landepunkt des Super-Hintergrunds bei großer Schrift wurde behoben.",
+      "Behebung: UI-Elemente überlappten sich in den Super-Wallpaper-Einstellungen"
     ]
   },
   "logs_fr": {
@@ -539,6 +568,13 @@
   "logs_in": {
     "हाइलाइट्स": [
       "MIUI 12.5. आपका अपना."
+    ],
+    "सिस्टम": [
+      "नया 20 गुना अधिक रेंडरिंग पॉवर के साथ, अब कुछ सीमाएं हैं जो आप अपनी स्क्रीन पर देख सकते हैं.",
+      "नया कस्टम डिवाइस मॉडल एडजस्टमेंट के साथ, अपग्रेड के बाद कोई भी फ़ोन तेज़ हो जाता है.",
+      "नया इशारे अब पहले से कई तेज प्रतिक्रिया देते हैं.",
+      "ऑप्टिमाइज़ेशन MIUI हल्का, तेज और अधिक स्थिर हो गया है.",
+      "नया कंट्रोल सेंटर खोलने के लिए अपनी स्क्रीन के ऊपरी दाएं कोने से नीचे की ओर स्वाइप करें."
     ],
     "थीम्स": [
       "ठीक करें सुपर वॉलपेपर सेटिंग्स में नेविगेशन बटन सही ढंग से दिखाई नहीं दे रहे थे",

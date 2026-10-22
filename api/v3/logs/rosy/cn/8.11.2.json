@@ -1,268 +1,335 @@
 {
   "logs_zh": {
     "重要提示": [
-      "此版本暂不支持ROOT，已ROOT用户不受影响",
+      "系统性能得到了优化。",
       "修复：某些情况下出现错误"
     ],
     "锁屏、状态栏、通知栏": [
-      "优化 数字样式电池图标在充电时不显示数字的问题",
+      "已修复以下问题：在充电过程中，数字格式的电池图标无法显示电量数值。",
       "优化 电池数字样式下，数字显示在电池图标内",
-      "修复 原生通知样式不重要通知的时间不会更新的问题",
+      "修复与 Android 风格的通知系统相关的问题",
       "修复 下拉通知栏后，电池图标大小不正确的问题"
     ],
     "录音机": [
-      "修复 暂停录音后无法及时更新到状态栏的问题",
+      "修复：当录音被暂停时，通知栏中的录音状态信息不会更新。",
       "修复 在某些情况下, 无法通过小爱开始录音的问题"
     ]
   },
   "logs_en": {
     "Attention": [
-      "Optimized system performance",
+      "This version does not currently support ROOT access. Users who already have ROOT access will not be affected.",
       "Fixed: Errors occurred in some cases"
     ],
-    "Recorder": [
-      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused",
-      "Restore Couldn't start recording  using Mi AI in some cases"
-    ],
     "Lockscreen, Status Bar, Notification Bar": [
-      "Restore Issues with Android-style notifications"
+      "Optimized the issue where the numeric-style battery icon did not show numbers while charging",
+      "Under the optimized battery digital display style, the numbers are shown inside the battery icon.",
+      "Fixed the issue where the time of non-important notifications was not updated, even though the native notification style was used.",
+      "Fixed the issue where the size of the battery icon was incorrect after the dropdown notification bar was repaired."
+    ],
+    "Recorder": [
+      "Fixed the issue where the status bar was not updated promptly after stopping the recording.",
+      "Fixed the issue where, in certain cases, it was not possible to start recording using the “Little Love” feature."
     ]
   },
   "logs_zh_tw": {
     "重要提示": [
-      "優化: 系統穩定性",
+      "此版本目前不支持 ROOT 权限；已经获得 ROOT 权限的用户不会受到影响。",
       "修復: 部分場景偶現異常問題"
     ],
-    "錄音機": [
-      "修復 暫停錄音後無法即時更新到狀態欄的問題",
-      "修正 在某些情況下，無法透過小愛開始錄音的問題"
-    ],
     "解鎖畫面、狀態欄、通知欄": [
-      "修正原生通知樣式中不重要通知的時間不會更新的問題"
+      "优化数字样式电池图标的显示方式：在充电过程中，该图标不应显示任何数字（即应保持空白状态）。",
+      "在优化后的电池数字显示样式中，数字会直接显示在电池图标内部。",
+      "修复了原生通知系统中的一个问题：对于那些“不太重要”的通知（即用户可能不会主动查看的通知），其显示时间无法被正确更新的问题。",
+      "在修复下拉式通知栏的相关问题后，发现电池图标的尺寸仍然存在错误（即电池图标的显示尺寸不正确）。"
+    ],
+    "录音机": [
+      "修复了在暂停录音后，系统无法及时将录音状态更新到状态栏的问题。",
+      "修正 在某些情況下，無法透過小愛開始錄音的問題"
     ]
   },
   "logs_ja": {
     "注意": [
-      "最適化: システムの安定性",
+      "このバージョンでは現時点でROOT権限のサポートは行っていませんが、すでにROOT権限を取得しているユーザーには影響ありません。",
       "修正: エラーが発生する場合がある問題"
     ],
-    "レコーダー": [
-      "修正: 録音を一時停止した際、通知シェードの録音状態が更新されない問題",
-      "一部の状況で Xiao AI 経由で録音を開始できない問題を修正"
-    ],
     "ロック画面、ステータスバー、通知バー": [
-      "ネイティブ通知スタイルの重要でない通知の時刻が更新されない問題を修正"
+      "充電中にデジタルスタイルのバッテリーアイコンに数字が表示されない問題を最適化する",
+      "バッテリーの数値表示スタイルを最適化することで、数値がバッテリーアイコン内に表示されるようになります。",
+      "ネイティブ通知スタイルの重要でない通知の時刻が更新されない問題を修正",
+      "ドロップダウン通知バーの修正後に、バッテリーアイコンのサイズが正しく表示されない問題を解決しました。"
+    ],
+    "レコーダー": [
+      "録音を一時停止した後、ステータスバーの表示がすぐに更新されない問題を修正しました。",
+      "一部の状況下で、リコーダーを起動する際に「小愛」を使えない問題を修正しました。"
     ]
   },
   "logs_ko": {
     "주의": [
-      "최적화: 시스템 안정성",
+      "이 버전은 현재 ROOT 기능을 지원하지 않으며, 이미 ROOT 권한을 가진 사용자들에게는 아무런 영향이 없습니다.",
       "수정: 일부 상황에서 오류가 발생하는 문제"
     ],
-    "녹음기": [
-      "수정: 녹음을 일시중지했을 때 알림 창의 녹음 상태가 업데이트되지 않던 문제",
-      "일부 상황에서 Xiao AI를 통해 녹음을 시작할 수 없는 문제를 수정"
-    ],
     "잠금 화면, 상태 표시줄, 알림 표시줄": [
-      "기본 알림 스타일의 중요하지 않은 알림 시간이 업데이트되지 않는 문제 수정"
+      "충전 중에 디지털 스타일의 배터리 아이콘에 숫자가 표시되지 않는 문제를 최적화하겠습니다.",
+      "배터리 숫자 스타일을 최적화하여, 숫자가 배터리 아이콘 내부에 표시되도록 합니다.",
+      "기본 알림 스타일의 중요하지 않은 알림 시간이 업데이트되지 않는 문제 수정",
+      "드롭다운 알림 창을 수정한 후에 배터리 아이콘의 크기가 올바르게 표시되지 않는 문제가 해결되었습니다."
+    ],
+    "레코더": [
+      "녹음을 일시 중단한 후 상태 표시줄에 즉시 업데이트되지 않는 문제를 수정했습니다.",
+      "일부 경우에 ‘소애’를 통해 녹음을 시작할 수 없는 문제가 수정되었습니다."
     ]
   },
   "logs_ru": {
     "Предупреждения": [
-      "Оптимизация: Стабильность системы",
+      "Данная версия в настоящее время не поддерживает функцию ROOT; пользователи, у которых уже активирована эта функция, не пострадают.",
       "Исправлено: В некоторых случаях могли возникать ошибки"
     ],
-    "Диктофон": [
-      "Fix: Факт остановки записи не отображался в строке состояния вовремя",
-      "Исправлена проблема, из-за которой в некоторых случаях не удавалось начать запись через Xiao AI."
-    ],
     "Экран блокировки, строка состояния, шторка уведомлений": [
-      "Исправлена проблема, из-за которой время неважных уведомлений в стиле системных уведомлений не обновлялось"
+      "Необходимо устранить проблему, связанную с тем, что при зарядке иконки аккумулятора в цифровом формате не отображается соответствующее число.",
+      "При оптимизации стиля отображения информации о батарее цифры выводятся прямо внутри иконки батареи.",
+      "Исправлено недостаток: время отправки уведомлений, которые не относятся к категории важных (native notifications), не обновляется.",
+      "После исправления проблемы с несоответствием размеров иконки батареи в панели оповещений типа «падающий список» данная проблема также была устранена."
+    ],
+    "Диктофон": [
+      "Устранено недостаток, связанный с тем, что после приостановки записи информация не своевременно отображается в панели состояния.",
+      "Устранено проблему, при которой в некоторых случаях невозможно начать запись с помощью функции «Маленькая любовь»."
     ]
   },
   "logs_uk": {
     "Попередження": [
-      "Оптимізація: Стабільність системи",
+      "Ця версія поки що не підтримує функцію ROOT; користувачі, у яких вже активована ця функція, не постраждають.",
       "Виправлено: В деяких випадках могли виникати помилки"
     ],
-    "Диктофон": [
-      "Виправлено: стан запису не оновлювався в панелі сповіщень під час паузи запису",
-      "Виправлено проблему, через яку в деяких випадках не вдавалося почати запис через Xiao AI."
-    ],
     "Екран блокування, рядок стану, рядок сповіщень": [
-      "Виправлено проблему, через яку час неважливих сповіщень у стилі системних сповіщень не оновлювався"
+      "Оптимізація проблеми з невідображенням цифр на іконці акумулятора у цифровому стилі під час його заряджання.",
+      "Під час оптимізації вигляду цифр на іконці батареї, цифри відображаються прямо всередині самої іконки.",
+      "Виправлено проблему, коли стиль вбудованих сповіщень не має значення, і час сповіщення не оновлюється.",
+      "Після виправлення проблеми з несправним розміром іконки батареї у панелі сповіщень типу „падаючий список“ проблема була вирішена."
+    ],
+    "Диктофон": [
+      "Виправлено проблему, коли після призупинення запису інформація не вчасно оновлюється у панелі стану.",
+      "Виправлено проблему, коли в деяких випадках не вдавалося розпочати запис за допомогою функції „Маленька любов“."
     ]
   },
   "logs_pl": {
     "Powiadomienie": [
-      "Zoptymalizowano: Stabilność systemu",
+      "Ta wersja nie obsługuje funkcji ROOT; użytkownicy, którzy już mają dostęp do tej funkcji, nie będą podlegać żadnym negatywnym wpływom.",
       "Naprawiono: W niektórych przypadkach występowały błędy"
     ],
-    "Rejestrator": [
-      "Poprawka: stan nagrywania nie był aktualizowany na pasku powiadomień po wstrzymaniu nagrywania",
-      "Naprawiono problem z rozpoczęciem nagrywania przez Xiao AI w niektórych przypadkach."
-    ],
     "Ekran blokady, pasek stanu, pasek powiadomień": [
-      "Naprawiono problem z nieaktualizującym się czasem nieistotnych powiadomień w stylu systemowym"
+      "Problem polega na tym, że w przypadku ikon baterii z cyfrowym wyglądem podczas ładowania nie wyświetla się żadna liczba. Konieczna jest poprawka tego aspektu kodu programowego.",
+      "W przypadku optymalizacji wyglądu cyfrowego informacji o poziomie naładowania baterii, cyfry są wyświetlone wewnątrz ikony baterii.",
+      "Poprawiono problem, gdy styl powiadomień wtyczonych nie był ważny – data wysłania powiadomienia nie aktualizowała się.",
+      "Po poprawieniu problemu z nieprawidłowym rozmiarem ikony baterii w panelu powiadomień typu „rozwijający się” sprawa została rozwiązana."
+    ],
+    "Kaseta nagrywająca": [
+      "Poprawiono problem z niewłaściwym aktualizowaniem stanu w pasku stanu po przywołaniu funkcji przerywania nagrywania.",
+      "Poprawiono problem, w którym w niektórych przypadkach nie był możliwy start nagrywania za pomocą funkcji „Mała Miłość”."
     ]
   },
   "logs_de": {
     "Wichtiger Hinweis": [
-      "Optimierung: Systemstabilität",
+      "Diese Version unterstützt derzeit nicht das ROOT-Recht. Benutzer, die bereits über das ROOT-Recht verfügen, werden davon nicht betroffen sein.",
       "Behoben: In einigen Fällen sind Fehler aufgetreten"
     ],
-    "Rekorder": [
-      "Behoben: Der Aufnahmestatus wurde in der Benachrichtigungsleiste nicht aktualisiert, wenn eine Aufnahme pausiert wurde",
-      "Problem behoben, dass in manchen Fällen die Aufnahme über Xiao AI nicht gestartet werden konnte."
-    ],
     "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
-      "Problem behoben, dass die Uhrzeit unwichtiger Benachrichtigungen im Systembenachrichtigungsstil nicht aktualisiert wurde"
+      "Optimierung des Problems, dass die Ziffern auf den Batterie-Icons in digitalen Designs während des Ladevorgangs nicht angezeigt werden.",
+      "Optimierung des digitalen Displays der Batterie: Die Zahlen werden nun innerhalb des Batterieicons angezeigt.",
+      "Behebung des Problems, bei dem die Zeit von Benachrichtigungen, deren Format nicht standardmäßig ist, nicht aktualisiert wird.",
+      "Nach der Behebung des Problems mit der falschen Größe des Akkudeymbols in der Dropdown-Benachrichtigungsleiste ist das Problem nun behoben."
+    ],
+    "Tonaufnahmegerät": [
+      "Behebung des Problems, dass sich der Status nach einer Unterbrechung der Aufnahmefunktion nicht rechtzeitig in der Statusleiste aktualisiert.",
+      "Behebung des Problems, dass in einigen Fällen die Aufnahme nicht über „Xiao Ai“ gestartet werden kann."
     ]
   },
   "logs_fr": {
     "Avertissement important": [
-      "Optimisation: Stabilité du système",
+      "Cette version ne prend pas en charge l’option ROOT pour l’instant. Les utilisateurs qui ont déjà activé l’option ROOT n’en seront pas affectés.",
       "Réparé: Des erreurs se sont produites dans certains cas"
     ],
-    "Enregistreur": [
-      "Correction : l’état d’enregistrement n’était pas mis à jour dans la barre de notifications lors d’une pause",
-      "Correction du problème empêchant de démarrer un enregistrement via Xiao AI dans certains cas."
-    ],
     "Écran de verrouillage, barre d’état, barre de notifications": [
-      "Correction du problème où l’heure des notifications non importantes dans le style de notification natif ne se mettait pas à jour"
+      "Optimisation du problème : l'icône de la batterie au format numérique ne affiche pas le numéro de charge pendant le processus de chargement.",
+      "Optimisé : dans le style numérique de la batterie, le nombre est affiché à l’intérieur de l’icône de batterie",
+      "Correction du problème : lorsque le style des notifications natives n’est pas important, l’heure des notifications n’est pas mise à jour.",
+      "Problème résolu : après la mise à jour de la barre d'alertes déroulante, le problème de taille incorrecte de l'icône de la batterie a été éliminé."
+    ],
+    "Enregistreur": [
+      "Résolution du problème : l'actualisation de l'état dans la barre d'état ne se fait pas immédiatement après l'arrêt de l'enregistrement.",
+      "Résolution du problème selon lequel, dans certains cas, il n’était pas possible de démarrer l’enregistrement en utilisant la fonction « Petit Amour »."
     ]
   },
   "logs_it": {
     "Attenzione": [
-      "Ottimizzazione: Stabilità del sistema",
+      "Questa versione non supporta attualmente il livello di accesso “ROOT”; gli utenti che già possiedono tale privilegio non saranno influenzati.",
       "Risolto: In alcuni casi si verificavano errori"
     ],
-    "Registratore": [
-      "Correzione: lo stato di registrazione non veniva aggiornato nella barra delle notifiche quando una registrazione veniva messa in pausa",
-      "Risolto il problema che in alcuni casi impediva di avviare la registrazione tramite Xiao AI."
-    ],
     "Schermata di blocco, barra di stato, barra delle notifiche": [
-      "Risolto il problema per cui l'ora delle notifiche non importanti nello stile notifiche di sistema non veniva aggiornata"
+      "Ottimizzazione del problema relativo all’icona della batteria a stile digitale: i numeri non vengono visualizzati durante il processo di carica.",
+      "Ottimizzato: nello stile numerico della batteria, il numero viene visualizzato all'interno dell'icona della batteria",
+      "Risolto il problema per cui, quando lo stile delle notifiche native non è rilevante, l’orario della notifica non veniva aggiornato.",
+      "Dopo la correzione del problema relativo alla barra delle notifiche a discesa, il problema dell’errore nella dimensione dell’icona della batteria è stato risolto."
+    ],
+    "Registratore": [
+      "Risolto il problema per cui, dopo aver interrotto la registrazione, lo stato della registrazione non veniva aggiornato tempestivamente nella barra di stato.",
+      "Risolto il problema per cui, in alcune circostanze, non era possibile avviare la registrazione utilizzando il pulsante “Piccola Amore”."
     ]
   },
   "logs_es": {
     "Atención": [
-      "Optimización: Estabilidad del sistema",
+      "Esta versión no admite la función ROOT por el momento; los usuarios que ya cuentan con ella no se verán afectados.",
       "Reparado: Se producían errores en algunos casos"
     ],
-    "Grabadora": [
-      "Corrección: El estado de grabación no se actualizaba en la barra de notificaciones al pausar una grabación",
-      "Se corrige el problema por el que en algunos casos no se podía iniciar la grabación con Xiao AI."
-    ],
     "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
-      "Se corrigió el problema por el que la hora de las notificaciones no importantes en el estilo de notificación nativo no se actualizaba"
+      "Optimización del problema de que los iconos de baterías con estilo digital no muestren el número mientras se carga.",
+      "Optimizado: en el estilo numérico de la batería, el número se muestra dentro del icono de la batería",
+      "Se ha corregido el problema en el que, cuando el estilo de las notificaciones nativas no es importante, la hora de las notificaciones no se actualizaba.",
+      "Se ha corregido el problema de que, después de modificar la barra de notificaciones desplegable, el tamaño del icono de la batería no era correcto."
+    ],
+    "Grabadora": [
+      "Se ha corregido el problema de que, después de detener la grabación, no se actualiza a tiempo la información en la barra de estado.",
+      "Se ha corregido el problema por el cual, en algunos casos, no era posible iniciar la grabación a través de «Pequeña Amor»."
     ]
   },
   "logs_pt": {
     "Atenção": [
-      "Otimização: Estabilidade do sistema",
+      "Esta versão não suporta o modo ROOT por enquanto; os usuários que já têm o acesso ROOT não serão afetados.",
       "Correção: Erros ocorriam em alguns casos"
     ],
-    "Gravador": [
-      "Correção: o estado da gravação não era atualizado na barra de notificações ao pausar uma gravação",
-      "Corrigido o problema que, em alguns casos, impedia iniciar a gravação com Xiao AI."
-    ],
     "Tela de bloqueio, barra de status, barra de notificações": [
-      "Corrigido o problema em que a hora das notificações não importantes no estilo de notificação nativo não era atualizada"
+      "Otimizado o problema em que o ícone de bateria no estilo numérico não mostrava números durante o carregamento",
+      "Otimizado: no estilo numérico da bateria, o número é exibido dentro do ícone da bateria",
+      "Corrigido o problema em que a hora das notificações não importantes no estilo de notificação nativo não era atualizada",
+      "Após a correção da barra de notificações com lista suspensa, o problema do tamanho incorreto do ícone da bateria foi resolvido."
+    ],
+    "Gravador": [
+      "Corrigir o problema de não ser possível atualizar a barra de estado de forma imediata após interromper a gravação.",
+      "Corrigido o problema em que, em alguns casos, não era possível iniciar a gravação através do “Pequeno Amor”."
     ]
   },
   "logs_tr": {
     "Uyarı": [
-      "Optimizasyon: Sistem kararlılığı",
+      "Bu sürüm şu an için ROOT özelliğini desteklememektedir; zaten ROOT yetkisine sahip olan kullanıcılar bu durumdan etkilenmeyecektir.",
       "Onarım: Bazı durumlarda hatalar oluştu"
     ],
-    "Kayıt Cihazı": [
-      "Düzeltme: Kayıt duraklatıldığında kayıt durumu bildirim çubuğunda güncellenmiyordu",
-      "Bazı durumlarda Xiao AI ile kaydın başlatılamaması sorunu giderildi."
-    ],
     "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
-      "Yerel bildirim stilindeki önemsiz bildirimlerin saatinin güncellenmemesi sorunu giderildi"
+      "Şarj sırasında dijital stil pil simgelerinin üzerinde rakamların görünmemesi sorununu gidermek için optimizasyon yapılmalıdır.",
+      "Pilin dijital gösterim stilinde, rakamlar pil simgesinin içinde görüntülenir.",
+      "Orijinal bildirim stilinin önemli olmaması nedeniyle, önemsiz bildirimlerin zamanının güncellenmemesi sorununu düzelttik.",
+      "Açılır menü bildirim çubuğu düzeltildikten sonra, pil simgesinin boyutunun doğru olmaması sorunu giderildi."
+    ],
+    "Kayıt Cihazı": [
+      "Kaydı durdurduktan sonra durum çubuğunda zamanında güncelleme yapılamaması sorununu düzelttik.",
+      "Bazı durumlarda, “Küçük Aşk” aracılığıyla kayıt başlatılamama sorununu giderdik."
     ]
   },
   "logs_id": {
     "Perhatian": [
-      "Pengoptimalan: Stabilitas sistem",
+      "Versi ini belum mendukung fitur ROOT. Pengguna yang sudah memiliki akses ROOT tidak akan terpengaruh oleh hal tersebut.",
       "Perbaikan: Kesalahan terjadi dalam beberapa kasus"
     ],
-    "Perekam": [
-      "Perbaikan: Status perekaman tidak diperbarui di bilah notifikasi saat perekaman dijeda",
-      "Memperbaiki masalah tidak dapat memulai rekaman melalui Xiao AI dalam beberapa kasus."
-    ],
     "Layar kunci, bilah status, bilah notifikasi": [
-      "Memperbaiki masalah waktu notifikasi tidak penting pada gaya notifikasi bawaan yang tidak diperbarui"
+      "Mengoptimalkan masalah ikon baterai gaya angka yang tidak menampilkan angka saat mengisi daya",
+      "Dengan mengoptimalkan tampilan angka pada baterai, angka-angka tersebut akan ditampilkan di dalam ikon baterai itu sendiri.",
+      "Masalah telah diperbaiki: Tampilan notifikasi bawaan (native notification) tidak mempengaruhi proses pembaruan waktu notifikasi tersebut.",
+      "Setelah masalah pada kolom notifikasi berbentuk daftar turun (drop-down) diperbaiki, masalah terkait ukuran ikon baterai kembali teratasi."
+    ],
+    "Perekam": [
+      "Memperbaiki masalah di mana status rekaman tidak diperbarui secara tepat waktu setelah proses pemberhentian rekaman dilakukan.",
+      "Diperbaiki masalah di mana dalam beberapa kasus tidak dapat memulai rekaman menggunakan fitur “Kecil Sayang”."
     ]
   },
   "logs_vi": {
     "Chú ý": [
-      "Tối ưu: Ổn định hệ thống",
+      "Phiên bản này tạm thời không hỗ trợ chức năng ROOT; những người dùng đã thiết lập quyền ROOT sẽ không bị ảnh hưởng.",
       "Sửa: Xảy ra lỗi trong một số trường hợp"
     ],
-    "Máy ghi âm": [
-      "Đã sửa: Trạng thái ghi âm không được cập nhật kịp thời trên thanh thông báo khi tạm dừng ghi âm",
-      "Đã khắc phục sự cố không thể bắt đầu ghi âm qua Xiao AI trong một số trường hợp."
-    ],
     "Màn hình khóa, thanh trạng thái, thanh thông báo": [
-      "Đã khắc phục sự cố thời gian của thông báo không quan trọng trong kiểu thông báo gốc không được cập nhật"
+      "Tối ưu hóa vấn đề liên quan đến biểu tượng pin theo phong cách kỹ thuật số: biểu tượng này không hiển thị con số khi pin đang được sạc.",
+      "Để tối ưu hóa giao diện hiển thị thông tin về pin, các con số sẽ được hiển thị ngay bên trong biểu tượng pin.",
+      "Đã sửa lỗi: Kiểu thông báo gốc không ảnh hưởng đến việc thời điểm của thông báo không được cập nhật.",
+      "Sau khi sửa chữa thanh thông báo có thể cuộn xuống, vấn đề về kích thước biểu tượng pin không chính xác đã được khắc phục."
+    ],
+    "Máy ghi âm": [
+      "Khắc phục sự cố khi tạm dừng quá trình ghi âm không thể cập nhật kịp thời thông tin vào thanh trạng thái.",
+      "Đã sửa lỗi: Trong một số trường hợp, không thể bắt đầu quá trình ghi âm thông qua tính năng “Xiao Ai”."
     ]
   },
   "logs_th": {
     "โปรดทราบ": [
-      "การเพิ่มประสิทธิภาพ: ความเสถียรของระบบ",
+      "เวอร์ชันนี้ยังไม่รองรับการตั้งค่า ROOT ดังนั้นผู้ใช้ที่ตั้งค่า ROOT ไว้แล้วจะไม่ได้รับผลกระทบใดๆ",
       "แก้ไข: เกิดข้อผิดพลาดในบางกรณี"
     ],
-    "เครื่องบันทึกเสียง": [
-      "แก้ไข: สถานะการบันทึกเสียงไม่ได้รับการอัปเดตในแถบการแจ้งเตือนเมื่อหยุดการบันทึกชั่วคราว",
-      "แก้ไขปัญหาที่ในบางกรณีไม่สามารถเริ่มบันทึกเสียงผ่าน Xiao AI ได้"
-    ],
     "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
-      "แก้ไขปัญหาที่เวลาของการแจ้งเตือนที่ไม่สำคัญในสไตล์การแจ้งเตือนแบบเนทีฟไม่ได้รับการอัปเดต"
+      "ปรับปรุงปัญหาไอคอนแบตเตอรี่แบบตัวเลขไม่แสดงตัวเลขขณะชาร์จ",
+      "การปรับปรุงรูปแบบตัวเลขของแบตเตอรี่: ตัวเลขจะถูกแสดงภายในไอคอนแบตเตอรี่",
+      "แก้ไขปัญหาที่สไตล์การแจ้งเตือนแบบดั้งเดิมไม่สำคัญ ทำให้เวลาของการแจ้งเตือนไม่ถูกอัปเดต",
+      "หลังจากที่แก้ไขปัญหาเกี่ยวกับแถบการแจ้งเตือนแบบเลื่อนลงแล้ว ปัญหาเรื่องขนาดไอคอนแบตเตอรี่ที่ไม่ถูกต้องก็ได้รับการแก้ไขเช่นกัน"
+    ],
+    "เครื่องบันทึกเสียง": [
+      "แก้ไขปัญหาที่การหยุดบันทึกเสียงไม่สามารถอัปเดตสถานะในแถบสถานะ (status bar) ได้อย่างทันท่วงที",
+      "แก้ไขปัญหาที่ในบางกรณีไม่สามารถเริ่มบันทึกเสียงผ่าน Xiao AI ได้"
     ]
   },
   "logs_ar": {
     "تنبية": [
-      "التحسين: استقرار النظام",
+      "هذه النسخة لا تدعم خيار “ROOT” في الوقت الحالي، ولن يتأثر المستخدمون الذين قاموا بتفعيل خيار “ROOT” بهذا التغيير.",
       "الإصلاح: حدثت أخطاء في بعض الحالات"
     ],
-    "مسجل": [
-      "إصلاح: لم يتم تحديث حالة التسجيل في شريط الإشعارات عند إيقاف التسجيل مؤقتًا",
-      "تم إصلاح مشكلة عدم إمكانية بدء التسجيل عبر Xiao AI في بعض الحالات."
-    ],
     "شاشة القفل، شريط الحالة، شريط الإشعارات": [
-      "إصلاح مشكلة عدم تحديث وقت الإشعارات غير المهمة في نمط الإشعارات الأصلي"
+      "تحسين مشكلة عدم ظهور الأرقام على أيقونة بطارية النمط الرقمي أثناء عملية الشحن.",
+      "تم تحسين عرض الأرقام في واجهة بطارية الجهاز، حيث تظهر الأرقام داخل رمز البطارية نفسه.",
+      "تم إصلاح المشكلة التي كانت تتمثل في عدم تحديث وقت الإشعارات غير المهمة، حيث أن أسلوب عرض الإشعارات الأصلي لم يكن مهمًا في هذا السياق.",
+      "بعد إصلاح مشكلة شريط الإشعارات القابل للسحب، تم حل مشكلة عدم صحة حجم أيقونة البطارية."
+    ],
+    "جهاز التسجيل": [
+      "تم إصلاح المشكلة التي تمنع تحديث حالة الجهاز بشكل فوري بعد توقف عملية التسجيل.",
+      "تم إصلاح المشكلة التي كانت تمنع في بعض الحالات بدء عملية التسجيل باستخدام أداة “Little Love”."
     ]
   },
   "logs_in": {
     "ध्यान दें": [
-      "ऑप्टिमाइज़ेशन सिस्टम की स्थिरता",
+      "यह संस्करण फिलहाल “ROOT” सुविधा का समर्थन नहीं करता है; इसलिए पहले से ही “ROOT” अधिकार प्राप्त उपयोगकर्ताओं पर कोई प्रभाव नहीं पड़ेगा।",
       "ठीक करें कुछ मामलों में त्रुटियां आ रही थीं"
     ],
-    "रिकॉर्डर": [
-      "समस्या ठीक की गई: रिकॉर्डिंग पॉज़ करने पर नोटिफ़िकेशन शेड में स्थिति तुरंत अपडेट नहीं होती थी",
-      "कुछ स्थितियों में Xiao AI के ज़रिए रिकॉर्डिंग शुरू न कर पाने की समस्या ठीक की गई।"
-    ],
     "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
-      "मूल नोटिफिकेशन शैली में महत्वहीन सूचनाओं का समय अपडेट न होने की समस्या ठीक की गई"
+      "डिजिटल स्टाइल वाले बैटरी आइकन में एक समस्या है – जब बैटरी चार्ज हो रही होती है, तो उस पर कोई अंक (नंबर) नहीं दिखाया जाता। हम इस समस्या को ठीक करने की कोशिश करेंगे।",
+      "बैटरी आइकन के अंदर, नंबरों को प्रदर्शित करने हेतु स्टाइल को अनुकूलित (ऑप्टिमाइज) किया गया है।",
+      "समस्या को ठीक कर दिया गया है: मूल नोटिफिकेशन स्टाइल (native notification style) का कोई महत्व नहीं है, एवं नोटिफिकेशन का समय अपडेट नहीं होता।",
+      "ड्रॉप-डाउन नोटिफिकेशन बार को ठीक करने के बाद, बैटरी आइकन का आकार सही नहीं होने की समस्या दूर हो गई।"
+    ],
+    "रिकॉर्डर": [
+      "वह समस्या दूर की गई है जिसके कारण रिकॉर्डिंग रोकने के बाद स्टेट बार (Status Bar) में समय पर अपडेट नहीं हो पाता था।",
+      "कुछ मामलों में, छोटे “प्यार” (small love) आइकन का उपयोग करके रिकॉर्डिंग शुरू नहीं कर पाने की समस्या को ठीक कर दिया गया है."
     ]
   },
   "logs_ug": {
     "مۇھىم ئەسكەرتىش": [
-      "سىستېما مۇقىملىقىنى ئەلالاشتۇرۇش",
+      "بۇ نەشىردە يېقىندا ROOT قوللاش ئىمكانىيىتى قوشۇلمىدى ، ئاللىقاچان ROOT قىلىنغان ئابونېنتلارغا ھېچقانداق تەسىر يېتمەيدۇ.",
       "Fixed: Errors occurred in some cases"
     ],
-    "ئاۋاز ئالغۇ": [
-      "ئۈن ئېلىش توختىتىلغاندىن كېيىن ئۇقتۇرۇش تاختىسىدا ھالەت ۋاقتىدا يېڭىلانماسلىق مەسىلىسى تۈزىتىلدى",
+    "قۇلۇپ ئېكرانى، ھالەت بالدىقى، ئۇقتۇرۇش بالدىقى": [
+      "رەقەملىك شەكىلدىك باتارېيە ئىكونىنىڭ توك قاچىلاش جەريانىدا رەقەم نامايان قىلماسلىق مەسىلىسىنى ياخشىلاش",
+      "باتارېيەنىڭ سانلىق ئىپادىلەش شەكلىنى ئەلا لاشتۇرۇش ئارقىلىق ، سانلار باتارېيە ئىكونىسىنىڭ ئىچىدە كۆرسىتىلىدۇ.",
+      "ئەسلىدىكى ئۇقتۇرۇش شەكلى مۇھىم ئەمەس ، ئۇقتۇرۇشنىڭ ۋاقتى ئۆزگەرمەيدىغان مەسىلىنى تۈزەتتىم.",
+      "كۆتۈرۈلگەن ئۇقتۇرۇش ستونى ئەسلىگە كەلتۈرۈلگەندىن كېيىن ، باتارېيە ئىكونىنىڭ چوڭلۇقى توغرا بولماسلىق مەسىلىسى حل قىلىندى."
+    ],
+    "ئۈن خاتىرىلەش ماشىنىسى": [
+      "ئۈن ئالماشتۇرۇشنى توختاتقاندىن كېيىن ، ھالەت سترېكچىسىگە (status bar) ئۆزۋاقتىدا يېڭىلاش مۇمكىن بولماسلىق مەسىلىسىنى تۈزى دۇق.",
       "بەزى ئەھۋاللاردا Xiao AI ئارقىلىق خاتىرىلەشنى باشلاشقا بولماسلىق مەسىلىسى تۈزىتىلدى."
     ]
   },
   "logs_bo": {
     "གལ་ཆེའི་དྲན་སྐུལ": [
-      "ཐོན་རིམ་འདིས་གནས་སྐབས་སུ་ ROOT ལ་རྒྱབ་སྐྱོར་མི་བྱེད་པ་དང་། ROOT བྱས་ཟིན་པའི་སྤྱོད་མཁན་ལ་ཤུགས་རྐྱེན་མི་ཐེབས།",
+      "དུས་นีར་པརྒྱུད་རིམ་འདིས ROOT を 지원하지 않습니다. 이미 ROOT ಅधिकার་ཡོད་པའི་སྤྱོད་མཁན་གྱིས་ཤུགས་རྐྱེན་ཐེབས་མི་སྲིད།",
       "Fix: Errors occurred in some cases"
+    ],
+    "སྒྲ་འཇུག་ཆས": [
+      "ཡིག་སྒྲོན་གྱི་རྣམ་པར་བཟོ་བཅོས་བརྒྱབ་རྗེས་སྒྲ་ཕབ་མཚམས་འཇོག་བྱས་ན་དུས་ཐོག་ཏུ་གསར་སྒྱུར་བྱེད་མི་ཐུབ་པའི་གནད་དོན་ཐག་གཅོད།",
+      "ཆ་རྐྱེན་ཁ་ཤས་འོག “ཞའོ་ཨའེ” (Xiao Ai)་བརྒྱུད་ནས་ཟིན་བྲིས་བླངས་མི་ཐུབ་པའི་གནད་དོན་ཐག་གཅོད་བྱས།"
+    ],
+    "Lockscreen, status bar, Notification shade": [
+      "ཐོག་མའི་བརྡ་སྦྱོར་གྱི་རྣམ་པ་ཉམས་གསོ་བྱེད་པ།གལ་ཆེན་མིན་པའི་བརྡ་སྦྱོར་གྱི་དུས་ཚོད་གསར་སྒྲིག་མི་ཐུབ་པའི་གནད་དོན།"
     ]
   }
 }

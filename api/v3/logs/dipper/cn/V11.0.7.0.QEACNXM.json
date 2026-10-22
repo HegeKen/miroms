@@ -3,7 +3,7 @@
     "状态栏、通知栏": [
       "修复 手机分身中，无法通过通知栏进入应用通知设置页的问题"
     ],
-    "网络助手": [
+    "数据使用情况": [
       "修复 流量超额弹窗重复出现的问题",
       "修复 交换SIM卡后，联网控制规则异常的问题"
     ],
@@ -25,9 +25,12 @@
     "status bar, Notification shade": [
       "Fix: Couldn't open notification settings in the Notification shade in Second space"
     ],
-    "Data Usage": [
+    "Online Assistant": [
       "Fix: Data usage warning appeared multiple times",
       "Fix: Errors occurred after switching SIM cards"
+    ],
+    "Game speed booster": [
+      "Fixed an issue where popup content was not fully displayed after enabling app floating windows in games"
     ],
     "Security": [
       "Fix: Red envelope assistant didn't appear in Second space"
@@ -53,6 +56,9 @@
       "修復 交換SIM卡後，連網控制規則異常的問題",
       "修復: 交換SIM卡後，連網控制規則異常的問題"
     ],
+    "遊戲加速": [
+      "修復遊戲中開啟應用程式懸浮窗後，彈窗內容顯示不全的問題"
+    ],
     "安全中心": [
       "修復: 紅包助手在分身空間中不顯示懸浮窗的問題"
     ],
@@ -66,12 +72,24 @@
     ]
   },
   "logs_ja": {
+    "ステータスバー、通知シェード": [
+      "修正: セカンドスペースで通知シェードから通知設定を開けない問題",
+      "修正: セカンド・スペースの通知シェードで通知設定を開けない問題"
+    ],
+    "ネットワークアシスタント": [
+      "修正: データ使用量の警告が複数回表示される問題",
+      "SIMカードを交換した後、ネットワーク制御ルールに異常が発生する問題を修正しました。",
+      "SIMカードを交換した後、通信制御ルールが異常になる問題を修正しました"
+    ],
+    "ゲーム加速": [
+      "ゲーム内でアプリのフローティングウィンドウを有効にした後、ポップアップの内容が完全に表示されない問題を修正しました"
+    ],
+    "セキュリティ": [
+      "修正: Red envelope assistant がセカンドスペースでフローティングウィンドウを表示しない問題"
+    ],
     "その他": [
       "修正: スクロールスクリーンショットで画像が重なる問題",
       "システムのセキュリティと安定性の向上"
-    ],
-    "ステータスバー、通知シェード": [
-      "修正: セカンド・スペースの通知シェードで通知設定を開けない問題"
     ],
     "システム": [
       "修正: スクロールスクリーンショットで画像が重なる問題"
@@ -81,9 +99,15 @@
     "상태 바, 알림 바": [
       "수정: 보조 공간의 알림 바에서 알림 설정을 열 수 없는 문제"
     ],
-    "데이터 사용량": [
+    "네트워크 어시스턴트": [
       "수정: 데이터 사용량 경고가 중복해서 출현하는 현상",
       "수정: SIM 카드 전환 후의 오류 발생 문제"
+    ],
+    "게임 가속": [
+      "게임에서 앱 플로팅 창을 활성화한 후 팝업 내용이 완전히 표시되지 않는 문제를 수정했습니다"
+    ],
+    "보안": [
+      "수정: 홍바오 도우미가 세컨드 스페이스에서 플로팅 창을 표시하지 않는 문제"
     ],
     "기타": [
       "수정: 스크롤 스크린샷의 이미지가 겹쳐지는 문제",
@@ -97,9 +121,15 @@
     "строка состояния, шторка уведомлений": [
       "Исправлено: Исправлена ошибка, из-за которой не удавалось открыть настройки уведомлений через шторку уведомлений во втором пространстве"
     ],
-    "Трафик": [
+    "Интернет-ассистент": [
       "Исправлено: Предупреждение об использовании данных могло появляться несколько раз",
       "Исправлено: Ошибки, связанные со сменой SIM-карт"
+    ],
+    "Ускорение приложений": [
+      "Исправлена проблема, из-за которой содержимое всплывающего окна отображалось не полностью после включения плавающего окна приложения в играх."
+    ],
+    "Безопасность": [
+      "Исправлено: помощник красных конвертов не показывает плавающее окно во Втором пространстве."
     ],
     "Другое": [
       "Исправлено: Изображения перекрывались на снимках экрана с прокруткой",
@@ -113,10 +143,19 @@
     ]
   },
   "logs_uk": {
-    "Передача даних": [
+    "Рядок стану, панель сповіщень": [
+      "Fix: Couldn't open notification settings in the Notification shade in Second space"
+    ],
+    "Інтернет-асистент": [
       "Виправлено: Попередження про використання даних могло з'являтися декілька разів",
       "Виправлено проблему з неправильними правилами керування мережею після заміни SIM-картки.",
       "Виправлено: Помилка, які пов'язані із перемиканням SIM-карт"
+    ],
+    "Прискорення ігор": [
+      "Виправлено проблему, через яку вміст спливного вікна відображався не повністю після ввімкнення плаваючого вікна застосунку в іграх."
+    ],
+    "Безпека": [
+      "Виправлено: помічник червоних конвертів не показує плаваюче вікно у Другому просторі."
     ],
     "Інше": [
       "Fix: Images overlapped in scrolling screenshots",
@@ -134,11 +173,17 @@
     "pasek powiadomień,panel powiadomień": [
       "Naprawiono: Nie można było otworzyć ustawień powiadomień w Pasku powiadomień drugiej przestrzeni"
     ],
-    "Użycie danych": [
+    "Asystent online": [
       "Naprawiono: Ostrzeżenie o zużyciu danych pojawiło się wiele razy",
       "Naprawiono: Wystąpiły błędy po zmianie kart SIM"
     ],
-    "Inne": [
+    "Przyspieszanie gier": [
+      "Naprawiono problem z niepełnym wyświetlaniem zawartości okna podręcznego po włączeniu okna pływającego aplikacji w grach."
+    ],
+    "Bezpieczeństwo": [
+      "Naprawiono: asystent czerwonych kopert nie wyświetla okna pływającego w Drugiej przestrzeni."
+    ],
+    "Reszt": [
       "Naprawiono: Obrazy nakładały się na siebie podczas przewijania zrzutów ekranu",
       "Większe bezpieczeństwo i stabilność systemu"
     ],
@@ -152,6 +197,17 @@
   "logs_de": {
     "Statusleiste, Benachrichtigungsfeld": [
       "Behoben: Benachrichtigungseinstellungen im Zweiten Space ließen sich nicht über die Benachrichtigungsleiste öffnen"
+    ],
+    "Online-Assistent": [
+      "Behoben: Warnung zur Datennutzung erschien mehrfach",
+      "Fehler behoben: Nach dem SIM-Kartenwechsel waren die Regeln zur Netzwerksteuerung fehlerhaft.",
+      "Behebt das Problem, dass die Regeln zur Netzwerksteuerung nach dem SIM-Kartenwechsel fehlerhaft waren"
+    ],
+    "Spielbeschleunigung": [
+      "Problem behoben, bei dem Pop-up-Inhalte nach Aktivierung des schwebenden App-Fensters in Spielen nicht vollständig angezeigt wurden."
+    ],
+    "Sicherheit": [
+      "Behoben: Roter-Umschlag-Assistent zeigt im Zweiten Bereich kein schwebendes Fenster an."
     ],
     "Sonstiges": [
       "Behoben: Bilder überlappten sich bei scrollenden Screenshots",
@@ -169,9 +225,15 @@
     "Barre d'état, Panneau de notification": [
       "Réparé: Impossible d'ouvrir les paramètres dans le panneau de notification du Second espace"
     ],
-    "Utilisation des données": [
+    "Assistant en ligne": [
       "Réparé: L'avertissement concernant l'utilisation des données est apparu plusieurs fois",
       "Réparé: Des erreurs se sont produites après le basculement des cartes SIM"
+    ],
+    "Booster de vitesse de jeu": [
+      "Correction du problème d’affichage incomplet du contenu des fenêtres contextuelles après l’activation de la fenêtre flottante d’application dans les jeux."
+    ],
+    "Sécurité": [
+      "Correction : l’assistant d’enveloppe rouge n’affiche pas de fenêtre flottante dans le Second espace."
     ],
     "Autre": [
       "Réparé: Les images se sont superposées dans le défilement des captures d'écran",
@@ -185,9 +247,15 @@
     "barra di stato, area delle notifiche": [
       "Risolto: Impossibile aprire le impostazioni di notifica nell'area delle notifiche in Secondo spazio"
     ],
-    "Utilizzo dei dati": [
+    "Assistente online": [
       "Risolto: L'avviso sull'utilizzo dei dati appariva più volte",
       "Risolto: Si verificavano errori cambiando scheda SIM"
+    ],
+    "Turbo Videogiochi": [
+      "Risolto il problema della visualizzazione incompleta del contenuto dei popup dopo l'attivazione della finestra flottante dell'app nei giochi."
+    ],
+    "Sicurezza": [
+      "Corretto: l’assistente busta rossa non mostra la finestra flottante nel Secondo spazio."
     ],
     "Altro": [
       "Risolto: Le immagini erano sovrapposte negli screenshot a scorrimento",
@@ -204,9 +272,15 @@
     "barra de estado, barra de notificaciones": [
       "Reparado: No se podía abrir los ajustes de notificaciones en la Barra de notificaciones en el Segundo espacio"
     ],
-    "Uso de datos": [
+    "Asistente de red": [
       "Reparado: El aviso de uso de datos aparecía varias veces",
       "Reparado: Se producían errores después de cambiar de tarjeta SIM"
+    ],
+    "Acelerador de juegos": [
+      "Se corrigió el problema por el que el contenido de las ventanas emergentes no se mostraba por completo tras activar la ventana flotante de la aplicación en juegos."
+    ],
+    "Seguridad": [
+      "Corregido: el asistente de sobres rojos no muestra la ventana flotante en el Segundo espacio."
     ],
     "Otros": [
       "Reparado: Imágenes superpuestas en las capturas de pantalla desplazables",
@@ -223,9 +297,15 @@
     "Barra de status e Área de notificações": [
       "Correção: Não era possível abrir as configurações de notificações na Área de notificações do Segundo Espaço"
     ],
-    "Uso de dados": [
+    "Assistente de Rede": [
       "Correção: O alerta de uso de dados aparecia várias vezes",
       "Correção: Ocorrência de erros ao trocar de cartões SIM"
+    ],
+    "Acelerador de jogos": [
+      "Corrigido o problema em que o conteúdo das janelas pop-up não era exibido por completo após ativar a janela flutuante do aplicativo em jogos."
+    ],
+    "Segurança": [
+      "Corrigido: o assistente de envelopes vermelhos não mostra a janela flutuante no Segundo espaço."
     ],
     "Outros": [
       "Correção: Imagens em capturas de tela estendidas eram sobrepostas",
@@ -242,9 +322,15 @@
     "durum çubuğu, Bildirim çubuğu": [
       "Onarım: Bildirim çubuğunda, ikinci bir alanda bildirim ayarları açılamadı"
     ],
-    "Veri kullanımı": [
+    "Ağ Asistanı": [
       "Onarım: Veri kullanımı uyarısı birçok kez göründü",
       "Onarım: SIM kartları değiştirirken hata oluştu"
+    ],
+    "Oyun hız artırıcı": [
+      "Oyunlarda uygulama kayan penceresini etkinleştirdikten sonra açılır pencere içeriğinin tam olarak görüntülenmemesi sorunu giderildi."
+    ],
+    "Güvenlik": [
+      "Düzeltildi: Kırmızı zarf asistanı İkinci alanda yüzen pencereyi göstermiyor."
     ],
     "Diğer": [
       "Onarım: Kaydırılan ekran görüntülerinde üst üste binen resimler",
@@ -261,10 +347,16 @@
     "bar status, layar notifikasi": [
       "Perbaikan: Tidak dapat membuka setelan notifikasi di Layar notifikasi pada Ruang kedua"
     ],
-    "Penggunaan data": [
+    "Pembantu Jaringan": [
       "Perbaikan: Peringatan penggunaan data muncul berulang kali",
       "Perbaikan: Ada kesalahan terjadi saat menukar kartu SIM",
       "Memperbaiki masalah aturan kontrol jaringan yang tidak normal setelah mengganti kartu SIM"
+    ],
+    "Peningkat kecepatan permainan": [
+      "Memperbaiki masalah konten pop-up tidak ditampilkan sepenuhnya setelah mengaktifkan jendela mengambang aplikasi di game."
+    ],
+    "Keamanan": [
+      "Perbaikan: Asisten amplop merah tidak menampilkan jendela mengambang di Ruang kedua."
     ],
     "Lainnya": [
       "Perbaikan: Gambar tumpang tindih di screenshot bergulir",
@@ -278,6 +370,20 @@
     ]
   },
   "logs_vi": {
+    "Thanh trạng thái, thanh thông báo": [
+      "Fix: Couldn't open notification settings in the Notification shade in Second space"
+    ],
+    "Trợ lý mạng": [
+      "Sửa: Cảnh báo sử dụng dữ liệu xuất hiện nhiều lần",
+      "Đã sửa lỗi quy tắc kiểm soát mạng bất thường sau khi đổi SIM.",
+      "Sửa lỗi quy tắc kiểm soát mạng bất thường sau khi đổi thẻ SIM"
+    ],
+    "Tăng tốc trò chơi": [
+      "Đã khắc phục sự cố nội dung cửa sổ bật lên không hiển thị đầy đủ sau khi bật cửa sổ nổi ứng dụng trong trò chơi."
+    ],
+    "Trung tâm An ninh": [
+      "Đã sửa: Trợ lý phong bao đỏ không hiển thị cửa sổ nổi trong Không gian thứ hai."
+    ],
     "Khác": [
       "Fix: Images overlapped in scrolling screenshots",
       "Sửa: Ảnh bị chồng khi chụp ảnh màn hình kéo dài",
@@ -291,6 +397,20 @@
     ]
   },
   "logs_th": {
+    "แถบสถานะ, แผงการแจ้งเตือน": [
+      "Fix: Couldn't open notification settings in the Notification shade in Second space"
+    ],
+    "ผู้ช่วยออนไลน์": [
+      "แก้ไข: คำเตือนการใช้ข้อมูลปรากฏหลายครั้ง",
+      "แก้ไขปัญหากฎการควบคุมเครือข่ายผิดปกติหลังจากสลับซิมการ์ด",
+      "แก้ไขปัญหากฎควบคุมเครือข่ายทำงานผิดปกติหลังสลับซิมการ์ด"
+    ],
+    "ตัวเร่งความเร็วเกม": [
+      "แก้ไขปัญหาการแสดงเนื้อหาป๊อปอัปไม่ครบถ้วนหลังจากเปิดหน้าต่างลอยของแอปในเกม"
+    ],
+    "ความปลอดภัย": [
+      "แก้ไข: ผู้ช่วยซองแดงไม่แสดงหน้าต่างลอยในพื้นที่ที่สอง"
+    ],
     "อื่นๆ": [
       "Fix: Images overlapped in scrolling screenshots",
       "แก้ไข: ภาพซ้อนทับในการเลื่อนการบันทึกหน้าจอ",
@@ -307,12 +427,18 @@
     "وشريط الإشعارات، ومركز الإشعارات": [
       "إصلاح لا يمكن فتح إعدادات الإشعارات من مركز الإشعارات في الواجهة الثانية"
     ],
-    "استخدام البيانات": [
+    "مساعد الإنترنت": [
       ":الإصلاح ظهور تحذير استخدام البيانات عدة مرات",
       "الإصلاح حدوث أخطاء بعد تبديل بطاقات SIM",
       ":الإصلاح حدوث أخطاء بعد تبديل بطاقات SIM"
     ],
-    "أخرى": [
+    "تسريع الألعاب": [
+      "تم إصلاح مشكلة عدم عرض محتوى النافذة المنبثقة بالكامل بعد تمكين النافذة العائمة للتطبيق في الألعاب."
+    ],
+    "الأمان": [
+      "تم الإصلاح: مساعد الظرف الأحمر لا يعرض نافذة عائمة في المساحة الثانية."
+    ],
+    "آخرين": [
       "إصلاح تداخل الصورفي لقطات الشاشة قابلة للتمرير",
       ":الإصلاح تداخل الصور في لقطات الشاشة القابلة للتمرير",
       "تحسين أمن واستقرار النظام"
@@ -328,6 +454,17 @@
     "स्टेटस बार, सूचना शेड": [
       "Fix: Couldn't open notification settings in the Notification shade in Second space"
     ],
+    "वर्चुअल असिस्टेंट": [
+      "ठीक करें: डेटा उपयोग चेतावनी कई बार दिखाई दी",
+      "SIM कार्ड बदलने के बाद नेटवर्क नियंत्रण नियमों के असामान्य होने की समस्या ठीक की गई।",
+      "SIM कार्ड बदलने के बाद नेटवर्क नियंत्रण नियमों में गड़बड़ी की समस्या ठीक की गई"
+    ],
+    "गेम गति बूस्टर": [
+      "गेम में ऐप फ़्लोटिंग विंडो सक्षम करने के बाद पॉपअप सामग्री पूरी तरह से प्रदर्शित न होने की समस्या ठीक की गई।"
+    ],
+    "सुरक्षा": [
+      "ठीक किया गया: रेड एनवेलप सहायक सेकंड स्पेस में फ़्लोटिंग विंडो नहीं दिखाता."
+    ],
     "अन्य": [
       "Fix: Images overlapped in scrolling screenshots",
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
@@ -342,6 +479,14 @@
   "logs_ug": {
     "Status bar, Notification shade": [
       "Fix: Couldn't open notification settings in the Notification shade in Second space"
+    ],
+    "تور ياردەمچىسى": [
+      "Fix: Data usage warning appeared multiple times",
+      "SIM كارتىنى ئالماشتۇرغاندىن كېيىن تورغا ئۇلىنىش كونترول قائىدىسىدە كۆرۈلگەن مەسىلىنى تۈزىتىش",
+      "ئوڭشالدى: SIM كارتا ئالماشتۇرۇلغاندىن كېيىن تورغا چىقىش كونتروللۇق قائىدىلىرىدە كۆرۈلگەن نورمالسىزلىق مەسىلىسى"
+    ],
+    "بىخەتەرلىك مەركىزى": [
+      "قىزىل ئوراپ ياردەمچىسىنىڭ ئىككىنچى بوشلۇقتا لەيلەنمە كۆزنىكىنى كۆرسەتمەسلىك مەسىلىسى ئوڭشالدى"
     ],
     "باشقىلىرى": [
       "Fix: Images overlapped in scrolling screenshots",

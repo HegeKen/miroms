@@ -13,12 +13,12 @@
       "新增 在时钟设置中自由选择黑色或白色背景的功能",
       "提示：本次更新后时钟的背景颜色为白色"
     ],
-    "相册": [
+    "画廊": [
       "优化 相册删除慢问题",
       "优化 相册页加载慢问题",
       "优化 相册缩略图加载慢问题"
     ],
-    "网络助手": [
+    "数据使用情况": [
       "修复 套餐设置中限额后操作保存失效的问题"
     ],
     "安全中心": [
@@ -44,96 +44,796 @@
     ]
   },
   "logs_en": {
+    "System": [
+      "Optimize speaker stereo effect"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Optimization: The UI for renaming fingerprints",
+      "Fixed an issue where the lock screen password could not be changed or set when using a transparent wallpaper",
+      "Fixed an issue where the lock screen password could be displayed in landscape in certain cases",
+      "Fixed the issue where the wired charging animation displayed abnormally in landscape mode"
+    ],
+    "Clock": [
+      "Added the ability to freely choose black or white background in Clock settings",
+      "Note: After this update, the clock background color is white."
+    ],
+    "Album": [
+      "Optimized the slow deletion issue in Gallery",
+      "Optimized slow loading issue of album page",
+      "Optimize slow album thumbnail loading"
+    ],
+    "Online Assistant": [
+      "Fixed an issue where saving operations did not take effect after setting a limit in plan settings."
+    ],
+    "Security": [
+      "Optimized the style of the Red Packet Assistant prompt window in landscape mode"
+    ],
+    "Mi Cloud": [
+      "Fix incorrect page display when switching accounts",
+      "Fixed occasional crash",
+      "Fixed occasional abnormal SIM status display"
+    ],
+    "MI Wallet": [
+      "Added: “Custom shortcut card” setting in “Card swipe method settings”",
+      "Optimized the completely redesigned Xiaomi Door Card",
+      "Optimized: Xiaomi Transit card activation page adapted to all models",
+      "Fix the issue where it shows as unavailable when activating Mi Pay",
+      "Fixed the issue where the transit card list shows \"Loading\" and cannot be tapped",
+      "Fixed the issue where, after removing the Shanghai new transit card, re-opening the card would use the previously cached card number.",
+      "Fix an issue where the \"Double-tap Home key to wake\" button was not hidden when Full screen gestures was selected",
+      "Fixed an issue where tapping “Activate” could not redirect to the password entry page when no NFC card was activated."
+    ],
     "Other": [
       "Improved system security and stability"
     ]
   },
   "logs_zh_tw": {
+    "系統": [
+      "最佳化 揚聲器立體聲效果"
+    ],
+    "解鎖畫面、狀態欄、通知欄": [
+      "優化: 指紋重新命名頁面的UI和體驗",
+      "修復 使用透明桌布時，無法修改和設定鎖屏密碼",
+      "修復 鎖屏密碼在個別情況下會橫屏顯示的問題",
+      "修復 橫屏狀態下有線充電動畫顯示異常的問題"
+    ],
+    "時鐘": [
+      "新增 在時鐘設定中自由選擇黑色或白色背景的功能",
+      "提示：本次更新後時鐘的背景顏色為白色"
+    ],
+    "相簿": [
+      "最佳化 相簿刪除緩慢問題",
+      "優化 相簿頁載入慢問題",
+      "優化 相簿縮圖載入緩慢問題"
+    ],
+    "網路助手": [
+      "修復 套餐設定中限額後操作儲存失效的問題"
+    ],
+    "安全中心": [
+      "優化 橫屏下紅包助手提示視窗的樣式"
+    ],
+    "小米雲服務": [
+      "修正 更換帳號時頁面顯示不正確",
+      "修復 偶現crash",
+      "修正 偶現SIM狀態顯示不正常"
+    ],
+    "小米錢包": [
+      "新增 在「刷卡方式設定」中新增「自訂快捷卡片」設定",
+      "最佳化 小米門卡全新改版",
+      "優化 小米公交開卡頁適配所有機型",
+      "修復 開通Mi Pay時，顯示不可開通的問題",
+      "修復進入交通卡列表時，顯示「正在載入」且無法點擊的問題",
+      "修復 上海新公交卡移除後，再次開卡使用之前快取的卡號的問題",
+      "修復選擇全螢幕手勢時，未隱藏「桌面鍵雙擊喚醒」按鈕的問題",
+      "修復 未開通任何NFC卡片時，點擊去開通無法跳轉到密碼輸入頁的問題"
+    ],
     "其他": [
       "Improved system security and stability"
     ]
   },
   "logs_ja": {
+    "システム": [
+      "スピーカーのステレオ効果を最適化"
+    ],
+    "ロック画面、ステータスバー、通知バー": [
+      "最適化: 指紋の名前を変更するUI",
+      "透明壁紙使用時にロック画面のパスワードを変更・設定できない問題を修正",
+      "特定の状況でロック画面のパスワードが横向きに表示される問題を修正",
+      "横向き状態で有線充電アニメーションが異常表示される問題を修正"
+    ],
+    "時計": [
+      "時計の設定で黒または白の背景を自由に選択できる機能を追加",
+      "ヒント：今回のアップデート後、時計の背景色は白色になります。"
+    ],
+    "アルバム": [
+      "ギャラリーの削除が遅い問題を最適化",
+      "アルバムページの読み込みが遅い問題を最適化",
+      "アルバムのサムネイル読み込みが遅い問題を最適化"
+    ],
+    "ネットワークアシスタント": [
+      "プラン設定で上限を設定した後、操作の保存が反映されない問題を修正しました。"
+    ],
+    "セキュリティ": [
+      "横向き時の紅包助手の通知ウィンドウのスタイルを最適化"
+    ],
+    "Xiaomi クラウドサービス": [
+      "アカウント切り替え時にページが正しく表示されない問題を修正",
+      "時々発生するクラッシュを修正",
+      "SIMステータスが正常に表示されないことがある問題を修正"
+    ],
+    "MIウォレット": [
+      "追加 「カード読み取り方式設定」に「カスタムクイックカード」設定を追加",
+      "Xiaomiドアカードの全面的なリニューアルを最適化",
+      "最適化 Xiaomi交通カード発行ページの全機種対応",
+      "Mi Payの開通時に開通不可と表示される問題を修正",
+      "交通系カードリストに入ると「読み込み中」と表示され、タップできない問題を修正しました",
+      "上海新交通カードを削除した後、再度カードを開設すると以前キャッシュされたカード番号が使用される問題を修正しました。",
+      "フルスクリーンジェスチャー選択時に「ホームキーをダブルタップして起動」ボタンが非表示にならない問題を修正",
+      "NFCカードを1枚も開通していない場合に、「開通する」をタップしてもパスワード入力画面に遷移できない問題を修正"
+    ],
     "その他": [
       "システムのセキュリティと安定性の向上"
     ]
   },
   "logs_ko": {
+    "시스템": [
+      "스피커 스테레오 효과 최적화"
+    ],
+    "잠금 화면, 상태 표시줄, 알림 표시줄": [
+      "최적화: 지문 이름 변경을 위한 UI",
+      "투명 배경화면 사용 시 잠금 화면 비밀번호를 변경 및 설정할 수 없는 문제를 수정",
+      "특정 상황에서 잠금 화면 비밀번호가 가로 방향으로 표시되는 문제를 수정",
+      "가로 모드에서 유선 충전 애니메이션이 비정상적으로 표시되는 문제를 수정"
+    ],
+    "시계": [
+      "시계 설정에서 검은색 또는 흰색 배경을 자유롭게 선택할 수 있는 기능 추가",
+      "안내: 이번 업데이트 후 시계의 배경색이 흰색입니다."
+    ],
+    "앨범": [
+      "갤러리 삭제 지연 문제 최적화",
+      "앨범 페이지 로딩 지연 문제 최적화",
+      "앨범 썸네일 로딩 지연 문제 최적화"
+    ],
+    "네트워크 어시스턴트": [
+      "요금제 설정에서 한도를 설정한 후 작업 저장이 적용되지 않는 문제를 수정했습니다."
+    ],
+    "보안": [
+      "가로 화면에서 홍바오 도우미 알림창 스타일 최적화"
+    ],
+    "Xiaomi 클라우드 서비스": [
+      "계정 전환 시 페이지가 올바르게 표시되지 않는 문제 수정",
+      "간헐적으로 발생하는 충돌 수정",
+      "SIM 상태가 비정상적으로 표시되는 간헐적 문제 수정"
+    ],
+    "샤오미 지갑": [
+      "추가: “카드 태그 방식 설정”에 “사용자 지정 빠른 카드” 설정 추가",
+      "Xiaomi 도어 카드의 전면 개편 최적화",
+      "최적화 Xiaomi 교통카드 개설 페이지 모든 기기 지원",
+      "Mi Pay 개통 시 개통 불가로 표시되는 문제를 수정",
+      "교통카드 목록에 들어갈 때 '로딩 중'이 표시되고 탭할 수 없는 문제를 수정했습니다",
+      "상하이 신 교통카드 제거 후 다시 카드를 개설할 때 이전에 캐시된 카드 번호가 사용되는 문제를 수정했습니다.",
+      "전체 화면 제스처 선택 시 '홈 키 두 번 탭하여 깨우기' 버튼이 숨겨지지 않는 문제를 수정",
+      "NFC 카드가 하나도 개통되지 않은 상태에서 “개통하기”를 눌러도 비밀번호 입력 페이지로 이동하지 않는 문제를 수정"
+    ],
     "기타": [
       "시스템 보안 및 안정성 개선"
     ]
   },
   "logs_ru": {
+    "Система": [
+      "Оптимизировать стереоэффект динамика"
+    ],
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Оптимизация: Интерфейс переименования отпечатков пальцев",
+      "Исправлена проблема, из-за которой при использовании прозрачных обоев нельзя было изменить или задать пароль блокировки экрана.",
+      "Исправлена проблема, из-за которой пароль экрана блокировки в некоторых случаях отображался в альбомной ориентации",
+      "Исправлена проблема с некорректным отображением анимации проводной зарядки в альбомной ориентации"
+    ],
+    "Часы": [
+      "Добавлена возможность свободного выбора черного или белого фона в настройках часов",
+      "Примечание: после этого обновления цвет фона часов — белый."
+    ],
+    "Альбом": [
+      "Оптимизирована проблема медленного удаления в Галерее",
+      "Оптимизирована медленная загрузка страницы альбома",
+      "Оптимизация медленной загрузки миниатюр в галерее"
+    ],
+    "Интернет-ассистент": [
+      "Исправлена проблема, из-за которой сохранение операций не применялось после установки лимита в настройках тарифа."
+    ],
+    "Безопасность": [
+      "Оптимизирован стиль окна подсказки помощника Red Packet в горизонтальной ориентации"
+    ],
+    "Облачный сервис Xiaomi": [
+      "Исправлено некорректное отображение страницы при смене аккаунта",
+      "Исправлен периодический сбой",
+      "Исправлено периодическое некорректное отображение статуса SIM"
+    ],
+    "MI Кошелек": [
+      "Добавлено: в «Настройках способа оплаты картой» добавлен параметр «Пользовательская быстрая карта».",
+      "Оптимизирована полностью обновлённая карта доступа Xiaomi",
+      "Оптимизировано: страница активации карты Xiaomi Transit адаптирована для всех моделей",
+      "Исправлена проблема, когда при активации Mi Pay отображалось сообщение о невозможности активации",
+      "Исправлена проблема, из-за которой при входе в список транспортных карт отображалось «Загрузка» и нельзя было нажать",
+      "Исправлена проблема, из-за которой после удаления новой транспортной карты Шанхая при повторном открытии карты использовался ранее кэшированный номер карты.",
+      "Исправлена проблема, из-за которой при выборе жестов на весь экран не скрывалась кнопка «Пробуждение двойным нажатием кнопки Home»",
+      "Исправлена проблема, из-за которой при отсутствии активированных NFC-карт нажатие «Активировать» не открывало страницу ввода пароля."
+    ],
     "Другое": [
       "Улучшение безопасности и стабильности системы"
     ]
   },
   "logs_uk": {
+    "Система": [
+      "Оптимізувати стереоефект динаміка"
+    ],
+    "Екран блокування, рядок стану, рядок сповіщень": [
+      "Оптимізація: Інтерфейс перейменування відбитків пальців",
+      "Виправлено проблему, через яку під час використання прозорих шпалер не можна було змінити або встановити пароль блокування екрана.",
+      "Виправлено проблему, через яку пароль екрана блокування в окремих випадках відображався в альбомній орієнтації",
+      "Виправлено проблему з ненормальним відображенням анімації дротової зарядки в альбомній орієнтації"
+    ],
+    "Годинник": [
+      "Додано можливість вільно вибирати чорний або білий фон у налаштуваннях годинника",
+      "Підказка: після цього оновлення фон годинника стає білим."
+    ],
+    "Альбом": [
+      "Оптимізовано проблему повільного видалення в Галереї",
+      "Оптимізовано повільне завантаження сторінки альбому",
+      "Оптимізовано повільне завантаження мініатюр у галереї"
+    ],
+    "Інтернет-асистент": [
+      "Виправлено проблему, через яку збереження операцій не застосовувалося після встановлення ліміту в налаштуваннях тарифу."
+    ],
+    "Безпека": [
+      "Оптимізовано стиль вікна підказки помічника Red Packet у горизонтальній орієнтації"
+    ],
+    "Хмарний сервіс Xiaomi": [
+      "Виправлено неправильне відображення сторінки під час зміни облікового запису",
+      "Виправлено періодичний збій",
+      "Виправлено періодичне некоректне відображення статусу SIM"
+    ],
+    "MI Гаманець": [
+      "Додано: у «Налаштуваннях способу оплати карткою» додано параметр «Користувацька швидка картка».",
+      "Оптимізовано повністю оновлену картку доступу Xiaomi",
+      "Оптимізовано: сторінку активації картки Xiaomi Transit адаптовано для всіх моделей",
+      "Виправлено проблему, коли під час активації Mi Pay відображалося повідомлення про неможливість активації",
+      "Виправлено проблему, коли під час входу до списку транспортних карток відображалося «Завантаження» і не можна було натиснути",
+      "Виправлено проблему, через яку після видалення нової транспортної картки Шанхаю під час повторного відкриття картки використовувався раніше кешований номер картки.",
+      "Виправлено проблему, через яку під час вибору жестів на весь екран не приховувалася кнопка «Пробудження подвійним натисканням кнопки Home»",
+      "Виправлено проблему, через яку за відсутності активованих NFC-карток натискання «Активувати» не відкривало сторінку введення пароля."
+    ],
     "Інше": [
       "Покращення безпеки та стабільності системи"
     ]
   },
   "logs_pl": {
-    "Inne": [
+    "System": [
+      "Zoptymalizuj efekt stereo głośnika"
+    ],
+    "Ekran blokady, pasek stanu, pasek powiadomień": [
+      "Zoptymalizowano: Interfejs użytkownika do zmiany nazwy odcisków palców",
+      "Naprawiono problem uniemożliwiający zmianę i ustawienie hasła ekranu blokady przy użyciu przezroczystej tapety.",
+      "Naprawiono problem, w wyniku którego hasło ekranu blokady w niektórych przypadkach było wyświetlane w orientacji poziomej",
+      "Naprawiono problem z nieprawidłowym wyświetlaniem animacji ładowania przewodowego w orientacji poziomej"
+    ],
+    "Zegar": [
+      "Dodano możliwość swobodnego wyboru czarnego lub białego tła w ustawieniach zegara",
+      "Wskazówka: po tej aktualizacji tło zegara jest białe."
+    ],
+    "Album": [
+      "Zoptymalizowano problem wolnego usuwania w Galerii",
+      "Zoptymalizowano problem wolnego ładowania strony albumu",
+      "Zoptymalizowano powolne ładowanie miniatur w galerii"
+    ],
+    "Asystent online": [
+      "Naprawiono problem z brakiem zapisu operacji po ustawieniu limitu w ustawieniach taryfy."
+    ],
+    "Bezpieczeństwo": [
+      "Zoptymalizowano wygląd okna pomocnika Red Packet w orientacji poziomej"
+    ],
+    "Usługa w chmurze Xiaomi": [
+      "Poprawiono nieprawidłowe wyświetlanie strony przy zmianie konta",
+      "Naprawiono sporadyczne awarie",
+      "Naprawiono sporadyczne nieprawidłowe wyświetlanie stanu SIM"
+    ],
+    "MI Portfel": [
+      "Dodano: w „Ustawieniach sposobu płatności kartą” dodano ustawienie „Niestandardowa szybka karta”.",
+      "Zoptymalizowano całkowicie odświeżoną kartę dostępu Xiaomi",
+      "Zoptymalizowano: strona aktywacji karty Xiaomi Transit dostosowana do wszystkich modeli",
+      "Naprawiono problem, w którym podczas aktywacji Mi Pay wyświetlał się komunikat o niemożności aktywacji",
+      "Naprawiono problem, w którym po wejściu na listę kart transportowych wyświetlało się „Ładowanie” i nie można było kliknąć",
+      "Naprawiono problem, w którym po usunięciu nowej karty transportowej Szanghaju ponowne otwarcie karty używało wcześniej zapisanego numeru karty.",
+      "Naprawiono problem, w którym przy wyborze gestów pełnoekranowych nie ukrywano przycisku „Wybudzanie przez dwukrotne dotknięcie klawisza Home”",
+      "Naprawiono problem, w którym przy braku aktywowanych kart NFC dotknięcie „Aktywuj” nie przenosiło do strony wprowadzania hasła."
+    ],
+    "Reszt": [
       "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
   "logs_de": {
+    "System": [
+      "Stereo-Effekt des Lautsprechers optimieren"
+    ],
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
+      "Optimierung: Die Benutzeroberfläche zum Umbenennen von Fingerabdrücken",
+      "Problem behoben, bei dem mit einem transparenten Hintergrundbild das Sperrbildschirm-Passwort nicht geändert oder festgelegt werden konnte.",
+      "Das Problem wurde behoben, dass das Sperrbildschirm-Passwort in bestimmten Fällen im Querformat angezeigt wurde",
+      "Problem mit fehlerhafter Anzeige der Kabel-Ladeanimation im Querformat behoben"
+    ],
+    "Uhr": [
+      "Funktion hinzugefügt, um in den Uhr-Einstellungen frei zwischen schwarzem oder weißem Hintergrund zu wählen",
+      "Hinweis: Nach diesem Update ist der Hintergrund der Uhr weiß."
+    ],
+    "Galerie": [
+      "Langsames Löschen in der Galerie optimiert",
+      "Langsames Laden der Albumseite optimiert",
+      "Langsames Laden von Album-Miniaturansichten optimiert"
+    ],
+    "Online-Assistent": [
+      "Das Problem wurde behoben, dass das Speichern von Vorgängen nach dem Festlegen eines Limits in den Tarifeinstellungen nicht wirksam wurde."
+    ],
+    "Sicherheit": [
+      "Stil des Hinweisfensters des Red Packet Assistant im Querformat optimiert"
+    ],
+    "Xiaomi Cloud-Dienst": [
+      "Die fehlerhafte Seitenanzeige beim Wechsel des Kontos wurde behoben",
+      "Gelegentlichen Absturz behoben",
+      "Gelegentliche fehlerhafte Anzeige des SIM-Status behoben"
+    ],
+    "Xiaomi Wallet": [
+      "Neu: In „Einstellungen für Kartenzahlung“ wurde „Benutzerdefinierte Schnellkarte“ hinzugefügt.",
+      "Optimierte die vollständig überarbeitete Xiaomi-Türkarte",
+      "Optimiert: Seite zur Aktivierung der Xiaomi Transit-Karte für alle Modelle angepasst",
+      "Problem behoben, bei dem beim Aktivieren von Mi Pay „Aktivierung nicht möglich“ angezeigt wurde",
+      "Das Problem wurde behoben, dass beim Öffnen der Liste der Verkehrskarten „Wird geladen“ angezeigt wurde und nicht angetippt werden konnte",
+      "Das Problem wurde behoben, bei dem nach dem Entfernen der neuen Shanghai-Transitkarte beim erneuten Öffnen der Karte die zuvor zwischengespeicherte Kartennummer verwendet wurde.",
+      "Problem behoben, bei dem die Schaltfläche „Aufwecken durch Doppeltippen der Home-Taste“ bei Auswahl von Vollbildgesten nicht ausgeblendet wurde",
+      "Problem behoben, bei dem bei keiner aktivierten NFC-Karte durch Tippen auf „Aktivieren“ nicht zur Passworteingabeseite weitergeleitet wurde."
+    ],
     "Sonstiges": [
       "Systemsicherheit und -stabilität verbessert"
     ]
   },
   "logs_fr": {
+    "Système": [
+      "Optimiser l'effet stéréo du haut-parleur"
+    ],
+    "Écran de verrouillage, barre d’état, barre de notifications": [
+      "Optimisation: L'IU pour renommer les empreintes digitales",
+      "Correction d’un problème empêchant de modifier et définir le mot de passe de l’écran de verrouillage avec un fond d’écran transparent.",
+      "Correction d’un problème où le mot de passe de l’écran de verrouillage pouvait s’afficher en mode paysage dans certains cas",
+      "Correction du problème d'affichage anormal de l'animation de charge filaire en mode paysage"
+    ],
+    "Horloge": [
+      "Ajout de la possibilité de choisir librement entre un fond noir ou blanc dans les paramètres de l'horloge",
+      "Remarque : après cette mise à jour, la couleur d’arrière-plan de l’horloge est blanche."
+    ],
+    "Album": [
+      "Optimisation du problème de suppression lente dans la Galerie",
+      "Optimisation du problème de chargement lent de la page d'album",
+      "Optimisation du chargement lent des miniatures d’album"
+    ],
+    "Assistant en ligne": [
+      "Correction d’un problème où l’enregistrement des opérations ne prenait pas effet après la définition d’une limite dans les paramètres du forfait."
+    ],
+    "Sécurité": [
+      "Optimisation du style de la fenêtre de notification de l’assistant Red Packet en mode paysage"
+    ],
+    "Service cloud Xiaomi": [
+      "Correction de l'affichage incorrect de la page lors du changement de compte",
+      "Correction d'un plantage intermittent",
+      "Correction de l'affichage anormal occasionnel de l'état SIM"
+    ],
+    "MI Portefeuille": [
+      "Ajout : dans « Paramètres du mode de paiement par carte », ajout du réglage « Carte rapide personnalisée ».",
+      "Optimisation de la toute nouvelle carte d'accès Xiaomi",
+      "Optimisé : page d'activation de la carte Xiaomi Transit adaptée à tous les modèles",
+      "Correction du problème où « Activation impossible » s’affichait lors de l’activation de Mi Pay",
+      "Correction du problème où, en entrant dans la liste des cartes de transport, « Chargement » s’affichait et l’élément ne pouvait pas être touché",
+      "Correction du problème où, après la suppression de la nouvelle carte de transport de Shanghai, la réouverture de la carte utilisait le numéro de carte précédemment mis en cache.",
+      "Correction d’un problème où le bouton « Réveil par double appui sur la touche Accueil » n’était pas masqué lors de la sélection des gestes plein écran",
+      "Correction du problème où, sans carte NFC activée, appuyer sur « Activer » ne redirigeait pas vers la page de saisie du mot de passe."
+    ],
     "Autre": [
       "Sécurité et stabilité du système améliorées"
     ]
   },
   "logs_it": {
+    "Sistema": [
+      "Ottimizza l'effetto stereo dell'altoparlante"
+    ],
+    "Schermata di blocco, barra di stato, barra delle notifiche": [
+      "Ottimizzazione: Interfaccia utente per rinominare le impronte digitali",
+      "Risolto un problema che impediva di modificare e impostare la password della schermata di blocco usando uno sfondo trasparente.",
+      "Risolto un problema per cui la password della schermata di blocco in alcuni casi veniva visualizzata in orizzontale",
+      "Risolto il problema di visualizzazione anomala dell'animazione di ricarica con cavo in modalità orizzontale"
+    ],
+    "Orologio": [
+      "Aggiunta la possibilità di scegliere liberamente tra sfondo nero o bianco nelle impostazioni dell'orologio",
+      "Nota: dopo questo aggiornamento, il colore di sfondo dell'orologio è bianco."
+    ],
+    "Album": [
+      "Ottimizzato il problema della lenta eliminazione in Galleria",
+      "Ottimizzato il problema di caricamento lento della pagina dell'album",
+      "Ottimizzato il caricamento lento delle miniature dell’album"
+    ],
+    "Assistente online": [
+      "Risolto un problema per cui il salvataggio delle operazioni non aveva effetto dopo aver impostato un limite nelle impostazioni del piano."
+    ],
+    "Sicurezza": [
+      "Ottimizzato lo stile della finestra di avviso di Red Packet Assistant in orientamento orizzontale"
+    ],
+    "Servizio cloud Xiaomi": [
+      "Risolto il problema di visualizzazione errata della pagina quando si cambia account",
+      "Risolto un crash intermittente",
+      "Risolto il problema della visualizzazione anomala occasionale dello stato SIM"
+    ],
+    "MI Portafoglio": [
+      "Aggiunto: in «Impostazioni metodo di pagamento con carta» aggiunta l'impostazione «Scheda rapida personalizzata».",
+      "Ottimizzata la carta d'accesso Xiaomi completamente rinnovata",
+      "Ottimizzato: pagina di attivazione della carta Xiaomi Transit adattata a tutti i modelli",
+      "Risolto il problema per cui durante l'attivazione di Mi Pay veniva visualizzato \"Impossibile attivare\"",
+      "Risolto il problema per cui, entrando nell'elenco delle carte di trasporto, veniva mostrato \"Caricamento\" e non era possibile toccare",
+      "Risolto il problema per cui, dopo la rimozione della nuova carta di trasporto di Shanghai, alla riapertura della carta veniva utilizzato il numero di carta precedentemente memorizzato nella cache.",
+      "Risolto un problema per cui il pulsante \"Risveglio con doppio tocco sul tasto Home\" non veniva nascosto quando si selezionavano i gesti a schermo intero",
+      "Risolto un problema per cui, senza carte NFC attivate, toccando “Attiva” non si passava alla pagina di inserimento password."
+    ],
     "Altro": [
       "Maggiore sicurezza e stabilità di sistema"
     ]
   },
   "logs_es": {
+    "Sistema": [
+      "Optimizar el efecto estéreo del altavoz"
+    ],
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Optimización: La interfaz de usuario para renombrar huellas dactilares",
+      "Se corrigió un problema que impedía cambiar y establecer la contraseña de la pantalla de bloqueo al usar un fondo de pantalla transparente.",
+      "Se corrigió un problema por el que la contraseña de la pantalla de bloqueo podía mostrarse en horizontal en algunos casos",
+      "Se corrige el problema de visualización anómala de la animación de carga por cable en modo horizontal"
+    ],
+    "Reloj": [
+      "Añadida la función para elegir libremente entre fondo negro o blanco en los ajustes del reloj",
+      "Aviso: después de esta actualización, el color de fondo del reloj es blanco."
+    ],
+    "Álbum de fotos": [
+      "Optimizado el problema de eliminación lenta en Galería",
+      "Optimizado el problema de carga lenta de la página del álbum",
+      "Optimizada la carga lenta de miniaturas del álbum"
+    ],
+    "Asistente de red": [
+      "Se corrigió un problema por el que el guardado de operaciones no surtía efecto tras establecer un límite en los ajustes del plan."
+    ],
+    "Seguridad": [
+      "Se ha optimizado el estilo de la ventana emergente del Asistente de sobres rojos en modo horizontal"
+    ],
+    "Servicio en la nube de Xiaomi": [
+      "Corregida la visualización incorrecta de la página al cambiar de cuenta",
+      "Corregido un fallo intermitente",
+      "Corregida la visualización anómala ocasional del estado SIM"
+    ],
+    "Monedero de Xiaomi": [
+      "Añadido: en «Ajustes del método de pago con tarjeta» se añade el ajuste «Tarjeta rápida personalizada».",
+      "Optimizada la tarjeta de acceso Xiaomi totalmente renovada",
+      "Optimizado: página de activación de la tarjeta Xiaomi Transit adaptada a todos los modelos",
+      "Se corrige el problema por el que se mostraba \"No se puede activar\" al activar Mi Pay",
+      "Se corrigió el problema por el que, al entrar en la lista de tarjetas de transporte, se mostraba «Cargando» y no se podía pulsar",
+      "Se corrigió el problema por el cual, después de eliminar la nueva tarjeta de transporte de Shanghái, al volver a abrir la tarjeta se utilizaba el número de tarjeta almacenado en caché anteriormente.",
+      "Se corrigió un problema por el que el botón \"Despertar con doble toque en la tecla Inicio\" no se ocultaba al seleccionar los gestos de pantalla completa",
+      "Se corrigió el problema por el que, sin ninguna tarjeta NFC activada, al tocar “Activar” no se redirigía a la página de introducción de contraseña."
+    ],
     "Otros": [
       "Estabilidad y seguridad del sistema mejorada"
     ]
   },
   "logs_pt": {
+    "Sistema": [
+      "Otimizar o efeito estéreo do alto-falante"
+    ],
+    "Tela de bloqueio, barra de status, barra de notificações": [
+      "Otimização: Interface para renomear impressões digitais",
+      "Corrigido um problema que impedia alterar e definir a senha da tela de bloqueio ao usar um papel de parede transparente.",
+      "Corrigido um problema em que a senha da tela de bloqueio podia ser exibida na horizontal em alguns casos",
+      "Corrigido o problema de exibição anormal da animação de carregamento com fio no modo paisagem"
+    ],
+    "Relógio": [
+      "Adicionada a possibilidade de escolher livremente entre fundo preto ou branco nas configurações do relógio",
+      "Aviso: após esta atualização, a cor de fundo do relógio é branca."
+    ],
+    "Álbum": [
+      "Otimizado o problema de exclusão lenta na Galeria",
+      "Otimizado o problema de carregamento lento da página do álbum",
+      "Otimizado o carregamento lento das miniaturas do álbum"
+    ],
+    "Assistente de Rede": [
+      "Corrigido um problema em que guardar operações não tinha efeito após definir um limite nas configurações do plano."
+    ],
+    "Segurança": [
+      "Otimizado o estilo da janela de aviso do Assistente de Envelopes Vermelhos no modo paisagem"
+    ],
+    "Serviço de nuvem Xiaomi": [
+      "Corrigida a exibição incorreta da página ao trocar de conta",
+      "Corrigida falha intermitente",
+      "Corrigida a exibição anormal ocasional do estado do SIM"
+    ],
+    "MI Carteira": [
+      "Adicionado: nas «Configurações do método de pagamento por cartão», adicionada a configuração «Cartão rápido personalizado».",
+      "Otimizado o cartão de acesso Xiaomi totalmente renovado",
+      "Otimizado: página de ativação do cartão Xiaomi Transit adaptada a todos os modelos",
+      "Corrigido o problema em que era exibido \"Não é possível ativar\" ao ativar o Mi Pay",
+      "Corrigido o problema em que, ao entrar na lista de cartões de transporte, era exibido “Carregando” e não era possível tocar",
+      "Corrigido o problema em que, após remover o novo cartão de transporte de Xangai, ao reabrir o cartão era utilizado o número do cartão anteriormente em cache.",
+      "Corrigido um problema em que o botão \"Despertar com toque duplo na tecla Início\" não era ocultado ao selecionar os gestos de tela cheia",
+      "Corrigido o problema em que, sem nenhum cartão NFC ativado, tocar em “Ativar” não redirecionava para a página de inserção da senha."
+    ],
     "Outros": [
       "Segurança e estabilidade do sistema aprimoradas"
     ]
   },
   "logs_tr": {
+    "Sistem": [
+      "Hoparlör stereo efektini optimize et"
+    ],
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Optimizasyon: Parmak izlerini yeniden adlandırmak için arayüz",
+      "Şeffaf duvar kağıdı kullanırken kilit ekranı parolasının değiştirilememesi ve ayarlanamaması sorunu giderildi.",
+      "Kilit ekranı parolasının bazı durumlarda yatay olarak görüntülenmesi sorunu düzeltildi",
+      "Yatay modda kablolu şarj animasyonunun anormal görüntülenmesi sorunu giderildi"
+    ],
+    "Saat": [
+      "Saat ayarlarında siyah veya beyaz arka planı serbestçe seçme özelliği eklendi",
+      "İpucu: Bu güncellemeden sonra saatin arka plan rengi beyazdır."
+    ],
+    "albüm": [
+      "Galeri'de yavaş silme sorunu optimize edildi",
+      "Albüm sayfası yavaş yükleme sorunu optimize edildi",
+      "Albüm küçük resimlerinin yavaş yüklenmesi optimize edildi"
+    ],
+    "Ağ Asistanı": [
+      "Plan ayarlarında limit belirledikten sonra işlemleri kaydetmenin etkili olmaması sorunu giderildi."
+    ],
+    "Güvenlik": [
+      "Yatay modda Red Packet Assistant uyarı penceresinin stili optimize edildi"
+    ],
+    "Xiaomi Bulut Hizmeti": [
+      "Hesap değiştirirken sayfanın yanlış görüntülenmesi düzeltildi",
+      "Ara sıra oluşan çökme düzeltildi",
+      "SIM durumunun ara sıra anormal görüntülenmesi düzeltildi"
+    ],
+    "MI Cüzdan": [
+      "Eklendi: “Kart okutma yöntemi ayarları”na “Özel hızlı kart” ayarı eklendi.",
+      "Xiaomi Kapı Kartı'nın tamamen yenilenen tasarımı optimize edildi",
+      "Optimize edildi: Xiaomi Transit kart etkinleştirme sayfası tüm modellere uyarlandı",
+      "Mi Pay etkinleştirilirken \"Etkinleştirilemiyor\" gösterilmesi sorunu giderildi",
+      "Ulaşım kartı listesine girildiğinde \"Yükleniyor\" gösterilmesi ve dokunulamaması sorunu giderildi",
+      "Şanghay yeni toplu taşıma kartı kaldırıldıktan sonra kart yeniden açıldığında önceden önbelleğe alınmış kart numarasının kullanılması sorunu giderildi.",
+      "Tam ekran hareketleri seçildiğinde \"Ana tuşa çift dokunarak uyandırma\" düğmesinin gizlenmemesi sorunu giderildi",
+      "Hiçbir NFC kartı etkinleştirilmemişken “Etkinleştir”e dokunulduğunda parola giriş sayfasına yönlendirilememesi sorunu düzeltildi."
+    ],
     "Diğer": [
       "Sistem güvenliği ve kararlılığı geliştirildi"
     ]
   },
   "logs_id": {
+    "Sistem": [
+      "Optimalkan efek stereo speaker"
+    ],
+    "Layar kunci, bilah status, bilah notifikasi": [
+      "Pengoptimalan: Desain antarmuka (UI) untuk mengganti nama sidik jari",
+      "Memperbaiki masalah tidak dapat mengubah dan mengatur sandi layar kunci saat menggunakan wallpaper transparan.",
+      "Memperbaiki masalah kata sandi layar kunci yang dalam kondisi tertentu ditampilkan dalam orientasi lanskap",
+      "Memperbaiki masalah animasi pengisian daya dengan kabel yang tampil tidak normal dalam mode lanskap"
+    ],
+    "Jam": [
+      "Menambahkan fitur untuk memilih latar belakang hitam atau putih secara bebas di pengaturan Jam",
+      "Petunjuk: setelah pembaruan ini, warna latar belakang jam adalah putih."
+    ],
+    "Album": [
+      "Mengoptimalkan masalah penghapusan lambat di Galeri",
+      "Optimasi masalah pemuatan lambat halaman album",
+      "Mengoptimalkan lambatnya pemuatan thumbnail album"
+    ],
+    "Pembantu Jaringan": [
+      "Memperbaiki masalah di mana penyimpanan operasi tidak berlaku setelah menetapkan batas di pengaturan paket."
+    ],
+    "Keamanan": [
+      "Mengoptimalkan gaya jendela petunjuk Asisten Angpao dalam mode lanskap"
+    ],
+    "Layanan Cloud Xiaomi": [
+      "Memperbaiki tampilan halaman yang tidak tepat saat mengganti akun",
+      "Memperbaiki crash yang kadang terjadi",
+      "Memperbaiki tampilan status SIM yang terkadang tidak normal"
+    ],
+    "Xiaomi Wallet": [
+      "Ditambahkan: pengaturan “Kartu cepat khusus” di “Pengaturan metode tap kartu”.",
+      "Mengoptimalkan Kartu Pintu Xiaomi yang didesain ulang sepenuhnya",
+      "Dioptimalkan: halaman aktivasi kartu Xiaomi Transit disesuaikan untuk semua model",
+      "Memperbaiki masalah yang menampilkan \"Tidak dapat diaktifkan\" saat mengaktifkan Mi Pay",
+      "Memperbaiki masalah saat masuk ke daftar kartu transportasi menampilkan \"Memuat\" dan tidak dapat diketuk",
+      "Memperbaiki masalah di mana setelah menghapus kartu transportasi baru Shanghai, saat membuka kembali kartu menggunakan nomor kartu yang sebelumnya di-cache.",
+      "Memperbaiki masalah tombol \"Bangunkan dengan ketuk dua kali tombol Home\" tidak disembunyikan saat memilih gestur layar penuh",
+      "Memperbaiki masalah di mana saat tidak ada kartu NFC yang diaktifkan, mengetuk “Aktifkan” tidak mengalihkan ke halaman input kata sandi."
+    ],
     "Lainnya": [
       "Keamanan dan stabilitas sistem ditingkatkan"
     ]
   },
   "logs_vi": {
+    "Hệ thống": [
+      "Tối ưu hóa hiệu ứng âm thanh nổi của loa"
+    ],
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Tối ưu: Giao diện đổi tên vân tay",
+      "Đã khắc phục sự cố không thể thay đổi và đặt mật khẩu màn hình khóa khi dùng hình nền trong suốt.",
+      "Đã khắc phục sự cố mật khẩu màn hình khóa đôi khi hiển thị theo chiều ngang",
+      "Khắc phục sự cố hoạt ảnh sạc có dây hiển thị bất thường ở chế độ ngang"
+    ],
+    "Đồng hồ": [
+      "Đã thêm tính năng tự do chọn nền đen hoặc trắng trong cài đặt Đồng hồ",
+      "Lưu ý: sau bản cập nhật này, màu nền của đồng hồ là màu trắng."
+    ],
+    "Album": [
+      "Tối ưu hóa vấn đề xóa chậm trong Thư viện",
+      "Tối ưu hóa vấn đề tải chậm trang album",
+      "Tối ưu vấn đề tải hình thu nhỏ trong album chậm"
+    ],
+    "Trợ lý mạng": [
+      "Đã sửa lỗi thao tác lưu không có hiệu lực sau khi đặt giới hạn trong cài đặt gói."
+    ],
+    "Trung tâm An ninh": [
+      "Tối ưu hóa kiểu cửa sổ nhắc nhở của Trợ lý Lì xì ở chế độ ngang"
+    ],
+    "Dịch vụ đám mây Xiaomi": [
+      "Đã sửa lỗi hiển thị trang không chính xác khi chuyển tài khoản",
+      "Đã khắc phục sự cố thoát ứng dụng thỉnh thoảng xảy ra",
+      "Đã sửa lỗi đôi khi trạng thái SIM hiển thị bất thường"
+    ],
+    "Tiền túi Xiaomi": [
+      "Đã thêm: cài đặt “Thẻ nhanh tùy chỉnh” trong “Cài đặt phương thức quẹt thẻ”.",
+      "Tối ưu hóa Thẻ cửa Xiaomi được thiết kế lại hoàn toàn",
+      "Đã tối ưu: trang kích hoạt thẻ Xiaomi Transit được điều chỉnh cho tất cả các mẫu máy",
+      "Khắc phục sự cố hiển thị \"Không thể kích hoạt\" khi kích hoạt Mi Pay",
+      "Đã khắc phục sự cố khi vào danh sách thẻ giao thông hiển thị \"Đang tải\" và không thể nhấn",
+      "Đã khắc phục sự cố khi sau khi xóa thẻ giao thông mới Thượng Hải, việc mở lại thẻ sử dụng số thẻ đã được lưu trong bộ nhớ đệm trước đó.",
+      "Đã khắc phục sự cố nút \"Đánh thức bằng cách nhấn đúp phím Home\" không bị ẩn khi chọn cử chỉ toàn màn hình",
+      "Đã sửa lỗi khi chưa kích hoạt thẻ NFC nào, nhấn “Kích hoạt” không chuyển đến trang nhập mật khẩu."
+    ],
     "Khác": [
       "Cải thiện tính ổn định và bảo mật hệ thống"
     ]
   },
   "logs_th": {
+    "ระบบ": [
+      "เพิ่มประสิทธิภาพเอฟเฟกต์สเตอริโอของลำโพง"
+    ],
+    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
+      "การเพิ่มประสิทธิภาพ: UI สำหรับการเปลี่ยนชื่อลายนิ้วมือ",
+      "แก้ไขปัญหาที่ไม่สามารถเปลี่ยนและตั้งรหัสผ่านหน้าจอล็อกเมื่อใช้วอลเปเปอร์โปร่งใส",
+      "แก้ไขปัญหาที่รหัสผ่านหน้าจอล็อกในบางกรณีแสดงในแนวนอน",
+      "แก้ไขปัญหาภาพเคลื่อนไหวการชาร์จแบบมีสายแสดงผลผิดปกติในโหมดแนวนอน"
+    ],
+    "นาฬิกา": [
+      "เพิ่มฟีเจอร์ให้เลือกพื้นหลังสีดำหรือสีขาวได้อย่างอิสระในการตั้งค่านาฬิกา",
+      "คำแนะนำ: หลังการอัปเดตนี้ สีพื้นหลังของนาฬิกาเป็นสีขาว"
+    ],
+    "คลังภาพ": [
+      "ปรับปรุงปัญหาการลบที่ช้าในแกลเลอรี",
+      "ปรับปรุงปัญหาโหลดหน้าอัลบั้มช้า",
+      "ปรับปรุงปัญหาการโหลดภาพขนาดย่อในอัลบั้มช้า"
+    ],
+    "ผู้ช่วยออนไลน์": [
+      "แก้ไขปัญหาการบันทึกการดำเนินการไม่มีผลหลังจากตั้งค่าขีดจำกัดในการตั้งค่าแพ็กเกจ"
+    ],
+    "ความปลอดภัย": [
+      "ปรับปรุงสไตล์หน้าต่างแจ้งเตือนของผู้ช่วยอั่งเปาในโหมดแนวนอน"
+    ],
+    "บริการคลาวด์ Xiaomi": [
+      "แก้ไขการแสดงหน้าผิดพลาดเมื่อสลับบัญชี",
+      "แก้ไขอาการแครชที่เกิดขึ้นเป็นครั้งคราว",
+      "แก้ไขปัญหาการแสดงสถานะ SIM ผิดปกติเป็นครั้งคราว"
+    ],
+    "MI กระเป๋าเงิน": [
+      "เพิ่มการตั้งค่า “การ์ดด่วนแบบกำหนดเอง” ใน “การตั้งค่าวิธีแตะการ์ด”",
+      "เพิ่มประสิทธิภาพการ์ดประตู Xiaomi ที่ออกแบบใหม่ทั้งหมด",
+      "ปรับปรุง: หน้าเปิดใช้งานบัตร Xiaomi Transit รองรับทุกรุ่น",
+      "แก้ไขปัญหาที่แสดง \"ไม่สามารถเปิดใช้งานได้\" เมื่อเปิดใช้งาน Mi Pay",
+      "แก้ไขปัญหาที่เมื่อเข้าสู่รายการบัตรโดยสารแล้วแสดง \"กำลังโหลด\" และไม่สามารถแตะได้",
+      "แก้ไขปัญหาที่หลังจากลบการ์ดขนส่งสาธารณะใหม่เซี่ยงไฮ้ เมื่อเปิดการ์ดอีกครั้งจะใช้หมายเลขการ์ดที่แคชไว้ก่อนหน้านี้",
+      "แก้ไขปัญหาปุ่ม \"ปลุกด้วยการแตะปุ่ม Home สองครั้ง\" ไม่ถูกซ่อนเมื่อเลือกท่าทางเต็มหน้าจอ",
+      "แก้ไขปัญหาที่เมื่อยังไม่ได้เปิดใช้งานการ์ด NFC ใด ๆ การแตะ “เปิดใช้งาน” ไม่สามารถไปยังหน้าป้อนรหัสผ่านได้"
+    ],
     "อื่นๆ": [
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
     ]
   },
   "logs_ar": {
-    "أخرى": [
+    "النظام": [
+      "تحسين تأثير الاستريو لمكبر الصوت"
+    ],
+    "شاشة القفل، شريط الحالة، شريط الإشعارات": [
+      "التحسين: واجهة المستخدم لإعادة تسمية بصمة الإصبع",
+      "تم إصلاح مشكلة تعذر تغيير وتعيين كلمة مرور شاشة القفل عند استخدام خلفية شفافة.",
+      "تم إصلاح مشكلة ظهور كلمة مرور شاشة القفل في بعض الحالات بالوضع الأفقي",
+      "إصلاح مشكلة عرض رسوم متحركة الشحن السلكي بشكل غير طبيعي في الوضع الأفقي"
+    ],
+    "الساعة": [
+      "تمت إضافة ميزة اختيار الخلفية السوداء أو البيضاء بحرية في إعدادات الساعة",
+      "ملاحظة: بعد هذا التحديث، يصبح لون خلفية الساعة أبيض."
+    ],
+    "ألبوم الصور": [
+      "تحسين مشكلة الحذف البطيء في المعرض",
+      "تحسين مشكلة بطء تحميل صفحة الألبوم",
+      "تحسين مشكلة بطء تحميل صور الألبوم المصغرة"
+    ],
+    "مساعد الإنترنت": [
+      "تم إصلاح مشكلة عدم تفعيل حفظ العمليات بعد تعيين حد في إعدادات الخطة."
+    ],
+    "الأمان": [
+      "تم تحسين نمط نافذة تلميح مساعد الظرف الأحمر في الوضع الأفقي"
+    ],
+    "خدمة Xiaomi السحابية": [
+      "إصلاح عرض الصفحة بشكل غير صحيح عند تبديل الحساب",
+      "تم إصلاح تعطل يحدث أحيانًا",
+      "تم إصلاح عرض حالة SIM غير الطبيعي أحيانًا"
+    ],
+    "آخرين": [
       "تحسين أمن واستقرار النظام"
     ]
   },
   "logs_in": {
+    "सिस्टम": [
+      "स्पीकर के स्टीरियो प्रभाव को अनुकूलित करें"
+    ],
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
+      "ऑप्टिमाइज़ेशन फिंगरप्रिंट का नाम बदलने देने की सुविधा वाला यूआई",
+      "पारदर्शी वॉलपेपर का उपयोग करते समय लॉक स्क्रीन पासवर्ड बदलने और सेट करने में असमर्थ होने की समस्या को ठीक किया गया।",
+      "कुछ स्थितियों में लॉक स्क्रीन पासवर्ड के लैंडस्केप में दिखने की समस्या ठीक की गई",
+      "लैंडस्केप मोड में वायर्ड चार्जिंग एनिमेशन के असामान्य रूप से प्रदर्शित होने की समस्या ठीक की गई"
+    ],
+    "घड़ी": [
+      "घड़ी सेटिंग्स में काले या सफेद बैकग्राउंड को स्वतंत्र रूप से चुनने की सुविधा जोड़ी गई",
+      "संकेत: इस अपडेट के बाद घड़ी का पृष्ठभूमि रंग सफ़ेद है।"
+    ],
+    "अल्बम": [
+      "गैलरी में धीमे डिलीट की समस्या का अनुकूलन",
+      "एल्बम पेज की धीमी लोडिंग समस्या को अनुकूलित किया",
+      "एल्बम थंबनेल के धीमे लोड होने की समस्या का अनुकूलन"
+    ],
+    "वर्चुअल असिस्टेंट": [
+      "प्लान सेटिंग्स में सीमा सेट करने के बाद ऑपरेशन सहेजना प्रभावी न होने की समस्या ठीक की गई।"
+    ],
+    "सुरक्षा": [
+      "लैंडस्केप मोड में रेड पैकेट असिस्टेंट की सूचना विंडो की शैली अनुकूलित की गई"
+    ],
+    "Xiaomi क्लाउड सेवा": [
+      "खाता बदलते समय पेज का गलत तरीके से दिखना ठीक किया गया",
+      "कभी-कभार होने वाले क्रैश को ठीक किया गया",
+      "असामान्य SIM स्थिति प्रदर्शन की कभी-कभार होने वाली समस्या ठीक की गई"
+    ],
+    "MI वॉलेट": [
+      "जोड़ा गया: “कार्ड स्वाइप विधि सेटिंग्स” में “कस्टम त्वरित कार्ड” सेटिंग जोड़ी गई।",
+      "Xiaomi डोर कार्ड के पूर्णतः नए डिज़ाइन को अनुकूलित किया गया",
+      "अनुकूलित: Xiaomi Transit कार्ड सक्रियण पृष्ठ सभी मॉडलों के अनुरूप",
+      "Mi Pay सक्रिय करते समय \"सक्रिय नहीं किया जा सकता\" दिखने की समस्या ठीक की गई",
+      "ट्रांजिट कार्ड सूची में प्रवेश करते समय \"लोड हो रहा है\" दिखने और टैप न किए जा सकने की समस्या ठीक की गई",
+      "शंघाई नई ट्रांजिट कार्ड हटाने के बाद, कार्ड को फिर से खोलने पर पहले से कैश किए गए कार्ड नंबर का उपयोग करने की समस्या को ठीक किया गया।",
+      "फ़ुल स्क्रीन जेस्चर चुनने पर \"Home कुंजी को दो बार टैप करके जगाने\" बटन के न छिपने की समस्या ठीक की गई",
+      "ठीक किया गया कि जब कोई NFC कार्ड सक्रिय नहीं है, तो “सक्रिय करें” पर टैप करने से पासवर्ड इनपुट पेज पर नहीं जाता था।"
+    ],
     "अन्य": [
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
     ]
   },
   "logs_ug": {
+    "سىستېما": [
+      "ياڭراتقۇنىڭ ستېرېئو ئۈنۈمىنى ئەلالاشتۇرۇش"
+    ],
+    "رەسىم ئالبومى": [
+      "رەسىم ئامبىرىدا ئۆچۈرۈش ئاستا بولۇش مەسىلىسىنى ئەلالاشتۇرۇش",
+      "ئالبوم بېتىنىڭ ئاستا يۈكلىنىش مەسىلىسىنى ياخشىلاش",
+      "ئالبوم كىچىك سۈرەتلىرىنىڭ ئاستا يۈكلىنىش مەسىلىسىنى ئەلالاشتۇرۇش"
+    ],
     "باشقىلىرى": [
       "Improved system security and stability"
     ]

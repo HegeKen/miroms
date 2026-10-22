@@ -159,7 +159,10 @@
       "Fix: Incorrect voice prompts for downloading super wallpapers in Accessibility mode",
       "Fix: Text truncation issues in super wallpapers",
       "Fix: UI elements overlapped in the super wallpaper settings",
-      "Fix: When system font size was set to large, super wallpaper descriptions overlapped during the setup process"
+      "Fix: When system font size was set to large, super wallpaper descriptions overlapped during the setup process",
+      "Fixed an issue where setting the Home screen wallpaper in Second Space caused abnormal display.",
+      "Fixed incomplete text display in Earth Super Wallpaper",
+      "Fixed the text overlap issue on the Super Wallpaper landing point selection page when using large fonts."
     ],
     "Control center": [
       "Fix: The status of the Silent mode toggle wasn't displayed correctly in some cases",
@@ -211,6 +214,34 @@
       "液態存儲】 靈敏且高效的檔案儲存機制，提升系統抗老化能力",
       "智慧均衡】 對旗艦硬體性能的智慧調整"
     ],
+    "主題": [
+      "修復: 設定頁超級壁紙底部導航欄顯示不清楚",
+      "修復: 省電模式下，分身空間桌面壁紙與主空間相同",
+      "修復: 分身空間中設定桌面壁紙異常顯示",
+      "修復: 部份場景下解鎖時壁紙閃爍",
+      "修復: 某些場景下的壁紙服務出現錯誤",
+      "修復: 部分壁紙預覽頁顯示異常",
+      "修復: 螢幕鎖定畫面指紋解鎖螢幕閃爍",
+      "修復 部分場景下關閉深色模式壁紙仍為深色效果",
+      "修復: 退出超級省電模式後，桌面壁紙變黑",
+      "修復: 無障礙模式下，超級壁紙點擊下載時播報錯誤",
+      "修復: 地球超級壁紙文字顯示不完整",
+      "修復: 超級壁紙卡片文案與按鈕重疊的問題",
+      "修復: 大字體時，超級壁紙落地點選擇頁文字重疊",
+      "修復: 部分場景下關閉深色模式壁紙仍為深色效果",
+      "修復: 設定-超級壁紙卡片文案與按鈕重疊",
+      "修復: 設定頁面超級壁紙底部導航欄顯示不清楚的問題",
+      "修復: 省電模式下, 分身空間桌面壁紙與主空間相同的問題",
+      "修復 分身空間中設定桌面壁紙異常顯示的問題",
+      "修復: 部分場景下解鎖時壁紙閃爍的問題",
+      "修復: 某些場景下的壁紙服務崩潰的問題",
+      "修復: 部分壁紙預覽頁顯示異常的問題",
+      "修復: 螢幕鎖定介面指紋解鎖螢幕閃爍的問題",
+      "修復: 退出超級省電模式後，桌面壁紙變黑的問題",
+      "修復: 無障礙模式下，超級壁紙點擊下載時播報錯誤的問題",
+      "修復 地球超級壁紙文字顯示不完整的問題",
+      "修復 大字體時，超級桌布落點選擇頁文字重疊的問題"
+    ],
     "控制中心": [
       "修復: 點擊靜音開關後狀態顯示錯誤的問題",
       "修復: 斷開藍牙設備時界面閃爍問題",
@@ -233,21 +264,6 @@
       "修復: 螢幕鎖定使用第三方主題後，開啟超級壁紙功能，螢幕鎖定頁面時間資訊不顯示的問題",
       "修復: 螢幕鎖定畫面時鐘顯示時記憶體異常的問題",
       "修復: 充電動畫顯示時有概率記憶體異常的問題"
-    ],
-    "主題": [
-      "修復: 設定頁超級壁紙底部導航欄顯示不清楚",
-      "修復: 省電模式下，分身空間桌面壁紙與主空間相同",
-      "修復: 分身空間中設定桌面壁紙異常顯示",
-      "修復: 部份場景下解鎖時壁紙閃爍",
-      "修復: 某些場景下的壁紙服務出現錯誤",
-      "修復: 部分壁紙預覽頁顯示異常",
-      "修復: 螢幕鎖定畫面指紋解鎖螢幕閃爍",
-      "修復: 部分場景下關閉深色模式壁紙仍為深色效果",
-      "修復: 退出超級省電模式後，桌面壁紙變黑",
-      "修復: 無障礙模式下，超級壁紙點擊下載時播報錯誤",
-      "修復: 地球超級壁紙文字顯示不完整",
-      "修復: 設定-超級壁紙卡片文案與按鈕重疊",
-      "修復: 大字體時，超級壁紙落地點選擇頁文字重疊"
     ],
     "系統": [
       "修復: 點擊靜音開關後狀態顯示錯誤的問題",
@@ -589,7 +605,7 @@
       "Naprawiono: Elementy interfejsu użytkownika nakładały się w ustawieniach super tapety",
       "Naprawiono: Gdy systemowy rozmiar czcionki został ustawiony na duży, opisy super tapet nakładały się podczas procesu konfiguracji"
     ],
-    "Inne": [
+    "Reszt": [
       "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
@@ -600,6 +616,33 @@
       "Atomisierter Speicher: Der ultrafeine Speicherverwaltungsmechanismus macht die RAM-Nutzung effizienter.",
       "Flüssiger Speicher: Neue sensible Speichermechanismen halten Ihr System im Laufe der Zeit lebendig und reaktionsschnell.",
       "Intelligente Balance: Verbesserungen am Systemkern ermöglichen es deinem Gerät, die Flagship-Hardware optimal zu nutzen."
+    ],
+    "Themen": [
+      "Behoben: Die Navigationsschaltflächen wurden in den Super-Wallpaper-Einstellungen nicht korrekt angezeigt.",
+      "Behoben: Bei aktiviertem Energiesparmodus wurden Hintergrundbilder aus dem ersten Bereich auch im zweiten Bereich angewendet.",
+      "Behoben: Hintergrundbilder wurden im zweiten Bereich nicht korrekt angezeigt.",
+      "Behoben: In einigen Fällen flackerten die Hintergrundbilder beim Entsperren des Geräts.",
+      "Behoben: Der Hintergrundbilddienst stürzte in einigen Fällen ab.",
+      "Behebung: Einige Wallpaper-Vorschauen wurden nicht korrekt angezeigt",
+      "Behebung: Der Bildschirm flackerte bei der Entsperrung per Fingerabdruck",
+      "Behoben: In einigen Fällen blieben Hintergrundbilder dunkel, nachdem der Dunkelmodus deaktiviert wurde",
+      "Behebung: Der Startbildschirm-Hintergrund wurde schwarz, nachdem der Ultra-Energiesparmodus deaktiviert wurde",
+      "Behebung: Falsche Sprachansagen beim Herunterladen von Super-Wallpapers im Barrierefreiheitsmodus",
+      "Behebung: Text wurde in Super-Wallpapers abgeschnitten",
+      "Behoben: Überlappung von Text und Schaltfläche auf der Super-Wallpaper-Karte in den Einstellungen",
+      "Behebung: Bei großer Schrift überlappten sich Super-Wallpaper-Beschreibungen während der Einrichtung",
+      "Behoben: In einigen Fällen blieben die Hintergrundbilder dunkel, nachdem der Dunkelmodus deaktiviert wurde.",
+      "Behebung: UI-Elemente überlappten sich in den Super-Wallpaper-Einstellungen",
+      "Behoben: Navigationsschaltflächen wurden in den Einstellungen für Super-Hintergrundbilder nicht korrekt angezeigt.",
+      "Behoben: Fehlerhafte Anzeige beim Festlegen des Startbildschirm-Hintergrunds im Zweiten Bereich.",
+      "Behoben: In manchen Fällen flackerten die Hintergrundbilder beim Entsperren des Geräts.",
+      "Behoben: In manchen Fällen stürzten die Hintergrundbilddienste ab.",
+      "Behoben: Einige Vorschauen von Hintergrundbildern wurden nicht korrekt angezeigt.",
+      "Behoben: Der Bildschirm flackerte während der Verwendung der Fingerabdruck-Entsperrung",
+      "Behoben: Nach dem Deaktivieren des Ultra-Energiesparmodus wurde der Startbildschirmhintergrund schwarz.",
+      "Behoben: Falsche Sprachansagen beim Herunterladen von Super-Hintergrundbildern im Barrierefreiheitsmodus.",
+      "Fehler behoben, bei dem Text im Earth Super Wallpaper unvollständig angezeigt wurde",
+      "Das Problem überlappender Texte auf der Auswahlseite für den Landepunkt des Super-Hintergrunds bei großer Schrift wurde behoben."
     ],
     "Kontrollzentrum": [
       "Behoben: Der Status des Stummschalters wurde in manchen Fällen nicht korrekt angezeigt",
@@ -624,20 +667,20 @@
       "Behoben: Speicherprobleme bei Anzeige der Doppeluhr",
       "Behoben: Speichernutzungsprobleme bei der Anzeige der Ladeanimation"
     ],
-    "Themen": [
-      "Behoben: Die Navigationsschaltflächen wurden in den Super-Wallpaper-Einstellungen nicht korrekt angezeigt.",
-      "Behoben: Bei aktiviertem Energiesparmodus wurden Hintergrundbilder aus dem ersten Bereich auch im zweiten Bereich angewendet.",
-      "Behoben: Hintergrundbilder wurden im zweiten Bereich nicht korrekt angezeigt.",
-      "Behoben: In einigen Fällen flackerten die Hintergrundbilder beim Entsperren des Geräts.",
-      "Behoben: Der Hintergrundbilddienst stürzte in einigen Fällen ab.",
-      "Behebung: Einige Wallpaper-Vorschauen wurden nicht korrekt angezeigt",
-      "Behebung: Der Bildschirm flackerte bei der Entsperrung per Fingerabdruck",
-      "Behoben: In einigen Fällen blieben die Hintergrundbilder dunkel, nachdem der Dunkelmodus deaktiviert wurde.",
-      "Behebung: Der Startbildschirm-Hintergrund wurde schwarz, nachdem der Ultra-Energiesparmodus deaktiviert wurde",
-      "Behebung: Falsche Sprachansagen beim Herunterladen von Super-Wallpapers im Barrierefreiheitsmodus",
-      "Behebung: Text wurde in Super-Wallpapers abgeschnitten",
-      "Behebung: UI-Elemente überlappten sich in den Super-Wallpaper-Einstellungen",
-      "Behebung: Bei großer Schrift überlappten sich Super-Wallpaper-Beschreibungen während der Einrichtung"
+    "System": [
+      "Behoben: Der Status des Stummschalters wurde in manchen Fällen nicht korrekt angezeigt",
+      "Behoben: Der Bildschirm flackerte beim Trennen von Bluetooth-Geräten",
+      "Behoben: Schalter verschwanden nach dem Ausschalten des Energiesparmodus",
+      "Behoben: Das Kontrollzentrum ließ sich bei aktivem Ultra-Energiesparmodus nicht schließen",
+      "Behoben: Der Schalter für den Energiesparmodus funktionierte nicht",
+      "Behoben: Das Kontrollzentrum wurde im Dunkelmodus nicht korrekt angezeigt"
+    ],
+    "Xiaomi Cloud-Dienst": [
+      "Behoben: Statusleisten-Symbole wurden in manchen Fällen schwarz",
+      "Behoben: Musik-Player-Steuerelemente wurden in manchen Fällen nicht angezeigt",
+      "Behoben: App-Benachrichtigungsschalter funktionierten nicht immer",
+      "Behebung: Die Schaltfläche zum Leeren des Arbeitsspeichers wurde in der Benachrichtigungsleiste nicht immer korrekt angezeigt",
+      "Behoben: Probleme bei der Anzeige gruppierter Benachrichtigungen"
     ],
     "Sonstiges": [
       "Systemsicherheit und -stabilität verbessert"
@@ -1224,7 +1267,7 @@
       "الإصلاح: مشكلة تتداخل عناصر واجهة المستخدم في إعدادات خلفيات سوبر",
       "الإصلاح: مشكلة تتداخل وصف خلفيات سوبر أثناء عملية إعداداها عند تعيين حجم خط النظام إلى كبير"
     ],
-    "أخرى": [
+    "آخرين": [
       "تحسين أمن واستقرار النظام"
     ]
   },
@@ -1339,6 +1382,21 @@
       "Fix: UI elements overlapped in the super wallpaper settings",
       "Fix: When system font size was set to large, super wallpaper descriptions overlapped during the setup process"
     ],
+    "سىستېما": [
+      "Fix: The status of the Silent mode toggle wasn't displayed correctly in some cases",
+      "Fix: The screen flashed while Bluetooth devices were disconnected",
+      "Fix: Toggles disappeared after Battery saver had been turned off",
+      "Fix: Control center couldn't be closed when Ultra battery saver was on",
+      "Fix: Battery saver toggle didn't work",
+      "Fix: Control center wasn't displayed correctly in Dark mode"
+    ],
+    "Xiaomi بۇلۇت مۇلازىمىتى": [
+      "Fix: Status bar icons turned black in some cases",
+      "Fix: Music player controls weren't displayed in some cases",
+      "Fix: App notification switches didn't always work",
+      "Fix: The button for clearing memory wasn't always displayed correctly in the Notification shade",
+      "Fix: Issues with displaying grouped notifications"
+    ],
     "باشقىلىرى": [
       "Improved system security and stability"
     ]
@@ -1388,6 +1446,21 @@
       "Fix: Text truncation issues in super wallpapers",
       "Fix: UI elements overlapped in the super wallpaper settings",
       "Fix: When system font size was set to large, super wallpaper descriptions overlapped during the setup process"
+    ],
+    "མ་ལག": [
+      "Fix: The status of the Silent mode toggle wasn't displayed correctly in some cases",
+      "Fix: The screen flashed while Bluetooth devices were disconnected",
+      "Fix: Toggles disappeared after Battery saver had been turned off",
+      "Fix: Control center couldn't be closed when Ultra battery saver was on",
+      "Fix: Battery saver toggle didn't work",
+      "Fix: Control center wasn't displayed correctly in Dark mode"
+    ],
+    "Mi Cloud": [
+      "Fix: Status bar icons turned black in some cases",
+      "Fix: Music player controls weren't displayed in some cases",
+      "Fix: App notification switches didn't always work",
+      "Fix: The button for clearing memory wasn't always displayed correctly in the Notification shade",
+      "Fix: Issues with displaying grouped notifications"
     ],
     "གཞན།": [
       "Improved system security and stability"

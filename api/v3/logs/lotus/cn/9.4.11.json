@@ -10,7 +10,7 @@
       "新增 在时钟设置中自由选择黑色或白色背景的功能",
       "提示：本次更新后时钟的背景颜色为白色"
     ],
-    "网络助手": [
+    "数据使用情况": [
       "修复 套餐设置中限额后操作保存失效的问题"
     ],
     "安全中心": [
@@ -26,91 +26,469 @@
     ]
   },
   "logs_en": {
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Optimization: The UI for renaming fingerprints",
+      "Fixed an issue where the lock screen password could not be changed or set when using a transparent wallpaper",
+      "Fixed an issue where the lock screen password could be displayed in landscape in certain cases",
+      "Fixed the issue where the wired charging animation displayed abnormally in landscape mode"
+    ],
+    "Clock": [
+      "Added the ability to freely choose black or white background in Clock settings",
+      "Note: After this update, the clock background color is white."
+    ],
+    "Online Assistant": [
+      "Fixed an issue where saving operations did not take effect after setting a limit in plan settings."
+    ],
+    "Security": [
+      "Optimized the style of the Red Packet Assistant prompt window in landscape mode"
+    ],
+    "Mi Cloud": [
+      "Fix incorrect page display when switching accounts",
+      "Fixed occasional crash",
+      "Fixed occasional abnormal SIM status display"
+    ],
     "Other": [
       "Improved system security and stability"
     ]
   },
   "logs_zh_tw": {
+    "解鎖畫面、狀態欄、通知欄": [
+      "優化: 指紋重新命名頁面的UI和體驗",
+      "修復 使用透明桌布時，無法修改和設定鎖屏密碼",
+      "修復 鎖屏密碼在個別情況下會橫屏顯示的問題",
+      "修復 橫屏狀態下有線充電動畫顯示異常的問題"
+    ],
+    "時鐘": [
+      "新增 在時鐘設定中自由選擇黑色或白色背景的功能",
+      "提示：本次更新後時鐘的背景顏色為白色"
+    ],
+    "網路助手": [
+      "修復 套餐設定中限額後操作儲存失效的問題"
+    ],
+    "安全中心": [
+      "優化 橫屏下紅包助手提示視窗的樣式"
+    ],
+    "小米雲服務": [
+      "修正 更換帳號時頁面顯示不正確",
+      "修復 偶現crash",
+      "修正 偶現SIM狀態顯示不正常"
+    ],
     "其他": [
       "Improved system security and stability"
     ]
   },
   "logs_ja": {
+    "ロック画面、ステータスバー、通知バー": [
+      "最適化: 指紋の名前を変更するUI",
+      "透明壁紙使用時にロック画面のパスワードを変更・設定できない問題を修正",
+      "特定の状況でロック画面のパスワードが横向きに表示される問題を修正",
+      "横向き状態で有線充電アニメーションが異常表示される問題を修正"
+    ],
+    "時計": [
+      "時計の設定で黒または白の背景を自由に選択できる機能を追加",
+      "ヒント：今回のアップデート後、時計の背景色は白色になります。"
+    ],
+    "ネットワークアシスタント": [
+      "プラン設定で上限を設定した後、操作の保存が反映されない問題を修正しました。"
+    ],
+    "セキュリティ": [
+      "横向き時の紅包助手の通知ウィンドウのスタイルを最適化"
+    ],
+    "Xiaomi クラウドサービス": [
+      "アカウント切り替え時にページが正しく表示されない問題を修正",
+      "時々発生するクラッシュを修正",
+      "SIMステータスが正常に表示されないことがある問題を修正"
+    ],
     "その他": [
       "システムのセキュリティと安定性の向上"
     ]
   },
   "logs_ko": {
+    "잠금 화면, 상태 표시줄, 알림 표시줄": [
+      "최적화: 지문 이름 변경을 위한 UI",
+      "투명 배경화면 사용 시 잠금 화면 비밀번호를 변경 및 설정할 수 없는 문제를 수정",
+      "특정 상황에서 잠금 화면 비밀번호가 가로 방향으로 표시되는 문제를 수정",
+      "가로 모드에서 유선 충전 애니메이션이 비정상적으로 표시되는 문제를 수정"
+    ],
+    "시계": [
+      "시계 설정에서 검은색 또는 흰색 배경을 자유롭게 선택할 수 있는 기능 추가",
+      "안내: 이번 업데이트 후 시계의 배경색이 흰색입니다."
+    ],
+    "네트워크 어시스턴트": [
+      "요금제 설정에서 한도를 설정한 후 작업 저장이 적용되지 않는 문제를 수정했습니다."
+    ],
+    "보안": [
+      "가로 화면에서 홍바오 도우미 알림창 스타일 최적화"
+    ],
+    "Xiaomi 클라우드 서비스": [
+      "계정 전환 시 페이지가 올바르게 표시되지 않는 문제 수정",
+      "간헐적으로 발생하는 충돌 수정",
+      "SIM 상태가 비정상적으로 표시되는 간헐적 문제 수정"
+    ],
     "기타": [
       "시스템 보안 및 안정성 개선"
     ]
   },
   "logs_ru": {
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Оптимизация: Интерфейс переименования отпечатков пальцев",
+      "Исправлена проблема, из-за которой при использовании прозрачных обоев нельзя было изменить или задать пароль блокировки экрана.",
+      "Исправлена проблема, из-за которой пароль экрана блокировки в некоторых случаях отображался в альбомной ориентации",
+      "Исправлена проблема с некорректным отображением анимации проводной зарядки в альбомной ориентации"
+    ],
+    "Часы": [
+      "Добавлена возможность свободного выбора черного или белого фона в настройках часов",
+      "Примечание: после этого обновления цвет фона часов — белый."
+    ],
+    "Интернет-ассистент": [
+      "Исправлена проблема, из-за которой сохранение операций не применялось после установки лимита в настройках тарифа."
+    ],
+    "Безопасность": [
+      "Оптимизирован стиль окна подсказки помощника Red Packet в горизонтальной ориентации"
+    ],
+    "Облачный сервис Xiaomi": [
+      "Исправлено некорректное отображение страницы при смене аккаунта",
+      "Исправлен периодический сбой",
+      "Исправлено периодическое некорректное отображение статуса SIM"
+    ],
     "Другое": [
       "Улучшение безопасности и стабильности системы"
     ]
   },
   "logs_uk": {
+    "Екран блокування, рядок стану, рядок сповіщень": [
+      "Оптимізація: Інтерфейс перейменування відбитків пальців",
+      "Виправлено проблему, через яку під час використання прозорих шпалер не можна було змінити або встановити пароль блокування екрана.",
+      "Виправлено проблему, через яку пароль екрана блокування в окремих випадках відображався в альбомній орієнтації",
+      "Виправлено проблему з ненормальним відображенням анімації дротової зарядки в альбомній орієнтації"
+    ],
+    "Годинник": [
+      "Додано можливість вільно вибирати чорний або білий фон у налаштуваннях годинника",
+      "Підказка: після цього оновлення фон годинника стає білим."
+    ],
+    "Інтернет-асистент": [
+      "Виправлено проблему, через яку збереження операцій не застосовувалося після встановлення ліміту в налаштуваннях тарифу."
+    ],
+    "Безпека": [
+      "Оптимізовано стиль вікна підказки помічника Red Packet у горизонтальній орієнтації"
+    ],
+    "Хмарний сервіс Xiaomi": [
+      "Виправлено неправильне відображення сторінки під час зміни облікового запису",
+      "Виправлено періодичний збій",
+      "Виправлено періодичне некоректне відображення статусу SIM"
+    ],
     "Інше": [
       "Покращення безпеки та стабільності системи"
     ]
   },
   "logs_pl": {
-    "Inne": [
+    "Ekran blokady, pasek stanu, pasek powiadomień": [
+      "Zoptymalizowano: Interfejs użytkownika do zmiany nazwy odcisków palców",
+      "Naprawiono problem uniemożliwiający zmianę i ustawienie hasła ekranu blokady przy użyciu przezroczystej tapety.",
+      "Naprawiono problem, w wyniku którego hasło ekranu blokady w niektórych przypadkach było wyświetlane w orientacji poziomej",
+      "Naprawiono problem z nieprawidłowym wyświetlaniem animacji ładowania przewodowego w orientacji poziomej"
+    ],
+    "Zegar": [
+      "Dodano możliwość swobodnego wyboru czarnego lub białego tła w ustawieniach zegara",
+      "Wskazówka: po tej aktualizacji tło zegara jest białe."
+    ],
+    "Asystent online": [
+      "Naprawiono problem z brakiem zapisu operacji po ustawieniu limitu w ustawieniach taryfy."
+    ],
+    "Bezpieczeństwo": [
+      "Zoptymalizowano wygląd okna pomocnika Red Packet w orientacji poziomej"
+    ],
+    "Usługa w chmurze Xiaomi": [
+      "Poprawiono nieprawidłowe wyświetlanie strony przy zmianie konta",
+      "Naprawiono sporadyczne awarie",
+      "Naprawiono sporadyczne nieprawidłowe wyświetlanie stanu SIM"
+    ],
+    "Reszt": [
       "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
   "logs_de": {
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
+      "Optimierung: Die Benutzeroberfläche zum Umbenennen von Fingerabdrücken",
+      "Problem behoben, bei dem mit einem transparenten Hintergrundbild das Sperrbildschirm-Passwort nicht geändert oder festgelegt werden konnte.",
+      "Das Problem wurde behoben, dass das Sperrbildschirm-Passwort in bestimmten Fällen im Querformat angezeigt wurde",
+      "Problem mit fehlerhafter Anzeige der Kabel-Ladeanimation im Querformat behoben"
+    ],
+    "Uhr": [
+      "Funktion hinzugefügt, um in den Uhr-Einstellungen frei zwischen schwarzem oder weißem Hintergrund zu wählen",
+      "Hinweis: Nach diesem Update ist der Hintergrund der Uhr weiß."
+    ],
+    "Online-Assistent": [
+      "Das Problem wurde behoben, dass das Speichern von Vorgängen nach dem Festlegen eines Limits in den Tarifeinstellungen nicht wirksam wurde."
+    ],
+    "Sicherheit": [
+      "Stil des Hinweisfensters des Red Packet Assistant im Querformat optimiert"
+    ],
+    "Xiaomi Cloud-Dienst": [
+      "Die fehlerhafte Seitenanzeige beim Wechsel des Kontos wurde behoben",
+      "Gelegentlichen Absturz behoben",
+      "Gelegentliche fehlerhafte Anzeige des SIM-Status behoben"
+    ],
     "Sonstiges": [
       "Systemsicherheit und -stabilität verbessert"
     ]
   },
   "logs_fr": {
+    "Écran de verrouillage, barre d’état, barre de notifications": [
+      "Optimisation: L'IU pour renommer les empreintes digitales",
+      "Correction d’un problème empêchant de modifier et définir le mot de passe de l’écran de verrouillage avec un fond d’écran transparent.",
+      "Correction d’un problème où le mot de passe de l’écran de verrouillage pouvait s’afficher en mode paysage dans certains cas",
+      "Correction du problème d'affichage anormal de l'animation de charge filaire en mode paysage"
+    ],
+    "Horloge": [
+      "Ajout de la possibilité de choisir librement entre un fond noir ou blanc dans les paramètres de l'horloge",
+      "Remarque : après cette mise à jour, la couleur d’arrière-plan de l’horloge est blanche."
+    ],
+    "Assistant en ligne": [
+      "Correction d’un problème où l’enregistrement des opérations ne prenait pas effet après la définition d’une limite dans les paramètres du forfait."
+    ],
+    "Sécurité": [
+      "Optimisation du style de la fenêtre de notification de l’assistant Red Packet en mode paysage"
+    ],
+    "Service cloud Xiaomi": [
+      "Correction de l'affichage incorrect de la page lors du changement de compte",
+      "Correction d'un plantage intermittent",
+      "Correction de l'affichage anormal occasionnel de l'état SIM"
+    ],
     "Autre": [
       "Sécurité et stabilité du système améliorées"
     ]
   },
   "logs_it": {
+    "Schermata di blocco, barra di stato, barra delle notifiche": [
+      "Ottimizzazione: Interfaccia utente per rinominare le impronte digitali",
+      "Risolto un problema che impediva di modificare e impostare la password della schermata di blocco usando uno sfondo trasparente.",
+      "Risolto un problema per cui la password della schermata di blocco in alcuni casi veniva visualizzata in orizzontale",
+      "Risolto il problema di visualizzazione anomala dell'animazione di ricarica con cavo in modalità orizzontale"
+    ],
+    "Orologio": [
+      "Aggiunta la possibilità di scegliere liberamente tra sfondo nero o bianco nelle impostazioni dell'orologio",
+      "Nota: dopo questo aggiornamento, il colore di sfondo dell'orologio è bianco."
+    ],
+    "Assistente online": [
+      "Risolto un problema per cui il salvataggio delle operazioni non aveva effetto dopo aver impostato un limite nelle impostazioni del piano."
+    ],
+    "Sicurezza": [
+      "Ottimizzato lo stile della finestra di avviso di Red Packet Assistant in orientamento orizzontale"
+    ],
+    "Servizio cloud Xiaomi": [
+      "Risolto il problema di visualizzazione errata della pagina quando si cambia account",
+      "Risolto un crash intermittente",
+      "Risolto il problema della visualizzazione anomala occasionale dello stato SIM"
+    ],
     "Altro": [
       "Maggiore sicurezza e stabilità di sistema"
     ]
   },
   "logs_es": {
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Optimización: La interfaz de usuario para renombrar huellas dactilares",
+      "Se corrigió un problema que impedía cambiar y establecer la contraseña de la pantalla de bloqueo al usar un fondo de pantalla transparente.",
+      "Se corrigió un problema por el que la contraseña de la pantalla de bloqueo podía mostrarse en horizontal en algunos casos",
+      "Se corrige el problema de visualización anómala de la animación de carga por cable en modo horizontal"
+    ],
+    "Reloj": [
+      "Añadida la función para elegir libremente entre fondo negro o blanco en los ajustes del reloj",
+      "Aviso: después de esta actualización, el color de fondo del reloj es blanco."
+    ],
+    "Asistente de red": [
+      "Se corrigió un problema por el que el guardado de operaciones no surtía efecto tras establecer un límite en los ajustes del plan."
+    ],
+    "Seguridad": [
+      "Se ha optimizado el estilo de la ventana emergente del Asistente de sobres rojos en modo horizontal"
+    ],
+    "Servicio en la nube de Xiaomi": [
+      "Corregida la visualización incorrecta de la página al cambiar de cuenta",
+      "Corregido un fallo intermitente",
+      "Corregida la visualización anómala ocasional del estado SIM"
+    ],
     "Otros": [
       "Estabilidad y seguridad del sistema mejorada"
     ]
   },
   "logs_pt": {
+    "Tela de bloqueio, barra de status, barra de notificações": [
+      "Otimização: Interface para renomear impressões digitais",
+      "Corrigido um problema que impedia alterar e definir a senha da tela de bloqueio ao usar um papel de parede transparente.",
+      "Corrigido um problema em que a senha da tela de bloqueio podia ser exibida na horizontal em alguns casos",
+      "Corrigido o problema de exibição anormal da animação de carregamento com fio no modo paisagem"
+    ],
+    "Relógio": [
+      "Adicionada a possibilidade de escolher livremente entre fundo preto ou branco nas configurações do relógio",
+      "Aviso: após esta atualização, a cor de fundo do relógio é branca."
+    ],
+    "Assistente de Rede": [
+      "Corrigido um problema em que guardar operações não tinha efeito após definir um limite nas configurações do plano."
+    ],
+    "Segurança": [
+      "Otimizado o estilo da janela de aviso do Assistente de Envelopes Vermelhos no modo paisagem"
+    ],
+    "Serviço de nuvem Xiaomi": [
+      "Corrigida a exibição incorreta da página ao trocar de conta",
+      "Corrigida falha intermitente",
+      "Corrigida a exibição anormal ocasional do estado do SIM"
+    ],
     "Outros": [
       "Segurança e estabilidade do sistema aprimoradas"
     ]
   },
   "logs_tr": {
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Optimizasyon: Parmak izlerini yeniden adlandırmak için arayüz",
+      "Şeffaf duvar kağıdı kullanırken kilit ekranı parolasının değiştirilememesi ve ayarlanamaması sorunu giderildi.",
+      "Kilit ekranı parolasının bazı durumlarda yatay olarak görüntülenmesi sorunu düzeltildi",
+      "Yatay modda kablolu şarj animasyonunun anormal görüntülenmesi sorunu giderildi"
+    ],
+    "Saat": [
+      "Saat ayarlarında siyah veya beyaz arka planı serbestçe seçme özelliği eklendi",
+      "İpucu: Bu güncellemeden sonra saatin arka plan rengi beyazdır."
+    ],
+    "Ağ Asistanı": [
+      "Plan ayarlarında limit belirledikten sonra işlemleri kaydetmenin etkili olmaması sorunu giderildi."
+    ],
+    "Güvenlik": [
+      "Yatay modda Red Packet Assistant uyarı penceresinin stili optimize edildi"
+    ],
+    "Xiaomi Bulut Hizmeti": [
+      "Hesap değiştirirken sayfanın yanlış görüntülenmesi düzeltildi",
+      "Ara sıra oluşan çökme düzeltildi",
+      "SIM durumunun ara sıra anormal görüntülenmesi düzeltildi"
+    ],
     "Diğer": [
       "Sistem güvenliği ve kararlılığı geliştirildi"
     ]
   },
   "logs_id": {
+    "Layar kunci, bilah status, bilah notifikasi": [
+      "Pengoptimalan: Desain antarmuka (UI) untuk mengganti nama sidik jari",
+      "Memperbaiki masalah tidak dapat mengubah dan mengatur sandi layar kunci saat menggunakan wallpaper transparan.",
+      "Memperbaiki masalah kata sandi layar kunci yang dalam kondisi tertentu ditampilkan dalam orientasi lanskap",
+      "Memperbaiki masalah animasi pengisian daya dengan kabel yang tampil tidak normal dalam mode lanskap"
+    ],
+    "Jam": [
+      "Menambahkan fitur untuk memilih latar belakang hitam atau putih secara bebas di pengaturan Jam",
+      "Petunjuk: setelah pembaruan ini, warna latar belakang jam adalah putih."
+    ],
+    "Pembantu Jaringan": [
+      "Memperbaiki masalah di mana penyimpanan operasi tidak berlaku setelah menetapkan batas di pengaturan paket."
+    ],
+    "Keamanan": [
+      "Mengoptimalkan gaya jendela petunjuk Asisten Angpao dalam mode lanskap"
+    ],
+    "Layanan Cloud Xiaomi": [
+      "Memperbaiki tampilan halaman yang tidak tepat saat mengganti akun",
+      "Memperbaiki crash yang kadang terjadi",
+      "Memperbaiki tampilan status SIM yang terkadang tidak normal"
+    ],
     "Lainnya": [
       "Keamanan dan stabilitas sistem ditingkatkan"
     ]
   },
   "logs_vi": {
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Tối ưu: Giao diện đổi tên vân tay",
+      "Đã khắc phục sự cố không thể thay đổi và đặt mật khẩu màn hình khóa khi dùng hình nền trong suốt.",
+      "Đã khắc phục sự cố mật khẩu màn hình khóa đôi khi hiển thị theo chiều ngang",
+      "Khắc phục sự cố hoạt ảnh sạc có dây hiển thị bất thường ở chế độ ngang"
+    ],
+    "Đồng hồ": [
+      "Đã thêm tính năng tự do chọn nền đen hoặc trắng trong cài đặt Đồng hồ",
+      "Lưu ý: sau bản cập nhật này, màu nền của đồng hồ là màu trắng."
+    ],
+    "Trợ lý mạng": [
+      "Đã sửa lỗi thao tác lưu không có hiệu lực sau khi đặt giới hạn trong cài đặt gói."
+    ],
+    "Trung tâm An ninh": [
+      "Tối ưu hóa kiểu cửa sổ nhắc nhở của Trợ lý Lì xì ở chế độ ngang"
+    ],
+    "Dịch vụ đám mây Xiaomi": [
+      "Đã sửa lỗi hiển thị trang không chính xác khi chuyển tài khoản",
+      "Đã khắc phục sự cố thoát ứng dụng thỉnh thoảng xảy ra",
+      "Đã sửa lỗi đôi khi trạng thái SIM hiển thị bất thường"
+    ],
     "Khác": [
       "Cải thiện tính ổn định và bảo mật hệ thống"
     ]
   },
   "logs_th": {
+    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
+      "การเพิ่มประสิทธิภาพ: UI สำหรับการเปลี่ยนชื่อลายนิ้วมือ",
+      "แก้ไขปัญหาที่ไม่สามารถเปลี่ยนและตั้งรหัสผ่านหน้าจอล็อกเมื่อใช้วอลเปเปอร์โปร่งใส",
+      "แก้ไขปัญหาที่รหัสผ่านหน้าจอล็อกในบางกรณีแสดงในแนวนอน",
+      "แก้ไขปัญหาภาพเคลื่อนไหวการชาร์จแบบมีสายแสดงผลผิดปกติในโหมดแนวนอน"
+    ],
+    "นาฬิกา": [
+      "เพิ่มฟีเจอร์ให้เลือกพื้นหลังสีดำหรือสีขาวได้อย่างอิสระในการตั้งค่านาฬิกา",
+      "คำแนะนำ: หลังการอัปเดตนี้ สีพื้นหลังของนาฬิกาเป็นสีขาว"
+    ],
+    "ผู้ช่วยออนไลน์": [
+      "แก้ไขปัญหาการบันทึกการดำเนินการไม่มีผลหลังจากตั้งค่าขีดจำกัดในการตั้งค่าแพ็กเกจ"
+    ],
+    "ความปลอดภัย": [
+      "ปรับปรุงสไตล์หน้าต่างแจ้งเตือนของผู้ช่วยอั่งเปาในโหมดแนวนอน"
+    ],
+    "บริการคลาวด์ Xiaomi": [
+      "แก้ไขการแสดงหน้าผิดพลาดเมื่อสลับบัญชี",
+      "แก้ไขอาการแครชที่เกิดขึ้นเป็นครั้งคราว",
+      "แก้ไขปัญหาการแสดงสถานะ SIM ผิดปกติเป็นครั้งคราว"
+    ],
     "อื่นๆ": [
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
     ]
   },
   "logs_ar": {
-    "أخرى": [
+    "شاشة القفل، شريط الحالة، شريط الإشعارات": [
+      "التحسين: واجهة المستخدم لإعادة تسمية بصمة الإصبع",
+      "تم إصلاح مشكلة تعذر تغيير وتعيين كلمة مرور شاشة القفل عند استخدام خلفية شفافة.",
+      "تم إصلاح مشكلة ظهور كلمة مرور شاشة القفل في بعض الحالات بالوضع الأفقي",
+      "إصلاح مشكلة عرض رسوم متحركة الشحن السلكي بشكل غير طبيعي في الوضع الأفقي"
+    ],
+    "الساعة": [
+      "تمت إضافة ميزة اختيار الخلفية السوداء أو البيضاء بحرية في إعدادات الساعة",
+      "ملاحظة: بعد هذا التحديث، يصبح لون خلفية الساعة أبيض."
+    ],
+    "مساعد الإنترنت": [
+      "تم إصلاح مشكلة عدم تفعيل حفظ العمليات بعد تعيين حد في إعدادات الخطة."
+    ],
+    "الأمان": [
+      "تم تحسين نمط نافذة تلميح مساعد الظرف الأحمر في الوضع الأفقي"
+    ],
+    "خدمة Xiaomi السحابية": [
+      "إصلاح عرض الصفحة بشكل غير صحيح عند تبديل الحساب",
+      "تم إصلاح تعطل يحدث أحيانًا",
+      "تم إصلاح عرض حالة SIM غير الطبيعي أحيانًا"
+    ],
+    "آخرين": [
       "تحسين أمن واستقرار النظام"
     ]
   },
   "logs_in": {
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
+      "ऑप्टिमाइज़ेशन फिंगरप्रिंट का नाम बदलने देने की सुविधा वाला यूआई",
+      "पारदर्शी वॉलपेपर का उपयोग करते समय लॉक स्क्रीन पासवर्ड बदलने और सेट करने में असमर्थ होने की समस्या को ठीक किया गया।",
+      "कुछ स्थितियों में लॉक स्क्रीन पासवर्ड के लैंडस्केप में दिखने की समस्या ठीक की गई",
+      "लैंडस्केप मोड में वायर्ड चार्जिंग एनिमेशन के असामान्य रूप से प्रदर्शित होने की समस्या ठीक की गई"
+    ],
+    "घड़ी": [
+      "घड़ी सेटिंग्स में काले या सफेद बैकग्राउंड को स्वतंत्र रूप से चुनने की सुविधा जोड़ी गई",
+      "संकेत: इस अपडेट के बाद घड़ी का पृष्ठभूमि रंग सफ़ेद है।"
+    ],
+    "वर्चुअल असिस्टेंट": [
+      "प्लान सेटिंग्स में सीमा सेट करने के बाद ऑपरेशन सहेजना प्रभावी न होने की समस्या ठीक की गई।"
+    ],
+    "सुरक्षा": [
+      "लैंडस्केप मोड में रेड पैकेट असिस्टेंट की सूचना विंडो की शैली अनुकूलित की गई"
+    ],
+    "Xiaomi क्लाउड सेवा": [
+      "खाता बदलते समय पेज का गलत तरीके से दिखना ठीक किया गया",
+      "कभी-कभार होने वाले क्रैश को ठीक किया गया",
+      "असामान्य SIM स्थिति प्रदर्शन की कभी-कभार होने वाली समस्या ठीक की गई"
+    ],
     "अन्य": [
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
     ]

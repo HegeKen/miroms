@@ -1,271 +1,338 @@
 {
   "logs_zh": {
     "重要提示": [
-      "此版本暂不支持ROOT，已ROOT用户不受影响",
+      "系统性能得到了优化。",
       "修复：某些情况下出现错误"
     ],
     "设置": [
       "修复 “用户体验计划”相关按钮点击无效的问题"
     ],
     "文件管理器": [
-      "修复 搜索界面图标显示截断的问题"
+      "在搜索页面上，“恢复图标”（Restore Icons）的功能似乎被截断了（即该功能无法正常使用）。"
     ],
     "录音机": [
-      "修复 暂停录音后无法及时更新到状态栏的问题",
+      "修复：当录音被暂停时，通知栏中的录音状态信息不会更新。",
       "修复 在某些情况下, 无法通过小爱开始录音的问题"
     ]
   },
   "logs_en": {
     "Attention": [
-      "Optimized system performance",
+      "This version does not currently support ROOT access. Users who already have ROOT access will not be affected.",
       "Fixed: Errors occurred in some cases"
     ],
+    "Settings": [
+      "Fixed the issue where clicking the buttons related to the “User Experience Plan” was not effective."
+    ],
     "File Explorer": [
-      "Restore Icons were truncated on the search page"
+      "Fixed the issue where the icons in the search interface were displayed truncated."
     ],
     "Recorder": [
-      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused",
-      "Restore Couldn't start recording  using Mi AI in some cases"
+      "Fixed the issue where the status bar was not updated promptly after stopping the recording.",
+      "Fixed the issue where, in certain cases, it was not possible to start recording using the “Little Love” feature."
     ]
   },
   "logs_zh_tw": {
     "重要提示": [
-      "優化: 系統穩定性",
+      "此版本目前不支持 ROOT 权限；已经获得 ROOT 权限的用户不会受到影响。",
       "修復: 部分場景偶現異常問題"
     ],
-    "檔案管理員": [
-      "修復搜尋介面圖示顯示被截斷的問題"
+    "设置": [
+      "已修复“用户体验计划”相关按钮点击后无法正常生效（即按钮点击无任何响应）的问题。"
     ],
-    "錄音機": [
-      "修復 暫停錄音後無法即時更新到狀態欄的問題",
+    "文件管理器": [
+      "修复了搜索界面图标显示被截断的问题。"
+    ],
+    "录音机": [
+      "修复了在暂停录音后，系统无法及时将录音状态更新到状态栏的问题。",
       "修正 在某些情況下，無法透過小愛開始錄音的問題"
     ]
   },
   "logs_ja": {
     "注意": [
-      "最適化: システムの安定性",
+      "このバージョンでは現時点でROOT権限のサポートは行っていませんが、すでにROOT権限を取得しているユーザーには影響ありません。",
       "修正: エラーが発生する場合がある問題"
+    ],
+    "設定": [
+      "「ユーザー体験プログラム」に関連するボタンのクリックが効果を発揮しない問題を修正しました。"
     ],
     "ファイルマネージャー": [
       "検索画面でアイコンが途切れて表示される問題を修正"
     ],
     "レコーダー": [
-      "修正: 録音を一時停止した際、通知シェードの録音状態が更新されない問題",
-      "一部の状況で Xiao AI 経由で録音を開始できない問題を修正"
+      "録音を一時停止した後、ステータスバーの表示がすぐに更新されない問題を修正しました。",
+      "一部の状況下で、リコーダーを起動する際に「小愛」を使えない問題を修正しました。"
     ]
   },
   "logs_ko": {
     "주의": [
-      "최적화: 시스템 안정성",
+      "이 버전은 현재 ROOT 기능을 지원하지 않으며, 이미 ROOT 권한을 가진 사용자들에게는 아무런 영향이 없습니다.",
       "수정: 일부 상황에서 오류가 발생하는 문제"
     ],
-    "파일 관리자": [
-      "검색 화면에서 아이콘이 잘려 표시되는 문제를 수정"
+    "설정": [
+      "“사용자 경험 계획(User Experience Plan)” 관련 버튼을 클릭해도 아무런 반응이 없는 문제를 수정했습니다."
     ],
-    "녹음기": [
-      "수정: 녹음을 일시중지했을 때 알림 창의 녹음 상태가 업데이트되지 않던 문제",
-      "일부 상황에서 Xiao AI를 통해 녹음을 시작할 수 없는 문제를 수정"
+    "파일 관리자": [
+      "검색 인터페이스의 아이콘이 잘려서 표시되는 문제를 수정했습니다."
+    ],
+    "레코더": [
+      "녹음을 일시 중단한 후 상태 표시줄에 즉시 업데이트되지 않는 문제를 수정했습니다.",
+      "일부 경우에 ‘소애’를 통해 녹음을 시작할 수 없는 문제가 수정되었습니다."
     ]
   },
   "logs_ru": {
     "Предупреждения": [
-      "Оптимизация: Стабильность системы",
+      "Данная версия в настоящее время не поддерживает функцию ROOT; пользователи, у которых уже активирована эта функция, не пострадают.",
       "Исправлено: В некоторых случаях могли возникать ошибки"
     ],
-    "Файловый менеджер": [
-      "Исправлена проблема с обрезанным отображением значков на экране поиска"
+    "Настройки": [
+      "Устранено неправильное функционирование кнопок, связанных с программой улучшения пользовательского опыта. Теперь клики на эти кнопки выполняются корректно."
+    ],
+    "Проводник файлов": [
+      "Устранено проблему с отрезкой изображений икон на странице поиска при их отображении."
     ],
     "Диктофон": [
-      "Fix: Факт остановки записи не отображался в строке состояния вовремя",
-      "Исправлена проблема, из-за которой в некоторых случаях не удавалось начать запись через Xiao AI."
+      "Устранено недостаток, связанный с тем, что после приостановки записи информация не своевременно отображается в панели состояния.",
+      "Устранено проблему, при которой в некоторых случаях невозможно начать запись с помощью функции «Маленькая любовь»."
     ]
   },
   "logs_uk": {
     "Попередження": [
-      "Оптимізація: Стабільність системи",
+      "Ця версія поки що не підтримує функцію ROOT; користувачі, у яких вже активована ця функція, не постраждають.",
       "Виправлено: В деяких випадках могли виникати помилки"
     ],
-    "Файловий менеджер": [
-      "Виправлено проблему з обрізаним відображенням значків на екрані пошуку"
+    "Налаштування": [
+      "Виправлено проблему недієвості дій при натисканні на кнопки, пов’язані з „Планом користувацького досвіду“."
+    ],
+    "Провідник файлів": [
+      "Виправлено проблему з обрізком іконок на інтерфейсі пошуку під час їх відображення."
     ],
     "Диктофон": [
-      "Виправлено: стан запису не оновлювався в панелі сповіщень під час паузи запису",
-      "Виправлено проблему, через яку в деяких випадках не вдавалося почати запис через Xiao AI."
+      "Виправлено проблему, коли після призупинення запису інформація не вчасно оновлюється у панелі стану.",
+      "Виправлено проблему, коли в деяких випадках не вдавалося розпочати запис за допомогою функції „Маленька любов“."
     ]
   },
   "logs_pl": {
     "Powiadomienie": [
-      "Zoptymalizowano: Stabilność systemu",
+      "Ta wersja nie obsługuje funkcji ROOT; użytkownicy, którzy już mają dostęp do tej funkcji, nie będą podlegać żadnym negatywnym wpływom.",
       "Naprawiono: W niektórych przypadkach występowały błędy"
+    ],
+    "Ustawienia": [
+      "Poprawiono problem nieważnych kliknięć na przyciskach dotyczących „Planu doświadczenia użytkownika”."
     ],
     "Menedżer plików": [
       "Naprawiono problem z przyciętym wyświetlaniem ikon na ekranie wyszukiwania"
     ],
-    "Rejestrator": [
-      "Poprawka: stan nagrywania nie był aktualizowany na pasku powiadomień po wstrzymaniu nagrywania",
-      "Naprawiono problem z rozpoczęciem nagrywania przez Xiao AI w niektórych przypadkach."
+    "Kaseta nagrywająca": [
+      "Poprawiono problem z niewłaściwym aktualizowaniem stanu w pasku stanu po przywołaniu funkcji przerywania nagrywania.",
+      "Poprawiono problem, w którym w niektórych przypadkach nie był możliwy start nagrywania za pomocą funkcji „Mała Miłość”."
     ]
   },
   "logs_de": {
     "Wichtiger Hinweis": [
-      "Optimierung: Systemstabilität",
+      "Diese Version unterstützt derzeit nicht das ROOT-Recht. Benutzer, die bereits über das ROOT-Recht verfügen, werden davon nicht betroffen sein.",
       "Behoben: In einigen Fällen sind Fehler aufgetreten"
     ],
-    "Dateimanager": [
-      "Problem mit abgeschnittener Symbolanzeige auf dem Suchbildschirm behoben"
+    "Einstellungen": [
+      "Behebung des Problems, dass Klicks auf die Buttons im Zusammenhang mit dem „Benutzererfahrungsplan“ nicht funktionieren."
     ],
-    "Rekorder": [
-      "Behoben: Der Aufnahmestatus wurde in der Benachrichtigungsleiste nicht aktualisiert, wenn eine Aufnahme pausiert wurde",
-      "Problem behoben, dass in manchen Fällen die Aufnahme über Xiao AI nicht gestartet werden konnte."
+    "Dateimanager": [
+      "Behebung des Problems, dass die Symbole in der Suchoberfläche abgeschnitten angezeigt werden."
+    ],
+    "Tonaufnahmegerät": [
+      "Behebung des Problems, dass sich der Status nach einer Unterbrechung der Aufnahmefunktion nicht rechtzeitig in der Statusleiste aktualisiert.",
+      "Behebung des Problems, dass in einigen Fällen die Aufnahme nicht über „Xiao Ai“ gestartet werden kann."
     ]
   },
   "logs_fr": {
     "Avertissement important": [
-      "Optimisation: Stabilité du système",
+      "Cette version ne prend pas en charge l’option ROOT pour l’instant. Les utilisateurs qui ont déjà activé l’option ROOT n’en seront pas affectés.",
       "Réparé: Des erreurs se sont produites dans certains cas"
     ],
+    "Paramètres": [
+      "Problème résolu : les clics sur les boutons liés au « Plan d'expérience utilisateur » ne fonctionnaient plus correctement."
+    ],
     "Gestionnaire de fichiers": [
-      "Correction du problème d’affichage tronqué des icônes sur l’écran de recherche"
+      "Correction du problème de troncement des icônes affichées dans l'interface de recherche."
     ],
     "Enregistreur": [
-      "Correction : l’état d’enregistrement n’était pas mis à jour dans la barre de notifications lors d’une pause",
-      "Correction du problème empêchant de démarrer un enregistrement via Xiao AI dans certains cas."
+      "Résolution du problème : l'actualisation de l'état dans la barre d'état ne se fait pas immédiatement après l'arrêt de l'enregistrement.",
+      "Résolution du problème selon lequel, dans certains cas, il n’était pas possible de démarrer l’enregistrement en utilisant la fonction « Petit Amour »."
     ]
   },
   "logs_it": {
     "Attenzione": [
-      "Ottimizzazione: Stabilità del sistema",
+      "Questa versione non supporta attualmente il livello di accesso “ROOT”; gli utenti che già possiedono tale privilegio non saranno influenzati.",
       "Risolto: In alcuni casi si verificavano errori"
     ],
-    "Gestione file": [
-      "Risolto il problema di visualizzazione troncata delle icone nella schermata di ricerca"
+    "Impostazioni": [
+      "Risolto il problema relativo al non funzionamento dei pulsanti collegati al “Piano di esperienza utente”."
+    ],
+    "File Manager": [
+      "Risolto il problema relativo all’interferenza nell’visualizzazione degli iconi dell’interfaccia di ricerca."
     ],
     "Registratore": [
-      "Correzione: lo stato di registrazione non veniva aggiornato nella barra delle notifiche quando una registrazione veniva messa in pausa",
-      "Risolto il problema che in alcuni casi impediva di avviare la registrazione tramite Xiao AI."
+      "Risolto il problema per cui, dopo aver interrotto la registrazione, lo stato della registrazione non veniva aggiornato tempestivamente nella barra di stato.",
+      "Risolto il problema per cui, in alcune circostanze, non era possibile avviare la registrazione utilizzando il pulsante “Piccola Amore”."
     ]
   },
   "logs_es": {
     "Atención": [
-      "Optimización: Estabilidad del sistema",
+      "Esta versión no admite la función ROOT por el momento; los usuarios que ya cuentan con ella no se verán afectados.",
       "Reparado: Se producían errores en algunos casos"
     ],
+    "Configuración": [
+      "Se ha corregido el problema de que los botones relacionados con el «Plan de Experiencia del Usuario» no funcionaban correctamente al ser pulsados."
+    ],
     "Administrador de archivos": [
-      "Se corrige el problema de visualización truncada de los iconos en la pantalla de búsqueda"
+      "Se ha corregido el problema de que las imágenes de los iconos en la interfaz de búsqueda se mostraban truncadas."
     ],
     "Grabadora": [
-      "Corrección: El estado de grabación no se actualizaba en la barra de notificaciones al pausar una grabación",
-      "Se corrige el problema por el que en algunos casos no se podía iniciar la grabación con Xiao AI."
+      "Se ha corregido el problema de que, después de detener la grabación, no se actualiza a tiempo la información en la barra de estado.",
+      "Se ha corregido el problema por el cual, en algunos casos, no era posible iniciar la grabación a través de «Pequeña Amor»."
     ]
   },
   "logs_pt": {
     "Atenção": [
-      "Otimização: Estabilidade do sistema",
+      "Esta versão não suporta o modo ROOT por enquanto; os usuários que já têm o acesso ROOT não serão afetados.",
       "Correção: Erros ocorriam em alguns casos"
+    ],
+    "Configurações": [
+      "Corrigido o problema de os botões relacionados com o “Plano de Experiência do Utilizador” não funcionarem corretamente quando clicados."
     ],
     "Gerenciador de arquivos": [
       "Corrigido o problema de exibição truncada dos ícones na tela de pesquisa"
     ],
     "Gravador": [
-      "Correção: o estado da gravação não era atualizado na barra de notificações ao pausar uma gravação",
-      "Corrigido o problema que, em alguns casos, impedia iniciar a gravação com Xiao AI."
+      "Corrigir o problema de não ser possível atualizar a barra de estado de forma imediata após interromper a gravação.",
+      "Corrigido o problema em que, em alguns casos, não era possível iniciar a gravação através do “Pequeno Amor”."
     ]
   },
   "logs_tr": {
     "Uyarı": [
-      "Optimizasyon: Sistem kararlılığı",
+      "Bu sürüm şu an için ROOT özelliğini desteklememektedir; zaten ROOT yetkisine sahip olan kullanıcılar bu durumdan etkilenmeyecektir.",
       "Onarım: Bazı durumlarda hatalar oluştu"
     ],
+    "Ayarlar": [
+      "“Kullanıcı Deneyimi Planı” ile ilgili düğmelerin tıklanmasının işe yaramaması sorununu giderdik."
+    ],
     "Dosya Yöneticisi": [
-      "Arama ekranında simgelerin kesik görüntülenmesi sorunu giderildi"
+      "Arama arayüzündeki simgelerin kesilerek gösterilmesi sorununu düzelttik."
     ],
     "Kayıt Cihazı": [
-      "Düzeltme: Kayıt duraklatıldığında kayıt durumu bildirim çubuğunda güncellenmiyordu",
-      "Bazı durumlarda Xiao AI ile kaydın başlatılamaması sorunu giderildi."
+      "Kaydı durdurduktan sonra durum çubuğunda zamanında güncelleme yapılamaması sorununu düzelttik.",
+      "Bazı durumlarda, “Küçük Aşk” aracılığıyla kayıt başlatılamama sorununu giderdik."
     ]
   },
   "logs_id": {
     "Perhatian": [
-      "Pengoptimalan: Stabilitas sistem",
+      "Versi ini belum mendukung fitur ROOT. Pengguna yang sudah memiliki akses ROOT tidak akan terpengaruh oleh hal tersebut.",
       "Perbaikan: Kesalahan terjadi dalam beberapa kasus"
     ],
-    "Pengelola File": [
-      "Memperbaiki masalah tampilan ikon terpotong di layar pencarian"
+    "Pengaturan": [
+      "Masalah telah diperbaiki: tindakan mengklik tombol terkait dengan “Rencana Pengalaman Pengguna” (User Experience Plan) kini berfungsi dengan baik."
+    ],
+    "File Manager": [
+      "Memperbaiki masalah di mana ikon pada antarmuka pencarian tidak ditampilkan secara lengkap (terpotong)."
     ],
     "Perekam": [
-      "Perbaikan: Status perekaman tidak diperbarui di bilah notifikasi saat perekaman dijeda",
-      "Memperbaiki masalah tidak dapat memulai rekaman melalui Xiao AI dalam beberapa kasus."
+      "Memperbaiki masalah di mana status rekaman tidak diperbarui secara tepat waktu setelah proses pemberhentian rekaman dilakukan.",
+      "Diperbaiki masalah di mana dalam beberapa kasus tidak dapat memulai rekaman menggunakan fitur “Kecil Sayang”."
     ]
   },
   "logs_vi": {
     "Chú ý": [
-      "Tối ưu: Ổn định hệ thống",
+      "Phiên bản này tạm thời không hỗ trợ chức năng ROOT; những người dùng đã thiết lập quyền ROOT sẽ không bị ảnh hưởng.",
       "Sửa: Xảy ra lỗi trong một số trường hợp"
     ],
+    "Cài đặt": [
+      "Đã sửa lỗi liên quan đến việc nhấp vào các nút trong “Kế hoạch trải nghiệm người dùng” không phát huy tác dụng."
+    ],
     "Trình quản lý tệp": [
-      "Đã khắc phục sự cố biểu tượng bị cắt trên màn hình tìm kiếm"
+      "Khắc phục sự cố liên quan đến việc biểu tượng trên giao diện tìm kiếm bị cắt ngang khi hiển thị."
     ],
     "Máy ghi âm": [
-      "Đã sửa: Trạng thái ghi âm không được cập nhật kịp thời trên thanh thông báo khi tạm dừng ghi âm",
-      "Đã khắc phục sự cố không thể bắt đầu ghi âm qua Xiao AI trong một số trường hợp."
+      "Khắc phục sự cố khi tạm dừng quá trình ghi âm không thể cập nhật kịp thời thông tin vào thanh trạng thái.",
+      "Đã sửa lỗi: Trong một số trường hợp, không thể bắt đầu quá trình ghi âm thông qua tính năng “Xiao Ai”."
     ]
   },
   "logs_th": {
     "โปรดทราบ": [
-      "การเพิ่มประสิทธิภาพ: ความเสถียรของระบบ",
+      "เวอร์ชันนี้ยังไม่รองรับการตั้งค่า ROOT ดังนั้นผู้ใช้ที่ตั้งค่า ROOT ไว้แล้วจะไม่ได้รับผลกระทบใดๆ",
       "แก้ไข: เกิดข้อผิดพลาดในบางกรณี"
     ],
+    "การตั้งค่า": [
+      "แก้ไขปัญหาที่กระบวนการคลิกปุ่มที่เกี่ยวข้องกับ “แผนประสบการณ์ผู้ใช้” ไม่ทำงาน"
+    ],
     "ตัวจัดการไฟล์": [
-      "แก้ไขปัญหาการแสดงไอคอนถูกตัดในหน้าจอค้นหา"
+      "แก้ไขปัญหาที่ไอคอนบนหน้าจอการค้นหาถูกตัดไปไม่ให้แสดงผลอย่างครบถ้วน"
     ],
     "เครื่องบันทึกเสียง": [
-      "แก้ไข: สถานะการบันทึกเสียงไม่ได้รับการอัปเดตในแถบการแจ้งเตือนเมื่อหยุดการบันทึกชั่วคราว",
+      "แก้ไขปัญหาที่การหยุดบันทึกเสียงไม่สามารถอัปเดตสถานะในแถบสถานะ (status bar) ได้อย่างทันท่วงที",
       "แก้ไขปัญหาที่ในบางกรณีไม่สามารถเริ่มบันทึกเสียงผ่าน Xiao AI ได้"
     ]
   },
   "logs_ar": {
     "تنبية": [
-      "التحسين: استقرار النظام",
+      "هذه النسخة لا تدعم خيار “ROOT” في الوقت الحالي، ولن يتأثر المستخدمون الذين قاموا بتفعيل خيار “ROOT” بهذا التغيير.",
       "الإصلاح: حدثت أخطاء في بعض الحالات"
     ],
-    "مدير الملفات": [
-      "إصلاح مشكلة عرض الأيقونات مقتطعة في شاشة البحث"
+    "الإعدادات": [
+      "تم إصلاح المشكلة المتعلقة بعدم فعالية نقرات الأزرار المتعلقة بـ \"خطة تجربة المستخدم\"."
     ],
-    "مسجل": [
-      "إصلاح: لم يتم تحديث حالة التسجيل في شريط الإشعارات عند إيقاف التسجيل مؤقتًا",
-      "تم إصلاح مشكلة عدم إمكانية بدء التسجيل عبر Xiao AI في بعض الحالات."
+    "مدير الملفات": [
+      "تم إصلاح مشكلة عرض الأيقونات في واجهة البحث بشكل مقطوع."
+    ],
+    "جهاز التسجيل": [
+      "تم إصلاح المشكلة التي تمنع تحديث حالة الجهاز بشكل فوري بعد توقف عملية التسجيل.",
+      "تم إصلاح المشكلة التي كانت تمنع في بعض الحالات بدء عملية التسجيل باستخدام أداة “Little Love”."
     ]
   },
   "logs_in": {
     "ध्यान दें": [
-      "ऑप्टिमाइज़ेशन सिस्टम की स्थिरता",
+      "यह संस्करण फिलहाल “ROOT” सुविधा का समर्थन नहीं करता है; इसलिए पहले से ही “ROOT” अधिकार प्राप्त उपयोगकर्ताओं पर कोई प्रभाव नहीं पड़ेगा।",
       "ठीक करें कुछ मामलों में त्रुटियां आ रही थीं"
     ],
+    "सेटिंग्स": [
+      "“यूजर एक्सपीरियंस प्लान” (User Experience Plan) से संबंधित बटन पर क्लिक करने पर कोई प्रतिक्रिया न होने की समस्या को ठीक कर दिया गया है."
+    ],
     "फ़ाइल प्रबंधक": [
-      "खोज स्क्रीन पर आइकन के कटे हुए प्रदर्शित होने की समस्या ठीक की गई"
+      "खोज इंटरफ़ेस पर दिखाए जाने वाले आइकनों में दिखाई देने वाली समस्या (अर्थात् आइकनों का अधूरा दिखना) को ठीक कर दिया गया है."
     ],
     "रिकॉर्डर": [
-      "समस्या ठीक की गई: रिकॉर्डिंग पॉज़ करने पर नोटिफ़िकेशन शेड में स्थिति तुरंत अपडेट नहीं होती थी",
-      "कुछ स्थितियों में Xiao AI के ज़रिए रिकॉर्डिंग शुरू न कर पाने की समस्या ठीक की गई।"
+      "वह समस्या दूर की गई है जिसके कारण रिकॉर्डिंग रोकने के बाद स्टेट बार (Status Bar) में समय पर अपडेट नहीं हो पाता था।",
+      "कुछ मामलों में, छोटे “प्यार” (small love) आइकन का उपयोग करके रिकॉर्डिंग शुरू नहीं कर पाने की समस्या को ठीक कर दिया गया है."
     ]
   },
   "logs_ug": {
     "مۇھىم ئەسكەرتىش": [
-      "سىستېما مۇقىملىقىنى ئەلالاشتۇرۇش",
+      "بۇ نەشىردە يېقىندا ROOT قوللاش ئىمكانىيىتى قوشۇلمىدى ، ئاللىقاچان ROOT قىلىنغان ئابونېنتلارغا ھېچقانداق تەسىر يېتمەيدۇ.",
       "Fixed: Errors occurred in some cases"
     ],
-    "ھۆججەت باشقۇرغۇچ": [
-      "ئىزدەش ئېكرانىدىكى سىنبەلگىلەرنىڭ كېسىلىپ كۆرۈنۈش مەسىلىسى تۈزىتىلدى"
+    "تەڭشەك": [
+      "« ئابونېنت تەجرىبە پىلانى » (User Experience Plan) بىلەن مۇناسىۋەتلىك كۇنۇپكىلارنى بېسقاندا ھېچ قانداق ئۈنۈم بولماسلىق مەسىلىسىنى تۈزەتتۇق."
     ],
-    "ئاۋاز ئالغۇ": [
-      "ئۈن ئېلىش توختىتىلغاندىن كېيىن ئۇقتۇرۇش تاختىسىدا ھالەت ۋاقتىدا يېڭىلانماسلىق مەسىلىسى تۈزىتىلدى",
+    "ھۆججەت باشقۇرغۇچ": [
+      "ئىزدەش ئۈنۈملىك يۈزى دىكى ئىكونىلارنىڭ كۆرسىتى لىشىدە كېلىپ چىققان مەسىلىنى تۈزەتتۇق"
+    ],
+    "ئۈن خاتىرىلەش ماشىنىسى": [
+      "ئۈن ئالماشتۇرۇشنى توختاتقاندىن كېيىن ، ھالەت سترېكچىسىگە (status bar) ئۆزۋاقتىدا يېڭىلاش مۇمكىن بولماسلىق مەسىلىسىنى تۈزى دۇق.",
       "بەزى ئەھۋاللاردا Xiao AI ئارقىلىق خاتىرىلەشنى باشلاشقا بولماسلىق مەسىلىسى تۈزىتىلدى."
     ]
   },
   "logs_bo": {
     "གལ་ཆེའི་དྲན་སྐུལ": [
-      "ཐོན་རིམ་འདིས་གནས་སྐབས་སུ་ ROOT ལ་རྒྱབ་སྐྱོར་མི་བྱེད་པ་དང་། ROOT བྱས་ཟིན་པའི་སྤྱོད་མཁན་ལ་ཤུགས་རྐྱེན་མི་ཐེབས།",
+      "དུས་นีར་པརྒྱུད་རིམ་འདིས ROOT を 지원하지 않습니다. 이미 ROOT ಅधिकার་ཡོད་པའི་སྤྱོད་མཁན་གྱིས་ཤུགས་རྐྱེན་ཐེབས་མི་སྲིད།",
       "Fix: Errors occurred in some cases"
+    ],
+    "སྒྲིག་སྟངས།": [
+      "“ཡོད་ཚད་སྤྱོད་མཁན་གྱི་�नुभव་ལེགས་བཅོས་བྱེད་པའི་འཆར་གཞི” (User Experience Improvement Plan)་དང་འབྲེལ་བ་ཡོད་པའི་བཏགས་རྟགས་གནོན་ན་ཕན་འབྲས་མི་ཐོན་པའི་གནད་དོན་ཐག་གཅོད་བྱེད།"
+    ],
+    "ཡིག་ཆའི་དོ་དམ་ཆས": [
+      "དྲི་བའི་མཚོན་རྟགས་ཀྱི་འཆར་ངོས་སུ་མངོན་པའི་གནད་དོན་ཐག་གཅོད་བྱེད།"
+    ],
+    "སྒྲ་འཇུག་ཆས": [
+      "ཡིག་སྒྲོན་གྱི་རྣམ་པར་བཟོ་བཅོས་བརྒྱབ་རྗེས་སྒྲ་ཕབ་མཚམས་འཇོག་བྱས་ན་དུས་ཐོག་ཏུ་གསར་སྒྱུར་བྱེད་མི་ཐུབ་པའི་གནད་དོན་ཐག་གཅོད།",
+      "ཆ་རྐྱེན་ཁ་ཤས་འོག “ཞའོ་ཨའེ” (Xiao Ai)་བརྒྱུད་ནས་ཟིན་བྲིས་བླངས་མི་ཐུབ་པའི་གནད་དོན་ཐག་གཅོད་བྱས།"
     ]
   }
 }

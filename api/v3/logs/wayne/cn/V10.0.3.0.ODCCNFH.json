@@ -2,33 +2,33 @@
   "logs_zh": {
     "系统": [
       "优化 人脸解锁失灵与成功率低的问题",
-      "修复 点击最近任务状态栏图标后屏幕花屏的问题",
+      "系统安全性和稳定性得到了提升。",
       "修复 偶现开启防误触后虚拟按键消失的问题",
       "修复 偶现异常重启的问题",
-      "修复 微信界面锁屏解锁后，快捷按键区域显示异常的问题",
-      "修复 人脸解锁失灵与成功率低的问题"
+      "在解锁屏幕后（该屏幕在使用微信时被锁定了），快捷方式的功能出现了问题/无法正常使用。",
+      "关于面部解锁功能出现的问题（如无法正常使用或解锁失败等）……"
     ],
     "电话": [
-      "优化 双卡场景下掉卡后的处理策略"
+      "优化用于在双SIM模式下信号丢失后恢复连接的算法"
     ],
     "联系人": [
-      "修复 设置里VoLTE电话会议显示错误的问题",
-      "修复 设置里VoLTE电话会议显示错误"
+      "在“设置”选项中，VoLTE视频通话的功能显示不正确（即无法正常查看或使用该功能）。",
+      "在“设置”中，VoLTE视频会议的显示效果存在问题（即这些会议并未被正确地显示出来）。"
     ],
     "短信": [
-      "新增 移动网络短信功能(融合通信), 可在设置->系统应用->短信->移动网络短信中开启"
+      "新增了通过移动网络发送短信的功能（RCS）；该功能可在“设置” → “系统应用” → “消息” → “移动网络短信”中启用。"
     ],
     "锁屏、状态栏、通知栏": [
-      "修复 双击不重要通知时，通知与快捷开关重叠的问题"
+      "当用户双击一条不重要的通知时，如果该通知的界面元素与其他界面元素发生了重叠，系统应能够自动恢复这些元素的正常显示状态（即消除重叠现象）。"
     ],
     "备份": [
-      "修复 从U盘恢复手机中未安装应用，图标显示异常的问题"
+      "当从 USB 设备中恢复那些并未实际安装在设备上的应用程序时，这些应用程序的图标无法被正确显示。"
     ],
     "设置": [
-      "修复 设置同步显示两个添加个人账户选项的问题",
+      "在“设置”选项中，提供了两种用于添加个人账户的方法（即两种添加个人账户的选项）。",
       "修复 设置页面滑动不流畅的问题",
-      "设置->我的设备->使用说明 更改为 重要安全信息",
-      "设置]-[我的设备]-[使用说明] 更改为 [重要安全信息]"
+      "设置（Settings）→ 我的设备（My Device）→ 使用说明（Usage Instructions）被更改为“重要安全信息”（Important Safety Information）。",
+      "重要安全信息请参阅“设置”>“关于手机”中的相关内容。"
     ],
     "文件管理器": [
       "修复 删除文件时音乐卡顿的问题"
@@ -41,470 +41,820 @@
     ]
   },
   "logs_en": {
+    "System": [
+      "Optimized face unlock to address failures and low success rate.",
+      "Fixed the issue where the screen would freeze after clicking on the icon in the task status bar for the most recent task.",
+      "Fixed the issue where, occasionally, after enabling the anti-misclick feature, the virtual buttons would disappear.",
+      "Fix the issue of occasional abnormal reboots",
+      "Fixed the issue where, after unlocking the WeChat interface from screen lock, the shortcut key area displayed incorrectly.",
+      "Fix the issues with face unlocking not working properly and having a low success rate."
+    ],
     "Phone": [
-      "Optimize Algorithm for restoring connection after signal was lost in Dual SIM mode"
+      "Optimize the handling strategy after a card is removed in a dual-card scenario."
     ],
     "Contacts": [
-      "Restore VoLTE conference calls weren't shown correctly in the Settings"
+      "Fixed the issue of incorrect display of VoLTE phone conferences in the settings.",
+      "Fixed the error in the display of VoLTE phone conferences in the settings."
+    ],
+    "Messages": [
+      "New feature: Mobile network SMS service (Integrated Communications) can be enabled by going to Settings -> System Apps -> SMS -> Mobile Network SMS."
     ],
     "Lockscreen, Status Bar, Notification Bar": [
-      "Restore UI elements overlapped when you double tapped an unimportant notification"
+      "Fixed the issue where double-clicking on an unimportant notification caused the notification to overlap with the shortcut icon."
     ],
     "Backup": [
-      "Restore App icons weren't displayed correctly when apps that weren't installed were restored from a USB device"
-    ],
-    "Recorder": [
-      "Restore The settings icon wasn't displayed correctly"
-    ],
-    "System": [
-      "Restore Issues with shortcuts after unlocking the screen that was locked while using WeChat",
-      "Restore Issues with Face unlock"
+      "Fixed the issue where applications not installed on the phone are displayed with abnormal icons when restored from a USB drive."
     ],
     "Settings": [
-      "Restore Two options for adding personal accounts were shown in the Settings",
-      "Introducing important safety information in Settings > About phone"
+      "Fixed the issue with the settings not displaying both options for adding personal accounts simultaneously.",
+      "Fix issue of laggy scrolling on Settings page",
+      "Settings -> My device -> Usage instructions changed to Important safety information",
+      "Settings -> [My Devices] -> [Instructions for Use] should be changed to [Important Security Information]."
+    ],
+    "File Explorer": [
+      "Fixed the issue of music lagging when files are deleted."
+    ],
+    "Recorder": [
+      "Fixed the issue with abnormal display of the setup icon."
     ],
     "Other": [
       "Improved system security and stability"
     ]
   },
   "logs_zh_tw": {
-    "電話": [
-      "優化雙卡場景下掉卡後的處理策略"
+    "系統": [
+      "解决人脸识别解锁功能失效以及识别成功率较低的问题",
+      "修复了点击“最近的任务”状态栏图标后屏幕出现花屏（即显示异常图像）的问题。",
+      "修复了在启用“防误触”功能后虚拟按键突然消失的故障。",
+      "已修复偶尔出现的系统异常重启问题。",
+      "修复了微信界面在锁屏状态解除后，快捷键区域显示异常的问题。",
+      "修复了人脸识别解锁功能失效以及识别成功率较低的问题。"
+    ],
+    "电话": [
+      "优化双卡环境下某张卡片丢失（即无法正常使用）时的处理策略"
     ],
     "聯絡人": [
-      "修復 設定裡 VoLTE 電話會議顯示錯誤的問題",
-      "修正 設定中 VoLTE 電話會議顯示錯誤"
+      "已修复设置中 VoLTE 电话会议显示错误的问题。"
+    ],
+    "簡訊": [
+      "新增了移动网络短信功能（属于融合通信技术），可以在“设置”→“系统应用”→“短信”→“移动网络短信”中进行启用。"
     ],
     "解鎖畫面、狀態欄、通知欄": [
-      "修正 雙擊不重要通知時，通知與快捷開關重疊的問題"
+      "修复了双击非重要通知时，通知内容与相关快捷开关会重叠的问题。"
     ],
-    "備份": [
-      "修復從 USB 隨身碟還原手機中未安裝的應用程式時，圖示顯示異常的問題"
+    "备份（Backup）": [
+      "已修复从 U 盘恢复到手机上的应用程序时出现的以下问题：这些应用程序未被正确安装，其图标显示异常（即图标的形状或样式不正确）。"
     ],
-    "錄音機": [
-      "修復 設定圖示顯示異常的問題"
+    "设置": [
+      "已修复“设置”功能中同时显示两个用于添加个人账户的选项的问题。",
+      "已修复设置页面滑动不流畅的问题。",
+      "“设置” -> “我的设备” -> “使用说明”，将其更改为“重要安全信息”。",
+      "在“设置” → “我的设备” → “使用说明”中，将该内容的标题更改为“重要安全信息”。"
     ],
-    "設定": [
-      "修復 設定同步顯示兩個新增個人帳戶選項的問題",
-      "設定]-[我的裝置]-[使用說明] 更改為 [重要安全資訊]"
+    "文件管理器": [
+      "修复了删除文件时音乐播放出现卡顿（即音频播放不流畅）的问题。"
+    ],
+    "录音机": [
+      "已修复设置图标显示异常的问题。"
     ],
     "其他": [
       "Improved system security and stability"
     ]
   },
   "logs_ja": {
+    "システム": [
+      "顔認証によるロック解除がうまくいかない、または成功率が低いという問題を最適化する",
+      "最近のタスクの状態バーのアイコンをクリックした後に画面がフリーズする問題を修正しました。",
+      "誤操作防止機能をオンにした後に仮想キーが突然消えてしまう問題を修正しました。",
+      "偶発的な異常再起動の問題を修正",
+      "WeChatのインターフェースでロック画面から解除した後、ショートカットキー領域が異常に表示される問題を修正しました。",
+      "顔認証が機能しない問題と成功率が低い問題を修正"
+    ],
     "電話": [
-      "デュアルSIM環境でSIMカードが切断された後の処理ポリシーを最適化"
+      "デュアルSIMカード環境において、一方のSIMカードが通信不能になった後の処理戦略を最適化する"
     ],
     "連絡先": [
-      "設定で VoLTE 会議通話が正しく表示されない問題を修正",
-      "設定でVoLTE会議通話が正しく表示されない問題を修正"
+      "設定項目内でVoLTE電話会議の表示に誤りがある問題を修正しました。",
+      "設定項目内でVoLTE通話会議の表示に誤りがある問題を修正しました。"
+    ],
+    "メッセージ": [
+      "新機能として、モバイルネットワークを利用したショートメッセージ送信機能（統合通信）が追加されました。この機能は、「設定」→「システムアプリ」→「ショートメッセージ」→「モバイルネットワークを利用したショートメッセージ送信」でオンにすることができます。"
     ],
     "ロック画面、ステータスバー、通知バー": [
-      "重要でない通知をダブルタップした際に、通知とクイック設定が重なる問題を修正"
+      "重要でない通知をダブルクリックした際に、通知がショートカットと重なる問題を修正しました。"
     ],
     "バックアップ": [
-      "USBドライブからスマートフォンに未インストールのアプリを復元する際、アイコンが正しく表示されない問題を修正"
+      "USBメモリからスマートフォンにアプリを復元した際に、インストールされていないアプリのアイコンが異常に表示される問題を修正しました。"
+    ],
+    "設定": [
+      "個人アカウントを2つ追加するオプションが同期表示されない問題を修正しました。",
+      "設定ページのスクロールが滑らかでない問題を修正",
+      "【設定】→【私のデバイス】→【使用説明】を「重要なセキュリティ情報」に変更してください。",
+      "【設定】 → 【私のデバイス】 → 【使用説明】 を 【重要なセキュリティ情報】 に変更してください。"
+    ],
+    "ファイルマネージャー": [
+      "ファイル削除時の音楽の途切れを修正"
     ],
     "レコーダー": [
       "設定アイコンが正しく表示されない問題を修正"
-    ],
-    "設定": [
-      "設定の同期で個人アカウントを追加するオプションが2つ表示される問題を修正",
-      "設定]-[デバイス情報]-[使用説明] を [重要な安全情報] に変更"
     ],
     "その他": [
       "システムのセキュリティと安定性の向上"
     ]
   },
   "logs_ko": {
+    "시스템": [
+      "얼굴 인식을 통한 잠금 해제 기능의 오작동 및 낮은 성공률 문제를 개선합니다.",
+      "최근 작업 상태 표시줄 아이콘을 클릭한 후 화면이 깜박이는 문제를 수정했습니다.",
+      "잘못된 터치를 방지하기 위한 기능이 활성화되었을 때 가끔 가상 버튼이 사라지는 문제를 수정했습니다.",
+      "간헐적 비정상 재부팅 문제 수정",
+      "WeChat 인터페이스의 잠금 해제 후 단축키 영역이 비정상적으로 표시되는 문제를 수정했습니다.",
+      "얼굴 인식을 통한 잠금 해제 기능이 제대로 작동하지 않거나 성공률이 낮은 문제를 수정했습니다."
+    ],
     "전화": [
-      "듀얼 SIM 환경에서 SIM 카드가 끊긴 후 처리 전략 최적화"
+      "듀얼 카드 사용 시 한 장의 카드가 빠진 후의 처리 전략을 최적화합니다."
     ],
     "연락처": [
       "설정에서 VoLTE 회의 통화가 잘못 표시되는 문제를 수정"
     ],
+    "메시지": [
+      "새로 추가된 기능: 이동통신 네트워크를 통한 문자 메시지 전송 기능(융합 통신, Converged Communication)은 ‘설정 -> 시스템 앱 -> 문자 메시지 -> 이동통신 네트워크를 통한 문자 메시지’에서 활성화할 수 있습니다."
+    ],
     "잠금 화면, 상태 표시줄, 알림 표시줄": [
-      "중요하지 않은 알림을 두 번 탭할 때 알림과 빠른 설정이 겹치는 문제를 수정"
+      "중요하지 않은 알림을 더블클릭할 때 알림이 바로가기 버튼과 겹치는 문제를 수정했습니다."
     ],
     "백업": [
       "USB 드라이브에서 휴대폰에 설치되지 않은 앱을 복원할 때 아이콘이 비정상적으로 표시되는 문제를 수정했습니다"
     ],
-    "녹음기": [
-      "설정 아이콘이 비정상적으로 표시되는 문제 수정"
-    ],
     "설정": [
-      "설정 동기화에서 개인 계정 추가 옵션이 두 개 표시되는 문제 수정",
+      "개인 계정을 두 개 추가하는 옵션이 동기화되어 함께 표시되지 않는 문제를 수정했습니다.",
+      "설정 페이지에서 스크롤이 부드럽게 이동되지 않는 문제를 수정했습니다.",
+      "설정->내 기기->사용 설명을 중요 안전 정보로 변경",
       "설정]-[내 기기]-[사용 설명]을 [중요 안전 정보]로 변경"
+    ],
+    "파일 관리자": [
+      "파일 삭제 시 음악 끊김 문제 수정"
+    ],
+    "레코더": [
+      "설정 아이콘이 비정상적으로 표시되는 문제 수정"
     ],
     "기타": [
       "시스템 보안 및 안정성 개선"
     ]
   },
   "logs_ru": {
+    "Система": [
+      "Необходимо устранить проблемы с невозможностью использования функции разблокировки по лицу, а также повысить эффективность этого метода.",
+      "Устранено вылет развертки экрана при нажатии на иконку в панели состояния последнего задания.",
+      "Исправлено случайное исчезновение виртуальных кнопок после включения функции защиты от непреднамеренных действий.",
+      "Устранено возникновение случайных аномальных перезагрузок системы.",
+      "Исправлено поведение области быстрых клавиш после разблокировки экрана в WeChat: она отображалась некорректно.",
+      "Устранены проблемы с невозможностью разблокировки устройства по распознаванию лица, а также низким уровнем успешности этого процесса."
+    ],
     "Телефон": [
-      "Оптимизировать стратегию обработки после потери SIM-карты в режиме двух SIM-карт"
+      "Оптимизация стратегии обработки ситуаций, когда одна из карт отсоединяется при использовании двух карт."
     ],
     "Контакты": [
-      "Исправлена проблема с неправильным отображением конференц-вызовов VoLTE в настройках",
-      "Исправлено неправильное отображение конференц-вызовов VoLTE в настройках"
+      "Устранено ошибочное отображение информации о VoLTE-телефонных конференциях в настройках.",
+      "Исправлено отображение ошибок при настройке функции VoLTE для телефонных конференций."
+    ],
+    "Сообщения": [
+      "Добавлена функция отправки текстовых сообщений через мобильную сеть (интегрированная связь). Ее можно активировать в настройках → Системные приложения → Сообщения → Отправка сообщений через мобильную сеть."
     ],
     "Экран блокировки, строка состояния, шторка уведомлений": [
-      "Исправлена проблема наложения уведомлений и быстрых настроек при двойном нажатии на неважное уведомление"
+      "Исправлено совпадение уведомления и соответствующего пускового элемента при двойном клике на незначительное уведомление."
     ],
     "Резервное копирование": [
-      "Исправлена проблема с некорректным отображением значков при восстановлении из USB-накопителя приложений, не установленных на телефоне."
-    ],
-    "Диктофон": [
-      "Исправлена проблема с некорректным отображением значка настроек"
+      "Устранено неполадки при восстановлении приложений с флеш-накопителя на телефон: иконы приложений отображаются некорректно."
     ],
     "Настройки": [
-      "Исправлена проблема, из-за которой в синхронизации настроек отображались два параметра добавления личной учетной записи.",
-      "Настройки]-[Мое устройство]-[Инструкция] изменено на [Важная информация о безопасности]"
+      "Устранено неполадка с настройками синхронизации отображения двух опций для добавления личных учетных записей.",
+      "Устранено неплавное скольжение страницы при настройках.",
+      "Настройки->Мое устройство->Инструкция по использованию заменена на «Важная информация по безопасности»",
+      "Параметры → Мои устройства → Инструкция по использованию → Название раздела изменить на «Важная информация о безопасности»."
+    ],
+    "Проводник файлов": [
+      "Устранено проблему задержек в воспроизведении музыки при удалении файлов."
+    ],
+    "Диктофон": [
+      "Устранено неправильное отображение иконок при настройках."
     ],
     "Другое": [
       "Улучшение безопасности и стабильности системы"
     ]
   },
   "logs_uk": {
+    "Система": [
+      "Оптимізація проблем з невдалим розблокуванням за допомогою обличчя та низьким рівнем успішності цього процесу",
+      "Виправлено проблему, коли після натискання іконки на панелі стану останнього завдання екран починає блекаутити (показувати лише чорне поле).",
+      "Виправлено проблему, коли випадково увімкнено захист від ненавмисних дій, і віртуальні кнопки зникають.",
+      "Виправлено проблему випадкових аномальних перезавантажень",
+      "Виправлено проблему з некоректним відображенням зони швидких клавіш після розблокування екрана у інтерфейсі WeChat.",
+      "Виправлено проблеми з некоректним функціонуванням розблокування за допомогою обличчя та низьким рівнем успішності цього процесу."
+    ],
     "Телефон": [
-      "Оптимізувати стратегію обробки після втрати SIM-картки в режимі двох SIM-карток"
+      "Оптимізація стратегії обробки ситуацій, коли одна з карт випадає під час використання двох карт"
     ],
     "Контакти": [
       "Виправлено проблему з неправильним відображенням конференц-викликів VoLTE у налаштуваннях",
-      "Виправлено неправильне відображення конференц-викликів VoLTE у налаштуваннях"
+      "Виправлено помилку відображення інформації про телефонні конференції типу VoLTE у налаштуваннях."
+    ],
+    "Повідомлення": [
+      "Додана нова функція – надсилання текстових повідомлень через мобільну мережу (інтегроване зв’язку). Її можна увімкнути у налаштуваннях -> Системні додатки -> Текстові повідомлення -> Надсилання текстових повідомлень через мобільну мережу."
     ],
     "Екран блокування, рядок стану, рядок сповіщень": [
-      "Виправлено проблему накладання сповіщень і швидких налаштувань під час подвійного натискання на неважливе сповіщення"
+      "Виправлено проблему, коли під час подвійного клацання на неважливому сповіщенні сповіщення та відповідний швидкий перемикач залежали один від одного."
     ],
     "Резервне копіювання": [
-      "Виправлено проблему з неправильним відображенням значків під час відновлення з USB-накопичувача програм, не встановлених на телефоні."
+      "Виправлено проблему з відновленням додатків з флеш-накопичувача на телефон, коли додатки не були встановлені, а їх іконки відображалися некоректно."
+    ],
+    "Налаштування": [
+      "Виправлено проблему з налаштуванням синхронізованого відображення двох опцій для додавання особистих облікових записів.",
+      "Виправлено проблему з недостатньо плавним прокручуванням на сторінці налаштувань",
+      "Налаштування->Мій пристрій->Інструкція з використання змінена на «Важлива інформація з безпеки»",
+      "Налаштування]-[Мій пристрій]-[Інструкція] змінено на [Важлива інформація про безпеку]"
+    ],
+    "Провідник файлів": [
+      "Виправлено проблему з перериванням музики під час видалення файлів"
     ],
     "Диктофон": [
       "Виправлено проблему з нерозпізнаним відображенням значка налаштувань"
-    ],
-    "Налаштування": [
-      "Виправлено проблему, через яку в синхронізації налаштувань відображалися два параметри додавання особистого облікового запису.",
-      "Налаштування]-[Мій пристрій]-[Інструкція] змінено на [Важлива інформація про безпеку]"
     ],
     "Інше": [
       "Покращення безпеки та стабільності системи"
     ]
   },
   "logs_pl": {
+    "System": [
+      "Należy poprawić problemy związane z nieefektywnością rozpoznawania twarzy przy rozblokowaniu urządzeń oraz niskim stopniem skuteczności tego procesu.",
+      "Poprawiono problem wyświetlania „blank screenu” (czarnego ekranu) po kliknięciu na ikonkę w polu stanu najnowszych zadań.",
+      "Poprawiono problem, występujący czasem po włączeniu funkcji zapobiegania niechcianym dotknięciom, gdy klawisze wirtualne przestają być widoczne.",
+      "Poprawiono problem z nietypowymi, awaryjnymi restartami systemu.",
+      "Poprawiono problem z wyświetleniem elementów na panelu szybkiego dostępu po odblokowaniu ekranu w aplikacji WeChat.",
+      "Poprawiono problemy z nieefektywnym odkrywaniem oblicza przy rozszyfrowaniu oraz niskim stopniem skuteczności tego procesu."
+    ],
     "Telefon": [
-      "Optymalizacja strategii obsługi po utracie karty SIM w trybie dual SIM"
+      "Optymalizacja strategii działania w przypadku utraty jednej z kart w scenariu używania dwóch kart."
     ],
     "Kontakty": [
-      "Naprawiono problem z nieprawidłowym wyświetlaniem połączeń konferencyjnych VoLTE w Ustawieniach",
-      "Naprawiono nieprawidłowe wyświetlanie połączeń konferencyjnych VoLTE w Ustawieniach"
+      "Poprawiono problem z wyświetlaniem błędnych informacji dotyczących konferencji telefonicznych typu VoLTE w ustawieniach.",
+      "Poprawiono błąd w wyświetlaniu informacji o konferencjach telefonicznych typu VoLTE w ustawieniach."
+    ],
+    "Wiadomości": [
+      "Dodano nową funkcję wysyłania wiadomości tekstowych przez mobilną sieć (komunikacja zintegrowana). Można ją włączyć w ustawieniach → aplikacje systemowe → wiadomości tekstowe → wysyłanie wiadomości tekstowych przez mobilną sieć."
     ],
     "Ekran blokady, pasek stanu, pasek powiadomień": [
-      "Naprawiono problem nakładania się powiadomień i szybkich ustawień po dwukrotnym dotknięciu nieistotnego powiadomienia"
+      "Poprawiono problem, gdy dwukrotnie kliknięto na nieważną wiadomość, to wiadomość i przycisk szybkiego dostępu nakładały się na siebie."
     ],
     "Kopia zapasowa": [
-      "Naprawiono problem z nieprawidłowym wyświetlaniem ikon podczas przywracania z dysku USB aplikacji niezainstalowanych na telefonie."
-    ],
-    "Rejestrator": [
-      "Naprawiono problem z nieprawidłowym wyświetlaniem ikony ustawień"
+      "Poprawiono problem z przywracaniem aplikacji niezainstalowanych na telefonie z pendrive’a, w wyniku czego ikony te wyświetlały się niepoprawnie."
     ],
     "Ustawienia": [
-      "Naprawiono problem z wyświetlaniem dwóch opcji dodawania konta osobistego w synchronizacji ustawień.",
+      "Urzędnicy naprawili problem z ustawieniami synchronizacji wyświetlania dwóch opcji dotyczących dodawania kont osobistych.",
+      "Poprawiono problem z niesmiennością przesuwania się na stronie ustawień.",
+      "Ustawienia->Moje urządzenie->Instrukcja obsługi zmieniona na Ważne informacje dotyczące bezpieczeństwa",
       "Ustawienia]-[Moje urządzenie]-[Instrukcja] zmieniono na [Ważne informacje o bezpieczeństwie]"
     ],
-    "Inne": [
+    "Menedżer plików": [
+      "Poprawiono problem z opóźnieniem w odtwarzaniu muzyki podczas usuwania plików."
+    ],
+    "Kaseta nagrywająca": [
+      "Naprawiono problem z nieprawidłowym wyświetlaniem ikony ustawień"
+    ],
+    "Reszt": [
       "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
   "logs_de": {
+    "System": [
+      "Optimierung der Probleme mit fehlgeschlagenem Gesichtserkennungssystem zur Entsperrung sowie niedriger Erfolgsrate",
+      "Behebung des Problems, bei dem der Bildschirm nach Klicken auf das Symbol in der Statusleiste für die neuesten Aufgaben „flickert“ (also unregelmäßig angezeigt wird).",
+      "Behebung des Problems, bei dem virtuelle Tasten nach dem gelegentlichen Aktivieren der Fehlertastenschutzfunktion verschwinden.",
+      "Behebung des Problems mit gelegentlichen, unerwarteten Neustarts.",
+      "Behebung des Problems, dass nach dem Entsperren des Bildschirms im WeChat-Interface der Bereich mit den Schnellzugriffstasten falsch angezeigt wird.",
+      "Behebung der Probleme mit fehlgeschlagenem Gesichtserkennungssystem zur Entsperrung sowie der niedrigen Erfolgsrate."
+    ],
     "Telefon": [
       "Optimierung der Verarbeitungsstrategie nach SIM-Kartenverlust im Dual-SIM-Modus"
     ],
     "Kontakte": [
-      "Problem behoben, bei dem VoLTE-Telefonkonferenzen in den Einstellungen falsch angezeigt wurden",
-      "Fehlerhafte Anzeige von VoLTE-Konferenzanrufen in den Einstellungen behoben"
+      "Behebung des Problems mit den fehlerhaften Anzeigen von VoLTE-Telefonkonferenzen in den Einstellungen.",
+      "Behebung eines Fehlers bei der Anzeige von VoLTE-Telefonkonferenzen in den Einstellungen"
+    ],
+    "Nachrichten": [
+      "Neue Funktion: SMS über das Mobilfunknetz (Integrierte Kommunikation). Diese kann in den Einstellungen -> Systemanwendungen -> SMS -> SMS über das Mobilfunknetz aktiviert werden."
     ],
     "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
-      "Das Überlappen von Benachrichtigungen und Schnelleinstellungen beim Doppeltippen einer unwichtigen Benachrichtigung wurde behoben."
+      "Behebung des Problems, bei dem Benachrichtigungen unbedeutender Art beim Doppelklicken mit den Schnellzugriffsschaltern überlappen."
     ],
-    "Sicherung": [
-      "Problem behoben, bei dem App-Symbole falsch angezeigt wurden, wenn nicht auf dem Telefon installierte Apps von einem USB-Laufwerk wiederhergestellt wurden."
-    ],
-    "Rekorder": [
-      "Problem mit der fehlerhaften Anzeige des Einstellungssymbols behoben"
+    "Backup": [
+      "Behebung des Problems, bei dem nicht installierte Apps von einer USB-Stick auf das Handy zurückgeführt werden und deren Symbole fehlerhaft angezeigt werden."
     ],
     "Einstellungen": [
       "Das Problem wurde behoben, dass in der Einstellungssynchronisierung zwei Optionen zum Hinzufügen eines persönlichen Kontos angezeigt wurden.",
+      "Behebung des Problems, dass das Scrollen auf der Einstellungsseite nicht reibungslos funktioniert.",
+      "Einstellungen->Mein Gerät->Bedienungsanleitung geändert in Wichtige Sicherheitsinformationen",
       "Einstellungen]-[Mein Gerät]-[Anleitung] geändert zu [Wichtige Sicherheitsinformationen]"
+    ],
+    "Dateimanager": [
+      "Behebung des Problems mit dem stockenden Musikabspielverhalten beim Löschen von Dateien"
+    ],
+    "Tonaufnahmegerät": [
+      "Behebung des Problems mit der abnormalen Anzeige der Einstellungsicons"
     ],
     "Sonstiges": [
       "Systemsicherheit und -stabilität verbessert"
     ]
   },
   "logs_fr": {
+    "Système": [
+      "Optimiser les problèmes de fonctionnement défaillant du déverrouillage par reconnaissance faciale ainsi que le faible taux de réussite de ce système.",
+      "Réparation du problème de freeze de l'écran après avoir cliqué sur l'icône de la barre d'état des tâches récentes.",
+      "Résolution du problème où les boutons virtuels disparaissent parfois après l'activation de la fonction anti-erreur de manipulation.",
+      "Réparation du problème de redémarrage anormal et sporadique.",
+      "Résolution du problème : après déverrouillage de l'écran verrouillé sur WeChat, la zone des raccourcis affiche un contenu anormal.",
+      "Réparation des problèmes de dysfonctionnement du déverrouillage par reconnaissance faciale ainsi que d'un taux de réussite trop bas."
+    ],
     "Téléphone": [
-      "Optimisation de la stratégie de traitement après perte de carte SIM en mode double SIM"
+      "Optimisation de la stratégie de gestion en cas de perte d'une carte dans un scénario utilisant deux cartes."
     ],
     "Contacts": [
-      "Correction du problème d’affichage incorrect des conférences téléphoniques VoLTE dans les Paramètres",
-      "Correction de l’affichage incorrect des appels conférence VoLTE dans les Paramètres"
+      "Problème résolu : les erreurs d'affichage concernant les conférences téléphoniques VoLTE dans les paramètres ont été corrigées.",
+      "La erreur d'affichage concernant les conférences téléphoniques VoLTE dans les paramètres a été corrigée."
+    ],
+    "Messaging": [
+      "Nouvelle fonction : messagerie texte par réseau mobile (communication intégrée). Elle peut être activée dans « Paramètres » → « Applications système » → « Messagerie » → « Messagerie texte par réseau mobile »."
     ],
     "Écran de verrouillage, barre d’état, barre de notifications": [
-      "Correction du chevauchement entre les notifications et les raccourcis lors d'un double appui sur une notification non importante."
+      "Résolution du problème où les notifications et les boutons de raccourci se chevauchent lorsqu'on double-clique sur une notification non importante."
     ],
-    "Sauvegarde": [
-      "Correction du problème d’affichage incorrect des icônes lors de la restauration depuis une clé USB d’applications non installées sur le téléphone."
-    ],
-    "Enregistreur": [
-      "Correction du problème d'affichage anormal de l'icône Paramètres"
+    "Copie de sécurité": [
+      "Résolution du problème : les applications qui n’ont pas été installées sur le téléphone et qui sont récupérées depuis une clé USB affichent des icônes anormales."
     ],
     "Paramètres": [
-      "Correction du problème où deux options d'ajout de compte personnel s'affichaient dans la synchronisation des paramètres.",
-      "Paramètres]-[Mon appareil]-[Instructions] remplacé par [Informations de sécurité importantes]"
+      "Problème résolu concernant l'affichage synchronisé des deux options permettant d'ajouter des comptes personnels.",
+      "Résolution du problème de glissement non fluide sur la page de configuration.",
+      "Paramètres -> Mes appareils -> Instructions d’utilisation → Modifier en « Informations de sécurité importantes »",
+      "Paramètres → Mon appareil → Instructions d’utilisation → Modifiez le contenu pour qu’il affiche « Informations de sécurité importantes »."
+    ],
+    "Gestionnaire de fichiers": [
+      "Problème résolu : le défilement de la musique s’arrête brusquement lors de la suppression d’un fichier."
+    ],
+    "Enregistreur": [
+      "Problème résolu : l'affichage des icônes de configuration est maintenant correct."
     ],
     "Autre": [
       "Sécurité et stabilité du système améliorées"
     ]
   },
   "logs_it": {
+    "Sistema": [
+      "Ottimizzare i problemi legati al funzionamento non corretto del riconoscimento facciale per l’accesso e ai bassi tassi di successo nell’utilizzo di questo sistema.",
+      "Risolto il problema del blocco dello schermo che si verificava dopo aver cliccato sull’icona nella barra di stato relative alle attività più recenti.",
+      "Risolto il problema occasionale in cui, abilitata la funzione per evitare errori di input (anti-touch), i pulsanti virtuali scompaiono.",
+      "Risolto il problema dei riavvii anomali occasionali",
+      "Risolto il problema di visualizzazione anomala dell'area dei tasti di scelta rapida dopo lo sblocco dello schermo in WeChat",
+      "Risolto il problema del funzionamento errato del riconoscimento facciale per l’accesso e dell’elevata incidenza di fallimenti nel processo di sblocco."
+    ],
     "Telefono": [
-      "Ottimizzazione della strategia di gestione dopo la perdita della scheda SIM in modalità dual SIM"
+      "Ottimizzazione della strategia di gestione in caso di perdita di una delle due carte in scenari che prevedono l’uso di più carte."
     ],
     "Contatti": [
       "Risolto il problema di visualizzazione errata delle conference call VoLTE nelle Impostazioni",
-      "Corretta la visualizzazione errata delle chiamate conference VoLTE nelle Impostazioni"
+      "Riparato l’errore nella visualizzazione delle informazioni relative alle conferenze telefoniche VoLTE nelle impostazioni."
+    ],
+    "Messaggi": [
+      "Aggiunta la funzionalità di messaggistica istantanea tramite rete mobile (comunicazione integrata): è possibile attivarla nelle impostazioni -> App di sistema -> Messaggi -> Messaggistica istantanea tramite rete mobile."
     ],
     "Schermata di blocco, barra di stato, barra delle notifiche": [
-      "Risolto il problema di sovrapposizione tra notifiche e scorciatoie quando si tocca due volte una notifica non importante."
+      "Risolto il problema in cui, facendo doppio clic su una notifica non importante, la notifica si sovrapponeva all’icona relativa all’applicazione che permette di attivarla o disattivarla rapidamente."
+    ],
+    "Backup": [
+      "Risolto il problema relativo al recupero di applicazioni non installate dal telefono tramite chiavetta USB: gli iconi delle applicazioni venivano visualizzati in modo errato."
+    ],
+    "Impostazioni": [
+      "Risolto il problema relativo alle impostazioni per la sincronizzazione dell’visualizzazione delle due opzioni relative all’aggiunta di account personali.",
+      "Risolto il problema di scorrimento non fluido nella pagina Impostazioni",
+      "Impostazioni->Il mio dispositivo->Istruzioni per l'uso modificate in Informazioni importanti sulla sicurezza",
+      "Impostazioni]-[Il mio dispositivo]-[Istruzioni] modificato in [Informazioni importanti sulla sicurezza]"
+    ],
+    "File Manager": [
+      "Risolto il problema del “gioco” (del suono) della musica quando si elimina un file."
     ],
     "Registratore": [
       "Risolto il problema di visualizzazione anomala dell'icona Impostazioni"
-    ],
-    "Impostazioni": [
-      "Risolto il problema per cui nella sincronizzazione delle impostazioni venivano mostrate due opzioni per aggiungere un account personale.",
-      "Impostazioni]-[Il mio dispositivo]-[Istruzioni] modificato in [Informazioni importanti sulla sicurezza]"
     ],
     "Altro": [
       "Maggiore sicurezza e stabilità di sistema"
     ]
   },
   "logs_es": {
+    "Sistema": [
+      "Optimizar los problemas de fallo en el desbloqueo por reconocimiento facial y la baja tasa de éxito.",
+      "Se ha corregido el problema en el que la pantalla se quedaba con una imagen fija al hacer clic en el icono de la barra de estado de las tareas más recientes.",
+      "Se ha corregido el problema en el que, ocasionalmente, después de activar la función contra errores de uso (anti-touch), los botones virtuales desaparecían.",
+      "Se ha corregido el problema de reinicios repentinos y erráticos que ocurría ocasionalmente.",
+      "Se ha corregido el problema en la interfaz de WeChat: después de desbloquear la pantalla con el patrón, la zona de los botones rápidos no se muestra correctamente.",
+      "Se han corregido los problemas de fallo en el desbloqueo por reconocimiento facial, así como la baja tasa de éxito de este proceso."
+    ],
     "Teléfono": [
-      "Optimización de la estrategia de gestión tras la pérdida de la tarjeta SIM en modo dual SIM"
+      "Optimización de la estrategia de manejo en caso de pérdida de una tarjeta en un escenario con dos tarjetas."
     ],
     "Contactos": [
-      "Se corrigió el problema de visualización incorrecta de las llamadas de conferencia VoLTE en Ajustes",
-      "Corregida la visualización incorrecta de las llamadas de conferencia VoLTE en Ajustes"
+      "Se ha corregido el problema de las visualizaciones erróneas en las configuraciones relativas a las conferencias telefónicas VoLTE.",
+      "Se ha corregido el error en la visualización de las conferencias telefónicas VoLTE en los ajustes."
+    ],
+    "Mensajería": [
+      "Se ha añadido la función de mensajes de texto a través de redes móviles (comunicación integrada). Puede activarse en «Ajustes» → «Aplicaciones del sistema» → «Mensajes de texto» → «Mensajes de texto a través de redes móviles»."
     ],
     "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
-      "Se corrige el problema de superposición entre notificaciones y accesos rápidos al doble tocar una notificación no importante."
+      "Se ha corregido el problema en el que, al hacer doble clic en una notificación de poca importancia, esta se superponía a los botones de acceso rápido."
     ],
-    "Copia de seguridad": [
-      "Se corrigió el problema de visualización incorrecta de los iconos al restaurar desde una unidad USB aplicaciones no instaladas en el teléfono."
+    "Reserva de datos": [
+      "Se ha corregido el problema en el que, al recuperar aplicaciones de un pendrive a un teléfono móvil y si dichas aplicaciones no están instaladas, sus iconos se muestran de manera anormal."
+    ],
+    "Configuración": [
+      "Se ha corregido el problema relacionado con la configuración para mostrar de forma sincronizada las dos opciones para agregar cuentas personales.",
+      "Se ha solucionado el problema de que la deslizamiento en la página de configuración no es fluido.",
+      "Ajustes->Mi dispositivo->Instrucciones de uso cambiadas a Información importante de seguridad",
+      "Ajustes]-[Mi dispositivo]-[Instrucciones] cambiado a [Información importante de seguridad]"
+    ],
+    "Administrador de archivos": [
+      "Se ha corregido el problema de la interrupción en la reproducción de música al eliminar archivos."
     ],
     "Grabadora": [
-      "Se corrigió el problema de visualización anómala del icono de Ajustes"
-    ],
-    "Ajustes": [
-      "Se ha corregido el problema por el que se mostraban dos opciones para añadir una cuenta personal en la sincronización de ajustes.",
-      "Ajustes]-[Mi dispositivo]-[Instrucciones] cambiado a [Información importante de seguridad]"
+      "Se ha corregido el problema de la visualización anormal de los iconos de configuración."
     ],
     "Otros": [
       "Estabilidad y seguridad del sistema mejorada"
     ]
   },
   "logs_pt": {
+    "Sistema": [
+      "Otimizar os problemas de falha no desbloqueio por reconhecimento facial, bem como a baixa taxa de sucesso nesse processo.",
+      "Corrigido o problema em que a tela ficava congelada após clicar no ícone da barra de estado das tarefas mais recentes.",
+      "Corrigido o problema em que as teclas virtuais desapareciam ocasionalmente após ativar a proteção contra toques acidentais",
+      "Corrigido o problema de reinícios anormais que ocorrem ocasionalmente.",
+      "Corrigido o problema em que, após desbloquear o ecrã bloqueado do WeChat, a área dos botões de atalho apresentava um comportamento anormal.",
+      "Corrigir os problemas de falha no desbloqueio por reconhecimento facial, bem como a baixa taxa de sucesso nesse processo."
+    ],
     "Telefone": [
       "Otimização da estratégia de tratamento após perda do cartão SIM no modo dual SIM"
     ],
     "Contatos": [
-      "Corrigido o problema de exibição incorreta de chamadas em conferência VoLTE nas Configurações",
-      "Corrigida a exibição incorreta das chamadas em conferência VoLTE nas Configurações"
+      "Corrigido o problema de exibição errada das informações sobre as conferências telefónicas VoLTE nas definições do sistema.",
+      "Corrigido o erro na exibição das informações sobre as conferências telefónicas via VoLTE nas definições do sistema."
+    ],
+    "Mensagens": [
+      "Foi adicionada a funcionalidade de mensagens de texto através da rede móvel (comunicação integrada), que pode ser ativada em “Configurações” -> “Aplicações do Sistema” -> “Mensagens de Texto” -> “Mensagens de Texto através da Rede Móvel”."
     ],
     "Tela de bloqueio, barra de status, barra de notificações": [
-      "Corrigido o problema de sobreposição entre notificações e atalhos rápidos ao tocar duas vezes em uma notificação não importante."
+      "Corrigido o problema em que, ao clicar duas vezes em uma notificação não importante, a notificação se sobrepunha ao atalho correspondente."
     ],
     "Cópia de segurança": [
-      "Corrigido o problema de exibição incorreta dos ícones ao restaurar de uma unidade USB aplicativos não instalados no telefone."
+      "Corrigido o problema em que, ao recuperar aplicativos de um pen drive para um telemóvel e estes não estarem instalados, os ícones eram exibidos de forma anormal."
+    ],
+    "Configurações": [
+      "Corrigido o problema relacionado com a configuração da exibição sincronizada de duas opções para adicionar contas pessoais.",
+      "Corrigido o problema de rolagem não fluida na página de Configurações",
+      "Configurações->Meu dispositivo->Instruções de uso alteradas para Informações importantes de segurança",
+      "Configurações]-[Meu dispositivo]-[Instruções] alterado para [Informações importantes de segurança]"
+    ],
+    "Gerenciador de arquivos": [
+      "Corrigido o problema de pausas na reprodução da música quando um arquivo é excluído."
     ],
     "Gravador": [
       "Corrigido o problema de exibição anormal do ícone de Configurações"
-    ],
-    "Configurações": [
-      "Corrigido o problema em que duas opções de adicionar conta pessoal eram exibidas na sincronização de configurações.",
-      "Configurações]-[Meu dispositivo]-[Instruções] alterado para [Informações importantes de segurança]"
     ],
     "Outros": [
       "Segurança e estabilidade do sistema aprimoradas"
     ]
   },
   "logs_tr": {
+    "Sistem": [
+      "Yüz tanıma ile kilidin açılmasında yaşanan sorunları ve düşük başarı oranlarını gidermek için iyileştirmeler yapmak gerekiyor.",
+      "En son görevin durum çubuğundaki simgesine tıklandığında ekranın donması sorununu giderdik.",
+      "Arada bir yanlış dokunmaları önleme özelliği açıldığında sanal tuşların kaybolması sorununu düzelttik.",
+      "Ara sıra oluşan anormal yeniden başlatma sorunu düzeltildi",
+      "WeChat arayüzünün kilit ekranının açılmasından sonra, hızlı tuş alanında görülen anormallik sorunu düzeltildi.",
+      "Yüz tanıma ile kilidin açılmasında yaşanan sorunları ve düşük başarı oranlarını giderin."
+    ],
     "Telefon": [
-      "Çift SIM modunda SIM kart kaybı sonrası işlem stratejisi optimize edildi"
+      "Çift kartlı bir ortamda bir kartın çıkış yapması durumunda izlenecek işlem stratejisinin optimizasyonu"
     ],
     "Kişiler": [
-      "Ayarlar'da VoLTE konferans aramalarının yanlış görüntülenmesi sorunu giderildi",
-      "Ayarlar'da VoLTE konferans aramalarının yanlış görünmesi düzeltildi"
+      "Ayarlar bölümünde VoLTE telefon konferanslarının yanlış gösterilmesi sorununu düzelttik.",
+      "Ayarlar bölümünde VoLTE telefon konferanslarının gösterimindeki hataları düzeltildi."
+    ],
+    "Mesajlaşma": [
+      "Mobil ağ SMS özelliği (RCS) eklendi, Ayarlar -> Sistem uygulamaları -> Mesajlar -> Mobil ağ SMS'leri bölümünden etkinleştirilebilir."
     ],
     "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
-      "Önemsiz bir bildirime çift dokunulduğunda bildirimlerle hızlı ayarların üst üste binmesi sorunu giderildi."
+      "Önemsiz bildirimlere çift tıklandığında, bildirimin kısayol düğmesiyle örtüşmesi sorununu giderdik."
     ],
     "Yedekleme": [
-      "USB sürücüsünden telefonda yüklü olmayan uygulamalar geri yüklenirken simgelerin yanlış görüntülenmesi sorunu giderildi."
-    ],
-    "Kayıt Cihazı": [
-      "Ayarlar simgesinin hatalı görüntülenmesi sorunu düzeltildi"
+      "USB bellekten telefonunuza geri yüklediğinizde, telefonda yüklü olmayan uygulamaların simgelerinin yanlış şekilde görünmesi sorununu düzelttik."
     ],
     "Ayarlar": [
-      "Ayarlar senkronizasyonunda iki kişisel hesap ekleme seçeneği gösterilmesi sorunu düzeltildi.",
+      "İki kişisel hesabın eklenebilmesi seçeneğinin senkronize bir şekilde gösterilmesinde yaşanan sorunu düzelttik.",
+      "Ayarlar sayfasının kaydırılmasında yaşanan sorunu giderdik.",
+      "Ayarlar->Cihazım->Kullanım talimatları Önemli güvenlik bilgileri olarak değiştirildi",
       "Ayarlar]-[Cihazım]-[Kullanım talimatları] [Önemli güvenlik bilgileri] olarak değiştirildi"
+    ],
+    "Dosya Yöneticisi": [
+      "Dosyaların silinmesi sırasında müziğin donması sorununu giderdik."
+    ],
+    "Kayıt Cihazı": [
+      "Ayar simgelerinin yanlış şekilde görünmesi sorununu düzelttik."
     ],
     "Diğer": [
       "Sistem güvenliği ve kararlılığı geliştirildi"
     ]
   },
   "logs_id": {
+    "Sistem": [
+      "Mengoptimalkan masalah kegagalan proses pembukaan kunci menggunakan pengenalan wajah, serta tingkat keberhasilan yang rendah dalam proses tersebut.",
+      "Memperbaiki masalah layar yang menjadi “blank” (tidak menampilkan gambar) setelah mengklik ikon pada bilah status tugas terbaru.",
+      "Memperbaiki masalah di mana tombol virtual menghilang secara sporadis setelah fitur anti-kesalahan (anti-touch) diaktifkan.",
+      "Memperbaiki masalah restart yang terjadi secara tidak terduga.",
+      "Diperbaiki masalah di mana setelah layar WeChat terkunci dibuka kembali, area tombol pintas menampilkan tampilan yang tidak normal.",
+      "Memperbaiki masalah ketidakfungsian fitur pembukaan kunci berbasis wajah, serta tingkat keberhasilan yang rendah dalam proses tersebut."
+    ],
     "Telepon": [
-      "Mengoptimalkan strategi penanganan setelah kartu SIM hilang dalam mode dual SIM"
+      "Mengoptimalkan strategi penanganan situasi di mana salah satu kartu SIM tidak berfungsi (tidak terhubung) dalam skenario penggunaan dua kartu SIM."
     ],
     "Kontak": [
-      "Memperbaiki masalah tampilan panggilan konferensi VoLTE yang salah di Pengaturan",
-      "Memperbaiki tampilan panggilan konferensi VoLTE yang salah di Pengaturan"
+      "Masalah telah diperbaiki: kesalahan tampilan pada konferensi panggilan VoLTE di pengaturan telah diatasi.",
+      "Diperbaiki: Kesalahan tampilan pada pengaturan konferensi telepon VoLTE."
+    ],
+    "Pesan": [
+      "Fungsi pesan singkat melalui jaringan seluler (komunikasi terintegrasi) telah ditambahkan, dan dapat diaktifkan di Pengaturan -> Aplikasi Sistem -> Pesan Singkat -> Pesan Singkat Jaringan Seluler."
     ],
     "Layar kunci, bilah status, bilah notifikasi": [
-      "Memperbaiki masalah tumpang tindih antara notifikasi dan tombol cepat saat mengetuk dua kali notifikasi tidak penting."
+      "Memperbaiki masalah di mana notifikasi yang tidak penting menumpang tindakan klik dua kali, sehingga notifikasi tersebut bertabrakan dengan tombol akses cepat (shortcut buttons)."
     ],
     "Cadangan": [
-      "Memperbaiki masalah ikon yang ditampilkan secara tidak normal saat memulihkan aplikasi yang tidak terpasang di ponsel dari drive USB."
-    ],
-    "Perekam": [
-      "Memperbaiki masalah ikon Pengaturan yang tidak tampil dengan benar"
+      "Memperbaiki masalah di mana aplikasi yang tidak terinstal di ponsel tidak dapat dipulihkan dari flash disk (USB), dan ikonnya menampilkan tampilan yang tidak normal."
     ],
     "Pengaturan": [
-      "Memperbaiki masalah di mana dua opsi untuk menambahkan akun pribadi ditampilkan di sinkronisasi Pengaturan.",
-      "Setelan]-[Perangkat saya]-[Petunjuk penggunaan] diubah menjadi [Informasi keamanan penting]"
+      "Masalah telah diperbaiki: opsi untuk menyinkronkan dan menampilkan dua akun pribadi yang baru ditambahkan kini berfungsi dengan benar.",
+      "Memperbaiki masalah di mana proses geser (sliding) pada halaman pengaturan tidak berjalan lancar.",
+      "Pengaturan->Perangkat saya->Petunjuk penggunaan diubah menjadi Informasi keselamatan penting",
+      "Pergilah ke “Settings” → “My Devices” → “Instructions for Use”, lalu gantilah isi kolom tersebut menjadi “Important Security Information”."
+    ],
+    "File Manager": [
+      "Memperbaiki masalah gangguan suara musik saat file dihapus."
+    ],
+    "Perekam": [
+      "Memperbaiki masalah penampilan ikon pengaturan yang tidak normal."
     ],
     "Lainnya": [
       "Keamanan dan stabilitas sistem ditingkatkan"
     ]
   },
   "logs_vi": {
+    "Hệ thống": [
+      "Tối ưu hóa các vấn đề liên quan đến việc mở khóa bằng khuôn mặt không hoạt động hiệu quả và tỷ lệ thành công thấp.",
+      "Khắc phục sự cố màn hình bị đơ sau khi nhấp vào biểu tượng trên thanh trạng thái của nhiệm vụ gần nhất.",
+      "Khắc phục sự cố khi các nút ảo biến mất sau khi tính năng chống nhầm lẫn được kích hoạt (xảy ra thỉnh thoảng).",
+      "Đã sửa lỗi về việc máy tính bị khởi động lại một cách bất thường và không theo dự đoán.",
+      "Đã sửa lỗi: Sau khi màn hình của WeChat được khóa và sau khi màn hình được mở khóa, khu vực các phím tắt (shortcut keys) bị hiển thị không đúng như mong muốn.",
+      "Khắc phục các sự cố liên quan đến việc mở khóa bằng khuôn mặt không hoạt động đúng chức năng và tỷ lệ thành công thấp."
+    ],
     "Điện thoại": [
-      "Tối ưu hóa chiến lược xử lý sau khi mất thẻ SIM ở chế độ hai SIM"
+      "Tối ưu hóa chiến lược xử lý tình huống mất kết nối khi sử dụng cùng lúc hai thẻ trong môi trường có hai thẻ."
     ],
     "Danh bạ": [
-      "Đã sửa lỗi hiển thị sai cuộc gọi hội nghị VoLTE trong Cài đặt"
+      "Đã sửa lỗi hiển thị sai thông tin trong phần cài đặt liên quan đến các cuộc họp qua điện thoại VoLTE.",
+      "Đã sửa lỗi hiển thị sai thông tin trong phần cài đặt liên quan đến cuộc họp qua điện thoại VoLTE."
+    ],
+    "Tin nhắn": [
+      "Thêm tính năng nhắn tin qua mạng di động (truyền thông tích hợp). Bạn có thể bật tính năng này bằng cách vào Cài đặt -> Ứng dụng hệ thống -> Nhắn tin -> Nhắn tin qua mạng di động."
     ],
     "Màn hình khóa, thanh trạng thái, thanh thông báo": [
-      "Đã sửa lỗi thông báo và công tắc nhanh bị chồng lên nhau khi nhấn đúp vào thông báo không quan trọng."
+      "Khắc phục sự cố khi nhấp đúp vào các thông báo không quan trọng, dẫn đến tình trạng thông báo và các công cụ tắt nhanh (shortcut buttons) bị chồng lên nhau."
     ],
-    "Sao lưu": [
-      "Đã khắc phục sự cố biểu tượng hiển thị không đúng khi khôi phục ứng dụng chưa cài đặt trên điện thoại từ ổ USB."
-    ],
-    "Máy ghi âm": [
-      "Khắc phục sự cố biểu tượng Cài đặt hiển thị bất thường"
+    "Dự phòng (Backup)": [
+      "Đã sửa lỗi: Khi khôi phục các ứng dụng từ thẻ nhớ USB vào điện thoại mà những ứng dụng đó chưa được cài đặt, biểu tượng của chúng hiển thị bất thường."
     ],
     "Cài đặt": [
-      "Đã sửa lỗi hiển thị hai tùy chọn thêm tài khoản cá nhân trong đồng bộ hóa Cài đặt.",
+      "Đã sửa lỗi liên quan đến việc thiết lập hiển thị đồng bộ cho hai tùy chọn thêm tài khoản cá nhân.",
+      "Đã sửa lỗi khi trượt màn hình trên trang cài đặt không mượt mà.",
+      "Cài đặt->Thiết bị của tôi->Hướng dẫn sử dụng đã đổi thành Thông tin an toàn quan trọng",
       "Cài đặt]-[Thiết bị của tôi]-[Hướng dẫn sử dụng] đổi thành [Thông tin an toàn quan trọng]"
+    ],
+    "Trình quản lý tệp": [
+      "Đã sửa lỗi giật lag âm nhạc khi xóa tệp tin."
+    ],
+    "Máy ghi âm": [
+      "Đã sửa lỗi liên quan đến việc hiển thị biểu tượng cài đặt một cách bất thường."
     ],
     "Khác": [
       "Cải thiện tính ổn định và bảo mật hệ thống"
     ]
   },
   "logs_th": {
+    "ระบบ": [
+      "การปรับปรุงปัญหาเกี่ยวกับการล็อคด้วยใบหน้าที่ไม่สามารถทำงานได้อย่างถูกต้อง และอัตราความสำเร็จที่ต่ำ",
+      "แก้ไขปัญหาที่หน้าจอเกิดภาพไม่ชัด (สกรีนเบลอ) หลังจากคลิกไอคอนในแถบสถานะของงานล่าสุด",
+      "แก้ไขปัญหาที่บางครั้งเมื่อเปิดฟีเจอร์ป้องกันการกดผิดพลาด (anti-touch) แล้วปุ่มเสมือน (virtual buttons) จะหายไป",
+      "แก้ไขปัญหาการรีสตาร์ทผิดปกติเป็นครั้งคราว",
+      "แก้ไขปัญหาที่หน้าจอล็อคของ WeChat หลังจากปลดล็อคแล้ว พื้นที่ของปุ่มต่างๆ ไม่แสดงผลอย่างถูกต้อง",
+      "แก้ไขปัญหาการปลดล็อกด้วยใบหน้าไม่ทำงานและอัตราความสำเร็จต่ำ"
+    ],
     "โทรศัพท์": [
-      "เพิ่มประสิทธิภาพกลยุทธ์การจัดการเมื่อ SIM หลุดในโหมด Dual SIM"
+      "การปรับปรุงกลยุทธ์การจัดการเมื่อการเชื่อมต่อบัตรสองใบหยุดทำงาน"
     ],
     "รายชื่อ": [
-      "แก้ไขปัญหาการแสดงผลการโทรประชุม VoLTE ไม่ถูกต้องในการตั้งค่า",
-      "แก้ไขการแสดงผลการโทรประชุม VoLTE ที่ไม่ถูกต้องในการตั้งค่า"
+      "แก้ไขปัญหาที่การตั้งค่า VoLTE สำหรับการประชุมทางโทรศัพท์แสดงผลผิดพลาด",
+      "ได้แก้ไขปัญหาที่การตั้งค่า VoLTE สำหรับการประชุมทางโทรศัพท์แสดงผลผิดพลาดแล้ว"
+    ],
+    "ข้อความ": [
+      "เพิ่มฟังก์ชันส่งข้อความผ่านเครือข่ายโทรศัพท์มือถือ (การสื่อสารแบบบูรณาการ) สามารถเปิดใช้งานได้ที่ “การตั้งค่า” -> “แอปพลิเคชันระบบ” -> “ข้อความ” -> “ส่งข้อความผ่านเครือข่ายโทรศัพท์มือถือ”"
     ],
     "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
-      "แก้ไขปัญหาการซ้อนทับกันระหว่างการแจ้งเตือนและปุ่มลัดเมื่อแตะสองครั้งที่การแจ้งเตือนที่ไม่สำคัญ"
+      "แก้ไขปัญหาที่การคลิกดับเบิลที่การแจ้งเตือนที่ไม่สำคัญ ทำให้การแจ้งเตือนและปุ่มสำหรับเปิด/ปิดการแจ้งเตือนซ้อนกัน"
     ],
     "สำรองข้อมูล": [
-      "แก้ไขปัญหาการแสดงไอคอนผิดปกติเมื่อกู้คืนแอปที่ยังไม่ได้ติดตั้งบนโทรศัพท์จากไดรฟ์ USB"
+      "แก้ไขปัญหาเมื่อพยายามคืนแอปพลิเคชันที่ไม่ได้ติดตั้งไว้ในโทรศัพท์จากแผ่น USB โดยไอคอนของแอปพลิเคชันแสดงผลอย่างผิดปกติ"
+    ],
+    "การตั้งค่า": [
+      "แก้ไขปัญหาเกี่ยวกับการตั้งค่าให้แสดงผลการซิงโครไนซ์ระหว่างตัวเลือกสองตัวที่ใช้สำหรับเพิ่มบัญชีส่วนบุคคล",
+      "แก้ไขปัญหาที่การสลับหน้าในหน้าตั้งค่าเกิดการเลื่อนไม่ราบรื่น",
+      "การตั้งค่า->อุปกรณ์ของฉัน->คำแนะนำการใช้งาน เปลี่ยนเป็น ข้อมูลความปลอดภัยที่สำคัญ",
+      "การตั้งค่า]-[อุปกรณ์ของฉัน]-[คำแนะนำการใช้งาน] เปลี่ยนเป็น [ข้อมูลความปลอดภัยที่สำคัญ]"
+    ],
+    "ตัวจัดการไฟล์": [
+      "แก้ไขปัญหาเสียงเพลงที่หยุดชะงักเมื่อมีการลบไฟล์"
     ],
     "เครื่องบันทึกเสียง": [
       "แก้ไขปัญหาไอคอนการตั้งค่าแสดงผลผิดปกติ"
-    ],
-    "การตั้งค่า": [
-      "แก้ไขปัญหาที่การซิงค์การตั้งค่าแสดงตัวเลือกเพิ่มบัญชีส่วนตัวสองรายการ",
-      "การตั้งค่า]-[อุปกรณ์ของฉัน]-[คำแนะนำการใช้งาน] เปลี่ยนเป็น [ข้อมูลความปลอดภัยที่สำคัญ]"
     ],
     "อื่นๆ": [
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
     ]
   },
   "logs_ar": {
+    "النظام": [
+      "تحسين مشاكل فشل عملية فتح القفل باستخدام بصمة الوجه، وانخفاض معدل نجاح هذه الطريقة.",
+      "تم إصلاح المشكلة التي كانت تؤدي إلى تجمد الشاشة عند النقر على أيقونة في شريط حالة المهام الأخيرة.",
+      "تم إصلاح المشكلة التي تحدث أحيانًا حيث تختفي الأزرار الافتراضية بعد تفعيل وظيفة منع الإغلاق الخاطئ.",
+      "تم إصلاح مشكلة إعادة التشغيل غير المنتظمة والتي كانت تحدث أحيانًا.",
+      "تم إصلاح المشكلة التي كانت تظهر فيها منطقة الأزرار السريعة بشكل غير صحيح بعد فتح شاشة قفل ويتشات.",
+      "إصلاح مشاكل عدم فعالية نظام فتح القفل باستخدام بيانات الوجه، بالإضافة إلى انخفاض معدل نجاح هذا النظام."
+    ],
     "الهاتف": [
-      "تحسين استراتيجية المعالجة بعد فقدان بطاقة SIM في وضع الشريحتين"
+      "تحسين استراتيجية المعالجة عند فقدان إحدى البطاقتين في سيناريو وجود بطاقتين."
     ],
     "جهات الاتصال": [
-      "إصلاح مشكلة عرض مكالمات مؤتمر VoLTE بشكل خاطئ في الإعدادات",
-      "إصلاح عرض مكالمات مؤتمر VoLTE بشكل غير صحيح في الإعدادات"
+      "تم إصلاح المشكلة المتعلقة بعرض الأخطاء أثناء عقد مؤتمرات هاتفية VoLTE في إعدادات الجهاز.",
+      "تم إصلاح المشكلة التي كانت تؤدي إلى عرض بيانات خاطئة حول مؤتمرات الهاتف VoLTE في إعدادات النظام."
+    ],
+    "الرسائل": [
+      "تم إضافة ميزة الرسائل النصية عبر شبكات المحمول (الاتصالات المدمجة)، ويمكن تفعيلها من خلال الإعدادات -> التطبيقات النظامية -> الرسائل النصية -> الرسائل النصية عبر شبكات المحمول."
     ],
     "شاشة القفل، شريط الحالة، شريط الإشعارات": [
-      "إصلاح مشكلة تداخل الإشعارات مع مفاتيح الاختصار عند النقر المزدوج على إشعار غير مهم"
+      "تم إصلاح المشكلة التي كانت تحدث عند النقر المزدوج على إشعارات غير مهمة، حيث كان يحدث تداخل بين الإشعار نفسه وأزرار التشغيل السريعة."
     ],
     "النسخ الاحتياطي": [
-      "إصلاح مشكلة عرض الرموز بشكل غير صحيح عند استعادة التطبيقات غير المثبّتة على الهاتف من محرك أقراص USB."
-    ],
-    "مسجل": [
-      "إصلاح مشكلة عرض أيقونة الإعدادات بشكل غير طبيعي"
+      "تم إصلاح المشكلة التي كانت تظهر فيها أيقونات التطبيقات غير المثبتة على الهاتف بشكل غير صحيح عند استعادتها من وحدة التخزين الخارجية (USB)."
     ],
     "الإعدادات": [
-      "تم إصلاح مشكلة ظهور خيارين لإضافة حساب شخصي في مزامنة الإعدادات.",
-      "الإعدادات]-[جهازي]-[تعليمات الاستخدام] تم التغيير إلى [معلومات أمان مهمة]"
+      "تم إصلاح المشكلة المتعلقة بعدم تزامن عرض خيارات إضافة الحسابات الشخصية.",
+      "تم إصلاح المشكلة المتعلقة بعدم سلاسة تمرير الصفحات أثناء عملية التهيئة.",
+      "الإعدادات->جهازي->تم تغيير إرشادات الاستخدام إلى معلومات الأمان المهمة",
+      "اذهب إلى \"الإعدادات\" → \"أجهزتي\" → \"إرشادات الاستخدام\"، ثم قم بتغيير اسم هذا القسم إلى \"معلومات أمنية مهمة\"."
     ],
-    "أخرى": [
+    "مدير الملفات": [
+      "إصلاح مشكلة تقطع الموسيقى عند حذف الملفات"
+    ],
+    "جهاز التسجيل": [
+      "تم إصلاح المشكلة المتعلقة بظهور أيقونات الإعدادات بشكل غير صحيح."
+    ],
+    "آخرين": [
       "تحسين أمن واستقرار النظام"
     ]
   },
   "logs_in": {
+    "सिस्टम": [
+      "चेहरे की पहचान के आधार पर डिवाइस को अनलॉक करने की प्रक्रिया में होने वाली समस्याओं, जैसे कि तकनीकी खराबियाँ एवं कम सफलता दर, को ठीक करने की आवश्यकता है।",
+      "हाल ही में किए गए कार्यों (टास्क) संबंधी स्थिति-पट्टी (status bar) पर क्लिक करने के बाद स्क्रीन पर अजीब दृश्य आने की समस्या को ठीक कर दिया गया है।",
+      "वह समस्या ठीक कर दी गई है, जिसमें कभी-कभार “एंटी-फॉल्स” (Anti-Fall) सुविधा चालू होने पर वर्चुअल बटन गायब हो जाते थे।",
+      "कभी-कभार अप्रत्याशित रूप से होने वाले सिस्टम रीस्टार्ट (system restart) की समस्या को ठीक कर दिया गया है.",
+      "व्हाइटसैप इंटरफेस की स्क्रीन-लॉक सुविधा को अनलॉक करने के बाद, शॉर्टकट बटनों का क्षेत्र असामान्य रूप से प्रदर्शित होने की समस्या को ठीक कर दिया गया है।",
+      "चेहरे की पहचान से लॉक खोलने की प्रक्रिया में होने वाली समस्याओं एवं कम सफलता दर को ठीक करें।"
+    ],
     "फ़ोन": [
-      "डुअल SIM मोड में SIM कार्ड खोने के बाद प्रसंस्करण रणनीति को अनुकूलित करें"
+      "डुअल-कार्ड सेटिंग में, जब कोई कार्ड निकल जाता है, तो उस स्थिति को संभालने की रणनीति को अनुकूलित (ऑप्टिमाइज) करें।"
     ],
     "संपर्क": [
-      "सेटिंग्स में VoLTE कॉन्फ़्रेंस कॉल गलत तरीके से दिखने की समस्या ठीक की गई",
-      "सेटिंग्स में VoLTE कॉन्फ़्रेंस कॉल का गलत प्रदर्शन ठीक किया गया"
+      "“सेटिंग्स” में VoLTE फोन कॉलिंग संबंधी जानकारी के दिखाए जाने में होने वाली त्रुटियों को ठीक कर दिया गया है।",
+      "सेटिंग्स में VoLTE फोन कॉलिंग संबंधी जानकारी के प्रदर्शन में होने वाली त्रुटियों को ठीक कर दिया गया है।"
+    ],
+    "संदेश": [
+      "एक नई सुविधा के रूप में, “मोबाइल नेटवर्क एसएमएस” (Fused Communications) जोड़ा गया है। इसे शुरू करने के लिए, “सेटिंग्स” → “सिस्टम ऐप्स” → “एसएमएस” → “मोबाइल नेटवर्क एसएमएस” पर जाएं।"
     ],
     "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
-      "महत्वहीन सूचना पर डबल टैप करने पर सूचना और त्वरित टॉगल के ओवरलैप होने की समस्या ठीक की गई"
+      "दोबारा क्लिक करने पर महत्वपूर्ण न होने वाली सूचनाओं के दौरान, सूचनाएँ एवं शॉर्टकट विकल्प आपस में ओवरलैप हो जाने की समस्या को ठीक कर दिया गया है।"
     ],
     "बैकअप": [
-      "फ़ोन पर इंस्टॉल न किए गए ऐप्स को USB ड्राइव से बहाल करते समय आइकन गलत तरीके से दिखने की समस्या ठीक की गई।"
-    ],
-    "रिकॉर्डर": [
-      "सेटिंग्स आइकन के अनियमित रूप से प्रदर्शित होने की समस्या ठीक की गई"
+      "समस्या का समाधान: जब आप यूडिस्क (USB Drive) के माध्यम से अपने फोन में ऐसे एप्लिकेशन वापस लाते हैं जो आपके फोन पर पहले से इंस्टॉल नहीं हैं, तो उन एप्लिकेशनों के आइकन असामान्य रूप से दिखाई देते हैं।"
     ],
     "सेटिंग्स": [
-      "सेटिंग्स सिंक में व्यक्तिगत खाता जोड़ने के दो विकल्प दिखने की समस्या ठीक की गई।",
+      "दो नए व्यक्तिगत खातों के विकल्पों को समन्वित रूप से प्रदर्शित करने संबंधी समस्या को ठीक कर दिया गया है.",
+      "सेटिंग्स पेज पर स्लाइडिंग के दौरान होने वाली अस्पष्टता/धीमी गति की समस्या को ठीक कर दिया गया है.",
+      "सेटिंग्स->मेरा डिवाइस->उपयोग निर्देश को महत्वपूर्ण सुरक्षा जानकारी में बदला गया",
       "सेटिंग्स]-[मेरा डिवाइस]-[निर्देश] को [महत्वपूर्ण सुरक्षा जानकारी] में बदला गया"
+    ],
+    "फ़ाइल प्रबंधक": [
+      "फाइल हटाने के दौरान संगीत में होने वाली रुकावट (कैडिंग) की समस्या को ठीक कर दिया गया है."
+    ],
+    "रिकॉर्डर": [
+      "सेटिंग आइकन के असामान्य दिखाई जाने की समस्या को ठीक कर दिया गया है."
     ],
     "अन्य": [
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
     ]
   },
   "logs_ug": {
+    "سىستېما": [
+      "يۈز ئىمزا قويۇش ئارقىلىق قۇلۇپ ئاچىش فۇنكسىيەسىنىڭ ناۋادا كارغا كەلمەسلىكى ۋە مۇۋەپپەقىيەتلىك بولۇش نىسبىتىنىڭ تۆۋەن بولۇش مەسىلىسىنى ياخشىلاش كېرەك.",
+      "يېقىندا ئورۇنلاشتۇرۇلغان ۋەزىپىلەرنىڭ ھالەت سترې چ كىسىگە بېسىلغاندىن كېيىن ئېكراننىڭ قاراپايىم لىشىش مەسىلىسىنى تۈزىتىلدى",
+      "خاتالىقتىن ساقلىنىش ئۈسكۈنىسى قوزغالغاندىن كېيىن سىمۋولىك (ۋېرچۇئال) كۇنۇپكىلار يوقاپ كېتىش مەسىلىسىنى تۈزەتتۇق.",
+      "كۆرۈلۈپ تۇرىدىغان نورمالسىز قايتا قوزغىتىش مەسىلىسىنى ئوڭشايمىز",
+      "WeChat ئىنتېرفېيسىدا قۇلۇپلىنىش ھالىتىدىن قۇلاق لانغاندىن كېيىن ، تېز ئىشلەتكۈچ كونۇپكا رايونىنىڭ نورمال كۆرسىتىل مەسلىك مەسىلىسىنى تۈزدۈق.",
+      "يۈز ئىمزا ئارقىلىق قۇلۇپ ئاچىش فۇنكسىيەسىنىڭ كاردىن چىقىشى ۋە مۇۋەپپەقىيەت نىسبىتىنىڭ تۆۋەن بولۇش مەسىلىسىنى ئوڭشايمىز."
+    ],
     "تېلېفون": [
-      "قوش كارتا شارائىتىدا كارتا ئۈزۈلۈپ قېلىشتىن كېيىنكى بىر تەرەپ قىلىش ئىستراتېگىيىسىنى ئەلالاشتۇرۇش"
+      "قوش كارتا ئەھۋالىدا بىر كارتا چۈشۈپ كەتكەندىكى بىر تەرەپ قىلىش تاكتىكىسىنى ياخشىلاش"
+    ],
+    "ئالاقە": [
+      "ئۆزگەرتىشلەر ئىچىدە VoLTE تېلېفون يىغىنىنىڭ كۆرسىتىلىشىدىكى خاتالىق مەسىلىسىنى تۈزدۇق.",
+      "تەڭشەش ئىچىدىكى VoLTE تېلېفون يىغىنىنىڭ كۆرسىتىلىشىدىكى خاتالىقنى تۈزۈتۈپ بولدۇق."
+    ],
+    "ئۇچۇر": [
+      "يېڭىدىن قوشۇلغان ئىقتىدار : كۆچمە تور يوللىرى ئارقىلىق ئۇچۇر يوللاش (بىرلەشمە ئالاقە ) ؛ بۇ ئىقتىدارنى « ئەسلىھەلەر » → « سىستېما ئەپ لىرى » → « ئۇچۇرلار » → « كۆچمە تور يوللىرى ئارقىلىق ئۇچۇر يوللاش » تاللاڭ لىرىدا ئاچقىلى بولىدۇ"
     ],
     "قۇلۇپ ئېكرانى، ھالەت بالدىقى، ئۇقتۇرۇش بالدىقى": [
-      "مۇھىم بولمىغان ئۇقتۇرۇشنى قوش چېكىشكەندە ئۇقتۇرۇش بىلەن تېز تەڭشەك ئالمىشىپ قېلىش مەسىلىسى تۈزىتىلدى."
+      "كۆپ قېتىم بېسىلغاندا مۇھىم ئەمەس ئۇقتۇرۇشلارنىڭ ئۇقتۇرۇش بەلگىسى بىلەن قىسقا تۈزۈش كۇنۇپكىسى ئۆزئارا ئۆچرى شىش مەسىلىسىنى تۈزىتىلدى."
     ],
-    "ئاۋاز ئالغۇ": [
-      "تەڭشەك سىنبەلگىسىنىڭ نورمالسىز كۆرۈنۈش مەسىلىسى تۈزىتىلدى"
+    "زاپاس كۆپەيتمە": [
+      "USB فلەشنىڭ ياردىمى بىلەن تېلېفونغا قايتۇرۇلغان ، لېكىن تېلېفونغا ئورنىتىلمىغان دىتاللارنىڭ ئىكونى نورمال كۆرسىتىلمەيدىغان مەسىلىسىنى تۈزەش"
+    ],
+    "تەڭشەك": [
+      "ئىككى ئەركىن ھېسابات نى بىرلا ۋاقىتتا كۆرسىتىش ئىمكانىيىتىگە مۇناسىۋەتلىك مەسىلىنى تۈزەتتۇق.",
+      "تەڭشەش بېتىدە سىلجى تىشنىڭ راۋان ئەمەس بولۇش مەسىلىسىنى ئوڭشايمىز",
+      "تەڭشەك->مېنىڭ ئۈسكۈنەم->ئىشلىتىش يېتەكچىسى مۇھىم بىخەتەرلىك ئۇچۇرىغا ئۆزگەرتىلدى",
+      "« تەڭشەش » → « مېنىڭ ئۈسكۈنەم » → « ئىشلىتىش قائىدىسى » نى « مۇھىم بىخەتەرلىك ئۇچۇرلىرى » غا ئالماشتۇرۇڭ"
+    ],
+    "ھۆججەت باشقۇرغۇچ": [
+      "فايللارنى چىقارغاندا مۇزىكىنىڭ توختاپ قېلىش مەسىلىسىنى ئوڭشايمىز"
+    ],
+    "ئۈن خاتىرىلەش ماشىنىسى": [
+      "كۆرسىتىش ئىكونىسىنىڭ نورمال ئەمەس كۆرۈنۈش مەسىلىسىنى تۈزدۇق"
     ],
     "باشقىلىرى": [
       "Improved system security and stability"
     ]
   },
   "logs_bo": {
+    "མ་ལག": [
+      "གདོང་བརྙན་ལ་བརྟེན་ནས་ཀླད་ཆགས་འཕྱེད་པའི་མ་ལག་ལས་ཐུབ་མིན་དང་།ལས་ཐུབ་ཚད་ཇེ་ཉུང་དུ་འགྲོ་བའི་གནད་དོན་ལེགས་བཅོས་བྱེད་དགོས།",
+      "ཉེ་ལམ་བསྒྲུབས་པའི་ལས་འགན་གྱི་རྣམ་པའི་བརྡ་རྟགས་ལ་ཕབ་པའི་རྗེས་スクリーン་དཀར་པོར་འགྱུར་བའི་གནད་དོན་ཐག་གཅོད།",
+      "གནད་དོན་ཞིག་སྒྲིག་བྱེད་དགོས།ཁ་བརྡ་ནོར་མི་འགྲོ་བའི་བྱེད་ཐབས་སྤྱད་རྗེས་བརྙན་མངོན་གྱི་པད་ཁུང་(virtual buttons)་མེད་པར་འགྲོ་བ་དེ་ཡིན།",
+      "གནས་ཚུལ་མི་རྒྱུན་ལྡན་པའི་རྐྱེན་གྱིས་ཀླད་ཆས་བསྐྱར་སྤེལ་བྱེད་པའི་གནད་དོན་ཐག་གཅོད་བྱས།",
+      "WeChat་ཡི་མཚོན་རྟེགས་ཀྱི་བཀག་སྒོ་ཕྱེ་རྗེས།མྱུར་སྤྱོད་ཚོད་མཐུད་ཁུལ་གྱི་མངོན་ཚུལ་ཡོངས་སུ་མི་འགྲིག་པའི་གནད་དོན་ཐག་གཅོད།",
+      "གདོང་བརྙན་ལ་བརྟེན་ནས་ཐེ་གཏོགས་བྱེད་པའི་མ་ལག་ཆག་པ་དང་།ཐེ་གཏོགས་བྱེད་པའི་རྒྱུགས་ཚད་དམའ་བ་བཅས་ཀྱི་གནད་དོན་ཐག་གཅོད་བྱེད།"
+    ],
+    "ཁ་པར": [
+      "གཉིས་ཁ་(Double Card)་བཀོད་སྒྲིག་འོག་ཁ་(Card)་ཤོར་རྗེས་ཐག་གཅོད་བྱེད་པའི་ཐབས་ཇུས་ལེགས་བཅོས་བྱེད།"
+    ],
+    "Contacts": [
+      "སྒྲིག་ཆས་ཁྲོད་VoLTEཁ་པར་ཚོགས་འདུའི་མངོན་ཚུལ་ནོར་འཁྲུལ་ཡོད་པའི་གནད་དོན་ཐག་གཅོད་བྱས།",
+      "སྒྲིག་འཛུགས་ཁྲོད་VoLTE་ཁ་པར་ཚོགས་འདུའི་མངོན་ཚུལ་ནོར་འཁྲུལ་ཡོད་པ་ཉེན་བྱུང་།"
+    ],
+    "བརྡ་འཕྲིན།": [
+      "གསར་དུ་ཞབས་ཞུ་འདི་བསྣན་པ་སྟེ།“མོバ일་नेटवर्क SMS” (Mobile Network SMS)་ཡིན།འཐུས་སྒོ་གཏོང་བའི་བརྒྱུད་རིམ་ནི：“Settings -> System Applications -> SMS -> Mobile Network SMS”ཡིན།"
+    ],
+    "Lockscreen, status bar, Notification shade": [
+      "གནད་དོན་ཐག་གཅོད་བྱས་པ།གལ་ཆེ་མིན་པའི་བརྡ་གཏོང་ལ་ཐེངས་གཉིས་བརྒྱབ་པའི་སྐབས།བརྡ་གཏོང་དང་མྱུར་སྒོ་བརྒྱབ་པའི་བྱེད་ཐབས་གཉིས་ཟུང་འབྲེལ་བྱུང་བ།"
+    ],
+    "ཉར་གསོག": [
+      "U་Disk་ནས་ཁ་པར་ལ་ཕྱིར་གསོག་བྱས་པའི་དུས་བཀོལ་མེད་པའི་ཡིག་རྒྱུགས（Application）ཚན་པའི་རི་མོ（Icon）ཡོད་ཚད་རྒྱུན་ལྡན་མིན་པའི་གནད་དོན་ཐག་གཅོད།"
+    ],
+    "ཡིག་ཆའི་དོ་དམ་ཆས": [
+      "ཡིག་ཆ་མེད་པར་བཟོས་པའི་སྐབས་སུ་རོལ་དབྱངས་ཀྱི་བརྒྱུད་རིམ་འགོར་བའི་གནད་དོན་ཐག་གཅོད།"
+    ],
     "སྒྲ་འཇུག་ཆས": [
-      "སྒྲིག་འཛུགས་ངོ་རྟགས་རྒྱུན་མིན་ངང་མངོན་པའི་གནད་དོན་བཅོས་ཟིན།"
+      "སྒྲིག་ཆའི་མཚོན་རྟགས་ཀྱི་སྟོན་ཚུལ་དེ་བསྡུར་ན་རྒྱུན་ལྡན་མིན་པའི་གནད་དོན་ཐག་གཅོད།"
+    ],
+    "རིམ་ལུགས": [
+      "WeChat་ཡི་མཚོན་རྟེགས་ཀྱི་བཀག་སྒོ་ཕྱེ་རྗེས།མྱུར་སྤྱོད་ཚོད་མཐུད་ཁུལ་གྱི་མངོན་ཚུལ་ཡོངས་སུ་མི་འགྲིག་པའི་གནད་དོན་ཐག་གཅོད།",
+      "གདོང་བརྙན་ལ་བརྟེན་ནས་ཐེ་གཏོགས་བྱེད་པའི་མ་ལག་ཆག་པ་དང་།ཐེ་གཏོགས་བྱེད་པའི་རྒྱུགས་ཚད་དམའ་བ་བཅས་ཀྱི་གནད་དོན་ཐག་གཅོད་བྱེད།"
+    ],
+    "སྒྲིག་སྟངས།": [
+      "“ཆ་སྒྲིག་མཉམ་སྦྱོར་”་གི་རྣམ་པའི་འོག་མི་སྒེར་གྱི་ཐོ་བྱང་གསུམ་བསྣན་པའི་གདམ་ག་གཉིས་འཆར་ཡིག་ཁྲོད་འགྲེམས་པའི་གནད་དོན་ཐག་གཅོད་བྱས།",
+      "Settings” → “My Devices” → “Instructions for Use” → ཕြ་བསྒྱུར་བྱས་ནས “Important Security Information"
     ],
     "གཞན།": [
       "Improved system security and stability"

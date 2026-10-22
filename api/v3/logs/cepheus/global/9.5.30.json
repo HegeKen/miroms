@@ -28,155 +28,386 @@
     "Camera": [
       "New: Prompts about screen orientation"
     ],
+    "Mi Cloud": [
+      "Optimization: Improved sync across multiple devices",
+      "Fixed the occasional crash of Cloud Services after signing in to an account in system settings",
+      "Fix the occasional crash when entering Cloud services while not signed in"
+    ],
     "Other": [
       "New: Google ARCore support allows you to download AR apps and games directly"
     ],
     "Lockscreen, status bar, Notification shade": [
       "Optimization: Always on display stability"
-    ],
-    "Mi Cloud": [
-      "Optimization: Improved sync across multiple devices"
     ]
   },
   "logs_zh_tw": {
     "系統": [
       "優化 取消定時關閉勿擾後的聲音提示"
     ],
+    "解鎖畫面、狀態欄、通知欄": [
+      "最佳化 息屏顯示的穩定性"
+    ],
+    "相機": [
+      "新增：照片橫豎屏朝向提示"
+    ],
     "小米雲服務": [
-      "優化 多裝置之間數據同步即時性"
+      "優化 多裝置之間數據同步即時性",
+      "修正 偶爾在系統設定中登入帳號後，雲端服務閃退的問題",
+      "修正 未登入帳號時進入雲服務，偶現閃退的問題"
+    ],
+    "其他": [
+      "新增：支援 Google ARCore，可直接使用下載的 AR 遊戲和應用"
     ]
   },
   "logs_ja": {
     "システム": [
       "最適化: スケジュールされたサイレントモード解除後の通知音を削除"
     ],
+    "ロック画面、ステータスバー、通知バー": [
+      "最適化: 常時表示ディスプレイの安定性"
+    ],
+    "カメラ": [
+      "追加：写真の縦横画面の向きのヒント"
+    ],
     "Xiaomi クラウドサービス": [
-      "最適化: 複数デバイス間のデータ同期を改善"
+      "最適化: 複数デバイス間のデータ同期を改善",
+      "システム設定でアカウントにログインした後、クラウドサービスが時々クラッシュする問題を修正",
+      "アカウント未ログイン時にクラウドサービスへ入ると、まれにクラッシュする問題を修正"
+    ],
+    "その他": [
+      "追加: Google ARCore に対応し、ダウンロードした AR ゲームとアプリを直接使用できます"
+    ],
+    "ロック画面、ステータスバー、通知シェード": [
+      "最適化: 常時表示ディスプレイの安定性"
     ]
   },
   "logs_ko": {
     "시스템": [
       "최적화: 방해금지 모드에서의 불필요한 알림음 제거됨"
     ],
+    "잠금 화면, 상태 표시줄, 알림 표시줄": [
+      "최적화: 상시 표시 화면 안정성"
+    ],
+    "카메라": [
+      "추가: 사진 세로/가로 방향 안내"
+    ],
     "Xiaomi 클라우드 서비스": [
-      "최적화: 여러 기기 간 데이터 동기화 개선"
+      "최적화: 여러 기기 간 데이터 동기화 개선",
+      "시스템 설정에서 계정에 로그인한 후 클라우드 서비스가 간헐적으로 강제 종료되는 문제 수정",
+      "계정에 로그인하지 않은 상태에서 클라우드 서비스에 진입할 때 간헐적으로 강제 종료되는 문제 수정"
+    ],
+    "기타": [
+      "추가: Google ARCore 지원으로 다운로드한 AR 게임과 앱을 바로 사용할 수 있습니다"
+    ],
+    "잠금화면, 상태 바, 알림 바": [
+      "최적화: 상시 표시 화면 안정성"
     ]
   },
   "logs_ru": {
     "Система": [
       "Оптимизация: Устранены звуковые уведомления в режиме Не беспокоить"
     ],
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Оптимизация: стабильность Always on display"
+    ],
+    "Камера": [
+      "Добавлено: подсказка об ориентации фото (портрет/альбом)"
+    ],
     "Облачный сервис Xiaomi": [
-      "Оптимизация: Улучшена синхронизация данных между несколькими  устройствами"
+      "Оптимизация: Улучшена синхронизация данных между несколькими  устройствами",
+      "Исправлена проблема с периодическим сбоем облачных сервисов после входа в аккаунт в системных настройках",
+      "Исправлено редкое аварийное завершение при входе в облачные сервисы без входа в аккаунт"
+    ],
+    "Другое": [
+      "Новое: Поддержка Google ARCore позволяет напрямую использовать загруженные AR-игры и приложения"
     ]
   },
   "logs_uk": {
     "Система": [
       "Оптимізація: Вилучено звукове сповіщення після запланованого вимкнення режиму «Не турбувати»"
     ],
+    "Екран блокування, рядок стану, рядок сповіщень": [
+      "Оптимізація: стабільність роботи Always on display"
+    ],
+    "Камера": [
+      "Додано: підказка про орієнтацію фото (портрет/альбом)"
+    ],
     "Хмарний сервіс Xiaomi": [
-      "Оптимізація: Покращено синхронізацію даних між кількома пристроями"
+      "Оптимізація: Покращено синхронізацію даних між кількома пристроями",
+      "Виправлено проблему з періодичним збоєм хмарних сервісів після входу в обліковий запис у системних налаштуваннях",
+      "Виправлено рідкісне аварійне завершення під час входу в хмарні сервіси без входу в обліковий запис"
+    ],
+    "Інше": [
+      "Нове: Підтримка Google ARCore дозволяє безпосередньо використовувати завантажені AR-ігри та застосунки"
+    ],
+    "Екран блокування, рядок стану, панель сповіщень": [
+      "Оптимізація: стабільність роботи Always on display"
     ]
   },
   "logs_pl": {
     "System": [
       "Zoptymalizowano: Usunięto niepotrzebne sygnały dźwiękowe dla trybu nie przeszkadzać"
     ],
+    "Ekran blokady, pasek stanu, pasek powiadomień": [
+      "Optymalizacja: stabilność Always on display"
+    ],
+    "Aparat": [
+      "Dodano: wskazówka dotycząca orientacji zdjęcia (pion/poziom)"
+    ],
     "Usługa w chmurze Xiaomi": [
-      "Optymalizacja: Poprawiono synchronizację między wieloma urządzeniami"
+      "Optymalizacja: Poprawiono synchronizację między wieloma urządzeniami",
+      "Naprawiono problem sporadycznego awaryjnego zamykania Usług w chmurze po zalogowaniu się do konta w ustawieniach systemowych",
+      "Naprawiono sporadyczne awaryjne zamykanie podczas wchodzenia do usług w chmurze bez zalogowania na konto"
+    ],
+    "Reszt": [
+      "Nowość: Obsługa Google ARCore umożliwia bezpośrednie korzystanie z pobranych gier i aplikacji AR"
+    ],
+    "Ekran blokady, pasek powiadomień,panel powiadomień": [
+      "Optymalizacja: stabilność Always on display"
     ]
   },
   "logs_de": {
     "System": [
       "Optimierung: Tonbenachrichtigung nach zeitgesteuerter Deaktivierung des Nicht-Stören-Modus entfernt"
     ],
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
+      "Optimierung: Stabilität des Always-On-Displays"
+    ],
+    "Kamera": [
+      "Neu: Hinweis zur Fotoausrichtung (Hoch-/Querformat)"
+    ],
     "Xiaomi Cloud-Dienst": [
-      "Optimierung: Verbesserte Synchronisierung zwischen mehreren Geräten"
+      "Optimierung: Verbesserte Synchronisierung zwischen mehreren Geräten",
+      "Gelegentlicher Absturz der Cloud-Dienste nach Anmeldung am Konto in den Systemeinstellungen behoben",
+      "Gelegentliche Abstürze beim Öffnen der Cloud-Dienste ohne Kontoanmeldung behoben"
+    ],
+    "Sonstiges": [
+      "Neu: Google ARCore-Unterstützung ermöglicht die direkte Nutzung heruntergeladener AR-Spiele und -Apps"
+    ],
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
+      "Optimierung: Stabilität des Always-On-Displays"
     ]
   },
   "logs_fr": {
     "Système": [
       "Optimisation: A retiré les sons de notifications inutiles pour le mode DND"
     ],
+    "Écran de verrouillage, barre d’état, barre de notifications": [
+      "Optimisation : stabilité de l'écran Always On"
+    ],
+    "Appareil photo": [
+      "Nouveau : indication d’orientation de la photo (portrait/paysage)"
+    ],
     "Service cloud Xiaomi": [
-      "Optimisation Amélioration de la synchronisation sur plusieurs appareils"
+      "Optimisation Amélioration de la synchronisation sur plusieurs appareils",
+      "Correction du plantage occasionnel des services cloud après connexion à un compte dans les paramètres système",
+      "Correction du plantage occasionnel lors de l’accès aux services cloud sans être connecté au compte"
+    ],
+    "Autre": [
+      "Nouveau : la prise en charge de Google ARCore permet d'utiliser directement les jeux et applications AR téléchargés"
+    ],
+    "Écran de verrouillage, Barre d'état, Panneau de notification": [
+      "Optimisation : stabilité de l'écran Always On"
     ]
   },
   "logs_it": {
     "Sistema": [
       "Ottimizzazione: Rimosse notifiche audio non necessarie per la modalità Non Disturbare"
     ],
+    "Schermata di blocco, barra di stato, barra delle notifiche": [
+      "Ottimizzazione: stabilità di Always on display"
+    ],
+    "macchina fotografica": [
+      "Novità: suggerimento sull’orientamento della foto (verticale/orizzontale)"
+    ],
     "Servizio cloud Xiaomi": [
-      "Ottimizzazione: Sincronizzazione migliorata su più dispositivi"
+      "Ottimizzazione: Sincronizzazione migliorata su più dispositivi",
+      "Risolto il crash occasionale dei Servizi cloud dopo l'accesso all'account nelle impostazioni di sistema",
+      "Risolto il crash occasionale durante l'accesso ai servizi cloud senza aver effettuato l'accesso all'account"
+    ],
+    "Altro": [
+      "Novità: il supporto a Google ARCore consente di usare direttamente i giochi e le app AR scaricati"
+    ],
+    "Schermata di blocco, barra di stato, area delle notifiche": [
+      "Ottimizzazione: stabilità di Always on display"
     ]
   },
   "logs_es": {
     "Sistema": [
       "Optimización: Las notificaciones con sonido innecesarias han sido eliminadas del Modo no molestar"
     ],
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Optimización: estabilidad de Always on display"
+    ],
+    "Cámara": [
+      "Nuevo: aviso de orientación de la foto (vertical/horizontal)"
+    ],
     "Servicio en la nube de Xiaomi": [
-      "Optimización: Sincronización entre múltiples dispositivos mejorada"
+      "Optimización: Sincronización entre múltiples dispositivos mejorada",
+      "Se corrigió el cierre inesperado ocasional de Servicios en la nube tras iniciar sesión en una cuenta en los ajustes del sistema",
+      "Se corrige el cierre inesperado ocasional al entrar en los servicios en la nube sin haber iniciado sesión en la cuenta"
+    ],
+    "Otros": [
+      "Novedad: la compatibilidad con Google ARCore permite usar directamente los juegos y aplicaciones AR descargados"
     ]
   },
   "logs_pt": {
     "Sistema": [
       "Otimização: Sons de notificação desnecessários removidos do modo Não perturbe"
     ],
+    "Tela de bloqueio, barra de status, barra de notificações": [
+      "Otimização: estabilidade do Always on display"
+    ],
+    "Câmera": [
+      "Novo: aviso de orientação da foto (retrato/paisagem)"
+    ],
     "Serviço de nuvem Xiaomi": [
-      "Otimização Sincronização otimizada entre vários dispositivos"
+      "Otimização Sincronização otimizada entre vários dispositivos",
+      "Corrigida a falha ocasional dos Serviços na nuvem após fazer login em uma conta nas configurações do sistema",
+      "Corrigido o encerramento inesperado ocasional ao entrar nos serviços na nuvem sem iniciar sessão na conta"
+    ],
+    "Outros": [
+      "Novidade: o suporte ao Google ARCore permite usar diretamente os jogos e apps AR baixados"
+    ],
+    "Tela de bloqueio, Barra de status e Área de notificações": [
+      "Otimização: estabilidade do Always on display"
     ]
   },
   "logs_tr": {
     "Sistem": [
       "Optimizasyon: Rahatsız Etme modu için gereksiz sesli bildirimler kaldırıldı"
     ],
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Optimizasyon: Always on display kararlılığı"
+    ],
+    "Kamera": [
+      "Yeni: Fotoğraf yönü ipucu (dikey/yatay)"
+    ],
     "Xiaomi Bulut Hizmeti": [
-      "Optimizasyon: Birkaç cihaz arasında geliştirilmiş senkronizasyon"
+      "Optimizasyon: Birkaç cihaz arasında geliştirilmiş senkronizasyon",
+      "Sistem ayarlarında hesaba giriş yaptıktan sonra Bulut Hizmetleri'nin ara sıra çökmesi sorunu giderildi",
+      "Hesaba giriş yapılmamışken Bulut hizmetlerine girildiğinde ara sıra oluşan çökme sorunu düzeltildi"
+    ],
+    "Diğer": [
+      "Yeni: Google ARCore desteği, indirilen AR oyunlarını ve uygulamalarını doğrudan kullanmanızı sağlar"
     ]
   },
   "logs_id": {
     "Sistem": [
       "Pengoptimalan: Notifikasi suara yang tidak dibutuhkan untuk mode Jangan ganggu dihapus"
     ],
+    "Layar kunci, bilah status, bilah notifikasi": [
+      "Optimasi: stabilitas Always on display"
+    ],
+    "Kamera": [
+      "Baru: Petunjuk orientasi foto (potret/lanskap)"
+    ],
     "Layanan Cloud Xiaomi": [
-      "Pengoptimalan Sinkronisasi ditingkatkan di beberapa perangkat"
+      "Pengoptimalan Sinkronisasi ditingkatkan di beberapa perangkat",
+      "Memperbaiki masalah crash sesekali pada Layanan Cloud setelah masuk ke akun di pengaturan sistem",
+      "Memperbaiki masalah crash yang kadang terjadi saat masuk ke layanan Cloud tanpa login akun"
+    ],
+    "Lainnya": [
+      "Baru: Dukungan Google ARCore memungkinkan penggunaan langsung game dan aplikasi AR yang diunduh"
+    ],
+    "Layar kunci, bar status, layar notifikasi": [
+      "Optimasi: stabilitas Always on display"
     ]
   },
   "logs_vi": {
     "Hệ thống": [
       "Tối ưu hóa: Đã xóa âm báo sau khi tắt chế độ Không làm phiền theo lịch"
     ],
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Tối ưu hóa: độ ổn định của Always on display"
+    ],
+    "Máy ảnh": [
+      "Mới: Gợi ý hướng ảnh (dọc/ngang)"
+    ],
     "Dịch vụ đám mây Xiaomi": [
-      "Tối ưu hóa: Cải thiện đồng bộ hóa giữa nhiều thiết bị"
+      "Tối ưu hóa: Cải thiện đồng bộ hóa giữa nhiều thiết bị",
+      "Đã khắc phục sự cố thỉnh thoảng Dịch vụ đám mây bị thoát đột ngột sau khi đăng nhập tài khoản trong cài đặt hệ thống",
+      "Khắc phục sự cố thoát ứng dụng đột ngột không thường xuyên khi vào dịch vụ đám mây mà chưa đăng nhập tài khoản"
+    ],
+    "Khác": [
+      "Mới: Hỗ trợ Google ARCore cho phép sử dụng trực tiếp trò chơi và ứng dụng AR đã tải xuống"
     ]
   },
   "logs_th": {
     "ระบบ": [
       "การปรับปรุง: ลบการแจ้งเตือนเสียงหลังปิดโหมดห้ามรบกวนตามกำหนดเวลา"
     ],
+    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
+      "เพิ่มประสิทธิภาพ: ความเสถียรของ Always on display"
+    ],
+    "กล้อง": [
+      "ใหม่: คำแนะนำการจัดวางภาพ (แนวตั้ง/แนวนอน)"
+    ],
     "บริการคลาวด์ Xiaomi": [
-      "การปรับให้เหมาะสม: ปรับปรุงการซิงค์ระหว่างอุปกรณ์หลายเครื่อง"
+      "การปรับให้เหมาะสม: ปรับปรุงการซิงค์ระหว่างอุปกรณ์หลายเครื่อง",
+      "แก้ไขปัญหาบริการคลาวด์หยุดทำงานเป็นครั้งคราวหลังจากเข้าสู่ระบบบัญชีในการตั้งค่าระบบ",
+      "แก้ไขปัญหาการแอปหยุดทำงานกะทันหันเป็นครั้งคราวเมื่อเข้าสู่บริการคลาวด์โดยยังไม่ได้เข้าสู่ระบบบัญชี"
+    ],
+    "อื่นๆ": [
+      "ใหม่: รองรับ Google ARCore ช่วยให้ใช้เกมและแอป AR ที่ดาวน์โหลดได้โดยตรง"
+    ],
+    "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
+      "เพิ่มประสิทธิภาพ: ความเสถียรของ Always on display"
     ]
   },
   "logs_ar": {
     "النظام": [
       "محسن إزالة إشعارات الصوت غير ضرورية لوضع عدم الإزعاج"
     ],
+    "شاشة القفل، شريط الحالة، شريط الإشعارات": [
+      "تحسين: استقرار Always on display"
+    ],
+    "كاميرا": [
+      "جديد: تلميح اتجاه الصورة (عمودي/أفقي)"
+    ],
     "خدمة Xiaomi السحابية": [
-      "التحسين: تحسين المزامنة بين أجهزة متعددة"
+      "التحسين: تحسين المزامنة بين أجهزة متعددة",
+      "تم إصلاح مشكلة تعطل خدمات السحابة أحيانًا بعد تسجيل الدخول إلى الحساب في إعدادات النظام",
+      "إصلاح مشكلة التعطل العرضي عند الدخول إلى خدمات السحابة دون تسجيل الدخول إلى الحساب"
+    ],
+    "آخرين": [
+      "جديد: دعم Google ARCore يتيح استخدام ألعاب وتطبيقات AR التي تم تنزيلها مباشرة"
+    ],
+    "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
+      "تحسين: استقرار Always on display"
     ]
   },
   "logs_in": {
     "सिस्टम": [
       "अनुकूलन: शेड्यूल किए गए डू नॉट डिस्टर्ब बंद होने के बाद की ध्वनि सूचना हटाई गई"
     ],
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
+      "अनुकूलन: Always on display की स्थिरता"
+    ],
+    "कैमरा": [
+      "नया: फ़ोटो ओरिएंटेशन संकेत (पोर्ट्रेट/लैंडस्केप)"
+    ],
     "Xiaomi क्लाउड सेवा": [
-      "अनुकूलन: कई उपकरणों के बीच सिंक में सुधार"
+      "अनुकूलन: कई उपकरणों के बीच सिंक में सुधार",
+      "सिस्टम सेटिंग्स में खाते में साइन इन करने के बाद क्लाउड सेवाएँ कभी-कभार क्रैश होने की समस्या ठीक की गई",
+      "बिना खाते में साइन इन किए क्लाउड सेवाओं में प्रवेश करते समय कभी-कभी होने वाले क्रैश की समस्या ठीक की गई"
+    ],
+    "अन्य": [
+      "नया: Google ARCore समर्थन से डाउनलोड किए गए AR गेम और ऐप्स सीधे उपयोग किए जा सकते हैं"
+    ],
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
+      "अनुकूलन: Always on display की स्थिरता"
     ]
   },
   "logs_ug": {
     "سىستېما": [
       "ئەلالاشتۇرۇش: ۋاقىتلىق ئاۋارە قىلماسلىق ھالىتى تاقالغاندىن كېيىنكى ئاۋاز ئەسكەرتىشىنى بىكار قىلىش"
+    ],
+    "فوتو ئاپپارات": [
+      "يېڭى: رەسىمنىڭ تىك/كۆندىلەڭ ئېكران يۆنىلىشى ئەسكەرتىشى"
+    ],
+    "باشقىلىرى": [
+      "يېڭى: Google ARCore قوللاش ئىقتىدارى قوشۇلدى، چۈشۈرۈلگەن AR ئويۇنلىرى ۋە ئەپلىرىنى بىۋاسىتە ئىشلىتىشكە بولىدۇ"
     ],
     "Xiaomi بۇلۇت مۇلازىمىتى": [
       "كۆپ ئۈسكۈنە ئارىسىدىكى سانلىق مەلۇمات ماسلاشتۇرۇشنىڭ ۋاقتىدا بولۇشىنى ئەلالاشتۇرۇش"
@@ -185,6 +416,9 @@
   "logs_bo": {
     "མ་ལག": [
       "Optimization: Removed unnecessary sound notifications for DND mode"
+    ],
+    "ཁ་མར།": [
+      "པར་རིས་ཀྱི་དྲང་སྙོམས་ཁ་ཕྱོགས་བརྡ་སྟོན་གསར་དུ་བསྣན་པ།"
     ],
     "རིམ་ལུགས": [
       "Optimization: Removed unnecessary sound notifications for DND mode"

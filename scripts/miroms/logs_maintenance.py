@@ -703,9 +703,13 @@ class LogMaintenance:
 		"""检查引用结构里的悬空 id、可补语言位、无效语言位
 
 		- ``dangling``：引用了 logs 表里不存在的 id（合并 / 删行后的悬空引用）
-		- ``extendable``：模块与全部条目都有某门语言，但掩码没声明该语言
-		  （导出侧会因此漏掉这门语言；补法：新掩码 = 原掩码 | 公共语言掩码）
+		- ``extendable``：模块与全部条目都有某门语言、该语言本 ROM / 开发版在别处已声明，
+		  但当前位置的掩码没声明该语言（导出侧会因此漏掉这门语言；
+		  补法：新掩码 = 原掩码 |（公共语言掩码 & 本 ROM 已声明语言））
 		- ``invalid``：掩码声明了某门语言，但模块行没有该语言文本（导出时该位无意义）
+
+		补位不越过 owner 自己声明过的语言并集：logs 行跨 ROM 复用，别的 ROM 可能把共享行
+		补齐了全部译文，按行文本直接补位会把不属于本 ROM 的语言写进掩码。
 		"""
 		rows = rows if rows is not None else cls.load_rows()
 		owners = owners if owners is not None else cls.load_owners()
@@ -836,9 +840,11 @@ class LogMaintenance:
 	def fill_masks(cls, rows: Optional[Dict[int, Dict[str, Any]]] = None,
 				   owners: Optional[Dict[Tuple[str, int], List[Any]]] = None,
 				   apply: bool = False, batch: int = 500) -> Dict[str, Any]:
-		"""补齐引用掩码里「模块与全部条目都已有」的语言位（只增不减）
+		"""补齐引用掩码里「模块与全部条目都已有」且「本 ROM / 开发版在别处已声明」的语言位（只增不减）
 
 		只加位、不减位，因此不会让任何 ROM 的导出结果回退；
+		补位不越过 owner 自己声明过的语言并集：logs 行跨 ROM 复用，别的 ROM 可能把共享行
+		补齐了全部译文，按行文本直接补位会把不属于本 ROM 的语言写进掩码；
 		悬空引用无法判断公共语言，跳过（先修引用再补掩码）。
 		"""
 		rows = rows if rows is not None else cls.load_rows()

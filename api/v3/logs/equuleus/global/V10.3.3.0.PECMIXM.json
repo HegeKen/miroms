@@ -50,7 +50,7 @@
       "修复 挂断电话慢问题",
       "修复 来电悬浮条和通话绿条同时存在情况"
     ],
-    "桌面": [
+    "主屏幕": [
       "修复 WhatsApp 桌面角标显示异常的问题"
     ],
     "推荐": [
@@ -99,11 +99,27 @@
       "Fix: Ending calls took longer time than expected",
       "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
     ],
-    "Home screen": [
+    "desktop": [
       "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
     ]
   },
   "logs_zh_tw": {
+    "解鎖畫面、狀態欄、通知欄": [
+      "新增 人臉解鎖成功並停留在鎖屏上時，可通過指紋進入桌面的功能",
+      "修復 在熄屏顯示(AOD)頁面使用指紋解鎖，按壓指紋時鐘閃爍問題",
+      "修復 鎖定畫面點擊通知後，在螢幕畫面使用指紋解鎖出現黑色閃爍問題",
+      "修復 低電量時呼吸燈不閃爍的問題",
+      "修復 媒體音播放過程中來通知，聲音變小後不恢復的問題",
+      "鎖屏密碼介面增加螢幕下指紋解鎖方式",
+      "新增 NFC 通知欄快捷開關",
+      "新增 螢幕鎖定畫面支援禁止下拉狀態欄",
+      "新增 螢幕熄滅時顯示支援不顯示指紋圖標，但指紋可用",
+      "修復 開啓Talkback後，螢幕指紋無法使用",
+      "修復 橫向螢幕情況下低電量通知不懸浮顯示",
+      "修復 通話時間氣泡與通知圖示重疊",
+      "修復 鎖憑密碼介面使用指紋解鎖，指紋狀態更新不及時的問題",
+      "鎖定螢幕畫面增加螢幕解鎖方式"
+    ],
     "時鐘": [
       "修復 計時器頁面按鈕點擊閃爍的問題",
       "修復 時鐘在特殊日期出現閃退的問題"
@@ -113,9 +129,8 @@
       "修復 錄像下退出重新進入必現相機閃退",
       "修復 簡訊調用相機拍照時點擊取消，再次選擇相機出現相機故障"
     ],
-    "設定": [
-      "優化 大字體介面的顯示效果",
-      "修復 下拉狀態欄開啟或關閉同步，同步介面不刷新問題"
+    "设置": [
+      "優化 大字體介面的顯示效果"
     ],
     "近期任務": [
       "優化 應用名稱的顯示長度，改良大字體的顯示效果"
@@ -137,29 +152,36 @@
       "修復 掛斷電話較慢的問題",
       "修復 來電懸浮條和通話綠條同時存在的情況"
     ],
-    "解鎖畫面、狀態欄、通知欄": [
-      "新增 NFC 通知欄快捷開關",
-      "新增 螢幕鎖定畫面支援禁止下拉狀態欄",
-      "新增 螢幕熄滅時顯示支援不顯示指紋圖標，但指紋可用",
-      "新增 人臉解鎖成功並停留在鎖屏上時，可通過指紋進入桌面的功能",
-      "修復 在熄屏顯示(AOD)頁面使用指紋解鎖，按壓指紋時鐘閃爍問題",
-      "修復 開啓Talkback後，螢幕指紋無法使用",
-      "修復 橫向螢幕情況下低電量通知不懸浮顯示",
-      "修復 通話時間氣泡與通知圖示重疊",
-      "修復 鎖定畫面點擊通知後，在螢幕畫面使用指紋解鎖出現黑色閃爍問題",
-      "修復 低電量時呼吸燈不閃爍的問題",
-      "修復 鎖憑密碼介面使用指紋解鎖，指紋狀態更新不及時的問題",
-      "修復 媒體音播放過程中來通知，聲音變小後不恢復的問題",
-      "鎖定螢幕畫面增加螢幕解鎖方式"
-    ],
     "桌面": [
       "修復 WhatsApp 桌面角標顯示異常的問題"
+    ],
+    "設定": [
+      "修復 下拉狀態欄開啟或關閉同步，同步介面不刷新問題"
     ],
     "推薦": [
       "修復 微光螢幕顯示不能定時關閉的問題"
     ]
   },
   "logs_ja": {
+    "ロック画面、ステータスバー、通知シェード": [
+      "新機能: 顔認証でロック解除後、ロック画面に留まっている場合に指紋でホーム画面へ進める機能",
+      "修正: 指紋認証でロック解除した際に時計が点滅する問題",
+      "ロック画面で通知をタップした後、パスワード画面で指紋認証すると黒い画面のちらつきが発生する問題を修正",
+      "修正: バッテリー残量が少ないときに通知LEDが点滅しない不具合。",
+      "修正: 通知が届いてメディアの音量が下がった後、元に戻らない問題",
+      "ロック画面のパスワード入力画面に画面内指紋認証によるロック解除を追加",
+      "新規: 通知パネルにNFCショートカットを追加",
+      "新規: ロック画面で通知シェードを下にスワイプして開くことを禁止できるようになりました",
+      "追加: 画面オフ時に指紋アイコンを非表示にしても、指紋認証を利用できるようサポート",
+      "新機能: 顔認証でロック解除に成功しロック画面に留まった場合、指紋でホーム画面に進めるようになりました",
+      "TalkBack を有効にすると指紋認証が使用できない問題を修正しました。",
+      "修正: 横向きモードで低バッテリー警告が表示されない問題を修正",
+      "修正: 通話時間のバブルが通知アイコンと重なる問題",
+      "ロック画面で通知をタップした後、パスワード画面で指紋認証によるロック解除時に黒い画面のちらつきが発生する問題を修正",
+      "ロック画面のパスワード画面で指紋認証を使用した際、状態の更新が遅れる問題を修正しました。",
+      "メディア音声の再生中に通知が届いて音量が下がった後、元に戻らない問題を修正",
+      "ロック画面に画面ロック解除方法を追加"
+    ],
     "時計": [
       "タイマーページのボタンをタップした際に点滅する問題を修正",
       "特定の日付で時計が強制終了する問題を修正",
@@ -198,22 +220,7 @@
       "修正: 通話終了に想定より時間がかかる問題",
       "修正: 着信のフローティングバーと通話の緑色バーが同時に表示される問題。"
     ],
-    "ロック画面、ステータスバー、通知シェード": [
-      "新規: 通知パネルにNFCショートカットを追加",
-      "新規: ロック画面で通知シェードを下にスワイプして開くことを禁止できるようになりました",
-      "追加: 画面オフ時に指紋アイコンを非表示にしても、指紋認証を利用できるようサポート",
-      "新機能: 顔認証でロック解除に成功しロック画面に留まった場合、指紋でホーム画面に進めるようになりました",
-      "修正: 指紋認証でロック解除した際に時計が点滅する問題",
-      "TalkBack を有効にすると指紋認証が使用できない問題を修正しました。",
-      "修正: 横向きモードで低バッテリー警告が表示されない問題を修正",
-      "修正: 通話時間のバブルが通知アイコンと重なる問題",
-      "ロック画面で通知をタップした後、パスワード画面で指紋認証によるロック解除時に黒い画面のちらつきが発生する問題を修正",
-      "修正: バッテリー残量が少ないときに通知LEDが点滅しない不具合。",
-      "ロック画面のパスワード画面で指紋認証を使用した際、状態の更新が遅れる問題を修正しました。",
-      "メディア音声の再生中に通知が届いて音量が下がった後、元に戻らない問題を修正",
-      "ロック画面に画面ロック解除方法を追加"
-    ],
-    "ホーム画面": [
+    "デスクトップ": [
       "WhatsApp アイコンの通知バッジが正しく表示されない問題を修正しました。"
     ],
     "ゲーム高速化": [
@@ -224,6 +231,25 @@
     ]
   },
   "logs_ko": {
+    "잠금화면, 상태 바, 알림 바": [
+      "새 기능: 얼굴 인식으로 잠금 해제 후 잠금 화면에 머무를 때 지문으로 홈 화면에 진입하는 기능",
+      "수정: 지문 인식으로 잠금 해제 시 시계가 깜박이던 문제",
+      "잠금 화면에서 알림을 탭한 후 비밀번호 화면에서 지문으로 잠금 해제할 때 검은 화면 깜박임이 발생하는 문제를 수정",
+      "수정: 배터리가 부족할 때 알림 LED가 깜박이지 않던 버그.",
+      "수정: 미디어 재생 중 알림이 오면 소리가 작아진 후 복구되지 않는 문제",
+      "잠금 화면 비밀번호 화면에 디스플레이 내장 지문 잠금 해제 방식 추가",
+      "새로운 기능: 알림 창에 NFC 바로가기 추가",
+      "새 기능: 잠금 화면에서 알림 패널을 아래로 내려 여는 것을 금지할 수 있습니다",
+      "추가: 화면 꺼짐 시 지문 아이콘을 표시하지 않아도 지문을 사용할 수 있도록 지원",
+      "새 기능: 얼굴 인식으로 잠금 해제에 성공한 후 잠금 화면에 머무를 때 지문으로 홈 화면에 들어갈 수 있습니다",
+      "TalkBack이 켜져 있을 때 지문 인식기를 사용할 수 없던 문제를 수정했습니다.",
+      "수정: 가로 모드에서 배터리 부족 경고가 표시되지 않는 문제 수정",
+      "수정: 통화 시간 버블이 알림 아이콘과 겹치는 문제",
+      "잠금 화면에서 알림을 탭한 후 비밀번호 화면에서 지문으로 잠금 해제할 때 검은 화면 깜박임 문제를 수정했습니다.",
+      "잠금 화면 비밀번호 인터페이스에서 지문 잠금 해제 사용 시 상태 업데이트가 지연되는 문제를 수정했습니다.",
+      "미디어 오디오 재생 중 알림이 오면 볼륨이 줄어든 후 복원되지 않는 문제를 수정",
+      "잠금 화면에 화면 잠금 해제 방법 추가"
+    ],
     "시계": [
       "타이머 페이지에서 버튼을 탭할 때 깜박이는 문제를 수정했습니다",
       "특정 날짜에 시계가 강제 종료되는 문제 수정",
@@ -262,22 +288,7 @@
       "수정: 통화 종료가 예상보다 오래 걸리는 문제",
       "수정: 수신 전화 플로팅 바와 통화 녹색 바가 동시에 표시되는 문제."
     ],
-    "잠금화면, 상태 바, 알림 바": [
-      "새로운 기능: 알림 창에 NFC 바로가기 추가",
-      "새 기능: 잠금 화면에서 알림 패널을 아래로 내려 여는 것을 금지할 수 있습니다",
-      "추가: 화면 꺼짐 시 지문 아이콘을 표시하지 않아도 지문을 사용할 수 있도록 지원",
-      "새 기능: 얼굴 인식으로 잠금 해제에 성공한 후 잠금 화면에 머무를 때 지문으로 홈 화면에 들어갈 수 있습니다",
-      "수정: 지문 인식으로 잠금 해제 시 시계가 깜박이던 문제",
-      "TalkBack이 켜져 있을 때 지문 인식기를 사용할 수 없던 문제를 수정했습니다.",
-      "수정: 가로 모드에서 배터리 부족 경고가 표시되지 않는 문제 수정",
-      "수정: 통화 시간 버블이 알림 아이콘과 겹치는 문제",
-      "잠금 화면에서 알림을 탭한 후 비밀번호 화면에서 지문으로 잠금 해제할 때 검은 화면 깜박임 문제를 수정했습니다.",
-      "수정: 배터리가 부족할 때 알림 LED가 깜박이지 않던 버그.",
-      "잠금 화면 비밀번호 인터페이스에서 지문 잠금 해제 사용 시 상태 업데이트가 지연되는 문제를 수정했습니다.",
-      "미디어 오디오 재생 중 알림이 오면 볼륨이 줄어든 후 복원되지 않는 문제를 수정",
-      "잠금 화면에 화면 잠금 해제 방법 추가"
-    ],
-    "홈 화면": [
+    "데스크톱": [
       "WhatsApp 아이콘에 알림 배지가 잘못 표시되는 문제를 수정했습니다."
     ],
     "게임 속도 향상": [
@@ -288,6 +299,23 @@
     ]
   },
   "logs_ru": {
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Новое: Используйте отпечаток пальца, чтобы перейти на рабочий стол после того, как вы разблокировали устройство при помощи данных лица и остались на экране блокировки",
+      "Исправлено: Часы мерцали после использования разблокировки при помощи отпечатка пальца",
+      "Исправлено: После нажатия на уведомления на Экране блокировки экран начинал мерцать",
+      "Исправлено: LED индикатор не загорался при низком уровне заряда аккумулятора",
+      "Fix: Громкость воспроизведения медиа-файлов не восстанавливалась после автоматического понижения входящим уведомлением",
+      "Добавлен способ разблокировки подэкранным сканером отпечатков на экране ввода пароля блокировки",
+      "Новое: Переключатель для NFC в Шторке уведомлений",
+      "Новое: Теперь вы можете ограничить открытие Шторки уведомлений на экране блокировки",
+      "Новое: Вы можете отключить отображение значка отпечатка пальца на заблокированном экране. Вы по-прежнему сможете воспользоваться разблокировкой при помощи отпечатка пальца",
+      "Исправлено: Сканер отпечатков пальцев не работал, когда была активна функция TalkBack",
+      "Исправлено: Предупреждение о низком уровне заряда аккумулятора не отображалось в ландшафтном режиме",
+      "Исправлено: Время продолжительности вызова перекрывалось значками уведомлений",
+      "Исправлено: Проблемы, связанные с разблокировкой при помощи отпечатка пальца",
+      "Исправлено: Громкость воспроизведения медиафайлов не восстанавливалась после автоматического понижения входящим уведомлением",
+      "Опция разблокировки при помощи отпечатка пальца на Экране блокировки"
+    ],
     "Часы": [
       "Исправлено: Кнопка таймера начинала мигать после нажатия",
       "Исправлено: Некорректное завершение работы приложения Часы в определенные дни"
@@ -321,21 +349,6 @@
       "Исправлено: Завершение вызова выполнялось слишком долго",
       "Исправлено: Значки в строке состояния и всплывающее уведомление вызовов появлялись одновременно"
     ],
-    "Экран блокировки, строка состояния, шторка уведомлений": [
-      "Новое: Переключатель для NFC в Шторке уведомлений",
-      "Новое: Теперь вы можете ограничить открытие Шторки уведомлений на экране блокировки",
-      "Новое: Вы можете отключить отображение значка отпечатка пальца на заблокированном экране. Вы по-прежнему сможете воспользоваться разблокировкой при помощи отпечатка пальца",
-      "Новое: Используйте отпечаток пальца, чтобы перейти на рабочий стол после того, как вы разблокировали устройство при помощи данных лица и остались на экране блокировки",
-      "Исправлено: Часы мерцали после использования разблокировки при помощи отпечатка пальца",
-      "Исправлено: Сканер отпечатков пальцев не работал, когда была активна функция TalkBack",
-      "Исправлено: Предупреждение о низком уровне заряда аккумулятора не отображалось в ландшафтном режиме",
-      "Исправлено: Время продолжительности вызова перекрывалось значками уведомлений",
-      "Исправлено: После нажатия на уведомления на Экране блокировки экран начинал мерцать",
-      "Исправлено: LED индикатор не загорался при низком уровне заряда аккумулятора",
-      "Исправлено: Проблемы, связанные с разблокировкой при помощи отпечатка пальца",
-      "Исправлено: Громкость воспроизведения медиафайлов не восстанавливалась после автоматического понижения входящим уведомлением",
-      "Опция разблокировки при помощи отпечатка пальца на Экране блокировки"
-    ],
     "Рабочий стол": [
       "Исправлено: Уведомления на значке приложения WhatsApp отображались неправильно"
     ],
@@ -344,6 +357,25 @@
     ]
   },
   "logs_uk": {
+    "Екран блокування, рядок стану, панель сповіщень": [
+      "Нове: Перехід на головний екран відбитком пальця, якщо пристрій розблоковано обличчям і залишено на екрані блокування",
+      "Виправлено проблему мерехтіння годинника під час розблокування відбитком пальця на сторінці екрана, що завжди ввімкнений",
+      "Виправлено проблему з чорним мерехтінням екрана під час розблокування відбитком на екрані пароля після натискання сповіщення на екрані блокування",
+      "Виправлено: світлодіод сповіщень не блимав, коли заряд батареї був низьким.",
+      "Виправлено: Гучність медіа не відновлювалася після зниження через сповіщення",
+      "Додано спосіб розблокування підэкранним сканером відбитків на екрані введення пароля блокування",
+      "Нове: ярлик NFC у панелі сповіщень",
+      "Нове: додано підтримку заборони відкриття панелі сповіщень на екрані блокування",
+      "Додано: підтримка приховування значка відбитка пальця при вимкненому екрані, відбиток пальця залишається доступним",
+      "Нове: Використовувати відбиток пальця для переходу на головний екран після успішного розблокування обличчям із затримкою на екрані блокування",
+      "Виправлено: сканер відбитків пальців не працював, коли було ввімкнено TalkBack.",
+      "Виправлення: Попередження про низький заряд батареї не відображалося в альбомному режимі",
+      "Виправлено: бульбашка тривалості виклику перекривалася з іконками сповіщень",
+      "Виправлено проблему чорного блимання екрана під час розблокування відбитком пальця на екрані пароля після натискання на сповіщення на екрані блокування.",
+      "Виправлено проблему несвоєчасного оновлення стану під час використання розблокування відбитком пальця на екрані пароля блокування.",
+      "Виправлено проблему, коли гучність не відновлювалася після зниження через сповіщення під час відтворення медіааудіо",
+      "Додано спосіб розблокування екрана на екрані блокування."
+    ],
     "Годинник": [
       "Виправлено: кнопка на сторінці таймера блимає після натискання",
       "Виправлено: Годинник аварійно завершував роботу в окремі дати",
@@ -383,22 +415,7 @@
       "Виправлено: завершення викликів тривало довше, ніж очікувалося",
       "Виправлено: плаваюча панель вхідного виклику та зелена смуга виклику відображалися одночасно."
     ],
-    "Екран блокування, рядок стану, панель сповіщень": [
-      "Нове: ярлик NFC у панелі сповіщень",
-      "Нове: додано підтримку заборони відкриття панелі сповіщень на екрані блокування",
-      "Додано: підтримка приховування значка відбитка пальця при вимкненому екрані, відбиток пальця залишається доступним",
-      "Нове: Використовувати відбиток пальця для переходу на головний екран після успішного розблокування обличчям із затримкою на екрані блокування",
-      "Виправлено проблему мерехтіння годинника під час розблокування відбитком пальця на сторінці екрана, що завжди ввімкнений",
-      "Виправлено: сканер відбитків пальців не працював, коли було ввімкнено TalkBack.",
-      "Виправлення: Попередження про низький заряд батареї не відображалося в альбомному режимі",
-      "Виправлено: бульбашка тривалості виклику перекривалася з іконками сповіщень",
-      "Виправлено проблему чорного блимання екрана під час розблокування відбитком пальця на екрані пароля після натискання на сповіщення на екрані блокування.",
-      "Виправлено: світлодіод сповіщень не блимав, коли заряд батареї був низьким.",
-      "Виправлено проблему несвоєчасного оновлення стану під час використання розблокування відбитком пальця на екрані пароля блокування.",
-      "Виправлено проблему, коли гучність не відновлювалася після зниження через сповіщення під час відтворення медіааудіо",
-      "Додано спосіб розблокування екрана на екрані блокування."
-    ],
-    "Головний екран": [
+    "Робочий стіл": [
       "Виправлено: значки сповіщень неправильно відображалися на значку WhatsApp."
     ],
     "Mi Smart Hub": [
@@ -406,6 +423,25 @@
     ]
   },
   "logs_pl": {
+    "Ekran blokady, pasek powiadomień,panel powiadomień": [
+      "Nowość: Możliwość przejścia do ekranu głównego odciskiem palca po odblokowaniu twarzą i pozostaniu na ekranie blokady",
+      "Naprawiono problem migotania zegara podczas odblokowywania odciskiem palca na stronie ekranu zawsze włączonego",
+      "Naprawiono problem czarnego migotania ekranu podczas odblokowywania odciskiem palca na ekranie hasła po dotknięciu powiadomienia na ekranie blokady",
+      "Poprawka: dioda powiadomień nie migała przy niskim poziomie baterii.",
+      "Poprawiono: Głośność multimediów nie wracała po obniżeniu przez powiadomienie",
+      "Dodano odblokowywanie odciskiem palca pod wyświetlaczem na ekranie hasła blokady",
+      "Nowość: skrót NFC w panelu powiadomień",
+      "Nowość: można teraz zablokować otwieranie panelu powiadomień na ekranie blokady",
+      "Dodano: obsługa ukrywania ikony odcisku palca przy wyłączonym ekranie z zachowaniem działania odcisku palca",
+      "Nowość: Po pomyślnym odblokowaniu twarzą i pozostaniu na ekranie blokady można użyć odcisku palca, aby przejść do ekranu głównego",
+      "Poprawiono: nie można było używać czytnika linii papilarnych, gdy TalkBack był włączony.",
+      "Poprawka: Ostrzeżenie o niskim poziomie baterii nie wyświetlało się w trybie poziomym",
+      "Naprawiono: bąbelek czasu połączenia nakładał się na ikony powiadomień",
+      "Naprawiono problem czarnego migotania ekranu podczas odblokowywania odciskiem palca na ekranie hasła po dotknięciu powiadomienia na ekranie blokady.",
+      "Naprawiono problem z opóźnioną aktualizacją stanu podczas odblokowywania odciskiem palca na ekranie hasła ekranu blokady.",
+      "Naprawiono problem, w którym po otrzymaniu powiadomienia podczas odtwarzania multimediów głośność pozostawała obniżona i nie wracała do normy",
+      "Dodano metodę odblokowywania ekranu do ekranu blokady."
+    ],
     "Zegar": [
       "Poprawka: przycisk na stronie minutnika miga po dotknięciu",
       "Naprawiono: Zegar ulegał awarii w określonych datach",
@@ -434,7 +470,7 @@
       "Optymalizacja: przeprojektowano stronę główną usługi w chmurze; dostępna przestrzeń jest teraz wyświetlana bardziej intuicyjnie.",
       "Optymalizacja: zoptymalizowano nową stronę główną Mi Cloud, informacje o przestrzeni w chmurze są wyświetlane wyraźniej."
     ],
-    "Inne": [
+    "Reszt": [
       "Naprawiono problem, przez który Always-on display nie wyłączał się o zaplanowanej porze"
     ],
     "System": [
@@ -445,22 +481,7 @@
       "Naprawiono: Zakończenie połączeń trwało dłużej niż oczekiwano",
       "Poprawka: pływający pasek połączenia przychodzącego i zielony pasek połączenia wyświetlały się jednocześnie."
     ],
-    "Ekran blokady, pasek powiadomień,panel powiadomień": [
-      "Nowość: skrót NFC w panelu powiadomień",
-      "Nowość: można teraz zablokować otwieranie panelu powiadomień na ekranie blokady",
-      "Dodano: obsługa ukrywania ikony odcisku palca przy wyłączonym ekranie z zachowaniem działania odcisku palca",
-      "Nowość: Po pomyślnym odblokowaniu twarzą i pozostaniu na ekranie blokady można użyć odcisku palca, aby przejść do ekranu głównego",
-      "Naprawiono problem migotania zegara podczas odblokowywania odciskiem palca na stronie ekranu zawsze włączonego",
-      "Poprawiono: nie można było używać czytnika linii papilarnych, gdy TalkBack był włączony.",
-      "Poprawka: Ostrzeżenie o niskim poziomie baterii nie wyświetlało się w trybie poziomym",
-      "Naprawiono: bąbelek czasu połączenia nakładał się na ikony powiadomień",
-      "Naprawiono problem czarnego migotania ekranu podczas odblokowywania odciskiem palca na ekranie hasła po dotknięciu powiadomienia na ekranie blokady.",
-      "Poprawka: dioda powiadomień nie migała przy niskim poziomie baterii.",
-      "Naprawiono problem z opóźnioną aktualizacją stanu podczas odblokowywania odciskiem palca na ekranie hasła ekranu blokady.",
-      "Naprawiono problem, w którym po otrzymaniu powiadomienia podczas odtwarzania multimediów głośność pozostawała obniżona i nie wracała do normy",
-      "Dodano metodę odblokowywania ekranu do ekranu blokady."
-    ],
-    "Ekran główny": [
+    "Biurko": [
       "Naprawiono: odznaki powiadomień były nieprawidłowo wyświetlane na ikonie WhatsApp."
     ],
     "Mi Smart Hub": [
@@ -468,6 +489,25 @@
     ]
   },
   "logs_de": {
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
+      "Neu: Nach erfolgreicher Gesichtserkennung auf dem Sperrbildschirm per Fingerabdruck zum Startbildschirm wechseln",
+      "Behoben: Uhr blinkte bei Entsperrung per Fingerabdruck",
+      "Problem behoben: Schwarzes Flackern auf dem Passwortbildschirm beim Entsperren per Fingerabdruck, nachdem auf dem Sperrbildschirm eine Benachrichtigung angetippt wurde",
+      "Fehler behoben: Benachrichtigungs-LED blinkte bei niedrigem Akkustand nicht.",
+      "Behoben: Medienlautstärke wurde nach einer Benachrichtigung nicht wiederhergestellt",
+      "Hinzugefügt: Entsperren per Fingerabdruck unter dem Display auf dem Passwortbildschirm des Sperrbildschirms",
+      "Neu: NFC-Schnellschalter in der Benachrichtigungsleiste",
+      "Neu: Öffnen der Benachrichtigungsleiste auf dem Sperrbildschirm kann jetzt gesperrt werden",
+      "Neu: Unterstützung, das Fingerabdruck-Symbol bei ausgeschaltetem Bildschirm auszublenden, während der Fingerabdruck weiterhin funktioniert",
+      "Neu: Fingerabdruck zum Öffnen des Startbildschirms verwenden, wenn das Gerät per Gesichtserkennung entsperrt wurde und auf dem Sperrbildschirm bleibt",
+      "Behoben: Fingerabdruckscanner konnte bei aktiviertem TalkBack nicht verwendet werden.",
+      "Behebung: Warnung bei niedrigem Akkustand wurde im Querformat nicht angezeigt",
+      "Behoben: Überlappung zwischen Anrufzeit-Blase und Benachrichtigungssymbolen",
+      "Behoben: Schwarzes Flackern bei der Fingerabdruckentsperrung auf dem Passwortbildschirm nach Tippen auf eine Benachrichtigung auf dem Sperrbildschirm.",
+      "Problem behoben, dass der Status beim Entsperren per Fingerabdruck auf dem Passwortbildschirm des Sperrbildschirms nicht rechtzeitig aktualisiert wird.",
+      "Problem behoben, bei dem die Lautstärke nach einer Benachrichtigung während der Medienwiedergabe verringert blieb und nicht wiederhergestellt wurde",
+      "Entsperrmethode für den Sperrbildschirm hinzugefügt."
+    ],
     "Uhr": [
       "Behebung: Schaltfläche auf der Timer-Seite blinkt nach dem Antippen",
       "Behoben: Uhr stürzte an bestimmten Daten ab",
@@ -507,26 +547,30 @@
       "Behoben: Anrufe beenden dauerte länger als erwartet",
       "Behebung: Die schwebende Leiste für eingehende Anrufe und der grüne Anrufbalken wurden gleichzeitig angezeigt."
     ],
-    "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
-      "Neu: NFC-Schnellschalter in der Benachrichtigungsleiste",
-      "Neu: Öffnen der Benachrichtigungsleiste auf dem Sperrbildschirm kann jetzt gesperrt werden",
-      "Neu: Unterstützung, das Fingerabdruck-Symbol bei ausgeschaltetem Bildschirm auszublenden, während der Fingerabdruck weiterhin funktioniert",
-      "Neu: Fingerabdruck zum Öffnen des Startbildschirms verwenden, wenn das Gerät per Gesichtserkennung entsperrt wurde und auf dem Sperrbildschirm bleibt",
-      "Behoben: Uhr blinkte bei Entsperrung per Fingerabdruck",
-      "Behoben: Fingerabdruckscanner konnte bei aktiviertem TalkBack nicht verwendet werden.",
-      "Behebung: Warnung bei niedrigem Akkustand wurde im Querformat nicht angezeigt",
-      "Behoben: Überlappung zwischen Anrufzeit-Blase und Benachrichtigungssymbolen",
-      "Behoben: Schwarzes Flackern bei der Fingerabdruckentsperrung auf dem Passwortbildschirm nach Tippen auf eine Benachrichtigung auf dem Sperrbildschirm.",
-      "Fehler behoben: Benachrichtigungs-LED blinkte bei niedrigem Akkustand nicht.",
-      "Problem behoben, dass der Status beim Entsperren per Fingerabdruck auf dem Passwortbildschirm des Sperrbildschirms nicht rechtzeitig aktualisiert wird.",
-      "Problem behoben, bei dem die Lautstärke nach einer Benachrichtigung während der Medienwiedergabe verringert blieb und nicht wiederhergestellt wurde",
-      "Entsperrmethode für den Sperrbildschirm hinzugefügt."
-    ],
     "Startbildschirm": [
       "Behoben: Benachrichtigungs-Badges wurden auf dem WhatsApp-Symbol falsch angezeigt."
     ]
   },
   "logs_fr": {
+    "Écran de verrouillage, Barre d'état, Panneau de notification": [
+      "Nouveau Utilisez votre empreinte digitale pour ouvrir l'écran d'accueil une fois que vous avez déverrouillé l'appareil à l'aide des données du visage et que vous êtes resté sur l'écran de verrouillage",
+      "Correction : L'horloge clignotait lors du déverrouillage par empreinte digitale",
+      "Correction du clignotement noir sur l’écran de mot de passe lors du déverrouillage par empreinte après avoir touché une notification sur l’écran de verrouillage",
+      "Correction : la LED de notification ne clignotait pas lorsque la batterie était faible.",
+      "Correction : Le volume des médias ne revenait pas à son niveau après une notification",
+      "Ajout du déverrouillage par empreinte digitale sous l'écran sur l'écran de mot de passe de verrouillage",
+      "Nouveau : raccourci NFC dans le panneau de notifications",
+      "Nouveau : il est désormais possible d’interdire l’ouverture du panneau de notifications sur l’écran de verrouillage",
+      "Ajout : prise en charge du masquage de l’icône d’empreinte digitale lorsque l’écran est éteint, tout en gardant l’empreinte utilisable",
+      "Nouveau : Utiliser l'empreinte digitale pour accéder à l'écran d'accueil après un déverrouillage facial réussi et un maintien sur l'écran de verrouillage",
+      "Correction : le capteur d'empreintes digitales était inutilisable lorsque TalkBack était activé.",
+      "Correction : L'avertissement de batterie faible ne s'affichait pas en mode paysage",
+      "Corrigé : chevauchement entre la bulle de durée d’appel et les icônes de notification",
+      "Correction du clignotement noir lors du déverrouillage par empreinte digitale sur l'écran de mot de passe après avoir appuyé sur une notification depuis l'écran de verrouillage.",
+      "Correction du problème de mise à jour tardive de l'état lors de l'utilisation de l'empreinte digitale sur l'écran de mot de passe de verrouillage.",
+      "Correction du problème où le volume restait réduit après une notification pendant la lecture multimédia et ne revenait pas à la normale",
+      "Méthode de déverrouillage de l'écran ajoutée à l'écran de verrouillage."
+    ],
     "Horloge": [
       "Correction : le bouton de la page Minuteur clignote après un appui",
       "Correction : l'horloge plantait à certaines dates",
@@ -565,22 +609,7 @@
       "Correction : la fin des appels prenait plus de temps que prévu",
       "Correction : la barre flottante d’appel entrant et la barre verte d’appel s’affichaient en même temps."
     ],
-    "Écran de verrouillage, Barre d'état, Panneau de notification": [
-      "Nouveau : raccourci NFC dans le panneau de notifications",
-      "Nouveau : il est désormais possible d’interdire l’ouverture du panneau de notifications sur l’écran de verrouillage",
-      "Ajout : prise en charge du masquage de l’icône d’empreinte digitale lorsque l’écran est éteint, tout en gardant l’empreinte utilisable",
-      "Nouveau : Utiliser l'empreinte digitale pour accéder à l'écran d'accueil après un déverrouillage facial réussi et un maintien sur l'écran de verrouillage",
-      "Correction : L'horloge clignotait lors du déverrouillage par empreinte digitale",
-      "Correction : le capteur d'empreintes digitales était inutilisable lorsque TalkBack était activé.",
-      "Correction : L'avertissement de batterie faible ne s'affichait pas en mode paysage",
-      "Corrigé : chevauchement entre la bulle de durée d’appel et les icônes de notification",
-      "Correction du clignotement noir lors du déverrouillage par empreinte digitale sur l'écran de mot de passe après avoir appuyé sur une notification depuis l'écran de verrouillage.",
-      "Correction : la LED de notification ne clignotait pas lorsque la batterie était faible.",
-      "Correction du problème de mise à jour tardive de l'état lors de l'utilisation de l'empreinte digitale sur l'écran de mot de passe de verrouillage.",
-      "Correction du problème où le volume restait réduit après une notification pendant la lecture multimédia et ne revenait pas à la normale",
-      "Méthode de déverrouillage de l'écran ajoutée à l'écran de verrouillage."
-    ],
-    "Écran d'accueil": [
+    "Bureau": [
       "Correction : les badges de notification s’affichaient incorrectement sur l’icône WhatsApp."
     ],
     "Accélération des jeux": [
@@ -588,18 +617,34 @@
     ]
   },
   "logs_it": {
+    "Schermata di blocco, barra di stato, area delle notifiche": [
+      "Nuovo: Accedi alla schermata Home usando l'impronta digitale dopo aver sbloccato il dispositivo con i dati del volto restando sulla schermata di blocco.",
+      "Risolto: L'orologio lampeggiava quando era attivo lo sblocco con l'impronta digitale",
+      "Risolvi: Il modulo di inserimento della password lampeggiava in nero ogni volta che veniva toccata una notifica sulla schermata di blocco",
+      "Risolto: Il LED non si illuminava quando la batteria era scarica",
+      "Correzione: Il volume dei media non tornava al livello originale dopo una notifica",
+      "Aggiunto lo sblocco con impronta digitale sotto lo schermo nella schermata della password di blocco",
+      "Nuovo: Collegamenti NFC nell'area delle notifiche",
+      "Nuovo: È ora possibile limitare l'apertura dell'area delle notifiche sulla schermata di blocco",
+      "Nuovo: Puoi scegliere di non mostrare l'icona dell'impronta digitale a schermo spento. Lo sblocco con l'impronta digitale continuerà a funzionare normalmente.",
+      "Risolto: Il sensore di impronte non poteva essere utilizzato quando la funzionalità TalkBack era attiva",
+      "Risolto: Gli avvisi di batteria scarica non apparivano in modalità Orizzontale",
+      "Risolto: L'icona della durata di chiamata si sovrapponeva alle icone di notifica",
+      "Risolto: Il modulo di inserimento della password lampeggiava in nero ogni volta che veniva toccata una notifica sulla schermata di blocco",
+      "Risolto: Errori nello sblocco con l'impronta digitale",
+      "Risolto: Il volume di riproduzione multimediale non poteva essere ripristinato dopo che era stato abbassato da una notifica in arrivo",
+      "Opzione di sblocco con l'impronta digitale sulla schermata di blocco"
+    ],
     "Orologio": [
       "Risolvi: Il pulsante del timer cominciava a lampeggiare quando veniva premuto",
       "Risolvi: Chiusura forzata di Orologio in alcune date specifiche",
       "Risolto: Il pulsante del timer cominciava a lampeggiare quando veniva premuto",
       "Risolto: Chiusura forzata di Orologio in alcune date specifiche"
     ],
-    "Fotocamera": [
+    "macchina fotografica": [
       "Nuovo: Nuove modalità per la fotocamera AI",
       "Risolvi: Chiusura forzata della Fotocamera quando la app era chiusa e aperta di nuovo in modalità Video",
-      "Risolvi: Quando l'utente annullava lo scatto di una foto tramite collegamento nei Messaggi e poi toccava il collegamento Fotocamera di nuovo, la Fotocamera si arrestava in modo anomalo",
-      "Risolto: Chiusura forzata della Fotocamera quando la app era chiusa e aperta di nuovo in modalità Video",
-      "Risolto: Quando l'utente annullava lo scatto di una foto tramite collegamento nei Messaggi e poi toccava il collegamento Fotocamera di nuovo, la Fotocamera si arrestava in modo anomalo"
+      "Risolvi: Quando l'utente annullava lo scatto di una foto tramite collegamento nei Messaggi e poi toccava il collegamento Fotocamera di nuovo, la Fotocamera si arrestava in modo anomalo"
     ],
     "Impostazioni": [
       "Ottimizzazione: I caratteri di grandi dimensioni sono ora visualizzati meglio",
@@ -625,29 +670,37 @@
       "Risolto: Terminare le chiamate richiedeva più tempo del previsto",
       "Risolto: I collegamenti della barra di stato e le notifiche a comparsa per le chiamate apparivano contemporaneamente"
     ],
-    "Schermata di blocco, barra di stato, area delle notifiche": [
-      "Nuovo: Collegamenti NFC nell'area delle notifiche",
-      "Nuovo: È ora possibile limitare l'apertura dell'area delle notifiche sulla schermata di blocco",
-      "Nuovo: Puoi scegliere di non mostrare l'icona dell'impronta digitale a schermo spento. Lo sblocco con l'impronta digitale continuerà a funzionare normalmente.",
-      "Nuovo: Accedi alla schermata Home usando l'impronta digitale dopo aver sbloccato il dispositivo con i dati del volto restando sulla schermata di blocco.",
-      "Risolto: L'orologio lampeggiava quando era attivo lo sblocco con l'impronta digitale",
-      "Risolto: Il sensore di impronte non poteva essere utilizzato quando la funzionalità TalkBack era attiva",
-      "Risolto: Gli avvisi di batteria scarica non apparivano in modalità Orizzontale",
-      "Risolto: L'icona della durata di chiamata si sovrapponeva alle icone di notifica",
-      "Risolto: Il modulo di inserimento della password lampeggiava in nero ogni volta che veniva toccata una notifica sulla schermata di blocco",
-      "Risolto: Il LED non si illuminava quando la batteria era scarica",
-      "Risolto: Errori nello sblocco con l'impronta digitale",
-      "Risolto: Il volume di riproduzione multimediale non poteva essere ripristinato dopo che era stato abbassato da una notifica in arrivo",
-      "Opzione di sblocco con l'impronta digitale sulla schermata di blocco"
-    ],
-    "Schermata Home": [
+    "Desktop": [
       "Risolto: I badge di notifica erano visualizzati in modo errato sull'icona di WhatsApp"
+    ],
+    "Fotocamera": [
+      "Nuovo: Nuove modalità per la fotocamera AI",
+      "Risolto: Chiusura forzata della Fotocamera quando la app era chiusa e aperta di nuovo in modalità Video",
+      "Risolto: Quando l'utente annullava lo scatto di una foto tramite collegamento nei Messaggi e poi toccava il collegamento Fotocamera di nuovo, la Fotocamera si arrestava in modo anomalo"
     ],
     "Mi Smart Hub": [
       "Risolto: La visualizzazione degli elementi a schermo spento non poteva essere disattivata in tempo in alcuni casi"
     ]
   },
   "logs_es": {
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Nuevo: Usa tu huella dactilar para abrir la Pantalla de inicio después de haber desbloqueado el dispositivo usando tus datos faciales y haber permanecido en la Pantalla de bloqueo",
+      "Reparado: El reloj parpadeaba al usar el desbloqueo con huella dactilar",
+      "Reparar: El recuadro de la contraseña se volvió negro cuando un notificación fue pulsada en la Pantalla de bloqueo",
+      "Reparado: La luz LED no parpadeó cuando la batería estaba baja",
+      "Corrección: El volumen multimedia no se restauraba tras bajar por una notificación",
+      "Se añade el desbloqueo con huella digital bajo la pantalla en la pantalla de contraseña de bloqueo",
+      "Nuevo: Acceso directo al NFC en la Barra de notificaciones",
+      "Nuevo: Ahora puedes restringir abrir la Barra de notificaciones en la Pantalla de bloqueo",
+      "Nuevo: Puedes elegir no mostrar el icono de huella dactilar con la pantalla apagada. El desbloqueo funcionará con normalidad.",
+      "Reparado: El lector de huella dactilar no podía ser usado cuando TalkBack estaba activo",
+      "Reparado: El aviso de batería baja no apareció en el Modo paisaje",
+      "Reparado: La burbuja de la duración de llamada se superpuso con los iconos de notificaciones",
+      "Reparado: El recuadro de la contraseña se volvió negro cuando un notificación fue pulsada en la Pantalla de bloqueo",
+      "Reparado: Problemas con el desbloqueo con huella dactilar",
+      "Reparado: El volumen de la reproducción multimedia no pudo ser restaurado después de ser bajado por una notificación entrante",
+      "Opción de desbloqueo con huella dactilar en la Pantalla de bloqueo"
+    ],
     "Reloj": [
       "Reparar: El botón del temporizador comenzó a parpadear después de ser pulsado",
       "Reparar: Cierre forzoso del Reloj en algunas fechas específicas",
@@ -661,9 +714,8 @@
       "Reparado: La Cámara se cerró de forma forzosa cuando la aplicación fue cerrada y se volvió a abrir en el Modo vídeo",
       "Reparado: Cuando el usuario canceló al hacer una foto usando un acceso directo en Mensajería y después volvió a pulsar el acceso directo, la Cámara se bloqueó"
     ],
-    "Ajustes": [
-      "Optimización: Las fuentes grandes ahora se muestran mejor",
-      "Reparado: La página de sincronización no pudo ser refrescada cuando la sincronización fue activada o desactivada en la Barra de notificaciones"
+    "Configuración": [
+      "Optimización: Las fuentes grandes ahora se muestran mejor"
     ],
     "Recientes": [
       "Optimización: Los nombres de aplicaciones fueron reducidos cuando el tamaño del texto fue establecido como grande"
@@ -685,29 +737,36 @@
       "Reparado: Terminar las llamadas llevó más tiempo de lo esperado",
       "Reparado: El acceso directo a la Barra de estado y notificaciones flotantes para llamadas aparecieron al mismo tiempo"
     ],
-    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
-      "Nuevo: Acceso directo al NFC en la Barra de notificaciones",
-      "Nuevo: Ahora puedes restringir abrir la Barra de notificaciones en la Pantalla de bloqueo",
-      "Nuevo: Puedes elegir no mostrar el icono de huella dactilar con la pantalla apagada. El desbloqueo funcionará con normalidad.",
-      "Nuevo: Usa tu huella dactilar para abrir la Pantalla de inicio después de haber desbloqueado el dispositivo usando tus datos faciales y haber permanecido en la Pantalla de bloqueo",
-      "Reparado: El reloj parpadeaba al usar el desbloqueo con huella dactilar",
-      "Reparado: El lector de huella dactilar no podía ser usado cuando TalkBack estaba activo",
-      "Reparado: El aviso de batería baja no apareció en el Modo paisaje",
-      "Reparado: La burbuja de la duración de llamada se superpuso con los iconos de notificaciones",
-      "Reparado: El recuadro de la contraseña se volvió negro cuando un notificación fue pulsada en la Pantalla de bloqueo",
-      "Reparado: La luz LED no parpadeó cuando la batería estaba baja",
-      "Reparado: Problemas con el desbloqueo con huella dactilar",
-      "Reparado: El volumen de la reproducción multimedia no pudo ser restaurado después de ser bajado por una notificación entrante",
-      "Opción de desbloqueo con huella dactilar en la Pantalla de bloqueo"
-    ],
-    "Pantalla de inicio": [
+    "Escritorio": [
       "Reparado: Los iconos de notificaciones fueron mostrados de forma incorrecta en el icono de WhatsApp"
+    ],
+    "Ajustes": [
+      "Reparado: La página de sincronización no pudo ser refrescada cuando la sincronización fue activada o desactivada en la Barra de notificaciones"
     ],
     "Mi Smart Hub": [
       "Reparado: Mostrar elementos en la pantalla apagada no pudo ser desactivado en algunos casos"
     ]
   },
   "logs_pt": {
+    "Tela de bloqueio, Barra de status e Área de notificações": [
+      "Novo Use sua impressão digital para abrir a Tela inicial quando você desbloquear o dispositivo usando o desbloqueio facial e ficar na Tela de bloqueio",
+      "Correção: O relógio piscava ao usar o desbloqueio por impressão digital",
+      "Correção do piscar preto na tela de senha ao desbloquear com impressão digital após tocar em uma notificação na tela de bloqueio",
+      "Correção: o LED de notificação não piscava quando a bateria estava fraca.",
+      "Correção: O volume de mídia não era restaurado após ser reduzido por uma notificação",
+      "Adicionado desbloqueio por impressão digital sob a tela na tela de senha de bloqueio",
+      "Novo: atalho NFC no painel de notificações",
+      "Novo: agora é possível impedir a abertura do painel de notificações na tela de bloqueio",
+      "Novo: suporte para ocultar o ícone de impressão digital com a tela desligada, mantendo a impressão digital utilizável",
+      "Novo: Usar a impressão digital para abrir a tela inicial após desbloquear com o rosto e permanecer na tela de bloqueio",
+      "Correção: o leitor de impressões digitais não podia ser usado quando o TalkBack estava ativado.",
+      "Correção: O aviso de bateria fraca não aparecia no modo paisagem",
+      "Correção: o balão de duração da chamada se sobrepunha aos ícones de notificação",
+      "Corrigido o problema de cintilação preta na tela ao desbloquear com impressão digital na tela de senha após tocar em uma notificação na tela de bloqueio.",
+      "Corrigido o problema de atualização tardia do status ao usar o desbloqueio por impressão digital na interface de senha da tela de bloqueio.",
+      "Corrigido o problema em que o volume não era restaurado após diminuir ao receber uma notificação durante a reprodução de áudio de mídia",
+      "Adicionado método de desbloqueio da tela à tela de bloqueio."
+    ],
     "Relógio": [
       "Correção: o botão da página do temporizador pisca ao ser tocado",
       "Correção: o Relógio fechava à força em datas específicas",
@@ -747,21 +806,6 @@
       "Correção: encerrar chamadas demorava mais do que o esperado",
       "Correção: a barra flutuante de chamada recebida e a barra verde de chamada apareciam ao mesmo tempo."
     ],
-    "Tela de bloqueio, Barra de status e Área de notificações": [
-      "Novo: atalho NFC no painel de notificações",
-      "Novo: agora é possível impedir a abertura do painel de notificações na tela de bloqueio",
-      "Novo: suporte para ocultar o ícone de impressão digital com a tela desligada, mantendo a impressão digital utilizável",
-      "Novo: Usar a impressão digital para abrir a tela inicial após desbloquear com o rosto e permanecer na tela de bloqueio",
-      "Correção: O relógio piscava ao usar o desbloqueio por impressão digital",
-      "Correção: o leitor de impressões digitais não podia ser usado quando o TalkBack estava ativado.",
-      "Correção: O aviso de bateria fraca não aparecia no modo paisagem",
-      "Correção: o balão de duração da chamada se sobrepunha aos ícones de notificação",
-      "Corrigido o problema de cintilação preta na tela ao desbloquear com impressão digital na tela de senha após tocar em uma notificação na tela de bloqueio.",
-      "Correção: o LED de notificação não piscava quando a bateria estava fraca.",
-      "Corrigido o problema de atualização tardia do status ao usar o desbloqueio por impressão digital na interface de senha da tela de bloqueio.",
-      "Corrigido o problema em que o volume não era restaurado após diminuir ao receber uma notificação durante a reprodução de áudio de mídia",
-      "Adicionado método de desbloqueio da tela à tela de bloqueio."
-    ],
     "Ecrã inicial": [
       "Correção: os badges de notificação eram exibidos incorretamente no ícone do WhatsApp."
     ],
@@ -770,6 +814,24 @@
     ]
   },
   "logs_tr": {
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Yeni: Cihazın kilidini yüz verilerini kullanarak açtıktan ve Kilit ekranında kaldıktan sonra Ana ekranı açmak için parmak izinizi kullanın",
+      "Onarım: Parmak izi ile kilit açıldığında saat yandı",
+      "Onar: Kilit ekranında bir bildirime dokunulduğunda şifre biçimi karardı",
+      "Onarım: Pil seviyesi düşükken LED ışık yanıp sönmedi",
+      "Düzeltme: Bildirim geldiğinde kısılan medya sesi eski haline dönmüyordu",
+      "Kilit ekranı parola ekranına ekran altı parmak iziyle kilit açma eklendi",
+      "Yeni: Bildirim çubuğunda NFC kısayolu",
+      "Yeni: Kilit ekranında Bildirim çubuğunun açılmasını kısıtlayabilirsiniz",
+      "Yeni: Parmak izi simgesini kapanma ekranında göstermemeyi seçebilirsiniz. Parmak izi ile kilit açma işlevi normal bir şekilde çalışmaya devam edecektir.",
+      "Onarım: Parmakizi tarayıcının, TalkBack özelliği açık olduğunda, kullanılamama sorunu giderildi",
+      "Onarım: Manzara modunda düşük pil uyarıları gösterilmedi",
+      "Onarım: Arama süresi penceresi bildirim simgeleriyle üst üste bindi",
+      "Onarım: Kilit ekranında bir bildirime dokunulduğunda şifre biçimi karardı",
+      "Onarım: Parmak izi ile kilit açma sorunları",
+      "Onarım: Medya oynatma sesi, gelen bir bildirim tarafından kısıldıktan sonra geri alınamadı",
+      "Kilit ekranında parmak izi ile kilit açma seçeneği"
+    ],
     "Saat": [
       "Onar: Zamanlayıcı tuşu, dokunulduktan sonra yanmaya başladı",
       "Onar: Saat, belirli tarihlerde kapanmaya zorlandı",
@@ -807,22 +869,7 @@
       "Onarım: Aramaları sonlandırmak beklenenden daha uzun sürdü",
       "Onarım: Durum çubuğu kısayolu ve aramalar için kayan bildirimler aynı anda belirdi"
     ],
-    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
-      "Yeni: Bildirim çubuğunda NFC kısayolu",
-      "Yeni: Kilit ekranında Bildirim çubuğunun açılmasını kısıtlayabilirsiniz",
-      "Yeni: Parmak izi simgesini kapanma ekranında göstermemeyi seçebilirsiniz. Parmak izi ile kilit açma işlevi normal bir şekilde çalışmaya devam edecektir.",
-      "Yeni: Cihazın kilidini yüz verilerini kullanarak açtıktan ve Kilit ekranında kaldıktan sonra Ana ekranı açmak için parmak izinizi kullanın",
-      "Onarım: Parmak izi ile kilit açıldığında saat yandı",
-      "Onarım: Parmakizi tarayıcının, TalkBack özelliği açık olduğunda, kullanılamama sorunu giderildi",
-      "Onarım: Manzara modunda düşük pil uyarıları gösterilmedi",
-      "Onarım: Arama süresi penceresi bildirim simgeleriyle üst üste bindi",
-      "Onarım: Kilit ekranında bir bildirime dokunulduğunda şifre biçimi karardı",
-      "Onarım: Pil seviyesi düşükken LED ışık yanıp sönmedi",
-      "Onarım: Parmak izi ile kilit açma sorunları",
-      "Onarım: Medya oynatma sesi, gelen bir bildirim tarafından kısıldıktan sonra geri alınamadı",
-      "Kilit ekranında parmak izi ile kilit açma seçeneği"
-    ],
-    "Ana ekran": [
+    "Masaüstü": [
       "Onarım: Bildirim rozetleri WhatsApp simgesinde yanlış görüntülendi"
     ],
     "Mi Smart Hub": [
@@ -830,6 +877,25 @@
     ]
   },
   "logs_id": {
+    "Layar kunci, bar status, layar notifikasi": [
+      "Baru Menggunakan sidik jari untuk membuka Layar utama saat Anda membuka kunci perangkat dengan data wajah dan tetap berada di Layar kunci",
+      "Perbaikan: Jam berkedip saat menggunakan buka kunci sidik jari",
+      "Perbaikan masalah layar berkedip hitam di layar kata sandi saat membuka kunci dengan sidik jari setelah mengetuk notifikasi di layar kunci",
+      "Perbaikan: Lampu notifikasi tidak berkedip saat baterai lemah.",
+      "Perbaikan: Volume media tidak kembali setelah dikecilkan oleh notifikasi masuk",
+      "Ditambahkan opsi buka kunci dengan sidik jari di bawah layar pada layar sandi kunci",
+      "Baru: pintasan NFC di panel notifikasi",
+      "Baru: Dukungan untuk mencegah membuka panel notifikasi di layar kunci",
+      "Baru: Dukungan untuk menyembunyikan ikon sidik jari saat layar mati, tetapi sidik jari tetap dapat digunakan",
+      "Baru: Gunakan sidik jari untuk membuka Layar utama setelah berhasil membuka kunci dengan wajah dan tetap di layar kunci",
+      "Perbaikan: Pemindai sidik jari tidak dapat digunakan saat TalkBack aktif.",
+      "Perbaikan: Peringatan baterai lemah tidak muncul dalam mode lanskap",
+      "Perbaikan: gelembung durasi panggilan tumpang tindih dengan ikon notifikasi",
+      "Memperbaiki masalah layar berkedip hitam saat membuka kunci dengan sidik jari di layar kata sandi setelah mengetuk notifikasi di layar kunci.",
+      "Memperbaiki masalah pembaruan status yang tidak tepat waktu saat menggunakan sidik jari di antarmuka kata sandi layar kunci.",
+      "Memperbaiki masalah volume tidak kembali normal setelah turun saat menerima notifikasi selama pemutaran audio media",
+      "Metode buka kunci layar ditambahkan ke layar kunci."
+    ],
     "Jam": [
       "Perbaikan: tombol di halaman pengatur waktu berkedip saat diketuk",
       "Perbaikan: Jam mengalami force close pada tanggal tertentu",
@@ -868,22 +934,7 @@
       "Perbaikan: Mengakhiri panggilan membutuhkan waktu lebih lama dari yang diharapkan",
       "Perbaikan: Bilah mengambang panggilan masuk dan bilah hijau panggilan muncul bersamaan."
     ],
-    "Layar kunci, bar status, layar notifikasi": [
-      "Baru: pintasan NFC di panel notifikasi",
-      "Baru: Dukungan untuk mencegah membuka panel notifikasi di layar kunci",
-      "Baru: Dukungan untuk menyembunyikan ikon sidik jari saat layar mati, tetapi sidik jari tetap dapat digunakan",
-      "Baru: Gunakan sidik jari untuk membuka Layar utama setelah berhasil membuka kunci dengan wajah dan tetap di layar kunci",
-      "Perbaikan: Jam berkedip saat menggunakan buka kunci sidik jari",
-      "Perbaikan: Pemindai sidik jari tidak dapat digunakan saat TalkBack aktif.",
-      "Perbaikan: Peringatan baterai lemah tidak muncul dalam mode lanskap",
-      "Perbaikan: gelembung durasi panggilan tumpang tindih dengan ikon notifikasi",
-      "Memperbaiki masalah layar berkedip hitam saat membuka kunci dengan sidik jari di layar kata sandi setelah mengetuk notifikasi di layar kunci.",
-      "Perbaikan: Lampu notifikasi tidak berkedip saat baterai lemah.",
-      "Memperbaiki masalah pembaruan status yang tidak tepat waktu saat menggunakan sidik jari di antarmuka kata sandi layar kunci.",
-      "Memperbaiki masalah volume tidak kembali normal setelah turun saat menerima notifikasi selama pemutaran audio media",
-      "Metode buka kunci layar ditambahkan ke layar kunci."
-    ],
-    "Layar Utama": [
+    "Desktop": [
       "Perbaikan: Lencana notifikasi ditampilkan secara tidak benar pada ikon WhatsApp."
     ],
     "Pemercepat game": [
@@ -891,6 +942,25 @@
     ]
   },
   "logs_vi": {
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Mới: Dùng vân tay để vào Màn hình chính khi đã mở khóa bằng khuôn mặt và vẫn ở màn hình khóa",
+      "Sửa lỗi đồng hồ nhấp nháy khi dùng vân tay để mở khóa trên trang màn hình luôn bật",
+      "Sửa lỗi màn hình nhấp nháy đen ở màn hình mật khẩu khi mở khóa bằng vân tay sau khi nhấn thông báo trên màn hình khóa",
+      "Sửa lỗi: đèn thông báo không nhấp nháy khi pin yếu.",
+      "Sửa lỗi: Âm lượng phát media không khôi phục sau khi bị giảm do thông báo đến",
+      "Đã thêm cách mở khóa bằng vân tay dưới màn hình trên màn hình mật khẩu khóa máy",
+      "Mới: phím tắt NFC trong bảng thông báo",
+      "Mới: Hỗ trợ chặn kéo xuống bảng thông báo trên màn hình khóa",
+      "Mới: hỗ trợ ẩn biểu tượng vân tay khi tắt màn hình nhưng vẫn sử dụng được vân tay",
+      "Mới: Dùng vân tay để mở Màn hình chính sau khi mở khóa bằng khuôn mặt thành công và vẫn ở màn hình khóa",
+      "Đã sửa: không thể sử dụng cảm biến vân tay khi bật TalkBack.",
+      "Sửa lỗi: Cảnh báo pin yếu không hiển thị ở chế độ ngang",
+      "Đã sửa: bong bóng thời gian gọi bị chồng lên biểu tượng thông báo",
+      "Đã khắc phục sự cố màn hình nhấp nháy đen khi mở khóa bằng vân tay ở màn hình mật khẩu sau khi chạm vào thông báo trên màn hình khóa.",
+      "Đã khắc phục sự cố cập nhật trạng thái không kịp thời khi sử dụng mở khóa bằng vân tay trên giao diện mật khẩu màn hình khóa.",
+      "Khắc phục sự cố âm lượng không trở lại sau khi giảm khi nhận thông báo trong lúc phát âm thanh đa phương tiện",
+      "Đã thêm phương thức mở khóa màn hình vào màn hình khóa."
+    ],
     "Đồng hồ": [
       "Sửa lỗi: nút trên trang hẹn giờ nhấp nháy khi được nhấn",
       "Sửa lỗi: Đồng hồ bị buộc dừng vào một số ngày cụ thể",
@@ -930,21 +1000,6 @@
       "Đã sửa: Việc kết thúc cuộc gọi mất nhiều thời gian hơn dự kiến",
       "Sửa: Thanh nổi cuộc gọi đến và thanh màu xanh cuộc gọi xuất hiện cùng lúc."
     ],
-    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
-      "Mới: phím tắt NFC trong bảng thông báo",
-      "Mới: Hỗ trợ chặn kéo xuống bảng thông báo trên màn hình khóa",
-      "Mới: hỗ trợ ẩn biểu tượng vân tay khi tắt màn hình nhưng vẫn sử dụng được vân tay",
-      "Mới: Dùng vân tay để mở Màn hình chính sau khi mở khóa bằng khuôn mặt thành công và vẫn ở màn hình khóa",
-      "Sửa lỗi đồng hồ nhấp nháy khi dùng vân tay để mở khóa trên trang màn hình luôn bật",
-      "Đã sửa: không thể sử dụng cảm biến vân tay khi bật TalkBack.",
-      "Sửa lỗi: Cảnh báo pin yếu không hiển thị ở chế độ ngang",
-      "Đã sửa: bong bóng thời gian gọi bị chồng lên biểu tượng thông báo",
-      "Đã khắc phục sự cố màn hình nhấp nháy đen khi mở khóa bằng vân tay ở màn hình mật khẩu sau khi chạm vào thông báo trên màn hình khóa.",
-      "Sửa lỗi: đèn thông báo không nhấp nháy khi pin yếu.",
-      "Đã khắc phục sự cố cập nhật trạng thái không kịp thời khi sử dụng mở khóa bằng vân tay trên giao diện mật khẩu màn hình khóa.",
-      "Khắc phục sự cố âm lượng không trở lại sau khi giảm khi nhận thông báo trong lúc phát âm thanh đa phương tiện",
-      "Đã thêm phương thức mở khóa màn hình vào màn hình khóa."
-    ],
     "Màn hình chính": [
       "Sửa lỗi: huy hiệu thông báo hiển thị không chính xác trên biểu tượng WhatsApp."
     ],
@@ -953,6 +1008,25 @@
     ]
   },
   "logs_th": {
+    "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
+      "ใหม่: สามารถใช้ลายนิ้วมือเข้าสู่หน้าจอหลักได้เมื่อปลดล็อกด้วยใบหน้าและยังคงอยู่ที่หน้าจอล็อก",
+      "แก้ไขปัญหานาฬิกากะพริบเมื่อปลดล็อกด้วยลายนิ้วมือในหน้าจอแสดงผลตลอดเวลา",
+      "แก้ไขปัญหาหน้าจอกระพริบเป็นสีดำในหน้าจอรหัสผ่านเมื่อปลดล็อกด้วยลายนิ้วมือหลังจากแตะการแจ้งเตือนบนหน้าจอล็อก",
+      "แก้ไข: ไฟแจ้งเตือนไม่กะพริบเมื่อแบตเตอรี่ต่ำ",
+      "แก้ไข: ระดับเสียงสื่อไม่กลับมาหลังจากลดลงเมื่อมีการแจ้งเตือน",
+      "เพิ่มตัวเลือกปลดล็อกด้วยลายนิ้วมือใต้หน้าจอในหน้าจอรหัสผ่านล็อกหน้าจอ",
+      "ใหม่: ทางลัด NFC ในแผงการแจ้งเตือน",
+      "ใหม่: รองรับการห้ามเลื่อนลงเพื่อเปิดแผงการแจ้งเตือนบนหน้าจอล็อก",
+      "เพิ่ม: รองรับการไม่แสดงไอคอนลายนิ้วมือเมื่อหน้าจอดับ โดยยังใช้งานลายนิ้วมือได้",
+      "ใหม่: ใช้ลายนิ้วมือเข้าสู่หน้าจอหลักเมื่อปลดล็อกด้วยใบหน้าสำเร็จและยังคงอยู่บนหน้าจอล็อก",
+      "แก้ไข: ไม่สามารถใช้เครื่องสแกนลายนิ้วมือได้เมื่อเปิด TalkBack",
+      "แก้ไข: คำเตือนแบตเตอรี่ต่ำไม่แสดงในโหมดแนวนอน",
+      "แก้ไข: ฟองเวลาการโทรทับซ้อนกับไอคอนการแจ้งเตือน",
+      "แก้ไขปัญหาหน้าจอกะพริบเป็นสีดำเมื่อปลดล็อกด้วยลายนิ้วมือบนหน้าจอรหัสผ่านหลังจากแตะการแจ้งเตือนบนหน้าจอล็อก",
+      "แก้ไขปัญหาการอัปเดตสถานะไม่ทันเวลาเมื่อใช้การปลดล็อกด้วยลายนิ้วมือบนหน้าจอรหัสผ่านล็อกสกรีน",
+      "แก้ไขปัญหาที่ระดับเสียงไม่กลับคืนหลังลดลงเมื่อมีการแจ้งเตือนระหว่างเล่นเสียงมีเดีย",
+      "เพิ่มวิธีปลดล็อกหน้าจอในหน้าจอล็อก"
+    ],
     "นาฬิกา": [
       "แก้ไขปัญหาปุ่มในหน้าตัวจับเวลากระพริบเมื่อแตะ",
       "แก้ไขปัญหานาฬิกาหยุดทำงานในวันที่เฉพาะเจาะจง",
@@ -991,22 +1065,7 @@
       "แก้ไข: การวางสายใช้เวลานานกว่าที่คาดไว้",
       "แก้ไข: แถบลอยของการโทรเข้าและแถบสีเขียวของการโทรแสดงพร้อมกัน"
     ],
-    "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
-      "ใหม่: ทางลัด NFC ในแผงการแจ้งเตือน",
-      "ใหม่: รองรับการห้ามเลื่อนลงเพื่อเปิดแผงการแจ้งเตือนบนหน้าจอล็อก",
-      "เพิ่ม: รองรับการไม่แสดงไอคอนลายนิ้วมือเมื่อหน้าจอดับ โดยยังใช้งานลายนิ้วมือได้",
-      "ใหม่: ใช้ลายนิ้วมือเข้าสู่หน้าจอหลักเมื่อปลดล็อกด้วยใบหน้าสำเร็จและยังคงอยู่บนหน้าจอล็อก",
-      "แก้ไขปัญหานาฬิกากะพริบเมื่อปลดล็อกด้วยลายนิ้วมือในหน้าจอแสดงผลตลอดเวลา",
-      "แก้ไข: ไม่สามารถใช้เครื่องสแกนลายนิ้วมือได้เมื่อเปิด TalkBack",
-      "แก้ไข: คำเตือนแบตเตอรี่ต่ำไม่แสดงในโหมดแนวนอน",
-      "แก้ไข: ฟองเวลาการโทรทับซ้อนกับไอคอนการแจ้งเตือน",
-      "แก้ไขปัญหาหน้าจอกะพริบเป็นสีดำเมื่อปลดล็อกด้วยลายนิ้วมือบนหน้าจอรหัสผ่านหลังจากแตะการแจ้งเตือนบนหน้าจอล็อก",
-      "แก้ไข: ไฟแจ้งเตือนไม่กะพริบเมื่อแบตเตอรี่ต่ำ",
-      "แก้ไขปัญหาการอัปเดตสถานะไม่ทันเวลาเมื่อใช้การปลดล็อกด้วยลายนิ้วมือบนหน้าจอรหัสผ่านล็อกสกรีน",
-      "แก้ไขปัญหาที่ระดับเสียงไม่กลับคืนหลังลดลงเมื่อมีการแจ้งเตือนระหว่างเล่นเสียงมีเดีย",
-      "เพิ่มวิธีปลดล็อกหน้าจอในหน้าจอล็อก"
-    ],
-    "หน้าจอหลัก": [
+    "โต๊ะทำงาน": [
       "แก้ไข: การแสดงสัญลักษณ์การแจ้งเตือนบนไอคอน WhatsApp ไม่ถูกต้อง"
     ],
     "เพิ่มความเร็วเกม": [
@@ -1017,6 +1076,25 @@
     ]
   },
   "logs_ar": {
+    "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
+      "جديد: استخدام بصمة الإصبع للانتقال إلى الشاشة الرئيسية عند نجاح فتح القفل بالوجه والبقاء على شاشة القفل",
+      "إصلاح مشكلة وميض الساعة عند استخدام فتح القفل ببصمة الإصبع في صفحة العرض الدائم",
+      "إصلاح مشكلة وميض الشاشة باللون الأسود في شاشة كلمة المرور عند فتح القفل ببصمة الإصبع بعد النقر على إشعار في شاشة القفل",
+      "إصلاح: لم يكن مؤشر الإشعارات يومض عند انخفاض البطارية.",
+      "إصلاح: لم يستعد صوت الوسائط مستواه بعد خفضه عند وصول إشعار",
+      "تمت إضافة خيار فتح القفل ببصمة الإصبع تحت الشاشة في شاشة كلمة مرور القفل",
+      "جديد: اختصار NFC في لوحة الإشعارات",
+      "جديد: دعم منع سحب لوحة الإشعارات على شاشة القفل",
+      "إضافة: دعم عدم عرض أيقونة بصمة الإصبع عند إطفاء الشاشة مع بقاء بصمة الإصبع قابلة للاستخدام",
+      "جديد: استخدام بصمة الإصبع للدخول إلى الشاشة الرئيسية بعد نجاح فتح القفل بالوجه والبقاء على شاشة القفل",
+      "إصلاح: تعذّر استخدام ماسح البصمة عند تشغيل TalkBack",
+      "إصلاح: إشعار انخفاض البطارية لم يظهر في الوضع الأفقي",
+      "إصلاح: تداخل فقاعة مدة المكالمة مع أيقونات الإشعارات",
+      "تم إصلاح مشكلة وميض الشاشة الأسود عند فتح القفل ببصمة الإصبع في شاشة كلمة المرور بعد النقر على إشعار في شاشة القفل.",
+      "إصلاح مشكلة عدم تحديث الحالة في الوقت المناسب عند استخدام فتح القفل ببصمة الإصبع في واجهة كلمة مرور شاشة القفل",
+      "إصلاح مشكلة عدم استعادة مستوى الصوت بعد انخفاضه عند وصول إشعار أثناء تشغيل صوت الوسائط",
+      "تمت إضافة طريقة فتح قفل الشاشة إلى شاشة القفل."
+    ],
     "الساعة": [
       "إصلاح مشكلة وميض زر صفحة المؤقت عند النقر عليه",
       "إصلاح مشكلة تعطل تطبيق الساعة في تواريخ محددة"
@@ -1040,7 +1118,7 @@
       "تحسين: إعادة تصميم الصفحة الرئيسية لخدمة السحابة، وعرض المساحة المتاحة بشكل أكثر وضوحًا",
       "تحسين: تم تحسين الصفحة الرئيسية الجديدة لـ Mi Cloud، وأصبحت معلومات التخزين السحابي أكثر وضوحًا."
     ],
-    "أخرى": [
+    "آخرين": [
       "إصلاح: تعذّر إيقاف شاشة Always-on في الوقت المحدد"
     ],
     "النظام": [
@@ -1051,22 +1129,7 @@
       "إصلاح: استغرق إنهاء المكالمات وقتًا أطول من المتوقع",
       "إصلاح: ظهور شريط المكالمة العائم والشريط الأخضر للمكالمة في الوقت نفسه."
     ],
-    "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
-      "جديد: اختصار NFC في لوحة الإشعارات",
-      "جديد: دعم منع سحب لوحة الإشعارات على شاشة القفل",
-      "إضافة: دعم عدم عرض أيقونة بصمة الإصبع عند إطفاء الشاشة مع بقاء بصمة الإصبع قابلة للاستخدام",
-      "جديد: استخدام بصمة الإصبع للدخول إلى الشاشة الرئيسية بعد نجاح فتح القفل بالوجه والبقاء على شاشة القفل",
-      "إصلاح مشكلة وميض الساعة عند استخدام فتح القفل ببصمة الإصبع في صفحة العرض الدائم",
-      "إصلاح: تعذّر استخدام ماسح البصمة عند تشغيل TalkBack",
-      "إصلاح: إشعار انخفاض البطارية لم يظهر في الوضع الأفقي",
-      "إصلاح: تداخل فقاعة مدة المكالمة مع أيقونات الإشعارات",
-      "تم إصلاح مشكلة وميض الشاشة الأسود عند فتح القفل ببصمة الإصبع في شاشة كلمة المرور بعد النقر على إشعار في شاشة القفل.",
-      "إصلاح: لم يكن مؤشر الإشعارات يومض عند انخفاض البطارية.",
-      "إصلاح مشكلة عدم تحديث الحالة في الوقت المناسب عند استخدام فتح القفل ببصمة الإصبع في واجهة كلمة مرور شاشة القفل",
-      "إصلاح مشكلة عدم استعادة مستوى الصوت بعد انخفاضه عند وصول إشعار أثناء تشغيل صوت الوسائط",
-      "تمت إضافة طريقة فتح قفل الشاشة إلى شاشة القفل."
-    ],
-    "الشاشة الرئيسية": [
+    "سطح المكتب": [
       "إصلاح: عرض شارات الإشعارات بشكل غير صحيح على أيقونة WhatsApp"
     ],
     "ساعة": [
@@ -1086,6 +1149,25 @@
     ]
   },
   "logs_in": {
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
+      "नया: चेहरे से अनलॉक होने और लॉक स्क्रीन पर रहने पर फ़िंगरप्रिंट से होम स्क्रीन पर जाने की सुविधा",
+      "ऑलवेज-ऑन डिस्प्ले पेज पर फिंगरप्रिंट से अनलॉक करते समय घड़ी के झिलमिलाने की समस्या ठीक की गई",
+      "लॉक स्क्रीन पर सूचना टैप करने के बाद पासवर्ड स्क्रीन पर फ़िंगरप्रिंट से अनलॉक करते समय काली झिलमिलाहट की समस्या ठीक की गई",
+      "ठीक किया गया: बैटरी कम होने पर सूचना LED नहीं ब्लिंक होती थी।",
+      "ठीक किया गया: सूचना आने पर मीडिया की आवाज़ कम होने के बाद बहाल नहीं होती थी",
+      "लॉक स्क्रीन पासवर्ड स्क्रीन पर अंडर-डिस्प्ले फिंगरप्रिंट अनलॉक विकल्प जोड़ा गया",
+      "नया: सूचना शेड में NFC शॉर्टकट",
+      "नया: लॉक स्क्रीन पर नोटिफ़िकेशन शेड को नीचे खींचकर खोलने से रोकें",
+      "नया: स्क्रीन बंद होने पर फ़िंगरप्रिंट आइकन छिपाने का समर्थन, लेकिन फ़िंगरप्रिंट उपलब्ध रहेगा",
+      "नया: चेहरे से अनलॉक सफल होने और लॉक स्क्रीन पर रहने पर फ़िंगरप्रिंट से होम स्क्रीन खोलें",
+      "ठीक किया गया: TalkBack चालू होने पर फ़िंगरप्रिंट स्कैनर का उपयोग नहीं किया जा सकता था।",
+      "ठीक करें: लैंडस्केप मोड में कम बैटरी चेतावनी प्रदर्शित नहीं हुई",
+      "ठीक किया गया: कॉल अवधि बबल नोटिफ़िकेशन आइकन के साथ ओवरलैप हो रहा था",
+      "लॉक स्क्रीन पर नोटिफ़िकेशन टैप करने के बाद पासवर्ड स्क्रीन पर फ़िंगरप्रिंट से अनलॉक करते समय होने वाली काली स्क्रीन फ़्लिकर की समस्या ठीक की गई।",
+      "लॉक स्क्रीन पासवर्ड इंटरफ़ेस पर फ़िंगरप्रिंट अनलॉक का उपयोग करते समय स्थिति समय पर अपडेट न होने की समस्या ठीक की गई।",
+      "मीडिया ऑडियो चलने के दौरान सूचना आने पर आवाज़ कम होने के बाद बहाल न होने की समस्या ठीक की गई",
+      "लॉक स्क्रीन में स्क्रीन अनलॉक करने का तरीका जोड़ा गया।"
+    ],
     "घड़ी": [
       "टाइमर पेज पर बटन टैप करने पर झिलमिलाने की समस्या ठीक की गई",
       "कुछ खास तारीखों पर घड़ी के क्रैश होने की समस्या ठीक की गई",
@@ -1124,22 +1206,7 @@
       "ठीक किया गया: कॉल समाप्त करने में अपेक्षा से अधिक समय लगा",
       "फ़िक्स: इनकमिंग कॉल फ़्लोटिंग बार और कॉल ग्रीन बार का एक ही समय पर दिखना।"
     ],
-    "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
-      "नया: सूचना शेड में NFC शॉर्टकट",
-      "नया: लॉक स्क्रीन पर नोटिफ़िकेशन शेड को नीचे खींचकर खोलने से रोकें",
-      "नया: स्क्रीन बंद होने पर फ़िंगरप्रिंट आइकन छिपाने का समर्थन, लेकिन फ़िंगरप्रिंट उपलब्ध रहेगा",
-      "नया: चेहरे से अनलॉक सफल होने और लॉक स्क्रीन पर रहने पर फ़िंगरप्रिंट से होम स्क्रीन खोलें",
-      "ऑलवेज-ऑन डिस्प्ले पेज पर फिंगरप्रिंट से अनलॉक करते समय घड़ी के झिलमिलाने की समस्या ठीक की गई",
-      "ठीक किया गया: TalkBack चालू होने पर फ़िंगरप्रिंट स्कैनर का उपयोग नहीं किया जा सकता था।",
-      "ठीक करें: लैंडस्केप मोड में कम बैटरी चेतावनी प्रदर्शित नहीं हुई",
-      "ठीक किया गया: कॉल अवधि बबल नोटिफ़िकेशन आइकन के साथ ओवरलैप हो रहा था",
-      "लॉक स्क्रीन पर नोटिफ़िकेशन टैप करने के बाद पासवर्ड स्क्रीन पर फ़िंगरप्रिंट से अनलॉक करते समय होने वाली काली स्क्रीन फ़्लिकर की समस्या ठीक की गई।",
-      "ठीक किया गया: बैटरी कम होने पर सूचना LED नहीं ब्लिंक होती थी।",
-      "लॉक स्क्रीन पासवर्ड इंटरफ़ेस पर फ़िंगरप्रिंट अनलॉक का उपयोग करते समय स्थिति समय पर अपडेट न होने की समस्या ठीक की गई।",
-      "मीडिया ऑडियो चलने के दौरान सूचना आने पर आवाज़ कम होने के बाद बहाल न होने की समस्या ठीक की गई",
-      "लॉक स्क्रीन में स्क्रीन अनलॉक करने का तरीका जोड़ा गया।"
-    ],
-    "होम स्क्रीन": [
+    "डेस्कटॉप": [
       "WhatsApp आइकन पर नोटिफ़िकेशन बैज गलत तरीके से दिखने की समस्या ठीक की गई।"
     ],
     "गेम स्पीड बूस्टर": [
@@ -1156,12 +1223,10 @@
       "Timer بېتىدىكى كۇنۇپكىلارنى چەككەندە پارقىراش مەسىلىسى تۈزىتىلدى.",
       "سائەت ئالاھىدە كۈنلەردە يېپىلىپ قېلىش مەسىلىسى تۈزىتىلدى."
     ],
-    "كامېرا": [
+    "فوتو ئاپپارات": [
       "يېڭىدىن قوشۇلدى: AI كامېرا كۆرۈنۈشلىرى: ئاي ھالىتى، مۇنار، گۇرۇپپا سۈرەت",
       "تۈزىتىلدى: سىن ئېلىش ھالىتىدە چېكىنىپ قايتا كىرگەندە كامېرا چوقۇم تاقىلىپ قېلىش مەسىلىسى تۈزىتىلدى.",
-      "تۈزىتىش: ئۇچۇر ئەپىدە كامېرا ئارقىلىق سۈرەت تارتىۋاتقاندا «بىكار قىلىش»نى باسقاندىن كېيىن، كامېرانى قايتا تاللىغاندا كامېرا كاشىلىسى كۆرۈلدى.",
-      "سىن ئېلىش جەريانىدا چېكىپ قايتا كىرگەندە چوقۇم كۆرۈلىدىغان كامېرا تۇيۇقسىز تاقىلىش مەسىلىسىنى تۈزەتتى",
-      "قىسقا ئۇچۇر كامېرا ئارقىلىق سۈرەت تارتقاندا بىكار قىلىشنى باسقاندىن كېيىن، كامېرنى قايتا تاللىغاندا كامېرا كاشىلىسى كۆرۈلۈش مەسىلىسى ئوڭشالدى."
+      "تۈزىتىش: ئۇچۇر ئەپىدە كامېرا ئارقىلىق سۈرەت تارتىۋاتقاندا «بىكار قىلىش»نى باسقاندىن كېيىن، كامېرانى قايتا تاللىغاندا كامېرا كاشىلىسى كۆرۈلدى."
     ],
     "تەڭشەك": [
       "ئەلالاشتۇرۇش: چوڭ خەتلىك كۆرۈنمە يۈزىنىڭ كۆرسىتىش ئۈنۈمى"
@@ -1176,6 +1241,9 @@
     "Xiaomi بۇلۇت مۇلازىمىتى": [
       "ياخشىلاندى: بۇلۇت مۇلازىمىتى باش بېتى قايتا لايىھەلەندى، ئىشلەتكىلى بولىدىغان بوشلۇق كۆرسىتىلىشى تېخىمۇ كۆرۈنەرلىك بولدى.",
       "ياخشىلاندى: بۇلۇت مۇلازىمىتىنىڭ يېڭى باش بېتى، بۇلۇت بوشلۇقى ئۇچۇرى تېخىمۇ ئېنىق كۆرسىتىلىدۇ."
+    ],
+    "باشقىلىرى": [
+      "ئېكران ئۆچۈپ تۇرغاندا كۆرسىتىلىدىغان مەزمۇننى بەلگىلەنگەن ۋاقىتتا ئۆچۈرەلمەسلىك مەسىلىسى تۈزىتىلدى"
     ],
     "سىستېما": [
       "ئەلالاشتۇرۇش: Google بىخەتەرلىك يامىقى (2019#4) يېڭىلاندى، سىستېما بىخەتەرلىكى يۇقىرى كۆتۈرۈلدى.",
@@ -1200,8 +1268,13 @@
       "مېدىيا ئاۋازى قويۇلۇۋاتقاندا ئۇقتۇرۇش كەلگەندە، ئاۋاز كىچىكلەپ قالغاندىن كېيىن ئەسلىگە قايتمايدىغان مەسىلە ئوڭشالدى",
       "قۇلۇپ ئېكرانىغا ئېكراننى ئېچىش ئۇسۇلى قوشۇلدى."
     ],
-    "باش ئېكران": [
+    "ئۈستەل يۈزى": [
       "WhatsApp سىنبەلگىسىدىكى ئۇقتۇرۇش بەلگىسىنىڭ خاتا كۆرسىتىلىش مەسىلىسى تۈزىتىلدى."
+    ],
+    "كامېرا": [
+      "يېڭىدىن قوشۇلدى: AI كامېرا كۆرۈنۈشلىرى: ئاي ھالىتى، مۇنار، گۇرۇپپا سۈرەت",
+      "سىن ئېلىش جەريانىدا چېكىپ قايتا كىرگەندە چوقۇم كۆرۈلىدىغان كامېرا تۇيۇقسىز تاقىلىش مەسىلىسىنى تۈزەتتى",
+      "قىسقا ئۇچۇر كامېرا ئارقىلىق سۈرەت تارتقاندا بىكار قىلىشنى باسقاندىن كېيىن، كامېرنى قايتا تاللىغاندا كامېرا كاشىلىسى كۆرۈلۈش مەسىلىسى ئوڭشالدى."
     ],
     "تەڭشەكلەر": [
       "تۈزېتىش: ئۇقتۇرۇش ستونىنى تارتىپ چۈشۈرۈپ ماسقەدەملەشنى ئېچىش ياكى تاقاش ئارقىلىق ماسقەدەملەش كۆرۈنمە يۈزىنىڭ يېڭىلانماسلىق مەسىلىسى"
@@ -1212,12 +1285,10 @@
       "Fix: Timer button started flashing after being tapped",
       "ཆུ་ཚོད་ཀྱིས་ཉིན་མོ་དམིགས་བསལ་ཁག་ཅིག་ལ་འཐོར་འགྲོ་བའི་གནད་དོན་བཅོས་སྒྲིག་བྱས་པ།"
     ],
-    "པར་ཆས": [
+    "ཁ་མར།": [
       "New: New modes for AI camera",
       "གསོ་བཅོས། བརྙན་ལེན་གྱི་ཐབས་ལམ་ནས་ཕྱིར་ཐོན་ནས་ཡང་བསྐྱར་འཛུལ་བའི་སྐབས་སུ་པར་ཆས་ཐད་ཀར་ཚུལ་མིན་ཐོན་པ།",
-      "བཅོས་བཟོ། འཕྲིན་ཐུང་ནས་པར་ཆས་བཀོལ་ནས་པར་བླངས་སྐབས་འདོར་བ་མནན་པ་དང་། ཡང་བསྐྱར་པར་ཆས་འདེམས་པ་ན་པར་ཆས་ལ་སྐྱོན་འབྱུང་བ།",
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode",
-      "ཐུང་འཕྲིན་གྱིས་པར་ཆས་བེད་སྤྱད་དེ་པར་བརྒྱབ་སྐབས་རྩིས་མེད་ལ་མནན་པ་དང་། ཡང་བསྐྱར་པར་ཆས་འདེམས་པ་ན་པར་ཆས་ལ་སྐྱོན་འབྱུང་བ་སེལ་བ།"
+      "བཅོས་བཟོ། འཕྲིན་ཐུང་ནས་པར་ཆས་བཀོལ་ནས་པར་བླངས་སྐབས་འདོར་བ་མནན་པ་དང་། ཡང་བསྐྱར་པར་ཆས་འདེམས་པ་ན་པར་ཆས་ལ་སྐྱོན་འབྱུང་བ།"
     ],
     "སྒྲིག་སྟངས།": [
       "Optimization: Big fonts are displayed better now"
@@ -1256,12 +1327,17 @@
       "Fix: Media playback volume couldn't be restored after it was lowered by an incoming notification",
       "Fingerprint unlock option on the Lock screen"
     ],
-    "Home screen": [
+    "ཅོག་ངོས": [
       "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
     ],
     "ཆུ་ཚོད": [
       "དུས་ཚོད་འཛིན་ཆས་ཀྱི་ཤོག་ངོས་སུ་མཐེབ་གནོན་ནོན་སྐབས་འཕྲོ་འཕྲོ་བྱེད་པའི་གནད་དོན་བཅོས་པ།",
       "Fix: Clock force closed on some specific dates"
+    ],
+    "པར་ཆས": [
+      "New: New modes for AI camera",
+      "Fix: Camera force closed when the app was closed and opened again in the Video mode",
+      "ཐུང་འཕྲིན་གྱིས་པར་ཆས་བེད་སྤྱད་དེ་པར་བརྒྱབ་སྐབས་རྩིས་མེད་ལ་མནན་པ་དང་། ཡང་བསྐྱར་པར་ཆས་འདེམས་པ་ན་པར་ཆས་ལ་སྐྱོན་འབྱུང་བ་སེལ་བ།"
     ],
     "སྒྲིག་བཀོད": [
       "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade"

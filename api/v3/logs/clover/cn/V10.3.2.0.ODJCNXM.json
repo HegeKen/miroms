@@ -40,6 +40,12 @@
     ]
   },
   "logs_en": {
+    "Lockscreen, Status Bar, Notification Bar": [
+      "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
+      "Optimized the drawing experience for pattern passwords",
+      "Fixed an issue where the VPN icon displayed abnormally",
+      "Fix: Battery-related floating notifications weren't displayed correctly in landscape mode"
+    ],
     "Clock": [
       "Fix: Timer button started flashing after being tapped",
       "Fix: Clock force closed on some specific dates"
@@ -60,18 +66,25 @@
     "Recents": [
       "Optimization: App names were truncated when texts size was set to large"
     ],
+    "Mi Cloud": [
+      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!",
+      "Fix: Unified Find Device text: Pad/tablet"
+    ],
     "Lockscreen, status bar, Notification shade": [
       "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
       "Fix: Battery-related floating notifications weren't displayed correctly in landscape mode"
-    ],
-    "Mi Cloud": [
-      "Optimization: We redesigned Mi Cloud's start page. It looks much better now!"
     ],
     "Other": [
       "Improved system security and stability"
     ]
   },
   "logs_zh_tw": {
+    "解鎖畫面、狀態欄、通知欄": [
+      "新增 人臉解鎖成功並停留在鎖屏上時，可通過指紋進入桌面的功能",
+      "優化 圖形密碼的繪製體驗",
+      "修復 VPN 圖示顯示異常的問題",
+      "修復 橫向螢幕狀況下未即時顯示低電量懸浮通知的問題"
+    ],
     "時鐘": [
       "修復 計時器頁面按鈕點擊閃爍的問題",
       "修復 時鐘在特殊日期出現閃退的問題"
@@ -84,7 +97,7 @@
       "優化 15天趨勢介面適配",
       "優化 大字體和螢幕密度相關問題"
     ],
-    "設定": [
+    "设置": [
       "優化 設置頁的系統應用與更多應用的文案和圖標",
       "優化 大字體介面的顯示效果",
       "修復 字體調節後，圖標顯示異常的問題"
@@ -92,18 +105,26 @@
     "近期任務": [
       "優化 應用名稱的顯示長度，改良大字體的顯示效果"
     ],
-    "解鎖畫面、狀態欄、通知欄": [
-      "新增 人臉解鎖成功並停留在鎖屏上時，可通過指紋進入桌面的功能",
-      "修復 橫向螢幕狀況下未即時顯示低電量懸浮通知的問題"
-    ],
     "小米雲服務": [
-      "優化 雲服務首頁重新設計，雲端可用空間顯示更加直觀"
+      "優化 雲服務首頁重新設計，雲端可用空間顯示更加直觀",
+      "修復 統一「尋找裝置」文案：Pad/平板"
     ],
     "其他": [
       "Improved system security and stability"
+    ],
+    "設定": [
+      "優化 大字體介面的顯示效果",
+      "修復 字體調節後，圖標顯示異常的問題",
+      "優化 設置頁的系統應用與更多應用的文案和圖標"
     ]
   },
   "logs_ja": {
+    "ロック画面、ステータスバー、通知バー": [
+      "新機能: 顔認証でロック解除後、ロック画面に留まっている場合に指紋でホーム画面へ進める機能",
+      "パターンパスワードの描画体験を最適化",
+      "VPNアイコンの表示異常を修正しました",
+      "横画面時に低バッテリーのフローティング通知が適時に表示されない問題を修正"
+    ],
     "時計": [
       "タイマーページのボタンをタップした際に点滅する問題を修正",
       "特定の日付で時計が強制終了する問題を修正",
@@ -123,12 +144,13 @@
     "最近のタスク": [
       "最適化：テキストサイズを大きくするとアプリ名が切り詰められる問題"
     ],
+    "Xiaomi クラウドサービス": [
+      "最適化: クラウドサービスのホームページを再設計し、空き容量がより分かりやすく表示されるようになりました。",
+      "修正: 「デバイスを探す」の文言を統一: Pad/タブレット"
+    ],
     "ロック画面、ステータスバー、通知シェード": [
       "新機能: 顔認証でロック解除後、ロック画面に留まっている場合に指紋でホーム画面へ進める機能",
       "横画面時に低バッテリーのフローティング通知が適時に表示されない問題を修正"
-    ],
-    "Xiaomi クラウドサービス": [
-      "最適化: クラウドサービスのホームページを再設計し、空き容量がより分かりやすく表示されるようになりました。"
     ],
     "その他": [
       "システムのセキュリティと安定性の向上"
@@ -139,6 +161,12 @@
     ]
   },
   "logs_ko": {
+    "잠금 화면, 상태 표시줄, 알림 표시줄": [
+      "새 기능: 얼굴 인식으로 잠금 해제 후 잠금 화면에 머무를 때 지문으로 홈 화면에 진입하는 기능",
+      "패턴 비밀번호 그리기 환경 최적화",
+      "VPN 아이콘이 비정상적으로 표시되는 문제를 수정했습니다",
+      "가로 모드에서 배터리 부족 플로팅 알림이 제때 표시되지 않던 문제를 수정"
+    ],
     "시계": [
       "타이머 페이지에서 버튼을 탭할 때 깜박이는 문제를 수정했습니다",
       "특정 날짜에 시계가 강제 종료되는 문제 수정",
@@ -158,12 +186,13 @@
     "최근 작업": [
       "최적화: 텍스트 크기를 크게 설정하면 앱 이름이 잘리던 문제"
     ],
+    "Xiaomi 클라우드 서비스": [
+      "최적화: 클라우드 서비스 홈페이지를 재설계하여 사용 가능한 공간이 더 직관적으로 표시됩니다.",
+      "수정: \"내 기기 찾기\" 문구 통일: Pad/태블릿"
+    ],
     "잠금화면, 상태 바, 알림 바": [
       "새 기능: 얼굴 인식으로 잠금 해제 후 잠금 화면에 머무를 때 지문으로 홈 화면에 진입하는 기능",
       "가로 모드에서 배터리 부족 플로팅 알림이 제때 표시되지 않던 문제를 수정"
-    ],
-    "Xiaomi 클라우드 서비스": [
-      "최적화: 클라우드 서비스 홈페이지를 재설계하여 사용 가능한 공간이 더 직관적으로 표시됩니다."
     ],
     "기타": [
       "시스템 보안 및 안정성 개선"
@@ -174,6 +203,12 @@
     ]
   },
   "logs_ru": {
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Новое: Используйте отпечаток пальца, чтобы перейти на рабочий стол после того, как вы разблокировали устройство при помощи данных лица и остались на экране блокировки",
+      "Оптимизирован процесс рисования графического ключа",
+      "Исправлена проблема с некорректным отображением значка VPN",
+      "Исправлено: Всплывающие уведомления, связанные с аккумулятором, не отображались правильно в режиме альбомной ориентации"
+    ],
     "Часы": [
       "Исправлено: Кнопка таймера начинала мигать после нажатия",
       "Исправлено: Некорректное завершение работы приложения Часы в определенные дни"
@@ -186,12 +221,9 @@
     "Недавнее": [
       "Оптимизация: Имена приложений отображались не полностью, когда был выбран большой размер текста"
     ],
-    "Экран блокировки, строка состояния, шторка уведомлений": [
-      "Новое: Используйте отпечаток пальца, чтобы перейти на рабочий стол после того, как вы разблокировали устройство при помощи данных лица и остались на экране блокировки",
-      "Исправлено: Всплывающие уведомления, связанные с аккумулятором, не отображались правильно в режиме альбомной ориентации"
-    ],
     "Облачный сервис Xiaomi": [
-      "Оптимизация: Мы переработали начальную страницу Mi Cloud. Теперь она выглядит намного лучше!"
+      "Оптимизация: Мы переработали начальную страницу Mi Cloud. Теперь она выглядит намного лучше!",
+      "Исправлено: унифицирован текст «Найти устройство»: Pad/планшет"
     ],
     "Другое": [
       "Улучшение безопасности и стабильности системы"
@@ -206,6 +238,12 @@
     ]
   },
   "logs_uk": {
+    "Екран блокування, рядок стану, рядок сповіщень": [
+      "Нове: Перехід на головний екран відбитком пальця, якщо пристрій розблоковано обличчям і залишено на екрані блокування",
+      "Оптимізовано процес малювання графічного ключа",
+      "Виправлено проблему з ненормальним відображенням значка VPN",
+      "Виправлено проблему, коли плаваюче сповіщення про низький заряд батареї не відображалося вчасно в горизонтальному режимі"
+    ],
     "Годинник": [
       "Виправлено: кнопка на сторінці таймера блимає після натискання",
       "Виправлено: Годинник аварійно завершував роботу в окремі дати",
@@ -225,19 +263,26 @@
     "Останні завдання": [
       "Оптимізовано довжину відображення назв застосунків і ефект відображення великого шрифту"
     ],
+    "Хмарний сервіс Xiaomi": [
+      "Оптимізація: головну сторінку хмарного сервісу перероблено, доступний простір тепер відображається більш наочно.",
+      "Виправлено: уніфіковано текст «Знайти пристрій»: Pad/планшет"
+    ],
     "Екран блокування, рядок стану, панель сповіщень": [
       "Нове: Перехід на головний екран відбитком пальця, якщо пристрій розблоковано обличчям і залишено на екрані блокування",
       "Виправлено проблему, коли плаваюче сповіщення про низький заряд батареї не відображалося вчасно в горизонтальному режимі",
       "Нове: Використовувати відбиток пальця для переходу на головний екран після успішного розблокування обличчям із затримкою на екрані блокування"
-    ],
-    "Хмарний сервіс Xiaomi": [
-      "Оптимізація: головну сторінку хмарного сервісу перероблено, доступний простір тепер відображається більш наочно."
     ],
     "Інше": [
       "Покращення безпеки та стабільності системи"
     ]
   },
   "logs_pl": {
+    "Ekran blokady, pasek stanu, pasek powiadomień": [
+      "Nowość: Możliwość przejścia do ekranu głównego odciskiem palca po odblokowaniu twarzą i pozostaniu na ekranie blokady",
+      "Zoptymalizowano rysowanie hasła graficznego",
+      "Naprawiono problem z nieprawidłowym wyświetlaniem ikony VPN",
+      "Naprawiono problem z nieterminowym wyświetlaniem pływającego powiadomienia o niskim poziomie baterii w trybie poziomym"
+    ],
     "Zegar": [
       "Poprawka: przycisk na stronie minutnika miga po dotknięciu",
       "Naprawiono: Zegar ulegał awarii w określonych datach",
@@ -257,14 +302,15 @@
     "Ostatnie zadania": [
       "Zoptymalizowano długość wyświetlania nazw aplikacji i efekt wyświetlania dużych czcionek"
     ],
+    "Usługa w chmurze Xiaomi": [
+      "Optymalizacja: przeprojektowano stronę główną usługi w chmurze; dostępna przestrzeń jest teraz wyświetlana bardziej intuicyjnie.",
+      "Poprawiono: ujednolicono tekst „Znajdź urządzenie”: Pad/tablet"
+    ],
     "Ekran blokady, pasek powiadomień,panel powiadomień": [
       "Nowość: Możliwość przejścia do ekranu głównego odciskiem palca po odblokowaniu twarzą i pozostaniu na ekranie blokady",
       "Naprawiono problem z nieterminowym wyświetlaniem pływającego powiadomienia o niskim poziomie baterii w trybie poziomym"
     ],
-    "Usługa w chmurze Xiaomi": [
-      "Optymalizacja: przeprojektowano stronę główną usługi w chmurze; dostępna przestrzeń jest teraz wyświetlana bardziej intuicyjnie."
-    ],
-    "Inne": [
+    "Reszt": [
       "Większe bezpieczeństwo i stabilność systemu"
     ],
     "Ekran blokady, pasek stanu, panel powiadomień": [
@@ -273,6 +319,12 @@
     ]
   },
   "logs_de": {
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
+      "Neu: Nach erfolgreicher Gesichtserkennung auf dem Sperrbildschirm per Fingerabdruck zum Startbildschirm wechseln",
+      "Zeichnungserlebnis der Mustersperre optimiert",
+      "Das Problem mit der fehlerhaften Anzeige des VPN-Symbols wurde behoben",
+      "Behebung: Bei niedrigem Akkustand wurde im Querformat die schwebende Benachrichtigung nicht rechtzeitig angezeigt"
+    ],
     "Uhr": [
       "Behebung: Schaltfläche auf der Timer-Seite blinkt nach dem Antippen",
       "Behoben: Uhr stürzte an bestimmten Daten ab",
@@ -292,12 +344,13 @@
     "Letzte Aufgaben": [
       "Optimierung: App-Namen wurden abgeschnitten, wenn die Textgröße auf groß eingestellt war"
     ],
+    "Xiaomi Cloud-Dienst": [
+      "Optimierung: Die Startseite des Cloud-Dienstes wurde neu gestaltet; der verfügbare Speicher wird jetzt intuitiver angezeigt.",
+      "Behoben: Text für „Gerät finden“ vereinheitlicht: Pad/Tablet"
+    ],
     "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
       "Neu: Nach erfolgreicher Gesichtserkennung auf dem Sperrbildschirm per Fingerabdruck zum Startbildschirm wechseln",
       "Behebung: Bei niedrigem Akkustand wurde im Querformat die schwebende Benachrichtigung nicht rechtzeitig angezeigt"
-    ],
-    "Xiaomi Cloud-Dienst": [
-      "Optimierung: Die Startseite des Cloud-Dienstes wurde neu gestaltet; der verfügbare Speicher wird jetzt intuitiver angezeigt."
     ],
     "Sonstiges": [
       "Systemsicherheit und -stabilität verbessert"
@@ -308,6 +361,12 @@
     ]
   },
   "logs_fr": {
+    "Écran de verrouillage, barre d’état, barre de notifications": [
+      "Nouveau Utilisez votre empreinte digitale pour ouvrir l'écran d'accueil une fois que vous avez déverrouillé l'appareil à l'aide des données du visage et que vous êtes resté sur l'écran de verrouillage",
+      "Expérience de dessin du motif de déverrouillage optimisée",
+      "Correction du problème d'affichage anormal de l'icône VPN",
+      "Réparé: Les notifications flottantes relatives à la batterie n'étaient pas affichées correctement en mode paysage"
+    ],
     "Horloge": [
       "Correction : le bouton de la page Minuteur clignote après un appui",
       "Correction : l'horloge plantait à certaines dates",
@@ -327,12 +386,13 @@
     "Tâches récentes": [
       "Optimisation : Les noms d'applications étaient tronqués lorsque la taille du texte était définie sur grande"
     ],
+    "Service cloud Xiaomi": [
+      "Optimisation: Nous avons repensé la page de démarrage de Mi Cloud. Ça a l'air beaucoup mieux maintenant!",
+      "Correction : texte « Localiser l’appareil » unifié : Pad/tablette"
+    ],
     "Écran de verrouillage, Barre d'état, Panneau de notification": [
       "Nouveau Utilisez votre empreinte digitale pour ouvrir l'écran d'accueil une fois que vous avez déverrouillé l'appareil à l'aide des données du visage et que vous êtes resté sur l'écran de verrouillage",
       "Réparé: Les notifications flottantes relatives à la batterie n'étaient pas affichées correctement en mode paysage"
-    ],
-    "Service cloud Xiaomi": [
-      "Optimisation: Nous avons repensé la page de démarrage de Mi Cloud. Ça a l'air beaucoup mieux maintenant!"
     ],
     "Autre": [
       "Sécurité et stabilité du système améliorées"
@@ -343,6 +403,12 @@
     ]
   },
   "logs_it": {
+    "Schermata di blocco, barra di stato, barra delle notifiche": [
+      "Nuovo: Accedi alla schermata Home usando l'impronta digitale dopo aver sbloccato il dispositivo con i dati del volto restando sulla schermata di blocco.",
+      "Esperienza di disegno dello schema di sblocco ottimizzata",
+      "Risolto il problema della visualizzazione anomala dell'icona VPN",
+      "Risolto: Le notifiche a comparsa relative alla batteria non erano visualizzate correttamente in modalità orizzontale"
+    ],
     "Orologio": [
       "Risolvi: Il pulsante del timer cominciava a lampeggiare quando veniva premuto",
       "Risolvi: Chiusura forzata di Orologio in alcune date specifiche",
@@ -362,12 +428,13 @@
     "Recenti": [
       "Ottimizzazione: I nomi delle app venivano troncati quando la dimensione del testo era impostata su L"
     ],
+    "Servizio cloud Xiaomi": [
+      "Ottimizzazione: Abbiamo ridisegnato la pagina iniziale di Mi Cloud. Ora è molto meglio!",
+      "Corretto: testo di \"Trova dispositivo\" unificato: Pad/tablet"
+    ],
     "Schermata di blocco, barra di stato, area delle notifiche": [
       "Nuovo: Accedi alla schermata Home usando l'impronta digitale dopo aver sbloccato il dispositivo con i dati del volto restando sulla schermata di blocco.",
       "Risolto: Le notifiche a comparsa relative alla batteria non erano visualizzate correttamente in modalità orizzontale"
-    ],
-    "Servizio cloud Xiaomi": [
-      "Ottimizzazione: Abbiamo ridisegnato la pagina iniziale di Mi Cloud. Ora è molto meglio!"
     ],
     "Altro": [
       "Maggiore sicurezza e stabilità di sistema"
@@ -378,6 +445,12 @@
     ]
   },
   "logs_es": {
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Nuevo: Usa tu huella dactilar para abrir la Pantalla de inicio después de haber desbloqueado el dispositivo usando tus datos faciales y haber permanecido en la Pantalla de bloqueo",
+      "Experiencia de dibujo del patrón de desbloqueo optimizada",
+      "Se corrigió el problema de visualización anómala del icono de VPN",
+      "Reparado: Las notificaciones flotantes relacionadas con la batería no se mostraban correctamente en el modo paisaje"
+    ],
     "Reloj": [
       "Reparar: El botón del temporizador comenzó a parpadear después de ser pulsado",
       "Reparar: Cierre forzoso del Reloj en algunas fechas específicas",
@@ -389,7 +462,7 @@
       "Optimización: adaptación de la interfaz de tendencia de 15 días",
       "Optimización: problemas relacionados con el tamaño de fuente grande y la densidad de pantalla"
     ],
-    "Ajustes": [
+    "Configuración": [
       "Optimización: Textos e iconos de Aplicaciones del sistema y Más aplicaciones en Ajustes",
       "Optimización: Las fuentes grandes ahora se muestran mejor",
       "Reparado: Los iconos no eran mostrados correctamente después de ajustar las fuentes"
@@ -397,15 +470,17 @@
     "Recientes": [
       "Optimización: Los nombres de aplicaciones fueron reducidos cuando el tamaño del texto fue establecido como grande"
     ],
-    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
-      "Nuevo: Usa tu huella dactilar para abrir la Pantalla de inicio después de haber desbloqueado el dispositivo usando tus datos faciales y haber permanecido en la Pantalla de bloqueo",
-      "Reparado: Las notificaciones flotantes relacionadas con la batería no se mostraban correctamente en el modo paisaje"
-    ],
     "Servicio en la nube de Xiaomi": [
-      "Optimización: Hemos rediseñado la página de inicio de Mi Nube. ¡Ahora tiene mucho mejor aspecto!"
+      "Optimización: Hemos rediseñado la página de inicio de Mi Nube. ¡Ahora tiene mucho mejor aspecto!",
+      "Corregido: texto de \"Buscar dispositivo\" unificado: Pad/tableta"
     ],
     "Otros": [
       "Estabilidad y seguridad del sistema mejorada"
+    ],
+    "Ajustes": [
+      "Optimización: Las fuentes grandes ahora se muestran mejor",
+      "Reparado: Los iconos no eran mostrados correctamente después de ajustar las fuentes",
+      "Optimización: Textos e iconos de Aplicaciones del sistema y Más aplicaciones en Ajustes"
     ],
     "Pantalla de bloqueo, barra de estado, panel de notificaciones": [
       "Nuevo: Usa tu huella dactilar para abrir la Pantalla de inicio después de haber desbloqueado el dispositivo usando tus datos faciales y haber permanecido en la Pantalla de bloqueo",
@@ -413,6 +488,12 @@
     ]
   },
   "logs_pt": {
+    "Tela de bloqueio, barra de status, barra de notificações": [
+      "Novo Use sua impressão digital para abrir a Tela inicial quando você desbloquear o dispositivo usando o desbloqueio facial e ficar na Tela de bloqueio",
+      "Experiência de desenho do padrão de desbloqueio otimizada",
+      "Corrigido o problema de exibição anormal do ícone de VPN",
+      "Correção: Notificações flutuantes sobre a bateria não eram exibidas corretamente em modo paisagem"
+    ],
     "Relógio": [
       "Correção: o botão da página do temporizador pisca ao ser tocado",
       "Correção: o Relógio fechava à força em datas específicas",
@@ -432,12 +513,13 @@
     "Tarefas recentes": [
       "Otimizado o comprimento de exibição dos nomes dos apps e o efeito de exibição de fontes grandes"
     ],
+    "Serviço de nuvem Xiaomi": [
+      "Otimização: Nós redesenhamos a página inicial da Mi Cloud. Ela está muito melhor agora!",
+      "Corrigido: texto de \"Localizar dispositivo\" unificado: Pad/tablet"
+    ],
     "Tela de bloqueio, Barra de status e Área de notificações": [
       "Novo Use sua impressão digital para abrir a Tela inicial quando você desbloquear o dispositivo usando o desbloqueio facial e ficar na Tela de bloqueio",
       "Correção: Notificações flutuantes sobre a bateria não eram exibidas corretamente em modo paisagem"
-    ],
-    "Serviço de nuvem Xiaomi": [
-      "Otimização: Nós redesenhamos a página inicial da Mi Cloud. Ela está muito melhor agora!"
     ],
     "Outros": [
       "Segurança e estabilidade do sistema aprimoradas"
@@ -448,6 +530,12 @@
     ]
   },
   "logs_tr": {
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Yeni: Cihazın kilidini yüz verilerini kullanarak açtıktan ve Kilit ekranında kaldıktan sonra Ana ekranı açmak için parmak izinizi kullanın",
+      "Desen kilidi çizim deneyimi optimize edildi",
+      "VPN simgesinin anormal görüntülenmesi sorunu giderildi",
+      "Onarım: Pille ilgili kayan bildirimler, manzara modunda doğru görüntülenmedi"
+    ],
     "Saat": [
       "Onar: Zamanlayıcı tuşu, dokunulduktan sonra yanmaya başladı",
       "Onar: Saat, belirli tarihlerde kapanmaya zorlandı",
@@ -467,12 +555,9 @@
     "Son kullanılanlar": [
       "Optimizasyon: Metinlerin boyutu büyük olarak ayarlandığında uygulama adları kesildi"
     ],
-    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
-      "Yeni: Cihazın kilidini yüz verilerini kullanarak açtıktan ve Kilit ekranında kaldıktan sonra Ana ekranı açmak için parmak izinizi kullanın",
-      "Onarım: Pille ilgili kayan bildirimler, manzara modunda doğru görüntülenmedi"
-    ],
     "Xiaomi Bulut Hizmeti": [
-      "Optimizasyon: Mi Cloud'un ana sayfasını yeniden tasarladık, artık çok daha iyi görünüyor!"
+      "Optimizasyon: Mi Cloud'un ana sayfasını yeniden tasarladık, artık çok daha iyi görünüyor!",
+      "Düzeltildi: \"Cihazımı Bul\" metni birleştirildi: Pad/tablet"
     ],
     "Diğer": [
       "Sistem güvenliği ve kararlılığı geliştirildi"
@@ -483,6 +568,12 @@
     ]
   },
   "logs_id": {
+    "Layar kunci, bilah status, bilah notifikasi": [
+      "Baru Menggunakan sidik jari untuk membuka Layar utama saat Anda membuka kunci perangkat dengan data wajah dan tetap berada di Layar kunci",
+      "Pengalaman menggambar pola sandi dioptimalkan",
+      "Memperbaiki masalah tampilan ikon VPN yang tidak normal",
+      "Perbaikan: Notifikasi mengambang yang berkaitan dengan baterai tidak ditampilkan saat dalam mode horisontal"
+    ],
     "Jam": [
       "Perbaikan: tombol di halaman pengatur waktu berkedip saat diketuk",
       "Perbaikan: Jam mengalami force close pada tanggal tertentu",
@@ -502,12 +593,13 @@
     "Tugas Terbaru": [
       "Mengoptimalkan panjang tampilan nama aplikasi dan efek tampilan font besar"
     ],
+    "Layanan Cloud Xiaomi": [
+      "Pengoptimalan: Halaman awal Mi Cloud didesain ulang. Sekarang semakin terlihat lebih baik!",
+      "Perbaikan: teks \"Cari Perangkat\" diseragamkan: Pad/tablet"
+    ],
     "Layar kunci, bar status, layar notifikasi": [
       "Baru Menggunakan sidik jari untuk membuka Layar utama saat Anda membuka kunci perangkat dengan data wajah dan tetap berada di Layar kunci",
       "Perbaikan: Notifikasi mengambang yang berkaitan dengan baterai tidak ditampilkan saat dalam mode horisontal"
-    ],
-    "Layanan Cloud Xiaomi": [
-      "Pengoptimalan: Halaman awal Mi Cloud didesain ulang. Sekarang semakin terlihat lebih baik!"
     ],
     "Lainnya": [
       "Keamanan dan stabilitas sistem ditingkatkan"
@@ -522,6 +614,12 @@
     ]
   },
   "logs_vi": {
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Mới: Dùng vân tay để vào Màn hình chính khi đã mở khóa bằng khuôn mặt và vẫn ở màn hình khóa",
+      "Tối ưu trải nghiệm vẽ khóa hình mẫu",
+      "Đã khắc phục sự cố biểu tượng VPN hiển thị bất thường",
+      "Sửa lỗi thông báo nổi pin yếu không được hiển thị kịp thời ở chế độ ngang"
+    ],
     "Đồng hồ": [
       "Sửa lỗi: nút trên trang hẹn giờ nhấp nháy khi được nhấn",
       "Sửa lỗi: Đồng hồ bị buộc dừng vào một số ngày cụ thể",
@@ -541,12 +639,9 @@
     "Tác vụ gần đây": [
       "Tối ưu hóa độ dài hiển thị tên ứng dụng và hiệu ứng hiển thị phông chữ lớn"
     ],
-    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
-      "Mới: Dùng vân tay để vào Màn hình chính khi đã mở khóa bằng khuôn mặt và vẫn ở màn hình khóa",
-      "Sửa lỗi thông báo nổi pin yếu không được hiển thị kịp thời ở chế độ ngang"
-    ],
     "Dịch vụ đám mây Xiaomi": [
-      "Tối ưu hóa: Trang chủ dịch vụ đám mây được thiết kế lại, dung lượng khả dụng hiển thị trực quan hơn."
+      "Tối ưu hóa: Trang chủ dịch vụ đám mây được thiết kế lại, dung lượng khả dụng hiển thị trực quan hơn.",
+      "Đã sửa: thống nhất nội dung \"Tìm thiết bị\": Pad/máy tính bảng"
     ],
     "Khác": [
       "Cải thiện tính ổn định và bảo mật hệ thống"
@@ -557,6 +652,12 @@
     ]
   },
   "logs_th": {
+    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
+      "ใหม่: สามารถใช้ลายนิ้วมือเข้าสู่หน้าจอหลักได้เมื่อปลดล็อกด้วยใบหน้าและยังคงอยู่ที่หน้าจอล็อก",
+      "ปรับปรุงประสบการณ์การวาดรหัสผ่านแบบแพตเทิร์น",
+      "แก้ไขปัญหาการแสดงไอคอน VPN ผิดปกติ",
+      "แก้ไขปัญหาการไม่แสดงการแจ้งเตือนแบบลอยสำหรับแบตเตอรี่ต่ำในโหมดแนวนอนอย่างทันท่วงที"
+    ],
     "นาฬิกา": [
       "แก้ไขปัญหาปุ่มในหน้าตัวจับเวลากระพริบเมื่อแตะ",
       "แก้ไขปัญหานาฬิกาหยุดทำงานในวันที่เฉพาะเจาะจง",
@@ -576,12 +677,13 @@
     "งานล่าสุด": [
       "ปรับความยาวการแสดงชื่อแอปและเอฟเฟกต์การแสดงผลฟอนต์ขนาดใหญ่ให้เหมาะสม"
     ],
+    "บริการคลาวด์ Xiaomi": [
+      "ปรับปรุง: ออกแบบหน้าหลักของบริการคลาวด์ใหม่ ทำให้แสดงพื้นที่ว่างได้ชัดเจนขึ้น",
+      "แก้ไข: รวมข้อความ \"ค้นหาอุปกรณ์\" เป็นมาตรฐาน: Pad/แท็บเล็ต"
+    ],
     "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
       "ใหม่: สามารถใช้ลายนิ้วมือเข้าสู่หน้าจอหลักได้เมื่อปลดล็อกด้วยใบหน้าและยังคงอยู่ที่หน้าจอล็อก",
       "แก้ไขปัญหาการไม่แสดงการแจ้งเตือนแบบลอยสำหรับแบตเตอรี่ต่ำในโหมดแนวนอนอย่างทันท่วงที"
-    ],
-    "บริการคลาวด์ Xiaomi": [
-      "ปรับปรุง: ออกแบบหน้าหลักของบริการคลาวด์ใหม่ ทำให้แสดงพื้นที่ว่างได้ชัดเจนขึ้น"
     ],
     "อื่นๆ": [
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
@@ -592,6 +694,12 @@
     ]
   },
   "logs_ar": {
+    "شاشة القفل، شريط الحالة، شريط الإشعارات": [
+      "جديد: استخدام بصمة الإصبع للانتقال إلى الشاشة الرئيسية عند نجاح فتح القفل بالوجه والبقاء على شاشة القفل",
+      "تحسين تجربة رسم نمط كلمة المرور",
+      "تم إصلاح مشكلة عرض أيقونة VPN بشكل غير طبيعي",
+      "إصلاح: لم يتم عرض إشعار عائم خاص بانخفاض البطارية في الوقت المناسب في الوضع الأفقي"
+    ],
     "الساعة": [
       "إصلاح مشكلة وميض زر صفحة المؤقت عند النقر عليه",
       "إصلاح مشكلة تعطل تطبيق الساعة في تواريخ محددة",
@@ -611,14 +719,15 @@
     "المهام الأخيرة": [
       "تحسين طول عرض أسماء التطبيقات، وتحسين تأثير عرض الخط الكبير"
     ],
+    "خدمة Xiaomi السحابية": [
+      "تحسين: إعادة تصميم الصفحة الرئيسية لخدمة السحابة، وعرض المساحة المتاحة بشكل أكثر وضوحًا",
+      "إصلاح: توحيد نص \"العثور على الجهاز\": Pad/جهاز لوحي"
+    ],
     "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
       "جديد: استخدام بصمة الإصبع للانتقال إلى الشاشة الرئيسية عند نجاح فتح القفل بالوجه والبقاء على شاشة القفل",
       "إصلاح: لم يتم عرض إشعار عائم خاص بانخفاض البطارية في الوقت المناسب في الوضع الأفقي"
     ],
-    "خدمة Xiaomi السحابية": [
-      "تحسين: إعادة تصميم الصفحة الرئيسية لخدمة السحابة، وعرض المساحة المتاحة بشكل أكثر وضوحًا"
-    ],
-    "أخرى": [
+    "آخرين": [
       "تحسين أمن واستقرار النظام"
     ],
     "شاشة القفل، شريط الحالة، لوحة الإشعارات": [
@@ -631,6 +740,12 @@
     ]
   },
   "logs_in": {
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
+      "नया: चेहरे से अनलॉक होने और लॉक स्क्रीन पर रहने पर फ़िंगरप्रिंट से होम स्क्रीन पर जाने की सुविधा",
+      "पैटर्न पासवर्ड को खींचने के अनुभव को अनुकूलित किया गया",
+      "VPN आइकन के असामान्य रूप से प्रदर्शित होने की समस्या को ठीक किया गया",
+      "लैंडस्केप मोड में कम बैटरी की फ़्लोटिंग सूचना समय पर न दिखने की समस्या ठीक की गई"
+    ],
     "घड़ी": [
       "टाइमर पेज पर बटन टैप करने पर झिलमिलाने की समस्या ठीक की गई",
       "कुछ खास तारीखों पर घड़ी के क्रैश होने की समस्या ठीक की गई",
@@ -650,13 +765,14 @@
     "हाल के कार्य": [
       "ऐप नामों की प्रदर्शन लंबाई और बड़े फ़ॉन्ट के प्रदर्शन प्रभाव को अनुकूलित किया गया"
     ],
+    "Xiaomi क्लाउड सेवा": [
+      "अनुकूलन: क्लाउड सेवा के होमपेज को फिर से डिज़ाइन किया गया है, उपलब्ध स्थान अब और स्पष्ट रूप से दिखता है।",
+      "ठीक किया गया: \"डिवाइस खोजें\" टेक्स्ट को एकीकृत किया गया: Pad/टैबलेट"
+    ],
     "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
       "नया: चेहरे से अनलॉक होने और लॉक स्क्रीन पर रहने पर फ़िंगरप्रिंट से होम स्क्रीन पर जाने की सुविधा",
       "लैंडस्केप मोड में कम बैटरी की फ़्लोटिंग सूचना समय पर न दिखने की समस्या ठीक की गई",
       "नया: चेहरे से अनलॉक सफल होने और लॉक स्क्रीन पर रहने पर फ़िंगरप्रिंट से होम स्क्रीन खोलें"
-    ],
-    "Xiaomi क्लाउड सेवा": [
-      "अनुकूलन: क्लाउड सेवा के होमपेज को फिर से डिज़ाइन किया गया है, उपलब्ध स्थान अब और स्पष्ट रूप से दिखता है।"
     ],
     "अन्य": [
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"

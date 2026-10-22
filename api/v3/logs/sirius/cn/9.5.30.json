@@ -3,7 +3,7 @@
     "系统": [
       "优化 取消定时关闭勿扰后的声音提示"
     ],
-    "相册": [
+    "画廊": [
       "优化 最近相册可以显示相册编辑后的照片",
       "优化 相册设置项支持云同步",
       "修复 照片电影微信无法发送问题"
@@ -28,173 +28,459 @@
     "System": [
       "Optimization: Removed unnecessary sound notifications for DND mode"
     ],
+    "Album": [
+      "Improved: Recent album can display photos edited in Gallery",
+      "Optimize Gallery settings to support cloud sync",
+      "Fix issue where Photo Movie cannot be sent via WeChat"
+    ],
     "Blocklist": [
       "Optimization: Improved blocklist functionality"
     ],
+    "Mi AI voice assistant": [
+      "Added: Open “Mijia Camera” by voice to see your home at a glance",
+      "Added voice to turn on/off power saving mode and Talkback, try saying \"Turn on power saving mode\""
+    ],
+    "Security": [
+      "Optimized Red Envelope Assistant UI display in Uyghur language environment"
+    ],
     "Mi Cloud": [
-      "Optimization: Improved sync across multiple devices"
+      "Optimization: Improved sync across multiple devices",
+      "Fixed the occasional crash of Cloud Services after signing in to an account in system settings",
+      "Fix the occasional crash when entering Cloud services while not signed in"
     ]
   },
   "logs_zh_tw": {
     "系統": [
       "優化 取消定時關閉勿擾後的聲音提示"
     ],
+    "相簿": [
+      "優化 最近相簿可以顯示相簿編輯後的照片",
+      "優化 相簿設定項目支援雲端同步",
+      "修復 照片電影微信無法發送問題"
+    ],
     "防打擾": [
       "優化 簡訊頭部攔截功能增強，支援+號增加"
     ],
+    "小愛同學": [
+      "新增：語音打開「米家攝像機」，家中情況一目了然",
+      "新增 語音開啟/關閉省電模式和Talkback，試試說「開啟省電模式」"
+    ],
+    "安全中心": [
+      "優化 維吾爾語環境下紅包助手UI顯示"
+    ],
     "小米雲服務": [
-      "優化 多裝置之間數據同步即時性"
+      "優化 多裝置之間數據同步即時性",
+      "修正 偶爾在系統設定中登入帳號後，雲端服務閃退的問題",
+      "修正 未登入帳號時進入雲服務，偶現閃退的問題"
     ]
   },
   "logs_ja": {
     "システム": [
       "最適化: スケジュールされたサイレントモード解除後の通知音を削除"
     ],
+    "アルバム": [
+      "最適化: 最近のアルバムで、アルバム編集後の写真を表示できるようになりました",
+      "ギャラリー設定項目のクラウド同期対応を最適化",
+      "写真映画をWeChatで送信できない問題を修正"
+    ],
+    "迷惑電話ブロック": [
+      "最適化: SMSヘッダー遮断機能を強化し、「+」記号での追加に対応"
+    ],
+    "Mi AI音声アシスタント": [
+      "追加：音声で「Mijia Camera」を開き、家中の状況をひと目で確認",
+      "音声で省電力モードとTalkbackのオン/オフを追加。「省電力モードをオンにして」と言ってみてください"
+    ],
+    "セキュリティ": [
+      "ウイグル語環境でのRed Envelope AssistantのUI表示を最適化"
+    ],
     "Xiaomi クラウドサービス": [
-      "最適化: 複数デバイス間のデータ同期を改善"
+      "最適化: 複数デバイス間のデータ同期を改善",
+      "システム設定でアカウントにログインした後、クラウドサービスが時々クラッシュする問題を修正",
+      "アカウント未ログイン時にクラウドサービスへ入ると、まれにクラッシュする問題を修正"
     ]
   },
   "logs_ko": {
     "시스템": [
       "최적화: 방해금지 모드에서의 불필요한 알림음 제거됨"
     ],
+    "앨범": [
+      "최적화: 최근 앨범에서 앨범에서 편집한 사진을 표시할 수 있습니다",
+      "갤러리 설정 항목의 클라우드 동기화 지원 최적화",
+      "사진 영화를 WeChat으로 보낼 수 없는 문제 수정"
+    ],
+    "스팸 차단": [
+      "최적화: SMS 헤더 차단 기능을 강화하고 '+' 기호로 추가할 수 있습니다"
+    ],
+    "Mi AI 음성 도우미": [
+      "추가: 음성으로 “Mijia Camera”를 열어 집 안 상황을 한눈에 확인",
+      "음성으로 절전 모드 및 Talkback 켜기/끄기 추가. \"절전 모드 켜기\"라고 말해보세요"
+    ],
+    "보안": [
+      "위구르어 환경에서 Red Envelope Assistant UI 표시 최적화"
+    ],
     "Xiaomi 클라우드 서비스": [
-      "최적화: 여러 기기 간 데이터 동기화 개선"
+      "최적화: 여러 기기 간 데이터 동기화 개선",
+      "시스템 설정에서 계정에 로그인한 후 클라우드 서비스가 간헐적으로 강제 종료되는 문제 수정",
+      "계정에 로그인하지 않은 상태에서 클라우드 서비스에 진입할 때 간헐적으로 강제 종료되는 문제 수정"
     ]
   },
   "logs_ru": {
     "Система": [
       "Оптимизация: Устранены звуковые уведомления в режиме Не беспокоить"
     ],
+    "Альбом": [
+      "Оптимизация: недавний альбом может отображать фото, отредактированные в альбоме",
+      "Оптимизирована поддержка облачной синхронизации в настройках Галереи",
+      "Исправлена проблема с отправкой Photo Movie через WeChat"
+    ],
     "Черный список": [
       "Оптимизация: Улучшена функциональность черного списка"
     ],
+    "Голосовой помощник Mi AI": [
+      "Добавлено: голосовое открытие «Mijia Camera» — обстановка дома видна с первого взгляда",
+      "Добавлено голосовое включение/отключение режима энергосбережения и Talkback. Попробуйте сказать «Включить режим энергосбережения»."
+    ],
+    "Безопасность": [
+      "Оптимизировано отображение интерфейса Red Envelope Assistant в среде уйгурского языка"
+    ],
     "Облачный сервис Xiaomi": [
-      "Оптимизация: Улучшена синхронизация данных между несколькими  устройствами"
+      "Оптимизация: Улучшена синхронизация данных между несколькими  устройствами",
+      "Исправлена проблема с периодическим сбоем облачных сервисов после входа в аккаунт в системных настройках",
+      "Исправлено редкое аварийное завершение при входе в облачные сервисы без входа в аккаунт"
     ]
   },
   "logs_uk": {
     "Система": [
       "Оптимізація: Вилучено звукове сповіщення після запланованого вимкнення режиму «Не турбувати»"
     ],
+    "Альбом": [
+      "Оптимізація: нещодавній альбом може показувати фото, відредаговані в альбомі",
+      "Оптимізовано підтримку хмарної синхронізації в налаштуваннях Галереї",
+      "Виправлено проблему з надсиланням Photo Movie через WeChat"
+    ],
+    "Блокування спаму": [
+      "Оптимізація: розширено функцію блокування заголовків SMS, підтримка додавання з «+»"
+    ],
+    "Голосовий помічник Mi AI": [
+      "Додано: голосове відкриття «Mijia Camera» — стан оселі видно з першого погляду",
+      "Додано голосове вмикання/вимикання режиму енергозбереження та Talkback. Спробуйте сказати «Увімкнути режим енергозбереження»."
+    ],
+    "Безпека": [
+      "Оптимізовано відображення інтерфейсу Red Envelope Assistant в уйгурському мовному середовищі"
+    ],
     "Хмарний сервіс Xiaomi": [
-      "Оптимізація: Покращено синхронізацію даних між кількома пристроями"
+      "Оптимізація: Покращено синхронізацію даних між кількома пристроями",
+      "Виправлено проблему з періодичним збоєм хмарних сервісів після входу в обліковий запис у системних налаштуваннях",
+      "Виправлено рідкісне аварійне завершення під час входу в хмарні сервіси без входу в обліковий запис"
     ]
   },
   "logs_pl": {
     "System": [
       "Zoptymalizowano: Usunięto niepotrzebne sygnały dźwiękowe dla trybu nie przeszkadzać"
     ],
+    "Album": [
+      "Optymalizacja: ostatni album może wyświetlać zdjęcia edytowane w albumie",
+      "Zoptymalizowano obsługę synchronizacji w chmurze w ustawieniach Galerii",
+      "Naprawiono problem z wysyłaniem Photo Movie przez WeChat"
+    ],
+    "Blokowanie spamu": [
+      "Optymalizacja: ulepszono blokowanie nagłówków SMS, obsługa dodawania ze znakiem „+”"
+    ],
+    "Mi Inteligentny asystent głosowy": [
+      "Dodano: otwieranie „Mijia Camera” głosem — sytuacja w domu na pierwszy rzut oka",
+      "Dodano głosowe włączanie/wyłączanie trybu oszczędzania energii i Talkback. Spróbuj powiedzieć „Włącz tryb oszczędzania energii”."
+    ],
+    "Bezpieczeństwo": [
+      "Zoptymalizowano wyświetlanie interfejsu Red Envelope Assistant w środowisku języka ujgurskiego"
+    ],
     "Usługa w chmurze Xiaomi": [
-      "Optymalizacja: Poprawiono synchronizację między wieloma urządzeniami"
+      "Optymalizacja: Poprawiono synchronizację między wieloma urządzeniami",
+      "Naprawiono problem sporadycznego awaryjnego zamykania Usług w chmurze po zalogowaniu się do konta w ustawieniach systemowych",
+      "Naprawiono sporadyczne awaryjne zamykanie podczas wchodzenia do usług w chmurze bez zalogowania na konto"
     ]
   },
   "logs_de": {
     "System": [
       "Optimierung: Tonbenachrichtigung nach zeitgesteuerter Deaktivierung des Nicht-Stören-Modus entfernt"
     ],
+    "Galerie": [
+      "Optimierung: Zuletzt verwendet-Album kann in der Galerie bearbeitete Fotos anzeigen",
+      "Optimierte Unterstützung für Cloud-Synchronisierung in den Galerie-Einstellungen",
+      "Problem behoben, dass Photo Movie nicht über WeChat gesendet werden kann"
+    ],
+    "Spam-Blockierung": [
+      "Optimierung: SMS-Header-Sperre verbessert, Hinzufügen mit „+“ möglich"
+    ],
+    "Mi KI-Sprachassistent": [
+      "Hinzugefügt: „Mijia Camera“ per Sprachbefehl öffnen – das Zuhause auf einen Blick",
+      "Sprachsteuerung zum Ein-/Ausschalten des Energiesparmodus und von Talkback hinzugefügt. Sagen Sie „Energiesparmodus einschalten“."
+    ],
+    "Sicherheit": [
+      "Optimierte Anzeige der Red Envelope Assistant-Benutzeroberfläche in uigurischer Sprachumgebung"
+    ],
     "Xiaomi Cloud-Dienst": [
-      "Optimierung: Verbesserte Synchronisierung zwischen mehreren Geräten"
+      "Optimierung: Verbesserte Synchronisierung zwischen mehreren Geräten",
+      "Gelegentlicher Absturz der Cloud-Dienste nach Anmeldung am Konto in den Systemeinstellungen behoben",
+      "Gelegentliche Abstürze beim Öffnen der Cloud-Dienste ohne Kontoanmeldung behoben"
     ]
   },
   "logs_fr": {
     "Système": [
       "Optimisation: A retiré les sons de notifications inutiles pour le mode DND"
     ],
+    "Album": [
+      "Optimisation : l'album Récent peut afficher les photos modifiées dans l'album",
+      "Optimisation de la prise en charge de la synchronisation cloud dans les paramètres de la Galerie",
+      "Correction du problème d’envoi de Photo Movie via WeChat"
+    ],
     "Liste noire": [
       "Optimisation: Amélioration de la fonctionnalité de liste noire"
     ],
+    "Assistant vocal IA Mi": [
+      "Ajout : ouvrir « Mijia Camera » à la voix pour voir l’état de la maison en un coup d’œil",
+      "Ajout de l'activation/désactivation vocale du mode économie d'énergie et de Talkback. Essayez de dire « Activer le mode économie d'énergie »."
+    ],
+    "Sécurité": [
+      "Optimisation de l'affichage de l'interface de Red Envelope Assistant en environnement linguistique ouïghour"
+    ],
     "Service cloud Xiaomi": [
-      "Optimisation Amélioration de la synchronisation sur plusieurs appareils"
+      "Optimisation Amélioration de la synchronisation sur plusieurs appareils",
+      "Correction du plantage occasionnel des services cloud après connexion à un compte dans les paramètres système",
+      "Correction du plantage occasionnel lors de l’accès aux services cloud sans être connecté au compte"
     ]
   },
   "logs_it": {
     "Sistema": [
       "Ottimizzazione: Rimosse notifiche audio non necessarie per la modalità Non Disturbare"
     ],
+    "Album": [
+      "Ottimizzazione: l'album Recenti può mostrare le foto modificate nell'album",
+      "Ottimizzato il supporto alla sincronizzazione cloud nelle impostazioni della Galleria",
+      "Risolto il problema di invio di Photo Movie tramite WeChat"
+    ],
     "Lista Blocchi": [
       "Ottimizzazione: Funzionalità Lista blocchi migliorata"
     ],
+    "Assistente vocale Mi AI": [
+      "Aggiunto: apri «Mijia Camera» a voce e controlla la casa a colpo d’occhio",
+      "Aggiunta l'attivazione/disattivazione vocale della modalità risparmio energetico e di Talkback. Prova a dire \"Attiva modalità risparmio energetico\"."
+    ],
+    "Sicurezza": [
+      "Ottimizzata la visualizzazione dell'interfaccia di Red Envelope Assistant in ambiente in lingua uigura"
+    ],
     "Servizio cloud Xiaomi": [
-      "Ottimizzazione: Sincronizzazione migliorata su più dispositivi"
+      "Ottimizzazione: Sincronizzazione migliorata su più dispositivi",
+      "Risolto il crash occasionale dei Servizi cloud dopo l'accesso all'account nelle impostazioni di sistema",
+      "Risolto il crash occasionale durante l'accesso ai servizi cloud senza aver effettuato l'accesso all'account"
     ]
   },
   "logs_es": {
     "Sistema": [
       "Optimización: Las notificaciones con sonido innecesarias han sido eliminadas del Modo no molestar"
     ],
+    "Álbum de fotos": [
+      "Optimización: el álbum Recientes puede mostrar fotos editadas en el álbum",
+      "Se optimizó la compatibilidad con la sincronización en la nube en los ajustes de Galería",
+      "Se corrigió el problema de envío de Photo Movie por WeChat"
+    ],
     "Lista de bloqueo": [
       "Optimización: Funciones de la Lista negra mejoradas"
     ],
+    "Asistente de voz Mi IA": [
+      "Añadido: abre «Mijia Camera» por voz y consulta el estado del hogar de un vistazo",
+      "Añadido encendido/apagado por voz del modo de ahorro de energía y Talkback. Prueba a decir \"Activar modo de ahorro de energía\"."
+    ],
+    "Seguridad": [
+      "Se optimizó la visualización de la interfaz de Red Envelope Assistant en entorno de idioma uigur"
+    ],
     "Servicio en la nube de Xiaomi": [
-      "Optimización: Sincronización entre múltiples dispositivos mejorada"
+      "Optimización: Sincronización entre múltiples dispositivos mejorada",
+      "Se corrigió el cierre inesperado ocasional de Servicios en la nube tras iniciar sesión en una cuenta en los ajustes del sistema",
+      "Se corrige el cierre inesperado ocasional al entrar en los servicios en la nube sin haber iniciado sesión en la cuenta"
     ]
   },
   "logs_pt": {
     "Sistema": [
       "Otimização: Sons de notificação desnecessários removidos do modo Não perturbe"
     ],
+    "Álbum": [
+      "Otimização: o álbum Recentes pode mostrar fotos editadas no álbum",
+      "Otimizado o suporte à sincronização na nuvem nas configurações da Galeria",
+      "Corrigido o problema de envio do Photo Movie pelo WeChat"
+    ],
     "Lista de bloqueio": [
       "Otimização: Melhoria da funcionalidade da lista de bloqueio"
     ],
+    "Assistente de voz Mi AI": [
+      "Adicionado: abra a «Mijia Camera» por voz e veja o estado da casa num relance",
+      "Adicionada ativação/desativação por voz do modo de economia de energia e do Talkback. Tente dizer \"Ativar modo de economia de energia\"."
+    ],
+    "Segurança": [
+      "Otimizada a exibição da interface do Red Envelope Assistant em ambiente de idioma uigur"
+    ],
     "Serviço de nuvem Xiaomi": [
-      "Otimização Sincronização otimizada entre vários dispositivos"
+      "Otimização Sincronização otimizada entre vários dispositivos",
+      "Corrigida a falha ocasional dos Serviços na nuvem após fazer login em uma conta nas configurações do sistema",
+      "Corrigido o encerramento inesperado ocasional ao entrar nos serviços na nuvem sem iniciar sessão na conta"
     ]
   },
   "logs_tr": {
     "Sistem": [
       "Optimizasyon: Rahatsız Etme modu için gereksiz sesli bildirimler kaldırıldı"
     ],
+    "albüm": [
+      "İyileştirme: Son albüm, albümde düzenlenen fotoğrafları gösterebilir",
+      "Galeri ayarlarında bulut eşitleme desteği optimize edildi",
+      "Photo Movie'nin WeChat üzerinden gönderilememesi sorunu giderildi"
+    ],
     "Engelli listesi": [
       "Optimizasyon: Engelli listesi işlevselliği artırıldı"
     ],
+    "Mi AI sesli yardımcı": [
+      "Eklendi: «Mijia Camera»yı sesle açın, evin durumunu bir bakışta görün",
+      "Güç tasarrufu modu ve Talkback için sesli açma/kapama eklendi. \"Güç tasarrufu modunu aç\" demeyi deneyin."
+    ],
+    "Güvenlik": [
+      "Uygurca ortamda Red Envelope Assistant arayüz görünümü optimize edildi"
+    ],
     "Xiaomi Bulut Hizmeti": [
-      "Optimizasyon: Birkaç cihaz arasında geliştirilmiş senkronizasyon"
+      "Optimizasyon: Birkaç cihaz arasında geliştirilmiş senkronizasyon",
+      "Sistem ayarlarında hesaba giriş yaptıktan sonra Bulut Hizmetleri'nin ara sıra çökmesi sorunu giderildi",
+      "Hesaba giriş yapılmamışken Bulut hizmetlerine girildiğinde ara sıra oluşan çökme sorunu düzeltildi"
     ]
   },
   "logs_id": {
     "Sistem": [
       "Pengoptimalan: Notifikasi suara yang tidak dibutuhkan untuk mode Jangan ganggu dihapus"
     ],
+    "Album": [
+      "Optimasi: album Terbaru dapat menampilkan foto yang diedit di album",
+      "Mengoptimalkan dukungan sinkronisasi cloud di pengaturan Galeri",
+      "Memperbaiki masalah Photo Movie tidak dapat dikirim melalui WeChat"
+    ],
+    "Pemblokiran spam": [
+      "Optimasi: Peningkatan fungsi pemblokiran header SMS, mendukung penambahan dengan tanda +"
+    ],
+    "Mi AI Asisten suara": [
+      "Ditambahkan: buka “Mijia Camera” dengan suara, kondisi rumah terlihat sekilas",
+      "Menambahkan pengaktifan/penonaktifan mode hemat daya dan Talkback dengan suara. Coba ucapkan \"Aktifkan mode hemat daya\"."
+    ],
+    "Keamanan": [
+      "Mengoptimalkan tampilan UI Red Envelope Assistant di lingkungan bahasa Uyghur"
+    ],
     "Layanan Cloud Xiaomi": [
-      "Pengoptimalan Sinkronisasi ditingkatkan di beberapa perangkat"
+      "Pengoptimalan Sinkronisasi ditingkatkan di beberapa perangkat",
+      "Memperbaiki masalah crash sesekali pada Layanan Cloud setelah masuk ke akun di pengaturan sistem",
+      "Memperbaiki masalah crash yang kadang terjadi saat masuk ke layanan Cloud tanpa login akun"
     ]
   },
   "logs_vi": {
     "Hệ thống": [
       "Tối ưu hóa: Đã xóa âm báo sau khi tắt chế độ Không làm phiền theo lịch"
     ],
+    "Album": [
+      "Tối ưu hóa: album Gần đây có thể hiển thị ảnh đã chỉnh sửa trong album",
+      "Tối ưu hóa hỗ trợ đồng bộ đám mây trong cài đặt Thư viện",
+      "Khắc phục sự cố không thể gửi Photo Movie qua WeChat"
+    ],
+    "Chặn spam": [
+      "Tối ưu hóa: Tăng cường chức năng chặn tiêu đề SMS, hỗ trợ thêm bằng dấu +"
+    ],
+    "Trợ lý thoại Mi AI": [
+      "Đã thêm: mở “Mijia Camera” bằng giọng nói, tình trạng trong nhà thấy ngay",
+      "Đã thêm bật/tắt bằng giọng nói chế độ tiết kiệm pin và Talkback. Hãy thử nói \"Bật chế độ tiết kiệm pin\"."
+    ],
+    "Trung tâm An ninh": [
+      "Tối ưu hóa hiển thị UI của Red Envelope Assistant trong môi trường tiếng Uyghur"
+    ],
     "Dịch vụ đám mây Xiaomi": [
-      "Tối ưu hóa: Cải thiện đồng bộ hóa giữa nhiều thiết bị"
+      "Tối ưu hóa: Cải thiện đồng bộ hóa giữa nhiều thiết bị",
+      "Đã khắc phục sự cố thỉnh thoảng Dịch vụ đám mây bị thoát đột ngột sau khi đăng nhập tài khoản trong cài đặt hệ thống",
+      "Khắc phục sự cố thoát ứng dụng đột ngột không thường xuyên khi vào dịch vụ đám mây mà chưa đăng nhập tài khoản"
     ]
   },
   "logs_th": {
     "ระบบ": [
       "การปรับปรุง: ลบการแจ้งเตือนเสียงหลังปิดโหมดห้ามรบกวนตามกำหนดเวลา"
     ],
+    "คลังภาพ": [
+      "ปรับปรุง: อัลบั้มล่าสุดสามารถแสดงภาพที่แก้ไขในอัลบั้มได้",
+      "ปรับปรุงการรองรับการซิงค์คลาวด์ในการตั้งค่าแกลเลอรี",
+      "แก้ไขปัญหาการส่ง Photo Movie ผ่าน WeChat ไม่ได้"
+    ],
+    "บล็อกสแปม": [
+      "การปรับปรุง: เพิ่มประสิทธิภาพการบล็อกส่วนหัว SMS รองรับการเพิ่มด้วยเครื่องหมาย +"
+    ],
+    "Mi AI สั่งงานด้วยเสียง": [
+      "เพิ่ม: เปิด “Mijia Camera” ด้วยเสียง ดูสถานการณ์ในบ้านได้ในพริบตา",
+      "เพิ่มการเปิด/ปิดโหมดประหยัดพลังงานและ Talkback ด้วยเสียง ลองพูดว่า \"เปิดโหมดประหยัดพลังงาน\""
+    ],
+    "ความปลอดภัย": [
+      "ปรับปรุงการแสดงผล UI ของ Red Envelope Assistant ในสภาพแวดล้อมภาษาอุยกูร์"
+    ],
     "บริการคลาวด์ Xiaomi": [
-      "การปรับให้เหมาะสม: ปรับปรุงการซิงค์ระหว่างอุปกรณ์หลายเครื่อง"
+      "การปรับให้เหมาะสม: ปรับปรุงการซิงค์ระหว่างอุปกรณ์หลายเครื่อง",
+      "แก้ไขปัญหาบริการคลาวด์หยุดทำงานเป็นครั้งคราวหลังจากเข้าสู่ระบบบัญชีในการตั้งค่าระบบ",
+      "แก้ไขปัญหาการแอปหยุดทำงานกะทันหันเป็นครั้งคราวเมื่อเข้าสู่บริการคลาวด์โดยยังไม่ได้เข้าสู่ระบบบัญชี"
     ]
   },
   "logs_ar": {
     "النظام": [
       "محسن إزالة إشعارات الصوت غير ضرورية لوضع عدم الإزعاج"
     ],
+    "ألبوم الصور": [
+      "تحسين: يمكن لألبوم الأخير عرض الصور التي تم تعديلها في الألبوم",
+      "تحسين دعم المزامنة السحابية في إعدادات المعرض",
+      "إصلاح مشكلة عدم إمكانية إرسال Photo Movie عبر WeChat"
+    ],
+    "حظر المضايقات": [
+      "تحسين: تعزيز وظيفة حظر رؤوس رسائل SMS، ودعم الإضافة بعلامة +"
+    ],
+    "مساعد الصوت Mi AI": [
+      "تمت الإضافة: فتح «Mijia Camera» بالصوت لرؤية حالة المنزل بنظرة واحدة",
+      "تمت إضافة تشغيل/إيقاف وضع توفير الطاقة وTalkback صوتيًا. جرّب قول \"تشغيل وضع توفير الطاقة\"."
+    ],
+    "الأمان": [
+      "تحسين عرض واجهة Red Envelope Assistant في بيئة اللغة الأويغورية"
+    ],
     "خدمة Xiaomi السحابية": [
-      "التحسين: تحسين المزامنة بين أجهزة متعددة"
+      "التحسين: تحسين المزامنة بين أجهزة متعددة",
+      "تم إصلاح مشكلة تعطل خدمات السحابة أحيانًا بعد تسجيل الدخول إلى الحساب في إعدادات النظام",
+      "إصلاح مشكلة التعطل العرضي عند الدخول إلى خدمات السحابة دون تسجيل الدخول إلى الحساب"
     ]
   },
   "logs_in": {
     "सिस्टम": [
       "अनुकूलन: शेड्यूल किए गए डू नॉट डिस्टर्ब बंद होने के बाद की ध्वनि सूचना हटाई गई"
     ],
+    "अल्बम": [
+      "अनुकूलन: हालिया एल्बम एल्बम में संपादित फ़ोटो दिखा सकता है",
+      "गैलरी सेटिंग्स में क्लाउड सिंक समर्थन को अनुकूलित किया गया",
+      "WeChat के माध्यम से Photo Movie भेजने में असमर्थता की समस्या ठीक की गई"
+    ],
+    "स्पैम ब्लॉक": [
+      "अनुकूलन: SMS हेडर ब्लॉकिंग सुविधा में सुधार, + चिह्न के साथ जोड़ने का समर्थन"
+    ],
+    "Mi AI वॉयस असिस्टेंट": [
+      "जोड़ा गया: आवाज़ से “Mijia Camera” खोलें, घर की स्थिति एक नज़र में",
+      "वॉइस से पावर सेविंग मोड और Talkback को चालू/बंद करना जोड़ा गया। \"पावर सेविंग मोड चालू करें\" कहकर देखें।"
+    ],
+    "सुरक्षा": [
+      "उइगुर भाषा परिवेश में Red Envelope Assistant UI प्रदर्शन का अनुकूलन किया गया"
+    ],
     "Xiaomi क्लाउड सेवा": [
-      "अनुकूलन: कई उपकरणों के बीच सिंक में सुधार"
+      "अनुकूलन: कई उपकरणों के बीच सिंक में सुधार",
+      "सिस्टम सेटिंग्स में खाते में साइन इन करने के बाद क्लाउड सेवाएँ कभी-कभार क्रैश होने की समस्या ठीक की गई",
+      "बिना खाते में साइन इन किए क्लाउड सेवाओं में प्रवेश करते समय कभी-कभी होने वाले क्रैश की समस्या ठीक की गई"
     ]
   },
   "logs_ug": {
     "سىستېما": [
       "ئەلالاشتۇرۇش: ۋاقىتلىق ئاۋارە قىلماسلىق ھالىتى تاقالغاندىن كېيىنكى ئاۋاز ئەسكەرتىشىنى بىكار قىلىش"
+    ],
+    "Mi AI voice assistant": [
+      "قوشۇلدى: ئاۋاز ئارقىلىق «Mijia Camera»نى ئېچىپ، ئۆي ئەھۋالىنى بىر قاراشتا كۆرۈڭ",
+      "ئاۋاز ئارقىلىق تېجەش ھالىتى ۋە Talkback نى ئېچىش/تاقاش قوشۇلدى. «تېجەش ھالىتىنى ئېچىش» دەپ سىناپ بېقىڭ."
     ],
     "Xiaomi بۇلۇت مۇلازىمىتى": [
       "كۆپ ئۈسكۈنە ئارىسىدىكى سانلىق مەلۇمات ماسلاشتۇرۇشنىڭ ۋاقتىدا بولۇشىنى ئەلالاشتۇرۇش"

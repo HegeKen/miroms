@@ -1,11 +1,11 @@
 {
   "logs_zh": {
     "系统": [
-      "修复 更新Android安全补丁至2018-10-01",
+      "将已更新的 Android 安全补丁恢复到 2018 年 10 月 1 日的版本。",
       "修复 修改内存泄漏问题"
     ],
     "锁屏、状态栏、通知栏": [
-      "修复 锁屏收到不重要通知后不亮屏的问题"
+      "在收到一些无关紧要的通知后，锁屏界面的相关功能（如“恢复锁定屏幕”）并未被激活/启用。"
     ],
     "相机": [
       "修复 进入相机出现偏色的问题"
@@ -13,14 +13,14 @@
   },
   "logs_en": {
     "System": [
-      "Restore Updated Android Security Patch to October 1, 2018",
-      "Restore Issues with memory leaks"
+      "Fixed and updated the Android security patch to version 2018-10-01.",
+      "Fixed the issue related to memory leaks."
     ],
     "Lockscreen, Status Bar, Notification Bar": [
-      "Restore Lock screen didn't light up after receiving unimportant notifications"
+      "Fixed the issue where the screen does not turn on when an unimportant notification is received while the device is in lock screen mode."
     ],
     "Camera": [
-      "Restore Color rendering issues"
+      "Fixed the issue of color distortion when accessing the camera."
     ]
   },
   "logs_zh_tw": {
@@ -29,10 +29,10 @@
       "修復 修改內存泄漏問題"
     ],
     "解鎖畫面、狀態欄、通知欄": [
-      "修復 鎖屏收到不重要通知後不亮屏的問題"
+      "修复了在锁屏状态下收到无关紧要的通知时屏幕无法自动亮起的故障。"
     ],
     "相機": [
-      "修復 進入相機出現偏色的問題"
+      "已修复进入相机时出现的色彩偏差问题。"
     ]
   },
   "logs_ja": {
@@ -41,7 +41,7 @@
       "メモリリークの問題を修正"
     ],
     "ロック画面、ステータスバー、通知バー": [
-      "重要でない通知を受信した後にロック画面が点灯しない問題を修正"
+      "ロック画面で重要でない通知が届いた際に画面が点灯しない問題を修正しました。"
     ],
     "カメラ": [
       "カメラ起動時の色かぶりが発生する問題を修正"
@@ -49,35 +49,35 @@
   },
   "logs_ko": {
     "시스템": [
-      "Android 보안 패치를 2018-10-01로 업데이트",
+      "안드로이드 보안 패치를 2018-10-01 버전으로 업데이트 및 수정했습니다.",
       "메모리 누수 문제를 수정"
     ],
     "잠금 화면, 상태 표시줄, 알림 표시줄": [
-      "중요하지 않은 알림을 받은 후 잠금 화면이 켜지지 않는 문제 수정"
+      "잠금 화면에서 중요하지 않은 알림을 받았을 때 화면이 켜지지 않는 문제를 수정했습니다."
     ],
     "카메라": [
-      "카메라 진입 시 색상 왜곡이 발생하는 문제를 수정"
+      "카메라에 접속할 때 색상이 왜곡되는 문제를 수정했습니다."
     ]
   },
   "logs_ru": {
     "Система": [
-      "Исправлено: патч безопасности Android обновлен до 2018-10-01",
+      "Восстановлено обновление безопасности для Android до версии 2018-10-01.",
       "Исправлена проблема утечки памяти"
     ],
     "Экран блокировки, строка состояния, шторка уведомлений": [
-      "Исправлена проблема, из-за которой экран блокировки не включался после получения неважных уведомлений"
+      "Устранено неправильное поведение экрана при получении несущественных уведомлений в режиме блокировки: экран не загорается."
     ],
     "Камера": [
-      "Исправлена проблема цветового сдвига при запуске камеры"
+      "Устранено проблему искажения цветов при использовании камеры."
     ]
   },
   "logs_uk": {
     "Система": [
-      "Виправлено: патч безпеки Android оновлено до 2018-10-01",
+      "Виправлено та оновлено патчі безпеки для Android до версії 2018-10-01.",
       "Виправлено проблему витоку пам'яті"
     ],
     "Екран блокування, рядок стану, рядок сповіщень": [
-      "Виправлено проблему, через яку екран блокування не вмикався після отримання неважливих сповіщень"
+      "Виправлено проблему, коли екран не загоряється після отримання неважливих сповіщень під час режиму блокування."
     ],
     "Камера": [
       "Виправлено проблему зміщення кольорів під час запуску камери"
@@ -89,58 +89,58 @@
       "Naprawiono problem wycieku pamięci"
     ],
     "Ekran blokady, pasek stanu, pasek powiadomień": [
-      "Naprawiono problem z niebudzeniem się ekranu blokady po otrzymaniu nieistotnych powiadomień"
+      "Poprawiono problem, gdy ekran blokujący nie rozjaśniał się po otrzymaniu nieważnych powiadomień."
     ],
     "Aparat": [
-      "Naprawiono problem przesunięcia kolorów po uruchomieniu aparatu"
+      "Poprawiono problem z wykrywaniem zaburzeń koloru podczas korzystania z kamery."
     ]
   },
   "logs_de": {
     "System": [
-      "Behoben: Android-Sicherheitspatch auf 2018-10-01 aktualisiert",
-      "Speicherleckproblem behoben"
+      "Behebung und Aktualisierung der Android-Sicherheitspatches auf den Stand vom 01.10.2018",
+      "Behebung des Problems mit dem Speicherleck (Memory Leak)"
     ],
     "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
-      "Problem behoben, dass der Sperrbildschirm nach Erhalt unwichtiger Benachrichtigungen nicht aufleuchtete"
+      "Behebung des Problems, dass das Display beim Empfang unbedeutender Benachrichtigungen im Sperrmodus nicht angezeigt wird."
     ],
     "Kamera": [
-      "Farbstich beim Öffnen der Kamera behoben"
+      "Behebung des Problems mit der Farbverzerrung beim Betreten der Kamera."
     ]
   },
   "logs_fr": {
     "Système": [
-      "Corrigé : correctif de sécurité Android mis à jour au 2018-10-01",
-      "Problème de fuite de mémoire corrigé"
+      "Correction : Mise à jour des patchs de sécurité Android jusqu'au 01 octobre 2018.",
+      "Réparation du problème de fuite de mémoire."
     ],
     "Écran de verrouillage, barre d’état, barre de notifications": [
-      "Correction du problème où l'écran de verrouillage ne s'allumait pas après réception de notifications non importantes"
+      "Résolution du problème : l'écran ne s'allume plus après la réception de notifications non importantes lorsqu'il est verrouillé."
     ],
     "Appareil photo": [
-      "Correction du problème de dominante de couleur à l'ouverture de l'appareil photo"
+      "Résolution du problème de décalage des couleurs lors de l'accès à l'appareil photo."
     ]
   },
   "logs_it": {
     "Sistema": [
-      "Corretto: patch di sicurezza Android aggiornato al 2018-10-01",
-      "Risolto il problema di perdita di memoria"
+      "Correzione: Aggiornamento dei patch di sicurezza per Android al 01/10/2018",
+      "Correzione del problema legato alle perdite di memoria (memory leaks)."
     ],
     "Schermata di blocco, barra di stato, barra delle notifiche": [
-      "Risolto il problema per cui la schermata di blocco non si accendeva dopo la ricezione di notifiche non importanti"
+      "Risolto il problema per cui lo schermo non si accende quando sullo schermo di blocco viene visualizzato un avviso non importante."
     ],
-    "Fotocamera": [
-      "Risolto il problema di dominante di colore all'apertura della fotocamera"
+    "macchina fotografica": [
+      "Risolto il problema del colore distorto che si verifica quando si accede alla fotocamera."
     ]
   },
   "logs_es": {
     "Sistema": [
-      "Corregido: parche de seguridad de Android actualizado al 2018-10-01",
+      "Se ha reparado y actualizado el parche de seguridad para Android al nivel del 01 de octubre de 2018.",
       "Corregido el problema de fuga de memoria"
     ],
     "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
-      "Se corrige el problema por el que la pantalla de bloqueo no se encendía tras recibir notificaciones no importantes"
+      "Se ha corregido el problema de que la pantalla no se enciende cuando se reciben notificaciones irrelevantes durante el modo de bloqueo."
     ],
     "Cámara": [
-      "Corregido el problema de dominante de color al abrir la cámara"
+      "Se ha corregido el problema de la distorsión de color que aparecía al acceder a la cámara."
     ]
   },
   "logs_pt": {
@@ -149,10 +149,10 @@
       "Corrigido o problema de vazamento de memória"
     ],
     "Tela de bloqueio, barra de status, barra de notificações": [
-      "Corrigido o problema em que a tela de bloqueio não acendia após receber notificações não importantes"
+      "Corrigido o problema em que o ecrã não se ilumina após receber notificações irrelevantes no modo de bloqueio."
     ],
     "Câmera": [
-      "Corrigido o problema de dominante de cor ao abrir a câmera"
+      "Corrigido o problema de desvio de cor que ocorria ao aceder à câmera."
     ]
   },
   "logs_tr": {
@@ -161,15 +161,15 @@
       "Bellek sızıntısı sorunu düzeltildi"
     ],
     "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
-      "Önemsiz bildirimler alındıktan sonra kilit ekranının yanmaması sorunu giderildi"
+      "Kilit ekranında önemsiz bildirimler alındığında ekranın aydınlanmaması sorununu giderdik."
     ],
     "Kamera": [
-      "Kamera açılırken oluşan renk kayması sorunu giderildi"
+      "Kameraya girdiğinizde renk kaymaları yaşanan sorunu düzelttik."
     ]
   },
   "logs_id": {
     "Sistem": [
-      "Diperbaiki: patch keamanan Android diperbarui ke 2018-10-01",
+      "Memperbaiki dan memutakhirkan patch keamanan Android hingga tanggal 2018-10-01.",
       "Memperbaiki masalah kebocoran memori"
     ],
     "Layar kunci, bilah status, bilah notifikasi": [
@@ -182,59 +182,66 @@
   "logs_vi": {
     "Hệ thống": [
       "Đã sửa: cập nhật bản vá bảo mật Android lên 2018-10-01",
-      "Đã khắc phục sự cố rò rỉ bộ nhớ"
+      "Khắc phục và sửa lỗi rò rỉ bộ nhớ (memory leak)."
     ],
     "Màn hình khóa, thanh trạng thái, thanh thông báo": [
-      "Khắc phục sự cố màn hình khóa không sáng lên sau khi nhận thông báo không quan trọng"
+      "Đã sửa lỗi: Màn hình không sáng khi nhận được các thông báo không quan trọng trong chế độ màn hình khóa."
     ],
     "Máy ảnh": [
-      "Đã khắc phục lỗi lệch màu khi mở camera"
+      "Đã sửa lỗi màu ảnh bị lệch khi truy cập vào máy ảnh."
     ]
   },
   "logs_th": {
     "ระบบ": [
-      "แก้ไข: อัปเดตแพตช์ความปลอดภัย Android เป็น 2018-10-01",
-      "แก้ไขปัญหาหน่วยความจำรั่ว"
+      "ได้ทำการแก้ไขและอัปเดตแพตช์ความปลอดภัยสำหรับ Android ให้เป็นเวอร์ชัน 2018-10-01 เรียบร้อยแล้ว",
+      "แก้ไขปัญหาการรั่วไหลของหน่วยความจำ (Memory Leak)"
     ],
     "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
       "แก้ไขปัญหาหน้าจอล็อกไม่สว่างขึ้นหลังจากได้รับการแจ้งเตือนที่ไม่สำคัญ"
     ],
     "กล้อง": [
-      "แก้ไขปัญหาสีเพี้ยนเมื่อเปิดกล้อง"
+      "แก้ไขปัญหาที่เมื่อเข้าไปใช้งานกล้องแล้วภาพเกิดการเบี้ยวเบนสี (color distortion)"
     ]
   },
   "logs_ar": {
     "النظام": [
-      "تم الإصلاح: تحديث رقعة أمان Android إلى 2018-10-01",
+      "تم إصلاح وتحديث تصحيحات الأمان لنظام أندرويد إلى تاريخ 2018-10-01.",
       "تم إصلاح مشكلة تسرب الذاكرة"
     ],
     "شاشة القفل، شريط الحالة، شريط الإشعارات": [
-      "إصلاح مشكلة عدم إضاءة شاشة القفل بعد تلقي إشعارات غير مهمة"
+      "تم إصلاح المشكلة التي كانت تؤدي إلى عدم إضاءة الشاشة عند استقبال إشعارات غير مهمة أثناء وضع الشاشة في وضع القفل."
     ],
     "كاميرا": [
-      "إصلاح مشكلة انحراف اللون عند فتح الكاميرا"
+      "تم إصلاح المشكلة المتعلقة بظهور اختلاف في الألوان عند استخدام الكاميرا."
     ]
   },
   "logs_in": {
     "सिस्टम": [
-      "ठीक किया गया: Android सुरक्षा पैच को 2018-10-01 तक अपडेट किया गया",
-      "मेमोरी लीक की समस्या ठीक की गई"
+      "एंड्रॉइड सुरक्षा पैच को 2018-10-01 तक अपडेट करें।",
+      "मेमोरी लीक (Memory Leak) संबंधी समस्या को ठीक किया गया है।"
     ],
     "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
-      "महत्वपूर्ण न होने वाली सूचनाएं मिलने के बाद लॉक स्क्रीन के न चमकने की समस्या ठीक की गई"
+      "समस्या को ठीक कर दिया गया है: जब लॉक स्क्रीन पर कोई महत्वहीन नोटिफिकेशन आता है, तो स्क्रीन चमकती नहीं है।"
     ],
     "कैमरा": [
-      "कैमरा खोलने पर रंग में बदलाव आने की समस्या ठीक की गई"
+      "कैमरे में प्रवेश करते समय रंगों में असंतुलन (डिस्कलरेशन) होने की समस्या को ठीक कर दिया गया है."
     ]
   },
   "logs_ug": {
-    "كامېرا": [
-      "كامېرا ئېچىلغاندا رەڭ ئېغىشى مەسىلىسى تۈزىتىلدى"
+    "سىستېما": [
+      "Android بىخەتەرلىك ئۆزگىرىشىنى 2018-10-01 كۈنىگىچە تۈزەپ ۋە يېڭىلاپ قويۇڭ",
+      "ئېچىلمىغان (سىرتقا ئاق مىغان) مەمورىيەت مەسىلىسىنى تۈزەش"
+    ],
+    "قۇلۇپ ئېكرانى، ھالەت بالدىقى، ئۇقتۇرۇش بالدىقى": [
+      "قاپ قۇرۇلمىسى مۇھىم ئەمەس بەلگىلىمىلەرنى تاپشۇرۇۋالغاندا ئېكراننىڭ يورۇ ماسلىق مەسىلىسىنى تۈزەتتى"
+    ],
+    "فوتو ئاپپارات": [
+      "كامېرىغا كىرگەندە رەڭ بۇزۇلۇش مەسىلىسىنى تۈزىتىمىز"
     ]
   },
   "logs_bo": {
-    "པར་ཆས": [
-      "པར་ཆས་ཁ་ཕྱེ་སྐབས་ཁ་དོག་འགྱུར་བའི་གནད་དོན་བཅོས་ཡོད།"
+    "ཁ་མར།": [
+      "ཁ་མཚར་བའི་གནད་དོན་སེལ་བ།(Problems with color distortion when using the camera)"
     ]
   }
 }

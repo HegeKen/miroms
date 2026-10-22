@@ -4,7 +4,7 @@
       "修复 偶现的设备异常重启问题",
       "合入2024年8月安全补丁，增强系统安全"
     ],
-    "桌面": [
+    "主屏幕": [
       "优化 文件夹展开后图标显示不完整的问题",
       "优化 桌面布局顶部空白较大的问题",
       "优化 桌面抽屉界面布局",
@@ -32,7 +32,7 @@
       "Fix: Some devices rebooted unexpectedly",
       "Updated the security patch to August 2024. Increased system security."
     ],
-    "Home screen": [
+    "desktop": [
       "Optimization: Folder icons weren't always fully displayed",
       "Optimization: An issue when a lot of space in the upper part of the screen was left blank in the Home screen layout",
       "Optimization: App drawer layout",
@@ -45,7 +45,7 @@
       "Optimization: App drawer layout",
       "Fix: Home screen stopped working in some cases"
     ],
-    "Other improvements and optimizations": [
+    "Other optimizations and adjustments": [
       "Fix: Screenshots turned out black for some apps"
     ],
     "status bar, Notification shade": [
@@ -78,7 +78,7 @@
     ]
   },
   "logs_ja": {
-    "ホーム画面": [
+    "デスクトップ": [
       "最適化: フォルダーアイコンが完全に表示されないことがある問題",
       "最適化: ホーム画面のレイアウトで、画面上部のスペースが大きく空くことがある問題",
       "最適化: アプリドロワーのレイアウト",
@@ -99,7 +99,7 @@
     ]
   },
   "logs_ko": {
-    "홈 화면": [
+    "데스크톱": [
       "최적화: 폴더 아이콘이 완전히 표시되지 않는 문제",
       "최적화: 홈 화면 레이아웃에서 화면 상단의 많은 공간이 비어있는 경우 발생하는 문제",
       "최적화: 앱 서랍 레이아웃",
@@ -141,7 +141,7 @@
     ]
   },
   "logs_uk": {
-    "Головний екран": [
+    "Робочий стіл": [
       "Оптимізація: Значки папок не завжди відображалися повністю",
       "Оптимізація: Виникала проблема, під час якої залишалося багато порожнього місця у верхній частині екрана у розмітці робочого столу",
       "Оптимізація: Розмітка Меню програм",
@@ -162,7 +162,7 @@
     ]
   },
   "logs_pl": {
-    "Ekran główny": [
+    "Biurko": [
       "Zoptymalizowano: Ikony folderów nie zawsze wyświetlały się w całości",
       "Zoptymalizowano: Usterka polegająca na pozostawianiu pustego miejsca w górnej części ekranu w układzie ekranu głównego",
       "Zoptymalizowano: Układ szuflady aplikacji",
@@ -190,17 +190,24 @@
       "Behoben: Der Startbildschirm funktionierte in einigen Fällen nicht mehr"
     ],
     "Letzte Aufgaben": [
-      "Fix: App card started shaking when card order was rearranged"
+      "Fix: App card started shaking when card order was rearranged",
+      "Optimierung: Ordnersymbole wurden nicht immer vollständig angezeigt",
+      "Optimization: An issue when a lot of space in the upper part of the screen was left blank in the Home screen layout",
+      "Optimierung: App-Drawer-Layout",
+      "Behoben: Der Startbildschirm funktionierte in einigen Fällen nicht mehr"
     ],
-    "Weitere Verbesserungen und Optimierungen": [
+    "Weitere Optimierungen und Anpassungen": [
       "Behoben: Screenshots waren in einigen Apps schwarz"
+    ],
+    "Statusleiste, Benachrichtigungsfeld": [
+      "Fix: App card started shaking when card order was rearranged"
     ],
     "System": [
       "Updated the security patch to August 2024. Increased system security."
     ]
   },
   "logs_fr": {
-    "Écran d'accueil": [
+    "Bureau": [
       "Optimisation: Les icônes de dossier n’étaient pas toujours complètement affichées",
       "Optimisation: Un problème lorsque beaucoup d’espace dans la partie supérieure de l’écran était laissé vide dans la mise en page de l’écran d’accueil",
       "Optimisation: Disposition du Tiroir de l'application",
@@ -221,7 +228,7 @@
     ]
   },
   "logs_it": {
-    "Schermata Home": [
+    "Desktop": [
       "Ottimizzazione: Le icone delle cartelle non venivano sempre visualizzate completamente",
       "Ottimizzazione: Un problema che si verificava quando molto spazio nella parte superiore dello schermo rimaneva vuoto nel layout della schermata Home",
       "Ottimizzazione: Layout cassetto App",
@@ -242,7 +249,7 @@
     ]
   },
   "logs_es": {
-    "Pantalla de inicio": [
+    "Escritorio": [
       "Optimización: Los iconos de carpeta no siempre se mostraban completamente",
       "Optimización: Un problema cuando una gran parte del espacio en la parte superior de la pantalla quedaba en blanco en el diseño de la Pantalla de inicio",
       "Optimización: Diseño del Cajón de aplicaciones",
@@ -284,7 +291,7 @@
     ]
   },
   "logs_tr": {
-    "Ana ekran": [
+    "Masaüstü": [
       "Optimizasyon: Klasör simgeleri her zaman tam olarak gösterilmedi",
       "Optimizasyon: Ana ekran düzeninde ekranın üst köşesinde çok fazla alanın boş bırakılması sorunu",
       "Optimizasyon: Uygulama çekmecesi düzeni",
@@ -305,7 +312,7 @@
     ]
   },
   "logs_id": {
-    "Layar Utama": [
+    "Desktop": [
       "Pengoptimalan: Ikon folder tidak selalu ditampilkan sepenuhnya",
       "Pengoptimalan: Masalah ketika banyak ruang di bagian atas layar dibiarkan kosong dalam susunan Layar utama",
       "Pengoptimalan: Susunan Laci aplikasi",
@@ -347,7 +354,7 @@
     ]
   },
   "logs_th": {
-    "หน้าจอหลัก": [
+    "โต๊ะทำงาน": [
       "การเพิ่มประสิทธิภาพ: ไอคอนโฟลเดอร์ไม่ได้แสดงแบบเต็มเสมอ",
       "การเพิ่มประสิทธิภาพ: ปัญหาเมื่อพื้นที่ว่างจำนวนมากในส่วนบนของหน้าจอถูกปล่อยทิ้งไว้ว่างเปล่าในเค้าโครงหน้าจอหลัก",
       "การเพิ่มประสิทธิภาพ: เค้าโครงลิ้นชักแอป",
@@ -368,7 +375,7 @@
     ]
   },
   "logs_ar": {
-    "الشاشة الرئيسية": [
+    "سطح المكتب": [
       "التحسين: لم يتم عرض أيقونات المجلد بالكامل دائمًا",
       "التحسين: حدثت مشكلة عندما تُركت مساحة كبيرة في الجزء العلوي من الشاشة فارغة في تنسيق الشاشة الرئيسية",
       "التحسين: تنسيق درج التطبيقات",
@@ -389,7 +396,7 @@
     ]
   },
   "logs_in": {
-    "होम स्क्रीन": [
+    "डेस्कटॉप": [
       "ऑप्टिमाइज़ेशन फ़ोल्डर आइकन हमेशा पूरी तरह से दिखाई नहीं दे रहे थे",
       "ऑप्टिमाइज़ेशन होम स्क्रीन लेआउट में स्क्रीन के ऊपरी हिस्से में बहुत सारा स्थान खाली छोड़ देने पर एक समस्या उत्पन्न हो रही थी",
       "ऑप्टिमाइज़ेशन ऐप्प ड्रॉअर लेआउट",
@@ -410,34 +417,48 @@
     ]
   },
   "logs_ug": {
-    "باش ئېكران": [
+    "ئۈستەل يۈزى": [
       "Optimization: Folder icons weren't always fully displayed",
       "Optimization: An issue when a lot of space in the upper part of the screen was left blank in the Home screen layout",
       "Optimization: App drawer layout",
       "Fix: Home screen stopped working in some cases"
     ],
     "يېقىنقى ۋەزىپىلەر": [
-      "Fix: App card started shaking when card order was rearranged"
+      "Fix: App card started shaking when card order was rearranged",
+      "Optimization: Folder icons weren't always fully displayed",
+      "Optimization: An issue when a lot of space in the upper part of the screen was left blank in the Home screen layout",
+      "Optimization: App drawer layout",
+      "Fix: Home screen stopped working in some cases"
     ],
     "باشقا ئەلالاشتۇرۇش ۋە تەڭشەشلەر": [
       "Fix: Screenshots turned out black for some apps"
+    ],
+    "Status bar, Notification shade": [
+      "Fix: App card started shaking when card order was rearranged"
     ],
     "سىستېما": [
       "Updated the security patch to August 2024. Increased system security."
     ]
   },
   "logs_bo": {
-    "Home screen": [
+    "ཅོག་ངོས": [
       "Optimization: Folder icons weren't always fully displayed",
       "Optimization: An issue when a lot of space in the upper part of the screen was left blank in the Home screen layout",
       "Optimization: App drawer layout",
       "Fix: Home screen stopped working in some cases"
     ],
     "ཉེ་བའི་ལས་འགན": [
-      "Fix: App card started shaking when card order was rearranged"
+      "Fix: App card started shaking when card order was rearranged",
+      "Optimization: Folder icons weren't always fully displayed",
+      "Optimization: An issue when a lot of space in the upper part of the screen was left blank in the Home screen layout",
+      "Optimization: App drawer layout",
+      "Fix: Home screen stopped working in some cases"
     ],
-    "Other improvements and optimizations": [
+    "དེ་བཞིན་ལེགས་བཅོས་དང་སྙོམས་སྒྲིག་གཞན་དག": [
       "Fix: Screenshots turned out black for some apps"
+    ],
+    "Status bar, Notification shade": [
+      "Fix: App card started shaking when card order was rearranged"
     ],
     "མ་ལག": [
       "Updated the security patch to August 2024. Increased system security."

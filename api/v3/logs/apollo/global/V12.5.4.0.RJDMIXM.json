@@ -138,7 +138,7 @@
       "修復: 抬起螢幕亮起時偶現鎖定螢幕通知閃動的異常",
       "修復: 深色模式下，通知按鈕偶發顯示異常的問題"
     ],
-    "設定": [
+    "设置": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
       "修复部分APP帐号，无法同步到“帐号与同步”中的问题"
     ],
@@ -164,6 +164,22 @@
     "システム": [
       "最適化: Androidのセキュリティパッチを2021年8月にアップデートしました。システムのセキュリティが強化されました。"
     ],
+    "ステータスバー、通知シェード": [
+      "最適化: 着信通知を表示するアルゴリズム",
+      "最適化: アラーム通知",
+      "最適化: 通知シェードのサードパーティ製テーマへの対応",
+      "最適化: 通知のダークモード調整",
+      "修正: 透明な背景を使用した際にフローティング通知の表示が重なる問題",
+      "修正: 通知を長押しするとアクセス許可のダイアログと表示が重なってしまう問題",
+      "修正: アプリロックを使用時に通知が正しく表示されない問題",
+      "修正: クリーナーのアニメーションが正しく表示されない問題",
+      "修正: 通知シェードが開けない場合がある問題",
+      "修正: 不在着信後に通知が正しく表示されない問題",
+      "修正: 不在着信後のアクセス許可に関する問題",
+      "修正: プレイヤーのコントロールが通知シェードに表示されないことがある問題",
+      "修正: '持ち上げてスリープ解除'実行時に通知が正しく表示されない場合がある問題",
+      "修正: ダークモードがオンの場合、通知にボタンが正しく表示されないことがある問題"
+    ],
     "設定": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
       "修复部分APP帐号，无法同步到“帐号与同步”中的问题"
@@ -174,17 +190,6 @@
       "修正: 顔認証と指紋認証を同時に使用するとクラッシュする場合がある問題",
       "修正: 通話終了後にロック画面の通知が消えてしまう問題",
       "修正: スーパー壁紙とテーマを組み合わせたときにロック画面のアイテムが表示されない問題"
-    ],
-    "ステータスバー、通知シェード": [
-      "最適化: 通知シェードのサードパーティ製テーマへの対応",
-      "最適化: 通知のダークモード調整",
-      "修正: アプリロックを使用時に通知が正しく表示されない問題",
-      "修正: クリーナーのアニメーションが正しく表示されない問題",
-      "修正: 通知シェードが開けない場合がある問題",
-      "修正: 不在着信後のアクセス許可に関する問題",
-      "修正: プレイヤーのコントロールが通知シェードに表示されないことがある問題",
-      "修正: '持ち上げてスリープ解除'実行時に通知が正しく表示されない場合がある問題",
-      "修正: ダークモードがオンの場合、通知にボタンが正しく表示されないことがある問題"
     ],
     "Xiaomi クラウドサービス": [
       "修正: クリーナーのアニメーションが正しく表示されない問題"
@@ -240,6 +245,9 @@
       "Гибкое хранилище: новые чувствительные механизмы управления памятью обеспечивают надежную работу системы даже с течением времени.",
       "Смарт-баланс: улучшение основных модулей системы позволит вашему устройству максимально эффективно использовать все возможности флагманского оборудования."
     ],
+    "Система": [
+      "Оптимизация: Обновление системы безопасности Android (август 2021 года). Улучшена безопасность системы."
+    ],
     "строка состояния, шторка уведомлений": [
       "Оптимизация: Алгоритмы отображения уведомлений о входящих вызовах",
       "Оптимизация: Уведомления будильника",
@@ -259,9 +267,6 @@
     "Настройки": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
       "修复部分APP帐号，无法同步到“帐号与同步”中的问题"
-    ],
-    "Система": [
-      "Оптимизация: Обновление системы безопасности Android (август 2021 года). Улучшена безопасность системы."
     ],
     "Экран блокировки": [
       "Новое: Новый параметры для отпечатков пальцев",
@@ -295,6 +300,22 @@
     ],
     "Система": [
       "Оптимізація: Оновлено патч безпеки Android за серпень 2021 року. Збільшено безпеку системи."
+    ],
+    "Рядок стану, панель сповіщень": [
+      "Оптимізація: Алгоритми відображення сповіщень про вхідні виклики",
+      "Оптимізація: Сповіщення будильника",
+      "Оптимізація: Сумісність сторонніх тем із панеллю сповіщень",
+      "Оптимізація: Оптимізація відображення сповіщень у темному режимі",
+      "Виправлено: Під час використання прозорого фону спливаючі сповіщення могли перекриватися",
+      "Виправлено: Елементи діалогового вікна надання дозволів перекривалися після довгого натиснення на сповіщення",
+      "Виправлено: Під час використання захисту програм сповіщення могли відображатися неправильно",
+      "Виправлено: Виправлено некоректне відображення анімації \"Очищення\"",
+      "Виправлено: В деяких випадках панель сповіщень могла не відкриватися",
+      "Виправлено: Після пропущених викликів сповіщення могли відображатися неправильно",
+      "Виправлено: Виправлені помилки дозволів, які з'являлися після пропущених викликів",
+      "Виправлено: Віджет керування відтворенням музиик міг не відображатися у панелі сповіщень",
+      "Виправлено: Під час використання функції \"Підняти для активації\" сповіщення могли відображатися неправильно",
+      "Виправлено: Під час активації темного режиму деякі кнопки на сповіщеннях могли не відображатися"
     ],
     "Налаштування": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
@@ -423,6 +444,9 @@
       "Behoben: Wiedergabesteuerung wurde nicht immer in der Benachrichtigungsleiste angezeigt",
       "Behoben: Benachrichtigungen wurden bei Verwendung von „Zum Aufwecken anheben“ nicht immer korrekt angezeigt",
       "Behoben: Schaltflächen wurden bei aktiviertem Dunkelmodus nicht immer korrekt in den Benachrichtigungen angezeigt"
+    ],
+    "Xiaomi Cloud-Dienst": [
+      "Behoben: Die Animationen des Reinigers wurden nicht korrekt angezeigt"
     ]
   },
   "logs_fr": {
@@ -475,6 +499,9 @@
       "Archiviazione fluida: nuovi meccanismi di archiviazione sensibili manterranno il tuo sistema veloce e reattivo nel tempo.",
       "Bilanciamento intelligente: i miglioramenti di sistema consentono al tuo dispositivo di sfruttare al meglio tutte le funzionalità hardware di ultima generazione."
     ],
+    "Sistema": [
+      "Ottimizzazione: Patch di sicurezza Android aggiornata ad agosto 2021. Maggiore sicurezza del sistema."
+    ],
     "barra di stato, area delle notifiche": [
       "Ottimizzazione: Algoritmi per la visualizzazione delle notifiche delle chiamate in arrivo",
       "Ottimizzazione: Notifiche sveglia",
@@ -494,9 +521,6 @@
     "Impostazioni": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
       "修复部分APP帐号，无法同步到“帐号与同步”中的问题"
-    ],
-    "Sistema": [
-      "Ottimizzazione: Patch di sicurezza Android aggiornata ad agosto 2021. Maggiore sicurezza del sistema."
     ],
     "Schermata di blocco": [
       "Nuovo: Nuove opzioni per le impronte digitali",
@@ -528,6 +552,9 @@
       "Almacenamiento fluido: los nuevos mecanismos de almacenamiento sensibles mantendrán tu sistema activo y receptivo a medida que pase el tiempo.",
       "Equilibrio inteligente: las mejoras del sistema principal permiten que tu dispositivo aproveche al máximo las especificaciones del hardware insignia."
     ],
+    "Sistema": [
+      "Optimización: Parche de seguridad de Android actualizado a agosto de 2021. Seguridad del sistema incrementada."
+    ],
     "barra de estado, barra de notificaciones": [
       "Optimización: Algoritmos para mostrar notificaciones de llamadas entrantes",
       "Optimización: Notificaciones de alarmas",
@@ -544,12 +571,9 @@
       "Reparado: Las notificaciones no siempre se mostraban correctamente cuando se usaba \"Levantar para activar\"",
       "Reparado: Los botones no siempre se mostraban correctamente en las notificaciones cuando el Modo oscuro estaba activado"
     ],
-    "Ajustes": [
+    "Configuración": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
       "修复部分APP帐号，无法同步到“帐号与同步”中的问题"
-    ],
-    "Sistema": [
-      "Optimización: Parche de seguridad de Android actualizado a agosto de 2021. Seguridad del sistema incrementada."
     ],
     "Pantalla de bloqueo": [
       "Nuevo: Nuevas opciones de huella dactilar",
@@ -634,6 +658,9 @@
       "Sıvı depolama: Yeni hassas depolama mekanizmaları zaman geçtikçe sisteminizi canlı ve duyarlı tutacaktır.",
       "Akıllı bakiye. Temel sistem iyileştirmeleri, cihazınızın amiral gemisi donanım özelliklerinden en iyi şekilde yararlanmasını sağlar."
     ],
+    "Sistem": [
+      "Optimizasyon: Android Güvenlik Patch'i Ağustos 2021'de güncellendi. Sistem güvenliği arttırıldı."
+    ],
     "durum çubuğu, Bildirim çubuğu": [
       "Optimizasyon: Gelen arama bildirimlerini görüntülemek için algoritmalar",
       "Optimizasyon: Alarm bildirimleri",
@@ -653,9 +680,6 @@
     "Ayarlar": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
       "修复部分APP帐号，无法同步到“帐号与同步”中的问题"
-    ],
-    "Sistem": [
-      "Optimizasyon: Android Güvenlik Patch'i Ağustos 2021'de güncellendi. Sistem güvenliği arttırıldı."
     ],
     "Kilit ekranı": [
       "Yeni: Yeni parmak izi seçenekleri",
@@ -743,6 +767,22 @@
     "Hệ thống": [
       "Tối ưu: Cập nhật Bản vá bảo mật Android đến tháng 8 năm 2021. Tăng cường bảo mật hệ thống."
     ],
+    "Thanh trạng thái, thanh thông báo": [
+      "Tối ưu: Thuật toán thông báo cuộc gọi đến",
+      "Tối ưu: Thông báo báo thức",
+      "Tối ưu: Chủ đề bên thứ ba tương thích với Thanh thông báo",
+      "Tối ưu: Điều chỉnh chế độ nền tối cho thông báo",
+      "Sửa: Thông báo nổi bị chồng lấn khi hình nền trong suốt được sử dụng",
+      "Sửa: Hộp thoại quyền bị chồng lấn sau khi bấm giữ thông báo",
+      "Sửa: Thông báo không hiển thị chính xác khi Khóa ứng dụng được sử dụng",
+      "Sửa: Hoạt ảnh dọn dẹp không hiển thị chính xác",
+      "Sửa: Không thể mở Thanh thông báo trong một số trường hợp",
+      "Sửa: Thông báo không hiển thị chính xác sau khi lỡ cuộc gọi",
+      "Sửa: Vấn đề về quyền sau khi có cuộc gọi nhỡ",
+      "Sửa: Điều khiển trình phát không luôn hiển thị trong Thanh thông báo",
+      "Sửa: Thông báo không hiển thị chính xác khi \"Nâng lên để đánh thức\" được sử dụng",
+      "Sửa: Phím không hiển thị chính xác trên thanh thông báo khi Chế độ nền tối bật"
+    ],
     "Cài đặt": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
       "修复部分APP帐号，无法同步到“帐号与同步”中的问题"
@@ -779,6 +819,22 @@
     ],
     "ระบบ": [
       "การเพิ่มประสิทธิภาพ: อัปเดตแพทช์ความปลอดภัยของแอนดรอยด์เป็นสิงหาคม 2021 เพิ่มความปลอดภัยของระบบ"
+    ],
+    "แถบสถานะ, แผงการแจ้งเตือน": [
+      "การเพิ่มประสิทธิภาพ: อัลกอริทึมสำหรับการแสดงการแจ้งเตือนสายเรียกเข้า",
+      "การเพิ่มประสิทธิภาพ: การแจ้งเตือน",
+      "การเพิ่มประสิทธิภาพ: ความเข้ากันได้ของธีมของบุคคลที่สามสำหรับหน้าต่างแจ้งเตือน",
+      "การเพิ่มประสิทธิภาพ: การปรับโหมดมืดสำหรับการแจ้งเตือน",
+      "แก้ไข: การแจ้งเตือนแบบลอยซ้อนทับกันเมื่อใช้พื้นหลังโปร่งใส",
+      "แก้ไข: องค์ประกอบข้อความการอนุญาตซ้อนทับกันหลังจากกดการแจ้งเตือนค้างไว้",
+      "แก้ไข: การแจ้งเตือนแสดงไม่ถูกต้องเมื่อใช้ ล็อกแอป",
+      "แก้ไข: แอนิเมชั่นตัวทำความสะอาดแสดงไม่ถูกต้อง",
+      "แก้ไข: ไม่สามารถเปิดหน้าต่างแจ้งเตือนได้ในบางกรณี",
+      "แก้ไข: การแจ้งเตือนแสดงไม่ถูกต้องหลังสายที่ไม่ได้รับ",
+      "แก้ไข: ปัญหาเกี่ยวกับการอนุญาตหลังจากไม่ได้รับสาย",
+      "แก้ไข: การควบคุมเครื่องเล่นเพลงไม่ได้แสดงในแถบการแจ้งเตือนทุกครั้ง",
+      "แก้ไข: การแจ้งเตือนแสดงไม่ถูกต้องทุกครั้งเมื่อใช้ \"ยกขึ้นเพื่อปลุก\"",
+      "แก้ไข: ปุ่มต่างๆ แสดงไม่ถูกต้องในการแจ้งเตือนทุกครั้งเมื่อเปิดโหมดมืด"
     ],
     "การตั้งค่า": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
@@ -949,6 +1005,9 @@
       "Fix: Using Face unlock and Fingerprint unlock simultaneously led to crashes in some cases",
       "Fix: Lock screen notifications disappeared after an ended call",
       "Fix: Lock screen items weren't displayed when super wallpapers and themes were combined"
+    ],
+    "Xiaomi بۇلۇت مۇلازىمىتى": [
+      "Fix: Cleaner animations weren't displayed correctly"
     ]
   },
   "logs_bo": {
@@ -991,6 +1050,9 @@
       "Fix: Using Face unlock and Fingerprint unlock simultaneously led to crashes in some cases",
       "Fix: Lock screen notifications disappeared after an ended call",
       "Fix: Lock screen items weren't displayed when super wallpapers and themes were combined"
+    ],
+    "Mi Cloud": [
+      "Fix: Cleaner animations weren't displayed correctly"
     ]
   }
 }

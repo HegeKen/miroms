@@ -27,7 +27,7 @@
     "计算器": [
       "修复 未开启小爱同学情况下，计算器偶现崩溃的问题"
     ],
-    "相册": [
+    "画廊": [
       "新增 故事相册开关，一键控制是否展示你的相册故事卡片",
       "修复 未开启小爱同学情况下，计算器偶现崩溃的问题"
     ],
@@ -90,6 +90,10 @@
     "Calculator": [
       "Fix: When Mi AI was off, Calculator crashed in some cases"
     ],
+    "Album": [
+      "New Stories album toggle to control whether your album story cards are shown with one tap",
+      "Fix: When Mi AI was off, Calculator crashed in some cases"
+    ],
     "Weather": [
       "New: Animations for cloudy and smoggy weather",
       "Optimization: Adjustments for 15-day forecast curves"
@@ -127,9 +131,6 @@
       "Fix: Issues with overlapping in Dual Clock settings",
       "Fix: Screen didn't always light up for notifications",
       "Fix: Media volume couldn't be restored after receiving a notification"
-    ],
-    "Gallery": [
-      "Fix: When Mi AI was off, Calculator crashed in some cases"
     ]
   },
   "logs_zh_tw": {
@@ -160,11 +161,15 @@
     "計算機": [
       "新增 故事卡片與照片優選開關"
     ],
+    "相簿": [
+      "新增 故事相簿開關，一鍵控制是否顯示你的相簿故事卡片",
+      "新增 故事卡片與照片優選開關"
+    ],
     "天氣": [
       "新增 陰天和霧霾動畫",
       "優化 15天趨勢介面適配"
     ],
-    "設定": [
+    "设置": [
       "優化 設置頁的系統應用與更多應用的文案和圖標",
       "優化 Wi-Fi清單排列策略，以信號的強度排列"
     ],
@@ -180,11 +185,18 @@
     "其他": [
       "Improved system security and stability"
     ],
-    "相簿": [
-      "新增 故事卡片與照片優選開關"
+    "設定": [
+      "優化 Wi-Fi清單排列策略，以信號的強度排列",
+      "優化 設置頁的系統應用與更多應用的文案和圖標"
     ]
   },
   "logs_ja": {
+    "システム": [
+      "最適化: ロック画面の誤タッチ問題を改善し、ポケット内での画面の誤操作を防止",
+      "最適化: Android セキュリティパッチを 2019 年 6 月版に更新しました。システムの安全性が向上しました。",
+      "リモートでコードが実行される可能性があるセキュリティ脆弱性を修正",
+      "最適化: ロック画面のポケットモード"
+    ],
     "アプリロック": [
       "新規: 顔認証によるアプリのロック解除に対応",
       "追加: 顔認証によるアプリのロック解除をサポート"
@@ -192,11 +204,23 @@
     "連絡先": [
       "修正: SIMカードの連絡先を削除できない場合がある問題"
     ],
+    "ロック画面、ステータスバー、通知バー": [
+      "新規: 通知パネルにNFCショートカットを追加",
+      "新規: システムテーマで、ロック画面の時計が3種類のカスタムスタイルに対応し、ロック画面の詳細設定で変更できます。",
+      "追加: 多彩なAOD時計と24時間AOD時計",
+      "新機能: 顔認証でロック解除後、ロック画面に留まっている場合に指紋でホーム画面へ進める機能",
+      "修正: 常時表示ディスプレイ設定ページで、デュアルクロックのプレビュー内の数字が折り返される問題",
+      "ロック画面での着信時に画面が点灯しないことがある問題を修正",
+      "修正: 通知を受信した後にメディア音量が元に戻らない問題"
+    ],
     "時計": [
       "タイマーページのボタンをタップした際に点滅する問題を修正",
       "特定の日付で時計が強制終了する問題を修正",
       "タイマーページでボタンをタップした際にチラつく問題を修正",
       "特別な日付に時計がクラッシュする問題を修正"
+    ],
+    "アルバム": [
+      "ストーリーアルバムのスイッチを追加し、アルバムのストーリーカードを表示するかどうかをワンタップで制御できます"
     ],
     "天気": [
       "追加: 曇りとスモッグのアニメーション",
@@ -216,17 +240,40 @@
       "新規：Xiaomi交通が重慶暢通カードに対応",
       "Mi Pay のオンラインカード支払い中のネットワーク切断画面の利用フローを最適化"
     ],
+    "ロック画面、ステータスバー、通知シェード": [
+      "新規: 通知パネルにNFCショートカットを追加",
+      "新規: システムテーマでは、ロック画面の時計が3種類のカスタムスタイルに対応し、ロック画面の詳細設定で変更できます。",
+      "追加: 多彩なAOD時計と24時間AOD時計",
+      "新機能: 顔認証でロック解除後、ロック画面に留まっている場合に指紋でホーム画面へ進める機能",
+      "修正: 常時表示設定ページのデュアルクロックプレビューで数字が折り返される問題",
+      "ロック画面での着信時に画面が点灯しないことがある問題を修正",
+      "修正: 通知を受信した後にメディア音量が元に戻らない問題",
+      "修正: 常時表示ディスプレイ設定ページで、デュアルクロックのプレビュー内の数字が折り返される問題"
+    ],
     "その他": [
       "システムのセキュリティと安定性の向上"
     ],
+    "ロック画面、ステータスバー、通知パネル": [
+      "新規: 通知パネルにNFCショートカットを追加",
+      "新規: システムテーマでは、ロック画面の時計が3種類のカスタムスタイルに対応し、ロック画面の詳細設定で変更できます。",
+      "追加: 多彩なAOD時計と24時間AOD時計",
+      "新機能: 顔認証でロック解除に成功しロック画面に留まった場合、指紋でホーム画面に進めるようになりました",
+      "修正: 常時表示ディスプレイ設定ページで、デュアルクロックのプレビュー内の数字が折り返される問題",
+      "ロック画面での着信時に画面が点灯しないことがある問題を修正",
+      "修正: 通知を受信した後にメディア音量が元に戻らない問題"
+    ],
     "ゲーム高速化": [
       "新機能: ゲーム中の着信通話にフローティングウィンドウ"
-    ],
-    "ロック画面、ステータスバー、通知シェード": [
-      "修正: 通知を受信した後にメディア音量が元に戻らない問題"
     ]
   },
   "logs_ko": {
+    "시스템": [
+      "최적화: 잠금 화면 오터치 문제를 개선하여 주머니 속에서 화면 오작동 방지",
+      "최적화: Android 보안 패치를 2019년 6월로 업데이트했습니다. 시스템 보안이 향상되었습니다.",
+      "원격 코드 실행으로 이어질 수 있는 보안 취약점 수정",
+      "최적화: 잠금화면 시의 주머니 내 접촉 오작동 문제",
+      "최적화: 잠금 화면 주머니 모드"
+    ],
     "앱 잠금": [
       "신규: 얼굴 인식으로 앱 잠금 해제 지원",
       "추가: 얼굴 인식으로 앱 잠금 해제 지원"
@@ -234,11 +281,23 @@
     "연락처": [
       "수정: 일부 상황에서 SIM 카드의 연락처를 삭제할 수 없는 문제"
     ],
+    "잠금 화면, 상태 표시줄, 알림 표시줄": [
+      "새로운 기능: 알림 창에 NFC 바로가기 추가",
+      "새로운 기능: 시스템 테마에서 잠금 화면 시계가 3가지 사용자 지정 스타일을 지원하며, 잠금 화면 고급 설정에서 변경할 수 있습니다.",
+      "추가: 다양한 컬러 AOD 시계 및 24시간 AOD 시계",
+      "새 기능: 얼굴 인식으로 잠금 해제 후 잠금 화면에 머무를 때 지문으로 홈 화면에 진입하는 기능",
+      "수정: 듀얼 시계 설정 내의 콘텐츠가 겹쳐 표시되는 문제",
+      "잠금 화면에서 전화 수신 시 화면이 켜지지 않는 문제를 수정했습니다",
+      "수정: 알림을 받은 후 미디어 볼륨이 복원되지 않는 문제"
+    ],
     "시계": [
       "타이머 페이지에서 버튼을 탭할 때 깜박이는 문제를 수정했습니다",
       "특정 날짜에 시계가 강제 종료되는 문제 수정",
       "타이머 페이지에서 버튼을 탭할 때 깜빡이는 문제를 수정했습니다.",
       "특정 날짜에 시계가 비정상 종료되는 문제를 수정했습니다"
+    ],
+    "앨범": [
+      "스토리 앨범 스위치 추가, 앨범 스토리 카드를 표시할지 원터치로 제어"
     ],
     "날씨": [
       "추가: 흐린 날씨와 스모그 애니메이션",
@@ -252,20 +311,36 @@
     "게임 가속": [
       "새 기능: 게임 중 수신 전화를 플로팅 창으로 표시"
     ],
-    "MI 월렛": [
+    "샤오미 지갑": [
       "신규: Mi Pay가 'UnionPay QuickPass' 결제를 지원합니다",
       "신규: Xiaomi 교통 징진지 호환 카드 사용자 지정 금액 충전 지원",
       "추가: Xiaomi 교통이 충칭 창퉁 카드를 지원합니다",
       "Mi Pay 온라인 카드 결제 중 네트워크 끊김 화면 사용 흐름 최적화"
     ],
+    "잠금화면, 상태 바, 알림 바": [
+      "새로운 기능: 알림 창에 NFC 바로가기 추가",
+      "새 기능: 시스템 테마에서 잠금 화면 시계가 3가지 사용자 지정 스타일을 지원하며, 잠금 화면 고급 설정에서 변경할 수 있습니다.",
+      "추가: 다양한 컬러 AOD 시계 및 24시간 AOD 시계",
+      "새 기능: 얼굴 인식으로 잠금 해제 후 잠금 화면에 머무를 때 지문으로 홈 화면에 진입하는 기능",
+      "수정: 상시 표시 설정 페이지의 듀얼 클록 미리보기에서 숫자가 줄바꿈되는 문제",
+      "잠금 화면에서 전화 수신 시 화면이 켜지지 않는 문제를 수정했습니다",
+      "수정: 알림을 받은 후 미디어 볼륨이 복원되지 않는 문제",
+      "수정: 듀얼 시계 설정 내의 콘텐츠가 겹쳐 표시되는 문제"
+    ],
     "기타": [
       "시스템 보안 및 안정성 개선"
     ],
+    "잠금 화면, 상태 표시줄, 알림창": [
+      "새로운 기능: 알림 창에 NFC 바로가기 추가",
+      "새 기능: 시스템 테마에서 잠금 화면 시계가 3가지 사용자 지정 스타일을 지원하며, 잠금 화면 고급 설정에서 변경할 수 있습니다.",
+      "추가: 다양한 컬러 AOD 시계 및 24시간 AOD 시계",
+      "새 기능: 얼굴 인식으로 잠금 해제에 성공한 후 잠금 화면에 머무를 때 지문으로 홈 화면에 들어갈 수 있습니다",
+      "수정: 듀얼 시계 설정 내의 콘텐츠가 겹쳐 표시되는 문제",
+      "잠금 화면에서 전화 수신 시 화면이 켜지지 않는 문제를 수정했습니다",
+      "수정: 알림을 받은 후 미디어 볼륨이 복원되지 않는 문제"
+    ],
     "게임 속도 향상": [
       "새 기능: 게임 중 수신 전화를 위한 플로팅 창"
-    ],
-    "잠금화면, 상태 바, 알림 바": [
-      "수정: 알림을 받은 후 미디어 볼륨이 복원되지 않는 문제"
     ]
   },
   "logs_ru": {
@@ -292,6 +367,9 @@
     "Часы": [
       "Исправлено: Кнопка таймера начинала мигать после нажатия",
       "Исправлено: Некорректное завершение работы приложения Часы в определенные дни"
+    ],
+    "Альбом": [
+      "Добавлен переключатель альбома историй для управления показом карточек историй в альбоме одним нажатием"
     ],
     "Погода": [
       "Добавлено: анимации для пасмурной погоды и смога",
@@ -323,17 +401,36 @@
     ]
   },
   "logs_uk": {
+    "Система": [
+      "Оптимізація: проблеми випадкових торкань екрана блокування, щоб уникнути помилкових дій на екрані, коли телефон у кишені",
+      "Оптимізація: Оновлено патч безпеки Google (2019#6), підвищено безпеку системи.",
+      "Виправлено вразливість безпеки, яка могла призвести до віддаленого виконання коду",
+      "Оптимізація: Режим «У кишені»",
+      "Оптимізація: Режим «У кишені» екрана блокування"
+    ],
     "Блокування додатків": [
       "Нове: Підтримка розблокування застосунків обличчям"
     ],
     "Контакти": [
       "Виправлено: У деяких випадках контакти не вдавалося видалити з SIM-картки"
     ],
+    "Екран блокування, рядок стану, рядок сповіщень": [
+      "Нове: ярлик NFC у панелі сповіщень",
+      "Нове: У системній темі годинник екрана блокування підтримує три користувацькі стилі, які можна змінити в розширених налаштуваннях екрана блокування.",
+      "Додано: кілька кольорових годинників AOD і 24-годинний годинник AOD",
+      "Нове: Перехід на головний екран відбитком пальця, якщо пристрій розблоковано обличчям і залишено на екрані блокування",
+      "Виправлено: перенесення цифр у попередньому перегляді подвійного годинника на сторінці налаштувань Always-On Display.",
+      "Виправлено: екран іноді не вмикався під час вхідного виклику на екрані блокування",
+      "Виправлено: Гучність медіа не відновлювалася після отримання сповіщення"
+    ],
     "Годинник": [
       "Виправлено: кнопка на сторінці таймера блимає після натискання",
       "Виправлено: Годинник аварійно завершував роботу в окремі дати",
       "Виправлено проблему мерехтіння кнопок на сторінці таймера під час натискання.",
       "Виправлено проблему аварійного завершення роботи Годинника в особливі дати"
+    ],
+    "Альбом": [
+      "Додано перемикач альбому історій для керування показом карток історій в альбомі одним дотиком"
     ],
     "Погода": [
       "Додано: анімації для похмурої погоди та смогу",
@@ -348,17 +445,38 @@
       "Нове: Плаваючі вікна для вхідних викликів під час ігор",
       "Нове: плаваюче вікно для вхідних дзвінків під час ігор"
     ],
+    "MI Гаманець": [
+      "Нове: Mi Pay тепер підтримує оплату UnionPay QuickPass",
+      "Додано: картка Xiaomi Transit для Пекіна, Тяньцзіня та Хебею підтримує поповнення на довільну суму",
+      "Додано: Xiaomi Транспорт підтримує картку Chongqing Changtong",
+      "Оптимізація сценарію використання сторінки відсутності мережі під час онлайн-оплати карткою в Mi Pay"
+    ],
+    "Екран блокування, рядок стану, панель сповіщень": [
+      "Нове: ярлик NFC у панелі сповіщень",
+      "Нове: у системних темах годинник екрана блокування підтримує три власні стилі, які можна змінити в розширених налаштуваннях екрана блокування.",
+      "Додано: кілька кольорових годинників AOD і 24-годинний годинник AOD",
+      "Нове: Перехід на головний екран відбитком пальця, якщо пристрій розблоковано обличчям і залишено на екрані блокування",
+      "Виправлено: проблему з перенесенням цифр у попередньому перегляді подвійного годинника на сторінці налаштувань режиму завжди активного екрана",
+      "Виправлено: екран іноді не вмикався під час вхідного виклику на екрані блокування",
+      "Виправлено: Гучність медіа не відновлювалася після отримання сповіщення",
+      "Виправлено: перенесення цифр у попередньому перегляді подвійного годинника на сторінці налаштувань Always-On Display.",
+      "Нове: Використовувати відбиток пальця для переходу на головний екран після успішного розблокування обличчям із затримкою на екрані блокування"
+    ],
     "Інше": [
       "Покращення безпеки та стабільності системи"
     ],
     "Блокування програм": [
       "Нове: Підтримка розблокування застосунків за допомогою розпізнавання обличчя"
-    ],
-    "Екран блокування, рядок стану, панель сповіщень": [
-      "Виправлено: Гучність медіа не відновлювалася після отримання сповіщення"
     ]
   },
   "logs_pl": {
+    "System": [
+      "Optymalizacja: problem przypadkowych dotknięć ekranu blokady, aby uniknąć błędnych operacji na ekranie w kieszeni",
+      "Optymalizacja: Zaktualizowano poprawkę zabezpieczeń Google (2019#6), zwiększono bezpieczeństwo systemu.",
+      "Naprawiono lukę w zabezpieczeniach mogącą prowadzić do zdalnego wykonania kodu",
+      "Zoptymalizowano: Tryb blokady ekranu w kieszeni",
+      "Optymalizacja: Tryb kieszeniowy ekranu blokady"
+    ],
     "Blokada aplikacji": [
       "Nowość: Odblokowywanie aplikacji za pomocą rozpoznawania twarzy",
       "Nowość: Obsługa odblokowywania aplikacji przez rozpoznawanie twarzy"
@@ -366,11 +484,23 @@
     "Kontakty": [
       "Poprawiono: W niektórych przypadkach nie można było usunąć kontaktów z karty SIM"
     ],
+    "Ekran blokady, pasek stanu, pasek powiadomień": [
+      "Nowość: skrót NFC w panelu powiadomień",
+      "Nowość: W motywie systemowym zegar ekranu blokady obsługuje trzy niestandardowe style, które można zmienić w ustawieniach zaawansowanych ekranu blokady.",
+      "Dodano: wiele kolorowych zegarów AOD i zegar 24-godzinny AOD",
+      "Nowość: Możliwość przejścia do ekranu głównego odciskiem palca po odblokowaniu twarzą i pozostaniu na ekranie blokady",
+      "Naprawiono: Problemy z pokrywaniem sie ustawień podwójnego zegara",
+      "Naprawiono: ekran czasami nie włączał się przy połączeniu przychodzącym na ekranie blokady",
+      "Poprawiono: Głośność multimediów nie wracała po otrzymaniu powiadomienia"
+    ],
     "Zegar": [
       "Poprawka: przycisk na stronie minutnika miga po dotknięciu",
       "Naprawiono: Zegar ulegał awarii w określonych datach",
       "Naprawiono migotanie przycisków na stronie timera po dotknięciu.",
       "Naprawiono problem z awarią aplikacji Zegar w specjalne dni"
+    ],
+    "Album": [
+      "Dodano przełącznik albumu historii umożliwiający jednym dotknięciem włączenie lub wyłączenie wyświetlania kart historii w albumie"
     ],
     "Pogoda": [
       "Dodano: animacje dla pochmurnej pogody i smogu",
@@ -391,25 +521,60 @@
       "Dodano: Xiaomi Transit obsługuje kartę Chongqing Changtong",
       "Optymalizacja obsługi strony braku sieci podczas płatności kartą online w Mi Pay"
     ],
-    "Inne": [
+    "Ekran blokady, pasek powiadomień,panel powiadomień": [
+      "Nowość: skrót NFC w panelu powiadomień",
+      "Nowość: w motywach systemowych zegar ekranu blokady obsługuje trzy niestandardowe style, które można zmienić w zaawansowanych ustawieniach ekranu blokady.",
+      "Dodano: wiele kolorowych zegarów AOD i zegar 24-godzinny AOD",
+      "Nowość: Możliwość przejścia do ekranu głównego odciskiem palca po odblokowaniu twarzą i pozostaniu na ekranie blokady",
+      "Poprawka: problem z zawijaniem cyfr w podglądzie podwójnego zegara na stronie ustawień ekranu Always-On",
+      "Naprawiono: ekran czasami nie włączał się przy połączeniu przychodzącym na ekranie blokady",
+      "Poprawiono: Głośność multimediów nie wracała po otrzymaniu powiadomienia",
+      "Naprawiono: Problemy z pokrywaniem sie ustawień podwójnego zegara"
+    ],
+    "Reszt": [
       "Większe bezpieczeństwo i stabilność systemu"
     ],
-    "Ekran blokady, pasek powiadomień,panel powiadomień": [
+    "Ekran blokady, pasek stanu, panel powiadomień": [
+      "Nowość: skrót NFC w panelu powiadomień",
+      "Nowość: w motywach systemowych zegar ekranu blokady obsługuje trzy niestandardowe style, które można zmienić w zaawansowanych ustawieniach ekranu blokady.",
+      "Dodano: wiele kolorowych zegarów AOD i zegar 24-godzinny AOD",
+      "Nowość: Po pomyślnym odblokowaniu twarzą i pozostaniu na ekranie blokady można użyć odcisku palca, aby przejść do ekranu głównego",
+      "Naprawiono: Problemy z pokrywaniem sie ustawień podwójnego zegara",
+      "Naprawiono: ekran czasami nie włączał się przy połączeniu przychodzącym na ekranie blokady",
       "Poprawiono: Głośność multimediów nie wracała po otrzymaniu powiadomienia"
     ]
   },
   "logs_de": {
+    "System": [
+      "Optimierung: Problem mit versehentlicher Berührung des Sperrbildschirms behoben, um Fehlbedienungen des Bildschirms in der Tasche zu vermeiden",
+      "Optimierung: Android-Sicherheitspatch auf Juni 2019 aktualisiert. Systemsicherheit verbessert.",
+      "Sicherheitslücke behoben, die remote Codeausführung ermöglichen konnte",
+      "Optimierung: Sperrbildschirm-Taschenmodus",
+      "Optimierung: Taschenmodus für den Sperrbildschirm"
+    ],
     "App-Sperre": [
       "Neu: Apps per Gesichtserkennung entsperren"
     ],
     "Kontakte": [
       "Behoben: Kontakte konnten in manchen Fällen nicht von SIM-Karten gelöscht werden"
     ],
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
+      "Neu: NFC-Schnellschalter in der Benachrichtigungsleiste",
+      "Neu: Anpassbare Uhr auf dem Sperrbildschirm (Einstellungen > Sperrbildschirm & Passwort > Erweiterte Einstellungen)",
+      "Neu: Mehrere farbige AOD-Uhren und 24-Stunden-AOD-Uhr",
+      "Neu: Nach erfolgreicher Gesichtserkennung auf dem Sperrbildschirm per Fingerabdruck zum Startbildschirm wechseln",
+      "Behoben: Zeilenumbruch der Ziffern in der Vorschau der Doppeluhr auf der Always-On-Display-Einstellungsseite.",
+      "Behoben: Bildschirm leuchtete bei Benachrichtigungen nicht immer auf",
+      "Behoben: Die Medienlautstärke wurde nach Erhalt einer Benachrichtigung nicht wiederhergestellt"
+    ],
     "Uhr": [
       "Behebung: Schaltfläche auf der Timer-Seite blinkt nach dem Antippen",
       "Behoben: Uhr stürzte an bestimmten Daten ab",
       "Behebt das Flackern der Schaltflächen auf der Timer-Seite beim Antippen.",
       "Behebung des Problems, dass die Uhr an besonderen Tagen abstürzt"
+    ],
+    "Galerie": [
+      "Neuer Schalter für Story-Album: Steuere mit einem Tippen, ob deine Album-Story-Karten angezeigt werden"
     ],
     "Wetter": [
       "Neu: Animationen für bewölktes und smogiges Wetter",
@@ -424,16 +589,32 @@
       "Neu: Schwebende Fenster für eingehende Anrufe während Spielen",
       "Neu: Schwebefenster für eingehende Anrufe in Spielen"
     ],
-    "MI Geldbörse": [
+    "Xiaomi Wallet": [
       "Neu: Mi Pay unterstützt jetzt UnionPay QuickPass-Zahlungen",
       "Neu: Benutzerdefinierte Aufladebeträge für Xiaomi Verkehrskarte „Jing-Jin-Ji“",
       "Neu: Xiaomi Transit unterstützt die Chongqing Changtong Karte",
       "Optimierung des Nutzungsablaufs der Offline-Seite bei Online-Kartenzahlungen mit Mi Pay"
     ],
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
+      "Neu: NFC-Schnellschalter in der Benachrichtigungsleiste",
+      "Neu: Im Systemdesign unterstützt die Sperrbildschirm-Uhr drei benutzerdefinierte Stile, die in den erweiterten Sperrbildschirm-Einstellungen geändert werden können.",
+      "Neu: Mehrere farbige AOD-Uhren und 24-Stunden-AOD-Uhr",
+      "Neu: Nach erfolgreicher Gesichtserkennung auf dem Sperrbildschirm per Fingerabdruck zum Startbildschirm wechseln",
+      "Behebt: Zeilenumbruch der Ziffern in der Doppeluhr-Vorschau auf der Always-On-Display-Einstellungsseite",
+      "Behoben: Bildschirm leuchtete bei Benachrichtigungen nicht immer auf",
+      "Behoben: Die Medienlautstärke wurde nach Erhalt einer Benachrichtigung nicht wiederhergestellt",
+      "Behoben: Zeilenumbruch der Ziffern in der Vorschau der Doppeluhr auf der Always-On-Display-Einstellungsseite."
+    ],
     "Sonstiges": [
       "Systemsicherheit und -stabilität verbessert"
     ],
-    "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsfeld": [
+      "Neu: NFC-Schnellschalter in der Benachrichtigungsleiste",
+      "Neu: Im Systemdesign unterstützt die Sperrbildschirm-Uhr drei benutzerdefinierte Stile, die in den erweiterten Sperrbildschirm-Einstellungen geändert werden können.",
+      "Neu: Mehrere farbige AOD-Uhren und 24-Stunden-AOD-Uhr",
+      "Neu: Fingerabdruck zum Öffnen des Startbildschirms verwenden, wenn das Gerät per Gesichtserkennung entsperrt wurde und auf dem Sperrbildschirm bleibt",
+      "Behoben: Zeilenumbruch der Ziffern in der Vorschau der Doppeluhr auf der Always-On-Display-Einstellungsseite.",
+      "Behoben: Bildschirm leuchtete bei Benachrichtigungen nicht immer auf",
       "Behoben: Die Medienlautstärke wurde nach Erhalt einer Benachrichtigung nicht wiederhergestellt"
     ]
   },
@@ -465,6 +646,9 @@
       "Correction : l'horloge plantait à certaines dates",
       "Correction du clignotement des boutons de la page Minuteur lors d’un appui.",
       "Correction du problème de fermeture inattendue de l'application Horloge à certaines dates"
+    ],
+    "Album": [
+      "Ajout d'un interrupteur pour l'album de stories, permettant d'afficher ou non vos cartes de stories en un geste"
     ],
     "Météo": [
       "Nouveau : animations pour temps couvert et smog",
@@ -540,6 +724,9 @@
       "Risolto: Il pulsante del timer cominciava a lampeggiare quando veniva premuto",
       "Risolto: Chiusura forzata di Orologio in alcune date specifiche"
     ],
+    "Album": [
+      "Aggiunto l'interruttore album storie per controllare con un tocco se mostrare le card delle storie nell'album"
+    ],
     "Meteo": [
       "Nuovo: animazioni per tempo nuvoloso e smog",
       "Ottimizzazione: adattamento dell'interfaccia delle tendenze a 15 giorni"
@@ -606,18 +793,21 @@
       "Reparado: El botón del temporizador comenzó a parpadear después de ser pulsado",
       "Reparado: Cierre forzoso del Reloj en algunas fechas específicas"
     ],
+    "Álbum de fotos": [
+      "Se añade el interruptor de álbum de historias para controlar con un toque si se muestran las tarjetas de historias del álbum"
+    ],
     "Tiempo": [
       "Nuevo: animaciones para tiempo nublado y smog",
       "Optimización: adaptación de la interfaz de tendencia de 15 días"
     ],
-    "Ajustes": [
+    "Configuración": [
       "Optimización: Textos e iconos de Aplicaciones del sistema y Más aplicaciones en Ajustes",
       "Optimización: Los valores de redes Wi-Fi son ordenados"
     ],
     "Acelerador de juegos": [
       "Nuevo: Ventanas flotantes para llamadas entrantes durante juegos"
     ],
-    "MI Cartera": [
+    "Monedero de Xiaomi": [
       "Nuevo: Mi Pay ahora admite pagos UnionPay QuickPass",
       "Nuevo: importes de recarga personalizados para la tarjeta Xiaomi Transporte «Jing-Jin-Ji»",
       "Nuevo: Xiaomi Transit es compatible con la tarjeta Chongqing Changtong",
@@ -625,6 +815,10 @@
     ],
     "Otros": [
       "Estabilidad y seguridad del sistema mejorada"
+    ],
+    "Ajustes": [
+      "Optimización: Los valores de redes Wi-Fi son ordenados",
+      "Optimización: Textos e iconos de Aplicaciones del sistema y Más aplicaciones en Ajustes"
     ],
     "Pantalla de bloqueo, barra de estado, panel de notificaciones": [
       "Nuevo: Acceso directo al NFC en la Barra de notificaciones",
@@ -664,6 +858,9 @@
       "Correção: o Relógio fechava à força em datas específicas",
       "Corrigido o problema de os botões da página do timer piscarem ao tocar.",
       "Corrigido o problema de fechamento inesperado do Relógio em datas especiais"
+    ],
+    "Álbum": [
+      "Adicionado o interruptor do álbum de histórias para controlar com um toque se os cartões de histórias do álbum são exibidos"
     ],
     "Clima": [
       "Novo: animações para tempo nublado e smog",
@@ -737,6 +934,9 @@
       "Onarım: Zamanlayıcı tuşu, dokunulduktan sonra yanmaya başladı",
       "Onarım: Saat, belirli tarihlerde kapanmaya zorlandı"
     ],
+    "albüm": [
+      "Albüm hikâyeleri kartlarının gösterilip gösterilmeyeceğini tek dokunuşla kontrol eden hikâye albümü anahtarı eklendi"
+    ],
     "Hava durumu": [
       "Yeni: bulutlu ve dumanlı hava animasyonları",
       "Optimizasyon: 15 günlük trend arayüzü uyarlaması"
@@ -797,6 +997,9 @@
       "Memperbaiki masalah tombol di halaman Timer berkedip saat diketuk.",
       "Memperbaiki masalah aplikasi Jam yang force close pada tanggal khusus"
     ],
+    "Album": [
+      "Menambahkan tombol album cerita untuk mengatur apakah kartu cerita album ditampilkan dengan sekali ketuk"
+    ],
     "Cuaca": [
       "Baru: animasi cuaca mendung dan smog",
       "Optimasi: penyesuaian antarmuka tren 15 hari"
@@ -809,7 +1012,7 @@
     "Peningkat kecepatan permainan": [
       "Baru: Jendela mengambang untuk panggilan masuk saat bermain permainan"
     ],
-    "MI Dompet": [
+    "Xiaomi Wallet": [
       "Baru: Mi Pay kini mendukung pembayaran UnionPay QuickPass",
       "Baru: isi ulang dengan nominal khusus untuk kartu Xiaomi Transportasi “Jing-Jin-Ji”",
       "Baru: Xiaomi Transit mendukung kartu Chongqing Changtong",
@@ -846,6 +1049,13 @@
     ]
   },
   "logs_vi": {
+    "Hệ thống": [
+      "Tối ưu: khắc phục lỗi chạm nhầm màn hình khóa, tránh thao tác nhầm trên màn hình khi điện thoại trong túi",
+      "Tối ưu hóa: Đã cập nhật bản vá bảo mật Google (2019#6), tăng cường bảo mật hệ thống.",
+      "Đã khắc phục lỗ hổng bảo mật có thể dẫn đến thực thi mã từ xa",
+      "Tối ưu: Chế độ túi cho màn hình khóa",
+      "Tối ưu vấn đề chạm nhầm trên màn hình khóa, tránh thao tác nhầm trên màn hình khi điện thoại trong túi."
+    ],
     "Khóa ứng dụng": [
       "Mới: Hỗ trợ mở khóa ứng dụng bằng khuôn mặt",
       "Mới: Hỗ trợ mở khóa ứng dụng bằng nhận diện khuôn mặt"
@@ -853,11 +1063,25 @@
     "Danh bạ": [
       "Khắc phục lỗi không thể xóa danh bạ trên SIM"
     ],
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Mới: phím tắt NFC trong bảng thông báo",
+      "Mới: Trong chủ đề hệ thống, đồng hồ màn hình khóa hỗ trợ ba kiểu tùy chỉnh, có thể sửa trong cài đặt nâng cao của màn hình khóa.",
+      "Mới: Nhiều đồng hồ AOD màu và đồng hồ AOD 24 giờ",
+      "Mới: Dùng vân tay để vào Màn hình chính khi đã mở khóa bằng khuôn mặt và vẫn ở màn hình khóa",
+      "Sửa: Lỗi số trong bản xem trước Đồng hồ kép bị xuống dòng trên trang cài đặt Màn hình luôn bật.",
+      "Sửa lỗi: Màn hình đôi khi không sáng khi có cuộc gọi đến trên màn hình khóa",
+      "Khắc phục sự cố âm lượng media không được khôi phục sau khi nhận thông báo",
+      "Mới: Trong chủ đề hệ thống, đồng hồ màn hình khóa hỗ trợ ba kiểu tùy chỉnh, có thể thay đổi trong cài đặt nâng cao của màn hình khóa.",
+      "Sửa lỗi: Vấn đề số bị xuống dòng trong bản xem trước Đồng hồ kép tại trang cài đặt Màn hình luôn bật"
+    ],
     "Đồng hồ": [
       "Sửa lỗi: nút trên trang hẹn giờ nhấp nháy khi được nhấn",
       "Sửa lỗi: Đồng hồ bị buộc dừng vào một số ngày cụ thể",
       "Đã khắc phục lỗi nhấp nháy nút trên trang Hẹn giờ khi chạm.",
       "Sửa lỗi ứng dụng Đồng hồ bị thoát đột ngột vào những ngày đặc biệt"
+    ],
+    "Album": [
+      "Thêm công tắc album câu chuyện để bật/tắt hiển thị thẻ câu chuyện trong album chỉ với một lần chạm"
     ],
     "Thời tiết": [
       "Mới: hoạt ảnh thời tiết nhiều mây và khói bụi",
@@ -872,7 +1096,7 @@
       "Mới: Cửa sổ nổi cho cuộc gọi đến trong khi chơi game",
       "Mới: cửa sổ nổi cho cuộc gọi đến khi chơi game"
     ],
-    "MI Ví": [
+    "Tiền túi Xiaomi": [
       "Mới: Mi Pay hiện hỗ trợ thanh toán UnionPay QuickPass",
       "Mới: nạp tiền với số tiền tùy chỉnh cho thẻ Xiaomi Giao thông “Jing-Jin-Ji”",
       "Mới: Xiaomi Transit hỗ trợ thẻ Chongqing Changtong",
@@ -881,11 +1105,24 @@
     "Khác": [
       "Cải thiện tính ổn định và bảo mật hệ thống"
     ],
-    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+    "Màn hình khóa, thanh trạng thái, bảng thông báo": [
+      "Mới: phím tắt NFC trong bảng thông báo",
+      "Mới: Trong chủ đề hệ thống, đồng hồ màn hình khóa hỗ trợ ba kiểu tùy chỉnh, có thể thay đổi trong cài đặt nâng cao của màn hình khóa.",
+      "Mới: Nhiều đồng hồ AOD màu và đồng hồ AOD 24 giờ",
+      "Mới: Dùng vân tay để mở Màn hình chính sau khi mở khóa bằng khuôn mặt thành công và vẫn ở màn hình khóa",
+      "Sửa: Lỗi số trong bản xem trước Đồng hồ kép bị xuống dòng trên trang cài đặt Màn hình luôn bật.",
+      "Sửa lỗi: Màn hình đôi khi không sáng khi có cuộc gọi đến trên màn hình khóa",
       "Khắc phục sự cố âm lượng media không được khôi phục sau khi nhận thông báo"
     ]
   },
   "logs_th": {
+    "ระบบ": [
+      "ปรับปรุง: แก้ปัญหาการสัมผัสหน้าจอล็อกโดยไม่ตั้งใจ เพื่อหลีกเลี่ยงการทำงานผิดพลาดของหน้าจอขณะโทรศัพท์อยู่ในกระเป๋า",
+      "การปรับให้เหมาะสม: อัปเดตแพตช์ความปลอดภัยของ Google (2019#6) เพิ่มความปลอดภัยของระบบ",
+      "แก้ไขช่องโหว่ความปลอดภัยที่อาจทำให้สามารถรันโค้ดจากระยะไกลได้",
+      "เพิ่มประสิทธิภาพ: โหมดในกระเป๋าบนหน้าจอล็อก",
+      "ปรับปรุงปัญหาการแตะโดยไม่ตั้งใจบนหน้าจอล็อก เพื่อหลีกเลี่ยงการทำงานผิดพลาดบนหน้าจอเมื่อโทรศัพท์อยู่ในกระเป๋า"
+    ],
     "ล็อกแอป": [
       "เพิ่มใหม่: รองรับการปลดล็อกแอปด้วยใบหน้า",
       "ใหม่: รองรับการปลดล็อกแอปด้วยการจดจำใบหน้า"
@@ -893,11 +1130,23 @@
     "รายชื่อ": [
       "แก้ไขปัญหาที่ไม่สามารถลบรายชื่อผู้ติดต่อใน SIM ได้"
     ],
+    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
+      "ใหม่: ทางลัด NFC ในแผงการแจ้งเตือน",
+      "ใหม่: ภายใต้ธีมระบบ นาฬิกาหน้าจอล็อกรองรับรูปแบบกำหนดเองสามแบบ สามารถแก้ไขได้ในการตั้งค่าขั้นสูงของหน้าจอล็อก",
+      "เพิ่ม: นาฬิกา AOD หลากสีและนาฬิกา AOD 24 ชั่วโมง",
+      "ใหม่: สามารถใช้ลายนิ้วมือเข้าสู่หน้าจอหลักได้เมื่อปลดล็อกด้วยใบหน้าและยังคงอยู่ที่หน้าจอล็อก",
+      "แก้ไข: ปัญหาตัวเลขในตัวอย่างนาฬิกาคู่ขึ้นบรรทัดใหม่ในหน้าตั้งค่าจอแสดงผลตลอดเวลา",
+      "แก้ไขปัญหาหน้าจอบางครั้งไม่ติดเมื่อมีสายเข้าในหน้าจอล็อก",
+      "แก้ไขปัญหาเสียงสื่อไม่กลับคืนหลังจากได้รับการแจ้งเตือน"
+    ],
     "นาฬิกา": [
       "แก้ไขปัญหาปุ่มในหน้าตัวจับเวลากระพริบเมื่อแตะ",
       "แก้ไขปัญหานาฬิกาหยุดทำงานในวันที่เฉพาะเจาะจง",
       "แก้ไขปัญหาปุ่มในหน้า Timer กระพริบเมื่อแตะ",
       "แก้ไขปัญหานาฬิกาหยุดทำงานในวันที่พิเศษ"
+    ],
+    "คลังภาพ": [
+      "เพิ่มสวิตช์อัลบั้มเรื่องราว เพื่อควบคุมการแสดงการ์ดเรื่องราวในอัลบั้มด้วยการแตะครั้งเดียว"
     ],
     "สภาพอากาศ": [
       "ใหม่: แอนิเมชันสภาพอากาศครึ้มและหมอกควัน",
@@ -917,28 +1166,63 @@
       "ใหม่: Xiaomi Transit รองรับบัตร Chongqing Changtong",
       "ปรับปรุงขั้นตอนการใช้งานหน้าขาดการเชื่อมต่อระหว่างการชำระเงินด้วยบัตรออนไลน์ของ Mi Pay"
     ],
+    "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
+      "ใหม่: ทางลัด NFC ในแผงการแจ้งเตือน",
+      "ใหม่: ภายใต้ธีมระบบ นาฬิกาหน้าจอล็อกรองรับรูปแบบกำหนดเอง 3 แบบ สามารถแก้ไขได้ในการตั้งค่าขั้นสูงของหน้าจอล็อก",
+      "เพิ่ม: นาฬิกา AOD หลากสีและนาฬิกา AOD 24 ชั่วโมง",
+      "ใหม่: สามารถใช้ลายนิ้วมือเข้าสู่หน้าจอหลักได้เมื่อปลดล็อกด้วยใบหน้าและยังคงอยู่ที่หน้าจอล็อก",
+      "แก้ไข: ปัญหาตัวเลขตัดขึ้นบรรทัดใหม่ในตัวอย่างนาฬิกาคู่บนหน้าการตั้งค่าจอแสดงผลตลอดเวลา",
+      "แก้ไขปัญหาหน้าจอบางครั้งไม่ติดเมื่อมีสายเข้าในหน้าจอล็อก",
+      "แก้ไขปัญหาเสียงสื่อไม่กลับคืนหลังจากได้รับการแจ้งเตือน",
+      "แก้ไข: ปัญหาตัวเลขในตัวอย่างนาฬิกาคู่ขึ้นบรรทัดใหม่ในหน้าตั้งค่าจอแสดงผลตลอดเวลา"
+    ],
     "อื่นๆ": [
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
     ],
+    "หน้าจอล็อก, แถบสถานะ, แผงการแจ้งเตือน": [
+      "ใหม่: ทางลัด NFC ในแผงการแจ้งเตือน",
+      "ใหม่: ภายใต้ธีมระบบ นาฬิกาหน้าจอล็อกรองรับรูปแบบกำหนดเอง 3 แบบ สามารถแก้ไขได้ในการตั้งค่าขั้นสูงของหน้าจอล็อก",
+      "เพิ่ม: นาฬิกา AOD หลากสีและนาฬิกา AOD 24 ชั่วโมง",
+      "ใหม่: ใช้ลายนิ้วมือเข้าสู่หน้าจอหลักเมื่อปลดล็อกด้วยใบหน้าสำเร็จและยังคงอยู่บนหน้าจอล็อก",
+      "แก้ไข: ปัญหาตัวเลขในตัวอย่างนาฬิกาคู่ขึ้นบรรทัดใหม่ในหน้าตั้งค่าจอแสดงผลตลอดเวลา",
+      "แก้ไขปัญหาหน้าจอบางครั้งไม่ติดเมื่อมีสายเข้าในหน้าจอล็อก",
+      "แก้ไขปัญหาเสียงสื่อไม่กลับคืนหลังจากได้รับการแจ้งเตือน"
+    ],
     "เพิ่มความเร็วเกม": [
       "ใหม่: หน้าต่างลอยสำหรับสายเรียกเข้าขณะเล่นเกม"
-    ],
-    "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
-      "แก้ไขปัญหาเสียงสื่อไม่กลับคืนหลังจากได้รับการแจ้งเตือน"
     ]
   },
   "logs_ar": {
+    "النظام": [
+      "تحسين: مشكلة اللمس العرضي على شاشة القفل لتجنب تفاعل الشاشة غير المقصود أثناء وجود الهاتف في الجيب",
+      "تحسين: تحديث تصحيح أمان Google (2019#6) لتحسين أمان النظام.",
+      "تم إصلاح ثغرة أمنية قد تسمح بتنفيذ التعليمات البرمجية عن بُعد",
+      "محسن وضع شاشة القفل في الجيب",
+      "تحسين مشكلة اللمس غير المقصود على شاشة القفل، لتجنب العمليات غير المقصودة على الشاشة عندما يكون الهاتف في الجيب."
+    ],
     "قفل التطبيقات": [
       "جديد: دعم فتح التطبيقات عبر التعرف على الوجه"
     ],
     "جهات الاتصال": [
       "إصلاح مشكلة تعذّر حذف جهات اتصال SIM"
     ],
+    "شاشة القفل، شريط الحالة، شريط الإشعارات": [
+      "جديد: اختصار NFC في لوحة الإشعارات",
+      "جديد: ضمن السمة النظامية، تدعم ساعة شاشة القفل ثلاثة أنماط مخصصة، ويمكن تعديلها في الإعدادات المتقدمة لشاشة القفل.",
+      "جديد: ساعات AOD ملونة متعددة وساعة AOD بنظام 24 ساعة",
+      "جديد: استخدام بصمة الإصبع للانتقال إلى الشاشة الرئيسية عند نجاح فتح القفل بالوجه والبقاء على شاشة القفل",
+      "إصلاح مشاكل التداخل في إعدادات الساعة المزدوجة",
+      "إصلاح: تعذّر إضاءة الشاشة أحيانًا عند ورود مكالمة على شاشة القفل",
+      "إصلاح مشكلة عدم عودة صوت الوسائط بعد تلقي إشعار"
+    ],
     "الساعة": [
       "إصلاح مشكلة وميض زر صفحة المؤقت عند النقر عليه",
       "إصلاح مشكلة تعطل تطبيق الساعة في تواريخ محددة",
       "إصلاح مشكلة وميض أزرار صفحة المؤقت عند النقر عليها.",
       "إصلاح مشكلة تعطل تطبيق الساعة في التواريخ الخاصة"
+    ],
+    "ألبوم الصور": [
+      "إضافة مفتاح ألبوم القصص للتحكم في عرض بطاقات قصص الألبوم بنقرة واحدة"
     ],
     "الطقس": [
       "جديد: رسوم متحركة للطقس الغائم والضباب الدخاني",
@@ -958,8 +1242,27 @@
       "جديد: Xiaomi Transit يدعم بطاقة Chongqing Changtong",
       "تحسين مسار استخدام صفحة انقطاع الشبكة أثناء الدفع بالبطاقة عبر الإنترنت في Mi Pay"
     ],
-    "أخرى": [
+    "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
+      "جديد: اختصار NFC في لوحة الإشعارات",
+      "جديد: ضمن سمات النظام، تدعم ساعة شاشة القفل ثلاثة أنماط مخصصة، ويمكن تعديلها في الإعدادات المتقدمة لشاشة القفل.",
+      "جديد: ساعات AOD ملونة متعددة وساعة AOD بنظام 24 ساعة",
+      "جديد: استخدام بصمة الإصبع للانتقال إلى الشاشة الرئيسية عند نجاح فتح القفل بالوجه والبقاء على شاشة القفل",
+      "إصلاح التفاف الأرقام في معاينة الساعة المزدوجة بصفحة إعدادات شاشة العرض الدائم",
+      "إصلاح: تعذّر إضاءة الشاشة أحيانًا عند ورود مكالمة على شاشة القفل",
+      "إصلاح مشكلة عدم عودة صوت الوسائط بعد تلقي إشعار",
+      "إصلاح مشاكل التداخل في إعدادات الساعة المزدوجة"
+    ],
+    "آخرين": [
       "تحسين أمن واستقرار النظام"
+    ],
+    "شاشة القفل، شريط الحالة، لوحة الإشعارات": [
+      "جديد: اختصار NFC في لوحة الإشعارات",
+      "جديد: ضمن سمات النظام، تدعم ساعة شاشة القفل ثلاثة أنماط مخصصة، ويمكن تعديلها في الإعدادات المتقدمة لشاشة القفل.",
+      "جديد: ساعات AOD ملونة متعددة وساعة AOD بنظام 24 ساعة",
+      "جديد: استخدام بصمة الإصبع للدخول إلى الشاشة الرئيسية بعد نجاح فتح القفل بالوجه والبقاء على شاشة القفل",
+      "إصلاح مشاكل التداخل في إعدادات الساعة المزدوجة",
+      "إصلاح: تعذّر إضاءة الشاشة أحيانًا عند ورود مكالمة على شاشة القفل",
+      "إصلاح مشكلة عدم عودة صوت الوسائط بعد تلقي إشعار"
     ],
     "ساعة": [
       "إصلاح مشكلة وميض أزرار صفحة المؤقت عند النقر عليها.",
@@ -967,12 +1270,16 @@
     ],
     "مسرّع الألعاب": [
       "جديد: نوافذ عائمة للمكالمات الواردة أثناء الألعاب"
-    ],
-    "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
-      "إصلاح مشكلة عدم عودة صوت الوسائط بعد تلقي إشعار"
     ]
   },
   "logs_in": {
+    "सिस्टम": [
+      "अनुकूलन: लॉक स्क्रीन पर गलत टच की समस्या, जेब में फ़ोन रहने पर स्क्रीन के गलत संचालन से बचाव",
+      "अनुकूलन: Google सुरक्षा पैच (2019#6) अपडेट किया गया, सिस्टम की सुरक्षा बढ़ाई गई।",
+      "दूरस्थ कोड निष्पादन का कारण बन सकने वाली सुरक्षा भेद्यता को ठीक किया गया",
+      "अनुकूलन: लॉक स्क्रीन पॉकेट मोड",
+      "लॉक स्क्रीन की गलत टच समस्या में सुधार, जेब में फ़ोन होने पर स्क्रीन पर गलत ऑपरेशन से बचाने के लिए।"
+    ],
     "ऐप लॉक": [
       "नया: चेहरा पहचान से ऐप्स अनलॉक करने की सुविधा",
       "नया: चेहरा पहचान से ऐप्स अनलॉक करने का समर्थन"
@@ -980,11 +1287,23 @@
     "संपर्क": [
       "सुधार: SIM से संपर्क हटाने में असमर्थता की समस्या ठीक की गई"
     ],
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
+      "नया: सूचना शेड में NFC शॉर्टकट",
+      "नया: सिस्टम थीम के अंतर्गत, लॉक स्क्रीन घड़ी तीन कस्टम शैलियों का समर्थन करती है, जिन्हें लॉक स्क्रीन की उन्नत सेटिंग्स में बदला जा सकता है।",
+      "नया: कई रंगीन AOD घड़ियाँ और 24-घंटे की AOD घड़ी",
+      "नया: चेहरे से अनलॉक होने और लॉक स्क्रीन पर रहने पर फ़िंगरप्रिंट से होम स्क्रीन पर जाने की सुविधा",
+      "ठीक किया गया: Always-On Display सेटिंग पेज पर डुअल क्लॉक प्रीव्यू में संख्याओं के लाइन ब्रेक की समस्या",
+      "लॉक स्क्रीन पर आने वाली कॉल के दौरान स्क्रीन कभी-कभी नहीं जलने की समस्या ठीक की गई",
+      "सूचना प्राप्त होने के बाद मीडिया वॉल्यूम बहाल न होने की समस्या ठीक की गई"
+    ],
     "घड़ी": [
       "टाइमर पेज पर बटन टैप करने पर झिलमिलाने की समस्या ठीक की गई",
       "कुछ खास तारीखों पर घड़ी के क्रैश होने की समस्या ठीक की गई",
       "टाइमर पेज पर बटन क्लिक करने पर होने वाली झिलमिलाहट की समस्या ठीक की गई।",
       "विशेष तिथियों पर घड़ी के क्रैश होने की समस्या ठीक की गई"
+    ],
+    "अल्बम": [
+      "स्टोरीज़ एल्बम स्विच जोड़ा गया, जिससे एक टैप में नियंत्रित करें कि आपके एल्बम स्टोरी कार्ड दिखें या नहीं"
     ],
     "मौसम": [
       "नया: बादलों और स्मॉग वाले मौसम के एनिमेशन",
@@ -1004,17 +1323,32 @@
       "नया: Xiaomi Transit चोंगकिंग चांगटोंग कार्ड का समर्थन करता है",
       "Mi Pay ऑनलाइन कार्ड भुगतान के दौरान नेटवर्क बंद पेज के उपयोग प्रवाह को अनुकूलित करें"
     ],
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
+      "नया: सूचना शेड में NFC शॉर्टकट",
+      "नया: सिस्टम थीम के अंतर्गत, लॉक स्क्रीन घड़ी तीन कस्टम शैलियों का समर्थन करती है, जिन्हें लॉक स्क्रीन की उन्नत सेटिंग्स में बदला जा सकता है।",
+      "नया: कई रंगीन AOD घड़ियाँ और 24-घंटे की AOD घड़ी",
+      "नया: चेहरे से अनलॉक होने और लॉक स्क्रीन पर रहने पर फ़िंगरप्रिंट से होम स्क्रीन पर जाने की सुविधा",
+      "ठीक किया गया: ऑलवेज़-ऑन डिस्प्ले सेटिंग्स पेज पर डुअल क्लॉक प्रीव्यू में संख्याओं के रैपिंग की समस्या।",
+      "लॉक स्क्रीन पर आने वाली कॉल के दौरान स्क्रीन कभी-कभी नहीं जलने की समस्या ठीक की गई",
+      "सूचना प्राप्त होने के बाद मीडिया वॉल्यूम बहाल न होने की समस्या ठीक की गई",
+      "ठीक किया गया: Always-On Display सेटिंग पेज पर डुअल क्लॉक प्रीव्यू में संख्याओं के लाइन ब्रेक की समस्या",
+      "नया: चेहरे से अनलॉक सफल होने और लॉक स्क्रीन पर रहने पर फ़िंगरप्रिंट से होम स्क्रीन खोलें"
+    ],
     "अन्य": [
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
     ],
     "गेम स्पीड बूस्टर": [
       "नया: गेम के दौरान आने वाली कॉल के लिए फ़्लोटिंग विंडो"
-    ],
-    "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
-      "सूचना प्राप्त होने के बाद मीडिया वॉल्यूम बहाल न होने की समस्या ठीक की गई"
     ]
   },
   "logs_ug": {
+    "سىستېما": [
+      "ئەلالاشتۇرۇش: قۇلۇپ ئېكراننىڭ خاتا تېگىش مەسىلىسىنى ئەلالاشتۇرۇش، تېلېفون خالتىدا ئېكرانغا خاتا مەشغۇلات قىلىشتىن ساقلىنىش",
+      "ياخشىلاش: گوگل بىخەتەرلىك ياماقىنى (2019#6) يېڭىلاش، سىستېما بىخەتەرلىكىنى ئاشۇرۇش.",
+      "يىراقتىن كود ئىجرا قىلىشقا سەۋەب بولىدىغان بىخەتەرلىك كەمتۈكلۈكى تۈزىتىلدى.",
+      "Optimization: Lock screen pocket mode",
+      "قۇلۇپ ئېكرانىدىكى خاتا تەگكەن مەسىلىنى ياخشىلاش، تېلېفون يانچۇقتا بولغاندا ئېكراندا خاتا مەشغۇلات قىلىشتىن ساقلىنىش."
+    ],
     "ئەپ قۇلۇپى": [
       "يېڭى: ئەپ قۇلۇپىنى يۈز ئارقىلىق ئېچىشنى قوللايدۇ",
       "يېڭى: يۈز تونۇش ئارقىلىق ئەپلەرنىڭ قۇلۇپىنى ئېچىشنى قوللاش"

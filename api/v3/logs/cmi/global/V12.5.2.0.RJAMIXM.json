@@ -132,7 +132,19 @@
       "液態存儲】 靈敏且高效的檔案儲存機制，提升系統抗老化能力",
       "智慧均衡】 對旗艦硬體性能的智慧調整"
     ],
-    "設定": [
+    "控制中心": [
+      "優化: 增加橫向螢幕時打開方向鎖定的提示語",
+      "修復: 斷開藍牙設備時界面閃爍問題",
+      "修復: 退出省電模式後開關消失的問題",
+      "修復: 超級省電模式下無法收起控制中心的問題",
+      "修復: 省電模式開關失效的問題",
+      "修復: 開啟深色模式後，經典控制中心自動翻頁的問題",
+      "修復 WLAN 開啟或關閉時狀態變化延遲的問題",
+      "修復 上滑螢幕時，控制中心偶爾不會收起的問題",
+      "修復: 快速展開控制中心後亮度調節失效問題",
+      "修復: 勿擾模式下，接聽來電界面異常的問題"
+    ],
+    "设置": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
       "修复部分APP帐号，无法同步到“帐号与同步”中的问题"
     ],
@@ -163,6 +175,18 @@
       "アトマイズメモリ：超微細なメモリ管理メカニズムにより、RAMの使用をより効率的にします。",
       "液体ストレージ：新しい高感度なストレージメカニズムにより、時間が経過してもシステムの効率性と応答性が保たれます。",
       "スマートバランス：コアシステムの改善により、フラッグシップハードウェアのスペックを最大限に活かすことができます。"
+    ],
+    "コントロールセンター": [
+      "最適化: 横向きモードで、ロックされた向きを確認するダイアログが表示されるようになりました。",
+      "修正: Bluetoothデバイスの接続解除時に画面が点滅する問題",
+      "修正: バッテリーセーバーをオフにするとトグルが消えてしまう問題",
+      "修正: ウルトラバッテリーセーバーがオンのときにコントロールセンターを閉じることができない問題",
+      "修正: バッテリーセーバーのトグルが機能しない問題",
+      "修正: ダークモードでコントロールセンターが正しく表示されない問題",
+      "WLANのオン/オフ時に状態の変化が遅れる問題を修正",
+      "画面を上にスワイプした際、コントロールセンターが閉じないことがある問題を修正",
+      "修正: コントロールセンターを開くと明るさ調整の設定が解除されてしまう問題",
+      "修正: DNDモードで着信が正しく表示されない問題"
     ],
     "設定": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
@@ -196,6 +220,18 @@
       "리퀴드 스토리지: 시스템의 노후화를 방지하는 민감하고 효율적인 파일 저장 메커니즘을 지원합니다.",
       "스마트 밸런스: 코어 시스템 개선으로 플래그십 하드웨어 사양을 최대한 활용할 수 있습니다."
     ],
+    "제어 센터": [
+      "최적화: 가로 모드에서 방향 잠금에 대한 안내 추가",
+      "수정: 블루투스 기기의 연결 해제 시 화면이 점멸하는 문제",
+      "수정: 배터리 절약을 끈 후에 토글이 사라지는 문제",
+      "수정: 울트라 배터리 절약이 켜진 후 제어 센터를 닫을 수 없는 문제",
+      "수정: 배터리 절약 토글이 제대로 작동하지 않는 문제",
+      "수정: 다크 모드에서 제어 센터가 제대로 표시되지 않는 문제",
+      "WLAN 켜기/끄기 시 상태 변경이 지연되는 문제를 수정",
+      "화면을 위로 스와이프할 때 제어 센터가 간헐적으로 닫히지 않는 문제 수정",
+      "수정: 제어 센터가 열린 후에 밝기 조절 설정이 무시되는 문제",
+      "수정: 방해금지 모드에서 수신 통화가 제대로 표시되지 않는 문제"
+    ],
     "설정": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
       "修复部分APP帐号，无法同步到“帐号与同步”中的问题"
@@ -227,6 +263,18 @@
       "Атомизированная память: сверхгибкий механизм управления обеспечивает еще более эффективное использование оперативной памяти.",
       "Гибкое хранилище: новые чувствительные механизмы управления памятью обеспечивают надежную работу системы даже с течением времени.",
       "Смарт-баланс: улучшение основных модулей системы позволит вашему устройству максимально эффективно использовать все возможности флагманского оборудования."
+    ],
+    "Центр управления": [
+      "Оптимизация: Вы будете уведомлены о блокировке ориентации в альбомном режиме",
+      "Исправлено: Исправлено мерцание экрана при отключении Bluetooth-устройств",
+      "Исправлено: После отключения режима экономии энергии переключатели могли исчезать",
+      "Исправлено: В некоторых случаях нельзя было закрыть Центр управления, если был включен режим ультраэкономии энергии",
+      "Исправлено: Исправлена проблема, из-за которой мог не работать переключатель режима экономии энергии",
+      "Исправлено: В темном режиме Центр управления мог отображаться неправильно",
+      "Исправлена задержка изменения статуса при включении или выключении WLAN",
+      "Исправлена проблема, из-за которой Центр управления иногда не сворачивался при свайпе вверх по экрану",
+      "Исправлено: Исправлены ошибки параметров регулировки яркости, возникавшие при открытии Центра управления",
+      "Исправлено: В режиме \"Не беспокоить\" интерфейс входящих вызовов отображался неправильно"
     ],
     "Настройки": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
@@ -260,6 +308,18 @@
       "Гнучке сховище: нові чутливі механізми керування пам’яттю забезпечують надійну роботу системи навіть з плином часу.",
       "Смарт-баланс: покращення основних модулів системи дозволить вашому пристрою максимально ефективно використовувати всі можливості флагманського обладнання."
     ],
+    "Центр керування": [
+      "Оптимізація: Ви отримаєте сповіщення про блокуваня орієнтації у альбомному режимі",
+      "Виправлено: Виправлено мерехтиння екрана при відключенні Bluetooth-пристроїв",
+      "Виправлено: Після відключення режиму економії енергії перемикачі могли зникати",
+      "Виправлено: В деяких випадках було неможливо закрити Центр керування, якщо було увімкнено режим ультраекономії енергії",
+      "Виправлено: Виправлена проблема, через яку міг не працювати перемикач режиму економії енергії",
+      "Виправлено: У темному режимі центр керування міг відображатися неправильно",
+      "Виправлено затримку зміни стану під час увімкнення або вимкнення WLAN",
+      "Виправлено проблему, через яку Центр керування іноді не згортався під час свайпу вгору по екрану",
+      "Виправлено: Виправлені помилки параметрів регулювання яскравості, які з'являлися під час відкриття Центру керування",
+      "Виправлено: У режимі \"Не турбувати\" інтерфейс вхідних викликів відображався неправильно"
+    ],
     "Налаштування": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
       "修复部分APP帐号，无法同步到“帐号与同步”中的问题"
@@ -291,6 +351,18 @@
       "Pamięć atomizowana: bardzo precyzyjny mechanizm zarządzania pamięcią sprawi, że wykorzystanie pamięci RAM będzie bardziej wydajne.",
       "Przechowywanie w płynie: nowe wrażliwe mechanizmy przechowywania sprawią, że Twój system będzie żywy i responsywny w miarę upływu czasu.",
       "Inteligentna równowaga: ulepszenia systemu podstawowego umożliwiają Twojemu urządzeniu maksymalne wykorzystanie flagowych specyfikacji sprzętowych."
+    ],
+    "Centrum kontroli": [
+      "Zoptymalizowano: Od teraz będziesz powiadamiany o zablokowaniu ekranu w trybie poziomym",
+      "Naprawiono: Po rozłączeniu urządzenia Blueetooth ekran migał",
+      "Naprawiono: Przełącznik znikał po wyłączeniu trybu Oszczędzania baterii",
+      "Naprawiono: Nie można było zamknąć Centrum kontroli podczas Ultra oszczędzania energii",
+      "Naprawiono: Przełącznik Oszczędzania baterii nie działał",
+      "Naprawiono: Centrum kontroli nie było poprawnie wyświetlane w Trybie ciemnym",
+      "Naprawiono opóźnienie zmiany stanu podczas włączania lub wyłączania WLAN",
+      "Naprawiono problem, przez który Centrum sterowania czasami nie zwijało się przy przesunięciu w górę ekranu",
+      "Naprawiono: Ustawienia regulacji jasności zostały zakończone po otwarciu Centrum kontroli",
+      "Naprawiono: Połączenia przychodzące nie były wyświetlane poprawnie w trybie Nie przeszkadzać"
     ],
     "Ustawienia": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
@@ -324,6 +396,18 @@
       "Flüssiger Speicher: Neue sensible Speichermechanismen halten Ihr System im Laufe der Zeit lebendig und reaktionsschnell.",
       "Intelligente Balance: Verbesserungen am Systemkern ermöglichen es deinem Gerät, die Flagship-Hardware optimal zu nutzen."
     ],
+    "Kontrollzentrum": [
+      "Optimierung: Im Querformat wirst du jetzt auf die gesperrte Ausrichtung hingewiesen.",
+      "Behoben: Der Bildschirm flackerte beim Trennen von Bluetooth-Geräten",
+      "Behoben: Schalter verschwanden nach dem Ausschalten des Energiesparmodus",
+      "Behoben: Das Kontrollzentrum ließ sich bei aktivem Ultra-Energiesparmodus nicht schließen",
+      "Behoben: Der Schalter für den Energiesparmodus funktionierte nicht",
+      "Behoben: Das Kontrollzentrum wurde im Dunkelmodus nicht korrekt angezeigt",
+      "Verzögerte Statusaktualisierung beim Ein-/Ausschalten von WLAN behoben",
+      "Problem behoben, bei dem das Kontrollzentrum beim Wischen nach oben manchmal nicht eingeklappt ist",
+      "Behoben: Die Helligkeitsanpassung funktionierte nach dem Öffnen des Kontrollzentrums nicht mehr",
+      "Behoben: Eingehende Anrufe wurden im Nicht-stören-Modus nicht korrekt angezeigt"
+    ],
     "Einstellungen": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
       "修复部分APP帐号，无法同步到“帐号与同步”中的问题"
@@ -343,6 +427,9 @@
     ],
     "Statusleiste, Benachrichtigungsleiste": [
       "Behoben: Die Animationen des Reinigers wurden nicht korrekt angezeigt"
+    ],
+    "Xiaomi Cloud-Dienst": [
+      "Behoben: Die Animationen des Reinigers wurden nicht korrekt angezeigt"
     ]
   },
   "logs_fr": {
@@ -352,6 +439,18 @@
       "Mémoire atomisée : un mécanisme de gestion de mémoire ultra-fin rendra l'utilisation de la RAM plus efficace.",
       "Stockage liquide : de nouveaux mécanismes de stockage sensibles maintiendront votre système dynamique et réactif au fil du temps.",
       "Équilibre intelligent : les améliorations du système central permettent à votre appareil de tirer le meilleur parti des caractéristiques du matériel haut de gamme."
+    ],
+    "Centre de contrôle": [
+      "Optimisation: Vous serez maintenant invité à indiquer l'orientation verrouillée en mode paysage",
+      "Réparé: L'écran a clignoté pendant que les appareils Bluetooth étaient déconnectés",
+      "Réparé: Les bascules ont disparu après la désactivation de l'économiseur de batterie",
+      "Réparé: Le centre de contrôle ne pouvait pas être fermé lorsque l'économiseur de batterie Ultra était activé",
+      "Réparé: La bascule de l'économiseur de batterie n'a pas fonctionné",
+      "Réparé: Le centre de contrôle ne s'affichait pas correctement en mode sombre",
+      "Correction du retard de mise à jour de l'état lors de l'activation ou de la désactivation du WLAN",
+      "Correction du problème où le Centre de contrôle ne se réduisait parfois pas lors d'un balayage vers le haut de l'écran",
+      "Réparé: Les paramètres de réglage de la luminosité ont été rejetés après l'ouverture du Centre de contrôle",
+      "Réparé: Les appels entrants ne s'affichaient pas correctement en mode NPD"
     ],
     "Paramètres": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
@@ -385,6 +484,18 @@
       "Archiviazione fluida: nuovi meccanismi di archiviazione sensibili manterranno il tuo sistema veloce e reattivo nel tempo.",
       "Bilanciamento intelligente: i miglioramenti di sistema consentono al tuo dispositivo di sfruttare al meglio tutte le funzionalità hardware di ultima generazione."
     ],
+    "Centro di controllo": [
+      "Ottimizzazione: Ora ti verrà chiesto di disattivare la rotazione in modalità orizzontale",
+      "Risolto: Lo schermo lampeggiava durante la disconnessione dei dispositivi Bluetooth",
+      "Risolto: I comandi sparivano dopo la disattivazione del Risparmio energetico",
+      "Risolto: Il Centro di controllo non poteva essere chiuso quando Super risparmio energetico era in funzione",
+      "Risolto: Il comando del Risparmio energetico non funzionava",
+      "Risolto: Il Centro di controllo non veniva visualizzato correttamente in modalità scura",
+      "Risolto il ritardo nell'aggiornamento dello stato durante l'attivazione o disattivazione del WLAN",
+      "Risolto il problema per cui il Centro di controllo a volte non si chiudeva scorrendo verso l'alto sullo schermo",
+      "Risolto: Le impostazioni di regolazione della luminosità venivano rimosse dopo l'apertura del Centro di controllo",
+      "Risolto: Le chiamate in arrivo non erano visualizzate correttamente in modalità ND"
+    ],
     "Impostazioni": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
       "修复部分APP帐号，无法同步到“帐号与同步”中的问题"
@@ -417,7 +528,19 @@
       "Almacenamiento fluido: los nuevos mecanismos de almacenamiento sensibles mantendrán tu sistema activo y receptivo a medida que pase el tiempo.",
       "Equilibrio inteligente: las mejoras del sistema principal permiten que tu dispositivo aproveche al máximo las especificaciones del hardware insignia."
     ],
-    "Ajustes": [
+    "Centro de control": [
+      "Optimización: Ahora se te avisará acerca de la orientación bloqueada en el Modo apaisado",
+      "Reparado: La pantalla parpadeaba cuando los dispositivos Bluetooth se desconectaban",
+      "Reparado: Los interruptores desaparecían después de que se desactivase el Ahorro de batería",
+      "Reparado: El Centro de control no se podía cerrar cuando el Ahorro de batería extremo estaba activado",
+      "Reparado: El interruptor de Ahorro de batería no funcionaba",
+      "Reparado: El Centro de control no se mostraba correctamente en el Modo oscuro",
+      "Corregido el retraso en el cambio de estado al activar o desactivar WLAN",
+      "Corregido el problema por el que el Centro de control a veces no se cerraba al deslizar hacia arriba en la pantalla",
+      "Reparado: La configuración de ajuste del brillo se revocaba después de que se abriese el Centro de control",
+      "Reparado: Las llamadas entrantes no se mostraban correctamente en el Modo no molestar"
+    ],
+    "Configuración": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
       "修复部分APP帐号，无法同步到“帐号与同步”中的问题"
     ],
@@ -448,6 +571,18 @@
       "Memória atomizada: Mecanismo de gerenciamento de memória ultra sensível tornará o gerenciamento da RAM mais eficiente.",
       "Armazenamento fluido: Novos mecanismos sensíveis de armazenamento manterão seu sistema rápido e responsivo como se fosse o primeiro dia de uso.",
       "Equilíbrio inteligente: As melhorias do sistema principal permitem que o seu dispositivo tire o melhor proveito das especificações do hardware de última geração."
+    ],
+    "Centro de controle": [
+      "Otimização: Você será alertado sobre o travamento da orientação no Modo paisagem",
+      "Correção: A tela piscava quando dispositivos Bluetooth eram desconectados",
+      "Correção: Seletores desapareciam após a Economia de bateria ser desativada",
+      "Correção: O Centro de controle não podia ser fechado quando a Ultra economia de bateria estava ativada",
+      "Correção: O seletor da Economia de bateria não funcionava",
+      "Correção: O Centro de controle não era exibido corretamente no Modo Escuro",
+      "Corrigido o atraso na alteração do estado ao ativar ou desativar o WLAN",
+      "Corrigido o problema em que a Central de Controlo às vezes não recolhia ao deslizar para cima no ecrã",
+      "Correção: Configurações de ajuste de brilho desapareciam após o Centro de controle ser aberto",
+      "Correção: Chamadas recebidas não eram exibidas corretamente no modo Não perturbe"
     ],
     "Configurações": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
@@ -481,6 +616,18 @@
       "Sıvı depolama: Yeni hassas depolama mekanizmaları zaman geçtikçe sisteminizi canlı ve duyarlı tutacaktır.",
       "Akıllı bakiye. Temel sistem iyileştirmeleri, cihazınızın amiral gemisi donanım özelliklerinden en iyi şekilde yararlanmasını sağlar."
     ],
+    "Kontrol merkezi": [
+      "Optimizasyon: Şimdi Manzara modunda yönü kilitleme hakkında sorulacak",
+      "Onarım: Bluetooth cihazlarının bağlantısı kesildiğinde ekran yanıp söndü",
+      "Onarım: Pil tasarrufu kapatıldıktan sonra araçlar kayboldu",
+      "Onarım: Ultra pil tasarrufu açık olduğunda Kontrol merkezi kapatılmadı",
+      "Onarım: Pil tasarrufu aracı çalışmadı",
+      "Onarım: Kontrol merkezi Karanlık modda düzgün bir şekilde görüntülenmedi",
+      "WLAN açılıp kapatılırken durum değişikliği gecikmesi düzeltildi",
+      "Ekranda yukarı kaydırırken Kontrol Merkezi'nin bazen kapanmaması sorunu giderildi",
+      "Onarım: Kontrol merkezi açıldığında Parlaklık ayarlamaları ayarları reddedildi",
+      "Onarım: Gelen aramalar Rahatsız Etme Modu'nda düzgün bir şekilde görüntülenmedi"
+    ],
     "Ayarlar": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
       "修复部分APP帐号，无法同步到“帐号与同步”中的问题"
@@ -512,6 +659,18 @@
       "Memori terbagi menjadi bagian-bagian (atomized): Mekanisme manajemen memori ultra-halus akan membuat penggunaan RAM lebih efisien.",
       "Penyimpanan yang bersifat seperti cairan: Mekanisme penyimpanan sensitif baru akan membuat sistem Anda tetap hidup dan responsif seiring berjalannya waktu.",
       "Keseimbangan cerdas: Peningkatan sistem inti memungkinkan performa fitur dari perangkat flagship yang ada, dapat mencapai level yang terbaik."
+    ],
+    "Pusat kontrol": [
+      "Pengoptimalan: Anda sekarang akan diminta konfirmasi tentang orientasi terkunci dalam mode Horisontal",
+      "Perbaikan: Layar berkedip saat perangkat Bluetooth terputus",
+      "Perbaikan: Toggle hilang setelah Penghemat baterai dimatikan",
+      "Perbaikan: Pusat kontrol tidak dapat ditutup saat penghemat baterai Ultra dihidupkan",
+      "Perbaikan: Toggle Penghemat baterai tidak bekerja",
+      "Perbaikan: Pusat kontrol tidak ditampilkan dengan benar pada mode Gelap",
+      "Memperbaiki keterlambatan perubahan status saat WLAN diaktifkan atau dinonaktifkan",
+      "Memperbaiki masalah Pusat Kontrol terkadang tidak menutup saat menggeser ke atas layar",
+      "Perbaikan: Pengaturan penyesuaian kecerahan diberhentikan setelah Pusat kontrol dibuka",
+      "Perbaikan: Panggilan masuk tidak ditampilkan dengan benar dalam mode Jangan ganggu"
     ],
     "Pengaturan": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
@@ -545,6 +704,18 @@
       "Lưu trữ trạng thái lỏng: Cơ chế lưu trữ nhạy cảm mới sẽ giúp hệ thống luôn vận hành mượt mà và phản hồi nhanh theo thời gian.",
       "Cân bằng thông minh: Cải thiện hệ thống lõi để thiết bị phát huy tối đa thông số kỹ thuật phần cứng flagship."
     ],
+    "Trung tâm điều khiển": [
+      "Tối ưu: Giờ bạn sẽ được nhắc về khóa hướng màn hình trong Chế độ nằm ngang",
+      "Sửa: Màn hình nhấp nháy khi thiết bị Bluetooth ngắt kết nối",
+      "Sửa: Phím nhanh biến mất sau khi tắt Tiết kiệm pin",
+      "Sửa: Không thể đóng trung tâm điều khiển khi bật Tiết kiệm pin tối ưu",
+      "Sửa: Phím nhanh tiết kiệm pin không hoạt động",
+      "Sửa: Trung tâm điều khiển không được hiển thị chính xác ở Chế độ nền tối",
+      "Đã sửa độ trễ thay đổi trạng thái khi bật hoặc tắt WLAN",
+      "Sửa lỗi Trung tâm điều khiển đôi khi không thu gọn khi vuốt lên trên màn hình",
+      "Sửa: Cài đặt điều chỉnh độ sáng không hoạt động sau khi Trung tâm điều khiển được mở",
+      "Sửa: Cuộc gọi đến không được hiển thị chính xác trong Chế độ không làm phiền"
+    ],
     "Cài đặt": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
       "修复部分APP帐号，无法同步到“帐号与同步”中的问题"
@@ -576,6 +747,18 @@
       "หน่วยความจำ Atomized: กลไกการจัดการหน่วยความจำแบบ Ultra-fine จะทำให้การใช้แรมมีประสิทธิภาพมากขึ้น",
       "พื้นที่จัดเก็บแบบของเหลว: กลไกการจัดเก็บข้อมูลที่ละเอียดอ่อนใหม่จะทำให้ระบบของคุณมีชีวิตชีวาและตอบสนองเมื่อเวลาผ่านไป",
       "สมดุลสมาร์ท: การปรับปรุงระบบหลักช่วยให้อุปกรณ์ของคุณใช้ข้อกำหนดฮาร์ดแวร์รุ่นเรือธงได้ดีที่สุด"
+    ],
+    "ศูนย์กลางการควบคุม": [
+      "การเพิ่มประสิทธิภาพ: คุณจะได้รับแจ้งเกี่ยวกับการวางแนวล็อคในโหมดแนวนอน",
+      "แก้ไข: หน้าจอกะพริบขณะตัดการเชื่อมต่ออุปกรณ์บลูทูธ",
+      "แก้ไข: ปุ่มเปิด-ปิดหายไปหลังจากปิดโหมดประหยัดแบตเตอรี่",
+      "แก้ไข: ไม่สามารถปิดศูนย์ควบคุมเมื่อเปิดตัวประหยัดแบตเตอรี่อัลตร้าอยู่",
+      "แก้ไข: ปุ่มเปิด-ปิดโหมดประหยัดแบตเตอรี่ไม่ทำงาน",
+      "แก้ไข: ศูนย์ควบคุมแสดงไม่ถูกต้องในโหมดมืด",
+      "แก้ไขปัญหาสถานะเปลี่ยนแปลงล่าช้าเมื่อเปิดหรือปิด WLAN",
+      "แก้ไขปัญหาที่ศูนย์ควบคุมบางครั้งไม่ย่อเมื่อปัดขึ้นบนหน้าจอ",
+      "แก้ไข: การตั้งค่าการปรับความสว่างถูกยกเลิกหลังจากเปิดศูนย์ควบคุม",
+      "แก้ไข: สายเรียกเข้าไม่แสดงอย่างถูกต้องในโหมด DND"
     ],
     "การตั้งค่า": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
@@ -609,6 +792,18 @@
       "تخزين السائل: تحافظ آليات التخزين الحساسة الجديدة على استجابة ومرونة نظامك على الرغم من مدمرات الوقت.",
       "التوازن الذكي: تتيح لك التحسينات المدخلة على النظام الأساسي تحقيق أقصى استفادة من مواصفات معدات جهازك الرئيسية."
     ],
+    "مركز التحكم": [
+      "التحسين: مشكلة مطالبتك الآن بقفل التدوير في الوضع الأفقي",
+      "الإصلاح: مشكلة وميض الشاشة أثناء فصل أجهزة البلوتوث",
+      "الإصلاح: مشكلة اختفاء مفاتيح مركز التحكم بعد إيقاف تشغيل موفر البطارية",
+      "الإصلاح: مشكلة لا يمكن إغلاق مركز التحكم عند تشغيل موفر البطارية الأقصى",
+      "الإصلاح: مشكلة عدم عمل مفتاح تبديل موفر البطارية",
+      "الإصلاح: مشكله عدم ظهور مركز التحكم بشكل صحيح في الوضع الداكن",
+      "إصلاح تأخر تغيير الحالة عند تشغيل WLAN أو إيقاف تشغيله",
+      "إصلاح مشكلة عدم انطواء مركز التحكم أحيانًا عند السحب لأعلى على الشاشة",
+      "الإصلاح: فشل إعداد ضبط السطوع بعد فتح مركز التحكم",
+      "الإصلاح: مشكلة عدم ظهور المكالمات الواردة بشكل صحيح في وضع عدم الإزعاج"
+    ],
     "الإعدادات": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
       "修复部分APP帐号，无法同步到“帐号与同步”中的问题"
@@ -640,6 +835,18 @@
       "एटमाइज्ड मेमोरी: अल्ट्रा-फाइन मेमोरी मैनेजमेंट मैकेनिज्म रैम के उपयोग को और अधिक कुशल बनाएगा.",
       "लिक्विड स्टोरेज: नया संवेदनशील स्टोरेज मैकेनिज़्म के इस्तेमाल की वजह से आपका सिस्टम गुजरते समय के साथ जीवंत और जल्द प्रतिक्रिया देने वाला बना रहेगा.",
       "स्मार्ट संतुलन: कोर सिस्टम में किए गए सुधारों की बदौलत आपका डिवाइस फ्लैगशिप हार्डवेयर स्पेक्स में सर्वश्रेष्ठ बन गया है."
+    ],
+    "कंट्रोल सेंटर": [
+      "ऑप्टिमाइज़ेशन अब आपको लैंडस्केप मोड में लॉक ओरिएंटेशन के बारे में संकेत दिया जाएगा",
+      "ठीक करें ब्लूटूथ डिवाइस के डिस्कनेक्ट होने पर स्क्रीन फ्लैश हो रही थी",
+      "ठीक करें बैटरी बचतकर्ता के बंद होने के बाद टॉगल गायब हो रहे थे",
+      "ठीक करें अल्ट्रा अल्ट्रा बैटरी बचतकर्ता चालू होने पर कंट्रोल सेंटर बंद नहीं किया जा सका",
+      "ठीक करें बैटरी बचतकर्ता टॉगल काम नहीं कर रहा है",
+      "ठीक करें डार्क मोड में, कंट्रोल सेंटर सही ढंग से नहीं दिख रहा था",
+      "WLAN चालू या बंद करते समय स्थिति बदलने में देरी की समस्या ठीक की गई",
+      "स्क्रीन पर ऊपर की ओर स्वाइप करते समय कंट्रोल सेंटर कभी-कभी बंद न होने की समस्या ठीक की गई",
+      "ठीक करें कंट्रोल सेंटर खोले जाने के बाद चमक एडजस्टमेंट सेटिंग्स खारिज हो रहे थे",
+      "ठीक करें DND मोड में इनकमिंग कॉल सही ढंग से नहीं दिखाई दे रहे थे"
     ],
     "सेटिंग्स": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
@@ -692,6 +899,9 @@
     ],
     "Status bar, Notification shade": [
       "Fix: Cleaner animations weren't displayed correctly"
+    ],
+    "Xiaomi بۇلۇت مۇلازىمىتى": [
+      "Fix: Cleaner animations weren't displayed correctly"
     ]
   },
   "logs_bo": {
@@ -720,6 +930,9 @@
       "Fix: Lock screen notifications disappeared after an ended call"
     ],
     "Status bar, Notification shade": [
+      "Fix: Cleaner animations weren't displayed correctly"
+    ],
+    "Mi Cloud": [
       "Fix: Cleaner animations weren't displayed correctly"
     ]
   }

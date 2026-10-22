@@ -5,6 +5,7 @@
       "修复 长截屏无法下拉到底"
     ],
     "电话": [
+      "优化用于在双SIM模式下信号丢失后恢复连接的算法",
       "优化 双卡场景下掉卡后的处理策略"
     ],
     "锁屏、状态栏、通知栏": [
@@ -26,17 +27,18 @@
       "Fix: Scrolling screenshots didn't always work properly"
     ],
     "Phone": [
-      "Optimize Algorithm for restoring connection after signal was lost in Dual SIM mode",
+      "Optimize the handling strategy after a card is removed in a dual-card scenario.",
       "Optimization: Algorithm for restoring connection after signal was lost in Dual SIM mode"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Fixed an issue where floating notifications occasionally still appeared after being turned off",
+      "Fix: Lock screen UI elements overlapped when the device was charging"
     ],
     "Settings": [
       "Fix: Couldn't turn on portable hotspot when device name was set to maximum length"
     ],
     "File Explorer": [
       "Fix: Errors occured after videos from the folder with hidden files were edited"
-    ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Fix: Lock screen UI elements overlapped when the device was charging"
     ],
     "Other": [
       "Improved system security and stability"
@@ -53,15 +55,19 @@
       "修復 截長屏不能下拉到底的問題",
       "修復 長截圖無法下拉到底"
     ],
-    "電話": [
-      "優化雙卡場景下掉卡後的處理策略",
+    "电话": [
+      "优化双卡环境下某张卡片丢失（即无法正常使用）时的处理策略",
       "優化 雙卡情境下掉卡後的處理策略"
     ],
-    "檔案管理員": [
-      "修復 私密資料夾中剪切圖片影片後開啟檔案異常的問題"
-    ],
     "解鎖畫面、狀態欄、通知欄": [
+      "修復偶現關閉懸浮通知後，懸浮通知仍顯示的問題",
       "修復 螢幕鎖定時充電球與預計充電時間顯示重疊的問題"
+    ],
+    "设置": [
+      "修復 設定手機名稱為最大長度，熱點無法開啟的問題"
+    ],
+    "文件管理器": [
+      "修復 私密資料夾中剪切圖片影片後開啟檔案異常的問題"
     ],
     "其他": [
       "Improved system security and stability"
@@ -76,17 +82,18 @@
       "長いスクリーンショットで最後までスクロールできない問題を修正"
     ],
     "電話": [
-      "デュアルSIM環境でSIMカードが切断された後の処理ポリシーを最適化",
+      "デュアルSIMカード環境において、一方のSIMカードが通信不能になった後の処理戦略を最適化する",
       "最適化: デュアルSIM時のSIMカード喪失後の処理ポリシー"
+    ],
+    "ロック画面、ステータスバー、通知バー": [
+      "フローティング通知をオフにした後も、まれにフローティング通知が表示される問題を修正しました",
+      "ロック画面で充電ボールと予想充電時間の表示が重なる問題を修正"
     ],
     "設定": [
       "修正: デバイス名を最大長に設定すると、ポータブルホットスポットをオンにできませんでした"
     ],
     "ファイルマネージャー": [
       "プライベートフォルダで画像や動画を切り取った後にファイルを開く際の異常を修正"
-    ],
-    "ロック画面、ステータスバー、通知バー": [
-      "ロック画面で充電ボールと予想充電時間の表示が重なる問題を修正"
     ],
     "その他": [
       "システムのセキュリティと安定性の向上"
@@ -101,17 +108,18 @@
       "긴 스크린샷에서 끝까지 스크롤되지 않던 문제를 수정"
     ],
     "전화": [
-      "듀얼 SIM 환경에서 SIM 카드가 끊긴 후 처리 전략 최적화",
+      "듀얼 카드 사용 시 한 장의 카드가 빠진 후의 처리 전략을 최적화합니다.",
       "최적화: 듀얼 SIM 환경에서 SIM 카드가 인식되지 않을 때의 처리 전략"
+    ],
+    "잠금 화면, 상태 표시줄, 알림 표시줄": [
+      "플로팅 알림을 끈 후에도 간헐적으로 플로팅 알림이 표시되는 문제를 수정했습니다",
+      "잠금 화면에서 충전 볼과 예상 충전 시간 표시가 겹치는 문제를 수정"
     ],
     "설정": [
       "수정: 기기 이름을 최대 길이로 설정하면 휴대용 핫스팟을 켤 수 없었습니다"
     ],
     "파일 관리자": [
       "비공개 폴더에서 사진 및 동영상을 잘라낸 후 파일을 여는 오류를 수정"
-    ],
-    "잠금 화면, 상태 표시줄, 알림 표시줄": [
-      "잠금 화면에서 충전 볼과 예상 충전 시간 표시가 겹치는 문제를 수정"
     ],
     "기타": [
       "시스템 보안 및 안정성 개선"
@@ -126,23 +134,27 @@
       "Fix: Длинные скриншоты работали некорректно"
     ],
     "Телефон": [
-      "Оптимизировать стратегию обработки после потери SIM-карты в режиме двух SIM-карт",
+      "Оптимизация стратегии обработки ситуаций, когда одна из карт отсоединяется при использовании двух карт.",
       "Оптимизация: стратегия обработки после потери SIM-карты в режиме двух SIM-карт"
+    ],
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Исправлена проблема, при которой плавающие уведомления иногда отображались после отключения",
+      "Исправлено наложение индикатора зарядки и предполагаемого времени зарядки на экране блокировки"
     ],
     "Настройки": [
       "Исправлено: Не удавалось включить точку доступа, если имя устройства содержало максимальное количество символов"
     ],
-    "Файловый менеджер": [
+    "Проводник файлов": [
       "Исправлена ошибка открытия файлов после вырезания изображений и видео в приватной папке"
-    ],
-    "Экран блокировки, строка состояния, шторка уведомлений": [
-      "Исправлено наложение индикатора зарядки и предполагаемого времени зарядки на экране блокировки"
     ],
     "Другое": [
       "Улучшение безопасности и стабильности системы"
     ],
     "Экран блокировки, строка состояния, панель уведомлений": [
       "Исправлено наложение индикатора зарядки и предполагаемого времени зарядки на экране блокировки"
+    ],
+    "Файловый менеджер": [
+      "Исправлена ошибка открытия файлов после вырезания изображений и видео в приватной папке"
     ]
   },
   "logs_uk": {
@@ -151,23 +163,27 @@
       "Виправлено: прокручуваний знімок екрана не прокручувався до кінця"
     ],
     "Телефон": [
-      "Оптимізувати стратегію обробки після втрати SIM-картки в режимі двох SIM-карток",
+      "Оптимізація стратегії обробки ситуацій, коли одна з карт випадає під час використання двох карт",
       "Оптимізація: стратегія обробки після втрати SIM-картки в режимі двох SIM-карток"
+    ],
+    "Екран блокування, рядок стану, рядок сповіщень": [
+      "Виправлено проблему, через яку плаваючі сповіщення іноді відображалися після вимкнення",
+      "Виправлено накладання індикатора заряджання та орієнтовного часу заряджання на екрані блокування"
     ],
     "Налаштування": [
       "Виправлено: не вдалося ввімкнути портативну точку доступу, коли ім’я пристрою встановлено на максимальну довжину"
     ],
-    "Файловий менеджер": [
+    "Провідник файлів": [
       "Виправлено помилку відкриття файлів після вирізання зображень і відео в приватній папці"
-    ],
-    "Екран блокування, рядок стану, рядок сповіщень": [
-      "Виправлено накладання індикатора заряджання та орієнтовного часу заряджання на екрані блокування"
     ],
     "Інше": [
       "Покращення безпеки та стабільності системи"
     ],
     "Екран блокування, рядок стану, панель сповіщень": [
       "Виправлено накладання індикатора заряджання та орієнтовного часу заряджання на екрані блокування"
+    ],
+    "Файловий менеджер": [
+      "Виправлено помилку відкриття файлів після вирізання зображень і відео в приватній папці"
     ]
   },
   "logs_pl": {
@@ -176,8 +192,12 @@
       "Naprawiono: przewijany zrzut ekranu nie pozwalał przewinąć do końca"
     ],
     "Telefon": [
-      "Optymalizacja strategii obsługi po utracie karty SIM w trybie dual SIM",
+      "Optymalizacja strategii działania w przypadku utraty jednej z kart w scenariu używania dwóch kart.",
       "Optymalizacja: strategia obsługi po utracie karty SIM w trybie Dual SIM"
+    ],
+    "Ekran blokady, pasek stanu, pasek powiadomień": [
+      "Naprawiono problem, w którym pływające powiadomienia czasami nadal wyświetlały się po wyłączeniu",
+      "Naprawiono nakładanie się wskaźnika ładowania i szacowanego czasu ładowania na ekranie blokady"
     ],
     "Ustawienia": [
       "Naprawiono: Nie można było włączyć hotspotu przenośnego, gdy nazwa urządzenia miała maksymalną długość"
@@ -185,10 +205,7 @@
     "Menedżer plików": [
       "Naprawiono błąd otwierania plików po wycięciu zdjęć i filmów w folderze prywatnym"
     ],
-    "Ekran blokady, pasek stanu, pasek powiadomień": [
-      "Naprawiono nakładanie się wskaźnika ładowania i szacowanego czasu ładowania na ekranie blokady"
-    ],
-    "Inne": [
+    "Reszt": [
       "Większe bezpieczeństwo i stabilność systemu"
     ],
     "Ekran blokady, pasek stanu, panel powiadomień": [
@@ -204,14 +221,15 @@
       "Optimierung der Verarbeitungsstrategie nach SIM-Kartenverlust im Dual-SIM-Modus",
       "Optimierung: Strategie zur Behandlung bei SIM-Kartenverlust im Dual-SIM-Modus"
     ],
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
+      "Problem behoben, bei dem schwebende Benachrichtigungen nach dem Deaktivieren gelegentlich weiterhin angezeigt wurden",
+      "Problem behoben, bei dem sich Ladeball und geschätzte Ladezeit auf dem Sperrbildschirm überlappen"
+    ],
     "Einstellungen": [
       "Behoben: Mobiler Hotspot konnte nicht aktiviert werden, wenn der Gerätename auf die maximale Länge gesetzt war"
     ],
     "Dateimanager": [
       "Fehler beim Öffnen von Dateien nach dem Ausschneiden von Bildern und Videos im privaten Ordner behoben"
-    ],
-    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
-      "Problem behoben, bei dem sich Ladeball und geschätzte Ladezeit auf dem Sperrbildschirm überlappen"
     ],
     "Sonstiges": [
       "Systemsicherheit und -stabilität verbessert"
@@ -226,17 +244,18 @@
       "Correction : la capture d'écran défilante ne permettait pas d'aller jusqu'en bas"
     ],
     "Téléphone": [
-      "Optimisation de la stratégie de traitement après perte de carte SIM en mode double SIM",
+      "Optimisation de la stratégie de gestion en cas de perte d'une carte dans un scénario utilisant deux cartes.",
       "Optimisation : stratégie de gestion après perte de carte SIM en mode double SIM"
+    ],
+    "Écran de verrouillage, barre d’état, barre de notifications": [
+      "Correction d’un problème où les notifications flottantes pouvaient parfois encore s’afficher après désactivation",
+      "Correction du chevauchement entre la boule de charge et le temps de charge estimé sur l’écran de verrouillage"
     ],
     "Paramètres": [
       "Réparé Impossible d'activer le point d'accès portable lorsque le nom du périphérique a été défini sur une longueur maximale"
     ],
     "Gestionnaire de fichiers": [
       "Correction du problème d'ouverture des fichiers après avoir coupé des images et vidéos dans le dossier privé"
-    ],
-    "Écran de verrouillage, barre d’état, barre de notifications": [
-      "Correction du chevauchement entre la boule de charge et le temps de charge estimé sur l’écran de verrouillage"
     ],
     "Autre": [
       "Sécurité et stabilité du système améliorées"
@@ -251,17 +270,18 @@
       "Corretto: lo screenshot scorrevole non permetteva di scorrere fino in fondo"
     ],
     "Telefono": [
-      "Ottimizzazione della strategia di gestione dopo la perdita della scheda SIM in modalità dual SIM",
+      "Ottimizzazione della strategia di gestione in caso di perdita di una delle due carte in scenari che prevedono l’uso di più carte.",
       "Ottimizzazione: strategia di gestione in caso di perdita della SIM in modalità dual SIM"
+    ],
+    "Schermata di blocco, barra di stato, barra delle notifiche": [
+      "Risolto un problema per cui le notifiche fluttuanti a volte continuavano a essere visualizzate dopo la disattivazione",
+      "Risolto il problema della sovrapposizione tra pallina di ricarica e tempo di ricarica stimato nella schermata di blocco"
     ],
     "Impostazioni": [
       "Risolto: Impossibile attivare l'hotspot personale quando il nome del dispositivo era impostato sulla lunghezza massima"
     ],
-    "Gestione file": [
+    "File Manager": [
       "Risolto il problema di apertura dei file dopo il taglio di immagini e video nella cartella privata"
-    ],
-    "Schermata di blocco, barra di stato, barra delle notifiche": [
-      "Risolto il problema della sovrapposizione tra pallina di ricarica e tempo di ricarica stimato nella schermata di blocco"
     ],
     "Altro": [
       "Maggiore sicurezza e stabilità di sistema"
@@ -279,17 +299,18 @@
       "Corregido: la captura de pantalla desplazable no permitía bajar hasta el final"
     ],
     "Teléfono": [
-      "Optimización de la estrategia de gestión tras la pérdida de la tarjeta SIM en modo dual SIM",
+      "Optimización de la estrategia de manejo en caso de pérdida de una tarjeta en un escenario con dos tarjetas.",
       "Optimización: estrategia de gestión tras la pérdida de la tarjeta SIM en modo dual SIM"
     ],
-    "Ajustes": [
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Se corrigió un problema por el que las notificaciones flotantes a veces seguían apareciendo después de desactivarlas",
+      "Se corrige la superposición entre el indicador de carga y el tiempo estimado de carga en la pantalla de bloqueo"
+    ],
+    "Configuración": [
       "Reparado: No se pudo activar el punto de acceso portátil cuando el nombre del dispositivo fue establecido a la máxima longitud"
     ],
     "Administrador de archivos": [
       "Se corrigió el problema de apertura de archivos tras cortar imágenes y vídeos en la carpeta privada"
-    ],
-    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
-      "Se corrige la superposición entre el indicador de carga y el tiempo estimado de carga en la pantalla de bloqueo"
     ],
     "Otros": [
       "Estabilidad y seguridad del sistema mejorada"
@@ -307,14 +328,15 @@
       "Otimização da estratégia de tratamento após perda do cartão SIM no modo dual SIM",
       "Otimização: estratégia de tratamento após perda do cartão SIM no modo dual SIM"
     ],
+    "Tela de bloqueio, barra de status, barra de notificações": [
+      "Corrigido um problema em que as notificações flutuantes às vezes continuavam aparecendo após serem desativadas",
+      "Corrigido a sobreposição entre o indicador de carregamento e o tempo estimado de carregamento na tela de bloqueio"
+    ],
     "Configurações": [
       "Correção Não era possível ativar o hotspot portátil quando o nome do dispositivo era definido para o comprimento máximo"
     ],
     "Gerenciador de arquivos": [
       "Corrigido o problema de abertura de arquivos após recortar imagens e vídeos na pasta privada"
-    ],
-    "Tela de bloqueio, barra de status, barra de notificações": [
-      "Corrigido a sobreposição entre o indicador de carregamento e o tempo estimado de carregamento na tela de bloqueio"
     ],
     "Outros": [
       "Segurança e estabilidade do sistema aprimoradas"
@@ -329,17 +351,18 @@
       "Düzeltme: kaydırmalı ekran görüntüsü sona kadar kaydırılamıyordu"
     ],
     "Telefon": [
-      "Çift SIM modunda SIM kart kaybı sonrası işlem stratejisi optimize edildi",
+      "Çift kartlı bir ortamda bir kartın çıkış yapması durumunda izlenecek işlem stratejisinin optimizasyonu",
       "Optimizasyon: Çift SIM modunda SIM kart kaybı sonrası işleme stratejisi"
+    ],
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Yüzen bildirimlerin kapatıldıktan sonra bazen hâlâ görünmesi sorunu düzeltildi",
+      "Kilit ekranında şarj göstergesi ile tahmini şarj süresinin üst üste binmesi sorunu düzeltildi"
     ],
     "Ayarlar": [
       "Onarım: Cihaz adı maksimum uzunlukta oluşturulduğunda kişisel bağlantı noktası açılamadı"
     ],
     "Dosya Yöneticisi": [
       "Gizli klasördeki görselleri ve videoları kestikten sonra dosyaların açılması sorunu düzeltildi"
-    ],
-    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
-      "Kilit ekranında şarj göstergesi ile tahmini şarj süresinin üst üste binmesi sorunu düzeltildi"
     ],
     "Diğer": [
       "Sistem güvenliği ve kararlılığı geliştirildi"
@@ -354,17 +377,18 @@
       "Perbaikan: tangkapan layar bergulir tidak dapat digulir hingga bawah"
     ],
     "Telepon": [
-      "Mengoptimalkan strategi penanganan setelah kartu SIM hilang dalam mode dual SIM",
+      "Mengoptimalkan strategi penanganan situasi di mana salah satu kartu SIM tidak berfungsi (tidak terhubung) dalam skenario penggunaan dua kartu SIM.",
       "Optimasi: strategi penanganan setelah kartu SIM hilang dalam mode dual SIM"
+    ],
+    "Layar kunci, bilah status, bilah notifikasi": [
+      "Memperbaiki masalah saat notifikasi mengambang terkadang masih muncul setelah dinonaktifkan",
+      "Memperbaiki tampilan bola pengisian daya dan perkiraan waktu pengisian daya yang tumpang tindih di layar kunci"
     ],
     "Pengaturan": [
       "Perbaikan Tidak dapat menghidupkan hotspot portabel saat nama perangkat disetel ke panjang maksimal"
     ],
-    "Pengelola File": [
+    "File Manager": [
       "Memperbaiki masalah pembukaan file setelah memotong gambar dan video di folder privat"
-    ],
-    "Layar kunci, bilah status, bilah notifikasi": [
-      "Memperbaiki tampilan bola pengisian daya dan perkiraan waktu pengisian daya yang tumpang tindih di layar kunci"
     ],
     "Lainnya": [
       "Keamanan dan stabilitas sistem ditingkatkan"
@@ -382,17 +406,18 @@
       "Đã sửa: ảnh chụp màn hình cuộn không thể cuộn xuống cuối"
     ],
     "Điện thoại": [
-      "Tối ưu hóa chiến lược xử lý sau khi mất thẻ SIM ở chế độ hai SIM",
+      "Tối ưu hóa chiến lược xử lý tình huống mất kết nối khi sử dụng cùng lúc hai thẻ trong môi trường có hai thẻ.",
       "Tối ưu hóa: chiến lược xử lý sau khi mất thẻ SIM ở chế độ hai SIM"
+    ],
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Đã sửa lỗi thông báo nổi đôi khi vẫn hiển thị sau khi tắt",
+      "Đã sửa lỗi chồng lấn giữa bóng sạc và thời gian sạc dự kiến trên màn hình khóa"
     ],
     "Cài đặt": [
       "Sửa lỗi: Không thể bật điểm phát sóng di động khi tên thiết bị được đặt ở độ dài tối đa"
     ],
     "Trình quản lý tệp": [
       "Đã sửa lỗi mở tệp sau khi cắt ảnh và video trong thư mục riêng tư"
-    ],
-    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
-      "Đã sửa lỗi chồng lấn giữa bóng sạc và thời gian sạc dự kiến trên màn hình khóa"
     ],
     "Khác": [
       "Cải thiện tính ổn định và bảo mật hệ thống"
@@ -406,17 +431,18 @@
       "แก้ไข: ภาพหน้าจอแบบเลื่อนไม่สามารถเลื่อนลงไปจนสุดได้"
     ],
     "โทรศัพท์": [
-      "เพิ่มประสิทธิภาพกลยุทธ์การจัดการเมื่อ SIM หลุดในโหมด Dual SIM",
+      "การปรับปรุงกลยุทธ์การจัดการเมื่อการเชื่อมต่อบัตรสองใบหยุดทำงาน",
       "การปรับให้เหมาะสม: กลยุทธ์การจัดการเมื่อซิมหายในโหมดสองซิม"
+    ],
+    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
+      "แก้ไขปัญหาที่การแจ้งเตือนแบบลอยบางครั้งยังคงแสดงอยู่หลังจากปิดใช้งาน",
+      "แก้ไขปัญหาวงกลมชาร์จและเวลาชาร์จโดยประมาณแสดงทับซ้อนกันบนหน้าจอล็อก"
     ],
     "การตั้งค่า": [
       "แก้ไข: ไม่สามารถเปิดฮอตสปอตแบบพกพาได้เมื่อตั้งชื่ออุปกรณ์เป็นความยาวสูงสุด"
     ],
     "ตัวจัดการไฟล์": [
       "แก้ไขปัญหาการเปิดไฟล์ผิดปกติหลังจากตัดรูปภาพและวิดีโอในโฟลเดอร์ส่วนตัว"
-    ],
-    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
-      "แก้ไขปัญหาวงกลมชาร์จและเวลาชาร์จโดยประมาณแสดงทับซ้อนกันบนหน้าจอล็อก"
     ],
     "อื่นๆ": [
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
@@ -431,8 +457,12 @@
       "إصلاح: تعذّر التمرير إلى الأسفل في لقطة الشاشة الطويلة"
     ],
     "الهاتف": [
-      "تحسين استراتيجية المعالجة بعد فقدان بطاقة SIM في وضع الشريحتين",
+      "تحسين استراتيجية المعالجة عند فقدان إحدى البطاقتين في سيناريو وجود بطاقتين.",
       "التحسين: استراتيجية المعالجة بعد فقدان بطاقة SIM في وضع الشريحتين"
+    ],
+    "شاشة القفل، شريط الحالة، شريط الإشعارات": [
+      "تم إصلاح مشكلة ظهور الإشعارات العائمة أحيانًا بعد إيقاف تشغيلها",
+      "إصلاح مشكلة تداخل كرة الشحن ووقت الشحن المتوقع على شاشة القفل"
     ],
     "الإعدادات": [
       "إصلاح: تعذّر تشغيل نقطة الاتصال المحمولة عند ضبط اسم الجهاز على الحد الأقصى للطول"
@@ -440,10 +470,7 @@
     "مدير الملفات": [
       "إصلاح مشكلة فتح الملفات بشكل غير طبيعي بعد قص الصور ومقاطع الفيديو في المجلد الخاص"
     ],
-    "شاشة القفل، شريط الحالة، شريط الإشعارات": [
-      "إصلاح مشكلة تداخل كرة الشحن ووقت الشحن المتوقع على شاشة القفل"
-    ],
-    "أخرى": [
+    "آخرين": [
       "تحسين أمن واستقرار النظام"
     ],
     "شاشة القفل، شريط الحالة، لوحة الإشعارات": [
@@ -456,17 +483,18 @@
       "ठीक किया गया: लंबे स्क्रीनशॉट में नीचे तक स्क्रॉल नहीं हो पाता था"
     ],
     "फ़ोन": [
-      "डुअल SIM मोड में SIM कार्ड खोने के बाद प्रसंस्करण रणनीति को अनुकूलित करें",
+      "डुअल-कार्ड सेटिंग में, जब कोई कार्ड निकल जाता है, तो उस स्थिति को संभालने की रणनीति को अनुकूलित (ऑप्टिमाइज) करें।",
       "अनुकूलन: डुअल SIM मोड में SIM कार्ड खोने के बाद प्रबंधन रणनीति"
+    ],
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
+      "फ्लोटिंग सूचनाएं बंद करने के बाद भी कभी-कभी दिखाई देने की समस्या ठीक की गई",
+      "लॉक स्क्रीन पर चार्जिंग बॉल और अनुमानित चार्जिंग समय के ओवरलैप होने की समस्या ठीक की गई"
     ],
     "सेटिंग्स": [
       "फ़ोन का नाम अधिकतम लंबाई पर सेट होने पर हॉटस्पॉट चालू न होने की समस्या ठीक की गई"
     ],
     "फ़ाइल प्रबंधक": [
       "निजी फ़ोल्डर में छवियों और वीडियो को काटने के बाद फ़ाइलें खोलने की समस्या ठीक की गई"
-    ],
-    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
-      "लॉक स्क्रीन पर चार्जिंग बॉल और अनुमानित चार्जिंग समय के ओवरलैप होने की समस्या ठीक की गई"
     ],
     "अन्य": [
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
@@ -477,7 +505,8 @@
   },
   "logs_ug": {
     "تېلېفون": [
-      "قوش كارتا شارائىتىدا كارتا ئۈزۈلۈپ قېلىشتىن كېيىنكى بىر تەرەپ قىلىش ئىستراتېگىيىسىنى ئەلالاشتۇرۇش"
+      "قوش كارتا ئەھۋالىدا بىر كارتا چۈشۈپ كەتكەندىكى بىر تەرەپ قىلىش تاكتىكىسىنى ياخشىلاش",
+      "ئەلالاشتۇرۇش: قوش SIM كارتا ئەھۋالىدا كارتا چىقىپ كەتكەندىن كېيىنكى بىر تەرەپ قىلىش ئىستراتېگىيەسى"
     ],
     "تەڭشەك": [
       "ئوڭشاش: ئۈسكۈنىنىڭ نامى ئەڭ چوڭ ئۇزۇنلۇققا تەڭشەلگەندە كۆچمە ھوتسپوتنى ئاچقىلى بولمىدى"
@@ -488,11 +517,20 @@
     "سىستېما": [
       "ئۇزۇن ئېكران رەسىتىنى تۆۋەنگىچە سۆرەپ چۈشۈرگىلى بولمىدى."
     ],
+    "قۇلۇپ ئېكرانى، ھالەت بالدىقى، ئۇقتۇرۇش بالدىقى": [
+      "قۇلۇپ ئېكرانىدا زەرەتلەش شارى بىلەن مۆلچەرلەنگەن زەرەتلەش ۋاقتىنىڭ كۆرسىتىلىشى ئۈستى-ئۈستى چۈشۈپ قېلىش مەسىلىسىنى تۈزەتتى."
+    ],
     "باشقىلىرى": [
       "Improved system security and stability"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "قۇلۇپ ئېكرانىدا زەرەتلەش شارى بىلەن مۆلچەرلەنگەن زەرەتلەش ۋاقتىنىڭ كۆرسىتىلىشى ئۈستى-ئۈستى چۈشۈپ قېلىش مەسىلىسىنى تۈزەتتى."
     ]
   },
   "logs_bo": {
+    "ཁ་པར": [
+      "གཉིས་ཁ་(Double Card)་བཀོད་སྒྲིག་འོག་ཁ་(Card)་ཤོར་རྗེས་ཐག་གཅོད་བྱེད་པའི་ཐབས་ཇུས་ལེགས་བཅོས་བྱེད།"
+    ],
     "སྒྲིག་སྟངས།": [
       "Fix: Couldn't turn on portable hotspot when device name was set to maximum length"
     ],

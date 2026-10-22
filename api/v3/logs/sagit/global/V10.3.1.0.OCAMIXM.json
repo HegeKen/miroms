@@ -22,7 +22,7 @@
       "新增 锁屏页面支持禁止下拉通知栏",
       "修复 横向萤幕情况下低电量通知不悬浮显示"
     ],
-    "桌面": [
+    "主屏幕": [
       "修复 WhatsApp 桌面角标显示异常的问题"
     ]
   },
@@ -41,9 +41,8 @@
     ]
   },
   "logs_zh_tw": {
-    "設定": [
-      "優化 大字體介面的顯示效果",
-      "修復 下拉狀態欄開啟或關閉同步，同步介面不刷新問題"
+    "设置": [
+      "優化 大字體介面的顯示效果"
     ],
     "近期任務": [
       "優化 應用名稱的顯示長度，改良大字體的顯示效果"
@@ -64,6 +63,9 @@
     ],
     "桌面": [
       "修復 WhatsApp 桌面角標顯示異常的問題"
+    ],
+    "設定": [
+      "修復 下拉狀態欄開啟或關閉同步，同步介面不刷新問題"
     ]
   },
   "logs_ja": {
@@ -89,7 +91,7 @@
       "新規: ロック画面で通知シェードを下にスワイプして開くことを禁止できるようになりました",
       "横向き画面時に低バッテリー通知がフローティング表示されない問題を修正"
     ],
-    "ホーム画面": [
+    "デスクトップ": [
       "WhatsAppのデスクトップバッジの表示異常を修正"
     ]
   },
@@ -116,7 +118,7 @@
       "새 기능: 잠금 화면에서 알림 패널을 아래로 내려 여는 것을 금지할 수 있습니다",
       "가로 화면에서 배터리 부족 알림이 플로팅 표시되지 않는 문제 수정"
     ],
-    "홈 화면": [
+    "데스크톱": [
       "WhatsApp 데스크톱 배지 표시 이상 문제 수정"
     ]
   },
@@ -169,7 +171,7 @@
       "Нове: додано підтримку заборони відкриття панелі сповіщень на екрані блокування",
       "Виправлено відсутність плаваючого відображення сповіщення про низький заряд батареї в горизонтальному режимі екрана"
     ],
-    "Головний екран": [
+    "Робочий стіл": [
       "Виправлено проблему з ненормальним відображенням значка робочого столу WhatsApp"
     ]
   },
@@ -196,7 +198,7 @@
       "Nowość: można teraz zablokować otwieranie panelu powiadomień na ekranie blokady",
       "Naprawiono brak wyświetlania powiadomienia o niskim poziomie baterii jako pływającego w trybie poziomego ekranu"
     ],
-    "Ekran główny": [
+    "Biurko": [
       "Naprawiono problem z nieprawidłowym wyświetlaniem plakietki pulpitu WhatsApp"
     ]
   },
@@ -250,7 +252,7 @@
       "Nouveau : il est désormais possible d’interdire l’ouverture du panneau de notifications sur l’écran de verrouillage",
       "Correction : la notification de batterie faible ne s'affiche pas en mode flottant en écran paysage"
     ],
-    "Écran d'accueil": [
+    "Bureau": [
       "Correction du problème d'affichage anormal du badge de bureau WhatsApp"
     ]
   },
@@ -276,14 +278,13 @@
       "Nuovo: È ora possibile limitare l'apertura dell'area delle notifiche sulla schermata di blocco",
       "Risolvi: Gli avvisi di batteria scarica non apparivano in modalità Orizzontale"
     ],
-    "Schermata Home": [
+    "Desktop": [
       "Risolvi: I badge di notifica erano visualizzati in modo errato sull'icona di WhatsApp"
     ]
   },
   "logs_es": {
-    "Ajustes": [
-      "Optimización: Las fuentes grandes ahora se muestran mejor",
-      "Reparar: La página de sincronización no pudo ser refrescada cuando la sincronización fue activada o desactivada en la Barra de notificaciones"
+    "Configuración": [
+      "Optimización: Las fuentes grandes ahora se muestran mejor"
     ],
     "Recientes": [
       "Optimización: Los nombres de aplicaciones fueron reducidos cuando el tamaño del texto fue establecido como grande"
@@ -302,8 +303,11 @@
       "Nuevo: Ahora puedes restringir abrir la Barra de notificaciones en la Pantalla de bloqueo",
       "Reparar: El aviso de batería baja no apareció en el Modo paisaje"
     ],
-    "Pantalla de inicio": [
+    "Escritorio": [
       "Reparar: Los iconos de notificaciones fueron mostrados de forma incorrecta en el icono de WhatsApp"
+    ],
+    "Ajustes": [
+      "Reparar: La página de sincronización no pudo ser refrescada cuando la sincronización fue activada o desactivada en la Barra de notificaciones"
     ]
   },
   "logs_pt": {
@@ -355,7 +359,7 @@
       "Yeni: Kilit ekranında Bildirim çubuğunun açılmasını kısıtlayabilirsiniz",
       "Onar: Manzara modunda düşük pil uyarıları gösterilmedi"
     ],
-    "Ana ekran": [
+    "Masaüstü": [
       "Onar: Bildirim rozetleri WhatsApp simgesinde yanlış görüntülendi"
     ]
   },
@@ -382,7 +386,7 @@
       "Baru: Dukungan untuk mencegah membuka panel notifikasi di layar kunci",
       "Memperbaiki notifikasi baterai lemah yang tidak tampil mengambang dalam mode layar lanskap"
     ],
-    "Layar Utama": [
+    "Desktop": [
       "Memperbaiki masalah tampilan badge desktop WhatsApp yang tidak normal"
     ]
   },
@@ -436,7 +440,7 @@
       "ใหม่: รองรับการห้ามเลื่อนลงเพื่อเปิดแผงการแจ้งเตือนบนหน้าจอล็อก",
       "แก้ไขการแจ้งเตือนแบตเตอรี่ต่ำไม่แสดงแบบลอยในโหมดหน้าจอแนวนอน"
     ],
-    "หน้าจอหลัก": [
+    "โต๊ะทำงาน": [
       "แก้ไขปัญหาการแสดงผลผิดปกติของป้ายบนเดสก์ท็อป WhatsApp"
     ]
   },
@@ -463,7 +467,7 @@
       "جديد: دعم منع سحب لوحة الإشعارات على شاشة القفل",
       "إصلاح عدم ظهور إشعار انخفاض البطارية كإشعار عائم في الوضع الأفقي للشاشة"
     ],
-    "الشاشة الرئيسية": [
+    "سطح المكتب": [
       "إصلاح مشكلة العرض غير الطبيعي لشارة سطح المكتب في WhatsApp"
     ]
   },
@@ -490,7 +494,7 @@
       "नया: लॉक स्क्रीन पर नोटिफ़िकेशन शेड को नीचे खींचकर खोलने से रोकें",
       "लैंडस्केप स्क्रीन में कम बैटरी सूचना के फ्लोटिंग रूप में न दिखने की समस्या ठीक की गई"
     ],
-    "होम स्क्रीन": [
+    "डेस्कटॉप": [
       "WhatsApp डेस्कटॉप बैज के असामान्य प्रदर्शन की समस्या को ठीक किया गया"
     ]
   },
@@ -516,7 +520,7 @@
       "يېڭى: قۇلۇپ ئېكرانى بېتىدە ئۇقتۇرۇش تاختىسىنى تۆۋەن تارتىشنى چەكلەشنى قوللايدۇ",
       "ئېكران توغرا يۆنىلىشتە بولغاندا تۆۋەن باتارىيە ئۇقتۇرۇشىنىڭ لەيلىمە كۆرۈنمەسلىكى ئوڭشالدى."
     ],
-    "باش ئېكران": [
+    "ئۈستەل يۈزى": [
       "WhatsApp ئۈستەل يۈزى بەلگىسىنىڭ نورمالسىز كۆرۈنۈش مەسىلىسى تۈزىتىلدى."
     ],
     "تەڭشەكلەر": [
@@ -545,7 +549,7 @@
       "New: You can restrict opening Notification shade on the Lock screen now",
       "Fix: Low battery warning didn't appear in landscape mode"
     ],
-    "Home screen": [
+    "ཅོག་ངོས": [
       "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
     ],
     "སྒྲིག་བཀོད": [

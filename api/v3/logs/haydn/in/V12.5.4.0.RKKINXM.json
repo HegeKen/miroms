@@ -88,6 +88,9 @@
       "Fix: Floating notifications overlapped when the transparent background was used",
       "Fix: Permission dialog elements overlapped after a notification was long pressed",
       "Fix: Notifications weren't displayed correctly after missed calls"
+    ],
+    "System": [
+      "Updated Android Security Patch to September 2021. Increased system security."
     ]
   },
   "logs_zh_tw": {
@@ -119,7 +122,7 @@
       "修復: 長按通知偶現權限彈窗重疊的異常",
       "修復: 未接來電懸浮通知偶現異常的問題"
     ],
-    "設定": [
+    "设置": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
       "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
       "修復: 在“應用管理-默認打開鏈接”頁面中選擇“地圖”選項時頁面崩潰的問題"
@@ -156,16 +159,17 @@
       "修正: 指紋認証後の画面にステータスバー以外のアイテムが表示されない問題",
       "修正: サードパーティ製のテーマやスーパー壁紙を使用した際のロック画面の時計に関する問題"
     ],
+    "ステータスバー、通知シェード": [
+      "最適化: 着信通知を表示するアルゴリズム",
+      "最適化: アラーム通知",
+      "修正: 透明な背景を使用した際にフローティング通知の表示が重なる問題",
+      "修正: 通知を長押しするとアクセス許可のダイアログと表示が重なってしまう問題",
+      "修正: 不在着信後に通知が正しく表示されない問題"
+    ],
     "設定": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
       "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
       "修正: デフォルトの地図を選択するとクラッシュする問題"
-    ],
-    "ステータスバー、通知シェード": [
-      "最適化: 着信通知を表示するアルゴリズム",
-      "修正: 透明な背景を使用した際にフローティング通知の表示が重なる問題",
-      "修正: 通知を長押しするとアクセス許可のダイアログと表示が重なってしまう問題",
-      "修正: 不在着信後に通知が正しく表示されない問題"
     ],
     "Xiaomi クラウドサービス": [
       "最適化: 着信通知を表示するアルゴリズム",
@@ -293,6 +297,13 @@
       "Виправлено: Під час розблокування відбитком пальця на екрані могли відображатися тільки об’єкти рядку стану",
       "Виправлено: Виправлені помилки відображення віджета годинника на екрані блокування під час використання супершрплер та сторонніх тем"
     ],
+    "Рядок стану, панель сповіщень": [
+      "Оптимізація: Алгоритми відображення сповіщень про вхідні виклики",
+      "Оптимізація: Сповіщення будильника",
+      "Виправлено: Під час використання прозорого фону спливаючі сповіщення могли перекриватися",
+      "Виправлено: Елементи діалогового вікна надання дозволів перекривалися після довгого натиснення на сповіщення",
+      "Виправлено: Після пропущених викликів сповіщення могли відображатися неправильно"
+    ],
     "Налаштування": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
       "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
@@ -399,6 +410,12 @@
       "Behebung: Abstürze bei Auswahl der Standardkarte"
     ],
     "Statusleiste, Benachrichtigungsleiste": [
+      "Optimierung: Algorithmen zur Anzeige von Benachrichtigungen über eingehende Anrufe",
+      "Behoben: Schwebende Benachrichtigungen überschnitten sich bei Verwendung eines transparenten Hintergrunds.",
+      "Behoben: Elemente des Berechtigungsdialogs überlappten sich nach langem Drücken auf eine Benachrichtigung",
+      "Behoben: Benachrichtigungen wurden nach verpassten Anrufen nicht korrekt angezeigt"
+    ],
+    "Xiaomi Cloud-Dienst": [
       "Optimierung: Algorithmen zur Anzeige von Benachrichtigungen über eingehende Anrufe",
       "Behoben: Schwebende Benachrichtigungen überschnitten sich bei Verwendung eines transparenten Hintergrunds.",
       "Behoben: Elemente des Berechtigungsdialogs überlappten sich nach langem Drücken auf eine Benachrichtigung",
@@ -531,7 +548,7 @@
       "Reparado: Los elementos del diálogo de permisos se superponían después de presionar una notificación durante mucho tiempo",
       "Reparado: Las notificaciones no se mostraban correctamente después de recibir llamadas perdidas"
     ],
-    "Ajustes": [
+    "Configuración": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
       "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
       "Reparado: Se producían bloqueos cuando se seleccionaba el mapa predeterminado"
@@ -724,6 +741,13 @@
       "Sửa: Không có mục nào ngoại trừ thanh trạng thái được hiển thị trên màn hình sau khi sử dụng Mở khóa vân tay",
       "Sửa: Vấn đề đồng hồ Màn hình khóa khi chủ đề bên thứ ba và siêu hình nền được sử dụng"
     ],
+    "Thanh trạng thái, thanh thông báo": [
+      "Tối ưu: Thuật toán thông báo cuộc gọi đến",
+      "Tối ưu: Thông báo báo thức",
+      "Sửa: Thông báo nổi bị chồng lấn khi hình nền trong suốt được sử dụng",
+      "Sửa: Hộp thoại quyền bị chồng lấn sau khi bấm giữ thông báo",
+      "Sửa: Thông báo không hiển thị chính xác sau khi lỡ cuộc gọi"
+    ],
     "Cài đặt": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
       "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
@@ -766,6 +790,13 @@
       "แก้ไข: หน้าจอกะพริบเมื่อใช้การปลดล็อกด้วยลายนิ้วมือในบางกรณี",
       "แก้ไข: ไม่มีรายการยกเว้นแถบสถานะปรากฏบนหน้าจอหลังจากใช้การปลดล็อกด้วยลายนิ้วมือ",
       "แก้ไข: ปัญหาเกี่ยวกับนาฬิกาหน้าจอล็อกเมื่อใช้ธีมของบุคคลที่สามและสุดยอดภาพพื้นหลัง"
+    ],
+    "แถบสถานะ, แผงการแจ้งเตือน": [
+      "การเพิ่มประสิทธิภาพ: อัลกอริทึมสำหรับการแสดงการแจ้งเตือนสายเรียกเข้า",
+      "การเพิ่มประสิทธิภาพ: การแจ้งเตือน",
+      "แก้ไข: การแจ้งเตือนแบบลอยซ้อนทับกันเมื่อใช้พื้นหลังโปร่งใส",
+      "แก้ไข: องค์ประกอบข้อความการอนุญาตซ้อนทับกันหลังจากกดการแจ้งเตือนค้างไว้",
+      "แก้ไข: การแจ้งเตือนแสดงไม่ถูกต้องหลังสายที่ไม่ได้รับ"
     ],
     "การตั้งค่า": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
@@ -922,6 +953,12 @@
       "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
       "Fix: Crashes occurred when the default map was selected"
     ],
+    "Xiaomi بۇلۇت مۇلازىمىتى": [
+      "Optimization: Algorithms for displaying incoming call notifications",
+      "Fix: Floating notifications overlapped when the transparent background was used",
+      "Fix: Permission dialog elements overlapped after a notification was long pressed",
+      "Fix: Notifications weren't displayed correctly after missed calls"
+    ],
     "سىستېما": [
       "Updated Android Security Patch to September 2021. Increased system security."
     ]
@@ -959,6 +996,12 @@
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
       "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
       "Fix: Crashes occurred when the default map was selected"
+    ],
+    "Mi Cloud": [
+      "Optimization: Algorithms for displaying incoming call notifications",
+      "Fix: Floating notifications overlapped when the transparent background was used",
+      "Fix: Permission dialog elements overlapped after a notification was long pressed",
+      "Fix: Notifications weren't displayed correctly after missed calls"
     ],
     "མ་ལག": [
       "Updated Android Security Patch to September 2021. Increased system security."

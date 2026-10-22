@@ -9,7 +9,7 @@
     "笔记": [
       "修复 笔记附件数据超过20MB时，云同步失败的问题"
     ],
-    "桌面": [
+    "主屏幕": [
       "新增 外屏支持使用乘车码、付款码等快捷功能"
     ],
     "主动智能": [
@@ -29,7 +29,7 @@
     "时钟": [
       "修复 闹钟响铃后，无法通过按键关闭闹钟的问题"
     ],
-    "相册": [
+    "画廊": [
       "优化 视频同步策略，提升播放画面流畅度",
       "修复 短时间产生大量图片时，相册预览图加载时间过长的问题",
       "修复 云同步过程中照片时间丢失，导致日期错误的问题",
@@ -60,7 +60,7 @@
     "Notes": [
       "Fix: Cloud sync failed when note attachments exceeded 20 MB"
     ],
-    "Home screen": [
+    "desktop": [
       "New: Ride codes and payment codes can be used on outer screen"
     ],
     "Proactive intelligence": [
@@ -80,7 +80,7 @@
     "Clock": [
       "Fix: Alarm couldn't be turned off using buttons after it rang"
     ],
-    "Gallery": [
+    "Album": [
       "Optimization: Improved video synchronization strategy to enhance playback smoothness",
       "Fix: Preview thumbnails in Gallery took too long to load when a large number of images were generated in a short period",
       "Fix: Photo timestamps were lost during cloud sync, causing incorrect dates",
@@ -161,7 +161,7 @@
     "時計": [
       "修正: アラームが鳴った後、ボタンでアラームを止められない問題"
     ],
-    "ギャラリー": [
+    "アルバム": [
       "最適化: ビデオ同期戦略を改善し、再生のスムーズさを向上",
       "修正: 短時間に大量の画像が生成された場合に、ギャラリーのプレビューサムネイルの読み込みに時間がかかりすぎる問題",
       "修正: クラウド同期中に写真のタイムスタンプが失われ、誤った日付が表示される問題",
@@ -203,7 +203,7 @@
     "시계": [
       "수정: 알람이 울린 후 버튼으로 알람을 멈출 수 없는 문제"
     ],
-    "갤러리": [
+    "앨범": [
       "최적화: 동영상 동기화 전략을 개선하여 재생의 부드러움 향상",
       "수정: 단시간에 대량의 이미지가 생성된 경우 갤러리의 미리보기 섬네일을 읽는 데 시간이 너무 걸리는 문제",
       "수정: 클라우드 동기화 중에 사진의 타임스탬프가 손실되어 잘못된 날짜가 표시되는 문제",
@@ -245,7 +245,7 @@
     "Часы": [
       "Исправлено: В некоторых случаях сигнал будильника нельзя было выключить при помощи кнопок"
     ],
-    "Галерея": [
+    "Альбом": [
       "Оптимизация: Улучшенная стратегия синхронизации видео для повышения плавности воспроизведения",
       "Исправлено: Миниатюры предварительного просмотра в Галерее могли загружаться слишком долго, если за короткий промежуток времени было создано большое количество изображений",
       "Исправлено: При синхронизации с облаком данные о времени съемки фото могли исчезать, что приводило к отображению неправильных дат",
@@ -287,7 +287,7 @@
     "Годинник": [
       "Виправлено: Будильник не вимикався кнопкою після того, як він задзвонив"
     ],
-    "Галерея": [
+    "Альбом": [
       "Оптимізація: Покращена стратегія синхронізації відео для більшої плавності відтворення",
       "Виправлено: Завантаження мініатюр для попереднього перегляду в Галереї займало багато часу, коли велика кількість зображень була створена за короткий період",
       "Виправлено: Мітки часу на фотографіях були втрачені під час синхронізації у хмарі, що призвело до неправильних дат",
@@ -329,7 +329,7 @@
     "Zegar": [
       "Naprawiono: Nie można było wyłączyć alarmu przyciskami po jego włączeniu"
     ],
-    "Galeria": [
+    "Album": [
       "Zoptymalizowano: Ulepszona strategia synchronizacji filmu w celu zwiększenia płynności odtwarzania",
       "Naprawiono: Ładowanie miniatur podglądu w Galerii trwało zbyt długo, gdy w krótkim czasie wygenerowano dużą liczbę obrazów",
       "Naprawiono: Sygnatury czasowe zdjęć zostały utracone podczas synchronizacji z chmurą, co spowodowało nieprawidłowe daty",
@@ -346,11 +346,28 @@
     "Ostatnie zadania": [
       "Nowe: Kody przejazdów i kody płatności można używać na ekranie zewnętrznym"
     ],
-    "Inne": [
+    "Reszt": [
       "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
   "logs_de": {
+    "Notizen": [
+      "Problem behoben, bei dem die Cloud-Synchronisierung fehlschlug, wenn Notizanhänge 20 MB überschritten"
+    ],
+    "Uhr": [
+      "Behoben: Wecker konnte nach dem Klingeln nicht über die Tasten ausgeschaltet werden"
+    ],
+    "Galerie": [
+      "Optimierung: Video-Synchronisierungsstrategie verbessert, um flüssigere Wiedergabe zu ermöglichen",
+      "Behoben: Vorschaubilder in der Galerie brauchten zu lange zum Laden, wenn in kurzer Zeit viele Bilder erzeugt wurden.",
+      "Behoben: Foto-Zeitstempel gingen während der Cloud-Synchronisierung verloren, was zu falschen Datumsangaben führte.",
+      "Behoben: Fotos erschienen nach dem Löschen während der Cloud-Synchronisierung erneut auf.",
+      "Behoben: Memories konnten auf einigen Gerätemodellen nicht wiedergegeben werden",
+      "Behoben: Vorschaubilder in der Galerie wurden bei der Aufnahme vieler Fotos hintereinander fehlerhaft angezeigt"
+    ],
+    "Widgets": [
+      "Neu: Reiseassistent erinnert intelligent an Zug- und Flugreisen und macht Reisen bequemer."
+    ],
     "Sonstiges": [
       "Systemsicherheit und -stabilität verbessert"
     ]
@@ -376,7 +393,7 @@
     "Horloge": [
       "Réparé: L’alarme ne pouvait pas être désactivée à l’aide de boutons après avoir sonné"
     ],
-    "Galerie": [
+    "Album": [
       "Optimisation: Stratégie de synchronisation vidéo améliorée pour améliorer la fluidité de la lecture",
       "Réparé: Prévisualiser les miniatures dans la Galerie a pris trop de temps à charger lorsqu’un grand nombre d’images ont été générées dans une courte période",
       "Réparé: Les horodatages des photos ont été perdus pendant la synchronisation dans le cloud, provoquant des dates incorrectes",
@@ -418,7 +435,7 @@
     "Orologio": [
       "Risolto: La sveglia non poteva essere spenta con i pulsanti una volta suonata"
     ],
-    "Galleria": [
+    "Album": [
       "Ottimizzazione: Strategia di sincronizzazione video migliorata per aumentare la fluidità della riproduzione",
       "Risolto: Il caricamento delle anteprime nella Galleria era troppo lungo quando veniva generato un numero elevato di immagini in un breve periodo di tempo",
       "Risolto: I dati temporali delle foto venivano persi durante la sincronizzazione con il cloud, causando errori nelle date",
@@ -460,7 +477,7 @@
     "Reloj": [
       "Reparado: La alarma no se podía apagar usando los botones después de que sonase"
     ],
-    "Galería": [
+    "Álbum de fotos": [
       "Optimización: Estrategia de sincronización de vídeo mejorada para mejorar la fluidez de reproducción",
       "Reparado: Las miniaturas de previsualización en la Galería tardaban demasiado en cargarse cuando se generaba una gran cantidad de imágenes en un período corto",
       "Reparado: Las marcas de tiempo de las fotografías se perdían durante la sincronización en la nube, lo que provocaba fechas incorrectas",
@@ -502,7 +519,7 @@
     "Relógio": [
       "Correção: O alarme não podia ser desativado usando botões após disparar"
     ],
-    "Galeria": [
+    "Álbum": [
       "Otimização: Melhoria na sincronização de vídeos para aprimorar a suavidade da reprodução",
       "Correção: Miniaturas na Galeria demoravam para carregar quando um grande número de imagens eram geradas em um curto período de tempo",
       "Correção: O Carimbo de hora em fotos era perdido durante a sincronização com a nuvem, causando datas incorretas",
@@ -544,7 +561,7 @@
     "Saat": [
       "Onarım: Alarm çaldıktan sonra tuşlar kullanılarak kapatılamadı"
     ],
-    "Galeri": [
+    "albüm": [
       "Optimizasyon: Oynatma düzgünlüğünü geliştirmek için video senkronizasyonu stratejisi iyileştirildi",
       "Onarım: Kısa sürede çok sayıda fotoğraf oluşturulduğunda Galeri'deki küçük fotoğrafların önizlemesinin yüklenmesi çok uzun sürdü",
       "Onarım: Cloud senkronizasyonu sırasında fotoğraf zaman damgaları kaybolarak tarihlerin yanlış olmasına neden oldu",
@@ -572,6 +589,20 @@
       "Pengoptimalan: New startup animation strategy reduces app launch delays",
       "Perbaikan: Having too many notifications could cause the system to restart"
     ],
+    "Jam": [
+      "Perbaikan: Alarm tidak dapat dimatikan menggunakan tombol setelah berbunyi"
+    ],
+    "Album": [
+      "Optimasi: Meningkatkan strategi sinkronisasi video untuk meningkatkan kelancaran pemutaran",
+      "Perbaikan: Thumbnail pratinjau di Galeri membutuhkan waktu terlalu lama untuk dimuat saat banyak gambar dihasilkan dalam waktu singkat.",
+      "Perbaikan: Stempel waktu foto hilang selama sinkronisasi cloud, menyebabkan tanggal yang salah.",
+      "Perbaikan: Foto muncul kembali setelah dihapus saat sinkronisasi cloud.",
+      "Perbaikan: Memories tidak dapat diputar di beberapa model perangkat",
+      "Perbaikan: Pratinjau thumbnail di Galeri tampil tidak normal saat mengambil banyak foto secara berurutan"
+    ],
+    "Widget": [
+      "Baru: Asisten perjalanan mengingatkan jadwal kereta dan pesawat secara cerdas agar perjalanan lebih mudah."
+    ],
     "Lainnya": [
       "Keamanan dan stabilitas sistem ditingkatkan"
     ]
@@ -597,7 +628,7 @@
     "Đồng hồ": [
       "Sửa: Không thể tắt báo thức bằng các phím sau khi đổ chuông"
     ],
-    "Thư viện": [
+    "Album": [
       "Tối ưu: Chiến lược đồng bộ video được cải thiện để nâng cao độ mượt khi phát",
       "Sửa: Hình thu nhỏ xem trước trong Thư viện mất quá nhiều thời gian để tải khi một số lượng lớn ảnh được tạo trong một khoảng thời gian ngắn",
       "Sửa: Dấu thời gian của ảnh bị mất trong quá trình đồng bộ đám mây, khiến ngày không chính xác",
@@ -681,7 +712,7 @@
     "الساعة": [
       "الإصلاح: لا يمكن إيقاف تشغيل المنبه باستخدام الأزرار بعد رنينه"
     ],
-    "المعرض": [
+    "ألبوم الصور": [
       "التحسين: استراتيجية مزامنة الفيديو لتحسين سلاسة التشغيل",
       "الإصلاح: استغراق وقت طويل لتحميل الصور المصغرة لمعاينة المعرض عندما يتم إنشاء عدد كبير من الصور في فترة قصيرة",
       "الإصلاح: فقدان الطوابع الزمنية للصور أثناء المزامنة إلى Cloud، مما تسبب في عرض تواريخ غير صحيحة",
@@ -698,7 +729,7 @@
     "المهام الأخيرة": [
       "الجديد: يمكن استخدام رموز الركوب وأكواد الدفع على الشاشة الخارجية"
     ],
-    "أخرى": [
+    "آخرين": [
       "تحسين أمن واستقرار النظام"
     ]
   },
@@ -723,7 +754,7 @@
     "घड़ी": [
       "ठीक करें अलार्म बजने के बाद उसे बटनों का उपयोग करके बंद नहीं किया जा सका"
     ],
-    "गैलरी": [
+    "अल्बम": [
       "ऑप्टिमाइज़ेशन प्लेबैक की स्मूदनस को बढ़ाने के लिए बेहतर वीडियो सिंक्रनाइज़ेशन रणनीति",
       "ठीक करें कम समय में बड़ी संख्या में इमेज जनरेट किए जाने पर, गैलरी में प्रीव्यू थंबनेल लोड होने में बहुत अधिक समय ले रहा था",
       "ठीक करें क्लाउड सिंक के दौरान फोटो टाइमस्टैम्प खो जा रहे थे, जिससे गलत दिनांक दिखाई दे रहे थे",

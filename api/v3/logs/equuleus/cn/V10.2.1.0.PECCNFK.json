@@ -5,17 +5,18 @@
     ],
     "系统": [
       "新增 预装SenseAR平台，支持王者荣耀AR相机",
-      "修复 人脸解锁失灵与成功率低的问题",
-      "修复 微信界面锁屏解锁后，快捷按键区域显示异常的问题",
+      "关于面部解锁功能出现的问题（如无法正常使用或解锁失败等）……",
+      "在解锁屏幕后（该屏幕在使用微信时被锁定了），快捷方式的功能出现了问题/无法正常使用。",
       "修复 人脸解锁相关的问题",
       "修复 使用微信时锁屏，解锁后快捷方式异常的问题"
     ],
     "锁屏、状态栏、通知栏": [
       "新增 状态栏支持显示通知图标，前往「设置-通知和状态栏-来通知时显示图标」开启",
       "修复 使用数字电池样式后，电池图标显示异常的问题",
-      "修复 锁屏时收到不重要通知不亮屏的问题",
+      "当设备处于锁定状态时，对于那些“不重要”的通知（即用户可能不会关注的通知），“恢复屏幕”功能并不会被激活（也就是说，这些通知不会显示在屏幕上）。",
       "修复 锁屏时充电球与预计充电时间显示重叠的问题",
-      "修复 偶现亮屏息屏时屏幕闪烁的问题"
+      "修复 偶现亮屏息屏时屏幕闪烁的问题",
+      "修复 锁屏时收到不重要通知不亮屏的问题"
     ],
     "相机": [
       "新增 合影优选模式",
@@ -26,24 +27,26 @@
       "修复 偶现的自动连拍问题"
     ],
     "备份": [
+      "当从 USB 设备中恢复那些并未实际安装在设备上的应用程序时，这些应用程序的图标无法被正确显示。",
       "修复 从U盘恢复手机中未安装应用，图标显示异常的问题"
     ],
     "设置": [
-      "修复 设置同步显示两个添加个人账户选项的问题",
+      "在“设置”选项中，提供了两种用于添加个人账户的方法（即两种添加个人账户的选项）。",
       "修复 设置中出现两个添加个人账户选项的问题"
     ],
     "系统更新": [
       "新增 桌面快捷方式功能，可以在更新设置中开启"
     ],
     "文件管理器": [
-      "修复 重命名或者解密后的文件无法搜索的问题",
+      "恢复操作失败：无法通过搜索找到那些已被重命名或解密的项目。",
       "修复 在某些情况下，缩略图刷新不及时的问题",
       "修复 分屏模式下，垃圾清理页面显示异常的问题",
-      "修复 私密文件夹中剪切图片视频后打开文件异常的问题"
+      "修复 私密文件夹中剪切图片视频后打开文件异常的问题",
+      "修复 重命名或者解密后的文件无法搜索的问题"
     ],
     "录音机": [
       "修复 设置图标显示异常的问题",
-      "修复 暂停录音后无法及时更新到状态栏的问题"
+      "修复：当录音被暂停时，通知栏中的录音状态信息不会更新。"
     ],
     "小米帐号": [
       "修复 小米账号登陆页面语言显示错误的问题",
@@ -54,10 +57,20 @@
     ]
   },
   "logs_en": {
+    "Attention": [
+      "Xiaomi Mi 8 Screen Fingerprint Edition releases MIUI Stable deeply customized based on Android P"
+    ],
+    "System": [
+      "Added pre-installed SenseAR platform, supports Honor of Kings AR camera",
+      "Fix the issues with face unlocking not working properly and having a low success rate.",
+      "Fixed the issue where, after unlocking the WeChat interface from screen lock, the shortcut key area displayed incorrectly.",
+      "Fix: Issues with Face unlock",
+      "Fix: Issues with shortcuts after unlocking the screen that was locked while using WeChat"
+    ],
     "Lockscreen, Status Bar, Notification Bar": [
       "Add Option for showing notification icons (Settings > Notifications & status bar)",
       "Fix: Battery icon wasn't displayed correctly when percentage was shown",
-      "Restore Screen didn't light up for unimportant notifications when the device was locked",
+      "Fixed the issue where the screen does not light up when receiving unimportant notifications while the device is in lockscreen mode.",
       "Fix: Lock screen UI elements overlapped when the device was charging",
       "Fix: Screen flashed after lighting up in some cases",
       "New: Option for showing notification icons (Settings > Notifications & status bar)",
@@ -74,11 +87,11 @@
       "Fix: Camera crashed in some cases"
     ],
     "Backup": [
-      "Restore App icons weren't displayed correctly when apps that weren't installed were restored from a USB device",
+      "Fixed the issue where applications not installed on the phone are displayed with abnormal icons when restored from a USB drive.",
       "Fix: App icons weren't displayed correctly when apps that weren't installed were restored from a USB device"
     ],
     "Settings": [
-      "Restore Two options for adding personal accounts were shown in the Settings",
+      "Fixed the issue with the settings not displaying both options for adding personal accounts simultaneously.",
       "Fix: Two options for adding personal accounts were shown in the Settings"
     ],
     "Updater": [
@@ -86,23 +99,20 @@
       "New: A Home screen shortcut option"
     ],
     "File Explorer": [
-      "Restore Couldn't find renamed or decrypted items using search",
+      "Fixed the issue where files that have been renamed or decrypted cannot be searched for.",
       "Fix: Sometimes it took too long for the thumbnails to refresh",
       "Fix: Cleaner wasn't sidplayed correctly in Split screen",
       "Fix: Errors occured after videos from the folder with hidden files were edited",
       "Fix: Couldn't find renamed or decrypted items using search"
     ],
     "Recorder": [
-      "Restore The settings icon wasn't displayed correctly",
-      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused",
+      "Fixed the issue with abnormal display of the setup icon.",
+      "Fixed the issue where the status bar was not updated promptly after stopping the recording.",
       "Fix: The settings icon wasn't displayed correctly"
     ],
     "Mi Account": [
-      "Fix: Issues with the languages on the Mi Account sign-in page"
-    ],
-    "System": [
-      "Fix: Issues with Face unlock",
-      "Fix: Issues with shortcuts after unlocking the screen that was locked while using WeChat"
+      "Fix: Issues with the languages on the Mi Account sign-in page",
+      "Fix issue where the language is displayed incorrectly on the Xiaomi account login page."
     ],
     "Other": [
       "Improved system security and stability"
@@ -115,10 +125,20 @@
     ]
   },
   "logs_zh_tw": {
+    "重要提示": [
+      "小米手機8螢幕指紋版發布基於 Android P 深度定制的 MIUI 穩定版"
+    ],
+    "系統": [
+      "新增 預裝SenseAR平台，支援王者榮耀AR相機",
+      "修复了人脸识别解锁功能失效以及识别成功率较低的问题。",
+      "修复了微信界面在锁屏状态解除后，快捷键区域显示异常的问题。",
+      "修復 人臉解鎖相關的問題",
+      "修復使用微信時鎖屏，解鎖後捷徑異常的問題"
+    ],
     "解鎖畫面、狀態欄、通知欄": [
       "新增 狀態列支援顯示通知圖示，前往「設定-通知和狀態列-來通知時顯示圖示」開啟",
       "修正 使用數字電池樣式後，電池圖示顯示異常的問題",
-      "修復 鎖屏時收到不重要通知不亮屏的問題",
+      "修复了在锁屏状态下收到无关紧要的通知时屏幕不会亮起的故障。",
       "修復 螢幕鎖定時充電球與預計充電時間顯示重疊的問題",
       "修復 偶現亮屏息屏時螢幕閃爍的問題",
       "新增 狀態列支援顯示通知圖示，前往「設定-通知和狀態列-收到通知時顯示圖示」開啟",
@@ -133,35 +153,32 @@
       "修復 偶現的自動連拍問題",
       "新增: 超級夜景功能"
     ],
-    "備份": [
+    "备份（Backup）": [
+      "已修复从 U 盘恢复到手机上的应用程序时出现的以下问题：这些应用程序未被正确安装，其图标显示异常（即图标的形状或样式不正确）。",
       "修復從 USB 隨身碟還原手機中未安裝的應用程式時，圖示顯示異常的問題"
     ],
-    "設定": [
-      "修復 設定同步顯示兩個新增個人帳戶選項的問題",
+    "设置": [
+      "已修复“设置”功能中同时显示两个用于添加个人账户的选项的问题。",
       "修復 設定中出現兩個新增個人帳戶選項的問題"
     ],
     "系統更新": [
       "新增 桌面捷徑功能，可在更新設定中開啟"
     ],
-    "檔案管理員": [
+    "文件管理器": [
       "修正 重新命名或解密後檔案無法搜尋的問題",
       "修正 在某些情況下，縮圖未及時更新的問題",
       "修復分屏模式下垃圾清理頁面顯示異常的問題",
       "修復 私密資料夾中剪切圖片影片後開啟檔案異常的問題",
       "修復重新命名或解密後的檔案無法搜尋的問題"
     ],
-    "錄音機": [
-      "修復 設定圖示顯示異常的問題",
-      "修復 暫停錄音後無法即時更新到狀態欄的問題",
+    "录音机": [
+      "已修复设置图标显示异常的问题。",
+      "修复了在暂停录音后，系统无法及时将录音状态更新到状态栏的问题。",
       "修復設定圖示顯示異常的問題"
     ],
     "小米帳號": [
       "修復 小米帳號登入頁面語言顯示錯誤的問題",
       "修復 小米帳號登入葉面語言顯示錯誤的問題"
-    ],
-    "系統": [
-      "修復 人臉解鎖相關的問題",
-      "修復使用微信時鎖屏，解鎖後捷徑異常的問題"
     ],
     "其他": [
       "Improved system security and stability"
@@ -171,10 +188,20 @@
     ]
   },
   "logs_ja": {
+    "注意": [
+      "Xiaomi Mi 8 画面内指紋認証版が Android P をベースに深くカスタマイズした MIUI 安定版をリリース"
+    ],
+    "システム": [
+      "SenseARプラットフォームをプリインストールし、Honor of KingsのARカメラに対応",
+      "顔認証が機能しない問題と成功率が低い問題を修正",
+      "WeChatのインターフェースでロック画面から解除した後、ショートカットキー領域が異常に表示される問題を修正しました。",
+      "顔認証に関する問題を修正",
+      "WeChat使用中に画面をロックし、ロック解除後にショートカットが異常になる問題を修正"
+    ],
     "ロック画面、ステータスバー、通知バー": [
       "追加：ステータスバーで通知アイコンの表示に対応。「設定 – 通知とステータスバー – 通知受信時にアイコンを表示」からオンにしてください。",
       "数字バッテリースタイル使用後、バッテリーアイコンが正しく表示されない問題を修正",
-      "ロック画面で重要でない通知を受信したときに画面が点灯しない問題を修正",
+      "ロック画面時に重要でない通知が届いても画面が点灯しない問題を修正しました。",
       "ロック画面で充電ボールと予想充電時間の表示が重なる問題を修正",
       "画面の点灯・消灯時にまれに画面がちらつく問題を修正",
       "追加: ステータスバーで通知アイコンを表示できるようになりました。「設定 > 通知とステータスバー > 通知受信時にアイコンを表示」からオンにしてください。",
@@ -192,11 +219,11 @@
       "カメラの強制終了問題を修正"
     ],
     "バックアップ": [
-      "USBドライブからスマートフォンに未インストールのアプリを復元する際、アイコンが正しく表示されない問題を修正",
+      "USBメモリからスマートフォンにアプリを復元した際に、インストールされていないアプリのアイコンが異常に表示される問題を修正しました。",
       "USBメモリから未インストールのアプリを復元した際、アイコンが正しく表示されない問題を修正"
     ],
     "設定": [
-      "設定の同期で個人アカウントを追加するオプションが2つ表示される問題を修正",
+      "個人アカウントを2つ追加するオプションが同期表示されない問題を修正しました。",
       "設定に個人アカウントを追加する項目が2つ表示される問題を修正"
     ],
     "アップデーター": [
@@ -204,7 +231,7 @@
       "追加: ホーム画面ショートカット機能。アップデート設定で有効にできます。"
     ],
     "ファイルマネージャー": [
-      "名前を変更したファイルまたは復号したファイルを検索できない問題を修正",
+      "ファイルの名前を変更したり復号化した後に検索できなくなる問題を修正しました。",
       "一部の場合でサムネイルの更新が間に合わない問題を修正",
       "分割画面モードでクリーナーページが正しく表示されない問題を修正",
       "プライベートフォルダで画像や動画を切り取った後にファイルを開く際の異常を修正",
@@ -212,14 +239,11 @@
     ],
     "レコーダー": [
       "設定アイコンが正しく表示されない問題を修正",
-      "修正: 録音を一時停止した際、通知シェードの録音状態が更新されない問題"
+      "録音を一時停止した後、ステータスバーの表示がすぐに更新されない問題を修正しました。"
     ],
     "Mi アカウント": [
-      "Mi アカウントのログインページで言語が正しく表示されない問題を修正"
-    ],
-    "システム": [
-      "顔認証に関する問題を修正",
-      "WeChat使用中に画面をロックし、ロック解除後にショートカットが異常になる問題を修正"
+      "Mi アカウントのログインページで言語が正しく表示されない問題を修正",
+      "Xiaomi アカウントのログインページで言語が正しく表示されない問題を修正"
     ],
     "その他": [
       "システムのセキュリティと安定性の向上"
@@ -229,6 +253,16 @@
     ]
   },
   "logs_ko": {
+    "주의": [
+      "Xiaomi Mi 8 스크린 지문 인식 에디션이 Android P 기반으로 깊게 커스터마이즈된 MIUI 안정판을 출시"
+    ],
+    "시스템": [
+      "SenseAR 플랫폼을 사전 설치하여 Honor of Kings AR 카메라를 지원",
+      "얼굴 인식을 통한 잠금 해제 기능이 제대로 작동하지 않거나 성공률이 낮은 문제를 수정했습니다.",
+      "WeChat 인터페이스의 잠금 해제 후 단축키 영역이 비정상적으로 표시되는 문제를 수정했습니다.",
+      "얼굴 인식 관련 문제 수정",
+      "WeChat 사용 중 화면을 잠근 후 잠금 해제 시 바로가기가 비정상인 문제 수정"
+    ],
     "잠금 화면, 상태 표시줄, 알림 표시줄": [
       "추가: 상태 표시줄에서 알림 아이콘 표시를 지원합니다. 「설정 – 알림 및 상태 표시줄 – 알림 수신 시 아이콘 표시」에서 켜세요.",
       "숫자 배터리 스타일 사용 후 배터리 아이콘이 비정상적으로 표시되는 문제 수정",
@@ -253,7 +287,7 @@
       "USB 드라이브에서 설치되지 않은 앱을 복원할 때 아이콘이 올바르게 표시되지 않는 문제 수정"
     ],
     "설정": [
-      "설정 동기화에서 개인 계정 추가 옵션이 두 개 표시되는 문제 수정",
+      "개인 계정을 두 개 추가하는 옵션이 동기화되어 함께 표시되지 않는 문제를 수정했습니다.",
       "설정에 개인 계정 추가 옵션이 두 개 표시되는 문제를 수정"
     ],
     "업데이터": [
@@ -261,23 +295,20 @@
       "추가: 홈 화면 바로가기 기능. 업데이트 설정에서 활성화할 수 있습니다."
     ],
     "파일 관리자": [
-      "이름이 변경되었거나 복호화된 파일을 검색할 수 없는 문제를 수정했습니다",
+      "이름을 바꾸거나 암호를 해제한 파일을 검색할 수 없는 문제가 수정되었습니다.",
       "일부 상황에서 썸네일이 제때 새로고침되지 않는 문제를 수정했습니다",
       "분할 화면 모드에서 클리너 페이지가 비정상적으로 표시되는 문제를 수정했습니다",
       "비공개 폴더에서 사진 및 동영상을 잘라낸 후 파일을 여는 오류를 수정",
       "이름 변경 또는 복호화된 파일을 검색할 수 없는 문제 수정"
     ],
-    "녹음기": [
+    "레코더": [
       "설정 아이콘이 비정상적으로 표시되는 문제 수정",
-      "수정: 녹음을 일시중지했을 때 알림 창의 녹음 상태가 업데이트되지 않던 문제",
+      "녹음을 일시 중단한 후 상태 표시줄에 즉시 업데이트되지 않는 문제를 수정했습니다.",
       "설정 아이콘이 비정상적으로 표시되는 문제를 수정했습니다"
     ],
     "Mi 계정": [
-      "Mi 계정 로그인 페이지에서 언어가 잘못 표시되는 문제를 수정"
-    ],
-    "시스템": [
-      "얼굴 인식 관련 문제 수정",
-      "WeChat 사용 중 화면을 잠근 후 잠금 해제 시 바로가기가 비정상인 문제 수정"
+      "Mi 계정 로그인 페이지에서 언어가 잘못 표시되는 문제를 수정",
+      "Xiaomi 계정 로그인 페이지에서 언어가 잘못 표시되는 문제를 수정"
     ],
     "기타": [
       "시스템 보안 및 안정성 개선"
@@ -287,10 +318,20 @@
     ]
   },
   "logs_ru": {
+    "Предупреждения": [
+      "Xiaomi Mi 8 Screen Fingerprint Edition получил стабильную версию MIUI, глубоко кастомизированную на основе Android P"
+    ],
+    "Система": [
+      "Добавлена предустановленная платформа SenseAR, поддерживается AR-камера Honor of Kings",
+      "Устранены проблемы с невозможностью разблокировки устройства по распознаванию лица, а также низким уровнем успешности этого процесса.",
+      "Исправлено поведение области быстрых клавиш после разблокировки экрана в WeChat: она отображалась некорректно.",
+      "Исправление проблем с разблокировкой по лицу",
+      "Исправлена проблема с некорректной работой ярлыков после разблокировки экрана, заблокированного во время использования WeChat."
+    ],
     "Экран блокировки, строка состояния, шторка уведомлений": [
       "Добавлено: поддержка отображения значков уведомлений в строке состояния. Включите в «Настройки – Уведомления и строка состояния – Показывать значки при получении уведомлений».",
       "Исправлена проблема с неправильным отображением значка батареи после использования цифрового стиля батареи",
-      "Исправлена проблема с невключением экрана при получении неважных уведомлений на экране блокировки",
+      "Устранено неправильное поведение устройства: при включенном режиме блокировки экрана не отображались важные уведомления, и сам экран не загорался.",
       "Исправлено наложение индикатора зарядки и предполагаемого времени зарядки на экране блокировки",
       "Исправлена проблема с периодическим мерцанием экрана при включении и выключении экрана",
       "Добавлено: поддержка отображения значков уведомлений в строке состояния. Включите в «Настройки > Уведомления и строка состояния > Показывать значки при получении уведомлений».",
@@ -308,48 +349,58 @@
       "Исправлена проблема с вылетом камеры"
     ],
     "Резервное копирование": [
-      "Исправлена проблема с некорректным отображением значков при восстановлении из USB-накопителя приложений, не установленных на телефоне.",
+      "Устранено неполадки при восстановлении приложений с флеш-накопителя на телефон: иконы приложений отображаются некорректно.",
       "Исправлена проблема с неправильным отображением значков при восстановлении из USB-накопителя приложений, не установленных на телефоне"
     ],
     "Настройки": [
-      "Исправлена проблема, из-за которой в синхронизации настроек отображались два параметра добавления личной учетной записи.",
+      "Устранено неполадка с настройками синхронизации отображения двух опций для добавления личных учетных записей.",
       "Исправлено: в настройках отображались два варианта добавления личного аккаунта"
     ],
     "Обновление": [
       "Добавлена функция ярлыка на главном экране; можно включить в настройках обновления.",
       "Добавлено: функция ярлыка на главном экране. Можно включить в настройках обновления."
     ],
-    "Файловый менеджер": [
-      "Исправлена проблема, из-за которой не удавалось найти переименованные или расшифрованные файлы",
+    "Проводник файлов": [
+      "Устранено проблему, при которой файлы после переименования или декриптирования не отображались в результатах поиска.",
       "Исправлена проблема, из-за которой в некоторых случаях миниатюры не обновлялись вовремя",
       "Исправлена проблема с неправильным отображением страницы очистки в режиме разделённого экрана",
       "Исправлена ошибка открытия файлов после вырезания изображений и видео в приватной папке",
       "Исправлена проблема с невозможностью поиска переименованных или расшифрованных файлов"
     ],
     "Диктофон": [
-      "Исправлена проблема с некорректным отображением значка настроек",
-      "Fix: Факт остановки записи не отображался в строке состояния вовремя",
+      "Устранено неправильное отображение иконок при настройках.",
+      "Устранено недостаток, связанный с тем, что после приостановки записи информация не своевременно отображается в панели состояния.",
       "Исправлена проблема с неправильным отображением значка настроек"
     ],
     "Аккаунт Mi": [
-      "Исправлена проблема с неправильным отображением языка на странице входа Mi Account"
-    ],
-    "Система": [
-      "Исправление проблем с разблокировкой по лицу",
-      "Исправлена проблема с некорректной работой ярлыков после разблокировки экрана, заблокированного во время использования WeChat."
+      "Исправлена проблема с неправильным отображением языка на странице входа Mi Account",
+      "Исправлена проблема с неправильным отображением языка на странице входа в аккаунт Xiaomi."
     ],
     "Другое": [
       "Улучшение безопасности и стабильности системы"
     ],
     "Экран блокировки, строка состояния, панель уведомлений": [
       "Исправлено наложение индикатора зарядки и предполагаемого времени зарядки на экране блокировки"
+    ],
+    "Файловый менеджер": [
+      "Исправлена ошибка открытия файлов после вырезания изображений и видео в приватной папке"
     ]
   },
   "logs_uk": {
+    "Попередження": [
+      "Xiaomi Mi 8 Screen Fingerprint Edition отримав стабільну версію MIUI, глибоко налаштовану на базі Android P"
+    ],
+    "Система": [
+      "Додано попередньо встановлену платформу SenseAR, підтримується AR-камера Honor of Kings",
+      "Виправлено проблеми з некоректним функціонуванням розблокування за допомогою обличчя та низьким рівнем успішності цього процесу.",
+      "Виправлено проблему з некоректним відображенням зони швидких клавіш після розблокування екрана у інтерфейсі WeChat.",
+      "Виправлено проблеми з розблокуванням обличчям",
+      "Виправлено проблему з ненормальною роботою ярликів після розблокування екрана, заблокованого під час використання WeChat."
+    ],
     "Екран блокування, рядок стану, рядок сповіщень": [
       "Додано: підтримка відображення значків сповіщень у рядку стану. Увімкніть у «Налаштування – Сповіщення та рядок стану – Показувати значки під час отримання сповіщень».",
       "Виправлено проблему з неправильним відображенням значка батареї після використання цифрового стилю батареї",
-      "Виправлено проблему з неввімкненням екрана під час отримання неважливих сповіщень на екрані блокування",
+      "Виправлено проблему, коли під час блокування екрана надходять неважливі сповіщення, і екран не загоряється.",
       "Виправлено накладання індикатора заряджання та орієнтовного часу заряджання на екрані блокування",
       "Виправлено проблему з періодичним мерехтінням екрана під час увімкнення та вимкнення екрана",
       "Додано: підтримка відображення значків сповіщень у рядку стану. Увімкніть у «Налаштування > Сповіщення та рядок стану > Показувати значки під час отримання сповіщень».",
@@ -367,19 +418,19 @@
       "Виправлено проблему з вильотом камери"
     ],
     "Резервне копіювання": [
-      "Виправлено проблему з неправильним відображенням значків під час відновлення з USB-накопичувача програм, не встановлених на телефоні.",
+      "Виправлено проблему з відновленням додатків з флеш-накопичувача на телефон, коли додатки не були встановлені, а їх іконки відображалися некоректно.",
       "Виправлено проблему з неправильним відображенням значків під час відновлення з USB-носія програм, не встановлених на телефоні"
     ],
     "Налаштування": [
-      "Виправлено проблему, через яку в синхронізації налаштувань відображалися два параметри додавання особистого облікового запису.",
+      "Виправлено проблему з налаштуванням синхронізованого відображення двох опцій для додавання особистих облікових записів.",
       "Виправлено: у налаштуваннях відображалися два варіанти додавання особистого облікового запису"
     ],
     "Оновлення": [
       "Додано функцію ярлика на головному екрані; можна ввімкнути в налаштуваннях оновлення.",
       "Додано: функція ярлика на головному екрані. Можна ввімкнути в налаштуваннях оновлення."
     ],
-    "Файловий менеджер": [
-      "Виправлено проблему, через яку не вдавалося знайти перейменовані або розшифровані файли",
+    "Провідник файлів": [
+      "Виправлено проблему, коли файл після перейменування або декодування не піддається пошуку.",
       "Виправлено проблему, через яку в деяких випадках мініатюри не оновлювалися вчасно",
       "Виправлено проблему з неправильним відображенням сторінки очищення в режимі розділеного екрана",
       "Виправлено помилку відкриття файлів після вирізання зображень і відео в приватній папці",
@@ -387,28 +438,38 @@
     ],
     "Диктофон": [
       "Виправлено проблему з нерозпізнаним відображенням значка налаштувань",
-      "Виправлено: стан запису не оновлювався в панелі сповіщень під час паузи запису",
+      "Виправлено проблему, коли після призупинення запису інформація не вчасно оновлюється у панелі стану.",
       "Виправлено проблему з неправильним відображенням значка налаштувань"
     ],
     "Обліковий запис Mi": [
-      "Виправлено проблему з неправильним відображенням мови на сторінці входу Mi Account"
-    ],
-    "Система": [
-      "Виправлено проблеми з розблокуванням обличчям",
-      "Виправлено проблему з ненормальною роботою ярликів після розблокування екрана, заблокованого під час використання WeChat."
+      "Виправлено проблему з неправильним відображенням мови на сторінці входу Mi Account",
+      "Виправлено проблему з неправильним відображенням мови на сторінці входу в обліковий запис Xiaomi."
     ],
     "Інше": [
       "Покращення безпеки та стабільності системи"
     ],
     "Екран блокування, рядок стану, панель сповіщень": [
       "Виправлено накладання індикатора заряджання та орієнтовного часу заряджання на екрані блокування"
+    ],
+    "Файловий менеджер": [
+      "Виправлено помилку відкриття файлів після вирізання зображень і відео в приватній папці"
     ]
   },
   "logs_pl": {
+    "Powiadomienie": [
+      "Xiaomi Mi 8 Screen Fingerprint Edition otrzymuje stabilną wersję MIUI głęboko dostosowaną na bazie Android P"
+    ],
+    "System": [
+      "Dodano wstępnie zainstalowaną platformę SenseAR, obsługa aparatu AR w Honor of Kings",
+      "Poprawiono problemy z nieefektywnym odkrywaniem oblicza przy rozszyfrowaniu oraz niskim stopniem skuteczności tego procesu.",
+      "Poprawiono problem z wyświetleniem elementów na panelu szybkiego dostępu po odblokowaniu ekranu w aplikacji WeChat.",
+      "Naprawiono problemy z odblokowywaniem twarzą",
+      "Naprawiono problem z nieprawidłowym działaniem skrótów po odblokowaniu ekranu zablokowanego podczas korzystania z WeChat."
+    ],
     "Ekran blokady, pasek stanu, pasek powiadomień": [
       "Dodano: obsługę wyświetlania ikon powiadomień na pasku stanu. Włącz w „Ustawienia – Powiadomienia i pasek stanu – Pokazuj ikony przy otrzymywaniu powiadomień”.",
       "Naprawiono problem z nieprawidłowym wyświetlaniem ikony baterii po użyciu cyfrowego stylu baterii",
-      "Naprawiono problem z niezaświecaniem ekranu przy otrzymywaniu nieistotnych powiadomień na ekranie blokady",
+      "Poprawiono problem, gdy podczas uaktywowania ekranu blokującego pojawiały się nieważne powiadomienia i ekran nie świecił.",
       "Naprawiono nakładanie się wskaźnika ładowania i szacowanego czasu ładowania na ekranie blokady",
       "Naprawiono problem z okresowym migotaniem ekranu podczas włączania i wyłączania ekranu",
       "Dodano: obsługa wyświetlania ikon powiadomień na pasku stanu. Włącz w «Ustawienia > Powiadomienia i pasek stanu > Pokazuj ikony przy powiadomieniach».",
@@ -426,11 +487,11 @@
       "Naprawiono problem z awarią aparatu"
     ],
     "Kopia zapasowa": [
-      "Naprawiono problem z nieprawidłowym wyświetlaniem ikon podczas przywracania z dysku USB aplikacji niezainstalowanych na telefonie.",
+      "Poprawiono problem z przywracaniem aplikacji niezainstalowanych na telefonie z pendrive’a, w wyniku czego ikony te wyświetlały się niepoprawnie.",
       "Naprawiono problem z nieprawidłowym wyświetlaniem ikon podczas przywracania z nośnika USB aplikacji niezainstalowanych na telefonie"
     ],
     "Ustawienia": [
-      "Naprawiono problem z wyświetlaniem dwóch opcji dodawania konta osobistego w synchronizacji ustawień.",
+      "Urzędnicy naprawili problem z ustawieniami synchronizacji wyświetlania dwóch opcji dotyczących dodawania kont osobistych.",
       "Poprawiono: w Ustawieniach wyświetlały się dwie opcje dodawania konta osobistego"
     ],
     "Aktualizacje": [
@@ -438,24 +499,21 @@
       "Dodano: funkcję skrótu na ekranie głównym. Można włączyć w ustawieniach aktualizacji."
     ],
     "Menedżer plików": [
-      "Naprawiono problem, przez który nie można było wyszukać plików o zmienionej nazwie lub odszyfrowanych",
+      "Poprawiono problem, gdy po przemianie nazwy lubdekrytowaniu pliku nie był możliwy jego wyszukiwanie.",
       "Naprawiono problem, w którym w niektórych przypadkach miniatury nie odświeżały się na czas",
       "Naprawiono problem z nieprawidłowym wyświetlaniem strony oczyszczania w trybie podzielonego ekranu",
       "Naprawiono błąd otwierania plików po wycięciu zdjęć i filmów w folderze prywatnym",
       "Naprawiono problem z wyszukiwaniem plików o zmienionej nazwie lub odszyfrowanych"
     ],
-    "Rejestrator": [
+    "Kaseta nagrywająca": [
       "Naprawiono problem z nieprawidłowym wyświetlaniem ikony ustawień",
-      "Poprawka: stan nagrywania nie był aktualizowany na pasku powiadomień po wstrzymaniu nagrywania"
+      "Poprawiono problem z niewłaściwym aktualizowaniem stanu w pasku stanu po przywołaniu funkcji przerywania nagrywania."
     ],
     "Konto Mi": [
-      "Naprawiono problem z nieprawidłowym wyświetlaniem języka na stronie logowania Mi Account"
+      "Naprawiono problem z nieprawidłowym wyświetlaniem języka na stronie logowania Mi Account",
+      "Naprawiono problem z nieprawidłowym wyświetlaniem języka na stronie logowania do konta Xiaomi."
     ],
-    "System": [
-      "Naprawiono problemy z odblokowywaniem twarzą",
-      "Naprawiono problem z nieprawidłowym działaniem skrótów po odblokowaniu ekranu zablokowanego podczas korzystania z WeChat."
-    ],
-    "Inne": [
+    "Reszt": [
       "Większe bezpieczeństwo i stabilność systemu"
     ],
     "Ekran blokady, pasek stanu, panel powiadomień": [
@@ -463,10 +521,20 @@
     ]
   },
   "logs_de": {
+    "Wichtiger Hinweis": [
+      "Xiaomi Mi 8 Screen Fingerprint Edition erhält stabile MIUI-Version mit tiefgreifenden Anpassungen auf Basis von Android P"
+    ],
+    "System": [
+      "Vorinstallierte SenseAR-Plattform hinzugefügt, unterstützt Honor of Kings AR-Kamera",
+      "Behebung der Probleme mit fehlgeschlagenem Gesichtserkennungssystem zur Entsperrung sowie der niedrigen Erfolgsrate.",
+      "Behebung des Problems, dass nach dem Entsperren des Bildschirms im WeChat-Interface der Bereich mit den Schnellzugriffstasten falsch angezeigt wird.",
+      "Behebung von Problemen mit der Gesichtserkennung",
+      "Problem mit fehlerhaften Verknüpfungen nach dem Entsperren des Bildschirms, der während der Nutzung von WeChat gesperrt wurde, behoben."
+    ],
     "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
       "Neu: Unterstützung für die Anzeige von Benachrichtigungssymbolen in der Statusleiste. Aktiviere „Einstellungen – Benachrichtigungen und Statusleiste – Symbole bei Benachrichtigung anzeigen“.",
       "Problem behoben, bei dem das Batteriesymbol nach Verwendung des numerischen Batteriestils falsch angezeigt wurde",
-      "Problem behoben, dass der Bildschirm bei unwichtigen Benachrichtigungen im Sperrbildschirm nicht aufleuchtet",
+      "Behebung des Problems, dass das Display beim Einschalten des Sperrbildschirms nicht aufleuchtet, wenn unbedeutende Benachrichtigungen eingehen.",
       "Problem behoben, bei dem sich Ladeball und geschätzte Ladezeit auf dem Sperrbildschirm überlappen",
       "Problem behoben, bei dem der Bildschirm beim Ein- und Ausschalten gelegentlich flackerte",
       "Neu: Statusleiste kann Benachrichtigungssymbole anzeigen. Aktiviere dies unter «Einstellungen > Benachrichtigungen & Statusleiste > Symbole bei Benachrichtigungen anzeigen».",
@@ -478,10 +546,13 @@
       "Neu: Verbesserter Low-Light-Modus",
       "Behebung: Probleme mit Rasterlinien im Vollbildmodus der Kamera",
       "Problem mit Absturz der Kamera behoben",
-      "Problem mit gelegentlichen automatischen Serienaufnahmen behoben"
+      "Problem mit gelegentlichen automatischen Serienaufnahmen behoben",
+      "Neu: Modus für optimierte Gruppenfotos",
+      "Neu: Unterstützung für handgehaltene Super-Nachtaufnahmen",
+      "Kamera-Absturz behoben"
     ],
-    "Sicherung": [
-      "Problem behoben, bei dem App-Symbole falsch angezeigt wurden, wenn nicht auf dem Telefon installierte Apps von einem USB-Laufwerk wiederhergestellt wurden.",
+    "Backup": [
+      "Behebung des Problems, bei dem nicht installierte Apps von einer USB-Stick auf das Handy zurückgeführt werden und deren Symbole fehlerhaft angezeigt werden.",
       "Problem behoben, bei dem App-Symbole falsch angezeigt wurden, wenn nicht installierte Apps von einem USB-Gerät wiederhergestellt wurden"
     ],
     "Einstellungen": [
@@ -493,22 +564,20 @@
       "Neu: Funktion für Startbildschirm-Verknüpfung. Kann in den Update-Einstellungen aktiviert werden."
     ],
     "Dateimanager": [
-      "Problem behoben, bei dem umbenannte oder entschlüsselte Dateien nicht durchsucht werden konnten",
+      "Behebung des Problems, dass nach der Umbenennung oder Entschlüsselung von Dateien keine Suchfunktion mehr verfügbar ist.",
       "Problem behoben, bei dem Miniaturansichten in manchen Fällen nicht rechtzeitig aktualisiert wurden",
       "Problem behoben, bei dem die Cleaner-Seite im geteilten Bildschirm nicht korrekt angezeigt wurde",
       "Fehler beim Öffnen von Dateien nach dem Ausschneiden von Bildern und Videos im privaten Ordner behoben",
       "Problem behoben, bei dem umbenannte oder entschlüsselte Dateien nicht gefunden werden konnten"
     ],
-    "Rekorder": [
-      "Problem mit der fehlerhaften Anzeige des Einstellungssymbols behoben",
-      "Behoben: Der Aufnahmestatus wurde in der Benachrichtigungsleiste nicht aktualisiert, wenn eine Aufnahme pausiert wurde"
+    "Tonaufnahmegerät": [
+      "Behebung des Problems mit der abnormalen Anzeige der Einstellungsicons",
+      "Behebung des Problems, dass sich der Status nach einer Unterbrechung der Aufnahmefunktion nicht rechtzeitig in der Statusleiste aktualisiert.",
+      "Problem mit der fehlerhaften Anzeige des Einstellungssymbols behoben"
     ],
     "Mi-Konto": [
-      "Problem mit falscher Sprachanzeige auf der Mi Account-Anmeldeseite behoben"
-    ],
-    "System": [
-      "Behebung von Problemen mit der Gesichtserkennung",
-      "Problem mit fehlerhaften Verknüpfungen nach dem Entsperren des Bildschirms, der während der Nutzung von WeChat gesperrt wurde, behoben."
+      "Problem mit falscher Sprachanzeige auf der Mi Account-Anmeldeseite behoben",
+      "Problem behoben, bei dem die Sprache auf der Xiaomi-Konto-Anmeldeseite falsch angezeigt wurde."
     ],
     "Sonstiges": [
       "Systemsicherheit und -stabilität verbessert"
@@ -518,6 +587,16 @@
     ]
   },
   "logs_fr": {
+    "Avertissement important": [
+      "Xiaomi Mi 8 Screen Fingerprint Edition reçoit une version stable de MIUI profondément personnalisée basée sur Android P"
+    ],
+    "Système": [
+      "Ajout de la plateforme SenseAR préinstallée, prise en charge de la caméra AR d’Honor of Kings",
+      "Réparation des problèmes de dysfonctionnement du déverrouillage par reconnaissance faciale ainsi que d'un taux de réussite trop bas.",
+      "Résolution du problème : après déverrouillage de l'écran verrouillé sur WeChat, la zone des raccourcis affiche un contenu anormal.",
+      "Correction des problèmes liés au déverrouillage par reconnaissance faciale",
+      "Correction du problème de raccourcis anormaux après le déverrouillage de l’écran verrouillé pendant l’utilisation de WeChat."
+    ],
     "Écran de verrouillage, barre d’état, barre de notifications": [
       "Ajout : prise en charge de l’affichage des icônes de notification dans la barre d’état. Activez dans « Paramètres – Notifications et barre d’état – Afficher les icônes lors des notifications ».",
       "Correction du problème d'affichage anormal de l'icône de batterie après l'utilisation du style numérique",
@@ -538,12 +617,12 @@
       "Nouveau: Mode faible luminosité amélioré",
       "Correction du problème de plantage de l'appareil photo"
     ],
-    "Sauvegarde": [
-      "Correction du problème d’affichage incorrect des icônes lors de la restauration depuis une clé USB d’applications non installées sur le téléphone.",
+    "Copie de sécurité": [
+      "Résolution du problème : les applications qui n’ont pas été installées sur le téléphone et qui sont récupérées depuis une clé USB affichent des icônes anormales.",
       "Correction du problème d’affichage incorrect des icônes lors de la restauration d’applications non installées depuis un périphérique USB"
     ],
     "Paramètres": [
-      "Correction du problème où deux options d'ajout de compte personnel s'affichaient dans la synchronisation des paramètres.",
+      "Problème résolu concernant l'affichage synchronisé des deux options permettant d'ajouter des comptes personnels.",
       "Correction : deux options d’ajout de compte personnel s’affichaient dans Paramètres"
     ],
     "Mises à jour": [
@@ -551,22 +630,20 @@
       "Nouveau : fonction de raccourci sur l'écran d'accueil. Peut être activée dans les paramètres de mise à jour."
     ],
     "Gestionnaire de fichiers": [
-      "Correction du problème empêchant la recherche des fichiers renommés ou déchiffrés",
+      "Résolution du problème selon lequel les fichiers renommés ou déchiffrés ne peuvent pas être recherchés.",
       "Correction du problème où les vignettes ne se rafraîchissaient pas à temps dans certains cas",
       "Correction du problème d’affichage incorrect de la page de nettoyage en mode écran partagé",
-      "Correction du problème d'ouverture des fichiers après avoir coupé des images et vidéos dans le dossier privé"
+      "Correction du problème d'ouverture des fichiers après avoir coupé des images et vidéos dans le dossier privé",
+      "Correction du problème empêchant la recherche des fichiers renommés ou déchiffrés"
     ],
     "Enregistreur": [
-      "Correction du problème d'affichage anormal de l'icône Paramètres",
-      "Correction : l’état d’enregistrement n’était pas mis à jour dans la barre de notifications lors d’une pause",
+      "Problème résolu : l'affichage des icônes de configuration est maintenant correct.",
+      "Résolution du problème : l'actualisation de l'état dans la barre d'état ne se fait pas immédiatement après l'arrêt de l'enregistrement.",
       "Correction du problème d’affichage incorrect de l’icône Paramètres"
     ],
     "Compte Mi": [
-      "Correction du problème d'affichage incorrect de la langue sur la page de connexion Mi Account"
-    ],
-    "Système": [
-      "Correction des problèmes liés au déverrouillage par reconnaissance faciale",
-      "Correction du problème de raccourcis anormaux après le déverrouillage de l’écran verrouillé pendant l’utilisation de WeChat."
+      "Correction du problème d'affichage incorrect de la langue sur la page de connexion Mi Account",
+      "Correction du problème d'affichage incorrect de la langue sur la page de connexion au compte Xiaomi."
     ],
     "Autre": [
       "Sécurité et stabilité du système améliorées"
@@ -579,16 +656,26 @@
     ]
   },
   "logs_it": {
+    "Attenzione": [
+      "Xiaomi Mi 8 Screen Fingerprint Edition riceve la versione stabile di MIUI profondamente personalizzata basata su Android P"
+    ],
+    "Sistema": [
+      "Aggiunta piattaforma SenseAR preinstallata, supporto alla fotocamera AR di Honor of Kings",
+      "Risolto il problema del funzionamento errato del riconoscimento facciale per l’accesso e dell’elevata incidenza di fallimenti nel processo di sblocco.",
+      "Risolto il problema di visualizzazione anomala dell'area dei tasti di scelta rapida dopo lo sblocco dello schermo in WeChat",
+      "Risolti i problemi con lo sblocco tramite volto",
+      "Risolto il problema delle scorciatoie anomale dopo lo sblocco dello schermo bloccato durante l'uso di WeChat."
+    ],
     "Schermata di blocco, barra di stato, barra delle notifiche": [
       "Aggiunto: supporto per la visualizzazione delle icone delle notifiche nella barra di stato. Attiva in «Impostazioni – Notifiche e barra di stato – Mostra icone alla ricezione delle notifiche».",
       "Risolto il problema di visualizzazione anomala dell'icona della batteria dopo l'uso dello stile numerico",
-      "Risolto il problema dello schermo che non si accende quando si ricevono notifiche non importanti sulla schermata di blocco",
+      "Risolto il problema per cui, quando lo schermo è bloccato e arrivano notifiche non importanti, lo schermo non si accende.",
       "Risolto il problema della sovrapposizione tra pallina di ricarica e tempo di ricarica stimato nella schermata di blocco",
       "Risolto il problema del tremolio occasionale dello schermo durante l'accensione/spegnimento",
       "Novità: supporto alla visualizzazione delle icone di notifica nella barra di stato. Attivalo in «Impostazioni > Notifiche e barra di stato > Mostra icone quando arrivano notifiche».",
       "Risolto il problema per cui lo schermo non si accendeva alla ricezione di notifiche non importanti durante il blocco"
     ],
-    "Fotocamera": [
+    "macchina fotografica": [
       "Aggiunta modalità selfie di gruppo ottimizzata",
       "Novità: Ora puoi registrare video a 960 fps",
       "Novità: Supporto alla fotografia notturna avanzata a mano",
@@ -599,15 +686,19 @@
       "Nuovo: Migliorata la modalità luce scarsa",
       "Risolto il problema di crash della fotocamera"
     ],
+    "Backup": [
+      "Risolto il problema relativo al recupero di applicazioni non installate dal telefono tramite chiavetta USB: gli iconi delle applicazioni venivano visualizzati in modo errato.",
+      "Risolto il problema della visualizzazione errata delle icone durante il ripristino da un dispositivo USB di app non installate"
+    ],
     "Impostazioni": [
-      "Risolto il problema per cui nella sincronizzazione delle impostazioni venivano mostrate due opzioni per aggiungere un account personale.",
+      "Risolto il problema relativo alle impostazioni per la sincronizzazione dell’visualizzazione delle due opzioni relative all’aggiunta di account personali.",
       "Corretto: in Impostazioni venivano mostrate due opzioni per aggiungere un account personale"
     ],
     "Aggiornamenti": [
       "Aggiunta funzione di collegamento alla schermata Home; attivabile nelle impostazioni aggiornamento.",
       "Novità: funzione di scorciatoia nella schermata Home. Si può attivare nelle impostazioni di aggiornamento."
     ],
-    "Gestione file": [
+    "File Manager": [
       "Risolto il problema per cui i file rinominati o decifrati non erano ricercabili",
       "Risolto il problema per cui in alcuni casi le miniature non si aggiornavano in tempo",
       "Risolto il problema di visualizzazione errata della pagina di pulizia in modalità schermo diviso",
@@ -616,15 +707,12 @@
     ],
     "Registratore": [
       "Risolto il problema di visualizzazione anomala dell'icona Impostazioni",
-      "Correzione: lo stato di registrazione non veniva aggiornato nella barra delle notifiche quando una registrazione veniva messa in pausa",
+      "Risolto il problema per cui, dopo aver interrotto la registrazione, lo stato della registrazione non veniva aggiornato tempestivamente nella barra di stato.",
       "Risolto il problema di visualizzazione errata dell’icona Impostazioni"
     ],
     "Account Mi": [
-      "Risolto il problema di visualizzazione errata della lingua nella pagina di accesso a Mi Account"
-    ],
-    "Sistema": [
-      "Risolti i problemi con lo sblocco tramite volto",
-      "Risolto il problema delle scorciatoie anomale dopo lo sblocco dello schermo bloccato durante l'uso di WeChat."
+      "Risolto il problema di visualizzazione errata della lingua nella pagina di accesso a Mi Account",
+      "Risolto il problema di visualizzazione errata della lingua nella pagina di accesso all'account Xiaomi."
     ],
     "Altro": [
       "Maggiore sicurezza e stabilità di sistema"
@@ -632,15 +720,28 @@
     "Schermata di blocco, barra di stato, pannello delle notifiche": [
       "Risolto il problema della sovrapposizione tra pallina di ricarica e tempo di ricarica stimato nella schermata di blocco"
     ],
+    "Fotocamera": [
+      "Risolto il problema degli scatti in raffica automatici occasionali"
+    ],
     "Gestore file": [
       "Risolto il problema di apertura dei file dopo il taglio di immagini e video nella cartella privata"
     ]
   },
   "logs_es": {
+    "Atención": [
+      "Xiaomi Mi 8 Screen Fingerprint Edition recibe la versión estable de MIUI profundamente personalizada basada en Android P"
+    ],
+    "Sistema": [
+      "Se añade la plataforma SenseAR preinstalada, compatible con la cámara AR de Honor of Kings",
+      "Se han corregido los problemas de fallo en el desbloqueo por reconocimiento facial, así como la baja tasa de éxito de este proceso.",
+      "Se ha corregido el problema en la interfaz de WeChat: después de desbloquear la pantalla con el patrón, la zona de los botones rápidos no se muestra correctamente.",
+      "Corrección de problemas con el desbloqueo facial",
+      "Se corrige el problema de accesos directos anómalos tras desbloquear la pantalla bloqueada mientras se usaba WeChat."
+    ],
     "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
       "Añadido: compatibilidad con la visualización de iconos de notificación en la barra de estado. Actívalo en «Ajustes – Notificaciones y barra de estado – Mostrar iconos al recibir notificaciones».",
       "Corregido el problema de visualización anómala del icono de batería tras usar el estilo numérico",
-      "Se corrige el problema de que la pantalla no se encienda al recibir notificaciones no importantes con el dispositivo bloqueado",
+      "Se ha corregido el problema de que, cuando la pantalla está bloqueada y se reciben notificaciones no importantes, la pantalla no se enciende.",
       "Se corrige la superposición entre el indicador de carga y el tiempo estimado de carga en la pantalla de bloqueo",
       "Se corrige el problema de parpadeo ocasional de la pantalla al encenderla/apagarla",
       "Novedad: la barra de estado admite mostrar iconos de notificación. Actívalo en «Ajustes > Notificaciones y barra de estado > Mostrar iconos al recibir notificaciones».",
@@ -657,12 +758,12 @@
       "Nuevo: Modo luz baja mejorado",
       "Corregido el problema de cierre inesperado de la cámara"
     ],
-    "Copia de seguridad": [
-      "Se corrigió el problema de visualización incorrecta de los iconos al restaurar desde una unidad USB aplicaciones no instaladas en el teléfono.",
+    "Reserva de datos": [
+      "Se ha corregido el problema en el que, al recuperar aplicaciones de un pendrive a un teléfono móvil y si dichas aplicaciones no están instaladas, sus iconos se muestran de manera anormal.",
       "Se corrigió el problema de visualización incorrecta de los iconos al restaurar desde un dispositivo USB aplicaciones no instaladas"
     ],
-    "Ajustes": [
-      "Se ha corregido el problema por el que se mostraban dos opciones para añadir una cuenta personal en la sincronización de ajustes.",
+    "Configuración": [
+      "Se ha corregido el problema relacionado con la configuración para mostrar de forma sincronizada las dos opciones para agregar cuentas personales.",
       "Corregido: en Ajustes se mostraban dos opciones para añadir una cuenta personal"
     ],
     "Actualizador": [
@@ -670,23 +771,20 @@
       "Nuevo: función de acceso directo en la pantalla de inicio. Se puede activar en los ajustes de actualización."
     ],
     "Administrador de archivos": [
-      "Se corrigió el problema por el que no se podían buscar archivos renombrados o descifrados",
+      "Se ha corregido el problema de que los archivos renombrados o desencriptados no podían ser buscados.",
       "Se corrige el problema por el que, en algunos casos, las miniaturas no se actualizaban a tiempo",
       "Se corrigió el problema de visualización incorrecta de la página de limpieza en modo de pantalla dividida",
       "Se corrigió el problema de apertura de archivos tras cortar imágenes y vídeos en la carpeta privada",
       "Corregido el problema por el que no se podían buscar archivos renombrados o descifrados"
     ],
     "Grabadora": [
-      "Se corrigió el problema de visualización anómala del icono de Ajustes",
-      "Corrección: El estado de grabación no se actualizaba en la barra de notificaciones al pausar una grabación",
+      "Se ha corregido el problema de la visualización anormal de los iconos de configuración.",
+      "Se ha corregido el problema de que, después de detener la grabación, no se actualiza a tiempo la información en la barra de estado.",
       "Se corrigió el problema de visualización incorrecta del icono de Ajustes"
     ],
     "Cuenta Mi": [
-      "Se corrigió el problema de visualización incorrecta del idioma en la página de inicio de sesión de Mi Account"
-    ],
-    "Sistema": [
-      "Corrección de problemas con el desbloqueo facial",
-      "Se corrige el problema de accesos directos anómalos tras desbloquear la pantalla bloqueada mientras se usaba WeChat."
+      "Se corrigió el problema de visualización incorrecta del idioma en la página de inicio de sesión de Mi Account",
+      "Se corrigió el problema de visualización incorrecta del idioma en la página de inicio de sesión de la cuenta Xiaomi."
     ],
     "Otros": [
       "Estabilidad y seguridad del sistema mejorada"
@@ -696,10 +794,20 @@
     ]
   },
   "logs_pt": {
+    "Atenção": [
+      "Xiaomi Mi 8 Screen Fingerprint Edition recebe versão estável da MIUI profundamente personalizada com base no Android P"
+    ],
+    "Sistema": [
+      "Adicionada plataforma SenseAR pré-instalada, suporte à câmera AR de Honor of Kings",
+      "Corrigir os problemas de falha no desbloqueio por reconhecimento facial, bem como a baixa taxa de sucesso nesse processo.",
+      "Corrigido o problema em que, após desbloquear o ecrã bloqueado do WeChat, a área dos botões de atalho apresentava um comportamento anormal.",
+      "Correção de problemas com o desbloqueio facial",
+      "Corrigido o problema de atalhos anormais após desbloquear a tela bloqueada durante o uso do WeChat."
+    ],
     "Tela de bloqueio, barra de status, barra de notificações": [
       "Adicionado: suporte para exibir ícones de notificação na barra de status. Ative em «Configurações – Notificações e barra de status – Mostrar ícones ao receber notificações».",
       "Corrigido o problema de exibição anormal do ícone da bateria após usar o estilo numérico",
-      "Corrigido o problema de a tela não acender ao receber notificações não importantes na tela de bloqueio",
+      "Corrigido o problema em que, quando o ecrã está bloqueado, as notificações irrelevantes não são exibidas e o ecrão não acende.",
       "Corrigido a sobreposição entre o indicador de carregamento e o tempo estimado de carregamento na tela de bloqueio",
       "Corrigido o problema de cintilação ocasional da tela ao ligar/desligar",
       "Novo: suporte para mostrar ícones de notificação na barra de status. Ative em «Configurações > Notificações e barra de status > Mostrar ícones ao receber notificações».",
@@ -717,11 +825,11 @@
       "Corrigido o problema de encerramento inesperado da câmera"
     ],
     "Cópia de segurança": [
-      "Corrigido o problema de exibição incorreta dos ícones ao restaurar de uma unidade USB aplicativos não instalados no telefone.",
+      "Corrigido o problema em que, ao recuperar aplicativos de um pen drive para um telemóvel e estes não estarem instalados, os ícones eram exibidos de forma anormal.",
       "Corrigido o problema de exibição incorreta dos ícones ao restaurar de um dispositivo USB aplicativos não instalados"
     ],
     "Configurações": [
-      "Corrigido o problema em que duas opções de adicionar conta pessoal eram exibidas na sincronização de configurações.",
+      "Corrigido o problema relacionado com a configuração da exibição sincronizada de duas opções para adicionar contas pessoais.",
       "Corrigido: duas opções para adicionar conta pessoal eram exibidas nas Configurações"
     ],
     "Atualizações": [
@@ -729,7 +837,7 @@
       "Novo: função de atalho na tela inicial. Pode ser ativada nas configurações de atualização."
     ],
     "Gerenciador de arquivos": [
-      "Corrigido o problema que impedia pesquisar arquivos renomeados ou descriptografados",
+      "Corrigir o problema de os ficheiros renomeados ou desencriptados não serem encontráveis através de pesquisas.",
       "Corrigido o problema em que, em alguns casos, as miniaturas não eram atualizadas a tempo",
       "Corrigido o problema de exibição incorreta da página de limpeza no modo de tela dividida",
       "Corrigido o problema de abertura de arquivos após recortar imagens e vídeos na pasta privada",
@@ -737,15 +845,12 @@
     ],
     "Gravador": [
       "Corrigido o problema de exibição anormal do ícone de Configurações",
-      "Correção: o estado da gravação não era atualizado na barra de notificações ao pausar uma gravação",
+      "Corrigir o problema de não ser possível atualizar a barra de estado de forma imediata após interromper a gravação.",
       "Corrigido o problema de exibição incorreta do ícone de Configurações"
     ],
     "Conta Mi": [
-      "Corrigido o problema de exibição incorreta do idioma na página de login da Mi Account"
-    ],
-    "Sistema": [
-      "Correção de problemas com o desbloqueio facial",
-      "Corrigido o problema de atalhos anormais após desbloquear a tela bloqueada durante o uso do WeChat."
+      "Corrigido o problema de exibição incorreta do idioma na página de login da Mi Account",
+      "Corrigido o problema de exibição incorreta do idioma na página de login da conta Xiaomi."
     ],
     "Outros": [
       "Segurança e estabilidade do sistema aprimoradas"
@@ -755,6 +860,16 @@
     ]
   },
   "logs_tr": {
+    "Uyarı": [
+      "Xiaomi Mi 8 Screen Fingerprint Edition, Android P tabanlı derinlemesine özelleştirilmiş MIUI kararlı sürümünü yayınladı"
+    ],
+    "Sistem": [
+      "Önceden yüklenmiş SenseAR platformu eklendi, Honor of Kings AR kamerası destekleniyor",
+      "Yüz tanıma ile kilidin açılmasında yaşanan sorunları ve düşük başarı oranlarını giderin.",
+      "WeChat arayüzünün kilit ekranının açılmasından sonra, hızlı tuş alanında görülen anormallik sorunu düzeltildi.",
+      "Yüz ile kilit açma sorunları giderildi",
+      "WeChat kullanırken kilitlenen ekranın kilidi açıldıktan sonra kısayolların anormal çalışması sorunu düzeltildi."
+    ],
     "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
       "Eklendi: Durum çubuğunda bildirim simgelerinin gösterilmesi desteği. «Ayarlar – Bildirimler ve durum çubuğu – Bildirim geldiğinde simgeleri göster» bölümünden açın.",
       "Sayısal pil stili kullanıldıktan sonra pil simgesinin anormal görüntülenmesi sorunu giderildi",
@@ -774,11 +889,11 @@
       "Yeni: Gelişmiş düşük ışık modu"
     ],
     "Yedekleme": [
-      "USB sürücüsünden telefonda yüklü olmayan uygulamalar geri yüklenirken simgelerin yanlış görüntülenmesi sorunu giderildi.",
+      "USB bellekten telefonunuza geri yüklediğinizde, telefonda yüklü olmayan uygulamaların simgelerinin yanlış şekilde görünmesi sorununu düzelttik.",
       "USB aygıtından yüklü olmayan uygulamalar geri yüklenirken simgelerin yanlış görüntülenmesi sorunu giderildi"
     ],
     "Ayarlar": [
-      "Ayarlar senkronizasyonunda iki kişisel hesap ekleme seçeneği gösterilmesi sorunu düzeltildi.",
+      "İki kişisel hesabın eklenebilmesi seçeneğinin senkronize bir şekilde gösterilmesinde yaşanan sorunu düzelttik.",
       "Düzeltme: Ayarlar'da kişisel hesap eklemek için iki seçenek görünüyordu"
     ],
     "Güncelleyici": [
@@ -792,16 +907,13 @@
       "Gizli klasördeki görselleri ve videoları kestikten sonra dosyaların açılması sorunu düzeltildi"
     ],
     "Kayıt Cihazı": [
-      "Ayarlar simgesinin hatalı görüntülenmesi sorunu düzeltildi",
-      "Düzeltme: Kayıt duraklatıldığında kayıt durumu bildirim çubuğunda güncellenmiyordu",
+      "Ayar simgelerinin yanlış şekilde görünmesi sorununu düzelttik.",
+      "Kaydı durdurduktan sonra durum çubuğunda zamanında güncelleme yapılamaması sorununu düzelttik.",
       "Ayarlar simgesinin yanlış görüntülenmesi sorunu giderildi"
     ],
     "Mi Hesabı": [
-      "Mi Account giriş sayfasında dilin yanlış görüntülenmesi sorunu düzeltildi"
-    ],
-    "Sistem": [
-      "Yüz ile kilit açma sorunları giderildi",
-      "WeChat kullanırken kilitlenen ekranın kilidi açıldıktan sonra kısayolların anormal çalışması sorunu düzeltildi."
+      "Mi Account giriş sayfasında dilin yanlış görüntülenmesi sorunu düzeltildi",
+      "Xiaomi hesabı giriş sayfasında dilin yanlış görüntülenmesi sorunu düzeltildi."
     ],
     "Diğer": [
       "Sistem güvenliği ve kararlılığı geliştirildi"
@@ -811,6 +923,16 @@
     ]
   },
   "logs_id": {
+    "Perhatian": [
+      "Xiaomi Mi 8 Screen Fingerprint Edition merilis versi stabil MIUI yang sangat disesuaikan berdasarkan Android P"
+    ],
+    "Sistem": [
+      "Menambahkan platform SenseAR yang telah terpasang, mendukung kamera AR Honor of Kings",
+      "Memperbaiki masalah ketidakfungsian fitur pembukaan kunci berbasis wajah, serta tingkat keberhasilan yang rendah dalam proses tersebut.",
+      "Diperbaiki masalah di mana setelah layar WeChat terkunci dibuka kembali, area tombol pintas menampilkan tampilan yang tidak normal.",
+      "Perbaikan masalah buka kunci wajah",
+      "Memperbaiki masalah pintasan yang tidak normal setelah membuka kunci layar yang dikunci saat menggunakan WeChat."
+    ],
     "Layar kunci, bilah status, bilah notifikasi": [
       "Ditambahkan: dukungan menampilkan ikon notifikasi di bilah status. Aktifkan di «Setelan – Notifikasi dan bilah status – Tampilkan ikon saat menerima notifikasi».",
       "Memperbaiki masalah ikon baterai yang tampil tidak normal setelah menggunakan gaya baterai numerik",
@@ -826,36 +948,37 @@
       "Baru: Dukungan pengambilan foto mode malam super dengan tangan",
       "Perbaikan: masalah garis kisi pada mode layar penuh",
       "Memperbaiki masalah Kamera yang force close",
-      "Memperbaiki masalah burst shot otomatis yang kadang terjadi"
+      "Memperbaiki masalah burst shot otomatis yang kadang terjadi",
+      "Baru: mode optimasi foto grup",
+      "Baru: Dukungan pemotretan Mode Malam Super genggam",
+      "Memperbaiki masalah crash kamera"
     ],
     "Cadangan": [
-      "Memperbaiki masalah ikon yang ditampilkan secara tidak normal saat memulihkan aplikasi yang tidak terpasang di ponsel dari drive USB.",
+      "Memperbaiki masalah di mana aplikasi yang tidak terinstal di ponsel tidak dapat dipulihkan dari flash disk (USB), dan ikonnya menampilkan tampilan yang tidak normal.",
       "Memperbaiki masalah ikon aplikasi yang tidak ditampilkan dengan benar saat memulihkan aplikasi yang belum terinstal dari perangkat USB"
     ],
     "Pengaturan": [
-      "Memperbaiki masalah di mana dua opsi untuk menambahkan akun pribadi ditampilkan di sinkronisasi Pengaturan.",
+      "Masalah telah diperbaiki: opsi untuk menyinkronkan dan menampilkan dua akun pribadi yang baru ditambahkan kini berfungsi dengan benar.",
       "Perbaikan: dua opsi untuk menambahkan akun pribadi muncul di Pengaturan"
     ],
     "Pembaruan sistem": [
       "Menambahkan fitur pintasan layar Utama; dapat diaktifkan di pengaturan pembaruan.",
       "Baru: Fitur pintasan layar Utama. Dapat diaktifkan di pengaturan pembaruan."
     ],
-    "Pengelola File": [
+    "File Manager": [
       "Memperbaiki masalah file yang diganti nama atau didekripsi tidak dapat dicari",
       "Memperbaiki masalah thumbnail tidak diperbarui tepat waktu dalam beberapa kasus",
       "Memperbaiki masalah tampilan halaman Pembersih yang tidak normal dalam mode layar terbagi",
       "Memperbaiki masalah pembukaan file setelah memotong gambar dan video di folder privat"
     ],
     "Perekam": [
-      "Memperbaiki masalah ikon Pengaturan yang tidak tampil dengan benar",
-      "Perbaikan: Status perekaman tidak diperbarui di bilah notifikasi saat perekaman dijeda"
+      "Memperbaiki masalah penampilan ikon pengaturan yang tidak normal.",
+      "Memperbaiki masalah di mana status rekaman tidak diperbarui secara tepat waktu setelah proses pemberhentian rekaman dilakukan.",
+      "Memperbaiki masalah ikon Pengaturan yang tidak tampil dengan benar"
     ],
     "Akun Mi": [
-      "Memperbaiki masalah tampilan bahasa yang salah di halaman masuk Mi Account"
-    ],
-    "Sistem": [
-      "Perbaikan masalah buka kunci wajah",
-      "Memperbaiki masalah pintasan yang tidak normal setelah membuka kunci layar yang dikunci saat menggunakan WeChat."
+      "Memperbaiki masalah tampilan bahasa yang salah di halaman masuk Mi Account",
+      "Memperbaiki masalah tampilan bahasa yang salah di halaman masuk akun Xiaomi."
     ],
     "Lainnya": [
       "Keamanan dan stabilitas sistem ditingkatkan"
@@ -868,10 +991,20 @@
     ]
   },
   "logs_vi": {
+    "Chú ý": [
+      "Xiaomi Mi 8 Screen Fingerprint Edition phát hành bản ổn định MIUI được tùy biến sâu dựa trên Android P"
+    ],
+    "Hệ thống": [
+      "Thêm nền tảng SenseAR cài sẵn, hỗ trợ camera AR Honor of Kings",
+      "Khắc phục các sự cố liên quan đến việc mở khóa bằng khuôn mặt không hoạt động đúng chức năng và tỷ lệ thành công thấp.",
+      "Đã sửa lỗi: Sau khi màn hình của WeChat được khóa và sau khi màn hình được mở khóa, khu vực các phím tắt (shortcut keys) bị hiển thị không đúng như mong muốn.",
+      "Sửa lỗi liên quan đến mở khóa bằng khuôn mặt",
+      "Đã sửa lỗi lối tắt bất thường sau khi mở khóa màn hình bị khóa khi đang dùng WeChat."
+    ],
     "Màn hình khóa, thanh trạng thái, thanh thông báo": [
       "Đã thêm: hỗ trợ hiển thị biểu tượng thông báo trên thanh trạng thái. Bật trong «Cài đặt – Thông báo và thanh trạng thái – Hiển thị biểu tượng khi nhận thông báo».",
       "Đã sửa lỗi biểu tượng pin hiển thị bất thường sau khi dùng kiểu pin dạng số",
-      "Khắc phục sự cố màn hình không sáng khi nhận thông báo không quan trọng trong trạng thái khóa",
+      "Đã sửa lỗi: màn hình không sáng khi nhận được các thông báo không quan trọng trong chế độ khóa màn hình.",
       "Đã sửa lỗi chồng lấn giữa bóng sạc và thời gian sạc dự kiến trên màn hình khóa",
       "Sửa lỗi màn hình thỉnh thoảng nhấp nháy khi bật/tắt màn hình",
       "Mới: Hỗ trợ hiển thị biểu tượng thông báo trên thanh trạng thái. Bật tại «Cài đặt > Thông báo và thanh trạng thái > Hiển thị biểu tượng khi có thông báo».",
@@ -888,12 +1021,12 @@
       "Mới: Tăng cường chế độ thiếu sáng",
       "Đã sửa lỗi camera bị thoát đột ngột"
     ],
-    "Sao lưu": [
-      "Đã khắc phục sự cố biểu tượng hiển thị không đúng khi khôi phục ứng dụng chưa cài đặt trên điện thoại từ ổ USB.",
+    "Dự phòng (Backup)": [
+      "Đã sửa lỗi: Khi khôi phục các ứng dụng từ thẻ nhớ USB vào điện thoại mà những ứng dụng đó chưa được cài đặt, biểu tượng của chúng hiển thị bất thường.",
       "Đã khắc phục sự cố biểu tượng ứng dụng hiển thị không đúng khi khôi phục ứng dụng chưa cài đặt từ thiết bị USB"
     ],
     "Cài đặt": [
-      "Đã sửa lỗi hiển thị hai tùy chọn thêm tài khoản cá nhân trong đồng bộ hóa Cài đặt.",
+      "Đã sửa lỗi liên quan đến việc thiết lập hiển thị đồng bộ cho hai tùy chọn thêm tài khoản cá nhân.",
       "Đã sửa: hai tùy chọn thêm tài khoản cá nhân hiển thị trong Cài đặt"
     ],
     "Trình cập nhật": [
@@ -901,23 +1034,20 @@
       "Mới: Tính năng lối tắt trên màn hình chính. Có thể bật trong cài đặt cập nhật."
     ],
     "Trình quản lý tệp": [
-      "Khắc phục sự cố không thể tìm kiếm tệp đã đổi tên hoặc đã giải mã",
+      "Khắc phục sự cố khi các tệp tin sau khi được đổi tên hoặc giải mã không thể được tìm kiếm.",
       "Đã khắc phục sự cố hình thu nhỏ không được làm mới kịp thời trong một số trường hợp",
       "Đã sửa lỗi trang Dọn dẹp hiển thị không bình thường ở chế độ chia đôi màn hình",
       "Đã sửa lỗi mở tệp sau khi cắt ảnh và video trong thư mục riêng tư",
       "Đã khắc phục sự cố không thể tìm kiếm tệp đã đổi tên hoặc giải mã"
     ],
     "Máy ghi âm": [
-      "Khắc phục sự cố biểu tượng Cài đặt hiển thị bất thường",
-      "Đã sửa: Trạng thái ghi âm không được cập nhật kịp thời trên thanh thông báo khi tạm dừng ghi âm",
+      "Đã sửa lỗi liên quan đến việc hiển thị biểu tượng cài đặt một cách bất thường.",
+      "Khắc phục sự cố khi tạm dừng quá trình ghi âm không thể cập nhật kịp thời thông tin vào thanh trạng thái.",
       "Đã khắc phục sự cố biểu tượng Cài đặt hiển thị không đúng"
     ],
     "Tài khoản Mi": [
-      "Đã sửa lỗi hiển thị sai ngôn ngữ trên trang đăng nhập Mi Account"
-    ],
-    "Hệ thống": [
-      "Sửa lỗi liên quan đến mở khóa bằng khuôn mặt",
-      "Đã sửa lỗi lối tắt bất thường sau khi mở khóa màn hình bị khóa khi đang dùng WeChat."
+      "Đã sửa lỗi hiển thị sai ngôn ngữ trên trang đăng nhập Mi Account",
+      "Đã khắc phục sự cố hiển thị sai ngôn ngữ trên trang đăng nhập tài khoản Xiaomi."
     ],
     "Khác": [
       "Cải thiện tính ổn định và bảo mật hệ thống"
@@ -930,6 +1060,16 @@
     ]
   },
   "logs_th": {
+    "โปรดทราบ": [
+      "Xiaomi Mi 8 Screen Fingerprint Edition เปิดตัว MIUI เวอร์ชันเสถียรที่ปรับแต่งอย่างล้ำลึกบนพื้นฐาน Android P"
+    ],
+    "ระบบ": [
+      "เพิ่มแพลตฟอร์ม SenseAR ที่ติดตั้งไว้ล่วงหน้า รองรับกล้อง AR ของ Honor of Kings",
+      "แก้ไขปัญหาการปลดล็อกด้วยใบหน้าไม่ทำงานและอัตราความสำเร็จต่ำ",
+      "แก้ไขปัญหาที่หน้าจอล็อคของ WeChat หลังจากปลดล็อคแล้ว พื้นที่ของปุ่มต่างๆ ไม่แสดงผลอย่างถูกต้อง",
+      "แก้ไขปัญหาการปลดล็อกด้วยใบหน้า",
+      "แก้ไขปัญหาทางลัดทำงานผิดปกติหลังจากปลดล็อกหน้าจอที่ล็อกขณะใช้งาน WeChat"
+    ],
     "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
       "เพิ่ม: รองรับการแสดงไอคอนการแจ้งเตือนในแถบสถานะ เปิดใช้งานได้ที่ «การตั้งค่า – การแจ้งเตือนและแถบสถานะ – แสดงไอคอนเมื่อมีการแจ้งเตือน»",
       "แก้ไขปัญหาการแสดงไอคอนแบตเตอรี่ผิดปกติหลังจากใช้สไตล์แบตเตอรี่แบบตัวเลข",
@@ -949,11 +1089,11 @@
       "ใหม่: ปรับปรุงโหมดแสงน้อย"
     ],
     "สำรองข้อมูล": [
-      "แก้ไขปัญหาการแสดงไอคอนผิดปกติเมื่อกู้คืนแอปที่ยังไม่ได้ติดตั้งบนโทรศัพท์จากไดรฟ์ USB",
+      "แก้ไขปัญหาเมื่อพยายามคืนแอปพลิเคชันที่ไม่ได้ติดตั้งไว้ในโทรศัพท์จากแผ่น USB โดยไอคอนของแอปพลิเคชันแสดงผลอย่างผิดปกติ",
       "แก้ไขปัญหาการแสดงไอคอนแอปไม่ถูกต้องเมื่อกู้คืนแอปที่ยังไม่ได้ติดตั้งจากอุปกรณ์ USB"
     ],
     "การตั้งค่า": [
-      "แก้ไขปัญหาที่การซิงค์การตั้งค่าแสดงตัวเลือกเพิ่มบัญชีส่วนตัวสองรายการ",
+      "แก้ไขปัญหาเกี่ยวกับการตั้งค่าให้แสดงผลการซิงโครไนซ์ระหว่างตัวเลือกสองตัวที่ใช้สำหรับเพิ่มบัญชีส่วนบุคคล",
       "แก้ไข: มีตัวเลือกเพิ่มบัญชีส่วนตัวสองรายการแสดงในการตั้งค่า"
     ],
     "ตัวอัปเดต": [
@@ -961,22 +1101,20 @@
       "ใหม่: ฟีเจอร์ทางลัดบนหน้าจอหลัก เปิดใช้งานได้ในการตั้งค่าการอัปเดต"
     ],
     "ตัวจัดการไฟล์": [
-      "แก้ไขปัญหาที่ไม่สามารถค้นหาไฟล์ที่เปลี่ยนชื่อหรือถอดรหัสแล้วได้",
+      "แก้ไขปัญหาที่ไฟล์ที่ถูกเปลี่ยนชื่อหรือถูกถอดรหัสแล้วไม่สามารถค้นหาได้",
       "แก้ไขปัญหาที่ในบางกรณีรูปย่อไม่รีเฟรชทันเวลา",
       "แก้ไขปัญหาหน้าล้างข้อมูลแสดงผลผิดปกติในโหมดแบ่งหน้าจอ",
-      "แก้ไขปัญหาการเปิดไฟล์ผิดปกติหลังจากตัดรูปภาพและวิดีโอในโฟลเดอร์ส่วนตัว"
+      "แก้ไขปัญหาการเปิดไฟล์ผิดปกติหลังจากตัดรูปภาพและวิดีโอในโฟลเดอร์ส่วนตัว",
+      "แก้ไขปัญหาที่ไม่สามารถค้นหาไฟล์ที่เปลี่ยนชื่อหรือถอดรหัสแล้วได้"
     ],
     "เครื่องบันทึกเสียง": [
       "แก้ไขปัญหาไอคอนการตั้งค่าแสดงผลผิดปกติ",
-      "แก้ไข: สถานะการบันทึกเสียงไม่ได้รับการอัปเดตในแถบการแจ้งเตือนเมื่อหยุดการบันทึกชั่วคราว",
+      "แก้ไขปัญหาที่การหยุดบันทึกเสียงไม่สามารถอัปเดตสถานะในแถบสถานะ (status bar) ได้อย่างทันท่วงที",
       "แก้ไขปัญหาการแสดงไอคอนการตั้งค่าผิดปกติ"
     ],
     "บัญชี Mi": [
-      "แก้ไขปัญหาการแสดงภาษาที่ไม่ถูกต้องในหน้าเข้าสู่ระบบ Mi Account"
-    ],
-    "ระบบ": [
-      "แก้ไขปัญหาการปลดล็อกด้วยใบหน้า",
-      "แก้ไขปัญหาทางลัดทำงานผิดปกติหลังจากปลดล็อกหน้าจอที่ล็อกขณะใช้งาน WeChat"
+      "แก้ไขปัญหาการแสดงภาษาที่ไม่ถูกต้องในหน้าเข้าสู่ระบบ Mi Account",
+      "แก้ไขปัญหาการแสดงภาษาผิดบนหน้าเข้าสู่ระบบบัญชี Xiaomi"
     ],
     "อื่นๆ": [
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
@@ -986,6 +1124,16 @@
     ]
   },
   "logs_ar": {
+    "تنبية": [
+      "تطلق Xiaomi Mi 8 Screen Fingerprint Edition إصدار MIUI المستقر المخصص بعمق استنادًا إلى Android P"
+    ],
+    "النظام": [
+      "إضافة منصة SenseAR المثبتة مسبقًا، ودعم كاميرا AR في Honor of Kings",
+      "إصلاح مشاكل عدم فعالية نظام فتح القفل باستخدام بيانات الوجه، بالإضافة إلى انخفاض معدل نجاح هذا النظام.",
+      "تم إصلاح المشكلة التي كانت تظهر فيها منطقة الأزرار السريعة بشكل غير صحيح بعد فتح شاشة قفل ويتشات.",
+      "إصلاح المشكلات المتعلقة بفتح القفل بالوجه",
+      "إصلاح مشكلة اختصارات غير طبيعية بعد إلغاء قفل الشاشة التي تم قفلها أثناء استخدام WeChat."
+    ],
     "شاشة القفل، شريط الحالة، شريط الإشعارات": [
       "تمت الإضافة: دعم عرض رموز الإشعارات في شريط الحالة. فعّله من «الإعدادات – الإشعارات وشريط الحالة – إظهار الرموز عند تلقي الإشعارات».",
       "إصلاح مشكلة عرض أيقونة البطارية بشكل غير طبيعي بعد استخدام نمط البطارية الرقمي",
@@ -1006,11 +1154,11 @@
       ":الجديد تحسينات في وضع الإضاءة الخافتة"
     ],
     "النسخ الاحتياطي": [
-      "إصلاح مشكلة عرض الرموز بشكل غير صحيح عند استعادة التطبيقات غير المثبّتة على الهاتف من محرك أقراص USB.",
+      "تم إصلاح المشكلة التي كانت تظهر فيها أيقونات التطبيقات غير المثبتة على الهاتف بشكل غير صحيح عند استعادتها من وحدة التخزين الخارجية (USB).",
       "تم إصلاح مشكلة عرض أيقونات التطبيقات بشكل غير صحيح عند استعادة التطبيقات غير المثبتة من جهاز USB"
     ],
     "الإعدادات": [
-      "تم إصلاح مشكلة ظهور خيارين لإضافة حساب شخصي في مزامنة الإعدادات.",
+      "تم إصلاح المشكلة المتعلقة بعدم تزامن عرض خيارات إضافة الحسابات الشخصية.",
       "إصلاح: ظهور خيارين لإضافة حساب شخصي في الإعدادات"
     ],
     "المحدث": [
@@ -1018,25 +1166,22 @@
       "جديد: ميزة اختصار الشاشة الرئيسية. يمكن تفعيلها في إعدادات التحديث."
     ],
     "مدير الملفات": [
-      "إصلاح مشكلة تعذّر البحث عن الملفات التي أُعيدت تسميتها أو فُكّ تشفيرها",
+      "تم إصلاح المشكلة التي تمنع من البحث عن الملفات بعد أن تم تغيير اسمها أو فك تشفيرها.",
       "إصلاح مشكلة عدم تحديث الصور المصغرة في الوقت المناسب في بعض الحالات",
       "إصلاح مشكلة عرض صفحة التنظيف بشكل غير صحيح في وضع تقسيم الشاشة",
       "إصلاح مشكلة فتح الملفات بشكل غير طبيعي بعد قص الصور ومقاطع الفيديو في المجلد الخاص",
       "إصلاح مشكلة عدم إمكانية البحث عن الملفات المعاد تسميتها أو التي تم فك تشفيرها"
     ],
-    "مسجل": [
-      "إصلاح مشكلة عرض أيقونة الإعدادات بشكل غير طبيعي",
-      "إصلاح: لم يتم تحديث حالة التسجيل في شريط الإشعارات عند إيقاف التسجيل مؤقتًا",
+    "جهاز التسجيل": [
+      "تم إصلاح المشكلة المتعلقة بظهور أيقونات الإعدادات بشكل غير صحيح.",
+      "تم إصلاح المشكلة التي تمنع تحديث حالة الجهاز بشكل فوري بعد توقف عملية التسجيل.",
       "تم إصلاح مشكلة عرض أيقونة الإعدادات بشكل غير صحيح"
     ],
     "حساب Mi": [
-      "إصلاح مشكلة عرض اللغة بشكل غير صحيح في صفحة تسجيل الدخول إلى Mi Account"
+      "إصلاح مشكلة عرض اللغة بشكل غير صحيح في صفحة تسجيل الدخول إلى Mi Account",
+      "إصلاح مشكلة عرض اللغة بشكل خاطئ في صفحة تسجيل الدخول إلى حساب Xiaomi."
     ],
-    "النظام": [
-      "إصلاح المشكلات المتعلقة بفتح القفل بالوجه",
-      "إصلاح مشكلة اختصارات غير طبيعية بعد إلغاء قفل الشاشة التي تم قفلها أثناء استخدام WeChat."
-    ],
-    "أخرى": [
+    "آخرين": [
       "تحسين أمن واستقرار النظام"
     ],
     "شاشة القفل، شريط الحالة، لوحة الإشعارات": [
@@ -1047,10 +1192,20 @@
     ]
   },
   "logs_in": {
+    "ध्यान दें": [
+      "Xiaomi Mi 8 Screen Fingerprint Edition ने Android P पर आधारित गहराई से अनुकूलित MIUI स्थिर संस्करण जारी किया"
+    ],
+    "सिस्टम": [
+      "प्रीइंस्टॉल किया गया SenseAR प्लेटफ़ॉर्म जोड़ा गया, Honor of Kings AR कैमरा का समर्थन करता है",
+      "चेहरे की पहचान से लॉक खोलने की प्रक्रिया में होने वाली समस्याओं एवं कम सफलता दर को ठीक करें।",
+      "व्हाइटसैप इंटरफेस की स्क्रीन-लॉक सुविधा को अनलॉक करने के बाद, शॉर्टकट बटनों का क्षेत्र असामान्य रूप से प्रदर्शित होने की समस्या को ठीक कर दिया गया है।",
+      "फ़ेस अनलॉक से जुड़ी समस्याओं को ठीक किया गया",
+      "WeChat का उपयोग करते समय लॉक हुई स्क्रीन को अनलॉक करने के बाद शॉर्टकट के असामान्य होने की समस्या ठीक की गई."
+    ],
     "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
       "जोड़ा गया: स्टेटस बार में सूचना आइकन दिखाने का समर्थन। «सेटिंग्स – सूचनाएं और स्टेटस बार – सूचना आने पर आइकन दिखाएं» में सक्षम करें।",
       "संख्यात्मक बैटरी शैली का उपयोग करने के बाद बैटरी आइकन के असामान्य रूप से प्रदर्शित होने की समस्या ठीक की गई",
-      "लॉक स्क्रीन पर अप्रमुख सूचनाएं मिलने पर स्क्रीन न जलने की समस्या ठीक की गई",
+      "समस्या को ठीक कर दिया गया है: जब स्क्रीन लॉक होती है, तो महत्वहीन नोटिफिकेशन प्राप्त होते हैं एवं स्क्रीन चमकती भी नहीं है।",
       "लॉक स्क्रीन पर चार्जिंग बॉल और अनुमानित चार्जिंग समय के ओवरलैप होने की समस्या ठीक की गई",
       "स्क्रीन चालू/बंद करते समय कभी-कभी स्क्रीन झिलमिलाने की समस्या ठीक की गई",
       "नया: स्टेटस बार में सूचना आइकन दिखाने का समर्थन। इसे «सेटिंग्स > सूचनाएं और स्टेटस बार > सूचना आने पर आइकन दिखाएं» में सक्षम करें।",
@@ -1067,11 +1222,11 @@
       "नया बेहतर कम रोशनी वाला मोड"
     ],
     "बैकअप": [
-      "फ़ोन पर इंस्टॉल न किए गए ऐप्स को USB ड्राइव से बहाल करते समय आइकन गलत तरीके से दिखने की समस्या ठीक की गई।",
+      "समस्या का समाधान: जब आप यूडिस्क (USB Drive) के माध्यम से अपने फोन में ऐसे एप्लिकेशन वापस लाते हैं जो आपके फोन पर पहले से इंस्टॉल नहीं हैं, तो उन एप्लिकेशनों के आइकन असामान्य रूप से दिखाई देते हैं।",
       "USB डिवाइस से फ़ोन में इंस्टॉल न किए गए ऐप्स को रीस्टोर करते समय ऐप आइकन सही ढंग से न दिखने की समस्या ठीक की गई"
     ],
     "सेटिंग्स": [
-      "सेटिंग्स सिंक में व्यक्तिगत खाता जोड़ने के दो विकल्प दिखने की समस्या ठीक की गई।",
+      "दो नए व्यक्तिगत खातों के विकल्पों को समन्वित रूप से प्रदर्शित करने संबंधी समस्या को ठीक कर दिया गया है.",
       "ठीक किया गया: सेटिंग्स में व्यक्तिगत खाता जोड़ने के दो विकल्प दिखाई दे रहे थे"
     ],
     "अपडेटर": [
@@ -1079,22 +1234,20 @@
       "नया: होम स्क्रीन शॉर्टकट सुविधा। अपडेट सेटिंग्स में सक्षम किया जा सकता है।"
     ],
     "फ़ाइल प्रबंधक": [
-      "नाम बदली या डिक्रिप्ट की गई फ़ाइलों को खोज न पाने की समस्या ठीक की गई",
+      "उस समस्या को ठीक किया गया है जिसमें पुनर्नामकरण या डिक्रिप्ट किए गए फ़ाइलों को खोजने में समस्या आती थी।",
       "कुछ स्थितियों में थंबनेल समय पर रीफ़्रेश न होने की समस्या ठीक की गई",
       "स्प्लिट स्क्रीन मोड में क्लीनर पेज के गलत तरीके से प्रदर्शित होने की समस्या ठीक की गई",
-      "निजी फ़ोल्डर में छवियों और वीडियो को काटने के बाद फ़ाइलें खोलने की समस्या ठीक की गई"
+      "निजी फ़ोल्डर में छवियों और वीडियो को काटने के बाद फ़ाइलें खोलने की समस्या ठीक की गई",
+      "नाम बदली या डिक्रिप्ट की गई फ़ाइलों को खोज न पाने की समस्या ठीक की गई"
     ],
     "रिकॉर्डर": [
-      "सेटिंग्स आइकन के अनियमित रूप से प्रदर्शित होने की समस्या ठीक की गई",
-      "समस्या ठीक की गई: रिकॉर्डिंग पॉज़ करने पर नोटिफ़िकेशन शेड में स्थिति तुरंत अपडेट नहीं होती थी",
+      "सेटिंग आइकन के असामान्य दिखाई जाने की समस्या को ठीक कर दिया गया है.",
+      "वह समस्या दूर की गई है जिसके कारण रिकॉर्डिंग रोकने के बाद स्टेट बार (Status Bar) में समय पर अपडेट नहीं हो पाता था।",
       "सेटिंग्स आइकन के गलत तरीके से प्रदर्शित होने की समस्या ठीक की गई"
     ],
     "Mi खाता": [
-      "Mi Account साइन-इन पेज पर भाषा के गलत प्रदर्शन की समस्या ठीक की गई"
-    ],
-    "सिस्टम": [
-      "फ़ेस अनलॉक से जुड़ी समस्याओं को ठीक किया गया",
-      "WeChat का उपयोग करते समय लॉक हुई स्क्रीन को अनलॉक करने के बाद शॉर्टकट के असामान्य होने की समस्या ठीक की गई."
+      "Mi Account साइन-इन पेज पर भाषा के गलत प्रदर्शन की समस्या ठीक की गई",
+      "Xiaomi खाते के लॉगिन पृष्ठ पर भाषा गलत तरीके से प्रदर्शित होने की समस्या ठीक की गई।"
     ],
     "अन्य": [
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
@@ -1104,30 +1257,67 @@
     ]
   },
   "logs_ug": {
-    "تەڭشەك": [
-      "تەڭشەك синخروزلاشتا شەخسىي ھېسابات قوشۇش تاللانمىسىنىڭ ئىككى قېتىم كۆرۈنۈش مەسىلىسى تۈزىتىلدى."
+    "سىستېما": [
+      "ئالدىن قاچىلانغان SenseAR سۇپىسى قوشۇلدى، Honor of Kings AR كامېراسىنى قوللايدۇ",
+      "يۈز ئىمزا ئارقىلىق قۇلۇپ ئاچىش فۇنكسىيەسىنىڭ كاردىن چىقىشى ۋە مۇۋەپپەقىيەت نىسبىتىنىڭ تۆۋەن بولۇش مەسىلىسىنى ئوڭشايمىز.",
+      "WeChat ئىنتېرفېيسىدا قۇلۇپلىنىش ھالىتىدىن قۇلاق لانغاندىن كېيىن ، تېز ئىشلەتكۈچ كونۇپكا رايونىنىڭ نورمال كۆرسىتىل مەسلىك مەسىلىسىنى تۈزدۈق.",
+      "يۈز ئارقىلىق قۇلۇپ ئېچىش مەسىلىلىرىنى تۈزەتتى",
+      "WeChat نى ئىشلىتىۋاتقاندا ئېكران قۇلۇپلانغاندا، قۇلۇپ ئېچىلغاندىن كېيىن تېزلەتمىلەرنىڭ نورمالسىز بولۇش مەسىلىسىنى تۈزىتىش"
     ],
-    "ئاۋاز ئالغۇ": [
-      "تەڭشەك سىنبەلگىسىنىڭ نورمالسىز كۆرۈنۈش مەسىلىسى تۈزىتىلدى",
-      "ئۈن ئېلىش توختىتىلغاندىن كېيىن ئۇقتۇرۇش تاختىسىدا ھالەت ۋاقتىدا يېڭىلانماسلىق مەسىلىسى تۈزىتىلدى"
+    "زاپاس كۆپەيتمە": [
+      "USB فلەشنىڭ ياردىمى بىلەن تېلېفونغا قايتۇرۇلغان ، لېكىن تېلېفونغا ئورنىتىلمىغان دىتاللارنىڭ ئىكونى نورمال كۆرسىتىلمەيدىغان مەسىلىسىنى تۈزەش",
+      "USB ساقلىغۇچتىن تېلېفوندا قاچىلانمىغان ئەپلەرنى ئەسلىگە كەلتۈرگەندە، ئەپ سىنبەلگىلىرى نورمالسىز كۆرسىتىلىدىغان مەسىلە تۈزىتىلدى"
+    ],
+    "تەڭشەك": [
+      "ئىككى ئەركىن ھېسابات نى بىرلا ۋاقىتتا كۆرسىتىش ئىمكانىيىتىگە مۇناسىۋەتلىك مەسىلىنى تۈزەتتۇق.",
+      "تەڭشەكلەردە شەخسىي ھېسابات قوشۇش تاللانمىسىنىڭ ئىككى قېتىم كۆرۈنۈش مەسىلىسىنى تۈزىتىش"
     ],
     "Updater": [
+      "ئۈستەل يۈزى قىسقا يول ئىقتىدارى قوشۇلدى، ئۇنى يېڭىلاش تەڭشەكلىرىدە قوزغىتىشقا بولىدۇ",
       "يېڭى: باش ئېكران تېز يوللانمىسى ئىقتىدارى. يېڭىلاش تەڭشەكلىرىدە قوزغىتىشقا بولىدۇ."
+    ],
+    "ھۆججەت باشقۇرغۇچ": [
+      "ئۆزگەرتىلگەن نامى ياكى شفرى ئېچىلغان ھۆججەتلەرنى ئىزدەش مۇمكىن بولماسلىق مەسىلىسىنى تۈزەتتۇق.",
+      "بەزى ئەھۋاللاردا كىچىك سۈرەتلەرنىڭ ۋاقتىدا يېڭىلانماسلىق مەسىلىسى تۈزىتىلدى",
+      "بۆلۈنگەن ئېكران ھالىتىدە، ئەخلەت تازىلاش بېتىنىڭ نورمالسىز كۆرسىتىلىش مەسىلىسى تۈزىتىلدى",
+      "شەخسىي قىسقۇچتىكى رەسىم ۋە سىنلارنى كېسكەندىن كېيىن ھۆججەتنى ئېچىشتىكى كاشىلا ئوڭشالدى",
+      "ئىسمى ئۆزگەرتىلگەن ياكى شىفىردىن چىقىرىلغان ھۆججەتلەرنى ئىزدەشكە بولمايدىغان مەسىلە ئوڭشالدى"
+    ],
+    "ئۈن خاتىرىلەش ماشىنىسى": [
+      "كۆرسىتىش ئىكونىسىنىڭ نورمال ئەمەس كۆرۈنۈش مەسىلىسىنى تۈزدۇق",
+      "ئۈن ئالماشتۇرۇشنى توختاتقاندىن كېيىن ، ھالەت سترېكچىسىگە (status bar) ئۆزۋاقتىدا يېڭىلاش مۇمكىن بولماسلىق مەسىلىسىنى تۈزى دۇق.",
+      "تەڭشەك سىنبەلگىسىنىڭ نورمالسىز كۆرۈنۈش مەسىلىسىنى تۈزەتتى"
+    ],
+    "Mi ھېساباتى": [
+      "Xiaomi ھېساباتىغا كىرىش بېتىدىكى تىل كۆرسىتىش خاتالىقىنى تۈزىتىش",
+      "Xiaomi ھېساباتىغا كىرىش بېتىدە تىلنى خاتا كۆرسىتىش مەسىلىسى تۈزىتىلدى."
     ],
     "باشقىلىرى": [
       "Improved system security and stability"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "قۇلۇپ ئېكرانىدا زەرەتلەش شارى بىلەن مۆلچەرلەنگەن زەرەتلەش ۋاقتىنىڭ كۆرسىتىلىشى ئۈستى-ئۈستى چۈشۈپ قېلىش مەسىلىسىنى تۈزەتتى."
     ]
   },
   "logs_bo": {
+    "ཉར་གསོག": [
+      "U་Disk་ནས་ཁ་པར་ལ་ཕྱིར་གསོག་བྱས་པའི་དུས་བཀོལ་མེད་པའི་ཡིག་རྒྱུགས（Application）ཚན་པའི་རི་མོ（Icon）ཡོད་ཚད་རྒྱུན་ལྡན་མིན་པའི་གནད་དོན་ཐག་གཅོད།"
+    ],
     "སྒྲིག་སྟངས།": [
-      "སྒྲིག་འཛུགས་མཉམ་སྦྲེལ་ནང་སྒེར་གྱི་རྩིས་ཐོ་གཉིས་ཁ་སྣོན་བྱེད་པའི་གདམ་ཀ་གཉིས་མངོན་པའི་གནད་དོན་བཅོས་ཡོད།"
+      "“ཆ་སྒྲིག་མཉམ་སྦྱོར་”་གི་རྣམ་པའི་འོག་མི་སྒེར་གྱི་ཐོ་བྱང་གསུམ་བསྣན་པའི་གདམ་ག་གཉིས་འཆར་ཡིག་ཁྲོད་འགྲེམས་པའི་གནད་དོན་ཐག་གཅོད་བྱས།"
     ],
     "སྒྲ་འཇུག་ཆས": [
-      "སྒྲིག་འཛུགས་ངོ་རྟགས་རྒྱུན་མིན་ངང་མངོན་པའི་གནད་དོན་བཅོས་ཟིན།",
-      "སྒྲ་ཕབ་མཚམས་འཇོག་བྱས་རྗེས་གནས་ཚུལ་ཕྲེང་ལ་དུས་ཐོག་ཏུ་གསར་སྒྱུར་མི་ཐུབ་པའི་གནད་དོན་བཅོས་ཡོད།"
+      "སྒྲིག་ཆའི་མཚོན་རྟགས་ཀྱི་སྟོན་ཚུལ་དེ་བསྡུར་ན་རྒྱུན་ལྡན་མིན་པའི་གནད་དོན་ཐག་གཅོད།",
+      "ཡིག་སྒྲོན་གྱི་རྣམ་པར་བཟོ་བཅོས་བརྒྱབ་རྗེས་སྒྲ་ཕབ་མཚམས་འཇོག་བྱས་ན་དུས་ཐོག་ཏུ་གསར་སྒྱུར་བྱེད་མི་ཐུབ་པའི་གནད་དོན་ཐག་གཅོད།"
+    ],
+    "Updater": [
+      "གསར་བསྣན། ཅོག་ངོས་མགྱོགས་ལམ་གྱི་ཁྱད་ཆོས་དེ་གསར་སྒྱུར་སྒྲིག་བཀོད་ནང་ཁ་ཕྱེ་ཆོག"
     ],
     "གཞན།": [
       "Improved system security and stability"
+    ],
+    "Mi རྩིས་ཐོ": [
+      "ཤའོ་མི་ཁ་བྱང་འཇུག་པའི་ཤོག་ངོས་སུ་སྐད་ཡིག་ནོར་འཁྲུལ་ངང་མངོན་པའི་གནད་དོན་བཅོས་ཡོད།"
     ]
   }
 }

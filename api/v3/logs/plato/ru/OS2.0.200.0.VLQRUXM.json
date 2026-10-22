@@ -36,7 +36,7 @@
     ],
     "系統": [
       "新增 桌面壁纸支持模糊效果",
-      "此版本暂不支持ROOT，已ROOT用户不受影响",
+      "系统性能得到了优化。",
       "优化 部分场景下的手势提示线沉浸效果",
       "优化 部分经典页面样式更新",
       "优化 打开应用时的动画显示效果",
@@ -61,7 +61,9 @@
       "Optimization: Animation effects when launching apps",
       "Optimization: In certain screens, larger text sizes are now supported",
       "Fix: Errors occurred in some cases",
-      "Optimization: Tweaked the Storage refresh algorithm so it activates more often"
+      "Optimization: Tweaked the Storage refresh algorithm so it activates more often",
+      "This version does not currently support ROOT access. Users who already have ROOT access will not be affected.",
+      "Fixed: Errors occurred in some cases"
     ],
     "Lock screen": [
       "New: Lock screen wallpapers now support lens effect",
@@ -92,13 +94,14 @@
       "優化: 開啟應用程式時的動畫顯示效果",
       "優化: 部分場景支援顯示更大字號的字體，提升大字模式體驗",
       "修復: 部分場景偶現異常問題",
-      "優化: 煥新儲存觸發策略，提升觸發機率"
+      "優化: 煥新儲存觸發策略，提升觸發機率",
+      "此版本目前不支持 ROOT 权限；已经获得 ROOT 权限的用户不会受到影响。"
     ],
     "鎖屏": [
       "新增: 鎖定螢幕桌布支援透鏡效果",
       "新增: 鎖定螢幕自訂快速功能"
     ],
-    "設定": [
+    "设置": [
       "優化: 桌面設定中，系統導覽方式頁的快速功能入口"
     ],
     "無障礙服務": [
@@ -107,6 +110,9 @@
       "修復: 錄音機錄製到 TalkBack 聲音的問題",
       "修復: 日曆等應用程式無選中狀態提醒播報問題",
       "修復: 部分應用程式按鈕不播報的問題，包括設定、控制中心、簡訊、聯絡人、天氣、筆記、瀏覽器等"
+    ],
+    "設定": [
+      "優化: 桌面設定中，系統導覽方式頁的快速功能入口"
     ]
   },
   "logs_ja": {
@@ -114,6 +120,17 @@
       "最適化: アプリ内のサブページに入るときの中断アニメーション",
       "最適化: アプリの遷移中にアニメーションを中断する",
       "最適化: 横向きモードでアプリを閉じるときにアニメーションを中断する"
+    ],
+    "システム": [
+      "新機能: ホーム画面の壁紙がぼかし効果をサポートするようになりました",
+      "最適化: システムの安定性",
+      "最適化: 特定のシナリオにおける全画面表示ラインの没入感効果",
+      "最適化: いくつかのクラシックページのスタイルをアップデートしました",
+      "最適化: アプリ起動時のアニメーション効果",
+      "最適化: 特定の画面では、より大きな文字サイズがサポートされるようになりました",
+      "修正: エラーが発生する場合がある問題",
+      "最適化: ストレージ更新アルゴリズムを調整し、より頻繁に起動するようにしました",
+      "このバージョンでは現時点でROOT権限のサポートは行っていませんが、すでにROOT権限を取得しているユーザーには影響ありません。"
     ],
     "ロック画面": [
       "新機能: ロック画面の壁紙がレンズ効果をサポートするようになりました",
@@ -128,16 +145,6 @@
       "修正: レコーダーが TalkBack オーディオをキャプチャできない問題",
       "修正: カレンダーやその他のアプリで選択されていないアイテムのアナウンスに関する問題",
       "修正: 設定、コントロールセンター、メッセージ、連絡先、天気、メモ、ブラウザーを含む複数のアプリで一部のボタンがアナウンスされない不具合"
-    ],
-    "システム": [
-      "最適化: ストレージ更新アルゴリズムを調整し、より頻繁に起動するようにしました",
-      "新機能: ホーム画面の壁紙がぼかし効果をサポートするようになりました",
-      "最適化: システムの安定性",
-      "最適化: 特定のシナリオにおける全画面表示ラインの没入感効果",
-      "最適化: いくつかのクラシックページのスタイルをアップデートしました",
-      "最適化: アプリ起動時のアニメーション効果",
-      "最適化: 特定の画面では、より大きな文字サイズがサポートされるようになりました",
-      "修正: エラーが発生する場合がある問題"
     ]
   },
   "logs_ko": {
@@ -145,6 +152,17 @@
       "최적화: 앱 내 하위 페이지 진입 시의 중단 애니메이션",
       "최적화: 앱 전환 중에 애니메이션이 중단되는 문제",
       "최적화: 가로 모드에서 앱을 닫을 시에 애니메이션이 중단되는 문제"
+    ],
+    "시스템": [
+      "New: 홈 화면 배경화면에 블러 효과 지원",
+      "최적화: 시스템 안정성",
+      "최적화: 특정 시나리오에서 전체화면 표시기에 대한 몰입 효과",
+      "최적화: 일부 클래식 페이지의 스타일 업데이트됨",
+      "최적화: 앱 실행 시 애니메이션 효과",
+      "최적화: 특정 화면에서 더 큰 텍스트 크기 지원",
+      "수정: 일부 상황에서 오류가 발생하는 문제",
+      "최적화: 저장소 새로고침 알고리즘을 조정하여 더 자주 활성됨",
+      "이 버전은 현재 ROOT 기능을 지원하지 않으며, 이미 ROOT 권한을 가진 사용자들에게는 아무런 영향이 없습니다."
     ],
     "잠금화면": [
       "New: 잠금화면 배경화면에 렌즈 효과 지원",
@@ -159,16 +177,6 @@
       "수정: 녹음기가 TalkBack 오디오를 캡처하지 못하는 문제",
       "수정: 캘린더 및 기타 앱에서 선택되지 않은 항목에 대한 알림 문제",
       "수정: 설정, 제어 센터, 메시지, 연락처, 날씨, 메모, 브라우저 등 여러 앱에서 일부 버튼이 표시되지 않는 문제"
-    ],
-    "시스템": [
-      "최적화: 저장소 새로고침 알고리즘을 조정하여 더 자주 활성됨",
-      "New: 홈 화면 배경화면에 블러 효과 지원",
-      "최적화: 시스템 안정성",
-      "최적화: 특정 시나리오에서 전체화면 표시기에 대한 몰입 효과",
-      "최적화: 일부 클래식 페이지의 스타일 업데이트됨",
-      "최적화: 앱 실행 시 애니메이션 효과",
-      "최적화: 특정 화면에서 더 큰 텍스트 크기 지원",
-      "수정: 일부 상황에서 오류가 발생하는 문제"
     ]
   },
   "logs_ru": {
@@ -185,7 +193,8 @@
       "Оптимизация: Анимационные эффекты при запуске приложений",
       "Оптимизация: Для некоторых экранов теперь поддерживаются увеличенные шрифты",
       "Исправлено: В некоторых случаях могли возникать ошибки",
-      "Оптимизация: Отрегулирован алгоритм обновления хранилища — теперь он срабатывает чаще"
+      "Оптимизация: Отрегулирован алгоритм обновления хранилища — теперь он срабатывает чаще",
+      "Данная версия в настоящее время не поддерживает функцию ROOT; пользователи, у которых уже активирована эта функция, не пострадают."
     ],
     "Экран блокировки": [
       "Новое: Обои экрана блокировки теперь поддерживают эффект линзы",
@@ -208,6 +217,17 @@
       "Оптимізація: Переривання анімації під час переходів між застосунками",
       "Оптимізація: Переривання анімації під час закриття застосунків в альбомній орієнтації"
     ],
+    "Система": [
+      "Нове: Робочий стіл тепер підтримує ефект розмиття",
+      "Оптимізація: Стабільність системи",
+      "Оптимізація: Ефект занурення для індикатора повноекранного режиму в певних сценаріях",
+      "Оптимізація: Оновлені стилі для деяких класичних сторінок",
+      "Оптимізація: Ефекти анімації під час запуску застосунків",
+      "Оптимізація: На деяких екранах тепер підтримується текст більшого розміру",
+      "Виправлено: В деяких випадках могли виникати помилки",
+      "Оптимізація: Змінено алгоритм оновлення сховища, щоб він активувався частіше",
+      "Ця версія поки що не підтримує функцію ROOT; користувачі, у яких вже активована ця функція, не постраждають."
+    ],
     "Екран блокування": [
       "Нове: Фонові зображення екрана блокування тепер підтримують ефект лінзи",
       "Нове: Налаштовувані ярлики на екрані блокування"
@@ -221,16 +241,6 @@
       "Виправлено: Проблеми, через які диктофон не міг записувати звук TalkBack",
       "Виправлено: Проблеми з оголошеннями для вибраних об'єктів у календарі та інших програмах",
       "Виправлено: Деякі кнопки не були оголошені в декількох програмах, включаючи \"Налаштування\", \"Центр керування\", \"Повідомлення\", \"Контакти\", \"Погода\", \"Нотатки\" та \"Браузер\""
-    ],
-    "Система": [
-      "Оптимізація: Змінено алгоритм оновлення сховища, щоб він активувався частіше",
-      "Нове: Робочий стіл тепер підтримує ефект розмиття",
-      "Оптимізація: Стабільність системи",
-      "Оптимізація: Ефект занурення для індикатора повноекранного режиму в певних сценаріях",
-      "Оптимізація: Оновлені стилі для деяких класичних сторінок",
-      "Оптимізація: Ефекти анімації під час запуску застосунків",
-      "Оптимізація: На деяких екранах тепер підтримується текст більшого розміру",
-      "Виправлено: В деяких випадках могли виникати помилки"
     ]
   },
   "logs_pl": {
@@ -238,6 +248,17 @@
       "Zoptymalizowano: Przerywanie animacji podczas wchodzenia na podstrony w aplikacjach",
       "Zoptymalizowano: Przerywanie animacji podczas przejść w aplikacji",
       "Zoptymalizowano: Przerywanie animacji podczas zamykania aplikacji w trybie poziomym"
+    ],
+    "System": [
+      "Nowe: Tapeta ekranu głównego obsługuje teraz efekt rozmycia",
+      "Zoptymalizowano: Stabilność systemu",
+      "Zoptymalizowano: Immersyjny wygląd wskaźnika pełnego ekranu w określonych sytuacjach",
+      "Zoptymalizowano: Zaktualizowano wygląd części klasycznych stron",
+      "Zoptymalizowano: Efekty animacji podczas uruchamiania aplikacji",
+      "Zoptymalizowano: Na niektórych ekranach obsługiwane są teraz większe rozmiary tekstu.",
+      "Naprawiono: W niektórych przypadkach występowały błędy",
+      "Zoptymalizowano: Poprawiono algorytm odświeżania pamięci masowej, by aktywował się częściej.",
+      "Ta wersja nie obsługuje funkcji ROOT; użytkownicy, którzy już mają dostęp do tej funkcji, nie będą podlegać żadnym negatywnym wpływom."
     ],
     "Ekran blokady": [
       "Nowe: Tapety ekranu blokady obsługują teraz efekt soczewki",
@@ -252,16 +273,6 @@
       "Naprawiono: Problemy, które uniemożliwiały aplikacji Dyktafon przechwytywanie dźwięku z funkcji TalkBack.",
       "Naprawiono: Problemy z odczytywaniem na głos niezaznaczonych pozycji w Kalendarzu i innych aplikacjach.",
       "Naprawiono: W kilku aplikacjach przyciski nie były prawidłowo odczytywane na głos. Dotyczyło to m.in. Ustawień, Centrum kontroli, Wiadomości, Kontaktów, Pogody, Notatek i Przeglądarki."
-    ],
-    "System": [
-      "Zoptymalizowano: Poprawiono algorytm odświeżania pamięci masowej, by aktywował się częściej.",
-      "Nowe: Tapeta ekranu głównego obsługuje teraz efekt rozmycia",
-      "Zoptymalizowano: Stabilność systemu",
-      "Zoptymalizowano: Immersyjny wygląd wskaźnika pełnego ekranu w określonych sytuacjach",
-      "Zoptymalizowano: Zaktualizowano wygląd części klasycznych stron",
-      "Zoptymalizowano: Efekty animacji podczas uruchamiania aplikacji",
-      "Zoptymalizowano: Na niektórych ekranach obsługiwane są teraz większe rozmiary tekstu.",
-      "Naprawiono: W niektórych przypadkach występowały błędy"
     ]
   },
   "logs_de": {
@@ -278,7 +289,8 @@
       "Optimierung: Animationseffekte beim Starten von Apps",
       "Optimierung: Auf bestimmten Bildschirmen werden jetzt größere Textgrößen unterstützt",
       "Behoben: In einigen Fällen sind Fehler aufgetreten",
-      "Optimierung: Systemstabilität"
+      "Optimierung: Speicher-Aktualisierungsalgorithmus angepasst, damit er häufiger ausgelöst wird",
+      "Diese Version unterstützt derzeit nicht das ROOT-Recht. Benutzer, die bereits über das ROOT-Recht verfügen, werden davon nicht betroffen sein."
     ],
     "Sperrbildschirm": [
       "Neu: Sperrbildschirm-Hintergrundbilder unterstützen jetzt einen Linseneffekt",
@@ -310,7 +322,7 @@
       "Optimisation: Sur certains écrans, des tailles de texte plus grandes sont désormais prises en charge",
       "Réparé: Des erreurs se sont produites dans certains cas",
       "Optimisation: L'algorithme d'actualisation du stockage a été modifié afin qu'il s'active plus souvent",
-      "Optimisation: Stabilité du système"
+      "Cette version ne prend pas en charge l’option ROOT pour l’instant. Les utilisateurs qui ont déjà activé l’option ROOT n’en seront pas affectés."
     ],
     "Écran de verrouillage": [
       "Nouveau: Les fonds d’écran de verrouillage prennent maintenant en charge l’effet de lentille",
@@ -333,6 +345,17 @@
       "Ottimizzazione: Interruzione dell'animazione durante le transizioni delle app",
       "Ottimizzazione: Interruzione dell'animazione quando si chiudono le app in modalità orizzontale"
     ],
+    "Sistema": [
+      "Nuovo: Lo sfondo della schermata Home ora supporta l'effetto sfocatura",
+      "Ottimizzazione: Stabilità del sistema",
+      "Ottimizzazione: Effetto immersivo per l'indicatore di schermo intero in alcuni scenari",
+      "Ottimizzazione: Stili aggiornati per alcune pagine classiche",
+      "Ottimizzazione: Effetti di animazione all'avvio delle app",
+      "Ottimizzazione: In alcune schermate sono ora supportate dimensioni del testo più grandi",
+      "Risolto: In alcuni casi si verificavano errori",
+      "Ottimizzazione: Modificato l'algoritmo di aggiornamento dell‘archiviazione in modo che si attivi più spesso",
+      "Questa versione non supporta attualmente il livello di accesso “ROOT”; gli utenti che già possiedono tale privilegio non saranno influenzati."
+    ],
     "Schermata di blocco": [
       "Nuovo: Gli sfondi della schermata di blocco ora supportano l'effetto obiettivo",
       "Nuovo: Collegamenti personalizzabili per la schermata di blocco"
@@ -346,16 +369,6 @@
       "Risolto: Problemi che impedivano a Registratore di acquisire l’audio di TalkBack",
       "Risolto: Problemi con gli annunci degli elementi non selezionati in Calendario e altre app",
       "Risolto: Alcuni pulsanti non venivano annunciati in diverse app, tra cui Impostazioni, Centro di controllo, Messaggi, Contatti, Meteo, Note e Browser"
-    ],
-    "Sistema": [
-      "Ottimizzazione: Modificato l'algoritmo di aggiornamento dell‘archiviazione in modo che si attivi più spesso",
-      "Nuovo: Lo sfondo della schermata Home ora supporta l'effetto sfocatura",
-      "Ottimizzazione: Stabilità del sistema",
-      "Ottimizzazione: Effetto immersivo per l'indicatore di schermo intero in alcuni scenari",
-      "Ottimizzazione: Stili aggiornati per alcune pagine classiche",
-      "Ottimizzazione: Effetti di animazione all'avvio delle app",
-      "Ottimizzazione: In alcune schermate sono ora supportate dimensioni del testo più grandi",
-      "Risolto: In alcuni casi si verificavano errori"
     ]
   },
   "logs_es": {
@@ -364,11 +377,22 @@
       "Optimización: Interrumpir la animación durante las transiciones de aplicaciones",
       "Optimización: Interrumpir la animación al cerrar aplicaciones en el Modo apaisado"
     ],
+    "Sistema": [
+      "Nuevo: El fondo de la Pantalla de inicio ahora admite un efecto de desenfoque",
+      "Optimización: Estabilidad del sistema",
+      "Optimización: Efecto inmersivo para el indicador de pantalla completa en ciertos escenarios",
+      "Optimización: Estilos actualizados para algunas páginas clásicas",
+      "Optimización: Efectos de animación al iniciar aplicaciones",
+      "Optimización: En ciertas pantallas, ahora se admiten tamaños de texto más grandes",
+      "Reparado: Se producían errores en algunos casos",
+      "Optimización: Se ajustó el algoritmo de actualización del almacenamiento para que se active con más frecuencia",
+      "Esta versión no admite la función ROOT por el momento; los usuarios que ya cuentan con ella no se verán afectados."
+    ],
     "Pantalla de bloqueo": [
       "Nuevo: Los fondos de la Pantalla de bloqueo ahora admiten el efecto de lente",
       "Nuevo: Accesos directos personalizables de la Pantalla de bloqueo"
     ],
-    "Ajustes": [
+    "Configuración": [
       "Optimización: Se agregó un acceso directo a la configuración de navegación del sistema en la configuración de la Pantalla de inicio"
     ],
     "Accesibilidad": [
@@ -378,15 +402,8 @@
       "Reparado: Problemas con los anuncios de elementos no seleccionados en el Calendario y otras aplicaciones",
       "Reparado: Algunos botones no fueron anunciados en varias aplicaciones, incluidas Ajustes, Centro de control, Mensajes, Contactos, Tiempo, Notas y Navegador"
     ],
-    "Sistema": [
-      "Optimización: Se ajustó el algoritmo de actualización del almacenamiento para que se active con más frecuencia",
-      "Nuevo: El fondo de la Pantalla de inicio ahora admite un efecto de desenfoque",
-      "Optimización: Estabilidad del sistema",
-      "Optimización: Efecto inmersivo para el indicador de pantalla completa en ciertos escenarios",
-      "Optimización: Estilos actualizados para algunas páginas clásicas",
-      "Optimización: Efectos de animación al iniciar aplicaciones",
-      "Optimización: En ciertas pantallas, ahora se admiten tamaños de texto más grandes",
-      "Reparado: Se producían errores en algunos casos"
+    "Ajustes": [
+      "Optimización: Se agregó un acceso directo a la configuración de navegación del sistema en la configuración de la Pantalla de inicio"
     ]
   },
   "logs_pt": {
@@ -394,6 +411,17 @@
       "Otimização: Animação de interrupção ao entrar em subpáginas dentro de apps",
       "Otimização: Interrupção de animação durante transições de apps",
       "Otimização: Interrupção de animação ao fechar apps no modo paisagem"
+    ],
+    "Sistema": [
+      "Novo: O Plano de fundo da Tela inicial agora suporta o efeito de desfoque",
+      "Otimização: Estabilidade do sistema",
+      "Otimização: Efeito imersivo para o indicador de tela cheia em certos cenários",
+      "Otimização: Estilos atualizados para algumas páginas clássicas",
+      "Otimização: Efeitos de animação ao iniciar apps",
+      "Otimização: Em algumas telas, incluímos suporte adicional para tamanhos de texto maiores",
+      "Correção: Erros ocorriam em alguns casos",
+      "Otimização: Algoritmo de atualização do armazenamento otimizado para ser acionado mais vezes",
+      "Esta versão não suporta o modo ROOT por enquanto; os usuários que já têm o acesso ROOT não serão afetados."
     ],
     "Tela de bloqueio": [
       "Novo: Papéis de parede da Tela de bloqueio agora suportam efeito de lente",
@@ -408,16 +436,6 @@
       "Correção: Problemas que impediam o Gravador de capturar áudio do TalkBack",
       "Correção: Problemas com anúncios de itens não selecionados na Agenda e em outros apps",
       "Correção: Alguns botões não eram anunciados em vários apps, incluindo Configurações, Centro de controle, Mensgaens, Clima, Anotações e Navegador"
-    ],
-    "Sistema": [
-      "Otimização: Algoritmo de atualização do armazenamento otimizado para ser acionado mais vezes",
-      "Novo: O Plano de fundo da Tela inicial agora suporta o efeito de desfoque",
-      "Otimização: Estabilidade do sistema",
-      "Otimização: Efeito imersivo para o indicador de tela cheia em certos cenários",
-      "Otimização: Estilos atualizados para algumas páginas clássicas",
-      "Otimização: Efeitos de animação ao iniciar apps",
-      "Otimização: Em algumas telas, incluímos suporte adicional para tamanhos de texto maiores",
-      "Correção: Erros ocorriam em alguns casos"
     ]
   },
   "logs_tr": {
@@ -425,6 +443,17 @@
       "Optimizasyon: Uygulamalar içinde alt sayfalara girerken kesinti animasyonu",
       "Optimizasyon: Uygulama geçişleri sırasında animasyonların kesintiye uğraması",
       "Optimizasyon: Manzara modunda uygulamaları kapatırken animasyonların kesintiye uğraması"
+    ],
+    "Sistem": [
+      "Yeni: Ana ekran duvar kağıdı artık bir bulanıklık efektini destekliyor",
+      "Optimizasyon: Sistem kararlılığı",
+      "Optimizasyon: Belirli senaryolarda tam ekran göstergesi için sürükleyici efekt",
+      "Optimizasyon: Bazı klasik sayfalar için güncellenmiş stiller",
+      "Optimizasyon: Uygulamaları başlatırken animasyon efektleri",
+      "Optimizasyon: Belirli ekranlarda artık daha büyük metin boyutları destekleniyor",
+      "Onarım: Bazı durumlarda hatalar oluştu",
+      "Optimizasyon: Depolama yenileme algoritması daha sık etkinleşecek şekilde ayarlandı",
+      "Bu sürüm şu an için ROOT özelliğini desteklememektedir; zaten ROOT yetkisine sahip olan kullanıcılar bu durumdan etkilenmeyecektir."
     ],
     "Kilit ekranı": [
       "Yeni: Kilit ekranı duvar kağıtları artık lens efektini destekliyor",
@@ -439,16 +468,6 @@
       "Onarım: Kaydedicinin TalkBack sesini yakalamasını engelleyen sorunlar",
       "Onarım: Takvim ve diğer uygulamalarda seçilmemiş ögeler için duyurularla ilgili sorunlar",
       "Onarım: Ayarlar, Kontrol merkezi, Mesajlaşma, Kişiler, Hava durumu, Notlar ve Tarayıcı dahil olmak üzere çeşitli uygulamalarda bazı tuşlar duyurulmadı"
-    ],
-    "Sistem": [
-      "Optimizasyon: Depolama yenileme algoritması daha sık etkinleşecek şekilde ayarlandı",
-      "Yeni: Ana ekran duvar kağıdı artık bir bulanıklık efektini destekliyor",
-      "Optimizasyon: Sistem kararlılığı",
-      "Optimizasyon: Belirli senaryolarda tam ekran göstergesi için sürükleyici efekt",
-      "Optimizasyon: Bazı klasik sayfalar için güncellenmiş stiller",
-      "Optimizasyon: Uygulamaları başlatırken animasyon efektleri",
-      "Optimizasyon: Belirli ekranlarda artık daha büyük metin boyutları destekleniyor",
-      "Onarım: Bazı durumlarda hatalar oluştu"
     ]
   },
   "logs_id": {
@@ -461,7 +480,7 @@
       "Pengoptimalan: Ukuran teks yang lebih besar sekarang didukung di layar tertentu",
       "Perbaikan: Kesalahan terjadi dalam beberapa kasus",
       "Pengoptimalan: Algoritma penyegaran Penyimpanan diubah sehingga lebih sering aktif",
-      "Pengoptimalan: Stabilitas sistem"
+      "Versi ini belum mendukung fitur ROOT. Pengguna yang sudah memiliki akses ROOT tidak akan terpengaruh oleh hal tersebut."
     ],
     "Layar kunci": [
       "Baru: Wallpaper Layar kunci kini mendukung efek lensa",
@@ -492,6 +511,17 @@
       "Tối ưu: Hoạt ảnh gián đoạn trong quá trình chuyển tiếp ứng dụng",
       "Tối ưu: Hoạt ảnh gián đoạn khi đóng ứng dụng ở Chế độ nằm ngang"
     ],
+    "Hệ thống": [
+      "Mới: Hình nền Màn hình chính hiện hỗ trợ hiệu ứng làm mờ",
+      "Tối ưu: Ổn định hệ thống",
+      "Tối ưu: Hiệu ứng đắm chìm cho biểu tượng màn hình tràn cạnh ở một số tình huống nhất định",
+      "Tối ưu: Cập nhật phong cách cho một số trang cổ điển",
+      "Tối ưu: Hiệu ứng hoạt ảnh khi khởi chạy ứng dụng",
+      "Tối ưu: Ở một số màn hình nhất định, cỡ chữ lớn hơn hiện được hỗ trợ",
+      "Sửa: Xảy ra lỗi trong một số trường hợp",
+      "Tối ưu: Đã điều chỉnh thuật toán làm mới Lưu trữ để kích hoạt thường xuyên hơn",
+      "Phiên bản này tạm thời không hỗ trợ chức năng ROOT; những người dùng đã thiết lập quyền ROOT sẽ không bị ảnh hưởng."
+    ],
     "Màn hình khóa": [
       "Mới: Hình nền Màn hình khóa hiện hỗ trợ hiệu ứng ống kính",
       "Mới: Lối tắt Màn hình khóa có thể tùy chỉnh"
@@ -505,16 +535,6 @@
       "Sửa: Vấn đề khiến Ghi âm không thể ghi lại âm thanh TalkBack",
       "Sửa: Vấn đề với thông báo cho các mục chưa chọn trong Lịch và các ứng dụng khác",
       "Sửa: Một số phím không được thông báo trong một số ứng dụng, bao gồm Cài đặt, Trung tâm điều khiển, Tin nhắn, Liên hệ, Thời tiết, Ghi chú và Trình duyệt"
-    ],
-    "Hệ thống": [
-      "Tối ưu: Đã điều chỉnh thuật toán làm mới Lưu trữ để kích hoạt thường xuyên hơn",
-      "Mới: Hình nền Màn hình chính hiện hỗ trợ hiệu ứng làm mờ",
-      "Tối ưu: Ổn định hệ thống",
-      "Tối ưu: Hiệu ứng đắm chìm cho biểu tượng màn hình tràn cạnh ở một số tình huống nhất định",
-      "Tối ưu: Cập nhật phong cách cho một số trang cổ điển",
-      "Tối ưu: Hiệu ứng hoạt ảnh khi khởi chạy ứng dụng",
-      "Tối ưu: Ở một số màn hình nhất định, cỡ chữ lớn hơn hiện được hỗ trợ",
-      "Sửa: Xảy ra lỗi trong một số trường hợp"
     ]
   },
   "logs_th": {
@@ -522,6 +542,17 @@
       "การเพิ่มประสิทธิภาพ: แอนิเมชั่นการขัดจังหวะเมื่อเข้าสู่หน้าย่อยภายในแอป",
       "การเพิ่มประสิทธิภาพ: ขัดจังหวะภาพเคลื่อนไหวระหว่างการเปลี่ยนแอป",
       "การเพิ่มประสิทธิภาพ: ขัดจังหวะภาพเคลื่อนไหวเมื่อปิดแอปในโหมดแนวนอน"
+    ],
+    "ระบบ": [
+      "ใหม่: ภาพพื้นหลังหน้าจอหลักรองรับเอฟเฟกต์เบลอแล้ว",
+      "การเพิ่มประสิทธิภาพ: ความเสถียรของระบบ",
+      "การเพิ่มประสิทธิภาพ: เอฟเฟกต์สมจริงสำหรับตัวบ่งชี้แบบเต็มหน้าจอในบางสถานการณ์",
+      "การเพิ่มประสิทธิภาพ: ปรับปรุงสไตล์สำหรับบางหน้าแบบคลาสสิก",
+      "การเพิ่มประสิทธิภาพ: เอฟเฟกต์ภาพเคลื่อนไหวเมื่อเปิดแอป",
+      "การเพิ่มประสิทธิภาพ: ในหน้าจอบางหน้าจอ รองรับขนาดข้อความที่ใหญ่ขึ้นแล้ว",
+      "แก้ไข: เกิดข้อผิดพลาดในบางกรณี",
+      "การเพิ่มประสิทธิภาพ: ปรับแต่งอัลกอริธึมการรีเฟรชที่เก็บข้อมูลเพื่อให้เปิดใช้งานได้บ่อยขึ้น",
+      "เวอร์ชันนี้ยังไม่รองรับการตั้งค่า ROOT ดังนั้นผู้ใช้ที่ตั้งค่า ROOT ไว้แล้วจะไม่ได้รับผลกระทบใดๆ"
     ],
     "ล็อคหน้าจอ": [
       "ใหม่: ภาพพื้นหลังหน้าจอล็อกรองรับเอฟเฟกต์เลนส์แล้ว",
@@ -536,16 +567,6 @@
       "แก้ไข: ปัญหาที่ทำให้เครื่องบันทึกไม่สามารถบันทึกเสียง TalkBack ได้",
       "แก้ไข: ปัญหาเกี่ยวกับการประกาศสำหรับรายการที่ไม่ได้เลือกในปฏิทินและแอปอื่นๆ",
       "แก้ไข: ปุ่มบางปุ่มไม่ได้รับการประกาศในแอปหลายตัว เช่น การตั้งค่า ศูนย์ควบคุม การส่งข้อความ รายชื่อผู้ติดต่อ สภาพอากาศ บันทึก และเบราว์เซอร์"
-    ],
-    "ระบบ": [
-      "การเพิ่มประสิทธิภาพ: ปรับแต่งอัลกอริธึมการรีเฟรชที่เก็บข้อมูลเพื่อให้เปิดใช้งานได้บ่อยขึ้น",
-      "ใหม่: ภาพพื้นหลังหน้าจอหลักรองรับเอฟเฟกต์เบลอแล้ว",
-      "การเพิ่มประสิทธิภาพ: ความเสถียรของระบบ",
-      "การเพิ่มประสิทธิภาพ: เอฟเฟกต์สมจริงสำหรับตัวบ่งชี้แบบเต็มหน้าจอในบางสถานการณ์",
-      "การเพิ่มประสิทธิภาพ: ปรับปรุงสไตล์สำหรับบางหน้าแบบคลาสสิก",
-      "การเพิ่มประสิทธิภาพ: เอฟเฟกต์ภาพเคลื่อนไหวเมื่อเปิดแอป",
-      "การเพิ่มประสิทธิภาพ: ในหน้าจอบางหน้าจอ รองรับขนาดข้อความที่ใหญ่ขึ้นแล้ว",
-      "แก้ไข: เกิดข้อผิดพลาดในบางกรณี"
     ]
   },
   "logs_ar": {
@@ -553,6 +574,17 @@
       "التحسين: عرض رسوم متحركة للمقاطعة عند الدخول إلى الصفحات الفرعية داخل التطبيقات",
       "التحسين: عرض رسوم متحركة للمقاطعة عند التنقل بين التطبيقات",
       "التحسين: عرض رسوم متحركة للمقاطعة عند إغلاق التطبيقات في الوضع الأفقي"
+    ],
+    "النظام": [
+      "الجديد: تدعم خلفية الشاشة الرئيسية الآن تأثير التمويه",
+      "التحسين: استقرار النظام",
+      "التحسين: تحسين تأثير الإندماج لمؤشر الإيماءات في بعض السيناريوهات",
+      "التحسين: تحديث تصميم بعض الصفحات الكلاسيكية",
+      "التحسين: تأثيرات رسوم متحركة عند فتح التطبيقات",
+      "التحسين: دعم حجم الخط الكبير على بعض الشاشات",
+      "الإصلاح: حدثت أخطاء في بعض الحالات",
+      "التحسين: تحسين خوارزمية تحديث التخزين لتعمل بشكل أكثر انتظام",
+      "هذه النسخة لا تدعم خيار “ROOT” في الوقت الحالي، ولن يتأثر المستخدمون الذين قاموا بتفعيل خيار “ROOT” بهذا التغيير."
     ],
     "شاشة القفل": [
       "الجديد: تدعم خلفيات شاشة القفل الآن تأثير العدسة",
@@ -567,16 +599,6 @@
       "الإصلاح: إصلاح مشكلة عدم تسجيل صوت TalkBack في تطبيق التسجيل",
       "الإصلاح: تم تحسين الإعلانات الصوتية للعناصر غير المحددة في \"التقويم\" وتطبيقات أخرى",
       "الإصلاح: تم إصلاح مشكلة عدم إعلان بعض الأزرار في عدد من التطبيقات، مثل الإعدادات، مركز التحكم، الرسائل، جهات الاتصال، الطقس، الملاحظات، والمتصفح"
-    ],
-    "النظام": [
-      "التحسين: تحسين خوارزمية تحديث التخزين لتعمل بشكل أكثر انتظام",
-      "الجديد: تدعم خلفية الشاشة الرئيسية الآن تأثير التمويه",
-      "التحسين: استقرار النظام",
-      "التحسين: تحسين تأثير الإندماج لمؤشر الإيماءات في بعض السيناريوهات",
-      "التحسين: تحديث تصميم بعض الصفحات الكلاسيكية",
-      "التحسين: تأثيرات رسوم متحركة عند فتح التطبيقات",
-      "التحسين: دعم حجم الخط الكبير على بعض الشاشات",
-      "الإصلاح: حدثت أخطاء في بعض الحالات"
     ]
   },
   "logs_in": {
@@ -593,7 +615,8 @@
       "ऑप्टिमाइज़ेशन ऐप्स लॉन्च करते समय एनिमेशन इफ़ेक्ट्स",
       "ऑप्टिमाइज़ेशन कुछ स्क्रीन में, अब बड़े आकार के टेक्स्ट समर्थित हैं",
       "ठीक करें कुछ मामलों में त्रुटियां आ रही थीं",
-      "ऑप्टिमाइज़ेशन स्टोरेज रीफ़्रेश एल्गोरिदम में कुछ सुधार किए गए हैं जिससे अब यह पहले की तुलना में अधिक बार सक्रिय होता है"
+      "ऑप्टिमाइज़ेशन स्टोरेज रीफ़्रेश एल्गोरिदम में कुछ सुधार किए गए हैं जिससे अब यह पहले की तुलना में अधिक बार सक्रिय होता है",
+      "यह संस्करण फिलहाल “ROOT” सुविधा का समर्थन नहीं करता है; इसलिए पहले से ही “ROOT” अधिकार प्राप्त उपयोगकर्ताओं पर कोई प्रभाव नहीं पड़ेगा।"
     ],
     "लॉक स्क्रीन": [
       "नया लॉक स्क्रीन वॉलपेपर अब लेंस इफेक्ट को सपोर्ट करते हैं",
@@ -624,6 +647,8 @@
       "Optimization: Animation effects when launching apps",
       "Optimization: In certain screens, larger text sizes are now supported",
       "Fix: Errors occurred in some cases",
+      "Optimization: Tweaked the Storage refresh algorithm so it activates more often",
+      "بۇ نەشىردە يېقىندا ROOT قوللاش ئىمكانىيىتى قوشۇلمىدى ، ئاللىقاچان ROOT قىلىنغان ئابونېنتلارغا ھېچقانداق تەسىر يېتمەيدۇ.",
       "Fixed: Errors occurred in some cases"
     ],
     "Lock screen": [
@@ -661,7 +686,8 @@
       "Optimization: Animation effects when launching apps",
       "Optimization: In certain screens, larger text sizes are now supported",
       "Fix: Errors occurred in some cases",
-      "ཐོན་རིམ་འདིས་གནས་སྐབས་སུ་ ROOT ལ་རྒྱབ་སྐྱོར་མི་བྱེད་པ་དང་། ROOT བྱས་ཟིན་པའི་སྤྱོད་མཁན་ལ་ཤུགས་རྐྱེན་མི་ཐེབས།"
+      "Optimization: Tweaked the Storage refresh algorithm so it activates more often",
+      "དུས་นีར་པརྒྱུད་རིམ་འདིས ROOT を 지원하지 않습니다. 이미 ROOT ಅधिकার་ཡོད་པའི་སྤྱོད་མཁན་གྱིས་ཤུགས་རྐྱེན་ཐེབས་མི་སྲིད།"
     ],
     "Lock screen": [
       "New: Lock screen wallpapers now support lens effect",

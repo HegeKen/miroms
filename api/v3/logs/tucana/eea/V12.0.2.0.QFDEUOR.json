@@ -70,7 +70,8 @@
       "New: Movie frame"
     ],
     "System animations": [
-      "Optimization: Animations in selected scenes"
+      "Optimization: Animations in selected scenes",
+      "Optimized animation smoothness in some scenarios"
     ],
     "Control center": [
       "New: Swipe down from the upper left corner to open Notification shade and from the upper right corner to open Control center",
@@ -99,7 +100,7 @@
     "Super wallpapers": [
       "Fix: Status bar colors weren't displayed correctly in the Dark mode"
     ],
-    "Other improvements and optimizations": [
+    "Other optimizations and adjustments": [
       "New: A new mode for scanning documents",
       "New: Movie frame"
     ]
@@ -117,7 +118,8 @@
       "新增: 拍照電影模式 輕鬆拍出如電影版的照片"
     ],
     "系統動畫設計": [
-      "優化: 部分場景下的動畫流暢度"
+      "優化: 部分場景下的動畫流暢度",
+      "優化 部分場景下的動畫流暢度"
     ],
     "控制中心": [
       "新增: 桌面左側下滑顯示通知中心，右側下滑顯示控制中心",
@@ -170,6 +172,7 @@
       "修正: コントロールセンターが横向きモードで正しく表示されない問題"
     ],
     "ダークモード": [
+      "最適化: ダークモードの壁紙を暗くする機能を改善し、暗くした壁紙の明るさと色彩を向上",
       "最適化: ダークモード時の壁紙の明るさと色彩が改善されました"
     ],
     "ステータスバー、通知シェード": [
@@ -185,6 +188,10 @@
     ],
     "スーパー壁紙": [
       "修正: ダークモードでステータスバーの色が正しく表示されない問題"
+    ],
+    "その他の改善と最適化": [
+      "新機能: ドキュメントをスキャンするための新しいモード",
+      "新機能: ムービーフレーム"
     ]
   },
   "logs_ko": {
@@ -208,11 +215,12 @@
       "최적화: 풍경 모드에서 제어 센터 레이아웃",
       "수정: 풍경 모드에서 제어 센터가 제대로 표시되지 않는 현상"
     ],
+    "다크 모드": [
+      "최적화: 다크 모드에서 배경 화면을 어둡게 하는 기능을 개선하여 어둡게 조정된 배경 화면의 밝기와 색상을 향상",
+      "최적화: 다크 모드 실행 중 배경화면의 밝기 및 색상 강화"
+    ],
     "상태 바, 알림 바": [
       "修复 深色模式下部分场景状态栏显示异常的问题"
-    ],
-    "다크 모드": [
-      "최적화: 다크 모드 실행 중 배경화면의 밝기 및 색상 강화"
     ],
     "카메라": [
       "New: 문서 스캔을 위한 새 모드",
@@ -224,6 +232,10 @@
     ],
     "고화질 배경화면": [
       "수정: 다크 모드에서 상태 바 색상이 제대로 표시되지 않는 문제"
+    ],
+    "기타 개선 및 최적화": [
+      "New: 문서 스캔을 위한 새 모드",
+      "New: 영화 프레임"
     ]
   },
   "logs_ru": {
@@ -247,11 +259,12 @@
       "Оптимизация: Разметка Центра управления в альбомной ориентации",
       "Исправлено: Центр управления не всегда отображался правильно в альбомном режиме"
     ],
+    "Темный режим": [
+      "Оптимизация: улучшена функция затемнения обоев в тёмном режиме — повышены яркость и цветность затемнённых обоев",
+      "Оптимизация: Оптимизация яркости и цветов для обоев в Темном режиме"
+    ],
     "строка состояния, шторка уведомлений": [
       "修复 深色模式下部分场景状态栏显示异常的问题"
-    ],
-    "Темный режим": [
-      "Оптимизация: Оптимизация яркости и цветов для обоев в Темном режиме"
     ],
     "Строка состояния, шторка уведомлений": [
       "修复 深色模式下部分场景状态栏显示异常的问题"
@@ -267,7 +280,7 @@
     "Суперобои": [
       "Исправлено: В темном режиме цвета строки состояния отображались неправильно"
     ],
-    "Оптимизация и другие функции": [
+    "Другие оптимизации и настройки": [
       "Новое: Новый режим для сканирования документов",
       "Новое: Кинематографический кадр"
     ]
@@ -294,6 +307,7 @@
       "Виправлено: Центр керування відображався неправильно у альбомній орієнтації"
     ],
     "Темний режим": [
+      "Оптимізація: покращено функцію затемнення шпалер у темному режимі — підвищено яскравість і насиченість кольорів затемнених шпалер",
       "Оптимізація: Поліпшення яскравості і кольору для шпалер в Темному режимі"
     ],
     "Рядок стану, Панель сповіщень": [
@@ -309,6 +323,10 @@
     ],
     "Супершпалери": [
       "Виправлено: Кольори рядка стану відображалася неправильно у Темному режимі"
+    ],
+    "Інші оптимізації та налаштування": [
+      "Нове: Новий режим для сканування документів",
+      "Нове: Кінорамка"
     ]
   },
   "logs_pl": {
@@ -332,11 +350,12 @@
       "Zoptymalizowano: Układ Centrum kontroli w trybie poziomym",
       "Naprawiono: Centrum kontroli nie zawsze było poprawnie wyświetlane w trybie poziomym"
     ],
+    "Tryb ciemny": [
+      "Optymalizacja: ulepszono funkcję przyciemniania tapety w trybie ciemnym — zwiększono jasność i kolorystykę przyciemnionej tapety",
+      "Zoptymalizowano: Poprawa jasności i kolorów tapet w trybie ciemnym"
+    ],
     "pasek powiadomień,panel powiadomień": [
       "修复 深色模式下部分场景状态栏显示异常的问题"
-    ],
-    "Tryb ciemny": [
-      "Zoptymalizowano: Poprawa jasności i kolorów tapet w trybie ciemnym"
     ],
     "Pasek powiadomień, Panel powiadomień": [
       "修复 深色模式下部分场景状态栏显示异常的问题"
@@ -345,12 +364,16 @@
       "Nowe: Nowy tryb skanowania dokumentów",
       "Nowe: Klatka filmu"
     ],
-    "Inne": [
+    "Reszt": [
       "Nowe: Przesuń palcem w dół od lewego górnego rogu, aby otworzyć Pasek powiadomień, i od prawego górnego rogu, aby otworzyć Centrum kontroli",
       "Zaktualizowano Pakiet Bezpieczeństwa Android do lutego 2021 r. Zwiększono bezpieczeństwo systemu."
     ],
     "Super tapety": [
       "Naprawiono: Kolory paska statusu nie były poprawnie wyświetlane w trybie ciemnym"
+    ],
+    "Inne optymalizacje i modyfikacje": [
+      "Nowe: Nowy tryb skanowania dokumentów",
+      "Nowe: Klatka filmu"
     ]
   },
   "logs_de": {
@@ -362,7 +385,13 @@
       "Optimierung: Das Kontrollzentrum wird jetzt bei eingehenden Anrufen geschlossen.",
       "Optimierung: Layout des Kontrollzentrums im Querformat",
       "Fix: Das Kontrollzentrum wurde im Querformat nicht immer korrekt angezeigt",
-      "Optimierung: Das Kontrollzentrum wird jetzt bei eingehenden Anrufen geschlossen"
+      "Optimierung: Das Kontrollzentrum wird jetzt bei eingehenden Anrufen geschlossen",
+      "Neu: Ein neuer Modus zum Scannen von Dokumenten",
+      "Neu: Filmmodus für Fotos – mühelos kinoreife Fotos aufnehmen"
+    ],
+    "Systemanimationen": [
+      "Optimierung: Animationen in ausgewählten Szenen",
+      "Optimierung der Animationsflüssigkeit in bestimmten Szenarien"
     ],
     "Kontrollzentrum": [
       "Neu: Streichen Sie von oben links nach unten, um das Mitteilungsfeld zu öffnen, und von oben rechts nach unten, um das Kontrollzentrum zu öffnen.",
@@ -372,11 +401,17 @@
       "Fix: Das Kontrollzentrum wurde im Querformat nicht immer korrekt angezeigt",
       "Optimierung: Das Kontrollzentrum wird jetzt bei eingehenden Anrufen geschlossen"
     ],
+    "Dunkelmodus": [
+      "Optimierung: Funktion zum Abdunkeln des Hintergrundbilds im Dunkelmodus verbessert – Helligkeit und Farben des abgedunkelten Hintergrundbilds erhöht",
+      "Optimierung: Verbesserte Helligkeit und Farben für Hintergrundbilder im Dunkelmodus."
+    ],
     "Statusleiste, Benachrichtigungsfeld": [
       "修复 深色模式下部分场景状态栏显示异常的问题"
     ],
-    "Dunkelmodus": [
-      "Optimierung: Verbesserte Helligkeit und Farben für Hintergrundbilder im Dunkelmodus."
+    "Kamera": [
+      "Neu: Ein neuer Modus zum Scannen von Dokumenten",
+      "Neu: Filmrahmen",
+      "Neu: Filmmodus für Fotos – mühelos kinoreife Fotos aufnehmen"
     ],
     "Statusleiste, Benachrichtigungsleiste": [
       "修复 深色模式下部分场景状态栏显示异常的问题"
@@ -388,9 +423,9 @@
     "Super-Hintergründe": [
       "Behoben: Statusleistenfarben wurden im Dunkelmodus nicht korrekt angezeigt."
     ],
-    "Kamera": [
+    "Weitere Optimierungen und Anpassungen": [
       "Neu: Ein neuer Modus zum Scannen von Dokumenten",
-      "Neu: Filmrahmen"
+      "Neu: Filmmodus für Fotos – mühelos kinoreife Fotos aufnehmen"
     ]
   },
   "logs_fr": {
@@ -414,11 +449,12 @@
       "Optimisation: Disposition du centre de contrôle en mode paysage",
       "Réparé: Le centre de contrôle ne s'affichait pas toujours correctement en mode paysage"
     ],
+    "Mode Sombre": [
+      "Optimisation : amélioration de la fonction d’assombrissement du fond d’écran en mode sombre, avec une luminosité et des couleurs accrues pour le fond assombri",
+      "Optimisation: Améliorations de la luminosité et de la couleur pour les fonds d' écrans en Mode sombre"
+    ],
     "Barre d'état, Panneau de notification": [
       "修复 深色模式下部分场景状态栏显示异常的问题"
-    ],
-    "Mode Sombre": [
-      "Optimisation: Améliorations de la luminosité et de la couleur pour les fonds d' écrans en Mode sombre"
     ],
     "Appareil photo": [
       "Nouveau: Un nouveau mode pour scanner les documents",
@@ -435,7 +471,7 @@
       "Nouveau: Un nouveau mode pour scanner les documents",
       "Nouveau: Cadre du film"
     ],
-    "Autres améliorations et optimisations": [
+    "D’autres optimisations et ajustements": [
       "Nouveau: Un nouveau mode pour scanner les documents",
       "Nouveau: Cadre du film"
     ]
@@ -461,16 +497,17 @@
       "Ottimizzazione: Layout del Centro di controllo in modalità orizzontale",
       "Risolto: Il Centro di controllo non veniva sempre visualizzato correttamente in modalità orizzontale"
     ],
+    "Modalità Scura": [
+      "Ottimizzazione: migliorata la funzione di oscuramento dello sfondo in modalità scura, aumentando luminosità e colori dello sfondo oscurato",
+      "Ottimizzazione: Luminosità e colore migliorati per gli sfondi in modalità Scura"
+    ],
     "barra di stato, area delle notifiche": [
       "修复 深色模式下部分场景状态栏显示异常的问题"
-    ],
-    "Modalità Scura": [
-      "Ottimizzazione: Luminosità e colore migliorati per gli sfondi in modalità Scura"
     ],
     "Barra di stato, Area delle notifiche": [
       "修复 深色模式下部分场景状态栏显示异常的问题"
     ],
-    "Fotocamera": [
+    "macchina fotografica": [
       "Nuovo: Una nuova modalità per la scansione di documenti",
       "Nuovo: Pellicola"
     ],
@@ -481,7 +518,11 @@
     "Super sfondi": [
       "Risolto: I colori della barra di stato non erano visualizzati correttamente in modalità Scura"
     ],
-    "Altri miglioramenti e ottimizzazioni": [
+    "Fotocamera": [
+      "Nuovo: Una nuova modalità per la scansione di documenti",
+      "Nuovo: Pellicola"
+    ],
+    "Altre ottimizzazioni e modifiche": [
       "Nuovo: Una nuova modalità per la scansione di documenti",
       "Nuovo: Pellicola"
     ]
@@ -507,11 +548,12 @@
       "Optimización: Disposición del Centro de control en el modo paisaje",
       "Reparado: El Centro de control no siempre se mostraba correctamente en el modo paisaje"
     ],
+    "Modo oscuro": [
+      "Optimización: se mejora la función de atenuar el fondo de pantalla en modo oscuro, aumentando el brillo y el color del fondo atenuado",
+      "Optimización: Mejoras del brillo y del color para fondos de pantalla en el Modo oscuro"
+    ],
     "barra de estado, barra de notificaciones": [
       "修复 深色模式下部分场景状态栏显示异常的问题"
-    ],
-    "Modo oscuro": [
-      "Optimización: Mejoras del brillo y del color para fondos de pantalla en el Modo oscuro"
     ],
     "Barra de estado, Barra de notificaciones": [
       "修复 深色模式下部分场景状态栏显示异常的问题"
@@ -527,7 +569,7 @@
     "Superfondos de pantalla": [
       "Reparado: Los colores de la barra de estado no se mostraban correctamente en el Modo oscuro"
     ],
-    "Otras mejoras y optimizaciones": [
+    "Otras optimizaciones y ajustes": [
       "Nuevo: Un nuevo modo para escanear documentos",
       "Nuevo: Marco de película"
     ]
@@ -553,11 +595,12 @@
       "Otimização: Layout do Centro de controle em modo paisagem",
       "Correção: O Centro de Controle não era exibido sempre da forma correta no modo paisagem"
     ],
+    "Modo Escuro": [
+      "Otimização: aprimorada a função de escurecer o plano de fundo no modo escuro, aumentando o brilho e as cores do plano de fundo escurecido",
+      "Otimização: Melhorias nas cores e no brilho para planos de fundo no Modo Escuro"
+    ],
     "Barra de status e Área de notificações": [
       "修复 深色模式下部分场景状态栏显示异常的问题"
-    ],
-    "Modo Escuro": [
-      "Otimização: Melhorias nas cores e no brilho para planos de fundo no Modo Escuro"
     ],
     "Barra de status, Área de notificações": [
       "修复 深色模式下部分场景状态栏显示异常的问题"
@@ -572,6 +615,10 @@
     ],
     "Super planos de fundo": [
       "Correção: As cores da Barra de status não eram exibidas corretamente no Modo Escuro"
+    ],
+    "Outras otimizações e ajustes": [
+      "Novo: Um novo modo para digitalizar documentos",
+      "Novo: Quadro de vídeo"
     ]
   },
   "logs_tr": {
@@ -595,11 +642,12 @@
       "Optimizasyon: Manzara modunda Kontrol merkezi düzeni",
       "Onarım: Kontrol merkezi, manzara modunda doğru bir şekilde görüntülenmedi"
     ],
+    "Karanlık mod": [
+      "Optimizasyon: Karanlık modda duvar kağıdını karartma özelliği iyileştirildi; karartılmış duvar kağıdının parlaklığı ve renkleri artırıldı",
+      "Optimizasyon: Karanlık modda duvar kağıtları için parlaklık ve renk geliştirmeleri"
+    ],
     "durum çubuğu, Bildirim çubuğu": [
       "修复 深色模式下部分场景状态栏显示异常的问题"
-    ],
-    "Karanlık mod": [
-      "Optimizasyon: Karanlık modda duvar kağıtları için parlaklık ve renk geliştirmeleri"
     ],
     "Durum çubuğu, Bildirim çubuğu": [
       "修复 深色模式下部分场景状态栏显示异常的问题"
@@ -615,7 +663,7 @@
     "Süper duvar kağıtları": [
       "Onarım: Durum çubuğu renkleri Karanlık modda düzgün bir şekilde görüntülenmedi"
     ],
-    "Diğer iyileştirmeler ve optimizasyonlar": [
+    "Diğer optimizasyonlar ve ayarlamalar": [
       "Yeni: Belgeleri taramak için yeni bir mod",
       "Yeni: Film çerçevesi"
     ]
@@ -641,11 +689,12 @@
       "Pengoptimalan: Tata letak Pusat kontral di mode lanskap",
       "Perbaikan: Pusat kontrol tidak selalu ditampilkan dengan benar saat mode horisontal"
     ],
+    "Mode Gelap": [
+      "Optimasi: fitur peredupan wallpaper di mode gelap ditingkatkan, dengan peningkatan kecerahan dan warna wallpaper yang diredupkan",
+      "Pengoptimalan: Peningkatan kecerahan dan warna untuk wallpaper dalam mode Gelap"
+    ],
     "bar status, layar notifikasi": [
       "修复 深色模式下部分场景状态栏显示异常的问题"
-    ],
-    "Mode Gelap": [
-      "Pengoptimalan: Peningkatan kecerahan dan warna untuk wallpaper dalam mode Gelap"
     ],
     "Bar status, Layar notiifikasi": [
       "修复 深色模式下部分场景状态栏显示异常的问题"
@@ -661,7 +710,7 @@
     "Wallpaper super": [
       "Perbaikan: Warna bilah status tidak ditampilkan dengan benar dalam mode Gelap"
     ],
-    "Peningkatan dan pengoptimalan lainnya": [
+    "Optimisasi dan penyesuaian lainnya": [
       "Baru: Mode baru untuk pemindaian dokumen",
       "Baru: Bingkai film"
     ]
@@ -689,6 +738,7 @@
       "Sửa: Trung tâm điều khiển không hiển thị đúng ở chế độ ngang"
     ],
     "Chế độ nền tối": [
+      "Tối ưu hóa: cải thiện tính năng làm mờ hình nền trong chế độ tối, tăng độ sáng và màu sắc của hình nền đã làm mờ",
       "Tối ưu: Cải thiện độ sáng và màu sắc cho hình nền ở Chế độ nền tối"
     ],
     "Thanh trạng thái, Thanh thông báo": [
@@ -706,6 +756,10 @@
       "Sửa: Màu của thanh trạng thái không hiển thị chính xác trên Chế độ nền tối"
     ],
     "Camera": [
+      "Mới: Chế độ mới để quét tài liệu",
+      "Mới: Khung phim"
+    ],
+    "Các tối ưu hóa và điều chỉnh khác": [
       "Mới: Chế độ mới để quét tài liệu",
       "Mới: Khung phim"
     ]
@@ -732,6 +786,7 @@
       "แก้ไข: ศูนย์ควบคุมไม่ได้แสดงอย่างถูกต้องทุกครั้งในโหมดแนวนอน"
     ],
     "โหมดมืด": [
+      "ปรับปรุง: ปรับปรุงฟีเจอร์หรี่วอลเปเปอร์ในโหมดมืด เพิ่มความสว่างและสีของวอลเปเปอร์ที่หรี่แล้ว",
       "การเพิ่มประสิทธิภาพ: ปรับปรุงความสว่างและสีของวอลเปเปอร์ในโหมดมืด"
     ],
     "แถบสถานะ, แถบแจ้งเตือน": [
@@ -747,6 +802,10 @@
     ],
     "สุดยอดภาพพื้นหลัง": [
       "แก้ไข: สีของแถบสถานะแสดงไม่ถูกต้องในโหมดมืด"
+    ],
+    "การปรับปรุงและปรับแต่งอื่นๆ": [
+      "ใหม่: โหมดใหม่สำหรับการสแกนเอกสาร",
+      "ใหม่: กรอบภาพยนตร์"
     ]
   },
   "logs_ar": {
@@ -778,12 +837,13 @@
       "التحسين: تصميم تخطيط مركز التحكم في الوضع الأفقي",
       "الإصلاح: لا يظهر مركز التحكم بشكل صحيح في الوضع الأفقي"
     ],
-    "وشريط الإشعارات، ومركز الإشعارات": [
-      "修复 深色模式下部分场景状态栏显示异常的问题"
-    ],
     "وضع الظلام": [
+      "تحسين: تحسين ميزة تعتيم الخلفية في الوضع الداكن، مع زيادة سطوع وألوان الخلفية المعتّمة",
       ":التحسين تحسين السطوع واللون لخلفيات الوضع الداكن",
       "التحسين: تحسين السطوع واللون لخلفيات الوضع الداكن"
+    ],
+    "وشريط الإشعارات، ومركز الإشعارات": [
+      "修复 深色模式下部分场景状态栏显示异常的问题"
     ],
     "شريط الحالة ومركز الإشعارات": [
       "修复 深色模式下部分场景状态栏显示异常的问题"
@@ -792,7 +852,7 @@
       ":الجديد وضع جديد لمسح المستندات ضوئيًا",
       ":الجديد إطار الفيلم"
     ],
-    "أخرى": [
+    "آخرين": [
       ":الجديد يمكنك السحب لأسفل من أعلى يسارالشاشة لفتح مركز الإشعارات، والسحب لأسفل من أعلى يمين الشاشة لفتح مركز التحكم",
       "تم تحديث تصحيح أمان الأندرويد إلى فبراير 2021. وتم زيادة أمان النظام."
     ],
@@ -804,6 +864,10 @@
       "الجديد: وضع جديد لمسح المستندات ضوئيًا",
       ":الجديد إطار الفيلم",
       ":الجديد وضع جديد لمسح المستندات ضوئيًا"
+    ],
+    "تحسينات وتعديلات أخرى": [
+      ":الجديد وضع جديد لمسح المستندات ضوئيًا",
+      ":الجديد إطار الفيلم"
     ]
   },
   "logs_in": {
@@ -819,7 +883,8 @@
       "नया मूवी फ़्रेम"
     ],
     "सिस्टम एनिमेशन": [
-      "ऑप्टिमाइज़ेशन चुने गए सीन्स में एनिमेशन"
+      "ऑप्टिमाइज़ेशन चुने गए सीन्स में एनिमेशन",
+      "कुछ परिदृश्यों में एनिमेशन की सहजता अनुकूलित की गई"
     ],
     "कंट्रोल सेंटर": [
       "नया सूचना शेड को खोलने के लिए ऊपरी बाएं कोने से और कंट्रोल सेंटर को खोलने के लिए ऊपरी दाएं कोने से नीचे की ओर स्वाइप करें",
@@ -828,6 +893,10 @@
       "ऑप्टिमाइज़ेशन लैंडस्केप मोड में कंट्रोल सेंटर लेआउट",
       "ठीक करें कंट्रोल सेंटर, लैंडस्केप मोड में को हमेशा सही ढंग से  नहीं दिखाता है",
       "अनुकूलन: कंट्रोल सेंटर अब आने वाली कॉल पर बंद हो जाता है"
+    ],
+    "डार्क मोड": [
+      "अनुकूलन: डार्क मोड में वॉलपेपर को मंद करने की सुविधा में सुधार, मंद किए गए वॉलपेपर की चमक और रंग बढ़ाए गए",
+      "ऑप्टिमाइज़ेशन डार्क मोड में वॉलपेपर के लिए चमक और रंग में सुधार"
     ],
     "स्टेटस बार, सूचना शेड": [
       "修复 深色模式下部分场景状态栏显示异常的问题"
@@ -838,9 +907,6 @@
       "नया दस्तावेजों को स्कैन करने के लिए एक नया मोड",
       "नया मूवी फ़्रेम"
     ],
-    "डार्क मोड": [
-      "ऑप्टिमाइज़ेशन डार्क मोड में वॉलपेपर के लिए चमक और रंग में सुधार"
-    ],
     "स्टेटस बार, नोटिफिकेशन शेड": [
       "修复 深色模式下部分场景状态栏显示异常的问题"
     ],
@@ -850,6 +916,10 @@
     ],
     "सुपर वॉलपेपर": [
       "Fix: Status bar colors weren't displayed correctly in the Dark mode"
+    ],
+    "अन्य अनुकूलन (Optimizations) एवं समायोजन (Adjustments)": [
+      "नया दस्तावेजों को स्कैन करने के लिए एक नया मोड",
+      "नया मूवी फ़्रेम"
     ]
   },
   "logs_ug": {
@@ -862,6 +932,9 @@
       "Optimization: Control center layout in landscape mode",
       "Fix: Control center wasn't always displayed correctly in landscape mode"
     ],
+    "System animations": [
+      "Optimization: Animations in selected scenes"
+    ],
     "Control center": [
       "New: Swipe down from the upper left corner to open Notification shade and from the upper right corner to open Control center",
       "New: Tapping a blank spot in Control center closes it now",
@@ -869,11 +942,12 @@
       "Optimization: Control center layout in landscape mode",
       "Fix: Control center wasn't always displayed correctly in landscape mode"
     ],
+    "Dark mode": [
+      "قاراڭغۇ ھالەتتىكى تام سۈرەتنى تۇتۇقلاشتۇرۇش ئىقتىدارىنى ياخشىلاش، تۇتۇقلاشتۇرۇلغان تام سۈرەتنىڭ يورۇقلۇقى ۋە رەڭگىنى ئاشۇرۇش",
+      "Optimization: Brightness and color improvements for wallpapers in Dark mode"
+    ],
     "Status bar, Notification shade": [
       "修复 深色模式下部分场景状态栏显示异常的问题"
-    ],
-    "Dark mode": [
-      "Optimization: Brightness and color improvements for wallpapers in Dark mode"
     ],
     "باشقىلىرى": [
       "New: Swipe down from the upper left corner to open Notification shade and from the upper right corner to open Control center",
@@ -882,7 +956,7 @@
     "Super wallpapers": [
       "Fix: Status bar colors weren't displayed correctly in the Dark mode"
     ],
-    "كامېرا": [
+    "فوتو ئاپپارات": [
       "New: A new mode for scanning documents",
       "New: Movie frame"
     ]
@@ -896,6 +970,9 @@
       "Optimization: Control center is now closed by incoming calls",
       "Optimization: Control center layout in landscape mode",
       "Fix: Control center wasn't always displayed correctly in landscape mode"
+    ],
+    "System animations": [
+      "Optimization: Animations in selected scenes"
     ],
     "Control center": [
       "New: Swipe down from the upper left corner to open Notification shade and from the upper right corner to open Control center",
@@ -926,7 +1003,7 @@
     "Super wallpapers": [
       "Fix: Status bar colors weren't displayed correctly in the Dark mode"
     ],
-    "པར་ཆས": [
+    "ཁ་མར།": [
       "New: A new mode for scanning documents",
       "New: Movie frame"
     ]

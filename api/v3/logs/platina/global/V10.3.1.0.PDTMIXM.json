@@ -31,7 +31,7 @@
       "修复 挂断电话慢问题",
       "修复 来电悬浮条和通话绿条同时存在情况"
     ],
-    "桌面": [
+    "主屏幕": [
       "修复 WhatsApp 桌面角标显示异常的问题"
     ]
   },
@@ -65,18 +65,22 @@
       "Fix: Ending calls took longer time than expected",
       "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
     ],
-    "Home screen": [
+    "desktop": [
       "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
     ]
   },
   "logs_zh_tw": {
+    "解鎖畫面、狀態欄、通知欄": [
+      "修復 低電量時呼吸燈不閃爍的問題",
+      "新增 螢幕鎖定畫面支援禁止下拉狀態欄",
+      "修復 橫向螢幕情況下低電量通知不懸浮顯示"
+    ],
     "時鐘": [
       "修復 計時器頁面按鈕點擊閃爍的問題",
       "修復 時鐘在特殊日期出現閃退的問題"
     ],
-    "設定": [
-      "優化 大字體介面的顯示效果",
-      "修復 下拉狀態欄開啟或關閉同步，同步介面不刷新問題"
+    "设置": [
+      "優化 大字體介面的顯示效果"
     ],
     "近期任務": [
       "優化 應用名稱的顯示長度，改良大字體的顯示效果"
@@ -94,16 +98,20 @@
       "修復 掛斷電話較慢的問題",
       "修復 來電懸浮條和通話綠條同時存在的情況"
     ],
-    "解鎖畫面、狀態欄、通知欄": [
-      "新增 螢幕鎖定畫面支援禁止下拉狀態欄",
-      "修復 橫向螢幕情況下低電量通知不懸浮顯示",
-      "修復 低電量時呼吸燈不閃爍的問題"
-    ],
     "桌面": [
       "修復 WhatsApp 桌面角標顯示異常的問題"
+    ],
+    "設定": [
+      "修復 下拉狀態欄開啟或關閉同步，同步介面不刷新問題"
     ]
   },
   "logs_ja": {
+    "ロック画面、ステータスバー、通知シェード": [
+      "低電力時に通知LEDが点滅しない問題を修正",
+      "新規: ロック画面で通知シェードを下にスワイプして開くことを禁止できるようになりました",
+      "修正: 横向きモードで低バッテリー警告が表示されない問題を修正",
+      "修正: バッテリー残量が少ないときに通知LEDが点滅しない不具合。"
+    ],
     "時計": [
       "タイマーページのボタンをタップした際に点滅する問題を修正",
       "特定の日付で時計が強制終了する問題を修正",
@@ -131,12 +139,7 @@
       "修正: 通話終了に想定より時間がかかる問題",
       "修正: 着信のフローティングバーと通話の緑色バーが同時に表示される問題。"
     ],
-    "ロック画面、ステータスバー、通知シェード": [
-      "新規: ロック画面で通知シェードを下にスワイプして開くことを禁止できるようになりました",
-      "修正: 横向きモードで低バッテリー警告が表示されない問題を修正",
-      "修正: バッテリー残量が少ないときに通知LEDが点滅しない不具合。"
-    ],
-    "ホーム画面": [
+    "デスクトップ": [
       "WhatsApp アイコンの通知バッジが正しく表示されない問題を修正しました。"
     ],
     "ゲーム高速化": [
@@ -144,6 +147,12 @@
     ]
   },
   "logs_ko": {
+    "잠금화면, 상태 바, 알림 바": [
+      "배터리 부족 시 알림 LED가 깜박이지 않는 문제 수정",
+      "새 기능: 잠금 화면에서 알림 패널을 아래로 내려 여는 것을 금지할 수 있습니다",
+      "수정: 가로 모드에서 배터리 부족 경고가 표시되지 않는 문제 수정",
+      "수정: 배터리가 부족할 때 알림 LED가 깜박이지 않던 버그."
+    ],
     "시계": [
       "타이머 페이지에서 버튼을 탭할 때 깜박이는 문제를 수정했습니다",
       "특정 날짜에 시계가 강제 종료되는 문제 수정",
@@ -171,12 +180,7 @@
       "수정: 통화 종료가 예상보다 오래 걸리는 문제",
       "수정: 수신 전화 플로팅 바와 통화 녹색 바가 동시에 표시되는 문제."
     ],
-    "잠금화면, 상태 바, 알림 바": [
-      "새 기능: 잠금 화면에서 알림 패널을 아래로 내려 여는 것을 금지할 수 있습니다",
-      "수정: 가로 모드에서 배터리 부족 경고가 표시되지 않는 문제 수정",
-      "수정: 배터리가 부족할 때 알림 LED가 깜박이지 않던 버그."
-    ],
-    "홈 화면": [
+    "데스크톱": [
       "WhatsApp 아이콘에 알림 배지가 잘못 표시되는 문제를 수정했습니다."
     ],
     "게임 속도 향상": [
@@ -184,6 +188,12 @@
     ]
   },
   "logs_ru": {
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Исправлено: светодиодный индикатор не мигал при низком заряде батареи",
+      "Новое: Теперь вы можете ограничить открытие Шторки уведомлений на экране блокировки",
+      "Исправлено: Предупреждение о низком уровне заряда аккумулятора не отображалось в ландшафтном режиме",
+      "Исправлено: LED индикатор не загорался при низком уровне заряда аккумулятора"
+    ],
     "Часы": [
       "Исправлено: Кнопка таймера начинала мигать после нажатия",
       "Исправлено: Некорректное завершение работы приложения Часы в определенные дни"
@@ -208,16 +218,17 @@
       "Исправлено: Завершение вызова выполнялось слишком долго",
       "Исправлено: Значки в строке состояния и всплывающее уведомление вызовов появлялись одновременно"
     ],
-    "Экран блокировки, строка состояния, шторка уведомлений": [
-      "Новое: Теперь вы можете ограничить открытие Шторки уведомлений на экране блокировки",
-      "Исправлено: Предупреждение о низком уровне заряда аккумулятора не отображалось в ландшафтном режиме",
-      "Исправлено: LED индикатор не загорался при низком уровне заряда аккумулятора"
-    ],
     "Рабочий стол": [
       "Исправлено: Уведомления на значке приложения WhatsApp отображались неправильно"
     ]
   },
   "logs_uk": {
+    "Екран блокування, рядок стану, панель сповіщень": [
+      "Виправлено: світлодіодний індикатор не блимав при низькому заряді батареї",
+      "Нове: додано підтримку заборони відкриття панелі сповіщень на екрані блокування",
+      "Виправлення: Попередження про низький заряд батареї не відображалося в альбомному режимі",
+      "Виправлено: світлодіод сповіщень не блимав, коли заряд батареї був низьким."
+    ],
     "Годинник": [
       "Виправлено: кнопка на сторінці таймера блимає після натискання",
       "Виправлено: Годинник аварійно завершував роботу в окремі дати",
@@ -246,16 +257,17 @@
       "Виправлено: завершення викликів тривало довше, ніж очікувалося",
       "Виправлено: плаваюча панель вхідного виклику та зелена смуга виклику відображалися одночасно."
     ],
-    "Екран блокування, рядок стану, панель сповіщень": [
-      "Нове: додано підтримку заборони відкриття панелі сповіщень на екрані блокування",
-      "Виправлення: Попередження про низький заряд батареї не відображалося в альбомному режимі",
-      "Виправлено: світлодіод сповіщень не блимав, коли заряд батареї був низьким."
-    ],
-    "Головний екран": [
+    "Робочий стіл": [
       "Виправлено: значки сповіщень неправильно відображалися на значку WhatsApp."
     ]
   },
   "logs_pl": {
+    "Ekran blokady, pasek powiadomień,panel powiadomień": [
+      "Naprawiono: dioda powiadomień nie migała przy niskim poziomie naładowania baterii",
+      "Nowość: można teraz zablokować otwieranie panelu powiadomień na ekranie blokady",
+      "Poprawka: Ostrzeżenie o niskim poziomie baterii nie wyświetlało się w trybie poziomym",
+      "Poprawka: dioda powiadomień nie migała przy niskim poziomie baterii."
+    ],
     "Zegar": [
       "Poprawka: przycisk na stronie minutnika miga po dotknięciu",
       "Naprawiono: Zegar ulegał awarii w określonych datach",
@@ -284,16 +296,17 @@
       "Naprawiono: Zakończenie połączeń trwało dłużej niż oczekiwano",
       "Poprawka: pływający pasek połączenia przychodzącego i zielony pasek połączenia wyświetlały się jednocześnie."
     ],
-    "Ekran blokady, pasek powiadomień,panel powiadomień": [
-      "Nowość: można teraz zablokować otwieranie panelu powiadomień na ekranie blokady",
-      "Poprawka: Ostrzeżenie o niskim poziomie baterii nie wyświetlało się w trybie poziomym",
-      "Poprawka: dioda powiadomień nie migała przy niskim poziomie baterii."
-    ],
-    "Ekran główny": [
+    "Biurko": [
       "Naprawiono: odznaki powiadomień były nieprawidłowo wyświetlane na ikonie WhatsApp."
     ]
   },
   "logs_de": {
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
+      "Fehler behoben: Benachrichtigungs-LED blinkte bei niedrigem Akkustand nicht",
+      "Neu: Öffnen der Benachrichtigungsleiste auf dem Sperrbildschirm kann jetzt gesperrt werden",
+      "Behebung: Warnung bei niedrigem Akkustand wurde im Querformat nicht angezeigt",
+      "Fehler behoben: Benachrichtigungs-LED blinkte bei niedrigem Akkustand nicht."
+    ],
     "Uhr": [
       "Behebung: Schaltfläche auf der Timer-Seite blinkt nach dem Antippen",
       "Behoben: Uhr stürzte an bestimmten Daten ab",
@@ -322,16 +335,17 @@
       "Behoben: Anrufe beenden dauerte länger als erwartet",
       "Behebung: Die schwebende Leiste für eingehende Anrufe und der grüne Anrufbalken wurden gleichzeitig angezeigt."
     ],
-    "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
-      "Neu: Öffnen der Benachrichtigungsleiste auf dem Sperrbildschirm kann jetzt gesperrt werden",
-      "Behebung: Warnung bei niedrigem Akkustand wurde im Querformat nicht angezeigt",
-      "Fehler behoben: Benachrichtigungs-LED blinkte bei niedrigem Akkustand nicht."
-    ],
     "Startbildschirm": [
       "Behoben: Benachrichtigungs-Badges wurden auf dem WhatsApp-Symbol falsch angezeigt."
     ]
   },
   "logs_fr": {
+    "Écran de verrouillage, Barre d'état, Panneau de notification": [
+      "Correction : la LED de notification ne clignotait pas lorsque la batterie était faible",
+      "Nouveau : il est désormais possible d’interdire l’ouverture du panneau de notifications sur l’écran de verrouillage",
+      "Correction : L'avertissement de batterie faible ne s'affichait pas en mode paysage",
+      "Correction : la LED de notification ne clignotait pas lorsque la batterie était faible."
+    ],
     "Horloge": [
       "Correction : le bouton de la page Minuteur clignote après un appui",
       "Correction : l'horloge plantait à certaines dates",
@@ -359,12 +373,7 @@
       "Correction : la fin des appels prenait plus de temps que prévu",
       "Correction : la barre flottante d’appel entrant et la barre verte d’appel s’affichaient en même temps."
     ],
-    "Écran de verrouillage, Barre d'état, Panneau de notification": [
-      "Nouveau : il est désormais possible d’interdire l’ouverture du panneau de notifications sur l’écran de verrouillage",
-      "Correction : L'avertissement de batterie faible ne s'affichait pas en mode paysage",
-      "Correction : la LED de notification ne clignotait pas lorsque la batterie était faible."
-    ],
-    "Écran d'accueil": [
+    "Bureau": [
       "Correction : les badges de notification s’affichaient incorrectement sur l’icône WhatsApp."
     ],
     "Accélération des jeux": [
@@ -372,6 +381,12 @@
     ]
   },
   "logs_it": {
+    "Schermata di blocco, barra di stato, area delle notifiche": [
+      "Risolto: il LED di notifica non lampeggiava con batteria scarica",
+      "Nuovo: È ora possibile limitare l'apertura dell'area delle notifiche sulla schermata di blocco",
+      "Risolto: Gli avvisi di batteria scarica non apparivano in modalità Orizzontale",
+      "Risolto: Il LED non si illuminava quando la batteria era scarica"
+    ],
     "Orologio": [
       "Risolvi: Il pulsante del timer cominciava a lampeggiare quando veniva premuto",
       "Risolvi: Chiusura forzata di Orologio in alcune date specifiche",
@@ -398,25 +413,25 @@
       "Risolto: Terminare le chiamate richiedeva più tempo del previsto",
       "Risolto: I collegamenti della barra di stato e le notifiche a comparsa per le chiamate apparivano contemporaneamente"
     ],
-    "Schermata di blocco, barra di stato, area delle notifiche": [
-      "Nuovo: È ora possibile limitare l'apertura dell'area delle notifiche sulla schermata di blocco",
-      "Risolto: Gli avvisi di batteria scarica non apparivano in modalità Orizzontale",
-      "Risolto: Il LED non si illuminava quando la batteria era scarica"
-    ],
-    "Schermata Home": [
+    "Desktop": [
       "Risolto: I badge di notifica erano visualizzati in modo errato sull'icona di WhatsApp"
     ]
   },
   "logs_es": {
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Corrección: el LED de notificaciones no parpadeaba cuando la batería estaba baja",
+      "Nuevo: Ahora puedes restringir abrir la Barra de notificaciones en la Pantalla de bloqueo",
+      "Reparado: El aviso de batería baja no apareció en el Modo paisaje",
+      "Reparado: La luz LED no parpadeó cuando la batería estaba baja"
+    ],
     "Reloj": [
       "Reparar: El botón del temporizador comenzó a parpadear después de ser pulsado",
       "Reparar: Cierre forzoso del Reloj en algunas fechas específicas",
       "Reparado: El botón del temporizador comenzó a parpadear después de ser pulsado",
       "Reparado: Cierre forzoso del Reloj en algunas fechas específicas"
     ],
-    "Ajustes": [
-      "Optimización: Las fuentes grandes ahora se muestran mejor",
-      "Reparado: La página de sincronización no pudo ser refrescada cuando la sincronización fue activada o desactivada en la Barra de notificaciones"
+    "Configuración": [
+      "Optimización: Las fuentes grandes ahora se muestran mejor"
     ],
     "Recientes": [
       "Optimización: Los nombres de aplicaciones fueron reducidos cuando el tamaño del texto fue establecido como grande"
@@ -434,16 +449,20 @@
       "Reparado: Terminar las llamadas llevó más tiempo de lo esperado",
       "Reparado: El acceso directo a la Barra de estado y notificaciones flotantes para llamadas aparecieron al mismo tiempo"
     ],
-    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
-      "Nuevo: Ahora puedes restringir abrir la Barra de notificaciones en la Pantalla de bloqueo",
-      "Reparado: El aviso de batería baja no apareció en el Modo paisaje",
-      "Reparado: La luz LED no parpadeó cuando la batería estaba baja"
-    ],
-    "Pantalla de inicio": [
+    "Escritorio": [
       "Reparado: Los iconos de notificaciones fueron mostrados de forma incorrecta en el icono de WhatsApp"
+    ],
+    "Ajustes": [
+      "Reparado: La página de sincronización no pudo ser refrescada cuando la sincronización fue activada o desactivada en la Barra de notificaciones"
     ]
   },
   "logs_pt": {
+    "Tela de bloqueio, Barra de status e Área de notificações": [
+      "Correção: o LED de notificação não piscava quando a bateria estava fraca",
+      "Novo: agora é possível impedir a abertura do painel de notificações na tela de bloqueio",
+      "Correção: O aviso de bateria fraca não aparecia no modo paisagem",
+      "Correção: o LED de notificação não piscava quando a bateria estava fraca."
+    ],
     "Relógio": [
       "Correção: o botão da página do temporizador pisca ao ser tocado",
       "Correção: o Relógio fechava à força em datas específicas",
@@ -472,16 +491,17 @@
       "Correção: encerrar chamadas demorava mais do que o esperado",
       "Correção: a barra flutuante de chamada recebida e a barra verde de chamada apareciam ao mesmo tempo."
     ],
-    "Tela de bloqueio, Barra de status e Área de notificações": [
-      "Novo: agora é possível impedir a abertura do painel de notificações na tela de bloqueio",
-      "Correção: O aviso de bateria fraca não aparecia no modo paisagem",
-      "Correção: o LED de notificação não piscava quando a bateria estava fraca."
-    ],
     "Ecrã inicial": [
       "Correção: os badges de notificação eram exibidos incorretamente no ícone do WhatsApp."
     ]
   },
   "logs_tr": {
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Düzeltme: Pil düşükken bildirim LED'i yanıp sönmüyordu",
+      "Yeni: Kilit ekranında Bildirim çubuğunun açılmasını kısıtlayabilirsiniz",
+      "Onarım: Manzara modunda düşük pil uyarıları gösterilmedi",
+      "Onarım: Pil seviyesi düşükken LED ışık yanıp sönmedi"
+    ],
     "Saat": [
       "Onar: Zamanlayıcı tuşu, dokunulduktan sonra yanmaya başladı",
       "Onar: Saat, belirli tarihlerde kapanmaya zorlandı",
@@ -508,16 +528,17 @@
       "Onarım: Aramaları sonlandırmak beklenenden daha uzun sürdü",
       "Onarım: Durum çubuğu kısayolu ve aramalar için kayan bildirimler aynı anda belirdi"
     ],
-    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
-      "Yeni: Kilit ekranında Bildirim çubuğunun açılmasını kısıtlayabilirsiniz",
-      "Onarım: Manzara modunda düşük pil uyarıları gösterilmedi",
-      "Onarım: Pil seviyesi düşükken LED ışık yanıp sönmedi"
-    ],
-    "Ana ekran": [
+    "Masaüstü": [
       "Onarım: Bildirim rozetleri WhatsApp simgesinde yanlış görüntülendi"
     ]
   },
   "logs_id": {
+    "Layar kunci, bar status, layar notifikasi": [
+      "Perbaikan: LED notifikasi tidak berkedip saat baterai lemah",
+      "Baru: Dukungan untuk mencegah membuka panel notifikasi di layar kunci",
+      "Perbaikan: Peringatan baterai lemah tidak muncul dalam mode lanskap",
+      "Perbaikan: Lampu notifikasi tidak berkedip saat baterai lemah."
+    ],
     "Jam": [
       "Perbaikan: tombol di halaman pengatur waktu berkedip saat diketuk",
       "Perbaikan: Jam mengalami force close pada tanggal tertentu",
@@ -545,12 +566,7 @@
       "Perbaikan: Mengakhiri panggilan membutuhkan waktu lebih lama dari yang diharapkan",
       "Perbaikan: Bilah mengambang panggilan masuk dan bilah hijau panggilan muncul bersamaan."
     ],
-    "Layar kunci, bar status, layar notifikasi": [
-      "Baru: Dukungan untuk mencegah membuka panel notifikasi di layar kunci",
-      "Perbaikan: Peringatan baterai lemah tidak muncul dalam mode lanskap",
-      "Perbaikan: Lampu notifikasi tidak berkedip saat baterai lemah."
-    ],
-    "Layar Utama": [
+    "Desktop": [
       "Perbaikan: Lencana notifikasi ditampilkan secara tidak benar pada ikon WhatsApp."
     ],
     "Pemercepat game": [
@@ -558,6 +574,12 @@
     ]
   },
   "logs_vi": {
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Đã sửa: đèn LED thông báo không nhấp nháy khi pin yếu",
+      "Mới: Hỗ trợ chặn kéo xuống bảng thông báo trên màn hình khóa",
+      "Sửa lỗi: Cảnh báo pin yếu không hiển thị ở chế độ ngang",
+      "Sửa lỗi: đèn thông báo không nhấp nháy khi pin yếu."
+    ],
     "Đồng hồ": [
       "Sửa lỗi: nút trên trang hẹn giờ nhấp nháy khi được nhấn",
       "Sửa lỗi: Đồng hồ bị buộc dừng vào một số ngày cụ thể",
@@ -586,16 +608,17 @@
       "Đã sửa: Việc kết thúc cuộc gọi mất nhiều thời gian hơn dự kiến",
       "Sửa: Thanh nổi cuộc gọi đến và thanh màu xanh cuộc gọi xuất hiện cùng lúc."
     ],
-    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
-      "Mới: Hỗ trợ chặn kéo xuống bảng thông báo trên màn hình khóa",
-      "Sửa lỗi: Cảnh báo pin yếu không hiển thị ở chế độ ngang",
-      "Sửa lỗi: đèn thông báo không nhấp nháy khi pin yếu."
-    ],
     "Màn hình chính": [
       "Sửa lỗi: huy hiệu thông báo hiển thị không chính xác trên biểu tượng WhatsApp."
     ]
   },
   "logs_th": {
+    "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
+      "แก้ไข: ไฟ LED แจ้งเตือนไม่กะพริบเมื่อแบตเตอรี่ต่ำ",
+      "ใหม่: รองรับการห้ามเลื่อนลงเพื่อเปิดแผงการแจ้งเตือนบนหน้าจอล็อก",
+      "แก้ไข: คำเตือนแบตเตอรี่ต่ำไม่แสดงในโหมดแนวนอน",
+      "แก้ไข: ไฟแจ้งเตือนไม่กะพริบเมื่อแบตเตอรี่ต่ำ"
+    ],
     "นาฬิกา": [
       "แก้ไขปัญหาปุ่มในหน้าตัวจับเวลากระพริบเมื่อแตะ",
       "แก้ไขปัญหานาฬิกาหยุดทำงานในวันที่เฉพาะเจาะจง",
@@ -623,12 +646,7 @@
       "แก้ไข: การวางสายใช้เวลานานกว่าที่คาดไว้",
       "แก้ไข: แถบลอยของการโทรเข้าและแถบสีเขียวของการโทรแสดงพร้อมกัน"
     ],
-    "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
-      "ใหม่: รองรับการห้ามเลื่อนลงเพื่อเปิดแผงการแจ้งเตือนบนหน้าจอล็อก",
-      "แก้ไข: คำเตือนแบตเตอรี่ต่ำไม่แสดงในโหมดแนวนอน",
-      "แก้ไข: ไฟแจ้งเตือนไม่กะพริบเมื่อแบตเตอรี่ต่ำ"
-    ],
-    "หน้าจอหลัก": [
+    "โต๊ะทำงาน": [
       "แก้ไข: การแสดงสัญลักษณ์การแจ้งเตือนบนไอคอน WhatsApp ไม่ถูกต้อง"
     ],
     "เพิ่มความเร็วเกม": [
@@ -636,6 +654,12 @@
     ]
   },
   "logs_ar": {
+    "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
+      "إصلاح: لم يكن ضوء LED للإشعارات يومض عند انخفاض البطارية",
+      "جديد: دعم منع سحب لوحة الإشعارات على شاشة القفل",
+      "إصلاح: إشعار انخفاض البطارية لم يظهر في الوضع الأفقي",
+      "إصلاح: لم يكن مؤشر الإشعارات يومض عند انخفاض البطارية."
+    ],
     "الساعة": [
       "إصلاح مشكلة وميض زر صفحة المؤقت عند النقر عليه",
       "إصلاح مشكلة تعطل تطبيق الساعة في تواريخ محددة"
@@ -661,12 +685,7 @@
       "إصلاح: استغرق إنهاء المكالمات وقتًا أطول من المتوقع",
       "إصلاح: ظهور شريط المكالمة العائم والشريط الأخضر للمكالمة في الوقت نفسه."
     ],
-    "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
-      "جديد: دعم منع سحب لوحة الإشعارات على شاشة القفل",
-      "إصلاح: إشعار انخفاض البطارية لم يظهر في الوضع الأفقي",
-      "إصلاح: لم يكن مؤشر الإشعارات يومض عند انخفاض البطارية."
-    ],
-    "الشاشة الرئيسية": [
+    "سطح المكتب": [
       "إصلاح: عرض شارات الإشعارات بشكل غير صحيح على أيقونة WhatsApp"
     ],
     "ساعة": [
@@ -678,6 +697,12 @@
     ]
   },
   "logs_in": {
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
+      "ठीक किया गया: कम बैटरी होने पर सूचना LED नहीं टिमटिमाती थी",
+      "नया: लॉक स्क्रीन पर नोटिफ़िकेशन शेड को नीचे खींचकर खोलने से रोकें",
+      "ठीक करें: लैंडस्केप मोड में कम बैटरी चेतावनी प्रदर्शित नहीं हुई",
+      "ठीक किया गया: बैटरी कम होने पर सूचना LED नहीं ब्लिंक होती थी।"
+    ],
     "घड़ी": [
       "टाइमर पेज पर बटन टैप करने पर झिलमिलाने की समस्या ठीक की गई",
       "कुछ खास तारीखों पर घड़ी के क्रैश होने की समस्या ठीक की गई",
@@ -705,12 +730,7 @@
       "ठीक किया गया: कॉल समाप्त करने में अपेक्षा से अधिक समय लगा",
       "फ़िक्स: इनकमिंग कॉल फ़्लोटिंग बार और कॉल ग्रीन बार का एक ही समय पर दिखना।"
     ],
-    "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
-      "नया: लॉक स्क्रीन पर नोटिफ़िकेशन शेड को नीचे खींचकर खोलने से रोकें",
-      "ठीक करें: लैंडस्केप मोड में कम बैटरी चेतावनी प्रदर्शित नहीं हुई",
-      "ठीक किया गया: बैटरी कम होने पर सूचना LED नहीं ब्लिंक होती थी।"
-    ],
-    "होम स्क्रीन": [
+    "डेस्कटॉप": [
       "WhatsApp आइकन पर नोटिफ़िकेशन बैज गलत तरीके से दिखने की समस्या ठीक की गई।"
     ],
     "गेम स्पीड बूस्टर": [
@@ -718,6 +738,12 @@
     ]
   },
   "logs_ug": {
+    "Lockscreen, status bar, Notification shade": [
+      "باتارېيە تۆۋەن بولغاندا LED چىرىقىنىڭ چاقماسلىق مەسىلىسى تۈزىتىلدى",
+      "يېڭى: قۇلۇپ ئېكرانى بېتىدە ئۇقتۇرۇش تاختىسىنى تۆۋەن تارتىشنى چەكلەشنى قوللايدۇ",
+      "تۈزىتىش: يان ئېكران ھالىتىدە تۆۋەن باتارېيە ئۇقتۇرۇشى لەۋلەپ كۆرۈنمەيدىغان مەسىلە تۈزىتىلدى.",
+      "تۈزىتىش: باتارېيە تۆۋەن بولغاندا LED چىرىغى يېنىپ-ئۆچمەيدىغان خاتالىق تۈزىتىلدى"
+    ],
     "سائەت": [
       "تایمېر بېتىدىكى كۇنۇپكىنى باسقاندا پارقىراش مەسىلىسىنى تۈزەت",
       "سائەت ئالاھىدە چېسلاردا مەجبۇرىي تاقىلىپ قېلىش مەسىلىسى تۈزىتىلدى",
@@ -745,12 +771,7 @@
       "قوڭغۇراقنى ئۈزۈش ئاستا بولۇش مەسىلىسىنى تۈزىتىش",
       "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "يېڭى: قۇلۇپ ئېكرانى بېتىدە ئۇقتۇرۇش تاختىسىنى تۆۋەن تارتىشنى چەكلەشنى قوللايدۇ",
-      "تۈزىتىش: يان ئېكران ھالىتىدە تۆۋەن باتارېيە ئۇقتۇرۇشى لەۋلەپ كۆرۈنمەيدىغان مەسىلە تۈزىتىلدى.",
-      "تۈزىتىش: باتارېيە تۆۋەن بولغاندا LED چىرىغى يېنىپ-ئۆچمەيدىغان خاتالىق تۈزىتىلدى"
-    ],
-    "باش ئېكران": [
+    "ئۈستەل يۈزى": [
       "WhatsApp سىنبەلگىسىدىكى ئۇقتۇرۇش بەلگىسىنىڭ خاتا كۆرسىتىلىش مەسىلىسى تۈزىتىلدى."
     ],
     "تەڭشەكلەر": [
@@ -788,7 +809,7 @@
       "Fix: Low battery warning didn't appear in landscape mode",
       "གློག་ནུས་དམའ་བའི་སྐབས་སུ་དབུགས་འབྱིན་འོད་མི་འཚེར་བའི་སྐྱོན་བཅོས་བྱས་པ།"
     ],
-    "Home screen": [
+    "ཅོག་ངོས": [
       "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
     ],
     "ཆུ་ཚོད": [

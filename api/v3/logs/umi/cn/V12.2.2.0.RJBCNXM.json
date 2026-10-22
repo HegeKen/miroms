@@ -25,129 +25,436 @@
     ]
   },
   "logs_en": {
+    "Documents": [
+      "Added a floating feature panel with quick collapse/expand. Portrait view offers rich features; landscape provides the best reading experience.",
+      "Added one-tap \"Export to PDF\" for documents, spreadsheets, and PDFs",
+      "Added casting for Documents/Spreadsheets/PDF",
+      "Added PPT/PDF thumbnail feature for quicker page navigation",
+      "Added screen rotation prompt toggle",
+      "Optimized APK size and runtime storage space for this version"
+    ],
     "System": [
       "Updated Android Security Patch to October 2020. Increased system security.",
       "基于Android 11 深度定制的MIUI稳定版发布",
       "Optimization: Improved charging experience in certain situations"
+    ],
+    "Camera": [
+      "New: New templates for vlogs",
+      "New: Vlogs can be now saved as drafts",
+      "New: 3 new AI watermarks",
+      "Optimized: integrated the 8K video feature entry in recording mode into the top menu bar.",
+      "Optimization: New vlog templates and presets will be available for downloading from the cloud from now on",
+      "Optimized the new device model watermark",
+      "Optimized: After adjusting the zoom ratio for each camera feature, the zoom ratio is kept unchanged when reopening the camera within 30 seconds, switching back from Gallery, or opening the camera from the lock screen."
     ]
   },
   "logs_zh_tw": {
+    "超級文件檔案管理": [
+      "新增 懸浮功能面板，支援快速收起展開。直向顯示功能豐富，橫向閱讀體驗最佳。",
+      "新增 文件/試算表/PDF 一鍵【匯出PDF】功能",
+      "新增 文件/試算表/PDF【投放】功能",
+      "新增 PPT/PDF【縮圖】功能，跳轉頁面更快捷",
+      "新增 旋轉螢幕提示切換功能",
+      "最佳化 版本 APK 體積與執行時儲存空間"
+    ],
     "系統": [
       "更新Android安全性修補程式等級（2020#10），提升系統安全性",
       "新增: 從螢幕右上角下滑，喚出全新控制中心",
       "優化: 提升部份場景充電體驗"
+    ],
+    "相機": [
+      "新增: VLOG模式新增「故事」「節奏」兩個模板",
+      "新增: VLOG模式支援草稿箱功能，可以將目前拍攝進度儲存至草稿箱",
+      "新增: AI浮水印增加3款地點浮水印與經緯度浮水印",
+      "優化 錄影模式 8K 影片功能入口整合至頂部選單列中",
+      "優化: VLOG模式升級為雲端下載運作資料庫及模版資源，後續VLOG新模版將通過雲端推送",
+      "優化 新版機型浮水印",
+      "優化 使用者調整相機中各功能的變焦倍率後，30秒內再次開啟相機、由相簿切換回相機、鎖屏介面開啟相機時，保持變焦倍率不變"
     ]
   },
   "logs_ja": {
+    "ドキュメント": [
+      "フローティング機能パネルを追加し、すばやい折りたたみ/展開に対応。縦画面では機能が豊富で、横画面では最高の読書体験を提供します。",
+      "文書/表計算/PDF のワンタップ【PDF出力】機能を追加",
+      "ドキュメント/スプレッドシート/PDF のキャスト機能を追加",
+      "PPT/PDFのサムネイル機能を追加し、ページ移動がよりスムーズになりました",
+      "画面回転のヒント切り替え機能を追加",
+      "バージョン APK のサイズと実行時ストレージ容量を最適化"
+    ],
     "システム": [
       "Androidのセキュリティパッチを2020年10月にアップデートしました。システムのセキュリティを強化しました。",
       "新機能: 画面の右上から下にスワイプして、コントロールセンターを開きます。",
       "最適化: 特定の状況での充電エクスペリエンスの向上"
+    ],
+    "カメラ": [
+      "新機能: Vlog用の新しいテンプレート",
+      "新機能: Vlogを下書きとして保存できるようになりました",
+      "新機能: 3つの新しいAIウォーターマーク",
+      "最適化: 動画撮影モードの8Kビデオ機能入口を上部メニューバーに統合。",
+      "最適化: 新しいVlogテンプレートとプリセットがクラウドからダウンロードできるようになりました",
+      "新しい機種のウォーターマークを最適化",
+      "最適化: カメラの各機能のズーム倍率を調整した後、30秒以内にカメラを再度開く場合、ギャラリーからカメラに戻る場合、ロック画面からカメラを開く場合に、ズーム倍率を維持するようになりました。"
     ]
   },
   "logs_ko": {
+    "문서": [
+      "플로팅 기능 패널을 추가했으며 빠른 접기/펼치기를 지원합니다. 세로 화면에서는 기능이 풍부하고, 가로 화면에서는 최상의 읽기 경험을 제공합니다.",
+      "문서/스프레드시트/PDF 원터치 [PDF 내보내기] 기능 추가",
+      "문서/스프레드시트/PDF 캐스팅 기능 추가",
+      "PPT/PDF 썸네일 기능을 추가해 페이지 이동이 더 빨라졌습니다",
+      "화면 회전 안내 전환 기능 추가",
+      "버전 APK 크기 및 런타임 저장 공간 최적화"
+    ],
     "시스템": [
       "Android 보안패치 (2020#10) 업데이트됨. 시스템 보안이 향상되었습니다.",
       "New: 화면 상단 우측 가장자리에서 아래로 스와이프하여 제어 센터를 여십시오.",
       "최적화: 특정 상황에서의 충전 경험 향상"
+    ],
+    "카메라": [
+      "New: Vlog를 위한 새 탬플릿",
+      "New: Vlog를 작성 중인 글로 저장 가능",
+      "New: 3개의 새로운 AI 워터마크",
+      "최적화: 녹화 모드의 8K 비디오 기능 진입점을 상단 메뉴 표시줄에 통합.",
+      "최적화: 클라우드에서 새로운 Vlog 템플릿 및 사전 설정을 다운로드 가능",
+      "새로운 기기 모델 워터마크 최적화",
+      "최적화: 카메라의 각 기능에서 줌 배율을 조정한 후 30초 이내에 카메라를 다시 열거나, 갤러리에서 카메라로 전환하거나, 잠금 화면에서 카메라를 열 때 줌 배율이 유지됩니다."
     ]
   },
   "logs_ru": {
+    "Документы": [
+      "Добавлена плавающая панель функций с быстрым сворачиванием/разворачиванием. В портретном режиме — богатый набор функций, в альбомном — лучший опыт чтения.",
+      "Добавлена функция экспорта в PDF одним нажатием для документов, таблиц и PDF",
+      "Добавлена функция трансляции документов/таблиц/PDF",
+      "Добавлена функция миниатюр PPT/PDF для более быстрого перехода по страницам",
+      "Добавлена функция переключения подсказки поворота экрана",
+      "Оптимизированы размер APK версии и пространство хранилища во время выполнения"
+    ],
     "Система": [
       "Обновление системы безопасности Android (октябрь 2020 года). Улучшена безопасность системы.",
       "Новое: Проведите вниз от правого верхнего угла вашего экрана, чтобы открыть Центр управления.",
       "Оптимизация: Улучшение процесса зарядки в некоторых ситуациях"
+    ],
+    "Камера": [
+      "Новое: Новые шаблоны для видеоблогов",
+      "Новое: Теперь вы можете сохранять видеоблоги в качестве черновиков",
+      "Новое: 3 новых водяных знака AI",
+      "Оптимизировано: вход в функцию 8K-видео в режиме записи интегрирован в верхнюю строку меню.",
+      "Оптимизация: Теперь новые шаблоны для режима \"Видеоблог\" доступны для загрузки из облака",
+      "Оптимизирован водяной знак новой модели устройства",
+      "Оптимизация: после изменения кратности зума для функций камеры кратность зума сохраняется при повторном открытии камеры в течение 30 секунд, возврате из галереи и открытии камеры с экрана блокировки."
     ]
   },
   "logs_uk": {
+    "Документи": [
+      "Додано плаваючу панель функцій із швидким згортанням/розгортанням. У портретному режимі — багато функцій, в альбомному — найкращий досвід читання.",
+      "Додано функцію експорту в PDF одним дотиком для документів, таблиць і PDF",
+      "Додано функцію трансляції документів/таблиць/PDF",
+      "Додано функцію мініатюр PPT/PDF для швидшого переходу між сторінками",
+      "Додано функцію перемикання підказки повороту екрана",
+      "Оптимізовано розмір APK версії та сховище під час виконання"
+    ],
     "Система": [
       "Оновлено патч безпеки Android за жовтень 2020 року. Збільшено безпеку системи.",
       "Нове: Проведіть вниз від верхнього правого кутка вашого екрану, щоб відкрити Центр керування.",
       "Оптимізація: Покращення процесу заряджання у певних ситуаціях"
+    ],
+    "Камера": [
+      "Нове: Нові шаблони для відеоблогів",
+      "Нове: Тепер ви можете зберігати відеоблоги в якості чернеток",
+      "Нове: 3 нових водяних знака AI",
+      "Оптимізовано: вхід до функції 8K-відео в режимі запису інтегровано у верхнє меню.",
+      "Оптимізація: Тепер нові шаблони для режиму \"Відеоблог\" доступні для завантаження із хмари",
+      "Оптимізовано водяний знак нової моделі пристрою",
+      "Оптимізація: після зміни кратності зуму для функцій камери кратність зуму зберігається під час повторного відкриття камери протягом 30 секунд, повернення з галереї та відкриття камери з екрана блокування."
     ]
   },
   "logs_pl": {
+    "Dokumenty": [
+      "Dodano pływający panel funkcji z szybkim zwijaniem/rozwijaniem. W orientacji pionowej bogate funkcje, w poziomej najlepsze doświadczenie czytania.",
+      "Dodano funkcję jednokrotnego eksportu do PDF dla dokumentów, arkuszy i plików PDF",
+      "Dodano funkcję rzutowania dokumentów/arkuszy/PDF",
+      "Dodano funkcję miniatur PPT/PDF, aby szybciej przechodzić między stronami",
+      "Dodano funkcję przełączania monitu obrotu ekranu",
+      "Zoptymalizowano rozmiar APK wersji i przestrzeń dyskową w czasie działania"
+    ],
     "System": [
       "Zaktualizowano Pakiet Bezpieczeństwa Android do października 2020 r. Zwiększono bezpieczeństwo systemu.",
       "Nowe: Przesuń w dół od prawego górnego rogu ekranu, aby otworzyć Centrum kontroli.",
       "Zoptymalizowano: Ulepszony komfort ładowania w niektórych sytuacjach"
+    ],
+    "Aparat": [
+      "Nowe: Nowe szablony vlogów",
+      "Nowe: Vlogi można teraz zapisywać jako wersje robocze",
+      "Nowe: 3 nowe znaki wodne SI",
+      "Zoptymalizowano: wejście do funkcji wideo 8K w trybie nagrywania zintegrowano z górnym paskiem menu.",
+      "Zoptymalizowano: Od teraz nowe szablony i ustawienia wideoblogów będą dostępne do pobrania z chmury",
+      "Zoptymalizowano znak wodny nowego modelu urządzenia",
+      "Optymalizacja: po dostosowaniu powiększenia zoomu dla funkcji aparatu zoom pozostaje bez zmian przy ponownym otwarciu aparatu w ciągu 30 sekund, powrocie z Galerii lub otwarciu aparatu z ekranu blokady."
     ]
   },
   "logs_de": {
+    "Dokumente": [
+      "Neue schwebende Funktionsleiste hinzugefügt, schnelles Ein-/Ausklappen möglich. Im Hochformat viele Funktionen, im Querformat bestes Leseerlebnis.",
+      "Ein-Klick-„Als PDF exportieren“ für Dokumente, Tabellen und PDFs hinzugefügt",
+      "Casting-Funktion für Dokumente/Tabellen/PDF hinzugefügt",
+      "PPT/PDF-Miniaturansicht hinzugefügt für schnellere Seitennavigation",
+      "Funktion zum Umschalten des Bildschirmdrehungs-Hinweises hinzugefügt",
+      "APK-Größe der Version und Speicherplatz zur Laufzeit optimiert"
+    ],
     "System": [
       "Android-Sicherheitspatch auf Oktober 2020 aktualisiert. Systemsicherheit erhöht.",
       "Neu: Wische von der oberen rechten Ecke des Bildschirms nach unten, um das Kontrollzentrum zu öffnen.",
       "Optimization: Improved charging experience in certain situations"
+    ],
+    "Kamera": [
+      "Neu: Neue Vorlagen für Vlogs",
+      "Neu: Vlogs können jetzt als Entwürfe gespeichert werden",
+      "Neu: 3 neue KI-Wasserzeichen",
+      "Optimiert: Der Zugang zur 8K-Videofunktion im Aufnahmemodus wurde in die obere Menüleiste integriert.",
+      "Optimierung: Neue Vlog-Vorlagen und -Presets können ab sofort aus der Cloud heruntergeladen werden",
+      "Neues Gerätemodell-Wasserzeichen optimiert",
+      "Optimierung: Nach dem Anpassen der Zoomstufe für Kamerafunktionen bleibt die Zoomstufe unverändert, wenn die Kamera innerhalb von 30 Sekunden erneut geöffnet, aus der Galerie zurückgewechselt oder vom Sperrbildschirm aus geöffnet wird."
     ]
   },
   "logs_fr": {
+    "Documents": [
+      "Ajout d'un panneau de fonctions flottant, avec repli/déploiement rapide. En portrait, fonctions riches ; en paysage, meilleure expérience de lecture.",
+      "Ajout de l'export PDF en un clic pour les documents, feuilles de calcul et PDF",
+      "Ajout de la fonction de diffusion pour documents/feuilles de calcul/PDF",
+      "Ajout des miniatures PPT/PDF pour une navigation plus rapide entre les pages",
+      "Ajout de la fonction de bascule de l’invite de rotation de l’écran",
+      "Optimisation de la taille de l’APK de la version et de l’espace de stockage à l’exécution"
+    ],
     "Système": [
       "Patch de Sécurité Android mis à jour pour octobre 2020. Amélioration du système de sécurité.",
       "Nouveau: Glissez vers le bas depuis le coin supérieur droit de votre écran pour ouvrir le Centre de contrôle.",
       "Optimisation: Expérience de charge améliorée dans certaines situations"
+    ],
+    "Appareil photo": [
+      "Nouveau: Nouveaux modèles pour les vlogs",
+      "Nouveau: Les Vlogs peuvent maintenant être enregistrés en tant que brouillons",
+      "Nouveau: 3 nouveaux filigranes IA",
+      "Optimisé : l'accès à la fonction vidéo 8K en mode enregistrement est intégré à la barre de menus supérieure.",
+      "Optimisation: De nouveaux modèles et préréglages de vlog seront désormais disponibles pour téléchargement à partir du Cloud",
+      "Optimisation du filigrane du nouveau modèle d'appareil",
+      "Optimisation : après ajustement du zoom de chaque fonction de l'appareil photo, le zoom reste inchangé lors de la réouverture de l'appareil photo dans les 30 secondes, du retour depuis la Galerie ou de l'ouverture depuis l'écran verrouillé."
     ]
   },
   "logs_it": {
+    "Documenti": [
+      "Aggiunto pannello funzioni flottante, con rapida chiusura/apertura. In verticale funzioni ricche, in orizzontale migliore esperienza di lettura.",
+      "Aggiunta esportazione in PDF con un tocco per documenti, fogli di calcolo e PDF",
+      "Aggiunta funzione di trasmissione per documenti/fogli di calcolo/PDF",
+      "Aggiunta la funzione miniature PPT/PDF per passare più rapidamente tra le pagine",
+      "Aggiunta della funzione di attivazione/disattivazione dell’avviso di rotazione dello schermo",
+      "Ottimizzate dimensioni APK della versione e spazio di archiviazione in fase di esecuzione"
+    ],
     "Sistema": [
       "Patch di sicurezza Android aggiornata a ottobre 2020. Maggiore sicurezza del sistema.",
       "Nuovo: Scorri verso il basso dall'angolo in alto a destra dello schermo per aprire il Centro di controllo.",
       "Ottimizzazione: Esperienza di ricarica migliorata in determinate situazioni"
+    ],
+    "macchina fotografica": [
+      "Nuovo: Nuovi modelli per vlog",
+      "Nuovo: I vlog possono essere salvati come bozze",
+      "Nuovo: 3 nuove filigrane AI",
+      "Ottimizzato: l'accesso alla funzione video 8K in modalità registrazione è stato integrato nella barra dei menu superiore.",
+      "Ottimizzazione: Nuovi modelli e preferiti per i vlog saranno disponibili per il download dal cloud",
+      "Ottimizzata la filigrana del nuovo modello di dispositivo",
+      "Ottimizzazione: dopo aver regolato lo zoom delle varie funzioni della fotocamera, lo zoom rimane invariato quando la fotocamera viene riaperta entro 30 secondi, tornando dalla Galleria o aprendola dalla schermata di blocco."
     ]
   },
   "logs_es": {
+    "Documentos": [
+      "Se añade un panel flotante de funciones, con plegado/desplegado rápido. En vertical, funciones completas; en horizontal, mejor experiencia de lectura.",
+      "Se añade la exportación a PDF con un toque para documentos, hojas de cálculo y PDF",
+      "Añadida la función de transmisión para documentos/hojas de cálculo/PDF",
+      "Se añade la función de miniaturas para PPT/PDF para navegar más rápido entre páginas",
+      "Se agregó la función para alternar el aviso de rotación de pantalla",
+      "Optimizado el tamaño del APK de la versión y el espacio de almacenamiento en tiempo de ejecución"
+    ],
     "Sistema": [
       "Parche de seguridad de Android actualizado a octubre de 2020. Seguridad del sistema incrementada.",
       "Nuevo: Desliza hacia abajo desde la esquina superior derecha de la pantalla para abrir el Centro de control.",
       "Optimización: Experiencia de carga mejorada en determinadas situaciones"
+    ],
+    "Cámara": [
+      "Nuevo: Nuevas plantillas para vlogs",
+      "Nuevo: Los vlogs ahora pueden ser guardados como borradores",
+      "Nuevo: 3 nuevas marcas de agua con IA",
+      "Optimizado: el acceso a la función de vídeo 8K en modo grabación se ha integrado en la barra de menú superior.",
+      "Optimización: A partir de ahora las nuevas plantillas y ajustes preestablecidos de vlogs estarán disponibles para descargar desde la nube",
+      "Optimizada la marca de agua del nuevo modelo de dispositivo",
+      "Optimización: tras ajustar el zoom de cada función de la cámara, el zoom se mantiene sin cambios al volver a abrir la cámara dentro de 30 segundos, al regresar desde la Galería o al abrirla desde la pantalla de bloqueo."
     ]
   },
   "logs_pt": {
+    "Documentos": [
+      "Adicionado painel flutuante de funções, com recolhimento/expansão rápidos. No modo retrato, funções ricas; no modo paisagem, melhor experiência de leitura.",
+      "Adicionada exportação para PDF com um toque para documentos, planilhas e PDFs",
+      "Adicionada a função de transmissão para documentos/folhas de cálculo/PDF",
+      "Adicionada a função de miniaturas PPT/PDF para navegar mais rápido entre páginas",
+      "Adicionada a função de alternar o aviso de rotação da tela",
+      "Otimizado o tamanho do APK da versão e o espaço de armazenamento em tempo de execução"
+    ],
     "Sistema": [
       "Patch de Segurança do Android atualizado para Outubro de 2020. Segurança do sistema aprimorada.",
       "Novo: Deslize para baixo a partir do canto superior direito do ecrã para abrir o Centro de controlo.",
       "Otimização: Melhoria na experiência de carregamento em algumas situações"
+    ],
+    "Câmera": [
+      "Novo: Novos modelos para vlogs",
+      "Novo: Vlogs agora podem ser salvos como rascunhos",
+      "Novo: 3 novas marcas d'água IA",
+      "Otimizado: o acesso à função de vídeo 8K no modo de gravação foi integrado à barra de menu superior.",
+      "Otimização: Novos modelos e predefinições para vlog agora estarão disponíveis para baixar a partir da nuvem",
+      "Marca d'água do novo modelo de dispositivo otimizada",
+      "Otimização: após ajustar o zoom de cada função da câmera, o zoom permanece inalterado ao reabrir a câmera em até 30 segundos, ao voltar da Galeria ou ao abrir a câmera pela tela de bloqueio."
     ]
   },
   "logs_tr": {
+    "Belgeler": [
+      "Yüzen işlev paneli eklendi; hızlı daraltma/genişletme destekleniyor. Dikey görünümde zengin işlevler, yatay görünümde en iyi okuma deneyimi.",
+      "Belgeler, e-tablolar ve PDF'ler için tek dokunuşla PDF'e aktarma eklendi",
+      "Belgeler/E-tablolar/PDF için ekrana yansıtma özelliği eklendi",
+      "Daha hızlı sayfa geçişi için PPT/PDF küçük resim özelliği eklendi",
+      "Ekran döndürme istemi değiştirme özelliği eklendi",
+      "Sürüm APK boyutu ve çalışma zamanı depolama alanı optimize edildi"
+    ],
     "Sistem": [
       "Android Güvenlik Patch'i Ekim 2020'de güncellendi. Sistem güvenliği arttırıldı.",
       "Yeni: Kontrol merkezini açmak için ekranınızın sağ üst köşesinden aşağı kaydırın.",
       "Optimizasyon: Bazı durumlarda iyileştirilmiş şarj deneyimi"
+    ],
+    "Kamera": [
+      "Yeni: Vloglar için yeni şablonlar",
+      "Yeni: Vloglar artık taslak olarak kaydedilebilir",
+      "Yeni: 3 yeni AI filigran",
+      "Optimize edildi: Kayıt modundaki 8K video özelliği girişi üst menü çubuğuna entegre edildi.",
+      "Optimizasyon: Yeni vlog şablonları ve ön ayarları artık cloud'tan indirilebilir",
+      "Yeni cihaz modeli filigranı optimize edildi",
+      "Optimizasyon: Kamera özelliklerinin yakınlaştırma oranı ayarlandıktan sonra 30 saniye içinde kamera yeniden açıldığında, Galeriden kameraya dönüldüğünde veya kilit ekranından kamera açıldığında yakınlaştırma oranı korunur."
     ]
   },
   "logs_id": {
+    "Dokumen": [
+      "Menambahkan panel fungsi mengambang, mendukung ciutkan/perluas cepat. Tampilan potret kaya fitur, lanskap memberikan pengalaman membaca terbaik.",
+      "Menambahkan ekspor ke PDF sekali ketuk untuk dokumen, spreadsheet, dan PDF",
+      "Ditambahkan fitur casting untuk Dokumen/Spreadsheet/PDF",
+      "Menambahkan fitur thumbnail PPT/PDF agar navigasi halaman lebih cepat",
+      "Menambahkan fitur pengalihan petunjuk rotasi layar",
+      "Mengoptimalkan ukuran APK versi dan ruang penyimpanan saat runtime"
+    ],
     "Sistem": [
       "Patch Keamanan Android diperbarui (Oktober 2020). Keamanan sistem ditingkatkan.",
       "Baru: Geser ke bawah dari sudut kanan atas layar Anda untuk membuka Pusat kontrol.",
       "Mengoptimalkan kinerja sistem",
       "Pengoptimalan: Peningkatan pengalaman pengisian daya dalam situasi tertentu"
+    ],
+    "Kamera": [
+      "Baru: Templat baru untuk vlog",
+      "Baru: Vlog dapat disimpan sebagai draf",
+      "Baru: 3 watermark AI baru",
+      "Dioptimalkan: akses fitur video 8K dalam mode perekaman diintegrasikan ke bilah menu atas.",
+      "Pengoptimalan: Template dan preset vlog baru akan tersedia untuk diunduh dari cloud mulai dari sekarang",
+      "Optimasi tanda air model perangkat baru",
+      "Optimasi: setelah menyesuaikan rasio zoom pada fitur kamera, rasio zoom tetap tidak berubah saat kamera dibuka kembali dalam 30 detik, beralih kembali dari Galeri, atau membuka kamera dari layar kunci."
     ]
   },
   "logs_vi": {
+    "Tài liệu": [
+      "Đã thêm bảng chức năng nổi, hỗ trợ thu gọn/mở rộng nhanh. Xem dọc có nhiều tính năng, xem ngang cho trải nghiệm đọc tốt nhất.",
+      "Thêm tính năng xuất PDF bằng một chạm cho tài liệu, bảng tính và PDF",
+      "Đã thêm tính năng truyền màn hình cho Tài liệu/Trang tính/PDF",
+      "Thêm tính năng ảnh thu nhỏ PPT/PDF để chuyển trang nhanh hơn",
+      "Đã thêm tính năng chuyển đổi nhắc nhở xoay màn hình",
+      "Tối ưu hóa kích thước APK của phiên bản và dung lượng lưu trữ khi chạy"
+    ],
     "Hệ thống": [
       "Cập nhật Bản vá bảo mật Android đến tháng 10 năm 2020. Tăng cường bảo mật hệ thống.",
       "Mới: Trượt xuống từ góc trên bên phải màn hình để mở Trung tâm điều khiển.",
       "Tối ưu: Cải thiện trải nghiệm sạc trong một số trường hợp nhất định"
+    ],
+    "Máy ảnh": [
+      "Mới: Mẫu mới cho vlog",
+      "Mới: Vlog hiện có thể được lưu dưới dạng bản nháp",
+      "Mới: 3 dấu chìm AI mới",
+      "Đã tối ưu: lối vào tính năng video 8K trong chế độ quay được tích hợp vào thanh menu trên cùng.",
+      "Tối ưu: Hiện mẫu vlog mới và đặt trước sẽ được hỗ trợ tải xuống từ đám mây",
+      "Tối ưu hóa hình mờ mẫu thiết bị mới",
+      "Tối ưu: sau khi điều chỉnh tỷ lệ thu phóng cho các tính năng camera, tỷ lệ thu phóng được giữ nguyên khi mở lại camera trong vòng 30 giây, chuyển từ Thư viện về camera hoặc mở camera từ màn hình khóa."
     ]
   },
   "logs_th": {
+    "เอกสาร": [
+      "เพิ่มแผงฟังก์ชันลอย รองรับการย่อ/ขยายอย่างรวดเร็ว แนวตั้งมีฟีเจอร์ครบ แนวนอนให้ประสบการณ์การอ่านที่ดีที่สุด",
+      "เพิ่มการส่งออกเป็น PDF ด้วยการแตะครั้งเดียวสำหรับเอกสาร สเปรดชีต และ PDF",
+      "เพิ่มฟีเจอร์แคสต์สำหรับเอกสาร/สเปรดชีต/PDF",
+      "เพิ่มฟีเจอร์รูปขนาดย่อ PPT/PDF เพื่อเลื่อนหน้าได้เร็วขึ้น",
+      "เพิ่มฟีเจอร์สลับการแจ้งเตือนการหมุนหน้าจอ",
+      "ปรับขนาด APK ของเวอร์ชันและพื้นที่จัดเก็บขณะรันให้เหมาะสม"
+    ],
     "ระบบ": [
       "อัปเดตแพทช์ความปลอดภัยของแอนดรอยด์เป็นตุลาคม 2020 เพิ่มความปลอดภัยของระบบ",
       "ใหม่: ปัดลงจากมุมขวาบนของหน้าจอเพื่อเปิดศูนย์ควบคุม",
       "การเพิ่มประสิทธิภาพ: ปรับปรุงประสบการณ์การชาร์จในบางสถานการณ์"
+    ],
+    "กล้อง": [
+      "ใหม่: เทมเพลตใหม่สำหรับ vlogs",
+      "ใหม่: บันทึก Vlog เป็นแบบร่างได้แล้ว",
+      "ใหม่: ลายน้ำ AI ใหม่ 3 แบบ",
+      "ปรับให้เหมาะสม: รวมทางเข้าฟังก์ชันวิดีโอ 8K ในโหมดบันทึกวิดีโอไว้ในแถบเมนูด้านบน",
+      "การเพิ่มประสิทธิภาพ: เทมเพลต vlog และค่าที่ตั้งล่วงหน้าใหม่จะพร้อมให้ดาวน์โหลดจากระบบคลาวด์นับจากนี้เป็นต้นไป",
+      "ปรับปรุงลายน้ำรุ่นอุปกรณ์ใหม่",
+      "ปรับปรุง: หลังจากปรับอัตราซูมของแต่ละฟังก์ชันในกล้อง อัตราซูมจะคงเดิมเมื่อเปิดกล้องอีกครั้งภายใน 30 วินาที สลับกลับจากแกลเลอรี หรือเปิดกล้องจากหน้าจอล็อก"
     ]
   },
   "logs_ar": {
+    "المستندات": [
+      "تمت إضافة لوحة وظائف عائمة تدعم الطي/التوسيع السريع. العرض العمودي غني بالميزات، والعرض الأفقي يوفر أفضل تجربة قراءة.",
+      "إضافة ميزة التصدير إلى PDF بنقرة واحدة للمستندات وجداول البيانات وملفات PDF",
+      "تمت إضافة ميزة العرض على الشاشة للمستندات/جداول البيانات/PDF",
+      "إضافة ميزة الصور المصغرة لـ PPT/PDF لتنقل أسرع بين الصفحات",
+      "إضافة ميزة تبديل تلميح تدوير الشاشة",
+      "تم تحسين حجم APK للإصدار ومساحة التخزين أثناء التشغيل"
+    ],
     "النظام": [
       "تم تحديث تصحيح أمان الأندرويد إلى اكتوبر 2020 لزيادة أمان النظام.",
       ":الجديد يمكنك السحب لأسفل من أعلى يمين الشاشة لفتح مركز التحكم.",
       "التحسين: تحسين تجربة الشحن في بعض السيناريوهات"
+    ],
+    "كاميرا": [
+      ":الجديد قوالب جديدة لفلوقات الفيديو",
+      ":الجديد لا يمكن حفظ الفلوقات كمسودة",
+      ":الجديد 3 علامات مائية AI جديدة",
+      "تم التحسين: دمج مدخل ميزة فيديو 8K في وضع التسجيل ضمن شريط القوائم العلوي.",
+      ":التحسين تتوفر الآن اقتراحات فلوقات جديدة وإعدادات مسبقة لتنزيلها من Cloud",
+      "تحسين العلامة المائية لطراز الجهاز الجديد",
+      "تحسين: بعد ضبط نسبة التكبير لميزات الكاميرا، تبقى نسبة التكبير دون تغيير عند إعادة فتح الكاميرا خلال 30 ثانية، أو العودة من المعرض، أو فتح الكاميرا من شاشة القفل."
     ]
   },
   "logs_in": {
+    "दस्तावेज़": [
+      "नया फ़्लोटिंग फ़ंक्शन पैनल जोड़ा गया, जिसमें त्वरित संक्षिप्त/विस्तार समर्थन है। पोर्ट्रेट में समृद्ध सुविधाएँ, लैंडस्केप में सर्वोत्तम पढ़ने का अनुभव।",
+      "दस्तावेज़ों, स्प्रेडशीट और PDF के लिए एक-टैप \"PDF में निर्यात\" सुविधा जोड़ी गई",
+      "दस्तावेज़/स्प्रेडशीट/PDF के लिए कास्टिंग सुविधा जोड़ी गई",
+      "पेज नेविगेशन को तेज़ बनाने के लिए PPT/PDF थंबनेल सुविधा जोड़ी गई",
+      "स्क्रीन रोटेशन संकेत टॉगल सुविधा जोड़ी गई",
+      "संस्करण APK का आकार और रनटाइम संग्रहण स्थान अनुकूलित किया गया"
+    ],
     "सिस्टम": [
       "Android सुरक्षा पैच को अक्टूबर 2020 से अपडेट किया गया. सिस्टम की सुरक्षा बढ़ा दी गई है.",
+      "नया कंट्रोल सेंटर खोलने के लिए अपनी स्क्रीन के ऊपरी दाएं कोने से नीचे की ओर स्वाइप करें.",
       "ऑप्टिमाइज़ेशन कुछ स्थितियों में बेहतर चार्जिंग को बेहतर किया गया है"
+    ],
+    "कैमरा": [
+      "नया वीडियो लॉग के लिए नए टेम्पलेट",
+      "नया वीडियो लॉग को अब ड्राफ़्ट के तौर पर सेव किया जा सकता है",
+      "नया 3 नए AI वॉटरमार्क",
+      "अनुकूलित: रिकॉर्डिंग मोड में 8K वीडियो सुविधा प्रवेश को शीर्ष मेनू बार में एकीकृत किया गया।",
+      "ऑप्टिमाइज़ेशन अब से क्लाउड से डाउनलोड करने के लिए नए व्लॉग टेम्प्लेट और प्रीसेट उपलब्ध होंगे",
+      "नए डिवाइस मॉडल वॉटरमार्क का अनुकूलन",
+      "अनुकूलन: कैमरा की सुविधाओं का ज़ूम अनुपात समायोजित करने के बाद, 30 सेकंड के भीतर कैमरा फिर से खोलने, गैलरी से वापस कैमरे पर जाने या लॉक स्क्रीन से कैमरा खोलने पर ज़ूम अनुपात अपरिवर्तित रहता है।"
     ]
   },
   "logs_ug": {

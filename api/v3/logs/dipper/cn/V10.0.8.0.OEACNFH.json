@@ -1,16 +1,16 @@
 {
   "logs_zh": {
     "电话": [
-      "优化 双卡场景下掉卡后的处理策略"
+      "优化用于在双SIM模式下信号丢失后恢复连接的算法"
     ],
     "联系人": [
-      "修复 设置里VoLTE电话会议显示错误"
+      "在“设置”中，VoLTE视频会议的显示效果存在问题（即这些会议并未被正确地显示出来）。"
     ],
     "短信": [
-      "修复 会话页面添加幻灯片与音频后的显示问题"
+      "在对话中解决与幻灯片放映和音频文件相关的问题"
     ],
-    "便签": [
-      "修复 选中空格翻译提示异常的问题"
+    "注释；备注": [
+      "关于翻译中因空格导致的问题（即翻译结果出现错误或混乱的情况），需要采取相应的修复措施。"
     ],
     "其他": [
       "提升系统的安全性和稳定性"
@@ -18,33 +18,33 @@
   },
   "logs_en": {
     "Phone": [
-      "Optimize Algorithm for restoring connection after signal was lost in Dual SIM mode"
+      "Optimize the handling strategy after a card is removed in a dual-card scenario."
     ],
     "Contacts": [
-      "Restore VoLTE conference calls weren't shown correctly in the Settings"
+      "Fixed the error in the display of VoLTE phone conferences in the settings."
     ],
     "Messages": [
-      "Restore Issues with slideshows and audio files in conversations"
+      "Fixed the display issues after adding slides and audio to the session page."
     ],
     "Notes": [
-      "Restore Issues with spaces in translations"
+      "Fixed the issue with abnormal translation suggestions when selecting spaces."
     ],
     "Other": [
       "Improved system security and stability"
     ]
   },
   "logs_zh_tw": {
-    "電話": [
-      "優化雙卡場景下掉卡後的處理策略"
+    "电话": [
+      "优化双卡环境下某张卡片丢失（即无法正常使用）时的处理策略"
     ],
     "聯絡人": [
-      "修正 設定中 VoLTE 電話會議顯示錯誤"
+      "已修复设置中 VoLTE 电话会议显示错误的问题。"
     ],
     "簡訊": [
-      "修正 會話頁面新增投影片與音訊後的顯示問題"
+      "修复了在会话页面中添加幻灯片和音频后出现的显示问题。"
     ],
     "便條": [
-      "修復選取空格時翻譯提示異常的問題"
+      "修复了在选中空白字符时出现的翻译提示异常问题。"
     ],
     "其他": [
       "Improved system security and stability"
@@ -52,13 +52,13 @@
   },
   "logs_ja": {
     "電話": [
-      "デュアルSIM環境でSIMカードが切断された後の処理ポリシーを最適化"
+      "デュアルSIMカード環境において、一方のSIMカードが通信不能になった後の処理戦略を最適化する"
     ],
     "連絡先": [
-      "設定でVoLTE会議通話が正しく表示されない問題を修正"
+      "設定項目内でVoLTE通話会議の表示に誤りがある問題を修正しました。"
     ],
     "メッセージ": [
-      "会話ページにスライドショーと音声を追加した後の表示不具合を修正"
+      "セッションページにスライドや音声を追加した後の表示問題を修正しました。"
     ],
     "メモ": [
       "スペース選択時の翻訳ヒントの異常を修正"
@@ -69,7 +69,7 @@
   },
   "logs_ko": {
     "전화": [
-      "듀얼 SIM 환경에서 SIM 카드가 끊긴 후 처리 전략 최적화"
+      "듀얼 카드 사용 시 한 장의 카드가 빠진 후의 처리 전략을 최적화합니다."
     ],
     "연락처": [
       "설정에서 VoLTE 회의 통화가 잘못 표시되는 문제를 수정"
@@ -78,7 +78,7 @@
       "대화 페이지에서 슬라이드쇼와 오디오를 추가한 후의 표시 문제를 수정"
     ],
     "메모": [
-      "공백 선택 시 번역 안내가 비정상적으로 표시되는 문제 수정"
+      "빈 공간을 선택했을 때 번역 안내 메시지가 비정상적으로 표시되는 문제를 수정했습니다."
     ],
     "기타": [
       "시스템 보안 및 안정성 개선"
@@ -86,16 +86,16 @@
   },
   "logs_ru": {
     "Телефон": [
-      "Оптимизировать стратегию обработки после потери SIM-карты в режиме двух SIM-карт"
+      "Оптимизация стратегии обработки ситуаций, когда одна из карт отсоединяется при использовании двух карт."
     ],
     "Контакты": [
-      "Исправлено неправильное отображение конференц-вызовов VoLTE в настройках"
+      "Исправлено отображение ошибок при настройке функции VoLTE для телефонных конференций."
     ],
     "Сообщения": [
-      "Исправлена проблема отображения после добавления слайд-шоу и аудио на странице беседы"
+      "Устранено проблему с отображением страницы сессии после добавления слайдов и аудиофайлов."
     ],
-    "Заметки": [
-      "Исправлена ошибка подсказки перевода при выделении пробела"
+    "Записка": [
+      "Устранено отклонение в работе системы подсказок при переводе текста, содержащего пробелы."
     ],
     "Другое": [
       "Улучшение безопасности и стабильности системы"
@@ -103,16 +103,16 @@
   },
   "logs_uk": {
     "Телефон": [
-      "Оптимізувати стратегію обробки після втрати SIM-картки в режимі двох SIM-карток"
+      "Оптимізація стратегії обробки ситуацій, коли одна з карт випадає під час використання двох карт"
     ],
     "Контакти": [
-      "Виправлено неправильне відображення конференц-викликів VoLTE у налаштуваннях"
+      "Виправлено помилку відображення інформації про телефонні конференції типу VoLTE у налаштуваннях."
     ],
     "Повідомлення": [
       "Виправлено проблему відображення після додавання слайд-шоу та аудіо на сторінці розмови"
     ],
-    "Нотатки": [
-      "Виправлено помилку підказки перекладу під час виділення пробілу"
+    "Записка": [
+      "Виправлено проблему з неправильним відображенням підказок щодо перекладу при виборі пробілів."
     ],
     "Інше": [
       "Покращення безпеки та стабільності системи"
@@ -120,18 +120,18 @@
   },
   "logs_pl": {
     "Telefon": [
-      "Optymalizacja strategii obsługi po utracie karty SIM w trybie dual SIM"
+      "Optymalizacja strategii działania w przypadku utraty jednej z kart w scenariu używania dwóch kart."
     ],
     "Kontakty": [
-      "Naprawiono nieprawidłowe wyświetlanie połączeń konferencyjnych VoLTE w Ustawieniach"
+      "Poprawiono błąd w wyświetlaniu informacji o konferencjach telefonicznych typu VoLTE w ustawieniach."
     ],
     "Wiadomości": [
-      "Naprawiono problem wyświetlania po dodaniu pokazu slajdów i audio na stronie rozmowy"
+      "Poprawiono problemy z wyświetlaniem strony sesji po dodaniu slajdów i nagrania dźwiękowego."
     ],
     "Notatki": [
-      "Naprawiono błąd podpowiedzi tłumaczenia przy zaznaczaniu spacji"
+      "Poprawiono problem z nietypowymi komunikatami dotyczącymi tłumaczeń w przypadku wybrania przerw."
     ],
-    "Inne": [
+    "Reszt": [
       "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
@@ -140,13 +140,13 @@
       "Optimierung der Verarbeitungsstrategie nach SIM-Kartenverlust im Dual-SIM-Modus"
     ],
     "Kontakte": [
-      "Fehlerhafte Anzeige von VoLTE-Konferenzanrufen in den Einstellungen behoben"
+      "Behebung eines Fehlers bei der Anzeige von VoLTE-Telefonkonferenzen in den Einstellungen"
     ],
     "Nachrichten": [
-      "Anzeigeproblem nach dem Hinzufügen von Diashow und Audio in der Unterhaltung behoben"
+      "Behebung des Anzeigeproblems nach dem Hinzufügen von Sliden und Audio auf der Sitzungsseite"
     ],
     "Notizen": [
-      "Problem mit fehlerhaftem Übersetzungshinweis bei Auswahl von Leerzeichen behoben"
+      "Behebung des Problems mit den fehlerhaften Übersetzungshinweisen, wenn Leerzeichen ausgewählt werden."
     ],
     "Sonstiges": [
       "Systemsicherheit und -stabilität verbessert"
@@ -154,16 +154,16 @@
   },
   "logs_fr": {
     "Téléphone": [
-      "Optimisation de la stratégie de traitement après perte de carte SIM en mode double SIM"
+      "Optimisation de la stratégie de gestion en cas de perte d'une carte dans un scénario utilisant deux cartes."
     ],
     "Contacts": [
-      "Correction de l’affichage incorrect des appels conférence VoLTE dans les Paramètres"
+      "La erreur d'affichage concernant les conférences téléphoniques VoLTE dans les paramètres a été corrigée."
     ],
     "Messaging": [
-      "Correction du problème d’affichage après l’ajout d’un diaporama et d’un audio dans la conversation"
+      "Résolution des problèmes d'affichage sur la page de session après l'ajout de diapositives et d'audio."
     ],
-    "Notes": [
-      "Correction de l'anomalie de l'indication de traduction lors de la sélection d'un espace"
+    "Mémo": [
+      "Correction du problème de message d'erreur lors de la traduction des espaces sélectionnés."
     ],
     "Autre": [
       "Sécurité et stabilité du système améliorées"
@@ -171,16 +171,16 @@
   },
   "logs_it": {
     "Telefono": [
-      "Ottimizzazione della strategia di gestione dopo la perdita della scheda SIM in modalità dual SIM"
+      "Ottimizzazione della strategia di gestione in caso di perdita di una delle due carte in scenari che prevedono l’uso di più carte."
     ],
     "Contatti": [
-      "Corretta la visualizzazione errata delle chiamate conference VoLTE nelle Impostazioni"
+      "Riparato l’errore nella visualizzazione delle informazioni relative alle conferenze telefoniche VoLTE nelle impostazioni."
     ],
     "Messaggi": [
-      "Risolto il problema di visualizzazione dopo l'aggiunta di presentazione e audio nella conversazione"
+      "Risolto il problema di visualizzazione che si verificava dopo l’aggiunta di diapositive e audio alla pagina della sessione."
     ],
     "Note": [
-      "Risolto il problema dell'anomalia del suggerimento di traduzione quando si seleziona uno spazio"
+      "Risolto il problema relativo alle anomalie nelle informazioni di traduzione che apparivano quando veniva selezionato lo spazio bianco."
     ],
     "Altro": [
       "Maggiore sicurezza e stabilità di sistema"
@@ -188,16 +188,16 @@
   },
   "logs_es": {
     "Teléfono": [
-      "Optimización de la estrategia de gestión tras la pérdida de la tarjeta SIM en modo dual SIM"
+      "Optimización de la estrategia de manejo en caso de pérdida de una tarjeta en un escenario con dos tarjetas."
     ],
     "Contactos": [
-      "Corregida la visualización incorrecta de las llamadas de conferencia VoLTE en Ajustes"
+      "Se ha corregido el error en la visualización de las conferencias telefónicas VoLTE en los ajustes."
     ],
     "Mensajería": [
-      "Se corrige el problema de visualización tras añadir presentación de diapositivas y audio en la conversación"
+      "Se ha corregido el problema de visualización que aparecía después de agregar diapositivas y audio a la página de sesión."
     ],
     "Notas": [
-      "Corregido el problema del aviso de traducción anómalo al seleccionar un espacio"
+      "Se ha corregido el problema de las anomalías en los mensajes de sugerencia de traducción cuando se seleccionan espacios."
     ],
     "Otros": [
       "Estabilidad y seguridad del sistema mejorada"
@@ -208,13 +208,13 @@
       "Otimização da estratégia de tratamento após perda do cartão SIM no modo dual SIM"
     ],
     "Contatos": [
-      "Corrigida a exibição incorreta das chamadas em conferência VoLTE nas Configurações"
+      "Corrigido o erro na exibição das informações sobre as conferências telefónicas via VoLTE nas definições do sistema."
     ],
     "Mensagens": [
-      "Corrigido o problema de exibição após adicionar apresentação de slides e áudio na conversa"
+      "Corrigir o problema de exibição após a adição de slides e áudio à página da sessão."
     ],
     "Anotações": [
-      "Corrigido o problema do aviso de tradução anormal ao selecionar um espaço"
+      "Corrigido o problema com as sugestões de tradução anormais quando um espaço é selecionado."
     ],
     "Outros": [
       "Segurança e estabilidade do sistema aprimoradas"
@@ -222,16 +222,16 @@
   },
   "logs_tr": {
     "Telefon": [
-      "Çift SIM modunda SIM kart kaybı sonrası işlem stratejisi optimize edildi"
+      "Çift kartlı bir ortamda bir kartın çıkış yapması durumunda izlenecek işlem stratejisinin optimizasyonu"
     ],
     "Kişiler": [
-      "Ayarlar'da VoLTE konferans aramalarının yanlış görünmesi düzeltildi"
+      "Ayarlar bölümünde VoLTE telefon konferanslarının gösterimindeki hataları düzeltildi."
     ],
     "Mesajlaşma": [
-      "Konuşma sayfasında slayt gösterisi ve ses eklendikten sonraki görüntüleme sorunu düzeltildi"
+      "Sesli ve görsel içeriklerin oturum sayfasına eklendikten sonra görüntülenme ile ilgili sorunlar giderildi."
     ],
     "Notlar": [
-      "Boşluk seçildiğinde çeviri isteminde oluşan anormallik giderildi"
+      "Boşlukların seçilmesi durumunda çeviri ipuçlarında yaşanan anormallikleri giderdik."
     ],
     "Diğer": [
       "Sistem güvenliği ve kararlılığı geliştirildi"
@@ -239,16 +239,16 @@
   },
   "logs_id": {
     "Telepon": [
-      "Mengoptimalkan strategi penanganan setelah kartu SIM hilang dalam mode dual SIM"
+      "Mengoptimalkan strategi penanganan situasi di mana salah satu kartu SIM tidak berfungsi (tidak terhubung) dalam skenario penggunaan dua kartu SIM."
     ],
     "Kontak": [
-      "Memperbaiki tampilan panggilan konferensi VoLTE yang salah di Pengaturan"
+      "Diperbaiki: Kesalahan tampilan pada pengaturan konferensi telepon VoLTE."
     ],
     "Pesan": [
       "Memperbaiki masalah tampilan setelah menambahkan slideshow dan audio di halaman percakapan"
     ],
     "Catatan": [
-      "Memperbaiki masalah petunjuk terjemahan yang tidak normal saat memilih spasi"
+      "Memperbaiki masalah penampilan pesan peringatan terjemahan yang tidak normal ketika spasi dipilih."
     ],
     "Lainnya": [
       "Keamanan dan stabilitas sistem ditingkatkan"
@@ -256,16 +256,16 @@
   },
   "logs_vi": {
     "Điện thoại": [
-      "Tối ưu hóa chiến lược xử lý sau khi mất thẻ SIM ở chế độ hai SIM"
+      "Tối ưu hóa chiến lược xử lý tình huống mất kết nối khi sử dụng cùng lúc hai thẻ trong môi trường có hai thẻ."
     ],
     "Danh bạ": [
-      "Đã sửa lỗi hiển thị sai cuộc gọi hội nghị VoLTE trong Cài đặt"
+      "Đã sửa lỗi hiển thị sai thông tin trong phần cài đặt liên quan đến cuộc họp qua điện thoại VoLTE."
     ],
     "Tin nhắn": [
-      "Đã sửa lỗi hiển thị sau khi thêm trình chiếu và âm thanh trong trang hội thoại"
+      "Sửa lỗi về cách hiển thị trang phiên đàm sau khi thêm slide và âm thanh vào trang đó."
     ],
     "Ghi chú": [
-      "Đã sửa lỗi gợi ý dịch bất thường khi chọn dấu cách"
+      "Đã sửa lỗi trong gợi ý dịch khi chọn ký tự khoảng trắng."
     ],
     "Khác": [
       "Cải thiện tính ổn định và bảo mật hệ thống"
@@ -273,16 +273,16 @@
   },
   "logs_th": {
     "โทรศัพท์": [
-      "เพิ่มประสิทธิภาพกลยุทธ์การจัดการเมื่อ SIM หลุดในโหมด Dual SIM"
+      "การปรับปรุงกลยุทธ์การจัดการเมื่อการเชื่อมต่อบัตรสองใบหยุดทำงาน"
     ],
     "รายชื่อ": [
-      "แก้ไขการแสดงผลการโทรประชุม VoLTE ที่ไม่ถูกต้องในการตั้งค่า"
+      "ได้แก้ไขปัญหาที่การตั้งค่า VoLTE สำหรับการประชุมทางโทรศัพท์แสดงผลผิดพลาดแล้ว"
     ],
     "ข้อความ": [
       "แก้ไขปัญหาการแสดงผลหลังจากเพิ่มสไลด์โชว์และเสียงในหน้าบทสนทนา"
     ],
-    "บันทึก": [
-      "แก้ไขปัญหาคำแนะนำการแปลผิดปกติเมื่อเลือกช่องว่าง"
+    "โน้ต": [
+      "แก้ไขปัญหาที่คำแนะนำการแปลเมื่อเลือกช่องว่าง (space) ทำงานไม่ถูกต้อง"
     ],
     "อื่นๆ": [
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
@@ -290,33 +290,33 @@
   },
   "logs_ar": {
     "الهاتف": [
-      "تحسين استراتيجية المعالجة بعد فقدان بطاقة SIM في وضع الشريحتين"
+      "تحسين استراتيجية المعالجة عند فقدان إحدى البطاقتين في سيناريو وجود بطاقتين."
     ],
     "جهات الاتصال": [
-      "إصلاح عرض مكالمات مؤتمر VoLTE بشكل غير صحيح في الإعدادات"
+      "تم إصلاح المشكلة التي كانت تؤدي إلى عرض بيانات خاطئة حول مؤتمرات الهاتف VoLTE في إعدادات النظام."
     ],
     "الرسائل": [
-      "إصلاح مشكلة العرض بعد إضافة عرض الشرائح والصوت في صفحة المحادثة"
+      "تم إصلاح مشكلة العرض التي كانت تظهر بعد إضافة الشرائح والملفات الصوتية إلى صفحة الجلسة."
     ],
     "الملاحظات": [
-      "إصلاح مشكلة تنبيه الترجمة غير الطبيعي عند تحديد مسافة"
+      "تم إصلاح المشكلة المتعلقة بالرسائل الخاطئة التي تظهر عند اختيار مسافات للترجمة."
     ],
-    "أخرى": [
+    "آخرين": [
       "تحسين أمن واستقرار النظام"
     ]
   },
   "logs_in": {
     "फ़ोन": [
-      "डुअल SIM मोड में SIM कार्ड खोने के बाद प्रसंस्करण रणनीति को अनुकूलित करें"
+      "डुअल-कार्ड सेटिंग में, जब कोई कार्ड निकल जाता है, तो उस स्थिति को संभालने की रणनीति को अनुकूलित (ऑप्टिमाइज) करें।"
     ],
     "संपर्क": [
-      "सेटिंग्स में VoLTE कॉन्फ़्रेंस कॉल का गलत प्रदर्शन ठीक किया गया"
+      "सेटिंग्स में VoLTE फोन कॉलिंग संबंधी जानकारी के प्रदर्शन में होने वाली त्रुटियों को ठीक कर दिया गया है।"
     ],
     "संदेश": [
-      "बातचीत पृष्ठ में स्लाइडशो और ऑडियो जोड़ने के बाद दिखने की समस्या ठीक की गई"
+      "समस्या को ठीक कर दिया गया है; अब सेशन पेज पर स्लाइड्स एवं ऑडियो जोड़ने के बाद भी पेज सही तरीके से दिखाई देगा।"
     ],
     "नोट्स": [
-      "स्पेस चुनने पर अनुवाद संकेत में आने वाली अनियमितता ठीक की गई"
+      "वह समस्या ठीक कर दी गई है जिसमें खाली स्पेस (empty space) को चुनने पर अनुवाद संबंधी सूचनाओं में असामान्यता आ रही थी।"
     ],
     "अन्य": [
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
@@ -324,13 +324,34 @@
   },
   "logs_ug": {
     "تېلېفون": [
-      "قوش كارتا شارائىتىدا كارتا ئۈزۈلۈپ قېلىشتىن كېيىنكى بىر تەرەپ قىلىش ئىستراتېگىيىسىنى ئەلالاشتۇرۇش"
+      "قوش كارتا ئەھۋالىدا بىر كارتا چۈشۈپ كەتكەندىكى بىر تەرەپ قىلىش تاكتىكىسىنى ياخشىلاش"
+    ],
+    "ئالاقە": [
+      "تەڭشەش ئىچىدىكى VoLTE تېلېفون يىغىنىنىڭ كۆرسىتىلىشىدىكى خاتالىقنى تۈزۈتۈپ بولدۇق."
+    ],
+    "ئۇچۇر": [
+      "سۆھبەت پەيجىگە سلايد شۇناسلىق ماتېرىياللىرى ۋە ئاۋاز فايللىرى قوشۇلغاندىن كېيىنكى كۆرسىتىش مەسىلىسىنى تۈزەتتىم."
+    ],
+    "خاتىرىلەر": [
+      "بوشلۇقنى تاللاپ تەرجىمە قىلىشتا كۆرۈلگەن غەيرىي ئەھۋاللارنى تۈزىتىلدى."
     ],
     "باشقىلىرى": [
       "Improved system security and stability"
     ]
   },
   "logs_bo": {
+    "ཁ་པར": [
+      "གཉིས་ཁ་(Double Card)་བཀོད་སྒྲིག་འོག་ཁ་(Card)་ཤོར་རྗེས་ཐག་གཅོད་བྱེད་པའི་ཐབས་ཇུས་ལེགས་བཅོས་བྱེད།"
+    ],
+    "Contacts": [
+      "སྒྲིག་འཛུགས་ཁྲོད་VoLTE་ཁ་པར་ཚོགས་འདུའི་མངོན་ཚུལ་ནོར་འཁྲུལ་ཡོད་པ་ཉེན་བྱུང་།"
+    ],
+    "བརྡ་འཕྲིན།": [
+      "“སྐད་ཆའི་གྲོས་མོལ”（Session Conversation）པར་ངོས་སུ་ས্লाइड་ཞིབ་དང་オーディオ་ཟུར་དུ་བསྣན་རྗེས་འགྲེམས་སྟངས་ཐད་ཀྱི་གནད་དོན་ཐག་གཅོད་བྱ།"
+    ],
+    "ཟིན་བྲིས": [
+      "སྟོང་ཆ་བདམས་པའི་སྐབས་ལོ་ཙཱའི་བརྡ་སྦྱོར་ལ་གནད་དོན་ཐོན་པའི་གནད་དོན་ཉུང་གྲངས་བཅོས་བྱས།"
+    ],
     "གཞན།": [
       "Improved system security and stability"
     ]

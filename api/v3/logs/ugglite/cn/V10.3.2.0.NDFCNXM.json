@@ -18,7 +18,7 @@
     "设置": [
       "优化 大字体界面的显示效果"
     ],
-    "网络助手": [
+    "数据使用情况": [
       "修复 网络助手自动校正按钮失效的问题"
     ],
     "安全中心": [
@@ -43,8 +43,17 @@
     "Contacts": [
       "Fix: Contacts couldn't be deleted from SIM cards in some cases"
     ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
+      "Fixed an issue where MiPay could not verify fingerprints in some scenarios",
+      "Fix: Media volume couldn't be restored after receiving a notification"
+    ],
     "Settings": [
       "Optimization: Big fonts are displayed better now"
+    ],
+    "Online Assistant": [
+      "Fixed the issue where the auto-correction button in Network Assistant did not work."
     ],
     "Security": [
       "Fixed an issue where Red Packet Assistant failed to share results"
@@ -66,7 +75,7 @@
     "系統": [
       "優化 更新Android安全性修補程式等級(2019#7)，提升系統安全性"
     ],
-    "電話": [
+    "电话": [
       "修復 掛斷電話較慢的問題"
     ],
     "聯絡人": [
@@ -78,7 +87,7 @@
       "修復 部分場景下MiPay不能驗證指紋的問題",
       "修復 收到通知後媒體音量沒有恢復的問題"
     ],
-    "設定": [
+    "设置": [
       "優化 大字體介面的顯示效果"
     ],
     "網路助手": [
@@ -105,8 +114,17 @@
     "連絡先": [
       "SIMカードの連絡先を削除できない問題を修正"
     ],
+    "ロック画面、ステータスバー、通知バー": [
+      "新規: システムテーマで、ロック画面の時計が3種類のカスタムスタイルに対応し、ロック画面の詳細設定で変更できます。",
+      "最適化: ロック解除パターンのドットの感応領域を調整",
+      "一部のシーンでMiPayが指紋を認証できない問題を修正しました",
+      "修正: 通知を受信した後にメディア音量が元に戻らない問題"
+    ],
     "設定": [
       "最適化: 大きなフォントの表示が改善されました"
+    ],
+    "ネットワークアシスタント": [
+      "ネットワークアシスタントの自動校正ボタンが機能しない問題を修正しました。"
     ],
     "セキュリティ": [
       "Red Packet Assistant の戦績共有が失敗する問題を修正しました"
@@ -135,8 +153,17 @@
     "연락처": [
       "SIM 카드 연락처를 삭제할 수 없는 문제 수정"
     ],
+    "잠금 화면, 상태 표시줄, 알림 표시줄": [
+      "새로운 기능: 시스템 테마에서 잠금 화면 시계가 3가지 사용자 지정 스타일을 지원하며, 잠금 화면 고급 설정에서 변경할 수 있습니다.",
+      "최적화: 잠금 해제 패턴의 점 감응 영역 조정",
+      "일부 상황에서 MiPay가 지문을 인증할 수 없는 문제를 수정했습니다",
+      "수정: 알림을 받은 후 미디어 볼륨이 복원되지 않는 문제"
+    ],
     "설정": [
       "최적화: 큰 글꼴이 더 잘 표시됩니다"
+    ],
+    "네트워크 어시스턴트": [
+      "네트워크 도우미의 자동 보정 버튼이 작동하지 않는 문제를 수정했습니다."
     ],
     "보안": [
       "Red Packet Assistant에서 실적 공유가 실패하는 문제를 수정했습니다"
@@ -166,8 +193,17 @@
     "Контакты": [
       "Исправлено: В некоторых случаях контакты не могли быть удалены с SIM-карты"
     ],
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Новое: Добавлены настраиваемые часы для экрана блокировки (Настройки > Блокировка и защита > Расширенные настройки). Новые часы для экрана блокировки несовместимы со сторонними темами",
+      "Оптимизация: Отрегулированы чувствительные зоны вокруг точек ввода графического ключа",
+      "Исправлена проблема, из-за которой MiPay не мог проверять отпечаток пальца в некоторых сценариях",
+      "Исправлено: Громкость мультимедиа не восстанавливалась после получения уведомлений"
+    ],
     "Настройки": [
       "Оптимизация: Теперь шрифт большого размера отображается лучше"
+    ],
+    "Интернет-ассистент": [
+      "Исправлена проблема, из-за которой кнопка автокоррекции в Помощнике сети не работала."
     ],
     "Безопасность": [
       "Исправлена проблема, из-за которой Red Packet Assistant не мог поделиться результатами"
@@ -175,11 +211,6 @@
     "Облачный сервис Xiaomi": [
       "Оптимизация: Мы переработали начальную страницу Mi Cloud. Теперь она выглядит намного лучше!",
       "Оптимизация: Улучшена синхронизация данных между несколькими  устройствами"
-    ],
-    "Экран блокировки, строка состояния, шторка уведомлений": [
-      "Новое: Добавлены настраиваемые часы для экрана блокировки (Настройки > Блокировка и защита > Расширенные настройки). Новые часы для экрана блокировки несовместимы со сторонними темами",
-      "Оптимизация: Отрегулированы чувствительные зоны вокруг точек ввода графического ключа",
-      "Исправлено: Громкость мультимедиа не восстанавливалась после получения уведомлений"
     ],
     "Другое": [
       "Улучшение безопасности и стабильности системы"
@@ -195,8 +226,17 @@
     "Контакти": [
       "Виправлено: не вдавалося видаляти контакти з SIM-картки"
     ],
+    "Екран блокування, рядок стану, рядок сповіщень": [
+      "Нове: У системній темі годинник екрана блокування підтримує три користувацькі стилі, які можна змінити в розширених налаштуваннях екрана блокування.",
+      "Оптимізація: Відрегульовано чутливі зони для точок графічного ключа",
+      "Виправлено проблему, через яку MiPay не міг перевіряти відбиток пальця у деяких сценаріях",
+      "Виправлено: Гучність медіа не відновлювалася після отримання сповіщення"
+    ],
     "Налаштування": [
       "Оптимізація: великі шрифти тепер відображаються краще"
+    ],
+    "Інтернет-асистент": [
+      "Виправлено проблему, через яку кнопка автокорекції в Помічнику мережі не працювала."
     ],
     "Безпека": [
       "Виправлено проблему, через яку Red Packet Assistant не міг поділитися результатами"
@@ -226,8 +266,17 @@
     "Kontakty": [
       "Naprawiono: nie można było usuwać kontaktów z karty SIM"
     ],
+    "Ekran blokady, pasek stanu, pasek powiadomień": [
+      "Nowość: W motywie systemowym zegar ekranu blokady obsługuje trzy niestandardowe style, które można zmienić w ustawieniach zaawansowanych ekranu blokady.",
+      "Optymalizacja: Dostosowano obszary wrażliwe dla kropek we wzorze odblokowania",
+      "Naprawiono problem, w którym MiPay nie mógł weryfikować odcisku palca w niektórych scenariuszach",
+      "Poprawiono: Głośność multimediów nie wracała po otrzymaniu powiadomienia"
+    ],
     "Ustawienia": [
       "Optymalizacja: duże czcionki są teraz lepiej wyświetlane"
+    ],
+    "Asystent online": [
+      "Naprawiono problem z niedziałającym przyciskiem automatycznej korekty w Asystencie sieci."
     ],
     "Bezpieczeństwo": [
       "Naprawiono problem z nieudanym udostępnianiem wyników w Red Packet Assistant"
@@ -243,7 +292,7 @@
       "Optymalizacja: Dostosowano obszary wrażliwe dla kropek we wzorze odblokowania",
       "Poprawiono: po otrzymaniu powiadomienia nie przywracano głośności multimediów"
     ],
-    "Inne": [
+    "Reszt": [
       "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
@@ -257,8 +306,17 @@
     "Kontakte": [
       "Behoben: SIM-Kartenkontakte konnten nicht gelöscht werden"
     ],
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
+      "Neu: Anpassbare Uhr auf dem Sperrbildschirm (Einstellungen > Sperrbildschirm & Passwort > Erweiterte Einstellungen)",
+      "Optimierung: Empfindliche Bereiche für die Punkte im Entsperrmuster angepasst",
+      "Problem behoben, bei dem MiPay in einigen Szenarien den Fingerabdruck nicht verifizieren konnte",
+      "Behoben: Die Medienlautstärke wurde nach Erhalt einer Benachrichtigung nicht wiederhergestellt"
+    ],
     "Einstellungen": [
       "Optimierung: Große Schriftarten werden jetzt besser angezeigt"
+    ],
+    "Online-Assistent": [
+      "Das Problem behoben, dass die Schaltfläche für die automatische Korrektur im Netzwerkassistenten nicht funktionierte."
     ],
     "Sicherheit": [
       "Problem behoben, bei dem Red Packet Assistant Ergebnisse nicht teilen konnte"
@@ -288,8 +346,17 @@
     "Contacts": [
       "Réparé: Les contacts ne pouvaient pas être supprimés des cartes SIM dans certains cas"
     ],
+    "Écran de verrouillage, barre d’état, barre de notifications": [
+      "Nouveau Présentation de l’horloge de l’écran de verrouillage personnalisable (Paramètres> Écran de verrouillage et mot de passe> Paramètres avancés). La nouvelle horloge de l'écran de verrouillage ne fonctionne pas avec les thèmes tiers.",
+      "Optimisation: Zones sensibles réajustées pour les points du schéma de déverrouillage",
+      "Correction d’un problème où MiPay ne pouvait pas vérifier l’empreinte digitale dans certains cas",
+      "Réparé Le volume du média n'a pas pu être restauré après avoir reçu une notification"
+    ],
     "Paramètres": [
       "Optimisation Les grosses polices sont mieux affichées maintenant"
+    ],
+    "Assistant en ligne": [
+      "Correction du problème où le bouton de correction automatique de l'Assistant réseau ne fonctionnait pas."
     ],
     "Sécurité": [
       "Correction du problème d’échec du partage des résultats de Red Packet Assistant"
@@ -319,8 +386,17 @@
     "Contatti": [
       "Risolto: In alcuni casi, i contatti non potevano essere eliminati dalle schede SIM"
     ],
+    "Schermata di blocco, barra di stato, barra delle notifiche": [
+      "Nuovo: Introdotto l'orologio personalizzabile per la schermata di blocco (Impostazioni > Schermata di blocco e password > Impostazioni avanzate). Il nuovo orologio della schermata di blocco non funziona con temi di terze parti.",
+      "Ottimizzazione: Riadattate le aree sensibili per i punti nella sequenza di sblocco",
+      "Risolto un problema per cui MiPay non riusciva a verificare l'impronta digitale in alcune situazioni",
+      "Risolto: Il volume multimediale non poteva essere ripristinato dopo aver ricevuto una notifica"
+    ],
     "Impostazioni": [
       "Ottimizzazione: I caratteri di grandi dimensioni sono ora visualizzati meglio"
+    ],
+    "Assistente online": [
+      "Risolto il problema per cui il pulsante di correzione automatica in Assistente rete non funzionava."
     ],
     "Sicurezza": [
       "Risolto il problema che impediva la condivisione dei risultati di Red Packet Assistant"
@@ -348,8 +424,17 @@
     "Contactos": [
       "Reparado: Los contactos no podían ser eliminados de las tarjetas SIM en algunos casos"
     ],
-    "Ajustes": [
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Nuevo: Introducción de un reloj personalizable en la Pantalla de bloqueo (Ajustes > Pantalla de bloqueo y contraseña > Ajustes avanzados). El nuevo reloj de la Pantalla de bloqueo no funciona con temas de terceros.",
+      "Optimización: Áreas sensitivas de los puntos reajustadas en el patrón de desbloqueo",
+      "Se corrigió un problema por el que MiPay no podía verificar la huella digital en algunos casos",
+      "Reparado: El volumen medio no pudo ser restaurado después de recibir una notificación"
+    ],
+    "Configuración": [
       "Optimización: Las fuentes grandes ahora se muestran mejor"
+    ],
+    "Asistente de red": [
+      "Se corrigió el problema por el que el botón de corrección automática del Asistente de red no funcionaba."
     ],
     "Seguridad": [
       "Corregido el problema que impedía compartir los resultados de Red Packet Assistant"
@@ -357,11 +442,6 @@
     "Servicio en la nube de Xiaomi": [
       "Optimización: Hemos rediseñado la página de inicio de Mi Nube. ¡Ahora tiene mucho mejor aspecto!",
       "Optimización: Sincronización entre múltiples dispositivos mejorada"
-    ],
-    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
-      "Nuevo: Introducción de un reloj personalizable en la Pantalla de bloqueo (Ajustes > Pantalla de bloqueo y contraseña > Ajustes avanzados). El nuevo reloj de la Pantalla de bloqueo no funciona con temas de terceros.",
-      "Optimización: Áreas sensitivas de los puntos reajustadas en el patrón de desbloqueo",
-      "Reparado: El volumen medio no pudo ser restaurado después de recibir una notificación"
     ],
     "Otros": [
       "Estabilidad y seguridad del sistema mejorada"
@@ -377,8 +457,17 @@
     "Contatos": [
       "Correção: Contatos não podiam ser excluídos de cartões SIM em alguns casos"
     ],
+    "Tela de bloqueio, barra de status, barra de notificações": [
+      "Novo Introduzindo o Relógio personalizável na Tela de bloqueio (Configurar > Bloqueio de tela e senhas > Configurações avançadas). O novo relógio da Tela de bloqueio não funciona com temas de terceiros.",
+      "Otimização: Reajuste nas áreas sensíveis dos pontos do padrão de desbloqueio",
+      "Corrigido um problema em que o MiPay não conseguia verificar a impressão digital em algumas situações",
+      "Correção O volume de mídia não podia ser restaurado após receber uma notificação"
+    ],
     "Configurações": [
       "Otimização Fontes grandes são exibidas melhor agora"
+    ],
+    "Assistente de Rede": [
+      "Corrigido o problema em que o botão de correção automática do Assistente de rede não funcionava."
     ],
     "Segurança": [
       "Corrigido o problema que impedia o compartilhamento dos resultados do Red Packet Assistant"
@@ -408,8 +497,17 @@
     "Kişiler": [
       "Onarım: Kişilerin bazı durumlarda silinememesi sorunu giderildi"
     ],
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Yeni: Özelleştirilebilir Kilit ekranı saati (Ayarlar > Kilit ekranı & şifre > Gelişmiş ayarlar). Yeni kilit ekranı saati üçüncü parti temaları ile çalışmaz.",
+      "Optimizasyon: Kilit açma desenindeki noktalar için hassas bölgeler yeniden ayarlandı",
+      "Bazı durumlarda MiPay'in parmak izini doğrulayamaması sorunu giderildi",
+      "Onarım: Medya sesi, bildirim alındıktan sonra geri alınamadı"
+    ],
     "Ayarlar": [
       "Optimizasyon: Büyük yazı biçimleri şimdi daha iyi görüntüleniyor"
+    ],
+    "Ağ Asistanı": [
+      "Ağ asistanındaki otomatik düzeltme düğmesinin çalışmaması sorunu giderildi."
     ],
     "Güvenlik": [
       "Red Packet Assistant'ta sonuç paylaşımının başarısız olması sorunu giderildi"
@@ -417,11 +515,6 @@
     "Xiaomi Bulut Hizmeti": [
       "Optimizasyon: Mi Cloud'un ana sayfasını yeniden tasarladık, artık çok daha iyi görünüyor!",
       "Optimizasyon: Birkaç cihaz arasında geliştirilmiş senkronizasyon"
-    ],
-    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
-      "Yeni: Özelleştirilebilir Kilit ekranı saati (Ayarlar > Kilit ekranı & şifre > Gelişmiş ayarlar). Yeni kilit ekranı saati üçüncü parti temaları ile çalışmaz.",
-      "Optimizasyon: Kilit açma desenindeki noktalar için hassas bölgeler yeniden ayarlandı",
-      "Onarım: Medya sesi, bildirim alındıktan sonra geri alınamadı"
     ],
     "Diğer": [
       "Sistem güvenliği ve kararlılığı geliştirildi"
@@ -437,8 +530,17 @@
     "Kontak": [
       "Perbaikan: Kontak tidak dapat dihapus dari kartu SIM di beberapa kasus"
     ],
+    "Layar kunci, bilah status, bilah notifikasi": [
+      "Baru Memperkenalkan jam Layar kunci yang dapat dikustomisasi (Setelan > Kunci layar & sandi> Setelan lanjutan). Jam Layar kunci baru tidak berfungsi dalam tema pihak ketiga.",
+      "Pengoptimalan: Area sensitif yang disesuaikan untuk titik-titik dalam pola buka kunci",
+      "Memperbaiki masalah di mana MiPay tidak dapat memverifikasi sidik jari dalam beberapa skenario",
+      "Perbaikan Volume media tidak dapat dipulihkan setelah menerima notifikasi"
+    ],
     "Pengaturan": [
       "Pengoptimalan Ukuran huruf besar dapat ditampilkan dengan lebih baik"
+    ],
+    "Pembantu Jaringan": [
+      "Memperbaiki masalah tombol koreksi otomatis di Asisten jaringan yang tidak berfungsi."
     ],
     "Keamanan": [
       "Memperbaiki masalah gagal berbagi hasil di Red Packet Assistant"
@@ -468,10 +570,21 @@
     "Danh bạ": [
       "Đã khắc phục lỗi không thể xóa danh bạ trên SIM"
     ],
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Mới: Trong chủ đề hệ thống, đồng hồ màn hình khóa hỗ trợ ba kiểu tùy chỉnh, có thể sửa trong cài đặt nâng cao của màn hình khóa.",
+      "Tối ưu hóa: Điều chỉnh vùng cảm ứng cho các điểm trong mẫu mở khóa",
+      "Đã khắc phục sự cố MiPay không thể xác minh dấu vân tay trong một số trường hợp",
+      "Khắc phục sự cố âm lượng media không được khôi phục sau khi nhận thông báo",
+      "Mới: Trong chủ đề hệ thống, đồng hồ màn hình khóa hỗ trợ ba kiểu tùy chỉnh, có thể thay đổi trong cài đặt nâng cao của màn hình khóa. Đồng hồ màn hình khóa mới không hoạt động với chủ đề của bên thứ ba.",
+      "Đã sửa: Âm lượng media không được khôi phục sau khi nhận thông báo"
+    ],
     "Cài đặt": [
       "Tối ưu hóa: Phông chữ lớn hiện được hiển thị tốt hơn"
     ],
-    "Bảo mật": [
+    "Trợ lý mạng": [
+      "Đã khắc phục sự cố nút tự động hiệu chỉnh trong Trợ lý mạng không hoạt động."
+    ],
+    "Trung tâm An ninh": [
       "Đã khắc phục sự cố không chia sẻ được thành tích của Red Packet Assistant"
     ],
     "Dịch vụ đám mây Xiaomi": [
@@ -479,11 +592,6 @@
       "Tối ưu hóa: Cải thiện đồng bộ hóa giữa nhiều thiết bị",
       "Tối ưu hóa: Trang chủ dịch vụ đám mây được thiết kế lại, dung lượng khả dụng hiển thị trực quan hơn.",
       "Tối ưu hóa: Cải thiện tính kịp thời của đồng bộ dữ liệu giữa nhiều thiết bị"
-    ],
-    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
-      "Mới: Trong chủ đề hệ thống, đồng hồ màn hình khóa hỗ trợ ba kiểu tùy chỉnh, có thể thay đổi trong cài đặt nâng cao của màn hình khóa. Đồng hồ màn hình khóa mới không hoạt động với chủ đề của bên thứ ba.",
-      "Tối ưu hóa: Điều chỉnh vùng cảm ứng cho các điểm trong mẫu mở khóa",
-      "Đã sửa: Âm lượng media không được khôi phục sau khi nhận thông báo"
     ],
     "Khác": [
       "Cải thiện tính ổn định và bảo mật hệ thống"
@@ -499,8 +607,17 @@
     "รายชื่อ": [
       "แก้ไข: ไม่สามารถลบรายชื่อผู้ติดต่อจากการ์ด SIM ได้"
     ],
+    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
+      "ใหม่: ภายใต้ธีมระบบ นาฬิกาหน้าจอล็อกรองรับรูปแบบกำหนดเองสามแบบ สามารถแก้ไขได้ในการตั้งค่าขั้นสูงของหน้าจอล็อก",
+      "การปรับปรุง: ปรับพื้นที่การสัมผัสของจุดในรหัสผ่านแบบแพตเทิร์น เพื่อเพิ่มอัตราความสำเร็จในการวาดรหัสผ่านแบบแพตเทิร์นที่ซับซ้อน",
+      "แก้ไขปัญหา MiPay ไม่สามารถตรวจสอบลายนิ้วมือได้ในบางสถานการณ์",
+      "แก้ไขปัญหาเสียงสื่อไม่กลับคืนหลังจากได้รับการแจ้งเตือน"
+    ],
     "การตั้งค่า": [
       "การเพิ่มประสิทธิภาพ: ตัวอักษรขนาดใหญ่แสดงผลได้ดีขึ้นแล้ว"
+    ],
+    "ผู้ช่วยออนไลน์": [
+      "แก้ไขปัญหาปุ่มแก้ไขอัตโนมัติในผู้ช่วยเครือข่ายไม่ทำงาน"
     ],
     "ความปลอดภัย": [
       "แก้ไขปัญหาการแชร์ผลลัพธ์ของ Red Packet Assistant ไม่สำเร็จ"
@@ -530,8 +647,17 @@
     "جهات الاتصال": [
       "إصلاح مشكلة تعذّر حذف جهات اتصال SIM"
     ],
+    "شاشة القفل، شريط الحالة، شريط الإشعارات": [
+      "جديد: ضمن السمة النظامية، تدعم ساعة شاشة القفل ثلاثة أنماط مخصصة، ويمكن تعديلها في الإعدادات المتقدمة لشاشة القفل.",
+      "تحسين: ضبط مناطق اللمس للنقاط في نمط القفل لتحسين معدل نجاح رسم الأنماط المعقدة",
+      "تم إصلاح مشكلة عدم تمكن MiPay من التحقق من بصمة الإصبع في بعض الحالات",
+      "إصلاح مشكلة عدم عودة صوت الوسائط بعد تلقي إشعار"
+    ],
     "الإعدادات": [
       "التحسين: يتم عرض الخطوط الكبيرة بشكل أفضل الآن"
+    ],
+    "مساعد الإنترنت": [
+      "تم إصلاح مشكلة عدم عمل زر التصحيح التلقائي في مساعد الشبكة."
     ],
     "الأمان": [
       "تم إصلاح مشكلة فشل مشاركة النتائج في Red Packet Assistant"
@@ -546,7 +672,7 @@
       "تحسين: ضبط مناطق اللمس للنقاط في نمط القفل لتحسين معدل نجاح رسم الأنماط المعقدة",
       "إصلاح: تعذّر استعادة مستوى صوت الوسائط بعد تلقي إشعار"
     ],
-    "أخرى": [
+    "آخرين": [
       "تحسين أمن واستقرار النظام"
     ]
   },
@@ -560,8 +686,17 @@
     "संपर्क": [
       "SIM कार्ड के संपर्कों को हटाया नहीं जा सकता था — ठीक किया गया"
     ],
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
+      "नया: सिस्टम थीम के अंतर्गत, लॉक स्क्रीन घड़ी तीन कस्टम शैलियों का समर्थन करती है, जिन्हें लॉक स्क्रीन की उन्नत सेटिंग्स में बदला जा सकता है।",
+      "अनुकूलन: पैटर्न पासवर्ड में बिंदुओं के ट्रिगर क्षेत्र समायोजित करके जटिल पैटर्न पासवर्ड बनाने की सफलता दर बढ़ाई गई",
+      "कुछ परिदृश्यों में MiPay द्वारा फ़िंगरप्रिंट सत्यापित न कर पाने की समस्या ठीक की गई",
+      "सूचना प्राप्त होने के बाद मीडिया वॉल्यूम बहाल न होने की समस्या ठीक की गई"
+    ],
     "सेटिंग्स": [
       "अनुकूलन: बड़े फ़ॉन्ट अब बेहतर प्रदर्शित होते हैं"
+    ],
+    "वर्चुअल असिस्टेंट": [
+      "नेटवर्क सहायक में ऑटो-करेक्शन बटन के काम न करने की समस्या ठीक की गई।"
     ],
     "सुरक्षा": [
       "Red Packet Assistant में परिणाम साझा करने में विफलता की समस्या ठीक की गई"
@@ -591,8 +726,20 @@
     "ئالاقە": [
       "SIM كارتىدىكى ئالاقىلارنى ئۆچۈرگىلى بولماسلىق مەسىلىسى تۈزەلدى."
     ],
+    "قۇلۇپ ئېكرانى، ھالەت بالدىقى، ئۇقتۇرۇش بالدىقى": [
+      "يېڭىلىق: سىستېما تېمىسى ئاستىدا قۇلۇپ ئېكران سائىتى ئۈچ خىل ئىختىيارىي ئۇسلۇبنى قوللايدۇ، قۇلۇپ ئېكراننىڭ ئالىي تەڭشەكلىرىدە ئۆزگەرتكىلى بولىدۇ.",
+      "ئەلالاشتۇرۇش: گرافىكلىق پارولدا چېكىتلەرنىڭ تەسىر كۆرسىتىش رايونىنى تەڭشەپ، مۇرەككەپ گرافىكلىق پارول سىزىشنىڭ مۇۋەپپەقىيەت نىسبىتىنى ئاشۇرۇش",
+      "بەزى ئەھۋاللاردا MiPay بارماق ئىزىنى دەلىللىيەلمەيدىغان مەسىلە ئوڭشالدى",
+      "ئۇقتۇرۇش ئالغاندىن كېيىن مېدىيا ئاۋازى ئەسلىگە كەلمىگەن مەسىلە ئوڭشالدى"
+    ],
     "تەڭشەك": [
       "ئەلالاشتۇرۇش: چوڭ خەتلىك كۆرۈنمە يۈزىنىڭ كۆرسىتىش ئۈنۈمى"
+    ],
+    "تور ياردەمچىسى": [
+      "تور ياردەمچىسىنىڭ ئاپتوماتىك تۈزىتىش كۇنۇپكىسى ئىشلىمەيدىغان مەسىلە ئوڭشالدى."
+    ],
+    "بىخەتەرلىك مەركىزى": [
+      "قىزىل پاكەت ياردەمچىسىنىڭ نەتىجىسىنى ھەمبەھىرلەش مەغلۇب بولۇش مەسىلىسىنى تۈزەتتى."
     ],
     "Xiaomi بۇلۇت مۇلازىمىتى": [
       "ياخشىلاندى: بۇلۇت مۇلازىمىتىنىڭ يېڭى باش بېتى، بۇلۇت بوشلۇقى ئۇچۇرى تېخىمۇ ئېنىق كۆرسىتىلىدۇ.",
@@ -619,6 +766,14 @@
     "Contacts": [
       "Fix: Contacts couldn't be deleted from SIM cards in some cases"
     ],
+    "Lockscreen, status bar, Notification shade": [
+      "གསར་སྣོན། རྒྱུད་ཁོངས་ཀྱི་བརྗོད་གཞིའི་འོག་སྒོ་སྒྲིག་ཆུ་ཚོད་ལ་རང་མོས་ཀྱི་བཀོད་ཚུལ་གསུམ་རྒྱབ་སྐྱོར་བྱེད་པ་དང་། སྒོ་སྒྲིག་གི་མཐོ་རིམ་སྒྲིག་གཞིའི་ནང་བསྒྱུར་བཅོས་བྱེད་ཐུབ།",
+      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
+      "གནས་ཚུལ་འགའ་ཞིག་གི་འོག་ཏུ MiPay ཡིས་མཛུབ་རྗེས་ཞིབ་བཤེར་བྱེད་མི་ཐུབ་པའི་གནད་དོན་བཅོས་བྱས།",
+      "བརྡ་ཐོ་ཐོབ་རྗེས་སྨྱན་སྦྱོར་གྱི་སྒྲ་ཚད་སླར་གསོ་མ་བྱུང་བའི་གནད་དོན་ལ་སྐྱོན་བཅོས་བྱས།",
+      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
+      "Fix: Media volume couldn't be restored after receiving a notification"
+    ],
     "སྒྲིག་སྟངས།": [
       "Optimization: Big fonts are displayed better now"
     ],
@@ -630,11 +785,6 @@
     ],
     "རིམ་ལུགས": [
       "ལེགས་བཅོས། Google བདེ་འཇགས་ཁ་གསབ (2019#7) གསར་སྒྱུར་བྱས་ཏེ། རྒྱུད་ཁོངས་ཀྱི་བདེ་འཇགས་ཡར་རྒྱས་བཏང་བ།"
-    ],
-    "Lockscreen, status bar, Notification shade": [
-      "New: Introducing customizable Lock screen clock (Settings > Lock screen & password > Advanced settings). New Lock screen clock doesn't work with third party themes.",
-      "Optimization: Readjusted sensitive areas for the dots in the unlock pattern",
-      "Fix: Media volume couldn't be restored after receiving a notification"
     ],
     "གཞན།": [
       "Improved system security and stability"

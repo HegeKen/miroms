@@ -11,6 +11,7 @@ miroms.logs_text - 日志文本判定与繁简转换
     LogText.to_simplified('設定')         # '设定'（需 zhconv 或 opencc）
 """
 import re
+import warnings
 from typing import Callable, Dict, Optional, Tuple
 
 
@@ -85,11 +86,23 @@ class LogText:
 			return cls._converter
 		cls._converter_checked = True
 		try:
-			import zhconv
-			cls._converter = ('zhconv', lambda text: zhconv.convert(text, 'zh-cn'))
-			return cls._converter
+			with warnings.catch_warnings():
+				# zhconv 1.4.x 导入时用已弃用的 pkg_resources，首次加载词典又没关闭文件句柄
+				# （ResourceWarning）；都收在适配层，避免污染 CLI / 测试输出
+				warnings.simplefilter('ignore', UserWarning)
+				warnings.simplefilter('ignore', ResourceWarning)
+				import zhconv
+				# 预热词典：懒加载发生在第一次 convert，把这条告警也收在同一上下文里；
+				# 词典损坏 / 缺失时仍保留转换器，真实调用会由 to_simplified 兜底返回 None
+				try:
+					zhconv.convert('設定', 'zh-cn')
+				except Exception:
+					pass
 		except ImportError:
 			pass
+		else:
+			cls._converter = ('zhconv', lambda text: zhconv.convert(text, 'zh-cn'))
+			return cls._converter
 		try:
 			from opencc import OpenCC
 			converter = OpenCC('t2s')

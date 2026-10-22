@@ -13,7 +13,7 @@
     "计算器": [
       "修复 未开启小爱同学情况下，计算器偶现崩溃的问题"
     ],
-    "相册": [
+    "画廊": [
       "新增 故事相册开关，一键控制是否展示你的相册故事卡片",
       "修复 未开启小爱同学情况下，计算器偶现崩溃的问题"
     ],
@@ -54,6 +54,10 @@
     "Calculator": [
       "Fix: When Mi AI was off, Calculator crashed in some cases"
     ],
+    "Album": [
+      "New Stories album toggle to control whether your album story cards are shown with one tap",
+      "Fix: When Mi AI was off, Calculator crashed in some cases"
+    ],
     "Weather": [
       "New: Animations for cloudy and smoggy weather",
       "Optimization: Adjustments for 15-day forecast curves"
@@ -78,9 +82,6 @@
     ],
     "Lock screen, status bar, notification shade": [
       "New: NFC shortcut in the Notification shade"
-    ],
-    "Gallery": [
-      "Fix: When Mi AI was off, Calculator crashed in some cases"
     ]
   },
   "logs_zh_tw": {
@@ -97,11 +98,15 @@
     "計算機": [
       "新增 故事卡片與照片優選開關"
     ],
+    "相簿": [
+      "新增 故事相簿開關，一鍵控制是否顯示你的相簿故事卡片",
+      "新增 故事卡片與照片優選開關"
+    ],
     "天氣": [
       "新增 陰天和霧霾動畫",
       "優化 15天趨勢介面適配"
     ],
-    "設定": [
+    "设置": [
       "優化 設置頁的系統應用與更多應用的文案和圖標"
     ],
     "遊戲加速": [
@@ -116,8 +121,8 @@
     "其他": [
       "Improved system security and stability"
     ],
-    "相簿": [
-      "新增 故事卡片與照片優選開關"
+    "設定": [
+      "優化 設置頁的系統應用與更多應用的文案和圖標"
     ]
   },
   "logs_ja": {
@@ -133,6 +138,9 @@
       "特定の日付で時計が強制終了する問題を修正",
       "タイマーページでボタンをタップした際にチラつく問題を修正",
       "特別な日付に時計がクラッシュする問題を修正"
+    ],
+    "アルバム": [
+      "ストーリーアルバムのスイッチを追加し、アルバムのストーリーカードを表示するかどうかをワンタップで制御できます"
     ],
     "天気": [
       "追加: 曇りとスモッグのアニメーション",
@@ -177,6 +185,9 @@
       "타이머 페이지에서 버튼을 탭할 때 깜빡이는 문제를 수정했습니다.",
       "특정 날짜에 시계가 비정상 종료되는 문제를 수정했습니다"
     ],
+    "앨범": [
+      "스토리 앨범 스위치 추가, 앨범 스토리 카드를 표시할지 원터치로 제어"
+    ],
     "날씨": [
       "추가: 흐린 날씨와 스모그 애니메이션",
       "최적화: 15일 추세 화면 적응 조정"
@@ -187,7 +198,7 @@
     "게임 가속": [
       "새 기능: 게임 중 수신 전화를 플로팅 창으로 표시"
     ],
-    "MI 월렛": [
+    "샤오미 지갑": [
       "신규: Mi Pay가 'UnionPay QuickPass' 결제를 지원합니다",
       "신규: Xiaomi 교통 징진지 호환 카드 사용자 지정 금액 충전 지원",
       "추가: Xiaomi 교통이 충칭 창퉁 카드를 지원합니다",
@@ -216,6 +227,9 @@
     "Часы": [
       "Исправлено: Кнопка таймера начинала мигать после нажатия",
       "Исправлено: Некорректное завершение работы приложения Часы в определенные дни"
+    ],
+    "Альбом": [
+      "Добавлен переключатель альбома историй для управления показом карточек историй в альбоме одним нажатием"
     ],
     "Погода": [
       "Добавлено: анимации для пасмурной погоды и смога",
@@ -250,6 +264,9 @@
       "Виправлено проблему мерехтіння кнопок на сторінці таймера під час натискання.",
       "Виправлено проблему аварійного завершення роботи Годинника в особливі дати"
     ],
+    "Альбом": [
+      "Додано перемикач альбому історій для керування показом карток історій в альбомі одним дотиком"
+    ],
     "Погода": [
       "Додано: анімації для похмурої погоди та смогу",
       "Оптимізація: адаптація інтерфейсу 15-денного тренду"
@@ -260,6 +277,12 @@
     "Прискорення ігор": [
       "Нове: Плаваючі вікна для вхідних викликів під час ігор",
       "Нове: плаваюче вікно для вхідних дзвінків під час ігор"
+    ],
+    "MI Гаманець": [
+      "Нове: Mi Pay тепер підтримує оплату UnionPay QuickPass",
+      "Додано: картка Xiaomi Transit для Пекіна, Тяньцзіня та Хебею підтримує поповнення на довільну суму",
+      "Додано: Xiaomi Транспорт підтримує картку Chongqing Changtong",
+      "Оптимізація сценарію використання сторінки відсутності мережі під час онлайн-оплати карткою в Mi Pay"
     ],
     "Екран блокування, рядок стану, панель сповіщень": [
       "Нове: ярлик NFC у панелі сповіщень"
@@ -285,6 +308,9 @@
       "Naprawiono migotanie przycisków na stronie timera po dotknięciu.",
       "Naprawiono problem z awarią aplikacji Zegar w specjalne dni"
     ],
+    "Album": [
+      "Dodano przełącznik albumu historii umożliwiający jednym dotknięciem włączenie lub wyłączenie wyświetlania kart historii w albumie"
+    ],
     "Pogoda": [
       "Dodano: animacje dla pochmurnej pogody i smogu",
       "Optymalizacja: dostosowanie interfejsu trendu 15-dniowego"
@@ -305,7 +331,7 @@
     "Ekran blokady, pasek powiadomień,panel powiadomień": [
       "Nowość: skrót NFC w panelu powiadomień"
     ],
-    "Inne": [
+    "Reszt": [
       "Większe bezpieczeństwo i stabilność systemu"
     ],
     "Ekran blokady, pasek stanu, panel powiadomień": [
@@ -325,6 +351,9 @@
       "Behebt das Flackern der Schaltflächen auf der Timer-Seite beim Antippen.",
       "Behebung des Problems, dass die Uhr an besonderen Tagen abstürzt"
     ],
+    "Galerie": [
+      "Neuer Schalter für Story-Album: Steuere mit einem Tippen, ob deine Album-Story-Karten angezeigt werden"
+    ],
     "Wetter": [
       "Neu: Animationen für bewölktes und smogiges Wetter",
       "Optimierung: Anpassung der 15-Tage-Trendansicht"
@@ -336,7 +365,7 @@
       "Neu: Schwebende Fenster für eingehende Anrufe während Spielen",
       "Neu: Schwebefenster für eingehende Anrufe in Spielen"
     ],
-    "MI Geldbörse": [
+    "Xiaomi Wallet": [
       "Neu: Mi Pay unterstützt jetzt UnionPay QuickPass-Zahlungen",
       "Neu: Benutzerdefinierte Aufladebeträge für Xiaomi Verkehrskarte „Jing-Jin-Ji“",
       "Neu: Xiaomi Transit unterstützt die Chongqing Changtong Karte",
@@ -364,6 +393,9 @@
       "Correction : l'horloge plantait à certaines dates",
       "Correction du clignotement des boutons de la page Minuteur lors d’un appui.",
       "Correction du problème de fermeture inattendue de l'application Horloge à certaines dates"
+    ],
+    "Album": [
+      "Ajout d'un interrupteur pour l'album de stories, permettant d'afficher ou non vos cartes de stories en un geste"
     ],
     "Météo": [
       "Nouveau : animations pour temps couvert et smog",
@@ -410,6 +442,9 @@
       "Risolto: Il pulsante del timer cominciava a lampeggiare quando veniva premuto",
       "Risolto: Chiusura forzata di Orologio in alcune date specifiche"
     ],
+    "Album": [
+      "Aggiunto l'interruttore album storie per controllare con un tocco se mostrare le card delle storie nell'album"
+    ],
     "Meteo": [
       "Nuovo: animazioni per tempo nuvoloso e smog",
       "Ottimizzazione: adattamento dell'interfaccia delle tendenze a 15 giorni"
@@ -449,17 +484,20 @@
       "Reparado: El botón del temporizador comenzó a parpadear después de ser pulsado",
       "Reparado: Cierre forzoso del Reloj en algunas fechas específicas"
     ],
+    "Álbum de fotos": [
+      "Se añade el interruptor de álbum de historias para controlar con un toque si se muestran las tarjetas de historias del álbum"
+    ],
     "Tiempo": [
       "Nuevo: animaciones para tiempo nublado y smog",
       "Optimización: adaptación de la interfaz de tendencia de 15 días"
     ],
-    "Ajustes": [
+    "Configuración": [
       "Optimización: Textos e iconos de Aplicaciones del sistema y Más aplicaciones en Ajustes"
     ],
     "Acelerador de juegos": [
       "Nuevo: Ventanas flotantes para llamadas entrantes durante juegos"
     ],
-    "MI Cartera": [
+    "Monedero de Xiaomi": [
       "Nuevo: Mi Pay ahora admite pagos UnionPay QuickPass",
       "Nuevo: importes de recarga personalizados para la tarjeta Xiaomi Transporte «Jing-Jin-Ji»",
       "Nuevo: Xiaomi Transit es compatible con la tarjeta Chongqing Changtong",
@@ -470,6 +508,9 @@
     ],
     "Pantalla de bloqueo, barra de estado, panel de notificaciones": [
       "Nuevo: Acceso directo al NFC en la Barra de notificaciones"
+    ],
+    "Ajustes": [
+      "Optimización: Textos e iconos de Aplicaciones del sistema y Más aplicaciones en Ajustes"
     ]
   },
   "logs_pt": {
@@ -484,6 +525,9 @@
       "Correção: o Relógio fechava à força em datas específicas",
       "Corrigido o problema de os botões da página do timer piscarem ao tocar.",
       "Corrigido o problema de fechamento inesperado do Relógio em datas especiais"
+    ],
+    "Álbum": [
+      "Adicionado o interruptor do álbum de histórias para controlar com um toque se os cartões de histórias do álbum são exibidos"
     ],
     "Clima": [
       "Novo: animações para tempo nublado e smog",
@@ -528,6 +572,9 @@
       "Onarım: Zamanlayıcı tuşu, dokunulduktan sonra yanmaya başladı",
       "Onarım: Saat, belirli tarihlerde kapanmaya zorlandı"
     ],
+    "albüm": [
+      "Albüm hikâyeleri kartlarının gösterilip gösterilmeyeceğini tek dokunuşla kontrol eden hikâye albümü anahtarı eklendi"
+    ],
     "Hava durumu": [
       "Yeni: bulutlu ve dumanlı hava animasyonları",
       "Optimizasyon: 15 günlük trend arayüzü uyarlaması"
@@ -565,6 +612,9 @@
       "Memperbaiki masalah tombol di halaman Timer berkedip saat diketuk.",
       "Memperbaiki masalah aplikasi Jam yang force close pada tanggal khusus"
     ],
+    "Album": [
+      "Menambahkan tombol album cerita untuk mengatur apakah kartu cerita album ditampilkan dengan sekali ketuk"
+    ],
     "Cuaca": [
       "Baru: animasi cuaca mendung dan smog",
       "Optimasi: penyesuaian antarmuka tren 15 hari"
@@ -575,7 +625,7 @@
     "Peningkat kecepatan permainan": [
       "Baru: Jendela mengambang untuk panggilan masuk saat bermain permainan"
     ],
-    "MI Dompet": [
+    "Xiaomi Wallet": [
       "Baru: Mi Pay kini mendukung pembayaran UnionPay QuickPass",
       "Baru: isi ulang dengan nominal khusus untuk kartu Xiaomi Transportasi “Jing-Jin-Ji”",
       "Baru: Xiaomi Transit mendukung kartu Chongqing Changtong",
@@ -608,6 +658,9 @@
       "Đã khắc phục lỗi nhấp nháy nút trên trang Hẹn giờ khi chạm.",
       "Sửa lỗi ứng dụng Đồng hồ bị thoát đột ngột vào những ngày đặc biệt"
     ],
+    "Album": [
+      "Thêm công tắc album câu chuyện để bật/tắt hiển thị thẻ câu chuyện trong album chỉ với một lần chạm"
+    ],
     "Thời tiết": [
       "Mới: hoạt ảnh thời tiết nhiều mây và khói bụi",
       "Tối ưu hóa: điều chỉnh giao diện xu hướng 15 ngày"
@@ -619,7 +672,7 @@
       "Mới: Cửa sổ nổi cho cuộc gọi đến trong khi chơi game",
       "Mới: cửa sổ nổi cho cuộc gọi đến khi chơi game"
     ],
-    "MI Ví": [
+    "Tiền túi Xiaomi": [
       "Mới: Mi Pay hiện hỗ trợ thanh toán UnionPay QuickPass",
       "Mới: nạp tiền với số tiền tùy chỉnh cho thẻ Xiaomi Giao thông “Jing-Jin-Ji”",
       "Mới: Xiaomi Transit hỗ trợ thẻ Chongqing Changtong",
@@ -645,6 +698,9 @@
       "แก้ไขปัญหานาฬิกาหยุดทำงานในวันที่เฉพาะเจาะจง",
       "แก้ไขปัญหาปุ่มในหน้า Timer กระพริบเมื่อแตะ",
       "แก้ไขปัญหานาฬิกาหยุดทำงานในวันที่พิเศษ"
+    ],
+    "คลังภาพ": [
+      "เพิ่มสวิตช์อัลบั้มเรื่องราว เพื่อควบคุมการแสดงการ์ดเรื่องราวในอัลบั้มด้วยการแตะครั้งเดียว"
     ],
     "สภาพอากาศ": [
       "ใหม่: แอนิเมชันสภาพอากาศครึ้มและหมอกควัน",
@@ -686,6 +742,9 @@
       "إصلاح مشكلة وميض زر صفحة المؤقت عند النقر عليه",
       "إصلاح مشكلة تعطل تطبيق الساعة في تواريخ محددة"
     ],
+    "ألبوم الصور": [
+      "إضافة مفتاح ألبوم القصص للتحكم في عرض بطاقات قصص الألبوم بنقرة واحدة"
+    ],
     "الطقس": [
       "جديد: رسوم متحركة للطقس الغائم والضباب الدخاني",
       "التحسين: تكييف واجهة اتجاه 15 يومًا"
@@ -705,7 +764,7 @@
     "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
       "جديد: اختصار NFC في لوحة الإشعارات"
     ],
-    "أخرى": [
+    "آخرين": [
       "تحسين أمن واستقرار النظام"
     ],
     "شاشة القفل، شريط الحالة، لوحة الإشعارات": [
@@ -732,6 +791,9 @@
       "कुछ खास तारीखों पर घड़ी के क्रैश होने की समस्या ठीक की गई",
       "टाइमर पेज पर बटन क्लिक करने पर होने वाली झिलमिलाहट की समस्या ठीक की गई।",
       "विशेष तिथियों पर घड़ी के क्रैश होने की समस्या ठीक की गई"
+    ],
+    "अल्बम": [
+      "स्टोरीज़ एल्बम स्विच जोड़ा गया, जिससे एक टैप में नियंत्रित करें कि आपके एल्बम स्टोरी कार्ड दिखें या नहीं"
     ],
     "मौसम": [
       "नया: बादलों और स्मॉग वाले मौसम के एनिमेशन",

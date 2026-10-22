@@ -32,8 +32,28 @@
     "System": [
       "Optimization: Updated Android Security Patch to June 2019. Increased system security."
     ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "New: Adjusted the visual style of the notification shade",
+      "Optimized: Changed the page that opens after long-pressing the screenshot toggle and screen recording toggle.",
+      "Fixed the issue where the status bar height was too low",
+      "Fix the issue where notification icons turn into gray squares in native notification style",
+      "Optimized the way to open the lock screen camera to press and hold the camera icon and swipe left."
+    ],
+    "Settings": [
+      "Added password management feature",
+      "Added related search at the bottom of Settings",
+      "Optimized the display of hierarchical relationships on the Settings home page",
+      "Moved \"Always-on display & Lock screen\" above \"Display\""
+    ],
     "Blocklist": [
       "Press and drag the Lock screen shortcut to open Camera"
+    ],
+    "Mi AI voice assistant": [
+      "Added: Support contact lookup. Long press a number to copy it. Try saying 'query mom's phone'.",
+      "Added: Try saying \"Open Douyin trending searches\" or \"Open Douyin Following\" — Xiao AI helps you enjoy a wonderful life!"
+    ],
+    "Mi Cloud": [
+      "Fix the issue where the banner content on the Cloud service homepage is inconsistent with the landing page"
     ],
     "Lockscreen, status bar, Notification shade": [
       "Press and drag the Lock screen shortcut to open Camera"
@@ -42,86 +62,426 @@
   "logs_zh_tw": {
     "系統": [
       "優化 更新Android安全性修補程式等級(2019#6)，提升系統安全性"
+    ],
+    "解鎖畫面、狀態欄、通知欄": [
+      "新增 調整通知欄視覺風格",
+      "優化 修改截圖開關和錄屏開關長按後的跳轉頁面",
+      "修復狀態欄高度過低的問題",
+      "修復原生通知樣式下，通知圖示變為灰色方框的問題",
+      "將開啟鎖屏相機方式優化為按住相機圖示向左橫滑"
+    ],
+    "设置": [
+      "新增 密碼管理功能",
+      "新增 設定底部的關聯搜尋",
+      "優化 設定首頁層級關係的顯示",
+      "「息屏與鎖屏」的位置移至「顯示」的上方"
+    ],
+    "小愛同學": [
+      "新增 支援查詢聯絡人，長按號碼可進行複製，試試說「查詢媽媽的電話」；",
+      "新增 試試說「打開抖音熱搜」「打開抖音關注」，小愛帶你玩轉美好生活！"
+    ],
+    "小米雲服務": [
+      "修復 雲服務首頁橫幅內容與落地頁不一致的問題"
     ]
   },
   "logs_ja": {
     "システム": [
       "最適化: Android セキュリティパッチを 2019 年 6 月版に更新しました。システムの安全性が向上しました。"
+    ],
+    "ロック画面、ステータスバー、通知バー": [
+      "追加: 通知パネルのビジュアルスタイルを調整",
+      "最適化 スクリーンショットスイッチと画面録画スイッチを長押しした後の遷移先ページを変更",
+      "ステータスバーの高さが低すぎる問題を修正",
+      "ネイティブ通知スタイルで通知アイコンが灰色の四角になる問題を修正",
+      "ロック画面のカメラを開く方法を、カメラアイコンを長押しして左にスワイプするよう最適化"
+    ],
+    "設定": [
+      "パスワード管理機能を追加",
+      "設定下部の関連検索を追加",
+      "設定ホームの階層関係の表示を最適化",
+      "「常時表示ディスプレイとロック画面」の位置を「ディスプレイ」の上に移動しました"
+    ],
+    "Mi AI音声アシスタント": [
+      "追加 連絡先の検索に対応。番号を長押しするとコピーできます。「ママの電話番号を調べて」と言ってみてください。",
+      "追加 「抖音の急上昇検索を開く」「抖音のフォローを開く」と言ってみてください。Xiao AI が素敵な生活をお手伝いします！"
+    ],
+    "Xiaomi クラウドサービス": [
+      "クラウドサービスのホームページのバナー内容がランディングページと一致しない問題を修正しました"
     ]
   },
   "logs_ko": {
     "시스템": [
       "최적화: Android 보안 패치를 2019년 6월로 업데이트했습니다. 시스템 보안이 향상되었습니다."
+    ],
+    "잠금 화면, 상태 표시줄, 알림 표시줄": [
+      "추가: 알림 패널의 시각적 스타일 조정",
+      "최적화 스크린샷 스위치와 화면 녹화 스위치를 길게 누른 후 이동하는 페이지 수정",
+      "상태 표시줄 높이가 너무 낮은 문제를 수정했습니다",
+      "기본 알림 스타일에서 알림 아이콘이 회색 사각형으로 표시되는 문제를 수정",
+      "잠금 화면 카메라를 여는 방식을 카메라 아이콘을 길게 눌러 왼쪽으로 밀도록 최적화했습니다"
+    ],
+    "설정": [
+      "비밀번호 관리 기능 추가",
+      "설정 하단의 관련 검색 추가",
+      "설정 홈페이지의 계층 관계 표시 최적화",
+      "「상시 표시 및 잠금 화면」의 위치가 「디스플레이」 위로 이동되었습니다."
+    ],
+    "Mi AI 음성 도우미": [
+      "추가 연락처 조회 지원, 번호를 길게 눌러 복사할 수 있습니다. '엄마 전화번호 조회'라고 말해보세요.",
+      "추가 \"Douyin 인기 검색어 열기\", \"Douyin 팔로잉 열기\"라고 말해 보세요. Xiao AI가 더 나은 생활을 안내합니다!"
+    ],
+    "Xiaomi 클라우드 서비스": [
+      "클라우드 서비스 홈페이지 배너 콘텐츠가 랜딩 페이지와 일치하지 않는 문제를 수정했습니다"
     ]
   },
   "logs_ru": {
     "Система": [
       "Оптимизация: Обновление системы безопасности Android (июнь 2019 года). Улучшена безопасность системы."
+    ],
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Добавлено: скорректирован визуальный стиль панели уведомлений",
+      "Оптимизировано: изменена страница, открывающаяся после долгого нажатия на переключатели скриншота и записи экрана.",
+      "Исправлена проблема со слишком низкой высотой строки состояния",
+      "Исправлена проблема, из-за которой значки уведомлений становились серыми квадратами в собственном стиле уведомлений.",
+      "Оптимизирован способ открытия камеры на экране блокировки: нажмите и удерживайте значок камеры и проведите влево."
+    ],
+    "Настройки": [
+      "Добавлена функция управления паролями",
+      "Добавлен связанный поиск внизу настроек",
+      "Оптимизировано отображение иерархических связей на главной странице настроек",
+      "Положение «Always-on display и экран блокировки» перемещено выше «Дисплей»."
+    ],
+    "Голосовой помощник Mi AI": [
+      "Добавлено: поддержка поиска контактов. Долгое нажатие на номер позволяет скопировать его. Попробуйте сказать «найди мамин телефон».",
+      "Добавлено. Попробуйте сказать «Открыть тренды Douyin» или «Открыть подписки Douyin» — Xiao AI поможет вам наслаждаться жизнью!"
+    ],
+    "Облачный сервис Xiaomi": [
+      "Исправлена проблема несоответствия содержимого баннера на главной странице облачного сервиса и целевой страницы"
     ]
   },
   "logs_uk": {
     "Система": [
       "Оптимізація: Оновлено патч безпеки Google (2019#6), підвищено безпеку системи."
+    ],
+    "Екран блокування, рядок стану, рядок сповіщень": [
+      "Додано: скориговано візуальний стиль панелі сповіщень",
+      "Оптимізовано: змінено сторінку, що відкривається після довгого натискання на перемикачі скріншоту та запису екрана.",
+      "Виправлено проблему із занадто малою висотою рядка стану",
+      "Виправлено проблему, через яку значки сповіщень ставали сірими квадратами у власному стилі сповіщень.",
+      "Оптимізовано спосіб відкриття камери на екрані блокування: натисніть і утримуйте значок камери та проведіть вліво."
+    ],
+    "Налаштування": [
+      "Додано функцію керування паролями",
+      "Додано пов’язаний пошук унизу налаштувань",
+      "Оптимізовано відображення ієрархічних зв'язків на головній сторінці налаштувань",
+      "Положення «Always-on display та екран блокування» переміщено вище «Дисплей»."
+    ],
+    "Голосовий помічник Mi AI": [
+      "Додано: підтримка пошуку контактів. Довге натискання на номер дозволяє скопіювати його. Спробуйте сказати «знайди мамин телефон».",
+      "Додано. Спробуйте сказати «Відкрити тренди Douyin» або «Відкрити підписки Douyin» — Xiao AI допоможе вам насолоджуватися життям!"
+    ],
+    "Хмарний сервіс Xiaomi": [
+      "Виправлено проблему невідповідності вмісту банера на головній сторінці хмарного сервісу та цільової сторінки"
     ]
   },
   "logs_pl": {
     "System": [
       "Optymalizacja: Zaktualizowano poprawkę zabezpieczeń Google (2019#6), zwiększono bezpieczeństwo systemu."
+    ],
+    "Ekran blokady, pasek stanu, pasek powiadomień": [
+      "Dodano: dostosowano styl wizualny panelu powiadomień",
+      "Zoptymalizowano: zmieniono stronę otwieraną po długim naciśnięciu przełączników zrzutu ekranu i nagrywania ekranu.",
+      "Naprawiono problem zbyt niskiej wysokości paska stanu",
+      "Naprawiono problem, w którym ikony powiadomień stawały się szarymi kwadratami w natywnym stylu powiadomień.",
+      "Zoptymalizowano sposób otwierania aparatu na ekranie blokady: przytrzymaj ikonę aparatu i przesuń w lewo."
+    ],
+    "Ustawienia": [
+      "Dodano funkcję zarządzania hasłami",
+      "Dodano powiązane wyszukiwanie na dole Ustawień",
+      "Zoptymalizowano wyświetlanie relacji hierarchicznych na stronie głównej ustawień",
+      "Pozycja „Always-on display i ekran blokady” została przeniesiona nad „Wyświetlacz”."
+    ],
+    "Mi Inteligentny asystent głosowy": [
+      "Dodano: obsługa wyszukiwania kontaktów. Długie naciśnięcie numeru umożliwia skopiowanie. Spróbuj powiedzieć „znajdź numer mamy”.",
+      "Dodano: Spróbuj powiedzieć „Otwórz popularne wyszukiwania Douyin” lub „Otwórz obserwowane Douyin” — Xiao AI pomoże Ci cieszyć się życiem!"
+    ],
+    "Usługa w chmurze Xiaomi": [
+      "Naprawiono problem niezgodności treści banera na stronie głównej usługi w chmurze ze stroną docelową"
     ]
   },
   "logs_de": {
     "System": [
       "Optimierung: Android-Sicherheitspatch auf Juni 2019 aktualisiert. Systemsicherheit verbessert."
+    ],
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
+      "Neu: Visuellen Stil des Benachrichtigungsbereichs angepasst",
+      "Optimiert: Die Seite, die nach langem Drücken der Screenshot- und Bildschirmaufnahme-Schalter geöffnet wird, wurde geändert.",
+      "Problem mit zu geringer Höhe der Statusleiste behoben",
+      "Das Problem wurde behoben, bei dem Benachrichtigungssymbole im nativen Benachrichtigungsstil als graue Quadrate angezeigt wurden.",
+      "Die Methode zum Öffnen der Kamera auf dem Sperrbildschirm wurde optimiert: Kamerasymbol gedrückt halten und nach links wischen."
+    ],
+    "Einstellungen": [
+      "Passwortverwaltung hinzugefügt",
+      "Verwandte Suche unten in den Einstellungen hinzugefügt",
+      "Optimierte Anzeige der Hierarchiebeziehungen auf der Einstellungsstartseite",
+      "Die Position von „Always-on-Display & Sperrbildschirm“ wurde über „Display“ verschoben."
+    ],
+    "Mi KI-Sprachassistent": [
+      "Hinzugefügt: Unterstützung für Kontaktsuche. Lange auf eine Nummer drücken, um sie zu kopieren. Sage zum Beispiel „Mamas Telefonnummer suchen“.",
+      "Neu: Sag „Douyin-Trends öffnen“ oder „Douyin-Following öffnen“ – Xiao AI hilft dir, das Leben zu genießen!"
+    ],
+    "Xiaomi Cloud-Dienst": [
+      "Das Problem behoben, dass der Bannerinhalt der Cloud-Dienst-Startseite nicht mit der Landingpage übereinstimmt"
     ]
   },
   "logs_fr": {
     "Système": [
       "Optimisation Mise à jour du correctif de sécurité Android jusqu'en juin 2019. Sécurité accrue du système."
+    ],
+    "Écran de verrouillage, barre d’état, barre de notifications": [
+      "Nouveau : ajustement du style visuel du panneau de notifications",
+      "Optimisé : modification de la page ouverte après un appui long sur les commutateurs de capture d'écran et d'enregistrement d'écran.",
+      "Correction du problème de hauteur trop faible de la barre d’état",
+      "Correction du problème où les icônes de notification devenaient des carrés gris dans le style de notification natif.",
+      "La méthode d’ouverture de l’appareil photo sur l’écran de verrouillage a été optimisée : maintenez l’icône de l’appareil photo et balayez vers la gauche."
+    ],
+    "Paramètres": [
+      "Ajout de la gestion des mots de passe",
+      "Ajout de la recherche associée en bas des Paramètres",
+      "Optimisation de l'affichage des relations hiérarchiques sur la page d'accueil des paramètres",
+      "La position de « Always-on display et écran de verrouillage » a été déplacée au-dessus de « Affichage »."
+    ],
+    "Assistant vocal IA Mi": [
+      "Ajout : prise en charge de la recherche de contacts. Appuyez longuement sur un numéro pour le copier. Essayez de dire « recherche le téléphone de maman ».",
+      "Ajout : Essayez de dire « Ouvrir les tendances Douyin » ou « Ouvrir les abonnements Douyin » — Xiao AI vous aide à profiter de la vie !"
+    ],
+    "Service cloud Xiaomi": [
+      "Correction du problème d’incohérence entre le contenu de la bannière de la page d’accueil du service cloud et la page de destination"
     ]
   },
   "logs_it": {
     "Sistema": [
       "Ottimizzazione: Aggiornamento della patch di sicurezza Android a giugno 2019. Maggiore sicurezza del sistema."
+    ],
+    "Schermata di blocco, barra di stato, barra delle notifiche": [
+      "Nuovo: regolato lo stile visivo del pannello notifiche",
+      "Ottimizzato: modificata la pagina che si apre dopo una pressione prolungata sugli interruttori di screenshot e registrazione schermo.",
+      "Risolto il problema dell'altezza troppo bassa della barra di stato",
+      "Risolto il problema per cui le icone delle notifiche diventavano quadrati grigi nello stile di notifica nativo.",
+      "Ottimizzato il modo per aprire la fotocamera nella schermata di blocco: tieni premuta l’icona della fotocamera e scorri a sinistra."
+    ],
+    "Impostazioni": [
+      "Aggiunta gestione password",
+      "Aggiunta ricerca correlata in fondo alle Impostazioni",
+      "Ottimizzata la visualizzazione delle relazioni gerarchiche nella schermata iniziale delle Impostazioni",
+      "La posizione di «Always-on display e schermo di blocco» è stata spostata sopra «Display»."
+    ],
+    "Assistente vocale Mi AI": [
+      "Aggiunto: supporto per la ricerca contatti. Tieni premuto su un numero per copiarlo. Prova a dire «cerca il telefono della mamma».",
+      "Aggiunto: Prova a dire \"Apri le tendenze di Douyin\" o \"Apri i seguiti di Douyin\" — Xiao AI ti aiuta a goderti la vita!"
+    ],
+    "Servizio cloud Xiaomi": [
+      "Risolto il problema di incoerenza tra il contenuto del banner della home del servizio cloud e la pagina di destinazione"
     ]
   },
   "logs_es": {
     "Sistema": [
       "Optimización: Parche de seguridad de Android actualizado a junio de 2019. Seguridad del sistema incrementada."
+    ],
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Nuevo: se ha ajustado el estilo visual del panel de notificaciones",
+      "Optimizado: se ha cambiado la página que se abre al mantener pulsados los interruptores de captura de pantalla y grabación de pantalla.",
+      "Se corrigió el problema de altura demasiado baja de la barra de estado",
+      "Se ha corregido el problema por el que los iconos de notificación se convertían en cuadros grises con el estilo de notificación nativo.",
+      "Se ha optimizado la forma de abrir la cámara en la pantalla de bloqueo: mantén pulsado el icono de la cámara y desliza a la izquierda."
+    ],
+    "Configuración": [
+      "Se añadió la gestión de contraseñas",
+      "Se añade búsqueda relacionada al final de Ajustes",
+      "Optimizada la visualización de las relaciones jerárquicas en la página de inicio de Ajustes",
+      "La posición de «Always-on display y pantalla de bloqueo» se ha movido encima de «Pantalla»."
+    ],
+    "Asistente de voz Mi IA": [
+      "Añadido: compatibilidad con búsqueda de contactos. Mantén pulsado un número para copiarlo. Prueba a decir «busca el teléfono de mamá».",
+      "Añadido: Prueba a decir \"Abrir tendencias de Douyin\" o \"Abrir seguidos de Douyin\"; ¡Xiao AI te ayuda a disfrutar de la vida!"
+    ],
+    "Servicio en la nube de Xiaomi": [
+      "Se corrige el problema de incoherencia entre el contenido del banner de la página principal del servicio en la nube y la página de destino"
     ]
   },
   "logs_pt": {
     "Sistema": [
       "Otimização Atualização do Patch de Segurança do Android para Junho de 2019. Segurança do sistema aprimorada."
+    ],
+    "Tela de bloqueio, barra de status, barra de notificações": [
+      "Novo: estilo visual do painel de notificações ajustado",
+      "Otimizado: alterada a página que abre após pressionar longamente os interruptores de captura de tela e gravação de tela.",
+      "Corrigido o problema de altura muito baixa da barra de status",
+      "Corrigido o problema em que os ícones de notificação se tornavam quadrados cinzentos no estilo de notificação nativo.",
+      "Otimizado o modo de abrir a câmara na tela de bloqueio: mantenha o ícone da câmara pressionado e deslize para a esquerda."
+    ],
+    "Configurações": [
+      "Adicionado gerenciamento de senhas",
+      "Adicionada pesquisa relacionada na parte inferior das Configurações",
+      "Otimizada a exibição das relações hierárquicas na página inicial das Configurações",
+      "A posição de «Always-on display e ecrã de bloqueio» foi movida para cima de «Ecrã»."
+    ],
+    "Assistente de voz Mi AI": [
+      "Adicionado: suporte para pesquisa de contatos. Pressione e segure um número para copiá-lo. Tente dizer «pesquisar o telefone da mamãe».",
+      "Adicionado: Experimente dizer \"Abrir tendências do Douyin\" ou \"Abrir seguindo do Douyin\" — Xiao AI ajuda você a aproveitar a vida!"
+    ],
+    "Serviço de nuvem Xiaomi": [
+      "Corrigido o problema de inconsistência entre o conteúdo do banner da página inicial do serviço em nuvem e a página de destino"
     ]
   },
   "logs_tr": {
     "Sistem": [
       "Optimizasyon: Android Güvenlik Yaması Haziran 2019 sürümüne güncellendi. Sistem güvenliği artırıldı."
+    ],
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Yeni: Bildirim panelinin görsel stili ayarlandı",
+      "Optimize edildi: Ekran görüntüsü ve ekran kaydı anahtarlarına uzun basıldığında açılan sayfa değiştirildi.",
+      "Durum çubuğu yüksekliğinin çok düşük olması sorunu düzeltildi",
+      "Yerel bildirim stilinde bildirim simgelerinin gri karelere dönüşmesi sorunu giderildi.",
+      "Kilit ekranında kamerayı açma yöntemi, kamera simgesini basılı tutup sola kaydırma olarak optimize edildi."
+    ],
+    "Ayarlar": [
+      "Parola yönetimi eklendi",
+      "Ayarlar'ın altına ilgili arama eklendi",
+      "Ayarlar ana sayfasındaki hiyerarşi ilişkilerinin görünümü iyileştirildi",
+      "«Always-on display ve kilit ekranı» konumu «Ekran»ın üzerine taşındı."
+    ],
+    "Mi AI sesli yardımcı": [
+      "Eklendi: kişi arama desteği. Bir numarayı kopyalamak için uzun basın. 'Annemin telefonunu ara' demeyi deneyin.",
+      "Eklendi: \"Douyin gündemlerini aç\" veya \"Douyin takip edilenleri aç\" demeyi deneyin — Xiao AI hayatın tadını çıkarmanıza yardımcı olur!"
+    ],
+    "Xiaomi Bulut Hizmeti": [
+      "Bulut hizmeti ana sayfasındaki banner içeriğinin açılış sayfasıyla tutarsız olması sorunu düzeltildi"
     ]
   },
   "logs_id": {
     "Sistem": [
       "Pengoptimalan Patch Keamanan Android diperbarui hingga Juni 2019. Keamanan sistem ditingkatkan."
+    ],
+    "Layar kunci, bilah status, bilah notifikasi": [
+      "Baru: Gaya visual panel notifikasi disesuaikan",
+      "Dioptimalkan: Mengubah halaman yang terbuka setelah menekan lama tombol tangkapan layar dan perekaman layar.",
+      "Memperbaiki masalah tinggi bilah status yang terlalu rendah",
+      "Memperbaiki masalah ikon notifikasi menjadi kotak abu-abu pada gaya notifikasi bawaan.",
+      "Mengoptimalkan cara membuka kamera di layar kunci menjadi tekan dan tahan ikon kamera lalu geser ke kiri."
+    ],
+    "Pengaturan": [
+      "Menambahkan fitur pengelolaan kata sandi",
+      "Menambahkan pencarian terkait di bagian bawah Pengaturan",
+      "Mengoptimalkan tampilan hubungan hierarki di halaman utama Setelan",
+      "Posisi «Always-on display & layar kunci» dipindahkan ke atas «Tampilan»."
+    ],
+    "Mi AI Asisten suara": [
+      "Ditambahkan: dukungan pencarian kontak. Tekan lama nomor untuk menyalin. Coba ucapkan 'cari telepon ibu'.",
+      "Ditambahkan: Coba ucapkan \"Buka trending Douyin\" atau \"Buka following Douyin\" — Xiao AI membantumu menikmati hidup!"
+    ],
+    "Layanan Cloud Xiaomi": [
+      "Memperbaiki masalah ketidakcocokan konten banner beranda layanan cloud dengan halaman landing"
     ]
   },
   "logs_vi": {
     "Hệ thống": [
       "Tối ưu hóa: Đã cập nhật bản vá bảo mật Google (2019#6), tăng cường bảo mật hệ thống."
+    ],
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Mới: Điều chỉnh phong cách trực quan của bảng thông báo",
+      "Tối ưu hóa: Thay đổi trang mở ra sau khi nhấn giữ công tắc chụp màn hình và ghi màn hình.",
+      "Đã khắc phục sự cố chiều cao thanh trạng thái quá thấp",
+      "Đã khắc phục sự cố biểu tượng thông báo chuyển thành hình vuông màu xám trong kiểu thông báo gốc.",
+      "Tối ưu cách mở camera trên màn hình khóa thành nhấn giữ biểu tượng camera và vuốt sang trái."
+    ],
+    "Cài đặt": [
+      "Thêm tính năng quản lý mật khẩu",
+      "Đã thêm tìm kiếm liên quan ở cuối Cài đặt",
+      "Tối ưu hóa hiển thị mối quan hệ phân cấp trên trang chính Cài đặt",
+      "Vị trí «Màn hình luôn bật và màn hình khóa» đã được di chuyển lên trên «Màn hình»."
+    ],
+    "Trợ lý thoại Mi AI": [
+      "Đã thêm: hỗ trợ tra cứu danh bạ. Nhấn giữ số để sao chép. Hãy thử nói 'tra cứu số điện thoại của mẹ'.",
+      "Đã thêm: Hãy thử nói \"Mở xu hướng Douyin\" hoặc \"Mở theo dõi Douyin\" — Xiao AI giúp bạn tận hưởng cuộc sống!"
+    ],
+    "Dịch vụ đám mây Xiaomi": [
+      "Đã sửa lỗi nội dung banner trang chủ dịch vụ đám mây không khớp với trang đích"
     ]
   },
   "logs_th": {
     "ระบบ": [
       "การปรับให้เหมาะสม: อัปเดตแพตช์ความปลอดภัยของ Google (2019#6) เพิ่มความปลอดภัยของระบบ"
+    ],
+    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
+      "ใหม่: ปรับสไตล์ภาพของแผงการแจ้งเตือน",
+      "ปรับให้เหมาะสม: เปลี่ยนหน้าที่เปิดหลังจากกดปุ่มสกรีนช็อตและปุ่มบันทึกหน้าจอค้างไว้",
+      "แก้ไขปัญหาความสูงของแถบสถานะต่ำเกินไป",
+      "แก้ไขปัญหาที่ไอคอนการแจ้งเตือนกลายเป็นสี่เหลี่ยมสีเทาในสไตล์การแจ้งเตือนแบบเนทีฟ",
+      "ปรับวิธีเปิดกล้องบนหน้าจอล็อกให้เป็นการกดไอคอนกล้องค้างไว้แล้วปัดไปทางซ้าย"
+    ],
+    "การตั้งค่า": [
+      "เพิ่มฟีเจอร์จัดการรหัสผ่าน",
+      "เพิ่มการค้นหาที่เกี่ยวข้องที่ด้านล่างของการตั้งค่า",
+      "ปรับปรุงการแสดงความสัมพันธ์ตามลำดับชั้นบนหน้าหลักการตั้งค่า",
+      "ตำแหน่งของ «Always-on display และหน้าจอล็อก» ถูกย้ายไปไว้ด้านบนของ «หน้าจอ»"
+    ],
+    "Mi AI สั่งงานด้วยเสียง": [
+      "เพิ่มการสนับสนุนการค้นหารายชื่อผู้ติดต่อ กดหมายเลขค้างไว้เพื่อคัดลอก ลองพูดว่า 'ค้นหาเบอร์โทรของแม่'",
+      "เพิ่มแล้ว: ลองพูดว่า \"เปิดเทรนด์ Douyin\" หรือ \"เปิดรายการติดตาม Douyin\" — Xiao AI ช่วยให้คุณเพลิดเพลินกับชีวิต!"
+    ],
+    "บริการคลาวด์ Xiaomi": [
+      "แก้ไขปัญหาที่เนื้อหาแบนเนอร์ของหน้าแรกบริการคลาวด์ไม่สอดคล้องกับหน้า Landing Page"
     ]
   },
   "logs_ar": {
     "النظام": [
       "تحسين: تحديث تصحيح أمان Google (2019#6) لتحسين أمان النظام."
+    ],
+    "شاشة القفل، شريط الحالة، شريط الإشعارات": [
+      "جديد: تعديل النمط المرئي للوحة الإشعارات",
+      "تحسين: تغيير الصفحة التي تفتح بعد الضغط مطولاً على مفتاحي لقطة الشاشة وتسجيل الشاشة.",
+      "تم إصلاح مشكلة انخفاض ارتفاع شريط الحالة",
+      "تم إصلاح مشكلة تحول أيقونات الإشعارات إلى مربعات رمادية في نمط الإشعارات الأصلي.",
+      "تم تحسين طريقة فتح الكاميرا على شاشة القفل لتكون الضغط مع الاستمرار على أيقونة الكاميرا والسحب إلى اليسار."
+    ],
+    "الإعدادات": [
+      "إضافة ميزة إدارة كلمات المرور",
+      "إضافة بحث ذي صلة أسفل الإعدادات",
+      "تحسين عرض العلاقات الهرمية في الصفحة الرئيسية للإعدادات",
+      "تم نقل موضع «العرض الدائم وشاشة القفل» إلى أعلى «العرض»."
+    ],
+    "مساعد الصوت Mi AI": [
+      "تمت الإضافة: دعم البحث عن جهات الاتصال. اضغط مطولاً على الرقم لنسخه. جرّب أن تقول 'ابحث عن هاتف أمي'.",
+      "تمت الإضافة: جرّب قول \"فتح اتجاهات Douyin\" أو \"فتح متابعات Douyin\" — يساعدك Xiao AI على الاستمتاع بالحياة!"
+    ],
+    "خدمة Xiaomi السحابية": [
+      "تم إصلاح مشكلة عدم تطابق محتوى البانر في الصفحة الرئيسية لخدمة السحابة مع صفحة الهبوط"
     ]
   },
   "logs_in": {
     "सिस्टम": [
       "अनुकूलन: Google सुरक्षा पैच (2019#6) अपडेट किया गया, सिस्टम की सुरक्षा बढ़ाई गई।"
+    ],
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
+      "नया: सूचना पैनल की दृश्य शैली समायोजित की गई",
+      "अनुकूलित: स्क्रीनशॉट स्विच और स्क्रीन रिकॉर्डिंग स्विच को देर तक दबाने के बाद खुलने वाले पृष्ठ को बदला गया।",
+      "स्टेटस बार की ऊंचाई बहुत कम होने की समस्या ठीक की गई",
+      "मूल नोटिफ़िकेशन शैली में नोटिफ़िकेशन आइकन के ग्रे वर्ग बनने की समस्या ठीक की गई।",
+      "लॉक स्क्रीन कैमरा खोलने का तरीका बेहतर किया गया: कैमरा आइकन को दबाकर रखें और बाईं ओर स्वाइप करें।"
+    ],
+    "सेटिंग्स": [
+      "पासवर्ड प्रबंधन सुविधा जोड़ी गई",
+      "सेटिंग्स के निचले भाग में संबंधित खोज जोड़ी गई",
+      "सेटिंग्स होम पेज पर पदानुक्रम संबंधों के प्रदर्शन को अनुकूलित किया गया",
+      "«ऑलवेज-ऑन डिस्प्ले और लॉक स्क्रीन» की स्थिति «डिस्प्ले» के ऊपर ले जाई गई है।"
+    ],
+    "Mi AI वॉयस असिस्टेंट": [
+      "जोड़ा गया: संपर्क खोजने का समर्थन। कॉपी करने के लिए नंबर को देर तक दबाएँ। 'मम्मी का फ़ोन खोजें' कहकर देखें।",
+      "जोड़ा गया: \"Douyin ट्रेंडिंग खोलें\" या \"Douyin फ़ॉलोइंग खोलें\" कहकर देखें — Xiao AI आपको जीवन का आनंद लेने में मदद करता है!"
+    ],
+    "Xiaomi क्लाउड सेवा": [
+      "क्लाउड सेवा होमपेज के बैनर कंटेंट का लैंडिंग पेज से मेल न खाने की समस्या ठीक की गई"
     ]
   },
   "logs_ug": {

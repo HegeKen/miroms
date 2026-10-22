@@ -13,7 +13,7 @@
     "相机": [
       "新增 支持手持超级夜景拍摄功能"
     ],
-    "相册": [
+    "画廊": [
       "修复 某些场景下，成像与预览尺寸不一致的问题"
     ],
     "其他": [
@@ -21,159 +21,399 @@
     ]
   },
   "logs_en": {
+    "Attention": [
+      "The Xiao Ai voice wake-up feature is temporarily offline for internal adjustments and optimization. A new solution will be available as soon as possible. We apologize for any inconvenience caused during this period."
+    ],
+    "System": [
+      "Fixed the screen flickering issue in very rare scenarios",
+      "Fix the issue of fast battery drain in some apps"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Fix an occasional issue where the status bar time displays incorrectly after the screen is off for a long time and then turned back on"
+    ],
     "Camera": [
       "New: Enhanced low light mode"
+    ],
+    "Album": [
+      "Fix the issue where the captured image size and preview size are inconsistent in some scenarios"
     ],
     "Other": [
       "Improved system security and stability"
     ]
   },
   "logs_zh_tw": {
+    "重要提示": [
+      "小愛語音喚醒功能暫時下線以進行內部調整與優化，新方案會盡快上線，在此期間造成的不便敬請見諒"
+    ],
+    "系統": [
+      "修復極特殊場景下螢幕閃爍的問題",
+      "修復 某些應用程式耗電快的問題"
+    ],
+    "解鎖畫面、狀態欄、通知欄": [
+      "修復 偶現長時間息屏重新亮屏後，狀態列時間顯示異常的問題"
+    ],
     "相機": [
       "新增 支援手持超級夜景拍照功能"
+    ],
+    "相簿": [
+      "修正 某些場景下，成像與預覽尺寸不一致的問題"
     ],
     "其他": [
       "Improved system security and stability"
     ]
   },
   "logs_ja": {
+    "注意": [
+      "Xiao Ai の音声ウェイクアップ機能は内部調整と最適化のため一時的に停止しています。新しい方式はできるだけ早く提供予定です。この間ご不便をおかけして申し訳ございません。"
+    ],
+    "システム": [
+      "極めて特殊なシナリオでの画面のちらつきの問題を修正しました",
+      "一部のアプリでバッテリーの減りが早い問題を修正"
+    ],
+    "ロック画面、ステータスバー、通知バー": [
+      "長時間画面オフ後に再点灯した際、ステータスバーの時刻表示がまれに異常になる問題を修正しました"
+    ],
     "カメラ": [
       "新機能: 強化された低照度モード"
+    ],
+    "アルバム": [
+      "一部のシーンで撮影画像とプレビューのサイズが一致しない問題を修正"
     ],
     "その他": [
       "システムのセキュリティと安定性の向上"
     ]
   },
   "logs_ko": {
+    "주의": [
+      "Xiao Ai 음성 웨이크업 기능이 내부 조정 및 최적화를 위해 일시적으로 중단됩니다. 새로운 방안이 최대한 빨리 제공될 예정입니다. 이 기간 동안 불편을 드려 죄송합니다."
+    ],
+    "시스템": [
+      "매우 특수한 시나리오에서 화면 깜박임 문제를 수정했습니다",
+      "일부 앱의 배터리 소모가 빠른 문제를 수정"
+    ],
+    "잠금 화면, 상태 표시줄, 알림 표시줄": [
+      "장시간 화면 꺼짐 후 다시 켰을 때 상태 표시줄 시간이 간헐적으로 비정상 표시되는 문제를 수정했습니다"
+    ],
     "카메라": [
       "새로운 기능: 향상된 저조도 모드"
+    ],
+    "앨범": [
+      "일부 상황에서 촬영 이미지와 미리보기 크기가 일치하지 않는 문제를 수정"
     ],
     "기타": [
       "시스템 보안 및 안정성 개선"
     ]
   },
   "logs_ru": {
+    "Предупреждения": [
+      "Функция голосовой активации Xiao Ai временно отключена для внутренней настройки и оптимизации. Новое решение будет запущено как можно скорее. Приносим извинения за неудобства в этот период."
+    ],
+    "Система": [
+      "Исправлена проблема с мерцанием экрана в крайне редких случаях",
+      "Исправлена проблема быстрого разряда батареи в некоторых приложениях"
+    ],
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Исправлена периодическая проблема с неправильным отображением времени в строке состояния после длительного выключения экрана и повторного включения"
+    ],
     "Камера": [
       "New: Улучшенный режим съемки при низком освещении"
+    ],
+    "Альбом": [
+      "Исправлена проблема несоответствия размера снимка и предпросмотра в некоторых сценариях"
     ],
     "Другое": [
       "Улучшение безопасности и стабильности системы"
     ]
   },
   "logs_uk": {
+    "Попередження": [
+      "Функцію голосового пробудження Xiao Ai тимчасово вимкнено для внутрішнього налаштування та оптимізації. Нове рішення буде запущено якнайшвидше. Перепрошуємо за незручності протягом цього періоду."
+    ],
+    "Система": [
+      "Виправлено проблему з мерехтінням екрана вкрай рідкісних випадках",
+      "Виправлено проблему швидкого розряджання батареї в деяких додатках"
+    ],
+    "Екран блокування, рядок стану, рядок сповіщень": [
+      "Виправлено рідкісну проблему з неправильним відображенням часу в рядку стану після тривалого вимкнення екрана та повторного вмикання"
+    ],
     "Камера": [
       "Нове: Підтримка зйомки в супернічному режимі з рук"
+    ],
+    "Альбом": [
+      "Виправлено проблему невідповідності розміру знімка та попереднього перегляду в деяких сценаріях"
     ],
     "Інше": [
       "Покращення безпеки та стабільності системи"
     ]
   },
   "logs_pl": {
+    "Powiadomienie": [
+      "Funkcja aktywacji głosowej Xiao Ai jest tymczasowo wyłączona w celu wewnętrznych dostosowań i optymalizacji. Nowe rozwiązanie zostanie uruchomione tak szybko, jak to możliwe. Przepraszamy za niedogodności w tym okresie."
+    ],
+    "System": [
+      "Naprawiono problem migotania ekranu w bardzo rzadkich przypadkach",
+      "Naprawiono problem szybkiego rozładowywania baterii przez niektóre aplikacje"
+    ],
+    "Ekran blokady, pasek stanu, pasek powiadomień": [
+      "Naprawiono sporadyczny problem z nieprawidłowym wyświetlaniem czasu na pasku stanu po długim wyłączeniu ekranu i ponownym włączeniu"
+    ],
     "Aparat": [
       "Nowość: Obsługa zdjęć w trybie Super Noc z ręki"
     ],
-    "Inne": [
+    "Album": [
+      "Naprawiono problem niezgodności rozmiaru zdjęcia i podglądu w niektórych scenariuszach"
+    ],
+    "Reszt": [
       "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
   "logs_de": {
+    "Wichtiger Hinweis": [
+      "Die Xiao Ai-Sprachaktivierungsfunktion ist vorübergehend offline, um interne Anpassungen und Optimierungen durchzuführen. Eine neue Lösung wird so schnell wie möglich verfügbar sein. Wir entschuldigen uns für die Unannehmlichkeiten in dieser Zeit."
+    ],
+    "System": [
+      "Problem mit Bildschirmflackern in extrem seltenen Fällen behoben",
+      "Problem des schnellen Akkuverbrauchs bei einigen Apps behoben"
+    ],
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
+      "Gelegentliches Problem behoben, bei dem die Uhrzeit in der Statusleiste nach längerem Ausschalten und erneutem Einschalten des Displays falsch angezeigt wurde"
+    ],
     "Kamera": [
       "Neu: Verbesserter Low-Light-Modus"
+    ],
+    "Galerie": [
+      "Problem behoben, dass die Größe von Aufnahme und Vorschau in bestimmten Szenarien nicht übereinstimmt"
     ],
     "Sonstiges": [
       "Systemsicherheit und -stabilität verbessert"
     ]
   },
   "logs_fr": {
+    "Avertissement important": [
+      "La fonction d'activation vocale Xiao Ai est temporairement désactivée pour des ajustements et optimisations internes. Une nouvelle solution sera disponible dès que possible. Nous vous prions de nous excuser pour la gêne occasionnée pendant cette période."
+    ],
+    "Système": [
+      "Correction du problème de scintillement de l'écran dans des cas très particuliers",
+      "Correction du problème de décharge rapide de la batterie avec certaines applications"
+    ],
+    "Écran de verrouillage, barre d’état, barre de notifications": [
+      "Correction d’un problème intermittent d’affichage incorrect de l’heure dans la barre d’état après une longue extinction puis rallumage de l’écran"
+    ],
     "Appareil photo": [
       "Nouveau : Mode basse lumière amélioré"
+    ],
+    "Album": [
+      "Correction du problème de taille incohérente entre l’image capturée et l’aperçu dans certains scénarios"
     ],
     "Autre": [
       "Sécurité et stabilité du système améliorées"
     ]
   },
   "logs_it": {
-    "Fotocamera": [
+    "Attenzione": [
+      "La funzione di attivazione vocale Xiao Ai è temporaneamente offline per ajustamenti e ottimizzazioni interne. Una nuova soluzione sarà disponibile il prima possibile. Ci scusiamo per l'inconveniente arrecato durante questo periodo."
+    ],
+    "Sistema": [
+      "Risolto il problema di sfarfallio dello schermo in casi molto particolari",
+      "Risolto il problema del rapido consumo della batteria da parte di alcune app"
+    ],
+    "Schermata di blocco, barra di stato, barra delle notifiche": [
+      "Risolto un problema sporadico di visualizzazione errata dell'ora nella barra di stato dopo uno spegnimento prolungato e una riaccensione dello schermo"
+    ],
+    "macchina fotografica": [
       "Novità: Supporto alla fotografia notturna avanzata a mano"
+    ],
+    "Album": [
+      "Risolto il problema di dimensioni incoerenti tra immagine acquisita e anteprima in alcuni scenari"
     ],
     "Altro": [
       "Maggiore sicurezza e stabilità di sistema"
     ]
   },
   "logs_es": {
+    "Atención": [
+      "La función de activación por voz de Xiao Ai está temporalmente desactivada para realizar ajustes y optimizaciones internas. La nueva solución estará disponible lo antes posible. Disculpe las molestias causadas durante este periodo."
+    ],
+    "Sistema": [
+      "Se corrigió el problema de parpadeo de la pantalla en casos muy especiales",
+      "Se corrige el problema de consumo rápido de batería en algunas aplicaciones"
+    ],
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Se corrigió un problema ocasional de visualización incorrecta de la hora en la barra de estado tras apagar la pantalla durante mucho tiempo y volver a encenderla"
+    ],
     "Cámara": [
       "Nuevo: Compatibilidad con fotografía nocturna avanzada a mano"
+    ],
+    "Álbum de fotos": [
+      "Se corrige el problema de tamaño incoherente entre la imagen capturada y la vista previa en algunos escenarios"
     ],
     "Otros": [
       "Estabilidad y seguridad del sistema mejorada"
     ]
   },
   "logs_pt": {
+    "Atenção": [
+      "A função de ativação por voz do Xiao Ai está temporariamente offline para ajustes e otimizações internas. A nova solução estará disponível o mais breve possível. Pedimos desculpas pelo inconveniente causado durante este período."
+    ],
+    "Sistema": [
+      "Corrigido o problema de oscilação da tela em casos muito específicos",
+      "Corrigido o problema de consumo rápido da bateria em alguns aplicativos"
+    ],
+    "Tela de bloqueio, barra de status, barra de notificações": [
+      "Corrigido um problema ocasional de exibição incorreta da hora na barra de status após a tela ficar desligada por muito tempo e ser ligada novamente"
+    ],
     "Câmera": [
       "Novo: Suporte para captura noturna avançada à mão"
+    ],
+    "Álbum": [
+      "Corrigido o problema de tamanho inconsistente entre a imagem capturada e a pré-visualização em alguns cenários"
     ],
     "Outros": [
       "Segurança e estabilidade do sistema aprimoradas"
     ]
   },
   "logs_tr": {
+    "Uyarı": [
+      "Xiao Ai sesle uyandırma özelliği, dahili ayarlamalar ve optimizasyon için geçici olarak devre dışı. Yeni çözüm en kısa sürede sunulacak. Bu süreçte yaşanan rahatsızlık için özür dileriz."
+    ],
+    "Sistem": [
+      "Çok özel senaryolarda ekran titremesi sorunu giderildi",
+      "Bazı uygulamalarda hızlı pil tüketimi sorunu giderildi"
+    ],
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Uzun süre ekran kapalıyken tekrar açıldığında durum çubuğu saatinde nadiren yanlış görüntüleme sorunu giderildi"
+    ],
     "Kamera": [
       "Yeni: Elde süper gece çekimi desteği"
+    ],
+    "albüm": [
+      "Bazı senaryolarda çekilen görüntü ile önizleme boyutunun tutarsız olması sorunu giderildi"
     ],
     "Diğer": [
       "Sistem güvenliği ve kararlılığı geliştirildi"
     ]
   },
   "logs_id": {
+    "Perhatian": [
+      "Fitur pengaktifan suara Xiao Ai dinonaktifkan sementara untuk penyesuaian dan optimalisasi internal. Solusi baru akan tersedia sesegera mungkin. Mohon maaf atas ketidaknyamanan selama periode ini."
+    ],
+    "Sistem": [
+      "Memperbaiki masalah layar berkedip pada skenario yang sangat khusus",
+      "Memperbaiki masalah baterai cepat habis pada beberapa aplikasi"
+    ],
+    "Layar kunci, bilah status, bilah notifikasi": [
+      "Memperbaiki masalah sesekali saat waktu di bilah status ditampilkan tidak normal setelah layar mati lama lalu dinyalakan kembali"
+    ],
     "Kamera": [
       "Baru: Dukungan pengambilan foto mode malam super dengan tangan"
+    ],
+    "Album": [
+      "Memperbaiki masalah ukuran gambar yang diambil dan pratinjau tidak konsisten dalam beberapa skenario"
     ],
     "Lainnya": [
       "Keamanan dan stabilitas sistem ditingkatkan"
     ]
   },
   "logs_vi": {
+    "Chú ý": [
+      "Tính năng đánh thức bằng giọng nói Xiao Ai tạm thời ngừng hoạt động để điều chỉnh và tối ưu hóa nội bộ. Giải pháp mới sẽ sớm được triển khai. Xin lỗi vì sự bất tiện trong thời gian này."
+    ],
+    "Hệ thống": [
+      "Đã khắc phục sự cố màn hình nhấp nháy trong các trường hợp đặc biệt",
+      "Khắc phục vấn đề pin nhanh hết ở một số ứng dụng"
+    ],
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Sửa lỗi thỉnh thoảng thanh trạng thái hiển thị giờ không bình thường sau khi màn hình tắt lâu rồi bật lại"
+    ],
     "Máy ảnh": [
       "Mới: Hỗ trợ chụp ảnh chế độ ban đêm siêu nét bằng tay"
+    ],
+    "Album": [
+      "Khắc phục sự cố kích thước ảnh chụp và bản xem trước không nhất quán trong một số tình huống"
     ],
     "Khác": [
       "Cải thiện tính ổn định và bảo mật hệ thống"
     ]
   },
   "logs_th": {
+    "โปรดทราบ": [
+      "ฟีเจอร์ปลุกด้วยเสียง Xiao Ai ถูกปิดใช้งานชั่วคราวเพื่อปรับแต่งและเพิ่มประสิทธิภาพภายใน โซลูชันใหม่จะพร้อมให้ใช้งานโดยเร็วที่สุด ขออภัยในความไม่สะดวกในช่วงนี้"
+    ],
+    "ระบบ": [
+      "แก้ไขปัญหาจอสั่นในสถานการณ์ที่เกิดได้ยากมาก",
+      "แก้ไขปัญหาบางแอปทำให้แบตเตอรี่หมดเร็ว"
+    ],
+    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
+      "แก้ไขปัญหาที่บางครั้งเวลาในแถบสถานะแสดงผิดปกติหลังจากปิดหน้าจอเป็นเวลานานแล้วเปิดใหม่"
+    ],
     "กล้อง": [
       "ใหม่: รองรับการถ่ายภาพโหมดกลางคืนซูเปอร์แบบถือด้วยมือ"
+    ],
+    "คลังภาพ": [
+      "แก้ไขปัญหาขนาดภาพที่ถ่ายและภาพตัวอย่างไม่สอดคล้องกันในบางสถานการณ์"
     ],
     "อื่นๆ": [
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
     ]
   },
   "logs_ar": {
+    "تنبية": [
+      "ميزة التنشيط الصوتي Xiao Ai متوقفة مؤقتًا لإجراء تعديلات وتحسينات داخلية. سيتم توفير حل جديد في أقرب وقت ممكن. نعتذر عن أي إزعاج خلال هذه الفترة."
+    ],
+    "النظام": [
+      "إصلاح مشكلة وميض الشاشة في حالات نادرة جدًا",
+      "إصلاح مشكلة استهلاك البطارية السريع في بعض التطبيقات"
+    ],
+    "شاشة القفل، شريط الحالة، شريط الإشعارات": [
+      "إصلاح مشكلة متقطعة تتمثل في عرض الوقت في شريط الحالة بشكل غير صحيح بعد إطفاء الشاشة لفترة طويلة ثم إعادة تشغيلها"
+    ],
     "كاميرا": [
       "جديد: دعم تصوير الوضع الليلي الفائق بالحمل باليد"
     ],
-    "أخرى": [
+    "ألبوم الصور": [
+      "إصلاح مشكلة عدم تطابق حجم الصورة الملتقطة والمعاينة في بعض الحالات"
+    ],
+    "آخرين": [
       "تحسين أمن واستقرار النظام"
     ]
   },
   "logs_in": {
+    "ध्यान दें": [
+      "Xiao Ai वॉयस वेक-अप सुविधा आंतरिक समायोजन और अनुकूलन के लिए अस्थायी रूप से बंद है। नया समाधान जल्द से जल्द उपलब्ध होगा। इस अवधि में हुई असुविधा के लिए क्षमा करें।"
+    ],
+    "सिस्टम": [
+      "बहुत ही विशेष परिस्थितियों में स्क्रीन झिलमिलाने की समस्या ठीक की गई",
+      "कुछ ऐप्स में बैटरी तेज़ी से खत्म होने की समस्या ठीक की गई"
+    ],
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
+      "लंबे समय तक स्क्रीन बंद रहने के बाद फिर से चालू करने पर स्टेटस बार में समय गलत दिखने की कभी-कभार होने वाली समस्या को ठीक किया गया"
+    ],
     "कैमरा": [
       "नया: हैंडहेल्ड सुपर नाइट शूटिंग फ़ंक्शन के लिए समर्थन"
+    ],
+    "अल्बम": [
+      "कुछ परिदृश्यों में कैप्चर की गई छवि और पूर्वावलोकन का आकार असंगत होने की समस्या ठीक की गई"
     ],
     "अन्य": [
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
     ]
   },
   "logs_ug": {
-    "كامېرا": [
+    "مۇھىم ئەسكەرتىش": [
+      "Xiao Ai ئاۋازلىق ئويغىتىش ئىقتىدارى ئىچكى تەڭشەش ۋە ئەلالاشتۇرۇش ئۈچۈن ۋاقىتلىق توختىتىلدى. يېڭى ھەل قىلىش چارىسى تېزدىن تورغا چىقىدۇ. بۇ مەزگىلدە كەلتۈرۈپ چىقارغان قولايسىزلىق ئۈچۈن كەچۈرۈم سورايمىز."
+    ],
+    "فوتو ئاپپارات": [
       "يېڭى: قولدا تۇتۇپ ئالىي كېچە كۆرۈنۈشىنى سۈرەتكە تارتىش ئىقتىدارى قوشۇلدى"
+    ],
+    "رەسىم ئالبومى": [
+      "بەزى ئەھۋاللاردا سۈرەت بىلەن ئالدىن كۆرۈنۈش ئۆلچىمىنىڭ ماس كەلمەسلىك مەسىلىسى تۈزىتىلدى"
     ],
     "باشقىلىرى": [
       "Improved system security and stability"
     ]
   },
   "logs_bo": {
-    "པར་ཆས": [
+    "ཁ་མར།": [
       "New: Enhanced low light mode"
     ],
     "གཞན།": [

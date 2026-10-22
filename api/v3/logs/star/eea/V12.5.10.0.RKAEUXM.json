@@ -160,7 +160,7 @@
       "更新谷歌安全補丁（2021#09），提升系統安全性",
       "更新Android安全性修補程式等級（2021#09），提升系統安全性"
     ],
-    "設定": [
+    "设置": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
       "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
       "修復: 在“應用管理-默認打開鏈接”頁面中選擇“地圖”選項時頁面崩潰的問題"
@@ -563,6 +563,38 @@
       "Behoben: Die gleichzeitige Nutzung von Gesichts- und Fingerabdruckentsperrung führte in manchen Fällen zu Abstürzen",
       "Behoben: Benachrichtigungen auf dem Sperrbildschirm verschwanden nach einem beendeten Anruf",
       "Behoben: Sperrbildschirm-Elemente wurden nicht angezeigt, wenn Super-Hintergründe und Themes kombiniert wurden"
+    ],
+    "Statusleiste, Benachrichtigungsleiste": [
+      "Optimierung: Algorithmen zur Anzeige von Benachrichtigungen über eingehende Anrufe",
+      "Optimierung: Kompatibilität von Drittanbieter-Themes mit dem Benachrichtigungsbereich",
+      "Optimierung: Anpassung des Dunkelmodus für Benachrichtigungen",
+      "Behoben: Schwebende Benachrichtigungen überschnitten sich bei Verwendung eines transparenten Hintergrunds.",
+      "Behoben: Elemente des Berechtigungsdialogs überlappten sich nach langem Drücken auf eine Benachrichtigung",
+      "Behoben: Bei aktiver App-Sperre wurden Benachrichtigungen nicht korrekt angezeigt",
+      "Behoben: Die Animationen des Reinigers wurden nicht korrekt angezeigt",
+      "Behoben: Der Benachrichtigungsbereich ließ sich in manchen Fällen nicht öffnen",
+      "Behoben: Benachrichtigungen wurden nach verpassten Anrufen nicht korrekt angezeigt",
+      "Behoben: Probleme mit Berechtigungen nach verpassten Anrufen",
+      "Behoben: Probleme bei der Anzeige gruppierter Benachrichtigungen",
+      "Behoben: Anzeige von Statusleisten-Symbolen bei unterschiedlichen Auflösungen",
+      "Behoben: Wiedergabesteuerung wurde nicht immer in der Benachrichtigungsleiste angezeigt",
+      "Behoben: Benachrichtigungen wurden bei Verwendung von „Zum Aufwecken anheben“ nicht immer korrekt angezeigt",
+      "Behoben: Schaltflächen wurden bei aktiviertem Dunkelmodus nicht immer korrekt in den Benachrichtigungen angezeigt"
+    ],
+    "Themen": [
+      "Behoben: In einigen Fällen wurde das Hintergrundbild nach dem Deaktivieren des Dunkelmodus nicht übernommen",
+      "Behoben: Nach dem Deaktivieren des Ultra-Energiesparmodus wurde der Startbildschirmhintergrund schwarz.",
+      "Behoben: Falsche Sprachansagen beim Herunterladen von Super-Hintergrundbildern im Barrierefreiheitsmodus.",
+      "Behoben: Probleme mit abgeschnittenem Text bei Super-Hintergrundbildern",
+      "Behoben: Überlappung von Text und Schaltfläche auf der Super-Wallpaper-Karte in den Einstellungen",
+      "Behoben: Navigationsschaltflächen wurden in den Einstellungen für Super-Hintergrundbilder nicht korrekt angezeigt.",
+      "Behoben: Bei aktiviertem Energiesparmodus wurden Hintergrundbilder aus dem ersten Bereich auch im zweiten Bereich angewendet.",
+      "Behoben: Hintergrundbilder wurden im zweiten Bereich nicht korrekt angezeigt.",
+      "Behoben: Bei großer Systemschriftgröße überlappten sich die Beschreibungen der Super-Hintergrundbilder während des Einrichtungsvorgangs.",
+      "Behoben: In manchen Fällen flackerten die Hintergrundbilder beim Entsperren des Geräts.",
+      "Behoben: In manchen Fällen stürzten die Hintergrundbilddienste ab.",
+      "Behoben: Einige Vorschauen von Hintergrundbildern wurden nicht korrekt angezeigt.",
+      "Behoben: Der Bildschirm flackerte während der Entsperrung per Fingerabdruck"
     ]
   },
   "logs_fr": {
@@ -695,7 +727,7 @@
     "Sistema": [
       "Parche de seguridad de Android actualizado a septiembre de 2021. Seguridad del sistema incrementada."
     ],
-    "Ajustes": [
+    "Configuración": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
       "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
       "Reparado: Se producían bloqueos cuando se seleccionaba el mapa predeterminado"
@@ -1224,6 +1256,23 @@
       "Fix: Using Face unlock and Fingerprint unlock simultaneously led to crashes in some cases",
       "Fix: Lock screen notifications disappeared after an ended call",
       "Fix: Lock screen items weren't displayed when super wallpapers and themes were combined"
+    ],
+    "Status bar, Notification shade": [
+      "Optimization: Algorithms for displaying incoming call notifications",
+      "Optimization: Third party theme compatibility for Notification shade",
+      "Optimization: Dark mode adjustments for notifications",
+      "Fix: Floating notifications overlapped when the transparent background was used",
+      "Fix: Permission dialog elements overlapped after a notification was long pressed",
+      "Fix: Notifications weren't displayed correctly when App lock was used",
+      "Fix: Cleaner animations weren't displayed correctly",
+      "Fix: Notification shade couldn't be opened in some cases",
+      "Fix: Notifications weren't displayed correctly after missed calls",
+      "Fix: Issues with permissions after missed calls",
+      "Fix: Issues with displaying grouped notifications",
+      "تۈزىتىش: ئوخشىمىغان ئېنىقلىقتا قۇلۇپ ئېكرانىدىكى ھالەت ستونى سىنبەلگىلىرىنىڭ كۆرسىتىلىش مەسىلىسى",
+      "Fix: Player controls weren't always displayed in the Notification shade",
+      "Fix: Notifications weren't always displayed correctly when \"Raise to wake\" was used",
+      "Fix: Buttons weren't always displayed correctly on the notifications when Dark mode was on"
     ]
   },
   "logs_bo": {

@@ -10,7 +10,7 @@
       "修复 部分场景下无法为多个应用调节音量的问题",
       "修复 分屏在部分第三方应用中显示异常的问题"
     ],
-    "桌面": [
+    "主屏幕": [
       "修复 解锁进入桌面时偶现闪屏的问题",
       "修复 分屏场景下偶现最近任务卡片消失的问题"
     ],
@@ -31,7 +31,7 @@
     ]
   },
   "logs_en": {
-    "Home screen": [
+    "desktop": [
       "Fix: Home screen flashed after unlocking in some cases",
       "Fix: Cards occasionally disappeared from Recents in Split screen"
     ],
@@ -78,7 +78,7 @@
     ]
   },
   "logs_ja": {
-    "ホーム画面": [
+    "デスクトップ": [
       "修正: ステータスバーの色が正しく表示されない場合がある",
       "修正: ロックを解除後にホーム画面がちらつく場合がある"
     ],
@@ -98,7 +98,7 @@
     ]
   },
   "logs_ko": {
-    "홈 화면": [
+    "데스크톱": [
       "수정: 일부 상황에서 상태 바의 색상이 제대로 표시되지 않는 문제",
       "수정: 일부 상황에서 잠금 해제 후 홈 화면이 점멸하는 문제"
     ],
@@ -141,7 +141,7 @@
     ]
   },
   "logs_uk": {
-    "Головний екран": [
+    "Робочий стіл": [
       "Виправлено: Виправлена помилка, при якій в деяких випадках кольори рядка стану відображалися некоректно",
       "Виправлено: Виправлена помилка, коли в деяких випадках робочий стіл мерехтить після розблокування екрана"
     ],
@@ -150,7 +150,8 @@
       "Виправлено: Виправлена помилка, при якій в Режимі розділення екрана картки програм іноді зникали з \"Нещодавніх\""
     ],
     "Рядок стану, панель сповіщень": [
-      "Виправлено: Виправлена помилка, при якій в Режимі розділення екрана картки програм іноді зникали з \"Нещодавніх\""
+      "Виправлено: Виправлена помилка, при якій в Режимі розділення екрана картки програм іноді зникали з \"Нещодавніх\"",
+      "Виправлено: Виправлена помилка, при якій в деяких випадках кольори рядка стану відображалися некоректно"
     ],
     "Система": [
       "Оптимізація: стабільність камери",
@@ -164,7 +165,7 @@
     ]
   },
   "logs_pl": {
-    "Ekran główny": [
+    "Biurko": [
       "Naprawiono: W niektórych przypadkach kolory paska statusu nie wyświetlały się poprawnie",
       "Naprawiono: Po odblokowaniu ekran główny migał w niektórych przypadkach"
     ],
@@ -189,28 +190,32 @@
   },
   "logs_de": {
     "Startbildschirm": [
-      "Fix: Home screen flashed after unlocking in some cases"
+      "Fix: Home screen flashed after unlocking in some cases",
+      "Fix: Cards occasionally disappeared from Recents in Split screen"
+    ],
+    "Letzte Aufgaben": [
+      "Fix: Cards occasionally disappeared from Recents in Split screen"
     ],
     "Statusleiste, Benachrichtigungsfeld": [
       "Fix: Cards occasionally disappeared from Recents in Split screen",
       "Fix: Home screen flashed after unlocking in some cases",
       "Behoben: Statusleistenfarben wurden in manchen Fällen nicht korrekt angezeigt"
     ],
-    "Statusleiste, Benachrichtigungsleiste": [
-      "Fix: Home screen flashed after unlocking in some cases"
-    ],
-    "Letzte Aufgaben": [
-      "Fix: Cards occasionally disappeared from Recents in Split screen"
-    ],
     "System": [
       "Optimierung: Kamera-Stabilität",
+      "Fix: Volume couldn't be adjusted for multiple apps in some cases",
+      "Fix: Split screen wasn't displayed correctly with some third party apps",
+      "Sicherheitspatch auf Januar 2026 aktualisiert. Systemsicherheit verbessert.",
+      "Optimierung: Kamerastabilität",
       "Behoben: Die Lautstärke konnte in manchen Fällen nicht für mehrere Apps angepasst werden",
-      "Behoben: Der geteilte Bildschirm wurde bei einigen Apps von Drittanbietern nicht korrekt angezeigt",
-      "Sicherheitspatch auf Januar 2026 aktualisiert. Systemsicherheit verbessert."
+      "Behoben: Der geteilte Bildschirm wurde bei einigen Apps von Drittanbietern nicht korrekt angezeigt"
+    ],
+    "Statusleiste, Benachrichtigungsleiste": [
+      "Fix: Home screen flashed after unlocking in some cases"
     ]
   },
   "logs_fr": {
-    "Écran d'accueil": [
+    "Bureau": [
       "Réparé: Les couleurs de la barre d'état ne s'affichaient pas correctement dans certains cas",
       "Réparé: L'écran d'accueil a clignoté après le déverrouillage dans certains cas"
     ],
@@ -231,7 +236,7 @@
     ]
   },
   "logs_it": {
-    "Schermata Home": [
+    "Desktop": [
       "Risolto: I colori della barra di stato non venivano visualizzati correttamente in alcuni casi",
       "Risolto: In alcuni casi, la schermata Home lampeggiava dopo lo sblocco"
     ],
@@ -254,7 +259,7 @@
     ]
   },
   "logs_es": {
-    "Pantalla de inicio": [
+    "Escritorio": [
       "Reparado: Los colores de la barra de estado no se mostraban correctamente en algunos casos",
       "Reparado: La Pantalla de inicio parpadeaba después de desbloquearse en algunos casos"
     ],
@@ -301,7 +306,7 @@
     ]
   },
   "logs_tr": {
-    "Ana ekran": [
+    "Masaüstü": [
       "Onarım: Durum çubuğu renkleri bazı durumlarda düzgün bir şekilde görüntülenmedi",
       "Onarım: Bazı durumlarda kilit açtıktan sonra ana ekran yanıp söndü"
     ],
@@ -324,7 +329,7 @@
     ]
   },
   "logs_id": {
-    "Layar Utama": [
+    "Desktop": [
       "Perbaikan: Warna bilah status tidak ditampilkan dengan benar dalam beberapa kasus",
       "Perbaikan: Layar utama berkedip setelah dibuka kuncinya dalam beberapa kasus"
     ],
@@ -356,7 +361,8 @@
       "Sửa: Thẻ thỉnh thoảng biến mất khỏi Gần đây trong Chia màn hình"
     ],
     "Thanh trạng thái, thanh thông báo": [
-      "Sửa: Thẻ thỉnh thoảng biến mất khỏi Gần đây trong Chia màn hình"
+      "Sửa: Thẻ thỉnh thoảng biến mất khỏi Gần đây trong Chia màn hình",
+      "Sửa: Màu của Thanh trạng thái không hiển thị chính xác trong một số trường hợp"
     ],
     "Hệ thống": [
       "Tối ưu: Ổn định camera",
@@ -370,7 +376,7 @@
     ]
   },
   "logs_th": {
-    "หน้าจอหลัก": [
+    "โต๊ะทำงาน": [
       "แก้ไข: ในบางกรณี สีของแถบสถานะแสดงผลไม่ถูกต้อง",
       "แก้ไข: ในบางกรณี หน้าจอหลักจะกระพริบหลังจากปลดล็อก"
     ],
@@ -379,7 +385,8 @@
       "แก้ไข: บางครั้งการ์ดต่างๆ ก็หายไปจากรายการการ์ดล่าสุดในโหมดแบ่งหน้าจอ"
     ],
     "แถบสถานะ, แผงการแจ้งเตือน": [
-      "แก้ไข: บางครั้งการ์ดต่างๆ ก็หายไปจากรายการการ์ดล่าสุดในโหมดแบ่งหน้าจอ"
+      "แก้ไข: บางครั้งการ์ดต่างๆ ก็หายไปจากรายการการ์ดล่าสุดในโหมดแบ่งหน้าจอ",
+      "แก้ไข: ในบางกรณี สีของแถบสถานะแสดงผลไม่ถูกต้อง"
     ],
     "ระบบ": [
       "การเพิ่มประสิทธิภาพ: ความเสถียรของกล้อง",
@@ -392,7 +399,7 @@
     ]
   },
   "logs_ar": {
-    "الشاشة الرئيسية": [
+    "سطح المكتب": [
       "الإصلاح: عدم عرض ألوان شريط الحالة بشكل صحيح في بعض الحالات",
       "الإصلاح: وميض الشاشة الرئيسية بعد فتح قفل الشاشة في بعض الحالات"
     ],
@@ -415,7 +422,7 @@
     ]
   },
   "logs_in": {
-    "होम स्क्रीन": [
+    "डेस्कटॉप": [
       "ठीक करें कुछ मामलों में स्टेटस बार के रंग सही ढंग से दिखाई नहीं दे रहे हैं",
       "ठीक करें कुछ मामलों में अनलॉक करने के बाद होम स्क्रीन फ्लैश कर रही है"
     ],
@@ -439,16 +446,17 @@
     ]
   },
   "logs_ug": {
-    "باش ئېكران": [
-      "Fix: Home screen flashed after unlocking in some cases"
+    "ئۈستەل يۈزى": [
+      "Fix: Home screen flashed after unlocking in some cases",
+      "Fix: Cards occasionally disappeared from Recents in Split screen"
+    ],
+    "يېقىنقى ۋەزىپىلەر": [
+      "Fix: Cards occasionally disappeared from Recents in Split screen"
     ],
     "Status bar, Notification shade": [
       "Fix: Cards occasionally disappeared from Recents in Split screen",
       "Fix: Home screen flashed after unlocking in some cases",
       "Fix: Status bar colors weren't displayed correctly in some cases"
-    ],
-    "يېقىنقى ۋەزىپىلەر": [
-      "Fix: Cards occasionally disappeared from Recents in Split screen"
     ],
     "سىستېما": [
       "Optimization: Camera stability",
@@ -458,18 +466,25 @@
     ]
   },
   "logs_bo": {
-    "Home screen": [
-      "Fix: Home screen flashed after unlocking in some cases"
+    "ཅོག་ངོས": [
+      "Fix: Home screen flashed after unlocking in some cases",
+      "Fix: Cards occasionally disappeared from Recents in Split screen"
+    ],
+    "ཉེ་བའི་ལས་འགན": [
+      "Fix: Cards occasionally disappeared from Recents in Split screen"
     ],
     "Status bar, Notification shade": [
       "Fix: Cards occasionally disappeared from Recents in Split screen",
       "Fix: Home screen flashed after unlocking in some cases",
       "Fix: Status bar colors weren't displayed correctly in some cases"
     ],
-    "ཉེ་བའི་ལས་འགན": [
-      "Fix: Cards occasionally disappeared from Recents in Split screen"
-    ],
     "རིམ་ལུགས": [
+      "Optimization: Camera stability",
+      "Fix: Volume couldn't be adjusted for multiple apps in some cases",
+      "Fix: Split screen wasn't displayed correctly with some third party apps",
+      "Updated the security patch to January 2026. Increased system security."
+    ],
+    "མ་ལག": [
       "Optimization: Camera stability",
       "Fix: Volume couldn't be adjusted for multiple apps in some cases",
       "Fix: Split screen wasn't displayed correctly with some third party apps",

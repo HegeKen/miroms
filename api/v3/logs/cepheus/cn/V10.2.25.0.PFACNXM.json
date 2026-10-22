@@ -27,140 +27,257 @@
   },
   "logs_en": {
     "System": [
-      "New: An option for smoothening notch curves on full screen devices"
+      "New: An option for smoothening notch curves on full screen devices",
+      "Fixed several issues affecting system security and stability."
     ],
-    "Lockscreen, status bar, Notification shade": [
+    "Lockscreen, Status Bar, Notification Bar": [
+      "New: Dim the fingerprint area when unlocking with fingerprint at night to prevent glare",
+      "Added: When face unlock succeeds and stays on lock screen, you can enter home screen via fingerprint.",
+      "Optimized the prompt text for the “Enter password once every 72 hours” feature",
+      "Fixed an issue where the fingerprint could still appear in rare cases after turning off “Show fingerprint when screen is off”",
+      "Fixed the issue where call duration overlapped with the notification icon during a call",
       "Fix: Issues with displaying notifications on the Lock screen"
     ],
     "Camera": [
       "New: Introducing Macro mode",
-      "Optimization: Brightness adjustments for human faces in third party apps",
-      "Optimization: Image quality for photos and videos"
+      "Optimized the brightness of third-party apps in face scenarios",
+      "Optimization: Image quality for photos and videos",
+      "Optimization: Brightness adjustments for human faces in third party apps"
     ],
     "Other": [
+      "Optimized image clarity in WeChat Moments",
+      "Fixed the network latency issue in Game Mode",
+      "Fix the issue of occasional signal disconnection when users quickly switch from 4G to 2G under special base stations",
       "Improved system security and stability"
+    ],
+    "Lockscreen, status bar, Notification shade": [
+      "Fix: Issues with displaying notifications on the Lock screen"
     ]
   },
   "logs_zh_tw": {
+    "系統": [
+      "新增 全面屏設定中的水滴屏形狀切換開關",
+      "修復 影響系統安全性與穩定性的若干問題"
+    ],
     "解鎖畫面、狀態欄、通知欄": [
+      "新增 夜間使用指紋解鎖時，降低指紋區域亮度以防刺眼",
+      "新增 人臉解鎖成功並停留在鎖屏上時、可透過指紋進入桌面的功能",
+      "最佳化「每 72 小時需要輸入一次密碼」功能的提示文案",
+      "修復關閉「滅屏顯示指紋」設定項後，少數情況下指紋仍會顯示",
+      "修復通話中通話時間與通知圖示重疊的問題",
       "修正 螢幕關閉狀態下直接以指紋解鎖時，鎖定畫面的通知列可能不會消失的問題"
     ],
     "相機": [
       "新增 微距拍攝功能",
-      "優化 第三方應用程式在人臉場景的亮度",
-      "優化 拍照和錄影的圖像品質"
+      "最佳化第三方應用程式在人臉場景的亮度",
+      "優化 拍照和錄影的圖像品質",
+      "優化 第三方應用程式在人臉場景的亮度"
     ],
     "其他": [
+      "最佳化 微信朋友圈圖片顯示清晰度",
+      "修復 減少遊戲模式網路延遲的問題",
+      "修復 特殊基站下，使用者使用4G快速切換2G時，機率訊號斷線的問題",
       "Improved system security and stability"
     ]
   },
   "logs_ja": {
     "システム": [
-      "追加: 全画面設定に水滴型ノッチの形状切り替えスイッチ"
+      "追加: 全画面設定に水滴型ノッチの形状切り替えスイッチ",
+      "システムの安全性と安定性に影響するいくつかの問題を修正しました。"
     ],
-    "ロック画面、ステータスバー、通知シェード": [
+    "ロック画面、ステータスバー、通知バー": [
+      "追加 夜間の指紋認証解除時に、指紋エリアの明るさを下げてまぶしさを防ぐ",
+      "追加 顔認証が成功してロック画面に留まっている時に、指紋でホーム画面に進入できる機能",
+      "「72時間ごとにパスワードの入力が必要」機能の説明文を最適化しました",
+      "「画面オフ時の指紋表示」設定をオフにした後、まれに指紋が表示される問題を修正",
+      "通話中に通話時間と通知アイコンが重なる問題を修正",
       "画面オフの状態で指紋認証により直接ロック解除した際、ロック画面の通知バーが消えない場合がある問題を修正"
     ],
     "カメラ": [
       "新機能：マクロ撮影機能を追加",
-      "最適化: サードパーティアプリでの顔の明るさ調整",
-      "最適化: 写真と動画の画質"
+      "顔認証シーンにおけるサードパーティアプリの明るさを最適化",
+      "最適化: 写真と動画の画質",
+      "最適化: サードパーティアプリでの顔の明るさ調整"
     ],
     "その他": [
+      "WeChatモーメンツの画像表示の鮮明さを最適化",
+      "ゲームモードのネットワーク遅延の問題を修正",
+      "特殊な基地局で、ユーザーが4Gから2Gへ高速に切り替える際に、信号が切断される可能性がある問題を修正",
       "システムのセキュリティと安定性の向上"
+    ],
+    "ロック画面、ステータスバー、通知シェード": [
+      "画面オフの状態で指紋認証により直接ロック解除した際、ロック画面の通知バーが消えない場合がある問題を修正"
     ]
   },
   "logs_ko": {
     "시스템": [
-      "신규: 전체 화면 설정에 물방울 노치 모양 전환 스위치 추가"
+      "신규: 전체 화면 설정에 물방울 노치 모양 전환 스위치 추가",
+      "시스템 보안 및 안정성에 영향을 미치는 몇 가지 문제를 수정했습니다."
     ],
-    "잠금화면, 상태 바, 알림 바": [
+    "잠금 화면, 상태 표시줄, 알림 표시줄": [
+      "추가 야간에 지문 잠금 해제 시 지문 영역의 밝기를 낮춰 눈부심 방지",
+      "추가 얼굴 인식이 성공하고 잠금 화면에 머무를 때 지문으로 홈 화면에 들어갈 수 있는 기능",
+      "“72시간마다 비밀번호를 입력해야 함” 기능의 안내 문구를 최적화했습니다",
+      "“화면 꺼짐 시 지문 표시” 설정을 끈 후 드물게 지문이 계속 표시되는 문제를 수정",
+      "통화 중 통화 시간과 알림 아이콘이 겹치는 문제를 수정했습니다",
       "화면 꺼짐 상태에서 지문으로 바로 잠금 해제 시 잠금 화면 알림 표시줄이 사라지지 않을 수 있는 문제를 수정"
     ],
     "카메라": [
       "새 기능: 접사 촬영 기능 추가",
-      "최적화: 타사 앱에서 얼굴 밝기 조정",
-      "최적화: 사진 및 동영상 이미지 품질"
+      "얼굴 인식 시나리오에서 타사 앱의 밝기 최적화",
+      "최적화: 사진 및 동영상 이미지 품질",
+      "최적화: 타사 앱에서 얼굴 밝기 조정"
     ],
     "기타": [
+      "WeChat 모멘트 이미지 표시 선명도 최적화",
+      "게임 모드 네트워크 지연 문제를 수정했습니다",
+      "특수 기지국에서 사용자가 4G에서 2G로 빠르게 전환할 때 신호가 끊길 가능성이 있는 문제를 수정",
       "시스템 보안 및 안정성 개선"
+    ],
+    "잠금화면, 상태 바, 알림 바": [
+      "화면 꺼짐 상태에서 지문으로 바로 잠금 해제 시 잠금 화면 알림 표시줄이 사라지지 않을 수 있는 문제를 수정"
     ]
   },
   "logs_ru": {
+    "Система": [
+      "Новое: Функция сглаживания выреза для устройств с Безграничным экраном",
+      "Исправлены некоторые проблемы, влияющие на безопасность и стабильность системы."
+    ],
     "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Добавлено: при разблокировке отпечатком ночью яркость области отпечатка снижается, чтобы не слепить",
+      "Добавлено: при успешной разблокировке по лицу и нахождении на экране блокировки можно войти на главный экран с помощью отпечатка пальца.",
+      "Оптимизирован текст подсказки для функции «ввод пароля раз в 72 часа»",
+      "Исправлена проблема, когда отпечаток пальца всё ещё отображался в редких случаях после отключения настройки «Показывать отпечаток при выключенном экране»",
+      "Исправлена проблема с перекрытием длительности вызова и значка уведомления во время вызова",
       "Исправлена проблема, при которой после разблокировки отпечатком пальца при выключенном экране панель уведомлений на экране блокировки могла не исчезать"
     ],
     "Камера": [
       "Новое: Добавлен режим Макро",
-      "Оптимизация: Регулировка яркости лиц в сторонних приложениях",
-      "Оптимизация: Качество изображения фото и видео"
+      "Оптимизирована яркость сторонних приложений в сценариях с лицом",
+      "Оптимизация: Качество изображения фото и видео",
+      "Оптимизация: Регулировка яркости лиц в сторонних приложениях"
     ],
     "Другое": [
+      "Оптимизирована четкость отображения изображений в WeChat Moments",
+      "Исправлена проблема с задержкой сети в игровом режиме",
+      "Исправлена проблема вероятного обрыва сигнала при быстром переключении пользователем с 4G на 2G в особых базовых станциях",
       "Улучшение безопасности и стабильности системы"
     ]
   },
   "logs_uk": {
     "Система": [
-      "Нове: Перемикач форми краплеподібного вирізу в налаштуваннях повноекранного режиму"
+      "Нове: Перемикач форми краплеподібного вирізу в налаштуваннях повноекранного режиму",
+      "Виправлено кілька проблем, що впливають на безпеку та стабільність системи."
     ],
-    "Екран блокування, рядок стану, панель сповіщень": [
+    "Екран блокування, рядок стану, рядок сповіщень": [
+      "Додано: під час розблокування відбитком уночі яскравість зони відбитка знижується, щоб не засліплювати",
+      "Додано: коли розблокування обличчям успішне і ви залишаєтесь на екрані блокування, можна увійти на головний екран за допомогою відбитка пальця.",
+      "Оптимізовано текст підказки для функції «введення пароля раз на 72 години»",
+      "Виправлено проблему, коли відбиток пальця все ще відображався в окремих випадках після вимкнення налаштування «Показувати відбиток, коли екран вимкнено»",
+      "Виправлено проблему накладання тривалості виклику та значка сповіщення під час виклику",
       "Виправлено проблему, коли після розблокування відбитком пальця у вимкненому стані екрана панель сповіщень на екрані блокування могла не зникати"
     ],
     "Камера": [
       "Нове: Додано режим макрозйомки",
-      "Оптимізація: яскравість облич у сторонніх застосунках",
-      "Оптимізація: якість зображення для фото та відео"
+      "Оптимізовано яскравість сторонніх програм у сценаріях з обличчям",
+      "Оптимізація: якість зображення для фото та відео",
+      "Оптимізація: яскравість облич у сторонніх застосунках"
     ],
     "Інше": [
+      "Оптимізовано чіткість відображення зображень у WeChat Moments",
+      "Виправлено проблему із затримкою мережі в ігровому режимі",
+      "Виправлено проблему ймовірного обриву сигналу, коли користувач швидко перемикається з 4G на 2G у спеціальних базових станціях",
       "Покращення безпеки та стабільності системи"
+    ],
+    "Екран блокування, рядок стану, панель сповіщень": [
+      "Виправлено проблему, коли після розблокування відбитком пальця у вимкненому стані екрана панель сповіщень на екрані блокування могла не зникати"
     ]
   },
   "logs_pl": {
     "System": [
-      "Nowość: Przełącznik kształtu notcha w kształcie kropli w ustawieniach pełnoekranowych"
+      "Nowość: Przełącznik kształtu notcha w kształcie kropli w ustawieniach pełnoekranowych",
+      "Naprawiono kilka problemów wpływających na bezpieczeństwo i stabilność systemu."
     ],
-    "Ekran blokady, pasek powiadomień,panel powiadomień": [
+    "Ekran blokady, pasek stanu, pasek powiadomień": [
+      "Dodano: podczas odblokowywania odciskiem palca w nocy jasność obszaru odcisku jest zmniejszana, aby zapobiec olśnieniu",
+      "Dodano: gdy odblokowanie twarzą zakończy się sukcesem i pozostajesz na ekranie blokady, możesz wejść na ekran główny za pomocą odcisku palca.",
+      "Zoptymalizowano tekst podpowiedzi funkcji „wprowadzanie hasła co 72 godziny”",
+      "Naprawiono problem, w którym odcisk palca nadal wyświetlał się w rzadkich przypadkach po wyłączeniu ustawienia „Pokazuj odcisk palca przy wyłączonym ekranie”",
+      "Naprawiono problem nakładania się czasu połączenia i ikony powiadomienia podczas połączenia",
       "Naprawiono problem, w którym po odblokowaniu odciskiem palca przy wyłączonym ekranie pasek powiadomień na ekranie blokady mógł nie znikać"
     ],
     "Aparat": [
       "Nowość: Dodano tryb makro",
-      "Optymalizacja: dostosowanie jasności twarzy w aplikacjach innych firm",
-      "Optymalizacja: jakość obrazu zdjęć i filmów"
+      "Zoptymalizowano jasność aplikacji innych firm w scenariuszach z twarzą",
+      "Optymalizacja: jakość obrazu zdjęć i filmów",
+      "Optymalizacja: dostosowanie jasności twarzy w aplikacjach innych firm"
     ],
-    "Inne": [
+    "Reszt": [
+      "Zoptymalizowano ostrość wyświetlania obrazów w WeChat Moments",
+      "Naprawiono problem z opóźnieniem sieci w trybie gry",
+      "Naprawiono problem prawdopodobnej utraty sygnału podczas szybkiego przełączania użytkownika z 4G na 2G w specjalnych stacjach bazowych",
       "Większe bezpieczeństwo i stabilność systemu"
+    ],
+    "Ekran blokady, pasek powiadomień,panel powiadomień": [
+      "Naprawiono problem, w którym po odblokowaniu odciskiem palca przy wyłączonym ekranie pasek powiadomień na ekranie blokady mógł nie znikać"
     ]
   },
   "logs_de": {
     "System": [
-      "Neu: Schalter zum Ändern der Tropfen-Notch-Form in den Vollbild-Einstellungen"
+      "Neu: Schalter zum Ändern der Tropfen-Notch-Form in den Vollbild-Einstellungen",
+      "Mehrere Probleme behoben, die die Systemsicherheit und -stabilität beeinträchtigen."
     ],
-    "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
+      "Neu: Bei Fingerabdruck-Entsperrung nachts wird die Helligkeit des Fingerabdruckbereichs verringert, um Blendung zu vermeiden",
+      "Hinzugefügt: Wenn die Gesichtserkennung erfolgreich ist und auf dem Sperrbildschirm bleibt, kann man per Fingerabdruck zum Startbildschirm gelangen.",
+      "Der Hinweistext für die Funktion „Alle 72 Stunden Passwort eingeben“ wurde optimiert",
+      "Problem behoben, bei dem der Fingerabdruck in seltenen Fällen weiterhin angezeigt wurde, nachdem die Einstellung „Fingerabdruck bei ausgeschaltetem Bildschirm anzeigen“ deaktiviert wurde",
+      "Das Problem wurde behoben, dass die Anrufdauer während eines Anrufs das Benachrichtigungssymbol überlappt",
       "Problem behoben, bei dem die Benachrichtigungsleiste auf dem Sperrbildschirm nach dem direkten Entsperren per Fingerabdruck bei ausgeschaltetem Bildschirm ggf. nicht verschwindet"
     ],
     "Kamera": [
       "Neu: Makroaufnahme hinzugefügt",
-      "Optimierung: Helligkeit für Gesichter in Drittanbieter-Apps",
-      "Optimierung: Bildqualität für Fotos und Videos"
+      "Helligkeit von Drittanbieter-Apps in Gesichtsszenarien optimiert",
+      "Optimierung: Bildqualität für Fotos und Videos",
+      "Optimierung: Helligkeit für Gesichter in Drittanbieter-Apps"
     ],
     "Sonstiges": [
+      "Optimierte Bildschärfe in WeChat Moments",
+      "Problem mit der Netzwerklatenz im Spielmodus behoben",
+      "Das Problem des gelegentlichen Signalabbruchs beim schnellen Wechsel des Benutzers von 4G auf 2G unter speziellen Basisstationen wurde behoben",
       "Systemsicherheit und -stabilität verbessert"
+    ],
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
+      "Problem behoben, bei dem die Benachrichtigungsleiste auf dem Sperrbildschirm nach dem direkten Entsperren per Fingerabdruck bei ausgeschaltetem Bildschirm ggf. nicht verschwindet"
     ]
   },
   "logs_fr": {
     "Système": [
-      "Nouveau: Une option pour lisser les courbes d'encoches sur les périphériques plein écran"
+      "Nouveau: Une option pour lisser les courbes d'encoches sur les périphériques plein écran",
+      "Correction de plusieurs problèmes affectant la sécurité et la stabilité du système."
     ],
-    "Écran de verrouillage, Barre d'état, Panneau de notification": [
+    "Écran de verrouillage, barre d’état, barre de notifications": [
+      "Ajout : lors du déverrouillage par empreinte la nuit, la luminosité de la zone d'empreinte est réduite pour éviter l'éblouissement",
+      "Ajout : lorsque le déverrouillage facial réussit et reste sur l'écran de verrouillage, il est possible d'accéder à l'écran d'accueil via l'empreinte digitale.",
+      "Optimisation du texte d’invite de la fonction « saisir le mot de passe toutes les 72 heures »",
+      "Correction d’un problème où l’empreinte digitale s’affichait encore dans de rares cas après la désactivation du réglage « Afficher l’empreinte lorsque l’écran est éteint »",
+      "Correction du chevauchement entre la durée d'appel et l'icône de notification pendant un appel",
       "Correction du problème où la barre de notifications de l’écran de verrouillage pouvait ne pas disparaître après un déverrouillage direct par empreinte digitale lorsque l’écran est éteint"
     ],
     "Appareil photo": [
       "Nouveau : Ajout du mode macro",
-      "Optimisation : réglage de la luminosité des visages dans les applications tierces",
-      "Optimisation : qualité d’image des photos et vidéos"
+      "Optimisation de la luminosité des applications tierces dans les scénarios de visage",
+      "Optimisation : qualité d’image des photos et vidéos",
+      "Optimisation : réglage de la luminosité des visages dans les applications tierces"
     ],
     "Autre": [
+      "Optimisation de la netteté d'affichage des images dans WeChat Moments",
+      "Problème de latence réseau en mode jeu corrigé",
+      "Correction du problème de déconnexion intermittente du signal lors d'un basculement rapide de l'utilisateur de la 4G à la 2G sur des stations de base spéciales",
       "Sécurité et stabilité du système améliorées"
+    ],
+    "Écran de verrouillage, Barre d'état, Panneau de notification": [
+      "Correction du problème où la barre de notifications de l’écran de verrouillage pouvait ne pas disparaître après un déverrouillage direct par empreinte digitale lorsque l’écran est éteint"
     ],
     "Appareil Photo": [
       "Nouveau : Ajout du mode macro",
@@ -169,6 +286,30 @@
     ]
   },
   "logs_it": {
+    "Sistema": [
+      "Nuovo: Opzione per uniformare le curve del notch sui dispositivi a schermo intero",
+      "Risolti diversi problemi che influiscono sulla sicurezza e sulla stabilità del sistema."
+    ],
+    "Schermata di blocco, barra di stato, barra delle notifiche": [
+      "Aggiunto: durante lo sblocco con impronta di notte, la luminosità dell'area impronta viene ridotta per evitare abbagliamento",
+      "Aggiunto: quando lo sblocco con il viso riesce e rimane sulla schermata di blocco, è possibile accedere alla schermata home tramite impronta digitale.",
+      "Ottimizzato il testo del prompt per la funzione “inserire la password ogni 72 ore”",
+      "Risolto un problema per cui l’impronta digitale continuava a essere visualizzata in rari casi dopo aver disattivato l’impostazione “Mostra impronta a schermo spento”",
+      "Risolto il problema di sovrapposizione tra durata della chiamata e icona di notifica durante una chiamata",
+      "Risolto il problema per cui la barra delle notifiche nella schermata di blocco poteva non scomparire dopo lo sblocco diretto tramite impronta digitale a schermo spento"
+    ],
+    "macchina fotografica": [
+      "Nuovo: Aggiunta la modalità Macro",
+      "Ottimizzata la luminosità delle app di terze parti negli scenari con volto",
+      "Ottimizzazione: Qualità dell'immagine di foto e video",
+      "Ottimizzazione: Regolazione della luminosità del viso nelle app di terze parti"
+    ],
+    "Altro": [
+      "Ottimizzata la nitidezza di visualizzazione delle immagini in WeChat Moments",
+      "Risolto il problema di latenza di rete in Modalità gioco",
+      "Risolto il problema della possibile perdita di segnale quando l'utente passa rapidamente da 4G a 2G in stazioni base speciali",
+      "Maggiore sicurezza e stabilità di sistema"
+    ],
     "Schermata di blocco, barra di stato, area delle notifiche": [
       "Risolto il problema per cui la barra delle notifiche nella schermata di blocco poteva non scomparire dopo lo sblocco diretto tramite impronta digitale a schermo spento"
     ],
@@ -176,82 +317,141 @@
       "Nuovo: Aggiunta la modalità Macro",
       "Ottimizzazione: Regolazione della luminosità del viso nelle app di terze parti",
       "Ottimizzazione: Qualità dell'immagine di foto e video"
-    ],
-    "Altro": [
-      "Maggiore sicurezza e stabilità di sistema"
     ]
   },
   "logs_es": {
+    "Sistema": [
+      "Nuevo: Una opción para suavizar las curvas del notch en los dispositivos todo pantalla",
+      "Se corrigieron varios problemas que afectan la seguridad y la estabilidad del sistema."
+    ],
     "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Añadido: al desbloquear con huella por la noche, se reduce el brillo del área de huella para evitar deslumbramiento",
+      "Añadido: cuando el desbloqueo facial se realiza correctamente y permanece en la pantalla de bloqueo, se puede acceder a la pantalla de inicio mediante huella digital.",
+      "Se optimizó el texto de aviso de la función “introducir la contraseña cada 72 horas”",
+      "Se corrigió un problema por el que la huella digital seguía mostrándose en casos excepcionales tras desactivar el ajuste «Mostrar huella con la pantalla apagada»",
+      "Se corrigió el problema de superposición entre la duración de la llamada y el icono de notificación durante una llamada",
       "Se corrige el problema por el que la barra de notificaciones de la pantalla de bloqueo podía no desaparecer al desbloquear directamente con huella dactilar con la pantalla apagada"
     ],
     "Cámara": [
       "Nuevo: Introducción del Modo macro",
-      "Optimización: Ajustes de brillo para rostros humanos en aplicaciones de terceros",
-      "Optimización: Calidad de imagen para fotos y vídeos"
+      "Optimizada la luminosidad de aplicaciones de terceros en escenarios con rostro",
+      "Optimización: Calidad de imagen para fotos y vídeos",
+      "Optimización: Ajustes de brillo para rostros humanos en aplicaciones de terceros"
     ],
     "Otros": [
+      "Optimizada la claridad de visualización de imágenes en WeChat Moments",
+      "Corregido el problema de latencia de red en el modo juego",
+      "Se corrige el problema de desconexión intermitente de la señal cuando el usuario cambia rápidamente de 4G a 2G en estaciones base especiales",
       "Estabilidad y seguridad del sistema mejorada"
     ]
   },
   "logs_pt": {
     "Sistema": [
-      "Novo: Opção para suavizar as curvas de entalhes em dispositivos com tela infinita"
+      "Novo: Opção para suavizar as curvas de entalhes em dispositivos com tela infinita",
+      "Corrigidos vários problemas que afetam a segurança e a estabilidade do sistema."
     ],
-    "Tela de bloqueio, Barra de status e Área de notificações": [
+    "Tela de bloqueio, barra de status, barra de notificações": [
+      "Adicionado: ao desbloquear com impressão digital à noite, o brilho da área da impressão é reduzido para evitar ofuscamento",
+      "Adicionado: quando o desbloqueio facial for bem-sucedido e permanecer na tela de bloqueio, é possível acessar a tela inicial via impressão digital.",
+      "Otimizado o texto de aviso do recurso “inserir a senha a cada 72 horas”",
+      "Corrigido um problema em que a impressão digital ainda era exibida em casos raros após desativar a definição “Mostrar impressão digital com a tela desligada”",
+      "Corrigido o problema de sobreposição entre a duração da chamada e o ícone de notificação durante uma chamada",
       "Corrigido o problema em que a barra de notificações da tela de bloqueio podia não desaparecer ao desbloquear diretamente com impressão digital com a tela desligada"
     ],
     "Câmera": [
       "Novidade: Adicionado modo macro",
-      "Otimização: ajuste de brilho para rostos em apps de terceiros",
-      "Otimização: qualidade de imagem de fotos e vídeos"
+      "Otimizado o brilho de aplicativos de terceiros em cenários com rosto",
+      "Otimização: qualidade de imagem de fotos e vídeos",
+      "Otimização: ajuste de brilho para rostos em apps de terceiros"
     ],
     "Outros": [
+      "Otimizada a nitidez de exibição de imagens no WeChat Moments",
+      "Corrigido o problema de latência de rede no Modo de jogo",
+      "Corrigido o problema de desconexão intermitente do sinal quando o usuário alterna rapidamente de 4G para 2G em estações base especiais",
       "Segurança e estabilidade do sistema aprimoradas"
+    ],
+    "Tela de bloqueio, Barra de status e Área de notificações": [
+      "Corrigido o problema em que a barra de notificações da tela de bloqueio podia não desaparecer ao desbloquear diretamente com impressão digital com a tela desligada"
     ]
   },
   "logs_tr": {
+    "Sistem": [
+      "Yeni: Tam ekran cihazlardaki çentik eğimini düzeltmek için bir seçenek",
+      "Sistem güvenliğini ve kararlılığını etkileyen birkaç sorun düzeltildi."
+    ],
     "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Eklendi: Gece parmak iziyle kilit açarken parmak izi alanının parlaklığı göz kamaşmasını önlemek için azaltılır",
+      "Eklendi: Yüz kilidi başarılı olduğunda ve kilit ekranında kalındığında, parmak izi ile ana ekrana girilebilme özelliği.",
+      "“72 saatte bir parola girmeniz gerekir” özelliğinin istem metni optimize edildi",
+      "“Ekran kapalıyken parmak izini göster” ayarı kapatıldıktan sonra nadir durumlarda parmak izinin hâlâ görünmesi sorunu giderildi",
+      "Arama sırasında arama süresi ile bildirim simgesinin üst üste binmesi sorunu giderildi",
       "Ekran kapalıyken parmak iziyle doğrudan kilit açıldığında kilit ekranı bildirim çubuğunun kaybolmaması sorunu düzeltildi"
     ],
     "Kamera": [
       "Yeni: Makro modu tanıtıyoruz",
-      "Optimizasyon: Üçüncü taraf uygulamardaki insan yüzleri için parlaklık ayarları",
-      "Optimizasyon: Fotoğraflar ve videolar için görüntü kalitesi"
+      "Üçüncü taraf uygulamaların yüz senaryolarındaki parlaklığı optimize edildi",
+      "Optimizasyon: Fotoğraflar ve videolar için görüntü kalitesi",
+      "Optimizasyon: Üçüncü taraf uygulamardaki insan yüzleri için parlaklık ayarları"
     ],
     "Diğer": [
+      "WeChat Moments'ta görsel görüntüleme netliği optimize edildi",
+      "Oyun Modu'nda ağ gecikmesi sorunu düzeltildi",
+      "Özel baz istasyonlarında kullanıcı 4G'den 2G'ye hızlı geçiş yaparken ara sıra sinyal kesilmesi sorunu giderildi",
       "Sistem güvenliği ve kararlılığı geliştirildi"
     ]
   },
   "logs_id": {
     "Sistem": [
-      "Baru: Pilihan untuk memperhalus lekukan notch pada perangkat layar penuh"
+      "Baru: Pilihan untuk memperhalus lekukan notch pada perangkat layar penuh",
+      "Memperbaiki beberapa masalah yang memengaruhi keamanan dan stabilitas sistem."
     ],
-    "Layar kunci, bar status, layar notifikasi": [
+    "Layar kunci, bilah status, bilah notifikasi": [
+      "Ditambahkan: Saat membuka kunci dengan sidik jari di malam hari, kecerahan area sidik jari dikurangi untuk mencegah silau",
+      "Ditambahkan: saat buka kunci wajah berhasil dan tetap di layar kunci, dapat masuk ke layar utama melalui sidik jari.",
+      "Teks petunjuk fitur “masukkan kata sandi setiap 72 jam” telah dioptimalkan",
+      "Memperbaiki masalah sidik jari masih muncul dalam kasus jarang setelah menonaktifkan pengaturan “Tampilkan sidik jari saat layar mati”",
+      "Memperbaiki masalah tumpang tindih antara durasi panggilan dan ikon notifikasi saat panggilan",
       "Memperbaiki masalah bilah notifikasi layar kunci yang mungkin tidak hilang saat membuka kunci langsung dengan sidik jari dalam keadaan layar mati"
     ],
     "Kamera": [
       "Baru: Menambahkan mode makro",
-      "Optimasi: penyesuaian kecerahan wajah di aplikasi pihak ketiga",
-      "Optimasi: Kualitas gambar untuk foto dan video"
+      "Mengoptimalkan kecerahan aplikasi pihak ketiga dalam skenario wajah",
+      "Optimasi: Kualitas gambar untuk foto dan video",
+      "Optimasi: penyesuaian kecerahan wajah di aplikasi pihak ketiga"
     ],
     "Lainnya": [
+      "Mengoptimalkan ketajaman tampilan gambar di WeChat Moments",
+      "Memperbaiki masalah latensi jaringan di Mode Game",
+      "Memperbaiki masalah kemungkinan sinyal terputus saat pengguna beralih cepat dari 4G ke 2G di base station khusus",
       "Keamanan dan stabilitas sistem ditingkatkan"
+    ],
+    "Layar kunci, bar status, layar notifikasi": [
+      "Memperbaiki masalah bilah notifikasi layar kunci yang mungkin tidak hilang saat membuka kunci langsung dengan sidik jari dalam keadaan layar mati"
     ]
   },
   "logs_vi": {
     "Hệ thống": [
-      "Mới: Công tắc chuyển đổi hình dạng notch giọt nước trong cài đặt toàn màn hình"
+      "Mới: Công tắc chuyển đổi hình dạng notch giọt nước trong cài đặt toàn màn hình",
+      "Đã khắc phục một số vấn đề ảnh hưởng đến bảo mật và độ ổn định của hệ thống."
     ],
     "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Thêm: Khi mở khóa bằng vân tay vào ban đêm, giảm độ sáng vùng vân tay để tránh chói mắt",
+      "Đã thêm: khi mở khóa bằng khuôn mặt thành công và vẫn ở màn hình khóa, có thể vào màn hình chính bằng vân tay.",
+      "Đã tối ưu văn bản nhắc nhở của tính năng “nhập mật khẩu mỗi 72 giờ”",
+      "Đã khắc phục sự cố vẫn hiển thị vân tay trong một số trường hợp hiếm gặp sau khi tắt cài đặt “Hiển thị vân tay khi tắt màn hình”",
+      "Đã khắc phục sự cố thời lượng cuộc gọi chồng lên biểu tượng thông báo trong cuộc gọi",
       "Đã sửa lỗi thanh thông báo màn hình khóa có thể không biến mất khi mở khóa trực tiếp bằng vân tay trong trạng thái tắt màn hình"
     ],
     "Máy ảnh": [
       "Mới: Bổ sung chế độ chụp cận cảnh",
-      "Tối ưu hóa: độ sáng khuôn mặt trong ứng dụng bên thứ ba",
-      "Tối ưu hóa: Chất lượng hình ảnh cho ảnh và video"
+      "Tối ưu độ sáng của ứng dụng bên thứ ba trong tình huống khuôn mặt",
+      "Tối ưu hóa: Chất lượng hình ảnh cho ảnh và video",
+      "Tối ưu hóa: độ sáng khuôn mặt trong ứng dụng bên thứ ba"
     ],
     "Khác": [
+      "Tối ưu hóa độ rõ nét hiển thị hình ảnh trong WeChat Moments",
+      "Đã khắc phục sự cố độ trễ mạng trong Chế độ trò chơi",
+      "Khắc phục sự cố mất tín hiệu không thường xuyên khi người dùng chuyển nhanh từ 4G sang 2G tại các trạm gốc đặc biệt",
       "Cải thiện tính ổn định và bảo mật hệ thống"
     ],
     "Camera": [
@@ -262,34 +462,60 @@
   },
   "logs_th": {
     "ระบบ": [
-      "ใหม่: สวิตช์สลับรูปทรงรอยบากแบบหยดน้ำในการตั้งค่าจอเต็มรูปแบบ"
+      "ใหม่: สวิตช์สลับรูปทรงรอยบากแบบหยดน้ำในการตั้งค่าจอเต็มรูปแบบ",
+      "แก้ไขปัญหาหลายประการที่ส่งผลต่อความปลอดภัยและเสถียรภาพของระบบ"
     ],
-    "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
+    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
+      "เพิ่ม: เมื่อปลดล็อกด้วยลายนิ้วมือในเวลากลางคืน ลดความสว่างของพื้นที่ลายนิ้วมือเพื่อป้องกันแสงจ้า",
+      "เพิ่ม: เมื่อปลดล็อกด้วยใบหน้าสำเร็จและยังอยู่ที่หน้าจอล็อก สามารถเข้าสู่หน้าจอหลักได้ด้วยลายนิ้วมือ",
+      "ปรับปรุงข้อความแจ้งของฟีเจอร์ “ป้อนรหัสผ่านทุก 72 ชั่วโมง” ให้เหมาะสมที่สุด",
+      "แก้ไขปัญหากรณีที่ลายนิ้วมือยังแสดงอยู่แม้ปิดการตั้งค่า “แสดงลายนิ้วมือเมื่อหน้าจอดับ” ในบางครั้ง",
+      "แก้ไขปัญหาความยาวระยะเวลาการโทรทับซ้อนกับไอคอนการแจ้งเตือนระหว่างการโทร",
       "แก้ไขปัญหาที่แถบการแจ้งเตือนบนหน้าจอล็อกอาจไม่หายไปเมื่อปลดล็อกด้วยลายนิ้วมือโดยตรงในขณะที่หน้าจอดับ"
     ],
     "กล้อง": [
       "ใหม่: เพิ่มโหมดถ่ายภาพมาโคร",
-      "ปรับปรุง: การปรับความสว่างของใบหน้าในแอปบุคคลที่สาม",
-      "ปรับให้เหมาะสม: คุณภาพภาพของภาพถ่ายและวิดีโอ"
+      "ปรับความสว่างของแอปพลิเคชันบุคคลที่สามในสถานการณ์ใบหน้าให้เหมาะสม",
+      "ปรับให้เหมาะสม: คุณภาพภาพของภาพถ่ายและวิดีโอ",
+      "ปรับปรุง: การปรับความสว่างของใบหน้าในแอปบุคคลที่สาม"
     ],
     "อื่นๆ": [
+      "ปรับปรุงความคมชัดในการแสดงรูปภาพใน WeChat Moments",
+      "แก้ไขปัญหาเครือข่ายหน่วงในโหมดเกม",
+      "แก้ไขปัญหาสัญญาณขาดหายเป็นครั้งคราวเมื่อผู้ใช้สลับจาก 4G เป็น 2G อย่างรวดเร็วในสถานีฐานพิเศษ",
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
+    ],
+    "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
+      "แก้ไขปัญหาที่แถบการแจ้งเตือนบนหน้าจอล็อกอาจไม่หายไปเมื่อปลดล็อกด้วยลายนิ้วมือโดยตรงในขณะที่หน้าจอดับ"
     ]
   },
   "logs_ar": {
     "النظام": [
-      "جديد: مفتاح لتبديل شكل الشق على شكل قطرة في إعدادات الشاشة الكاملة"
+      "جديد: مفتاح لتبديل شكل الشق على شكل قطرة في إعدادات الشاشة الكاملة",
+      "تم إصلاح عدة مشكلات تؤثر على أمان النظام واستقراره."
     ],
-    "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
+    "شاشة القفل، شريط الحالة، شريط الإشعارات": [
+      "إضافة: عند فتح القفل ببصمة الإصبع ليلاً، يتم تقليل سطوع منطقة البصمة لمنع الوهج",
+      "تمت الإضافة: عند نجاح فتح القفل بالوجه والبقاء على شاشة القفل، يمكن الدخول إلى الشاشة الرئيسية عبر بصمة الإصبع.",
+      "تم تحسين نص التلميح لميزة “إدخال كلمة المرور كل 72 ساعة”",
+      "تم إصلاح مشكلة استمرار ظهور بصمة الإصبع في حالات نادرة بعد إيقاف إعداد «إظهار بصمة الإصبع عند إيقاف الشاشة»",
+      "تم إصلاح مشكلة تداخل مدة المكالمة مع أيقونة الإشعارات أثناء المكالمة",
       "إصلاح مشكلة احتمال عدم اختفاء شريط الإشعارات في شاشة القفل عند إلغاء القفل مباشرةً ببصمة الإصبع أثناء إيقاف الشاشة"
     ],
     "كاميرا": [
       "جديد: إضافة وضع التصوير المقرب (ماكرو)",
-      "تحسين: سطوع الوجوه في تطبيقات الطرف الثالث",
-      "تحسين: جودة الصور في الصور ومقاطع الفيديو"
+      "تحسين سطوع تطبيقات الطرف الثالث في سيناريوهات الوجه",
+      "تحسين: جودة الصور في الصور ومقاطع الفيديو",
+      "تحسين: سطوع الوجوه في تطبيقات الطرف الثالث"
     ],
-    "أخرى": [
+    "آخرين": [
+      "تحسين وضوح عرض الصور في WeChat Moments",
+      "تم إصلاح مشكلة تأخر الشبكة في وضع الألعاب",
+      "إصلاح مشكلة انقطاع الإشارة المحتمل عند تبديل المستخدم بسرعة من 4G إلى 2G في محطات قاعدة خاصة",
       "تحسين أمن واستقرار النظام"
+    ],
+    "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
+      "إصلاح مشكلة احتمال عدم اختفاء شريط الإشعارات في شاشة القفل عند إلغاء القفل مباشرةً ببصمة الإصبع أثناء إيقاف الشاشة"
     ],
     "الكاميرا": [
       "جديد: إضافة وضع التصوير المقرب (ماكرو)",
@@ -299,38 +525,61 @@
   },
   "logs_in": {
     "सिस्टम": [
-      "नया: फुल स्क्रीन सेटिंग्स में वॉटरड्रॉप नॉच आकार बदलने का टॉगल"
+      "नया: फुल स्क्रीन सेटिंग्स में वॉटरड्रॉप नॉच आकार बदलने का टॉगल",
+      "सिस्टम की सुरक्षा और स्थिरता को प्रभावित करने वाली कुछ समस्याओं को ठीक किया गया।"
     ],
-    "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
+      "जोड़ा गया: रात में फ़िंगरप्रिंट से अनलॉक करते समय चमक से बचने के लिए फ़िंगरप्रिंट क्षेत्र की चमक कम की जाती है",
+      "जोड़ा गया: जब चेहरा अनलॉक सफल हो और लॉक स्क्रीन पर रहे, तो फिंगरप्रिंट से होम स्क्रीन में प्रवेश कर सकते हैं।",
+      "“हर 72 घंटे में पासवर्ड दर्ज करें” सुविधा के प्रॉम्प्ट टेक्स्ट को अनुकूलित किया गया",
+      "“स्क्रीन बंद होने पर फ़िंगरप्रिंट दिखाएं” सेटिंग बंद करने के बाद कुछ दुर्लभ मामलों में फ़िंगरप्रिंट के अभी भी दिखने की समस्या ठीक की गई",
+      "कॉल के दौरान कॉल अवधि और सूचना आइकन के ओवरलैप होने की समस्या ठीक की गई",
       "स्क्रीन बंद होने पर सीधे फ़िंगरप्रिंट से अनलॉक करते समय लॉक स्क्रीन की सूचना पट्टी के गायब न होने की समस्या ठीक की गई"
     ],
     "कैमरा": [
       "नया: मैक्रो मोड जोड़ा गया",
-      "अनुकूलन: तृतीय-पक्ष ऐप्स में चेहरों की चमक",
-      "अनुकूलन: फ़ोटो और वीडियो की छवि गुणवत्ता"
+      "फेस परिदृश्यों में तृतीय-पक्ष ऐप्स की चमक को अनुकूलित किया गया",
+      "अनुकूलन: फ़ोटो और वीडियो की छवि गुणवत्ता",
+      "अनुकूलन: तृतीय-पक्ष ऐप्स में चेहरों की चमक"
     ],
     "अन्य": [
+      "WeChat Moments में छवि प्रदर्शन की स्पष्टता अनुकूलित की गई",
+      "गेम मोड में नेटवर्क विलंबता की समस्या ठीक की गई",
+      "विशेष बेस स्टेशनों में उपयोगकर्ता द्वारा 4G से 2G में तेज़ी से स्विच करते समय सिग्नल के संभावित रूप से कटने की समस्या ठीक की गई",
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
+    ],
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
+      "स्क्रीन बंद होने पर सीधे फ़िंगरप्रिंट से अनलॉक करते समय लॉक स्क्रीन की सूचना पट्टी के गायब न होने की समस्या ठीक की गई"
     ]
   },
   "logs_ug": {
     "سىستېما": [
-      "New: An option for smoothening notch curves on full screen devices"
+      "New: An option for smoothening notch curves on full screen devices",
+      "سىستېمىنىڭ بىخەتەرلىكى ۋە مۇقىملىقىغا تەسىر كۆرسىتىدىغان بىر قانچە مەسىلە تۈزىتىلدى."
     ],
-    "كامېرا": [
+    "فوتو ئاپپارات": [
       "يېڭى: ماكرو سۈرەتكە تارتىش ئىقتىدارى قوشۇلدى",
       "ئۈچىنچى تەرەپ ئەپلىرىدە يۈز كۆرۈنۈشىدىكى يورۇقلۇقنى ئەلالاشتۇرۇش",
       "سۈرەت ۋە سىنلارنىڭ رەسىم سۈپىتىنى ياخشىلاش"
     ],
     "باشقىلىرى": [
       "Improved system security and stability"
+    ],
+    "كامېرا": [
+      "يېڭى: ماكرو سۈرەتكە تارتىش ئىقتىدارى قوشۇلدى",
+      "ئۈچىنچى تەرەپ ئەپلىرىدە يۈز كۆرۈنۈشىدىكى يورۇقلۇقنى ئەلالاشتۇرۇش",
+      "سۈرەت ۋە سىنلارنىڭ رەسىم سۈپىتىنى ياخشىلاش"
     ]
   },
   "logs_bo": {
+    "མ་ལག": [
+      "New: An option for smoothening notch curves on full screen devices",
+      "མ་ལག་གི་བདེ་འཇགས་དང་བརྟན་ལྷིང་ལ་ཤུགས་རྐྱེན་ཐེབས་པའི་གནད་དོན་འགའ་ཞིག་བཅོས་བྱས།"
+    ],
     "རིམ་ལུགས": [
       "New: An option for smoothening notch curves on full screen devices"
     ],
-    "པར་ཆས": [
+    "ཁ་མར།": [
       "གསར་པ། ཉེ་བར་པར་ལེན་ཁྱད་ཆོས་གསར་དུ་སྣོན།",
       "Optimization: Brightness adjustments for human faces in third party apps",
       "ལེགས་སུ་གཏོང་བ། པར་ལེན་དང་བརྙན་ཕབ་ཀྱི་པར་རིས་སྤུས་ཚད།"

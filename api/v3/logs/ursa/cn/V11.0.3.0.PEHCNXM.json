@@ -17,6 +17,9 @@
     ]
   },
   "logs_en": {
+    "Casting": [
+      "Fixed an issue where system signature incompatibility caused screen casting to be unavailable."
+    ],
     "System": [
       "Updated Android Security Patch to October 2019. Increased system security.",
       "Improved system security and stability"
@@ -25,9 +28,15 @@
       "Optimization: The UI of the player is more simple and intuitive now",
       "Optimization: Local songs and items in the favorites are arranged better now",
       "Fix: We improved a couple of things and fixed some bugs"
+    ],
+    "Security": [
+      "Fixed an issue where GIFs and large images could not be shared to WeChat when a share badge was present"
     ]
   },
   "logs_zh_tw": {
+    "全能投影": [
+      "修復 系統簽名不相容，導致螢幕投放無法使用的問題"
+    ],
     "系統": [
       "更新Android安全性修補程式等級(2019#10)，提升系統安全性",
       "Improved system security and stability"
@@ -36,21 +45,49 @@
       "優化 播放頁面互動細節改良，介面更整潔",
       "優化 改善收藏歌曲、本地歌曲排列方式",
       "修復 其他細節改良和問題修復"
+    ],
+    "安全中心": [
+      "修正 帶分享標識時，GIF、大圖無法分享到 WeChat 的問題"
     ]
   },
   "logs_ja": {
+    "キャスト": [
+      "システム署名の非互換により画面キャストが使用できない問題を修正しました"
+    ],
     "システム": [
       "Updated Android Security Patch to October 2019. Increased system security.",
       "システムのセキュリティと安定性の向上"
+    ],
+    "音楽": [
+      "最適化: 再生ページの操作感を改善し、UIをよりすっきりしました",
+      "最適化: お気に入り楽曲とローカル楽曲の並べ替え方法を最適化",
+      "修正: その他の細部の最適化とバグ修正"
+    ],
+    "セキュリティ": [
+      "共有マーク付きの場合に、GIF と大きな画像を WeChat に共有できない問題を修正"
     ]
   },
   "logs_ko": {
+    "캐스트": [
+      "시스템 서명 비호환으로 인해 화면 캐스트를 사용할 수 없는 문제를 수정했습니다."
+    ],
     "시스템": [
       "Android 보안패치 (2019#10) 업데이트됨. 시스템 보안이 향상되었습니다.",
       "시스템 보안 및 안정성 개선"
+    ],
+    "음악": [
+      "최적화: 재생 페이지의 상호작용을 개선하여 인터페이스가 더 깔끔해졌습니다",
+      "최적화: 즐겨찾는 곡 및 로컬 곡 정렬 방식 최적화",
+      "수정: 기타 세부 최적화 및 버그 수정"
+    ],
+    "보안": [
+      "공유 표시가 있을 때 GIF와 큰 이미지를 WeChat으로 공유할 수 없는 문제를 수정"
     ]
   },
   "logs_ru": {
+    "Трансляция": [
+      "Исправлена проблема, из-за которой несовместимость системной подписи делала трансляцию экрана недоступной."
+    ],
     "Система": [
       "Обновление системы безопасности Android (октябрь 2019 года). Улучшена безопасность системы.",
       "Улучшение безопасности и стабильности системы"
@@ -59,27 +96,66 @@
       "Оптимизация: Теперь пользовательский интерфейс проигрывателя стал более простым и интуитивно понятным",
       "Оптимизация: Улучшена сортировка локальных треков и объектов в избранном",
       "Исправлено: Улучшения и исправление ошибок"
+    ],
+    "Безопасность": [
+      "Исправлена проблема, из-за которой GIF и большие изображения не отправлялись в WeChat при наличии метки общего доступа."
     ]
   },
   "logs_uk": {
+    "Трансляція": [
+      "Виправлено проблему, через яку несумісність системного підпису робила трансляцію екрана недоступною."
+    ],
     "Система": [
       "Updated Android Security Patch to October 2019. Increased system security.",
       "Покращення безпеки та стабільності системи"
+    ],
+    "Музика": [
+      "Оптимізація: покращено взаємодію на сторінці відтворення, інтерфейс став охайнішим",
+      "Оптимізація: оптимізовано сортування улюблених і локальних пісень",
+      "Виправлено: інші дрібні оптимізації та виправлення помилок"
+    ],
+    "Безпека": [
+      "Виправлено проблему, через яку GIF і великі зображення не можна було поділитися в WeChat за наявності позначки поширення."
     ]
   },
   "logs_pl": {
+    "Projekcja": [
+      "Naprawiono problem, w którym niezgodność podpisu systemowego uniemożliwiała korzystanie z przesyłania ekranu."
+    ],
     "System": [
       "Zaktualizowano Pakiet Bezpieczeństwa Android do października 2019 r. Zwiększono bezpieczeństwo systemu.",
       "Większe bezpieczeństwo i stabilność systemu"
+    ],
+    "Muzyka": [
+      "Optymalizacja: ulepszono interakcje na stronie odtwarzania, interfejs jest czystszy",
+      "Optymalizacja: ulepszono sortowanie ulubionych i lokalnych utworów",
+      "Naprawiono: inne drobne optymalizacje i poprawki błędów"
+    ],
+    "Bezpieczeństwo": [
+      "Naprawiono problem z udostępnianiem GIF-ów i dużych obrazów do WeChat, gdy występuje znacznik udostępniania."
     ]
   },
   "logs_de": {
+    "Casting": [
+      "Ein Problem wurde behoben, bei dem die Bildschirmübertragung aufgrund einer inkompatiblen Systemsignatur nicht verfügbar war."
+    ],
     "System": [
       "Updated Android Security Patch to October 2019. Increased system security.",
       "Systemsicherheit und -stabilität verbessert"
+    ],
+    "Musik": [
+      "Optimierung: Interaktionsdetails der Wiedergabeseite optimiert, Oberfläche jetzt übersichtlicher",
+      "Optimierung: Sortierung von Favoriten und lokalen Songs verbessert",
+      "Behoben: Weitere Detailoptimierungen und Fehlerbehebungen"
+    ],
+    "Sicherheit": [
+      "Problem behoben, bei dem GIFs und große Bilder bei vorhandenem Freigabezeichen nicht an WeChat geteilt werden konnten."
     ]
   },
   "logs_fr": {
+    "Diffusion": [
+      "Correction d’un problème où une signature système incompatible rendait la diffusion d’écran inutilisable."
+    ],
     "Système": [
       "Mise à jour du correctif de sécurité Android jusqu'en octobre 2019. Sécurité accrue du système.",
       "Sécurité et stabilité du système améliorées"
@@ -88,9 +164,15 @@
       "Optimisation: L'interface utilisateur du lecteur est plus simple et intuitive maintenant",
       "Optimisation: Les chansons locales et les éléments des favoris sont mieux organisés maintenant",
       "Réparé: Nous avons amélioré plusieurs choses et réglé des bugs"
+    ],
+    "Sécurité": [
+      "Correction d’un problème empêchant le partage de GIF et de grandes images vers WeChat en présence d’une indication de partage."
     ]
   },
   "logs_it": {
+    "Trasmissione": [
+      "Risolto un problema per cui l’incompatibilità della firma di sistema rendeva inutilizzabile la trasmissione dello schermo."
+    ],
     "Sistema": [
       "Patch di sicurezza Android aggiornata a ottobre 2019. Maggiore sicurezza del sistema.",
       "Maggiore sicurezza e stabilità di sistema"
@@ -99,9 +181,15 @@
       "Ottimizzazione: L'interfaccia utente del lettore è ora più semplice e intuitiva",
       "Ottimizzazione: I brani e gli elementi locali tra i preferiti sono ora organizzati meglio",
       "Risolto: Abbiamo migliorato un paio di cose e risolto alcuni bug"
+    ],
+    "Sicurezza": [
+      "Risolto un problema che impediva la condivisione di GIF e immagini di grandi dimensioni su WeChat in presenza di un'indicazione di condivisione."
     ]
   },
   "logs_es": {
+    "Emitir": [
+      "Se corrigió el problema por el que la incompatibilidad de la firma del sistema impedía usar la transmisión de pantalla."
+    ],
     "Sistema": [
       "Parche de Seguridad de Android actualizado a octubre de 2019. Seguridad del sistema aumentada.",
       "Estabilidad y seguridad del sistema mejorada"
@@ -110,9 +198,15 @@
       "Optimización: Ahora la interfaz del reproductor es más sencilla e intuitiva",
       "Optimización: Las canciones locales y los elementos en favoritos ahora están mejor organizados",
       "Reparado: Hemos solucionado un par de cosas y solucionado algunos errores"
+    ],
+    "Seguridad": [
+      "Se corrigió el problema por el que los GIF y las imágenes grandes no se podían compartir en WeChat cuando había una marca de compartir."
     ]
   },
   "logs_pt": {
+    "Transmissão": [
+      "Corrigido o problema em que a incompatibilidade da assinatura do sistema impedia o uso da transmissão de tela."
+    ],
     "Sistema": [
       "Atualização do Patch de Segurança do Android para Outubro de 2019. Segurança do sistema aprimorada.",
       "Segurança e estabilidade do sistema aprimoradas"
@@ -121,9 +215,15 @@
       "Otimização: A interface do reprodutor está mais simples e intuitiva agora",
       "Otimização: Músicas e itens locais nos favoritos estão melhor organizados agora",
       "Correção: Melhoramos algumas coisas e corrigimos alguns bugs"
+    ],
+    "Segurança": [
+      "Corrigido o problema em que GIFs e imagens grandes não podiam ser compartilhados no WeChat quando havia uma marca de compartilhamento."
     ]
   },
   "logs_tr": {
+    "Yansıtma": [
+      "Sistem imzası uyumsuzluğu nedeniyle ekran yayınının kullanılamaması sorunu düzeltildi."
+    ],
     "Sistem": [
       "Android Güvenlik Yaması, Ekim 2019 sürümüne güncellendi. Sistem güvenliği artırıldı.",
       "Sistem güvenliği ve kararlılığı geliştirildi"
@@ -132,42 +232,105 @@
       "Optimizasyon: Oyuncu arayüzü şimdi daha basit ve anlaşılabilir",
       "Optimizasyon: Favorilerdeki yerel şarkılar ve ögeler şimdi daha iyi düzenlendi",
       "Onarım: Birkaç şeyi iyileştirdik ve bazı hataları düzelttik"
+    ],
+    "Güvenlik": [
+      "Paylaşım işareti olduğunda GIF'lerin ve büyük görsellerin WeChat'e paylaşılamaması sorunu giderildi."
     ]
   },
   "logs_id": {
+    "Proyeksi": [
+      "Memperbaiki masalah ketidakcocokan tanda tangan sistem yang menyebabkan siaran layar tidak dapat digunakan."
+    ],
     "Sistem": [
       "Patch Keamanan Android diperbarui (Oktober 2019). Keamanan sistem ditingkatkan.",
       "Keamanan dan stabilitas sistem ditingkatkan"
+    ],
+    "Musik": [
+      "Optimasi: Detail interaksi halaman pemutar ditingkatkan, antarmuka lebih rapi",
+      "Optimasi: Pengurutan lagu favorit dan lagu lokal dioptimalkan",
+      "Perbaikan: optimasi detail lainnya dan perbaikan bug"
+    ],
+    "Keamanan": [
+      "Memperbaiki masalah GIF dan gambar besar tidak dapat dibagikan ke WeChat saat ada tanda berbagi."
     ]
   },
   "logs_vi": {
+    "Chiếu": [
+      "Đã sửa lỗi không tương thích chữ ký hệ thống khiến không thể sử dụng tính năng truyền màn hình."
+    ],
     "Hệ thống": [
       "Updated Android Security Patch to October 2019. Increased system security.",
       "Cải thiện tính ổn định và bảo mật hệ thống"
+    ],
+    "Âm nhạc": [
+      "Tối ưu: Cải thiện chi tiết tương tác trên trang phát, giao diện gọn gàng hơn",
+      "Tối ưu hóa: Tối ưu cách sắp xếp bài hát yêu thích và bài hát cục bộ",
+      "Đã sửa: tối ưu hóa các chi tiết khác và sửa lỗi"
+    ],
+    "Trung tâm An ninh": [
+      "Đã khắc phục sự cố không thể chia sẻ GIF và ảnh lớn lên WeChat khi có dấu chia sẻ."
     ]
   },
   "logs_th": {
+    "ฉายภาพ": [
+      "แก้ไขปัญหาความไม่เข้ากันของลายเซ็นระบบที่ทำให้ไม่สามารถใช้การแคสต์หน้าจอได้"
+    ],
     "ระบบ": [
       "Updated Android Security Patch to October 2019. Increased system security.",
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
+    ],
+    "เพลง": [
+      "เพิ่มประสิทธิภาพ: ปรับปรุงรายละเอียดการโต้ตอบในหน้าผู้เล่น อินเทอร์เฟซดูเรียบง่ายขึ้น",
+      "การปรับปรุง: ปรับปรุงวิธีการจัดเรียงเพลงโปรดและเพลงในเครื่อง",
+      "แก้ไข: ปรับปรุงรายละเอียดอื่นๆ และแก้ไขข้อบกพร่อง"
+    ],
+    "ความปลอดภัย": [
+      "แก้ไขปัญหาที่ไม่สามารถแชร์ GIF และรูปภาพขนาดใหญ่ไปยัง WeChat เมื่อมีเครื่องหมายแชร์"
     ]
   },
   "logs_ar": {
+    "البث": [
+      "تم إصلاح مشكلة عدم توافق توقيع النظام التي أدت إلى تعذر استخدام بث الشاشة."
+    ],
     "النظام": [
       "تم تحديث تصحيح أمان Android إلى أكتوبر 2019 لزيادة أمان النظام.",
       "تحسين أمن واستقرار النظام"
+    ],
+    "الموسيقى": [
+      "تحسين: تحسين تفاصيل التفاعل في صفحة التشغيل، وأصبحت الواجهة أكثر ترتيبًا",
+      "تحسين: تحسين طريقة ترتيب الأغاني المفضلة والأغاني المحلية",
+      "إصلاح: تحسينات تفصيلية أخرى وإصلاح الأخطاء"
+    ],
+    "الأمان": [
+      "إصلاح مشكلة تعذر مشاركة صور GIF والصور الكبيرة إلى WeChat عند وجود علامة المشاركة."
     ]
   },
   "logs_in": {
+    "कास्टिंग": [
+      "सिस्टम हस्ताक्षर असंगति के कारण स्क्रीन कास्टिंग का उपयोग न कर पाने की समस्या ठीक की गई।"
+    ],
     "सिस्टम": [
       "Updated Android Security Patch to October 2019. Increased system security.",
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
+    ],
+    "संगीत": [
+      "अनुकूलन: प्लेबैक पेज के इंटरैक्शन विवरण बेहतर किए गए, इंटरफ़ेस अधिक साफ़-सुथरा है",
+      "अनुकूलन: पसंदीदा गानों और स्थानीय गानों का क्रमबद्ध तरीका बेहतर किया गया",
+      "ठीक किया गया: अन्य विवरण अनुकूलन और बग फ़िक्स"
+    ],
+    "सुरक्षा": [
+      "शेयर बैज होने पर GIF और बड़ी छवियां WeChat पर शेयर न होने की समस्या ठीक की गई"
     ]
   },
   "logs_ug": {
     "سىستېما": [
       "Updated Android Security Patch to October 2019. Increased system security.",
       "Improved system security and stability"
+    ],
+    "مۇزىكا": [
+      "ياخشىلاش: قويغۇچ بېتىنىڭ ئۆزئارا تەسىر تەپسىلاتى ياخشىلاندى، كۆرۈنمە يۈزى تېخىمۇ تەرتىپلىك بولدى",
+      "ياخشىلانما: ياقتۇرغان ناخشىلار ۋە يەرلىك ناخشىلارنىڭ تەرتىپلەش ئۇسۇلى ياخشىلاندى",
+      "تۈزىتىش: باشقا تەپسىلاتلارنى ئەلالاشتۇرۇش ۋە خاتالىقلارنى تۈزىتىش"
     ]
   },
   "logs_bo": {

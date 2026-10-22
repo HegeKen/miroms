@@ -1,10 +1,10 @@
 {
   "logs_zh": {
     "系统": [
-      "修复 影响系统稳定性的若干问题"
+      "系统安全性和稳定性得到了提升。"
     ],
     "锁屏、状态栏、通知栏": [
-      "修复 锁屏时收到不重要通知不亮屏的问题"
+      "当设备处于锁定状态时，对于那些“不重要”的通知（即用户可能不会关注的通知），“恢复屏幕”功能并不会被激活（也就是说，这些通知不会显示在屏幕上）。"
     ],
     "其他": [
       "提升系统的安全性和稳定性"
@@ -12,10 +12,10 @@
   },
   "logs_en": {
     "System": [
-      "Improved system security and stability"
+      "Fixed several issues that affected the stability of the system."
     ],
     "Lockscreen, Status Bar, Notification Bar": [
-      "Restore Screen didn't light up for unimportant notifications when the device was locked"
+      "Fixed the issue where the screen does not light up when receiving unimportant notifications while the device is in lockscreen mode."
     ],
     "Other": [
       "Improved system security and stability"
@@ -23,10 +23,10 @@
   },
   "logs_zh_tw": {
     "系統": [
-      "優化系統的流暢度"
+      "修复了几个影响系统稳定性的问题。"
     ],
     "解鎖畫面、狀態欄、通知欄": [
-      "修復 鎖屏時收到不重要通知不亮屏的問題"
+      "修复了在锁屏状态下收到无关紧要的通知时屏幕不会亮起的故障。"
     ],
     "其他": [
       "Improved system security and stability"
@@ -34,10 +34,10 @@
   },
   "logs_ja": {
     "システム": [
-      "システムのセキュリティと安定性の向上"
+      "システムの安定性に影響を与えるいくつかの問題を修正しました。"
     ],
     "ロック画面、ステータスバー、通知バー": [
-      "ロック画面で重要でない通知を受信したときに画面が点灯しない問題を修正"
+      "ロック画面時に重要でない通知が届いても画面が点灯しない問題を修正しました。"
     ],
     "その他": [
       "システムのセキュリティと安定性の向上"
@@ -45,7 +45,7 @@
   },
   "logs_ko": {
     "시스템": [
-      "시스템 보안 및 안정성 개선"
+      "시스템의 안정성에 영향을 미치는 여러 문제를 수정했습니다."
     ],
     "잠금 화면, 상태 표시줄, 알림 표시줄": [
       "잠금 화면에서 중요하지 않은 알림을 받을 때 화면이 켜지지 않는 문제 수정"
@@ -56,10 +56,10 @@
   },
   "logs_ru": {
     "Система": [
-      "Улучшение безопасности и стабильности системы"
+      "Устранены несколько проблем, влияющих на стабильность работы системы."
     ],
     "Экран блокировки, строка состояния, шторка уведомлений": [
-      "Исправлена проблема с невключением экрана при получении неважных уведомлений на экране блокировки"
+      "Устранено неправильное поведение устройства: при включенном режиме блокировки экрана не отображались важные уведомления, и сам экран не загорался."
     ],
     "Другое": [
       "Улучшение безопасности и стабильности системы"
@@ -67,10 +67,10 @@
   },
   "logs_uk": {
     "Система": [
-      "Покращення безпеки та стабільності системи"
+      "Виправлено кілька проблем, які впливали на стабільність системи."
     ],
     "Екран блокування, рядок стану, рядок сповіщень": [
-      "Виправлено проблему з неввімкненням екрана під час отримання неважливих сповіщень на екрані блокування"
+      "Виправлено проблему, коли під час блокування екрана надходять неважливі сповіщення, і екран не загоряється."
     ],
     "Інше": [
       "Покращення безпеки та стабільності системи"
@@ -78,18 +78,21 @@
   },
   "logs_pl": {
     "System": [
-      "Większe bezpieczeństwo i stabilność systemu"
+      "Urzędnicy naprawili kilka problemów, które wpływały na stabilność systemu."
     ],
     "Ekran blokady, pasek stanu, pasek powiadomień": [
-      "Naprawiono problem z niezaświecaniem ekranu przy otrzymywaniu nieistotnych powiadomień na ekranie blokady"
+      "Poprawiono problem, gdy podczas uaktywowania ekranu blokującego pojawiały się nieważne powiadomienia i ekran nie świecił."
     ],
-    "Inne": [
+    "Reszt": [
       "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
   "logs_de": {
+    "System": [
+      "Behebung mehrerer Probleme, die die Stabilität des Systems beeinträchtigen."
+    ],
     "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
-      "Problem behoben, dass der Bildschirm bei unwichtigen Benachrichtigungen im Sperrbildschirm nicht aufleuchtet"
+      "Behebung des Problems, dass das Display beim Einschalten des Sperrbildschirms nicht aufleuchtet, wenn unbedeutende Benachrichtigungen eingehen."
     ],
     "Sonstiges": [
       "Systemsicherheit und -stabilität verbessert"
@@ -97,7 +100,7 @@
   },
   "logs_fr": {
     "Système": [
-      "Sécurité et stabilité du système améliorées"
+      "Réparation de plusieurs problèmes affectant la stabilité du système."
     ],
     "Écran de verrouillage, barre d’état, barre de notifications": [
       "Correction du problème d'écran qui ne s'allume pas lors de la réception de notifications non importantes sur l'écran verrouillé"
@@ -108,10 +111,10 @@
   },
   "logs_it": {
     "Sistema": [
-      "Maggiore sicurezza e stabilità di sistema"
+      "Risolto un certo numero di problemi che influenzavano la stabilità del sistema."
     ],
     "Schermata di blocco, barra di stato, barra delle notifiche": [
-      "Risolto il problema dello schermo che non si accende quando si ricevono notifiche non importanti sulla schermata di blocco"
+      "Risolto il problema per cui, quando lo schermo è bloccato e arrivano notifiche non importanti, lo schermo non si accende."
     ],
     "Altro": [
       "Maggiore sicurezza e stabilità di sistema"
@@ -119,10 +122,10 @@
   },
   "logs_es": {
     "Sistema": [
-      "Estabilidad y seguridad del sistema mejorada"
+      "Se han corregido varios problemas que afectaban la estabilidad del sistema."
     ],
     "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
-      "Se corrige el problema de que la pantalla no se encienda al recibir notificaciones no importantes con el dispositivo bloqueado"
+      "Se ha corregido el problema de que, cuando la pantalla está bloqueada y se reciben notificaciones no importantes, la pantalla no se enciende."
     ],
     "Otros": [
       "Estabilidad y seguridad del sistema mejorada"
@@ -130,10 +133,10 @@
   },
   "logs_pt": {
     "Sistema": [
-      "Segurança e estabilidade do sistema aprimoradas"
+      "Corrigir vários problemas que afetam a estabilidade do sistema."
     ],
     "Tela de bloqueio, barra de status, barra de notificações": [
-      "Corrigido o problema de a tela não acender ao receber notificações não importantes na tela de bloqueio"
+      "Corrigido o problema em que, quando o ecrã está bloqueado, as notificações irrelevantes não são exibidas e o ecrão não acende."
     ],
     "Outros": [
       "Segurança e estabilidade do sistema aprimoradas"
@@ -141,7 +144,7 @@
   },
   "logs_tr": {
     "Sistem": [
-      "Sistem güvenliği ve kararlılığı geliştirildi"
+      "Sistemin stabilitesini etkileyen birkaç sorunu giderdik."
     ],
     "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
       "Kilit ekranındayken önemsiz bildirimler alındığında ekranın yanmaması sorunu düzeltildi"
@@ -151,6 +154,9 @@
     ]
   },
   "logs_id": {
+    "Sistem": [
+      "Memperbaiki beberapa masalah yang mempengaruhi stabilitas sistem."
+    ],
     "Layar kunci, bilah status, bilah notifikasi": [
       "Memperbaiki masalah layar tidak menyala saat menerima notifikasi tidak penting dalam keadaan terkunci"
     ],
@@ -160,10 +166,10 @@
   },
   "logs_vi": {
     "Hệ thống": [
-      "Cải thiện tính ổn định và bảo mật hệ thống"
+      "Sửa chữa một số vấn đề ảnh hưởng đến tính ổn định của hệ thống."
     ],
     "Màn hình khóa, thanh trạng thái, thanh thông báo": [
-      "Khắc phục sự cố màn hình không sáng khi nhận thông báo không quan trọng trong trạng thái khóa"
+      "Đã sửa lỗi: màn hình không sáng khi nhận được các thông báo không quan trọng trong chế độ khóa màn hình."
     ],
     "Khác": [
       "Cải thiện tính ổn định và bảo mật hệ thống"
@@ -171,7 +177,7 @@
   },
   "logs_th": {
     "ระบบ": [
-      "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
+      "แก้ไขปัญหาต่าง ๆ ที่ส่งผลกระทบต่อความเสถียรของระบบ"
     ],
     "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
       "แก้ไขปัญหาหน้าจอไม่สว่างเมื่อได้รับการแจ้งเตือนที่ไม่สำคัญขณะล็อกหน้าจอ"
@@ -182,35 +188,41 @@
   },
   "logs_ar": {
     "النظام": [
-      "تحسين أمن واستقرار النظام"
+      "تم إصلاح عدة مشاكل كانت تؤثر على استقرار النظام."
     ],
     "شاشة القفل، شريط الحالة، شريط الإشعارات": [
       "إصلاح مشكلة عدم إضاءة الشاشة عند تلقي إشعارات غير مهمة أثناء قفل الشاشة"
     ],
-    "أخرى": [
+    "آخرين": [
       "تحسين أمن واستقرار النظام"
     ]
   },
   "logs_in": {
     "सिस्टम": [
-      "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
+      "सिस्टम की स्थिरता को प्रभावित करने वाली कई समस्याओं को ठीक कर दिया गया है।"
     ],
     "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
-      "लॉक स्क्रीन पर अप्रमुख सूचनाएं मिलने पर स्क्रीन न जलने की समस्या ठीक की गई"
+      "समस्या को ठीक कर दिया गया है: जब स्क्रीन लॉक होती है, तो महत्वहीन नोटिफिकेशन प्राप्त होते हैं एवं स्क्रीन चमकती भी नहीं है।"
     ],
     "अन्य": [
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
     ]
   },
   "logs_ug": {
+    "سىستېما": [
+      "سىستېمىنىڭ مۇقىملىقىغا تەسىر كۆرسىتىدىغان بىر قانچە مەسىلىنى تۈزەتتى"
+    ],
     "قۇلۇپ ئېكرانى، ھالەت بالدىقى، ئۇقتۇرۇش بالدىقى": [
-      "قۇلۇپلانغان ئېكراندا مۇھىم بولمىغان ئۇقتۇرۇشلارنى ئالغاندا ئېكراننىڭ يانماسلىق مەسىلىسىنى تۈزەتتى"
+      "ئېكران قۇلۇپ لانغان چاغدا مۇھىم ئەمەس ئۇقتۇرۇشلار كېلىپ ، ئېكران يورۇ ماسلىق مەسىلىسىنى تۈزەيمىز."
     ],
     "باشقىلىرى": [
       "Improved system security and stability"
     ]
   },
   "logs_bo": {
+    "མ་ལག": [
+      "མ་ལག་གི་བརྟན་ཤུགས་ལ་ཤུགས་རྐྱེན་ཐེབས་པའི་གནད་དོན་ཁ་ཤས་ཉུང་གྲངས་བཅོས་བྱས།"
+    ],
     "གཞན།": [
       "Improved system security and stability"
     ]

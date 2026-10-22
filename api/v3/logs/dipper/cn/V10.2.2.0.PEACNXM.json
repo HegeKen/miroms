@@ -4,19 +4,21 @@
       "小米手机8发布基于 Android P 深度定制的 MIUI 稳定版"
     ],
     "系统": [
-      "修复 偶现进入手机分身后操作无效的问题",
-      "修复 影响系统稳定性的若干问题",
-      "修复 偶现屏幕黑屏的问题",
-      "修复 亮屏息屏时屏幕异常闪烁的问题",
+      "已修复以下问题：在进入“第二空间”后，某些操作偶尔会无法正常执行（即无法完成预期的功能）。",
+      "系统安全性和稳定性得到了提升。",
+      "在某些情况下，“Restore Screen”（恢复屏幕显示）功能会失效，导致屏幕完全变黑。",
+      "在开机或关机时，屏幕会短暂地显示“Restore Screen”（恢复屏幕）的提示信息。",
       "修复 第二空间相关的问题",
       "修复 部分场景下屏幕黑屏的问题",
       "修复 开关屏幕时屏幕闪烁的问题",
       "修复 影响整体稳定性的问题"
     ],
     "电话": [
+      "在拨打电话或接听电话的过程中，设备的运行速度明显变慢了。",
       "修复 偶现拨打接听电话时手机卡顿的问题"
     ],
     "锁屏、状态栏、通知栏": [
+      "当用户双击一条不重要的通知时，如果该通知的界面元素与其他界面元素发生了重叠，系统应能够自动恢复这些元素的正常显示状态（即消除重叠现象）。",
       "修复 双击不重要通知时，通知与快捷开关重叠的问题"
     ],
     "相机": [
@@ -24,8 +26,8 @@
       "新增 支持960帧慢动作拍摄功能"
     ],
     "设置": [
-      "修复 设置页面UI显示错位的问题",
-      "修复 部分时区无法显示地区名称的问题",
+      "在“设置”中恢复那些被放错位置的项目。",
+      "在某些时区中，“恢复区域”（Restore Regions）的功能无法正常显示。",
       "修复 点击立即同步按钮没有反应的问题",
       "新增 支持手持超级夜景拍摄功能",
       "新增 支持960帧慢动作拍摄功能"
@@ -34,27 +36,44 @@
       "修复 搜索界面图标显示异常的问题"
     ],
     "录音机": [
-      "修复 暂停录音后无法及时更新到状态栏的问题"
+      "修复：当录音被暂停时，通知栏中的录音状态信息不会更新。"
     ],
-    "网络助手": [
+    "数据使用情况": [
+      "新增更多可用的数据套餐选项。",
       "新增 日租卡/无限流量卡模式，可设置大王卡、米粉卡、天神卡等套餐类型，流量校正更准确"
     ],
     "小米钱包": [
       "新增 小米公交优惠券页面",
+      "对用于充值交通卡（transport cards）的页面进行了优化和改进。",
+      "对交通卡相关的“更多信息”页面进行了优化和改版。",
       "优化 小米公交充值界面的交互体验",
       "优化 小米公交“更多操作“页面的用户体验"
     ],
     "注意事项": [
-      "基于 Android Pie 的稳定版 MIUI 现已登陆小米 8！"
+      "基于 Android Pie 操作系统的稳定版 MIUI 系统现已正式应用于 Mi 8 设备上！"
     ]
   },
   "logs_en": {
+    "Attention": [
+      "The Xiaomi Mi 8 was released with a stable version of MIUI, which is a customized version of Android P.",
+      "The stable version of MIUI, based on Android Pie, is now available for the Xiaomi 8!"
+    ],
+    "System": [
+      "Fixed the issue where occasionally, operations performed after splitting the phone screen would become ineffective.",
+      "Fixed several issues that affected the stability of the system.",
+      "Fixed the occasional issue where the screen went black.",
+      "Fixed the issue of abnormal screen flickering when using the bright screen or standby mode.",
+      "Fix: Issues with Secind space",
+      "Fix: Screen went black in some cases",
+      "Fix: Screen flashed when it was turned on and off",
+      "Fix: Issues that affected overall stability"
+    ],
     "Phone": [
-      "Restore Device slowed down during making and answering calls",
+      "Fixed the issue of occasional lagging when making or receiving calls due to the mobile phone’s hardware.",
       "Fix: Device slowed down during making and answering calls"
     ],
     "Lockscreen, Status Bar, Notification Bar": [
-      "Restore UI elements overlapped when you double tapped an unimportant notification",
+      "Fixed the issue where double-clicking on an unimportant notification caused the notification to overlap with the shortcut icon.",
       "Fix: UI elements overlapped when you double tapped an unimportant notification"
     ],
     "Camera": [
@@ -62,8 +81,8 @@
       "New: You can shoot 960fps videos now"
     ],
     "Settings": [
-      "Restore Misplaced items in the Settings",
-      "Restore Regions couldn't be displayed in some time zones",
+      "Fixed the issue of incorrect UI display on the settings page.",
+      "Fixed the issue where the region names could not be displayed for some time zones.",
       "Fix: The Sync button didn't always respond",
       "New: Enhanced low light mode",
       "Fix: Regions couldn't be displayed in some time zones"
@@ -73,37 +92,41 @@
       "Fix: Icons on the search page were displayed incorrectly"
     ],
     "Recorder": [
-      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
+      "Fixed the issue where the status bar was not updated promptly after stopping the recording."
     ],
-    "Data Usage": [
-      "Add More data plans available",
+    "Online Assistant": [
+      "New daily rental card/infinite data usage card modes have been added, allowing for the selection of package types such as “Dawang Card,” “Mifen Card,” and “Tianshen Card.” The data usage correction is now more accurate.",
       "New: More data plans available"
     ],
     "MI Wallet": [
-      "Add New page for transport card coupons",
-      "Optimize Improved the page for topping up transport cards",
-      "Optimize Revamped the \"More\" page for transport cards",
+      "Added a new Xiaomi Bus Coupon page",
+      "Optimize the interactive experience of the Xiaomi Bus recharge interface.",
+      "Optimizing the user experience on the “More Actions” page of Xiaomi Bus",
       "New: New page for transport card coupons",
       "Optimization: Improved the page for topping up transport cards",
       "Optimization: Revamped the \"More\" page for transport cards"
-    ],
-    "Attention": [
-      "Stable MIUI based on Android Pie comes to Mi 8!"
-    ],
-    "System": [
-      "Fix: Issues with Secind space",
-      "Fix: Screen went black in some cases",
-      "Fix: Screen flashed when it was turned on and off",
-      "Fix: Issues that affected overall stability"
     ]
   },
   "logs_zh_tw": {
-    "電話": [
-      "修復 偶現撥打接聽電話時手機卡頓的問題",
+    "重要提示": [
+      "小米手機8發布基於 Android P 深度定制的 MIUI 穩定版"
+    ],
+    "系統": [
+      "修复了在手机处于分屏模式时某些操作失效的问题。",
+      "修复了几个影响系统稳定性的问题。",
+      "修复了偶尔出现的屏幕黑屏问题。",
+      "修复了在屏幕亮起或处于待机状态时屏幕出现异常闪烁的问题。",
+      "修復 第二空間相關的問題",
+      "修復 部分場景下螢幕黑屏的問題",
+      "修復 開關螢幕時螢幕閃爍的問題",
+      "修復影響整體穩定性的問題"
+    ],
+    "电话": [
+      "修复了在偶尔拨打电话或接听电话时手机出现卡顿（运行缓慢）的问题。",
       "修正 偶爾在撥打或接聽電話時手機卡頓的問題"
     ],
     "解鎖畫面、狀態欄、通知欄": [
-      "修正 雙擊不重要通知時，通知與快捷開關重疊的問題",
+      "修复了双击非重要通知时，通知内容与相关快捷开关会重叠的问题。",
       "修復雙擊不重要通知時，通知與快捷開關重疊的問題"
     ],
     "相機": [
@@ -111,14 +134,20 @@
       "新增 支援 960 FPS 慢動作錄影功能",
       "新增: 超級夜景功能"
     ],
-    "檔案管理員": [
+    "设置": [
+      "已修复设置页面用户界面（UI）显示错位的问题。",
+      "修正 部分時區無法顯示地區名稱的問題",
+      "修復 點擊「立即同步」按鈕沒有反應的問題"
+    ],
+    "文件管理器": [
       "修復搜尋介面圖示顯示異常的問題",
       "修正 搜尋介面圖示顯示異常的問題"
     ],
-    "錄音機": [
-      "修復 暫停錄音後無法即時更新到狀態欄的問題"
+    "录音机": [
+      "修复了在暂停录音后，系统无法及时将录音状态更新到状态栏的问题。"
     ],
     "網路助手": [
+      "新增了“日租卡”和“无限流量卡”两种消费模式，用户可以自由选择使用“大王卡”、“米粉卡”、“天神卡”等不同的套餐类型；同时，流量的计算与调整也更加精确了。",
       "新增 日租卡/無限流量卡模式，可設定大王卡、米粉卡、天神卡等套餐類型，流量校正更準確"
     ],
     "小米錢包": [
@@ -129,22 +158,29 @@
       "優化 小米公交「更多操作」頁面的使用者體驗"
     ],
     "注意事項": [
-      "基於 Android Pie 的穩定版 MIUI 現已登陸小米 8！"
-    ],
-    "系統": [
-      "修復 第二空間相關的問題",
-      "修復 部分場景下螢幕黑屏的問題",
-      "修復 開關螢幕時螢幕閃爍的問題",
-      "修復影響整體穩定性的問題"
+      "基于 Android Pie 操作系统的稳定版本 MIUI 已正式应用于小米 8 设备上！"
     ]
   },
   "logs_ja": {
+    "注意": [
+      "シャオミのスマートフォン「Mi 8」が発売されました。この端末には、Android Pをベースに深くカスタマイズされたMIUIの安定版が搭載されています。"
+    ],
+    "システム": [
+      "スマートフォンの分割画面モードに入った際に、操作が正常に機能しないという問題を修正しました。",
+      "システムの安定性に影響を与えるいくつかの問題を修正しました。",
+      "画面が時々黒くなる問題を修正",
+      "画面が明るくなったり、一時的に暗くなったりする際に発生する画面の異常なちらつきの問題を修正しました。",
+      "セカンドスペースに関する問題を修正",
+      "一部のシーンで画面が黒くなる問題を修正",
+      "画面のオン/オフ時に画面がちらつく問題を修正",
+      "全体的な安定性に影響する問題を修正"
+    ],
     "電話": [
       "電話の発信・着信時にまれにスマートフォンがカクつく問題を修正",
       "通話の発信・着信時に端末がカクつく問題を修正"
     ],
     "ロック画面、ステータスバー、通知バー": [
-      "重要でない通知をダブルタップした際に、通知とクイック設定が重なる問題を修正",
+      "重要でない通知をダブルクリックした際に、通知がショートカットと重なる問題を修正しました。",
       "修正：重要でない通知をダブルタップした際に、通知とクイック設定が重なる問題"
     ],
     "カメラ": [
@@ -161,37 +197,44 @@
       "検索画面のアイコンが正しく表示されない問題を修正"
     ],
     "レコーダー": [
-      "修正: 録音を一時停止した際、通知シェードの録音状態が更新されない問題"
+      "録音を一時停止した後、ステータスバーの表示がすぐに更新されない問題を修正しました。"
     ],
-    "データ使用量": [
-      "日租カード/無制限データカードモードを追加。大王卡、米粉卡、天神卡などのプランタイプを設定でき、データ通信量の補正がより正確になります",
+    "ネットワークアシスタント": [
+      "新たに「日額レンタルカード／無制限データ通信カード」モードが追加されました。大王カード、米粉カード、天神カードなどのプランタイプを設定でき、データ通信量の計算精度がさらに向上しました。",
       "日租卡/無制限データカードモードを追加。大王卡・米粉卡・天神卡などのプランタイプを設定でき、通信量補正がより正確に。"
     ],
     "MIウォレット": [
       "Xiaomi 公共交通のクーポンページを追加",
-      "Xiaomi交通カードのチャージ画面の操作性を最適化",
-      "Xiaomi交通の「その他の操作」ページのユーザーエクスペリエンスを最適化",
+      "小米バスのチャージインターフェースにおけるユーザー体験を最適化する",
+      "小米バスの「その他の操作」ページのユーザー体験を最適化する",
       "追加: Xiaomi交通カードのクーポンページ",
       "最適化: Xiaomi交通系ICカードのチャージ画面の操作性を改善",
       "Xiaomi 交通カードの「その他の操作」ページのユーザー体験を最適化"
     ],
     "注意事項": [
-      "Android Pie ベースの安定版 MIUI が Mi 8 に登場！"
-    ],
-    "システム": [
-      "セカンドスペースに関する問題を修正",
-      "一部のシーンで画面が黒くなる問題を修正",
-      "画面のオン/オフ時に画面がちらつく問題を修正",
-      "全体的な安定性に影響する問題を修正"
+      "Android Pieをベースにした安定版のMIUIが、Xiaomi 8に搭載されました！"
     ]
   },
   "logs_ko": {
+    "주의": [
+      "샤오미 스마트폰 8은 안드로이드 P를 기반으로 심층적으로 커스터마이징된 MIUI의 안정적인 버전을 출시했습니다."
+    ],
+    "시스템": [
+      "휴대폰을 분할 모드로 전환한 후에 일부 작업이 제대로 실행되지 않는 문제를 수정했습니다.",
+      "시스템의 안정성에 영향을 미치는 여러 문제를 수정했습니다.",
+      "화면이 간헐적으로 검게 변하는 문제를 수정했습니다",
+      "화면이 밝게 켜지거나 정지 상태일 때 화면이 비정상적으로 깜박이는 문제를 수정했습니다.",
+      "세컨드 스페이스 관련 문제 수정",
+      "일부 상황에서 화면이 검게 변하는 문제를 수정했습니다",
+      "화면을 켜고 끌 때 화면이 깜빡이는 문제 수정",
+      "전반적인 안정성에 영향을 주는 문제를 수정"
+    ],
     "전화": [
-      "전화 발신 및 수신 시 간헐적으로 휴대폰이 느려지는 문제 수정",
+      "간혹 전화를 걸거나 받을 때 휴대폰이 멈추는 문제를 수정했습니다.",
       "전화 발신 및 수신 시 기기가 일시적으로 느려지는 문제 수정"
     ],
     "잠금 화면, 상태 표시줄, 알림 표시줄": [
-      "중요하지 않은 알림을 두 번 탭할 때 알림과 빠른 설정이 겹치는 문제를 수정",
+      "중요하지 않은 알림을 더블클릭할 때 알림이 바로가기 버튼과 겹치는 문제를 수정했습니다.",
       "수정: 중요하지 않은 알림을 두 번 탭할 때 알림과 빠른 설정이 겹치는 문제"
     ],
     "카메라": [
@@ -200,7 +243,7 @@
       "New: 저조도 모드 강화됨"
     ],
     "설정": [
-      "설정 페이지의 UI 표시가 어긋나는 문제 수정",
+      "설정 페이지의 UI가 잘못 배치되는 문제를 수정했습니다.",
       "일부 시간대에서 지역 이름이 표시되지 않는 문제를 수정",
       "\"지금 동기화\" 버튼을 눌러도 반응이 없는 문제를 수정"
     ],
@@ -208,38 +251,45 @@
       "검색 화면의 아이콘이 비정상적으로 표시되는 문제를 수정했습니다",
       "검색 화면의 아이콘이 비정상적으로 표시되는 문제를 수정"
     ],
-    "녹음기": [
-      "수정: 녹음을 일시중지했을 때 알림 창의 녹음 상태가 업데이트되지 않던 문제"
+    "레코더": [
+      "녹음을 일시 중단한 후 상태 표시줄에 즉시 업데이트되지 않는 문제를 수정했습니다."
     ],
-    "데이터 사용량": [
-      "일일 요금제/무제한 데이터 카드 모드 추가. 大王卡, 米粉卡, 天神卡 등 요금제 유형을 설정할 수 있으며 데이터 보정이 더 정확해집니다",
+    "네트워크 어시스턴트": [
+      "새로운 ‘일일 대여 카드’ 및 ‘무제한 데이터 사용 카드’ 모드가 추가되었습니다. 대왕카, 미분카, 천신카 등 다양한 패키지 유형을 설정할 수 있으며, 데이터 사용량의 측정이 보다 정확해졌습니다.",
       "일일 요금제/무제한 데이터 카드 모드 추가. 大王卡, 米粉卡, 天神卡 등 요금제 유형을 설정할 수 있어 데이터 보정이 더 정확해집니다."
     ],
-    "MI 월렛": [
+    "샤오미 지갑": [
       "Xiaomi 대중교통 쿠폰 페이지 추가",
-      "Xiaomi 교통카드 충전 화면의 상호작용 경험 최적화",
-      "Xiaomi Transit «추가 작업» 페이지의 사용자 경험 최적화",
+      "샤오미 버스 충전 인터페이스의 사용자 경험을 최적화합니다.",
+      "샤오미 버스(Xiaomi Bus)의 “더 많은 작업(More Operations)” 페이지 사용자 경험을 최적화합니다.",
       "추가: Xiaomi 교통카드 쿠폰 페이지",
       "최적화: Xiaomi 교통카드 충전 화면의 조작 환경 개선",
       "Xiaomi 교통카드의 “추가 작업” 페이지 사용자 경험 최적화"
     ],
     "주의사항": [
-      "Android Pie 기반 안정판 MIUI가 Mi 8에 출시되었습니다!"
-    ],
-    "시스템": [
-      "세컨드 스페이스 관련 문제 수정",
-      "일부 상황에서 화면이 검게 변하는 문제를 수정했습니다",
-      "화면을 켜고 끌 때 화면이 깜빡이는 문제 수정",
-      "전반적인 안정성에 영향을 주는 문제를 수정"
+      "안드로이드 파이(Android Pie) 기반의 안정적인 버전인 MIUI가 이제 샤오미 8(Xiaomi 8)에 탑재되었습니다!"
     ]
   },
   "logs_ru": {
+    "Предупреждения": [
+      "Смартфон Xiaomi 8 получил стабильную версию операционной системы MIUI, созданную на основе платформы Android P с использованием глубоких настроек."
+    ],
+    "Система": [
+      "Устранено случайное невозможность выполнения действий после разделения экрана телефона на несколько частей.",
+      "Устранены несколько проблем, влияющих на стабильность работы системы.",
+      "Устранено случайное выключение экрана (его черный цвет).",
+      "Устранено проблему необычного мерцания экрана во время режимов «Яркий экран» и «Задержка изображения».",
+      "Исправление проблем, связанных со Вторым пространством",
+      "Исправлена проблема с черным экраном в некоторых сценариях",
+      "Исправлена проблема с мерцанием экрана при включении и выключении экрана",
+      "Исправлена проблема, влиявшая на общую стабильность"
+    ],
     "Телефон": [
-      "Исправлена проблема с редкими зависаниями телефона при совершении и приеме звонков",
+      "Устранено проблему периодической замедленной работы телефона при совершении и принятии звонков.",
       "Исправлена проблема с подтормаживанием устройства при исходящих и входящих вызовах"
     ],
     "Экран блокировки, строка состояния, шторка уведомлений": [
-      "Исправлена проблема наложения уведомлений и быстрых настроек при двойном нажатии на неважное уведомление",
+      "Исправлено совпадение уведомления и соответствующего пускового элемента при двойном клике на незначительное уведомление.",
       "Исправлено: уведомление и быстрые переключатели перекрывались при двойном нажатии на неважное уведомление"
     ],
     "Камера": [
@@ -248,46 +298,53 @@
       "Новое: Улучшенный режим ночной съемки"
     ],
     "Настройки": [
-      "Исправлено смещение элементов интерфейса на странице настроек",
-      "Исправлена проблема с отображением названий регионов в некоторых часовых поясах.",
+      "Устранено ошибочное отображение пользовательского интерфейса на странице настройок.",
+      "Устранено недостаток, при котором в некоторых часовых поясах не отображалось название региона.",
       "Исправлена проблема, из-за которой кнопка «Синхронизировать сейчас» не реагировала на нажатие"
     ],
-    "Файловый менеджер": [
+    "Проводник файлов": [
       "Исправлена проблема с неправильным отображением значков в интерфейсе поиска",
       "Исправлена проблема с неправильным отображением значков на экране поиска"
     ],
     "Диктофон": [
-      "Fix: Факт остановки записи не отображался в строке состояния вовремя"
+      "Устранено недостаток, связанный с тем, что после приостановки записи информация не своевременно отображается в панели состояния."
     ],
-    "Трафик": [
-      "Добавлен режим дневной карты/карты безлимитного трафика; можно выбрать тарифы 大王卡, 米粉卡, 天神卡 и др., коррекция трафика стала точнее",
+    "Интернет-ассистент": [
+      "Добавлены новые режимы работы карт для ежедневной аренды и карт с неограниченным объемом трафика. Можно настроить пакеты услуг, такие как „Да Ван Кар“, „Ми Фэн Кар“ и „Тянь Шэн Кар“. Коррекция расчетов объема трафика стала более точной.",
       "Добавлен режим дневной карты/карты безлимитного трафика. Можно настроить типы тарифов, такие как 大王卡, 米粉卡 и 天神卡; коррекция трафика стала точнее."
     ],
     "MI Кошелек": [
-      "Добавлена страница купонов Xiaomi для общественного транспорта",
-      "Оптимизировано взаимодействие с интерфейсом пополнения транспортной карты Xiaomi",
+      "Добавлена страница с купонами для использования в общественном транспорте Xiaomi.",
+      "Оптимизация интерактивного пользовательского опыта при пополнении баланса в приложении для платежей с использованием карт Xiaomi Bus.",
       "Оптимизация пользовательского опыта страницы «Дополнительные действия» Xiaomi Transit",
       "Добавлено: страница купонов Xiaomi Transit",
       "Оптимизация: улучшено взаимодействие с интерфейсом пополнения транспортной карты Xiaomi",
       "Оптимизирован пользовательский опыт страницы «Дополнительные действия» транспортной карты Xiaomi"
     ],
-    "Внимание": [
+    "Важные моменты, на которые следует обратить внимание:": [
       "Стабильная версия MIUI на базе Android Pie теперь доступна для Mi 8!"
-    ],
-    "Система": [
-      "Исправление проблем, связанных со Вторым пространством",
-      "Исправлена проблема с черным экраном в некоторых сценариях",
-      "Исправлена проблема с мерцанием экрана при включении и выключении экрана",
-      "Исправлена проблема, влиявшая на общую стабильность"
     ]
   },
   "logs_uk": {
+    "Попередження": [
+      "Смартфон Xiaomi 8 був представлений із стабільною версією операційної системи MIUI, яка є глибоко адаптованою під основи Android P."
+    ],
+    "Система": [
+      "Виправлено проблему, коли іноді після розділення екрана телефону виконання деяких дій стає некоректним.",
+      "Виправлено кілька проблем, які впливали на стабільність системи.",
+      "Виправлено проблему часового затемнення екрана.",
+      "Виправлено проблему ненормального мерехтіння екрана під час режимів яскравого екрана та екрана затемнення.",
+      "Виправлення проблем, пов’язаних із Другим простором",
+      "Виправлено проблему з чорним екраном у деяких сценаріях",
+      "Виправлено проблему з мерехтінням екрана під час увімкнення та вимкнення екрана",
+      "Виправлено проблему, що впливала на загальну стабільність"
+    ],
     "Телефон": [
-      "Виправлено проблему з періодичним зависанням телефону під час здійснення та приймання дзвінків",
+      "Виправлено проблему, коли іноді під час дзвінків або прийому дзвінків телефон зависає.",
       "Виправлено проблему з підгальмовуванням пристрою під час вихідних і вхідних викликів"
     ],
     "Екран блокування, рядок стану, рядок сповіщень": [
-      "Виправлено проблему накладання сповіщень і швидких налаштувань під час подвійного натискання на неважливе сповіщення",
+      "Виправлено проблему, коли під час подвійного клацання на неважливому сповіщенні сповіщення та відповідний швидкий перемикач залежали один від одного.",
       "Виправлено: сповіщення та швидкі перемикачі перекривалися під час подвійного натискання на неважливе сповіщення"
     ],
     "Камера": [
@@ -297,45 +354,52 @@
     ],
     "Налаштування": [
       "Виправлено зміщення елементів інтерфейсу на сторінці налаштувань",
-      "Виправлено проблему з відображенням назв регіонів у деяких часових поясах.",
+      "Виправлено проблему, коли в деяких часових зонах не відображалися назви регіонів.",
       "Виправлено проблему, через яку кнопка «Синхронізувати зараз» не реагувала на натискання"
     ],
-    "Файловий менеджер": [
+    "Провідник файлів": [
       "Виправлено проблему з неправильним відображенням значків в інтерфейсі пошуку",
       "Виправлено проблему з неправильним відображенням значків на екрані пошуку"
     ],
     "Диктофон": [
-      "Виправлено: стан запису не оновлювався в панелі сповіщень під час паузи запису"
+      "Виправлено проблему, коли після призупинення запису інформація не вчасно оновлюється у панелі стану."
     ],
-    "Передача даних": [
-      "Додано режим денної картки/картки безлімітного трафіку; можна вибрати тарифи 大王卡, 米粉卡, 天神卡 тощо, коригування трафіку точніше",
+    "Інтернет-асистент": [
+      "Додано нові режими карток для щоденної оренди та карток з необмеженим обсягом даних. Можна налаштувати такі типи пакетів, як „Даван Карта“, „Міфень Карта“, „Тяньшен Карта“ тощо. Корекція обсягу переданих даних стала більш точною.",
       "Додано режим денної картки/картки безлімітного трафіку. Можна налаштувати типи тарифів, як-от 大王卡, 米粉卡 і 天神卡; коригування трафіку стало точнішим."
     ],
     "MI Гаманець": [
-      "Додано сторінку купонів Xiaomi для громадського транспорту",
-      "Оптимізовано взаємодію з інтерфейсом поповнення транспортної картки Xiaomi",
-      "Оптимізація досвіду користувача на сторінці «Додаткові дії» Xiaomi Transit",
+      "Додана нова сторінка з купонами для користування громадським транспортом від Xiaomi.",
+      "Оптимізація інтерактивного досвіду користувача під час поповнення балансу на сервісі Xiaomi Bus.",
+      "Оптимізація користувацького досвіду на сторінці „Більше операцій“ для сервісу Xiaomi Bus",
       "Додано: сторінка купонів Xiaomi Transit",
       "Оптимізація: покращено взаємодію з інтерфейсом поповнення транспортної картки Xiaomi",
       "Оптимізовано взаємодію користувача на сторінці «Додаткові дії» транспортної картки Xiaomi"
     ],
-    "Увага": [
+    "Зауваження": [
       "Стабільна версія MIUI на базі Android Pie тепер доступна для Mi 8!"
-    ],
-    "Система": [
-      "Виправлення проблем, пов’язаних із Другим простором",
-      "Виправлено проблему з чорним екраном у деяких сценаріях",
-      "Виправлено проблему з мерехтінням екрана під час увімкнення та вимкнення екрана",
-      "Виправлено проблему, що впливала на загальну стабільність"
     ]
   },
   "logs_pl": {
+    "Powiadomienie": [
+      "Smartfon Xiaomi 8 został wyposażony w stabilną wersję oprogramowania MIUI, dostosowaną specjalnie do systemu operacyjnego Android P."
+    ],
+    "System": [
+      "Poprawiono problem, występujący czasem, gdy po rozdzielaniu ekranu telefonu wykonanie danej operacji nie przynosi żadnego efektu.",
+      "Urzędnicy naprawili kilka problemów, które wpływały na stabilność systemu.",
+      "Poprawiono problem z wyświetleniem czarnego ekranu, który występował sporadycznie.",
+      "Poprawiono problem nieprawidłowego migańca ekranu podczas włączonego trybu ekranu wyciszania („screen saver”).",
+      "Poprawiono problemy związane z Drugą przestrzenią",
+      "Naprawiono problem z czarnym ekranem w niektórych scenariuszach",
+      "Naprawiono problem migotania ekranu podczas włączania i wyłączania ekranu",
+      "Naprawiono problem wpływający na ogólną stabilność"
+    ],
     "Telefon": [
-      "Naprawiono problem z sporadycznym zacięciem telefonu podczas wykonywania i odbierania połączeń",
+      "Poprawiono problem nawrotowych zwolnień w działaniu kart telefonicznej podczas sporadycznych rozmów.",
       "Naprawiono problem z przycinaniem urządzenia podczas wykonywania i odbierania połączeń"
     ],
     "Ekran blokady, pasek stanu, pasek powiadomień": [
-      "Naprawiono problem nakładania się powiadomień i szybkich ustawień po dwukrotnym dotknięciu nieistotnego powiadomienia",
+      "Poprawiono problem, gdy dwukrotnie kliknięto na nieważną wiadomość, to wiadomość i przycisk szybkiego dostępu nakładały się na siebie.",
       "Naprawiono: powiadomienie i szybkie przełączniki nakładały się po dwukrotnym dotknięciu nieistotnego powiadomienia"
     ],
     "Aparat": [
@@ -344,24 +408,24 @@
       "Nowe: Ulepszony tryb delikatnego oświetlenia"
     ],
     "Ustawienia": [
-      "Naprawiono przesunięcie elementów interfejsu na stronie ustawień",
-      "Naprawiono problem z wyświetlaniem nazw regionów w niektórych strefach czasowych.",
+      "Poprawiono problem z niewłaściwym wyświetleniem interfejsu użytkownika na stronie ustawień.",
+      "Poprawiono problem, w którym w niektórych czasowych obszarach nie wyświetlały się nazwy regionów.",
       "Naprawiono problem z brakiem reakcji po naciśnięciu przycisku „Synchronizuj teraz”"
     ],
     "Menedżer plików": [
       "Naprawiono problem z nieprawidłowym wyświetlaniem ikon w interfejsie wyszukiwania",
       "Naprawiono problem z nieprawidłowym wyświetlaniem ikon na ekranie wyszukiwania"
     ],
-    "Rejestrator": [
-      "Poprawka: stan nagrywania nie był aktualizowany na pasku powiadomień po wstrzymaniu nagrywania"
+    "Kaseta nagrywająca": [
+      "Poprawiono problem z niewłaściwym aktualizowaniem stanu w pasku stanu po przywołaniu funkcji przerywania nagrywania."
     ],
-    "Użycie danych": [
-      "Dodano tryb karty dziennej/karty z nielimitowanym transferem; można ustawić typy planów, np. 大王卡, 米粉卡, 天神卡, a korekta danych jest dokładniejsza",
+    "Asystent online": [
+      "Dodano nowe modele kart do wynajęcia na dzień oraz kart z nieograniczonym limitem transmisji danych. Można ustawić różne typy pakietów, np. „Dawang Card”, „Mifen Card”, „Tianshen Card” itd. Korekcja ilości przekazanych danych jest teraz bardziej dokładna.",
       "Dodano tryb karty dziennej/karty z nielimitowanym transferem. Można ustawić typy planów, takie jak 大王卡, 米粉卡 i 天神卡; korekcja danych jest dokładniejsza."
     ],
     "MI Portfel": [
-      "Dodano stronę kuponów Xiaomi na transport publiczny",
-      "Zoptymalizowano interakcję z ekranem doładowania karty transportowej Xiaomi",
+      "Dodano nową stronę z kuponami dla usług transportu publicznego oferowanych przez Xiaomi.",
+      "Optymalizacja interakcji użytkownika podczas opłacania kart transportowych w aplikacji Xiaomi Bus.",
       "Optymalizacja doświadczeń użytkownika na stronie „Więcej działań” Xiaomi Transit",
       "Dodano: strona kuponów Xiaomi Transit",
       "Optymalizacja: ulepszono obsługę ekranu doładowania karty transportowej Xiaomi",
@@ -369,68 +433,83 @@
     ],
     "Uwagi": [
       "Stabilna wersja MIUI oparta na Android Pie trafiła do Mi 8!"
-    ],
-    "System": [
-      "Poprawiono problemy związane z Drugą przestrzenią",
-      "Naprawiono problem z czarnym ekranem w niektórych scenariuszach",
-      "Naprawiono problem migotania ekranu podczas włączania i wyłączania ekranu",
-      "Naprawiono problem wpływający na ogólną stabilność"
     ]
   },
   "logs_de": {
+    "Wichtiger Hinweis": [
+      "Das Xiaomi Phone 8 wurde mit einer stabilen Version von MIUI veröffentlicht, die auf Android P basiert und speziell angepasst wurde."
+    ],
+    "System": [
+      "Behebung des Problems, bei dem gelegentlich keine Aktionen ausgeführt werden, wenn man das Handy in den Split-Modus wechselt.",
+      "Behebung mehrerer Probleme, die die Stabilität des Systems beeinträchtigen.",
+      "Behebung des gelegentlich auftretenden Problems, dass der Bildschirm schwarz bleibt.",
+      "Behebung des Problems mit dem ungewöhnlichen Flackern des Bildschirms beim Einschalten sowie während der Standby-Phase.",
+      "Behebung von Problemen mit dem Zweiten Bereich",
+      "Problem behoben, dass der Bildschirm in einigen Fällen schwarz wurde",
+      "Problem behoben, bei dem der Bildschirm beim Ein- und Ausschalten flackerte",
+      "Problem behoben, das die allgemeine Stabilität beeinträchtigte"
+    ],
     "Telefon": [
-      "Problem behoben, bei dem das Telefon beim Tätigen und Annehmen von Anrufen gelegentlich hängt",
+      "Behebung des Problems, bei dem das Handy beim Anrufen oder Abnehmen von Anrufen manchmal verlangsamt.",
       "Problem behoben, bei dem das Gerät beim Tätigen und Annehmen von Anrufen ruckelte"
     ],
     "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
-      "Das Überlappen von Benachrichtigungen und Schnelleinstellungen beim Doppeltippen einer unwichtigen Benachrichtigung wurde behoben.",
+      "Behebung des Problems, bei dem Benachrichtigungen unbedeutender Art beim Doppelklicken mit den Schnellzugriffsschaltern überlappen.",
       "Behoben: Benachrichtigung und Schnelleinstellungen überlappten sich beim Doppeltippen einer unwichtigen Benachrichtigung"
     ],
     "Kamera": [
       "Neu: Verbesserter Low-Light-Modus",
-      "Neu: Videos mit 960 fps können jetzt aufgenommen werden"
+      "Neu: Videos mit 960 fps können jetzt aufgenommen werden",
+      "Neu: Unterstützung für handgehaltene Super-Nachtaufnahmen"
     ],
     "Einstellungen": [
-      "Fehlerhafte UI-Ausrichtung auf der Einstellungsseite behoben",
-      "Problem behoben, dass in einigen Zeitzonen keine Regionsnamen angezeigt wurden.",
+      "Behebung des Problems mit der fehlerhaften Anzeige der Benutzeroberfläche auf der Einstellungsseite.",
+      "Behebung des Problems, dass in einigen Zeitzonen die Ortsnamen nicht angezeigt werden.",
       "Problem behoben, bei dem die Schaltfläche „Jetzt synchronisieren“ nicht reagierte"
     ],
     "Dateimanager": [
       "Problem mit der falschen Anzeige von Symbolen in der Suchoberfläche behoben",
       "Problem mit der fehlerhaften Anzeige von Symbolen auf dem Suchbildschirm behoben"
     ],
-    "Rekorder": [
-      "Behoben: Der Aufnahmestatus wurde in der Benachrichtigungsleiste nicht aktualisiert, wenn eine Aufnahme pausiert wurde"
+    "Tonaufnahmegerät": [
+      "Behebung des Problems, dass sich der Status nach einer Unterbrechung der Aufnahmefunktion nicht rechtzeitig in der Statusleiste aktualisiert."
     ],
-    "Datennutzung": [
-      "Modus für Tageskarte/Unlimited-Datenkarte hinzugefügt; Tariftypen wie 大王卡, 米粉卡, 天神卡 können festgelegt werden, Datenkorrektur genauer",
+    "Online-Assistent": [
+      "Neuer Modus für Tagesmietkarten bzw. Karten mit unbegrenztem Datenvolumen hinzugefügt. Es ist möglich, Pakettypen wie „Dawang-Karte“, „Mifen-Karte“ oder „Tianshen-Karte“ einzustellen; die Korrektur des Datenvolumens erfolgt nun genauer.",
       "Neu: Modus für Tageskarte/Unlimited-Datenkarte. Tariftypen wie 大王卡, 米粉卡 und 天神卡 können eingestellt werden; Datenkorrektur ist genauer."
     ],
-    "MI Geldbörse": [
-      "Seite für Xiaomi-Coupons für den öffentlichen Nahverkehr hinzugefügt",
-      "Interaktion bei der Aufladung der Xiaomi-Verkehrskarte optimiert",
+    "Xiaomi Wallet": [
+      "Neue Seite mit Xiaomi-Bus-Gutscheinen hinzugefügt.",
+      "Optimierung der Interaktionsqualität der Xiaomi-Bus-Chargierungs-Oberfläche",
       "Optimierung der Benutzererfahrung auf der Seite „Weitere Aktionen“ von Xiaomi Transit",
       "Neu: Gutscheinseite für Xiaomi Transit",
       "Optimierung: Bedienung der Oberfläche zum Aufladen der Xiaomi Verkehrskarte verbessert",
       "Optimierung der Benutzererfahrung auf der Seite „Weitere Aktionen“ der Xiaomi-Transportkarte"
     ],
-    "Hinweise": [
-      "Stabile MIUI-Version auf Basis von Android Pie ist jetzt für Mi 8 verfügbar!"
-    ],
-    "System": [
-      "Behebung von Problemen mit dem Zweiten Bereich",
-      "Problem behoben, dass der Bildschirm in einigen Fällen schwarz wurde",
-      "Problem behoben, bei dem der Bildschirm beim Ein- und Ausschalten flackerte",
-      "Problem behoben, das die allgemeine Stabilität beeinträchtigte"
+    "Hinweise und Vorsichtsmaßnahmen": [
+      "Die stabile Version von MIUI, die auf Android Pie basiert, ist nun für das Xiaomi 8 verfügbar!"
     ]
   },
   "logs_fr": {
+    "Avertissement important": [
+      "Xiaomi Mi 8 publie une version stable de MIUI profondément personnalisée basée sur Android P"
+    ],
+    "Système": [
+      "Résolution du problème où certaines actions deviennent inopératives après que l'écran de l'appareil ait été divisé en plusieurs parties.",
+      "Réparation de plusieurs problèmes affectant la stabilité du système.",
+      "Résolution du problème de noirceur occasionnelle de l'écran.",
+      "Résolution du problème de clignotement anormal de l'écran lorsqu'il est allumé ou en mode veille.",
+      "Correction des problèmes liés au Second espace",
+      "Correction du problème d'écran noir dans certains cas",
+      "Correction du problème de scintillement de l'écran lors de l'activation et de la désactivation de l'écran",
+      "Correction d'un problème affectant la stabilité générale"
+    ],
     "Téléphone": [
-      "Correction du problème de ralentissement intermittent du téléphone lors des appels sortants et entrants",
+      "Résolution du problème de ralentissement occasionnel du téléphone lors de l'émission ou de la réception d'appels.",
       "Correction du ralentissement de l’appareil lors des appels sortants et entrants"
     ],
     "Écran de verrouillage, barre d’état, barre de notifications": [
-      "Correction du chevauchement entre les notifications et les raccourcis lors d'un double appui sur une notification non importante.",
+      "Résolution du problème où les notifications et les boutons de raccourci se chevauchent lorsqu'on double-clique sur une notification non importante.",
       "Correction : chevauchement entre la notification et les réglages rapides lors d’un double appui sur une notification non importante"
     ],
     "Appareil photo": [
@@ -439,8 +518,8 @@
       "Nouveau: Mode faible luminosité amélioré"
     ],
     "Paramètres": [
-      "Correction du décalage d’affichage de l’interface dans les paramètres",
-      "Correction du problème d’affichage des noms de régions dans certains fuseaux horaires.",
+      "Résolution du problème de décalage dans l'affichage de l'interface utilisateur de la page de configuration.",
+      "Résolution du problème selon lequel les noms des régions ne s'affichaient pas dans certains fuseaux horaires.",
       "Correction du problème où le bouton « Synchroniser maintenant » ne répondait pas"
     ],
     "Gestionnaire de fichiers": [
@@ -448,40 +527,47 @@
       "Correction du problème d’affichage incorrect des icônes sur l’écran de recherche"
     ],
     "Enregistreur": [
-      "Correction : l’état d’enregistrement n’était pas mis à jour dans la barre de notifications lors d’une pause"
+      "Résolution du problème : l'actualisation de l'état dans la barre d'état ne se fait pas immédiatement après l'arrêt de l'enregistrement."
     ],
-    "Utilisation des données": [
-      "Ajout du mode carte journalière/carte data illimitée ; possibilité de définir des forfaits comme 大王卡, 米粉卡, 天神卡, correction des données plus précise",
+    "Assistant en ligne": [
+      "De nouveaux modes de cartes à usage journalier ou avec un forfait de données illimité ont été ajoutés, permettant de sélectionner des types de forfaits tels que la « Grande Carte », la « Carte Riz » ou la « Carte Dieu ». La correction des données de consommation de données est désormais plus précise.",
       "Nouveau : mode carte journalière/carte data illimitée. Types de forfaits comme 大王卡, 米粉卡 et 天神卡 configurables ; calibration des données plus précise."
     ],
     "MI Portefeuille": [
       "Ajout de la page des coupons Xiaomi pour les transports en commun",
-      "Optimisation de l’expérience d’interaction de l’écran de recharge de la carte de transport Xiaomi",
-      "Optimisation de l’expérience utilisateur de la page « Plus d’actions » de Xiaomi Transit",
+      "Optimiser l'expérience d'utilisation de l'interface de recharge pour le service de transport en commun Xiaomi.",
+      "Optimiser l'expérience utilisateur de la page « Plus d'opérations » sur le service de transport en commun Xiaomi.",
       "Nouveau : page de coupons Xiaomi Transit",
       "Optimisation : amélioration de l'expérience d'utilisation de l'interface de rechargement de la carte de transport Xiaomi",
       "Optimisation de l’expérience utilisateur de la page « Plus d’actions » de la carte de transport Xiaomi"
     ],
-    "Remarques": [
+    "Mémesures de précaution à prendre": [
       "La version stable de MIUI basée sur Android Pie est désormais disponible pour Mi 8 !"
-    ],
-    "Système": [
-      "Correction des problèmes liés au Second espace",
-      "Correction du problème d'écran noir dans certains cas",
-      "Correction du problème de scintillement de l'écran lors de l'activation et de la désactivation de l'écran",
-      "Correction d'un problème affectant la stabilité générale"
     ]
   },
   "logs_it": {
+    "Attenzione": [
+      "Il Xiaomi Phone 8 presenta una versione stabile di MIUI, personalizzata in modo approfondito su base di Android P."
+    ],
+    "Sistema": [
+      "Risolto il problema occasionale in cui le operazioni eseguite dopo aver diviso lo schermo del telefono risultano inefficaci.",
+      "Risolto un certo numero di problemi che influenzavano la stabilità del sistema.",
+      "Risolto il problema occasionale di schermo nero.",
+      "Risolto il problema di scintillii anomali dello schermo durante le modalità “Schermo luminoso” e “Schermo in standby”.",
+      "Correzione dei problemi relativi al Secondo spazio",
+      "Risolto il problema dello schermo nero in alcuni scenari",
+      "Risolto il problema dello sfarfallio dello schermo durante l'accensione e lo spegnimento dello schermo",
+      "Risolto un problema che influiva sulla stabilità generale"
+    ],
     "Telefono": [
-      "Risolto il problema di rallentamenti occasionali del telefono durante le chiamate in uscita e in entrata",
+      "Risolto il problema di rallentamento del telefono durante le chiamate in entrata e in uscita, che si verificava occasionalmente.",
       "Risolto il problema di rallentamento del dispositivo durante chiamate in uscita e in entrata"
     ],
     "Schermata di blocco, barra di stato, barra delle notifiche": [
-      "Risolto il problema di sovrapposizione tra notifiche e scorciatoie quando si tocca due volte una notifica non importante.",
+      "Risolto il problema in cui, facendo doppio clic su una notifica non importante, la notifica si sovrapponeva all’icona relativa all’applicazione che permette di attivarla o disattivarla rapidamente.",
       "Risolto: sovrapposizione tra notifica e impostazioni rapide quando si tocca due volte una notifica non importante"
     ],
-    "Fotocamera": [
+    "macchina fotografica": [
       "Novità: Supporto alla fotografia notturna avanzata a mano",
       "Novità: Ora puoi registrare video a 960 fps",
       "Nuovo: Migliorata la modalità luce scarsa"
@@ -491,20 +577,20 @@
       "Risolto il problema per cui in alcuni fusi orari non venivano mostrati i nomi delle regioni.",
       "Risolto il problema per cui il pulsante \"Sincronizza ora\" non rispondeva"
     ],
-    "Gestione file": [
+    "File Manager": [
       "Risolto il problema di visualizzazione errata delle icone nell'interfaccia di ricerca",
       "Risolto il problema di visualizzazione errata delle icone nella schermata di ricerca"
     ],
     "Registratore": [
-      "Correzione: lo stato di registrazione non veniva aggiornato nella barra delle notifiche quando una registrazione veniva messa in pausa"
+      "Risolto il problema per cui, dopo aver interrotto la registrazione, lo stato della registrazione non veniva aggiornato tempestivamente nella barra di stato."
     ],
-    "Utilizzo dei dati": [
-      "Aggiunta modalità carta giornaliera/carta dati illimitata; puoi impostare piani come 大王卡, 米粉卡, 天神卡, correzione dati più precisa",
+    "Assistente online": [
+      "È stata aggiunta una nuova modalità per le carte a noleggio giornaliero o con traffico illimitato, che consente di configurare pacchetti come “Dawang Card”, “Mifen Card”, “Tianshen Card” ecc. La correzione del traffico dati è ora più precisa.",
       "Nuovo: modalità scheda giornaliera/scheda dati illimitati. È possibile impostare tipi di piano come 大王卡, 米粉卡 e 天神卡; calibrazione dati più precisa."
     ],
     "MI Portafoglio": [
       "Aggiunta della pagina coupon Xiaomi per i trasporti pubblici",
-      "Ottimizzata l'esperienza di interazione della schermata di ricarica della carta trasporti Xiaomi",
+      "Ottimizzare l’esperienza di interazione dell’interfaccia di ricarica per il servizio “Xiaomi Bus”.",
       "Ottimizzazione dell'esperienza utente della pagina «Altre azioni» di Xiaomi Transit",
       "Novità: pagina coupon Xiaomi Transit",
       "Ottimizzazione: migliorata l'esperienza d'uso dell'interfaccia di ricarica della carta trasporti Xiaomi",
@@ -512,21 +598,28 @@
     ],
     "Avvertenze": [
       "La versione stabile di MIUI basata su Android Pie è ora disponibile per Mi 8!"
-    ],
-    "Sistema": [
-      "Correzione dei problemi relativi al Secondo spazio",
-      "Risolto il problema dello schermo nero in alcuni scenari",
-      "Risolto il problema dello sfarfallio dello schermo durante l'accensione e lo spegnimento dello schermo",
-      "Risolto un problema che influiva sulla stabilità generale"
     ]
   },
   "logs_es": {
+    "Atención": [
+      "El teléfono Xiaomi 8 presenta una versión estable de MIUI, que ha sido personalizada en profundidad basándose en Android P."
+    ],
+    "Sistema": [
+      "Se ha corregido el problema en el que, ocasionalmente, las operaciones realizadas después de dividir la pantalla del teléfono no funcionaban correctamente.",
+      "Se han corregido varios problemas que afectaban la estabilidad del sistema.",
+      "Se ha corregido el problema ocasional de que la pantalla se quede en negro.",
+      "Se ha corregido el problema de parpadeo anormal de la pantalla cuando se muestra la imagen de fondo o la pantalla en espera.",
+      "Corrección de problemas relacionados con el Segundo espacio",
+      "Corregido el problema de pantalla negra en algunos casos",
+      "Se corrigió el problema de parpadeo de la pantalla al encenderla y apagarla",
+      "Se ha corregido un problema que afectaba a la estabilidad general"
+    ],
     "Teléfono": [
       "Corregido el problema de ralentización ocasional del teléfono al realizar y recibir llamadas",
       "Se corrige el problema de ralentización del dispositivo al realizar y recibir llamadas"
     ],
     "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
-      "Se corrige el problema de superposición entre notificaciones y accesos rápidos al doble tocar una notificación no importante.",
+      "Se ha corregido el problema en el que, al hacer doble clic en una notificación de poca importancia, esta se superponía a los botones de acceso rápido.",
       "Corregido: la notificación y los ajustes rápidos se superponían al tocar dos veces una notificación no importante"
     ],
     "Cámara": [
@@ -534,9 +627,9 @@
       "Nuevo: Ahora puedes grabar vídeos a 960 fps",
       "Nuevo: Modo luz baja mejorado"
     ],
-    "Ajustes": [
-      "Corregido el desalineamiento de la interfaz en la página de Ajustes",
-      "Se corrige el problema por el que no se mostraban los nombres de las regiones en algunas zonas horarias.",
+    "Configuración": [
+      "Se ha corregido el problema de desalineación en la visualización de la interfaz de usuario (UI) de la página de configuraciones.",
+      "Se ha corregido el problema por el cual en algunos husos horarios no se podían mostrar los nombres de las regiones.",
       "Se corrigió el problema por el que el botón \"Sincronizar ahora\" no respondía"
     ],
     "Administrador de archivos": [
@@ -544,37 +637,44 @@
       "Se corrigió el problema de visualización incorrecta de los iconos en la pantalla de búsqueda"
     ],
     "Grabadora": [
-      "Corrección: El estado de grabación no se actualizaba en la barra de notificaciones al pausar una grabación"
+      "Se ha corregido el problema de que, después de detener la grabación, no se actualiza a tiempo la información en la barra de estado."
     ],
-    "Uso de datos": [
-      "Se añade el modo tarjeta diaria/tarjeta de datos ilimitados; permite configurar planes como 大王卡, 米粉卡, 天神卡, corrección de datos más precisa",
+    "Asistente de red": [
+      "Se ha añadido un nuevo modo de tarjeta de alquiler diario/tarjeta con datos ilimitados, que permite configurar tipos de paquetes como la Tarjeta Gran Rey, la Tarjeta Arroz de Fideos y la Tarjeta Dios Celestial. La corrección del consumo de datos es ahora más precisa.",
       "Nuevo: modo tarjeta diaria/tarjeta de datos ilimitados. Se pueden configurar tipos de plan como 大王卡, 米粉卡 y 天神卡; calibración de datos más precisa."
     ],
-    "MI Cartera": [
-      "Se añade la página de cupones de Xiaomi para el transporte público",
+    "Monedero de Xiaomi": [
+      "Se ha añadido una nueva página con cupones de descuento para el transporte público de Xiaomi.",
       "Optimizada la experiencia de interacción de la pantalla de recarga de la tarjeta de transporte Xiaomi",
-      "Optimización de la experiencia de usuario de la página «Más acciones» de Xiaomi Transit",
+      "Optimizar la experiencia de usuario de la página “Más operaciones” en el servicio de transporte público de Xiaomi.",
       "Nuevo: página de cupones de Xiaomi Transit",
       "Optimización: mejorada la experiencia de uso de la interfaz de recarga de la tarjeta de transporte de Xiaomi",
       "Optimización de la experiencia de usuario de la página “Más acciones” de la tarjeta de transporte Xiaomi"
     ],
-    "Notas": [
+    "Consideraciones importantes": [
       "¡La versión estable de MIUI basada en Android Pie ya está disponible para Mi 8!"
-    ],
-    "Sistema": [
-      "Corrección de problemas relacionados con el Segundo espacio",
-      "Corregido el problema de pantalla negra en algunos casos",
-      "Se corrigió el problema de parpadeo de la pantalla al encenderla y apagarla",
-      "Se ha corregido un problema que afectaba a la estabilidad general"
     ]
   },
   "logs_pt": {
+    "Atenção": [
+      "Xiaomi Mi 8 lança versão estável da MIUI profundamente personalizada com base no Android P"
+    ],
+    "Sistema": [
+      "Corrigido o problema em que, ocasionalmente, as operações realizadas após a divisão do ecrã do telemóvel não funcionavam corretamente.",
+      "Corrigir vários problemas que afetam a estabilidade do sistema.",
+      "Corrigido o problema ocasional de ecrã preto.",
+      "Corrigir o problema de cintilação anormal no ecrã durante os efeitos de “ecrã iluminado” ou “ecrã em pausa”.",
+      "Correção de problemas relacionados ao Segundo espaço",
+      "Corrigido o problema de tela preta em alguns cenários",
+      "Corrigido o problema de cintilação da tela ao ligar e desligar a tela",
+      "Corrigido um problema que afetava a estabilidade geral"
+    ],
     "Telefone": [
-      "Corrigido o problema de lentidão ocasional do telefone ao fazer e receber chamadas",
+      "Corrigir o problema ocasional de lentidão no funcionamento do cartão de telefone durante a realização ou recepção de chamadas.",
       "Corrigido o problema de lentidão do dispositivo ao fazer e receber chamadas"
     ],
     "Tela de bloqueio, barra de status, barra de notificações": [
-      "Corrigido o problema de sobreposição entre notificações e atalhos rápidos ao tocar duas vezes em uma notificação não importante.",
+      "Corrigido o problema em que, ao clicar duas vezes em uma notificação não importante, a notificação se sobrepunha ao atalho correspondente.",
       "Corrigido: sobreposição entre a notificação e os ajustes rápidos ao tocar duas vezes numa notificação sem importância"
     ],
     "Câmera": [
@@ -584,7 +684,7 @@
     ],
     "Configurações": [
       "Corrigido o desalinhamento da interface na página de Configurações",
-      "Corrigido o problema de não exibir nomes de regiões em alguns fusos horários.",
+      "Corrigido o problema em que alguns fusos horários não exibiam os nomes das regiões.",
       "Corrigido o problema em que o botão \"Sincronizar agora\" não respondia"
     ],
     "Gerenciador de arquivos": [
@@ -592,37 +692,44 @@
       "Corrigido o problema de exibição incorreta dos ícones na tela de pesquisa"
     ],
     "Gravador": [
-      "Correção: o estado da gravação não era atualizado na barra de notificações ao pausar uma gravação"
+      "Corrigir o problema de não ser possível atualizar a barra de estado de forma imediata após interromper a gravação."
     ],
-    "Uso de dados": [
+    "Assistente de Rede": [
       "Adicionado modo cartão diário/cartão de dados ilimitados; permite definir planos como 大王卡, 米粉卡, 天神卡, correção de dados mais precisa",
       "Novo: modo cartão diário/cartão de dados ilimitados. É possível definir tipos de plano como 大王卡, 米粉卡 e 天神卡; calibração de dados mais precisa."
     ],
     "MI Carteira": [
-      "Adicionada página de cupões Xiaomi para transporte público",
+      "Adicionada uma nova página com cupons de desconto para o transporte público da Xiaomi.",
       "Otimizada a experiência de interação da tela de recarga do cartão de transporte Xiaomi",
       "Otimização da experiência do usuário na página «Mais ações» do Xiaomi Transit",
       "Novo: página de cupons do Xiaomi Transit",
       "Otimização: melhorada a experiência de utilização da interface de carregamento do cartão de transporte Xiaomi",
       "Otimização da experiência do usuário na página “Mais ações” do cartão de transporte Xiaomi"
     ],
-    "Notas": [
+    "Precauções a ter em conta": [
       "A versão estável da MIUI baseada no Android Pie já está disponível para o Mi 8!"
-    ],
-    "Sistema": [
-      "Correção de problemas relacionados ao Segundo espaço",
-      "Corrigido o problema de tela preta em alguns cenários",
-      "Corrigido o problema de cintilação da tela ao ligar e desligar a tela",
-      "Corrigido um problema que afetava a estabilidade geral"
     ]
   },
   "logs_tr": {
+    "Uyarı": [
+      "Xiaomi Mi 8, Android P tabanlı derinlemesine özelleştirilmiş MIUI kararlı sürümünü yayınlıyor"
+    ],
+    "Sistem": [
+      "Arada bir telefonun ekran bölünmesi durumunda yapılan işlemlerin etkisiz kalması sorunu düzeltildi.",
+      "Sistemin stabilitesini etkileyen birkaç sorunu giderdik.",
+      "Arada sırada ekranın kararması sorununu giderdik.",
+      "Ekran aydınlandığında veya bekleme modundayken ekranda meydana gelen anormal parlamalar sorunu düzeltildi.",
+      "İkinci alanla ilgili sorunlar düzeltildi",
+      "Bazı durumlarda ekranın kararması sorunu giderildi",
+      "Ekranı açıp kapatırken ekranın titremesi sorunu düzeltildi",
+      "Genel kararlılığı etkileyen sorun giderildi"
+    ],
     "Telefon": [
-      "Telefonla arama yaparken ve gelen aramaları yanıtlarken telefonun ara sıra yavaşlaması sorunu giderildi",
+      "Arama yapılırken veya bir arama alınırken telefonun donma sorununu giderdik.",
       "Arama yaparken ve gelen aramaları yanıtlarken cihazın takılması sorunu düzeltildi"
     ],
     "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
-      "Önemsiz bir bildirime çift dokunulduğunda bildirimlerle hızlı ayarların üst üste binmesi sorunu giderildi.",
+      "Önemsiz bildirimlere çift tıklandığında, bildirimin kısayol düğmesiyle örtüşmesi sorununu giderdik.",
       "Düzeltildi: Önemsiz bir bildirime çift dokunulduğunda bildirim ve hızlı ayarlar üst üste biniyordu"
     ],
     "Kamera": [
@@ -631,7 +738,7 @@
       "Yeni: Gelişmiş düşük ışık modu"
     ],
     "Ayarlar": [
-      "Ayarlar sayfasındaki arayüz hizalama sorunu giderildi",
+      "Ayarlar sayfasının kullanıcı arayüzünün (UI) yanlış yerde görünmesi sorununu düzelttik.",
       "Bazı saat dilimlerinde bölge adlarının görüntülenememesi sorunu düzeltildi.",
       "\"Şimdi senkronize et\" düğmesinin yanıt vermemesi sorunu giderildi"
     ],
@@ -640,84 +747,99 @@
       "Arama ekranındaki simgelerin yanlış görüntülenmesi sorunu giderildi"
     ],
     "Kayıt Cihazı": [
-      "Düzeltme: Kayıt duraklatıldığında kayıt durumu bildirim çubuğunda güncellenmiyordu"
+      "Kaydı durdurduktan sonra durum çubuğunda zamanında güncelleme yapılamaması sorununu düzelttik."
     ],
-    "Veri kullanımı": [
-      "Günlük kart/sınırsız veri kartı modu eklendi; 大王卡, 米粉卡, 天神卡 gibi paket türleri ayarlanabilir, veri düzeltmesi daha doğru",
+    "Ağ Asistanı": [
+      "Yeni olarak günlük kiralama kartı/yetkisiz veri kullanımı kartı modu eklendi. Wangda Kart, Fenmi Kart, Tianshen Kart gibi paket türleri ayarlanabilir hale geldi ve veri kullanımı hesaplamaları daha da doğru hale getirildi.",
       "Yeni: Günlük kart/sınırsız veri kartı modu. 大王卡, 米粉卡, 天神卡 gibi paket türleri ayarlanabilir; veri kalibrasyonu daha doğru."
     ],
     "MI Cüzdan": [
-      "Xiaomi toplu taşıma kuponları sayfası eklendi",
-      "Xiaomi ulaşım kartı yükleme ekranındaki etkileşim deneyimi optimize edildi",
-      "Xiaomi Transit «Diğer işlemler» sayfasında kullanıcı deneyimini optimize et",
+      "Yeni eklenen Xiaomi Otobüs Kuponu sayfası…",
+      "Xiaomi Otobüs Yükleme Arayüzünün kullanıcı deneyimini optimize edin.",
+      "Xiaomi Bus’un “Daha Fazla İşlem” sayfasının kullanıcı deneyimini optimize edin.",
       "Yeni: Xiaomi Transit kupon sayfası",
       "İyileştirme: Xiaomi ulaşım kartı yükleme arayüzünün kullanım deneyimi geliştirildi",
       "Xiaomi ulaşım kartının “Diğer işlemler” sayfasında kullanıcı deneyimi iyileştirildi"
     ],
-    "Notlar": [
-      "Android Pie tabanlı kararlı MIUI sürümü Mi 8 için yayında!"
-    ],
-    "Sistem": [
-      "İkinci alanla ilgili sorunlar düzeltildi",
-      "Bazı durumlarda ekranın kararması sorunu giderildi",
-      "Ekranı açıp kapatırken ekranın titremesi sorunu düzeltildi",
-      "Genel kararlılığı etkileyen sorun giderildi"
+    "Dikkat Edilmesi Gereken Hususlar": [
+      "Android Pie tabanlı ve stabil olan MIUI sürümü artık Xiaomi 8 cihazında kullanılabilir hale geldi!"
     ]
   },
   "logs_id": {
-    "Telepon": [
-      "Memperbaiki masalah ponsel yang terkadang lambat saat melakukan dan menerima panggilan",
-      "Memperbaiki masalah perangkat yang lambat saat melakukan dan menerima panggilan"
-    ],
-    "Layar kunci, bilah status, bilah notifikasi": [
-      "Memperbaiki masalah tumpang tindih antara notifikasi dan tombol cepat saat mengetuk dua kali notifikasi tidak penting.",
-      "Perbaikan: notifikasi dan tombol cepat tumpang tindih saat mengetuk dua kali notifikasi tidak penting"
-    ],
-    "Kamera": [
-      "Baru: Dukungan pengambilan foto mode malam super dengan tangan",
-      "Baru: Sekarang Anda dapat merekam video 960fps"
-    ],
-    "Pengaturan": [
-      "Memperbaiki masalah tampilan UI yang tidak sejajar di halaman Pengaturan",
-      "Memperbaiki masalah nama wilayah tidak ditampilkan di beberapa zona waktu.",
-      "Memperbaiki masalah tombol \"Sinkronkan sekarang\" tidak merespons"
-    ],
-    "Pengelola File": [
-      "Memperbaiki masalah ikon di antarmuka pencarian yang ditampilkan secara tidak normal",
-      "Memperbaiki masalah ikon yang ditampilkan secara tidak normal di layar pencarian"
-    ],
-    "Perekam": [
-      "Perbaikan: Status perekaman tidak diperbarui di bilah notifikasi saat perekaman dijeda"
-    ],
-    "Penggunaan data": [
-      "Menambahkan mode kartu harian/kartu data tak terbatas; dapat mengatur jenis paket seperti 大王卡, 米粉卡, 天神卡, koreksi data lebih akurat",
-      "Baru: Mode kartu harian/kartu data tak terbatas. Jenis paket seperti 大王卡, 米粉卡, dan 天神卡 dapat diatur; kalibrasi data lebih akurat."
-    ],
-    "MI Dompet": [
-      "Menambahkan halaman kupon transportasi umum Xiaomi",
-      "Pengalaman interaksi layar isi ulang kartu transportasi Xiaomi dioptimalkan",
-      "Optimalkan pengalaman pengguna halaman «Tindakan lainnya» Xiaomi Transit",
-      "Baru: halaman kupon Xiaomi Transit",
-      "Optimasi: pengalaman interaksi antarmuka isi ulang kartu transportasi Xiaomi ditingkatkan",
-      "Optimalisasi pengalaman pengguna halaman “Tindakan lainnya” kartu transportasi Xiaomi"
-    ],
-    "Catatan": [
-      "MIUI versi stabil berbasis Android Pie kini tersedia untuk Mi 8!"
+    "Perhatian": [
+      "Ponsel Xiaomi 8 diluncurkan dengan versi MIUI yang stabil, yang dikembangkan berdasarkan platform Android P dengan penyesuaian khusus (deep customization)."
     ],
     "Sistem": [
+      "Memperbaiki masalah di mana terkadang operasi menjadi tidak efektif setelah ponsel dibagi menjadi beberapa bagian (split screen).",
+      "Memperbaiki beberapa masalah yang mempengaruhi stabilitas sistem.",
+      "Memperbaiki masalah layar yang tiba-tiba menjadi hitam (tidak menampilkan gambar).",
+      "Memperbaiki masalah layar yang berkedip secara tidak normal saat layar dalam mode “Bright Screen” atau “Sleep Screen”.",
       "Perbaikan masalah terkait Ruang Kedua",
       "Memperbaiki masalah layar hitam pada beberapa skenario",
       "Memperbaiki masalah layar berkedip saat menyalakan dan mematikan layar",
       "Memperbaiki masalah yang memengaruhi stabilitas keseluruhan"
+    ],
+    "Telepon": [
+      "Memperbaiki masalah lag (terhenti sejenak) pada kartu SIM saat menelepon atau menerima panggilan yang terjadi sesekali.",
+      "Memperbaiki masalah perangkat yang lambat saat melakukan dan menerima panggilan"
+    ],
+    "Layar kunci, bilah status, bilah notifikasi": [
+      "Memperbaiki masalah di mana notifikasi yang tidak penting menumpang tindakan klik dua kali, sehingga notifikasi tersebut bertabrakan dengan tombol akses cepat (shortcut buttons).",
+      "Perbaikan: notifikasi dan tombol cepat tumpang tindih saat mengetuk dua kali notifikasi tidak penting"
+    ],
+    "Kamera": [
+      "Baru: Dukungan pengambilan foto mode malam super dengan tangan",
+      "Baru: Sekarang Anda dapat merekam video 960fps",
+      "Baru: Dukungan pemotretan Mode Malam Super genggam"
+    ],
+    "Pengaturan": [
+      "Memperbaiki masalah penampilan UI pada halaman pengaturan yang tidak sesuai posisinya.",
+      "Memperbaiki masalah di mana beberapa zona waktu tidak dapat menampilkan nama wilayahnya.",
+      "Memperbaiki masalah tombol \"Sinkronkan sekarang\" tidak merespons"
+    ],
+    "File Manager": [
+      "Memperbaiki masalah ikon di antarmuka pencarian yang ditampilkan secara tidak normal",
+      "Memperbaiki masalah ikon yang ditampilkan secara tidak normal di layar pencarian"
+    ],
+    "Perekam": [
+      "Memperbaiki masalah di mana status rekaman tidak diperbarui secara tepat waktu setelah proses pemberhentian rekaman dilakukan."
+    ],
+    "Pembantu Jaringan": [
+      "Diluncurkan mode kartu sewa harian/kartu data tak terbatas baru, yang memungkinkan pengaturan jenis paket seperti Kartu Raja, Kartu Bihun, Kartu Dewa, dll. Koreksi jumlah data yang digunakan menjadi lebih akurat.",
+      "Baru: Mode kartu harian/kartu data tak terbatas. Jenis paket seperti 大王卡, 米粉卡, dan 天神卡 dapat diatur; kalibrasi data lebih akurat."
+    ],
+    "Xiaomi Wallet": [
+      "Menambahkan halaman kupon transportasi umum Xiaomi",
+      "Mengoptimalkan pengalaman interaksi pada antarmuka pengisian ulang saldo transportasi umum Xiaomi.",
+      "Mengoptimalkan pengalaman pengguna pada halaman “Lebih Banyak Operasi” (More Operations) dari aplikasi Xiaomi Bus.",
+      "Baru: halaman kupon Xiaomi Transit",
+      "Optimasi: pengalaman interaksi antarmuka isi ulang kartu transportasi Xiaomi ditingkatkan",
+      "Optimalisasi pengalaman pengguna halaman “Tindakan lainnya” kartu transportasi Xiaomi"
+    ],
+    "Pertimbangan yang Harus Diperhatikan": [
+      "Versi MIUI yang stabil dan berbasis pada sistem operasi Android Pie kini telah tersedia untuk Xiaomi 8!"
     ]
   },
   "logs_vi": {
+    "Chú ý": [
+      "Điện thoại Xiaomi 8 được ra mắt với phiên bản MIUI ổn định, được tùy chỉnh sâu dựa trên hệ điều hành Android P."
+    ],
+    "Hệ thống": [
+      "Khắc phục sự cố khi thỉnh thoảng việc thực hiện các thao tác trên điện thoại trở nên không hiệu quả sau khi chia màn hình thành các phần riêng biệt.",
+      "Sửa chữa một số vấn đề ảnh hưởng đến tính ổn định của hệ thống.",
+      "Đã sửa lỗi màn hình đen xuất hiện thỉnh thoảng.",
+      "Khắc phục sự cố màn hình bị nhấp nháy bất thường khi hiển thị màn hình sáng hoặc màn hình tạm dừng (standby screen).",
+      "Sửa lỗi liên quan đến Không gian thứ hai",
+      "Đã khắc phục sự cố màn hình bị đen trong một số trường hợp",
+      "Đã khắc phục sự cố màn hình nhấp nháy khi bật và tắt màn hình",
+      "Khắc phục sự cố ảnh hưởng đến độ ổn định tổng thể"
+    ],
     "Điện thoại": [
-      "Khắc phục sự cố điện thoại đôi khi bị lag khi gọi và nhận cuộc gọi",
+      "Sửa lỗi: Đôi khi, điện thoại bị đơ khi thực hiện hoặc nhận cuộc gọi.",
       "Đã sửa lỗi thiết bị bị giật lag khi gọi và nhận cuộc gọi"
     ],
     "Màn hình khóa, thanh trạng thái, thanh thông báo": [
-      "Đã sửa lỗi thông báo và công tắc nhanh bị chồng lên nhau khi nhấn đúp vào thông báo không quan trọng.",
+      "Khắc phục sự cố khi nhấp đúp vào các thông báo không quan trọng, dẫn đến tình trạng thông báo và các công cụ tắt nhanh (shortcut buttons) bị chồng lên nhau.",
       "Đã sửa: thông báo và công tắc nhanh bị chồng lên nhau khi nhấn đúp vào thông báo không quan trọng"
     ],
     "Máy ảnh": [
@@ -726,8 +848,8 @@
       "Mới: Tăng cường chế độ thiếu sáng"
     ],
     "Cài đặt": [
-      "Đã khắc phục lỗi giao diện bị lệch trên trang Cài đặt",
-      "Khắc phục sự cố không hiển thị tên khu vực ở một số múi giờ.",
+      "Đã sửa lỗi hiển thị sai vị trí của giao diện (UI) trên trang cấu hình.",
+      "Đã sửa lỗi: Một số múi giờ không hiển thị tên khu vực.",
       "Đã sửa lỗi nút \"Đồng bộ ngay\" không phản hồi"
     ],
     "Trình quản lý tệp": [
@@ -735,37 +857,44 @@
       "Đã khắc phục sự cố biểu tượng hiển thị bất thường trên màn hình tìm kiếm"
     ],
     "Máy ghi âm": [
-      "Đã sửa: Trạng thái ghi âm không được cập nhật kịp thời trên thanh thông báo khi tạm dừng ghi âm"
+      "Khắc phục sự cố khi tạm dừng quá trình ghi âm không thể cập nhật kịp thời thông tin vào thanh trạng thái."
     ],
-    "Sử dụng dữ liệu": [
-      "Thêm chế độ thẻ ngày/thẻ dữ liệu không giới hạn; có thể đặt loại gói như 大王卡, 米粉卡, 天神卡, hiệu chỉnh dữ liệu chính xác hơn",
+    "Trợ lý mạng": [
+      "Đã thêm chế độ thẻ cho thuê theo ngày/thẻ data không giới hạn. Người dùng có thể lựa chọn các gói dịch vụ như Thẻ Đại Vương, Thẻ Gạo Xay, Thẻ Thiên Thần, v.v. Việc điều chỉnh lượng data sẽ trở nên chính xác hơn.",
       "Mới: Chế độ thẻ ngày/thẻ dữ liệu không giới hạn. Có thể đặt loại gói như 大王卡, 米粉卡, 天神卡; hiệu chỉnh dữ liệu chính xác hơn."
     ],
-    "MI Ví": [
-      "Thêm trang phiếu giảm giá giao thông công cộng Xiaomi",
-      "Tối ưu trải nghiệm tương tác của màn hình nạp tiền thẻ giao thông Xiaomi",
-      "Tối ưu trải nghiệm người dùng của trang «Thao tác khác» trên Xiaomi Transit",
+    "Tiền túi Xiaomi": [
+      "Thêm trang mã giảm giá dùng cho dịch vụ xe buýt Xiaomi",
+      "Tối ưu hóa trải nghiệm tương tác của giao diện nạp tiền cho dịch vụ xe buýt Xiaomi.",
+      "Tối ưu hóa trải nghiệm người dùng trên trang “Nhiều thao tác hơn” của dịch vụ xe buýt Xiaomi.",
       "Mới: trang mã ưu đãi Xiaomi Transit",
       "Tối ưu hóa: cải thiện trải nghiệm tương tác giao diện nạp tiền thẻ giao thông Xiaomi",
       "Tối ưu hóa trải nghiệm người dùng trang “Thao tác khác” của thẻ giao thông Xiaomi"
     ],
-    "Lưu ý": [
-      "MIUI bản ổn định dựa trên Android Pie đã có cho Mi 8!"
-    ],
-    "Hệ thống": [
-      "Sửa lỗi liên quan đến Không gian thứ hai",
-      "Đã khắc phục sự cố màn hình bị đen trong một số trường hợp",
-      "Đã khắc phục sự cố màn hình nhấp nháy khi bật và tắt màn hình",
-      "Khắc phục sự cố ảnh hưởng đến độ ổn định tổng thể"
+    "Những điều cần lưu ý": [
+      "Phiên bản MIUI ổn định dựa trên nền tảng Android Pie đã chính thức được cài đặt trên Xiaomi 8!"
     ]
   },
   "logs_th": {
+    "โปรดทราบ": [
+      "โทรศัพท์ Xiaomi Phone 8 ได้รับการเปิดตัวพร้อมกับระบบ MIUI เวอร์ชันที่มีความเสถียรสูง ซึ่งถูกปรับแต่งให้เข้ากับ Android P อย่างลึกซึ้ง"
+    ],
+    "ระบบ": [
+      "แก้ไขปัญหาที่บางครั้งการดำเนินการต่างๆ อาจไม่สำเร็จเมื่อผู้ใช้เปิดโหมดแยกหน้าจอของสมาร์ทโฟน",
+      "แก้ไขปัญหาต่าง ๆ ที่ส่งผลกระทบต่อความเสถียรของระบบ",
+      "แก้ไขปัญหาหน้าจอเป็นสีดำเป็นครั้งคราว",
+      "แก้ไขปัญหาที่หน้าจอกระพริบผิดปกติเมื่อใช้โหมด “Bright Screen” หรือ “Sleep Screen”",
+      "แก้ไขปัญหาที่เกี่ยวข้องกับพื้นที่ที่สอง",
+      "แก้ไขปัญหาหน้าจอดำในบางสถานการณ์",
+      "แก้ไขปัญหาหน้าจอกะพริบเมื่อเปิดและปิดหน้าจอ",
+      "แก้ไขปัญหาที่ส่งผลต่อเสถียรภาพโดยรวม"
+    ],
     "โทรศัพท์": [
-      "แก้ไขปัญหามือถือหน่วงเป็นครั้งคราวขณะโทรออกและรับสาย",
+      "แก้ไขปัญหาที่บางครั้งเมื่อโทรศัพท์รับสายหรือโทรออก โทรศัพท์จะทำงานช้าลง (ค้าง)",
       "แก้ไขปัญหาอุปกรณ์หน่วงเวลาขณะโทรออกและรับสาย"
     ],
     "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
-      "แก้ไขปัญหาการซ้อนทับกันระหว่างการแจ้งเตือนและปุ่มลัดเมื่อแตะสองครั้งที่การแจ้งเตือนที่ไม่สำคัญ",
+      "แก้ไขปัญหาที่การคลิกดับเบิลที่การแจ้งเตือนที่ไม่สำคัญ ทำให้การแจ้งเตือนและปุ่มสำหรับเปิด/ปิดการแจ้งเตือนซ้อนกัน",
       "แก้ไข: การทับซ้อนระหว่างการแจ้งเตือนและสวิตช์ด่วนเมื่อแตะสองครั้งที่การแจ้งเตือนที่ไม่สำคัญ"
     ],
     "กล้อง": [
@@ -774,8 +903,8 @@
       "ใหม่: ปรับปรุงโหมดแสงน้อย"
     ],
     "การตั้งค่า": [
-      "แก้ไขปัญหาการแสดงผล UI ที่ไม่ตรงตำแหน่งในหน้าตั้งค่า",
-      "แก้ไขปัญหาชื่อภูมิภาคไม่แสดงในบางเขตเวลา",
+      "แก้ไขปัญหาการแสดงผล UI บนหน้าต่างการตั้งค่าที่ไม่ถูกต้องตำแหน่ง",
+      "แก้ไขปัญหาที่บางเขตเวลาไม่สามารถแสดงชื่อพื้นที่ได้",
       "แก้ไขปัญหาที่ปุ่ม \"ซิงค์ทันที\" ไม่ตอบสนอง"
     ],
     "ตัวจัดการไฟล์": [
@@ -783,37 +912,44 @@
       "แก้ไขปัญหาการแสดงไอคอนบนหน้าจอค้นหาผิดปกติ"
     ],
     "เครื่องบันทึกเสียง": [
-      "แก้ไข: สถานะการบันทึกเสียงไม่ได้รับการอัปเดตในแถบการแจ้งเตือนเมื่อหยุดการบันทึกชั่วคราว"
+      "แก้ไขปัญหาที่การหยุดบันทึกเสียงไม่สามารถอัปเดตสถานะในแถบสถานะ (status bar) ได้อย่างทันท่วงที"
     ],
-    "การใช้ข้อมูล": [
-      "เพิ่มโหมดการ์ดรายวัน/การ์ดข้อมูลไม่จำกัด สามารถตั้งค่าประเภทแพ็กเกจ เช่น 大王卡, 米粉卡, 天神卡 การแก้ไขข้อมูลแม่นยำขึ้น",
+    "ผู้ช่วยออนไลน์": [
+      "เพิ่มโหมดบัตรใช้งานแบบรายวัน/บัตร data ไม่จำกัด สามารถตั้งค่าแพ็กเกจต่างๆ เช่น บัตร Da Wang, บัตร Mi Fen, บัตร Tian Shen ได้ ทำให้การปรับข้อมูล data เป็นไปอย่างแม่นยำยิ่งขึ้น",
       "เพิ่มโหมดการ์ดรายวัน/การ์ดข้อมูลไม่จำกัด ตั้งค่าประเภทแพ็กเกจ เช่น 大王卡, 米粉卡, 天神卡 ได้ การปรับเทียบข้อมูลแม่นยำขึ้น"
     ],
     "MI กระเป๋าเงิน": [
       "เพิ่มหน้าคูปองขนส่งสาธารณะ Xiaomi",
       "ปรับปรุงประสบการณ์การโต้ตอบของหน้าจอเติมเงินบัตรโดยสาร Xiaomi",
-      "ปรับปรุงประสบการณ์ผู้ใช้ของหน้า «การดำเนินการเพิ่มเติม» ของ Xiaomi Transit",
+      "การปรับปรุงประสบการณ์ผู้ใช้งานสำหรับหน้า “More Operations” ของแอปพลิเคชัน Xiaomi Bus",
       "ใหม่: หน้าคูปอง Xiaomi Transit",
       "ปรับให้เหมาะสม: ปรับปรุงประสบการณ์การใช้งานหน้าจอเติมเงินบัตรโดยสาร Xiaomi",
       "ปรับปรุงประสบการณ์ผู้ใช้ของหน้า “การดำเนินการเพิ่มเติม” ของบัตรขนส่ง Xiaomi"
     ],
     "ข้อควรทราบ": [
-      "MIUI เวอร์ชันเสถียรที่ใช้ Android Pie พร้อมใช้งานสำหรับ Mi 8 แล้ว!"
-    ],
-    "ระบบ": [
-      "แก้ไขปัญหาที่เกี่ยวข้องกับพื้นที่ที่สอง",
-      "แก้ไขปัญหาหน้าจอดำในบางสถานการณ์",
-      "แก้ไขปัญหาหน้าจอกะพริบเมื่อเปิดและปิดหน้าจอ",
-      "แก้ไขปัญหาที่ส่งผลต่อเสถียรภาพโดยรวม"
+      "MIUI เวอร์ชันที่มีความเสถียรและอิงตามระบบปฏิบัติการ Android Pie ได้รับการเปิดตัวสำหรับสมาร์ทโฟน Xiaomi 8 แล้ว!"
     ]
   },
   "logs_ar": {
+    "تنبية": [
+      "تم إطلاق هاتف شاومي 8 مع نسخة مستقرة من نظام MIUI، والتي تم تخصيصها بشكل عميق استنادًا إلى نظام أندرويد P."
+    ],
+    "النظام": [
+      "تم إصلاح المشكلة التي كانت تحدث أحيانًا، والتي تتمثل في عدم فعالية العمليات بعد تقسيم الهاتف إلى أجزاء.",
+      "تم إصلاح عدة مشاكل كانت تؤثر على استقرار النظام.",
+      "تم إصلاح المشكلة التي تؤدي أحيانًا إلى ظهور شاشة سوداء.",
+      "تم إصلاح مشكلة الوميض غير الطبيعي للشاشة أثناء عرض شاشة التنفس الساطعة أو شاشة الانتظار.",
+      "إصلاح المشكلات المتعلقة بالمساحة الثانية",
+      "تم إصلاح مشكلة ظهور شاشة سوداء في بعض الحالات",
+      "إصلاح مشكلة وميض الشاشة عند تشغيلها وإيقاف تشغيلها",
+      "إصلاح مشكلة تؤثر على الاستقرار العام"
+    ],
     "الهاتف": [
-      "إصلاح مشكلة تباطؤ الهاتف أحيانًا عند إجراء المكالمات والرد عليها",
+      "تم إصلاح المشكلة التي كانت تحدث أحيانًا عندما يتم الاتصال أو الرد على المكالمات، حيث كان يحدث تأخير في أداء بطاقة الهاتف.",
       "إصلاح مشكلة تباطؤ الجهاز أثناء إجراء المكالمات والرد عليها"
     ],
     "شاشة القفل، شريط الحالة، شريط الإشعارات": [
-      "إصلاح مشكلة تداخل الإشعارات مع مفاتيح الاختصار عند النقر المزدوج على إشعار غير مهم",
+      "تم إصلاح المشكلة التي كانت تحدث عند النقر المزدوج على إشعارات غير مهمة، حيث كان يحدث تداخل بين الإشعار نفسه وأزرار التشغيل السريعة.",
       "إصلاح: تداخل الإشعار ومفاتيح التبديل السريعة عند النقر المزدوج على إشعار غير مهم"
     ],
     "كاميرا": [
@@ -823,45 +959,53 @@
     ],
     "الإعدادات": [
       "إصلاح مشكلة محاذاة واجهة المستخدم في صفحة الإعدادات",
-      "إصلاح مشكلة عدم إمكانية عرض أسماء المناطق في بعض المناطق الزمنية.",
+      "تم إصلاح المشكلة التي كانت تمنع بعض المناطق الزمنية من عرض أسماء المناطق.",
       "تم إصلاح مشكلة عدم استجابة زر \"المزامنة الآن\""
     ],
     "مدير الملفات": [
       "تم إصلاح مشكلة عرض الأيقونات بشكل غير صحيح في واجهة البحث",
       "إصلاح مشكلة عرض الأيقونات بشكل غير طبيعي في شاشة البحث"
     ],
-    "مسجل": [
-      "إصلاح: لم يتم تحديث حالة التسجيل في شريط الإشعارات عند إيقاف التسجيل مؤقتًا"
+    "جهاز التسجيل": [
+      "تم إصلاح المشكلة التي تمنع تحديث حالة الجهاز بشكل فوري بعد توقف عملية التسجيل."
     ],
-    "استخدام البيانات": [
-      "إضافة وضع بطاقة يومية/بطاقة بيانات غير محدودة؛ يمكن تعيين أنواع خطط مثل 大王卡 و米粉卡 و天神卡، وتصحيح البيانات أكثر دقة",
+    "مساعد الإنترنت": [
+      "تم إضافة وضعيات جديدة لبطاقات الإيجار اليومي وبطاقات النطاق الترددي غير المحدود، حيث يمكن تخصيص أنواع مختلفة من البطاقات مثل بطاقة “الملك العظيم” وبطاقة “رز الأرز” وبطاقة “إله السماء”، كما أصبح تصحيح قيم النطاق الترددي أكثر دقة.",
       "جديد: وضع بطاقة يومية/بطاقة بيانات غير محدودة. يمكن ضبط أنواع الباقات مثل 大王卡 و米粉卡 و天神卡؛ تصحيح البيانات أكثر دقة."
     ],
     "MI محفظة": [
-      "إضافة صفحة قسائم Xiaomi للنقل العام",
-      "تحسين تجربة التفاعل في شاشة تعبئة بطاقة النقل Xiaomi",
-      "تحسين تجربة المستخدم لصفحة «إجراءات إضافية» في Xiaomi Transit",
+      "تم إضافة صفحة خصومات حافلات شاومي الجديدة.",
+      "تحسين تجربة التفاعل مع واجهة شحن حافلات شاومي (Xiaomi Bus).",
+      "تحسين تجربة المستخدم على صفحة \"عمليات إضافية\" في خدمة مواصلات شاومي (Xiaomi Public Transport).",
       "جديد: صفحة قسائم Xiaomi Transit",
       "تحسين: تحسين تجربة التفاعل مع واجهة تعبئة بطاقة النقل من Xiaomi",
       "تحسين تجربة المستخدم لصفحة “إجراءات أخرى” لبطاقة النقل Xiaomi"
     ],
     "ملاحظات": [
-      "إصدار MIUI المستقر المبني على Android Pie متاح الآن لـ Mi 8!"
-    ],
-    "النظام": [
-      "إصلاح المشكلات المتعلقة بالمساحة الثانية",
-      "تم إصلاح مشكلة ظهور شاشة سوداء في بعض الحالات",
-      "إصلاح مشكلة وميض الشاشة عند تشغيلها وإيقاف تشغيلها",
-      "إصلاح مشكلة تؤثر على الاستقرار العام"
+      "الإصدار المستقر من MIUI الذي يعتمد على نظام أندرويد بي (Android Pie) قد تم إطلاقه الآن على هاتف شاومي 8 (Xiaomi 8)!"
     ]
   },
   "logs_in": {
+    "ध्यान दें": [
+      "शाओमी मोबाइल 8 का लॉन्च एंड्रॉइड पी (Android P) पर आधारित, गहराई से कस्टमाइज़ किए गए MIUI स्टेबल वर्जन के साथ हुआ।",
+      "एंड्रॉइड पाई (Android Pie) पर आधारित स्थिर संस्करण का MIUI अब मीज़ियो 8 (Mi Xiaomi 8) में उपलब्ध है!"
+    ],
+    "सिस्टम": [
+      "उस समस्या को ठीक कर दिया गया है, जिसमें कभी-कभार मोबाइल फोन के डिवाइस मोड (Device Mode) में जाने पर कुछ कार्य असफल हो जाते थे।",
+      "सिस्टम की स्थिरता को प्रभावित करने वाली कई समस्याओं को ठीक कर दिया गया है।",
+      "स्क्रीन कभी-कभी काली हो जाने की समस्या ठीक की गई",
+      "स्क्रीन चमकने या स्टैटस बार (Status Bar) पर डेटा दिखने के दौरान स्क्रीन पर होने वाली असामान्य गतिविधियों/फ्लैशिंग (Flashing) की समस्या को ठीक कर दिया गया है।",
+      "सेकंड स्पेस से संबंधित समस्याओं को ठीक किया गया",
+      "कुछ स्थितियों में स्क्रीन काली होने की समस्या ठीक की गई",
+      "स्क्रीन चालू और बंद करते समय स्क्रीन के टिमटिमाने की समस्या ठीक की गई",
+      "समग्र स्थिरता को प्रभावित करने वाली समस्या को ठीक किया गया"
+    ],
     "फ़ोन": [
-      "फ़ोन पर कॉल करने और कॉल का जवाब देने के दौरान कभी-कभी होने वाली रुकावट की समस्या ठीक की गई",
+      "उस समस्या को ठीक करें जिसमें कभी-कभार फोन कॉल करते या उसे रिसीव करते समय मोबाइल फोन धीमा पड़ जाता है.",
       "कॉल करते और प्राप्त करते समय डिवाइस के धीमा होने की समस्या ठीक की गई"
     ],
     "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
-      "महत्वहीन सूचना पर डबल टैप करने पर सूचना और त्वरित टॉगल के ओवरलैप होने की समस्या ठीक की गई",
+      "दोबारा क्लिक करने पर महत्वपूर्ण न होने वाली सूचनाओं के दौरान, सूचनाएँ एवं शॉर्टकट विकल्प आपस में ओवरलैप हो जाने की समस्या को ठीक कर दिया गया है।",
       "ठीक किया गया: महत्वहीन सूचना पर डबल टैप करने पर सूचना और त्वरित टॉगल ओवरलैप हो रहे थे"
     ],
     "कैमरा": [
@@ -870,7 +1014,7 @@
       "नया बेहतर कम रोशनी वाला मोड"
     ],
     "सेटिंग्स": [
-      "सेटिंग्स पेज में UI प्रदर्शन के असंरेखण की समस्या ठीक की गई",
+      "सेटिंग्स पेज के UI में दिखाई देने वाली त्रुटियों (अर्थात् उन चीजों में जो सही ढंग से नहीं दिख रही हैं) को ठीक कर दिया गया है।",
       "कुछ समय क्षेत्रों में क्षेत्र के नाम प्रदर्शित न होने की समस्या ठीक की गई।",
       "\"अभी सिंक करें\" बटन के प्रतिक्रिया न देने की समस्या ठीक की गई"
     ],
@@ -879,65 +1023,101 @@
       "खोज स्क्रीन पर आइकन के गलत तरीके से प्रदर्शित होने की समस्या ठीक की गई"
     ],
     "रिकॉर्डर": [
-      "समस्या ठीक की गई: रिकॉर्डिंग पॉज़ करने पर नोटिफ़िकेशन शेड में स्थिति तुरंत अपडेट नहीं होती थी"
+      "वह समस्या दूर की गई है जिसके कारण रिकॉर्डिंग रोकने के बाद स्टेट बार (Status Bar) में समय पर अपडेट नहीं हो पाता था।"
     ],
-    "डेटा उपयोग": [
-      "दैनिक कार्ड/असीमित डेटा कार्ड मोड जोड़ा गया; 大王卡, 米粉卡, 天神卡 जैसे प्लान प्रकार सेट किए जा सकते हैं, डेटा सुधार अधिक सटीक",
+    "वर्चुअल असिस्टेंट": [
+      "अब नए “दैनिक कार्ड”/“अनंत डेटा प्रवाह कार्ड” पैटर्न जोड़े गए हैं; इनमें “डायमंड कार्ड”, “राइस मिल कार्ड”, “टियन शेन कार्ड” आदि पैकेजों के विकल्प उपलब्ध हैं। डेटा प्रवाह संबंधी जानकारियाँ अधिक सटीक हो गई हैं।",
       "नया: दैनिक कार्ड/असीमित डेटा कार्ड मोड। 大王卡, 米粉卡, 天神卡 जैसे प्लान प्रकार सेट किए जा सकते हैं; डेटा कैलिब्रेशन अधिक सटीक।"
     ],
     "MI वॉलेट": [
-      "Xiaomi सार्वजनिक परिवहन कूपन पेज जोड़ा गया",
-      "Xiaomi ट्रांज़िट कार्ड रीचार्ज स्क्रीन के इंटरैक्शन अनुभव को अनुकूलित किया गया",
-      "Xiaomi Transit के «अधिक क्रियाएँ» पृष्ठ के उपयोगकर्ता अनुभव को अनुकूलित करें",
+      "एक नया पृष्ठ “शाओमी बस कूपन” (Xiaomi Bus Coupon) के लिए जोड़ा गया है.",
+      "शाओमी बस कैरेज (Xiaomi Bus Cash) रिचार्जिंग इंटरफ़ेस के इंटरैक्टिव अनुभव को बेहतर बनाएँ।",
+      "शाओमी बस (Xiaomi Bus) के “अधिक कार्य” (More Actions) पेज के उपयोगकर्ता अनुभव को बेहतर बनाना।",
       "नया: Xiaomi Transit कूपन पृष्ठ",
       "अनुकूलन: Xiaomi ट्रांज़िट कार्ड रीचार्ज इंटरफ़ेस का उपयोग अनुभव बेहतर किया गया",
       "Xiaomi ट्रांसपोर्ट कार्ड के “अधिक क्रियाएँ” पेज पर उपयोगकर्ता अनुभव का अनुकूलन किया गया"
-    ],
-    "ध्यान दें": [
-      "Android Pie पर आधारित स्थिर MIUI अब Mi 8 के लिए उपलब्ध है!"
-    ],
-    "सिस्टम": [
-      "सेकंड स्पेस से संबंधित समस्याओं को ठीक किया गया",
-      "कुछ स्थितियों में स्क्रीन काली होने की समस्या ठीक की गई",
-      "स्क्रीन चालू और बंद करते समय स्क्रीन के टिमटिमाने की समस्या ठीक की गई",
-      "समग्र स्थिरता को प्रभावित करने वाली समस्या को ठीक किया गया"
     ]
   },
   "logs_ug": {
+    "مۇھىم ئەسكەرتىش": [
+      "شىياۋمى تېلېفون 8 ، Android P نەزەرىيەسىگە ئاساسەن ئۆزگەرتىلگەن MIUI مۇقىم نۇسخىسى بىلەن بازارغا سېلىندى"
+    ],
+    "سىستېما": [
+      "يانفوننى ئايرىپ قويغاندىن كېيىن بەزى مەشغۇلاتلارنىڭ كارغا كەلمەسلىك مەسىلىسىنى تۈزەتتىم",
+      "سىستېمىنىڭ مۇقىملىقىغا تەسىر كۆرسىتىدىغان بىر قانچە مەسىلىنى تۈزەتتى",
+      "كۆرۈنۈش ئېكرانىنىڭ تۇيۇقسىز قارا رەڭگە كېتىش مەسىلىسىنى تۈزىتىمىز",
+      "ئېكران يورۇق ھالەتتە ياكى توختاپ قالغاندا ئېكراننىڭ نورمالسىز يانىش مەسىلىسىنى تۈزەيمىز.",
+      "ئىككىنچى بوشلۇققا مۇناسىۋەتلىك مەسىلىلەرنى ئوڭشاش",
+      "بەزى ئەھۋاللاردا ئېكراننىڭ قارىيىش مەسىلىسى تۈزىتىلدى",
+      "ئېكراننى ئېچىش ۋە تاقاش ۋاقتىدا ئېكراننىڭ يىپىلداش مەسىلىسى تۈزىتىلدى",
+      "ئومۇمىي مۇقىملىققا تەسىر كۆرسىتىدىغان مەسىلە ئوڭشالدى"
+    ],
     "تېلېفون": [
-      "تېلېفون چالغاندا ۋە تېلېفون قوبۇل قىلغاندا يانفوننىڭ ئاندا-ساندا قېتىپ قېلىش مەسىلىسى ئوڭشالدى"
+      "يېقىندا كۆرۈلگەن مەسىلە : تېلېفون قىلىش ياكى ئالغاندا تېلېفون كارتىسىڭىز تۇراقسىز ھالەتكە كېتىدۇ (يەنى تېلېفوننىڭ ئىشلىشى توختاپ قالىدۇ).",
+      "تېلېفون چېلىش ۋە كۆتۈرۈش جەريانىدا ئەھياندا كۆرۈلىدىغان تېلېفوننىڭ قېتىپ قېلىش مەسىلىسى ئوڭشىلدى."
     ],
     "قۇلۇپ ئېكرانى، ھالەت بالدىقى، ئۇقتۇرۇش بالدىقى": [
-      "مۇھىم بولمىغان ئۇقتۇرۇشنى قوش چېكىشكەندە ئۇقتۇرۇش بىلەن تېز تەڭشەك ئالمىشىپ قېلىش مەسىلىسى تۈزىتىلدى.",
+      "كۆپ قېتىم بېسىلغاندا مۇھىم ئەمەس ئۇقتۇرۇشلارنىڭ ئۇقتۇرۇش بەلگىسى بىلەن قىسقا تۈزۈش كۇنۇپكىسى ئۆزئارا ئۆچرى شىش مەسىلىسىنى تۈزىتىلدى.",
       "ئەھمىيەتسىز ئۇقتۇرۇشنى قوش چېكىشكەندە ئۇقتۇرۇش بىلەن تېز ئالماشتۇرغۇچنىڭ ئۈستى-ئۈستىگە چۈشۈش مەسىلىسى تۈزىتىلدى"
     ],
-    "كامېرا": [
+    "فوتو ئاپپارات": [
       "يېڭى: قولدا تۇتۇپ ئالىي كېچە كۆرۈنۈشىنى سۈرەتكە تارتىش ئىقتىدارى قوشۇلدى",
       "يېڭى: 960 كادرلىق ئاستا ھەرىكەتلىك سىن ئېلىش ئىقتىدارى قوشۇلدى"
     ],
-    "ھۆججەت باشقۇرغۇچ": [
-      "ئىزدەش كۆرۈنمە يۈزىدىكى سىنبەلگىلەرنىڭ خاتا كۆرسىتىلىش مەسىلىسى تۈزىتىلدى"
+    "تەڭشەك": [
+      "تەڭشەش بېتىدىكى UI نىڭ خاتا ئورۇنلاشقانلىق مەسىلىسىنى تۈزەتتىم",
+      "بەزى ۋاقىت رايونلىرىدا رايون نامىنى كۆرسىتەلمەيدىغان مەسىلە ئوڭشالدى",
+      "\"ھازىر قوشلاشتۇرۇش\" كۇنۇپكىسىنى باسقاندا ئىنكاس قايتۇرماسلىق مەسىلىسى تۈزىتىلدى"
     ],
-    "ئاۋاز ئالغۇ": [
-      "ئۈن ئېلىش توختىتىلغاندىن كېيىن ئۇقتۇرۇش تاختىسىدا ھالەت ۋاقتىدا يېڭىلانماسلىق مەسىلىسى تۈزىتىلدى"
+    "ھۆججەت باشقۇرغۇچ": [
+      "ئىزدەش كۆرۈنمە يۈزىدىكى سىنبەلگىلەرنىڭ خاتا كۆرسىتىلىش مەسىلىسى تۈزىتىلدى",
+      "ئىزدەش كۆرۈنمە يۈزىدىكى سىنبەلگىلەرنىڭ خاتا كۆرۈنۈش مەسىلىسى تۈزىتىلدى."
+    ],
+    "ئۈن خاتىرىلەش ماشىنىسى": [
+      "ئۈن ئالماشتۇرۇشنى توختاتقاندىن كېيىن ، ھالەت سترېكچىسىگە (status bar) ئۆزۋاقتىدا يېڭىلاش مۇمكىن بولماسلىق مەسىلىسىنى تۈزى دۇق."
+    ],
+    "تور ياردەمچىسى": [
+      "يېڭىدىن قوشۇلغان « كۈنلۈك ئىجارە كارتىسى » ۋە « چەكسىز تور سۈرئىتى كارتىسى » ئەندىزىلىرى بار بولۇپ ، « داۋاڭ كارتىسى » ، « مىفېن كارتىسى » ، « تيەنشېن كارتىسى » قاتارلىق پائالىيەت پaket لىرىنى تەڭشەشكە بولىدۇ؛ تور سۈرئىتىنى توغرالاشتۇرۇش ئىنتايىن توغرا بولىدۇ."
+    ],
+    "شىياۋمى پۇل قاپچۇقى": [
+      "يېڭىدىن قوشۇلغان : شياۋمى ئاممىۋى قاتناش پارچە-پۇلى كېرەكلىك بېتى",
+      "شىياۋمى ئاممىۋى قاتناش ۋاسىتىلىرىنى تولۇقلاش سۈيىچەك خىزمىتىدىكى ئالاقە تەسىراتىنى ياخشىلاڭ",
+      "شىياۋمى ئاممىۋى قاتناش سېستىمىسىدىكى « تېخىمۇ كۆپ مەشغۇلات » بېتىنىڭ ئابونېت تەجرىبىسىنى ياخشىلاش"
     ],
     "دىققەت قىلىدىغان ئىشلار": [
-      "Android Pie ئاساسىدىكى مۇقىم MIUI نەشرى ئەمدى Mi 8 غا كەلدى!"
+      "Android Pie ئاساسىدا ياسالغان مۇقىم نەشرىياتلىق MIUI نۆۋەتتە Xiaomi 8 دا قوللىنىلماقتا!"
     ]
   },
   "logs_bo": {
-    "ཁ་པར": [
-      "ཁ་པར་རྒྱག་པ་དང་ལེན་པའི་སྐབས་ཁ་པར་རྟག་ཏུ་མིན་པར་འགག་པའི་གནད་དོན་བཅོས་ཡོད།"
+    "གལ་ཆེའི་དྲན་སྐུལ": [
+      "Xiaomi Mobile 8་བཏོན་པ་དེ།Android P་ལྟར་གཏིང་ཟབ་སུ་བཅོས་བསྒྲིགས་བྱས་པའི MIUI་བརྟན་པོའི་เวอร์ชัน་ཡིན།"
     ],
-    "པར་ཆས": [
+    "མ་ལག": [
+      "ཁ་པར་གྱི་སྡེབ་ཆ་དུ་འགྲོ་རྗེས་བྱ་སྤྱོད་ལག་བསྟར་མི་ཐུབ་པའི་གནད་དོན་ཐག་གཅོད་བྱས།",
+      "མ་ལག་གི་བརྟན་ཤུགས་ལ་ཤུགས་རྐྱེན་ཐེབས་པའི་གནད་དོན་ཁ་ཤས་ཉུང་གྲངས་བཅོས་བྱས།",
+      "གློག་ཙང་བའི་སྐྱོན་ཤས་ཡོད་པར་ཉམས་གསོ་བྱེད།",
+      "འོད་ཟབ་པོའམ་དབུགས་འཚང་མེད་པའི་གནས་ཚུལ་ཁྲོད་スクリーン་ལ་རྒྱུན་མི་འཆད་པར་འོད་འཕྲོ་བའི་གནད་དོན་ཐག་གཅོད་བྱེད།"
+    ],
+    "ཁ་པར": [
+      "ཁ་པར་གཏོང་བའམ་ལེན་བྱེད་སྐབས་ཁ་པར་གྱི་བྱེད་སྟངས་ཇེ་དལ་དུ་འགྲོ་བའི་གནད་དོན་ཐག་གཅོད་བྱེད།"
+    ],
+    "Lockscreen, status bar, Notification shade": [
+      "གནད་དོན་ཐག་གཅོད་བྱས་པ།གལ་ཆེ་མིན་པའི་བརྡ་གཏོང་ལ་ཐེངས་གཉིས་བརྒྱབ་པའི་སྐབས།བརྡ་གཏོང་དང་མྱུར་སྒོ་བརྒྱབ་པའི་བྱེད་ཐབས་གཉིས་ཟུང་འབྲེལ་བྱུང་བ།"
+    ],
+    "ཁ་མར།": [
       "New: Enhanced low light mode",
       "New: You can shoot 960fps videos now"
     ],
     "སྒྲ་འཇུག་ཆས": [
-      "སྒྲ་ཕབ་མཚམས་འཇོག་བྱས་རྗེས་གནས་ཚུལ་ཕྲེང་ལ་དུས་ཐོག་ཏུ་གསར་སྒྱུར་མི་ཐུབ་པའི་གནད་དོན་བཅོས་ཡོད།"
+      "ཡིག་སྒྲོན་གྱི་རྣམ་པར་བཟོ་བཅོས་བརྒྱབ་རྗེས་སྒྲ་ཕབ་མཚམས་འཇོག་བྱས་ན་དུས་ཐོག་ཏུ་གསར་སྒྱུར་བྱེད་མི་ཐུབ་པའི་གནད་དོན་ཐག་གཅོད།"
     ],
-    "དོ་སྣང་བྱ་ཡུལ": [
-      "Android Pie གཞི་རྩའི་MIUI བརྟན་པོའི་པར་ Mi 8 ལ་སླེབས་ཡོད།"
+    "ཞའོ་ミསི་དངུལ་ཁུག": [
+      "གསར་དུ་ཞིའོ་མིས་སྤྱི་སྤྱོད་རླངས་འཁོར་གྱི་གཟིགས་སྤྲོད་བྱང་བུའི་པར་ངོས་བསྣན།",
+      "ཞའོ་མིས་སྤྱི་སྤྱོད་རླངས་འཁོར་གྱི་ཚད་བསྣན་མ་དངུལ་འཇོག་པའི་མཉམ་སྦྱོར་མཚམས་ངོས་ཀྱི་མྱོང་ཚོར་ལེགས་བཅོས་བྱེད།",
+      "ཞའོ་མིས་སྤྱི་སྤྱོད་རླངས་འཁོར (“བྱེད་སྒོ་གཞན་དག”)་པར་ངོས་ཀྱི་སྤྱོད་མཁན་གྱི་�नुभव་ལེགས་བཅོས་བྱེད།"
+    ],
+    "དོ་སྣང་བྱེད་དགོས་པའི་གནད་དོན": [
+      "Android Pie་རྨངགས་གཞི་བྱས་པའི་MIUI་དུས་བརྟན་མོ་དེ་ད་ལྟ་Xiaomi 8་ལ་བཏབ་ཡོད།"
     ]
   }
 }

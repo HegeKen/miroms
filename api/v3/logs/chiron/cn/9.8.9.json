@@ -20,112 +20,334 @@
   "logs_en": {
     "System": [
       "Optimization: Updated Android Security Patch to July 2019. Increased system security."
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Fix the issue where the scheduled power off countdown does not update in landscape fullscreen"
+    ],
+    "Settings": [
+      "Added: Input method supports full-screen keyboard optimization"
+    ],
+    "Recents": [
+      "Fixed the issue where screenshots were not blurred when entering Recents directly from an app with \"Blur screenshots\" enabled"
+    ],
+    "Mi Cloud": [
+      "Optimization: Cloud service homepage fully redesigned, cleaner and easier to use"
     ]
   },
   "logs_zh_tw": {
     "系統": [
       "優化 更新Android安全性修補程式等級 (2019#7)，提升系統安全性",
       "優化 更新Android安全性修補程式等級(2019#7)，提升系統安全性"
+    ],
+    "解鎖畫面、狀態欄、通知欄": [
+      "修復 橫屏全螢幕時定時關機倒數不更新的問題"
+    ],
+    "设置": [
+      "新增 輸入法支援全面屏鍵盤優化"
+    ],
+    "近期任務": [
+      "修復從已設定「截圖模糊」的應用程式直接進入最近任務時，截圖未模糊的問題"
+    ],
+    "小米雲服務": [
+      "優化 雲服務首頁全新改版，更簡潔好用"
     ]
   },
   "logs_ja": {
     "システム": [
       "最適化: Android セキュリティ パッチを 2019 年 7 月に更新しました。システムの安全性が向上しました。",
       "最適化: Google セキュリティパッチ（2019#7）を更新し、システムの安全性を向上しました。"
+    ],
+    "ロック画面、ステータスバー、通知バー": [
+      "横向き全画面時に定時電源オフのカウントダウンが更新されない問題を修正"
+    ],
+    "設定": [
+      "追加: 入力メソッドが全画面キーボード最適化をサポート"
+    ],
+    "最近のタスク": [
+      "「スクリーンショットをぼかす」を設定したアプリから直接最近タスクに入ると、スクリーンショットがぼやけない問題を修正"
+    ],
+    "Xiaomi クラウドサービス": [
+      "最適化: クラウドサービスのホームページを全面刷新し、よりシンプルで使いやすくしました"
     ]
   },
   "logs_ko": {
     "시스템": [
       "최적화: Android 보안 패치를 2019년 7월로 업데이트했습니다. 시스템 보안이 향상되었습니다.",
       "최적화: Google 보안 패치(2019#7) 업데이트, 시스템 보안 강화."
+    ],
+    "잠금 화면, 상태 표시줄, 알림 표시줄": [
+      "가로 화면 전체 화면에서 예약 종료 카운트다운이 업데이트되지 않는 문제 수정"
+    ],
+    "설정": [
+      "추가: 입력기가 전체 화면 키보드 최적화를 지원합니다"
+    ],
+    "최근 작업": [
+      "\"스크린샷 흐리게\"가 설정된 앱에서 최근 작업으로 바로 들어갈 때 스크린샷이 흐려지지 않는 문제를 수정"
+    ],
+    "Xiaomi 클라우드 서비스": [
+      "최적화: 클라우드 서비스 홈페이지가 전면 개편되어 더 간결하고 사용하기 쉬워졌습니다"
     ]
   },
   "logs_ru": {
     "Система": [
       "Оптимизация: Обновление системы безопасности Android (июль 2019 года). Улучшена безопасность системы."
+    ],
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Исправлена проблема, из-за которой обратный отсчет запланированного выключения не обновлялся в полноэкранном альбомном режиме."
+    ],
+    "Настройки": [
+      "Добавлено: Метод ввода поддерживает оптимизацию клавиатуры для полноэкранного режима"
+    ],
+    "Недавнее": [
+      "Исправлена проблема, из-за которой скриншот не размывался при прямом переходе в недавние задачи из приложения с включённым параметром «Размытие скриншотов»"
+    ],
+    "Облачный сервис Xiaomi": [
+      "Оптимизация: главная страница облачного сервиса полностью обновлена — стала проще и удобнее"
     ]
   },
   "logs_uk": {
     "Система": [
       "Оптимізація: Оновлено патч безпеки Android до липня 2019. Підвищено безпеку системи.",
       "Оптимізація: Оновлено патч безпеки Google (2019#7), підвищено безпеку системи."
+    ],
+    "Екран блокування, рядок стану, рядок сповіщень": [
+      "Виправлено проблему, через яку зворотний відлік запланованого вимкнення не оновлювався в повноекранному альбомному режимі."
+    ],
+    "Налаштування": [
+      "Додано: Метод введення підтримує оптимізацію клавіатури для повноекранного режиму"
+    ],
+    "Останні завдання": [
+      "Виправлено проблему, коли скриншот не розмивався під час прямого переходу до недавніх завдань із програми з увімкненим параметром «Розмиття скриншотів»"
+    ],
+    "Хмарний сервіс Xiaomi": [
+      "Оптимізація: головна сторінка хмарного сервісу повністю оновлена — стала простішою та зручнішою"
     ]
   },
   "logs_pl": {
     "System": [
       "Optymalizacja: Zaktualizowano poprawkę zabezpieczeń Android do lipca 2019. Zwiększono bezpieczeństwo systemu.",
       "Optymalizacja: Zaktualizowano poprawkę zabezpieczeń Google (2019#7), zwiększono bezpieczeństwo systemu."
+    ],
+    "Ekran blokady, pasek stanu, pasek powiadomień": [
+      "Naprawiono problem z nieaktualizującym się odliczaniem zaplanowanego wyłączania w trybie pełnoekranowym w orientacji poziomej."
+    ],
+    "Ustawienia": [
+      "Dodano: Metoda wprowadzania obsługuje optymalizację klawiatury pełnoekranowej"
+    ],
+    "Ostatnie zadania": [
+      "Naprawiono problem, w którym zrzut ekranu nie był rozmywany przy bezpośrednim przejściu do ostatnich zadań z aplikacji z włączoną opcją „Rozmycie zrzutów ekranu”"
+    ],
+    "Usługa w chmurze Xiaomi": [
+      "Optymalizacja: strona główna usługi w chmurze została całkowicie przeprojektowana — jest prostsza i wygodniejsza"
     ]
   },
   "logs_de": {
     "System": [
       "Optimierung: Android-Sicherheitspatch auf Juli 2019 aktualisiert. Systemsicherheit erhöht.",
       "Optimierung: Google-Sicherheitspatch (2019#7) aktualisiert, Systemsicherheit erhöht."
+    ],
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
+      "Das Problem wurde behoben, dass der Countdown für das geplante Ausschalten im Vollbild-Querformat nicht aktualisiert wurde."
+    ],
+    "Einstellungen": [
+      "Hinzugefügt: Eingabemethode unterstützt Vollbild-Tastatur-Optimierung"
+    ],
+    "Letzte Aufgaben": [
+      "Problem behoben, bei dem Screenshots nicht unscharf wurden, wenn man direkt aus einer App mit aktivierter Option „Screenshots verwischen“ zu den letzten Aufgaben ging"
+    ],
+    "Xiaomi Cloud-Dienst": [
+      "Optimierung: Startseite des Cloud-Dienstes komplett überarbeitet – übersichtlicher und einfacher zu bedienen"
     ]
   },
   "logs_fr": {
     "Système": [
       "Optimisation Mise à jour du correctif de sécurité Android jusqu'en juillet 2019. Sécurité accrue du système."
+    ],
+    "Écran de verrouillage, barre d’état, barre de notifications": [
+      "Correction du problème où le compte à rebours de l'extinction programmée ne se mettait pas à jour en plein écran paysage."
+    ],
+    "Paramètres": [
+      "Ajout : La méthode de saisie prend en charge l'optimisation du clavier plein écran"
+    ],
+    "Tâches récentes": [
+      "Correction du problème où les captures d’écran n’étaient pas floutées en passant directement aux tâches récentes depuis une application avec l’option « Flouter les captures d’écran » activée"
+    ],
+    "Service cloud Xiaomi": [
+      "Optimisation : page d’accueil du service cloud entièrement repensée, plus simple et plus pratique"
     ]
   },
   "logs_it": {
     "Sistema": [
       "Ottimizzazione: Aggiornamento della patch di sicurezza Android a luglio 2019. Maggiore sicurezza del sistema."
+    ],
+    "Schermata di blocco, barra di stato, barra delle notifiche": [
+      "Risolto il problema per cui il conto alla rovescia dello spegnimento programmato non si aggiornava a schermo intero in orizzontale."
+    ],
+    "Impostazioni": [
+      "Aggiunto: Il metodo di input supporta l'ottimizzazione della tastiera a schermo intero"
+    ],
+    "Recenti": [
+      "Risolto il problema per cui gli screenshot non venivano sfocati entrando direttamente nelle attività recenti da un'app con l'opzione \"Sfoca screenshot\" attivata"
+    ],
+    "Servizio cloud Xiaomi": [
+      "Ottimizzazione: homepage del servizio cloud completamente rinnovata, più semplice e facile da usare"
     ]
   },
   "logs_es": {
     "Sistema": [
       "Optimización: Parche de seguridad de Android actualizado a julio de 2019. Seguridad del sistema incrementada."
+    ],
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Se corrigió el problema por el que la cuenta atrás del apagado programado no se actualizaba en pantalla completa horizontal."
+    ],
+    "Configuración": [
+      "Añadido: El método de entrada admite la optimización del teclado de pantalla completa"
+    ],
+    "Recientes": [
+      "Corregido el problema por el que las capturas de pantalla no se difuminaban al entrar directamente en Tareas recientes desde una aplicación con la opción «Difuminar capturas de pantalla» activada"
+    ],
+    "Servicio en la nube de Xiaomi": [
+      "Optimización: página de inicio del servicio en la nube completamente rediseñada, más sencilla y fácil de usar"
     ]
   },
   "logs_pt": {
     "Sistema": [
       "Otimização Atualização do Patch de Segurança do Android para Julho de 2019. Segurança do sistema aprimorada."
+    ],
+    "Tela de bloqueio, barra de status, barra de notificações": [
+      "Corrigido o problema em que a contagem regressiva do desligamento agendado não era atualizada em tela cheia no modo paisagem."
+    ],
+    "Configurações": [
+      "Adicionado: O método de entrada suporta otimização de teclado em tela cheia"
+    ],
+    "Tarefas recentes": [
+      "Corrigido o problema em que as capturas de tela não ficavam desfocadas ao entrar diretamente nas Tarefas recentes a partir de um app com a opção \"Desfocar capturas de tela\" ativada"
+    ],
+    "Serviço de nuvem Xiaomi": [
+      "Otimização: página inicial do serviço na nuvem totalmente reformulada, mais simples e fácil de usar"
     ]
   },
   "logs_tr": {
     "Sistem": [
       "Optimizasyon: Android Güvenlik Yaması Temmuz 2019 sürümüne güncellendi. Sistem güvenliği artırıldı."
+    ],
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Yatay tam ekranda zamanlanmış kapanma geri sayımının güncellenmemesi sorunu giderildi."
+    ],
+    "Ayarlar": [
+      "Eklendi: Giriş yöntemi tam ekran klavye optimizasyonunu destekliyor"
+    ],
+    "Son kullanılanlar": [
+      "\"Ekran görüntülerini bulanıklaştır\" ayarı etkin bir uygulamadan doğrudan son görevlere girildiğinde ekran görüntülerinin bulanıklaşmaması sorunu düzeltildi"
+    ],
+    "Xiaomi Bulut Hizmeti": [
+      "Optimizasyon: Bulut hizmeti ana sayfası tamamen yenilendi; daha sade ve kullanımı daha kolay"
     ]
   },
   "logs_id": {
     "Sistem": [
       "Pengoptimalan Patch Keamanan Android diperbarui hingga Juli 2019. Keamanan sistem ditingkatkan."
+    ],
+    "Layar kunci, bilah status, bilah notifikasi": [
+      "Memperbaiki masalah hitungan mundur mati terjadwal yang tidak diperbarui saat layar penuh lanskap."
+    ],
+    "Pengaturan": [
+      "Ditambahkan: Metode input mendukung optimasi keyboard layar penuh"
+    ],
+    "Tugas Terbaru": [
+      "Memperbaiki masalah tangkapan layar tidak diburamkan saat langsung masuk ke Tugas terbaru dari aplikasi dengan setelan \"Buramkan tangkapan layar\" aktif"
+    ],
+    "Layanan Cloud Xiaomi": [
+      "Optimasi: halaman utama layanan cloud telah didesain ulang sepenuhnya, lebih ringkas dan mudah digunakan"
     ]
   },
   "logs_vi": {
     "Hệ thống": [
       "Tối ưu hóa: Đã cập nhật bản vá bảo mật Android đến tháng 7 năm 2019. Tăng cường bảo mật hệ thống.",
       "Tối ưu hóa: Đã cập nhật bản vá bảo mật Google (2019#7), tăng cường bảo mật hệ thống."
+    ],
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Khắc phục sự cố đếm ngược tắt nguồn theo lịch không cập nhật khi ở chế độ toàn màn hình ngang."
+    ],
+    "Cài đặt": [
+      "Đã thêm: Phương thức nhập hỗ trợ tối ưu hóa bàn phím toàn màn hình"
+    ],
+    "Tác vụ gần đây": [
+      "Đã sửa lỗi ảnh chụp màn hình không bị làm mờ khi vào trực tiếp Tác vụ gần đây từ ứng dụng đã bật \"Làm mờ ảnh chụp màn hình\""
+    ],
+    "Dịch vụ đám mây Xiaomi": [
+      "Tối ưu hóa: trang chủ dịch vụ đám mây được thiết kế lại hoàn toàn, gọn gàng và dễ sử dụng hơn"
     ]
   },
   "logs_th": {
     "ระบบ": [
       "การปรับให้เหมาะสม: อัปเดตแพตช์ความปลอดภัย Android เป็นกรกฎาคม 2019 เพิ่มความปลอดภัยของระบบ",
       "เพิ่มประสิทธิภาพ: อัปเดตแพตช์ความปลอดภัยของ Google (2019#7) เพิ่มความปลอดภัยของระบบ"
+    ],
+    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
+      "แก้ไขปัญหาการนับถอยหลังปิดเครื่องตามกำหนดไม่รีเฟรชเมื่ออยู่ในโหมดเต็มหน้าจอแนวนอน"
+    ],
+    "การตั้งค่า": [
+      "เพิ่ม: วิธีการป้อนข้อมูลรองรับการปรับแต่งแป้นพิมพ์เต็มหน้าจอ"
+    ],
+    "งานล่าสุด": [
+      "แก้ไขปัญหาที่ภาพหน้าจอไม่เบลอเมื่อเข้าสู่งานล่าสุดโดยตรงจากแอปที่เปิดใช้ \"เบลอภาพหน้าจอ\""
+    ],
+    "บริการคลาวด์ Xiaomi": [
+      "ปรับปรุง: หน้าหลักของบริการคลาวด์ได้รับการออกแบบใหม่ทั้งหมด เรียบง่ายและใช้งานง่ายขึ้น"
     ]
   },
   "logs_ar": {
     "النظام": [
       "تحسين: تحديث تصحيح أمان Android إلى يوليو 2019. زيادة أمان النظام.",
       "تحسين: تحديث تصحيح أمان Google (2019#7)، مما يعزز أمان النظام."
+    ],
+    "شاشة القفل، شريط الحالة، شريط الإشعارات": [
+      "إصلاح مشكلة عدم تحديث العد التنازلي لإيقاف التشغيل المجدول في وضع ملء الشاشة الأفقي."
+    ],
+    "الإعدادات": [
+      "تمت الإضافة: طريقة الإدخال تدعم تحسين لوحة المفاتيح بملء الشاشة"
+    ],
+    "المهام الأخيرة": [
+      "تم إصلاح مشكلة عدم تمويه لقطة الشاشة عند الانتقال مباشرة إلى المهام الأخيرة من تطبيق مفعّل فيه خيار «تمويه لقطات الشاشة»"
+    ],
+    "خدمة Xiaomi السحابية": [
+      "تحسين: إعادة تصميم الصفحة الرئيسية للخدمة السحابية بالكامل، وأصبحت أبسط وأسهل في الاستخدام"
     ]
   },
   "logs_in": {
     "सिस्टम": [
       "अनुकूलन: Android सुरक्षा पैच को जुलाई 2019 में अपडेट किया गया। सिस्टम की सुरक्षा बढ़ाई गई।",
       "Optimasi: Memperbarui patch keamanan Google (2019#7), meningkatkan keamanan sistem."
+    ],
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
+      "लैंडस्केप फ़ुलस्क्रीन में निर्धारित शटडाउन काउंटडाउन अपडेट न होने की समस्या ठीक की गई।"
+    ],
+    "सेटिंग्स": [
+      "जोड़ा गया: इनपुट विधि फुल-स्क्रीन कीबोर्ड ऑप्टिमाइज़ेशन का समर्थन करती है"
+    ],
+    "हाल के कार्य": [
+      "“स्क्रीनशॉट धुंधला करें” सेटिंग वाले ऐप से सीधे हाल के कार्यों में जाने पर स्क्रीनशॉट धुंधला न होने की समस्या ठीक की गई"
+    ],
+    "Xiaomi क्लाउड सेवा": [
+      "अनुकूलन: क्लाउड सेवा के होमपेज को पूरी तरह से नया डिज़ाइन किया गया, अधिक सरल और उपयोग में आसान"
     ]
   },
   "logs_ug": {
     "سىستېما": [
       "ئەلالاشتۇرۇش: Google بىخەتەرلىك يامىقى (2019#7) يېڭىلاندى، سىستېما بىخەتەرلىكى ئاشۇرۇلدى.",
       "ياخشىلاش: Google بىخەتەرلىك يامىقى (2019#7) يېڭىلاندى، سىستېما بىخەتەرلىكى ئاشۇرۇلدى."
+    ],
+    "Xiaomi بۇلۇت مۇلازىمىتى": [
+      "ئەلالاشتۇرۇش: بۇلۇت مۇلازىمىتى باش بېتى پۈتۈنلەي يېڭىلاندى، تېخىمۇ ئاددىي ۋە ئىشلىتىشكە قۇلايلىق"
     ]
   },
   "logs_bo": {
     "མ་ལག": [
       "ལེགས་བཅོས། Google བདེ་འཇགས་ཀྱི་ཁ་གསབ (2019#7) གསར་སྤེལ་བྱས་ཏེ། རྒྱུད་ཁོངས་ཀྱི་བདེ་འཇགས་ཡར་རྒྱས་བཏང་།"
+    ],
+    "Mi Cloud": [
+      "ལེགས་སུ་བཅོས་པ། སྤྲིན་ཞབས་ཞུའི་མདུན་ངོས་གསར་དུ་བསྒྱུར་བཅོས་བྱས་ཡོད། སྟབས་བདེ་དང་བེད་སྤྱོད་སླ་བ།"
     ],
     "རིམ་ལུགས": [
       "Optimization: Updated Android Security Patch to July 2019. Increased system security."

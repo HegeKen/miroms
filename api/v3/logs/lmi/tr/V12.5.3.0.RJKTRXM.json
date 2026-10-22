@@ -159,7 +159,9 @@
       "Fix: Wallpapers from First space were also applied in Second space when Battery saver was on",
       "Fix: Wallpapers weren't displayed correctly in Second space",
       "Fix: When system font size was set to large, super wallpaper descriptions overlapped during the setup process",
-      "Fix: he screen flashed while Fingerprint unlock was being used"
+      "Fix: he screen flashed while Fingerprint unlock was being used",
+      "Fixed an issue where setting the Home screen wallpaper in Second Space caused abnormal display.",
+      "Fixed the text overlap issue on the Super Wallpaper landing point selection page when using large fonts."
     ],
     "Settings": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
@@ -285,9 +287,11 @@
       "修復: 設定頁超級壁紙底部導航欄顯示不清楚",
       "修復: 省電模式下，分身空間桌面壁紙與主空間相同",
       "修復: 分身空間中設定桌面壁紙異常顯示",
-      "修復: 大字體時，超級壁紙落地點選擇頁文字重疊"
+      "修復: 大字體時，超級壁紙落地點選擇頁文字重疊",
+      "修復 分身空間中設定桌面壁紙異常顯示的問題",
+      "修復 大字體時，超級桌布落點選擇頁文字重疊的問題"
     ],
-    "設定": [
+    "设置": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
       "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
       "修復: 在“應用管理-默認打開鏈接”頁面中選擇“地圖”選項時頁面崩潰的問題"
@@ -340,6 +344,11 @@
       "修復: 播放音樂時，通知欄偶發不顯示媒體控制面板的異常",
       "修復: 抬起螢幕亮起時偶現鎖定螢幕通知閃動的異常",
       "修復: 深色模式下，通知按鈕偶發顯示異常的問題"
+    ],
+    "設定": [
+      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
+      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
+      "修復: 在“應用管理-默認打開鏈接”頁面中選擇“地圖”選項時頁面崩潰的問題"
     ]
   },
   "logs_ja": {
@@ -352,6 +361,24 @@
     ],
     "システム": [
       "Androidのセキュリティパッチを2021年10月にアップデートしました。システムのセキュリティを強化しました。"
+    ],
+    "ステータスバー、通知シェード": [
+      "最適化: 着信通知を表示するアルゴリズム",
+      "最適化: アラーム通知",
+      "最適化: 通知シェードのサードパーティ製テーマへの対応",
+      "最適化: 通知のダークモード調整",
+      "修正: 透明な背景を使用した際にフローティング通知の表示が重なる問題",
+      "修正: 通知を長押しするとアクセス許可のダイアログと表示が重なってしまう問題",
+      "修正: アプリロックを使用時に通知が正しく表示されない問題",
+      "修正: クリーナーのアニメーションが正しく表示されない問題",
+      "修正: 通知シェードが開けない場合がある問題",
+      "修正: 不在着信後に通知が正しく表示されない問題",
+      "修正: 不在着信後のアクセス許可に関する問題",
+      "修正: 音楽プレーヤーのコントロールが表示されない場合がある問題",
+      "修正: グループ化された通知の表示に関する問題",
+      "修正: プレイヤーのコントロールが通知シェードに表示されないことがある問題",
+      "修正: '持ち上げてスリープ解除'実行時に通知が正しく表示されない場合がある問題",
+      "修正: ダークモードがオンの場合、通知にボタンが正しく表示されないことがある問題"
     ],
     "テーマ": [
       "修正: デバイスのロック解除中に壁紙が点滅することがある問題",
@@ -404,24 +431,6 @@
       "修正: 通話終了後にロック画面の通知が消えてしまう問題",
       "修正: スーパー壁紙とテーマを組み合わせたときにロック画面のアイテムが表示されない問題",
       "修正: 顔認証と指紋認証を同時に使用するとクラッシュする場合がある問題"
-    ],
-    "ステータスバー、通知シェード": [
-      "最適化: 着信通知を表示するアルゴリズム",
-      "最適化: アラーム通知",
-      "最適化: 通知シェードのサードパーティ製テーマへの対応",
-      "最適化: 通知のダークモード調整",
-      "修正: 透明な背景を使用した際にフローティング通知の表示が重なる問題",
-      "修正: 通知を長押しするとアクセス許可のダイアログと表示が重なってしまう問題",
-      "修正: アプリロックを使用時に通知が正しく表示されない問題",
-      "修正: クリーナーのアニメーションが正しく表示されない問題",
-      "修正: 通知シェードが開けない場合がある問題",
-      "修正: 不在着信後に通知が正しく表示されない問題",
-      "修正: 不在着信後のアクセス許可に関する問題",
-      "修正: 音楽プレーヤーのコントロールが表示されない場合がある問題",
-      "修正: グループ化された通知の表示に関する問題",
-      "修正: プレイヤーのコントロールが通知シェードに表示されないことがある問題",
-      "修正: '持ち上げてスリープ解除'実行時に通知が正しく表示されない場合がある問題",
-      "修正: ダークモードがオンの場合、通知にボタンが正しく表示されないことがある問題"
     ],
     "Xiaomi クラウドサービス": [
       "最適化: 着信通知を表示するアルゴリズム",
@@ -668,6 +677,24 @@
     ],
     "Система": [
       "Оновлено патч безпеки Android за жовтень 2021 року. Збільшено безпеку системи."
+    ],
+    "Рядок стану, панель сповіщень": [
+      "Оптимізація: Алгоритми відображення сповіщень про вхідні виклики",
+      "Оптимізація: Сповіщення будильника",
+      "Оптимізація: Сумісність сторонніх тем із панеллю сповіщень",
+      "Оптимізація: Оптимізація відображення сповіщень у темному режимі",
+      "Виправлено: Під час використання прозорого фону спливаючі сповіщення могли перекриватися",
+      "Виправлено: Елементи діалогового вікна надання дозволів перекривалися після довгого натиснення на сповіщення",
+      "Виправлено: Під час використання захисту програм сповіщення могли відображатися неправильно",
+      "Виправлено: Виправлено некоректне відображення анімації \"Очищення\"",
+      "Виправлено: В деяких випадках панель сповіщень могла не відкриватися",
+      "Виправлено: Після пропущених викликів сповіщення могли відображатися неправильно",
+      "Виправлено: Виправлені помилки дозволів, які з'являлися після пропущених викликів",
+      "Виправлено: В деяких випадках віджет керування відтворенням музики міг не відображатися",
+      "Виправлено: Виправлено неправильне відображення згрупованих сповіщень",
+      "Виправлено: Віджет керування відтворенням музиик міг не відображатися у панелі сповіщень",
+      "Виправлено: Під час використання функції \"Підняти для активації\" сповіщення могли відображатися неправильно",
+      "Виправлено: Під час активації темного режиму деякі кнопки на сповіщеннях могли не відображатися"
     ],
     "Теми": [
       "Виправлено: У деяких випадках після розблокування пристрою шпалери могли мерехтіти",
@@ -924,7 +951,9 @@
       "Behebung: Der Startbildschirm-Hintergrund wurde schwarz, nachdem der Ultra-Energiesparmodus deaktiviert wurde",
       "Behebung: Falsche Sprachansagen beim Herunterladen von Super-Wallpapers im Barrierefreiheitsmodus",
       "Behoben: Die Navigationsschaltflächen wurden in den Super-Wallpaper-Einstellungen nicht korrekt angezeigt.",
-      "Behebung: Bei großer Schrift überlappten sich Super-Wallpaper-Beschreibungen während der Einrichtung"
+      "Behebung: Bei großer Schrift überlappten sich Super-Wallpaper-Beschreibungen während der Einrichtung",
+      "Behoben: Fehlerhafte Anzeige beim Festlegen des Startbildschirm-Hintergrunds im Zweiten Bereich.",
+      "Das Problem überlappender Texte auf der Auswahlseite für den Landepunkt des Super-Hintergrunds bei großer Schrift wurde behoben."
     ],
     "Einstellungen": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
@@ -963,6 +992,24 @@
       "Behoben: Die gleichzeitige Nutzung von Gesichts- und Fingerabdruckentsperrung führte in manchen Fällen zu Abstürzen"
     ],
     "Statusleiste, Benachrichtigungsleiste": [
+      "Optimierung: Algorithmen zur Anzeige von Benachrichtigungen über eingehende Anrufe",
+      "Optimierung: Weckerbenachrichtigungen",
+      "Optimierung: Kompatibilität von Drittanbieter-Themes mit dem Benachrichtigungsbereich",
+      "Optimierung: Anpassung des Dunkelmodus für Benachrichtigungen",
+      "Behoben: Schwebende Benachrichtigungen überschnitten sich bei Verwendung eines transparenten Hintergrunds.",
+      "Behoben: Elemente des Berechtigungsdialogs überlappten sich nach langem Drücken auf eine Benachrichtigung",
+      "Behoben: Bei aktiver App-Sperre wurden Benachrichtigungen nicht korrekt angezeigt",
+      "Behoben: Die Animationen des Reinigers wurden nicht korrekt angezeigt",
+      "Behoben: Der Benachrichtigungsbereich ließ sich in manchen Fällen nicht öffnen",
+      "Behoben: Benachrichtigungen wurden nach verpassten Anrufen nicht korrekt angezeigt",
+      "Behoben: Probleme mit Berechtigungen nach verpassten Anrufen",
+      "Behoben: Musik-Player-Steuerelemente wurden in manchen Fällen nicht angezeigt",
+      "Behoben: Probleme bei der Anzeige gruppierter Benachrichtigungen",
+      "Behoben: Wiedergabesteuerung wurde nicht immer in der Benachrichtigungsleiste angezeigt",
+      "Behoben: Benachrichtigungen wurden bei Verwendung von „Zum Aufwecken anheben“ nicht immer korrekt angezeigt",
+      "Behoben: Schaltflächen wurden bei aktiviertem Dunkelmodus nicht immer korrekt in den Benachrichtigungen angezeigt"
+    ],
+    "Xiaomi Cloud-Dienst": [
       "Optimierung: Algorithmen zur Anzeige von Benachrichtigungen über eingehende Anrufe",
       "Optimierung: Weckerbenachrichtigungen",
       "Optimierung: Kompatibilität von Drittanbieter-Themes mit dem Benachrichtigungsbereich",
@@ -1241,7 +1288,7 @@
       "Reparado: Los fondos de pantalla no se mostraban correctamente en el Segundo espacio",
       "Reparado: Cuando el tamaño de la fuente del sistema se establecía en grande, las descripciones de los superfondos de pantalla se superponían durante el proceso de configuración"
     ],
-    "Ajustes": [
+    "Configuración": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
       "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
       "Reparado: Se producían bloqueos cuando se seleccionaba el mapa predeterminado"
@@ -1312,6 +1359,11 @@
       "Reparado: Los controles del reproductor no siempre se mostraban en la Barra de notificaciones",
       "Reparado: Las notificaciones no siempre se mostraban correctamente cuando se usaba \"Levantar para activar\"",
       "Reparado: Los botones no siempre se mostraban correctamente en las notificaciones cuando el Modo oscuro estaba activado"
+    ],
+    "Ajustes": [
+      "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
+      "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
+      "Reparado: Se producían bloqueos cuando se seleccionaba el mapa predeterminado"
     ]
   },
   "logs_pt": {
@@ -1681,6 +1733,24 @@
     "Hệ thống": [
       "Cập nhật Bản vá bảo mật Android đến tháng 10 năm 2021. Tăng cường bảo mật hệ thống."
     ],
+    "Thanh trạng thái, thanh thông báo": [
+      "Tối ưu: Thuật toán thông báo cuộc gọi đến",
+      "Tối ưu: Thông báo báo thức",
+      "Tối ưu: Chủ đề bên thứ ba tương thích với Thanh thông báo",
+      "Tối ưu: Điều chỉnh chế độ nền tối cho thông báo",
+      "Sửa: Thông báo nổi bị chồng lấn khi hình nền trong suốt được sử dụng",
+      "Sửa: Hộp thoại quyền bị chồng lấn sau khi bấm giữ thông báo",
+      "Sửa: Thông báo không hiển thị chính xác khi Khóa ứng dụng được sử dụng",
+      "Sửa: Hoạt ảnh dọn dẹp không hiển thị chính xác",
+      "Sửa: Không thể mở Thanh thông báo trong một số trường hợp",
+      "Sửa: Thông báo không hiển thị chính xác sau khi lỡ cuộc gọi",
+      "Sửa: Vấn đề về quyền sau khi có cuộc gọi nhỡ",
+      "Sửa: Điều khiển trình phát nhạc không hiển thị trong một số trường hợp",
+      "Sửa: Vấn đề với việc hiển thị thông báo nhóm",
+      "Sửa: Điều khiển trình phát không luôn hiển thị trong Thanh thông báo",
+      "Sửa: Thông báo không hiển thị chính xác khi \"Nâng lên để đánh thức\" được sử dụng",
+      "Sửa: Phím không hiển thị chính xác trên thanh thông báo khi Chế độ nền tối bật"
+    ],
     "Chủ đề": [
       "Sửa: Hình nền nhấp nháy khi thiết bị được mở khóa trong một số trường hợp",
       "Sửa: Dịch vụ hình nền gặp sự cố trong một số trường hợp",
@@ -1779,6 +1849,24 @@
     ],
     "ระบบ": [
       "อัปเดตแพทช์ความปลอดภัยของแอนดรอยด์เป็นตุลาคม 2021 เพิ่มความปลอดภัยของระบบ"
+    ],
+    "แถบสถานะ, แผงการแจ้งเตือน": [
+      "การเพิ่มประสิทธิภาพ: อัลกอริทึมสำหรับการแสดงการแจ้งเตือนสายเรียกเข้า",
+      "การเพิ่มประสิทธิภาพ: การแจ้งเตือน",
+      "การเพิ่มประสิทธิภาพ: ความเข้ากันได้ของธีมของบุคคลที่สามสำหรับหน้าต่างแจ้งเตือน",
+      "การเพิ่มประสิทธิภาพ: การปรับโหมดมืดสำหรับการแจ้งเตือน",
+      "แก้ไข: การแจ้งเตือนแบบลอยซ้อนทับกันเมื่อใช้พื้นหลังโปร่งใส",
+      "แก้ไข: องค์ประกอบข้อความการอนุญาตซ้อนทับกันหลังจากกดการแจ้งเตือนค้างไว้",
+      "แก้ไข: การแจ้งเตือนแสดงไม่ถูกต้องเมื่อใช้ ล็อกแอป",
+      "แก้ไข: แอนิเมชั่นตัวทำความสะอาดแสดงไม่ถูกต้อง",
+      "แก้ไข: ไม่สามารถเปิดหน้าต่างแจ้งเตือนได้ในบางกรณี",
+      "แก้ไข: การแจ้งเตือนแสดงไม่ถูกต้องหลังสายที่ไม่ได้รับ",
+      "แก้ไข: ปัญหาเกี่ยวกับการอนุญาตหลังจากไม่ได้รับสาย",
+      "แก้ไข: ในบางกรณีการควบคุมเครื่องเล่นเพลงไม่แสดง",
+      "แก้ไข: ปัญหาเกี่ยวกับการแสดงการแจ้งเตือนแบบกลุ่ม",
+      "แก้ไข: การควบคุมเครื่องเล่นเพลงไม่ได้แสดงในแถบการแจ้งเตือนทุกครั้ง",
+      "แก้ไข: การแจ้งเตือนแสดงไม่ถูกต้องทุกครั้งเมื่อใช้ \"ยกขึ้นเพื่อปลุก\"",
+      "แก้ไข: ปุ่มต่างๆ แสดงไม่ถูกต้องในการแจ้งเตือนทุกครั้งเมื่อเปิดโหมดมืด"
     ],
     "ธีม": [
       "แก้ไข: ภาพพื้นหลังกะพริบขณะปลดล็อกอุปกรณ์ในบางกรณี",
@@ -2184,6 +2272,24 @@
       "Fix: Lock screen items weren't displayed when super wallpapers and themes were combined",
       "Fix: Using Face unlock and Fingerprint unlock simultaneously led to crashes in some cases"
     ],
+    "Xiaomi بۇلۇت مۇلازىمىتى": [
+      "Optimization: Algorithms for displaying incoming call notifications",
+      "Optimization: Alarm notifications",
+      "Optimization: Third party theme compatibility for Notification shade",
+      "Optimization: Dark mode adjustments for notifications",
+      "Fix: Floating notifications overlapped when the transparent background was used",
+      "Fix: Permission dialog elements overlapped after a notification was long pressed",
+      "Fix: Notifications weren't displayed correctly when App lock was used",
+      "Fix: Cleaner animations weren't displayed correctly",
+      "Fix: Notification shade couldn't be opened in some cases",
+      "Fix: Notifications weren't displayed correctly after missed calls",
+      "Fix: Issues with permissions after missed calls",
+      "Fix: Music player controls weren't displayed in some cases",
+      "Fix: Issues with displaying grouped notifications",
+      "Fix: Player controls weren't always displayed in the Notification shade",
+      "Fix: Notifications weren't always displayed correctly when \"Raise to wake\" was used",
+      "Fix: Buttons weren't always displayed correctly on the notifications when Dark mode was on"
+    ],
     "Settings": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",
       "修复部分APP帐号，无法同步到“帐号与同步”中的问题",
@@ -2277,6 +2383,24 @@
       "Fix: Lock screen notifications disappeared after an ended call",
       "Fix: Lock screen items weren't displayed when super wallpapers and themes were combined",
       "Fix: Using Face unlock and Fingerprint unlock simultaneously led to crashes in some cases"
+    ],
+    "Mi Cloud": [
+      "Optimization: Algorithms for displaying incoming call notifications",
+      "Optimization: Alarm notifications",
+      "Optimization: Third party theme compatibility for Notification shade",
+      "Optimization: Dark mode adjustments for notifications",
+      "Fix: Floating notifications overlapped when the transparent background was used",
+      "Fix: Permission dialog elements overlapped after a notification was long pressed",
+      "Fix: Notifications weren't displayed correctly when App lock was used",
+      "Fix: Cleaner animations weren't displayed correctly",
+      "Fix: Notification shade couldn't be opened in some cases",
+      "Fix: Notifications weren't displayed correctly after missed calls",
+      "Fix: Issues with permissions after missed calls",
+      "Fix: Music player controls weren't displayed in some cases",
+      "Fix: Issues with displaying grouped notifications",
+      "Fix: Player controls weren't always displayed in the Notification shade",
+      "Fix: Notifications weren't always displayed correctly when \"Raise to wake\" was used",
+      "Fix: Buttons weren't always displayed correctly on the notifications when Dark mode was on"
     ],
     "Settings": [
       "修复 WLAN添加网络时选择“企业级加密”会导致域名框太窄",

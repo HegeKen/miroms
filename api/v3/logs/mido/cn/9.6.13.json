@@ -30,104 +30,538 @@
     ]
   },
   "logs_en": {
+    "System": [
+      "New: Editing, sharing, and customizing your screenshots is now much easier",
+      "New: Long screenshot guide",
+      "Fixed an issue where the long screenshot guide popped up multiple times"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Fixed the issue of accidental touches on the notification shade during calls"
+    ],
     "Settings": [
       "New: Quick replies for messaging apps"
     ],
     "Recents": [
       "New: You can blur the previews of some apps in Recents now"
     ],
+    "Blocklist": [
+      "Fix abnormal interception in Chengdu/Ziyang area",
+      "Fixed a bug where the call blocking details page did not display the label type",
+      "Fix large font display issue in dark mode"
+    ],
     "Mi Cloud": [
+      "Added: prompt when the user turns off Find My Device that MiPay bank cards and virtual door cards will be deleted",
       "Optimization: Improved sync efficiency",
       "Fix: The Sync button didn't always respond",
       "Fix: Mi Cloud services stopped working when the users signed out of their Mi Account"
+    ],
+    "MI Wallet": [
+      "Added Mi Pay card-code integration feature, supports bank card QR code payment."
     ]
   },
   "logs_zh_tw": {
-    "設定": [
+    "系統": [
+      "新增 全新的截圖體驗，簡化截圖編輯、分享、長截圖流程",
+      "新增長截圖引導",
+      "修復長截屏引導彈出多次的問題"
+    ],
+    "解鎖畫面、狀態欄、通知欄": [
+      "修正 通話過程中誤觸通知欄的問題"
+    ],
+    "设置": [
       "新增 快捷回覆功能，支援使用懸浮窗開啟即時通訊類應用通知"
     ],
     "近期任務": [
       "新增: 模糊最近任務中的部分應用預覽圖的功能"
+    ],
+    "防打擾": [
+      "修復 成都/資陽地區攔截異常",
+      "修正 來電攔截詳情頁面不顯示標記類型的錯誤",
+      "修正 深色模式下大字體顯示問題"
+    ],
+    "小米雲服務": [
+      "新增 使用者關閉尋找手機時，提示 MiPay 銀行卡和虛擬門卡將被刪除",
+      "優化 同步及時性，提升同步效率",
+      "修復 點擊「立即同步」按鈕沒有反應的問題",
+      "修正 登出小米帳號時，提示雲端服務停止運行的問題"
+    ],
+    "小米錢包": [
+      "新增 Mi Pay 卡碼合一功能，支援銀行卡二維碼支付"
     ]
   },
   "logs_ja": {
+    "システム": [
+      "追加: 新しいスクリーンショット体験。スクリーンショットの編集、共有、長いスクリーンショットの流れを簡素化",
+      "長いスクリーンショットのガイドを追加",
+      "長いスクリーンショットのガイドが複数回表示される問題を修正しました"
+    ],
+    "ロック画面、ステータスバー、通知バー": [
+      "通話中に通知シェードを誤ってタッチする問題を修正"
+    ],
     "設定": [
       "新機能: メッセージアプリのクイック返信"
+    ],
+    "最近のタスク": [
+      "追加: 最近のタスクで一部アプリのプレビューをぼかせるようになりました"
+    ],
+    "迷惑電話ブロック": [
+      "成都/資陽地区のインターセプト異常を修正",
+      "着信拒否の詳細ページにラベルタイプが表示されない不具合を修正",
+      "ダークモードでの大きなフォント表示の問題を修正"
+    ],
+    "Xiaomi クラウドサービス": [
+      "追加 ユーザーが「デバイスを探す」をオフにした際、MiPayの銀行カードと仮想ドアカードが削除されることを通知",
+      "最適化: 同期の適時性を向上し、同期効率を改善",
+      "「今すぐ同期」ボタンをタップしても反応しない問題を修正",
+      "Xiaomi アカウントからサインアウトした際に、クラウドサービスが停止したと表示される問題を修正"
+    ],
+    "MIウォレット": [
+      "Mi Payのカード・コード一体型機能を追加、銀行カードのQRコード決済に対応"
     ]
   },
   "logs_ko": {
+    "시스템": [
+      "New: 스크린샷 편집, 공유, 커스터마이징의 과정을 간소화",
+      "긴 스크린샷 가이드 추가",
+      "긴 스크린샷 안내가 여러 번 표시되는 문제를 수정했습니다"
+    ],
+    "잠금 화면, 상태 표시줄, 알림 표시줄": [
+      "통화 중 알림창이 잘못 터치되는 문제를 수정"
+    ],
     "설정": [
       "New: 메시지 앱의 빠른 답장 기능"
+    ],
+    "최근 작업": [
+      "추가: 최근 작업에서 일부 앱의 미리보기를 흐리게 표시할 수 있습니다"
+    ],
+    "스팸 차단": [
+      "청두/쯔양 지역 차단 이상 수정",
+      "수신 차단 상세 페이지에서 라벨 유형이 표시되지 않는 버그를 수정했습니다",
+      "다크 모드에서 큰 글꼴 표시 문제 수정"
+    ],
+    "Xiaomi 클라우드 서비스": [
+      "추가 사용자가 기기 찾기를 끌 때 MiPay 은행 카드 및 가상 도어 카드가 삭제된다는 안내",
+      "최적화: 동기화 적시성 개선 및 동기화 효율 향상",
+      "\"지금 동기화\" 버튼을 눌러도 반응이 없는 문제를 수정",
+      "Xiaomi 계정에서 로그아웃할 때 클라우드 서비스가 중지되었다는 알림이 표시되는 문제를 수정"
+    ],
+    "샤오미 지갑": [
+      "Mi Pay 카드-코드 통합 기능 추가, 은행 카드 QR 코드 결제 지원"
     ]
   },
   "logs_ru": {
+    "Система": [
+      "Новое: Редактировать и отправлять снимки экрана теперь намного проще",
+      "Добавлено руководство по длинным скриншотам",
+      "Исправлена проблема, из-за которой подсказка для длинного скриншота появлялась несколько раз"
+    ],
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Исправлена проблема случайного касания панели уведомлений во время вызова"
+    ],
     "Настройки": [
       "Новое: Быстрые ответы для мессенджеров"
+    ],
+    "Недавнее": [
+      "Добавлено: можно размывать превью некоторых приложений в недавних задачах"
+    ],
+    "Черный список": [
+      "Исправлена ошибка перехвата в районе Чэнду/Цзыян",
+      "Исправлена ошибка: на странице сведений о блокировке вызовов не отображался тип метки.",
+      "Исправлена проблема отображения крупного шрифта в тёмном режиме"
+    ],
+    "Облачный сервис Xiaomi": [
+      "Добавлено: при отключении пользователем «Поиска устройства» отображается предупреждение об удалении банковских карт MiPay и виртуальных дверных карт",
+      "Оптимизация: повышена своевременность и эффективность синхронизации",
+      "Исправлена проблема, из-за которой кнопка «Синхронизировать сейчас» не реагировала на нажатие",
+      "Исправлена проблема с сообщением об остановке облачных сервисов при выходе из аккаунта Xiaomi"
+    ],
+    "MI Кошелек": [
+      "Добавлена функция Mi Pay «карта-код», поддерживается оплата банковской картой по QR-коду"
     ]
   },
   "logs_uk": {
+    "Система": [
+      "Нове: Оновлений досвід роботи зі скріншотами, спрощено редагування, поширення та створення довгих скріншотів",
+      "Додано посібник із довгих знімків екрана",
+      "Виправлено проблему, через яку підказка для довгого скриншота з’являлася кілька разів"
+    ],
+    "Екран блокування, рядок стану, рядок сповіщень": [
+      "Виправлено проблему випадкового торкання панелі сповіщень під час виклику"
+    ],
     "Налаштування": [
       "New: Quick replies for messaging apps"
+    ],
+    "Останні завдання": [
+      "Додано: можна розмивати прев’ю деяких програм у нещодавніх задачах"
+    ],
+    "Блокування спаму": [
+      "Виправлено помилку перехоплення в районі Ченду/Цзиян",
+      "Виправлено помилку: на сторінці відомостей про блокування викликів не відображався тип позначки.",
+      "Виправлено проблему відображення великого шрифту в темному режимі"
+    ],
+    "Хмарний сервіс Xiaomi": [
+      "Додано: коли користувач вимикає «Пошук пристрою», показується попередження про видалення банківських карток MiPay і віртуальних карток дверей",
+      "Оптимізація: покращено своєчасність і ефективність синхронізації",
+      "Виправлено проблему, через яку кнопка «Синхронізувати зараз» не реагувала на натискання",
+      "Виправлено проблему з повідомленням про зупинку хмарних сервісів під час виходу з облікового запису Xiaomi"
+    ],
+    "MI Гаманець": [
+      "Додано функцію Mi Pay «картка-код», підтримується оплата банківською карткою за QR-кодом"
     ]
   },
   "logs_pl": {
+    "System": [
+      "Nowe: Edytowanie, przesyłanie i dostosowywanie Twoich zrzutów ekranu jest teraz znacznie łatwiejsze.",
+      "Dodano przewodnik po długich zrzutach ekranu",
+      "Naprawiono problem, w którym wskazówka dotycząca długiego zrzutu ekranu pojawiała się wielokrotnie"
+    ],
+    "Ekran blokady, pasek stanu, pasek powiadomień": [
+      "Naprawiono problem przypadkowego dotknięcia panelu powiadomień podczas połączenia"
+    ],
     "Ustawienia": [
       "Nowe: Szybkie odpowiedzi dla komunikatorów"
+    ],
+    "Ostatnie zadania": [
+      "Dodano: możliwość rozmycia podglądu niektórych aplikacji w ostatnich zadaniach"
+    ],
+    "Blokowanie spamu": [
+      "Naprawiono nieprawidłowe przechwytywanie w regionie Chengdu/Ziyang",
+      "Naprawiono błąd: na stronie szczegółów blokowania połączeń nie wyświetlał się typ oznaczenia.",
+      "Naprawiono problem z wyświetlaniem dużych czcionek w trybie ciemnym"
+    ],
+    "Usługa w chmurze Xiaomi": [
+      "Dodano: przy wyłączaniu przez użytkownika funkcji Znajdź urządzenie wyświetlane jest ostrzeżenie o usunięciu kart bankowych MiPay i wirtualnych kart drzwi",
+      "Optymalizacja: poprawiono terminowość i wydajność synchronizacji",
+      "Naprawiono problem z brakiem reakcji po naciśnięciu przycisku „Synchronizuj teraz”",
+      "Naprawiono problem z komunikatem o zatrzymaniu usług w chmurze podczas wylogowywania z konta Xiaomi"
+    ],
+    "MI Portfel": [
+      "Dodano funkcję łączenia karty i kodu Mi Pay, obsługa płatności kartą bankową za pomocą kodu QR"
     ]
   },
   "logs_de": {
+    "System": [
+      "Neu: Bearbeiten, Teilen und Anpassen von Screenshots ist jetzt viel einfacher",
+      "Anleitung für lange Screenshots hinzugefügt",
+      "Problem behoben, bei dem der Hinweis für lange Screenshots mehrfach angezeigt wurde"
+    ],
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
+      "Das Problem versehentlicher Berührungen der Benachrichtigungsleiste während Anrufen wurde behoben"
+    ],
     "Einstellungen": [
       "Neu: Schnellantworten für Messaging-Apps"
+    ],
+    "Letzte Aufgaben": [
+      "Neu: Vorschauen einiger Apps in „Zuletzt verwendet“ können jetzt unscharf dargestellt werden"
+    ],
+    "Spam-Blockierung": [
+      "Fehlerhafte Abfangung in der Region Chengdu/Ziyang behoben",
+      "Fehler behoben: Auf der Detailseite für Anrufsperren wurde der Markierungstyp nicht angezeigt.",
+      "Problem mit der Anzeige großer Schrift im Dunkelmodus behoben"
+    ],
+    "Xiaomi Cloud-Dienst": [
+      "Neu: Beim Deaktivieren von „Gerät finden“ wird ein Hinweis angezeigt, dass MiPay-Bankkarten und virtuelle Türkarten gelöscht werden",
+      "Optimierung: Aktualität und Effizienz der Synchronisierung verbessert",
+      "Problem behoben, bei dem die Schaltfläche „Jetzt synchronisieren“ nicht reagierte",
+      "Behebung: Beim Abmelden vom Xiaomi-Konto wurde angezeigt, dass Cloud-Dienste nicht mehr ausgeführt werden"
+    ],
+    "Xiaomi Wallet": [
+      "Mi Pay-Funktion für Karten- und Code-Integration hinzugefügt, unterstützt QR-Code-Zahlung mit Bankkarte"
     ]
   },
   "logs_fr": {
+    "Système": [
+      "Nouveau: Editer, partager, et personnaliser vos captures d'écran est maintenant beaucoup plus facile",
+      "Ajout du guide des captures d'écran longues",
+      "Correction du problème où l’astuce de capture d’écran longue s’affichait plusieurs fois"
+    ],
+    "Écran de verrouillage, barre d’état, barre de notifications": [
+      "Correction du problème de toucher accidentel du panneau de notifications pendant les appels"
+    ],
     "Paramètres": [
       "Nouveau: Réponses rapides pour les applications de messagerie"
+    ],
+    "Tâches récentes": [
+      "Nouveau : vous pouvez désormais flouter les aperçus de certaines applications dans les tâches récentes"
+    ],
+    "Liste noire": [
+      "Correction de l'interception anormale dans la région de Chengdu/Ziyang",
+      "Correction d’un bug : la page de détails du blocage des appels n’affichait pas le type de marquage.",
+      "Correction du problème d'affichage des grandes polices en mode sombre"
+    ],
+    "Service cloud Xiaomi": [
+      "Ajout : lors de la désactivation de Localiser mon appareil, un avertissement indique que les cartes bancaires MiPay et les cartes de porte virtuelles seront supprimées",
+      "Optimisation : amélioration de la rapidité et de l'efficacité de la synchronisation",
+      "Correction du problème où le bouton « Synchroniser maintenant » ne répondait pas",
+      "Correction : un message indiquait l’arrêt des services cloud lors de la déconnexion du compte Xiaomi"
+    ],
+    "MI Portefeuille": [
+      "Ajout de la fonction d'intégration carte-code Mi Pay, prise en charge du paiement par QR code avec carte bancaire"
     ]
   },
   "logs_it": {
+    "Sistema": [
+      "Nuovo: Modificare, condividere e personalizzare i tuoi screenshot è ora molto più semplice",
+      "Aggiunta guida per screenshot lunghi",
+      "Risolto il problema per cui il suggerimento per lo screenshot lungo compariva più volte"
+    ],
+    "Schermata di blocco, barra di stato, barra delle notifiche": [
+      "Risolto il problema dei tocchi accidentali sul pannello delle notifiche durante le chiamate"
+    ],
     "Impostazioni": [
       "Nuovo: Risposte rapide per le app di messaggistica"
+    ],
+    "Recenti": [
+      "Novità: ora puoi sfocare le anteprime di alcune app nelle attività recenti"
+    ],
+    "Lista Blocchi": [
+      "Corretto il blocco anomalo nella regione di Chengdu/Ziyang",
+      "Risolto un bug: nella pagina dei dettagli del blocco chiamate non veniva mostrato il tipo di contrassegno.",
+      "Risolto problema di visualizzazione dei caratteri grandi in modalità scura"
+    ],
+    "Servizio cloud Xiaomi": [
+      "Aggiunto: quando l'utente disattiva Trova dispositivo, viene mostrato un avviso che le carte bancarie MiPay e le carte porta virtuali verranno eliminate",
+      "Ottimizzazione: migliorata la tempestività e l'efficienza della sincronizzazione",
+      "Risolto il problema per cui il pulsante \"Sincronizza ora\" non rispondeva",
+      "Correzione: all’uscita dall’account Xiaomi veniva mostrato che i servizi cloud si erano fermati"
+    ],
+    "MI Portafoglio": [
+      "Aggiunta funzione di integrazione carta-codice Mi Pay, supporto al pagamento tramite QR code con carta bancaria"
     ]
   },
   "logs_es": {
-    "Ajustes": [
+    "Sistema": [
+      "Nuevo: Editar, compartir y personalizar tus capturas de pantalla ahora es mucho más fácil",
+      "Añadida guía de capturas de pantalla largas",
+      "Se corrigió el problema por el que el aviso de captura de pantalla larga aparecía varias veces"
+    ],
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Corregido el problema de toques accidentales en el panel de notificaciones durante las llamadas"
+    ],
+    "Configuración": [
       "Nuevo: Respuestas rápidas para aplicaciones de mensajería"
+    ],
+    "Recientes": [
+      "Novedad: ahora puedes difuminar las vistas previas de algunas apps en las tareas recientes"
+    ],
+    "Lista de bloqueo": [
+      "Corregida la interceptación anómala en la región de Chengdu/Ziyang",
+      "Se corrigió un error: la página de detalles del bloqueo de llamadas no mostraba el tipo de marcado.",
+      "Se corrige el problema de visualización de fuentes grandes en modo oscuro"
+    ],
+    "Servicio en la nube de Xiaomi": [
+      "Añadido: al desactivar Buscar dispositivo, se avisa de que se eliminarán las tarjetas bancarias de MiPay y las tarjetas de puerta virtuales",
+      "Optimización: mejorada la puntualidad y la eficiencia de la sincronización",
+      "Se corrigió el problema por el que el botón \"Sincronizar ahora\" no respondía",
+      "Corrección: al cerrar sesión en la cuenta Xiaomi se mostraba que los servicios en la nube se detuvieron"
+    ],
+    "Monedero de Xiaomi": [
+      "Añadida la función de integración tarjeta-código de Mi Pay, compatible con pago por código QR con tarjeta bancaria"
     ]
   },
   "logs_pt": {
+    "Sistema": [
+      "Novo: Editar, compartilhar e personalizar suas capturas de tela está muito mais fácil agora",
+      "Adicionado guia de capturas de tela longas",
+      "Corrigido o problema em que a dica de captura de tela longa aparecia várias vezes"
+    ],
+    "Tela de bloqueio, barra de status, barra de notificações": [
+      "Corrigido o problema de toques acidentais no painel de notificações durante chamadas"
+    ],
     "Configurações": [
       "Novo: Respostas rápidas para apps de mensagens"
+    ],
+    "Tarefas recentes": [
+      "Novo: agora é possível desfocar as prévias de alguns apps nas tarefas recentes"
+    ],
+    "Lista de bloqueio": [
+      "Corrigida a interceptação anormal na região de Chengdu/Ziyang",
+      "Corrigido um bug: a página de detalhes do bloqueio de chamadas não mostrava o tipo de marcação.",
+      "Corrigido problema de exibição de fontes grandes no modo escuro"
+    ],
+    "Serviço de nuvem Xiaomi": [
+      "Adicionado: ao desativar Localizar dispositivo, é exibido um aviso de que os cartões bancários MiPay e os cartões de porta virtuais serão excluídos",
+      "Otimização: melhorada a pontualidade e a eficiência da sincronização",
+      "Corrigido o problema em que o botão \"Sincronizar agora\" não respondia",
+      "Correção: ao sair da conta Xiaomi, era exibido que os serviços na nuvem pararam de funcionar"
+    ],
+    "MI Carteira": [
+      "Adicionada a funcionalidade de integração cartão-código do Mi Pay, suporta pagamento por QR code com cartão bancário"
     ]
   },
   "logs_tr": {
+    "Sistem": [
+      "Yeni: Ekran görüntülerinizi düzenleme, paylaşma ve özelleştirme artık çok daha kolay",
+      "Uzun ekran görüntüsü kılavuzu eklendi",
+      "Uzun ekran görüntüsü kılavuzunun birden çok kez açılması sorunu düzeltildi"
+    ],
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Görüşme sırasında bildirim paneline yanlışlıkla dokunma sorunu giderildi"
+    ],
     "Ayarlar": [
       "Yeni: Mesajlaşma uygulamaları için hızlı yanıtlar"
+    ],
+    "Son kullanılanlar": [
+      "Yeni: Son görevlerde bazı uygulamaların önizlemelerini artık bulanıklaştırabilirsiniz"
+    ],
+    "Engelli listesi": [
+      "Chengdu/Ziyang bölgesindeki anormal engelleme düzeltildi",
+      "Hata düzeltildi: Arama engelleme ayrıntıları sayfasında işaret türü görüntülenmiyordu.",
+      "Koyu modda büyük yazı tipi görüntüleme sorunu düzeltildi"
+    ],
+    "Xiaomi Bulut Hizmeti": [
+      "Eklendi: Kullanıcı Cihazımı Bul'u kapattığında MiPay banka kartlarının ve sanal kapı kartlarının silineceği uyarısı gösterilir",
+      "Optimizasyon: Senkronizasyon zamanlaması ve verimliliği iyileştirildi",
+      "\"Şimdi senkronize et\" düğmesinin yanıt vermemesi sorunu giderildi",
+      "Düzeltme: Xiaomi hesabından çıkış yaparken bulut hizmetlerinin durduğu bildiriliyordu"
+    ],
+    "MI Cüzdan": [
+      "Mi Pay kart-kod entegrasyon özelliği eklendi, banka kartıyla QR kod ödemesi destekleniyor"
     ]
   },
   "logs_id": {
+    "Sistem": [
+      "Baru: Mengubah, berbagi, dan mengkustomisasi screenshot menjadi lebih mudah sekarang",
+      "Panduan tangkapan layar panjang ditambahkan",
+      "Memperbaiki masalah panduan tangkapan layar panjang yang muncul beberapa kali"
+    ],
+    "Layar kunci, bilah status, bilah notifikasi": [
+      "Memperbaiki masalah sentuhan tidak sengaja pada panel notifikasi saat panggilan"
+    ],
     "Pengaturan": [
       "Baru: Balasan cepat pada aplikasi pesan"
+    ],
+    "Tugas Terbaru": [
+      "Baru: Sekarang Anda dapat memburamkan pratinjau beberapa aplikasi di Tugas terbaru"
+    ],
+    "Pemblokiran spam": [
+      "Memperbaiki intersepsi abnormal di wilayah Chengdu/Ziyang",
+      "Memperbaiki bug di mana halaman detail pemblokiran panggilan tidak menampilkan jenis label.",
+      "Memperbaiki masalah tampilan font besar dalam mode gelap"
+    ],
+    "Layanan Cloud Xiaomi": [
+      "Ditambahkan: saat pengguna menonaktifkan Temukan Perangkat, muncul peringatan bahwa kartu bank MiPay dan kartu pintu virtual akan dihapus",
+      "Optimasi: meningkatkan ketepatan waktu dan efisiensi sinkronisasi",
+      "Memperbaiki masalah tombol \"Sinkronkan sekarang\" tidak merespons",
+      "Perbaikan: layanan cloud berhenti berjalan saat keluar dari akun Xiaomi"
+    ],
+    "Xiaomi Wallet": [
+      "Fitur integrasi kartu-kode Mi Pay ditambahkan, mendukung pembayaran QR code dengan kartu bank"
     ]
   },
   "logs_vi": {
+    "Hệ thống": [
+      "Mới: Trải nghiệm chụp màn hình hoàn toàn mới, đơn giản hóa quy trình chỉnh sửa, chia sẻ và chụp ảnh màn hình dài",
+      "Đã thêm hướng dẫn chụp màn hình dài",
+      "Đã khắc phục sự cố hướng dẫn chụp ảnh màn hình dài hiển thị nhiều lần"
+    ],
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Đã khắc phục sự cố vô tình chạm vào bảng thông báo trong khi gọi"
+    ],
     "Cài đặt": [
       "New: Quick replies for messaging apps"
+    ],
+    "Tác vụ gần đây": [
+      "Mới: Bạn có thể làm mờ bản xem trước của một số ứng dụng trong Tác vụ gần đây"
+    ],
+    "Chặn spam": [
+      "Sửa lỗi chặn bất thường tại khu vực Chengdu/Ziyang",
+      "Đã sửa lỗi trang chi tiết chặn cuộc gọi không hiển thị loại nhãn.",
+      "Đã sửa lỗi hiển thị phông chữ lớn trong chế độ tối"
+    ],
+    "Dịch vụ đám mây Xiaomi": [
+      "Đã thêm: khi người dùng tắt Tìm thiết bị, hiển thị cảnh báo thẻ ngân hàng MiPay và thẻ cửa ảo sẽ bị xóa",
+      "Tối ưu hóa: cải thiện tính kịp thời và hiệu quả đồng bộ hóa",
+      "Đã sửa lỗi nút \"Đồng bộ ngay\" không phản hồi",
+      "Sửa lỗi: dịch vụ đám mây ngừng hoạt động khi đăng xuất khỏi tài khoản Xiaomi"
+    ],
+    "Tiền túi Xiaomi": [
+      "Đã thêm tính năng tích hợp thẻ và mã Mi Pay, hỗ trợ thanh toán bằng mã QR với thẻ ngân hàng"
     ]
   },
   "logs_th": {
+    "ระบบ": [
+      "ใหม่: ประสบการณ์สกรีนช็อตใหม่ ช่วยให้การแก้ไข แชร์ และการจับภาพหน้าจอยาวง่ายขึ้น",
+      "เพิ่มคำแนะนำการจับภาพหน้าจอยาว",
+      "แก้ไขปัญหาคู่มือการจับภาพหน้าจอยาวแสดงขึ้นหลายครั้ง"
+    ],
+    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
+      "แก้ไขปัญหาการแตะแผงการแจ้งเตือนโดยไม่ตั้งใจระหว่างการโทร"
+    ],
     "การตั้งค่า": [
       "New: Quick replies for messaging apps"
+    ],
+    "งานล่าสุด": [
+      "ใหม่: คุณสามารถเบลอตัวอย่างแอปบางแอปในงานล่าสุดได้แล้ว"
+    ],
+    "บล็อกสแปม": [
+      "แก้ไขการบล็อกผิดปกติในพื้นที่เฉิงตู/จื่อหยาง",
+      "แก้ไขข้อบกพร่องที่หน้ารายละเอียดการบล็อกสายเรียกเข้าไม่แสดงประเภทเครื่องหมาย",
+      "แก้ไขปัญหาการแสดงผลตัวอักษรขนาดใหญ่ในโหมดมืด"
+    ],
+    "บริการคลาวด์ Xiaomi": [
+      "เพิ่ม: เมื่อผู้ใช้ปิดค้นหาอุปกรณ์ จะแจ้งเตือนว่าบัตรธนาคาร MiPay และบัตรประตูเสมือนจะถูกลบ",
+      "การเพิ่มประสิทธิภาพ: ปรับปรุงความทันเวลาและประสิทธิภาพการซิงค์",
+      "แก้ไขปัญหาที่ปุ่ม \"ซิงค์ทันที\" ไม่ตอบสนอง",
+      "แก้ไขปัญหาที่แสดงว่าบริการคลาวด์หยุดทำงานเมื่อออกจากบัญชี Xiaomi"
+    ],
+    "MI กระเป๋าเงิน": [
+      "เพิ่มฟีเจอร์รวมบัตรและโค้ด Mi Pay รองรับการชำระเงินด้วย QR code ผ่านบัตรธนาคาร"
     ]
   },
   "logs_ar": {
+    "النظام": [
+      "جديد أصبح تعديل ومشاركة وتخصيص لقطات الشاشة أسهل بكثير الآن",
+      "تمت إضافة دليل لقطة الشاشة الطويلة",
+      "إصلاح مشكلة ظهور إرشاد لقطة الشاشة الطويلة عدة مرات"
+    ],
+    "شاشة القفل، شريط الحالة، شريط الإشعارات": [
+      "إصلاح مشكلة اللمس العرضي للوحة الإشعارات أثناء المكالمات"
+    ],
     "الإعدادات": [
       "جديد الردود السريعة على تطبيقات المراسلة"
+    ],
+    "المهام الأخيرة": [
+      "جديد: يمكنك الآن تمويه معاينات بعض التطبيقات في المهام الأخيرة"
+    ],
+    "حظر المضايقات": [
+      "إصلاح اعتراض غير طبيعي في منطقة تشنغدو/زيانغ",
+      "إصلاح خطأ حيث لا تعرض صفحة تفاصيل حظر المكالمات نوع العلامة.",
+      "إصلاح مشكلة عرض الخط الكبير في الوضع الداكن"
+    ],
+    "خدمة Xiaomi السحابية": [
+      "إضافة: عند إيقاف المستخدم \"العثور على الجهاز\"، تظهر رسالة تفيد بحذف بطاقات MiPay البنكية وبطاقات الأبواب الافتراضية",
+      "التحسين: تحسين توقيت وكفاءة المزامنة",
+      "تم إصلاح مشكلة عدم استجابة زر \"المزامنة الآن\"",
+      "إصلاح: توقف خدمات السحابة عن العمل عند تسجيل الخروج من حساب Xiaomi"
+    ],
+    "MI محفظة": [
+      "تمت إضافة ميزة دمج البطاقة والرمز في Mi Pay، وتدعم الدفع برمز QR باستخدام البطاقة المصرفية"
     ]
   },
   "logs_in": {
+    "सिस्टम": [
+      "नया: स्क्रीनशॉट का नया अनुभव, संपादन, साझा करना और लंबे स्क्रीनशॉट की प्रक्रिया को आसान बनाता है",
+      "लंबे स्क्रीनशॉट के लिए गाइड जोड़ा गया",
+      "लंबे स्क्रीनशॉट के गाइड के कई बार दिखने की समस्या ठीक की गई"
+    ],
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
+      "कॉल के दौरान सूचना पैनल को गलती से छूने की समस्या ठीक की गई"
+    ],
     "सेटिंग्स": [
       "New: Quick replies for messaging apps"
+    ],
+    "हाल के कार्य": [
+      "नया: अब आप हाल के कार्यों में कुछ ऐप्स के पूर्वावलोकन को धुंधला कर सकते हैं"
+    ],
+    "Xiaomi क्लाउड सेवा": [
+      "जोड़ा गया: जब उपयोगकर्ता डिवाइस खोजें बंद करता है, तो MiPay बैंक कार्ड और वर्चुअल डोर कार्ड हटाए जाने का संकेत दिया जाता है",
+      "अनुकूलन: सिंक समयबद्धता और दक्षता में सुधार",
+      "\"अभी सिंक करें\" बटन के प्रतिक्रिया न देने की समस्या ठीक की गई",
+      "सुधार: Xiaomi खाते से साइन आउट करते समय क्लाउड सेवाएँ बंद होने का संदेश दिखना"
+    ],
+    "MI वॉलेट": [
+      "Mi Pay कार्ड-कोड एकीकरण सुविधा जोड़ी गई, बैंक कार्ड से QR कोड भुगतान का समर्थन करता है"
     ]
   },
   "logs_ug": {

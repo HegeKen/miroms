@@ -1,25 +1,25 @@
 {
   "logs_zh": {
     "系统": [
-      "修复 在某些情况下，影响使用流畅性的问题",
-      "修复 微信界面锁屏解锁后，快捷按键区域显示异常的问题",
-      "修复 人脸解锁失灵与成功率低的问题"
+      "修复了一个问题：该问题在某些情况下会导致用户使用体验不顺畅（即操作过程出现卡顿或延迟）。",
+      "在解锁屏幕后（该屏幕在使用微信时被锁定了），快捷方式的功能出现了问题/无法正常使用。",
+      "关于面部解锁功能出现的问题（如无法正常使用或解锁失败等）……"
     ],
     "相机": [
       "修复 影响相机使用稳定性的问题"
     ],
     "备份": [
-      "修复 从U盘恢复手机中未安装应用，图标显示异常的问题"
+      "当从 USB 设备中恢复那些并未实际安装在设备上的应用程序时，这些应用程序的图标无法被正确显示。"
     ],
     "设置": [
-      "修复 使用设置搜索显示停止运行的问题",
-      "修复 设置同步显示两个添加个人账户选项的问题",
-      "设置]-[我的设备]-[使用说明] 更改为  [重要安全信息]",
-      "设置]-[我的设备]-[使用说明] 更改为 [重要安全信息]"
+      "在使用了内置搜索功能后，“恢复设置”（Restore Settings）应用程序停止了正常工作。",
+      "在“设置”选项中，提供了两种用于添加个人账户的方法（即两种添加个人账户的选项）。",
+      "“设置”→“我的设备”→“用户指南”的内容已被更改为“重要安全信息”。",
+      "重要安全信息请参阅“设置”>“关于手机”中的相关内容。"
     ],
     "文件管理器": [
-      "修复  重命名或者解密后的文件无法搜索的问题",
-      "修复 重命名或者解密后的文件无法搜索的问题"
+      "恢复操作失败：无法通过搜索找到那些已被重命名的文件或已被解密的文件。",
+      "恢复操作失败：无法通过搜索找到那些已被重命名或解密的项目。"
     ],
     "录音机": [
       "修复 设置图标显示异常的问题"
@@ -29,447 +29,575 @@
     ]
   },
   "logs_en": {
-    "Backup": [
-      "Restore App icons weren't displayed correctly when apps that weren't installed were restored from a USB device"
-    ],
-    "File Explorer": [
-      "Restore Couldn't find renamed or decrypted items using search"
-    ],
-    "Recorder": [
-      "Restore The settings icon wasn't displayed correctly"
-    ],
     "System": [
-      "Restore Issues with shortcuts after unlocking the screen that was locked while using WeChat",
-      "Restore Issues with Face unlock"
+      "Fixed an issue that, in certain cases, affected the smoothness of use.",
+      "Fixed the issue where, after unlocking the WeChat interface from screen lock, the shortcut key area displayed incorrectly.",
+      "Fix the issues with face unlocking not working properly and having a low success rate."
+    ],
+    "Camera": [
+      "Fixed the issue that affected the stability of camera usage."
+    ],
+    "Backup": [
+      "Fixed the issue where applications not installed on the phone are displayed with abnormal icons when restored from a USB drive."
     ],
     "Settings": [
-      "Restore The Settings app stopped working after built-in search was used",
-      "Restore Two options for adding personal accounts were shown in the Settings",
-      "Introducing important safety information in Settings > About phone"
+      "Fixed the issue where using the search function in the settings would display information about processes that have stopped running.",
+      "Fixed the issue with the settings not displaying both options for adding personal accounts simultaneously.",
+      "[Settings]-[My device]-[User guide] changed to [Important safety information]",
+      "Settings -> [My Devices] -> [Instructions for Use] should be changed to [Important Security Information]."
+    ],
+    "File Explorer": [
+      "Fixed the issue where files that have been renamed or decrypted cannot be searched for."
+    ],
+    "Recorder": [
+      "Fixed the issue with abnormal display of the setup icon."
     ],
     "Other": [
       "Improved system security and stability"
     ]
   },
   "logs_zh_tw": {
-    "備份": [
-      "修復從 USB 隨身碟還原手機中未安裝的應用程式時，圖示顯示異常的問題"
+    "系統": [
+      "修復 在某些情況下，影響使用流暢性的問題",
+      "修复了微信界面在锁屏状态解除后，快捷键区域显示异常的问题。",
+      "修复了人脸识别解锁功能失效以及识别成功率较低的问题。"
     ],
-    "檔案管理員": [
-      "修復重新命名或解密後的檔案無法搜尋的問題",
+    "相機": [
+      "修復影響相機使用穩定性的問題"
+    ],
+    "备份（Backup）": [
+      "已修复从 U 盘恢复到手机上的应用程序时出现的以下问题：这些应用程序未被正确安装，其图标显示异常（即图标的形状或样式不正确）。"
+    ],
+    "设置": [
+      "已修复在使用“设置”功能进行搜索时，出现无法显示已停止运行的程序的问题。",
+      "已修复“设置”功能中同时显示两个用于添加个人账户的选项的问题。",
+      "在“设置”→“我的设备”→“使用说明”中，将该内容更改为“重要安全信息”。",
+      "在“设置” → “我的设备” → “使用说明”中，将该内容的标题更改为“重要安全信息”。"
+    ],
+    "文件管理器": [
+      "修复了文件被重命名或解密后无法被搜索的问题。",
       "修正 重新命名或解密後檔案無法搜尋的問題"
     ],
-    "錄音機": [
-      "修復 設定圖示顯示異常的問題"
-    ],
-    "系統": [
-      "修復在微信介面鎖屏後解鎖時，快捷按鍵區域顯示異常的問題",
-      "修復 人臉解鎖失靈與成功率低的問題"
-    ],
-    "設定": [
-      "修正 使用設定搜尋時顯示停止運作的問題",
-      "修復 設定同步顯示兩個新增個人帳戶選項的問題",
-      "設定]-[我的裝置]-[使用說明] 更改為 [重要安全資訊]"
+    "录音机": [
+      "已修复设置图标显示异常的问题。"
     ],
     "其他": [
       "Improved system security and stability"
     ]
   },
   "logs_ja": {
-    "バックアップ": [
-      "USBドライブからスマートフォンに未インストールのアプリを復元する際、アイコンが正しく表示されない問題を修正"
-    ],
-    "ファイルマネージャー": [
-      "名前変更または復号したファイルを検索できない問題を修正",
-      "名前を変更したファイルまたは復号したファイルを検索できない問題を修正"
-    ],
-    "レコーダー": [
-      "設定アイコンが正しく表示されない問題を修正"
-    ],
     "システム": [
-      "WeChat画面で画面ロック後にロック解除した際、ショートカットキー領域が異常表示される問題を修正",
+      "一部の状況下で使い勝手に影響を与える問題を修正しました。",
+      "WeChatのインターフェースでロック画面から解除した後、ショートカットキー領域が異常に表示される問題を修正しました。",
       "顔認証が機能しない問題と成功率が低い問題を修正"
+    ],
+    "カメラ": [
+      "カメラの使用安定性に影響する問題を修正しました"
+    ],
+    "バックアップ": [
+      "USBメモリからスマートフォンにアプリを復元した際に、インストールされていないアプリのアイコンが異常に表示される問題を修正しました。"
     ],
     "設定": [
       "設定の検索を使用すると停止する問題を修正",
-      "設定の同期で個人アカウントを追加するオプションが2つ表示される問題を修正",
-      "設定]-[デバイス情報]-[使用説明] を [重要な安全情報] に変更"
+      "個人アカウントを2つ追加するオプションが同期表示されない問題を修正しました。",
+      "【設定】 → 【私のデバイス】 → 【使用説明】 を 【重要なセキュリティ情報】 に変更してください。"
+    ],
+    "ファイルマネージャー": [
+      "ファイルの名前を変更したり復号化した後に、そのファイルが検索できなくなる問題を修正しました。",
+      "ファイルの名前を変更したり復号化した後に検索できなくなる問題を修正しました。"
+    ],
+    "レコーダー": [
+      "設定アイコンが正しく表示されない問題を修正"
     ],
     "その他": [
       "システムのセキュリティと安定性の向上"
     ]
   },
   "logs_ko": {
+    "시스템": [
+      "특정 상황에서 사용 편의성에 영향을 미치는 문제를 수정했습니다.",
+      "WeChat 인터페이스의 잠금 해제 후 단축키 영역이 비정상적으로 표시되는 문제를 수정했습니다.",
+      "얼굴 인식을 통한 잠금 해제 기능이 제대로 작동하지 않거나 성공률이 낮은 문제를 수정했습니다."
+    ],
+    "카메라": [
+      "카메라 사용 안정성에 영향을 미치는 문제를 수정했습니다"
+    ],
     "백업": [
       "USB 드라이브에서 휴대폰에 설치되지 않은 앱을 복원할 때 아이콘이 비정상적으로 표시되는 문제를 수정했습니다"
     ],
-    "파일 관리자": [
-      "이름 변경 또는 암호 해제된 파일을 검색할 수 없는 문제 수정",
-      "이름이 변경되었거나 복호화된 파일을 검색할 수 없는 문제를 수정했습니다"
-    ],
-    "녹음기": [
-      "설정 아이콘이 비정상적으로 표시되는 문제 수정"
-    ],
-    "시스템": [
-      "WeChat 화면에서 화면 잠금 후 잠금 해제 시 바로가기 키 영역이 비정상적으로 표시되는 문제 수정",
-      "얼굴 인식이 작동하지 않고 인식 성공률이 낮은 문제를 수정"
-    ],
     "설정": [
-      "설정 검색 사용 시 앱이 중지되는 문제를 수정",
-      "설정 동기화에서 개인 계정 추가 옵션이 두 개 표시되는 문제 수정",
+      "설정을 사용하여 검색할 때 중단된 프로그램이 표시되는 문제를 수정했습니다.",
+      "개인 계정을 두 개 추가하는 옵션이 동기화되어 함께 표시되지 않는 문제를 수정했습니다.",
+      "[설정]-[내 기기]-[사용 설명]이 [중요 안전 정보]로 변경됨",
       "설정]-[내 기기]-[사용 설명]을 [중요 안전 정보]로 변경"
+    ],
+    "파일 관리자": [
+      "이름을 바꾸거나 암호를 해제한 파일을 검색할 수 없는 문제가 수정되었습니다."
+    ],
+    "레코더": [
+      "설정 아이콘이 비정상적으로 표시되는 문제 수정"
     ],
     "기타": [
       "시스템 보안 및 안정성 개선"
     ]
   },
   "logs_ru": {
-    "Резервное копирование": [
-      "Исправлена проблема с некорректным отображением значков при восстановлении из USB-накопителя приложений, не установленных на телефоне."
-    ],
-    "Файловый менеджер": [
-      "Исправлена проблема с поиском переименованных или расшифрованных файлов.",
-      "Исправлена проблема, из-за которой не удавалось найти переименованные или расшифрованные файлы"
-    ],
-    "Диктофон": [
-      "Исправлена проблема с некорректным отображением значка настроек"
-    ],
     "Система": [
-      "Исправлена проблема с некорректным отображением области клавиш быстрого доступа после разблокировки экрана в WeChat",
-      "Исправлена проблема с неработающей разблокировкой по лицу и низкой успешностью распознавания"
+      "Устранено поведение, которое в некоторых случаях могло снижать плавность работы программы.",
+      "Исправлено поведение области быстрых клавиш после разблокировки экрана в WeChat: она отображалась некорректно.",
+      "Устранены проблемы с невозможностью разблокировки устройства по распознаванию лица, а также низким уровнем успешности этого процесса."
+    ],
+    "Камера": [
+      "Исправлена проблема, влияющая на стабильность работы камеры"
+    ],
+    "Резервное копирование": [
+      "Устранено неполадки при восстановлении приложений с флеш-накопителя на телефон: иконы приложений отображаются некорректно."
     ],
     "Настройки": [
-      "Исправлена проблема с остановкой приложения при использовании поиска в Настройках",
-      "Исправлена проблема, из-за которой в синхронизации настроек отображались два параметра добавления личной учетной записи.",
-      "Настройки]-[Мое устройство]-[Инструкция] изменено на [Важная информация о безопасности]"
+      "Устранено неправильное отображение результатов поиска с использованием настроек при попытке найти элементы, которые прекратили свою работу.",
+      "Устранено неполадка с настройками синхронизации отображения двух опций для добавления личных учетных записей.",
+      "[Настройки]-[Мое устройство]-[Инструкция по эксплуатации] изменено на [Важная информация по безопасности]",
+      "Параметры → Мои устройства → Инструкция по использованию → Название раздела изменить на «Важная информация о безопасности»."
+    ],
+    "Проводник файлов": [
+      "Устранено проблему, при которой файлы после переименования или декриптирования не отображались в результатах поиска."
+    ],
+    "Диктофон": [
+      "Устранено неправильное отображение иконок при настройках."
     ],
     "Другое": [
       "Улучшение безопасности и стабильности системы"
     ]
   },
   "logs_uk": {
-    "Резервне копіювання": [
-      "Виправлено проблему з неправильним відображенням значків під час відновлення з USB-накопичувача програм, не встановлених на телефоні."
+    "Система": [
+      "Виправлено проблему, яка у деяких випадках впливала на плавність користування програмою.",
+      "Виправлено проблему з некоректним відображенням зони швидких клавіш після розблокування екрана у інтерфейсі WeChat.",
+      "Виправлено проблеми з некоректним функціонуванням розблокування за допомогою обличчя та низьким рівнем успішності цього процесу."
     ],
-    "Файловий менеджер": [
-      "Виправлено проблему з пошуком перейменованих або розшифрованих файлів.",
-      "Виправлено проблему, через яку не вдавалося знайти перейменовані або розшифровані файли"
+    "Камера": [
+      "Виправлено проблему, що впливає на стабільність роботи камери"
+    ],
+    "Резервне копіювання": [
+      "Виправлено проблему з відновленням додатків з флеш-накопичувача на телефон, коли додатки не були встановлені, а їх іконки відображалися некоректно."
+    ],
+    "Налаштування": [
+      "Виправлено проблему з відображенням результатів пошуку за налаштуваннями, які припинили свою роботу.",
+      "Виправлено проблему з налаштуванням синхронізованого відображення двох опцій для додавання особистих облікових записів.",
+      "[Налаштування]-[Мій пристрій]-[Інструкція з експлуатації] змінено на [Важлива інформація з безпеки]",
+      "Налаштування]-[Мій пристрій]-[Інструкція] змінено на [Важлива інформація про безпеку]"
+    ],
+    "Провідник файлів": [
+      "Виправлено проблему, коли файли після перейменування або декодування не можна було знайти під час пошуку.",
+      "Виправлено проблему, коли файл після перейменування або декодування не піддається пошуку."
     ],
     "Диктофон": [
       "Виправлено проблему з нерозпізнаним відображенням значка налаштувань"
-    ],
-    "Система": [
-      "Виправлено проблему з ненормальним відображенням області клавіш швидкого доступу після розблокування екрана в WeChat",
-      "Виправлено проблему з несправною розблокуванням обличчям і низьким відсотком успіху"
-    ],
-    "Налаштування": [
-      "Виправлено проблему з зупинкою під час використання пошуку в Налаштуваннях",
-      "Виправлено проблему, через яку в синхронізації налаштувань відображалися два параметри додавання особистого облікового запису.",
-      "Налаштування]-[Мій пристрій]-[Інструкція] змінено на [Важлива інформація про безпеку]"
     ],
     "Інше": [
       "Покращення безпеки та стабільності системи"
     ]
   },
   "logs_pl": {
-    "Kopia zapasowa": [
-      "Naprawiono problem z nieprawidłowym wyświetlaniem ikon podczas przywracania z dysku USB aplikacji niezainstalowanych na telefonie."
-    ],
-    "Menedżer plików": [
-      "Naprawiono problem z wyszukiwaniem plików po zmianie nazwy lub odszyfrowaniu.",
-      "Naprawiono problem, przez który nie można było wyszukać plików o zmienionej nazwie lub odszyfrowanych"
-    ],
-    "Rejestrator": [
-      "Naprawiono problem z nieprawidłowym wyświetlaniem ikony ustawień"
-    ],
     "System": [
-      "Naprawiono problem z nieprawidłowym wyświetlaniem obszaru skrótów po odblokowaniu ekranu w WeChat",
-      "Naprawiono problem z niedziałającym odblokowywaniem twarzą i niskim współczynnikiem sukcesu"
+      "Poprawiono problemy, które w niektórych przypadkach wpływały na płynność obsługi.",
+      "Poprawiono problem z wyświetleniem elementów na panelu szybkiego dostępu po odblokowaniu ekranu w aplikacji WeChat.",
+      "Poprawiono problemy z nieefektywnym odkrywaniem oblicza przy rozszyfrowaniu oraz niskim stopniem skuteczności tego procesu."
+    ],
+    "Aparat": [
+      "Naprawiono problem wpływający na stabilność działania aparatu"
+    ],
+    "Kopia zapasowa": [
+      "Poprawiono problem z przywracaniem aplikacji niezainstalowanych na telefonie z pendrive’a, w wyniku czego ikony te wyświetlały się niepoprawnie."
     ],
     "Ustawienia": [
-      "Naprawiono problem z zatrzymywaniem działania podczas korzystania z wyszukiwania w Ustawieniach",
-      "Naprawiono problem z wyświetlaniem dwóch opcji dodawania konta osobistego w synchronizacji ustawień.",
+      "Poprawiono problem z wyświetlaniem wyników wyszukiwania w ustawieniach, jeśli program przestał się uruchamiać.",
+      "Urzędnicy naprawili problem z ustawieniami synchronizacji wyświetlania dwóch opcji dotyczących dodawania kont osobistych.",
+      "[Ustawienia]-[Moje urządzenie]-[Instrukcja obsługi] zmieniono na [Ważne informacje dotyczące bezpieczeństwa]",
       "Ustawienia]-[Moje urządzenie]-[Instrukcja] zmieniono na [Ważne informacje o bezpieczeństwie]"
     ],
-    "Inne": [
+    "Menedżer plików": [
+      "Poprawiono problem, gdy po przemianie nazwy lub dekrypcji pliku nie był możliwy jego wyszukiwanie.",
+      "Poprawiono problem, gdy po przemianie nazwy lubdekrytowaniu pliku nie był możliwy jego wyszukiwanie."
+    ],
+    "Kaseta nagrywająca": [
+      "Naprawiono problem z nieprawidłowym wyświetlaniem ikony ustawień"
+    ],
+    "Reszt": [
       "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
   "logs_de": {
-    "Sicherung": [
-      "Problem behoben, bei dem App-Symbole falsch angezeigt wurden, wenn nicht auf dem Telefon installierte Apps von einem USB-Laufwerk wiederhergestellt wurden."
-    ],
-    "Dateimanager": [
-      "Problem behoben, dass umbenannte oder entschlüsselte Dateien nicht gefunden werden konnten.",
-      "Problem behoben, bei dem umbenannte oder entschlüsselte Dateien nicht durchsucht werden konnten"
-    ],
-    "Rekorder": [
-      "Problem mit der fehlerhaften Anzeige des Einstellungssymbols behoben"
-    ],
     "System": [
-      "Problem mit fehlerhafter Anzeige des Schnellzugriffstastenbereichs nach dem Entsperren des Bildschirms in WeChat behoben",
-      "Problem mit nicht funktionierender Gesichtsentsperrung und niedriger Erfolgsrate behoben"
+      "Behebung eines Problems, das unter bestimmten Umständen die Benutzerfreundlichkeit beeinträchtigt.",
+      "Behebung des Problems, dass nach dem Entsperren des Bildschirms im WeChat-Interface der Bereich mit den Schnellzugriffstasten falsch angezeigt wird.",
+      "Behebung der Probleme mit fehlgeschlagenem Gesichtserkennungssystem zur Entsperrung sowie der niedrigen Erfolgsrate."
+    ],
+    "Kamera": [
+      "Behebung des Problems, das die Stabilität der Kamera-Nutzung beeinträchtigt."
+    ],
+    "Backup": [
+      "Behebung des Problems, bei dem nicht installierte Apps von einer USB-Stick auf das Handy zurückgeführt werden und deren Symbole fehlerhaft angezeigt werden."
     ],
     "Einstellungen": [
-      "Problem behoben, bei dem die Einstellungen bei der Suche beendet wurden",
+      "Behebung des Problems, bei dem nach Einstellungen gesucht wird und die Anzeige von nicht mehr laufenden Programmen gestoppt wird.",
       "Das Problem wurde behoben, dass in der Einstellungssynchronisierung zwei Optionen zum Hinzufügen eines persönlichen Kontos angezeigt wurden.",
+      "[Einstellungen]-[Mein Gerät]-[Bedienungsanleitung] geändert in [Wichtige Sicherheitsinformationen]",
       "Einstellungen]-[Mein Gerät]-[Anleitung] geändert zu [Wichtige Sicherheitsinformationen]"
+    ],
+    "Dateimanager": [
+      "Behebung des Problems, dass nach der Umbenennung oder Entschlüsselung von Dateien keine Suchfunktion mehr verfügbar ist."
+    ],
+    "Tonaufnahmegerät": [
+      "Behebung des Problems mit der abnormalen Anzeige der Einstellungsicons"
     ],
     "Sonstiges": [
       "Systemsicherheit und -stabilität verbessert"
     ]
   },
   "logs_fr": {
-    "Sauvegarde": [
-      "Correction du problème d’affichage incorrect des icônes lors de la restauration depuis une clé USB d’applications non installées sur le téléphone."
-    ],
-    "Gestionnaire de fichiers": [
-      "Correction du problème empêchant la recherche des fichiers renommés ou déchiffrés.",
-      "Correction du problème empêchant la recherche des fichiers renommés ou déchiffrés"
-    ],
-    "Enregistreur": [
-      "Correction du problème d'affichage anormal de l'icône Paramètres"
-    ],
     "Système": [
-      "Correction du problème d'affichage anormal de la zone des raccourcis après le déverrouillage de l'écran dans WeChat",
-      "Correction du problème de déverrouillage facial défaillant et de faible taux de réussite"
+      "Résolution du problème qui, dans certains cas, affectait la fluidité de l'utilisation.",
+      "Résolution du problème : après déverrouillage de l'écran verrouillé sur WeChat, la zone des raccourcis affiche un contenu anormal.",
+      "Réparation des problèmes de dysfonctionnement du déverrouillage par reconnaissance faciale ainsi que d'un taux de réussite trop bas."
+    ],
+    "Appareil photo": [
+      "Correction d'un problème affectant la stabilité de l'appareil photo"
+    ],
+    "Copie de sécurité": [
+      "Résolution du problème : les applications qui n’ont pas été installées sur le téléphone et qui sont récupérées depuis une clé USB affichent des icônes anormales."
     ],
     "Paramètres": [
-      "Correction du problème d'arrêt des Paramètres lors de l'utilisation de la recherche",
-      "Correction du problème où deux options d'ajout de compte personnel s'affichaient dans la synchronisation des paramètres.",
-      "Paramètres]-[Mon appareil]-[Instructions] remplacé par [Informations de sécurité importantes]"
+      "Corriger le problème de l'affichage des applications qui ont cessé de fonctionner lorsqu'on utilise la recherche par paramètres.",
+      "Problème résolu concernant l'affichage synchronisé des deux options permettant d'ajouter des comptes personnels.",
+      "[Paramètres]-[Mon appareil]-[Guide d'utilisation] remplacé par [Informations importantes sur la sécurité]",
+      "Paramètres → Mon appareil → Instructions d’utilisation → Modifiez le contenu pour qu’il affiche « Informations de sécurité importantes »."
+    ],
+    "Gestionnaire de fichiers": [
+      "Résolution du problème selon lequel les fichiers renommés ou déchiffrés ne peuvent pas être recherchés."
+    ],
+    "Enregistreur": [
+      "Problème résolu : l'affichage des icônes de configuration est maintenant correct."
     ],
     "Autre": [
       "Sécurité et stabilité du système améliorées"
     ]
   },
   "logs_it": {
-    "Gestione file": [
+    "Sistema": [
+      "Risolto il problema che, in alcune circostanze, influenzava la fluidità d’uso dell’applicazione.",
+      "Risolto il problema di visualizzazione anomala dell'area dei tasti di scelta rapida dopo lo sblocco dello schermo in WeChat",
+      "Risolto il problema del funzionamento errato del riconoscimento facciale per l’accesso e dell’elevata incidenza di fallimenti nel processo di sblocco."
+    ],
+    "macchina fotografica": [
+      "Risolto un problema che influiva sulla stabilità della fotocamera"
+    ],
+    "Backup": [
+      "Risolto il problema relativo al recupero di applicazioni non installate dal telefono tramite chiavetta USB: gli iconi delle applicazioni venivano visualizzati in modo errato."
+    ],
+    "Impostazioni": [
+      "Risolto il problema relativo alla visualizzazione degli elementi che hanno smesso di funzionare durante la ricerca effettuata utilizzando le impostazioni.",
+      "Risolto il problema relativo alle impostazioni per la sincronizzazione dell’visualizzazione delle due opzioni relative all’aggiunta di account personali.",
+      "[Impostazioni]-[Il mio dispositivo]-[Guida utente] modificato in [Informazioni importanti sulla sicurezza]",
+      "Impostazioni]-[Il mio dispositivo]-[Istruzioni] modificato in [Informazioni importanti sulla sicurezza]"
+    ],
+    "File Manager": [
       "Risolto il problema per cui i file rinominati o decifrati non potevano essere cercati.",
       "Risolto il problema per cui i file rinominati o decifrati non erano ricercabili"
     ],
     "Registratore": [
       "Risolto il problema di visualizzazione anomala dell'icona Impostazioni"
     ],
-    "Sistema": [
-      "Risolto il problema di visualizzazione anomala dell'area dei tasti di scelta rapida dopo lo sblocco dello schermo in WeChat",
-      "Risolto il problema del riconoscimento facciale non funzionante e del basso tasso di successo"
-    ],
-    "Impostazioni": [
-      "Risolto il problema che causava l'arresto delle Impostazioni durante la ricerca",
-      "Risolto il problema per cui nella sincronizzazione delle impostazioni venivano mostrate due opzioni per aggiungere un account personale.",
-      "Impostazioni]-[Il mio dispositivo]-[Istruzioni] modificato in [Informazioni importanti sulla sicurezza]"
-    ],
     "Altro": [
       "Maggiore sicurezza e stabilità di sistema"
     ]
   },
   "logs_es": {
-    "Copia de seguridad": [
-      "Se corrigió el problema de visualización incorrecta de los iconos al restaurar desde una unidad USB aplicaciones no instaladas en el teléfono."
+    "Sistema": [
+      "Se ha corregido el problema que, en ciertas situaciones, afectaba la fluidez del uso del sistema.",
+      "Se ha corregido el problema en la interfaz de WeChat: después de desbloquear la pantalla con el patrón, la zona de los botones rápidos no se muestra correctamente.",
+      "Se han corregido los problemas de fallo en el desbloqueo por reconocimiento facial, así como la baja tasa de éxito de este proceso."
+    ],
+    "Cámara": [
+      "Corregido un problema que afectaba la estabilidad de la cámara"
+    ],
+    "Reserva de datos": [
+      "Se ha corregido el problema en el que, al recuperar aplicaciones de un pendrive a un teléfono móvil y si dichas aplicaciones no están instaladas, sus iconos se muestran de manera anormal."
+    ],
+    "Configuración": [
+      "Se ha corregido el problema que ocasionaba la no visualización de los dispositivos que habían dejado de funcionar al realizar una búsqueda utilizando las opciones de configuración.",
+      "Se ha corregido el problema relacionado con la configuración para mostrar de forma sincronizada las dos opciones para agregar cuentas personales.",
+      "[Ajustes]-[Mi dispositivo]-[Guía de usuario] cambiado a [Información importante de seguridad]",
+      "Ajustes]-[Mi dispositivo]-[Instrucciones] cambiado a [Información importante de seguridad]"
     ],
     "Administrador de archivos": [
-      "Se corrigió el problema que impedía buscar archivos renombrados o descifrados.",
-      "Se corrigió el problema por el que no se podían buscar archivos renombrados o descifrados"
+      "Se ha corregido el problema de que los archivos renombrados o desencriptados no podían ser buscados."
     ],
     "Grabadora": [
-      "Se corrigió el problema de visualización anómala del icono de Ajustes"
-    ],
-    "Sistema": [
-      "Se corrigió el problema de visualización anómala del área de botones de acceso rápido tras desbloquear la pantalla en WeChat",
-      "Se corrigió el problema de desbloqueo facial que no funciona y la baja tasa de éxito"
-    ],
-    "Ajustes": [
-      "Se corrige el problema que cerraba Ajustes al usar la búsqueda",
-      "Se ha corregido el problema por el que se mostraban dos opciones para añadir una cuenta personal en la sincronización de ajustes.",
-      "Ajustes]-[Mi dispositivo]-[Instrucciones] cambiado a [Información importante de seguridad]"
+      "Se ha corregido el problema de la visualización anormal de los iconos de configuración."
     ],
     "Otros": [
       "Estabilidad y seguridad del sistema mejorada"
     ]
   },
   "logs_pt": {
+    "Sistema": [
+      "Corrigir o problema que, em certas circunstâncias, afeta a fluidez do uso do produto.",
+      "Corrigido o problema em que, após desbloquear o ecrã bloqueado do WeChat, a área dos botões de atalho apresentava um comportamento anormal.",
+      "Corrigir os problemas de falha no desbloqueio por reconhecimento facial, bem como a baixa taxa de sucesso nesse processo."
+    ],
+    "Câmera": [
+      "Corrigido um problema que afetava a estabilidade da câmera"
+    ],
     "Cópia de segurança": [
-      "Corrigido o problema de exibição incorreta dos ícones ao restaurar de uma unidade USB aplicativos não instalados no telefone."
+      "Corrigido o problema em que, ao recuperar aplicativos de um pen drive para um telemóvel e estes não estarem instalados, os ícones eram exibidos de forma anormal."
+    ],
+    "Configurações": [
+      "Corrigido o problema de exibição dos resultados da pesquisa utilizando as definições quando os aplicativos estiverem parados (não em execução).",
+      "Corrigido o problema relacionado com a configuração da exibição sincronizada de duas opções para adicionar contas pessoais.",
+      "[Configurações]-[Meu dispositivo]-[Guia do usuário] alterado para [Informações importantes de segurança]",
+      "Configurações]-[Meu dispositivo]-[Instruções] alterado para [Informações importantes de segurança]"
     ],
     "Gerenciador de arquivos": [
-      "Corrigido o problema que impedia pesquisar arquivos renomeados ou descriptografados.",
-      "Corrigido o problema que impedia pesquisar arquivos renomeados ou descriptografados"
+      "Corrigido o problema em que os ficheiros renomeados ou desencriptados não podiam ser pesquisados.",
+      "Corrigir o problema de os ficheiros renomeados ou desencriptados não serem encontráveis através de pesquisas."
     ],
     "Gravador": [
       "Corrigido o problema de exibição anormal do ícone de Configurações"
-    ],
-    "Sistema": [
-      "Corrigido o problema de exibição anormal da área de teclas de atalho após desbloquear a tela no WeChat",
-      "Corrigido o problema de desbloqueio facial não funcionar e da baixa taxa de sucesso"
-    ],
-    "Configurações": [
-      "Corrigido o problema em que as Configurações paravam ao usar a pesquisa",
-      "Corrigido o problema em que duas opções de adicionar conta pessoal eram exibidas na sincronização de configurações.",
-      "Configurações]-[Meu dispositivo]-[Instruções] alterado para [Informações importantes de segurança]"
     ],
     "Outros": [
       "Segurança e estabilidade do sistema aprimoradas"
     ]
   },
   "logs_tr": {
+    "Sistem": [
+      "Bazı durumlarda kullanım akıcılığını etkileyen sorun giderildi.",
+      "WeChat arayüzünün kilit ekranının açılmasından sonra, hızlı tuş alanında görülen anormallik sorunu düzeltildi.",
+      "Yüz tanıma ile kilidin açılmasında yaşanan sorunları ve düşük başarı oranlarını giderin."
+    ],
+    "Kamera": [
+      "Kameranın kullanım stabilitesini etkileyen sorunu giderdik."
+    ],
     "Yedekleme": [
-      "USB sürücüsünden telefonda yüklü olmayan uygulamalar geri yüklenirken simgelerin yanlış görüntülenmesi sorunu giderildi."
+      "USB bellekten telefonunuza geri yüklediğinizde, telefonda yüklü olmayan uygulamaların simgelerinin yanlış şekilde görünmesi sorununu düzelttik."
+    ],
+    "Ayarlar": [
+      "Ayarları kullanarak yapılan aramalarda, durdurulmuş programların görüntülenmesiyle ilgili sorunu giderdik.",
+      "İki kişisel hesabın eklenebilmesi seçeneğinin senkronize bir şekilde gösterilmesinde yaşanan sorunu düzelttik.",
+      "[Ayarlar]-[Cihazım]-[Kullanım kılavuzu] [Önemli güvenlik bilgileri] olarak değiştirildi",
+      "Ayarlar]-[Cihazım]-[Kullanım talimatları] [Önemli güvenlik bilgileri] olarak değiştirildi"
     ],
     "Dosya Yöneticisi": [
       "Yeniden adlandırılan veya şifresi çözülen dosyaların aranamaması sorunu giderildi.",
       "Yeniden adlandırılan veya şifresi çözülen dosyaların aranamaması sorunu giderildi"
     ],
     "Kayıt Cihazı": [
-      "Ayarlar simgesinin hatalı görüntülenmesi sorunu düzeltildi"
-    ],
-    "Sistem": [
-      "WeChat ekranında ekran kilidi açıldıktan sonra kısayol tuşları alanının anormal görünmesi sorunu giderildi",
-      "Yüz kilidinin çalışmaması ve düşük başarı oranı sorunu düzeltildi"
-    ],
-    "Ayarlar": [
-      "Ayarlar araması kullanılırken uygulamanın durması sorunu giderildi",
-      "Ayarlar senkronizasyonunda iki kişisel hesap ekleme seçeneği gösterilmesi sorunu düzeltildi.",
-      "Ayarlar]-[Cihazım]-[Kullanım talimatları] [Önemli güvenlik bilgileri] olarak değiştirildi"
+      "Ayar simgelerinin yanlış şekilde görünmesi sorununu düzelttik."
     ],
     "Diğer": [
       "Sistem güvenliği ve kararlılığı geliştirildi"
     ]
   },
   "logs_id": {
-    "Cadangan": [
-      "Memperbaiki masalah ikon yang ditampilkan secara tidak normal saat memulihkan aplikasi yang tidak terpasang di ponsel dari drive USB."
+    "Sistem": [
+      "Memperbaiki masalah yang dalam beberapa kasus mempengaruhi kenyamanan penggunaan.",
+      "Diperbaiki masalah di mana setelah layar WeChat terkunci dibuka kembali, area tombol pintas menampilkan tampilan yang tidak normal.",
+      "Memperbaiki masalah ketidakfungsian fitur pembukaan kunci berbasis wajah, serta tingkat keberhasilan yang rendah dalam proses tersebut."
     ],
-    "Pengelola File": [
+    "Kamera": [
+      "Memperbaiki masalah yang memengaruhi stabilitas kamera"
+    ],
+    "Cadangan": [
+      "Memperbaiki masalah di mana aplikasi yang tidak terinstal di ponsel tidak dapat dipulihkan dari flash disk (USB), dan ikonnya menampilkan tampilan yang tidak normal."
+    ],
+    "Pengaturan": [
+      "Memperbaiki masalah terkait pencarian menggunakan pengaturan yang menunjukkan aplikasi atau proses yang telah berhenti berjalan.",
+      "Masalah telah diperbaiki: opsi untuk menyinkronkan dan menampilkan dua akun pribadi yang baru ditambahkan kini berfungsi dengan benar.",
+      "Pergilah ke “Pengaturan” → “Perangkat Saya” → “Petunjuk Penggunaan”, lalu gantilah isi kolom tersebut menjadi “Informasi Keamanan yang Penting”.",
+      "Pergilah ke “Settings” → “My Devices” → “Instructions for Use”, lalu gantilah isi kolom tersebut menjadi “Important Security Information”."
+    ],
+    "File Manager": [
       "Memperbaiki masalah file yang diganti nama atau didekripsi tidak dapat dicari.",
       "Memperbaiki masalah file yang diganti nama atau didekripsi tidak dapat dicari"
     ],
     "Perekam": [
-      "Memperbaiki masalah ikon Pengaturan yang tidak tampil dengan benar"
-    ],
-    "Sistem": [
-      "Memperbaiki masalah tampilan area tombol pintas yang tidak normal setelah membuka kunci layar di WeChat",
-      "Memperbaiki masalah buka kunci wajah yang tidak berfungsi dan tingkat keberhasilan rendah"
-    ],
-    "Pengaturan": [
-      "Memperbaiki masalah Pengaturan berhenti saat menggunakan pencarian",
-      "Memperbaiki masalah di mana dua opsi untuk menambahkan akun pribadi ditampilkan di sinkronisasi Pengaturan.",
-      "Setelan]-[Perangkat saya]-[Petunjuk penggunaan] diubah menjadi [Informasi keamanan penting]"
+      "Memperbaiki masalah penampilan ikon pengaturan yang tidak normal."
     ],
     "Lainnya": [
       "Keamanan dan stabilitas sistem ditingkatkan"
     ]
   },
   "logs_vi": {
-    "Sao lưu": [
-      "Đã khắc phục sự cố biểu tượng hiển thị không đúng khi khôi phục ứng dụng chưa cài đặt trên điện thoại từ ổ USB."
-    ],
-    "Trình quản lý tệp": [
-      "Đã khắc phục sự cố không thể tìm kiếm tệp đã đổi tên hoặc giải mã.",
-      "Khắc phục sự cố không thể tìm kiếm tệp đã đổi tên hoặc đã giải mã"
-    ],
-    "Máy ghi âm": [
-      "Khắc phục sự cố biểu tượng Cài đặt hiển thị bất thường"
-    ],
     "Hệ thống": [
-      "Đã khắc phục sự cố vùng phím tắt hiển thị bất thường sau khi mở khóa màn hình trong WeChat",
-      "Đã khắc phục sự cố nhận diện khuôn mặt không hoạt động và tỷ lệ thành công thấp"
+      "Đã sửa lỗi khiến việc sử dụng ứng dụng trở nên không thuận tiện trong một số trường hợp nhất định.",
+      "Đã sửa lỗi: Sau khi màn hình của WeChat được khóa và sau khi màn hình được mở khóa, khu vực các phím tắt (shortcut keys) bị hiển thị không đúng như mong muốn.",
+      "Khắc phục các sự cố liên quan đến việc mở khóa bằng khuôn mặt không hoạt động đúng chức năng và tỷ lệ thành công thấp."
+    ],
+    "Máy ảnh": [
+      "Khắc phục các vấn đề ảnh hưởng đến độ ổn định khi sử dụng máy ảnh."
+    ],
+    "Dự phòng (Backup)": [
+      "Đã sửa lỗi: Khi khôi phục các ứng dụng từ thẻ nhớ USB vào điện thoại mà những ứng dụng đó chưa được cài đặt, biểu tượng của chúng hiển thị bất thường."
     ],
     "Cài đặt": [
-      "Khắc phục sự cố Cài đặt dừng hoạt động khi dùng tìm kiếm",
-      "Đã sửa lỗi hiển thị hai tùy chọn thêm tài khoản cá nhân trong đồng bộ hóa Cài đặt.",
+      "Đã sửa lỗi liên quan đến việc hiển thị kết quả tìm kiếm khi thiết lập được áp dụng, cụ thể là trường hợp các ứng dụng không hoạt động (bị “dừng”) nữa.",
+      "Đã sửa lỗi liên quan đến việc thiết lập hiển thị đồng bộ cho hai tùy chọn thêm tài khoản cá nhân.",
+      "[Cài đặt]-[Thiết bị của tôi]-[Hướng dẫn sử dụng] đã đổi thành [Thông tin an toàn quan trọng]",
       "Cài đặt]-[Thiết bị của tôi]-[Hướng dẫn sử dụng] đổi thành [Thông tin an toàn quan trọng]"
+    ],
+    "Trình quản lý tệp": [
+      "Khắc phục sự cố khi các tệp tin sau khi được đổi tên hoặc giải mã không thể được tìm kiếm."
+    ],
+    "Máy ghi âm": [
+      "Đã sửa lỗi liên quan đến việc hiển thị biểu tượng cài đặt một cách bất thường."
     ],
     "Khác": [
       "Cải thiện tính ổn định và bảo mật hệ thống"
     ]
   },
   "logs_th": {
+    "ระบบ": [
+      "แก้ไขปัญหาที่ส่งผลต่อความลื่นไหลในการใช้งานในบางกรณี",
+      "แก้ไขปัญหาที่หน้าจอล็อคของ WeChat หลังจากปลดล็อคแล้ว พื้นที่ของปุ่มต่างๆ ไม่แสดงผลอย่างถูกต้อง",
+      "แก้ไขปัญหาการปลดล็อกด้วยใบหน้าไม่ทำงานและอัตราความสำเร็จต่ำ"
+    ],
+    "กล้อง": [
+      "แก้ไขปัญหาที่ส่งผลต่อเสถียรภาพในการใช้กล้อง"
+    ],
     "สำรองข้อมูล": [
-      "แก้ไขปัญหาการแสดงไอคอนผิดปกติเมื่อกู้คืนแอปที่ยังไม่ได้ติดตั้งบนโทรศัพท์จากไดรฟ์ USB"
+      "แก้ไขปัญหาเมื่อพยายามคืนแอปพลิเคชันที่ไม่ได้ติดตั้งไว้ในโทรศัพท์จากแผ่น USB โดยไอคอนของแอปพลิเคชันแสดงผลอย่างผิดปกติ"
+    ],
+    "การตั้งค่า": [
+      "แก้ไขปัญหาที่การค้นหาด้วยการตั้งค่าไม่แสดงผลเมื่อโปรแกรมหยุดทำงาน",
+      "แก้ไขปัญหาเกี่ยวกับการตั้งค่าให้แสดงผลการซิงโครไนซ์ระหว่างตัวเลือกสองตัวที่ใช้สำหรับเพิ่มบัญชีส่วนบุคคล",
+      "[การตั้งค่า]-[อุปกรณ์ของฉัน]-[คู่มือการใช้งาน] เปลี่ยนเป็น [ข้อมูลความปลอดภัยที่สำคัญ]",
+      "การตั้งค่า]-[อุปกรณ์ของฉัน]-[คำแนะนำการใช้งาน] เปลี่ยนเป็น [ข้อมูลความปลอดภัยที่สำคัญ]"
     ],
     "ตัวจัดการไฟล์": [
       "แก้ไขปัญหาการค้นหาไฟล์ที่เปลี่ยนชื่อหรือถอดรหัสแล้วไม่ได้",
-      "แก้ไขปัญหาที่ไม่สามารถค้นหาไฟล์ที่เปลี่ยนชื่อหรือถอดรหัสแล้วได้"
+      "แก้ไขปัญหาที่ไฟล์ที่ถูกเปลี่ยนชื่อหรือถูกถอดรหัสแล้วไม่สามารถค้นหาได้"
     ],
     "เครื่องบันทึกเสียง": [
       "แก้ไขปัญหาไอคอนการตั้งค่าแสดงผลผิดปกติ"
-    ],
-    "ระบบ": [
-      "แก้ไขปัญหาพื้นที่ปุ่มลัดแสดงผลผิดปกติหลังจากปลดล็อกหน้าจอใน WeChat",
-      "แก้ไขปัญหาการปลดล็อกด้วยใบหน้าไม่ทำงานและอัตราความสำเร็จต่ำ"
-    ],
-    "การตั้งค่า": [
-      "แก้ไขปัญหาการตั้งค่าหยุดทำงานเมื่อใช้การค้นหา",
-      "แก้ไขปัญหาที่การซิงค์การตั้งค่าแสดงตัวเลือกเพิ่มบัญชีส่วนตัวสองรายการ",
-      "การตั้งค่า]-[อุปกรณ์ของฉัน]-[คำแนะนำการใช้งาน] เปลี่ยนเป็น [ข้อมูลความปลอดภัยที่สำคัญ]"
     ],
     "อื่นๆ": [
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
     ]
   },
   "logs_ar": {
+    "النظام": [
+      "تم إصلاح مشكلة تؤثر على سلاسة الاستخدام في بعض الحالات.",
+      "تم إصلاح المشكلة التي كانت تظهر فيها منطقة الأزرار السريعة بشكل غير صحيح بعد فتح شاشة قفل ويتشات.",
+      "إصلاح مشاكل عدم فعالية نظام فتح القفل باستخدام بيانات الوجه، بالإضافة إلى انخفاض معدل نجاح هذا النظام."
+    ],
+    "كاميرا": [
+      "تم إصلاح المشكلة التي كانت تؤثر على استقرار أداء الكاميرا أثناء الاستخدام."
+    ],
     "النسخ الاحتياطي": [
-      "إصلاح مشكلة عرض الرموز بشكل غير صحيح عند استعادة التطبيقات غير المثبّتة على الهاتف من محرك أقراص USB."
+      "تم إصلاح المشكلة التي كانت تظهر فيها أيقونات التطبيقات غير المثبتة على الهاتف بشكل غير صحيح عند استعادتها من وحدة التخزين الخارجية (USB)."
+    ],
+    "الإعدادات": [
+      "تم إصلاح المشكلة التي كانت تظهر عند استخدام خاصية البحث في الإعدادات، والتي كانت تؤدي إلى عدم ظهور النتائج بشكل صحيح.",
+      "تم إصلاح المشكلة المتعلقة بعدم تزامن عرض خيارات إضافة الحسابات الشخصية.",
+      "اذهب إلى \"الإعدادات\" → \"أجهزتي\" → \"إرشادات الاستخدام\"، ثم قم بتغيير اسم هذا القسم إلى \"معلومات أمنية مهمة\"."
     ],
     "مدير الملفات": [
       "إصلاح مشكلة عدم إمكانية البحث عن الملفات المعاد تسميتها أو التي تم فك تشفيرها.",
-      "إصلاح مشكلة تعذّر البحث عن الملفات التي أُعيدت تسميتها أو فُكّ تشفيرها"
+      "تم إصلاح المشكلة التي تمنع من البحث عن الملفات بعد أن تم تغيير اسمها أو فك تشفيرها."
     ],
-    "مسجل": [
-      "إصلاح مشكلة عرض أيقونة الإعدادات بشكل غير طبيعي"
+    "جهاز التسجيل": [
+      "تم إصلاح المشكلة المتعلقة بظهور أيقونات الإعدادات بشكل غير صحيح."
     ],
-    "النظام": [
-      "إصلاح مشكلة عرض منطقة أزرار الاختصار بشكل غير طبيعي بعد إلغاء قفل الشاشة في WeChat",
-      "إصلاح مشكلة تعذر فتح القفل بالوجه وانخفاض معدل النجاح"
-    ],
-    "الإعدادات": [
-      "إصلاح مشكلة توقف الإعدادات عند استخدام البحث",
-      "تم إصلاح مشكلة ظهور خيارين لإضافة حساب شخصي في مزامنة الإعدادات.",
-      "الإعدادات]-[جهازي]-[تعليمات الاستخدام] تم التغيير إلى [معلومات أمان مهمة]"
-    ],
-    "أخرى": [
+    "آخرين": [
       "تحسين أمن واستقرار النظام"
     ]
   },
   "logs_in": {
-    "बैकअप": [
-      "फ़ोन पर इंस्टॉल न किए गए ऐप्स को USB ड्राइव से बहाल करते समय आइकन गलत तरीके से दिखने की समस्या ठीक की गई।"
-    ],
-    "फ़ाइल प्रबंधक": [
-      "नाम बदली या डिक्रिप्ट की गई फ़ाइलों को खोज न पाने की समस्या ठीक की गई।",
-      "नाम बदली या डिक्रिप्ट की गई फ़ाइलों को खोज न पाने की समस्या ठीक की गई"
-    ],
-    "रिकॉर्डर": [
-      "सेटिंग्स आइकन के अनियमित रूप से प्रदर्शित होने की समस्या ठीक की गई"
-    ],
     "सिस्टम": [
-      "WeChat इंटरफ़ेस में स्क्रीन लॉक होने के बाद अनलॉक करने पर शॉर्टकट बटन क्षेत्र के असामान्य रूप से दिखने की समस्या ठीक की गई",
-      "चेहरा अनलॉक काम न करने और कम सफलता दर की समस्या ठीक की गई"
+      "कुछ मामलों में, ऐसी समस्याओं को ठीक किया गया है जो उपयोगकर्ता अनुभव (user experience) को प्रभावित कर रही थीं।",
+      "व्हाइटसैप इंटरफेस की स्क्रीन-लॉक सुविधा को अनलॉक करने के बाद, शॉर्टकट बटनों का क्षेत्र असामान्य रूप से प्रदर्शित होने की समस्या को ठीक कर दिया गया है।",
+      "चेहरे की पहचान से लॉक खोलने की प्रक्रिया में होने वाली समस्याओं एवं कम सफलता दर को ठीक करें।"
+    ],
+    "कैमरा": [
+      "कैमरा स्थिरता को प्रभावित करने वाली समस्या को ठीक किया गया"
+    ],
+    "बैकअप": [
+      "समस्या का समाधान: जब आप यूडिस्क (USB Drive) के माध्यम से अपने फोन में ऐसे एप्लिकेशन वापस लाते हैं जो आपके फोन पर पहले से इंस्टॉल नहीं हैं, तो उन एप्लिकेशनों के आइकन असामान्य रूप से दिखाई देते हैं।"
     ],
     "सेटिंग्स": [
-      "सेटिंग्स में खोज का उपयोग करते समय ऐप बंद होने की समस्या ठीक की गई",
-      "सेटिंग्स सिंक में व्यक्तिगत खाता जोड़ने के दो विकल्प दिखने की समस्या ठीक की गई।",
+      "वह समस्या ठीक कर दी गई है जिसमें सेटिंग्स का उपयोग करके खोज करने पर ऐसे एप्लिकेशन दिखाए जाते थे जो अब काम नहीं कर रहे हैं।",
+      "दो नए व्यक्तिगत खातों के विकल्पों को समन्वित रूप से प्रदर्शित करने संबंधी समस्या को ठीक कर दिया गया है.",
+      "[सेटिंग्स]-[मेरा डिवाइस]-[उपयोग गाइड] को [महत्वपूर्ण सुरक्षा जानकारी] में बदला गया",
       "सेटिंग्स]-[मेरा डिवाइस]-[निर्देश] को [महत्वपूर्ण सुरक्षा जानकारी] में बदला गया"
+    ],
+    "फ़ाइल प्रबंधक": [
+      "उस समस्या को ठीक किया गया है जिसके कारण पुनर्नामित या डिक्रिप्ट किए गए फ़ाइलों की खोज नहीं हो पाती थी।",
+      "उस समस्या को ठीक किया गया है जिसमें पुनर्नामकरण या डिक्रिप्ट किए गए फ़ाइलों को खोजने में समस्या आती थी।"
+    ],
+    "रिकॉर्डर": [
+      "सेटिंग आइकन के असामान्य दिखाई जाने की समस्या को ठीक कर दिया गया है."
     ],
     "अन्य": [
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
     ]
   },
   "logs_ug": {
-    "ئاۋاز ئالغۇ": [
-      "تەڭشەك سىنبەلگىسىنىڭ نورمالسىز كۆرۈنۈش مەسىلىسى تۈزىتىلدى"
+    "سىستېما": [
+      "بەزى ئەھۋاللاردا ئىشلىتىش راۋانلىقىغا تەسىر كۆرسىتىدىغان مەسىلە ئوڭشالدى.",
+      "WeChat ئىنتېرفېيسىدا قۇلۇپلىنىش ھالىتىدىن قۇلاق لانغاندىن كېيىن ، تېز ئىشلەتكۈچ كونۇپكا رايونىنىڭ نورمال كۆرسىتىل مەسلىك مەسىلىسىنى تۈزدۈق.",
+      "يۈز ئىمزا ئارقىلىق قۇلۇپ ئاچىش فۇنكسىيەسىنىڭ كاردىن چىقىشى ۋە مۇۋەپپەقىيەت نىسبىتىنىڭ تۆۋەن بولۇش مەسىلىسىنى ئوڭشايمىز."
+    ],
+    "فوتو ئاپپارات": [
+      "كامېرا نىڭ ئىشلىتىش ئىستىقرارلىقىغا تەسىر كۆرسىتىدىغان مەسىلىلەرنى رېمونت قىلىڭ"
+    ],
+    "زاپاس كۆپەيتمە": [
+      "USB فلەشنىڭ ياردىمى بىلەن تېلېفونغا قايتۇرۇلغان ، لېكىن تېلېفونغا ئورنىتىلمىغان دىتاللارنىڭ ئىكونى نورمال كۆرسىتىلمەيدىغان مەسىلىسىنى تۈزەش"
+    ],
+    "تەڭشەك": [
+      "تەڭشەلگەن ئاماللارنى قوللىنىپ ئىزدەش جەريانىدا كۆرسىتىلىدىغان ، ئىشلەشنى توختاتقان (ياكى خاتا ئىشلەۋاتقان) دېتاللارنىڭ مەسىلىسىنى تۈزەيمىز.",
+      "ئىككى ئەركىن ھېسابات نى بىرلا ۋاقىتتا كۆرسىتىش ئىمكانىيىتىگە مۇناسىۋەتلىك مەسىلىنى تۈزەتتۇق.",
+      "«تەڭشەش » → «مېنىڭ ئۈسكۈنەم » → «ئىشلىتىش قائىدىسى » نى «مۇھىم بىخەتەرلىك ئۇچۇرلىرى » غا ئالماشتۇرۇڭ",
+      "« تەڭشەش » → « مېنىڭ ئۈسكۈنەم » → « ئىشلىتىش قائىدىسى » نى « مۇھىم بىخەتەرلىك ئۇچۇرلىرى » غا ئالماشتۇرۇڭ"
     ],
     "ھۆججەت باشقۇرغۇچ": [
-      "ئاتى ئۆزگەرتىلگەن ياكى شىفىرى يېشىلغان ھۆججەتلەرنى ئىزدەشكە بولمايدىغان مەسىلە ئوڭشالدى"
+      "ئۆزگەرتىلگەن ، قايتا نام بېرىلگەن ياكى شىفىرى ئېچىلغان فايل لارنى ئىزدەش مۇمكىن بولماسلىق مەسىلىسىنى تۈزەتتۇق.",
+      "ئۆزگەرتىلگەن نامى ياكى شفرى ئېچىلغان ھۆججەتلەرنى ئىزدەش مۇمكىن بولماسلىق مەسىلىسىنى تۈزەتتۇق."
+    ],
+    "ئۈن خاتىرىلەش ماشىنىسى": [
+      "كۆرسىتىش ئىكونىسىنىڭ نورمال ئەمەس كۆرۈنۈش مەسىلىسىنى تۈزدۇق"
     ],
     "باشقىلىرى": [
       "Improved system security and stability"
     ]
   },
   "logs_bo": {
+    "མ་ལག": [
+      "བཅོས་སྒྲིག་བྱས་པ་ལས།ཁ་ཤས་ཀྱི་གནས་ཚུལ་འོག་བེད་སྤྱོད་བྱེད་པའི་རྣམ་པར་ཤུགས་རྐྱེན་ཐེབས་པའི་གནད་དོན་སེལ་ཡོད།",
+      "WeChat་ཡི་མཚོན་རྟེགས་ཀྱི་བཀག་སྒོ་ཕྱེ་རྗེས།མྱུར་སྤྱོད་ཚོད་མཐུད་ཁུལ་གྱི་མངོན་ཚུལ་ཡོངས་སུ་མི་འགྲིག་པའི་གནད་དོན་ཐག་གཅོད།",
+      "གདོང་བརྙན་ལ་བརྟེན་ནས་ཐེ་གཏོགས་བྱེད་པའི་མ་ལག་ཆག་པ་དང་།ཐེ་གཏོགས་བྱེད་པའི་རྒྱུགས་ཚད་དམའ་བ་བཅས་ཀྱི་གནད་དོན་ཐག་གཅོད་བྱེད།"
+    ],
+    "ཁ་མར།": [
+      "ཁ་མོན་བཀོལ་སྤྱོད་བརྟན་པོར་ཤུགས་རྐྱེན་གཏོང་བའི་གནད་དོན་ཞིག་ཉམས་གསོ་བྱེད།"
+    ],
+    "ཉར་གསོག": [
+      "U་Disk་ནས་ཁ་པར་ལ་ཕྱིར་གསོག་བྱས་པའི་དུས་བཀོལ་མེད་པའི་ཡིག་རྒྱུགས（Application）ཚན་པའི་རི་མོ（Icon）ཡོད་ཚད་རྒྱུན་ལྡན་མིན་པའི་གནད་དོན་ཐག་གཅོད།"
+    ],
+    "སྒྲིག་སྟངས།": [
+      "སྒྲིག་ཆས་བེད་སྤྱད་ནས་འཚོལ་ཞིབ་བྱེད་པའི་སྐབས་ལས་མཚམས་བཞག་པའི་གནད་དོན་ཐག་གཅོད་བྱེད།",
+      "“ཆ་སྒྲིག་མཉམ་སྦྱོར་”་གི་རྣམ་པའི་འོག་མི་སྒེར་གྱི་ཐོ་བྱང་གསུམ་བསྣན་པའི་གདམ་ག་གཉིས་འཆར་ཡིག་ཁྲོད་འགྲེམས་པའི་གནད་དོན་ཐག་གཅོད་བྱས།",
+      "Settings” → “My Devices” → “Usage Instructions” →་བསྒྱུར་དགོས།“Important Security Information",
+      "Settings” → “My Devices” → “Instructions for Use” → ཕြ་བསྒྱུར་བྱས་ནས “Important Security Information"
+    ],
+    "ཡིག་ཆའི་དོ་དམ་ཆས": [
+      "ཡིག་ཆ་བསྐྱར་མིང་འགོད་པའམ་གསང་གྲུབ་མེད་པར་བཟོས་རྗེས་འཚོལ་ཞིབ་བྱེད་མི་ཐུབ་པའི་གནད་དོན་ཐག་གཅོད།",
+      "ཡིག་ཆ་བསྐྱར་མིང་བཏགས་པའམ་གསང་གྲངས་ཕྱིར་འཐེན་བྱས་རྗེས་དེ་འཚོལ་ཐབས་མེད་པའི་གནད་དོན་ཐག་གཅོད།"
+    ],
     "སྒྲ་འཇུག་ཆས": [
-      "སྒྲིག་འཛུགས་ངོ་རྟགས་རྒྱུན་མིན་ངང་མངོན་པའི་གནད་དོན་བཅོས་ཟིན།"
+      "སྒྲིག་ཆའི་མཚོན་རྟགས་ཀྱི་སྟོན་ཚུལ་དེ་བསྡུར་ན་རྒྱུན་ལྡན་མིན་པའི་གནད་དོན་ཐག་གཅོད།"
+    ],
+    "རིམ་ལུགས": [
+      "WeChat་ཡི་མཚོན་རྟེགས་ཀྱི་བཀག་སྒོ་ཕྱེ་རྗེས།མྱུར་སྤྱོད་ཚོད་མཐུད་ཁུལ་གྱི་མངོན་ཚུལ་ཡོངས་སུ་མི་འགྲིག་པའི་གནད་དོན་ཐག་གཅོད།",
+      "གདོང་བརྙན་ལ་བརྟེན་ནས་ཐེ་གཏོགས་བྱེད་པའི་མ་ལག་ཆག་པ་དང་།ཐེ་གཏོགས་བྱེད་པའི་རྒྱུགས་ཚད་དམའ་བ་བཅས་ཀྱི་གནད་དོན་ཐག་གཅོད་བྱེད།"
     ],
     "གཞན།": [
       "Improved system security and stability"

@@ -16,7 +16,7 @@
       "修复 打开/关闭应用动画显示异常问题",
       "合入2025年7月安全补丁，增强系统安全"
     ],
-    "桌面": [
+    "主屏幕": [
       "新增 桌面图标文字在壁纸浅色区域显示阴影效果"
     ],
     "锁屏": [
@@ -59,7 +59,7 @@
       "Optimization: Interrupt animation during app transitions",
       "Optimization: Interrupt animation when closing apps in Landscape mode"
     ],
-    "Home screen": [
+    "desktop": [
       "New: Home screen icon text now displays shadows over light wallpaper areas for better readability"
     ],
     "Lock screen": [
@@ -119,7 +119,7 @@
       "新增: 鎖定螢幕自訂快速功能",
       "優化: 支援設定蝴蝶、光波、漩渦等指紋解鎖動畫"
     ],
-    "設定": [
+    "设置": [
       "優化: 桌面設定中，系統導覽方式頁的快速功能入口"
     ],
     "狀態欄、通知欄": [
@@ -145,7 +145,10 @@
       "修復: 開啟/關閉應用程式動畫顯示異常問題",
       "合入2025年7月安全修補程式，增強系統安全"
     ],
-    "電話": [
+    "設定": [
+      "優化: 桌面設定中，系統導覽方式頁的快速功能入口"
+    ],
+    "电话": [
       "優化: 煥新儲存觸發策略，提升觸發機率"
     ]
   },
@@ -164,6 +167,12 @@
     "設定": [
       "最適化: ホーム画面の設定にシステムナビゲーション設定へのショートカットを追加しました"
     ],
+    "ステータスバー、通知シェード": [
+      "新機能: 一部のステータスバーアイコンがカスタム表示をサポートするようになりました",
+      "最適化: カスタム通知が展開をサポートするようになりました",
+      "最適化: HD 信号アイコンがステータスバーに常時表示されなくなりました",
+      "最適化: カスタム通信事業者名を使用すると HD アイコンが表示されない問題"
+    ],
     "アクセシビリティ": [
       "修正: TalkBack モードでタッチジェスチャーが機能しない不具合",
       "修正: TalkBack モードで音量ボタンが機能しない不具合",
@@ -180,12 +189,6 @@
       "修正: 特定のシナリオでジェスチャーが正しく機能しない問題",
       "修正: アプリを開いたり閉じたりするときのアニメーションの問題",
       "セキュリティパッチを2025年7月にアップデートしました。システムのセキュリティが強化されました。"
-    ],
-    "ステータスバー、通知シェード": [
-      "新機能: 一部のステータスバーアイコンがカスタム表示をサポートするようになりました",
-      "最適化: カスタム通知が展開をサポートするようになりました",
-      "最適化: HD 信号アイコンがステータスバーに常時表示されなくなりました",
-      "最適化: カスタム通信事業者名を使用すると HD アイコンが表示されない問題"
     ],
     "最近のタスク": [
       "新機能: ホーム画面のアイコンテキストが、明るい壁紙領域に影を表示して読みやすくなりました"
@@ -304,6 +307,12 @@
     ],
     "Налаштування": [
       "Оптимізація: Додано ярлик до «Способів навігації» в «Налаштуваннях робочого столу»"
+    ],
+    "Рядок стану, панель сповіщень": [
+      "Нове: Деякі піктограми в рядку стану тепер підтримують користувацьке відображення",
+      "Оптимізація: Спеціальні сповіщення тепер підтримують розгортання",
+      "Оптимізація: Піктограма HD-сигналу більше не відображається постійно в рядку стану",
+      "Оптимізація: Піктограма HD не відображатиметься під час використання власної назви оператора"
     ],
     "Спеціальні можливості": [
       "Виправлено: Сенсорні жести перестали працювати в режимі TalkBack",
@@ -545,7 +554,7 @@
       "Nuevo: Accesos directos personalizables de la Pantalla de bloqueo",
       "Optimización: El desbloqueo con huella dactilar ahora admite nuevas animaciones"
     ],
-    "Ajustes": [
+    "Configuración": [
       "Optimización: Se agregó un acceso directo a la configuración de navegación del sistema en la configuración de la Pantalla de inicio"
     ],
     "barra de estado, barra de notificaciones": [
@@ -579,6 +588,9 @@
     ],
     "Recientes": [
       "Nuevo: El texto del icono de la Pantalla de inicio ahora muestra sombras sobre las áreas claras del fondo de pantalla para una mejor legibilidad"
+    ],
+    "Ajustes": [
+      "Optimización: Se agregó un acceso directo a la configuración de navegación del sistema en la configuración de la Pantalla de inicio"
     ],
     "Teléfono": [
       "Optimización: Se ajustó el algoritmo de actualización del almacenamiento para que se active con más frecuencia"
@@ -735,6 +747,9 @@
     ],
     "Setelan": [
       "Pengoptimalan: Pintasan ke setelan navigasi sistem ditambahkan di setelan Layar utama"
+    ],
+    "Telepon": [
+      "Pengoptimalan: Algoritma penyegaran Penyimpanan diubah sehingga lebih sering aktif"
     ]
   },
   "logs_vi": {
@@ -751,6 +766,12 @@
     ],
     "Cài đặt": [
       "Tối ưu: Đã thêm lối tắt vào cài đặt điều hướng hệ thống trong cài đặt Màn hình chính"
+    ],
+    "Thanh trạng thái, thanh thông báo": [
+      "Mới: Một số biểu tượng thanh trạng thái hiện hỗ trợ hiển thị tùy chỉnh",
+      "Tối ưu: Thông báo tùy chỉnh hiện hỗ trợ mở rộng",
+      "Tối ưu: Biểu tượng tín hiệu HD không còn hiển thị cố định trên thanh trạng thái",
+      "Tối ưu: Biểu tượng HD sẽ không hiển thị khi sử dụng tên nhà cung cấp tùy chỉnh"
     ],
     "Khả năng truy cập": [
       "Sửa: Cử chỉ chạm đã dừng hoạt động ở chế độ TalkBack",
@@ -796,6 +817,12 @@
     ],
     "การตั้งค่า": [
       "การเพิ่มประสิทธิภาพ: เพิ่มทางลัดไปยังการตั้งค่าการนำทางระบบในการตั้งค่าหน้าจอหลัก"
+    ],
+    "แถบสถานะ, แผงการแจ้งเตือน": [
+      "ใหม่: ไอคอนแถบสถานะบางรายการรองรับการแสดงผลแบบกำหนดเองแล้ว",
+      "การเพิ่มประสิทธิภาพ: การแจ้งเตือนแบบกำหนดเองรองรับการกางออกแล้ว",
+      "การเพิ่มประสิทธิภาพ: ไอคอนสัญญาณ HD จะไม่แสดงถาวรในแถบสถานะอีกต่อไป",
+      "การเพิ่มประสิทธิภาพ: ไอคอน HD จะไม่แสดงเมื่อใช้ชื่อผู้ให้บริการเครือข่ายแบบกำหนดเอง"
     ],
     "การเข้าถึง": [
       "แก้ไข: ท่าทางสัมผัสหยุดทำงานในโหมด TalkBack",
@@ -935,7 +962,7 @@
       "Optimization: Interrupt animation during app transitions",
       "Optimization: Interrupt animation when closing apps in Landscape mode"
     ],
-    "باش ئېكران": [
+    "ئۈستەل يۈزى": [
       "New: Home screen icon text now displays shadows over light wallpaper areas for better readability"
     ],
     "Lock screen": [
@@ -983,7 +1010,7 @@
       "Optimization: Interrupt animation during app transitions",
       "Optimization: Interrupt animation when closing apps in Landscape mode"
     ],
-    "Home screen": [
+    "ཅོག་ངོས": [
       "New: Home screen icon text now displays shadows over light wallpaper areas for better readability"
     ],
     "Lock screen": [

@@ -211,6 +211,29 @@ class ReviewTest(unittest.TestCase):
 			self.assertEqual(0, second['calls'])
 			self.assertEqual(2, len(second['decisions']))
 
+	def test_review_flushes_decisions_per_family(self):
+		fake = FakeClient({
+			20: {'zh': '设备互联', 'confidence': 0.9, 'reason': 'de'},
+			21: {'zh': '安全隐私', 'confidence': 0.8, 'reason': 'de'},
+		})
+		flushed = []
+		result = LogProofreader.review([self.family], fake,
+									   on_decisions=flushed.append)
+		self.assertEqual(1, len(flushed))
+		self.assertEqual([20, 21], [item['row_id'] for item in flushed[0]])
+		self.assertEqual([20, 21], [item['row_id'] for item in result['decisions']])
+
+	def test_review_does_not_flush_filtered_decisions(self):
+		fake = FakeClient({
+			20: {'zh': '设备互联', 'confidence': 0.9, 'reason': 'de'},
+			21: {'zh': '安全隐私', 'confidence': 0.6, 'reason': 'de'},
+		})
+		flushed = []
+		result = LogProofreader.review([self.family], fake, min_confidence=0.8,
+									   on_decisions=flushed.append)
+		self.assertEqual([20], [item['row_id'] for item in flushed[0]])
+		self.assertEqual([20], [item['row_id'] for item in result['decisions']])
+
 
 class BatchTest(unittest.TestCase):
 	def setUp(self):

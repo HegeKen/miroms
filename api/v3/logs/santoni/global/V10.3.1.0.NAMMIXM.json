@@ -24,7 +24,7 @@
       "修复 萤幕锁定画面下拉通知栏，来讯息界面萤幕出不来",
       "修复 萤幕锁定界面没有充电图示"
     ],
-    "桌面": [
+    "主屏幕": [
       "修复 WhatsApp 桌面角标显示异常的问题"
     ]
   },
@@ -43,16 +43,14 @@
       "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
       "Fix: Ending calls took longer time than expected"
     ],
-    "Home screen": [
+    "desktop": [
       "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
     ]
   },
   "logs_zh_tw": {
-    "設定": [
+    "设置": [
       "優化 大字體介面的顯示效果",
-      "修復 字體調節後，圖標顯示異常的問題",
-      "修復 下拉狀態欄開啟或關閉同步，同步介面不刷新問題",
-      "修復 設定手機名稱為最大長度，熱點無法開啟的問題"
+      "修復 字體調節後，圖標顯示異常的問題"
     ],
     "近期任務": [
       "優化 應用名稱的顯示長度，改良大字體的顯示效果"
@@ -73,6 +71,11 @@
     ],
     "桌面": [
       "修復 WhatsApp 桌面角標顯示異常的問題"
+    ],
+    "設定": [
+      "修復 下拉狀態欄開啟或關閉同步，同步介面不刷新問題",
+      "修復 設定手機名稱為最大長度，熱點無法開啟的問題",
+      "修復 字體調節後，圖標顯示異常的問題"
     ]
   },
   "logs_ja": {
@@ -100,7 +103,7 @@
       "ロック画面で通知シェードを下にスワイプした際、受信メッセージ画面が表示されない問題を修正",
       "ロック画面に充電アイコンが表示されない問題を修正"
     ],
-    "ホーム画面": [
+    "デスクトップ": [
       "WhatsApp アイコンの通知バッジが正しく表示されない問題を修正しました。"
     ]
   },
@@ -129,11 +132,17 @@
       "잠금 화면에서 알림 창을 아래로 내릴 때 수신 메시지 화면이 표시되지 않는 문제를 수정",
       "잠금 화면에 충전 아이콘이 표시되지 않는 문제를 수정"
     ],
-    "홈 화면": [
+    "데스크톱": [
       "WhatsApp 아이콘에 알림 배지가 잘못 표시되는 문제를 수정했습니다."
     ]
   },
   "logs_ru": {
+    "Настройки": [
+      "Оптимизация: Теперь шрифт большого размера отображается лучше",
+      "Исправлено: Значки отображались некорректно после настройки шрифтов",
+      "Исправлено: Страница синхронизации не обновлялась всякий раз, когда синхронизация была включена или отключена через Шторку уведомлений",
+      "Исправлено: Не удавалось включить точку доступа, если имя устройства содержало максимальное количество символов"
+    ],
     "Недавнее": [
       "Оптимизация: Имена приложений отображались не полностью, когда был выбран большой размер текста"
     ],
@@ -153,11 +162,6 @@
     ],
     "Рабочий стол": [
       "Исправлено: Уведомления на значке приложения WhatsApp отображались неправильно"
-    ],
-    "Настройки": [
-      "Исправлено: Страница синхронизации не обновлялась всякий раз, когда синхронизация была включена или отключена через Шторку уведомлений",
-      "Исправлено: Не удавалось включить точку доступа, если имя устройства содержало максимальное количество символов",
-      "Исправлено: Значки отображались некорректно после настройки шрифтов"
     ]
   },
   "logs_uk": {
@@ -185,7 +189,7 @@
       "Виправлено: під час опускання панелі сповіщень на екрані блокування не з’являвся екран інтерфейсу вхідних повідомлень.",
       "Виправлено відсутність значка заряджання на екрані блокування"
     ],
-    "Головний екран": [
+    "Робочий стіл": [
       "Виправлено: значки сповіщень неправильно відображалися на значку WhatsApp."
     ]
   },
@@ -214,7 +218,7 @@
       "Naprawiono: ekran interfejsu wiadomości przychodzących nie pojawiał się po rozwinięciu panelu powiadomień na ekranie blokady.",
       "Naprawiono brak ikony ładowania na ekranie blokady"
     ],
-    "Ekran główny": [
+    "Biurko": [
       "Naprawiono: odznaki powiadomień były nieprawidłowo wyświetlane na ikonie WhatsApp."
     ]
   },
@@ -272,11 +276,17 @@
       "Corrigé : l’écran de l’interface des messages entrants ne s’affichait pas lors du déroulement de la barre de notifications sur l’écran de verrouillage.",
       "Corrigé : icône de charge absente de l'écran de verrouillage"
     ],
-    "Écran d'accueil": [
+    "Bureau": [
       "Correction : les badges de notification s’affichaient incorrectement sur l’icône WhatsApp."
     ]
   },
   "logs_it": {
+    "Impostazioni": [
+      "Ottimizzazione: I caratteri di grandi dimensioni sono ora visualizzati meglio",
+      "Risolto: Le icone non sono state visualizzate correttamente dopo aver regolato i caratteri",
+      "Risolto: La pagina di sincronizzazione non poteva essere aggiornata quando la sincronizzazione era attiva o disattivata nell'area delle notifiche",
+      "Risolto: Impossibile attivare l'hotspot personale quando il nome del dispositivo era impostato sulla lunghezza massima"
+    ],
     "Recenti": [
       "Ottimizzazione: I nomi delle app venivano troncati quando la dimensione del testo era impostata su L"
     ],
@@ -294,16 +304,15 @@
       "Risolto: la schermata dell'interfaccia dei messaggi in arrivo non veniva visualizzata trascinando verso il basso la barra delle notifiche nella schermata di blocco.",
       "Risolto: L'icona che mostra che il dispositivo è in carica non veniva visualizzata nella schermata di blocco"
     ],
-    "Schermata Home": [
+    "Desktop": [
       "Risolto: I badge di notifica erano visualizzati in modo errato sull'icona di WhatsApp"
-    ],
-    "Impostazioni": [
-      "Risolto: La pagina di sincronizzazione non poteva essere aggiornata quando la sincronizzazione era attiva o disattivata nell'area delle notifiche",
-      "Risolto: Impossibile attivare l'hotspot personale quando il nome del dispositivo era impostato sulla lunghezza massima",
-      "Risolto: Le icone non sono state visualizzate correttamente dopo aver regolato i caratteri"
     ]
   },
   "logs_es": {
+    "Configuración": [
+      "Optimización: Las fuentes grandes ahora se muestran mejor",
+      "Reparado: Los iconos no eran mostrados correctamente después de ajustar las fuentes"
+    ],
     "Recientes": [
       "Optimización: Los nombres de aplicaciones fueron reducidos cuando el tamaño del texto fue establecido como grande"
     ],
@@ -321,7 +330,7 @@
       "Corregido: la pantalla de la interfaz de mensajes entrantes no aparecía al desplegar la barra de notificaciones en la pantalla de bloqueo.",
       "Reparado: El icono que muestra que el dispositivo se está cargando no era mostrado en la Pantalla de bloqueo"
     ],
-    "Pantalla de inicio": [
+    "Escritorio": [
       "Reparado: Los iconos de notificaciones fueron mostrados de forma incorrecta en el icono de WhatsApp"
     ],
     "Ajustes": [
@@ -360,6 +369,12 @@
     ]
   },
   "logs_tr": {
+    "Ayarlar": [
+      "Optimizasyon: Büyük yazı biçimleri şimdi daha iyi görüntüleniyor",
+      "Onarım: Yazı tipi değiştirme işleminden sonra meydana gelen simge görüntülenmeme hatası düzeltildi",
+      "Onarım: Senkronizasyon Bildirim çubuğunda açıldığında veya kapatıldığında senkronizasyon sayfası yenilenemedi",
+      "Onarım: Cihaz adı maksimum uzunlukta oluşturulduğunda kişisel bağlantı noktası açılamadı"
+    ],
     "Son kullanılanlar": [
       "Optimizasyon: Metinlerin boyutu büyük olarak ayarlandığında uygulama adları kesildi"
     ],
@@ -377,13 +392,8 @@
       "Düzeltme: Kilit ekranında bildirim paneli aşağı çekildiğinde gelen mesaj arayüzü ekranı görünmüyordu.",
       "Onarım: Kilit ekranında cihazın şarj edildiğini belirten simge görüntülenmeye başlandı"
     ],
-    "Ana ekran": [
+    "Masaüstü": [
       "Onarım: Bildirim rozetleri WhatsApp simgesinde yanlış görüntülendi"
-    ],
-    "Ayarlar": [
-      "Onarım: Senkronizasyon Bildirim çubuğunda açıldığında veya kapatıldığında senkronizasyon sayfası yenilenemedi",
-      "Onarım: Cihaz adı maksimum uzunlukta oluşturulduğunda kişisel bağlantı noktası açılamadı",
-      "Onarım: Yazı tipi değiştirme işleminden sonra meydana gelen simge görüntülenmeme hatası düzeltildi"
     ]
   },
   "logs_id": {
@@ -411,7 +421,7 @@
       "Memperbaiki masalah layar antarmuka pesan masuk tidak muncul saat menarik panel notifikasi pada layar kunci.",
       "Memperbaiki ikon pengisian daya yang hilang di layar kunci"
     ],
-    "Layar Utama": [
+    "Desktop": [
       "Perbaikan: Lencana notifikasi ditampilkan secara tidak benar pada ikon WhatsApp."
     ]
   },
@@ -469,7 +479,7 @@
       "แก้ไขหน้าจออินเทอร์เฟซข้อความขาเข้าไม่แสดงเมื่อดึงแถบการแจ้งเตือนลงบนหน้าจอล็อก",
       "แก้ไขไอคอนชาร์จไม่แสดงบนหน้าจอล็อก"
     ],
-    "หน้าจอหลัก": [
+    "โต๊ะทำงาน": [
       "แก้ไข: การแสดงสัญลักษณ์การแจ้งเตือนบนไอคอน WhatsApp ไม่ถูกต้อง"
     ]
   },
@@ -498,7 +508,7 @@
       "إصلاح: عدم ظهور شاشة واجهة الرسائل الواردة عند سحب لوحة الإشعارات لأسفل على شاشة القفل",
       "إصلاح عدم ظهور أيقونة الشحن على شاشة القفل"
     ],
-    "الشاشة الرئيسية": [
+    "سطح المكتب": [
       "إصلاح: عرض شارات الإشعارات بشكل غير صحيح على أيقونة WhatsApp"
     ]
   },
@@ -527,7 +537,7 @@
       "ठीक किया गया: लॉक स्क्रीन पर सूचना पैनल को नीचे खींचने पर आने वाले संदेश की इंटरफ़ेस स्क्रीन नहीं दिख रही थी",
       "लॉक स्क्रीन पर चार्जिंग आइकन न दिखने की समस्या ठीक की गई"
     ],
-    "होम स्क्रीन": [
+    "डेस्कटॉप": [
       "WhatsApp आइकन पर नोटिफ़िकेशन बैज गलत तरीके से दिखने की समस्या ठीक की गई।"
     ]
   },
@@ -554,7 +564,7 @@
       "قۇلۇپ ئېكرانىدا ئۇقتۇرۇش تاختىسىنى تارتقاندا، كەلگەن ئۇچۇر كۆرۈنمە يۈزىنىڭ ئېكراندا چىقماسلىقى تۈزىتىلدى.",
       "قۇلۇپ ئېكرانىدا توك قاچىلاش سىنبەلگىسى كۆرۈنمەيدىغان مەسىلە تۈزىتىلدى."
     ],
-    "باش ئېكران": [
+    "ئۈستەل يۈزى": [
       "WhatsApp سىنبەلگىسىدىكى ئۇقتۇرۇش بەلگىسىنىڭ خاتا كۆرسىتىلىش مەسىلىسى تۈزىتىلدى."
     ],
     "تەڭشەكلەر": [
@@ -586,7 +596,7 @@
       "Fix: Notification shade went black on the Lock screen when new notifications were received",
       "Fix: The icon showing that the device is charging wasn't displayed on the Lock screen"
     ],
-    "Home screen": [
+    "ཅོག་ངོས": [
       "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
     ],
     "སྒྲིག་བཀོད": [

@@ -43,7 +43,7 @@
       "修复 挂断电话慢问题",
       "修复 来电悬浮条和通话绿条同时存在情况"
     ],
-    "桌面": [
+    "主屏幕": [
       "修复 WhatsApp 桌面角标显示异常的问题"
     ],
     "推荐": [
@@ -80,11 +80,16 @@
     "Other": [
       "Fix: Displaying items on the turned off screen couldn't be turned off on time in some cases"
     ],
+    "System": [
+      "Added support for Widevine L1",
+      "Added game acceleration feature to improve system-level game optimization.",
+      "Optimization: Updated Android Security Patch to March 2019. Increased system security."
+    ],
     "Phone": [
       "Fix: Ending calls took longer time than expected",
       "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
     ],
-    "Home screen": [
+    "desktop": [
       "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
     ]
   },
@@ -106,9 +111,8 @@
       "修復 簡訊調用相機拍照時點擊取消，再次選擇相機出現相機故障",
       "新增 支援4K@60FPS 影片錄製"
     ],
-    "設定": [
-      "優化 大字體介面的顯示效果",
-      "修復 下拉狀態欄開啟或關閉同步，同步介面不刷新問題"
+    "设置": [
+      "優化 大字體介面的顯示效果"
     ],
     "近期任務": [
       "優化 應用名稱的顯示長度，改良大字體的顯示效果"
@@ -133,6 +137,9 @@
     ],
     "桌面": [
       "修復 WhatsApp 桌面角標顯示異常的問題"
+    ],
+    "設定": [
+      "修復 下拉狀態欄開啟或關閉同步，同步介面不刷新問題"
     ],
     "推薦": [
       "修復 微光螢幕顯示不能定時關閉的問題"
@@ -187,7 +194,7 @@
       "修正: 通話終了に想定より時間がかかる問題",
       "修正: 着信のフローティングバーと通話の緑色バーが同時に表示される問題。"
     ],
-    "ホーム画面": [
+    "デスクトップ": [
       "WhatsApp アイコンの通知バッジが正しく表示されない問題を修正しました。"
     ],
     "ゲーム高速化": [
@@ -246,7 +253,7 @@
       "수정: 통화 종료가 예상보다 오래 걸리는 문제",
       "수정: 수신 전화 플로팅 바와 통화 녹색 바가 동시에 표시되는 문제."
     ],
-    "홈 화면": [
+    "데스크톱": [
       "WhatsApp 아이콘에 알림 배지가 잘못 표시되는 문제를 수정했습니다."
     ],
     "게임 속도 향상": [
@@ -357,7 +364,7 @@
       "Виправлено: завершення викликів тривало довше, ніж очікувалося",
       "Виправлено: плаваюча панель вхідного виклику та зелена смуга виклику відображалися одночасно."
     ],
-    "Головний екран": [
+    "Робочий стіл": [
       "Виправлено: значки сповіщень неправильно відображалися на значку WhatsApp."
     ],
     "Mi Smart Hub": [
@@ -402,7 +409,7 @@
       "Optymalizacja: przeprojektowano stronę główną usługi w chmurze; dostępna przestrzeń jest teraz wyświetlana bardziej intuicyjnie.",
       "Optymalizacja: zoptymalizowano nową stronę główną Mi Cloud, informacje o przestrzeni w chmurze są wyświetlane wyraźniej."
     ],
-    "Inne": [
+    "Reszt": [
       "Naprawiono problem, przez który Always-on display nie wyłączał się o zaplanowanej porze"
     ],
     "System": [
@@ -414,7 +421,7 @@
       "Naprawiono: Zakończenie połączeń trwało dłużej niż oczekiwano",
       "Poprawka: pływający pasek połączenia przychodzącego i zielony pasek połączenia wyświetlały się jednocześnie."
     ],
-    "Ekran główny": [
+    "Biurko": [
       "Naprawiono: odznaki powiadomień były nieprawidłowo wyświetlane na ikonie WhatsApp."
     ],
     "Mi Smart Hub": [
@@ -524,7 +531,7 @@
       "Correction : la fin des appels prenait plus de temps que prévu",
       "Correction : la barre flottante d’appel entrant et la barre verte d’appel s’affichaient en même temps."
     ],
-    "Écran d'accueil": [
+    "Bureau": [
       "Correction : les badges de notification s’affichaient incorrectement sur l’icône WhatsApp."
     ],
     "Accélération des jeux": [
@@ -546,13 +553,10 @@
       "Risolto: Il pulsante del timer cominciava a lampeggiare quando veniva premuto",
       "Risolto: Chiusura forzata di Orologio in alcune date specifiche"
     ],
-    "Fotocamera": [
+    "macchina fotografica": [
       "Nuovo: Nuove modalità per la fotocamera AI",
       "Risolvi: Chiusura forzata della Fotocamera quando la app era chiusa e aperta di nuovo in modalità Video",
-      "Risolvi: Quando l'utente annullava lo scatto di una foto tramite collegamento nei Messaggi e poi toccava il collegamento Fotocamera di nuovo, la Fotocamera si arrestava in modo anomalo",
-      "Nuovo: Ora puoi registrare video 4K a 60fps",
-      "Risolto: Chiusura forzata della Fotocamera quando la app era chiusa e aperta di nuovo in modalità Video",
-      "Risolto: Quando l'utente annullava lo scatto di una foto tramite collegamento nei Messaggi e poi toccava il collegamento Fotocamera di nuovo, la Fotocamera si arrestava in modo anomalo"
+      "Risolvi: Quando l'utente annullava lo scatto di una foto tramite collegamento nei Messaggi e poi toccava il collegamento Fotocamera di nuovo, la Fotocamera si arrestava in modo anomalo"
     ],
     "Impostazioni": [
       "Ottimizzazione: I caratteri di grandi dimensioni sono ora visualizzati meglio",
@@ -579,8 +583,14 @@
       "Risolto: Terminare le chiamate richiedeva più tempo del previsto",
       "Risolto: I collegamenti della barra di stato e le notifiche a comparsa per le chiamate apparivano contemporaneamente"
     ],
-    "Schermata Home": [
+    "Desktop": [
       "Risolto: I badge di notifica erano visualizzati in modo errato sull'icona di WhatsApp"
+    ],
+    "Fotocamera": [
+      "Nuovo: Ora puoi registrare video 4K a 60fps",
+      "Nuovo: Nuove modalità per la fotocamera AI",
+      "Risolto: Chiusura forzata della Fotocamera quando la app era chiusa e aperta di nuovo in modalità Video",
+      "Risolto: Quando l'utente annullava lo scatto di una foto tramite collegamento nei Messaggi e poi toccava il collegamento Fotocamera di nuovo, la Fotocamera si arrestava in modo anomalo"
     ],
     "Mi Smart Hub": [
       "Risolto: La visualizzazione degli elementi a schermo spento non poteva essere disattivata in tempo in alcuni casi"
@@ -609,9 +619,8 @@
       "Reparado: La Cámara se cerró de forma forzosa cuando la aplicación fue cerrada y se volvió a abrir en el Modo vídeo",
       "Reparado: Cuando el usuario canceló al hacer una foto usando un acceso directo en Mensajería y después volvió a pulsar el acceso directo, la Cámara se bloqueó"
     ],
-    "Ajustes": [
-      "Optimización: Las fuentes grandes ahora se muestran mejor",
-      "Reparado: La página de sincronización no pudo ser refrescada cuando la sincronización fue activada o desactivada en la Barra de notificaciones"
+    "Configuración": [
+      "Optimización: Las fuentes grandes ahora se muestran mejor"
     ],
     "Recientes": [
       "Optimización: Los nombres de aplicaciones fueron reducidos cuando el tamaño del texto fue establecido como grande"
@@ -634,8 +643,11 @@
       "Reparado: Terminar las llamadas llevó más tiempo de lo esperado",
       "Reparado: El acceso directo a la Barra de estado y notificaciones flotantes para llamadas aparecieron al mismo tiempo"
     ],
-    "Pantalla de inicio": [
+    "Escritorio": [
       "Reparado: Los iconos de notificaciones fueron mostrados de forma incorrecta en el icono de WhatsApp"
+    ],
+    "Ajustes": [
+      "Reparado: La página de sincronización no pudo ser refrescada cuando la sincronización fue activada o desactivada en la Barra de notificaciones"
     ],
     "Mi Smart Hub": [
       "Reparado: Mostrar elementos en la pantalla apagada no pudo ser desactivado en algunos casos"
@@ -746,7 +758,7 @@
       "Onarım: Aramaları sonlandırmak beklenenden daha uzun sürdü",
       "Onarım: Durum çubuğu kısayolu ve aramalar için kayan bildirimler aynı anda belirdi"
     ],
-    "Ana ekran": [
+    "Masaüstü": [
       "Onarım: Bildirim rozetleri WhatsApp simgesinde yanlış görüntülendi"
     ],
     "Mi Smart Hub": [
@@ -802,7 +814,7 @@
       "Perbaikan: Mengakhiri panggilan membutuhkan waktu lebih lama dari yang diharapkan",
       "Perbaikan: Bilah mengambang panggilan masuk dan bilah hijau panggilan muncul bersamaan."
     ],
-    "Layar Utama": [
+    "Desktop": [
       "Perbaikan: Lencana notifikasi ditampilkan secara tidak benar pada ikon WhatsApp."
     ],
     "Pemercepat game": [
@@ -915,7 +927,7 @@
       "แก้ไข: การวางสายใช้เวลานานกว่าที่คาดไว้",
       "แก้ไข: แถบลอยของการโทรเข้าและแถบสีเขียวของการโทรแสดงพร้อมกัน"
     ],
-    "หน้าจอหลัก": [
+    "โต๊ะทำงาน": [
       "แก้ไข: การแสดงสัญลักษณ์การแจ้งเตือนบนไอคอน WhatsApp ไม่ถูกต้อง"
     ],
     "เพิ่มความเร็วเกม": [
@@ -957,7 +969,7 @@
       "تحسين: إعادة تصميم الصفحة الرئيسية لخدمة السحابة، وعرض المساحة المتاحة بشكل أكثر وضوحًا",
       "تحسين: تم تحسين الصفحة الرئيسية الجديدة لـ Mi Cloud، وأصبحت معلومات التخزين السحابي أكثر وضوحًا."
     ],
-    "أخرى": [
+    "آخرين": [
       "إصلاح: تعذّر إيقاف شاشة Always-on في الوقت المحدد"
     ],
     "النظام": [
@@ -969,7 +981,7 @@
       "إصلاح: استغرق إنهاء المكالمات وقتًا أطول من المتوقع",
       "إصلاح: ظهور شريط المكالمة العائم والشريط الأخضر للمكالمة في الوقت نفسه."
     ],
-    "الشاشة الرئيسية": [
+    "سطح المكتب": [
       "إصلاح: عرض شارات الإشعارات بشكل غير صحيح على أيقونة WhatsApp"
     ],
     "ساعة": [
@@ -1038,7 +1050,7 @@
       "ठीक किया गया: कॉल समाप्त करने में अपेक्षा से अधिक समय लगा",
       "फ़िक्स: इनकमिंग कॉल फ़्लोटिंग बार और कॉल ग्रीन बार का एक ही समय पर दिखना।"
     ],
-    "होम स्क्रीन": [
+    "डेस्कटॉप": [
       "WhatsApp आइकन पर नोटिफ़िकेशन बैज गलत तरीके से दिखने की समस्या ठीक की गई।"
     ],
     "गेम स्पीड बूस्टर": [
@@ -1063,13 +1075,10 @@
       "Timer بېتىدىكى كۇنۇپكىلارنى چەككەندە پارقىراش مەسىلىسى تۈزىتىلدى.",
       "سائەت ئالاھىدە كۈنلەردە يېپىلىپ قېلىش مەسىلىسى تۈزىتىلدى."
     ],
-    "كامېرا": [
+    "فوتو ئاپپارات": [
       "يېڭىدىن قوشۇلدى: AI كامېرا كۆرۈنۈشلىرى: ئاي ھالىتى، مۇنار، گۇرۇپپا سۈرەت",
       "تۈزىتىلدى: سىن ئېلىش ھالىتىدە چېكىنىپ قايتا كىرگەندە كامېرا چوقۇم تاقىلىپ قېلىش مەسىلىسى تۈزىتىلدى.",
-      "تۈزىتىش: ئۇچۇر ئەپىدە كامېرا ئارقىلىق سۈرەت تارتىۋاتقاندا «بىكار قىلىش»نى باسقاندىن كېيىن، كامېرانى قايتا تاللىغاندا كامېرا كاشىلىسى كۆرۈلدى.",
-      "4K@60FPS سىن خاتىرىلەشنى قوللاش قوشۇلدى",
-      "سىن ئېلىش جەريانىدا چېكىپ قايتا كىرگەندە چوقۇم كۆرۈلىدىغان كامېرا تۇيۇقسىز تاقىلىش مەسىلىسىنى تۈزەتتى",
-      "قىسقا ئۇچۇر كامېرا ئارقىلىق سۈرەت تارتقاندا بىكار قىلىشنى باسقاندىن كېيىن، كامېرنى قايتا تاللىغاندا كامېرا كاشىلىسى كۆرۈلۈش مەسىلىسى ئوڭشالدى."
+      "تۈزىتىش: ئۇچۇر ئەپىدە كامېرا ئارقىلىق سۈرەت تارتىۋاتقاندا «بىكار قىلىش»نى باسقاندىن كېيىن، كامېرانى قايتا تاللىغاندا كامېرا كاشىلىسى كۆرۈلدى."
     ],
     "تەڭشەك": [
       "ئەلالاشتۇرۇش: چوڭ خەتلىك كۆرۈنمە يۈزىنىڭ كۆرسىتىش ئۈنۈمى"
@@ -1085,6 +1094,9 @@
       "ياخشىلاندى: بۇلۇت مۇلازىمىتى باش بېتى قايتا لايىھەلەندى، ئىشلەتكىلى بولىدىغان بوشلۇق كۆرسىتىلىشى تېخىمۇ كۆرۈنەرلىك بولدى.",
       "ياخشىلاندى: بۇلۇت مۇلازىمىتىنىڭ يېڭى باش بېتى، بۇلۇت بوشلۇقى ئۇچۇرى تېخىمۇ ئېنىق كۆرسىتىلىدۇ."
     ],
+    "باشقىلىرى": [
+      "ئېكران ئۆچۈپ تۇرغاندا كۆرسىتىلىدىغان مەزمۇننى بەلگىلەنگەن ۋاقىتتا ئۆچۈرەلمەسلىك مەسىلىسى تۈزىتىلدى"
+    ],
     "سىستېما": [
       "Widevine L1 قوللاش قوشۇلدى",
       "ئويۇن تېزلىتىش ئىقتىدارى قوشۇلدى، سىستېما دەرىجىسىدىكى ئويۇن ئەلالاشتۇرۇشىنى يۇقىرى كۆتۈرىدۇ.",
@@ -1094,8 +1106,14 @@
       "قوڭغۇراقنى ئۈزۈش ئاستا بولۇش مەسىلىسىنى تۈزىتىش",
       "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
     ],
-    "باش ئېكران": [
+    "ئۈستەل يۈزى": [
       "WhatsApp سىنبەلگىسىدىكى ئۇقتۇرۇش بەلگىسىنىڭ خاتا كۆرسىتىلىش مەسىلىسى تۈزىتىلدى."
+    ],
+    "كامېرا": [
+      "4K@60FPS سىن خاتىرىلەشنى قوللاش قوشۇلدى",
+      "يېڭىدىن قوشۇلدى: AI كامېرا كۆرۈنۈشلىرى: ئاي ھالىتى، مۇنار، گۇرۇپپا سۈرەت",
+      "سىن ئېلىش جەريانىدا چېكىپ قايتا كىرگەندە چوقۇم كۆرۈلىدىغان كامېرا تۇيۇقسىز تاقىلىش مەسىلىسىنى تۈزەتتى",
+      "قىسقا ئۇچۇر كامېرا ئارقىلىق سۈرەت تارتقاندا بىكار قىلىشنى باسقاندىن كېيىن، كامېرنى قايتا تاللىغاندا كامېرا كاشىلىسى كۆرۈلۈش مەسىلىسى ئوڭشالدى."
     ],
     "تەڭشەكلەر": [
       "تۈزېتىش: ئۇقتۇرۇش ستونىنى تارتىپ چۈشۈرۈپ ماسقەدەملەشنى ئېچىش ياكى تاقاش ئارقىلىق ماسقەدەملەش كۆرۈنمە يۈزىنىڭ يېڭىلانماسلىق مەسىلىسى"
@@ -1113,13 +1131,10 @@
       "Fix: Timer button started flashing after being tapped",
       "ཆུ་ཚོད་ཀྱིས་ཉིན་མོ་དམིགས་བསལ་ཁག་ཅིག་ལ་འཐོར་འགྲོ་བའི་གནད་དོན་བཅོས་སྒྲིག་བྱས་པ།"
     ],
-    "པར་ཆས": [
+    "ཁ་མར།": [
       "New: New modes for AI camera",
       "གསོ་བཅོས། བརྙན་ལེན་གྱི་ཐབས་ལམ་ནས་ཕྱིར་ཐོན་ནས་ཡང་བསྐྱར་འཛུལ་བའི་སྐབས་སུ་པར་ཆས་ཐད་ཀར་ཚུལ་མིན་ཐོན་པ།",
-      "བཅོས་བཟོ། འཕྲིན་ཐུང་ནས་པར་ཆས་བཀོལ་ནས་པར་བླངས་སྐབས་འདོར་བ་མནན་པ་དང་། ཡང་བསྐྱར་པར་ཆས་འདེམས་པ་ན་པར་ཆས་ལ་སྐྱོན་འབྱུང་བ།",
-      "4K@60FPS བརྙན་ཕབ་ལེན་ལ་རྒྱབ་སྐྱོར་གསར་དུ་བསྣན།",
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode",
-      "ཐུང་འཕྲིན་གྱིས་པར་ཆས་བེད་སྤྱད་དེ་པར་བརྒྱབ་སྐབས་རྩིས་མེད་ལ་མནན་པ་དང་། ཡང་བསྐྱར་པར་ཆས་འདེམས་པ་ན་པར་ཆས་ལ་སྐྱོན་འབྱུང་བ་སེལ་བ།"
+      "བཅོས་བཟོ། འཕྲིན་ཐུང་ནས་པར་ཆས་བཀོལ་ནས་པར་བླངས་སྐབས་འདོར་བ་མནན་པ་དང་། ཡང་བསྐྱར་པར་ཆས་འདེམས་པ་ན་པར་ཆས་ལ་སྐྱོན་འབྱུང་བ།"
     ],
     "སྒྲིག་སྟངས།": [
       "Optimization: Big fonts are displayed better now"
@@ -1144,12 +1159,18 @@
       "Fix: Ending calls took longer time than expected",
       "Fix: Status bar shortcut and floating notification for calls appeared at the same time"
     ],
-    "Home screen": [
+    "ཅོག་ངོས": [
       "Fix: Notification badges were displayed incorrectly on the WhatsApp icon"
     ],
     "ཆུ་ཚོད": [
       "དུས་ཚོད་འཛིན་ཆས་ཀྱི་ཤོག་ངོས་སུ་མཐེབ་གནོན་ནོན་སྐབས་འཕྲོ་འཕྲོ་བྱེད་པའི་གནད་དོན་བཅོས་པ།",
       "Fix: Clock force closed on some specific dates"
+    ],
+    "པར་ཆས": [
+      "4K@60FPS བརྙན་ཕབ་ལེན་ལ་རྒྱབ་སྐྱོར་གསར་དུ་བསྣན།",
+      "New: New modes for AI camera",
+      "Fix: Camera force closed when the app was closed and opened again in the Video mode",
+      "ཐུང་འཕྲིན་གྱིས་པར་ཆས་བེད་སྤྱད་དེ་པར་བརྒྱབ་སྐབས་རྩིས་མེད་ལ་མནན་པ་དང་། ཡང་བསྐྱར་པར་ཆས་འདེམས་པ་ན་པར་ཆས་ལ་སྐྱོན་འབྱུང་བ་སེལ་བ།"
     ],
     "སྒྲིག་བཀོད": [
       "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade"

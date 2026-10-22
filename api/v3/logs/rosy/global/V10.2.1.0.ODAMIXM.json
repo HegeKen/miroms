@@ -6,6 +6,7 @@
       "修复 前镜头开启年龄检测后人脸辨识框无法出现的问题"
     ],
     "录音机": [
+      "修复：当录音被暂停时，通知栏中的录音状态信息不会更新。",
       "修复 暂停录音后无法及时更新到状态栏的问题"
     ],
     "系統": [
@@ -41,15 +42,19 @@
       "Fix: Face detection frame didn't appear after the age recognition option had been turned on"
     ],
     "Recorder": [
-      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused",
+      "Fixed the issue where the status bar was not updated promptly after stopping the recording.",
       "Restore Pausing the ongoing recording wasn't reflected in the status bar",
       "Fix the issue where the status bar does not update in time after pausing recording"
+    ],
+    "Phone": [
+      "Fixed an issue where the \"Switch camera\" option in the function area might not be fully displayed during video calls",
+      "Fix an issue where “Switch camera” in the function area might be displayed incompletely during video calls"
     ],
     "System": [
       "Optimization: Updated Android Security Patch to March 2019. Increased system security."
     ],
-    "Phone": [
-      "Fix an issue where “Switch camera” in the function area might be displayed incompletely during video calls"
+    "Settings": [
+      "Fixed the issue where the hotspot could not be enabled when the phone name was set to the maximum length"
     ]
   },
   "logs_zh_tw": {
@@ -58,17 +63,15 @@
       "修復 相機穩定性問題",
       "修復 前鏡頭開啟年齡檢測後人臉辨識框無法出現的問題"
     ],
-    "錄音機": [
-      "修復 暫停錄音後無法即時更新到狀態欄的問題",
-      "修復 暫停錄音後無法及時更新到狀態欄的問題"
+    "录音机": [
+      "修复了在暂停录音后，系统无法及时将录音状态更新到状态栏的问题。"
     ],
     "系統": [
       "優化 更新Android安全性修補程式等級(2019#3)，提升系統安全性",
       "系統Android版本升級到Android Oreo"
     ],
-    "電話": [
-      "修復 視訊電話下功能區'切換鏡頭'可能顯示不完整的問題",
-      "修正 視訊通話下功能區「切換相機」可能顯示不完整的問題"
+    "电话": [
+      "修復 視訊電話下功能區'切換鏡頭'可能顯示不完整的問題"
     ],
     "解鎖畫面、狀態欄、通知欄": [
       "新增 狀態欄新增SOS模式",
@@ -88,6 +91,13 @@
     ],
     "設定": [
       "修復 設定手機名稱為最大長度，熱點無法開啟的問題"
+    ],
+    "錄音機": [
+      "修復 暫停錄音後無法即時更新到狀態欄的問題",
+      "修復 暫停錄音後無法及時更新到狀態欄的問題"
+    ],
+    "電話": [
+      "修正 視訊通話下功能區「切換相機」可能顯示不完整的問題"
     ]
   },
   "logs_ja": {
@@ -97,7 +107,7 @@
       "フロントカメラで年齢検出を有効にした後、顔認識枠が表示されない問題を修正しました。"
     ],
     "レコーダー": [
-      "修正: 録音を一時停止した際、通知シェードの録音状態が更新されない問題"
+      "録音を一時停止した後、ステータスバーの表示がすぐに更新されない問題を修正しました。"
     ],
     "システム": [
       "最適化: Google セキュリティパッチ（2019#3）を更新し、システムの安全性を向上しました。",
@@ -144,8 +154,8 @@
       "카메라 안정성 문제 수정",
       "전면 카메라에서 연령 감지 활성화 후 얼굴 인식 프레임이 표시되지 않는 문제를 수정했습니다."
     ],
-    "녹음기": [
-      "수정: 녹음을 일시중지했을 때 알림 창의 녹음 상태가 업데이트되지 않던 문제"
+    "레코더": [
+      "녹음을 일시 중단한 후 상태 표시줄에 즉시 업데이트되지 않는 문제를 수정했습니다."
     ],
     "시스템": [
       "최적화: Google 보안 패치(2019#3)를 업데이트하여 시스템 보안을 향상했습니다.",
@@ -191,7 +201,7 @@
       "Исправление: После включения определения возраста на фронтальной камере не отображалась рамка распознавания лица"
     ],
     "Диктофон": [
-      "Fix: Факт остановки записи не отображался в строке состояния вовремя",
+      "Устранено недостаток, связанный с тем, что после приостановки записи информация не своевременно отображается в панели состояния.",
       "Исправлено: Факт остановки записи не отображался в строке состояния вовремя"
     ],
     "Система": [
@@ -232,7 +242,7 @@
       "Виправлено проблему, через яку рамка розпізнавання обличчя не з'являлася після ввімкнення визначення віку на фронтальній камері."
     ],
     "Диктофон": [
-      "Виправлено: стан запису не оновлювався в панелі сповіщень під час паузи запису"
+      "Виправлено проблему, коли після призупинення запису інформація не вчасно оновлюється у панелі стану."
     ],
     "Система": [
       "Оптимізація: Оновлено патч безпеки Google (2019#3) для підвищення безпеки системи.",
@@ -279,8 +289,8 @@
       "Naprawiono problem ze stabilnością aparatu",
       "Naprawiono problem z niewyświetlaniem ramki rozpoznawania twarzy po włączeniu wykrywania wieku w przednim aparacie."
     ],
-    "Rejestrator": [
-      "Poprawka: stan nagrywania nie był aktualizowany na pasku powiadomień po wstrzymaniu nagrywania"
+    "Kaseta nagrywająca": [
+      "Poprawiono problem z niewłaściwym aktualizowaniem stanu w pasku stanu po przywołaniu funkcji przerywania nagrywania."
     ],
     "System": [
       "Optymalizacja: Zaktualizowano poprawkę bezpieczeństwa Google (2019#3), zwiększając bezpieczeństwo systemu.",
@@ -326,8 +336,8 @@
       "Kamera-Stabilitätsproblem behoben",
       "Behebung des Problems, dass der Gesichtserkennungsrahmen nach Aktivierung der Alterserkennung an der Frontkamera nicht angezeigt wird."
     ],
-    "Rekorder": [
-      "Behoben: Der Aufnahmestatus wurde in der Benachrichtigungsleiste nicht aktualisiert, wenn eine Aufnahme pausiert wurde"
+    "Tonaufnahmegerät": [
+      "Behebung des Problems, dass sich der Status nach einer Unterbrechung der Aufnahmefunktion nicht rechtzeitig in der Statusleiste aktualisiert."
     ],
     "System": [
       "Optimierung: Android-Sicherheitspatch auf März 2019 aktualisiert. Systemsicherheit erhöht.",
@@ -375,7 +385,7 @@
       "Correction du problème où le cadre de reconnaissance faciale n'apparaît pas après l'activation de la détection d'âge sur la caméra frontale."
     ],
     "Enregistreur": [
-      "Correction : l’état d’enregistrement n’était pas mis à jour dans la barre de notifications lors d’une pause"
+      "Résolution du problème : l'actualisation de l'état dans la barre d'état ne se fait pas immédiatement après l'arrêt de l'enregistrement."
     ],
     "Système": [
       "Optimisation : mise à jour du correctif de sécurité Android de mars 2019. Sécurité du système renforcée.",
@@ -417,13 +427,13 @@
     ]
   },
   "logs_it": {
-    "Fotocamera": [
+    "macchina fotografica": [
       "Correzione: Il riquadro di riconoscimento del viso non appariva dopo aver attivato il rilevamento dell'età sulla fotocamera frontale",
       "Risolto problema di stabilità della fotocamera",
       "Risolto il problema per cui la cornice di riconoscimento del viso non appare dopo aver attivato il rilevamento dell'età sulla fotocamera anteriore."
     ],
     "Registratore": [
-      "Correzione: lo stato di registrazione non veniva aggiornato nella barra delle notifiche quando una registrazione veniva messa in pausa",
+      "Risolto il problema per cui, dopo aver interrotto la registrazione, lo stato della registrazione non veniva aggiornato tempestivamente nella barra di stato.",
       "Risolto: Lo stato della registrazione non era aggiornato nell'area delle notifiche quando una registrazione era messa in pausa"
     ],
     "Sistema": [
@@ -471,7 +481,7 @@
       "Corrección del problema por el que el marco de reconocimiento facial no aparece tras activar la detección de edad en la cámara frontal."
     ],
     "Grabadora": [
-      "Corrección: El estado de grabación no se actualizaba en la barra de notificaciones al pausar una grabación",
+      "Se ha corregido el problema de que, después de detener la grabación, no se actualiza a tiempo la información en la barra de estado.",
       "Se corrige el problema por el que la barra de estado no se actualizaba a tiempo tras pausar la grabación"
     ],
     "Sistema": [
@@ -515,7 +525,7 @@
       "Correção do problema em que a moldura de reconhecimento facial não aparecia após ativar a detecção de idade na câmera frontal."
     ],
     "Gravador": [
-      "Correção: o estado da gravação não era atualizado na barra de notificações ao pausar uma gravação"
+      "Corrigir o problema de não ser possível atualizar a barra de estado de forma imediata após interromper a gravação."
     ],
     "Sistema": [
       "Otimização: Atualizado o patch de segurança do Google (2019#3) para aumentar a segurança do sistema.",
@@ -561,7 +571,7 @@
       "Düzeltme: Ön kamerada yaş algılama açıldıktan sonra yüz tanıma çerçevesi görünmüyordu"
     ],
     "Kayıt Cihazı": [
-      "Düzeltme: Kayıt duraklatıldığında kayıt durumu bildirim çubuğunda güncellenmiyordu"
+      "Kaydı durdurduktan sonra durum çubuğunda zamanında güncelleme yapılamaması sorununu düzelttik."
     ],
     "Sistem": [
       "Optimizasyon: Android Güvenlik Yaması Mart 2019 sürümüne güncellendi. Sistem güvenliği artırıldı.",
@@ -607,7 +617,7 @@
       "Memperbaiki masalah bingkai pengenalan wajah tidak muncul setelah mengaktifkan deteksi usia pada kamera depan."
     ],
     "Perekam": [
-      "Perbaikan: Status perekaman tidak diperbarui di bilah notifikasi saat perekaman dijeda"
+      "Memperbaiki masalah di mana status rekaman tidak diperbarui secara tepat waktu setelah proses pemberhentian rekaman dilakukan."
     ],
     "Sistem": [
       "Optimasi: Memperbarui patch keamanan Google (2019#3) untuk meningkatkan keamanan sistem.",
@@ -657,7 +667,7 @@
       "Đã khắc phục sự cố khung nhận diện khuôn mặt không xuất hiện sau khi bật phát hiện độ tuổi trên camera trước."
     ],
     "Máy ghi âm": [
-      "Đã sửa: Trạng thái ghi âm không được cập nhật kịp thời trên thanh thông báo khi tạm dừng ghi âm"
+      "Khắc phục sự cố khi tạm dừng quá trình ghi âm không thể cập nhật kịp thời thông tin vào thanh trạng thái."
     ],
     "Hệ thống": [
       "Tối ưu hóa: Đã cập nhật bản vá bảo mật Google (2019#3) để nâng cao bảo mật hệ thống.",
@@ -701,7 +711,7 @@
       "แก้ไขปัญหาที่กรอบการจดจำใบหน้าไม่แสดงขึ้นหลังจากเปิดการตรวจจับอายุบนกล้องหน้า"
     ],
     "เครื่องบันทึกเสียง": [
-      "แก้ไข: สถานะการบันทึกเสียงไม่ได้รับการอัปเดตในแถบการแจ้งเตือนเมื่อหยุดการบันทึกชั่วคราว"
+      "แก้ไขปัญหาที่การหยุดบันทึกเสียงไม่สามารถอัปเดตสถานะในแถบสถานะ (status bar) ได้อย่างทันท่วงที"
     ],
     "ระบบ": [
       "การปรับให้เหมาะสม: อัปเดตแพตช์ความปลอดภัยของ Google (2019#3) เพื่อเพิ่มความปลอดภัยของระบบ",
@@ -748,8 +758,8 @@
       "إصلاح مشكلة استقرار الكاميرا",
       "إصلاح مشكلة عدم ظهور إطار التعرّف على الوجه بعد تفعيل اكتشاف العمر في الكاميرا الأمامية"
     ],
-    "مسجل": [
-      "إصلاح: لم يتم تحديث حالة التسجيل في شريط الإشعارات عند إيقاف التسجيل مؤقتًا"
+    "جهاز التسجيل": [
+      "تم إصلاح المشكلة التي تمنع تحديث حالة الجهاز بشكل فوري بعد توقف عملية التسجيل."
     ],
     "النظام": [
       "تحسين: تم تحديث تصحيح أمان Google (2019#3) لتحسين أمان النظام.",
@@ -798,7 +808,7 @@
       "फ्रंट कैमरा पर आयु पहचान सक्षम करने के बाद चेहरा पहचान फ़्रेम न दिखने की समस्या ठीक की गई।"
     ],
     "रिकॉर्डर": [
-      "समस्या ठीक की गई: रिकॉर्डिंग पॉज़ करने पर नोटिफ़िकेशन शेड में स्थिति तुरंत अपडेट नहीं होती थी"
+      "वह समस्या दूर की गई है जिसके कारण रिकॉर्डिंग रोकने के बाद स्टेट बार (Status Bar) में समय पर अपडेट नहीं हो पाता था।"
     ],
     "सिस्टम": [
       "अनुकूलन: Google सुरक्षा पैच (2019#3) अपडेट किया गया, सिस्टम सुरक्षा में सुधार।",
@@ -840,13 +850,13 @@
     ]
   },
   "logs_ug": {
-    "كامېرا": [
+    "فوتو ئاپپارات": [
       "تۈزىتىش: ئالدى كامېرىدا ياشنى تونۇش ئېچىلغاندىن كېيىن يۈز تونۇش رامكىسى كۆرۈنمەيدىغان مەسىلە",
       "كامېرا مۇقىملىق مەسىلىسىنى ئوڭشالدى",
       "ئالدى كامېرىدا ياشنى ئېنىقلاشنى ئاچقاندىن كېيىن يۈز تونۇش رامكىسىنىڭ كۆرۈنمەسلىك مەسىلىسى تۈزىتىلدى."
     ],
-    "ئاۋاز ئالغۇ": [
-      "ئۈن ئېلىش توختىتىلغاندىن كېيىن ئۇقتۇرۇش تاختىسىدا ھالەت ۋاقتىدا يېڭىلانماسلىق مەسىلىسى تۈزىتىلدى"
+    "ئۈن خاتىرىلەش ماشىنىسى": [
+      "ئۈن ئالماشتۇرۇشنى توختاتقاندىن كېيىن ، ھالەت سترېكچىسىگە (status bar) ئۆزۋاقتىدا يېڭىلاش مۇمكىن بولماسلىق مەسىلىسىنى تۈزى دۇق."
     ],
     "سىستېما": [
       "ئەلالاشتۇرۇش: Google بىخەتەرلىك يامىقى يېڭىلاندى (2019#3)، سىستېما بىخەتەرلىكى ئاشۇرۇلدى.",
@@ -872,17 +882,18 @@
       "تېلېفون نامىنى ئەڭ چوڭ ئۇزۇنلۇققا بەلگىلىگەندە ھوتسپوت ئېچىلمايدىغان مەسىلىنى تۈزىتىش"
     ],
     "Recorder": [
-      "ئۈن ئېلىشنى توختىتىپ قويغاندىن كېيىن ھالەت بالدىقىغا ۋاقتىدا يېڭىلانماسلىق مەسىلىسى تۈزىتىلدى"
+      "ئۈن ئېلىشنى توختىتىپ قويغاندىن كېيىن ھالەت بالدىقىغا ۋاقتىدا يېڭىلانماسلىق مەسىلىسى تۈزىتىلدى",
+      "ئۈن ئېلىشنى ۋاقىتلىق توختاتقاندىن كېيىن ھالەت بالدىقىنىڭ ۋاقتىدا يېڭىلانماسلىق مەسىلىسى تۈزىتىلدى."
     ]
   },
   "logs_bo": {
-    "པར་ཆས": [
+    "ཁ་མར།": [
       "མདུན་པར་ཆས་ཀྱི་ལོ་ཚད་ཤེས་འཛིན་ཁ་ཕྱེ་རྗེས་གདོང་ངོ་ཤེས་སྒྲོམ་མངོན་མི་ཐུབ་པའི་སྐྱོན་བཟོས་པ།",
       "Fix: Camera's stability issues",
       "Fix: Face detection frame didn't appear after the age recognition option had been turned on"
     ],
     "སྒྲ་འཇུག་ཆས": [
-      "སྒྲ་ཕབ་མཚམས་འཇོག་བྱས་རྗེས་གནས་ཚུལ་ཕྲེང་ལ་དུས་ཐོག་ཏུ་གསར་སྒྱུར་མི་ཐུབ་པའི་གནད་དོན་བཅོས་ཡོད།"
+      "ཡིག་སྒྲོན་གྱི་རྣམ་པར་བཟོ་བཅོས་བརྒྱབ་རྗེས་སྒྲ་ཕབ་མཚམས་འཇོག་བྱས་ན་དུས་ཐོག་ཏུ་གསར་སྒྱུར་བྱེད་མི་ཐུབ་པའི་གནད་དོན་ཐག་གཅོད།"
     ],
     "མ་ལག": [
       "ལེགས་བཅོས། Google བདེ་འཇགས་ཁ་གསབ (2019#3) གསར་སྤེལ་བྱས་ཏེ། རྒྱུད་ཁོངས་ཀྱི་བདེ་འཇགས་ཡར་རྒྱས་བཏང་བ།",

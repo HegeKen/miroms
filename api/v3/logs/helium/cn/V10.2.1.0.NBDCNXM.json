@@ -17,6 +17,7 @@
       "修复 搜索界面图标显示异常的问题"
     ],
     "录音机": [
+      "修复：当录音被暂停时，通知栏中的录音状态信息不会更新。",
       "修复 暂停录音后无法及时更新到状态栏的问题"
     ],
     "其他": [
@@ -44,7 +45,7 @@
       "Fix: Icons on the search page were displayed incorrectly"
     ],
     "Recorder": [
-      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused",
+      "Fixed the issue where the status bar was not updated promptly after stopping the recording.",
       "Restore Recording status wasn't updated in the Notification shade when a recording was paused"
     ],
     "Other": [
@@ -61,7 +62,7 @@
     "相機": [
       "修復 全面屏下相機參考線問題"
     ],
-    "設定": [
+    "设置": [
       "修復 設定手機名稱為最大長度，熱點無法開啟的問題"
     ],
     "系統更新": [
@@ -71,11 +72,17 @@
       "修復 私密資料夾中剪切圖片影片後開啟檔案異常的問題",
       "修正 搜尋介面圖示顯示異常的問題"
     ],
-    "錄音機": [
-      "修復 暫停錄音後無法即時更新到狀態欄的問題"
+    "录音机": [
+      "修复了在暂停录音后，系统无法及时将录音状态更新到状态栏的问题。"
     ],
     "其他": [
       "Improved system security and stability"
+    ],
+    "設定": [
+      "修復 設定手機名稱為最大長度，熱點無法開啟的問題"
+    ],
+    "錄音機": [
+      "修復 暫停錄音後無法即時更新到狀態欄的問題"
     ]
   },
   "logs_ja": {
@@ -97,7 +104,7 @@
       "検索画面のアイコンが正しく表示されない問題を修正"
     ],
     "レコーダー": [
-      "修正: 録音を一時停止した際、通知シェードの録音状態が更新されない問題"
+      "録音を一時停止した後、ステータスバーの表示がすぐに更新されない問題を修正しました。"
     ],
     "その他": [
       "システムのセキュリティと安定性の向上"
@@ -127,8 +134,8 @@
       "비공개 폴더에서 사진 및 동영상을 잘라낸 후 파일을 여는 오류를 수정",
       "검색 화면의 아이콘이 비정상적으로 표시되는 문제를 수정"
     ],
-    "녹음기": [
-      "수정: 녹음을 일시중지했을 때 알림 창의 녹음 상태가 업데이트되지 않던 문제"
+    "레코더": [
+      "녹음을 일시 중단한 후 상태 표시줄에 즉시 업데이트되지 않는 문제를 수정했습니다."
     ],
     "기타": [
       "시스템 보안 및 안정성 개선"
@@ -159,7 +166,7 @@
       "Исправлена проблема с неправильным отображением значков на экране поиска"
     ],
     "Диктофон": [
-      "Fix: Факт остановки записи не отображался в строке состояния вовремя",
+      "Устранено недостаток, связанный с тем, что после приостановки записи информация не своевременно отображается в панели состояния.",
       "Исправлено: Факт остановки записи не отображался в строке состояния вовремя"
     ],
     "Другое": [
@@ -189,7 +196,7 @@
       "Виправлено проблему з неправильним відображенням значків на екрані пошуку"
     ],
     "Диктофон": [
-      "Виправлено: стан запису не оновлювався в панелі сповіщень під час паузи запису"
+      "Виправлено проблему, коли після призупинення запису інформація не вчасно оновлюється у панелі стану."
     ],
     "Інше": [
       "Покращення безпеки та стабільності системи"
@@ -216,10 +223,10 @@
       "Naprawiono błąd otwierania plików po wycięciu zdjęć i filmów w folderze prywatnym",
       "Naprawiono problem z nieprawidłowym wyświetlaniem ikon na ekranie wyszukiwania"
     ],
-    "Rejestrator": [
-      "Poprawka: stan nagrywania nie był aktualizowany na pasku powiadomień po wstrzymaniu nagrywania"
+    "Kaseta nagrywająca": [
+      "Poprawiono problem z niewłaściwym aktualizowaniem stanu w pasku stanu po przywołaniu funkcji przerywania nagrywania."
     ],
-    "Inne": [
+    "Reszt": [
       "Większe bezpieczeństwo i stabilność systemu"
     ],
     "Recorder": [
@@ -247,8 +254,8 @@
       "Fehler beim Öffnen von Dateien nach dem Ausschneiden von Bildern und Videos im privaten Ordner behoben",
       "Problem mit der fehlerhaften Anzeige von Symbolen auf dem Suchbildschirm behoben"
     ],
-    "Rekorder": [
-      "Behoben: Der Aufnahmestatus wurde in der Benachrichtigungsleiste nicht aktualisiert, wenn eine Aufnahme pausiert wurde"
+    "Tonaufnahmegerät": [
+      "Behebung des Problems, dass sich der Status nach einer Unterbrechung der Aufnahmefunktion nicht rechtzeitig in der Statusleiste aktualisiert."
     ],
     "Sonstiges": [
       "Systemsicherheit und -stabilität verbessert"
@@ -280,7 +287,7 @@
       "Correction du problème d’affichage incorrect des icônes sur l’écran de recherche"
     ],
     "Enregistreur": [
-      "Correction : l’état d’enregistrement n’était pas mis à jour dans la barre de notifications lors d’une pause"
+      "Résolution du problème : l'actualisation de l'état dans la barre d'état ne se fait pas immédiatement après l'arrêt de l'enregistrement."
     ],
     "Autre": [
       "Sécurité et stabilité du système améliorées"
@@ -296,7 +303,7 @@
     "Schermata di blocco, barra di stato, area delle notifiche": [
       "Risolto il problema della sovrapposizione tra pallina di ricarica e tempo di ricarica stimato nella schermata di blocco"
     ],
-    "Fotocamera": [
+    "macchina fotografica": [
       "Correzione: problemi con le linee della griglia in modalità a schermo intero"
     ],
     "Impostazioni": [
@@ -311,7 +318,7 @@
       "Risolto il problema di visualizzazione errata delle icone nella schermata di ricerca"
     ],
     "Registratore": [
-      "Correzione: lo stato di registrazione non veniva aggiornato nella barra delle notifiche quando una registrazione veniva messa in pausa",
+      "Risolto il problema per cui, dopo aver interrotto la registrazione, lo stato della registrazione non veniva aggiornato tempestivamente nella barra di stato.",
       "Risolto: Lo stato della registrazione non era aggiornato nell'area delle notifiche quando una registrazione veniva messa in pausa"
     ],
     "Altro": [
@@ -328,9 +335,8 @@
     "Cámara": [
       "Corrección: problemas con las líneas de cuadrícula en el modo de pantalla completa"
     ],
-    "Ajustes": [
-      "Reparado: No se pudo activar el punto de acceso portátil cuando el nombre del dispositivo fue establecido a la máxima longitud",
-      "Se corrige el problema por el que no se podía activar el punto de acceso cuando el nombre del teléfono se establecía en la longitud máxima"
+    "Configuración": [
+      "Reparado: No se pudo activar el punto de acceso portátil cuando el nombre del dispositivo fue establecido a la máxima longitud"
     ],
     "Actualizador": [
       "Nuevo: función de acceso directo en la pantalla de inicio. Se puede activar en los ajustes de actualización."
@@ -340,11 +346,15 @@
       "Se corrigió el problema de visualización incorrecta de los iconos en la pantalla de búsqueda"
     ],
     "Grabadora": [
-      "Corrección: El estado de grabación no se actualizaba en la barra de notificaciones al pausar una grabación",
+      "Se ha corregido el problema de que, después de detener la grabación, no se actualiza a tiempo la información en la barra de estado.",
       "Reparado: El estado de la grabación no fue actualizado en la Barra de notificaciones cuando la grabación fue pausada"
     ],
     "Otros": [
       "Estabilidad y seguridad del sistema mejorada"
+    ],
+    "Ajustes": [
+      "Reparado: No se pudo activar el punto de acceso portátil cuando el nombre del dispositivo fue establecido a la máxima longitud",
+      "Se corrige el problema por el que no se podía activar el punto de acceso cuando el nombre del teléfono se establecía en la longitud máxima"
     ],
     "Pantalla de bloqueo, barra de estado, panel de notificaciones": [
       "Se corrige la superposición entre el indicador de carga y el tiempo estimado de carga en la pantalla de bloqueo"
@@ -370,7 +380,7 @@
       "Corrigido o problema de exibição incorreta dos ícones na tela de pesquisa"
     ],
     "Gravador": [
-      "Correção: o estado da gravação não era atualizado na barra de notificações ao pausar uma gravação"
+      "Corrigir o problema de não ser possível atualizar a barra de estado de forma imediata após interromper a gravação."
     ],
     "Outros": [
       "Segurança e estabilidade do sistema aprimoradas"
@@ -401,7 +411,7 @@
       "Arama ekranındaki simgelerin yanlış görüntülenmesi sorunu giderildi"
     ],
     "Kayıt Cihazı": [
-      "Düzeltme: Kayıt duraklatıldığında kayıt durumu bildirim çubuğunda güncellenmiyordu"
+      "Kaydı durdurduktan sonra durum çubuğunda zamanında güncelleme yapılamaması sorununu düzelttik."
     ],
     "Diğer": [
       "Sistem güvenliği ve kararlılığı geliştirildi"
@@ -432,7 +442,7 @@
       "Memperbaiki masalah ikon yang ditampilkan secara tidak normal di layar pencarian"
     ],
     "Perekam": [
-      "Perbaikan: Status perekaman tidak diperbarui di bilah notifikasi saat perekaman dijeda"
+      "Memperbaiki masalah di mana status rekaman tidak diperbarui secara tepat waktu setelah proses pemberhentian rekaman dilakukan."
     ],
     "Lainnya": [
       "Keamanan dan stabilitas sistem ditingkatkan"
@@ -468,7 +478,7 @@
       "Đã khắc phục sự cố biểu tượng hiển thị bất thường trên màn hình tìm kiếm"
     ],
     "Máy ghi âm": [
-      "Đã sửa: Trạng thái ghi âm không được cập nhật kịp thời trên thanh thông báo khi tạm dừng ghi âm"
+      "Khắc phục sự cố khi tạm dừng quá trình ghi âm không thể cập nhật kịp thời thông tin vào thanh trạng thái."
     ],
     "Khác": [
       "Cải thiện tính ổn định và bảo mật hệ thống"
@@ -500,7 +510,7 @@
       "แก้ไขปัญหาการแสดงไอคอนบนหน้าจอค้นหาผิดปกติ"
     ],
     "เครื่องบันทึกเสียง": [
-      "แก้ไข: สถานะการบันทึกเสียงไม่ได้รับการอัปเดตในแถบการแจ้งเตือนเมื่อหยุดการบันทึกชั่วคราว"
+      "แก้ไขปัญหาที่การหยุดบันทึกเสียงไม่สามารถอัปเดตสถานะในแถบสถานะ (status bar) ได้อย่างทันท่วงที"
     ],
     "อื่นๆ": [
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
@@ -531,10 +541,10 @@
       "إصلاح مشكلة فتح الملفات بشكل غير طبيعي بعد قص الصور ومقاطع الفيديو في المجلد الخاص",
       "إصلاح مشكلة عرض الأيقونات بشكل غير طبيعي في شاشة البحث"
     ],
-    "مسجل": [
-      "إصلاح: لم يتم تحديث حالة التسجيل في شريط الإشعارات عند إيقاف التسجيل مؤقتًا"
+    "جهاز التسجيل": [
+      "تم إصلاح المشكلة التي تمنع تحديث حالة الجهاز بشكل فوري بعد توقف عملية التسجيل."
     ],
-    "أخرى": [
+    "آخرين": [
       "تحسين أمن واستقرار النظام"
     ],
     "Recorder": [
@@ -563,7 +573,7 @@
       "खोज स्क्रीन पर आइकन के गलत तरीके से प्रदर्शित होने की समस्या ठीक की गई"
     ],
     "रिकॉर्डर": [
-      "समस्या ठीक की गई: रिकॉर्डिंग पॉज़ करने पर नोटिफ़िकेशन शेड में स्थिति तुरंत अपडेट नहीं होती थी"
+      "वह समस्या दूर की गई है जिसके कारण रिकॉर्डिंग रोकने के बाद स्टेट बार (Status Bar) में समय पर अपडेट नहीं हो पाता था।"
     ],
     "अन्य": [
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
@@ -573,7 +583,10 @@
     ]
   },
   "logs_ug": {
-    "كامېرا": [
+    "Lockscreen, status bar, Notification shade": [
+      "قۇلۇپ ئېكرانىدا زەرەتلەش شارى بىلەن مۆلچەرلەنگەن زەرەتلەش ۋاقتىنىڭ كۆرسىتىلىشى ئۈستى-ئۈستى چۈشۈپ قېلىش مەسىلىسىنى تۈزەتتى."
+    ],
+    "فوتو ئاپپارات": [
       "تولۇق ئېكران ھالىتىدىكى كامېرا تور سىزىقلىرى مەسىلىسىنى تۈزىتىش"
     ],
     "تەڭشەك": [
@@ -582,8 +595,12 @@
     "Updater": [
       "يېڭى: باش ئېكران تېز يوللانمىسى ئىقتىدارى. يېڭىلاش تەڭشەكلىرىدە قوزغىتىشقا بولىدۇ."
     ],
-    "ئاۋاز ئالغۇ": [
-      "ئۈن ئېلىش توختىتىلغاندىن كېيىن ئۇقتۇرۇش تاختىسىدا ھالەت ۋاقتىدا يېڭىلانماسلىق مەسىلىسى تۈزىتىلدى"
+    "ھۆججەت باشقۇرغۇچ": [
+      "شەخسىي قىسقۇچتىكى رەسىم ۋە سىنلارنى كېسكەندىن كېيىن ھۆججەتنى ئېچىشتىكى كاشىلا ئوڭشالدى",
+      "ئىزدەش كۆرۈنمە يۈزىدىكى سىنبەلگىلەرنىڭ خاتا كۆرۈنۈش مەسىلىسى تۈزىتىلدى."
+    ],
+    "ئۈن خاتىرىلەش ماشىنىسى": [
+      "ئۈن ئالماشتۇرۇشنى توختاتقاندىن كېيىن ، ھالەت سترېكچىسىگە (status bar) ئۆزۋاقتىدا يېڭىلاش مۇمكىن بولماسلىق مەسىلىسىنى تۈزى دۇق."
     ],
     "باشقىلىرى": [
       "Improved system security and stability"
@@ -595,17 +612,23 @@
     ],
     "Recorder": [
       "ئۈن ئېلىشنى توختىتىپ قويغاندىن كېيىن ئۈن ئېلىش ھالىتىنىڭ ھالەت بالدىقىغا ۋاقتىدا يېڭىلانماسلىق مەسىلىسى ئوڭشىلدى."
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "قۇلۇپ ئېكرانىدا زەرەتلەش شارى بىلەن مۆلچەرلەنگەن زەرەتلەش ۋاقتىنىڭ كۆرسىتىلىشى ئۈستى-ئۈستى چۈشۈپ قېلىش مەسىلىسىنى تۈزەتتى."
     ]
   },
   "logs_bo": {
-    "པར་ཆས": [
+    "ཁ་མར།": [
       "Fix: Issues with gridlines in the fullscreen mode"
     ],
     "སྒྲིག་སྟངས།": [
       "Fix: Couldn't turn on portable hotspot when device name was set to maximum length"
     ],
+    "Updater": [
+      "གསར་བསྣན། ཅོག་ངོས་མགྱོགས་ལམ་གྱི་ཁྱད་ཆོས་དེ་གསར་སྒྱུར་སྒྲིག་བཀོད་ནང་ཁ་ཕྱེ་ཆོག"
+    ],
     "སྒྲ་འཇུག་ཆས": [
-      "སྒྲ་ཕབ་མཚམས་འཇོག་བྱས་རྗེས་གནས་ཚུལ་ཕྲེང་ལ་དུས་ཐོག་ཏུ་གསར་སྒྱུར་མི་ཐུབ་པའི་གནད་དོན་བཅོས་ཡོད།"
+      "ཡིག་སྒྲོན་གྱི་རྣམ་པར་བཟོ་བཅོས་བརྒྱབ་རྗེས་སྒྲ་ཕབ་མཚམས་འཇོག་བྱས་ན་དུས་ཐོག་ཏུ་གསར་སྒྱུར་བྱེད་མི་ཐུབ་པའི་གནད་དོན་ཐག་གཅོད།"
     ],
     "གཞན།": [
       "Improved system security and stability"

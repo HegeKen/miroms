@@ -47,13 +47,13 @@
     "解鎖畫面、狀態欄、通知欄": [
       "修復 螢幕鎖定時充電球與預計充電時間顯示重疊的問題"
     ],
-    "設定": [
+    "设置": [
       "修復 設定手機名稱為最大長度，熱點無法開啟的問題"
     ],
     "系統更新": [
       "新增 桌面捷徑功能，可在更新設定中開啟"
     ],
-    "檔案管理員": [
+    "文件管理器": [
       "修正 在某些情況下，縮圖未及時更新的問題",
       "修正 搜尋介面圖示顯示異常的問題",
       "修復 私密資料夾中剪切圖片影片後開啟檔案異常的問題"
@@ -119,7 +119,7 @@
     "Обновление": [
       "Добавлено: функция ярлыка на главном экране. Можно включить в настройках обновления."
     ],
-    "Файловый менеджер": [
+    "Проводник файлов": [
       "Исправлена проблема, из-за которой в некоторых случаях миниатюры не обновлялись вовремя",
       "Исправлена проблема с неправильным отображением значков на экране поиска",
       "Исправлена ошибка открытия файлов после вырезания изображений и видео в приватной папке"
@@ -129,6 +129,9 @@
     ],
     "Экран блокировки, строка состояния, панель уведомлений": [
       "Исправлено наложение индикатора зарядки и предполагаемого времени зарядки на экране блокировки"
+    ],
+    "Файловый менеджер": [
+      "Исправлена ошибка открытия файлов после вырезания изображений и видео в приватной папке"
     ]
   },
   "logs_uk": {
@@ -141,7 +144,7 @@
     "Оновлення": [
       "Додано: функція ярлика на головному екрані. Можна ввімкнути в налаштуваннях оновлення."
     ],
-    "Файловий менеджер": [
+    "Провідник файлів": [
       "Виправлено проблему, через яку в деяких випадках мініатюри не оновлювалися вчасно",
       "Виправлено проблему з неправильним відображенням значків на екрані пошуку",
       "Виправлено помилку відкриття файлів після вирізання зображень і відео в приватній папці"
@@ -151,6 +154,9 @@
     ],
     "Екран блокування, рядок стану, панель сповіщень": [
       "Виправлено накладання індикатора заряджання та орієнтовного часу заряджання на екрані блокування"
+    ],
+    "Файловий менеджер": [
+      "Виправлено помилку відкриття файлів після вирізання зображень і відео в приватній папці"
     ]
   },
   "logs_pl": {
@@ -168,7 +174,7 @@
       "Naprawiono problem z nieprawidłowym wyświetlaniem ikon na ekranie wyszukiwania",
       "Naprawiono błąd otwierania plików po wycięciu zdjęć i filmów w folderze prywatnym"
     ],
-    "Inne": [
+    "Reszt": [
       "Większe bezpieczeństwo i stabilność systemu"
     ],
     "Ekran blokady, pasek stanu, panel powiadomień": [
@@ -229,7 +235,7 @@
     "Aggiornamenti": [
       "Novità: funzione di scorciatoia nella schermata Home. Si può attivare nelle impostazioni di aggiornamento."
     ],
-    "Gestione file": [
+    "File Manager": [
       "Risolto il problema per cui in alcuni casi le miniature non si aggiornavano in tempo",
       "Risolto il problema di visualizzazione errata delle icone nella schermata di ricerca",
       "Risolto il problema di apertura dei file dopo il taglio di immagini e video nella cartella privata"
@@ -248,7 +254,7 @@
     "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
       "Se corrige la superposición entre el indicador de carga y el tiempo estimado de carga en la pantalla de bloqueo"
     ],
-    "Ajustes": [
+    "Configuración": [
       "Reparado: No se pudo activar el punto de acceso portátil cuando el nombre del dispositivo fue establecido a la máxima longitud"
     ],
     "Actualizador": [
@@ -320,7 +326,7 @@
     "Pembaruan sistem": [
       "Baru: Fitur pintasan layar Utama. Dapat diaktifkan di pengaturan pembaruan."
     ],
-    "Pengelola File": [
+    "File Manager": [
       "Memperbaiki masalah thumbnail tidak diperbarui tepat waktu dalam beberapa kasus",
       "Memperbaiki masalah ikon yang ditampilkan secara tidak normal di layar pencarian",
       "Memperbaiki masalah pembukaan file setelah memotong gambar dan video di folder privat"
@@ -394,7 +400,7 @@
       "إصلاح مشكلة عرض الأيقونات بشكل غير طبيعي في شاشة البحث",
       "إصلاح مشكلة فتح الملفات بشكل غير طبيعي بعد قص الصور ومقاطع الفيديو في المجلد الخاص"
     ],
-    "أخرى": [
+    "آخرين": [
       "تحسين أمن واستقرار النظام"
     ],
     "شاشة القفل، شريط الحالة، لوحة الإشعارات": [
@@ -424,19 +430,33 @@
     ]
   },
   "logs_ug": {
+    "قۇلۇپ ئېكرانى، ھالەت بالدىقى، ئۇقتۇرۇش بالدىقى": [
+      "قۇلۇپ ئېكرانىدا زەرەتلەش شارى بىلەن مۆلچەرلەنگەن زەرەتلەش ۋاقتىنىڭ كۆرسىتىلىشى ئۈستى-ئۈستى چۈشۈپ قېلىش مەسىلىسىنى تۈزەتتى."
+    ],
     "تەڭشەك": [
       "ئوڭشاش: ئۈسكۈنىنىڭ نامى ئەڭ چوڭ ئۇزۇنلۇققا تەڭشەلگەندە كۆچمە ھوتسپوتنى ئاچقىلى بولمىدى"
     ],
     "Updater": [
       "يېڭى: باش ئېكران تېز يوللانمىسى ئىقتىدارى. يېڭىلاش تەڭشەكلىرىدە قوزغىتىشقا بولىدۇ."
     ],
+    "ھۆججەت باشقۇرغۇچ": [
+      "بەزى ئەھۋاللاردا كىچىك سۈرەتلەرنىڭ ۋاقتىدا يېڭىلانماسلىق مەسىلىسى تۈزىتىلدى",
+      "ئىزدەش كۆرۈنمە يۈزىدىكى سىنبەلگىلەرنىڭ خاتا كۆرۈنۈش مەسىلىسى تۈزىتىلدى.",
+      "شەخسىي قىسقۇچتىكى رەسىم ۋە سىنلارنى كېسكەندىن كېيىن ھۆججەتنى ئېچىشتىكى كاشىلا ئوڭشالدى"
+    ],
     "باشقىلىرى": [
       "Improved system security and stability"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "قۇلۇپ ئېكرانىدا زەرەتلەش شارى بىلەن مۆلچەرلەنگەن زەرەتلەش ۋاقتىنىڭ كۆرسىتىلىشى ئۈستى-ئۈستى چۈشۈپ قېلىش مەسىلىسىنى تۈزەتتى."
     ]
   },
   "logs_bo": {
     "སྒྲིག་སྟངས།": [
       "Fix: Couldn't turn on portable hotspot when device name was set to maximum length"
+    ],
+    "Updater": [
+      "གསར་བསྣན། ཅོག་ངོས་མགྱོགས་ལམ་གྱི་ཁྱད་ཆོས་དེ་གསར་སྒྱུར་སྒྲིག་བཀོད་ནང་ཁ་ཕྱེ་ཆོག"
     ],
     "གཞན།": [
       "Improved system security and stability"

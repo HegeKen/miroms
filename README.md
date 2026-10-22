@@ -313,7 +313,7 @@ python3 scripts/maintain_logs.py                        # 体检（只读）：�
                                                         # 孤儿行、content 不一致、哈希过期、掩码、id 空档
 python3 scripts/maintain_logs.py --report /tmp/audit.json
 python3 scripts/maintain_logs.py content --apply        # 以 logs_zh 为准重建 content / content_hash
-python3 scripts/maintain_logs.py masks --apply          # 补齐掩码（新掩码 = 原掩码 | 公共语言掩码）
+python3 scripts/maintain_logs.py masks --apply          # 补齐掩码（只补本 ROM 已声明过的语言）
 python3 scripts/maintain_logs.py masks --clean-invalid --apply  # 删除「模块行已无该语言」的无效掩码位
 python3 scripts/maintain_logs.py prefix --apply          # 去掉 content/语言列开头的空白和标点（* 除外）
 python3 scripts/maintain_logs.py ids --apply            # 压缩 logs id + 重写引用（自动备份）
@@ -325,6 +325,8 @@ python3 scripts/maintain_logs.py compare --before /tmp/logs_before.json.gz
 ```
 
 所有动作默认 dry-run，只有 `--apply` 才写库。掩码补齐「只增不减」，不会让任何 ROM 的导出结果回退；
+补位只在本 ROM / 开发版自己声明过的语言范围内进行——`logs` 行跨 ROM 复用，别的 ROM 可能把共享行
+补齐了全部译文，越过这个范围补位会把不属于本 ROM 的语言写进掩码；
 `ids` / `unused` 属于破坏性操作，都会先刷新导出缓存。
 
 `merge` 用于「自动去重无法判定」的场景：两行中文相同，但一方的某门外语其实只是英文回落
@@ -360,8 +362,7 @@ python3 scripts/proofread_logs.py check --ids 2998 --json /tmp/check.json
 
 # 2) 全库扫描 → AI 复核 → 计划 → 写库
 python3 scripts/proofread_logs.py scan --report /tmp/proofread_scan.json
-python3 scripts/proofread_logs.py review --scan /tmp/proofread_scan.json \
-        --cache /tmp/proofread_cache.json --decisions /tmp/proofread_decisions.json
+python3 scripts/proofread_logs.py review --scan /tmp/proofread_scan.json --cache /tmp/proofread_cache.json --decisions /tmp/proofread_decisions.json
 python3 scripts/proofread_logs.py apply --decisions /tmp/proofread_decisions.json --allow-clear
 python3 scripts/proofread_logs.py apply --decisions /tmp/proofread_decisions.json --allow-clear --apply
 ```

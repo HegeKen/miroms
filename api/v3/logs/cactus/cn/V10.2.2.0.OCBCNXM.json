@@ -19,6 +19,20 @@
     ]
   },
   "logs_en": {
+    "System": [
+      "Fixed several issues affecting system security and stability."
+    ],
+    "Phone": [
+      "Fixed an issue where audio did not switch to the speaker after hanging up an incoming call during a WeChat video or voice call."
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Fix brightness jump issue when entering unlock password after reboot",
+      "Fix abnormal Bluetooth unlock issue",
+      "Fixed an issue where the notification toggle could not be enabled in app settings after it was disabled from the notification shade"
+    ],
+    "Settings": [
+      "Optimize accessibility settings item hierarchy logic"
+    ],
     "Other": [
       "Improved system security and stability"
     ]
@@ -27,96 +41,337 @@
     "系統": [
       "修復 影響系統安全性與穩定性的若干問題"
     ],
+    "电话": [
+      "修復 微信視訊或語音通話過程中來電掛斷後，聲音未切換至揚聲器的問題"
+    ],
+    "解鎖畫面、狀態欄、通知欄": [
+      "修復 重啟後輸入解鎖密碼過程中的亮度跳變問題",
+      "修復 藍牙解鎖異常的問題",
+      "修復 在通知欄關閉應用通知開關，進入應用設定無法開啟通知開關的問題"
+    ],
+    "设置": [
+      "最佳化無障礙設定項層級邏輯"
+    ],
     "其他": [
       "Improved system security and stability"
     ]
   },
   "logs_ja": {
+    "システム": [
+      "システムの安全性と安定性に影響するいくつかの問題を修正しました。"
+    ],
+    "電話": [
+      "WeChatのビデオ通話または音声通話中に着信を切った後、音声がスピーカーに切り替わらない問題を修正しました。"
+    ],
+    "ロック画面、ステータスバー、通知バー": [
+      "再起動後のロック解除パスワード入力時における明るさの跳ねを修正",
+      "Bluetoothロック解除の異常を修正",
+      "通知シェードでアプリの通知スイッチをオフにした後、アプリ設定で通知スイッチをオンにできない問題を修正"
+    ],
+    "設定": [
+      "アクセシビリティ設定項目の階層ロジックを最適化"
+    ],
     "その他": [
       "システムのセキュリティと安定性の向上"
     ]
   },
   "logs_ko": {
+    "시스템": [
+      "시스템 보안 및 안정성에 영향을 미치는 몇 가지 문제를 수정했습니다."
+    ],
+    "전화": [
+      "WeChat 영상 또는 음성 통화 중 수신 전화를 끊은 후 소리가 스피커로 전환되지 않는 문제를 수정했습니다."
+    ],
+    "잠금 화면, 상태 표시줄, 알림 표시줄": [
+      "재부팅 후 잠금 해제 비밀번호 입력 중 밝기가 갑자기 변하는 문제를 수정",
+      "블루투스 잠금 해제 이상 문제 수정",
+      "알림 창에서 앱 알림 스위치를 끈 후 앱 설정에서 알림 스위치를 켤 수 없는 문제를 수정"
+    ],
+    "설정": [
+      "접근성 설정 항목 계층 구조 로직 최적화"
+    ],
     "기타": [
       "시스템 보안 및 안정성 개선"
     ]
   },
   "logs_ru": {
+    "Система": [
+      "Исправлены некоторые проблемы, влияющие на безопасность и стабильность системы."
+    ],
+    "Телефон": [
+      "Исправлена проблема, из-за которой после завершения входящего вызова во время видео- или голосового вызова WeChat звук не переключался на динамик."
+    ],
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Исправлена проблема со скачком яркости при вводе пароля разблокировки после перезагрузки",
+      "Исправлена проблема с некорректной разблокировкой по Bluetooth",
+      "Исправлена проблема, из-за которой после отключения уведомлений приложения в панели уведомлений переключатель уведомлений нельзя было включить в настройках приложения."
+    ],
+    "Настройки": [
+      "Оптимизация логики иерархии элементов настроек специальных возможностей"
+    ],
     "Другое": [
       "Улучшение безопасности и стабильности системы"
     ]
   },
   "logs_uk": {
+    "Система": [
+      "Виправлено кілька проблем, що впливають на безпеку та стабільність системи."
+    ],
+    "Телефон": [
+      "Виправлено проблему, через яку після завершення вхідного виклику під час відео- або голосового виклику WeChat звук не перемикався на динамік."
+    ],
+    "Екран блокування, рядок стану, рядок сповіщень": [
+      "Виправлено проблему зі стрибком яскравості під час введення пароля розблокування після перезавантаження",
+      "Виправлено проблему з ненормальним розблокуванням через Bluetooth",
+      "Виправлено проблему, через яку після вимкнення перемикача сповіщень застосунку в панелі сповіщень його не можна було ввімкнути в налаштуваннях застосунку."
+    ],
+    "Налаштування": [
+      "Оптимізовано логіку ієрархії елементів налаштувань спеціальних можливостей"
+    ],
     "Інше": [
       "Покращення безпеки та стабільності системи"
     ]
   },
   "logs_pl": {
-    "Inne": [
+    "System": [
+      "Naprawiono kilka problemów wpływających na bezpieczeństwo i stabilność systemu."
+    ],
+    "Telefon": [
+      "Naprawiono problem, w którym po zakończeniu połączenia przychodzącego podczas rozmowy wideo lub głosowej WeChat dźwięk nie przełączał się na głośnik."
+    ],
+    "Ekran blokady, pasek stanu, pasek powiadomień": [
+      "Naprawiono problem skoków jasności podczas wpisywania hasła odblokowania po ponownym uruchomieniu",
+      "Naprawiono problem z nieprawidłowym odblokowywaniem przez Bluetooth",
+      "Naprawiono problem, w którym po wyłączeniu przełącznika powiadomień aplikacji w panelu powiadomień nie można było włączyć go w ustawieniach aplikacji."
+    ],
+    "Ustawienia": [
+      "Zoptymalizowano logikę hierarchii elementów ustawień ułatwień dostępu"
+    ],
+    "Reszt": [
       "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
   "logs_de": {
+    "System": [
+      "Mehrere Probleme behoben, die die Systemsicherheit und -stabilität beeinträchtigen."
+    ],
+    "Telefon": [
+      "Problem behoben, bei dem der Ton nach dem Beenden eines eingehenden Anrufs während eines WeChat-Video- oder Sprachanrufs nicht auf den Lautsprecher umgeschaltet wurde."
+    ],
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
+      "Problem mit Helligkeitssprung bei Eingabe des Entsperrungspassworts nach Neustart behoben",
+      "Problem mit fehlerhafter Bluetooth-Entsperrung behoben",
+      "Problem behoben, bei dem der Benachrichtigungsschalter nach dem Deaktivieren in der Benachrichtigungsleiste nicht in den App-Einstellungen aktiviert werden konnte."
+    ],
+    "Einstellungen": [
+      "Logik der Hierarchie der Bedienungshilfen-Einstellungen optimiert"
+    ],
     "Sonstiges": [
       "Systemsicherheit und -stabilität verbessert"
     ]
   },
   "logs_fr": {
+    "Système": [
+      "Correction de plusieurs problèmes affectant la sécurité et la stabilité du système."
+    ],
+    "Téléphone": [
+      "Correction d’un problème où le son ne basculait pas vers le haut-parleur après la fin d’un appel entrant pendant un appel vidéo ou vocal WeChat."
+    ],
+    "Écran de verrouillage, barre d’état, barre de notifications": [
+      "Correction du problème de saut de luminosité lors de la saisie du mot de passe de déverrouillage après redémarrage",
+      "Correction du problème de déverrouillage Bluetooth anormal",
+      "Correction d'un problème où le commutateur de notifications ne pouvait pas être activé dans les paramètres de l'application après avoir été désactivé depuis le volet des notifications."
+    ],
+    "Paramètres": [
+      "Optimisation de la logique de hiérarchie des éléments d’accessibilité"
+    ],
     "Autre": [
       "Sécurité et stabilité du système améliorées"
     ]
   },
   "logs_it": {
+    "Sistema": [
+      "Risolti diversi problemi che influiscono sulla sicurezza e sulla stabilità del sistema."
+    ],
+    "Telefono": [
+      "Risolto un problema per cui l'audio non passava all'altoparlante dopo la fine di una chiamata in entrata durante una videochiamata o chiamata vocale WeChat."
+    ],
+    "Schermata di blocco, barra di stato, barra delle notifiche": [
+      "Risolto il problema del salto di luminosità durante l'inserimento della password di sblocco dopo il riavvio",
+      "Risolto problema di sblocco Bluetooth anomalo",
+      "Risolto un problema per cui, dopo aver disattivato l'interruttore delle notifiche dell'app dal pannello notifiche, non era possibile riattivarlo nelle impostazioni dell'app."
+    ],
+    "Impostazioni": [
+      "Ottimizzata la logica della gerarchia delle impostazioni di accessibilità"
+    ],
     "Altro": [
       "Maggiore sicurezza e stabilità di sistema"
     ]
   },
   "logs_es": {
+    "Sistema": [
+      "Se corrigieron varios problemas que afectan la seguridad y la estabilidad del sistema."
+    ],
+    "Teléfono": [
+      "Se corrigió el problema por el que el audio no cambiaba al altavoz tras finalizar una llamada entrante durante una videollamada o llamada de voz de WeChat."
+    ],
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Corregido el problema de salto de brillo al introducir la contraseña de desbloqueo tras reiniciar",
+      "Corregido el problema de desbloqueo Bluetooth anómalo",
+      "Se corrigió el problema por el que no se podía activar el interruptor de notificaciones en los ajustes de la aplicación después de desactivarlo en el panel de notificaciones."
+    ],
+    "Configuración": [
+      "Optimizada la lógica de jerarquía de los ajustes de accesibilidad"
+    ],
     "Otros": [
       "Estabilidad y seguridad del sistema mejorada"
     ]
   },
   "logs_pt": {
+    "Sistema": [
+      "Corrigidos vários problemas que afetam a segurança e a estabilidade do sistema."
+    ],
+    "Telefone": [
+      "Corrigido o problema em que o áudio não era alterado para o alto-falante após terminar uma chamada recebida durante uma chamada de vídeo ou voz do WeChat."
+    ],
+    "Tela de bloqueio, barra de status, barra de notificações": [
+      "Corrigido o problema de salto de brilho ao inserir a senha de desbloqueio após reiniciar",
+      "Corrigido o problema de desbloqueio Bluetooth anormal",
+      "Corrigido o problema em que o interruptor de notificações não podia ser ativado nas configurações do app após ser desativado no painel de notificações."
+    ],
+    "Configurações": [
+      "Otimizada a lógica de hierarquia dos itens de configurações de acessibilidade"
+    ],
     "Outros": [
       "Segurança e estabilidade do sistema aprimoradas"
     ]
   },
   "logs_tr": {
+    "Sistem": [
+      "Sistem güvenliğini ve kararlılığını etkileyen birkaç sorun düzeltildi."
+    ],
+    "Telefon": [
+      "WeChat görüntülü veya sesli araması sırasında gelen arama kapatıldıktan sonra sesin hoparlöre geçmemesi sorunu giderildi."
+    ],
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Yeniden başlatma sonrası kilit açma parolası girilirken oluşan parlaklık sıçraması sorunu düzeltildi",
+      "Bluetooth kilit açma sorunu düzeltildi",
+      "Bildirim panelinden uygulama bildirim anahtarı kapatıldıktan sonra uygulama ayarlarında bildirim anahtarının açılamaması sorunu giderildi."
+    ],
+    "Ayarlar": [
+      "Erişilebilirlik ayarları öğe hiyerarşisi mantığı iyileştirildi"
+    ],
     "Diğer": [
       "Sistem güvenliği ve kararlılığı geliştirildi"
     ]
   },
   "logs_id": {
+    "Sistem": [
+      "Memperbaiki beberapa masalah yang memengaruhi keamanan dan stabilitas sistem."
+    ],
+    "Telepon": [
+      "Memperbaiki masalah audio tidak beralih ke speaker setelah panggilan masuk diakhiri selama panggilan video atau suara WeChat."
+    ],
+    "Layar kunci, bilah status, bilah notifikasi": [
+      "Memperbaiki masalah kecerahan yang melonjak saat memasukkan sandi buka kunci setelah reboot",
+      "Memperbaiki masalah buka kunci Bluetooth yang tidak normal",
+      "Memperbaiki masalah di mana tombol notifikasi tidak dapat diaktifkan di pengaturan aplikasi setelah dinonaktifkan dari panel notifikasi."
+    ],
+    "Pengaturan": [
+      "Mengoptimalkan logika hierarki item setelan aksesibilitas"
+    ],
     "Lainnya": [
       "Keamanan dan stabilitas sistem ditingkatkan"
     ]
   },
   "logs_vi": {
+    "Hệ thống": [
+      "Đã khắc phục một số vấn đề ảnh hưởng đến bảo mật và độ ổn định của hệ thống."
+    ],
+    "Điện thoại": [
+      "Đã khắc phục sự cố âm thanh không chuyển sang loa sau khi kết thúc cuộc gọi đến trong cuộc gọi video hoặc thoại WeChat."
+    ],
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Khắc phục sự cố độ sáng bị nhảy khi nhập mật khẩu mở khóa sau khi khởi động lại",
+      "Khắc phục sự cố mở khóa Bluetooth bất thường",
+      "Đã khắc phục sự cố không thể bật công tắc thông báo trong cài đặt ứng dụng sau khi tắt công tắc này từ bảng thông báo."
+    ],
+    "Cài đặt": [
+      "Tối ưu hóa logic phân cấp mục cài đặt trợ năng"
+    ],
     "Khác": [
       "Cải thiện tính ổn định và bảo mật hệ thống"
     ]
   },
   "logs_th": {
+    "ระบบ": [
+      "แก้ไขปัญหาหลายประการที่ส่งผลต่อความปลอดภัยและเสถียรภาพของระบบ"
+    ],
+    "โทรศัพท์": [
+      "แก้ไขปัญหาที่เสียงไม่สลับไปยังลำโพงหลังจากวางสายเรียกเข้าขณะอยู่ในสายวิดีโอหรือเสียงของ WeChat"
+    ],
+    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
+      "แก้ไขปัญหาความสว่างกระโดดขณะป้อนรหัสผ่านปลดล็อกหลังรีบูต",
+      "แก้ไขปัญหาการปลดล็อกด้วย Bluetooth ผิดปกติ",
+      "แก้ไขปัญหาที่ไม่สามารถเปิดสวิตช์การแจ้งเตือนในตั้งค่าแอปได้หลังจากปิดสวิตช์การแจ้งเตือนจากแผงการแจ้งเตือน"
+    ],
+    "การตั้งค่า": [
+      "ปรับปรุงลอจิกลำดับชั้นของรายการตั้งค่าการช่วยการเข้าถึง"
+    ],
     "อื่นๆ": [
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
     ]
   },
   "logs_ar": {
-    "أخرى": [
+    "النظام": [
+      "تم إصلاح عدة مشكلات تؤثر على أمان النظام واستقراره."
+    ],
+    "الهاتف": [
+      "تم إصلاح مشكلة عدم تحويل الصوت إلى مكبر الصوت بعد إنهاء مكالمة واردة أثناء مكالمة فيديو أو صوتية عبر WeChat."
+    ],
+    "شاشة القفل، شريط الحالة، شريط الإشعارات": [
+      "إصلاح مشكلة قفزة السطوع أثناء إدخال كلمة مرور فتح القفل بعد إعادة التشغيل",
+      "إصلاح مشكلة فتح القفل عبر Bluetooth غير الطبيعي",
+      "تم إصلاح مشكلة تعذر تشغيل مفتاح الإشعارات في إعدادات التطبيق بعد إيقاف تشغيله من لوحة الإشعارات."
+    ],
+    "الإعدادات": [
+      "تحسين منطق تسلسل عناصر إعدادات إمكانية الوصول"
+    ],
+    "آخرين": [
       "تحسين أمن واستقرار النظام"
     ]
   },
   "logs_in": {
+    "सिस्टम": [
+      "सिस्टम की सुरक्षा और स्थिरता को प्रभावित करने वाली कुछ समस्याओं को ठीक किया गया।"
+    ],
+    "फ़ोन": [
+      "WeChat वीडियो या वॉइस कॉल के दौरान आने वाली कॉल काटने के बाद ऑडियो स्पीकर पर स्विच न होने की समस्या ठीक की गई।"
+    ],
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
+      "रीबूट के बाद अनलॉक पासवर्ड दर्ज करते समय चमक के उछाल की समस्या ठीक की गई",
+      "Bluetooth अनलॉक संबंधी असामान्य समस्या ठीक की गई",
+      "ऐप सेटिंग्स में सूचना टॉगल को सक्षम न कर पाने की समस्या ठीक की गई, जब इसे सूचना शेड से बंद किया गया हो."
+    ],
+    "सेटिंग्स": [
+      "अभिगम्यता सेटिंग आइटम पदानुक्रम तर्क का अनुकूलन"
+    ],
     "अन्य": [
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
     ]
   },
   "logs_ug": {
+    "سىستېما": [
+      "سىستېمىنىڭ بىخەتەرلىكى ۋە مۇقىملىقىغا تەسىر كۆرسىتىدىغان بىر قانچە مەسىلە تۈزىتىلدى."
+    ],
     "باشقىلىرى": [
       "Improved system security and stability"
     ]
   },
   "logs_bo": {
+    "མ་ལག": [
+      "མ་ལག་གི་བདེ་འཇགས་དང་བརྟན་ལྷིང་ལ་ཤུགས་རྐྱེན་ཐེབས་པའི་གནད་དོན་འགའ་ཞིག་བཅོས་བྱས།"
+    ],
     "གཞན།": [
       "Improved system security and stability"
     ]

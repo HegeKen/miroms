@@ -69,7 +69,7 @@
     "自由窗口": [
       "优化 关闭外部屏幕拖拽小窗进入分屏的功能"
     ],
-    "桌面": [
+    "主屏幕": [
       "优化 桌面内外屏布局方式，统一图标个数，整理桌面更高效",
       "优化 桌面图标加载速度，使用体验更丝滑",
       "修复 内外屏翻折显示错误、快切闪烁、云备份等已知问题",
@@ -274,7 +274,7 @@
       "修复: 偶现无法录音的问题",
       "修复: 转文字时偶现闪退的问题"
     ],
-    "网络助手": [
+    "数据使用情况": [
       "优化 布局展示，提高用户体验",
       "优化: 布局显示，提高用户体验"
     ],
@@ -388,8 +388,226 @@
       "Focused algorithms: Our new algorithms will dynamically allocate system resources based on specific scenes, ensuring smooth experience on all models.",
       "Liquid storage: New sensitive storage mechanisms will keep your system vibrant and responsive as time goes by."
     ],
+    "Floating windows": [
+      "Optimization: Disabled the feature of dragging a small window from an external display into split screen"
+    ],
     "Other": [
-      "Improved system security and stability"
+      "Improved system security and stability",
+      "New: Email guide pop-up window to prompt downloading the MIX FOLD customized edition",
+      "Optimization: Boot guide process animation is smoother",
+      "Fixed: Abnormal UI display in some scenes of Life Yellow Pages",
+      "Fix: Screenshots from the original space and Second Space being mixed up",
+      "Fix: WeChat crashing in Second Space",
+      "Fix: Abnormal account login after using Dual Apps with WeChat",
+      "Removed: Some features of Life Yellow Pages"
+    ],
+    "Highlights": [
+      "New: More system apps now support freeform windows and split screen, making multitasking more efficient.",
+      "Optimization: System app UI layout adapted to inner and outer screens, for more efficient display on large screens",
+      "Fix: Continuity issue when switching between inner and outer screens for system apps; apps no longer restart after opening or closing the phone",
+      "Fix: Display issue with large fonts",
+      "Fix: Third-party app compatibility issues"
+    ],
+    "System": [
+      "Optimization: Main screen sound reminder pop-up window style",
+      "Optimization: Position of classic navigation buttons to prevent accidental touches",
+      "Optimization: Display effect of the standby display settings page when folding/unfolding the inner/outer screens",
+      "Fixed: Smart Assistant crashes, no response, stops running, display issues, etc.",
+      "Fix: Smart Assistant adaptation issue on inner and outer screens"
+    ],
+    "MIUI+": [
+      "New: Support for MIUI+, enabling cross-screen collaboration with your computer, information relay, and file transfer"
+    ],
+    "System sounds": [
+      "MIUI FOLD Enhanced Edition"
+    ],
+    "Notes": [
+      "Optimization: Page layout, left-right split display improves efficiency",
+      "Optimization: Quick note panel display changed from full screen to a floating window on the left side of the screen",
+      "Optimization: Voiceprint and speech-to-text recognition rates in Meeting mode",
+      "Fix: Search page truncation issue",
+      "Fix: Central topic of a newly created mind map is not centered",
+      "Fix: Abnormal line spacing caused by input in text note editing mode",
+      "Removed: Background theme selection feature"
+    ],
+    "AI Call Assistant": [
+      "Optimization: Set the home screen display mode from full screen to centered floating window display."
+    ],
+    "desktop": [
+      "Optimization: Optimized inner/outer screen home layout and unified icon count for more efficient home screen organization",
+      "Optimization: Faster loading of home screen icons for a smoother experience",
+      "Fix: Known issues such as incorrect display when folding/unfolding the inner and outer screens, flickering during quick switching, and cloud backup issues"
+    ],
+    "Control center": [
+      "Fixed: Control Center crashing",
+      "Fix: Issue where toggles revert to preset order after exiting Ultra battery saver mode",
+      "Fix: No response when tapping the Settings entry",
+      "Fix: Wi-Fi icon display issue",
+      "Fix: Toggle status flickering on the Bluetooth subpage"
+    ],
+    "Mi Share": [
+      "Optimization: Style of the share pop-up window in File Manager"
+    ],
+    "Accessibility": [
+      "Fix: Accessibility menu taps not working when switching between inner and outer screens"
+    ],
+    "Mi Carrier Services": [
+      "Optimization: Home screen display on inner and outer screens for a better visual experience",
+      "Optimization: Improved the display style and layout of the value-added module on the inner and outer screens for a better experience."
+    ],
+    "IME": [
+      "Added: Sogou Input Method support for third-party themes on foldable screens",
+      "Fix: Baidu IME crash issue",
+      "Fix: Baidu IME font weight not adapted to the system",
+      "Fix: Baidu IME pop-up window display issue in setup wizard",
+      "Fix: Baidu IME showed vibration settings on devices that do not support vibration",
+      "Fix: Issue where Sogou Input Method font weight was not adapted to the system",
+      "Fix: Null pointer issue causing white edges on screen with Sogou input method",
+      "Fix: Incorrect background of Pinyin candidates on the outer screen of foldable devices in Sogou Input Method",
+      "Fix: Abnormal display of the cloud input icon on the inner screen of foldable devices in Sogou Input Method",
+      "Fix: Sogou Input Method multilingual switch popup window not adapting to dark mode",
+      "Fix: Abnormal handwriting issue in Sogou Input Method",
+      "Fix: In Sogou Input Method, tapping letter keys in the input box could not select the specific letter",
+      "Fix: Split keyboard of Sogou input method not displaying when switched to left side",
+      "Fix: Abnormal display when switching to split keyboard in Sogou Input Method PC mode",
+      "Fix: Font weight of iFlytek Input not adapted to the system",
+      "Fix: Issue where iFlytek Input Method's detached keyboard was not adapted to other system apps",
+      "Fix: iFlytek Input displayed vibration settings on devices that do not support vibration",
+      "Fix: Abnormal battery drain issue with iFlytek Input",
+      "Fix: Animation freezing on pages such as symbols, emoji, emoticons, and sticker battles in the iFlytek keyboard"
+    ],
+    "App lock": [
+      "Fix: Apps locked with App Lock would become unlocked after a while"
+    ],
+    "Contacts": [
+      "Fix: Occasional crash when adding a new group",
+      "Fix: Issue where the number location and carrier name are not displayed during calls",
+      "Fix: Abnormal display of the incoming call blocking arrow UI on the call history page",
+      "Fix: Occasional abnormal display of the dial pad when switching between the Call and Contacts pages",
+      "Fixed: In some scenarios, tapping the floating window background did not go back.",
+      "Fix: Occasional loss of animation for dialpad number buttons"
+    ],
+    "Messages": [
+      "Fix: Stability issues"
+    ],
+    "Lock screen": [
+      "Added: option to toggle whether fingerprint is used for unlocking",
+      "Optimization: Fixed the issue in lock screen clock settings where the layout position dynamically adjusted with the screen",
+      "Optimization: Full-screen display of the lock screen time style in lock screen clock settings",
+      "Fix: Background of lock screen time style not displaying in Settings",
+      "Fix: Time style selection hidden in Dual clock",
+      "Fix: Fingerprint unlock still worked after disabling fingerprint for the lock screen"
+    ],
+    "status bar, Notification shade": [
+      "Optimization: Display layout of the notification shade interface",
+      "Fix: Icons or content in the status bar and notification bar overlapping in some scenarios",
+      "Fix: External screen notification interface displays incorrectly when Accessibility display size is set to \"Small\""
+    ],
+    "Calculator": [
+      "Optimization: Conversion page interface layout",
+      "Optimization: Fixed the issue where the font for time conversion on the external display was too small",
+      "Fixed: Issue where the inner screen could not display in full screen",
+      "Fix: Incomplete display of functions on the inner screen"
+    ],
+    "Themes": [
+      "New: Wallpaper & personalization settings page — all MIUI personalization is here",
+      "Optimization: The wallpaper settings page has been fully redesigned, making it easier to choose the wallpaper you want",
+      "Optimization: Wallpaper-setting app timing",
+      "Fix: Wallpaper abnormality issue"
+    ],
+    "Music": [
+      "Optimization: Playback experience in inner screen mode"
+    ],
+    "Settings": [
+      "Added: authorization pages for Wallpaper & Personalization, Screen Time Management, Xiao AI, etc.",
+      "Optimization: Split-screen switching animation",
+      "Optimization: Set up a column layout framework to improve smoothness"
+    ],
+    "Mi GetApps": [
+      "New: Large-screen exclusive content, providing users with more practical apps",
+      "Optimization: Brand-new design for an improved visual experience",
+      "Optimization: External screen and split-screen features, optimized continuity between inner and outer screens, improving user efficiency"
+    ],
+    "Screen recording": [
+      "Optimization: Continuity of the foldable screen operation experience",
+      "Fix: Couldn't record screenshot animations while recording video",
+      "Fix: Audio and video out of sync issue",
+      "Fix: Occasional recording failure"
+    ],
+    "Split screen": [
+      "New: Added sliding mask and haptic feedback in split screen",
+      "Optimization: Disabled the feature of dragging a small window from an external display into split screen",
+      "Removed: External screen split-screen feature",
+      "Removed: 1/3 and 2/3 split-screen feature on the inner screen"
+    ],
+    "Recents": [
+      "Fix: Crash when clearing all apps with one tap",
+      "Fix: After clearing all apps with one tap, apps that were not cleared still appeared in Recents",
+      "Fix: Recent tasks gesture not working in landscape when bottom bar is hidden"
+    ],
+    "File Manager": [
+      "Optimization: Filter panel layout and design",
+      "Screen recording"
+    ],
+    "Browser": [
+      "Optimization: User experience of Free Window on inner and outer screens",
+      "Optimized core page layout for a better visual experience",
+      "Fix: Issue with continuity when switching between inner and outer screens"
+    ],
+    "Recorder": [
+      "Optimization: Recorder home page layout",
+      "Optimization: Audio recording interface layout",
+      "Optimization: Recording playback screen layout",
+      "Optimization: Recording file naming method",
+      "Fixed: Occasional recording failure",
+      "Fix: Occasional crash when converting to text"
+    ],
+    "Online Assistant": [
+      "Optimization: Layout display and improved user experience"
+    ],
+    "Mi AI voice assistant": [
+      "Optimization: Inner screen display effect",
+      "Xiao AI 5.0 now supports large-screen devices, improving the user experience",
+      "Popular features such as XiaoAI Lingxi, Family Broadcast, custom voice, and Smart Shortcuts"
+    ],
+    "Game Center": [
+      "New: Brand-new homepage design for an improved user experience",
+      "Optimization: Pop-up window style adapts to the inner and outer screen width",
+      "Fixed: Abnormal display of content layout, images, text, and spacing on core pages",
+      "Fix: continuity issue when switching between inner and outer screens"
+    ],
+    "Game speed booster": [
+      "New: The cover screen now supports the Quick Launch floating window sidebar.",
+      "Optimization: Visual effects on the GAME TURBO page",
+      "Optimization: Boot animation effects",
+      "Optimization: Portrait Game Turbo page layout"
+    ],
+    "Battery usage": [
+      "Optimization: Tab mode for the battery saver optimization module in Settings"
+    ],
+    "MI Wallet": [
+      "New: Quick launch navigation on inner screen secondary pages to improve user efficiency",
+      "New: Added support for freeform windows and split screen to improve user efficiency",
+      "Optimization: All images on core pages now adapt to screen width.",
+      "Optimization: Core page font size for better readability on external screens",
+      "Optimization: Improved visual experience on payment-related pages"
+    ],
+    "Mi Home": [
+      "Optimization: Pop-up window display",
+      "Optimization: Freeform window experience",
+      "Optimization: Display effect on some pages"
+    ],
+    "Search": [
+      "Optimized core page layout for a better visual experience",
+      "Fix: Issue with continuity experience between inner and outer screens"
+    ],
+    "Global Internet": [
+      "Optimization: Page display and layout, improving user reading efficiency",
+      "Optimization: Inner and outer screen continuity, improving user experience"
+    ],
+    "Mi Scanner": [
+      "Optimization: Changed the home page display from full screen to a unified centered floating window.",
+      "Optimization: Scan result page display"
     ]
   },
   "logs_zh_tw": {
@@ -637,8 +855,190 @@
       "フォーカスアルゴリズム：新しいアルゴリズムは、特定のシーンに基づいてシステムリソースを動的に割り当て、すべてのモデルでスムーズな操作性を実現します。",
       "液体ストレージ：新しい高感度なストレージメカニズムにより、時間が経過してもシステムの効率性と応答性が保たれます。"
     ],
+    "フローティングウィンドウ": [
+      "最適化: 外部ディスプレイから小窓をドラッグして分割画面に入る機能を無効化"
+    ],
     "その他": [
-      "システムのセキュリティと安定性の向上"
+      "システムのセキュリティと安定性の向上",
+      "追加: メールガイドのポップアップウィンドウで、MIX FOLD カスタム版のダウンロードを案内",
+      "最適化: 起動ガイドのアニメーションがよりスムーズになりました",
+      "修正: 生活黄ページの一部シーンでUI表示が異常になる問題",
+      "修正: オリジナルスペースとセカンドスペースのスクリーンショットが混在する問題",
+      "修正: セカンドスペースでWeChatがクラッシュする問題",
+      "修正: WeChatのデュアルアプリ使用後にアカウントのログインが異常になる問題",
+      "削除: 生活イエローページの一部機能"
+    ],
+    "今週のおすすめ": [
+      "追加: より多くのシステムアプリがフリーフォームウィンドウと分割画面に対応し、マルチタスクでの作業がより効率的になりました",
+      "最適化: システムアプリのUIレイアウトを内側/外側画面に適合させ、大画面での表示をより効率的に",
+      "修正: システムアプリの内側と外側の画面切り替え時の連続性の問題。端末を開閉してもアプリが再起動しなくなりました",
+      "修正: 大字体時の表示の問題",
+      "修正: サードパーティ製アプリの互換性の問題"
+    ],
+    "システム": [
+      "最適化: メイン画面のサウンド通知ポップアップウィンドウのスタイル",
+      "最適化: クラシックナビゲーションボタンの位置を調整し、誤タッチを防止",
+      "最適化: 内側/外側スクリーンの折りたたみ/展開時の待機表示設定ページの表示効果",
+      "修正: スマートアシスタントのクラッシュ、応答なし、実行停止、表示異常などの問題。",
+      "修正: スマートアシスタントの内側・外側画面への適応に関する問題"
+    ],
+    "AI通話アシスタント": [
+      "最適化: ホーム画面の表示方法を全画面から中央のフローティングウィンドウ表示に変更"
+    ],
+    "デスクトップ": [
+      "最適化: 内側/外側画面のホーム画面レイアウトを最適化し、アイコン数を統一して、ホーム画面の整理がより効率的になりました",
+      "最適化: ホーム画面アイコンの読み込み速度を向上し、よりスムーズな操作感を実現",
+      "修正: 内外画面の折りたたみ/展開時の表示エラー、クイック切替時のちらつき、クラウドバックアップなどの既知の問題"
+    ],
+    "コントロールセンター": [
+      "修正: コントロールセンターがフリーズする問題",
+      "修正: スーパー省電力モードを終了すると、スイッチがプリセットの並び順に戻る問題",
+      "修正: 設定入口をタップしても反応しない問題",
+      "修正: Wi-Fiアイコンの表示問題",
+      "修正: Bluetoothのサブページでスイッチ状態がちらつく問題"
+    ],
+    "Mi シェア": [
+      "最適化: ファイルマネージャーの共有ポップアップウィンドウのスタイル"
+    ],
+    "アクセシビリティ": [
+      "修正: 内側と外側の画面を切り替えるとアクセシビリティメニューがタップできなくなる問題"
+    ],
+    "Mi キャリアサービス": [
+      "最適化: ホーム画面の内側・外側スクリーン表示を改善し、視覚体験を向上",
+      "最適化: 付加価値モジュールのインナー/アウターディスプレイの表示スタイルとレイアウトを改善し、使い勝手を向上"
+    ],
+    "アプリロック": [
+      "修正: アプリロックでロックしたアプリが、しばらくするとロックが解除される問題"
+    ],
+    "連絡先": [
+      "修正: 新しいグループを追加する際に時々クラッシュする問題",
+      "修正: 通話時に電話番号の所在地と通信事業者名が表示されない問題",
+      "修正: 通話履歴ページで着信拒否の矢印UIが異常表示される問題",
+      "修正: 通話と連絡先のページを切り替える際に、ダイヤルパッドが時々異常表示される問題",
+      "修正: 一部のシーンでフローティングウィンドウの背景をタップしても戻れない問題",
+      "修正: ダイヤルキーパッドの数字ボタンのアニメーションが時々失われる問題"
+    ],
+    "メッセージ": [
+      "修正: 安定性の問題"
+    ],
+    "ロック画面": [
+      "追加: 指紋をロック解除に使用するかどうかの切り替え設定オプション",
+      "最適化: ロック画面時計設定でレイアウト位置が画面に応じて動的に調整される問題を修正しました",
+      "最適化: ロック画面時計設定でロック画面の時刻スタイルを全画面表示",
+      "修正: 設定画面でロック画面の時刻スタイルの背景が表示されない問題",
+      "修正: デュアルクロックで時間スタイルの選択が非表示になる問題",
+      "修正: ロック画面での指紋認証を無効にした後も、指紋でロック解除できてしまう問題"
+    ],
+    "ステータスバー、通知シェード": [
+      "最適化: 通知シェードの表示レイアウト",
+      "修正: 一部のシーンでステータスバーと通知バーのアイコンまたは内容が重なる問題",
+      "修正: アクセシビリティ設定の表示サイズが「小」の場合に、外部スクリーンの通知画面が正しく表示されない問題"
+    ],
+    "電卓": [
+      "最適化: 換算ページの画面レイアウト",
+      "最適化: 外部ディスプレイの時間換算フォントが小さすぎる問題を修正",
+      "修正: 内側画面が全画面表示できない問題",
+      "修正: 内側ディスプレイで機能が完全に表示されない問題"
+    ],
+    "テーマ": [
+      "新規: 壁紙と個人設定ページ、MIUIの個人設定はここに集約",
+      "最適化: 壁紙設定ページを全面的にリニューアルし、希望の壁紙をより簡単に選べるようになりました",
+      "最適化: 壁紙設定アプリの時間",
+      "修正: 壁紙の異常問題"
+    ],
+    "音楽": [
+      "最適化: 内側スクリーン状態での再生体験"
+    ],
+    "設定": [
+      "追加: 壁紙とパーソナライズ、スクリーンタイム管理、Xiao AI などの認可ページ",
+      "最適化: 分割表示の切り替えアニメーション",
+      "最適化: 分割レイアウトのフレームワークを設定し、滑らかさを向上"
+    ],
+    "アプリストア": [
+      "追加: 大画面専用コンテンツで、ユーザーにより実用的なアプリを提供",
+      "最適化: 新しいデザインで視覚体験を向上",
+      "最適化: 外部スクリーンと分割画面機能、内外スクリーンの連続性を最適化し、ユーザーの作業効率を向上"
+    ],
+    "画面録画": [
+      "最適化: 折りたたみ画面の操作体験の連続性",
+      "修正: 動画録画中にスクリーンショットのアニメーションを録画できない問題",
+      "修正: 音声と映像の同期ずれの問題",
+      "修正: 録音が時々失敗する問題"
+    ],
+    "画面分割": [
+      "新規: 分割画面時にスライドマスクと振動フィードバックを追加",
+      "最適化: 外部ディスプレイから小窓をドラッグして分割画面に入る機能を無効化",
+      "削除: 外部ディスプレイの分割画面機能",
+      "削除: 内側画面の1/3、2/3分割画面機能"
+    ],
+    "最近のタスク": [
+      "修正: ワンタップで全アプリを一括クリアするとフリーズする問題",
+      "修正: ワンタップで全アプリをクリアした後、最近タスクにクリアされていないアプリが残る問題",
+      "修正: 下部バーを非表示にした際、横向き画面で最近のタスクのジェスチャーが機能しない問題"
+    ],
+    "ファイルマネージャー": [
+      "最適化: フィルタパネルのレイアウトとデザイン",
+      "画面録画"
+    ],
+    "ブラウザー": [
+      "最適化: 内外画面のフリーフォームウィンドウの使用体験",
+      "コアページのレイアウトを最適化し、視覚体験を向上",
+      "修正: 内側と外側のスクリーン切り替え時の連続性の問題"
+    ],
+    "Recorder": [
+      "最適化: レコーダーのホーム画面レイアウト",
+      "最適化: 音声録音インターフェースのレイアウト",
+      "最適化: 録音再生画面のレイアウト",
+      "最適化: 録音ファイルの命名方式",
+      "修正: 稀に録音できない問題",
+      "修正: テキスト変換時にまれにクラッシュする問題"
+    ],
+    "ネットワークアシスタント": [
+      "最適化: レイアウト表示を改善し、ユーザー体験を向上"
+    ],
+    "Mi AI音声アシスタント": [
+      "最適化: 内側ディスプレイの表示効果",
+      "Xiao AI 5.0が大型スクリーン端末に新たに対応し、ユーザー体験を向上",
+      "XiaoAI Lingxi、ファミリー伝言、カスタム音声、スマートショートカットなどの人気機能"
+    ],
+    "ゲームセンター": [
+      "新規: ホームページを新設計し、ユーザー体験を向上",
+      "最適化: ポップアップウィンドウのスタイルが内外画面の幅に応じて自動調整",
+      "修正: コアページのコンテンツレイアウト、画像、テキスト、間隔が正しく表示されない問題",
+      "修正: 内側画面と外側画面の切り替え時の連続性の問題"
+    ],
+    "ゲーム高速化": [
+      "追加: 外側スクリーンでクイック起動フローティングウィンドウのサイドバーが使えるようになりました",
+      "最適化: GAME TURBOページの視覚効果",
+      "最適化: 起動アニメーション効果",
+      "最適化: 縦向きゲームターボページのレイアウト"
+    ],
+    "バッテリー使用量": [
+      "最適化: 設定の省電力最適化モジュールのタブモード"
+    ],
+    "MIウォレット": [
+      "追加: 内側画面のセカンダリページにクイック起動ナビゲーションを追加し、ユーザー効率を向上",
+      "新規: フリーフォームウィンドウと分割画面機能をサポートし、ユーザー効率を向上",
+      "最適化: コアページのすべての画像表示が画面幅に合わせて自動調整されるように",
+      "最適化: コアページのフォントサイズを調整し、外部スクリーンでの視認性を向上",
+      "最適化: 支払い関連ページの視覚体験を向上"
+    ],
+    "Mi Home": [
+      "最適化: ポップアップウィンドウ表示",
+      "最適化: フリーフォームウィンドウの体験",
+      "最適化: 一部ページの表示効果"
+    ],
+    "グローバル検索": [
+      "コアページのレイアウトを最適化し、視覚体験を向上",
+      "修正: 内側と外側の画面の連続性体験に関する問題"
+    ],
+    "グローバルインターネット": [
+      "最適化: ページ表示とレイアウトを改善し、ユーザーの閲覧効率を向上",
+      "最適化: 内外画面の連続性を向上させ、ユーザー体験を改善"
+    ],
+    "スキャン": [
+      "最適化: ホーム画面の表示方法を全画面から統一された中央のフローティングウィンドウ表示に変更",
+      "最適化: スキャンの結果ページ表示"
     ]
   },
   "logs_ko": {
@@ -647,8 +1047,190 @@
       "집중 알고리즘: 새로운 알고리즘은 특정 시나리오를 기반으로 시스템 리소스를 동적으로 할당하여 모든 기종에서 원활한 경험을 보장합니다.",
       "리퀴드 스토리지: 시스템의 노후화를 방지하는 민감하고 효율적인 파일 저장 메커니즘을 지원합니다."
     ],
+    "플로팅 창": [
+      "최적화: 외부 디스플레이에서 작은 창을 드래그해 분할 화면으로 전환하는 기능을 비활성화"
+    ],
     "기타": [
-      "시스템 보안 및 안정성 개선"
+      "시스템 보안 및 안정성 개선",
+      "추가: 이메일 안내 팝업 창에서 MIX FOLD 맞춤형 버전 다운로드를 안내",
+      "최적화: 부팅 가이드 애니메이션이 더 부드러워졌습니다",
+      "수정: 생활 황페이지 일부 화면에서 UI 표시가 비정상적으로 나타나는 문제",
+      "수정: 원본 공간과 세컨드 스페이스의 스크린샷이 섞이는 문제",
+      "수정: 보조 공간에서 WeChat이 비정상 종료되는 문제",
+      "수정: WeChat 듀얼 앱 사용 후 계정 로그인 이상 문제",
+      "제거: 생활 옐로 페이지 일부 기능"
+    ],
+    "하이라이트": [
+      "추가: 더 많은 시스템 앱이 자유 창과 분할 화면을 지원하여 멀티태스킹 작업이 더 효율적입니다",
+      "최적화: 시스템 앱 UI 레이아웃이 내부/외부 화면에 맞게 조정되어 대형 화면에서 더 효율적으로 표시됩니다",
+      "수정: 시스템 앱의 내부 및 외부 화면 전환 시 연속성 문제. 휴대폰을 열거나 닫아도 앱이 더 이상 다시 시작되지 않습니다",
+      "수정: 큰 글꼴에서 표시 문제",
+      "수정: 타사 앱 호환성 문제"
+    ],
+    "시스템": [
+      "최적화: 메인 화면 소리 알림 팝업 창 스타일",
+      "최적화: 클래식 탐색 버튼 위치를 조정하여 오터치 방지",
+      "최적화: 내부/외부 화면을 접거나 펼칠 때 대기 화면 설정 페이지 표시 효과",
+      "수정: 스마트 어시스턴트의 강제 종료, 응답 없음, 실행 중지, 표시 이상 등의 문제.",
+      "수정: 스마트 어시스턴트의 내부/외부 화면 적응 문제"
+    ],
+    "AI 통화 어시스턴트": [
+      "최적화: 홈 화면 표시 방식을 전체 화면에서 중앙 플로팅 창 표시로 설정"
+    ],
+    "데스크톱": [
+      "최적화: 내부/외부 화면의 홈 화면 레이아웃을 최적화하고 아이콘 수를 통일하여 홈 화면 정리가 더 효율적입니다",
+      "최적화: 홈 화면 아이콘 로딩 속도를 개선하여 더 부드러운 사용 환경 제공",
+      "수정: 내외부 화면 접힘/펼침 시 표시 오류, 빠른 전환 시 깜빡임, 클라우드 백업 등 알려진 문제"
+    ],
+    "제어 센터": [
+      "수정: 제어 센터 다운 문제",
+      "수정: 초절전 모드 종료 후 스위치가 사전 설정된 순서로 복원되는 문제",
+      "수정: 설정 항목을 탭해도 반응하지 않는 문제",
+      "수정: Wi-Fi 아이콘 표시 문제",
+      "수정: Bluetooth 하위 페이지에서 스위치 상태가 깜빡이는 문제"
+    ],
+    "Mi Share": [
+      "최적화: 파일 관리자의 공유 팝업 창 스타일"
+    ],
+    "접근성": [
+      "수정: 내부 및 외부 화면 전환 시 접근성 메뉴 터치가 작동하지 않는 문제"
+    ],
+    "Mi 통신사 서비스": [
+      "최적화: 홈 화면의 내부 및 외부 화면 표시를 개선하여 시각적 경험 향상",
+      "최적화: 부가 가치 모듈의 내부/외부 화면 표시 스타일 및 레이아웃을 개선하여 사용 경험 향상"
+    ],
+    "앱 잠금": [
+      "수정: 앱 잠금으로 잠근 앱이 일정 시간 후 잠금이 해제되는 문제"
+    ],
+    "연락처": [
+      "수정: 새 그룹 추가 중 간헐적으로 앱이 강제 종료되는 문제",
+      "수정: 통화 시 전화번호 지역과 통신사 이름이 표시되지 않는 문제",
+      "수정: 통화 기록 페이지에서 수신 차단 화살표 UI가 비정상적으로 표시되는 문제",
+      "수정: 통화 및 연락처 페이지를 전환할 때 간헐적으로 다이얼 패드가 비정상적으로 표시되는 문제",
+      "수정: 일부 상황에서 플로팅 창 배경을 탭해도 뒤로 가기되지 않는 문제",
+      "수정: 간헐적으로 다이얼 패드 숫자 버튼 애니메이션이 사라지는 문제"
+    ],
+    "메시지": [
+      "수정: 안정성 문제"
+    ],
+    "잠금화면": [
+      "추가: 지문을 잠금 해제에 사용할지 여부를 설정하는 토글 옵션",
+      "최적화: 잠금 화면 시계 설정에서 레이아웃 위치가 화면에 따라 동적으로 조정되는 문제를 수정",
+      "최적화: 잠금 화면 시계 설정에서 잠금 화면 시간 스타일 전체 화면 표시",
+      "수정: 설정 화면에서 잠금 화면 시간 스타일 배경이 표시되지 않는 문제",
+      "수정: 듀얼 클럭에서 시간 스타일 선택이 숨겨지는 문제",
+      "수정: 잠금 화면 지문 사용을 끈 후에도 지문으로 잠금 해제되는 문제"
+    ],
+    "상태 바, 알림 바": [
+      "최적화: 알림 창 인터페이스 표시 레이아웃",
+      "수정: 일부 상황에서 상태 표시줄과 알림 표시줄의 아이콘 또는 내용이 겹치는 문제",
+      "수정: 접근성 설정의 표시 크기가 '작게'일 때 외부 화면 알림 인터페이스가 잘못 표시되는 문제"
+    ],
+    "계산기": [
+      "최적화: 변환 페이지 인터페이스 레이아웃",
+      "최적화: 외부 디스플레이의 시간 변환 글꼴이 너무 작은 문제 수정",
+      "수정: 내부 화면에서 전체 화면이 표시되지 않는 문제",
+      "수정: 내부 화면에서 기능이 완전히 표시되지 않는 문제"
+    ],
+    "테마": [
+      "신규: 배경화면 및 개인 설정 페이지, MIUI의 개인 설정이 모두 여기에",
+      "최적화: 배경화면 설정 페이지가 새롭게 개편되어 원하는 배경화면을 더 쉽게 선택할 수 있습니다",
+      "최적화: 배경화면 설정 앱 시간",
+      "수정: 배경화면 이상 문제"
+    ],
+    "음악": [
+      "최적화: 내부 화면 상태에서의 재생 환경"
+    ],
+    "설정": [
+      "추가: 배경화면 및 개인 설정, 화면 시간 관리, Xiao AI 등의 권한 페이지",
+      "최적화: 분할 화면 전환 애니메이션",
+      "최적화: 분할 레이아웃 프레임워크를 설정하여 부드러움 향상"
+    ],
+    "앱 스토어": [
+      "추가: 대형 화면 전용 콘텐츠로 사용자에게 더 실용적인 앱 제공",
+      "최적화: 새로운 디자인으로 시각 경험 향상",
+      "최적화: 외부 화면 및 분할 화면 기능, 내외부 화면 연속성 최적화로 사용자 효율성 향상"
+    ],
+    "화면 녹화": [
+      "최적화: 접이식 화면 조작 경험의 연속성",
+      "수정: 동영상 녹화 중 스크린샷 애니메이션을 녹화할 수 없는 문제",
+      "수정: 오디오와 비디오 싱크가 맞지 않는 문제",
+      "수정: 간헐적으로 녹음이 실패하는 문제"
+    ],
+    "분할 화면": [
+      "새로 추가: 화면 분할 시 슬라이딩 마스크 및 진동 피드백 추가",
+      "최적화: 외부 디스플레이에서 작은 창을 드래그해 분할 화면으로 전환하는 기능을 비활성화",
+      "삭제: 외부 화면 분할 화면 기능",
+      "제거: 내부 화면 1/3, 2/3 분할 화면 기능"
+    ],
+    "최근 작업": [
+      "수정: 원터치로 모든 앱을 정리할 때 멈추는 문제",
+      "수정: 한 번의 탭으로 모든 앱을 정리한 후 최근 작업에 정리되지 않은 앱이 남아 있는 문제",
+      "수정: 하단 바를 숨겼을 때 가로 화면에서 최근 작업 제스처가 작동하지 않는 문제"
+    ],
+    "파일 관리자": [
+      "최적화: 필터 패널 레이아웃 및 디자인",
+      "화면 녹화"
+    ],
+    "브라우저": [
+      "최적화: 내외부 화면 자유 창 사용 경험",
+      "핵심 페이지 레이아웃을 최적화하여 시각적 경험 개선",
+      "수정: 내부 및 외부 화면 전환 시 연속성 문제"
+    ],
+    "Recorder": [
+      "최적화: 녹음기 홈 화면 레이아웃",
+      "최적화: 오디오 녹음 인터페이스 레이아웃",
+      "최적화: 녹음 재생 화면 레이아웃",
+      "최적화: 녹음 파일 이름 지정 방식",
+      "수정: 간헐적으로 녹음할 수 없는 문제",
+      "수정: 텍스트로 변환할 때 간헐적으로 충돌하는 문제"
+    ],
+    "네트워크 어시스턴트": [
+      "최적화: 레이아웃 표시를 개선하여 사용자 경험 향상"
+    ],
+    "Mi AI 음성 도우미": [
+      "최적화: 내부 화면 표시 효과",
+      "Xiao AI 5.0이 대형 화면 기기에 새롭게 적응하여 사용자 경험을 향상",
+      "XiaoAI Lingxi, 가족 메시지, 사용자 지정 음성, 스마트 바로가기 등 인기 기능"
+    ],
+    "게임 센터": [
+      "새로운 기능: 새로운 홈페이지 디자인으로 사용자 경험 향상",
+      "최적화: 팝업 창 스타일이 내부 및 외부 화면 너비에 따라 자동 조정",
+      "수정: 핵심 페이지의 콘텐츠 레이아웃, 이미지, 텍스트, 간격이 비정상적으로 표시되는 문제",
+      "수정: 내부 및 외부 화면 전환 시 연속성 문제"
+    ],
+    "게임 속도 향상": [
+      "추가: 외부 화면에서 빠른 실행 플로팅 창 사이드바를 사용할 수 있습니다.",
+      "최적화: GAME TURBO 페이지 시각 효과",
+      "최적화: 부팅 애니메이션 효과",
+      "최적화: 세로 화면 게임 터보 페이지 레이아웃"
+    ],
+    "배터리 사용량": [
+      "최적화: 설정의 배터리 절약 최적화 모듈 탭 모드"
+    ],
+    "샤오미 지갑": [
+      "추가: 내부 화면 보조 페이지에 빠른 실행 내비게이션 기능을 추가하여 사용자 효율성 향상",
+      "신규: 프리폼 창 및 분할 화면 기능을 지원하여 사용자 효율성 향상",
+      "최적화: 핵심 페이지의 모든 이미지 표시가 화면 너비에 맞게 조정됩니다",
+      "최적화: 핵심 페이지 글꼴 크기를 조정하여 외부 화면에서 가독성 향상",
+      "최적화: 결제 관련 페이지의 시각적 경험 개선"
+    ],
+    "Mi Home": [
+      "최적화: 팝업 창 표시",
+      "최적화: 자유 창 환경",
+      "최적화: 일부 페이지의 표시 효과"
+    ],
+    "전역 검색": [
+      "핵심 페이지 레이아웃을 최적화하여 시각적 경험 개선",
+      "수정: 내부 및 외부 화면 연속성 경험 문제"
+    ],
+    "글로벌 인터넷": [
+      "최적화: 페이지 표시 및 레이아웃을 개선하여 사용자 읽기 효율성 향상",
+      "최적화: 내부 및 외부 화면 연속성 개선으로 사용자 경험 향상"
+    ],
+    "스캔": [
+      "최적화: 홈 페이지 표시 방식을 전체 화면에서 통일된 중앙 플로팅 창 표시로 변경",
+      "최적화: 스캔 결과 페이지 표시"
     ]
   },
   "logs_ru": {
@@ -657,8 +1239,190 @@
       "Адаптивные алгоритмы: новые алгоритмы динамически распределяют системные ресурсы на основе конкретных сценариев использования, обеспечивая бесперебойную работу всех поддерживаемых устройств.",
       "Гибкое хранилище: новые чувствительные механизмы управления памятью обеспечивают надежную работу системы даже с течением времени."
     ],
+    "Плавающие окна": [
+      "Оптимизация: отключена функция перетаскивания плавающего окна с внешнего экрана для перехода в разделённый экран"
+    ],
     "Другое": [
-      "Улучшение безопасности и стабильности системы"
+      "Улучшение безопасности и стабильности системы",
+      "Добавлено: всплывающее окно с руководством по электронной почте для загрузки кастомной версии MIX FOLD",
+      "Оптимизация: анимация процесса загрузки стала более плавной",
+      "Исправлено: некорректное отображение UI в некоторых разделах «Жёлтых страниц»",
+      "Исправлено: смешивание снимков экрана из основного и второго пространства",
+      "Исправлено: сбой WeChat во втором пространстве",
+      "Исправлено: ошибка входа в аккаунт после клонирования WeChat",
+      "Удалено: некоторые функции «Жёлтых страниц»"
+    ],
+    "Лучшее за неделю": [
+      "Новое: больше системных приложений поддерживают свободные окна и разделенный экран, что делает многозадачную работу эффективнее",
+      "Оптимизация: макет интерфейса системных приложений адаптирован к внутреннему и внешнему экранам для более эффективного отображения на большом экране",
+      "Исправлено: проблема непрерывности при переключении между внутренним и внешним экранами для системных приложений; приложения больше не перезапускаются после открытия или закрытия телефона",
+      "Исправлено: проблема отображения при крупном шрифте",
+      "Исправлено: проблемы совместимости сторонних приложений"
+    ],
+    "Система": [
+      "Оптимизация: стиль всплывающего окна звукового напоминания на главном экране",
+      "Оптимизация: положение классических навигационных кнопок для предотвращения случайных нажатий",
+      "Оптимизация: отображение страницы настроек экрана ожидания при складывании/раскладывании внутреннего/внешнего экрана",
+      "Исправлено: сбои, отсутствие отклика, прекращение работы, проблемы с отображением и другие ошибки Смарт-ассистента.",
+      "Исправление: проблема адаптации Smart Assistant на внутреннем и внешнем экранах"
+    ],
+    "AI-помощник звонков": [
+      "Оптимизация: режим отображения главного экрана изменён с полноэкранного на центрированное плавающее окно"
+    ],
+    "Рабочий стол": [
+      "Оптимизация: оптимизирован макет главного экрана для внутреннего и внешнего экранов, унифицировано количество значков — упорядочивание главного экрана стало эффективнее",
+      "Оптимизация: ускорена загрузка значков на главном экране, работа стала плавнее",
+      "Исправление: известные проблемы, такие как ошибка отображения при складывании/раскладывании внутреннего и внешнего экранов, мерцание при быстром переключении и проблемы с облачным резервным копированием"
+    ],
+    "Центр управления": [
+      "Исправлено: сбой Центра управления",
+      "Исправлено: проблема, из-за которой переключатели возвращаются к предустановленному порядку после выхода из режима суперэкономии энергии",
+      "Исправлено: отсутствие реакции при нажатии на пункт настроек",
+      "Исправлено: проблема с отображением значка Wi-Fi",
+      "Исправлено: мерцание состояния переключателя на подстранице Bluetooth"
+    ],
+    "Mi Share": [
+      "Оптимизация: стиль всплывающего окна «Поделиться» в файловом менеджере"
+    ],
+    "Специальные возможности": [
+      "Исправлено: меню специальных возможностей не реагирует на нажатия при переключении между внутренним и внешним экранами"
+    ],
+    "Сервисы оператора Mi": [
+      "Оптимизация: отображение главного экрана на внутреннем и внешнем экранах для улучшения визуального восприятия",
+      "Оптимизация: улучшены стиль отображения и компоновка модуля с добавленной стоимостью на внутреннем и внешнем экранах для повышения удобства использования."
+    ],
+    "Защита приложений": [
+      "Исправлено: приложения, заблокированные блокировкой приложений, через некоторое время переставали быть заблокированными"
+    ],
+    "Контакты": [
+      "Исправлено: случайные сбои при добавлении новой группы",
+      "Исправлено: при звонке не отображаются регион номера и название оператора",
+      "Исправление: некорректное отображение стрелки UI блокировки входящих вызовов на странице истории вызовов",
+      "Исправлено: периодическое некорректное отображение клавиатуры набора номера при переключении между страницами «Вызовы» и «Контакты»",
+      "Исправлено: в некоторых сценариях нажатие на фон плавающего окна не выполняет возврат.",
+      "Исправлено: иногда пропадала анимация цифровых кнопок клавиатуры набора номера"
+    ],
+    "Сообщения": [
+      "Исправление: проблемы со стабильностью"
+    ],
+    "Экран блокировки": [
+      "Добавлено: параметр переключателя использования отпечатка для разблокировки",
+      "Оптимизация: Исправлена проблема в настройках часов экрана блокировки, из-за которой положение макета динамически менялось в зависимости от экрана",
+      "Оптимизация: полноэкранное отображение стиля времени экрана блокировки в настройках часов экрана блокировки",
+      "Исправлено: фон стиля времени экрана блокировки не отображался в настройках",
+      "Исправление: проблема скрытия выбора стиля времени в двойных часах",
+      "Исправление: после отключения отпечатка для экрана блокировки разблокировка по отпечатку всё ещё работала"
+    ],
+    "строка состояния, шторка уведомлений": [
+      "Оптимизация: схема отображения интерфейса панели уведомлений",
+      "Исправлено: в некоторых сценариях значки или содержимое в строке состояния и строке уведомлений перекрываются",
+      "Исправлено: неправильное отображение интерфейса уведомлений на внешнем экране, когда размер отображения в настройках специальных возможностей установлен на «Маленький»"
+    ],
+    "Калькулятор": [
+      "Оптимизация: макет интерфейса страницы конвертации",
+      "Оптимизация: исправлена проблема со слишком мелким шрифтом преобразования времени на внешнем дисплее",
+      "Исправлено: проблема, из-за которой внутренний экран не отображался в полноэкранном режиме",
+      "Исправлено: неполное отображение функций на внутреннем экране"
+    ],
+    "Темы": [
+      "Новое: страница настроек обоев и персонализации — все настройки персонализации MIUI здесь",
+      "Оптимизация: страница настроек обоев полностью обновлена — выбирать нужные обои стало удобнее",
+      "Оптимизация: время приложения для установки обоев",
+      "Исправлено: проблема с обоями"
+    ],
+    "Музыка": [
+      "Оптимизация: воспроизведение в режиме внутреннего экрана"
+    ],
+    "Настройки": [
+      "Добавлено: страницы авторизации для «Обои и персонализация», «Управление экранным временем», Xiao AI и др.",
+      "Оптимизация: анимация переключения разделённого экрана",
+      "Оптимизация: настроен каркас колоночной компоновки для повышения плавности"
+    ],
+    "Магазин приложений": [
+      "Добавлено: контент для больших экранов, предоставляющий пользователям более полезные приложения",
+      "Оптимизация: новый дизайн для улучшения визуального восприятия",
+      "Оптимизация: функции внешнего экрана и разделенного экрана, оптимизирована непрерывность между внутренним и внешним экранами, повышена эффективность работы пользователя"
+    ],
+    "Запись экрана": [
+      "Оптимизация: непрерывность работы со складным экраном",
+      "Исправление: не удавалось записать анимацию скриншота при записи видео",
+      "Исправление: рассинхронизация аудио и видео",
+      "Исправлено: периодический сбой записи"
+    ],
+    "Разделение экрана": [
+      "Новое: При разделении экрана добавлены скользящая маска и виброотклик",
+      "Оптимизация: отключена функция перетаскивания плавающего окна с внешнего экрана для перехода в разделённый экран",
+      "Удалено: функция разделения экрана на внешнем дисплее",
+      "Удалено: функция разделения экрана 1/3 и 2/3 на внутреннем экране"
+    ],
+    "Недавнее": [
+      "Исправлено: зависание при очистке всех приложений одним нажатием",
+      "Исправление: после очистки всех приложений одним нажатием в недавних задачах оставались неочищенные приложения",
+      "Исправление: не работает жест последних задач в альбомной ориентации при скрытой нижней панели"
+    ],
+    "Файловый менеджер": [
+      "Оптимизация: макет и дизайн панели фильтров",
+      "Запись экрана"
+    ],
+    "Браузер": [
+      "Оптимизация: Удобство использования свободного окна на внутреннем и внешнем экранах",
+      "Оптимизирован макет основных страниц для улучшения визуального восприятия",
+      "Исправлено: проблема с непрерывностью при переключении между внутренним и внешним экранами"
+    ],
+    "Recorder": [
+      "Оптимизация: макет главной страницы диктофона",
+      "Оптимизация: макет интерфейса записи аудио",
+      "Оптимизация: макет интерфейса воспроизведения записи",
+      "Оптимизация: способ именования файлов записей",
+      "Исправлено: иногда не работала запись звука",
+      "Исправление: периодические сбои при преобразовании в текст"
+    ],
+    "Интернет-ассистент": [
+      "Оптимизация: отображение макета и улучшение пользовательского опыта"
+    ],
+    "Голосовой помощник Mi AI": [
+      "Оптимизация: эффект отображения внутреннего экрана",
+      "Xiao AI 5.0 теперь адаптирован для устройств с большим экраном, улучшая пользовательский опыт",
+      "Популярные функции, такие как XiaoAI Lingxi, семейная трансляция, пользовательский голос и умные ярлыки"
+    ],
+    "Игровой центр": [
+      "Новое: Новый дизайн главной страницы для улучшения пользовательского опыта",
+      "Оптимизация: стиль всплывающего окна адаптируется к ширине внутреннего и внешнего экрана",
+      "Исправлено: некорректное отображение макета содержимого, изображений, текста и интервалов на основных страницах",
+      "Исправлено: проблема с непрерывностью при переключении между внутренним и внешним экранами"
+    ],
+    "Ускорение приложений": [
+      "Добавлено: внешний экран поддерживает боковую панель плавающих окон быстрого запуска.",
+      "Оптимизация: визуальные эффекты страницы GAME TURBO",
+      "Оптимизация: эффекты анимации загрузки",
+      "Оптимизация: компоновка страницы Game Turbo в портретном режиме"
+    ],
+    "Потребление энергии": [
+      "Оптимизация: Режим вкладок для модуля оптимизации энергосбережения в настройках"
+    ],
+    "MI Кошелек": [
+      "Добавлено: быстрый запуск навигации на вторичных страницах внутреннего экрана для повышения эффективности пользователя",
+      "Новое: Добавлена поддержка свободных окон и разделенного экрана для повышения эффективности работы",
+      "Оптимизация: отображение всех изображений на основных страницах адаптируется к ширине экрана",
+      "Оптимизация: размер шрифта на основных страницах для улучшения читаемости на внешнем экране",
+      "Оптимизация: улучшено визуальное восприятие страниц оплаты"
+    ],
+    "Mi Home": [
+      "Оптимизация: отображение всплывающего окна",
+      "Оптимизация: работа со свободными окнами",
+      "Оптимизация: отображение на некоторых страницах"
+    ],
+    "Глобальный поиск": [
+      "Оптимизирован макет основных страниц для улучшения визуального восприятия",
+      "Исправление: проблема с непрерывностью работы внутреннего и внешнего экранов"
+    ],
+    "Глобальный интернет": [
+      "Оптимизация: отображение и компоновка страницы, повышение эффективности чтения",
+      "Оптимизация: повышена непрерывность работы внутреннего и внешнего экранов, улучшен пользовательский опыт"
+    ],
+    "Сканер": [
+      "Оптимизация: способ отображения главной страницы изменён с полноэкранного на единое центральное плавающее окно.",
+      "Оптимизация: отображение страницы результатов сканирования"
     ]
   },
   "logs_uk": {
@@ -667,8 +1431,190 @@
       "Адаптовані алгоритми: нові алгоритми динамічно розподіляють системні ресурси на основі конкретних сценаріїв використання, забезпечуючи постійну роботу всіх пристроїв, що підтримуються.",
       "Гнучке сховище: нові чутливі механізми керування пам’яттю забезпечують надійну роботу системи навіть з плином часу."
     ],
+    "Спливаючі вікна": [
+      "Оптимізація: вимкнено функцію перетягування плаваючого вікна із зовнішнього екрана для переходу в розділений екран"
+    ],
     "Інше": [
-      "Покращення безпеки та стабільності системи"
+      "Покращення безпеки та стабільності системи",
+      "Додано: спливаюче вікно з підказкою електронної пошти для завантаження кастомної версії MIX FOLD",
+      "Оптимізація: анімація процесу завантаження стала плавнішою",
+      "Виправлено: некоректне відображення UI у деяких розділах «Жовтих сторінок»",
+      "Виправлено: змішування знімків екрана з основного та другого простору",
+      "Виправлено: збій WeChat у другому просторі",
+      "Виправлено: помилка входу в обліковий запис після клонування WeChat",
+      "Видалено: деякі функції «Жовтих сторінок»"
+    ],
+    "Найкраще за тиждень": [
+      "Нове: більше системних програм підтримують вільні вікна та розділений екран, що робить багатозадачну роботу ефективнішою",
+      "Оптимізація: макет інтерфейсу системних програм адаптовано до внутрішнього та зовнішнього екранів для ефективнішого відображення на великому екрані",
+      "Виправлено: проблему безперервності під час перемикання між внутрішнім і зовнішнім екранами для системних програм; програми більше не перезапускаються після відкриття або закриття телефону",
+      "Виправлено: проблема відображення при великому шрифті",
+      "Виправлено: проблеми сумісності сторонніх програм"
+    ],
+    "Система": [
+      "Оптимізація: стиль спливаючого вікна звукового нагадування на головному екрані",
+      "Оптимізація: розташування класичних навігаційних кнопок для запобігання випадкових натискань",
+      "Оптимізація: відображення сторінки налаштувань екрана очікування під час згортання/розгортання внутрішнього/зовнішнього екрана",
+      "Виправлено: збої, відсутність відповіді, припинення роботи, проблеми з відображенням та інші проблеми Смарт-асистента.",
+      "Виправлення: проблема адаптації Smart Assistant на внутрішньому та зовнішньому екранах"
+    ],
+    "AI-помічник дзвінків": [
+      "Оптимізація: режим відображення головного екрана змінено з повноекранного на центроване плаваюче вікно"
+    ],
+    "Робочий стіл": [
+      "Оптимізація: оптимізовано макет головного екрана для внутрішнього та зовнішнього екранів, уніфіковано кількість значків — упорядкування головного екрана стало ефективнішим",
+      "Оптимізація: прискорено завантаження значків на головному екрані, робота стала плавнішою",
+      "Виправлення: відомі проблеми, як-от помилка відображення під час згортання/розгортання внутрішнього та зовнішнього екранів, мерехтіння під час швидкого перемикання та проблеми з хмарним резервним копіюванням"
+    ],
+    "Центр керування": [
+      "Виправлено: збій Центру керування",
+      "Виправлено: проблема, через яку перемикачі повертаються до попередньо встановленого порядку після виходу з режиму надзвичайної економії енергії",
+      "Виправлено: відсутність реакції під час натискання на пункт налаштувань",
+      "Виправлено: проблема з відображенням значка Wi-Fi",
+      "Виправлено: миготіння стану перемикача на підсторінці Bluetooth"
+    ],
+    "Mi Share": [
+      "Оптимізація: стиль спливного вікна поширення у файловому менеджері"
+    ],
+    "Спеціальні можливості": [
+      "Виправлено: меню спеціальних можливостей не реагує на натискання під час перемикання між внутрішнім і зовнішнім екранами"
+    ],
+    "Сервіси оператора Mi": [
+      "Оптимізація: відображення головного екрана на внутрішньому та зовнішньому екранах для покращення візуального досвіду",
+      "Оптимізація: покращено стиль відображення та компонування модуля з доданою вартістю на внутрішньому й зовнішньому екранах для кращого досвіду використання."
+    ],
+    "Блокування програм": [
+      "Виправлено: програми, заблоковані блокуванням програм, через деякий час розблоковувалися"
+    ],
+    "Контакти": [
+      "Виправлено: випадкові збої під час додавання нової групи",
+      "Виправлено: під час виклику не відображаються регіон номера та назва оператора",
+      "Виправлення: ненормальне відображення стрілки UI блокування вхідних викликів на сторінці історії викликів",
+      "Виправлено: періодичне неправильне відображення клавіатури набору номера під час перемикання між сторінками «Виклики» та «Контакти»",
+      "Виправлено: у деяких сценаріях натискання на фон плаваючого вікна не повертає назад.",
+      "Виправлено: іноді зникала анімація цифрових кнопок клавіатури набору номера"
+    ],
+    "Повідомлення": [
+      "Виправлення: проблеми зі стабільністю"
+    ],
+    "Екран блокування": [
+      "Додано: параметр перемикача використання відбитка для розблокування",
+      "Оптимізація: Виправлено проблему в налаштуваннях годинника екрана блокування, через яку положення макета динамічно змінювалося залежно від екрана",
+      "Оптимізація: повноекранне відображення стилю часу екрана блокування в налаштуваннях годинника екрана блокування",
+      "Виправлено: фон стилю часу екрана блокування не відображався в налаштуваннях",
+      "Виправлення: проблема приховування вибору стилю часу в подвійному годиннику",
+      "Виправлено: після вимкнення відбитка для екрана блокування розблокування відбитком усе ще працювало"
+    ],
+    "Рядок стану, панель сповіщень": [
+      "Оптимізація: схема відображення інтерфейсу панелі сповіщень",
+      "Виправлено: у деяких сценаріях значки або вміст у рядку стану та рядку сповіщень перекриваються",
+      "Виправлено: неправильне відображення інтерфейсу сповіщень на зовнішньому екрані, коли розмір відображення в налаштуваннях спеціальних можливостей встановлено на «Малий»"
+    ],
+    "Калькулятор": [
+      "Оптимізація: макет інтерфейсу сторінки конвертації",
+      "Оптимізація: виправлено проблему із занадто малим шрифтом перетворення часу на зовнішньому дисплеї",
+      "Виправлено: проблема, через яку внутрішній екран не відображався на весь екран",
+      "Виправлено: неповне відображення функцій на внутрішньому екрані"
+    ],
+    "Теми": [
+      "Нове: сторінка налаштувань шпалер і персоналізації — усі налаштування персоналізації MIUI тут",
+      "Оптимізація: сторінка налаштувань шпалер повністю оновлена — обирати потрібні шпалери стало зручніше",
+      "Оптимізація: час застосунку для встановлення шпалер",
+      "Виправлено: проблема з шпалерами"
+    ],
+    "Музика": [
+      "Оптимізація: відтворення в режимі внутрішнього екрана"
+    ],
+    "Налаштування": [
+      "Додано: сторінки авторизації для «Шпалери й персоналізація», «Керування екранним часом», Xiao AI тощо",
+      "Оптимізація: анімація перемикання розділеного екрана",
+      "Оптимізація: налаштовано каркас стовпчикового компонування для підвищення плавності"
+    ],
+    "Магазин додатків": [
+      "Додано: вміст для великих екранів, що надає користувачам практичніші застосунки",
+      "Оптимізація: новий дизайн для покращення візуального досвіду",
+      "Оптимізація: функції зовнішнього екрана та розділеного екрана, оптимізовано безперервність між внутрішнім і зовнішнім екранами, підвищено ефективність роботи користувача"
+    ],
+    "Запис екрана": [
+      "Оптимізація: безперервність роботи зі складним екраном",
+      "Виправлення: не вдавалося записати анімацію скриншота під час запису відео",
+      "Виправлення: розсинхронізація аудіо та відео",
+      "Виправлено: періодичний збій запису"
+    ],
+    "Розділення екрана": [
+      "Нове: Під час розділення екрана додано ковзну маску та вібровідгук",
+      "Оптимізація: вимкнено функцію перетягування плаваючого вікна із зовнішнього екрана для переходу в розділений екран",
+      "Видалено: функція розділення екрана на зовнішньому дисплеї",
+      "Вилучено: функція розділення екрана 1/3 і 2/3 на внутрішньому екрані"
+    ],
+    "Останні завдання": [
+      "Виправлено: зависання під час очищення всіх програм одним натисканням",
+      "Виправлення: після очищення всіх програм одним натисканням у нещодавніх завданнях залишалися неочищені програми",
+      "Виправлено: не працює жест останніх завдань у горизонтальній орієнтації, коли нижню панель приховано"
+    ],
+    "Файловий менеджер": [
+      "Оптимізація: макет і дизайн панелі фільтрів",
+      "Запис екрана"
+    ],
+    "Браузер": [
+      "Оптимізація: Досвід використання вільного вікна на внутрішньому та зовнішньому екранах",
+      "Оптимізовано макет основних сторінок для покращення візуального досвіду",
+      "Виправлено: проблема з безперервністю під час перемикання між внутрішнім і зовнішнім екранами"
+    ],
+    "Recorder": [
+      "Оптимізація: макет головної сторінки диктофона",
+      "Оптимізація: макет інтерфейсу запису аудіо",
+      "Оптимізація: макет інтерфейсу відтворення запису",
+      "Оптимізація: спосіб іменування файлів записів",
+      "Виправлено: іноді не працював запис звуку",
+      "Виправлення: періодичні збої під час перетворення в текст"
+    ],
+    "Інтернет-асистент": [
+      "Оптимізація: покращено відображення макета та користувацький досвід"
+    ],
+    "Голосовий помічник Mi AI": [
+      "Оптимізація: ефект відображення внутрішнього екрана",
+      "Xiao AI 5.0 тепер адаптовано для пристроїв із великим екраном, що покращує досвід користування",
+      "Популярні функції, як-от XiaoAI Lingxi, сімейна трансляція, користувацький голос і розумні ярлики"
+    ],
+    "Ігровий центр": [
+      "Нове: Новий дизайн головної сторінки для покращення досвіду користувача",
+      "Оптимізація: стиль спливаючого вікна адаптується до ширини внутрішнього та зовнішнього екрана",
+      "Виправлено: некоректне відображення макета вмісту, зображень, тексту та інтервалів на основних сторінках",
+      "Виправлено: проблему з безперервністю під час перемикання між внутрішнім і зовнішнім екранами"
+    ],
+    "Прискорення ігор": [
+      "Додано: зовнішній екран підтримує бічну панель плаваючих вікон швидкого запуску.",
+      "Оптимізація: візуальні ефекти сторінки GAME TURBO",
+      "Оптимізація: ефекти анімації завантаження",
+      "Оптимізація: компонування сторінки Game Turbo у портретному режимі"
+    ],
+    "Живлення": [
+      "Оптимізація: Режим вкладок для модуля оптимізації енергозбереження в налаштуваннях"
+    ],
+    "MI Гаманець": [
+      "Додано: швидкий запуск навігації на вторинних сторінках внутрішнього екрана для підвищення ефективності користувача",
+      "Нове: Додано підтримку вільних вікон і розділеного екрана для підвищення ефективності користувача",
+      "Оптимізація: відображення всіх зображень на основних сторінках адаптується до ширини екрана",
+      "Оптимізація: розмір шрифту на основних сторінках для покращення читабельності на зовнішньому екрані",
+      "Оптимізація: покращено візуальний досвід на сторінках оплати"
+    ],
+    "Mi Home": [
+      "Оптимізація: відображення спливаючого вікна",
+      "Оптимізація: робота з вільними вікнами",
+      "Оптимізація: відображення на деяких сторінках"
+    ],
+    "Глобальний пошук": [
+      "Оптимізовано макет основних сторінок для покращення візуального досвіду",
+      "Виправлення: проблема з безперервністю роботи внутрішнього та зовнішнього екранів"
+    ],
+    "Глобальний інтернет": [
+      "Оптимізація: відображення та компонування сторінки, підвищення ефективності читання",
+      "Оптимізація: покращено безперервність роботи внутрішнього та зовнішнього екранів, підвищено зручність користування"
+    ],
+    "Сканер": [
+      "Оптимізація: спосіб відображення головної сторінки змінено з повноекранного на єдине центральне плаваюче вікно.",
+      "Оптимізація: відображення сторінки результатів сканування"
     ]
   },
   "logs_pl": {
@@ -677,8 +1623,190 @@
       "Skoncentrowane algorytmy: nasze nowe algorytmy będą dynamicznie przydzielać zasoby systemowe w oparciu o określone sceny, zapewniając płynne działanie we wszystkich modelach.",
       "Przechowywanie w płynie: nowe wrażliwe mechanizmy przechowywania sprawią, że Twój system będzie żywy i responsywny w miarę upływu czasu."
     ],
-    "Inne": [
-      "Większe bezpieczeństwo i stabilność systemu"
+    "Pływające okna": [
+      "Optymalizacja: wyłączono funkcję przeciągania małego okna z zewnętrznego ekranu do trybu dzielonego ekranu"
+    ],
+    "Reszt": [
+      "Większe bezpieczeństwo i stabilność systemu",
+      "Dodano: okno pop-up z podpowiedzią e-mail zachęcające do pobrania niestandardowej wersji MIX FOLD",
+      "Optymalizacja: animacja procesu uruchamiania jest płynniejsza",
+      "Naprawiono: nieprawidłowe wyświetlanie UI w niektórych sekcjach Żółtych stron",
+      "Poprawiono: mieszanie zrzutów ekranu z głównej i drugiej przestrzeni",
+      "Poprawiono: awaria WeChat w Drugiej przestrzeni",
+      "Poprawiono: nieprawidłowe logowanie do konta po sklonowaniu WeChat",
+      "Usunięto: niektóre funkcje Żółtych stron"
+    ],
+    "Najważniejsze informacje": [
+      "Nowość: więcej aplikacji systemowych obsługuje dowolne okna i dzielony ekran, dzięki czemu praca wielozadaniowa jest wydajniejsza",
+      "Optymalizacja: układ interfejsu aplikacji systemowych dostosowany do ekranu wewnętrznego i zewnętrznego, aby wyświetlanie na dużym ekranie było wydajniejsze",
+      "Poprawka: problem ciągłości przy przełączaniu między wewnętrznym i zewnętrznym ekranem w aplikacjach systemowych; aplikacje nie uruchamiają się ponownie po otwarciu lub zamknięciu telefonu",
+      "Poprawka: problem z wyświetlaniem przy dużym rozmiarze czcionki",
+      "Naprawiono: problemy ze zgodnością aplikacji innych firm"
+    ],
+    "System": [
+      "Optymalizacja: styl okna podręcznego przypomnienia dźwiękowego na ekranie głównym",
+      "Optymalizacja: położenie klasycznych przycisków nawigacji, aby uniknąć przypadkowych dotknięć",
+      "Optymalizacja: wyświetlanie strony ustawień ekranu czuwania podczas składania/rozkładania ekranu wewnętrznego/zewnętrznego",
+      "Naprawiono: awarie, brak odpowiedzi, zatrzymywanie działania, nieprawidłowe wyświetlanie i inne problemy Asystenta inteligentnego.",
+      "Poprawka: problem z dostosowaniem Asystenta inteligentnego do ekranu wewnętrznego i zewnętrznego"
+    ],
+    "Asystent połączeń AI": [
+      "Optymalizacja: tryb wyświetlania ekranu głównego zmieniono z pełnoekranowego na wyśrodkowane pływające okno"
+    ],
+    "Biurko": [
+      "Optymalizacja: zoptymalizowano układ ekranu głównego dla ekranu wewnętrznego i zewnętrznego, ujednolicono liczbę ikon — organizacja ekranu głównego jest wydajniejsza",
+      "Optymalizacja: szybsze wczytywanie ikon ekranu głównego, płynniejsze działanie",
+      "Poprawki: znane problemy, takie jak błąd wyświetlania podczas składania/rozkładania ekranu wewnętrznego i zewnętrznego, migotanie podczas szybkiego przełączania oraz problemy z kopią zapasową w chmurze"
+    ],
+    "Centrum kontroli": [
+      "Naprawiono: awaria Centrum sterowania",
+      "Poprawka: Problem z przywracaniem przełączników do wstępnie ustawionej kolejności po wyjściu z trybu ultraoszczędzania baterii",
+      "Poprawka: brak reakcji po dotknięciu pozycji Ustawienia",
+      "Poprawka: problem z wyświetlaniem ikony Wi-Fi",
+      "Poprawka: migotanie stanu przełącznika na podstronie Bluetooth"
+    ],
+    "Mi Share": [
+      "Optymalizacja: styl okna podręcznego udostępniania w menedżerze plików"
+    ],
+    "Dostępność": [
+      "Naprawiono: menu ułatwień dostępu nie reaguje na dotknięcia podczas przełączania między ekranem wewnętrznym a zewnętrznym"
+    ],
+    "Usługi operatora Mi": [
+      "Optymalizacja: wyświetlanie ekranu głównego na ekranie wewnętrznym i zewnętrznym dla lepszych wrażeń wizualnych",
+      "Optymalizacja: ulepszono styl wyświetlania i układ modułu wartości dodanej na ekranie wewnętrznym i zewnętrznym, aby poprawić komfort użytkowania."
+    ],
+    "Blokada aplikacji": [
+      "Poprawiono: aplikacje zablokowane przez blokadę aplikacji po pewnym czasie przestawały być zablokowane"
+    ],
+    "Kontakty": [
+      "Poprawiono: sporadyczne awarie podczas dodawania nowej grupy",
+      "Poprawiono: podczas połączeń nie wyświetla się lokalizacja numeru i nazwa operatora",
+      "Poprawka: nieprawidłowe wyświetlanie strzałki UI blokowania połączeń przychodzących na stronie historii połączeń",
+      "Poprawka: sporadyczne nieprawidłowe wyświetlanie klawiatury wybierania podczas przełączania między stronami Połączenia i Kontakty",
+      "Poprawiono: w niektórych scenariuszach dotknięcie tła pływającego okna nie powoduje powrotu.",
+      "Poprawka: sporadycznie znikała animacja przycisków cyfr na klawiaturze wybierania"
+    ],
+    "Wiadomości": [
+      "Poprawka: problemy ze stabilnością"
+    ],
+    "Ekran blokady": [
+      "Dodano: opcja przełącznika używania odcisku palca do odblokowywania",
+      "Optymalizacja: Naprawiono problem w ustawieniach zegara ekranu blokady, gdzie położenie układu dynamicznie dostosowywało się do ekranu",
+      "Optymalizacja: wyświetlanie stylu czasu ekranu blokady na pełnym ekranie w ustawieniach zegara ekranu blokady",
+      "Poprawiono: tło stylu godziny ekranu blokady nie było wyświetlane w Ustawieniach",
+      "Poprawka: problem z ukrywaniem wyboru stylu czasu w podwójnym zegarze",
+      "Poprawka: po wyłączeniu odcisku palca dla ekranu blokady odblokowywanie odciskiem nadal działało"
+    ],
+    "pasek powiadomień,panel powiadomień": [
+      "Optymalizacja: układ wyświetlania interfejsu panelu powiadomień",
+      "Poprawiono: w niektórych scenariuszach ikony lub zawartość paska stanu i paska powiadomień nakładają się",
+      "Poprawiono: nieprawidłowe wyświetlanie interfejsu powiadomień na ekranie zewnętrznym, gdy rozmiar wyświetlania w ustawieniach dostępności jest ustawiony na „Mały”"
+    ],
+    "Kalkulator": [
+      "Optymalizacja: układ interfejsu strony konwersji",
+      "Optymalizacja: naprawiono problem zbyt małej czcionki konwersji czasu na wyświetlaczu zewnętrznym",
+      "Naprawiono: problem z wyświetlaniem pełnego ekranu na wewnętrznym ekranie",
+      "Naprawiono: niepełne wyświetlanie funkcji na wewnętrznym ekranie"
+    ],
+    "Motywy": [
+      "Nowość: strona ustawień tapety i personalizacji — wszystkie ustawienia personalizacji MIUI są tutaj",
+      "Optymalizacja: całkowicie odświeżono stronę ustawień tapet — wybieranie tapety jest teraz wygodniejsze",
+      "Optymalizacja: czas aplikacji do ustawiania tapety",
+      "Naprawiono: problem z tapetą"
+    ],
+    "Muzyka": [
+      "Optymalizacja: odtwarzanie w trybie wewnętrznego ekranu"
+    ],
+    "Ustawienia": [
+      "Dodano: strony autoryzacji dla Tapeta i personalizacja, Zarządzanie czasem ekranu, Xiao AI itp.",
+      "Optymalizacja: animacja przełączania ekranu dzielonego",
+      "Optymalizacja: skonfigurowano szkielet układu kolumn, aby poprawić płynność"
+    ],
+    "Sklep z aplikacjami": [
+      "Dodano: treści dedykowane dużym ekranom, zapewniające użytkownikom bardziej praktyczne aplikacje",
+      "Optymalizacja: nowy design dla lepszych wrażeń wizualnych",
+      "Optymalizacja: funkcje ekranu zewnętrznego i ekranu dzielonego, zoptymalizowano ciągłość między ekranem wewnętrznym a zewnętrznym, zwiększono wydajność pracy użytkownika"
+    ],
+    "Nagrywanie ekranu": [
+      "Optymalizacja: ciągłość pracy ze składanym ekranem",
+      "Poprawka: nie można było nagrać animacji zrzutu ekranu podczas nagrywania wideo",
+      "Poprawka: desynchronizacja dźwięku i obrazu",
+      "Poprawka: sporadyczne błędy nagrywania"
+    ],
+    "Podział ekranu": [
+      "Nowość: Dodano przesuwaną maskę i reakcję wibracyjną podczas dzielenia ekranu",
+      "Optymalizacja: wyłączono funkcję przeciągania małego okna z zewnętrznego ekranu do trybu dzielonego ekranu",
+      "Usunięto: funkcja dzielenia ekranu na zewnętrznym ekranie",
+      "Usunięto: funkcja dzielenia ekranu 1/3 i 2/3 na wewnętrznym ekranie"
+    ],
+    "Ostatnie zadania": [
+      "Poprawka: zawieszanie się podczas czyszczenia wszystkich aplikacji jednym dotknięciem",
+      "Poprawka: po wyczyszczeniu wszystkich aplikacji jednym dotknięciem w ostatnich zadaniach pozostawały niewyczyszczone aplikacje",
+      "Poprawka: gest ostatnich zadań nie działa w orientacji poziomej, gdy dolny pasek jest ukryty"
+    ],
+    "Menedżer plików": [
+      "Optymalizacja: układ i design panelu filtrów",
+      "Nagrywanie ekranu"
+    ],
+    "Przeglądarka": [
+      "Optymalizacja: Doświadczenie użytkowania wolnego okna na wewnętrznym i zewnętrznym ekranie",
+      "Zoptymalizowano układ głównych stron, aby poprawić wrażenia wizualne",
+      "Poprawiono: problem z ciągłością przy przełączaniu między ekranem wewnętrznym a zewnętrznym"
+    ],
+    "Recorder": [
+      "Optymalizacja: układ strony głównej dyktafonu",
+      "Optymalizacja: układ interfejsu nagrywania dźwięku",
+      "Optymalizacja: układ interfejsu odtwarzania nagrania",
+      "Optymalizacja: sposób nazewnictwa plików nagrań",
+      "Naprawiono: sporadyczny problem z nagrywaniem",
+      "Poprawka: sporadyczne awarie podczas konwersji na tekst"
+    ],
+    "Asystent online": [
+      "Optymalizacja: wyświetlanie układu i lepsze doświadczenia użytkownika"
+    ],
+    "Mi Inteligentny asystent głosowy": [
+      "Optymalizacja: efekt wyświetlania ekranu wewnętrznego",
+      "Xiao AI 5.0 dostosowano do urządzeń z dużym ekranem, poprawiając komfort użytkowania",
+      "Popularne funkcje, takie jak XiaoAI Lingxi, transmisja rodzinna, niestandardowy głos i inteligentne skróty"
+    ],
+    "Centrum gier": [
+      "Nowość: Nowy design strony głównej poprawiający doświadczenia użytkownika",
+      "Optymalizacja: styl okna podręcznego dostosowuje się do szerokości ekranu wewnętrznego i zewnętrznego",
+      "Naprawiono: nieprawidłowe wyświetlanie układu treści, obrazów, tekstu i odstępów na głównych stronach",
+      "Poprawiono: problem z ciągłością podczas przełączania między ekranem wewnętrznym a zewnętrznym"
+    ],
+    "Przyspieszanie gier": [
+      "Dodano: zewnętrzny ekran obsługuje boczny pasek pływających okien szybkiego uruchamiania.",
+      "Optymalizacja: efekty wizualne strony GAME TURBO",
+      "Optymalizacja: efekty animacji uruchamiania",
+      "Optymalizacja: układ strony Game Turbo w trybie pionowym"
+    ],
+    "Zużycie baterii": [
+      "Optymalizacja: Tryb kart dla modułu optymalizacji oszczędzania baterii w Ustawieniach"
+    ],
+    "MI Portfel": [
+      "Nowość: szybkie uruchamianie nawigacji na stronach dodatkowych wewnętrznego ekranu, zwiększające efektywność użytkownika",
+      "Nowość: Dodano obsługę swobodnych okien i dzielonego ekranu, zwiększając wydajność użytkownika",
+      "Optymalizacja: wyświetlanie wszystkich obrazów na głównych stronach dostosowuje się do szerokości ekranu",
+      "Optymalizacja: rozmiar czcionki na głównych stronach w celu poprawy czytelności na zewnętrznym ekranie",
+      "Optymalizacja: ulepszono wygląd stron związanych z płatnościami"
+    ],
+    "Mi Home": [
+      "Optymalizacja: wyświetlanie okna podręcznego",
+      "Optymalizacja: praca w dowolnych oknach",
+      "Optymalizacja: wyświetlanie na niektórych stronach"
+    ],
+    "Wyszukiwanie globalne": [
+      "Zoptymalizowano układ głównych stron, aby poprawić wrażenia wizualne",
+      "Poprawka: problem z ciągłością doświadczenia między wewnętrznym a zewnętrznym ekranem"
+    ],
+    "Globalny internet": [
+      "Optymalizacja: wyświetlanie i układ strony, poprawa efektywności czytania",
+      "Optymalizacja: poprawiono ciągłość pracy ekranu wewnętrznego i zewnętrznego, zwiększając komfort użytkowania"
+    ],
+    "Skaner": [
+      "Optymalizacja: zmieniono sposób wyświetlania strony głównej z pełnoekranowego na ujednolicone wyśrodkowane okno pływające.",
+      "Optymalizacja: wyświetlanie strony wyników skanowania"
     ]
   },
   "logs_de": {
@@ -687,8 +1815,229 @@
       "Fokussierte Algorithmen: Unsere neuen Algorithmen weisen Systemressourcen dynamisch anhand bestimmter Szenen zu und sorgen für ein flüssiges Erlebnis auf allen Modellen.",
       "Flüssiger Speicher: Neue sensible Speichermechanismen halten Ihr System im Laufe der Zeit lebendig und reaktionsschnell."
     ],
+    "Schwebende Fenster": [
+      "Optimierung: Deaktiviert das Ziehen eines schwebenden Fensters vom externen Bildschirm in den geteilten Bildschirm"
+    ],
     "Sonstiges": [
-      "Systemsicherheit und -stabilität verbessert"
+      "Systemsicherheit und -stabilität verbessert",
+      "Neu: Mehr System-Apps unterstützen freie Fenster und geteilten Bildschirm, was Multitasking effizienter macht.",
+      "Optimierung: UI-Layout der System-Apps an Innen- und Außenbildschirm angepasst, für effizientere Anzeige auf großen Bildschirmen",
+      "Behoben: Kontinuitätsproblem beim Wechsel zwischen Innen- und Außendisplay bei System-Apps; Apps werden nach dem Öffnen oder Schließen des Telefons nicht mehr neu gestartet",
+      "Behoben: Anzeigeproblem bei großer Schrift",
+      "Behoben: Kompatibilitätsprobleme mit Apps von Drittanbietern",
+      "Neu: E-Mail-Hinweis-Pop-up zum Herunterladen der angepassten MIX FOLD-Version",
+      "Optimierung: Animation des Startassistenten ist flüssiger",
+      "Behoben: Fehlerhafte UI-Anzeige in einigen Bereichen der Gelben Seiten",
+      "Behoben: Screenshots aus dem Original- und Zweitbereich wurden vermischt",
+      "Behoben: WeChat stürzt im zweiten Bereich ab",
+      "Behoben: Fehlerhafte Kontoanmeldung nach Verwendung von Dual-Apps mit WeChat",
+      "Entfernt: Einige Funktionen der Gelben Seiten"
+    ],
+    "System": [
+      "Optimierung: Stil des Pop-up-Fensters für Sound-Erinnerung auf dem Hauptbildschirm",
+      "Optimierung: Position der klassischen Navigationstasten zur Vermeidung versehentlicher Berührungen",
+      "Optimierung: Anzeige der Einstellungsseite für den Standby-Bildschirm beim Auf-/Zuklappen des Innen-/Außenbildschirms",
+      "Behoben: Abstürze, keine Antwort, Ausführungsstopp, Anzeigefehler und andere Probleme des Smart-Assistenten.",
+      "Behoben: Anpassungsproblem des Smart-Assistenten an Innen- und Außendisplay"
+    ],
+    "Systemtöne": [
+      "MIUI FOLD Erweiterte Edition"
+    ],
+    "Datenschutz": [
+      "Neu: Du kannst jetzt sehen, welche Apps auf deine Zwischenablage zugreifen, und den Zugriff kontrollieren.",
+      "Neu: Erstes Android-System mit vollständig aktiviertem Sandbox-Mechanismus; Lese-/Schreibberechtigungen für sensible Informationen lassen sich separat festlegen.",
+      "Neu: Verhalten von Webseiten offenlegen und sensible sowie bösartige Aktionen blockieren",
+      "Neu: Jetzt liegt es bei Ihnen, wer und wann Ihr Online-Verhalten verfolgen darf.",
+      "Neu: Alle Apps enthalten jetzt eine Sicherheitserklärung von GetApps.",
+      "Neu: Datenschutz-Risikoscanner.",
+      "Neu: Schutz vor versehentlichem Löschen von Galerie-Fotos",
+      "Neu: Eine umfassende Übersicht über alle sensiblen Berechtigungen.",
+      "Neu: Du wirst benachrichtigt, wenn Berechtigungen mit hohem Risiko verwendet werden, und kannst die entsprechenden Aktionen blockieren."
+    ],
+    "Notizen": [
+      "Optimierung: Seitenlayout, links-rechts geteilte Anzeige für höhere Effizienz",
+      "Optimierung: Die Anzeige des Schnellnotiz-Panels wurde von Vollbild auf ein schwebendes Fenster links auf dem Bildschirm geändert",
+      "Optimierung: Erkennungsrate für Stimmabdruck und Sprache-zu-Text im Besprechungsmodus",
+      "Behoben: Problem mit abgeschnittener Suchseite",
+      "Fehlerbehebung: Zentrales Thema einer neu erstellten Mindmap wird nicht zentriert",
+      "Behoben: Abnormer Zeilenabstand bei Eingabe im Bearbeitungsmodus für Textnotizen",
+      "Entfernt: Funktion zur Auswahl des Hintergrundthemas"
+    ],
+    "AI-Anrufassistent": [
+      "Optimierung: Anzeigemodus des Startbildschirms von Vollbild auf zentriertes schwebendes Fenster geändert."
+    ],
+    "Startbildschirm": [
+      "Optimierung: Layout des Startbildschirms für Innen- und Außenbildschirm optimiert, Symbolanzahl vereinheitlicht – Startbildschirm lässt sich effizienter organisieren",
+      "Optimierung: Schnelleres Laden der Startbildschirm-Symbole für ein flüssigeres Erlebnis",
+      "Behoben: Bekannte Probleme wie falsche Anzeige beim Auf- und Zuklappen des Innen- und Außendisplays, Flackern beim schnellen Wechsel und Probleme mit dem Cloud-Backup"
+    ],
+    "Kontrollzentrum": [
+      "Behoben: Absturz des Kontrollzentrums",
+      "Behoben: Problem, bei dem Schalter nach dem Beenden des Ultra-Energiesparmodus in die voreingestellte Reihenfolge zurückkehren",
+      "Behoben: Keine Reaktion beim Tippen auf den Einstellungseintrag",
+      "Behoben: Anzeigeproblem des Wi-Fi-Symbols",
+      "Behoben: Flackern des Schalterstatus auf der Bluetooth-Unterseite"
+    ],
+    "Barrierefreiheit": [
+      "Behoben: Bedienungshilfen-Menü reagiert beim Wechsel zwischen Innen- und Außendisplay nicht auf Tippen"
+    ],
+    "Mi Mobilfunkdienste": [
+      "Optimierung: Anzeige des Startbildschirms auf Innen- und Außenbildschirm für ein besseres visuelles Erlebnis",
+      "Optimierung: Anzeigestil und Layout des Mehrwertmoduls auf dem Innen- und Außendisplay verbessert für eine bessere Nutzungserfahrung."
+    ],
+    "IME": [
+      "Hinzugefügt: Sogou Input Method unterstützt Drittanbieter-Themes auf faltbaren Bildschirmen",
+      "Behoben: Absturz von Baidu IME",
+      "Behoben: Schriftstärke von Baidu IME nicht an das System angepasst",
+      "Behoben: Anzeigeproblem des Pop-up-Fensters von Baidu IME im Einrichtungsassistenten",
+      "Behoben: Baidu IME zeigte Vibrationseinstellungen auf Geräten ohne Vibrationsunterstützung an",
+      "Behoben: Schriftstärke von Sogou Input Method wurde nicht an das System angepasst",
+      "Behoben: Nullpointer-Problem, das bei Sogou-Eingabemethode einen weißen Rand auf dem Bildschirm verursacht",
+      "Behoben: Falscher Hintergrund für Pinyin-Kandidaten auf dem Außenbildschirm von faltbaren Geräten in Sogou",
+      "Behoben: Fehlerhafte Anzeige des Cloud-Eingabesymbols auf dem Innendisplay von faltbaren Geräten in Sogou Input Method",
+      "Fehlerbehebung: Popup-Fenster zum Sprachwechsel in Sogou Input Method nicht an Dunkelmodus angepasst",
+      "Behoben: Problem mit fehlerhafter Handschrifteingabe in Sogou",
+      "Behoben: In Sogou Input Method konnte durch Tippen auf Buchstabentasten im Eingabefeld kein bestimmter Buchstabe ausgewählt werden",
+      "Behoben: Problem, bei dem die geteilte Tastatur von Sogou bei Umschaltung auf die linke Seite nicht angezeigt wird",
+      "Behoben: Fehlerhafte Anzeige beim Umschalten auf geteilte Tastatur im PC-Modus von Sogou",
+      "Behoben: Schriftstärke von iFlytek Input nicht an das System angepasst",
+      "Behoben: Problem, dass die abgetrennte Tastatur von iFlytek Input Method nicht an andere System-Apps angepasst war",
+      "Behoben: iFlytek Input zeigte Vibrationseinstellungen auf Geräten ohne Vibrationsunterstützung an",
+      "Behoben: Problem mit abnormalem Akkuverbrauch bei iFlytek Input",
+      "Behoben: Einfrieren der Animation auf Seiten wie Symbole, Emoji, Emoticons, Sticker-Kämpfe usw. in der iFlytek-Tastatur"
+    ],
+    "App-Sperre": [
+      "Behoben: Mit App-Sperre gesperrte Apps waren nach einiger Zeit nicht mehr gesperrt"
+    ],
+    "Kontakte": [
+      "Behoben: Gelegentliche Abstürze beim Hinzufügen einer neuen Gruppe",
+      "Behoben: Bei Anrufen werden Nummernregion und Netzbetreibername nicht angezeigt",
+      "Behoben: Fehlerhafte Anzeige der Pfeil-UI zum Blockieren eingehender Anrufe auf der Anrufverlaufseite",
+      "Behoben: Gelegentlich fehlerhafte Anzeige der Wähltastatur beim Wechsel zwischen den Seiten „Anrufe“ und „Kontakte“",
+      "Behoben: In einigen Szenarien führte das Tippen auf den Hintergrund des schwebenden Fensters nicht zum Zurückgehen.",
+      "Behoben: Gelegentlich fehlende Animation der Zifferntasten im Wählfeld"
+    ],
+    "Nachrichten": [
+      "Behoben: Stabilitätsprobleme"
+    ],
+    "Sperrbildschirm": [
+      "Hinzugefügt: Schalteroption, ob der Fingerabdruck zum Entsperren verwendet wird",
+      "Optimierung: Problem in den Einstellungen der Sperrbildschirmuhr behoben, bei dem sich die Layoutposition dynamisch an den Bildschirm anpasste",
+      "Optimierung: Vollbildanzeige des Sperrbildschirm-Zeitstils in den Sperrbildschirm-Uhreinstellungen",
+      "Behoben: Hintergrund des Uhrzeitstils für den Sperrbildschirm wird in den Einstellungen nicht angezeigt",
+      "Fehlerbehebung: Problem mit ausgeblendeter Zeitstil-Auswahl bei Dualuhr",
+      "Behoben: Nach Deaktivieren des Fingerabdrucks für den Sperrbildschirm funktionierte die Entsperrung per Fingerabdruck weiterhin"
+    ],
+    "Statusleiste, Benachrichtigungsfeld": [
+      "Optimierung: Anzeigelayout der Benachrichtigungsleiste",
+      "Behoben: In einigen Szenarien überlappen sich Symbole oder Inhalte in Statusleiste und Benachrichtigungsleiste",
+      "Behoben: Falsche Anzeige der Benachrichtigungsoberfläche auf dem externen Bildschirm, wenn die Anzeigegröße in den Bedienungshilfen auf „Klein“ gesetzt ist"
+    ],
+    "Rechner": [
+      "Optimierung: Layout der Benutzeroberfläche der Konvertierungsseite",
+      "Optimierung: Problem mit zu kleiner Schrift bei der Zeitumrechnung auf dem externen Display behoben",
+      "Behoben: Problem, bei dem der innere Bildschirm nicht im Vollbild angezeigt werden konnte",
+      "Behoben: Funktionen werden auf dem Innenbildschirm nicht vollständig angezeigt"
+    ],
+    "Themen": [
+      "Neu: Seite für Hintergrundbild- und Personalisierungseinstellungen – alle MIUI-Personalisierungen an einem Ort",
+      "Optimierung: Die Seite für Hintergrundbild-Einstellungen wurde komplett überarbeitet – das gewünschte Hintergrundbild lässt sich jetzt einfacher auswählen",
+      "Optimierung: Zeit der App zum Festlegen des Hintergrundbilds",
+      "Behoben: Problem mit dem Hintergrundbild"
+    ],
+    "Musik": [
+      "Optimierung: Wiedergabe im Zustand des inneren Bildschirms"
+    ],
+    "Einstellungen": [
+      "Hinzugefügt: Autorisierungsseiten für Hintergrundbild & Personalisierung, Bildschirmzeitverwaltung, Xiao AI usw.",
+      "Optimierung: Animation beim Wechsel der geteilten Ansicht",
+      "Optimierung: Spaltenlayout-Framework eingerichtet für flüssigere Bedienung"
+    ],
+    "App-Store": [
+      "Neu: Inhalte exklusiv für große Bildschirme, die Nutzern praktischere Apps bieten",
+      "Optimierung: Neues Design für ein besseres visuelles Erlebnis",
+      "Optimierung: Funktionen für Außenbildschirm und geteilten Bildschirm, Kontinuität zwischen Innen- und Außenbildschirm optimiert, Nutzereffizienz verbessert"
+    ],
+    "Bildschirmaufnahme": [
+      "Optimierung: Kontinuität der Bedienung des faltbaren Displays",
+      "Behoben: Screenshot-Animation konnte während der Videoaufnahme nicht aufgezeichnet werden",
+      "Behoben: Audio und Video nicht synchron",
+      "Behoben: Gelegentliches Fehlschlagen der Aufnahme"
+    ],
+    "Geteilter Bildschirm": [
+      "Neu: Beim Teilen des Bildschirms wurden Schiebemaske und Vibrationsfeedback hinzugefügt",
+      "Optimierung: Deaktiviert das Ziehen eines schwebenden Fensters vom externen Bildschirm in den geteilten Bildschirm",
+      "Entfernt: Split-Screen-Funktion für externen Bildschirm",
+      "Entfernt: 1/3- und 2/3-Split-Screen-Funktion auf dem Innendisplay"
+    ],
+    "Letzte Aufgaben": [
+      "Behoben: Absturz beim Ein-Tippen-Reinigen aller Apps",
+      "Behoben: Nach dem Bereinigen aller Apps mit einem Tippen wurden in den letzten Aufgaben noch nicht bereinigte Apps angezeigt",
+      "Behoben: Gesten für letzte Aufgaben funktionieren im Querformat nicht, wenn die untere Leiste ausgeblendet ist"
+    ],
+    "Dateimanager": [
+      "Optimierung: Layout und Design des Filterbereichs",
+      "Bildschirmaufnahme"
+    ],
+    "Browser": [
+      "Optimierung: Benutzererfahrung des freien Fensters auf Innen- und Außenbildschirmen",
+      "Kernseiten-Layout optimiert für ein besseres visuelles Erlebnis",
+      "Behoben: Problem mit der Kontinuität beim Wechsel zwischen Innen- und Außendisplay"
+    ],
+    "Recorder": [
+      "Optimierung: Layout der Startseite des Rekorders",
+      "Optimierung: Layout der Audioaufnahme-Oberfläche",
+      "Optimierung: Layout der Aufnahme-Wiedergabeoberfläche",
+      "Optimierung: Benennung von Aufnahmedateien",
+      "Behoben: Gelegentlich keine Aufnahme möglich",
+      "Behoben: Gelegentliche Abstürze bei der Umwandlung in Text"
+    ],
+    "Online-Assistent": [
+      "Optimierung: Layout-Anzeige und verbesserte Benutzererfahrung"
+    ],
+    "Mi KI-Sprachassistent": [
+      "Optimierung: Anzeigeeffekt des Innendisplays",
+      "Xiao AI 5.0 ist jetzt für Großbildschirmgeräte angepasst und verbessert das Nutzererlebnis",
+      "Beliebte Funktionen wie XiaoAI Lingxi, Familienübertragung, benutzerdefinierte Stimme und intelligente Verknüpfungen"
+    ],
+    "Spiele-Center": [
+      "Neu: Neues Design der Startseite für ein besseres Nutzererlebnis",
+      "Optimierung: Pop-up-Fensterstil passt sich an die Breite des Innen- und Außendisplays an",
+      "Behoben: Fehlerhafte Anzeige von Inhaltslayout, Bildern, Text und Abständen auf Kernseiten",
+      "Behoben: Kontinuitätsproblem beim Wechsel zwischen Innen- und Außendisplay"
+    ],
+    "Spielbeschleunigung": [
+      "Neu: Der Außenbildschirm unterstützt die Schnellstart-Seitenleiste für schwebende Fenster.",
+      "Optimierung: Visuelle Effekte der GAME TURBO-Seite",
+      "Optimierung: Startanimationseffekte",
+      "Optimierung: Layout der Game Turbo-Seite im Hochformat"
+    ],
+    "Akku-Optimierung": [
+      "Optimierung: Tab-Modus für das Energiespar-Optimierungsmodul in den Einstellungen"
+    ],
+    "Xiaomi Wallet": [
+      "Neu: Schnellstart-Navigation auf sekundären Seiten des Innenbildschirms für mehr Nutzereffizienz",
+      "Neu: Unterstützung für freie Fenster und geteilten Bildschirm hinzugefügt, um die Effizienz zu verbessern",
+      "Optimierung: Die Anzeige aller Bilder auf Kernseiten passt sich an die Bildschirmbreite an",
+      "Optimierung: Schriftgröße auf Kernseiten für bessere Lesbarkeit auf externen Bildschirmen",
+      "Optimierung: Visuelle Darstellung auf Zahlungsseiten verbessert"
+    ],
+    "Mi Home": [
+      "Optimierung: Anzeige des Pop-up-Fensters",
+      "Optimierung: Freeform-Fenster-Erlebnis",
+      "Optimierung: Anzeige auf einigen Seiten"
+    ],
+    "Globale Suche": [
+      "Kernseiten-Layout optimiert für ein besseres visuelles Erlebnis",
+      "Fehlerbehebung: Problem mit der Kontinuität zwischen Innen- und Außenbildschirm"
+    ],
+    "Globales Internet": [
+      "Optimierung: Seitenanzeige und -layout, Verbesserung der Leseeffizienz",
+      "Optimierung: Kontinuität zwischen Innen- und Außendisplay verbessert, Nutzererlebnis optimiert"
+    ],
+    "Scanner": [
+      "Optimierung: Die Anzeige der Startseite wurde von Vollbild auf ein einheitliches zentriertes schwebendes Fenster geändert.",
+      "Optimierung: Anzeige der Scan-Ergebnisseite"
     ]
   },
   "logs_fr": {
@@ -697,8 +2046,190 @@
       "Algorithmes ciblés : nos nouveaux algorithmes alloueront dynamiquement les ressources système en fonction de scènes spécifiques, garantissant une expérience fluide sur tous les modèles.",
       "Stockage liquide : de nouveaux mécanismes de stockage sensibles maintiendront votre système dynamique et réactif au fil du temps."
     ],
+    "Fenêtres flottantes": [
+      "Optimisation : désactivation du glisser-déposer d'une fenêtre flottante depuis un écran externe vers l'écran partagé"
+    ],
     "Autre": [
-      "Sécurité et stabilité du système améliorées"
+      "Sécurité et stabilité du système améliorées",
+      "Nouveau : fenêtre pop-up de guidage e-mail pour télécharger la version personnalisée MIX FOLD",
+      "Optimisation : l'animation du guide de démarrage est plus fluide",
+      "Corrigé : affichage anormal de l’interface dans certaines sections des Pages jaunes",
+      "Correction : les captures d’écran de l’espace d’origine et du second espace étaient mélangées",
+      "Correction : plantage de WeChat dans le Second espace",
+      "Corrigé : problème de connexion au compte après clonage de WeChat",
+      "Supprimé : certaines fonctions des Pages jaunes"
+    ],
+    "Points forts": [
+      "Nouveau : Plus d'applications système prennent en charge les fenêtres libres et l'écran partagé, pour un multitâche plus efficace.",
+      "Optimisation : la disposition de l’interface des applications système est adaptée aux écrans interne et externe pour un affichage plus efficace sur grand écran",
+      "Correction : problème de continuité lors du passage entre l'écran interne et externe pour les applications système ; les applications ne redémarrent plus après l'ouverture ou la fermeture du téléphone",
+      "Correction : problème d'affichage avec une police de grande taille",
+      "Correction : problèmes de compatibilité des applications tierces"
+    ],
+    "Système": [
+      "Optimisation : style de la fenêtre contextuelle de rappel sonore sur l'écran principal",
+      "Optimisation : position des boutons de navigation classiques pour éviter les touches accidentelles",
+      "Optimisation : affichage de la page de réglages de l'écran de veille lors du pliage/dépliage des écrans interne/externe",
+      "Corrigé : plantages, absence de réponse, arrêt de l'exécution, anomalies d'affichage et autres problèmes de l'Assistant intelligent.",
+      "Correction : problème d’adaptation de l’Assistant intelligent aux écrans interne et externe"
+    ],
+    "Assistant d'appels IA": [
+      "Optimisation : le mode d'affichage de l'écran d'accueil passe de plein écran à une fenêtre flottante centrée."
+    ],
+    "Bureau": [
+      "Optimisation : mise en page de l'écran d'accueil optimisée pour les écrans interne et externe, nombre d'icônes unifié — organisation de l'écran d'accueil plus efficace",
+      "Optimisation : chargement plus rapide des icônes de l'écran d'accueil pour une expérience plus fluide",
+      "Correction : problèmes connus tels que l'affichage incorrect lors du pliage/dépliage des écrans interne et externe, le scintillement lors du changement rapide et les problèmes de sauvegarde cloud"
+    ],
+    "Centre de contrôle": [
+      "Correction : plantage du Centre de contrôle",
+      "Correction : Problème où les interrupteurs reviennent à l'ordre prédéfini après avoir quitté le mode Ultra économie de batterie",
+      "Correction : aucune réaction lors de l’appui sur l’entrée Paramètres",
+      "Correction : problème d'affichage de l'icône Wi-Fi",
+      "Correction : clignotement de l'état de l'interrupteur sur la sous-page Bluetooth"
+    ],
+    "Mi Share": [
+      "Optimisation : style de la fenêtre contextuelle de partage dans le gestionnaire de fichiers"
+    ],
+    "Accessibilité": [
+      "Correction : le menu d’accessibilité ne répond pas aux appuis lors du passage entre l’écran interne et l’écran externe"
+    ],
+    "Services de l'opérateur Mi": [
+      "Optimisation : affichage de l'écran d'accueil sur les écrans interne et externe pour une meilleure expérience visuelle",
+      "Optimisation : amélioration du style d’affichage et de la disposition du module à valeur ajoutée sur les écrans interne et externe pour une meilleure expérience."
+    ],
+    "Verrouillage d'application": [
+      "Correction : les applications verrouillées par Verrouillage d’applications se déverrouillaient après un certain temps"
+    ],
+    "Contacts": [
+      "Correction : plantages occasionnels lors de l'ajout d'un nouveau groupe",
+      "Corrigé : lors des appels, la localisation du numéro et le nom de l'opérateur ne s'affichent pas",
+      "Correctif : affichage anormal de la flèche UI de blocage des appels entrants sur la page de l’historique des appels",
+      "Correction : affichage parfois anormal du clavier de numérotation lors du passage entre les pages Appels et Contacts",
+      "Corrigé : dans certains cas, appuyer sur l’arrière-plan de la fenêtre flottante ne permettait pas de revenir.",
+      "Correction : disparition occasionnelle de l’animation des touches numériques du clavier d’appel"
+    ],
+    "Messaging": [
+      "Correction : problèmes de stabilité"
+    ],
+    "Écran de verrouillage": [
+      "Ajout : option de bascule pour utiliser ou non l’empreinte digitale pour le déverrouillage",
+      "Optimisation : Correction du problème dans les paramètres de l’horloge de l’écran de verrouillage où la position de la mise en page s’ajustait dynamiquement à l’écran",
+      "Optimisation : affichage plein écran du style d’heure de l’écran de verrouillage dans les réglages de l’horloge de l’écran de verrouillage",
+      "Correction : l’arrière-plan du style d’heure de l’écran de verrouillage ne s’affichait pas dans les Paramètres",
+      "Correction : problème de masquage de la sélection du style d'heure en double horloge",
+      "Correction : après désactivation de l'empreinte digitale pour l'écran de verrouillage, le déverrouillage par empreinte fonctionnait toujours"
+    ],
+    "Barre d'état, Panneau de notification": [
+      "Optimisation : disposition d’affichage de l’interface des notifications",
+      "Correction : dans certains cas, les icônes ou le contenu de la barre d’état et de la barre de notifications se chevauchent",
+      "Correction : affichage incorrect de l’interface de notification sur l’écran externe lorsque la taille d’affichage dans les options d’accessibilité est définie sur « Petite »"
+    ],
+    "Calculette": [
+      "Optimisation : mise en page de l’interface de la page de conversion",
+      "Optimisation : correction du problème de police trop petite pour la conversion de l'heure sur l'écran externe",
+      "Corrigé : l'écran interne ne pouvait pas s'afficher en plein écran",
+      "Correction : affichage incomplet des fonctions sur l'écran interne"
+    ],
+    "Thèmes": [
+      "Nouveau : page de paramètres Fond d'écran et Personnalisation — toute la personnalisation MIUI est ici",
+      "Optimisation : la page de réglage du fond d'écran a été entièrement repensée pour choisir plus facilement le fond d'écran souhaité",
+      "Optimisation : temps de l'application de réglage du fond d'écran",
+      "Correction : problème de fond d'écran"
+    ],
+    "Musique": [
+      "Optimisation : expérience de lecture en mode écran interne"
+    ],
+    "Paramètres": [
+      "Ajout : pages d’autorisation pour Fond d’écran et personnalisation, Gestion du temps d’écran, Xiao AI, etc.",
+      "Optimisation : animation de changement d’écran partagé",
+      "Optimisation : Mise en place d’un framework de mise en page en colonnes pour améliorer la fluidité"
+    ],
+    "Boutique d'applications": [
+      "Nouveau : contenu exclusif aux grands écrans, offrant aux utilisateurs des applications plus pratiques",
+      "Optimisation : nouveau design pour une meilleure expérience visuelle",
+      "Optimisation : fonctions de l'écran externe et de l'écran partagé, continuité entre les écrans interne et externe optimisée, efficacité d'utilisation améliorée"
+    ],
+    "Enregistrement d'écran": [
+      "Optimisation : continuité de l'expérience d'utilisation de l'écran pliable",
+      "Correction : impossible d'enregistrer l'animation de capture d'écran pendant un enregistrement vidéo",
+      "Correctif : problème de désynchronisation audio-vidéo",
+      "Correction : échec occasionnel de l'enregistrement"
+    ],
+    "Écran divisé": [
+      "Nouveau : Ajout d'un masque coulissant et d'un retour vibratoire lors du fractionnement de l'écran",
+      "Optimisation : désactivation du glisser-déposer d'une fenêtre flottante depuis un écran externe vers l'écran partagé",
+      "Supprimé : fonction d'écran partagé sur écran externe",
+      "Supprimé : fonction d'écran partagé 1/3 et 2/3 sur l'écran interne"
+    ],
+    "Tâches récentes": [
+      "Correction : plantage lors du nettoyage de toutes les applications en un geste",
+      "Correctif : après avoir nettoyé toutes les applications en un geste, des applications non nettoyées restaient dans les tâches récentes",
+      "Correction : le geste des tâches récentes ne fonctionne pas en mode paysage lorsque la barre inférieure est masquée"
+    ],
+    "Gestionnaire de fichiers": [
+      "Optimisation : mise en page et design du panneau de filtres",
+      "Enregistrement d'écran"
+    ],
+    "Navigateur": [
+      "Optimisation : Expérience d'utilisation de la fenêtre libre sur les écrans interne et externe",
+      "Optimisation de la mise en page des pages principales pour améliorer l'expérience visuelle",
+      "Correction : problème de continuité lors du passage entre l'écran intérieur et l'écran extérieur"
+    ],
+    "Recorder": [
+      "Optimisation : mise en page de l’écran d’accueil de l’enregistreur",
+      "Optimisation : mise en page de l'interface d'enregistrement audio",
+      "Optimisation : mise en page de l’interface de lecture des enregistrements",
+      "Optimisation : mode de nommage des fichiers d’enregistrement",
+      "Corrigé : impossibilité occasionnelle d'enregistrer",
+      "Correctif : plantages occasionnels lors de la conversion en texte"
+    ],
+    "Assistant en ligne": [
+      "Optimisation : affichage de la mise en page et expérience utilisateur améliorée"
+    ],
+    "Assistant vocal IA Mi": [
+      "Optimisation : effet d'affichage de l'écran interne",
+      "Xiao AI 5.0 s'adapte désormais aux appareils à grand écran pour améliorer l'expérience utilisateur",
+      "Fonctionnalités populaires telles que XiaoAI Lingxi, diffusion familiale, voix personnalisée et raccourcis intelligents"
+    ],
+    "Centre de jeux": [
+      "Nouveau : Nouveau design de la page d'accueil pour améliorer l'expérience utilisateur",
+      "Optimisation : le style de la fenêtre contextuelle s'adapte à la largeur de l'écran interne et externe",
+      "Corrigé : affichage anormal de la mise en page du contenu, des images, du texte et des espacements sur les pages principales",
+      "Correction : problème de continuité lors du passage entre l'écran interne et l'écran externe"
+    ],
+    "Accélération des jeux": [
+      "Nouveau : l’écran externe prend en charge la barre latérale des fenêtres flottantes de lancement rapide.",
+      "Optimisation : effets visuels de la page GAME TURBO",
+      "Optimisation : effets de l'animation de démarrage",
+      "Optimisation : mise en page de la page Game Turbo en mode portrait"
+    ],
+    "Utilisation de la batterie": [
+      "Optimisation : Mode onglet pour le module d'optimisation d'économie d'énergie dans les paramètres"
+    ],
+    "MI Portefeuille": [
+      "Nouveau : navigation à lancement rapide sur les pages secondaires de l'écran interne pour améliorer l'efficacité de l'utilisateur",
+      "Nouveau : Ajout de la prise en charge des fenêtres libres et de l'écran partagé pour améliorer l'efficacité",
+      "Optimisation : l’affichage de toutes les images des pages principales s’adapte à la largeur de l’écran",
+      "Optimisation : taille de police des pages principales pour améliorer la lisibilité sur écran externe",
+      "Optimisation : expérience visuelle améliorée sur les pages de paiement"
+    ],
+    "Mi Home": [
+      "Optimisation : affichage de la fenêtre contextuelle",
+      "Optimisation : expérience des fenêtres libres",
+      "Optimisation : affichage sur certaines pages"
+    ],
+    "Recherche globale": [
+      "Optimisation de la mise en page des pages principales pour améliorer l'expérience visuelle",
+      "Correction : problème de continuité entre l'écran interne et l'écran externe"
+    ],
+    "Internet mondial": [
+      "Optimisation : affichage et mise en page, amélioration de l'efficacité de lecture",
+      "Optimisation : continuité entre les écrans interne et externe améliorée, expérience utilisateur optimisée"
+    ],
+    "Scanner": [
+      "Optimisation : l'affichage de la page d'accueil passe du plein écran à une fenêtre flottante centrée unifiée.",
+      "Optimisation : affichage de la page de résultats du scan"
     ]
   },
   "logs_it": {
@@ -707,8 +2238,190 @@
       "Algoritmi mirati: i nostri nuovi algoritmi sono in grado di allocare dinamicamente le risorse di sistema in base a scenari specifici, garantendo un'esperienza fluida su tutti i modelli.",
       "Archiviazione fluida: nuovi meccanismi di archiviazione sensibili manterranno il tuo sistema veloce e reattivo nel tempo."
     ],
+    "Finestre a comparsa": [
+      "Ottimizzazione: disattivata la funzione di trascinamento di una finestra flottante da uno schermo esterno per entrare nella schermata divisa"
+    ],
     "Altro": [
-      "Maggiore sicurezza e stabilità di sistema"
+      "Maggiore sicurezza e stabilità di sistema",
+      "Nuovo: finestra pop-up di guida via email per scaricare la versione personalizzata MIX FOLD",
+      "Ottimizzazione: l'animazione della guida all'avvio è più fluida",
+      "Risolto: visualizzazione anomala dell'interfaccia in alcune sezioni delle Pagine gialle",
+      "Risolto: screenshot dello spazio originale e del Secondo spazio mescolati",
+      "Risolto: crash di WeChat nello Spazio secondario",
+      "Risolto: anomalia di accesso all'account dopo l'uso di Dual Apps con WeChat",
+      "Rimosso: alcune funzioni delle Pagine Gialle"
+    ],
+    "In evidenza": [
+      "Novità: più app di sistema supportano finestre libere e schermo diviso, rendendo il multitasking più efficiente.",
+      "Ottimizzazione: layout dell'interfaccia delle app di sistema adattato agli schermi interno ed esterno per una visualizzazione più efficiente su schermi grandi",
+      "Corretto: problema di continuità durante il passaggio tra schermo interno ed esterno per le app di sistema; le app non si riavviano più dopo l'apertura o la chiusura del telefono",
+      "Corretto: problema di visualizzazione con caratteri grandi",
+      "Corretto: problemi di compatibilità delle app di terze parti"
+    ],
+    "Sistema": [
+      "Ottimizzazione: stile della finestra pop-up di promemoria sonoro sulla schermata principale",
+      "Ottimizzazione: posizione dei pulsanti di navigazione classici per evitare tocchi accidentali",
+      "Ottimizzazione: visualizzazione della pagina impostazioni dello schermo di standby durante l'apertura/chiusura degli schermi interno/esterno",
+      "Corretto: arresti anomali, nessuna risposta, interruzione dell'esecuzione, anomalie di visualizzazione e altri problemi dell'Assistente intelligente.",
+      "Correzione: problema di adattamento dell'Assistente smart agli schermi interno ed esterno"
+    ],
+    "Assistente chiamate AI": [
+      "Ottimizzazione: modalità di visualizzazione della schermata Home cambiata da schermo intero a finestra flottante centrata."
+    ],
+    "Desktop": [
+      "Ottimizzazione: layout della schermata Home ottimizzato per schermo interno ed esterno, numero di icone uniformato: organizzazione della Home più efficiente",
+      "Ottimizzazione: caricamento più rapido delle icone della schermata Home per un'esperienza più fluida",
+      "Correzione: problemi noti come visualizzazione errata durante l'apertura/chiusura degli schermi interno ed esterno, sfarfallio durante il cambio rapido e problemi di backup cloud"
+    ],
+    "Centro di controllo": [
+      "Corretto: crash del Centro di controllo",
+      "Corretto: problema per cui gli interruttori tornano all'ordine predefinito dopo l'uscita dalla modalità Risparmio energetico estremo",
+      "Correzione: nessuna risposta toccando la voce Impostazioni",
+      "Correzione: problema di visualizzazione dell'icona Wi-Fi",
+      "Correzione: sfarfallio dello stato dell'interruttore nella sottopagina Bluetooth"
+    ],
+    "Mi Share": [
+      "Ottimizzazione: stile della finestra pop-up di condivisione nel gestore file"
+    ],
+    "Accessibilità": [
+      "Corretto: il menu Accessibilità non risponde ai tocchi durante il passaggio tra schermo interno ed esterno"
+    ],
+    "Servizi operatore Mi": [
+      "Ottimizzazione: visualizzazione della schermata Home sugli schermi interno ed esterno per un'esperienza visiva migliore",
+      "Ottimizzazione: migliorati stile di visualizzazione e layout del modulo a valore aggiunto sugli schermi interno ed esterno per un'esperienza migliore."
+    ],
+    "Blocco app": [
+      "Corretto: le app bloccate da Blocco app si sbloccavano dopo un po'"
+    ],
+    "Contatti": [
+      "Corretto: arresti anomali occasionali durante l'aggiunta di un nuovo gruppo",
+      "Corretto: durante le chiamate non vengono visualizzati località del numero e nome dell'operatore",
+      "Correzione: visualizzazione anomala della freccia UI per bloccare le chiamate in entrata nella pagina della cronologia chiamate",
+      "Correzione: visualizzazione anomala occasionale del tastierino di composizione durante il passaggio tra le pagine Chiamate e Contatti",
+      "Corretto: in alcune situazioni, toccando lo sfondo della finestra flottante non si tornava indietro.",
+      "Correzione: animazione dei tasti numerici del tastierino di composizione occasionalmente mancante"
+    ],
+    "Messaggi": [
+      "Correzione: problemi di stabilità"
+    ],
+    "Schermata di blocco": [
+      "Aggiunto: opzione per attivare/disattivare l'uso dell'impronta per lo sblocco",
+      "Ottimizzazione: Risolto il problema nelle impostazioni dell'orologio della schermata di blocco in cui la posizione del layout si adattava dinamicamente allo schermo",
+      "Ottimizzazione: visualizzazione a schermo intero dello stile dell'ora della schermata di blocco nelle impostazioni dell'orologio della schermata di blocco",
+      "Corretto: lo sfondo dello stile dell'ora della schermata di blocco non veniva visualizzato nelle Impostazioni",
+      "Correzione: problema di occultamento della selezione dello stile dell'ora con doppio orologio",
+      "Correzione: dopo aver disattivato l'impronta digitale per la schermata di blocco, lo sblocco con impronta funzionava ancora"
+    ],
+    "barra di stato, area delle notifiche": [
+      "Ottimizzazione: layout di visualizzazione dell'interfaccia delle notifiche",
+      "Corretto: in alcune situazioni le icone o il contenuto della barra di stato e della barra delle notifiche si sovrappongono",
+      "Corretto: visualizzazione errata dell'interfaccia di notifica sullo schermo esterno quando la dimensione di visualizzazione nelle impostazioni di accessibilità è impostata su \"Piccola\""
+    ],
+    "Calcolatrice": [
+      "Ottimizzazione: layout dell'interfaccia della pagina di conversione",
+      "Ottimizzazione: risolto il problema del carattere troppo piccolo per la conversione dell'ora sul display esterno",
+      "Risolto: problema per cui lo schermo interno non veniva visualizzato a schermo intero",
+      "Corretto: visualizzazione incompleta delle funzioni sullo schermo interno"
+    ],
+    "Temi": [
+      "Novità: pagina Impostazioni sfondo e personalizzazione — tutta la personalizzazione MIUI è qui",
+      "Ottimizzazione: la pagina delle impostazioni dello sfondo è stata completamente rinnovata per scegliere più facilmente lo sfondo desiderato",
+      "Ottimizzazione: tempo dell'app per impostare lo sfondo",
+      "Corretto: problema con lo sfondo"
+    ],
+    "Musica": [
+      "Ottimizzazione: esperienza di riproduzione in modalità schermo interno"
+    ],
+    "Impostazioni": [
+      "Aggiunto: pagine di autorizzazione per Sfondo e personalizzazione, Gestione tempo schermo, Xiao AI, ecc.",
+      "Ottimizzazione: animazione di commutazione della visualizzazione divisa",
+      "Ottimizzazione: impostato il framework del layout a colonne per migliorare la fluidità"
+    ],
+    "App store": [
+      "Novità: contenuti esclusivi per schermi grandi, che offrono agli utenti app più pratiche",
+      "Ottimizzazione: nuovo design per un'esperienza visiva migliore",
+      "Ottimizzazione: funzioni dello schermo esterno e dello schermo diviso, ottimizzata la continuità tra schermo interno ed esterno, migliorata l'efficienza d'uso"
+    ],
+    "Registrazione schermo": [
+      "Ottimizzazione: continuità dell'esperienza d'uso dello schermo pieghevole",
+      "Correzione: impossibile registrare l'animazione dello screenshot durante la registrazione video",
+      "Correzione: problema di desincronizzazione audio-video",
+      "Correzione: registrazione a volte non riuscita"
+    ],
+    "Multi Schermo": [
+      "Novità: Aggiunta maschera scorrevole e feedback vibrazione durante la divisione dello schermo",
+      "Ottimizzazione: disattivata la funzione di trascinamento di una finestra flottante da uno schermo esterno per entrare nella schermata divisa",
+      "Rimosso: funzione schermo diviso su schermo esterno",
+      "Rimosso: funzione di divisione dello schermo 1/3 e 2/3 sul display interno"
+    ],
+    "Recenti": [
+      "Correzione: crash durante la pulizia di tutte le app con un tocco",
+      "Correzione: dopo aver pulito tutte le app con un tocco, nelle attività recenti restavano app non pulite",
+      "Correzione: il gesto delle attività recenti non funziona in orizzontale quando la barra inferiore è nascosta"
+    ],
+    "Gestore file": [
+      "Ottimizzazione: layout e design del pannello dei filtri",
+      "Registrazione schermo"
+    ],
+    "Browser": [
+      "Ottimizzazione: Esperienza d'uso della finestra libera sugli schermi interno ed esterno",
+      "Ottimizzato il layout delle pagine principali per migliorare l'esperienza visiva",
+      "Corretto: problema di continuità durante il passaggio tra schermo interno ed esterno"
+    ],
+    "Recorder": [
+      "Ottimizzazione: layout della schermata principale del registratore",
+      "Ottimizzazione: layout dell'interfaccia di registrazione audio",
+      "Ottimizzazione: layout dell'interfaccia di riproduzione delle registrazioni",
+      "Ottimizzazione: modalità di denominazione dei file di registrazione",
+      "Corretto: impossibilità occasionale di registrare",
+      "Correzione: arresti anomali occasionali durante la conversione in testo"
+    ],
+    "Assistente online": [
+      "Ottimizzazione: visualizzazione del layout e migliore esperienza utente"
+    ],
+    "Assistente vocale Mi AI": [
+      "Ottimizzazione: effetto di visualizzazione dello schermo interno",
+      "Xiao AI 5.0 ora supporta i dispositivi con schermo di grandi dimensioni, migliorando l'esperienza utente",
+      "Funzioni popolari come XiaoAI Lingxi, trasmissione familiare, voce personalizzata e scorciatoie intelligenti"
+    ],
+    "Centro giochi": [
+      "Novità: Nuovo design della home page per migliorare l'esperienza utente",
+      "Ottimizzazione: lo stile della finestra pop-up si adatta alla larghezza dello schermo interno ed esterno",
+      "Risolto: visualizzazione anomala del layout dei contenuti, delle immagini, del testo e degli spazi nelle pagine principali",
+      "Risolto: problema di continuità durante il passaggio tra schermo interno ed esterno"
+    ],
+    "Turbo Videogiochi": [
+      "Novità: lo schermo esterno supporta la barra laterale delle finestre flottanti di avvio rapido.",
+      "Ottimizzazione: effetti visivi della pagina GAME TURBO",
+      "Ottimizzazione: effetti dell'animazione di avvio",
+      "Ottimizzazione: layout della pagina Game Turbo in modalità verticale"
+    ],
+    "Utilizzo batteria": [
+      "Ottimizzazione: Modalità a schede per il modulo di ottimizzazione del risparmio energetico nelle Impostazioni"
+    ],
+    "MI Portafoglio": [
+      "Novità: navigazione ad avvio rapido nelle pagine secondarie dello schermo interno per migliorare l'efficienza dell'utente",
+      "Novità: Aggiunto il supporto per finestre libere e schermo diviso per migliorare l'efficienza",
+      "Ottimizzazione: la visualizzazione di tutte le immagini nelle pagine principali si adatta alla larghezza dello schermo",
+      "Ottimizzazione: dimensione del carattere nelle pagine principali per migliorare la leggibilità su schermo esterno",
+      "Ottimizzazione: migliorata l'esperienza visiva nelle pagine di pagamento"
+    ],
+    "Mi Home": [
+      "Ottimizzazione: visualizzazione della finestra pop-up",
+      "Ottimizzazione: esperienza delle finestre libere",
+      "Ottimizzazione: visualizzazione su alcune pagine"
+    ],
+    "Ricerca globale": [
+      "Ottimizzato il layout delle pagine principali per migliorare l'esperienza visiva",
+      "Correzione: problema con la continuità tra schermo interno ed esterno"
+    ],
+    "Internet globale": [
+      "Ottimizzazione: visualizzazione e layout della pagina, migliore efficienza di lettura",
+      "Ottimizzazione: migliorata la continuità tra schermo interno ed esterno, esperienza utente migliorata"
+    ],
+    "Scanner": [
+      "Ottimizzazione: la visualizzazione della pagina iniziale passa da schermo intero a una finestra flottante centrata unificata.",
+      "Ottimizzazione: visualizzazione della pagina dei risultati della scansione"
     ]
   },
   "logs_es": {
@@ -717,8 +2430,190 @@
       "Algoritmos centralizados: nuestros nuevos algoritmos asignarán dinámicamente los recursos del sistema en función de escenarios específicos, lo que garantiza una experiencia fluida en todos los modelos.",
       "Almacenamiento fluido: los nuevos mecanismos de almacenamiento sensibles mantendrán tu sistema activo y receptivo a medida que pase el tiempo."
     ],
+    "Ventanas flotantes": [
+      "Optimización: desactivada la función de arrastrar una ventana flotante desde una pantalla externa para entrar en pantalla dividida"
+    ],
     "Otros": [
-      "Estabilidad y seguridad del sistema mejorada"
+      "Estabilidad y seguridad del sistema mejorada",
+      "Nuevo: ventana emergente de guía por correo electrónico para descargar la versión personalizada de MIX FOLD",
+      "Optimización: la animación de la guía de inicio es más fluida",
+      "Corregido: visualización anómala de la interfaz en algunas secciones de Páginas amarillas",
+      "Corregido: las capturas de pantalla del espacio original y del Segundo espacio se mezclaban",
+      "Corregido: cierre inesperado de WeChat en el Segundo espacio",
+      "Corregido: error de inicio de sesión de la cuenta tras usar Dual Apps con WeChat",
+      "Eliminado: algunas funciones de Páginas Amarillas"
+    ],
+    "Destacados": [
+      "Nuevo: más aplicaciones del sistema admiten ventanas libres y pantalla dividida, lo que hace que el trabajo multitarea sea más eficiente.",
+      "Optimización: el diseño de la interfaz de las apps del sistema se adapta a las pantallas interior y exterior para una visualización más eficiente en pantallas grandes",
+      "Corrección: problema de continuidad al cambiar entre la pantalla interna y externa en las aplicaciones del sistema; las aplicaciones ya no se reinician tras abrir o cerrar el teléfono",
+      "Corregido: problema de visualización con fuente grande",
+      "Corregido: problemas de compatibilidad con aplicaciones de terceros"
+    ],
+    "Sistema": [
+      "Optimización: estilo de la ventana emergente de recordatorio de sonido en la pantalla principal",
+      "Optimización: posición de los botones de navegación clásicos para evitar pulsaciones accidentales",
+      "Optimización: visualización de la página de ajustes de la pantalla de espera al plegar/desplegar las pantallas interior/exterior",
+      "Corregido: cierres inesperados, falta de respuesta, detención de la ejecución, anomalías de visualización y otros problemas del Asistente inteligente.",
+      "Corrección: problema de adaptación del Asistente inteligente en las pantallas interna y externa"
+    ],
+    "Asistente de llamadas con IA": [
+      "Optimización: el modo de visualización de la pantalla de inicio cambia de pantalla completa a ventana flotante centrada."
+    ],
+    "Escritorio": [
+      "Optimización: se optimizó el diseño de la pantalla de inicio para las pantallas interna y externa, se unificó el número de iconos y organizar la pantalla de inicio es más eficiente",
+      "Optimización: carga más rápida de los iconos de la pantalla de inicio para una experiencia más fluida",
+      "Corrección: problemas conocidos como error de visualización al plegar/desplegar las pantallas interna y externa, parpadeo al cambiar rápidamente y problemas de copia de seguridad en la nube"
+    ],
+    "Centro de control": [
+      "Corregido: fallo del Centro de control",
+      "Corregido: problema por el que los interruptores vuelven al orden preestablecido tras salir del modo Ultra ahorro de batería",
+      "Corregido: sin respuesta al tocar la entrada de Ajustes",
+      "Corrección: problema de visualización del icono de Wi-Fi",
+      "Corrección: parpadeo del estado del interruptor en la subpágina de Bluetooth"
+    ],
+    "Mi Share": [
+      "Optimización: estilo de la ventana emergente para compartir en el administrador de archivos"
+    ],
+    "Accesibilidad": [
+      "Corregido: el menú de accesibilidad no responde a los toques al cambiar entre la pantalla interior y la exterior"
+    ],
+    "Servicios de operador Mi": [
+      "Optimización: visualización de la pantalla de inicio en las pantallas interna y externa para mejorar la experiencia visual",
+      "Optimización: se mejoraron el estilo de visualización y el diseño del módulo de valor añadido en las pantallas interna y externa para mejorar la experiencia."
+    ],
+    "Bloqueo de aplicaciones": [
+      "Corregido: las apps bloqueadas por Bloqueo de apps se desbloqueaban tras un tiempo"
+    ],
+    "Contactos": [
+      "Corregido: cierres inesperados ocasionales al añadir un nuevo grupo",
+      "Corregido: durante las llamadas no se muestran la ubicación del número y el nombre del operador",
+      "Corrección: visualización anómala de la flecha UI para bloquear llamadas entrantes en la página del historial de llamadas",
+      "Corrección: visualización anómala ocasional del teclado de marcado al cambiar entre las páginas Llamadas y Contactos",
+      "Corregido: en algunos casos, tocar el fondo de la ventana flotante no permitía volver.",
+      "Corrección: animación de los botones numéricos del teclado de marcación ocasionalmente ausente"
+    ],
+    "Mensajería": [
+      "Corrección: problemas de estabilidad"
+    ],
+    "Pantalla de bloqueo": [
+      "Añadido: opción para activar o desactivar el uso de la huella para desbloquear",
+      "Optimización: Se corrigió el problema en los ajustes del reloj de la pantalla de bloqueo donde la posición del diseño se ajustaba dinámicamente a la pantalla",
+      "Optimización: visualización a pantalla completa del estilo de hora de la pantalla de bloqueo en los ajustes del reloj de la pantalla de bloqueo",
+      "Corregido: el fondo del estilo de hora de la pantalla de bloqueo no se mostraba en Ajustes",
+      "Corrección: problema al ocultar la selección del estilo de hora en reloj dual",
+      "Corrección: después de desactivar la huella digital para la pantalla de bloqueo, el desbloqueo con huella seguía funcionando"
+    ],
+    "barra de estado, barra de notificaciones": [
+      "Optimización: diseño de visualización de la interfaz de notificaciones",
+      "Corregido: en algunos escenarios, los iconos o el contenido de la barra de estado y la barra de notificaciones se superponen",
+      "Corregido: visualización incorrecta de la interfaz de notificaciones en la pantalla externa cuando el tamaño de visualización en Accesibilidad está establecido en «Pequeño»"
+    ],
+    "Calculadora": [
+      "Optimización: diseño de la interfaz de la página de conversión",
+      "Optimización: corregido el problema del tamaño de fuente demasiado pequeño en la conversión de hora en la pantalla externa",
+      "Corregido: problema por el que la pantalla interna no se mostraba a pantalla completa",
+      "Corregido: visualización incompleta de funciones en la pantalla interna"
+    ],
+    "Temas": [
+      "Novedad: página de ajustes de Fondo de pantalla y Personalización: toda la personalización de MIUI está aquí",
+      "Optimización: la página de ajustes del fondo de pantalla se ha renovado por completo para elegir más fácilmente el fondo que desees",
+      "Optimización: tiempo de la aplicación para establecer el fondo de pantalla",
+      "Corregido: problema con el fondo de pantalla"
+    ],
+    "Música": [
+      "Optimización: experiencia de reproducción en modo pantalla interna"
+    ],
+    "Ajustes": [
+      "Añadido: páginas de autorización para Fondo de pantalla y personalización, Gestión del tiempo de pantalla, Xiao AI, etc.",
+      "Optimización: animación de cambio de pantalla dividida",
+      "Optimización: se ha establecido el marco de diseño por columnas para mejorar la fluidez"
+    ],
+    "Tienda de aplicaciones": [
+      "Nuevo: contenido exclusivo para pantallas grandes, que ofrece a los usuarios aplicaciones más prácticas",
+      "Optimización: nuevo diseño para mejorar la experiencia visual",
+      "Optimización: funciones de pantalla externa y pantalla dividida, se optimizó la continuidad entre las pantallas interna y externa, mejorando la eficiencia del usuario"
+    ],
+    "Grabación de pantalla": [
+      "Optimización: continuidad de la experiencia de uso de la pantalla plegable",
+      "Corrección: no se podía grabar la animación de captura de pantalla durante la grabación de vídeo",
+      "Corrección: problema de desincronización de audio y vídeo",
+      "Corrección: fallo ocasional de grabación"
+    ],
+    "Pantalla dividida": [
+      "Novedad: Se añaden máscara deslizante y respuesta vibratoria al dividir la pantalla",
+      "Optimización: desactivada la función de arrastrar una ventana flotante desde una pantalla externa para entrar en pantalla dividida",
+      "Eliminado: función de pantalla dividida en pantalla externa",
+      "Eliminado: función de pantalla dividida 1/3 y 2/3 en la pantalla interna"
+    ],
+    "Recientes": [
+      "Corrección: bloqueo al limpiar todas las aplicaciones con un toque",
+      "Corrección: tras limpiar todas las aplicaciones con un toque, en las tareas recientes quedaban aplicaciones sin limpiar",
+      "Corrección: el gesto de tareas recientes no funciona en horizontal cuando la barra inferior está oculta"
+    ],
+    "Administrador de archivos": [
+      "Optimización: diseño y disposición del panel de filtros",
+      "Grabación de pantalla"
+    ],
+    "Navegador": [
+      "Optimización: Experiencia de uso de la ventana libre en las pantallas interna y externa",
+      "Diseño de páginas principales optimizado para mejorar la experiencia visual",
+      "Corregido: problema de continuidad al cambiar entre la pantalla interior y exterior"
+    ],
+    "Recorder": [
+      "Optimización: diseño de la página principal del grabador",
+      "Optimización: diseño de la interfaz de grabación de audio",
+      "Optimización: diseño de la interfaz de reproducción de grabaciones",
+      "Optimización: método de nombres de archivos de grabación",
+      "Corregido: imposibilidad ocasional de grabar",
+      "Corrección: cierres inesperados ocasionales al convertir a texto"
+    ],
+    "Asistente de red": [
+      "Optimización: visualización del diseño y mejora de la experiencia de usuario"
+    ],
+    "Asistente de voz Mi IA": [
+      "Optimización: efecto de visualización de la pantalla interna",
+      "Xiao AI 5.0 ahora se adapta a dispositivos de pantalla grande, mejorando la experiencia de usuario",
+      "Funciones populares como XiaoAI Lingxi, transmisión familiar, voz personalizada y atajos inteligentes"
+    ],
+    "Centro de juegos": [
+      "Novedad: Nuevo diseño de la página de inicio para mejorar la experiencia de usuario",
+      "Optimización: el estilo de la ventana emergente se adapta al ancho de la pantalla interna y externa",
+      "Corregido: visualización anómala del diseño del contenido, imágenes, texto y espaciado en las páginas principales",
+      "Corregido: problema de continuidad al cambiar entre la pantalla interna y la externa"
+    ],
+    "Acelerador de juegos": [
+      "Novedad: la pantalla externa admite la barra lateral de ventanas flotantes de inicio rápido.",
+      "Optimización: efectos visuales de la página GAME TURBO",
+      "Optimización: efectos de la animación de inicio",
+      "Optimización: diseño de la página Game Turbo en modo retrato"
+    ],
+    "Uso de la batería": [
+      "Optimización: Modo de pestañas para el módulo de optimización de ahorro de energía en Ajustes"
+    ],
+    "Monedero de Xiaomi": [
+      "Novedad: navegación de inicio rápido en las páginas secundarias de la pantalla interior para mejorar la eficiencia del usuario",
+      "Nuevo: Se añade compatibilidad con ventanas libres y pantalla dividida para mejorar la eficiencia",
+      "Optimización: la visualización de todas las imágenes en las páginas principales se adapta al ancho de la pantalla",
+      "Optimización: tamaño de fuente en páginas principales para mejorar la legibilidad en pantalla externa",
+      "Optimización: mejorada la experiencia visual en las páginas de pago"
+    ],
+    "Mi Home": [
+      "Optimización: visualización de la ventana emergente",
+      "Optimización: experiencia de ventanas flotantes",
+      "Optimización: visualización en algunas páginas"
+    ],
+    "Búsqueda global": [
+      "Diseño de páginas principales optimizado para mejorar la experiencia visual",
+      "Corrección: problema de continuidad entre la pantalla interna y externa"
+    ],
+    "Internet global": [
+      "Optimización: visualización y diseño de página, mejora de la eficiencia de lectura",
+      "Optimización: mejorada la continuidad entre las pantallas interna y externa, mejorando la experiencia de usuario"
+    ],
+    "Escáner": [
+      "Optimización: la visualización de la página de inicio cambia de pantalla completa a una ventana flotante centrada unificada.",
+      "Optimización: visualización de la página de resultados del escaneo"
     ]
   },
   "logs_pt": {
@@ -727,8 +2622,190 @@
       "Algoritmos focalizados: Nossos novos algoritmos alocarão dinamicamente recursos de sistema com base em cenários específicos, garantindo uma experiência suave em todos os modelos.",
       "Armazenamento fluido: Novos mecanismos sensíveis de armazenamento manterão seu sistema rápido e responsivo como se fosse o primeiro dia de uso."
     ],
+    "Janelas flutuantes": [
+      "Otimização: desativada a função de arrastar uma janela flutuante de uma tela externa para entrar em tela dividida"
+    ],
     "Outros": [
-      "Segurança e estabilidade do sistema aprimoradas"
+      "Segurança e estabilidade do sistema aprimoradas",
+      "Novo: janela pop-up de orientação por e-mail para baixar a versão personalizada do MIX FOLD",
+      "Otimização: a animação do guia de inicialização está mais fluida",
+      "Corrigido: exibição anormal da interface em algumas seções das Páginas amarelas",
+      "Corrigido: capturas de tela do espaço original e do Segundo espaço misturadas",
+      "Corrigido: falha do WeChat no Segundo espaço",
+      "Corrigido: erro de login na conta após usar Dual Apps com WeChat",
+      "Removido: algumas funções das Páginas Amarelas"
+    ],
+    "Destaques": [
+      "Novo: mais aplicativos do sistema oferecem suporte a janelas livres e tela dividida, tornando o trabalho multitarefa mais eficiente.",
+      "Otimização: o layout da interface dos apps do sistema foi adaptado às telas interna e externa para uma exibição mais eficiente em telas grandes",
+      "Correção: problema de continuidade ao alternar entre a tela interna e externa em apps do sistema; os apps não reiniciam mais após abrir ou fechar o telefone",
+      "Corrigido: problema de exibição com fonte grande",
+      "Corrigido: problemas de compatibilidade com apps de terceiros"
+    ],
+    "Sistema": [
+      "Otimização: estilo da janela pop-up de lembrete sonoro na tela principal",
+      "Otimização: posição dos botões de navegação clássicos para evitar toques acidentais",
+      "Otimização: exibição da página de configurações da tela de espera ao dobrar/desdobrar as telas interna/externa",
+      "Corrigido: falhas, ausência de resposta, interrupção da execução, anomalias de exibição e outros problemas do Assistente inteligente.",
+      "Correção: problema de adaptação do Assistente inteligente nas telas interna e externa"
+    ],
+    "Assistente de Chamadas com IA": [
+      "Otimização: o modo de exibição da tela inicial foi alterado de tela cheia para janela flutuante centralizada."
+    ],
+    "Ecrã inicial": [
+      "Otimização: layout da tela inicial otimizado para as telas interna e externa, número de ícones unificado — organizar a tela inicial ficou mais eficiente",
+      "Otimização: carregamento mais rápido dos ícones da tela inicial para uma experiência mais fluida",
+      "Correção: problemas conhecidos, como erro de exibição ao dobrar/desdobrar as telas interna e externa, tremulação na troca rápida e problemas de backup na nuvem"
+    ],
+    "Centro de controle": [
+      "Corrigido: falha do Centro de controlo",
+      "Corrigido: problema em que os interruptores voltam à ordem predefinida após sair do modo Ultra economia de bateria",
+      "Correção: sem resposta ao tocar na entrada Configurações",
+      "Correção: problema de exibição do ícone de Wi-Fi",
+      "Correção: piscar do estado do interruptor na subpágina Bluetooth"
+    ],
+    "Compartilhamento Mi": [
+      "Otimização: estilo da janela pop-up de compartilhamento no gerenciador de arquivos"
+    ],
+    "Acessibilidade": [
+      "Corrigido: o menu de acessibilidade não responde aos toques ao alternar entre a tela interna e a externa"
+    ],
+    "Serviços de operadora Mi": [
+      "Otimização: exibição da tela inicial nas telas interna e externa para melhorar a experiência visual",
+      "Otimização: aprimorados o estilo de exibição e o layout do módulo de valor agregado nas telas interna e externa para melhorar a experiência."
+    ],
+    "Bloqueio de aplicativos": [
+      "Corrigido: apps bloqueadas pelo Bloqueio de apps deixavam de ficar bloqueadas após algum tempo"
+    ],
+    "Contatos": [
+      "Corrigido: encerramentos inesperados ocasionais ao adicionar um novo grupo",
+      "Corrigido: durante chamadas, a localização do número e o nome da operadora não são exibidos",
+      "Correção: exibição anormal da seta UI de bloqueio de chamadas recebidas na página de histórico de chamadas",
+      "Correção: exibição anormal ocasional do teclado de discagem ao alternar entre as páginas Chamadas e Contactos",
+      "Corrigido: em alguns cenários, tocar no fundo da janela flutuante não permitia voltar.",
+      "Correção: animação dos botões numéricos do teclado de discagem ocasionalmente ausente"
+    ],
+    "Mensagens": [
+      "Correção: problemas de estabilidade"
+    ],
+    "Tela de bloqueio": [
+      "Adicionado: opção para ativar/desativar o uso da impressão digital para desbloquear",
+      "Otimização: Corrigido o problema nas configurações do relógio da tela de bloqueio em que a posição do layout se ajustava dinamicamente à tela",
+      "Otimização: exibição em tela cheia do estilo de hora da tela de bloqueio nas configurações do relógio da tela de bloqueio",
+      "Corrigido: o plano de fundo do estilo de hora da tela de bloqueio não era exibido nas Configurações",
+      "Correção: problema ao ocultar a seleção do estilo de hora no relógio duplo",
+      "Correção: após desativar a impressão digital para a tela de bloqueio, o desbloqueio por impressão digital ainda funcionava"
+    ],
+    "Barra de status e Área de notificações": [
+      "Otimização: layout de exibição da interface de notificações",
+      "Corrigido: em alguns cenários, os ícones ou o conteúdo da barra de status e da barra de notificações se sobrepõem",
+      "Corrigido: exibição incorreta da interface de notificações na tela externa quando o tamanho de exibição em Acessibilidade está definido como “Pequeno”"
+    ],
+    "Calculadora": [
+      "Otimização: layout da interface da página de conversão",
+      "Otimização: corrigido o problema da fonte muito pequena na conversão de hora no ecrã externo",
+      "Corrigido: problema em que o ecrã interno não era apresentado em ecrã inteiro",
+      "Corrigido: exibição incompleta de funções na tela interna"
+    ],
+    "Temas": [
+      "Novidade: página de configurações de Papel de parede e Personalização — toda a personalização do MIUI está aqui",
+      "Otimização: a página de configurações do plano de fundo foi totalmente reformulada para escolher mais facilmente o papel de parede desejado",
+      "Otimização: tempo do aplicativo para definir o papel de parede",
+      "Corrigido: problema com o papel de parede"
+    ],
+    "Música": [
+      "Otimização: experiência de reprodução no modo tela interna"
+    ],
+    "Configurações": [
+      "Adicionado: páginas de autorização para Papel de parede e personalização, Gestão do tempo de ecrã, Xiao AI, etc.",
+      "Otimização: animação de alternância da tela dividida",
+      "Otimização: definida a estrutura de layout em colunas para melhorar a fluidez"
+    ],
+    "Loja de aplicações": [
+      "Novo: conteúdo exclusivo para telas grandes, oferecendo aos usuários aplicativos mais práticos",
+      "Otimização: novo design para melhorar a experiência visual",
+      "Otimização: funções de tela externa e tela dividida, continuidade entre telas interna e externa otimizada, eficiência do usuário aprimorada"
+    ],
+    "Gravação de tela": [
+      "Otimização: continuidade da experiência de uso da tela dobrável",
+      "Correção: não era possível gravar a animação da captura de tela durante a gravação de vídeo",
+      "Correção: problema de dessincronização de áudio e vídeo",
+      "Correção: falha ocasional de gravação"
+    ],
+    "Tela dividida": [
+      "Novo: Adicionada máscara deslizante e resposta vibratória ao dividir a tela",
+      "Otimização: desativada a função de arrastar uma janela flutuante de uma tela externa para entrar em tela dividida",
+      "Removido: função de ecrã dividido no ecrã externo",
+      "Removido: função de ecrã dividido 1/3 e 2/3 no ecrã interno"
+    ],
+    "Tarefas recentes": [
+      "Correção: falha ao limpar todos os aplicativos com um toque",
+      "Correção: após limpar todos os aplicativos com um toque, apps não limpos permaneciam nas tarefas recentes",
+      "Correção: o gesto de tarefas recentes não funciona na horizontal quando a barra inferior está oculta"
+    ],
+    "Gerenciador de arquivos": [
+      "Otimização: layout e design do painel de filtros",
+      "Gravação de tela"
+    ],
+    "Navegador": [
+      "Otimização: Experiência de uso da janela livre nas telas interna e externa",
+      "Layout das páginas principais otimizado para melhorar a experiência visual",
+      "Corrigido: problema de continuidade ao alternar entre a tela interna e externa"
+    ],
+    "Recorder": [
+      "Otimização: layout da página inicial do gravador",
+      "Otimização: layout da interface de gravação de áudio",
+      "Otimização: layout da interface de reprodução de gravações",
+      "Otimização: método de nomenclatura dos arquivos de gravação",
+      "Corrigido: impossibilidade ocasional de gravar",
+      "Correção: fechamentos inesperados ocasionais ao converter para texto"
+    ],
+    "Assistente de Rede": [
+      "Otimização: exibição do layout e melhoria da experiência do usuário"
+    ],
+    "Assistente de voz Mi AI": [
+      "Otimização: efeito de exibição da tela interna",
+      "Xiao AI 5.0 agora se adapta a dispositivos com tela grande, melhorando a experiência do usuário",
+      "Funcionalidades populares como XiaoAI Lingxi, transmissão familiar, voz personalizada e atalhos inteligentes"
+    ],
+    "Central de jogos": [
+      "Novidade: Novo design da página inicial para melhorar a experiência do usuário",
+      "Otimização: o estilo da janela pop-up se adapta à largura da tela interna e externa",
+      "Corrigido: exibição anormal do layout do conteúdo, imagens, texto e espaçamento nas páginas principais",
+      "Corrigido: problema de continuidade ao alternar entre a tela interna e externa"
+    ],
+    "Acelerador de jogos": [
+      "Novidade: o ecrã externo suporta a barra lateral de janelas flutuantes de início rápido.",
+      "Otimização: efeitos visuais da página GAME TURBO",
+      "Otimização: efeitos da animação de inicialização",
+      "Otimização: layout da página Game Turbo no modo retrato"
+    ],
+    "Uso de bateria": [
+      "Otimização: Modo de abas para o módulo de otimização de economia de energia nas Configurações"
+    ],
+    "MI Carteira": [
+      "Novidade: navegação de início rápido nas páginas secundárias da tela interna para melhorar a eficiência do usuário",
+      "Novo: Adicionado suporte a janelas livres e ecrã dividido para melhorar a eficiência",
+      "Otimização: a exibição de todas as imagens nas páginas principais se adapta à largura da tela",
+      "Otimização: tamanho da fonte nas páginas principais para melhorar a legibilidade em tela externa",
+      "Otimização: melhorada a experiência visual nas páginas de pagamento"
+    ],
+    "Mi Home": [
+      "Otimização: exibição da janela pop-up",
+      "Otimização: experiência de janelas livres",
+      "Otimização: exibição em algumas páginas"
+    ],
+    "Pesquisa global": [
+      "Layout das páginas principais otimizado para melhorar a experiência visual",
+      "Correção: problema de continuidade entre a tela interna e externa"
+    ],
+    "Internet global": [
+      "Otimização: exibição e layout da página, melhoria da eficiência de leitura",
+      "Otimização: continuidade entre as telas interna e externa aprimorada, melhorando a experiência do usuário"
+    ],
+    "Scanner": [
+      "Otimização: a exibição da página inicial foi alterada de tela cheia para uma janela flutuante centralizada unificada.",
+      "Otimização: exibição da página de resultados da digitalização"
     ]
   },
   "logs_tr": {
@@ -737,8 +2814,188 @@
       "Odaklanmış algoritmalar: Yeni algoritmalarımız, tüm modellerde sorunsuz deneyimi garantilemek için belirli senaryolara dayalı sistem kaynaklarını dinamik olarak tahsis edecektir.",
       "Sıvı depolama: Yeni hassas depolama mekanizmaları zaman geçtikçe sisteminizi canlı ve duyarlı tutacaktır."
     ],
+    "Kayan pencereler": [
+      "Optimizasyon: harici ekrandan küçük pencereyi sürükleyerek bölünmüş ekrana girme özelliği kapatıldı"
+    ],
     "Diğer": [
-      "Sistem güvenliği ve kararlılığı geliştirildi"
+      "Sistem güvenliği ve kararlılığı geliştirildi",
+      "Yeni: MIX FOLD özel sürümünü indirmeye yönlendiren e-posta kılavuzu açılır penceresi",
+      "Optimizasyon: önyükleme kılavuzu animasyonu daha akıcı",
+      "Düzeltildi: Sarı Sayfalar'ın bazı bölümlerinde anormal arayüz görünümü",
+      "Düzeltme: Orijinal alan ve İkinci alan ekran görüntülerinin karışması",
+      "Düzeltildi: İkinci alanda WeChat çökmesi sorunu",
+      "Düzeltildi: WeChat çift uygulama sonrası hesap oturum açma sorunu",
+      "Kaldırıldı: Sarı Sayfalar'ın bazı özellikleri"
+    ],
+    "Öne çıkanlar": [
+      "Yeni: Daha fazla sistem uygulaması serbest pencereler ve bölünmüş ekranı destekliyor, çoklu görev çalışması daha verimli hale geliyor.",
+      "Optimizasyon: Sistem uygulamalarının arayüz düzeni iç ve dış ekranlara uyarlandı; büyük ekranlarda daha verimli görüntüleme sağlandı",
+      "Düzeltme: Sistem uygulamalarında iç ve dış ekran arasında geçiş sürekliliği sorunu; telefonu açıp kapattıktan sonra uygulamalar artık yeniden başlamıyor",
+      "Düzeltme: Büyük yazı tipinde görüntüleme sorunu",
+      "Düzeltme: Üçüncü taraf uygulama uyumluluğu sorunları"
+    ],
+    "Sistem": [
+      "Optimizasyon: Ana ekranda sesli hatırlatma açılır penceresi stili",
+      "Optimizasyon: yanlış dokunmaları önlemek için klasik gezinti tuşlarının konumu",
+      "Optimizasyon: iç/dış ekran katlanıp açılırken bekleme ekranı ayarları sayfasının görünümü",
+      "Düzeltildi: Akıllı Asistan çökmeleri, yanıt vermeme, yürütmeyi durdurma, görüntüleme sorunları ve diğer sorunlar.",
+      "Düzeltme: Akıllı Asistan'ın iç ve dış ekranlara uyum sorunu"
+    ],
+    "AI Arama Asistanı": [
+      "Optimizasyon: Ana ekran görüntüleme modu tam ekrandan ortalanmış yüzen pencereye değiştirildi."
+    ],
+    "Masaüstü": [
+      "Optimizasyon: İç ve dış ekran için ana ekran düzeni optimize edildi, simge sayısı birleştirildi — ana ekranı düzenlemek daha verimli",
+      "Optimizasyon: Ana ekran simgeleri daha hızlı yükleniyor, kullanım daha akıcı",
+      "Düzeltme: İç ve dış ekranların katlanması/açılması sırasında görüntü hatası, hızlı geçişte titreme ve bulut yedekleme sorunları gibi bilinen sorunlar"
+    ],
+    "Kontrol merkezi": [
+      "Düzeltildi: Kontrol Merkezi çökme sorunu",
+      "Düzeltme: Ultra pil tasarrufu modundan çıkıldığında anahtarların ön ayarlı sıraya dönmesi sorunu",
+      "Düzeltme: Ayarlar girişine dokununca yanıt vermeme sorunu",
+      "Düzeltme: Wi-Fi simgesi görüntüleme sorunu",
+      "Düzeltme: Bluetooth alt sayfasında anahtar durumunun titremesi"
+    ],
+    "Mi Paylaşım": [
+      "İyileştirme: Dosya yöneticisindeki paylaşım açılır penceresi stili"
+    ],
+    "Erişilebilirlik": [
+      "Düzeltme: Erişilebilirlik menüsü iç ve dış ekran arasında geçiş yaparken dokunuşlara yanıt vermiyor"
+    ],
+    "Mi Operatör Hizmetleri": [
+      "Optimizasyon: Ana ekranın iç ve dış ekranlarda gösterimi ile görsel deneyim iyileştirildi",
+      "Optimizasyon: katma değerli modülün iç ve dış ekranlardaki görüntüleme stili ve düzeni iyileştirildi, kullanım deneyimi geliştirildi."
+    ],
+    "Uygulama kilidi": [
+      "Düzeltme: Uygulama kilidiyle kilitlenen uygulamaların bir süre sonra kilidinin açılması sorunu giderildi"
+    ],
+    "Kişiler": [
+      "Düzeltme: Yeni grup eklerken ara sıra meydana gelen çökmeler",
+      "Düzeltildi: Arama sırasında numara konumu ve operatör adı görüntülenmiyor",
+      "Düzeltme: Arama geçmişi sayfasında gelen aramaları engelleme ok UI'sinin anormal görüntülenmesi",
+      "Düzeltme: Arama ve Kişiler sayfaları arasında geçiş yaparken ara sıra tuş takımının anormal görüntülenmesi sorunu",
+      "Düzeltildi: Bazı durumlarda yüzen pencerenin arka planına dokunmak geri dönmüyordu.",
+      "Düzeltme: Tuş takımındaki sayı düğmelerinin animasyonu bazen kayboluyor"
+    ],
+    "Mesajlaşma": [
+      "Düzeltme: kararlılık sorunları"
+    ],
+    "Kilit ekranı": [
+      "Eklendi: parmak izinin kilit açmada kullanılıp kullanılmayacağına dair anahtar ayar seçeneği",
+      "Optimizasyon: Kilit ekranı saati ayarlarında düzen konumunun ekrana göre dinamik olarak ayarlanması sorunu giderildi",
+      "İyileştirme: Kilit ekranı saat ayarlarında kilit ekranı saat stilinin tam ekran gösterimi",
+      "Düzeltme: Kilit ekranı saat stili arka planı Ayarlar'da görünmüyordu",
+      "Düzeltme: Çift saatte saat stili seçiminin gizlenmesi sorunu",
+      "Düzeltme: Kilit ekranı için parmak izi kullanımı kapatıldıktan sonra parmak iziyle kilit açma hâlâ çalışıyordu"
+    ],
+    "durum çubuğu, Bildirim çubuğu": [
+      "Optimizasyon: bildirim paneli arayüzü görüntüleme düzeni",
+      "Düzeltme: Bazı durumlarda durum çubuğu ve bildirim çubuğundaki simgeler veya içerikler üst üste biniyor",
+      "Düzeltildi: Erişilebilirlik ayarlarındaki görüntüleme boyutu \"Küçük\" olarak ayarlandığında harici ekranda bildirim arayüzünün yanlış görüntülenmesi sorunu"
+    ],
+    "Hesaplayıcı": [
+      "Optimizasyon: dönüştürme sayfası arayüz düzeni",
+      "Optimizasyon: harici ekranda saat dönüştürme yazı tipinin çok küçük olması sorunu giderildi",
+      "Düzeltildi: İç ekranın tam ekran görüntülenememesi sorunu",
+      "Düzeltildi: İç ekranda işlevlerin tam görüntülenememesi sorunu"
+    ],
+    "Temalar": [
+      "Yeni: Duvar kağıdı ve Kişiselleştirme ayarları sayfası — tüm MIUI kişiselleştirmeleri burada",
+      "Optimizasyon: Duvar kağıdı ayarları sayfası tamamen yenilendi; istediğiniz duvar kağıdını daha kolay seçebilirsiniz",
+      "Optimizasyon: duvar kağıdı ayarlama uygulaması süresi",
+      "Düzeltme: duvar kağıdı sorunu"
+    ],
+    "Müzik": [
+      "Optimizasyon: iç ekran durumunda oynatma deneyimi"
+    ],
+    "Ayarlar": [
+      "Eklendi: Duvar kağıdı ve kişiselleştirme, Ekran süresi yönetimi, Xiao AI vb. için yetkilendirme sayfaları",
+      "Optimizasyon: bölünmüş ekran geçiş animasyonu",
+      "Optimizasyon: Akıcılığı artırmak için sütun düzeni çerçevesi ayarlandı"
+    ],
+    "Uygulama mağazası": [
+      "Yeni: Büyük ekranlara özel içerik, kullanıcılara daha kullanışlı uygulamalar sunar",
+      "Optimizasyon: Görsel deneyimi geliştiren yeni tasarım",
+      "Optimizasyon: Harici ekran ve bölünmüş ekran özellikleri, iç ve dış ekran arasındaki süreklilik optimize edildi, kullanıcı verimliliği artırıldı"
+    ],
+    "Ekran kaydı": [
+      "Optimizasyon: katlanabilir ekran kullanım deneyimi sürekliliği",
+      "Düzeltme: Video kaydı sırasında ekran görüntüsü animasyonu kaydedilemiyordu",
+      "Düzeltme: ses ve görüntü senkronizasyonu sorunu",
+      "Düzeltme: Ara sıra oluşan kayıt hatası"
+    ],
+    "Ekran bölme": [
+      "Yeni: Ekran bölme sırasında kaydırma maskesi ve titreşim geri bildirimi eklendi",
+      "Optimizasyon: harici ekrandan küçük pencereyi sürükleyerek bölünmüş ekrana girme özelliği kapatıldı",
+      "Kaldırıldı: Harici ekranda bölünmüş ekran özelliği",
+      "Kaldırıldı: iç ekranda 1/3 ve 2/3 bölünmüş ekran özelliği"
+    ],
+    "Son kullanılanlar": [
+      "Düzeltme: Tek dokunuşla tüm uygulamaları temizlerken donma sorunu",
+      "Düzeltme: Tüm uygulamalar tek dokunuşla temizlendikten sonra son görevlerde temizlenmemiş uygulamalar kalıyordu",
+      "Düzeltme: alt çubuk gizlendiğinde yatay ekranda son görevler hareketi çalışmıyor"
+    ],
+    "Dosya Yöneticisi": [
+      "Optimizasyon: Filtre paneli düzeni ve tasarımı",
+      "Ekran kaydı"
+    ],
+    "Tarayıcı": [
+      "Optimizasyon: İç ve dış ekranlarda serbest pencere kullanım deneyimi",
+      "Temel sayfa düzeni, görsel deneyimi iyileştirmek için optimize edildi",
+      "Düzeltme: İç ve dış ekran arasında geçiş yaparken süreklilik sorunu",
+      "Optimizasyon: Ana sayfa görünümü tam ekrandan birleşik ortalanmış yüzen pencereye değiştirildi.",
+      "İyileştirme: Tarama sonuç sayfası görünümü"
+    ],
+    "Recorder": [
+      "Optimizasyon: Ses kaydedici ana sayfa düzeni",
+      "İyileştirme: ses kaydı arayüzü düzeni",
+      "Optimizasyon: kayıt oynatma arayüzü düzeni",
+      "İyileştirme: Kayıt dosyası adlandırma yöntemi",
+      "Düzeltildi: Ara sıra kayıt yapılamaması sorunu",
+      "Düzeltme: Metne dönüştürme sırasında ara sıra yaşanan çökmeler"
+    ],
+    "Ağ Asistanı": [
+      "Optimizasyon: düzen görünümü ve geliştirilmiş kullanıcı deneyimi"
+    ],
+    "Mi AI sesli yardımcı": [
+      "Optimizasyon: iç ekran görüntüleme efekti",
+      "Xiao AI 5.0 artık büyük ekranlı cihazlara uyum sağlıyor ve kullanıcı deneyimini iyileştiriyor",
+      "XiaoAI Lingxi, aile yayını, özel ses ve akıllı kısayollar gibi popüler özellikler"
+    ],
+    "Oyun Merkezi": [
+      "Yeni: Kullanıcı deneyimini iyileştiren yeni ana sayfa tasarımı",
+      "Optimizasyon: açılır pencere stili iç ve dış ekran genişliğine uyum sağlar",
+      "Düzeltildi: Ana sayfalarda içerik düzeni, görseller, metin ve aralıkların hatalı görüntülenmesi",
+      "Düzeltme: İç ve dış ekran arasında geçiş yaparken süreklilik sorunu"
+    ],
+    "Oyun hız artırıcı": [
+      "Yeni: Dış ekran, hızlı başlatma kayan pencere kenar çubuğunu destekler.",
+      "Optimizasyon: GAME TURBO sayfası görsel efektleri",
+      "Optimizasyon: açılış animasyonu efektleri",
+      "Optimizasyon: dikey Game Turbo sayfası düzeni"
+    ],
+    "Pil kullanımı": [
+      "Optimizasyon: Ayarlar'da güç tasarrufu optimizasyon modülü için sekme modu"
+    ],
+    "MI Cüzdan": [
+      "Yeni: İç ekranın ikincil sayfalarında hızlı başlatma navigasyonu ile kullanıcı verimliliğini artırma",
+      "Yeni: Serbest pencereler ve bölünmüş ekran desteği eklendi, kullanıcı verimliliği artırıldı",
+      "Optimizasyon: Temel sayfalardaki tüm görsellerin görüntülenmesi ekran genişliğine uyum sağlar",
+      "Optimizasyon: Ana sayfalardaki yazı tipi boyutu, harici ekranda okunabilirliği artırmak için",
+      "Optimizasyon: Ödeme ile ilgili sayfalarda görsel deneyim iyileştirildi"
+    ],
+    "Mi Home": [
+      "Optimizasyon: açılır pencere gösterimi",
+      "Optimizasyon: serbest pencere deneyimi",
+      "Optimizasyon: bazı sayfalarda görünüm"
+    ],
+    "Genel arama": [
+      "Temel sayfa düzeni, görsel deneyimi iyileştirmek için optimize edildi",
+      "Düzeltme: iç ve dış ekran arasındaki süreklilik deneyimi sorunu"
+    ],
+    "Global İnternet": [
+      "Optimizasyon: sayfa görünümü ve düzeni, okuma verimliliğinde iyileştirme",
+      "Optimizasyon: İç ve dış ekran sürekliliği iyileştirildi, kullanıcı deneyimi artırıldı"
     ]
   },
   "logs_id": {
@@ -747,8 +3004,188 @@
       "Algoritme terfokus: Algoritme baru kami akan secara dinamis mengalokasikan sumber daya sistem berdasarkan kondisi tertentu, memastikan pengalaman yang lancar pada semua model.",
       "Penyimpanan yang bersifat seperti cairan: Mekanisme penyimpanan sensitif baru akan membuat sistem Anda tetap hidup dan responsif seiring berjalannya waktu."
     ],
+    "Jendela mengambang": [
+      "Optimasi: Menonaktifkan fungsi menyeret jendela kecil dari layar eksternal untuk masuk ke layar terbagi"
+    ],
     "Lainnya": [
-      "Keamanan dan stabilitas sistem ditingkatkan"
+      "Keamanan dan stabilitas sistem ditingkatkan",
+      "Baru: Lebih banyak aplikasi sistem mendukung jendela bebas dan layar terbagi, sehingga pekerjaan multitasking lebih efisien.",
+      "Optimasi: tata letak UI aplikasi sistem disesuaikan untuk layar dalam dan luar, tampilan di layar besar lebih efisien",
+      "Perbaikan: masalah kontinuitas saat beralih antara layar dalam dan luar untuk aplikasi sistem; aplikasi tidak lagi dimulai ulang setelah membuka atau menutup ponsel",
+      "Perbaikan: masalah tampilan saat font besar",
+      "Perbaikan: masalah kompatibilitas aplikasi pihak ketiga",
+      "Baru: jendela pop-up panduan email untuk mengunduh versi kustom MIX FOLD",
+      "Optimasi: animasi panduan boot lebih lancar",
+      "Diperbaiki: tampilan UI tidak normal di beberapa bagian Halaman Kuning",
+      "Perbaikan: tangkapan layar dari ruang asli dan Ruang Kedua tercampur",
+      "Perbaikan: WeChat crash di Ruang Kedua",
+      "Perbaikan: masalah login akun setelah menggunakan Dual Apps dengan WeChat",
+      "Dihapus: beberapa fitur Halaman Kuning"
+    ],
+    "Sistem": [
+      "Optimasi: gaya jendela pop-up pengingat suara di layar utama",
+      "Optimasi: posisi tombol navigasi klasik untuk menghindari sentuhan tak sengaja",
+      "Optimasi: tampilan halaman pengaturan layar siaga saat melipat/membuka layar dalam/luar",
+      "Diperbaiki: Asisten Cerdas mogok, tidak merespons, berhenti berjalan, masalah tampilan, dan masalah lainnya.",
+      "Perbaikan: masalah penyesuaian Asisten pintar pada layar dalam dan luar"
+    ],
+    "Asisten Panggilan AI": [
+      "Optimasi: mode tampilan layar utama diubah dari layar penuh menjadi jendela mengambang di tengah."
+    ],
+    "Desktop": [
+      "Optimasi: Tata letak layar utama untuk layar dalam dan luar dioptimalkan, jumlah ikon diseragamkan — menata layar utama lebih efisien",
+      "Optimasi: pemuatan ikon layar utama lebih cepat, pengalaman lebih mulus",
+      "Perbaikan: Masalah yang diketahui seperti kesalahan tampilan saat melipat/membuka layar dalam dan luar, kedipan saat beralih cepat, dan masalah cadangan cloud"
+    ],
+    "Pusat kontrol": [
+      "Perbaikan: masalah crash Pusat Kontrol",
+      "Perbaikan: Masalah di mana tombol beralih kembali ke urutan preset setelah keluar dari mode penghemat baterai ultra",
+      "Perbaikan: Tidak ada respons saat mengetuk entri Pengaturan",
+      "Perbaikan: masalah tampilan ikon Wi-Fi",
+      "Perbaikan: status tombol berkedip di subhalaman Bluetooth"
+    ],
+    "Mi Share": [
+      "Optimasi: gaya jendela pop-up berbagi di Pengelola File"
+    ],
+    "Aksesibilitas": [
+      "Perbaikan: Menu aksesibilitas tidak merespons ketukan saat beralih antara layar dalam dan luar"
+    ],
+    "Layanan Operator Mi": [
+      "Optimasi: tampilan layar utama pada layar dalam dan luar untuk meningkatkan pengalaman visual",
+      "Optimasi: Gaya tampilan dan tata letak modul nilai tambah di layar dalam dan luar ditingkatkan untuk pengalaman penggunaan yang lebih baik."
+    ],
+    "Kunci aplikasi": [
+      "Perbaikan: Aplikasi yang dikunci dengan Kunci Aplikasi menjadi tidak terkunci setelah beberapa waktu"
+    ],
+    "Kontak": [
+      "Perbaikan: Crash sesekali saat menambahkan grup baru",
+      "Perbaikan: Lokasi nomor dan nama operator tidak ditampilkan saat panggilan",
+      "Perbaikan: tampilan anak panah UI pemblokiran panggilan masuk yang tidak normal di halaman riwayat panggilan",
+      "Perbaikan: Terkadang keyboard panggilan ditampilkan tidak normal saat beralih antara halaman Panggilan dan Kontak",
+      "Diperbaiki: pada beberapa skenario, mengetuk latar belakang jendela mengambang tidak dapat kembali.",
+      "Perbaikan: animasi tombol angka pada keypad panggilan terkadang hilang"
+    ],
+    "Pesan": [
+      "Perbaikan: masalah stabilitas"
+    ],
+    "Layar kunci": [
+      "Ditambahkan: opsi pengaturan tombol untuk penggunaan sidik jari saat membuka kunci",
+      "Optimasi: Memperbaiki masalah di pengaturan jam layar kunci tempat posisi tata letak menyesuaikan secara dinamis dengan layar",
+      "Optimasi: Tampilan layar penuh gaya waktu layar kunci di pengaturan jam layar kunci",
+      "Perbaikan: Latar belakang gaya jam layar kunci tidak ditampilkan di Pengaturan",
+      "Perbaikan: masalah tersembunyinya pilihan gaya waktu pada jam ganda",
+      "Perbaikan: setelah menonaktifkan sidik jari untuk layar kunci, buka kunci dengan sidik jari masih berfungsi"
+    ],
+    "bar status, layar notifikasi": [
+      "Optimasi: tata letak tampilan antarmuka panel notifikasi",
+      "Perbaikan: Ikon atau konten di bilah status dan bilah notifikasi tumpang tindih pada beberapa skenario",
+      "Perbaikan: Tampilan antarmuka notifikasi di layar eksternal salah saat ukuran tampilan di Aksesibilitas diatur ke \"Kecil\""
+    ],
+    "Kalkulator": [
+      "Optimasi: tata letak antarmuka halaman konversi",
+      "Optimasi: diperbaiki masalah ukuran font konversi waktu yang terlalu kecil di layar eksternal",
+      "Diperbaiki: Masalah layar dalam tidak dapat menampilkan layar penuh",
+      "Diperbaiki: tampilan fungsi di layar dalam tidak lengkap"
+    ],
+    "Tema": [
+      "Baru: halaman pengaturan Wallpaper & Personalisasi — semua personalisasi MIUI ada di sini",
+      "Optimasi: Halaman pengaturan wallpaper telah diperbarui sepenuhnya, memudahkan Anda memilih wallpaper yang diinginkan",
+      "Optimasi: waktu aplikasi pengatur wallpaper",
+      "Perbaikan: masalah wallpaper"
+    ],
+    "Musik": [
+      "Optimasi: pengalaman pemutaran dalam mode layar dalam"
+    ],
+    "Pengaturan": [
+      "Ditambahkan: halaman otorisasi untuk Wallpaper & Personalisasi, Manajemen waktu layar, Xiao AI, dll.",
+      "Optimasi: animasi peralihan layar terbagi",
+      "Optimasi: Menyiapkan kerangka tata letak kolom untuk meningkatkan kelancaran"
+    ],
+    "Toko aplikasi": [
+      "Baru: Konten khusus layar besar, memberikan aplikasi yang lebih praktis kepada pengguna",
+      "Optimasi: Desain baru untuk meningkatkan pengalaman visual",
+      "Optimasi: Fitur layar eksternal dan layar terpisah, kontinuitas antara layar dalam dan luar dioptimalkan, meningkatkan efisiensi pengguna"
+    ],
+    "Perekaman layar": [
+      "Optimasi: kesinambungan pengalaman pengoperasian layar lipat",
+      "Perbaikan: Tidak dapat merekam animasi tangkapan layar saat merekam video",
+      "Perbaikan: masalah audio dan video tidak sinkron",
+      "Perbaikan: Kegagalan perekaman yang kadang terjadi"
+    ],
+    "Layar Split": [
+      "Baru: Menambahkan masker geser dan umpan balik getaran saat membagi layar",
+      "Optimasi: Menonaktifkan fungsi menyeret jendela kecil dari layar eksternal untuk masuk ke layar terbagi",
+      "Dihapus: fitur layar terbagi pada layar eksternal",
+      "Dihapus: fitur layar terbagi 1/3 dan 2/3 pada layar dalam"
+    ],
+    "Tugas Terbaru": [
+      "Perbaikan: Masalah crash saat membersihkan semua aplikasi dengan sekali ketuk",
+      "Perbaikan: setelah membersihkan semua aplikasi dengan satu ketukan, aplikasi yang belum dibersihkan masih muncul di tugas terbaru",
+      "Perbaikan: gestur tugas terbaru tidak berfungsi dalam mode lanskap saat bilah bawah disembunyikan"
+    ],
+    "Pengelola Berkas": [
+      "Optimasi: Tata letak dan desain panel filter",
+      "Perekaman layar"
+    ],
+    "Browser": [
+      "Optimasi: Pengalaman penggunaan jendela bebas di layar dalam dan luar",
+      "Tata letak halaman inti dioptimalkan untuk meningkatkan pengalaman visual",
+      "Perbaikan: Masalah kontinuitas saat beralih antara layar dalam dan luar"
+    ],
+    "Recorder": [
+      "Optimasi: tata letak halaman utama Perekam",
+      "Optimasi: tata letak antarmuka perekaman audio",
+      "Optimasi: tata letak antarmuka pemutaran rekaman",
+      "Optimasi: metode penamaan file rekaman",
+      "Diperbaiki: terkadang tidak dapat merekam",
+      "Perbaikan: crash sesekali saat mengonversi ke teks"
+    ],
+    "Pembantu Jaringan": [
+      "Optimasi: tampilan tata letak dan peningkatan pengalaman pengguna"
+    ],
+    "Mi AI Asisten suara": [
+      "Optimasi: efek tampilan layar dalam",
+      "Xiao AI 5.0 kini mendukung perangkat layar besar, meningkatkan pengalaman pengguna",
+      "Fitur populer seperti XiaoAI Lingxi, siaran keluarga, suara kustom, dan Pintasan Cerdas"
+    ],
+    "Pusat Game": [
+      "Baru: Desain beranda baru untuk meningkatkan pengalaman pengguna",
+      "Optimasi: gaya jendela pop-up menyesuaikan lebar layar dalam dan luar",
+      "Diperbaiki: Tampilan tidak normal pada tata letak konten, gambar, teks, dan spasi di halaman inti",
+      "Perbaikan: masalah kontinuitas saat beralih antara layar dalam dan luar"
+    ],
+    "Pemercepat game": [
+      "Baru: Layar luar mendukung bilah samping jendela mengambang peluncuran cepat.",
+      "Optimasi: efek visual halaman GAME TURBO",
+      "Optimasi: efek animasi boot",
+      "Optimasi: tata letak halaman Game Turbo dalam mode potret"
+    ],
+    "Konsumsi baterai": [
+      "Optimasi: Mode tab untuk modul optimasi penghemat daya di Pengaturan"
+    ],
+    "Xiaomi Wallet": [
+      "Baru: Navigasi peluncuran cepat di halaman sekunder layar dalam untuk meningkatkan efisiensi pengguna",
+      "Baru: Dukungan jendela bebas dan layar terbagi ditambahkan untuk meningkatkan efisiensi pengguna",
+      "Optimasi: Tampilan semua gambar di halaman inti menyesuaikan dengan lebar layar",
+      "Optimasi: Ukuran font halaman inti untuk meningkatkan keterbacaan di layar eksternal",
+      "Optimasi: Pengalaman visual di halaman pembayaran ditingkatkan"
+    ],
+    "Mi Home": [
+      "Optimasi: tampilan jendela pop-up",
+      "Optimasi: pengalaman jendela bebas",
+      "Optimasi: tampilan di beberapa halaman"
+    ],
+    "Pencarian global": [
+      "Tata letak halaman inti dioptimalkan untuk meningkatkan pengalaman visual",
+      "Perbaikan: masalah pengalaman kontinuitas antara layar dalam dan luar"
+    ],
+    "Internet Global": [
+      "Optimasi: tampilan dan tata letak halaman, meningkatkan efisiensi membaca",
+      "Optimasi: Kontinuitas layar dalam dan luar ditingkatkan, meningkatkan pengalaman pengguna"
+    ],
+    "Pemindai": [
+      "Optimasi: Tampilan halaman beranda diubah dari layar penuh menjadi jendela mengambang terpusat yang seragam.",
+      "Optimasi: tampilan halaman hasil pemindaian"
     ]
   },
   "logs_vi": {
@@ -757,8 +3194,190 @@
       "Thuật toán tập trung: Thuật toán mới sẽ phân bổ động tài nguyên hệ thống dựa trên bối cảnh cụ thể, đảm bảo trải nghiệm mượt mà trên tất cả mẫu thiết bị.",
       "Lưu trữ trạng thái lỏng: Cơ chế lưu trữ nhạy cảm mới sẽ giúp hệ thống luôn vận hành mượt mà và phản hồi nhanh theo thời gian."
     ],
+    "Cửa sổ nổi": [
+      "Tối ưu hóa: Tắt tính năng kéo cửa sổ nhỏ từ màn hình ngoài để vào chế độ chia đôi màn hình"
+    ],
     "Khác": [
-      "Cải thiện tính ổn định và bảo mật hệ thống"
+      "Cải thiện tính ổn định và bảo mật hệ thống",
+      "Mới: cửa sổ bật lên hướng dẫn qua email để tải xuống phiên bản tùy chỉnh MIX FOLD",
+      "Tối ưu hóa: hoạt ảnh hướng dẫn khởi động mượt mà hơn",
+      "Đã sửa: lỗi hiển thị UI bất thường ở một số mục trong Danh bạ vàng",
+      "Sửa lỗi: ảnh chụp màn hình từ không gian gốc và Không gian thứ hai bị lẫn lộn",
+      "Đã sửa: WeChat bị thoát đột ngột trong Không gian thứ hai",
+      "Đã sửa: lỗi đăng nhập tài khoản sau khi dùng Dual Apps với WeChat",
+      "Đã xóa: một số tính năng của Trang Vàng"
+    ],
+    "Nổi bật": [
+      "Mới: Nhiều ứng dụng hệ thống hơn hỗ trợ cửa sổ tự do và chia đôi màn hình, giúp làm việc đa nhiệm hiệu quả hơn.",
+      "Tối ưu hóa: bố cục giao diện ứng dụng hệ thống được điều chỉnh cho màn hình trong và ngoài, hiển thị trên màn hình lớn hiệu quả hơn",
+      "Sửa lỗi: vấn đề liên tục khi chuyển đổi giữa màn hình trong và ngoài đối với ứng dụng hệ thống; ứng dụng không còn khởi động lại sau khi mở hoặc đóng điện thoại",
+      "Sửa: lỗi hiển thị với phông chữ lớn",
+      "Sửa: vấn đề tương thích ứng dụng bên thứ ba"
+    ],
+    "Hệ thống": [
+      "Tối ưu hóa: kiểu cửa sổ bật lên nhắc nhở âm thanh trên màn hình chính",
+      "Tối ưu hóa: vị trí phím điều hướng cổ điển để tránh chạm nhầm",
+      "Tối ưu hóa: hiển thị trang cài đặt màn hình chờ khi gập/mở màn hình trong/ngoài",
+      "Đã sửa: Trợ lý thông minh gặp lỗi thoát, không phản hồi, dừng thực thi, lỗi hiển thị và các vấn đề khác.",
+      "Sửa lỗi: vấn đề thích ứng của Trợ lý thông minh trên màn hình trong và ngoài"
+    ],
+    "Trợ lý cuộc gọi AI": [
+      "Tối ưu hóa: đã thay đổi chế độ hiển thị màn hình chính từ toàn màn hình sang cửa sổ nổi ở giữa."
+    ],
+    "Màn hình chính": [
+      "Tối ưu hóa: Tối ưu bố cục màn hình chính cho màn hình trong và ngoài, thống nhất số lượng biểu tượng — sắp xếp màn hình chính hiệu quả hơn",
+      "Tối ưu hóa: tải biểu tượng màn hình chính nhanh hơn, trải nghiệm mượt mà hơn",
+      "Sửa lỗi: Các vấn đề đã biết như lỗi hiển thị khi gập/mở màn hình trong và ngoài, nhấp nháy khi chuyển nhanh và vấn đề sao lưu đám mây"
+    ],
+    "Trung tâm điều khiển": [
+      "Đã sửa: lỗi treo Trung tâm điều khiển",
+      "Sửa lỗi: Vấn đề công tắc trở về thứ tự đặt trước sau khi thoát chế độ tiết kiệm pin siêu cao",
+      "Sửa: Không phản hồi khi nhấn vào mục Cài đặt",
+      "Sửa lỗi: vấn đề hiển thị biểu tượng Wi-Fi",
+      "Sửa lỗi: trạng thái công tắc nhấp nháy trên trang con Bluetooth"
+    ],
+    "Mi Share": [
+      "Tối ưu hóa: kiểu cửa sổ bật lên chia sẻ trong Trình quản lý tệp"
+    ],
+    "Khả năng truy cập": [
+      "Sửa lỗi: Menu trợ năng không phản hồi khi chạm khi chuyển đổi giữa màn hình trong và ngoài"
+    ],
+    "Dịch vụ nhà mạng Mi": [
+      "Tối ưu hóa: hiển thị màn hình chính trên màn hình trong và ngoài để nâng cao trải nghiệm hình ảnh",
+      "Tối ưu hóa: Cải thiện kiểu hiển thị và bố cục của mô-đun giá trị gia tăng trên màn hình trong và ngoài để nâng cao trải nghiệm sử dụng."
+    ],
+    "Khóa ứng dụng": [
+      "Sửa: Ứng dụng được khóa bằng Khóa ứng dụng bị mở khóa sau một thời gian"
+    ],
+    "Danh bạ": [
+      "Sửa lỗi: Thỉnh thoảng bị thoát ứng dụng khi thêm nhóm mới",
+      "Đã sửa: Không hiển thị vị trí số và tên nhà mạng khi gọi",
+      "Sửa lỗi: hiển thị bất thường của mũi tên UI chặn cuộc gọi đến trên trang lịch sử cuộc gọi",
+      "Sửa lỗi: Đôi khi bàn phím quay số hiển thị bất thường khi chuyển đổi giữa trang Gọi và Danh bạ",
+      "Đã sửa: Trong một số trường hợp, nhấn vào nền cửa sổ nổi không thể quay lại.",
+      "Sửa lỗi: đôi khi mất hiệu ứng animation của các nút số trên bàn phím gọi"
+    ],
+    "Tin nhắn": [
+      "Sửa lỗi: vấn đề ổn định"
+    ],
+    "Màn hình khóa": [
+      "Đã thêm: tùy chọn bật/tắt việc dùng vân tay để mở khóa",
+      "Tối ưu hóa: Đã khắc phục sự cố trong cài đặt đồng hồ màn hình khóa khi vị trí bố cục tự động điều chỉnh theo màn hình",
+      "Tối ưu hóa: Hiển thị toàn màn hình kiểu thời gian màn hình khóa trong cài đặt đồng hồ màn hình khóa",
+      "Sửa lỗi: Nền kiểu giờ màn hình khóa không hiển thị trong Cài đặt",
+      "Sửa lỗi: vấn đề ẩn lựa chọn kiểu thời gian trong đồng hồ kép",
+      "Sửa lỗi: sau khi tắt vân tay cho màn hình khóa, vẫn có thể mở khóa bằng vân tay"
+    ],
+    "Thanh trạng thái, thanh thông báo": [
+      "Tối ưu hóa: bố cục hiển thị giao diện bảng thông báo",
+      "Đã sửa: Biểu tượng hoặc nội dung trên thanh trạng thái và thanh thông báo bị chồng lên nhau trong một số trường hợp",
+      "Đã sửa: Lỗi hiển thị giao diện thông báo trên màn hình ngoài khi kích thước hiển thị trong Trợ năng được đặt thành \"Nhỏ\""
+    ],
+    "Máy tính": [
+      "Tối ưu hóa: bố cục giao diện trang quy đổi",
+      "Tối ưu hóa: đã khắc phục vấn đề phông chữ chuyển đổi thời gian trên màn hình ngoài quá nhỏ",
+      "Đã sửa: Lỗi màn hình trong không thể hiển thị toàn màn hình",
+      "Đã sửa: hiển thị không đầy đủ các chức năng trên màn hình trong"
+    ],
+    "Chủ đề": [
+      "Mới: trang cài đặt Hình nền & Cá nhân hóa — mọi tùy biến của MIUI đều ở đây",
+      "Tối ưu hóa: Trang cài đặt hình nền được làm mới hoàn toàn, giúp bạn dễ dàng chọn hình nền mong muốn hơn",
+      "Tối ưu hóa: thời gian ứng dụng đặt hình nền",
+      "Đã sửa: lỗi hình nền"
+    ],
+    "Âm nhạc": [
+      "Tối ưu hóa: trải nghiệm phát lại ở chế độ màn hình trong"
+    ],
+    "Cài đặt": [
+      "Đã thêm: trang cấp quyền cho Hình nền & Cá nhân hóa, Quản lý thời gian màn hình, Xiao AI, v.v.",
+      "Tối ưu hóa: hoạt ảnh chuyển đổi màn hình chia đôi",
+      "Tối ưu hóa: Thiết lập khung bố cục cột để cải thiện độ mượt"
+    ],
+    "Cửa hàng ứng dụng": [
+      "Mới: Nội dung dành riêng cho màn hình lớn, mang đến cho người dùng các ứng dụng thiết thực hơn",
+      "Tối ưu hóa: Thiết kế mới giúp nâng cao trải nghiệm hình ảnh",
+      "Tối ưu hóa: Tính năng màn hình ngoài và chia đôi màn hình, tối ưu tính liên tục giữa màn hình trong và ngoài, nâng cao hiệu quả sử dụng"
+    ],
+    "Ghi màn hình": [
+      "Tối ưu hóa: tính liên tục của trải nghiệm thao tác trên màn hình gập",
+      "Sửa lỗi: Không thể ghi lại hoạt ảnh chụp màn hình khi đang quay video",
+      "Sửa lỗi: âm thanh và hình ảnh không đồng bộ",
+      "Sửa lỗi: Thỉnh thoảng ghi âm bị lỗi"
+    ],
+    "Chia màn hình": [
+      "Mới: Thêm mặt nạ trượt và phản hồi rung khi chia đôi màn hình",
+      "Tối ưu hóa: Tắt tính năng kéo cửa sổ nhỏ từ màn hình ngoài để vào chế độ chia đôi màn hình",
+      "Đã xóa: tính năng chia đôi màn hình trên màn hình ngoài",
+      "Đã xóa: tính năng chia đôi màn hình 1/3 và 2/3 trên màn hình trong"
+    ],
+    "Tác vụ gần đây": [
+      "Sửa lỗi: Treo khi dọn dẹp tất cả ứng dụng bằng một chạm",
+      "Sửa lỗi: sau khi dọn sạch tất cả ứng dụng bằng một chạm, các ứng dụng chưa được dọn vẫn còn trong tác vụ gần đây",
+      "Sửa lỗi: thao tác cử chỉ tác vụ gần đây không hoạt động ở chế độ ngang khi thanh dưới bị ẩn"
+    ],
+    "Trình quản lý tệp": [
+      "Tối ưu hóa: Bố cục và thiết kế bảng lọc",
+      "Ghi màn hình"
+    ],
+    "Trình duyệt": [
+      "Tối ưu hóa: Trải nghiệm sử dụng cửa sổ tự do trên màn hình trong và ngoài",
+      "Tối ưu bố cục trang chính để nâng cao trải nghiệm thị giác",
+      "Đã sửa: Sự cố liên tục khi chuyển đổi giữa màn hình trong và ngoài"
+    ],
+    "Recorder": [
+      "Tối ưu hóa: bố cục trang chính của Trình ghi âm",
+      "Tối ưu hóa: bố cục giao diện ghi âm thanh",
+      "Tối ưu hóa: bố cục giao diện phát lại bản ghi âm",
+      "Tối ưu hóa: cách đặt tên tệp ghi âm",
+      "Đã sửa: đôi khi không thể ghi âm",
+      "Sửa lỗi: thỉnh thoảng bị thoát ứng dụng khi chuyển sang văn bản"
+    ],
+    "Trợ lý mạng": [
+      "Tối ưu hóa: hiển thị bố cục và cải thiện trải nghiệm người dùng"
+    ],
+    "Trợ lý thoại Mi AI": [
+      "Tối ưu hóa: hiệu ứng hiển thị màn hình trong",
+      "Xiao AI 5.0 đã thích ứng với thiết bị màn hình lớn, nâng cao trải nghiệm người dùng",
+      "Các tính năng phổ biến như XiaoAI Lingxi, truyền tin gia đình, giọng nói tùy chỉnh và phím tắt thông minh"
+    ],
+    "Trung tâm trò chơi": [
+      "Mới: Thiết kế trang chủ mới giúp nâng cao trải nghiệm người dùng",
+      "Tối ưu hóa: kiểu cửa sổ bật lên tự điều chỉnh theo chiều rộng màn hình trong và ngoài",
+      "Đã sửa: Lỗi hiển thị bất thường của bố cục nội dung, hình ảnh, văn bản và khoảng cách trên các trang chính",
+      "Đã sửa: vấn đề liên tục khi chuyển đổi giữa màn hình trong và ngoài"
+    ],
+    "Tăng tốc trò chơi": [
+      "Mới: Màn hình ngoài hỗ trợ thanh bên cửa sổ nổi khởi chạy nhanh.",
+      "Tối ưu hóa: hiệu ứng hình ảnh trang GAME TURBO",
+      "Tối ưu hóa: hiệu ứng hoạt ảnh khởi động",
+      "Tối ưu hóa: bố cục trang Game Turbo dạng dọc"
+    ],
+    "Sử dụng pin": [
+      "Tối ưu hóa: Chế độ tab cho mô-đun tối ưu tiết kiệm pin trong Cài đặt"
+    ],
+    "Tiền túi Xiaomi": [
+      "Mới: Điều hướng khởi chạy nhanh trên các trang phụ của màn hình bên trong giúp nâng cao hiệu quả sử dụng",
+      "Mới: Hỗ trợ cửa sổ tự do và chia đôi màn hình, nâng cao hiệu quả sử dụng",
+      "Tối ưu hóa: Hiển thị tất cả hình ảnh trên các trang chính tự động thích ứng với chiều rộng màn hình",
+      "Tối ưu hóa: Kích thước phông chữ trên các trang chính để cải thiện khả năng đọc trên màn hình ngoài",
+      "Tối ưu hóa: Cải thiện trải nghiệm hình ảnh trên các trang thanh toán"
+    ],
+    "Mi Home": [
+      "Tối ưu hóa: hiển thị cửa sổ bật lên",
+      "Tối ưu hóa: trải nghiệm cửa sổ tự do",
+      "Tối ưu hóa: hiển thị trên một số trang"
+    ],
+    "Tìm kiếm toàn cầu": [
+      "Tối ưu bố cục trang chính để nâng cao trải nghiệm thị giác",
+      "Sửa lỗi: vấn đề trải nghiệm liên tục giữa màn hình trong và ngoài"
+    ],
+    "Internet toàn cầu": [
+      "Tối ưu hóa: hiển thị và bố cục trang, nâng cao hiệu quả đọc",
+      "Tối ưu: Cải thiện tính liên tục giữa màn hình trong và ngoài, nâng cao trải nghiệm người dùng"
+    ],
+    "Quét": [
+      "Tối ưu hóa: Cách hiển thị trang chủ đã được thay đổi từ toàn màn hình thành cửa sổ nổi căn giữa thống nhất.",
+      "Tối ưu hóa: hiển thị trang kết quả quét"
     ]
   },
   "logs_th": {
@@ -767,8 +3386,185 @@
       "อัลกอริธึมที่มุ่งเน้น: อัลกอริธึมใหม่ของเราจะจัดสรรทรัพยากรระบบแบบไดนามิกตามฉากเฉพาะ ทำให้มั่นใจได้ว่าจะได้รับประสบการณ์ที่ราบรื่นในทุกรุ่น",
       "พื้นที่จัดเก็บแบบของเหลว: กลไกการจัดเก็บข้อมูลที่ละเอียดอ่อนใหม่จะทำให้ระบบของคุณมีชีวิตชีวาและตอบสนองเมื่อเวลาผ่านไป"
     ],
+    "หน้าต่างแบบลอย": [
+      "ปรับให้เหมาะสม: ปิดใช้งานการลากหน้าต่างลอยจากหน้าจอภายนอกเพื่อเข้าสู่หน้าจอแยก"
+    ],
     "อื่นๆ": [
-      "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
+      "ปรับปรุงความปลอดภัยและความเสถียรของระบบ",
+      "เพิ่มใหม่: หน้าต่างป๊อปอัปแนะนำอีเมลเพื่อดาวน์โหลด MIX FOLD ฉบับปรับแต่ง",
+      "การเพิ่มประสิทธิภาพ: แอนิเมชันแนะนำการบูตลื่นไหลขึ้น",
+      "แก้ไข: การแสดง UI ผิดปกติในบางส่วนของสมุดหน้าเหลือง",
+      "แก้ไข: ภาพหน้าจอจากพื้นที่ต้นฉบับและพื้นที่ที่สองปะปนกัน",
+      "แก้ไข: WeChat หยุดทำงานในพื้นที่ที่สอง",
+      "แก้ไข: ปัญหาการเข้าสู่ระบบบัญชีผิดปกติหลังใช้ Dual Apps กับ WeChat",
+      "ลบแล้ว: คุณสมบัติบางอย่างของสมุดหน้าเหลือง"
+    ],
+    "ไฮไลท์": [
+      "ใหม่: แอประบบจำนวนมากขึ้นรองรับหน้าต่างอิสระและแบ่งหน้าจอ ทำให้การทำงานหลายอย่างมีประสิทธิภาพมากขึ้น",
+      "เพิ่มประสิทธิภาพ: ปรับเลย์เอาต์ UI ของแอประบบให้เหมาะกับหน้าจอด้านในและด้านนอก แสดงผลบนหน้าจอใหญ่ได้มีประสิทธิภาพยิ่งขึ้น",
+      "แก้ไข: ปัญหาความต่อเนื่องเมื่อสลับระหว่างหน้าจอด้านในและด้านนอกสำหรับแอประบบ; แอปจะไม่รีสตาร์ทอีกต่อไปหลังจากเปิดหรือปิดโทรศัพท์",
+      "แก้ไข: ปัญหาการแสดงผลเมื่อใช้ตัวอักษรขนาดใหญ่",
+      "แก้ไข: ปัญหาความเข้ากันได้ของแอปบุคคลที่สาม"
+    ],
+    "ระบบ": [
+      "ปรับปรุง: รูปแบบหน้าต่างป๊อปอัปการแจ้งเตือนเสียงบนหน้าจอหลัก",
+      "ปรับให้เหมาะสม: ตำแหน่งปุ่มนำทางแบบคลาสสิกเพื่อป้องกันการสัมผัสโดยไม่ตั้งใจ",
+      "การปรับให้เหมาะสม: การแสดงผลหน้าตั้งค่าจอแสดงผลขณะสแตนด์บายเมื่อพับ/กางหน้าจอด้านใน/ด้านนอก",
+      "แก้ไข: ผู้ช่วยอัจฉริยะแครช ไม่ตอบสนอง หยุดการทำงาน ความผิดปกติในการแสดงผล และปัญหาอื่นๆ",
+      "แก้ไข: ปัญหาการปรับตัวของผู้ช่วยอัจฉริยะบนหน้าจอด้านในและด้านนอก"
+    ],
+    "ผู้ช่วยโทรด้วย AI": [
+      "การเพิ่มประสิทธิภาพ: เปลี่ยนโหมดการแสดงผลของหน้าจอหลักจากเต็มหน้าจอเป็นหน้าต่างลอยแบบกึ่งกลาง"
+    ],
+    "โต๊ะทำงาน": [
+      "ปรับให้เหมาะสม: ปรับแต่งเลย์เอาต์หน้าจอหลักสำหรับหน้าจอด้านในและด้านนอกให้เหมาะสม รวมจำนวนไอคอนให้เป็นมาตรฐานเดียวกัน จัดระเบียบหน้าจอหลักได้มีประสิทธิภาพขึ้น",
+      "ปรับปรุง: โหลดไอคอนหน้าจอหลักเร็วขึ้น เพื่อประสบการณ์ที่ลื่นไหลขึ้น",
+      "แก้ไข: ปัญหาที่ทราบ เช่น การแสดงผลผิดพลาดเมื่อพับ/กางหน้าจอในและนอก การกะพริบเมื่อสลับเร็ว และปัญหาการสำรองข้อมูลบนคลาวด์"
+    ],
+    "ศูนย์กลางการควบคุม": [
+      "แก้ไข: ปัญหาศูนย์ควบคุมค้าง",
+      "แก้ไข: ปัญหาสวิตช์กลับไปเป็นลำดับที่ตั้งไว้ล่วงหน้าหลังออกจากโหมดประหยัดแบตเตอรี่สูงสุด",
+      "แก้ไข: ไม่ตอบสนองเมื่อแตะรายการการตั้งค่า",
+      "แก้ไข: ปัญหาการแสดงไอคอน Wi-Fi",
+      "แก้ไข: สถานะสวิตช์กะพริบบนหน้าย่อย Bluetooth"
+    ],
+    "Mi แชร์": [
+      "ปรับปรุง: รูปแบบหน้าต่างป๊อปอัปแชร์ในตัวจัดการไฟล์"
+    ],
+    "การเข้าถึง": [
+      "แก้ไข: เมนูการช่วยสำหรับการเข้าถึงไม่ตอบสนองต่อการแตะเมื่อสลับระหว่างหน้าจอด้านในและด้านนอก"
+    ],
+    "บริการผู้ให้บริการเครือข่าย Mi": [
+      "ปรับปรุง: การแสดงหน้าจอหลักบนหน้าจอด้านในและด้านนอกเพื่อประสบการณ์ภาพที่ดีขึ้น",
+      "ปรับปรุง: ปรับปรุงสไตล์การแสดงผลและเลย์เอาต์ของโมดูลมูลค่าเพิ่มบนหน้าจอด้านในและด้านนอกเพื่อประสบการณ์การใช้งานที่ดีขึ้น"
+    ],
+    "ล็อกแอป": [
+      "แก้ไข: แอปที่ล็อกด้วยการล็อกแอปจะปลดล็อกหลังจากผ่านไประยะหนึ่ง"
+    ],
+    "รายชื่อ": [
+      "แก้ไข: ปัญหาแอปหยุดทำงานเป็นครั้งคราวขณะเพิ่มกลุ่มใหม่",
+      "แก้ไข: ไม่แสดงตำแหน่งหมายเลขและชื่อผู้ให้บริการระหว่างการโทร",
+      "แก้ไข: การแสดงผลที่ผิดปกติของลูกศร UI สำหรับบล็อกสายเรียกเข้าบนหน้าประวัติการโทร",
+      "แก้ไข: ปัญหาแป้นพิมพ์โทรออกแสดงผลผิดปกติเป็นครั้งคราวเมื่อสลับระหว่างหน้าโทรและรายชื่อผู้ติดต่อ",
+      "แก้ไข: ในบางสถานการณ์ การแตะพื้นหลังหน้าต่างลอยไม่สามารถย้อนกลับได้",
+      "แก้ไข: แอนิเมชันของปุ่มตัวเลขบนแป้นกดหมายเลขหายไปในบางครั้ง"
+    ],
+    "ข้อความ": [
+      "แก้ไข: ปัญหาเสถียรภาพ"
+    ],
+    "ล็อคหน้าจอ": [
+      "เพิ่ม: ตัวเลือกสวิตช์สำหรับใช้หรือไม่ใช้ลายนิ้วมือในการปลดล็อก",
+      "การปรับให้เหมาะสม: แก้ไขปัญหาในการตั้งค่านาฬิกาหน้าจอล็อกที่ตำแหน่งเค้าโครงปรับตามหน้าจอแบบไดนามิก",
+      "ปรับปรุง: การแสดงแบบเต็มหน้าจอของสไตล์เวลาหน้าจอล็อกในการตั้งค่านาฬิกาหน้าจอล็อก",
+      "แก้ไข: พื้นหลังสไตล์เวลาหน้าจอล็อกไม่แสดงในการตั้งค่า",
+      "แก้ไข: ปัญหาการซ่อนการเลือกสไตล์เวลาในนาฬิกาคู่",
+      "แก้ไข: หลังจากปิดใช้งานลายนิ้วมือสำหรับหน้าจอล็อกแล้ว ยังสามารถปลดล็อกด้วยลายนิ้วมือได้"
+    ],
+    "แถบสถานะ, แผงการแจ้งเตือน": [
+      "ปรับปรุง: เลย์เอาต์การแสดงผลของอินเทอร์เฟซแผงการแจ้งเตือน",
+      "แก้ไข: ไอคอนหรือเนื้อหาในแถบสถานะและแถบการแจ้งเตือนทับซ้อนกันในบางสถานการณ์",
+      "แก้ไข: ปัญหาการแสดงผลอินเทอร์เฟซการแจ้งเตือนบนหน้าจอภายนอกไม่ถูกต้องเมื่อตั้งค่าขนาดการแสดงผลในการตั้งค่าการช่วยเหลือพิเศษเป็น \"เล็ก\""
+    ],
+    "เครื่องคิดเลข": [
+      "การปรับปรุง: เลย์เอาต์อินเทอร์เฟซหน้าแปลงหน่วย",
+      "การปรับปรุง: แก้ไขปัญหาขนาดตัวอักษรแปลงเวลาบนหน้าจอภายนอกเล็กเกินไป",
+      "แก้ไข: ปัญหาจอด้านในไม่สามารถแสดงแบบเต็มหน้าจอ",
+      "แก้ไข: ปัญหาการแสดงฟังก์ชันบนหน้าจอด้านในไม่ครบถ้วน"
+    ],
+    "ธีม": [
+      "ใหม่: หน้าตั้งค่าวอลเปเปอร์และการปรับแต่ง — การปรับแต่ง MIUI ทั้งหมดอยู่ที่นี่",
+      "ปรับปรุง: หน้าตั้งค่าวอลเปเปอร์ได้รับการออกแบบใหม่ทั้งหมด ทำให้เลือกวอลเปเปอร์ที่ต้องการได้ง่ายขึ้น",
+      "การเพิ่มประสิทธิภาพ: เวลาของแอปตั้งวอลเปเปอร์",
+      "แก้ไข: ปัญหาวอลเปเปอร์"
+    ],
+    "เพลง": [
+      "การปรับให้เหมาะสม: ประสบการณ์การเล่นในโหมดหน้าจอด้านใน"
+    ],
+    "ร้านค้าแอป": [
+      "ใหม่: เนื้อหาสำหรับหน้าจอขนาดใหญ่โดยเฉพาะ มอบแอปที่ใช้งานได้จริงยิ่งขึ้นแก่ผู้ใช้",
+      "การเพิ่มประสิทธิภาพ: ดีไซน์ใหม่เพื่อยกระดับประสบการณ์การมองเห็น",
+      "การปรับให้เหมาะสม: ฟีเจอร์หน้าจอภายนอกและหน้าจอแยก, ปรับความต่อเนื่องระหว่างหน้าจอด้านในและด้านนอกให้เหมาะสม, เพิ่มประสิทธิภาพการใช้งานของผู้ใช้"
+    ],
+    "การบันทึกหน้าจอ": [
+      "การปรับให้เหมาะสม: ความต่อเนื่องของประสบการณ์การใช้งานหน้าจอพับได้",
+      "แก้ไข: ไม่สามารถบันทึกแอนิเมชันภาพหน้าจอขณะบันทึกวิดีโอได้",
+      "แก้ไข: ปัญหาเสียงและภาพไม่ตรงกัน",
+      "แก้ไข: การบันทึกเสียงล้มเหลวเป็นครั้งคราว"
+    ],
+    "หน้าจอแยก": [
+      "ใหม่: เพิ่มมาสก์เลื่อนและระบบตอบสนองการสั่นเมื่อแยกหน้าจอ",
+      "ปรับให้เหมาะสม: ปิดใช้งานการลากหน้าต่างลอยจากหน้าจอภายนอกเพื่อเข้าสู่หน้าจอแยก",
+      "ลบแล้ว: ฟีเจอร์แบ่งหน้าจอบนหน้าจอภายนอก",
+      "นำออก: ฟีเจอร์แบ่งหน้าจอ 1/3 และ 2/3 บนหน้าจอด้านใน"
+    ],
+    "งานล่าสุด": [
+      "แก้ไข: อาการค้างเมื่อล้างแอปทั้งหมดด้วยการแตะครั้งเดียว",
+      "แก้ไข: หลังจากล้างแอปทั้งหมดในครั้งเดียว แอปที่ยังไม่ถูกล้างยังคงอยู่ในงานล่าสุด",
+      "แก้ไข: ท่าทางงานล่าสุดไม่ทำงานในแนวนอนเมื่อซ่อนแถบด้านล่าง"
+    ],
+    "ตัวจัดการไฟล์": [
+      "เพิ่มประสิทธิภาพ: เลย์เอาต์และดีไซน์ของแผงตัวกรอง",
+      "การบันทึกหน้าจอ"
+    ],
+    "เบราว์เซอร์": [
+      "ปรับปรุง: ประสบการณ์การใช้หน้าต่างอิสระบนหน้าจอด้านในและด้านนอก",
+      "ปรับแต่งเลย์เอาต์หน้าหลักเพื่อยกระดับประสบการณ์การมองเห็น",
+      "แก้ไข: ปัญหาความต่อเนื่องเมื่อสลับระหว่างหน้าจอด้านในและด้านนอก"
+    ],
+    "Recorder": [
+      "ปรับให้เหมาะสม: เลย์เอาต์หน้าหลักของเครื่องบันทึกเสียง",
+      "ปรับปรุง: เลย์เอาต์อินเทอร์เฟซการบันทึกเสียง",
+      "การเพิ่มประสิทธิภาพ: เค้าโครงหน้าจอการเล่นเสียงบันทึก",
+      "การปรับปรุง: วิธีการตั้งชื่อไฟล์บันทึกเสียง",
+      "แก้ไข: บางครั้งไม่สามารถบันทึกเสียงได้",
+      "แก้ไข: แอปหยุดทำงานเป็นครั้งคราวเมื่อแปลงเป็นข้อความ"
+    ],
+    "ผู้ช่วยออนไลน์": [
+      "ปรับแต่ง: การแสดงผลเลย์เอาต์และประสบการณ์ผู้ใช้ที่ดีขึ้น"
+    ],
+    "Mi AI สั่งงานด้วยเสียง": [
+      "การเพิ่มประสิทธิภาพ: เอฟเฟกต์การแสดงผลของหน้าจอด้านใน",
+      "Xiao AI 5.0 รองรับอุปกรณ์หน้าจอขนาดใหญ่แล้ว ช่วยยกระดับประสบการณ์ผู้ใช้",
+      "ฟีเจอร์ยอดนิยม เช่น XiaoAI Lingxi, การกระจายเสียงในครอบครัว, เสียงกำหนดเอง และทางลัดอัจฉริยะ"
+    ],
+    "ศูนย์เกม": [
+      "ใหม่: ดีไซน์หน้าแรกใหม่เพื่อปรับปรุงประสบการณ์ผู้ใช้",
+      "ปรับปรุง: รูปแบบหน้าต่างป๊อปอัปปรับตามความกว้างของหน้าจอด้านในและด้านนอก",
+      "แก้ไข: การแสดงผลที่ผิดปกติของเค้าโครงเนื้อหา รูปภาพ ข้อความ และระยะห่างในหน้าหลัก",
+      "แก้ไข: ปัญหาความต่อเนื่องเมื่อสลับระหว่างหน้าจอด้านในและด้านนอก"
+    ],
+    "เพิ่มความเร็วเกม": [
+      "ใหม่: หน้าจอภายนอกรองรับแถบด้านข้างหน้าต่างลอยแบบเปิดใช้งานด่วน",
+      "การเพิ่มประสิทธิภาพ: เอฟเฟกต์ภาพของหน้า GAME TURBO",
+      "การเพิ่มประสิทธิภาพ: เอฟเฟกต์แอนิเมชันการบูต",
+      "ปรับปรุง: เลย์เอาต์หน้า Game Turbo แนวตั้ง"
+    ],
+    "การใช้แบตเตอรี่": [
+      "การปรับแต่ง: โหมดแท็บสำหรับโมดูลเพิ่มประสิทธิภาพการประหยัดพลังงานในการตั้งค่า"
+    ],
+    "MI กระเป๋าเงิน": [
+      "ใหม่: การนำทางแบบเปิดด่วนบนหน้ารองของหน้าจอด้านใน ช่วยเพิ่มประสิทธิภาพของผู้ใช้",
+      "ใหม่: เพิ่มการรองรับหน้าต่างอิสระและหน้าจอแยก เพื่อเพิ่มประสิทธิภาพของผู้ใช้",
+      "การปรับปรุง: การแสดงรูปภาพทั้งหมดบนหน้าหลักปรับตามความกว้างของหน้าจอ",
+      "การปรับปรุง: ขนาดตัวอักษรของหน้าหลักเพื่อเพิ่มความสามารถในการอ่านบนหน้าจอภายนอก",
+      "การปรับให้เหมาะสม: ปรับปรุงประสบการณ์การมองเห็นในหน้าที่เกี่ยวข้องกับการชำระเงิน"
+    ],
+    "Mi Home": [
+      "การเพิ่มประสิทธิภาพ: การแสดงหน้าต่างป๊อปอัป",
+      "ปรับปรุง: ประสบการณ์หน้าต่างอิสระ",
+      "เพิ่มประสิทธิภาพ: การแสดงผลในบางหน้า"
+    ],
+    "การค้นหาทั่วทั้งระบบ": [
+      "ปรับแต่งเลย์เอาต์หน้าหลักเพื่อยกระดับประสบการณ์การมองเห็น",
+      "แก้ไข: ปัญหาประสบการณ์ความต่อเนื่องระหว่างหน้าจอด้านในและด้านนอก"
+    ],
+    "อินเทอร์เน็ตทั่วโลก": [
+      "ปรับปรุง: การแสดงผลและเลย์เอาต์ของหน้า เพิ่มประสิทธิภาพการอ่าน",
+      "การปรับปรุง: ปรับปรุงความต่อเนื่องระหว่างหน้าจอด้านในและด้านนอก เพื่อประสบการณ์ผู้ใช้ที่ดีขึ้น"
+    ],
+    "สแกน": [
+      "การเพิ่มประสิทธิภาพ: เปลี่ยนการแสดงผลหน้าหลักจากเต็มหน้าจอเป็นหน้าต่างลอยตรงกลางแบบเดียวกัน",
+      "การปรับให้เหมาะสม: การแสดงหน้าผลลัพธ์การสแกน"
     ]
   },
   "logs_ar": {
@@ -777,8 +3573,185 @@
       "الخوارزميات المركزة: ستخصص خوارزمياتنا الجديدة موارد النظام ديناميكيا بناءً على مشاهد محددة، مما يجعل تجربتك مع جميع النماذج على أعلى مستوى.",
       "تخزين السائل: تحافظ آليات التخزين الحساسة الجديدة على استجابة ومرونة نظامك على الرغم من مدمرات الوقت."
     ],
-    "أخرى": [
-      "تحسين أمن واستقرار النظام"
+    "النوافذ المنبثقة": [
+      "التحسين: تم إيقاف ميزة سحب النافذة الصغيرة من الشاشة الخارجية للدخول إلى الشاشة المقسمة"
+    ],
+    "آخرين": [
+      "تحسين أمن واستقرار النظام",
+      "جديد: نافذة منبثقة لإرشاد البريد الإلكتروني لتنزيل إصدار MIX FOLD المخصص",
+      "تحسين: حركة دليل التمهيد أكثر سلاسة",
+      "تم الإصلاح: عرض واجهة المستخدم بشكل غير طبيعي في بعض أقسام الصفحات الصفراء",
+      "إصلاح: اختلاط لقطات الشاشة من المساحة الأصلية والمساحة الثانية",
+      "إصلاح: تعطل WeChat في المساحة الثانية",
+      "تم الإصلاح: مشكلة تسجيل الدخول غير الطبيعي إلى الحساب بعد استخدام التطبيق المزدوج مع WeChat",
+      "تمت الإزالة: بعض ميزات الصفحات الصفراء"
+    ],
+    "ما الجديد؟": [
+      "جديد: المزيد من تطبيقات النظام تدعم النوافذ الحرة وتقسيم الشاشة، مما يجعل العمل متعدد المهام أكثر كفاءة",
+      "التحسين: تم تكييف تخطيط واجهة تطبيقات النظام مع الشاشات الداخلية والخارجية لعرض أكثر كفاءة على الشاشات الكبيرة",
+      "إصلاح: مشكلة الاستمرارية عند التبديل بين الشاشة الداخلية والخارجية لتطبيقات النظام؛ لم تعد التطبيقات تُعاد تشغيلها بعد فتح الهاتف أو إغلاقه",
+      "إصلاح: مشكلة العرض عند استخدام خط كبير",
+      "إصلاح: مشكلات توافق تطبيقات الطرف الثالث"
+    ],
+    "النظام": [
+      "تحسين: نمط النافذة المنبثقة لتذكير صوتي على الشاشة الرئيسية",
+      "تحسين: موضع أزرار التنقل الكلاسيكية لتجنب اللمس العرضي",
+      "تحسين: عرض صفحة إعدادات شاشة الانتظار عند طي/فتح الشاشة الداخلية/الخارجية",
+      "تم الإصلاح: تعطل المساعد الذكي، وعدم الاستجابة، وإيقاف التنفيذ، ومشكلات العرض، ومشكلات أخرى.",
+      "إصلاح: مشكلة تكيّف المساعد الذكي على الشاشة الداخلية والخارجية"
+    ],
+    "مساعد المكالمات بالذكاء الاصطناعي": [
+      "تحسين: تغيير طريقة عرض الشاشة الرئيسية من ملء الشاشة إلى نافذة عائمة في المنتصف"
+    ],
+    "سطح المكتب": [
+      "التحسين: تم تحسين تخطيط الشاشة الرئيسية للشاشة الداخلية والخارجية، وتوحيد عدد الرموز، مما يجعل تنظيم الشاشة الرئيسية أكثر كفاءة",
+      "تحسين: تسريع تحميل أيقونات الشاشة الرئيسية لتجربة أكثر سلاسة",
+      "إصلاح: مشكلات معروفة مثل خطأ العرض عند طي/فتح الشاشة الداخلية والخارجية، ووميض عند التبديل السريع، ومشكلات النسخ الاحتياطي السحابي"
+    ],
+    "مركز التحكم": [
+      "إصلاح: مشكلة تعطل مركز التحكم",
+      "إصلاح: مشكلة عودة المفاتيح إلى الترتيب المسبق بعد الخروج من وضع توفير البطارية الفائق",
+      "إصلاح: عدم الاستجابة عند النقر على إدخال الإعدادات",
+      "إصلاح: مشكلة عرض أيقونة Wi-Fi",
+      "إصلاح: وميض حالة المفتاح في الصفحة الفرعية لـ Bluetooth"
+    ],
+    "Mi Share": [
+      "التحسين: نمط النافذة المنبثقة للمشاركة في مدير الملفات"
+    ],
+    "إمكانية الوصول": [
+      "إصلاح: قائمة إمكانية الوصول لا تستجيب للنقر عند التبديل بين الشاشة الداخلية والخارجية"
+    ],
+    "خدمات مشغّل Mi": [
+      "التحسين: عرض الشاشة الرئيسية على الشاشة الداخلية والخارجية لتحسين التجربة البصرية",
+      "التحسين: تم تحسين نمط العرض والتخطيط لوحدة القيمة المضافة على الشاشة الداخلية والخارجية لتعزيز تجربة الاستخدام."
+    ],
+    "قفل التطبيقات": [
+      "إصلاح: التطبيقات المقفلة بواسطة قفل التطبيقات أصبحت غير مقفلة بعد فترة"
+    ],
+    "جهات الاتصال": [
+      "إصلاح: تعطل التطبيق أحيانًا أثناء إضافة مجموعة جديدة",
+      "إصلاح: عدم عرض موقع الرقم واسم المشغل أثناء المكالمات",
+      "إصلاح: عرض غير طبيعي لسهم واجهة المستخدم الخاص بحظر المكالمات الواردة في صفحة سجل المكالمات",
+      "إصلاح: ظهور لوحة الاتصال بشكل غير طبيعي أحيانًا عند التبديل بين صفحتي المكالمات وجهات الاتصال",
+      "تم الإصلاح: في بعض الحالات، لا يؤدي النقر على خلفية النافذة العائمة إلى الرجوع.",
+      "إصلاح: اختفاء الرسوم المتحركة لأزرار الأرقام في لوحة الاتصال أحيانًا"
+    ],
+    "الرسائل": [
+      "إصلاح: مشكلات الاستقرار"
+    ],
+    "شاشة القفل": [
+      "تمت الإضافة: خيار تبديل استخدام بصمة الإصبع لفتح القفل",
+      "التحسين: تم إصلاح مشكلة في إعدادات ساعة شاشة القفل حيث كان موضع التخطيط يتكيف ديناميكيًا مع الشاشة",
+      "تحسين: عرض ملء الشاشة لنمط وقت شاشة القفل في إعدادات ساعة شاشة القفل",
+      "إصلاح: عدم ظهور خلفية نمط وقت شاشة القفل في الإعدادات",
+      "إصلاح: مشكلة إخفاء اختيار نمط الوقت في الساعة المزدوجة",
+      "إصلاح: بعد إيقاف استخدام بصمة الإصبع لشاشة القفل، ظل فتح القفل ببصمة الإصبع يعمل"
+    ],
+    "وشريط الإشعارات، ومركز الإشعارات": [
+      "تحسين: تخطيط عرض واجهة لوحة الإشعارات",
+      "إصلاح: تداخل الأيقونات أو المحتوى في شريط الحالة وشريط الإشعارات في بعض الحالات",
+      "إصلاح: عرض واجهة الإشعارات على الشاشة الخارجية بشكل غير صحيح عند ضبط حجم العرض في إعدادات إمكانية الوصول على «صغير»"
+    ],
+    "الآلة الحاسبة": [
+      "تحسين: تخطيط واجهة صفحة التحويل",
+      "التحسين: إصلاح مشكلة صغر حجم الخط في تحويل الوقت على الشاشة الخارجية",
+      "تم الإصلاح: مشكلة عدم إمكانية عرض الشاشة الداخلية بملء الشاشة",
+      "تم الإصلاح: عدم اكتمال عرض الوظائف على الشاشة الداخلية"
+    ],
+    "السمات": [
+      "جديد: صفحة إعدادات الخلفية والتخصيص — كل تخصيصات MIUI هنا",
+      "تحسين: تم تجديد صفحة إعدادات الخلفية بالكامل، مما يسهل اختيار الخلفية المطلوبة",
+      "التحسين: وقت تطبيق تعيين الخلفية",
+      "إصلاح: مشكلة في خلفية الشاشة"
+    ],
+    "الموسيقى": [
+      "التحسين: تجربة التشغيل في وضع الشاشة الداخلية"
+    ],
+    "متجر التطبيقات": [
+      "جديد: محتوى مخصص للشاشات الكبيرة، يوفّر للمستخدمين تطبيقات أكثر فائدة",
+      "التحسين: تصميم جديد لتحسين التجربة البصرية",
+      "التحسين: ميزات الشاشة الخارجية والشاشة المنقسمة، تحسين الاستمرارية بين الشاشة الداخلية والخارجية، وتعزيز كفاءة المستخدم"
+    ],
+    "تسجيل الشاشة": [
+      "التحسين: استمرارية تجربة تشغيل الشاشة القابلة للطي",
+      "إصلاح: تعذّر تسجيل حركة لقطة الشاشة أثناء تسجيل الفيديو",
+      "إصلاح: مشكلة عدم تزامن الصوت والفيديو",
+      "إصلاح: فشل التسجيل أحيانًا"
+    ],
+    "تقسيم الشاشة": [
+      "جديد: إضافة قناع منزلق واستجابة اهتزاز عند تقسيم الشاشة",
+      "التحسين: تم إيقاف ميزة سحب النافذة الصغيرة من الشاشة الخارجية للدخول إلى الشاشة المقسمة",
+      "تمت الإزالة: ميزة تقسيم الشاشة على الشاشة الخارجية",
+      "تمت الإزالة: ميزة تقسيم الشاشة 1/3 و2/3 على الشاشة الداخلية"
+    ],
+    "المهام الأخيرة": [
+      "إصلاح: مشكلة تعطل عند مسح جميع التطبيقات بلمسة واحدة",
+      "إصلاح: بعد مسح جميع التطبيقات بلمسة واحدة، كانت التطبيقات غير الممسوحة لا تزال تظهر في المهام الأخيرة",
+      "إصلاح: إيماءة المهام الأخيرة لا تعمل في الوضع الأفقي عند إخفاء الشريط السفلي"
+    ],
+    "مدير الملفات": [
+      "التحسين: تخطيط وتصميم لوحة التصفية",
+      "تسجيل الشاشة"
+    ],
+    "المتصفح": [
+      "تحسين: تجربة استخدام النافذة الحرة على الشاشات الداخلية والخارجية",
+      "تم تحسين تخطيط الصفحات الأساسية لتحسين التجربة البصرية",
+      "إصلاح: مشكلة الاستمرارية عند التبديل بين الشاشة الداخلية والخارجية"
+    ],
+    "Recorder": [
+      "تحسين: تخطيط الصفحة الرئيسية لتطبيق المسجل",
+      "تحسين: تخطيط واجهة تسجيل الصوت",
+      "التحسين: تخطيط واجهة تشغيل التسجيل",
+      "تحسين: طريقة تسمية ملفات التسجيل",
+      "تم الإصلاح: تعذر التسجيل أحيانًا",
+      "إصلاح: تعطل متقطع عند التحويل إلى نص"
+    ],
+    "مساعد الإنترنت": [
+      "التحسين: عرض التخطيط وتحسين تجربة المستخدم"
+    ],
+    "مساعد الصوت Mi AI": [
+      "تحسين: تأثير عرض الشاشة الداخلية",
+      "أصبح Xiao AI 5.0 متوافقًا مع الأجهزة ذات الشاشات الكبيرة، مما يعزز تجربة المستخدم",
+      "ميزات شائعة مثل XiaoAI Lingxi والبث العائلي والصوت المخصص والاختصارات الذكية"
+    ],
+    "مركز الألعاب": [
+      "جديد: تصميم جديد للصفحة الرئيسية لتحسين تجربة المستخدم",
+      "التحسين: نمط النافذة المنبثقة يتكيف مع عرض الشاشة الداخلية والخارجية",
+      "تم الإصلاح: عرض غير طبيعي لتخطيط المحتوى والصور والنصوص والمسافات في الصفحات الأساسية",
+      "إصلاح: مشكلة الاستمرارية عند التبديل بين الشاشة الداخلية والخارجية"
+    ],
+    "مسرّع الألعاب": [
+      "جديد: تدعم الشاشة الخارجية الشريط الجانبي للنوافذ العائمة للبدء السريع.",
+      "التحسين: التأثيرات المرئية لصفحة GAME TURBO",
+      "التحسين: تأثيرات حركة بدء التشغيل",
+      "تحسين: تخطيط صفحة Game Turbo في الوضع العمودي"
+    ],
+    "استخدام البطارية": [
+      "التحسين: وضع علامات التبويب لوحدة تحسين توفير الطاقة في الإعدادات"
+    ],
+    "MI محفظة": [
+      "جديد: تنقل سريع التشغيل في الصفحات الثانوية للشاشة الداخلية لتحسين كفاءة المستخدم",
+      "جديد: تمت إضافة دعم النوافذ الحرة وتقسيم الشاشة لتحسين كفاءة المستخدم",
+      "التحسين: عرض جميع الصور في الصفحات الأساسية يتكيف مع عرض الشاشة",
+      "تحسين: حجم الخط في الصفحات الأساسية لتحسين قابلية القراءة على الشاشة الخارجية",
+      "التحسين: تحسين التجربة البصرية في صفحات الدفع"
+    ],
+    "Mi Home": [
+      "التحسين: عرض النافذة المنبثقة",
+      "تحسين: تجربة النوافذ الحرة",
+      "تحسين: عرض بعض الصفحات"
+    ],
+    "البحث الشامل": [
+      "تم تحسين تخطيط الصفحات الأساسية لتحسين التجربة البصرية",
+      "إصلاح: مشكلة تجربة الاستمرارية بين الشاشة الداخلية والخارجية"
+    ],
+    "الإنترنت العالمي": [
+      "التحسين: عرض الصفحة وتخطيطها، تحسين كفاءة القراءة",
+      "التحسين: تحسين استمرارية الشاشة الداخلية والخارجية لتجربة مستخدم أفضل"
+    ],
+    "الماسح الضوئي": [
+      "التحسين: تم تغيير طريقة عرض الصفحة الرئيسية من ملء الشاشة إلى نافذة عائمة مركزية موحدة.",
+      "تحسين: عرض صفحة نتائج المسح"
     ]
   },
   "logs_in": {
@@ -787,13 +3760,208 @@
       "केंद्रित एल्गोरिदम: हमारे नए एल्गोरिदम खास सीन्स के आधार पर सिस्टम के संसाधनों को डायनैमिक तरीके से बांटेंगे, ताकि सभी मॉडलों पर सहज अनुभव पक्का किया जा सके.",
       "लिक्विड स्टोरेज: नया संवेदनशील स्टोरेज मैकेनिज़्म के इस्तेमाल की वजह से आपका सिस्टम गुजरते समय के साथ जीवंत और जल्द प्रतिक्रिया देने वाला बना रहेगा."
     ],
+    "फ़्लोटिंग विंडोज़": [
+      "अनुकूलन: बाहरी स्क्रीन से छोटी विंडो को खींचकर स्प्लिट स्क्रीन में जाने की सुविधा बंद की गई"
+    ],
     "अन्य": [
-      "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
+      "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है",
+      "नया: MIX FOLD कस्टम संस्करण डाउनलोड करने के लिए ईमेल मार्गदर्शन पॉप-अप विंडो",
+      "अनुकूलन: बूट गाइड एनिमेशन अधिक सहज",
+      "ठीक किया गया: लाइफ येलो पेज के कुछ हिस्सों में UI प्रदर्शन असामान्य होने की समस्या",
+      "ठीक किया गया: मूल स्पेस और सेकंड स्पेस के स्क्रीनशॉट मिल रहे थे",
+      "ठीक किया गया: सेकंड स्पेस में WeChat क्रैश होने की समस्या",
+      "ठीक किया गया: WeChat के डुअल ऐप के बाद खाते में लॉगिन की समस्या",
+      "हटाया गया: येलो पेजेस की कुछ सुविधाएँ"
+    ],
+    "हाइलाइट्स": [
+      "नया: अधिक सिस्टम ऐप्स फ़्रीफ़ॉर्म विंडो और स्प्लिट स्क्रीन का समर्थन करते हैं, जिससे मल्टीटास्किंग कार्य अधिक कुशल होता है",
+      "अनुकूलन: सिस्टम ऐप्स का UI लेआउट आंतरिक और बाहरी स्क्रीन के अनुकूल बनाया गया, बड़ी स्क्रीन पर प्रदर्शन अधिक कुशल",
+      "ठीक किया गया: सिस्टम ऐप्स के लिए आंतरिक और बाहरी स्क्रीन के बीच स्विच करते समय निरंतरता की समस्या; फ़ोन खोलने या बंद करने के बाद ऐप्स अब रीस्टार्ट नहीं होते",
+      "ठीक किया गया: बड़े फ़ॉन्ट में प्रदर्शन संबंधी समस्या",
+      "ठीक किया गया: तृतीय-पक्ष ऐप्स की संगतता संबंधी समस्याएँ"
+    ],
+    "सिस्टम": [
+      "अनुकूलन: मुख्य स्क्रीन पर ध्वनि अनुस्मारक पॉप-अप विंडो शैली",
+      "अनुकूलन: गलत स्पर्श से बचने के लिए क्लासिक नेविगेशन बटनों की स्थिति",
+      "अनुकूलन: आंतरिक/बाहरी स्क्रीन को मोड़ने/खोलने पर स्टैंडबाय डिस्प्ले सेटिंग्स पेज का प्रदर्शन",
+      "ठीक किया गया: स्मार्ट सहायक का क्रैश होना, प्रतिक्रिया न देना, निष्पादन रोकना, प्रदर्शन संबंधी समस्याएँ और अन्य समस्याएँ।",
+      "सुधार: आंतरिक और बाहरी स्क्रीन पर स्मार्ट असिस्टेंट के अनुकूलन की समस्या"
+    ],
+    "AI कॉल सहायक": [
+      "अनुकूलन: होम स्क्रीन का प्रदर्शन मोड पूर्ण स्क्रीन से केंद्रित फ़्लोटिंग विंडो में बदला गया"
+    ],
+    "डेस्कटॉप": [
+      "अनुकूलन: आंतरिक और बाहरी स्क्रीन के लिए होम स्क्रीन लेआउट अनुकूलित, आइकन संख्या एकीकृत — होम स्क्रीन व्यवस्थित करना अधिक कुशल",
+      "अनुकूलन: होम स्क्रीन आइकन लोड होने की गति बेहतर, उपयोग अधिक सहज",
+      "ठीक किया गया: आंतरिक और बाहरी स्क्रीन को मोड़ने/खोलने पर डिस्प्ले त्रुटि, त्वरित स्विचिंग में झिलमिलाहट, और क्लाउड बैकअप संबंधी समस्याओं जैसी ज्ञात समस्याएं"
+    ],
+    "कंट्रोल सेंटर": [
+      "ठीक किया गया: कंट्रोल सेंटर के क्रैश की समस्या",
+      "ठीक करें: अल्ट्रा बैटरी सेवर मोड से बाहर निकलने पर स्विच प्रीसेट क्रम में वापस आने की समस्या",
+      "ठीक: सेटिंग्स प्रविष्टि पर टैप करने पर कोई प्रतिक्रिया न होने की समस्या",
+      "ठीक करें: Wi-Fi आइकन प्रदर्शन समस्या",
+      "ठीक करें: Bluetooth सबपेज पर स्विच स्थिति के टिमटिमाने की समस्या"
+    ],
+    "Mi शेयर": [
+      "अनुकूलन: फ़ाइल प्रबंधक में साझा करने वाली पॉप-अप विंडो की शैली"
+    ],
+    "सरल उपयोग": [
+      "ठीक किया गया: आंतरिक और बाहरी स्क्रीन के बीच स्विच करते समय एक्सेसिबिलिटी मेनू टैप पर प्रतिक्रिया नहीं देता"
+    ],
+    "Mi ऑपरेटर सेवाएँ": [
+      "अनुकूलन: बेहतर दृश्य अनुभव के लिए होम स्क्रीन को आंतरिक और बाहरी स्क्रीन पर प्रदर्शित करना",
+      "अनुकूलन: उपयोग अनुभव बेहतर करने के लिए आंतरिक और बाहरी स्क्रीन पर मूल्य-वर्धित मॉड्यूल की प्रदर्शन शैली और लेआउट में सुधार किया गया।"
+    ],
+    "ऐप लॉक": [
+      "ठीक किया गया: ऐप लॉक से लॉक किए गए ऐप्स कुछ समय बाद अनलॉक हो जाते थे"
+    ],
+    "संपर्क": [
+      "ठीक किया गया: नया समूह जोड़ते समय कभी-कभार ऐप क्रैश होने की समस्या",
+      "ठीक किया गया: कॉल के दौरान नंबर स्थान और ऑपरेटर का नाम नहीं दिखने की समस्या",
+      "सुधार: कॉल इतिहास पृष्ठ पर इनकमिंग कॉल ब्लॉक करने वाले तीर UI का असामान्य प्रदर्शन",
+      "ठीक किया गया: कॉल और संपर्क पृष्ठों के बीच स्विच करते समय डायल पैड के कभी-कभार असामान्य रूप से प्रदर्शित होने की समस्या",
+      "ठीक किया गया: कुछ परिदृश्यों में फ़्लोटिंग विंडो की पृष्ठभूमि पर टैप करने से वापस नहीं जा सकता था।",
+      "ठीक करें: डायल पैड के नंबर बटन का एनिमेशन कभी-कभी गायब होने की समस्या"
+    ],
+    "संदेश": [
+      "सुधार: स्थिरता संबंधी समस्याएँ"
+    ],
+    "लॉक स्क्रीन": [
+      "जोड़ा गया: फ़िंगरप्रिंट को अनलॉक के लिए उपयोग करने या न करने का टॉगल सेटिंग विकल्प",
+      "अनुकूलन: लॉक स्क्रीन घड़ी सेटिंग्स में उस समस्या को ठीक किया गया जहाँ लेआउट स्थिति स्क्रीन के अनुसार गतिशील रूप से समायोजित होती थी",
+      "अनुकूलन: लॉक स्क्रीन घड़ी सेटिंग्स में लॉक स्क्रीन समय शैली का पूर्ण स्क्रीन प्रदर्शन",
+      "ठीक किया गया: सेटिंग्स में लॉक स्क्रीन समय शैली की पृष्ठभूमि प्रदर्शित न होने की समस्या",
+      "सुधार: डुअल क्लॉक में समय शैली चयन छिपने की समस्या",
+      "ठीक किया गया: लॉक स्क्रीन के लिए फ़िंगरप्रिंट बंद करने के बाद भी फ़िंगरप्रिंट से अनलॉक होना"
+    ],
+    "स्टेटस बार, सूचना शेड": [
+      "अनुकूलन: सूचना पैनल इंटरफ़ेस का प्रदर्शन लेआउट",
+      "ठीक किया गया: कुछ परिदृश्यों में स्टेटस बार और नोटिफ़िकेशन बार के आइकन या सामग्री ओवरलैप हो रहे थे",
+      "ठीक किया गया: जब एक्सेसिबिलिटी सेटिंग्स में डिस्प्ले आकार \"छोटा\" पर सेट हो, तो बाहरी स्क्रीन पर नोटिफिकेशन इंटरफ़ेस का गलत प्रदर्शन"
+    ],
+    "कैल्क्युलेटर": [
+      "अनुकूलन: रूपांतरण पृष्ठ का इंटरफ़ेस लेआउट",
+      "अनुकूलन: बाहरी स्क्रीन पर समय रूपांतरण फ़ॉन्ट के बहुत छोटा होने की समस्या ठीक की गई",
+      "ठीक किया गया: आंतरिक स्क्रीन में पूर्ण स्क्रीन प्रदर्शित न होने की समस्या",
+      "ठीक किया गया: आंतरिक स्क्रीन पर फ़ंक्शन पूरी तरह प्रदर्शित न होने की समस्या"
+    ],
+    "थीम्स": [
+      "नया: वॉलपेपर और वैयक्तिकरण सेटिंग्स पृष्ठ — MIUI का सारा वैयक्तिकरण यहाँ है",
+      "अनुकूलन: वॉलपेपर सेटिंग्स पेज को पूरी तरह नया रूप दिया गया है, अब मनचाहा वॉलपेपर चुनना और भी आसान",
+      "अनुकूलन: वॉलपेपर सेट करने वाले ऐप का समय",
+      "ठीक किया गया: वॉलपेपर में गड़बड़ी की समस्या"
+    ],
+    "संगीत": [
+      "अनुकूलन: आंतरिक स्क्रीन मोड में प्लेबैक अनुभव"
+    ],
+    "ऐप स्टोर": [
+      "नया: बड़ी स्क्रीन के लिए विशेष सामग्री, उपयोगकर्ताओं को अधिक व्यावहारिक ऐप्स प्रदान करती है",
+      "अनुकूलन: बेहतर दृश्य अनुभव के लिए नया डिज़ाइन",
+      "अनुकूलन: बाहरी स्क्रीन और विभाजित स्क्रीन सुविधाएँ, आंतरिक और बाहरी स्क्रीन के बीच निरंतरता का अनुकूलन, उपयोगकर्ता दक्षता में सुधार"
+    ],
+    "स्क्रीन रिकॉर्डिंग": [
+      "अनुकूलन: फोल्डेबल स्क्रीन संचालन अनुभव की निरंतरता",
+      "ठीक किया गया: वीडियो रिकॉर्ड करते समय स्क्रीनशॉट एनिमेशन रिकॉर्ड नहीं हो पाता था",
+      "सुधार: ऑडियो और वीडियो सिंक न होने की समस्या",
+      "सुधार: कभी-कभी रिकॉर्डिंग विफल होने की समस्या"
+    ],
+    "विभाजित स्क्रीन": [
+      "नया: स्क्रीन विभाजित करते समय स्लाइडिंग मास्क और कंपन प्रतिक्रिया जोड़ी गई",
+      "अनुकूलन: बाहरी स्क्रीन से छोटी विंडो को खींचकर स्प्लिट स्क्रीन में जाने की सुविधा बंद की गई",
+      "हटाया गया: बाहरी स्क्रीन पर स्प्लिट-स्क्रीन सुविधा",
+      "हटाया गया: आंतरिक स्क्रीन पर 1/3 और 2/3 स्प्लिट-स्क्रीन सुविधा"
+    ],
+    "हाल के कार्य": [
+      "फ़िक्स: एक टैप में सभी ऐप्स साफ़ करते समय क्रैश होने की समस्या",
+      "फ़िक्स: सभी ऐप्स को एक टैप में साफ़ करने के बाद हाल के कार्यों में अभी भी साफ़ न किए गए ऐप्स दिखाई देने की समस्या",
+      "ठीक किया गया: निचली पट्टी छिपे होने पर लैंडस्केप में हाल के कार्यों का जेस्चर काम नहीं करता"
+    ],
+    "फ़ाइल प्रबंधक": [
+      "अनुकूलन: फ़िल्टर पैनल का लेआउट और डिज़ाइन",
+      "स्क्रीन रिकॉर्डिंग"
+    ],
+    "ब्राउज़र": [
+      "अनुकूलन: आंतरिक और बाहरी स्क्रीन पर मुक्त विंडो का उपयोग अनुभव",
+      "दृश्य अनुभव बेहतर बनाने के लिए मुख्य पृष्ठ लेआउट अनुकूलित किया गया",
+      "ठीक किया गया: आंतरिक और बाहरी स्क्रीन के बीच स्विच करते समय निरंतरता की समस्या"
+    ],
+    "Recorder": [
+      "अनुकूलन: रिकॉर्डर होम पेज लेआउट",
+      "अनुकूलन: ऑडियो रिकॉर्डिंग इंटरफ़ेस लेआउट",
+      "अनुकूलन: रिकॉर्डिंग प्लेबैक इंटरफ़ेस का लेआउट",
+      "अनुकूलन: रिकॉर्डिंग फ़ाइल नामकरण विधि",
+      "ठीक किया गया: कभी-कभी रिकॉर्ड न हो पाने की समस्या",
+      "ठीक करें: टेक्स्ट में बदलते समय कभी-कभी क्रैश होने की समस्या"
+    ],
+    "वर्चुअल असिस्टेंट": [
+      "अनुकूलन: लेआउट प्रदर्शन और बेहतर उपयोगकर्ता अनुभव"
+    ],
+    "Mi AI वॉयस असिस्टेंट": [
+      "अनुकूलन: आंतरिक स्क्रीन प्रदर्शन प्रभाव",
+      "Xiao AI 5.0 अब बड़ी स्क्रीन वाले डिवाइस के लिए अनुकूलित है, जिससे उपयोगकर्ता अनुभव बेहतर होता है",
+      "XiaoAI Lingxi, फ़ैमिली ब्रॉडकास्ट, कस्टम आवाज़ और स्मार्ट शॉर्टकट जैसी लोकप्रिय सुविधाएँ"
+    ],
+    "गेम सेंटर": [
+      "नया: उपयोगकर्ता अनुभव बेहतर करने के लिए नया होमपेज डिज़ाइन",
+      "अनुकूलन: पॉप-अप विंडो शैली आंतरिक और बाहरी स्क्रीन चौड़ाई के अनुसार अनुकूलित होती है",
+      "ठीक किया गया: मुख्य पृष्ठों पर सामग्री लेआउट, छवियों, टेक्स्ट और स्पेसिंग के असामान्य प्रदर्शन की समस्या",
+      "ठीक किया गया: आंतरिक और बाहरी स्क्रीन के बीच स्विच करते समय निरंतरता की समस्या"
+    ],
+    "गेम स्पीड बूस्टर": [
+      "नया: बाहरी स्क्रीन अब त्वरित लॉन्च फ़्लोटिंग विंडो साइडबार का समर्थन करती है।",
+      "अनुकूलन: GAME TURBO पृष्ठ के दृश्य प्रभाव",
+      "अनुकूलन: बूट एनिमेशन प्रभाव",
+      "अनुकूलन: पोर्ट्रेट Game Turbo पेज का लेआउट"
+    ],
+    "बैटरी उपयोग": [
+      "अनुकूलन: सेटिंग्स में बैटरी बचत अनुकूलन मॉड्यूल के लिए टैब मोड"
+    ],
+    "MI वॉलेट": [
+      "नया: आंतरिक स्क्रीन के द्वितीयक पृष्ठों पर त्वरित लॉन्च नेविगेशन, उपयोगकर्ता दक्षता बढ़ाता है",
+      "नया: फ्रीफॉर्म विंडो और स्प्लिट स्क्रीन सुविधाओं के लिए समर्थन जोड़ा गया, जिससे उपयोगकर्ता की दक्षता बढ़ेगी",
+      "अनुकूलन: मुख्य पृष्ठों पर सभी छवियों का प्रदर्शन स्क्रीन की चौड़ाई के अनुसार समायोजित होता है",
+      "अनुकूलन: बाहरी स्क्रीन पर पठनीयता बढ़ाने के लिए मुख्य पृष्ठों का फ़ॉन्ट आकार",
+      "अनुकूलन: भुगतान संबंधित पृष्ठों पर दृश्य अनुभव में सुधार"
+    ],
+    "Mi Home": [
+      "अनुकूलन: पॉप-अप विंडो प्रदर्शन",
+      "अनुकूलन: फ्रीफ़ॉर्म विंडो अनुभव",
+      "अनुकूलन: कुछ पृष्ठों पर प्रदर्शन"
+    ],
+    "वैश्विक खोज": [
+      "दृश्य अनुभव बेहतर बनाने के लिए मुख्य पृष्ठ लेआउट अनुकूलित किया गया",
+      "सुधार: आंतरिक और बाहरी स्क्रीन के बीच निरंतरता अनुभव की समस्या"
+    ],
+    "वैश्विक इंटरनेट": [
+      "अनुकूलन: पेज प्रदर्शन और लेआउट, उपयोगकर्ता पढ़ने की दक्षता में सुधार",
+      "अनुकूलन: आंतरिक और बाहरी स्क्रीन की निरंतरता में सुधार, उपयोगकर्ता अनुभव बेहतर"
+    ],
+    "स्कैनर": [
+      "अनुकूलन: होम पेज के प्रदर्शन को पूर्ण स्क्रीन से एक समान केंद्रित फ़्लोटिंग विंडो में बदला गया।",
+      "अनुकूलन: स्कैन परिणाम पृष्ठ प्रदर्शन"
     ]
   },
   "logs_ug": {
+    "MIUI FOLD كۈچەيتىلگەن نەشرى": [
+      "Swift performance. More life between the charges.",
+      "Focused algorithms: Our new algorithms will dynamically allocate system resources based on specific scenes, ensuring smooth experience on all models.",
+      "Liquid storage: New sensitive storage mechanisms will keep your system vibrant and responsive as time goes by."
+    ],
     "باشقىلىرى": [
       "Improved system security and stability"
+    ],
+    "System sounds": [
+      "قوشۇلدى: تەبىئىي ئاۋاز مۇزېيى ئىقتىدارى"
+    ],
+    "AI تېلېفون ياردەمچىسى": [
+      "ئەلالاشتۇرۇش: باش بەتنىڭ كۆرسىتىش ئۇسۇلىنى پۈتۈن ئېكراندىن مەركەزلىك لەيلىمە كۆزنەك كۆرسىتىشكە ئۆزگەرتىش"
+    ],
+    "ھۆججەت باشقۇرغۇچ": [
+      "ياخشىلاش: سۈزگۈچ تاختىسىنىڭ ئورۇنلاشتۇرۇلۇشى ۋە دىزايىنى",
+      "ئەلالاشتۇرۇش: تىزىملىك بېتىدىكى كىچىك سۈرەتلەرنىڭ چوڭ-كىچىكلىكى ۋە تىزىلىشى"
+    ],
+    "تور ياردەمچىسى": [
+      "ئەلالاشتۇرۇش: ئورۇنلاشتۇرۇش كۆرۈنۈشى ۋە ئىشلەتكۈچى تەجرىبىسىنى ياخشىلاش"
     ]
   },
   "logs_bo": {

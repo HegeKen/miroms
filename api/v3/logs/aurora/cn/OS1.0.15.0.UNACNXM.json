@@ -30,7 +30,7 @@
       "优化 相机拍照效果",
       "修复 看视频等场景下偶现黑屏问题"
     ],
-    "相册": [
+    "画廊": [
       "优化 视频同步策略，提升播放画面流畅度",
       "修复 短时间产生大量图片时，相册预览图加载时间过长的问题",
       "修复 云同步过程中照片时间丢失，导致日期错误的问题",
@@ -78,7 +78,7 @@
       "Optimization: Image quality",
       "Fix: Screen went black during video playback"
     ],
-    "Gallery": [
+    "Album": [
       "Optimization: Improved video synchronization strategy to enhance playback smoothness",
       "Fix: Preview thumbnails in Gallery took too long to load when a large number of images were generated in a short period",
       "Fix: Photo timestamps were lost during cloud sync, causing incorrect dates",
@@ -122,7 +122,9 @@
     "相機": [
       "新增: 人像模式120mm焦段",
       "新增: 拍照模式主攝預設焦段，相機設定中可以選擇23mm/28mm/35mm作為預設焦段",
-      "優化: 升級拍照模式變焦元件，輕觸變焦元件實現快速變焦，主鏡頭支援快速切換28mm/35mm，5×支援快速切換10×/30×"
+      "優化: 升級拍照模式變焦元件，輕觸變焦元件實現快速變焦，主鏡頭支援快速切換28mm/35mm，5×支援快速切換10×/30×",
+      "優化: 相機拍照效果",
+      "修復: 看影片等場景下出現黑畫面問題"
     ],
     "相簿": [
       "優化: 影片同步策略，提升播放畫面流暢度",
@@ -154,7 +156,14 @@
     "電卓": [
       "最適化: 電卓ボタンの感度を向上"
     ],
-    "ギャラリー": [
+    "カメラ": [
+      "新規：ポートレートモードに120mm焦点距離を追加",
+      "追加: 写真モードのメインカメラのデフォルト焦点距離。カメラ設定で23mm/28mm/35mmをデフォルト焦点距離として選択できます。",
+      "最適化: 写真モードのズームコンポーネントをアップグレード。ズームコンポーネントをタップしてすばやくズーム。メインカメラは28mm/35mmをすばやく切り替え可能、5×は10×/30×をすばやく切り替え可能。",
+      "最適化: 画質",
+      "最適化: バッテリー節約機能"
+    ],
+    "アルバム": [
       "最適化: ビデオ同期戦略を改善し、再生のスムーズさを向上",
       "修正: 短時間に大量の画像が生成された場合に、ギャラリーのプレビューサムネイルの読み込みに時間がかかりすぎる問題",
       "修正: クラウド同期中に写真のタイムスタンプが失われ、誤った日付が表示される問題",
@@ -162,14 +171,13 @@
       "修正: 一部のデバイスモデルでは思い出を再生できない問題",
       "修正: 大量の写真を連続撮影すると、ギャラリーのプレビューサムネイルが異常に表示される問題"
     ],
+    "ファイルマネージャー": [
+      "ファイルリストの読み込み速度を最適化"
+    ],
     "ステータスバー、通知シェード": [
       "修正: 1 行の通知アイコンが完全に表示されない問題",
       "修正: アイコンのみが表示され、空白の通知が表示される問題",
       "修正: フォントサイズを変更したり、サードパーティ製フォントに変更したりすると、ステータスバーの 5G アイコンが完全に表示されない問題"
-    ],
-    "カメラ": [
-      "最適化: 画質",
-      "最適化: バッテリー節約機能"
     ]
   },
   "logs_ko": {
@@ -185,7 +193,14 @@
     "계산기": [
       "최적화: 계산기 버튼의 감도 향상"
     ],
-    "갤러리": [
+    "카메라": [
+      "신규: 인물 모드 120mm 초점 거리 추가",
+      "추가: 사진 모드 메인 카메라의 기본 초점 거리. 카메라 설정에서 23mm/28mm/35mm를 기본 초점 거리로 선택할 수 있습니다.",
+      "최적화: 사진 모드 줌 구성 요소를 업그레이드했습니다. 줌 구성 요소를 탭하여 빠르게 줌할 수 있으며, 메인 카메라는 28mm/35mm를 빠르게 전환하고 5×는 10×/30×로 빠르게 전환할 수 있습니다.",
+      "최적화: 이미지 품질",
+      "최적화: Battery saving functionality"
+    ],
+    "앨범": [
       "최적화: 동영상 동기화 전략을 개선하여 재생의 부드러움 향상",
       "수정: 단시간에 대량의 이미지가 생성된 경우 갤러리의 미리보기 섬네일을 읽는 데 시간이 너무 걸리는 문제",
       "수정: 클라우드 동기화 중에 사진의 타임스탬프가 손실되어 잘못된 날짜가 표시되는 문제",
@@ -193,14 +208,13 @@
       "수정: 일부 기기 모델에서 추억 기능을 재생할 수 없는 문제",
       "수정: 대량의 사진을 연속 촬영하면 갤러리의 미리보기 섬네일이 비정상적으로 표시되는 문제"
     ],
+    "파일 관리자": [
+      "파일 목록 로딩 속도 최적화"
+    ],
     "상태 바, 알림 바": [
       "수정: 한 줄 알림 아이콘이 완전히 표시되지 않는 문제",
       "수정: 아이콘만 표시된 상태에서 빈 알림이 나타나는 문제",
       "수정: 글꼴 크기를 변경하거나 타사 글꼴로 변경한 후 상태 표시줄의 5G 아이콘이 완전히 표시되지 않는 문제"
-    ],
-    "카메라": [
-      "최적화: 이미지 품질",
-      "최적화: Battery saving functionality"
     ]
   },
   "logs_ru": {
@@ -216,7 +230,14 @@
     "Калькулятор": [
       "Оптимизация: Улучшен отклик кнопок в Калькуляторе"
     ],
-    "Галерея": [
+    "Камера": [
+      "Новое: добавлено фокусное расстояние 120 мм в режиме портрета",
+      "Добавлено: фокусное расстояние по умолчанию для основной камеры в режиме фото. В настройках камеры можно выбрать 23mm/28mm/35mm в качестве фокусного расстояния по умолчанию.",
+      "Оптимизация: обновлён компонент масштабирования в режиме фото. Нажмите на компонент масштабирования для быстрого зума; основная камера поддерживает быстрое переключение 28mm/35mm, а 5× — быстрое переключение 10×/30×.",
+      "Оптимизация: Качество изображения",
+      "Оптимизация: Функция экономии заряда батареи"
+    ],
+    "Альбом": [
       "Оптимизация: Улучшенная стратегия синхронизации видео для повышения плавности воспроизведения",
       "Исправлено: Миниатюры предварительного просмотра в Галерее могли загружаться слишком долго, если за короткий промежуток времени было создано большое количество изображений",
       "Исправлено: При синхронизации с облаком данные о времени съемки фото могли исчезать, что приводило к отображению неправильных дат",
@@ -224,14 +245,13 @@
       "Исправлено: На некоторых моделях устройств не удавалось воспроизвести сюжеты",
       "Исправлено: Миниатюры предварительного просмотра в Галерее могли отображаться неправильно при последовательной съемке большого количества фото"
     ],
+    "Файловый менеджер": [
+      "Оптимизация скорости загрузки списка файлов"
+    ],
     "Строка состояния, шторка уведомлений": [
       "Исправлено: Однострочные значки уведомлений могли отображаться не полностью",
       "Исправлено: Могли появляться пустые уведомления с отображением только значка",
       "Исправлено: Значок 5G в строке состояния отображался не полностью после изменения размера шрифта или использовании стороннего шрифта"
-    ],
-    "Камера": [
-      "Оптимизация: Качество изображения",
-      "Оптимизация: Функция экономии заряда батареи"
     ]
   },
   "logs_uk": {
@@ -247,7 +267,14 @@
     "Калькулятор": [
       "Оптимізація: Покращено відгук кнопок у Калькуляторі"
     ],
-    "Галерея": [
+    "Камера": [
+      "Нове: додано фокусну відстань 120 мм у режимі портрета",
+      "Додано: фокусна відстань за замовчуванням для основної камери в режимі фото. У налаштуваннях камери можна вибрати 23mm/28mm/35mm як фокусну відстань за замовчуванням.",
+      "Оптимізація: оновлено компонент масштабування в режимі фото. Торкніться компонента масштабування для швидкого зуму; основна камера підтримує швидке перемикання 28mm/35mm, а 5× — швидке перемикання 10×/30×.",
+      "Оптимізація: Якість зображення",
+      "Оптимізація: Battery saving functionality"
+    ],
+    "Альбом": [
       "Оптимізація: Покращена стратегія синхронізації відео для більшої плавності відтворення",
       "Виправлено: Завантаження мініатюр для попереднього перегляду в Галереї займало багато часу, коли велика кількість зображень була створена за короткий період",
       "Виправлено: Мітки часу на фотографіях були втрачені під час синхронізації у хмарі, що призвело до неправильних дат",
@@ -255,14 +282,13 @@
       "Виправлено: Сюжети не могли бути відтворені на деяких моделях пристроїв",
       "Виправлено: Мініатюри для попереднього перегляду ненормально відображалися в Галереї, коли було зроблено велику кількість фотографій поспіль"
     ],
+    "Файловий менеджер": [
+      "Оптимізація швидкості завантаження списку файлів"
+    ],
     "Рядок стану, Панель сповіщень": [
       "Виправлено: Іконки у однорядкових сповіщеннях відображалися не повністю",
       "Виправлено: Могли з'являтися порожні сповіщення з відображенням тільки іконки",
       "Виправлено: Значок 5G у рядку стану відображався не повністю після зміни розміру шрифту або переходу на сторонній шрифт"
-    ],
-    "Камера": [
-      "Оптимізація: Якість зображення",
-      "Оптимізація: Battery saving functionality"
     ]
   },
   "logs_pl": {
@@ -278,7 +304,14 @@
     "Kalkulator": [
       "Zoptymalizowano: Poprawiono czułość przycisków kalkulatora"
     ],
-    "Galeria": [
+    "Aparat": [
+      "Nowość: dodano ogniskową 120 mm w trybie portretowym",
+      "Dodano: domyślna ogniskowa głównego aparatu w trybie zdjęć. W ustawieniach aparatu można wybrać 23mm/28mm/35mm jako domyślną ogniskową.",
+      "Optymalizacja: ulepszono komponent zoomu w trybie zdjęć. Dotknij komponentu zoomu, aby szybko powiększać; główny aparat obsługuje szybkie przełączanie 28mm/35mm, a 5× — szybkie przełączanie 10×/30×.",
+      "Zoptymalizowano: Jakość obrazu",
+      "Zoptymalizowano: Battery saving functionality"
+    ],
+    "Album": [
       "Zoptymalizowano: Ulepszona strategia synchronizacji filmu w celu zwiększenia płynności odtwarzania",
       "Naprawiono: Ładowanie miniatur podglądu w Galerii trwało zbyt długo, gdy w krótkim czasie wygenerowano dużą liczbę obrazów",
       "Naprawiono: Sygnatury czasowe zdjęć zostały utracone podczas synchronizacji z chmurą, co spowodowało nieprawidłowe daty",
@@ -286,34 +319,61 @@
       "Naprawiono: Wspomnień nie można odtwarzać na niektórych modelach urządzeń",
       "Naprawiono: Miniatury podglądu w Galerii wyświetlają się nieprawidłowo podczas robienia dużej liczby zdjęć po kolei"
     ],
+    "Menedżer plików": [
+      "Optymalizacja szybkości ładowania listy plików"
+    ],
     "Pasek powiadomień, Panel powiadomień": [
       "Naprawiono: Ikony powiadomień jednowierszowych nie były w pełni wyświetlane",
       "Naprawiono: Pojawiały się puste powiadomienia z wyświetloną tylko ikoną",
       "Naprawiono: Ikona 5G na pasku statusu nie była w pełni wyświetlana po zmianie rozmiaru czcionki lub zmianie na czcionkę firmy zewnętrznej"
-    ],
-    "Aparat": [
-      "Zoptymalizowano: Jakość obrazu",
-      "Zoptymalizowano: Battery saving functionality"
     ]
   },
   "logs_de": {
+    "System": [
+      "Optimierung: Verbessertes App-Vorladen für schnelleren App-Start",
+      "Optimierung: Neue Strategie für die Startanimation reduziert Verzögerungen beim App-Start",
+      "Optimization: Improved system resource recovery strategy when switching apps to enhance app smoothness",
+      "Optimierte Speichernutzung zur Verbesserung der Flüssigkeit von TikTok (Douyin)",
+      "Behoben: Zu viele Benachrichtigungen konnten einen Systemneustart verursachen",
+      "Problem behoben, bei dem in bestimmten Szenarien während Anrufen kein Ton zu hören war"
+    ],
+    "Notizen": [
+      "Problem behoben, bei dem die Cloud-Synchronisierung fehlschlug, wenn Notizanhänge 20 MB überschritten"
+    ],
     "Kontrollzentrum": [
       "修复 偶现部分快捷开关无法点击的问题"
     ],
     "Sperrbildschirm": [
       "Optimierung: Neue Logik „Gedrückt halten zum Bearbeiten“ für den Sperrbildschirm reduziert versehentliche Auslösungen"
     ],
+    "Uhr": [
+      "Behoben: Wecker konnte nach dem Klingeln nicht über die Tasten ausgeschaltet werden"
+    ],
     "Rechner": [
       "Optimierung: Empfindlichkeit der Taschenrechner-Tasten verbessert"
+    ],
+    "Kamera": [
+      "Neu: 120-mm-Brennweite im Porträtmodus",
+      "Neu: Standard-Brennweite der Hauptkamera im Foto-Modus. In den Kameraeinstellungen kann 23mm/28mm/35mm als Standard-Brennweite ausgewählt werden.",
+      "Optimierung: Zoom-Komponente im Fotomodus verbessert. Tippe auf die Zoom-Komponente für schnelles Zoomen; Hauptkamera unterstützt schnelles Umschalten zwischen 28mm/35mm, 5× unterstützt schnelles Umschalten zwischen 10×/30×.",
+      "Optimierung: Bildqualität",
+      "Optimized system performance"
+    ],
+    "Galerie": [
+      "Optimierung: Video-Synchronisierungsstrategie verbessert, um flüssigere Wiedergabe zu ermöglichen",
+      "Behoben: Vorschaubilder in der Galerie brauchten zu lange zum Laden, wenn in kurzer Zeit viele Bilder erzeugt wurden.",
+      "Behoben: Foto-Zeitstempel gingen während der Cloud-Synchronisierung verloren, was zu falschen Datumsangaben führte.",
+      "Behoben: Fotos erschienen nach dem Löschen während der Cloud-Synchronisierung erneut auf.",
+      "Behoben: Memories konnten auf einigen Gerätemodellen nicht wiedergegeben werden",
+      "Behoben: Vorschaubilder in der Galerie wurden bei der Aufnahme vieler Fotos hintereinander fehlerhaft angezeigt"
+    ],
+    "Dateimanager": [
+      "Optimierung: Ladegeschwindigkeit der Dateiliste"
     ],
     "Statusleiste, Benachrichtigungsleiste": [
       "Behoben: Symbole in einzeiligen Benachrichtigungen wurden nicht vollständig angezeigt",
       "Behoben: Leere Benachrichtigungen wurden nur mit dem Symbol angezeigt",
       "Behoben: Das 5G-Symbol in der Statusleiste wurde nach Änderung der Schriftgröße oder nach Wechsel zu einer Drittanbieter-Schriftart nicht vollständig angezeigt"
-    ],
-    "Kamera": [
-      "Optimierung: Bildqualität",
-      "Optimized system performance"
     ]
   },
   "logs_fr": {
@@ -329,7 +389,14 @@
     "Calculette": [
       "Optimisation: Amélioration de la sensibilité des boutons de la calculatrice"
     ],
-    "Galerie": [
+    "Appareil photo": [
+      "Nouveau : ajout de la focale 120 mm en mode Portrait",
+      "Nouveau : focale par défaut de l'appareil photo principal en mode Photo. Dans les réglages de l'appareil photo, vous pouvez choisir 23mm/28mm/35mm comme focale par défaut.",
+      "Optimisation : composant de zoom du mode Photo amélioré. Touchez le composant de zoom pour un zoom rapide ; l’appareil photo principal prend en charge le basculement rapide entre 28mm/35mm, et le 5× entre 10×/30×.",
+      "Optimisation: Qualité d’image",
+      "Optimisation: Battery saving functionality"
+    ],
+    "Album": [
       "Optimisation: Stratégie de synchronisation vidéo améliorée pour améliorer la fluidité de la lecture",
       "Réparé: Prévisualiser les miniatures dans la Galerie a pris trop de temps à charger lorsqu’un grand nombre d’images ont été générées dans une courte période",
       "Réparé: Les horodatages des photos ont été perdus pendant la synchronisation dans le cloud, provoquant des dates incorrectes",
@@ -337,14 +404,13 @@
       "Réparé: Les souvenirs ne pouvaient pas être joués sur certains modèles d’appareils",
       "Réparé: Aperçu des miniatures dans la galerie affichées anormalement lors de la capture d’un grand nombre de photos consécutivement"
     ],
+    "Gestionnaire de fichiers": [
+      "Optimisation : vitesse de chargement de la liste des fichiers"
+    ],
     "Barre d'état, Panneau de notification": [
       "Réparé: Les icônes de notification d’une seule ligne n’étaient pas entièrement affichées",
       "Réparé: Les notifications vides sont apparues avec seulement l’icône affichée",
       "Réparé: L’icône 5G dans la barre d’état n’était pas complètement affichée après le changement de taille de police ou le passage à une police tierce"
-    ],
-    "Appareil photo": [
-      "Optimisation: Qualité d’image",
-      "Optimisation: Battery saving functionality"
     ]
   },
   "logs_it": {
@@ -360,13 +426,21 @@
     "Calcolatrice": [
       "Ottimizzazione: Migliorata la sensibilità dei pulsanti della calcolatrice"
     ],
-    "Galleria": [
+    "macchina fotografica": [
+      "Novità: lunghezza focale 120 mm in modalità Ritratto",
+      "Nuovo: lunghezza focale predefinita della fotocamera principale in modalità Foto. Nelle impostazioni della fotocamera puoi scegliere 23mm/28mm/35mm come lunghezza focale predefinita.",
+      "Ottimizzazione: migliorato il componente zoom in modalità Foto. Tocca il componente zoom per uno zoom rapido; la fotocamera principale supporta il passaggio rapido tra 28mm/35mm, il 5× tra 10×/30×."
+    ],
+    "Album": [
       "Ottimizzazione: Strategia di sincronizzazione video migliorata per aumentare la fluidità della riproduzione",
       "Risolto: Il caricamento delle anteprime nella Galleria era troppo lungo quando veniva generato un numero elevato di immagini in un breve periodo di tempo",
       "Risolto: I dati temporali delle foto venivano persi durante la sincronizzazione con il cloud, causando errori nelle date",
       "Risolto: Le foto eliminate ricomparivano dopo essere state rimosse durante la sincronizzazione con il cloud",
       "Risolto: Non era possibile riprodurre i Ricordi su alcuni modelli di dispositivi",
       "Risolto: Le miniature di anteprima nella Galleria venivano visualizzate in modo anomalo quando si acquisiva un gran numero di foto consecutivamente"
+    ],
+    "Gestore file": [
+      "Ottimizzazione: velocità di caricamento dell'elenco file"
     ],
     "Barra di stato, Area delle notifiche": [
       "Risolto: Le icone di notifica su una linea non venivano visualizzate completamente",
@@ -391,7 +465,14 @@
     "Calculadora": [
       "Optimización: Se ha mejorado la sensibilidad de los botones de la Calculadora"
     ],
-    "Galería": [
+    "Cámara": [
+      "Nuevo: distancia focal de 120 mm en modo Retrato",
+      "Nuevo: distancia focal predeterminada de la cámara principal en modo Foto. En los ajustes de la cámara puedes elegir 23mm/28mm/35mm como distancia focal predeterminada.",
+      "Optimización: se mejoró el componente de zoom del modo Foto. Toca el componente de zoom para hacer zoom rápidamente; la cámara principal permite cambiar rápidamente entre 28mm/35mm y el 5× entre 10×/30×.",
+      "Optimización: Calidad de imagen",
+      "Optimización: Battery saving functionality"
+    ],
+    "Álbum de fotos": [
       "Optimización: Estrategia de sincronización de vídeo mejorada para mejorar la fluidez de reproducción",
       "Reparado: Las miniaturas de previsualización en la Galería tardaban demasiado en cargarse cuando se generaba una gran cantidad de imágenes en un período corto",
       "Reparado: Las marcas de tiempo de las fotografías se perdían durante la sincronización en la nube, lo que provocaba fechas incorrectas",
@@ -399,14 +480,13 @@
       "Reparado: No se podía reproducir los recuerdos en algunos modelos de dispositivos",
       "Reparado: Las miniaturas de previsualización en la Galería se mostraba de manera anormal al capturar una gran cantidad de fotos consecutivamente"
     ],
+    "Administrador de archivos": [
+      "Optimización: velocidad de carga de la lista de archivos"
+    ],
     "Barra de estado, Barra de notificaciones": [
       "Reparado: Los iconos de notificaciones de una sola línea no se mostraban completamente",
       "Reparado: Se mostraban notificaciones en blanco mostrando solo el icono",
       "Reparado: El icono 5G en la barra de estado no se mostraba completamente después de cambiar el tamaño de fuente o cambiar a una fuente de terceros"
-    ],
-    "Cámara": [
-      "Optimización: Calidad de imagen",
-      "Optimización: Battery saving functionality"
     ]
   },
   "logs_pt": {
@@ -422,7 +502,14 @@
     "Calculadora": [
       "Otimização: Melhoria da sensibilidade dos botões da Calculadora"
     ],
-    "Galeria": [
+    "Câmera": [
+      "Novo: distância focal de 120 mm no modo Retrato",
+      "Novo: distância focal padrão da câmera principal no modo Foto. Nas configurações da câmera, você pode escolher 23mm/28mm/35mm como distância focal padrão.",
+      "Otimização: componente de zoom do modo Foto aprimorado. Toque no componente de zoom para zoom rápido; a câmera principal suporta alternância rápida entre 28mm/35mm, e o 5× entre 10×/30×.",
+      "Otimização: Qualidade de imagem",
+      "Otimização: Recurso de economia de bateria"
+    ],
+    "Álbum": [
       "Otimização: Melhoria na sincronização de vídeos para aprimorar a suavidade da reprodução",
       "Correção: Miniaturas na Galeria demoravam para carregar quando um grande número de imagens eram geradas em um curto período de tempo",
       "Correção: O Carimbo de hora em fotos era perdido durante a sincronização com a nuvem, causando datas incorretas",
@@ -430,14 +517,13 @@
       "Correção: Memórias não podiam ser reproduzidas em alguns modelos de dispositivos",
       "Correção: Miniaturas da Galeria eram exibidos incorretamente ao capturar um grande número de fotos em sequência"
     ],
+    "Gerenciador de arquivos": [
+      "Otimização: velocidade de carregamento da lista de arquivos"
+    ],
     "Barra de status, Área de notificações": [
       "Correção: Ícones em notificações de linha única não eram exibidos completamente",
       "Correção: Notificações em branco apareciam com somente o ícone sendo exibido",
       "Correção: O ícone do 5G na barra de status não era totalmente exibido após alterar o tamanho da fonte ou ao alterar para uma fonte de terceiros"
-    ],
-    "Câmera": [
-      "Otimização: Qualidade de imagem",
-      "Otimização: Recurso de economia de bateria"
     ]
   },
   "logs_tr": {
@@ -453,7 +539,14 @@
     "Hesaplayıcı": [
       "Optimizasyon: Hesaplayıcı tuşlarının hassasiyeti iyileştirildi"
     ],
-    "Galeri": [
+    "Kamera": [
+      "Yeni: Portre modunda 120 mm odak uzaklığı",
+      "Yeni: Fotoğraf modunda ana kameranın varsayılan odak uzaklığı. Kamera ayarlarında 23mm/28mm/35mm varsayılan odak uzaklığı olarak seçilebilir.",
+      "Optimizasyon: Fotoğraf modundaki zoom bileşeni geliştirildi. Hızlı zoom için zoom bileşenine dokunun; ana kamera 28mm/35mm arasında hızlı geçişi, 5× ise 10×/30× arasında hızlı geçişi destekler.",
+      "Optimizasyon: Görüntü kalitesi",
+      "Optimizasyon: Battery saving functionality"
+    ],
+    "albüm": [
       "Optimizasyon: Oynatma düzgünlüğünü geliştirmek için video senkronizasyonu stratejisi iyileştirildi",
       "Onarım: Kısa sürede çok sayıda fotoğraf oluşturulduğunda Galeri'deki küçük fotoğrafların önizlemesinin yüklenmesi çok uzun sürdü",
       "Onarım: Cloud senkronizasyonu sırasında fotoğraf zaman damgaları kaybolarak tarihlerin yanlış olmasına neden oldu",
@@ -461,14 +554,13 @@
       "Onarım: Anılar bazı cihaz modellerinde oynatılamadı",
       "Onarım: Arka arkaya çok sayıda fotoğraf çekildiğinde Galeri'deki küçük resimlerin önizlemesi anormal şekilde görüntülendi"
     ],
+    "Dosya Yöneticisi": [
+      "Optimizasyon: Dosya listesi yükleme hızı"
+    ],
     "Durum çubuğu, Bildirim çubuğu": [
       "Onarım: Tek satırlı bildirim simgeleri tam olarak görüntülenmiyor",
       "Onarım: Yalnızca simgenin görüntülendiği boş bildirimler göründü",
       "Onarım: Durum çubuğundaki 5G simgesi, yazı tipi boyutunu değiştirdikten veya üçüncü taraf yazı tipine geçtikten sonra tam görüntülenmedi"
-    ],
-    "Kamera": [
-      "Optimizasyon: Görüntü kalitesi",
-      "Optimizasyon: Battery saving functionality"
     ]
   },
   "logs_id": {
@@ -478,17 +570,34 @@
     "Layar kunci": [
       "Pengoptimalan: Logika baru \"tekan lama untuk mengedit\" di Layar kunci, untuk mengurangi pemicu yang tidak disengaja"
     ],
+    "Jam": [
+      "Perbaikan: Alarm tidak dapat dimatikan menggunakan tombol setelah berbunyi"
+    ],
     "Kalkulator": [
       "Pengoptimalan: Sensitivitas tombol Kalkulator ditingkatkan"
+    ],
+    "Kamera": [
+      "Baru: panjang fokus 120 mm di mode Potret",
+      "Baru: Panjang fokus default kamera utama dalam mode Foto. Di pengaturan kamera, Anda dapat memilih 23mm/28mm/35mm sebagai panjang fokus default.",
+      "Optimasi: Komponen zoom di mode Foto ditingkatkan. Ketuk komponen zoom untuk zoom cepat; kamera utama mendukung peralihan cepat 28mm/35mm, dan 5× mendukung peralihan cepat 10×/30×.",
+      "Pengoptimalan: Kualitas gambar",
+      "Optimized system performance"
+    ],
+    "Album": [
+      "Optimasi: Meningkatkan strategi sinkronisasi video untuk meningkatkan kelancaran pemutaran",
+      "Perbaikan: Thumbnail pratinjau di Galeri membutuhkan waktu terlalu lama untuk dimuat saat banyak gambar dihasilkan dalam waktu singkat.",
+      "Perbaikan: Stempel waktu foto hilang selama sinkronisasi cloud, menyebabkan tanggal yang salah.",
+      "Perbaikan: Foto muncul kembali setelah dihapus saat sinkronisasi cloud.",
+      "Perbaikan: Memories tidak dapat diputar di beberapa model perangkat",
+      "Perbaikan: Pratinjau thumbnail di Galeri tampil tidak normal saat mengambil banyak foto secara berurutan"
+    ],
+    "Pengelola Berkas": [
+      "Optimasi: Kecepatan pemuatan daftar file"
     ],
     "Bar status, Layar notiifikasi": [
       "Perbaikan: Ikon notifikasi satu baris tidak ditampilkan sepenuhnya",
       "Perbaikan: Notifikasi kosong, hanya ikon yang ditampilkan",
       "Perbaikan: Ikon 5G di bilah status tidak ditampilkan sepenuhnya setelah mengubah ukuran font atau mengubah ke font pihak ketiga"
-    ],
-    "Kamera": [
-      "Pengoptimalan: Kualitas gambar",
-      "Optimized system performance"
     ]
   },
   "logs_vi": {
@@ -504,7 +613,14 @@
     "Máy tính": [
       "Tối ưu: Cải thiện độ nhạy của các phím Máy tính"
     ],
-    "Thư viện": [
+    "Máy ảnh": [
+      "Mới: tiêu cự 120 mm trong chế độ Chân dung",
+      "Mới: Tiêu cự mặc định của camera chính trong chế độ Ảnh. Trong cài đặt camera, bạn có thể chọn 23mm/28mm/35mm làm tiêu cự mặc định.",
+      "Tối ưu hóa: Nâng cấp thành phần thu phóng trong chế độ Ảnh. Chạm vào thành phần thu phóng để thu phóng nhanh; camera chính hỗ trợ chuyển nhanh 28mm/35mm, 5× hỗ trợ chuyển nhanh 10×/30×.",
+      "Tối ưu: Chất lượng ảnh",
+      "Tối ưu: Battery saving functionality"
+    ],
+    "Album": [
       "Tối ưu: Chiến lược đồng bộ video được cải thiện để nâng cao độ mượt khi phát",
       "Sửa: Hình thu nhỏ xem trước trong Thư viện mất quá nhiều thời gian để tải khi một số lượng lớn ảnh được tạo trong một khoảng thời gian ngắn",
       "Sửa: Dấu thời gian của ảnh bị mất trong quá trình đồng bộ đám mây, khiến ngày không chính xác",
@@ -512,14 +628,13 @@
       "Sửa: Không thể phát kỷ niệm trên một số mẫu thiết bị",
       "Sửa: Hình thu nhỏ xem trước trong Thư viện hiển thị bất thường khi chụp liên tiếp nhiều ảnh"
     ],
+    "Trình quản lý tệp": [
+      "Tối ưu hóa: Tốc độ tải danh sách tệp"
+    ],
     "Thanh trạng thái, Thanh thông báo": [
       "Sửa: Biểu tượng thông báo một dòng không được hiển thị đầy đủ",
       "Sửa: Thông báo trống xuất hiện chỉ với biểu tượng được hiển thị",
       "Sửa: Biểu tượng 5G trên thanh trạng thái không hiển thị đầy đủ sau khi chuyển cỡ chữ hoặc đổi sang phông chữ của bên thứ ba"
-    ],
-    "Máy ảnh": [
-      "Tối ưu: Chất lượng ảnh",
-      "Tối ưu: Battery saving functionality"
     ]
   },
   "logs_th": {
@@ -535,6 +650,13 @@
     "เครื่องคิดเลข": [
       "การเพิ่มประสิทธิภาพ: ปรับปรุงความไวของปุ่มเครื่องคิดเลข"
     ],
+    "กล้อง": [
+      "ใหม่: ทางยาวโฟกัส 120 มม. ในโหมดภาพบุคคล",
+      "เพิ่ม: ทางยาวโฟกัสเริ่มต้นของกล้องหลักในโหมดภาพถ่าย ในตั้งค่ากล้องสามารถเลือก 23mm/28mm/35mm เป็นทางยาวโฟกัสเริ่มต้นได้",
+      "เพิ่มประสิทธิภาพ: อัปเกรดส่วนประกอบการซูมในโหมดถ่ายภาพ แตะส่วนประกอบการซูมเพื่อซูมอย่างรวดเร็ว กล้องหลักรองรับการสลับ 28mm/35mm อย่างรวดเร็ว และ 5× รองรับการสลับ 10×/30× อย่างรวดเร็ว",
+      "การเพิ่มประสิทธิภาพ: คุณภาพของรูปภาพ",
+      "การเพิ่มประสิทธิภาพ: Battery saving functionality"
+    ],
     "คลังภาพ": [
       "การเพิ่มประสิทธิภาพ: ปรับปรุงกลยุทธ์การซิงโครไนซ์วิดีโอเพื่อเพิ่มความราบรื่นในการเล่น",
       "แก้ไข: การแสดงตัวอย่างภาพขนาดย่อในคลังภาพใช้เวลาโหลดนานเกินไปเมื่อมีการสร้างภาพจำนวนมากในช่วงเวลาสั้นๆ",
@@ -543,14 +665,13 @@
       "แก้ไข: ไม่สามารถเล่นความทรงจำบนอุปกรณ์บางรุ่นได้",
       "แก้ไข: ภาพตัวอย่างขนาดย่อในคลังภาพแสดงผิดปกติเมื่อถ่ายภาพจำนวนมากติดต่อกัน"
     ],
+    "ตัวจัดการไฟล์": [
+      "ปรับปรุงความเร็วในการโหลดรายการไฟล์"
+    ],
     "แถบสถานะ, แถบแจ้งเตือน": [
       "แก้ไข: ไอคอนการแจ้งเตือนบรรทัดเดียวไม่แสดงทั้งหมด",
       "แก้ไข: การแจ้งเตือนว่างเปล่าปรากฏขึ้นโดยแสดงเฉพาะไอคอนเท่านั้น",
       "แก้ไข: ไอคอน 5G ในแถบสถานะแสดงได้ไม่เต็มที่หลังจากเปลี่ยนขนาดตัวอักษรหรือเปลี่ยนเป็นแบบอักษรของบุคคลที่สาม"
-    ],
-    "กล้อง": [
-      "การเพิ่มประสิทธิภาพ: คุณภาพของรูปภาพ",
-      "การเพิ่มประสิทธิภาพ: Battery saving functionality"
     ]
   },
   "logs_ar": {
@@ -566,13 +687,21 @@
     "الآلة الحاسبة": [
       "التحسين: تحسين استجابة الأزرار في الآلة الحاسبة"
     ],
-    "المعرض": [
+    "كاميرا": [
+      "جديد: طول بؤري 120 مم في وضع الصور الشخصية",
+      "جديد: البعد البؤري الافتراضي للكاميرا الرئيسية في وضع الصورة. في إعدادات الكاميرا يمكنك اختيار 23mm/28mm/35mm كبعد بؤري افتراضي.",
+      "تحسين: ترقية مكوّن التكبير في وضع الصور. اضغط على مكوّن التكبير لإجراء تكبير سريع؛ تدعم الكاميرا الرئيسية التبديل السريع بين 28mm/35mm، و5× التبديل السريع بين 10×/30×."
+    ],
+    "ألبوم الصور": [
       "التحسين: استراتيجية مزامنة الفيديو لتحسين سلاسة التشغيل",
       "الإصلاح: استغراق وقت طويل لتحميل الصور المصغرة لمعاينة المعرض عندما يتم إنشاء عدد كبير من الصور في فترة قصيرة",
       "الإصلاح: فقدان الطوابع الزمنية للصور أثناء المزامنة إلى Cloud، مما تسبب في عرض تواريخ غير صحيحة",
       "الإصلاح: مشكلة عودة الصور للظهور بعد حذفها أثناء المزامنة إلى Cloud",
       "الإصلاح: لا يمكن تشغيل الذكريات على بعض طرز الأجهزة",
       "الإصلاح: تظهر معاينة الصور المصغرة في المعرض بشكل غير طبيعي عند التقاط عدد كبير من الصور على التوالي"
+    ],
+    "مدير الملفات": [
+      "تحسين سرعة تحميل قائمة الملفات"
     ],
     "شريط الحالة ومركز الإشعارات": [
       "الإصلاح: عرض أيقونات الإشعارات ذات السطر الواحد الغير كامل",
@@ -597,7 +726,14 @@
     "कैल्क्युलेटर": [
       "ऑप्टिमाइज़ेशन कैल्क्युलेटर के बटनों की संवेदनशीलता को बेहतर किया गया है"
     ],
-    "गैलरी": [
+    "कैमरा": [
+      "नया: पोर्ट्रेट मोड में 120 mm फ़ोकल लंबाई",
+      "नया: फ़ोटो मोड में मुख्य कैमरे की डिफ़ॉल्ट फ़ोकल लंबाई। कैमरा सेटिंग्स में 23mm/28mm/35mm को डिफ़ॉल्ट फ़ोकल लंबाई के रूप में चुना जा सकता है।",
+      "अनुकूलन: फ़ोटो मोड में ज़ूम घटक को अपग्रेड किया गया। तेज़ ज़ूम के लिए ज़ूम घटक पर टैप करें; मुख्य कैमरा 28mm/35mm के बीच तेज़ स्विचिंग का समर्थन करता है, और 5× 10×/30× के बीच तेज़ स्विचिंग का समर्थन करता है।",
+      "ऑप्टिमाइज़ेशन इमेज की क्वालिटी",
+      "ऑप्टिमाइज़ेशन Battery saving functionality"
+    ],
+    "अल्बम": [
       "ऑप्टिमाइज़ेशन प्लेबैक की स्मूदनस को बढ़ाने के लिए बेहतर वीडियो सिंक्रनाइज़ेशन रणनीति",
       "ठीक करें कम समय में बड़ी संख्या में इमेज जनरेट किए जाने पर, गैलरी में प्रीव्यू थंबनेल लोड होने में बहुत अधिक समय ले रहा था",
       "ठीक करें क्लाउड सिंक के दौरान फोटो टाइमस्टैम्प खो जा रहे थे, जिससे गलत दिनांक दिखाई दे रहे थे",
@@ -605,17 +741,24 @@
       "ठीक करें कुछ डिवाइस मॉडलों पर यादें नहीं चलाई जा सकीं",
       "ठीक करें लगातार बड़ी संख्या में फ़ोटो कैप्चर करते समय गैलरी में प्रीव्यू थंबनेल असामान्य रूप से दिख रहे थे"
     ],
+    "फ़ाइल प्रबंधक": [
+      "अनुकूलन: फ़ाइल सूची लोड करने की गति"
+    ],
     "स्टेटस बार, नोटिफिकेशन शेड": [
       "ठीक करें एक-लाइन सूचना आइकन पूरी तरह से नहीं दिख रहे थे",
       "ठीक करें खाली सूचनाओं में सिर्फ़ आइकन दिखाई दे रहे हैं",
       "ठीक करें फ़ॉन्ट आकार बदलने या किसी तृतीय पक्ष के फ़ॉन्ट में बदलाव करने के बाद स्टेटस बार में 5G आइकन पूरी तरह से नहीं दिखाई दे रहा है"
-    ],
-    "कैमरा": [
-      "ऑप्टिमाइज़ेशन इमेज की क्वालिटी",
-      "ऑप्टिमाइज़ेशन Battery saving functionality"
     ]
   },
   "logs_ug": {
+    "سىستېما": [
+      "Optimization: Improved app preloading to enhance app startup speed",
+      "Optimization: New startup animation strategy reduces app launch delays",
+      "Optimization: Improved system resource recovery strategy when switching apps to enhance app smoothness",
+      "Optimization: Optimized memory usage to improve the smoothness of TikTok (Douyin)",
+      "Fix: Having too many notifications could cause the system to restart",
+      "بەزى ئەھۋاللاردا تېلېفون قىلغاندا ئاۋاز چىقماسلىق مەسىلىسى تۈزىتىلدى"
+    ],
     "Control center": [
       "修复 偶现部分快捷开关无法点击的问题"
     ],

@@ -5,17 +5,17 @@
       "修复 偶现开启防误触后虚拟按键消失的问题"
     ],
     "短信": [
-      "新增 移动网络短信功能(融合通信), 可在设置->系统应用->短信->移动网络短信中开启"
+      "新增了通过移动网络发送短信的功能（RCS）；该功能可在“设置” → “系统应用” → “消息” → “移动网络短信”中启用。"
     ],
     "相机": [
       "修复 影响相机稳定性的若干问题"
     ],
     "设置": [
-      "修复 设置同步显示两个添加个人账户选项的问题",
-      "设置->我的设备->使用说明更改为重要安全信息"
+      "在“设置”选项中，提供了两种用于添加个人账户的方法（即两种添加个人账户的选项）。",
+      "设置（Settings）→ 我的设备（My Device）→ 用户指南（User Guide）已被更改为“重要安全信息”（Important Safety Information）。"
     ],
     "文件管理器": [
-      "修复 重命名或者解密后的文件无法搜索的问题"
+      "恢复操作失败：无法通过搜索找到那些已被重命名或解密的项目。"
     ],
     "录音机": [
       "修复 设置图标显示异常的问题"
@@ -25,30 +25,72 @@
     ]
   },
   "logs_en": {
+    "System": [
+      "Optimized face unlock to address failures and low success rate.",
+      "Fixed the issue where, occasionally, after enabling the anti-misclick feature, the virtual buttons would disappear."
+    ],
+    "Messages": [
+      "New feature: Mobile network SMS service (Integrated Communications) can be enabled by going to Settings -> System Apps -> SMS -> Mobile Network SMS."
+    ],
+    "Camera": [
+      "Fixed several issues that affected the stability of the camera."
+    ],
+    "Settings": [
+      "Fixed the issue with the settings not displaying both options for adding personal accounts simultaneously.",
+      "Settings -> My device -> User guide changed to Important safety information"
+    ],
     "File Explorer": [
-      "Restore Couldn't find renamed or decrypted items using search"
+      "Fixed the issue where files that have been renamed or decrypted cannot be searched for."
     ],
     "Recorder": [
-      "Restore The settings icon wasn't displayed correctly"
+      "Fixed the issue with abnormal display of the setup icon."
     ],
     "Other": [
       "Improved system security and stability"
     ]
   },
   "logs_zh_tw": {
-    "檔案管理員": [
+    "系統": [
+      "解决人脸识别解锁功能失效以及识别成功率较低的问题",
+      "修复了在启用“防误触”功能后虚拟按键突然消失的故障。"
+    ],
+    "簡訊": [
+      "新增了移动网络短信功能（属于融合通信技术），可以在“设置”→“系统应用”→“短信”→“移动网络短信”中进行启用。"
+    ],
+    "相機": [
+      "修复了影响相机稳定性的多个问题。"
+    ],
+    "设置": [
+      "已修复“设置”功能中同时显示两个用于添加个人账户的选项的问题。",
+      "設定->我的裝置->使用說明變更為重要安全資訊"
+    ],
+    "文件管理器": [
       "修正 重新命名或解密後檔案無法搜尋的問題"
     ],
-    "錄音機": [
-      "修復 設定圖示顯示異常的問題"
+    "录音机": [
+      "已修复设置图标显示异常的问题。"
     ],
     "其他": [
       "Improved system security and stability"
     ]
   },
   "logs_ja": {
+    "システム": [
+      "顔認証によるロック解除がうまくいかない、または成功率が低いという問題を最適化する",
+      "誤操作防止機能をオンにした後に仮想キーが突然消えてしまう問題を修正しました。"
+    ],
+    "メッセージ": [
+      "新機能として、モバイルネットワークを利用したショートメッセージ送信機能（統合通信）が追加されました。この機能は、「設定」→「システムアプリ」→「ショートメッセージ」→「モバイルネットワークを利用したショートメッセージ送信」でオンにすることができます。"
+    ],
+    "カメラ": [
+      "カメラの安定性に影響するいくつかの問題を修正しました"
+    ],
+    "設定": [
+      "個人アカウントを2つ追加するオプションが同期表示されない問題を修正しました。",
+      "【設定】→【マイデバイス】→【使用説明】を「重要なセキュリティ情報」に変更してください。"
+    ],
     "ファイルマネージャー": [
-      "名前を変更したファイルまたは復号したファイルを検索できない問題を修正"
+      "ファイルの名前を変更したり復号化した後に検索できなくなる問題を修正しました。"
     ],
     "レコーダー": [
       "設定アイコンが正しく表示されない問題を修正"
@@ -58,10 +100,24 @@
     ]
   },
   "logs_ko": {
-    "파일 관리자": [
-      "이름이 변경되었거나 복호화된 파일을 검색할 수 없는 문제를 수정했습니다"
+    "시스템": [
+      "얼굴 인식을 통한 잠금 해제 기능의 오작동 및 낮은 성공률 문제를 개선합니다.",
+      "잘못된 터치를 방지하기 위한 기능이 활성화되었을 때 가끔 가상 버튼이 사라지는 문제를 수정했습니다."
     ],
-    "녹음기": [
+    "메시지": [
+      "새로 추가된 기능: 이동통신 네트워크를 통한 문자 메시지 전송 기능(융합 통신, Converged Communication)은 ‘설정 -> 시스템 앱 -> 문자 메시지 -> 이동통신 네트워크를 통한 문자 메시지’에서 활성화할 수 있습니다."
+    ],
+    "카메라": [
+      "카메라 안정성에 영향을 주는 몇 가지 문제를 수정했습니다"
+    ],
+    "설정": [
+      "개인 계정을 두 개 추가하는 옵션이 동기화되어 함께 표시되지 않는 문제를 수정했습니다.",
+      "설정->내 기기->사용 설명이 중요한 안전 정보로 변경됨"
+    ],
+    "파일 관리자": [
+      "이름을 바꾸거나 암호를 해제한 파일을 검색할 수 없는 문제가 수정되었습니다."
+    ],
+    "레코더": [
       "설정 아이콘이 비정상적으로 표시되는 문제 수정"
     ],
     "기타": [
@@ -69,19 +125,47 @@
     ]
   },
   "logs_ru": {
-    "Файловый менеджер": [
-      "Исправлена проблема, из-за которой не удавалось найти переименованные или расшифрованные файлы"
+    "Система": [
+      "Необходимо устранить проблемы с невозможностью использования функции разблокировки по лицу, а также повысить эффективность этого метода.",
+      "Исправлено случайное исчезновение виртуальных кнопок после включения функции защиты от непреднамеренных действий."
+    ],
+    "Сообщения": [
+      "Добавлена функция отправки текстовых сообщений через мобильную сеть (интегрированная связь). Ее можно активировать в настройках → Системные приложения → Сообщения → Отправка сообщений через мобильную сеть."
+    ],
+    "Камера": [
+      "Исправлено несколько проблем, влияющих на стабильность камеры"
+    ],
+    "Настройки": [
+      "Устранено неполадка с настройками синхронизации отображения двух опций для добавления личных учетных записей.",
+      "Параметры -> Мои устройства -> Инструкция по использованию должны быть изменены на «Важная информация о безопасности»."
+    ],
+    "Проводник файлов": [
+      "Устранено проблему, при которой файлы после переименования или декриптирования не отображались в результатах поиска."
     ],
     "Диктофон": [
-      "Исправлена проблема с некорректным отображением значка настроек"
+      "Устранено неправильное отображение иконок при настройках."
     ],
     "Другое": [
       "Улучшение безопасности и стабильности системы"
     ]
   },
   "logs_uk": {
-    "Файловий менеджер": [
-      "Виправлено проблему, через яку не вдавалося знайти перейменовані або розшифровані файли"
+    "Система": [
+      "Оптимізація проблем з невдалим розблокуванням за допомогою обличчя та низьким рівнем успішності цього процесу",
+      "Виправлено проблему, коли випадково увімкнено захист від ненавмисних дій, і віртуальні кнопки зникають."
+    ],
+    "Повідомлення": [
+      "Додана нова функція – надсилання текстових повідомлень через мобільну мережу (інтегроване зв’язку). Її можна увімкнути у налаштуваннях -> Системні додатки -> Текстові повідомлення -> Надсилання текстових повідомлень через мобільну мережу."
+    ],
+    "Камера": [
+      "Виправлено кілька проблем, що впливають на стабільність камери"
+    ],
+    "Налаштування": [
+      "Виправлено проблему з налаштуванням синхронізованого відображення двох опцій для додавання особистих облікових записів.",
+      "Налаштування -> Мій пристрій -> Посібник користувача змінено на «Важлива інформація з безпеки»"
+    ],
+    "Провідник файлів": [
+      "Виправлено проблему, коли файл після перейменування або декодування не піддається пошуку."
     ],
     "Диктофон": [
       "Виправлено проблему з нерозпізнаним відображенням значка налаштувань"
@@ -91,40 +175,96 @@
     ]
   },
   "logs_pl": {
-    "Menedżer plików": [
-      "Naprawiono problem, przez który nie można było wyszukać plików o zmienionej nazwie lub odszyfrowanych"
+    "System": [
+      "Należy poprawić problemy związane z nieefektywnością rozpoznawania twarzy przy rozblokowaniu urządzeń oraz niskim stopniem skuteczności tego procesu.",
+      "Poprawiono problem, występujący czasem po włączeniu funkcji zapobiegania niechcianym dotknięciom, gdy klawisze wirtualne przestają być widoczne."
     ],
-    "Rejestrator": [
+    "Wiadomości": [
+      "Dodano nową funkcję wysyłania wiadomości tekstowych przez mobilną sieć (komunikacja zintegrowana). Można ją włączyć w ustawieniach → aplikacje systemowe → wiadomości tekstowe → wysyłanie wiadomości tekstowych przez mobilną sieć."
+    ],
+    "Aparat": [
+      "Naprawiono kilka problemów wpływających na stabilność aparatu"
+    ],
+    "Ustawienia": [
+      "Urzędnicy naprawili problem z ustawieniami synchronizacji wyświetlania dwóch opcji dotyczących dodawania kont osobistych.",
+      "Ustawienia -> Moje urządzenie -> Instrukcja obsługi zmieniona na Ważne informacje dotyczące bezpieczeństwa"
+    ],
+    "Menedżer plików": [
+      "Poprawiono problem, gdy po przemianie nazwy lubdekrytowaniu pliku nie był możliwy jego wyszukiwanie."
+    ],
+    "Kaseta nagrywająca": [
       "Naprawiono problem z nieprawidłowym wyświetlaniem ikony ustawień"
     ],
-    "Inne": [
+    "Reszt": [
       "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
   "logs_de": {
-    "Dateimanager": [
-      "Problem behoben, bei dem umbenannte oder entschlüsselte Dateien nicht durchsucht werden konnten"
+    "System": [
+      "Optimierung der Probleme mit fehlgeschlagenem Gesichtserkennungssystem zur Entsperrung sowie niedriger Erfolgsrate",
+      "Behebung des Problems, bei dem virtuelle Tasten nach dem gelegentlichen Aktivieren der Fehlertastenschutzfunktion verschwinden."
     ],
-    "Rekorder": [
-      "Problem mit der fehlerhaften Anzeige des Einstellungssymbols behoben"
+    "Nachrichten": [
+      "Neue Funktion: SMS über das Mobilfunknetz (Integrierte Kommunikation). Diese kann in den Einstellungen -> Systemanwendungen -> SMS -> SMS über das Mobilfunknetz aktiviert werden."
+    ],
+    "Kamera": [
+      "Behebung mehrerer Probleme, die die Stabilität der Kamera beeinträchtigen."
+    ],
+    "Einstellungen": [
+      "Das Problem wurde behoben, dass in der Einstellungssynchronisierung zwei Optionen zum Hinzufügen eines persönlichen Kontos angezeigt wurden.",
+      "Einstellungen -> Mein Gerät -> Benutzerhandbuch in Wichtige Sicherheitsinformationen geändert"
+    ],
+    "Dateimanager": [
+      "Behebung des Problems, dass nach der Umbenennung oder Entschlüsselung von Dateien keine Suchfunktion mehr verfügbar ist."
+    ],
+    "Tonaufnahmegerät": [
+      "Behebung des Problems mit der abnormalen Anzeige der Einstellungsicons"
     ],
     "Sonstiges": [
       "Systemsicherheit und -stabilität verbessert"
     ]
   },
   "logs_fr": {
+    "Système": [
+      "Optimiser les problèmes de fonctionnement défaillant du déverrouillage par reconnaissance faciale ainsi que le faible taux de réussite de ce système.",
+      "Résolution du problème où les boutons virtuels disparaissent parfois après l'activation de la fonction anti-erreur de manipulation."
+    ],
+    "Messaging": [
+      "Nouvelle fonction : messagerie texte par réseau mobile (communication intégrée). Elle peut être activée dans « Paramètres » → « Applications système » → « Messagerie » → « Messagerie texte par réseau mobile »."
+    ],
+    "Appareil photo": [
+      "Correction de plusieurs problèmes affectant la stabilité de l’appareil photo"
+    ],
+    "Paramètres": [
+      "Problème résolu concernant l'affichage synchronisé des deux options permettant d'ajouter des comptes personnels.",
+      "Paramètres -> Mon appareil -> Instructions d’utilisation → Modifier pour « Informations de sécurité importantes »"
+    ],
     "Gestionnaire de fichiers": [
-      "Correction du problème empêchant la recherche des fichiers renommés ou déchiffrés"
+      "Résolution du problème selon lequel les fichiers renommés ou déchiffrés ne peuvent pas être recherchés."
     ],
     "Enregistreur": [
-      "Correction du problème d'affichage anormal de l'icône Paramètres"
+      "Problème résolu : l'affichage des icônes de configuration est maintenant correct."
     ],
     "Autre": [
       "Sécurité et stabilité du système améliorées"
     ]
   },
   "logs_it": {
-    "Gestione file": [
+    "Sistema": [
+      "Ottimizzare i problemi legati al funzionamento non corretto del riconoscimento facciale per l’accesso e ai bassi tassi di successo nell’utilizzo di questo sistema.",
+      "Risolto il problema occasionale in cui, abilitata la funzione per evitare errori di input (anti-touch), i pulsanti virtuali scompaiono."
+    ],
+    "Messaggi": [
+      "Aggiunta la funzionalità di messaggistica istantanea tramite rete mobile (comunicazione integrata): è possibile attivarla nelle impostazioni -> App di sistema -> Messaggi -> Messaggistica istantanea tramite rete mobile."
+    ],
+    "macchina fotografica": [
+      "Risolti diversi problemi che influiscono sulla stabilità della fotocamera"
+    ],
+    "Impostazioni": [
+      "Risolto il problema relativo alle impostazioni per la sincronizzazione dell’visualizzazione delle due opzioni relative all’aggiunta di account personali.",
+      "Impostazioni -> Il mio dispositivo -> Guida utente modificata in Informazioni importanti sulla sicurezza"
+    ],
+    "File Manager": [
       "Risolto il problema per cui i file rinominati o decifrati non erano ricercabili"
     ],
     "Registratore": [
@@ -135,19 +275,47 @@
     ]
   },
   "logs_es": {
+    "Sistema": [
+      "Optimizar los problemas de fallo en el desbloqueo por reconocimiento facial y la baja tasa de éxito.",
+      "Se ha corregido el problema en el que, ocasionalmente, después de activar la función contra errores de uso (anti-touch), los botones virtuales desaparecían."
+    ],
+    "Mensajería": [
+      "Se ha añadido la función de mensajes de texto a través de redes móviles (comunicación integrada). Puede activarse en «Ajustes» → «Aplicaciones del sistema» → «Mensajes de texto» → «Mensajes de texto a través de redes móviles»."
+    ],
+    "Cámara": [
+      "Corregidos varios problemas que afectaban a la estabilidad de la cámara"
+    ],
+    "Configuración": [
+      "Se ha corregido el problema relacionado con la configuración para mostrar de forma sincronizada las dos opciones para agregar cuentas personales.",
+      "Configuraciones -> Mis dispositivos -> Instrucciones de uso → Cambiar a “Información importante sobre seguridad”"
+    ],
     "Administrador de archivos": [
-      "Se corrigió el problema por el que no se podían buscar archivos renombrados o descifrados"
+      "Se ha corregido el problema de que los archivos renombrados o desencriptados no podían ser buscados."
     ],
     "Grabadora": [
-      "Se corrigió el problema de visualización anómala del icono de Ajustes"
+      "Se ha corregido el problema de la visualización anormal de los iconos de configuración."
     ],
     "Otros": [
       "Estabilidad y seguridad del sistema mejorada"
     ]
   },
   "logs_pt": {
+    "Sistema": [
+      "Otimizar os problemas de falha no desbloqueio por reconhecimento facial, bem como a baixa taxa de sucesso nesse processo.",
+      "Corrigido o problema em que as teclas virtuais desapareciam ocasionalmente após ativar a proteção contra toques acidentais"
+    ],
+    "Mensagens": [
+      "Foi adicionada a funcionalidade de mensagens de texto através da rede móvel (comunicação integrada), que pode ser ativada em “Configurações” -> “Aplicações do Sistema” -> “Mensagens de Texto” -> “Mensagens de Texto através da Rede Móvel”."
+    ],
+    "Câmera": [
+      "Corrigidos vários problemas que afetavam a estabilidade da câmera"
+    ],
+    "Configurações": [
+      "Corrigido o problema relacionado com a configuração da exibição sincronizada de duas opções para adicionar contas pessoais.",
+      "Configurações -> Meu dispositivo -> Guia do usuário alterado para Informações importantes de segurança"
+    ],
     "Gerenciador de arquivos": [
-      "Corrigido o problema que impedia pesquisar arquivos renomeados ou descriptografados"
+      "Corrigir o problema de os ficheiros renomeados ou desencriptados não serem encontráveis através de pesquisas."
     ],
     "Gravador": [
       "Corrigido o problema de exibição anormal do ícone de Configurações"
@@ -157,41 +325,97 @@
     ]
   },
   "logs_tr": {
+    "Sistem": [
+      "Yüz tanıma ile kilidin açılmasında yaşanan sorunları ve düşük başarı oranlarını gidermek için iyileştirmeler yapmak gerekiyor.",
+      "Arada bir yanlış dokunmaları önleme özelliği açıldığında sanal tuşların kaybolması sorununu düzelttik."
+    ],
+    "Mesajlaşma": [
+      "Mobil ağ SMS özelliği (RCS) eklendi, Ayarlar -> Sistem uygulamaları -> Mesajlar -> Mobil ağ SMS'leri bölümünden etkinleştirilebilir."
+    ],
+    "Kamera": [
+      "Kameranın stabilitesini etkileyen bazı sorunlar giderildi."
+    ],
+    "Ayarlar": [
+      "İki kişisel hesabın eklenebilmesi seçeneğinin senkronize bir şekilde gösterilmesinde yaşanan sorunu düzelttik.",
+      "Ayarlar -> Cihazım -> Kullanım kılavuzu Önemli güvenlik bilgileri olarak değiştirildi"
+    ],
     "Dosya Yöneticisi": [
       "Yeniden adlandırılan veya şifresi çözülen dosyaların aranamaması sorunu giderildi"
     ],
     "Kayıt Cihazı": [
-      "Ayarlar simgesinin hatalı görüntülenmesi sorunu düzeltildi"
+      "Ayar simgelerinin yanlış şekilde görünmesi sorununu düzelttik."
     ],
     "Diğer": [
       "Sistem güvenliği ve kararlılığı geliştirildi"
     ]
   },
   "logs_id": {
-    "Pengelola File": [
+    "Sistem": [
+      "Mengoptimalkan masalah kegagalan proses pembukaan kunci menggunakan pengenalan wajah, serta tingkat keberhasilan yang rendah dalam proses tersebut.",
+      "Memperbaiki masalah di mana tombol virtual menghilang secara sporadis setelah fitur anti-kesalahan (anti-touch) diaktifkan."
+    ],
+    "Pesan": [
+      "Fungsi pesan singkat melalui jaringan seluler (komunikasi terintegrasi) telah ditambahkan, dan dapat diaktifkan di Pengaturan -> Aplikasi Sistem -> Pesan Singkat -> Pesan Singkat Jaringan Seluler."
+    ],
+    "Kamera": [
+      "Memperbaiki beberapa masalah yang memengaruhi stabilitas kamera"
+    ],
+    "Pengaturan": [
+      "Masalah telah diperbaiki: opsi untuk menyinkronkan dan menampilkan dua akun pribadi yang baru ditambahkan kini berfungsi dengan benar.",
+      "Pengaturan -> Perangkat saya -> Panduan pengguna diubah menjadi Informasi keselamatan penting"
+    ],
+    "File Manager": [
       "Memperbaiki masalah file yang diganti nama atau didekripsi tidak dapat dicari"
     ],
     "Perekam": [
-      "Memperbaiki masalah ikon Pengaturan yang tidak tampil dengan benar"
+      "Memperbaiki masalah penampilan ikon pengaturan yang tidak normal."
     ],
     "Lainnya": [
       "Keamanan dan stabilitas sistem ditingkatkan"
     ]
   },
   "logs_vi": {
+    "Hệ thống": [
+      "Tối ưu hóa các vấn đề liên quan đến việc mở khóa bằng khuôn mặt không hoạt động hiệu quả và tỷ lệ thành công thấp.",
+      "Khắc phục sự cố khi các nút ảo biến mất sau khi tính năng chống nhầm lẫn được kích hoạt (xảy ra thỉnh thoảng)."
+    ],
+    "Tin nhắn": [
+      "Thêm tính năng nhắn tin qua mạng di động (truyền thông tích hợp). Bạn có thể bật tính năng này bằng cách vào Cài đặt -> Ứng dụng hệ thống -> Nhắn tin -> Nhắn tin qua mạng di động."
+    ],
+    "Máy ảnh": [
+      "Đã khắc phục một số vấn đề ảnh hưởng đến độ ổn định của camera"
+    ],
+    "Cài đặt": [
+      "Đã sửa lỗi liên quan đến việc thiết lập hiển thị đồng bộ cho hai tùy chọn thêm tài khoản cá nhân.",
+      "Cài đặt -> Thiết bị của tôi -> Hướng dẫn sử dụng đã đổi thành Thông tin an toàn quan trọng"
+    ],
     "Trình quản lý tệp": [
-      "Khắc phục sự cố không thể tìm kiếm tệp đã đổi tên hoặc đã giải mã"
+      "Khắc phục sự cố khi các tệp tin sau khi được đổi tên hoặc giải mã không thể được tìm kiếm."
     ],
     "Máy ghi âm": [
-      "Khắc phục sự cố biểu tượng Cài đặt hiển thị bất thường"
+      "Đã sửa lỗi liên quan đến việc hiển thị biểu tượng cài đặt một cách bất thường."
     ],
     "Khác": [
       "Cải thiện tính ổn định và bảo mật hệ thống"
     ]
   },
   "logs_th": {
+    "ระบบ": [
+      "การปรับปรุงปัญหาเกี่ยวกับการล็อคด้วยใบหน้าที่ไม่สามารถทำงานได้อย่างถูกต้อง และอัตราความสำเร็จที่ต่ำ",
+      "แก้ไขปัญหาที่บางครั้งเมื่อเปิดฟีเจอร์ป้องกันการกดผิดพลาด (anti-touch) แล้วปุ่มเสมือน (virtual buttons) จะหายไป"
+    ],
+    "ข้อความ": [
+      "เพิ่มฟังก์ชันส่งข้อความผ่านเครือข่ายโทรศัพท์มือถือ (การสื่อสารแบบบูรณาการ) สามารถเปิดใช้งานได้ที่ “การตั้งค่า” -> “แอปพลิเคชันระบบ” -> “ข้อความ” -> “ส่งข้อความผ่านเครือข่ายโทรศัพท์มือถือ”"
+    ],
+    "กล้อง": [
+      "ได้แก้ไขปัญหาต่าง ๆ ที่ส่งผลกระทบต่อความเสถียรของกล้องแล้ว"
+    ],
+    "การตั้งค่า": [
+      "แก้ไขปัญหาเกี่ยวกับการตั้งค่าให้แสดงผลการซิงโครไนซ์ระหว่างตัวเลือกสองตัวที่ใช้สำหรับเพิ่มบัญชีส่วนบุคคล",
+      "ไปที่ “การตั้งค่า” -> “อุปกรณ์ของฉัน” -> ให้เปลี่ยนข้อความในส่วน “คำแนะนำการใช้งาน” เป็น “ข้อมูลด้านความปลอดภัยที่สำคัญ”"
+    ],
     "ตัวจัดการไฟล์": [
-      "แก้ไขปัญหาที่ไม่สามารถค้นหาไฟล์ที่เปลี่ยนชื่อหรือถอดรหัสแล้วได้"
+      "แก้ไขปัญหาที่ไฟล์ที่ถูกเปลี่ยนชื่อหรือถูกถอดรหัสแล้วไม่สามารถค้นหาได้"
     ],
     "เครื่องบันทึกเสียง": [
       "แก้ไขปัญหาไอคอนการตั้งค่าแสดงผลผิดปกติ"
@@ -201,41 +425,96 @@
     ]
   },
   "logs_ar": {
+    "النظام": [
+      "تحسين مشاكل فشل عملية فتح القفل باستخدام بصمة الوجه، وانخفاض معدل نجاح هذه الطريقة.",
+      "تم إصلاح المشكلة التي تحدث أحيانًا حيث تختفي الأزرار الافتراضية بعد تفعيل وظيفة منع الإغلاق الخاطئ."
+    ],
+    "الرسائل": [
+      "تم إضافة ميزة الرسائل النصية عبر شبكات المحمول (الاتصالات المدمجة)، ويمكن تفعيلها من خلال الإعدادات -> التطبيقات النظامية -> الرسائل النصية -> الرسائل النصية عبر شبكات المحمول."
+    ],
+    "كاميرا": [
+      "إصلاح عدة مشكلات تؤثر على استقرار الكاميرا"
+    ],
+    "الإعدادات": [
+      "تم إصلاح المشكلة المتعلقة بعدم تزامن عرض خيارات إضافة الحسابات الشخصية.",
+      "الإعدادات -> أجهزتي -> إرشادات الاستخدام -> قم بتغيير هذا النص إلى \"معلومات أمان مهمة\"."
+    ],
     "مدير الملفات": [
-      "إصلاح مشكلة تعذّر البحث عن الملفات التي أُعيدت تسميتها أو فُكّ تشفيرها"
+      "تم إصلاح المشكلة التي تمنع من البحث عن الملفات بعد أن تم تغيير اسمها أو فك تشفيرها."
     ],
-    "مسجل": [
-      "إصلاح مشكلة عرض أيقونة الإعدادات بشكل غير طبيعي"
+    "جهاز التسجيل": [
+      "تم إصلاح المشكلة المتعلقة بظهور أيقونات الإعدادات بشكل غير صحيح."
     ],
-    "أخرى": [
+    "آخرين": [
       "تحسين أمن واستقرار النظام"
     ]
   },
   "logs_in": {
+    "सिस्टम": [
+      "चेहरे की पहचान के आधार पर डिवाइस को अनलॉक करने की प्रक्रिया में होने वाली समस्याओं, जैसे कि तकनीकी खराबियाँ एवं कम सफलता दर, को ठीक करने की आवश्यकता है।",
+      "वह समस्या ठीक कर दी गई है, जिसमें कभी-कभार “एंटी-फॉल्स” (Anti-Fall) सुविधा चालू होने पर वर्चुअल बटन गायब हो जाते थे।"
+    ],
+    "संदेश": [
+      "एक नई सुविधा के रूप में, “मोबाइल नेटवर्क एसएमएस” (Fused Communications) जोड़ा गया है। इसे शुरू करने के लिए, “सेटिंग्स” → “सिस्टम ऐप्स” → “एसएमएस” → “मोबाइल नेटवर्क एसएमएस” पर जाएं।"
+    ],
+    "कैमरा": [
+      "कैमरा स्थिरता को प्रभावित करने वाली कुछ समस्याओं को ठीक किया गया"
+    ],
+    "सेटिंग्स": [
+      "दो नए व्यक्तिगत खातों के विकल्पों को समन्वित रूप से प्रदर्शित करने संबंधी समस्या को ठीक कर दिया गया है.",
+      "सेटिंग्स -> मेरा डिवाइस -> उपयोगकर्ता गाइड को महत्वपूर्ण सुरक्षा जानकारी में बदला गया"
+    ],
     "फ़ाइल प्रबंधक": [
-      "नाम बदली या डिक्रिप्ट की गई फ़ाइलों को खोज न पाने की समस्या ठीक की गई"
+      "उस समस्या को ठीक किया गया है जिसमें पुनर्नामकरण या डिक्रिप्ट किए गए फ़ाइलों को खोजने में समस्या आती थी।"
     ],
     "रिकॉर्डर": [
-      "सेटिंग्स आइकन के अनियमित रूप से प्रदर्शित होने की समस्या ठीक की गई"
+      "सेटिंग आइकन के असामान्य दिखाई जाने की समस्या को ठीक कर दिया गया है."
     ],
     "अन्य": [
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
     ]
   },
   "logs_ug": {
-    "ھۆججەت باشقۇرغۇچ": [
-      "ئاتى ئۆزگەرتىلگەن ياكى شىفىرى يېشىلغان ھۆججەتلەرنى ئىزدەشكە بولمايدىغان مەسىلە ئوڭشالدى"
+    "سىستېما": [
+      "يۈز ئىمزا قويۇش ئارقىلىق قۇلۇپ ئاچىش فۇنكسىيەسىنىڭ ناۋادا كارغا كەلمەسلىكى ۋە مۇۋەپپەقىيەتلىك بولۇش نىسبىتىنىڭ تۆۋەن بولۇش مەسىلىسىنى ياخشىلاش كېرەك.",
+      "خاتالىقتىن ساقلىنىش ئۈسكۈنىسى قوزغالغاندىن كېيىن سىمۋولىك (ۋېرچۇئال) كۇنۇپكىلار يوقاپ كېتىش مەسىلىسىنى تۈزەتتۇق."
     ],
-    "ئاۋاز ئالغۇ": [
-      "تەڭشەك سىنبەلگىسىنىڭ نورمالسىز كۆرۈنۈش مەسىلىسى تۈزىتىلدى"
+    "ئۇچۇر": [
+      "يېڭىدىن قوشۇلغان ئىقتىدار : كۆچمە تور يوللىرى ئارقىلىق ئۇچۇر يوللاش (بىرلەشمە ئالاقە ) ؛ بۇ ئىقتىدارنى « ئەسلىھەلەر » → « سىستېما ئەپ لىرى » → « ئۇچۇرلار » → « كۆچمە تور يوللىرى ئارقىلىق ئۇچۇر يوللاش » تاللاڭ لىرىدا ئاچقىلى بولىدۇ"
+    ],
+    "فوتو ئاپپارات": [
+      "كامېرا مۇقىملىقىغا تەسىر كۆرسىتىدىغان بىر قانچە مەسىلە تۈزىتىلدى"
+    ],
+    "تەڭشەك": [
+      "ئىككى ئەركىن ھېسابات نى بىرلا ۋاقىتتا كۆرسىتىش ئىمكانىيىتىگە مۇناسىۋەتلىك مەسىلىنى تۈزەتتۇق.",
+      "« تەڭشەش » → « مېنىڭ ئۈسكۈنەم » → « ئىشلىتىش ئىزاھاتى » نى « مۇھىم بىخەتەرلىك ئۇچۇرلىرى » دەپ ئۆزگەرتىڭ"
+    ],
+    "ھۆججەت باشقۇرغۇچ": [
+      "ئۆزگەرتىلگەن نامى ياكى شفرى ئېچىلغان ھۆججەتلەرنى ئىزدەش مۇمكىن بولماسلىق مەسىلىسىنى تۈزەتتۇق."
+    ],
+    "ئۈن خاتىرىلەش ماشىنىسى": [
+      "كۆرسىتىش ئىكونىسىنىڭ نورمال ئەمەس كۆرۈنۈش مەسىلىسىنى تۈزدۇق"
     ],
     "باشقىلىرى": [
       "Improved system security and stability"
     ]
   },
   "logs_bo": {
+    "མ་ལག": [
+      "གདོང་བརྙན་ལ་བརྟེན་ནས་ཀླད་ཆགས་འཕྱེད་པའི་མ་ལག་ལས་ཐུབ་མིན་དང་།ལས་ཐུབ་ཚད་ཇེ་ཉུང་དུ་འགྲོ་བའི་གནད་དོན་ལེགས་བཅོས་བྱེད་དགོས།",
+      "གནད་དོན་ཞིག་སྒྲིག་བྱེད་དགོས།ཁ་བརྡ་ནོར་མི་འགྲོ་བའི་བྱེད་ཐབས་སྤྱད་རྗེས་བརྙན་མངོན་གྱི་པད་ཁུང་(virtual buttons)་མེད་པར་འགྲོ་བ་དེ་ཡིན།"
+    ],
+    "བརྡ་འཕྲིན།": [
+      "གསར་དུ་ཞབས་ཞུ་འདི་བསྣན་པ་སྟེ།“མོバ일་नेटवर्क SMS” (Mobile Network SMS)་ཡིན།འཐུས་སྒོ་གཏོང་བའི་བརྒྱུད་རིམ་ནི：“Settings -> System Applications -> SMS -> Mobile Network SMS”ཡིན།"
+    ],
+    "ཁ་མར།": [
+      "ཁ་པར་གྱི་བརྟན་ལྷིང་ལ་ཤུགས་རྐྱེན་ཐེབས་པའི་གནད་དོན་ཁ་ཤས་ཉམས་གསོ་བྱས།"
+    ],
+    "ཡིག་ཆའི་དོ་དམ་ཆས": [
+      "ཡིག་ཆ་བསྐྱར་མིང་བཏགས་པའམ་གསང་གྲངས་ཕྱིར་འཐེན་བྱས་རྗེས་དེ་འཚོལ་ཐབས་མེད་པའི་གནད་དོན་ཐག་གཅོད།"
+    ],
     "སྒྲ་འཇུག་ཆས": [
-      "སྒྲིག་འཛུགས་ངོ་རྟགས་རྒྱུན་མིན་ངང་མངོན་པའི་གནད་དོན་བཅོས་ཟིན།"
+      "སྒྲིག་ཆའི་མཚོན་རྟགས་ཀྱི་སྟོན་ཚུལ་དེ་བསྡུར་ན་རྒྱུན་ལྡན་མིན་པའི་གནད་དོན་ཐག་གཅོད།"
     ],
     "གཞན།": [
       "Improved system security and stability"

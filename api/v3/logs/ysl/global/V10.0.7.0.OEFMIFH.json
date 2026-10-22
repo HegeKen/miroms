@@ -1,11 +1,11 @@
 {
   "logs_zh": {
     "系统": [
-      "修复 Android 安全补丁更新至2018-11-01"
+      "将已更新的 Android 安全补丁恢复到 2018 年 11 月 1 日的版本。"
     ],
     "锁屏、状态栏、通知栏": [
-      "修复 蓝牙耳机电量显示问题",
-      "修复 无卡时锁屏左上角运营商名称显示问题"
+      "在某些情况下，蓝牙耳机的电池状态无法被正确显示（即系统不会显示耳机的电池电量信息）。",
+      "在某些情况下，即使没有安装 SIM 卡，设备仍会显示运营商的名称。"
     ],
     "其他": [
       "新增 支持Google Lens"
@@ -13,11 +13,11 @@
   },
   "logs_en": {
     "System": [
-      "Restore Updated Android Security Patch to November 1, 2018"
+      "Fixed the issue with the Android security patch update to 2018-11-01."
     ],
     "Lockscreen, Status Bar, Notification Bar": [
-      "Restore Battery status of Bluetooth headsets wasn't displayed in some cases",
-      "Restore Carrier name was displayed with no SIM card installed in some cases"
+      "Fixed the issue with the battery level display on Bluetooth headphones.",
+      "Fixed the issue where the carrier name was displayed in the upper left corner of the lock screen when no card was inserted."
     ],
     "Other": [
       "Add Google Lens support"
@@ -28,11 +28,11 @@
       "修復 Android 安全補丁更新至2018-11-01"
     ],
     "解鎖畫面、狀態欄、通知欄": [
-      "修復 藍牙耳機電量顯示問題",
-      "修復 無卡時鎖屏左上角運營商名稱顯示問題"
+      "已修复蓝牙耳机电量显示不准确的问题。",
+      "修复了在没有手机卡的情况下，屏幕锁定时左上角无法显示运营商名称的问题。"
     ],
     "其他": [
-      "新增 支持Google Lens"
+      "新增了对 Google Lens 的支持功能。"
     ]
   },
   "logs_ja": {
@@ -41,7 +41,7 @@
     ],
     "ロック画面、ステータスバー、通知バー": [
       "Bluetoothイヤホンのバッテリー表示問題を修正",
-      "SIMカード未挿入時にロック画面左上にキャリア名が表示される問題を修正"
+      "カードがない状態でロック画面の左上隅に表示される通信事業者名の問題を修正しました。"
     ],
     "その他": [
       "Google Lens のサポートを追加"
@@ -49,11 +49,11 @@
   },
   "logs_ko": {
     "시스템": [
-      "Android 보안 패치를 2018-11-01로 업데이트하도록 수정"
+      "Android 보안 패치가 2018-11-01로 업데이트되었습니다. 이 문제는 이미 해결되었습니다."
     ],
     "잠금 화면, 상태 표시줄, 알림 표시줄": [
       "블루투스 이어폰 배터리 표시 문제 수정",
-      "SIM 카드가 없을 때 잠금 화면 왼쪽 상단에 통신사 이름이 표시되는 문제를 수정"
+      "카드가 없을 때 화면 잠금 상태에서 왼쪽 상단에 표시되는 통신사 이름의 문제를 수정했습니다."
     ],
     "기타": [
       "Google Lens 지원 추가"
@@ -64,11 +64,11 @@
       "Исправлено обновление патча безопасности Android до 2018-11-01"
     ],
     "Экран блокировки, строка состояния, шторка уведомлений": [
-      "Исправлена проблема с отображением заряда батареи Bluetooth-гарнитуры",
-      "Исправлена проблема отображения имени оператора в левом верхнем углу экрана блокировки без SIM-карты"
+      "Устранено ошибочное отображение уровня заряда батареи в Bluetooth-наушниках.",
+      "Устранено ошибочное отображение названия оператора связи в верхнем левом углу экрана при блокировке устройства в случае отсутствия SIM-карты."
     ],
     "Другое": [
-      "Добавлена поддержка Google Lens"
+      "Теперь поддерживается функция Google Lens."
     ]
   },
   "logs_uk": {
@@ -76,7 +76,7 @@
       "Виправлено оновлення патча безпеки Android до 2018-11-01"
     ],
     "Екран блокування, рядок стану, рядок сповіщень": [
-      "Виправлено проблему з відображенням заряду акумулятора Bluetooth-гарнітури",
+      "Виправлено проблему з відображенням рівня заряду батареї у блутуз-навушниках.",
       "Виправлено проблему відображення назви оператора у верхньому лівому куті екрана блокування без SIM-картки"
     ],
     "Інше": [
@@ -85,38 +85,38 @@
   },
   "logs_pl": {
     "System": [
-      "Naprawiono aktualizację poprawki zabezpieczeń Android do 2018-11-01"
+      "Poprawiono aktualizację bezpieczeństwa dla systemu Android na datę 2018-11-01."
     ],
     "Ekran blokady, pasek stanu, pasek powiadomień": [
       "Naprawiono problem z wyświetlaniem poziomu naładowania baterii słuchawek Bluetooth",
-      "Naprawiono problem wyświetlania nazwy operatora w lewym górnym rogu ekranu blokady bez karty SIM"
+      "Poprawiono problem z wyświetlaniem nazwy operatora w górnym lewym rogu ekranu blokującego się telefonu w przypadku braku karty."
     ],
-    "Inne": [
-      "Dodano obsługę Google Lens"
+    "Reszt": [
+      "Dodano wsparcie dla funkcji Google Lens."
     ]
   },
   "logs_de": {
     "System": [
-      "Android-Sicherheitspatch-Update auf 2018-11-01 korrigiert"
+      "Die Aktualisierung des Android-Sicherheitspatches auf den Stand vom 01.11.2018 wurde behoben."
     ],
     "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
-      "Problem mit der Batterieanzeige von Bluetooth-Headsets behoben",
-      "Problem behoben, bei dem der Netzbetreibername ohne SIM-Karte oben links auf dem Sperrbildschirm angezeigt wurde"
+      "Behebung des Problems mit der Anzeige der Akkulaufzeit bei Bluetooth-Kopfhörern",
+      "Behebung des Problems: Der Name des Mobilfunkanbieters wird im oberen linken Eck des Bildschirms beim Einschalten des Displays ohne vorhandene SIM-Karte angezeigt."
     ],
     "Sonstiges": [
-      "Google Lens-Unterstützung hinzugefügt"
+      "Neue Funktion: Unterstützung für Google Lens"
     ]
   },
   "logs_fr": {
     "Système": [
-      "Correction de la mise à jour du correctif de sécurité Android vers 2018-11-01"
+      "Correction de l'erreur concernant la mise à jour des patchs de sécurité pour Android (au 01/11/2018)."
     ],
     "Écran de verrouillage, barre d’état, barre de notifications": [
       "Correction du problème d'affichage de la batterie des écouteurs Bluetooth",
-      "Correction du problème d'affichage du nom de l'opérateur en haut à gauche de l'écran de verrouillage sans carte SIM"
+      "Correction du problème de visualisation du nom du fournisseur d’accès à Internet dans le coin supérieur gauche de l’écran de verrouillage lorsqu’il n’y a pas de carte SIM."
     ],
     "Autre": [
-      "Ajout de la prise en charge de Google Lens"
+      "Nouvelle fonctionnalité : prise en charge de Google Lens."
     ]
   },
   "logs_it": {
@@ -128,7 +128,7 @@
       "Risolto il problema di visualizzazione del nome dell'operatore in alto a sinistra nella schermata di blocco senza scheda SIM"
     ],
     "Altro": [
-      "Aggiunto il supporto a Google Lens"
+      "È stata aggiunta la nuova funzionalità di supporto per Google Lens."
     ]
   },
   "logs_es": {
@@ -137,7 +137,7 @@
     ],
     "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
       "Corregido problema de visualización de batería de auriculares Bluetooth",
-      "Se corrigió el problema de visualización del nombre del operador en la esquina superior izquierda de la pantalla de bloqueo sin tarjeta SIM"
+      "Se ha corregido el problema de que, cuando no hay tarjeta disponible, se muestra el nombre del operador en la esquina superior izquierda de la pantalla de bloqueo."
     ],
     "Otros": [
       "Añadido soporte para Google Lens"
@@ -160,7 +160,7 @@
       "Android güvenlik yamasının 2018-11-01'e güncellenmesi düzeltildi"
     ],
     "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
-      "Bluetooth kulaklık pil göstergesi sorunu düzeltildi",
+      "Bluetooth kulaklıklarındaki pil seviyesi gösterim sorununu giderdik.",
       "SIM kart yokken kilit ekranının sol üst köşesinde operatör adının görünmesi sorunu düzeltildi"
     ],
     "Diğer": [
@@ -173,7 +173,7 @@
     ],
     "Layar kunci, bilah status, bilah notifikasi": [
       "Memperbaiki masalah tampilan baterai headset Bluetooth",
-      "Memperbaiki masalah nama operator yang ditampilkan di pojok kiri atas layar kunci saat tidak ada kartu SIM"
+      "Diperbaiki masalah penampilan nama operator di pojok kiri atas layar saat layar terkunci, yang terjadi ketika tidak ada kartu SIM yang terpasang."
     ],
     "Lainnya": [
       "Menambahkan dukungan Google Lens"
@@ -181,11 +181,11 @@
   },
   "logs_vi": {
     "Hệ thống": [
-      "Đã sửa bản cập nhật vá bảo mật Android lên 2018-11-01"
+      "Đã sửa lỗi liên quan đến việc cập nhật bản vá bảo mật cho Android lên ngày 2018-11-01."
     ],
     "Màn hình khóa, thanh trạng thái, thanh thông báo": [
       "Đã sửa lỗi hiển thị pin tai nghe Bluetooth",
-      "Khắc phục sự cố hiển thị tên nhà mạng ở góc trên bên trái màn hình khóa khi không có thẻ SIM"
+      "Đã sửa lỗi hiển thị tên nhà mạng ở góc trên bên trái màn hình khi khóa màn hình trong trường hợp không có thẻ."
     ],
     "Khác": [
       "Thêm hỗ trợ Google Lens"
@@ -205,23 +205,23 @@
   },
   "logs_ar": {
     "النظام": [
-      "تم إصلاح تحديث تصحيح الأمان في Android إلى 2018-11-01"
+      "تم إصلاح تحديثات الأمان لنظام أندرويد لتصبح متوفرة في تاريخ 2018-11-01."
     ],
     "شاشة القفل، شريط الحالة، شريط الإشعارات": [
       "تم إصلاح مشكلة عرض بطارية سماعة البلوتوث",
-      "تم إصلاح مشكلة عرض اسم المشغل في الزاوية العلوية اليسرى لشاشة القفل عند عدم وجود بطاقة SIM"
+      "تم إصلاح المشكلة المتعلقة بعرض اسم مزود الخدمة في الزاوية العليا اليسرى من شاشة القفل عندما لا يكون هناك بطاقة مثبتة."
     ],
-    "أخرى": [
+    "آخرين": [
       "إضافة دعم Google Lens"
     ]
   },
   "logs_in": {
     "सिस्टम": [
-      "Android सुरक्षा पैच अपडेट को 2018-11-01 पर ठीक किया गया"
+      "एंड्रॉइड सुरक्षा पैच को 2018-11-01 तक अपडेट किया गया है।"
     ],
     "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
-      "ब्लूटूथ हेडसेट की बैटरी डिस्प्ले समस्या ठीक की गई",
-      "SIM कार्ड न होने पर लॉक स्क्रीन के ऊपर-बाएँ कोने में ऑपरेटर का नाम दिखने की समस्या ठीक की गई"
+      "ब्लूटूथ हेडसेट में बैटरी शेषता दिखाने संबंधी समस्या को ठीक कर दिया गया है.",
+      "समस्या को ठीक कर दिया गया है: जब कोई कार्ड नहीं होता, तो स्क्रीन लॉक होने पर स्क्रीन के ऊपरी बाएँ कोने में ऑपरेटर का नाम दिखाई देता है।"
     ],
     "अन्य": [
       "Google Lens समर्थन जोड़ा गया"

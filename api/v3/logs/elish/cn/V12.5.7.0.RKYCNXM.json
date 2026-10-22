@@ -25,7 +25,7 @@
       "优化 默认壁纸显示",
       "优化: 预设桌布显示"
     ],
-    "相册": [
+    "画廊": [
       "新增 键盘快捷键功能",
       "新增 截屏编辑的马克笔、钢笔、橡皮擦功能",
       "优化 截屏编辑页面的整体展示效果",
@@ -86,7 +86,7 @@
     "Themes": [
       "Optimization: Default wallpaper"
     ],
-    "Gallery": [
+    "Album": [
       "New: Keyboard shortcuts",
       "New: Marker, pen, and eraser for editing screenshots",
       "Optimization: Taking and editing screenshots is more convenient now"
@@ -164,91 +164,530 @@
     ]
   },
   "logs_ja": {
+    "ロック画面": [
+      "最適化: 指紋登録時のガイダンス"
+    ],
+    "テーマ": [
+      "最適化: デフォルト壁紙の表示"
+    ],
+    "アルバム": [
+      "新機能: キーボードショートカット",
+      "新機能: スクリーンショット編集用のマーカー、ペン、消しゴム",
+      "最適化: スクリーンショット編集ページの全体的な表示効果"
+    ],
+    "音楽": [
+      "新規: コントロールセンターに音楽再生コントロール機能を追加",
+      "新規: 「Xiaomi Miaobo」オーディオ連携機能。コントロールセンターや通知シェードから、音声を他のオーディオ機器にキャストできます",
+      "最適化: 横向き画面でのページ表示効果"
+    ],
+    "天気": [
+      "最適化: 都市管理のタップ領域の体験"
+    ],
+    "最近のタスク": [
+      "新機能: 最近タスクにフローティングウィンドウのアプリ入口を追加し、アプリをすばやく小ウィンドウで開けるようになりました"
+    ],
+    "カレンダー": [
+      "最適化: 月表示の表示効果",
+      "最適化: ビュー間の切り替えアニメーション",
+      "最適化: 予定作成の操作性"
+    ],
     "その他": [
       "システムのセキュリティと安定性の向上"
     ]
   },
   "logs_ko": {
+    "잠금화면": [
+      "최적화: 지문 등록 시 안내"
+    ],
+    "테마": [
+      "최적화: 기본 배경화면 표시"
+    ],
+    "앨범": [
+      "추가: 키보드 단축키 기능",
+      "새 기능: 스크린샷 편집용 마커, 펜, 지우개",
+      "최적화: 스크린샷 편집 페이지의 전체적인 표시 효과"
+    ],
+    "음악": [
+      "추가: 제어 센터에 음악 재생 컨트롤 기능 추가",
+      "새 기능: ‘Xiaomi Miaobo’ 오디오 연결 기능. 제어 센터 및 알림 창에서 오디오를 다른 오디오 기기로 전송할 수 있습니다",
+      "최적화: 가로 화면에서의 페이지 표시 효과"
+    ],
+    "날씨": [
+      "최적화: 도시 관리 클릭 영역 경험"
+    ],
+    "최근 작업": [
+      "새 기능: 최근 작업에 플로팅 창 앱 진입점이 추가되어 앱을 빠르게 작은 창으로 열 수 있습니다"
+    ],
+    "캘린더": [
+      "최적화: 월 보기 표시效果",
+      "최적화: 뷰 간 전환 애니메이션",
+      "최적화: 새 일정 만들기 경험"
+    ],
     "기타": [
       "시스템 보안 및 안정성 개선"
     ]
   },
   "logs_ru": {
+    "Экран блокировки": [
+      "Оптимизация: инструкции по добавлению отпечатка пальца"
+    ],
+    "Темы": [
+      "Оптимизация: отображение обоев по умолчанию"
+    ],
+    "Альбом": [
+      "Новое: функция сочетаний клавиш",
+      "Новое: маркер, ручка и ластик для редактирования снимков экрана",
+      "Оптимизация: общий вид страницы редактирования снимков экрана"
+    ],
+    "Музыка": [
+      "Новое: в Пункте управления добавлено управление воспроизведением музыки",
+      "Новое: функция аудиосвязи «Xiaomi Miaobo». В Центре управления и панели уведомлений можно транслировать аудио на другие аудиоустройства.",
+      "Оптимизация: отображение страниц в альбомной ориентации"
+    ],
+    "Погода": [
+      "Оптимизация: опыт области нажатия в управлении городами"
+    ],
+    "Недавнее": [
+      "Новое: в списке недавних задач добавлен вход для приложений в плавающем окне — приложения можно быстро открыть в небольшом окне"
+    ],
+    "Календарь": [
+      "Оптимизация: отображение месячного вида",
+      "Оптимизация: анимация переключения между видами",
+      "Оптимизация: создание нового события"
+    ],
     "Другое": [
       "Улучшение безопасности и стабильности системы"
     ]
   },
   "logs_uk": {
+    "Екран блокування": [
+      "Оптимізація: інструкції під час додавання відбитка пальця"
+    ],
+    "Теми": [
+      "Оптимізація: відображення стандартних шпалер"
+    ],
+    "Альбом": [
+      "Нове: функція комбінацій клавіш",
+      "Нове: маркер, ручка та гумка для редагування знімків екрана",
+      "Оптимізація: загальний вигляд сторінки редагування знімків екрана"
+    ],
+    "Музика": [
+      "Нове: у Центрі керування додано керування відтворенням музики",
+      "Нове: функція аудіозв’язку «Xiaomi Miaobo». У Центрі керування та панелі сповіщень можна транслювати аудіо на інші аудіопристрої.",
+      "Оптимізація: відображення сторінок у ландшафтному режимі"
+    ],
+    "Погода": [
+      "Оптимізація: досвід області натискання в управлінні містами"
+    ],
+    "Останні завдання": [
+      "Нове: у нещодавніх завданнях додано вхід для програм у плаваючому вікні — програми можна швидко відкрити в маленькому вікні"
+    ],
+    "Календар": [
+      "Оптимізація: відображення місячного вигляду",
+      "Оптимізація: анімація перемикання між видами",
+      "Оптимізація: створення нової події"
+    ],
     "Інше": [
       "Покращення безпеки та стабільності системи"
     ]
   },
   "logs_pl": {
-    "Inne": [
+    "Ekran blokady": [
+      "Optymalizacja: instrukcje podczas dodawania odcisku palca"
+    ],
+    "Motywy": [
+      "Optymalizacja: wyświetlanie domyślnej tapety"
+    ],
+    "Album": [
+      "Nowość: funkcja skrótów klawiszowych",
+      "Nowość: marker, pióro i gumka do edycji zrzutów ekranu",
+      "Optymalizacja: ogólny wygląd strony edycji zrzutów ekranu"
+    ],
+    "Muzyka": [
+      "Nowość: dodano sterowanie odtwarzaniem muzyki w Centrum sterowania",
+      "Nowość: funkcja łączności audio „Xiaomi Miaobo”. W Centrum sterowania i panelu powiadomień można przesyłać dźwięk do innych urządzeń audio.",
+      "Optymalizacja: wyświetlanie stron w trybie poziomym"
+    ],
+    "Pogoda": [
+      "Optymalizacja: doświadczenie obszaru kliknięcia w zarządzaniu miastami"
+    ],
+    "Ostatnie zadania": [
+      "Nowość: w ostatnich zadaniach dodano dostęp do aplikacji w oknie pływającym — aplikacje można szybko otworzyć w małym oknie"
+    ],
+    "Kalendarz": [
+      "Optymalizacja: wyświetlanie widoku miesiąca",
+      "Optymalizacja: animacje przełączania między widokami",
+      "Optymalizacja: tworzenie nowego wydarzenia"
+    ],
+    "Reszt": [
       "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
   "logs_de": {
+    "Sperrbildschirm": [
+      "Optimierung: Anweisungen zum Hinzufügen eines Fingerabdrucks"
+    ],
+    "Themen": [
+      "Optimierung: Anzeige des Standard-Hintergrundbilds"
+    ],
+    "Galerie": [
+      "Neu: Tastaturkürzel-Funktion",
+      "Neu: Marker, Stift und Radierer zum Bearbeiten von Screenshots",
+      "Optimierung: Gesamtdarstellung der Seite zum Bearbeiten von Screenshots"
+    ],
+    "Musik": [
+      "Neu: Musikwiedergabesteuerung im Kontrollzentrum hinzugefügt",
+      "Neu: Audioverbindung „Xiaomi Miaobo“. Im Kontrollzentrum und in der Benachrichtigungsleiste kann Audio auf andere Audiogeräte übertragen werden.",
+      "Optimierung: Seitenanzeige im Querformat"
+    ],
+    "Wetter": [
+      "Optimierung: Klickbereich-Erfahrung in der Stadtverwaltung"
+    ],
+    "Stift & Tastatur": [
+      "Neu: Teil-Screenshot",
+      "Neu: Einige System-Tastenkürzel",
+      "Optimierung: Stil der Einstellungsseite für Stift und Tastatur",
+      "Optimierung: Kopplungsvorgang für den Stift"
+    ],
+    "Letzte Aufgaben": [
+      "Neu: In den letzten Aufgaben gibt es jetzt einen Einstieg für Apps im schwebenden Fenster – Apps lassen sich schnell in einem kleinen Fenster öffnen"
+    ],
+    "Kalender": [
+      "Optimierung: Monatsansicht",
+      "Optimierung: Animationen beim Wechsel zwischen Ansichten",
+      "Optimierung: Erstellen eines neuen Termins"
+    ],
     "Sonstiges": [
       "Systemsicherheit und -stabilität verbessert"
     ]
   },
   "logs_fr": {
+    "Écran de verrouillage": [
+      "Optimisation : instructions lors de l'ajout d'une empreinte digitale"
+    ],
+    "Thèmes": [
+      "Optimisation : affichage du fond d'écran par défaut"
+    ],
+    "Album": [
+      "Nouveau : fonction de raccourcis clavier",
+      "Nouveau : marqueur, stylo et gomme pour modifier les captures d’écran",
+      "Optimisation : affichage global de la page de modification des captures d'écran"
+    ],
+    "Musique": [
+      "Nouveau : ajout du contrôle de lecture musicale dans le Centre de contrôle",
+      "Nouveau : fonction de liaison audio « Xiaomi Miaobo ». Depuis le Centre de contrôle et le volet des notifications, vous pouvez diffuser l’audio vers d’autres appareils audio.",
+      "Optimisation : affichage des pages en mode paysage"
+    ],
+    "Météo": [
+      "Optimisation : expérience de la zone de clic dans la gestion des villes"
+    ],
+    "Tâches récentes": [
+      "Nouveau : Dans les tâches récentes, ajout d'un accès aux applications en fenêtre flottante — les applications peuvent être ouvertes rapidement dans une petite fenêtre"
+    ],
+    "Calendrier": [
+      "Optimisation : affichage de la vue mensuelle",
+      "Optimisation : animations de commutation entre vues",
+      "Optimisation : création d'un nouvel événement"
+    ],
     "Autre": [
       "Sécurité et stabilité du système améliorées"
     ]
   },
   "logs_it": {
+    "Schermata di blocco": [
+      "Ottimizzazione: istruzioni per l'aggiunta di un'impronta digitale"
+    ],
+    "Temi": [
+      "Ottimizzazione: visualizzazione dello sfondo predefinito"
+    ],
+    "Album": [
+      "Novità: funzione scorciatoie da tastiera",
+      "Novità: pennarello, penna e gomma per modificare gli screenshot",
+      "Ottimizzazione: visualizzazione complessiva della pagina di modifica degli screenshot"
+    ],
+    "Musica": [
+      "Novità: aggiunto il controllo di riproduzione musicale nel Centro di controllo",
+      "Novità: funzione di connessione audio “Xiaomi Miaobo”. Dal Centro di controllo e dal pannello notifiche puoi trasmettere l’audio ad altri dispositivi audio.",
+      "Ottimizzazione: visualizzazione delle pagine in modalità orizzontale"
+    ],
+    "Meteo": [
+      "Ottimizzazione: esperienza dell'area di clic nella gestione delle città"
+    ],
+    "Recenti": [
+      "Novità: nelle attività recenti è stato aggiunto un accesso per le app in finestra flottante: le app possono essere aperte rapidamente in una piccola finestra"
+    ],
+    "Calendario": [
+      "Ottimizzazione: visualizzazione della vista mensile",
+      "Ottimizzazione: animazioni per il passaggio tra viste",
+      "Ottimizzazione: creazione di un nuovo evento"
+    ],
     "Altro": [
       "Maggiore sicurezza e stabilità di sistema"
     ]
   },
   "logs_es": {
+    "Pantalla de bloqueo": [
+      "Optimización: instrucciones al añadir una huella digital"
+    ],
+    "Temas": [
+      "Optimización: visualización del fondo de pantalla predeterminado"
+    ],
+    "Álbum de fotos": [
+      "Nuevo: función de atajos de teclado",
+      "Novedad: rotulador, lápiz y goma para editar capturas de pantalla",
+      "Optimización: visualización general de la página de edición de capturas de pantalla"
+    ],
+    "Música": [
+      "Nuevo: se añade el control de reproducción de música en el Centro de control",
+      "Nuevo: función de conexión de audio «Xiaomi Miaobo». Desde el Centro de control y la cortina de notificaciones, puedes transmitir audio a otros dispositivos de audio.",
+      "Optimización: visualización de páginas en modo horizontal"
+    ],
+    "Tiempo": [
+      "Optimización: experiencia del área de clic en la gestión de ciudades"
+    ],
+    "Recientes": [
+      "Novedad: en las tareas recientes se añade un acceso para apps en ventana flotante; las apps se pueden abrir rápidamente en una ventana pequeña"
+    ],
+    "Calendario": [
+      "Optimización: visualización de la vista mensual",
+      "Optimización: animaciones al cambiar entre vistas",
+      "Optimización: creación de un nuevo evento"
+    ],
     "Otros": [
       "Estabilidad y seguridad del sistema mejorada"
     ]
   },
   "logs_pt": {
+    "Tela de bloqueio": [
+      "Otimização: instruções ao adicionar uma impressão digital"
+    ],
+    "Temas": [
+      "Otimização: exibição do papel de parede padrão"
+    ],
+    "Álbum": [
+      "Novo: função de atalhos de teclado",
+      "Novo: marcador, caneta e borracha para editar capturas de tela",
+      "Otimização: exibição geral da página de edição de capturas de tela"
+    ],
+    "Música": [
+      "Novo: adicionado controle de reprodução de música na Central de Controle",
+      "Novo: função de conexão de áudio “Xiaomi Miaobo”. No Centro de controle e na cortina de notificações, você pode transmitir áudio para outros dispositivos de áudio.",
+      "Otimização: exibição de páginas em modo paisagem"
+    ],
+    "Clima": [
+      "Otimização: experiência da área de clique no gerenciamento de cidades"
+    ],
+    "Tarefas recentes": [
+      "Novidade: nas tarefas recentes foi adicionado um acesso para apps em janela flutuante — as apps podem ser abertas rapidamente numa janela pequena"
+    ],
+    "Agenda": [
+      "Otimização: exibição da visão mensal",
+      "Otimização: animações ao alternar entre visualizações",
+      "Otimização: criação de um novo evento"
+    ],
     "Outros": [
       "Segurança e estabilidade do sistema aprimoradas"
     ]
   },
   "logs_tr": {
+    "Kilit ekranı": [
+      "Optimizasyon: parmak izi ekleme yönergeleri"
+    ],
+    "Temalar": [
+      "Optimizasyon: varsayılan duvar kağıdı görünümü"
+    ],
+    "albüm": [
+      "Yeni: Klavye kısayolları özelliği",
+      "Yeni: Ekran görüntülerini düzenlemek için işaretleyici, kalem ve silgi",
+      "Optimizasyon: ekran görüntüsü düzenleme sayfasının genel görünümü"
+    ],
+    "Müzik": [
+      "Yeni: Kontrol Merkezi'ne müzik oynatma kontrolü eklendi",
+      "Yeni: “Xiaomi Miaobo” ses bağlantı özelliği. Kontrol merkezi ve bildirim gölgesinden sesi diğer ses cihazlarına aktarabilirsiniz.",
+      "Optimizasyon: yatay modda sayfa görünümü"
+    ],
+    "Hava durumu": [
+      "Optimizasyon: şehir yönetiminde tıklama alanı deneyimi"
+    ],
+    "Son kullanılanlar": [
+      "Yeni: Son görevlerde yüzen pencere uygulama girişi eklendi; uygulamalar küçük bir pencerede hızlıca açılabilir"
+    ],
+    "Takvim": [
+      "Optimizasyon: ay görünümü görüntüleme",
+      "Optimizasyon: Görünümler arasında geçiş animasyonları",
+      "İyileştirme: yeni etkinlik oluşturma"
+    ],
     "Diğer": [
       "Sistem güvenliği ve kararlılığı geliştirildi"
     ]
   },
   "logs_id": {
+    "Layar kunci": [
+      "Optimasi: petunjuk saat menambahkan sidik jari"
+    ],
+    "Tema": [
+      "Optimasi: tampilan wallpaper default"
+    ],
+    "Album": [
+      "Baru: fitur pintasan keyboard",
+      "Baru: spidol, pena, dan penghapus untuk mengedit tangkapan layar",
+      "Optimalisasi: tampilan keseluruhan halaman edit tangkapan layar"
+    ],
+    "Musik": [
+      "Baru: kontrol pemutaran musik ditambahkan di Pusat Kontrol",
+      "Baru: Fitur konektivitas audio “Xiaomi Miaobo”. Di Pusat kontrol dan panel notifikasi, Anda dapat mentransmisikan audio ke perangkat audio lain.",
+      "Optimasi: tampilan halaman dalam mode lanskap"
+    ],
+    "Cuaca": [
+      "Optimasi: pengalaman area klik di manajemen kota"
+    ],
+    "Tugas Terbaru": [
+      "Baru: Di tugas terkini ditambahkan entri aplikasi jendela mengambang, aplikasi dapat dibuka cepat di jendela kecil"
+    ],
     "Lainnya": [
       "Keamanan dan stabilitas sistem ditingkatkan"
     ]
   },
   "logs_vi": {
+    "Màn hình khóa": [
+      "Tối ưu hóa: hướng dẫn khi thêm dấu vân tay"
+    ],
+    "Chủ đề": [
+      "Tối ưu hóa: hiển thị hình nền mặc định"
+    ],
+    "Album": [
+      "Mới: tính năng phím tắt",
+      "Mới: bút dạ, bút mực và tẩy để chỉnh sửa ảnh chụp màn hình",
+      "Tối ưu hóa: hiển thị tổng thể của trang chỉnh sửa ảnh chụp màn hình"
+    ],
+    "Âm nhạc": [
+      "Mới: Thêm điều khiển phát nhạc trong Trung tâm điều khiển",
+      "Mới: Tính năng kết nối âm thanh “Xiaomi Miaobo”. Trong Trung tâm điều khiển và bảng thông báo, bạn có thể truyền âm thanh đến các thiết bị âm thanh khác.",
+      "Tối ưu hóa: hiển thị trang ở chế độ ngang"
+    ],
+    "Thời tiết": [
+      "Tối ưu hóa: trải nghiệm vùng nhấp trong quản lý thành phố"
+    ],
+    "Tác vụ gần đây": [
+      "Mới: Trong tác vụ gần đây đã thêm lối vào ứng dụng cửa sổ nổi, hỗ trợ mở nhanh ứng dụng trong cửa sổ nhỏ"
+    ],
+    "Lịch": [
+      "Tối ưu hóa: hiển thị chế độ xem tháng",
+      "Tối ưu hóa: hiệu ứng chuyển đổi giữa các chế độ xem",
+      "Tối ưu hóa: trải nghiệm tạo sự kiện mới"
+    ],
     "Khác": [
       "Cải thiện tính ổn định và bảo mật hệ thống"
     ]
   },
   "logs_th": {
+    "ล็อคหน้าจอ": [
+      "การเพิ่มประสิทธิภาพ: คำแนะนำในการเพิ่มลายนิ้วมือ"
+    ],
+    "ธีม": [
+      "การปรับให้เหมาะสม: การแสดงวอลเปเปอร์เริ่มต้น"
+    ],
+    "คลังภาพ": [
+      "ใหม่: ฟีเจอร์คีย์ลัด",
+      "ใหม่: ปากกามาร์กเกอร์ ปากกา และยางลบสำหรับแก้ไขภาพหน้าจอ",
+      "การปรับให้เหมาะสม: การแสดงผลโดยรวมของหน้าจอแก้ไขภาพหน้าจอ"
+    ],
+    "เพลง": [
+      "ใหม่: เพิ่มการควบคุมการเล่นเพลงในศูนย์ควบคุม",
+      "ใหม่: ฟีเจอร์เชื่อมต่อเสียง “Xiaomi Miaobo” ในศูนย์ควบคุมและแผงการแจ้งเตือน คุณสามารถส่งเสียงไปยังอุปกรณ์เสียงอื่นได้",
+      "การเพิ่มประสิทธิภาพ: การแสดงผลหน้าในโหมดแนวนอน"
+    ],
+    "สภาพอากาศ": [
+      "การเพิ่มประสิทธิภาพ: ประสบการณ์พื้นที่คลิกในการจัดการเมือง"
+    ],
+    "งานล่าสุด": [
+      "ใหม่: เพิ่มทางเข้าสู่แอปในหน้าต่างลอยในงานล่าสุด ช่วยให้เปิดแอปในหน้าต่างเล็กได้อย่างรวดเร็ว"
+    ],
+    "ปฏิทิน": [
+      "การเพิ่มประสิทธิภาพ: การแสดงผลมุมมองรายเดือน",
+      "การปรับให้เหมาะสม: แอนิเมชันการสลับระหว่างมุมมอง",
+      "ปรับให้เหมาะสม: การสร้างกิจกรรมใหม่"
+    ],
     "อื่นๆ": [
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
     ]
   },
   "logs_ar": {
-    "أخرى": [
+    "شاشة القفل": [
+      "التحسين: إرشادات عند إضافة بصمة إصبع"
+    ],
+    "السمات": [
+      "التحسين: عرض الخلفية الافتراضية"
+    ],
+    "ألبوم الصور": [
+      "جديد: ميزة اختصارات لوحة المفاتيح",
+      "جديد: قلم تحديد وقلم وممحاة لتحرير لقطات الشاشة",
+      "تحسين: العرض العام لصفحة تحرير لقطات الشاشة"
+    ],
+    "الموسيقى": [
+      "جديد: إضافة التحكم في تشغيل الموسيقى إلى مركز التحكم",
+      "جديد: ميزة ربط الصوت “Xiaomi Miaobo”. في مركز التحكم ولوحة الإشعارات، يمكنك بث الصوت إلى أجهزة صوتية أخرى.",
+      "تحسين: عرض الصفحة في الوضع الأفقي"
+    ],
+    "الطقس": [
+      "تحسين: تجربة منطقة النقر في إدارة المدن"
+    ],
+    "المهام الأخيرة": [
+      "جديد: تمت إضافة مدخل تطبيقات النافذة العائمة في المهام الأخيرة، مما يتيح فتح التطبيقات بسرعة في نافذة صغيرة"
+    ],
+    "التقويم": [
+      "التحسين: عرض طريقة عرض الشهر",
+      "التحسين: رسوم متحركة للتبديل بين طرق العرض",
+      "تحسين: تجربة إنشاء حدث جديد"
+    ],
+    "آخرين": [
       "تحسين أمن واستقرار النظام"
     ]
   },
   "logs_in": {
+    "लॉक स्क्रीन": [
+      "अनुकूलन: फ़िंगरप्रिंट जोड़ते समय निर्देश"
+    ],
+    "थीम्स": [
+      "अनुकूलन: डिफ़ॉल्ट वॉलपेपर प्रदर्शन"
+    ],
+    "अल्बम": [
+      "नया: कीबोर्ड शॉर्टकट सुविधा",
+      "नया: स्क्रीनशॉट संपादित करने के लिए मार्कर, पेन और इरेज़र",
+      "अनुकूलन: स्क्रीनशॉट संपादन पृष्ठ का समग्र प्रदर्शन"
+    ],
+    "संगीत": [
+      "नया: नियंत्रण केंद्र में संगीत प्लेबैक नियंत्रण जोड़ा गया",
+      "नया: “Xiaomi Miaobo” ऑडियो कनेक्टिविटी सुविधा। कंट्रोल सेंटर और नोटिफिकेशन शेड में, आप ऑडियो को अन्य ऑडियो डिवाइस पर कास्ट कर सकते हैं।",
+      "अनुकूलन: लैंडस्केप मोड में पृष्ठ प्रदर्शन"
+    ],
+    "मौसम": [
+      "अनुकूलन: शहर प्रबंधन में क्लिक क्षेत्र अनुभव"
+    ],
+    "हाल के कार्य": [
+      "नया: हाल के कार्यों में फ़्लोटिंग विंडो ऐप प्रवेश जोड़ा गया, ऐप्स को छोटी विंडो में जल्दी खोलने की सुविधा"
+    ],
+    "कैलेंडर": [
+      "अनुकूलन: माह दृश्य प्रदर्शन",
+      "अनुकूलन: दृश्यों के बीच स्विच करने के लिए एनिमेशन",
+      "अनुकूलन: नया इवेंट बनाने का अनुभव"
+    ],
     "अन्य": [
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
     ]
   },
   "logs_ug": {
+    "Lock screen": [
+      "ياخشىلاش: بارماق ئىزى قوشۇشتىكى يېتەكچى چۈشەندۈرۈش"
+    ],
     "باشقىلىرى": [
       "Improved system security and stability"
     ]
   },
   "logs_bo": {
+    "Lock screen": [
+      "ལེགས་སུ་གཏོང་བ: མཛུབ་མོའི་རྗེས་ཕབ་སྐབས་ཀྱི་ལམ་སྟོན"
+    ],
     "གཞན།": [
       "Improved system security and stability"
     ]

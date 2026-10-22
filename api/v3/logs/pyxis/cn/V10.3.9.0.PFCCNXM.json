@@ -24,19 +24,29 @@
     ]
   },
   "logs_en": {
+    "System": [
+      "Optimization: Fixed the issue of fingerprint unlock animation lag after enabling anti-flicker mode",
+      "Optimized occasional touch unresponsiveness during Honor of Kings gameplay",
+      "Fixed the issue where the fingerprint icon could not light up when the system was asleep",
+      "Optimize occasional touch input loss during Honor of Kings gameplay"
+    ],
     "Lockscreen, Status Bar, Notification Bar": [
       "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen",
       "Fix: Fingerprint icon didn't always appear on the Lock screen",
       "Fix: Fingerprint icon didn't always disappear after unlocking"
     ],
     "Game speed booster": [
-      "Fix: Hands-free call duration wasn't displayed correctly in Game Turbo"
+      "Fix: Hands-free call duration wasn't displayed correctly in Game Turbo",
+      "Fixed an issue where the call duration was displayed incorrectly when answering a hands-free call while gaming."
     ],
-    "Other improvements and optimizations": [
+    "Other optimizations and adjustments": [
       "Fix: Fingerprint unlock didn't respond when the device was in the sleep mode"
     ],
     "Lockscreen, status bar, Notification shade": [
       "New: Use your fingerprint to open Home screen once you unlocked the device using face data and stayed on the Lock screen"
+    ],
+    "Other improvements and optimizations": [
+      "Fix: Fingerprint unlock didn't respond when the device was in the sleep mode"
     ],
     "Other": [
       "Improved system security and stability"
@@ -46,6 +56,12 @@
     ]
   },
   "logs_zh_tw": {
+    "系統": [
+      "優化 優化開啟防閃爍模式後指紋解鎖動畫卡頓的問題",
+      "優化 王者榮耀遊戲過程中偶現斷觸的問題",
+      "修復 系統休眠時無法點亮指紋圖標問題",
+      "優化 王者榮耀遊戲過程中偶現斷觸問題"
+    ],
     "解鎖畫面、狀態欄、通知欄": [
       "新增 人臉解鎖成功並停留在鎖屏上時，可通過指紋進入桌面的功能",
       "修復 偶而發生鎖屏不顯示指紋圖示的問題",
@@ -59,12 +75,15 @@
     ],
     "其他": [
       "Improved system security and stability"
-    ],
-    "系統": [
-      "優化 王者榮耀遊戲過程中偶現斷觸問題"
     ]
   },
   "logs_ja": {
+    "システム": [
+      "最適化 ちらつき防止モードを有効にした後の指紋認証解除アニメーションのカクつき問題を修正",
+      "Honor of Kings プレイ中に時々発生するタッチ反応不良を最適化",
+      "システムスリープ時に指紋アイコンが点灯できない問題を修正",
+      "『Honor of Kings』プレイ中のタッチ操作が時々反応しない問題を最適化"
+    ],
     "ロック画面、ステータスバー、通知バー": [
       "新機能: 顔認証でロック解除後、ロック画面に留まっている場合に指紋でホーム画面へ進める機能",
       "修正: ロック画面で指紋アイコンが表示されないことがある問題",
@@ -72,6 +91,9 @@
     ],
     "ゲーム加速": [
       "修正: Game Turbo でハンズフリー通話の時間が正しく表示されない問題"
+    ],
+    "その他の改善と最適化": [
+      "スリープモード時に指紋認証によるロック解除が応答しない問題を修正"
     ],
     "ロック画面、ステータスバー、通知シェード": [
       "新機能: 顔認証でロック解除後、ロック画面に留まっている場合に指紋でホーム画面へ進める機能"
@@ -87,6 +109,12 @@
     ]
   },
   "logs_ko": {
+    "시스템": [
+      "최적화 깜박임 방지 모드를 켠 후 지문 잠금 해제 애니메이션 끊김 문제 수정",
+      "Honor of Kings 플레이 중 간헐적으로 발생하는 터치 끊김 문제를 최적화했습니다",
+      "시스템 절전 모드에서 지문 아이콘이 표시되지 않는 문제 수정",
+      "Honor of Kings 플레이 중 간헐적으로 터치가 끊기는 문제 최적화"
+    ],
     "잠금 화면, 상태 표시줄, 알림 표시줄": [
       "새 기능: 얼굴 인식으로 잠금 해제 후 잠금 화면에 머무를 때 지문으로 홈 화면에 진입하는 기능",
       "수정: 잠금화면에서 지문 아이콘이 표시되지 않는 문제",
@@ -95,8 +123,14 @@
     "게임 가속": [
       "수정: Game Turbo에서 핸즈프리 통화 시간이 올바르게 표시되지 않던 문제"
     ],
+    "기타 개선 및 최적화": [
+      "수면 모드에서 지문 잠금 해제가 응답하지 않던 문제를 수정했습니다."
+    ],
     "잠금화면, 상태 바, 알림 바": [
       "새 기능: 얼굴 인식으로 잠금 해제 후 잠금 화면에 머무를 때 지문으로 홈 화면에 진입하는 기능"
+    ],
+    "기타 향상된 항목 및 최적화 항목": [
+      "수면 모드에서 지문 잠금 해제가 응답하지 않던 문제를 수정했습니다."
     ],
     "기타": [
       "시스템 보안 및 안정성 개선"
@@ -109,6 +143,12 @@
     ]
   },
   "logs_ru": {
+    "Система": [
+      "Оптимизация: Исправлена проблема с подтормаживанием анимации разблокировки отпечатком после включения режима защиты от мерцания",
+      "Оптимизирована проблема с периодическими сбоями сенсорного управления во время игры в Honor of Kings",
+      "Исправлена проблема, из-за которой значок отпечатка пальца не отображался при спящем режиме системы",
+      "Оптимизирована проблема с периодическим пропаданием отклика сенсора во время игры в Honor of Kings"
+    ],
     "Экран блокировки, строка состояния, шторка уведомлений": [
       "Новое: Используйте отпечаток пальца, чтобы перейти на рабочий стол после того, как вы разблокировали устройство при помощи данных лица и остались на экране блокировки",
       "Исправлено: Значок отпечатка пальца не всегда отображался на экране блокировки",
@@ -116,6 +156,9 @@
     ],
     "Ускорение приложений": [
       "Исправлено: Длительность вызовов не отображалась в Ускорении игр"
+    ],
+    "Другие оптимизации и настройки": [
+      "Исправлено: Разблокировка по отпечатку пальца не работала, когда устройство находилось в спящем режиме"
     ],
     "Оптимизация и другие функции": [
       "Исправлено: Разблокировка по отпечатку пальца не работала, когда устройство находилось в спящем режиме"
@@ -128,6 +171,12 @@
     ]
   },
   "logs_uk": {
+    "Система": [
+      "Оптимізація: Виправлено проблему з підгальмовуванням анімації розблокування відбитком після ввімкнення режиму захисту від мерехтіння",
+      "Оптимізовано проблему з періодичними збоями сенсорного керування під час гри в Honor of Kings",
+      "Виправлено проблему, через яку значок відбитка пальця не відображався, коли система перебувала в режимі сну",
+      "Оптимізовано проблему з періодичним зникненням відгуку сенсора під час гри в Honor of Kings"
+    ],
     "Екран блокування, рядок стану, рядок сповіщень": [
       "Нове: Перехід на головний екран відбитком пальця, якщо пристрій розблоковано обличчям і залишено на екрані блокування",
       "Виправлено: значок відбитка пальця не завжди відображався на екрані блокування",
@@ -137,15 +186,27 @@
       "Виправлено: Тривалість гучномовного виклику неправильно відображалася в Game Turbo",
       "Fix: Hands-free call duration wasn't displayed correctly in Game Turbo"
     ],
+    "Інші оптимізації та налаштування": [
+      "Виправлено проблему, коли розблокування відбитком пальця не реагувало в режимі сну."
+    ],
     "Екран блокування, рядок стану, панель сповіщень": [
       "Нове: Перехід на головний екран відбитком пальця, якщо пристрій розблоковано обличчям і залишено на екрані блокування",
       "Нове: Використовувати відбиток пальця для переходу на головний екран після успішного розблокування обличчям із затримкою на екрані блокування"
+    ],
+    "Оптимізація та інші покращення": [
+      "Виправлено проблему, коли розблокування відбитком пальця не реагувало в режимі сну."
     ],
     "Інше": [
       "Покращення безпеки та стабільності системи"
     ]
   },
   "logs_pl": {
+    "System": [
+      "Optymalizacja: Naprawiono problem zacinania się animacji odblokowywania odciskiem palca po włączeniu trybu zapobiegania migotaniu",
+      "Zoptymalizowano problem sporadycznych awarii dotyku podczas gry w Honor of Kings",
+      "Naprawiono problem z brakiem wyświetlania ikony odcisku palca, gdy system jest w uśpieniu",
+      "Zoptymalizowano problem sporadycznej utraty reakcji dotyku podczas gry w Honor of Kings"
+    ],
     "Ekran blokady, pasek stanu, pasek powiadomień": [
       "Nowość: Możliwość przejścia do ekranu głównego odciskiem palca po odblokowaniu twarzą i pozostaniu na ekranie blokady",
       "Naprawiono: Ikona odcisku palca nie zawsze pojawia się na zablokowanym ekranie",
@@ -155,10 +216,16 @@
       "Naprawiono: Czas trwania połączenia głośnomówiącego był nieprawidłowo wyświetlany w Game Turbo",
       "Naprawiono: Czas trwania połączenia w trybie głośnomówiącym nie był wyświetlany prawidłowo w aplikacji Game Turbo"
     ],
+    "Inne optymalizacje i modyfikacje": [
+      "Naprawiono problem z brakiem reakcji odblokowywania odciskiem palca w trybie uśpienia."
+    ],
     "Ekran blokady, pasek powiadomień,panel powiadomień": [
       "Nowość: Możliwość przejścia do ekranu głównego odciskiem palca po odblokowaniu twarzą i pozostaniu na ekranie blokady"
     ],
-    "Inne": [
+    "Inne ulepszenia i optymalizacje": [
+      "Naprawiono problem z brakiem reakcji odblokowywania odciskiem palca w trybie uśpienia."
+    ],
+    "Reszt": [
       "Większe bezpieczeństwo i stabilność systemu"
     ],
     "Ekran blokady, pasek stanu, panel powiadomień": [
@@ -166,6 +233,12 @@
     ]
   },
   "logs_de": {
+    "System": [
+      "Optimierung: Das Ruckeln der Animation zur Fingerabdruck-Entsperrung nach Aktivierung des Flimmern-Schutzmodus wurde behoben",
+      "Problem mit gelegentlichen Touch-Aussetzern während Honor of Kings wurde optimiert",
+      "Problem behoben, bei dem das Fingerabdruck-Symbol im Systemruhezustand nicht angezeigt wurde",
+      "Gelegentliche Touch-Aussetzer während Honor of Kings optimiert"
+    ],
     "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
       "Neu: Nach erfolgreicher Gesichtserkennung auf dem Sperrbildschirm per Fingerabdruck zum Startbildschirm wechseln",
       "Behoben: Fingerabdrucksymbol wurde auf dem Sperrbildschirm nicht immer angezeigt",
@@ -175,8 +248,14 @@
       "Behoben: Die Freisprech-Anrufdauer wurde in Game Turbo nicht korrekt angezeigt",
       "Behoben: Die Dauer von Freisprechanrufen wurde in Game Turbo nicht korrekt angezeigt"
     ],
+    "Weitere Optimierungen und Anpassungen": [
+      "Fehler behoben: Fingerabdruck-Entsperrung reagierte im Ruhemodus nicht."
+    ],
     "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
       "Neu: Nach erfolgreicher Gesichtserkennung auf dem Sperrbildschirm per Fingerabdruck zum Startbildschirm wechseln"
+    ],
+    "Weitere Verbesserungen und Optimierungen": [
+      "Fehler behoben: Fingerabdruck-Entsperrung reagierte im Ruhemodus nicht."
     ],
     "Sonstiges": [
       "Systemsicherheit und -stabilität verbessert"
@@ -186,6 +265,12 @@
     ]
   },
   "logs_fr": {
+    "Système": [
+      "Optimisation : Correction du problème de saccade de l'animation de déverrouillage par empreinte après activation du mode anti-scintillement",
+      "Optimisation du problème de pertes occasionnelles de réactivité tactile pendant une partie de Honor of Kings",
+      "Correction du problème où l'icône d'empreinte digitale ne s'affichait pas lorsque le système était en veille",
+      "Optimisation des pertes occasionnelles de tactile pendant une partie de Honor of Kings"
+    ],
     "Écran de verrouillage, barre d’état, barre de notifications": [
       "Nouveau Utilisez votre empreinte digitale pour ouvrir l'écran d'accueil une fois que vous avez déverrouillé l'appareil à l'aide des données du visage et que vous êtes resté sur l'écran de verrouillage",
       "Réparé: L'îcône des empreintes digitales n'apparaissait pas toujours sur l'écran vérrouillé",
@@ -194,11 +279,14 @@
     "Booster de vitesse de jeu": [
       "Réparé La durée des appels mains libres n'était pas affichée correctement dans Game Turbo"
     ],
-    "Autres améliorations et optimisations": [
+    "D’autres optimisations et ajustements": [
       "Réparé Le déverrouillage avec les empreintes digitales ne fonctionne pas lorsque l'appareil est en mode de veille prolongée"
     ],
     "Écran de verrouillage, Barre d'état, Panneau de notification": [
       "Nouveau Utilisez votre empreinte digitale pour ouvrir l'écran d'accueil une fois que vous avez déverrouillé l'appareil à l'aide des données du visage et que vous êtes resté sur l'écran de verrouillage"
+    ],
+    "Autres améliorations et optimisations": [
+      "Réparé Le déverrouillage avec les empreintes digitales ne fonctionne pas lorsque l'appareil est en mode de veille prolongée"
     ],
     "Autre": [
       "Sécurité et stabilité du système améliorées"
@@ -211,6 +299,12 @@
     ]
   },
   "logs_it": {
+    "Sistema": [
+      "Ottimizzazione: Risolto il problema di scatti dell'animazione di sblocco con impronta dopo l'attivazione della modalità anti-sfarfallio",
+      "Ottimizzato il problema di intermittenti mancate risposte al tocco durante Honor of Kings",
+      "Risolto il problema per cui l'icona dell'impronta digitale non veniva visualizzata quando il sistema era in sospensione",
+      "Ottimizzata la perdita occasionale del touch durante Honor of Kings"
+    ],
     "Schermata di blocco, barra di stato, barra delle notifiche": [
       "Nuovo: Accedi alla schermata Home usando l'impronta digitale dopo aver sbloccato il dispositivo con i dati del volto restando sulla schermata di blocco.",
       "Risolto: L'icona dell'impronta digitale non veniva sempre visualizzata sulla schermata di blocco",
@@ -219,11 +313,14 @@
     "Turbo Videogiochi": [
       "Risolto: La durata delle chiamate in vivavoce non era visualizzata correttamente in Turbo Videogiochi"
     ],
-    "Altri miglioramenti e ottimizzazioni": [
+    "Altre ottimizzazioni e modifiche": [
       "Risolto: Lo sblocco con impronta non funzionava quando il dispositivo era in modalità sospensione"
     ],
     "Schermata di blocco, barra di stato, area delle notifiche": [
       "Nuovo: Accedi alla schermata Home usando l'impronta digitale dopo aver sbloccato il dispositivo con i dati del volto restando sulla schermata di blocco."
+    ],
+    "Altri miglioramenti e ottimizzazioni": [
+      "Risolto: Lo sblocco con impronta non funzionava quando il dispositivo era in modalità sospensione"
     ],
     "Altro": [
       "Maggiore sicurezza e stabilità di sistema"
@@ -233,6 +330,12 @@
     ]
   },
   "logs_es": {
+    "Sistema": [
+      "Optimización: Se corrige el problema de fluidez de la animación de desbloqueo con huella tras activar el modo antiparpadeo",
+      "Optimizado el problema de fallos táctiles ocasionales durante la partida en Honor of Kings",
+      "Se corrigió el problema por el que el icono de huella digital no se mostraba cuando el sistema estaba suspendido",
+      "Optimizado el fallo ocasional de respuesta táctil durante Honor of Kings"
+    ],
     "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
       "Nuevo: Usa tu huella dactilar para abrir la Pantalla de inicio después de haber desbloqueado el dispositivo usando tus datos faciales y haber permanecido en la Pantalla de bloqueo",
       "Reparado: El icono de la huella dactilar no siempre aparecía en la Pantalla de bloqueo",
@@ -240,6 +343,9 @@
     ],
     "Acelerador de juegos": [
       "Reparado: La duración de las llamadas en manos libres no se mostraba correctamente en Game Turbo"
+    ],
+    "Otras optimizaciones y ajustes": [
+      "Reparado: El desbloqueo con huella dactilar no funcionaba en el Modo suspensión"
     ],
     "Otras mejoras y optimizaciones": [
       "Reparado: El desbloqueo con huella dactilar no funcionaba en el Modo suspensión"
@@ -252,6 +358,12 @@
     ]
   },
   "logs_pt": {
+    "Sistema": [
+      "Otimização: Corrigido o problema de lentidão na animação de desbloqueio por impressão digital após ativar o modo anti-cintilação",
+      "Otimizado o problema de falhas ocasionais de toque durante o jogo Honor of Kings",
+      "Corrigido o problema em que o ícone de impressão digital não era exibido quando o sistema estava suspenso",
+      "Otimizada a perda ocasional de resposta ao toque durante Honor of Kings"
+    ],
     "Tela de bloqueio, barra de status, barra de notificações": [
       "Novo Use sua impressão digital para abrir a Tela inicial quando você desbloquear o dispositivo usando o desbloqueio facial e ficar na Tela de bloqueio",
       "Correção: O ícone de impressão digital não aparecia na Tela de bloqueio",
@@ -261,11 +373,14 @@
       "Correção A duração para chamadas hands-free não era exibida corretamente no Game Turbo",
       "Correção: A duração para chamadas hands-free não era exibida corretamente no Game Turbo"
     ],
-    "Outras melhorias e otimizações": [
+    "Outras otimizações e ajustes": [
       "Correção O desbloqueio por impressão digital não respondia corretamente com o dispositivo em suspensão"
     ],
     "Tela de bloqueio, Barra de status e Área de notificações": [
       "Novo Use sua impressão digital para abrir a Tela inicial quando você desbloquear o dispositivo usando o desbloqueio facial e ficar na Tela de bloqueio"
+    ],
+    "Outras melhorias e otimizações": [
+      "Correção O desbloqueio por impressão digital não respondia corretamente com o dispositivo em suspensão"
     ],
     "Outros": [
       "Segurança e estabilidade do sistema aprimoradas"
@@ -275,6 +390,12 @@
     ]
   },
   "logs_tr": {
+    "Sistem": [
+      "Optimizasyon: Titreşim önleme modu açıldıktan sonra parmak izi kilit açma animasyonundaki takılma sorunu giderildi",
+      "Honor of Kings oynarken ara sıra oluşan dokunmatik tepkisizlik sorunu optimize edildi",
+      "Sistem uyku modundayken parmak izi simgesinin görüntülenememesi sorunu giderildi",
+      "Honor of Kings oynarken ara sıra oluşan dokunma tepkisi kaybı sorunu iyileştirildi"
+    ],
     "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
       "Yeni: Cihazın kilidini yüz verilerini kullanarak açtıktan ve Kilit ekranında kaldıktan sonra Ana ekranı açmak için parmak izinizi kullanın",
       "Onarım: Kilit ekranında parmak izi simgesinin belirmeme sorunu giderildi",
@@ -283,7 +404,7 @@
     "Oyun hız artırıcı": [
       "Onarım: Eller serbest arama süresi, Game Turbo'da doğru gösterilmedi"
     ],
-    "Diğer iyileştirmeler ve optimizasyonlar": [
+    "Diğer optimizasyonlar ve ayarlamalar": [
       "Onarım: Cihaz uyku modundayken parmak izi ile kilit açmaya yanıt vermedi"
     ],
     "Diğer geliştirmeler ve optimizasyonlar": [
@@ -297,6 +418,11 @@
     ]
   },
   "logs_id": {
+    "Sistem": [
+      "Optimasi: Memperbaiki masalah animasi buka kunci sidik jari yang tersendat setelah mengaktifkan mode anti-kedip",
+      "Mengoptimalkan masalah sentuhan yang terkadang tidak merespons saat bermain Honor of Kings",
+      "Memperbaiki masalah ikon sidik jari tidak muncul saat sistem tertidur"
+    ],
     "Layar kunci, bilah status, bilah notifikasi": [
       "Baru Menggunakan sidik jari untuk membuka Layar utama saat Anda membuka kunci perangkat dengan data wajah dan tetap berada di Layar kunci",
       "Perbaikan: Ikon sidik jari tidak selalu muncul pada Layar kunci",
@@ -305,8 +431,14 @@
     "Peningkat kecepatan permainan": [
       "Perbaikan Durasi panggilan hands-free tidak ditampilkan dengan benar di Game Turbo"
     ],
+    "Optimisasi dan penyesuaian lainnya": [
+      "Perbaikan: Pembukaan kunci sidik jari tidak merespons saat perangkat dalam mode tidur."
+    ],
     "Layar kunci, bar status, layar notifikasi": [
       "Baru Menggunakan sidik jari untuk membuka Layar utama saat Anda membuka kunci perangkat dengan data wajah dan tetap berada di Layar kunci"
+    ],
+    "Peningkatan dan optimalisasi lainnya": [
+      "Perbaikan: Pembukaan kunci sidik jari tidak merespons saat perangkat dalam mode tidur."
     ],
     "Lainnya": [
       "Keamanan dan stabilitas sistem ditingkatkan"
@@ -319,6 +451,12 @@
     ]
   },
   "logs_vi": {
+    "Hệ thống": [
+      "Tối ưu hóa: Đã khắc phục sự cố giật lag của hoạt ảnh mở khóa bằng vân tay sau khi bật chế độ chống nhấp nháy",
+      "Tối ưu hóa vấn đề thỉnh thoảng mất cảm ứng khi chơi Honor of Kings",
+      "Đã khắc phục sự cố không hiển thị biểu tượng vân tay khi hệ thống ở chế độ ngủ",
+      "Tối ưu lỗi thỉnh thoảng mất cảm ứng khi chơi Honor of Kings"
+    ],
     "Màn hình khóa, thanh trạng thái, thanh thông báo": [
       "Mới: Dùng vân tay để vào Màn hình chính khi đã mở khóa bằng khuôn mặt và vẫn ở màn hình khóa",
       "Sửa lỗi: Biểu tượng vân tay không phải lúc nào cũng hiển thị trên màn hình khóa",
@@ -328,6 +466,12 @@
       "Đã sửa: Thời lượng cuộc gọi rảnh tay không hiển thị đúng trong Game Turbo",
       "Fix: Hands-free call duration wasn't displayed correctly in Game Turbo"
     ],
+    "Các tối ưu hóa và điều chỉnh khác": [
+      "Đã khắc phục sự cố mở khóa bằng vân tay không phản hồi khi thiết bị ở chế độ ngủ."
+    ],
+    "Tối ưu và cải thiện khác": [
+      "Đã khắc phục sự cố mở khóa bằng vân tay không phản hồi khi thiết bị ở chế độ ngủ."
+    ],
     "Khác": [
       "Cải thiện tính ổn định và bảo mật hệ thống"
     ],
@@ -336,6 +480,12 @@
     ]
   },
   "logs_th": {
+    "ระบบ": [
+      "การเพิ่มประสิทธิภาพ: แก้ไขปัญหาอนิเมชันปลดล็อกด้วยลายนิ้วมือกระตุกหลังจากเปิดโหมดป้องกันการกะพริบ",
+      "ปรับแต่งปัญหาไม่ตอบสนองต่อการสัมผัสเป็นครั้งคราวระหว่างเล่น Honor of Kings",
+      "แก้ไขปัญหาไอคอนลายนิ้วมือไม่แสดงเมื่อระบบเข้าสู่โหมดสลีป",
+      "ปรับปรุงปัญหาการสัมผัสขาดหายเป็นครั้งคราวระหว่างเล่น Honor of Kings"
+    ],
     "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
       "ใหม่: สามารถใช้ลายนิ้วมือเข้าสู่หน้าจอหลักได้เมื่อปลดล็อกด้วยใบหน้าและยังคงอยู่ที่หน้าจอล็อก",
       "แก้ไข: ไอคอนลายนิ้วมือไม่แสดงบนหน้าจอล็อกเป็นบางครั้ง",
@@ -344,8 +494,14 @@
     "ตัวเร่งความเร็วเกม": [
       "แก้ไข: ระยะเวลาการโทรแบบแฮนด์ฟรีในเกมแสดงผลไม่ถูกต้อง"
     ],
+    "การปรับปรุงและปรับแต่งอื่นๆ": [
+      "แก้ไขปัญหาการปลดล็อกด้วยลายนิ้วมือไม่ตอบสนองในโหมดสลีป"
+    ],
     "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
       "ใหม่: สามารถใช้ลายนิ้วมือเข้าสู่หน้าจอหลักได้เมื่อปลดล็อกด้วยใบหน้าและยังคงอยู่ที่หน้าจอล็อก"
+    ],
+    "การปรับปรุงและการเพิ่มประสิทธิภาพอื่นๆ": [
+      "แก้ไขปัญหาการปลดล็อกด้วยลายนิ้วมือไม่ตอบสนองในโหมดสลีป"
     ],
     "อื่นๆ": [
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
@@ -358,6 +514,12 @@
     ]
   },
   "logs_ar": {
+    "النظام": [
+      "التحسين: تم إصلاح مشكلة تقطع حركة فتح القفل ببصمة الإصبع بعد تفعيل وضع منع الوميض",
+      "تم تحسين مشكلة انقطاع اللمس أحيانًا أثناء لعب Honor of Kings",
+      "تم إصلاح مشكلة عدم إمكانية إضاءة أيقونة بصمة الإصبع عند سكون النظام",
+      "تحسين مشكلة فقدان استجابة اللمس أحيانًا أثناء لعب Honor of Kings"
+    ],
     "شاشة القفل، شريط الحالة، شريط الإشعارات": [
       "جديد: استخدام بصمة الإصبع للانتقال إلى الشاشة الرئيسية عند نجاح فتح القفل بالوجه والبقاء على شاشة القفل",
       "إصلاح أيقونة بصمة الإصبع لا تظهر دائمًا على شاشة القفل",
@@ -366,10 +528,13 @@
     "تسريع الألعاب": [
       "إصلاح: عرض مدة مكالمة مكبر الصوت بشكل غير صحيح أثناء اللعب"
     ],
+    "تحسينات وتعديلات أخرى": [
+      "إصلاح مشكلة عدم استجابة فتح القفل ببصمة الإصبع في وضع السكون."
+    ],
     "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
       "جديد: استخدام بصمة الإصبع للانتقال إلى الشاشة الرئيسية عند نجاح فتح القفل بالوجه والبقاء على شاشة القفل"
     ],
-    "أخرى": [
+    "آخرين": [
       "تحسين أمن واستقرار النظام"
     ],
     "شاشة القفل، شريط الحالة، لوحة الإشعارات": [
@@ -380,6 +545,12 @@
     ]
   },
   "logs_in": {
+    "सिस्टम": [
+      "अनुकूलन: एंटी-फ़्लिकर मोड सक्षम करने के बाद फ़िंगरप्रिंट अनलॉक एनिमेशन में रुकावट की समस्या ठीक की गई",
+      "Honor of Kings खेलते समय कभी-कभी होने वाली टच विफलता की समस्या को अनुकूलित किया गया",
+      "सिस्टम के स्लीप मोड में होने पर फिंगरप्रिंट आइकन प्रदर्शित न होने की समस्या ठीक की गई",
+      "Honor of Kings खेलते समय कभी-कभी होने वाली टच प्रतिक्रिया हानि की समस्या को अनुकूलित किया गया"
+    ],
     "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
       "नया: चेहरे से अनलॉक होने और लॉक स्क्रीन पर रहने पर फ़िंगरप्रिंट से होम स्क्रीन पर जाने की सुविधा",
       "फ़िक्स: लॉक स्क्रीन पर फ़िंगरप्रिंट आइकन हमेशा नहीं दिखता था",
@@ -388,9 +559,15 @@
     "गेम गति बूस्टर": [
       "गेम में हैंड्स-फ्री कॉल की अवधि गलत दिखने की समस्या ठीक की गई"
     ],
+    "अन्य अनुकूलन (Optimizations) एवं समायोजन (Adjustments)": [
+      "स्लीप मोड में फिंगरप्रिंट अनलॉक के जवाब न देने की समस्या ठीक की गई।"
+    ],
     "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
       "नया: चेहरे से अनलॉक होने और लॉक स्क्रीन पर रहने पर फ़िंगरप्रिंट से होम स्क्रीन पर जाने की सुविधा",
       "नया: चेहरे से अनलॉक सफल होने और लॉक स्क्रीन पर रहने पर फ़िंगरप्रिंट से होम स्क्रीन खोलें"
+    ],
+    "अन्य सुधार और ऑप्टिमाइज़ेशन": [
+      "स्लीप मोड में फिंगरप्रिंट अनलॉक के जवाब न देने की समस्या ठीक की गई।"
     ],
     "अन्य": [
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
@@ -409,11 +586,20 @@
       "تۈزىتىش: ئويۇن ئىچىدە قولسىز تېلېفون ئېلىش جەريانىدا سۆزلىشىش ۋاقتىنىڭ خاتا كۆرسىتىلىش مەسىلىسى",
       "Fix: Hands-free call duration wasn't displayed correctly in Game Turbo"
     ],
+    "باشقا ئەلالاشتۇرۇش ۋە تەڭشەشلەر": [
+      "ئۇخلاش ھالىتىدە بارماق ئىزى بىلەن قۇلۇپ ئېچىش ئىنكاس قايتۇرماسلىق مەسىلىسى تۈزىتىلدى."
+    ],
     "Lockscreen, status bar, Notification shade": [
       "يېڭى: يۈزنى تونۇش ئارقىلىق قۇلۇپنى ئېچىپ قۇلۇپ ئېكرانىدا تۇرۇۋاتقاندا، بارماق ئىزى ئارقىلىق باش ئېكرانغا كىرىش ئىقتىدارى قوشۇلدى."
     ],
+    "Other improvements and optimizations": [
+      "ئۇخلاش ھالىتىدە بارماق ئىزى بىلەن قۇلۇپ ئېچىش ئىنكاس قايتۇرماسلىق مەسىلىسى تۈزىتىلدى."
+    ],
     "باشقىلىرى": [
       "Improved system security and stability"
+    ],
+    "سىستېما": [
+      "Honor of Kings ئويۇنى جەريانىدا ئاندا-ساندا كۆرۈلىدىغان سەزگۈر ئېكران كىرگۈزۈش ئۈزۈلۈش مەسىلىسىنى ياخشىلاش"
     ],
     "Lockscreen, Status Bar, Notification Bar": [
       "يېڭىلىق: يۈز ئارقىلىق قۇلۇپ ئېچىش مۇۋەپپەقىيەتلىك بولۇپ، قۇلۇپ ئېكرانىدا تۇرۇۋاتقاندا، بارماق ئىزى ئارقىلىق ئاساسىي ئېكرانغا كىرىش ئىقتىدارى قوشۇلدى"

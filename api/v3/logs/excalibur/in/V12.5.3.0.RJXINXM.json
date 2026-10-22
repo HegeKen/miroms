@@ -46,7 +46,7 @@
       "修复 抬起亮屏时偶现锁屏通知抖动的异常",
       "修复 深色模式下，通知按钮偶现显示异常的问题"
     ],
-    "便签": [
+    "注释；备注": [
       "新增 摘录功能，支持将图片、文字、链接一键摘录至笔记（需在商店中升级至3.1.0级以上版本）",
       "新增 动态网格排版，构建文字秩序之美，让不同字号，同样优美",
       "新增 思维笔记功能，手机上的结构化书写利器，一键生成脑图",
@@ -252,11 +252,6 @@
       "新機能: デバイスモデルごとの調整により、アップグレード後はどの機種でも高速化が実現します。",
       "最適化: MIUIは、軽量化、高速化、省電力化を実現しました。"
     ],
-    "ロック画面": [
-      "修正: 通話終了後にロック画面の通知が消えてしまう問題",
-      "修正: スーパー壁紙とテーマを組み合わせたときにロック画面のアイテムが表示されない問題",
-      "修正: 指紋認証を使用すると点滅した黒い線が出現する問題"
-    ],
     "ステータスバー、通知シェード": [
       "最適化: 着信通知を表示するアルゴリズム",
       "最適化: アラーム通知",
@@ -276,6 +271,11 @@
       "修正: サードパーティ製のテーマを使用している際に、通知を受信すると背景が正しく表示されない問題",
       "修正: '持ち上げてスリープ解除'実行時に通知が正しく表示されない場合がある問題",
       "修正: ダークモードがオンの場合、通知にボタンが正しく表示されないことがある問題"
+    ],
+    "ロック画面": [
+      "修正: 通話終了後にロック画面の通知が消えてしまう問題",
+      "修正: スーパー壁紙とテーマを組み合わせたときにロック画面のアイテムが表示されない問題",
+      "修正: 指紋認証を使用すると点滅した黒い線が出現する問題"
     ],
     "Xiaomi クラウドサービス": [
       "最適化: 着信通知を表示するアルゴリズム",
@@ -440,6 +440,26 @@
       "Нове: Оновлення для кожного пристрою містить індивідуальні покращення, які зроблять ваш пристрій ще швидше.",
       "Оптимізація: Система MIUI стала легшою, швидшою та стабільнішою."
     ],
+    "Рядок стану, панель сповіщень": [
+      "Оптимізація: Алгоритми відображення сповіщень про вхідні виклики",
+      "Оптимізація: Сповіщення будильника",
+      "Оптимізація: Сумісність сторонніх тем із панеллю сповіщень",
+      "Оптимізація: Оптимізація відображення сповіщень у темному режимі",
+      "Виправлено: Під час використання прозорого фону спливаючі сповіщення могли перекриватися",
+      "Виправлено: Елементи діалогового вікна надання дозволів перекривалися після довгого натиснення на сповіщення",
+      "Виправлено: Під час використання захисту програм сповіщення могли відображатися неправильно",
+      "Виправлено: Виправлено некоректне відображення анімації \"Очищення\"",
+      "Виправлено: В деяких випадках панель сповіщень могла не відкриватися",
+      "Виправлено: Після пропущених викликів сповіщення могли відображатися неправильно",
+      "Виправлено: Виправлені помилки дозволів, які з'являлися після пропущених викликів",
+      "Виправлено: Під час використання Другого простору спливаючи сповіщення могли мерехтіти",
+      "Виправлено: Годинник у панелі сповіщень міг відображатися неправильно",
+      "Виправлено: Віджет керування відтворенням музиик міг не відображатися у панелі сповіщень",
+      "Виправлено: В деяких випадках могли не відображатися мітки сповіщень на значку програм",
+      "Виправлено: Фон відображався неправильно під час отримання сповіщень та використання сторонніх тем",
+      "Виправлено: Під час використання функції \"Підняти для активації\" сповіщення могли відображатися неправильно",
+      "Виправлено: Під час активації темного режиму деякі кнопки на сповіщеннях могли не відображатися"
+    ],
     "Екран блокування": [
       "Виправлено: Після завершення голосового виклику повідомлення на екрані блокування могли зникнути",
       "Виправлено: Під час комбінування супершпалер та тем деякі об'єкти могли не відборажатися на екрані блокування",
@@ -576,7 +596,8 @@
       "Neu: Neue Werkzeuge zum Kritzeln und Skizzieren.",
       "Neu: Halte eine Skizze gedrückt, um die Striche automatisch anzupassen.",
       "Neu: Eine Gestenverknüpfung ermöglicht es, überall Notizen, Aufgaben und Auszüge zu erstellen.",
-      "Ganz neue Notizen."
+      "Ganz neue Notizen.",
+      "Neu: Dynamisches Rasterlayout schafft schöne Textordnung und lässt unterschiedliche Schriftgrößen gleichermaßen elegant wirken."
     ],
     "Statusleiste, Benachrichtigungsfeld": [
       "Optimierung: Algorithmen zur Anzeige von Benachrichtigungen über eingehende Anrufe",
@@ -604,6 +625,26 @@
       "Behebung: Beim Entsperren per Fingerabdruck erschien eine blinkende schwarze Linie"
     ],
     "Statusleiste, Benachrichtigungsleiste": [
+      "Optimierung: Algorithmen zur Anzeige von Benachrichtigungen über eingehende Anrufe",
+      "Optimierung: Weckerbenachrichtigungen",
+      "Optimierung: Kompatibilität von Drittanbieter-Themes mit dem Benachrichtigungsbereich",
+      "Optimierung: Anpassung des Dunkelmodus für Benachrichtigungen",
+      "Behoben: Schwebende Benachrichtigungen überschnitten sich bei Verwendung eines transparenten Hintergrunds.",
+      "Behoben: Elemente des Berechtigungsdialogs überlappten sich nach langem Drücken auf eine Benachrichtigung",
+      "Behoben: Bei aktiver App-Sperre wurden Benachrichtigungen nicht korrekt angezeigt",
+      "Behoben: Die Animationen des Reinigers wurden nicht korrekt angezeigt",
+      "Behoben: Der Benachrichtigungsbereich ließ sich in manchen Fällen nicht öffnen",
+      "Behoben: Benachrichtigungen wurden nach verpassten Anrufen nicht korrekt angezeigt",
+      "Behoben: Probleme mit Berechtigungen nach verpassten Anrufen",
+      "Behebung: Schwebende Benachrichtigungen blinkten bei Verwendung des Zweiten Bereichs",
+      "Behoben: Die Uhr wurde in den Benachrichtigungen nicht immer korrekt angezeigt",
+      "Behoben: Wiedergabesteuerung wurde nicht immer in der Benachrichtigungsleiste angezeigt",
+      "Behebung: Benachrichtigungs-Badges wurden nicht immer angezeigt",
+      "Behebung: Hintergründe wurden bei eingehenden Benachrichtigungen mit Drittanbieter-Themes nicht korrekt angezeigt",
+      "Behoben: Benachrichtigungen wurden bei Verwendung von „Zum Aufwecken anheben“ nicht immer korrekt angezeigt",
+      "Behoben: Schaltflächen wurden bei aktiviertem Dunkelmodus nicht immer korrekt in den Benachrichtigungen angezeigt"
+    ],
+    "Xiaomi Cloud-Dienst": [
       "Optimierung: Algorithmen zur Anzeige von Benachrichtigungen über eingehende Anrufe",
       "Optimierung: Weckerbenachrichtigungen",
       "Optimierung: Kompatibilität von Drittanbieter-Themes mit dem Benachrichtigungsbereich",
@@ -1067,6 +1108,26 @@
       "Mới: Với điều chỉnh kiểu thiết bị tùy chỉnh, bất kỳ điện thoại nào cũng đều nhanh hơn sau khi nâng cấp.",
       "Tối ưu: MIUI trở nên nhẹ hơn, nhanh hơn và tiện dụng hơn."
     ],
+    "Thanh trạng thái, thanh thông báo": [
+      "Tối ưu: Thuật toán thông báo cuộc gọi đến",
+      "Tối ưu: Thông báo báo thức",
+      "Tối ưu: Chủ đề bên thứ ba tương thích với Thanh thông báo",
+      "Tối ưu: Điều chỉnh chế độ nền tối cho thông báo",
+      "Sửa: Thông báo nổi bị chồng lấn khi hình nền trong suốt được sử dụng",
+      "Sửa: Hộp thoại quyền bị chồng lấn sau khi bấm giữ thông báo",
+      "Sửa: Thông báo không hiển thị chính xác khi Khóa ứng dụng được sử dụng",
+      "Sửa: Hoạt ảnh dọn dẹp không hiển thị chính xác",
+      "Sửa: Không thể mở Thanh thông báo trong một số trường hợp",
+      "Sửa: Thông báo không hiển thị chính xác sau khi lỡ cuộc gọi",
+      "Sửa: Vấn đề về quyền sau khi có cuộc gọi nhỡ",
+      "Sửa: Thông báo nổi nhấp nháy khi Không gian thứ hai được sử dụng",
+      "Sửa: Đồng hồ không phải lúc nào cũng được hiển thị chính xác trong Thanh thông báo",
+      "Sửa: Điều khiển trình phát không luôn hiển thị trong Thanh thông báo",
+      "Sửa: Thẻ thông báo không xuất hiện",
+      "Sửa: Nền không được hiển thị chính xác khi có thông báo và chủ đề của bên thứ ba được sử dụng",
+      "Sửa: Thông báo không hiển thị chính xác khi \"Nâng lên để đánh thức\" được sử dụng",
+      "Sửa: Phím không hiển thị chính xác trên thanh thông báo khi Chế độ nền tối bật"
+    ],
     "Màn hình khóa": [
       "Sửa: Thông báo Màn hình khóa biến mất sao khi kết thúc cuộc gọi",
       "Sửa: Mục trên màn hình khóa không được hiển thị khi kết hợp siêu màn hình và chủ đề",
@@ -1122,6 +1183,26 @@
       "ใหม่: ด้วยพลังการเรนเดอร์ที่เพิ่มขึ้น 20 เท่า ตอนนี้สิ่งที่คุณเห็นบนหน้าจอของคุณเหลือข้อจำกัดเพียงเล็กน้อย",
       "ใหม่: ด้วยการปรับเปลี่ยนรุ่นอุปกรณ์ที่กำหนดเอง โทรศัพท์ทุกเครื่องจะเร็วขึ้นหลังจากการอัปเกรด",
       "การเพิ่มประสิทธิภาพ: MIUI เบาขึ้น เร็วขึ้น และทนทานมากขึ้น"
+    ],
+    "แถบสถานะ, แผงการแจ้งเตือน": [
+      "การเพิ่มประสิทธิภาพ: อัลกอริทึมสำหรับการแสดงการแจ้งเตือนสายเรียกเข้า",
+      "การเพิ่มประสิทธิภาพ: การแจ้งเตือน",
+      "การเพิ่มประสิทธิภาพ: ความเข้ากันได้ของธีมของบุคคลที่สามสำหรับหน้าต่างแจ้งเตือน",
+      "การเพิ่มประสิทธิภาพ: การปรับโหมดมืดสำหรับการแจ้งเตือน",
+      "แก้ไข: การแจ้งเตือนแบบลอยซ้อนทับกันเมื่อใช้พื้นหลังโปร่งใส",
+      "แก้ไข: องค์ประกอบข้อความการอนุญาตซ้อนทับกันหลังจากกดการแจ้งเตือนค้างไว้",
+      "แก้ไข: การแจ้งเตือนแสดงไม่ถูกต้องเมื่อใช้ ล็อกแอป",
+      "แก้ไข: แอนิเมชั่นตัวทำความสะอาดแสดงไม่ถูกต้อง",
+      "แก้ไข: ไม่สามารถเปิดหน้าต่างแจ้งเตือนได้ในบางกรณี",
+      "แก้ไข: การแจ้งเตือนแสดงไม่ถูกต้องหลังสายที่ไม่ได้รับ",
+      "แก้ไข: ปัญหาเกี่ยวกับการอนุญาตหลังจากไม่ได้รับสาย",
+      "แก้ไข: การแจ้งเตือนแบบลอยจะกะพริบเมื่อใช้พื้นที่ทับซ้อน",
+      "แก้ไข: นาฬิกาไม่ได้แสดงอย่างถูกต้องเสมอในแถบการแจ้งเตือน",
+      "แก้ไข: การควบคุมเครื่องเล่นเพลงไม่ได้แสดงในแถบการแจ้งเตือนทุกครั้ง",
+      "แก้ไข: ป้ายแจ้งเตือนไม่ปรากฏขึ้นทุกครั้ง",
+      "แก้ไข: พื้นหลังไม่แสดงอย่างถูกต้องเมื่อมีการแจ้งเตือนและใช้ธีมบุคคลที่สาม",
+      "แก้ไข: การแจ้งเตือนแสดงไม่ถูกต้องทุกครั้งเมื่อใช้ \"ยกขึ้นเพื่อปลุก\"",
+      "แก้ไข: ปุ่มต่างๆ แสดงไม่ถูกต้องในการแจ้งเตือนทุกครั้งเมื่อเปิดโหมดมืด"
     ],
     "ล็อคหน้าจอ": [
       "แก้ไข: การแจ้งเตือนหน้าจอล็อกหายไปหลังจากวางสาย",
@@ -1361,6 +1442,26 @@
       "Fix: Lock screen notifications disappeared after an ended call",
       "Fix: Lock screen items weren't displayed when super wallpapers and themes were combined",
       "Fix: A flashing black line appeared when Fingerprint unlock was used"
+    ],
+    "Xiaomi بۇلۇت مۇلازىمىتى": [
+      "Optimization: Algorithms for displaying incoming call notifications",
+      "Optimization: Alarm notifications",
+      "Optimization: Third party theme compatibility for Notification shade",
+      "Optimization: Dark mode adjustments for notifications",
+      "Fix: Floating notifications overlapped when the transparent background was used",
+      "Fix: Permission dialog elements overlapped after a notification was long pressed",
+      "Fix: Notifications weren't displayed correctly when App lock was used",
+      "Fix: Cleaner animations weren't displayed correctly",
+      "Fix: Notification shade couldn't be opened in some cases",
+      "Fix: Notifications weren't displayed correctly after missed calls",
+      "Fix: Issues with permissions after missed calls",
+      "Fix: Floating notifications flashed when Second space was used",
+      "Fix: The clock wasn't always displayed correctly in the Notification shade",
+      "Fix: Player controls weren't always displayed in the Notification shade",
+      "Fix: Notification badges didn't always appear",
+      "Fix: Backgrounds weren't displayed correctly when notifications arrived and third party themes were used",
+      "Fix: Notifications weren't always displayed correctly when \"Raise to wake\" was used",
+      "Fix: Buttons weren't always displayed correctly on the notifications when Dark mode was on"
     ]
   },
   "logs_bo": {
@@ -1409,6 +1510,26 @@
       "Fix: Lock screen notifications disappeared after an ended call",
       "Fix: Lock screen items weren't displayed when super wallpapers and themes were combined",
       "Fix: A flashing black line appeared when Fingerprint unlock was used"
+    ],
+    "Mi Cloud": [
+      "Optimization: Algorithms for displaying incoming call notifications",
+      "Optimization: Alarm notifications",
+      "Optimization: Third party theme compatibility for Notification shade",
+      "Optimization: Dark mode adjustments for notifications",
+      "Fix: Floating notifications overlapped when the transparent background was used",
+      "Fix: Permission dialog elements overlapped after a notification was long pressed",
+      "Fix: Notifications weren't displayed correctly when App lock was used",
+      "Fix: Cleaner animations weren't displayed correctly",
+      "Fix: Notification shade couldn't be opened in some cases",
+      "Fix: Notifications weren't displayed correctly after missed calls",
+      "Fix: Issues with permissions after missed calls",
+      "Fix: Floating notifications flashed when Second space was used",
+      "Fix: The clock wasn't always displayed correctly in the Notification shade",
+      "Fix: Player controls weren't always displayed in the Notification shade",
+      "Fix: Notification badges didn't always appear",
+      "Fix: Backgrounds weren't displayed correctly when notifications arrived and third party themes were used",
+      "Fix: Notifications weren't always displayed correctly when \"Raise to wake\" was used",
+      "Fix: Buttons weren't always displayed correctly on the notifications when Dark mode was on"
     ]
   }
 }

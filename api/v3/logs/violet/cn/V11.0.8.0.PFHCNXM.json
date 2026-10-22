@@ -8,7 +8,7 @@
       "修复 手机分身中，无法通过通知栏进入应用通知设置页的问题",
       "修复 偶现通知栏无法下拉的问题"
     ],
-    "网络助手": [
+    "数据使用情况": [
       "修复 白名单数量统计不正确的问题",
       "修复 某些情况下，搜索应用时卡顿的问题",
       "修复 流量超额弹窗重复出现的问题",
@@ -34,7 +34,7 @@
       "Fix: Couldn't open notification settings in the Notification shade in Second space",
       "Fix: Couldn't open the Notification shade in some cases"
     ],
-    "Data Usage": [
+    "Online Assistant": [
       "Fix: Items related to exceptions weren't always displayed accurately",
       "Fix: Searching for apps made the device slow down",
       "Fix: Data usage warning appeared multiple times",
@@ -92,16 +92,28 @@
       "Androidセキュリティパッチを2020年2月にアップデートしました。システムセキュリティが向上しました。",
       "修正: スクロールスクリーンショットで画像が重なる問題"
     ],
+    "ステータスバー、通知シェード": [
+      "修正: セカンドスペースで通知シェードから通知設定を開けない問題",
+      "修正: 一部の状況で通知シェードを開けない問題",
+      "修正: セカンド・スペースの通知シェードで通知設定を開けない問題",
+      "修正: 通知シェードを開けない場合がある問題"
+    ],
+    "ネットワークアシスタント": [
+      "ホワイトリストの件数が正しく集計されない問題を修正",
+      "一部の状況でアプリ検索時にカクつく問題を修正",
+      "修正: データ使用量の警告が複数回表示される問題",
+      "SIMカードを交換した後、ネットワーク制御ルールに異常が発生する問題を修正しました。",
+      "SIMカードを交換した後、通信制御ルールが異常になる問題を修正しました"
+    ],
+    "セキュリティ": [
+      "修正: Red envelope assistant がセカンドスペースでフローティングウィンドウを表示しない問題"
+    ],
     "Xiaomi クラウドサービス": [
       "修正: 一部の状況でアプリが強制終了する問題"
     ],
     "その他": [
       "修正: スクロールスクリーンショットで画像が重なる問題",
       "システムのセキュリティと安定性の向上"
-    ],
-    "ステータスバー、通知シェード": [
-      "修正: セカンド・スペースの通知シェードで通知設定を開けない問題",
-      "修正: 通知シェードを開けない場合がある問題"
     ],
     "Xiaomi Cloud": [
       "修正: IMEIを識別できないというエラーメッセージが複数回表示される問題"
@@ -116,11 +128,14 @@
       "수정: 보조 공간의 알림 바에서 알림 설정을 열 수 없는 문제",
       "수정: 알림 바가 열리지 않는 문제"
     ],
-    "데이터 사용량": [
+    "네트워크 어시스턴트": [
       "수정: 예외 항목의 통계가 정확하지 않은 문제",
       "수정: 앱 검색 중 기기가 느려지는 문제",
       "수정: 데이터 사용량 경고가 중복해서 출현하는 현상",
       "수정: SIM 카드 전환 후의 오류 발생 문제"
+    ],
+    "보안": [
+      "수정: 홍바오 도우미가 세컨드 스페이스에서 플로팅 창을 표시하지 않는 문제"
     ],
     "Xiaomi 클라우드 서비스": [
       "수정: 앱이 갑자기 강제로 종료되는 문제"
@@ -142,11 +157,14 @@
       "Исправлено: Исправлена ошибка, из-за которой не удавалось открыть настройки уведомлений через шторку уведомлений во втором пространстве",
       "Исправлено: В некоторых случаях не удавалось открыть Шторку уведомлений"
     ],
-    "Трафик": [
+    "Интернет-ассистент": [
       "Исправлено: Элементы, связанные с исключениями, не всегда отображались правильно",
       "Исправлено: Поиск приложений мог замедлять работу устройства",
       "Исправлено: Предупреждение об использовании данных могло появляться несколько раз",
       "Исправлено: Ошибки, связанные со сменой SIM-карт"
+    ],
+    "Безопасность": [
+      "Исправлено: помощник красных конвертов не показывает плавающее окно во Втором пространстве."
     ],
     "Облачный сервис Xiaomi": [
       "Исправлено: Сбои приложений"
@@ -168,12 +186,19 @@
       "Оновлення системи безпеки Android (лютий 2020 року). Збільшена безпека системи.",
       "Виправлено: Зображення накладаються одне на одне під час прокручування скріншотів"
     ],
-    "Передача даних": [
+    "Рядок стану, панель сповіщень": [
+      "Fix: Couldn't open notification settings in the Notification shade in Second space",
+      "Fix: Couldn't open the Notification shade in some cases"
+    ],
+    "Інтернет-асистент": [
       "Виправлено проблему з неправильним підрахунком кількості білого списку",
       "Виправлено проблему з підвисанням під час пошуку застосунків у деяких випадках",
       "Виправлено: Попередження про використання даних могло з'являтися декілька разів",
       "Виправлено проблему з неправильними правилами керування мережею після заміни SIM-картки.",
       "Виправлено: Помилка, які пов'язані із перемиканням SIM-карт"
+    ],
+    "Безпека": [
+      "Виправлено: помічник червоних конвертів не показує плаваюче вікно у Другому просторі."
     ],
     "Хмарний сервіс Xiaomi": [
       "Виправлено: У деяких випадках програма аварійно завершувалася"
@@ -201,16 +226,19 @@
       "Naprawiono: Nie można było otworzyć ustawień powiadomień w Pasku powiadomień drugiej przestrzeni",
       "Naprawiono: W niektórych przypadkach pasek powiadomień się nie otwierał"
     ],
-    "Użycie danych": [
+    "Asystent online": [
       "Naprawiono: Elementy związane z wyjątkami nie zawsze były wyświetlane poprawnie",
       "Naprawiono: Wyszukiwanie aplikacji spowalniało urządzenie",
       "Naprawiono: Ostrzeżenie o zużyciu danych pojawiło się wiele razy",
       "Naprawiono: Wystąpiły błędy po zmianie kart SIM"
     ],
+    "Bezpieczeństwo": [
+      "Naprawiono: asystent czerwonych kopert nie wyświetla okna pływającego w Drugiej przestrzeni."
+    ],
     "Usługa w chmurze Xiaomi": [
       "Naprawiono: W niektórych przypadkach wymuszono zamknięcie aplikacji"
     ],
-    "Inne": [
+    "Reszt": [
       "Naprawiono: Obrazy nakładały się na siebie podczas przewijania zrzutów ekranu",
       "Większe bezpieczeństwo i stabilność systemu"
     ],
@@ -231,6 +259,16 @@
       "Behoben: Benachrichtigungseinstellungen im Zweiten Space ließen sich nicht über die Benachrichtigungsleiste öffnen",
       "Behoben: Benachrichtigungsleiste ließ sich in manchen Fällen nicht öffnen"
     ],
+    "Online-Assistent": [
+      "Problem mit der falschen Zählung der Whitelist-Einträge behoben",
+      "Problem behoben, bei dem die Suche nach Apps in manchen Fällen zu Verzögerungen führte",
+      "Behoben: Warnung zur Datennutzung erschien mehrfach",
+      "Fehler behoben: Nach dem SIM-Kartenwechsel waren die Regeln zur Netzwerksteuerung fehlerhaft.",
+      "Behebt das Problem, dass die Regeln zur Netzwerksteuerung nach dem SIM-Kartenwechsel fehlerhaft waren"
+    ],
+    "Sicherheit": [
+      "Behoben: Roter-Umschlag-Assistent zeigt im Zweiten Bereich kein schwebendes Fenster an."
+    ],
     "Xiaomi Cloud-Dienst": [
       "Behoben: App wurde in einigen Fällen zwangsweise geschlossen"
     ],
@@ -242,6 +280,9 @@
     "Statusleiste, Benachrichtigungsleiste": [
       "Behoben: Benachrichtigungseinstellungen konnten im Zweiten Space nicht über die Benachrichtigungsleiste geöffnet werden",
       "Behoben: Die Benachrichtigungsleiste ließ sich in einigen Fällen nicht öffnen"
+    ],
+    "Xiaomi Cloud": [
+      "Behoben: System zeigt wiederholt die Meldung an, dass die Geräte-ID nicht erkannt werden kann"
     ]
   },
   "logs_fr": {
@@ -253,11 +294,14 @@
       "Réparé: Impossible d'ouvrir les paramètres dans le panneau de notification du Second espace",
       "Réparé: Impossible d'ouvrir le panneau de notification dans certains cas"
     ],
-    "Utilisation des données": [
+    "Assistant en ligne": [
       "Réparé: Les éléments liés aux exceptions n'etaient pas toujours affichés avec précision",
       "Réparé: La recherche d'applications a ralenti l'appareil",
       "Réparé: L'avertissement concernant l'utilisation des données est apparu plusieurs fois",
       "Réparé: Des erreurs se sont produites après le basculement des cartes SIM"
+    ],
+    "Sécurité": [
+      "Correction : l’assistant d’enveloppe rouge n’affiche pas de fenêtre flottante dans le Second espace."
     ],
     "Service cloud Xiaomi": [
       "Réparé: L'application s'est fermée dans certains cas"
@@ -279,11 +323,14 @@
       "Risolto: Impossibile aprire le impostazioni di notifica nell'area delle notifiche in Secondo spazio",
       "Risolto: Non era possibile aprire l'area delle notifiche in alcuni casi"
     ],
-    "Utilizzo dei dati": [
+    "Assistente online": [
       "Risolto: Gli elementi correlati alle eccezioni non erano sempre mostrati correttamente",
       "Risolto: La ricerca di app rallentava il dispositivo",
       "Risolto: L'avviso sull'utilizzo dei dati appariva più volte",
       "Risolto: Si verificavano errori cambiando scheda SIM"
+    ],
+    "Sicurezza": [
+      "Corretto: l’assistente busta rossa non mostra la finestra flottante nel Secondo spazio."
     ],
     "Servizio cloud Xiaomi": [
       "Risolto: La app subiva una chiusura forzata in alcuni casi"
@@ -309,11 +356,14 @@
       "Reparado: No se podía abrir los ajustes de notificaciones en la Barra de notificaciones en el Segundo espacio",
       "Reparado: En algunos casos no se podía abrir la Barra de notificaciones"
     ],
-    "Uso de datos": [
+    "Asistente de red": [
       "Reparado: Los elementos relacionados a las excepciones no siempre se mostraban de forma correcta",
       "Reparado: Buscar aplicaciones hacía que el dispositivo se ralentizase",
       "Reparado: El aviso de uso de datos aparecía varias veces",
       "Reparado: Se producían errores después de cambiar de tarjeta SIM"
+    ],
+    "Seguridad": [
+      "Corregido: el asistente de sobres rojos no muestra la ventana flotante en el Segundo espacio."
     ],
     "Servicio en la nube de Xiaomi": [
       "Reparado: Esta aplicación se cerraba de forma forzosa en algunos casos"
@@ -339,11 +389,14 @@
       "Correção: Não era possível abrir as configurações de notificações na Área de notificações do Segundo Espaço",
       "Correção: Não era possível abrir a Área de notificação em alguns casos"
     ],
-    "Uso de dados": [
+    "Assistente de Rede": [
       "Correção: Itens relacionados a exceções não eram exibidos corretamente em alguns casos",
       "Correção: Pesquisar por apps podia deixar o dispositivo mais lento",
       "Correção: O alerta de uso de dados aparecia várias vezes",
       "Correção: Ocorrência de erros ao trocar de cartões SIM"
+    ],
+    "Segurança": [
+      "Corrigido: o assistente de envelopes vermelhos não mostra a janela flutuante no Segundo espaço."
     ],
     "Serviço de nuvem Xiaomi": [
       "Correção: O app fechava forçadamente em alguns casos"
@@ -369,11 +422,14 @@
       "Onarım: Bildirim çubuğunda, ikinci bir alanda bildirim ayarları açılamadı",
       "Onarım: Bildirim çubuğu bazı durumlarda açılamadı"
     ],
-    "Veri kullanımı": [
+    "Ağ Asistanı": [
       "Onarım: Özel durumlarla ilgili ögeler her zaman tam olarak gösterilmedi",
       "Onarım: Uygulamaları aramak cihazı yavaşlattı",
       "Onarım: Veri kullanımı uyarısı birçok kez göründü",
       "Onarım: SIM kartları değiştirirken hata oluştu"
+    ],
+    "Güvenlik": [
+      "Düzeltildi: Kırmızı zarf asistanı İkinci alanda yüzen pencereyi göstermiyor."
     ],
     "Xiaomi Bulut Hizmeti": [
       "Onarım: Uygulama bazı durumlarda kapatılmaya zorlanır"
@@ -399,12 +455,15 @@
       "Perbaikan: Tidak dapat membuka setelan notifikasi di Layar notifikasi pada Ruang kedua",
       "Perbaikan: Tidak dapat membuka Layar notifikasi di beberapa kasus"
     ],
-    "Penggunaan data": [
+    "Pembantu Jaringan": [
       "Perbaikan: Item yang berkaitan dengan daftar pengecualian tidak selalu ditampilkan dengan akurat",
       "Perbaikan: Pencarian aplikasi membuat perangkat menjadi lebih lambat",
       "Perbaikan: Peringatan penggunaan data muncul berulang kali",
       "Perbaikan: Ada kesalahan terjadi saat menukar kartu SIM",
       "Memperbaiki masalah aturan kontrol jaringan yang tidak normal setelah mengganti kartu SIM"
+    ],
+    "Keamanan": [
+      "Perbaikan: Asisten amplop merah tidak menampilkan jendela mengambang di Ruang kedua."
     ],
     "Layanan Cloud Xiaomi": [
       "Perbaikan: Aplikasi tutup tiba-tiba di beberapa kasus"
@@ -426,6 +485,20 @@
       "Cập nhật Bản vá Bảo mật Android đến tháng 2 năm 2020. Tăng cường bảo mật hệ thống.",
       "Sửa: Ảnh bị chồng khi chụp ảnh màn hình kéo dài"
     ],
+    "Thanh trạng thái, thanh thông báo": [
+      "Fix: Couldn't open notification settings in the Notification shade in Second space",
+      "Fix: Couldn't open the Notification shade in some cases"
+    ],
+    "Trợ lý mạng": [
+      "Sửa lỗi thống kê số lượng danh sách trắng không chính xác",
+      "Khắc phục vấn đề giật lag khi tìm kiếm ứng dụng trong một số trường hợp",
+      "Sửa: Cảnh báo sử dụng dữ liệu xuất hiện nhiều lần",
+      "Đã sửa lỗi quy tắc kiểm soát mạng bất thường sau khi đổi SIM.",
+      "Sửa lỗi quy tắc kiểm soát mạng bất thường sau khi đổi thẻ SIM"
+    ],
+    "Trung tâm An ninh": [
+      "Đã sửa: Trợ lý phong bao đỏ không hiển thị cửa sổ nổi trong Không gian thứ hai."
+    ],
     "Dịch vụ đám mây Xiaomi": [
       "Sửa: Ứng dụng buộc đóng trong một số trường hợp"
     ],
@@ -446,6 +519,20 @@
     "ระบบ": [
       "อัปเดตแพทช์ความปลอดภัยของแอนดรอยด์ เป็นเดือนกุมภาพันธ์ 2020 เพิ่มความปลอดภัยของระบบ",
       "แก้ไข: ภาพซ้อนทับในการเลื่อนการบันทึกหน้าจอ"
+    ],
+    "แถบสถานะ, แผงการแจ้งเตือน": [
+      "Fix: Couldn't open notification settings in the Notification shade in Second space",
+      "Fix: Couldn't open the Notification shade in some cases"
+    ],
+    "ผู้ช่วยออนไลน์": [
+      "แก้ไขปัญหาการนับจำนวนไวท์ลิสต์ไม่ถูกต้อง",
+      "แก้ไขปัญหาหน่วงเมื่อค้นหาแอปในบางสถานการณ์",
+      "แก้ไข: คำเตือนการใช้ข้อมูลปรากฏหลายครั้ง",
+      "แก้ไขปัญหากฎการควบคุมเครือข่ายผิดปกติหลังจากสลับซิมการ์ด",
+      "แก้ไขปัญหากฎควบคุมเครือข่ายทำงานผิดปกติหลังสลับซิมการ์ด"
+    ],
+    "ความปลอดภัย": [
+      "แก้ไข: ผู้ช่วยซองแดงไม่แสดงหน้าต่างลอยในพื้นที่ที่สอง"
     ],
     "บริการคลาวด์ Xiaomi": [
       "Fix: The app force closed in some cases"
@@ -475,17 +562,20 @@
       "إصلاح لا يمكن فتح إعدادات الإشعارات من مركز الإشعارات في الواجهة الثانية",
       "إصلاح لا يمكن فتح مركز الإشعارات في بعض الحالات"
     ],
-    "استخدام البيانات": [
+    "مساعد الإنترنت": [
       "الإصلاح لم يتم عرض العناصر المتعلقة بالإستثناءات دائمًا بدقة",
       "الإصلاح يؤدي البحث عن تطبيقات إلى إبطاء الجهاز",
       ":الإصلاح ظهور تحذير استخدام البيانات عدة مرات",
       "الإصلاح حدوث أخطاء بعد تبديل بطاقات SIM",
       ":الإصلاح حدوث أخطاء بعد تبديل بطاقات SIM"
     ],
+    "الأمان": [
+      "تم الإصلاح: مساعد الظرف الأحمر لا يعرض نافذة عائمة في المساحة الثانية."
+    ],
     "خدمة Xiaomi السحابية": [
       "إصلاح الخروج الإجباري للتطبيق في بعض الحالات"
     ],
-    "أخرى": [
+    "آخرين": [
       "إصلاح تداخل الصورفي لقطات الشاشة قابلة للتمرير",
       ":الإصلاح تداخل الصور في لقطات الشاشة القابلة للتمرير",
       "تحسين أمن واستقرار النظام"
@@ -508,6 +598,16 @@
       "Fix: Couldn't open notification settings in the Notification shade in Second space",
       "Fix: Couldn't open the Notification shade in some cases"
     ],
+    "वर्चुअल असिस्टेंट": [
+      "व्हाइटलिस्ट की संख्या की गलत गणना की समस्या ठीक की गई",
+      "कुछ स्थितियों में ऐप खोजते समय होने वाली रुकावट को ठीक किया गया",
+      "ठीक करें: डेटा उपयोग चेतावनी कई बार दिखाई दी",
+      "SIM कार्ड बदलने के बाद नेटवर्क नियंत्रण नियमों के असामान्य होने की समस्या ठीक की गई।",
+      "SIM कार्ड बदलने के बाद नेटवर्क नियंत्रण नियमों में गड़बड़ी की समस्या ठीक की गई"
+    ],
+    "सुरक्षा": [
+      "ठीक किया गया: रेड एनवेलप सहायक सेकंड स्पेस में फ़्लोटिंग विंडो नहीं दिखाता."
+    ],
     "Xiaomi क्लाउड सेवा": [
       "Fix: The app force closed in some cases"
     ],
@@ -518,6 +618,9 @@
     "स्टेटस बार, नोटिफिकेशन शेड": [
       "Fix: Couldn't open notification settings in the Notification shade in Second space",
       "Fix: Couldn't open the Notification shade in some cases"
+    ],
+    "Xiaomi Cloud": [
+      "ठीक किया गया: सिस्टम बार-बार 'डिवाइस ID पहचानी नहीं जा सकी' संदेश दिखाता था"
     ]
   },
   "logs_ug": {
@@ -529,12 +632,25 @@
       "Fix: Couldn't open notification settings in the Notification shade in Second space",
       "Fix: Couldn't open the Notification shade in some cases"
     ],
+    "تور ياردەمچىسى": [
+      "ئاق تىزىملىك سانىنىڭ خاتا ستاتىستىكا قىلىنىش مەسىلىسى تۈزىتىلدى",
+      "بەزى ئەھۋاللاردا ئەپلەرنى ئىزدەشتە كېچىكىش مەسىلىسىنى ئوڭشاش",
+      "Fix: Data usage warning appeared multiple times",
+      "SIM كارتىنى ئالماشتۇرغاندىن كېيىن تورغا ئۇلىنىش كونترول قائىدىسىدە كۆرۈلگەن مەسىلىنى تۈزىتىش",
+      "ئوڭشالدى: SIM كارتا ئالماشتۇرۇلغاندىن كېيىن تورغا چىقىش كونتروللۇق قائىدىلىرىدە كۆرۈلگەن نورمالسىزلىق مەسىلىسى"
+    ],
+    "بىخەتەرلىك مەركىزى": [
+      "قىزىل ئوراپ ياردەمچىسىنىڭ ئىككىنچى بوشلۇقتا لەيلەنمە كۆزنىكىنى كۆرسەتمەسلىك مەسىلىسى ئوڭشالدى"
+    ],
     "Xiaomi بۇلۇت مۇلازىمىتى": [
       "Fix: The app force closed in some cases"
     ],
     "باشقىلىرى": [
       "Fix: Images overlapped in scrolling screenshots",
       "Improved system security and stability"
+    ],
+    "Xiaomi Cloud": [
+      "سىستېمىنىڭ ئۈسكۈنە ID نى تونۇيالماي ئۈزلۈكسىز ئەسكەرتىش چىقىرىش مەسىلىسىنى ئوڭشاش"
     ]
   },
   "logs_bo": {

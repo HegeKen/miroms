@@ -400,6 +400,17 @@ def run_review(args) -> int:
 	except DeepSeekError as exc:
 		print(f'✖ {exc}')
 		return 2
+	mark_stats = {'annotated': 0, 'proofed': 0, 'unproofed': 0}
+
+	def flush_marks(parsed) -> None:
+		# 每个 family 立即落库：长跑中断也不丢已完成的标注
+		if args.no_mark:
+			return
+		annotated, ok_count, bad_count = record_ai_marks(parsed)
+		mark_stats['annotated'] += annotated
+		mark_stats['proofed'] += ok_count
+		mark_stats['unproofed'] += bad_count
+
 	try:
 		def progress(index: int, total: int, family: dict, cached: bool) -> None:
 			if index == 1 or index % 10 == 0 or index == total:
@@ -409,7 +420,8 @@ def run_review(args) -> int:
 		result = LogProofreader.review(
 			report['families'], client, only_priority=not args.all,
 			limit=args.limit, cache_path=args.cache,
-			min_confidence=args.min_confidence, on_progress=progress)
+			min_confidence=args.min_confidence, on_progress=progress,
+			on_decisions=flush_marks)
 	except DeepSeekError as exc:
 		print(f'✖ DeepSeek 调用失败：{exc}')
 		return 1

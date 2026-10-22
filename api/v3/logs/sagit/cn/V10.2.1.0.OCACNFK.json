@@ -10,10 +10,11 @@
       "修复 搜索界面图标显示异常的问题"
     ],
     "录音机": [
+      "修复：当录音被暂停时，通知栏中的录音状态信息不会更新。",
       "修复 暂停录音后无法及时更新到状态栏的问题"
     ],
-    "网络助手": [
-      "新增 日租卡/无限流量卡模式，可设置大王卡、米粉卡、天神卡等套餐类型，流量校正更准确"
+    "数据使用情况": [
+      "新增更多可用的数据套餐选项。"
     ],
     "小米帐号": [
       "修复 登陆页面字体显示错误的问题"
@@ -23,6 +24,9 @@
     ]
   },
   "logs_en": {
+    "System": [
+      "Fix flashlight not turning on via shortcut key"
+    ],
     "Camera": [
       "Fix: Burst shots were made accidentally",
       "Restore Burst shots were made accidentally"
@@ -31,35 +35,48 @@
       "Restore Icons on the search page were displayed incorrectly"
     ],
     "Recorder": [
-      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused",
+      "Fixed the issue where the status bar was not updated promptly after stopping the recording.",
       "Restore Recording status wasn't updated in the Notification shade when a recording was paused"
     ],
-    "Data Usage": [
-      "Add More data plans available"
+    "Online Assistant": [
+      "New daily rental card/infinite data usage card modes have been added, allowing for the selection of package types such as “Dawang Card,” “Mifen Card,” and “Tianshen Card.” The data usage correction is now more accurate."
+    ],
+    "Mi Account": [
+      "Fix the font display issue on the login page"
     ],
     "Other": [
       "Improved system security and stability"
     ]
   },
   "logs_zh_tw": {
+    "系統": [
+      "修正 透過快捷鍵開啟手電筒失效的問題"
+    ],
     "相機": [
       "修復 偶現的自動連拍問題",
       "修正 偶發的自動連拍問題"
     ],
-    "檔案管理員": [
+    "文件管理器": [
       "修復搜尋介面圖示顯示異常的問題"
     ],
-    "錄音機": [
+    "录音机": [
+      "修复了在暂停录音后，系统无法及时将录音状态更新到状态栏的问题。",
       "修復 暫停錄音後無法即時更新到狀態欄的問題"
     ],
     "網路助手": [
-      "新增 日租卡/無限流量卡模式，可設定大王卡、米粉卡、天神卡等套餐類型，流量校正更準確"
+      "新增了“日租卡”和“无限流量卡”两种消费模式，用户可以自由选择使用“大王卡”、“米粉卡”、“天神卡”等不同的套餐类型；同时，流量的计算与调整也更加精确了。"
+    ],
+    "小米帳號": [
+      "修復 登入頁面字型顯示錯誤的問題"
     ],
     "其他": [
       "Improved system security and stability"
     ]
   },
   "logs_ja": {
+    "システム": [
+      "ショートカットキーでライトが点灯しない問題を修正"
+    ],
     "カメラ": [
       "偶発的な自動連写の問題を修正"
     ],
@@ -67,73 +84,97 @@
       "検索画面のアイコンが正しく表示されない問題を修正"
     ],
     "レコーダー": [
-      "修正: 録音を一時停止した際、通知シェードの録音状態が更新されない問題",
+      "録音を一時停止した後、ステータスバーの表示がすぐに更新されない問題を修正しました。",
       "修正: 録音を一時停止すると、通知シェードの録音ステータスが更新されませんでした"
     ],
-    "データ使用量": [
-      "日租カード/無制限データカードモードを追加。大王卡、米粉卡、天神卡などのプランタイプを設定でき、データ通信量の補正がより正確になります"
+    "ネットワークアシスタント": [
+      "新たに「日額レンタルカード／無制限データ通信カード」モードが追加されました。大王カード、米粉カード、天神カードなどのプランタイプを設定でき、データ通信量の計算精度がさらに向上しました。"
+    ],
+    "Mi アカウント": [
+      "ログインページのフォント表示エラーを修正しました"
     ],
     "その他": [
       "システムのセキュリティと安定性の向上"
     ]
   },
   "logs_ko": {
+    "시스템": [
+      "단축키로 손전등이 켜지지 않는 문제 수정"
+    ],
     "카메라": [
       "간헐적인 자동 연사 문제 수정"
     ],
     "파일 관리자": [
       "검색 화면의 아이콘이 비정상적으로 표시되는 문제를 수정했습니다"
     ],
-    "녹음기": [
-      "수정: 녹음을 일시중지했을 때 알림 창의 녹음 상태가 업데이트되지 않던 문제",
+    "레코더": [
+      "녹음을 일시 중단한 후 상태 표시줄에 즉시 업데이트되지 않는 문제를 수정했습니다.",
       "수정: 녹음을 일시 중지하면 알림 창의 녹음 상태가 업데이트되지 않았습니다"
     ],
-    "데이터 사용량": [
-      "일일 요금제/무제한 데이터 카드 모드 추가. 大王卡, 米粉卡, 天神卡 등 요금제 유형을 설정할 수 있으며 데이터 보정이 더 정확해집니다"
+    "네트워크 어시스턴트": [
+      "새로운 ‘일일 대여 카드’ 및 ‘무제한 데이터 사용 카드’ 모드가 추가되었습니다. 대왕카, 미분카, 천신카 등 다양한 패키지 유형을 설정할 수 있으며, 데이터 사용량의 측정이 보다 정확해졌습니다."
+    ],
+    "Mi 계정": [
+      "로그인 페이지의 글꼴 표시 오류를 수정했습니다"
     ],
     "기타": [
       "시스템 보안 및 안정성 개선"
     ]
   },
   "logs_ru": {
+    "Система": [
+      "Исправлена проблема, из-за которой фонарик не включался с помощью сочетания клавиш"
+    ],
     "Камера": [
       "Исправлена проблема со случайной автоматической серийной съёмкой",
       "Исправлена периодическая проблема с автоматической серийной съёмкой"
     ],
-    "Файловый менеджер": [
+    "Проводник файлов": [
       "Исправлена проблема с неправильным отображением значков в интерфейсе поиска"
     ],
     "Диктофон": [
-      "Fix: Факт остановки записи не отображался в строке состояния вовремя",
+      "Устранено недостаток, связанный с тем, что после приостановки записи информация не своевременно отображается в панели состояния.",
       "Исправлено: Факт остановки записи не отображался в строке состояния вовремя"
     ],
-    "Трафик": [
-      "Добавлен режим дневной карты/карты безлимитного трафика; можно выбрать тарифы 大王卡, 米粉卡, 天神卡 и др., коррекция трафика стала точнее"
+    "Интернет-ассистент": [
+      "Добавлены новые режимы работы карт для ежедневной аренды и карт с неограниченным объемом трафика. Можно настроить пакеты услуг, такие как „Да Ван Кар“, „Ми Фэн Кар“ и „Тянь Шэн Кар“. Коррекция расчетов объема трафика стала более точной."
+    ],
+    "Аккаунт Mi": [
+      "Исправлена ошибка отображения шрифта на странице входа"
     ],
     "Другое": [
       "Улучшение безопасности и стабильности системы"
     ]
   },
   "logs_uk": {
+    "Система": [
+      "Виправлено проблему, через яку ліхтарик не вмикався за допомогою комбінації клавіш"
+    ],
     "Камера": [
       "Виправлено проблему з випадковою автоматичною серійною зйомкою",
       "Виправлено періодичну проблему з автоматичною серійною зйомкою"
     ],
-    "Файловий менеджер": [
+    "Провідник файлів": [
       "Виправлено проблему з неправильним відображенням значків в інтерфейсі пошуку"
     ],
     "Диктофон": [
-      "Виправлено: стан запису не оновлювався в панелі сповіщень під час паузи запису",
+      "Виправлено проблему, коли після призупинення запису інформація не вчасно оновлюється у панелі стану.",
       "Виправлено проблему, коли стан запису не оновлювався в рядку стану вчасно після призупинення запису"
     ],
-    "Передача даних": [
-      "Додано режим денної картки/картки безлімітного трафіку; можна вибрати тарифи 大王卡, 米粉卡, 天神卡 тощо, коригування трафіку точніше"
+    "Інтернет-асистент": [
+      "Додано нові режими карток для щоденної оренди та карток з необмеженим обсягом даних. Можна налаштувати такі типи пакетів, як „Даван Карта“, „Міфень Карта“, „Тяньшен Карта“ тощо. Корекція обсягу переданих даних стала більш точною."
+    ],
+    "Обліковий запис Mi": [
+      "Виправлено помилку відображення шрифту на сторінці входу"
     ],
     "Інше": [
       "Покращення безпеки та стабільності системи"
     ]
   },
   "logs_pl": {
+    "System": [
+      "Naprawiono problem z włączaniem latarki skrótem klawiszowym"
+    ],
     "Aparat": [
       "Naprawiono problem z przypadkową automatyczną serią zdjęć",
       "Naprawiono sporadyczny problem z automatyczną serią zdjęć"
@@ -141,18 +182,24 @@
     "Menedżer plików": [
       "Naprawiono problem z nieprawidłowym wyświetlaniem ikon w interfejsie wyszukiwania"
     ],
-    "Rejestrator": [
-      "Poprawka: stan nagrywania nie był aktualizowany na pasku powiadomień po wstrzymaniu nagrywania",
+    "Kaseta nagrywająca": [
+      "Poprawiono problem z niewłaściwym aktualizowaniem stanu w pasku stanu po przywołaniu funkcji przerywania nagrywania.",
       "Naprawiono: Status nagrywania nie był aktualizowany w panelu powiadomień po wstrzymaniu nagrywania"
     ],
-    "Użycie danych": [
-      "Dodano tryb karty dziennej/karty z nielimitowanym transferem; można ustawić typy planów, np. 大王卡, 米粉卡, 天神卡, a korekta danych jest dokładniejsza"
+    "Asystent online": [
+      "Dodano nowe modele kart do wynajęcia na dzień oraz kart z nieograniczonym limitem transmisji danych. Można ustawić różne typy pakietów, np. „Dawang Card”, „Mifen Card”, „Tianshen Card” itd. Korekcja ilości przekazanych danych jest teraz bardziej dokładna."
     ],
-    "Inne": [
+    "Konto Mi": [
+      "Naprawiono błąd wyświetlania czcionki na stronie logowania"
+    ],
+    "Reszt": [
       "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
   "logs_de": {
+    "System": [
+      "Problem behoben, bei dem die Taschenlampe nicht per Tastenkürzel eingeschaltet wurde"
+    ],
     "Kamera": [
       "Problem mit gelegentlichen automatischen Serienaufnahmen behoben",
       "Gelegentliches Problem mit automatischer Serienaufnahme behoben"
@@ -160,18 +207,24 @@
     "Dateimanager": [
       "Problem mit der falschen Anzeige von Symbolen in der Suchoberfläche behoben"
     ],
-    "Rekorder": [
-      "Behoben: Der Aufnahmestatus wurde in der Benachrichtigungsleiste nicht aktualisiert, wenn eine Aufnahme pausiert wurde",
+    "Tonaufnahmegerät": [
+      "Behebung des Problems, dass sich der Status nach einer Unterbrechung der Aufnahmefunktion nicht rechtzeitig in der Statusleiste aktualisiert.",
       "Behoben: Der Aufnahmestatus wurde bei pausierter Aufnahme nicht in der Benachrichtigungsleiste aktualisiert"
     ],
-    "Datennutzung": [
-      "Modus für Tageskarte/Unlimited-Datenkarte hinzugefügt; Tariftypen wie 大王卡, 米粉卡, 天神卡 können festgelegt werden, Datenkorrektur genauer"
+    "Online-Assistent": [
+      "Neuer Modus für Tagesmietkarten bzw. Karten mit unbegrenztem Datenvolumen hinzugefügt. Es ist möglich, Pakettypen wie „Dawang-Karte“, „Mifen-Karte“ oder „Tianshen-Karte“ einzustellen; die Korrektur des Datenvolumens erfolgt nun genauer."
+    ],
+    "Mi-Konto": [
+      "Fehler bei der Schriftanzeige auf der Anmeldeseite behoben"
     ],
     "Sonstiges": [
       "Systemsicherheit und -stabilität verbessert"
     ]
   },
   "logs_fr": {
+    "Système": [
+      "Correction du problème où la lampe torche ne s'allumait pas via un raccourci clavier"
+    ],
     "Appareil photo": [
       "Correction du problème intermittent de rafale automatique",
       "Correction du problème intermittent de prise de vue en rafale automatique"
@@ -180,11 +233,14 @@
       "Correction du problème d'affichage incorrect des icônes dans l'interface de recherche"
     ],
     "Enregistreur": [
-      "Correction : l’état d’enregistrement n’était pas mis à jour dans la barre de notifications lors d’une pause",
+      "Résolution du problème : l'actualisation de l'état dans la barre d'état ne se fait pas immédiatement après l'arrêt de l'enregistrement.",
       "Correction : L'état d'enregistrement n'était pas mis à jour dans le panneau de notifications lorsque l'enregistrement était en pause"
     ],
-    "Utilisation des données": [
-      "Ajout du mode carte journalière/carte data illimitée ; possibilité de définir des forfaits comme 大王卡, 米粉卡, 天神卡, correction des données plus précise"
+    "Assistant en ligne": [
+      "De nouveaux modes de cartes à usage journalier ou avec un forfait de données illimité ont été ajoutés, permettant de sélectionner des types de forfaits tels que la « Grande Carte », la « Carte Riz » ou la « Carte Dieu ». La correction des données de consommation de données est désormais plus précise."
+    ],
+    "Compte Mi": [
+      "Correction d'un problème d'affichage de police sur la page de connexion"
     ],
     "Autre": [
       "Sécurité et stabilité du système améliorées"
@@ -194,25 +250,37 @@
     ]
   },
   "logs_it": {
-    "Fotocamera": [
+    "Sistema": [
+      "Risolto il problema per cui la torcia non si attivava tramite scorciatoia da tastiera"
+    ],
+    "macchina fotografica": [
       "Risolto il problema degli scatti in raffica automatici occasionali",
       "Risolto il problema intermittente della raffica automatica"
     ],
-    "Gestione file": [
+    "File Manager": [
       "Risolto il problema di visualizzazione errata delle icone nell'interfaccia di ricerca"
     ],
     "Registratore": [
-      "Correzione: lo stato di registrazione non veniva aggiornato nella barra delle notifiche quando una registrazione veniva messa in pausa",
+      "Risolto il problema per cui, dopo aver interrotto la registrazione, lo stato della registrazione non veniva aggiornato tempestivamente nella barra di stato.",
       "Risolto: Lo stato della registrazione non era aggiornato nell'area delle notifiche quando una registrazione veniva messa in pausa"
     ],
-    "Utilizzo dei dati": [
-      "Aggiunta modalità carta giornaliera/carta dati illimitata; puoi impostare piani come 大王卡, 米粉卡, 天神卡, correzione dati più precisa"
+    "Assistente online": [
+      "È stata aggiunta una nuova modalità per le carte a noleggio giornaliero o con traffico illimitato, che consente di configurare pacchetti come “Dawang Card”, “Mifen Card”, “Tianshen Card” ecc. La correzione del traffico dati è ora più precisa."
+    ],
+    "Account Mi": [
+      "Risolto il problema di visualizzazione del carattere nella pagina di accesso"
     ],
     "Altro": [
       "Maggiore sicurezza e stabilità di sistema"
+    ],
+    "Fotocamera": [
+      "Risolto il problema degli scatti in raffica automatici occasionali"
     ]
   },
   "logs_es": {
+    "Sistema": [
+      "Se corrigió el problema por el que la linterna no se encendía con el atajo de teclado"
+    ],
     "Cámara": [
       "Corregido el problema de ráfaga automática ocasional",
       "Se corrige el problema intermitente de ráfaga automática"
@@ -221,17 +289,23 @@
       "Solucionado el problema de visualización incorrecta de los iconos en la interfaz de búsqueda"
     ],
     "Grabadora": [
-      "Corrección: El estado de grabación no se actualizaba en la barra de notificaciones al pausar una grabación",
+      "Se ha corregido el problema de que, después de detener la grabación, no se actualiza a tiempo la información en la barra de estado.",
       "Reparado: El estado de la grabación no fue actualizado en la Barra de notificaciones cuando la grabación fue pausada"
     ],
-    "Uso de datos": [
-      "Se añade el modo tarjeta diaria/tarjeta de datos ilimitados; permite configurar planes como 大王卡, 米粉卡, 天神卡, corrección de datos más precisa"
+    "Asistente de red": [
+      "Se ha añadido un nuevo modo de tarjeta de alquiler diario/tarjeta con datos ilimitados, que permite configurar tipos de paquetes como la Tarjeta Gran Rey, la Tarjeta Arroz de Fideos y la Tarjeta Dios Celestial. La corrección del consumo de datos es ahora más precisa."
+    ],
+    "Cuenta Mi": [
+      "Se ha corregido el problema de visualización de la fuente en la página de inicio de sesión"
     ],
     "Otros": [
       "Estabilidad y seguridad del sistema mejorada"
     ]
   },
   "logs_pt": {
+    "Sistema": [
+      "Corrigido o problema em que a lanterna não ligava pelo atalho de teclado"
+    ],
     "Câmera": [
       "Corrigido o problema de disparo em rajada automático ocasional",
       "Corrigido o problema intermitente de captura em rajada automática"
@@ -240,17 +314,23 @@
       "Corrigido o problema de exibição incorreta dos ícones na interface de pesquisa"
     ],
     "Gravador": [
-      "Correção: o estado da gravação não era atualizado na barra de notificações ao pausar uma gravação",
+      "Corrigir o problema de não ser possível atualizar a barra de estado de forma imediata após interromper a gravação.",
       "Corrigido o problema de o estado da gravação não ser atualizado na barra de status em tempo hábil após pausar a gravação"
     ],
-    "Uso de dados": [
+    "Assistente de Rede": [
       "Adicionado modo cartão diário/cartão de dados ilimitados; permite definir planos como 大王卡, 米粉卡, 天神卡, correção de dados mais precisa"
+    ],
+    "Conta Mi": [
+      "Corrigido o problema de exibição da fonte na página de login"
     ],
     "Outros": [
       "Segurança e estabilidade do sistema aprimoradas"
     ]
   },
   "logs_tr": {
+    "Sistem": [
+      "Kısayol tuşuyla el fenerinin açılmaması sorunu düzeltildi"
+    ],
     "Kamera": [
       "Ara sıra otomatik seri çekim sorunu düzeltildi",
       "Ara sıra oluşan otomatik seri çekim sorunu giderildi"
@@ -259,36 +339,48 @@
       "Arama arayüzündeki simgelerin yanlış görüntülenmesi sorunu giderildi"
     ],
     "Kayıt Cihazı": [
-      "Düzeltme: Kayıt duraklatıldığında kayıt durumu bildirim çubuğunda güncellenmiyordu",
+      "Kaydı durdurduktan sonra durum çubuğunda zamanında güncelleme yapılamaması sorununu düzelttik.",
       "Onarım: Bir kayıt durdurulduğunda, kayıt durumu Bildirim çubuğunda güncellenmedi"
     ],
-    "Veri kullanımı": [
-      "Günlük kart/sınırsız veri kartı modu eklendi; 大王卡, 米粉卡, 天神卡 gibi paket türleri ayarlanabilir, veri düzeltmesi daha doğru"
+    "Ağ Asistanı": [
+      "Yeni olarak günlük kiralama kartı/yetkisiz veri kullanımı kartı modu eklendi. Wangda Kart, Fenmi Kart, Tianshen Kart gibi paket türleri ayarlanabilir hale geldi ve veri kullanımı hesaplamaları daha da doğru hale getirildi."
+    ],
+    "Mi Hesabı": [
+      "Giriş sayfasındaki yazı tipi görüntüleme sorunu düzeltildi"
     ],
     "Diğer": [
       "Sistem güvenliği ve kararlılığı geliştirildi"
     ]
   },
   "logs_id": {
+    "Sistem": [
+      "Memperbaiki masalah lampu senter tidak menyala melalui pintasan tombol"
+    ],
     "Kamera": [
       "Memperbaiki masalah burst shot otomatis yang kadang terjadi",
       "Memperbaiki masalah pengambilan foto burst otomatis yang terkadang terjadi"
     ],
-    "Pengelola File": [
+    "File Manager": [
       "Memperbaiki masalah ikon di antarmuka pencarian yang ditampilkan secara tidak normal"
     ],
     "Perekam": [
-      "Perbaikan: Status perekaman tidak diperbarui di bilah notifikasi saat perekaman dijeda",
+      "Memperbaiki masalah di mana status rekaman tidak diperbarui secara tepat waktu setelah proses pemberhentian rekaman dilakukan.",
       "Memperbaiki masalah status perekaman yang tidak diperbarui tepat waktu di bilah status setelah perekaman dijeda"
     ],
-    "Penggunaan data": [
-      "Menambahkan mode kartu harian/kartu data tak terbatas; dapat mengatur jenis paket seperti 大王卡, 米粉卡, 天神卡, koreksi data lebih akurat"
+    "Pembantu Jaringan": [
+      "Diluncurkan mode kartu sewa harian/kartu data tak terbatas baru, yang memungkinkan pengaturan jenis paket seperti Kartu Raja, Kartu Bihun, Kartu Dewa, dll. Koreksi jumlah data yang digunakan menjadi lebih akurat."
+    ],
+    "Akun Mi": [
+      "Memperbaiki masalah tampilan font di halaman login"
     ],
     "Lainnya": [
       "Keamanan dan stabilitas sistem ditingkatkan"
     ]
   },
   "logs_vi": {
+    "Hệ thống": [
+      "Khắc phục sự cố đèn pin không bật bằng phím tắt"
+    ],
     "Máy ảnh": [
       "Sửa lỗi đôi khi tự động chụp liên tiếp",
       "Khắc phục sự cố chụp liên tiếp tự động không thường xuyên"
@@ -297,11 +389,14 @@
       "Đã sửa lỗi biểu tượng trong giao diện tìm kiếm hiển thị không đúng"
     ],
     "Máy ghi âm": [
-      "Đã sửa: Trạng thái ghi âm không được cập nhật kịp thời trên thanh thông báo khi tạm dừng ghi âm",
+      "Khắc phục sự cố khi tạm dừng quá trình ghi âm không thể cập nhật kịp thời thông tin vào thanh trạng thái.",
       "Sửa lỗi trạng thái ghi âm không được cập nhật kịp thời trên thanh trạng thái sau khi tạm dừng ghi âm"
     ],
-    "Sử dụng dữ liệu": [
-      "Thêm chế độ thẻ ngày/thẻ dữ liệu không giới hạn; có thể đặt loại gói như 大王卡, 米粉卡, 天神卡, hiệu chỉnh dữ liệu chính xác hơn"
+    "Trợ lý mạng": [
+      "Đã thêm chế độ thẻ cho thuê theo ngày/thẻ data không giới hạn. Người dùng có thể lựa chọn các gói dịch vụ như Thẻ Đại Vương, Thẻ Gạo Xay, Thẻ Thiên Thần, v.v. Việc điều chỉnh lượng data sẽ trở nên chính xác hơn."
+    ],
+    "Tài khoản Mi": [
+      "Đã sửa lỗi hiển thị phông chữ trên trang đăng nhập"
     ],
     "Khác": [
       "Cải thiện tính ổn định và bảo mật hệ thống"
@@ -311,6 +406,9 @@
     ]
   },
   "logs_th": {
+    "ระบบ": [
+      "แก้ไขปัญหาไฟฉายไม่เปิดเมื่อใช้ปุ่มลัด"
+    ],
     "กล้อง": [
       "แก้ไขปัญหาการถ่ายภาพต่อเนื่องอัตโนมัติเป็นครั้งคราว",
       "แก้ไขปัญหาการถ่ายภาพต่อเนื่องอัตโนมัติที่เกิดขึ้นเป็นครั้งคราว"
@@ -319,17 +417,23 @@
       "แก้ไขปัญหาการแสดงไอคอนในหน้าค้นหาผิดปกติ"
     ],
     "เครื่องบันทึกเสียง": [
-      "แก้ไข: สถานะการบันทึกเสียงไม่ได้รับการอัปเดตในแถบการแจ้งเตือนเมื่อหยุดการบันทึกชั่วคราว",
+      "แก้ไขปัญหาที่การหยุดบันทึกเสียงไม่สามารถอัปเดตสถานะในแถบสถานะ (status bar) ได้อย่างทันท่วงที",
       "แก้ไขปัญหาสถานะการบันทึกเสียงไม่ได้รับการอัปเดตในแถบสถานะอย่างทันท่วงทีหลังจากหยุดการบันทึกชั่วคราว"
     ],
-    "การใช้ข้อมูล": [
-      "เพิ่มโหมดการ์ดรายวัน/การ์ดข้อมูลไม่จำกัด สามารถตั้งค่าประเภทแพ็กเกจ เช่น 大王卡, 米粉卡, 天神卡 การแก้ไขข้อมูลแม่นยำขึ้น"
+    "ผู้ช่วยออนไลน์": [
+      "เพิ่มโหมดบัตรใช้งานแบบรายวัน/บัตร data ไม่จำกัด สามารถตั้งค่าแพ็กเกจต่างๆ เช่น บัตร Da Wang, บัตร Mi Fen, บัตร Tian Shen ได้ ทำให้การปรับข้อมูล data เป็นไปอย่างแม่นยำยิ่งขึ้น"
+    ],
+    "บัญชี Mi": [
+      "แก้ไขปัญหาการแสดงผลแบบอักษรบนหน้าเข้าสู่ระบบ"
     ],
     "อื่นๆ": [
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
     ]
   },
   "logs_ar": {
+    "النظام": [
+      "إصلاح مشكلة عدم تشغيل المصباح عبر اختصار لوحة المفاتيح"
+    ],
     "كاميرا": [
       "إصلاح مشكلة التصوير المتتابع التلقائي العرضي",
       "إصلاح مشكلة التصوير المتتابع التلقائي العرضية"
@@ -337,14 +441,17 @@
     "مدير الملفات": [
       "تم إصلاح مشكلة عرض الأيقونات بشكل غير صحيح في واجهة البحث"
     ],
-    "مسجل": [
-      "إصلاح: لم يتم تحديث حالة التسجيل في شريط الإشعارات عند إيقاف التسجيل مؤقتًا",
+    "جهاز التسجيل": [
+      "تم إصلاح المشكلة التي تمنع تحديث حالة الجهاز بشكل فوري بعد توقف عملية التسجيل.",
       "إصلاح مشكلة عدم تحديث حالة التسجيل في شريط الحالة في الوقت المناسب بعد إيقاف التسجيل مؤقتًا"
     ],
-    "استخدام البيانات": [
-      "إضافة وضع بطاقة يومية/بطاقة بيانات غير محدودة؛ يمكن تعيين أنواع خطط مثل 大王卡 و米粉卡 و天神卡، وتصحيح البيانات أكثر دقة"
+    "مساعد الإنترنت": [
+      "تم إضافة وضعيات جديدة لبطاقات الإيجار اليومي وبطاقات النطاق الترددي غير المحدود، حيث يمكن تخصيص أنواع مختلفة من البطاقات مثل بطاقة “الملك العظيم” وبطاقة “رز الأرز” وبطاقة “إله السماء”، كما أصبح تصحيح قيم النطاق الترددي أكثر دقة."
     ],
-    "أخرى": [
+    "حساب Mi": [
+      "تم إصلاح مشكلة عرض الخط في صفحة تسجيل الدخول"
+    ],
+    "آخرين": [
       "تحسين أمن واستقرار النظام"
     ],
     "الكاميرا": [
@@ -352,6 +459,9 @@
     ]
   },
   "logs_in": {
+    "सिस्टम": [
+      "शॉर्टकट कुंजी से फ़्लैशलाइट न चालू होने की समस्या ठीक की गई"
+    ],
     "कैमरा": [
       "कभी-कभार स्वचालित बर्स्ट शॉट की समस्या ठीक की गई",
       "कभी-कभार होने वाली स्वचालित बर्स्ट शॉट समस्या ठीक की गई"
@@ -360,11 +470,14 @@
       "खोज इंटरफ़ेस में आइकन के गलत प्रदर्शित होने की समस्या ठीक की गई"
     ],
     "रिकॉर्डर": [
-      "समस्या ठीक की गई: रिकॉर्डिंग पॉज़ करने पर नोटिफ़िकेशन शेड में स्थिति तुरंत अपडेट नहीं होती थी",
+      "वह समस्या दूर की गई है जिसके कारण रिकॉर्डिंग रोकने के बाद स्टेट बार (Status Bar) में समय पर अपडेट नहीं हो पाता था।",
       "रिकॉर्डिंग को पॉज़ करने के बाद स्टेटस बार में रिकॉर्डिंग स्थिति समय पर अपडेट न होने की समस्या ठीक की गई"
     ],
-    "डेटा उपयोग": [
-      "दैनिक कार्ड/असीमित डेटा कार्ड मोड जोड़ा गया; 大王卡, 米粉卡, 天神卡 जैसे प्लान प्रकार सेट किए जा सकते हैं, डेटा सुधार अधिक सटीक"
+    "वर्चुअल असिस्टेंट": [
+      "अब नए “दैनिक कार्ड”/“अनंत डेटा प्रवाह कार्ड” पैटर्न जोड़े गए हैं; इनमें “डायमंड कार्ड”, “राइस मिल कार्ड”, “टियन शेन कार्ड” आदि पैकेजों के विकल्प उपलब्ध हैं। डेटा प्रवाह संबंधी जानकारियाँ अधिक सटीक हो गई हैं।"
+    ],
+    "Mi खाता": [
+      "लॉगिन पेज पर फ़ॉन्ट प्रदर्शन त्रुटि ठीक की गई"
     ],
     "अन्य": [
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
@@ -374,9 +487,15 @@
     "ھۆججەت باشقۇرغۇچ": [
       "ئىزدەش كۆرۈنمە يۈزىدىكى سىنبەلگىلەرنىڭ خاتا كۆرسىتىلىش مەسىلىسى تۈزىتىلدى"
     ],
-    "ئاۋاز ئالغۇ": [
-      "ئۈن ئېلىش توختىتىلغاندىن كېيىن ئۇقتۇرۇش تاختىسىدا ھالەت ۋاقتىدا يېڭىلانماسلىق مەسىلىسى تۈزىتىلدى",
+    "ئۈن خاتىرىلەش ماشىنىسى": [
+      "ئۈن ئالماشتۇرۇشنى توختاتقاندىن كېيىن ، ھالەت سترېكچىسىگە (status bar) ئۆزۋاقتىدا يېڭىلاش مۇمكىن بولماسلىق مەسىلىسىنى تۈزى دۇق.",
       "ئۈن ئېلىشنى توختىتىپ قويغاندىن كېيىن ئۈن ئېلىش ھالىتىنىڭ ھالەت بالدىقىغا ۋاقتىدا يېڭىلانماسلىق مەسىلىسى ئوڭشىلدى."
+    ],
+    "تور ياردەمچىسى": [
+      "يېڭىدىن قوشۇلغان « كۈنلۈك ئىجارە كارتىسى » ۋە « چەكسىز تور سۈرئىتى كارتىسى » ئەندىزىلىرى بار بولۇپ ، « داۋاڭ كارتىسى » ، « مىفېن كارتىسى » ، « تيەنشېن كارتىسى » قاتارلىق پائالىيەت پaket لىرىنى تەڭشەشكە بولىدۇ؛ تور سۈرئىتىنى توغرالاشتۇرۇش ئىنتايىن توغرا بولىدۇ."
+    ],
+    "Mi ھېساباتى": [
+      "كىرىش بېتىدىكى خەت نۇسخىسىنى كۆرسىتىش خاتالىقى تۈزىتىلدى"
     ],
     "باشقىلىرى": [
       "Improved system security and stability"
@@ -384,8 +503,11 @@
   },
   "logs_bo": {
     "སྒྲ་འཇུག་ཆས": [
-      "སྒྲ་ཕབ་མཚམས་འཇོག་བྱས་རྗེས་གནས་ཚུལ་ཕྲེང་ལ་དུས་ཐོག་ཏུ་གསར་སྒྱུར་མི་ཐུབ་པའི་གནད་དོན་བཅོས་ཡོད།",
+      "ཡིག་སྒྲོན་གྱི་རྣམ་པར་བཟོ་བཅོས་བརྒྱབ་རྗེས་སྒྲ་ཕབ་མཚམས་འཇོག་བྱས་ན་དུས་ཐོག་ཏུ་གསར་སྒྱུར་བྱེད་མི་ཐུབ་པའི་གནད་དོན་ཐག་གཅོད།",
       "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
+    ],
+    "Mi རྩིས་ཐོ": [
+      "ནང་འཛུལ་ཤོག་ངོས་ཀྱི་ཡིག་གཟུགས་མངོན་སྟོན་ནོར་འཁྲུལ་བཅོས་བྱས།"
     ],
     "གཞན།": [
       "Improved system security and stability"

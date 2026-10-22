@@ -4,235 +4,317 @@
       "小米手机8发布基于 Android P 深度定制的 MIUI 稳定版"
     ],
     "系统": [
-      "修复 偶现进入手机分身后操作无效的问题",
-      "修复 偶现屏幕黑屏的问题",
-      "修复 亮屏息屏时屏幕异常闪烁的问题",
-      "修复 影响系统稳定性的若干问题"
+      "已修复以下问题：在进入“第二空间”后，某些操作偶尔会无法正常执行（即无法完成预期的功能）。",
+      "在某些情况下，“Restore Screen”（恢复屏幕显示）功能会失效，导致屏幕完全变黑。",
+      "在开机或关机时，屏幕会短暂地显示“Restore Screen”（恢复屏幕）的提示信息。",
+      "系统安全性和稳定性得到了提升。"
     ],
     "电话": [
-      "修复 偶现拨打接听电话时手机卡顿的问题"
+      "在拨打电话或接听电话的过程中，设备的运行速度明显变慢了。"
     ],
     "锁屏、状态栏、通知栏": [
-      "修复 双击不重要通知时，通知与快捷开关重叠的问题"
+      "当用户双击一条不重要的通知时，如果该通知的界面元素与其他界面元素发生了重叠，系统应能够自动恢复这些元素的正常显示状态（即消除重叠现象）。"
     ],
     "相机": [
       "新增 960帧慢动作，超级夜景模式"
     ],
     "设置": [
-      "修复 设置页面UI显示错位的问题",
-      "修复 部分时区无法显示地区名称的问题"
+      "在“设置”中恢复那些被放错位置的项目。",
+      "在某些时区中，“恢复区域”（Restore Regions）的功能无法正常显示。"
     ],
     "注意事项": [
-      "基于 Android Pie 的稳定版 MIUI 现已登陆小米 8！"
+      "基于 Android Pie 操作系统的稳定版 MIUI 系统现已正式应用于 Mi 8 设备上！"
     ],
     "其他": [
       "提升系统的安全性和稳定性"
     ]
   },
   "logs_en": {
-    "Phone": [
-      "Restore Device slowed down during making and answering calls"
-    ],
-    "Lockscreen, Status Bar, Notification Bar": [
-      "Restore UI elements overlapped when you double tapped an unimportant notification"
-    ],
-    "Settings": [
-      "Restore Misplaced items in the Settings",
-      "Restore Regions couldn't be displayed in some time zones"
-    ],
     "Attention": [
-      "Stable MIUI based on Android Pie comes to Mi 8!"
+      "The Xiaomi Mi 8 was released with a stable version of MIUI, which is a customized version of Android P.",
+      "The stable version of MIUI, based on Android Pie, is now available for the Xiaomi 8!"
     ],
     "System": [
-      "Restore Screen went black in some cases",
-      "Restore Screen flashed when it was turned on and off"
+      "Fixed the issue where occasionally, operations performed after splitting the phone screen would become ineffective.",
+      "Fixed the occasional issue where the screen went black.",
+      "Fixed the issue of abnormal screen flickering when using the bright screen or standby mode.",
+      "Fixed several issues that affected the stability of the system."
+    ],
+    "Phone": [
+      "Fixed the issue of occasional lagging when making or receiving calls due to the mobile phone’s hardware."
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "Fixed the issue where double-clicking on an unimportant notification caused the notification to overlap with the shortcut icon."
+    ],
+    "Camera": [
+      "New features include 960-frame slow motion and a Super Night Mode."
+    ],
+    "Settings": [
+      "Fixed the issue of incorrect UI display on the settings page.",
+      "Fixed the issue where the region names could not be displayed for some time zones."
     ],
     "Other": [
       "Improved system security and stability"
     ]
   },
   "logs_zh_tw": {
-    "電話": [
-      "修復 偶現撥打接聽電話時手機卡頓的問題"
+    "重要提示": [
+      "小米手機8發布基於 Android P 深度定制的 MIUI 穩定版"
+    ],
+    "系統": [
+      "修复了在手机处于分屏模式时某些操作失效的问题。",
+      "修复了偶尔出现的屏幕黑屏问题。",
+      "修复了在屏幕亮起或处于待机状态时屏幕出现异常闪烁的问题。",
+      "修复了几个影响系统稳定性的问题。"
+    ],
+    "电话": [
+      "修复了在偶尔拨打电话或接听电话时手机出现卡顿（运行缓慢）的问题。"
     ],
     "解鎖畫面、狀態欄、通知欄": [
-      "修正 雙擊不重要通知時，通知與快捷開關重疊的問題"
+      "修复了双击非重要通知时，通知内容与相关快捷开关会重叠的问题。"
     ],
-    "設定": [
-      "修復 設定頁面 UI 顯示錯位的問題",
+    "相機": [
+      "新增 960 幀慢動作、超級夜景模式"
+    ],
+    "设置": [
+      "已修复设置页面用户界面（UI）显示错位的问题。",
       "修正 部分時區無法顯示地區名稱的問題"
     ],
     "注意事項": [
-      "基於 Android Pie 的穩定版 MIUI 現已登陸小米 8！"
-    ],
-    "系統": [
-      "修復偶現螢幕黑屏問題",
-      "修復 亮屏息屏時螢幕異常閃爍的問題"
+      "基于 Android Pie 操作系统的稳定版本 MIUI 已正式应用于小米 8 设备上！"
     ],
     "其他": [
       "Improved system security and stability"
     ]
   },
   "logs_ja": {
+    "注意": [
+      "シャオミのスマートフォン「Mi 8」が発売されました。この端末には、Android Pをベースに深くカスタマイズされたMIUIの安定版が搭載されています。"
+    ],
+    "システム": [
+      "スマートフォンの分割画面モードに入った際に、操作が正常に機能しないという問題を修正しました。",
+      "画面が時々黒くなる問題を修正",
+      "画面が明るくなったり、一時的に暗くなったりする際に発生する画面の異常なちらつきの問題を修正しました。",
+      "システムの安定性に影響を与えるいくつかの問題を修正しました。"
+    ],
     "電話": [
       "電話の発信・着信時にまれにスマートフォンがカクつく問題を修正"
     ],
     "ロック画面、ステータスバー、通知バー": [
-      "重要でない通知をダブルタップした際に、通知とクイック設定が重なる問題を修正"
+      "重要でない通知をダブルクリックした際に、通知がショートカットと重なる問題を修正しました。"
+    ],
+    "カメラ": [
+      "新機能：960フレーム/秒のスローモーション撮影、スーパーナイトシーンモード"
     ],
     "設定": [
       "設定ページの UI 表示のずれを修正",
       "一部のタイムゾーンで地域名が表示されない問題を修正"
     ],
     "注意事項": [
-      "Android Pie ベースの安定版 MIUI が Mi 8 に登場！"
-    ],
-    "システム": [
-      "画面が時々黒くなる問題を修正",
-      "画面のオン/オフ時に画面が異常にちらつく問題を修正"
+      "Android Pieをベースにした安定版のMIUIが、Xiaomi 8に搭載されました！"
     ],
     "その他": [
       "システムのセキュリティと安定性の向上"
     ]
   },
   "logs_ko": {
+    "주의": [
+      "샤오미 스마트폰 8은 안드로이드 P를 기반으로 심층적으로 커스터마이징된 MIUI의 안정적인 버전을 출시했습니다."
+    ],
+    "시스템": [
+      "휴대폰을 분할 모드로 전환한 후에 일부 작업이 제대로 실행되지 않는 문제를 수정했습니다.",
+      "화면이 간헐적으로 검게 변하는 문제를 수정했습니다",
+      "화면이 밝게 켜지거나 정지 상태일 때 화면이 비정상적으로 깜박이는 문제를 수정했습니다.",
+      "시스템의 안정성에 영향을 미치는 여러 문제를 수정했습니다."
+    ],
     "전화": [
-      "전화 발신 및 수신 시 간헐적으로 휴대폰이 느려지는 문제 수정"
+      "간혹 전화를 걸거나 받을 때 휴대폰이 멈추는 문제를 수정했습니다."
     ],
     "잠금 화면, 상태 표시줄, 알림 표시줄": [
-      "중요하지 않은 알림을 두 번 탭할 때 알림과 빠른 설정이 겹치는 문제를 수정"
+      "중요하지 않은 알림을 더블클릭할 때 알림이 바로가기 버튼과 겹치는 문제를 수정했습니다."
+    ],
+    "카메라": [
+      "새로운 기능으로 960프레임의 슬로우 모션과 슈퍼 나이트 시야(Super Night View) 모드가 추가되었습니다."
     ],
     "설정": [
-      "설정 페이지의 UI 표시가 어긋나는 문제 수정",
+      "설정 페이지의 UI가 잘못 배치되는 문제를 수정했습니다.",
       "일부 시간대에서 지역 이름이 표시되지 않는 문제를 수정"
     ],
     "주의사항": [
-      "Android Pie 기반 안정판 MIUI가 Mi 8에 출시되었습니다!"
-    ],
-    "시스템": [
-      "화면이 간헐적으로 검게 변하는 문제를 수정했습니다",
-      "화면 켜짐/꺼짐 시 화면이 비정상적으로 깜박이는 문제 수정"
+      "안드로이드 파이(Android Pie) 기반의 안정적인 버전인 MIUI가 이제 샤오미 8(Xiaomi 8)에 탑재되었습니다!"
     ],
     "기타": [
       "시스템 보안 및 안정성 개선"
     ]
   },
   "logs_ru": {
-    "Телефон": [
-      "Исправлена проблема с редкими зависаниями телефона при совершении и приеме звонков"
-    ],
-    "Экран блокировки, строка состояния, шторка уведомлений": [
-      "Исправлена проблема наложения уведомлений и быстрых настроек при двойном нажатии на неважное уведомление"
-    ],
-    "Настройки": [
-      "Исправлено смещение элементов интерфейса на странице настроек",
-      "Исправлена проблема с отображением названий регионов в некоторых часовых поясах."
-    ],
-    "Внимание": [
-      "Стабильная версия MIUI на базе Android Pie теперь доступна для Mi 8!"
+    "Предупреждения": [
+      "Смартфон Xiaomi 8 получил стабильную версию операционной системы MIUI, созданную на основе платформы Android P с использованием глубоких настроек."
     ],
     "Система": [
-      "Исправлена проблема, из-за которой экран иногда становился чёрным",
-      "Исправлена проблема с аномальным мерцанием экрана при включении и выключении экрана"
+      "Устранено случайное невозможность выполнения действий после разделения экрана телефона на несколько частей.",
+      "Устранено случайное выключение экрана (его черный цвет).",
+      "Устранено проблему необычного мерцания экрана во время режимов «Яркий экран» и «Задержка изображения».",
+      "Устранены несколько проблем, влияющих на стабильность работы системы."
+    ],
+    "Телефон": [
+      "Устранено проблему периодической замедленной работы телефона при совершении и принятии звонков."
+    ],
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Исправлено совпадение уведомления и соответствующего пускового элемента при двойном клике на незначительное уведомление."
+    ],
+    "Камера": [
+      "Добавлен режим замедленной съемки со скоростью 960 кадров в секунду, а также режим суперночного видео."
+    ],
+    "Настройки": [
+      "Устранено ошибочное отображение пользовательского интерфейса на странице настройок.",
+      "Устранено недостаток, при котором в некоторых часовых поясах не отображалось название региона."
+    ],
+    "Важные моменты, на которые следует обратить внимание:": [
+      "Стабильная версия MIUI на базе Android Pie теперь доступна для Mi 8!"
     ],
     "Другое": [
       "Улучшение безопасности и стабильности системы"
     ]
   },
   "logs_uk": {
+    "Попередження": [
+      "Смартфон Xiaomi 8 був представлений із стабільною версією операційної системи MIUI, яка є глибоко адаптованою під основи Android P."
+    ],
+    "Система": [
+      "Виправлено проблему, коли іноді після розділення екрана телефону виконання деяких дій стає некоректним.",
+      "Виправлено проблему часового затемнення екрана.",
+      "Виправлено проблему ненормального мерехтіння екрана під час режимів яскравого екрана та екрана затемнення.",
+      "Виправлено кілька проблем, які впливали на стабільність системи."
+    ],
     "Телефон": [
-      "Виправлено проблему з періодичним зависанням телефону під час здійснення та приймання дзвінків"
+      "Виправлено проблему, коли іноді під час дзвінків або прийому дзвінків телефон зависає."
     ],
     "Екран блокування, рядок стану, рядок сповіщень": [
-      "Виправлено проблему накладання сповіщень і швидких налаштувань під час подвійного натискання на неважливе сповіщення"
+      "Виправлено проблему, коли під час подвійного клацання на неважливому сповіщенні сповіщення та відповідний швидкий перемикач залежали один від одного."
+    ],
+    "Камера": [
+      "Додано 960 кадрів у режимі повільної зйомки, а також режим супернічного виду."
     ],
     "Налаштування": [
       "Виправлено зміщення елементів інтерфейсу на сторінці налаштувань",
-      "Виправлено проблему з відображенням назв регіонів у деяких часових поясах."
+      "Виправлено проблему, коли в деяких часових зонах не відображалися назви регіонів."
     ],
-    "Увага": [
+    "Зауваження": [
       "Стабільна версія MIUI на базі Android Pie тепер доступна для Mi 8!"
-    ],
-    "Система": [
-      "Виправлено проблему, через яку екран іноді ставав чорним",
-      "Виправлено проблему з аномальним мерехтінням екрана під час увімкнення та вимкнення екрана"
     ],
     "Інше": [
       "Покращення безпеки та стабільності системи"
     ]
   },
   "logs_pl": {
+    "Powiadomienie": [
+      "Smartfon Xiaomi 8 został wyposażony w stabilną wersję oprogramowania MIUI, dostosowaną specjalnie do systemu operacyjnego Android P."
+    ],
+    "System": [
+      "Poprawiono problem, występujący czasem, gdy po rozdzielaniu ekranu telefonu wykonanie danej operacji nie przynosi żadnego efektu.",
+      "Poprawiono problem z wyświetleniem czarnego ekranu, który występował sporadycznie.",
+      "Poprawiono problem nieprawidłowego migańca ekranu podczas włączonego trybu ekranu wyciszania („screen saver”).",
+      "Urzędnicy naprawili kilka problemów, które wpływały na stabilność systemu."
+    ],
     "Telefon": [
-      "Naprawiono problem z sporadycznym zacięciem telefonu podczas wykonywania i odbierania połączeń"
+      "Poprawiono problem nawrotowych zwolnień w działaniu kart telefonicznej podczas sporadycznych rozmów."
     ],
     "Ekran blokady, pasek stanu, pasek powiadomień": [
-      "Naprawiono problem nakładania się powiadomień i szybkich ustawień po dwukrotnym dotknięciu nieistotnego powiadomienia"
+      "Poprawiono problem, gdy dwukrotnie kliknięto na nieważną wiadomość, to wiadomość i przycisk szybkiego dostępu nakładały się na siebie."
+    ],
+    "Aparat": [
+      "Dodano nowy tryb nagrywania w wolnym tempie (960 kadrów na sekundę) oraz supertryb do nagrywania w nocy."
     ],
     "Ustawienia": [
-      "Naprawiono przesunięcie elementów interfejsu na stronie ustawień",
-      "Naprawiono problem z wyświetlaniem nazw regionów w niektórych strefach czasowych."
+      "Poprawiono problem z niewłaściwym wyświetleniem interfejsu użytkownika na stronie ustawień.",
+      "Poprawiono problem, w którym w niektórych czasowych obszarach nie wyświetlały się nazwy regionów."
     ],
     "Uwagi": [
       "Stabilna wersja MIUI oparta na Android Pie trafiła do Mi 8!"
     ],
-    "System": [
-      "Naprawiono problem, przez który ekran czasami stawał się czarny",
-      "Naprawiono problem z nieprawidłowym migotaniem ekranu podczas włączania i wyłączania ekranu"
-    ],
-    "Inne": [
+    "Reszt": [
       "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
   "logs_de": {
-    "Telefon": [
-      "Problem behoben, bei dem das Telefon beim Tätigen und Annehmen von Anrufen gelegentlich hängt"
-    ],
-    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
-      "Das Überlappen von Benachrichtigungen und Schnelleinstellungen beim Doppeltippen einer unwichtigen Benachrichtigung wurde behoben."
-    ],
-    "Einstellungen": [
-      "Fehlerhafte UI-Ausrichtung auf der Einstellungsseite behoben",
-      "Problem behoben, dass in einigen Zeitzonen keine Regionsnamen angezeigt wurden."
-    ],
-    "Hinweise": [
-      "Stabile MIUI-Version auf Basis von Android Pie ist jetzt für Mi 8 verfügbar!"
+    "Wichtiger Hinweis": [
+      "Das Xiaomi Phone 8 wurde mit einer stabilen Version von MIUI veröffentlicht, die auf Android P basiert und speziell angepasst wurde."
     ],
     "System": [
-      "Problem behoben, bei dem der Bildschirm gelegentlich schwarz wurde",
-      "Problem mit abnormalem Flackern des Bildschirms beim Ein- und Ausschalten behoben"
+      "Behebung des Problems, bei dem gelegentlich keine Aktionen ausgeführt werden, wenn man das Handy in den Split-Modus wechselt.",
+      "Behebung des gelegentlich auftretenden Problems, dass der Bildschirm schwarz bleibt.",
+      "Behebung des Problems mit dem ungewöhnlichen Flackern des Bildschirms beim Einschalten sowie während der Standby-Phase.",
+      "Behebung mehrerer Probleme, die die Stabilität des Systems beeinträchtigen."
+    ],
+    "Telefon": [
+      "Behebung des Problems, bei dem das Handy beim Anrufen oder Abnehmen von Anrufen manchmal verlangsamt."
+    ],
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsleiste": [
+      "Behebung des Problems, bei dem Benachrichtigungen unbedeutender Art beim Doppelklicken mit den Schnellzugriffsschaltern überlappen."
+    ],
+    "Kamera": [
+      "Neuer Slow-Motion-Modus mit 960 Bildern pro Sekunde sowie Super-Night-View-Modus"
+    ],
+    "Einstellungen": [
+      "Behebung des Problems mit der fehlerhaften Anzeige der Benutzeroberfläche auf der Einstellungsseite.",
+      "Behebung des Problems, dass in einigen Zeitzonen die Ortsnamen nicht angezeigt werden."
+    ],
+    "Hinweise und Vorsichtsmaßnahmen": [
+      "Die stabile Version von MIUI, die auf Android Pie basiert, ist nun für das Xiaomi 8 verfügbar!"
     ],
     "Sonstiges": [
       "Systemsicherheit und -stabilität verbessert"
     ]
   },
   "logs_fr": {
-    "Téléphone": [
-      "Correction du problème de ralentissement intermittent du téléphone lors des appels sortants et entrants"
-    ],
-    "Écran de verrouillage, barre d’état, barre de notifications": [
-      "Correction du chevauchement entre les notifications et les raccourcis lors d'un double appui sur une notification non importante."
-    ],
-    "Paramètres": [
-      "Correction du décalage d’affichage de l’interface dans les paramètres",
-      "Correction du problème d’affichage des noms de régions dans certains fuseaux horaires."
-    ],
-    "Remarques": [
-      "La version stable de MIUI basée sur Android Pie est désormais disponible pour Mi 8 !"
+    "Avertissement important": [
+      "Xiaomi Mi 8 publie une version stable de MIUI profondément personnalisée basée sur Android P"
     ],
     "Système": [
-      "Correction du problème où l’écran devenait parfois noir",
-      "Correction du problème de scintillement anormal de l'écran lors de l'allumage et de l'extinction"
+      "Résolution du problème où certaines actions deviennent inopératives après que l'écran de l'appareil ait été divisé en plusieurs parties.",
+      "Résolution du problème de noirceur occasionnelle de l'écran.",
+      "Résolution du problème de clignotement anormal de l'écran lorsqu'il est allumé ou en mode veille.",
+      "Réparation de plusieurs problèmes affectant la stabilité du système."
+    ],
+    "Téléphone": [
+      "Résolution du problème de ralentissement occasionnel du téléphone lors de l'émission ou de la réception d'appels."
+    ],
+    "Écran de verrouillage, barre d’état, barre de notifications": [
+      "Résolution du problème où les notifications et les boutons de raccourci se chevauchent lorsqu'on double-clique sur une notification non importante."
+    ],
+    "Appareil photo": [
+      "Nouvelles fonctionnalités : ralenti à 960 images par seconde, mode Super Night View."
+    ],
+    "Paramètres": [
+      "Résolution du problème de décalage dans l'affichage de l'interface utilisateur de la page de configuration.",
+      "Résolution du problème selon lequel les noms des régions ne s'affichaient pas dans certains fuseaux horaires."
+    ],
+    "Mémesures de précaution à prendre": [
+      "La version stable de MIUI basée sur Android Pie est désormais disponible pour Mi 8 !"
     ],
     "Autre": [
       "Sécurité et stabilité du système améliorées"
     ]
   },
   "logs_it": {
+    "Attenzione": [
+      "Il Xiaomi Phone 8 presenta una versione stabile di MIUI, personalizzata in modo approfondito su base di Android P."
+    ],
+    "Sistema": [
+      "Risolto il problema occasionale in cui le operazioni eseguite dopo aver diviso lo schermo del telefono risultano inefficaci.",
+      "Risolto il problema occasionale di schermo nero.",
+      "Risolto il problema di scintillii anomali dello schermo durante le modalità “Schermo luminoso” e “Schermo in standby”.",
+      "Risolto un certo numero di problemi che influenzavano la stabilità del sistema."
+    ],
     "Telefono": [
-      "Risolto il problema di rallentamenti occasionali del telefono durante le chiamate in uscita e in entrata"
+      "Risolto il problema di rallentamento del telefono durante le chiamate in entrata e in uscita, che si verificava occasionalmente."
     ],
     "Schermata di blocco, barra di stato, barra delle notifiche": [
-      "Risolto il problema di sovrapposizione tra notifiche e scorciatoie quando si tocca due volte una notifica non importante."
+      "Risolto il problema in cui, facendo doppio clic su una notifica non importante, la notifica si sovrapponeva all’icona relativa all’applicazione che permette di attivarla o disattivarla rapidamente."
+    ],
+    "macchina fotografica": [
+      "Aggiunta la funzione di riproduzione in slow motion a 960 fotogrammi al secondo, nonché il modalità “Super Night View”."
     ],
     "Impostazioni": [
       "Risolto il disallineamento dell'interfaccia nella pagina Impostazioni",
@@ -241,210 +323,303 @@
     "Avvertenze": [
       "La versione stabile di MIUI basata su Android Pie è ora disponibile per Mi 8!"
     ],
-    "Sistema": [
-      "Risolto il problema per cui lo schermo a volte diventava nero",
-      "Risolto il problema di sfarfallio anomalo dello schermo all'accensione e allo spegnimento"
-    ],
     "Altro": [
       "Maggiore sicurezza e stabilità di sistema"
     ]
   },
   "logs_es": {
+    "Atención": [
+      "El teléfono Xiaomi 8 presenta una versión estable de MIUI, que ha sido personalizada en profundidad basándose en Android P."
+    ],
+    "Sistema": [
+      "Se ha corregido el problema en el que, ocasionalmente, las operaciones realizadas después de dividir la pantalla del teléfono no funcionaban correctamente.",
+      "Se ha corregido el problema ocasional de que la pantalla se quede en negro.",
+      "Se ha corregido el problema de parpadeo anormal de la pantalla cuando se muestra la imagen de fondo o la pantalla en espera.",
+      "Se han corregido varios problemas que afectaban la estabilidad del sistema."
+    ],
     "Teléfono": [
       "Corregido el problema de ralentización ocasional del teléfono al realizar y recibir llamadas"
     ],
     "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
-      "Se corrige el problema de superposición entre notificaciones y accesos rápidos al doble tocar una notificación no importante."
+      "Se ha corregido el problema en el que, al hacer doble clic en una notificación de poca importancia, esta se superponía a los botones de acceso rápido."
     ],
-    "Ajustes": [
-      "Corregido el desalineamiento de la interfaz en la página de Ajustes",
-      "Se corrige el problema por el que no se mostraban los nombres de las regiones en algunas zonas horarias."
+    "Cámara": [
+      "Se ha añadido la función de cámara lenta a 960 fotogramas por segundo, así como el modo Super Night View."
     ],
-    "Notas": [
+    "Configuración": [
+      "Se ha corregido el problema de desalineación en la visualización de la interfaz de usuario (UI) de la página de configuraciones.",
+      "Se ha corregido el problema por el cual en algunos husos horarios no se podían mostrar los nombres de las regiones."
+    ],
+    "Consideraciones importantes": [
       "¡La versión estable de MIUI basada en Android Pie ya está disponible para Mi 8!"
-    ],
-    "Sistema": [
-      "Se corrigió el problema por el que la pantalla a veces se ponía en negro",
-      "Se corrigió el problema de parpadeo anormal de la pantalla al encenderla y apagarla"
     ],
     "Otros": [
       "Estabilidad y seguridad del sistema mejorada"
     ]
   },
   "logs_pt": {
+    "Atenção": [
+      "Xiaomi Mi 8 lança versão estável da MIUI profundamente personalizada com base no Android P"
+    ],
+    "Sistema": [
+      "Corrigido o problema em que, ocasionalmente, as operações realizadas após a divisão do ecrã do telemóvel não funcionavam corretamente.",
+      "Corrigido o problema ocasional de ecrã preto.",
+      "Corrigir o problema de cintilação anormal no ecrã durante os efeitos de “ecrã iluminado” ou “ecrã em pausa”.",
+      "Corrigir vários problemas que afetam a estabilidade do sistema."
+    ],
     "Telefone": [
-      "Corrigido o problema de lentidão ocasional do telefone ao fazer e receber chamadas"
+      "Corrigir o problema ocasional de lentidão no funcionamento do cartão de telefone durante a realização ou recepção de chamadas."
     ],
     "Tela de bloqueio, barra de status, barra de notificações": [
-      "Corrigido o problema de sobreposição entre notificações e atalhos rápidos ao tocar duas vezes em uma notificação não importante."
+      "Corrigido o problema em que, ao clicar duas vezes em uma notificação não importante, a notificação se sobrepunha ao atalho correspondente."
+    ],
+    "Câmera": [
+      "Adição de câmera lenta com 960 frames por segundo e do modo “Super Night View”."
     ],
     "Configurações": [
       "Corrigido o desalinhamento da interface na página de Configurações",
-      "Corrigido o problema de não exibir nomes de regiões em alguns fusos horários."
+      "Corrigido o problema em que alguns fusos horários não exibiam os nomes das regiões."
     ],
-    "Notas": [
+    "Precauções a ter em conta": [
       "A versão estável da MIUI baseada no Android Pie já está disponível para o Mi 8!"
-    ],
-    "Sistema": [
-      "Corrigido o problema em que a tela às vezes ficava preta",
-      "Corrigido o problema de cintilação anormal da tela ao ligar e desligar"
     ],
     "Outros": [
       "Segurança e estabilidade do sistema aprimoradas"
     ]
   },
   "logs_tr": {
-    "Telefon": [
-      "Telefonla arama yaparken ve gelen aramaları yanıtlarken telefonun ara sıra yavaşlaması sorunu giderildi"
-    ],
-    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
-      "Önemsiz bir bildirime çift dokunulduğunda bildirimlerle hızlı ayarların üst üste binmesi sorunu giderildi."
-    ],
-    "Ayarlar": [
-      "Ayarlar sayfasındaki arayüz hizalama sorunu giderildi",
-      "Bazı saat dilimlerinde bölge adlarının görüntülenememesi sorunu düzeltildi."
-    ],
-    "Notlar": [
-      "Android Pie tabanlı kararlı MIUI sürümü Mi 8 için yayında!"
+    "Uyarı": [
+      "Xiaomi Mi 8, Android P tabanlı derinlemesine özelleştirilmiş MIUI kararlı sürümünü yayınlıyor"
     ],
     "Sistem": [
-      "Ekranın ara sıra kararması sorunu giderildi",
-      "Ekran açılıp kapanırken ekranın anormal şekilde titremesi sorunu giderildi"
+      "Arada bir telefonun ekran bölünmesi durumunda yapılan işlemlerin etkisiz kalması sorunu düzeltildi.",
+      "Arada sırada ekranın kararması sorununu giderdik.",
+      "Ekran aydınlandığında veya bekleme modundayken ekranda meydana gelen anormal parlamalar sorunu düzeltildi.",
+      "Sistemin stabilitesini etkileyen birkaç sorunu giderdik."
+    ],
+    "Telefon": [
+      "Arama yapılırken veya bir arama alınırken telefonun donma sorununu giderdik."
+    ],
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Önemsiz bildirimlere çift tıklandığında, bildirimin kısayol düğmesiyle örtüşmesi sorununu giderdik."
+    ],
+    "Kamera": [
+      "Yeni eklenen özellikler arasında 960 kare/saniye hızında yavaş çekim ve süper gece modu bulunmaktadır."
+    ],
+    "Ayarlar": [
+      "Ayarlar sayfasının kullanıcı arayüzünün (UI) yanlış yerde görünmesi sorununu düzelttik.",
+      "Bazı saat dilimlerinde bölge adlarının görüntülenememesi sorunu düzeltildi."
+    ],
+    "Dikkat Edilmesi Gereken Hususlar": [
+      "Android Pie tabanlı ve stabil olan MIUI sürümü artık Xiaomi 8 cihazında kullanılabilir hale geldi!"
     ],
     "Diğer": [
       "Sistem güvenliği ve kararlılığı geliştirildi"
     ]
   },
   "logs_id": {
-    "Telepon": [
-      "Memperbaiki masalah ponsel yang terkadang lambat saat melakukan dan menerima panggilan"
-    ],
-    "Layar kunci, bilah status, bilah notifikasi": [
-      "Memperbaiki masalah tumpang tindih antara notifikasi dan tombol cepat saat mengetuk dua kali notifikasi tidak penting."
-    ],
-    "Pengaturan": [
-      "Memperbaiki masalah tampilan UI yang tidak sejajar di halaman Pengaturan",
-      "Memperbaiki masalah nama wilayah tidak ditampilkan di beberapa zona waktu."
-    ],
-    "Catatan": [
-      "MIUI versi stabil berbasis Android Pie kini tersedia untuk Mi 8!"
+    "Perhatian": [
+      "Ponsel Xiaomi 8 diluncurkan dengan versi MIUI yang stabil, yang dikembangkan berdasarkan platform Android P dengan penyesuaian khusus (deep customization)."
     ],
     "Sistem": [
-      "Memperbaiki masalah layar yang terkadang menjadi hitam",
-      "Memperbaiki masalah layar berkedip tidak normal saat layar dinyalakan dan dimatikan"
+      "Memperbaiki masalah di mana terkadang operasi menjadi tidak efektif setelah ponsel dibagi menjadi beberapa bagian (split screen).",
+      "Memperbaiki masalah layar yang tiba-tiba menjadi hitam (tidak menampilkan gambar).",
+      "Memperbaiki masalah layar yang berkedip secara tidak normal saat layar dalam mode “Bright Screen” atau “Sleep Screen”.",
+      "Memperbaiki beberapa masalah yang mempengaruhi stabilitas sistem."
+    ],
+    "Telepon": [
+      "Memperbaiki masalah lag (terhenti sejenak) pada kartu SIM saat menelepon atau menerima panggilan yang terjadi sesekali."
+    ],
+    "Layar kunci, bilah status, bilah notifikasi": [
+      "Memperbaiki masalah di mana notifikasi yang tidak penting menumpang tindakan klik dua kali, sehingga notifikasi tersebut bertabrakan dengan tombol akses cepat (shortcut buttons)."
+    ],
+    "Kamera": [
+      "Terdapat tambahan mode gerakan lambat (slow motion) dengan 960 frame, serta mode Super Night View."
+    ],
+    "Pengaturan": [
+      "Memperbaiki masalah penampilan UI pada halaman pengaturan yang tidak sesuai posisinya.",
+      "Memperbaiki masalah di mana beberapa zona waktu tidak dapat menampilkan nama wilayahnya."
+    ],
+    "Pertimbangan yang Harus Diperhatikan": [
+      "Versi MIUI yang stabil dan berbasis pada sistem operasi Android Pie kini telah tersedia untuk Xiaomi 8!"
     ],
     "Lainnya": [
       "Keamanan dan stabilitas sistem ditingkatkan"
     ]
   },
   "logs_vi": {
-    "Điện thoại": [
-      "Khắc phục sự cố điện thoại đôi khi bị lag khi gọi và nhận cuộc gọi"
-    ],
-    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
-      "Đã sửa lỗi thông báo và công tắc nhanh bị chồng lên nhau khi nhấn đúp vào thông báo không quan trọng."
-    ],
-    "Cài đặt": [
-      "Đã khắc phục lỗi giao diện bị lệch trên trang Cài đặt",
-      "Khắc phục sự cố không hiển thị tên khu vực ở một số múi giờ."
-    ],
-    "Lưu ý": [
-      "MIUI bản ổn định dựa trên Android Pie đã có cho Mi 8!"
+    "Chú ý": [
+      "Điện thoại Xiaomi 8 được ra mắt với phiên bản MIUI ổn định, được tùy chỉnh sâu dựa trên hệ điều hành Android P."
     ],
     "Hệ thống": [
-      "Đã khắc phục sự cố màn hình thỉnh thoảng bị đen",
-      "Đã khắc phục sự cố màn hình nhấp nháy bất thường khi bật và tắt màn hình"
+      "Khắc phục sự cố khi thỉnh thoảng việc thực hiện các thao tác trên điện thoại trở nên không hiệu quả sau khi chia màn hình thành các phần riêng biệt.",
+      "Đã sửa lỗi màn hình đen xuất hiện thỉnh thoảng.",
+      "Khắc phục sự cố màn hình bị nhấp nháy bất thường khi hiển thị màn hình sáng hoặc màn hình tạm dừng (standby screen).",
+      "Sửa chữa một số vấn đề ảnh hưởng đến tính ổn định của hệ thống."
+    ],
+    "Điện thoại": [
+      "Sửa lỗi: Đôi khi, điện thoại bị đơ khi thực hiện hoặc nhận cuộc gọi."
+    ],
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Khắc phục sự cố khi nhấp đúp vào các thông báo không quan trọng, dẫn đến tình trạng thông báo và các công cụ tắt nhanh (shortcut buttons) bị chồng lên nhau."
+    ],
+    "Máy ảnh": [
+      "Thêm chế độ chụp ở tốc độ chậm với 960 khung hình/giây, và chế độ chụp trong điều kiện ánh sáng yếu (siêu ban đêm)."
+    ],
+    "Cài đặt": [
+      "Đã sửa lỗi hiển thị sai vị trí của giao diện (UI) trên trang cấu hình.",
+      "Đã sửa lỗi: Một số múi giờ không hiển thị tên khu vực."
+    ],
+    "Những điều cần lưu ý": [
+      "Phiên bản MIUI ổn định dựa trên nền tảng Android Pie đã chính thức được cài đặt trên Xiaomi 8!"
     ],
     "Khác": [
       "Cải thiện tính ổn định và bảo mật hệ thống"
     ]
   },
   "logs_th": {
-    "โทรศัพท์": [
-      "แก้ไขปัญหามือถือหน่วงเป็นครั้งคราวขณะโทรออกและรับสาย"
-    ],
-    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
-      "แก้ไขปัญหาการซ้อนทับกันระหว่างการแจ้งเตือนและปุ่มลัดเมื่อแตะสองครั้งที่การแจ้งเตือนที่ไม่สำคัญ"
-    ],
-    "การตั้งค่า": [
-      "แก้ไขปัญหาการแสดงผล UI ที่ไม่ตรงตำแหน่งในหน้าตั้งค่า",
-      "แก้ไขปัญหาชื่อภูมิภาคไม่แสดงในบางเขตเวลา"
-    ],
-    "ข้อควรทราบ": [
-      "MIUI เวอร์ชันเสถียรที่ใช้ Android Pie พร้อมใช้งานสำหรับ Mi 8 แล้ว!"
+    "โปรดทราบ": [
+      "โทรศัพท์ Xiaomi Phone 8 ได้รับการเปิดตัวพร้อมกับระบบ MIUI เวอร์ชันที่มีความเสถียรสูง ซึ่งถูกปรับแต่งให้เข้ากับ Android P อย่างลึกซึ้ง"
     ],
     "ระบบ": [
+      "แก้ไขปัญหาที่บางครั้งการดำเนินการต่างๆ อาจไม่สำเร็จเมื่อผู้ใช้เปิดโหมดแยกหน้าจอของสมาร์ทโฟน",
       "แก้ไขปัญหาหน้าจอเป็นสีดำเป็นครั้งคราว",
-      "แก้ไขปัญหาหน้าจอกะพริบผิดปกติเมื่อเปิดและปิดหน้าจอ"
+      "แก้ไขปัญหาที่หน้าจอกระพริบผิดปกติเมื่อใช้โหมด “Bright Screen” หรือ “Sleep Screen”",
+      "แก้ไขปัญหาต่าง ๆ ที่ส่งผลกระทบต่อความเสถียรของระบบ"
+    ],
+    "โทรศัพท์": [
+      "แก้ไขปัญหาที่บางครั้งเมื่อโทรศัพท์รับสายหรือโทรออก โทรศัพท์จะทำงานช้าลง (ค้าง)"
+    ],
+    "หน้าจอล็อก, แถบสถานะ, แถบการแจ้งเตือน": [
+      "แก้ไขปัญหาที่การคลิกดับเบิลที่การแจ้งเตือนที่ไม่สำคัญ ทำให้การแจ้งเตือนและปุ่มสำหรับเปิด/ปิดการแจ้งเตือนซ้อนกัน"
+    ],
+    "กล้อง": [
+      "เพิ่มโหมดภาพช้าที่มีอัตราเฟรม 960 เฟรมต่อวินาที และโหมดภาพยามค่ำคืนสุดพิเศษ (Super Night Mode) เข้าไป"
+    ],
+    "การตั้งค่า": [
+      "แก้ไขปัญหาการแสดงผล UI บนหน้าต่างการตั้งค่าที่ไม่ถูกต้องตำแหน่ง",
+      "แก้ไขปัญหาที่บางเขตเวลาไม่สามารถแสดงชื่อพื้นที่ได้"
+    ],
+    "ข้อควรทราบ": [
+      "MIUI เวอร์ชันที่มีความเสถียรและอิงตามระบบปฏิบัติการ Android Pie ได้รับการเปิดตัวสำหรับสมาร์ทโฟน Xiaomi 8 แล้ว!"
     ],
     "อื่นๆ": [
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
     ]
   },
   "logs_ar": {
+    "تنبية": [
+      "تم إطلاق هاتف شاومي 8 مع نسخة مستقرة من نظام MIUI، والتي تم تخصيصها بشكل عميق استنادًا إلى نظام أندرويد P."
+    ],
+    "النظام": [
+      "تم إصلاح المشكلة التي كانت تحدث أحيانًا، والتي تتمثل في عدم فعالية العمليات بعد تقسيم الهاتف إلى أجزاء.",
+      "تم إصلاح المشكلة التي تؤدي أحيانًا إلى ظهور شاشة سوداء.",
+      "تم إصلاح مشكلة الوميض غير الطبيعي للشاشة أثناء عرض شاشة التنفس الساطعة أو شاشة الانتظار.",
+      "تم إصلاح عدة مشاكل كانت تؤثر على استقرار النظام."
+    ],
     "الهاتف": [
-      "إصلاح مشكلة تباطؤ الهاتف أحيانًا عند إجراء المكالمات والرد عليها"
+      "تم إصلاح المشكلة التي كانت تحدث أحيانًا عندما يتم الاتصال أو الرد على المكالمات، حيث كان يحدث تأخير في أداء بطاقة الهاتف."
     ],
     "شاشة القفل، شريط الحالة، شريط الإشعارات": [
-      "إصلاح مشكلة تداخل الإشعارات مع مفاتيح الاختصار عند النقر المزدوج على إشعار غير مهم"
+      "تم إصلاح المشكلة التي كانت تحدث عند النقر المزدوج على إشعارات غير مهمة، حيث كان يحدث تداخل بين الإشعار نفسه وأزرار التشغيل السريعة."
+    ],
+    "كاميرا": [
+      "تم إضافة 960 إطارًا جديدًا لوضع الحركة البطيئة، بالإضافة إلى وضع \"الليل الساطع\" (Super Night Mode)."
     ],
     "الإعدادات": [
       "إصلاح مشكلة محاذاة واجهة المستخدم في صفحة الإعدادات",
-      "إصلاح مشكلة عدم إمكانية عرض أسماء المناطق في بعض المناطق الزمنية."
+      "تم إصلاح المشكلة التي كانت تمنع بعض المناطق الزمنية من عرض أسماء المناطق."
     ],
     "ملاحظات": [
-      "إصدار MIUI المستقر المبني على Android Pie متاح الآن لـ Mi 8!"
+      "الإصدار المستقر من MIUI الذي يعتمد على نظام أندرويد بي (Android Pie) قد تم إطلاقه الآن على هاتف شاومي 8 (Xiaomi 8)!"
     ],
-    "النظام": [
-      "تم إصلاح مشكلة تحول الشاشة إلى اللون الأسود أحيانًا",
-      "إصلاح مشكلة وميض الشاشة غير الطبيعي عند تشغيل الشاشة وإيقاف تشغيلها"
-    ],
-    "أخرى": [
+    "آخرين": [
       "تحسين أمن واستقرار النظام"
     ]
   },
   "logs_in": {
-    "फ़ोन": [
-      "फ़ोन पर कॉल करने और कॉल का जवाब देने के दौरान कभी-कभी होने वाली रुकावट की समस्या ठीक की गई"
-    ],
-    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
-      "महत्वहीन सूचना पर डबल टैप करने पर सूचना और त्वरित टॉगल के ओवरलैप होने की समस्या ठीक की गई"
-    ],
-    "सेटिंग्स": [
-      "सेटिंग्स पेज में UI प्रदर्शन के असंरेखण की समस्या ठीक की गई",
-      "कुछ समय क्षेत्रों में क्षेत्र के नाम प्रदर्शित न होने की समस्या ठीक की गई।"
-    ],
     "ध्यान दें": [
-      "Android Pie पर आधारित स्थिर MIUI अब Mi 8 के लिए उपलब्ध है!"
+      "शाओमी मोबाइल 8 का लॉन्च एंड्रॉइड पी (Android P) पर आधारित, गहराई से कस्टमाइज़ किए गए MIUI स्टेबल वर्जन के साथ हुआ।",
+      "एंड्रॉइड पाई (Android Pie) पर आधारित स्थिर संस्करण का MIUI अब मीज़ियो 8 (Mi Xiaomi 8) में उपलब्ध है!"
     ],
     "सिस्टम": [
+      "उस समस्या को ठीक कर दिया गया है, जिसमें कभी-कभार मोबाइल फोन के डिवाइस मोड (Device Mode) में जाने पर कुछ कार्य असफल हो जाते थे।",
       "स्क्रीन कभी-कभी काली हो जाने की समस्या ठीक की गई",
-      "स्क्रीन चालू और बंद करते समय स्क्रीन के असामान्य रूप से झिलमिलाने की समस्या ठीक की गई"
+      "स्क्रीन चमकने या स्टैटस बार (Status Bar) पर डेटा दिखने के दौरान स्क्रीन पर होने वाली असामान्य गतिविधियों/फ्लैशिंग (Flashing) की समस्या को ठीक कर दिया गया है।",
+      "सिस्टम की स्थिरता को प्रभावित करने वाली कई समस्याओं को ठीक कर दिया गया है।"
+    ],
+    "फ़ोन": [
+      "उस समस्या को ठीक करें जिसमें कभी-कभार फोन कॉल करते या उसे रिसीव करते समय मोबाइल फोन धीमा पड़ जाता है."
+    ],
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफ़िकेशन बार": [
+      "दोबारा क्लिक करने पर महत्वपूर्ण न होने वाली सूचनाओं के दौरान, सूचनाएँ एवं शॉर्टकट विकल्प आपस में ओवरलैप हो जाने की समस्या को ठीक कर दिया गया है।"
+    ],
+    "कैमरा": [
+      "नए फीचर्स में “960-फ्रेम स्लो मोशन” एवं “सुपर नाइट सीन मोड” शामिल हैं।"
+    ],
+    "सेटिंग्स": [
+      "सेटिंग्स पेज के UI में दिखाई देने वाली त्रुटियों (अर्थात् उन चीजों में जो सही ढंग से नहीं दिख रही हैं) को ठीक कर दिया गया है।",
+      "कुछ समय क्षेत्रों में क्षेत्र के नाम प्रदर्शित न होने की समस्या ठीक की गई।"
     ],
     "अन्य": [
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
     ]
   },
   "logs_ug": {
+    "مۇھىم ئەسكەرتىش": [
+      "شىياۋمى تېلېفون 8 ، Android P نەزەرىيەسىگە ئاساسەن ئۆزگەرتىلگەن MIUI مۇقىم نۇسخىسى بىلەن بازارغا سېلىندى"
+    ],
+    "سىستېما": [
+      "يانفوننى ئايرىپ قويغاندىن كېيىن بەزى مەشغۇلاتلارنىڭ كارغا كەلمەسلىك مەسىلىسىنى تۈزەتتىم",
+      "كۆرۈنۈش ئېكرانىنىڭ تۇيۇقسىز قارا رەڭگە كېتىش مەسىلىسىنى تۈزىتىمىز",
+      "ئېكران يورۇق ھالەتتە ياكى توختاپ قالغاندا ئېكراننىڭ نورمالسىز يانىش مەسىلىسىنى تۈزەيمىز.",
+      "سىستېمىنىڭ مۇقىملىقىغا تەسىر كۆرسىتىدىغان بىر قانچە مەسىلىنى تۈزەتتى"
+    ],
     "تېلېفون": [
-      "تېلېفون چالغاندا ۋە تېلېفون قوبۇل قىلغاندا يانفوننىڭ ئاندا-ساندا قېتىپ قېلىش مەسىلىسى ئوڭشالدى"
+      "يېقىندا كۆرۈلگەن مەسىلە : تېلېفون قىلىش ياكى ئالغاندا تېلېفون كارتىسىڭىز تۇراقسىز ھالەتكە كېتىدۇ (يەنى تېلېفوننىڭ ئىشلىشى توختاپ قالىدۇ)."
     ],
     "قۇلۇپ ئېكرانى، ھالەت بالدىقى، ئۇقتۇرۇش بالدىقى": [
-      "مۇھىم بولمىغان ئۇقتۇرۇشنى قوش چېكىشكەندە ئۇقتۇرۇش بىلەن تېز تەڭشەك ئالمىشىپ قېلىش مەسىلىسى تۈزىتىلدى."
+      "كۆپ قېتىم بېسىلغاندا مۇھىم ئەمەس ئۇقتۇرۇشلارنىڭ ئۇقتۇرۇش بەلگىسى بىلەن قىسقا تۈزۈش كۇنۇپكىسى ئۆزئارا ئۆچرى شىش مەسىلىسىنى تۈزىتىلدى."
+    ],
+    "فوتو ئاپپارات": [
+      "يېڭىدىن 960 كادىرلىق ئاستا ھەرىكەت رېجىمى ۋە ئالاھىدە كېچە مەنزىرىسى رېجىمى قوشۇلدى"
+    ],
+    "تەڭشەك": [
+      "تەڭشەش بېتىدىكى UI نىڭ خاتا ئورۇنلاشقانلىق مەسىلىسىنى تۈزەتتىم",
+      "بەزى ۋاقىت رايونلىرىدا رايون نامىنى كۆرسىتەلمەيدىغان مەسىلە ئوڭشالدى"
     ],
     "دىققەت قىلىدىغان ئىشلار": [
-      "Android Pie ئاساسىدىكى مۇقىم MIUI نەشرى ئەمدى Mi 8 غا كەلدى!"
+      "Android Pie ئاساسىدا ياسالغان مۇقىم نەشرىياتلىق MIUI نۆۋەتتە Xiaomi 8 دا قوللىنىلماقتا!"
     ],
     "باشقىلىرى": [
       "Improved system security and stability"
     ]
   },
   "logs_bo": {
-    "ཁ་པར": [
-      "ཁ་པར་རྒྱག་པ་དང་ལེན་པའི་སྐབས་ཁ་པར་རྟག་ཏུ་མིན་པར་འགག་པའི་གནད་དོན་བཅོས་ཡོད།"
+    "གལ་ཆེའི་དྲན་སྐུལ": [
+      "Xiaomi Mobile 8་བཏོན་པ་དེ།Android P་ལྟར་གཏིང་ཟབ་སུ་བཅོས་བསྒྲིགས་བྱས་པའི MIUI་བརྟན་པོའི་เวอร์ชัน་ཡིན།"
     ],
-    "དོ་སྣང་བྱ་ཡུལ": [
-      "Android Pie གཞི་རྩའི་MIUI བརྟན་པོའི་པར་ Mi 8 ལ་སླེབས་ཡོད།"
+    "མ་ལག": [
+      "ཁ་པར་གྱི་སྡེབ་ཆ་དུ་འགྲོ་རྗེས་བྱ་སྤྱོད་ལག་བསྟར་མི་ཐུབ་པའི་གནད་དོན་ཐག་གཅོད་བྱས།",
+      "གློག་ཙང་བའི་སྐྱོན་ཤས་ཡོད་པར་ཉམས་གསོ་བྱེད།",
+      "འོད་ཟབ་པོའམ་དབུགས་འཚང་མེད་པའི་གནས་ཚུལ་ཁྲོད་スクリーン་ལ་རྒྱུན་མི་འཆད་པར་འོད་འཕྲོ་བའི་གནད་དོན་ཐག་གཅོད་བྱེད།",
+      "མ་ལག་གི་བརྟན་ཤུགས་ལ་ཤུགས་རྐྱེན་ཐེབས་པའི་གནད་དོན་ཁ་ཤས་ཉུང་གྲངས་བཅོས་བྱས།"
+    ],
+    "ཁ་པར": [
+      "ཁ་པར་གཏོང་བའམ་ལེན་བྱེད་སྐབས་ཁ་པར་གྱི་བྱེད་སྟངས་ཇེ་དལ་དུ་འགྲོ་བའི་གནད་དོན་ཐག་གཅོད་བྱེད།"
+    ],
+    "Lockscreen, status bar, Notification shade": [
+      "གནད་དོན་ཐག་གཅོད་བྱས་པ།གལ་ཆེ་མིན་པའི་བརྡ་གཏོང་ལ་ཐེངས་གཉིས་བརྒྱབ་པའི་སྐབས།བརྡ་གཏོང་དང་མྱུར་སྒོ་བརྒྱབ་པའི་བྱེད་ཐབས་གཉིས་ཟུང་འབྲེལ་བྱུང་བ།"
+    ],
+    "ཁ་མར།": [
+      "གསར་དུ་བསྣན་པའི་“དལ་འགུལ”གྱི་འཕྲིན་ཚུལ་960དང、“མཚན་མོའི་ཡུལ་ལྗོངས”རྣམ་པ།"
+    ],
+    "དོ་སྣང་བྱེད་དགོས་པའི་གནད་དོན": [
+      "Android Pie་རྨངགས་གཞི་བྱས་པའི་MIUI་དུས་བརྟན་མོ་དེ་ད་ལྟ་Xiaomi 8་ལ་བཏབ་ཡོད།"
+    ],
+    "རིམ་ལུགས": [
+      "གློག་ཙང་བའི་སྐྱོན་ཤས་ཡོད་པར་ཉམས་གསོ་བྱེད།",
+      "འོད་ཟབ་པོའམ་དབུགས་འཚང་མེད་པའི་གནས་ཚུལ་ཁྲོད་スクリーン་ལ་རྒྱུན་མི་འཆད་པར་འོད་འཕྲོ་བའི་གནད་དོན་ཐག་གཅོད་བྱེད།"
     ],
     "གཞན།": [
       "Improved system security and stability"

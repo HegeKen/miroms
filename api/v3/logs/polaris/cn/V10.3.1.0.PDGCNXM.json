@@ -5,7 +5,7 @@
       "修复 打开应用回到桌面时，应用图标过渡动画异常卡顿的问题",
       "修复 影响系统安全性与稳定性的若干问题"
     ],
-    "桌面": [
+    "主屏幕": [
       "修复 全面屏下将应用横屏后回到桌面，偶现屏幕右侧出现黑屏的问题"
     ],
     "备份": [
@@ -28,101 +28,524 @@
     ]
   },
   "logs_en": {
+    "System": [
+      "Fixed an issue where some page content overlapped or was missing when taking a long screenshot",
+      "Fixed the issue where the app icon transition animation was abnormally laggy when opening an app and returning to the home screen",
+      "Fixed several issues affecting system security and stability."
+    ],
+    "desktop": [
+      "Fixed an issue where the right side of the screen occasionally went black after returning to the home screen from an app in landscape mode in full-screen mode."
+    ],
+    "Backup": [
+      "Fixed an issue where a \"stopped running\" popup occasionally appeared before sending during One-tap transfer"
+    ],
+    "Settings": [
+      "Fixed the issue where the import page from an Apple device displayed incorrectly when using One-tap transfer with Jumbo and Extra-large font sizes"
+    ],
+    "File Explorer": [
+      "Fix the issue of apps crashing in some extreme cases"
+    ],
+    "Security": [
+      "Optimized page design and unified design specifications"
+    ],
+    "Mi Cloud": [
+      "Fixed an issue where homepage text displayed abnormally when the font size was set to the system default in multilingual environments"
+    ],
     "Other": [
       "Improved system security and stability"
     ]
   },
   "logs_zh_tw": {
+    "系統": [
+      "修正 截長屏時，頁面中部分內容重疊缺失的問題",
+      "修復 開啟應用程式回到桌面時，應用圖示過渡動畫異常卡頓的問題",
+      "修復 影響系統安全性與穩定性的若干問題"
+    ],
+    "桌面": [
+      "修復 全面屏下將應用橫屏後回到桌面，偶現螢幕右側出現黑屏的問題"
+    ],
+    "备份（Backup）": [
+      "修復偶現一鍵換機傳送前出現停止運行彈窗的問題"
+    ],
+    "设置": [
+      "修復 在巨無霸和超大字體下使用一鍵換機，從蘋果裝置匯入頁顯示異常的問題"
+    ],
+    "文件管理器": [
+      "修復 在某些極端情況下應用程式閃退的問題"
+    ],
+    "安全中心": [
+      "優化 頁面設計，統一設計規範"
+    ],
+    "小米雲服務": [
+      "修正多語言下，字體大小為系統預設大小時，首頁文字顯示異常的問題"
+    ],
     "其他": [
       "Improved system security and stability"
     ]
   },
   "logs_ja": {
+    "システム": [
+      "長いスクリーンショット撮影時に、ページ内の一部のコンテンツが重なったり欠落したりする問題を修正しました",
+      "アプリを開いてホーム画面に戻るとき、アプリアイコンのトランジションアニメーションが異常にカクつく問題を修正しました",
+      "システムの安全性と安定性に影響するいくつかの問題を修正しました。"
+    ],
+    "デスクトップ": [
+      "フルスクリーンでアプリを横向きにした後ホーム画面に戻ると、画面右側が時々黒くなる問題を修正しました。"
+    ],
+    "バックアップ": [
+      "ワンタップ移行で送信前に「動作を停止しました」というポップアップがまれに表示される問題を修正"
+    ],
+    "設定": [
+      "ジャンボおよび特大フォントで一括移行を使用する際、Apple デバイスからの読み込みページが正しく表示されない問題を修正"
+    ],
+    "ファイルマネージャー": [
+      "一部の極端な状況でアプリがクラッシュする問題を修正"
+    ],
+    "セキュリティ": [
+      "ページデザインを最適化し、デザイン仕様を統一"
+    ],
+    "Xiaomi クラウドサービス": [
+      "多言語環境でフォントサイズがシステム標準のとき、ホーム画面の文字が異常表示される問題を修正"
+    ],
     "その他": [
       "システムのセキュリティと安定性の向上"
     ]
   },
   "logs_ko": {
+    "시스템": [
+      "긴 스크린샷 촬영 시 페이지 일부 콘텐츠가 겹치거나 누락되는 문제를 수정했습니다",
+      "앱을 열고 홈 화면으로 돌아올 때 앱 아이콘 전환 애니메이션이 비정상적으로 끊기는 문제를 수정했습니다",
+      "시스템 보안 및 안정성에 영향을 미치는 몇 가지 문제를 수정했습니다."
+    ],
+    "데스크톱": [
+      "전체 화면에서 앱을 가로 방향으로 전환한 후 홈 화면으로 돌아갈 때 화면 오른쪽이 간헐적으로 검게 변하는 문제를 수정했습니다."
+    ],
+    "백업": [
+      "원터치 전환에서 전송 전에 '실행 중지' 팝업이 간헐적으로 표시되는 문제를 수정했습니다"
+    ],
+    "설정": [
+      "점보 및 초대형 글꼴에서 원클릭 이전을 사용할 때 Apple 기기에서 가져오기 페이지가 비정상적으로 표시되는 문제를 수정"
+    ],
+    "파일 관리자": [
+      "일부 극단적인 상황에서 앱이 강제 종료되는 문제를 수정"
+    ],
+    "보안": [
+      "페이지 디자인 최적화, 디자인 규격 통일"
+    ],
+    "Xiaomi 클라우드 서비스": [
+      "다국어 환경에서 글꼴 크기가 시스템 기본일 때 홈 화면 텍스트가 비정상적으로 표시되는 문제를 수정"
+    ],
     "기타": [
       "시스템 보안 및 안정성 개선"
     ]
   },
   "logs_ru": {
+    "Система": [
+      "Исправлена проблема, из-за которой при создании длинного снимка экрана часть содержимого страницы перекрывалась или отсутствовала",
+      "Исправлена проблема с аномальными задержками анимации перехода иконки приложения при открытии приложения и возврате на главный экран",
+      "Исправлены некоторые проблемы, влияющие на безопасность и стабильность системы."
+    ],
+    "Рабочий стол": [
+      "Исправлена проблема, из-за которой после возврата на главный экран из приложения в альбомной ориентации в полноэкранном режиме справа на экране иногда появлялась черная область."
+    ],
+    "Резервное копирование": [
+      "Исправлена проблема, из-за которой перед отправкой при переносе одним нажатием иногда появлялось окно «Приложение остановлено»"
+    ],
+    "Настройки": [
+      "Исправлена проблема с некорректным отображением страницы импорта с устройства Apple при использовании переноса одним нажатием со шрифтами «Джамбо» и «Очень большой»."
+    ],
+    "Проводник файлов": [
+      "Исправлена проблема с вылетом приложений в некоторых экстремальных случаях"
+    ],
+    "Безопасность": [
+      "Оптимизирован дизайн страницы, унифицированы стандарты дизайна"
+    ],
+    "Облачный сервис Xiaomi": [
+      "Исправлена проблема с некорректным отображением текста на главной странице при системном размере шрифта в многоязычном режиме"
+    ],
     "Другое": [
       "Улучшение безопасности и стабильности системы"
     ]
   },
   "logs_uk": {
+    "Система": [
+      "Виправлено проблему, через яку під час створення довгого знімка екрана частина вмісту сторінки перекривалася або була відсутня",
+      "Виправлено проблему з аномальним підвисанням анімації переходу значка програми під час відкриття програми та повернення на головний екран",
+      "Виправлено кілька проблем, що впливають на безпеку та стабільність системи."
+    ],
+    "Робочий стіл": [
+      "Виправлено проблему, через яку після повернення на головний екран із застосунку в альбомній орієнтації в повноекранному режимі праворуч на екрані іноді з’являлася чорна область."
+    ],
+    "Резервне копіювання": [
+      "Виправлено проблему, через яку перед надсиланням під час перенесення одним натисканням іноді з’являлося вікно «Програму зупинено»"
+    ],
+    "Налаштування": [
+      "Виправлено проблему з неправильним відображенням сторінки імпорту з пристрою Apple під час використання перенесення одним натисканням із шрифтами «Джамбо» та «Дуже великий»."
+    ],
+    "Провідник файлів": [
+      "Виправлено проблему з аварійним завершенням застосунків у деяких екстремальних випадках"
+    ],
+    "Безпека": [
+      "Оптимізовано дизайн сторінки, уніфіковано стандарти дизайну"
+    ],
+    "Хмарний сервіс Xiaomi": [
+      "Виправлено проблему з ненормальним відображенням тексту на головній сторінці, коли розмір шрифту є системним, у багатомовному режимі"
+    ],
     "Інше": [
       "Покращення безпеки та стабільності системи"
     ]
   },
   "logs_pl": {
-    "Inne": [
+    "System": [
+      "Naprawiono problem, w którym podczas robienia długiego zrzutu ekranu część zawartości strony nakładała się lub brakowała",
+      "Naprawiono problem z nieprawidłowym zacinaniem się animacji przejścia ikony aplikacji podczas otwierania aplikacji i powrotu do ekranu głównego",
+      "Naprawiono kilka problemów wpływających na bezpieczeństwo i stabilność systemu."
+    ],
+    "Biurko": [
+      "Naprawiono problem, w którym po powrocie do ekranu głównego z aplikacji w orientacji poziomej w trybie pełnoekranowym po prawej stronie ekranu czasami pojawiał się czarny obszar."
+    ],
+    "Kopia zapasowa": [
+      "Naprawiono problem, w którym przed wysłaniem w transferze jednym dotknięciem czasami pojawiało się okno „Aplikacja została zatrzymana”"
+    ],
+    "Ustawienia": [
+      "Naprawiono problem z nieprawidłowym wyświetlaniem strony importu z urządzenia Apple podczas korzystania z przenoszenia jednym dotknięciem przy czcionkach Jumbo i Bardzo duży."
+    ],
+    "Menedżer plików": [
+      "Naprawiono problem z awaryjnym zamykaniem aplikacji w niektórych skrajnych przypadkach"
+    ],
+    "Bezpieczeństwo": [
+      "Zoptymalizowano projekt strony i ujednolicono wytyczne projektowe"
+    ],
+    "Usługa w chmurze Xiaomi": [
+      "Naprawiono problem z nieprawidłowym wyświetlaniem tekstu na stronie głównej, gdy rozmiar czcionki jest domyślny systemowy, w wielu językach"
+    ],
+    "Reszt": [
       "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
   "logs_de": {
+    "System": [
+      "Das Problem wurde behoben, dass beim Erstellen eines langen Screenshots Inhalte auf der Seite überlappten oder fehlten",
+      "Das Problem wurde behoben, dass die Übergangsanimation des App-Symbols beim Öffnen einer App und der Rückkehr zum Startbildschirm ungewöhnlich stark ruckelte",
+      "Mehrere Probleme behoben, die die Systemsicherheit und -stabilität beeinträchtigen."
+    ],
+    "Startbildschirm": [
+      "Fehler behoben, bei dem nach der Rückkehr zum Startbildschirm aus einer App im Querformat im Vollbildmodus gelegentlich rechts auf dem Bildschirm ein schwarzer Bereich erschien."
+    ],
+    "Backup": [
+      "Behoben: Beim One-Tap-Transfer wurde vor dem Senden gelegentlich ein Popup „Wurde beendet“ angezeigt"
+    ],
+    "Einstellungen": [
+      "Problem behoben, bei dem die Importseite von einem Apple-Gerät bei Verwendung der Ein-Klick-Übertragung mit den Schriftgrößen „Jumbo“ und „Extra groß“ fehlerhaft angezeigt wurde."
+    ],
+    "Dateimanager": [
+      "Das Problem behoben, dass Apps in einigen Extremfällen abstürzen"
+    ],
+    "Sicherheit": [
+      "Seitendesign optimiert, Designrichtlinien vereinheitlicht"
+    ],
+    "Xiaomi Cloud-Dienst": [
+      "Problem behoben, bei dem Text auf der Startseite bei Systemstandardschriftgröße in mehreren Sprachen fehlerhaft angezeigt wurde"
+    ],
     "Sonstiges": [
       "Systemsicherheit und -stabilität verbessert"
     ]
   },
   "logs_fr": {
+    "Système": [
+      "Correction du problème où certains contenus de la page se chevauchaient ou manquaient lors d’une capture d’écran longue",
+      "Correction du problème de saccades anormales de l'animation de transition de l'icône d'application lors de l'ouverture d'une application et du retour à l'écran d'accueil",
+      "Correction de plusieurs problèmes affectant la sécurité et la stabilité du système."
+    ],
+    "Bureau": [
+      "Correction d’un problème où l’écran devenait parfois noir sur le côté droit après être revenu à l’écran d’accueil depuis une application en mode paysage en plein écran."
+    ],
+    "Copie de sécurité": [
+      "Correction du problème où une fenêtre « Application arrêtée » s’affichait parfois avant l’envoi lors du transfert en un clic"
+    ],
+    "Paramètres": [
+      "Correction du problème d’affichage anormal de la page d’importation depuis un appareil Apple lors de l’utilisation du transfert en un clic avec les tailles de police Jumbo et Extra grande."
+    ],
+    "Gestionnaire de fichiers": [
+      "Correction du problème de fermeture inattendue des applications dans certains cas extrêmes"
+    ],
+    "Sécurité": [
+      "Optimisation de la conception des pages et unification des règles de design"
+    ],
+    "Service cloud Xiaomi": [
+      "Correction d’un problème d’affichage anormal du texte de la page d’accueil lorsque la taille de police est celle par défaut du système en mode multilingue"
+    ],
     "Autre": [
       "Sécurité et stabilité du système améliorées"
     ]
   },
   "logs_it": {
+    "Sistema": [
+      "Risolto il problema per cui alcuni contenuti della pagina si sovrapponevano o mancavano durante l'acquisizione di uno screenshot lungo",
+      "Risolto il problema delle anomalie di scatti nell'animazione di transizione dell'icona dell'app quando si apre un'app e si torna alla schermata Home",
+      "Risolti diversi problemi che influiscono sulla sicurezza e sulla stabilità del sistema."
+    ],
+    "Desktop": [
+      "Risolto un problema per cui, dopo il ritorno alla schermata Home da un’app in orizzontale in modalità a schermo intero, sul lato destro dello schermo appariva talvolta una schermata nera."
+    ],
+    "Backup": [
+      "Risolto il problema per cui prima dell'invio nel trasferimento con un tocco appariva occasionalmente un popup \"Applicazione arrestata\""
+    ],
+    "Impostazioni": [
+      "Risolto il problema di visualizzazione anomala della pagina di importazione da un dispositivo Apple durante l'uso del trasferimento con un tocco con font Jumbo ed Extra grande."
+    ],
+    "File Manager": [
+      "Risolto il problema di chiusura imprevista delle app in alcuni casi estremi"
+    ],
+    "Sicurezza": [
+      "Ottimizzato il design delle pagine e uniformate le linee guida di design"
+    ],
+    "Servizio cloud Xiaomi": [
+      "Risolto un problema di visualizzazione anomala del testo nella schermata Home quando la dimensione del carattere è quella predefinita di sistema in più lingue"
+    ],
     "Altro": [
       "Maggiore sicurezza e stabilità di sistema"
     ]
   },
   "logs_es": {
+    "Sistema": [
+      "Se corrigió el problema por el que parte del contenido de la página se superponía o faltaba al hacer una captura de pantalla larga",
+      "Se corrigió el problema de que la animación de transición del icono de la aplicación se entrecortara de forma anómala al abrir una aplicación y volver a la pantalla de inicio",
+      "Se corrigieron varios problemas que afectan la seguridad y la estabilidad del sistema."
+    ],
+    "Escritorio": [
+      "Se corrigió un problema por el que, al volver a la pantalla de inicio desde una aplicación en horizontal en modo de pantalla completa, a veces aparecía una pantalla negra en el lado derecho."
+    ],
+    "Reserva de datos": [
+      "Se corrigió el problema por el que ocasionalmente aparecía una ventana emergente de \"Se ha detenido\" antes de enviar en el traslado con un toque"
+    ],
+    "Configuración": [
+      "Se corrigió el problema de visualización anómala de la página de importación desde un dispositivo Apple al usar la transferencia con un toque con los tamaños de fuente Jumbo y Extra grande."
+    ],
+    "Administrador de archivos": [
+      "Se corrigió el problema de cierre inesperado de aplicaciones en algunos casos extremos"
+    ],
+    "Seguridad": [
+      "Optimizado el diseño de páginas y unificadas las especificaciones de diseño"
+    ],
+    "Servicio en la nube de Xiaomi": [
+      "Se corrigió el problema de visualización anómala del texto de la pantalla de inicio cuando el tamaño de fuente es el predeterminado del sistema en varios idiomas"
+    ],
     "Otros": [
       "Estabilidad y seguridad del sistema mejorada"
     ]
   },
   "logs_pt": {
+    "Sistema": [
+      "Corrigido o problema em que parte do conteúdo da página se sobrepunha ou faltava ao fazer uma captura de tela longa",
+      "Corrigido o problema em que a animação de transição do ícone do app travava de forma anormal ao abrir um app e retornar à tela inicial",
+      "Corrigidos vários problemas que afetam a segurança e a estabilidade do sistema."
+    ],
+    "Ecrã inicial": [
+      "Corrigido um problema em que, ao voltar para a tela inicial a partir de um app na horizontal no modo de tela cheia, às vezes aparecia uma tela preta no lado direito."
+    ],
+    "Cópia de segurança": [
+      "Corrigido o problema em que um pop-up de \"Parou de funcionar\" aparecia ocasionalmente antes do envio na transferência com um toque"
+    ],
+    "Configurações": [
+      "Corrigido o problema de exibição anormal da página de importação de um dispositivo Apple ao usar a transferência com um toque com os tamanhos de fonte Jumbo e Extra grande."
+    ],
+    "Gerenciador de arquivos": [
+      "Corrigido o problema de fechamento inesperado de apps em alguns casos extremos"
+    ],
+    "Segurança": [
+      "Otimizado o design das páginas e unificadas as especificações de design"
+    ],
+    "Serviço de nuvem Xiaomi": [
+      "Corrigido o problema de exibição anormal do texto da tela inicial quando o tamanho da fonte é o padrão do sistema em vários idiomas"
+    ],
     "Outros": [
       "Segurança e estabilidade do sistema aprimoradas"
     ]
   },
   "logs_tr": {
+    "Sistem": [
+      "Uzun ekran görüntüsü alırken sayfadaki bazı içeriklerin üst üste binmesi veya eksik olması sorunu düzeltildi",
+      "Bir uygulamayı açıp ana ekrana dönerken uygulama simgesi geçiş animasyonunun anormal şekilde takılması sorunu düzeltildi",
+      "Sistem güvenliğini ve kararlılığını etkileyen birkaç sorun düzeltildi."
+    ],
+    "Masaüstü": [
+      "Tam ekranda uygulamayı yatay moda aldıktan sonra ana ekrana dönüldüğünde ekranın sağ tarafının bazen siyah görünmesi sorunu giderildi."
+    ],
+    "Yedekleme": [
+      "Tek dokunuşla aktarımda göndermeden önce ara sıra \"çalışmayı durdurdu\" açılır penceresinin görünmesi sorunu düzeltildi"
+    ],
+    "Ayarlar": [
+      "Apple cihazından içe aktarma sayfasının Jumbo ve Çok büyük yazı tipleriyle tek dokunuşla aktarım kullanılırken anormal görüntülenmesi sorunu giderildi."
+    ],
+    "Dosya Yöneticisi": [
+      "Bazı uç durumlarda uygulamaların çökmesi sorunu giderildi"
+    ],
+    "Güvenlik": [
+      "Sayfa tasarımı optimize edildi, tasarım kuralları birleştirildi"
+    ],
+    "Xiaomi Bulut Hizmeti": [
+      "Çoklu dilde yazı tipi boyutu sistem varsayılanı olduğunda ana sayfa metninin anormal görüntülenmesi sorunu giderildi"
+    ],
     "Diğer": [
       "Sistem güvenliği ve kararlılığı geliştirildi"
     ]
   },
   "logs_id": {
+    "Sistem": [
+      "Memperbaiki masalah sebagian konten halaman bertumpuk atau hilang saat mengambil tangkapan layar panjang",
+      "Memperbaiki masalah animasi transisi ikon aplikasi yang tersendat secara tidak normal saat membuka aplikasi dan kembali ke layar utama",
+      "Memperbaiki beberapa masalah yang memengaruhi keamanan dan stabilitas sistem."
+    ],
+    "Desktop": [
+      "Memperbaiki masalah di mana layar terkadang menjadi hitam di sisi kanan setelah kembali ke layar utama dari aplikasi dalam mode lanskap di layar penuh."
+    ],
+    "Cadangan": [
+      "Memperbaiki masalah popup \"berhenti berjalan\" yang terkadang muncul sebelum mengirim di transfer sekali ketuk"
+    ],
+    "Pengaturan": [
+      "Memperbaiki masalah tampilan halaman impor dari perangkat Apple yang tidak normal saat menggunakan transfer sekali ketuk dengan font Jumbo dan Ekstra besar."
+    ],
+    "File Manager": [
+      "Memperbaiki masalah aplikasi yang force close dalam beberapa kasus ekstrem"
+    ],
+    "Keamanan": [
+      "Mengoptimalkan desain halaman dan menyatukan pedoman desain"
+    ],
+    "Layanan Cloud Xiaomi": [
+      "Memperbaiki masalah tampilan teks beranda yang tidak normal saat ukuran font adalah default sistem dalam berbagai bahasa"
+    ],
     "Lainnya": [
       "Keamanan dan stabilitas sistem ditingkatkan"
     ]
   },
   "logs_vi": {
+    "Hệ thống": [
+      "Đã khắc phục sự cố một số nội dung trên trang bị chồng lấn hoặc thiếu khi chụp ảnh màn hình dài",
+      "Đã khắc phục sự cố hoạt ảnh chuyển tiếp biểu tượng ứng dụng bị giật bất thường khi mở ứng dụng và quay về màn hình chính",
+      "Đã khắc phục một số vấn đề ảnh hưởng đến bảo mật và độ ổn định của hệ thống."
+    ],
+    "Màn hình chính": [
+      "Đã khắc phục sự cố đôi khi màn hình bên phải bị đen sau khi chuyển ứng dụng sang ngang và quay về màn hình chính ở chế độ toàn màn hình."
+    ],
+    "Dự phòng (Backup)": [
+      "Đã sửa lỗi đôi khi xuất hiện cửa sổ \"đã dừng chạy\" trước khi gửi trong Chuyển máy một chạm"
+    ],
+    "Cài đặt": [
+      "Đã khắc phục sự cố hiển thị bất thường của trang nhập từ thiết bị Apple khi dùng chuyển dữ liệu một chạm với cỡ chữ Jumbo và Cực lớn."
+    ],
+    "Trình quản lý tệp": [
+      "Khắc phục sự cố ứng dụng bị thoát đột ngột trong một số trường hợp cực đoan"
+    ],
+    "Trung tâm An ninh": [
+      "Tối ưu hóa thiết kế trang và thống nhất quy chuẩn thiết kế"
+    ],
+    "Dịch vụ đám mây Xiaomi": [
+      "Đã khắc phục sự cố văn bản trên trang chủ hiển thị bất thường khi cỡ chữ là mặc định hệ thống trong môi trường đa ngôn ngữ"
+    ],
     "Khác": [
       "Cải thiện tính ổn định và bảo mật hệ thống"
     ]
   },
   "logs_th": {
+    "ระบบ": [
+      "แก้ไขปัญหาที่เนื้อหาบางส่วนในหน้าเว็บซ้อนทับหรือหายไปเมื่อจับภาพหน้าจอยาว",
+      "แก้ไขปัญหาที่แอนิเมชันการเปลี่ยนไอคอนแอปกระตุกผิดปกติเมื่อเปิดแอปแล้วกลับไปที่หน้าจอหลัก",
+      "แก้ไขปัญหาหลายประการที่ส่งผลต่อความปลอดภัยและเสถียรภาพของระบบ"
+    ],
+    "โต๊ะทำงาน": [
+      "แก้ไขปัญหาที่บางครั้งหน้าจอด้านขวาเป็นสีดำหลังจากหมุนแอปเป็นแนวนอนแล้วกลับไปที่หน้าจอหลักในโหมดเต็มหน้าจอ"
+    ],
+    "สำรองข้อมูล": [
+      "แก้ไขปัญหาที่บางครั้งมีป๊อปอัป \"หยุดทำงาน\" ปรากฏก่อนส่งในการย้ายเครื่องแบบแตะครั้งเดียว"
+    ],
+    "การตั้งค่า": [
+      "แก้ไขปัญหาหน้าที่นำเข้าจากอุปกรณ์ Apple แสดงผลผิดปกติเมื่อใช้การย้ายข้อมูลในแตะครั้งเดียวด้วยขนาดตัวอักษรจัมโบและใหญ่พิเศษ"
+    ],
+    "ตัวจัดการไฟล์": [
+      "แก้ไขปัญหแอปหยุดทำงานในบางกรณีสุดวิสัย"
+    ],
+    "ความปลอดภัย": [
+      "ปรับแต่งการออกแบบหน้าเพจและรวมมาตรฐานการออกแบบให้เป็นหนึ่งเดียว"
+    ],
+    "บริการคลาวด์ Xiaomi": [
+      "แก้ไขปัญหาข้อความบนหน้าหลักแสดงผลผิดปกติเมื่อขนาดตัวอักษรเป็นค่าเริ่มต้นของระบบในหลายภาษา"
+    ],
     "อื่นๆ": [
       "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
     ]
   },
   "logs_ar": {
-    "أخرى": [
+    "النظام": [
+      "تم إصلاح مشكلة تداخل أو فقدان بعض محتوى الصفحة عند التقاط لقطة شاشة طويلة",
+      "تم إصلاح مشكلة التقطيع غير الطبيعي في حركة انتقال أيقونة التطبيق عند فتح تطبيق والعودة إلى الشاشة الرئيسية",
+      "تم إصلاح عدة مشكلات تؤثر على أمان النظام واستقراره."
+    ],
+    "سطح المكتب": [
+      "تم إصلاح مشكلة ظهور الشاشة سوداء أحيانًا على الجانب الأيمن عند العودة إلى الشاشة الرئيسية بعد تدوير التطبيق إلى الوضع الأفقي في وضع ملء الشاشة."
+    ],
+    "النسخ الاحتياطي": [
+      "تم إصلاح مشكلة ظهور نافذة \"توقف التشغيل\" أحيانًا قبل الإرسال في النقل بنقرة واحدة"
+    ],
+    "الإعدادات": [
+      "تم إصلاح مشكلة عرض صفحة الاستيراد من جهاز Apple بشكل غير طبيعي عند استخدام النقل بنقرة واحدة مع أحجام الخط Jumbo والكبير جدًا."
+    ],
+    "مدير الملفات": [
+      "إصلاح مشكلة تعطل التطبيقات في بعض الحالات القصوى"
+    ],
+    "الأمان": [
+      "تحسين تصميم الصفحة وتوحيد معايير التصميم"
+    ],
+    "خدمة Xiaomi السحابية": [
+      "تم إصلاح مشكلة عرض نص الصفحة الرئيسية بشكل غير طبيعي عندما يكون حجم الخط هو الافتراضي للنظام في وضع تعدد اللغات"
+    ],
+    "آخرين": [
       "تحسين أمن واستقرار النظام"
     ]
   },
   "logs_in": {
+    "सिस्टम": [
+      "लंबा स्क्रीनशॉट लेते समय पेज की कुछ सामग्री के ओवरलैप होने या गायब होने की समस्या ठीक की गई",
+      "ऐप खोलकर होम स्क्रीन पर लौटते समय ऐप आइकन ट्रांज़िशन एनिमेशन के असामान्य रूप से रुकने की समस्या ठीक की गई",
+      "सिस्टम की सुरक्षा और स्थिरता को प्रभावित करने वाली कुछ समस्याओं को ठीक किया गया।"
+    ],
+    "डेस्कटॉप": [
+      "फुल-स्क्रीन में ऐप को लैंडस्केप में घुमाने के बाद होम स्क्रीन पर लौटने पर स्क्रीन के दाईं ओर कभी-कभी काली स्क्रीन दिखने की समस्या ठीक की गई।"
+    ],
+    "सेटिंग्स": [
+      "Apple डिवाइस से आयात पेज के असामान्य रूप से प्रदर्शित होने की समस्या ठीक की गई, जब Jumbo और Extra-large फ़ॉन्ट आकारों के साथ एक-टैप ट्रांसफ़र का उपयोग किया जाता है।"
+    ],
+    "फ़ाइल प्रबंधक": [
+      "कुछ अत्यधिक स्थितियों में ऐप क्रैश होने की समस्या ठीक की गई"
+    ],
+    "सुरक्षा": [
+      "पेज डिज़ाइन अनुकूलित और डिज़ाइन मानक एकीकृत"
+    ],
+    "Xiaomi क्लाउड सेवा": [
+      "कई भाषाओं में फ़ॉन्ट आकार सिस्टम डिफ़ॉल्ट होने पर होमपेज टेक्स्ट के असामान्य रूप से प्रदर्शित होने की समस्या ठीक की गई"
+    ],
     "अन्य": [
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
     ]
   },
   "logs_ug": {
+    "ھۆججەت باشقۇرغۇچ": [
+      "بەزى چەتكە قاققان ئەھۋاللاردا ئەپنىڭ تۇيۇقسىز تاقىلىپ قېلىش مەسىلىسى تۈزىتىلدى"
+    ],
+    "بىخەتەرلىك مەركىزى": [
+      "بەت لايىھەسىنى ئەلالاشتۇرۇش، لايىھە ئۆلچىمىنى بىرلىككە كەلتۈرۈش"
+    ],
+    "Xiaomi بۇلۇت مۇلازىمىتى": [
+      "كۆپ تىلدا خەت نۇسخىسى چوڭلۇقى سىستېما سۈكۈتتىكى چوڭلۇقتا بولغاندا باش بەت تېكىستىنىڭ نورمالسىز كۆرۈنۈش مەسىلىسى تۈزىتىلدى"
+    ],
     "باشقىلىرى": [
       "Improved system security and stability"
     ]
   },
   "logs_bo": {
+    "བདེ་འཇགས་ལྟེ་གནས": [
+      "ཤོག་ངོས་ཀྱི་བཟོ་རྣམ་ལེགས་བཅོས་བྱས་ཏེ་བཟོ་རྣམ་གྱི་ཚད་གཞི་གཅིག་གྱུར་བྱས།"
+    ],
     "གཞན།": [
       "Improved system security and stability"
     ]

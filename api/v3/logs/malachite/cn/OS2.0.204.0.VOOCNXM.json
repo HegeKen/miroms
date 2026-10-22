@@ -19,7 +19,7 @@
       "修复 打开/关闭应用偶现壁纸丢失问题",
       "修复 打开/关闭应用偶现应用显示异常问题"
     ],
-    "桌面": [
+    "主屏幕": [
       "新增 桌面图标文字在壁纸浅色区域显示阴影效果"
     ],
     "智能助理": [
@@ -91,7 +91,7 @@
       "Fix: Wallpapers disappeared in rare cases when opening or closing apps",
       "Fix: Occasional display glitches when opening or closing apps"
     ],
-    "Home screen": [
+    "desktop": [
       "New: Home screen icon text now displays shadows over light wallpaper areas for better readability"
     ],
     "Lock screen": [
@@ -169,7 +169,7 @@
       "新增: 鎖定螢幕自訂快速功能",
       "優化: 支援設定蝴蝶、光波、漩渦等指紋解鎖動畫"
     ],
-    "設定": [
+    "设置": [
       "優化: 桌面設定中，系統導覽方式頁的快速功能入口"
     ],
     "狀態欄、通知欄": [
@@ -208,6 +208,9 @@
       "新增: 部分狀態列圖示支援自訂顯示",
       "優化: 自訂通知支援取消折疊",
       "優化: 訊號HD圖示不在狀態列常駐顯示"
+    ],
+    "設定": [
+      "優化: 桌面設定中，系統導覽方式頁的快速功能入口"
     ]
   },
   "logs_ja": {
@@ -219,6 +222,11 @@
     ],
     "設定": [
       "最適化: ホーム画面の設定にシステムナビゲーション設定へのショートカットを追加しました"
+    ],
+    "ステータスバー、通知シェード": [
+      "新機能: 一部のステータスバーアイコンがカスタム表示をサポートするようになりました",
+      "最適化: カスタム通知が展開をサポートするようになりました",
+      "最適化: HD 信号アイコンがステータスバーに常時表示されなくなりました"
     ],
     "アクセシビリティ": [
       "修正: TalkBack モードでタッチジェスチャーが機能しない不具合",
@@ -241,11 +249,6 @@
       "最適化: 一部のサードパーティアプリのコンテンツフィードのスクロールパフォーマンス",
       "修正: アプリを開いたり閉じたりするときのアニメーションの問題",
       "修正: 特定のシナリオでジェスチャーが正しく機能しない問題"
-    ],
-    "ステータスバー、通知シェード": [
-      "新機能: 一部のステータスバーアイコンがカスタム表示をサポートするようになりました",
-      "最適化: カスタム通知が展開をサポートするようになりました",
-      "最適化: HD 信号アイコンがステータスバーに常時表示されなくなりました"
     ],
     "Xiaomi クラウドサービス": [
       "新機能: 一部のステータスバーアイコンがカスタム表示をサポートするようになりました",
@@ -392,6 +395,11 @@
     ],
     "Налаштування": [
       "Оптимізація: Додано ярлик до «Способів навігації» в «Налаштуваннях робочого столу»"
+    ],
+    "Рядок стану, панель сповіщень": [
+      "Нове: Деякі піктограми в рядку стану тепер підтримують користувацьке відображення",
+      "Оптимізація: Спеціальні сповіщення тепер підтримують розгортання",
+      "Оптимізація: Піктограма HD-сигналу більше не відображається постійно в рядку стану"
     ],
     "Спеціальні можливості": [
       "Виправлено: Сенсорні жести перестали працювати в режимі TalkBack",
@@ -559,6 +567,11 @@
       "Neu: Einige Statusleisten-Symbole unterstützen jetzt benutzerdefinierte Anzeige.",
       "Optimierung: Benutzerdefinierte Benachrichtigungen unterstützen jetzt das Ausklappen",
       "Optimierung: HD-Signal-Symbol wird nicht mehr dauerhaft in der Statusleiste angezeigt"
+    ],
+    "Xiaomi Cloud-Dienst": [
+      "Neu: Einige Statusleisten-Symbole unterstützen jetzt benutzerdefinierte Anzeige.",
+      "Optimierung: Benutzerdefinierte Benachrichtigungen unterstützen jetzt das Ausklappen",
+      "Optimierung: HD-Signal-Symbol wird nicht mehr dauerhaft in der Statusleiste angezeigt"
     ]
   },
   "logs_fr": {
@@ -685,7 +698,7 @@
       "Nuevo: Accesos directos personalizables de la Pantalla de bloqueo",
       "Optimización: El desbloqueo con huella dactilar ahora admite nuevas animaciones"
     ],
-    "Ajustes": [
+    "Configuración": [
       "Optimización: Se agregó un acceso directo a la configuración de navegación del sistema en la configuración de la Pantalla de inicio"
     ],
     "barra de estado, barra de notificaciones": [
@@ -737,6 +750,9 @@
       "Added a check-in watermark.",
       "The standard watermark supports custom positioning.",
       "Expanded personalization settings: Added support for multiple camera interface color schemes."
+    ],
+    "Ajustes": [
+      "Optimización: Se agregó un acceso directo a la configuración de navegación del sistema en la configuración de la Pantalla de inicio"
     ]
   },
   "logs_pt": {
@@ -935,6 +951,11 @@
     "Cài đặt": [
       "Tối ưu: Đã thêm lối tắt vào cài đặt điều hướng hệ thống trong cài đặt Màn hình chính"
     ],
+    "Thanh trạng thái, thanh thông báo": [
+      "Mới: Một số biểu tượng thanh trạng thái hiện hỗ trợ hiển thị tùy chỉnh",
+      "Tối ưu: Thông báo tùy chỉnh hiện hỗ trợ mở rộng",
+      "Tối ưu: Biểu tượng tín hiệu HD không còn hiển thị cố định trên thanh trạng thái"
+    ],
     "Khả năng truy cập": [
       "Sửa: Cử chỉ chạm đã dừng hoạt động ở chế độ TalkBack",
       "Sửa: Các phím âm lượng không hoạt động ở chế độ TalkBack",
@@ -990,6 +1011,11 @@
     ],
     "การตั้งค่า": [
       "การเพิ่มประสิทธิภาพ: เพิ่มทางลัดไปยังการตั้งค่าการนำทางระบบในการตั้งค่าหน้าจอหลัก"
+    ],
+    "แถบสถานะ, แผงการแจ้งเตือน": [
+      "ใหม่: ไอคอนแถบสถานะบางรายการรองรับการแสดงผลแบบกำหนดเองแล้ว",
+      "การเพิ่มประสิทธิภาพ: การแจ้งเตือนแบบกำหนดเองรองรับการกางออกแล้ว",
+      "การเพิ่มประสิทธิภาพ: ไอคอนสัญญาณ HD จะไม่แสดงถาวรในแถบสถานะอีกต่อไป"
     ],
     "การเข้าถึง": [
       "แก้ไข: ท่าทางสัมผัสหยุดทำงานในโหมด TalkBack",
@@ -1173,7 +1199,7 @@
       "Fix: Wallpapers disappeared in rare cases when opening or closing apps",
       "Fix: Occasional display glitches when opening or closing apps"
     ],
-    "باش ئېكران": [
+    "ئۈستەل يۈزى": [
       "New: Home screen icon text now displays shadows over light wallpaper areas for better readability"
     ],
     "Lock screen": [
@@ -1203,7 +1229,7 @@
       "Optimization: Interrupt animation during app transitions",
       "Optimization: Interrupt animation when closing apps in Landscape mode"
     ],
-    "كامېرا": [
+    "فوتو ئاپپارات": [
       "All-new design",
       "Brand-new visual language: A more professional visual style provides a deeper sense of immersion while shooting.",
       "· Structure optimization: We streamlined the feature menus and optimized the settings page.",
@@ -1211,6 +1237,21 @@
       "Enhanced watermark features:",
       "Added a check-in watermark.",
       "Film frame watermark now supports black or white backgrounds",
+      "The standard watermark supports custom positioning.",
+      "Expanded personalization settings: Added support for multiple camera interface color schemes."
+    ],
+    "Xiaomi بۇلۇت مۇلازىمىتى": [
+      "New: Some status bar icons now support custom display",
+      "Optimization: Custom notifications now support unfolding",
+      "Optimization: HD signal icon no longer permanently shown in the status bar"
+    ],
+    "كامېرا": [
+      "All-new design",
+      "Brand-new visual language: A more professional visual style provides a deeper sense of immersion while shooting.",
+      "· Structure optimization: We streamlined the feature menus and optimized the settings page.",
+      "Pro mode upgrade: Adjusted the interface layout and combined parameter options to reduce preview obstruction and help you focus on your creative process.",
+      "Enhanced watermark features:",
+      "Added a check-in watermark.",
       "The standard watermark supports custom positioning.",
       "Expanded personalization settings: Added support for multiple camera interface color schemes."
     ],
@@ -1232,7 +1273,7 @@
       "Fix: Wallpapers disappeared in rare cases when opening or closing apps",
       "Fix: Occasional display glitches when opening or closing apps"
     ],
-    "Home screen": [
+    "ཅོག་ངོས": [
       "New: Home screen icon text now displays shadows over light wallpaper areas for better readability"
     ],
     "Lock screen": [
@@ -1271,7 +1312,7 @@
       "Fix: Issues with animations when opening or closing apps",
       "Fix: Gestures didn't work properly in certain scenarios"
     ],
-    "པར་ཆས": [
+    "ཁ་མར།": [
       "All-new design",
       "Brand-new visual language: A more professional visual style provides a deeper sense of immersion while shooting.",
       "· Structure optimization: We streamlined the feature menus and optimized the settings page.",
@@ -1279,6 +1320,21 @@
       "Enhanced watermark features:",
       "Added a check-in watermark.",
       "Film frame watermark now supports black or white backgrounds",
+      "The standard watermark supports custom positioning.",
+      "Expanded personalization settings: Added support for multiple camera interface color schemes."
+    ],
+    "Mi Cloud": [
+      "New: Some status bar icons now support custom display",
+      "Optimization: Custom notifications now support unfolding",
+      "Optimization: HD signal icon no longer permanently shown in the status bar"
+    ],
+    "པར་ཆས": [
+      "All-new design",
+      "Brand-new visual language: A more professional visual style provides a deeper sense of immersion while shooting.",
+      "· Structure optimization: We streamlined the feature menus and optimized the settings page.",
+      "Pro mode upgrade: Adjusted the interface layout and combined parameter options to reduce preview obstruction and help you focus on your creative process.",
+      "Enhanced watermark features:",
+      "Added a check-in watermark.",
       "The standard watermark supports custom positioning.",
       "Expanded personalization settings: Added support for multiple camera interface color schemes."
     ],

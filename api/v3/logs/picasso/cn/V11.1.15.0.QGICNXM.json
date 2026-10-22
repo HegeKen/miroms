@@ -23,129 +23,363 @@
   },
   "logs_en": {
     "System": [
+      "Optimized the WeChat red packet notification speed on mobile networks",
+      "Fix the issue where the Xiaomi Mi Lan Ting PRO system font cannot be applied globally",
+      "Updated Android Security Patch to February 2020. Increased system security.",
       "Optimization: Faster notifications about WeChat red envelopes while using mobile data",
-      "Fix: Mi Lanting PRO font couldn't be applied everywhere",
-      "Updated Android Security Patch to February 2020. Increased system security."
+      "Fix: Mi Lanting PRO font couldn't be applied everywhere"
     ],
     "Phone": [
+      "Fix the issue where the incoming call screen sometimes does not appear on the lock screen when a call comes in",
+      "Fix the issue where the UI occasionally freezes when hanging up a call.",
+      "Smart IP telephony",
       "Fix: Incoming calls weren't always displayed on the Lock screen",
-      "Smart IP telephony"
+      "Fixed an issue where incoming calls were not displayed on some lock screen interfaces",
+      "Fixed an issue where incoming calls were sometimes not displayed on the lock screen"
+    ],
+    "File Explorer": [
+      "Optimize homepage file scanning speed"
     ],
     "Other": []
   },
   "logs_zh_tw": {
     "系統": [
+      "最佳化 行動網路下微信紅包通知提示速度",
+      "修復 小米蘭亭PRO系統字體無法全域套用的問題",
+      "更新Android安全性修補程式等級（2020#02），提升系統安全性",
       "優化: 提高行動網路下微信紅包通知提醒速度",
-      "修復: 小米蘭亭PRO系统字體不能全局應用的問題",
-      "更新Android安全性修補程式等級（2020#02），提升系統安全性"
+      "修復: 小米蘭亭PRO系统字體不能全局應用的問題"
+    ],
+    "电话": [
+      "修復 偶現來電時鎖屏不顯示來電介面的問題",
+      "修復 偶現掛斷電話時介面卡住的問題",
+      "支援智慧網際協議(Internet Protocol)撥號功能"
+    ],
+    "文件管理器": [
+      "優化 首頁檔案掃描速度"
     ],
     "電話": [
       "修復: 偶現來電時螢幕鎖定畫面不顯示來電界面的問題",
-      "支援智慧網際協議(Internet Protocol)撥號功能"
+      "支援智慧網際協議(Internet Protocol)撥號功能",
+      "修正 部分鎖定螢幕介面不顯示來電的問題",
+      "修正鎖定畫面有時不顯示來電的問題"
     ],
     "其他": []
   },
   "logs_ja": {
+    "システム": [
+      "モバイルネットワークでのWeChat紅包通知の速度を最適化",
+      "Xiaomi Mi Lan Ting PRO システムフォントが全体に適用できない問題を修正",
+      "Androidセキュリティパッチを2020年2月にアップデートしました。システムセキュリティが向上しました。"
+    ],
+    "電話": [
+      "着信時にロック画面に着信画面が表示されないことがある問題を修正",
+      "通話終了時にUIが時々フリーズする問題を修正",
+      "スマートIP発信機能に対応",
+      "修正: 着信時にロック画面に着信画面が表示されないことがある問題",
+      "一部のロック画面で着信が表示されない問題を修正",
+      "ロック画面で着信が表示されないことがある問題を修正しました"
+    ],
+    "ファイルマネージャー": [
+      "ホームページのファイルスキャン速度を最適化"
+    ],
     "その他": []
   },
   "logs_ko": {
+    "시스템": [
+      "모바일 네트워크에서 WeChat 홍바오 알림 속도 최적화",
+      "Xiaomi Mi Lan Ting PRO 시스템 글꼴이 전체에 적용되지 않는 문제를 수정",
+      "Android 보안패치 (2020#02) 업데이트됨. 시스템 보안이 향상되었습니다."
+    ],
     "전화": [
+      "전화 수신 시 잠금 화면에 수신 화면이 표시되지 않는 간헐적 문제를 수정",
+      "통화 종료 시 간헐적으로 UI가 멈추는 문제를 수정",
+      "스마트 IP 텔레포니 기능 지원",
+      "수정: 간헐적으로 전화 수신 시 잠금 화면에 수신 화면이 표시되지 않는 문제",
       "수정: 일부 잠금화면에 통화 수신이 표시되지 않는 문제",
-      "스마트 IP 텔레포니 기능 지원"
+      "잠금 화면에서 수신 전화가 표시되지 않는 문제를 수정했습니다"
+    ],
+    "파일 관리자": [
+      "홈페이지 파일 스캔 속도 최적화"
     ],
     "기타": []
   },
   "logs_ru": {
+    "Система": [
+      "Оптимизирована скорость уведомлений о красных конвертах WeChat в мобильной сети",
+      "Исправлена проблема, из-за которой системный шрифт Xiaomi Mi Lan Ting PRO не применялся глобально",
+      "Обновление системы безопасности Android (февраль 2020 года). Улучшена безопасность системы."
+    ],
     "Телефон": [
+      "Исправлена проблема, из-за которой при входящем вызове на экране блокировки иногда не отображается экран вызова.",
+      "Исправлена проблема с периодическим зависанием интерфейса при завершении вызова.",
+      "Смарт IP-телефония",
+      "Исправление: иногда при входящем вызове экран блокировки не отображал интерфейс вызова",
       "Исправлено: В некоторых случаях уведомление о входящем вызове не отображалось на экране блокировки",
-      "Смарт IP-телефония"
+      "Исправлена проблема, из-за которой входящие вызовы иногда не отображались на экране блокировки"
+    ],
+    "Проводник файлов": [
+      "Оптимизация скорости сканирования файлов на главной странице"
     ],
     "Другое": []
   },
   "logs_uk": {
-    "Інше": [],
+    "Система": [
+      "Оптимізовано швидкість сповіщень про червоні конверти WeChat у мобільній мережі",
+      "Виправлено проблему, через яку системний шрифт Xiaomi Mi Lan Ting PRO не застосовувався глобально",
+      "Оновлення системи безпеки Android (лютий 2020 року). Збільшена безпека системи."
+    ],
     "Телефон": [
+      "Виправлено проблему, через яку під час вхідного виклику на екрані блокування іноді не відображається екран виклику.",
+      "Виправлено проблему з періодичним зависанням інтерфейсу під час завершення виклику.",
+      "Підтримка розумного IP-набору",
+      "Виправлення: іноді під час вхідного виклику екран блокування не показував інтерфейс виклику",
+      "Виправлено проблему, коли на деяких екранах блокування не відображалися вхідні виклики",
       "Виправлено: Вхіні виклики не завжди відображалися на Екрані блокування"
-    ]
+    ],
+    "Провідник файлів": [
+      "Оптимізація швидкості сканування файлів на головній сторінці"
+    ],
+    "Інше": []
   },
   "logs_pl": {
-    "Telefon": [
-      "Naprawiono: Połączenia przychodzące nie zawsze były wyświetlane na ekranie blokady",
-      "Inteligentna telefonia IP"
+    "System": [
+      "Zoptymalizowano szybkość powiadomień o czerwonych kopertach WeChat w sieci komórkowej",
+      "Naprawiono problem z globalnym zastosowaniem czcionki systemowej Xiaomi Mi Lan Ting PRO",
+      "Zaktualizowano Pakiet Bezpieczeństwa Android do lutego 2020 r. Zwiększono bezpieczeństwo systemu."
     ],
-    "Inne": []
+    "Telefon": [
+      "Naprawiono problem, w którym podczas połączenia przychodzącego na ekranie blokady czasami nie wyświetla się ekran połączenia.",
+      "Naprawiono problem z sporadycznym zawieszaniem się interfejsu podczas kończenia połączenia.",
+      "Inteligentna telefonia IP",
+      "Poprawka: czasami podczas połączenia przychodzącego ekran blokady nie wyświetlał interfejsu połączenia",
+      "Naprawiono: Połączenia przychodzące nie zawsze były wyświetlane na ekranie blokady",
+      "Naprawiono problem, w wyniku którego połączenia przychodzące czasami nie były wyświetlane na ekranie blokady"
+    ],
+    "Menedżer plików": [
+      "Optymalizacja szybkości skanowania plików na stronie głównej"
+    ],
+    "Reszt": []
   },
   "logs_de": {
+    "System": [
+      "Geschwindigkeit der WeChat-Rotpaket-Benachrichtigungen im Mobilfunknetz optimiert",
+      "Problem behoben, dass die Systemschriftart Xiaomi Mi Lan Ting PRO nicht global angewendet werden kann",
+      "Android-Sicherheitspatch auf Februar 2020 aktualisiert. Systemsicherheit erhöht."
+    ],
+    "Telefon": [
+      "Problem behoben, bei dem eingehende Anrufe auf dem Sperrbildschirm zeitweise nicht angezeigt werden.",
+      "Das Problem wurde behoben, dass die Benutzeroberfläche beim Auflegen gelegentlich einfriert.",
+      "Unterstützt intelligente IP-Telefonie",
+      "Fix: Bei eingehenden Anrufen wurde die Anrufoberfläche auf dem Sperrbildschirm gelegentlich nicht angezeigt",
+      "Problem behoben, bei dem eingehende Anrufe auf einigen Sperrbildschirmen nicht angezeigt wurden",
+      "Problem behoben, bei dem eingehende Anrufe manchmal nicht auf dem Sperrbildschirm angezeigt wurden"
+    ],
+    "Dateimanager": [
+      "Optimierung der Dateiscangeschwindigkeit auf der Startseite"
+    ],
     "Sonstiges": []
   },
   "logs_fr": {
+    "Système": [
+      "Optimisation de la vitesse des notifications d'enveloppes rouges WeChat sur réseau mobile",
+      "Correction du problème empêchant l’application globale de la police système Xiaomi Mi Lan Ting PRO",
+      "Mise à jour du correctif de sécurité Android jusqu'en février 2020. Augmentation de la sécurité du système."
+    ],
     "Téléphone": [
+      "Correction du problème où l’écran d’appel entrant ne s’affiche parfois pas sur l’écran de verrouillage lors d’un appel entrant.",
+      "Correction du problème de gel occasionnel de l'interface lors de la fin d'un appel.",
+      "Téléphonie IP intelligente",
+      "Correction : l'interface d'appel ne s'affichait parfois pas sur l'écran de verrouillage lors d'un appel entrant",
       "Réparé: Les appels entrants n'étaient pas toujours affichés sur l'écran de verrouillage",
-      "Téléphonie IP intelligente"
+      "Correction du problème où les appels entrants ne s’affichaient parfois pas sur l’écran de verrouillage"
+    ],
+    "Gestionnaire de fichiers": [
+      "Optimisation de la vitesse d'analyse des fichiers sur la page d'accueil"
     ],
     "Autre": []
   },
   "logs_it": {
     "Sistema": [
+      "Ottimizzata la velocità delle notifiche delle buste rosse WeChat sulla rete mobile",
+      "Risolto il problema per cui il font di sistema Xiaomi Mi Lan Ting PRO non può essere applicato globalmente",
+      "Patch di sicurezza Android aggiornata a febbraio 2020. Maggiore sicurezza del sistema.",
       "Ottimizzazione: Notifiche più veloci sulle buste rosse di WeChat durante l'utilizzo della connessione dati",
-      "Risolto: Il carattere Mi Lanting PRO non poteva essere applicato ovunque",
-      "Patch di sicurezza Android aggiornata a febbraio 2020. Maggiore sicurezza del sistema."
+      "Risolto: Il carattere Mi Lanting PRO non poteva essere applicato ovunque"
     ],
     "Telefono": [
+      "Risolto il problema per cui durante una chiamata in arrivo la schermata di chiamata a volte non viene visualizzata nella schermata di blocco.",
+      "Risolto il problema del blocco occasionale dell'interfaccia durante la chiusura di una chiamata.",
+      "Telefonia Smart IP",
       "Risolto: Le chiamate in arrivo non venivano sempre visualizzate sulla schermata di blocco",
-      "Telefonia Smart IP"
+      "Risolto un problema per cui le chiamate in arrivo non venivano visualizzate su alcune schermate di blocco",
+      "Risolto il problema per cui le chiamate in arrivo a volte non venivano visualizzate nella schermata di blocco"
+    ],
+    "File Manager": [
+      "Ottimizzazione della velocità di scansione dei file nella pagina iniziale"
     ],
     "Altro": []
   },
   "logs_es": {
     "Sistema": [
+      "Optimizada la velocidad de las notificaciones de sobres rojos de WeChat en redes móviles",
+      "Se corrigió el problema por el que la fuente del sistema Xiaomi Mi Lan Ting PRO no se podía aplicar globalmente",
+      "Parche de seguridad de Android actualizado a febrero de 2020. Seguridad del sistema incrementada.",
       "Optimización: Notificaciones más rápidas acerca de sobres rojos de WeChat al usar datos móviles",
-      "Reparado: La fuente Mi Lanting PRO no siempre se podía aplicar en todos los sitios",
-      "Parche de seguridad de Android actualizado a febrero de 2020. Seguridad del sistema incrementada."
+      "Reparado: La fuente Mi Lanting PRO no siempre se podía aplicar en todos los sitios"
     ],
     "Teléfono": [
+      "Se corrige el problema por el que la pantalla de llamada entrante a veces no se muestra en la pantalla de bloqueo al recibir una llamada.",
+      "Se ha corregido el problema de que la interfaz se bloquee ocasionalmente al finalizar una llamada.",
+      "Telefonía IP inteligente",
       "Reparado: Las llamadas entrantes no siempre se mostraban en la Pantalla de bloqueo",
-      "Telefonía IP inteligente"
+      "Se ha corregido el problema por el que las llamadas entrantes no se mostraban en algunas pantallas de bloqueo",
+      "Se corrigió el problema por el que las llamadas entrantes a veces no se mostraban en la pantalla de bloqueo"
+    ],
+    "Administrador de archivos": [
+      "Optimización de la velocidad de escaneo de archivos en la página de inicio"
     ],
     "Otros": []
   },
   "logs_pt": {
+    "Sistema": [
+      "Otimizada a velocidade das notificações de envelopes vermelhos do WeChat em redes móveis",
+      "Corrigido o problema em que a fonte do sistema Xiaomi Mi Lan Ting PRO não podia ser aplicada globalmente",
+      "Atualização do Patch de Segurança do Android para Fevereiro de 2020. Segurança do sistema aprimorada."
+    ],
     "Telefone": [
+      "Corrigido o problema em que a tela de chamada recebida às vezes não é exibida na tela de bloqueio ao receber uma chamada.",
+      "Corrigido o problema de congelamento ocasional da interface ao encerrar uma chamada.",
+      "Telefonia IP inteligente",
+      "Correção: às vezes a interface de chamada não era exibida na tela de bloqueio durante uma chamada recebida",
       "Correção: Chamadas recebidas não eram sempre exibidas na Tela de bloqueio",
-      "Telefonia IP inteligente"
+      "Corrigido o problema em que chamadas recebidas às vezes não eram exibidas na tela de bloqueio"
+    ],
+    "Gerenciador de arquivos": [
+      "Otimização da velocidade de verificação de arquivos na página inicial"
     ],
     "Outros": []
   },
   "logs_tr": {
+    "Sistem": [
+      "Mobil ağda WeChat kırmızı zarf bildirim hızı optimize edildi",
+      "Xiaomi Mi Lan Ting PRO sistem yazı tipinin genel olarak uygulanamaması sorunu giderildi",
+      "Android Güvenlik Patch'i Şubat 2020'de güncellendi. Sistem güvenliği artırıldı."
+    ],
     "Telefon": [
+      "Gelen arama sırasında kilit ekranında gelen arama ekranının bazen görünmemesi sorunu giderildi.",
+      "Arama sonlandırılırken arayüzün ara sıra donması sorunu giderildi.",
+      "Akıllı IP telefonu",
+      "Düzeltme: Gelen aramalarda kilit ekranında arama arayüzü bazen görünmüyordu",
       "Onarım: Gelen aramalar her zaman Kilit ekranında gösterilmedi",
-      "Akıllı IP telefonu"
+      "Kilit ekranında gelen aramaların bazen görünmemesi sorunu düzeltildi"
+    ],
+    "Dosya Yöneticisi": [
+      "Ana sayfa dosya tarama hızı optimizasyonu"
     ],
     "Diğer": []
   },
   "logs_id": {
+    "Sistem": [
+      "Mengoptimalkan kecepatan notifikasi angpao WeChat di jaringan seluler",
+      "Memperbaiki masalah font sistem Xiaomi Mi Lan Ting PRO yang tidak dapat diterapkan secara global",
+      "Patch Keamanan Android diperbarui (Februari 2020). Keamanan sistem ditingkatkan."
+    ],
+    "Telepon": [
+      "Memperbaiki masalah layar panggilan masuk terkadang tidak muncul di layar kunci saat menerima panggilan.",
+      "Memperbaiki masalah antarmuka yang terkadang macet saat mengakhiri panggilan.",
+      "Mendukung panggilan IP pintar",
+      "Perbaikan: Antarmuka panggilan terkadang tidak ditampilkan di layar kunci saat ada panggilan masuk",
+      "Memperbaiki masalah panggilan masuk tidak ditampilkan di beberapa layar kunci",
+      "Memperbaiki masalah di mana panggilan masuk terkadang tidak ditampilkan di layar kunci"
+    ],
+    "File Manager": [
+      "Optimalkan kecepatan pemindaian file di halaman beranda"
+    ],
     "Lainnya": []
   },
   "logs_vi": {
+    "Hệ thống": [
+      "Tối ưu tốc độ thông báo lì xì WeChat trên mạng di động",
+      "Đã khắc phục sự cố không thể áp dụng toàn cục phông chữ hệ thống Xiaomi Mi Lan Ting PRO",
+      "Cập nhật Bản vá Bảo mật Android đến tháng 2 năm 2020. Tăng cường bảo mật hệ thống."
+    ],
+    "Điện thoại": [
+      "Khắc phục sự cố đôi khi màn hình cuộc gọi đến không hiển thị trên màn hình khóa khi có cuộc gọi đến.",
+      "Khắc phục sự cố giao diện thỉnh thoảng bị đơ khi kết thúc cuộc gọi.",
+      "Hỗ trợ tính năng gọi IP thông minh",
+      "Sửa lỗi: Đôi khi giao diện cuộc gọi không hiển thị trên màn hình khóa khi có cuộc gọi đến",
+      "Đã khắc phục sự cố không hiển thị cuộc gọi đến trên một số màn hình khóa",
+      "Đã khắc phục sự cố đôi khi cuộc gọi đến không hiển thị trên màn hình khóa"
+    ],
+    "Trình quản lý tệp": [
+      "Tối ưu hóa tốc độ quét tệp trên trang chủ"
+    ],
     "Khác": []
   },
   "logs_th": {
+    "ระบบ": [
+      "ปรับความเร็วการแจ้งเตือนอั่งเปา WeChat บนเครือข่ายมือถือให้เหมาะสม",
+      "แก้ไขปัญหาที่ไม่สามารถใช้ฟอนต์ระบบ Xiaomi Mi Lan Ting PRO ได้ทั่วทั้งระบบ",
+      "อัปเดตแพทช์ความปลอดภัยของแอนดรอยด์ เป็นเดือนกุมภาพันธ์ 2020 เพิ่มความปลอดภัยของระบบ"
+    ],
+    "โทรศัพท์": [
+      "แก้ไขปัญหาบางครั้งหน้าจอการโทรเข้าบนหน้าจอล็อกไม่แสดงเมื่อมีสายเรียกเข้า",
+      "แก้ไขปัญหาอินเทอร์เฟซค้างเป็นครั้งคราวเมื่อวางสาย",
+      "รองรับการโทร IP อัจฉริยะ",
+      "แก้ไข: บางครั้งหน้าจอการโทรไม่แสดงบนหน้าจอล็อกเมื่อมีสายเรียกเข้า",
+      "แก้ไขปัญหาการไม่แสดงสายเรียกเข้าบนหน้าจอล็อกบางหน้า",
+      "แก้ไขปัญหาที่บางครั้งสายเรียกเข้าไม่แสดงบนหน้าจอล็อก"
+    ],
+    "ตัวจัดการไฟล์": [
+      "เพิ่มประสิทธิภาพความเร็วในการสแกนไฟล์บนหน้าแรก"
+    ],
     "อื่นๆ": []
   },
   "logs_ar": {
     "الهاتف": [
+      "إصلاح مشكلة عدم ظهور شاشة المكالمة الواردة أحيانًا على شاشة القفل عند ورود مكالمة.",
+      "إصلاح مشكلة تجمد الواجهة أحيانًا عند إنهاء المكالمة.",
+      "مكالمة IP الذكية",
       ":الإصلاح لا يتم عرض المكالمات الواردة دائمًا على شاشة القفل",
+      "إصلاح مشكلة عدم ظهور المكالمات الواردة أحيانًا على شاشة القفل"
+    ],
+    "مدير الملفات": [
+      "تحسين سرعة فحص الملفات في الصفحة الرئيسية"
+    ],
+    "هاتف": [
+      "إصلاح: أحيانًا لا تظهر واجهة المكالمة على شاشة القفل عند ورود مكالمة",
       "مكالمة IP الذكية"
     ],
-    "أخرى": []
+    "آخرين": []
   },
   "logs_in": {
+    "फ़ोन": [
+      "कभी-कभी इनकमिंग कॉल के दौरान लॉक स्क्रीन पर कॉल स्क्रीन न दिखने की समस्या ठीक की गई।",
+      "कॉल समाप्त करते समय UI के कभी-कभी फ्रीज़ होने की समस्या ठीक की गई.",
+      "स्मार्ट IP डायलिंग सुविधा समर्थित",
+      "सुधार: कभी-कभी इनकमिंग कॉल के दौरान लॉक स्क्रीन पर कॉल इंटरफ़ेस प्रदर्शित नहीं होता था",
+      "कुछ लॉक स्क्रीन पर आने वाली कॉल दिखाई न देने की समस्या ठीक की गई",
+      "लॉक स्क्रीन पर कभी-कभी आने वाली कॉल न दिखने की समस्या ठीक की गई"
+    ],
+    "फ़ाइल प्रबंधक": [
+      "होमपेज फ़ाइल स्कैनिंग गति का अनुकूलन करें"
+    ],
     "अन्य": []
   },
   "logs_ug": {
-    "باشقىلىرى": []
+    "ھۆججەت باشقۇرغۇچ": [
+      "باش بەت ھۆججەت سىكاننېرلاش سۈرئىتىنى ئەلالاشتۇرۇش"
+    ],
+    "باشقىلىرى": [],
+    "تېلېفون": [
+      "قۇلۇپ ئېكرانىدا بەزىدە كەلگەن چاقىرىقنى كۆرسەتمەسلىك مەسىلىسى تۈزىتىلدى"
+    ]
   },
   "logs_bo": {
+    "ཡིག་ཆའི་དོ་དམ་ཆས": [
+      "མུ་ཁྱུད་ཤོག་ངོས་ཡིག་ཆ་བཤེར་འཚོལ་གྱི་མགྱོགས་ཚད་ལེགས་བཅོས།"
+    ],
     "གཞན།": []
   }
 }

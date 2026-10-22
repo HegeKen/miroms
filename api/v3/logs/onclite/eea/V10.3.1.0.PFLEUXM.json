@@ -54,8 +54,22 @@
     ]
   },
   "logs_zh_tw": {
-    "電話": [
+    "电话": [
       "修復 掛斷電話較慢的問題"
+    ],
+    "解鎖畫面、狀態欄、通知欄": [
+      "新增 人臉解鎖成功並停留在鎖屏上時，可通過指紋進入桌面的功能",
+      "新增 人臉解鎖成功後停留在鎖定螢幕的功能，可在設定頁面的「臉部資料管理」中開啟",
+      "新增 螢幕鎖定畫面支援禁止下拉狀態欄",
+      "修復 橫向螢幕狀況下未即時顯示低電量懸浮通知的問題",
+      "修復 來電懸浮條和通話綠條同時存在的情況",
+      "修正 個別情況下臉部提示未及時消失的問題",
+      "修復 人臉解鎖資料錄入過快問題",
+      "新增 人臉解鎖成功後停留在螢幕鎖定的功能，可在設定頁面的'人臉資料管理'中開啟",
+      "優化 人臉解鎖成功率",
+      "修復 下拉狀態欄開啟或關閉同步，同步介面不刷新問題",
+      "修復 個別情況下人臉提示未即時消失的問題",
+      "修復 人臉解鎖資料錄製過快的問題"
     ],
     "相機": [
       "新增 AI相機場景：月亮模式、高塔、合影",
@@ -67,22 +81,30 @@
     "系統": [
       "優化 更新Android安全性修補程式等級(2019#5)，提升系統安全性"
     ],
-    "解鎖畫面、狀態欄、通知欄": [
-      "新增 人臉解鎖成功並停留在鎖屏上時，可通過指紋進入桌面的功能",
-      "新增 人臉解鎖成功後停留在螢幕鎖定的功能，可在設定頁面的'人臉資料管理'中開啟",
-      "新增 螢幕鎖定畫面支援禁止下拉狀態欄",
-      "優化 人臉解鎖成功率",
-      "修復 橫向螢幕狀況下未即時顯示低電量懸浮通知的問題",
-      "修復 來電懸浮條和通話綠條同時存在的情況",
-      "修復 下拉狀態欄開啟或關閉同步，同步介面不刷新問題",
-      "修復 個別情況下人臉提示未即時消失的問題",
-      "修復 人臉解鎖資料錄製過快的問題"
+    "電話": [
+      "修復 掛斷電話較慢的問題"
     ]
   },
   "logs_ja": {
     "電話": [
       "修正: 通話終了に予想以上に時間がかかる問題",
       "修正: 通話終了に想定より時間がかかる問題"
+    ],
+    "ロック画面、ステータスバー、通知シェード": [
+      "新機能: 顔認証でロック解除後、ロック画面に留まっている場合に指紋でホーム画面へ進める機能",
+      "新機能: 顔認証が成功した後もロック画面に留まる機能を追加。設定の「顔データ管理」でオンにできます。",
+      "新規: ロック画面で通知シェードを下にスワイプして開くことを禁止できるようになりました",
+      "横画面時に低バッテリーのフローティング通知が適時に表示されない問題を修正",
+      "修正: 着信のフローティングバーと通話の緑色バーが同時に表示される問題。",
+      "一部の状況で顔認証の通知が時間どおりに消えない問題を修正",
+      "顔認証データの登録が速すぎる問題を修正",
+      "新機能: 顔認証でロック解除に成功しロック画面に留まった場合、指紋でホーム画面に進めるようになりました",
+      "顔認証によるロック解除成功後も画面ロックに留まる機能を追加。設定ページの「顔データ管理」で有効にできます。",
+      "最適化：顔認証の成功率",
+      "横向き時に低バッテリーのフローティング通知がすぐに表示されない問題を修正",
+      "修正: 通知シェードで同期をオン/オフにした際、同期画面が更新されない問題",
+      "一部の場合に顔のヒントがすぐに消えない問題を修正しました。",
+      "顔認証データの記録が速すぎる問題を修正しました"
     ],
     "カメラ": [
       "AIカメラの新シーン：月モード、塔、集合写真",
@@ -95,22 +117,27 @@
     ],
     "システム": [
       "最適化: Google セキュリティ パッチ（2019#5）を更新し、システムの安全性を向上。"
-    ],
-    "ロック画面、ステータスバー、通知シェード": [
-      "新機能: 顔認証でロック解除に成功しロック画面に留まった場合、指紋でホーム画面に進めるようになりました",
-      "顔認証によるロック解除成功後も画面ロックに留まる機能を追加。設定ページの「顔データ管理」で有効にできます。",
-      "新規: ロック画面で通知シェードを下にスワイプして開くことを禁止できるようになりました",
-      "最適化：顔認証の成功率",
-      "横向き時に低バッテリーのフローティング通知がすぐに表示されない問題を修正",
-      "修正: 着信のフローティングバーと通話の緑色バーが同時に表示される問題。",
-      "修正: 通知シェードで同期をオン/オフにした際、同期画面が更新されない問題",
-      "一部の場合に顔のヒントがすぐに消えない問題を修正しました。",
-      "顔認証データの記録が速すぎる問題を修正しました"
     ]
   },
   "logs_ko": {
     "전화": [
       "수정: 통화 종료가 예상보다 오래 걸리는 문제"
+    ],
+    "잠금화면, 상태 바, 알림 바": [
+      "새 기능: 얼굴 인식으로 잠금 해제 후 잠금 화면에 머무를 때 지문으로 홈 화면에 진입하는 기능",
+      "추가: 얼굴 인식 성공 후 잠금 화면에 유지되는 기능. 설정의 “얼굴 데이터 관리”에서 켤 수 있습니다.",
+      "새 기능: 잠금 화면에서 알림 패널을 아래로 내려 여는 것을 금지할 수 있습니다",
+      "가로 모드에서 배터리 부족 플로팅 알림이 제때 표시되지 않던 문제를 수정",
+      "수정: 수신 전화 플로팅 바와 통화 녹색 바가 동시에 표시되는 문제.",
+      "일부 상황에서 얼굴 인식 안내가 제때 사라지지 않던 문제를 수정",
+      "얼굴 잠금 해제 데이터가 너무 빠르게 입력되는 문제 수정",
+      "새 기능: 얼굴 인식으로 잠금 해제에 성공한 후 잠금 화면에 머무를 때 지문으로 홈 화면에 들어갈 수 있습니다",
+      "얼굴 잠금 해제 성공 후 화면 잠금 상태를 유지하는 기능이 추가되었습니다. 설정 페이지의 '얼굴 데이터 관리'에서 켤 수 있습니다.",
+      "얼굴 잠금 해제 성공률 최적화",
+      "가로 모드에서 배터리 부족 플로팅 알림이 제때 표시되지 않는 문제 수정",
+      "수정: 알림창에서 동기화를 켜거나 끌 때 동기화 화면이 새로 고쳐지지 않던 문제",
+      "일부 상황에서 얼굴 안내가 즉시 사라지지 않던 문제를 수정했습니다.",
+      "얼굴 잠금 해제 데이터 기록이 너무 빠른 문제를 수정했습니다"
     ],
     "카메라": [
       "AI 카메라 새 장면: 달 모드, 탑, 단체 사진",
@@ -123,22 +150,25 @@
     ],
     "시스템": [
       "최적화: Google 보안 패치(2019#5) 업데이트, 시스템 보안 강화."
-    ],
-    "잠금화면, 상태 바, 알림 바": [
-      "새 기능: 얼굴 인식으로 잠금 해제에 성공한 후 잠금 화면에 머무를 때 지문으로 홈 화면에 들어갈 수 있습니다",
-      "얼굴 잠금 해제 성공 후 화면 잠금 상태를 유지하는 기능이 추가되었습니다. 설정 페이지의 '얼굴 데이터 관리'에서 켤 수 있습니다.",
-      "새 기능: 잠금 화면에서 알림 패널을 아래로 내려 여는 것을 금지할 수 있습니다",
-      "얼굴 잠금 해제 성공률 최적화",
-      "가로 모드에서 배터리 부족 플로팅 알림이 제때 표시되지 않는 문제 수정",
-      "수정: 수신 전화 플로팅 바와 통화 녹색 바가 동시에 표시되는 문제.",
-      "수정: 알림창에서 동기화를 켜거나 끌 때 동기화 화면이 새로 고쳐지지 않던 문제",
-      "일부 상황에서 얼굴 안내가 즉시 사라지지 않던 문제를 수정했습니다.",
-      "얼굴 잠금 해제 데이터 기록이 너무 빠른 문제를 수정했습니다"
     ]
   },
   "logs_ru": {
     "Телефон": [
       "Исправлено: Завершение вызова выполнялось слишком долго"
+    ],
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Новое: Используйте отпечаток пальца, чтобы перейти на рабочий стол после того, как вы разблокировали устройство при помощи данных лица и остались на экране блокировки",
+      "Добавлено: функция оставаться на экране блокировки после успешного распознавания лица. Включить можно в настройках в разделе «Управление данными лица».",
+      "Новое: Теперь вы можете ограничить открытие Шторки уведомлений на экране блокировки",
+      "Исправлено: Всплывающие уведомления, связанные с аккумулятором, не отображались правильно в режиме альбомной ориентации",
+      "Исправлено: Значки в строке состояния и всплывающее уведомление вызовов появлялись одновременно",
+      "Исправлена проблема, из-за которой подсказка распознавания лица иногда не исчезала вовремя.",
+      "Исправлена проблема слишком быстрого ввода данных разблокировки по лицу",
+      "Новое: Вы можете остаться на экране блокировки после того, как ваше лицо будет распознано. Вы можете включить эту функцию в разделе Настройки > Блокировка и защита > Управление данными лица",
+      "Оптимизация: Эффективность разблокировки по лицу",
+      "Исправлено: Страница синхронизации не обновлялась всякий раз, когда синхронизация была включена или отключена через Шторку уведомлений",
+      "Исправлено: В некоторых случаях подсказки при разблокировке по лицу не исчезали вовремя",
+      "Исправлено: Данные лица записывались слишком быстро"
     ],
     "Камера": [
       "Новое: Поддержка новых режимов камеры с ИИ",
@@ -149,23 +179,26 @@
     ],
     "Система": [
       "Оптимизация: Обновление системы безопасности Android (может 2019 года). Улучшена безопасность системы."
-    ],
-    "Экран блокировки, строка состояния, шторка уведомлений": [
-      "Новое: Используйте отпечаток пальца, чтобы перейти на рабочий стол после того, как вы разблокировали устройство при помощи данных лица и остались на экране блокировки",
-      "Новое: Вы можете остаться на экране блокировки после того, как ваше лицо будет распознано. Вы можете включить эту функцию в разделе Настройки > Блокировка и защита > Управление данными лица",
-      "Новое: Теперь вы можете ограничить открытие Шторки уведомлений на экране блокировки",
-      "Оптимизация: Эффективность разблокировки по лицу",
-      "Исправлено: Всплывающие уведомления, связанные с аккумулятором, не отображались правильно в режиме альбомной ориентации",
-      "Исправлено: Значки в строке состояния и всплывающее уведомление вызовов появлялись одновременно",
-      "Исправлено: Страница синхронизации не обновлялась всякий раз, когда синхронизация была включена или отключена через Шторку уведомлений",
-      "Исправлено: В некоторых случаях подсказки при разблокировке по лицу не исчезали вовремя",
-      "Исправлено: Данные лица записывались слишком быстро"
     ]
   },
   "logs_uk": {
     "Телефон": [
       "Виправлено: Завершення викликів тривало довше, ніж очікувалося",
       "Виправлено: завершення викликів тривало довше, ніж очікувалося"
+    ],
+    "Екран блокування, рядок стану, панель сповіщень": [
+      "Нове: Перехід на головний екран відбитком пальця, якщо пристрій розблоковано обличчям і залишено на екрані блокування",
+      "Додано: функція залишатися на екрані блокування після успішного розпізнавання обличчя. Увімкнути можна в налаштуваннях у розділі «Керування даними обличчя».",
+      "Нове: додано підтримку заборони відкриття панелі сповіщень на екрані блокування",
+      "Виправлено проблему, коли плаваюче сповіщення про низький заряд батареї не відображалося вчасно в горизонтальному режимі",
+      "Виправлено: плаваюча панель вхідного виклику та зелена смуга виклику відображалися одночасно.",
+      "Виправлено проблему, через яку підказка розпізнавання обличчя іноді не зникала вчасно.",
+      "Виправлено проблему занадто швидкого запису даних розблокування обличчям",
+      "Нове: Використовувати відбиток пальця для переходу на головний екран після успішного розблокування обличчям із затримкою на екрані блокування",
+      "Додано функцію залишатися на екрані блокування після успішного розблокування обличчям; її можна ввімкнути на сторінці Налаштування «Керування даними обличчя».",
+      "Оптимізація успішності розблокування за обличчям",
+      "Виправлено: сторінка синхронізації не оновлювалася, коли синхронізацію вмикали або вимикали в панелі сповіщень",
+      "Виправлено проблему, коли підказка про обличчя в окремих випадках не зникала одразу."
     ],
     "Камера": [
       "Нові сцени AI-камери: режим Місяця, вежа, групове фото",
@@ -178,23 +211,28 @@
     ],
     "Система": [
       "Оптимізація: Оновлено патч безпеки Google (2019#5), підвищено безпеку системи."
-    ],
-    "Екран блокування, рядок стану, панель сповіщень": [
-      "Нове: Використовувати відбиток пальця для переходу на головний екран після успішного розблокування обличчям із затримкою на екрані блокування",
-      "Додано функцію залишатися на екрані блокування після успішного розблокування обличчям; її можна ввімкнути на сторінці Налаштування «Керування даними обличчя».",
-      "Нове: додано підтримку заборони відкриття панелі сповіщень на екрані блокування",
-      "Оптимізація успішності розблокування за обличчям",
-      "Виправлено проблему, коли плаваюче сповіщення про низький заряд батареї не відображалося вчасно в горизонтальному режимі",
-      "Виправлено: плаваюча панель вхідного виклику та зелена смуга виклику відображалися одночасно.",
-      "Виправлено: сторінка синхронізації не оновлювалася, коли синхронізацію вмикали або вимикали в панелі сповіщень",
-      "Виправлено проблему, коли підказка про обличчя в окремих випадках не зникала одразу.",
-      "Виправлено проблему занадто швидкого запису даних розблокування обличчям"
     ]
   },
   "logs_pl": {
     "Telefon": [
       "Poprawka: Zakończenie połączeń trwało dłużej niż oczekiwano",
       "Naprawiono: Zakończenie połączeń trwało dłużej niż oczekiwano"
+    ],
+    "Ekran blokady, pasek powiadomień,panel powiadomień": [
+      "Nowość: Możliwość przejścia do ekranu głównego odciskiem palca po odblokowaniu twarzą i pozostaniu na ekranie blokady",
+      "Nowość: funkcja pozostawania na ekranie blokady po pomyślnym rozpoznaniu twarzy. Można ją włączyć w ustawieniach w sekcji „Zarządzanie danymi twarzy”.",
+      "Nowość: można teraz zablokować otwieranie panelu powiadomień na ekranie blokady",
+      "Naprawiono problem z nieterminowym wyświetlaniem pływającego powiadomienia o niskim poziomie baterii w trybie poziomym",
+      "Poprawka: pływający pasek połączenia przychodzącego i zielony pasek połączenia wyświetlały się jednocześnie.",
+      "Naprawiono problem, w którym podpowiedź rozpoznawania twarzy czasami nie znikała na czas.",
+      "Naprawiono problem zbyt szybkiego zapisywania danych odblokowywania twarzą",
+      "Nowość: Po pomyślnym odblokowaniu twarzą i pozostaniu na ekranie blokady można użyć odcisku palca, aby przejść do ekranu głównego",
+      "Dodano funkcję pozostawania na ekranie blokady po udanym odblokowaniu twarzą; można ją włączyć na stronie Ustawienia „Zarządzanie danymi twarzy”.",
+      "Optymalizacja skuteczności odblokowywania twarzą",
+      "Naprawiono problem z nieterminowym wyświetlaniem powiadomienia o niskim poziomie baterii w trybie poziomym",
+      "Poprawka: strona synchronizacji nie odświeżała się po włączeniu lub wyłączeniu synchronizacji z panelu powiadomień",
+      "Naprawiono problem, w którym podpowiedź dotycząca twarzy w niektórych przypadkach nie znikała natychmiast.",
+      "Naprawiono problem zbyt szybkiego zapisu danych odblokowywania twarzą"
     ],
     "Aparat": [
       "Nowe sceny aparatu AI: tryb Księżyca, wieża, zdjęcie grupowe",
@@ -207,23 +245,28 @@
     ],
     "System": [
       "Optymalizacja: Zaktualizowano poprawkę zabezpieczeń Google (2019#5), zwiększono bezpieczeństwo systemu."
-    ],
-    "Ekran blokady, pasek powiadomień,panel powiadomień": [
-      "Nowość: Po pomyślnym odblokowaniu twarzą i pozostaniu na ekranie blokady można użyć odcisku palca, aby przejść do ekranu głównego",
-      "Dodano funkcję pozostawania na ekranie blokady po udanym odblokowaniu twarzą; można ją włączyć na stronie Ustawienia „Zarządzanie danymi twarzy”.",
-      "Nowość: można teraz zablokować otwieranie panelu powiadomień na ekranie blokady",
-      "Optymalizacja skuteczności odblokowywania twarzą",
-      "Naprawiono problem z nieterminowym wyświetlaniem powiadomienia o niskim poziomie baterii w trybie poziomym",
-      "Poprawka: pływający pasek połączenia przychodzącego i zielony pasek połączenia wyświetlały się jednocześnie.",
-      "Poprawka: strona synchronizacji nie odświeżała się po włączeniu lub wyłączeniu synchronizacji z panelu powiadomień",
-      "Naprawiono problem, w którym podpowiedź dotycząca twarzy w niektórych przypadkach nie znikała natychmiast.",
-      "Naprawiono problem zbyt szybkiego zapisu danych odblokowywania twarzą"
     ]
   },
   "logs_de": {
     "Telefon": [
       "Behoben: Das Beenden von Anrufen dauerte länger als erwartet",
       "Behoben: Anrufe beenden dauerte länger als erwartet"
+    ],
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
+      "Neu: Nach erfolgreicher Gesichtserkennung auf dem Sperrbildschirm per Fingerabdruck zum Startbildschirm wechseln",
+      "Neu: Funktion, nach erfolgreicher Gesichtserkennung auf dem Sperrbildschirm zu bleiben. Kann in den Einstellungen unter „Gesichtsdaten verwalten“ aktiviert werden.",
+      "Neu: Öffnen der Benachrichtigungsleiste auf dem Sperrbildschirm kann jetzt gesperrt werden",
+      "Behebung: Bei niedrigem Akkustand wurde im Querformat die schwebende Benachrichtigung nicht rechtzeitig angezeigt",
+      "Behebung: Die schwebende Leiste für eingehende Anrufe und der grüne Anrufbalken wurden gleichzeitig angezeigt.",
+      "Problem behoben, bei dem der Gesichtserkennungs-Hinweis in manchen Fällen nicht rechtzeitig verschwand.",
+      "Behoben: Gesichtsdaten wurden zu schnell erfasst",
+      "Neu: Fingerabdruck zum Öffnen des Startbildschirms verwenden, wenn das Gerät per Gesichtserkennung entsperrt wurde und auf dem Sperrbildschirm bleibt",
+      "Neue Funktion: Nach erfolgreicher Gesichtsentriegelung bleibt der Bildschirm gesperrt; kann auf der Einstellungsseite „Gesichtsdatenverwaltung“ aktiviert werden.",
+      "Optimierung: Gesichtserkennung erfolgreicher",
+      "Behebung des Problems, dass die schwebende Benachrichtigung bei niedrigem Akkustand im Querformat nicht rechtzeitig angezeigt wird",
+      "Behoben: Die Synchronisierungsseite wurde nicht aktualisiert, wenn die Synchronisierung in der Benachrichtigungsleiste ein- oder ausgeschaltet wurde",
+      "Behebung eines Problems, bei dem der Gesichtshinweis in einigen Fällen nicht sofort ausgeblendet wurde.",
+      "Behoben: Gesichtsdaten für die Entsperrung wurden zu schnell aufgezeichnet"
     ],
     "Kamera": [
       "Neue Szenen für AI-Kamera: Mondmodus, Turm, Gruppenfoto",
@@ -236,23 +279,28 @@
     ],
     "System": [
       "Optimierung: Google-Sicherheitspatch (2019#5) aktualisiert, Systemsicherheit verbessert."
-    ],
-    "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
-      "Neu: Fingerabdruck zum Öffnen des Startbildschirms verwenden, wenn das Gerät per Gesichtserkennung entsperrt wurde und auf dem Sperrbildschirm bleibt",
-      "Neue Funktion: Nach erfolgreicher Gesichtsentriegelung bleibt der Bildschirm gesperrt; kann auf der Einstellungsseite „Gesichtsdatenverwaltung“ aktiviert werden.",
-      "Neu: Öffnen der Benachrichtigungsleiste auf dem Sperrbildschirm kann jetzt gesperrt werden",
-      "Optimierung: Gesichtserkennung erfolgreicher",
-      "Behebung des Problems, dass die schwebende Benachrichtigung bei niedrigem Akkustand im Querformat nicht rechtzeitig angezeigt wird",
-      "Behebung: Die schwebende Leiste für eingehende Anrufe und der grüne Anrufbalken wurden gleichzeitig angezeigt.",
-      "Behoben: Die Synchronisierungsseite wurde nicht aktualisiert, wenn die Synchronisierung in der Benachrichtigungsleiste ein- oder ausgeschaltet wurde",
-      "Behebung eines Problems, bei dem der Gesichtshinweis in einigen Fällen nicht sofort ausgeblendet wurde.",
-      "Behoben: Gesichtsdaten für die Entsperrung wurden zu schnell aufgezeichnet"
     ]
   },
   "logs_fr": {
     "Téléphone": [
       "Réparé: Mettre fin aux appels a pris plus de temps que prévu",
       "Correction : la fin des appels prenait plus de temps que prévu"
+    ],
+    "Écran de verrouillage, Barre d'état, Panneau de notification": [
+      "Nouveau Utilisez votre empreinte digitale pour ouvrir l'écran d'accueil une fois que vous avez déverrouillé l'appareil à l'aide des données du visage et que vous êtes resté sur l'écran de verrouillage",
+      "Nouveau : fonction permettant de rester sur l'écran de verrouillage après une reconnaissance faciale réussie. Elle peut être activée dans les paramètres, sous « Gestion des données faciales ».",
+      "Nouveau : il est désormais possible d’interdire l’ouverture du panneau de notifications sur l’écran de verrouillage",
+      "Réparé: Les notifications flottantes relatives à la batterie n'étaient pas affichées correctement en mode paysage",
+      "Correction : la barre flottante d’appel entrant et la barre verte d’appel s’affichaient en même temps.",
+      "Correction du problème où l’invite de reconnaissance faciale ne disparaissait pas à temps dans certains cas.",
+      "Correction : les données de déverrouillage facial étaient enregistrées trop rapidement",
+      "Nouveau : Utiliser l'empreinte digitale pour accéder à l'écran d'accueil après un déverrouillage facial réussi et un maintien sur l'écran de verrouillage",
+      "Ajout d'une fonction permettant de rester sur l'écran de verrouillage après un déverrouillage facial réussi, activable dans la page Paramètres « Gestion des données faciales ».",
+      "Optimisation du taux de réussite du déverrouillage facial",
+      "Correction du problème où la notification flottante de batterie faible ne s'affiche pas rapidement en mode paysage",
+      "Correction : la page de synchronisation ne s’actualisait pas lorsqu’on activait ou désactivait la synchronisation depuis le panneau de notifications",
+      "Correction d’un problème où l’indication de visage ne disparaissait pas immédiatement dans certains cas.",
+      "Correction du problème d’enregistrement trop rapide des données de déverrouillage facial"
     ],
     "Appareil photo": [
       "Nouvelles scènes de l'appareil photo AI : mode Lune, tour, photo de groupe",
@@ -265,27 +313,29 @@
     ],
     "Système": [
       "Optimisation : Mise à jour du correctif de sécurité Google (2019#5), amélioration de la sécurité du système."
-    ],
-    "Écran de verrouillage, Barre d'état, Panneau de notification": [
-      "Nouveau : Utiliser l'empreinte digitale pour accéder à l'écran d'accueil après un déverrouillage facial réussi et un maintien sur l'écran de verrouillage",
-      "Ajout d'une fonction permettant de rester sur l'écran de verrouillage après un déverrouillage facial réussi, activable dans la page Paramètres « Gestion des données faciales ».",
-      "Nouveau : il est désormais possible d’interdire l’ouverture du panneau de notifications sur l’écran de verrouillage",
-      "Optimisation du taux de réussite du déverrouillage facial",
-      "Correction du problème où la notification flottante de batterie faible ne s'affiche pas rapidement en mode paysage",
-      "Correction : la barre flottante d’appel entrant et la barre verte d’appel s’affichaient en même temps.",
-      "Correction : la page de synchronisation ne s’actualisait pas lorsqu’on activait ou désactivait la synchronisation depuis le panneau de notifications",
-      "Correction d’un problème où l’indication de visage ne disparaissait pas immédiatement dans certains cas.",
-      "Correction du problème d’enregistrement trop rapide des données de déverrouillage facial"
     ]
   },
   "logs_it": {
     "Telefono": [
       "Risolto: Terminare le chiamate richiedeva più tempo del previsto"
     ],
-    "Fotocamera": [
+    "Schermata di blocco, barra di stato, area delle notifiche": [
+      "Nuovo: Accedi alla schermata Home usando l'impronta digitale dopo aver sbloccato il dispositivo con i dati del volto restando sulla schermata di blocco.",
+      "Novità: funzione per rimanere nella schermata di blocco dopo il riconoscimento facciale. Si attiva nelle impostazioni in «Gestione dati viso».",
+      "Nuovo: È ora possibile limitare l'apertura dell'area delle notifiche sulla schermata di blocco",
+      "Risolto: Le notifiche a comparsa relative alla batteria non erano visualizzate correttamente in modalità orizzontale",
+      "Risolto: I collegamenti della barra di stato e le notifiche a comparsa per le chiamate apparivano contemporaneamente",
+      "Risolto il problema per cui in alcuni casi il messaggio del riconoscimento facciale non scompariva in tempo.",
+      "Risolto: i dati di sblocco con il viso venivano registrati troppo velocemente",
+      "Nuovo: Puoi rimanere nella schermata di blocco dopo che il tuo volto è stato riconosciuto. Puoi attivare questa funzione in Impostazioni > Schermata di blocco e password > Gestisci i dati del volto.",
+      "Ottimizzazione: Efficienza del Riconoscimento facciale",
+      "Risolto: La pagina di sincronizzazione non poteva essere aggiornata quando la sincronizzazione era attiva o disattivata nell'area delle notifiche",
+      "Risolto: In alcuni casi, le notifiche di sblocco con il volto non scomparivano in tempo",
+      "Risolto: I dati del volto venivano registrati troppo in fretta"
+    ],
+    "macchina fotografica": [
       "Nuovo: Nuove modalità per la fotocamera AI",
-      "Risolvi: Chiusura forzata della Fotocamera quando la app era chiusa e aperta di nuovo in modalità Video",
-      "Risolto: Chiusura forzata della Fotocamera quando la app era chiusa e aperta di nuovo in modalità Video"
+      "Risolvi: Chiusura forzata della Fotocamera quando la app era chiusa e aperta di nuovo in modalità Video"
     ],
     "Servizio cloud Xiaomi": [
       "Ottimizzazione: Abbiamo ridisegnato la pagina iniziale di Mi Cloud. Ora è molto meglio!"
@@ -293,21 +343,28 @@
     "Sistema": [
       "Ottimizzazione: Aggiornamento della patch di sicurezza Android a Maggio 2019. Maggiore sicurezza del sistema."
     ],
-    "Schermata di blocco, barra di stato, area delle notifiche": [
-      "Nuovo: Accedi alla schermata Home usando l'impronta digitale dopo aver sbloccato il dispositivo con i dati del volto restando sulla schermata di blocco.",
-      "Nuovo: Puoi rimanere nella schermata di blocco dopo che il tuo volto è stato riconosciuto. Puoi attivare questa funzione in Impostazioni > Schermata di blocco e password > Gestisci i dati del volto.",
-      "Nuovo: È ora possibile limitare l'apertura dell'area delle notifiche sulla schermata di blocco",
-      "Ottimizzazione: Efficienza del Riconoscimento facciale",
-      "Risolto: Le notifiche a comparsa relative alla batteria non erano visualizzate correttamente in modalità orizzontale",
-      "Risolto: I collegamenti della barra di stato e le notifiche a comparsa per le chiamate apparivano contemporaneamente",
-      "Risolto: La pagina di sincronizzazione non poteva essere aggiornata quando la sincronizzazione era attiva o disattivata nell'area delle notifiche",
-      "Risolto: In alcuni casi, le notifiche di sblocco con il volto non scomparivano in tempo",
-      "Risolto: I dati del volto venivano registrati troppo in fretta"
+    "Fotocamera": [
+      "Nuovo: Nuove modalità per la fotocamera AI",
+      "Risolto: Chiusura forzata della Fotocamera quando la app era chiusa e aperta di nuovo in modalità Video"
     ]
   },
   "logs_es": {
     "Teléfono": [
       "Reparado: Terminar las llamadas llevó más tiempo de lo esperado"
+    ],
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Nuevo: Usa tu huella dactilar para abrir la Pantalla de inicio después de haber desbloqueado el dispositivo usando tus datos faciales y haber permanecido en la Pantalla de bloqueo",
+      "Nuevo: función para permanecer en la pantalla de bloqueo tras el reconocimiento facial. Se puede activar en Ajustes > «Gestión de datos faciales».",
+      "Nuevo: Ahora puedes restringir abrir la Barra de notificaciones en la Pantalla de bloqueo",
+      "Reparado: Las notificaciones flotantes relacionadas con la batería no se mostraban correctamente en el modo paisaje",
+      "Reparado: El acceso directo a la Barra de estado y notificaciones flotantes para llamadas aparecieron al mismo tiempo",
+      "Se corrigió el problema por el que el aviso de reconocimiento facial no desaparecía a tiempo en algunos casos.",
+      "Corregido: los datos de desbloqueo facial se registraban demasiado rápido",
+      "Nuevo: Puedes permanecer en la Pantalla de bloqueo después del reconocimiento facial. Puedes activar esta función en Ajustes > Pantalla de bloqueo y contraseña > Administrar datos faciales.",
+      "Optimización: Eficiencia del Desbloqueo facial",
+      "Reparado: La página de sincronización no pudo ser refrescada cuando la sincronización fue activada o desactivada en la Barra de notificaciones",
+      "Reparado: Los avisos de desbloqueo facial no desaparecían a tiempo en algunos casos",
+      "Reparado: Los datos faciales fueron guardados demasiado rápido"
     ],
     "Cámara": [
       "Nuevo: Nuevo modos para la cámara IA",
@@ -319,23 +376,28 @@
     ],
     "Sistema": [
       "Optimización: Parche de seguridad de Android actualizado a Mayo de 2019. Seguridad del sistema incrementada."
-    ],
-    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
-      "Nuevo: Usa tu huella dactilar para abrir la Pantalla de inicio después de haber desbloqueado el dispositivo usando tus datos faciales y haber permanecido en la Pantalla de bloqueo",
-      "Nuevo: Puedes permanecer en la Pantalla de bloqueo después del reconocimiento facial. Puedes activar esta función en Ajustes > Pantalla de bloqueo y contraseña > Administrar datos faciales.",
-      "Nuevo: Ahora puedes restringir abrir la Barra de notificaciones en la Pantalla de bloqueo",
-      "Optimización: Eficiencia del Desbloqueo facial",
-      "Reparado: Las notificaciones flotantes relacionadas con la batería no se mostraban correctamente en el modo paisaje",
-      "Reparado: El acceso directo a la Barra de estado y notificaciones flotantes para llamadas aparecieron al mismo tiempo",
-      "Reparado: La página de sincronización no pudo ser refrescada cuando la sincronización fue activada o desactivada en la Barra de notificaciones",
-      "Reparado: Los avisos de desbloqueo facial no desaparecían a tiempo en algunos casos",
-      "Reparado: Los datos faciales fueron guardados demasiado rápido"
     ]
   },
   "logs_pt": {
     "Telefone": [
       "Correção: Encerrar chamadas levava mais tempo que o esperado",
       "Correção: encerrar chamadas demorava mais do que o esperado"
+    ],
+    "Tela de bloqueio, Barra de status e Área de notificações": [
+      "Novo Use sua impressão digital para abrir a Tela inicial quando você desbloquear o dispositivo usando o desbloqueio facial e ficar na Tela de bloqueio",
+      "Novo: função de permanecer na tela de bloqueio após o reconhecimento facial. Ative em Configurações > “Gerenciamento de dados faciais”.",
+      "Novo: agora é possível impedir a abertura do painel de notificações na tela de bloqueio",
+      "Correção: Notificações flutuantes sobre a bateria não eram exibidas corretamente em modo paisagem",
+      "Correção: a barra flutuante de chamada recebida e a barra verde de chamada apareciam ao mesmo tempo.",
+      "Corrigido o problema em que o aviso de reconhecimento facial não desaparecia a tempo em alguns casos.",
+      "Corrigido: os dados de desbloqueio facial eram registrados muito rapidamente",
+      "Novo: Usar a impressão digital para abrir a tela inicial após desbloquear com o rosto e permanecer na tela de bloqueio",
+      "Adicionada função de permanecer na tela de bloqueio após o desbloqueio facial bem-sucedido, que pode ser ativada na página Configurações 'Gerenciamento de dados faciais'.",
+      "Otimizar a taxa de sucesso do desbloqueio facial",
+      "Corrigido o problema em que a notificação flutuante de bateria fraca não era exibida prontamente no modo paisagem",
+      "Correção: a página de sincronização não era atualizada ao ativar ou desativar a sincronização no painel de notificações",
+      "Corrigido o problema em que a indicação facial não desaparecia imediatamente em alguns casos.",
+      "Corrigido o problema de gravação demasiado rápida dos dados de desbloqueio facial"
     ],
     "Câmera": [
       "Novas cenas da câmera AI: modo Lua, torre, foto em grupo",
@@ -348,22 +410,25 @@
     ],
     "Sistema": [
       "Otimização: Atualizado o patch de segurança do Google (2019#5), melhorando a segurança do sistema."
-    ],
-    "Tela de bloqueio, Barra de status e Área de notificações": [
-      "Novo: Usar a impressão digital para abrir a tela inicial após desbloquear com o rosto e permanecer na tela de bloqueio",
-      "Adicionada função de permanecer na tela de bloqueio após o desbloqueio facial bem-sucedido, que pode ser ativada na página Configurações 'Gerenciamento de dados faciais'.",
-      "Novo: agora é possível impedir a abertura do painel de notificações na tela de bloqueio",
-      "Otimizar a taxa de sucesso do desbloqueio facial",
-      "Corrigido o problema em que a notificação flutuante de bateria fraca não era exibida prontamente no modo paisagem",
-      "Correção: a barra flutuante de chamada recebida e a barra verde de chamada apareciam ao mesmo tempo.",
-      "Correção: a página de sincronização não era atualizada ao ativar ou desativar a sincronização no painel de notificações",
-      "Corrigido o problema em que a indicação facial não desaparecia imediatamente em alguns casos.",
-      "Corrigido o problema de gravação demasiado rápida dos dados de desbloqueio facial"
     ]
   },
   "logs_tr": {
     "Telefon": [
       "Onarım: Aramaları sonlandırmak beklenenden daha uzun sürdü"
+    ],
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Yeni: Cihazın kilidini yüz verilerini kullanarak açtıktan ve Kilit ekranında kaldıktan sonra Ana ekranı açmak için parmak izinizi kullanın",
+      "Yeni: Yüz tanıma başarılı olduktan sonra kilit ekranında kalma özelliği. Ayarlar > “Yüz verilerini yönet” bölümünden açabilirsiniz.",
+      "Yeni: Kilit ekranında Bildirim çubuğunun açılmasını kısıtlayabilirsiniz",
+      "Onarım: Pille ilgili kayan bildirimler, manzara modunda doğru görüntülenmedi",
+      "Onarım: Durum çubuğu kısayolu ve aramalar için kayan bildirimler aynı anda belirdi",
+      "Bazı durumlarda yüz tanıma isteminin zamanında kaybolmaması sorunu giderildi.",
+      "Yüz kilidi verilerinin çok hızlı kaydedilmesi sorunu giderildi",
+      "Yeni: Yüzünüz tanındıktan sonra Kilit ekranında kalabilirsiniz. Bu özelliği, Ayarlar > Kilit ekranı & şifre > Yüz verilerini yönet menüsünden etkinleştirebilirsiniz.",
+      "Optimizasyon: Yüz ile kilit açma verimliliği",
+      "Onarım: Senkronizasyon Bildirim çubuğunda açıldığında veya kapatıldığında senkronizasyon sayfası yenilenemedi",
+      "Onarım: Yüzle kilit açma pencereleri bazı durumlarda kaybolmadı",
+      "Onarım: Yüz verileri çok hızlı kaydedildi"
     ],
     "Kamera": [
       "Yeni: AI kamera için yeni modlar",
@@ -375,23 +440,28 @@
     ],
     "Sistem": [
       "Optimizasyon: Android Güvenlik Yaması Mayıs 2019 sürümüne güncellendi. Sistem güvenliği artırıldı."
-    ],
-    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
-      "Yeni: Cihazın kilidini yüz verilerini kullanarak açtıktan ve Kilit ekranında kaldıktan sonra Ana ekranı açmak için parmak izinizi kullanın",
-      "Yeni: Yüzünüz tanındıktan sonra Kilit ekranında kalabilirsiniz. Bu özelliği, Ayarlar > Kilit ekranı & şifre > Yüz verilerini yönet menüsünden etkinleştirebilirsiniz.",
-      "Yeni: Kilit ekranında Bildirim çubuğunun açılmasını kısıtlayabilirsiniz",
-      "Optimizasyon: Yüz ile kilit açma verimliliği",
-      "Onarım: Pille ilgili kayan bildirimler, manzara modunda doğru görüntülenmedi",
-      "Onarım: Durum çubuğu kısayolu ve aramalar için kayan bildirimler aynı anda belirdi",
-      "Onarım: Senkronizasyon Bildirim çubuğunda açıldığında veya kapatıldığında senkronizasyon sayfası yenilenemedi",
-      "Onarım: Yüzle kilit açma pencereleri bazı durumlarda kaybolmadı",
-      "Onarım: Yüz verileri çok hızlı kaydedildi"
     ]
   },
   "logs_id": {
     "Telepon": [
       "Perbaikan: Mematikan panggilan memakan waktu lebih lama dibanding seharusnya",
       "Perbaikan: Mengakhiri panggilan membutuhkan waktu lebih lama dari yang diharapkan"
+    ],
+    "Layar kunci, bar status, layar notifikasi": [
+      "Baru Menggunakan sidik jari untuk membuka Layar utama saat Anda membuka kunci perangkat dengan data wajah dan tetap berada di Layar kunci",
+      "Baru: Fitur tetap di layar kunci setelah pengenalan wajah berhasil. Dapat diaktifkan di Pengaturan > “Kelola data wajah”.",
+      "Baru: Dukungan untuk mencegah membuka panel notifikasi di layar kunci",
+      "Perbaikan: Notifikasi mengambang yang berkaitan dengan baterai tidak ditampilkan saat dalam mode horisontal",
+      "Perbaikan: Bilah mengambang panggilan masuk dan bilah hijau panggilan muncul bersamaan.",
+      "Memperbaiki masalah prompt pengenalan wajah yang tidak hilang tepat waktu dalam beberapa kasus.",
+      "Memperbaiki masalah data buka kunci wajah yang direkam terlalu cepat",
+      "Baru: Gunakan sidik jari untuk membuka Layar utama setelah berhasil membuka kunci dengan wajah dan tetap di layar kunci",
+      "Menambahkan fitur tetap di layar kunci setelah buka kunci wajah berhasil, dapat diaktifkan di halaman Pengaturan 'Kelola data wajah'.",
+      "Optimalkan tingkat keberhasilan buka kunci wajah",
+      "Perbaikan masalah notifikasi mengambang baterai lemah tidak tampil tepat waktu dalam mode lanskap",
+      "Perbaikan: Halaman sinkronisasi tidak diperbarui saat sinkronisasi diaktifkan atau dinonaktifkan dari panel notifikasi",
+      "Memperbaiki masalah di mana petunjuk wajah terkadang tidak langsung hilang.",
+      "Memperbaiki masalah perekaman data buka kunci wajah yang terlalu cepat"
     ],
     "Kamera": [
       "Skena baru kamera AI: mode Bulan, menara, foto grup",
@@ -404,23 +474,28 @@
     ],
     "Sistem": [
       "Optimasi: Memperbarui patch keamanan Google (2019#5), meningkatkan keamanan sistem."
-    ],
-    "Layar kunci, bar status, layar notifikasi": [
-      "Baru: Gunakan sidik jari untuk membuka Layar utama setelah berhasil membuka kunci dengan wajah dan tetap di layar kunci",
-      "Menambahkan fitur tetap di layar kunci setelah buka kunci wajah berhasil, dapat diaktifkan di halaman Pengaturan 'Kelola data wajah'.",
-      "Baru: Dukungan untuk mencegah membuka panel notifikasi di layar kunci",
-      "Optimalkan tingkat keberhasilan buka kunci wajah",
-      "Perbaikan masalah notifikasi mengambang baterai lemah tidak tampil tepat waktu dalam mode lanskap",
-      "Perbaikan: Bilah mengambang panggilan masuk dan bilah hijau panggilan muncul bersamaan.",
-      "Perbaikan: Halaman sinkronisasi tidak diperbarui saat sinkronisasi diaktifkan atau dinonaktifkan dari panel notifikasi",
-      "Memperbaiki masalah di mana petunjuk wajah terkadang tidak langsung hilang.",
-      "Memperbaiki masalah perekaman data buka kunci wajah yang terlalu cepat"
     ]
   },
   "logs_vi": {
     "Điện thoại": [
       "Sửa lỗi: Kết thúc cuộc gọi mất nhiều thời gian hơn dự kiến",
       "Đã sửa: Việc kết thúc cuộc gọi mất nhiều thời gian hơn dự kiến"
+    ],
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Mới: Dùng vân tay để vào Màn hình chính khi đã mở khóa bằng khuôn mặt và vẫn ở màn hình khóa",
+      "Mới: Tính năng ở lại màn hình khóa sau khi nhận diện khuôn mặt thành công. Có thể bật trong Cài đặt > “Quản lý dữ liệu khuôn mặt”.",
+      "Mới: Hỗ trợ chặn kéo xuống bảng thông báo trên màn hình khóa",
+      "Sửa lỗi thông báo nổi pin yếu không được hiển thị kịp thời ở chế độ ngang",
+      "Sửa: Thanh nổi cuộc gọi đến và thanh màu xanh cuộc gọi xuất hiện cùng lúc.",
+      "Đã khắc phục sự cố gợi ý nhận diện khuôn mặt không biến mất kịp thời trong một số trường hợp.",
+      "Đã sửa lỗi dữ liệu mở khóa bằng khuôn mặt được ghi quá nhanh",
+      "Mới: Dùng vân tay để mở Màn hình chính sau khi mở khóa bằng khuôn mặt thành công và vẫn ở màn hình khóa",
+      "Bổ sung tính năng giữ ở màn hình khóa sau khi mở khóa bằng khuôn mặt thành công, có thể bật trong trang Cài đặt 'Quản lý dữ liệu khuôn mặt'.",
+      "Tối ưu tỷ lệ mở khóa bằng khuôn mặt thành công",
+      "Khắc phục sự cố thông báo nổi pin yếu không hiển thị kịp thời ở chế độ ngang",
+      "Sửa lỗi: Trang đồng bộ không làm mới khi bật hoặc tắt đồng bộ từ bảng thông báo",
+      "Đã khắc phục sự cố gợi ý khuôn mặt đôi khi không biến mất ngay.",
+      "Đã sửa lỗi ghi dữ liệu mở khóa bằng khuôn mặt quá nhanh"
     ],
     "Máy ảnh": [
       "Cảnh mới cho camera AI: chế độ Mặt Trăng, tòa tháp, ảnh nhóm",
@@ -433,23 +508,28 @@
     ],
     "Hệ thống": [
       "Tối ưu hóa: Đã cập nhật bản vá bảo mật Google (2019#5), nâng cao bảo mật hệ thống."
-    ],
-    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
-      "Mới: Dùng vân tay để mở Màn hình chính sau khi mở khóa bằng khuôn mặt thành công và vẫn ở màn hình khóa",
-      "Bổ sung tính năng giữ ở màn hình khóa sau khi mở khóa bằng khuôn mặt thành công, có thể bật trong trang Cài đặt 'Quản lý dữ liệu khuôn mặt'.",
-      "Mới: Hỗ trợ chặn kéo xuống bảng thông báo trên màn hình khóa",
-      "Tối ưu tỷ lệ mở khóa bằng khuôn mặt thành công",
-      "Khắc phục sự cố thông báo nổi pin yếu không hiển thị kịp thời ở chế độ ngang",
-      "Sửa: Thanh nổi cuộc gọi đến và thanh màu xanh cuộc gọi xuất hiện cùng lúc.",
-      "Sửa lỗi: Trang đồng bộ không làm mới khi bật hoặc tắt đồng bộ từ bảng thông báo",
-      "Đã khắc phục sự cố gợi ý khuôn mặt đôi khi không biến mất ngay.",
-      "Đã sửa lỗi ghi dữ liệu mở khóa bằng khuôn mặt quá nhanh"
     ]
   },
   "logs_th": {
     "โทรศัพท์": [
       "แก้ไข: การวางสายใช้เวลานานกว่าที่ควร",
       "แก้ไข: การวางสายใช้เวลานานกว่าที่คาดไว้"
+    ],
+    "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
+      "ใหม่: สามารถใช้ลายนิ้วมือเข้าสู่หน้าจอหลักได้เมื่อปลดล็อกด้วยใบหน้าและยังคงอยู่ที่หน้าจอล็อก",
+      "ใหม่: ฟีเจอร์คงอยู่ในหน้าจอล็อกหลังสแกนใบหน้าสำเร็จ เปิดได้ในการตั้งค่า > “จัดการข้อมูลใบหน้า”",
+      "ใหม่: รองรับการห้ามเลื่อนลงเพื่อเปิดแผงการแจ้งเตือนบนหน้าจอล็อก",
+      "แก้ไขปัญหาการไม่แสดงการแจ้งเตือนแบบลอยสำหรับแบตเตอรี่ต่ำในโหมดแนวนอนอย่างทันท่วงที",
+      "แก้ไข: แถบลอยของการโทรเข้าและแถบสีเขียวของการโทรแสดงพร้อมกัน",
+      "แก้ไขปัญหาที่ข้อความแจ้งการจดจำใบหน้าไม่หายไปตามเวลาในบางกรณี",
+      "แก้ไขปัญหาข้อมูลปลดล็อกด้วยใบหน้าถูกบันทึกเร็วเกินไป",
+      "ใหม่: ใช้ลายนิ้วมือเข้าสู่หน้าจอหลักเมื่อปลดล็อกด้วยใบหน้าสำเร็จและยังคงอยู่บนหน้าจอล็อก",
+      "เพิ่มฟีเจอร์ให้คงอยู่ที่หน้าจอล็อกหลังปลดล็อกด้วยใบหน้าสำเร็จ สามารถเปิดได้ในหน้าการตั้งค่า 'จัดการข้อมูลใบหน้า'",
+      "ปรับปรุงอัตราความสำเร็จในการปลดล็อกด้วยใบหน้า",
+      "แก้ไขปัญหาการไม่แสดงการแจ้งเตือนแบบลอยเรื่องแบตเตอรี่ต่ำในโหมดแนวนอนอย่างทันท่วงที",
+      "แก้ไข: หน้าการซิงค์ไม่รีเฟรชเมื่อเปิดหรือปิดการซิงค์จากแผงการแจ้งเตือน",
+      "แก้ไขปัญหาที่คำแนะนำเกี่ยวกับใบหน้าไม่หายไปทันทีในบางกรณี",
+      "แก้ไขปัญหาการบันทึกข้อมูลการปลดล็อกด้วยใบหน้าเร็วเกินไป"
     ],
     "กล้อง": [
       "ฉากใหม่ของกล้อง AI: โหมดพระจันทร์, หอคอย, ภาพหมู่",
@@ -462,22 +542,27 @@
     ],
     "ระบบ": [
       "ปรับปรุง: อัปเดตแพตช์ความปลอดภัยของ Google (2019#5) เพิ่มความปลอดภัยของระบบ"
-    ],
-    "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
-      "ใหม่: ใช้ลายนิ้วมือเข้าสู่หน้าจอหลักเมื่อปลดล็อกด้วยใบหน้าสำเร็จและยังคงอยู่บนหน้าจอล็อก",
-      "เพิ่มฟีเจอร์ให้คงอยู่ที่หน้าจอล็อกหลังปลดล็อกด้วยใบหน้าสำเร็จ สามารถเปิดได้ในหน้าการตั้งค่า 'จัดการข้อมูลใบหน้า'",
-      "ใหม่: รองรับการห้ามเลื่อนลงเพื่อเปิดแผงการแจ้งเตือนบนหน้าจอล็อก",
-      "ปรับปรุงอัตราความสำเร็จในการปลดล็อกด้วยใบหน้า",
-      "แก้ไขปัญหาการไม่แสดงการแจ้งเตือนแบบลอยเรื่องแบตเตอรี่ต่ำในโหมดแนวนอนอย่างทันท่วงที",
-      "แก้ไข: แถบลอยของการโทรเข้าและแถบสีเขียวของการโทรแสดงพร้อมกัน",
-      "แก้ไข: หน้าการซิงค์ไม่รีเฟรชเมื่อเปิดหรือปิดการซิงค์จากแผงการแจ้งเตือน",
-      "แก้ไขปัญหาที่คำแนะนำเกี่ยวกับใบหน้าไม่หายไปทันทีในบางกรณี",
-      "แก้ไขปัญหาการบันทึกข้อมูลการปลดล็อกด้วยใบหน้าเร็วเกินไป"
     ]
   },
   "logs_ar": {
     "الهاتف": [
       "إصلاح: استغرق إنهاء المكالمات وقتًا أطول من المتوقع"
+    ],
+    "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
+      "جديد: استخدام بصمة الإصبع للانتقال إلى الشاشة الرئيسية عند نجاح فتح القفل بالوجه والبقاء على شاشة القفل",
+      "جديد: ميزة البقاء على شاشة القفل بعد نجاح التعرف على الوجه. يمكن تفعيلها في الإعدادات ضمن «إدارة بيانات الوجه».",
+      "جديد: دعم منع سحب لوحة الإشعارات على شاشة القفل",
+      "إصلاح: لم يتم عرض إشعار عائم خاص بانخفاض البطارية في الوقت المناسب في الوضع الأفقي",
+      "إصلاح: ظهور شريط المكالمة العائم والشريط الأخضر للمكالمة في الوقت نفسه.",
+      "إصلاح مشكلة عدم اختفاء مطالبة التعرف على الوجه في الوقت المناسب في بعض الحالات.",
+      "إصلاح مشكلة تسجيل بيانات فتح القفل بالوجه بسرعة كبيرة",
+      "جديد: استخدام بصمة الإصبع للدخول إلى الشاشة الرئيسية بعد نجاح فتح القفل بالوجه والبقاء على شاشة القفل",
+      "إضافة ميزة البقاء على شاشة القفل بعد نجاح فتح القفل بالوجه، ويمكن تفعيلها من صفحة الإعدادات 'إدارة بيانات الوجه'.",
+      "تحسين معدل نجاح فتح القفل بالوجه",
+      "إصلاح مشكلة عدم عرض إشعار عائم لانخفاض البطارية في الوقت المناسب في وضع الشاشة الأفقية",
+      "إصلاح: تعذّر تحديث صفحة المزامنة عند تشغيل المزامنة أو إيقافها من لوحة الإشعارات",
+      "إصلاح مشكلة عدم اختفاء تلميح الوجه فورًا في بعض الحالات.",
+      "تم إصلاح مشكلة تسجيل بيانات فتح القفل بالوجه بسرعة كبيرة"
     ],
     "كاميرا": [
       "مشاهد جديدة لكاميرا AI: وضع القمر، البرج، صورة جماعية",
@@ -493,17 +578,6 @@
     "هاتف": [
       "إصلاح: استغرق إنهاء المكالمات وقتًا أطول من المتوقع"
     ],
-    "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
-      "جديد: استخدام بصمة الإصبع للدخول إلى الشاشة الرئيسية بعد نجاح فتح القفل بالوجه والبقاء على شاشة القفل",
-      "إضافة ميزة البقاء على شاشة القفل بعد نجاح فتح القفل بالوجه، ويمكن تفعيلها من صفحة الإعدادات 'إدارة بيانات الوجه'.",
-      "جديد: دعم منع سحب لوحة الإشعارات على شاشة القفل",
-      "تحسين معدل نجاح فتح القفل بالوجه",
-      "إصلاح مشكلة عدم عرض إشعار عائم لانخفاض البطارية في الوقت المناسب في وضع الشاشة الأفقية",
-      "إصلاح: ظهور شريط المكالمة العائم والشريط الأخضر للمكالمة في الوقت نفسه.",
-      "إصلاح: تعذّر تحديث صفحة المزامنة عند تشغيل المزامنة أو إيقافها من لوحة الإشعارات",
-      "إصلاح مشكلة عدم اختفاء تلميح الوجه فورًا في بعض الحالات.",
-      "تم إصلاح مشكلة تسجيل بيانات فتح القفل بالوجه بسرعة كبيرة"
-    ],
     "الكاميرا": [
       "مشاهد جديدة لكاميرا AI: وضع القمر، البرج، صورة جماعية",
       "إصلاح تعطل الكاميرا دائمًا عند الخروج وإعادة الدخول في وضع تسجيل الفيديو"
@@ -513,6 +587,21 @@
     "फ़ोन": [
       "ठीक किया गया: कॉल समाप्त करने में अपेक्षा से अधिक समय लगता था",
       "ठीक किया गया: कॉल समाप्त करने में अपेक्षा से अधिक समय लगा"
+    ],
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
+      "नया: चेहरे से अनलॉक होने और लॉक स्क्रीन पर रहने पर फ़िंगरप्रिंट से होम स्क्रीन पर जाने की सुविधा",
+      "नया: चेहरा पहचान सफल होने के बाद लॉक स्क्रीन पर रहने की सुविधा. इसे सेटिंग्स में “फ़ेस डेटा प्रबंधन” में चालू कर सकते हैं.",
+      "नया: लॉक स्क्रीन पर नोटिफ़िकेशन शेड को नीचे खींचकर खोलने से रोकें",
+      "लैंडस्केप मोड में कम बैटरी की फ़्लोटिंग सूचना समय पर न दिखने की समस्या ठीक की गई",
+      "फ़िक्स: इनकमिंग कॉल फ़्लोटिंग बार और कॉल ग्रीन बार का एक ही समय पर दिखना।",
+      "कुछ मामलों में फ़ेस रिकग्निशन संकेत के समय पर गायब न होने की समस्या ठीक की गई।",
+      "चेहरा अनलॉक डेटा बहुत तेज़ी से रिकॉर्ड होने की समस्या ठीक की गई",
+      "नया: चेहरे से अनलॉक सफल होने और लॉक स्क्रीन पर रहने पर फ़िंगरप्रिंट से होम स्क्रीन खोलें",
+      "फ़ेस अनलॉक सफल होने के बाद स्क्रीन लॉक पर रहने की सुविधा जोड़ी गई, जिसे सेटिंग्स पेज 'फ़ेस डेटा प्रबंधन' में सक्षम किया जा सकता है।",
+      "फेस अनलॉक सफलता दर को अनुकूलित करें",
+      "फ़िक्स: नोटिफ़िकेशन शेड से सिंक चालू या बंद करने पर सिंक पेज रीफ़्रेश नहीं होता था",
+      "कुछ मामलों में चेहरे का संकेत तुरंत गायब न होने की समस्या को ठीक किया गया।",
+      "फेस अनलॉक डेटा रिकॉर्डिंग बहुत तेज़ होने की समस्या ठीक की गई"
     ],
     "कैमरा": [
       "नए AI कैमरा दृश्य: चंद्रमा मोड, टावर, ग्रुप फोटो",
@@ -525,17 +614,6 @@
     ],
     "सिस्टम": [
       "अनुकूलन: Google सुरक्षा पैच (2019#5) अपडेट किया गया, सिस्टम सुरक्षा में सुधार।"
-    ],
-    "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
-      "नया: चेहरे से अनलॉक सफल होने और लॉक स्क्रीन पर रहने पर फ़िंगरप्रिंट से होम स्क्रीन खोलें",
-      "फ़ेस अनलॉक सफल होने के बाद स्क्रीन लॉक पर रहने की सुविधा जोड़ी गई, जिसे सेटिंग्स पेज 'फ़ेस डेटा प्रबंधन' में सक्षम किया जा सकता है।",
-      "नया: लॉक स्क्रीन पर नोटिफ़िकेशन शेड को नीचे खींचकर खोलने से रोकें",
-      "फेस अनलॉक सफलता दर को अनुकूलित करें",
-      "लैंडस्केप मोड में कम बैटरी की फ़्लोटिंग सूचना समय पर न दिखने की समस्या ठीक की गई",
-      "फ़िक्स: इनकमिंग कॉल फ़्लोटिंग बार और कॉल ग्रीन बार का एक ही समय पर दिखना।",
-      "फ़िक्स: नोटिफ़िकेशन शेड से सिंक चालू या बंद करने पर सिंक पेज रीफ़्रेश नहीं होता था",
-      "कुछ मामलों में चेहरे का संकेत तुरंत गायब न होने की समस्या को ठीक किया गया।",
-      "फेस अनलॉक डेटा रिकॉर्डिंग बहुत तेज़ होने की समस्या ठीक की गई"
     ]
   },
   "logs_ug": {
@@ -543,10 +621,25 @@
       "تېلېفوننى ئۈزۈش ئاستا بولۇش مەسىلىسى تۈزىتىلدى.",
       "قوڭغۇراقنى ئۈزۈش ئاستا بولۇش مەسىلىسىنى تۈزىتىش"
     ],
-    "كامېرا": [
+    "Lockscreen, status bar, Notification shade": [
+      "يېڭى: يۈزنى تونۇش ئارقىلىق قۇلۇپنى ئېچىپ قۇلۇپ ئېكرانىدا تۇرۇۋاتقاندا، بارماق ئىزى ئارقىلىق باش ئېكرانغا كىرىش ئىقتىدارى قوشۇلدى.",
+      "يېڭىدىن قوشۇلدى: يۈز ئېچىش مۇۋەپپەقىيەتلىك بولغاندىن كېيىن قۇلۇپ ئېكرانىدا تۇرۇش ئىقتىدارى. بۇ ئىقتىدارنى تەڭشەك بېتىدىكى «يۈز ئۇچۇرلىرىنى باشقۇرۇش» دىن قوزغىتسىڭىز بولىدۇ.",
+      "يېڭى: قۇلۇپ ئېكرانى بېتىدە ئۇقتۇرۇش تاختىسىنى تۆۋەن تارتىشنى چەكلەشنى قوللايدۇ",
+      "تەكشى ئېكران ھالىتىدە تۆۋەن باتارېيە لەيلىمە ئۇقتۇرۇشىنىڭ ۋاقتىدا كۆرسىتىلمەسلىك مەسىلىسى تۈزىتىلدى",
+      "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
+      "يۈز ئېنىقلاش ئۇچۇرىنىڭ بەزى ئەھۋاللاردا ۋاقتىدا يوقىلىپ كەتمەسلىك مەسىلىسى تۈزىتىلدى.",
+      "يۈز ئارقىلىق قۇلۇپ ئېچىش سانلىق مەلۇماتىنى كىرگۈزۈش بەك تېز بولۇش مەسىلىسىنى تۈزەتتى",
+      "يېڭىلىق: يۈز ئارقىلىق قۇلۇپ ئېچىش مۇۋەپپەقىيەتلىك بولۇپ، قۇلۇپ ئېكرانىدا تۇرۇۋاتقاندا، بارماق ئىزى ئارقىلىق ئاساسىي ئېكرانغا كىرىش ئىقتىدارى قوشۇلدى",
+      "يېڭىدىن قوشۇلدى: يۈز ئارقىلىق قۇلۇپ ئېچىش مۇۋەپپەقىيەتلىك بولغاندىن كېيىن ئېكران قۇلۇپىدا تۇرۇش ئىقتىدارى، تەڭشەك بېتىدىكى «يۈز ئۇچۇرىنى باشقۇرۇش» دىن ئاچقىلى بولىدۇ.",
+      "يۈز ئارقىلىق قۇلۇپ ئېچىش مۇۋەپپەقىيەت نىسبىتىنى ياخشىلاش",
+      "تەكشى ئېكران ھالىتىدە تۆۋەن باتارېيە لەۋلەپ ئۇچۇرنى ۋاقتىدا كۆرسەتمەسلىك مەسىلىسىنى تۈزەتتى",
+      "تۈزېتىش: ئۇقتۇرۇش ستونىنى تارتىپ چۈشۈرۈپ ماسقەدەملەشنى ئېچىش ياكى تاقاش ئارقىلىق ماسقەدەملەش كۆرۈنمە يۈزىنىڭ يېڭىلانماسلىق مەسىلىسى",
+      "بەزى ئەھۋاللاردا يۈز ئەسكەرتمىسىنىڭ دەرھال يوقىماسلىق مەسىلىسىنى تۈزەتتى.",
+      "يۈز ئارقىلىق قۇلۇپ ئېچىش ماتېرىيالىنى خاتىرىلەش بەك تېز بولۇش مەسىلىسى تۈزىتىلدى."
+    ],
+    "فوتو ئاپپارات": [
       "يېڭىدىن قوشۇلدى: AI كامېرا كۆرۈنۈشلىرى: ئاي ھالىتى، مۇنار، گۇرۇپپا سۈرەت",
-      "تۈزىتىلدى: سىن ئېلىش ھالىتىدە چېكىنىپ قايتا كىرگەندە كامېرا چوقۇم تاقىلىپ قېلىش مەسىلىسى تۈزىتىلدى.",
-      "سىن ئېلىش جەريانىدا چېكىپ قايتا كىرگەندە چوقۇم كۆرۈلىدىغان كامېرا تۇيۇقسىز تاقىلىش مەسىلىسىنى تۈزەتتى"
+      "تۈزىتىلدى: سىن ئېلىش ھالىتىدە چېكىنىپ قايتا كىرگەندە كامېرا چوقۇم تاقىلىپ قېلىش مەسىلىسى تۈزىتىلدى."
     ],
     "Xiaomi بۇلۇت مۇلازىمىتى": [
       "ياخشىلاندى: بۇلۇت مۇلازىمىتى باش بېتى قايتا لايىھەلەندى، ئىشلەتكىلى بولىدىغان بوشلۇق كۆرسىتىلىشى تېخىمۇ كۆرۈنەرلىك بولدى.",
@@ -555,16 +648,9 @@
     "سىستېما": [
       "ئەلالاشتۇرۇش: Google بىخەتەرلىك يامىقى (2019#5) يېڭىلاندى، سىستېما بىخەتەرلىكى ئاشۇرۇلدى."
     ],
-    "Lockscreen, status bar, Notification shade": [
-      "يېڭىلىق: يۈز ئارقىلىق قۇلۇپ ئېچىش مۇۋەپپەقىيەتلىك بولۇپ، قۇلۇپ ئېكرانىدا تۇرۇۋاتقاندا، بارماق ئىزى ئارقىلىق ئاساسىي ئېكرانغا كىرىش ئىقتىدارى قوشۇلدى",
-      "يېڭىدىن قوشۇلدى: يۈز ئارقىلىق قۇلۇپ ئېچىش مۇۋەپپەقىيەتلىك بولغاندىن كېيىن ئېكران قۇلۇپىدا تۇرۇش ئىقتىدارى، تەڭشەك بېتىدىكى «يۈز ئۇچۇرىنى باشقۇرۇش» دىن ئاچقىلى بولىدۇ.",
-      "يېڭى: قۇلۇپ ئېكرانى بېتىدە ئۇقتۇرۇش تاختىسىنى تۆۋەن تارتىشنى چەكلەشنى قوللايدۇ",
-      "يۈز ئارقىلىق قۇلۇپ ئېچىش مۇۋەپپەقىيەت نىسبىتىنى ياخشىلاش",
-      "تەكشى ئېكران ھالىتىدە تۆۋەن باتارېيە لەۋلەپ ئۇچۇرنى ۋاقتىدا كۆرسەتمەسلىك مەسىلىسىنى تۈزەتتى",
-      "Fix: Status bar shortcut and floating notification for calls appeared at the same time",
-      "تۈزېتىش: ئۇقتۇرۇش ستونىنى تارتىپ چۈشۈرۈپ ماسقەدەملەشنى ئېچىش ياكى تاقاش ئارقىلىق ماسقەدەملەش كۆرۈنمە يۈزىنىڭ يېڭىلانماسلىق مەسىلىسى",
-      "بەزى ئەھۋاللاردا يۈز ئەسكەرتمىسىنىڭ دەرھال يوقىماسلىق مەسىلىسىنى تۈزەتتى.",
-      "يۈز ئارقىلىق قۇلۇپ ئېچىش ماتېرىيالىنى خاتىرىلەش بەك تېز بولۇش مەسىلىسى تۈزىتىلدى."
+    "كامېرا": [
+      "يېڭىدىن قوشۇلدى: AI كامېرا كۆرۈنۈشلىرى: ئاي ھالىتى، مۇنار، گۇرۇپپا سۈرەت",
+      "سىن ئېلىش جەريانىدا چېكىپ قايتا كىرگەندە چوقۇم كۆرۈلىدىغان كامېرا تۇيۇقسىز تاقىلىش مەسىلىسىنى تۈزەتتى"
     ]
   },
   "logs_bo": {
@@ -572,10 +658,9 @@
       "ཁ་པར་གཅོད་པ་དལ་བའི་གནད་དོན་བཅོས་ཟིན།",
       "Fix: Ending calls took longer time than expected"
     ],
-    "པར་ཆས": [
+    "ཁ་མར།": [
       "New: New modes for AI camera",
-      "གསོ་བཅོས། བརྙན་ལེན་གྱི་ཐབས་ལམ་ནས་ཕྱིར་ཐོན་ནས་ཡང་བསྐྱར་འཛུལ་བའི་སྐབས་སུ་པར་ཆས་ཐད་ཀར་ཚུལ་མིན་ཐོན་པ།",
-      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
+      "གསོ་བཅོས། བརྙན་ལེན་གྱི་ཐབས་ལམ་ནས་ཕྱིར་ཐོན་ནས་ཡང་བསྐྱར་འཛུལ་བའི་སྐབས་སུ་པར་ཆས་ཐད་ཀར་ཚུལ་མིན་ཐོན་པ།"
     ],
     "Mi Cloud": [
       "Optimization: We redesigned Mi Cloud's start page. It looks much better now!",
@@ -594,6 +679,10 @@
       "Fix: Sync page couldn't be refreshed whenever sync was turned on or off in the Notification shade",
       "གནད་དོན་འགའ་ཞིག་གི་སྐབས་སུ་མི་གདོང་གི་བརྡ་སྟོན་དེ་དུས་སུ་མི་སོར་བའི་གནད་དོན་ལ་བཅོས་བྱས།",
       "Fix: Face data was recorded too fast"
+    ],
+    "པར་ཆས": [
+      "New: New modes for AI camera",
+      "Fix: Camera force closed when the app was closed and opened again in the Video mode"
     ]
   }
 }

@@ -6,6 +6,7 @@
       "修复 全面屏下相机参考线问题"
     ],
     "录音机": [
+      "修复：当录音被暂停时，通知栏中的录音状态信息不会更新。",
       "修复 暂停录音后无法及时更新到状态栏的问题"
     ],
     "系統": [
@@ -16,11 +17,15 @@
     "Camera": [
       "Optimization: New XXXL text size options",
       "Fix: Previews didn't match photos in some cases",
-      "Fix: Issues with gridlines in the fullscreen mode"
+      "Fix: Issues with gridlines in the fullscreen mode",
+      "Fixed an issue where the preview and photo display areas were inconsistent"
     ],
     "Recorder": [
-      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused",
+      "Fixed the issue where the status bar was not updated promptly after stopping the recording.",
       "Restore Pausing the ongoing recording wasn't reflected in the status bar"
+    ],
+    "System": [
+      "Fix: Updated Android Security Patch"
     ]
   },
   "logs_zh_tw": {
@@ -30,11 +35,14 @@
       "修復 全面屏下相機參考線問題",
       "修復 預覽和照片顯示的畫面區域不一致問題"
     ],
-    "錄音機": [
-      "修復 暫停錄音後無法即時更新到狀態欄的問題"
+    "录音机": [
+      "修复了在暂停录音后，系统无法及时将录音状态更新到状态栏的问题。"
     ],
     "系統": [
       "修復 更新 Android安全性修補程式等級"
+    ],
+    "錄音機": [
+      "修復 暫停錄音後無法即時更新到狀態欄的問題"
     ]
   },
   "logs_ja": {
@@ -45,7 +53,7 @@
       "プレビューと写真の表示領域が一致しない問題を修正しました"
     ],
     "レコーダー": [
-      "修正: 録音を一時停止した際、通知シェードの録音状態が更新されない問題"
+      "録音を一時停止した後、ステータスバーの表示がすぐに更新されない問題を修正しました。"
     ],
     "システム": [
       "修正: Android セキュリティパッチを更新"
@@ -61,8 +69,8 @@
       "전체 화면 모드에서 카메라 격자선 문제 수정",
       "미리보기와 사진의 표시 영역이 일치하지 않는 문제를 수정했습니다"
     ],
-    "녹음기": [
-      "수정: 녹음을 일시중지했을 때 알림 창의 녹음 상태가 업데이트되지 않던 문제"
+    "레코더": [
+      "녹음을 일시 중단한 후 상태 표시줄에 즉시 업데이트되지 않는 문제를 수정했습니다."
     ],
     "시스템": [
       "수정: Android 보안 패치 업데이트"
@@ -79,7 +87,7 @@
       "Исправлена проблема несовпадения области отображения предпросмотра и фото"
     ],
     "Диктофон": [
-      "Fix: Факт остановки записи не отображался в строке состояния вовремя"
+      "Устранено недостаток, связанный с тем, что после приостановки записи информация не своевременно отображается в панели состояния."
     ],
     "Система": [
       "Исправлено: обновлён патч безопасности Android"
@@ -96,7 +104,7 @@
       "Виправлено проблему невідповідності області відображення попереднього перегляду та фото"
     ],
     "Диктофон": [
-      "Виправлено: стан запису не оновлювався в панелі сповіщень під час паузи запису"
+      "Виправлено проблему, коли після призупинення запису інформація не вчасно оновлюється у панелі стану."
     ],
     "Система": [
       "Виправлено: оновлено патч безпеки Android"
@@ -112,8 +120,8 @@
       "Poprawka: problemy z liniami siatki w trybie pełnoekranowym",
       "Naprawiono problem niespójnego obszaru wyświetlania podglądu i zdjęcia"
     ],
-    "Rejestrator": [
-      "Poprawka: stan nagrywania nie był aktualizowany na pasku powiadomień po wstrzymaniu nagrywania"
+    "Kaseta nagrywająca": [
+      "Poprawiono problem z niewłaściwym aktualizowaniem stanu w pasku stanu po przywołaniu funkcji przerywania nagrywania."
     ],
     "System": [
       "Poprawka: zaktualizowano poprawkę zabezpieczeń Android"
@@ -129,8 +137,8 @@
       "Behebung: Probleme mit Rasterlinien im Vollbildmodus der Kamera",
       "Problem behoben, dass Vorschau und Foto unterschiedliche Anzeigebereiche hatten"
     ],
-    "Rekorder": [
-      "Behoben: Der Aufnahmestatus wurde in der Benachrichtigungsleiste nicht aktualisiert, wenn eine Aufnahme pausiert wurde"
+    "Tonaufnahmegerät": [
+      "Behebung des Problems, dass sich der Status nach einer Unterbrechung der Aufnahmefunktion nicht rechtzeitig in der Statusleiste aktualisiert."
     ],
     "System": [
       "Behoben: Android-Sicherheitspatch aktualisiert"
@@ -147,7 +155,7 @@
       "Correction du problème d'incohérence entre la zone d'affichage de l'aperçu et celle de la photo"
     ],
     "Enregistreur": [
-      "Correction : l’état d’enregistrement n’était pas mis à jour dans la barre de notifications lors d’une pause"
+      "Résolution du problème : l'actualisation de l'état dans la barre d'état ne se fait pas immédiatement après l'arrêt de l'enregistrement."
     ],
     "Système": [
       "Correctif : mise à jour du correctif de sécurité Android"
@@ -157,14 +165,14 @@
     ]
   },
   "logs_it": {
-    "Fotocamera": [
+    "macchina fotografica": [
       "Ottimizzazione: Adattamento alla nuova modalità testo grande",
       "Risolto il problema dell'area dell'immagine incoerente tra anteprima e foto",
       "Correzione: problemi con le linee della griglia in modalità a schermo intero",
       "Risolto il problema di incoerenza tra l'area di visualizzazione dell'anteprima e della foto"
     ],
     "Registratore": [
-      "Correzione: lo stato di registrazione non veniva aggiornato nella barra delle notifiche quando una registrazione veniva messa in pausa"
+      "Risolto il problema per cui, dopo aver interrotto la registrazione, lo stato della registrazione non veniva aggiornato tempestivamente nella barra di stato."
     ],
     "Sistema": [
       "Correzione: aggiornamento della patch di sicurezza Android"
@@ -181,7 +189,7 @@
       "Corregido el problema de inconsistencia entre el área de visualización de la vista previa y la de la foto"
     ],
     "Grabadora": [
-      "Corrección: El estado de grabación no se actualizaba en la barra de notificaciones al pausar una grabación"
+      "Se ha corregido el problema de que, después de detener la grabación, no se actualiza a tiempo la información en la barra de estado."
     ],
     "Sistema": [
       "Corrección: actualización del parche de seguridad de Android"
@@ -198,7 +206,7 @@
       "Corrigido o problema de inconsistência na área de exibição da pré-visualização e da foto"
     ],
     "Gravador": [
-      "Correção: o estado da gravação não era atualizado na barra de notificações ao pausar uma gravação"
+      "Corrigir o problema de não ser possível atualizar a barra de estado de forma imediata após interromper a gravação."
     ],
     "Sistema": [
       "Correção: atualização do patch de segurança do Android"
@@ -215,7 +223,7 @@
       "Önizleme ve fotoğraf görüntüleme alanının uyuşmaması sorunu giderildi"
     ],
     "Kayıt Cihazı": [
-      "Düzeltme: Kayıt duraklatıldığında kayıt durumu bildirim çubuğunda güncellenmiyordu"
+      "Kaydı durdurduktan sonra durum çubuğunda zamanında güncelleme yapılamaması sorununu düzelttik."
     ],
     "Sistem": [
       "Düzeltme: Android güvenlik yaması güncellendi"
@@ -232,7 +240,7 @@
       "Memperbaiki masalah area tampilan pratinjau dan foto yang tidak konsisten"
     ],
     "Perekam": [
-      "Perbaikan: Status perekaman tidak diperbarui di bilah notifikasi saat perekaman dijeda"
+      "Memperbaiki masalah di mana status rekaman tidak diperbarui secara tepat waktu setelah proses pemberhentian rekaman dilakukan."
     ],
     "Sistem": [
       "Perbaikan: Pembaruan patch keamanan Android"
@@ -249,7 +257,7 @@
       "Đã khắc phục vấn đề vùng hiển thị của bản xem trước và ảnh không khớp nhau"
     ],
     "Máy ghi âm": [
-      "Đã sửa: Trạng thái ghi âm không được cập nhật kịp thời trên thanh thông báo khi tạm dừng ghi âm"
+      "Khắc phục sự cố khi tạm dừng quá trình ghi âm không thể cập nhật kịp thời thông tin vào thanh trạng thái."
     ],
     "Hệ thống": [
       "Sửa lỗi: Đã cập nhật bản vá bảo mật Android"
@@ -266,7 +274,7 @@
       "แก้ไขปัญหาพื้นที่แสดงผลของตัวอย่างและรูปภาพไม่ตรงกัน"
     ],
     "เครื่องบันทึกเสียง": [
-      "แก้ไข: สถานะการบันทึกเสียงไม่ได้รับการอัปเดตในแถบการแจ้งเตือนเมื่อหยุดการบันทึกชั่วคราว"
+      "แก้ไขปัญหาที่การหยุดบันทึกเสียงไม่สามารถอัปเดตสถานะในแถบสถานะ (status bar) ได้อย่างทันท่วงที"
     ],
     "ระบบ": [
       "แก้ไข: อัปเดตแพตช์ความปลอดภัย Android"
@@ -282,8 +290,8 @@
       "إصلاح: مشكلة خطوط الشبكة في وضع ملء الشاشة للكاميرا",
       "إصلاح مشكلة عدم تطابق منطقة العرض بين المعاينة والصورة"
     ],
-    "مسجل": [
-      "إصلاح: لم يتم تحديث حالة التسجيل في شريط الإشعارات عند إيقاف التسجيل مؤقتًا"
+    "جهاز التسجيل": [
+      "تم إصلاح المشكلة التي تمنع تحديث حالة الجهاز بشكل فوري بعد توقف عملية التسجيل."
     ],
     "النظام": [
       "إصلاح: تحديث تصحيح الأمان في Android"
@@ -300,7 +308,7 @@
       "पूर्वावलोकन और फ़ोटो के प्रदर्शित क्षेत्र में असंगति की समस्या ठीक की गई"
     ],
     "रिकॉर्डर": [
-      "समस्या ठीक की गई: रिकॉर्डिंग पॉज़ करने पर नोटिफ़िकेशन शेड में स्थिति तुरंत अपडेट नहीं होती थी"
+      "वह समस्या दूर की गई है जिसके कारण रिकॉर्डिंग रोकने के बाद स्टेट बार (Status Bar) में समय पर अपडेट नहीं हो पाता था।"
     ],
     "सिस्टम": [
       "ठीक किया गया: Android सुरक्षा पैच अपडेट किया गया"
@@ -310,14 +318,14 @@
     ]
   },
   "logs_ug": {
-    "كامېرا": [
+    "فوتو ئاپپارات": [
       "ئەلالاشتۇرۇش: يېڭى چوڭ خەت ھالىتىگە ماسلاشتۇرۇلدى",
       "ئالدىن كۆرۈنۈش بىلەن سۈرەتتە كۆرسىتىلگەن رەسىم رايونىنىڭ ماس كەلمەسلىك مەسىلىسى ئوڭشالدى",
       "تولۇق ئېكران ھالىتىدىكى كامېرا تور سىزىقلىرى مەسىلىسىنى تۈزىتىش",
       "ئالدىن كۆرۈش ۋە سۈرەتتە كۆرسىتىلگەن كۆرۈنۈش رايونىنىڭ ماس كەلمەسلىك مەسىلىسى تۈزىتىلدى."
     ],
-    "ئاۋاز ئالغۇ": [
-      "ئۈن ئېلىش توختىتىلغاندىن كېيىن ئۇقتۇرۇش تاختىسىدا ھالەت ۋاقتىدا يېڭىلانماسلىق مەسىلىسى تۈزىتىلدى"
+    "ئۈن خاتىرىلەش ماشىنىسى": [
+      "ئۈن ئالماشتۇرۇشنى توختاتقاندىن كېيىن ، ھالەت سترېكچىسىگە (status bar) ئۆزۋاقتىدا يېڭىلاش مۇمكىن بولماسلىق مەسىلىسىنى تۈزى دۇق."
     ],
     "سىستېما": [
       "تۈزىتىش: Android بىخەتەرلىك ياماقى يېڭىلاندى"
@@ -328,12 +336,12 @@
   },
   "logs_bo": {
     "སྒྲ་འཇུག་ཆས": [
-      "སྒྲ་ཕབ་མཚམས་འཇོག་བྱས་རྗེས་གནས་ཚུལ་ཕྲེང་ལ་དུས་ཐོག་ཏུ་གསར་སྒྱུར་མི་ཐུབ་པའི་གནད་དོན་བཅོས་ཡོད།"
+      "ཡིག་སྒྲོན་གྱི་རྣམ་པར་བཟོ་བཅོས་བརྒྱབ་རྗེས་སྒྲ་ཕབ་མཚམས་འཇོག་བྱས་ན་དུས་ཐོག་ཏུ་གསར་སྒྱུར་བྱེད་མི་ཐུབ་པའི་གནད་དོན་ཐག་གཅོད།"
     ],
     "མ་ལག": [
       "Fix: Updated Android Security Patch"
     ],
-    "པར་ཆས": [
+    "ཁ་མར།": [
       "ལེགས་བཅོས། ཡིག་གཟུགས་ཆེན་པོའི་མ་དཔེ་གསར་པར་མཐུན་སྒྲིག་བྱས།",
       "སྔོན་ལྟ་དང་པར་རིས་ཀྱི་མངོན་སྟོན་ས་ཁོངས་མི་མཐུན་པའི་གནད་དོན་བཟོ་བཅོས་བྱས།",
       "Fix: Issues with gridlines in the fullscreen mode"

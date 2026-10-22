@@ -7,7 +7,7 @@
       "新增 勿扰状态下的锁屏常驻通知",
       "修复 Talkback模式下未充电却提示“快速充电”的问题"
     ],
-    "网络助手": [
+    "数据使用情况": [
       "修复 流量排行偶现停止运行的问题"
     ]
   },
@@ -19,98 +19,221 @@
       "New: Permanent Lock screen notifications in the DND mode",
       "Fix: Issues with TalkBack prompts about quick charging"
     ],
-    "Data Usage": [
+    "Online Assistant": [
       "Fix: Data usage stats module stopped working in some cases"
     ]
   },
   "logs_zh_tw": {
     "系統": [
       "更新 Android 安全性修補程式"
+    ],
+    "解鎖畫面、狀態欄、通知欄": [
+      "新增: 勿擾模式下的鎖屏常駐通知",
+      "修復 TalkBack 模式下未充電卻提示「快速充電」的問題"
+    ],
+    "網路助手": [
+      "修正 流量排行偶現停止運行的問題"
     ]
   },
   "logs_ja": {
     "システム": [
       "Android セキュリティパッチを更新"
+    ],
+    "ロック画面、ステータスバー、通知シェード": [
+      "新機能: DNDモードの永久的なロック画面通知",
+      "TalkBack モードで充電していないのに「急速充電」と表示される問題を修正"
+    ],
+    "ネットワークアシスタント": [
+      "データ使用量ランキングがまれに停止する問題を修正"
     ]
   },
   "logs_ko": {
     "시스템": [
       "Android 보안 패치 업데이트"
+    ],
+    "잠금화면, 상태 바, 알림 바": [
+      "New: 방해금지 모드를 위한 영구 잠금화면 알림",
+      "TalkBack 모드에서 충전 중이 아닌데 \"빠른 충전\"이 표시되는 문제 수정"
+    ],
+    "네트워크 어시스턴트": [
+      "데이터 사용량 순위가 간헐적으로 중지되는 문제를 수정"
     ]
   },
   "logs_ru": {
     "Система": [
       "Обновление патча безопасности Android"
+    ],
+    "Экран блокировки, строка состояния, шторка уведомлений": [
+      "Новое: Постоянные уведомления на экране блокировки в режиме Не беспокоить",
+      "Исправлена проблема с подсказкой «Быстрая зарядка» в режиме TalkBack при отсутствии зарядки."
+    ],
+    "Интернет-ассистент": [
+      "Исправлена проблема с редкими остановками рейтинга трафика"
     ]
   },
   "logs_uk": {
     "Система": [
       "Оновлено патч безпеки Android"
+    ],
+    "Екран блокування, рядок стану, панель сповіщень": [
+      "Нове: Постійні сповіщення на екрані блокування в режимі \"Не турбувати\"",
+      "Виправлено проблему з підказкою «Швидка зарядка» у режимі TalkBack, коли пристрій не заряджається."
+    ],
+    "Інтернет-асистент": [
+      "Виправлено проблему з поодинокими зупинками рейтингу трафіку"
     ]
   },
   "logs_pl": {
     "System": [
       "Zaktualizowano poprawkę zabezpieczeń Android"
+    ],
+    "Ekran blokady, pasek powiadomień,panel powiadomień": [
+      "Nowe: Trwałe powiadomienie o ekranie blokady dla trybu Nie przeszkadzać",
+      "Naprawiono problem z komunikatem „Szybkie ładowanie” w trybie TalkBack, gdy urządzenie nie jest ładowane."
+    ],
+    "Asystent online": [
+      "Naprawiono problem z sporadycznym zatrzymywaniem rankingu transferu danych"
     ]
   },
   "logs_de": {
     "System": [
       "Android-Sicherheitspatch aktualisiert"
+    ],
+    "Sperrbildschirm, Statusleiste, Benachrichtigungsbereich": [
+      "Neu: Dauerhafte Sperrbildschirm-Benachrichtigungen im Nicht-Stören-Modus",
+      "Problem behoben: Im TalkBack-Modus wird „Schnellladen“ angezeigt, obwohl nicht geladen wird."
+    ],
+    "Online-Assistent": [
+      "Problem behoben, dass die Datenverbrauchsrangliste gelegentlich nicht mehr reagiert"
     ]
   },
   "logs_fr": {
     "Système": [
       "Correctif de sécurité Android mis à jour"
+    ],
+    "Écran de verrouillage, Barre d'état, Panneau de notification": [
+      "Nouveau: Notifications de l'écran de verrouillage permanentes dans le mode DND",
+      "Correction du problème où « Charge rapide » s’affiche en mode TalkBack alors que l’appareil ne charge pas."
+    ],
+    "Assistant en ligne": [
+      "Correction du problème d'arrêt occasionnel du classement de consommation de données"
     ]
   },
   "logs_it": {
     "Sistema": [
       "Patch di sicurezza Android aggiornata"
+    ],
+    "Schermata di blocco, barra di stato, area delle notifiche": [
+      "Nuovo: Notifiche permanenti nella schermata di blocco in modalità Non Disturbare",
+      "Risolto il problema della notifica \"Ricarica rapida\" in modalità TalkBack quando non è in carica."
+    ],
+    "Assistente online": [
+      "Risolto il problema delle occasionali interruzioni della classifica del traffico dati"
     ]
   },
   "logs_es": {
     "Sistema": [
       "Parche de seguridad de Android actualizado"
+    ],
+    "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
+      "Nuevo: Notificaciones permanentes en la Pantalla de bloqueo en el Modo no molestar",
+      "Se corrige el problema por el que se muestra \"Carga rápida\" en modo TalkBack cuando no se está cargando."
+    ],
+    "Asistente de red": [
+      "Se corrige el problema de cierre ocasional del ranking de consumo de datos"
     ]
   },
   "logs_pt": {
     "Sistema": [
       "Patch de segurança do Android atualizado"
+    ],
+    "Tela de bloqueio, Barra de status e Área de notificações": [
+      "Novo: Notificações permanentes na Tela de bloqueio no modo Não perturbe",
+      "Corrigido o problema de \"Carregamento rápido\" aparecer no modo TalkBack quando não está carregando."
+    ],
+    "Assistente de Rede": [
+      "Corrigido o problema de parada ocasional do ranking de consumo de dados"
     ]
   },
   "logs_tr": {
     "Sistem": [
       "Android Güvenlik Yaması güncellendi"
+    ],
+    "Kilit ekranı, durum çubuğu, Bildirim çubuğu": [
+      "Yeni: Rahatsız Etme modunda kalıcı Kilit ekranı bildirimleri",
+      "TalkBack modunda şarj edilmiyorken \"Hızlı şarj\" uyarısı gösterilmesi sorunu düzeltildi."
+    ],
+    "Ağ Asistanı": [
+      "Veri kullanım sıralamasının ara sıra durması sorunu düzeltildi"
     ]
   },
   "logs_id": {
     "Sistem": [
       "Patch keamanan Android diperbarui"
+    ],
+    "Layar kunci, bar status, layar notifikasi": [
+      "Baru: Notifikasi Layar kunci permanen di mode Jangan ganggu",
+      "Memperbaiki masalah peringatan \"Pengisian cepat\" di mode TalkBack saat tidak sedang mengisi daya."
+    ],
+    "Pembantu Jaringan": [
+      "Memperbaiki masalah peringkat penggunaan data yang kadang-kadang berhenti"
     ]
   },
   "logs_vi": {
     "Hệ thống": [
       "Đã cập nhật bản vá bảo mật Android"
+    ],
+    "Màn hình khóa, thanh trạng thái, thanh thông báo": [
+      "Mới: Thông báo màn hình khóa vĩnh viễn đối với chế độ Không làm phiền",
+      "Đã sửa lỗi hiển thị \"Sạc nhanh\" trong chế độ TalkBack khi thiết bị không sạc."
+    ],
+    "Trợ lý mạng": [
+      "Sửa lỗi thứ hạng lưu lượng dữ liệu đôi khi bị dừng"
     ]
   },
   "logs_th": {
     "ระบบ": [
       "อัปเดตแพตช์ความปลอดภัย Android แล้ว"
+    ],
+    "หน้าจอล็อก, แถบสถานะ, แถบแจ้งเตือน": [
+      "ใหม่: การแจ้งเตือนหน้าจอล็อกแบบถาวรสำหรับโหมดห้ามรบกวน",
+      "แก้ไขปัญหาแสดง \"ชาร์จเร็ว\" ในโหมด TalkBack ขณะไม่ได้ชาร์จ"
+    ],
+    "ผู้ช่วยออนไลน์": [
+      "แก้ไขปัญหาการจัดอันดับการใช้ข้อมูลหยุดทำงานเป็นครั้งคราว"
     ]
   },
   "logs_ar": {
     "النظام": [
       "تم تحديث تصحيح أمان Android"
+    ],
+    "شاشة القفل، وشريط الإشعارات، ومركز الإشعارات": [
+      ":الجديد إشعار شاشة القفل الدائم لوضع عدم الازعاج",
+      "إصلاح مشكلة ظهور تنبيه \"الشحن السريع\" في وضع TalkBack أثناء عدم الشحن."
+    ],
+    "مساعد الإنترنت": [
+      "إصلاح مشكلة توقف ترتيب استخدام البيانات أحيانًا"
     ]
   },
   "logs_in": {
     "सिस्टम": [
       "Android सुरक्षा पैच अपडेट किया गया"
+    ],
+    "लॉक स्क्रीन, स्टेटस बार, नोटिफिकेशन शेड": [
+      "नया डीएनडी मोड के लिए स्थायी लॉक स्क्रीन सूचना",
+      "TalkBack मोड में चार्ज न होने पर \"तेज़ चार्जिंग\" संकेत दिखने की समस्या ठीक की गई।"
+    ],
+    "वर्चुअल असिस्टेंट": [
+      "डेटा उपयोग रैंकिंग के कभी-कभी बंद होने की समस्या ठीक की गई"
     ]
   },
   "logs_ug": {
     "سىستېما": [
       "Android بىخەتەرلىك ياماقى يېڭىلاندى"
+    ],
+    "Lockscreen, status bar, Notification shade": [
+      "يېڭىدىن قوشۇلدى: ئاۋارە قىلماسلىق ھالىتىدە قۇلۇپ ئېكرانىدا تۇرۇشلۇق ئۇقتۇرۇش",
+      "TalkBack ھالىتىدە توك قاچىلانمىغاندا \"تېز قاچىلاش\" ئەسكەرتىشى كۆرۈنۈش مەسىلىسى ئوڭشالدى."
     ]
   }
 }

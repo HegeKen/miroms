@@ -14,9 +14,9 @@
       "修复 私密文件夹中剪切图片视频后打开文件异常的问题"
     ],
     "录音机": [
-      "修复 暂停录音后无法及时更新到状态栏的问题"
+      "修复：当录音被暂停时，通知栏中的录音状态信息不会更新。"
     ],
-    "网络助手": [
+    "数据使用情况": [
       "新增 日租卡/无限流量卡模式，可设置大王卡、米粉卡、天神卡等套餐类型，流量校正更准确"
     ],
     "其他": [
@@ -38,9 +38,9 @@
       "Fix: Errors occured after videos from the folder with hidden files were edited"
     ],
     "Recorder": [
-      "Fix: Recording status wasn't updated in the Notification shade when a recording was paused"
+      "Fixed the issue where the status bar was not updated promptly after stopping the recording."
     ],
-    "Data Usage": [
+    "Online Assistant": [
       "New: More data plans available"
     ],
     "Other": [
@@ -57,15 +57,18 @@
     "解鎖畫面、狀態欄、通知欄": [
       "修復 螢幕鎖定時充電球與預計充電時間顯示重疊的問題"
     ],
+    "设置": [
+      "修復 設定手機名稱為最大長度，熱點無法開啟的問題"
+    ],
     "系統更新": [
       "新增 桌面捷徑功能，可在更新設定中開啟"
     ],
-    "檔案管理員": [
+    "文件管理器": [
       "修正 搜尋介面圖示顯示異常的問題",
       "修復 私密資料夾中剪切圖片影片後開啟檔案異常的問題"
     ],
-    "錄音機": [
-      "修復 暫停錄音後無法即時更新到狀態欄的問題"
+    "录音机": [
+      "修复了在暂停录音后，系统无法及时将录音状态更新到状态栏的问题。"
     ],
     "網路助手": [
       "新增 日租卡/無限流量卡模式，可設定大王卡、米粉卡、天神卡等套餐類型，流量校正更準確"
@@ -92,9 +95,9 @@
       "プライベートフォルダで画像や動画を切り取った後にファイルを開く際の異常を修正"
     ],
     "レコーダー": [
-      "修正: 録音を一時停止した際、通知シェードの録音状態が更新されない問題"
+      "録音を一時停止した後、ステータスバーの表示がすぐに更新されない問題を修正しました。"
     ],
-    "データ使用量": [
+    "ネットワークアシスタント": [
       "日租卡/無制限データカードモードを追加。大王卡・米粉卡・天神卡などのプランタイプを設定でき、通信量補正がより正確に。"
     ],
     "その他": [
@@ -118,10 +121,10 @@
       "검색 화면의 아이콘이 비정상적으로 표시되는 문제를 수정",
       "비공개 폴더에서 사진 및 동영상을 잘라낸 후 파일을 여는 오류를 수정"
     ],
-    "녹음기": [
-      "수정: 녹음을 일시중지했을 때 알림 창의 녹음 상태가 업데이트되지 않던 문제"
+    "레코더": [
+      "녹음을 일시 중단한 후 상태 표시줄에 즉시 업데이트되지 않는 문제를 수정했습니다."
     ],
-    "데이터 사용량": [
+    "네트워크 어시스턴트": [
       "일일 요금제/무제한 데이터 카드 모드 추가. 大王卡, 米粉卡, 天神卡 등 요금제 유형을 설정할 수 있어 데이터 보정이 더 정확해집니다."
     ],
     "기타": [
@@ -141,14 +144,14 @@
     "Обновление": [
       "Добавлено: функция ярлыка на главном экране. Можно включить в настройках обновления."
     ],
-    "Файловый менеджер": [
+    "Проводник файлов": [
       "Исправлена проблема с неправильным отображением значков на экране поиска",
       "Исправлена ошибка открытия файлов после вырезания изображений и видео в приватной папке"
     ],
     "Диктофон": [
-      "Fix: Факт остановки записи не отображался в строке состояния вовремя"
+      "Устранено недостаток, связанный с тем, что после приостановки записи информация не своевременно отображается в панели состояния."
     ],
-    "Трафик": [
+    "Интернет-ассистент": [
       "Добавлен режим дневной карты/карты безлимитного трафика. Можно настроить типы тарифов, такие как 大王卡, 米粉卡 и 天神卡; коррекция трафика стала точнее."
     ],
     "Другое": [
@@ -156,6 +159,9 @@
     ],
     "Экран блокировки, строка состояния, панель уведомлений": [
       "Исправлено наложение индикатора зарядки и предполагаемого времени зарядки на экране блокировки"
+    ],
+    "Файловый менеджер": [
+      "Исправлена ошибка открытия файлов после вырезания изображений и видео в приватной папке"
     ]
   },
   "logs_uk": {
@@ -168,14 +174,14 @@
     "Оновлення": [
       "Додано: функція ярлика на головному екрані. Можна ввімкнути в налаштуваннях оновлення."
     ],
-    "Файловий менеджер": [
+    "Провідник файлів": [
       "Виправлено проблему з неправильним відображенням значків на екрані пошуку",
       "Виправлено помилку відкриття файлів після вирізання зображень і відео в приватній папці"
     ],
     "Диктофон": [
-      "Виправлено: стан запису не оновлювався в панелі сповіщень під час паузи запису"
+      "Виправлено проблему, коли після призупинення запису інформація не вчасно оновлюється у панелі стану."
     ],
-    "Передача даних": [
+    "Інтернет-асистент": [
       "Додано режим денної картки/картки безлімітного трафіку. Можна налаштувати типи тарифів, як-от 大王卡, 米粉卡 і 天神卡; коригування трафіку стало точнішим."
     ],
     "Інше": [
@@ -183,6 +189,9 @@
     ],
     "Екран блокування, рядок стану, панель сповіщень": [
       "Виправлено накладання індикатора заряджання та орієнтовного часу заряджання на екрані блокування"
+    ],
+    "Файловий менеджер": [
+      "Виправлено помилку відкриття файлів після вирізання зображень і відео в приватній папці"
     ]
   },
   "logs_pl": {
@@ -199,13 +208,13 @@
       "Naprawiono problem z nieprawidłowym wyświetlaniem ikon na ekranie wyszukiwania",
       "Naprawiono błąd otwierania plików po wycięciu zdjęć i filmów w folderze prywatnym"
     ],
-    "Rejestrator": [
-      "Poprawka: stan nagrywania nie był aktualizowany na pasku powiadomień po wstrzymaniu nagrywania"
+    "Kaseta nagrywająca": [
+      "Poprawiono problem z niewłaściwym aktualizowaniem stanu w pasku stanu po przywołaniu funkcji przerywania nagrywania."
     ],
-    "Użycie danych": [
+    "Asystent online": [
       "Dodano tryb karty dziennej/karty z nielimitowanym transferem. Można ustawić typy planów, takie jak 大王卡, 米粉卡 i 天神卡; korekcja danych jest dokładniejsza."
     ],
-    "Inne": [
+    "Reszt": [
       "Większe bezpieczeństwo i stabilność systemu"
     ],
     "Ekran blokady, pasek stanu, panel powiadomień": [
@@ -226,10 +235,10 @@
       "Problem mit der fehlerhaften Anzeige von Symbolen auf dem Suchbildschirm behoben",
       "Fehler beim Öffnen von Dateien nach dem Ausschneiden von Bildern und Videos im privaten Ordner behoben"
     ],
-    "Rekorder": [
-      "Behoben: Der Aufnahmestatus wurde in der Benachrichtigungsleiste nicht aktualisiert, wenn eine Aufnahme pausiert wurde"
+    "Tonaufnahmegerät": [
+      "Behebung des Problems, dass sich der Status nach einer Unterbrechung der Aufnahmefunktion nicht rechtzeitig in der Statusleiste aktualisiert."
     ],
-    "Datennutzung": [
+    "Online-Assistent": [
       "Neu: Modus für Tageskarte/Unlimited-Datenkarte. Tariftypen wie 大王卡, 米粉卡 und 天神卡 können eingestellt werden; Datenkorrektur ist genauer."
     ],
     "Sonstiges": [
@@ -254,9 +263,9 @@
       "Correction du problème d'ouverture des fichiers après avoir coupé des images et vidéos dans le dossier privé"
     ],
     "Enregistreur": [
-      "Correction : l’état d’enregistrement n’était pas mis à jour dans la barre de notifications lors d’une pause"
+      "Résolution du problème : l'actualisation de l'état dans la barre d'état ne se fait pas immédiatement après l'arrêt de l'enregistrement."
     ],
-    "Utilisation des données": [
+    "Assistant en ligne": [
       "Nouveau : mode carte journalière/carte data illimitée. Types de forfaits comme 大王卡, 米粉卡 et 天神卡 configurables ; calibration des données plus précise."
     ],
     "Autre": [
@@ -276,14 +285,14 @@
     "Aggiornamenti": [
       "Novità: funzione di scorciatoia nella schermata Home. Si può attivare nelle impostazioni di aggiornamento."
     ],
-    "Gestione file": [
+    "File Manager": [
       "Risolto il problema di visualizzazione errata delle icone nella schermata di ricerca",
       "Risolto il problema di apertura dei file dopo il taglio di immagini e video nella cartella privata"
     ],
     "Registratore": [
-      "Correzione: lo stato di registrazione non veniva aggiornato nella barra delle notifiche quando una registrazione veniva messa in pausa"
+      "Risolto il problema per cui, dopo aver interrotto la registrazione, lo stato della registrazione non veniva aggiornato tempestivamente nella barra di stato."
     ],
-    "Utilizzo dei dati": [
+    "Assistente online": [
       "Nuovo: modalità scheda giornaliera/scheda dati illimitati. È possibile impostare tipi di piano come 大王卡, 米粉卡 e 天神卡; calibrazione dati più precisa."
     ],
     "Altro": [
@@ -300,7 +309,7 @@
     "Pantalla de bloqueo, barra de estado, barra de notificaciones": [
       "Se corrige la superposición entre el indicador de carga y el tiempo estimado de carga en la pantalla de bloqueo"
     ],
-    "Ajustes": [
+    "Configuración": [
       "Reparado: No se pudo activar el punto de acceso portátil cuando el nombre del dispositivo fue establecido a la máxima longitud"
     ],
     "Actualizador": [
@@ -311,9 +320,9 @@
       "Se corrigió el problema de apertura de archivos tras cortar imágenes y vídeos en la carpeta privada"
     ],
     "Grabadora": [
-      "Corrección: El estado de grabación no se actualizaba en la barra de notificaciones al pausar una grabación"
+      "Se ha corregido el problema de que, después de detener la grabación, no se actualiza a tiempo la información en la barra de estado."
     ],
-    "Uso de datos": [
+    "Asistente de red": [
       "Nuevo: modo tarjeta diaria/tarjeta de datos ilimitados. Se pueden configurar tipos de plan como 大王卡, 米粉卡 y 天神卡; calibración de datos más precisa."
     ],
     "Otros": [
@@ -338,9 +347,9 @@
       "Corrigido o problema de abertura de arquivos após recortar imagens e vídeos na pasta privada"
     ],
     "Gravador": [
-      "Correção: o estado da gravação não era atualizado na barra de notificações ao pausar uma gravação"
+      "Corrigir o problema de não ser possível atualizar a barra de estado de forma imediata após interromper a gravação."
     ],
-    "Uso de dados": [
+    "Assistente de Rede": [
       "Novo: modo cartão diário/cartão de dados ilimitados. É possível definir tipos de plano como 大王卡, 米粉卡 e 天神卡; calibração de dados mais precisa."
     ],
     "Outros": [
@@ -365,9 +374,9 @@
       "Gizli klasördeki görselleri ve videoları kestikten sonra dosyaların açılması sorunu düzeltildi"
     ],
     "Kayıt Cihazı": [
-      "Düzeltme: Kayıt duraklatıldığında kayıt durumu bildirim çubuğunda güncellenmiyordu"
+      "Kaydı durdurduktan sonra durum çubuğunda zamanında güncelleme yapılamaması sorununu düzelttik."
     ],
-    "Veri kullanımı": [
+    "Ağ Asistanı": [
       "Yeni: Günlük kart/sınırsız veri kartı modu. 大王卡, 米粉卡, 天神卡 gibi paket türleri ayarlanabilir; veri kalibrasyonu daha doğru."
     ],
     "Diğer": [
@@ -387,14 +396,14 @@
     "Pembaruan sistem": [
       "Baru: Fitur pintasan layar Utama. Dapat diaktifkan di pengaturan pembaruan."
     ],
-    "Pengelola File": [
+    "File Manager": [
       "Memperbaiki masalah ikon yang ditampilkan secara tidak normal di layar pencarian",
       "Memperbaiki masalah pembukaan file setelah memotong gambar dan video di folder privat"
     ],
     "Perekam": [
-      "Perbaikan: Status perekaman tidak diperbarui di bilah notifikasi saat perekaman dijeda"
+      "Memperbaiki masalah di mana status rekaman tidak diperbarui secara tepat waktu setelah proses pemberhentian rekaman dilakukan."
     ],
-    "Penggunaan data": [
+    "Pembantu Jaringan": [
       "Baru: Mode kartu harian/kartu data tak terbatas. Jenis paket seperti 大王卡, 米粉卡, dan 天神卡 dapat diatur; kalibrasi data lebih akurat."
     ],
     "Lainnya": [
@@ -422,9 +431,9 @@
       "Đã sửa lỗi mở tệp sau khi cắt ảnh và video trong thư mục riêng tư"
     ],
     "Máy ghi âm": [
-      "Đã sửa: Trạng thái ghi âm không được cập nhật kịp thời trên thanh thông báo khi tạm dừng ghi âm"
+      "Khắc phục sự cố khi tạm dừng quá trình ghi âm không thể cập nhật kịp thời thông tin vào thanh trạng thái."
     ],
-    "Sử dụng dữ liệu": [
+    "Trợ lý mạng": [
       "Mới: Chế độ thẻ ngày/thẻ dữ liệu không giới hạn. Có thể đặt loại gói như 大王卡, 米粉卡, 天神卡; hiệu chỉnh dữ liệu chính xác hơn."
     ],
     "Khác": [
@@ -449,9 +458,9 @@
       "แก้ไขปัญหาการเปิดไฟล์ผิดปกติหลังจากตัดรูปภาพและวิดีโอในโฟลเดอร์ส่วนตัว"
     ],
     "เครื่องบันทึกเสียง": [
-      "แก้ไข: สถานะการบันทึกเสียงไม่ได้รับการอัปเดตในแถบการแจ้งเตือนเมื่อหยุดการบันทึกชั่วคราว"
+      "แก้ไขปัญหาที่การหยุดบันทึกเสียงไม่สามารถอัปเดตสถานะในแถบสถานะ (status bar) ได้อย่างทันท่วงที"
     ],
-    "การใช้ข้อมูล": [
+    "ผู้ช่วยออนไลน์": [
       "เพิ่มโหมดการ์ดรายวัน/การ์ดข้อมูลไม่จำกัด ตั้งค่าประเภทแพ็กเกจ เช่น 大王卡, 米粉卡, 天神卡 ได้ การปรับเทียบข้อมูลแม่นยำขึ้น"
     ],
     "อื่นๆ": [
@@ -475,13 +484,13 @@
       "إصلاح مشكلة عرض الأيقونات بشكل غير طبيعي في شاشة البحث",
       "إصلاح مشكلة فتح الملفات بشكل غير طبيعي بعد قص الصور ومقاطع الفيديو في المجلد الخاص"
     ],
-    "مسجل": [
-      "إصلاح: لم يتم تحديث حالة التسجيل في شريط الإشعارات عند إيقاف التسجيل مؤقتًا"
+    "جهاز التسجيل": [
+      "تم إصلاح المشكلة التي تمنع تحديث حالة الجهاز بشكل فوري بعد توقف عملية التسجيل."
     ],
-    "استخدام البيانات": [
+    "مساعد الإنترنت": [
       "جديد: وضع بطاقة يومية/بطاقة بيانات غير محدودة. يمكن ضبط أنواع الباقات مثل 大王卡 و米粉卡 و天神卡؛ تصحيح البيانات أكثر دقة."
     ],
-    "أخرى": [
+    "آخرين": [
       "تحسين أمن واستقرار النظام"
     ],
     "شاشة القفل، شريط الحالة، لوحة الإشعارات": [
@@ -503,9 +512,9 @@
       "निजी फ़ोल्डर में छवियों और वीडियो को काटने के बाद फ़ाइलें खोलने की समस्या ठीक की गई"
     ],
     "रिकॉर्डर": [
-      "समस्या ठीक की गई: रिकॉर्डिंग पॉज़ करने पर नोटिफ़िकेशन शेड में स्थिति तुरंत अपडेट नहीं होती थी"
+      "वह समस्या दूर की गई है जिसके कारण रिकॉर्डिंग रोकने के बाद स्टेट बार (Status Bar) में समय पर अपडेट नहीं हो पाता था।"
     ],
-    "डेटा उपयोग": [
+    "वर्चुअल असिस्टेंट": [
       "नया: दैनिक कार्ड/असीमित डेटा कार्ड मोड। 大王卡, 米粉卡, 天神卡 जैसे प्लान प्रकार सेट किए जा सकते हैं; डेटा कैलिब्रेशन अधिक सटीक।"
     ],
     "अन्य": [
@@ -516,25 +525,38 @@
     ]
   },
   "logs_ug": {
+    "قۇلۇپ ئېكرانى، ھالەت بالدىقى، ئۇقتۇرۇش بالدىقى": [
+      "قۇلۇپ ئېكرانىدا زەرەتلەش شارى بىلەن مۆلچەرلەنگەن زەرەتلەش ۋاقتىنىڭ كۆرسىتىلىشى ئۈستى-ئۈستى چۈشۈپ قېلىش مەسىلىسىنى تۈزەتتى."
+    ],
     "تەڭشەك": [
       "ئوڭشاش: ئۈسكۈنىنىڭ نامى ئەڭ چوڭ ئۇزۇنلۇققا تەڭشەلگەندە كۆچمە ھوتسپوتنى ئاچقىلى بولمىدى"
     ],
     "Updater": [
       "يېڭى: باش ئېكران تېز يوللانمىسى ئىقتىدارى. يېڭىلاش تەڭشەكلىرىدە قوزغىتىشقا بولىدۇ."
     ],
-    "ئاۋاز ئالغۇ": [
-      "ئۈن ئېلىش توختىتىلغاندىن كېيىن ئۇقتۇرۇش تاختىسىدا ھالەت ۋاقتىدا يېڭىلانماسلىق مەسىلىسى تۈزىتىلدى"
+    "ھۆججەت باشقۇرغۇچ": [
+      "ئىزدەش كۆرۈنمە يۈزىدىكى سىنبەلگىلەرنىڭ خاتا كۆرۈنۈش مەسىلىسى تۈزىتىلدى.",
+      "شەخسىي قىسقۇچتىكى رەسىم ۋە سىنلارنى كېسكەندىن كېيىن ھۆججەتنى ئېچىشتىكى كاشىلا ئوڭشالدى"
+    ],
+    "ئۈن خاتىرىلەش ماشىنىسى": [
+      "ئۈن ئالماشتۇرۇشنى توختاتقاندىن كېيىن ، ھالەت سترېكچىسىگە (status bar) ئۆزۋاقتىدا يېڭىلاش مۇمكىن بولماسلىق مەسىلىسىنى تۈزى دۇق."
     ],
     "باشقىلىرى": [
       "Improved system security and stability"
+    ],
+    "Lockscreen, Status Bar, Notification Bar": [
+      "قۇلۇپ ئېكرانىدا زەرەتلەش شارى بىلەن مۆلچەرلەنگەن زەرەتلەش ۋاقتىنىڭ كۆرسىتىلىشى ئۈستى-ئۈستى چۈشۈپ قېلىش مەسىلىسىنى تۈزەتتى."
     ]
   },
   "logs_bo": {
     "སྒྲིག་སྟངས།": [
       "Fix: Couldn't turn on portable hotspot when device name was set to maximum length"
     ],
+    "Updater": [
+      "གསར་བསྣན། ཅོག་ངོས་མགྱོགས་ལམ་གྱི་ཁྱད་ཆོས་དེ་གསར་སྒྱུར་སྒྲིག་བཀོད་ནང་ཁ་ཕྱེ་ཆོག"
+    ],
     "སྒྲ་འཇུག་ཆས": [
-      "སྒྲ་ཕབ་མཚམས་འཇོག་བྱས་རྗེས་གནས་ཚུལ་ཕྲེང་ལ་དུས་ཐོག་ཏུ་གསར་སྒྱུར་མི་ཐུབ་པའི་གནད་དོན་བཅོས་ཡོད།"
+      "ཡིག་སྒྲོན་གྱི་རྣམ་པར་བཟོ་བཅོས་བརྒྱབ་རྗེས་སྒྲ་ཕབ་མཚམས་འཇོག་བྱས་ན་དུས་ཐོག་ཏུ་གསར་སྒྱུར་བྱེད་མི་ཐུབ་པའི་གནད་དོན་ཐག་གཅོད།"
     ],
     "གཞན།": [
       "Improved system security and stability"

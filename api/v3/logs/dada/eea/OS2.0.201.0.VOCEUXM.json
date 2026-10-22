@@ -42,7 +42,7 @@
       "修复 打开/关闭应用动画显示异常问题",
       "合入2025年6月安全补丁，增强系统安全"
     ],
-    "桌面": [
+    "主屏幕": [
       "新增 桌面图标文字在壁纸浅色区域显示阴影效果"
     ],
     "設定": [
@@ -51,7 +51,14 @@
   },
   "logs_en": {
     "System": [
-      "Updated the security patch to June 2025. Increased system security."
+      "Updated the security patch to June 2025. Increased system security.",
+      "New: Home screen wallpaper now supports a blur effect",
+      "Optimization: Immersive effect for full screen indicator in certain scenarios",
+      "Optimization: Updated styles for some classic pages",
+      "Optimization: Animation effects when launching apps",
+      "Optimization: Scrolling performance on content feeds in some third party apps",
+      "Fix: Gestures didn't work properly in certain scenarios",
+      "Fix: Issues with animations when opening or closing apps"
     ],
     "Accessibility": [
       "Fix: Touch gestures stopped working in TalkBack mode",
@@ -79,7 +86,7 @@
     "Settings": [
       "Optimization: Added a shortcut to system navigation settings in Home screen settings"
     ],
-    "Home screen": [
+    "desktop": [
       "New: Home screen icon text now displays shadows over light wallpaper areas for better readability"
     ],
     "status bar, Notification shade": [
@@ -298,6 +305,12 @@
     ],
     "Налаштування": [
       "Оптимізація: Додано ярлик до «Способів навігації» в «Налаштуваннях робочого столу»"
+    ],
+    "Рядок стану, панель сповіщень": [
+      "Нове: Деякі піктограми в рядку стану тепер підтримують користувацьке відображення",
+      "Оптимізація: Спеціальні сповіщення тепер підтримують розгортання",
+      "Оптимізація: Піктограма HD-сигналу більше не відображається постійно в рядку стану",
+      "Оптимізація: Піктограма HD не відображатиметься під час використання власної назви оператора"
     ]
   },
   "logs_pl": {
@@ -364,6 +377,11 @@
       "Behoben: Probleme, die verhinderten, dass der Rekorder TalkBack-Audio aufzeichnet",
       "Behoben: Probleme mit Ansagen für nicht ausgewählte Elemente in Kalender und anderen Apps",
       "Behoben: In mehreren Apps wurden einige Schaltflächen nicht angesagt, darunter Einstellungen, Kontrollzentrum, Nachrichten, Kontakte, Wetter, Notizen und Browser"
+    ],
+    "Systemanimationen": [
+      "Optimierung: Unterbrechungsanimation beim Öffnen von Unterseiten in Apps",
+      "Optimierung: Unterbrechungsanimation bei App-Übergängen",
+      "Optimierung: Unterbrechungsanimation beim Schließen von Apps im Querformat"
     ],
     "Sperrbildschirm": [
       "Neu: Sperrbildschirm-Vorlagen im östlichen Stil",
@@ -707,6 +725,12 @@
     ],
     "Cài đặt": [
       "Tối ưu: Đã thêm lối tắt vào cài đặt điều hướng hệ thống trong cài đặt Màn hình chính"
+    ],
+    "Thanh trạng thái, thanh thông báo": [
+      "Mới: Một số biểu tượng thanh trạng thái hiện hỗ trợ hiển thị tùy chỉnh",
+      "Tối ưu: Thông báo tùy chỉnh hiện hỗ trợ mở rộng",
+      "Tối ưu: Biểu tượng tín hiệu HD không còn hiển thị cố định trên thanh trạng thái",
+      "Tối ưu: Biểu tượng HD sẽ không hiển thị khi sử dụng tên nhà cung cấp tùy chỉnh"
     ]
   },
   "logs_th": {
@@ -748,6 +772,12 @@
     ],
     "การตั้งค่า": [
       "การเพิ่มประสิทธิภาพ: เพิ่มทางลัดไปยังการตั้งค่าการนำทางระบบในการตั้งค่าหน้าจอหลัก"
+    ],
+    "แถบสถานะ, แผงการแจ้งเตือน": [
+      "ใหม่: ไอคอนแถบสถานะบางรายการรองรับการแสดงผลแบบกำหนดเองแล้ว",
+      "การเพิ่มประสิทธิภาพ: การแจ้งเตือนแบบกำหนดเองรองรับการกางออกแล้ว",
+      "การเพิ่มประสิทธิภาพ: ไอคอนสัญญาณ HD จะไม่แสดงถาวรในแถบสถานะอีกต่อไป",
+      "การเพิ่มประสิทธิภาพ: ไอคอน HD จะไม่แสดงเมื่อใช้ชื่อผู้ให้บริการเครือข่ายแบบกำหนดเอง"
     ]
   },
   "logs_ar": {
@@ -862,6 +892,11 @@
       "Fix: Issues with announcements for unselected items in Calendar and other apps",
       "Fix: Some buttons weren't announced in several apps, including Settings, Control center, Messaging, Contacts, Weather, Notes, and Browser"
     ],
+    "System animations": [
+      "Optimization: Interrupt animation when entering subpages within apps",
+      "Optimization: Interrupt animation during app transitions",
+      "Optimization: Interrupt animation when closing apps in Landscape mode"
+    ],
     "Lock screen": [
       "New: Eastern aesthetics lock screen templates",
       "New: Lock screen wallpapers now support lens effect",
@@ -876,7 +911,7 @@
     "Settings": [
       "Optimization: Added a shortcut to system navigation settings in Home screen settings"
     ],
-    "باش ئېكران": [
+    "ئۈستەل يۈزى": [
       "New: Home screen icon text now displays shadows over light wallpaper areas for better readability"
     ],
     "تەڭشەكلەر": [
@@ -901,6 +936,11 @@
       "Fix: Issues with announcements for unselected items in Calendar and other apps",
       "Fix: Some buttons weren't announced in several apps, including Settings, Control center, Messaging, Contacts, Weather, Notes, and Browser"
     ],
+    "System animations": [
+      "Optimization: Interrupt animation when entering subpages within apps",
+      "Optimization: Interrupt animation during app transitions",
+      "Optimization: Interrupt animation when closing apps in Landscape mode"
+    ],
     "Lock screen": [
       "New: Eastern aesthetics lock screen templates",
       "New: Lock screen wallpapers now support lens effect",
@@ -915,7 +955,7 @@
     "Settings": [
       "Optimization: Added a shortcut to system navigation settings in Home screen settings"
     ],
-    "Home screen": [
+    "ཅོག་ངོས": [
       "New: Home screen icon text now displays shadows over light wallpaper areas for better readability"
     ],
     "སྒྲིག་བཀོད": [

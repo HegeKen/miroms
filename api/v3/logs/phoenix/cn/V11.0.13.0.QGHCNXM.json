@@ -11,7 +11,7 @@
       "修复: 修复WiFi 偶现打不开问题",
       "修复 部分场景下无法开启 Wi-Fi 的问题"
     ],
-    "网络助手": [
+    "数据使用情况": [
       "修复 流量超额弹窗重复出现的问题"
     ],
     "安全中心": [
@@ -25,16 +25,19 @@
     "System": [
       "Updated Android Security Patch to January 2020. Increased system security."
     ],
-    "Data Usage": [
+    "Settings": [
+      "New: Device categories with Mi Link support",
+      "Fix: Couldn't find Wi-Fi networks in some cases",
+      "Fixed an occasional WiFi connection failure issue",
+      "Fixed an issue where Wi-Fi occasionally could not be turned on",
+      "Fix: Couldn't turn on Wi-Fi in some cases",
+      "Fixed the issue where Wi-Fi could not be enabled in some scenarios"
+    ],
+    "Online Assistant": [
       "Fix: Data usage warning appeared multiple times"
     ],
     "Security": [
       "Fix: Red envelope assistant didn't appear in Second space"
-    ],
-    "Settings": [
-      "New: Device categories with Mi Link support",
-      "Fix: Couldn't find Wi-Fi networks in some cases",
-      "Fix: Couldn't turn on Wi-Fi in some cases"
     ],
     "Other": [
       "Improved system security and stability"
@@ -43,6 +46,13 @@
   "logs_zh_tw": {
     "系統": [
       "更新Android安全性修補程式等級（2020#01），提升系統安全性"
+    ],
+    "设置": [
+      "新增: 小米快連功能支援的設備類型",
+      "修復: 修復WiFi 偶現掃描失敗問題",
+      "修復 WiFi 偶現無法連線的問題",
+      "修復WiFi偶現無法開啟的問題",
+      "修復 部分場景下無法開啟 Wi-Fi 的問題"
     ],
     "網路助手": [
       "修復: 流量超額彈窗重複出現的問題"
@@ -63,29 +73,41 @@
     "システム": [
       "Androidセキュリティパッチを2020年1月に更新し、システムセキュリティを強化しました。"
     ],
-    "データ使用量": [
-      "修正: データ使用量の警告が複数回表示される問題"
-    ],
-    "その他": [
-      "システムのセキュリティと安定性の向上"
-    ],
     "設定": [
       "新機能: Mi リンクをサポートするデバイスカテゴリー",
       "修正: Wi-Fiネットワークが見つからない場合がある問題",
+      "WiFiに接続できないことがある問題を修正",
+      "Wi-Fiが時々オンにできない問題を修正",
+      "修正: Wi-Fiが時々オンにできない問題を修正",
       "修正: Wi-Fiをオンにできない場合がある問題"
+    ],
+    "ネットワークアシスタント": [
+      "修正: データ使用量の警告が複数回表示される問題"
+    ],
+    "セキュリティ": [
+      "修正: Red envelope assistant がセカンドスペースでフローティングウィンドウを表示しない問題"
+    ],
+    "その他": [
+      "システムのセキュリティと安定性の向上"
     ]
   },
   "logs_ko": {
     "시스템": [
       "Android 보안패치 (2020#01) 업데이트됨. 시스템 보안이 향상되었습니다."
     ],
-    "데이터 사용량": [
-      "수정: 데이터 사용량 경고가 중복해서 출현하는 현상"
-    ],
     "설정": [
       "New: Mi 링크 기능에 기기 카테고리 지원",
       "수정: 일부 Wi-Fi 네트워크를 찾을 수 없는 문제",
-      "수정: 일부 Wi-Fi를 실행할 수 없는 문제"
+      "WiFi 연결이 간헐적으로 되지 않는 문제 수정",
+      "Wi-Fi가 간헐적으로 켜지지 않는 문제를 수정",
+      "수정: 일부 Wi-Fi를 실행할 수 없는 문제",
+      "일부 상황에서 Wi-Fi를 켤 수 없는 문제를 수정했습니다"
+    ],
+    "네트워크 어시스턴트": [
+      "수정: 데이터 사용량 경고가 중복해서 출현하는 현상"
+    ],
+    "보안": [
+      "수정: 홍바오 도우미가 세컨드 스페이스에서 플로팅 창을 표시하지 않는 문제"
     ],
     "기타": [
       "시스템 보안 및 안정성 개선"
@@ -95,13 +117,19 @@
     "Система": [
       "Обновление системы безопасности Android (январь 2020 года). Улучшена безопасность системы."
     ],
-    "Трафик": [
-      "Исправлено: Предупреждение об использовании данных могло появляться несколько раз"
-    ],
     "Настройки": [
       "Новое: Категории устройств с поддержкой Mi Link",
       "Исправлено: В некоторых случаях не удавалось обнаружить сети Wi-Fi",
-      "Исправлено: В некоторых случаях не удавалось включить Wi-Fi"
+      "Исправлена проблема с периодическим отсутствием подключения к WiFi",
+      "Исправлена проблема, из-за которой Wi-Fi иногда не включался",
+      "Исправлено: В некоторых случаях не удавалось включить Wi-Fi",
+      "Исправлена проблема, из-за которой в некоторых сценариях не удавалось включить Wi-Fi"
+    ],
+    "Интернет-ассистент": [
+      "Исправлено: Предупреждение об использовании данных могло появляться несколько раз"
+    ],
+    "Безопасность": [
+      "Исправлено: помощник красных конвертов не показывает плавающее окно во Втором пространстве."
     ],
     "Другое": [
       "Улучшение безопасности и стабильности системы"
@@ -111,13 +139,19 @@
     "Система": [
       "Оновлено патч безпеки Android за січень 2020 року. Збільшено безпеку системи."
     ],
-    "Передача даних": [
-      "Виправлено: Попередження про використання даних могло з'являтися декілька разів"
-    ],
     "Налаштування": [
       "Нове: Категорії пристроїв з підтримкою Mi Link",
       "Виправлено: В деяких випадках не вдавалося знайти мережі Wi-Fi",
-      "Виправлено: В деяких випадках не вдавалося увімкнути Wi-Fi"
+      "Виправлено проблему з періодичною неможливістю підключення до WiFi",
+      "Виправлено проблему, через яку Wi-Fi іноді не вмикався",
+      "Виправлено: В деяких випадках не вдавалося увімкнути Wi-Fi",
+      "Виправлено проблему, через яку в деяких сценаріях не вдавалося ввімкнути Wi-Fi"
+    ],
+    "Інтернет-асистент": [
+      "Виправлено: Попередження про використання даних могло з'являтися декілька разів"
+    ],
+    "Безпека": [
+      "Виправлено: помічник червоних конвертів не показує плаваюче вікно у Другому просторі."
     ],
     "Інше": [
       "Покращення безпеки та стабільності системи"
@@ -127,15 +161,21 @@
     "System": [
       "Zaktualizowano Pakiet Bezpieczeństwa Android do stycznia 2020 r. Zwiększono bezpieczeństwo systemu."
     ],
-    "Użycie danych": [
-      "Naprawiono: Ostrzeżenie o zużyciu danych pojawiło się wiele razy"
-    ],
     "Ustawienia": [
       "Nowe: Kategorie urządzeń z obsługą Mi Link",
       "Naprawiono: Nie udało się znaleźć sieci Wi-Fi w niektórych przypadkach",
-      "Naprawiono: Nie udało się włączyć sieci Wi-Fi w niektórych przypadkach"
+      "Naprawiono problem z okazjonalnym brakiem połączenia z WiFi",
+      "Naprawiono problem, przez który Wi-Fi czasami nie włączał się",
+      "Naprawiono: Nie udało się włączyć sieci Wi-Fi w niektórych przypadkach",
+      "Naprawiono problem z włączaniem Wi-Fi w niektórych scenariuszach"
     ],
-    "Inne": [
+    "Asystent online": [
+      "Naprawiono: Ostrzeżenie o zużyciu danych pojawiło się wiele razy"
+    ],
+    "Bezpieczeństwo": [
+      "Naprawiono: asystent czerwonych kopert nie wyświetla okna pływającego w Drugiej przestrzeni."
+    ],
+    "Reszt": [
       "Większe bezpieczeństwo i stabilność systemu"
     ]
   },
@@ -143,8 +183,19 @@
     "System": [
       "Android-Sicherheitspatch auf Januar 2020 aktualisiert. Systemsicherheit erhöht."
     ],
-    "Datennutzung": [
+    "Einstellungen": [
+      "Neu: Gerätekategorien mit Mi-Link-Unterstützung",
+      "Behoben: Wi-Fi-Netzwerke wurden in einigen Fällen nicht gefunden",
+      "Gelegentliche WiFi-Verbindungsprobleme behoben",
+      "Problem behoben, bei dem WLAN gelegentlich nicht eingeschaltet werden konnte",
+      "Behoben: WLAN ließ sich gelegentlich nicht einschalten",
+      "Problem behoben, bei dem Wi-Fi in einigen Szenarien nicht aktiviert werden konnte"
+    ],
+    "Online-Assistent": [
       "Behoben: Warnung zur Datennutzung erschien mehrfach"
+    ],
+    "Sicherheit": [
+      "Behoben: Roter-Umschlag-Assistent zeigt im Zweiten Bereich kein schwebendes Fenster an."
     ],
     "Sonstiges": [
       "Systemsicherheit und -stabilität verbessert"
@@ -154,13 +205,19 @@
     "Système": [
       "Patch de Sécurité Android mit à jour pour janvier 2020. Système de sécurité amélioré."
     ],
-    "Utilisation des données": [
-      "Réparé: L'avertissement concernant l'utilisation des données est apparu plusieurs fois"
-    ],
     "Paramètres": [
       "Nouveau: Les catégories de l'appareil avec prise en charge de Mi Link",
       "Réparé: Impossible de trouver les réseaux Wi-Fi dans certains cas",
-      "Réparé: Impossible d'activer le Wi-Fi dans certains cas"
+      "Correction d'un problème intermittent de connexion WiFi",
+      "Correction d’un problème où le Wi-Fi ne pouvait parfois pas s’activer",
+      "Réparé: Impossible d'activer le Wi-Fi dans certains cas",
+      "Correction du problème empêchant l'activation du Wi-Fi dans certains cas"
+    ],
+    "Assistant en ligne": [
+      "Réparé: L'avertissement concernant l'utilisation des données est apparu plusieurs fois"
+    ],
+    "Sécurité": [
+      "Correction : l’assistant d’enveloppe rouge n’affiche pas de fenêtre flottante dans le Second espace."
     ],
     "Autre": [
       "Sécurité et stabilité du système améliorées"
@@ -170,13 +227,19 @@
     "Sistema": [
       "Patch di sicurezza Android aggiornata a gennaio 2020. Maggiore sicurezza del sistema."
     ],
-    "Utilizzo dei dati": [
-      "Risolto: L'avviso sull'utilizzo dei dati appariva più volte"
-    ],
     "Impostazioni": [
       "Nuovo: Categorie di dispositivi con supporto per Mi Link",
       "Risolto: Impossibile trovare le reti Wi-Fi in alcuni casi",
-      "Risolto: Impossibile attivare il Wi-Fi in alcuni casi"
+      "Risolto un problema intermittente di connessione WiFi",
+      "Risolto un problema per cui il Wi-Fi a volte non si attivava",
+      "Risolto: Impossibile attivare il Wi-Fi in alcuni casi",
+      "Risolto il problema che impediva di attivare il Wi-Fi in alcune situazioni"
+    ],
+    "Assistente online": [
+      "Risolto: L'avviso sull'utilizzo dei dati appariva più volte"
+    ],
+    "Sicurezza": [
+      "Corretto: l’assistente busta rossa non mostra la finestra flottante nel Secondo spazio."
     ],
     "Altro": [
       "Maggiore sicurezza e stabilità di sistema"
@@ -186,8 +249,18 @@
     "Sistema": [
       "Parche de seguridad de Android actualizado a enero de 2020. Seguridad del sistema incrementada."
     ],
-    "Uso de datos": [
+    "Configuración": [
+      "Nuevo: Categorías de dispositivos con soporte de Mi Link",
+      "Reparado: En algunos casos no se podía encontrar redes Wi-Fi",
+      "Se corrigió un problema ocasional de conexión WiFi",
+      "Se corrigió un problema por el que el Wi-Fi a veces no se podía activar",
+      "Se ha corregido el problema que impedía activar Wi-Fi en algunas situaciones"
+    ],
+    "Asistente de red": [
       "Reparado: El aviso de uso de datos aparecía varias veces"
+    ],
+    "Seguridad": [
+      "Corregido: el asistente de sobres rojos no muestra la ventana flotante en el Segundo espacio."
     ],
     "Ajustes": [
       "Nuevo: Categorías de dispositivos con soporte de Mi Link",
@@ -202,13 +275,19 @@
     "Sistema": [
       "Patch de Segurança do Android atualizado para Janeiro de 2020. Segurança do sistema aprimorada."
     ],
-    "Uso de dados": [
-      "Correção: O alerta de uso de dados aparecia várias vezes"
-    ],
     "Configurações": [
       "Novo: Categorias de dispositivo com suporte ao Mi Link",
       "Correção: Não era possível encontrar redes Wi-Fi em alguns casos",
-      "Correção: Não era possível ativar o Wi-Fi em alguns casos"
+      "Corrigido problema ocasional de conexão WiFi",
+      "Corrigido um problema em que o Wi-Fi às vezes não ativava",
+      "Correção: Não era possível ativar o Wi-Fi em alguns casos",
+      "Corrigido o problema que impedia ativar o Wi-Fi em algumas situações"
+    ],
+    "Assistente de Rede": [
+      "Correção: O alerta de uso de dados aparecia várias vezes"
+    ],
+    "Segurança": [
+      "Corrigido: o assistente de envelopes vermelhos não mostra a janela flutuante no Segundo espaço."
     ],
     "Outros": [
       "Segurança e estabilidade do sistema aprimoradas"
@@ -218,13 +297,19 @@
     "Sistem": [
       "Android Güvenlik Patch'i Ocak 2020'de güncellendi. Sistem güvenliği artırıldı."
     ],
-    "Veri kullanımı": [
-      "Onarım: Veri kullanımı uyarısı birçok kez göründü"
-    ],
     "Ayarlar": [
       "Yeni: Mi Link destekli cihaz kategorileri",
       "Onarım: Bazı durumlarda Wi-Fi ağları bulunamadı",
-      "Onarım: Bazı durumlarda Wi-Fi açılamadı"
+      "Ara sıra oluşan WiFi bağlantı sorunu giderildi",
+      "Wi-Fi'nin ara sıra açılamaması sorunu giderildi",
+      "Onarım: Bazı durumlarda Wi-Fi açılamadı",
+      "Bazı durumlarda Wi-Fi'nin açılamaması sorunu giderildi"
+    ],
+    "Ağ Asistanı": [
+      "Onarım: Veri kullanımı uyarısı birçok kez göründü"
+    ],
+    "Güvenlik": [
+      "Düzeltildi: Kırmızı zarf asistanı İkinci alanda yüzen pencereyi göstermiyor."
     ],
     "Diğer": [
       "Sistem güvenliği ve kararlılığı geliştirildi"
@@ -234,8 +319,23 @@
     "Sistem": [
       "Patch Keamanan Android diperbarui (Januari 2020). Keamanan sistem ditingkatkan."
     ],
-    "Penggunaan data": [
+    "Pengaturan": [
+      "Baru: Kategori perangkat yang didukung oleh Mi Link",
+      "Perbaikan: Jaringan Wi-Fi tidak ditemukan dalam beberapa kasus",
+      "Memperbaiki masalah koneksi WiFi yang kadang-kadang terjadi",
+      "Memperbaiki masalah Wi-Fi yang terkadang tidak dapat dinyalakan",
+      "Memperbaiki masalah Wi-Fi tidak dapat diaktifkan dalam beberapa skenario"
+    ],
+    "Pembantu Jaringan": [
       "Perbaikan: Peringatan penggunaan data muncul berulang kali"
+    ],
+    "Keamanan": [
+      "Perbaikan: Asisten amplop merah tidak menampilkan jendela mengambang di Ruang kedua."
+    ],
+    "Setelan": [
+      "Baru: Kategori perangkat yang didukung oleh Mi Link",
+      "Perbaikan: Jaringan Wi-Fi tidak ditemukan dalam beberapa kasus",
+      "Perbaikan: Memperbaiki masalah Wi-Fi yang terkadang tidak dapat dinyalakan"
     ],
     "Lainnya": [
       "Keamanan dan stabilitas sistem ditingkatkan"
@@ -245,47 +345,65 @@
     "Hệ thống": [
       "Cập nhật bản vá bảo mật Android đến tháng 1 năm 2020, tăng cường bảo mật hệ thống."
     ],
-    "Sử dụng dữ liệu": [
-      "Sửa: Cảnh báo sử dụng dữ liệu xuất hiện nhiều lần"
-    ],
-    "Khác": [
-      "Cải thiện tính ổn định và bảo mật hệ thống"
-    ],
     "Cài đặt": [
       "Mới: Danh sách thiết bị hỗ trợ Mi Link",
       "Sửa: Không tìm thấy mạng Wi-Fi trong một số trường hợp",
+      "Đã sửa lỗi đôi khi không thể kết nối WiFi",
+      "Đã khắc phục sự cố Wi-Fi đôi khi không bật được",
+      "Sửa lỗi: Khắc phục sự cố đôi khi không bật được Wi-Fi",
       "Sửa: Không thể bật Wi-Fi trong một số trường hợp"
+    ],
+    "Trợ lý mạng": [
+      "Sửa: Cảnh báo sử dụng dữ liệu xuất hiện nhiều lần"
+    ],
+    "Trung tâm An ninh": [
+      "Đã sửa: Trợ lý phong bao đỏ không hiển thị cửa sổ nổi trong Không gian thứ hai."
+    ],
+    "Khác": [
+      "Cải thiện tính ổn định và bảo mật hệ thống"
     ]
   },
   "logs_th": {
     "ระบบ": [
       "อัปเดต Patch ความปลอดภัยของ Android เป็นเวอร์ชั่น มกราคม 2020 เพิ่มความปลอดภัยของระบบ"
     ],
-    "การใช้ข้อมูล": [
-      "แก้ไข: คำเตือนการใช้ข้อมูลปรากฏหลายครั้ง"
-    ],
-    "อื่นๆ": [
-      "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
-    ],
     "การตั้งค่า": [
       "ใหม่: หมวดหมู่อุปกรณ์ที่รองรับ Mi Link",
       "แก้ไข: ไม่พบเครือข่าย Wi-Fi ในบางกรณี",
+      "แก้ไขปัญหาการเชื่อมต่อ WiFi ที่เกิดขึ้นเป็นครั้งคราว",
+      "แก้ไขปัญหา Wi-Fi บางครั้งเปิดไม่ติด",
+      "แก้ไข: แก้ไขปัญหา Wi-Fi บางครั้งเปิดไม่ติด",
       "แก้ไข: ไม่สามารถเปิด Wi-Fi ได้ในบางกรณี"
+    ],
+    "ผู้ช่วยออนไลน์": [
+      "แก้ไข: คำเตือนการใช้ข้อมูลปรากฏหลายครั้ง"
+    ],
+    "ความปลอดภัย": [
+      "แก้ไข: ผู้ช่วยซองแดงไม่แสดงหน้าต่างลอยในพื้นที่ที่สอง"
+    ],
+    "อื่นๆ": [
+      "ปรับปรุงความปลอดภัยและความเสถียรของระบบ"
     ]
   },
   "logs_ar": {
     "النظام": [
       "تم تحديث تصحيح أمان Android إلى يناير 2020 لزيادة أمان النظام."
     ],
-    "استخدام البيانات": [
-      ":الإصلاح ظهور تحذير استخدام البيانات عدة مرات"
-    ],
     "الإعدادات": [
       ":الجديد أنواع الأجهزة التي تدعم رابط Mi",
       ":الإصلاح لا يمكن العثور على شبكة Wi-Fi في بعض الأحيان.",
-      ":الإصلاح لا يمكن تشغيل شبكة Wi-Fi في بعض الأحيان."
+      "تم إصلاح مشكلة الاتصال بـ WiFi التي تحدث أحيانًا",
+      "تم إصلاح مشكلة تعذر تشغيل Wi-Fi أحيانًا",
+      ":الإصلاح لا يمكن تشغيل شبكة Wi-Fi في بعض الأحيان.",
+      "تم إصلاح مشكلة عدم إمكانية تشغيل Wi-Fi في بعض الحالات"
     ],
-    "أخرى": [
+    "مساعد الإنترنت": [
+      ":الإصلاح ظهور تحذير استخدام البيانات عدة مرات"
+    ],
+    "الأمان": [
+      "تم الإصلاح: مساعد الظرف الأحمر لا يعرض نافذة عائمة في المساحة الثانية."
+    ],
+    "آخرين": [
       "تحسين أمن واستقرار النظام"
     ]
   },
@@ -293,8 +411,19 @@
     "सिस्टम": [
       "Updated Android Security Patch to January 2020. Increased system security."
     ],
-    "डेटा उपयोग": [
+    "सेटिंग्स": [
+      "नया: Mi Link समर्थन वाले डिवाइस श्रेणियाँ",
+      "ठीक किया गया: कुछ स्थितियों में Wi-Fi नेटवर्क नहीं मिले",
+      "WiFi से कनेक्ट न हो पाने की कभी-कभार होने वाली समस्या ठीक की गई",
+      "Wi-Fi कभी-कभी चालू न होने की समस्या ठीक की गई",
+      "ठीक करें: कभी-कभी Wi-Fi चालू न होने की समस्या ठीक की गई",
+      "कुछ स्थितियों में Wi-Fi चालू न होने की समस्या ठीक की गई"
+    ],
+    "वर्चुअल असिस्टेंट": [
       "ठीक करें: डेटा उपयोग चेतावनी कई बार दिखाई दी"
+    ],
+    "सुरक्षा": [
+      "ठीक किया गया: रेड एनवेलप सहायक सेकंड स्पेस में फ़्लोटिंग विंडो नहीं दिखाता."
     ],
     "अन्य": [
       "सिस्टम सुरक्षा और स्थिरता बेहतर हो गई है"
@@ -307,8 +436,21 @@
     "تور ياردەمچىسى": [
       "Fix: Data usage warning appeared multiple times"
     ],
+    "بىخەتەرلىك مەركىزى": [
+      "قىزىل ئوراپ ياردەمچىسىنىڭ ئىككىنچى بوشلۇقتا لەيلەنمە كۆزنىكىنى كۆرسەتمەسلىك مەسىلىسى ئوڭشالدى"
+    ],
+    "Settings": [
+      "New: Device categories with Mi Link support",
+      "ئوڭشالدى: بەزى ئەھۋاللاردا Wi-Fi تورى تېپىلمىدى",
+      "تۈزىتىش: WiFi ئاندا-ساندا ئېچىلمايدىغان مەسىلە تۈزىتىلدى"
+    ],
     "باشقىلىرى": [
       "Improved system security and stability"
+    ],
+    "تەڭشەك": [
+      "New: Device categories with Mi Link support",
+      "ئوڭشالدى: بەزى ئەھۋاللاردا Wi-Fi تورى تېپىلمىدى",
+      "بەزى ئەھۋاللاردا Wi-Fi نى ئېچىلماسلىق مەسىلىسى تۈزىتىلدى"
     ]
   },
   "logs_bo": {
