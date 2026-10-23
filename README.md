@@ -278,6 +278,16 @@ HyperOS.fans 的 `public/data`），除设备文件外还有一批站点级接�
 
 写入失败会计入 `write_failed` 并打印首个错误；`--dry-run` 可以只看将写入什么而不落库。回落到英文的语种会被自动跳过（该语种不写入），确需写入时加 `--force`。
 
+已有日志默认不检测，只补缺失语种。需要以官方接口为准核对已有译文时加 `--verify`：脚本会重新请求官方接口，官方返回该语种的独立译文且与库中不同时回写官方文本（AI 补译的措辞差异、条目缺失/多余都会按官方结构纠正）；官方只是回落英文或没有日志时保留库中现有译文，不会把 AI 译文冲成英文。`--verify-only` 只校验不补缺，`--verify-limit` 按语种限制每轮校验条数，`--min-id` / `--max-id` 可按 id 分段。全量校验约 17 万次请求，建议分批执行：
+
+```bash
+python3 scripts/fetch_changelog.py --verify --langs ja,ko,ru --verify-limit 200
+python3 scripts/fetch_changelog.py --verify-only --min-id 0 --max-id 30000
+python3 scripts/fetch_changelog.py --verify --dry-run --limit 5 --verify-limit 5
+```
+
+纯校验修正不会改动 `release_date`；只有原本没有日志、这次首次补到日志时才会更新发布日期（给老 ROM 补语种也不会改）。
+
 #### 自增 id 空档
 
 InnoDB 的 `AUTO_INCREMENT` 在**插入失败 / 事务回滚**时不会回收（MySQL 的既有行为），
@@ -734,7 +744,7 @@ python3 scripts/import_hub_sitelog.py --drop-types chore,build,docs   # 只保�
 | `xfu_full.py` | 本地 HTML 核查 |
 | `get_current_fastboot.py` | 抓取当前 Fastboot 包信息 |
 | `mgc_fastboot.py` | 小米社区 API 抓取 |
-| `fetch_changelog.py` | 抓取多语言更新日志（changelog）与卡刷包；`--probe` 探测接口对哪些语种真的返回译文，`--langs` 指定语种，`--force` 连英文回落也写入 |
+| `fetch_changelog.py` | 抓取多语言更新日志（changelog）与卡刷包；`--probe` 探测接口对哪些语种真的返回译文，`--langs` 指定语种，`--force` 连英文回落也写入，`--verify` 以官方接口为准校验并纠正已有日志（`--verify-only` / `--verify-limit` / `--max-id` 分批） |
 | `aspatch.py` | 提取安全补丁（Android Security Patch）日期 |
 | `test.py` | 调试 / 验证脚本（非流水线步骤） |
 

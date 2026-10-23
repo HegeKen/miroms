@@ -283,6 +283,16 @@ Writes are per-row `UPDATE`s on an `autocommit` connection, so each one lands im
 
 Locales that fall back to English are skipped automatically (column stays NULL) so the table does not fill with English copies; use `--force` to store them anyway.
 
+Existing logs are left untouched by default (only missing locales are filled). Add `--verify` to check stored translations against the official API: when the API returns a distinct translation for that locale and it differs from the database, the official text is written back (AI-translated wording and missing/extra entries are corrected to the official structure). If the API only falls back to English or has no changelog, the stored translation is kept, so AI translations are not replaced with English. `--verify-only` checks without filling, `--verify-limit` caps records per locale, and `--min-id` / `--max-id` split the work into ranges. A full verification takes roughly 170k requests, so batch it:
+
+```bash
+python3 scripts/fetch_changelog.py --verify --langs ja,ko,ru --verify-limit 200
+python3 scripts/fetch_changelog.py --verify-only --min-id 0 --max-id 30000
+python3 scripts/fetch_changelog.py --verify --dry-run --limit 5 --verify-limit 5
+```
+
+Pure corrections never touch `release_date`; it is only updated when a ROM had no changelog at all and gets its first one (filling an extra locale for an old ROM does not change it either).
+
 #### AUTO_INCREMENT gaps
 
 InnoDB never reclaims an `AUTO_INCREMENT` value after a failed insert or a rolled-back transaction, so occasional
@@ -745,7 +755,7 @@ MySQL (InnoDB, utf8mb4); table structure and field meanings are in `db_structure
 | `xfu_full.py` | Local HTML verification |
 | `get_current_fastboot.py` | Fetch current Fastboot package info |
 | `mgc_fastboot.py` | Xiaomi community API fetch |
-| `fetch_changelog.py` | Fetch multilingual changelogs and recovery packages; `--probe` reports which locales the API really translates, `--langs` selects locales, `--force` also stores English fallbacks |
+| `fetch_changelog.py` | Fetch multilingual changelogs and recovery packages; `--probe` reports which locales the API really translates, `--langs` selects locales, `--force` also stores English fallbacks, `--verify` checks and corrects existing logs against the official API (`--verify-only` / `--verify-limit` / `--max-id` for batching) |
 | `aspatch.py` | Extract Android Security Patch dates |
 | `test.py` | Debug / verification script (not part of the pipeline) |
 
