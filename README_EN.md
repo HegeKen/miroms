@@ -727,9 +727,11 @@ SELECT x.version, x.rom_version, x.push_date, a.pkg, a.name, a.pkg_ver, a.logs
   XMS on the newest system version). When the API returns no `LatestRom` (probed, unreleased versions) it stays 0; there
   is no "newest row in `roms`" fallback, otherwise the flag would flip back and forth while `ota_full.py` probes several
   versions in one run. Only one row per branch carries 1 at a time (writing a new one clears the others).
-* **`push_date`** — the API has no XMS release date, so it stores the **earliest first-crawl date** among the
-  devices / system versions currently covered by that XMS version; later devices and system versions inherit it
-  (`enrich_xms.py --apply` re-normalizes, and the exporter also takes the earliest per group / device).
+* **`push_date`** — the API exposes no XMS release date, so it uses the **mode of the APK `Last-Modified` headers**
+  (the day most packages were uploaded = the actual push day; `xms_app.release_date` keeps each package's real
+  upload date). Without package dates it falls back to the earliest crawl date; `enrich_xms.py --apply` re-normalizes,
+  and the exporter also takes the earliest per group / device. Backfill with
+  `python3 scripts/backfill_xms_release_dates.py`.
 * The unique key is (`code`, `version`, `rom_version`): one XMS can be pushed on top of several system versions (e.g.
   `C11` on top of 302/303/304), one row per combination.
 * Nothing is written while the system version is not in `roms` yet (probed versions); the next run picks it up. Changelogs
@@ -747,6 +749,9 @@ SELECT x.version, x.rom_version, x.push_date, a.pkg, a.name, a.pkg_ver, a.logs
   `pkg` win for non-empty `name` / `name_en`, `names` only fills missing languages, and `apk_name` is also reused
   (the API value is often messy and fixed by hand; the same-device row is preferred, then the one with the most
   languages). Only a brand-new package takes the API values directly.
+* **Empty rows are removed**: `xms_app` rows that only carry a name/package but no APK (`file_name` / `md5`) and no
+  changelog have no real content; the fetcher no longer writes them, `enrich_xms.py --apply` cleans historical ones,
+  and the admin self-check has an "empty entry (name only)" rule.
 * **Missing app names get a placeholder**: when an app name is absent from `logs` modules, `record()` inserts a
   zh / en placeholder (`type='module'`); `enrich_xms.py --apply` (also run before export) backfills every
   `xms_app.name`. Fill the other languages later in "Log entry" and re-run the tidy-up to apply them.
@@ -761,7 +766,7 @@ Export (`exporter.py` calls `export_xms()` → `api/v3/xms/`):
 | File | Content |
 | --- | --- |
 | `v3/xms/index.json` | counts (pushes / apps / devices / versions), version distribution (with an `os` label, e.g. C11 → OS3), device list (with latest push + `brands` / `tablet` / `region`), package index (with detail `path` plus `os` / `regions` / `brands` / `tablet` filter dimensions) |
-| `v3/xms/apps/<package>.json` | push records of one package, **deduplicated by XMS version + app version + package type**: each `groups[]` entry stores the APK / changelog once and only lists devices with their system versions (`romVersions`); `type` comes from the `phone` / `pad` / `fold` / `universal` token in the file name |
+| `v3/xms/apps/<package>.json` | push records of one package, **deduplicated by XMS version + app version + package type**: each `groups[]` entry stores the APK / changelog once and only lists devices with their system versions (`romVersions`); `type` comes from the `phone` / `pad` / `fold` / `universal` token in the file name; `releaseDate` is the package's real release date (`xms_app.release_date`) |
 | `v3/xms/devices/<codename>.json` | XMS pushes of one device, **merged by XMS version**: `push.romVersions` lists the system versions it applies to, while the app list / changelog / notes are stored once |
 
 Each piece of information is exported once: app details are grouped by XMS version + app version (version / APK / changelog
@@ -801,7 +806,7 @@ MySQL (InnoDB, utf8mb4); table structure and field meanings are in `db_structure
 - **`xms.sql`** — XMS (SOTA system-app update) pushes: branch code (`code`), device codename (`device`), region / zone,
   XMS version (`version`, e.g. `C11`), the system version it is based on (`rom_version` / `rom_id`), package count
   (`pkg_cnt`), priority (`prio`), notes (`notice`), package-less log modules (`changelog`, `[{name, logs}]`), latest
-  flag (`is_latest`), push date (`push_date`, earliest crawl date across the covered devices / system versions),
+  flag (`is_latest`), push date (`push_date`, mode of the package `Last-Modified` dates),
   update timestamp (`update_date`); unique on
   (`code`, `version`, `rom_version`)
 - **`xms_app.sql`** — XMS app details: owning push (`xms_id`), package (`pkg`), app / module name

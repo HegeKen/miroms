@@ -13,6 +13,7 @@ CREATE TABLE `xms_app` (
   `md5` char(32) COLLATE utf8mb4_bin DEFAULT NULL COMMENT 'APK MD5（接口 md5）',
   `sha256` char(64) COLLATE utf8mb4_bin DEFAULT NULL COMMENT 'APK SHA-256（接口 sha256）',
   `logs` longtext COLLATE utf8mb4_bin COMMENT '该应用的更新日志条目 JSON 数组：[{"zh":"...","en":"..."}, ...]（缺失语种省略对应键）',
+  `release_date` date DEFAULT NULL COMMENT '安装包真实发布 / 上传日期：下载链接 HTTP 响应头 Last-Modified（北京时间）',
   PRIMARY KEY (`id`),
   UNIQUE KEY `uq_xms_app` (`xms_id`,`pkg`),
   KEY `idx_xms_app_pkg` (`pkg`)

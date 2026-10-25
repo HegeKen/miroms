@@ -1640,7 +1640,8 @@ def export_xms() -> Dict[str, Any]:
 		)
 		app_rows = DatabaseManager.query_all(
 				"SELECT `xms_id`, `pkg`, `name`, `name_en`, `names`, `pkg_ver`, `apk_name`, `file_name`, "
-				"       `size`, `md5`, `sha256`, `logs` FROM `xms_app` ORDER BY `xms_id`, `id`"
+				"       `size`, `md5`, `sha256`, `logs`, `release_date` "
+				"FROM `xms_app` ORDER BY `xms_id`, `id`"
 		)
 
 		apps_by_xms: Dict[int, List[tuple]] = {}
@@ -1657,7 +1658,7 @@ def export_xms() -> Dict[str, Any]:
 				apps: List[Dict[str, Any]] = []
 				for app in apps_by_xms.get(int(xms_id), []):
 						(_, pkg, name, name_en, names, pkg_ver, apk_name, file_name,
-						 size, md5, sha256, logs) = app
+						 size, md5, sha256, logs, release_date) = app
 						pkg = '' if pkg is None else str(pkg)
 						apk_name = '' if apk_name is None else str(apk_name)
 						app_name = _xms_name(names, name, name_en)
@@ -1669,6 +1670,7 @@ def export_xms() -> Dict[str, Any]:
 								'apkName': apk_name,
 								'version': '' if pkg_ver is None else str(pkg_ver),
 								'file': '' if file_name is None else str(file_name),
+								'releaseDate': _xms_date(release_date),
 								'type': _xms_pkg_type(file_name),
 								'size': int(size) if size else 0,
 								'md5': '' if md5 is None else str(md5),
@@ -1780,6 +1782,7 @@ def export_xms() -> Dict[str, Any]:
 										'isLatest': False,
 										'apkName': app['apkName'],
 										'file': app['file'],
+										'releaseDate': app['releaseDate'],
 										'size': app['size'],
 										'md5': app['md5'],
 										'sha256': app['sha256'],
@@ -1800,6 +1803,8 @@ def export_xms() -> Dict[str, Any]:
 								group['size'] = app['size']
 								group['md5'] = app['md5']
 								group['sha256'] = app['sha256']
+						if not group['releaseDate'] and app['releaseDate']:
+								group['releaseDate'] = app['releaseDate']
 						if not group['logs'] and app['logs']:
 								group['logs'] = app['logs']
 						dev = group['devices'].get(push['device'])
@@ -1876,6 +1881,7 @@ def export_xms() -> Dict[str, Any]:
 						'pkg': pkg,
 						'name': app_name,
 						'apkName': first['apkName'],
+						'releaseDate': first.get('releaseDate') or '',
 						'latestVersion': first['appVersion'],
 						'recordCount': sum(group['recordCount'] for group in groups),
 						'deviceCount': len(devices_summary),
@@ -1953,6 +1959,7 @@ def export_xms() -> Dict[str, Any]:
 						'name': doc['name'],
 						'apkName': doc['apkName'],
 						'latestVersion': doc['latestVersion'],
+						'releaseDate': doc.get('releaseDate') or '',
 						'recordCount': doc['recordCount'],
 						'deviceCount': doc['deviceCount'],
 						'os': doc.get('os') or [],

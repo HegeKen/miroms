@@ -14,7 +14,7 @@ CREATE TABLE `xms` (
   `notice` longtext COLLATE utf8mb4_bin COMMENT '注意事项（接口 xmsUpdateInfo.gentleNotice，已去 HTML 标签）',
   `changelog` longtext COLLATE utf8mb4_bin COMMENT '没有包名的日志模块 JSON 数组：[{"name":{"zh","en",...},"logs":[{"zh","en",...}]}, ...]',
   `is_latest` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否为该分支当前最新系统版本上的最新 XMS：1=是、0=否',
-  `push_date` date DEFAULT NULL COMMENT '推送日期：同一 XMS 版本取当前涉及机型 / 系统版本里最早的抓取日期',
+  `push_date` date DEFAULT NULL COMMENT '推送日期：该版本应用包 HTTP Last-Modified 的众数（多数包上传的那天）',
   `update_date` bigint DEFAULT NULL COMMENT '最近一次更新时间戳（秒）',
   PRIMARY KEY (`id`),
   UNIQUE KEY `uq_xms_code_ver_rom` (`code`,`version`,`rom_version`),
@@ -35,7 +35,7 @@ CREATE TABLE `xms` (
 -- 表示这是最新系统版本上的最新 XMS；接口没返回 LatestRom 时退化为
 -- 「与该分支 roms 表里最新的版本一致」。同一分支同时只有一行为 1。
 --
--- push_date：XMS 接口本身不提供发布时间，取同一 XMS 版本当前涉及机型 / 系统版本里最早的抓取日期；
+-- push_date：XMS 接口本身不提供发布时间，取该版本应用包下载链接 Last-Modified 的众数（多数包上传的那天，回退最早抓取日期）；
 -- 同一（分支代码, XMS 版本）的后续系统版本行会沿用最早那一行的日期。
 --
 -- 应用明细（包名 / 版本号 / 更新日志）见 xms_app.sql；

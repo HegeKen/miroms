@@ -85,3 +85,11 @@ CREATE TABLE IF NOT EXISTS `xms_app` (
 --   -- 回填多语言名称 / 日志
 --   python3 scripts/enrich_xms.py --apply
 -- ---------------------------------------------------------------------------
+
+
+-- 2026-10-26：xms_app 增加安装包发布日期（HTTP Last-Modified）
+-- ALTER TABLE `xms_app`
+--   ADD COLUMN `release_date` date DEFAULT NULL
+--   COMMENT '安装包真实发布 / 上传日期：下载链接 HTTP 响应头 Last-Modified（北京时间）'
+--   AFTER `logs`;
+-- 回填：python3 scripts/backfill_xms_release_dates.py（按 getXmsVer 的签名链接取 Last-Modified，再归一 xms.push_date）

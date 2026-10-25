@@ -28,7 +28,8 @@ def main() -> None:
 	action = '已写入' if apply else '预览（加 --apply 才写库）'
 	print(f"XMS 多语言补全 {action}：")
 	print(f"  旧版无包名行迁移 {stats['legacy']} 行（搬到 xms.changelog）")
-	print(f"  推送日期归一 {stats.get('dates', 0)} 行（同一 XMS 版本取最早）")
+	print(f"  空条目清理 {stats.get('empty', 0)} 行（只有名称、无安装包 / 日志）")
+	print(f"  推送日期归一 {stats.get('dates', 0)} 行（取应用包 Last-Modified 众数）")
 	print(f"  logs module 占位新增 {stats.get('modules', 0)} 条（缺失的应用名）")
 	print(f"  包名 {stats['packages']} 个，应用名需更新 {stats['names']} 行")
 	print(f"  应用日志需补全 {stats['logs']} 行，无包名模块需补全 {stats['extras']} 条")

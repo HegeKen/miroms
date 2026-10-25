@@ -36,6 +36,10 @@ import json
 import logging
 import re
 import uuid
+from collections import Counter
+from datetime import datetime, timedelta
+
+import requests
 from typing import Any, Dict, List, Optional, Tuple
 
 from miroms.constants import _const, CHANGELOG_COLUMNS
@@ -55,6 +59,7 @@ class XmsStore:
 		# ota_former / ota_full 会探测多个系统版本，它们命中的是同一份 XMS。
 		_changelog_cache: Dict[Tuple[str, str], Tuple[Dict, Dict]] = {}
 		_version_cache: Dict[Tuple[str, str, str], Dict[str, Dict[str, Any]]] = {}
+		_release_cache: Dict[str, str] = {}
 		# logs 表的多语言译文按（类型, 原文）缓存，避免同一段文本反复查库
 		_translation_cache: Dict[Tuple[str, str], Dict[str, str]] = {}
 
@@ -114,6 +119,19 @@ class XmsStore:
 						app["md5"] = meta.get("md5", "")
 						app["sha256"] = meta.get("sha256", "")
 
+				# 只有名称、没有安装包 / 日志的条目不落库（避免空壳行）
+				apps = [app for app in apps
+								if app.get("file_name") or app.get("md5") or app.get("logs")]
+
+				# 本次推送的应用包发布日期（HTTP Last-Modified）：多数包同一天上传的那天 = 真实推送日
+				release_dates = [app.get("release_date") for app in apps if app.get("release_date")]
+				bundle_date = None
+				if release_dates:
+						counter = Counter(release_dates)
+						max_count = max(counter.values())
+						# 并列时取较早的一天
+						bundle_date = min(date for date, count in counter.items() if count == max_count)
+
 				# 用 logs 表的官方译文补齐中英以外的语种
 				for app in apps:
 						cls._enrich_logs(app["logs"])
@@ -135,11 +153,14 @@ class XmsStore:
 						device=device, code=code, region=region, zone=zone, android=android,
 						xms_version=xms_version, rom_version=rom_version, rom_id=rom_id,
 						pkg_cnt=cls._int(info.get("pkgCnt")), prio=cls._int(info.get("prio")),
-						notice=notice, changelog=extras, is_latest=is_latest
+						notice=notice, changelog=extras, is_latest=is_latest,
+						push_date=bundle_date
 				)
 				if not xms_id:
 						return None
 				cls._store_apps(xms_id, apps, device=device)
+				# 推送日期按该 XMS 版本涉及的 ROM 最早发布日期统一
+				cls.normalize_push_dates(apply=True)
 
 				# 同一包名在所有推送里统一名称（新写入的应用名可能来自不同版本 / 语种）
 				for pkg in sorted({app["pkg"] for app in apps}):
@@ -230,16 +251,55 @@ class XmsStore:
 						pkg = str(apk.get("packName") or "").strip()
 						if not pkg:
 								continue
-						apks[pkg] = {
+						info = {
 								"version": str(apk.get("lastVerCode") or "").strip(),
 								"apk_name": str(apk.get("name") or "").strip(),
 								"file_name": str(apk.get("fileName") or "").strip(),
 								"size": cls._int(apk.get("size")),
 								"md5": str(apk.get("md5") or "").strip(),
 								"sha256": str(apk.get("sha256") or "").strip(),
+								"download_urls": [str(url) for url in (apk.get("downloadUrls") or []) if url],
 						}
+						# 安装包的真实发布日期：HTTP Last-Modified（签名链接只有本次可用，立即取）
+						info["release_date"] = cls._apk_release_date(info["md5"], info["file_name"],
+																															 info["download_urls"])
+						apks[pkg] = info
 				cls._version_cache[cache_key] = apks
 				return apks
+
+		@classmethod
+		def _apk_release_date(cls, md5: str, file_name: str, urls: List[str]) -> str:
+				"""用 APK 的 HTTP Last-Modified 取真实发布 / 上传日期（YYYY-MM-DD，北京时间）
+
+				优先用内存 / 数据库里同 md5 的已有值；拿不到时返回空串（不写库）。
+				"""
+				key = md5 or file_name
+				if key and key in cls._release_cache:
+						return cls._release_cache[key]
+				if md5:
+						row = DatabaseManager.query_one(
+								"SELECT release_date FROM xms_app WHERE md5 = %s "
+								"AND release_date IS NOT NULL ORDER BY id DESC LIMIT 1",
+								params=(md5,)
+						)
+						if row and row[0]:
+								value = str(row[0])
+								cls._release_cache[key] = value
+								return value
+				for url in urls or []:
+						try:
+								response = requests.head(url, allow_redirects=True, timeout=10)
+								last_modified = response.headers.get("Last-Modified")
+								if not last_modified:
+										continue
+								dt = datetime.strptime(last_modified, "%a, %d %b %Y %H:%M:%S %Z") + timedelta(hours=8)
+								value = dt.strftime("%Y-%m-%d")
+								if key:
+										cls._release_cache[key] = value
+								return value
+						except (requests.RequestException, ValueError):
+								continue
+				return ""
 
 		# ==================== 解析 ====================
 
@@ -594,21 +654,39 @@ class XmsStore:
 
 		@classmethod
 		def normalize_push_dates(cls, apply: bool = True) -> int:
-				"""同一 XMS 版本的所有行日期统一为「当前涉及机型 / 系统版本里最早」的一天
+				"""同一 XMS 版本的所有行日期统一为该版本涉及的 ROM 里最早的发布日期
 
-				新机型、新系统版本晚些入库时，也沿用这个最早日期，而不是各自的抓取日期。
-				返回被改动的行数。
+				优先取 roms.release_date，缺失时依次回退 public_date / beta_date；
+				完全没有 ROM 日期时回退到已有 push_date。返回被改动的行数。
 				"""
 				rows = DatabaseManager.query_all(
-						"SELECT id, version, push_date FROM xms WHERE push_date IS NOT NULL")
-				earliest: Dict[str, Any] = {}
+						"SELECT id, version, push_date FROM xms WHERE version IS NOT NULL")
+				# 每个版本取应用包发布日期的众数（多数包同一天上传的那天 = 推送日）
+				mode_rows = DatabaseManager.query_all(
+						"SELECT x.version, a.release_date, COUNT(*) AS cnt "
+						"FROM xms_app a JOIN xms x ON x.id = a.xms_id "
+						"WHERE a.release_date IS NOT NULL AND x.version IS NOT NULL "
+						"GROUP BY x.version, a.release_date")
+				mode: Dict[str, Any] = {}
+				mode_count: Dict[str, int] = {}
+				for version, release_date, cnt in mode_rows:
+						count = int(cnt)
+						if (count > mode_count.get(version, -1)
+								or (count == mode_count.get(version, -1)
+										and release_date < mode.get(version, release_date))):
+								mode[version] = release_date
+								mode_count[version] = count
+				earliest: Dict[str, Any] = dict(mode)
+				# 没有任何应用包日期的版本，回退到已有 push_date 的最早值
 				for _row_id, version, push_date in rows:
-						if version and push_date and (version not in earliest or push_date < earliest[version]):
+						if version in earliest:
+								continue
+						if push_date and (version not in earliest or push_date < earliest[version]):
 								earliest[version] = push_date
 				updated = 0
 				for row_id, version, push_date in rows:
 						target = earliest.get(version)
-						if not target or not push_date or push_date == target:
+						if not target or push_date == target:
 								continue
 						if apply:
 								DatabaseManager.execute(
@@ -623,7 +701,7 @@ class XmsStore:
 											xms_version: str, rom_version: str, rom_id: int,
 											pkg_cnt: int, prio: int, notice: str,
 											changelog: List[Dict[str, Any]],
-											is_latest: int) -> int:
+											is_latest: int, push_date: Optional[str] = None) -> int:
 				"""写入 / 更新一条 XMS 推送，返回 xms.id"""
 				now = beijing_now()
 				timestamp = int(now.timestamp())
@@ -638,19 +716,15 @@ class XmsStore:
 						DatabaseManager.execute(
 								"UPDATE xms SET device = %s, region = %s, zone = %s, android = %s, "
 								"rom_id = %s, pkg_cnt = %s, prio = %s, notice = %s, changelog = %s, "
-								"is_latest = %s, update_date = %s WHERE id = %s",
+								"is_latest = %s, push_date = COALESCE(%s, push_date), update_date = %s "
+								"WHERE id = %s",
 								params=(device, region, zone, android, rom_id, pkg_cnt, prio, notice,
-												changelog_json, is_latest, timestamp, xms_id),
+												changelog_json, is_latest, push_date, timestamp, xms_id),
 								raise_on_error=True
 						)
 				else:
-						# 同一 XMS 版本的所有行统一用「当前涉及机型 / 系统版本里最早」的推送日期
-						sibling = DatabaseManager.query_one(
-								"SELECT MIN(push_date) FROM xms "
-								"WHERE version = %s AND push_date IS NOT NULL",
-								params=(xms_version,)
-						)
-						push_date = sibling[0] if sibling and sibling[0] else now.date()
+						# 推送日期取本次应用包 HTTP Last-Modified 的最早一天（下方 normalize 统一）
+						push_date = push_date or now.date().isoformat()
 						xms_id = DatabaseManager.insert(
 								"INSERT INTO xms(device, code, region, zone, android, version, rom_version, "
 								"rom_id, pkg_cnt, prio, notice, changelog, is_latest, push_date, update_date) "
@@ -751,20 +825,23 @@ class XmsStore:
 								DatabaseManager.execute(
 										"UPDATE xms_app SET name = %s, name_en = %s, names = %s, "
 										"pkg_ver = %s, apk_name = %s, file_name = %s, size = %s, "
-										"md5 = %s, sha256 = %s, logs = %s WHERE id = %s",
+										"md5 = %s, sha256 = %s, logs = %s, "
+										"release_date = COALESCE(%s, release_date) WHERE id = %s",
 										params=(app["name"], app["name_en"], names, app["pkg_ver"],
 														app["apk_name"], app["file_name"], app["size"] or None,
-														app["md5"], app["sha256"], logs, existing[app["pkg"]]),
+														app["md5"], app["sha256"], logs,
+														app.get("release_date") or None, existing[app["pkg"]]),
 										raise_on_error=True
 								)
 						else:
 								DatabaseManager.insert(
 										"INSERT INTO xms_app(xms_id, pkg, name, name_en, names, pkg_ver, "
-										"apk_name, file_name, size, md5, sha256, logs) "
-										"VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
+										"apk_name, file_name, size, md5, sha256, logs, release_date) "
+										"VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
 										params=(xms_id, app["pkg"], app["name"], app["name_en"], names,
 														app["pkg_ver"], app["apk_name"], app["file_name"],
-														app["size"] or None, app["md5"], app["sha256"], logs),
+														app["size"] or None, app["md5"], app["sha256"], logs,
+														app.get("release_date") or None),
 										raise_on_error=True
 								)
 
@@ -779,6 +856,28 @@ class XmsStore:
 
 		# ==================== 维护 ====================
 
+
+		@classmethod
+		def clean_empty_apps(cls, apply: bool = True) -> int:
+				"""删除「只有名称、没有安装包 / 日志」的 xms_app 空条目
+
+				这类行来自 changeLog 里只出现模块名、getXmsVer 又没返回包的推送，
+				没有安装包、校验值或更新日志，前端只会显示一个空壳。
+				返回匹配 / 删除的行数。
+				"""
+				rows = DatabaseManager.query_all(
+						"SELECT id FROM xms_app WHERE (file_name IS NULL OR file_name = '') "
+						"AND (md5 IS NULL OR md5 = '') "
+						"AND (logs IS NULL OR logs = '' OR logs = '[]')"
+				)
+				ids = [int(row[0]) for row in rows]
+				if apply and ids:
+						placeholders = ",".join(["%s"] * len(ids))
+						DatabaseManager.execute(
+								f"DELETE FROM xms_app WHERE id IN ({placeholders})",
+								params=tuple(ids), raise_on_error=True
+						)
+				return len(ids)
 
 		@classmethod
 		def migrate_legacy_extras(cls, apply: bool = True) -> int:
@@ -848,8 +947,9 @@ class XmsStore:
 				供 scripts/enrich_xms.py 调用：默认只统计，apply=True 才写库。
 				"""
 				stats = {"legacy": 0, "packages": 0, "names": 0, "logs": 0, "extras": 0,
-								 "modules": 0, "dates": 0}
+								 "modules": 0, "dates": 0, "empty": 0}
 				stats["legacy"] = cls.migrate_legacy_extras(apply=apply)
+				stats["empty"] = cls.clean_empty_apps(apply=apply)
 				stats["dates"] = cls.normalize_push_dates(apply=apply)
 				if apply:
 						# 应用名在 logs 的 module 里缺失时补占位行，方便后续统一补翻译
