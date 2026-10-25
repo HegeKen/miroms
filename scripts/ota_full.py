@@ -93,9 +93,8 @@ def main() -> None:
 			if is_special:
 				if version:
 					print(f"\r{datetime.now().strftime('%Y-%m-%d %H:%M:%S')} 正在检测 {device} {code} {version}", end="", flush=True)
-					form_json = common.FirmwareParser.build_ota_form(device, code, region, btag, zone, android, version)
-					encrypted = common.CryptoManager.encrypt(form_json)
-					common.NetworkClient.fetch_and_check(encrypted)
+					form = common.FirmwareParser.build_ota_form(device, code, region, btag, zone, android, version)
+					common.NetworkClient.fetch_and_check(form)
 			else:
 				# 遍历每个已知 ROM 版本，尝试偏移
 				for rom_ver in br['rom_list']:
@@ -124,9 +123,8 @@ def main() -> None:
 							continue
 
 						print(f"\r{datetime.now().strftime('%Y-%m-%d %H:%M:%S')} 正在检测 {device} {code} {new_ver}", end="", flush=True)
-						form_json = common.FirmwareParser.build_ota_form(device, code, region, btag, zone, android, new_ver)
-						encrypted = common.CryptoManager.encrypt(form_json)
-						common.NetworkClient.fetch_and_check(encrypted)
+						form = common.FirmwareParser.build_ota_form(device, code, region, btag, zone, android, new_ver)
+						common.NetworkClient.fetch_and_check(form)
 
 	print(f"\n[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 全量 OTA 检测完成")
 

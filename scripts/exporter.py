@@ -32,6 +32,16 @@ try:
 except Exception as e:
   print(f"开发版周报生成失败: {e}", file=sys.stderr)
 
+# 导出 XMS（SOTA 系统应用更新）索引 / 应用详情 / 机型详情（供官网 /xms 页面）
+print("\n--- 导出 XMS 应用更新 (v3/xms) ---")
+try:
+  xms_index = common.export_xms()
+  counts = xms_index['counts']
+  print(f"XMS 已生成：{counts['pushes']} 次推送 / {counts['apps']} 个应用 / "
+        f"{counts['devices']} 台机型（{counts['versions']} 个版本）")
+except Exception as e:
+  print(f"XMS 导出失败: {e}", file=sys.stderr)
+
 # 导出参考站点附属接口（api/v1 = NuxtMR、api/v2 = HyperOS.fans）
 # 依赖上面的设备文件（机型目录要回填 android / miui / supports），必须放在其后。
 print("\n--- 导出 v1 附属接口 (NuxtMR) ---")

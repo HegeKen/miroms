@@ -11,6 +11,7 @@ miroms - 小米 ROM 数据管理包
     recorder    - 数据记录管理 (DataRecorder)
     network     - 网络请求客户端 (NetworkClient)
     changelog   - 更新日志管理 (ChangelogManager)
+    xms         - XMS（SOTA 系统应用更新）解析与入库 (XmsStore)
     logs_store  - 更新日志字典化存储 (LogStore)
     logs_text   - 日志文本判定与繁简转换 (LogText)
     logs_maintenance - 日志表维护：去重 / 引用重写 / 内容一致性 / 掩码 / id 压缩 (LogMaintenance)
@@ -40,6 +41,7 @@ from miroms.firmware import FirmwareParser
 from miroms.recorder import DataRecorder
 from miroms.network import NetworkClient
 from miroms.changelog import ChangelogManager
+from miroms.xms import XmsStore
 from miroms.logs_store import LogStore
 from miroms.logs_text import LogText
 from miroms.logs_maintenance import LogMaintenance
@@ -52,7 +54,7 @@ from miroms.logs_mixed import MixedTranslationFixer
 from miroms.deepseek import DeepSeekClient, DeepSeekError
 from miroms.local_mt import LocalMTClient, LocalMTError
 from miroms.validator import DataValidator
-from miroms.exporters import exportV1, exportV2, exportV3, export_dev
+from miroms.exporters import exportV1, exportV2, exportV3, export_dev, export_xms
 from miroms.legacy_exporters import (
 	export_sitelog, export_v1_extras, export_v2_extras, export_hub_extras,
 	export_v1_index, export_v1_weekly_index, export_v1_weekly_weeks, export_v1_devlist,
@@ -73,11 +75,11 @@ __all__ = [
 	'DatabaseManager', 'CryptoManager',
 	# 业务
 	'FirmwareParser', 'DataRecorder', 'NetworkClient',
-	'ChangelogManager', 'DataValidator', 'LogStore',
+	'ChangelogManager', 'XmsStore', 'DataValidator', 'LogStore',
 	'LogText', 'LogMaintenance', 'LogProofreader', 'LogLangFixer', 'LogFiller', 'DeepSeekClient', 'DeepSeekError',
 	'LocalMTClient', 'LocalMTError',
 	# 导出
-	'exportV1', 'exportV2', 'exportV3', 'export_dev',
+	'exportV1', 'exportV2', 'exportV3', 'export_dev', 'export_xms',
 	# 参考站点附属导出（api/v1 = NuxtMR、api/v2 = HyperOS.fans）
 	'export_sitelog', 'export_v1_extras', 'export_v2_extras',
 	'export_v1_index', 'export_v1_weekly_index', 'export_v1_weekly_weeks', 'export_v1_devlist',

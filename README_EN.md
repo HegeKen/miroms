@@ -51,6 +51,8 @@ the [hub.miuier.com](https://hub.miuier.com) website, the admin panel and variou
 │   ├── branches.sql                  #   branches table
 │   ├── series.sql                    #   series table
 │   ├── sitelog.sql                   #   site log table (site column: nuxtmr / hyperos.fans / hub.web / hub.admin)
+│   ├── xms.sql                       #   XMS (SOTA system-app update) push table
+│   ├── xms_app.sql                   #   XMS app details (package / version / zh+en changelog)
 │   └── migrations/                   #   schema migration SQL
 ├── scripts/                          # sync / fetch / export / deploy scripts (Python)
 │   ├── exporter.py                   #   main export script (v1 / v2 / v3 + site auxiliary endpoints)
@@ -687,6 +689,68 @@ python3 scripts/import_hub_sitelog.py --drop-types chore,build,docs   # keep onl
 * All writes go through `miroms/sitelog_store.py` (an in-place UPDATE by unique key, so no AUTO_INCREMENT ids are burned).
 * On export each site is restored to its original shape: `export_sitelog('nuxtmr')` → `api/v1/sitelog.json`, `export_sitelog('hyperos.fans')` → `api/v2/sitelog.json`; importing and re-exporting round-trips the source files field for field (verified); `export_hub_sitelog()` → `api/v3/sitelog.json` (the hub.web / hub.admin lines).
 
+#### XMS (SOTA system-app updates)
+
+Besides `LatestRom` / `CurrentRom`, the Xiaomi OTA endpoint also returns `xmsUpdateInfo` — the system-app level
+incremental update (SOTA, called XMS internally):
+
+| Field | Meaning |
+| --- | --- |
+| `hasXmsUpdate` | 1 = the current system version still has a batch of system apps to update |
+| `lstVer` | latest XMS version, e.g. `C11` |
+| `curVer` | current XMS version echoed back when the request carries `xv` |
+| `pkgCnt` / `prio` | number of packages covered / push priority |
+| `pkgs` | package names covered by this push (e.g. `com.miui.securitycenter`) |
+| `gentleNotice` | notes (HTML fragment, converted to plain text before storing) |
+| `changeLog` | changelog: **only returned when the request carries `xv=<lstVer>`**, grouped by module name; items may carry `package` / `versionCode` / `txt` |
+
+How it is fetched (mirrors `fetchXmsBlock` / `getXmsVerInfo` in
+[YuKongA/Updater-KMP](https://github.com/YuKongA/Updater-KMP)):
+
+1. the OTA request must use the full `HyperOSForm` template — sending only `d` / `obv` / `c` makes the endpoint
+   return an empty `patchInfo`, so neither a new version nor `xmsUpdateInfo` is returned;
+2. when `hasXmsUpdate=1` and the system version is already in `roms`, one extra request with `xv=<lstVer>` fetches the
+   Chinese and English `changeLog` (`l=zh_CN` / `l=en_US`), then `/api/v3/xms/getXmsVer` is called best-effort for each
+   app's latest version code (the endpoint sometimes returns nothing, in which case the `versionCode` from `changeLog`
+   is used);
+3. the push is written to `xms` (one row per push) plus `xms_app` (one row per app: package, version, zh/en changelog).
+
+```sql
+-- latest XMS push and its app list for one device
+SELECT x.version, x.rom_version, x.push_date, a.pkg, a.name, a.pkg_ver, a.logs
+  FROM xms x JOIN xms_app a ON a.xms_id = x.id
+ WHERE x.code = 'violin' AND x.is_latest = 1
+ ORDER BY a.id;
+```
+
+* **`is_latest`** is 1 only when the queried current system version equals the `LatestRom` returned by the API (the newest
+  XMS on the newest system version). When the API returns no `LatestRom` (probed, unreleased versions) it stays 0; there
+  is no "newest row in `roms`" fallback, otherwise the flag would flip back and forth while `ota_full.py` probes several
+  versions in one run. Only one row per branch carries 1 at a time (writing a new one clears the others).
+* **`push_date`** — the API has no XMS release date, so it stores the date the version was first seen; later system
+  versions of the same (`code`, XMS version) reuse the earliest date.
+* The unique key is (`code`, `version`, `rom_version`): one XMS can be pushed on top of several system versions (e.g.
+  `C11` on top of 302/303/304), one row per combination.
+* Nothing is written while the system version is not in `roms` yet (probed versions); the next run picks it up. Changelogs
+  are cached in-process per (branch, XMS version), so a run fetches each one only once.
+* So far only China mainland devices (`zone=1`) report `hasXmsUpdate=1`; international builds are always 0 in practice.
+  The parser supports both regions.
+* **Only OS3 and newer are fetched**: by the API convention the first letter of an XMS version maps to the system
+  major version (`C` → HyperOS 3, `D` → HyperOS 4, …); OS1 / OS2 and MIUI versions are skipped outright (see
+  `XmsStore.MIN_OS_MAJOR`). The exported `os` field is derived from that letter so the frontend can label it.
+
+Export (`exporter.py` calls `export_xms()` → `api/v3/xms/`):
+
+| File | Content |
+| --- | --- |
+| `v3/xms/index.json` | counts (pushes / apps / devices / versions), version distribution (with an `os` label, e.g. C11 → OS3), device list (with latest push), package index (with detail `path`) |
+| `v3/xms/apps/<package>.json` | every push record of one package: device, system version, app version, push date, changelog, APK file name / size / checksums |
+| `v3/xms/devices/<codename>.json` | every XMS push of one device, its notes, and each app's changelog / package info |
+
+APK download links carry a time-limited signature (the unsigned URL returns 403), so they are **not** written into the static
+JSON: the website's `/xms` pages request a fresh link from `app/web/server/api/xms/download.post.ts`, which calls
+`getXmsVer` on demand (the same approach as the ROM high-speed download).
+
 ---
 
 ## Database Schema
@@ -713,6 +777,13 @@ MySQL (InnoDB, utf8mb4); table structure and field meanings are in `db_structure
   `api/v2/sitelog.json`, `hub.web` / `hub.admin` → `api/v3/sitelog.json`) and `kind` the row type (`entry` log entry /
   `meta` site-level metadata such as the `icons` palette), holding the version (`ver`), icon (`icon`), date
   (`log_date`), new-device summary (`devices_zh` / `devices_en`) and log body (`logs`, `[{"zh","en"},...]`)
+- **`xms.sql`** — XMS (SOTA system-app update) pushes: branch code (`code`), device codename (`device`), region / zone,
+  XMS version (`version`, e.g. `C11`), the system version it is based on (`rom_version` / `rom_id`), package count
+  (`pkg_cnt`), priority (`prio`), notes (`notice`), latest flag (`is_latest`), push date (`push_date`, first seen),
+  update timestamp (`update_date`); unique on (`code`, `version`, `rom_version`)
+- **`xms_app.sql`** — XMS app details: owning push (`xms_id`), package (`pkg`), zh/en app or module name
+  (`name` / `name_en`), version code (`pkg_ver`), changelog (`logs`, `[{"zh","en"},...]`, aligned by package + item
+  order); an empty `pkg` means the log module came without a package name
 
 ---
 
@@ -722,7 +793,7 @@ MySQL (InnoDB, utf8mb4); table structure and field meanings are in `db_structure
 
 | File | Description |
 | --- | --- |
-| `exporter.py` | Entry script: iterates `common.fullDevices`, runs `exportV1` / `exportV2` / `exportV3`, then `export_dev()` for `api/v3/dev/**` and `export_v1_extras()` / `export_v2_extras()` for the two reference sites' auxiliary endpoints (see "V1 / V2 auxiliary files") plus `export_hub_extras()` for `api/v3/sitelog.json` / `api/v3/tools.json`, then invokes `app/web/scripts/generate-index.mjs` (Node.js) to regenerate `api/v3/index.json`, `api/v3/stats.json`, `api/v3/roms/*.json` and `api/v3/releases/*.json` |
+| `exporter.py` | Entry script: iterates `common.fullDevices`, runs `exportV1` / `exportV2` / `exportV3`, then `export_dev()` for `api/v3/dev/**`, `export_xms()` for `api/v3/xms/**`, and `export_v1_extras()` / `export_v2_extras()` for the two reference sites' auxiliary endpoints (see "V1 / V2 auxiliary files") plus `export_hub_extras()` for `api/v3/sitelog.json` / `api/v3/tools.json`, then invokes `app/web/scripts/generate-index.mjs` (Node.js) to regenerate `api/v3/index.json`, `api/v3/stats.json`, `api/v3/roms/*.json` and `api/v3/releases/*.json` |
 | `migrate_logs_multilang.py` | Migrate the 21 `roms.logs_*` columns into the multilingual `logs` table plus a single language-neutral `roms.logs`; the old table is kept as `logs_legacy` |
 | `resequence_ids.py` | Renumber `roms` / `dev` / `logs` ids into a dense sequence and reset their AUTO_INCREMENT counter; roms / dev sample 20 s to make sure nobody is writing and dump the old→new id map to `.backup/*_id_map_*.csv`; `logs` goes through `LogMaintenance.compact_ids` (transactional id shift + reference rewrite) and backs the table and references up to JSON first |
 | `dedup_logs.py` | Dedup audit and merge for `logs`: merges groups that hold the same log, rewriting `roms.logs` / `dev.logs` references (masks unchanged, exports unaffected); `--apply` merges (auto backup), `--prune-unused` also removes orphan rows |
@@ -743,15 +814,15 @@ MySQL (InnoDB, utf8mb4); table structure and field meanings are in `db_structure
 | `config.py` | DB connection config (host / port / user / password / database) + Cloudflare Pages deploy config (`api` base URL + `ids` list of site hooks; default: HUB / HyperOS.fans / MIUIer) + DeepSeek proofreading config (`deepseek_api_key` / `deepseek_model` / `deepseek_base_url` / `deepseek_reasoning_effort`; the key can also come from `DEEPSEEK_API_KEY`) + LM Studio local translation settings (`lmstudio_base_url` / `lmstudio_model` / `lmstudio_timeout`) |
 | `push.py` | One-shot pipeline: run `exporter.py` → commit & push inside the `data` sub-repo (commit message = current datetime) → call `deploy.py` to deploy every site in `config.ids` (10 s pause between sites by default); exits non-zero if any deployment fails |
 | `deploy.py` | Deploy only: POSTs `{config.api}/{id}` for each id in `config.ids` (Cloudflare Pages deploy hooks) and prints each site name, deploy ID / short_id / URL, waiting 10 s after each hook before triggering the next site (`--interval` overrides it, 0 = no wait); pass site names or hook-id prefixes to deploy a subset (e.g. `python3 scripts/deploy.py HUB`), `--list` only prints the targets; exit code 0 only if all succeed |
-| `miroms/` | Core package: `constants.py` (constants, SDK versions, Android codenames, branch tables), `data.py` (device list), `database.py` (DB access + transactions), `network.py` / `crypto.py` / `firmware.py` (Xiaomi server fetch & decryption), `recorder.py` (data recording), `changelog.py` (changelogs), `logs_store.py` (multilingual log groups), `logs_text.py` (text predicates + traditional→simplified), `logs_maintenance.py` (dedup / reference rewrite / content consistency / language masks / id compaction / audit), `logs_proofread.py` (multilingual proofreading / AI review), `deepseek.py` (DeepSeek API client), `local_mt.py` (LM Studio local translation client + Hunyuan-MT prompts / output validation), `sitelog_store.py` (site-log persistence), `validator.py` (validation), `exporters.py` (V1/V2/V3 exporters), `legacy_exporters.py` (site auxiliary endpoint exports for api/v1 = NuxtMR, api/v2 = HyperOS.fans, api/v3 = hub's own site endpoints), `utils.py` (helpers) |
+| `miroms/` | Core package: `constants.py` (constants, SDK versions, Android codenames, branch tables), `data.py` (device list), `database.py` (DB access + transactions), `network.py` / `crypto.py` / `firmware.py` (Xiaomi server fetch, decryption, OTA request form), `recorder.py` (data recording), `changelog.py` (changelogs), `xms.py` (XMS / SOTA app update parsing and storage), `logs_store.py` (multilingual log groups), `logs_text.py` (text predicates + traditional→simplified), `logs_maintenance.py` (dedup / reference rewrite / content consistency / language masks / id compaction / audit), `logs_proofread.py` (multilingual proofreading / AI review), `deepseek.py` (DeepSeek API client), `local_mt.py` (LM Studio local translation client + Hunyuan-MT prompts / output validation), `sitelog_store.py` (site-log persistence), `validator.py` (validation), `exporters.py` (V1/V2/V3 exporters), `legacy_exporters.py` (site auxiliary endpoint exports for api/v1 = NuxtMR, api/v2 = HyperOS.fans, api/v3 = hub's own site endpoints), `utils.py` (helpers) |
 
 ### Fetch / Deploy Scripts
 
 | File | Description |
 | --- | --- |
 | `get_new_branch.py` | Fastboot + OTA probing to discover new branches / versions |
-| `ota_former.py` | OTA version detection |
-| `ota_full.py` | Full OTA offset probing |
+| `ota_former.py` | OTA version detection (also parses XMS / SOTA app updates into `xms` / `xms_app`) |
+| `ota_full.py` | Full OTA offset probing (records XMS as well) |
 | `xfu_full.py` | Local HTML verification |
 | `get_current_fastboot.py` | Fetch current Fastboot package info |
 | `mgc_fastboot.py` | Xiaomi community API fetch |
@@ -767,7 +838,8 @@ The fetch scripts can also be run via VS Code Tasks (`.vscode/tasks.json` of the
 Xiaomi update server (update.miui.com)
         │  network / crypto / firmware fetch & decrypt
         ▼
-MySQL database (miroms: devices / roms / logs / dev / branches / series)
+MySQL database (miroms: devices / roms / logs / dev / branches / series / xms / xms_app)
+        │  python3 scripts/ota_former.py / ota_full.py / get_new_branch.py  → new ROMs + XMS app updates
         │  python3 scripts/sync_devices.py        → update miroms/data.py device list
         │  python3 scripts/fix_missing_tag_mappings.py --apply (when needed)
         │  python3 scripts/migrate_logs_multilang.py   → multilingual log groups (one-off)

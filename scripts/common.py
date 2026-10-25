@@ -17,6 +17,7 @@ from miroms.firmware import FirmwareParser
 from miroms.recorder import DataRecorder
 from miroms.network import NetworkClient
 from miroms.changelog import ChangelogManager
+from miroms.xms import XmsStore
 from miroms.logs_store import LogStore
 from miroms.logs_text import LogText
 from miroms.logs_maintenance import LogMaintenance
@@ -29,7 +30,7 @@ from miroms.logs_mixed import MixedTranslationFixer
 from miroms.deepseek import DeepSeekClient, DeepSeekError
 from miroms.validator import DataValidator
 from miroms.exporters import (exportV1, exportV2, exportV3, export_series_index, export_statistics,
-	export_dev, load_series_data)
+	export_dev, export_xms, load_series_data)
 # 参考站点附属导出（api/v1 = NuxtMR、api/v2 = HyperOS.fans）
 from miroms.legacy_exporters import (export_sitelog, export_v1_extras, export_v2_extras, export_hub_extras,
 	export_v1_index, export_v1_weekly_index, export_v1_weekly_weeks, export_v1_devlist,

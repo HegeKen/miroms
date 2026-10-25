@@ -49,6 +49,8 @@
 │   ├── branches.sql                  #   分支表
 │   ├── series.sql                    #   机型系列表
 │   ├── sitelog.sql                   #   站点日志表（site 列区分 nuxtmr / hyperos.fans / hub.web / hub.admin）
+│   ├── xms.sql                       #   XMS（SOTA 系统应用更新）推送表
+│   ├── xms_app.sql                   #   XMS 应用明细表（包名 / 版本号 / 中英更新日志）
 │   └── migrations/                   #   schema 迁移 SQL
 ├── scripts/                          # 数据同步 / 抓取 / 导出 / 部署脚本（Python）
 │   ├── exporter.py                   #   主导出脚本（v1 / v2 / v3 + 站点附属接口）
@@ -687,6 +689,57 @@ python3 scripts/import_hub_sitelog.py --drop-types chore,build,docs   # 只保�
 * 落库统一走 `miroms/sitelog_store.py`（按唯一键原地 UPDATE，不烧自增 id）。
 * 导出：`export_sitelog('nuxtmr')` → `api/v1/sitelog.json`，`export_sitelog('hyperos.fans')` → `api/v2/sitelog.json`（导入 + 导出与源文件逐字段一致，已核对）；`export_hub_sitelog()` → `api/v3/sitelog.json`（hub.web / hub.admin 两条线）。
 
+#### XMS（SOTA 系统应用更新）
+
+小米 OTA 接口除了 `LatestRom` / `CurrentRom`，还会返回 `xmsUpdateInfo` —— 系统应用级的增量更新（SOTA，接口内部叫 XMS）：
+
+| 字段 | 含义 |
+| --- | --- |
+| `hasXmsUpdate` | 1 = 当前系统版本上还有一批系统应用可以更新 |
+| `lstVer` | 最新 XMS 版本号，如 `C11` |
+| `curVer` | 请求带 `xv` 时回显的当前 XMS 版本号 |
+| `pkgCnt` / `prio` | 覆盖的包数量 / 推送优先级 |
+| `pkgs` | 本次覆盖的包名列表（如 `com.miui.securitycenter`） |
+| `gentleNotice` | 注意事项（HTML 片段，入库前转纯文本） |
+| `changeLog` | 更新日志：**只有请求带 `xv=<lstVer>` 时才返回**，按「模块名」分组，条目可能带 `package` / `versionCode` / `txt` |
+
+抓取方式（与 [YuKongA/Updater-KMP](https://github.com/YuKongA/Updater-KMP) 的 `fetchXmsBlock` / `getXmsVerInfo` 一致）：
+
+1. 正常查 OTA（`ota_former.py` / `ota_full.py` / `get_new_branch.py`）时，请求表单必须是 `HyperOSForm` 模板那套完整字段
+   —— 只发 `d` / `obv` / `c` 极少数字段时接口只回空的 `patchInfo`，既检测不到新版本，也拿不到 `xmsUpdateInfo`；
+2. `hasXmsUpdate=1` 且系统版本已入库时，补发一次带 `xv=<lstVer>` 的请求取中英文 `changeLog`（`l=zh_CN` / `l=en_US`），
+   再调用 `/api/v3/xms/getXmsVer` 取每个应用的最新版本号（接口有时返回空，缺失时回落到 `changeLog` 的 `versionCode`）；
+3. 写入 `xms`（一次推送一行）+ `xms_app`（推送里每个应用一行，含包名 / 版本号 / 中英日志）。
+
+```sql
+-- 某机型最新的 XMS 推送与应用清单
+SELECT x.version, x.rom_version, x.push_date, a.pkg, a.name, a.pkg_ver, a.logs
+  FROM xms x JOIN xms_app a ON a.xms_id = x.id
+ WHERE x.code = 'violin' AND x.is_latest = 1
+ ORDER BY a.id;
+```
+
+* **`is_latest`**：只有「查询时的当前系统版本 == 接口返回的 `LatestRom`」才标 1，表示这是最新系统版本上的最新 XMS；
+  接口没返回 `LatestRom`（探测出来的未发布版本等）时一律标 0，不做「库内最新版本」兜底——否则 `ota_full.py`
+  一轮里探测多个版本时，标志会随最后一次请求来回翻转。同一分支同时只有一行为 1（写入新的一行时会把同分支其它行清零）。
+* **`push_date`**：接口不提供 XMS 发布时间，记的是首次抓取到该版本的日期；同一（分支代码, XMS 版本）的后续系统版本行沿用最早那天的日期。
+* 唯一键是（`code`, `version`, `rom_version`）——同一份 XMS 会挂在不同系统版本上（如 `C11` 对 302/303/304 都能推），每种组合一行。
+* 系统版本还没进 `roms` 时（探测出来的版本）不写库，等它入库后下一轮自然补上；日志按（分支, XMS 版本）在进程内缓存，同轮只请求一次。
+* 目前只有中国大陆（`zone=1`）机型会返回 `hasXmsUpdate=1`，国际版实测恒为 0；解析逻辑两种区域都兼容。
+* **只抓 OS3 及以上系统版本**：接口约定 XMS 版本号首字母对应系统大版本（`C` → HyperOS 3、`D` → HyperOS 4……），
+  OS1 / OS2 与 MIUI 版本直接跳过（见 `XmsStore.MIN_OS_MAJOR`）。导出时 `os` 字段由版本号首字母推导，供前端标注。
+
+导出（`exporter.py` 调用 `export_xms()` → `api/v3/xms/`）：
+
+| 文件 | 内容 |
+| --- | --- |
+| `v3/xms/index.json` | 统计（推送 / 应用 / 机型 / 版本数）、版本分布（含 `os` 标注，如 C11 → OS3）、机型列表（含最近一次推送）、应用包名索引（含详情文件 `path`） |
+| `v3/xms/apps/<包名>.json` | 单个包名的全部推送记录：机型、系统版本、应用版本、推送日期、更新日志、APK 文件名 / 体积 / 校验值 |
+| `v3/xms/devices/<机型>.json` | 单台机型的全部 XMS 推送、注意事项与每个应用的日志 / 安装包信息 |
+
+APK 的签名下载地址带时效性（未签名直链 403），因此**不写进静态 JSON**：官网 `/xms` 页面点下载时，
+由 `app/web/server/api/xms/download.post.ts` 现场重新请求 `getXmsVer` 换取签名链接（与 ROM 高速下载同一策略）。
+
 ---
 
 ## 数据库结构 / Database Schema
@@ -700,6 +753,8 @@ python3 scripts/import_hub_sitelog.py --drop-types chore,build,docs   # 只保�
 - **`branches.sql`** — 分支表：分支类型、中英文名称、标签（`tag`）、代码后缀（`code`）、版本代码（`vercode`）、运营商、区域、分区（`zone`）、可见性（`visibility`）、是否政企版（`ep`）
 - **`series.sql`** — 机型系列表：品牌（`brand`：xiaomi / redmi / poco）、中英文名称（`name_zh` / `name_en`）、设备归属（`device_ids`，JSON 数组）、排序（`sort_order`）
 - **`sitelog.sql`** — 站点日志表：`site` 区分站点（`nuxtmr` → `api/v1/sitelog.json`、`hyperos.fans` → `api/v2/sitelog.json`、`hub.web` / `hub.admin` → `api/v3/sitelog.json`），`kind` 区分行类型（`entry` 日志条目 / `meta` 站点级元信息如 `icons` 调色板），含版本号（`ver`）、图标（`icon`）、日期（`log_date`）、新增机型摘要（`devices_zh` / `devices_en`）与日志正文（`logs`，`[{"zh","en"},...]`）
+- **`xms.sql`** — XMS（SOTA 系统应用更新）推送表：分支代码（`code`）、设备代号（`device`）、区域 / 分区、XMS 版本号（`version`，如 `C11`）、对应系统版本（`rom_version` / `rom_id`）、包数量（`pkg_cnt`）、优先级（`prio`）、注意事项（`notice`）、是否为最新（`is_latest`）、推送日期（`push_date`，首次抓取日期）、更新时间戳（`update_date`）；唯一键（`code`, `version`, `rom_version`）
+- **`xms_app.sql`** — XMS 应用明细表：所属推送（`xms_id`）、包名（`pkg`）、中英文应用 / 模块名（`name` / `name_en`）、应用版本号（`pkg_ver`）、更新日志（`logs`，`[{"zh","en"},...]`，按包名 + 条目序号对齐）；`pkg` 为空串表示该日志模块接口没给包名
 
 ---
 
@@ -709,7 +764,7 @@ python3 scripts/import_hub_sitelog.py --drop-types chore,build,docs   # 只保�
 
 | 文件 | 说明 |
 | --- | --- |
-| `exporter.py` | 入口脚本：遍历 `common.fullDevices` 依次执行 `exportV1` / `exportV2` / `exportV3`，再执行 `export_dev()` 导出 `api/v3/dev/**`、`export_v1_extras()` / `export_v2_extras()` 导出两个参考站点的附属接口（见「V1 / V2 附属文件」）与 `export_hub_extras()` 导出 `api/v3/sitelog.json` / `api/v3/tools.json`，完成后调用 `app/web/scripts/generate-index.mjs`（Node.js）重新生成 `api/v3/index.json`、`api/v3/stats.json`、`api/v3/roms/*.json` 与 `api/v3/releases/*.json` |
+| `exporter.py` | 入口脚本：遍历 `common.fullDevices` 依次执行 `exportV1` / `exportV2` / `exportV3`，再执行 `export_dev()` 导出 `api/v3/dev/**`、`export_xms()` 导出 `api/v3/xms/**`、`export_v1_extras()` / `export_v2_extras()` 导出两个参考站点的附属接口（见「V1 / V2 附属文件」）与 `export_hub_extras()` 导出 `api/v3/sitelog.json` / `api/v3/tools.json`，完成后调用 `app/web/scripts/generate-index.mjs`（Node.js）重新生成 `api/v3/index.json`、`api/v3/stats.json`、`api/v3/roms/*.json` 与 `api/v3/releases/*.json` |
 | `migrate_logs_multilang.py` | 把 `roms` 的 21 个 `logs_*` 列迁移为「`logs` 多语言分组 + `roms.logs` 单列」；旧表保留为 `logs_legacy`，`--dry-run` 只统计，`--verify N` 抽查中英文一致性；结束时自动跑去重体检 |
 | `resequence_ids.py` | 把 `roms` / `dev` / `logs` 的 id 重排成连续自增并归位自增计数器（消除 `AUTO_INCREMENT` 空档）；roms / dev 先采样 20 秒确认无人写入，并把「旧 id → 新 id」映射写到 `.backup/*_id_map_*.csv`；`logs` 走 `LogMaintenance.compact_ids`，在事务内改 id + 重写 `roms.logs` / `dev.logs` 引用，写库前备份 logs 全表与引用为 JSON |
 | `dedup_logs.py` | `logs` 去重体检与合并：把「同一日志被拆成多行」的分组并成一行，同步重写 `roms.logs` / `dev.logs` 引用（掩码不变，导出结果不受影响）；`--apply` 实际合并（自动备份）、`--prune-unused` 顺带清理孤儿行 |
@@ -732,15 +787,15 @@ python3 scripts/import_hub_sitelog.py --drop-types chore,build,docs   # 只保�
 | `config.py` | 数据库连接配置（host / port / user / password / database）+ Cloudflare Pages 部署配置（`api` 基础地址 + `ids` 站点钩子列表，默认三个站点：HUB / HyperOS.fans / MIUIer）+ DeepSeek 校对配置（`deepseek_api_key` / `deepseek_model` / `deepseek_base_url` / `deepseek_reasoning_effort`；key 也可用环境变量 `DEEPSEEK_API_KEY` 提供）+ LM Studio 本地翻译配置（`lmstudio_base_url` / `lmstudio_model` / `lmstudio_timeout`） |
 | `push.py` | 一键全流程：运行 `exporter.py` 导出 → 在 `data` 子仓库提交并推送（commit message 为当前日期时间）→ 调用 `deploy.py` 依次部署 `config.ids` 中的所有站点（站点之间默认停留 10 秒），任一站点失败即以非 0 退出码结束 |
 | `deploy.py` | 仅触发部署：按 `config.ids` 顺序 POST `{config.api}/{id}`（Cloudflare Pages deploy hook），逐个打印站点名、部署 ID / short_id / URL，每个 hook 触发后默认停留 10 秒再触发下一个站点（`--interval` 可调，0 表示不等待）；可传站点名或 hook id 前缀只部署指定站点（如 `python3 scripts/deploy.py HUB`），`--list` 只列出目标；全部成功退出码为 0，否则为 1 |
-| `miroms/` | 核心包：`constants.py`（常量、SDK 版本、Android 代号、分支表、语种表）、`data.py`（设备列表）、`database.py`（数据库访问 + 事务）、`network.py` / `crypto.py` / `firmware.py`（小米服务器抓取与解密）、`recorder.py`（数据录入）、`changelog.py`（更新日志）、`logs_store.py`（日志多语言分组读写）、`logs_text.py`（文本判定 + 繁简转换）、`logs_maintenance.py`（日志去重 / 引用重写 / content 一致性 / 语言掩码 / id 压缩 / 体检）、`logs_proofread.py`（日志多语言校对 / AI 复核）、`deepseek.py`（DeepSeek API 客户端）、`local_mt.py`（LM Studio 本地翻译客户端 + Hunyuan-MT 提示词 / 译文校验）、`sitelog_store.py`（站点日志落库）、`validator.py`（校验）、`exporters.py`（V1/V2/V3 + 开发版导出器）、`legacy_exporters.py`（api/v1 = NuxtMR、api/v2 = HyperOS.fans、api/v3 = hub 自身的站点附属接口导出）、`utils.py`（工具函数） |
+| `miroms/` | 核心包：`constants.py`（常量、SDK 版本、Android 代号、分支表、语种表）、`data.py`（设备列表）、`database.py`（数据库访问 + 事务）、`network.py` / `crypto.py` / `firmware.py`（小米服务器抓取与解密、OTA 请求表单）、`recorder.py`（数据录入）、`changelog.py`（更新日志）、`xms.py`（XMS / SOTA 应用更新解析与入库）、`logs_store.py`（日志多语言分组读写）、`logs_text.py`（文本判定 + 繁简转换）、`logs_maintenance.py`（日志去重 / 引用重写 / content 一致性 / 语言掩码 / id 压缩 / 体检）、`logs_proofread.py`（日志多语言校对 / AI 复核）、`deepseek.py`（DeepSeek API 客户端）、`local_mt.py`（LM Studio 本地翻译客户端 + Hunyuan-MT 提示词 / 译文校验）、`sitelog_store.py`（站点日志落库）、`validator.py`（校验）、`exporters.py`（V1/V2/V3 + 开发版导出器）、`legacy_exporters.py`（api/v1 = NuxtMR、api/v2 = HyperOS.fans、api/v3 = hub 自身的站点附属接口导出）、`utils.py`（工具函数） |
 
 ### 抓取 / 部署脚本
 
 | 文件 | 说明 |
 | --- | --- |
 | `get_new_branch.py` | Fastboot + OTA 探测，发现新分支 / 新版本 |
-| `ota_former.py` | OTA 版本检测 |
-| `ota_full.py` | 全量 OTA 偏移探测 |
+| `ota_former.py` | OTA 版本检测（顺带解析 XMS / SOTA 应用更新并写入 `xms` / `xms_app`） |
+| `ota_full.py` | 全量 OTA 偏移探测（同样会记录 XMS） |
 | `xfu_full.py` | 本地 HTML 核查 |
 | `get_current_fastboot.py` | 抓取当前 Fastboot 包信息 |
 | `mgc_fastboot.py` | 小米社区 API 抓取 |
@@ -756,7 +811,8 @@ python3 scripts/import_hub_sitelog.py --drop-types chore,build,docs   # 只保�
 小米更新服务器 (update.miui.com)
         │  network / crypto / firmware 抓取并解密
         ▼
-MySQL 数据库 (miroms: devices / roms / logs / dev / branches / series)
+MySQL 数据库 (miroms: devices / roms / logs / dev / branches / series / xms / xms_app)
+        │  python3 scripts/ota_former.py / ota_full.py / get_new_branch.py  → 新 ROM + XMS 应用更新
         │  python3 scripts/sync_devices.py        → 更新 miroms/data.py 设备列表
         │  python3 scripts/fix_missing_tag_mappings.py --apply（必要时）
         │  python3 scripts/migrate_logs_multilang.py        → 日志多语言分组（一次性）

@@ -121,9 +121,8 @@ def main() -> None:
 								queried_ota.add((devcode, version))
 								print(f"\r{datetime.now().strftime('%Y-%m-%d %H:%M:%S')} 正在检测 {device} {devcode} {version}                                                  ", end="", flush=True)
 								region = '' if device in ONE_DEVICES else br['region']
-								form_json = common.FirmwareParser.build_ota_form(device, devcode, region, 'F', br['zone'], andv, version)
-								encrypted = common.CryptoManager.encrypt(form_json)
-								common.NetworkClient.fetch_and_check(encrypted)
+								form = common.FirmwareParser.build_ota_form(device, devcode, region, 'F', br['zone'], andv, version)
+								common.NetworkClient.fetch_and_check(form)
 
 			# === 阶段3: 未知 device+code 组合的 OTA 探测 ===
 			elif (device, devcode) not in known_codes:
@@ -131,11 +130,10 @@ def main() -> None:
 					if (devcode, '') in queried_ota:
 						continue
 					queried_ota.add((devcode, ''))
-					form_json = common.FirmwareParser.build_ota_form(
+					form = common.FirmwareParser.build_ota_form(
 						device, devcode, br['region'], 'F', br['zone'], '14.0', ''
 					)
-					encrypted = common.CryptoManager.encrypt(form_json)
-					common.NetworkClient.fetch_and_check(encrypted)
+					common.NetworkClient.fetch_and_check(form)
 
 	print(f"\n[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 新分支检测完成                                ")
 

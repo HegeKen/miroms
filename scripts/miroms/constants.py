@@ -10,6 +10,8 @@ class Constants:
 	MIUI_KEY: bytes = field(default_factory=lambda: b"miuiotavalided11")
 	MIUI_IV: bytes = field(default_factory=lambda: b"0102030405060708")
 	CHECK_URL: str = "https://update.miui.com/updates/miotaV3.php"
+	# XMS（SOTA 系统应用更新）应用版本查询接口，见 miroms/xms.py
+	XMS_VER_URL: str = "https://update.miui.com/api/v3/xms/getXmsVer"
 
 	SDK_VERSIONS: Dict[str, str] = field(default_factory=lambda: {
 		"17.0": "37","16.0": "36", "16": "36", "15": "35", "15.0": "35",

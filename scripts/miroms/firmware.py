@@ -1,7 +1,6 @@
-import json
 from typing import Set, List, Tuple, Dict, Any, Optional, Union
 
-from miroms.constants import _const
+from miroms.constants import HyperOSForm
 from miroms.utils import VersionUtils
 from miroms.database import DatabaseManager
 from miroms.data import flags
@@ -173,29 +172,45 @@ class FirmwareParser:
 								)
 				return result
 
+		# 区域 → 请求表单的 r 字段（与 fetch_changelog.py、Android 端 OtaApi.kt 保持一致）
+		REGION_FIELDS: Dict[str, str] = {"cn": "CN", "global": "GL"}
+
 		@classmethod
 		def build_ota_form(cls, device: str, code: str, region: str,
 											 branch: str, zone: Union[str, int],
-											 android: str, version: str) -> str:
-				"""构建OTA请求表单 (原: OTAFormer)"""
-				android_ver = android.split(".")[0] if android else "14"
+											 android: str, version: str) -> Dict[str, Any]:
+				"""构建 OTA 请求表单 (原: OTAFormer)
 
-				form = {
-						"d": code,
-						"obv": version[:5],
-						"b": branch,
-						"options": {"zone": int(zone) if isinstance(zone, str) else zone},
+				miotaV3.php 要求把 HyperOSForm 模板里的固定字段一并带上：只发 d / obv / c
+				这类少量字段时服务端认不出请求，只会回一个没有 LatestRom 的 patchInfo
+				（表现为「检测不到新版本」）。这里的表单与 fetch_changelog.py、Android 端
+				OtaApi.kt 完全一致，只是换成了当前机型 / 分支 / 版本。
+				返回字典（CryptoManager.encrypt 可直接加密字典）。
+
+				branch 为分支类型（F=正式版 / X=开发版），不是 ROM 标签。
+				"""
+				form: Dict[str, Any] = dict(HyperOSForm)
+				form["options"] = dict(form.get("options") or {})
+
+				android_ver = android or "14"
+				region_code = (region or "").strip().lower()
+				ver = (version or "").strip()
+				os_ver = ver.replace("OS1", "V816") if "OS1" in ver else ver
+
+				form.update({
+						"b": branch if branch in ("F", "X") else "F",
 						"c": android_ver,
 						"sdk": VersionUtils.sdk_version(android_ver),
-				}
-
-				if region == 'cn':
-						form["pn"] = code
-						form["r"] = 'CN'
-				else:
-						form["r"] = 'GL'
-						form["pn"] = code if code == f"{device}_global" else code.split('_global')[0]
-
-				form["v"] = 'MIUI-' + version.replace('OS1', 'V816') if "OS1" in version else version
-
-				return json.dumps(form)
+						"d": code,
+						"p": device or code,
+						"pn": code.split("_global")[0] if "_global" in code else code,
+						"r": cls.REGION_FIELDS.get(region_code, region_code or "GL"),
+						"l": "zh_CN" if region_code == "cn" else "en_US",
+						"v": os_ver,
+						# ov 保留原始版本号（OS1.x 不替换），便于回查 roms.version
+						"ov": ver,
+				})
+				form["options"]["zone"] = (int(zone) if str(zone).strip().isdigit()
+																			else (1 if region_code == "cn" else 2))
+				form["options"]["cv"] = os_ver
+				return form

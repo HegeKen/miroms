@@ -29,9 +29,16 @@ class CryptoManager:
 
 		@classmethod
 		def encrypt(cls, json_request: Union[Dict, str]) -> str:
-				"""AES-CBC加密并URL编码 (原: miui_encrypt)"""
+				"""AES-CBC加密并URL编码 (原: miui_encrypt)
+
+				json_request 可以是表单字典或已经序列化好的 JSON 字符串；
+				传字典时按 JSON 序列化（旧实现直接 str(dict)，会得到单引号的 Python repr）。
+				"""
 				cipher = AES.new(_const.MIUI_KEY, AES.MODE_CBC, _const.MIUI_IV)
-				text = str(json_request).encode("ascii")
+				if isinstance(json_request, (dict, list)):
+						text = json.dumps(json_request, ensure_ascii=False).encode("utf-8")
+				else:
+						text = str(json_request).encode("utf-8")
 				padded = pad(text, AES.block_size)
 				# 必须真正执行 AES 加密：此前漏掉 cipher.encrypt()，只把「明文 + PKCS#7 填充」
 				# 做了 base64，服务端解不出任何有效表单，只能回空的 patchInfo（Code 2000 success）。
