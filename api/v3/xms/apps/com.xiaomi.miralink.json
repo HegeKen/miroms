@@ -1,149 +1,208 @@
 {
   "pkg": "com.xiaomi.miralink",
   "name": {
-    "zh": "无线显示器 W-alpha",
-    "en": "无线显示器 W-alpha"
+    "zh": "无线显示器",
+    "en": "Wireless Display"
   },
-  "apkName": "无线显示器 W-alpha",
+  "apkName": "无线显示器",
   "latestVersion": "4000002",
-  "recordCount": 5,
-  "deviceCount": 2,
-  "devices": [
-    {
-      "device": "sheng",
-      "name": {
-        "zh": "小米平板 6S Pro 12.4",
-        "en": "Xiaomi Pad 6S Pro 12.4"
-      }
-    },
-    {
-      "device": "violin",
-      "name": {
-        "zh": "小米平板 7S Pro 12.5",
-        "en": "Xiaomi Pad 7S Pro 12.5"
-      }
-    }
+  "recordCount": 13,
+  "deviceCount": 10,
+  "os": [
+    "OS3"
   ],
-  "records": [
+  "regions": [
+    "cn"
+  ],
+  "brands": [
+    "poco",
+    "redmi",
+    "xiaomi"
+  ],
+  "tablet": true,
+  "types": [
+    "universal"
+  ],
+  "groups": [
     {
       "version": "C11",
       "os": "OS3",
       "appVersion": "4000002",
-      "romVersion": "OS3.0.306.0.WNXCNXM",
-      "romRelease": "2026-10-16",
-      "android": "16.0",
-      "device": "sheng",
-      "deviceName": {
-        "zh": "小米平板 6S Pro 12.4",
-        "en": "Xiaomi Pad 6S Pro 12.4"
-      },
-      "code": "sheng",
-      "region": "cn",
-      "zone": 1,
+      "type": "universal",
       "pushDate": "2026-10-25",
       "isLatest": true,
-      "apkName": "无线显示器 W-alpha",
+      "apkName": "无线显示器",
       "file": "miralink-4.0.0.2-universal-7a8c0cf16a.apk",
       "size": 15711794,
       "md5": "7a8c0cf16a535406e2c215c5df94ac5f",
       "sha256": "c51e526deb81655131b2bedec228e0ea101f97ef",
-      "logs": []
-    },
-    {
-      "version": "C11",
-      "os": "OS3",
-      "appVersion": "4000002",
-      "romVersion": "OS3.0.304.0.WOTCNXM",
-      "romRelease": "2026-08-03",
-      "android": "16.0",
-      "device": "violin",
-      "deviceName": {
-        "zh": "小米平板 7S Pro 12.5",
-        "en": "Xiaomi Pad 7S Pro 12.5"
-      },
-      "code": "violin",
-      "region": "cn",
-      "zone": 1,
-      "pushDate": "2026-10-25",
-      "isLatest": true,
-      "apkName": "无线显示器 W-alpha",
-      "file": "miralink-4.0.0.2-universal-7a8c0cf16a.apk",
-      "size": 15711794,
-      "md5": "7a8c0cf16a535406e2c215c5df94ac5f",
-      "sha256": "c51e526deb81655131b2bedec228e0ea101f97ef",
-      "logs": []
-    },
-    {
-      "version": "C11",
-      "os": "OS3",
-      "appVersion": "4000002",
-      "romVersion": "OS3.0.302.0.WOTCNXM",
-      "romRelease": "2026-09-20",
-      "android": "16.0",
-      "device": "violin",
-      "deviceName": {
-        "zh": "小米平板 7S Pro 12.5",
-        "en": "Xiaomi Pad 7S Pro 12.5"
-      },
-      "code": "violin",
-      "region": "cn",
-      "zone": 1,
-      "pushDate": "2026-10-25",
-      "isLatest": false,
-      "apkName": "无线显示器 W-alpha",
-      "file": "miralink-4.0.0.2-universal-7a8c0cf16a.apk",
-      "size": 15711794,
-      "md5": "7a8c0cf16a535406e2c215c5df94ac5f",
-      "sha256": "c51e526deb81655131b2bedec228e0ea101f97ef",
-      "logs": []
-    },
-    {
-      "version": "C11",
-      "os": "OS3",
-      "appVersion": "4000002",
-      "romVersion": "OS3.0.303.0.WOTCNXM",
-      "romRelease": "2026-05-11",
-      "android": "16.0",
-      "device": "violin",
-      "deviceName": {
-        "zh": "小米平板 7S Pro 12.5",
-        "en": "Xiaomi Pad 7S Pro 12.5"
-      },
-      "code": "violin",
-      "region": "cn",
-      "zone": 1,
-      "pushDate": "2026-10-25",
-      "isLatest": false,
-      "apkName": "无线显示器 W-alpha",
-      "file": "miralink-4.0.0.2-universal-7a8c0cf16a.apk",
-      "size": 15711794,
-      "md5": "7a8c0cf16a535406e2c215c5df94ac5f",
-      "sha256": "c51e526deb81655131b2bedec228e0ea101f97ef",
-      "logs": []
-    },
-    {
-      "version": "C11",
-      "os": "OS3",
-      "appVersion": "4000002",
-      "romVersion": "OS3.0.305.0.WOTCNXM",
-      "romRelease": "2026-10-21",
-      "android": "16.0",
-      "device": "violin",
-      "deviceName": {
-        "zh": "小米平板 7S Pro 12.5",
-        "en": "Xiaomi Pad 7S Pro 12.5"
-      },
-      "code": "violin",
-      "region": "cn",
-      "zone": 1,
-      "pushDate": "2026-10-25",
-      "isLatest": false,
-      "apkName": "无线显示器 W-alpha",
-      "file": "miralink-4.0.0.2-universal-7a8c0cf16a.apk",
-      "size": 15711794,
-      "md5": "7a8c0cf16a535406e2c215c5df94ac5f",
-      "sha256": "c51e526deb81655131b2bedec228e0ea101f97ef",
-      "logs": []
+      "logs": [],
+      "recordCount": 13,
+      "devices": [
+        {
+          "device": "turner",
+          "name": {
+            "zh": "Redmi K Pad",
+            "en": "Redmi K Pad"
+          },
+          "code": "turner",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.310.0.WAOCNXM"
+          ]
+        },
+        {
+          "device": "dizi",
+          "name": {
+            "zh": "Redmi Pad Pro / 哈利·波特版 / POCO Pad",
+            "en": "edmi Pad Pro / Special Edition featuring Harry Potter / POCO Pad"
+          },
+          "code": "dizi",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.307.0.WNSCNXM"
+          ]
+        },
+        {
+          "device": "ruan",
+          "name": {
+            "zh": "Redmi Pad Pro 5G / POCO Pad 5G",
+            "en": "Redmi Pad Pro 5G / POCO Pad 5G"
+          },
+          "code": "ruan",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.307.0.WFSCNXM"
+          ]
+        },
+        {
+          "device": "taiko",
+          "name": {
+            "zh": "REDMI 平板 2",
+            "en": "REDMI Pad 2"
+          },
+          "code": "taiko",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.307.0.WOVCNXM"
+          ]
+        },
+        {
+          "device": "flute",
+          "name": {
+            "zh": "REDMI 平板 2 Pro",
+            "en": "REDMI Pad 2 Pro"
+          },
+          "code": "flute",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.308.0.WPWCNXM"
+          ]
+        },
+        {
+          "device": "organ",
+          "name": {
+            "zh": "REDMI 平板 2 Pro 5G",
+            "en": "REDMI Pad 2 Pro 5G"
+          },
+          "code": "organ",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.305.0.WPXCNXM"
+          ]
+        },
+        {
+          "device": "sheng",
+          "name": {
+            "zh": "小米平板 6S Pro 12.4",
+            "en": "Xiaomi Pad 6S Pro 12.4"
+          },
+          "code": "sheng",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.306.0.WNXCNXM"
+          ]
+        },
+        {
+          "device": "violin",
+          "name": {
+            "zh": "小米平板 7S Pro 12.5",
+            "en": "Xiaomi Pad 7S Pro 12.5"
+          },
+          "code": "violin",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.305.0.WOTCNXM",
+            "OS3.0.304.0.WOTCNXM",
+            "OS3.0.303.0.WOTCNXM",
+            "OS3.0.302.0.WOTCNXM"
+          ]
+        },
+        {
+          "device": "uke",
+          "name": {
+            "zh": "小米平板7",
+            "en": "Xiaomi Pad 7"
+          },
+          "code": "uke",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.306.0.WOZCNXM"
+          ]
+        },
+        {
+          "device": "muyu",
+          "name": {
+            "zh": "小米平板7 Pro",
+            "en": "Xiaomi Pad 7 Pro"
+          },
+          "code": "muyu",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.307.0.WOYCNXM"
+          ]
+        }
+      ]
     }
   ]
 }

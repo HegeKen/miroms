@@ -32,6 +32,15 @@ try:
 except Exception as e:
   print(f"开发版周报生成失败: {e}", file=sys.stderr)
 
+# 先整理 XMS：按包名统一应用名、用 logs 表补多语言、把旧版按模块名重复录入的无包名行搬走
+print("\n--- 整理 XMS 数据（名称 / 多语言 / 无包名模块） ---")
+try:
+  xms_stats = common.XmsStore.enrich_all(apply=True)
+  print(f"XMS 整理完成：应用名 {xms_stats['names']} 行、日志 {xms_stats['logs']} 行、"
+        f"旧版无包名行 {xms_stats['legacy']} 条、无包名模块 {xms_stats['extras']} 条")
+except Exception as e:
+  print(f"XMS 整理失败: {e}", file=sys.stderr)
+
 # 导出 XMS（SOTA 系统应用更新）索引 / 应用详情 / 机型详情（供官网 /xms 页面）
 print("\n--- 导出 XMS 应用更新 (v3/xms) ---")
 try:

@@ -1,59 +1,34 @@
 {
   "pkg": "com.miui.guardprovider",
   "name": {
-    "zh": "MIUI安全组件OS2",
-    "en": "MIUI安全组件OS2"
+    "zh": "MIUI安全组件",
+    "en": "MIUI Security Module"
   },
   "apkName": "MIUI安全组件OS2",
   "latestVersion": "307",
-  "recordCount": 7,
-  "deviceCount": 4,
-  "devices": [
-    {
-      "device": "amethyst",
-      "name": {
-        "zh": "Redmi Note 14 Pro+",
-        "en": "Redmi Note 14 Pro+"
-      }
-    },
-    {
-      "device": "shennong",
-      "name": {
-        "zh": "小米 14 Pro / Ti",
-        "en": "Xiaomi 14 Pro / Ti"
-      }
-    },
-    {
-      "device": "sheng",
-      "name": {
-        "zh": "小米平板 6S Pro 12.4",
-        "en": "Xiaomi Pad 6S Pro 12.4"
-      }
-    },
-    {
-      "device": "violin",
-      "name": {
-        "zh": "小米平板 7S Pro 12.5",
-        "en": "Xiaomi Pad 7S Pro 12.5"
-      }
-    }
+  "recordCount": 54,
+  "deviceCount": 51,
+  "os": [
+    "OS3"
   ],
-  "records": [
+  "regions": [
+    "cn"
+  ],
+  "brands": [
+    "poco",
+    "redmi",
+    "xiaomi"
+  ],
+  "tablet": true,
+  "types": [
+    "universal"
+  ],
+  "groups": [
     {
       "version": "C11",
       "os": "OS3",
       "appVersion": "307",
-      "romVersion": "OS3.0.306.0.WOPCNXM",
-      "romRelease": "2026-09-22",
-      "android": "16.0",
-      "device": "amethyst",
-      "deviceName": {
-        "zh": "Redmi Note 14 Pro+",
-        "en": "Redmi Note 14 Pro+"
-      },
-      "code": "amethyst",
-      "region": "cn",
-      "zone": 1,
+      "type": "universal",
       "pushDate": "2026-10-25",
       "isLatest": true,
       "apkName": "MIUI安全组件OS2",
@@ -61,151 +36,829 @@
       "size": 15877999,
       "md5": "d093f10619b133a127a2a7f2b00fb03c",
       "sha256": "024a10010e8a2dcdbc433243c513344384619ab5",
-      "logs": []
-    },
-    {
-      "version": "C11",
-      "os": "OS3",
-      "appVersion": "307",
-      "romVersion": "OS3.0.309.0.WNBCNXM",
-      "romRelease": "2026-09-28",
-      "android": "16.0",
-      "device": "shennong",
-      "deviceName": {
-        "zh": "小米 14 Pro / Ti",
-        "en": "Xiaomi 14 Pro / Ti"
-      },
-      "code": "shennong",
-      "region": "cn",
-      "zone": 1,
-      "pushDate": "2026-10-25",
-      "isLatest": true,
-      "apkName": "MIUI安全组件OS2",
-      "file": "guardprovider-3.0.7-20260708.0-universal-d093f10619.apk",
-      "size": 15877999,
-      "md5": "d093f10619b133a127a2a7f2b00fb03c",
-      "sha256": "024a10010e8a2dcdbc433243c513344384619ab5",
-      "logs": []
-    },
-    {
-      "version": "C11",
-      "os": "OS3",
-      "appVersion": "307",
-      "romVersion": "OS3.0.306.0.WNXCNXM",
-      "romRelease": "2026-10-16",
-      "android": "16.0",
-      "device": "sheng",
-      "deviceName": {
-        "zh": "小米平板 6S Pro 12.4",
-        "en": "Xiaomi Pad 6S Pro 12.4"
-      },
-      "code": "sheng",
-      "region": "cn",
-      "zone": 1,
-      "pushDate": "2026-10-25",
-      "isLatest": true,
-      "apkName": "MIUI安全组件OS2",
-      "file": "guardprovider-3.0.7-20260708.0-universal-d093f10619.apk",
-      "size": 15877999,
-      "md5": "d093f10619b133a127a2a7f2b00fb03c",
-      "sha256": "024a10010e8a2dcdbc433243c513344384619ab5",
-      "logs": []
-    },
-    {
-      "version": "C11",
-      "os": "OS3",
-      "appVersion": "307",
-      "romVersion": "OS3.0.304.0.WOTCNXM",
-      "romRelease": "2026-08-03",
-      "android": "16.0",
-      "device": "violin",
-      "deviceName": {
-        "zh": "小米平板 7S Pro 12.5",
-        "en": "Xiaomi Pad 7S Pro 12.5"
-      },
-      "code": "violin",
-      "region": "cn",
-      "zone": 1,
-      "pushDate": "2026-10-25",
-      "isLatest": true,
-      "apkName": "MIUI安全组件OS2",
-      "file": "guardprovider-3.0.7-20260708.0-universal-d093f10619.apk",
-      "size": 15877999,
-      "md5": "d093f10619b133a127a2a7f2b00fb03c",
-      "sha256": "024a10010e8a2dcdbc433243c513344384619ab5",
-      "logs": []
-    },
-    {
-      "version": "C11",
-      "os": "OS3",
-      "appVersion": "307",
-      "romVersion": "OS3.0.302.0.WOTCNXM",
-      "romRelease": "2026-09-20",
-      "android": "16.0",
-      "device": "violin",
-      "deviceName": {
-        "zh": "小米平板 7S Pro 12.5",
-        "en": "Xiaomi Pad 7S Pro 12.5"
-      },
-      "code": "violin",
-      "region": "cn",
-      "zone": 1,
-      "pushDate": "2026-10-25",
-      "isLatest": false,
-      "apkName": "MIUI安全组件OS2",
-      "file": "guardprovider-3.0.7-20260708.0-universal-d093f10619.apk",
-      "size": 15877999,
-      "md5": "d093f10619b133a127a2a7f2b00fb03c",
-      "sha256": "024a10010e8a2dcdbc433243c513344384619ab5",
-      "logs": []
-    },
-    {
-      "version": "C11",
-      "os": "OS3",
-      "appVersion": "307",
-      "romVersion": "OS3.0.303.0.WOTCNXM",
-      "romRelease": "2026-05-11",
-      "android": "16.0",
-      "device": "violin",
-      "deviceName": {
-        "zh": "小米平板 7S Pro 12.5",
-        "en": "Xiaomi Pad 7S Pro 12.5"
-      },
-      "code": "violin",
-      "region": "cn",
-      "zone": 1,
-      "pushDate": "2026-10-25",
-      "isLatest": false,
-      "apkName": "MIUI安全组件OS2",
-      "file": "guardprovider-3.0.7-20260708.0-universal-d093f10619.apk",
-      "size": 15877999,
-      "md5": "d093f10619b133a127a2a7f2b00fb03c",
-      "sha256": "024a10010e8a2dcdbc433243c513344384619ab5",
-      "logs": []
-    },
-    {
-      "version": "C11",
-      "os": "OS3",
-      "appVersion": "307",
-      "romVersion": "OS3.0.305.0.WOTCNXM",
-      "romRelease": "2026-10-21",
-      "android": "16.0",
-      "device": "violin",
-      "deviceName": {
-        "zh": "小米平板 7S Pro 12.5",
-        "en": "Xiaomi Pad 7S Pro 12.5"
-      },
-      "code": "violin",
-      "region": "cn",
-      "zone": 1,
-      "pushDate": "2026-10-25",
-      "isLatest": false,
-      "apkName": "MIUI安全组件OS2",
-      "file": "guardprovider-3.0.7-20260708.0-universal-d093f10619.apk",
-      "size": 15877999,
-      "md5": "d093f10619b133a127a2a7f2b00fb03c",
-      "sha256": "024a10010e8a2dcdbc433243c513344384619ab5",
-      "logs": []
+      "logs": [],
+      "recordCount": 54,
+      "devices": [
+        {
+          "device": "breeze",
+          "name": {
+            "zh": "Redmi 13 5G / Redmi Note 13R 5G / POCO M6 Plus 5G",
+            "en": "Redmi 13 5G / Redmi Note 13R 5G / POCO M6 Plus 5G"
+          },
+          "code": "breeze",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.303.0.WNUCNXM"
+          ]
+        },
+        {
+          "device": "lake",
+          "name": {
+            "zh": "Redmi 14C",
+            "en": "Redmi 14C"
+          },
+          "code": "lake",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.305.0.WGTCNXM"
+          ]
+        },
+        {
+          "device": "flame",
+          "name": {
+            "zh": "Redmi 14R 5G / POCO M7 5G",
+            "en": "Redmi 14R 5G / POCO M7 5G"
+          },
+          "code": "flame",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.303.0.WGUCNXM"
+          ]
+        },
+        {
+          "device": "tornado",
+          "name": {
+            "zh": "REDMI 15C 5G / REDMI 15R 5G",
+            "en": "REDMI 15C 5G / REDMI 15R 5G"
+          },
+          "code": "tornado",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.302.0.WPOCNXM"
+          ]
+        },
+        {
+          "device": "turner",
+          "name": {
+            "zh": "Redmi K Pad",
+            "en": "Redmi K Pad"
+          },
+          "code": "turner",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.310.0.WAOCNXM"
+          ]
+        },
+        {
+          "device": "socrates",
+          "name": {
+            "zh": "Redmi K60 Pro",
+            "en": "Redmi K60 Pro"
+          },
+          "code": "socrates",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.304.0.WMKCNXM"
+          ]
+        },
+        {
+          "device": "manet",
+          "name": {
+            "zh": "Redmi K70 Pro",
+            "en": "Redmi K70 Pro"
+          },
+          "code": "manet",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.306.0.WNMCNXM"
+          ]
+        },
+        {
+          "device": "duchamp",
+          "name": {
+            "zh": "Redmi K70E / POCO X6 Pro 5G",
+            "en": "Redmi K70E / POCO X6 Pro 5G"
+          },
+          "code": "duchamp",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.305.0.WNLCNXM"
+          ]
+        },
+        {
+          "device": "zorn",
+          "name": {
+            "zh": "REDMI K80",
+            "en": "REDMI K80"
+          },
+          "code": "zorn",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.309.0.WOKCNXM"
+          ]
+        },
+        {
+          "device": "miro",
+          "name": {
+            "zh": "REDMI K80 Pro",
+            "en": "REDMI K80 Pro"
+          },
+          "code": "miro",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.305.0.WOMCNXM"
+          ]
+        },
+        {
+          "device": "warsaw",
+          "name": {
+            "zh": "REDMI K90 至尊版",
+            "en": "REDMI K90 Ultra"
+          },
+          "code": "warsaw",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.309.0.WHPCNXM"
+          ]
+        },
+        {
+          "device": "garnet",
+          "name": {
+            "zh": "Redmi Note 13 Pro 5G / POCO X6 5G",
+            "en": "Redmi Note 13 Pro 5G / POCO X6 5G"
+          },
+          "code": "garnet",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.306.0.WNRCNXM"
+          ]
+        },
+        {
+          "device": "zircon",
+          "name": {
+            "zh": "Redmi Note 13 Pro+ 5G",
+            "en": "Redmi Note 13 Pro+ 5G"
+          },
+          "code": "zircon",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.305.0.WNOCNXM"
+          ]
+        },
+        {
+          "device": "beryl",
+          "name": {
+            "zh": "Redmi Note 14 5G / POCO M7 Pro 5G",
+            "en": "Redmi Note 14 5G / POCO M7 Pro 5G"
+          },
+          "code": "beryl",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.306.0.WOQCNXM"
+          ]
+        },
+        {
+          "device": "malachite",
+          "name": {
+            "zh": "Redmi Note 14 Pro / POCO X7",
+            "en": "Redmi Note 14 Pro / POCO X7"
+          },
+          "code": "malachite",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.309.0.WOOCNXM"
+          ]
+        },
+        {
+          "device": "amethyst",
+          "name": {
+            "zh": "Redmi Note 14 Pro+",
+            "en": "Redmi Note 14 Pro+"
+          },
+          "code": "amethyst",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.306.0.WOPCNXM"
+          ]
+        },
+        {
+          "device": "kunzite",
+          "name": {
+            "zh": "REDMI Note 15 5G",
+            "en": "REDMI Note 15 5G"
+          },
+          "code": "kunzite",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.304.0.WPQCNXM"
+          ]
+        },
+        {
+          "device": "lapis",
+          "name": {
+            "zh": "REDMI Note 15 Pro 5G",
+            "en": "REDMI Note 15 Pro 5G"
+          },
+          "code": "lapis",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.309.0.WPPCNXM"
+          ]
+        },
+        {
+          "device": "flourite",
+          "name": {
+            "zh": "REDMI Note 15 Pro+",
+            "en": "REDMI Note 15 Pro+"
+          },
+          "code": "flourite",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.318.0.WPRCNXM"
+          ]
+        },
+        {
+          "device": "spring",
+          "name": {
+            "zh": "REDMI Note 15R 5G",
+            "en": "REDMI Note 15R 5G"
+          },
+          "code": "spring",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.302.0.WOUCNXM"
+          ]
+        },
+        {
+          "device": "dizi",
+          "name": {
+            "zh": "Redmi Pad Pro / 哈利·波特版 / POCO Pad",
+            "en": "edmi Pad Pro / Special Edition featuring Harry Potter / POCO Pad"
+          },
+          "code": "dizi",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.307.0.WNSCNXM"
+          ]
+        },
+        {
+          "device": "ruan",
+          "name": {
+            "zh": "Redmi Pad Pro 5G / POCO Pad 5G",
+            "en": "Redmi Pad Pro 5G / POCO Pad 5G"
+          },
+          "code": "ruan",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.307.0.WFSCNXM"
+          ]
+        },
+        {
+          "device": "peridot",
+          "name": {
+            "zh": "Redmi Turbo 3 / POCO F6",
+            "en": "Redmi Turbo 3 / POCO F6"
+          },
+          "code": "peridot",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.305.0.WNPCNXM"
+          ]
+        },
+        {
+          "device": "rodin",
+          "name": {
+            "zh": "REDMI Turbo 4 / POCO X7 Pro",
+            "en": "REDMI Turbo 4 / POCO X7 Pro"
+          },
+          "code": "rodin",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.305.0.WOJCNXM"
+          ]
+        },
+        {
+          "device": "onyx",
+          "name": {
+            "zh": "REDMI Turbo 4 Pro / POCO F7",
+            "en": "REDMI Turbo 4 Pro / POCO F7"
+          },
+          "code": "onyx",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.306.0.WOLCNXM"
+          ]
+        },
+        {
+          "device": "klee",
+          "name": {
+            "zh": "REDMI Turbo 5",
+            "en": "REDMI Turbo 5"
+          },
+          "code": "klee",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.307.0.WPJCNXM"
+          ]
+        },
+        {
+          "device": "taiko",
+          "name": {
+            "zh": "REDMI 平板 2",
+            "en": "REDMI Pad 2"
+          },
+          "code": "taiko",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.307.0.WOVCNXM"
+          ]
+        },
+        {
+          "device": "flute",
+          "name": {
+            "zh": "REDMI 平板 2 Pro",
+            "en": "REDMI Pad 2 Pro"
+          },
+          "code": "flute",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.308.0.WPWCNXM"
+          ]
+        },
+        {
+          "device": "organ",
+          "name": {
+            "zh": "REDMI 平板 2 Pro 5G",
+            "en": "REDMI Pad 2 Pro 5G"
+          },
+          "code": "organ",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.305.0.WPXCNXM"
+          ]
+        },
+        {
+          "device": "fuxi",
+          "name": {
+            "zh": "小米 13",
+            "en": "Xiaomi 13"
+          },
+          "code": "fuxi",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.309.0.WMCCNXM"
+          ]
+        },
+        {
+          "device": "nuwa",
+          "name": {
+            "zh": "小米 13 Pro",
+            "en": "Xiaomi 13 Pro"
+          },
+          "code": "nuwa",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.312.0.WMBCNXM"
+          ]
+        },
+        {
+          "device": "ishtar",
+          "name": {
+            "zh": "小米 13 Ultra",
+            "en": "Xiaomi 13 Ultra"
+          },
+          "code": "ishtar",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.308.0.WMACNXM"
+          ]
+        },
+        {
+          "device": "corot",
+          "name": {
+            "zh": "小米 13T Pro / Redmi K60 至尊版",
+            "en": "Xiaomi 13T Pro / Redmi K60 Ultra"
+          },
+          "code": "corot",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.305.0.WMLCNXM"
+          ]
+        },
+        {
+          "device": "houji",
+          "name": {
+            "zh": "小米 14",
+            "en": "Xiaomi 14"
+          },
+          "code": "houji",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.307.0.WNCCNXM"
+          ]
+        },
+        {
+          "device": "shennong",
+          "name": {
+            "zh": "小米 14 Pro / Ti",
+            "en": "Xiaomi 14 Pro / Ti"
+          },
+          "code": "shennong",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.309.0.WNBCNXM"
+          ]
+        },
+        {
+          "device": "aurora",
+          "name": {
+            "zh": "小米 14 Ultra / Ultra Ti",
+            "en": "Xiaomi 14 Ultra"
+          },
+          "code": "aurora",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.308.0.WNACNXM"
+          ]
+        },
+        {
+          "device": "rothko",
+          "name": {
+            "zh": "小米 14T Pro / Redmi K70 至尊版",
+            "en": "Xiaomi 14T Pro / Redmi K70 Ultra"
+          },
+          "code": "rothko",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.308.0.WNNCNXM"
+          ]
+        },
+        {
+          "device": "dijun",
+          "name": {
+            "zh": "小米 15S Pro",
+            "en": "Xiaomi 15S Pro"
+          },
+          "code": "dijun",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.304.0.WODCNXM"
+          ]
+        },
+        {
+          "device": "byron",
+          "name": {
+            "zh": "小米 17 Max",
+            "en": "Xiaomi 17 Max"
+          },
+          "code": "byron",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.310.0.WAFCNXM"
+          ]
+        },
+        {
+          "device": "chagall",
+          "name": {
+            "zh": "小米 17T",
+            "en": "Xiaomi 17T"
+          },
+          "code": "chagall",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.311.0.WPTCNXM"
+          ]
+        },
+        {
+          "device": "warhol",
+          "name": {
+            "zh": "小米 17T Pro",
+            "en": "Xiaomi 17T Pro"
+          },
+          "code": "warhol",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.311.0.WPSCNXM"
+          ]
+        },
+        {
+          "device": "chenfeng",
+          "name": {
+            "zh": "小米 Civi 4 Pro / 小米 14 Civi",
+            "en": "Xiaomi Civi 4 Pro / 小米 14 Civi"
+          },
+          "code": "chenfeng",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.309.0.WNJCNXM"
+          ]
+        },
+        {
+          "device": "luming",
+          "name": {
+            "zh": "小米 Civi 5 Pro",
+            "en": "Xiaomi Civi 5 Pro"
+          },
+          "code": "luming",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.303.0.WOICNXM"
+          ]
+        },
+        {
+          "device": "ruyi",
+          "name": {
+            "zh": "小米 MIX Flip",
+            "en": "Xiaomi MIX Flip"
+          },
+          "code": "ruyi",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.306.0.WNICNXM"
+          ]
+        },
+        {
+          "device": "babylon",
+          "name": {
+            "zh": "小米 MIX Fold 3",
+            "en": "Xiaomi MIX Fold 3"
+          },
+          "code": "babylon",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.304.0.WMVCNXM"
+          ]
+        },
+        {
+          "device": "goku",
+          "name": {
+            "zh": "小米 MIX Fold 4",
+            "en": "Xiaomi MIX Fold 4"
+          },
+          "code": "goku",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.310.0.WNVCNXM"
+          ]
+        },
+        {
+          "device": "sheng",
+          "name": {
+            "zh": "小米平板 6S Pro 12.4",
+            "en": "Xiaomi Pad 6S Pro 12.4"
+          },
+          "code": "sheng",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.306.0.WNXCNXM"
+          ]
+        },
+        {
+          "device": "violin",
+          "name": {
+            "zh": "小米平板 7S Pro 12.5",
+            "en": "Xiaomi Pad 7S Pro 12.5"
+          },
+          "code": "violin",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.305.0.WOTCNXM",
+            "OS3.0.304.0.WOTCNXM",
+            "OS3.0.303.0.WOTCNXM",
+            "OS3.0.302.0.WOTCNXM"
+          ]
+        },
+        {
+          "device": "uke",
+          "name": {
+            "zh": "小米平板7",
+            "en": "Xiaomi Pad 7"
+          },
+          "code": "uke",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.306.0.WOZCNXM"
+          ]
+        },
+        {
+          "device": "muyu",
+          "name": {
+            "zh": "小米平板7 Pro",
+            "en": "Xiaomi Pad 7 Pro"
+          },
+          "code": "muyu",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.307.0.WOYCNXM"
+          ]
+        },
+        {
+          "device": "dash",
+          "name": {
+            "zh": "REDMI Turbo 5 MAX",
+            "en": "REDMI Turbo 5 MAX"
+          },
+          "code": "dash",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-10-25",
+          "isLatest": false,
+          "romVersions": [
+            "OS3.0.306.0.WPLCNXM"
+          ]
+        }
+      ]
     }
   ]
 }

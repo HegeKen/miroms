@@ -1414,6 +1414,65 @@ def _xms_device_names() -> Dict[str, Dict[str, str]]:
 		return names
 
 
+_XMS_TYPE_RANK = {'phone': 0, 'pad': 1, 'fold': 2, 'universal': 3, '': 4}
+
+
+def _xms_pkg_type(file_name: Any) -> str:
+		"""从 APK 文件名里的 phone / pad / tablet / fold / universal 判断安装包类型
+
+		返回 'phone' / 'pad' / 'fold' / 'universal'，判断不出时返回 ''。
+		"""
+		name = str(file_name or '').lower()
+		if not name:
+				return ''
+		for key in ('fold', 'pad', 'tablet', 'phone'):
+				if re.search(r'(?<![a-z])' + key + r'(?![a-z])', name):
+						return 'pad' if key == 'tablet' else key
+		if 'universal' in name:
+				return 'universal'
+		return ''
+
+
+def _xms_device_meta() -> Dict[str, Dict[str, Any]]:
+		"""设备代号 -> {brands: [xiaomi/redmi/poco…], tablet: bool}
+
+		品牌取 devices.full_brands（其次 brands），平板按代表行名称里的 Pad / 平板 判断。
+		"""
+		meta: Dict[str, Dict[str, Any]] = {}
+		rows = DatabaseManager.query_all(
+				"SELECT d.`device`, d.`full_brands`, d.`brands`, d.`full_names` FROM `devices` d "
+				"JOIN (SELECT `device`, COALESCE("
+				"        MAX(CASE WHEN `tag` = 'CnOO' AND `full_brands` IS NOT NULL AND `full_brands` <> '' THEN `id` END),"
+				"        MAX(CASE WHEN `full_brands` IS NOT NULL AND `full_brands` <> '' THEN `id` END),"
+				"        MAX(CASE WHEN `tag` = 'CnOO' THEN `id` END), MIN(`id`)) AS ref_id "
+				"      FROM `devices` GROUP BY `device`) ref "
+				"  ON ref.`device` = d.`device` AND ref.ref_id = d.`id`"
+		)
+		for device, full_brands, brands, full_names in rows or []:
+				values: List[Any] = []
+				if full_brands:
+						try:
+								values = json.loads(full_brands)
+						except (json.JSONDecodeError, TypeError):
+								values = [full_brands]
+				if not values and brands:
+						values = [part.strip().strip('"') for part in str(brands).split(',')]
+				labels = sorted({str(value).strip().lower() for value in values if str(value).strip()})
+				text = ''
+				if full_names:
+						try:
+								parsed = json.loads(full_names)
+								if isinstance(parsed, dict):
+										text = f"{parsed.get('zh') or ''} {parsed.get('en') or ''}"
+						except (json.JSONDecodeError, TypeError):
+								pass
+				meta[str(device)] = {
+						'brands': labels,
+						'tablet': ('平板' in text) or ('pad' in text.lower()),
+				}
+		return meta
+
+
 def _xms_label(pair: Any) -> Dict[str, str]:
 		"""{zh, en} 名称：两边互为兜底，空值统一成空串"""
 		if isinstance(pair, dict):
@@ -1433,8 +1492,42 @@ def _xms_os(version: Any) -> str:
 		return f'OS{major}' if major >= 1 else ''
 
 
+def _xms_name_key(pair: Any) -> str:
+		"""设备 / 应用名排序键：取中文或英文名，忽略大小写"""
+		if isinstance(pair, dict):
+				return str(pair.get('zh') or pair.get('en') or '').casefold()
+		return ''
+
+
+def _xms_i18n(value: Any) -> Dict[str, str]:
+		"""多语言字典（names 列 / 名称对象）-> 去掉空值后的 {语言: 文本}"""
+		if isinstance(value, str):
+				try:
+						value = json.loads(value)
+				except (json.JSONDecodeError, TypeError):
+						return {}
+		if not isinstance(value, dict):
+				return {}
+		return {str(key): str(text).strip() for key, text in value.items()
+						if str(text or '').strip()}
+
+
+def _xms_name(value: Any, zh: Any = '', en: Any = '') -> Dict[str, str]:
+		"""应用名：优先 names 列的多语言字典，缺 zh / en 时用列值兜底"""
+		names = _xms_i18n(value)
+		zh = names.get('zh') or str(zh or '').strip()
+		en = names.get('en') or str(en or '').strip()
+		zh = zh or en
+		en = en or zh
+		if zh:
+				names.setdefault('zh', zh)
+		if en:
+				names.setdefault('en', en)
+		return names
+
+
 def _xms_logs(value: Any) -> List[Dict[str, str]]:
-		"""xms_app.logs（JSON 数组字符串）-> [{zh, en}, ...]"""
+		"""xms_app.logs（JSON 数组字符串）-> [{zh, en, ja, ...}, ...]（保留全部语种）"""
 		if not value:
 				return []
 		if isinstance(value, str):
@@ -1448,11 +1541,30 @@ def _xms_logs(value: Any) -> List[Dict[str, str]]:
 		for entry in value:
 				if not isinstance(entry, dict):
 						continue
-				zh = str(entry.get('zh') or '').strip()
-				en = str(entry.get('en') or '').strip()
-				if zh or en:
-						items.append({'zh': zh, 'en': en})
+				item = _xms_i18n(entry)
+				if item:
+						items.append(item)
 		return items
+
+
+def _xms_extras(value: Any) -> List[Dict[str, Any]]:
+		"""xms.changelog（没有包名的日志模块）-> [{name, logs}, ...]"""
+		if isinstance(value, str):
+				try:
+						value = json.loads(value)
+				except (json.JSONDecodeError, TypeError):
+						return []
+		if not isinstance(value, list):
+				return []
+		extras: List[Dict[str, Any]] = []
+		for item in value:
+				if not isinstance(item, dict):
+						continue
+				name = _xms_i18n(item.get('name'))
+				if not name:
+						continue
+				extras.append({'name': name, 'logs': _xms_logs(item.get('logs'))})
+		return extras
 
 
 def _xms_date(value: Any) -> str:
@@ -1490,8 +1602,10 @@ def export_xms() -> Dict[str, Any]:
 
 		产物：
 		  v3/xms/index.json                 索引：统计、XMS 版本、机型（最近一次推送）、应用（包名索引）
-		  v3/xms/apps/<包名>.json            单个应用的全部推送记录（机型 / 系统版本 / 应用版本 / 日志 / APK 信息）
-		  v3/xms/devices/<机型>.json         单台机型的全部 XMS 推送与应用清单
+		  v3/xms/apps/<包名>.json            单个应用的推送记录：按「XMS 版本 + 应用版本」去重，
+		                                    groups[] 每个版本只存一份 APK / 日志，devices[] 只带系统版本
+		  v3/xms/devices/<机型>.json         单台机型的 XMS 推送：按 XMS 版本合并，
+		                                    romVersions 列出对应系统版本，应用清单只存一份
 
 		APK 的签名下载地址带时效性，不写进静态 JSON：页面下载时由站点服务端
 		（app/web/server/api/xms/download.post.ts）实时向小米接口换取，与 ROM 高速下载同一策略。
@@ -1515,16 +1629,17 @@ def export_xms() -> Dict[str, Any]:
 						raise IOError(f"无法写入 XMS 文件 {path}: {e}") from e
 
 		name_map = _xms_device_names()
+		device_meta = _xms_device_meta()
 
 		push_rows = DatabaseManager.query_all(
 				"SELECT x.`id`, x.`device`, x.`code`, x.`region`, x.`zone`, x.`android`, x.`version`, "
-				"       x.`rom_version`, x.`pkg_cnt`, x.`prio`, x.`notice`, x.`is_latest`, x.`push_date`, "
-				"       r.`release_date` "
+				"       x.`rom_version`, x.`pkg_cnt`, x.`prio`, x.`notice`, x.`changelog`, x.`is_latest`, "
+				"       x.`push_date`, r.`release_date` "
 				"FROM `xms` x LEFT JOIN `roms` r ON r.`id` = x.`rom_id` "
 				"ORDER BY x.`push_date` DESC, x.`id` DESC"
 		)
 		app_rows = DatabaseManager.query_all(
-				"SELECT `xms_id`, `pkg`, `name`, `name_en`, `pkg_ver`, `apk_name`, `file_name`, "
+				"SELECT `xms_id`, `pkg`, `name`, `name_en`, `names`, `pkg_ver`, `apk_name`, `file_name`, "
 				"       `size`, `md5`, `sha256`, `logs` FROM `xms_app` ORDER BY `xms_id`, `id`"
 		)
 
@@ -1536,33 +1651,34 @@ def export_xms() -> Dict[str, Any]:
 		app_names: Dict[str, Dict[str, str]] = {}
 		for row in push_rows or []:
 				(xms_id, device, code, region, zone, android, version, rom_version,
-				 pkg_cnt, prio, notice, is_latest, push_date, release_date) = row
+				 pkg_cnt, prio, notice, changelog, is_latest, push_date, release_date) = row
 				device = '' if device is None else str(device)
 
 				apps: List[Dict[str, Any]] = []
 				for app in apps_by_xms.get(int(xms_id), []):
-						(_, pkg, name, name_en, pkg_ver, apk_name, file_name,
+						(_, pkg, name, name_en, names, pkg_ver, apk_name, file_name,
 						 size, md5, sha256, logs) = app
 						pkg = '' if pkg is None else str(pkg)
 						apk_name = '' if apk_name is None else str(apk_name)
-						app_name = _xms_label({'zh': name, 'en': name_en})
-						if not app_name['zh']:
-								app_name = _xms_label({'zh': apk_name, 'en': apk_name})
+						app_name = _xms_name(names, name, name_en)
+						if not app_name:
+								app_name = _xms_name(None, apk_name, apk_name)
 						apps.append({
 								'pkg': pkg,
 								'name': app_name,
 								'apkName': apk_name,
 								'version': '' if pkg_ver is None else str(pkg_ver),
 								'file': '' if file_name is None else str(file_name),
+								'type': _xms_pkg_type(file_name),
 								'size': int(size) if size else 0,
 								'md5': '' if md5 is None else str(md5),
 								'sha256': '' if sha256 is None else str(sha256),
 								'logs': _xms_logs(logs),
 						})
-						if pkg and (app_name['zh'] or app_name['en']):
-								known = app_names.setdefault(pkg, {'zh': '', 'en': ''})
-								known['zh'] = known['zh'] or app_name['zh']
-								known['en'] = known['en'] or app_name['en']
+						if pkg and app_name:
+								known = app_names.setdefault(pkg, {})
+								for key, text in app_name.items():
+										known.setdefault(key, text)
 
 				pushes.append({
 						'device': device,
@@ -1580,91 +1696,198 @@ def export_xms() -> Dict[str, Any]:
 						'pkgCnt': int(pkg_cnt) if pkg_cnt else 0,
 						'prio': int(prio) if prio else 0,
 						'notice': '' if notice is None else str(notice),
+						'extra': _xms_extras(changelog),
 						'apps': apps,
 				})
 
 		# ---- 按机型归组 ----
+		# 同一机型对多个系统版本都抓到同一份 XMS（如 C11 推在 302/303/304 上）时，
+		# 按 XMS 版本合并成一条：romVersions 列出对应系统版本，apps / 日志只保留一份。
 		by_device: Dict[str, List[Dict[str, Any]]] = {}
 		for push in pushes:
 				by_device.setdefault(push['device'], []).append(push)
 
 		def _push_key(push: Dict[str, Any]):
 				return (0 if push['isLatest'] else 1, _xms_date_key(push['pushDate']),
-						_xms_rom_key(push['romVersion']))
+						_xms_rom_key(push.get('romVersion') or ''))
 
 		device_docs: Dict[str, Dict[str, Any]] = {}
 		for device, device_pushes in by_device.items():
 				device_pushes.sort(key=_push_key)
+				merged: Dict[str, Dict[str, Any]] = {}
+				for push in device_pushes:
+						group = merged.get(push['version'])
+						if group is None:
+								merged[push['version']] = {
+										'version': push['version'],
+										'os': push['os'],
+										'android': push['android'],
+										'pushDate': push['pushDate'],
+										'isLatest': push['isLatest'],
+										'pkgCnt': push['pkgCnt'],
+										'prio': push['prio'],
+										'notice': push['notice'],
+										'extra': push['extra'],
+										'apps': push['apps'],
+										'romVersions': [push['romVersion']] if push['romVersion'] else [],
+								}
+								continue
+						if push['romVersion'] and push['romVersion'] not in group['romVersions']:
+								group['romVersions'].append(push['romVersion'])
+						group['isLatest'] = group['isLatest'] or push['isLatest']
+						if push['pushDate'] and push['pushDate'] < group['pushDate']:
+								group['pushDate'] = push['pushDate']
+						# 同一 XMS 版本的应用清单一致；缺失时用更完整的一份补齐
+						if len(push['apps']) > len(group['apps']):
+								group['apps'] = push['apps']
+								group['pkgCnt'] = push['pkgCnt']
+						if not group['notice'] and push['notice']:
+								group['notice'] = push['notice']
+						if not group['extra'] and push['extra']:
+								group['extra'] = push['extra']
+				versions = list(merged.values())
+				for group in versions:
+						group['romVersions'].sort(key=_xms_rom_key)
+				versions.sort(key=lambda item: (0 if item['isLatest'] else 1,
+																	_xms_date_key(item['pushDate'])))
 				device_docs[device] = {
 						'device': device,
 						'name': _xms_label(name_map.get(device)),
 						'code': device_pushes[0]['code'],
 						'region': device_pushes[0]['region'],
-						'pushes': device_pushes,
+						'pushes': versions,
 				}
 
 		# ---- 按包名归组 ----
-		by_app: Dict[str, List[Dict[str, Any]]] = {}
+		# 同一（XMS 版本 + 应用版本）只存一份安装包 / 日志，
+		# 设备列表里只记录各自对应的系统版本，避免每个机型重复写一遍相同内容。
+		by_app: Dict[str, Dict[str, Dict[str, Any]]] = {}
 		for push in pushes:
 				for app in push['apps']:
 						if not app['pkg']:
 								continue
-						by_app.setdefault(app['pkg'], []).append({
-								'version': push['version'],
-								'os': push['os'],
-								'appVersion': app['version'],
-								'romVersion': push['romVersion'],
-								'romRelease': push['romRelease'],
-								'android': push['android'],
-								'device': push['device'],
-								'deviceName': push['name'],
-								'code': push['code'],
-								'region': push['region'],
-								'zone': push['zone'],
-								'pushDate': push['pushDate'],
-								'isLatest': push['isLatest'],
-								'apkName': app['apkName'],
-								'file': app['file'],
-								'size': app['size'],
-								'md5': app['md5'],
-								'sha256': app['sha256'],
-								'logs': app['logs'],
-						})
-
-		def _record_key(record: Dict[str, Any]):
-				return (0 if record['isLatest'] else 1,
-								_xms_date_key(record['pushDate']),
-								_xms_version_key(record['appVersion']))
+						groups = by_app.setdefault(app['pkg'], {})
+						pkg_type = app.get('type') or ''
+						key = f"{push['version']}|{app['version']}|{pkg_type}"
+						group = groups.get(key)
+						if group is None:
+								group = {
+										'version': push['version'],
+										'os': push['os'],
+										'appVersion': app['version'],
+										'type': pkg_type,
+										'pushDate': push['pushDate'],
+										'isLatest': False,
+										'apkName': app['apkName'],
+										'file': app['file'],
+										'size': app['size'],
+										'md5': app['md5'],
+										'sha256': app['sha256'],
+										'logs': app['logs'],
+										'recordCount': 0,
+										'devices': {},
+								}
+								groups[key] = group
+						group['recordCount'] += 1
+						if push['isLatest']:
+								group['isLatest'] = True
+						if push['pushDate'] and push['pushDate'] < group['pushDate']:
+								group['pushDate'] = push['pushDate']
+						# 同一版本应当一致；个别推送缺字段时用更完整的一份补齐
+						if not group['file'] and app['file']:
+								group['apkName'] = app['apkName']
+								group['file'] = app['file']
+								group['size'] = app['size']
+								group['md5'] = app['md5']
+								group['sha256'] = app['sha256']
+						if not group['logs'] and app['logs']:
+								group['logs'] = app['logs']
+						dev = group['devices'].get(push['device'])
+						if dev is None:
+								dev = {
+										'device': push['device'],
+										'name': push['name'],
+										'code': push['code'],
+										'region': push['region'],
+										'zone': push['zone'],
+										'android': push['android'],
+										'pushDate': push['pushDate'],
+										'isLatest': False,
+										'romVersions': [],
+								}
+								group['devices'][push['device']] = dev
+						if push['romVersion'] and push['romVersion'] not in dev['romVersions']:
+								dev['romVersions'].append(push['romVersion'])
+						if push['isLatest']:
+								dev['isLatest'] = True
+						if push['pushDate'] and push['pushDate'] < dev['pushDate']:
+								dev['pushDate'] = push['pushDate']
 
 		app_docs: Dict[str, Dict[str, Any]] = {}
-		for pkg, records in by_app.items():
-				records.sort(key=_record_key)
-				first = records[0]
+		for pkg, group_map in by_app.items():
+				groups = list(group_map.values())
+				if not groups:
+						continue
+				for group in groups:
+						devices = list(group['devices'].values())
+						for device in devices:
+								device['romVersions'].sort(key=_xms_rom_key)
+						devices.sort(key=lambda item: (0 if item['isLatest'] else 1,
+																_xms_name_key(item.get('name')), item['device']))
+						group['devices'] = devices
+				groups.sort(key=lambda item: (0 if item['isLatest'] else 1,
+															_xms_date_key(item['pushDate']),
+															_xms_version_key(item['appVersion']),
+															_XMS_TYPE_RANK.get(item.get('type') or '', 4)))
 
-				# 显示名：有日志模块名就用模块名，否则用安装包名称，最后回落到包名
-				app_name = _xms_label(app_names.get(pkg))
-				if not app_name['zh'] and not app_name['en']:
-						app_name = _xms_label({'zh': first['apkName'], 'en': first['apkName']})
-				if not app_name['zh']:
-						app_name = {'zh': pkg, 'en': app_name['en'] or pkg}
+				first = groups[0]
+				# 显示名：有日志模块名就用模块名（多语言），否则用安装包名称，最后回落到包名
+				app_name = _xms_name(app_names.get(pkg))
+				if not app_name:
+						app_name = _xms_name(None, first['apkName'], first['apkName'])
+				if not app_name.get('zh'):
+						app_name['zh'] = pkg
+				if not app_name.get('en'):
+						app_name['en'] = app_name['zh']
 
-				devices: List[Dict[str, Any]] = []
+				devices_summary: List[Dict[str, Any]] = []
 				seen = set()
-				for record in records:
-						if record['device'] in seen:
-								continue
-						seen.add(record['device'])
-						devices.append({'device': record['device'], 'name': record['deviceName']})
+				os_values = set()
+				region_values = set()
+				brand_values = set()
+				is_tablet = False
+				for group in groups:
+						if group['os']:
+								os_values.add(group['os'])
+						for device in group['devices']:
+								if device['device'] not in seen:
+										seen.add(device['device'])
+										devices_summary.append({'device': device['device'], 'name': device['name']})
+								if device['region']:
+										region_values.add(device['region'])
+								meta = device_meta.get(device['device']) or {}
+								brand_values.update(meta.get('brands') or [])
+								label = device.get('name') or {}
+								text = f"{label.get('zh') or ''} {label.get('en') or ''}"
+								if meta.get('tablet') or '平板' in text or 'pad' in text.lower():
+										is_tablet = True
 
 				app_docs[pkg] = {
 						'pkg': pkg,
 						'name': app_name,
 						'apkName': first['apkName'],
 						'latestVersion': first['appVersion'],
-						'recordCount': len(records),
-						'deviceCount': len(devices),
-						'devices': devices,
-						'records': records,
+						'recordCount': sum(group['recordCount'] for group in groups),
+						'deviceCount': len(devices_summary),
+						# 筛选用的维度（索引里也带一份）
+						'os': sorted(os_values),
+						'regions': sorted(region_values),
+						'brands': sorted(brand_values),
+						'tablet': is_tablet,
+						'types': sorted({group.get('type') for group in groups if group.get('type')}),
+
+						# 设备清单已按版本分组在 groups[].devices 里，不再重复一份
+						'groups': groups,
 				}
 
 		# ---- 写文件（并清理已不存在的机型 / 应用，避免接口残留旧数据）----
@@ -1692,7 +1915,7 @@ def export_xms() -> Dict[str, Any]:
 						'devices': set(),
 						'apps': set(),
 				})
-				if push['pushDate'] > stats['pushDate']:
+				if push['pushDate'] and (not stats['pushDate'] or push['pushDate'] < stats['pushDate']):
 						stats['pushDate'] = push['pushDate']
 				stats['devices'].add(push['device'])
 				stats['apps'].update(app['pkg'] for app in push['apps'] if app['pkg'])
@@ -1700,16 +1923,21 @@ def export_xms() -> Dict[str, Any]:
 		index_devices: List[Dict[str, Any]] = []
 		for device, doc in device_docs.items():
 				latest = doc['pushes'][0] if doc['pushes'] else None
+				meta = device_meta.get(device) or {}
+				label = doc['name'] or {}
+				label_text = f"{label.get('zh') or ''} {label.get('en') or ''}"
 				index_devices.append({
 						'device': device,
 						'name': doc['name'],
 						'code': doc['code'],
 						'region': doc['region'],
+						'brands': meta.get('brands') or [],
+						'tablet': bool(meta.get('tablet')) or '平板' in label_text or 'pad' in label_text.lower(),
 						'pushCount': len(doc['pushes']),
 						'latest': {
 								'version': latest['version'],
 								'os': latest['os'],
-								'romVersion': latest['romVersion'],
+								'romVersion': (latest.get('romVersions') or [''])[0],
 								'pushDate': latest['pushDate'],
 								'isLatest': latest['isLatest'],
 								'appCount': len([app for app in latest['apps'] if app['pkg']]),
@@ -1727,6 +1955,11 @@ def export_xms() -> Dict[str, Any]:
 						'latestVersion': doc['latestVersion'],
 						'recordCount': doc['recordCount'],
 						'deviceCount': doc['deviceCount'],
+						'os': doc.get('os') or [],
+						'regions': doc.get('regions') or [],
+						'brands': doc.get('brands') or [],
+						'tablet': bool(doc.get('tablet')),
+						'types': doc.get('types') or [],
 						'path': f'apps/{pkg}.json',
 				})
 		index_apps.sort(key=lambda item: (

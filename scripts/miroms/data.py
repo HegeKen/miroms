@@ -3730,6 +3730,8 @@ flags = {
 	'SERENITYEEAGlobal': 'serenity',
 	'SERENITYEEAORGLOBAL': 'serenity',
 	'SERENITYEEAORGlobal': 'serenity',
+	'SERENITYEEASFGLOBAL': 'serenity',
+	'SERENITYEEASFGlobal': 'serenity',
 	'SERENITYEEATFGLOBAL': 'serenity',
 	'SERENITYEEATFGlobal': 'serenity',
 	'SERENITYEEAVFGLOBAL': 'serenity',

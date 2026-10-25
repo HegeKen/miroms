@@ -727,8 +727,9 @@ SELECT x.version, x.rom_version, x.push_date, a.pkg, a.name, a.pkg_ver, a.logs
   XMS on the newest system version). When the API returns no `LatestRom` (probed, unreleased versions) it stays 0; there
   is no "newest row in `roms`" fallback, otherwise the flag would flip back and forth while `ota_full.py` probes several
   versions in one run. Only one row per branch carries 1 at a time (writing a new one clears the others).
-* **`push_date`** — the API has no XMS release date, so it stores the date the version was first seen; later system
-  versions of the same (`code`, XMS version) reuse the earliest date.
+* **`push_date`** — the API has no XMS release date, so it stores the **earliest first-crawl date** among the
+  devices / system versions currently covered by that XMS version; later devices and system versions inherit it
+  (`enrich_xms.py --apply` re-normalizes, and the exporter also takes the earliest per group / device).
 * The unique key is (`code`, `version`, `rom_version`): one XMS can be pushed on top of several system versions (e.g.
   `C11` on top of 302/303/304), one row per combination.
 * Nothing is written while the system version is not in `roms` yet (probed versions); the next run picks it up. Changelogs
@@ -738,14 +739,34 @@ SELECT x.version, x.rom_version, x.push_date, a.pkg, a.name, a.pkg_ver, a.logs
 * **Only OS3 and newer are fetched**: by the API convention the first letter of an XMS version maps to the system
   major version (`C` → HyperOS 3, `D` → HyperOS 4, …); OS1 / OS2 and MIUI versions are skipped outright (see
   `XmsStore.MIN_OS_MAJOR`). The exported `os` field is derived from that letter so the frontend can label it.
+* **App names are unified per package**: every push of the same `pkg` shares one `name` / `name_en` / `names`
+  (a multilingual JSON). Candidates come from the `changeLog` module names; a match against a `logs` row with
+  `type='module'` wins and brings the official 21-language translations, otherwise the candidate with the most
+  languages / occurrences is used. Backfill with `python3 scripts/enrich_xms.py --apply`.
+* **New pushes inherit previously stored / hand-fixed info**: when writing a new row, existing records of the same
+  `pkg` win for non-empty `name` / `name_en`, `names` only fills missing languages, and `apk_name` is also reused
+  (the API value is often messy and fixed by hand; the same-device row is preferred, then the one with the most
+  languages). Only a brand-new package takes the API values directly.
+* **Missing app names get a placeholder**: when an app name is absent from `logs` modules, `record()` inserts a
+  zh / en placeholder (`type='module'`); `enrich_xms.py --apply` (also run before export) backfills every
+  `xms_app.name`. Fill the other languages later in "Log entry" and re-run the tidy-up to apply them.
+* **Multilingual logs**: besides zh / en, each entry is looked up in `logs` (`type='log'`) by its Chinese (or English)
+  text, and any official translations (`zh_tw` / `ja` / `ko` …) are merged in. Keys match the `logs` column names with
+  the `logs_` prefix stripped (`logs_in` → `in`).
+* **Modules without a package are not apps**: e.g. 「小米超级岛」goes to `xms.changelog` (`[{name, logs}]`) instead of
+  `xms_app` — the module name changes with the request language, so using it as a key would store duplicates.
 
 Export (`exporter.py` calls `export_xms()` → `api/v3/xms/`):
 
 | File | Content |
 | --- | --- |
-| `v3/xms/index.json` | counts (pushes / apps / devices / versions), version distribution (with an `os` label, e.g. C11 → OS3), device list (with latest push), package index (with detail `path`) |
-| `v3/xms/apps/<package>.json` | every push record of one package: device, system version, app version, push date, changelog, APK file name / size / checksums |
-| `v3/xms/devices/<codename>.json` | every XMS push of one device, its notes, and each app's changelog / package info |
+| `v3/xms/index.json` | counts (pushes / apps / devices / versions), version distribution (with an `os` label, e.g. C11 → OS3), device list (with latest push + `brands` / `tablet` / `region`), package index (with detail `path` plus `os` / `regions` / `brands` / `tablet` filter dimensions) |
+| `v3/xms/apps/<package>.json` | push records of one package, **deduplicated by XMS version + app version + package type**: each `groups[]` entry stores the APK / changelog once and only lists devices with their system versions (`romVersions`); `type` comes from the `phone` / `pad` / `fold` / `universal` token in the file name |
+| `v3/xms/devices/<codename>.json` | XMS pushes of one device, **merged by XMS version**: `push.romVersions` lists the system versions it applies to, while the app list / changelog / notes are stored once |
+
+Each piece of information is exported once: app details are grouped by XMS version + app version (version / APK / changelog
+stored once, devices only carry their system versions), and device details merge pushes of the same XMS version
+(`romVersions` collects the covered system versions) instead of repeating the same content per device.
 
 APK download links carry a time-limited signature (the unsigned URL returns 403), so they are **not** written into the static
 JSON: the website's `/xms` pages request a fresh link from `app/web/server/api/xms/download.post.ts`, which calls
@@ -779,11 +800,14 @@ MySQL (InnoDB, utf8mb4); table structure and field meanings are in `db_structure
   (`log_date`), new-device summary (`devices_zh` / `devices_en`) and log body (`logs`, `[{"zh","en"},...]`)
 - **`xms.sql`** — XMS (SOTA system-app update) pushes: branch code (`code`), device codename (`device`), region / zone,
   XMS version (`version`, e.g. `C11`), the system version it is based on (`rom_version` / `rom_id`), package count
-  (`pkg_cnt`), priority (`prio`), notes (`notice`), latest flag (`is_latest`), push date (`push_date`, first seen),
-  update timestamp (`update_date`); unique on (`code`, `version`, `rom_version`)
-- **`xms_app.sql`** — XMS app details: owning push (`xms_id`), package (`pkg`), zh/en app or module name
-  (`name` / `name_en`), version code (`pkg_ver`), changelog (`logs`, `[{"zh","en"},...]`, aligned by package + item
-  order); an empty `pkg` means the log module came without a package name
+  (`pkg_cnt`), priority (`prio`), notes (`notice`), package-less log modules (`changelog`, `[{name, logs}]`), latest
+  flag (`is_latest`), push date (`push_date`, earliest crawl date across the covered devices / system versions),
+  update timestamp (`update_date`); unique on
+  (`code`, `version`, `rom_version`)
+- **`xms_app.sql`** — XMS app details: owning push (`xms_id`), package (`pkg`), app / module name
+  (`name` / `name_en` / `names` multilingual JSON), version code (`pkg_ver`), package info (`apk_name` / `file_name` /
+  `size` / `md5` / `sha256`), changelog (`logs`, `[{"zh","en","ja",...}]`, aligned by package + item order);
+  unique on (`xms_id`, `pkg`)
 
 ---
 
@@ -807,6 +831,7 @@ MySQL (InnoDB, utf8mb4); table structure and field meanings are in `db_structure
 | `import_dev_week.py` | Import developer (weekly) data into `dev` and backfill `roms.dev_week` (`--source hyperos\|nuxtmr\|miuiroms`, `--all`, `--weeks`, `--region`, `--dry-run`, `--backfill-roms`) |
 | `import_sitelog.py` | Import the NuxtMR / HyperOS.fans site logs (`sitelog.json`) into the `sitelog` table (`--source nuxtmr\|hyperos`, `--all`, `--root`, `--dry-run`); it updates in place by unique key, so it is idempotent and burns no AUTO_INCREMENT ids |
 | `import_hub_sitelog.py` | Derive hub's own changelogs (`hub.web` = `app/web`, `hub.admin` = `app/admin`) from git history and write them into the `sitelog` table: versions are numbered `V0.1.0`… by commit date; `--site`, `--drop-types chore,build,docs`, `--dry-run` |
+| `enrich_xms.py` | Fill XMS app names / changelogs with the official translations from the `logs` table, unify app names per package, and move legacy package-less rows (keyed by module name) into `xms.changelog`: dry-run by default, `--apply` writes |
 | `migrate_v1v2_assets.py` | Seed the reference repositories' static endpoint files, device directories and "legacy devices that exist only in the reference repositories" into `api/v1` / `api/v2`; by default only missing files are added, `--force` overwrites static files (device files are never overwritten), and `--with-images` additionally copies the device images into `api/v2/assets/images` (skipped by default; the canonical location is `images/`) |
 | `sync_devices.py` | Syncs the device list from `devices` / `roms` into `miroms/data.py` (`fullDevices`, `currentStable`, `flags`) |
 | `fix_missing_tag_mappings.py` | Fixes missing device+tag mappings in `devices` (the V3 exporter matches branches by tag; missing ones lose ROMs); prints SQL to stdout or applies it directly with `--apply` |
@@ -840,6 +865,7 @@ Xiaomi update server (update.miui.com)
         ▼
 MySQL database (miroms: devices / roms / logs / dev / branches / series / xms / xms_app)
         │  python3 scripts/ota_former.py / ota_full.py / get_new_branch.py  → new ROMs + XMS app updates
+        │  python3 scripts/enrich_xms.py --apply (also run by exporter.py)  → unify names / translations / extras
         │  python3 scripts/sync_devices.py        → update miroms/data.py device list
         │  python3 scripts/fix_missing_tag_mappings.py --apply (when needed)
         │  python3 scripts/migrate_logs_multilang.py   → multilingual log groups (one-off)

@@ -722,20 +722,37 @@ SELECT x.version, x.rom_version, x.push_date, a.pkg, a.name, a.pkg_ver, a.logs
 * **`is_latest`**：只有「查询时的当前系统版本 == 接口返回的 `LatestRom`」才标 1，表示这是最新系统版本上的最新 XMS；
   接口没返回 `LatestRom`（探测出来的未发布版本等）时一律标 0，不做「库内最新版本」兜底——否则 `ota_full.py`
   一轮里探测多个版本时，标志会随最后一次请求来回翻转。同一分支同时只有一行为 1（写入新的一行时会把同分支其它行清零）。
-* **`push_date`**：接口不提供 XMS 发布时间，记的是首次抓取到该版本的日期；同一（分支代码, XMS 版本）的后续系统版本行沿用最早那天的日期。
+* **`push_date`**：接口不提供 XMS 发布时间，取同一 XMS 版本当前涉及机型 / 系统版本里**最早**的抓取日期；
+  新机型、新系统版本晚些入库也沿用这一天（`enrich_xms.py --apply` 会重新归一），导出时组内 / 设备日期也取最早值。
 * 唯一键是（`code`, `version`, `rom_version`）——同一份 XMS 会挂在不同系统版本上（如 `C11` 对 302/303/304 都能推），每种组合一行。
 * 系统版本还没进 `roms` 时（探测出来的版本）不写库，等它入库后下一轮自然补上；日志按（分支, XMS 版本）在进程内缓存，同轮只请求一次。
 * 目前只有中国大陆（`zone=1`）机型会返回 `hasXmsUpdate=1`，国际版实测恒为 0；解析逻辑两种区域都兼容。
 * **只抓 OS3 及以上系统版本**：接口约定 XMS 版本号首字母对应系统大版本（`C` → HyperOS 3、`D` → HyperOS 4……），
   OS1 / OS2 与 MIUI 版本直接跳过（见 `XmsStore.MIN_OS_MAJOR`）。导出时 `os` 字段由版本号首字母推导，供前端标注。
+* **应用名按包名统一**：同一个 `pkg` 在所有推送里共用一份 `name` / `name_en` / `names`（多语言 JSON）。
+  候选名取自各推送 `changeLog` 的模块名，能命中 `logs` 表 `type='module'` 同名的优先，取官方 21 语种译文，
+  其余情况取语种最全、出现次数最多的那个；老数据用 `python3 scripts/enrich_xms.py --apply` 回填。
+* **新推送继承已录入 / 手工修改的信息**：写新行时先看该 `pkg` 已有记录——`name` / `name_en` 以已有非空值为准，
+  `names` 只补缺失语种；`apk_name` 接口返回的往往比较杂乱、需要人工修复，也优先沿用已有值（同机型的历史行优先，
+  其次是语种最全的那行），只有全新包名才直接用接口值。
+* **缺失的应用名先占位**：应用名在 `logs` 的 module 行里查不到时，`record()` 会先写一条 zh / en 占位
+  （`type='module'`），`enrich_xms.py --apply`（导出前的整理也会跑）再为所有 `xms_app.name` 补齐；
+  之后在「日志录入」里补全其它语种，重跑整理即可生效。
+* **多语言日志**：`xms_app.logs` 的条目除了 zh / en，还会按中文（或英文）原文在 `logs` 表 `type='log'` 里查官方译文，
+  命中就补上 `zh_tw` / `ja` / `ko` … 等语种（键名对应 `logs` 列名去掉 `logs_` 前缀，如 `logs_in` → `in`）。
+* **没有包名的模块不是应用**：如「小米超级岛」，存到 `xms.changelog`（`[{name, logs}]`），
+  不再按模块名塞进 `xms_app` —— 模块名会随请求语种变化，用它当键会重复录入。
 
 导出（`exporter.py` 调用 `export_xms()` → `api/v3/xms/`）：
 
 | 文件 | 内容 |
 | --- | --- |
-| `v3/xms/index.json` | 统计（推送 / 应用 / 机型 / 版本数）、版本分布（含 `os` 标注，如 C11 → OS3）、机型列表（含最近一次推送）、应用包名索引（含详情文件 `path`） |
-| `v3/xms/apps/<包名>.json` | 单个包名的全部推送记录：机型、系统版本、应用版本、推送日期、更新日志、APK 文件名 / 体积 / 校验值 |
-| `v3/xms/devices/<机型>.json` | 单台机型的全部 XMS 推送、注意事项与每个应用的日志 / 安装包信息 |
+| `v3/xms/index.json` | 统计（推送 / 应用 / 机型 / 版本数）、版本分布（含 `os` 标注，如 C11 → OS3）、机型列表（含最近一次推送、`brands` / `tablet` / `region`）、应用包名索引（含详情文件 `path`、`os` / `regions` / `brands` / `tablet` 筛选维度） |
+| `v3/xms/apps/<包名>.json` | 单个包名的推送记录，**按「XMS 版本 + 应用版本 + 包类型」去重**：`groups[]` 里每个版本只存一份安装包 / 更新日志，`devices[]` 只列机型与对应系统版本（`romVersions`），不再逐机型重复；`type` 由文件名里的 `phone` / `pad` / `fold` / `universal` 得出（手机 / 平板 / 折叠屏 / 全平台通用） |
+| `v3/xms/devices/<机型>.json` | 单台机型的 XMS 推送，**按 XMS 版本合并**：`push.romVersions` 列出适用的系统版本，应用清单 / 日志 / 注意事项只保留一份 |
+
+同一份信息只导出一次：应用详情按「XMS 版本 + 应用版本」归组（应用版本 / 安装包 / 日志各一份，设备只带系统版本），
+机型详情按 XMS 版本合并（一次推送只保留一份应用清单，`romVersions` 收集对应系统版本），避免按机型重复写同样的内容。
 
 APK 的签名下载地址带时效性（未签名直链 403），因此**不写进静态 JSON**：官网 `/xms` 页面点下载时，
 由 `app/web/server/api/xms/download.post.ts` 现场重新请求 `getXmsVer` 换取签名链接（与 ROM 高速下载同一策略）。
@@ -753,8 +770,8 @@ APK 的签名下载地址带时效性（未签名直链 403），因此**不写�
 - **`branches.sql`** — 分支表：分支类型、中英文名称、标签（`tag`）、代码后缀（`code`）、版本代码（`vercode`）、运营商、区域、分区（`zone`）、可见性（`visibility`）、是否政企版（`ep`）
 - **`series.sql`** — 机型系列表：品牌（`brand`：xiaomi / redmi / poco）、中英文名称（`name_zh` / `name_en`）、设备归属（`device_ids`，JSON 数组）、排序（`sort_order`）
 - **`sitelog.sql`** — 站点日志表：`site` 区分站点（`nuxtmr` → `api/v1/sitelog.json`、`hyperos.fans` → `api/v2/sitelog.json`、`hub.web` / `hub.admin` → `api/v3/sitelog.json`），`kind` 区分行类型（`entry` 日志条目 / `meta` 站点级元信息如 `icons` 调色板），含版本号（`ver`）、图标（`icon`）、日期（`log_date`）、新增机型摘要（`devices_zh` / `devices_en`）与日志正文（`logs`，`[{"zh","en"},...]`）
-- **`xms.sql`** — XMS（SOTA 系统应用更新）推送表：分支代码（`code`）、设备代号（`device`）、区域 / 分区、XMS 版本号（`version`，如 `C11`）、对应系统版本（`rom_version` / `rom_id`）、包数量（`pkg_cnt`）、优先级（`prio`）、注意事项（`notice`）、是否为最新（`is_latest`）、推送日期（`push_date`，首次抓取日期）、更新时间戳（`update_date`）；唯一键（`code`, `version`, `rom_version`）
-- **`xms_app.sql`** — XMS 应用明细表：所属推送（`xms_id`）、包名（`pkg`）、中英文应用 / 模块名（`name` / `name_en`）、应用版本号（`pkg_ver`）、更新日志（`logs`，`[{"zh","en"},...]`，按包名 + 条目序号对齐）；`pkg` 为空串表示该日志模块接口没给包名
+- **`xms.sql`** — XMS（SOTA 系统应用更新）推送表：分支代码（`code`）、设备代号（`device`）、区域 / 分区、XMS 版本号（`version`，如 `C11`）、对应系统版本（`rom_version` / `rom_id`）、包数量（`pkg_cnt`）、优先级（`prio`）、注意事项（`notice`）、没有包名的日志模块（`changelog`，`[{name, logs}]`）、是否为最新（`is_latest`）、推送日期（`push_date`，同一 XMS 版本取涉及机型 / 系统版本的最早抓取日期）、更新时间戳（`update_date`）；唯一键（`code`, `version`, `rom_version`）
+- **`xms_app.sql`** — XMS 应用明细表：所属推送（`xms_id`）、包名（`pkg`）、应用 / 模块名（`name` / `name_en` / `names` 多语言 JSON）、应用版本号（`pkg_ver`）、安装包信息（`apk_name` / `file_name` / `size` / `md5` / `sha256`）、更新日志（`logs`，`[{"zh","en","ja",...}]`，按包名 + 条目序号对齐）；唯一键（`xms_id`, `pkg`）
 
 ---
 
@@ -780,6 +797,7 @@ APK 的签名下载地址带时效性（未签名直链 403），因此**不写�
 | `import_dev_week.py` | 导入开发版（周更）数据到 `dev` 表并回填 `roms.dev_week`；支持 `--source hyperos\|nuxtmr\|miuiroms`、`--all`、`--weeks 619-652`、`--region global`、`--dry-run`、`--backfill-roms` |
 | `import_sitelog.py` | 把 NuxtMR / HyperOS.fans 两个站点的站点日志（`sitelog.json`）导入 `sitelog` 表，`--source nuxtmr\|hyperos`、`--all`、`--root`、`--dry-run`；按唯一键原地更新，幂等且不烧自增 id |
 | `import_hub_sitelog.py` | 按 git 记录推导 hub 自身（`hub.web` = `app/web`、`hub.admin` = `app/admin`）的更新日志并写入 `sitelog` 表：按提交日期分版编号 `V0.1.0`…，`--site`、`--drop-types chore,build,docs`、`--dry-run` |
+| `enrich_xms.py` | 用 `logs` 表补全 XMS 的应用名 / 日志多语言译文，按包名统一应用名，并把旧版按模块名重复录入的无包名行搬到 `xms.changelog`：默认只统计，`--apply` 写库；适合回填历史数据或译文补齐后重刷 |
 | `migrate_v1v2_assets.py` | 把参考仓库里的静态接口文件、机型目录与「仅存于参考仓库的遗留机型」播种到 `api/v1` / `api/v2`；默认只补缺失，`--force` 可强制覆盖静态文件（设备文件始终不覆盖），`--with-images` 额外把机型图片复制到 `api/v2/assets/images`（默认不搬，规范位置是 `images/`） |
 | `sync_devices.py` | 从 `devices` / `roms` 表同步设备列表到 `miroms/data.py`（`fullDevices`、`currentStable`、`flags`） |
 | `fix_missing_tag_mappings.py` | 修复 `devices` 表中缺失的 device+tag 映射（V3 导出器按 tag 匹配分支，缺失会导致 ROM 丢失），输出 SQL 到 stdout 或 `--apply` 直接执行 |
@@ -813,6 +831,7 @@ APK 的签名下载地址带时效性（未签名直链 403），因此**不写�
         ▼
 MySQL 数据库 (miroms: devices / roms / logs / dev / branches / series / xms / xms_app)
         │  python3 scripts/ota_former.py / ota_full.py / get_new_branch.py  → 新 ROM + XMS 应用更新
+        │  python3 scripts/enrich_xms.py --apply（exporter.py 会自动执行）→ XMS 名称统一 / 多语言 / 无包名模块
         │  python3 scripts/sync_devices.py        → 更新 miroms/data.py 设备列表
         │  python3 scripts/fix_missing_tag_mappings.py --apply（必要时）
         │  python3 scripts/migrate_logs_multilang.py        → 日志多语言分组（一次性）
