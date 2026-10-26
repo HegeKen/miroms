@@ -765,7 +765,7 @@ Export (`exporter.py` calls `export_xms()` → `api/v3/xms/`):
 
 | File | Content |
 | --- | --- |
-| `v3/xms/index.json` | counts (pushes / apps / devices / versions), version distribution (with an `os` label, e.g. C11 → OS3), device list (with latest push + `brands` / `tablet` / `region`), package index (with detail `path` plus `os` / `regions` / `brands` / `tablet` filter dimensions) |
+| `v3/xms/index.json` | counts (pushes / apps / devices / versions), version distribution (with an `os` label, e.g. C11 → OS3), device list (with latest push + `brands` / `tablet` / `region`, **ordered by the devices series order `series.order`**), package index (with detail `path` plus `os` / `regions` / `brands` / `tablet` filter dimensions) |
 | `v3/xms/apps/<package>.json` | push records of one package, **deduplicated by XMS version + app version + package type**: each `groups[]` entry stores the APK / changelog once and only lists devices with their system versions (`romVersions`); `type` comes from the `phone` / `pad` / `fold` / `universal` token in the file name; `releaseDate` is the package's real release date (`xms_app.release_date`) |
 | `v3/xms/devices/<codename>.json` | XMS pushes of one device, **merged by XMS version**: `push.romVersions` lists the system versions it applies to, while the app list / changelog / notes are stored once |
 

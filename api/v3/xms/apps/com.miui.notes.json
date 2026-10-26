@@ -248,7 +248,7 @@
           "en": "Fix: Task reminders sometimes didn't respond when tapped"
         }
       ],
-      "recordCount": 41,
+      "recordCount": 40,
       "devices": [
         {
           "device": "breeze",
@@ -504,22 +504,6 @@
           "isLatest": true,
           "romVersions": [
             "OS3.0.304.0.WPQCNXM"
-          ]
-        },
-        {
-          "device": "lapis",
-          "name": {
-            "zh": "REDMI Note 15 Pro 5G",
-            "en": "REDMI Note 15 Pro 5G"
-          },
-          "code": "lapis",
-          "region": "cn",
-          "zone": 1,
-          "android": "16.0",
-          "pushDate": "2026-07-28",
-          "isLatest": true,
-          "romVersions": [
-            "OS3.0.309.0.WPPCNXM"
           ]
         },
         {
@@ -904,6 +888,53 @@
           "isLatest": false,
           "romVersions": [
             "OS3.0.306.0.WPLCNXM"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "C11",
+      "os": "OS3",
+      "appVersion": "2431",
+      "type": "",
+      "pushDate": "2026-07-28",
+      "isLatest": true,
+      "apkName": "笔记",
+      "file": "",
+      "releaseDate": "2026-07-28",
+      "size": 0,
+      "md5": "",
+      "sha256": "",
+      "logs": [
+        {
+          "zh": "优化 笔记待办页操作流畅度，页面切换更顺滑",
+          "en": "Optimization: Performance on the Notes and Tasks pages for smoother navigation"
+        },
+        {
+          "zh": "修复 部分场景下笔记无法云同步的问题",
+          "en": "Fix: Notes couldn't be synced with the cloud in some cases"
+        },
+        {
+          "zh": "修复 部分场景下待办提醒点击无响应的问题",
+          "en": "Fix: Task reminders sometimes didn't respond when tapped"
+        }
+      ],
+      "recordCount": 1,
+      "devices": [
+        {
+          "device": "lapis",
+          "name": {
+            "zh": "REDMI Note 15 Pro 5G",
+            "en": "REDMI Note 15 Pro 5G"
+          },
+          "code": "lapis",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-07-28",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.309.0.WPPCNXM"
           ]
         }
       ]

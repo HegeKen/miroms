@@ -751,7 +751,7 @@ SELECT x.version, x.rom_version, x.push_date, a.pkg, a.name, a.pkg_ver, a.logs
 
 | 文件 | 内容 |
 | --- | --- |
-| `v3/xms/index.json` | 统计（推送 / 应用 / 机型 / 版本数）、版本分布（含 `os` 标注，如 C11 → OS3）、机型列表（含最近一次推送、`brands` / `tablet` / `region`）、应用包名索引（含详情文件 `path`、`os` / `regions` / `brands` / `tablet` 筛选维度） |
+| `v3/xms/index.json` | 统计（推送 / 应用 / 机型 / 版本数）、版本分布（含 `os` 标注，如 C11 → OS3）、机型列表（含最近一次推送、`brands` / `tablet` / `region`，**按 devices 系列顺序 `series.order` 排列**）、应用包名索引（含详情文件 `path`、`os` / `regions` / `brands` / `tablet` 筛选维度） |
 | `v3/xms/apps/<包名>.json` | 单个包名的推送记录，**按「XMS 版本 + 应用版本 + 包类型」去重**：`groups[]` 里每个版本只存一份安装包 / 更新日志，`devices[]` 只列机型与对应系统版本（`romVersions`），不再逐机型重复；`type` 由文件名里的 `phone` / `pad` / `fold` / `universal` 得出（手机 / 平板 / 折叠屏 / 全平台通用），`releaseDate` 是安装包的真实发布日期（`xms_app.release_date`） |
 | `v3/xms/devices/<机型>.json` | 单台机型的 XMS 推送，**按 XMS 版本合并**：`push.romVersions` 列出适用的系统版本，应用清单 / 日志 / 注意事项只保留一份 |
 

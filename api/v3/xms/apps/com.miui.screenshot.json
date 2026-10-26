@@ -48,7 +48,7 @@
           "en": "Fix: Scrolling screenshots could display incorrectly in some cases"
         }
       ],
-      "recordCount": 54,
+      "recordCount": 53,
       "devices": [
         {
           "device": "breeze",
@@ -320,22 +320,6 @@
           "isLatest": true,
           "romVersions": [
             "OS3.0.304.0.WPQCNXM"
-          ]
-        },
-        {
-          "device": "lapis",
-          "name": {
-            "zh": "REDMI Note 15 Pro 5G",
-            "en": "REDMI Note 15 Pro 5G"
-          },
-          "code": "lapis",
-          "region": "cn",
-          "zone": 1,
-          "android": "16.0",
-          "pushDate": "2026-07-28",
-          "isLatest": true,
-          "romVersions": [
-            "OS3.0.309.0.WPPCNXM"
           ]
         },
         {
@@ -867,6 +851,49 @@
           "isLatest": false,
           "romVersions": [
             "OS3.0.306.0.WPLCNXM"
+          ]
+        }
+      ]
+    },
+    {
+      "version": "C11",
+      "os": "OS3",
+      "appVersion": "10602036",
+      "type": "",
+      "pushDate": "2026-07-28",
+      "isLatest": true,
+      "apkName": "截屏_HyperOS3.0_Beta",
+      "file": "",
+      "releaseDate": "2026-07-28",
+      "size": 0,
+      "md5": "",
+      "sha256": "",
+      "logs": [
+        {
+          "zh": "修复 部分场景下区域截屏失败的问题",
+          "en": "Fix: Partial screenshots couldn't be taken in some cases"
+        },
+        {
+          "zh": "修复 部分场景下长截屏页面显示异常的问题",
+          "en": "Fix: Scrolling screenshots could display incorrectly in some cases"
+        }
+      ],
+      "recordCount": 1,
+      "devices": [
+        {
+          "device": "lapis",
+          "name": {
+            "zh": "REDMI Note 15 Pro 5G",
+            "en": "REDMI Note 15 Pro 5G"
+          },
+          "code": "lapis",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-07-28",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.309.0.WPPCNXM"
           ]
         }
       ]

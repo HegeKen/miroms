@@ -3,7 +3,7 @@ import logging
 import re
 from functools import cmp_to_key
 from pathlib import Path
-from typing import Set, List, Tuple, Dict, Any
+from typing import Set, List, Tuple, Dict, Any, Optional
 
 from miroms.database import DatabaseManager
 from miroms.constants import branches
@@ -566,7 +566,7 @@ def export_dev() -> Dict[str, Any]:
 		return index
 
 
-def exportV1(device: str) -> Dict[str, Any]:
+def exportV1(device: str) -> Optional[Dict[str, Any]]:
 		if device in unreleased:
 				return None
 		else:
@@ -801,7 +801,7 @@ def exportV1(device: str) -> Dict[str, Any]:
 										raise RuntimeError(f"导出设备 {device} 失败: {str(e)}") from e
 
 
-def exportV2(device: str) -> Dict[str, Any]:
+def exportV2(device: str) -> Optional[Dict[str, Any]]:
 		if device in unreleased:
 				return None
 		# 检查是否为 HyperOS/STAN 设备（STAN = 现代原生安卓/AOSP）
@@ -830,14 +830,15 @@ def exportV2(device: str) -> Dict[str, Any]:
 					if not device_data:
 							raise ValueError(f"设备 '{device}' 在数据库中不存在")
 
-					device_code = device_data[0] if len(device_data) > 0 else ""
-					name_json_str = device_data[1] if len(device_data) > 1 else '{}'
-					dev_tag = device_data[2] if len(device_data) > 2 else '""'
+					device_row: Tuple[Any, ...] = tuple(device_data)
+					device_code = device_row[0] if len(device_row) > 0 else ""
+					name_json_str = device_row[1] if len(device_row) > 1 else '{}'
+					dev_tag = device_row[2] if len(device_row) > 2 else '""'
 					# brands: "\"REDMI, POCO\"" -> ["REDMI", "POCO"]
-					raw_brand = device_data[3] if len(device_data) > 3 else ""
+					raw_brand = device_row[3] if len(device_row) > 3 else ""
 					device_brand = [b.strip().strip('"') for b in raw_brand.strip().strip('"').split(',')] if raw_brand else []
 					# full_brands: "[\"REDMI\", \"POCO\"]" -> ["REDMI", "POCO"]
-					raw_full_brand = device_data[4] if len(device_data) > 4 else ""
+					raw_full_brand = device_row[4] if len(device_row) > 4 else ""
 					try:
 						device_full_brand = json.loads(raw_full_brand) if raw_full_brand else []
 					except (json.JSONDecodeError, TypeError):
@@ -1050,7 +1051,7 @@ def exportV2(device: str) -> Dict[str, Any]:
 					raise RuntimeError(f"导出设备 {device} 失败(V2): {str(e)}") from e
 
 
-def exportV3(device: str) -> Dict[str, Any]:
+def exportV3(device: str) -> Optional[Dict[str, Any]]:
 		if device in unreleased:
 				return None
 
@@ -1074,14 +1075,15 @@ def exportV3(device: str) -> Dict[str, Any]:
 				if not device_data:
 						raise ValueError(f"设备 '{device}' 在数据库中不存在")
 
-				device_code = device_data[0] if len(device_data) > 0 else ""
-				name_json_str = device_data[1] if len(device_data) > 1 else '{}'
-				dev_tag = device_data[2] if len(device_data) > 2 else '""'
+				device_row: Tuple[Any, ...] = tuple(device_data)
+				device_code = device_row[0] if len(device_row) > 0 else ""
+				name_json_str = device_row[1] if len(device_row) > 1 else '{}'
+				dev_tag = device_row[2] if len(device_row) > 2 else '""'
 				# brands: "\"REDMI, POCO\"" -> ["REDMI", "POCO"]
-				raw_brand = device_data[3] if len(device_data) > 3 else ""
+				raw_brand = device_row[3] if len(device_row) > 3 else ""
 				device_brand = [b.strip().strip('"') for b in raw_brand.strip().strip('"').split(',')] if raw_brand else []
 				# full_brands: "[\"REDMI\", \"POCO\"]" -> ["REDMI", "POCO"]
-				raw_full_brand = device_data[4] if len(device_data) > 4 else ""
+				raw_full_brand = device_row[4] if len(device_row) > 4 else ""
 				try:
 					device_full_brand = json.loads(raw_full_brand) if raw_full_brand else []
 				except (json.JSONDecodeError, TypeError):
@@ -1890,7 +1892,7 @@ def export_xms() -> Dict[str, Any]:
 						'regions': sorted(region_values),
 						'brands': sorted(brand_values),
 						'tablet': is_tablet,
-						'types': sorted({group.get('type') for group in groups if group.get('type')}),
+						'types': sorted({group['type'] for group in groups if group.get('type')}),
 
 						# 设备清单已按版本分组在 groups[].devices 里，不再重复一份
 						'groups': groups,
@@ -1949,8 +1951,17 @@ def export_xms() -> Dict[str, Any]:
 								'appCount': len([app for app in latest['apps'] if app['pkg']]),
 						} if latest else None,
 				})
+		# 与 /devices 页一致：按 devices 系列顺序（series.order）排，未入系列的机型放末尾
+		try:
+				series_order = load_series_data().get('order') or []
+		except Exception:
+				series_order = []
+		series_rank = {device: index for index, device in enumerate(series_order)}
 		index_devices.sort(key=lambda item: (
-				_xms_date_key(((item['latest'] or {}).get('pushDate')) or ''), item['device']))
+				series_rank.get(item['device'], 10 ** 9),
+				_xms_date_key(((item['latest'] or {}).get('pushDate')) or ''),
+				item['device'],
+		))
 
 		index_apps: List[Dict[str, Any]] = []
 		for pkg, doc in app_docs.items():
