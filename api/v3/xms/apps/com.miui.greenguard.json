@@ -7,7 +7,7 @@
   "apkName": "安全守护服务",
   "releaseDate": "2026-07-28",
   "latestVersion": "1320260707",
-  "recordCount": 54,
+  "recordCount": 56,
   "deviceCount": 51,
   "os": [
     "OS3"
@@ -51,7 +51,7 @@
           "zh": "修复 部分场景下“家人守护”中设备定位更新延迟的问题"
         }
       ],
-      "recordCount": 13,
+      "recordCount": 14,
       "devices": [
         {
           "device": "turner",
@@ -178,6 +178,7 @@
           "pushDate": "2026-07-28",
           "isLatest": true,
           "romVersions": [
+            "OS3.0.306.0.WOTCNXM",
             "OS3.0.305.0.WOTCNXM",
             "OS3.0.304.0.WOTCNXM",
             "OS3.0.303.0.WOTCNXM",
@@ -305,7 +306,7 @@
           "zh": "修复 部分场景下“家人守护”中设备定位更新延迟的问题"
         }
       ],
-      "recordCount": 38,
+      "recordCount": 40,
       "devices": [
         {
           "device": "breeze",
@@ -564,6 +565,22 @@
           ]
         },
         {
+          "device": "lapis",
+          "name": {
+            "zh": "REDMI Note 15 Pro 5G",
+            "en": "REDMI Note 15 Pro 5G"
+          },
+          "code": "lapis",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-07-28",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.309.0.WPPCNXM"
+          ]
+        },
+        {
           "device": "flourite",
           "name": {
             "zh": "REDMI Note 15 Pro+",
@@ -592,6 +609,7 @@
           "pushDate": "2026-07-28",
           "isLatest": true,
           "romVersions": [
+            "OS3.0.304.0.WOUCNXM",
             "OS3.0.302.0.WOUCNXM"
           ]
         },
@@ -913,50 +931,6 @@
           "isLatest": false,
           "romVersions": [
             "OS3.0.306.0.WPLCNXM"
-          ]
-        }
-      ]
-    },
-    {
-      "version": "C11",
-      "os": "OS3",
-      "appVersion": "1320260705",
-      "type": "",
-      "pushDate": "2026-07-28",
-      "isLatest": true,
-      "apkName": "安全守护服务",
-      "file": "",
-      "releaseDate": "2026-07-28",
-      "size": 0,
-      "md5": "",
-      "sha256": "",
-      "logs": [
-        {
-          "zh": "优化  “强制休息时长”和“连续使用时长”的可选范围扩大"
-        },
-        {
-          "zh": "修复 部分场景下三方应用在“未成年人模式”下推送内容异常的问题"
-        },
-        {
-          "zh": "修复 部分场景下“家人守护”中设备定位更新延迟的问题"
-        }
-      ],
-      "recordCount": 1,
-      "devices": [
-        {
-          "device": "lapis",
-          "name": {
-            "zh": "REDMI Note 15 Pro 5G",
-            "en": "REDMI Note 15 Pro 5G"
-          },
-          "code": "lapis",
-          "region": "cn",
-          "zone": 1,
-          "android": "16.0",
-          "pushDate": "2026-07-28",
-          "isLatest": true,
-          "romVersions": [
-            "OS3.0.309.0.WPPCNXM"
           ]
         }
       ]

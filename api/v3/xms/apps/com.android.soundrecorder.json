@@ -23,10 +23,10 @@
     "ug": "ئۈن خاتىرىلەش ماشىنىسى",
     "bo": "སྒྲ་འཇུག་ཆས"
   },
-  "apkName": "录音机-HyperOS3-国内",
+  "apkName": "录音机",
   "releaseDate": "2026-07-28",
   "latestVersion": "708099",
-  "recordCount": 54,
+  "recordCount": 56,
   "deviceCount": 51,
   "os": [
     "OS3"
@@ -51,7 +51,7 @@
       "type": "universal",
       "pushDate": "2026-07-28",
       "isLatest": true,
-      "apkName": "录音机-HyperOS3-国内",
+      "apkName": "录音机",
       "file": "soundrecorder-7.8.9.9.2026071018-universal-61a2cb709b.apk",
       "releaseDate": "2026-07-28",
       "size": 23402846,
@@ -67,7 +67,7 @@
           "en": "Fix: Occasional audio quality issues during recording playback"
         }
       ],
-      "recordCount": 53,
+      "recordCount": 56,
       "devices": [
         {
           "device": "breeze",
@@ -342,6 +342,22 @@
           ]
         },
         {
+          "device": "lapis",
+          "name": {
+            "zh": "REDMI Note 15 Pro 5G",
+            "en": "REDMI Note 15 Pro 5G"
+          },
+          "code": "lapis",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-07-28",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.309.0.WPPCNXM"
+          ]
+        },
+        {
           "device": "flourite",
           "name": {
             "zh": "REDMI Note 15 Pro+",
@@ -370,6 +386,7 @@
           "pushDate": "2026-07-28",
           "isLatest": true,
           "romVersions": [
+            "OS3.0.304.0.WOUCNXM",
             "OS3.0.302.0.WOUCNXM"
           ]
         },
@@ -818,6 +835,7 @@
           "pushDate": "2026-07-28",
           "isLatest": true,
           "romVersions": [
+            "OS3.0.306.0.WOTCNXM",
             "OS3.0.305.0.WOTCNXM",
             "OS3.0.304.0.WOTCNXM",
             "OS3.0.303.0.WOTCNXM",
@@ -870,49 +888,6 @@
           "isLatest": false,
           "romVersions": [
             "OS3.0.306.0.WPLCNXM"
-          ]
-        }
-      ]
-    },
-    {
-      "version": "C11",
-      "os": "OS3",
-      "appVersion": "708099",
-      "type": "",
-      "pushDate": "2026-07-28",
-      "isLatest": true,
-      "apkName": "录音机-HyperOS3-国内",
-      "file": "",
-      "releaseDate": "2026-07-28",
-      "size": 0,
-      "md5": "",
-      "sha256": "",
-      "logs": [
-        {
-          "zh": "修复 部分场景下云端录音无法下载播放的问题",
-          "en": "Fix: Cloud recordings couldn't be downloaded or played in some cases"
-        },
-        {
-          "zh": "修复 部分场景下录音回放音质异常的问题",
-          "en": "Fix: Occasional audio quality issues during recording playback"
-        }
-      ],
-      "recordCount": 1,
-      "devices": [
-        {
-          "device": "lapis",
-          "name": {
-            "zh": "REDMI Note 15 Pro 5G",
-            "en": "REDMI Note 15 Pro 5G"
-          },
-          "code": "lapis",
-          "region": "cn",
-          "zone": 1,
-          "android": "16.0",
-          "pushDate": "2026-07-28",
-          "isLatest": true,
-          "romVersions": [
-            "OS3.0.309.0.WPPCNXM"
           ]
         }
       ]

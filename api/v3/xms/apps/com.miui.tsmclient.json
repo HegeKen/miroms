@@ -5,10 +5,10 @@
     "en": "Smart cards",
     "ug": "شياۋمى ئەقلىي كارتىسى"
   },
-  "apkName": "小米智能卡-OS3",
+  "apkName": "小米智能卡",
   "releaseDate": "2026-07-28",
   "latestVersion": "1950",
-  "recordCount": 41,
+  "recordCount": 42,
   "deviceCount": 41,
   "os": [
     "OS3"
@@ -33,7 +33,7 @@
       "type": "universal",
       "pushDate": "2026-07-28",
       "isLatest": true,
-      "apkName": "小米智能卡-OS3",
+      "apkName": "小米智能卡",
       "file": "tsmclient-26.06.25.1.f-universal-ca902a5a20.apk",
       "releaseDate": "2026-07-28",
       "size": 19354158,
@@ -45,7 +45,7 @@
           "en": "Fix: Some pages could display incorrectly"
         }
       ],
-      "recordCount": 40,
+      "recordCount": 42,
       "devices": [
         {
           "device": "breeze",
@@ -304,6 +304,22 @@
           ]
         },
         {
+          "device": "lapis",
+          "name": {
+            "zh": "REDMI Note 15 Pro 5G",
+            "en": "REDMI Note 15 Pro 5G"
+          },
+          "code": "lapis",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-07-28",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.309.0.WPPCNXM"
+          ]
+        },
+        {
           "device": "flourite",
           "name": {
             "zh": "REDMI Note 15 Pro+",
@@ -332,6 +348,7 @@
           "pushDate": "2026-07-28",
           "isLatest": true,
           "romVersions": [
+            "OS3.0.304.0.WOUCNXM",
             "OS3.0.302.0.WOUCNXM"
           ]
         },
@@ -685,45 +702,6 @@
           "isLatest": false,
           "romVersions": [
             "OS3.0.306.0.WPLCNXM"
-          ]
-        }
-      ]
-    },
-    {
-      "version": "C11",
-      "os": "OS3",
-      "appVersion": "1950",
-      "type": "",
-      "pushDate": "2026-07-28",
-      "isLatest": true,
-      "apkName": "小米智能卡-OS3",
-      "file": "",
-      "releaseDate": "2026-07-28",
-      "size": 0,
-      "md5": "",
-      "sha256": "",
-      "logs": [
-        {
-          "zh": "修复 部分场景下页面显示异常的问题",
-          "en": "Fix: Some pages could display incorrectly"
-        }
-      ],
-      "recordCount": 1,
-      "devices": [
-        {
-          "device": "lapis",
-          "name": {
-            "zh": "REDMI Note 15 Pro 5G",
-            "en": "REDMI Note 15 Pro 5G"
-          },
-          "code": "lapis",
-          "region": "cn",
-          "zone": 1,
-          "android": "16.0",
-          "pushDate": "2026-07-28",
-          "isLatest": true,
-          "romVersions": [
-            "OS3.0.309.0.WPPCNXM"
           ]
         }
       ]

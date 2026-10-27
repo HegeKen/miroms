@@ -1300,6 +1300,16 @@
       "ep": "0",
       "roms": [
         {
+          "miui": "OS2.0.209.0.VGPIDXM",
+          "os": "OS2",
+          "bigver": "HyperOS 2",
+          "android": "15.0",
+          "release": "2026-10-23",
+          "aspatch": "2026-10-01",
+          "recovery": "gale_id_global-ota_full-OS2.0.209.0.VGPIDXM-user-15.0-a2db8db2ad.zip",
+          "fastboot": ""
+        },
+        {
           "miui": "OS2.0.208.0.VGPIDXM",
           "os": "OS2",
           "bigver": "HyperOS 2",
@@ -1837,6 +1847,56 @@
           "release": "2024-07-08",
           "aspatch": "2024-06-01",
           "recovery": "miui_GALELMCRGlobal_OS1.0.1.0.UGPLMCR_42e3dbb515_14.0.zip",
+          "fastboot": ""
+        }
+      ]
+    },
+    {
+      "id": "gale_mx_tc_global",
+      "brand": [
+        "Redmi",
+        "POCO"
+      ],
+      "device": {
+        "zh": "Redmi 13C 国际 / POCO C65",
+        "en": "Redmi 13C / POCO C65"
+      },
+      "name": {
+        "zh": "墨西哥Telcel运营商定制版",
+        "en": "Mexico Stable Telcel Carrier Edtion"
+      },
+      "region": "mx",
+      "carrier": [
+        "tc"
+      ],
+      "tags": {
+        "branch": "MXTC",
+        "tag": "MXTC",
+        "branchtag": "F",
+        "btag": "F"
+      },
+      "zone": "2",
+      "show": "1",
+      "ep": "0",
+      "roms": [
+        {
+          "miui": "OS2.0.208.0.VGPMXTC",
+          "os": "OS2",
+          "bigver": "HyperOS 2",
+          "android": "15.0",
+          "release": "2026-09-20",
+          "aspatch": "2026-09-01",
+          "recovery": "gale_mx_tc_global-ota_full-OS2.0.208.0.VGPMXTC-user-15.0-e26a924fc6.zip",
+          "fastboot": ""
+        },
+        {
+          "miui": "OS1.0.4.0.UGPMXTC",
+          "os": "OS1",
+          "bigver": "HyperOS 1",
+          "android": "14.0",
+          "release": "2024-12-24",
+          "aspatch": "2024-12-01",
+          "recovery": "miui_GALEMXTCGlobal_OS1.0.4.0.UGPMXTC_5bf7707315_14.0.zip",
           "fastboot": ""
         }
       ]

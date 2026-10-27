@@ -1005,7 +1005,7 @@
           "release": "2026-10-13",
           "aspatch": "2026-09-01",
           "recovery": "degas_id_global-ota_full-OS3.0.305.0.WNEIDXM-user-16.0-36764b7aef.zip",
-          "fastboot": ""
+          "fastboot": "degas_id_global_images_OS3.0.305.0.WNEIDXM_20260928.0000.00_16.0_id_d11ac9d4cc.tgz"
         },
         "OS3.0.304.0.WNEIDXM": {
           "os": "OS3.0.304.0.WNEIDXM",
@@ -1348,6 +1348,64 @@
       }
     },
     {
+      "branchCode": "degas_jp_kd_global",
+      "brand": [
+        "Xiaomi"
+      ],
+      "device": {
+        "zh": "小米 14T",
+        "en": "Xiaomi 14T"
+      },
+      "idtag": "JPKD",
+      "tag": "JPKD",
+      "branchtag": "F",
+      "name": {
+        "zh": "日本KDDI电信运营商定制版",
+        "en": "Japan Stable KDDI Carrier Edtion"
+      },
+      "table": [
+        "os",
+        "android",
+        "release",
+        "aspatch",
+        "recovery",
+        "fastboot"
+      ],
+      "show": "1",
+      "carrier": [
+        ""
+      ],
+      "region": "jp",
+      "zone": "2",
+      "ep": "0",
+      "roms": {
+        "OS3.0.9.0.WNEJPKD": {
+          "os": "OS3.0.9.0.WNEJPKD",
+          "android": "16.0",
+          "release": "2026-09-29",
+          "aspatch": "2026-09-01",
+          "recovery": "degas_jp_kd_global-ota_full-OS3.0.9.0.WNEJPKD-user-16.0-9cda54a21d.zip",
+          "fastboot": ""
+        },
+        "OS2.0.8.0.VNEJPKD": {
+          "os": "OS2.0.8.0.VNEJPKD",
+          "android": "15.0",
+          "release": "2025-10-28",
+          "aspatch": "2025-10-01",
+          "recovery": "degas_jp_kd_global-ota_full-OS2.0.8.0.VNEJPKD-user-15.0-e704b9920a.zip",
+          "fastboot": ""
+        },
+        "OS1.0.6.0.UNEJPKD": {
+          "os": "OS1.0.6.0.UNEJPKD",
+          "android": "14.0",
+          "release": "2026-10-27",
+          "aspatch": "",
+          "recovery": "miui_DEGASJPKDGlobal_OS1.0.6.0.UNEJPKD_e09adddccc_14.0.zip",
+          "fastboot": ""
+        }
+      }
+    },
+    {
       "branchCode": "degas_lm_cr_global",
       "brand": [
         "Xiaomi"
@@ -1379,6 +1437,14 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS3.0.303.0.WNELMCR": {
+          "os": "OS3.0.303.0.WNELMCR",
+          "android": "16.0",
+          "release": "2026-10-26",
+          "aspatch": "2026-10-01",
+          "recovery": "degas_lm_cr_global-ota_full-OS3.0.303.0.WNELMCR-user-16.0-534674a64f.zip",
+          "fastboot": ""
+        },
         "OS3.0.302.0.WNELMCR": {
           "os": "OS3.0.302.0.WNELMCR",
           "android": "16.0",
@@ -1486,6 +1552,64 @@
       }
     },
     {
+      "branchCode": "degas_mx_tc_global",
+      "brand": [
+        "Xiaomi"
+      ],
+      "device": {
+        "zh": "小米 14T",
+        "en": "Xiaomi 14T"
+      },
+      "idtag": "MXTC",
+      "tag": "MXTC",
+      "branchtag": "F",
+      "name": {
+        "zh": "墨西哥Telcel运营商定制版",
+        "en": "Mexico Stable Telcel Carrier Edtion"
+      },
+      "table": [
+        "os",
+        "android",
+        "release",
+        "aspatch",
+        "recovery",
+        "fastboot"
+      ],
+      "show": "1",
+      "carrier": [
+        "tc"
+      ],
+      "region": "mx",
+      "zone": "2",
+      "ep": "0",
+      "roms": {
+        "OS3.0.303.0.WNEMXTC": {
+          "os": "OS3.0.303.0.WNEMXTC",
+          "android": "16.0",
+          "release": "2026-10-13",
+          "aspatch": "2026-10-01",
+          "recovery": "degas_mx_tc_global-ota_full-OS3.0.303.0.WNEMXTC-user-16.0-0e7bd4f65a.zip",
+          "fastboot": ""
+        },
+        "OS2.0.203.0.VNEMXTC": {
+          "os": "OS2.0.203.0.VNEMXTC",
+          "android": "15.0",
+          "release": "2026-02-06",
+          "aspatch": "2026-02-01",
+          "recovery": "degas_mx_tc_global-ota_full-OS2.0.203.0.VNEMXTC-user-15.0-6e47bcca5f.zip",
+          "fastboot": ""
+        },
+        "OS1.0.10.0.UNEMXTC": {
+          "os": "OS1.0.10.0.UNEMXTC",
+          "android": "14.0",
+          "release": "2025-03-08",
+          "aspatch": "2025-02-01",
+          "recovery": "miui_DEGASMXTCGlobal_OS1.0.10.0.UNEMXTC_545a402a99_14.0.zip",
+          "fastboot": ""
+        }
+      }
+    },
+    {
       "branchCode": "degas_mx_at_global",
       "brand": [
         "Xiaomi"
@@ -1523,7 +1647,7 @@
           "release": "2026-10-19",
           "aspatch": "2026-10-01",
           "recovery": "degas_mx_at_global-ota_full-OS3.0.303.0.WNEMXAT-user-16.0-9faf393575.zip",
-          "fastboot": ""
+          "fastboot": "degas_mx_at_global_images_OS3.0.303.0.WNEMXAT_20261009.0000.00_16.0_mx_at_d45e4d833a.tgz"
         },
         "OS3.0.302.0.WNEMXAT": {
           "os": "OS3.0.302.0.WNEMXAT",

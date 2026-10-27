@@ -890,6 +890,16 @@
       "ep": "0",
       "roms": [
         {
+          "miui": "OS3.0.304.0.WNRMIXM",
+          "os": "OS3",
+          "bigver": "HyperOS 3",
+          "android": "16.0",
+          "release": "2026-10-23",
+          "aspatch": "2026-10-01",
+          "recovery": "garnet_global-ota_full-OS3.0.304.0.WNRMIXM-user-16.0-95e753c09d.zip",
+          "fastboot": ""
+        },
+        {
           "miui": "OS3.0.302.0.WNRMIXM",
           "os": "OS3",
           "bigver": "HyperOS 3",
@@ -2686,6 +2696,65 @@
       ]
     },
     {
+      "id": "garnet_jp_kd_global",
+      "brand": [
+        "Redmi"
+      ],
+      "device": {
+        "zh": "Redmi Note 13 Pro 5G / POCO X6 5G",
+        "en": "Redmi Note 13 Pro 5G / POCO X6 5G"
+      },
+      "name": {
+        "zh": "日本KDDI电信运营商定制版",
+        "en": "Japan Stable KDDI Carrier Edtion"
+      },
+      "region": "jp",
+      "carrier": [
+        ""
+      ],
+      "tags": {
+        "branch": "JPKD",
+        "tag": "JPKD",
+        "branchtag": "F",
+        "btag": "F"
+      },
+      "zone": "2",
+      "show": "1",
+      "ep": "0",
+      "roms": [
+        {
+          "miui": "OS3.0.6.0.WNRJPKD",
+          "os": "OS3",
+          "bigver": "HyperOS 3",
+          "android": "16.0",
+          "release": "2026-08-18",
+          "aspatch": "2026-07-01",
+          "recovery": "garnet_jp_kd_global-ota_full-OS3.0.6.0.WNRJPKD-user-16.0-b52a971b93.zip",
+          "fastboot": ""
+        },
+        {
+          "miui": "OS2.0.8.0.VNRJPKD",
+          "os": "OS2",
+          "bigver": "HyperOS 2",
+          "android": "15.0",
+          "release": "2025-12-02",
+          "aspatch": "2025-10-01",
+          "recovery": "garnet_jp_kd_global-ota_full-OS2.0.8.0.VNRJPKD-user-15.0-aa4e4c45d3.zip",
+          "fastboot": ""
+        },
+        {
+          "miui": "OS1.0.7.0.UNRJPKD",
+          "os": "OS1",
+          "bigver": "HyperOS 1",
+          "android": "14.0",
+          "release": "2026-10-27",
+          "aspatch": "",
+          "recovery": "miui_GARNETJPKDGlobal_OS1.0.7.0.UNRJPKD_440a9a98d5_14.0.zip",
+          "fastboot": ""
+        }
+      ]
+    },
+    {
       "id": "garnet_lm_cr_global",
       "brand": [
         "Redmi"
@@ -2870,6 +2939,65 @@
           "release": "2024-05-29",
           "aspatch": "2024-04-01",
           "recovery": "miui_GARNETLMCRGlobal_OS1.0.1.0.UNRLMCR_811c128c71_14.0.zip",
+          "fastboot": ""
+        }
+      ]
+    },
+    {
+      "id": "garnet_mx_tc_global",
+      "brand": [
+        "Redmi"
+      ],
+      "device": {
+        "zh": "Redmi Note 13 Pro 5G / POCO X6 5G",
+        "en": "Redmi Note 13 Pro 5G / POCO X6 5G"
+      },
+      "name": {
+        "zh": "墨西哥Telcel运营商定制版",
+        "en": "Mexico Stable Telcel Carrier Edtion"
+      },
+      "region": "mx",
+      "carrier": [
+        "tc"
+      ],
+      "tags": {
+        "branch": "MXTC",
+        "tag": "MXTC",
+        "branchtag": "F",
+        "btag": "F"
+      },
+      "zone": "2",
+      "show": "1",
+      "ep": "0",
+      "roms": [
+        {
+          "miui": "OS3.0.4.0.WNRMXTC",
+          "os": "OS3",
+          "bigver": "HyperOS 3",
+          "android": "16.0",
+          "release": "2026-09-18",
+          "aspatch": "2026-09-01",
+          "recovery": "garnet_mx_tc_global-ota_full-OS3.0.4.0.WNRMXTC-user-16.0-9c3091e8d4.zip",
+          "fastboot": ""
+        },
+        {
+          "miui": "OS2.0.202.0.VNRMXTC",
+          "os": "OS2",
+          "bigver": "HyperOS 2",
+          "android": "15.0",
+          "release": "2026-02-09",
+          "aspatch": "2026-02-01",
+          "recovery": "garnet_mx_tc_global-ota_full-OS2.0.202.0.VNRMXTC-user-15.0-570d9377e2.zip",
+          "fastboot": ""
+        },
+        {
+          "miui": "OS1.0.5.0.UNRMXTC",
+          "os": "OS1",
+          "bigver": "HyperOS 1",
+          "android": "14.0",
+          "release": "2024-12-12",
+          "aspatch": "2024-11-01",
+          "recovery": "miui_GARNETMXTCGlobal_OS1.0.5.0.UNRMXTC_7121a457fa_14.0.zip",
           "fastboot": ""
         }
       ]

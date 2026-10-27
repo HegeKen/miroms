@@ -4,10 +4,10 @@
     "zh": "截屏",
     "en": "Screenshot"
   },
-  "apkName": "截屏_HyperOS3.0_Beta",
+  "apkName": "截屏",
   "releaseDate": "2026-07-28",
   "latestVersion": "10602036",
-  "recordCount": 54,
+  "recordCount": 56,
   "deviceCount": 51,
   "os": [
     "OS3"
@@ -32,7 +32,7 @@
       "type": "universal",
       "pushDate": "2026-07-28",
       "isLatest": true,
-      "apkName": "截屏_HyperOS3.0_Beta",
+      "apkName": "截屏",
       "file": "screenshot-1.6.2.36-editor-universal-be6b7e4978.apk",
       "releaseDate": "2026-07-28",
       "size": 9440120,
@@ -48,7 +48,7 @@
           "en": "Fix: Scrolling screenshots could display incorrectly in some cases"
         }
       ],
-      "recordCount": 53,
+      "recordCount": 56,
       "devices": [
         {
           "device": "breeze",
@@ -323,6 +323,22 @@
           ]
         },
         {
+          "device": "lapis",
+          "name": {
+            "zh": "REDMI Note 15 Pro 5G",
+            "en": "REDMI Note 15 Pro 5G"
+          },
+          "code": "lapis",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-07-28",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.309.0.WPPCNXM"
+          ]
+        },
+        {
           "device": "flourite",
           "name": {
             "zh": "REDMI Note 15 Pro+",
@@ -351,6 +367,7 @@
           "pushDate": "2026-07-28",
           "isLatest": true,
           "romVersions": [
+            "OS3.0.304.0.WOUCNXM",
             "OS3.0.302.0.WOUCNXM"
           ]
         },
@@ -799,6 +816,7 @@
           "pushDate": "2026-07-28",
           "isLatest": true,
           "romVersions": [
+            "OS3.0.306.0.WOTCNXM",
             "OS3.0.305.0.WOTCNXM",
             "OS3.0.304.0.WOTCNXM",
             "OS3.0.303.0.WOTCNXM",
@@ -851,49 +869,6 @@
           "isLatest": false,
           "romVersions": [
             "OS3.0.306.0.WPLCNXM"
-          ]
-        }
-      ]
-    },
-    {
-      "version": "C11",
-      "os": "OS3",
-      "appVersion": "10602036",
-      "type": "",
-      "pushDate": "2026-07-28",
-      "isLatest": true,
-      "apkName": "截屏_HyperOS3.0_Beta",
-      "file": "",
-      "releaseDate": "2026-07-28",
-      "size": 0,
-      "md5": "",
-      "sha256": "",
-      "logs": [
-        {
-          "zh": "修复 部分场景下区域截屏失败的问题",
-          "en": "Fix: Partial screenshots couldn't be taken in some cases"
-        },
-        {
-          "zh": "修复 部分场景下长截屏页面显示异常的问题",
-          "en": "Fix: Scrolling screenshots could display incorrectly in some cases"
-        }
-      ],
-      "recordCount": 1,
-      "devices": [
-        {
-          "device": "lapis",
-          "name": {
-            "zh": "REDMI Note 15 Pro 5G",
-            "en": "REDMI Note 15 Pro 5G"
-          },
-          "code": "lapis",
-          "region": "cn",
-          "zone": 1,
-          "android": "16.0",
-          "pushDate": "2026-07-28",
-          "isLatest": true,
-          "romVersions": [
-            "OS3.0.309.0.WPPCNXM"
           ]
         }
       ]

@@ -385,6 +385,14 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS3.0.304.0.WOFEUXM": {
+          "os": "OS3.0.304.0.WOFEUXM",
+          "android": "16.0",
+          "release": "2026-10-27",
+          "aspatch": "2026-10-01",
+          "recovery": "obsidian_eea_global-ota_full-OS3.0.304.0.WOFEUXM-user-16.0-09f668a0e1.zip",
+          "fastboot": ""
+        },
         "OS3.0.303.0.WOFEUXM": {
           "os": "OS3.0.303.0.WOFEUXM",
           "android": "16.0",
@@ -958,6 +966,56 @@
           "aspatch": "2024-11-01",
           "recovery": "miui_OBSIDIANLMCRGlobal_OS1.0.1.0.UOFLMCR_e11a799b00_14.0.zip",
           "fastboot": "obsidian_lm_cr_global_images_OS1.0.1.0.UOFLMCR_20241114.0000.00_14.0_lm_cr_e8fc55697c.tgz"
+        }
+      }
+    },
+    {
+      "branchCode": "obsidian_mx_tc_global",
+      "brand": [
+        "Redmi"
+      ],
+      "device": {
+        "zh": "Redmi Note 14 Pro",
+        "en": "Redmi Note 14 Pro"
+      },
+      "idtag": "MXTC",
+      "tag": "MXTC",
+      "branchtag": "F",
+      "name": {
+        "zh": "墨西哥Telcel运营商定制版",
+        "en": "Mexico Stable Telcel Carrier Edtion"
+      },
+      "table": [
+        "os",
+        "android",
+        "release",
+        "aspatch",
+        "recovery",
+        "fastboot"
+      ],
+      "show": "1",
+      "carrier": [
+        "tc"
+      ],
+      "region": "mx",
+      "zone": "2",
+      "ep": "0",
+      "roms": {
+        "OS2.0.206.0.VOFMXTC": {
+          "os": "OS2.0.206.0.VOFMXTC",
+          "android": "15.0",
+          "release": "2026-06-29",
+          "aspatch": "2026-06-01",
+          "recovery": "obsidian_mx_tc_global-ota_full-OS2.0.206.0.VOFMXTC-user-15.0-8fc7b76151.zip",
+          "fastboot": ""
+        },
+        "OS1.0.6.0.UOFMXTC": {
+          "os": "OS1.0.6.0.UOFMXTC",
+          "android": "14.0",
+          "release": "2025-04-25",
+          "aspatch": "2025-04-01",
+          "recovery": "miui_OBSIDIANMXTCGlobal_OS1.0.6.0.UOFMXTC_806b351ee8_14.0.zip",
+          "fastboot": ""
         }
       }
     },

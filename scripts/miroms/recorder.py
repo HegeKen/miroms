@@ -22,7 +22,7 @@ class DataRecorder:
 		"""
 		新数据记录管理（V3 数据库驱动）
 
-		所有数据以 V3 数据库为基准，同时写入本地日志供后续处理。
+		所有数据以 V3 数据库为基准；仅未能自动落库的条目写入本地日志，供人工补录。
 		"""
 
 		@classmethod
@@ -98,7 +98,6 @@ class DataRecorder:
 							device = parsed.get("device", "")
 							if flag and device:
 									cls.record_flag_mapping(flag, device)
-							_log_append(_NEW_ROMS_LOG, f"{ts}\t{parsed['device']}\t{parsed['version']}\t{filename}")
 							print(f"新 ROM 已入库: {parsed['device']}\t{parsed['version']}")
 							return "New ROM"
 

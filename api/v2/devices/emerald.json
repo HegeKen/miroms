@@ -1571,6 +1571,14 @@
       "zone": "2",
       "ep": "0",
       "roms": {
+        "OS3.0.303.0.WNFLMCR": {
+          "os": "OS3.0.303.0.WNFLMCR",
+          "android": "16.0",
+          "release": "2026-10-22",
+          "aspatch": "2026-10-01",
+          "recovery": "emerald_lm_cr_global-ota_full-OS3.0.303.0.WNFLMCR-user-16.0-9e3fd67fa4.zip",
+          "fastboot": ""
+        },
         "OS3.0.302.0.WNFLMCR": {
           "os": "OS3.0.302.0.WNFLMCR",
           "android": "16.0",
@@ -1686,6 +1694,57 @@
       }
     },
     {
+      "branchCode": "emerald_mx_tc_global",
+      "brand": [
+        "Redmi",
+        "POCO"
+      ],
+      "device": {
+        "zh": "Redmi Note 13 Pro 4G / POCO M6 Pro",
+        "en": "Redmi Note 13 Pro 4G / POCO M6 Pro"
+      },
+      "idtag": "MXTC",
+      "tag": "MXTC",
+      "branchtag": "F",
+      "name": {
+        "zh": "墨西哥Telcel运营商定制版",
+        "en": "Mexico Stable Telcel Carrier Edtion"
+      },
+      "table": [
+        "os",
+        "android",
+        "release",
+        "aspatch",
+        "recovery",
+        "fastboot"
+      ],
+      "show": "1",
+      "carrier": [
+        "tc"
+      ],
+      "region": "mx",
+      "zone": "2",
+      "ep": "0",
+      "roms": {
+        "OS2.0.202.0.VNFMXTC": {
+          "os": "OS2.0.202.0.VNFMXTC",
+          "android": "15.0",
+          "release": "2025-12-26",
+          "aspatch": "2025-12-01",
+          "recovery": "emerald_mx_tc_global-ota_full-OS2.0.202.0.VNFMXTC-user-15.0-f1820dd02c.zip",
+          "fastboot": ""
+        },
+        "OS1.0.6.0.UNFMXTC": {
+          "os": "OS1.0.6.0.UNFMXTC",
+          "android": "14.0",
+          "release": "2025-03-06",
+          "aspatch": "2025-02-01",
+          "recovery": "miui_EMERALDMXTCGlobal_OS1.0.6.0.UNFMXTC_dc303dfc4c_14.0.zip",
+          "fastboot": ""
+        }
+      }
+    },
+    {
       "branchCode": "emerald_mx_at_global",
       "brand": [
         "Redmi",
@@ -1724,7 +1783,7 @@
           "release": "2026-10-21",
           "aspatch": "2026-10-01",
           "recovery": "emerald_mx_at_global-ota_full-OS3.0.303.0.WNFMXAT-user-16.0-31f495e853.zip",
-          "fastboot": ""
+          "fastboot": "emerald_mx_at_global_images_OS3.0.303.0.WNFMXAT_20261014.0000.00_16.0_mx_at_ef6bb668d9.tgz"
         },
         "OS3.0.302.0.WNFMXAT": {
           "os": "OS3.0.302.0.WNFMXAT",

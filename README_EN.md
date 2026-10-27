@@ -66,6 +66,7 @@ the [hub.miuier.com](https://hub.miuier.com) website, the admin panel and variou
 │   ├── restore_log_escapes.py       #   restore legacy JSON escapes ^ / $$
 │   ├── fix_mixed_translations.py    #   two-step mixed_translations repair
 │   ├── resequence_ids.py             #   renumber roms / dev / logs ids (remove AUTO_INCREMENT gaps)
+│   ├── beta_date_refill.py           #   fill / repair roms.beta_date from the package HTTP Last-Modified
 │   ├── rebuild_roms_logs.py          #   rebuild roms.logs from the backup DB (fix dangling references)
 │   ├── import_dev_week.py            #   import dev (weekly) data into dev table
 │   ├── import_sitelog.py             #   import both sites' site logs into the sitelog table

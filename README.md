@@ -823,6 +823,7 @@ APK 的签名下载地址带时效性（未签名直链 403），因此**不写�
 | `mgc_fastboot.py` | 小米社区 API 抓取 |
 | `fetch_changelog.py` | 抓取多语言更新日志（changelog）与卡刷包；`--probe` 探测接口对哪些语种真的返回译文，`--langs` 指定语种，`--force` 连英文回落也写入，`--verify` 以官方接口为准校验并纠正已有日志（`--verify-only` / `--verify-limit` / `--max-id` 分批） |
 | `aspatch.py` | 提取安全补丁（Android Security Patch）日期 |
+| `beta_date_refill.py` | 补 / 修 `roms.beta_date`：HEAD 取 recovery 包下载链接的 HTTP `Last-Modified`（上传时间，北京时间；HEAD 不可用退回 8KB Range GET）；默认预演，`--apply` 写库，`--ids` 可覆盖指定行，`--source db/auto` 可回退到 `public_date` / `release_date`；旧 MIUI 包 CDN 下线后取不到，保持空 |
 | `test.py` | 调试 / 验证脚本（非流水线步骤） |
 
 以上抓取脚本也可通过 VS Code Tasks（主仓库 `.vscode/tasks.json`，`Ctrl+Shift+B`）一键运行。

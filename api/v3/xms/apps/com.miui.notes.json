@@ -11,7 +11,7 @@
   "apkName": "笔记",
   "releaseDate": "2026-07-28",
   "latestVersion": "2432",
-  "recordCount": 54,
+  "recordCount": 56,
   "deviceCount": 51,
   "os": [
     "OS3"
@@ -54,7 +54,7 @@
           "zh": "修复 部分场景下待办提醒点击无响应的问题"
         }
       ],
-      "recordCount": 13,
+      "recordCount": 14,
       "devices": [
         {
           "device": "turner",
@@ -181,6 +181,7 @@
           "pushDate": "2026-07-28",
           "isLatest": true,
           "romVersions": [
+            "OS3.0.306.0.WOTCNXM",
             "OS3.0.305.0.WOTCNXM",
             "OS3.0.304.0.WOTCNXM",
             "OS3.0.303.0.WOTCNXM",
@@ -248,7 +249,7 @@
           "en": "Fix: Task reminders sometimes didn't respond when tapped"
         }
       ],
-      "recordCount": 40,
+      "recordCount": 42,
       "devices": [
         {
           "device": "breeze",
@@ -507,6 +508,22 @@
           ]
         },
         {
+          "device": "lapis",
+          "name": {
+            "zh": "REDMI Note 15 Pro 5G",
+            "en": "REDMI Note 15 Pro 5G"
+          },
+          "code": "lapis",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-07-28",
+          "isLatest": true,
+          "romVersions": [
+            "OS3.0.309.0.WPPCNXM"
+          ]
+        },
+        {
           "device": "flourite",
           "name": {
             "zh": "REDMI Note 15 Pro+",
@@ -535,6 +552,7 @@
           "pushDate": "2026-07-28",
           "isLatest": true,
           "romVersions": [
+            "OS3.0.304.0.WOUCNXM",
             "OS3.0.302.0.WOUCNXM"
           ]
         },
@@ -888,53 +906,6 @@
           "isLatest": false,
           "romVersions": [
             "OS3.0.306.0.WPLCNXM"
-          ]
-        }
-      ]
-    },
-    {
-      "version": "C11",
-      "os": "OS3",
-      "appVersion": "2431",
-      "type": "",
-      "pushDate": "2026-07-28",
-      "isLatest": true,
-      "apkName": "笔记",
-      "file": "",
-      "releaseDate": "2026-07-28",
-      "size": 0,
-      "md5": "",
-      "sha256": "",
-      "logs": [
-        {
-          "zh": "优化 笔记待办页操作流畅度，页面切换更顺滑",
-          "en": "Optimization: Performance on the Notes and Tasks pages for smoother navigation"
-        },
-        {
-          "zh": "修复 部分场景下笔记无法云同步的问题",
-          "en": "Fix: Notes couldn't be synced with the cloud in some cases"
-        },
-        {
-          "zh": "修复 部分场景下待办提醒点击无响应的问题",
-          "en": "Fix: Task reminders sometimes didn't respond when tapped"
-        }
-      ],
-      "recordCount": 1,
-      "devices": [
-        {
-          "device": "lapis",
-          "name": {
-            "zh": "REDMI Note 15 Pro 5G",
-            "en": "REDMI Note 15 Pro 5G"
-          },
-          "code": "lapis",
-          "region": "cn",
-          "zone": 1,
-          "android": "16.0",
-          "pushDate": "2026-07-28",
-          "isLatest": true,
-          "romVersions": [
-            "OS3.0.309.0.WPPCNXM"
           ]
         }
       ]
