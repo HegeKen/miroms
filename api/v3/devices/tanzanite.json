@@ -1441,6 +1441,16 @@
       "ep": "0",
       "roms": [
         {
+          "miui": "OS3.0.303.0.WOGLMCR",
+          "os": "OS3",
+          "bigver": "HyperOS 3",
+          "android": "16.0",
+          "release": "2026-10-28",
+          "aspatch": "2026-10-01",
+          "recovery": "tanzanite_lm_cr_global-ota_full-OS3.0.303.0.WOGLMCR-user-16.0-60e65e8c95.zip",
+          "fastboot": ""
+        },
+        {
           "miui": "OS3.0.302.0.WOGLMCR",
           "os": "OS3",
           "bigver": "HyperOS 3",
@@ -1549,6 +1559,55 @@
           "aspatch": "2024-11-01",
           "recovery": "miui_TANZANITELMCRGlobal_OS1.0.1.0.UOGLMCR_699af1461c_14.0.zip",
           "fastboot": "tanzanite_lm_cr_global_images_OS1.0.1.0.UOGLMCR_20241126.0000.00_14.0_lm_cr_b5c6b9dfc4.tgz"
+        }
+      ]
+    },
+    {
+      "id": "tanzanite_mx_tc_global",
+      "brand": [
+        "Redmi"
+      ],
+      "device": {
+        "zh": "Redmi Note 14 4G",
+        "en": "Redmi Note 14 4G"
+      },
+      "name": {
+        "zh": "墨西哥Telcel运营商定制版",
+        "en": "Mexico Stable Telcel Carrier Edtion"
+      },
+      "region": "mx",
+      "carrier": [
+        "tc"
+      ],
+      "tags": {
+        "branch": "MXTC",
+        "tag": "MXTC",
+        "branchtag": "F",
+        "btag": "F"
+      },
+      "zone": "2",
+      "show": "1",
+      "ep": "0",
+      "roms": [
+        {
+          "miui": "OS2.0.206.0.VOGMXTC",
+          "os": "OS2",
+          "bigver": "HyperOS 2",
+          "android": "15.0",
+          "release": "2026-05-22",
+          "aspatch": "2026-05-01",
+          "recovery": "tanzanite_mx_tc_global-ota_full-OS2.0.206.0.VOGMXTC-user-15.0-4043857866.zip",
+          "fastboot": ""
+        },
+        {
+          "miui": "OS1.0.4.0.UOGMXTC",
+          "os": "OS1",
+          "bigver": "HyperOS 1",
+          "android": "14.0",
+          "release": "2025-04-15",
+          "aspatch": "2025-04-01",
+          "recovery": "miui_TANZANITEMXTCGlobal_OS1.0.4.0.UOGMXTC_b98a6fcfc3_14.0.zip",
+          "fastboot": ""
         }
       ]
     },

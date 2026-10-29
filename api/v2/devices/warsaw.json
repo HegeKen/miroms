@@ -55,6 +55,15 @@
       "zone": "1",
       "ep": "0",
       "roms": {
+        "OS4.0.4.0.XHPCNXM": {
+          "os": "OS4.0.4.0.XHPCNXM",
+          "android": "17.0",
+          "release": "2026-10-26",
+          "aspatch": "2026-09-01",
+          "recovery": "warsaw-ota_full-OS4.0.4.0.XHPCNXM-user-17.0-af0d470830.zip",
+          "fastboot": "",
+          "ctelecom": ""
+        },
         "OS3.0.309.0.WHPCNXM": {
           "os": "OS3.0.309.0.WHPCNXM",
           "android": "16.0",
@@ -117,6 +126,53 @@
           "recovery": "warsaw-ota_full-OS3.0.306.0.WHPCNXM-user-16.0-8d5c1b6155.zip",
           "fastboot": "warsaw_images_OS3.0.306.0.WHPCNXM_20260627.0000.00_16.0_cn_f937704bf2.tgz",
           "ctelecom": "warsaw_images_OS3.0.306.0.WHPCNXM_20260627.0000.00_16.0_cn_chinatelecom_a558f1160a.tgz"
+        }
+      }
+    },
+    {
+      "branchCode": "warsaw_demo",
+      "brand": [
+        "REDMI"
+      ],
+      "device": {
+        "zh": "REDMI K90 至尊版",
+        "en": "REDMI K90 Ultra"
+      },
+      "idtag": "CnOD",
+      "tag": "CNDM",
+      "branchtag": "F",
+      "name": {
+        "zh": "中国大陆演示机系统",
+        "en": "China Mainland MiStore Demo"
+      },
+      "table": [
+        "os",
+        "android",
+        "release",
+        "aspatch",
+        "recovery",
+        "fastboot",
+        "ctelecom"
+      ],
+      "show": "0",
+      "carrier": [
+        "",
+        "chinatelecom",
+        "chinamobile",
+        "chinaunicom"
+      ],
+      "region": "cn",
+      "zone": "1",
+      "ep": "0",
+      "roms": {
+        "OS4.0.1.0.XHPCNDM": {
+          "os": "OS4.0.1.0.XHPCNDM",
+          "android": "17.0",
+          "release": "2026-10-27",
+          "aspatch": "2026-09-01",
+          "recovery": "warsaw_demo-ota_full-OS4.0.1.0.XHPCNDM-user-17.0-29910f69dc.zip",
+          "fastboot": "warsaw_demo_images_OS4.0.1.0.XHPCNDM_20261014.0000.00_17.0_cn_068e797859.tgz",
+          "ctelecom": "warsaw_demo_images_OS4.0.1.0.XHPCNDM_20261014.0000.00_17.0_cn_chinatelecom_bdeb572b8b.tgz"
         }
       }
     }

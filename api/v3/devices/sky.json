@@ -1352,6 +1352,55 @@
       ]
     },
     {
+      "id": "sky_jp_kd_global",
+      "brand": [
+        "Redmi"
+      ],
+      "device": {
+        "zh": "Redmi 12 5G / Redmi Note 12R / POCO M6 Pro 5G",
+        "en": "Redmi 12 5G / Redmi Note 12R / POCO M6 Pro 5G"
+      },
+      "name": {
+        "zh": "日本KDDI电信运营商定制版",
+        "en": "Japan Stable KDDI Carrier Edtion"
+      },
+      "region": "jp",
+      "carrier": [
+        ""
+      ],
+      "tags": {
+        "branch": "JPKD",
+        "tag": "JPKD",
+        "branchtag": "F",
+        "btag": "F"
+      },
+      "zone": "2",
+      "show": "1",
+      "ep": "0",
+      "roms": [
+        {
+          "miui": "OS2.0.11.0.VMWJPKD",
+          "os": "OS2",
+          "bigver": "HyperOS 2",
+          "android": "15.0",
+          "release": "2026-08-18",
+          "aspatch": "2026-07-01",
+          "recovery": "sky_jp_kd_global-ota_full-OS2.0.11.0.VMWJPKD-user-15.0-06e978d9d4.zip",
+          "fastboot": ""
+        },
+        {
+          "miui": "OS1.0.11.0.UMWJPKD",
+          "os": "OS1",
+          "bigver": "HyperOS 1",
+          "android": "14.0",
+          "release": "2026-10-29",
+          "aspatch": "",
+          "recovery": "miui_SKYJPKDGlobal_OS1.0.11.0.UMWJPKD_682ff288d6_14.0.zip",
+          "fastboot": ""
+        }
+      ]
+    },
+    {
       "id": "sky_jp_global",
       "brand": [
         "Redmi"
@@ -1507,6 +1556,55 @@
           "aspatch": "2023-09-01",
           "recovery": "miui_SKYJPGlobal_V14.0.1.0.TMWJPXM_5d3fd4dcf3_13.0.zip",
           "fastboot": "sky_jp_global_images_V14.0.1.0.TMWJPXM_20230830.0000.00_13.0_jp_473c4ab5bf.tgz"
+        }
+      ]
+    },
+    {
+      "id": "sky_jp_sb_global",
+      "brand": [
+        "Redmi"
+      ],
+      "device": {
+        "zh": "Redmi 12 5G / Redmi Note 12R / POCO M6 Pro 5G",
+        "en": "Redmi 12 5G / Redmi Note 12R / POCO M6 Pro 5G"
+      },
+      "name": {
+        "zh": "日本SoftBank运营商定制版",
+        "en": "Japan Stable SoftBank Carrier Edtion"
+      },
+      "region": "jp",
+      "carrier": [
+        "sb"
+      ],
+      "tags": {
+        "branch": "JPSB",
+        "tag": "JPSB",
+        "branchtag": "F",
+        "btag": "F"
+      },
+      "zone": "2",
+      "show": "1",
+      "ep": "0",
+      "roms": [
+        {
+          "miui": "OS2.0.14.0.VMWJPSB",
+          "os": "OS2",
+          "bigver": "HyperOS 2",
+          "android": "15.0",
+          "release": "2026-06-02",
+          "aspatch": "2026-05-01",
+          "recovery": "sky_jp_sb_global-ota_full-OS2.0.14.0.VMWJPSB-user-15.0-a808b210f5.zip",
+          "fastboot": ""
+        },
+        {
+          "miui": "OS1.0.11.0.UMWJPSB",
+          "os": "OS1",
+          "bigver": "HyperOS 1",
+          "android": "14.0",
+          "release": "2026-10-29",
+          "aspatch": "",
+          "recovery": "miui_SKYJPSBGlobal_OS1.0.11.0.UMWJPSB_65f395e3ee_14.0.zip",
+          "fastboot": ""
         }
       ]
     },

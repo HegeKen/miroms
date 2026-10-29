@@ -967,6 +967,55 @@
       ]
     },
     {
+      "id": "tapas_mx_tc_global",
+      "brand": [
+        "Redmi"
+      ],
+      "device": {
+        "zh": "Redmi Note 12 4G",
+        "en": "Redmi Note 12 4G"
+      },
+      "name": {
+        "zh": "墨西哥Telcel运营商定制版",
+        "en": "Mexico Stable Telcel Carrier Edtion"
+      },
+      "region": "mx",
+      "carrier": [
+        "tc"
+      ],
+      "tags": {
+        "branch": "MXTC",
+        "tag": "MXTC",
+        "branchtag": "F",
+        "btag": "F"
+      },
+      "zone": "2",
+      "show": "1",
+      "ep": "0",
+      "roms": [
+        {
+          "miui": "OS2.0.207.0.VMTMXTC",
+          "os": "OS2",
+          "bigver": "HyperOS 2",
+          "android": "15.0",
+          "release": "2026-09-24",
+          "aspatch": "2026-09-01",
+          "recovery": "tapas_mx_tc_global-ota_full-OS2.0.207.0.VMTMXTC-user-15.0-b52d3067fa.zip",
+          "fastboot": ""
+        },
+        {
+          "miui": "OS1.0.7.0.UMTMXTC",
+          "os": "OS1",
+          "bigver": "HyperOS 1",
+          "android": "14.0",
+          "release": "2024-11-22",
+          "aspatch": "2024-11-01",
+          "recovery": "miui_TAPASMXTCGlobal_OS1.0.7.0.UMTMXTC_5ad18e2f0b_14.0.zip",
+          "fastboot": ""
+        }
+      ]
+    },
+    {
       "id": "tapas_cl_en_global",
       "brand": [
         "Redmi"
@@ -1169,7 +1218,7 @@
           "release": "2026-10-22",
           "aspatch": "2026-08-01",
           "recovery": "tapas_lm_ms_global-ota_full-OS2.0.209.0.VMTLMMS-user-15.0-fe0275dac1.zip",
-          "fastboot": ""
+          "fastboot": "tapas_lm_ms_global_images_OS2.0.209.0.VMTLMMS_20260814.0000.00_15.0_lm_movistar_70a23bd82b.tgz"
         },
         {
           "miui": "OS2.0.207.0.VMTLMMS",

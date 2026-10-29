@@ -49,6 +49,17 @@
       "ep": "0",
       "roms": [
         {
+          "miui": "OS4.0.4.0.XHPCNXM",
+          "os": "OS4",
+          "bigver": "HyperOS 4",
+          "android": "17.0",
+          "release": "2026-10-26",
+          "aspatch": "2026-09-01",
+          "recovery": "warsaw-ota_full-OS4.0.4.0.XHPCNXM-user-17.0-af0d470830.zip",
+          "fastboot": "",
+          "ctelecom": ""
+        },
+        {
           "miui": "OS3.0.309.0.WHPCNXM",
           "os": "OS3",
           "bigver": "HyperOS 3",
@@ -124,6 +135,49 @@
           "recovery": "warsaw-ota_full-OS3.0.302.0.WHPCNXM-user-16.0-26c32b87c7.zip",
           "fastboot": "warsaw_images_OS3.0.302.0.WHPCNXM_20260611.0000.00_16.0_cn_5f6eba9a91.tgz",
           "ctelecom": "warsaw_images_OS3.0.302.0.WHPCNXM_20260611.0000.00_16.0_cn_chinatelecom_27676bd566.tgz"
+        }
+      ]
+    },
+    {
+      "id": "warsaw_demo",
+      "brand": [
+        "REDMI"
+      ],
+      "device": {
+        "zh": "REDMI K90 至尊版",
+        "en": "REDMI K90 Ultra"
+      },
+      "name": {
+        "zh": "中国大陆演示机系统",
+        "en": "China Mainland MiStore Demo"
+      },
+      "region": "cn",
+      "carrier": [
+        "",
+        "chinatelecom",
+        "chinamobile",
+        "chinaunicom"
+      ],
+      "tags": {
+        "branch": "CnOD",
+        "tag": "CNDM",
+        "branchtag": "F",
+        "btag": "F"
+      },
+      "zone": "1",
+      "show": "0",
+      "ep": "0",
+      "roms": [
+        {
+          "miui": "OS4.0.1.0.XHPCNDM",
+          "os": "OS4",
+          "bigver": "HyperOS 4",
+          "android": "17.0",
+          "release": "2026-10-27",
+          "aspatch": "2026-09-01",
+          "recovery": "warsaw_demo-ota_full-OS4.0.1.0.XHPCNDM-user-17.0-29910f69dc.zip",
+          "fastboot": "warsaw_demo_images_OS4.0.1.0.XHPCNDM_20261014.0000.00_17.0_cn_068e797859.tgz",
+          "ctelecom": "warsaw_demo_images_OS4.0.1.0.XHPCNDM_20261014.0000.00_17.0_cn_chinatelecom_bdeb572b8b.tgz"
         }
       ]
     }
