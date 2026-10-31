@@ -182,7 +182,7 @@
           "release": "2026-10-20",
           "aspatch": "2026-10-01",
           "recovery": "charoite_dc_global-ota_full-OS3.0.304.0.WPFMIDC-user-16.0-879c2b3499.zip",
-          "fastboot": ""
+          "fastboot": "charoite_dc_global_images_OS3.0.304.0.WPFMIDC_20261013.0000.00_16.0_global_dc_6dcfa9c15f.tgz"
         },
         {
           "miui": "OS3.0.303.0.WPFMIDC",
@@ -649,6 +649,55 @@
           "aspatch": "2026-02-01",
           "recovery": "charoite_lm_cr_global-ota_full-OS2.0.201.0.VPFLMCR-user-15.0-43d54a2804.zip",
           "fastboot": "charoite_lm_cr_global_images_OS2.0.201.0.VPFLMCR_20260206.0000.00_15.0_lm_cr_0b13f8015d.tgz"
+        }
+      ]
+    },
+    {
+      "id": "charoite_mx_tc_global",
+      "brand": [
+        "REDMI"
+      ],
+      "device": {
+        "zh": "Redmi Note 15 Pro 4G",
+        "en": "Redmi Note 15 Pro 4G"
+      },
+      "name": {
+        "zh": "墨西哥Telcel运营商定制版",
+        "en": "Mexico Stable Telcel Carrier Edtion"
+      },
+      "region": "mx",
+      "carrier": [
+        "tc"
+      ],
+      "tags": {
+        "branch": "MXTC",
+        "tag": "MXTC",
+        "branchtag": "F",
+        "btag": "F"
+      },
+      "zone": "2",
+      "show": "1",
+      "ep": "0",
+      "roms": [
+        {
+          "miui": "OS3.0.4.0.WPFMXTC",
+          "os": "OS3",
+          "bigver": "HyperOS 3",
+          "android": "16.0",
+          "release": "2026-09-16",
+          "aspatch": "2026-09-01",
+          "recovery": "charoite_mx_tc_global-ota_full-OS3.0.4.0.WPFMXTC-user-16.0-5a2587a3f3.zip",
+          "fastboot": ""
+        },
+        {
+          "miui": "OS2.0.204.0.VPFMXTC",
+          "os": "OS2",
+          "bigver": "HyperOS 2",
+          "android": "15.0",
+          "release": "2026-04-20",
+          "aspatch": "2026-04-01",
+          "recovery": "charoite_mx_tc_global-ota_full-OS2.0.204.0.VPFMXTC-user-15.0-8272432d02.zip",
+          "fastboot": ""
         }
       ]
     }
