@@ -20,13 +20,13 @@ currentStable = [
 		'leedsa', 'lhasa', 'light', 'lightcm', 'lilac', 'lisa', 'liuqin', 'luming', 'madrid', 'malachite', 'manet', 'marble',
 		'matisse', 'mayfly', 'miro', 'mist', 'mojito', 'mona', 'mondrian', 'moon', 'moonstone', 'munch', 'muyu', 'myron',
 		'nabu', 'nezha', 'nuwa', 'obsidian', 'odin', 'onyx', 'opal', 'organ', 'pandora', 'pearl', 'peridot', 'piano', 'pipa',
-		'pissarro', 'pissarro_in', 'pissarroin', 'plato', 'popsicle', 'prague', 'psyche', 'pudding', 'redwood', 'rembrandt',
-		'renoir', 'rock', 'rodin', 'rosemary', 'rosemary_p', 'rothko', 'ruan', 'rubens', 'ruby', 'ruyi', 'sapphire',
-		'sapphiren', 'sea', 'selene', 'serenity', 'sheng', 'shennong', 'shennong_t', 'shuntian', 'sky', 'socrates', 'somalia',
-		'songyuan', 'spark', 'spes', 'spesn', 'spinel', 'spring', 'star', 'steppe', 'sunstone', 'sweet', 'sweet_k6a', 'taiko',
-		'tanzanite', 'taoyao', 'tapas', 'thor', 'thyme', 'topaz', 'tornado', 'turner', 'uke', 'umi', 'unicorn', 'venus',
-		'vermeer', 'veux', 'vida', 'vili', 'violin', 'viva', 'warhol', 'warm', 'warsaw', 'water', 'xaga', 'xuanyuan', 'xun',
-		'yili', 'yingtian', 'yudi', 'yuechu', 'yunluo', 'yupei', 'zephyr', 'zeus', 'zijin', 'zircon', 'ziyi', 'zizhan', 'zorn'
+		'pissarro', 'pissarro_in', 'plato', 'popsicle', 'prague', 'psyche', 'pudding', 'redwood', 'rembrandt', 'renoir',
+		'rock', 'rodin', 'rosemary', 'rosemary_p', 'rothko', 'ruan', 'rubens', 'ruby', 'ruyi', 'sapphire', 'sapphiren', 'sea',
+		'selene', 'serenity', 'sheng', 'shennong', 'shennong_t', 'shuntian', 'sky', 'socrates', 'somalia', 'songyuan', 'spark',
+		'spes', 'spesn', 'spinel', 'spring', 'star', 'steppe', 'sunstone', 'sweet', 'sweet_k6a', 'taiko', 'tanzanite',
+		'taoyao', 'tapas', 'thor', 'thyme', 'topaz', 'tornado', 'turner', 'uke', 'umi', 'unicorn', 'venus', 'vermeer', 'veux',
+		'vida', 'vili', 'violin', 'viva', 'warhol', 'warm', 'warsaw', 'water', 'xaga', 'xuanyuan', 'xun', 'yili', 'yingtian',
+		'yudi', 'yuechu', 'yunluo', 'yupei', 'zephyr', 'zeus', 'zijin', 'zircon', 'ziyi', 'zizhan', 'zorn'
 ]
 
 # order: 设备排序顺序
@@ -4264,6 +4264,8 @@ flags = {
 	'TANZANITE_RU_GLOBAL': 'tanzanite',
 	'TANZANITE_TR_GLOBAL': 'tanzanite',
 	'TANZANITE_TW_GLOBAL': 'tanzanite',
+	'TAOYAOCLENGLOBAL': 'taoyao',
+	'TAOYAOCLENGlobal': 'taoyao',
 	'TAOYAOEEAGLOBAL': 'taoyao',
 	'TAOYAOEEAGlobal': 'taoyao',
 	'TAOYAOGLOBAL': 'taoyao',

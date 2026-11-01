@@ -8,12 +8,12 @@ beta_date 取 recovery 包下载链接的 HTTP `Last-Modified`（文件上传时
 取不到包时间时可用 --source db 回退到库里已有的 public_date / release_date。
 
 用法：
-    python3 scripts/beta_date_refill.py                     # 预演（只处理 beta_date 为空的行）
-    python3 scripts/beta_date_refill.py --apply             # 写入
-    python3 scripts/beta_date_refill.py --apply --source auto   # Last-Modified 失败时回退 db 日期
-    python3 scripts/beta_date_refill.py --apply --source db     # 只用库内日期
-    python3 scripts/beta_date_refill.py --apply --ids 1,2,3     # 指定 id（可覆盖已有 beta_date）
-    python3 scripts/beta_date_refill.py --limit 20 --apply      # 分批
+    python3 data/scripts/beta_date_refill.py                     # 预演（只处理 beta_date 为空的行）
+    python3 data/scripts/beta_date_refill.py --apply             # 写入
+    python3 data/scripts/beta_date_refill.py --apply --source auto   # Last-Modified 失败时回退 db 日期
+    python3 data/scripts/beta_date_refill.py --apply --source db     # 只用库内日期
+    python3 data/scripts/beta_date_refill.py --apply --ids 1,2,3     # 指定 id（可覆盖已有 beta_date）
+    python3 data/scripts/beta_date_refill.py --limit 20 --apply      # 分批
 """
 import argparse
 import sys

@@ -1,6 +1,230 @@
 {
   "log": [
     {
+      "sudate": "2026.10.17",
+      "ver": "V1.17.0",
+      "zh-cn": "",
+      "en-us": "",
+      "log": [
+        {
+          "zh-cn": "更新 API 地址与配置结构",
+          "en-us": "Update API endpoint and config structure"
+        }
+      ]
+    },
+    {
+      "sudate": "2026.09.13",
+      "ver": "V1.16.1",
+      "zh-cn": "",
+      "en-us": "",
+      "log": [
+        {
+          "zh-cn": "页脚新增 HeliLab 官网链接",
+          "en-us": "Add HeliLab official site link to footer"
+        }
+      ]
+    },
+    {
+      "sudate": "2026.08.27",
+      "ver": "V1.16.0",
+      "zh-cn": "",
+      "en-us": "",
+      "log": [
+        {
+          "zh-cn": "新增 Cloudflare Pages 部署配置与 sitemap 配置",
+          "en-us": "Add Cloudflare Pages deployment and sitemap config"
+        },
+        {
+          "zh-cn": "搜索页接入新的 API 数据结构并调整布局",
+          "en-us": "Integrate new API data structure and adjust layout on search page"
+        }
+      ]
+    },
+    {
+      "sudate": "2026.08.23",
+      "ver": "V1.15.0",
+      "zh-cn": "",
+      "en-us": "",
+      "log": [
+        {
+          "zh-cn": "首页新增 MiROMS HUB 推广横幅",
+          "en-us": "Add MiROMS HUB promotion banner to homepage"
+        }
+      ]
+    },
+    {
+      "sudate": "2026.08.21",
+      "ver": "V1.14.0",
+      "zh-cn": "",
+      "en-us": "",
+      "log": [
+        {
+          "zh-cn": "完成全站无障碍（a11y）优化",
+          "en-us": "Complete site-wide accessibility optimization"
+        }
+      ]
+    },
+    {
+      "sudate": "2026.08.15",
+      "ver": "V1.13.1",
+      "zh-cn": "",
+      "en-us": "",
+      "log": [
+        {
+          "zh-cn": "修正搜索页 hyperosData.supports 拼写错误",
+          "en-us": "Fix typo in hyperosData.supports on search page"
+        }
+      ]
+    },
+    {
+      "sudate": "2026.07.27",
+      "ver": "V1.13.0",
+      "zh-cn": "",
+      "en-us": "",
+      "log": [
+        {
+          "zh-cn": "首页新增构建时间显示（精确到秒）",
+          "en-us": "Show build time on homepage (with seconds)"
+        }
+      ]
+    },
+    {
+      "sudate": "2026.07.24",
+      "ver": "V1.12.0",
+      "zh-cn": "",
+      "en-us": "",
+      "log": [
+        {
+          "zh-cn": "统一深浅色模式与设备检测逻辑",
+          "en-us": "Unify dark mode and device detection logic"
+        },
+        {
+          "zh-cn": "样式由 CSS 迁移至 SCSS 并优化组件结构",
+          "en-us": "Migrate styles from CSS to SCSS and optimize component structure"
+        },
+        {
+          "zh-cn": "页面组件统一使用 ClientOnly 包裹，避免 SSR 水合问题",
+          "en-us": "Wrap page components with ClientOnly to avoid SSR hydration issues"
+        },
+        {
+          "zh-cn": "调整页面布局并完善关于页内容",
+          "en-us": "Adjust layout and refine the about page"
+        },
+        {
+          "zh-cn": "修复旧周更链接",
+          "en-us": "Fix old weekly links"
+        }
+      ]
+    },
+    {
+      "sudate": "2026.05.08",
+      "ver": "V1.11.0",
+      "zh-cn": "",
+      "en-us": "",
+      "log": [
+        {
+          "zh-cn": "重构项目结构与 API 调用方式",
+          "en-us": "Refactor project structure and API integration"
+        },
+        {
+          "zh-cn": "新增深色模式支持",
+          "en-us": "Add dark mode support"
+        },
+        {
+          "zh-cn": "顶部导航新增抽屉标题与返回按钮",
+          "en-us": "Add drawer title and back button to header"
+        },
+        {
+          "zh-cn": "修复底部导航栏在移动端的显示问题",
+          "en-us": "Fix bottom navigation display on mobile"
+        }
+      ]
+    },
+    {
+      "sudate": "2026.05.07",
+      "ver": "V1.10.0",
+      "zh-cn": "",
+      "en-us": "",
+      "log": [
+        {
+          "zh-cn": "搜索页新增系统版本与 Android 版本筛选",
+          "en-us": "Add OS and Android version filters to search page"
+        }
+      ]
+    },
+    {
+      "sudate": "2026.04.06",
+      "ver": "V1.9.1",
+      "zh-cn": "",
+      "en-us": "",
+      "log": [
+        {
+          "zh-cn": "修正日期筛选的时区为 UTC+8",
+          "en-us": "Fix date picker timezone to UTC+8"
+        }
+      ]
+    },
+    {
+      "sudate": "2026.04.01",
+      "ver": "V1.9.0",
+      "zh-cn": "",
+      "en-us": "",
+      "log": [
+        {
+          "zh-cn": "搜索页新增日期筛选，优化详情页展示",
+          "en-us": "Add date filter to search page and refine detail pages"
+        },
+        {
+          "zh-cn": "重构搜索页样式与数据解析逻辑",
+          "en-us": "Refactor search page styles and data parsing"
+        }
+      ]
+    },
+    {
+      "sudate": "2026.03.21",
+      "ver": "V1.8.0",
+      "zh-cn": "",
+      "en-us": "",
+      "log": [
+        {
+          "zh-cn": "搜索页新增搜索导航与多语言支持",
+          "en-us": "Add search navigation and i18n support to the search page"
+        },
+        {
+          "zh-cn": "优化搜索页样式与移动端适配",
+          "en-us": "Improve search page styling and mobile responsiveness"
+        },
+        {
+          "zh-cn": "移除开发版标签页",
+          "en-us": "Remove the development version tab"
+        }
+      ]
+    },
+    {
+      "sudate": "2025.12.30",
+      "ver": "V1.7.0",
+      "zh-cn": "",
+      "en-us": "",
+      "log": [
+        {
+          "zh-cn": "全站字体切换为 MiSans 可变字体",
+          "en-us": "Switch site font to MiSans variable font"
+        }
+      ]
+    },
+    {
+      "sudate": "2025.07.31",
+      "ver": "V1.6.0",
+      "zh-cn": "",
+      "en-us": "",
+      "log": [
+        {
+          "zh-cn": "升级底层框架至 Nuxt 4",
+          "en-us": "Upgrade the underlying framework to Nuxt 4"
+        }
+      ]
+    },
+    {
       "sudate": "2024.02.18",
       "ver": "V1.5.0",
       "zh-cn": "",
