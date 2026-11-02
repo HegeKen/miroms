@@ -203,12 +203,15 @@ class DatabaseManager:
 				tag: str,
 				zone: int,
 				branch: str
-		) -> None:
+		) -> Optional[int]:
 				"""检查 ROM 是否已存在：不存在则插入（含包名），已存在则补齐缺失的包名
 
 				包名即 roms 的 recovery（卡刷 .zip）/ fastboot（线刷 .tgz）列。历史上 INSERT
 				丢弃了 filename，新行只有版本元数据，包名要等 fetch_changelog 抓更新日志时
 				顺带回填（且只回填 recovery），fastboot 则永远不落库。
+
+				Returns:
+					该 ROM 在 roms 表中的 id（插入失败返回 0），供调用方做写入后补录。
 				"""
 				package_col = {'recovery': 'recovery', 'fastboot': 'fastboot'}.get(filetype, '')
 				package = filename or None
@@ -225,20 +228,19 @@ class DatabaseManager:
 										f"WHERE id = %s AND ({package_col} IS NULL OR {package_col} = '')",
 										params=(package, existing[0])
 								)
-						return
+						return int(existing[0])
 
 				if package_col and package:
-						cls.execute(
+						return cls.insert(
 								"INSERT INTO roms(device, code, type, bigver, region, tag, branch, zone, "
 								"version, android, insdate, " + package_col + ") "
 								"VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, CURDATE(), %s)",
 								params=(device, code, rom_type, bigver, region, tag, branch, zone,
 												version, android, package)
 						)
-				else:
-						cls.execute(
-								"INSERT INTO roms(device, code, type, bigver, region, tag, branch, zone, "
-								"version, android, insdate) "
-								"VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, CURDATE())",
-								params=(device, code, rom_type, bigver, region, tag, branch, zone, version, android)
-						)
+				return cls.insert(
+						"INSERT INTO roms(device, code, type, bigver, region, tag, branch, zone, "
+						"version, android, insdate) "
+						"VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, CURDATE())",
+						params=(device, code, rom_type, bigver, region, tag, branch, zone, version, android)
+				)

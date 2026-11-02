@@ -1,8 +1,11 @@
 from pathlib import Path
 from datetime import datetime
+import logging
 
 from miroms.firmware import FirmwareParser
 from miroms.database import DatabaseManager
+
+logger = logging.getLogger(__name__)
 
 
 # 日志文件路径（相对于项目根目录）
@@ -88,7 +91,7 @@ class DataRecorder:
 						return "New ROM"
 
 				if parsed and parsed.get("code"):
-							DatabaseManager.check_and_update(
+							rom_id = DatabaseManager.check_and_update(
 									filename, parsed["filetype"], parsed["device"],
 									parsed["code"], parsed["android"], parsed["version"],
 									parsed["type"], parsed["bigver"], parsed["region"],
@@ -98,6 +101,15 @@ class DataRecorder:
 							device = parsed.get("device", "")
 							if flag and device:
 									cls.record_flag_mapping(flag, device)
+							# 写入后主动检查信息完整度：补录 recovery / fastboot / aspatch /
+							# 各类日期 / 日志等 exporter 会导出的字段（失败不影响主流程）
+							if rom_id:
+									try:
+											from miroms.supplement import RomSupplement
+											RomSupplement.supplement(rom_id)
+									except Exception as exc:
+											logger.warning("ROM 补录失败（id=%s）：%s: %s",
+																	rom_id, type(exc).__name__, exc)
 							print(f"新 ROM 已入库: {parsed['device']}\t{parsed['version']}")
 							return "New ROM"
 
