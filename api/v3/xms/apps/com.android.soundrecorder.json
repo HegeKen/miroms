@@ -24,12 +24,13 @@
     "bo": "སྒྲ་འཇུག་ཆས"
   },
   "apkName": "录音机",
-  "releaseDate": "2026-07-28",
-  "latestVersion": "708099",
-  "recordCount": 61,
-  "deviceCount": 53,
+  "releaseDate": "",
+  "latestVersion": "",
+  "recordCount": 62,
+  "deviceCount": 54,
   "os": [
-    "OS3"
+    "OS3",
+    "OS4"
   ],
   "regions": [
     "cn"
@@ -44,6 +45,53 @@
     "universal"
   ],
   "groups": [
+    {
+      "version": "D02",
+      "os": "OS4",
+      "appVersion": "",
+      "type": "",
+      "pushDate": "2026-11-04",
+      "isLatest": true,
+      "apkName": "录音机",
+      "file": "",
+      "releaseDate": "",
+      "size": 0,
+      "md5": "",
+      "sha256": "",
+      "logs": [
+        {
+          "zh": "优化 录音总结效果，呈现更多关键信息"
+        },
+        {
+          "zh": "优化 录音播放页的流畅度，减少卡顿"
+        },
+        {
+          "zh": "修复 部分场景下无法生成总结的问题"
+        },
+        {
+          "zh": "修复 部分场景下录音转录失败的问题"
+        }
+      ],
+      "recordCount": 1,
+      "devices": [
+        {
+          "device": "myron",
+          "name": {
+            "zh": "REDMI K90 Pro Max",
+            "en": "REDMI K90 Pro Max"
+          },
+          "code": "myron",
+          "region": "cn",
+          "zone": 1,
+          "android": "17.0",
+          "pushDate": "2026-11-04",
+          "isLatest": true,
+          "romVersions": [
+            "OS4.0.6.0.XPMCNXM"
+          ]
+        }
+      ]
+    },
     {
       "version": "C11",
       "os": "OS3",

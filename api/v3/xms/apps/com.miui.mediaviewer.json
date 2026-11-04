@@ -5,12 +5,13 @@
     "en": "Media Viewer"
   },
   "apkName": "媒体查看器",
-  "releaseDate": "2026-05-26",
-  "latestVersion": "2103260402",
-  "recordCount": 61,
-  "deviceCount": 53,
+  "releaseDate": "2026-11-04",
+  "latestVersion": "2104261003",
+  "recordCount": 62,
+  "deviceCount": 54,
   "os": [
-    "OS3"
+    "OS3",
+    "OS4"
   ],
   "regions": [
     "cn"
@@ -25,6 +26,47 @@
     "universal"
   ],
   "groups": [
+    {
+      "version": "D02",
+      "os": "OS4",
+      "appVersion": "2104261003",
+      "type": "universal",
+      "pushDate": "2026-11-04",
+      "isLatest": true,
+      "apkName": "媒体查看器",
+      "file": "mediaviewer-20261102.2-universal-096ddcbbe0.apk",
+      "releaseDate": "2026-11-04",
+      "size": 28615691,
+      "md5": "096ddcbbe09c73fd5b51d860e255f138",
+      "sha256": "c0cfa66354d92caa7c3b8d470948957d4746d9be",
+      "logs": [
+        {
+          "zh": "修复 部分场景下屏幕方向无法旋转的问题"
+        },
+        {
+          "zh": "修复 部分场景下播放卡顿的问题"
+        }
+      ],
+      "recordCount": 1,
+      "devices": [
+        {
+          "device": "myron",
+          "name": {
+            "zh": "REDMI K90 Pro Max",
+            "en": "REDMI K90 Pro Max"
+          },
+          "code": "myron",
+          "region": "cn",
+          "zone": 1,
+          "android": "17.0",
+          "pushDate": "2026-11-04",
+          "isLatest": true,
+          "romVersions": [
+            "OS4.0.6.0.XPMCNXM"
+          ]
+        }
+      ]
+    },
     {
       "version": "C11",
       "os": "OS3",

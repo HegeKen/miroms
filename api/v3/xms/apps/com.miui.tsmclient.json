@@ -6,12 +6,13 @@
     "ug": "شياۋمى ئەقلىي كارتىسى"
   },
   "apkName": "小米智能卡",
-  "releaseDate": "2026-07-28",
-  "latestVersion": "1950",
-  "recordCount": 44,
-  "deviceCount": 41,
+  "releaseDate": "",
+  "latestVersion": "",
+  "recordCount": 45,
+  "deviceCount": 42,
   "os": [
-    "OS3"
+    "OS3",
+    "OS4"
   ],
   "regions": [
     "cn"
@@ -26,6 +27,44 @@
     "universal"
   ],
   "groups": [
+    {
+      "version": "D02",
+      "os": "OS4",
+      "appVersion": "",
+      "type": "",
+      "pushDate": "2026-11-04",
+      "isLatest": true,
+      "apkName": "小米智能卡",
+      "file": "",
+      "releaseDate": "",
+      "size": 0,
+      "md5": "",
+      "sha256": "",
+      "logs": [
+        {
+          "zh": "修复 部分场景下开卡失败的问题"
+        }
+      ],
+      "recordCount": 1,
+      "devices": [
+        {
+          "device": "myron",
+          "name": {
+            "zh": "REDMI K90 Pro Max",
+            "en": "REDMI K90 Pro Max"
+          },
+          "code": "myron",
+          "region": "cn",
+          "zone": 1,
+          "android": "17.0",
+          "pushDate": "2026-11-04",
+          "isLatest": true,
+          "romVersions": [
+            "OS4.0.6.0.XPMCNXM"
+          ]
+        }
+      ]
+    },
     {
       "version": "C11",
       "os": "OS3",

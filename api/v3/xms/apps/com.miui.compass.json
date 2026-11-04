@@ -24,12 +24,13 @@
     "bo": "ཕྱོགས་སྟོན"
   },
   "apkName": "指南针",
-  "releaseDate": "2026-02-03",
-  "latestVersion": "1602071",
-  "recordCount": 44,
-  "deviceCount": 41,
+  "releaseDate": "2026-11-04",
+  "latestVersion": "1701071",
+  "recordCount": 45,
+  "deviceCount": 42,
   "os": [
-    "OS3"
+    "OS3",
+    "OS4"
   ],
   "regions": [
     "cn"
@@ -44,6 +45,44 @@
     "universal"
   ],
   "groups": [
+    {
+      "version": "D02",
+      "os": "OS4",
+      "appVersion": "1701071",
+      "type": "universal",
+      "pushDate": "2026-11-04",
+      "isLatest": true,
+      "apkName": "指南针",
+      "file": "compass-17.1.7.1.20261010-universal-ded50fe0ea.apk",
+      "releaseDate": "2026-11-04",
+      "size": 5832429,
+      "md5": "ded50fe0eafd6afd553fd5f96d4f23eb",
+      "sha256": "f3ea83d9da297eace50738d7e6f9904e2e88ea77",
+      "logs": [
+        {
+          "zh": "优化 更多场景适配柔光玻璃材质效果"
+        }
+      ],
+      "recordCount": 1,
+      "devices": [
+        {
+          "device": "myron",
+          "name": {
+            "zh": "REDMI K90 Pro Max",
+            "en": "REDMI K90 Pro Max"
+          },
+          "code": "myron",
+          "region": "cn",
+          "zone": 1,
+          "android": "17.0",
+          "pushDate": "2026-11-04",
+          "isLatest": true,
+          "romVersions": [
+            "OS4.0.6.0.XPMCNXM"
+          ]
+        }
+      ]
+    },
     {
       "version": "C11",
       "os": "OS3",

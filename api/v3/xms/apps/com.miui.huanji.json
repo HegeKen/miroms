@@ -5,12 +5,13 @@
     "en": "Mi Mover"
   },
   "apkName": "小米换机",
-  "releaseDate": "2026-07-28",
-  "latestVersion": "45705",
-  "recordCount": 61,
-  "deviceCount": 53,
+  "releaseDate": "",
+  "latestVersion": "",
+  "recordCount": 62,
+  "deviceCount": 54,
   "os": [
-    "OS3"
+    "OS3",
+    "OS4"
   ],
   "regions": [
     "cn"
@@ -25,6 +26,47 @@
     "universal"
   ],
   "groups": [
+    {
+      "version": "D02",
+      "os": "OS4",
+      "appVersion": "",
+      "type": "",
+      "pushDate": "2026-11-04",
+      "isLatest": true,
+      "apkName": "小米换机",
+      "file": "",
+      "releaseDate": "",
+      "size": 0,
+      "md5": "",
+      "sha256": "",
+      "logs": [
+        {
+          "zh": "优化 数据扫描速度，减少等待时间"
+        },
+        {
+          "zh": "修复 部分场景下换机过程中连接中断的问题"
+        }
+      ],
+      "recordCount": 1,
+      "devices": [
+        {
+          "device": "myron",
+          "name": {
+            "zh": "REDMI K90 Pro Max",
+            "en": "REDMI K90 Pro Max"
+          },
+          "code": "myron",
+          "region": "cn",
+          "zone": 1,
+          "android": "17.0",
+          "pushDate": "2026-11-04",
+          "isLatest": true,
+          "romVersions": [
+            "OS4.0.6.0.XPMCNXM"
+          ]
+        }
+      ]
+    },
     {
       "version": "C11",
       "os": "OS3",

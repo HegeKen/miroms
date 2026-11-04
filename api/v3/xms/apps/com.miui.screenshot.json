@@ -5,12 +5,13 @@
     "en": "Screenshot"
   },
   "apkName": "截屏",
-  "releaseDate": "2026-07-28",
-  "latestVersion": "10602036",
-  "recordCount": 61,
-  "deviceCount": 53,
+  "releaseDate": "2026-11-04",
+  "latestVersion": "10603044",
+  "recordCount": 62,
+  "deviceCount": 54,
   "os": [
-    "OS3"
+    "OS3",
+    "OS4"
   ],
   "regions": [
     "cn"
@@ -25,6 +26,44 @@
     "universal"
   ],
   "groups": [
+    {
+      "version": "D02",
+      "os": "OS4",
+      "appVersion": "10603044",
+      "type": "universal",
+      "pushDate": "2026-11-04",
+      "isLatest": true,
+      "apkName": "截屏",
+      "file": "screenshot-1.6.3.44-editor-universal-0f5882e3f5.apk",
+      "releaseDate": "2026-11-04",
+      "size": 10635133,
+      "md5": "0f5882e3f5ca4598270955fafb7aa99c",
+      "sha256": "e336441c86ee4646e09deebdf549120c591daa4c",
+      "logs": [
+        {
+          "zh": "修复 部分场景下截屏预览小窗不消失的问题"
+        }
+      ],
+      "recordCount": 1,
+      "devices": [
+        {
+          "device": "myron",
+          "name": {
+            "zh": "REDMI K90 Pro Max",
+            "en": "REDMI K90 Pro Max"
+          },
+          "code": "myron",
+          "region": "cn",
+          "zone": 1,
+          "android": "17.0",
+          "pushDate": "2026-11-04",
+          "isLatest": true,
+          "romVersions": [
+            "OS4.0.6.0.XPMCNXM"
+          ]
+        }
+      ]
+    },
     {
       "version": "C11",
       "os": "OS3",

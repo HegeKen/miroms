@@ -24,12 +24,13 @@
     "bo": "Gallery"
   },
   "apkName": "相册",
-  "releaseDate": "2026-07-28",
-  "latestVersion": "4030116",
-  "recordCount": 59,
-  "deviceCount": 51,
+  "releaseDate": "2026-11-04",
+  "latestVersion": "5040306",
+  "recordCount": 60,
+  "deviceCount": 52,
   "os": [
-    "OS3"
+    "OS3",
+    "OS4"
   ],
   "regions": [
     "cn"
@@ -44,6 +45,50 @@
     "universal"
   ],
   "groups": [
+    {
+      "version": "D02",
+      "os": "OS4",
+      "appVersion": "5040306",
+      "type": "universal",
+      "pushDate": "2026-11-04",
+      "isLatest": true,
+      "apkName": "相册",
+      "file": "cn-5.4.3.6-cn-universal-20a3ec8d64.apk",
+      "releaseDate": "2026-11-04",
+      "size": 46464371,
+      "md5": "20a3ec8d644a5f6d4da8706beb064e3f",
+      "sha256": "e63477c0945c3a0adc0a368e0645ab4ecdb583dd",
+      "logs": [
+        {
+          "zh": "优化 相册菜单布局，调整排序、视图更方便"
+        },
+        {
+          "zh": "优化 长按播放动态照片的交互体验，减少误触"
+        },
+        {
+          "zh": "优化 私密相册支持动图播放"
+        }
+      ],
+      "recordCount": 1,
+      "devices": [
+        {
+          "device": "myron",
+          "name": {
+            "zh": "REDMI K90 Pro Max",
+            "en": "REDMI K90 Pro Max"
+          },
+          "code": "myron",
+          "region": "cn",
+          "zone": 1,
+          "android": "17.0",
+          "pushDate": "2026-11-04",
+          "isLatest": true,
+          "romVersions": [
+            "OS4.0.6.0.XPMCNXM"
+          ]
+        }
+      ]
+    },
     {
       "version": "C11",
       "os": "OS3",

@@ -24,12 +24,13 @@
     "bo": "སྤྱོད་མཁན་གྱི་བསམ་ཚུལ"
   },
   "apkName": "用户反馈",
-  "releaseDate": "2026-07-28",
-  "latestVersion": "17004001",
-  "recordCount": 61,
-  "deviceCount": 53,
+  "releaseDate": "2026-11-04",
+  "latestVersion": "18000405",
+  "recordCount": 62,
+  "deviceCount": 54,
   "os": [
-    "OS3"
+    "OS3",
+    "OS4"
   ],
   "regions": [
     "cn"
@@ -44,6 +45,44 @@
     "universal"
   ],
   "groups": [
+    {
+      "version": "D02",
+      "os": "OS4",
+      "appVersion": "18000405",
+      "type": "universal",
+      "pushDate": "2026-11-04",
+      "isLatest": true,
+      "apkName": "用户反馈",
+      "file": "bugreport-cn-18.0.4.5_cn_20261013-universal-cb8405c960.apk",
+      "releaseDate": "2026-11-04",
+      "size": 17547531,
+      "md5": "cb8405c960617a7926ada4aa0787cb37",
+      "sha256": "7081886784457d63dc3093fd32520fc7372c6fba",
+      "logs": [
+        {
+          "zh": "修复 部分场景下搜索栏显示异常的问题"
+        }
+      ],
+      "recordCount": 1,
+      "devices": [
+        {
+          "device": "myron",
+          "name": {
+            "zh": "REDMI K90 Pro Max",
+            "en": "REDMI K90 Pro Max"
+          },
+          "code": "myron",
+          "region": "cn",
+          "zone": 1,
+          "android": "17.0",
+          "pushDate": "2026-11-04",
+          "isLatest": true,
+          "romVersions": [
+            "OS4.0.6.0.XPMCNXM"
+          ]
+        }
+      ]
+    },
     {
       "version": "C11",
       "os": "OS3",
