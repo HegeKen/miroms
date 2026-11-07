@@ -99,7 +99,7 @@
   "codename": "agate",
   "zh-cn": "小米 11T",
   "en-us": "Xiaomi 11T",
-  "ismiui": "",
+  "ismiui": 0,
   "code": "KW",
   "android": ["11.0", "12.0", "13.0"],
   "miui": ["V12.0", "V12.5", "V13.0", "V14.0"],
@@ -131,11 +131,11 @@
 }
 ```
 
-> V1 为旧版兼容格式，仅覆盖 MIUI 设备，新项目建议使用 V3。
+> V1 为旧版兼容格式，仅覆盖 MIUI 设备，新项目建议使用 V3。`ismiui` 为 `0` 表示该机型同时有 HyperOS，空值表示没有 HyperOS。
 
 ### V2 — `api/v2/devices/<codename>.json`（HyperOS）
 
-以版本号为 key 的 `roms` 字典 + `table` 表头描述：
+以版本号为 key 的 `roms` 字典 + `table` 表头描述；`miui` 为 `yes` 表示该机型支持 MIUI，`no` 表示只有 HyperOS：
 
 ```json
 {
@@ -143,7 +143,7 @@
   "name": { "zh": "小米 11T", "en": "Xiaomi 11T" },
   "code": "KW",
   "brand": ["Xiaomi"],
-  "miui": "no",
+  "miui": "yes",
   "merged": "no",
   "android": ["14.0", "13.0", "12.0", "11.0"],
   "supports": ["V14", "V13", "V12.5", "V12", "OS1"],
@@ -214,16 +214,19 @@ HyperOS.fans 的 `public/data`），除设备文件外还有一批站点级接�
 
 ### V3 — `api/v3/devices/<codename>.json`（全量，推荐）
 
-同时覆盖 MIUI 与 HyperOS，新增 `tags` 嵌套字段与独立的更新日志文件：
+同时覆盖 MIUI 与 HyperOS，新增 `tags` 嵌套字段、`apis`（该机型可用的数据接口版本）与独立的更新日志文件。
+`device` 是导出键（对应文件名 / 路由），`codename` 是展示用真实代号；同一代号分代续售时二者不同（如 K100 的 `device` 为 `warsaw_k100`，`codename` 仍为 `warsaw`）：
 
 ```json
 {
   "device": "agate",
+  "codename": "agate",
   "name": { "zh": "小米 11T", "en": "Xiaomi 11T" },
   "code": "KW",
   "brand": ["Xiaomi"],
   "android": ["14.0", "13.0", "12.0", "11.0"],
   "supports": ["OS1", "V14", "V13", "V12.5", "V12"],
+  "apis": ["v1", "v2", "v3"],
   "branches": [
     {
       "id": "agate_tw_global",
@@ -729,6 +732,8 @@ SELECT x.version, x.rom_version, x.push_date, a.pkg, a.name, a.pkg_ver, a.logs
 * 唯一键是（`code`, `version`, `rom_version`）——同一份 XMS 会挂在不同系统版本上（如 `C11` 对 302/303/304 都能推），每种组合一行。
 * 系统版本还没进 `roms` 时（探测出来的版本）不写库，等它入库后下一轮自然补上；日志按（分支, XMS 版本）在进程内缓存，同轮只请求一次。
 * 目前只有中国大陆（`zone=1`）机型会返回 `hasXmsUpdate=1`，国际版实测恒为 0；解析逻辑两种区域都兼容。
+* **OS4 内测版本需实机导入**：接口按内测账号授权下发，爬虫的无账号请求对这类版本返回 `hasXmsUpdate=0`，
+  需用 `python3 scripts/import_xms_from_device.py` 读取已连接实机（root）updater 缓存中的 XMS DTO 并写库。
 * **只抓 OS3 及以上系统版本**：接口约定 XMS 版本号首字母对应系统大版本（`C` → HyperOS 3、`D` → HyperOS 4……），
   OS1 / OS2 与 MIUI 版本直接跳过（见 `XmsStore.MIN_OS_MAJOR`）。导出时 `os` 字段由版本号首字母推导，供前端标注。
 * **应用名按包名统一**：同一个 `pkg` 在所有推送里共用一份 `name` / `name_en` / `names`（多语言 JSON）。
@@ -802,6 +807,7 @@ APK 的签名下载地址带时效性（未签名直链 403），因此**不写�
 | `import_sitelog.py` | 把 NuxtMR / HyperOS.fans 两个站点的站点日志（`sitelog.json`）导入 `sitelog` 表，`--source nuxtmr\|hyperos`、`--all`、`--root`、`--dry-run`；按唯一键原地更新，幂等且不烧自增 id |
 | `import_hub_sitelog.py` | 按 git 记录推导 hub 自身（`hub.web` = `app/web`、`hub.admin` = `app/admin`）的更新日志并写入 `sitelog` 表：按提交日期分版编号 `V0.1.0`…，`--site`、`--drop-types chore,build,docs`、`--dry-run` |
 | `enrich_xms.py` | 用 `logs` 表补全 XMS 的应用名 / 日志多语言译文，按包名统一应用名，并把旧版按模块名重复录入的无包名行搬到 `xms.changelog`：默认只统计，`--apply` 写库；适合回填历史数据或译文补齐后重刷 |
+| `import_xms_from_device.py` | 从已连接的内测实机导入 XMS（SOTA）推送：adb（root）读取 updater 缓存的 `version_json.xml`，解析 `xms_new_version` / `xms_dto_new_version`（APK 元数据 + 模块日志），复用 `XmsStore.record` 写库，并用签名下载链接 `Last-Modified` 回填 `release_date`；支持 `--serial`、`--file` 离线导入、`--skip-release-dates` |
 | `migrate_v1v2_assets.py` | 把参考仓库里的静态接口文件、机型目录与「仅存于参考仓库的遗留机型」播种到 `api/v1` / `api/v2`；默认只补缺失，`--force` 可强制覆盖静态文件（设备文件始终不覆盖），`--with-images` 额外把机型图片复制到 `api/v2/assets/images`（默认不搬，规范位置是 `images/`） |
 | `sync_devices.py` | 从 `devices` / `roms` 表同步设备列表到 `miroms/data.py`（`fullDevices`、`currentStable`、`flags`） |
 | `fix_missing_tag_mappings.py` | 修复 `devices` 表中缺失的 device+tag 映射（V3 导出器按 tag 匹配分支，缺失会导致 ROM 丢失），输出 SQL 到 stdout 或 `--apply` 直接执行 |

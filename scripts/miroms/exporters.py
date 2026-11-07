@@ -7,12 +7,73 @@ from typing import Set, List, Tuple, Dict, Any, Optional
 
 from miroms.database import DatabaseManager
 from miroms.constants import branches
-from miroms.data import unreleased, DEVICE_NAME_ALIASES
+from miroms.data import unreleased, DEVICE_NAME_ALIASES, DEVICE_SPLITS
 from miroms.logs_store import LogStore
 from miroms.utils import FileUtils, beijing_now
 
 # 导出目录基准路径（使用绝对路径，避免 cwd 依赖）
 _EXPORT_BASE = Path(FileUtils.get_base_path()) / "data" / "api"
+
+
+# ==================== 分代续售（同一代号对应多代机型） ====================
+# 配置见 miroms/data.py: DEVICE_SPLITS。roms 表按代号存储、没有机型标记，
+# 所以只能按 ROM 发布日期切分：旧机型取 since 之前，新机型取 since 及以后。
+
+def _date_only(value: Any) -> Optional[str]:
+		"""日期值 -> YYYY-MM-DD（空值返回 None）"""
+		text = str(value or '').strip()[:10]
+		return text or None
+
+
+def _resolve_export_device(device: str) -> Tuple[str, Optional[str], Optional[str]]:
+		"""导出代号 -> (数据库真实代号, since, until)
+
+		since / until 为 ROM 发布日期窗口（左闭右开）。分代键取 [since, ∞)；
+		源代号默认不设上限——旧机型不会因新机型发布而停更，需要时可在配置里显式写 until。
+		"""
+		conf = DEVICE_SPLITS.get(device)
+		if conf:
+				return str(conf.get('device') or device), _date_only(conf.get('since')), _date_only(conf.get('until'))
+		return device, None, None
+
+
+def _rom_window_clause(since: Optional[str], until: Optional[str]) -> Tuple[str, Tuple]:
+		"""ROM 发布日期窗口的 SQL 片段
+
+		以 release_date 为准（真实发布日）；beta_date 是内测日，可能早于机型上市，
+		仅作回退。没有日期的 ROM 视为最旧，只落入旧机型一侧。
+		"""
+		date_expr = "COALESCE(`release_date`, `beta_date`)"
+		if since:
+				return f" AND {date_expr} >= %s", (since,)
+		if until:
+				return f" AND ({date_expr} < %s OR {date_expr} IS NULL)", (until,)
+		return "", ()
+
+
+def _device_row_clause(since: Optional[str], until: Optional[str]) -> Tuple[str, Tuple]:
+		"""devices 表取数条件：分代设备按 launch_date 选中对应那一代的行"""
+		if since:
+				return " AND `launch_date` >= %s ORDER BY `launch_date`, `id` LIMIT 1", (since,)
+		if until:
+				return " AND `launch_date` < %s ORDER BY `launch_date` DESC, `id` LIMIT 1", (until,)
+		return "", ()
+
+
+def _split_export_key(device: str, date_text: str) -> str:
+		"""源代号 + ROM 发布日期 -> 分代导出代号；未命中分代配置时原样返回"""
+		if not date_text:
+				return device
+		best: Optional[Tuple[str, str]] = None
+		for key, conf in DEVICE_SPLITS.items():
+				if str(conf.get('device')) != device:
+						continue
+				since = _date_only(conf.get('since'))
+				if not since or date_text < since:
+						continue
+				if best is None or since < best[0]:
+						best = (since, key)
+		return best[1] if best else device
 
 
 def parse_rom_logs(rom: Tuple, index: int = 14) -> Dict[str, Any]:
@@ -570,8 +631,12 @@ def exportV1(device: str) -> Optional[Dict[str, Any]]:
 		if device in unreleased:
 				return None
 		else:
-				type_sql = "SELECT type FROM roms WHERE device = %s"
-				types = DatabaseManager.execute(type_sql, params=(device,), fetch_one=False)
+				# 分代续售：导出代号可能对应数据库里的另一个代号，并带 ROM 发布日期窗口
+				source_device, since, until = _resolve_export_device(device)
+				window_clause, window_params = _rom_window_clause(since, until)
+
+				type_sql = "SELECT type FROM roms WHERE device = %s" + window_clause
+				types = DatabaseManager.execute(type_sql, params=(source_device, *window_params), fetch_one=False)
 				if "MIUI" not in str(types):
 						return None
 				else:
@@ -584,14 +649,19 @@ def exportV1(device: str) -> Optional[Dict[str, Any]]:
 						# 清理输入，防止路径遍历
 						device = device.strip().replace("/", "").replace("\\", "")
 						device = DEVICE_NAME_ALIASES.get(device, device)
+						source_device, since, until = _resolve_export_device(device)
+						window_clause, window_params = _rom_window_clause(since, until)
 
 						try:
 										# ==================== 阶段1: 批量获取设备基础信息 ====================
 										logger.info(f"开始导出设备数据: {device}")
 
 										# 使用参数化查询（%s占位符）防止SQL注入
-										device_sql = "SELECT code, full_names, devtag FROM devices WHERE device = %s"
-										device_data = DatabaseManager.execute(device_sql, params=(device,), fetch_one=True)
+										# 分代设备按 launch_date 选中这一代的行
+										row_clause, row_params = _device_row_clause(since, until)
+										device_sql = "SELECT code, full_names, devtag FROM devices WHERE device = %s" + row_clause
+										device_data = DatabaseManager.execute(
+														device_sql, params=(source_device, *row_params), fetch_one=True)
 
 										if not device_data:
 														raise ValueError(f"设备 '{device}' 在数据库中不存在")
@@ -610,15 +680,14 @@ def exportV1(device: str) -> Optional[Dict[str, Any]]:
 														device_names = {}
 
 										# ==================== 阶段2: 批量获取版本信息（单次查询） ====================
-										ver_sql = """
-														SELECT DISTINCT android, bigver
-														FROM roms
-														WHERE device = %s AND type = 'MIUI'
-														ORDER BY
-																		CAST(SUBSTRING_INDEX(android, '.', 1) AS UNSIGNED) DESC,
-																		CAST(SUBSTRING_INDEX(SUBSTRING_INDEX(android, '.', 2), '.', -1) AS UNSIGNED) DESC
-										"""
-										ver_data = DatabaseManager.execute(ver_sql, params=(device,), fetch_one=False)
+										ver_sql = (
+														"SELECT DISTINCT android, bigver FROM roms "
+														"WHERE device = %s AND type = 'MIUI'" + window_clause +
+														" ORDER BY CAST(SUBSTRING_INDEX(android, '.', 1) AS UNSIGNED) DESC, "
+														"CAST(SUBSTRING_INDEX(SUBSTRING_INDEX(android, '.', 2), '.', -1) AS UNSIGNED) DESC"
+										)
+										ver_data = DatabaseManager.execute(
+														ver_sql, params=(source_device, *window_params), fetch_one=False)
 
 										android_versions: List[str] = []
 										miui_versions: List[str] = []
@@ -646,7 +715,7 @@ def exportV1(device: str) -> Optional[Dict[str, Any]]:
 														FROM devices
 														WHERE device = %s AND tag IS NOT NULL AND tag != ''
 										"""
-										branch_codes_data = DatabaseManager.execute(branch_codes_sql, params=(device,), fetch_one=False)
+										branch_codes_data = DatabaseManager.execute(branch_codes_sql, params=(source_device,), fetch_one=False)
 
 										branch_code_map: Dict[str, Dict[str, str]] = {}
 										for row in branch_codes_data or []:
@@ -656,8 +725,12 @@ def exportV1(device: str) -> Optional[Dict[str, Any]]:
 																						branch_code_map[tag] = {"code": code or "", "region": region or ""}
 
 										# ==================== 阶段4: 批量获取所有ROM数据（带运营商字段） ====================
-										roms_sql = """SELECT id, version, android, beta_date, recovery, fastboot, tag, code, ctelecom, cmobile, cunicom, aspatch FROM roms WHERE device = %s AND type = 'MIUI' ORDER BY id DESC"""
-										all_roms = DatabaseManager.execute(roms_sql, params=(device,), fetch_one=False)
+										roms_sql = ("SELECT id, version, android, beta_date, recovery, fastboot, tag, code, "
+																"ctelecom, cmobile, cunicom, aspatch FROM roms "
+																"WHERE device = %s AND type = 'MIUI'" + window_clause +
+																" ORDER BY id DESC")
+										all_roms = DatabaseManager.execute(
+														roms_sql, params=(source_device, *window_params), fetch_one=False)
 
 										roms_by_tag: Dict[str, List[Tuple]] = {}
 										for rom in all_roms or []:
@@ -667,11 +740,19 @@ def exportV1(device: str) -> Optional[Dict[str, Any]]:
 																						roms_by_tag.setdefault(tag, []).append(rom)
 
 										# ==================== 阶段5: 构建输出结构 ====================
+										# V1 兼容字段 ismiui：0 表示该机型同时有 HyperOS，空值表示没有 HyperOS
+										type_sql = "SELECT DISTINCT type FROM roms WHERE device = %s" + window_clause
+										target_types = [
+												row[0] for row in (
+														DatabaseManager.execute(type_sql, params=(source_device, *window_params), fetch_one=False) or []
+												) if row
+										]
+
 										device_struct: Dict[str, Any] = {
 														"codename": device,
 														"zh-cn": device_names.get("zh") or device_names.get("zh-cn") or device,
 														"en-us": device_names.get("en") or device_names.get("en-us") or device,
-														"ismiui": "",
+														"ismiui": 0 if 'HyperOS' in target_types else "",
 														"code": dev_code,
 														"android": android_versions,
 														"miui": miui_versions,
@@ -804,9 +885,13 @@ def exportV1(device: str) -> Optional[Dict[str, Any]]:
 def exportV2(device: str) -> Optional[Dict[str, Any]]:
 		if device in unreleased:
 				return None
+		# 分代续售：导出代号可能对应数据库里的另一个代号，并带 ROM 发布日期窗口
+		source_device, since, until = _resolve_export_device(device)
+		window_clause, window_params = _rom_window_clause(since, until)
+
 		# 检查是否为 HyperOS/STAN 设备（STAN = 现代原生安卓/AOSP）
-		type_sql = "SELECT DISTINCT type FROM roms WHERE device = %s"
-		type_rows = DatabaseManager.execute(type_sql, params=(device,), fetch_one=False)
+		type_sql = "SELECT DISTINCT type FROM roms WHERE device = %s" + window_clause
+		type_rows = DatabaseManager.execute(type_sql, params=(source_device, *window_params), fetch_one=False)
 		device_types = [row[0] for row in (type_rows or []) if row]
 		if not any(t in ('HyperOS', 'STAN') for t in device_types):
 			return None
@@ -820,13 +905,17 @@ def exportV2(device: str) -> Optional[Dict[str, Any]]:
 			# 清理输入，防止路径遍历
 			device = device.strip().replace("/", "").replace("\\", "")
 			device = DEVICE_NAME_ALIASES.get(device, device)
+			source_device, since, until = _resolve_export_device(device)
+			window_clause, window_params = _rom_window_clause(since, until)
 
 			try:
 					# ==================== 阶段1: 获取设备基础信息 ====================
 					logger.info(f"开始导出设备数据(V2): {device}")
 
-					device_sql = """SELECT code, full_names, devtag, brands, full_brands FROM devices WHERE device = %s"""
-					device_data = DatabaseManager.execute(device_sql, params=(device,), fetch_one=True)
+					# 分代设备按 launch_date 选中这一代的行
+					row_clause, row_params = _device_row_clause(since, until)
+					device_sql = "SELECT code, full_names, devtag, brands, full_brands FROM devices WHERE device = %s" + row_clause
+					device_data = DatabaseManager.execute(device_sql, params=(source_device, *row_params), fetch_one=True)
 					if not device_data:
 							raise ValueError(f"设备 '{device}' 在数据库中不存在")
 
@@ -854,24 +943,23 @@ def exportV2(device: str) -> Optional[Dict[str, Any]]:
 
 					# ==================== 阶段2: 获取支持的版本信息 ====================
 					# 获取 Android 版本列表
-					android_sql = """
-							SELECT DISTINCT android
-							FROM roms
-							WHERE device = %s
-							ORDER BY CAST(SUBSTRING_INDEX(android, '.', 1) AS UNSIGNED) DESC,
-											CAST(SUBSTRING_INDEX(SUBSTRING_INDEX(android, '.', 2), '.', -1) AS UNSIGNED) DESC
-					"""
-					android_rows = DatabaseManager.execute(android_sql, params=(device,), fetch_one=False)
+					android_sql = (
+							"SELECT DISTINCT android FROM roms WHERE device = %s" + window_clause +
+							" ORDER BY CAST(SUBSTRING_INDEX(android, '.', 1) AS UNSIGNED) DESC, "
+							"CAST(SUBSTRING_INDEX(SUBSTRING_INDEX(android, '.', 2), '.', -1) AS UNSIGNED) DESC"
+					)
+					android_rows = DatabaseManager.execute(
+							android_sql, params=(source_device, *window_params), fetch_one=False)
 					android_versions = [row[0] for row in android_rows if row] if android_rows else []
 
 					# 获取 HyperOS/MIUI 大版本支持列表（如 OS1.0, OS2.0, V14.0）
-					supports_sql = """
-							SELECT DISTINCT bigver
-							FROM roms
-							WHERE device = %s AND bigver IS NOT NULL
-							ORDER BY bigver DESC
-					"""
-					supports_rows = DatabaseManager.execute(supports_sql, params=(device,), fetch_one=False)
+					supports_sql = (
+							"SELECT DISTINCT bigver FROM roms "
+							"WHERE device = %s AND bigver IS NOT NULL" + window_clause +
+							" ORDER BY bigver DESC"
+					)
+					supports_rows = DatabaseManager.execute(
+							supports_sql, params=(source_device, *window_params), fetch_one=False)
 					supports_versions = []
 					for row in supports_rows or []:
 							if row and row[0]:
@@ -886,7 +974,7 @@ def exportV2(device: str) -> Optional[Dict[str, Any]]:
 							FROM devices
 							WHERE device = %s AND tag IS NOT NULL AND tag != ''
 					"""
-					branch_codes_data = DatabaseManager.execute(branch_codes_sql, params=(device,), fetch_one=False)
+					branch_codes_data = DatabaseManager.execute(branch_codes_sql, params=(source_device,), fetch_one=False)
 
 					branch_code_map: Dict[str, Dict[str, str]] = {}
 					for row in branch_codes_data or []:
@@ -901,14 +989,14 @@ def exportV2(device: str) -> Optional[Dict[str, Any]]:
 											}
 
 					# ==================== 阶段4: 批量获取所有ROM数据 ====================
-					roms_sql = """
-							SELECT id, version, android, beta_date, recovery, fastboot,
-										tag, code, ctelecom, cmobile, cunicom, aspatch
-							FROM roms
-							WHERE device = %s
-							ORDER BY id DESC
-					"""
-					all_roms = DatabaseManager.execute(roms_sql, params=(device,), fetch_one=False)
+					roms_sql = (
+							"SELECT id, version, android, beta_date, recovery, fastboot, "
+							"tag, code, ctelecom, cmobile, cunicom, aspatch FROM roms "
+							"WHERE device = %s" + window_clause +
+							" ORDER BY id DESC"
+					)
+					all_roms = DatabaseManager.execute(
+							roms_sql, params=(source_device, *window_params), fetch_one=False)
 
 					# 按 tag 分组 ROM
 					roms_by_tag: Dict[str, List[Tuple]] = {}
@@ -927,7 +1015,7 @@ def exportV2(device: str) -> Optional[Dict[str, Any]]:
 							},
 							"code": dev_tag,
 							"brand": device_full_brand or "",
-							"miui": "yes" if 'HyperOS' in device_types else "no",
+							"miui": "yes" if 'MIUI' in device_types else "no",	# V2: yes = 支持 MIUI，no = 只有 HyperOS
 							"merged": "no",	# V2 新增字段，默认no
 							"android": android_versions,
 							"supports": supports_versions,	# V2 使用 supports 而非 miui
@@ -1065,12 +1153,18 @@ def exportV3(device: str) -> Optional[Dict[str, Any]]:
 		device = device.strip().replace("/", "").replace("\\", "")
 		device = DEVICE_NAME_ALIASES.get(device, device)
 
+		# 分代续售：导出代号可能对应数据库里的另一个代号，并带 ROM 发布日期窗口
+		source_device, since, until = _resolve_export_device(device)
+		window_clause, window_params = _rom_window_clause(since, until)
+
 		try:
 				# ==================== 阶段1: 批量获取设备基础信息 ====================
 				logger.info(f"开始导出设备数据(V3): {device}")
 
-				device_sql = """SELECT code, full_names, devtag, brands, full_brands FROM devices WHERE device = %s"""
-				device_data = DatabaseManager.execute(device_sql, params=(device,), fetch_one=True)
+				# 分代设备按 launch_date 选中这一代的行
+				row_clause, row_params = _device_row_clause(since, until)
+				device_sql = "SELECT code, full_names, devtag, brands, full_brands FROM devices WHERE device = %s" + row_clause
+				device_data = DatabaseManager.execute(device_sql, params=(source_device, *row_params), fetch_one=True)
 
 				if not device_data:
 						raise ValueError(f"设备 '{device}' 在数据库中不存在")
@@ -1102,13 +1196,22 @@ def exportV3(device: str) -> Optional[Dict[str, Any]]:
 				device_name_en = device_names.get("en") or device_names.get("en-us") or device
 
 				# ==================== 阶段2: 检查是否为 MIUI/HyperOS 设备 ====================
-				type_sql = "SELECT DISTINCT type FROM roms WHERE device = %s"
-				types_result = DatabaseManager.execute(type_sql, params=(device,), fetch_one=False)
+				type_sql = "SELECT DISTINCT type FROM roms WHERE device = %s" + window_clause
+				types_result = DatabaseManager.execute(
+						type_sql, params=(source_device, *window_params), fetch_one=False)
 				device_types = [row[0] for row in types_result if row] if types_result else []
 
 				has_miui = any(t in ('MIUI', 'HyperOS', 'STAN') for t in device_types)
 				if not has_miui:
 						return None
+
+				# 当前机型可用的数据接口版本：v1 仅 MIUI 机型，v2 仅 HyperOS/STAN 机型，v3 全量
+				supported_apis = []
+				if 'MIUI' in device_types:
+						supported_apis.append('v1')
+				if any(t in ('HyperOS', 'STAN') for t in device_types):
+						supported_apis.append('v2')
+				supported_apis.append('v3')
 
 				# ==================== 阶段3: 批量获取所有分支代码映射 ====================
 				branch_codes_sql = """
@@ -1116,7 +1219,7 @@ def exportV3(device: str) -> Optional[Dict[str, Any]]:
 						FROM devices
 						WHERE device = %s AND tag IS NOT NULL AND tag != ''
 				"""
-				branch_codes_data = DatabaseManager.execute(branch_codes_sql, params=(device,), fetch_one=False)
+				branch_codes_data = DatabaseManager.execute(branch_codes_sql, params=(source_device,), fetch_one=False)
 
 				branch_code_map: Dict[str, Dict[str, str]] = {}
 				for row in branch_codes_data or []:
@@ -1133,15 +1236,15 @@ def exportV3(device: str) -> Optional[Dict[str, Any]]:
 				# ==================== 阶段4: 批量获取所有 ROM 数据（带运营商字段）====================
 				# 更新日志：roms 只保留一列语言中性的 logs（[[模块ID,[条目ID,...],语言掩码],...]），
 				# 各语言原文在 logs 表按列存放，导出时由 LogStore.build_localized 还原
-				roms_sql = """
-						SELECT id, version, android, beta_date, recovery, fastboot,
-									 tag, code, type, bigver, ctelecom, cmobile, cunicom, aspatch,
-									 logs, region
-						FROM roms
-						WHERE device = %s
-						ORDER BY id DESC
-				"""
-				all_roms = DatabaseManager.execute(roms_sql, params=(device,), fetch_one=False)
+				roms_sql = (
+						"SELECT id, version, android, beta_date, recovery, fastboot, "
+						"tag, code, type, bigver, ctelecom, cmobile, cunicom, aspatch, "
+						"logs, region FROM roms "
+						"WHERE device = %s" + window_clause +
+						" ORDER BY id DESC"
+				)
+				all_roms = DatabaseManager.execute(
+						roms_sql, params=(source_device, *window_params), fetch_one=False)
 
 				# 按 tag 分组 ROM（使用字典setdefault，效率更高）
 				roms_by_tag: Dict[str, List[Tuple]] = {}
@@ -1186,15 +1289,19 @@ def exportV3(device: str) -> Optional[Dict[str, Any]]:
 				# ==================== 阶段5: 构建 V3 输出结构 ====================
 				device_struct: Dict[str, Any] = {
 						"device": device,
+						"codename": source_device,	# 展示用真实代号（分代续售时 device 是区分用的导出键）
 						"name": {
 								"zh": device_name_zh,
 								"en": device_name_en
 						},
 						"code": dev_tag,
 						"brand": device_full_brand or "",
-						"series": [dict(s) for s in (load_series_data().get("device_series", {}).get(device, []))],
+						"series": [dict(s) for s in (
+								load_series_data().get("device_series", {}).get(device)
+								or load_series_data().get("device_series", {}).get(source_device, []))],
 						"android": android_versions,
 						"supports": supports_versions,
+						"apis": supported_apis,
 						"branches": []
 				}
 
@@ -1435,6 +1542,33 @@ def _xms_pkg_type(file_name: Any) -> str:
 		return ''
 
 
+def _xms_meta_from_row(full_names: Any, full_brands: Any, brands: Any) -> Dict[str, Any]:
+		"""devices 行 -> {label: {zh, en}, brands: [...], tablet: bool}"""
+		label = {'zh': '', 'en': ''}
+		text = ''
+		if full_names:
+				try:
+						parsed = json.loads(full_names)
+				except (json.JSONDecodeError, TypeError):
+						parsed = None
+				if isinstance(parsed, dict):
+						label = {'zh': str(parsed.get('zh') or ''), 'en': str(parsed.get('en') or '')}
+						text = f"{label['zh']} {label['en']}"
+		values: List[Any] = []
+		if full_brands:
+				try:
+						values = json.loads(full_brands)
+				except (json.JSONDecodeError, TypeError):
+						values = [full_brands]
+		if not values and brands:
+				values = [part.strip().strip('"') for part in str(brands).split(',')]
+		return {
+				'label': label,
+				'brands': sorted({str(value).strip().lower() for value in values if str(value).strip()}),
+				'tablet': ('平板' in text) or ('pad' in text.lower()),
+		}
+
+
 def _xms_device_meta() -> Dict[str, Dict[str, Any]]:
 		"""设备代号 -> {brands: [xiaomi/redmi/poco…], tablet: bool}
 
@@ -1451,28 +1585,25 @@ def _xms_device_meta() -> Dict[str, Dict[str, Any]]:
 				"  ON ref.`device` = d.`device` AND ref.ref_id = d.`id`"
 		)
 		for device, full_brands, brands, full_names in rows or []:
-				values: List[Any] = []
-				if full_brands:
-						try:
-								values = json.loads(full_brands)
-						except (json.JSONDecodeError, TypeError):
-								values = [full_brands]
-				if not values and brands:
-						values = [part.strip().strip('"') for part in str(brands).split(',')]
-				labels = sorted({str(value).strip().lower() for value in values if str(value).strip()})
-				text = ''
-				if full_names:
-						try:
-								parsed = json.loads(full_names)
-								if isinstance(parsed, dict):
-										text = f"{parsed.get('zh') or ''} {parsed.get('en') or ''}"
-						except (json.JSONDecodeError, TypeError):
-								pass
-				meta[str(device)] = {
-						'brands': labels,
-						'tablet': ('平板' in text) or ('pad' in text.lower()),
-				}
+				parsed = _xms_meta_from_row(full_names, full_brands, brands)
+				meta[str(device)] = {'brands': parsed['brands'], 'tablet': parsed['tablet']}
 		return meta
+
+
+def _xms_device_export_meta(export_device: str) -> Optional[Dict[str, Any]]:
+		"""分代续售设备：按导出代号（launch_date 窗口）取 devices 行，返回名称 / 品牌 / 平板标记"""
+		if export_device not in DEVICE_SPLITS and not any(
+						str(conf.get('device')) == export_device for conf in DEVICE_SPLITS.values()):
+				return None
+		source_device, since, until = _resolve_export_device(export_device)
+		row_clause, row_params = _device_row_clause(since, until)
+		row = DatabaseManager.execute(
+				"SELECT `full_names`, `full_brands`, `brands` FROM `devices` WHERE `device` = %s" + row_clause,
+				params=(source_device, *row_params), fetch_one=True)
+		if not row:
+				return None
+		values = list(row) + [None, None, None]
+		return _xms_meta_from_row(values[0], values[1], values[2])
 
 
 def _xms_label(pair: Any) -> Dict[str, str]:
@@ -1633,6 +1764,16 @@ def export_xms() -> Dict[str, Any]:
 		name_map = _xms_device_names()
 		device_meta = _xms_device_meta()
 
+		# 分代续售：同一代号被多代机型复用，名称 / 品牌按 launch_date 分代取，
+		# 推送按对应 ROM 的发布日期归类到各自的导出代号
+		for export_device in [*DEVICE_SPLITS.keys(),
+											*{str(conf.get('device')) for conf in DEVICE_SPLITS.values()}]:
+				extra = _xms_device_export_meta(export_device)
+				if not extra:
+						continue
+				name_map[export_device] = extra['label']
+				device_meta[export_device] = {'brands': extra['brands'], 'tablet': extra['tablet']}
+
 		push_rows = DatabaseManager.query_all(
 				"SELECT x.`id`, x.`device`, x.`code`, x.`region`, x.`zone`, x.`android`, x.`version`, "
 				"       x.`rom_version`, x.`pkg_cnt`, x.`prio`, x.`notice`, x.`changelog`, x.`is_latest`, "
@@ -1656,6 +1797,8 @@ def export_xms() -> Dict[str, Any]:
 				(xms_id, device, code, region, zone, android, version, rom_version,
 				 pkg_cnt, prio, notice, changelog, is_latest, push_date, release_date) = row
 				device = '' if device is None else str(device)
+				# 分代续售：同一代号先后属于多代机型时，按对应 ROM 的发布日期归到各自导出代号
+				export_device = _split_export_key(device, _xms_date(release_date) or _xms_date(push_date))
 
 				apps: List[Dict[str, Any]] = []
 				for app in apps_by_xms.get(int(xms_id), []):
@@ -1685,8 +1828,8 @@ def export_xms() -> Dict[str, Any]:
 										known.setdefault(key, text)
 
 				pushes.append({
-						'device': device,
-						'name': _xms_label(name_map.get(device)),
+						'device': export_device,
+						'name': _xms_label(name_map.get(export_device)),
 						'code': '' if code is None else str(code),
 						'region': '' if region is None else str(region),
 						'zone': int(zone) if zone is not None else None,
@@ -1710,6 +1853,13 @@ def export_xms() -> Dict[str, Any]:
 		by_device: Dict[str, List[Dict[str, Any]]] = {}
 		for push in pushes:
 				by_device.setdefault(push['device'], []).append(push)
+
+		# 分代续售：旧机型不会因新机型发布而停更，分代键下的推送同时挂到源代号下
+		for split_key, conf in DEVICE_SPLITS.items():
+				base_device = str(conf.get('device') or '')
+				if base_device:
+						by_device.setdefault(base_device, []).extend(
+								push for push in pushes if push['device'] == split_key)
 
 		def _push_key(push: Dict[str, Any]):
 				return (0 if push['isLatest'] else 1, _xms_date_key(push['pushDate']),
@@ -1756,6 +1906,7 @@ def export_xms() -> Dict[str, Any]:
 																	_xms_date_key(item['pushDate'])))
 				device_docs[device] = {
 						'device': device,
+						'codename': _resolve_export_device(device)[0],
 						'name': _xms_label(name_map.get(device)),
 						'code': device_pushes[0]['code'],
 						'region': device_pushes[0]['region'],
@@ -1813,6 +1964,7 @@ def export_xms() -> Dict[str, Any]:
 						if dev is None:
 								dev = {
 										'device': push['device'],
+										'codename': _resolve_export_device(push['device'])[0],
 										'name': push['name'],
 										'code': push['code'],
 										'region': push['region'],

@@ -1,5 +1,6 @@
 {
   "device": "taiko",
+  "codename": "taiko",
   "name": {
     "zh": "REDMI 平板 2",
     "en": "REDMI Pad 2"
@@ -16,6 +17,10 @@
   "supports": [
     "OS3",
     "OS2"
+  ],
+  "apis": [
+    "v2",
+    "v3"
   ],
   "branches": [
     {
@@ -464,7 +469,7 @@
           "release": "2026-10-26",
           "aspatch": "2026-10-01",
           "recovery": "taiko_global-ota_full-OS3.0.305.0.WOVMIXM-user-16.0-9f10be35ea.zip",
-          "fastboot": ""
+          "fastboot": "taiko_global_images_OS3.0.305.0.WOVMIXM_20261014.0000.00_16.0_global_90f821c5c3.tgz"
         },
         {
           "miui": "OS3.0.304.0.WOVMIXM",
@@ -613,7 +618,7 @@
           "release": "2026-10-26",
           "aspatch": "2026-10-01",
           "recovery": "taiko_eea_global-ota_full-OS3.0.304.0.WOVEUXM-user-16.0-123e0fd251.zip",
-          "fastboot": ""
+          "fastboot": "taiko_eea_global_images_OS3.0.304.0.WOVEUXM_20261014.0000.00_16.0_eea_ad3be6a8aa.tgz"
         },
         {
           "miui": "OS3.0.303.0.WOVEUXM",

@@ -1,5 +1,6 @@
 {
   "device": "degas",
+  "codename": "degas",
   "name": {
     "zh": "小米 14T",
     "en": "Xiaomi 14T"
@@ -24,6 +25,10 @@
     "OS3",
     "OS2",
     "OS1"
+  ],
+  "apis": [
+    "v2",
+    "v3"
   ],
   "branches": [
     {
@@ -53,6 +58,16 @@
       "show": "1",
       "ep": "0",
       "roms": [
+        {
+          "miui": "OS3.0.304.0.WNETWXM",
+          "os": "OS3",
+          "bigver": "HyperOS 3",
+          "android": "16.0",
+          "release": "2026-11-02",
+          "aspatch": "2026-10-01",
+          "recovery": "degas_tw_global-ota_full-OS3.0.304.0.WNETWXM-user-16.0-bbd285748b.zip",
+          "fastboot": ""
+        },
         {
           "miui": "OS3.0.303.0.WNETWXM",
           "os": "OS3",
@@ -519,7 +534,7 @@
           "release": "2026-11-02",
           "aspatch": "2026-10-01",
           "recovery": "degas_dc_global-ota_full-OS3.0.304.0.WNEMIDC-user-16.0-b953925127.zip",
-          "fastboot": ""
+          "fastboot": "degas_dc_global_images_OS3.0.304.0.WNEMIDC_20261020.0000.00_16.0_global_dc_339bf3af5f.tgz"
         },
         {
           "miui": "OS3.0.303.0.WNEMIDC",
@@ -970,6 +985,16 @@
       "ep": "0",
       "roms": [
         {
+          "miui": "OS3.0.304.0.WNERUXM",
+          "os": "OS3",
+          "bigver": "HyperOS 3",
+          "android": "16.0",
+          "release": "2026-11-02",
+          "aspatch": "2026-10-01",
+          "recovery": "degas_ru_global-ota_full-OS3.0.304.0.WNERUXM-user-16.0-f097a6577b.zip",
+          "fastboot": ""
+        },
+        {
           "miui": "OS3.0.303.0.WNERUXM",
           "os": "OS3",
           "bigver": "HyperOS 3",
@@ -1407,6 +1432,16 @@
       "show": "1",
       "ep": "0",
       "roms": [
+        {
+          "miui": "OS3.0.304.0.WNETRXM",
+          "os": "OS3",
+          "bigver": "HyperOS 3",
+          "android": "16.0",
+          "release": "2026-11-02",
+          "aspatch": "2026-10-01",
+          "recovery": "degas_tr_global-ota_full-OS3.0.304.0.WNETRXM-user-16.0-58bc93035f.zip",
+          "fastboot": ""
+        },
         {
           "miui": "OS3.0.303.0.WNETRXM",
           "os": "OS3",

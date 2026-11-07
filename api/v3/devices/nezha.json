@@ -1,5 +1,6 @@
 {
   "device": "nezha",
+  "codename": "nezha",
   "name": {
     "zh": "小米 17 Ultra",
     "en": "Xiaomi 17 Ultra"
@@ -22,6 +23,10 @@
   "supports": [
     "OS4",
     "OS3"
+  ],
+  "apis": [
+    "v2",
+    "v3"
   ],
   "branches": [
     {
@@ -54,6 +59,17 @@
       "show": "1",
       "ep": "0",
       "roms": [
+        {
+          "miui": "OS4.0.7.0.XPACNXM",
+          "os": "OS4",
+          "bigver": "HyperOS 4",
+          "android": "17.0",
+          "release": "2026-11-05",
+          "aspatch": "2026-10-01",
+          "recovery": "nezha-ota_full-OS4.0.7.0.XPACNXM-user-17.0-5d0985edfa.zip",
+          "fastboot": "",
+          "ctelecom": ""
+        },
         {
           "miui": "OS4.0.6.0.XPACNXM",
           "os": "OS4",
@@ -1103,7 +1119,7 @@
           "release": "2026-10-19",
           "aspatch": "2026-10-01",
           "recovery": "nezha_ru_global-ota_full-OS3.0.308.0.WPARUXM-user-16.0-529d6556b0.zip",
-          "fastboot": ""
+          "fastboot": "nezha_ru_global_images_OS3.0.308.0.WPARUXM_20261009.0000.00_16.0_ru_206fe860a0.tgz"
         },
         {
           "miui": "OS3.0.305.0.WPARUXM",

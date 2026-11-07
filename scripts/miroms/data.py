@@ -5,6 +5,15 @@ DEVICE_NAME_ALIASES = {
     'pissarro_in': 'pissarroin',
 }
 
+# 分代续售：同一个 device / code 被多代机型复用（如 warsaw 先为 REDMI K90 Ultra，后为 K100）。
+# roms 表只有代号、没有机型标记，导出时只能按 ROM 发布日期切分：
+#   键（导出代号，用于文件名 / 路由 / XMS 目录）-> {device: 源代号, since: 该代机型发布日期}
+# 键一侧只导出 since 及以后的版本；源代号一侧照常导出全部版本（旧机型不会因新机型发布而停更），
+# 因此分代发布之后的版本会同时出现在两代机型里。
+DEVICE_SPLITS = {
+    'warsaw_k100': {'device': 'warsaw', 'since': '2026-10-27'},
+}
+
 # unreleased: 未发布的设备代号
 # currentStable: 近三年内有 ROM 记录的稳定版设备
 

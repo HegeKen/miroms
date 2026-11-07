@@ -1,5 +1,6 @@
 {
   "device": "guitar",
+  "codename": "guitar",
   "name": {
     "zh": "REDMI Pad 2 SE",
     "en": "REDMI Pad 2 SE"
@@ -14,6 +15,10 @@
   ],
   "supports": [
     "OS3"
+  ],
+  "apis": [
+    "v2",
+    "v3"
   ],
   "branches": [
     {
@@ -46,6 +51,16 @@
       "show": "1",
       "ep": "0",
       "roms": [
+        {
+          "miui": "OS3.0.304.0.WDNCNXM",
+          "os": "OS3",
+          "bigver": "HyperOS 3",
+          "android": "16.0",
+          "release": "2026-11-06",
+          "aspatch": "2026-10-01",
+          "recovery": "guitar-ota_full-OS3.0.304.0.WDNCNXM-user-16.0-29ceb06821.zip",
+          "fastboot": ""
+        },
         {
           "miui": "OS3.0.303.0.WDNCNXM",
           "os": "OS3",

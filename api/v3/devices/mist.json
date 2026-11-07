@@ -1,5 +1,6 @@
 {
   "device": "mist",
+  "codename": "mist",
   "name": {
     "zh": "REDMI Note 17 5G / POCO M8 Power 5G",
     "en": "REDMI Note 17 5G / POCO M8 Power 5G"
@@ -15,6 +16,10 @@
   ],
   "supports": [
     "OS3"
+  ],
+  "apis": [
+    "v2",
+    "v3"
   ],
   "branches": [
     {
@@ -325,6 +330,16 @@
       "show": "1",
       "ep": "0",
       "roms": [
+        {
+          "miui": "OS3.0.307.0.WPUEUXM",
+          "os": "OS3",
+          "bigver": "HyperOS 3",
+          "android": "16.0",
+          "release": "2026-11-03",
+          "aspatch": "2026-10-01",
+          "recovery": "mist_eea_global-ota_full-OS3.0.307.0.WPUEUXM-user-16.0-3b755b290b.zip",
+          "fastboot": ""
+        },
         {
           "miui": "OS3.0.305.0.WPUEUXM",
           "os": "OS3",

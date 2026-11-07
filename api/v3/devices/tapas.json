@@ -1,5 +1,6 @@
 {
   "device": "tapas",
+  "codename": "tapas",
   "name": {
     "zh": "Redmi Note 12 4G",
     "en": "Redmi Note 12 4G"
@@ -18,6 +19,11 @@
     "OS2",
     "OS1",
     "V14"
+  ],
+  "apis": [
+    "v1",
+    "v2",
+    "v3"
   ],
   "branches": [
     {
@@ -47,6 +53,16 @@
       "show": "1",
       "ep": "0",
       "roms": [
+        {
+          "miui": "OS2.0.210.0.VMTMIXM",
+          "os": "OS2",
+          "bigver": "HyperOS 2",
+          "android": "15.0",
+          "release": "2026-11-02",
+          "aspatch": "2026-10-01",
+          "recovery": "tapas_global-ota_full-OS2.0.210.0.VMTMIXM-user-15.0-8fb4f15c80.zip",
+          "fastboot": ""
+        },
         {
           "miui": "OS2.0.209.0.VMTMIXM",
           "os": "OS2",

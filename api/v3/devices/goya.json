@@ -1,5 +1,6 @@
 {
   "device": "goya",
+  "codename": "goya",
   "name": {
     "zh": "小米 15T",
     "en": "Xiaomi 15T"
@@ -22,6 +23,10 @@
   "supports": [
     "OS3",
     "OS2"
+  ],
+  "apis": [
+    "v2",
+    "v3"
   ],
   "branches": [
     {
@@ -339,6 +344,16 @@
       "show": "0",
       "ep": "0",
       "roms": [
+        {
+          "miui": "OS3.0.304.0.WOEMIDC",
+          "os": "OS3",
+          "bigver": "HyperOS 3",
+          "android": "16.0",
+          "release": "2026-11-06",
+          "aspatch": "2026-10-01",
+          "recovery": "goya_dc_global-ota_full-OS3.0.304.0.WOEMIDC-user-16.0-39fa694100.zip",
+          "fastboot": ""
+        },
         {
           "miui": "OS3.0.302.0.WOEMIDC",
           "os": "OS3",

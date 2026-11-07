@@ -3,7 +3,10 @@ import subprocess
 import sys
 from pathlib import Path
 
-for device in common.fullDevices:
+# fullDevices 来自数据库里出现的代号；DEVICE_SPLITS 的键是同一代号分代续售时额外的导出代号
+devices = list(common.fullDevices) + [key for key in common.DEVICE_SPLITS if key not in common.fullDevices]
+
+for device in devices:
   common.exportV1(device)
   common.exportV2(device)
   common.exportV3(device)

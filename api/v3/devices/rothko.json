@@ -1,5 +1,6 @@
 {
   "device": "rothko",
+  "codename": "rothko",
   "name": {
     "zh": "小米 14T Pro / Redmi K70 至尊版",
     "en": "Xiaomi 14T Pro / Redmi K70 Ultra"
@@ -19,6 +20,10 @@
     "OS3",
     "OS2",
     "OS1"
+  ],
+  "apis": [
+    "v2",
+    "v3"
   ],
   "branches": [
     {
@@ -2975,6 +2980,16 @@
       "show": "1",
       "ep": "0",
       "roms": [
+        {
+          "miui": "OS3.0.301.0.WNNMXTC",
+          "os": "OS3",
+          "bigver": "HyperOS 3",
+          "android": "16.0",
+          "release": "2026-11-05",
+          "aspatch": "2026-10-01",
+          "recovery": "rothko_mx_tc_global-ota_full-OS3.0.301.0.WNNMXTC-user-16.0-97b6804770.zip",
+          "fastboot": ""
+        },
         {
           "miui": "OS3.0.4.0.WNNMXTC",
           "os": "OS3",

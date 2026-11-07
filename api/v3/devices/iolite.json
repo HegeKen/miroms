@@ -1,5 +1,6 @@
 {
   "device": "iolite",
+  "codename": "iolite",
   "name": {
     "zh": "REDMI Note 17 Pro 5G",
     "en": "REDMI Note 17 Pro 5G"
@@ -14,6 +15,10 @@
   ],
   "supports": [
     "OS3"
+  ],
+  "apis": [
+    "v2",
+    "v3"
   ],
   "branches": [
     {
@@ -288,6 +293,16 @@
       "ep": "0",
       "roms": [
         {
+          "miui": "OS3.0.309.0.WDQMIXM",
+          "os": "OS3",
+          "bigver": "HyperOS 3",
+          "android": "16.0",
+          "release": "2026-11-03",
+          "aspatch": "2026-10-01",
+          "recovery": "iolite_global-ota_full-OS3.0.309.0.WDQMIXM-user-16.0-75068a8222.zip",
+          "fastboot": ""
+        },
+        {
           "miui": "OS3.0.308.0.WDQMIXM",
           "os": "OS3",
           "bigver": "HyperOS 3",
@@ -364,7 +379,7 @@
           "release": "2026-10-30",
           "aspatch": "2026-10-01",
           "recovery": "iolite_dc_global-ota_full-OS3.0.305.0.WDQMIDC-user-16.0-210eda1d68.zip",
-          "fastboot": ""
+          "fastboot": "iolite_dc_global_images_OS3.0.305.0.WDQMIDC_20261021.0000.00_16.0_global_dc_ce525c320e.tgz"
         },
         {
           "miui": "OS3.0.304.0.WDQMIDC",
@@ -464,6 +479,16 @@
       "show": "1",
       "ep": "0",
       "roms": [
+        {
+          "miui": "OS3.0.304.0.WDQRUXM",
+          "os": "OS3",
+          "bigver": "HyperOS 3",
+          "android": "16.0",
+          "release": "2026-11-03",
+          "aspatch": "2026-10-01",
+          "recovery": "iolite_ru_global-ota_full-OS3.0.304.0.WDQRUXM-user-16.0-e95d5ca031.zip",
+          "fastboot": ""
+        },
         {
           "miui": "OS3.0.303.0.WDQRUXM",
           "os": "OS3",

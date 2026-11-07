@@ -1,5 +1,6 @@
 {
   "device": "darwin",
+  "codename": "darwin",
   "name": {
     "zh": "POCO X8s",
     "en": "POCO X8s"
@@ -14,6 +15,10 @@
   ],
   "supports": [
     "OS3"
+  ],
+  "apis": [
+    "v2",
+    "v3"
   ],
   "branches": [
     {
@@ -43,6 +48,16 @@
       "show": "1",
       "ep": "0",
       "roms": [
+        {
+          "miui": "OS3.0.306.0.WETMIXM",
+          "os": "OS3",
+          "bigver": "HyperOS 3",
+          "android": "16.0",
+          "release": "2026-11-05",
+          "aspatch": "2026-09-01",
+          "recovery": "darwin_global-ota_full-OS3.0.306.0.WETMIXM-user-16.0-6b3272278a.zip",
+          "fastboot": "darwin_global_images_OS3.0.306.0.WETMIXM_20261028.0000.00_16.0_global_36ff91aa46.tgz"
+        },
         {
           "miui": "OS3.0.305.0.WETMIXM",
           "os": "OS3",

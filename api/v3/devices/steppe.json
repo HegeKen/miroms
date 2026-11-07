@@ -1,5 +1,6 @@
 {
   "device": "steppe",
+  "codename": "steppe",
   "name": {
     "zh": "REDMI M100",
     "en": "REDMI M100"
@@ -14,6 +15,10 @@
   ],
   "supports": [
     "OS3"
+  ],
+  "apis": [
+    "v2",
+    "v3"
   ],
   "branches": [
     {
@@ -318,6 +323,16 @@
       "show": "1",
       "ep": "0",
       "roms": [
+        {
+          "miui": "OS3.0.310.0.WAVEUXM",
+          "os": "OS3",
+          "bigver": "HyperOS 3",
+          "android": "16.0",
+          "release": "2026-11-02",
+          "aspatch": "2026-10-01",
+          "recovery": "steppe_eea_global-ota_full-OS3.0.310.0.WAVEUXM-user-16.0-1a61d8db03.zip",
+          "fastboot": ""
+        },
         {
           "miui": "OS3.0.309.0.WAVEUXM",
           "os": "OS3",

@@ -1,5 +1,6 @@
 {
   "device": "brussels",
+  "codename": "brussels",
   "name": {
     "zh": "REDMI Note 17 Pro Max",
     "en": "REDMI Note 17 Pro Max"
@@ -14,6 +15,10 @@
   ],
   "supports": [
     "OS3"
+  ],
+  "apis": [
+    "v2",
+    "v3"
   ],
   "branches": [
     {
@@ -43,6 +48,16 @@
       "show": "1",
       "ep": "0",
       "roms": [
+        {
+          "miui": "OS3.0.306.0.WDRTWXM",
+          "os": "OS3",
+          "bigver": "HyperOS 3",
+          "android": "16.0",
+          "release": "2026-11-03",
+          "aspatch": "2026-10-01",
+          "recovery": "brussels_tw_global-ota_full-OS3.0.306.0.WDRTWXM-user-16.0-ff9d6a8ed5.zip",
+          "fastboot": ""
+        },
         {
           "miui": "OS3.0.305.0.WDRTWXM",
           "os": "OS3",
@@ -366,7 +381,7 @@
           "release": "2026-10-29",
           "aspatch": "2026-10-01",
           "recovery": "brussels_in_global-ota_full-OS3.0.304.0.WDRINXM-user-16.0-38aefa35d0.zip",
-          "fastboot": ""
+          "fastboot": "brussels_in_global_images_OS3.0.304.0.WDRINXM_20261019.0000.00_16.0_in_418cbd9951.tgz"
         },
         {
           "miui": "OS3.0.303.0.WDRINXM",
@@ -513,7 +528,7 @@
           "release": "2026-10-31",
           "aspatch": "2026-10-01",
           "recovery": "brussels_lm_cr_global-ota_full-OS3.0.304.0.WDRLMCR-user-16.0-d4f989bafb.zip",
-          "fastboot": ""
+          "fastboot": "brussels_lm_cr_global_images_OS3.0.304.0.WDRLMCR_20261026.0000.00_16.0_lm_cr_6647dc8cbe.tgz"
         },
         {
           "miui": "OS3.0.303.0.WDRLMCR",

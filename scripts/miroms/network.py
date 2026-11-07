@@ -64,8 +64,17 @@ class NetworkClient:
 								data=data,
 								timeout=(5, 10)
 						)
-						if "code" not in response.text:
+						if "code" in response.text:
+								return None
+						# 服务端偶发返回空包 / 风控页面，不是 base64 密文，解密会抛
+						# binascii.Error、UnicodeDecodeError、JSONDecodeError（均为 ValueError 子类）。
+						# 这里降级为告警，避免整轮检测中断。
+						try:
 								return CryptoManager.decrypt(response.text.split("q=")[0])
+						except ValueError as exc:
+								logger.warning("响应解密失败（%s）：%s: %s",
+														 target, type(exc).__name__, exc)
+								return None
 				except requests.exceptions.RequestException as e:
 						print(f"请求失败: {e}")
 				finally:

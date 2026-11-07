@@ -32,7 +32,7 @@ from miroms.constants import (Constants, _const, branches, HyperOSForm,
 	CHANGELOG_LOCALES, CHANGELOG_COLUMNS, CHANGELOG_EXTRA_COLUMNS, CHANGELOG_BASE_COLUMN,
 	find_changelog_locale)
 from miroms.data import (
-	unreleased, currentStable, order, fullDevices, flags
+	unreleased, currentStable, order, fullDevices, flags, DEVICE_SPLITS
 )
 from miroms.utils import VersionUtils, FileUtils
 from miroms.database import DatabaseManager
@@ -68,7 +68,7 @@ __all__ = [
 	'CHANGELOG_LOCALES', 'CHANGELOG_COLUMNS', 'CHANGELOG_EXTRA_COLUMNS', 'CHANGELOG_BASE_COLUMN',
 	'find_changelog_locale',
 	# 数据
-	'unreleased', 'currentStable', 'order', 'fullDevices', 'flags',
+	'unreleased', 'currentStable', 'order', 'fullDevices', 'flags', 'DEVICE_SPLITS',
 	# 工具
 	'VersionUtils', 'FileUtils',
 	# 服务

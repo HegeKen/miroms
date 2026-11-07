@@ -41,7 +41,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 # ==================== 数据常量（保留模块级赋值供 sync_devices.py 重写） ====================
-from miroms.data import unreleased, currentStable, order, fullDevices, flags
+from miroms.data import unreleased, currentStable, order, fullDevices, flags, DEVICE_SPLITS
 
 # sdk 别名保持兼容
 sdk = _const.SDK_VERSIONS

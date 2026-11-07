@@ -1,5 +1,6 @@
 {
   "device": "moon",
+  "codename": "moon",
   "name": {
     "zh": "Redmi 13 / POCO M6 4G",
     "en": "Redmi 13 / POCO M6 4G"
@@ -19,6 +20,10 @@
     "OS3",
     "OS2",
     "OS1"
+  ],
+  "apis": [
+    "v2",
+    "v3"
   ],
   "branches": [
     {
@@ -1639,6 +1644,16 @@
       "show": "1",
       "ep": "0",
       "roms": [
+        {
+          "miui": "OS3.0.302.0.WNTLMCR",
+          "os": "OS3",
+          "bigver": "HyperOS 3",
+          "android": "16.0",
+          "release": "2026-11-04",
+          "aspatch": "2026-10-01",
+          "recovery": "moon_lm_cr_global-ota_full-OS3.0.302.0.WNTLMCR-user-16.0-b3fbe18331.zip",
+          "fastboot": ""
+        },
         {
           "miui": "OS3.0.301.0.WNTLMCR",
           "os": "OS3",
