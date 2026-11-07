@@ -24,7 +24,25 @@
           "name": {
             "zh": "小米澎湃 AI 引擎",
             "en": "Xiaomi HyperAI Engine",
-            "ug": "ئەقىلي ياردەمچى"
+            "ug": "ئەقىلي ياردەمچى",
+            "zh_tw": "資訊助手",
+            "ja": "情報アシスタント",
+            "ko": "정보 도우미",
+            "ru": "Умный помощник",
+            "uk": "Помічник інформації",
+            "pl": "Asystent informacji",
+            "de": "Informationsassistent",
+            "fr": "Coffre d'applications",
+            "it": "Assistente app",
+            "es": "Bóveda de aplicaciones",
+            "pt": "Assistente de informações",
+            "tr": "Uygulama kasası",
+            "id": "Asisten Informasi",
+            "vi": "Trợ lý thông tin",
+            "th": "ผู้ช่วยข้อมูล",
+            "ar": "مساعد المعلومات",
+            "in": "सूचना सहायक",
+            "bo": "App vault"
           },
           "apkName": "小米澎湃 AI 引擎",
           "version": "2030036203",
@@ -36,7 +54,6 @@
           "sha256": "dea187fddac1adea37d95029307a3f4935843cbe",
           "logs": [
             {
-              "zh": "优化 “自动添加行程”的准确率，录入行程更方便",
               "en": "Optimization: Improved the accuracy of automatic trip creation, making it easier to add trips"
             }
           ]
@@ -178,11 +195,9 @@
           "sha256": "4807927105af50c48271139f920d13b5e9a47d9b",
           "logs": [
             {
-              "zh": "修复 部分场景下云端录音无法下载播放的问题",
               "en": "Fix: Cloud recordings couldn't be downloaded or played in some cases"
             },
             {
-              "zh": "修复 部分场景下录音回放音质异常的问题",
               "en": "Fix: Occasional audio quality issues during recording playback"
             }
           ]
@@ -270,7 +285,6 @@
           "sha256": "813827712ed653c48fba78da0755794267c90cf1",
           "logs": [
             {
-              "zh": "修复 部分场景下“米家”内设备页面显示异常的问题",
               "en": "Fix: Device pages could display incorrectly in Xiaomi Home"
             }
           ]
@@ -309,7 +323,6 @@
           "sha256": "843971af8c2732aaf0ec3ed349d261efa8921cdc",
           "logs": [
             {
-              "zh": "修复 部分场景下“星座运势”页面显示异常的问题",
               "en": "Fix: Horoscope page was displayed incorrectly in some cases"
             }
           ]
@@ -380,17 +393,7 @@
           "size": 43324138,
           "md5": "8065260f28ee54f213f53c1dae9895ba",
           "sha256": "dcf5a3ae4a4c593fe176b0c6d128585ac0cd31b4",
-          "logs": [
-            {
-              "zh": "优化  “强制休息时长”和“连续使用时长”的可选范围扩大"
-            },
-            {
-              "zh": "修复 部分场景下三方应用在“未成年人模式”下推送内容异常的问题"
-            },
-            {
-              "zh": "修复 部分场景下“家人守护”中设备定位更新延迟的问题"
-            }
-          ]
+          "logs": []
         },
         {
           "pkg": "com.miui.guardprovider",
@@ -461,17 +464,7 @@
           "size": 220552736,
           "md5": "559023930e73a1cd09e3ea26f6ac2476",
           "sha256": "972a24b51688589a58705f4912dc72df5506cfb7",
-          "logs": [
-            {
-              "zh": "优化 笔记待办页操作流畅度，页面切换更顺滑"
-            },
-            {
-              "zh": "修复 部分场景下笔记无法云同步的问题"
-            },
-            {
-              "zh": "修复 部分场景下待办提醒点击无响应的问题"
-            }
-          ]
+          "logs": []
         },
         {
           "pkg": "com.miui.personalassistant",
@@ -506,11 +499,9 @@
           "sha256": "8b290f1b7451f4adc427fd9c785bb5480d0cbd12",
           "logs": [
             {
-              "zh": "修复 部分场景下区域截屏失败的问题",
               "en": "Fix: Partial screenshots couldn't be taken in some cases"
             },
             {
-              "zh": "修复 部分场景下长截屏页面显示异常的问题",
               "en": "Fix: Scrolling screenshots could display incorrectly in some cases"
             }
           ]
@@ -541,18 +532,14 @@
             "bo": "Security"
           },
           "apkName": "手机/平板管家",
-          "version": "40011275",
+          "version": "40011279",
           "file": "securitycenter-12.7.9_260811_cn_pad_stable-universal-e8b5c1c82e.apk",
           "releaseDate": "2026-09-03",
           "type": "pad",
           "size": 74830912,
           "md5": "e8b5c1c82ed9bf36c82b021bf64a3c2c",
           "sha256": "83603cd6a6e99f93b539a29ce9c009c60ac4e4bd",
-          "logs": [
-            {
-              "zh": "优化 “游戏工具箱”界面焕新，动画效果升级，实时帧率更直观"
-            }
-          ]
+          "logs": []
         },
         {
           "pkg": "com.android.thememanager",
@@ -676,7 +663,6 @@
           "sha256": "ef105730cd8f7743c88123be057bcb9cd01b6381",
           "logs": [
             {
-              "zh": "优化 页面操作流畅度，使用体验更顺畅",
               "en": "Optimization: Page responsiveness for a smoother experience"
             }
           ]
@@ -697,11 +683,9 @@
           "sha256": "71af78bad5ae885b8761317918a8aa6173ee6e66",
           "logs": [
             {
-              "zh": "优化 画笔笔触效果，作画效果更细腻",
               "en": "Optimization: Improved brush strokes for more refined drawing effects"
             },
             {
-              "zh": "修复 部分场景下画板显示异常的问题",
               "en": "Fix: Canvas was displayed incorrectly in some cases"
             }
           ]
