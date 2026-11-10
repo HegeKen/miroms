@@ -5,10 +5,10 @@
     "en": "Family Guard"
   },
   "apkName": "安全守护服务",
-  "releaseDate": "2026-11-04",
-  "latestVersion": "1420261009",
-  "recordCount": 65,
-  "deviceCount": 54,
+  "releaseDate": "",
+  "latestVersion": "1420261011",
+  "recordCount": 67,
+  "deviceCount": 55,
   "os": [
     "OS3",
     "OS4"
@@ -28,6 +28,41 @@
     "phone"
   ],
   "groups": [
+    {
+      "version": "D02",
+      "os": "OS4",
+      "appVersion": "1420261011",
+      "type": "pad",
+      "pushDate": "2026-11-04",
+      "isLatest": true,
+      "apkName": "安全守护服务",
+      "file": "greenguard-3.14.10.09.00-tablet-universal-515fe48beb.apk",
+      "releaseDate": "",
+      "size": 45334811,
+      "md5": "515fe48beba06e578b36f81de3a895be",
+      "sha256": "4d4713f60e586febd74fd72519c62cffb281c89d",
+      "logs": [],
+      "recordCount": 1,
+      "devices": [
+        {
+          "device": "yili",
+          "codename": "yili",
+          "name": {
+            "zh": "Redmi K Pad 2",
+            "en": "Redmi K Pad 2"
+          },
+          "code": "yili",
+          "region": "cn",
+          "zone": 1,
+          "android": "17.0",
+          "pushDate": "2026-11-04",
+          "isLatest": true,
+          "romVersions": [
+            "OS4.0.3.0.XAKCNXM"
+          ]
+        }
+      ]
+    },
     {
       "version": "D02",
       "os": "OS4",
@@ -391,7 +426,7 @@
           "zh": "修复 部分场景下“家人守护”中设备定位更新延迟的问题"
         }
       ],
-      "recordCount": 43,
+      "recordCount": 44,
       "devices": [
         {
           "device": "breeze",
@@ -425,6 +460,7 @@
           "pushDate": "2026-07-28",
           "isLatest": true,
           "romVersions": [
+            "OS3.0.306.0.WGTCNXM",
             "OS3.0.305.0.WGTCNXM"
           ]
         },

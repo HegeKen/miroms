@@ -23,12 +23,13 @@
     "bo": "ལོ་ཐོ"
   },
   "apkName": "日历",
-  "releaseDate": "2026-07-28",
-  "latestVersion": "171008190",
-  "recordCount": 64,
-  "deviceCount": 53,
+  "releaseDate": "",
+  "latestVersion": "180001380",
+  "recordCount": 66,
+  "deviceCount": 54,
   "os": [
-    "OS3"
+    "OS3",
+    "OS4"
   ],
   "regions": [
     "cn"
@@ -43,6 +44,41 @@
     "universal"
   ],
   "groups": [
+    {
+      "version": "D02",
+      "os": "OS4",
+      "appVersion": "180001380",
+      "type": "universal",
+      "pushDate": "2026-11-04",
+      "isLatest": true,
+      "apkName": "日历",
+      "file": "calendar-18.0.1.38-universal-882181c67c.apk",
+      "releaseDate": "",
+      "size": 17950389,
+      "md5": "882181c67c08391badb219a67fb00457",
+      "sha256": "9d41610cbf9dfe070dbefda5b74bca870fe7ee0b",
+      "logs": [],
+      "recordCount": 1,
+      "devices": [
+        {
+          "device": "yili",
+          "codename": "yili",
+          "name": {
+            "zh": "Redmi K Pad 2",
+            "en": "Redmi K Pad 2"
+          },
+          "code": "yili",
+          "region": "cn",
+          "zone": 1,
+          "android": "17.0",
+          "pushDate": "2026-11-04",
+          "isLatest": true,
+          "romVersions": [
+            "OS4.0.3.0.XAKCNXM"
+          ]
+        }
+      ]
+    },
     {
       "version": "C11",
       "os": "OS3",
@@ -62,7 +98,7 @@
           "en": "Fix: Horoscope page was displayed incorrectly in some cases"
         }
       ],
-      "recordCount": 64,
+      "recordCount": 65,
       "devices": [
         {
           "device": "breeze",
@@ -96,6 +132,7 @@
           "pushDate": "2026-07-28",
           "isLatest": true,
           "romVersions": [
+            "OS3.0.306.0.WGTCNXM",
             "OS3.0.305.0.WGTCNXM"
           ]
         },

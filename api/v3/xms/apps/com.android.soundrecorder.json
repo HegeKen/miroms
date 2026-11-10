@@ -25,9 +25,9 @@
   },
   "apkName": "录音机",
   "releaseDate": "",
-  "latestVersion": "",
-  "recordCount": 65,
-  "deviceCount": 54,
+  "latestVersion": "801100",
+  "recordCount": 67,
+  "deviceCount": 55,
   "os": [
     "OS3",
     "OS4"
@@ -45,6 +45,41 @@
     "universal"
   ],
   "groups": [
+    {
+      "version": "D02",
+      "os": "OS4",
+      "appVersion": "801100",
+      "type": "universal",
+      "pushDate": "2026-11-04",
+      "isLatest": true,
+      "apkName": "录音机",
+      "file": "soundrecorder-8.1.10.2026101518-universal-b71deab348.apk",
+      "releaseDate": "",
+      "size": 23779022,
+      "md5": "b71deab3489664131588358e8557813a",
+      "sha256": "b196f3773e0b9a19b2a98944b0e582ffca695abd",
+      "logs": [],
+      "recordCount": 1,
+      "devices": [
+        {
+          "device": "yili",
+          "codename": "yili",
+          "name": {
+            "zh": "Redmi K Pad 2",
+            "en": "Redmi K Pad 2"
+          },
+          "code": "yili",
+          "region": "cn",
+          "zone": 1,
+          "android": "17.0",
+          "pushDate": "2026-11-04",
+          "isLatest": true,
+          "romVersions": [
+            "OS4.0.3.0.XAKCNXM"
+          ]
+        }
+      ]
+    },
     {
       "version": "D02",
       "os": "OS4",
@@ -116,7 +151,7 @@
           "en": "Fix: Occasional audio quality issues during recording playback"
         }
       ],
-      "recordCount": 64,
+      "recordCount": 65,
       "devices": [
         {
           "device": "breeze",
@@ -150,6 +185,7 @@
           "pushDate": "2026-07-28",
           "isLatest": true,
           "romVersions": [
+            "OS3.0.306.0.WGTCNXM",
             "OS3.0.305.0.WGTCNXM"
           ]
         },

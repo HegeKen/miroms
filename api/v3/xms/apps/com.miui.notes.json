@@ -9,12 +9,13 @@
     "zh_tw": "筆記"
   },
   "apkName": "笔记",
-  "releaseDate": "2026-07-28",
-  "latestVersion": "2432",
-  "recordCount": 64,
-  "deviceCount": 53,
+  "releaseDate": "",
+  "latestVersion": "3314",
+  "recordCount": 66,
+  "deviceCount": 54,
   "os": [
-    "OS3"
+    "OS3",
+    "OS4"
   ],
   "regions": [
     "cn"
@@ -30,6 +31,41 @@
     "phone"
   ],
   "groups": [
+    {
+      "version": "D02",
+      "os": "OS4",
+      "appVersion": "3314",
+      "type": "pad",
+      "pushDate": "2026-11-04",
+      "isLatest": true,
+      "apkName": "笔记",
+      "file": "notes-202610201820-pad-universal-ce76c2551d.apk",
+      "releaseDate": "",
+      "size": 186096595,
+      "md5": "ce76c2551dbaaa02ac64a0533005ea0f",
+      "sha256": "61f5615677a174847ca9a495bdf0be03c0976253",
+      "logs": [],
+      "recordCount": 1,
+      "devices": [
+        {
+          "device": "yili",
+          "codename": "yili",
+          "name": {
+            "zh": "Redmi K Pad 2",
+            "en": "Redmi K Pad 2"
+          },
+          "code": "yili",
+          "region": "cn",
+          "zone": 1,
+          "android": "17.0",
+          "pushDate": "2026-11-04",
+          "isLatest": true,
+          "romVersions": [
+            "OS4.0.3.0.XAKCNXM"
+          ]
+        }
+      ]
+    },
     {
       "version": "C11",
       "os": "OS3",
@@ -296,7 +332,7 @@
           "en": "Fix: Task reminders sometimes didn't respond when tapped"
         }
       ],
-      "recordCount": 45,
+      "recordCount": 46,
       "devices": [
         {
           "device": "breeze",
@@ -330,6 +366,7 @@
           "pushDate": "2026-07-28",
           "isLatest": true,
           "romVersions": [
+            "OS3.0.306.0.WGTCNXM",
             "OS3.0.305.0.WGTCNXM"
           ]
         },

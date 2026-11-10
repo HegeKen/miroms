@@ -1,0 +1,939 @@
+{
+  "device": "yili",
+  "codename": "yili",
+  "name": {
+    "zh": "Redmi K Pad 2",
+    "en": "Redmi K Pad 2"
+  },
+  "code": "yili",
+  "region": "cn",
+  "pushes": [
+    {
+      "version": "D02",
+      "os": "OS4",
+      "android": "17.0",
+      "pushDate": "2026-11-04",
+      "isLatest": true,
+      "pkgCnt": 27,
+      "prio": 1,
+      "notice": "·  若部分应用已通过其他渠道提前更新至最新版本，则该应用此次安装将不会带来额外变化\n·  系统更新时不会删除任何用户数据，但建议您在更新前做好数据备份\n·  软件更新包会在更新完成后删除，不会占用您的存储空间\n·  更新后，为提升使用体验，系统会在后台进行一系列深度优化，期间设备可能出现发热、耗电增加等情况，属于正常现象，此现象将在 1 ~ 3 天内自行恢复\n·  在使用过程中遇到任何问题，可以通过“用户反馈”应用寻求帮助、进行问题反馈\n·  更多小米澎湃OS使用技巧欢迎进入社区讨论",
+      "extra": [
+        {
+          "name": {
+            "zh": "相册",
+            "en": "Gallery",
+            "zh_tw": "相簿",
+            "ja": "ギャラリー",
+            "ko": "갤러리",
+            "ru": "Галерея",
+            "uk": "Галерея",
+            "pl": "Galeria",
+            "de": "Galerie",
+            "fr": "Galerie",
+            "it": "Galleria",
+            "es": "Galería",
+            "pt": "Galeria",
+            "tr": "Galeri",
+            "id": "Galeri",
+            "vi": "Thư viện",
+            "th": "คลังภาพ",
+            "ar": "المعرض",
+            "in": "गैलरी",
+            "ug": "Gallery",
+            "bo": "Gallery"
+          },
+          "logs": [
+            {
+              "zh": "优化 相册菜单布局，调整排序、视图更方便"
+            },
+            {
+              "zh": "优化 长按播放动态照片的交互体验，减少误触"
+            },
+            {
+              "zh": "优化 私密相册支持动图播放"
+            }
+          ]
+        },
+        {
+          "name": {
+            "zh": "计算器",
+            "en": "Calculator",
+            "zh_tw": "計算機",
+            "ja": "電卓",
+            "ko": "계산기",
+            "ru": "Калькулятор",
+            "uk": "Калькулятор",
+            "pl": "Kalkulator",
+            "de": "Rechner",
+            "fr": "Calculette",
+            "it": "Calcolatrice",
+            "es": "Calculadora",
+            "pt": "Calculadora",
+            "tr": "Hesaplayıcı",
+            "id": "Kalkulator",
+            "vi": "Máy tính",
+            "th": "เครื่องคิดเลข",
+            "ar": "الآلة الحاسبة",
+            "in": "कैल्क्युलेटर",
+            "ug": "ھېسابلىغۇچ",
+            "bo": "རྩིས་འཁོར"
+          },
+          "logs": [
+            {
+              "zh": "优化 界面布局和按钮样式，观感更协调"
+            },
+            {
+              "zh": "“计算器”需在应用商店升级至 17.3.9 及以上版本"
+            }
+          ]
+        },
+        {
+          "name": {
+            "zh": "时钟",
+            "en": "Clock",
+            "zh_tw": "時鐘",
+            "ja": "時計",
+            "ko": "시계",
+            "ru": "Часы",
+            "uk": "Годинник",
+            "pl": "Zegar",
+            "de": "Uhr",
+            "fr": "Horloge",
+            "it": "Orologio",
+            "es": "Reloj",
+            "pt": "Relógio",
+            "tr": "Saat",
+            "id": "Jam",
+            "vi": "Đồng hồ",
+            "th": "นาฬิกา",
+            "ar": "الساعة",
+            "in": "घड़ी",
+            "ug": "سائەت",
+            "bo": "ཆུ་ཚོད།"
+          },
+          "logs": [
+            {
+              "zh": "优化 更多场景适配柔光玻璃材质效果"
+            }
+          ]
+        },
+        {
+          "name": {
+            "zh": "智能助理",
+            "en": "Intelligence Agent",
+            "ug": "ئەقىلي ياردەمچى"
+          },
+          "logs": [
+            {
+              "zh": "修复 部分场景下时钟小部件更新不及时的问题"
+            }
+          ]
+        },
+        {
+          "name": {
+            "zh": "天气",
+            "en": "Weather",
+            "zh_tw": "天氣",
+            "ja": "天気",
+            "ko": "날씨",
+            "ru": "Погода",
+            "uk": "Погода",
+            "pl": "Pogoda",
+            "de": "Wetter",
+            "fr": "Météo",
+            "it": "Meteo",
+            "es": "Tiempo",
+            "pt": "Clima",
+            "tr": "Hava durumu",
+            "id": "Cuaca",
+            "vi": "Thời tiết",
+            "th": "สภาพอากาศ",
+            "ar": "الطقس",
+            "in": "मौसम",
+            "ug": "ھاۋا رايى",
+            "bo": "གནམ་གཤིས"
+          },
+          "logs": [
+            {
+              "zh": "修复 部分场景下页面显示异常的问题"
+            }
+          ]
+        },
+        {
+          "name": {
+            "zh": "用户反馈",
+            "en": "Report Bugs",
+            "zh_tw": "使用者回饋",
+            "ja": "ユーザーフィードバック",
+            "ko": "사용자 피드백",
+            "ru": "Обратная связь",
+            "uk": "Зворотний зв'язок",
+            "pl": "Opinie użytkowników",
+            "de": "Benutzerfeedback",
+            "fr": "Retour utilisateur",
+            "it": "Feedback utente",
+            "es": "Comentarios de usuarios",
+            "pt": "Comentários do usuário",
+            "tr": "Kullanıcı geri bildirimi",
+            "id": "Umpan balik pengguna",
+            "vi": "Phản hồi người dùng",
+            "th": "ข้อเสนอแนะจากผู้ใช้",
+            "ar": "ملاحظات المستخدمين",
+            "in": "उपयोगकर्ता फ़ीडबैक",
+            "ug": "ئىشلەتكۈچى ئىنكاسى",
+            "bo": "སྤྱོད་མཁན་གྱི་བསམ་ཚུལ"
+          },
+          "logs": [
+            {
+              "zh": "修复 部分场景下搜索栏显示异常的问题"
+            }
+          ]
+        },
+        {
+          "name": {
+            "zh": "文件管理器",
+            "en": "File Explorer",
+            "zh_tw": "文件管理器",
+            "ja": "ファイルマネージャー",
+            "ko": "파일 관리자",
+            "ru": "Проводник файлов",
+            "uk": "Провідник файлів",
+            "pl": "Menedżer plików",
+            "de": "Dateimanager",
+            "fr": "Gestionnaire de fichiers",
+            "it": "File Manager",
+            "es": "Administrador de archivos",
+            "pt": "Gerenciador de arquivos",
+            "tr": "Dosya Yöneticisi",
+            "id": "File Manager",
+            "vi": "Trình quản lý tệp",
+            "th": "ตัวจัดการไฟล์",
+            "ar": "مدير الملفات",
+            "in": "फ़ाइल प्रबंधक",
+            "ug": "ھۆججەت باشقۇرغۇچ",
+            "bo": "ཡིག་ཆའི་དོ་དམ་ཆས"
+          },
+          "logs": [
+            {
+              "zh": "修复 部分场景下底部导航栏被遮挡的问题"
+            }
+          ]
+        },
+        {
+          "name": {
+            "zh": "录音机",
+            "en": "Recorder",
+            "zh_tw": "錄音機",
+            "ja": "レコーダー",
+            "ko": "레코더",
+            "ru": "Диктофон",
+            "uk": "Диктофон",
+            "pl": "Kaseta nagrywająca",
+            "de": "Tonaufnahmegerät",
+            "fr": "Enregistreur",
+            "it": "Registratore",
+            "es": "Grabadora",
+            "pt": "Gravador",
+            "tr": "Kayıt Cihazı",
+            "id": "Perekam",
+            "vi": "Máy ghi âm",
+            "th": "เครื่องบันทึกเสียง",
+            "ar": "جهاز التسجيل",
+            "in": "रिकॉर्डर",
+            "ug": "ئۈن خاتىرىلەش ماشىنىسى",
+            "bo": "སྒྲ་འཇུག་ཆས"
+          },
+          "logs": [
+            {
+              "zh": "优化 录音总结效果，呈现更多关键信息"
+            },
+            {
+              "zh": "优化 录音播放页的流畅度，减少卡顿"
+            },
+            {
+              "zh": "修复 部分场景下无法生成总结的问题"
+            },
+            {
+              "zh": "修复 部分场景下录音转录失败的问题"
+            }
+          ]
+        },
+        {
+          "name": {
+            "zh": "小米换机",
+            "en": "Mi Mover"
+          },
+          "logs": [
+            {
+              "zh": "优化 数据扫描速度，减少等待时间"
+            },
+            {
+              "zh": "修复 部分场景下换机过程中连接中断的问题"
+            }
+          ]
+        },
+        {
+          "name": {
+            "zh": "截屏",
+            "en": "Screenshot"
+          },
+          "logs": [
+            {
+              "zh": "修复 部分场景下截屏预览小窗不消失的问题"
+            }
+          ]
+        },
+        {
+          "name": {
+            "zh": "媒体查看器",
+            "en": "Media Viewer"
+          },
+          "logs": [
+            {
+              "zh": "修复 部分场景下屏幕方向无法旋转的问题"
+            },
+            {
+              "zh": "修复 部分场景下播放卡顿的问题"
+            }
+          ]
+        },
+        {
+          "name": {
+            "zh": "家人守护",
+            "en": "Family Guard"
+          },
+          "logs": [
+            {
+              "zh": "优化 更多场景适配悬浮式功能栏"
+            },
+            {
+              "zh": "修复 部分场景下无法退出“未成年人模式”的问题"
+            },
+            {
+              "zh": "修复 部分场景下应用列表显示异常的问题"
+            }
+          ]
+        }
+      ],
+      "apps": [
+        {
+          "pkg": "com.xiaomi.aicr",
+          "name": {
+            "zh": "小米澎湃 AI 引擎",
+            "en": "Xiaomi HyperAI Engine",
+            "ug": "ئەقىلي ياردەمچى",
+            "zh_tw": "資訊助手",
+            "ja": "情報アシスタント",
+            "ko": "정보 도우미",
+            "ru": "Умный помощник",
+            "uk": "Помічник інформації",
+            "pl": "Asystent informacji",
+            "de": "Informationsassistent",
+            "fr": "Coffre d'applications",
+            "it": "Assistente app",
+            "es": "Bóveda de aplicaciones",
+            "pt": "Assistente de informações",
+            "tr": "Uygulama kasası",
+            "id": "Asisten Informasi",
+            "vi": "Trợ lý thông tin",
+            "th": "ผู้ช่วยข้อมูล",
+            "ar": "مساعد المعلومات",
+            "in": "सूचना सहायक",
+            "bo": "App vault"
+          },
+          "apkName": "小米澎湃 AI 引擎",
+          "version": "2030041302",
+          "file": "aicr-4.13.2-universal-af6fd054fd.apk",
+          "releaseDate": "",
+          "type": "universal",
+          "size": 72921162,
+          "md5": "af6fd054fdb9ef39cc0dd9d934a78714",
+          "sha256": "9de5c0cf768d497546cde59b352b2215251c2b9d",
+          "logs": []
+        },
+        {
+          "pkg": "com.xiaomi.aiservice",
+          "name": {
+            "zh": "小米 AI 服务",
+            "en": "Xiaomi AI Services"
+          },
+          "apkName": "小米 AI 服务",
+          "version": "402014",
+          "file": "aiservice-4.2.14_cn-universal-7a9ca95d8d.apk",
+          "releaseDate": "",
+          "type": "universal",
+          "size": 13019846,
+          "md5": "7a9ca95d8df5beff4b754bca5daf0a92",
+          "sha256": "a64a32d1fe2f0279706263efeec9651d50562910",
+          "logs": []
+        },
+        {
+          "pkg": "com.miui.backup",
+          "name": {
+            "zh": "备份",
+            "zh_tw": "備份",
+            "en": "Backup",
+            "ja": "バックアップ",
+            "ko": "백업",
+            "ru": "Резервное копирование",
+            "uk": "Резервне копіювання",
+            "pl": "Kopia zapasowa",
+            "de": "Backup",
+            "fr": "Copie de sécurité",
+            "it": "Backup",
+            "es": "Reserva de datos",
+            "pt": "Cópia de segurança",
+            "tr": "Yedekleme",
+            "id": "Cadangan",
+            "vi": "Dự phòng (Backup)",
+            "th": "สำรองข้อมูล",
+            "ar": "النسخ الاحتياطي",
+            "in": "बैकअप",
+            "ug": "زاپاس كۆپەيتمە",
+            "bo": "ཉར་གསོག"
+          },
+          "apkName": "备份",
+          "version": "7212",
+          "file": "backup-7212-CN-OS4-universal-93b2a73b36.apk",
+          "releaseDate": "",
+          "type": "universal",
+          "size": 16282290,
+          "md5": "93b2a73b3695364454fb0c640e9d58c4",
+          "sha256": "ad5e847bf235b4c4c9b55d149f19f31202b6a796",
+          "logs": []
+        },
+        {
+          "pkg": "com.miui.huanji",
+          "name": {
+            "zh": "小米换机",
+            "en": "Mi Mover"
+          },
+          "apkName": "小米换机",
+          "version": "46220",
+          "file": "huanji-4622-OS4-CN-universal-605a2ba77b.apk",
+          "releaseDate": "",
+          "type": "universal",
+          "size": 37754663,
+          "md5": "605a2ba77b088b13f9a50fe098da1e3b",
+          "sha256": "8157263d2505f2867ab86121a6338ee615de5918",
+          "logs": []
+        },
+        {
+          "pkg": "com.android.soundrecorder",
+          "name": {
+            "zh": "录音机",
+            "en": "Recorder",
+            "zh_tw": "錄音機",
+            "ja": "レコーダー",
+            "ko": "레코더",
+            "ru": "Диктофон",
+            "uk": "Диктофон",
+            "pl": "Kaseta nagrywająca",
+            "de": "Tonaufnahmegerät",
+            "fr": "Enregistreur",
+            "it": "Registratore",
+            "es": "Grabadora",
+            "pt": "Gravador",
+            "tr": "Kayıt Cihazı",
+            "id": "Perekam",
+            "vi": "Máy ghi âm",
+            "th": "เครื่องบันทึกเสียง",
+            "ar": "جهاز التسجيل",
+            "in": "रिकॉर्डर",
+            "ug": "ئۈن خاتىرىلەش ماشىنىسى",
+            "bo": "སྒྲ་འཇུག་ཆས"
+          },
+          "apkName": "录音机",
+          "version": "801100",
+          "file": "soundrecorder-8.1.10.2026101518-universal-b71deab348.apk",
+          "releaseDate": "",
+          "type": "universal",
+          "size": 23779022,
+          "md5": "b71deab3489664131588358e8557813a",
+          "sha256": "b196f3773e0b9a19b2a98944b0e582ffca695abd",
+          "logs": []
+        },
+        {
+          "pkg": "com.miui.mediaviewer",
+          "name": {
+            "zh": "媒体查看器",
+            "en": "Media Viewer"
+          },
+          "apkName": "媒体查看器",
+          "version": "2104261003",
+          "file": "mediaviewer-20261102.2-universal-096ddcbbe0.apk",
+          "releaseDate": "",
+          "type": "universal",
+          "size": 28615691,
+          "md5": "096ddcbbe09c73fd5b51d860e255f138",
+          "sha256": "c0cfa66354d92caa7c3b8d470948957d4746d9be",
+          "logs": []
+        },
+        {
+          "pkg": "com.miui.bugreport",
+          "name": {
+            "zh": "用户反馈",
+            "zh_tw": "使用者回饋",
+            "en": "Report Bugs",
+            "ja": "ユーザーフィードバック",
+            "ko": "사용자 피드백",
+            "ru": "Обратная связь",
+            "uk": "Зворотний зв'язок",
+            "pl": "Opinie użytkowników",
+            "de": "Benutzerfeedback",
+            "fr": "Retour utilisateur",
+            "it": "Feedback utente",
+            "es": "Comentarios de usuarios",
+            "pt": "Comentários do usuário",
+            "tr": "Kullanıcı geri bildirimi",
+            "id": "Umpan balik pengguna",
+            "vi": "Phản hồi người dùng",
+            "th": "ข้อเสนอแนะจากผู้ใช้",
+            "ar": "ملاحظات المستخدمين",
+            "in": "उपयोगकर्ता फ़ीडबैक",
+            "ug": "ئىشلەتكۈچى ئىنكاسى",
+            "bo": "སྤྱོད་མཁན་གྱི་བསམ་ཚུལ"
+          },
+          "apkName": "用户反馈",
+          "version": "18000405",
+          "file": "bugreport-cn-18.0.4.5_cn_20261013-universal-cb8405c960.apk",
+          "releaseDate": "",
+          "type": "universal",
+          "size": 17547531,
+          "md5": "cb8405c960617a7926ada4aa0787cb37",
+          "sha256": "7081886784457d63dc3093fd32520fc7372c6fba",
+          "logs": []
+        },
+        {
+          "pkg": "com.xiaomi.miralink",
+          "name": {
+            "zh": "无线显示器",
+            "en": "Wireless Display"
+          },
+          "apkName": "无线显示器",
+          "version": "4000004",
+          "file": "miralink-4.0.0.4-universal-8f3500199e.apk",
+          "releaseDate": "",
+          "type": "universal",
+          "size": 15711794,
+          "md5": "8f3500199edf78d253709f8edb1b6e51",
+          "sha256": "b4247784e252ad3761a61e9917dd29a2b86fd8aa",
+          "logs": []
+        },
+        {
+          "pkg": "com.maxframing.mipad",
+          "name": {
+            "zh": "远程控制",
+            "en": "Remote control"
+          },
+          "apkName": "远程控制",
+          "version": "549",
+          "file": "remotecontrol-5.4.9-universal-314781efcf.apk",
+          "releaseDate": "",
+          "type": "universal",
+          "size": 21421696,
+          "md5": "314781efcfeda28c951748cba0c5d23b",
+          "sha256": "598bb143736165cfeedf3efeb3e6b748ca147664",
+          "logs": []
+        },
+        {
+          "pkg": "com.android.calendar",
+          "name": {
+            "zh": "日历",
+            "en": "Calendar",
+            "zh_tw": "日曆",
+            "ja": "カレンダー",
+            "ko": "캘린더",
+            "ru": "Календарь",
+            "uk": "Календар",
+            "pl": "Kalendarz",
+            "de": "Kalender",
+            "fr": "Calendrier",
+            "it": "Calendario",
+            "es": "Calendario",
+            "pt": "Agenda",
+            "tr": "Takvim",
+            "vi": "Lịch",
+            "th": "ปฏิทิน",
+            "ar": "التقويم",
+            "in": "कैलेंडर",
+            "ug": "Calendar",
+            "bo": "ལོ་ཐོ"
+          },
+          "apkName": "日历",
+          "version": "180001380",
+          "file": "calendar-18.0.1.38-universal-882181c67c.apk",
+          "releaseDate": "",
+          "type": "universal",
+          "size": 17950389,
+          "md5": "882181c67c08391badb219a67fb00457",
+          "sha256": "9d41610cbf9dfe070dbefda5b74bca870fe7ee0b",
+          "logs": []
+        },
+        {
+          "pkg": "com.miui.cleanmaster",
+          "name": {
+            "zh": "垃圾清理",
+            "zh_tw": "垃圾清理",
+            "en": "Cleaner",
+            "ja": "クリーナー",
+            "ko": "클리너",
+            "ru": "Очистка",
+            "uk": "Очищення",
+            "pl": "Sprzątacz",
+            "de": "Speicherbereinigung",
+            "fr": "Nettoyeur",
+            "it": "Pulitore",
+            "es": "Limpiador",
+            "pt": "Limpeza",
+            "tr": "Temizleyici",
+            "id": "Pembersih",
+            "vi": "Dọn dẹp",
+            "th": "ตัวทำความสะอาด",
+            "ar": "المنظف",
+            "in": "क्लीनर",
+            "ug": "ئەخلەت تازىلاش",
+            "bo": "གད་སྙིགས་གཙང་སྦྲ"
+          },
+          "apkName": "垃圾清理",
+          "version": "101066",
+          "file": "cleanmaster-1.0.6.6_261016_cn_release-universal-aeaabd01ed.apk",
+          "releaseDate": "",
+          "type": "universal",
+          "size": 15583993,
+          "md5": "aeaabd01edc54e1fb474f22fd065776b",
+          "sha256": "0402a3d843986787cc2b0cf5e32e8646ae6ded55",
+          "logs": []
+        },
+        {
+          "pkg": "com.android.contacts",
+          "name": {
+            "zh": "通讯录与拨号",
+            "en": "Contacts and Dialer App",
+            "ug": "ئالاقە دەپتىرى ۋە نومۇر تېلېفون قىلىش"
+          },
+          "apkName": "通讯录与拨号",
+          "version": "310073",
+          "file": "contacts-pad-18.31.00.73-universal-ac9741022a.apk",
+          "releaseDate": "",
+          "type": "pad",
+          "size": 18035512,
+          "md5": "ac9741022a826aaf61e5981c319d9dc4",
+          "sha256": "6f5d31d8a5b9bdc46a4d563a2e473386e18f511e",
+          "logs": []
+        },
+        {
+          "pkg": "com.miui.greenguard",
+          "name": {
+            "zh": "安全守护服务",
+            "en": "Family Guard"
+          },
+          "apkName": "安全守护服务",
+          "version": "1420261011",
+          "file": "greenguard-3.14.10.09.00-tablet-universal-515fe48beb.apk",
+          "releaseDate": "",
+          "type": "pad",
+          "size": 45334811,
+          "md5": "515fe48beba06e578b36f81de3a895be",
+          "sha256": "4d4713f60e586febd74fd72519c62cffb281c89d",
+          "logs": []
+        },
+        {
+          "pkg": "com.miui.guardprovider",
+          "name": {
+            "zh": "MIUI安全组件",
+            "en": "MIUI Security Module"
+          },
+          "apkName": "MIUI安全组件",
+          "version": "360",
+          "file": "guardprovider-3.1.7-20261013.0-universal-0d8e357ca5.apk",
+          "releaseDate": "",
+          "type": "universal",
+          "size": 14519346,
+          "md5": "0d8e357ca564b741663b50af74d86281",
+          "sha256": "63ac1ba04bcf95159321631c3db12aeff8f71827",
+          "logs": []
+        },
+        {
+          "pkg": "com.miui.notes",
+          "name": {
+            "bo": "Notes",
+            "de": "Notizen",
+            "en": "Notes",
+            "ug": "Notes",
+            "zh": "笔记",
+            "zh_tw": "筆記"
+          },
+          "apkName": "笔记",
+          "version": "3314",
+          "file": "notes-202610201820-pad-universal-ce76c2551d.apk",
+          "releaseDate": "",
+          "type": "pad",
+          "size": 186096595,
+          "md5": "ce76c2551dbaaa02ac64a0533005ea0f",
+          "sha256": "61f5615677a174847ca9a495bdf0be03c0976253",
+          "logs": []
+        },
+        {
+          "pkg": "com.miui.personalassistant",
+          "name": {
+            "zh": "智能助理",
+            "en": "Intelligence Agent",
+            "ug": "ئەقىلي ياردەمچى"
+          },
+          "apkName": "智能助理",
+          "version": "1540210",
+          "file": "personalassistant-15.40.21.00-10132032-universal-0be5edbfc7.apk",
+          "releaseDate": "",
+          "type": "universal",
+          "size": 14287909,
+          "md5": "0be5edbfc7219b22e6da00f2d7492f51",
+          "sha256": "430ae76622d8d95823e7427205b53421d0257841",
+          "logs": []
+        },
+        {
+          "pkg": "com.miui.screenshot",
+          "name": {
+            "zh": "截屏",
+            "en": "Screenshot"
+          },
+          "apkName": "截屏",
+          "version": "10603044",
+          "file": "screenshot-1.6.3.44-editor-universal-0f5882e3f5.apk",
+          "releaseDate": "",
+          "type": "universal",
+          "size": 10635133,
+          "md5": "0f5882e3f5ca4598270955fafb7aa99c",
+          "sha256": "e336441c86ee4646e09deebdf549120c591daa4c",
+          "logs": []
+        },
+        {
+          "pkg": "com.miui.securitycenter",
+          "name": {
+            "zh": "手机/平板管家",
+            "zh_tw": "手機管家",
+            "en": "Security",
+            "ja": "セキュリティ",
+            "ko": "보안",
+            "ru": "Безопасность",
+            "uk": "Безпека",
+            "pl": "Panel sterowania",
+            "de": "Sicherheit",
+            "fr": "Sécurité",
+            "it": "Sicurezza",
+            "es": "Seguridad",
+            "pt": "Segurança",
+            "tr": "Güvenlik",
+            "id": "Keamanan",
+            "vi": "Bảo mật",
+            "th": "ความปลอดภัย",
+            "ar": "الحماية",
+            "in": "सुरक्षा",
+            "ug": "Security",
+            "bo": "Security"
+          },
+          "apkName": "手机/平板管家",
+          "version": "40011380",
+          "file": "securitycenter-13.8.0_261020_cn_pad_stable-universal-d1cc9a3774.apk",
+          "releaseDate": "",
+          "type": "pad",
+          "size": 81316306,
+          "md5": "d1cc9a3774c0b2f2895023ba3d5d65a8",
+          "sha256": "176cd34d3803d0eb9b6f86ec33e6ff0efa8c149c",
+          "logs": []
+        },
+        {
+          "pkg": "com.android.thememanager",
+          "name": {
+            "zh": "主题壁纸",
+            "ug": "تېمىلىق تاپشۇرۇق پەردىسى",
+            "en": "Themes"
+          },
+          "apkName": "主题壁纸",
+          "version": "91210",
+          "file": "thememanager-91210-20261016-universal-b2af5481cd.apk",
+          "releaseDate": "",
+          "type": "universal",
+          "size": 50309086,
+          "md5": "b2af5481cddc0dd01d98748149f8d244",
+          "sha256": "89ad5d5f7c164304bed7830927f45223f3995cfb",
+          "logs": []
+        },
+        {
+          "pkg": "com.android.fileexplorer",
+          "name": {
+            "zh": "文件管理器",
+            "zh_tw": "文件管理器",
+            "en": "File Explorer",
+            "ja": "ファイルマネージャー",
+            "ko": "파일 관리자",
+            "ru": "Проводник файлов",
+            "uk": "Провідник файлів",
+            "pl": "Menedżer plików",
+            "de": "Dateimanager",
+            "fr": "Gestionnaire de fichiers",
+            "it": "File Manager",
+            "es": "Administrador de archivos",
+            "pt": "Gerenciador de arquivos",
+            "tr": "Dosya Yöneticisi",
+            "id": "File Manager",
+            "vi": "Trình quản lý tệp",
+            "th": "ตัวจัดการไฟล์",
+            "ar": "مدير الملفات",
+            "in": "फ़ाइल प्रबंधक",
+            "ug": "ھۆججەت باشقۇرغۇچ",
+            "bo": "ཡིག་ཆའི་དོ་དམ་ཆས"
+          },
+          "apkName": "文件管理器",
+          "version": "9307",
+          "file": "fileexplorer-9.3.0.7-202610161823-cn-os4-universal-49c99e01e6.apk",
+          "releaseDate": "",
+          "type": "universal",
+          "size": 22998023,
+          "md5": "49c99e01e604f4da7c357897eff91b69",
+          "sha256": "962bbc66527e34631afda6139a8a83dc6be96d6c",
+          "logs": []
+        },
+        {
+          "pkg": "com.miui.calculator",
+          "name": {
+            "zh": "计算器",
+            "en": "Calculator",
+            "zh_tw": "計算機",
+            "ja": "電卓",
+            "ko": "계산기",
+            "ru": "Калькулятор",
+            "uk": "Калькулятор",
+            "pl": "Kalkulator",
+            "de": "Rechner",
+            "fr": "Calculette",
+            "it": "Calcolatrice",
+            "es": "Calculadora",
+            "pt": "Calculadora",
+            "tr": "Hesaplayıcı",
+            "id": "Kalkulator",
+            "vi": "Máy tính",
+            "th": "เครื่องคิดเลข",
+            "ar": "الآلة الحاسبة",
+            "in": "कैल्क्युलेटर",
+            "ug": "ھېسابلىغۇچ",
+            "bo": "རྩིས་འཁོར"
+          },
+          "apkName": "计算器",
+          "version": "317000038",
+          "file": "calculator-17.3.8-20261016-universal-d4e1e42ec1.apk",
+          "releaseDate": "",
+          "type": "universal",
+          "size": 9913206,
+          "md5": "d4e1e42ec18ef29fd421924d190470c3",
+          "sha256": "56ca3e0387706a74a1a349288d4f9d77ff0a1163",
+          "logs": []
+        },
+        {
+          "pkg": "com.miui.creation",
+          "name": {
+            "zh": "小米创作",
+            "en": "Mi Canvas"
+          },
+          "apkName": "小米创作",
+          "version": "418",
+          "file": "creation-4.1.8.202610141700-universal-f8eae5a730.apk",
+          "releaseDate": "",
+          "type": "universal",
+          "size": 104490818,
+          "md5": "f8eae5a73041c179e599829bc1560464",
+          "sha256": "0bf6e0822ffb1604369307faa6f11b327a25b5df",
+          "logs": []
+        },
+        {
+          "pkg": "com.android.deskclock",
+          "name": {
+            "zh": "时钟",
+            "zh_tw": "時鐘",
+            "en": "Clock",
+            "ja": "時計",
+            "ko": "시계",
+            "ru": "Часы",
+            "uk": "Годинник",
+            "pl": "Zegar",
+            "de": "Uhr",
+            "fr": "Horloge",
+            "it": "Orologio",
+            "es": "Reloj",
+            "pt": "Relógio",
+            "tr": "Saat",
+            "id": "Jam",
+            "vi": "Đồng hồ",
+            "th": "นาฬิกา",
+            "ar": "الساعة",
+            "in": "घड़ी",
+            "ug": "سائەت",
+            "bo": "ཆུ་ཚོད།"
+          },
+          "apkName": "时钟",
+          "version": "1306003100",
+          "file": "deskclock-18.31.0-26101319-universal-ab227ddee8.apk",
+          "releaseDate": "",
+          "type": "universal",
+          "size": 18292955,
+          "md5": "ab227ddee8716ad9b23f7c98568f3993",
+          "sha256": "bf3e08998d632bfb77fa43b2c8f9f9588351ace6",
+          "logs": []
+        },
+        {
+          "pkg": "com.xiaomi.misettings",
+          "name": {
+            "zh": "小米设置",
+            "en": "Mi Settings"
+          },
+          "apkName": "小米设置",
+          "version": "261010400",
+          "file": "misettings-16.4.261010.00-universal-0e6333cd73.apk",
+          "releaseDate": "",
+          "type": "universal",
+          "size": 29324445,
+          "md5": "0e6333cd73e3a4f3b69538afe439d1f7",
+          "sha256": "f8f0672042d2d9fdafd0490c3f52b4b8f3cdd348",
+          "logs": []
+        },
+        {
+          "pkg": "com.miui.screenrecorder",
+          "name": {
+            "zh": "屏幕录制",
+            "zh_tw": "螢幕錄製",
+            "en": "Screen recording",
+            "ja": "画面録画",
+            "ko": "화면 녹화",
+            "ru": "Запись экрана",
+            "uk": "Запис екрана",
+            "pl": "Nagrywanie ekranu",
+            "de": "Bildschirmaufnahme",
+            "fr": "Enregistrement d'écran",
+            "it": "Registrazione schermo",
+            "es": "Grabación de pantalla",
+            "pt": "Gravação de tela",
+            "tr": "Ekran kaydı",
+            "id": "Perekam layar",
+            "vi": "Ghi màn hình",
+            "th": "บันทึกหน้าจอ",
+            "ar": "تسجيل الشاشة",
+            "in": "स्क्रीन रिकॉर्डिंग",
+            "ug": "ئېكران خاتىرىلەش"
+          },
+          "apkName": "屏幕录制",
+          "version": "41603021",
+          "file": "screenrecorder-4.16.3.2.1.20261014-universal-5afc722772.apk",
+          "releaseDate": "",
+          "type": "universal",
+          "size": 5239860,
+          "md5": "5afc722772fca23930b6ef4d7c5b98dc",
+          "sha256": "80ba9495076e69e6b3b201ddbf67973484e41a81",
+          "logs": []
+        }
+      ],
+      "romVersions": [
+        "OS4.0.3.0.XAKCNXM"
+      ]
+    }
+  ]
+}

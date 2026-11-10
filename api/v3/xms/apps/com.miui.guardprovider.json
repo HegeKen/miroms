@@ -5,12 +5,13 @@
     "en": "MIUI Security Module"
   },
   "apkName": "MIUI安全组件",
-  "releaseDate": "2026-07-28",
-  "latestVersion": "307",
-  "recordCount": 64,
-  "deviceCount": 53,
+  "releaseDate": "",
+  "latestVersion": "360",
+  "recordCount": 66,
+  "deviceCount": 54,
   "os": [
-    "OS3"
+    "OS3",
+    "OS4"
   ],
   "regions": [
     "cn"
@@ -26,6 +27,41 @@
   ],
   "groups": [
     {
+      "version": "D02",
+      "os": "OS4",
+      "appVersion": "360",
+      "type": "universal",
+      "pushDate": "2026-11-04",
+      "isLatest": true,
+      "apkName": "MIUI安全组件",
+      "file": "guardprovider-3.1.7-20261013.0-universal-0d8e357ca5.apk",
+      "releaseDate": "",
+      "size": 14519346,
+      "md5": "0d8e357ca564b741663b50af74d86281",
+      "sha256": "63ac1ba04bcf95159321631c3db12aeff8f71827",
+      "logs": [],
+      "recordCount": 1,
+      "devices": [
+        {
+          "device": "yili",
+          "codename": "yili",
+          "name": {
+            "zh": "Redmi K Pad 2",
+            "en": "Redmi K Pad 2"
+          },
+          "code": "yili",
+          "region": "cn",
+          "zone": 1,
+          "android": "17.0",
+          "pushDate": "2026-11-04",
+          "isLatest": true,
+          "romVersions": [
+            "OS4.0.3.0.XAKCNXM"
+          ]
+        }
+      ]
+    },
+    {
       "version": "C11",
       "os": "OS3",
       "appVersion": "307",
@@ -39,7 +75,7 @@
       "md5": "d093f10619b133a127a2a7f2b00fb03c",
       "sha256": "024a10010e8a2dcdbc433243c513344384619ab5",
       "logs": [],
-      "recordCount": 64,
+      "recordCount": 65,
       "devices": [
         {
           "device": "breeze",
@@ -73,6 +109,7 @@
           "pushDate": "2026-07-28",
           "isLatest": true,
           "romVersions": [
+            "OS3.0.306.0.WGTCNXM",
             "OS3.0.305.0.WGTCNXM"
           ]
         },
