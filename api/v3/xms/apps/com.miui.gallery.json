@@ -24,13 +24,12 @@
     "bo": "Gallery"
   },
   "apkName": "相册",
-  "releaseDate": "2026-11-04",
-  "latestVersion": "5040306",
-  "recordCount": 64,
+  "releaseDate": "2026-07-28",
+  "latestVersion": "4030116",
+  "recordCount": 66,
   "deviceCount": 52,
   "os": [
-    "OS3",
-    "OS4"
+    "OS3"
   ],
   "regions": [
     "cn"
@@ -46,51 +45,6 @@
   ],
   "groups": [
     {
-      "version": "D02",
-      "os": "OS4",
-      "appVersion": "5040306",
-      "type": "universal",
-      "pushDate": "2026-11-04",
-      "isLatest": true,
-      "apkName": "相册",
-      "file": "cn-5.4.3.6-cn-universal-20a3ec8d64.apk",
-      "releaseDate": "2026-11-04",
-      "size": 46464371,
-      "md5": "20a3ec8d644a5f6d4da8706beb064e3f",
-      "sha256": "e63477c0945c3a0adc0a368e0645ab4ecdb583dd",
-      "logs": [
-        {
-          "zh": "优化 相册菜单布局，调整排序、视图更方便"
-        },
-        {
-          "zh": "优化 长按播放动态照片的交互体验，减少误触"
-        },
-        {
-          "zh": "优化 私密相册支持动图播放"
-        }
-      ],
-      "recordCount": 1,
-      "devices": [
-        {
-          "device": "myron",
-          "codename": "myron",
-          "name": {
-            "zh": "REDMI K90 Pro Max",
-            "en": "REDMI K90 Pro Max"
-          },
-          "code": "myron",
-          "region": "cn",
-          "zone": 1,
-          "android": "17.0",
-          "pushDate": "2026-11-04",
-          "isLatest": true,
-          "romVersions": [
-            "OS4.0.6.0.XPMCNXM"
-          ]
-        }
-      ]
-    },
-    {
       "version": "C11",
       "os": "OS3",
       "appVersion": "4030116",
@@ -104,7 +58,7 @@
       "md5": "1d35f02697aef52abab0a1515efe8a23",
       "sha256": "662ea9d6b3606ac322c90c0affeee3e340905e72",
       "logs": [],
-      "recordCount": 63,
+      "recordCount": 66,
       "devices": [
         {
           "device": "breeze",
@@ -276,23 +230,6 @@
           "isLatest": true,
           "romVersions": [
             "OS3.0.305.0.WOMCNXM"
-          ]
-        },
-        {
-          "device": "warsaw",
-          "codename": "warsaw",
-          "name": {
-            "zh": "REDMI K90 至尊版",
-            "en": "REDMI K90 Ultra"
-          },
-          "code": "warsaw",
-          "region": "cn",
-          "zone": 1,
-          "android": "16.0",
-          "pushDate": "2026-07-28",
-          "isLatest": true,
-          "romVersions": [
-            "OS3.0.309.0.WHPCNXM"
           ]
         },
         {
@@ -538,23 +475,6 @@
           ]
         },
         {
-          "device": "klee",
-          "codename": "klee",
-          "name": {
-            "zh": "REDMI Turbo 5",
-            "en": "REDMI Turbo 5"
-          },
-          "code": "klee",
-          "region": "cn",
-          "zone": 1,
-          "android": "16.0",
-          "pushDate": "2026-07-28",
-          "isLatest": true,
-          "romVersions": [
-            "OS3.0.307.0.WPJCNXM"
-          ]
-        },
-        {
           "device": "taiko",
           "codename": "taiko",
           "name": {
@@ -620,6 +540,7 @@
           "pushDate": "2026-07-28",
           "isLatest": true,
           "romVersions": [
+            "OS3.0.310.0.WMCCNXM",
             "OS3.0.309.0.WMCCNXM"
           ]
         },
@@ -791,6 +712,7 @@
           "pushDate": "2026-07-28",
           "isLatest": true,
           "romVersions": [
+            "OS3.0.310.0.WNJCNXM",
             "OS3.0.309.0.WNJCNXM"
           ]
         },
@@ -928,6 +850,57 @@
           "isLatest": true,
           "romVersions": [
             "OS3.0.306.0.WOXCNXM"
+          ]
+        },
+        {
+          "device": "vermeer",
+          "codename": "vermeer",
+          "name": {
+            "zh": "Redmi K70 / POCO F6 Pro",
+            "en": "Redmi K70 / POCO F6 Pro"
+          },
+          "code": "vermeer",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-07-28",
+          "isLatest": false,
+          "romVersions": [
+            "OS3.0.308.0.WNKCNXM"
+          ]
+        },
+        {
+          "device": "warsaw",
+          "codename": "warsaw",
+          "name": {
+            "zh": "REDMI K90 至尊版",
+            "en": "REDMI K90 Ultra"
+          },
+          "code": "warsaw",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-07-28",
+          "isLatest": false,
+          "romVersions": [
+            "OS3.0.309.0.WHPCNXM"
+          ]
+        },
+        {
+          "device": "klee",
+          "codename": "klee",
+          "name": {
+            "zh": "REDMI Turbo 5",
+            "en": "REDMI Turbo 5"
+          },
+          "code": "klee",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-07-28",
+          "isLatest": false,
+          "romVersions": [
+            "OS3.0.307.0.WPJCNXM"
           ]
         },
         {

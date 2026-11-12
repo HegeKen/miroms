@@ -24,13 +24,12 @@
     "bo": "གནམ་གཤིས"
   },
   "apkName": "天气",
-  "releaseDate": "2026-11-04",
-  "latestVersion": "180001030",
+  "releaseDate": "2026-07-28",
+  "latestVersion": "170003042",
   "recordCount": 56,
-  "deviceCount": 44,
+  "deviceCount": 43,
   "os": [
-    "OS3",
-    "OS4"
+    "OS3"
   ],
   "regions": [
     "cn"
@@ -45,45 +44,6 @@
     "universal"
   ],
   "groups": [
-    {
-      "version": "D02",
-      "os": "OS4",
-      "appVersion": "180001030",
-      "type": "universal",
-      "pushDate": "2026-11-04",
-      "isLatest": true,
-      "apkName": "天气",
-      "file": "weather2-18.0.1.3-20261015-R-universal-99f485e27c.apk",
-      "releaseDate": "2026-11-04",
-      "size": 41582038,
-      "md5": "99f485e27c96cfda419c496014dac17c",
-      "sha256": "8df8f99b902c9549556e1c9e5120c5b4fd1788ca",
-      "logs": [
-        {
-          "zh": "修复 部分场景下页面显示异常的问题"
-        }
-      ],
-      "recordCount": 1,
-      "devices": [
-        {
-          "device": "myron",
-          "codename": "myron",
-          "name": {
-            "zh": "REDMI K90 Pro Max",
-            "en": "REDMI K90 Pro Max"
-          },
-          "code": "myron",
-          "region": "cn",
-          "zone": 1,
-          "android": "17.0",
-          "pushDate": "2026-11-04",
-          "isLatest": true,
-          "romVersions": [
-            "OS4.0.6.0.XPMCNXM"
-          ]
-        }
-      ]
-    },
     {
       "version": "C11",
       "os": "OS3",
@@ -396,7 +356,7 @@
       "md5": "61beab64504386f59903e56974b7fc50",
       "sha256": "869da2d607a2346a55590883648dabc8c460ba11",
       "logs": [],
-      "recordCount": 33,
+      "recordCount": 34,
       "devices": [
         {
           "device": "breeze",
@@ -500,23 +460,6 @@
           "isLatest": true,
           "romVersions": [
             "OS3.0.305.0.WNLCNXM"
-          ]
-        },
-        {
-          "device": "warsaw",
-          "codename": "warsaw",
-          "name": {
-            "zh": "REDMI K90 至尊版",
-            "en": "REDMI K90 Ultra"
-          },
-          "code": "warsaw",
-          "region": "cn",
-          "zone": 1,
-          "android": "16.0",
-          "pushDate": "2026-07-28",
-          "isLatest": true,
-          "romVersions": [
-            "OS3.0.309.0.WHPCNXM"
           ]
         },
         {
@@ -658,23 +601,6 @@
           ]
         },
         {
-          "device": "klee",
-          "codename": "klee",
-          "name": {
-            "zh": "REDMI Turbo 5",
-            "en": "REDMI Turbo 5"
-          },
-          "code": "klee",
-          "region": "cn",
-          "zone": 1,
-          "android": "16.0",
-          "pushDate": "2026-07-28",
-          "isLatest": true,
-          "romVersions": [
-            "OS3.0.307.0.WPJCNXM"
-          ]
-        },
-        {
           "device": "fuxi",
           "codename": "fuxi",
           "name": {
@@ -688,6 +614,7 @@
           "pushDate": "2026-07-28",
           "isLatest": true,
           "romVersions": [
+            "OS3.0.310.0.WMCCNXM",
             "OS3.0.309.0.WMCCNXM"
           ]
         },
@@ -860,6 +787,40 @@
           "isLatest": true,
           "romVersions": [
             "OS3.0.311.0.WPSCNXM"
+          ]
+        },
+        {
+          "device": "warsaw",
+          "codename": "warsaw",
+          "name": {
+            "zh": "REDMI K90 至尊版",
+            "en": "REDMI K90 Ultra"
+          },
+          "code": "warsaw",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-07-28",
+          "isLatest": false,
+          "romVersions": [
+            "OS3.0.309.0.WHPCNXM"
+          ]
+        },
+        {
+          "device": "klee",
+          "codename": "klee",
+          "name": {
+            "zh": "REDMI Turbo 5",
+            "en": "REDMI Turbo 5"
+          },
+          "code": "klee",
+          "region": "cn",
+          "zone": 1,
+          "android": "16.0",
+          "pushDate": "2026-07-28",
+          "isLatest": false,
+          "romVersions": [
+            "OS3.0.307.0.WPJCNXM"
           ]
         },
         {
