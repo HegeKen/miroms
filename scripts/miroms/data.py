@@ -19,11 +19,11 @@ DEVICE_SPLITS = {
 
 unreleased = ['arctic', 'coral']
 currentStable = [
-		'agate', 'air', 'alioth', 'amethyst', 'annibale', 'apollo', 'ares', 'aristotle', 'athens', 'aurora', 'babylon',
-		'beryl', 'biloba', 'bixi', 'blue', 'breeze', 'brussels', 'byron', 'camellia', 'cas', 'cetus', 'chagall', 'charoite',
-		'chenfeng', 'chopin', 'cmi', 'corot', 'creek', 'cupid', 'dada', 'dagu', 'dali', 'dandelion_c3l2', 'darwin', 'dash',
-		'daumier', 'degas', 'dew', 'dijun', 'diting', 'dizi', 'duchamp', 'earth', 'elish', 'emerald', 'emerald_r', 'enuma',
-		'erhu', 'evergo', 'evergreen', 'fire', 'flame', 'flare', 'fleur', 'flourite', 'flute', 'fog', 'frost', 'fuxi', 'gale',
+		'agate', 'air', 'alioth', 'amethyst', 'annibale', 'ares', 'aristotle', 'athens', 'aurora', 'babylon', 'beryl',
+		'biloba', 'bixi', 'blue', 'breeze', 'brussels', 'byron', 'camellia', 'cas', 'cetus', 'chagall', 'charoite', 'chenfeng',
+		'chopin', 'cmi', 'corot', 'creek', 'cupid', 'dada', 'dagu', 'dali', 'dandelion_c3l2', 'darwin', 'dash', 'daumier',
+		'degas', 'dew', 'dijun', 'diting', 'dizi', 'duchamp', 'earth', 'elish', 'emerald', 'emerald_r', 'enuma', 'erhu',
+		'evergo', 'evergreen', 'fire', 'flame', 'flare', 'fleur', 'flourite', 'flute', 'fog', 'frost', 'fuxi', 'gale',
 		'garnet', 'goku', 'gold', 'goya', 'guitar', 'haotian', 'haydn', 'hongkong', 'houji', 'ice', 'ingres', 'iolite',
 		'ishtar', 'jinghu', 'klee', 'klein', 'klimt', 'konghou', 'koto', 'kunzite', 'lake', 'lapis', 'leedsa', 'lhasa',
 		'light', 'lightcm', 'lilac', 'lisa', 'liuqin', 'luming', 'madrid', 'malachite', 'manet', 'marble', 'matisse', 'mayfly',
