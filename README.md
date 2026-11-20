@@ -821,7 +821,7 @@ APK 的签名下载地址带时效性（未签名直链 403），因此**不写�
 
 | 文件 | 说明 |
 | --- | --- |
-| `get_new_branch.py` | Fastboot + OTA 探测，发现新分支 / 新版本 |
+| `get_new_branch.py` | Fastboot + OTA 探测，发现新分支 / 新版本。全量约 20 万次请求，按设备并发执行（默认 16 线程，`MAX_WORKERS` 可调），同一分支代号的请求仍串行以避免并发写入重复 ROM |
 | `ota_former.py` | OTA 版本检测（顺带解析 XMS / SOTA 应用更新并写入 `xms` / `xms_app`） |
 | `ota_full.py` | 全量 OTA 偏移探测（同样会记录 XMS） |
 | `xfu_full.py` | 本地 HTML 核查 |

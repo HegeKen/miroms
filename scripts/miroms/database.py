@@ -1,5 +1,6 @@
 import contextlib
 import logging
+import threading
 from pymysql import Connection
 from typing import Iterator, Set, List, Tuple, Dict, Any, Optional, Union
 import config
@@ -18,18 +19,21 @@ class DatabaseManager:
 		4. 添加连接超时设置
 		"""
 
-		_shared_connection = None
+		# 连接按线程隔离：抓取脚本并发执行时，多个线程共用一个 pymysql 连接会出现
+		# 游标交叉、协议错乱，必须每个线程持有自己的连接。
+		_local = threading.local()
 
 		@classmethod
 		def _get_connection(cls) -> Connection:
-				"""获取数据库连接（复用共享连接）"""
-				if cls._shared_connection is not None:
+				"""获取数据库连接（每线程复用一条连接）"""
+				conn = getattr(cls._local, 'connection', None)
+				if conn is not None:
 						try:
-								cls._shared_connection.ping(reconnect=True)
-								return cls._shared_connection
+								conn.ping(reconnect=True)
+								return conn
 						except Exception:
-								cls._shared_connection = None
-				cls._shared_connection = Connection(
+								conn = None
+				conn = Connection(
 						user=config.user,
 						password=config.password,
 						host=config.host,
@@ -40,17 +44,19 @@ class DatabaseManager:
 						read_timeout=30,
 						write_timeout=30
 				)
-				return cls._shared_connection
+				cls._local.connection = conn
+				return conn
 
 		@classmethod
 		def _close_shared(cls):
-				"""关闭共享连接"""
-				if cls._shared_connection is not None:
+				"""关闭当前线程的连接"""
+				conn = getattr(cls._local, 'connection', None)
+				if conn is not None:
 						try:
-								cls._shared_connection.close()
+								conn.close()
 						except Exception:
 								pass
-						cls._shared_connection = None
+						cls._local.connection = None
 
 		@classmethod
 		def execute(
@@ -79,7 +85,7 @@ class DatabaseManager:
 
 				try:
 						cnx = cls._get_connection()
-						owns_connection = (cnx is cls._shared_connection)
+						owns_connection = (cnx is getattr(cls._local, 'connection', None))
 						cursor = cnx.cursor()
 
 						cursor.execute(sql, params or ())

@@ -1,5 +1,6 @@
 import json
 import logging
+import threading
 from typing import Dict, Optional, Union
 from urllib.parse import urlencode, urlparse
 
@@ -33,6 +34,9 @@ class NetworkClient:
 				"Cookie": "serviceToken=;"
 		}
 
+		# Session 按线程复用（并发抓取时复用连接池，避免每个请求重建 TCP/TLS）
+		_tls = threading.local()
+
 		@classmethod
 		def _create_session(cls, retries: int = 5) -> requests.Session:
 				"""创建带重试机制的Session"""
@@ -40,6 +44,19 @@ class NetworkClient:
 				retry = Retry(total=retries, backoff_factor=1, status_forcelist=[500, 502, 503, 504])
 				session.mount('http://', HTTPAdapter(max_retries=retry))
 				session.mount('https://', HTTPAdapter(max_retries=retry))
+				return session
+
+		@classmethod
+		def _get_session(cls, retries: int = 5) -> requests.Session:
+				"""获取当前线程复用的 Session（按重试次数区分）"""
+				sessions = getattr(cls._tls, 'sessions', None)
+				if sessions is None:
+						sessions = {}
+						cls._tls.sessions = sessions
+				session = sessions.get(retries)
+				if session is None:
+						session = cls._create_session(retries)
+						sessions[retries] = session
 				return session
 
 		@classmethod
@@ -56,7 +73,7 @@ class NetworkClient:
 				target = url or _const.CHECK_URL
 				headers = dict(cls._headers)
 				headers["Host"] = urlparse(target).netloc
-				session = cls._create_session()
+				session = cls._get_session()
 				try:
 						response = session.post(
 								target,
@@ -77,8 +94,6 @@ class NetworkClient:
 								return None
 				except requests.exceptions.RequestException as e:
 						print(f"请求失败: {e}")
-				finally:
-						session.close()
 				return None
 
 		@classmethod
@@ -125,7 +140,7 @@ class NetworkClient:
 		@classmethod
 		def get_fastboot_info(cls, url: str):
 				"""获取Fastboot信息 (原: getFastboot)"""
-				session = cls._create_session(retries=3)
+				session = cls._get_session(retries=3)
 				headers = {
 						'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
 						'Connection': 'close'
@@ -145,5 +160,3 @@ class NetworkClient:
 												DataRecorder.check_exists(roms[0]['filename'])
 				except (requests.exceptions.RequestException, json.JSONDecodeError, KeyError, IndexError):
 						pass
-				finally:
-						session.close()

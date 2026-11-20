@@ -17,6 +17,7 @@ SCRIPTS = [
 	"get_new_branch.py",
 	"ota_former.py",
 	"ota_full.py",
+	"backfill_xms_release_dates.py",
 	"xfu_full.py",
 	"mgc_fastboot.py",
 	"get_current_fastboot.py",

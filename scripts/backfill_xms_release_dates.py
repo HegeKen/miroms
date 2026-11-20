@@ -5,8 +5,11 @@ XMS 只给签名下载链接（有时效），链接响应头里的 Last-Modifie
 上传 / 发布的时间（北京时间）。逐条推送调用 getXmsVer 拿链接，HEAD 取日期，
 写回 xms_app.release_date，最后把 xms.push_date 归一为该版本最早的应用包日期。
 
+默认只补 release_date 为空的行（OTA 抓取结束后由 run_all_jobs.py 自动执行），
+`--all` 才会连已有日期一起重新取。
+
 用法：
-    python3 scripts/backfill_xms_release_dates.py [--limit N]
+    python3 scripts/backfill_xms_release_dates.py [--limit N] [--all]
 """
 import argparse
 import sys
@@ -42,7 +45,10 @@ def head_date(url: str) -> str:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--limit", type=int, default=0, help="只处理前 N 条推送（调试用）")
+    parser.add_argument("--all", action="store_true",
+                        help="连已有 release_date 的应用行一起重新取（默认只补空值）")
     args = parser.parse_args()
+    print(f"XMS release_date 回填：{'全量' if args.all else '只补缺失'}")
 
     rows = common.DatabaseManager.query_all(
         "SELECT x.id, x.device, x.code, x.region, x.zone, x.android, x.version, "
@@ -54,8 +60,11 @@ def main() -> int:
 
     tasks = []  # (xms_id, pkg, md5, urls)
     for xms_id, device, code, region, zone, android, version, rom_version, branch in rows:
+        pkg_sql = "SELECT pkg FROM xms_app WHERE xms_id = %s AND pkg <> ''"
+        if not args.all:
+            pkg_sql += " AND release_date IS NULL"
         pkgs = [row[0] for row in common.DatabaseManager.query_all(
-            "SELECT pkg FROM xms_app WHERE xms_id = %s AND pkg <> '' ORDER BY pkg",
+            pkg_sql + " ORDER BY pkg",
             params=(xms_id,)
         )]
         if not pkgs:
