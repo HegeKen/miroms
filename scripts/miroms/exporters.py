@@ -1782,9 +1782,10 @@ def export_xms() -> Dict[str, Any]:
 				"ORDER BY x.`push_date` DESC, x.`id` DESC"
 		)
 		app_rows = DatabaseManager.query_all(
-				"SELECT `xms_id`, `pkg`, `name`, `name_en`, `names`, `pkg_ver`, `apk_name`, `file_name`, "
-				"       `size`, `md5`, `sha256`, `logs`, `release_date` "
-				"FROM `xms_app` ORDER BY `xms_id`, `id`"
+				"SELECT a.`xms_id`, a.`pkg`, r.`name`, r.`name_en`, r.`names`, r.`pkg_ver`, r.`apk_name`, r.`file_name`, "
+				"       r.`size`, r.`md5`, r.`sha256`, r.`logs`, r.`release_date` "
+				"FROM `xms_app` a JOIN `xms_app_release` r ON r.`id` = a.`release_id` "
+				"ORDER BY a.`xms_id`, a.`id`"
 		)
 
 		apps_by_xms: Dict[int, List[tuple]] = {}

@@ -11,7 +11,7 @@ hasXmsUpdate=0（甚至不回 LatestRom/CurrentRom），`XmsStore.record` 因此
   * xms_dto_new_version  -> apkLists（版本号、文件名、体积、md5、sha256、签名下载链接）
                             与 changeLog（按模块名分组的更新日志）
 
-changeLog 里不带 package，脚本按「模块名 → 包名」在 `xms_app` 里查同名记录
+changeLog 里不带 package，脚本按「模块名 → 包名」在 `xms_app_release` 里查同名记录
 （要求唯一命中）回填 package / versionCode；找不到的模块保持无包名，落 `xms.changelog`。
 APK 的 release_date 用签名下载链接的 Last-Modified 立即回填（链接有时效）。
 
@@ -86,7 +86,7 @@ def module_packages(modules):
         return {}
     placeholders = ",".join(["%s"] * len(modules))
     rows = common.DatabaseManager.query_all(
-        f"SELECT DISTINCT name, pkg FROM xms_app WHERE name IN ({placeholders})",
+        f"SELECT DISTINCT name, pkg FROM xms_app_release WHERE name IN ({placeholders})",
         params=tuple(modules)
     )
     grouped = {}
@@ -156,7 +156,7 @@ def main() -> int:
     parser.add_argument("--serial", default="", help="adb 设备序列号（多设备时指定）")
     parser.add_argument("--file", default="", help="改为读取本地的 version_json.xml")
     parser.add_argument("--skip-release-dates", action="store_true",
-                        help="不请求签名链接回填 xms_app.release_date")
+                        help="不请求签名链接回填 xms_app_release.release_date")
     args = parser.parse_args()
 
     raw = Path(args.file).read_text(encoding="utf-8", errors="ignore") if args.file \
@@ -219,7 +219,8 @@ def main() -> int:
             if not date_text:
                 continue
             common.DatabaseManager.execute(
-                "UPDATE xms_app SET release_date = %s WHERE xms_id = %s AND pkg = %s",
+                "UPDATE xms_app_release r JOIN xms_app a ON a.release_id = r.id "
+                "SET r.release_date = %s WHERE a.xms_id = %s AND a.pkg = %s AND r.release_date IS NULL",
                 params=(date_text, record["id"], pkg), raise_on_error=True
             )
             updated += 1
@@ -229,8 +230,9 @@ def main() -> int:
 
     print(common.DatabaseManager.query_all(
         "SELECT x.version, x.rom_version, x.pkg_cnt, x.prio, x.is_latest, x.push_date, "
-        "COUNT(a.id), MIN(a.release_date), MAX(a.release_date) "
+        "COUNT(a.id), MIN(r.release_date), MAX(r.release_date) "
         "FROM xms x LEFT JOIN xms_app a ON a.xms_id = x.id "
+        "LEFT JOIN xms_app_release r ON r.id = a.release_id "
         "WHERE x.code = %s AND x.version = %s GROUP BY x.id",
         params=(code, xms_version)
     ))

@@ -19,11 +19,16 @@ miroms/xms.py - XMS（SOTA 系统应用更新）解析与入库
     data/repository/RomInfoRepositoryImpl.kt 的 getRecoveryRomInfo（xv 参数）/ getXmsVerInfo
     domain/.../FetchRomInfoUseCase.kt 的 fetchXmsBlock（二次请求拿 changeLog）
 
-落库：xms（一次推送）+ xms_app（推送里的应用），表结构见 db_structure/xms.sql、
-db_structure/xms_app.sql。
+落库：xms（一次推送）+ xms_app_release（一个 APK 发布物一行，按 pkg + pkg_ver 唯一）
++ xms_app（推送 ↔ 发布物关联表），表结构见 db_structure/xms.sql、
+db_structure/xms_app_release.sql、db_structure/xms_app.sql。
+
+归一化说明：同一个应用版本（pkg + pkg_ver）会被多次 XMS 推送引用，其元数据
+（name / apk_name / md5 / logs / release_date 等）只在 xms_app_release 存一份，
+xms_app 只记录 xms_id ↔ release_id 归属（并冗余 pkg 以便查询与唯一约束）。
 
 两条与业务约定相关的规则：
-* 应用名按包名统一 —— 同一个 pkg 在所有推送里共用一份 name / name_en / names，
+* 应用名按包名统一 —— 同一个 pkg 的所有发布物共用一份 name / name_en / names，
   译文优先取 logs 表里同名的 module 行（官方 21 语种），见 canonicalize()。
 * 没有 package 的日志模块（如「小米超级岛」）不是应用，存到 xms.changelog，
   不按模块名塞进 xms_app —— 模块名会随请求语种变化，按名字当键会重复录入。
@@ -278,7 +283,7 @@ class XmsStore:
 						return cls._release_cache[key]
 				if md5:
 						row = DatabaseManager.query_one(
-								"SELECT release_date FROM xms_app WHERE md5 = %s "
+								"SELECT release_date FROM xms_app_release WHERE md5 = %s "
 								"AND release_date IS NOT NULL ORDER BY id DESC LIMIT 1",
 								params=(md5,)
 						)
@@ -511,7 +516,7 @@ class XmsStore:
 				created = 0
 				seen = set()
 				for name, name_en in DatabaseManager.query_all(
-								"SELECT DISTINCT name, name_en FROM xms_app WHERE name <> ''"):
+								"SELECT DISTINCT name, name_en FROM xms_app_release WHERE name <> ''"):
 						key = str(name or "").strip()
 						if not key or key in seen:
 								continue
@@ -598,7 +603,7 @@ class XmsStore:
 				if not pkg:
 						return 0
 				rows = DatabaseManager.query_all(
-						"SELECT id, name, name_en, names FROM xms_app WHERE pkg = %s",
+						"SELECT id, name, name_en, names FROM xms_app_release WHERE pkg = %s",
 						params=(pkg,)
 				)
 				if not rows:
@@ -643,7 +648,7 @@ class XmsStore:
 								continue
 						if apply:
 								DatabaseManager.execute(
-										"UPDATE xms_app SET name = %s, name_en = %s, names = %s WHERE id = %s",
+										"UPDATE xms_app_release SET name = %s, name_en = %s, names = %s WHERE id = %s",
 										params=(zh, en, payload, row_id),
 										raise_on_error=True
 								)
@@ -663,10 +668,11 @@ class XmsStore:
 						"SELECT id, version, push_date FROM xms WHERE version IS NOT NULL")
 				# 每个版本取应用包发布日期的众数（多数包同一天上传的那天 = 推送日）
 				mode_rows = DatabaseManager.query_all(
-						"SELECT x.version, a.release_date, COUNT(*) AS cnt "
+						"SELECT x.version, r.release_date, COUNT(*) AS cnt "
 						"FROM xms_app a JOIN xms x ON x.id = a.xms_id "
-						"WHERE a.release_date IS NOT NULL AND x.version IS NOT NULL "
-						"GROUP BY x.version, a.release_date")
+						"JOIN xms_app_release r ON r.id = a.release_id "
+						"WHERE r.release_date IS NOT NULL AND x.version IS NOT NULL "
+						"GROUP BY x.version, r.release_date")
 				mode: Dict[str, Any] = {}
 				mode_count: Dict[str, int] = {}
 				for version, release_date, cnt in mode_rows:
@@ -754,8 +760,10 @@ class XmsStore:
 				同机型的历史行优先（apk_name 会随机型变体变化），其次语种最全的行。
 				"""
 				rows = DatabaseManager.query_all(
-						"SELECT a.name, a.name_en, a.names, a.apk_name, x.device "
-						"FROM xms_app a LEFT JOIN xms x ON x.id = a.xms_id WHERE a.pkg = %s",
+						"SELECT r.name, r.name_en, r.names, r.apk_name, x.device "
+						"FROM xms_app_release r "
+						"JOIN xms_app a ON a.release_id = r.id "
+						"LEFT JOIN xms x ON x.id = a.xms_id WHERE r.pkg = %s",
 						params=(pkg,)
 				)
 				best: Optional[Tuple[str, str, str, Dict[str, str]]] = None
@@ -792,10 +800,11 @@ class XmsStore:
 				apk_name 为空时才回落到旧值（安装包名会随机型变体变化，不能一律沿用）。
 				"""
 				rows = DatabaseManager.query_all(
-						"SELECT id, pkg FROM xms_app WHERE xms_id = %s",
+						"SELECT id, pkg, release_id FROM xms_app WHERE xms_id = %s",
 						params=(xms_id,)
 				)
-				existing = {row[1] or "": int(row[0]) for row in rows}
+				# pkg -> (membership_id, release_id)
+				existing = {row[1] or "": (int(row[0]), int(row[2])) for row in rows}
 				keep = set()
 				info_cache: Dict[str, Optional[Tuple[str, str, str, Dict[str, str]]]] = {}
 
@@ -821,31 +830,52 @@ class XmsStore:
 
 						logs = json.dumps(app["logs"], ensure_ascii=False) if app["logs"] else None
 						names = json.dumps(names_dict, ensure_ascii=False) if names_dict else None
-						if app["pkg"] in existing:
+						pkg_ver = app["pkg_ver"] or ""
+						# 发布物元数据（共享，按 pkg + pkg_ver 唯一）
+						meta = (app["name"], app["name_en"], names, app["apk_name"],
+										app["file_name"], app["size"] or None, app["md5"],
+										app["sha256"], logs, app.get("release_date") or None)
+
+						# 1) upsert 共享的发布物 xms_app_release
+						rel = DatabaseManager.query_one(
+								"SELECT id FROM xms_app_release WHERE pkg = %s AND pkg_ver <=> %s",
+								params=(app["pkg"], pkg_ver)
+						)
+						if rel:
+								release_id = int(rel[0])
 								DatabaseManager.execute(
-										"UPDATE xms_app SET name = %s, name_en = %s, names = %s, "
-										"pkg_ver = %s, apk_name = %s, file_name = %s, size = %s, "
-										"md5 = %s, sha256 = %s, logs = %s, "
-										"release_date = COALESCE(%s, release_date) WHERE id = %s",
-										params=(app["name"], app["name_en"], names, app["pkg_ver"],
-														app["apk_name"], app["file_name"], app["size"] or None,
-														app["md5"], app["sha256"], logs,
-														app.get("release_date") or None, existing[app["pkg"]]),
+										"UPDATE xms_app_release SET name = %s, name_en = %s, names = %s, "
+										"apk_name = %s, file_name = %s, size = %s, md5 = %s, sha256 = %s, "
+										"logs = %s, release_date = COALESCE(%s, release_date) WHERE id = %s",
+										params=(*meta, release_id),
 										raise_on_error=True
 								)
 						else:
-								DatabaseManager.insert(
-										"INSERT INTO xms_app(xms_id, pkg, name, name_en, names, pkg_ver, "
+								release_id = DatabaseManager.insert(
+										"INSERT INTO xms_app_release(pkg, pkg_ver, name, name_en, names, "
 										"apk_name, file_name, size, md5, sha256, logs, release_date) "
-										"VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
-										params=(xms_id, app["pkg"], app["name"], app["name_en"], names,
-														app["pkg_ver"], app["apk_name"], app["file_name"],
-														app["size"] or None, app["md5"], app["sha256"], logs,
-														app.get("release_date") or None),
+										"VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
+										params=(app["pkg"], pkg_ver, *meta),
 										raise_on_error=True
 								)
 
-				stale = [row_id for pkg, row_id in existing.items() if pkg not in keep]
+						# 2) upsert 推送 ↔ 发布物 关联 xms_app
+						if app["pkg"] in existing:
+								mem_id, old_release_id = existing[app["pkg"]]
+								if old_release_id != release_id:
+										DatabaseManager.execute(
+												"UPDATE xms_app SET release_id = %s WHERE id = %s",
+												params=(release_id, mem_id),
+												raise_on_error=True
+										)
+						else:
+								DatabaseManager.insert(
+										"INSERT INTO xms_app(xms_id, release_id, pkg) VALUES (%s, %s, %s)",
+										params=(xms_id, release_id, app["pkg"]),
+										raise_on_error=True
+								)
+
+				stale = [mem_id for pkg, (mem_id, _) in existing.items() if pkg not in keep]
 				if stale:
 						placeholders = ",".join(["%s"] * len(stale))
 						DatabaseManager.execute(
@@ -866,18 +896,28 @@ class XmsStore:
 				返回匹配 / 删除的行数。
 				"""
 				rows = DatabaseManager.query_all(
-						"SELECT id FROM xms_app WHERE (file_name IS NULL OR file_name = '') "
-						"AND (md5 IS NULL OR md5 = '') "
-						"AND (logs IS NULL OR logs = '' OR logs = '[]')"
+						"SELECT r.id FROM xms_app_release r "
+						"WHERE (r.file_name IS NULL OR r.file_name = '') "
+						"AND (r.md5 IS NULL OR r.md5 = '') "
+						"AND (r.logs IS NULL OR r.logs = '' OR r.logs = '[]')"
 				)
-				ids = [int(row[0]) for row in rows]
-				if apply and ids:
-						placeholders = ",".join(["%s"] * len(ids))
+				rel_ids = [int(row[0]) for row in rows]
+				if not rel_ids:
+						return 0
+				placeholders = ",".join(["%s"] * len(rel_ids))
+				matched = int(DatabaseManager.query_one(
+						f"SELECT COUNT(*) FROM xms_app WHERE release_id IN ({placeholders})",
+						params=tuple(rel_ids))[0])
+				if apply:
 						DatabaseManager.execute(
-								f"DELETE FROM xms_app WHERE id IN ({placeholders})",
-								params=tuple(ids), raise_on_error=True
+								f"DELETE FROM xms_app WHERE release_id IN ({placeholders})",
+								params=tuple(rel_ids), raise_on_error=True
 						)
-				return len(ids)
+						DatabaseManager.execute(
+								f"DELETE FROM xms_app_release WHERE id IN ({placeholders})",
+								params=tuple(rel_ids), raise_on_error=True
+						)
+				return matched
 
 		@classmethod
 		def migrate_legacy_extras(cls, apply: bool = True) -> int:
@@ -887,14 +927,17 @@ class XmsStore:
 				返回待迁移 / 已迁移的行数。
 				'''
 				rows = DatabaseManager.query_all(
-						"SELECT `id`, `xms_id`, `name`, `name_en`, `logs` FROM `xms_app` "
-						"WHERE `pkg` = '' ORDER BY `id`"
+						"SELECT a.`id`, a.`xms_id`, r.`name`, r.`name_en`, r.`logs`, r.`id` "
+						"FROM `xms_app` a JOIN `xms_app_release` r ON r.`id` = a.`release_id` "
+						"WHERE a.`pkg` = '' ORDER BY a.`id`"
 				)
 				if not rows:
 						return 0
 
 				grouped: Dict[int, List[Dict[str, Any]]] = {}
-				for _row_id, xms_id, name, name_en, logs in rows:
+				rel_ids: List[int] = []
+				for _row_id, xms_id, name, name_en, logs, rel_id in rows:
+						rel_ids.append(int(rel_id))
 						item = {
 								"name": cls._resolve_name(name, name_en),
 								"logs": cls._names_entries(logs),
@@ -938,6 +981,14 @@ class XmsStore:
 						params=tuple(row_ids),
 						raise_on_error=True
 				)
+				if rel_ids:
+						rel_ph = ",".join(["%s"] * len(rel_ids))
+						DatabaseManager.execute(
+								f"DELETE FROM `xms_app_release` WHERE `id` IN ({rel_ph}) "
+								"AND `id` NOT IN (SELECT `release_id` FROM `xms_app`)",
+								params=tuple(rel_ids),
+								raise_on_error=True
+						)
 				return len(row_ids)
 
 		@classmethod
@@ -956,20 +1007,20 @@ class XmsStore:
 						stats["modules"] = cls.ensure_module_logs()
 
 				pkgs = [row[0] for row in DatabaseManager.query_all(
-						"SELECT DISTINCT pkg FROM xms_app WHERE pkg <> '' ORDER BY pkg")]
+						"SELECT DISTINCT pkg FROM xms_app_release WHERE pkg <> '' ORDER BY pkg")]
 				stats["packages"] = len(pkgs)
 				for pkg in pkgs:
 						stats["names"] += cls.canonicalize(pkg, apply=apply)
 
 				for row_id, value in DatabaseManager.query_all(
-								"SELECT id, logs FROM xms_app WHERE logs IS NOT NULL"):
+								"SELECT id, logs FROM xms_app_release WHERE logs IS NOT NULL"):
 						entries = cls._names_entries(value)
 						added = cls._enrich_logs(entries)
 						if added:
 								stats["logs"] += 1
 								if apply:
 										DatabaseManager.execute(
-												"UPDATE xms_app SET logs = %s WHERE id = %s",
+												"UPDATE xms_app_release SET logs = %s WHERE id = %s",
 												params=(json.dumps(entries, ensure_ascii=False), row_id),
 												raise_on_error=True
 										)

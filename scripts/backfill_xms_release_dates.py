@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""用 XMS 安装包下载链接的 HTTP Last-Modified 回填 xms_app.release_date
+"""用 XMS 安装包下载链接的 HTTP Last-Modified 回填 xms_app_release.release_date
 
 XMS 只给签名下载链接（有时效），链接响应头里的 Last-Modified 就是安装包真实
 上传 / 发布的时间（北京时间）。逐条推送调用 getXmsVer 拿链接，HEAD 取日期，
-写回 xms_app.release_date，最后把 xms.push_date 归一为该版本最早的应用包日期。
+写回 xms_app_release.release_date，最后把 xms.push_date 归一为该版本最早的应用包日期。
 
 默认只补 release_date 为空的行（OTA 抓取结束后由 run_all_jobs.py 自动执行），
 `--all` 才会连已有日期一起重新取。
@@ -60,9 +60,10 @@ def main() -> int:
 
     tasks = []  # (xms_id, pkg, md5, urls)
     for xms_id, device, code, region, zone, android, version, rom_version, branch in rows:
-        pkg_sql = "SELECT pkg FROM xms_app WHERE xms_id = %s AND pkg <> ''"
+        pkg_sql = ("SELECT a.pkg FROM xms_app a JOIN xms_app_release r ON r.id = a.release_id "
+                   "WHERE a.xms_id = %s AND a.pkg <> ''")
         if not args.all:
-            pkg_sql += " AND release_date IS NULL"
+            pkg_sql += " AND r.release_date IS NULL"
         pkgs = [row[0] for row in common.DatabaseManager.query_all(
             pkg_sql + " ORDER BY pkg",
             params=(xms_id,)
@@ -116,11 +117,11 @@ def main() -> int:
     def resolve(task):
         xms_id, pkg, md5, urls = task
         if md5 and md5 in cache:
-            return xms_id, pkg, cache[md5]
+            return xms_id, pkg, md5, cache[md5]
         date_text = head_date(urls[0])
         if md5 and date_text:
             cache[md5] = date_text
-        return xms_id, pkg, date_text
+        return xms_id, pkg, md5, date_text
 
     results = []
     with ThreadPoolExecutor(max_workers=8) as pool:
@@ -130,13 +131,20 @@ def main() -> int:
                 print(f"  已解析 {index}/{len(tasks)}")
 
     updated = 0
-    for xms_id, pkg, date_text in results:
+    for xms_id, pkg, md5, date_text in results:
         if not date_text:
             continue
-        common.DatabaseManager.execute(
-            "UPDATE xms_app SET release_date = %s WHERE xms_id = %s AND pkg = %s",
-            params=(date_text, xms_id, pkg), raise_on_error=True
-        )
+        if md5:
+            common.DatabaseManager.execute(
+                "UPDATE xms_app_release SET release_date = %s WHERE md5 = %s AND release_date IS NULL",
+                params=(date_text, md5), raise_on_error=True
+            )
+        else:
+            common.DatabaseManager.execute(
+                "UPDATE xms_app_release r JOIN xms_app a ON a.release_id = r.id "
+                "SET r.release_date = %s WHERE a.xms_id = %s AND a.pkg = %s AND r.release_date IS NULL",
+                params=(date_text, xms_id, pkg), raise_on_error=True
+            )
         updated += 1
 
     print(f"已写入 release_date 的应用行：{updated}")
