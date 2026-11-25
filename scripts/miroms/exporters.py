@@ -1067,10 +1067,16 @@ def exportV2(device: str) -> Optional[Dict[str, Any]]:
 									"roms": {}	# V2: roms 字典而非 links 数组
 							}
 
-							# 检查是否需要添加运营商字段到 table
+							# 检查是否需要添加运营商字段到 table（电信 / 移动 / 联通）
 							has_ctelecom = any(len(rom) > 8 and rom[8] for rom in branch_roms)
+							has_cmobile = any(len(rom) > 9 and rom[9] for rom in branch_roms)
+							has_cunicom = any(len(rom) > 10 and rom[10] for rom in branch_roms)
 							if has_ctelecom:
 									new_branch["table"].append("ctelecom")
+							if has_cmobile:
+									new_branch["table"].append("cmobile")
+							if has_cunicom:
+									new_branch["table"].append("cunicom")
 
 							# 处理每个 ROM，构建 V2 格式的 roms 字典
 							for rom in branch_roms:
@@ -1100,9 +1106,13 @@ def exportV2(device: str) -> Optional[Dict[str, Any]]:
 											"fastboot": str(fastboot) if fastboot is not None else ""
 									}
 
-									# 严格按 table 生成：若分支表头含 ctelecom，则每个 ROM 都携带该字段（无数据则为空）
+									# 严格按 table 生成：若分支表头含运营商字段，则每个 ROM 都携带该字段（无数据则为空）
 									if has_ctelecom:
 											rom_entry["ctelecom"] = str(ctelecom) if ctelecom else ""
+									if has_cmobile:
+											rom_entry["cmobile"] = str(cmobile) if cmobile else ""
+									if has_cunicom:
+											rom_entry["cunicom"] = str(cunicom) if cunicom else ""
 
 									# 使用版本号作为 key 存入 roms 字典
 									new_branch["roms"][version_str] = rom_entry
